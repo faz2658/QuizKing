@@ -23,6 +23,8 @@ export const routes: Routes = [
   { path: 'know-me/:id', title: 'How well do you know me? · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/know-me').then((m) => m.KnowMePlay) },
   { path: 'party', title: 'Party mode · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/party').then((m) => m.PartyStart) },
   { path: 'party/:code', title: 'Party · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/party').then((m) => m.PartyScreen) },
+  { path: 'ai-quiz', title: 'AI quiz · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/ai-quiz').then((m) => m.AiQuizStart) },
+  { path: 'ai-quiz/:id', title: 'AI quiz · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/ai-quiz').then((m) => m.AiQuizPlay) },
   { path: 'leaderboard', title: 'Leaderboard · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/leaderboard').then((m) => m.Leaderboard) },
   { path: 'me', title: 'My stats · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/profile').then((m) => m.Profile) },
   { path: 'admin', title: 'Create a game · Quiz King', canActivate: [playerGuard, adminGuard], loadComponent: () => import('./pages/admin').then((m) => m.Admin) },

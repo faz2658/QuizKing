@@ -39,5 +39,6 @@ export class FriendsStrip {
   protected readonly modes: Mode[] = [
     { icon: '💞', title: 'How well do you know me?', text: 'Write a quiz about you, see who knows you best.', link: '/know-me/new' },
     { icon: '📺', title: 'Party mode', text: 'Game on the TV, everyone plays on their phone.', link: '/party' },
+    { icon: '✨', title: 'AI quiz on anything', text: 'Type a topic, the AI writes a quiz to share.', link: '/ai-quiz' },
   ];
 }

@@ -14,7 +14,7 @@ import com.fazeel.quizking.auth.ApiSecurity;
 import com.fazeel.quizking.auth.JwtSupport;
 
 /** The question bank holds every answer, so it is for admins only; the welcome page may show topic counts and
- * every player may rate or flag a question. */
+ * every player may rate or flag a question, and make and play AI quizzes on any topic. */
 @Configuration(proxyBeanMethods = false)
 @EnableWebSecurity
 @Import(JwtSupport.class)
@@ -25,6 +25,7 @@ public class SecurityConfig {
 		return ApiSecurity.build(http, auth -> auth
 				.requestMatchers(HttpMethod.GET, "/api/v1/question-generator/stats").permitAll()
 				.requestMatchers(HttpMethod.POST, "/api/v1/question-generator/feedback").authenticated()
+				.requestMatchers("/api/v1/question-generator/topic-quizzes", "/api/v1/question-generator/topic-quizzes/**").authenticated()
 				.anyRequest().hasRole(ADMIN));
 	}
 }
