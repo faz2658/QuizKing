@@ -3,7 +3,7 @@ name: Deploy
 # Ships to the live server (Oracle, https://40-233-75-213.sslip.io) once CI has passed on the main branch,
 # i.e. after a pull request is merged. Can also be started by hand from the Actions tab.
 #
-# Repository secrets (Settings > Secrets and variables > Actions), see Maverick/deploy/README.md:
+# Repository secrets (Settings > Secrets and variables > Actions), see QuizKing/deploy/README.md:
 #   ORACLE_SSH_KEY       private key allowed to log in as ubuntu@server
 #   ORACLE_HOST          server address, e.g. 40.233.75.213
 #   ORACLE_KNOWN_HOSTS   the server's SSH host key line, so the connection can't be intercepted
@@ -45,7 +45,7 @@ jobs:
       - name: Upload the release
         run: |
           ssh live 'rm -rf ~/quiz-king-next && mkdir ~/quiz-king-next'
-          git archive --format=tar.gz HEAD:Maverick | ssh live 'tar -xzf - -C ~/quiz-king-next'
+          git archive --format=tar.gz HEAD:QuizKing | ssh live 'tar -xzf - -C ~/quiz-king-next'
 
       - name: Build and restart on the server
         run: ssh live "bash ~/quiz-king-next/deploy/deploy.sh ${{ github.event.workflow_run.head_sha || github.sha }}"
