@@ -17,9 +17,13 @@ import com.fazeel.maverick.api.Views.AnswerView;
 import com.fazeel.maverick.api.Views.GameSummary;
 import com.fazeel.maverick.api.Views.ResultView;
 import com.fazeel.maverick.api.Views.SessionView;
+import com.fazeel.maverick.api.Views.CustomRequest;
+import com.fazeel.maverick.api.Views.LifelineRequest;
+import com.fazeel.maverick.api.Views.LifelineView;
 import com.fazeel.maverick.api.Views.StartRequest;
 import com.fazeel.maverick.service.GameSessionService;
 import com.fazeel.maverick.service.GameSessionService.AnswerResult;
+import com.fazeel.maverick.service.GameSessionService.LifelineResult;
 import com.fazeel.maverick.auth.Callers;
 import com.fazeel.maverick.session.GameSession;
 
@@ -46,7 +50,16 @@ public class GameSessionController {
 	@ResponseStatus(HttpStatus.CREATED)
 	public SessionView start(@Valid @RequestBody StartRequest request) {
 		Callers.requireSelf(request.userId());
-		return SessionView.of(service.start(request.gameId(), request.userId()), clock.instant());
+		return SessionView.of(service.start(request.gameId(), request.userId(), Callers.currentUserName()),
+				clock.instant());
+	}
+
+	/** A quiz mixed from several topics, at one difficulty (or mixed), 5 to 20 questions. */
+	@PostMapping("/sessions/custom")
+	@ResponseStatus(HttpStatus.CREATED)
+	public SessionView startCustom(@Valid @RequestBody CustomRequest request) {
+		return SessionView.of(service.startCustom(request.gameIds(), request.difficulty(), request.count(),
+				Callers.currentUserId(), Callers.currentUserName()), clock.instant());
 	}
 
 	@GetMapping("/sessions/{sessionId}")
@@ -59,6 +72,15 @@ public class GameSessionController {
 		owned(sessionId);
 		AnswerResult result = service.answer(sessionId, request.questionId(), request.answer());
 		return AnswerView.of(result.outcome(), SessionView.of(result.session(), clock.instant()));
+	}
+
+	/** 50/50, skip or extra time, once each per game. */
+	@PostMapping("/sessions/{sessionId}/lifelines")
+	public LifelineView lifeline(@PathVariable String sessionId, @Valid @RequestBody LifelineRequest request) {
+		owned(sessionId);
+		LifelineResult r = service.useLifeline(sessionId, request.lifeline(), request.questionId());
+		SessionView view = SessionView.of(r.session(), clock.instant());
+		return new LifelineView(request.lifeline(), r.skipped() == null ? null : AnswerView.of(r.skipped(), view), view);
 	}
 
 	@GetMapping("/sessions/{sessionId}/result")

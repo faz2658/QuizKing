@@ -161,4 +161,37 @@ describe('QuizRunner', () => {
     expect(runner.phase()).toBe('error');
     expect(runner.error()).toBeTruthy();
   });
+
+  it('takes extra time or fewer options for the same question without leaving it', () => {
+    runner.start();
+    now = 6000;
+    vi.advanceTimersByTime(6000);
+    expect(runner.secondsLeft()).toBe(4);
+
+    const longer = { ...q(1, 14), options: ['a'] };
+    runner.update({ index: 0, questions: [longer, q(2)] });
+
+    expect(runner.phase()).toBe('question');
+    expect(runner.question()?.options).toEqual(['a']);
+    expect(runner.secondsLeft()).toBe(14);
+  });
+
+  it('shows the next question when a lifeline skipped this one', () => {
+    runner.start();
+    runner.update({ index: 1, questions: [q(1), q(2)] });
+    expect(runner.question()?.questionId).toBe(2);
+  });
+
+  it('keeps feedback with an explanation on screen longer', () => {
+    adapter.answer = (_s, questionId, option) => {
+      adapter.session = { ...adapter.session, index: adapter.session.index + 1 };
+      return of({ feedback: { correct: true, timedOut: false, correctAnswer: option, points: 10, explanation: 'Because.' }, session: { ...adapter.session } });
+    };
+    runner.start();
+    runner.choose('a');
+    vi.advanceTimersByTime(1500);
+    expect(runner.phase()).toBe('feedback');
+    vi.advanceTimersByTime(2600);
+    expect(runner.question()?.questionId).toBe(2);
+  });
 });

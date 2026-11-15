@@ -14,7 +14,23 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "game_reports")
 public record GameReport(@Id String id, GameMode mode, @Indexed int userId, int gameId, String gameName,
 		int categoryId, int score, Integer maxScore, int correctAnswers, int totalQuestions, Integer rank,
-		Integer players, Integer highestLevel, Instant completedAt, List<ReviewItem> questions) {
+		Integer players, Integer highestLevel, Instant completedAt, List<ReviewItem> questions, String variant,
+		String variantKey, Integer opponentScore) {
+
+	/** A report without a variant (multiplayer, adaptive, older single-player results). */
+	public GameReport(String id, GameMode mode, int userId, int gameId, String gameName, int categoryId, int score,
+			Integer maxScore, int correctAnswers, int totalQuestions, Integer rank, Integer players,
+			Integer highestLevel, Instant completedAt, List<ReviewItem> questions) {
+		this(id, mode, userId, gameId, gameName, categoryId, score, maxScore, correctAnswers, totalQuestions, rank,
+				players, highestLevel, completedAt, questions, null, null, null);
+	}
+
+	public static final String DAILY = "DAILY";
+	public static final String CHALLENGE = "CHALLENGE";
+
+	public boolean isDaily() {
+		return DAILY.equals(variant);
+	}
 
 	public enum GameMode {
 		SINGLE, MULTI, ADAPTIVE

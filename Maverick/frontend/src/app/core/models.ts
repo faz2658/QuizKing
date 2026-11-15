@@ -51,6 +51,21 @@ export interface SessionView {
   score: number;
   maxScore: number;
   currentQuestion: QuestionView | null;
+  variant?: SessionVariant;
+  /** Correct answers in a row right now. */
+  combo?: number;
+  /** The bonus the next correct answer earns. */
+  nextMultiplier?: number;
+  /** Lifelines still available. */
+  lifelines?: Lifeline[];
+}
+
+export type Lifeline = 'FIFTY_FIFTY' | 'SKIP' | 'EXTRA_TIME';
+
+export interface LifelineView {
+  lifeline: Lifeline;
+  skipped: AnswerView | null;
+  session: SessionView;
 }
 
 export interface AnswerView {
@@ -59,9 +74,14 @@ export interface AnswerView {
   correctAnswer: string;
   pointsAwarded: number;
   session: SessionView;
+  combo?: number;
+  multiplier?: number;
+  skipped?: boolean;
+  explanation?: string | null;
 }
 
 export interface ReviewItem {
+  questionId?: number;
   number: number;
   difficulty: Difficulty;
   stem: string;
@@ -71,6 +91,9 @@ export interface ReviewItem {
   timedOut: boolean;
   pointsAwarded: number;
   points: number;
+  skipped?: boolean;
+  multiplier?: number;
+  explanation?: string | null;
 }
 
 export interface ResultView {
@@ -83,6 +106,11 @@ export interface ResultView {
   correctAnswers: number;
   totalQuestions: number;
   review: ReviewItem[];
+  variant?: SessionVariant;
+  /** The day (DAILY) or challenge id (CHALLENGE). */
+  variantKey?: string | null;
+  /** The score a friend challenge had to beat. */
+  opponentScore?: number | null;
 }
 
 // ---- adaptive ----
@@ -216,6 +244,7 @@ export interface DraftQuestion {
     option3: string | null;
     option4: string | null;
     correctAnswer: string;
+    explanation?: string | null;
   };
 }
 
@@ -233,3 +262,153 @@ export interface Category {
   categoryName: string;
   topic: { topicId: number; topicName: string; questionCount: number }[] | null;
 }
+
+export type SessionVariant = 'STANDARD' | 'DAILY' | 'CUSTOM' | 'CHALLENGE';
+
+export interface DailyView {
+  date: string;
+  totalQuestions: number;
+  topics: string[];
+  status: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED';
+  sessionId: string | null;
+  score: number | null;
+  maxScore: number | null;
+  secondsUntilNext: number;
+}
+
+export interface DailyEntry {
+  rank: number;
+  userId: number;
+  name: string;
+  score: number;
+  maxScore: number | null;
+  correctAnswers: number;
+  totalQuestions: number;
+}
+
+export interface DailyBoard {
+  date: string;
+  players: number;
+  top: DailyEntry[];
+  you: DailyEntry | null;
+}
+
+export interface Streak {
+  current: number;
+  best: number;
+  playedToday: boolean;
+}
+
+export interface Progress {
+  userId: number;
+  xp: number;
+  level: number;
+  title: string;
+  levelStartXp: number;
+  nextLevelXp: number;
+  streak: Streak;
+  gamesPlayed: number;
+}
+
+export type BoardPeriod = 'DAY' | 'WEEK' | 'ALL';
+
+export interface XpEntry {
+  rank: number;
+  userId: number;
+  name: string;
+  xp: number;
+  games: number;
+  title: string;
+}
+
+export interface XpBoard {
+  period: BoardPeriod;
+  categoryId: number | null;
+  players: number;
+  top: XpEntry[];
+  you: XpEntry | null;
+}
+
+export interface Achievement {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  progress: number;
+  goal: number;
+  unlockedAt: string | null;
+}
+
+export interface RoomPlayer {
+  userId: number;
+  name: string;
+}
+
+export interface RoomStatus {
+  code: string;
+  gameId: number;
+  hostId: number;
+  players: RoomPlayer[];
+  state: 'WAITING' | 'STARTED' | 'CLOSED';
+  matchId: string | null;
+  maxPlayers: number;
+}
+
+export interface ChallengeView {
+  id: string;
+  challengerName: string;
+  gameName: string;
+  score: number;
+  maxScore: number;
+  correctAnswers: number;
+  totalQuestions: number;
+  yourStatus: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED' | 'OWN';
+  yourSessionId: string | null;
+  yourScore: number | null;
+}
+
+export type FlagReason = 'WRONG_ANSWER' | 'UNCLEAR' | 'TYPO' | 'OFFENSIVE' | 'OTHER';
+
+export interface BankQuestion {
+  questionId: number;
+  questionStem: string;
+  questionLevel: number;
+  questionType?: string | null;
+  option1: string | null;
+  option2: string | null;
+  option3: string | null;
+  option4: string | null;
+  correctAnswer: string;
+  explanation?: string | null;
+}
+
+export interface FeedbackItem {
+  questionId: number;
+  categoryId: number;
+  topicName: string;
+  question: BankQuestion;
+  ups: number;
+  downs: number;
+  flags: number;
+  reasons: Partial<Record<FlagReason, number>>;
+  notes: string[];
+}
+
+export interface RetiredQuestion {
+  questionId: number;
+  categoryId: number;
+  topicName: string;
+  question: BankQuestion;
+  why: string;
+  ups: number;
+  downs: number;
+  flags: number;
+  retiredAt: string;
+}
+
+export interface FeedbackReview {
+  questions: FeedbackItem[];
+  retired: RetiredQuestion[];
+}
+
+export type CustomDifficulty = 'EASY' | 'MEDIUM' | 'ADVANCED' | 'MIXED';

@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy, Component, ElementRef, HostListener, computed, effect, inject, input, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, HostListener, computed, effect, inject, input, output, untracked } from '@angular/core';
 import { Feedback, RunnerQuestion } from '../core/quiz-runner';
 import { TimerRing } from './timer-ring';
 import { DecryptText } from '../motion/decrypt-text';
 import { Sparks } from '../motion/sparks';
+import { GameFx } from '../core/game-fx';
 
 /** The question card: stem, timer and answer options, with right/wrong feedback. Keys 1-4 pick an option. */
 @Component({
@@ -43,6 +44,7 @@ import { Sparks } from '../motion/sparks';
             <span class="bad">Not quite{{ f.correctAnswer ? ' — it was ' + f.correctAnswer : '' }}</span>
           }
           @if (f.note && !f.timedOut) { <span class="muted"> · {{ f.note }}</span> }
+          @if (f.explanation) { <span class="why">💡 {{ f.explanation }}</span> }
         } @else {
           <span class="muted">Worth {{ question().points }} points · press 1–{{ question().options.length }}</span>
         }
@@ -75,6 +77,8 @@ import { Sparks } from '../motion/sparks';
     @keyframes shake { 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }
     .locked .option:not(.right):not(.wrong):not(.chosen) { opacity: 0.55; }
     .feedback { min-height: 1.6em; margin: 18px 0 0; font-weight: 700; }
+    .why { display: block; margin-top: 8px; font-weight: 500; color: var(--text-muted); animation: fade-in 0.3s ease; }
+    @keyframes fade-in { from { opacity: 0; transform: translateY(4px); } }
     .good { color: var(--good); }
     .bad { color: var(--bad); }
   `,
@@ -92,8 +96,22 @@ export class QuizStage {
   private readonly correctAnswer = computed(() => this.feedback()?.correctAnswer ?? null);
   private readonly host = inject(ElementRef<HTMLElement>).nativeElement as HTMLElement;
   private readonly sparks = inject(Sparks);
+  private readonly fx = inject(GameFx);
 
   constructor() {
+    // sound and vibration: right, wrong, a combo, and a tick for each of the last three seconds
+    effect(() => {
+      const f = this.feedback();
+      if (f) {
+        untracked(() => this.fx.play(f.correct ? (f.note?.startsWith('Combo') ? 'combo' : 'correct') : 'wrong'));
+      }
+    });
+    effect(() => {
+      const left = this.secondsLeft();
+      if (left > 0 && left <= 3 && !this.locked() && !untracked(this.feedback)) {
+        untracked(() => this.fx.play('tick'));
+      }
+    });
     // celebrate a correct answer on the button that was picked
     effect(() => {
       const f = this.feedback();

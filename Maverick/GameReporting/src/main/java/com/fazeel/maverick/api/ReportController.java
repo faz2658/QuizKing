@@ -8,6 +8,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fazeel.maverick.progress.Achievements.Achievement;
+import com.fazeel.maverick.progress.ProgressService;
+import com.fazeel.maverick.progress.ProgressService.Progress;
 import com.fazeel.maverick.report.GameReport;
 import com.fazeel.maverick.report.GameReport.GameMode;
 import com.fazeel.maverick.report.ReportService;
@@ -18,15 +21,36 @@ import com.fazeel.maverick.report.ReportService.UserSummary;
 public class ReportController {
 
 	private final ReportService service;
+	private final ProgressService progress;
 
-	public ReportController(ReportService service) {
+	private final com.fazeel.maverick.report.PlayerNames names;
+
+	public ReportController(ReportService service, ProgressService progress,
+			com.fazeel.maverick.report.PlayerNames names) {
 		this.service = service;
+		this.progress = progress;
+		this.names = names;
 	}
 
 	/** Newest first, optionally only one mode (SINGLE, MULTI or ADAPTIVE). */
 	@GetMapping
 	public List<GameReport> reports(@PathVariable int userId, @RequestParam(required = false) GameMode mode) {
 		return service.reports(userId, mode);
+	}
+
+	/** XP, level and streak. */
+	@GetMapping("/progress")
+	public Progress progress(@PathVariable int userId) {
+		if (userId == com.fazeel.maverick.auth.Callers.currentUserId()) {
+			names.remember(userId, com.fazeel.maverick.auth.Callers.currentUserName());
+		}
+		return progress.progress(userId);
+	}
+
+	/** Every badge, earned or not. */
+	@GetMapping("/achievements")
+	public List<Achievement> achievements(@PathVariable int userId) {
+		return progress.achievements(userId);
 	}
 
 	@GetMapping("/summary")

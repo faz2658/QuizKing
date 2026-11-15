@@ -9,10 +9,18 @@
     @if (auth.user(); as user) {
       <nav aria-label="Main">
         <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Games</a>
+        <a routerLink="/leaderboard" routerLinkActive="active">Leaderboard</a>
         <a routerLink="/me" routerLinkActive="active">My stats</a>
         @if (auth.isAdmin()) { <a routerLink="/admin" routerLinkActive="active">Create</a> }
       </nav>
       <div class="spacer"></div>
+      @if (installer.available()) {
+        <button type="button" class="btn btn-ghost install" (click)="installer.install()" title="Install Quiz King on this device">📲 Install</button>
+      }
+      <button type="button" class="icon-btn" [attr.aria-pressed]="fx.settings().sound" [attr.aria-label]="fx.settings().sound ? 'Sound on' : 'Sound off'"
+        [title]="fx.settings().sound ? 'Sound on' : 'Sound off'" (click)="fx.toggle('sound')">{{ fx.settings().sound ? '🔊' : '🔇' }}</button>
+      <button type="button" class="icon-btn" [attr.aria-pressed]="fx.settings().vibration" [attr.aria-label]="fx.settings().vibration ? 'Vibration on' : 'Vibration off'"
+        [title]="fx.settings().vibration ? 'Vibration on (phones)' : 'Vibration off'" (click)="fx.toggle('vibration')"><span [class.off]="!fx.settings().vibration">📳</span></button>
       <span class="who" [title]="user.email || 'Guest player'">
         <span class="avatar" aria-hidden="true">{{ user.userName.charAt(0).toUpperCase() }}</span>
         <span class="name">{{ user.userName }}</span>

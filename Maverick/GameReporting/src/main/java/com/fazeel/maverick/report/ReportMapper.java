@@ -25,7 +25,7 @@ public final class ReportMapper {
 				.toList();
 		return new GameReport("single:" + r.sessionId(), GameMode.SINGLE, r.userId(), r.gameId(), r.gameName(),
 				r.categoryId(), r.score(), r.maxScore(), r.correctAnswers(), r.totalQuestions(), null, null, null,
-				r.completedAt(), items);
+				r.completedAt(), items, r.variant(), r.variantKey(), r.opponentScore());
 	}
 
 	public static GameReport adaptive(AdaptiveResult r) {

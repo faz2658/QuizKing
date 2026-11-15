@@ -20,6 +20,14 @@ public class SessionQuestion {
 	private boolean correct;
 	private boolean timedOut;
 	private int pointsAwarded;
+	private boolean skipped;
+	/** Options taken away by a 50/50. */
+	private List<String> removedOptions = List.of();
+	private int bonusSeconds;
+	/** The combo multiplier the points were awarded with. */
+	private double multiplier = 1.0;
+	/** Shown once the question is answered (may be null). */
+	private String explanation;
 
 	public SessionQuestion() {
 	}
@@ -35,12 +43,19 @@ public class SessionQuestion {
 		this.points = points;
 	}
 
+	/** The same question, not yet asked: for sessions that replay a fixed list (daily, challenge). */
+	public SessionQuestion fresh() {
+		SessionQuestion copy = new SessionQuestion(questionId, difficulty, stem, options, correctAnswer, timeLimitSeconds, points);
+		copy.setExplanation(explanation);
+		return copy;
+	}
+
 	public boolean isAnswered() {
 		return answeredAt != null;
 	}
 
 	public Instant deadline() {
-		return askedAt == null ? null : askedAt.plusSeconds(timeLimitSeconds);
+		return askedAt == null ? null : askedAt.plusSeconds(timeLimitSeconds + bonusSeconds);
 	}
 
 	public int getQuestionId() {
@@ -145,5 +160,45 @@ public class SessionQuestion {
 
 	public void setPointsAwarded(int pointsAwarded) {
 		this.pointsAwarded = pointsAwarded;
+	}
+
+	public boolean isSkipped() {
+		return skipped;
+	}
+
+	public void setSkipped(boolean skipped) {
+		this.skipped = skipped;
+	}
+
+	public List<String> getRemovedOptions() {
+		return removedOptions == null ? List.of() : removedOptions;
+	}
+
+	public void setRemovedOptions(List<String> removedOptions) {
+		this.removedOptions = removedOptions;
+	}
+
+	public int getBonusSeconds() {
+		return bonusSeconds;
+	}
+
+	public void setBonusSeconds(int bonusSeconds) {
+		this.bonusSeconds = bonusSeconds;
+	}
+
+	public double getMultiplier() {
+		return multiplier;
+	}
+
+	public void setMultiplier(double multiplier) {
+		this.multiplier = multiplier;
+	}
+
+	public String getExplanation() {
+		return explanation;
+	}
+
+	public void setExplanation(String explanation) {
+		this.explanation = explanation;
 	}
 }

@@ -43,6 +43,9 @@ class MatchingControllerTest {
 	@MockitoBean
 	Matchmaker matchmaker;
 
+	@MockitoBean
+	com.fazeel.maverick.matching.PrivateRooms rooms;
+
 	@Test
 	void joiningReturnsTheLobby() throws Exception {
 		when(matchmaker.join(3, 7)).thenReturn(new LobbyStatus(State.WAITING, 3, List.of(7), null, null));

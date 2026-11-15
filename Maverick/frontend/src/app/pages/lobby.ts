@@ -19,7 +19,11 @@ import { LobbyStatus } from '../core/models';
       } @else if (status()?.state === 'EXPIRED') {
         <h2>Nobody else showed up</h2>
         <p class="muted">A match needs at least two players. Invite a friend to join this game and try again.</p>
-        <div class="row center-row"><button class="btn btn-primary" (click)="join()">Try again</button><a class="btn" routerLink="/">Back to games</a></div>
+        <div class="row center-row">
+          <button class="btn btn-primary" (click)="playWithFriends()">Invite friends</button>
+          <button class="btn" (click)="join()">Try again</button>
+          <a class="btn btn-ghost" routerLink="/">Back to games</a>
+        </div>
       } @else {
         <div class="pulse" aria-hidden="true"><span></span></div>
         <h2>{{ status()?.state === 'MATCHED' ? 'Match found!' : 'Looking for opponents…' }}</h2>
@@ -32,13 +36,23 @@ import { LobbyStatus } from '../core/models';
             <li [class.me]="p === me">{{ p === me ? 'You' : 'Player ' + (p % 10000) }}</li>
           }
         </ul>
-        <button class="btn btn-ghost" (click)="cancel()">Cancel</button>
+        <div class="row center-row">
+          <button class="btn" (click)="playWithFriends()">Play with friends instead</button>
+          <button class="btn btn-ghost" (click)="cancel()">Cancel</button>
+        </div>
+        <form class="join-code" (submit)="joinCode($event, code.value)">
+          <label class="muted" for="room-code">Have a room code?</label>
+          <input #code id="room-code" class="input" placeholder="KING-1234" maxlength="9" autocomplete="off" />
+          <button class="btn" type="submit">Join</button>
+        </form>
       }
     </section>
   `,
   styles: `
     .lobby { max-width: 560px; margin: 40px auto; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 10px; padding: 40px; }
     .center-row { justify-content: center; }
+    .join-code { display: flex; gap: 8px; align-items: center; margin-top: 14px; flex-wrap: wrap; justify-content: center; }
+    .join-code .input { width: 140px; text-transform: uppercase; }
     .pulse { position: relative; width: 84px; height: 84px; margin-bottom: 8px; }
     .pulse::before, .pulse span { content: ''; position: absolute; inset: 0; border-radius: 50%; background: var(--accent-2); }
     .pulse::before { animation: ping 1.6s ease-out infinite; opacity: 0.5; }
@@ -79,6 +93,27 @@ export class Lobby implements OnInit {
       },
       error: (e) => this.error.set(errorMessage(e)),
     });
+  }
+
+  /** Leaves the public lobby and opens a private room for this game. */
+  protected playWithFriends(): void {
+    this.poll.unsubscribe();
+    const gameId = Number(this.gameId());
+    this.api.leave(gameId, this.me).subscribe({ error: () => undefined });
+    this.api.createRoom(gameId).subscribe({
+      next: (r) => this.router.navigate(['/room', r.code]),
+      error: (e) => this.error.set(errorMessage(e)),
+    });
+  }
+
+  protected joinCode(e: Event, code: string): void {
+    e.preventDefault();
+    const c = code.trim().toUpperCase();
+    if (c) {
+      this.poll.unsubscribe();
+      this.api.leave(Number(this.gameId()), this.me).subscribe({ error: () => undefined });
+      this.router.navigate(['/room', /^\d{4}$/.test(c) ? `KING-${c}` : c]);
+    }
   }
 
   protected cancel(): void {

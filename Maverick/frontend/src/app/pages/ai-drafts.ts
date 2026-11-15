@@ -66,6 +66,9 @@ const LEVELS = ['', 'Easy', 'Medium', 'Hard'];
                   <span class="opt" [class.answer]="o === d.question.correctAnswer">{{ o }}</span>
                 }
               </div>
+              <label class="sr-only" [for]="'why-' + d.id">Explanation (optional)</label>
+              <input class="input why" maxlength="300" [id]="'why-' + d.id" [name]="'why-' + d.id"
+                placeholder="Why is this the answer? (optional, shown to players after they answer)" [(ngModel)]="d.question.explanation" />
               <div class="row">
                 <button class="btn btn-primary" type="button" (click)="approve(d)">Approve</button>
                 <button class="btn" type="button" (click)="reject(d)">Reject</button>
@@ -87,6 +90,7 @@ const LEVELS = ['', 'Easy', 'Medium', 'Hard'];
     .drafts { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
     .draft { padding: 16px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--surface); display: grid; gap: 10px; }
     .meta { gap: 6px; }
+    .why { margin: 8px 0 10px; font-size: 0.9rem; }
     .stem { font-weight: 650; resize: vertical; }
     .opts { display: flex; flex-wrap: wrap; gap: 8px; }
     .opt { padding: 6px 12px; border-radius: 999px; border: 1px solid var(--border); font-size: 0.9rem; }

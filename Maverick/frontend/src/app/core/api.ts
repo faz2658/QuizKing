@@ -3,23 +3,37 @@ import { Injectable, inject } from '@angular/core';
 import { Observable, catchError, forkJoin, map, of } from 'rxjs';
 import { retryWhileLoading } from './http-errors';
 import {
+  Achievement,
   AdaptiveAnswer,
   AdaptiveSession,
   AnswerView,
+  BoardPeriod,
+  BankQuestion,
   Category,
+  ChallengeView,
+  CustomDifficulty,
+  DailyBoard,
+  DailyView,
   GameCard,
   GameMode,
   GameReport,
   DraftQuestion,
   GenerationResult,
+  FeedbackReview,
+  FlagReason,
   ImportStatus,
+  Lifeline,
+  LifelineView,
   LobbyStatus,
   MatchAnswer,
   MatchView,
+  Progress,
   ResultView,
+  RoomStatus,
   SessionView,
   TopicStats,
   UserSummary,
+  XpBoard,
 } from './models';
 
 interface RawGame {
@@ -141,6 +155,31 @@ export class QuestionBankApi {
     return this.http.get<DraftQuestion[]>('/api/v1/question-generator/ai/drafts');
   }
 
+  /** A player's thumbs up/down (1/-1) and/or flag on a question. */
+  feedback(questionId: number, rating: number, flag?: FlagReason | null, note?: string | null): Observable<{ retired: boolean }> {
+    return this.http.post<{ retired: boolean }>('/api/v1/question-generator/feedback', { questionId, rating, flag: flag ?? null, note: note ?? null });
+  }
+
+  feedbackReview(): Observable<FeedbackReview> {
+    return this.http.get<FeedbackReview>('/api/v1/question-generator/feedback');
+  }
+
+  dismissFeedback(questionId: number): Observable<void> {
+    return this.http.post<void>(`/api/v1/question-generator/feedback/${questionId}/dismiss`, null);
+  }
+
+  restoreQuestion(questionId: number): Observable<BankQuestion> {
+    return this.http.post<BankQuestion>(`/api/v1/question-generator/feedback/${questionId}/restore`, null);
+  }
+
+  updateQuestion(categoryId: number, topicName: string, q: BankQuestion): Observable<BankQuestion> {
+    return this.http.put<BankQuestion>(`/api/v1/question-generator/category/${categoryId}/${encodeURIComponent(topicName)}/${q.questionId}`, q);
+  }
+
+  deleteQuestion(categoryId: number, topicName: string, questionId: number): Observable<void> {
+    return this.http.delete<void>(`/api/v1/question-generator/category/${categoryId}/${encodeURIComponent(topicName)}/${questionId}`);
+  }
+
   approveDraft(id: string, question: DraftQuestion['question']): Observable<unknown> {
     return this.http.post(`/api/v1/question-generator/ai/drafts/${id}/approve`, question);
   }
@@ -168,6 +207,54 @@ export class QuizApi {
 
   result(id: string): Observable<ResultView> {
     return this.http.get<ResultView>(`/api/v1/sessions/${id}/result`);
+  }
+
+  lifeline(id: string, lifeline: Lifeline, questionId: number): Observable<LifelineView> {
+    return this.http.post<LifelineView>(`/api/v1/sessions/${id}/lifelines`, { lifeline, questionId });
+  }
+
+  /** Today's challenge and whether the player has played it. */
+  daily(): Observable<DailyView> {
+    return this.http.get<DailyView>('/api/v1/daily');
+  }
+
+  startDaily(): Observable<SessionView> {
+    return this.http.post<SessionView>('/api/v1/daily/sessions', null);
+  }
+
+  startCustom(gameIds: number[], difficulty: CustomDifficulty, count: number): Observable<SessionView> {
+    return this.http.post<SessionView>('/api/v1/sessions/custom', { gameIds, difficulty, count }).pipe(retryWhileLoading());
+  }
+
+  /** Turns a finished game into a challenge link for friends. */
+  createChallenge(sessionId: string): Observable<ChallengeView> {
+    return this.http.post<ChallengeView>('/api/v1/challenges', { sessionId });
+  }
+
+  challenge(id: string): Observable<ChallengeView> {
+    return this.http.get<ChallengeView>(`/api/v1/challenges/${id}`);
+  }
+
+  acceptChallenge(id: string): Observable<SessionView> {
+    return this.http.post<SessionView>(`/api/v1/challenges/${id}/sessions`, null);
+  }
+}
+
+@Injectable({ providedIn: 'root' })
+export class BoardsApi {
+  private readonly http = inject(HttpClient);
+
+  leaderboard(period: BoardPeriod, categoryId?: number | null): Observable<XpBoard> {
+    let params = new HttpParams().set('period', period);
+    if (categoryId) {
+      params = params.set('categoryId', categoryId);
+    }
+    return this.http.get<XpBoard>('/api/v1/reports/leaderboards', { params });
+  }
+
+  daily(date?: string): Observable<DailyBoard> {
+    const params = date ? new HttpParams().set('date', date) : undefined;
+    return this.http.get<DailyBoard>('/api/v1/reports/daily', { params });
   }
 }
 
@@ -204,6 +291,26 @@ export class MultiplayerApi {
     return this.http.delete<void>(`/api/v1/matching/${gameId}/players/${userId}`);
   }
 
+  createRoom(gameId: number): Observable<RoomStatus> {
+    return this.http.post<RoomStatus>('/api/v1/matching/rooms', { gameId });
+  }
+
+  room(code: string): Observable<RoomStatus> {
+    return this.http.get<RoomStatus>(`/api/v1/matching/rooms/${encodeURIComponent(code)}`);
+  }
+
+  joinRoom(code: string): Observable<RoomStatus> {
+    return this.http.post<RoomStatus>(`/api/v1/matching/rooms/${encodeURIComponent(code)}/players`, null);
+  }
+
+  leaveRoom(code: string): Observable<void> {
+    return this.http.delete<void>(`/api/v1/matching/rooms/${encodeURIComponent(code)}/players`);
+  }
+
+  startRoom(code: string): Observable<RoomStatus> {
+    return this.http.post<RoomStatus>(`/api/v1/matching/rooms/${encodeURIComponent(code)}/start`, null);
+  }
+
   match(matchId: string, userId: number): Observable<MatchView> {
     return this.http
       .get<MatchView>(`/api/v1/matches/${matchId}`, { params: new HttpParams().set('userId', userId) })
@@ -218,6 +325,16 @@ export class MultiplayerApi {
 @Injectable({ providedIn: 'root' })
 export class ReportsApi {
   private readonly http = inject(HttpClient);
+
+  /** Every badge, earned or not. */
+  achievements(userId: number): Observable<Achievement[]> {
+    return this.http.get<Achievement[]>(`/api/v1/reports/users/${userId}/achievements`);
+  }
+
+  /** XP, level and streak. */
+  progress(userId: number): Observable<Progress> {
+    return this.http.get<Progress>(`/api/v1/reports/users/${userId}/progress`);
+  }
 
   summary(userId: number): Observable<UserSummary> {
     return this.http.get<UserSummary>(`/api/v1/reports/users/${userId}/summary`);

@@ -12,6 +12,8 @@ public class Topic {
 	    private String topicName;
 	    private String topicImage;
 	    private List<Questions> questions;
+	    /** Questions deleted from the bank, so copies elsewhere (the game manager's pools) drop them too. */
+	    private List<Integer> removedQuestionIds;
 		@JsonCreator
 		public Topic() {
 			super();
@@ -61,4 +63,12 @@ public class Topic {
 		}
 		
 		
+
+	public List<Integer> getRemovedQuestionIds() {
+		return removedQuestionIds;
+	}
+
+	public void setRemovedQuestionIds(List<Integer> removedQuestionIds) {
+		this.removedQuestionIds = removedQuestionIds;
+	}
 }

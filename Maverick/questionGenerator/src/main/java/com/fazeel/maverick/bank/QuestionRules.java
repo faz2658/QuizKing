@@ -30,7 +30,13 @@ public final class QuestionRules {
 				|| options.stream().noneMatch(o -> o.equalsIgnoreCase(q.getCorrectAnswer().trim()))) {
 			throw new InvalidQuestionException("The correct answer must be one of the options");
 		}
+		if (q.getExplanation() != null && q.getExplanation().length() > MAX_EXPLANATION) {
+			throw new InvalidQuestionException("Keep the explanation under " + MAX_EXPLANATION + " characters");
+		}
 	}
+
+	/** An explanation is a sentence or two, shown under the answer. */
+	public static final int MAX_EXPLANATION = 300;
 
 	private static boolean blank(String s) {
 		return s == null || s.isBlank();

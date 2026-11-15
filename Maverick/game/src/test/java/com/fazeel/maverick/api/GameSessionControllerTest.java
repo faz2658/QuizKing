@@ -1,5 +1,7 @@
 package com.fazeel.maverick.api;
 
+import static org.mockito.ArgumentMatchers.any;
+
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
 import org.springframework.context.annotation.Import;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -74,7 +76,7 @@ class GameSessionControllerTest {
 
 	@Test
 	void startingAGameReturnsTheFirstQuestionWithoutItsAnswer() throws Exception {
-		when(service.start(5, 42)).thenReturn(session());
+		when(service.start(eq(5), eq(42), any())).thenReturn(session());
 
 		mvc.perform(post("/api/v1/sessions").with(player(42)).contentType(MediaType.APPLICATION_JSON)
 				.content("{\"gameId\":5,\"userId\":42}"))
@@ -93,7 +95,7 @@ class GameSessionControllerTest {
 
 	@Test
 	void gameStillLoadingAnswers503WithRetryHint() throws Exception {
-		when(service.start(anyInt(), anyInt())).thenThrow(new GameNotReadyException(5));
+		when(service.start(anyInt(), anyInt(), any())).thenThrow(new GameNotReadyException(5));
 
 		mvc.perform(post("/api/v1/sessions").with(player(42)).contentType(MediaType.APPLICATION_JSON)
 				.content("{\"gameId\":5,\"userId\":42}"))

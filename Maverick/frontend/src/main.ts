@@ -4,3 +4,10 @@ import { App } from './app/app';
 
 bootstrapApplication(App, appConfig)
   .catch((err) => console.error(err));
+
+// Installable app: register the service worker once the page has loaded (not during `ng serve`).
+if ('serviceWorker' in navigator && location.port !== '4200') {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js').catch((err) => console.warn('Service worker not registered', err));
+  });
+}
