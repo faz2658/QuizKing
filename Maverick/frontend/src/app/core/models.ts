@@ -77,6 +77,7 @@ export interface AnswerView {
   combo?: number;
   multiplier?: number;
   skipped?: boolean;
+  explanation?: string | null;
 }
 
 export interface ReviewItem {
@@ -91,6 +92,7 @@ export interface ReviewItem {
   points: number;
   skipped?: boolean;
   multiplier?: number;
+  explanation?: string | null;
 }
 
 export interface ResultView {
@@ -241,6 +243,7 @@ export interface DraftQuestion {
     option3: string | null;
     option4: string | null;
     correctAnswer: string;
+    explanation?: string | null;
   };
 }
 

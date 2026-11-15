@@ -21,6 +21,8 @@ export interface Feedback {
   correctAnswer: string | null;
   points: number;
   note?: string;
+  /** Why the answer is right; feedback stays up longer so it can be read. */
+  explanation?: string | null;
 }
 
 /** How the runner talks to a particular game engine. */
@@ -41,6 +43,9 @@ export interface RunnerTiming {
   tickMs: number;
   now: () => number;
 }
+
+/** Extra time feedback stays on screen when there is an explanation to read. */
+export const EXPLANATION_EXTRA_MS = 2600;
 
 export const DEFAULT_TIMING: RunnerTiming = { feedbackMs: 1400, expiryGraceMs: 2300, tickMs: 200, now: () => Date.now() };
 
@@ -104,7 +109,7 @@ export class QuizRunner<S> {
       this.adapter.answer(s, q.questionId, option).subscribe({
         next: ({ feedback, session }) => {
           this._feedback.set(feedback);
-          this.later(this.timing.feedbackMs, () => this.show(session));
+          this.later(feedback.explanation ? this.timing.feedbackMs + EXPLANATION_EXTRA_MS : this.timing.feedbackMs, () => this.show(session));
         },
         error: () => {
           // Most likely the question closed on the server just before our answer arrived.

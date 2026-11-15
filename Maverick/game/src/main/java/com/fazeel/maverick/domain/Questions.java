@@ -15,6 +15,8 @@ public class Questions {
 	private String option3;
 	private String option4;
 	private String correctAnswer;
+	/** Optional one-line "why", shown after answering. */
+	private String explanation;
 
 	public int getQuestionId() {
 		return questionId;
@@ -95,5 +97,13 @@ public class Questions {
 
 	@JsonCreator
 	public Questions() {
+	}
+
+	public String getExplanation() {
+		return explanation;
+	}
+
+	public void setExplanation(String explanation) {
+		this.explanation = explanation;
 	}
 }

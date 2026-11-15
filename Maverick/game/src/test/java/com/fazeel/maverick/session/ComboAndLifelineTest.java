@@ -107,4 +107,17 @@ class ComboAndLifelineTest {
 		assertThatThrownBy(() -> s.useLifeline(Lifeline.SKIP, 1, T0.plusSeconds(2), new Random(1)))
 				.hasMessageContaining("over");
 	}
+
+	@Test
+	void theExplanationIsRevealedWithTheAnswerButNotOnASkip() {
+		SessionQuestion explained = four(1);
+		explained.setExplanation("Because.");
+		SessionQuestion another = four(2);
+		another.setExplanation("Also because.");
+		GameSession s = new GameSession("s", 1, 7, 1, "G", List.of(explained, another), T0);
+
+		assertThat(s.answer(1, "w1", T0.plusSeconds(1)).explanation()).isEqualTo("Because.");
+		assertThat(s.useLifeline(Lifeline.SKIP, 2, T0.plusSeconds(2), new Random(1)).orElseThrow().explanation()).isNull();
+		assertThat(explained.fresh().getExplanation()).isEqualTo("Because.");
+	}
 }

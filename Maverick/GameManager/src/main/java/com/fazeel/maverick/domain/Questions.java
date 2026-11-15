@@ -16,6 +16,8 @@ public class Questions {
 	private String option3;
 	private String option4;
 	private String correctAnswer;
+	/** Optional one-line "why", shown after answering. */
+	private String explanation;
 
 	@JsonCreator
 
@@ -119,4 +121,12 @@ public class Questions {
 
 	
 
+
+	public String getExplanation() {
+		return explanation;
+	}
+
+	public void setExplanation(String explanation) {
+		this.explanation = explanation;
+	}
 }

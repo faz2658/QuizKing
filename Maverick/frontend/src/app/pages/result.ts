@@ -72,6 +72,7 @@ export function verdict(percentage: number): string {
                 @else { <span class="no">✗ {{ item.yourAnswer }}</span> }
                 @if (!item.correct && !item.skipped) { <span class="muted"> · answer: <strong>{{ item.correctAnswer }}</strong></span> }
               </p>
+              @if (item.explanation) { <p class="why">💡 {{ item.explanation }}</p> }
             </li>
           }
         </ol>
@@ -99,6 +100,7 @@ export function verdict(percentage: number): string {
     .review h3 { margin: 10px 0 6px; font-size: 1.05rem; }
     .review p { margin: 0; }
     .yes { color: var(--good); font-weight: 700; }
+    .why { margin-top: 6px; color: var(--text-muted); }
     .no { color: var(--bad); font-weight: 700; }
     @media (max-width: 640px) { .summary { grid-template-columns: 1fr; justify-items: center; text-align: center; } .stats { justify-content: center; } }
   `,

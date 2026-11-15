@@ -5,10 +5,10 @@ package com.fazeel.maverick.session;
  * run of correct answers after this one and {@code multiplier} the bonus the points were awarded with.
  */
 public record AnswerOutcome(int questionId, boolean correct, boolean timedOut, String correctAnswer,
-		int pointsAwarded, int combo, double multiplier, boolean skipped) {
+		int pointsAwarded, int combo, double multiplier, boolean skipped, String explanation) {
 
 	static AnswerOutcome of(SessionQuestion q, int combo) {
 		return new AnswerOutcome(q.getQuestionId(), q.isCorrect(), q.isTimedOut(), q.isSkipped() ? null : q.getCorrectAnswer(),
-				q.getPointsAwarded(), combo, q.getMultiplier(), q.isSkipped());
+				q.getPointsAwarded(), combo, q.getMultiplier(), q.isSkipped(), q.isSkipped() ? null : q.getExplanation());
 	}
 }

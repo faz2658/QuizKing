@@ -181,4 +181,17 @@ describe('QuizRunner', () => {
     runner.update({ index: 1, questions: [q(1), q(2)] });
     expect(runner.question()?.questionId).toBe(2);
   });
+
+  it('keeps feedback with an explanation on screen longer', () => {
+    adapter.answer = (_s, questionId, option) => {
+      adapter.session = { ...adapter.session, index: adapter.session.index + 1 };
+      return of({ feedback: { correct: true, timedOut: false, correctAnswer: option, points: 10, explanation: 'Because.' }, session: { ...adapter.session } });
+    };
+    runner.start();
+    runner.choose('a');
+    vi.advanceTimersByTime(1500);
+    expect(runner.phase()).toBe('feedback');
+    vi.advanceTimersByTime(2600);
+    expect(runner.question()?.questionId).toBe(2);
+  });
 });

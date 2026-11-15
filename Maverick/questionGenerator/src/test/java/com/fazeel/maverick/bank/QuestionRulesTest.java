@@ -40,4 +40,20 @@ class QuestionRulesTest {
 		noStem.setQuestionStem(" ");
 		assertThatThrownBy(() -> QuestionRules.validate(noStem)).hasMessageContaining("text");
 	}
+
+	@org.junit.jupiter.api.Test
+	void explanationsAreOptionalButShort() {
+		com.fazeel.maverick.domain.Questions q = new com.fazeel.maverick.domain.Questions();
+		q.setQuestionStem("Capital of Peru?");
+		q.setQuestionLevel(1);
+		q.setOption1("Lima");
+		q.setOption2("Quito");
+		q.setCorrectAnswer("Lima");
+		QuestionRules.validate(q);
+		q.setExplanation("Lima has been Peru's capital since 1535.");
+		QuestionRules.validate(q);
+		q.setExplanation("x".repeat(QuestionRules.MAX_EXPLANATION + 1));
+		org.assertj.core.api.Assertions.assertThatThrownBy(() -> QuestionRules.validate(q))
+				.isInstanceOf(InvalidQuestionException.class);
+	}
 }

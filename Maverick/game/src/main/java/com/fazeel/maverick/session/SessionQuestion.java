@@ -26,6 +26,8 @@ public class SessionQuestion {
 	private int bonusSeconds;
 	/** The combo multiplier the points were awarded with. */
 	private double multiplier = 1.0;
+	/** Shown once the question is answered (may be null). */
+	private String explanation;
 
 	public SessionQuestion() {
 	}
@@ -43,7 +45,9 @@ public class SessionQuestion {
 
 	/** The same question, not yet asked: for sessions that replay a fixed list (daily, challenge). */
 	public SessionQuestion fresh() {
-		return new SessionQuestion(questionId, difficulty, stem, options, correctAnswer, timeLimitSeconds, points);
+		SessionQuestion copy = new SessionQuestion(questionId, difficulty, stem, options, correctAnswer, timeLimitSeconds, points);
+		copy.setExplanation(explanation);
+		return copy;
 	}
 
 	public boolean isAnswered() {
@@ -188,5 +192,13 @@ public class SessionQuestion {
 
 	public void setMultiplier(double multiplier) {
 		this.multiplier = multiplier;
+	}
+
+	public String getExplanation() {
+		return explanation;
+	}
+
+	public void setExplanation(String explanation) {
+		this.explanation = explanation;
 	}
 }

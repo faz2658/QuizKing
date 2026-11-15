@@ -65,11 +65,11 @@ public final class Views {
 	}
 
 	public record AnswerView(boolean correct, boolean timedOut, String correctAnswer, int pointsAwarded,
-			SessionView session, int combo, double multiplier, boolean skipped) {
+			SessionView session, int combo, double multiplier, boolean skipped, String explanation) {
 
 		static AnswerView of(AnswerOutcome o, SessionView session) {
 			return new AnswerView(o.correct(), o.timedOut(), o.correctAnswer(), o.pointsAwarded(), session, o.combo(),
-					o.multiplier(), o.skipped());
+					o.multiplier(), o.skipped(), o.explanation());
 		}
 	}
 
@@ -78,7 +78,8 @@ public final class Views {
 	}
 
 	public record ReviewItem(int number, String difficulty, String stem, String yourAnswer, String correctAnswer,
-			boolean correct, boolean timedOut, int pointsAwarded, int points, boolean skipped, double multiplier) {
+			boolean correct, boolean timedOut, int pointsAwarded, int points, boolean skipped, double multiplier,
+			String explanation) {
 	}
 
 	public record ResultView(String sessionId, int gameId, String gameName, int score, int maxScore,
@@ -92,7 +93,7 @@ public final class Views {
 				SessionQuestion q = qs.get(i);
 				review.add(new ReviewItem(i + 1, q.getDifficulty().name(), q.getStem(), q.getAnswer(),
 						q.getCorrectAnswer(), q.isCorrect(), q.isTimedOut(), q.getPointsAwarded(), q.getPoints(),
-						q.isSkipped(), q.getMultiplier()));
+						q.isSkipped(), q.getMultiplier(), q.getExplanation()));
 			}
 			return new ResultView(s.getId(), s.getGameId(), s.getGameName(), s.getScore(), s.maxScore(),
 					s.percentage(), s.correctCount(), qs.size(), review, s.getVariant().name(), s.getVariantKey(),

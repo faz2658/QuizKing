@@ -24,6 +24,7 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
             correctAnswer: a.correctAnswer,
             points: a.pointsAwarded,
             note: a.correct && (a.multiplier ?? 1) > 1 ? `Combo ×${a.multiplier}!` : undefined,
+            explanation: a.explanation,
           },
           session: a.session,
         })),

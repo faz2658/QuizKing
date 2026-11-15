@@ -149,9 +149,11 @@ public class QuizBuilder {
 		}
 		String correct = options.stream().filter(o -> GameSession.matches(o, q.getCorrectAnswer())).findFirst()
 				.orElseThrow();
-		return new SessionQuestion(q.getQuestionId(), d, q.getQuestionStem().trim(), options, correct,
+		SessionQuestion sq = new SessionQuestion(q.getQuestionId(), d, q.getQuestionStem().trim(), options, correct,
 				seconds(game == null ? null : game.getQuestionTime(), d),
 				points(game == null ? null : game.getQuestionScore(), d));
+		sq.setExplanation(isBlank(q.getExplanation()) ? null : q.getExplanation().trim());
+		return sq;
 	}
 
 	private static List<String> options(Questions q) {
