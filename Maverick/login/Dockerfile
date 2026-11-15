@@ -1,17 +1,6 @@
-FROM java:8
-
-VOLUME /tmp
-
-RUN mkdir usr/work
-
-WORKDIR usr/work
-
-ADD target/login-1.0.jar usr/work/authentication.jar
-
-EXPOSE 9097
-
-COPY . .
-
-RUN bash -c 'touch usr/work/authentication.jar'
-
-CMD ["./run.sh"]
+# Build the jar first: mvn -pl <module> -am package
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY target/app.jar app.jar
+USER 1000
+ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75", "-jar", "app.jar"]
