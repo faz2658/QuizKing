@@ -3,6 +3,7 @@ import { adminGuard, playerGuard } from './core/auth.guard';
 
 export const routes: Routes = [
   { path: 'welcome', title: 'Welcome · Quiz King', loadComponent: () => import('./pages/welcome').then((m) => m.Welcome) },
+  { path: 'join/:code', title: 'Join Quiz King', loadComponent: () => import('./pages/invite').then((m) => m.Join) },
   { path: 'forgot-password', title: 'Forgot password · Quiz King', loadComponent: () => import('./pages/password').then((m) => m.ForgotPassword) },
   { path: 'reset-password', title: 'New password · Quiz King', loadComponent: () => import('./pages/password').then((m) => m.ResetPassword) },
   { path: '', title: 'Games · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/home').then((m) => m.Home) },
@@ -26,6 +27,7 @@ export const routes: Routes = [
   { path: 'ai-quiz', title: 'AI quiz · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/ai-quiz').then((m) => m.AiQuizStart) },
   { path: 'ai-quiz/:id', title: 'AI quiz · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/ai-quiz').then((m) => m.AiQuizPlay) },
   { path: 'cup', title: 'Country Cup · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/cup').then((m) => m.Cup) },
+  { path: 'invite', title: 'Invite friends · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/invite').then((m) => m.Invite) },
   { path: 'leaderboard', title: 'Leaderboard · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/leaderboard').then((m) => m.Leaderboard) },
   { path: 'me', title: 'My stats · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/profile').then((m) => m.Profile) },
   { path: 'admin', title: 'Create a game · Quiz King', canActivate: [playerGuard, adminGuard], loadComponent: () => import('./pages/admin').then((m) => m.Admin) },

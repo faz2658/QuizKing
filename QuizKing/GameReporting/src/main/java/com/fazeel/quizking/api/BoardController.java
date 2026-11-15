@@ -25,13 +25,15 @@ public class BoardController {
 	private final PlayerNames names;
 	private final Clock clock;
 	private final com.fazeel.quizking.board.CountryCup cup;
+	private final com.fazeel.quizking.invite.Invites invites;
 
 	public BoardController(LeaderboardService boards, PlayerNames names, Clock clock,
-			com.fazeel.quizking.board.CountryCup cup) {
+			com.fazeel.quizking.board.CountryCup cup, com.fazeel.quizking.invite.Invites invites) {
 		this.boards = boards;
 		this.names = names;
 		this.clock = clock;
 		this.cup = cup;
+		this.invites = invites;
 	}
 
 	/** XP rankings: today, this week or all time, optionally for one category. */
@@ -44,6 +46,16 @@ public class BoardController {
 	}
 
 	/** Countries ranked by their players' XP. */
+	public record InviteView(String code, int invited, int shields) {
+	}
+
+	/** The caller's invite code, how many friends joined with it, and their streak shields. */
+	@GetMapping("/invites/me")
+	public InviteView invites() {
+		int me = com.fazeel.quizking.auth.Callers.currentUserId();
+		return new InviteView(com.fazeel.quizking.invite.Invites.code(me), invites.invited(me).size(), invites.shields(me));
+	}
+
 	/** This week's Country Cup, with the caller's country's place. */
 	@GetMapping("/cup")
 	public com.fazeel.quizking.board.CountryCup.CupView cup() {

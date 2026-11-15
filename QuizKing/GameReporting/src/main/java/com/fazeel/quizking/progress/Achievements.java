@@ -39,7 +39,9 @@ public final class Achievements {
 		CLIMBER("Climber", "Reach level 3 in an adaptive game", "🧗", 3),
 		KING_SLAYER("Beat a King", "Beat a friend's challenge score", "⚔️", 1),
 		ARENA_CHAMPION("Last one standing", "Win a World Arena round", "🌍", 1),
-		KNIGHTED("Knighted", "Reach player level 5 (Knight)", "🛡️", 5);
+		KNIGHTED("Knighted", "Reach player level 5 (Knight)", "🛡️", 5),
+		RECRUITER("Recruiter", "A friend joins through your invite link", "🤝", 1),
+		AMBASSADOR("Ambassador", "5 friends join through your invite link", "📣", 5);
 
 		public final String title;
 		public final String description;
@@ -66,6 +68,12 @@ public final class Achievements {
 	 * @param dailyRank the player's final rank in the Daily Challenge of a given day (report's variant key)
 	 */
 	public static List<Achievement> of(List<GameReport> reports, ToIntFunction<GameReport> dailyRank) {
+		return of(reports, dailyRank, List.of());
+	}
+
+	/** @param invited when each friend the player invited joined, oldest first */
+	public static List<Achievement> of(List<GameReport> reports, ToIntFunction<GameReport> dailyRank,
+			List<Instant> invited) {
 		List<GameReport> played = new ArrayList<>(reports.stream().filter(r -> r.completedAt() != null).toList());
 		played.sort(Comparator.comparing(GameReport::completedAt));
 
@@ -118,6 +126,10 @@ public final class Achievements {
 				reach(Badge.ARENA_CHAMPION, 1, at, progress, unlocked);
 			}
 			reach(Badge.KNIGHTED, Xp.level(xp), at, progress, unlocked);
+		}
+		for (int i = 0; i < invited.size(); i++) {
+			reach(Badge.RECRUITER, i + 1, invited.get(i), progress, unlocked);
+			reach(Badge.AMBASSADOR, i + 1, invited.get(i), progress, unlocked);
 		}
 		List<Achievement> all = new ArrayList<>();
 		for (Badge b : Badge.values()) {

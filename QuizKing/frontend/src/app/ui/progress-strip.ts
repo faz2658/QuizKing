@@ -33,7 +33,7 @@ export function levelFraction(p: Pick<Progress, 'xp' | 'levelStartXp' | 'nextLev
         <div class="streak" [class.cold]="p.streak.current === 0" [class.pending]="p.streak.current > 0 && !p.streak.playedToday">
           <span class="flame" aria-hidden="true">🔥</span>
           <div>
-            <strong>{{ p.streak.current }}-day streak</strong>
+            <strong>{{ p.streak.current }}-day streak@if (p.streak.shields) { <span class="shields" title="Streak shields: each covers one missed day"> · 🛡️ {{ p.streak.shields }}</span> }</strong>
             <span class="muted">
               @if (p.streak.current === 0) { Play today to start one }
               @else if (!p.streak.playedToday) { Play today to keep it! }

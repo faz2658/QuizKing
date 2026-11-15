@@ -32,6 +32,7 @@ quizking:
     single-player-result: Results3.t
     multiplayer-result: multiplayerresult.ts
     adaptive-result: AdaptiveResult.t
+    user-registered: new-user-created.t
 
 eureka:
   client:

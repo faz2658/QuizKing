@@ -41,5 +41,6 @@ export class FriendsStrip {
     { icon: '📺', title: 'Party mode', text: 'Game on the TV, everyone plays on their phone.', link: '/party' },
     { icon: '✨', title: 'AI quiz on anything', text: 'Type a topic, the AI writes a quiz to share.', link: '/ai-quiz' },
     { icon: '🏆', title: 'Country Cup', text: 'This week, every game scores for your country.', link: '/cup' },
+    { icon: '🛡️', title: 'Invite friends', text: 'You both get a streak shield when they join.', link: '/invite' },
   ];
 }

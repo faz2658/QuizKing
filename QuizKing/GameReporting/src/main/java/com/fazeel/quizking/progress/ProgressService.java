@@ -22,20 +22,24 @@ public class ProgressService {
 	private final LeaderboardService boards;
 	private final Clock clock;
 
-	public ProgressService(GameReportRepository reports, LeaderboardService boards, Clock clock) {
+	private final com.fazeel.quizking.invite.Invites invites;
+
+	public ProgressService(GameReportRepository reports, LeaderboardService boards, Clock clock,
+			com.fazeel.quizking.invite.Invites invites) {
 		this.reports = reports;
 		this.boards = boards;
 		this.clock = clock;
+		this.invites = invites;
 	}
 
 	/** Every badge, earned or not, with how far along the player is. */
 	public List<Achievement> achievements(int userId) {
 		List<GameReport> all = reports.findByUserIdOrderByCompletedAtDesc(userId);
-		return Achievements.of(all, r -> boards.dailyRank(r.variantKey(), userId));
+		return Achievements.of(all, r -> boards.dailyRank(r.variantKey(), userId), invites.invited(userId));
 	}
 
 	public Progress progress(int userId) {
-		return of(userId, reports.findByUserIdOrderByCompletedAtDesc(userId), today());
+		return of(userId, reports.findByUserIdOrderByCompletedAtDesc(userId), today(), invites.shields(userId));
 	}
 
 	LocalDate today() {
@@ -43,12 +47,16 @@ public class ProgressService {
 	}
 
 	static Progress of(int userId, List<GameReport> all, LocalDate today) {
+		return of(userId, all, today, 0);
+	}
+
+	static Progress of(int userId, List<GameReport> all, LocalDate today, int shields) {
 		int xp = all.stream().mapToInt(Xp::of).sum();
 		int level = Xp.level(xp);
 		List<LocalDate> days = all.stream().map(GameReport::completedAt).filter(Objects::nonNull)
 				.map(t -> t.atZone(ZoneOffset.UTC).toLocalDate()).toList();
 		return new Progress(userId, xp, level, Xp.title(level), Xp.forLevel(level), Xp.forLevel(level + 1),
-				Streaks.of(days, today), all.size());
+				Streaks.of(days, today, shields), all.size());
 	}
 
 	/** {@code levelStartXp} and {@code nextLevelXp} bound the current level, for a progress bar. */

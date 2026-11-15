@@ -39,8 +39,13 @@ public class AccountService {
 		this.dummyHash = encoder.encode("not-a-real-password-" + System.nanoTime());
 	}
 
-	@Transactional
 	public Account register(String userName, String email, String password) {
+		return register(userName, email, password, null);
+	}
+
+	/** @param invite the invite code of the friend who sent the link (ignored if unknown) */
+	@Transactional
+	public Account register(String userName, String email, String password, String invite) {
 		String normalized = normalize(email);
 		if (accounts.existsByEmailIgnoreCase(normalized)) {
 			throw new EmailTakenException();
@@ -55,7 +60,7 @@ public class AccountService {
 			throw new EmailTakenException();
 		}
 		events.registered(new UserRegistered(account.getUserId(), account.getUserName(), account.getEmail(),
-				account.getRole().name(), account.getCreatedAt()));
+				account.getRole().name(), account.getCreatedAt(), referrer(invite, account.getUserId())));
 		return account;
 	}
 
@@ -74,8 +79,13 @@ public class AccountService {
 	 * loses that password when Google links it, so someone who registered with another person's address
 	 * before them can't keep a way in. The owner can set a new one with "Forgot password".
 	 */
-	@Transactional
 	public Account signInWithGoogle(GoogleIdentity google) {
+		return signInWithGoogle(google, null);
+	}
+
+	/** @param invite the invite code of the friend who sent the link; only counts when a new account is made */
+	@Transactional
+	public Account signInWithGoogle(GoogleIdentity google, String invite) {
 		if (!google.emailVerified() || google.email() == null || google.email().isBlank()) {
 			throw new GoogleSignInException("Your Google account's email isn't verified");
 		}
@@ -105,7 +115,7 @@ public class AccountService {
 			return accounts.findByGoogleSubject(google.subject()).orElseThrow(() -> e);
 		}
 		events.registered(new UserRegistered(a.getUserId(), a.getUserName(), a.getEmail(), a.getRole().name(),
-				a.getCreatedAt()));
+				a.getCreatedAt(), referrer(invite, a.getUserId())));
 		return a;
 	}
 
@@ -114,6 +124,20 @@ public class AccountService {
 		byte[] b = new byte[32];
 		new java.security.SecureRandom().nextBytes(b);
 		return encoder.encode(java.util.HexFormat.of().formatHex(b));
+	}
+
+	/** Invite codes are account ids in base 36 (short, and ids aren't secret). Null unless it's another account. */
+	Integer referrer(String invite, int newUserId) {
+		if (invite == null || !invite.matches("[0-9a-zA-Z]{1,7}")) {
+			return null; // a broken link never stops anyone signing up
+		}
+		long id = Long.parseLong(invite, 36);
+		return id > 0 && id <= Integer.MAX_VALUE && id != newUserId && accounts.existsById((int) id) ? (int) id : null;
+	}
+
+	/** The invite code to put in a player's share link. */
+	public static String inviteCode(int userId) {
+		return Integer.toString(userId, 36);
 	}
 
 	public Optional<Account> find(int userId) {

@@ -319,6 +319,14 @@ export interface Streak {
   current: number;
   best: number;
   playedToday: boolean;
+  /** Streak shields left (from invites): each covers one missed day. */
+  shields?: number;
+}
+
+export interface InviteView {
+  code: string;
+  invited: number;
+  shields: number;
 }
 
 export interface Progress {

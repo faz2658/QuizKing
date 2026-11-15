@@ -9,6 +9,8 @@ import org.springframework.stereotype.Component;
 import com.fazeel.quizking.domain.AdaptiveResult;
 import com.fazeel.quizking.domain.MultiPlayerResult;
 import com.fazeel.quizking.domain.SinglePlayerResult;
+import com.fazeel.quizking.domain.UserRegistered;
+import com.fazeel.quizking.invite.Invites;
 import com.fazeel.quizking.report.ReportService;
 
 @Component
@@ -18,9 +20,11 @@ public class ResultListeners {
 	private static final Logger log = LoggerFactory.getLogger(ResultListeners.class);
 
 	private final ReportService service;
+	private final Invites invites;
 
-	public ResultListeners(ReportService service) {
+	public ResultListeners(ReportService service, Invites invites) {
 		this.service = service;
+		this.invites = invites;
 	}
 
 	@KafkaListener(topics = "${quizking.topics.single-player-result}", properties = {
@@ -35,6 +39,13 @@ public class ResultListeners {
 	public void multi(MultiPlayerResult r) {
 		log.info("Multiplayer result {}", r.matchId());
 		service.record(r);
+	}
+
+	/** New accounts, for invite rewards. */
+	@KafkaListener(topics = "${quizking.topics.user-registered}", properties = {
+			"spring.json.value.default.type=com.fazeel.quizking.domain.UserRegistered" })
+	public void registered(UserRegistered e) {
+		invites.registered(e);
 	}
 
 	@KafkaListener(topics = "${quizking.topics.adaptive-result}", properties = {

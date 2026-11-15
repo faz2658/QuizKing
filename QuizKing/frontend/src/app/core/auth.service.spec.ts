@@ -56,7 +56,7 @@ describe('AuthService', () => {
   it('signs in with a Google credential', () => {
     auth.signInWithGoogle('google-id-token').subscribe();
     const req = http.expectOne('/api/v1/auth/google');
-    expect(req.request.body).toEqual({ credential: 'google-id-token' });
+    expect(req.request.body).toEqual({ credential: 'google-id-token', invite: null });
     req.flush({ token: 'jwt-g', tokenType: 'Bearer', expiresAt: new Date(Date.now() + 60_000).toISOString(),
       user: { userId: 9, userName: 'Gail', email: 'gail@x.test', role: 'USER' } });
     expect(auth.token()).toBe('jwt-g');

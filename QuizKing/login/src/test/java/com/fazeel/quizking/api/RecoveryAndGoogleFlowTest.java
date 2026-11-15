@@ -46,6 +46,9 @@ class RecoveryAndGoogleFlowTest {
 	@MockitoBean
 	GoogleTokenVerifier google;
 
+	@MockitoBean
+	com.fazeel.quizking.account.AccountEvents events;
+
 	RestClient http() {
 		return RestClient.builder().baseUrl("http://localhost:" + port)
 				.defaultStatusHandler(HttpStatusCode::isError, (req, res) -> {
@@ -165,5 +168,24 @@ class RecoveryAndGoogleFlowTest {
 
 		Map<String, Object> p = http().get().uri("/api/v1/auth/providers").retrieve().body(Map.class);
 		assertThat(p.get("googleClientId")).isEqualTo("123-abc.apps.googleusercontent.com");
+	}
+
+	@Test
+	@SuppressWarnings("unchecked")
+	void anInviteCodeNamesTheFriendWhoSentTheLink() {
+		Map<String, Object> host = postForMap("/api/v1/auth/register",
+				Map.of("userName", "Host", "email", "host@example.test", "password", "password123"));
+		int hostId = (Integer) ((Map<String, Object>) host.get("user")).get("userId");
+		String code = com.fazeel.quizking.account.AccountService.inviteCode(hostId);
+
+		postForMap("/api/v1/auth/register", Map.of("userName", "Guest", "email", "invited@example.test", "password",
+				"password123", "invite", code));
+		postForMap("/api/v1/auth/register", Map.of("userName", "Other", "email", "bogus@example.test", "password",
+				"password123", "invite", "zzzzzz"));
+
+		ArgumentCaptor<com.fazeel.quizking.account.UserRegistered> sent = ArgumentCaptor.forClass(com.fazeel.quizking.account.UserRegistered.class);
+		verify(events, times(3)).registered(sent.capture());
+		assertThat(sent.getAllValues()).extracting(com.fazeel.quizking.account.UserRegistered::referredBy)
+				.containsExactly(null, hostId, null);
 	}
 }

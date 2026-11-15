@@ -4,6 +4,32 @@ import { Observable, tap } from 'rxjs';
 import { TokenResponse, User } from './models';
 
 const STORAGE_KEY = 'quizking.session';
+const INVITE_KEY = 'quizking.invite';
+
+/** Remembers the invite code from a friend's /join link until the visitor signs up. */
+export function rememberInvite(code: string): void {
+  try {
+    localStorage.setItem(INVITE_KEY, code);
+  } catch {
+    /* storage unavailable: the invite just isn't counted */
+  }
+}
+
+export function pendingInvite(): string | null {
+  try {
+    return localStorage.getItem(INVITE_KEY);
+  } catch {
+    return null;
+  }
+}
+
+function clearInvite(): void {
+  try {
+    localStorage.removeItem(INVITE_KEY);
+  } catch {
+    /* ignore */
+  }
+}
 
 interface StoredSession {
   token: string;
@@ -28,8 +54,8 @@ export class AuthService {
 
   register(userName: string, email: string, password: string): Observable<TokenResponse> {
     return this.http
-      .post<TokenResponse>('/api/v1/auth/register', { userName, email, password })
-      .pipe(tap((t) => this.store(t)));
+      .post<TokenResponse>('/api/v1/auth/register', { userName, email, password, invite: pendingInvite() })
+      .pipe(tap((t) => { this.store(t); clearInvite(); }));
   }
 
   /** Plays without an account: the server hands out a guest token (no account is stored). */
@@ -46,7 +72,9 @@ export class AuthService {
 
   /** Signs in with the ID token Google's button handed us; a first-time player gets an account. */
   signInWithGoogle(credential: string): Observable<TokenResponse> {
-    return this.http.post<TokenResponse>('/api/v1/auth/google', { credential }).pipe(tap((t) => this.store(t)));
+    return this.http
+      .post<TokenResponse>('/api/v1/auth/google', { credential, invite: pendingInvite() })
+      .pipe(tap((t) => { this.store(t); clearInvite(); }));
   }
 
   /** Asks for a reset link by email. The server answers the same whether or not the account exists. */

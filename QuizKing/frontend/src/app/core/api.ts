@@ -34,6 +34,7 @@ import {
   ResultView,
   RoomStatus,
   CupView,
+  InviteView,
   SessionView,
   TopicStats,
   UserSummary,
@@ -267,6 +268,10 @@ export class BoardsApi {
 
   cup(): Observable<CupView> {
     return this.http.get<CupView>('/api/v1/reports/cup');
+  }
+
+  invites(): Observable<InviteView> {
+    return this.http.get<InviteView>('/api/v1/reports/invites/me');
   }
 }
 

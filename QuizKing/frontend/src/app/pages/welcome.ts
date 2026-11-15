@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { catchError, of } from 'rxjs';
 import { QuestionBankApi } from '../core/api';
-import { AuthService } from '../core/auth.service';
+import { AuthService, pendingInvite } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { TopicStats } from '../core/models';
 import { BlurText } from '../motion/blur-text';
@@ -70,6 +70,7 @@ type Tab = 'login' | 'register' | 'guest';
           } @else {
             <p class="muted">Jump straight in. Guest stats are kept in this browser only.</p>
           }
+          @if (invited() && tab() === 'register') { <p class="invite-note">🛡️ A friend invited you: sign up and you both get a streak shield.</p> }
           @if (error()) { <div class="alert" role="alert">{{ error() }}</div> }
           <button class="btn btn-primary wide" type="submit" [disabled]="busy()">
             {{ busy() ? 'One moment…' : tab() === 'login' ? 'Log in' : tab() === 'register' ? 'Create account' : 'Start playing' }}
@@ -100,6 +101,7 @@ type Tab = 'login' | 'register' | 'guest';
     .tabs button { flex: 1; }
     .wide { width: 100%; padding: 14px; }
     .hint { font-weight: 400; font-size: 0.8rem; }
+    .invite-note { margin: 0; padding: 10px 14px; border-radius: 12px; background: var(--good-bg); color: var(--good); font-weight: 600; font-size: 0.9rem; }
     .forgot { align-self: flex-end; margin-top: -6px; font-size: 0.85rem; color: var(--text-muted); }
     @media (max-width: 880px) { .split { grid-template-columns: 1fr; } .panel { order: -1; } }
   `,
@@ -121,6 +123,7 @@ export class Welcome implements OnInit {
     { icon: '⚡', title: 'Multiplayer', text: 'Same question, same moment. First correct answer takes the points.' },
   ];
   protected readonly tab = signal<Tab>('login');
+  protected readonly invited = signal(!!pendingInvite());
   protected readonly busy = signal(false);
   protected readonly error = signal<string | null>(null);
   protected userName = '';
@@ -133,6 +136,9 @@ export class Welcome implements OnInit {
 
   /** Someone opening a friend's link plays as a guest in one tap: no sign-up between them and the fun. */
   ngOnInit(): void {
+    if (pendingInvite() && !this.next()) {
+      this.tab.set('register'); // a friend's invite only counts for a new account
+    }
     if (/^\/(know-me|party|ai-quiz|challenge|room|cup)\//.test(this.next() ?? '')) {
       this.tab.set('guest');
     }

@@ -50,13 +50,13 @@ public class AuthController {
 		return new ProvidersView(google.enabled() ? google.clientId() : null);
 	}
 
-	public record GoogleRequest(@NotBlank @Size(max = 4096) String credential) {
+	public record GoogleRequest(@NotBlank @Size(max = 4096) String credential, @Size(max = 16) String invite) {
 	}
 
 	/** "Sign in with Google": the browser sends the ID token Google gave it; new players get an account. */
 	@PostMapping("/google")
 	public TokenView google(@Valid @RequestBody GoogleRequest r) {
-		return token(accounts.signInWithGoogle(google.verify(r.credential())));
+		return token(accounts.signInWithGoogle(google.verify(r.credential()), r.invite()));
 	}
 
 	public record ForgotRequest(@NotBlank @Email @Size(max = 254) String email) {
@@ -83,7 +83,7 @@ public class AuthController {
 	}
 
 	public record RegisterRequest(@NotBlank @Size(max = 60) String userName, @NotBlank @Email @Size(max = 254) String email,
-			@NotBlank @Size(min = 8, max = 72) String password) {
+			@NotBlank @Size(min = 8, max = 72) String password, @Size(max = 16) String invite) {
 
 		public RegisterRequest {
 			userName = userName == null ? null : userName.trim();
@@ -107,7 +107,7 @@ public class AuthController {
 	@PostMapping("/register")
 	@ResponseStatus(HttpStatus.CREATED)
 	public TokenView register(@Valid @RequestBody RegisterRequest r) {
-		return token(accounts.register(r.userName(), r.email(), r.password()));
+		return token(accounts.register(r.userName(), r.email(), r.password(), r.invite()));
 	}
 
 	@PostMapping("/login")
