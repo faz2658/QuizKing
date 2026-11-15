@@ -17,14 +17,17 @@ import com.fazeel.maverick.matching.Matchmaker;
 public class MatchingController {
 
 	private final Matchmaker matchmaker;
+	private final com.fazeel.maverick.matching.Presence presence;
 
-	public MatchingController(Matchmaker matchmaker) {
+	public MatchingController(Matchmaker matchmaker, com.fazeel.maverick.matching.Presence presence) {
 		this.matchmaker = matchmaker;
+		this.presence = presence;
 	}
 
 	/** Joins the lobby of a game. Poll the status endpoint until the state is MATCHED or EXPIRED. */
 	@PostMapping("/{gameId}/players/{userId}")
 	public LobbyStatus join(@PathVariable int gameId, @PathVariable int userId) {
+		presence.seen(userId, com.fazeel.maverick.auth.Callers.currentUserName(), null);
 		return matchmaker.join(gameId, userId);
 	}
 

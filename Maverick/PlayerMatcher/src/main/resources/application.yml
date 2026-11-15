@@ -22,6 +22,8 @@ server:
   port: ${PORT:9089}
 
 maverick:
+  # Where the multiplayer games are listed (for Quick Match); the game manager inside Docker
+  game-manager-url: ${GAME_MANAGER_URL:http://localhost:9091}
   kafka:
     enabled: ${KAFKA_ENABLED:true}
   cors:

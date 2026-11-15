@@ -23,6 +23,7 @@ public class SecurityConfig {
 	SecurityFilterChain security(HttpSecurity http) throws Exception {
 		return ApiSecurity.build(http, auth -> auth
 				.requestMatchers("/api/v1/matching/rooms", "/api/v1/matching/rooms/**").authenticated()
+				.requestMatchers("/api/v1/matching/presence", "/api/v1/matching/online", "/api/v1/matching/quick").authenticated()
 				.requestMatchers("/api/v1/matching/{gameId}/players/{userId}").access(selfOrAdmin())
 				.anyRequest().hasRole(ADMIN));
 	}

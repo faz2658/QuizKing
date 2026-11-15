@@ -37,3 +37,6 @@ main { padding: 36px 0 56px; min-height: calc(100vh - 150px); }
   .name { display: none; }
   nav { order: 3; width: 100%; justify-content: center; }
 }
+
+.online { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; font-size: 0.85rem; color: var(--good); text-decoration: none; margin-right: 6px; }
+.online .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--good); }

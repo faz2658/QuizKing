@@ -6,7 +6,7 @@ import com.fazeel.maverick.report.GameReport;
  * Experience points. Every finished game earns {@value #PER_GAME}, every correct answer {@value #PER_CORRECT};
  * bonuses: a perfect solo game {@value #PERFECT}, the Daily Challenge {@value #DAILY}, a multiplayer win
  * {@value #WIN}, beating a friend's challenge {@value #CHALLENGE_WON}, and {@value #PER_ADAPTIVE_LEVEL} per
- * adaptive level climbed above the first.
+ * adaptive level climbed above the first, and {@value #ARENA_WIN} for winning a World Arena round.
  *
  * <p>Levels need 50·L·(L−1) XP in total: level 2 at 100, 3 at 300, 4 at 600, 5 at 1,000 and so on.
  */
@@ -19,6 +19,7 @@ public final class Xp {
 	static final int WIN = 30;
 	static final int CHALLENGE_WON = 25;
 	static final int PER_ADAPTIVE_LEVEL = 10;
+	static final int ARENA_WIN = 50;
 
 	private Xp() {
 	}
@@ -35,6 +36,9 @@ public final class Xp {
 				}
 				if (wonChallenge(r)) {
 					xp += CHALLENGE_WON;
+				}
+				if (wonArena(r)) {
+					xp += ARENA_WIN;
 				}
 			}
 			case MULTI -> {
@@ -53,6 +57,12 @@ public final class Xp {
 
 	static boolean wonChallenge(GameReport r) {
 		return GameReport.CHALLENGE.equals(r.variant()) && r.opponentScore() != null && r.score() > r.opponentScore();
+	}
+
+	/** Last one standing in a World Arena round with at least two players. */
+	static boolean wonArena(GameReport r) {
+		return GameReport.ARENA.equals(r.variant()) && r.rank() != null && r.rank() == 1 && r.players() != null
+				&& r.players() >= 2;
 	}
 
 	/** Total XP needed to reach {@code level}. */

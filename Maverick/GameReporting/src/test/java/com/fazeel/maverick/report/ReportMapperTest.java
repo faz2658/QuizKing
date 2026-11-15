@@ -25,7 +25,7 @@ class ReportMapperTest {
 				List.of(new PlayedQuestion(1, 1, "Q1", "A", "A", true, false, 10),
 						new PlayedQuestion(2, 2, "Q2", "B", null, false, true, 0),
 						new PlayedQuestion(3, 2, "Q3", "C", "C", true, false, 20)),
-				"DAILY", "2026-01-01", null, "Ada");
+				"DAILY", "2026-01-01", null, "Ada", null, null);
 
 		GameReport report = ReportMapper.single(r);
 

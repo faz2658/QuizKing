@@ -14,7 +14,9 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 
 import com.fazeel.maverick.matching.Matchmaker;
+import com.fazeel.maverick.matching.Presence;
 import com.fazeel.maverick.matching.PrivateRooms;
+import com.fazeel.maverick.matching.QuickMatch;
 import com.fazeel.maverick.matching.MatchmakingRules;
 
 @SpringBootApplication
@@ -29,46 +31,70 @@ public class PlayerMatcherApplication {
 	}
 
 	@Bean
-	Matchmaker matchmaker(MatchmakingRules rules, KafkaTemplate<String, Object> kafka,
-			@Value("${maverick.kafka.enabled}") boolean kafkaEnabled,
+	Presence presence() {
+		return new Presence(Clock.systemUTC());
+	}
+
+	/** Publishes a match to the multiplayer engine, with the players' names and countries. */
+	@Bean
+	java.util.function.Consumer<com.fazeel.maverick.domain.Match> matchPublisher(Presence presence,
+			KafkaTemplate<String, Object> kafka, @Value("${maverick.kafka.enabled}") boolean kafkaEnabled,
 			@Value("${maverick.topics.players-matched}") String topic) {
-		return new Matchmaker(rules, Clock.systemUTC(), match -> {
+		return raw -> {
+			com.fazeel.maverick.domain.Match match = presence.enrich(raw);
 			log.info("Match {} for game {} with players {}", match.matchId(), match.gameId(), match.players());
 			if (kafkaEnabled) {
 				kafka.send(topic, match.matchId(), match);
 			}
-		});
+		};
 	}
 
 	@Bean
-	PrivateRooms privateRooms(KafkaTemplate<String, Object> kafka, @Value("${maverick.kafka.enabled}") boolean kafkaEnabled,
-			@Value("${maverick.topics.players-matched}") String topic) {
-		return new PrivateRooms(Clock.systemUTC(), new java.security.SecureRandom(), match -> {
-			log.info("Private room match {} for game {} with players {}", match.matchId(), match.gameId(), match.players());
-			if (kafkaEnabled) {
-				kafka.send(topic, match.matchId(), match);
-			}
-		});
+	Matchmaker matchmaker(MatchmakingRules rules, java.util.function.Consumer<com.fazeel.maverick.domain.Match> matchPublisher) {
+		return new Matchmaker(rules, Clock.systemUTC(), matchPublisher);
 	}
 
 	@Bean
-	LobbyTimer lobbyTimer(Matchmaker matchmaker, PrivateRooms rooms) {
-		return new LobbyTimer(matchmaker, rooms);
+	PrivateRooms privateRooms(java.util.function.Consumer<com.fazeel.maverick.domain.Match> matchPublisher) {
+		return new PrivateRooms(Clock.systemUTC(), new java.security.SecureRandom(), matchPublisher);
+	}
+
+	@Bean
+	QuickMatch quickMatch(org.springframework.web.client.RestClient.Builder http,
+			@Value("${maverick.game-manager-url}") String gameManagerUrl,
+			java.util.function.Consumer<com.fazeel.maverick.domain.Match> matchPublisher) {
+		return new QuickMatch(Clock.systemUTC(), new java.security.SecureRandom(),
+				new com.fazeel.maverick.config.MultiplayerGames(http, gameManagerUrl, Clock.systemUTC()), matchPublisher);
+	}
+
+	@Bean
+	LobbyTimer lobbyTimer(Matchmaker matchmaker, PrivateRooms rooms, QuickMatch quick, Presence presence) {
+		return new LobbyTimer(matchmaker, rooms, quick, presence);
 	}
 
 	static class LobbyTimer {
 		private final Matchmaker matchmaker;
 		private final PrivateRooms rooms;
+		private final QuickMatch quick;
+		private final Presence presence;
 
-		LobbyTimer(Matchmaker matchmaker, PrivateRooms rooms) {
+		LobbyTimer(Matchmaker matchmaker, PrivateRooms rooms, QuickMatch quick, Presence presence) {
 			this.matchmaker = matchmaker;
 			this.rooms = rooms;
+			this.quick = quick;
+			this.presence = presence;
 		}
 
 		@Scheduled(fixedDelay = 500)
 		void tick() {
 			matchmaker.tick();
 			rooms.tick();
+			quick.tick();
+		}
+
+		@Scheduled(fixedDelay = 3_600_000)
+		void forget() {
+			presence.tick();
 		}
 	}
 }

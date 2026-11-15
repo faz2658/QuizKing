@@ -28,7 +28,29 @@ public class PlayerNames {
 		}
 		String trimmed = name.trim();
 		known.put(userId, trimmed);
-		names.save(new PlayerName(userId, trimmed, clock.instant()));
+		String country = names.findById(userId).map(PlayerName::country).orElse(null);
+		names.save(new PlayerName(userId, trimmed, clock.instant(), country));
+	}
+
+	/** The player's country (ISO code) for flags and the countries leaderboard; null clears it. */
+	public void country(int userId, String name, String country) {
+		String c = country == null || !country.matches("[A-Za-z]{2}") ? null : country.toUpperCase(java.util.Locale.ROOT);
+		if (name != null && !name.isBlank()) {
+			known.put(userId, name.trim());
+		}
+		String n = name != null && !name.isBlank() ? name.trim()
+				: names.findById(userId).map(PlayerName::name).orElse("Player " + userId);
+		names.save(new PlayerName(userId, n, clock.instant(), c));
+	}
+
+	public Map<Integer, String> countries(Collection<Integer> userIds) {
+		Map<Integer, String> found = new java.util.HashMap<>();
+		names.findAllById(userIds).forEach(p -> {
+			if (p.country() != null) {
+				found.put(p.userId(), p.country());
+			}
+		});
+		return found;
 	}
 
 	public Map<Integer, String> lookup(Collection<Integer> userIds) {

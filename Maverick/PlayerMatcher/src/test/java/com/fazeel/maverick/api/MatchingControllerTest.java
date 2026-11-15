@@ -46,6 +46,15 @@ class MatchingControllerTest {
 	@MockitoBean
 	com.fazeel.maverick.matching.PrivateRooms rooms;
 
+	@MockitoBean
+	com.fazeel.maverick.matching.Presence presence;
+
+	@MockitoBean
+	com.fazeel.maverick.matching.QuickMatch quick;
+
+	@MockitoBean(name = "matchPublisher")
+	java.util.function.Consumer<com.fazeel.maverick.domain.Match> matchPublisher;
+
 	@Test
 	void joiningReturnsTheLobby() throws Exception {
 		when(matchmaker.join(3, 7)).thenReturn(new LobbyStatus(State.WAITING, 3, List.of(7), null, null));

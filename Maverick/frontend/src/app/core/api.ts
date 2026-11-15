@@ -9,8 +9,10 @@ import {
   AnswerView,
   BoardPeriod,
   BankQuestion,
+  ArenaView,
   Category,
   ChallengeView,
+  CountryBoard,
   CustomDifficulty,
   DailyBoard,
   DailyView,
@@ -28,6 +30,7 @@ import {
   MatchAnswer,
   MatchView,
   Progress,
+  QuickStatus,
   ResultView,
   RoomStatus,
   SessionView,
@@ -252,6 +255,10 @@ export class BoardsApi {
     return this.http.get<XpBoard>('/api/v1/reports/leaderboards', { params });
   }
 
+  countries(period: BoardPeriod): Observable<CountryBoard> {
+    return this.http.get<CountryBoard>('/api/v1/reports/leaderboards/countries', { params: new HttpParams().set('period', period) });
+  }
+
   daily(date?: string): Observable<DailyBoard> {
     const params = date ? new HttpParams().set('date', date) : undefined;
     return this.http.get<DailyBoard>('/api/v1/reports/daily', { params });
@@ -289,6 +296,18 @@ export class MultiplayerApi {
 
   leave(gameId: number, userId: number): Observable<void> {
     return this.http.delete<void>(`/api/v1/matching/${gameId}/players/${userId}`);
+  }
+
+  joinQuick(): Observable<QuickStatus> {
+    return this.http.post<QuickStatus>('/api/v1/matching/quick', null);
+  }
+
+  quickStatus(): Observable<QuickStatus> {
+    return this.http.get<QuickStatus>('/api/v1/matching/quick');
+  }
+
+  leaveQuick(): Observable<void> {
+    return this.http.delete<void>('/api/v1/matching/quick');
   }
 
   createRoom(gameId: number): Observable<RoomStatus> {
@@ -346,3 +365,19 @@ export class ReportsApi {
   }
 }
 
+@Injectable({ providedIn: 'root' })
+export class ArenaApi {
+  private readonly http = inject(HttpClient);
+
+  view(): Observable<ArenaView> {
+    return this.http.get<ArenaView>('/api/v1/arena');
+  }
+
+  join(country: string | null): Observable<ArenaView> {
+    return this.http.post<ArenaView>('/api/v1/arena/join', { country });
+  }
+
+  answer(questionIndex: number, answer: string): Observable<ArenaView> {
+    return this.http.post<ArenaView>('/api/v1/arena/answers', { questionIndex, answer });
+  }
+}

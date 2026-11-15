@@ -104,6 +104,16 @@ public class Matchmaker {
 		onMatch.accept(match);
 	}
 
+	/** Open lobbies, so players can join one that already has people waiting. */
+	public synchronized List<OpenLobby> openLobbies() {
+		closeDueLobbies(clock.instant());
+		return lobbies.values().stream().map(l -> new OpenLobby(l.gameId(), l.players().size(), l.closesAt(rules.waitTime())))
+				.sorted(java.util.Comparator.comparingInt(OpenLobby::players).reversed()).toList();
+	}
+
+	public record OpenLobby(int gameId, int players, Instant closesAt) {
+	}
+
 	private LobbyStatus waiting(Lobby lobby) {
 		return new LobbyStatus(State.WAITING, lobby.gameId(), lobby.players(), lobby.closesAt(rules.waitTime()), null);
 	}

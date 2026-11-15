@@ -4,6 +4,7 @@ import { catchError, of, switchMap } from 'rxjs';
 import { BoardsApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { DailyBoard as Board } from '../core/models';
+import { flag } from '../core/countries';
 
 /** One day's challenge ranking, with the player's own row highlighted (and shown even outside the top). */
 @Component({
@@ -22,7 +23,7 @@ import { DailyBoard as Board } from '../core/models';
             @for (e of b.top; track e.userId) {
               <li [class.me]="e.userId === me">
                 <span class="rank" [class]="'rank r' + e.rank">{{ e.rank <= 3 ? medals[e.rank - 1] : e.rank }}</span>
-                <span class="name">{{ e.name }}{{ e.userId === me ? ' (you)' : '' }}</span>
+                <span class="name">{{ flag(e.country) }} {{ e.name }}{{ e.userId === me ? ' (you)' : '' }}</span>
                 <span class="muted">{{ e.correctAnswers }}/{{ e.totalQuestions }}</span>
                 <strong>{{ e.score }}</strong>
               </li>
@@ -59,6 +60,7 @@ export class DailyBoard {
   private readonly api = inject(BoardsApi);
   protected readonly me = inject(AuthService).user()?.userId;
   protected readonly medals = ['🥇', '🥈', '🥉'];
+  protected readonly flag = flag;
   protected readonly board = toSignal(
     toObservable(this.date).pipe(switchMap((d) => this.api.daily(d ?? undefined).pipe(catchError(() => of(null as Board | null))))),
     { initialValue: null },

@@ -161,7 +161,7 @@ export interface MatchView {
   totalQuestions: number;
   pointsPerQuestion: number;
   secondsPerQuestion: number;
-  standings: { userId: number; score: number; questionsWon: number }[];
+  standings: { userId: number; score: number; questionsWon: number; name?: string | null; country?: string | null; bot?: boolean }[];
   currentQuestion: {
     questionId: number;
     number: number;
@@ -284,6 +284,7 @@ export interface DailyEntry {
   maxScore: number | null;
   correctAnswers: number;
   totalQuestions: number;
+  country?: string | null;
 }
 
 export interface DailyBoard {
@@ -319,6 +320,7 @@ export interface XpEntry {
   xp: number;
   games: number;
   title: string;
+  country?: string | null;
 }
 
 export interface XpBoard {
@@ -412,3 +414,67 @@ export interface FeedbackReview {
 }
 
 export type CustomDifficulty = 'EASY' | 'MEDIUM' | 'ADVANCED' | 'MIXED';
+
+export interface CountryCount {
+  country: string;
+  players: number;
+}
+
+export interface OpenLobby {
+  gameId: number;
+  players: number;
+  closesAt: string;
+}
+
+export interface OnlineView {
+  online: number;
+  countries: CountryCount[];
+  lobbies: OpenLobby[];
+  quickQueue: number;
+}
+
+export interface QuickStatus {
+  state: 'WAITING' | 'MATCHED' | 'NOT_IN_QUEUE' | 'NO_GAMES';
+  queueSize: number;
+  waitedSeconds: number;
+  botInSeconds: number;
+  matchId: string | null;
+  gameId: number | null;
+  withBot: boolean;
+}
+
+export interface CountryBoard {
+  period: BoardPeriod;
+  countries: { rank: number; country: string; xp: number; players: number }[];
+}
+
+export type ArenaPhase = 'SOON' | 'JOINING' | 'LIVE' | 'FINISHED';
+
+export interface ArenaStanding {
+  rank: number;
+  userId: number;
+  name: string;
+  country: string | null;
+  survived: number;
+  score: number;
+}
+
+export interface ArenaRound {
+  roundId: string;
+  phase: ArenaPhase;
+  startsAt: string;
+  joinOpensAt: string;
+  players: number;
+  alive: number;
+  you: { joined: boolean; alive: boolean; survived: number; score: number; rank: number | null };
+  question: { index: number; number: number; total: number; stem: string; options: string[]; secondsLeft: number; yourAnswer: string | null } | null;
+  reveal: { index: number; stem: string; correctAnswer: string; yourAnswer: string | null; eliminatedNow: number } | null;
+  standings: ArenaStanding[];
+  endsAt: string | null;
+}
+
+export interface ArenaView {
+  serverTime: string;
+  round: ArenaRound;
+  previous: ArenaRound | null;
+}

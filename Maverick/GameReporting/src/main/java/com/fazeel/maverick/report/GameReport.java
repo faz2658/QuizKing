@@ -27,6 +27,7 @@ public record GameReport(@Id String id, GameMode mode, @Indexed int userId, int 
 
 	public static final String DAILY = "DAILY";
 	public static final String CHALLENGE = "CHALLENGE";
+	public static final String ARENA = "ARENA";
 
 	public boolean isDaily() {
 		return DAILY.equals(variant);

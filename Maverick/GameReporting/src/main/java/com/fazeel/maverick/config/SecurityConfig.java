@@ -24,7 +24,9 @@ public class SecurityConfig {
 	SecurityFilterChain security(HttpSecurity http) throws Exception {
 		return ApiSecurity.build(http, auth -> auth
 				.requestMatchers("/api/v1/reports/users/{userId}", "/api/v1/reports/users/{userId}/**").access(selfOrAdmin())
-				.requestMatchers(HttpMethod.GET, "/api/v1/reports/daily", "/api/v1/reports/leaderboards").authenticated()
+				.requestMatchers(HttpMethod.GET, "/api/v1/reports/daily", "/api/v1/reports/leaderboards",
+						"/api/v1/reports/leaderboards/countries").authenticated()
+				.requestMatchers(HttpMethod.POST, "/api/v1/reports/me").authenticated()
 				.anyRequest().hasRole(ADMIN));
 	}
 }

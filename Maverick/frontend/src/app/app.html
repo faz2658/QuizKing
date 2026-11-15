@@ -9,11 +9,15 @@
     @if (auth.user(); as user) {
       <nav aria-label="Main">
         <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Games</a>
+        <a routerLink="/world" routerLinkActive="active">World</a>
         <a routerLink="/leaderboard" routerLinkActive="active">Leaderboard</a>
         <a routerLink="/me" routerLinkActive="active">My stats</a>
         @if (auth.isAdmin()) { <a routerLink="/admin" routerLinkActive="active">Create</a> }
       </nav>
       <div class="spacer"></div>
+      @if (world.online(); as o) {
+        <a class="online" routerLink="/world" [title]="o.online + ' players online'"><span class="dot"></span>{{ o.online }} online</a>
+      }
       @if (installer.available()) {
         <button type="button" class="btn btn-ghost install" (click)="installer.install()" title="Install Quiz King on this device">📲 Install</button>
       }
