@@ -6,73 +6,67 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import java.util.ArrayList;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Random;
-import java.util.Set;
 
 import org.junit.jupiter.api.Test;
 
-import com.fazeel.maverick.catalog.QuestionSelector.Source;
 import com.fazeel.maverick.domain.GameQuestionLevel;
 import com.fazeel.maverick.domain.Questions;
 
 class QuestionSelectorTest {
 
-	private final QuestionSelector selector = new QuestionSelector(new Random(11));
+	private final QuestionSelector selector = new QuestionSelector();
 
 	@Test
-	void selectsExactlyTheRequestedMix() {
-		List<Questions> picked = selector.select(bank("manual", 5, 5, 5), new GameQuestionLevel(2, 3, 1),
-				Source.MANUAL);
+	void poolIsTheWholePlayableTopicSoEnginesCanPickFreshQuestionsEachTime() {
+		List<Questions> pool = selector.pool(bank("manual", 5, 5, 5), new GameQuestionLevel(2, 3, 1));
 
-		assertThat(picked).extracting(Questions::getQuestionLevel).containsExactly(1, 1, 2, 2, 2, 3);
+		assertThat(pool).hasSize(15);
 	}
 
 	@Test
-	void selectionIsRandomRatherThanAlwaysTheFirstQuestions() {
-		Set<Integer> seen = new HashSet<>();
-		for (int i = 0; i < 20; i++) {
-			selector.select(bank("manual", 10, 0, 0), new GameQuestionLevel(1, 0, 0), Source.MANUAL)
-					.forEach(q -> seen.add(q.getQuestionId()));
-		}
-		assertThat(seen.size()).isGreaterThan(3);
-	}
-
-	@Test
-	void questionTypeIsMatchedIgnoringCaseAndMissingTypeMeansManual() {
+	void questionsOfEveryTypeArePlayable() {
 		List<Questions> bank = new ArrayList<>(bank("Auto", 2, 0, 0));
-		bank.add(q(99, 1, null));
+		bank.add(q(90, 1, "imported"));
+		bank.add(q(91, 1, null));
 
-		assertThat(selector.select(bank, new GameQuestionLevel(1, 0, 0), Source.MANUAL))
-				.extracting(Questions::getQuestionId).containsExactly(99);
-		assertThat(selector.select(bank, new GameQuestionLevel(2, 0, 0), Source.AUTO)).hasSize(2);
+		assertThat(selector.pool(bank, new GameQuestionLevel(4, 0, 0))).hasSize(4);
 	}
 
 	@Test
-	void refusesToBuildAGameWithFewerQuestionsThanRequested() {
-		assertThatThrownBy(
-				() -> selector.select(bank("manual", 1, 0, 0), new GameQuestionLevel(0, 0, 2), Source.MANUAL))
+	void refusesAMixThePoolCannotSatisfy() {
+		assertThatThrownBy(() -> selector.pool(bank("manual", 1, 0, 0), new GameQuestionLevel(0, 0, 2)))
 				.isInstanceOf(NotEnoughQuestionsException.class)
 				.hasMessage("Asked for 2 advanced questions but the topic only has 0");
 	}
 
 	@Test
-	void unplayableQuestionsDoNotCount() {
+	void unplayableQuestionsAreLeftOut() {
 		Questions broken = q(1, 1, "manual");
 		broken.setCorrectAnswer("not an option");
 
-		assertThatThrownBy(() -> selector.select(List.of(broken), new GameQuestionLevel(1, 0, 0), Source.MANUAL))
-				.isInstanceOf(NotEnoughQuestionsException.class);
+		assertThat(QuestionSelector.playable(List.of(broken, q(2, 1, "manual")))).extracting(Questions::getQuestionId)
+				.containsExactly(2);
 	}
 
 	@Test
 	void emptyOrNegativeMixIsInvalid() {
-		assertThatThrownBy(() -> selector.select(bank("manual", 3, 0, 0), new GameQuestionLevel(0, 0, 0),
-				Source.MANUAL)).isInstanceOf(InvalidGameException.class);
-		assertThatThrownBy(() -> selector.select(bank("manual", 3, 0, 0), new GameQuestionLevel(2, -1, 0),
-				Source.MANUAL)).isInstanceOf(InvalidGameException.class);
-		assertThatThrownBy(() -> selector.select(bank("manual", 3, 0, 0), null, Source.MANUAL))
+		assertThatThrownBy(() -> selector.pool(bank("manual", 3, 0, 0), new GameQuestionLevel(0, 0, 0)))
 				.isInstanceOf(InvalidGameException.class);
+		assertThatThrownBy(() -> selector.pool(bank("manual", 3, 0, 0), new GameQuestionLevel(2, -1, 0)))
+				.isInstanceOf(InvalidGameException.class);
+		assertThatThrownBy(() -> selector.pool(bank("manual", 3, 0, 0), null)).isInstanceOf(InvalidGameException.class);
+	}
+
+	@Test
+	void countsQuestionsPerLevel() {
+		assertThat(QuestionSelector.countByLevel(bank("x", 2, 1, 4))).containsExactly(2, 1, 4);
+	}
+
+	@Test
+	void autoGameMixMovesShortfallToOtherLevels() {
+		assertThat(AutoGames.fit(10, new int[] { 4, 3, 3 }, new int[] { 50, 50, 50 })).containsExactly(4, 3, 3);
+		assertThat(AutoGames.fit(10, new int[] { 4, 3, 3 }, new int[] { 20, 1, 0 })).containsExactly(9, 1, 0);
+		assertThat(AutoGames.fit(10, new int[] { 4, 3, 3 }, new int[] { 2, 2, 2 })).containsExactly(2, 2, 2);
 	}
 }

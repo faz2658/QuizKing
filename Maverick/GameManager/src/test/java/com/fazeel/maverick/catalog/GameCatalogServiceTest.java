@@ -12,7 +12,6 @@ import static org.mockito.Mockito.when;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.Random;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -49,8 +48,8 @@ class GameCatalogServiceTest {
 
 	@BeforeEach
 	void setUp() {
-		service = new GameCatalogService(games, multiGames, categories, ids, new QuestionSelector(new Random(1)),
-				events);
+		service = new GameCatalogService(games, multiGames, categories, ids, new QuestionSelector(), events,
+				new AutoGames(false, 0, 0, 0));
 		when(ids.nextGameId()).thenReturn(2_000_001, 2_000_002);
 		when(games.save(any())).thenAnswer(i -> i.getArgument(0));
 		when(multiGames.save(any())).thenAnswer(i -> i.getArgument(0));
@@ -73,7 +72,8 @@ class GameCatalogServiceTest {
 
 		assertThat(game.getGameId()).isEqualTo(2_000_001);
 		assertThat(game.getGameName()).isEqualTo("Capitals");
-		assertThat(game.getQuestions()).hasSize(4);
+		assertThat(game.getQuestions()).as("the whole topic pool, engines pick per player").hasSize(9);
+		assertThat(game.getQuestionLevels().getEasyLevel()).isEqualTo(2);
 		assertThat(game.getCategoryId()).isEqualTo(1);
 		assertThat(game.getGameType().getGameTypeId()).isEqualTo(GameCatalogService.SINGLE_PLAYER);
 		assertThat(game.getTopic().getTopicName()).isEqualTo("Geography");
@@ -103,7 +103,7 @@ class GameCatalogServiceTest {
 	}
 
 	@Test
-	void multiplayerGamesUseGeneratedQuestionsAndFallBackToNumberOfQuestions() {
+	void multiplayerGamesDrawFromThePoolAndFallBackToNumberOfQuestions() {
 		when(categories.findById(1)).thenReturn(Optional.of(category(1, "Geography", bank("Auto", 4, 0, 0))));
 		MultiPlayerGame r = new MultiPlayerGame();
 		r.setGameName("Race");
@@ -112,7 +112,7 @@ class GameCatalogServiceTest {
 
 		MultiPlayerGame game = service.createMultiPlayerGame(1, "Geography", r);
 
-		assertThat(game.getAutoquestions()).hasSize(3);
+		assertThat(game.getAutoquestions()).hasSize(4);
 		assertThat(game.getNumberOfQuestions()).isEqualTo(3);
 		assertThat(game.getScorePerQuestion()).isEqualTo(10);
 		verify(events).multiPlayerGameCreated(game);
@@ -180,6 +180,57 @@ class GameCatalogServiceTest {
 				.containsExactlyInAnyOrder(1, 2, 3);
 		assertThat(merged.getTopic().get(0).getQuestions()).filteredOn(q -> q.getQuestionId() == 2)
 				.extracting(Questions::getQuestionLevel).containsExactly(2);
+	}
+
+	@Test
+	void newQuestionsReachExistingGamesOfTheTopic() {
+		Category stored = category(1, "Geography", bank("manual", 3, 0, 0));
+		when(categories.findById(1)).thenReturn(Optional.of(stored));
+		Game existing = request(1, 0, 0);
+		existing.setGameId(5);
+		existing.setQuestions(List.of(q(1, 1, "manual")));
+		when(games.findByCategoryIdAndTopicTopicNameIgnoreCase(1, "Geography")).thenReturn(List.of(existing));
+
+		service.mergeCategory(category(1, "Geography", List.of(q(50, 2, "imported"), q(51, 3, "imported"))));
+
+		assertThat(existing.getQuestions()).hasSize(5);
+		verify(events).gameDefinition(existing);
+	}
+
+	@Test
+	void autoGamesGiveEveryTopicWithEnoughQuestionsASoloAndAMultiplayerGame() {
+		service = new GameCatalogService(games, multiGames, categories, ids, new QuestionSelector(), events,
+				new AutoGames(true, 12, 10, 8));
+		Category stored = category(1, "Film", bank("imported", 0, 0, 0));
+		when(categories.findById(1)).thenReturn(Optional.of(stored));
+		when(games.findByCategoryIdAndTopicTopicNameIgnoreCase(1, "Film")).thenReturn(List.of());
+		when(multiGames.findByCategoryIdAndTopicTopicNameIgnoreCase(1, "Film")).thenReturn(List.of());
+
+		service.mergeCategory(category(1, "Film", bank("imported", 20, 6, 2)));
+
+		ArgumentCaptor<Game> solo = ArgumentCaptor.forClass(Game.class);
+		verify(events).gameCreated(solo.capture());
+		assertThat(solo.getValue().getGameName()).isEqualTo("Film");
+		assertThat(solo.getValue().getQuestionLevels().getEasyLevel()).isEqualTo(5);
+		assertThat(solo.getValue().getQuestionLevels().getMediumLevel()).isEqualTo(3);
+		assertThat(solo.getValue().getQuestionLevels().getAdvancedLevel()).isEqualTo(2);
+		assertThat(solo.getValue().getQuestions()).hasSize(28);
+		ArgumentCaptor<MultiPlayerGame> multi = ArgumentCaptor.forClass(MultiPlayerGame.class);
+		verify(events).multiPlayerGameCreated(multi.capture());
+		assertThat(multi.getValue().getGameName()).isEqualTo("Film Showdown");
+		assertThat(multi.getValue().getNumberOfQuestions()).isEqualTo(8);
+	}
+
+	@Test
+	void autoGamesSkipSmallTopicsAndTopicsThatAlreadyHaveGames() {
+		service = new GameCatalogService(games, multiGames, categories, ids, new QuestionSelector(), events,
+				new AutoGames(true, 12, 10, 8));
+		when(categories.findById(1)).thenReturn(Optional.of(category(1, "Tiny", bank("imported", 0, 0, 0))));
+
+		service.mergeCategory(category(1, "Tiny", bank("imported", 5, 0, 0)));
+
+		verify(events, never()).gameCreated(any());
+		verify(events, never()).multiPlayerGameCreated(any());
 	}
 
 	@Test
