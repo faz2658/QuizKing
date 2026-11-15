@@ -1,0 +1,11 @@
+# HTTPS with an automatic Let's Encrypt certificate for SITE_ADDRESS, then everything to the Quiz King frontend.
+{$SITE_ADDRESS} {
+	encode zstd gzip
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		-Server
+	}
+	reverse_proxy frontend:80
+}

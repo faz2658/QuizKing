@@ -1,0 +1,33 @@
+# Production overrides: HTTPS in front, nothing else reachable from outside.
+#   docker compose -f docker-compose.yml -f docker-compose.prod.yml --profile ai up -d --build
+# Needs SITE_ADDRESS (e.g. 40-233-75-213.sslip.io or your domain) and the secrets in .env.
+services:
+  caddy:
+    image: caddy:2.10
+    restart: unless-stopped
+    ports: ["80:80", "443:443", "443:443/udp"]
+    environment:
+      SITE_ADDRESS: ${SITE_ADDRESS:?set SITE_ADDRESS}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    depends_on: [frontend]
+
+  # Only Caddy is public; databases, Kafka and dashboards stay inside the Docker network.
+  frontend:
+    ports: !reset []
+  mongo:
+    ports: !reset []
+  neo4j:
+    ports: !reset []
+  kafka:
+    ports: !reset []
+  prometheus:
+    ports: !reset []
+  grafana:
+    ports: !reset []
+
+volumes:
+  caddy-data:
+  caddy-config:
