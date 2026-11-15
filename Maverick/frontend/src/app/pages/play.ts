@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, effect, inject, input } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { map } from 'rxjs';
+import { Observable, map } from 'rxjs';
 import { QuizApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { SessionView } from '../core/models';
@@ -8,9 +8,9 @@ import { QuizAdapter, QuizRunner } from '../core/quiz-runner';
 import { QuizStage } from '../ui/quiz-stage';
 import { CountUp } from '../motion/count-up';
 
-export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number): QuizAdapter<SessionView> {
+export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number, start?: () => Observable<SessionView>): QuizAdapter<SessionView> {
   return {
-    start: () => api.start(gameId, userId),
+    start: start ?? (() => api.start(gameId, userId)),
     refresh: (s) => api.session(s.sessionId),
     answer: (s, questionId, option) =>
       api.answer(s.sessionId, questionId, option).pipe(
@@ -76,7 +76,9 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
   `,
 })
 export class Play implements OnInit {
-  readonly gameId = input.required<string>();
+  readonly gameId = input<string>('0');
+  /** 'daily' for today's challenge (set by the route). */
+  readonly mode = input<string>('');
   private readonly api = inject(QuizApi);
   private readonly auth = inject(AuthService);
   private readonly router = inject(Router);
@@ -95,7 +97,8 @@ export class Play implements OnInit {
   }
 
   ngOnInit(): void {
-    this.runner = new QuizRunner(singlePlayerAdapter(this.api, Number(this.gameId()), this.auth.user()!.userId), this.destroyRef);
+    const start = this.mode() === 'daily' ? () => this.api.startDaily() : undefined;
+    this.runner = new QuizRunner(singlePlayerAdapter(this.api, Number(this.gameId()), this.auth.user()!.userId, start), this.destroyRef);
     this.runner.start();
   }
 }

@@ -8,12 +8,13 @@ import { errorMessage } from '../core/http-errors';
 import { GameCard } from '../core/models';
 import { GameCardView } from '../ui/game-card';
 import { BlurText } from '../motion/blur-text';
+import { DailyBanner } from '../ui/daily-banner';
 
 type Filter = 'ALL' | 'SINGLE' | 'MULTI';
 
 @Component({
   selector: 'mv-home',
-  imports: [FormsModule, GameCardView, BlurText],
+  imports: [FormsModule, GameCardView, BlurText, DailyBanner],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="head">
@@ -28,6 +29,8 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
         <input class="input" type="search" placeholder="Search games…" [ngModel]="query()" (ngModelChange)="query.set($event)" />
       </label>
     </section>
+
+    <mv-daily-banner />
 
     @if (state().loading) {
       <div class="grid">@for (i of [1, 2, 3, 4]; track i) { <div class="skeleton tile"></div> }</div>

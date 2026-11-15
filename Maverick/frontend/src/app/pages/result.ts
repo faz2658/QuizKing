@@ -7,6 +7,7 @@ import { errorMessage } from '../core/http-errors';
 import { ResultView } from '../core/models';
 import { CountUp } from '../motion/count-up';
 import { Sparks } from '../motion/sparks';
+import { DailyBoard } from '../ui/daily-board';
 
 export function verdict(percentage: number): string {
   if (percentage >= 90) return 'Outstanding!';
@@ -18,7 +19,7 @@ export function verdict(percentage: number): string {
 
 @Component({
   selector: 'mv-result',
-  imports: [RouterLink, CountUp],
+  imports: [RouterLink, CountUp, DailyBoard],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (state(); as st) {
@@ -31,19 +32,27 @@ export function verdict(percentage: number): string {
             <span class="muted">of max score</span>
           </div>
           <div class="text">
-            <span class="chip">{{ r.gameName }}</span>
+            <span class="chip">{{ r.variant === 'DAILY' ? 'Daily Challenge · ' + r.variantKey : r.gameName }}</span>
             <h1>{{ title() }}</h1>
             <div class="stats">
               <div><strong><mv-count-up [value]="r.score" [duration]="1200" /></strong><span class="muted">/ {{ r.maxScore }} points</span></div>
               <div><strong>{{ r.correctAnswers }}</strong><span class="muted">/ {{ r.totalQuestions }} correct</span></div>
             </div>
             <div class="row">
-              <a class="btn btn-primary" [routerLink]="['/play', r.gameId]">Play again</a>
-              <a class="btn" [routerLink]="['/adaptive', r.gameId]">Try adaptive</a>
-              <a class="btn btn-ghost" routerLink="/">All games</a>
+              @if (r.variant === 'DAILY') {
+                <a class="btn btn-primary" routerLink="/">Play more games</a>
+              } @else if (r.gameId > 0) {
+                <a class="btn btn-primary" [routerLink]="['/play', r.gameId]">Play again</a>
+                <a class="btn" [routerLink]="['/adaptive', r.gameId]">Try adaptive</a>
+                <a class="btn btn-ghost" routerLink="/">All games</a>
+              } @else {
+                <a class="btn btn-primary" routerLink="/">All games</a>
+              }
             </div>
           </div>
         </section>
+
+        @if (r.variant === 'DAILY') { <mv-daily-board [date]="r.variantKey" /> }
 
         <h2 class="review-title">Review</h2>
         <ol class="review">

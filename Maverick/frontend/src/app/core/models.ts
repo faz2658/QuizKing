@@ -51,6 +51,7 @@ export interface SessionView {
   score: number;
   maxScore: number;
   currentQuestion: QuestionView | null;
+  variant?: SessionVariant;
 }
 
 export interface AnswerView {
@@ -83,6 +84,11 @@ export interface ResultView {
   correctAnswers: number;
   totalQuestions: number;
   review: ReviewItem[];
+  variant?: SessionVariant;
+  /** The day (DAILY) or challenge id (CHALLENGE). */
+  variantKey?: string | null;
+  /** The score a friend challenge had to beat. */
+  opponentScore?: number | null;
 }
 
 // ---- adaptive ----
@@ -232,4 +238,34 @@ export interface Category {
   categoryId: number;
   categoryName: string;
   topic: { topicId: number; topicName: string; questionCount: number }[] | null;
+}
+
+export type SessionVariant = 'STANDARD' | 'DAILY' | 'CUSTOM' | 'CHALLENGE';
+
+export interface DailyView {
+  date: string;
+  totalQuestions: number;
+  topics: string[];
+  status: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED';
+  sessionId: string | null;
+  score: number | null;
+  maxScore: number | null;
+  secondsUntilNext: number;
+}
+
+export interface DailyEntry {
+  rank: number;
+  userId: number;
+  name: string;
+  score: number;
+  maxScore: number | null;
+  correctAnswers: number;
+  totalQuestions: number;
+}
+
+export interface DailyBoard {
+  date: string;
+  players: number;
+  top: DailyEntry[];
+  you: DailyEntry | null;
 }

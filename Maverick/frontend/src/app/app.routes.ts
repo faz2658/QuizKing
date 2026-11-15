@@ -4,6 +4,7 @@ import { adminGuard, playerGuard } from './core/auth.guard';
 export const routes: Routes = [
   { path: 'welcome', title: 'Welcome · Quiz King', loadComponent: () => import('./pages/welcome').then((m) => m.Welcome) },
   { path: '', title: 'Games · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/home').then((m) => m.Home) },
+  { path: 'daily', title: 'Daily Challenge · Quiz King', canActivate: [playerGuard], data: { mode: 'daily' }, loadComponent: () => import('./pages/play').then((m) => m.Play) },
   { path: 'play/:gameId', title: 'Playing · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/play').then((m) => m.Play) },
   { path: 'result/:sessionId', title: 'Results · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/result').then((m) => m.Result) },
   { path: 'adaptive/:gameId', title: 'Adaptive · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/adaptive').then((m) => m.Adaptive) },

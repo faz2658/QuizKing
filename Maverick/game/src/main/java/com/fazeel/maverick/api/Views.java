@@ -39,7 +39,8 @@ public final class Views {
 	}
 
 	public record SessionView(String sessionId, int gameId, String gameName, SessionStatus status,
-			int totalQuestions, int answeredQuestions, int score, int maxScore, QuestionView currentQuestion) {
+			int totalQuestions, int answeredQuestions, int score, int maxScore, QuestionView currentQuestion,
+			String variant) {
 
 		static SessionView of(GameSession s, Instant now) {
 			QuestionView current = s.currentQuestion()
@@ -48,7 +49,7 @@ public final class Views {
 							q.getPoints()))
 					.orElse(null);
 			return new SessionView(s.getId(), s.getGameId(), s.getGameName(), s.getStatus(), s.getQuestions().size(),
-					s.getCurrentIndex(), s.getScore(), s.maxScore(), current);
+					s.getCurrentIndex(), s.getScore(), s.maxScore(), current, s.getVariant().name());
 		}
 	}
 
@@ -65,7 +66,8 @@ public final class Views {
 	}
 
 	public record ResultView(String sessionId, int gameId, String gameName, int score, int maxScore,
-			int percentage, long correctAnswers, int totalQuestions, List<ReviewItem> review) {
+			int percentage, long correctAnswers, int totalQuestions, List<ReviewItem> review, String variant,
+			String variantKey, Integer opponentScore) {
 
 		static ResultView of(GameSession s) {
 			List<SessionQuestion> qs = s.getQuestions();
@@ -76,7 +78,13 @@ public final class Views {
 						q.getCorrectAnswer(), q.isCorrect(), q.isTimedOut(), q.getPointsAwarded(), q.getPoints()));
 			}
 			return new ResultView(s.getId(), s.getGameId(), s.getGameName(), s.getScore(), s.maxScore(),
-					s.percentage(), s.correctCount(), qs.size(), review);
+					s.percentage(), s.correctCount(), qs.size(), review, s.getVariant().name(), s.getVariantKey(),
+					s.getOpponentScore());
 		}
+	}
+
+	/** Today's challenge from the player's side. */
+	public record DailyView(String date, int totalQuestions, List<String> topics, String status, String sessionId,
+			Integer score, Integer maxScore, long secondsUntilNext) {
 	}
 }

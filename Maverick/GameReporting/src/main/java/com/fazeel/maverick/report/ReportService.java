@@ -17,12 +17,15 @@ import com.fazeel.maverick.report.GameReport.GameMode;
 public class ReportService {
 
 	private final GameReportRepository reports;
+	private final PlayerNames names;
 
-	public ReportService(GameReportRepository reports) {
+	public ReportService(GameReportRepository reports, PlayerNames names) {
 		this.reports = reports;
+		this.names = names;
 	}
 
 	public void record(SinglePlayerResult r) {
+		names.remember(r.userId(), r.playerName());
 		reports.save(ReportMapper.single(r));
 	}
 

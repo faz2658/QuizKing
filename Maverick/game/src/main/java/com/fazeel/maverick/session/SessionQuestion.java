@@ -35,6 +35,11 @@ public class SessionQuestion {
 		this.points = points;
 	}
 
+	/** The same question, not yet asked: for sessions that replay a fixed list (daily, challenge). */
+	public SessionQuestion fresh() {
+		return new SessionQuestion(questionId, difficulty, stem, options, correctAnswer, timeLimitSeconds, points);
+	}
+
 	public boolean isAnswered() {
 		return answeredAt != null;
 	}

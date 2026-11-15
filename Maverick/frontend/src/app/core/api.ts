@@ -7,6 +7,8 @@ import {
   AdaptiveSession,
   AnswerView,
   Category,
+  DailyBoard,
+  DailyView,
   GameCard,
   GameMode,
   GameReport,
@@ -168,6 +170,25 @@ export class QuizApi {
 
   result(id: string): Observable<ResultView> {
     return this.http.get<ResultView>(`/api/v1/sessions/${id}/result`);
+  }
+
+  /** Today's challenge and whether the player has played it. */
+  daily(): Observable<DailyView> {
+    return this.http.get<DailyView>('/api/v1/daily');
+  }
+
+  startDaily(): Observable<SessionView> {
+    return this.http.post<SessionView>('/api/v1/daily/sessions', null);
+  }
+}
+
+@Injectable({ providedIn: 'root' })
+export class BoardsApi {
+  private readonly http = inject(HttpClient);
+
+  daily(date?: string): Observable<DailyBoard> {
+    const params = date ? new HttpParams().set('date', date) : undefined;
+    return this.http.get<DailyBoard>('/api/v1/reports/daily', { params });
   }
 }
 

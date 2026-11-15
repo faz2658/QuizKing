@@ -126,13 +126,18 @@ public class QuizBuilder {
 				.equals(List.of("false", "true"));
 	}
 
-	static boolean isPlayable(Questions q) {
+	public static boolean isPlayable(Questions q) {
 		if (q == null || isBlank(q.getQuestionStem()) || isBlank(q.getCorrectAnswer())) {
 			return false;
 		}
 		List<String> options = options(q);
 		return options.size() >= 2
 				&& options.stream().anyMatch(o -> GameSession.matches(o, q.getCorrectAnswer()));
+	}
+
+	/** One question with the game's time and points for its level (defaults when {@code game} is null). */
+	public SessionQuestion toSessionQuestion(Questions q, Game game) {
+		return toSessionQuestion(q, Difficulty.fromLevel(q.getQuestionLevel()), game);
 	}
 
 	private SessionQuestion toSessionQuestion(Questions q, Difficulty d, Game game) {
@@ -145,7 +150,8 @@ public class QuizBuilder {
 		String correct = options.stream().filter(o -> GameSession.matches(o, q.getCorrectAnswer())).findFirst()
 				.orElseThrow();
 		return new SessionQuestion(q.getQuestionId(), d, q.getQuestionStem().trim(), options, correct,
-				seconds(game.getQuestionTime(), d), points(game.getQuestionScore(), d));
+				seconds(game == null ? null : game.getQuestionTime(), d),
+				points(game == null ? null : game.getQuestionScore(), d));
 	}
 
 	private static List<String> options(Questions q) {

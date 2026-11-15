@@ -51,6 +51,10 @@ public class GameSessionService {
 	}
 
 	public GameSession start(int gameId, int userId) {
+		return start(gameId, userId, null);
+	}
+
+	public GameSession start(int gameId, int userId, String playerName) {
 		Game game = games.findById(gameId).orElseThrow(() -> {
 			events.requestGame(new GameRequest(gameId, userId));
 			return new GameNotReadyException(gameId);
@@ -65,7 +69,7 @@ public class GameSessionService {
 		}
 		Instant now = clock.instant();
 		GameSession session = new GameSession(UUID.randomUUID().toString(), gameId, userId, game.getCategoryId(),
-				game.getGameName(), questions, now);
+				game.getGameName(), questions, now).playedBy(playerName);
 		seen.saveAll(questions.stream().map(q -> SeenQuestion.of(userId, q.getQuestionId(), now)).toList());
 		return sessions.save(session);
 	}
@@ -117,7 +121,8 @@ public class GameSessionService {
 				.toList();
 		return new SinglePlayerResult(s.getId(), s.getGameId(), s.getGameName(), s.getCategoryId(), s.getUserId(),
 				s.getScore(), s.maxScore(), s.percentage(), (int) s.correctCount(), s.getQuestions().size(),
-				s.getCompletedAt(), played);
+				s.getCompletedAt(), played, s.getVariant().name(), s.getVariantKey(), s.getOpponentScore(),
+				s.getPlayerName());
 	}
 
 	public record AnswerResult(AnswerOutcome outcome, GameSession session) {

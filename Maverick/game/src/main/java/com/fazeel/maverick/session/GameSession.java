@@ -36,6 +36,12 @@ public class GameSession {
 	private Instant startedAt;
 	private Instant completedAt;
 	private boolean resultPublished;
+	private SessionVariant variant = SessionVariant.STANDARD;
+	/** The day (DAILY) or challenge id (CHALLENGE) the session belongs to. */
+	private String variantKey;
+	private String playerName;
+	/** The score to beat (CHALLENGE). */
+	private Integer opponentScore;
 
 	public GameSession() {
 	}
@@ -189,6 +195,35 @@ public class GameSession {
 
 	public Instant getCompletedAt() {
 		return completedAt;
+	}
+
+	/** Marks the session as a daily, custom or challenge run. */
+	public GameSession asVariant(SessionVariant variant, String variantKey, Integer opponentScore) {
+		this.variant = variant;
+		this.variantKey = variantKey;
+		this.opponentScore = opponentScore;
+		return this;
+	}
+
+	public GameSession playedBy(String playerName) {
+		this.playerName = playerName;
+		return this;
+	}
+
+	public SessionVariant getVariant() {
+		return variant == null ? SessionVariant.STANDARD : variant;
+	}
+
+	public String getVariantKey() {
+		return variantKey;
+	}
+
+	public String getPlayerName() {
+		return playerName;
+	}
+
+	public Integer getOpponentScore() {
+		return opponentScore;
 	}
 
 	public boolean isResultPublished() {
