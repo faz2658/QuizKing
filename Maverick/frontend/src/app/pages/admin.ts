@@ -1,12 +1,12 @@
-import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { catchError, of } from 'rxjs';
-import { CatalogApi } from '../core/api';
+import { Subscription, catchError, of, switchMap, takeWhile, timer } from 'rxjs';
+import { CatalogApi, QuestionBankApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
-import { Category } from '../core/models';
+import { Category, ImportStatus, TopicStats } from '../core/models';
 
 /** Creates a game from a topic's question bank in the game manager. */
 @Component({
@@ -14,6 +14,43 @@ import { Category } from '../core/models';
   imports: [FormsModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
+    <h1>Question bank</h1>
+    <section class="card stack bank">
+      <div class="row">
+        <div>
+          <strong>{{ totalQuestions() }} questions</strong> in {{ stats().length }} topics
+          <p class="muted small">Every topic with at least 12 questions gets a solo and a multiplayer game automatically.
+            Games draw new questions on every play and skip ones the player has already seen.</p>
+        </div>
+        <span class="spacer"></span>
+        <button class="btn btn-primary" type="button" (click)="startImport()" [disabled]="importStatus()?.state === 'RUNNING'">
+          {{ importStatus()?.state === 'RUNNING' ? 'Importing…' : 'Import from Open Trivia DB' }}
+        </button>
+      </div>
+      @if (importStatus(); as st) {
+        @if (st.state === 'RUNNING') {
+          <div class="progress" role="progressbar" aria-label="Import progress" [attr.aria-valuenow]="st.fetched" aria-valuemax="5300">
+            <span [style.width.%]="Math.min(100, st.fetched / 53)"></span>
+          </div>
+          <p class="muted small" aria-live="polite">{{ st.fetched }} downloaded · {{ st.added }} new so far · about {{ minutesLeft(st) }} min left (Open Trivia DB allows one request every 5 seconds)</p>
+        } @else if (st.state === 'DONE') {
+          <p class="ok">{{ st.message }}</p>
+        } @else if (st.state === 'FAILED') {
+          <div class="alert" role="alert">Import stopped: {{ st.message }}. {{ st.added }} questions were saved; you can run it again.</div>
+        }
+      }
+      @if (stats().length) {
+        <details>
+          <summary>Questions per topic</summary>
+          <ul class="topics">
+            @for (t of sortedStats(); track t.category + t.topic) {
+              <li><span>{{ t.topic === t.category ? t.topic : t.category + ' · ' + t.topic }}</span><strong>{{ t.questions }}</strong></li>
+            }
+          </ul>
+        </details>
+      }
+    </section>
+
     <h1>Create a game</h1>
     <form class="card stack form" (ngSubmit)="create()">
       <div class="two">
@@ -58,6 +95,13 @@ import { Category } from '../core/models';
     </form>
   `,
   styles: `
+    .bank { max-width: 760px; margin-bottom: 36px; }
+    .small { font-size: 0.88rem; margin: 4px 0 0; }
+    .progress { height: 8px; border-radius: 999px; background: var(--bg-sunken); overflow: hidden; }
+    .progress span { display: block; height: 100%; background: linear-gradient(90deg, var(--accent-2), var(--accent)); transition: width 0.5s; }
+    .topics { list-style: none; padding: 0; margin: 12px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px 20px; }
+    .topics li { display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); padding: 4px 0; }
+    summary { cursor: pointer; font-weight: 650; }
     .form { max-width: 760px; }
     .two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
     .three { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
@@ -67,8 +111,48 @@ import { Category } from '../core/models';
     @media (max-width: 640px) { .two, .three { grid-template-columns: 1fr; } }
   `,
 })
-export class Admin {
+export class Admin implements OnInit {
   private readonly api = inject(CatalogApi);
+  private readonly bank = inject(QuestionBankApi);
+  private readonly destroyRef = inject(DestroyRef);
+  protected readonly Math = Math;
+  protected readonly stats = signal<TopicStats[]>([]);
+  protected readonly importStatus = signal<ImportStatus | null>(null);
+  protected readonly totalQuestions = computed(() => this.stats().reduce((n, t) => n + t.questions, 0));
+  protected readonly sortedStats = computed(() => [...this.stats()].sort((a, b) => b.questions - a.questions));
+  private poll = new Subscription();
+
+  ngOnInit(): void {
+    this.destroyRef.onDestroy(() => this.poll.unsubscribe());
+    this.loadStats();
+    this.bank.importStatus().subscribe({ next: (s) => this.trackImport(s), error: () => {} });
+  }
+
+  protected startImport(): void {
+    this.bank.startImport().subscribe({ next: (s) => this.trackImport(s), error: (e) => this.error.set(errorMessage(e)) });
+  }
+
+  protected minutesLeft(s: ImportStatus): number {
+    return Math.max(1, Math.round(((5300 - s.fetched) / 50) * 5.5 / 60));
+  }
+
+  private trackImport(s: ImportStatus): void {
+    this.importStatus.set(s);
+    if (s.state !== 'RUNNING') {
+      return;
+    }
+    this.poll.unsubscribe();
+    this.poll = timer(3000, 3000)
+      .pipe(switchMap(() => this.bank.importStatus()), takeWhile((st) => st.state === 'RUNNING', true))
+      .subscribe((st) => {
+        this.importStatus.set(st);
+        this.loadStats();
+      });
+  }
+
+  private loadStats(): void {
+    this.bank.stats().pipe(catchError(() => of([] as TopicStats[]))).subscribe((s) => this.stats.set(s));
+  }
   private readonly auth = inject(AuthService);
   private readonly router = inject(Router);
 

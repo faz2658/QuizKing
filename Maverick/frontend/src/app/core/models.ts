@@ -185,6 +185,23 @@ export interface UserSummary {
   modes: Record<GameMode, ModeSummary>;
 }
 
+// ---- question bank (admin) ----
+export interface ImportStatus {
+  state: 'IDLE' | 'RUNNING' | 'DONE' | 'FAILED';
+  fetched: number;
+  added: number;
+  topics: number;
+  startedAt: string | null;
+  finishedAt: string | null;
+  message: string | null;
+}
+
+export interface TopicStats {
+  category: string;
+  topic: string;
+  questions: number;
+}
+
 // ---- game manager (admin) ----
 export interface Category {
   categoryId: number;

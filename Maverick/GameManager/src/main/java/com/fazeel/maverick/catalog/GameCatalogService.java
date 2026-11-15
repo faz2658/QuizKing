@@ -8,7 +8,6 @@ import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
-import com.fazeel.maverick.catalog.QuestionSelector.Source;
 import com.fazeel.maverick.domain.Category;
 import com.fazeel.maverick.domain.Game;
 import com.fazeel.maverick.domain.GameQuestionLevel;
@@ -22,6 +21,9 @@ public class GameCatalogService {
 
 	static final int SINGLE_PLAYER = 1;
 	static final int MULTI_PLAYER = 2;
+	static final String AUTO_CREATOR = "Quiz King";
+	private static final int[] SOLO_MIX = { 4, 3, 3 };
+	private static final int[] MULTI_MIX = { 3, 3, 2 };
 
 	private final GameRepository games;
 	private final MultiPlayerGameRepository multiGames;
@@ -29,15 +31,18 @@ public class GameCatalogService {
 	private final GameIdGenerator ids;
 	private final QuestionSelector selector;
 	private final CatalogEvents events;
+	private final AutoGames autoGames;
 
 	public GameCatalogService(GameRepository games, MultiPlayerGameRepository multiGames,
-			CategoryRepository categories, GameIdGenerator ids, QuestionSelector selector, CatalogEvents events) {
+			CategoryRepository categories, GameIdGenerator ids, QuestionSelector selector, CatalogEvents events,
+			AutoGames autoGames) {
 		this.games = games;
 		this.multiGames = multiGames;
 		this.categories = categories;
 		this.ids = ids;
 		this.selector = selector;
 		this.events = events;
+		this.autoGames = autoGames;
 	}
 
 	// ---- categories -------------------------------------------------------------------------
@@ -90,14 +95,80 @@ public class GameCatalogService {
 			}
 		}
 		target.setTopic(topics);
-		return categories.save(target);
+		Category saved = categories.save(target);
+		for (Topic in : Objects.requireNonNullElse(incoming.getTopic(), List.<Topic>of())) {
+			if (in != null && in.getTopicName() != null) {
+				Topic merged = topic(saved.getCategoryId(), in.getTopicName());
+				refreshGames(saved.getCategoryId(), merged);
+				if (autoGames.enabled()) {
+					createAutoGames(saved, merged);
+				}
+			}
+		}
+		return saved;
+	}
+
+	/** Games of a topic always draw from its current pool, so new questions show up in existing games. */
+	private void refreshGames(int categoryId, Topic topic) {
+		List<Questions> pool = QuestionSelector.playable(topic.getQuestions());
+		int[] available = QuestionSelector.countByLevel(pool);
+		for (Game g : games.findByCategoryIdAndTopicTopicNameIgnoreCase(categoryId, topic.getTopicName())) {
+			g.setQuestions(pool);
+			if (AUTO_CREATOR.equals(g.getCreatedBy())) {
+				// auto games made early in an import get a better mix as more levels fill up
+				int[] mix = AutoGames.fit(autoGames.soloQuestions(), SOLO_MIX, available);
+				g.setQuestionLevels(new GameQuestionLevel(mix[0], mix[1], mix[2]));
+			}
+			events.gameDefinition(games.save(g));
+		}
+		for (MultiPlayerGame g : multiGames.findByCategoryIdAndTopicTopicNameIgnoreCase(categoryId,
+				topic.getTopicName())) {
+			g.setAutoquestions(pool);
+			if (AUTO_CREATOR.equals(g.getCreatedBy())) {
+				int[] mix = AutoGames.fit(autoGames.multiplayerQuestions(), MULTI_MIX, available);
+				g.setQuestionLevel(new GameQuestionLevel(mix[0], mix[1], mix[2]));
+			}
+			events.multiPlayerGameCreated(multiGames.save(g));
+		}
+	}
+
+	/** Gives a topic with enough questions a solo and a multiplayer game, once. */
+	private void createAutoGames(Category category, Topic topic) {
+		List<Questions> pool = QuestionSelector.playable(topic.getQuestions());
+		if (pool.size() < autoGames.minQuestions()) {
+			return;
+		}
+		int[] available = QuestionSelector.countByLevel(pool);
+		if (games.findByCategoryIdAndTopicTopicNameIgnoreCase(category.getCategoryId(), topic.getTopicName())
+				.isEmpty()) {
+			int[] mix = AutoGames.fit(autoGames.soloQuestions(), SOLO_MIX, available);
+			Game g = new Game();
+			g.setGameName(topic.getTopicName());
+			g.setGameDescription(mix[0] + mix[1] + mix[2] + " questions from " + pool.size()
+					+ ". New ones every time you play.");
+			g.setGameRules("Answer before the timer runs out. Easy 10 points, medium 20, advanced 30.");
+			g.setCreatedBy(AUTO_CREATOR);
+			g.setQuestionLevels(new GameQuestionLevel(mix[0], mix[1], mix[2]));
+			createGame(category.getCategoryId(), topic.getTopicName(), g);
+		}
+		if (multiGames.findByCategoryIdAndTopicTopicNameIgnoreCase(category.getCategoryId(), topic.getTopicName())
+				.isEmpty()) {
+			int[] mix = AutoGames.fit(autoGames.multiplayerQuestions(), MULTI_MIX, available);
+			MultiPlayerGame g = new MultiPlayerGame();
+			g.setGameName(topic.getTopicName() + " Showdown");
+			g.setGameDescription("Fastest finger first: " + (mix[0] + mix[1] + mix[2]) + " questions against 1-3 rivals.");
+			g.setCreatedBy(AUTO_CREATOR);
+			g.setQuestionLevel(new GameQuestionLevel(mix[0], mix[1], mix[2]));
+			g.setTimePerQuestion(15);
+			createMultiPlayerGame(category.getCategoryId(), topic.getTopicName(), g);
+		}
 	}
 
 	// ---- single-player games ----------------------------------------------------------------
 
 	public Game createGame(int categoryId, String topicName, Game request) {
 		Topic topic = topic(categoryId, topicName);
-		List<Questions> picked = selector.select(topic.getQuestions(), request.getQuestionLevels(), Source.MANUAL);
+		List<Questions> pool = selector.pool(topic.getQuestions(), request.getQuestionLevels());
 
 		Game game = new Game();
 		game.setGameId(ids.nextGameId());
@@ -114,7 +185,7 @@ public class GameCatalogService {
 		game.setQuestionTime(request.getQuestionTime());
 		game.setQuestionScore(request.getQuestionScore());
 		game.setTopic(summary(topic));
-		game.setQuestions(picked);
+		game.setQuestions(pool);
 
 		Game saved = games.save(game);
 		events.gameCreated(saved);
@@ -195,7 +266,7 @@ public class GameCatalogService {
 				&& request.getNumberOfQuestions() > 0) {
 			mix = new GameQuestionLevel(request.getNumberOfQuestions(), 0, 0);
 		}
-		List<Questions> picked = selector.select(topic.getQuestions(), mix, Source.AUTO);
+		List<Questions> pool = selector.pool(topic.getQuestions(), mix);
 		if (request.getTimePerQuestion() <= 0) {
 			throw new InvalidGameException("timePerQuestion must be positive");
 		}
@@ -212,11 +283,11 @@ public class GameCatalogService {
 		game.setUserId(request.getUserId());
 		game.setCategoryId(categoryId);
 		game.setQuestionLevel(mix);
-		game.setNumberOfQuestions(picked.size());
+		game.setNumberOfQuestions(mix.getEasyLevel() + mix.getMediumLevel() + mix.getAdvancedLevel());
 		game.setTimePerQuestion(request.getTimePerQuestion());
 		game.setScorePerQuestion(request.getScorePerQuestion() > 0 ? request.getScorePerQuestion() : 10);
 		game.setTopic(summary(topic));
-		game.setAutoquestions(picked);
+		game.setAutoquestions(pool);
 
 		MultiPlayerGame saved = multiGames.save(game);
 		events.multiPlayerGameCreated(saved);

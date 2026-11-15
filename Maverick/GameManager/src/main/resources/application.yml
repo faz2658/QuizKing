@@ -17,13 +17,21 @@ spring:
         spring.json.use.type.headers: false
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
+      # Game definitions carry a topic's whole question pool; compress them and allow up to 5 MB.
+      compression-type: zstd
       properties:
         spring.json.add.type.headers: false
+        max.request.size: 5242880
 
 server:
   port: ${PORT:9091}
 
 maverick:
+  auto-games:
+    enabled: ${AUTO_GAMES:false}
+    min-questions: 12
+    solo-questions: 10
+    multiplayer-questions: 8
   kafka:
     enabled: ${KAFKA_ENABLED:true}
   cors:

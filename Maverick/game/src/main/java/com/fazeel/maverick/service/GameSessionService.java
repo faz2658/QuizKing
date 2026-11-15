@@ -1,6 +1,9 @@
 package com.fazeel.maverick.service;
 
 import java.time.Clock;
+import java.time.Instant;
+import java.util.Map;
+import java.util.stream.Collectors;
 import java.util.List;
 import java.util.UUID;
 
@@ -9,6 +12,9 @@ import org.springframework.stereotype.Service;
 import com.fazeel.maverick.domain.Game;
 import com.fazeel.maverick.domain.GameRequest;
 import com.fazeel.maverick.domain.PlayedQuestion;
+import com.fazeel.maverick.domain.Questions;
+import com.fazeel.maverick.repository.SeenQuestionRepository;
+import com.fazeel.maverick.session.SeenQuestion;
 import com.fazeel.maverick.domain.SinglePlayerResult;
 import com.fazeel.maverick.kafka.GameEvents;
 import com.fazeel.maverick.repository.GameRepository;
@@ -26,14 +32,16 @@ public class GameSessionService {
 	private final GameRepository games;
 	private final GameSessionRepository sessions;
 	private final GameEvents events;
+	private final SeenQuestionRepository seen;
 	private final QuizBuilder quizBuilder;
 	private final Clock clock;
 
 	public GameSessionService(GameRepository games, GameSessionRepository sessions, GameEvents events,
-			QuizBuilder quizBuilder, Clock clock) {
+			SeenQuestionRepository seen, QuizBuilder quizBuilder, Clock clock) {
 		this.games = games;
 		this.sessions = sessions;
 		this.events = events;
+		this.seen = seen;
 		this.quizBuilder = quizBuilder;
 		this.clock = clock;
 	}
@@ -47,12 +55,18 @@ public class GameSessionService {
 			events.requestGame(new GameRequest(gameId, userId));
 			return new GameNotReadyException(gameId);
 		});
-		List<SessionQuestion> questions = quizBuilder.build(game);
+		List<Integer> poolIds = game.getQuestions() == null ? List.of()
+				: game.getQuestions().stream().filter(java.util.Objects::nonNull).map(Questions::getQuestionId).toList();
+		Map<Integer, Instant> lastSeen = seen.findByUserIdAndQuestionIdIn(userId, poolIds).stream()
+				.collect(Collectors.toMap(SeenQuestion::questionId, SeenQuestion::lastSeenAt, (a, b) -> a));
+		List<SessionQuestion> questions = quizBuilder.build(game, lastSeen);
 		if (questions.isEmpty()) {
 			throw new QuizRuleException("Game " + gameId + " has no playable questions");
 		}
+		Instant now = clock.instant();
 		GameSession session = new GameSession(UUID.randomUUID().toString(), gameId, userId, game.getCategoryId(),
-				game.getGameName(), questions, clock.instant());
+				game.getGameName(), questions, now);
+		seen.saveAll(questions.stream().map(q -> SeenQuestion.of(userId, q.getQuestionId(), now)).toList());
 		return sessions.save(session);
 	}
 

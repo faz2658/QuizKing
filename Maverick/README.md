@@ -16,13 +16,23 @@ cp .env.example .env          # then set MAVERICK_JWT_SECRET to 32+ random chara
 docker compose up --build
 ```
 
-Open **http://localhost:4280** (change it with `MAVERICK_HTTP_PORT`). The game engine loads three demo games
-(`DEMO_DATA=true`), so you can play right away as a guest. Register with an email listed in
-`MAVERICK_ADMIN_EMAILS` to get the **Create** page.
+Open **http://localhost:4280** (change it with `MAVERICK_HTTP_PORT`). On first start the question generator
+imports **Open Trivia DB** (about 5,300 questions in 24 categories; it takes about 10 minutes because the API
+allows one request every 5 seconds) and every topic with at least 12 questions gets a solo game and a
+multiplayer game automatically. Games fill in while the import runs. Register with an email listed in
+`MAVERICK_ADMIN_EMAILS` to get the **Create** page, which also shows the question bank and can rerun the import.
 
-To add your own games: create a category, topic and questions in the question generator
-(`POST /api/v1/question-generator/...`; generated questions can come from Wikidata with
-`POST .../auto-questions?template=capitals`), then create a game from that topic on the **Create** page.
+### Questions don't repeat
+
+A game is a topic plus a difficulty mix, not a fixed list. Every time someone plays, the engine draws a fresh
+set from the topic's whole pool: questions that player has never seen come first, then the ones they saw longest
+ago. Multiplayer matches prefer questions none of the players have seen.
+
+Questions come from three places:
+- **Open Trivia DB** import (`POST /api/v1/question-generator/import/opentdb`), shown with attribution
+  (CC BY-SA 4.0)
+- **Wikidata** templates (`POST .../category/{id}/{topic}/auto-questions?template=capitals|currencies|us-presidents`)
+- **Your own questions** (`POST .../category/{id}/{topic}/questions`)
 
 ## Development
 

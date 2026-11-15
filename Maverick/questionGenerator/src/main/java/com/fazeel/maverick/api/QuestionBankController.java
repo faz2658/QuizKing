@@ -23,15 +23,40 @@ import com.fazeel.maverick.bank.QuestionBankService;
 import com.fazeel.maverick.domain.Category;
 import com.fazeel.maverick.domain.Questions;
 import com.fazeel.maverick.domain.Topic;
+import com.fazeel.maverick.opentdb.ImportStatus;
+import com.fazeel.maverick.opentdb.OpenTriviaImporter;
 
 @RestController
 @RequestMapping("/api/v1/question-generator")
 public class QuestionBankController {
 
 	private final QuestionBankService bank;
+	private final OpenTriviaImporter importer;
 
-	public QuestionBankController(QuestionBankService bank) {
+	public QuestionBankController(QuestionBankService bank, OpenTriviaImporter importer) {
 		this.bank = bank;
+		this.importer = importer;
+	}
+
+	/** Starts importing Open Trivia DB (about 10 minutes); poll the GET endpoint for progress. */
+	@PostMapping("/import/opentdb")
+	@ResponseStatus(HttpStatus.ACCEPTED)
+	public ImportStatus startImport() {
+		return importer.start();
+	}
+
+	@GetMapping("/import/opentdb")
+	public ImportStatus importStatus() {
+		return importer.status();
+	}
+
+	/** Question counts per category and topic. */
+	@GetMapping("/stats")
+	public List<java.util.Map<String, Object>> stats() {
+		return bank.categories().stream().flatMap(c -> (c.getTopic() == null ? List.<Topic>of() : c.getTopic()).stream()
+				.map(t -> java.util.Map.<String, Object>of("category", c.getCategoryName(), "topic", t.getTopicName(),
+						"questions", t.getQuestions() == null ? 0 : t.getQuestions().size())))
+				.toList();
 	}
 
 	@GetMapping("/category")

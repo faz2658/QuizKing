@@ -1,14 +1,14 @@
 package com.fazeel.maverick;
 
-import java.security.SecureRandom;
-
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Bean;
 
 import com.fazeel.maverick.catalog.QuestionSelector;
 
 @SpringBootApplication
+@ConfigurationPropertiesScan
 public class GameManagerApplication {
 
 	public static void main(String[] args) {
@@ -17,6 +17,6 @@ public class GameManagerApplication {
 
 	@Bean
 	QuestionSelector questionSelector() {
-		return new QuestionSelector(new SecureRandom());
+		return new QuestionSelector();
 	}
 }

@@ -42,6 +42,8 @@ class MatchServiceTest {
 	GameSource source;
 	@Mock
 	MatchEvents events;
+	@Mock
+	SeenQuestionRepository seen;
 
 	Map<String, MultiplayerMatch> store = new HashMap<>();
 	Instant now = Instant.parse("2026-01-01T10:00:00Z");
@@ -50,13 +52,13 @@ class MatchServiceTest {
 	static MultiPlayerGame game() {
 		return new MultiPlayerGame(7, "Race", 3, 10, 10,
 				List.of(new MultiPlayerGame.Question(1, 1, "Q1", "a", "b", "", null, "a"),
-						new MultiPlayerGame.Question(2, 1, "broken", "a", "b", null, null, "zzz")));
+						new MultiPlayerGame.Question(2, 1, "broken", "a", "b", null, null, "zzz")), 0, null);
 	}
 
 	@BeforeEach
 	void setUp() {
 		Clock clock = Clock.fixed(now, ZoneOffset.UTC);
-		service = new MatchService(matches, games, source, new MatchFactory(new Random(2)), events, clock);
+		service = new MatchService(matches, games, source, new MatchFactory(new Random(2)), events, seen, clock);
 		when(matches.save(any())).thenAnswer(i -> {
 			MultiplayerMatch m = i.getArgument(0);
 			store.put(m.getMatchId(), m);

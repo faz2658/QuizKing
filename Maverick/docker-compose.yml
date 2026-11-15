@@ -55,6 +55,8 @@ services:
       KAFKA_CONTROLLER_QUORUM_VOTERS: 1@kafka:9093
       KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR: 1
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true"
+      KAFKA_MESSAGE_MAX_BYTES: 5242880
+      KAFKA_REPLICA_FETCH_MAX_BYTES: 5242880
     ports: ["19092:19092"]
     healthcheck:
       test: ["CMD-SHELL", "/opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list"]
@@ -93,6 +95,8 @@ services:
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/questiondb
+      # Fills an empty question bank from Open Trivia DB (~5,000 questions, takes ~10 minutes)
+      OPENTDB_IMPORT_ON_START: "true"
 
   game-manager:
     <<: *service
@@ -100,6 +104,8 @@ services:
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/gamemanagerdb
+      # Every topic with enough questions gets a solo and a multiplayer game automatically
+      AUTO_GAMES: "true"
 
   game-engine:
     <<: *service
@@ -107,7 +113,8 @@ services:
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/GameQuestionDb
-      DEMO_DATA: "true"
+      # The three small built-in demo games; off because the imported bank replaces them
+      DEMO_DATA: "false"
 
   multiplayer-game-engine:
     <<: *service

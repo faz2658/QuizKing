@@ -1,66 +1,58 @@
 package com.fazeel.maverick.catalog;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-import java.util.random.RandomGenerator;
 import java.util.stream.Stream;
 
 import com.fazeel.maverick.domain.GameQuestionLevel;
 import com.fazeel.maverick.domain.Questions;
 
 /**
- * Picks the questions for a new game from a topic's question bank.
- * <p>
- * Single-player games use hand-written ("manual") questions, multiplayer games use generated ("auto")
- * questions, matching how the question generator tags them. Question types are compared ignoring case
- * (the generator writes "Auto"); a question without a type counts as manual.
+ * Decides which questions a game can draw from. A game no longer freezes a fixed list: it carries its
+ * topic's whole pool of playable questions and the game engines pick a fresh set for every player
+ * (skipping ones that player has already seen), so playing a game again gives new questions.
  */
 public class QuestionSelector {
 
-	public enum Source {
-		MANUAL, AUTO
-	}
-
-	private final RandomGenerator random;
-
-	public QuestionSelector(RandomGenerator random) {
-		this.random = random;
-	}
-
 	/**
-	 * Randomly selects exactly the requested number of questions per level.
+	 * Every playable question of the topic, after checking that the pool can satisfy the requested mix.
 	 *
-	 * @throws NotEnoughQuestionsException if the bank cannot satisfy the requested mix
+	 * @throws NotEnoughQuestionsException if a difficulty level has fewer questions than requested
 	 */
-	public List<Questions> select(List<Questions> bank, GameQuestionLevel mix, Source source) {
+	public List<Questions> pool(List<Questions> bank, GameQuestionLevel mix) {
 		if (mix == null || total(mix) <= 0) {
 			throw new InvalidGameException("A game needs at least one question (easy, medium or advanced)");
 		}
 		if (mix.getEasyLevel() < 0 || mix.getMediumLevel() < 0 || mix.getAdvancedLevel() < 0) {
 			throw new InvalidGameException("Question counts cannot be negative");
 		}
-		List<Questions> usable = bank == null ? List.of()
-				: bank.stream().filter(q -> q != null && sourceOf(q) == source && isPlayable(q)).toList();
-		List<Questions> picked = new ArrayList<>();
-		picked.addAll(pick(usable, 1, mix.getEasyLevel()));
-		picked.addAll(pick(usable, 2, mix.getMediumLevel()));
-		picked.addAll(pick(usable, 3, mix.getAdvancedLevel()));
-		return picked;
+		List<Questions> playable = playable(bank);
+		require(playable, 1, mix.getEasyLevel());
+		require(playable, 2, mix.getMediumLevel());
+		require(playable, 3, mix.getAdvancedLevel());
+		return playable;
 	}
 
-	private List<Questions> pick(List<Questions> usable, int level, int wanted) {
-		List<Questions> pool = new ArrayList<>(usable.stream().filter(q -> q.getQuestionLevel() == level).toList());
-		if (pool.size() < wanted) {
-			throw new NotEnoughQuestionsException(level, wanted, pool.size());
+	/** Playable questions of any type (hand-written, generated or imported). */
+	public static List<Questions> playable(List<Questions> bank) {
+		return bank == null ? List.of() : bank.stream().filter(q -> q != null && isPlayable(q)).toList();
+	}
+
+	/** Questions available per level: index 0 = easy, 1 = medium, 2 = advanced. */
+	public static int[] countByLevel(List<Questions> pool) {
+		int[] c = new int[3];
+		for (Questions q : pool) {
+			if (q.getQuestionLevel() >= 1 && q.getQuestionLevel() <= 3) {
+				c[q.getQuestionLevel() - 1]++;
+			}
 		}
-		Collections.shuffle(pool, random);
-		return pool.subList(0, wanted);
+		return c;
 	}
 
-	static Source sourceOf(Questions q) {
-		return "auto".equalsIgnoreCase(q.getQuestionType() == null ? null : q.getQuestionType().trim()) ? Source.AUTO
-				: Source.MANUAL;
+	private static void require(List<Questions> playable, int level, int wanted) {
+		long available = playable.stream().filter(q -> q.getQuestionLevel() == level).count();
+		if (available < wanted) {
+			throw new NotEnoughQuestionsException(level, wanted, (int) available);
+		}
 	}
 
 	/** Same rule the game engines apply: a stem, two or more options, and the answer among them. */

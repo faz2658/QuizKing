@@ -76,12 +76,23 @@ class AdaptiveServiceTest {
 	@Test
 	void unseenQuestionsComeFirst() {
 		when(games.findById(5)).thenReturn(Optional.of(game(4)));
-		when(seen.findByUserIdAndGameId(9, 5))
-				.thenReturn(List.of(SeenQuestion.of(9, 5, 1), SeenQuestion.of(9, 5, 2), SeenQuestion.of(9, 5, 3)));
+		Instant t = Instant.parse("2026-01-01T09:00:00Z");
+		when(seen.findByUserIdAndQuestionIdIn(org.mockito.ArgumentMatchers.eq(9), any()))
+				.thenReturn(List.of(SeenQuestion.of(9, 1, t), SeenQuestion.of(9, 2, t), SeenQuestion.of(9, 3, t)));
 
 		AdaptiveSession s = service.start(5, 9);
 
 		assertThat(s.currentQuestion()).get().extracting(AskedQuestion::getQuestionId).isEqualTo(4);
+	}
+
+	@Test
+	void sessionPoolIsCappedForBigTopics() {
+		when(games.findById(5)).thenReturn(Optional.of(game(500)));
+
+		AdaptiveSession s = service.start(5, 9);
+
+		assertThat(s.getAsked()).hasSize(1);
+		assertThat(store.get(s.getId())).isNotNull();
 	}
 
 	@Test

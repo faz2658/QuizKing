@@ -5,7 +5,10 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
-import java.util.Set;
+import java.time.Instant;
+import java.util.Comparator;
+import java.util.Map;
+import java.util.TreeMap;
 import java.util.random.RandomGenerator;
 import java.util.stream.Stream;
 
@@ -13,7 +16,7 @@ import com.fazeel.maverick.domain.Game;
 
 /**
  * Builds a session's question pool: malformed questions are dropped, options are shuffled, and
- * questions the player has not seen in earlier sessions come before ones they have.
+ * within each level questions the player has never seen come first, then the ones seen longest ago.
  */
 public class PoolBuilder {
 
@@ -23,16 +26,24 @@ public class PoolBuilder {
 		this.random = random;
 	}
 
-	public List<PooledQuestion> build(Game game, Set<Integer> alreadySeen) {
-		List<PooledQuestion> fresh = new ArrayList<>();
-		List<PooledQuestion> seen = new ArrayList<>();
+	/**
+	 * @param seen when the player last saw each question, by id
+	 * @param perLevel at most this many questions per level are kept (a session never needs more)
+	 */
+	public List<PooledQuestion> build(Game game, Map<Integer, Instant> seen, int perLevel) {
+		Map<Integer, List<PooledQuestion>> byLevel = new TreeMap<>();
 		for (Game.Question q : Objects.requireNonNullElse(game.questions(), List.<Game.Question>of())) {
-			toPooled(q).ifPresent(p -> (alreadySeen.contains(p.questionId()) ? seen : fresh).add(p));
+			toPooled(q).ifPresent(p -> byLevel.computeIfAbsent(p.level(), k -> new ArrayList<>()).add(p));
 		}
-		Collections.shuffle(fresh, random);
-		Collections.shuffle(seen, random);
-		fresh.addAll(seen);
-		return fresh;
+		List<PooledQuestion> pool = new ArrayList<>();
+		for (List<PooledQuestion> level : byLevel.values()) {
+			Collections.shuffle(level, random);
+			// never seen first (random order), then the ones seen longest ago
+			level.sort(Comparator.comparing((PooledQuestion p) -> seen.get(p.questionId()),
+					Comparator.nullsFirst(Comparator.naturalOrder())));
+			pool.addAll(level.subList(0, Math.min(perLevel, level.size())));
+		}
+		return pool;
 	}
 
 	private Optional<PooledQuestion> toPooled(Game.Question q) {

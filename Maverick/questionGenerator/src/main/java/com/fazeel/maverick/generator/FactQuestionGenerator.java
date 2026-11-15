@@ -19,8 +19,9 @@ import com.fazeel.maverick.domain.Questions;
 public class FactQuestionGenerator {
 
 	public static final int OPTIONS = 4;
-	/** Generated ids live above this so they never collide with hand-written questions. */
+	/** Generated ids live in [1e9, 1.5e9): above hand-written questions, below imported ones. */
 	static final int GENERATED_ID_BASE = 1_000_000_000;
+	static final int GENERATED_ID_RANGE = 500_000_000;
 
 	private final RandomGenerator random;
 
@@ -71,7 +72,7 @@ public class FactQuestionGenerator {
 	/** Same template and subject always give the same id, so regenerating updates instead of duplicating. */
 	static int generatedId(QuestionTemplate template, Fact fact) {
 		int h = (template.key() + "|" + key(fact.subject())).hashCode();
-		return GENERATED_ID_BASE + Math.floorMod(h, Integer.MAX_VALUE - GENERATED_ID_BASE);
+		return GENERATED_ID_BASE + Math.floorMod(h, GENERATED_ID_RANGE);
 	}
 
 	private static String key(String s) {
