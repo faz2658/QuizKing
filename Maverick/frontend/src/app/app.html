@@ -9,6 +9,7 @@
     @if (auth.user(); as user) {
       <nav aria-label="Main">
         <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Games</a>
+        <a routerLink="/leaderboard" routerLinkActive="active">Leaderboard</a>
         <a routerLink="/me" routerLinkActive="active">My stats</a>
         @if (auth.isAdmin()) { <a routerLink="/admin" routerLinkActive="active">Create</a> }
       </nav>

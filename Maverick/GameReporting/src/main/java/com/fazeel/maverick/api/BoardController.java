@@ -12,6 +12,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.fazeel.maverick.auth.Callers;
 import com.fazeel.maverick.board.LeaderboardService;
 import com.fazeel.maverick.board.LeaderboardService.DailyBoard;
+import com.fazeel.maverick.board.LeaderboardService.Period;
+import com.fazeel.maverick.board.LeaderboardService.XpBoard;
 import com.fazeel.maverick.report.PlayerNames;
 
 /** Leaderboards every player may see. Calling them also records the caller's display name. */
@@ -27,6 +29,15 @@ public class BoardController {
 		this.boards = boards;
 		this.names = names;
 		this.clock = clock;
+	}
+
+	/** XP rankings: today, this week or all time, optionally for one category. */
+	@GetMapping("/leaderboards")
+	public XpBoard leaderboard(@RequestParam(defaultValue = "WEEK") Period period,
+			@RequestParam(required = false) Integer categoryId) {
+		int me = Callers.currentUserId();
+		names.remember(me, Callers.currentUserName());
+		return boards.xp(period, categoryId, me, clock.instant());
 	}
 
 	/** A day's challenge ranking; today (UTC) by default. */

@@ -269,3 +269,39 @@ export interface DailyBoard {
   top: DailyEntry[];
   you: DailyEntry | null;
 }
+
+export interface Streak {
+  current: number;
+  best: number;
+  playedToday: boolean;
+}
+
+export interface Progress {
+  userId: number;
+  xp: number;
+  level: number;
+  title: string;
+  levelStartXp: number;
+  nextLevelXp: number;
+  streak: Streak;
+  gamesPlayed: number;
+}
+
+export type BoardPeriod = 'DAY' | 'WEEK' | 'ALL';
+
+export interface XpEntry {
+  rank: number;
+  userId: number;
+  name: string;
+  xp: number;
+  games: number;
+  title: string;
+}
+
+export interface XpBoard {
+  period: BoardPeriod;
+  categoryId: number | null;
+  players: number;
+  top: XpEntry[];
+  you: XpEntry | null;
+}

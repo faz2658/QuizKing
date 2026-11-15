@@ -10,6 +10,7 @@ export const routes: Routes = [
   { path: 'adaptive/:gameId', title: 'Adaptive · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/adaptive').then((m) => m.Adaptive) },
   { path: 'multiplayer/:gameId', title: 'Lobby · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/lobby').then((m) => m.Lobby) },
   { path: 'match/:matchId', title: 'Match · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/match').then((m) => m.MatchPage) },
+  { path: 'leaderboard', title: 'Leaderboard · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/leaderboard').then((m) => m.Leaderboard) },
   { path: 'me', title: 'My stats · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/profile').then((m) => m.Profile) },
   { path: 'admin', title: 'Create a game · Quiz King', canActivate: [playerGuard, adminGuard], loadComponent: () => import('./pages/admin').then((m) => m.Admin) },
   { path: '**', redirectTo: '' },

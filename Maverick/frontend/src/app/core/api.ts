@@ -6,6 +6,7 @@ import {
   AdaptiveAnswer,
   AdaptiveSession,
   AnswerView,
+  BoardPeriod,
   Category,
   DailyBoard,
   DailyView,
@@ -18,10 +19,12 @@ import {
   LobbyStatus,
   MatchAnswer,
   MatchView,
+  Progress,
   ResultView,
   SessionView,
   TopicStats,
   UserSummary,
+  XpBoard,
 } from './models';
 
 interface RawGame {
@@ -186,6 +189,14 @@ export class QuizApi {
 export class BoardsApi {
   private readonly http = inject(HttpClient);
 
+  leaderboard(period: BoardPeriod, categoryId?: number | null): Observable<XpBoard> {
+    let params = new HttpParams().set('period', period);
+    if (categoryId) {
+      params = params.set('categoryId', categoryId);
+    }
+    return this.http.get<XpBoard>('/api/v1/reports/leaderboards', { params });
+  }
+
   daily(date?: string): Observable<DailyBoard> {
     const params = date ? new HttpParams().set('date', date) : undefined;
     return this.http.get<DailyBoard>('/api/v1/reports/daily', { params });
@@ -239,6 +250,11 @@ export class MultiplayerApi {
 @Injectable({ providedIn: 'root' })
 export class ReportsApi {
   private readonly http = inject(HttpClient);
+
+  /** XP, level and streak. */
+  progress(userId: number): Observable<Progress> {
+    return this.http.get<Progress>(`/api/v1/reports/users/${userId}/progress`);
+  }
 
   summary(userId: number): Observable<UserSummary> {
     return this.http.get<UserSummary>(`/api/v1/reports/users/${userId}/summary`);

@@ -9,12 +9,13 @@ import { GameCard } from '../core/models';
 import { GameCardView } from '../ui/game-card';
 import { BlurText } from '../motion/blur-text';
 import { DailyBanner } from '../ui/daily-banner';
+import { ProgressStrip } from '../ui/progress-strip';
 
 type Filter = 'ALL' | 'SINGLE' | 'MULTI';
 
 @Component({
   selector: 'mv-home',
-  imports: [FormsModule, GameCardView, BlurText, DailyBanner],
+  imports: [FormsModule, GameCardView, BlurText, DailyBanner, ProgressStrip],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="head">
@@ -30,6 +31,7 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
       </label>
     </section>
 
+    <mv-progress-strip />
     <mv-daily-banner />
 
     @if (state().loading) {

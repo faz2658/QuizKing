@@ -46,4 +46,25 @@ class LeaderboardServiceTest {
 		assertThat(board.you().rank()).isEqualTo(3);
 		assertThat(board.players()).isEqualTo(3);
 	}
+
+	@Test
+	void xpBoardRanksThePeriodAndCanFilterOneCategory() {
+		Instant now = Instant.parse("2026-11-15T18:00:00Z"); // a Sunday
+		GameReport adaToday = new GameReport("1", GameMode.SINGLE, 1, 5, "Art", 9, 50, 100, 5, 10, null, null, null,
+				Instant.parse("2026-11-15T10:00:00Z"), List.of());
+		GameReport boMonday = new GameReport("2", GameMode.SINGLE, 2, 6, "Maths", 4, 90, 100, 9, 10, null, null, null,
+				Instant.parse("2026-11-10T10:00:00Z"), List.of());
+		when(reports.findByCompletedAtGreaterThanEqual(Instant.parse("2026-11-09T00:00:00Z")))
+				.thenReturn(List.of(adaToday, boMonday));
+		when(names.lookup(anyCollection())).thenAnswer(i -> Map.of(1, "Ada", 2, "Bo"));
+		LeaderboardService service = new LeaderboardService(reports, names);
+
+		var week = service.xp(LeaderboardService.Period.WEEK, null, 1, now);
+		assertThat(week.top()).extracting(e -> e.name()).containsExactly("Bo", "Ada");
+		assertThat(week.top().get(0).xp()).isEqualTo(5 + 90);
+		assertThat(week.you().rank()).isEqualTo(2);
+
+		var art = service.xp(LeaderboardService.Period.WEEK, 9, 1, now);
+		assertThat(art.top()).extracting(e -> e.name()).containsExactly("Ada");
+	}
 }

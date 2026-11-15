@@ -42,6 +42,12 @@ class ReportControllerTest {
 	@MockitoBean
 	ReportService service;
 
+	@MockitoBean
+	com.fazeel.maverick.progress.ProgressService progress;
+
+	@MockitoBean
+	com.fazeel.maverick.report.PlayerNames names;
+
 	@Test
 	void listsReportsOfOneMode() throws Exception {
 		when(service.reports(1, GameMode.MULTI)).thenReturn(List.of(new GameReport("x", GameMode.MULTI, 1, 2, "Race",
