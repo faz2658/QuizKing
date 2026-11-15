@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fazeel.maverick.account.Account;
 import com.fazeel.maverick.account.AccountService;
+import com.fazeel.maverick.account.PasswordResetService;
+import com.fazeel.maverick.google.GoogleTokenVerifier;
 import com.fazeel.maverick.security.TokenService;
 import com.fazeel.maverick.security.TokenService.IssuedToken;
 
@@ -28,10 +30,56 @@ public class AuthController {
 
 	private final AccountService accounts;
 	private final TokenService tokens;
+	private final PasswordResetService resets;
+	private final GoogleTokenVerifier google;
 
-	public AuthController(AccountService accounts, TokenService tokens) {
+	public AuthController(AccountService accounts, TokenService tokens, PasswordResetService resets,
+			GoogleTokenVerifier google) {
 		this.accounts = accounts;
 		this.tokens = tokens;
+		this.resets = resets;
+		this.google = google;
+	}
+
+	/** Which sign-in options the browser should show. The Google client id is public by design. */
+	public record ProvidersView(String googleClientId) {
+	}
+
+	@GetMapping("/providers")
+	public ProvidersView providers() {
+		return new ProvidersView(google.enabled() ? google.clientId() : null);
+	}
+
+	public record GoogleRequest(@NotBlank @Size(max = 4096) String credential) {
+	}
+
+	/** "Sign in with Google": the browser sends the ID token Google gave it; new players get an account. */
+	@PostMapping("/google")
+	public TokenView google(@Valid @RequestBody GoogleRequest r) {
+		return token(accounts.signInWithGoogle(google.verify(r.credential())));
+	}
+
+	public record ForgotRequest(@NotBlank @Email @Size(max = 254) String email) {
+
+		public ForgotRequest {
+			email = email == null ? null : email.trim();
+		}
+	}
+
+	/** Emails a reset link if the address has an account. Always 202, so it doesn't reveal who has one. */
+	@PostMapping("/password/forgot")
+	@ResponseStatus(HttpStatus.ACCEPTED)
+	public void forgot(@Valid @RequestBody ForgotRequest r) {
+		resets.requestReset(r.email());
+	}
+
+	public record ResetRequest(@NotBlank @Size(max = 200) String token, @NotBlank @Size(min = 8, max = 72) String password) {
+	}
+
+	/** Sets a new password from an emailed link and logs the player in. */
+	@PostMapping("/password/reset")
+	public TokenView reset(@Valid @RequestBody ResetRequest r) {
+		return token(resets.reset(r.token(), r.password()));
 	}
 
 	public record RegisterRequest(@NotBlank @Size(max = 60) String userName, @NotBlank @Email @Size(max = 254) String email,

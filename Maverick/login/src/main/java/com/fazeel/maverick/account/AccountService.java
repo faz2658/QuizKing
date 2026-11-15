@@ -13,6 +13,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.fazeel.maverick.account.Account.Role;
+import com.fazeel.maverick.google.GoogleIdentity;
+import com.fazeel.maverick.google.GoogleSignInException;
 
 @Service
 public class AccountService {
@@ -64,6 +66,54 @@ public class AccountService {
 			throw new BadCredentialsException();
 		}
 		return account.get();
+	}
+
+	/**
+	 * Signs in with a verified Google identity: the account already linked to it, else the account with the
+	 * same email (now linked), else a new account. A password account that never proved it owns its email
+	 * loses that password when Google links it, so someone who registered with another person's address
+	 * before them can't keep a way in. The owner can set a new one with "Forgot password".
+	 */
+	@Transactional
+	public Account signInWithGoogle(GoogleIdentity google) {
+		if (!google.emailVerified() || google.email() == null || google.email().isBlank()) {
+			throw new GoogleSignInException("Your Google account's email isn't verified");
+		}
+		Optional<Account> linked = accounts.findByGoogleSubject(google.subject());
+		if (linked.isPresent()) {
+			return linked.get();
+		}
+		String email = normalize(google.email());
+		Optional<Account> sameEmail = accounts.findByEmailIgnoreCase(email);
+		if (sameEmail.isPresent()) {
+			Account a = sameEmail.get();
+			if (!a.isEmailVerified()) {
+				a.changePassword(unusablePassword());
+			}
+			a.linkGoogle(google.subject());
+			return a;
+		}
+		String name = google.name() == null || google.name().isBlank() ? email.substring(0, email.indexOf('@'))
+				: google.name().trim();
+		Account a = new Account(name.length() > 60 ? name.substring(0, 60) : name, email, unusablePassword(),
+				adminEmails.contains(email) ? Role.ADMIN : Role.USER, clock.instant());
+		a.linkGoogle(google.subject());
+		try {
+			a = accounts.saveAndFlush(a);
+		}
+		catch (DataIntegrityViolationException e) { // the same person signing in twice at once
+			return accounts.findByGoogleSubject(google.subject()).orElseThrow(() -> e);
+		}
+		events.registered(new UserRegistered(a.getUserId(), a.getUserName(), a.getEmail(), a.getRole().name(),
+				a.getCreatedAt()));
+		return a;
+	}
+
+	/** A hash no typed password can match: Google-only accounts log in with Google (or reset to get one). */
+	private String unusablePassword() {
+		byte[] b = new byte[32];
+		new java.security.SecureRandom().nextBytes(b);
+		return encoder.encode(java.util.HexFormat.of().formatHex(b));
 	}
 
 	public Optional<Account> find(int userId) {
