@@ -38,6 +38,12 @@ public class QuestionBankService {
 		this.generator = generator;
 	}
 
+	/** True once any question of the given type is in the bank. */
+	public boolean hasQuestionsOfType(String type) {
+		return categories.findAll().stream().flatMap(c -> topics(c).stream()).flatMap(t -> questions(t).stream())
+				.anyMatch(q -> type.equalsIgnoreCase(q.getQuestionType()));
+	}
+
 	public List<Category> categories() {
 		return categories.findAll();
 	}
@@ -148,6 +154,40 @@ public class QuestionBankService {
 		categories.save(c);
 		publishTopic(c, t);
 		return generated;
+	}
+
+	/**
+	 * Adds externally sourced questions to a topic, creating the category and topic when needed.
+	 * Questions are matched by id, so importing again updates instead of duplicating. Invalid
+	 * questions are skipped.
+	 *
+	 * @return how many questions were new
+	 */
+	public int importQuestions(String categoryName, String topicName, List<Questions> questions) {
+		Category c = categories.findByCategoryNameIgnoreCase(categoryName.trim())
+				.orElseGet(() -> createCategory(categoryName, null));
+		if (topics(c).stream().noneMatch(t -> t.getTopicName().equalsIgnoreCase(topicName.trim()))) {
+			c = addTopic(c.getCategoryId(), topicName, null);
+		}
+		Topic t = topic(c, topicName);
+		Map<Integer, Questions> byId = new java.util.LinkedHashMap<>();
+		questions(t).forEach(q -> byId.put(q.getQuestionId(), q));
+		int added = 0;
+		for (Questions q : questions) {
+			try {
+				QuestionRules.validate(q);
+			}
+			catch (InvalidQuestionException e) {
+				continue;
+			}
+			if (byId.put(q.getQuestionId(), q) == null) {
+				added++;
+			}
+		}
+		t.setQuestions(new ArrayList<>(byId.values()));
+		categories.save(c);
+		publishTopic(c, t);
+		return added;
 	}
 
 	private int next(String sequence) {
