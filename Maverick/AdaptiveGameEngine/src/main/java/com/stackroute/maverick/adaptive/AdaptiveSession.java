@@ -82,7 +82,7 @@ public class AdaptiveSession {
 			}
 			q.timeOut();
 			record(false);
-			askNext(deadline);
+			askNext(deadline.plus(GRACE)); // when the player's client moves on
 			changed = true;
 		}
 		return changed;

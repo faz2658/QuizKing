@@ -27,9 +27,9 @@ import org.mockito.quality.Strictness;
 
 import com.stackroute.maverick.adaptive.Ports.GameSource;
 import com.stackroute.maverick.adaptive.Ports.ResultEvents;
-import com.stackroute.maverick.adaptive.Repositories.GameRepository;
-import com.stackroute.maverick.adaptive.Repositories.SeenQuestionRepository;
-import com.stackroute.maverick.adaptive.Repositories.SessionRepository;
+import com.stackroute.maverick.adaptive.GameRepository;
+import com.stackroute.maverick.adaptive.SeenQuestionRepository;
+import com.stackroute.maverick.adaptive.SessionRepository;
 import com.stackroute.maverick.domain.Game;
 
 @ExtendWith(MockitoExtension.class)

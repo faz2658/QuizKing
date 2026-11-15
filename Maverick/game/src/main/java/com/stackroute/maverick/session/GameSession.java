@@ -72,7 +72,8 @@ public class GameSession {
 			q.setTimedOut(true);
 			q.setAnsweredAt(q.deadline());
 			expired.add(AnswerOutcome.of(q));
-			advance(q.deadline());
+			// The player's client only moves on once the grace period is over, so that's when the next clock starts.
+			advance(deadline);
 		}
 		return expired;
 	}

@@ -77,7 +77,7 @@ public class MultiplayerMatch {
 			if (!now.isAfter(deadline.plus(GRACE))) {
 				break;
 			}
-			closeCurrent(deadline);
+			closeCurrent(deadline.plus(GRACE)); // clients see the next question after the grace period
 			changed = true;
 		}
 		return changed;

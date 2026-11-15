@@ -1,0 +1,26 @@
+<a class="skip" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="container inner">
+    <a class="brand" routerLink="/">
+      <span class="logo" aria-hidden="true">M</span>
+      <span>Maverick</span>
+    </a>
+    @if (auth.user(); as user) {
+      <nav aria-label="Main">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Games</a>
+        <a routerLink="/me" routerLinkActive="active">My stats</a>
+        @if (auth.isAdmin()) { <a routerLink="/admin" routerLinkActive="active">Create</a> }
+      </nav>
+      <div class="spacer"></div>
+      <span class="who" [title]="user.email || 'Guest player'">
+        <span class="avatar" aria-hidden="true">{{ user.userName.charAt(0).toUpperCase() }}</span>
+        <span class="name">{{ user.userName }}</span>
+      </span>
+      <button type="button" class="btn btn-ghost" (click)="logout()">{{ user.role === 'GUEST' ? 'Leave' : 'Log out' }}</button>
+    }
+  </div>
+</header>
+<main id="main" class="container">
+  <router-outlet />
+</main>
+<footer class="container foot muted">Maverick quiz arena</footer>

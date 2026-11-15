@@ -94,7 +94,7 @@ class MultiplayerMatchTest {
 
 		m.advanceClock(T0.plusSeconds(60));
 		assertThat(m.getStatus()).isEqualTo(Status.COMPLETED);
-		assertThat(m.getCompletedAt()).isEqualTo(T0.plusSeconds(20));
+		assertThat(m.getCompletedAt()).isEqualTo(T0.plusSeconds(22));
 		assertThatThrownBy(() -> m.answer(20, 2, "A2", T0.plusSeconds(61))).isInstanceOf(MatchRuleException.class);
 	}
 

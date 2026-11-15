@@ -73,8 +73,8 @@ class GameSessionTest {
 			assertThat(o.pointsAwarded()).isZero();
 		});
 		assertThat(s.currentQuestion()).get().extracting(SessionQuestion::getQuestionId).isEqualTo(2);
-		assertThat(s.getQuestions().get(1).getAskedAt()).isEqualTo(T0.plusSeconds(10));
-		assertThat(s.secondsRemaining(T0.plusSeconds(13))).isEqualTo(12);
+		assertThat(s.getQuestions().get(1).getAskedAt()).isEqualTo(T0.plusSeconds(12));
+		assertThat(s.secondsRemaining(T0.plusSeconds(13))).isEqualTo(14);
 	}
 
 	@Test
@@ -92,7 +92,7 @@ class GameSessionTest {
 
 		assertThat(s.expireOverdueQuestions(T0.plusSeconds(3600))).hasSize(2);
 		assertThat(s.getStatus()).isEqualTo(SessionStatus.COMPLETED);
-		assertThat(s.getCompletedAt()).isEqualTo(T0.plusSeconds(20));
+		assertThat(s.getCompletedAt()).isEqualTo(T0.plusSeconds(24));
 		assertThat(s.getScore()).isZero();
 	}
 
