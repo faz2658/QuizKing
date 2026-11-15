@@ -10,11 +10,13 @@ import {
   GameCard,
   GameMode,
   GameReport,
+  ImportStatus,
   LobbyStatus,
   MatchAnswer,
   MatchView,
   ResultView,
   SessionView,
+  TopicStats,
   UserSummary,
 } from './models';
 
@@ -105,6 +107,24 @@ export class CatalogApi {
 
   createMultiplayerGame(categoryId: number, topicName: string, body: unknown): Observable<RawGame> {
     return this.http.post<RawGame>(`/api/game/category/mp/${categoryId}/${encodeURIComponent(topicName)}`, body);
+  }
+}
+
+/** Question bank management (admin). */
+@Injectable({ providedIn: 'root' })
+export class QuestionBankApi {
+  private readonly http = inject(HttpClient);
+
+  stats(): Observable<TopicStats[]> {
+    return this.http.get<TopicStats[]>('/api/v1/question-generator/stats');
+  }
+
+  importStatus(): Observable<ImportStatus> {
+    return this.http.get<ImportStatus>('/api/v1/question-generator/import/opentdb');
+  }
+
+  startImport(): Observable<ImportStatus> {
+    return this.http.post<ImportStatus>('/api/v1/question-generator/import/opentdb', null);
   }
 }
 
