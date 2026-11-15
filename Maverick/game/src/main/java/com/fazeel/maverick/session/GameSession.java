@@ -4,7 +4,10 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.EnumSet;
 import java.util.Optional;
+import java.util.Set;
+import java.util.random.RandomGenerator;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Version;
@@ -19,6 +22,8 @@ public class GameSession {
 
 	/** Network latency allowance added to every question's time limit. */
 	public static final Duration GRACE = Duration.ofSeconds(2);
+	/** Seconds the extra-time lifeline adds. */
+	public static final int EXTRA_SECONDS = 10;
 
 	@Id
 	private String id;
@@ -42,6 +47,10 @@ public class GameSession {
 	private String playerName;
 	/** The score to beat (CHALLENGE). */
 	private Integer opponentScore;
+	/** Correct answers in a row right now. */
+	private int combo;
+	private int bestCombo;
+	private Set<Lifeline> usedLifelines = EnumSet.noneOf(Lifeline.class);
 
 	public GameSession() {
 	}
@@ -77,7 +86,8 @@ public class GameSession {
 			}
 			q.setTimedOut(true);
 			q.setAnsweredAt(q.deadline());
-			expired.add(AnswerOutcome.of(q));
+			combo = 0;
+			expired.add(AnswerOutcome.of(q, combo));
 			// The player's client only moves on once the grace period is over, so that's when the next clock starts.
 			advance(deadline);
 		}
@@ -101,11 +111,68 @@ public class GameSession {
 		q.setAnswer(answer);
 		q.setAnsweredAt(now);
 		q.setCorrect(matches(answer, q.getCorrectAnswer()));
-		q.setPointsAwarded(q.isCorrect() ? q.getPoints() : 0);
+		if (q.isCorrect()) {
+			combo++;
+			bestCombo = Math.max(bestCombo, combo);
+			q.setMultiplier(multiplier(combo));
+			q.setPointsAwarded((int) Math.round(q.getPoints() * q.getMultiplier()));
+		} else {
+			combo = 0;
+			q.setPointsAwarded(0);
+		}
 		score += q.getPointsAwarded();
-		AnswerOutcome outcome = AnswerOutcome.of(q);
+		AnswerOutcome outcome = AnswerOutcome.of(q, combo);
 		advance(now);
 		return outcome;
+	}
+
+	/** Combo bonus for the {@code n}-th correct answer in a row: x1.5 from the 3rd, x2 from the 5th. */
+	public static double multiplier(int n) {
+		return n >= 5 ? 2.0 : n >= 3 ? 1.5 : 1.0;
+	}
+
+	/**
+	 * Uses a lifeline on the current question. Each lifeline works once per game.
+	 *
+	 * @return the outcome of the skipped question for SKIP, otherwise empty
+	 * @throws QuizRuleException if the game is over, it isn't the current question, the lifeline was used, or a
+	 *         50/50 is asked for on a question with fewer than four options
+	 */
+	public Optional<AnswerOutcome> useLifeline(Lifeline lifeline, int questionId, Instant now, RandomGenerator random) {
+		expireOverdueQuestions(now);
+		if (status == SessionStatus.COMPLETED) {
+			throw new QuizRuleException("The game is already over");
+		}
+		SessionQuestion q = current();
+		if (q.getQuestionId() != questionId) {
+			throw new QuizRuleException("Question " + questionId + " is not the current question");
+		}
+		if (getUsedLifelines().contains(lifeline)) {
+			throw new QuizRuleException("You've already used that lifeline in this game");
+		}
+		switch (lifeline) {
+			case FIFTY_FIFTY -> {
+				List<String> wrong = new ArrayList<>(q.getOptions().stream().filter(o -> !matches(o, q.getCorrectAnswer())).toList());
+				if (wrong.size() < 3) {
+					throw new QuizRuleException("50/50 needs a question with four options");
+				}
+				java.util.Collections.shuffle(wrong, java.util.Random.from(random));
+				q.setRemovedOptions(List.copyOf(wrong.subList(0, 2)));
+			}
+			case EXTRA_TIME -> q.setBonusSeconds(q.getBonusSeconds() + EXTRA_SECONDS);
+			case SKIP -> {
+				q.setSkipped(true);
+				q.setAnsweredAt(now);
+				q.setPointsAwarded(0);
+			}
+		}
+		getUsedLifelines().add(lifeline);
+		if (lifeline == Lifeline.SKIP) {
+			AnswerOutcome outcome = AnswerOutcome.of(q, combo);
+			advance(now);
+			return Optional.of(outcome);
+		}
+		return Optional.empty();
 	}
 
 	public Optional<SessionQuestion> currentQuestion() {
@@ -116,8 +183,13 @@ public class GameSession {
 		return currentQuestion().map(q -> Math.max(0, Duration.between(now, q.deadline()).toSeconds())).orElse(0L);
 	}
 
+	/** The best possible score: every question right, so the combo bonus applies from the 3rd one on. */
 	public int maxScore() {
-		return questions.stream().mapToInt(SessionQuestion::getPoints).sum();
+		int max = 0;
+		for (int i = 0; i < questions.size(); i++) {
+			max += (int) Math.round(questions.get(i).getPoints() * multiplier(i + 1));
+		}
+		return max;
 	}
 
 	public long correctCount() {
@@ -203,6 +275,21 @@ public class GameSession {
 		this.variantKey = variantKey;
 		this.opponentScore = opponentScore;
 		return this;
+	}
+
+	public int getCombo() {
+		return combo;
+	}
+
+	public int getBestCombo() {
+		return bestCombo;
+	}
+
+	public Set<Lifeline> getUsedLifelines() {
+		if (usedLifelines == null) {
+			usedLifelines = EnumSet.noneOf(Lifeline.class);
+		}
+		return usedLifelines;
 	}
 
 	public GameSession playedBy(String playerName) {

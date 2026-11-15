@@ -5,6 +5,7 @@ import java.time.Instant;
 import java.util.Map;
 import java.util.stream.Collectors;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 
 import org.springframework.stereotype.Service;
@@ -21,6 +22,7 @@ import com.fazeel.maverick.repository.GameRepository;
 import com.fazeel.maverick.repository.GameSessionRepository;
 import com.fazeel.maverick.session.AnswerOutcome;
 import com.fazeel.maverick.session.GameSession;
+import com.fazeel.maverick.session.Lifeline;
 import com.fazeel.maverick.session.QuizBuilder;
 import com.fazeel.maverick.session.QuizRuleException;
 import com.fazeel.maverick.session.SessionQuestion;
@@ -35,6 +37,7 @@ public class GameSessionService {
 	private final SeenQuestionRepository seen;
 	private final QuizBuilder quizBuilder;
 	private final Clock clock;
+	private final java.util.random.RandomGenerator random = new java.security.SecureRandom();
 
 	public GameSessionService(GameRepository games, GameSessionRepository sessions, GameEvents events,
 			SeenQuestionRepository seen, QuizBuilder quizBuilder, Clock clock) {
@@ -89,6 +92,13 @@ public class GameSessionService {
 		return new AnswerResult(outcome, save(session));
 	}
 
+	/** Uses a lifeline on the current question; a skip also returns the skipped question's outcome. */
+	public LifelineResult useLifeline(String sessionId, Lifeline lifeline, int questionId) {
+		GameSession session = load(sessionId);
+		Optional<AnswerOutcome> skipped = session.useLifeline(lifeline, questionId, clock.instant(), random);
+		return new LifelineResult(skipped.orElse(null), save(session));
+	}
+
 	public GameSession result(String sessionId) {
 		GameSession session = get(sessionId);
 		if (session.getStatus() != SessionStatus.COMPLETED) {
@@ -126,5 +136,8 @@ public class GameSessionService {
 	}
 
 	public record AnswerResult(AnswerOutcome outcome, GameSession session) {
+	}
+
+	public record LifelineResult(AnswerOutcome skipped, GameSession session) {
 	}
 }

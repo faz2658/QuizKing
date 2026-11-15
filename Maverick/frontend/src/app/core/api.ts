@@ -17,6 +17,8 @@ import {
   DraftQuestion,
   GenerationResult,
   ImportStatus,
+  Lifeline,
+  LifelineView,
   LobbyStatus,
   MatchAnswer,
   MatchView,
@@ -174,6 +176,10 @@ export class QuizApi {
 
   result(id: string): Observable<ResultView> {
     return this.http.get<ResultView>(`/api/v1/sessions/${id}/result`);
+  }
+
+  lifeline(id: string, lifeline: Lifeline, questionId: number): Observable<LifelineView> {
+    return this.http.post<LifelineView>(`/api/v1/sessions/${id}/lifelines`, { lifeline, questionId });
   }
 
   /** Today's challenge and whether the player has played it. */

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, effect, inject, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, effect, inject, input, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
 import { Observable, map } from 'rxjs';
 import { QuizApi } from '../core/api';
@@ -7,6 +7,9 @@ import { SessionView } from '../core/models';
 import { QuizAdapter, QuizRunner } from '../core/quiz-runner';
 import { QuizStage } from '../ui/quiz-stage';
 import { CountUp } from '../motion/count-up';
+import { LifelineBar } from '../ui/lifeline-bar';
+import { Lifeline } from '../core/models';
+import { errorMessage } from '../core/http-errors';
 
 export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number, start?: () => Observable<SessionView>): QuizAdapter<SessionView> {
   return {
@@ -15,7 +18,13 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
     answer: (s, questionId, option) =>
       api.answer(s.sessionId, questionId, option).pipe(
         map((a) => ({
-          feedback: { correct: a.correct, timedOut: a.timedOut, correctAnswer: a.correctAnswer, points: a.pointsAwarded },
+          feedback: {
+            correct: a.correct,
+            timedOut: a.timedOut,
+            correctAnswer: a.correctAnswer,
+            points: a.pointsAwarded,
+            note: a.correct && (a.multiplier ?? 1) > 1 ? `Combo ×${a.multiplier}!` : undefined,
+          },
           session: a.session,
         })),
       ),
@@ -25,7 +34,7 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
 
 @Component({
   selector: 'mv-play',
-  imports: [QuizStage, RouterLink, CountUp],
+  imports: [QuizStage, RouterLink, CountUp, LifelineBar],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="wrap">
@@ -45,6 +54,9 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
             <div class="hud">
               <div><span class="muted">Game</span><strong>{{ s.gameName }}</strong></div>
               <div><span class="muted">Score</span><strong class="score"><mv-count-up [value]="s.score" [duration]="600" /></strong></div>
+              @if ((s.combo ?? 0) >= 2) {
+                <div class="combo" aria-live="polite"><span aria-hidden="true">🔥</span> {{ s.combo }} in a row · next ×{{ s.nextMultiplier }}</div>
+              }
               <div class="progress" role="progressbar" [attr.aria-valuenow]="s.answeredQuestions" aria-valuemin="0" [attr.aria-valuemax]="s.totalQuestions">
                 <span [style.width.%]="100 * s.answeredQuestions / s.totalQuestions"></span>
               </div>
@@ -56,6 +68,9 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
                 @let difficulty = s.currentQuestion?.difficulty ?? 'EASY';
                 <span badges [class]="'chip chip-' + difficulty.toLowerCase()">{{ difficulty }}</span>
               </mv-quiz-stage>
+              <mv-lifeline-bar [available]="s.lifelines ?? []" [disabled]="runner.phase() !== 'question' || lifelineBusy()"
+                [optionCount]="q.options.length" (use)="useLifeline($event)" />
+              @if (lifelineError()) { <p class="alert" role="alert">{{ lifelineError() }}</p> }
             }
           }
         }
@@ -69,6 +84,8 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
     .hud div { display: flex; flex-direction: column; }
     .hud div:nth-child(2) { text-align: right; }
     .score { font-size: 2.2rem; font-weight: 900; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+    .combo { grid-column: 1 / -1; justify-self: end; font-weight: 900; color: var(--accent); animation: pop 0.4s ease; }
+    @keyframes pop { from { transform: scale(0.7); opacity: 0; } }
     .progress { grid-column: 1 / -1; height: 8px; border-radius: 999px; background: var(--bg-sunken); overflow: hidden; }
     .progress span { display: block; height: 100%; background: linear-gradient(90deg, var(--accent-2), var(--pink), var(--accent)); box-shadow: 0 0 14px color-mix(in srgb, var(--pink) 60%, transparent); transition: width 0.4s ease; }
     .spinner { width: 42px; height: 42px; border-radius: 50%; border: 4px solid var(--bg-sunken); border-top-color: var(--accent); animation: spin 0.8s linear infinite; }
@@ -84,6 +101,28 @@ export class Play implements OnInit {
   private readonly router = inject(Router);
   private readonly destroyRef = inject(DestroyRef);
   protected runner!: QuizRunner<SessionView>;
+  protected readonly lifelineBusy = signal(false);
+  protected readonly lifelineError = signal<string | null>(null);
+
+  protected useLifeline(lifeline: Lifeline): void {
+    const s = this.runner.session();
+    const q = this.runner.question();
+    if (!s || !q || this.lifelineBusy()) {
+      return;
+    }
+    this.lifelineBusy.set(true);
+    this.lifelineError.set(null);
+    this.api.lifeline(s.sessionId, lifeline, q.questionId).subscribe({
+      next: (r) => {
+        this.lifelineBusy.set(false);
+        this.runner.update(r.session);
+      },
+      error: (e) => {
+        this.lifelineBusy.set(false);
+        this.lifelineError.set(errorMessage(e));
+      },
+    });
+  }
 
   constructor() {
     effect(() => {

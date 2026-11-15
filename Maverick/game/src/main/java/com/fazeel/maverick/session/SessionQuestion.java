@@ -20,6 +20,12 @@ public class SessionQuestion {
 	private boolean correct;
 	private boolean timedOut;
 	private int pointsAwarded;
+	private boolean skipped;
+	/** Options taken away by a 50/50. */
+	private List<String> removedOptions = List.of();
+	private int bonusSeconds;
+	/** The combo multiplier the points were awarded with. */
+	private double multiplier = 1.0;
 
 	public SessionQuestion() {
 	}
@@ -45,7 +51,7 @@ public class SessionQuestion {
 	}
 
 	public Instant deadline() {
-		return askedAt == null ? null : askedAt.plusSeconds(timeLimitSeconds);
+		return askedAt == null ? null : askedAt.plusSeconds(timeLimitSeconds + bonusSeconds);
 	}
 
 	public int getQuestionId() {
@@ -150,5 +156,37 @@ public class SessionQuestion {
 
 	public void setPointsAwarded(int pointsAwarded) {
 		this.pointsAwarded = pointsAwarded;
+	}
+
+	public boolean isSkipped() {
+		return skipped;
+	}
+
+	public void setSkipped(boolean skipped) {
+		this.skipped = skipped;
+	}
+
+	public List<String> getRemovedOptions() {
+		return removedOptions == null ? List.of() : removedOptions;
+	}
+
+	public void setRemovedOptions(List<String> removedOptions) {
+		this.removedOptions = removedOptions;
+	}
+
+	public int getBonusSeconds() {
+		return bonusSeconds;
+	}
+
+	public void setBonusSeconds(int bonusSeconds) {
+		this.bonusSeconds = bonusSeconds;
+	}
+
+	public double getMultiplier() {
+		return multiplier;
+	}
+
+	public void setMultiplier(double multiplier) {
+		this.multiplier = multiplier;
 	}
 }

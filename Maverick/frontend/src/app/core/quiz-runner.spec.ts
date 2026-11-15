@@ -161,4 +161,24 @@ describe('QuizRunner', () => {
     expect(runner.phase()).toBe('error');
     expect(runner.error()).toBeTruthy();
   });
+
+  it('takes extra time or fewer options for the same question without leaving it', () => {
+    runner.start();
+    now = 6000;
+    vi.advanceTimersByTime(6000);
+    expect(runner.secondsLeft()).toBe(4);
+
+    const longer = { ...q(1, 14), options: ['a'] };
+    runner.update({ index: 0, questions: [longer, q(2)] });
+
+    expect(runner.phase()).toBe('question');
+    expect(runner.question()?.options).toEqual(['a']);
+    expect(runner.secondsLeft()).toBe(14);
+  });
+
+  it('shows the next question when a lifeline skipped this one', () => {
+    runner.start();
+    runner.update({ index: 1, questions: [q(1), q(2)] });
+    expect(runner.question()?.questionId).toBe(2);
+  });
 });

@@ -6,6 +6,7 @@ import java.util.List;
 import com.fazeel.maverick.domain.Game;
 import com.fazeel.maverick.session.AnswerOutcome;
 import com.fazeel.maverick.session.GameSession;
+import com.fazeel.maverick.session.Lifeline;
 import com.fazeel.maverick.session.SessionQuestion;
 import com.fazeel.maverick.session.SessionStatus;
 
@@ -24,6 +25,9 @@ public final class Views {
 	public record AnswerRequest(@Positive int questionId, @NotNull String answer) {
 	}
 
+	public record LifelineRequest(@NotNull Lifeline lifeline, @Positive int questionId) {
+	}
+
 	public record GameSummary(int gameId, String gameName, String gameDescription, String gameImage,
 			String gameRules, int categoryId, String topic, int questionCount) {
 
@@ -34,35 +38,47 @@ public final class Views {
 		}
 	}
 
+	/** {@code options} leaves out the ones a 50/50 removed; {@code timeLimitSeconds} includes extra time. */
 	public record QuestionView(int questionId, int number, String difficulty, String stem, List<String> options,
 			int timeLimitSeconds, long secondsRemaining, int points) {
 	}
 
+	/**
+	 * {@code combo} is the current run of correct answers and {@code nextMultiplier} the bonus the next correct
+	 * answer earns; {@code lifelines} are the ones still available.
+	 */
 	public record SessionView(String sessionId, int gameId, String gameName, SessionStatus status,
 			int totalQuestions, int answeredQuestions, int score, int maxScore, QuestionView currentQuestion,
-			String variant) {
+			String variant, int combo, double nextMultiplier, List<Lifeline> lifelines) {
 
 		static SessionView of(GameSession s, Instant now) {
 			QuestionView current = s.currentQuestion()
 					.map(q -> new QuestionView(q.getQuestionId(), s.getCurrentIndex() + 1, q.getDifficulty().name(),
-							q.getStem(), q.getOptions(), q.getTimeLimitSeconds(), s.secondsRemaining(now),
-							q.getPoints()))
+							q.getStem(), q.getOptions().stream().filter(o -> !q.getRemovedOptions().contains(o)).toList(),
+							q.getTimeLimitSeconds() + q.getBonusSeconds(), s.secondsRemaining(now), q.getPoints()))
 					.orElse(null);
 			return new SessionView(s.getId(), s.getGameId(), s.getGameName(), s.getStatus(), s.getQuestions().size(),
-					s.getCurrentIndex(), s.getScore(), s.maxScore(), current, s.getVariant().name());
+					s.getCurrentIndex(), s.getScore(), s.maxScore(), current, s.getVariant().name(), s.getCombo(),
+					GameSession.multiplier(s.getCombo() + 1), java.util.Arrays.stream(Lifeline.values())
+							.filter(l -> !s.getUsedLifelines().contains(l)).toList());
 		}
 	}
 
 	public record AnswerView(boolean correct, boolean timedOut, String correctAnswer, int pointsAwarded,
-			SessionView session) {
+			SessionView session, int combo, double multiplier, boolean skipped) {
 
 		static AnswerView of(AnswerOutcome o, SessionView session) {
-			return new AnswerView(o.correct(), o.timedOut(), o.correctAnswer(), o.pointsAwarded(), session);
+			return new AnswerView(o.correct(), o.timedOut(), o.correctAnswer(), o.pointsAwarded(), session, o.combo(),
+					o.multiplier(), o.skipped());
 		}
 	}
 
+	/** After a lifeline: the updated session, and for a skip what happened to the skipped question. */
+	public record LifelineView(Lifeline lifeline, AnswerView skipped, SessionView session) {
+	}
+
 	public record ReviewItem(int number, String difficulty, String stem, String yourAnswer, String correctAnswer,
-			boolean correct, boolean timedOut, int pointsAwarded, int points) {
+			boolean correct, boolean timedOut, int pointsAwarded, int points, boolean skipped, double multiplier) {
 	}
 
 	public record ResultView(String sessionId, int gameId, String gameName, int score, int maxScore,
@@ -75,7 +91,8 @@ public final class Views {
 			for (int i = 0; i < qs.size(); i++) {
 				SessionQuestion q = qs.get(i);
 				review.add(new ReviewItem(i + 1, q.getDifficulty().name(), q.getStem(), q.getAnswer(),
-						q.getCorrectAnswer(), q.isCorrect(), q.isTimedOut(), q.getPointsAwarded(), q.getPoints()));
+						q.getCorrectAnswer(), q.isCorrect(), q.isTimedOut(), q.getPointsAwarded(), q.getPoints(),
+						q.isSkipped(), q.getMultiplier()));
 			}
 			return new ResultView(s.getId(), s.getGameId(), s.getGameName(), s.getScore(), s.maxScore(),
 					s.percentage(), s.correctCount(), qs.size(), review, s.getVariant().name(), s.getVariantKey(),

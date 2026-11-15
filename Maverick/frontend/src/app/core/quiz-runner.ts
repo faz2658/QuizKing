@@ -115,6 +115,26 @@ export class QuizRunner<S> {
     );
   }
 
+  /**
+   * Takes a session the server changed outside an answer (a lifeline): the same question gets its new options and
+   * time without restarting the countdown screen; a different question (a skip) is shown as usual.
+   */
+  update(session: S): void {
+    if (this._phase() !== 'question') {
+      return;
+    }
+    const q = this.adapter.question(session);
+    const current = this._question();
+    if (!q || !current || q.questionId !== current.questionId) {
+      this.show(session);
+      return;
+    }
+    this._session.set(session);
+    this._question.set(q);
+    this.deadline = this.timing.now() + q.secondsRemaining * 1000;
+    this.tick();
+  }
+
   stop(): void {
     this.stopTicker();
     if (this.pending) {

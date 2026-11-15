@@ -52,6 +52,20 @@ export interface SessionView {
   maxScore: number;
   currentQuestion: QuestionView | null;
   variant?: SessionVariant;
+  /** Correct answers in a row right now. */
+  combo?: number;
+  /** The bonus the next correct answer earns. */
+  nextMultiplier?: number;
+  /** Lifelines still available. */
+  lifelines?: Lifeline[];
+}
+
+export type Lifeline = 'FIFTY_FIFTY' | 'SKIP' | 'EXTRA_TIME';
+
+export interface LifelineView {
+  lifeline: Lifeline;
+  skipped: AnswerView | null;
+  session: SessionView;
 }
 
 export interface AnswerView {
@@ -60,6 +74,9 @@ export interface AnswerView {
   correctAnswer: string;
   pointsAwarded: number;
   session: SessionView;
+  combo?: number;
+  multiplier?: number;
+  skipped?: boolean;
 }
 
 export interface ReviewItem {
@@ -72,6 +89,8 @@ export interface ReviewItem {
   timedOut: boolean;
   pointsAwarded: number;
   points: number;
+  skipped?: boolean;
+  multiplier?: number;
 }
 
 export interface ResultView {

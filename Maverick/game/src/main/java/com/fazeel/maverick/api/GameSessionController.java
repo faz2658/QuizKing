@@ -17,9 +17,12 @@ import com.fazeel.maverick.api.Views.AnswerView;
 import com.fazeel.maverick.api.Views.GameSummary;
 import com.fazeel.maverick.api.Views.ResultView;
 import com.fazeel.maverick.api.Views.SessionView;
+import com.fazeel.maverick.api.Views.LifelineRequest;
+import com.fazeel.maverick.api.Views.LifelineView;
 import com.fazeel.maverick.api.Views.StartRequest;
 import com.fazeel.maverick.service.GameSessionService;
 import com.fazeel.maverick.service.GameSessionService.AnswerResult;
+import com.fazeel.maverick.service.GameSessionService.LifelineResult;
 import com.fazeel.maverick.auth.Callers;
 import com.fazeel.maverick.session.GameSession;
 
@@ -60,6 +63,15 @@ public class GameSessionController {
 		owned(sessionId);
 		AnswerResult result = service.answer(sessionId, request.questionId(), request.answer());
 		return AnswerView.of(result.outcome(), SessionView.of(result.session(), clock.instant()));
+	}
+
+	/** 50/50, skip or extra time, once each per game. */
+	@PostMapping("/sessions/{sessionId}/lifelines")
+	public LifelineView lifeline(@PathVariable String sessionId, @Valid @RequestBody LifelineRequest request) {
+		owned(sessionId);
+		LifelineResult r = service.useLifeline(sessionId, request.lifeline(), request.questionId());
+		SessionView view = SessionView.of(r.session(), clock.instant());
+		return new LifelineView(request.lifeline(), r.skipped() == null ? null : AnswerView.of(r.skipped(), view), view);
 	}
 
 	@GetMapping("/sessions/{sessionId}/result")

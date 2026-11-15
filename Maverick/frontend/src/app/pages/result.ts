@@ -61,14 +61,16 @@ export function verdict(percentage: number): string {
               <div class="row">
                 <span [class]="'chip chip-' + item.difficulty.toLowerCase()">{{ item.difficulty }}</span>
                 <span class="spacer"></span>
+                @if ((item.multiplier ?? 1) > 1 && item.correct) { <span class="chip combo">🔥 ×{{ item.multiplier }}</span> }
                 <strong>{{ item.pointsAwarded }}/{{ item.points }}</strong>
               </div>
               <h3>{{ item.number }}. {{ item.stem }}</h3>
               <p>
-                @if (item.timedOut) { <span class="no">Ran out of time.</span> }
+                @if (item.skipped) { <span class="muted">Skipped (lifeline).</span> }
+                @else if (item.timedOut) { <span class="no">Ran out of time.</span> }
                 @else if (item.correct) { <span class="yes">✓ {{ item.yourAnswer }}</span> }
                 @else { <span class="no">✗ {{ item.yourAnswer }}</span> }
-                @if (!item.correct) { <span class="muted"> · answer: <strong>{{ item.correctAnswer }}</strong></span> }
+                @if (!item.correct && !item.skipped) { <span class="muted"> · answer: <strong>{{ item.correctAnswer }}</strong></span> }
               </p>
             </li>
           }
