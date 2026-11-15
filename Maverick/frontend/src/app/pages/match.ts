@@ -3,6 +3,7 @@ import { RouterLink } from '@angular/router';
 import { Subscription, exhaustMap, timer } from 'rxjs';
 import { MultiplayerApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
+import { flag } from '../core/countries';
 import { errorMessage } from '../core/http-errors';
 import { MatchView } from '../core/models';
 import { TimerRing } from '../ui/timer-ring';
@@ -51,7 +52,7 @@ import { Sparks } from '../motion/sparks';
           @if (m.lastQuestion; as last) {
             <p class="last muted">
               Last question: <strong>{{ last.correctAnswer }}</strong>
-              {{ last.winnerUserId === null ? '— nobody got it' : last.winnerUserId === me ? '— you were fastest!' : '— won by Player ' + (last.winnerUserId % 10000) }}
+              {{ last.winnerUserId === null ? '— nobody got it' : last.winnerUserId === me ? '— you were fastest!' : '— won by ' + nameOf(last.winnerUserId) }}
             </p>
           }
         </section>
@@ -60,7 +61,7 @@ import { Sparks } from '../motion/sparks';
           <h2>Scoreboard</h2>
           <ol>
             @for (p of m.standings; track p.userId; let i = $index) {
-              <li [class.me]="p.userId === me"><span class="rank">{{ i + 1 }}</span><span class="who">{{ p.userId === me ? 'You' : 'Player ' + (p.userId % 10000) }}</span><strong><mv-count-up [value]="p.score" [duration]="500" /></strong></li>
+              <li [class.me]="p.userId === me"><span class="rank">{{ i + 1 }}</span><span class="who">{{ flag(p.country) }} {{ p.userId === me ? 'You' : (p.name || 'Player ' + (p.userId % 10000)) }}</span><strong><mv-count-up [value]="p.score" [duration]="500" /></strong></li>
             }
           </ol>
         </aside>
@@ -96,6 +97,12 @@ export class MatchPage implements OnInit {
   private readonly api = inject(MultiplayerApi);
   private readonly destroyRef = inject(DestroyRef);
   protected readonly me = inject(AuthService).user()!.userId;
+  protected readonly flag = flag;
+
+  protected nameOf(userId: number): string {
+    const p = this.match()?.standings.find((s) => s.userId === userId);
+    return p?.name || 'Player ' + (userId % 10000);
+  }
 
   protected readonly match = signal<MatchView | null>(null);
   protected readonly error = signal<string | null>(null);

@@ -7,6 +7,7 @@ import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { BoardPeriod, Category, XpBoard } from '../core/models';
 import { DailyBoard } from '../ui/daily-board';
+import { flag } from '../core/countries';
 
 /** XP rankings by period and topic, plus today's Daily Challenge board. */
 @Component({
@@ -45,7 +46,7 @@ import { DailyBoard } from '../ui/daily-board';
               <div class="step fade-up" [class]="'step p' + e.rank" [class.me]="e.userId === me">
                 <span class="medal" aria-hidden="true">{{ medals[e.rank - 1] }}</span>
                 <span class="avatar" aria-hidden="true">{{ e.name.charAt(0).toUpperCase() }}</span>
-                <strong class="name">{{ e.name }}</strong>
+                <strong class="name">{{ flag(e.country) }} {{ e.name }}</strong>
                 <span class="xp">{{ e.xp }} XP</span>
                 <span class="muted">{{ e.title }} · {{ e.games }} {{ e.games === 1 ? 'game' : 'games' }}</span>
               </div>
@@ -54,7 +55,7 @@ import { DailyBoard } from '../ui/daily-board';
           <ol class="list" start="4">
             @for (e of rest(); track e.userId) {
               <li [class.me]="e.userId === me">
-                <span class="rank">{{ e.rank }}</span><span class="name">{{ e.name }}{{ e.userId === me ? ' (you)' : '' }}</span>
+                <span class="rank">{{ e.rank }}</span><span class="name">{{ flag(e.country) }} {{ e.name }}{{ e.userId === me ? ' (you)' : '' }}</span>
                 <span class="muted">{{ e.games }} {{ e.games === 1 ? 'game' : 'games' }}</span><strong>{{ e.xp }} XP</strong>
               </li>
             }
@@ -106,6 +107,7 @@ export class Leaderboard {
   private readonly boards = inject(BoardsApi);
   private readonly catalog = inject(CatalogApi);
   protected readonly me = inject(AuthService).user()?.userId;
+  protected readonly flag = flag;
   protected readonly medals = ['🥇', '🥈', '🥉'];
   protected readonly periods: { id: BoardPeriod; label: string }[] = [
     { id: 'DAY', label: 'Today' },
