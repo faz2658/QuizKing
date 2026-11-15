@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 import { catchError, debounceTime, distinctUntilChanged, forkJoin, map, of, startWith, switchMap } from 'rxjs';
 import { CatalogApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
@@ -15,7 +16,7 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
 
 @Component({
   selector: 'mv-home',
-  imports: [FormsModule, GameCardView, BlurText, DailyBanner, ProgressStrip],
+  imports: [FormsModule, RouterLink, GameCardView, BlurText, DailyBanner, ProgressStrip],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="head">
@@ -23,6 +24,7 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
         <span class="badge"><span class="dot"></span>{{ visible().length }} games · new questions every play</span>
         <h1><mv-blur-text [text]="'Hi ' + (auth.user()?.userName ?? 'there') + ', ready to *play?*'" /></h1>
         <p class="muted">Pick a game. Easy questions are quick points; advanced ones pay the most.</p>
+        <a class="btn btn-ghost custom-link" routerLink="/custom">🎛️ Build a custom quiz</a>
       </div>
       <label class="search">
         <span class="sr-only">Search games</span>
@@ -67,6 +69,7 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
     .head { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; margin-bottom: 36px; }
     .head h1 { margin: 14px 0 8px; }
     .head p { margin: 0; }
+    .custom-link { margin-top: 12px; padding-left: 0; }
     .search { position: relative; width: min(380px, 100%); }
     .search .input { padding-left: 42px; border-radius: 999px; }
     .glass-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.2rem; }

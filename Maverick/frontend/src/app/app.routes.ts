@@ -8,6 +8,8 @@ export const routes: Routes = [
   { path: 'challenge/:challengeId', title: 'Challenge · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/challenge').then((m) => m.Challenge) },
   { path: 'challenge/:challengeId/play', title: 'Challenge · Quiz King', canActivate: [playerGuard], data: { mode: 'challenge' }, loadComponent: () => import('./pages/play').then((m) => m.Play) },
   { path: 'room/:code', title: 'Private room · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/room').then((m) => m.Room) },
+  { path: 'custom', title: 'Custom quiz · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/custom').then((m) => m.Custom) },
+  { path: 'custom/play', title: 'Custom quiz · Quiz King', canActivate: [playerGuard], data: { mode: 'custom' }, loadComponent: () => import('./pages/play').then((m) => m.Play) },
   { path: 'play/:gameId', title: 'Playing · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/play').then((m) => m.Play) },
   { path: 'result/:sessionId', title: 'Results · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/result').then((m) => m.Result) },
   { path: 'adaptive/:gameId', title: 'Adaptive · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/adaptive').then((m) => m.Adaptive) },

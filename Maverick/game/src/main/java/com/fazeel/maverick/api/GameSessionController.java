@@ -17,6 +17,7 @@ import com.fazeel.maverick.api.Views.AnswerView;
 import com.fazeel.maverick.api.Views.GameSummary;
 import com.fazeel.maverick.api.Views.ResultView;
 import com.fazeel.maverick.api.Views.SessionView;
+import com.fazeel.maverick.api.Views.CustomRequest;
 import com.fazeel.maverick.api.Views.LifelineRequest;
 import com.fazeel.maverick.api.Views.LifelineView;
 import com.fazeel.maverick.api.Views.StartRequest;
@@ -51,6 +52,14 @@ public class GameSessionController {
 		Callers.requireSelf(request.userId());
 		return SessionView.of(service.start(request.gameId(), request.userId(), Callers.currentUserName()),
 				clock.instant());
+	}
+
+	/** A quiz mixed from several topics, at one difficulty (or mixed), 5 to 20 questions. */
+	@PostMapping("/sessions/custom")
+	@ResponseStatus(HttpStatus.CREATED)
+	public SessionView startCustom(@Valid @RequestBody CustomRequest request) {
+		return SessionView.of(service.startCustom(request.gameIds(), request.difficulty(), request.count(),
+				Callers.currentUserId(), Callers.currentUserName()), clock.instant());
 	}
 
 	@GetMapping("/sessions/{sessionId}")

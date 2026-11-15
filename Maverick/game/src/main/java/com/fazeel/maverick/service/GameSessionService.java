@@ -77,6 +77,73 @@ public class GameSessionService {
 		return sessions.save(session);
 	}
 
+	/** Difficulty of a custom quiz; MIXED is about 40% easy, 30% medium and 30% advanced. */
+	public enum CustomDifficulty {
+		EASY, MEDIUM, ADVANCED, MIXED
+	}
+
+	static final int CUSTOM_MIN = 5;
+	static final int CUSTOM_MAX = 20;
+	static final int CUSTOM_MAX_TOPICS = 8;
+
+	/**
+	 * A quiz from several games' pools at once. The usual rules apply: unseen questions first, easy before hard,
+	 * a level without enough questions borrows from the nearest one.
+	 */
+	public GameSession startCustom(List<Integer> gameIds, CustomDifficulty difficulty, int count, int userId,
+			String playerName) {
+		List<Integer> ids = gameIds == null ? List.of() : gameIds.stream().distinct().toList();
+		if (ids.isEmpty() || ids.size() > CUSTOM_MAX_TOPICS) {
+			throw new QuizRuleException("Pick between 1 and " + CUSTOM_MAX_TOPICS + " topics");
+		}
+		if (count < CUSTOM_MIN || count > CUSTOM_MAX) {
+			throw new QuizRuleException("A custom quiz has " + CUSTOM_MIN + " to " + CUSTOM_MAX + " questions");
+		}
+		List<Game> picked = new java.util.ArrayList<>();
+		for (int id : ids) {
+			picked.add(games.findById(id).orElseThrow(() -> {
+				events.requestGame(new GameRequest(id, userId));
+				return new GameNotReadyException(id);
+			}));
+		}
+		Map<Integer, Questions> pool = new java.util.LinkedHashMap<>();
+		picked.forEach(g -> java.util.Objects.requireNonNullElse(g.getQuestions(), List.<Questions>of()).stream()
+				.filter(java.util.Objects::nonNull).forEach(q -> pool.putIfAbsent(q.getQuestionId(), q)));
+		int easy = switch (difficulty) {
+			case EASY -> count;
+			case MIXED -> Math.round(count * 0.4f);
+			default -> 0;
+		};
+		int medium = switch (difficulty) {
+			case MEDIUM -> count;
+			case MIXED -> Math.round(count * 0.3f);
+			default -> 0;
+		};
+		int advanced = count - easy - medium;
+		Game custom = new Game();
+		custom.setGameName(customName(picked));
+		custom.setQuestions(List.copyOf(pool.values()));
+		custom.setQuestionLevels(new com.fazeel.maverick.domain.GameQuestionLevel(0, easy, medium, advanced));
+		Map<Integer, Instant> lastSeen = seen.findByUserIdAndQuestionIdIn(userId, List.copyOf(pool.keySet())).stream()
+				.collect(Collectors.toMap(SeenQuestion::questionId, SeenQuestion::lastSeenAt, (a, b) -> a));
+		List<SessionQuestion> questions = quizBuilder.build(custom, lastSeen);
+		if (questions.isEmpty()) {
+			throw new QuizRuleException("Those topics have no playable questions yet");
+		}
+		Instant now = clock.instant();
+		GameSession session = new GameSession(UUID.randomUUID().toString(), 0, userId, 0, custom.getGameName(), questions,
+				now).asVariant(com.fazeel.maverick.session.SessionVariant.CUSTOM, null, null).playedBy(playerName);
+		seen.saveAll(questions.stream().map(q -> SeenQuestion.of(userId, q.getQuestionId(), now)).toList());
+		return sessions.save(session);
+	}
+
+	static String customName(List<Game> games) {
+		List<String> names = games.stream().map(g -> g.getTopic() != null && g.getTopic().getTopicName() != null
+				? g.getTopic().getTopicName() : g.getGameName()).distinct().toList();
+		String shown = String.join(", ", names.subList(0, Math.min(3, names.size())));
+		return "Custom quiz: " + shown + (names.size() > 3 ? " +" + (names.size() - 3) : "");
+	}
+
 	/** Returns the session with any timed-out questions already skipped. */
 	public GameSession get(String sessionId) {
 		GameSession session = load(sessionId);

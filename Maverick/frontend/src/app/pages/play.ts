@@ -8,7 +8,7 @@ import { QuizAdapter, QuizRunner } from '../core/quiz-runner';
 import { QuizStage } from '../ui/quiz-stage';
 import { CountUp } from '../motion/count-up';
 import { LifelineBar } from '../ui/lifeline-bar';
-import { Lifeline } from '../core/models';
+import { CustomDifficulty, Lifeline } from '../core/models';
 import { errorMessage } from '../core/http-errors';
 
 export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number, start?: () => Observable<SessionView>): QuizAdapter<SessionView> {
@@ -98,6 +98,10 @@ export class Play implements OnInit {
   /** 'daily' for today's challenge, 'challenge' for a friend's challenge (set by the route). */
   readonly mode = input<string>('');
   readonly challengeId = input<string>('');
+  /** Custom quiz settings from the query string. */
+  readonly games = input<string>('');
+  readonly difficulty = input<string>('MIXED');
+  readonly count = input<string>('10');
   private readonly api = inject(QuizApi);
   private readonly auth = inject(AuthService);
   private readonly router = inject(Router);
@@ -141,6 +145,8 @@ export class Play implements OnInit {
     const start =
       this.mode() === 'daily' ? () => this.api.startDaily()
       : this.mode() === 'challenge' ? () => this.api.acceptChallenge(this.challengeId())
+      : this.mode() === 'custom'
+        ? () => this.api.startCustom(this.games().split(',').map(Number).filter((n) => n > 0), this.difficulty() as CustomDifficulty, Number(this.count()))
       : undefined;
     this.runner = new QuizRunner(singlePlayerAdapter(this.api, Number(this.gameId()), this.auth.user()!.userId, start), this.destroyRef);
     this.runner.start();

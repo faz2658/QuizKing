@@ -11,6 +11,7 @@ import {
   BankQuestion,
   Category,
   ChallengeView,
+  CustomDifficulty,
   DailyBoard,
   DailyView,
   GameCard,
@@ -219,6 +220,10 @@ export class QuizApi {
 
   startDaily(): Observable<SessionView> {
     return this.http.post<SessionView>('/api/v1/daily/sessions', null);
+  }
+
+  startCustom(gameIds: number[], difficulty: CustomDifficulty, count: number): Observable<SessionView> {
+    return this.http.post<SessionView>('/api/v1/sessions/custom', { gameIds, difficulty, count }).pipe(retryWhileLoading());
   }
 
   /** Turns a finished game into a challenge link for friends. */

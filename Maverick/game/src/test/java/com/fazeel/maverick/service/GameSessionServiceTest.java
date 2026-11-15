@@ -193,4 +193,43 @@ class GameSessionServiceTest {
 			return now;
 		}
 	}
+
+	static Game topic(int id, String name, int firstQuestion) {
+		java.util.List<com.fazeel.maverick.domain.Questions> qs = new java.util.ArrayList<>();
+		for (int level = 1; level <= 3; level++) {
+			for (int i = 0; i < 4; i++) {
+				int qid = firstQuestion + level * 10 + i;
+				qs.add(question(qid, level, "A" + qid, "A" + qid, "B" + qid, "C" + qid, "D" + qid));
+			}
+		}
+		Game g = game(id, null, qs.toArray(com.fazeel.maverick.domain.Questions[]::new));
+		g.setTopic(new com.fazeel.maverick.domain.Topic(id, name, null, java.util.List.of()));
+		return g;
+	}
+
+	@Test
+	void customQuizMixesTopicsAtTheChosenDifficulty() {
+		when(games.findById(1)).thenReturn(Optional.of(topic(1, "Art", 100)));
+		when(games.findById(2)).thenReturn(Optional.of(topic(2, "History", 200)));
+
+		GameSession hard = service.startCustom(java.util.List.of(1, 2), GameSessionService.CustomDifficulty.ADVANCED, 6, 42, "Ada");
+		assertThat(hard.getQuestions()).hasSize(6).allMatch(q -> q.getDifficulty() == com.fazeel.maverick.session.Difficulty.ADVANCED);
+		assertThat(hard.getQuestions()).extracting(q -> q.getQuestionId() / 100).contains(1, 2); // both topics
+		assertThat(hard.getVariant()).isEqualTo(com.fazeel.maverick.session.SessionVariant.CUSTOM);
+		assertThat(hard.getGameName()).isEqualTo("Custom quiz: Art, History");
+
+		GameSession mixed = service.startCustom(java.util.List.of(1), GameSessionService.CustomDifficulty.MIXED, 10, 42, "Ada");
+		assertThat(mixed.getQuestions()).extracting(q -> q.getDifficulty().level()).containsExactly(1, 1, 1, 1, 2, 2, 2, 3, 3, 3);
+	}
+
+	@Test
+	void customQuizLimits() {
+		assertThatThrownBy(() -> service.startCustom(java.util.List.of(), GameSessionService.CustomDifficulty.MIXED, 10, 42, "Ada"))
+				.isInstanceOf(QuizRuleException.class);
+		assertThatThrownBy(() -> service.startCustom(java.util.List.of(1), GameSessionService.CustomDifficulty.MIXED, 30, 42, "Ada"))
+				.hasMessageContaining("5 to 20");
+		when(games.findById(9)).thenReturn(Optional.empty());
+		assertThatThrownBy(() -> service.startCustom(java.util.List.of(9), GameSessionService.CustomDifficulty.EASY, 5, 42, "Ada"))
+				.isInstanceOf(GameNotReadyException.class);
+	}
 }

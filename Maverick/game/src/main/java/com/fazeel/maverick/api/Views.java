@@ -25,6 +25,10 @@ public final class Views {
 	public record AnswerRequest(@Positive int questionId, @NotNull String answer) {
 	}
 
+	public record CustomRequest(@NotNull List<Integer> gameIds,
+			@NotNull com.fazeel.maverick.service.GameSessionService.CustomDifficulty difficulty, int count) {
+	}
+
 	public record LifelineRequest(@NotNull Lifeline lifeline, @Positive int questionId) {
 	}
 

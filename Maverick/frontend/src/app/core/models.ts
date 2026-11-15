@@ -410,3 +410,5 @@ export interface FeedbackReview {
   questions: FeedbackItem[];
   retired: RetiredQuestion[];
 }
+
+export type CustomDifficulty = 'EASY' | 'MEDIUM' | 'ADVANCED' | 'MIXED';
