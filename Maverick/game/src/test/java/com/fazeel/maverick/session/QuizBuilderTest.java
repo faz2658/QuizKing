@@ -100,6 +100,39 @@ class QuizBuilderTest {
 	}
 
 	@Test
+	void aLevelOutOfNewQuestionsBorrowsUnseenOnesFromAnotherLevelBeforeRepeating() {
+		// mix 2 easy + 1 medium; both easy questions already seen, three medium never seen
+		Game g = game(1, new GameQuestionLevel(0, 2, 1, 0), ok(1, 1), ok(2, 1), ok(3, 2), ok(4, 2), ok(5, 2));
+		java.time.Instant t = java.time.Instant.parse("2026-01-01T00:00:00Z");
+
+		List<SessionQuestion> qs = builder.build(g, java.util.Map.of(1, t, 2, t));
+
+		assertThat(qs).extracting(SessionQuestion::getQuestionId).containsExactlyInAnyOrder(3, 4, 5);
+		assertThat(qs).extracting(SessionQuestion::getDifficulty).containsOnly(Difficulty.MEDIUM);
+	}
+
+	@Test
+	void playingRepeatedlyCoversTheWholeTopicBeforeAnyQuestionRepeats() {
+		Questions[] pool = new Questions[30];
+		for (int i = 0; i < 30; i++) {
+			pool[i] = ok(i + 1, i < 18 ? 1 : i < 27 ? 2 : 3); // 18 easy, 9 medium, 3 advanced
+		}
+		Game g = game(1, new GameQuestionLevel(0, 7, 3, 0), pool);
+		java.util.Map<Integer, java.time.Instant> seen = new java.util.HashMap<>();
+		java.time.Instant t = java.time.Instant.parse("2026-01-01T00:00:00Z");
+		List<Integer> asked = new java.util.ArrayList<>();
+		for (int play = 0; play < 3; play++) {
+			java.time.Instant now = t.plusSeconds(play);
+			for (SessionQuestion q : builder.build(g, seen)) {
+				asked.add(q.getQuestionId());
+				seen.put(q.getQuestionId(), now);
+			}
+		}
+
+		assertThat(asked).hasSize(30).doesNotHaveDuplicates();
+	}
+
+	@Test
 	void unseenPicksVaryBetweenPlayers() {
 		Game g = game(1, new GameQuestionLevel(0, 2, 0, 0), ok(1, 1), ok(2, 1), ok(3, 1), ok(4, 1), ok(5, 1), ok(6, 1));
 		java.util.Set<Integer> picked = new java.util.HashSet<>();

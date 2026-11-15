@@ -47,14 +47,17 @@ class MatchFactoryTest {
 	}
 
 	@Test
-	void prefersQuestionsTheFewestPlayersHaveSeen() {
+	void prefersQuestionsNoPlayerHasSeenEvenFromAnotherLevel() {
 		// level 1 has ids 1..4: 1 and 2 seen by both players, 3 by one, 4 by nobody
 		Map<Integer, Integer> seenBy = Map.of(1, 2, 2, 2, 3, 1);
 
 		MultiplayerMatch m = new MatchFactory(new Random(3)).create(MATCH, game(4, 0,
 				new MultiPlayerGame.Level(2, 0, 0)), NOW, seenBy);
 
-		assertThat(m.getQuestions()).extracting(MatchQuestion::getQuestionId).containsExactlyInAnyOrder(4, 3);
+		// only question 4 is new to both players at this level; the second slot borrows a question nobody
+		// has seen from another level rather than repeating 1, 2 or 3
+		assertThat(m.getQuestions()).extracting(MatchQuestion::getQuestionId).hasSize(2).contains(4)
+				.doesNotContain(1, 2, 3);
 	}
 
 	@Test

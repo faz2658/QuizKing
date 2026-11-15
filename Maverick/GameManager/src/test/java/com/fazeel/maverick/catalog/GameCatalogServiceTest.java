@@ -222,6 +222,29 @@ class GameCatalogServiceTest {
 	}
 
 	@Test
+	void autoGamesRebalanceTheirMixWhenMoreLevelsArrive() {
+		service = new GameCatalogService(games, multiGames, categories, ids, new QuestionSelector(), events,
+				new AutoGames(true, 12, 10, 8));
+		Category stored = category(1, "Myth", bank("imported", 20, 5, 0));
+		when(categories.findById(1)).thenReturn(Optional.of(stored));
+		Game auto = request(7, 3, 0);
+		auto.setCreatedBy(GameCatalogService.AUTO_CREATOR);
+		Game manual = request(7, 3, 0);
+		when(games.findByCategoryIdAndTopicTopicNameIgnoreCase(1, "Myth")).thenReturn(List.of(auto, manual));
+		when(multiGames.findByCategoryIdAndTopicTopicNameIgnoreCase(1, "Myth")).thenReturn(List.of());
+
+		List<Questions> more = new java.util.ArrayList<>();
+		for (int i = 0; i < 10; i++) {
+			more.add(q(100 + i, 3, "imported"));
+		}
+		service.mergeCategory(category(1, "Myth", more));
+
+		assertThat(auto.getQuestionLevels().getAdvancedLevel()).isEqualTo(3);
+		assertThat(auto.getQuestionLevels().getEasyLevel()).isEqualTo(4);
+		assertThat(manual.getQuestionLevels().getEasyLevel()).as("admin-made games keep their mix").isEqualTo(7);
+	}
+
+	@Test
 	void autoGamesSkipSmallTopicsAndTopicsThatAlreadyHaveGames() {
 		service = new GameCatalogService(games, multiGames, categories, ids, new QuestionSelector(), events,
 				new AutoGames(true, 12, 10, 8));

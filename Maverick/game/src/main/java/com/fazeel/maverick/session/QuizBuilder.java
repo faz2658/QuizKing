@@ -57,20 +57,68 @@ public class QuizBuilder {
 		}
 
 		boolean mixDefined = wanted(game.getQuestionLevels(), null) > 0;
-		List<SessionQuestion> result = new ArrayList<>();
+		Map<Difficulty, Integer> quota = new EnumMap<>(Difficulty.class);
+		Map<Difficulty, List<Questions>> unseen = new EnumMap<>(Difficulty.class);
+		Map<Difficulty, List<Questions>> seenOldestFirst = new EnumMap<>(Difficulty.class);
 		for (Difficulty d : Difficulty.values()) {
 			List<Questions> pool = byLevel.get(d);
 			Collections.shuffle(pool, random);
 			// stable sort keeps the shuffle among equals: never seen first, then oldest sighting first
 			pool.sort(Comparator.comparing((Questions q) -> seen.get(q.getQuestionId()),
 					Comparator.nullsFirst(Comparator.naturalOrder())));
-			int take = mixDefined ? Math.min(wanted(game.getQuestionLevels(), d), pool.size())
-					: Math.min(pool.size(), Math.max(0, DEFAULT_QUESTIONS - result.size()));
-			for (Questions q : pool.subList(0, take)) {
+			unseen.put(d, new ArrayList<>(pool.stream().filter(q -> !seen.containsKey(q.getQuestionId())).toList()));
+			seenOldestFirst.put(d, new ArrayList<>(pool.stream().filter(q -> seen.containsKey(q.getQuestionId())).toList()));
+			quota.put(d, mixDefined ? wanted(game.getQuestionLevels(), d) : d == Difficulty.EASY ? DEFAULT_QUESTIONS : 0);
+		}
+
+		Map<Difficulty, List<Questions>> picked = new EnumMap<>(Difficulty.class);
+		for (Difficulty d : Difficulty.values()) {
+			picked.put(d, new ArrayList<>());
+		}
+		Map<Difficulty, Integer> need = new EnumMap<>(quota);
+		// 1. unseen questions of the requested level
+		for (Difficulty d : Difficulty.values()) {
+			need.merge(d, -take(unseen.get(d), picked.get(d), need.get(d)), Integer::sum);
+		}
+		// 2. a level without enough unseen questions borrows unseen ones from the nearest other level,
+		// so nothing repeats while the topic still has questions the player hasn't met
+		for (Difficulty d : Difficulty.values()) {
+			for (Difficulty other : byDistance(d)) {
+				need.merge(d, -take(unseen.get(other), picked.get(other), need.get(d)), Integer::sum);
+			}
+		}
+		// 3. only then repeat: the questions the player saw longest ago, own level first
+		for (Difficulty d : Difficulty.values()) {
+			need.merge(d, -take(seenOldestFirst.get(d), picked.get(d), need.get(d)), Integer::sum);
+			for (Difficulty other : byDistance(d)) {
+				need.merge(d, -take(seenOldestFirst.get(other), picked.get(other), need.get(d)), Integer::sum);
+			}
+		}
+
+		List<SessionQuestion> result = new ArrayList<>();
+		for (Difficulty d : Difficulty.values()) {
+			for (Questions q : picked.get(d)) {
 				result.add(toSessionQuestion(q, d, game));
 			}
 		}
 		return result;
+	}
+
+	/** Moves up to {@code n} questions from the front of {@code from} to {@code to}. @return how many */
+	private static int take(List<Questions> from, List<Questions> to, int n) {
+		int k = Math.max(0, Math.min(n, from.size()));
+		for (int i = 0; i < k; i++) {
+			to.add(from.remove(0));
+		}
+		return k;
+	}
+
+	/** Other levels, nearest first (ties: the easier one). */
+	private static List<Difficulty> byDistance(Difficulty d) {
+		return java.util.Arrays.stream(Difficulty.values()).filter(o -> o != d)
+				.sorted(Comparator.comparingInt((Difficulty o) -> Math.abs(o.level() - d.level()))
+						.thenComparingInt(Difficulty::level))
+				.toList();
 	}
 
 	static boolean isPlayable(Questions q) {

@@ -21,6 +21,9 @@ public class GameCatalogService {
 
 	static final int SINGLE_PLAYER = 1;
 	static final int MULTI_PLAYER = 2;
+	static final String AUTO_CREATOR = "Quiz King";
+	private static final int[] SOLO_MIX = { 4, 3, 3 };
+	private static final int[] MULTI_MIX = { 3, 3, 2 };
 
 	private final GameRepository games;
 	private final MultiPlayerGameRepository multiGames;
@@ -108,13 +111,23 @@ public class GameCatalogService {
 	/** Games of a topic always draw from its current pool, so new questions show up in existing games. */
 	private void refreshGames(int categoryId, Topic topic) {
 		List<Questions> pool = QuestionSelector.playable(topic.getQuestions());
+		int[] available = QuestionSelector.countByLevel(pool);
 		for (Game g : games.findByCategoryIdAndTopicTopicNameIgnoreCase(categoryId, topic.getTopicName())) {
 			g.setQuestions(pool);
+			if (AUTO_CREATOR.equals(g.getCreatedBy())) {
+				// auto games made early in an import get a better mix as more levels fill up
+				int[] mix = AutoGames.fit(autoGames.soloQuestions(), SOLO_MIX, available);
+				g.setQuestionLevels(new GameQuestionLevel(mix[0], mix[1], mix[2]));
+			}
 			events.gameDefinition(games.save(g));
 		}
 		for (MultiPlayerGame g : multiGames.findByCategoryIdAndTopicTopicNameIgnoreCase(categoryId,
 				topic.getTopicName())) {
 			g.setAutoquestions(pool);
+			if (AUTO_CREATOR.equals(g.getCreatedBy())) {
+				int[] mix = AutoGames.fit(autoGames.multiplayerQuestions(), MULTI_MIX, available);
+				g.setQuestionLevel(new GameQuestionLevel(mix[0], mix[1], mix[2]));
+			}
 			events.multiPlayerGameCreated(multiGames.save(g));
 		}
 	}
@@ -128,23 +141,23 @@ public class GameCatalogService {
 		int[] available = QuestionSelector.countByLevel(pool);
 		if (games.findByCategoryIdAndTopicTopicNameIgnoreCase(category.getCategoryId(), topic.getTopicName())
 				.isEmpty()) {
-			int[] mix = AutoGames.fit(autoGames.soloQuestions(), new int[] { 4, 3, 3 }, available);
+			int[] mix = AutoGames.fit(autoGames.soloQuestions(), SOLO_MIX, available);
 			Game g = new Game();
 			g.setGameName(topic.getTopicName());
 			g.setGameDescription(mix[0] + mix[1] + mix[2] + " questions from " + pool.size()
 					+ ". New ones every time you play.");
 			g.setGameRules("Answer before the timer runs out. Easy 10 points, medium 20, advanced 30.");
-			g.setCreatedBy("Quiz King");
+			g.setCreatedBy(AUTO_CREATOR);
 			g.setQuestionLevels(new GameQuestionLevel(mix[0], mix[1], mix[2]));
 			createGame(category.getCategoryId(), topic.getTopicName(), g);
 		}
 		if (multiGames.findByCategoryIdAndTopicTopicNameIgnoreCase(category.getCategoryId(), topic.getTopicName())
 				.isEmpty()) {
-			int[] mix = AutoGames.fit(autoGames.multiplayerQuestions(), new int[] { 3, 3, 2 }, available);
+			int[] mix = AutoGames.fit(autoGames.multiplayerQuestions(), MULTI_MIX, available);
 			MultiPlayerGame g = new MultiPlayerGame();
 			g.setGameName(topic.getTopicName() + " Showdown");
 			g.setGameDescription("Fastest finger first: " + (mix[0] + mix[1] + mix[2]) + " questions against 1-3 rivals.");
-			g.setCreatedBy("Quiz King");
+			g.setCreatedBy(AUTO_CREATOR);
 			g.setQuestionLevel(new GameQuestionLevel(mix[0], mix[1], mix[2]));
 			g.setTimePerQuestion(15);
 			createMultiPlayerGame(category.getCategoryId(), topic.getTopicName(), g);

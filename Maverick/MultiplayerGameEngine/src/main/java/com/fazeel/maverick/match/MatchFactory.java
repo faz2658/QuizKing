@@ -57,7 +57,9 @@ public class MatchFactory {
 				: game.numberOfQuestions() > 0 ? game.numberOfQuestions() : DEFAULT_QUESTIONS;
 		List<Candidate> picked = new ArrayList<>();
 		if (mix != null && mix.total() > 0) {
-			byLevel.forEach((level, cs) -> picked.addAll(cs.subList(0, Math.min(mix.of(level), cs.size()))));
+			// per level, only questions none of the players has seen; shortfalls are filled below
+			byLevel.forEach((level, cs) -> picked.addAll(cs.stream()
+					.filter(c -> seenBy.getOrDefault(c.question().getQuestionId(), 0) == 0).limit(mix.of(level)).toList()));
 		}
 		// fill up (no mix, or a level ran short) with the least-seen remaining questions
 		List<Candidate> rest = byLevel.values().stream().flatMap(List::stream).filter(c -> !picked.contains(c))
