@@ -7,15 +7,18 @@ import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { GameMode, GameReport, UserSummary } from '../core/models';
 import { CountUp } from '../motion/count-up';
+import { BadgeGrid } from '../ui/badge-grid';
+import { ProgressStrip } from '../ui/progress-strip';
 
 const MODE_LABEL: Record<GameMode, string> = { SINGLE: 'Timed', MULTI: 'Multiplayer', ADAPTIVE: 'Adaptive' };
 
 @Component({
   selector: 'mv-profile',
-  imports: [DatePipe, CountUp],
+  imports: [DatePipe, CountUp, BadgeGrid, ProgressStrip],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <h1>My stats</h1>
+    <mv-progress-strip />
     @if (data(); as d) {
       @if (d.error) {
         <div class="alert" role="alert">{{ d.error }}</div>
@@ -35,6 +38,8 @@ const MODE_LABEL: Record<GameMode, string> = { SINGLE: 'Timed', MULTI: 'Multipla
             </div>
           }
         </div>
+
+        <mv-badge-grid />
 
         <div class="row history-head">
           <h2>History</h2>

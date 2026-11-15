@@ -3,6 +3,7 @@ import { Injectable, inject } from '@angular/core';
 import { Observable, catchError, forkJoin, map, of } from 'rxjs';
 import { retryWhileLoading } from './http-errors';
 import {
+  Achievement,
   AdaptiveAnswer,
   AdaptiveSession,
   AnswerView,
@@ -250,6 +251,11 @@ export class MultiplayerApi {
 @Injectable({ providedIn: 'root' })
 export class ReportsApi {
   private readonly http = inject(HttpClient);
+
+  /** Every badge, earned or not. */
+  achievements(userId: number): Observable<Achievement[]> {
+    return this.http.get<Achievement[]>(`/api/v1/reports/users/${userId}/achievements`);
+  }
 
   /** XP, level and streak. */
   progress(userId: number): Observable<Progress> {

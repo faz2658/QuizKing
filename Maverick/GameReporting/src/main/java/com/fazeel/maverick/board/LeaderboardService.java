@@ -92,6 +92,15 @@ public class LeaderboardService {
 	public record XpBoard(Period period, Integer categoryId, int players, List<XpEntry> top, XpEntry you) {
 	}
 
+	/** The player's rank in one day's challenge, or 0 if they didn't finish it. */
+	public int dailyRank(String date, int userId) {
+		if (date == null) {
+			return 0;
+		}
+		DailyBoard board = daily(LocalDate.parse(date), userId);
+		return board.you() == null ? 0 : board.you().rank();
+	}
+
 	public record DailyBoard(String date, int players, List<DailyEntry> top, DailyEntry you) {
 	}
 

@@ -305,3 +305,13 @@ export interface XpBoard {
   top: XpEntry[];
   you: XpEntry | null;
 }
+
+export interface Achievement {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+  progress: number;
+  goal: number;
+  unlockedAt: string | null;
+}

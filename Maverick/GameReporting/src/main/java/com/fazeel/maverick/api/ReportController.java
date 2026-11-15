@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fazeel.maverick.progress.Achievements.Achievement;
 import com.fazeel.maverick.progress.ProgressService;
 import com.fazeel.maverick.progress.ProgressService.Progress;
 import com.fazeel.maverick.report.GameReport;
@@ -44,6 +45,12 @@ public class ReportController {
 			names.remember(userId, com.fazeel.maverick.auth.Callers.currentUserName());
 		}
 		return progress.progress(userId);
+	}
+
+	/** Every badge, earned or not. */
+	@GetMapping("/achievements")
+	public List<Achievement> achievements(@PathVariable int userId) {
+		return progress.achievements(userId);
 	}
 
 	@GetMapping("/summary")

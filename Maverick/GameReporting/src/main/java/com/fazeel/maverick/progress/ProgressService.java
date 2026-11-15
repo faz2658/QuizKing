@@ -8,6 +8,8 @@ import java.util.Objects;
 
 import org.springframework.stereotype.Service;
 
+import com.fazeel.maverick.board.LeaderboardService;
+import com.fazeel.maverick.progress.Achievements.Achievement;
 import com.fazeel.maverick.progress.Streaks.Streak;
 import com.fazeel.maverick.report.GameReport;
 import com.fazeel.maverick.report.GameReportRepository;
@@ -17,11 +19,19 @@ import com.fazeel.maverick.report.GameReportRepository;
 public class ProgressService {
 
 	private final GameReportRepository reports;
+	private final LeaderboardService boards;
 	private final Clock clock;
 
-	public ProgressService(GameReportRepository reports, Clock clock) {
+	public ProgressService(GameReportRepository reports, LeaderboardService boards, Clock clock) {
 		this.reports = reports;
+		this.boards = boards;
 		this.clock = clock;
+	}
+
+	/** Every badge, earned or not, with how far along the player is. */
+	public List<Achievement> achievements(int userId) {
+		List<GameReport> all = reports.findByUserIdOrderByCompletedAtDesc(userId);
+		return Achievements.of(all, r -> boards.dailyRank(r.variantKey(), userId));
 	}
 
 	public Progress progress(int userId) {
