@@ -1,9 +1,9 @@
 package com.stackroute.maverick.domain;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonCreator;
 
-@Document(collection = "gamequestiontime")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class GameQuestionTime {
 
 	/*@Id
@@ -11,6 +11,8 @@ public class GameQuestionTime {
 	private int easyQuestionsTime;
 	private int mediumQuestionsTime;
 	private int advanceQuestionsTime;
+
+	@JsonCreator
 
 	public GameQuestionTime() {
 		// TODO Auto-generated constructor stub

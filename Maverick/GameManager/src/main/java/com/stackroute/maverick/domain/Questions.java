@@ -1,14 +1,12 @@
 package com.stackroute.maverick.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonCreator;
 import java.util.List;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "questions")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Questions {
-
-	@Id
 	private int questionId;
 	private int questionLevel;
 	private String questionStem;
@@ -18,7 +16,8 @@ public class Questions {
 	private String option3;
 	private String option4;
 	private String correctAnswer;
-	private List<AdminUser> user;
+
+	@JsonCreator
 
 	public Questions() {
 		super();
@@ -26,7 +25,7 @@ public class Questions {
 	}
 
 	public Questions(int questionId, int questionLevel, String questionStem, String questionType, String option1,
-			String option2, String option3, String option4, String correctAnswer, List<AdminUser> user) {
+			String option2, String option3, String option4, String correctAnswer) {
 		super();
 		this.questionId = questionId;
 		this.questionLevel = questionLevel;
@@ -37,7 +36,6 @@ public class Questions {
 		this.option3 = option3;
 		this.option4 = option4;
 		this.correctAnswer = correctAnswer;
-		this.user = user;
 	}
 
 	public int getQuestionId() {
@@ -112,20 +110,11 @@ public class Questions {
 		this.correctAnswer = correctAnswer;
 	}
 
-	public List<AdminUser> getUser() {
-		return user;
-	}
-
-	public void setUser(List<AdminUser> user) {
-		this.user = user;
-	}
-
 	@Override
 	public String toString() {
 		return "Questions [questionId=" + questionId + ", questionLevel=" + questionLevel + ", questionStem="
 				+ questionStem + ", questionType=" + questionType + ", option1=" + option1 + ", option2=" + option2
-				+ ", option3=" + option3 + ", option4=" + option4 + ", correctAnswer=" + correctAnswer + ", user="
-				+ user + "]";
+				+ ", option3=" + option3 + ", option4=" + option4 + ", correctAnswer=" + correctAnswer + "]";
 	}
 
 	

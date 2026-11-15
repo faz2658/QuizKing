@@ -1,11 +1,14 @@
 package com.stackroute.maverick.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonCreator;
 import java.util.List;
 
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "category")
 public class Category {
 	@Id
@@ -13,6 +16,7 @@ public class Category {
 	private String categoryName;
 	private String categoryImage;
 	private List<Topic> topic;
+	@JsonCreator
 	public Category() {
 		super();
 		// TODO Auto-generated constructor stub

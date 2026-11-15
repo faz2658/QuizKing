@@ -1,14 +1,17 @@
 package com.stackroute.maverick.domain;
 
-import org.springframework.data.mongodb.core.mapping.Document;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonCreator;
 
-@Document(collection = "gamequestionlevel")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class GameQuestionLevel {
 
 	
 	private int easyLevel;
 	private int mediumLevel;
 	private int advancedLevel;
+
+	@JsonCreator
 
 	public GameQuestionLevel() {
 

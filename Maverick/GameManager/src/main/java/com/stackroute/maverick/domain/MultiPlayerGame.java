@@ -1,5 +1,6 @@
 package com.stackroute.maverick.domain;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
 import java.util.Date;
 import java.util.List;
 
@@ -47,6 +48,7 @@ public class MultiPlayerGame {
 	/**
 	 * Default Constructor
 	 */
+	@JsonCreator
 	public MultiPlayerGame() {
 		super();
 		
