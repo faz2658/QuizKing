@@ -95,8 +95,9 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
 })
 export class Play implements OnInit {
   readonly gameId = input<string>('0');
-  /** 'daily' for today's challenge (set by the route). */
+  /** 'daily' for today's challenge, 'challenge' for a friend's challenge (set by the route). */
   readonly mode = input<string>('');
+  readonly challengeId = input<string>('');
   private readonly api = inject(QuizApi);
   private readonly auth = inject(AuthService);
   private readonly router = inject(Router);
@@ -137,7 +138,10 @@ export class Play implements OnInit {
   }
 
   ngOnInit(): void {
-    const start = this.mode() === 'daily' ? () => this.api.startDaily() : undefined;
+    const start =
+      this.mode() === 'daily' ? () => this.api.startDaily()
+      : this.mode() === 'challenge' ? () => this.api.acceptChallenge(this.challengeId())
+      : undefined;
     this.runner = new QuizRunner(singlePlayerAdapter(this.api, Number(this.gameId()), this.auth.user()!.userId, start), this.destroyRef);
     this.runner.start();
   }

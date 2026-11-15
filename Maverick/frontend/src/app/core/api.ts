@@ -9,6 +9,7 @@ import {
   AnswerView,
   BoardPeriod,
   Category,
+  ChallengeView,
   DailyBoard,
   DailyView,
   GameCard,
@@ -24,6 +25,7 @@ import {
   MatchView,
   Progress,
   ResultView,
+  RoomStatus,
   SessionView,
   TopicStats,
   UserSummary,
@@ -190,6 +192,19 @@ export class QuizApi {
   startDaily(): Observable<SessionView> {
     return this.http.post<SessionView>('/api/v1/daily/sessions', null);
   }
+
+  /** Turns a finished game into a challenge link for friends. */
+  createChallenge(sessionId: string): Observable<ChallengeView> {
+    return this.http.post<ChallengeView>('/api/v1/challenges', { sessionId });
+  }
+
+  challenge(id: string): Observable<ChallengeView> {
+    return this.http.get<ChallengeView>(`/api/v1/challenges/${id}`);
+  }
+
+  acceptChallenge(id: string): Observable<SessionView> {
+    return this.http.post<SessionView>(`/api/v1/challenges/${id}/sessions`, null);
+  }
 }
 
 @Injectable({ providedIn: 'root' })
@@ -241,6 +256,26 @@ export class MultiplayerApi {
 
   leave(gameId: number, userId: number): Observable<void> {
     return this.http.delete<void>(`/api/v1/matching/${gameId}/players/${userId}`);
+  }
+
+  createRoom(gameId: number): Observable<RoomStatus> {
+    return this.http.post<RoomStatus>('/api/v1/matching/rooms', { gameId });
+  }
+
+  room(code: string): Observable<RoomStatus> {
+    return this.http.get<RoomStatus>(`/api/v1/matching/rooms/${encodeURIComponent(code)}`);
+  }
+
+  joinRoom(code: string): Observable<RoomStatus> {
+    return this.http.post<RoomStatus>(`/api/v1/matching/rooms/${encodeURIComponent(code)}/players`, null);
+  }
+
+  leaveRoom(code: string): Observable<void> {
+    return this.http.delete<void>(`/api/v1/matching/rooms/${encodeURIComponent(code)}/players`);
+  }
+
+  startRoom(code: string): Observable<RoomStatus> {
+    return this.http.post<RoomStatus>(`/api/v1/matching/rooms/${encodeURIComponent(code)}/start`, null);
   }
 
   match(matchId: string, userId: number): Observable<MatchView> {

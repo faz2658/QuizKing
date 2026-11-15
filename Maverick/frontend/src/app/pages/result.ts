@@ -5,6 +5,7 @@ import { catchError, firstValueFrom, map, of, startWith, switchMap } from 'rxjs'
 import { BoardsApi, QuizApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { shareCard } from '../core/share-card';
+import { shareLink } from '../core/invite';
 import { errorMessage } from '../core/http-errors';
 import { ResultView } from '../core/models';
 import { CountUp } from '../motion/count-up';
@@ -37,12 +38,21 @@ export function verdict(percentage: number): string {
           <div class="text">
             <span class="chip">{{ r.variant === 'DAILY' ? 'Daily Challenge · ' + r.variantKey : r.gameName }}</span>
             <h1>{{ title() }}</h1>
+            @if (r.variant === 'CHALLENGE' && r.opponentScore !== null && r.opponentScore !== undefined) {
+              <p class="vs" [class.won]="r.score > r.opponentScore">
+                {{ r.score > r.opponentScore ? '🏆 You beat the challenge' : r.score === r.opponentScore ? '🤝 A tie' : '😤 Not this time' }}:
+                {{ r.score }} vs {{ r.opponentScore }}
+              </p>
+            }
             <div class="stats">
               <div><strong><mv-count-up [value]="r.score" [duration]="1200" /></strong><span class="muted">/ {{ r.maxScore }} points</span></div>
               <div><strong>{{ r.correctAnswers }}</strong><span class="muted">/ {{ r.totalQuestions }} correct</span></div>
             </div>
             <div class="row">
               <button type="button" class="btn" (click)="share(r)" [disabled]="sharing()">📤 Share result</button>
+              @if (r.variant !== 'DAILY' && r.variant !== 'CHALLENGE') {
+                <button type="button" class="btn" (click)="challengeFriends(r)" [disabled]="sharing()">⚔️ Challenge a friend</button>
+              }
               @if (r.variant === 'DAILY') {
                 <a class="btn btn-primary" routerLink="/">Play more games</a>
               } @else if (r.gameId > 0) {
@@ -98,6 +108,8 @@ export function verdict(percentage: number): string {
     .stats { display: flex; gap: 32px; margin: 8px 0 20px; }
     .stats strong { font-size: 1.6rem; margin-right: 4px; }
     .review-title { margin-top: 36px; }
+    .vs { font-weight: 800; font-size: 1.1rem; margin: 0 0 8px; }
+    .vs.won { color: var(--good); }
     .review { list-style: none; padding: 0; display: grid; gap: 12px; }
     .review li { padding: 18px; border-left: 5px solid var(--border); }
     .review li.good { border-left-color: var(--good); }
@@ -133,6 +145,23 @@ export class Result {
   private readonly boards = inject(BoardsApi);
   protected readonly sharing = signal(false);
   protected readonly shareNote = signal<string | null>(null);
+
+  protected challengeFriends(r: ResultView): void {
+    this.sharing.set(true);
+    this.shareNote.set(null);
+    this.api.createChallenge(r.sessionId).subscribe({
+      next: async (c) => {
+        const how = await shareLink('Quiz King challenge', `I scored ${c.score} in ${c.gameName} on Quiz King. Can you beat me?`,
+          `${location.origin}/challenge/${c.id}`);
+        this.sharing.set(false);
+        this.shareNote.set(how === 'copied' ? 'Challenge link copied: send it to a friend.' : how === 'failed' ? `Share this link: ${location.origin}/challenge/${c.id}` : null);
+      },
+      error: (e) => {
+        this.sharing.set(false);
+        this.shareNote.set(errorMessage(e));
+      },
+    });
+  }
 
   protected async share(r: ResultView): Promise<void> {
     this.sharing.set(true);

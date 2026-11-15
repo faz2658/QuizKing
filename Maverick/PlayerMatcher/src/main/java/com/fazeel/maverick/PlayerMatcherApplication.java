@@ -14,6 +14,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 import org.springframework.scheduling.annotation.Scheduled;
 
 import com.fazeel.maverick.matching.Matchmaker;
+import com.fazeel.maverick.matching.PrivateRooms;
 import com.fazeel.maverick.matching.MatchmakingRules;
 
 @SpringBootApplication
@@ -40,20 +41,34 @@ public class PlayerMatcherApplication {
 	}
 
 	@Bean
-	LobbyTimer lobbyTimer(Matchmaker matchmaker) {
-		return new LobbyTimer(matchmaker);
+	PrivateRooms privateRooms(KafkaTemplate<String, Object> kafka, @Value("${maverick.kafka.enabled}") boolean kafkaEnabled,
+			@Value("${maverick.topics.players-matched}") String topic) {
+		return new PrivateRooms(Clock.systemUTC(), new java.security.SecureRandom(), match -> {
+			log.info("Private room match {} for game {} with players {}", match.matchId(), match.gameId(), match.players());
+			if (kafkaEnabled) {
+				kafka.send(topic, match.matchId(), match);
+			}
+		});
+	}
+
+	@Bean
+	LobbyTimer lobbyTimer(Matchmaker matchmaker, PrivateRooms rooms) {
+		return new LobbyTimer(matchmaker, rooms);
 	}
 
 	static class LobbyTimer {
 		private final Matchmaker matchmaker;
+		private final PrivateRooms rooms;
 
-		LobbyTimer(Matchmaker matchmaker) {
+		LobbyTimer(Matchmaker matchmaker, PrivateRooms rooms) {
 			this.matchmaker = matchmaker;
+			this.rooms = rooms;
 		}
 
 		@Scheduled(fixedDelay = 500)
 		void tick() {
 			matchmaker.tick();
+			rooms.tick();
 		}
 	}
 }

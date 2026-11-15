@@ -337,3 +337,31 @@ export interface Achievement {
   goal: number;
   unlockedAt: string | null;
 }
+
+export interface RoomPlayer {
+  userId: number;
+  name: string;
+}
+
+export interface RoomStatus {
+  code: string;
+  gameId: number;
+  hostId: number;
+  players: RoomPlayer[];
+  state: 'WAITING' | 'STARTED' | 'CLOSED';
+  matchId: string | null;
+  maxPlayers: number;
+}
+
+export interface ChallengeView {
+  id: string;
+  challengerName: string;
+  gameName: string;
+  score: number;
+  maxScore: number;
+  correctAnswers: number;
+  totalQuestions: number;
+  yourStatus: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED' | 'OWN';
+  yourSessionId: string | null;
+  yourScore: number | null;
+}
