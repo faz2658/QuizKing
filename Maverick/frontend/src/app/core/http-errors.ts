@@ -5,7 +5,7 @@ import { Observable, retry, throwError, timer } from 'rxjs';
 export function errorMessage(err: unknown, fallback = 'Something went wrong. Please try again.'): string {
   if (err instanceof HttpErrorResponse) {
     if (err.status === 0) {
-      return 'The server is not reachable. Check that the Maverick services are running.';
+      return 'The server is not reachable. Check that the Quiz King services are running.';
     }
     const detail = (err.error as { detail?: string } | null)?.detail;
     if (detail) {
