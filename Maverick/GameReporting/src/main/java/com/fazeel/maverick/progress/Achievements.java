@@ -38,6 +38,7 @@ public final class Achievements {
 		CHAMPION("Champion", "Win a multiplayer match", "🏆", 1),
 		CLIMBER("Climber", "Reach level 3 in an adaptive game", "🧗", 3),
 		KING_SLAYER("Beat a King", "Beat a friend's challenge score", "⚔️", 1),
+		ARENA_CHAMPION("Last one standing", "Win a World Arena round", "🌍", 1),
 		KNIGHTED("Knighted", "Reach player level 5 (Knight)", "🛡️", 5);
 
 		public final String title;
@@ -112,6 +113,9 @@ public final class Achievements {
 			}
 			if (Xp.wonChallenge(r)) {
 				reach(Badge.KING_SLAYER, 1, at, progress, unlocked);
+			}
+			if (Xp.wonArena(r)) {
+				reach(Badge.ARENA_CHAMPION, 1, at, progress, unlocked);
 			}
 			reach(Badge.KNIGHTED, Xp.level(xp), at, progress, unlocked);
 		}

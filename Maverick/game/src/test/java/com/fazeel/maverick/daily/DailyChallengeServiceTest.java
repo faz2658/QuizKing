@@ -38,7 +38,7 @@ import com.fazeel.maverick.session.SessionVariant;
 
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)
-class DailyChallengeServiceTest {
+public class DailyChallengeServiceTest {
 
 	static final LocalDate DAY = LocalDate.parse("2026-11-15");
 
@@ -52,7 +52,7 @@ class DailyChallengeServiceTest {
 	DailyChallengeService service;
 
 	/** Five topics with three questions per level each. */
-	static List<Game> catalog() {
+	public static List<Game> catalog() {
 		List<Game> all = new ArrayList<>();
 		int id = 1;
 		for (int t = 1; t <= 5; t++) {

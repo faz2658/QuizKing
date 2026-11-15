@@ -3,6 +3,7 @@
   "/api/v1/games": { "target": "http://localhost:9092", "secure": false },
   "/api/v1/daily": { "target": "http://localhost:9092", "secure": false },
   "/api/v1/challenges": { "target": "http://localhost:9092", "secure": false },
+  "/api/v1/arena": { "target": "http://localhost:9092", "secure": false },
   "/api/game": { "target": "http://localhost:9091", "secure": false },
   "/api/v1/question-generator": { "target": "http://localhost:9090", "secure": false },
   "/api/v1/matches": { "target": "http://localhost:9093", "secure": false },

@@ -10,5 +10,5 @@ import java.util.List;
 public record SinglePlayerResult(String sessionId, int gameId, String gameName, int categoryId, int userId,
 		int score, int maxScore, int percentage, int correctAnswers, int totalQuestions, Instant completedAt,
 		List<PlayedQuestion> playedData, String variant, String variantKey, Integer opponentScore,
-		String playerName) {
+		String playerName, Integer rank, Integer players) {
 }

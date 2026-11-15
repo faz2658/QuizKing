@@ -24,7 +24,7 @@ public final class ReportMapper {
 						q.timedOut(), q.pointsAwarded()))
 				.toList();
 		return new GameReport("single:" + r.sessionId(), GameMode.SINGLE, r.userId(), r.gameId(), r.gameName(),
-				r.categoryId(), r.score(), r.maxScore(), r.correctAnswers(), r.totalQuestions(), null, null, null,
+				r.categoryId(), r.score(), r.maxScore(), r.correctAnswers(), r.totalQuestions(), r.rank(), r.players(), null,
 				r.completedAt(), items, r.variant(), r.variantKey(), r.opponentScore());
 	}
 

@@ -11,5 +11,13 @@ import java.util.List;
 public record SinglePlayerResult(String sessionId, int gameId, String gameName, int categoryId, int userId,
 		int score, int maxScore, int percentage, int correctAnswers, int totalQuestions, Instant completedAt,
 		List<PlayedQuestion> playedData, String variant, String variantKey, Integer opponentScore,
-		String playerName) {
+		String playerName, Integer rank, Integer players) {
+
+	public SinglePlayerResult(String sessionId, int gameId, String gameName, int categoryId, int userId, int score,
+			int maxScore, int percentage, int correctAnswers, int totalQuestions, Instant completedAt,
+			List<PlayedQuestion> playedData, String variant, String variantKey, Integer opponentScore,
+			String playerName) {
+		this(sessionId, gameId, gameName, categoryId, userId, score, maxScore, percentage, correctAnswers, totalQuestions,
+				completedAt, playedData, variant, variantKey, opponentScore, playerName, null, null);
+	}
 }

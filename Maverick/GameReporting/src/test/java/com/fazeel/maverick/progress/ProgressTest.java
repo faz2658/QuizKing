@@ -84,4 +84,14 @@ class ProgressTest {
 		assertThat(p.streak()).isEqualTo(new Streak(2, 2, true));
 		assertThat(p.gamesPlayed()).isEqualTo(2);
 	}
+
+	@Test
+	void winningTheArenaPaysABonus() {
+		GameReport winner = new GameReport("a", GameMode.SINGLE, 1, 0, "World Arena", 0, 120, 240, 6, 7, 1, 25, null,
+				Instant.parse("2026-11-15T12:00:00Z"), List.of(), "ARENA", "2026-11-15T12:00:00Z", null);
+		GameReport second = new GameReport("b", GameMode.SINGLE, 1, 0, "World Arena", 0, 100, 240, 5, 6, 2, 25, null,
+				Instant.parse("2026-11-15T12:00:00Z"), List.of(), "ARENA", "2026-11-15T12:00:00Z", null);
+		assertThat(Xp.of(winner)).isEqualTo(5 + 60 + 50);
+		assertThat(Xp.of(second)).isEqualTo(5 + 50);
+	}
 }

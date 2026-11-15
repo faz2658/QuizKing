@@ -109,7 +109,20 @@ public class DailyChallengeService {
 
 	/** Picks the day's questions: seeded by the date, one topic at a time so the mix is as varied as possible. */
 	static DailyChallenge build(LocalDate date, List<Game> games) {
-		Random random = new Random(date.toEpochDay() * 7919L + 17);
+		Picked p = pick(date.toEpochDay() * 7919L + 17, games, EASY, MEDIUM, HARD);
+		return new DailyChallenge(date.toString(), p.questions(), p.topics(), Instant.now());
+	}
+
+	/** Questions and their topics, as picked by {@link #pick}. */
+	public record Picked(List<SessionQuestion> questions, List<String> topics) {
+	}
+
+	/**
+	 * Picks {@code easy}, {@code medium} and {@code hard} questions from every game, one topic at a time so the mix
+	 * is as varied as possible. The same seed and games always give the same questions and option order.
+	 */
+	public static Picked pick(long seed, List<Game> games, int easy, int medium, int hard) {
+		Random random = new Random(seed);
 		QuizBuilder builder = new QuizBuilder(random);
 		// question id -> (question, its game); a question shared by several games counts once
 		Map<Difficulty, Map<String, List<Pick>>> byLevelAndTopic = new EnumMap<>(Difficulty.class);
@@ -129,8 +142,8 @@ public class DailyChallengeService {
 				}
 			}
 		}
-		Map<Difficulty, Integer> wanted = Map.of(Difficulty.EASY, EASY, Difficulty.MEDIUM, MEDIUM,
-				Difficulty.ADVANCED, HARD);
+		Map<Difficulty, Integer> wanted = Map.of(Difficulty.EASY, easy, Difficulty.MEDIUM, medium,
+				Difficulty.ADVANCED, hard);
 		List<SessionQuestion> questions = new ArrayList<>();
 		List<String> topics = new ArrayList<>();
 		Set<String> usedTopics = new HashSet<>();
@@ -157,7 +170,7 @@ public class DailyChallengeService {
 				round++;
 			}
 		}
-		return new DailyChallenge(date.toString(), questions, topics, Instant.now());
+		return new Picked(questions, topics);
 	}
 
 	private record Pick(Questions question, Game game, String topic) {
