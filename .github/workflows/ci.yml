@@ -1,9 +1,13 @@
 name: CI
 
 on:
-  push:
-    branches: [master]
+  push:            # every branch, so pushing a feature branch runs CI too
   pull_request:
+  workflow_dispatch: # "Run workflow" button on the Actions tab
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   backend:
