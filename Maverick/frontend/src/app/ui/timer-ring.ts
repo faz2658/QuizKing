@@ -18,7 +18,7 @@ import { ChangeDetectionStrategy, Component, computed, input } from '@angular/co
     svg { position: absolute; inset: 0; transform: rotate(-90deg); }
     circle { fill: none; stroke-width: 8; }
     .track { stroke: var(--bg-sunken); }
-    .bar { stroke: var(--good); stroke-linecap: round; transition: stroke-dashoffset 0.2s linear, stroke 0.3s; }
+    .bar { stroke: var(--good); stroke-linecap: round; transition: stroke-dashoffset 0.2s linear, stroke 0.3s; filter: drop-shadow(0 0 6px currentColor); color: var(--good); }
     .bar.warn { stroke: var(--accent); }
     .bar.danger { stroke: var(--bad); }
     .value { font-weight: 800; font-size: calc(var(--size, 84px) * 0.34); font-variant-numeric: tabular-nums; }

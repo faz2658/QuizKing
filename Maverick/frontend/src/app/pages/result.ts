@@ -1,10 +1,12 @@
-import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, input } from '@angular/core';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { RouterLink } from '@angular/router';
 import { catchError, map, of, startWith, switchMap } from 'rxjs';
 import { QuizApi } from '../core/api';
 import { errorMessage } from '../core/http-errors';
 import { ResultView } from '../core/models';
+import { CountUp } from '../motion/count-up';
+import { Sparks } from '../motion/sparks';
 
 export function verdict(percentage: number): string {
   if (percentage >= 90) return 'Outstanding!';
@@ -16,23 +18,23 @@ export function verdict(percentage: number): string {
 
 @Component({
   selector: 'mv-result',
-  imports: [RouterLink],
+  imports: [RouterLink, CountUp],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (state(); as st) {
       @if (st.error) {
         <div class="alert" role="alert">{{ st.error }}</div>
       } @else if (st.result; as r) {
-        <section class="card summary">
+        <section class="card summary fade-up">
           <div class="dial" [style.--p]="r.percentage">
-            <span class="pct">{{ r.percentage }}%</span>
+            <span class="pct"><mv-count-up [value]="r.percentage" [duration]="1200" suffix="%" /></span>
             <span class="muted">of max score</span>
           </div>
           <div class="text">
             <span class="chip">{{ r.gameName }}</span>
             <h1>{{ title() }}</h1>
             <div class="stats">
-              <div><strong>{{ r.score }}</strong><span class="muted">/ {{ r.maxScore }} points</span></div>
+              <div><strong><mv-count-up [value]="r.score" [duration]="1200" /></strong><span class="muted">/ {{ r.maxScore }} points</span></div>
               <div><strong>{{ r.correctAnswers }}</strong><span class="muted">/ {{ r.totalQuestions }} correct</span></div>
             </div>
             <div class="row">
@@ -46,7 +48,7 @@ export function verdict(percentage: number): string {
         <h2 class="review-title">Review</h2>
         <ol class="review">
           @for (item of r.review; track item.number) {
-            <li class="card" [class.good]="item.correct" [class.bad]="!item.correct">
+            <li class="card fade-up" [style.animation-delay.ms]="200 + $index * 60" [class.good]="item.correct" [class.bad]="!item.correct">
               <div class="row">
                 <span [class]="'chip chip-' + item.difficulty.toLowerCase()">{{ item.difficulty }}</span>
                 <span class="spacer"></span>
@@ -72,7 +74,8 @@ export function verdict(percentage: number): string {
     .dial {
       width: 180px; aspect-ratio: 1; border-radius: 50%; display: grid; place-content: center; text-align: center;
       background: radial-gradient(closest-side, var(--bg-raised) 78%, transparent 79% 100%),
-        conic-gradient(var(--accent) calc(var(--p) * 1%), var(--bg-sunken) 0);
+        conic-gradient(from 0deg, var(--accent-2), var(--pink) calc(var(--p) * 0.5%), var(--accent) calc(var(--p) * 1%), var(--surface-strong) 0);
+      box-shadow: 0 0 60px color-mix(in srgb, var(--pink) 25%, transparent);
     }
     .pct { font-size: 2.6rem; font-weight: 900; font-variant-numeric: tabular-nums; }
     .stats { display: flex; gap: 32px; margin: 8px 0 20px; }
@@ -106,4 +109,14 @@ export class Result {
   );
 
   protected readonly title = computed(() => verdict(this.state()?.result?.percentage ?? 0));
+  private readonly sparks = inject(Sparks);
+
+  constructor() {
+    effect(() => {
+      const r = this.state()?.result;
+      if (r && r.percentage >= 70) {
+        setTimeout(() => this.sparks.confetti(), 400);
+      }
+    });
+  }
 }

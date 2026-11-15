@@ -59,10 +59,12 @@ class QuizBuilderTest {
 	}
 
 	@Test
-	void twoOptionQuestionsAreFineAndBlankOptionsAreNotShown() {
-		Game g = game(1, null, question(1, 1, "True", "True", "False", "", null));
+	void trueFalseQuestionsKeepTheirNaturalOrderAndBlankOptionsAreNotShown() {
+		Game g = game(1, null, question(1, 1, "False", "False", "true", "", null));
 
-		assertThat(builder.build(g).get(0).getOptions()).containsExactlyInAnyOrder("True", "False");
+		for (int seed = 0; seed < 5; seed++) {
+			assertThat(new QuizBuilder(new Random(seed)).build(g).get(0).getOptions()).containsExactly("True", "False");
+		}
 	}
 
 	@Test

@@ -1,11 +1,13 @@
-import { ChangeDetectionStrategy, Component, HostListener, computed, input, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, HostListener, computed, effect, inject, input, output } from '@angular/core';
 import { Feedback, RunnerQuestion } from '../core/quiz-runner';
 import { TimerRing } from './timer-ring';
+import { DecryptText } from '../motion/decrypt-text';
+import { Sparks } from '../motion/sparks';
 
 /** The question card: stem, timer and answer options, with right/wrong feedback. Keys 1-4 pick an option. */
 @Component({
   selector: 'mv-quiz-stage',
-  imports: [TimerRing],
+  imports: [TimerRing, DecryptText],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="card stage">
@@ -17,7 +19,7 @@ import { TimerRing } from './timer-ring';
         <mv-timer-ring [seconds]="secondsLeft()" [fraction]="fraction()" />
       </header>
 
-      <h2 class="stem">{{ question().stem }}</h2>
+      <h2 class="stem"><mv-decrypt-text [text]="question().stem" /></h2>
 
       <ol class="options" [class.locked]="locked()">
         @for (option of question().options; track option; let i = $index) {
@@ -48,19 +50,19 @@ import { TimerRing } from './timer-ring';
     </div>
   `,
   styles: `
-    .stage { padding: clamp(18px, 4vw, 32px); }
+    .stage { padding: clamp(20px, 4vw, 36px); }
     .top { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 18px; }
     .meta { display: flex; flex-direction: column; gap: 8px; }
     .count { font-weight: 750; font-size: 1.05rem; }
-    .stem { font-size: clamp(1.3rem, 3.2vw, 1.9rem); margin: 6px 0 22px; }
+    .stem { font-size: clamp(1.4rem, 3.4vw, 2.1rem); margin: 6px 0 26px; letter-spacing: -0.025em; min-height: 2.2em; }
     .options { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
     .option {
       width: 100%; display: flex; align-items: center; gap: 14px; text-align: left;
       font: inherit; font-size: 1.05rem; font-weight: 600; color: var(--text);
-      background: var(--surface); border: 2px solid var(--border); border-radius: var(--radius);
-      padding: 16px 18px; cursor: pointer; transition: border-color 0.15s, background 0.15s, transform 0.08s;
+      background: var(--surface); border: 1px solid var(--border-strong); border-radius: var(--radius);
+      padding: 17px 18px; cursor: pointer; transition: border-color 0.15s, background 0.15s, transform 0.12s, box-shadow 0.2s;
     }
-    .option:hover:not(:disabled) { border-color: var(--accent-2); transform: translateY(-1px); }
+    .option:hover:not(:disabled) { border-color: var(--lavender); transform: translateY(-2px); box-shadow: 0 10px 30px color-mix(in srgb, var(--lavender) 18%, transparent); }
     .option:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 2px; }
     .option:disabled { cursor: default; }
     .key {
@@ -68,8 +70,9 @@ import { TimerRing } from './timer-ring';
       background: var(--bg-sunken); color: var(--text-muted); font-size: 0.85rem; font-weight: 800;
     }
     .option.chosen { border-color: var(--accent-2); }
-    .option.right { border-color: var(--good); background: var(--good-bg); }
-    .option.wrong { border-color: var(--bad); background: var(--bad-bg); }
+    .option.right { border-color: var(--good); background: var(--good-bg); box-shadow: 0 0 0 1px var(--good), 0 0 30px color-mix(in srgb, var(--good) 35%, transparent); }
+    .option.wrong { border-color: var(--bad); background: var(--bad-bg); animation: shake 0.4s; }
+    @keyframes shake { 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }
     .locked .option:not(.right):not(.wrong):not(.chosen) { opacity: 0.55; }
     .feedback { min-height: 1.6em; margin: 18px 0 0; font-weight: 700; }
     .good { color: var(--good); }
@@ -87,6 +90,23 @@ export class QuizStage {
   readonly choose = output<string>();
 
   private readonly correctAnswer = computed(() => this.feedback()?.correctAnswer ?? null);
+  private readonly host = inject(ElementRef<HTMLElement>).nativeElement as HTMLElement;
+  private readonly sparks = inject(Sparks);
+
+  constructor() {
+    // celebrate a correct answer on the button that was picked
+    effect(() => {
+      const f = this.feedback();
+      if (f?.correct) {
+        queueMicrotask(() => {
+          const btn = this.host.querySelector('.option.right');
+          if (btn) {
+            this.sparks.burst(btn, 'var(--good)', 14);
+          }
+        });
+      }
+    });
+  }
 
   protected stateOf(option: string): string {
     const correct = this.correctAnswer();
