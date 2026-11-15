@@ -127,19 +127,16 @@ export class Welcome {
 
   protected submit(): void {
     this.error.set(null);
-    if (this.tab() === 'guest') {
-      this.auth.playAsGuest(this.userName);
-      this.done();
-      return;
-    }
     if (this.tab() === 'register' && this.password.length < 8) {
       this.error.set('The password needs at least 8 characters.');
       return;
     }
     this.busy.set(true);
-    const call = this.tab() === 'login'
-      ? this.auth.login(this.email, this.password)
-      : this.auth.register(this.userName, this.email, this.password);
+    const call = this.tab() === 'guest'
+      ? this.auth.playAsGuest(this.userName)
+      : this.tab() === 'login'
+        ? this.auth.login(this.email, this.password)
+        : this.auth.register(this.userName, this.email, this.password);
     call.subscribe({
       next: () => this.done(),
       error: (e) => {

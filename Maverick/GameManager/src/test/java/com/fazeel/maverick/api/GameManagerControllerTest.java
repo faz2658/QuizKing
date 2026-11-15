@@ -1,5 +1,10 @@
 package com.fazeel.maverick.api;
 
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
+import org.springframework.context.annotation.Import;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+import org.springframework.test.web.servlet.request.RequestPostProcessor;
+import com.fazeel.maverick.config.SecurityConfig;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;
@@ -22,8 +27,18 @@ import com.fazeel.maverick.catalog.NotEnoughQuestionsException;
 import com.fazeel.maverick.catalog.NotFoundException;
 import com.fazeel.maverick.domain.Game;
 
+@Import(SecurityConfig.class)
 @WebMvcTest(GameManagerController.class)
 class GameManagerControllerTest {
+
+	/** A signed-in player whose token subject is {@code userId}. */
+	static RequestPostProcessor player(int userId) {
+		return jwt().jwt(j -> j.subject(String.valueOf(userId))).authorities(new SimpleGrantedAuthority("ROLE_USER"));
+	}
+
+	static RequestPostProcessor admin() {
+		return jwt().jwt(j -> j.subject("1")).authorities(new SimpleGrantedAuthority("ROLE_ADMIN"));
+	}
 
 	@Autowired
 	MockMvc mvc;
@@ -38,7 +53,7 @@ class GameManagerControllerTest {
 		g.setGameName("Capitals");
 		when(catalog.createGame(eq(1), eq("Geography"), any())).thenReturn(g);
 
-		mvc.perform(post("/api/game/category/1/Geography").contentType(MediaType.APPLICATION_JSON)
+		mvc.perform(post("/api/game/category/1/Geography").with(admin()).contentType(MediaType.APPLICATION_JSON)
 				.content("{\"gameName\":\"Capitals\",\"questionLevels\":{\"easyLevel\":2}}"))
 				.andExpect(status().isCreated()).andExpect(jsonPath("$.gameId").value(2_000_001));
 	}
@@ -54,7 +69,7 @@ class GameManagerControllerTest {
 		g.setQuestions(java.util.List.of(q, q, q));
 		when(catalog.games()).thenReturn(java.util.List.of(g));
 
-		mvc.perform(get("/api/game/games")).andExpect(status().isOk())
+		mvc.perform(get("/api/game/games").with(admin())).andExpect(status().isOk())
 				.andExpect(jsonPath("$[0].questionCount").value(3))
 				.andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.content()
 						.string(org.hamcrest.Matchers.not(org.hamcrest.Matchers.containsString("SECRET-ANSWER"))));
@@ -64,7 +79,7 @@ class GameManagerControllerTest {
 	void notEnoughQuestionsIsUnprocessable() throws Exception {
 		when(catalog.createGame(eq(1), eq("Geography"), any())).thenThrow(new NotEnoughQuestionsException(1, 5, 2));
 
-		mvc.perform(post("/api/game/category/1/Geography").contentType(MediaType.APPLICATION_JSON).content("{}"))
+		mvc.perform(post("/api/game/category/1/Geography").with(admin()).contentType(MediaType.APPLICATION_JSON).content("{}"))
 				.andExpect(status().isUnprocessableContent())
 				.andExpect(jsonPath("$.detail").value("Asked for 5 easy questions but the topic only has 2"));
 	}
@@ -73,12 +88,23 @@ class GameManagerControllerTest {
 	void unknownGameIs404() throws Exception {
 		when(catalog.game(7)).thenThrow(new NotFoundException("No game 7"));
 
-		mvc.perform(get("/api/game/game1/7")).andExpect(status().isNotFound());
+		mvc.perform(get("/api/game/game1/7").with(admin())).andExpect(status().isNotFound());
 	}
 
 	@Test
 	void deleteNeedsNoRequestBody() throws Exception {
-		mvc.perform(delete("/api/game/deletegame/7")).andExpect(status().isNoContent());
+		mvc.perform(delete("/api/game/deletegame/7").with(admin())).andExpect(status().isNoContent());
 		verify(catalog).deleteGame(7);
+	}
+
+	@Test
+	void anyoneMayBrowseButOnlyAdminsChangeGames() throws Exception {
+		when(catalog.games()).thenReturn(java.util.List.of());
+
+		mvc.perform(get("/api/game/games")).andExpect(status().isOk());
+		mvc.perform(post("/api/game/category/1/Geography").with(player(5)).contentType(MediaType.APPLICATION_JSON)
+				.content("{}")).andExpect(status().isForbidden());
+		mvc.perform(delete("/api/game/deletegame/7").with(player(5))).andExpect(status().isForbidden());
+		mvc.perform(delete("/api/game/deletegame/7")).andExpect(status().isUnauthorized());
 	}
 }

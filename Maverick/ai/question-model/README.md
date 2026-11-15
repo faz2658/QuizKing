@@ -1,6 +1,6 @@
 # Quiz King question model
 
-A small open model (Qwen3-1.7B) fine-tuned with [Unsloth](https://github.com/unslothai/unsloth) to write
+A small open model (Qwen3-4B) fine-tuned with [Unsloth](https://github.com/unslothai/unsloth) to write
 new quiz questions in Quiz King's format. Generated questions are **drafts**: an admin reviews them on the
 admin page before they join any game, because small models can get facts wrong.
 
@@ -18,12 +18,12 @@ attribution with the data and with any model trained on it.
 
 ## 2. Train on a free GPU (Google Colab)
 
-Unsloth trains on NVIDIA GPUs; a free Colab T4 is enough for a 1.7B model.
+Unsloth trains on NVIDIA GPUs; a free Colab T4 is enough for a 4B model.
 
 1. Open [train_question_model.ipynb](train_question_model.ipynb) in Colab and pick **Runtime → T4 GPU**.
 2. Run the cells; upload `train.jsonl`, `valid.jsonl` and `prompt.json` when asked.
-3. Training takes about 20-40 minutes. Cell 6 prints sample questions and how many are valid.
-4. The last cell downloads `quiz-king-q4_k_m.gguf` (~1 GB). Put it in `models/` next to this file.
+3. Training takes about 40-60 minutes. Cell 6 prints sample questions and how many are valid.
+4. The last cell downloads `quiz-king-q4_k_m.gguf` (~2.5 GB). Put it in `models/` next to this file.
 
 ## 3. Run it with Quiz King
 

@@ -27,6 +27,7 @@
 	</properties>
 
 	<modules>
+		<module>maverick-security</module>
 		<module>Quiz-app</module>
 		<module>configuration-service</module>
 		<module>questionGenerator</module>
@@ -50,6 +51,11 @@
 				<version>${spring-cloud.version}</version>
 				<type>pom</type>
 				<scope>import</scope>
+			</dependency>
+			<dependency>
+				<groupId>com.fazeel</groupId>
+				<artifactId>maverick-security</artifactId>
+				<version>${project.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.springdoc</groupId>

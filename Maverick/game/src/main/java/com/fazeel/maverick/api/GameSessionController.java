@@ -20,6 +20,8 @@ import com.fazeel.maverick.api.Views.SessionView;
 import com.fazeel.maverick.api.Views.StartRequest;
 import com.fazeel.maverick.service.GameSessionService;
 import com.fazeel.maverick.service.GameSessionService.AnswerResult;
+import com.fazeel.maverick.auth.Callers;
+import com.fazeel.maverick.session.GameSession;
 
 import jakarta.validation.Valid;
 
@@ -43,22 +45,32 @@ public class GameSessionController {
 	@PostMapping("/sessions")
 	@ResponseStatus(HttpStatus.CREATED)
 	public SessionView start(@Valid @RequestBody StartRequest request) {
+		Callers.requireSelf(request.userId());
 		return SessionView.of(service.start(request.gameId(), request.userId()), clock.instant());
 	}
 
 	@GetMapping("/sessions/{sessionId}")
 	public SessionView session(@PathVariable String sessionId) {
-		return SessionView.of(service.get(sessionId), clock.instant());
+		return SessionView.of(owned(sessionId), clock.instant());
 	}
 
 	@PostMapping("/sessions/{sessionId}/answers")
 	public AnswerView answer(@PathVariable String sessionId, @Valid @RequestBody AnswerRequest request) {
+		owned(sessionId);
 		AnswerResult result = service.answer(sessionId, request.questionId(), request.answer());
 		return AnswerView.of(result.outcome(), SessionView.of(result.session(), clock.instant()));
 	}
 
 	@GetMapping("/sessions/{sessionId}/result")
 	public ResultView result(@PathVariable String sessionId) {
+		owned(sessionId);
 		return ResultView.of(service.result(sessionId));
+	}
+
+	/** Loads a session, refusing anyone but the player who started it. */
+	private GameSession owned(String sessionId) {
+		GameSession session = service.get(sessionId);
+		Callers.requireSelf(session.getUserId());
+		return session;
 	}
 }

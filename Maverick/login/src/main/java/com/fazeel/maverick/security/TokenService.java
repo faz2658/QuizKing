@@ -28,12 +28,22 @@ public class TokenService {
 	}
 
 	public IssuedToken issue(Account account) {
+		return sign(account.getUserId(), account.getUserName(), account.getEmail(), account.getRole().name());
+	}
+
+	/** A token for someone playing without an account: no email, role GUEST, nothing stored. */
+	public IssuedToken issueGuest(int guestId, String name) {
+		return sign(guestId, name, "", GUEST);
+	}
+
+	public static final String GUEST = "GUEST";
+
+	private IssuedToken sign(int userId, String name, String email, String role) {
 		Instant now = clock.instant();
 		Instant expiresAt = now.plus(lifetime);
 		JwtClaimsSet claims = JwtClaimsSet.builder().issuer(ISSUER).issuedAt(now).expiresAt(expiresAt)
-				.subject(String.valueOf(account.getUserId())).claim("name", account.getUserName())
-				.claim("email", account.getEmail()).claim("roles", java.util.List.of(account.getRole().name()))
-				.build();
+				.subject(String.valueOf(userId)).claim("name", name).claim("email", email)
+				.claim("roles", java.util.List.of(role)).build();
 		String token = encoder.encode(JwtEncoderParameters.from(JwsHeader.with(MacAlgorithm.HS256).build(), claims))
 				.getTokenValue();
 		return new IssuedToken(token, expiresAt);

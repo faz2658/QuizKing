@@ -34,13 +34,23 @@ describe('AuthService', () => {
     expect(TestBed.runInInjectionContext(() => new AuthService()).isLoggedIn()).toBe(false);
   });
 
-  it('guests get a large id that cannot clash with real accounts', () => {
-    auth.playAsGuest('  Sam ');
+  it('guests get a server-issued token', () => {
+    auth.playAsGuest('  Sam ').subscribe();
+    const req = http.expectOne('/api/v1/auth/guest');
+    expect(req.request.body).toEqual({ userName: 'Sam' });
+    req.flush({ token: 'guest-jwt', tokenType: 'Bearer', expiresAt: new Date(Date.now() + 60_000).toISOString(),
+      user: { userId: 912_345_678, userName: 'Sam', email: '', role: 'GUEST' } });
 
-    expect(auth.user()?.userName).toBe('Sam');
-    expect(auth.user()!.userId).toBeGreaterThanOrEqual(900_000_000);
-    expect(auth.token()).toBeNull();
+    expect(auth.token()).toBe('guest-jwt');
+    expect(auth.user()?.role).toBe('GUEST');
     auth.logout();
     expect(auth.isLoggedIn()).toBe(false);
+  });
+
+  it('drops sessions saved without a token by older versions', () => {
+    localStorage.setItem('maverick.session', JSON.stringify({ token: null, expiresAt: null,
+      user: { userId: 900_000_001, userName: 'Old guest', email: '', role: 'GUEST' } }));
+
+    expect(TestBed.runInInjectionContext(() => new AuthService()).isLoggedIn()).toBe(false);
   });
 });
