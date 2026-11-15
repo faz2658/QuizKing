@@ -1,0 +1,23 @@
+# Build output
+target/
+dist/
+build/
+.angular/
+coverage/
+node_modules/
+
+# Logs & crash dumps
+*.log
+logfile*
+hs_err_pid*.log
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+.settings/
+.metadata/
+.factorypath
+.DS_Store
