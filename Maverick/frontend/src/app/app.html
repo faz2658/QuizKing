@@ -14,6 +14,9 @@
         @if (auth.isAdmin()) { <a routerLink="/admin" routerLinkActive="active">Create</a> }
       </nav>
       <div class="spacer"></div>
+      @if (installer.available()) {
+        <button type="button" class="btn btn-ghost install" (click)="installer.install()" title="Install Quiz King on this device">📲 Install</button>
+      }
       <button type="button" class="icon-btn" [attr.aria-pressed]="fx.settings().sound" [attr.aria-label]="fx.settings().sound ? 'Sound on' : 'Sound off'"
         [title]="fx.settings().sound ? 'Sound on' : 'Sound off'" (click)="fx.toggle('sound')">{{ fx.settings().sound ? '🔊' : '🔇' }}</button>
       <button type="button" class="icon-btn" [attr.aria-pressed]="fx.settings().vibration" [attr.aria-label]="fx.settings().vibration ? 'Vibration on' : 'Vibration off'"
