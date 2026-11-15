@@ -6,12 +6,12 @@ import { TokenResponse, User } from './models';
 const STORAGE_KEY = 'maverick.session';
 
 interface StoredSession {
-  token: string | null;
-  expiresAt: string | null;
+  token: string;
+  expiresAt: string;
   user: User;
 }
 
-/** Current player. Either a logged-in account (with a JWT) or a local guest. */
+/** Current player: an account or a guest, each with a JWT from the login service. */
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   private readonly http = inject(HttpClient);
@@ -32,10 +32,11 @@ export class AuthService {
       .pipe(tap((t) => this.store(t)));
   }
 
-  /** Plays without an account. Guest ids are large random numbers so they never clash with real accounts. */
-  playAsGuest(name: string): void {
-    const userId = 900_000_000 + Math.floor(Math.random() * 99_999_999);
-    this.save({ token: null, expiresAt: null, user: { userId, userName: name.trim() || 'Guest', email: '', role: 'GUEST' } });
+  /** Plays without an account: the server hands out a guest token (no account is stored). */
+  playAsGuest(name: string): Observable<TokenResponse> {
+    return this.http
+      .post<TokenResponse>('/api/v1/auth/guest', { userName: name.trim() || 'Guest' })
+      .pipe(tap((t) => this.store(t)));
   }
 
   logout(): void {
@@ -66,7 +67,8 @@ export class AuthService {
         return null;
       }
       const s = JSON.parse(raw) as StoredSession;
-      if (s.expiresAt && new Date(s.expiresAt).getTime() < Date.now()) {
+      // Every API call needs a token now; sessions saved by older versions (guests without one) start over
+      if (!s.token || (s.expiresAt && new Date(s.expiresAt).getTime() < Date.now())) {
         localStorage.removeItem(STORAGE_KEY);
         return null;
       }

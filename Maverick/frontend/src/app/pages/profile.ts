@@ -6,12 +6,13 @@ import { ReportsApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { GameMode, GameReport, UserSummary } from '../core/models';
+import { CountUp } from '../motion/count-up';
 
 const MODE_LABEL: Record<GameMode, string> = { SINGLE: 'Timed', MULTI: 'Multiplayer', ADAPTIVE: 'Adaptive' };
 
 @Component({
   selector: 'mv-profile',
-  imports: [DatePipe],
+  imports: [DatePipe, CountUp],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <h1>My stats</h1>
@@ -20,9 +21,9 @@ const MODE_LABEL: Record<GameMode, string> = { SINGLE: 'Timed', MULTI: 'Multipla
         <div class="alert" role="alert">{{ d.error }}</div>
       } @else if (d.summary; as s) {
         <div class="tiles">
-          <div class="card tile"><span class="muted">Games played</span><strong>{{ s.gamesPlayed }}</strong></div>
-          <div class="card tile"><span class="muted">Average accuracy</span><strong>{{ s.averageAccuracy }}%</strong></div>
-          <div class="card tile"><span class="muted">Multiplayer wins</span><strong>{{ s.multiplayerWins }}</strong></div>
+          <div class="card tile"><span class="muted">Games played</span><strong><mv-count-up [value]="s.gamesPlayed" /></strong></div>
+          <div class="card tile"><span class="muted">Average accuracy</span><strong><mv-count-up [value]="s.averageAccuracy" suffix="%" /></strong></div>
+          <div class="card tile"><span class="muted">Multiplayer wins</span><strong><mv-count-up [value]="s.multiplayerWins" /></strong></div>
         </div>
 
         <div class="modes">

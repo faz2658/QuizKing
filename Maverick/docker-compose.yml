@@ -9,6 +9,8 @@ x-service: &service
     CONFIG_SERVER_URL: http://config:8083
     KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     GAME_MANAGER_URL: http://game-manager:9091
+    # Every service checks the tokens the login service signs with this secret
+    MAVERICK_JWT_SECRET: ${MAVERICK_JWT_SECRET:?set MAVERICK_JWT_SECRET (32+ characters)}
   depends_on:
     kafka:
       condition: service_healthy
@@ -19,11 +21,13 @@ services:
   # ---- infrastructure ----------------------------------------------------------------
   mongo:
     image: mongo:8.0
+    restart: unless-stopped
     volumes: [mongo-data:/data/db]
     ports: ["27017:27017"]
 
   neo4j:
     image: neo4j:5
+    restart: unless-stopped
     environment:
       NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:-maverick-dev-password}
     volumes: [neo4j-data:/data]
@@ -31,6 +35,7 @@ services:
 
   mysql:
     image: mysql:8.4
+    restart: unless-stopped
     environment:
       MYSQL_DATABASE: quizzApp
       MYSQL_USER: maverick
@@ -44,6 +49,7 @@ services:
 
   kafka:
     image: apache/kafka:4.1.0
+    restart: unless-stopped
     environment:
       KAFKA_NODE_ID: 1
       KAFKA_PROCESS_ROLES: broker,controller
@@ -65,11 +71,13 @@ services:
 
   prometheus:
     image: prom/prometheus:v3.5.0
+    restart: unless-stopped
     volumes: [./grafana/prometheus.yml:/etc/prometheus/prometheus.yml:ro]
     ports: ["9190:9090"]
 
   grafana:
     image: grafana/grafana:12.1.0
+    restart: unless-stopped
     environment:
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-maverick-dev-password}
     ports: ["3000:3000"]
@@ -97,6 +105,8 @@ services:
       MONGODB_URI: mongodb://mongo:27017/questiondb
       # Fills an empty question bank from Open Trivia DB (~5,000 questions, takes ~10 minutes)
       OPENTDB_IMPORT_ON_START: "true"
+      # Set to http://question-model:8080 when running with --profile ai (see ai/question-model/README.md)
+      AI_MODEL_URL: ${AI_MODEL_URL:-}
 
   game-manager:
     <<: *service
@@ -180,6 +190,19 @@ services:
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/Game_Reports
+
+  # Fine-tuned question model (optional): docker compose --profile ai up -d
+  # Needs ai/question-model/models/quiz-king-q4_k_m.gguf, produced by the Colab notebook.
+  question-model:
+    profiles: [ai]
+    image: ghcr.io/ggml-org/llama.cpp:server
+    restart: unless-stopped
+    volumes: [./ai/question-model/models:/models:ro]
+    command: ["-m", "/models/quiz-king-q4_k_m.gguf", "--jinja", "--host", "0.0.0.0", "--port", "8080", "-c", "2048", "--alias", "quiz-king"]
+    deploy:
+      resources:
+        limits:
+          memory: 5g
 
   frontend:
     build: ./frontend

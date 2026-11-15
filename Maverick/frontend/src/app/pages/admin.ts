@@ -7,11 +7,12 @@ import { CatalogApi, QuestionBankApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { Category, ImportStatus, TopicStats } from '../core/models';
+import { AiDrafts } from './ai-drafts';
 
 /** Creates a game from a topic's question bank in the game manager. */
 @Component({
   selector: 'mv-admin',
-  imports: [FormsModule],
+  imports: [FormsModule, AiDrafts],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <h1>Question bank</h1>
@@ -51,6 +52,8 @@ import { Category, ImportStatus, TopicStats } from '../core/models';
       }
     </section>
 
+    <mv-ai-drafts [categories]="categories()" />
+
     <h1>Create a game</h1>
     <form class="card stack form" (ngSubmit)="create()">
       <div class="two">
@@ -63,7 +66,7 @@ import { Category, ImportStatus, TopicStats } from '../core/models';
         <label class="field">Topic
           <select class="input" name="topic" [(ngModel)]="topic" required [disabled]="!topics().length">
             <option value="" disabled>Choose…</option>
-            @for (t of topics(); track t.topicId) { <option [value]="t.topicName">{{ t.topicName }} ({{ t.questions?.length ?? 0 }} questions)</option> }
+            @for (t of topics(); track t.topicId) { <option [value]="t.topicName">{{ t.topicName }} ({{ t.questionCount }} questions)</option> }
           </select>
         </label>
       </div>

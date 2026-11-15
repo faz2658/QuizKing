@@ -6,6 +6,7 @@ import { AuthService } from '../core/auth.service';
 import { SessionView } from '../core/models';
 import { QuizAdapter, QuizRunner } from '../core/quiz-runner';
 import { QuizStage } from '../ui/quiz-stage';
+import { CountUp } from '../motion/count-up';
 
 export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number): QuizAdapter<SessionView> {
   return {
@@ -24,7 +25,7 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
 
 @Component({
   selector: 'mv-play',
-  imports: [QuizStage, RouterLink],
+  imports: [QuizStage, RouterLink, CountUp],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="wrap">
@@ -43,7 +44,7 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
           @if (runner.session(); as s) {
             <div class="hud">
               <div><span class="muted">Game</span><strong>{{ s.gameName }}</strong></div>
-              <div><span class="muted">Score</span><strong class="score">{{ s.score }}</strong></div>
+              <div><span class="muted">Score</span><strong class="score"><mv-count-up [value]="s.score" [duration]="600" /></strong></div>
               <div class="progress" role="progressbar" [attr.aria-valuenow]="s.answeredQuestions" aria-valuemin="0" [attr.aria-valuemax]="s.totalQuestions">
                 <span [style.width.%]="100 * s.answeredQuestions / s.totalQuestions"></span>
               </div>
@@ -67,9 +68,9 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
     .hud { display: grid; grid-template-columns: 1fr auto; gap: 8px 24px; align-items: end; margin-bottom: 16px; }
     .hud div { display: flex; flex-direction: column; }
     .hud div:nth-child(2) { text-align: right; }
-    .score { font-size: 1.8rem; font-weight: 850; color: var(--accent); font-variant-numeric: tabular-nums; }
+    .score { font-size: 2.2rem; font-weight: 900; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
     .progress { grid-column: 1 / -1; height: 8px; border-radius: 999px; background: var(--bg-sunken); overflow: hidden; }
-    .progress span { display: block; height: 100%; background: linear-gradient(90deg, var(--accent-2), var(--accent)); transition: width 0.4s ease; }
+    .progress span { display: block; height: 100%; background: linear-gradient(90deg, var(--accent-2), var(--pink), var(--accent)); box-shadow: 0 0 14px color-mix(in srgb, var(--pink) 60%, transparent); transition: width 0.4s ease; }
     .spinner { width: 42px; height: 42px; border-radius: 50%; border: 4px solid var(--bg-sunken); border-top-color: var(--accent); animation: spin 0.8s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
   `,

@@ -6,11 +6,14 @@ import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { MatchView } from '../core/models';
 import { TimerRing } from '../ui/timer-ring';
+import { CountUp } from '../motion/count-up';
+import { DecryptText } from '../motion/decrypt-text';
+import { Sparks } from '../motion/sparks';
 
 /** Fastest finger first. The match is polled every second; the server decides who wins each question. */
 @Component({
   selector: 'mv-match',
-  imports: [RouterLink, TimerRing],
+  imports: [RouterLink, TimerRing, CountUp, DecryptText],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (error()) {
@@ -31,11 +34,11 @@ import { TimerRing } from '../ui/timer-ring';
                 <span class="count">Question {{ q.number }}<span class="muted"> / {{ m.totalQuestions }}</span></span>
                 <mv-timer-ring [seconds]="secondsLeft()" [fraction]="secondsLeft() / m.secondsPerQuestion" />
               </header>
-              <h2 class="stem">{{ q.stem }}</h2>
+              <h2 class="stem"><mv-decrypt-text [text]="q.stem" /></h2>
               <div class="options">
                 @for (o of q.options; track o) {
                   <button type="button" class="option" [class.mine]="q.yourAnswer === o" [disabled]="!!q.yourAnswer || sending()"
-                    (click)="answer(q.questionId, o)">{{ o }}</button>
+                    (click)="answer(q.questionId, o, $any($event.currentTarget))">{{ o }}</button>
                 }
               </div>
               <p class="feedback" aria-live="polite">
@@ -57,7 +60,7 @@ import { TimerRing } from '../ui/timer-ring';
           <h2>Scoreboard</h2>
           <ol>
             @for (p of m.standings; track p.userId; let i = $index) {
-              <li [class.me]="p.userId === me"><span class="rank">{{ i + 1 }}</span><span class="who">{{ p.userId === me ? 'You' : 'Player ' + (p.userId % 10000) }}</span><strong>{{ p.score }}</strong></li>
+              <li [class.me]="p.userId === me"><span class="rank">{{ i + 1 }}</span><span class="who">{{ p.userId === me ? 'You' : 'Player ' + (p.userId % 10000) }}</span><strong><mv-count-up [value]="p.score" [duration]="500" /></strong></li>
             }
           </ol>
         </aside>
@@ -115,11 +118,16 @@ export class MatchPage implements OnInit {
     this.subs.add(timer(0, 250).subscribe(() => this.secondsLeft.set(Math.max(0, Math.ceil((this.deadline - Date.now()) / 1000)))));
   }
 
-  protected answer(questionId: number, option: string): void {
+  private readonly sparks = inject(Sparks);
+
+  protected answer(questionId: number, option: string, button?: HTMLElement): void {
     this.sending.set(true);
     this.api.answer(this.matchId(), this.me, questionId, option).subscribe({
       next: (a) => {
         this.sending.set(false);
+        if (a.wonQuestion && button) {
+          this.sparks.burst(button, 'var(--accent)', 16);
+        }
         this.flash.set(a.wonQuestion ? { good: true, text: 'Fastest finger! +points' } : a.correct ? { good: true, text: 'Correct, but someone was faster.' } : { good: false, text: 'Wrong answer (−5).' });
         this.show(a.match);
       },

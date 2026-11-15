@@ -101,4 +101,19 @@ class AuthFlowTest {
 
 		assertThat(((Map<String, Object>) r.get("user")).get("role")).isEqualTo("ADMIN");
 	}
+
+	@Test
+	@SuppressWarnings("unchecked")
+	void guestsGetATokenButNoAccount() {
+		long before = accounts.count();
+		Map<String, Object> guest = postForMap("/api/v1/auth/guest", Map.of("userName", "  Visitor  "));
+		Map<String, Object> user = (Map<String, Object>) guest.get("user");
+
+		assertThat((String) guest.get("token")).isNotBlank();
+		assertThat(user.get("role")).isEqualTo("GUEST");
+		assertThat(user.get("userName")).isEqualTo("Visitor");
+		assertThat((Integer) user.get("userId")).isGreaterThanOrEqualTo(AuthController.GUEST_ID_BASE);
+		assertThat(accounts.count()).isEqualTo(before);
+		assertThat(post("/api/v1/auth/guest", Map.of("userName", " "))).isEqualTo(400);
+	}
 }

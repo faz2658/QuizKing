@@ -92,7 +92,12 @@ public class MatchFactory {
 		if (options.size() < 2 || correct == null) {
 			return java.util.Optional.empty();
 		}
-		Collections.shuffle(options, random);
+		if (options.size() == 2 && options.stream().map(o -> o.toLowerCase(java.util.Locale.ROOT)).sorted().toList()
+				.equals(List.of("false", "true"))) {
+			options = new ArrayList<>(List.of("True", "False")); // keep the natural order
+		} else {
+			Collections.shuffle(options, random);
+		}
 		return java.util.Optional.of(new MatchQuestion(q.questionId(), q.questionStem().trim(), options, correct));
 	}
 

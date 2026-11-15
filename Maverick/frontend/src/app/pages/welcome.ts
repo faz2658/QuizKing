@@ -1,34 +1,52 @@
-import { ChangeDetectionStrategy, Component, inject, input, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { catchError, of } from 'rxjs';
+import { QuestionBankApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
+import { TopicStats } from '../core/models';
+import { BlurText } from '../motion/blur-text';
+import { CountUp } from '../motion/count-up';
+import { Tilt } from '../motion/tilt';
 
 type Tab = 'login' | 'register' | 'guest';
 
 @Component({
   selector: 'mv-welcome',
-  imports: [FormsModule],
+  imports: [FormsModule, BlurText, CountUp, Tilt],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="hero">
-      <div class="pitch">
-        <span class="chip">Quiz arena</span>
-        <h1>Think fast. <span class="accent">Play smart.</span></h1>
-        <p class="muted lead">Timed rounds where harder questions pay more, adaptive games that follow your level,
-          and fastest-finger-first battles against other players.</p>
-        <ul class="perks">
-          <li><strong>Timed</strong> · beat the clock on every question</li>
-          <li><strong>Adaptive</strong> · difficulty moves with your score</li>
-          <li><strong>Multiplayer</strong> · first correct answer takes the points</li>
-        </ul>
-      </div>
+      <span class="badge fade-up"><span class="dot"></span>New questions every game</span>
+      <h1 class="display"><mv-blur-text text="Think fast. Play *smart.*" /></h1>
+      <p class="lead muted fade-up" style="animation-delay: 450ms">
+        Timed rounds where harder questions pay more, adaptive games that follow your level,
+        and fastest-finger battles against other players.
+      </p>
 
-      <div class="card panel">
-        <div class="tabs" role="tablist">
+      <div class="stats fade-up" style="animation-delay: 600ms">
+        <div><strong><mv-count-up [value]="questionCount()" [duration]="1400" />+</strong><span class="muted">questions</span></div>
+        <div><strong><mv-count-up [value]="topicCount()" [duration]="1400" /></strong><span class="muted">topics</span></div>
+        <div><strong>3</strong><span class="muted">ways to play</span></div>
+      </div>
+    </section>
+
+    <section class="split">
+      <ul class="modes">
+        @for (m of modes; track m.title; let i = $index) {
+          <li class="card spotlight fade-up" mvTilt="6" [style.animation-delay.ms]="700 + i * 120">
+            <span class="icon" aria-hidden="true">{{ m.icon }}</span>
+            <div><h3>{{ m.title }}</h3><p class="muted">{{ m.text }}</p></div>
+          </li>
+        }
+      </ul>
+
+      <div class="card panel fade-up" style="animation-delay: 800ms">
+        <div class="pill-tabs tabs" role="tablist" aria-label="Sign in options">
           @for (t of tabs; track t.id) {
-            <button type="button" role="tab" [attr.aria-selected]="tab() === t.id" [class.on]="tab() === t.id"
-              (click)="tab.set(t.id); error.set(null)">{{ t.label }}</button>
+            <button type="button" role="tab" [attr.aria-selected]="tab() === t.id" (click)="tab.set(t.id); error.set(null)">{{ t.label }}</button>
           }
         </div>
 
@@ -48,39 +66,53 @@ type Tab = 'login' | 'register' | 'guest';
               @if (tab() === 'register') { <span class="muted hint">At least 8 characters</span> }
             </label>
           } @else {
-            <p class="muted">Guests can play right away. Stats are kept for this browser only.</p>
+            <p class="muted">Jump straight in. Guest stats are kept in this browser only.</p>
           }
           @if (error()) { <div class="alert" role="alert">{{ error() }}</div> }
           <button class="btn btn-primary wide" type="submit" [disabled]="busy()">
             {{ busy() ? 'One moment…' : tab() === 'login' ? 'Log in' : tab() === 'register' ? 'Create account' : 'Start playing' }}
+            <span aria-hidden="true">→</span>
           </button>
         </form>
       </div>
     </section>
   `,
   styles: `
-    .hero { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 40px; align-items: center; padding-top: 24px; }
-    .accent { background: linear-gradient(90deg, var(--accent), var(--accent-2)); -webkit-background-clip: text; background-clip: text; color: transparent; }
-    .lead { font-size: 1.1rem; max-width: 46ch; }
-    .perks { list-style: none; padding: 0; margin: 24px 0 0; display: grid; gap: 10px; }
-    .perks li { padding: 12px 16px; border-radius: var(--radius); background: var(--bg-raised); border: 1px solid var(--border); }
-    .tabs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; padding: 4px; background: var(--bg-sunken); border-radius: 999px; margin-bottom: 20px; }
-    .tabs button { font: inherit; font-weight: 700; border: 0; background: transparent; color: var(--text-muted); padding: 9px; border-radius: 999px; cursor: pointer; }
-    .tabs button.on { background: var(--surface); color: var(--text); box-shadow: var(--shadow); }
-    .wide { justify-content: center; width: 100%; padding: 13px; }
+    .hero { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 28px 0 44px; }
+    .hero h1 { margin: 0; max-width: 14ch; }
+    .lead { font-size: clamp(1rem, 2vw, 1.2rem); max-width: 52ch; margin: 0; }
+    .stats { display: flex; gap: clamp(20px, 5vw, 56px); margin-top: 6px; }
+    .stats div { display: flex; flex-direction: column; align-items: center; }
+    .stats strong { font-size: clamp(1.6rem, 3.5vw, 2.3rem); font-weight: 850; letter-spacing: -0.03em; }
+    .split { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 28px; align-items: start; }
+    .modes { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+    .modes li { display: flex; gap: 16px; align-items: flex-start; padding: 20px; }
+    .modes h3 { margin: 0 0 4px; font-size: 1.1rem; }
+    .modes p { margin: 0; font-size: 0.95rem; }
+    .icon { font-size: 1.6rem; width: 48px; height: 48px; flex: none; display: grid; place-items: center; border-radius: 14px; background: var(--surface-strong); border: 1px solid var(--border); }
+    .panel { padding: 28px; }
+    .tabs { display: flex; width: 100%; margin-bottom: 22px; }
+    .tabs button { flex: 1; }
+    .wide { width: 100%; padding: 14px; }
     .hint { font-weight: 400; font-size: 0.8rem; }
-    @media (max-width: 860px) { .hero { grid-template-columns: 1fr; } }
+    @media (max-width: 880px) { .split { grid-template-columns: 1fr; } .panel { order: -1; } }
   `,
 })
 export class Welcome {
   private readonly auth = inject(AuthService);
   private readonly router = inject(Router);
+  private readonly bank = inject(QuestionBankApi);
   readonly next = input<string>();
 
   protected readonly tabs: { id: Tab; label: string }[] = [
     { id: 'login', label: 'Log in' },
     { id: 'register', label: 'Sign up' },
     { id: 'guest', label: 'Guest' },
+  ];
+  protected readonly modes = [
+    { icon: '⏱', title: 'Timed', text: 'Beat the clock. Easy questions are quick points, advanced ones pay triple.' },
+    { icon: '📈', title: 'Adaptive', text: 'Do well and the questions get harder. Struggle and they ease off.' },
+    { icon: '⚡', title: 'Multiplayer', text: 'Same question, same moment. First correct answer takes the points.' },
   ];
   protected readonly tab = signal<Tab>('login');
   protected readonly busy = signal(false);
@@ -89,21 +121,22 @@ export class Welcome {
   protected email = '';
   protected password = '';
 
+  private readonly stats = toSignal(this.bank.stats().pipe(catchError(() => of([] as TopicStats[]))), { initialValue: [] as TopicStats[] });
+  protected readonly questionCount = computed(() => this.stats().reduce((n, t) => n + t.questions, 0));
+  protected readonly topicCount = computed(() => this.stats().length);
+
   protected submit(): void {
     this.error.set(null);
-    if (this.tab() === 'guest') {
-      this.auth.playAsGuest(this.userName);
-      this.done();
-      return;
-    }
     if (this.tab() === 'register' && this.password.length < 8) {
       this.error.set('The password needs at least 8 characters.');
       return;
     }
     this.busy.set(true);
-    const call = this.tab() === 'login'
-      ? this.auth.login(this.email, this.password)
-      : this.auth.register(this.userName, this.email, this.password);
+    const call = this.tab() === 'guest'
+      ? this.auth.playAsGuest(this.userName)
+      : this.tab() === 'login'
+        ? this.auth.login(this.email, this.password)
+        : this.auth.register(this.userName, this.email, this.password);
     call.subscribe({
       next: () => this.done(),
       error: (e) => {

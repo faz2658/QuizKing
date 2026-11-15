@@ -17,6 +17,10 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestClientException;
 
+import com.fazeel.maverick.ai.AiUnavailableException;
+import com.fazeel.maverick.ai.DraftQuestion;
+import com.fazeel.maverick.ai.DraftService;
+import com.fazeel.maverick.ai.DraftService.GenerationResult;
 import com.fazeel.maverick.bank.InvalidQuestionException;
 import com.fazeel.maverick.bank.NotFoundException;
 import com.fazeel.maverick.bank.QuestionBankService;
@@ -32,10 +36,44 @@ public class QuestionBankController {
 
 	private final QuestionBankService bank;
 	private final OpenTriviaImporter importer;
+	private final DraftService drafts;
 
-	public QuestionBankController(QuestionBankService bank, OpenTriviaImporter importer) {
+	public QuestionBankController(QuestionBankService bank, OpenTriviaImporter importer, DraftService drafts) {
 		this.bank = bank;
 		this.importer = importer;
+		this.drafts = drafts;
+	}
+
+	public record GenerateRequest(int categoryId, String topicName, int level, boolean trueFalse, int count) {
+	}
+
+	/** Whether a question model is configured. */
+	@GetMapping("/ai/status")
+	public java.util.Map<String, Boolean> aiStatus() {
+		return java.util.Map.of("available", drafts.available());
+	}
+
+	/** Asks the question model for new questions; they are queued as drafts for review. */
+	@PostMapping("/ai/drafts")
+	public GenerationResult generateDrafts(@RequestBody GenerateRequest r) {
+		return drafts.generate(r.categoryId(), r.topicName(), r.level(), r.trueFalse(), r.count());
+	}
+
+	@GetMapping("/ai/drafts")
+	public List<DraftQuestion> pendingDrafts() {
+		return drafts.pending();
+	}
+
+	/** Approves a draft, optionally with corrections in the body; it then joins its topic's games. */
+	@PostMapping("/ai/drafts/{draftId}/approve")
+	public Questions approveDraft(@PathVariable String draftId, @RequestBody(required = false) Questions edited) {
+		return drafts.approve(draftId, edited);
+	}
+
+	@DeleteMapping("/ai/drafts/{draftId}")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void rejectDraft(@PathVariable String draftId) {
+		drafts.reject(draftId);
 	}
 
 	/** Starts importing Open Trivia DB (about 10 minutes); poll the GET endpoint for progress. */
@@ -121,6 +159,11 @@ public class QuestionBankController {
 	@ExceptionHandler(InvalidQuestionException.class)
 	ProblemDetail invalid(InvalidQuestionException e) {
 		return ProblemDetail.forStatusAndDetail(HttpStatus.UNPROCESSABLE_CONTENT, e.getMessage());
+	}
+
+	@ExceptionHandler(AiUnavailableException.class)
+	ProblemDetail aiUnavailable(AiUnavailableException e) {
+		return ProblemDetail.forStatusAndDetail(HttpStatus.SERVICE_UNAVAILABLE, e.getMessage());
 	}
 
 	@ExceptionHandler(RestClientException.class)

@@ -15,6 +15,7 @@ import com.fazeel.maverick.api.Views.AnswerView;
 import com.fazeel.maverick.api.Views.MatchView;
 import com.fazeel.maverick.match.MatchService;
 import com.fazeel.maverick.match.MatchService.AnswerResult;
+import com.fazeel.maverick.auth.Callers;
 
 import jakarta.validation.Valid;
 
@@ -33,11 +34,13 @@ public class MatchController {
 
 	@GetMapping("/{matchId}")
 	public MatchView match(@PathVariable String matchId, @RequestParam int userId) {
+		Callers.requireSelf(userId);
 		return MatchView.of(service.get(matchId, userId), userId, clock.instant());
 	}
 
 	@PostMapping("/{matchId}/answers")
 	public AnswerView answer(@PathVariable String matchId, @Valid @RequestBody AnswerRequest request) {
+		Callers.requireSelf(request.userId());
 		AnswerResult r = service.answer(matchId, request.userId(), request.questionId(), request.answer());
 		return new AnswerView(r.outcome().correct(), r.outcome().wonQuestion(), r.outcome().score(),
 				MatchView.of(r.match(), request.userId(), clock.instant()));

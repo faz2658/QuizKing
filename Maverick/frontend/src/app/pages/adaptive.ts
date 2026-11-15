@@ -6,12 +6,13 @@ import { AuthService } from '../core/auth.service';
 import { AdaptiveSession } from '../core/models';
 import { QuizAdapter, QuizRunner } from '../core/quiz-runner';
 import { QuizStage } from '../ui/quiz-stage';
+import { CountUp } from '../motion/count-up';
 
 export const LEVEL_NAMES = ['', 'Easy', 'Medium', 'Advanced'];
 
 @Component({
   selector: 'mv-adaptive',
-  imports: [QuizStage, RouterLink],
+  imports: [QuizStage, RouterLink, CountUp],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <div class="wrap">
@@ -28,7 +29,7 @@ export const LEVEL_NAMES = ['', 'Easy', 'Medium', 'Advanced'];
           @if (runner.session(); as s) {
             <section class="card center done">
               <span class="chip">{{ s.gameName }} · adaptive</span>
-              <h1>{{ s.score }} points</h1>
+              <h1><mv-count-up [value]="s.score" [duration]="1200" /> points</h1>
               <p class="muted">You answered {{ s.answered }} questions and finished on <strong>{{ levelName(s.level) }}</strong>.
                 Best level reached: <strong>{{ levelName(best()) }}</strong>.</p>
               <div class="ladder" aria-hidden="true">
@@ -47,7 +48,7 @@ export const LEVEL_NAMES = ['', 'Easy', 'Medium', 'Advanced'];
               <div class="ladder" role="img" [attr.aria-label]="'Current level ' + levelName(s.level)">
                 @for (l of [1, 2, 3]; track l) { <span [class.on]="l <= s.level" [class.current]="l === s.level">{{ levelName(l) }}</span> }
               </div>
-              <div class="score"><span class="muted">Score</span> <strong>{{ s.score }}</strong></div>
+              <div class="score"><span class="muted">Score</span> <strong><mv-count-up [value]="s.score" [duration]="600" /></strong></div>
             </div>
             @if (levelNote()) { <p class="level-note" aria-live="polite">{{ levelNote() }}</p> }
             @if (runner.question(); as q) {

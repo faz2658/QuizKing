@@ -81,7 +81,19 @@ player matcher --players-matched.t--> multiplayer engine
 engines --Results3.t / multiplayerresult.ts / AdaptiveResult.t--> reporting, recommendations
 ```
 
-## Configuration
+## Security
+
+The login service signs a JWT (HS256, `MAVERICK_JWT_SECRET`) for accounts and for guests (`POST /api/v1/auth/guest`,
+no account stored). Every other service checks that token itself through the shared `maverick-security` module:
+
+- the player is always the token's subject; a request for another player's session, match, lobby, stats,
+  recommendations or profile gets 403 (admins may act for anyone)
+- question bank, AI drafts and every game change (create, update, delete) are admin-only; admins come from
+  `MAVERICK_ADMIN_EMAILS`
+- public without a token: browsing games (`GET /api/game/**`) and topic counts (`/api/v1/question-generator/stats`)
+- the full game pools the engines fetch (`/api/game/game1/*`, `/api/game/games/mp/*`) are blocked in nginx
+- `/actuator/**` is only reachable inside the Docker network
+
 
 All settings have local defaults and can be overridden with environment variables: `MONGODB_URI`,
 `KAFKA_BOOTSTRAP_SERVERS` (default `localhost:19092`), `EUREKA_URL`, `CONFIG_SERVER_URL`, `GAME_MANAGER_URL`,

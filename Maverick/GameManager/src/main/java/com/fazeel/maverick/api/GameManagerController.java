@@ -13,6 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fazeel.maverick.api.Summaries.CategorySummary;
+import com.fazeel.maverick.api.Summaries.GameSummary;
 import com.fazeel.maverick.catalog.GameCatalogService;
 import com.fazeel.maverick.domain.Category;
 import com.fazeel.maverick.domain.Game;
@@ -35,8 +37,8 @@ public class GameManagerController {
 	// categories / question bank
 
 	@GetMapping("/categories")
-	public List<Category> categories() {
-		return catalog.categories();
+	public List<CategorySummary> categories() {
+		return catalog.categories().stream().map(CategorySummary::of).toList();
 	}
 
 	@PostMapping("/category")
@@ -48,13 +50,14 @@ public class GameManagerController {
 
 	@PostMapping("/category/{categoryId}/{topicName}")
 	@ResponseStatus(HttpStatus.CREATED)
-	public Game createGame(@PathVariable int categoryId, @PathVariable String topicName, @RequestBody Game request) {
-		return catalog.createGame(categoryId, topicName, request);
+	public GameSummary createGame(@PathVariable int categoryId, @PathVariable String topicName,
+			@RequestBody Game request) {
+		return GameSummary.of(catalog.createGame(categoryId, topicName, request));
 	}
 
 	@GetMapping("/games")
-	public List<Game> games() {
-		return catalog.games();
+	public List<GameSummary> games() {
+		return catalog.games().stream().map(GameSummary::of).toList();
 	}
 
 	@GetMapping("/game1/{gameId}")
@@ -63,18 +66,18 @@ public class GameManagerController {
 	}
 
 	@GetMapping("/category/{categoryId}/{topicName}")
-	public List<Game> gamesInTopic(@PathVariable int categoryId, @PathVariable String topicName) {
-		return catalog.gamesInTopic(categoryId, topicName);
+	public List<GameSummary> gamesInTopic(@PathVariable int categoryId, @PathVariable String topicName) {
+		return catalog.gamesInTopic(categoryId, topicName).stream().map(GameSummary::of).toList();
 	}
 
 	@GetMapping("/gamesNameStartsWith/{prefix}")
-	public List<Game> gamesNamedLike(@PathVariable String prefix) {
-		return catalog.gamesNamedLike(prefix);
+	public List<GameSummary> gamesNamedLike(@PathVariable String prefix) {
+		return catalog.gamesNamedLike(prefix).stream().map(GameSummary::of).toList();
 	}
 
 	@GetMapping("/games/{gameName}")
-	public List<Game> gamesNamed(@PathVariable String gameName) {
-		return catalog.gamesNamed(gameName);
+	public List<GameSummary> gamesNamed(@PathVariable String gameName) {
+		return catalog.gamesNamed(gameName).stream().map(GameSummary::of).toList();
 	}
 
 	@PutMapping("/updategame/{gameId}")
@@ -92,14 +95,14 @@ public class GameManagerController {
 
 	@PostMapping("/category/mp/{categoryId}/{topicName}")
 	@ResponseStatus(HttpStatus.CREATED)
-	public MultiPlayerGame createMultiPlayerGame(@PathVariable int categoryId, @PathVariable String topicName,
+	public GameSummary createMultiPlayerGame(@PathVariable int categoryId, @PathVariable String topicName,
 			@RequestBody MultiPlayerGame request) {
-		return catalog.createMultiPlayerGame(categoryId, topicName, request);
+		return GameSummary.of(catalog.createMultiPlayerGame(categoryId, topicName, request));
 	}
 
 	@GetMapping("/games/mp")
-	public List<MultiPlayerGame> multiPlayerGames() {
-		return catalog.multiPlayerGames();
+	public List<GameSummary> multiPlayerGames() {
+		return catalog.multiPlayerGames().stream().map(GameSummary::of).toList();
 	}
 
 	@GetMapping("/games/mp/{gameId}")
@@ -108,7 +111,7 @@ public class GameManagerController {
 	}
 
 	@GetMapping("/mp/category/{categoryId}/{topicName}")
-	public List<MultiPlayerGame> multiPlayerGamesInTopic(@PathVariable int categoryId, @PathVariable String topicName) {
-		return catalog.multiPlayerGamesInTopic(categoryId, topicName);
+	public List<GameSummary> multiPlayerGamesInTopic(@PathVariable int categoryId, @PathVariable String topicName) {
+		return catalog.multiPlayerGamesInTopic(categoryId, topicName).stream().map(GameSummary::of).toList();
 	}
 }

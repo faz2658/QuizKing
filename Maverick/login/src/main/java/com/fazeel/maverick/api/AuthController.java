@@ -67,6 +67,27 @@ public class AuthController {
 		return token(accounts.authenticate(r.email(), r.password()));
 	}
 
+	public record GuestRequest(@NotBlank @Size(max = 60) String userName) {
+
+		public GuestRequest {
+			userName = userName == null ? null : userName.trim();
+		}
+	}
+
+	/** Lets someone play without an account. Guest ids sit far above real account ids, so they never clash. */
+	@PostMapping("/guest")
+	@ResponseStatus(HttpStatus.CREATED)
+	public TokenView guest(@Valid @RequestBody GuestRequest r) {
+		int guestId = GUEST_ID_BASE + RANDOM.nextInt(GUEST_ID_RANGE);
+		IssuedToken t = tokens.issueGuest(guestId, r.userName());
+		return new TokenView(t.value(), "Bearer", t.expiresAt(),
+				new UserView(guestId, r.userName(), "", TokenService.GUEST));
+	}
+
+	static final int GUEST_ID_BASE = 900_000_000;
+	static final int GUEST_ID_RANGE = 99_999_999;
+	private static final java.security.SecureRandom RANDOM = new java.security.SecureRandom();
+
 	@GetMapping("/me")
 	public UserView me(@AuthenticationPrincipal Jwt jwt) {
 		return accounts.find(Integer.parseInt(jwt.getSubject())).map(UserView::of)

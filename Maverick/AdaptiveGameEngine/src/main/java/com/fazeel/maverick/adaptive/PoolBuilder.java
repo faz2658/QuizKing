@@ -57,7 +57,12 @@ public class PoolBuilder {
 		if (options.size() < 2 || correct == null) {
 			return Optional.empty();
 		}
-		Collections.shuffle(options, random);
+		if (options.size() == 2 && options.stream().map(o -> o.toLowerCase(java.util.Locale.ROOT)).sorted().toList()
+				.equals(List.of("false", "true"))) {
+			options = new ArrayList<>(List.of("True", "False")); // keep the natural order
+		} else {
+			Collections.shuffle(options, random);
+		}
 		int level = Math.max(AdaptiveSession.MIN_LEVEL, Math.min(AdaptiveSession.MAX_LEVEL, q.questionLevel()));
 		return Optional.of(new PooledQuestion(q.questionId(), level, q.questionStem().trim(), List.copyOf(options),
 				correct));

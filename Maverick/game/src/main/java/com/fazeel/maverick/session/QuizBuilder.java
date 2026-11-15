@@ -121,6 +121,11 @@ public class QuizBuilder {
 				.toList();
 	}
 
+	static boolean isTrueFalse(List<String> options) {
+		return options.size() == 2 && options.stream().map(o -> o.toLowerCase(java.util.Locale.ROOT)).sorted().toList()
+				.equals(List.of("false", "true"));
+	}
+
 	static boolean isPlayable(Questions q) {
 		if (q == null || isBlank(q.getQuestionStem()) || isBlank(q.getCorrectAnswer())) {
 			return false;
@@ -132,7 +137,11 @@ public class QuizBuilder {
 
 	private SessionQuestion toSessionQuestion(Questions q, Difficulty d, Game game) {
 		List<String> options = new ArrayList<>(options(q));
-		Collections.shuffle(options, random);
+		if (isTrueFalse(options)) {
+			options = List.of("True", "False"); // keep the natural order
+		} else {
+			Collections.shuffle(options, random);
+		}
 		String correct = options.stream().filter(o -> GameSession.matches(o, q.getCorrectAnswer())).findFirst()
 				.orElseThrow();
 		return new SessionQuestion(q.getQuestionId(), d, q.getQuestionStem().trim(), options, correct,
