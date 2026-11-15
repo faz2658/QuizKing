@@ -45,8 +45,8 @@ class CountryCupTest {
 	}
 
 	CountryCup cup(List<GameReport> week, List<GameReport> lastWeek, Map<Integer, String> countries) {
-		when(reports.findByCompletedAtGreaterThanEqualAndCompletedAtLessThan(eq(MONDAY), any())).thenReturn(week);
-		when(reports.findByCompletedAtGreaterThanEqualAndCompletedAtLessThan(eq(MONDAY.minusSeconds(7 * 86400)), eq(MONDAY)))
+		when(reports.findCompletedBetween(eq(MONDAY), any())).thenReturn(week);
+		when(reports.findCompletedBetween(eq(MONDAY.minusSeconds(7 * 86400)), eq(MONDAY)))
 				.thenReturn(lastWeek);
 		when(names.countries(anyCollection())).thenAnswer(i -> {
 			Map<Integer, String> out = new HashMap<>();

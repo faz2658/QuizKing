@@ -18,5 +18,7 @@ public interface GameReportRepository extends MongoRepository<GameReport, String
 
 	List<GameReport> findByCompletedAtGreaterThanEqual(Instant since);
 
-	List<GameReport> findByCompletedAtGreaterThanEqualAndCompletedAtLessThan(Instant since, Instant until);
+	/** Reports completed in [since, until). Written out: a derived query can't put two conditions on one field. */
+	@org.springframework.data.mongodb.repository.Query("{ 'completedAt': { $gte: ?0, $lt: ?1 } }")
+	List<GameReport> findCompletedBetween(Instant since, Instant until);
 }
