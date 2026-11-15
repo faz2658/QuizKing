@@ -13,6 +13,16 @@ describe('API clients', () => {
     http = TestBed.inject(HttpTestingController);
   });
 
+  it('merges the game manager catalog with the engine demo games, without duplicates', () => {
+    let games: GameCard[] = [];
+    TestBed.inject(CatalogApi).games().subscribe((g) => (games = g));
+
+    http.expectOne('/api/game/games').flush([{ gameId: 7, gameName: 'Space', categoryId: 1 }]);
+    http.expectOne('/api/v1/games').flush([{ gameId: 7, gameName: 'Space', categoryId: 1 }, { gameId: 101, gameName: 'World Capitals', categoryId: 1 }]);
+
+    expect(games.map((g) => g.gameId)).toEqual([7, 101]);
+  });
+
   it('falls back to the game engine catalog when the game manager is down', () => {
     let games: GameCard[] = [];
     TestBed.inject(CatalogApi).games().subscribe((g) => (games = g));
@@ -27,6 +37,7 @@ describe('API clients', () => {
     let games: GameCard[] = [];
     TestBed.inject(CatalogApi).games().subscribe((g) => (games = g));
 
+    http.expectOne('/api/v1/games').flush([]);
     http.expectOne('/api/game/games').flush([
       { gameId: 5, gameName: 'Race', categoryId: 2, topic: { topicName: 'Rivers' }, questions: [{}, {}], gameType: { gameTypeId: 2 } },
     ]);

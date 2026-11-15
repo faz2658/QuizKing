@@ -1,6 +1,6 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Observable, catchError, map, of } from 'rxjs';
+import { Observable, catchError, forkJoin, map, of } from 'rxjs';
 import { retryWhileLoading } from './http-errors';
 import {
   AdaptiveAnswer,
@@ -51,10 +51,23 @@ function toCard(g: RawGame, mode: GameCard['mode'] = 'SINGLE'): GameCard {
 export class CatalogApi {
   private readonly http = inject(HttpClient);
 
+  /**
+   * Every solo game: the game manager's catalog plus games only the engine knows (its demo games).
+   * Either source may be down; the page still works with the other one.
+   */
   games(): Observable<GameCard[]> {
-    return this.http.get<RawGame[]>('/api/game/games').pipe(
-      map((gs) => gs.map((g) => toCard(g))),
-      catchError(() => this.http.get<RawGame[]>('/api/v1/games').pipe(map((gs) => gs.map((g) => toCard(g))))),
+    const manager = this.http.get<RawGame[]>('/api/game/games').pipe(catchError(() => of(null)));
+    const engine = this.http.get<RawGame[]>('/api/v1/games').pipe(catchError(() => of(null)));
+    return forkJoin([manager, engine]).pipe(
+      map(([m, e]) => {
+        if (m === null && e === null) {
+          throw new Error('No game service is reachable');
+        }
+        const seen = new Set<number>();
+        return [...(m ?? []), ...(e ?? [])]
+          .filter((g) => !seen.has(g.gameId) && !!seen.add(g.gameId))
+          .map((g) => toCard(g));
+      }),
     );
   }
 
