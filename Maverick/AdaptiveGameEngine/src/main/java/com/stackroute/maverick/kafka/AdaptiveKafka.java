@@ -33,6 +33,15 @@ public class AdaptiveKafka implements ResultEvents {
 		service.cacheGame(game);
 	}
 
+	/** A deleted game must disappear from the catalog; sessions already running keep their own copy. */
+	@KafkaListener(topics = "${maverick.topics.game-deleted}", properties = {
+			"spring.json.value.default.type=java.lang.Integer" })
+	public void onGameDeleted(Integer gameId) {
+		if (gameId != null) {
+			service.removeGame(gameId);
+		}
+	}
+
 	@Override
 	public void sessionCompleted(AdaptiveResult result) {
 		kafka.send(resultTopic, result.sessionId(), result);

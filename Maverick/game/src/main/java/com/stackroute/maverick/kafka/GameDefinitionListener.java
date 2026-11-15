@@ -35,4 +35,14 @@ public class GameDefinitionListener {
 				game.getQuestions() == null ? 0 : game.getQuestions().size());
 		games.save(game);
 	}
+
+	/** A deleted game must disappear from the catalog; sessions already running keep their own copy. */
+	@KafkaListener(topics = "${maverick.topics.game-deleted}", properties = {
+			"spring.json.value.default.type=java.lang.Integer" })
+	public void onGameDeleted(Integer gameId) {
+		if (gameId != null) {
+			log.info("Removing deleted game {}", gameId);
+			games.deleteById(gameId);
+		}
+	}
 }

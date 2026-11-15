@@ -39,6 +39,15 @@ public class MatchKafka implements MatchEvents {
 		service.cacheGame(game);
 	}
 
+	/** A deleted game must disappear from the catalog; sessions already running keep their own copy. */
+	@KafkaListener(topics = "${maverick.topics.game-deleted}", properties = {
+			"spring.json.value.default.type=java.lang.Integer" })
+	public void onGameDeleted(Integer gameId) {
+		if (gameId != null) {
+			service.removeGame(gameId);
+		}
+	}
+
 	@Override
 	public void matchCompleted(MultiPlayerResult result) {
 		kafka.send(resultTopic, result.matchId(), result);

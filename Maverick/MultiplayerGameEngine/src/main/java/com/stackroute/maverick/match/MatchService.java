@@ -41,6 +41,10 @@ public class MatchService {
 		games.save(game);
 	}
 
+	public void removeGame(int gameId) {
+		games.deleteById(gameId);
+	}
+
 	/** Starts the match for players found by the player matcher. Replayed events are ignored. */
 	public MultiplayerMatch start(Match match) {
 		return matches.findById(match.matchId()).orElseGet(() -> {

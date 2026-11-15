@@ -46,6 +46,10 @@ public class AdaptiveService {
 		games.save(game);
 	}
 
+	public void removeGame(int gameId) {
+		games.deleteById(gameId);
+	}
+
 	public AdaptiveSession start(int gameId, int userId) {
 		Game game = games.findById(gameId).or(() -> gameSource.fetch(gameId).map(games::save))
 				.orElseThrow(() -> new NotFoundException("No game " + gameId));
