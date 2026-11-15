@@ -6,7 +6,7 @@ spring:
   mongodb:
     uri: ${MONGODB_URI:mongodb://localhost:27017/questiondb}
   kafka:
-    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:9092}
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:19092}
     consumer:
       group-id: question-generator
       auto-offset-reset: earliest
