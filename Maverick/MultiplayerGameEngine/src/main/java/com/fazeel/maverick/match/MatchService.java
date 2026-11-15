@@ -25,15 +25,17 @@ public class MatchService {
 	private final GameSource gameSource;
 	private final MatchFactory factory;
 	private final MatchEvents events;
+	private final SeenQuestionRepository seen;
 	private final Clock clock;
 
 	public MatchService(MatchRepository matches, GameRepository games, GameSource gameSource, MatchFactory factory,
-			MatchEvents events, Clock clock) {
+			MatchEvents events, SeenQuestionRepository seen, Clock clock) {
 		this.matches = matches;
 		this.games = games;
 		this.gameSource = gameSource;
 		this.factory = factory;
 		this.events = events;
+		this.seen = seen;
 		this.clock = clock;
 	}
 
@@ -51,7 +53,16 @@ public class MatchService {
 			MultiPlayerGame game = games.findById(match.gameId())
 					.or(() -> gameSource.fetch(match.gameId()).map(games::save))
 					.orElseThrow(() -> new NotFoundException("No multiplayer game " + match.gameId()));
-			MultiplayerMatch created = factory.create(match, game, clock.instant());
+			List<Integer> ids = game.autoquestions() == null ? List.of()
+					: game.autoquestions().stream().filter(java.util.Objects::nonNull)
+							.map(MultiPlayerGame.Question::questionId).toList();
+			java.util.Map<Integer, Integer> seenBy = new java.util.HashMap<>();
+			seen.findByUserIdInAndQuestionIdIn(match.players(), ids)
+					.forEach(s -> seenBy.merge(s.questionId(), 1, Integer::sum));
+			java.time.Instant now = clock.instant();
+			MultiplayerMatch created = factory.create(match, game, now, seenBy);
+			seen.saveAll(match.players().stream().flatMap(p -> created.getQuestions().stream()
+					.map(q -> SeenQuestion.of(p, q.getQuestionId(), now))).toList());
 			log.info("Match {} started: game {} with {}", match.matchId(), match.gameId(), match.players());
 			return matches.save(created);
 		});

@@ -11,7 +11,24 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Document(collection = "multiplayer_games")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record MultiPlayerGame(@Id int gameId, String gameName, int categoryId, int timePerQuestion,
-		int scorePerQuestion, List<Question> autoquestions) {
+		int scorePerQuestion, List<Question> autoquestions, int numberOfQuestions, Level questionLevel) {
+
+	/** How many easy, medium and advanced questions a match asks. */
+	@JsonIgnoreProperties(ignoreUnknown = true)
+	public record Level(int easyLevel, int mediumLevel, int advancedLevel) {
+
+		public int total() {
+			return Math.max(0, easyLevel) + Math.max(0, mediumLevel) + Math.max(0, advancedLevel);
+		}
+
+		public int of(int level) {
+			return Math.max(0, switch (level) {
+				case 1 -> easyLevel;
+				case 2 -> mediumLevel;
+				default -> advancedLevel;
+			});
+		}
+	}
 
 	@JsonIgnoreProperties(ignoreUnknown = true)
 	public record Question(int questionId, int questionLevel, String questionStem, String option1, String option2,

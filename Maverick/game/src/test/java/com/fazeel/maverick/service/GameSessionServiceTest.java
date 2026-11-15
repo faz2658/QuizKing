@@ -33,6 +33,8 @@ import com.fazeel.maverick.domain.SinglePlayerResult;
 import com.fazeel.maverick.kafka.GameEvents;
 import com.fazeel.maverick.repository.GameRepository;
 import com.fazeel.maverick.repository.GameSessionRepository;
+import com.fazeel.maverick.repository.SeenQuestionRepository;
+import com.fazeel.maverick.session.SeenQuestion;
 import com.fazeel.maverick.session.GameSession;
 import com.fazeel.maverick.session.QuizBuilder;
 import com.fazeel.maverick.session.QuizRuleException;
@@ -48,6 +50,8 @@ class GameSessionServiceTest {
 	GameSessionRepository sessions;
 	@Mock
 	GameEvents events;
+	@Mock
+	SeenQuestionRepository seen;
 
 	MutableClock clock = new MutableClock(Instant.parse("2026-01-01T10:00:00Z"));
 	Map<String, GameSession> store = new HashMap<>();
@@ -55,7 +59,7 @@ class GameSessionServiceTest {
 
 	@BeforeEach
 	void setUp() {
-		service = new GameSessionService(games, sessions, events, new QuizBuilder(new Random(1)), clock);
+		service = new GameSessionService(games, sessions, events, seen, new QuizBuilder(new Random(1)), clock);
 		when(sessions.save(any())).thenAnswer(inv -> {
 			GameSession s = inv.getArgument(0);
 			store.put(s.getId(), s);
@@ -132,6 +136,24 @@ class GameSessionServiceTest {
 		GameSession s = service.start(5, 42);
 
 		assertThatThrownBy(() -> service.result(s.getId())).isInstanceOf(QuizRuleException.class);
+	}
+
+	@Test
+	void playersGetQuestionsTheyHaveNotSeenAndTheSessionIsRemembered() {
+		Game g = game(5, new com.fazeel.maverick.domain.GameQuestionLevel(0, 2, 0, 0), question(1, 1, "a", "a", "b"),
+				question(2, 1, "a", "a", "b"), question(3, 1, "a", "a", "b"), question(4, 1, "a", "a", "b"));
+		when(games.findById(5)).thenReturn(Optional.of(g));
+		when(seen.findByUserIdAndQuestionIdIn(org.mockito.ArgumentMatchers.eq(42), any())).thenReturn(java.util.List.of(
+				SeenQuestion.of(42, 1, clock.instant()), SeenQuestion.of(42, 2, clock.instant())));
+
+		GameSession s = service.start(5, 42);
+
+		assertThat(s.getQuestions()).extracting(SessionQuestion::getQuestionId).containsExactlyInAnyOrder(3, 4);
+		verify(seen).saveAll(org.mockito.ArgumentMatchers.argThat((Iterable<SeenQuestion> it) -> {
+			java.util.List<Integer> ids = new java.util.ArrayList<>();
+			it.forEach(x -> ids.add(x.questionId()));
+			return ids.containsAll(java.util.List.of(3, 4)) && ids.size() == 2;
+		}));
 	}
 
 	@Test

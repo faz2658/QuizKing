@@ -89,6 +89,37 @@ class QuizBuilderTest {
 	}
 
 	@Test
+	void unseenQuestionsComeFirstThenTheOnesSeenLongestAgo() {
+		Game g = game(1, new GameQuestionLevel(0, 3, 0, 0), ok(1, 1), ok(2, 1), ok(3, 1), ok(4, 1), ok(5, 1));
+		java.time.Instant t = java.time.Instant.parse("2026-01-01T00:00:00Z");
+		var seen = java.util.Map.of(1, t.plusSeconds(30), 2, t.plusSeconds(10), 3, t.plusSeconds(20));
+
+		List<SessionQuestion> qs = builder.build(g, seen);
+
+		assertThat(qs).extracting(SessionQuestion::getQuestionId).containsExactlyInAnyOrder(4, 5, 2);
+	}
+
+	@Test
+	void unseenPicksVaryBetweenPlayers() {
+		Game g = game(1, new GameQuestionLevel(0, 2, 0, 0), ok(1, 1), ok(2, 1), ok(3, 1), ok(4, 1), ok(5, 1), ok(6, 1));
+		java.util.Set<Integer> picked = new java.util.HashSet<>();
+		for (int seed = 0; seed < 10; seed++) {
+			new QuizBuilder(new Random(seed)).build(g).forEach(q -> picked.add(q.getQuestionId()));
+		}
+		assertThat(picked.size()).isGreaterThan(3);
+	}
+
+	@Test
+	void gameWithoutAMixAsksTenQuestionsFromABigPool() {
+		Questions[] many = new Questions[40];
+		for (int i = 0; i < many.length; i++) {
+			many[i] = ok(i + 1, 1 + i % 3);
+		}
+
+		assertThat(builder.build(game(1, null, many))).hasSize(QuizBuilder.DEFAULT_QUESTIONS);
+	}
+
+	@Test
 	void gameWithoutQuestionsBuildsNothing() {
 		Game g = game(1, null);
 		g.setQuestions(null);

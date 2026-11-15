@@ -3,6 +3,9 @@ package com.fazeel.maverick.match;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
+import java.util.Map;
+import java.util.TreeMap;
 import java.util.List;
 import java.util.Objects;
 import java.util.random.RandomGenerator;
@@ -16,6 +19,7 @@ public class MatchFactory {
 
 	static final int DEFAULT_SECONDS = 15;
 	static final int DEFAULT_POINTS = 10;
+	static final int DEFAULT_QUESTIONS = 10;
 
 	private final RandomGenerator random;
 
@@ -24,15 +28,55 @@ public class MatchFactory {
 	}
 
 	public MultiplayerMatch create(Match match, MultiPlayerGame game, Instant now) {
-		List<MatchQuestion> questions = new ArrayList<>();
+		return create(match, game, now, Map.of());
+	}
+
+	/**
+	 * Picks the match's questions from the game's pool: the game's level mix (or its question count,
+	 * default {@value #DEFAULT_QUESTIONS}), preferring questions that the fewest of these players have
+	 * already seen. Questions are asked from easy to advanced.
+	 *
+	 * @param seenBy how many of the match's players have already seen each question, by question id
+	 */
+	public MultiplayerMatch create(Match match, MultiPlayerGame game, Instant now, Map<Integer, Integer> seenBy) {
+		Map<Integer, List<Candidate>> byLevel = new TreeMap<>();
 		for (MultiPlayerGame.Question q : Objects.requireNonNullElse(game.autoquestions(),
 				List.<MultiPlayerGame.Question>of())) {
-			toQuestion(q).ifPresent(questions::add);
+			if (q == null) {
+				continue;
+			}
+			int level = Math.max(1, Math.min(3, q.questionLevel()));
+			toQuestion(q).ifPresent(m -> byLevel.computeIfAbsent(level, k -> new ArrayList<>()).add(new Candidate(level, m)));
 		}
-		Collections.shuffle(questions, random);
+		for (List<Candidate> level : byLevel.values()) {
+			Collections.shuffle(level, random);
+			level.sort(Comparator.comparingInt(c -> seenBy.getOrDefault(c.question().getQuestionId(), 0)));
+		}
+		MultiPlayerGame.Level mix = game.questionLevel();
+		int target = mix != null && mix.total() > 0 ? mix.total()
+				: game.numberOfQuestions() > 0 ? game.numberOfQuestions() : DEFAULT_QUESTIONS;
+		List<Candidate> picked = new ArrayList<>();
+		if (mix != null && mix.total() > 0) {
+			byLevel.forEach((level, cs) -> picked.addAll(cs.subList(0, Math.min(mix.of(level), cs.size()))));
+		}
+		// fill up (no mix, or a level ran short) with the least-seen remaining questions
+		List<Candidate> rest = byLevel.values().stream().flatMap(List::stream).filter(c -> !picked.contains(c))
+				.sorted(Comparator.comparingInt(c -> seenBy.getOrDefault(c.question().getQuestionId(), 0)))
+				.toList();
+		for (Candidate c : rest) {
+			if (picked.size() >= target) {
+				break;
+			}
+			picked.add(c);
+		}
+		List<MatchQuestion> questions = picked.stream().sorted(Comparator.comparingInt(Candidate::level))
+				.map(Candidate::question).toList();
 		return new MultiplayerMatch(match.matchId(), game.gameId(), game.gameName(), game.categoryId(),
 				match.players(), questions, game.timePerQuestion() > 0 ? game.timePerQuestion() : DEFAULT_SECONDS,
 				game.scorePerQuestion() > 0 ? game.scorePerQuestion() : DEFAULT_POINTS, now);
+	}
+
+	private record Candidate(int level, MatchQuestion question) {
 	}
 
 	private java.util.Optional<MatchQuestion> toQuestion(MultiPlayerGame.Question q) {

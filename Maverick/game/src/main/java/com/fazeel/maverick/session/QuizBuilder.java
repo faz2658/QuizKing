@@ -1,6 +1,8 @@
 package com.fazeel.maverick.session;
 
+import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Collections;
 import java.util.EnumMap;
 import java.util.List;
@@ -21,12 +23,16 @@ import com.fazeel.maverick.domain.Questions;
  * <li>Malformed questions (no stem, fewer than two options, answer not among the options) are dropped.</li>
  * <li>The game's level mix (e.g. 3 easy, 2 medium, 1 advanced) is honoured as far as questions exist;
  * if the game defines no mix every valid question is used.</li>
- * <li>Questions are asked easy first, then medium, then advanced; questions within a level and the
- * options of each question are shuffled so two players don't see the same order.</li>
+ * <li>Questions are asked easy first, then medium, then advanced; options are shuffled.</li>
+ * <li>Within a level, questions the player has never seen come first (in random order), then the ones
+ * they saw longest ago, so a player only meets a question again after running out of new ones.</li>
+ * <li>A game without a mix asks {@value #DEFAULT_QUESTIONS} questions.</li>
  * <li>Time limits and points come from the game, falling back to the {@link Difficulty} defaults.</li>
  * </ul>
  */
 public class QuizBuilder {
+
+	static final int DEFAULT_QUESTIONS = 10;
 
 	private final RandomGenerator random;
 
@@ -35,6 +41,11 @@ public class QuizBuilder {
 	}
 
 	public List<SessionQuestion> build(Game game) {
+		return build(game, Map.of());
+	}
+
+	/** @param seen when the player last saw each question, by question id */
+	public List<SessionQuestion> build(Game game, Map<Integer, Instant> seen) {
 		Map<Difficulty, List<Questions>> byLevel = new EnumMap<>(Difficulty.class);
 		for (Difficulty d : Difficulty.values()) {
 			byLevel.put(d, new ArrayList<>());
@@ -50,7 +61,11 @@ public class QuizBuilder {
 		for (Difficulty d : Difficulty.values()) {
 			List<Questions> pool = byLevel.get(d);
 			Collections.shuffle(pool, random);
-			int take = mixDefined ? Math.min(wanted(game.getQuestionLevels(), d), pool.size()) : pool.size();
+			// stable sort keeps the shuffle among equals: never seen first, then oldest sighting first
+			pool.sort(Comparator.comparing((Questions q) -> seen.get(q.getQuestionId()),
+					Comparator.nullsFirst(Comparator.naturalOrder())));
+			int take = mixDefined ? Math.min(wanted(game.getQuestionLevels(), d), pool.size())
+					: Math.min(pool.size(), Math.max(0, DEFAULT_QUESTIONS - result.size()));
 			for (Questions q : pool.subList(0, take)) {
 				result.add(toSessionQuestion(q, d, game));
 			}

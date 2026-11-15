@@ -2,7 +2,8 @@ package com.fazeel.maverick.adaptive;
 
 import java.time.Clock;
 import java.util.List;
-import java.util.Set;
+import java.time.Instant;
+import java.util.Map;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
@@ -53,9 +54,11 @@ public class AdaptiveService {
 	public AdaptiveSession start(int gameId, int userId) {
 		Game game = games.findById(gameId).or(() -> gameSource.fetch(gameId).map(games::save))
 				.orElseThrow(() -> new NotFoundException("No game " + gameId));
-		Set<Integer> alreadySeen = seen.findByUserIdAndGameId(userId, gameId).stream()
-				.map(SeenQuestion::questionId).collect(Collectors.toSet());
-		List<PooledQuestion> pool = poolBuilder.build(game, alreadySeen);
+		List<Integer> ids = game.questions() == null ? List.of()
+				: game.questions().stream().filter(java.util.Objects::nonNull).map(Game.Question::questionId).toList();
+		Map<Integer, Instant> lastSeen = seen.findByUserIdAndQuestionIdIn(userId, ids).stream()
+				.collect(Collectors.toMap(SeenQuestion::questionId, SeenQuestion::lastSeenAt, (a, b) -> a));
+		List<PooledQuestion> pool = poolBuilder.build(game, lastSeen, rules.totalQuestions());
 		AdaptiveSession session = new AdaptiveSession(UUID.randomUUID().toString(), userId, gameId, game.gameName(),
 				game.categoryId(), game.topic() == null ? 0 : game.topic().topicId(), pool, rules, clock.instant());
 		return save(session);
@@ -83,7 +86,7 @@ public class AdaptiveService {
 		}
 		AdaptiveSession saved = sessions.save(s);
 		saved.currentQuestion().ifPresent(
-				q -> seen.save(SeenQuestion.of(saved.getUserId(), saved.getGameId(), q.getQuestionId())));
+				q -> seen.save(SeenQuestion.of(saved.getUserId(), q.getQuestionId(), clock.instant())));
 		if (publish) {
 			events.sessionCompleted(toResult(saved));
 		}
