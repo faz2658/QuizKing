@@ -202,6 +202,31 @@ export interface TopicStats {
   questions: number;
 }
 
+export interface DraftQuestion {
+  id: string;
+  categoryId: number;
+  topicName: string;
+  status: 'PENDING' | 'APPROVED' | 'REJECTED';
+  createdAt: string;
+  question: {
+    questionStem: string;
+    questionLevel: number;
+    option1: string | null;
+    option2: string | null;
+    option3: string | null;
+    option4: string | null;
+    correctAnswer: string;
+  };
+}
+
+export interface GenerationResult {
+  requested: number;
+  created: number;
+  invalidReplies: number;
+  duplicates: number;
+  drafts: DraftQuestion[];
+}
+
 // ---- game manager (admin) ----
 export interface Category {
   categoryId: number;

@@ -29,6 +29,11 @@ public class QuestionGeneratorApplication {
 	}
 
 	@Bean
+	Clock clock() {
+		return Clock.systemUTC();
+	}
+
+	@Bean
 	FactQuestionGenerator factQuestionGenerator() {
 		return new FactQuestionGenerator(new SecureRandom());
 	}

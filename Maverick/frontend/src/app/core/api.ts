@@ -10,6 +10,8 @@ import {
   GameCard,
   GameMode,
   GameReport,
+  DraftQuestion,
+  GenerationResult,
   ImportStatus,
   LobbyStatus,
   MatchAnswer,
@@ -125,6 +127,26 @@ export class QuestionBankApi {
 
   startImport(): Observable<ImportStatus> {
     return this.http.post<ImportStatus>('/api/v1/question-generator/import/opentdb', null);
+  }
+
+  aiAvailable(): Observable<boolean> {
+    return this.http.get<{ available: boolean }>('/api/v1/question-generator/ai/status').pipe(map((s) => s.available));
+  }
+
+  generateDrafts(categoryId: number, topicName: string, level: number, trueFalse: boolean, count: number): Observable<GenerationResult> {
+    return this.http.post<GenerationResult>('/api/v1/question-generator/ai/drafts', { categoryId, topicName, level, trueFalse, count });
+  }
+
+  pendingDrafts(): Observable<DraftQuestion[]> {
+    return this.http.get<DraftQuestion[]>('/api/v1/question-generator/ai/drafts');
+  }
+
+  approveDraft(id: string, question: DraftQuestion['question']): Observable<unknown> {
+    return this.http.post(`/api/v1/question-generator/ai/drafts/${id}/approve`, question);
+  }
+
+  rejectDraft(id: string): Observable<void> {
+    return this.http.delete<void>(`/api/v1/question-generator/ai/drafts/${id}`);
   }
 }
 

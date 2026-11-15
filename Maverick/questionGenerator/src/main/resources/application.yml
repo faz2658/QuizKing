@@ -27,6 +27,10 @@ server:
   port: ${PORT:9090}
 
 maverick:
+  # OpenAI-compatible server with the fine-tuned question model (e.g. llama.cpp's llama-server)
+  ai:
+    url: ${AI_MODEL_URL:}
+    model: ${AI_MODEL_NAME:quiz-king}
   opentdb:
     import-on-start: ${OPENTDB_IMPORT_ON_START:false}
     request-spacing: 5500ms

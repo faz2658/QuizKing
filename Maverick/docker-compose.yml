@@ -97,6 +97,8 @@ services:
       MONGODB_URI: mongodb://mongo:27017/questiondb
       # Fills an empty question bank from Open Trivia DB (~5,000 questions, takes ~10 minutes)
       OPENTDB_IMPORT_ON_START: "true"
+      # Set to http://question-model:8080 when running with --profile ai (see ai/question-model/README.md)
+      AI_MODEL_URL: ${AI_MODEL_URL:-}
 
   game-manager:
     <<: *service
@@ -180,6 +182,19 @@ services:
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/Game_Reports
+
+  # Fine-tuned question model (optional): docker compose --profile ai up -d
+  # Needs ai/question-model/models/quiz-king-q4_k_m.gguf, produced by the Colab notebook.
+  question-model:
+    profiles: [ai]
+    image: ghcr.io/ggml-org/llama.cpp:server
+    restart: unless-stopped
+    volumes: [./ai/question-model/models:/models:ro]
+    command: ["-m", "/models/quiz-king-q4_k_m.gguf", "--jinja", "--host", "0.0.0.0", "--port", "8080", "-c", "2048", "--alias", "quiz-king"]
+    deploy:
+      resources:
+        limits:
+          memory: 3g
 
   frontend:
     build: ./frontend
