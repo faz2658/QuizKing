@@ -1,6 +1,6 @@
-FROM openjdk
-EXPOSE 9096
-WORKDIR target/
-ADD target/SearchService-1.0.jar target/search.jar
-RUN sh -c 'touch target/search.jar'
-ENTRYPOINT ["java", "-jar","target/search.jar"]
+# Build the jar first: mvn -pl <module> -am package
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY target/app.jar app.jar
+USER 1000
+ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75", "-jar", "app.jar"]

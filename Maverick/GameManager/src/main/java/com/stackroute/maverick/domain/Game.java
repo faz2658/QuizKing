@@ -1,11 +1,10 @@
 package com.stackroute.maverick.domain;
 
-import java.io.File;
+import org.springframework.data.annotation.Id;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonCreator;
 import java.util.Date;
 import java.util.List;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 /*Model class for Single Player Game*/
@@ -14,11 +13,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * @author sushmita
  *
  */
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "game")
 public class Game {
 
 	@Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
 	private int gameId;
 	private String gameName;
 	private String gameImage;
@@ -38,6 +37,7 @@ public class Game {
 	/**
 	 * Default Constructor
 	 */
+	@JsonCreator
 	public Game() {
 	}
 

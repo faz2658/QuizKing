@@ -1,0 +1,100 @@
+import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, effect, inject, input } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
+import { map } from 'rxjs';
+import { QuizApi } from '../core/api';
+import { AuthService } from '../core/auth.service';
+import { SessionView } from '../core/models';
+import { QuizAdapter, QuizRunner } from '../core/quiz-runner';
+import { QuizStage } from '../ui/quiz-stage';
+
+export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number): QuizAdapter<SessionView> {
+  return {
+    start: () => api.start(gameId, userId),
+    refresh: (s) => api.session(s.sessionId),
+    answer: (s, questionId, option) =>
+      api.answer(s.sessionId, questionId, option).pipe(
+        map((a) => ({
+          feedback: { correct: a.correct, timedOut: a.timedOut, correctAnswer: a.correctAnswer, points: a.pointsAwarded },
+          session: a.session,
+        })),
+      ),
+    question: (s) => s.currentQuestion,
+  };
+}
+
+@Component({
+  selector: 'mv-play',
+  imports: [QuizStage, RouterLink],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: `
+    <div class="wrap">
+      @switch (runner.phase()) {
+        @case ('loading') {
+          <div class="card center"><div class="spinner" aria-hidden="true"></div><p>Shuffling questions…</p></div>
+        }
+        @case ('error') {
+          <div class="card center">
+            <h2>Couldn't start this game</h2>
+            <div class="alert" role="alert">{{ runner.error() }}</div>
+            <div class="row"><button class="btn btn-primary" (click)="runner.start()">Try again</button><a class="btn" routerLink="/">Back to games</a></div>
+          </div>
+        }
+        @default {
+          @if (runner.session(); as s) {
+            <div class="hud">
+              <div><span class="muted">Game</span><strong>{{ s.gameName }}</strong></div>
+              <div><span class="muted">Score</span><strong class="score">{{ s.score }}</strong></div>
+              <div class="progress" role="progressbar" [attr.aria-valuenow]="s.answeredQuestions" aria-valuemin="0" [attr.aria-valuemax]="s.totalQuestions">
+                <span [style.width.%]="100 * s.answeredQuestions / s.totalQuestions"></span>
+              </div>
+            </div>
+            @if (runner.question(); as q) {
+              <mv-quiz-stage [question]="q" [total]="s.totalQuestions" [secondsLeft]="runner.secondsLeft()"
+                [fraction]="runner.timeFraction()" [selected]="runner.selected()" [feedback]="runner.feedback()"
+                [locked]="runner.phase() !== 'question'" (choose)="runner.choose($event)">
+                @let difficulty = s.currentQuestion?.difficulty ?? 'EASY';
+                <span badges [class]="'chip chip-' + difficulty.toLowerCase()">{{ difficulty }}</span>
+              </mv-quiz-stage>
+            }
+          }
+        }
+      }
+    </div>
+  `,
+  styles: `
+    .wrap { max-width: 860px; margin: 0 auto; }
+    .center { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 48px; }
+    .hud { display: grid; grid-template-columns: 1fr auto; gap: 8px 24px; align-items: end; margin-bottom: 16px; }
+    .hud div { display: flex; flex-direction: column; }
+    .hud div:nth-child(2) { text-align: right; }
+    .score { font-size: 1.8rem; font-weight: 850; color: var(--accent); font-variant-numeric: tabular-nums; }
+    .progress { grid-column: 1 / -1; height: 8px; border-radius: 999px; background: var(--bg-sunken); overflow: hidden; }
+    .progress span { display: block; height: 100%; background: linear-gradient(90deg, var(--accent-2), var(--accent)); transition: width 0.4s ease; }
+    .spinner { width: 42px; height: 42px; border-radius: 50%; border: 4px solid var(--bg-sunken); border-top-color: var(--accent); animation: spin 0.8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+  `,
+})
+export class Play implements OnInit {
+  readonly gameId = input.required<string>();
+  private readonly api = inject(QuizApi);
+  private readonly auth = inject(AuthService);
+  private readonly router = inject(Router);
+  private readonly destroyRef = inject(DestroyRef);
+  protected runner!: QuizRunner<SessionView>;
+
+  constructor() {
+    effect(() => {
+      if (this.runner?.phase() === 'done') {
+        const id = this.runner.session()?.sessionId;
+        if (id) {
+          this.router.navigate(['/result', id]);
+        }
+      }
+    });
+  }
+
+  ngOnInit(): void {
+    this.runner = new QuizRunner(singlePlayerAdapter(this.api, Number(this.gameId()), this.auth.user()!.userId), this.destroyRef);
+    this.runner.start();
+  }
+}

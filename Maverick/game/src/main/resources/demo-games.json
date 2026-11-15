@@ -1,0 +1,345 @@
+[
+  {
+    "gameId": 101,
+    "categoryId": 1,
+    "gameName": "World Capitals",
+    "gameDescription": "How well do you know the capital cities of the world?",
+    "gameRules": "Pick the capital before the timer runs out. Harder questions are worth more points.",
+    "gameImage": "geography",
+    "topic": {
+      "topicId": 11,
+      "topicName": "Geography"
+    },
+    "questionLevels": {
+      "easyLevel": 3,
+      "mediumLevel": 3,
+      "advancedLevel": 2
+    },
+    "questionTime": {
+      "easyQuestionsTime": 12,
+      "mediumQuestionsTime": 15,
+      "advanceQuestionsTime": 20
+    },
+    "questionScore": {
+      "easyQuestionsScore": 10,
+      "mediumQuestionsScore": 20,
+      "advanceQuestionsScore": 30
+    },
+    "questions": [
+      {
+        "questionId": 1,
+        "questionLevel": 1,
+        "questionStem": "What is the capital of France?",
+        "option1": "Paris",
+        "option2": "Lyon",
+        "option3": "Marseille",
+        "option4": "Nice",
+        "correctAnswer": "Paris"
+      },
+      {
+        "questionId": 2,
+        "questionLevel": 1,
+        "questionStem": "What is the capital of Japan?",
+        "option1": "Osaka",
+        "option2": "Tokyo",
+        "option3": "Kyoto",
+        "option4": "Nagoya",
+        "correctAnswer": "Tokyo"
+      },
+      {
+        "questionId": 3,
+        "questionLevel": 1,
+        "questionStem": "What is the capital of Italy?",
+        "option1": "Milan",
+        "option2": "Venice",
+        "option3": "Rome",
+        "option4": "Naples",
+        "correctAnswer": "Rome"
+      },
+      {
+        "questionId": 4,
+        "questionLevel": 1,
+        "questionStem": "What is the capital of Egypt?",
+        "option1": "Cairo",
+        "option2": "Alexandria",
+        "option3": "Giza",
+        "option4": "Luxor",
+        "correctAnswer": "Cairo"
+      },
+      {
+        "questionId": 5,
+        "questionLevel": 2,
+        "questionStem": "What is the capital of Australia?",
+        "option1": "Sydney",
+        "option2": "Melbourne",
+        "option3": "Canberra",
+        "option4": "Perth",
+        "correctAnswer": "Canberra"
+      },
+      {
+        "questionId": 6,
+        "questionLevel": 2,
+        "questionStem": "What is the capital of Canada?",
+        "option1": "Toronto",
+        "option2": "Ottawa",
+        "option3": "Vancouver",
+        "option4": "Montreal",
+        "correctAnswer": "Ottawa"
+      },
+      {
+        "questionId": 7,
+        "questionLevel": 2,
+        "questionStem": "What is the capital of Turkey?",
+        "option1": "Istanbul",
+        "option2": "Ankara",
+        "option3": "Izmir",
+        "option4": "Antalya",
+        "correctAnswer": "Ankara"
+      },
+      {
+        "questionId": 8,
+        "questionLevel": 2,
+        "questionStem": "What is the capital of Brazil?",
+        "option1": "Rio de Janeiro",
+        "option2": "São Paulo",
+        "option3": "Brasília",
+        "option4": "Salvador",
+        "correctAnswer": "Brasília"
+      },
+      {
+        "questionId": 9,
+        "questionLevel": 3,
+        "questionStem": "What is the capital of Kazakhstan?",
+        "option1": "Almaty",
+        "option2": "Astana",
+        "option3": "Shymkent",
+        "option4": "Karaganda",
+        "correctAnswer": "Astana"
+      },
+      {
+        "questionId": 10,
+        "questionLevel": 3,
+        "questionStem": "What is the capital of Myanmar?",
+        "option1": "Yangon",
+        "option2": "Mandalay",
+        "option3": "Naypyidaw",
+        "option4": "Bago",
+        "correctAnswer": "Naypyidaw"
+      },
+      {
+        "questionId": 11,
+        "questionLevel": 3,
+        "questionStem": "What is the capital of Bhutan?",
+        "option1": "Paro",
+        "option2": "Thimphu",
+        "option3": "Punakha",
+        "option4": "Jakar",
+        "correctAnswer": "Thimphu"
+      }
+    ]
+  },
+  {
+    "gameId": 102,
+    "categoryId": 2,
+    "gameName": "Science Sprint",
+    "gameDescription": "Quick-fire questions on physics, chemistry and biology.",
+    "gameRules": "Answer fast. Easy questions give 10 points, medium 20, advanced 30.",
+    "gameImage": "science",
+    "topic": {
+      "topicId": 21,
+      "topicName": "Science"
+    },
+    "questionLevels": {
+      "easyLevel": 2,
+      "mediumLevel": 2,
+      "advancedLevel": 2
+    },
+    "questionTime": {
+      "easyQuestionsTime": 10,
+      "mediumQuestionsTime": 15,
+      "advanceQuestionsTime": 20
+    },
+    "questionScore": {
+      "easyQuestionsScore": 10,
+      "mediumQuestionsScore": 20,
+      "advanceQuestionsScore": 30
+    },
+    "questions": [
+      {
+        "questionId": 1,
+        "questionLevel": 1,
+        "questionStem": "Which gas do plants absorb from the air?",
+        "option1": "Oxygen",
+        "option2": "Carbon dioxide",
+        "option3": "Nitrogen",
+        "option4": "Helium",
+        "correctAnswer": "Carbon dioxide"
+      },
+      {
+        "questionId": 2,
+        "questionLevel": 1,
+        "questionStem": "How many legs does an insect have?",
+        "option1": "Four",
+        "option2": "Six",
+        "option3": "Eight",
+        "option4": "Ten",
+        "correctAnswer": "Six"
+      },
+      {
+        "questionId": 3,
+        "questionLevel": 1,
+        "questionStem": "Water boils at what temperature at sea level?",
+        "option1": "90 °C",
+        "option2": "100 °C",
+        "option3": "110 °C",
+        "option4": "120 °C",
+        "correctAnswer": "100 °C"
+      },
+      {
+        "questionId": 4,
+        "questionLevel": 2,
+        "questionStem": "What is the chemical symbol for gold?",
+        "option1": "Gd",
+        "option2": "Go",
+        "option3": "Au",
+        "option4": "Ag",
+        "correctAnswer": "Au"
+      },
+      {
+        "questionId": 5,
+        "questionLevel": 2,
+        "questionStem": "Which planet has the most moons?",
+        "option1": "Earth",
+        "option2": "Mars",
+        "option3": "Saturn",
+        "option4": "Venus",
+        "correctAnswer": "Saturn"
+      },
+      {
+        "questionId": 6,
+        "questionLevel": 2,
+        "questionStem": "What part of the cell contains DNA?",
+        "option1": "Nucleus",
+        "option2": "Ribosome",
+        "option3": "Membrane",
+        "option4": "Cytoplasm",
+        "correctAnswer": "Nucleus"
+      },
+      {
+        "questionId": 7,
+        "questionLevel": 3,
+        "questionStem": "What is the SI unit of electrical resistance?",
+        "option1": "Volt",
+        "option2": "Ohm",
+        "option3": "Ampere",
+        "option4": "Watt",
+        "correctAnswer": "Ohm"
+      },
+      {
+        "questionId": 8,
+        "questionLevel": 3,
+        "questionStem": "Which element has atomic number 26?",
+        "option1": "Iron",
+        "option2": "Copper",
+        "option3": "Zinc",
+        "option4": "Nickel",
+        "correctAnswer": "Iron"
+      },
+      {
+        "questionId": 9,
+        "questionLevel": 3,
+        "questionStem": "Approximately how fast does light travel in a vacuum?",
+        "option1": "300,000 km/s",
+        "option2": "150,000 km/s",
+        "option3": "30,000 km/s",
+        "option4": "3,000,000 km/s",
+        "correctAnswer": "300,000 km/s"
+      }
+    ]
+  },
+  {
+    "gameId": 103,
+    "categoryId": 3,
+    "gameName": "True or False: History",
+    "gameDescription": "Two choices, one truth. A warm-up round on world history.",
+    "gameRules": "Every question has two options. All questions are easy.",
+    "gameImage": "history",
+    "topic": {
+      "topicId": 31,
+      "topicName": "History"
+    },
+    "questionLevels": {
+      "easyLevel": 5,
+      "mediumLevel": 0,
+      "advancedLevel": 0
+    },
+    "questionTime": {
+      "easyQuestionsTime": 8
+    },
+    "questionScore": {
+      "easyQuestionsScore": 10
+    },
+    "questions": [
+      {
+        "questionId": 1,
+        "questionLevel": 1,
+        "questionStem": "The Great Wall of China was built in a single century.",
+        "option1": "True",
+        "option2": "False",
+        "option3": "",
+        "option4": "",
+        "correctAnswer": "False"
+      },
+      {
+        "questionId": 2,
+        "questionLevel": 1,
+        "questionStem": "The first person to walk on the Moon was Neil Armstrong.",
+        "option1": "True",
+        "option2": "False",
+        "option3": "",
+        "option4": "",
+        "correctAnswer": "True"
+      },
+      {
+        "questionId": 3,
+        "questionLevel": 1,
+        "questionStem": "The Roman Empire used the Euro as currency.",
+        "option1": "True",
+        "option2": "False",
+        "option3": "",
+        "option4": "",
+        "correctAnswer": "False"
+      },
+      {
+        "questionId": 4,
+        "questionLevel": 1,
+        "questionStem": "The printing press was invented by Johannes Gutenberg.",
+        "option1": "True",
+        "option2": "False",
+        "option3": "",
+        "option4": "",
+        "correctAnswer": "True"
+      },
+      {
+        "questionId": 5,
+        "questionLevel": 1,
+        "questionStem": "World War I ended in 1918.",
+        "option1": "True",
+        "option2": "False",
+        "option3": "",
+        "option4": "",
+        "correctAnswer": "True"
+      },
+      {
+        "questionId": 6,
+        "questionLevel": 1,
+        "questionStem": "The pyramids of Giza are in Mexico.",
+        "option1": "True",
+        "option2": "False",
+        "option3": "",
+        "option4": "",
+        "correctAnswer": "False"
+      }
+    ]
+  }
+]

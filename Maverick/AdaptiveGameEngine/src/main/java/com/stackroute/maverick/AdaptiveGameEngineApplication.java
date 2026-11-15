@@ -1,31 +1,30 @@
 package com.stackroute.maverick;
 
+import java.security.SecureRandom;
+import java.time.Clock;
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.web.client.RestTemplateBuilder;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.annotation.Bean;
-import org.springframework.data.neo4j.repository.config.EnableNeo4jRepositories;
-import org.springframework.web.client.RestTemplate;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+import com.stackroute.maverick.adaptive.PoolBuilder;
 
 @SpringBootApplication
-@EnableNeo4jRepositories("com.stackroute.maverick.repository")
-@EnableDiscoveryClient
+@ConfigurationPropertiesScan
 public class AdaptiveGameEngineApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AdaptiveGameEngineApplication.class, args);
 	}
-	
-	//initialising the rest templete 
-    @Bean
-    public RestTemplate restTemplate(RestTemplateBuilder builder) {
 
-        return builder.build();
+	@Bean
+	Clock clock() {
+		return Clock.systemUTC();
+	}
 
-    }
-   
+	@Bean
+	PoolBuilder poolBuilder() {
+		return new PoolBuilder(new SecureRandom());
+	}
 }

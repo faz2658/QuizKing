@@ -1,36 +1,47 @@
-# spring:     
-#  data:
-#    mongodb:
-#      database: questiondb
-#      host: localhost
-#      uri: mongodb://172.23.238.165:27017/questiondb
-#      port: 27017
-      
-      
+spring:
+  application:
+    name: question-generator
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8083}
+  mongodb:
+    uri: ${MONGODB_URI:mongodb://localhost:27017/questiondb}
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:19092}
+    consumer:
+      group-id: question-generator
+      auto-offset-reset: earliest
+      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      properties:
+        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JacksonJsonDeserializer
+        spring.json.trusted.packages: com.stackroute.maverick.domain
+        spring.json.use.type.headers: false
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
+      properties:
+        spring.json.add.type.headers: false
 
-#management:
-#  endpoint:
-#    prometheus:
-#       enabled: true
+server:
+  port: ${PORT:9090}
 
+maverick:
+  kafka:
+    enabled: ${KAFKA_ENABLED:true}
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:4200}
+  topics:
+    questions: QuestionGen.t
 
-#kafka:
-# bootstrap-servers: 172.23.238.156:9092
-# topic:
-#   QuestionGen: QuestionGen.t     
-   
-   
-# configure eureka client
-#eureka:
- # instance:
- #   leaseRenewalIntervalInSeconds: 1
-  #  leaseExpirationDurationInSeconds: 3
-  #client:
-  #  serviceUrl:
-  #    defaultZone: http://172.23.238.173:8090/eureka/
-      
-   
-   
-   
-#mongodb://mongo-container:27000/questiondb
+eureka:
+  client:
+    enabled: ${EUREKA_ENABLED:true}
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8082/eureka}
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name}

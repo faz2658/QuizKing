@@ -1,7 +1,6 @@
-FROM java:8
-VOLUME /src/temp
-ADD target/recommendations-1.0.jar src/GameRecommendationApp.jar
-WORKDIR src/
-EXPOSE 9095
-RUN bash -c 'touch GameRecommendationApp.jar'
-ENTRYPOINT ["java","-jar","GameRecommendationApp.jar"]
+# Build the jar first: mvn -pl <module> -am package
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY target/app.jar app.jar
+USER 1000
+ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75", "-jar", "app.jar"]

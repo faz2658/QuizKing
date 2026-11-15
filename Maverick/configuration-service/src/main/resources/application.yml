@@ -1,0 +1,28 @@
+# Central configuration server.
+# By default it serves the bundled config-repo (native profile), so the platform
+# runs without any external repository. Point CONFIG_GIT_URI at a git repo and set
+# SPRING_PROFILES_ACTIVE=git to serve configuration from git instead.
+server:
+  port: ${PORT:8083}
+spring:
+  application:
+    name: configserver
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:native}
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: ${CONFIG_SEARCH_LOCATIONS:classpath:/config-repo}
+        git:
+          uri: ${CONFIG_GIT_URI:}
+eureka:
+  client:
+    enabled: ${EUREKA_ENABLED:true}
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8082/eureka}
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info

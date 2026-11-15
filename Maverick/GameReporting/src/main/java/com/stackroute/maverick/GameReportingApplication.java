@@ -1,0 +1,12 @@
+package com.stackroute.maverick;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class GameReportingApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(GameReportingApplication.class, args);
+	}
+}

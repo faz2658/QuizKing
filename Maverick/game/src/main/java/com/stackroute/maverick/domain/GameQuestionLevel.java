@@ -1,5 +1,7 @@
 package com.stackroute.maverick.domain;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 public class GameQuestionLevel {
 
 	private int gqLevelId;
@@ -47,6 +49,7 @@ public class GameQuestionLevel {
 		this.advancedLevel = advancedLevel;
 	}
 
+	@JsonCreator
 	public GameQuestionLevel() {
 	}
 }

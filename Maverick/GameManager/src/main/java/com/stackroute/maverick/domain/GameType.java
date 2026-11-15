@@ -1,12 +1,10 @@
 package com.stackroute.maverick.domain;
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonCreator;
 
-@Document(collection = "gametype")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class GameType {
-
-	@Id
 	private int gameTypeId;
 	private String gameTypeName;
 	private String gameTypeDescription;
@@ -14,6 +12,7 @@ public class GameType {
 	private String multiPlayerFastestFingerFirst;
 	private String singlePlayerAdaptiveGame;
 	*/
+	@JsonCreator
 	public GameType() {
 		super();
 		

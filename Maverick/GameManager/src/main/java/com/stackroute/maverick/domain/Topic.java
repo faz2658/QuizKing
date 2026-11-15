@@ -1,16 +1,18 @@
 package com.stackroute.maverick.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonCreator;
 import java.util.List;
 
-import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection="gameTopic")
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Topic {
 
 	 	private int topicId;
 	    private String topicName;
 	    private String topicImage;
 	    private List<Questions> questions;
+		@JsonCreator
 		public Topic() {
 			super();
 			// TODO Auto-generated constructor stub

@@ -1,46 +1,22 @@
 package com.stackroute.maverick;
 
+import java.security.SecureRandom;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.context.annotation.Bean;
 
+import com.stackroute.maverick.catalog.QuestionSelector;
 
-/**
- * @author sushmita
- *
- */
-
-
-@EnableDiscoveryClient
 @SpringBootApplication
 public class GameManagerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GameManagerApplication.class, args);
 	}
-	
-	
+
+	@Bean
+	QuestionSelector questionSelector() {
+		return new QuestionSelector(new SecureRandom());
+	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-//import org.apache.kafka.clients.producer.KafkaProducer;
-//import com.stackroute.gameManager.domain.GameManager;
-
-/*KafkaProducer producer;
-
-public void run(String... arg0) throws Exception{
-	GameManager gameManager = new GameManager("1","IPL"); //,"Indian Premier League",4580,22
-	producer.send(gameManager);
-}*/

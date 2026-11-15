@@ -1,5 +1,7 @@
 package com.stackroute.maverick.domain;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 import org.springframework.data.annotation.Id;
 
 public class GameType {
@@ -40,6 +42,7 @@ public class GameType {
 		this.gameTypeDescription = gameTypeDescription;
 	}
 
+	@JsonCreator
 	public GameType() {
 	}
 
