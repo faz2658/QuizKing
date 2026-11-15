@@ -47,7 +47,7 @@ import { DailyBoard } from '../ui/daily-board';
                 <span class="avatar" aria-hidden="true">{{ e.name.charAt(0).toUpperCase() }}</span>
                 <strong class="name">{{ e.name }}</strong>
                 <span class="xp">{{ e.xp }} XP</span>
-                <span class="muted">{{ e.title }} · {{ e.games }} games</span>
+                <span class="muted">{{ e.title }} · {{ e.games }} {{ e.games === 1 ? 'game' : 'games' }}</span>
               </div>
             }
           </div>
@@ -55,7 +55,7 @@ import { DailyBoard } from '../ui/daily-board';
             @for (e of rest(); track e.userId) {
               <li [class.me]="e.userId === me">
                 <span class="rank">{{ e.rank }}</span><span class="name">{{ e.name }}{{ e.userId === me ? ' (you)' : '' }}</span>
-                <span class="muted">{{ e.games }} games</span><strong>{{ e.xp }} XP</strong>
+                <span class="muted">{{ e.games }} {{ e.games === 1 ? 'game' : 'games' }}</span><strong>{{ e.xp }} XP</strong>
               </li>
             }
           </ol>

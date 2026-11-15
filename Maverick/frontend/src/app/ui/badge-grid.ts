@@ -22,7 +22,7 @@ export function sortBadges(all: Achievement[]): Achievement[] {
       <div class="row head"><h2>Achievements</h2><span class="spacer"></span><span class="muted">{{ earned() }} / {{ badges().length }} earned</span></div>
       <ul class="grid">
         @for (a of badges(); track a.id) {
-          <li class="badge" [class.locked]="!a.unlockedAt" [attr.aria-label]="a.title + (a.unlockedAt ? ', earned' : ', locked')">
+          <li class="ach" [class.locked]="!a.unlockedAt" [attr.aria-label]="a.title + (a.unlockedAt ? ', earned' : ', locked')">
             <span class="icon" aria-hidden="true">{{ a.icon }}</span>
             <strong>{{ a.title }}</strong>
             <span class="muted desc">{{ a.description }}</span>
@@ -43,11 +43,11 @@ export function sortBadges(all: Achievement[]): Achievement[] {
     .head { margin: 32px 0 14px; }
     .head h2 { margin: 0; }
     .grid { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 14px; }
-    .badge { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; padding: 18px 14px; border-radius: 20px;
+    .ach { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 6px; padding: 18px 14px; border-radius: 20px;
       background: var(--bg-raised); border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
       box-shadow: 0 6px 24px color-mix(in srgb, var(--pink) 14%, transparent); }
-    .badge.locked { border-color: var(--border); box-shadow: none; }
-    .badge.locked .icon { filter: grayscale(1); opacity: 0.45; }
+    .ach.locked { border-color: var(--border); box-shadow: none; }
+    .ach.locked .icon { filter: grayscale(1); opacity: 0.45; }
     .icon { font-size: 2.2rem; }
     .desc { font-size: 0.85rem; }
     .when { font-size: 0.8rem; color: var(--accent); font-weight: 700; }

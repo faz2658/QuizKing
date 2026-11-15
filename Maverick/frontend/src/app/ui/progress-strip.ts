@@ -37,7 +37,7 @@ export function levelFraction(p: Pick<Progress, 'xp' | 'levelStartXp' | 'nextLev
             <span class="muted">
               @if (p.streak.current === 0) { Play today to start one }
               @else if (!p.streak.playedToday) { Play today to keep it! }
-              @else { Best: {{ p.streak.best }} days }
+              @else { Best: {{ p.streak.best }} {{ p.streak.best === 1 ? 'day' : 'days' }} }
             </span>
           </div>
         </div>
