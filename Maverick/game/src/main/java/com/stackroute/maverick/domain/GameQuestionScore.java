@@ -1,5 +1,7 @@
 package com.stackroute.maverick.domain;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 public class GameQuestionScore {
 
 	private int gqScoreId;
@@ -48,6 +50,7 @@ public class GameQuestionScore {
 		this.advanceQuestionsScore = advanceQuestionsScore;
 	}
 
+	@JsonCreator
 	public GameQuestionScore() {
 	}
 }

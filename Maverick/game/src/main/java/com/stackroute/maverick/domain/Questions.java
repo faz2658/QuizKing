@@ -1,7 +1,10 @@
 package com.stackroute.maverick.domain;
 
-import java.util.List;
+import com.fasterxml.jackson.annotation.JsonCreator;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Questions {
 
 	private int questionId;
@@ -12,7 +15,6 @@ public class Questions {
 	private String option3;
 	private String option4;
 	private String correctAnswer;
-	private List<User> user;
 
 	public int getQuestionId() {
 		return questionId;
@@ -78,16 +80,8 @@ public class Questions {
 		this.correctAnswer = correctAnswer;
 	}
 
-	public List<User> getUser() {
-		return user;
-	}
-
-	public void setUser(List<User> user) {
-		this.user = user;
-	}
-
 	public Questions(int questionId, int questionLevel, String questionStem, String option1, String option2,
-			String option3, String option4, String correctAnswer, List<User> user) {
+			String option3, String option4, String correctAnswer) {
 		super();
 		this.questionId = questionId;
 		this.questionLevel = questionLevel;
@@ -97,9 +91,9 @@ public class Questions {
 		this.option3 = option3;
 		this.option4 = option4;
 		this.correctAnswer = correctAnswer;
-		this.user = user;
 	}
 
+	@JsonCreator
 	public Questions() {
 	}
 }

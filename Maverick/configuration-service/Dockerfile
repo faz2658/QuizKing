@@ -1,6 +1,6 @@
-FROM openjdk
-EXPOSE 8083
-WORKDIR target/
-ADD target/configuration-service-1.0.jar target/configg.jar
-RUN sh -c 'touch configg.jar'
-ENTRYPOINT ["java", "-jar","target/configg.jar"]
+# Build the jar first: mvn -pl <module> -am package
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY target/app.jar app.jar
+USER 1000
+ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75", "-jar", "app.jar"]

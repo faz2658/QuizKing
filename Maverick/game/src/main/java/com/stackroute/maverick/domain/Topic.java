@@ -1,5 +1,7 @@
 package com.stackroute.maverick.domain;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 import java.util.List;
 
 public class Topic {
@@ -49,6 +51,7 @@ public class Topic {
 		this.questions = questions;
 	}
 
+	@JsonCreator
 	public Topic() {
 	}
 }

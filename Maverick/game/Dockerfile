@@ -1,7 +1,6 @@
-FROM java:8
-RUN mkdir /src
-WORKDIR src/project
-ADD target/game-1.0.jar src/project/game-engine-app.jar
-EXPOSE 9092
-RUN bash -c 'touch src/project/game-engine-app.jar'
-ENTRYPOINT ["java", "-Dspring.data.mongodb.uri=mongodb://localhost/GameQuestionDb", "-jar", "src/project/game-engine-app.jar"]
+# Build the jar first: mvn -pl <module> -am package
+FROM eclipse-temurin:21-jre
+WORKDIR /app
+COPY target/app.jar app.jar
+USER 1000
+ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75", "-jar", "app.jar"]

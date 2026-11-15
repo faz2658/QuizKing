@@ -1,13 +1,17 @@
 
 package com.stackroute.maverick.domain;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "game")
+@JsonIgnoreProperties(ignoreUnknown = true)
+@Document(collection = "games")
 public class Game {
 
 	@Id
@@ -169,6 +173,7 @@ public class Game {
 		this.questions = questions;
 	}
 
+	@JsonCreator
 	public Game() {
 	}
 

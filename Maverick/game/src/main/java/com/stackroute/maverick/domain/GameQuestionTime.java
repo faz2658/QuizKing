@@ -1,5 +1,7 @@
 package com.stackroute.maverick.domain;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+
 public class GameQuestionTime {
 
 	private int gqTimeId;
@@ -47,6 +49,7 @@ public class GameQuestionTime {
 		this.advanceQuestionsTime = advanceQuestionsTime;
 	}
 
+	@JsonCreator
 	public GameQuestionTime() {
 	}
 }
