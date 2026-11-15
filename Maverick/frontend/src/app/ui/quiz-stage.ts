@@ -1,8 +1,9 @@
-import { ChangeDetectionStrategy, Component, ElementRef, HostListener, computed, effect, inject, input, output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, HostListener, computed, effect, inject, input, output, untracked } from '@angular/core';
 import { Feedback, RunnerQuestion } from '../core/quiz-runner';
 import { TimerRing } from './timer-ring';
 import { DecryptText } from '../motion/decrypt-text';
 import { Sparks } from '../motion/sparks';
+import { GameFx } from '../core/game-fx';
 
 /** The question card: stem, timer and answer options, with right/wrong feedback. Keys 1-4 pick an option. */
 @Component({
@@ -95,8 +96,22 @@ export class QuizStage {
   private readonly correctAnswer = computed(() => this.feedback()?.correctAnswer ?? null);
   private readonly host = inject(ElementRef<HTMLElement>).nativeElement as HTMLElement;
   private readonly sparks = inject(Sparks);
+  private readonly fx = inject(GameFx);
 
   constructor() {
+    // sound and vibration: right, wrong, a combo, and a tick for each of the last three seconds
+    effect(() => {
+      const f = this.feedback();
+      if (f) {
+        untracked(() => this.fx.play(f.correct ? (f.note?.startsWith('Combo') ? 'combo' : 'correct') : 'wrong'));
+      }
+    });
+    effect(() => {
+      const left = this.secondsLeft();
+      if (left > 0 && left <= 3 && !this.locked() && !untracked(this.feedback)) {
+        untracked(() => this.fx.play('tick'));
+      }
+    });
     // celebrate a correct answer on the button that was picked
     effect(() => {
       const f = this.feedback();

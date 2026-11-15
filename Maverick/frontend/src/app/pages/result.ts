@@ -1,12 +1,15 @@
-import { ChangeDetectionStrategy, Component, computed, effect, inject, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, effect, inject, input, signal } from '@angular/core';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { RouterLink } from '@angular/router';
-import { catchError, map, of, startWith, switchMap } from 'rxjs';
-import { QuizApi } from '../core/api';
+import { catchError, firstValueFrom, map, of, startWith, switchMap } from 'rxjs';
+import { BoardsApi, QuizApi } from '../core/api';
+import { AuthService } from '../core/auth.service';
+import { shareCard } from '../core/share-card';
 import { errorMessage } from '../core/http-errors';
 import { ResultView } from '../core/models';
 import { CountUp } from '../motion/count-up';
 import { Sparks } from '../motion/sparks';
+import { GameFx } from '../core/game-fx';
 import { DailyBoard } from '../ui/daily-board';
 
 export function verdict(percentage: number): string {
@@ -39,6 +42,7 @@ export function verdict(percentage: number): string {
               <div><strong>{{ r.correctAnswers }}</strong><span class="muted">/ {{ r.totalQuestions }} correct</span></div>
             </div>
             <div class="row">
+              <button type="button" class="btn" (click)="share(r)" [disabled]="sharing()">📤 Share result</button>
               @if (r.variant === 'DAILY') {
                 <a class="btn btn-primary" routerLink="/">Play more games</a>
               } @else if (r.gameId > 0) {
@@ -49,6 +53,7 @@ export function verdict(percentage: number): string {
                 <a class="btn btn-primary" routerLink="/">All games</a>
               }
             </div>
+            @if (shareNote()) { <p class="muted share-note">{{ shareNote() }}</p> }
           </div>
         </section>
 
@@ -123,12 +128,42 @@ export class Result {
 
   protected readonly title = computed(() => verdict(this.state()?.result?.percentage ?? 0));
   private readonly sparks = inject(Sparks);
+  private readonly fx = inject(GameFx);
+  private readonly auth = inject(AuthService);
+  private readonly boards = inject(BoardsApi);
+  protected readonly sharing = signal(false);
+  protected readonly shareNote = signal<string | null>(null);
+
+  protected async share(r: ResultView): Promise<void> {
+    this.sharing.set(true);
+    this.shareNote.set(null);
+    try {
+      let rankLine: string | null = null;
+      if (r.variant === 'DAILY') {
+        const board = await firstValueFrom(this.boards.daily(r.variantKey ?? undefined)).catch(() => null);
+        rankLine = board?.you ? `#${board.you.rank} of ${board.players} in today's challenge` : null;
+      }
+      const title = r.variant === 'DAILY' ? `the Daily Challenge (${r.variantKey})` : r.gameName;
+      const how = await shareCard({ player: this.auth.user()?.userName ?? 'A player', title, score: r.score, maxScore: r.maxScore,
+        percentage: r.percentage, correct: r.correctAnswers, total: r.totalQuestions, rankLine, url: location.origin });
+      this.shareNote.set(how === 'downloaded' ? 'Saved the card as an image: post it anywhere.' : null);
+    } catch (e) {
+      if ((e as Error)?.name !== 'AbortError') {
+        this.shareNote.set("Couldn't create the share card on this device.");
+      }
+    } finally {
+      this.sharing.set(false);
+    }
+  }
 
   constructor() {
     effect(() => {
       const r = this.state()?.result;
       if (r && r.percentage >= 70) {
-        setTimeout(() => this.sparks.confetti(), 400);
+        setTimeout(() => {
+          this.sparks.confetti();
+          this.fx.play('fanfare');
+        }, 400);
       }
     });
   }

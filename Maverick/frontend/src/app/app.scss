@@ -20,6 +20,9 @@ nav a { color: var(--text-muted); text-decoration: none; font-weight: 650; font-
 nav a:hover { color: var(--text); }
 nav a.active { color: var(--cta-ink); background: var(--cta-bg); }
 .spacer { flex: 1; }
+.icon-btn { border: 0; background: transparent; font-size: 1.15rem; cursor: pointer; padding: 6px; border-radius: 10px; line-height: 1; }
+.icon-btn:hover { background: var(--bg-sunken); }
+.icon-btn .off { filter: grayscale(1); opacity: 0.4; }
 .who { display: flex; align-items: center; gap: 8px; font-weight: 650; }
 .avatar {
   width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-size: 0.9rem; font-weight: 800;
