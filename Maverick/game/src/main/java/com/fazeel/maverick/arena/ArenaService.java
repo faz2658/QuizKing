@@ -12,10 +12,6 @@ import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
 
 import com.fazeel.maverick.arena.ArenaEntry.Answer;
-import com.fazeel.maverick.arena.ArenaRepositories.Entries;
-import com.fazeel.maverick.arena.ArenaRepositories.Published;
-import com.fazeel.maverick.arena.ArenaRepositories.PublishedRounds;
-import com.fazeel.maverick.arena.ArenaRepositories.Rounds;
 import com.fazeel.maverick.daily.DailyChallengeService;
 import com.fazeel.maverick.domain.PlayedQuestion;
 import com.fazeel.maverick.domain.SinglePlayerResult;
@@ -30,14 +26,14 @@ public class ArenaService {
 
 	public static final String NAME = "World Arena";
 
-	private final Rounds rounds;
-	private final Entries entries;
-	private final PublishedRounds published;
+	private final ArenaRoundRepository rounds;
+	private final ArenaEntryRepository entries;
+	private final ArenaPublishedRepository published;
 	private final GameRepository games;
 	private final GameEvents events;
 	private final Clock clock;
 
-	public ArenaService(Rounds rounds, Entries entries, PublishedRounds published, GameRepository games, GameEvents events,
+	public ArenaService(ArenaRoundRepository rounds, ArenaEntryRepository entries, ArenaPublishedRepository published, GameRepository games, GameEvents events,
 			Clock clock) {
 		this.rounds = rounds;
 		this.entries = entries;
@@ -196,7 +192,7 @@ public class ArenaService {
 			return;
 		}
 		try {
-			published.insert(new Published(id(start)));
+			published.insert(new ArenaPublished(id(start)));
 		}
 		catch (DuplicateKeyException alreadyDone) {
 			return;

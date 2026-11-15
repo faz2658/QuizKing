@@ -30,10 +30,6 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 
-import com.fazeel.maverick.arena.ArenaRepositories.Entries;
-import com.fazeel.maverick.arena.ArenaRepositories.Published;
-import com.fazeel.maverick.arena.ArenaRepositories.PublishedRounds;
-import com.fazeel.maverick.arena.ArenaRepositories.Rounds;
 import com.fazeel.maverick.arena.ArenaService.ArenaView;
 import com.fazeel.maverick.arena.ArenaService.Phase;
 import com.fazeel.maverick.daily.DailyChallengeServiceTest;
@@ -72,11 +68,11 @@ class ArenaServiceTest {
 	static final Instant START = Instant.parse("2026-11-15T18:15:00Z");
 
 	@Mock
-	Rounds rounds;
+	ArenaRoundRepository rounds;
 	@Mock
-	Entries entries;
+	ArenaEntryRepository entries;
 	@Mock
-	PublishedRounds published;
+	ArenaPublishedRepository published;
 	@Mock
 	GameRepository games;
 	@Mock
@@ -107,8 +103,8 @@ class ArenaServiceTest {
 		when(entries.findByRoundId(anyString())).thenAnswer(i -> entryStore.values().stream()
 				.filter(e -> e.getRoundId().equals(i.getArgument(0))).toList());
 		when(published.existsById(anyString())).thenAnswer(i -> publishedStore.contains((String) i.getArgument(0)));
-		when(published.insert(any(Published.class))).thenAnswer(i -> {
-			publishedStore.add(((Published) i.getArgument(0)).roundId());
+		when(published.insert(any(ArenaPublished.class))).thenAnswer(i -> {
+			publishedStore.add(((ArenaPublished) i.getArgument(0)).roundId());
 			return i.getArgument(0);
 		});
 	}
