@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, input, OnInit, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
@@ -104,7 +104,7 @@ type Tab = 'login' | 'register' | 'guest';
     @media (max-width: 880px) { .split { grid-template-columns: 1fr; } .panel { order: -1; } }
   `,
 })
-export class Welcome {
+export class Welcome implements OnInit {
   private readonly auth = inject(AuthService);
   private readonly router = inject(Router);
   private readonly bank = inject(QuestionBankApi);
@@ -130,6 +130,13 @@ export class Welcome {
   private readonly stats = toSignal(this.bank.stats().pipe(catchError(() => of([] as TopicStats[]))), { initialValue: [] as TopicStats[] });
   protected readonly questionCount = computed(() => this.stats().reduce((n, t) => n + t.questions, 0));
   protected readonly topicCount = computed(() => this.stats().length);
+
+  /** Someone opening a friend's link plays as a guest in one tap: no sign-up between them and the fun. */
+  ngOnInit(): void {
+    if (/^\/(know-me|party|ai-quiz|challenge|room)\//.test(this.next() ?? '')) {
+      this.tab.set('guest');
+    }
+  }
 
   protected submit(): void {
     this.error.set(null);

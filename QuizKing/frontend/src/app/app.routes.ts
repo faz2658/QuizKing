@@ -19,6 +19,8 @@ export const routes: Routes = [
   { path: 'match/:matchId', title: 'Match · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/match').then((m) => m.MatchPage) },
   { path: 'world', title: 'Play the world · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/world').then((m) => m.WorldPage) },
   { path: 'arena', title: 'World Arena · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/arena').then((m) => m.Arena) },
+  { path: 'know-me/new', title: 'How well do you know me? · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/know-me').then((m) => m.KnowMeCreate) },
+  { path: 'know-me/:id', title: 'How well do you know me? · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/know-me').then((m) => m.KnowMePlay) },
   { path: 'leaderboard', title: 'Leaderboard · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/leaderboard').then((m) => m.Leaderboard) },
   { path: 'me', title: 'My stats · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/profile').then((m) => m.Profile) },
   { path: 'admin', title: 'Create a game · Quiz King', canActivate: [playerGuard, adminGuard], loadComponent: () => import('./pages/admin').then((m) => m.Admin) },

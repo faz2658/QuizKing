@@ -11,12 +11,13 @@ import { GameCardView } from '../ui/game-card';
 import { BlurText } from '../motion/blur-text';
 import { DailyBanner } from '../ui/daily-banner';
 import { ProgressStrip } from '../ui/progress-strip';
+import { FriendsStrip } from '../ui/friends-strip';
 
 type Filter = 'ALL' | 'SINGLE' | 'MULTI';
 
 @Component({
   selector: 'mv-home',
-  imports: [FormsModule, RouterLink, GameCardView, BlurText, DailyBanner, ProgressStrip],
+  imports: [FormsModule, RouterLink, GameCardView, BlurText, DailyBanner, ProgressStrip, FriendsStrip],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="head">
@@ -35,6 +36,7 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
 
     <mv-progress-strip />
     <mv-daily-banner />
+    <mv-friends-strip />
 
     @if (state().loading) {
       <div class="grid">@for (i of [1, 2, 3, 4]; track i) { <div class="skeleton tile"></div> }</div>
