@@ -1,6 +1,6 @@
-# Maverick
+# Quiz King
 
-Quiz platform made of Spring Boot microservices, Kafka, and an Angular frontend.
+Quiz King (project codename *Maverick*) is a quiz platform made of Spring Boot microservices, Kafka, and an Angular frontend.
 
 | Mode | What it does |
 |---|---|
