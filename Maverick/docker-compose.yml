@@ -1,5 +1,5 @@
 # Whole Maverick platform. Build the jars first:  ./mvnw -DskipTests package
-# then:  docker compose up --build      (UI on http://localhost:8080)
+# then:  docker compose up --build      (UI on http://localhost:4280, or MAVERICK_HTTP_PORT)
 name: maverick
 
 x-service: &service
@@ -177,7 +177,7 @@ services:
   frontend:
     build: ./frontend
     restart: unless-stopped
-    ports: ["8080:80"]
+    ports: ["${MAVERICK_HTTP_PORT:-4280}:80"]
     depends_on: [game-engine, game-manager, login]
 
 volumes:

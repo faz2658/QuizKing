@@ -21,3 +21,7 @@ hs_err_pid*.log
 .metadata/
 .factorypath
 .DS_Store
+
+# Local secrets
+.env
+data/
