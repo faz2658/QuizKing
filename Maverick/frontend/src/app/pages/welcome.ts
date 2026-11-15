@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { catchError, of } from 'rxjs';
 import { QuestionBankApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
@@ -10,12 +10,13 @@ import { TopicStats } from '../core/models';
 import { BlurText } from '../motion/blur-text';
 import { CountUp } from '../motion/count-up';
 import { Tilt } from '../motion/tilt';
+import { GoogleButton } from '../ui/google-button';
 
 type Tab = 'login' | 'register' | 'guest';
 
 @Component({
   selector: 'mv-welcome',
-  imports: [FormsModule, BlurText, CountUp, Tilt],
+  imports: [FormsModule, RouterLink, BlurText, CountUp, Tilt, GoogleButton],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="hero">
@@ -65,6 +66,7 @@ type Tab = 'login' | 'register' | 'guest';
                 [attr.autocomplete]="tab() === 'register' ? 'new-password' : 'current-password'" />
               @if (tab() === 'register') { <span class="muted hint">At least 8 characters</span> }
             </label>
+            @if (tab() === 'login') { <a class="forgot" routerLink="/forgot-password">Forgot password?</a> }
           } @else {
             <p class="muted">Jump straight in. Guest stats are kept in this browser only.</p>
           }
@@ -74,6 +76,9 @@ type Tab = 'login' | 'register' | 'guest';
             <span aria-hidden="true">→</span>
           </button>
         </form>
+        @if (tab() !== 'guest') {
+          <mv-google-button [context]="tab() === 'register' ? 'signup' : 'signin'" (credential)="google($event)" />
+        }
       </div>
     </section>
   `,
@@ -95,6 +100,7 @@ type Tab = 'login' | 'register' | 'guest';
     .tabs button { flex: 1; }
     .wide { width: 100%; padding: 14px; }
     .hint { font-weight: 400; font-size: 0.8rem; }
+    .forgot { align-self: flex-end; margin-top: -6px; font-size: 0.85rem; color: var(--text-muted); }
     @media (max-width: 880px) { .split { grid-template-columns: 1fr; } .panel { order: -1; } }
   `,
 })
@@ -142,6 +148,18 @@ export class Welcome {
       error: (e) => {
         this.busy.set(false);
         this.error.set(errorMessage(e));
+      },
+    });
+  }
+
+  protected google(credential: string): void {
+    this.error.set(null);
+    this.busy.set(true);
+    this.auth.signInWithGoogle(credential).subscribe({
+      next: () => this.done(),
+      error: (e) => {
+        this.busy.set(false);
+        this.error.set(errorMessage(e, 'Google sign-in failed. Please try again.'));
       },
     });
   }

@@ -40,6 +40,13 @@ public class Account {
 	@Column(nullable = false)
 	private Instant createdAt;
 
+	/** Google's stable id for the person ("sub"), once they have signed in with Google. */
+	@Column(unique = true, length = 255)
+	private String googleSubject;
+
+	/** True once the person proved they own the email (Google sign-in or a reset link). Null on older rows. */
+	private Boolean emailVerified;
+
 	protected Account() {
 	}
 
@@ -73,5 +80,26 @@ public class Account {
 
 	public Instant getCreatedAt() {
 		return createdAt;
+	}
+
+	public String getGoogleSubject() {
+		return googleSubject;
+	}
+
+	public boolean isEmailVerified() {
+		return Boolean.TRUE.equals(emailVerified);
+	}
+
+	void linkGoogle(String subject) {
+		this.googleSubject = subject;
+		this.emailVerified = true;
+	}
+
+	void changePassword(String passwordHash) {
+		this.passwordHash = passwordHash;
+	}
+
+	void markEmailVerified() {
+		this.emailVerified = true;
 	}
 }

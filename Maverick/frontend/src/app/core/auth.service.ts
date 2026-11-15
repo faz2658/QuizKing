@@ -39,6 +39,28 @@ export class AuthService {
       .pipe(tap((t) => this.store(t)));
   }
 
+  /** Which sign-in options the server offers (the Google button needs its public client id). */
+  providers(): Observable<{ googleClientId: string | null }> {
+    return this.http.get<{ googleClientId: string | null }>('/api/v1/auth/providers');
+  }
+
+  /** Signs in with the ID token Google's button handed us; a first-time player gets an account. */
+  signInWithGoogle(credential: string): Observable<TokenResponse> {
+    return this.http.post<TokenResponse>('/api/v1/auth/google', { credential }).pipe(tap((t) => this.store(t)));
+  }
+
+  /** Asks for a reset link by email. The server answers the same whether or not the account exists. */
+  forgotPassword(email: string): Observable<void> {
+    return this.http.post<void>('/api/v1/auth/password/forgot', { email: email.trim() });
+  }
+
+  /** Sets a new password from an emailed link and signs in. */
+  resetPassword(token: string, password: string): Observable<TokenResponse> {
+    return this.http
+      .post<TokenResponse>('/api/v1/auth/password/reset', { token, password })
+      .pipe(tap((t) => this.store(t)));
+  }
+
   logout(): void {
     this.save(null);
   }

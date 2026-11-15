@@ -15,6 +15,9 @@ services:
     depends_on: [frontend]
 
   # Only Caddy is public; databases, Kafka and dashboards stay inside the Docker network.
+  login:
+    environment:
+      PUBLIC_URL: https://${SITE_ADDRESS}
   frontend:
     ports: !reset []
   mongo:

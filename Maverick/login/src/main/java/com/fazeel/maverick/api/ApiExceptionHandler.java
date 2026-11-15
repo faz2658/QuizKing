@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import com.fazeel.maverick.account.BadCredentialsException;
 import com.fazeel.maverick.account.EmailTakenException;
+import com.fazeel.maverick.account.InvalidResetLinkException;
+import com.fazeel.maverick.google.GoogleSignInException;
 
 @RestControllerAdvice
 public class ApiExceptionHandler {
@@ -18,6 +20,16 @@ public class ApiExceptionHandler {
 
 	@ExceptionHandler(BadCredentialsException.class)
 	ProblemDetail badCredentials(BadCredentialsException e) {
+		return ProblemDetail.forStatusAndDetail(HttpStatus.UNAUTHORIZED, e.getMessage());
+	}
+
+	@ExceptionHandler(InvalidResetLinkException.class)
+	ProblemDetail invalidLink(InvalidResetLinkException e) {
+		return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, e.getMessage());
+	}
+
+	@ExceptionHandler(GoogleSignInException.class)
+	ProblemDetail google(GoogleSignInException e) {
 		return ProblemDetail.forStatusAndDetail(HttpStatus.UNAUTHORIZED, e.getMessage());
 	}
 }

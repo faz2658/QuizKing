@@ -3,6 +3,8 @@ import { adminGuard, playerGuard } from './core/auth.guard';
 
 export const routes: Routes = [
   { path: 'welcome', title: 'Welcome · Quiz King', loadComponent: () => import('./pages/welcome').then((m) => m.Welcome) },
+  { path: 'forgot-password', title: 'Forgot password · Quiz King', loadComponent: () => import('./pages/password').then((m) => m.ForgotPassword) },
+  { path: 'reset-password', title: 'New password · Quiz King', loadComponent: () => import('./pages/password').then((m) => m.ResetPassword) },
   { path: '', title: 'Games · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/home').then((m) => m.Home) },
   { path: 'daily', title: 'Daily Challenge · Quiz King', canActivate: [playerGuard], data: { mode: 'daily' }, loadComponent: () => import('./pages/play').then((m) => m.Play) },
   { path: 'challenge/:challengeId', title: 'Challenge · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/challenge').then((m) => m.Challenge) },
