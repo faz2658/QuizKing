@@ -63,7 +63,7 @@ import { Category, ImportStatus, TopicStats } from '../core/models';
         <label class="field">Topic
           <select class="input" name="topic" [(ngModel)]="topic" required [disabled]="!topics().length">
             <option value="" disabled>Choose…</option>
-            @for (t of topics(); track t.topicId) { <option [value]="t.topicName">{{ t.topicName }} ({{ t.questions?.length ?? 0 }} questions)</option> }
+            @for (t of topics(); track t.topicId) { <option [value]="t.topicName">{{ t.topicName }} ({{ t.questionCount }} questions)</option> }
           </select>
         </label>
       </div>

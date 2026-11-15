@@ -44,6 +44,23 @@ class GameManagerControllerTest {
 	}
 
 	@Test
+	void gameListsNeverIncludeQuestionsOrAnswers() throws Exception {
+		Game g = new Game();
+		g.setGameId(5);
+		g.setGameName("Film");
+		com.fazeel.maverick.domain.Questions q = new com.fazeel.maverick.domain.Questions();
+		q.setQuestionStem("Secret?");
+		q.setCorrectAnswer("SECRET-ANSWER");
+		g.setQuestions(java.util.List.of(q, q, q));
+		when(catalog.games()).thenReturn(java.util.List.of(g));
+
+		mvc.perform(get("/api/game/games")).andExpect(status().isOk())
+				.andExpect(jsonPath("$[0].questionCount").value(3))
+				.andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.content()
+						.string(org.hamcrest.Matchers.not(org.hamcrest.Matchers.containsString("SECRET-ANSWER"))));
+	}
+
+	@Test
 	void notEnoughQuestionsIsUnprocessable() throws Exception {
 		when(catalog.createGame(eq(1), eq("Geography"), any())).thenThrow(new NotEnoughQuestionsException(1, 5, 2));
 

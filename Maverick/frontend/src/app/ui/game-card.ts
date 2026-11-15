@@ -61,7 +61,7 @@ export class GameCardView {
     return `linear-gradient(135deg, ${a}, ${b})`;
   });
   protected readonly initials = computed(() =>
-    this.game().gameName.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]?.toUpperCase()).join(''),
+    this.game().gameName.split(/\s+/).filter((w) => /^[\p{L}\p{N}]/u.test(w)).slice(0, 2).map((w) => w[0].toUpperCase()).join(''),
   );
   protected readonly reason = computed(() => (this.game().reason ? REASONS[this.game().reason!] : null) ?? null);
 }

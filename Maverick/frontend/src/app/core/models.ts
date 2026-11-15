@@ -206,5 +206,5 @@ export interface TopicStats {
 export interface Category {
   categoryId: number;
   categoryName: string;
-  topic: { topicId: number; topicName: string; questions?: unknown[] }[] | null;
+  topic: { topicId: number; topicName: string; questionCount: number }[] | null;
 }
