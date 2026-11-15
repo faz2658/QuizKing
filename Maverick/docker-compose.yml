@@ -171,6 +171,8 @@ services:
       DATABASE_PASSWORD: ${MYSQL_PASSWORD:-maverick-dev-password}
       MAVERICK_JWT_SECRET: ${MAVERICK_JWT_SECRET:?set MAVERICK_JWT_SECRET (32+ characters)}
       MAVERICK_ADMIN_EMAILS: ${MAVERICK_ADMIN_EMAILS:-}
+      # The site's own address when served over HTTPS behind a proxy (production)
+      CORS_ALLOWED_ORIGINS: ${CORS_ALLOWED_ORIGINS:-http://localhost:4200}
     depends_on:
       kafka:
         condition: service_healthy
