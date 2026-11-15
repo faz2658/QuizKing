@@ -68,7 +68,7 @@ public class Presence {
 				}
 			}
 		}
-		return new Match(m.matchId(), m.gameId(), m.players(), m.createdAt(), names, countries);
+		return new Match(m.matchId(), m.gameId(), m.players(), m.createdAt(), names, countries, m.screenId());
 	}
 
 	/** Forgets people who haven't been seen for a day. */

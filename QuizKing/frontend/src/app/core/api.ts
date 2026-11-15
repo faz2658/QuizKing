@@ -310,8 +310,8 @@ export class MultiplayerApi {
     return this.http.delete<void>('/api/v1/matching/quick');
   }
 
-  createRoom(gameId: number): Observable<RoomStatus> {
-    return this.http.post<RoomStatus>('/api/v1/matching/rooms', { gameId });
+  createRoom(gameId: number, party = false): Observable<RoomStatus> {
+    return this.http.post<RoomStatus>('/api/v1/matching/rooms', { gameId, party });
   }
 
   room(code: string): Observable<RoomStatus> {

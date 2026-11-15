@@ -70,7 +70,9 @@ public class MatchService {
 
 	public MultiplayerMatch get(String matchId, int userId) {
 		MultiplayerMatch match = load(matchId);
-		requirePlayer(match, userId);
+		if (!match.isScreen(userId)) {
+			requirePlayer(match, userId);
+		}
 		if (match.advanceClock(clock.instant())) {
 			match = save(match);
 		}

@@ -46,6 +46,8 @@ public class MultiplayerMatch {
 	private Instant startedAt;
 	private Instant completedAt;
 	private boolean resultPublished;
+	/** A party host who watches on a big screen without playing, or null. */
+	private Integer screenUserId;
 
 	public MultiplayerMatch() {
 	}
@@ -191,6 +193,20 @@ public class MultiplayerMatch {
 		return players.stream().sorted(Comparator.comparingInt(PlayerScore::getScore).reversed()
 				.thenComparing(Comparator.comparingInt(PlayerScore::getQuestionsWon).reversed())
 				.thenComparingInt(PlayerScore::getWrongAnswers)).toList();
+	}
+
+	/** The party host's big screen: may watch the match but not answer. */
+	public boolean isScreen(int userId) {
+		return screenUserId != null && screenUserId == userId;
+	}
+
+	public MultiplayerMatch shownOn(Integer screenUserId) {
+		this.screenUserId = screenUserId;
+		return this;
+	}
+
+	public Integer getScreenUserId() {
+		return screenUserId;
 	}
 
 	public boolean hasPlayer(int userId) {

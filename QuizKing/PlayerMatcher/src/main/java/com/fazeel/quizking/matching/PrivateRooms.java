@@ -18,10 +18,14 @@ import com.fazeel.quizking.domain.Match;
  * Private multiplayer rooms: the host gets a code like KING-4821, friends join with it, and the host starts the
  * match once at least two players are in. Rooms live in memory (like public lobbies) and close after
  * {@link #IDLE} without a start.
+ * <p>
+ * A party room is for a TV or classroom screen: the host's device shows the code, a QR code and the live game
+ * but doesn't play, and up to {@link #PARTY_MAX_PLAYERS} phones join.
  */
 public class PrivateRooms {
 
 	public static final int MAX_PLAYERS = 8;
+	public static final int PARTY_MAX_PLAYERS = 30;
 	static final Duration IDLE = Duration.ofMinutes(30);
 
 	public enum State {
@@ -32,7 +36,7 @@ public class PrivateRooms {
 	}
 
 	public record RoomStatus(String code, int gameId, int hostId, List<Player> players, State state, String matchId,
-			int maxPlayers) {
+			int maxPlayers, boolean party) {
 	}
 
 	/** A room rule was broken; {@code notFound} means the code doesn't exist (any more). */
@@ -53,15 +57,17 @@ public class PrivateRooms {
 		final String code;
 		final int gameId;
 		final int hostId;
+		final boolean party;
 		final Map<Integer, String> players = new LinkedHashMap<>();
 		Instant lastActivity;
 		State state = State.WAITING;
 		String matchId;
 
-		Room(String code, int gameId, int hostId, Instant now) {
+		Room(String code, int gameId, int hostId, boolean party, Instant now) {
 			this.code = code;
 			this.gameId = gameId;
 			this.hostId = hostId;
+			this.party = party;
 			this.lastActivity = now;
 		}
 	}
@@ -78,28 +84,36 @@ public class PrivateRooms {
 	}
 
 	public synchronized RoomStatus create(int gameId, int userId, String name) {
+		return create(gameId, userId, name, false);
+	}
+
+	/** @param party true for a big-screen party: the host only shows the game and doesn't play */
+	public synchronized RoomStatus create(int gameId, int userId, String name, boolean party) {
 		Instant now = clock.instant();
 		expire(now);
 		String code;
 		do {
 			code = "KING-" + (1000 + random.nextInt(9000));
 		} while (rooms.containsKey(code));
-		Room room = new Room(code, gameId, userId, now);
-		room.players.put(userId, name);
+		Room room = new Room(code, gameId, userId, party, now);
+		if (!party) {
+			room.players.put(userId, name);
+		}
 		rooms.put(code, room);
 		return status(room);
 	}
 
 	public synchronized RoomStatus join(String code, int userId, String name) {
 		Room room = find(code);
-		if (room.players.containsKey(userId)) {
-			return status(room);
+		if (room.players.containsKey(userId) || (room.party && room.hostId == userId)) {
+			return status(room); // the party host is the screen, not a player
 		}
 		if (room.state != State.WAITING) {
 			throw new RoomException("That room has already started", false);
 		}
-		if (room.players.size() >= MAX_PLAYERS) {
-			throw new RoomException("That room is full (" + MAX_PLAYERS + " players)", false);
+		int max = room.party ? PARTY_MAX_PLAYERS : MAX_PLAYERS;
+		if (room.players.size() >= max) {
+			throw new RoomException("That room is full (" + max + " players)", false);
 		}
 		room.players.put(userId, name);
 		room.lastActivity = clock.instant();
@@ -120,10 +134,11 @@ public class PrivateRooms {
 			return status(room);
 		}
 		if (room.players.size() < 2) {
-			throw new RoomException("Wait for at least one friend to join", false);
+			throw new RoomException(room.party ? "Wait for at least two players to join" : "Wait for at least one friend to join", false);
 		}
 		Instant now = clock.instant();
-		Match match = new Match(UUID.randomUUID().toString(), room.gameId, new ArrayList<>(room.players.keySet()), now);
+		Match match = new Match(UUID.randomUUID().toString(), room.gameId, new ArrayList<>(room.players.keySet()), now,
+				Map.copyOf(room.players), Map.of(), room.party ? room.hostId : null);
 		room.state = State.STARTED;
 		room.matchId = match.matchId();
 		room.lastActivity = now;
@@ -167,6 +182,7 @@ public class PrivateRooms {
 
 	private static RoomStatus status(Room r) {
 		List<Player> players = r.players.entrySet().stream().map(e -> new Player(e.getKey(), e.getValue())).toList();
-		return new RoomStatus(r.code, r.gameId, r.hostId, players, r.state, r.matchId, MAX_PLAYERS);
+		return new RoomStatus(r.code, r.gameId, r.hostId, players, r.state, r.matchId,
+				r.party ? PARTY_MAX_PLAYERS : MAX_PLAYERS, r.party);
 	}
 }

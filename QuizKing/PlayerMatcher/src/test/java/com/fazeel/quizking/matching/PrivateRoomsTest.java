@@ -84,4 +84,27 @@ class PrivateRoomsTest {
 		assertThatThrownBy(() -> rooms.join("KING-0000", 1, "Ada")).isInstanceOfSatisfying(RoomException.class,
 				e -> assertThat(e.isNotFound()).isTrue());
 	}
+
+	@Test
+	void aPartyHostIsTheScreenNotAPlayer() {
+		RoomStatus room = rooms.create(7, 1, "Teacher", true);
+		assertThat(room.party()).isTrue();
+		assertThat(room.players()).isEmpty();
+		assertThat(room.maxPlayers()).isEqualTo(PrivateRooms.PARTY_MAX_PLAYERS);
+
+		assertThat(rooms.join(room.code(), 1, "Teacher").players()).isEmpty(); // the screen never becomes a player
+		rooms.join(room.code(), 2, "Bo");
+		assertThatThrownBy(() -> rooms.start(room.code(), 1)).hasMessageContaining("two players");
+		for (int id = 3; id <= 31; id++) {
+			rooms.join(room.code(), id, "P" + id);
+		}
+		assertThatThrownBy(() -> rooms.join(room.code(), 99, "Late")).hasMessageContaining("full (30 players)");
+
+		rooms.start(room.code(), 1);
+		assertThat(started).singleElement().satisfies(m -> {
+			assertThat(m.players()).hasSize(30).doesNotContain(1);
+			assertThat(m.screenId()).isEqualTo(1);
+			assertThat(m.names()).containsEntry(2, "Bo");
+		});
+	}
 }

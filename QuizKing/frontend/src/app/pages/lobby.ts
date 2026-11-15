@@ -38,6 +38,7 @@ import { LobbyStatus } from '../core/models';
         </ul>
         <div class="row center-row">
           <button class="btn" (click)="playWithFriends()">Play with friends instead</button>
+          <button class="btn" (click)="playWithFriends(true)" title="Show the game on a TV or projector; everyone plays on their phone">📺 Party on a big screen</button>
           <button class="btn btn-ghost" (click)="cancel()">Cancel</button>
         </div>
         <form class="join-code" (submit)="joinCode($event, code.value)">
@@ -96,12 +97,12 @@ export class Lobby implements OnInit {
   }
 
   /** Leaves the public lobby and opens a private room for this game. */
-  protected playWithFriends(): void {
+  protected playWithFriends(party = false): void {
     this.poll.unsubscribe();
     const gameId = Number(this.gameId());
     this.api.leave(gameId, this.me).subscribe({ error: () => undefined });
-    this.api.createRoom(gameId).subscribe({
-      next: (r) => this.router.navigate(['/room', r.code]),
+    this.api.createRoom(gameId, party).subscribe({
+      next: (r) => this.router.navigate([party ? '/party' : '/room', r.code]),
       error: (e) => this.error.set(errorMessage(e)),
     });
   }

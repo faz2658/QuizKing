@@ -122,4 +122,14 @@ class MatchServiceTest {
 		assertThatThrownBy(() -> service.get("m1", 3)).isInstanceOf(MatchRuleException.class);
 		verify(events, never()).matchCompleted(any());
 	}
+
+	@Test
+	void thePartyScreenMayWatchButNotAnswer() {
+		when(games.findById(7)).thenReturn(Optional.of(game()));
+		service.start(new Match("m1", 7, List.of(1, 2), now, java.util.Map.of(), java.util.Map.of(), 50));
+
+		assertThat(service.get("m1", 50).getMatchId()).isEqualTo("m1");
+		assertThatThrownBy(() -> service.answer("m1", 50, 1, "x")).hasMessageContaining("not in this match");
+		assertThatThrownBy(() -> service.get("m1", 51)).hasMessageContaining("not in this match");
+	}
 }

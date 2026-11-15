@@ -31,13 +31,14 @@ public class RoomController {
 		this.rooms = rooms;
 	}
 
-	public record CreateRoom(@Positive int gameId) {
+	/** {@code party}: a big-screen party where the host shows the game and doesn't play. */
+	public record CreateRoom(@Positive int gameId, boolean party) {
 	}
 
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public RoomStatus create(@Valid @RequestBody CreateRoom request) {
-		return rooms.create(request.gameId(), Callers.currentUserId(), Callers.currentUserName());
+		return rooms.create(request.gameId(), Callers.currentUserId(), Callers.currentUserName(), request.party());
 	}
 
 	@GetMapping("/{code}")

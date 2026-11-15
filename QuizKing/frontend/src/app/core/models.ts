@@ -354,6 +354,8 @@ export interface RoomStatus {
   state: 'WAITING' | 'STARTED' | 'CLOSED';
   matchId: string | null;
   maxPlayers: number;
+  /** A big-screen party: the host shows the game and doesn't play. */
+  party: boolean;
 }
 
 export interface ChallengeView {

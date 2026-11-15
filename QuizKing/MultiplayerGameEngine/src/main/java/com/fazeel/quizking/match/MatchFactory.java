@@ -75,7 +75,8 @@ public class MatchFactory {
 				.map(Candidate::question).toList();
 		return new MultiplayerMatch(match.matchId(), game.gameId(), game.gameName(), game.categoryId(),
 				match.players(), questions, game.timePerQuestion() > 0 ? game.timePerQuestion() : DEFAULT_SECONDS,
-				game.scorePerQuestion() > 0 ? game.scorePerQuestion() : DEFAULT_POINTS, now, match.names(), match.countries());
+				game.scorePerQuestion() > 0 ? game.scorePerQuestion() : DEFAULT_POINTS, now, match.names(), match.countries())
+				.shownOn(match.screenId());
 	}
 
 	private record Candidate(int level, MatchQuestion question) {
