@@ -81,6 +81,7 @@ export interface AnswerView {
 }
 
 export interface ReviewItem {
+  questionId?: number;
   number: number;
   difficulty: Difficulty;
   stem: string;
@@ -364,4 +365,48 @@ export interface ChallengeView {
   yourStatus: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED' | 'OWN';
   yourSessionId: string | null;
   yourScore: number | null;
+}
+
+export type FlagReason = 'WRONG_ANSWER' | 'UNCLEAR' | 'TYPO' | 'OFFENSIVE' | 'OTHER';
+
+export interface BankQuestion {
+  questionId: number;
+  questionStem: string;
+  questionLevel: number;
+  questionType?: string | null;
+  option1: string | null;
+  option2: string | null;
+  option3: string | null;
+  option4: string | null;
+  correctAnswer: string;
+  explanation?: string | null;
+}
+
+export interface FeedbackItem {
+  questionId: number;
+  categoryId: number;
+  topicName: string;
+  question: BankQuestion;
+  ups: number;
+  downs: number;
+  flags: number;
+  reasons: Partial<Record<FlagReason, number>>;
+  notes: string[];
+}
+
+export interface RetiredQuestion {
+  questionId: number;
+  categoryId: number;
+  topicName: string;
+  question: BankQuestion;
+  why: string;
+  ups: number;
+  downs: number;
+  flags: number;
+  retiredAt: string;
+}
+
+export interface FeedbackReview {
+  questions: FeedbackItem[];
+  retired: RetiredQuestion[];
 }

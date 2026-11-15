@@ -12,6 +12,7 @@ import { CountUp } from '../motion/count-up';
 import { Sparks } from '../motion/sparks';
 import { GameFx } from '../core/game-fx';
 import { DailyBoard } from '../ui/daily-board';
+import { QuestionFeedback } from '../ui/question-feedback';
 
 export function verdict(percentage: number): string {
   if (percentage >= 90) return 'Outstanding!';
@@ -23,7 +24,7 @@ export function verdict(percentage: number): string {
 
 @Component({
   selector: 'mv-result',
-  imports: [RouterLink, CountUp, DailyBoard],
+  imports: [RouterLink, CountUp, DailyBoard, QuestionFeedback],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (state(); as st) {
@@ -88,6 +89,7 @@ export function verdict(percentage: number): string {
                 @if (!item.correct && !item.skipped) { <span class="muted"> · answer: <strong>{{ item.correctAnswer }}</strong></span> }
               </p>
               @if (item.explanation) { <p class="why">💡 {{ item.explanation }}</p> }
+              @if (item.questionId) { <mv-question-feedback [questionId]="item.questionId" /> }
             </li>
           }
         </ol>

@@ -8,11 +8,12 @@ import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { Category, ImportStatus, TopicStats } from '../core/models';
 import { AiDrafts } from './ai-drafts';
+import { FeedbackReviewPanel } from './feedback-review';
 
 /** Creates a game from a topic's question bank in the game manager. */
 @Component({
   selector: 'mv-admin',
-  imports: [FormsModule, AiDrafts],
+  imports: [FormsModule, AiDrafts, FeedbackReviewPanel],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <h1>Question bank</h1>
@@ -53,6 +54,7 @@ import { AiDrafts } from './ai-drafts';
     </section>
 
     <mv-ai-drafts [categories]="categories()" />
+    <mv-feedback-review />
 
     <h1>Create a game</h1>
     <form class="card stack form" (ngSubmit)="create()">

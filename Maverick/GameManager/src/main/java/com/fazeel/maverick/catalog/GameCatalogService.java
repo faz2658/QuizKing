@@ -89,6 +89,8 @@ public class GameCatalogService {
 				qs.removeIf(old -> old.getQuestionId() == q.getQuestionId());
 				qs.add(q);
 			}
+			List<Integer> removed = Objects.requireNonNullElse(in.getRemovedQuestionIds(), List.<Integer>of());
+			qs.removeIf(old -> removed.contains(old.getQuestionId()));
 			existing.setQuestions(qs);
 			if (in.getTopicImage() != null) {
 				existing.setTopicImage(in.getTopicImage());

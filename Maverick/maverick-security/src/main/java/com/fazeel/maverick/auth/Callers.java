@@ -45,6 +45,13 @@ public final class Callers {
 		return "Player";
 	}
 
+	/** A signed-in account (not a guest). */
+	public static boolean isAccount() {
+		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
+		return auth != null && auth.getAuthorities().stream()
+				.anyMatch(a -> "ROLE_USER".equals(a.getAuthority()) || "ROLE_ADMIN".equals(a.getAuthority()));
+	}
+
 	static boolean isAdmin(Authentication auth) {
 		return auth != null && auth.getAuthorities().stream().anyMatch(a -> "ROLE_ADMIN".equals(a.getAuthority()));
 	}

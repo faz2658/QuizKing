@@ -77,7 +77,7 @@ public final class Views {
 	public record LifelineView(Lifeline lifeline, AnswerView skipped, SessionView session) {
 	}
 
-	public record ReviewItem(int number, String difficulty, String stem, String yourAnswer, String correctAnswer,
+	public record ReviewItem(int questionId, int number, String difficulty, String stem, String yourAnswer, String correctAnswer,
 			boolean correct, boolean timedOut, int pointsAwarded, int points, boolean skipped, double multiplier,
 			String explanation) {
 	}
@@ -91,7 +91,7 @@ public final class Views {
 			List<ReviewItem> review = new java.util.ArrayList<>();
 			for (int i = 0; i < qs.size(); i++) {
 				SessionQuestion q = qs.get(i);
-				review.add(new ReviewItem(i + 1, q.getDifficulty().name(), q.getStem(), q.getAnswer(),
+				review.add(new ReviewItem(q.getQuestionId(), i + 1, q.getDifficulty().name(), q.getStem(), q.getAnswer(),
 						q.getCorrectAnswer(), q.isCorrect(), q.isTimedOut(), q.getPointsAwarded(), q.getPoints(),
 						q.isSkipped(), q.getMultiplier(), q.getExplanation()));
 			}

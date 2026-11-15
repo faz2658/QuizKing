@@ -44,6 +44,23 @@ public class QuestionBankService {
 				.anyMatch(q -> type.equalsIgnoreCase(q.getQuestionType()));
 	}
 
+	/** Where a question lives in the bank, for feedback on a question id from a game. */
+	public record Located(int categoryId, String topicName, Questions question) {
+	}
+
+	public java.util.Optional<Located> locate(int questionId) {
+		for (Category c : categories.findAll()) {
+			for (Topic t : c.getTopic() == null ? List.<Topic>of() : c.getTopic()) {
+				for (Questions q : t.getQuestions() == null ? List.<Questions>of() : t.getQuestions()) {
+					if (q.getQuestionId() == questionId) {
+						return java.util.Optional.of(new Located(c.getCategoryId(), t.getTopicName(), q));
+					}
+				}
+			}
+		}
+		return java.util.Optional.empty();
+	}
+
 	public List<Category> categories() {
 		return categories.findAll();
 	}
@@ -130,6 +147,10 @@ public class QuestionBankService {
 		qs.remove(indexOf(qs, questionId));
 		t.setQuestions(qs);
 		categories.save(c);
+		// tell the game manager, so the question also leaves its pools and the games built from them
+		Topic removal = new Topic(t.getTopicId(), t.getTopicName(), t.getTopicImage(), List.of());
+		removal.setRemovedQuestionIds(List.of(questionId));
+		publishTopic(c, removal);
 	}
 
 	/** Generates questions from Wikidata and adds (or refreshes) them in the topic. */

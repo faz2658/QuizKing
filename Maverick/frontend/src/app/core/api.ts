@@ -8,6 +8,7 @@ import {
   AdaptiveSession,
   AnswerView,
   BoardPeriod,
+  BankQuestion,
   Category,
   ChallengeView,
   DailyBoard,
@@ -17,6 +18,8 @@ import {
   GameReport,
   DraftQuestion,
   GenerationResult,
+  FeedbackReview,
+  FlagReason,
   ImportStatus,
   Lifeline,
   LifelineView,
@@ -149,6 +152,31 @@ export class QuestionBankApi {
 
   pendingDrafts(): Observable<DraftQuestion[]> {
     return this.http.get<DraftQuestion[]>('/api/v1/question-generator/ai/drafts');
+  }
+
+  /** A player's thumbs up/down (1/-1) and/or flag on a question. */
+  feedback(questionId: number, rating: number, flag?: FlagReason | null, note?: string | null): Observable<{ retired: boolean }> {
+    return this.http.post<{ retired: boolean }>('/api/v1/question-generator/feedback', { questionId, rating, flag: flag ?? null, note: note ?? null });
+  }
+
+  feedbackReview(): Observable<FeedbackReview> {
+    return this.http.get<FeedbackReview>('/api/v1/question-generator/feedback');
+  }
+
+  dismissFeedback(questionId: number): Observable<void> {
+    return this.http.post<void>(`/api/v1/question-generator/feedback/${questionId}/dismiss`, null);
+  }
+
+  restoreQuestion(questionId: number): Observable<BankQuestion> {
+    return this.http.post<BankQuestion>(`/api/v1/question-generator/feedback/${questionId}/restore`, null);
+  }
+
+  updateQuestion(categoryId: number, topicName: string, q: BankQuestion): Observable<BankQuestion> {
+    return this.http.put<BankQuestion>(`/api/v1/question-generator/category/${categoryId}/${encodeURIComponent(topicName)}/${q.questionId}`, q);
+  }
+
+  deleteQuestion(categoryId: number, topicName: string, questionId: number): Observable<void> {
+    return this.http.delete<void>(`/api/v1/question-generator/category/${categoryId}/${encodeURIComponent(topicName)}/${questionId}`);
   }
 
   approveDraft(id: string, question: DraftQuestion['question']): Observable<unknown> {

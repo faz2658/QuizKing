@@ -164,6 +164,23 @@ class GameCatalogServiceTest {
 	}
 
 	@Test
+	void questionsDeletedFromTheBankLeaveThePoolAndItsGames() {
+		Category stored = category(1, "Geography", List.of(q(1, 1, "manual"), q(2, 1, "manual"), q(3, 1, "manual")));
+		when(categories.findById(1)).thenReturn(Optional.of(stored));
+		Game existing = request(1, 0, 0);
+		existing.setQuestions(new java.util.ArrayList<>(stored.getTopic().get(0).getQuestions()));
+		when(games.findByCategoryIdAndTopicTopicNameIgnoreCase(1, "Geography")).thenReturn(List.of(existing));
+		Category removal = category(1, "Geography", List.of());
+		removal.getTopic().get(0).setRemovedQuestionIds(List.of(2));
+
+		Category merged = service.mergeCategory(removal);
+
+		assertThat(merged.getTopic().get(0).getQuestions()).extracting(Questions::getQuestionId).containsExactly(1, 3);
+		assertThat(existing.getQuestions()).extracting(Questions::getQuestionId).containsExactly(1, 3);
+		verify(events).gameDefinition(existing); // the engines get the new pool
+	}
+
+	@Test
 	void mergingACategoryAddsQuestionsInsteadOfReplacingTheBank() {
 		Category stored = category(1, "Geography", List.of(q(1, 1, "manual"), q(2, 1, "manual")));
 		when(categories.findById(1)).thenReturn(Optional.of(stored));
