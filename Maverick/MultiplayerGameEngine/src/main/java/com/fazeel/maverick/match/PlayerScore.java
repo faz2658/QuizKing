@@ -6,12 +6,33 @@ public class PlayerScore {
 	private int score;
 	private int questionsWon;
 	private int wrongAnswers;
+	private String name;
+	private String country;
 
 	public PlayerScore() {
 	}
 
 	PlayerScore(int userId) {
 		this.userId = userId;
+	}
+
+	PlayerScore(int userId, String name, String country) {
+		this.userId = userId;
+		this.name = name;
+		this.country = country;
+	}
+
+	/** Negative ids are bots that keep a lone Quick Match player company. */
+	public boolean isBot() {
+		return userId < 0;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public String getCountry() {
+		return country;
 	}
 
 	void won(int points) {

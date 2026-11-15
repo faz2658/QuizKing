@@ -61,7 +61,7 @@ public class MatchService {
 					.forEach(s -> seenBy.merge(s.questionId(), 1, Integer::sum));
 			java.time.Instant now = clock.instant();
 			MultiplayerMatch created = factory.create(match, game, now, seenBy);
-			seen.saveAll(match.players().stream().flatMap(p -> created.getQuestions().stream()
+			seen.saveAll(match.players().stream().filter(p -> p > 0).flatMap(p -> created.getQuestions().stream()
 					.map(q -> SeenQuestion.of(p, q.getQuestionId(), now))).toList());
 			log.info("Match {} started: game {} with {}", match.matchId(), match.gameId(), match.players());
 			return matches.save(created);
@@ -111,6 +111,9 @@ public class MatchService {
 		List<PlayerScore> ordered = m.standings();
 		for (int i = 0; i < ordered.size(); i++) {
 			PlayerScore p = ordered.get(i);
+			if (p.isBot()) {
+				continue; // ranks count the bot, but bots get no reports or recommendations
+			}
 			standings.add(new MultiPlayerResult.Standing(i + 1, p.getUserId(), p.getScore(), p.getQuestionsWon(),
 					p.getWrongAnswers()));
 		}

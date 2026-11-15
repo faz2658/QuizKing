@@ -23,6 +23,8 @@ public class MultiplayerMatch {
 
 	public static final Duration GRACE = Duration.ofSeconds(1);
 	public static final int WRONG_ANSWER_PENALTY = 5;
+	/** How often a bot picks the right answer. */
+	public static final double BOT_ACCURACY = 0.55;
 
 	public enum Status {
 		IN_PROGRESS, COMPLETED
@@ -68,12 +70,26 @@ public class MultiplayerMatch {
 		this.questions.get(0).setOpenedAt(now);
 	}
 
+	/** Same, with the names and countries to show on the scoreboard. */
+	public MultiplayerMatch(String matchId, int gameId, String gameName, int categoryId, List<Integer> playerIds,
+			List<MatchQuestion> questions, int secondsPerQuestion, int pointsPerQuestion, Instant now,
+			java.util.Map<Integer, String> names, java.util.Map<Integer, String> countries) {
+		this(matchId, gameId, gameName, categoryId, playerIds, questions, secondsPerQuestion, pointsPerQuestion, now);
+		this.players = new ArrayList<>(players.stream()
+				.map(p -> new PlayerScore(p.getUserId(), names.get(p.getUserId()), countries.get(p.getUserId()))).toList());
+	}
+
 	/** Closes questions whose time ran out. @return true if anything changed */
 	public boolean advanceClock(Instant now) {
 		boolean changed = false;
 		while (status == Status.IN_PROGRESS) {
 			MatchQuestion q = current();
 			Instant deadline = deadline(q);
+			int before = currentIndex;
+			changed |= playBots(now.isBefore(deadline) ? now : deadline);
+			if (currentIndex != before) {
+				continue; // a bot's answer closed the question: look at the next one
+			}
 			if (!now.isAfter(deadline.plus(GRACE))) {
 				break;
 			}
@@ -96,20 +112,65 @@ public class MultiplayerMatch {
 		if (q.answerOf(userId).isPresent()) {
 			throw new MatchRuleException("You already answered this question");
 		}
+		return record(player, q, answer, now);
+	}
+
+	private AnswerOutcome record(PlayerScore player, MatchQuestion q, String answer, Instant at) {
 		boolean correct = answer != null && answer.trim().equalsIgnoreCase(q.getCorrectAnswer().trim());
-		q.getAnswers().add(new PlayerAnswer(userId, answer, correct, now));
+		q.getAnswers().add(new PlayerAnswer(player.getUserId(), answer, correct, at));
 		boolean won = false;
 		if (correct && q.getWinnerUserId() == null) {
-			q.setWinnerUserId(userId);
+			q.setWinnerUserId(player.getUserId());
 			player.won(pointsPerQuestion);
 			won = true;
 		} else if (!correct) {
 			player.wrong(WRONG_ANSWER_PENALTY);
 		}
 		if (q.getAnswers().size() == players.size()) {
-			closeCurrent(now);
+			closeCurrent(at);
 		}
 		return new AnswerOutcome(correct, won, player.getScore());
+	}
+
+	/**
+	 * Bots answer the open question after a delay of 2 seconds up to 2 seconds before the deadline, right
+	 * {@value #BOT_ACCURACY} of the time. Both are fixed per match, question and bot, so a replayed request
+	 * gives the same result. @return true if a bot answered
+	 */
+	private boolean playBots(Instant upTo) {
+		boolean played = false;
+		MatchQuestion q = current();
+		List<PlayerScore> due = new ArrayList<>();
+		java.util.Map<Integer, Instant> when = new java.util.HashMap<>();
+		for (PlayerScore p : players) {
+			if (!p.isBot() || q.answerOf(p.getUserId()).isPresent()) {
+				continue;
+			}
+			java.util.Random r = new java.util.Random(java.util.Objects.hash(matchId, q.getQuestionId(), p.getUserId()));
+			long window = Math.max(1000, (secondsPerQuestion - 4) * 1000L);
+			Instant at = q.getOpenedAt().plusMillis(2000 + (long) (r.nextDouble() * window));
+			if (!upTo.isBefore(at)) {
+				due.add(p);
+				when.put(p.getUserId(), at);
+			}
+		}
+		due.sort(Comparator.comparing(p -> when.get(p.getUserId())));
+		for (PlayerScore bot : due) {
+			if (currentIndex >= questions.size() || current() != q) {
+				break;
+			}
+			java.util.Random r = new java.util.Random(java.util.Objects.hash(matchId, q.getQuestionId(), bot.getUserId(), "pick"));
+			String pick;
+			if (r.nextDouble() < BOT_ACCURACY) {
+				pick = q.getCorrectAnswer();
+			} else {
+				List<String> wrong = q.getOptions().stream().filter(o -> !o.equalsIgnoreCase(q.getCorrectAnswer())).toList();
+				pick = wrong.isEmpty() ? q.getCorrectAnswer() : wrong.get(r.nextInt(wrong.size()));
+			}
+			record(bot, q, pick, when.get(bot.getUserId()));
+			played = true;
+		}
+		return played;
 	}
 
 	public Optional<MatchQuestion> currentQuestion() {

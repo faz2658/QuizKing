@@ -17,7 +17,7 @@ public final class Views {
 	public record AnswerRequest(@Positive int userId, @Positive int questionId, @NotNull String answer) {
 	}
 
-	public record PlayerView(int userId, int score, int questionsWon) {
+	public record PlayerView(int userId, int score, int questionsWon, String name, String country, boolean bot) {
 	}
 
 	public record QuestionView(int questionId, int number, String stem, List<String> options, long secondsRemaining,
@@ -41,7 +41,9 @@ public final class Views {
 					.map(q -> new RevealView(q.getQuestionId(), q.getStem(), q.getCorrectAnswer(), q.getWinnerUserId()))
 					.orElse(null);
 			List<PlayerView> standings = m.standings().stream()
-					.map(p -> new PlayerView(p.getUserId(), p.getScore(), p.getQuestionsWon())).toList();
+					.map(p -> new PlayerView(p.getUserId(), p.getScore(), p.getQuestionsWon(), p.getName(), p.getCountry(),
+							p.isBot()))
+					.toList();
 			return new MatchView(m.getMatchId(), m.getGameId(), m.getGameName(), m.getStatus(), m.getQuestions().size(),
 					m.getPointsPerQuestion(), m.getSecondsPerQuestion(), standings, current, last);
 		}
