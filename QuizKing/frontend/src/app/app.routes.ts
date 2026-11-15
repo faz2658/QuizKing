@@ -25,6 +25,7 @@ export const routes: Routes = [
   { path: 'party/:code', title: 'Party · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/party').then((m) => m.PartyScreen) },
   { path: 'ai-quiz', title: 'AI quiz · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/ai-quiz').then((m) => m.AiQuizStart) },
   { path: 'ai-quiz/:id', title: 'AI quiz · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/ai-quiz').then((m) => m.AiQuizPlay) },
+  { path: 'cup', title: 'Country Cup · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/cup').then((m) => m.Cup) },
   { path: 'leaderboard', title: 'Leaderboard · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/leaderboard').then((m) => m.Leaderboard) },
   { path: 'me', title: 'My stats · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/profile').then((m) => m.Profile) },
   { path: 'admin', title: 'Create a game · Quiz King', canActivate: [playerGuard, adminGuard], loadComponent: () => import('./pages/admin').then((m) => m.Admin) },

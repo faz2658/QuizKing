@@ -296,6 +296,25 @@ export interface DailyBoard {
   place?: { country: string | null; countryRank: number; countryPlayers: number; topPercent: number } | null;
 }
 
+export interface CupEntry {
+  rank: number;
+  country: string;
+  points: number;
+  players: number;
+  /** The country's top player this week. */
+  star: string | null;
+}
+
+/** The weekly Country Cup (Monday to Monday, UTC). {@code yours} is null until the player picks a country. */
+export interface CupView {
+  weekStart: string;
+  endsAt: string;
+  standings: CupEntry[];
+  countries: number;
+  yours: { country: string; rank: number; points: number; players: number; gapToNext: number; yourXp: number; yourRank: number } | null;
+  lastWeek: { country: string; points: number } | null;
+}
+
 export interface Streak {
   current: number;
   best: number;

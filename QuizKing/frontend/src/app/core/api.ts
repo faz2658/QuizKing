@@ -33,6 +33,7 @@ import {
   QuickStatus,
   ResultView,
   RoomStatus,
+  CupView,
   SessionView,
   TopicStats,
   UserSummary,
@@ -262,6 +263,10 @@ export class BoardsApi {
   daily(date?: string): Observable<DailyBoard> {
     const params = date ? new HttpParams().set('date', date) : undefined;
     return this.http.get<DailyBoard>('/api/v1/reports/daily', { params });
+  }
+
+  cup(): Observable<CupView> {
+    return this.http.get<CupView>('/api/v1/reports/cup');
   }
 }
 

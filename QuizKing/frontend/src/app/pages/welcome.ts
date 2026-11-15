@@ -133,7 +133,7 @@ export class Welcome implements OnInit {
 
   /** Someone opening a friend's link plays as a guest in one tap: no sign-up between them and the fun. */
   ngOnInit(): void {
-    if (/^\/(know-me|party|ai-quiz|challenge|room)\//.test(this.next() ?? '')) {
+    if (/^\/(know-me|party|ai-quiz|challenge|room|cup)\//.test(this.next() ?? '')) {
       this.tab.set('guest');
     }
   }

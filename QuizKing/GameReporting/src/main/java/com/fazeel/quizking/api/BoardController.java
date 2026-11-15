@@ -24,11 +24,14 @@ public class BoardController {
 	private final LeaderboardService boards;
 	private final PlayerNames names;
 	private final Clock clock;
+	private final com.fazeel.quizking.board.CountryCup cup;
 
-	public BoardController(LeaderboardService boards, PlayerNames names, Clock clock) {
+	public BoardController(LeaderboardService boards, PlayerNames names, Clock clock,
+			com.fazeel.quizking.board.CountryCup cup) {
 		this.boards = boards;
 		this.names = names;
 		this.clock = clock;
+		this.cup = cup;
 	}
 
 	/** XP rankings: today, this week or all time, optionally for one category. */
@@ -41,6 +44,12 @@ public class BoardController {
 	}
 
 	/** Countries ranked by their players' XP. */
+	/** This week's Country Cup, with the caller's country's place. */
+	@GetMapping("/cup")
+	public com.fazeel.quizking.board.CountryCup.CupView cup() {
+		return cup.view(com.fazeel.quizking.auth.Callers.currentUserId());
+	}
+
 	@GetMapping("/leaderboards/countries")
 	public com.fazeel.quizking.board.LeaderboardService.CountryBoard countries(@RequestParam(defaultValue = "WEEK") Period period) {
 		return boards.countries(period, clock.instant());

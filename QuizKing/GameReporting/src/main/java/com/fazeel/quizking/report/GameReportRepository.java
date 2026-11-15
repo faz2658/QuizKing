@@ -17,4 +17,6 @@ public interface GameReportRepository extends MongoRepository<GameReport, String
 	List<GameReport> findByVariantAndVariantKey(String variant, String variantKey);
 
 	List<GameReport> findByCompletedAtGreaterThanEqual(Instant since);
+
+	List<GameReport> findByCompletedAtGreaterThanEqualAndCompletedAtLessThan(Instant since, Instant until);
 }
