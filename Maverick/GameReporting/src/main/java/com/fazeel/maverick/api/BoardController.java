@@ -40,6 +40,22 @@ public class BoardController {
 		return boards.xp(period, categoryId, me, clock.instant());
 	}
 
+	/** Countries ranked by their players' XP. */
+	@GetMapping("/leaderboards/countries")
+	public com.fazeel.maverick.board.LeaderboardService.CountryBoard countries(@RequestParam(defaultValue = "WEEK") Period period) {
+		return boards.countries(period, clock.instant());
+	}
+
+	public record MyCountry(String country) {
+	}
+
+	/** Sets (or clears, with null) the caller's country for flags and the countries leaderboard. */
+	@org.springframework.web.bind.annotation.PostMapping("/me")
+	@org.springframework.web.bind.annotation.ResponseStatus(org.springframework.http.HttpStatus.NO_CONTENT)
+	public void me(@org.springframework.web.bind.annotation.RequestBody MyCountry body) {
+		names.country(Callers.currentUserId(), Callers.currentUserName(), body == null ? null : body.country());
+	}
+
 	/** A day's challenge ranking; today (UTC) by default. */
 	@GetMapping("/daily")
 	public DailyBoard daily(@RequestParam(required = false) LocalDate date) {

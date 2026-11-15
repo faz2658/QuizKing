@@ -1,0 +1,55 @@
+name: Deploy
+
+# Ships to the live server (Oracle, https://40-233-75-213.sslip.io) once CI has passed on the main branch,
+# i.e. after a pull request is merged. Can also be started by hand from the Actions tab.
+#
+# Repository secrets (Settings > Secrets and variables > Actions), see Maverick/deploy/README.md:
+#   ORACLE_SSH_KEY       private key allowed to log in as ubuntu@server
+#   ORACLE_HOST          server address, e.g. 40.233.75.213
+#   ORACLE_KNOWN_HOSTS   the server's SSH host key line, so the connection can't be intercepted
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [master, main]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false # never stop a deploy halfway; the next one waits
+
+jobs:
+  deploy:
+    name: Deploy to production
+    if: github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    environment: production
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          # deploy exactly the commit CI tested
+          ref: ${{ github.event.workflow_run.head_sha || github.sha }}
+
+      - name: Set up SSH
+        env:
+          SSH_KEY: ${{ secrets.ORACLE_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.ORACLE_KNOWN_HOSTS }}
+          HOST: ${{ secrets.ORACLE_HOST }}
+        run: |
+          install -m 700 -d ~/.ssh
+          printf '%s\n' "$SSH_KEY" > ~/.ssh/deploy_key && chmod 600 ~/.ssh/deploy_key
+          printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+          printf 'Host live\n  HostName %s\n  User ubuntu\n  IdentityFile ~/.ssh/deploy_key\n  IdentitiesOnly yes\n  StrictHostKeyChecking yes\n  ServerAliveInterval 30\n' "$HOST" > ~/.ssh/config
+
+      - name: Upload the release
+        run: |
+          ssh live 'rm -rf ~/quiz-king-next && mkdir ~/quiz-king-next'
+          git archive --format=tar.gz HEAD:Maverick | ssh live 'tar -xzf - -C ~/quiz-king-next'
+
+      - name: Build and restart on the server
+        run: ssh live "bash ~/quiz-king-next/deploy/deploy.sh ${{ github.event.workflow_run.head_sha || github.sha }}"
+
+      - name: Remove the key from the runner
+        if: always()
+        run: rm -f ~/.ssh/deploy_key

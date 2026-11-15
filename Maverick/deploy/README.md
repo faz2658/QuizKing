@@ -9,7 +9,25 @@ Live: https://40-233-75-213.sslip.io (Ampere A1, 4 OCPU / 12 GB, Ubuntu 24.04, T
    rule and `sudo netfilter-persistent save`.
 4. A 4 GB swap file as a memory safety net.
 
-## Deploy / update
+## Continuous deployment (GitHub Actions)
+`.github/workflows/deploy.yml` deploys automatically after CI passes on `master` (or `main`), that is, after a
+pull request is merged, and from the Actions tab by hand. It uploads the commit CI tested and runs
+`deploy/deploy.sh` on the server: swap in the code (keeping `.env`, the AI model and the databases), build the
+jars, rebuild and restart the containers, and wait until the site answers (the run fails if it doesn't).
+
+One-time setup:
+1. Make a key just for deployments and allow it on the server:
+   ```bash
+   ssh-keygen -t ed25519 -N '' -C github-actions-deploy -f ~/.ssh/quizking_deploy
+   ssh-copy-id -i ~/.ssh/quizking_deploy.pub -o IdentityFile=~/.ssh/quizking_oracle ubuntu@40.233.75.213
+   ```
+2. In GitHub: Settings > Secrets and variables > Actions > New repository secret:
+   - `ORACLE_SSH_KEY`: the private key (`pbcopy < ~/.ssh/quizking_deploy`, then paste)
+   - `ORACLE_HOST`: `40.233.75.213`
+   - `ORACLE_KNOWN_HOSTS`: the output of `ssh-keyscan -t ed25519 40.233.75.213`
+3. Optional: Settings > Environments > `production` can require an approval before each deploy.
+
+## Deploy / update by hand
 ```bash
 # on your machine: send the source (jars are built on the server, it has fast downloads)
 git archive --format=tar.gz --prefix=quiz-king/ HEAD | ssh quizking 'tar -xzf -'

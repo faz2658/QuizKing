@@ -67,4 +67,24 @@ class LeaderboardServiceTest {
 		var art = service.xp(LeaderboardService.Period.WEEK, 9, 1, now);
 		assertThat(art.top()).extracting(e -> e.name()).containsExactly("Ada");
 	}
+
+	@Test
+	void countriesAreRankedByTheirPlayersXp() {
+		Instant now = Instant.parse("2026-11-15T18:00:00Z");
+		GameReport ada = new GameReport("1", GameMode.SINGLE, 1, 5, "Art", 9, 50, 100, 5, 10, null, null, null,
+				Instant.parse("2026-11-15T10:00:00Z"), List.of());
+		GameReport bo = new GameReport("2", GameMode.SINGLE, 2, 6, "Maths", 4, 90, 100, 9, 10, null, null, null,
+				Instant.parse("2026-11-14T10:00:00Z"), List.of());
+		GameReport cy = new GameReport("3", GameMode.SINGLE, 3, 6, "Maths", 4, 20, 100, 2, 10, null, null, null,
+				Instant.parse("2026-11-14T10:00:00Z"), List.of());
+		when(reports.findByCompletedAtGreaterThanEqual(Instant.parse("2026-11-09T00:00:00Z"))).thenReturn(List.of(ada, bo, cy));
+		when(names.lookup(anyCollection())).thenAnswer(i -> Map.of(1, "Ada", 2, "Bo", 3, "Cy"));
+		when(names.countries(anyCollection())).thenAnswer(i -> Map.of(1, "CA", 2, "IN", 3, "CA"));
+
+		var board = new LeaderboardService(reports, names).countries(LeaderboardService.Period.WEEK, now);
+
+		assertThat(board.countries()).extracting(c -> c.country()).containsExactly("IN", "CA");
+		assertThat(board.countries().get(1).players()).isEqualTo(2);
+		assertThat(board.countries().get(1).xp()).isEqualTo((5 + 50) + (5 + 20));
+	}
 }
