@@ -3,10 +3,10 @@ export async function shareLink(title: string, text: string, url: string): Promi
   const nav = navigator as Navigator;
   try {
     if (nav.share) {
-      await nav.share({ title, text, url });
+      await nav.share(url ? { title, text, url } : { title, text });
       return 'shared';
     }
-    await nav.clipboard.writeText(`${text} ${url}`);
+    await nav.clipboard.writeText(url ? `${text} ${url}` : text);
     return 'copied';
   } catch (e) {
     return (e as Error)?.name === 'AbortError' ? 'shared' : 'failed';

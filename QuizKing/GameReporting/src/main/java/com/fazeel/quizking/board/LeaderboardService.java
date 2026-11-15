@@ -45,7 +45,20 @@ public class LeaderboardService {
 					r.correctAnswers(), r.totalQuestions(), where.get(r.userId())));
 		}
 		DailyEntry you = entries.stream().filter(e -> e.userId() == callerId).findFirst().orElse(null);
-		return new DailyBoard(date.toString(), entries.size(), entries.stream().limit(TOP).toList(), you);
+		return new DailyBoard(date.toString(), entries.size(), entries.stream().limit(TOP).toList(), you, place(you, entries));
+	}
+
+	/** Brag material for the caller: rank among players from their country, and "top N%" of everyone. */
+	static Place place(DailyEntry you, List<DailyEntry> entries) {
+		if (you == null) {
+			return null;
+		}
+		int topPercent = Math.max(1, (int) Math.ceil(100.0 * you.rank() / entries.size()));
+		if (you.country() == null) {
+			return new Place(null, 0, 0, topPercent);
+		}
+		List<DailyEntry> compatriots = entries.stream().filter(e -> you.country().equals(e.country())).toList();
+		return new Place(you.country(), compatriots.indexOf(you) + 1, compatriots.size(), topPercent);
 	}
 
 	public enum Period {
@@ -134,7 +147,12 @@ public class LeaderboardService {
 		return board.you() == null ? 0 : board.you().rank();
 	}
 
-	public record DailyBoard(String date, int players, List<DailyEntry> top, DailyEntry you) {
+	/** {@code you}/{@code place} are null if the caller didn't finish that day's challenge. */
+	public record DailyBoard(String date, int players, List<DailyEntry> top, DailyEntry you, Place place) {
+	}
+
+	/** The caller's {@code countryRank} of {@code countryPlayers} (0 without a country) and "top {@code topPercent}%". */
+	public record Place(String country, int countryRank, int countryPlayers, int topPercent) {
 	}
 
 	public record DailyEntry(int rank, int userId, String name, int score, Integer maxScore, int correctAnswers,

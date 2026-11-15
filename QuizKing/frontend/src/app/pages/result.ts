@@ -6,8 +6,9 @@ import { BoardsApi, QuizApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { shareCard } from '../core/share-card';
 import { shareLink } from '../core/invite';
+import { bragLine, dailyShareText, emojiGrid, rankTitle } from '../core/brag';
 import { errorMessage } from '../core/http-errors';
-import { ResultView } from '../core/models';
+import { DailyBoard as DailyBoardData, ResultView } from '../core/models';
 import { CountUp } from '../motion/count-up';
 import { Sparks } from '../motion/sparks';
 import { GameFx } from '../core/game-fx';
@@ -39,6 +40,8 @@ export function verdict(percentage: number): string {
           <div class="text">
             <span class="chip">{{ r.variant === 'DAILY' ? 'Daily Challenge · ' + r.variantKey : r.gameName }}</span>
             <h1>{{ title() }}</h1>
+            <p class="rank-title">🏅 {{ rankName() }}@if (brag()) { <span> · {{ brag() }}</span> }</p>
+            @if (r.variant === 'DAILY' && r.review.length) { <p class="grid-line" aria-label="Your answers, right and wrong">{{ grid() }}</p> }
             @if (r.variant === 'CHALLENGE' && r.opponentScore !== null && r.opponentScore !== undefined) {
               <p class="vs" [class.won]="r.score > r.opponentScore">
                 {{ r.score > r.opponentScore ? '🏆 You beat the challenge' : r.score === r.opponentScore ? '🤝 A tie' : '😤 Not this time' }}:
@@ -55,6 +58,7 @@ export function verdict(percentage: number): string {
                 <button type="button" class="btn" (click)="challengeFriends(r)" [disabled]="sharing()">⚔️ Challenge a friend</button>
               }
               @if (r.variant === 'DAILY') {
+                <button type="button" class="btn" (click)="copyEmoji(r)">🟩 Copy emoji result</button>
                 <a class="btn btn-primary" routerLink="/">Play more games</a>
               } @else if (r.gameId > 0) {
                 <a class="btn btn-primary" [routerLink]="['/play', r.gameId]">Play again</a>
@@ -99,6 +103,8 @@ export function verdict(percentage: number): string {
     }
   `,
   styles: `
+    .rank-title { margin: -4px 0 6px; font-weight: 700; color: var(--text-muted); }
+    .grid-line { font-size: 1.5rem; letter-spacing: 2px; margin: 0 0 10px; }
     .summary { display: grid; grid-template-columns: auto 1fr; gap: 32px; align-items: center; }
     .dial {
       width: 180px; aspect-ratio: 1; border-radius: 50%; display: grid; place-content: center; text-align: center;
@@ -141,6 +147,14 @@ export class Result {
   );
 
   protected readonly title = computed(() => verdict(this.state()?.result?.percentage ?? 0));
+  /** Today's board for a Daily Challenge result, for the brag line ("Top 4% today · #2 in Canada"). */
+  private readonly daily = signal<DailyBoardData | null>(null);
+  protected readonly brag = computed(() => bragLine(this.daily()));
+  protected readonly grid = computed(() => emojiGrid(this.state()?.result?.review ?? []));
+  protected readonly rankName = computed(() => {
+    const r = this.state()?.result;
+    return r ? rankTitle(r.percentage, r.variant === 'DAILY' ? 'Daily' : r.gameName) : '';
+  });
   private readonly sparks = inject(Sparks);
   private readonly fx = inject(GameFx);
   private readonly auth = inject(AuthService);
@@ -171,8 +185,8 @@ export class Result {
     try {
       let rankLine: string | null = null;
       if (r.variant === 'DAILY') {
-        const board = await firstValueFrom(this.boards.daily(r.variantKey ?? undefined)).catch(() => null);
-        rankLine = board?.you ? `#${board.you.rank} of ${board.players} in today's challenge` : null;
+        const board = this.daily() ?? (await firstValueFrom(this.boards.daily(r.variantKey ?? undefined)).catch(() => null));
+        rankLine = bragLine(board) ?? (board?.you ? `#${board.you.rank} of ${board.players} in today's challenge` : null);
       }
       const title = r.variant === 'DAILY' ? `the Daily Challenge (${r.variantKey})` : r.gameName;
       const how = await shareCard({ player: this.auth.user()?.userName ?? 'A player', title, score: r.score, maxScore: r.maxScore,
@@ -187,7 +201,19 @@ export class Result {
     }
   }
 
+  protected async copyEmoji(r: ResultView): Promise<void> {
+    const text = dailyShareText(r.variantKey ?? '', r.review, r.correctAnswers, r.totalQuestions, this.brag(), `${location.origin}/daily`);
+    const how = await shareLink('Quiz King Daily', text, '');
+    this.shareNote.set(how === 'copied' ? 'Copied! Paste it in your group chat.' : how === 'failed' ? text : null);
+  }
+
   constructor() {
+    effect(() => {
+      const r = this.state()?.result;
+      if (r?.variant === 'DAILY' && !this.daily()) {
+        this.boards.daily(r.variantKey ?? undefined).subscribe({ next: (b) => this.daily.set(b), error: () => undefined });
+      }
+    });
     effect(() => {
       const r = this.state()?.result;
       if (r && r.percentage >= 70) {

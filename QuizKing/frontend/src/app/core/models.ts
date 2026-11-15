@@ -292,6 +292,8 @@ export interface DailyBoard {
   players: number;
   top: DailyEntry[];
   you: DailyEntry | null;
+  /** Your rank among players from your country and "top N%" of everyone (null if you haven't played). */
+  place?: { country: string | null; countryRank: number; countryPlayers: number; topPercent: number } | null;
 }
 
 export interface Streak {

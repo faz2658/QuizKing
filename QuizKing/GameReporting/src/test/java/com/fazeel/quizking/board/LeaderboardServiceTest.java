@@ -87,4 +87,22 @@ class LeaderboardServiceTest {
 		assertThat(board.countries().get(1).players()).isEqualTo(2);
 		assertThat(board.countries().get(1).xp()).isEqualTo((5 + 50) + (5 + 20));
 	}
+
+	@Test
+	void placeGivesCountryRankAndTopPercent() {
+		List<LeaderboardService.DailyEntry> entries = List.of(
+				new LeaderboardService.DailyEntry(1, 1, "A", 90, 100, 9, 10, "IN"),
+				new LeaderboardService.DailyEntry(2, 2, "B", 80, 100, 8, 10, "CA"),
+				new LeaderboardService.DailyEntry(3, 3, "C", 70, 100, 7, 10, "CA"),
+				new LeaderboardService.DailyEntry(4, 4, "D", 60, 100, 6, 10, null));
+
+		LeaderboardService.Place place = LeaderboardService.place(entries.get(2), entries);
+		assertThat(place.country()).isEqualTo("CA");
+		assertThat(place.countryRank()).isEqualTo(2);
+		assertThat(place.countryPlayers()).isEqualTo(2);
+		assertThat(place.topPercent()).isEqualTo(75);
+		assertThat(LeaderboardService.place(entries.get(3), entries).countryRank()).isZero();
+		assertThat(LeaderboardService.place(entries.get(0), entries).topPercent()).isEqualTo(25);
+		assertThat(LeaderboardService.place(null, entries)).isNull();
+	}
 }
