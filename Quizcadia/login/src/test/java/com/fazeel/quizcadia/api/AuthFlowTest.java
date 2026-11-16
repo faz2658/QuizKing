@@ -2,6 +2,8 @@ package com.fazeel.quizcadia.api;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.time.Instant;
+import java.util.List;
 import java.util.Map;
 
 import org.junit.jupiter.api.Test;
@@ -10,6 +12,11 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.MediaType;
+import org.springframework.security.oauth2.jose.jws.MacAlgorithm;
+import org.springframework.security.oauth2.jwt.JwsHeader;
+import org.springframework.security.oauth2.jwt.JwtClaimsSet;
+import org.springframework.security.oauth2.jwt.JwtEncoder;
+import org.springframework.security.oauth2.jwt.JwtEncoderParameters;
 import org.springframework.web.client.RestClient;
 
 import com.fazeel.quizcadia.account.AccountRepository;
@@ -38,6 +45,27 @@ class AuthFlowTest {
 	@SuppressWarnings("unchecked")
 	Map<String, Object> postForMap(String path, Object body) {
 		return http().post().uri(path).contentType(MediaType.APPLICATION_JSON).body(body).retrieve().body(Map.class);
+	}
+
+	@Autowired
+	JwtEncoder jwtEncoder;
+
+	String signedToken(String issuer) {
+		JwtClaimsSet claims = JwtClaimsSet.builder().issuer(issuer).subject("1").claim("roles", List.of("USER"))
+				.issuedAt(Instant.now()).expiresAt(Instant.now().plusSeconds(60)).build();
+		return jwtEncoder.encode(JwtEncoderParameters.from(JwsHeader.with(MacAlgorithm.HS256).build(), claims)).getTokenValue();
+	}
+
+	int getStatus(String path, String token) {
+		return http().get().uri(path).header("Authorization", "Bearer " + token).retrieve().toBodilessEntity()
+				.getStatusCode().value();
+	}
+
+	@Test
+	void tokensFromBeforeTheRenameStillWork() {
+		// a browser signed in before the rename sends its old token with every request, public ones included
+		assertThat(getStatus("/api/v1/auth/providers", signedToken("quiz-king-login"))).isEqualTo(200);
+		assertThat(getStatus("/api/v1/auth/providers", signedToken("someone-else"))).isEqualTo(401);
 	}
 
 	@Test
