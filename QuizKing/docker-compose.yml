@@ -88,9 +88,12 @@ services:
       KAFKA_MESSAGE_MAX_BYTES: 5242880
       KAFKA_REPLICA_FETCH_MAX_BYTES: 5242880
     ports: ["19092:19092"]
+    # A port check, not kafka-topics.sh: that starts a whole JVM (about 3 s of CPU) and ran every 5 s, which was
+    # the 1.5-2 core CPU spike seen in the load test (~60% of a core around the clock).
     healthcheck:
-      test: ["CMD-SHELL", "/opt/kafka/bin/kafka-topics.sh --bootstrap-server localhost:9092 --list"]
-      interval: 5s
+      test: ["CMD-SHELL", "nc -z localhost 9092"]
+      interval: 10s
+      start_period: 20s
       retries: 30
 
   prometheus:

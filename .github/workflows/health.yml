@@ -1,0 +1,108 @@
+name: Health check
+
+# Every 15 minutes: is the live site up, and is the server healthy? On a problem it opens a GitHub issue labelled
+# "site-alert" that mentions the owner, so GitHub sends an email / phone notification; it comments when the problem
+# changes and closes the issue once everything is back to normal. Uses the deploy's SSH secrets (see deploy.yml).
+#
+# Thresholds: disk >= 85% used, memory available < 10%, any container not running / restarting / unhealthy,
+# or the site or its API not answering 200.
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: health-check
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+  issues: write
+
+env:
+  SITE: https://40-233-75-213.sslip.io
+  DISK_MAX: 85
+  MEM_MIN_AVAILABLE: 10
+
+jobs:
+  check:
+    name: Check the live site
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Site and API answer
+        id: http
+        run: |
+          problems=""
+          for path in / /api/game/games /api/v1/auth/providers; do
+            code=$(curl -s -o /dev/null -w '%{http_code}' --max-time 20 "$SITE$path" || echo 000)
+            [ "$code" = 200 ] || problems="$problems- \`$path\` answered **$code** (expected 200)\n"
+          done
+          printf 'problems<<EOF\n%b\nEOF\n' "$problems" >> "$GITHUB_OUTPUT"
+
+      - name: Server disk, memory and containers
+        id: server
+        env:
+          SSH_KEY: ${{ secrets.ORACLE_SSH_KEY }}
+          KNOWN_HOSTS: ${{ secrets.ORACLE_KNOWN_HOSTS }}
+          HOST: ${{ secrets.ORACLE_HOST }}
+        run: |
+          problems="" ; facts=""
+          if [ -z "$SSH_KEY" ] || [ -z "$HOST" ]; then
+            problems="- Can't check the server itself: the ORACLE_* secrets aren't available to this workflow\n"
+          else
+            install -m 700 -d ~/.ssh
+            printf '%s\n' "$SSH_KEY" > ~/.ssh/key && chmod 600 ~/.ssh/key
+            printf '%s\n' "$KNOWN_HOSTS" > ~/.ssh/known_hosts
+            if out=$(ssh -i ~/.ssh/key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=20 ubuntu@"$HOST" '
+                  echo "disk $(df --output=pcent / | tail -1 | tr -dc 0-9)"
+                  echo "memavail $(awk "/MemTotal/{t=\$2} /MemAvailable/{a=\$2} END{print int(100*a/t)}" /proc/meminfo)"
+                  sudo docker ps -a --filter label=com.docker.compose.project=quiz-king --format "ctr {{.Names}} {{.State}} {{.Status}}"
+                '); then
+              disk=$(echo "$out" | awk '/^disk/{print $2}')
+              mem=$(echo "$out" | awk '/^memavail/{print $2}')
+              facts="Disk ${disk}% used, ${mem}% memory available."
+              [ "${disk:-0}" -ge "$DISK_MAX" ] && problems="$problems- Disk is **${disk}%** full (alert at ${DISK_MAX}%). Free space with \`sudo docker image prune -a -f\` and \`sudo docker builder prune -a -f\`.\n"
+              [ "${mem:-100}" -lt "$MEM_MIN_AVAILABLE" ] && problems="$problems- Only **${mem}%** of memory is available (alert below ${MEM_MIN_AVAILABLE}%).\n"
+              bad=$(echo "$out" | awk '/^ctr/ && ($3 != "running" || /unhealthy|Restarting/) {sub(/^ctr /,""); print "  - " $0}')
+              [ -n "$bad" ] && problems="$problems- Containers in trouble:\n$bad\n"
+            else
+              problems="- Couldn't reach the server over SSH (it may be frozen or out of memory)\n"
+            fi
+            rm -f ~/.ssh/key
+          fi
+          printf 'problems<<EOF\n%b\nEOF\n' "$problems" >> "$GITHUB_OUTPUT"
+          echo "facts=$facts" >> "$GITHUB_OUTPUT"
+
+      - name: Open, update or close the alert issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          HTTP_PROBLEMS: ${{ steps.http.outputs.problems }}
+          SERVER_PROBLEMS: ${{ steps.server.outputs.problems }}
+          FACTS: ${{ steps.server.outputs.facts }}
+        run: |
+          problems=$(printf '%s\n%s' "$HTTP_PROBLEMS" "$SERVER_PROBLEMS" | sed '/^[[:space:]]*$/d')
+          open=$(gh issue list --label site-alert --state open --json number --jq '.[0].number // empty')
+          run_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+          if [ -n "$problems" ]; then
+            echo "::warning::Problems found"; printf '%s\n' "$problems"
+            body=$(printf 'Problems found by the health check:\n\n%s\n\n%s\n\n[Check run](%s)' "$problems" "$FACTS" "$run_url")
+            if [ -z "$open" ]; then
+              gh label create site-alert --color B60205 --description "Opened by the health check" 2>/dev/null || true
+              gh issue create --title "Quiz King needs attention" --label site-alert \
+                --body "$(printf '@faz2658 the live site needs attention.\n\n%s' "$body")"
+            else
+              last=$(gh issue view "$open" --json body,comments --jq '(.comments | last | .body) // .body')
+              # only comment when the list of problems changed, so a long outage doesn't send an email every 15 minutes
+              if ! printf '%s' "$last" | grep -qF "$(printf '%s' "$problems" | head -1)"; then
+                gh issue comment "$open" --body "$body"
+              fi
+            fi
+            # not "exit 1": GitHub would also email about every failed scheduled run, every 15 minutes
+          elif [ -n "$open" ]; then
+            gh issue comment "$open" --body "$(printf 'All clear again. %s\n\n[Check run](%s)' "$FACTS" "$run_url")"
+            gh issue close "$open"
+          else
+            echo "All clear. $FACTS"
+          fi
