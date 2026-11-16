@@ -1,0 +1,56 @@
+spring:
+  application:
+    name: recommendations
+  config:
+    import: optional:configserver:${CONFIG_SERVER_URL:http://localhost:8083}
+  neo4j:
+    uri: ${NEO4J_URI:bolt://localhost:7687}
+    authentication:
+      username: ${NEO4J_USERNAME:neo4j}
+      password: ${NEO4J_PASSWORD:}
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS:localhost:19092}
+    consumer:
+      group-id: recommendations
+      auto-offset-reset: earliest
+      value-deserializer: org.springframework.kafka.support.serializer.ErrorHandlingDeserializer
+      properties:
+        spring.deserializer.value.delegate.class: org.springframework.kafka.support.serializer.JacksonJsonDeserializer
+        spring.json.trusted.packages: com.fazeel.quizcadia.domain,java.lang
+        spring.json.use.type.headers: false
+    producer:
+      value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
+      properties:
+        spring.json.add.type.headers: false
+
+server:
+  port: ${PORT:9095}
+
+quizcadia:
+  kafka:
+    enabled: ${KAFKA_ENABLED:true}
+  cors:
+    allowed-origins: ${CORS_ALLOWED_ORIGINS:http://localhost:4200}
+  topics:
+    game-created: created-new-game.t
+    multiplayer-game-created: created-new-multiplayer-game.t
+    game-deleted: deleted-game-by-id.t
+    user-registered: new-user-created.t
+    single-player-result: Results3.t
+    multiplayer-result: multiplayerresult.ts
+    adaptive-result: AdaptiveResult.t
+
+eureka:
+  client:
+    enabled: ${EUREKA_ENABLED:true}
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8082/eureka}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics,prometheus
+  metrics:
+    tags:
+      application: ${spring.application.name}

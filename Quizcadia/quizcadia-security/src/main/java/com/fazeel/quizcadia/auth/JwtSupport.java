@@ -1,0 +1,88 @@
+package com.fazeel.quizcadia.auth;
+
+import java.nio.charset.StandardCharsets;
+import java.security.SecureRandom;
+import java.util.Base64;
+
+import javax.crypto.SecretKey;
+import javax.crypto.spec.SecretKeySpec;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.oauth2.core.DelegatingOAuth2TokenValidator;
+import org.springframework.security.oauth2.jose.jws.MacAlgorithm;
+import org.springframework.security.oauth2.jwt.JwtClaimNames;
+import org.springframework.security.oauth2.jwt.JwtClaimValidator;
+import org.springframework.security.oauth2.jwt.JwtDecoder;
+import org.springframework.security.oauth2.jwt.JwtValidators;
+import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
+import org.springframework.security.oauth2.server.resource.authentication.JwtAuthenticationConverter;
+import org.springframework.security.oauth2.server.resource.authentication.JwtGrantedAuthoritiesConverter;
+
+/**
+ * Verifies the HS256 tokens the login service signs. The subject is the user id and the "roles" claim
+ * (USER, ADMIN or GUEST) becomes ROLE_* authorities.
+ */
+@Configuration(proxyBeanMethods = false)
+public class JwtSupport {
+
+	/** Must match the login service's TokenService.ISSUER. */
+	public static final String ISSUER = "quizcadia-login";
+
+	/**
+	 * Tokens signed before the rename to QuizCadia say "quiz-king-login". Still accepted (same secret) so nobody is
+	 * signed out by the rename; safe to remove once the longest token lifetime has passed after that deploy.
+	 */
+	static final String LEGACY_ISSUER = "quiz-king-login";
+
+	private static final Logger log = LoggerFactory.getLogger(JwtSupport.class);
+
+	@Bean
+	JwtDecoder quizcadiaJwtDecoder(@Value("${quizcadia.jwt.secret:}") String secret) {
+		NimbusJwtDecoder decoder = NimbusJwtDecoder.withSecretKey(key(secret)).macAlgorithm(MacAlgorithm.HS256).build();
+		decoder.setJwtValidator(new DelegatingOAuth2TokenValidator<>(JwtValidators.createDefault(),
+				new JwtClaimValidator<Object>(JwtClaimNames.ISS,
+						iss -> iss != null && (ISSUER.equals(iss.toString()) || LEGACY_ISSUER.equals(iss.toString())))));
+		return decoder;
+	}
+
+	@Bean
+	JwtAuthenticationConverter quizcadiaJwtAuthenticationConverter() {
+		JwtGrantedAuthoritiesConverter roles = new JwtGrantedAuthoritiesConverter();
+		roles.setAuthoritiesClaimName("roles");
+		roles.setAuthorityPrefix("ROLE_");
+		JwtAuthenticationConverter converter = new JwtAuthenticationConverter();
+		converter.setJwtGrantedAuthoritiesConverter(roles);
+		return converter;
+	}
+
+	/** Same key rules as the login service: base64 or plain text, at least 32 bytes. */
+	static SecretKey key(String secret) {
+		byte[] bytes;
+		if (secret == null || secret.isBlank()) {
+			// No secret: a random key means every token is rejected (fail closed), which is fine for tests
+			bytes = new byte[32];
+			new SecureRandom().nextBytes(bytes);
+			log.warn("QUIZCADIA_JWT_SECRET is not set: this service will reject every token");
+		}
+		else {
+			bytes = decode(secret);
+			if (bytes.length < 32) {
+				throw new IllegalStateException("QUIZCADIA_JWT_SECRET must be at least 32 bytes");
+			}
+		}
+		return new SecretKeySpec(bytes, "HmacSHA256");
+	}
+
+	private static byte[] decode(String secret) {
+		try {
+			return Base64.getDecoder().decode(secret);
+		}
+		catch (IllegalArgumentException notBase64) {
+			return secret.getBytes(StandardCharsets.UTF_8);
+		}
+	}
+}

@@ -1,0 +1,17 @@
+# HTTPS with an automatic Let's Encrypt certificate for SITE_ADDRESS, then everything to the QuizCadia frontend.
+{$SITE_ADDRESS} {
+	encode zstd gzip
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		-Server
+	}
+	reverse_proxy frontend:80
+}
+
+# Other names for the site (www, the old sslip.io address): their own certificate, then a permanent redirect so links
+# and bookmarks keep working. When REDIRECT_ADDRESSES is empty this block only answers http://redirect.localhost.
+{$REDIRECT_ADDRESSES:http://redirect.localhost} {
+	redir https://{$SITE_ADDRESS}{uri} permanent
+}

@@ -4,11 +4,11 @@ name: Deploy
 # i.e. after a pull request is merged. Can also be started by hand from the Actions tab.
 #
 # 1. "Build images" compiles the jars and builds every app image on an ARM runner (the server is ARM too),
-#    tagged with the commit, and pushes them to GitHub's container registry: ghcr.io/faz2658/quizking/<service>.
+#    tagged with the commit, and pushes them to GitHub's container registry: ghcr.io/faz2658/quizcadia/<service>.
 # 2. "Deploy" copies the compose files to the server and runs deploy/deploy.sh there, which only pulls the new
 #    images and restarts the services whose image changed. Nothing is compiled on the live server any more.
 #
-# Repository secrets (Settings > Secrets and variables > Actions), see QuizKing/deploy/README.md:
+# Repository secrets (Settings > Secrets and variables > Actions), see Quizcadia/deploy/README.md:
 #   ORACLE_SSH_KEY       private key allowed to log in as ubuntu@server
 #   ORACLE_HOST          server address, e.g. 40.233.75.213
 #   ORACLE_KNOWN_HOSTS   the server's SSH host key line, so the connection can't be intercepted
@@ -29,7 +29,7 @@ permissions:
 
 env:
   SHA: ${{ github.event.workflow_run.head_sha || github.sha }}
-  IMAGE_REGISTRY: ghcr.io/faz2658/quizking
+  IMAGE_REGISTRY: ghcr.io/faz2658/quizcadia
   # Every service built from this repository (the rest are stock images: databases, Kafka, Caddy, ...)
   APP_SERVICES: >-
     discovery config question-generator game-manager game-engine multiplayer-game-engine adaptive-game-engine
@@ -46,7 +46,7 @@ jobs:
       packages: write
     defaults:
       run:
-        working-directory: QuizKing
+        working-directory: Quizcadia
     steps:
       - uses: actions/checkout@v5
         with:
@@ -70,7 +70,7 @@ jobs:
       - name: Build and push the images
         env:
           IMAGE_TAG: ${{ env.SHA }}
-          QUIZKING_JWT_SECRET: build-only-placeholder-never-used-at-runtime
+          QUIZCADIA_JWT_SECRET: build-only-placeholder-never-used-at-runtime
         run: |
           docker compose build $APP_SERVICES
           docker compose push $APP_SERVICES
@@ -102,14 +102,14 @@ jobs:
 
       - name: Upload the release (compose files, Caddyfile, scripts)
         run: |
-          ssh live 'rm -rf ~/quiz-king-next && mkdir ~/quiz-king-next'
-          git archive --format=tar.gz HEAD:QuizKing | ssh live 'tar -xzf - -C ~/quiz-king-next'
+          ssh live 'rm -rf ~/quizcadia-next && mkdir ~/quizcadia-next'
+          git archive --format=tar.gz HEAD:Quizcadia | ssh live 'tar -xzf - -C ~/quizcadia-next'
 
       - name: Pull the new images and restart what changed
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         # The token goes over SSH on stdin, never on a command line; it stops working when this job ends.
-        run: printf '%s' "$TOKEN" | ssh live "bash ~/quiz-king-next/deploy/deploy.sh $SHA $IMAGE_REGISTRY ${{ github.actor }}"
+        run: printf '%s' "$TOKEN" | ssh live "bash ~/quizcadia-next/deploy/deploy.sh $SHA $IMAGE_REGISTRY ${{ github.actor }}"
 
       - name: Remove the key from the runner
         if: always()

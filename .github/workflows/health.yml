@@ -57,7 +57,7 @@ jobs:
             if out=$(ssh -i ~/.ssh/key -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes -o ConnectTimeout=20 ubuntu@"$HOST" '
                   echo "disk $(df --output=pcent / | tail -1 | tr -dc 0-9)"
                   echo "memavail $(awk "/MemTotal/{t=\$2} /MemAvailable/{a=\$2} END{print int(100*a/t)}" /proc/meminfo)"
-                  sudo docker ps -a --filter label=com.docker.compose.project=quiz-king --format "ctr {{.Names}} {{.State}} {{.Status}}"
+                  sudo docker ps -a --filter label=com.docker.compose.project=quizcadia --format "ctr {{.Names}} {{.State}} {{.Status}}"
                 '); then
               disk=$(echo "$out" | awk '/^disk/{print $2}')
               mem=$(echo "$out" | awk '/^memavail/{print $2}')
@@ -90,7 +90,7 @@ jobs:
             body=$(printf 'Problems found by the health check:\n\n%s\n\n%s\n\n[Check run](%s)' "$problems" "$FACTS" "$run_url")
             if [ -z "$open" ]; then
               gh label create site-alert --color B60205 --description "Opened by the health check" 2>/dev/null || true
-              gh issue create --title "Quiz King needs attention" --label site-alert \
+              gh issue create --title "QuizCadia needs attention" --label site-alert \
                 --body "$(printf '@faz2658 the live site needs attention.\n\n%s' "$body")"
             else
               last=$(gh issue view "$open" --json body,comments --jq '(.comments | last | .body) // .body')
