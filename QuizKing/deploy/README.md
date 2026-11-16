@@ -85,14 +85,9 @@ load test the whole stack peaked at about 10 GB of the server's 12 GB.
   at $20, stops the containers and soft-stops the server. Logs: `/var/log/quizking-budget-guard.log`.
   Test without stopping anything: `sudo LIMIT=0 quizking-budget-guard --dry-run`.
 
-## The rename to Quiz King (one-time)
+## The rename to Quiz King (done)
 
-`deploy.sh` runs `deploy/rename-migration.sh` around the restart. On a machine still running the stack under
-its old name it stops the old containers, copies the database and certificate volumes to `quiz-king_*`
-volumes, renames the old settings in `.env` to `QUIZKING_*`, and pins the existing database login
-(`MYSQL_USER`/`MYSQL_PASSWORD`/`NEO4J_PASSWORD`), which lives inside the data. On a laptop run it by hand:
-
-    bash deploy/rename-migration.sh before && docker compose --profile ai up -d --build && bash deploy/rename-migration.sh after
-
-The old volumes are kept as a backup. Once everything works, delete them (`docker volume ls` shows them)
-and delete `rename-migration.sh`.
+The move from the old Maverick name finished in November 2026: data, certificates and settings live in the
+`quiz-king_*` volumes and `QUIZKING_*` settings. The one-time migration script has been removed (it's in git
+history if an old laptop copy ever needs it). The server's `.env` keeps the database login the old data was
+created with (`MYSQL_USER`/`MYSQL_PASSWORD`/`NEO4J_PASSWORD`); don't change those without changing the database.

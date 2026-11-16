@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/cor
 import { RouterLink } from '@angular/router';
 import { Analytics } from '../core/analytics';
 
-const UPDATED = '15 November 2026';
+const UPDATED = '16 November 2026';
 
 const styles = `
   :host { display: block; max-width: 760px; margin: 0 auto; padding: 8px 0 56px; line-height: 1.6; }
@@ -71,8 +71,9 @@ const styles = `
       <li>You can turn analytics off at any time: <button type="button" class="linkish" (click)="optOut()">stop analytics</button>
         @if (optedOut()) { <span class="muted">(done)</span> }. You can also block it with Google's
         <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">opt-out add-on</a>.</li>
-      <li>You can ask us to delete your account and game history by writing to the support email shown on the Google
-        sign-in screen; we'll do it within 30 days.</li>
+      <li>You can ask us to delete your account and game history by emailing
+        <a href="mailto:faz2658@gmail.com?subject=Delete%20my%20Quiz%20King%20account">faz2658&#64;gmail.com</a>
+        from the address you signed up with; we'll do it within 30 days.</li>
     </ul>
 
     <h2>Children</h2>
