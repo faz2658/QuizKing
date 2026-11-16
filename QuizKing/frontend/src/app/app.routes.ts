@@ -32,6 +32,7 @@ export const routes: Routes = [
   { path: 'invite', title: 'Invite friends · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/invite').then((m) => m.Invite) },
   { path: 'leaderboard', title: 'Leaderboard · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/leaderboard').then((m) => m.Leaderboard) },
   { path: 'me', title: 'My stats · Quiz King', canActivate: [playerGuard], loadComponent: () => import('./pages/profile').then((m) => m.Profile) },
+  { path: 'admin/analytics', title: 'Website analytics · Quiz King', canActivate: [playerGuard, adminGuard], loadComponent: () => import('./pages/website-analytics').then((m) => m.WebsiteAnalytics) },
   { path: 'admin/stats', title: 'Users & activity · Quiz King', canActivate: [playerGuard, adminGuard], loadComponent: () => import('./pages/stats').then((m) => m.Stats) },
   { path: 'admin', title: 'Admin · Quiz King', canActivate: [playerGuard, adminGuard], loadComponent: () => import('./pages/admin').then((m) => m.Admin) },
   { path: '**', redirectTo: '' },

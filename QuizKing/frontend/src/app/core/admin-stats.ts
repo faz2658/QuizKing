@@ -31,3 +31,21 @@ export class AdminStatsApi {
     return this.http.get<ActivityStatsView>('/api/v1/reports/admin/stats', { params: new HttpParams().set('days', days) });
   }
 }
+
+export interface GaTotals { activeUsers: number; newUsers: number; sessions: number; pageViews: number; avgSessionSeconds: number; engagementRate: number }
+export interface GaDay { day: string; activeUsers: number; pageViews: number }
+export interface GaRow { name: string; value: number }
+export interface WebsiteAnalyticsView {
+  configured: boolean; error: string | null; propertyId: string | null; days: number; activeNow: number;
+  totals: GaTotals | null; byDay: GaDay[]; pages: GaRow[]; countries: GaRow[]; devices: GaRow[]; channels: GaRow[]; events: GaRow[];
+}
+
+/** Google Analytics numbers for admins, read by the reporting service with a read-only service account. */
+@Injectable({ providedIn: 'root' })
+export class WebsiteAnalyticsApi {
+  private readonly http = inject(HttpClient);
+
+  view(days: number): Observable<WebsiteAnalyticsView> {
+    return this.http.get<WebsiteAnalyticsView>('/api/v1/reports/admin/analytics', { params: new HttpParams().set('days', days) });
+  }
+}
