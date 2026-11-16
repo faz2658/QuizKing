@@ -58,4 +58,28 @@ class BotPlayerTest {
 		MultiPlayerResult result = MatchService.toResult(m);
 		assertThat(result.standings()).extracting(MultiPlayerResult.Standing::userId).containsExactly(5);
 	}
+
+	@Test
+	void theMatchKnowsWhenItChangesNextByItself() {
+		MultiplayerMatch m = withBot(3);
+		java.time.Instant next = m.nextChangeAt(T0);
+		// the bot answers within the question's time; until then nothing changes on its own
+		assertThat(next).isAfter(T0.plusSeconds(1)).isBefore(T0.plusSeconds(11));
+		assertThat(m.advanceClock(next.minusMillis(1))).isFalse();
+		assertThat(m.advanceClock(next)).isTrue(); // the bot's answer arrives exactly then
+
+		// after that, the next change is later still, and never after the open question closes
+		java.time.Instant after = m.nextChangeAt(next);
+		assertThat(after).isAfter(next);
+		MatchQuestion open = m.currentQuestion().orElseThrow();
+		assertThat(after).isBeforeOrEqualTo(open.getOpenedAt().plusSeconds(10).plus(MultiplayerMatch.GRACE));
+	}
+
+	@Test
+	void aFinishedMatchNeverChangesAgain() {
+		MultiplayerMatch m = withBot(1);
+		m.advanceClock(T0.plusSeconds(60));
+		assertThat(m.getStatus()).isEqualTo(MultiplayerMatch.Status.COMPLETED);
+		assertThat(m.nextChangeAt(T0.plusSeconds(60))).isNull();
+	}
 }

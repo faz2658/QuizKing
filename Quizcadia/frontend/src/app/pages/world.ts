@@ -2,13 +2,14 @@ import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, computed, injec
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
-import { Subscription, catchError, map, of, switchMap, timer } from 'rxjs';
+import { Subscription, catchError, map, of, timer } from 'rxjs';
 import { ArenaApi, BoardsApi, CatalogApi, MultiplayerApi } from '../core/api';
 import { allCountries, countryName, flag } from '../core/countries';
 import { errorMessage } from '../core/http-errors';
 import { ArenaView, CountryBoard, GameCard, QuickStatus } from '../core/models';
 import { World } from '../core/world';
 import { WorldMap } from '../ui/world-map';
+import { livePoll } from '../core/live-poll';
 
 /** "m:ss" for a countdown. */
 export function clock(seconds: number): string {
@@ -134,7 +135,7 @@ export class WorldPage implements OnInit {
   });
   private readonly arenaApi = inject(ArenaApi);
   protected readonly arena = toSignal(
-    timer(0, 5000).pipe(switchMap(() => this.arenaApi.view().pipe(catchError(() => of(null as ArenaView | null))))),
+    livePoll(() => this.arenaApi.view().pipe(catchError(() => of(null as ArenaView | null))), { every: 5000, max: 15000 }),
     { initialValue: null },
   );
   private readonly now = toSignal(timer(0, 1000).pipe(map(() => Date.now())), { initialValue: Date.now() });
@@ -160,7 +161,7 @@ export class WorldPage implements OnInit {
       next: (s) => {
         this.onQuick(s);
         this.poll.unsubscribe();
-        this.poll = timer(1000, 1000).pipe(switchMap(() => this.mp.quickStatus())).subscribe({
+        this.poll = livePoll(() => this.mp.quickStatus(), { every: 1000, max: 2000, firstAfter: 1000 }).subscribe({
           next: (n) => this.onQuick(n),
           error: (e) => this.error.set(errorMessage(e)),
         });

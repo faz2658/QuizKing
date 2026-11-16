@@ -27,9 +27,17 @@ public class MatchService {
 	private final MatchEvents events;
 	private final SeenQuestionRepository seen;
 	private final Clock clock;
+	private final MatchUpdates updates;
 
 	public MatchService(MatchRepository matches, GameRepository games, GameSource gameSource, MatchFactory factory,
 			MatchEvents events, SeenQuestionRepository seen, Clock clock) {
+		this(matches, games, gameSource, factory, events, seen, clock, new MatchUpdates());
+	}
+
+	@org.springframework.beans.factory.annotation.Autowired
+	public MatchService(MatchRepository matches, GameRepository games, GameSource gameSource, MatchFactory factory,
+			MatchEvents events, SeenQuestionRepository seen, Clock clock, MatchUpdates updates) {
+		this.updates = updates;
 		this.matches = matches;
 		this.games = games;
 		this.gameSource = gameSource;
@@ -105,6 +113,7 @@ public class MatchService {
 		if (publish) {
 			events.matchCompleted(toResult(saved));
 		}
+		updates.changed(saved.getMatchId()); // answer anyone waiting for this match (see MatchController#next)
 		return saved;
 	}
 

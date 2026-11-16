@@ -1,10 +1,11 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, inject, input, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { Subscription, switchMap, timer } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { MultiplayerApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { LobbyStatus } from '../core/models';
+import { livePoll } from '../core/live-poll';
 
 @Component({
   selector: 'mv-lobby',
@@ -88,8 +89,7 @@ export class Lobby implements OnInit {
     this.api.join(gameId, this.me).subscribe({
       next: (s) => {
         this.update(s);
-        this.poll = timer(1000, 1000)
-          .pipe(switchMap(() => this.api.lobby(gameId, this.me)))
+        this.poll = livePoll(() => this.api.lobby(gameId, this.me), { every: 1000, max: 3000, firstAfter: 1000 })
           .subscribe({ next: (n) => this.update(n), error: (e) => this.error.set(errorMessage(e)) });
       },
       error: (e) => this.error.set(errorMessage(e)),

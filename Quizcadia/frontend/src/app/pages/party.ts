@@ -8,6 +8,7 @@ import { AuthService } from '../core/auth.service';
 import { flag } from '../core/countries';
 import { errorMessage } from '../core/http-errors';
 import { GameCard, MatchView, RoomStatus } from '../core/models';
+import { livePoll } from '../core/live-poll';
 
 /** Pick a multiplayer game for a big-screen party. */
 @Component({
@@ -241,7 +242,7 @@ export class PartyScreen implements OnInit {
   }
 
   ngOnInit(): void {
-    this.poll = interval(1500).pipe(startWith(0), switchMap(() => this.api.room(this.code()))).subscribe({
+    this.poll = livePoll(() => this.api.room(this.code()), { every: 1500, max: 4000 }).subscribe({
       next: (r) => {
         this.room.set(r);
         if (r.state === 'STARTED' && r.matchId) this.follow(r.matchId);

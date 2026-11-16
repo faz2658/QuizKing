@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { RouterLink } from '@angular/router';
-import { Subscription, catchError, map, of, switchMap, timer } from 'rxjs';
+import { Subscription, catchError, map, of, timer } from 'rxjs';
 import { ArenaApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { flag } from '../core/countries';
@@ -10,6 +10,7 @@ import { errorMessage } from '../core/http-errors';
 import { ArenaRound, ArenaView } from '../core/models';
 import { World } from '../core/world';
 import { clock } from './world';
+import { livePoll } from '../core/live-poll';
 
 /** The World Arena: join the next round, play live, watch when you're out, see who's the last one standing. */
 @Component({
@@ -147,8 +148,7 @@ export class Arena implements OnInit {
   });
 
   ngOnInit(): void {
-    this.poll = timer(0, 1000)
-      .pipe(switchMap(() => this.api.view().pipe(catchError((e) => (this.error.set(errorMessage(e)), of(null))))))
+    this.poll = livePoll(() => this.api.view().pipe(catchError((e) => (this.error.set(errorMessage(e)), of(null)))), { every: 1000 })
       .subscribe((v) => v && this.show(v));
     this.destroyRef.onDestroy(() => this.poll.unsubscribe());
   }

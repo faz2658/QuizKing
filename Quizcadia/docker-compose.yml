@@ -269,7 +269,10 @@ services:
     image: ghcr.io/ggml-org/llama.cpp:server
     restart: unless-stopped
     volumes: [./ai/question-model/models:/models:ro]
-    command: ["-m", "/models/quizcadia-q4_k_m.gguf", "--jinja", "--host", "0.0.0.0", "--port", "8080", "-c", "2048", "--alias", "quizcadia"]
+    # Sleeps (frees the model's ~2.6 GB) after 10 idle minutes and loads it again on the next request, which then
+    # takes a few extra seconds. AI quizzes are occasional, so most of the time the memory goes to the game services.
+    command: ["-m", "/models/quizcadia-q4_k_m.gguf", "--jinja", "--host", "0.0.0.0", "--port", "8080", "-c", "2048",
+              "--alias", "quizcadia", "--sleep-idle-seconds", "${AI_MODEL_IDLE_SECONDS:-600}"]
     # the 2.5 GB model file is memory-mapped and stays resident once loaded
     mem_limit: 3g
     memswap_limit: 3g

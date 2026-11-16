@@ -171,6 +171,8 @@ export interface MatchView {
     yourAnswer: string | null;
   } | null;
   lastQuestion: { questionId: number; stem: string; correctAnswer: string; winnerUserId: number | null } | null;
+  /** Changes whenever anything on the screen would; the server waits for a different one (see nextMatch). */
+  version?: string;
 }
 
 export interface MatchAnswer {
