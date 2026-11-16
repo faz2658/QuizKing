@@ -18,9 +18,7 @@
       @if (world.online(); as o) {
         <a class="online" routerLink="/world" [title]="o.online + ' players online'"><span class="dot"></span>{{ o.online }} online</a>
       }
-      @if (installer.available()) {
-        <button type="button" class="btn btn-ghost install" (click)="installer.install()" title="Install Quiz King on this device">📲 Install</button>
-      }
+      <ng-container [ngTemplateOutlet]="installBtn" />
       <button type="button" class="icon-btn" [attr.aria-pressed]="fx.settings().sound" [attr.aria-label]="fx.settings().sound ? 'Sound on' : 'Sound off'"
         [title]="fx.settings().sound ? 'Sound on' : 'Sound off'" (click)="fx.toggle('sound')">{{ fx.settings().sound ? '🔊' : '🔇' }}</button>
       <button type="button" class="icon-btn" [attr.aria-pressed]="fx.settings().vibration" [attr.aria-label]="fx.settings().vibration ? 'Vibration on' : 'Vibration off'"
@@ -30,9 +28,38 @@
         <span class="name">{{ user.userName }}</span>
       </span>
       <button type="button" class="btn btn-ghost" (click)="logout()">{{ user.role === 'GUEST' ? 'Leave' : 'Log out' }}</button>
+    } @else {
+      <div class="spacer"></div>
+      <ng-container [ngTemplateOutlet]="installBtn" />
     }
   </div>
 </header>
+<ng-template #installBtn>
+  @if (installer.available()) {
+    <button type="button" class="btn btn-ghost install" (click)="installer.install()" title="Install Quiz King on this device">📲<span class="install-label"> Install</span></button>
+  }
+</ng-template>
+@if (installer.help(); as how) {
+  <div class="install-backdrop" (click)="installer.closeHelp()"></div>
+  <section class="install-sheet" role="dialog" aria-modal="true" aria-labelledby="install-title" (keydown.escape)="installer.closeHelp()">
+    <h2 id="install-title">Install Quiz King</h2>
+    @if (how === 'ios') {
+      <ol>
+        <li>Tap the <strong>Share</strong> button <span class="share-ico" aria-hidden="true">⬆︎</span> (at the bottom of Safari on iPhone, at the top on iPad).</li>
+        <li>Scroll down and tap <strong>Add to Home Screen</strong>.</li>
+        <li>Tap <strong>Add</strong>. Quiz King opens from your home screen like an app.</li>
+      </ol>
+      <p class="muted">In Chrome or another browser on iPhone, use its Share button the same way.</p>
+    } @else {
+      <ol>
+        <li>Open your browser's menu (<strong>⋮</strong> or <strong>☰</strong>).</li>
+        <li>Tap <strong>Install app</strong> or <strong>Add to Home screen</strong>.</li>
+        <li>Confirm. Quiz King opens from your home screen like an app.</li>
+      </ol>
+    }
+    <button type="button" class="btn btn-primary" (click)="installer.closeHelp()">Got it</button>
+  </section>
+}
 <main id="main" class="container">
   <router-outlet />
 </main>

@@ -1,3 +1,4 @@
+import { NgTemplateOutlet } from '@angular/common';
 import { ChangeDetectionStrategy, Component, effect, inject } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { Analytics } from './core/analytics';
@@ -10,7 +11,7 @@ import { ConsentBanner } from './ui/consent-banner';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, RouterLink, RouterLinkActive, Aurora, ConsentBanner],
+  imports: [NgTemplateOutlet, RouterOutlet, RouterLink, RouterLinkActive, Aurora, ConsentBanner],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './app.html',
   styleUrl: './app.scss',

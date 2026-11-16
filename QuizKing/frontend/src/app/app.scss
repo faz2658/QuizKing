@@ -37,8 +37,23 @@ main { padding: 36px 0 56px; min-height: 100vh; min-height: 100svh; }
 @media (max-width: 680px) {
   .inner { gap: 10px; flex-wrap: wrap; padding: 10px 0; }
   .name { display: none; }
+  .install { padding-inline: 10px; }
   nav { order: 3; width: 100%; justify-content: center; }
 }
 
 .online { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; font-size: 0.85rem; color: var(--good); text-decoration: none; margin-right: 6px; }
 .online .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--good); }
+
+// Install help (iPhone/iPad and browsers without a one-tap install): a sheet from the bottom on phones, centred above.
+.install-backdrop { position: fixed; inset: 0; z-index: 40; background: rgba(8, 7, 15, 0.45); }
+.install-sheet {
+  position: fixed; z-index: 41; left: 50%; bottom: 16px; transform: translateX(-50%);
+  width: min(440px, 100% - 32px); padding: 22px 22px 18px; border-radius: var(--radius-lg);
+  background: var(--bg); color: var(--text); border: 1px solid var(--border-strong); box-shadow: var(--shadow);
+}
+.install-sheet h2 { margin-bottom: 10px; }
+.install-sheet ol { margin: 0 0 12px; padding-left: 20px; display: grid; gap: 8px; }
+.install-sheet .btn { width: 100%; margin-top: 4px; }
+.share-ico { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 6px; border: 1px solid var(--border-strong); font-size: 0.8rem; }
+@media (min-width: 681px) { .install-sheet { bottom: auto; top: 50%; transform: translate(-50%, -50%); } }
+@media (max-width: 360px) { .install-label { display: none; } }
