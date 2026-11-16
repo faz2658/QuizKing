@@ -37,6 +37,9 @@ const styles = `
       <li><strong>Guests:</strong> playing as a guest needs only a nickname; no account or email is stored.</li>
       <li><strong>Your browser:</strong> we keep your sign-in session and a few preferences (sound, country, your
         analytics choice) in your browser's local storage. We don't use advertising cookies.</li>
+      <li><strong>Tips (only if you choose to give one):</strong> the "Support QuizCadia" button takes you to our page
+        on Ko-fi. Ko-fi and PayPal handle the payment under their own privacy policies; we never see your card or bank
+        details, only what Ko-fi shows us (the amount, and your name and message if you leave them).</li>
       <li><strong>Google Analytics (only if you allow it):</strong> when you first visit we ask whether we may use
         Google Analytics. If you say yes, Google sets analytics cookies and receives which pages you open, rough
         location from your IP address, your device and browser type, and events such as signing in, signing up or
