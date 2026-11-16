@@ -140,10 +140,17 @@ public class AuthController {
 	static final int GUEST_ID_RANGE = 99_999_999;
 	private static final java.security.SecureRandom RANDOM = new java.security.SecureRandom();
 
+	/** The signed-in player: their account, or for a guest what the guest token says (guests have no account). */
 	@GetMapping("/me")
 	public UserView me(@AuthenticationPrincipal Jwt jwt) {
-		return accounts.find(Integer.parseInt(jwt.getSubject())).map(UserView::of)
-				.orElseThrow(com.fazeel.quizking.account.BadCredentialsException::new);
+		int userId = Integer.parseInt(jwt.getSubject());
+		java.util.List<String> roles = jwt.getClaimAsStringList("roles");
+		if (roles != null && roles.contains(TokenService.GUEST)) {
+			return new UserView(userId, jwt.getClaimAsString("name"), "", TokenService.GUEST);
+		}
+		return accounts.find(userId).map(UserView::of)
+				.orElseThrow(() -> new org.springframework.web.server.ResponseStatusException(HttpStatus.UNAUTHORIZED,
+						"This account no longer exists. Please sign in again."));
 	}
 
 	private TokenView token(Account a) {

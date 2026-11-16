@@ -1,3 +1,4 @@
+import { RouterLink } from '@angular/router';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
@@ -12,7 +13,7 @@ import { flag } from '../core/countries';
 /** XP rankings by period and topic, plus today's Daily Challenge board. */
 @Component({
   selector: 'mv-leaderboard',
-  imports: [FormsModule, DailyBoard],
+  imports: [FormsModule, DailyBoard, RouterLink],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="head">
@@ -62,11 +63,13 @@ import { flag } from '../core/countries';
           </ol>
           @if (b.you && b.you.rank > b.top.length) {
             <p class="you">You're <strong>#{{ b.you.rank }}</strong> of {{ b.players }} with {{ b.you.xp }} XP.</p>
+          } @else if (!b.you && guest) {
+            <p class="you muted">Guest games don't count on leaderboards. <a routerLink="/welcome">Create a free account</a> to get on the board.</p>
           } @else if (!b.you) {
             <p class="you muted">Play a game to get on this board.</p>
           }
         } @else {
-          <div class="card empty"><h3>No games in this period yet</h3><p class="muted">Be the first: finish a game and come back.</p></div>
+          <div class="card empty"><h3>No games in this period yet</h3><p class="muted">@if (guest) { Guest games don't count here. <a routerLink="/welcome">Create a free account</a> to get on the board. } @else { Be the first: finish a game and come back. }</p></div>
         }
       } @else {
         <div class="skeleton" style="height: 260px"></div>
@@ -107,6 +110,7 @@ export class Leaderboard {
   private readonly boards = inject(BoardsApi);
   private readonly catalog = inject(CatalogApi);
   protected readonly me = inject(AuthService).user()?.userId;
+  protected readonly guest = inject(AuthService).user()?.role === 'GUEST';
   protected readonly flag = flag;
   protected readonly medals = ['🥇', '🥈', '🥉'];
   protected readonly periods: { id: BoardPeriod; label: string }[] = [

@@ -88,7 +88,7 @@ public class CountryCup {
 	private Standings standings(Instant since, Instant until) {
 		Map<Integer, Integer> xp = new HashMap<>();
 		for (GameReport r : reports.findCompletedBetween(since, until)) {
-			if (r.userId() > 0) { // bots never score for a country
+			if (com.fazeel.quizking.report.Players.isAccount(r.userId())) { // bots and guests never score for a country
 				xp.merge(r.userId(), Xp.of(r), Integer::sum);
 			}
 		}

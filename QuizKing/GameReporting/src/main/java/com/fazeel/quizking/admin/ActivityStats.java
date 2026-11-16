@@ -23,13 +23,13 @@ import com.fazeel.quizking.report.GameReport;
 import com.fazeel.quizking.report.GameReportRepository;
 import com.fazeel.quizking.report.PlayerName;
 import com.fazeel.quizking.report.PlayerNameRepository;
+import com.fazeel.quizking.report.Players;
 
 /** Who plays and what, for the admin dashboard. Guests are counted apart from accounts. */
 @Service
 public class ActivityStats {
 
-	/** Guest ids come from this range (see the login service), so their games can be told apart. */
-	static final int GUEST_ID_BASE = 900_000_000;
+	static final int GUEST_ID_BASE = Players.GUEST_ID_BASE;
 
 	private final GameReportRepository reports;
 	private final PlayerNameRepository names;
@@ -56,7 +56,7 @@ public class ActivityStats {
 	}
 
 	static boolean guest(int userId) {
-		return userId >= GUEST_ID_BASE;
+		return Players.isGuest(userId);
 	}
 
 	public View view(int days) {

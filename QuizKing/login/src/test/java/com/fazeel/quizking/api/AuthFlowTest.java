@@ -136,6 +136,17 @@ class AuthFlowTest {
 
 	@Test
 	@SuppressWarnings("unchecked")
+	void meDescribesAGuestFromTheirToken() {
+		String token = (String) postForMap("/api/v1/auth/guest", Map.of("userName", "Visitor")).get("token");
+		Map<String, Object> me = http().get().uri("/api/v1/auth/me").header("Authorization", "Bearer " + token)
+				.retrieve().body(Map.class);
+		assertThat(me.get("userName")).isEqualTo("Visitor");
+		assertThat(me.get("role")).isEqualTo("GUEST");
+		assertThat((Integer) me.get("userId")).isGreaterThanOrEqualTo(AuthController.GUEST_ID_BASE);
+	}
+
+	@Test
+	@SuppressWarnings("unchecked")
 	void guestsGetATokenButNoAccount() {
 		long before = accounts.count();
 		Map<String, Object> guest = postForMap("/api/v1/auth/guest", Map.of("userName", "  Visitor  "));
