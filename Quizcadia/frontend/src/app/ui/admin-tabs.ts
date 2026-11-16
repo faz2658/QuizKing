@@ -9,6 +9,7 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   template: `
     <nav class="tabs" aria-label="Admin">
       <a class="btn" routerLink="/admin/stats" routerLinkActive="btn-primary" ariaCurrentWhenActive="page">Users &amp; activity</a>
+      <a class="btn" routerLink="/admin/requests" routerLinkActive="btn-primary" ariaCurrentWhenActive="page">Requests</a>
       <a class="btn" routerLink="/admin/analytics" routerLinkActive="btn-primary" ariaCurrentWhenActive="page">Website analytics</a>
       <a class="btn" routerLink="/admin" routerLinkActive="btn-primary" [routerLinkActiveOptions]="{ exact: true }" ariaCurrentWhenActive="page">Questions &amp; games</a>
     </nav>

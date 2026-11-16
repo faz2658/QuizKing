@@ -40,6 +40,9 @@ const styles = `
       <li><strong>Tips (only if you choose to give one):</strong> the "Support QuizCadia" button takes you to our page
         on Ko-fi. Ko-fi and PayPal handle the payment under their own privacy policies; we never see your card or bank
         details, only what Ko-fi shows us (the amount, and your name and message if you leave them).</li>
+      <li><strong>Quiz night and venue requests:</strong> if you send a request from our events or venues page, we keep
+        your name, email and what you tell us about your event or venue, only to reply and arrange it. Ask us any time
+        and we'll delete it.</li>
       <li><strong>Google Analytics (only if you allow it):</strong> when you first visit we ask whether we may use
         Google Analytics. If you say yes, Google sets analytics cookies and receives which pages you open, rough
         location from your IP address, your device and browser type, and events such as signing in, signing up or
