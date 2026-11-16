@@ -27,6 +27,8 @@ public class SecurityConfig {
 				.requestMatchers(HttpMethod.GET, "/api/v1/reports/daily", "/api/v1/reports/leaderboards",
 						"/api/v1/reports/leaderboards/countries", "/api/v1/reports/cup", "/api/v1/reports/invites/me").authenticated()
 				.requestMatchers(HttpMethod.POST, "/api/v1/reports/me").authenticated()
+				// the event and venue request forms work without an account; reading requests stays admin-only
+				.requestMatchers(HttpMethod.POST, "/api/v1/reports/inquiries").permitAll()
 				.anyRequest().hasRole(ADMIN));
 	}
 }
