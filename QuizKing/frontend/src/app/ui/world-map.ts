@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component, computed, input } from '@angular/core';
 import { CENTROIDS, countryName, flag } from '../core/countries';
+import { LAND_PATH } from './world-land';
 
 export interface MapPoint {
   country: string;
@@ -11,7 +12,7 @@ export function project(lat: number, lon: number): [number, number] {
   return [lon + 180, 90 - lat];
 }
 
-/** Glowing dots where players are, on a latitude/longitude grid. */
+/** Glowing dots where players are, on the continents and a faint latitude/longitude grid. */
 @Component({
   selector: 'mv-world-map',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -21,6 +22,7 @@ export function project(lat: number, lon: number): [number, number] {
         <defs>
           <radialGradient id="glow"><stop offset="0" stop-color="var(--pink)" stop-opacity="0.9" /><stop offset="1" stop-color="var(--pink)" stop-opacity="0" /></radialGradient>
         </defs>
+        <path class="land" [attr.d]="land" />
         @for (x of meridians; track x) { <line [attr.x1]="x" y1="0" [attr.x2]="x" y2="180" class="grid" /> }
         @for (y of parallels; track y) { <line x1="0" [attr.y1]="y" x2="360" [attr.y2]="y" class="grid" [class.equator]="y === 90" /> }
         @for (p of placed(); track p.country) {
@@ -39,7 +41,8 @@ export function project(lat: number, lon: number): [number, number] {
   styles: `
     .map { margin: 0; }
     svg { width: 100%; height: auto; border-radius: 18px; background: radial-gradient(ellipse at center, color-mix(in srgb, var(--accent) 12%, var(--bg-sunken)), var(--bg-sunken)); }
-    .grid { stroke: color-mix(in srgb, var(--text-muted) 22%, transparent); stroke-width: 0.3; }
+    .land { fill: color-mix(in srgb, var(--accent-2) 22%, var(--bg-sunken)); stroke: color-mix(in srgb, var(--accent-2) 55%, transparent); stroke-width: 0.35; stroke-linejoin: round; }
+    .grid { stroke: color-mix(in srgb, var(--text-muted) 14%, transparent); stroke-width: 0.25; }
     .equator { stroke-dasharray: 2 2; stroke-width: 0.5; }
     .dot { fill: var(--accent); stroke: #fff; stroke-width: 0.5; }
     .pulse { animation: pulse 2.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
@@ -51,6 +54,7 @@ export function project(lat: number, lon: number): [number, number] {
 export class WorldMap {
   readonly points = input<MapPoint[]>([]);
   protected readonly flag = flag;
+  protected readonly land = LAND_PATH;
   protected readonly meridians = Array.from({ length: 11 }, (_, i) => 30 + i * 30);
   protected readonly parallels = [30, 60, 90, 120, 150];
   protected readonly placed = computed(() =>
