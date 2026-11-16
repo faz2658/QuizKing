@@ -14,7 +14,7 @@
   background: linear-gradient(135deg, var(--accent-2), var(--pink) 55%, var(--accent));
   box-shadow: 0 0 22px color-mix(in srgb, var(--pink) 45%, transparent);
 }
-.crown { width: 20px; height: 20px; }
+.mark { width: 22px; height: 22px; }
 nav { display: flex; gap: 2px; padding: 4px; border-radius: 999px; background: var(--surface); border: 1px solid var(--border); }
 nav a { color: var(--text-muted); text-decoration: none; font-weight: 650; font-size: 0.9rem; padding: 7px 14px; border-radius: 999px; transition: color 0.2s, background 0.2s; }
 nav a:hover { color: var(--text); }

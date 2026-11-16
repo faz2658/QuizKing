@@ -21,7 +21,7 @@ export function untilNext(seconds: number): string {
     @if (daily(); as d) {
       @if (d.totalQuestions > 0) {
         <section class="daily fade-up" aria-labelledby="daily-title">
-          <div class="icon" aria-hidden="true">👑</div>
+          <div class="icon" aria-hidden="true">✨</div>
           <div class="text">
             <span class="eyebrow">Daily Challenge · {{ d.date }}</span>
             <h2 id="daily-title">

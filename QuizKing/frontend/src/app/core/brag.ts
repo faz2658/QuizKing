@@ -26,5 +26,5 @@ export function bragLine(board: DailyBoard | null | undefined): string | null {
 
 /** The text people paste into group chats, Wordle style. */
 export function dailyShareText(day: string, review: ReviewItem[], correct: number, total: number, brag: string | null, url: string): string {
-  return [`👑 Quizcadia Daily ${day}`, `${emojiGrid(review)} ${correct}/${total}`, brag, url].filter(Boolean).join('\n');
+  return [`✨ Quizcadia Daily ${day}`, `${emojiGrid(review)} ${correct}/${total}`, brag, url].filter(Boolean).join('\n');
 }
