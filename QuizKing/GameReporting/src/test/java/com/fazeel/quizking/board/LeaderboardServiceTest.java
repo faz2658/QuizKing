@@ -105,4 +105,30 @@ class LeaderboardServiceTest {
 		assertThat(LeaderboardService.place(entries.get(0), entries).topPercent()).isEqualTo(25);
 		assertThat(LeaderboardService.place(null, entries)).isNull();
 	}
+
+	@Test
+	void guestsAndBotsAreNotRanked() {
+		int guest = com.fazeel.quizking.report.Players.GUEST_ID_BASE + 42;
+		when(reports.findByVariantAndVariantKey(GameReport.DAILY, "2026-11-15")).thenReturn(List.of(
+				daily(1, 120, "2026-11-15T12:00:00Z"), daily(guest, 300, "2026-11-15T10:00:00Z"),
+				daily(-1, 250, "2026-11-15T11:00:00Z")));
+		when(names.lookup(anyCollection())).thenReturn(Map.of(1, "Ada"));
+		LeaderboardService service = new LeaderboardService(reports, names);
+
+		DailyBoard board = service.daily(LocalDate.parse("2026-11-15"), guest);
+		assertThat(board.top()).extracting(e -> e.userId()).containsExactly(1);
+		assertThat(board.players()).isEqualTo(1);
+		assertThat(board.you()).isNull();
+
+		Instant now = Instant.parse("2026-11-15T18:00:00Z");
+		GameReport guestGame = new GameReport("g", GameMode.SINGLE, guest, 5, "Art", 9, 90, 100, 9, 10, null, null, null,
+				Instant.parse("2026-11-15T10:00:00Z"), List.of());
+		GameReport adaGame = new GameReport("a", GameMode.SINGLE, 1, 5, "Art", 9, 10, 100, 1, 10, null, null, null,
+				Instant.parse("2026-11-15T10:00:00Z"), List.of());
+		when(reports.findByCompletedAtGreaterThanEqual(Instant.parse("2026-11-15T00:00:00Z")))
+				.thenReturn(List.of(guestGame, adaGame));
+		var day = service.xp(LeaderboardService.Period.DAY, null, guest, now);
+		assertThat(day.top()).extracting(e -> e.userId()).containsExactly(1);
+		assertThat(day.you()).isNull();
+	}
 }

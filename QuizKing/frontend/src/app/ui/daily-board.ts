@@ -29,6 +29,9 @@ import { flag } from '../core/countries';
               </li>
             }
           </ol>
+          @if (guest && !b.you) {
+            <p class="muted you">Guest runs aren't ranked. Create a free account to get on the board.</p>
+          }
           @if (b.you && b.you.rank > b.top.length) {
             <ol [start]="b.you.rank" class="you">
               <li class="me">
@@ -38,7 +41,7 @@ import { flag } from '../core/countries';
             </ol>
           }
         } @else {
-          <p class="muted">Nobody has finished today's challenge yet.</p>
+          <p class="muted">Nobody has finished today's challenge yet.{{ guest ? ' Guest runs aren\'t ranked: create a free account to get on the board.' : '' }}</p>
         }
       </section>
     }
@@ -59,6 +62,7 @@ export class DailyBoard {
   readonly date = input<string | null | undefined>(null);
   private readonly api = inject(BoardsApi);
   protected readonly me = inject(AuthService).user()?.userId;
+  protected readonly guest = inject(AuthService).user()?.role === 'GUEST';
   protected readonly medals = ['🥇', '🥈', '🥉'];
   protected readonly flag = flag;
   protected readonly board = toSignal(

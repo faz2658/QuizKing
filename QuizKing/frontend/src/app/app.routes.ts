@@ -1,8 +1,8 @@
 import { Routes } from '@angular/router';
-import { adminGuard, playerGuard } from './core/auth.guard';
+import { adminGuard, playerGuard, welcomeGuard } from './core/auth.guard';
 
 export const routes: Routes = [
-  { path: 'welcome', title: 'Welcome · Quiz King', loadComponent: () => import('./pages/welcome').then((m) => m.Welcome) },
+  { path: 'welcome', title: 'Welcome · Quiz King', canActivate: [welcomeGuard], loadComponent: () => import('./pages/welcome').then((m) => m.Welcome) },
   { path: 'join/:code', title: 'Join Quiz King', loadComponent: () => import('./pages/invite').then((m) => m.Join) },
   { path: 'privacy', title: 'Privacy policy · Quiz King', loadComponent: () => import('./pages/legal').then((m) => m.Privacy) },
   { path: 'terms', title: 'Terms of service · Quiz King', loadComponent: () => import('./pages/legal').then((m) => m.Terms) },

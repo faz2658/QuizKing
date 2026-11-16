@@ -14,6 +14,7 @@ import org.springframework.stereotype.Service;
 
 import com.fazeel.quizking.progress.Xp;
 import com.fazeel.quizking.report.GameReport;
+import com.fazeel.quizking.report.Players;
 import com.fazeel.quizking.report.GameReportRepository;
 import com.fazeel.quizking.report.PlayerNames;
 
@@ -33,7 +34,8 @@ public class LeaderboardService {
 
 	/** One day's challenge: highest score first, the earlier finish wins a tie. */
 	public DailyBoard daily(LocalDate date, int callerId) {
-		List<GameReport> runs = new ArrayList<>(reports.findByVariantAndVariantKey(GameReport.DAILY, date.toString()));
+		List<GameReport> runs = new ArrayList<>(reports.findByVariantAndVariantKey(GameReport.DAILY, date.toString())
+				.stream().filter(r -> Players.isAccount(r.userId())).toList()); // guests aren't ranked
 		runs.sort(Comparator.comparingInt(GameReport::score).reversed()
 				.thenComparing(GameReport::completedAt, Comparator.nullsLast(Comparator.naturalOrder())));
 		Map<Integer, String> who = names.lookup(runs.stream().map(GameReport::userId).toList());
@@ -78,8 +80,8 @@ public class LeaderboardService {
 		};
 		Map<Integer, int[]> totals = new HashMap<>(); // userId -> {xp, games}
 		for (GameReport r : reports.findByCompletedAtGreaterThanEqual(since)) {
-			if (categoryId != null && r.categoryId() != categoryId) {
-				continue;
+			if (!Players.isAccount(r.userId()) || categoryId != null && r.categoryId() != categoryId) {
+				continue; // guests and bots aren't ranked
 			}
 			int[] t = totals.computeIfAbsent(r.userId(), id -> new int[2]);
 			t[0] += Xp.of(r);
