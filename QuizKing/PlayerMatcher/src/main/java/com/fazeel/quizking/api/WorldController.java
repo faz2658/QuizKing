@@ -47,6 +47,12 @@ public class WorldController {
 		presence.seen(Callers.currentUserId(), Callers.currentUserName(), beat == null ? null : beat.country());
 	}
 
+	/** Names of everyone online now, for the admin page (admin-only: not listed in the security config). */
+	@GetMapping("/admin/online")
+	public List<Presence.OnlinePlayer> whoIsOnline() {
+		return presence.whoIsOnline();
+	}
+
 	@GetMapping("/online")
 	public Online online() {
 		return new Online(presence.online(), presence.byCountry(), matchmaker.openLobbies(), quick.waiting());

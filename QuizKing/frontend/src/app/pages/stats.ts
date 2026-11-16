@@ -1,6 +1,6 @@
 import { DatePipe } from '@angular/common';
-import { ChangeDetectionStrategy, Component, OnInit, computed, inject, signal } from '@angular/core';
-import { AccountStatsView, ActivityStatsView, AdminStatsApi } from '../core/admin-stats';
+import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, computed, inject, signal } from '@angular/core';
+import { AccountStatsView, ActivityStatsView, AdminStatsApi, OnlinePlayer } from '../core/admin-stats';
 import { countryName, flag } from '../core/countries';
 import { errorMessage } from '../core/http-errors';
 import { AdminTabs } from '../ui/admin-tabs';
@@ -23,6 +23,31 @@ interface Bar { label: string; value: number; extra?: string }
       </div>
     </div>
     @if (error()) { <div class="alert" role="alert">{{ error() }}</div> }
+
+    <section class="card online">
+      <div class="online-head">
+        <h2><span class="live-dot" aria-hidden="true"></span>Online now <span class="count">{{ online()?.length ?? '…' }}</span></h2>
+        <span class="muted small">Updates every 30 seconds</span>
+      </div>
+      @if (online(); as list) {
+        @if (list.length) {
+          <ul class="people">
+            @for (p of list; track p.userId) {
+              <li [title]="'Online since ' + (p.onlineSince | date: 'HH:mm')">
+                <span class="avatar" aria-hidden="true">{{ (p.name || '?').charAt(0).toUpperCase() }}</span>
+                <span class="who">{{ p.country ? flag(p.country) + ' ' : '' }}{{ p.name || 'Player ' + p.userId }}
+                  @if (p.guest) { <span class="tag">guest</span> }</span>
+                <span class="muted for">{{ onlineFor(p) }}</span>
+              </li>
+            }
+          </ul>
+        } @else {
+          <p class="muted">Nobody has Quiz King open right now.</p>
+        }
+      } @else if (onlineError()) {
+        <p class="muted">{{ onlineError() }}</p>
+      }
+    </section>
 
     @if (accounts(); as a) {
       <div class="tiles">
@@ -141,6 +166,17 @@ interface Bar { label: string; value: number; extra?: string }
     .email { overflow-wrap: anywhere; }
     .tag { margin-left: 6px; font-size: 0.75rem; padding: 1px 6px; border-radius: 99px; background: var(--surface-strong); }
     section.card:has(table) { overflow-x: auto; }
+    .online { margin-top: 16px; }
+    .online-head { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .online h2 { display: flex; align-items: center; gap: 8px; }
+    .live-dot { width: 9px; height: 9px; border-radius: 50%; background: #3ddc84; box-shadow: 0 0 0 4px rgb(61 220 132 / 0.18); }
+    .count { font-variant-numeric: tabular-nums; color: var(--text-muted); font-weight: 600; }
+    .small { font-size: 0.8rem; }
+    .people { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 8px; }
+    .people li { display: grid; grid-template-columns: 28px 1fr auto; gap: 10px; align-items: center; padding: 8px 10px; border: 1px solid var(--border); border-radius: 10px; min-width: 0; }
+    .people .avatar { width: 28px; height: 28px; border-radius: 50%; display: grid; place-items: center; font-weight: 700; font-size: 0.8rem; background: var(--surface-strong); }
+    .people .who { min-width: 0; overflow-wrap: anywhere; }
+    .people .for { font-size: 0.8rem; white-space: nowrap; font-variant-numeric: tabular-nums; }
   `,
 })
 export class Stats implements OnInit {
@@ -152,6 +188,9 @@ export class Stats implements OnInit {
   protected readonly accounts = signal<AccountStatsView | null>(null);
   protected readonly activity = signal<ActivityStatsView | null>(null);
   protected readonly error = signal<string | null>(null);
+  protected readonly online = signal<OnlinePlayer[] | null>(null);
+  protected readonly onlineError = signal<string | null>(null);
+  private readonly now = signal(Date.now());
 
   protected readonly signupBars = computed<Bar[]>(() =>
     (this.accounts()?.signupsByDay ?? []).map((d) => ({ label: short(d.day), value: d.count })));
@@ -163,8 +202,30 @@ export class Stats implements OnInit {
   protected readonly gameMax = computed(() => Math.max(1, ...this.gameBars().map((b) => b.value)));
   protected readonly signupTotal = computed(() => this.signupBars().reduce((n, b) => n + b.value, 0));
 
+  constructor() {
+    const t = setInterval(() => {
+      this.now.set(Date.now());
+      this.loadOnline();
+    }, 30_000);
+    inject(DestroyRef).onDestroy(() => clearInterval(t));
+  }
+
   ngOnInit(): void {
     this.load();
+    this.loadOnline();
+  }
+
+  /** "just now", "12 min" or "1 h 05 min" online. */
+  protected onlineFor(p: OnlinePlayer): string {
+    const m = Math.max(0, Math.floor((this.now() - new Date(p.onlineSince).getTime()) / 60000));
+    return m < 1 ? 'just now' : m < 60 ? `${m} min` : `${Math.floor(m / 60)} h ${String(m % 60).padStart(2, '0')} min`;
+  }
+
+  private loadOnline(): void {
+    this.api.online().subscribe({
+      next: (list) => { this.now.set(Date.now()); this.online.set(list); this.onlineError.set(null); },
+      error: (e) => this.onlineError.set(errorMessage(e)),
+    });
   }
 
   protected setDays(d: number): void {

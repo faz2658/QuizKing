@@ -20,8 +20,16 @@ public class Presence {
 
 	static final Duration ONLINE_FOR = Duration.ofMinutes(2);
 
-	public record Player(String name, String country, Instant lastSeen) {
+	/** {@code since}: when this stretch online began (a gap longer than {@link #ONLINE_FOR} starts a new one). */
+	public record Player(String name, String country, Instant lastSeen, Instant since) {
 	}
+
+	/** One person online now, for admins. Guests have ids from {@link #GUEST_ID_BASE} up (see the login service). */
+	public record OnlinePlayer(int userId, String name, String country, boolean guest, Instant onlineSince,
+			Instant lastSeen) {
+	}
+
+	static final int GUEST_ID_BASE = 900_000_000;
 
 	public record CountryCount(String country, int players) {
 	}
@@ -38,12 +46,25 @@ public class Presence {
 		Player before = players.get(userId);
 		String c = validCountry(country) ? country.toUpperCase(java.util.Locale.ROOT)
 				: before == null ? null : before.country();
-		players.put(userId, new Player(name, c, clock.instant()));
+		Instant now = clock.instant();
+		boolean stillOnline = before != null && before.lastSeen().isAfter(now.minus(ONLINE_FOR));
+		players.put(userId, new Player(name, c, now, stillOnline ? before.since() : now));
 	}
 
 	public int online() {
 		Instant since = clock.instant().minus(ONLINE_FOR);
 		return (int) players.values().stream().filter(p -> p.lastSeen().isAfter(since)).count();
+	}
+
+	/** Who is online now: accounts first, then guests, each by name. */
+	public List<OnlinePlayer> whoIsOnline() {
+		Instant since = clock.instant().minus(ONLINE_FOR);
+		return players.entrySet().stream().filter(e -> e.getValue().lastSeen().isAfter(since))
+				.map(e -> new OnlinePlayer(e.getKey(), e.getValue().name(), e.getValue().country(),
+						e.getKey() >= GUEST_ID_BASE, e.getValue().since(), e.getValue().lastSeen()))
+				.sorted(Comparator.comparing(OnlinePlayer::guest)
+						.thenComparing(p -> p.name() == null ? "" : p.name(), String.CASE_INSENSITIVE_ORDER))
+				.toList();
 	}
 
 	public List<CountryCount> byCountry() {
