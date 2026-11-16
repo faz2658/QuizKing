@@ -167,7 +167,7 @@ export class Result {
     this.shareNote.set(null);
     this.api.createChallenge(r.sessionId).subscribe({
       next: async (c) => {
-        const how = await shareLink('Quiz King challenge', `I scored ${c.score} in ${c.gameName} on Quiz King. Can you beat me?`,
+        const how = await shareLink('Quizcadia challenge', `I scored ${c.score} in ${c.gameName} on Quizcadia. Can you beat me?`,
           `${location.origin}/challenge/${c.id}`);
         this.sharing.set(false);
         this.shareNote.set(how === 'copied' ? 'Challenge link copied: send it to a friend.' : how === 'failed' ? `Share this link: ${location.origin}/challenge/${c.id}` : null);
@@ -203,7 +203,7 @@ export class Result {
 
   protected async copyEmoji(r: ResultView): Promise<void> {
     const text = dailyShareText(r.variantKey ?? '', r.review, r.correctAnswers, r.totalQuestions, this.brag(), `${location.origin}/daily`);
-    const how = await shareLink('Quiz King Daily', text, '');
+    const how = await shareLink('Quizcadia Daily', text, '');
     this.shareNote.set(how === 'copied' ? 'Copied! Paste it in your group chat.' : how === 'failed' ? text : null);
   }
 

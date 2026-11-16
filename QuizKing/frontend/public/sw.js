@@ -1,4 +1,4 @@
-// Quiz King service worker: makes the app installable and opens it instantly (and offline) after the first visit.
+// Quizcadia service worker: makes the app installable and opens it instantly (and offline) after the first visit.
 // - API calls (/api/*) always go to the network: scores and questions must never come from a cache.
 // - Pages: network first, falling back to the cached app shell when offline.
 // - Hashed build files, icons and fonts: cache first (their names change when their content does).

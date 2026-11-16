@@ -87,7 +87,7 @@ export class Invite implements OnInit {
   }
 
   protected async share(): Promise<void> {
-    const how = await shareLink('Quiz King', 'Play Quiz King with me! Sign up with my link and we both get a streak shield:', this.link());
+    const how = await shareLink('Quizcadia', 'Play Quizcadia with me! Sign up with my link and we both get a streak shield:', this.link());
     this.shareLabel.set(how === 'copied' ? 'Link copied!' : how === 'failed' ? 'Copy failed' : 'Share my link');
     if (how !== 'shared') setTimeout(() => this.shareLabel.set('Share my link'), 2500);
   }

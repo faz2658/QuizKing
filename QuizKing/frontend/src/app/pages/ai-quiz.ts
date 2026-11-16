@@ -38,7 +38,7 @@ const shared = `
   imports: [FormsModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
-    <span class="badge"><span class="dot"></span>Written by the Quiz King AI</span>
+    <span class="badge"><span class="dot"></span>Written by the Quizcadia AI</span>
     <h1>A quiz about anything</h1>
     <p class="muted">Type a topic you love. The AI writes 8 questions in about a minute, then challenge your friends to beat you.</p>
     @if (offline()) {
@@ -286,7 +286,7 @@ export class AiQuizPlay implements OnInit {
   protected async share(): Promise<void> {
     const q = this.quiz();
     if (!q) return;
-    this.report(await shareLink(`${q.topic} quiz`, `Think you know ${q.topic}? Try this quiz on Quiz King:`, location.href));
+    this.report(await shareLink(`${q.topic} quiz`, `Think you know ${q.topic}? Try this quiz on Quizcadia:`, location.href));
   }
 
   protected async shareResult(): Promise<void> {

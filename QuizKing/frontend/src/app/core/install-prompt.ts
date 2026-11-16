@@ -5,7 +5,7 @@ interface InstallEvent extends Event {
   userChoice: Promise<{ outcome: 'accepted' | 'dismissed' }>;
 }
 
-/** How this device adds Quiz King to its home screen when the browser can't do it with one tap. */
+/** How this device adds Quizcadia to its home screen when the browser can't do it with one tap. */
 export type ManualInstall = 'ios' | 'other';
 
 /**
@@ -15,7 +15,7 @@ export type ManualInstall = 'ios' | 'other';
  * - iPhone and iPad never fire it (Safari and every other iOS browser): the button shows the
  *   "Share > Add to Home Screen" steps instead.
  * - Other phone and tablet browsers: the button shows the "browser menu > Install / Add to Home screen" steps.
- * Hidden once Quiz King is already running as an installed app.
+ * Hidden once Quizcadia is already running as an installed app.
  */
 @Injectable({ providedIn: 'root' })
 export class InstallPrompt {

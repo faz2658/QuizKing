@@ -42,7 +42,7 @@ interface Bar { label: string; value: number; extra?: string }
             }
           </ul>
         } @else {
-          <p class="muted">Nobody has Quiz King open right now.</p>
+          <p class="muted">Nobody has Quizcadia open right now.</p>
         }
       } @else if (onlineError()) {
         <p class="muted">{{ onlineError() }}</p>

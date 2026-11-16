@@ -29,7 +29,7 @@ export class AdminStatsApi {
     return this.http.get<AccountStatsView>('/api/v1/auth/admin/stats', { params: new HttpParams().set('days', days) });
   }
 
-  /** Everyone with Quiz King open right now (from the "online" heartbeat; gone after 2 minutes without one). */
+  /** Everyone with Quizcadia open right now (from the "online" heartbeat; gone after 2 minutes without one). */
   online(): Observable<OnlinePlayer[]> {
     return this.http.get<OnlinePlayer[]>('/api/v1/matching/admin/online');
   }

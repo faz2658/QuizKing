@@ -1,6 +1,6 @@
 {
-  "name": "Quiz King",
-  "short_name": "Quiz King",
+  "name": "Quizcadia",
+  "short_name": "Quizcadia",
   "description": "Timed, adaptive and multiplayer quiz games with a Daily Challenge.",
   "start_url": "/",
   "scope": "/",

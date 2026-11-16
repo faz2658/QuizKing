@@ -146,8 +146,8 @@ export class Cup implements OnInit {
   }
 
   protected async recruit(country: string, rank: number): Promise<void> {
-    const how = await shareLink('Quiz King Country Cup',
-      `${flag(country)} ${countryName(country)} is #${rank} in this week's Quiz King Country Cup. Every game you play scores for us. Join in:`,
+    const how = await shareLink('Quizcadia Country Cup',
+      `${flag(country)} ${countryName(country)} is #${rank} in this week's Quizcadia Country Cup. Every game you play scores for us. Join in:`,
       `${location.origin}/cup`);
     this.shareLabel.set(how === 'copied' ? 'Link copied!' : how === 'failed' ? 'Copy failed' : 'Recruit friends');
     if (how !== 'shared') setTimeout(() => this.shareLabel.set('Recruit friends'), 2500);

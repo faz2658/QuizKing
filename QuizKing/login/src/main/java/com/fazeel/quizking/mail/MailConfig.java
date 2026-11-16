@@ -33,7 +33,7 @@ public class MailConfig {
 	Mailer mailer(ExecutorService mailExecutor, @Value("${quizking.mail.host:}") String host,
 			@Value("${quizking.mail.port:587}") int port, @Value("${quizking.mail.username:}") String username,
 			@Value("${quizking.mail.password:}") String password,
-			@Value("${quizking.mail.from:Quiz King <no-reply@localhost>}") String from) {
+			@Value("${quizking.mail.from:Quizcadia <no-reply@localhost>}") String from) {
 		if (host == null || host.isBlank()) {
 			log.warn("MAIL_HOST is not set: emails (such as password reset links) are written to this log instead");
 			return (to, subject, body) -> log.info("Email not sent (no MAIL_HOST) to {}: {}\n{}", to, subject, body);

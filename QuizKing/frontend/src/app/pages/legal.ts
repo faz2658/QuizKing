@@ -22,7 +22,7 @@ const styles = `
   template: `
     <h1>Privacy policy</h1>
     <p class="muted updated">Last updated {{ updated }}</p>
-    <p>Quiz King is a quiz game. This page explains what we store about you, why, and what you can do about it.</p>
+    <p>Quizcadia is a quiz game. This page explains what we store about you, why, and what you can do about it.</p>
 
     <h2>What we collect</h2>
     <ul>
@@ -58,7 +58,7 @@ const styles = `
       <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites that use its services</a>.</p>
 
     <h2>Where it's kept</h2>
-    <p>Quiz King runs on servers in Oracle Cloud's Toronto, Canada region. Data travels over encrypted HTTPS connections.</p>
+    <p>Quizcadia runs on servers in Oracle Cloud's Toronto, Canada region. Data travels over encrypted HTTPS connections.</p>
 
     <h2>How long we keep it</h2>
     <p>We keep your account and game history while your account exists. Password reset links expire after 30 minutes and
@@ -77,7 +77,7 @@ const styles = `
     </ul>
 
     <h2>Children</h2>
-    <p>Quiz King isn't directed at children under 13, and we don't knowingly collect their personal information.</p>
+    <p>Quizcadia isn't directed at children under 13, and we don't knowingly collect their personal information.</p>
 
     <h2>Changes</h2>
     <p>If this policy changes, we'll update the date above. See also our <a routerLink="/terms">terms of service</a>.</p>
@@ -103,7 +103,7 @@ export class Privacy {
   template: `
     <h1>Terms of service</h1>
     <p class="muted updated">Last updated {{ updated }}</p>
-    <p>By playing Quiz King you agree to these terms. They're short, so please read them.</p>
+    <p>By playing Quizcadia you agree to these terms. They're short, so please read them.</p>
 
     <h2>Playing fair</h2>
     <ul>
@@ -114,7 +114,7 @@ export class Privacy {
     </ul>
 
     <h2>Your content</h2>
-    <p>You keep ownership of quizzes you write. By sharing them in Quiz King you let us store them and show them to the
+    <p>You keep ownership of quizzes you write. By sharing them in Quizcadia you let us store them and show them to the
       people you share them with.</p>
 
     <h2>AI-written questions</h2>
@@ -124,7 +124,7 @@ export class Privacy {
     <p>Many questions come from the Open Trivia Database, used under the CC BY-SA 4.0 licence.</p>
 
     <h2>No warranty</h2>
-    <p>Quiz King is provided as is, without guarantees that it will always be available or error-free. To the extent the
+    <p>Quizcadia is provided as is, without guarantees that it will always be available or error-free. To the extent the
       law allows, we're not liable for losses from using it.</p>
 
     <h2>Changes</h2>

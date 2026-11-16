@@ -103,7 +103,7 @@ export class Room implements OnInit {
   }
 
   protected async invite(r: RoomStatus): Promise<void> {
-    const how = await shareLink('Quiz King', `Join my Quiz King room ${r.code}!`, `${location.origin}/room/${r.code}`);
+    const how = await shareLink('Quizcadia', `Join my Quizcadia room ${r.code}!`, `${location.origin}/room/${r.code}`);
     this.note.set(how === 'copied' ? 'Invite link copied.' : how === 'failed' ? `Tell your friends the code: ${r.code}` : null);
   }
 

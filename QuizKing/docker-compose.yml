@@ -1,4 +1,4 @@
-# Whole Quiz King platform. Build the jars first:  ./mvnw -DskipTests package
+# Whole Quizcadia platform. Build the jars first:  ./mvnw -DskipTests package
 # then:  docker compose up --build      (UI on http://localhost:4280, or QUIZKING_HTTP_PORT)
 # Images are named ${IMAGE_REGISTRY}/<service>:${IMAGE_TAG}. Locally that's quizking/<service>:dev; production
 # pulls the images CI built, ghcr.io/faz2658/quizking/<service>:<commit> (see .github/workflows/deploy.yml).
@@ -231,7 +231,7 @@ services:
       MAIL_PORT: ${MAIL_PORT:-587}
       MAIL_USERNAME: ${MAIL_USERNAME:-}
       MAIL_PASSWORD: ${MAIL_PASSWORD:-}
-      MAIL_FROM: ${MAIL_FROM:-Quiz King <no-reply@localhost>}
+      MAIL_FROM: ${MAIL_FROM:-Quizcadia <no-reply@localhost>}
     depends_on:
       kafka:
         condition: service_healthy

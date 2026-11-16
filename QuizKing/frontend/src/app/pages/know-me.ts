@@ -328,7 +328,7 @@ export class KnowMePlay implements OnInit {
 
   protected async share(): Promise<void> {
     const name = this.auth.user()?.userName ?? 'me';
-    this.report(await shareLink('How well do you know me?', `How well do you know ${name}? Take my quiz on Quiz King:`, this.link()));
+    this.report(await shareLink('How well do you know me?', `How well do you know ${name}? Take my quiz on Quizcadia:`, this.link()));
   }
 
   protected async shareResult(): Promise<void> {
