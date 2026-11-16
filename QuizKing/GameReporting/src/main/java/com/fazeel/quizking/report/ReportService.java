@@ -18,15 +18,21 @@ public class ReportService {
 
 	private final GameReportRepository reports;
 	private final PlayerNames names;
+	private final com.fazeel.quizking.board.BoardCache boards;
 
-	public ReportService(GameReportRepository reports, PlayerNames names) {
+	public ReportService(GameReportRepository reports, PlayerNames names, com.fazeel.quizking.board.BoardCache boards) {
 		this.reports = reports;
 		this.names = names;
+		this.boards = boards;
 	}
 
 	public void record(SinglePlayerResult r) {
 		names.remember(r.userId(), r.playerName());
-		reports.save(ReportMapper.single(r));
+		GameReport report = reports.save(ReportMapper.single(r));
+		if (report != null && report.isDaily()) {
+			// the player's result page asks for the daily board right away, so it must include this run
+			boards.evict(com.fazeel.quizking.board.LeaderboardService.DAILY_KEY);
+		}
 	}
 
 	public void record(AdaptiveResult r) {

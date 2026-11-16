@@ -26,9 +26,12 @@ public class BoardController {
 	private final Clock clock;
 	private final com.fazeel.quizking.board.CountryCup cup;
 	private final com.fazeel.quizking.invite.Invites invites;
+	private final com.fazeel.quizking.board.BoardCache cache;
 
 	public BoardController(LeaderboardService boards, PlayerNames names, Clock clock,
-			com.fazeel.quizking.board.CountryCup cup, com.fazeel.quizking.invite.Invites invites) {
+			com.fazeel.quizking.board.CountryCup cup, com.fazeel.quizking.invite.Invites invites,
+			com.fazeel.quizking.board.BoardCache cache) {
+		this.cache = cache;
 		this.boards = boards;
 		this.names = names;
 		this.clock = clock;
@@ -75,6 +78,7 @@ public class BoardController {
 	@org.springframework.web.bind.annotation.ResponseStatus(org.springframework.http.HttpStatus.NO_CONTENT)
 	public void me(@org.springframework.web.bind.annotation.RequestBody MyCountry body) {
 		names.country(Callers.currentUserId(), Callers.currentUserName(), body == null ? null : body.country());
+		cache.evict(com.fazeel.quizking.board.CountryCup.KEY); // the cup page reloads right after "Join the cup
 	}
 
 	/** A day's challenge ranking; today (UTC) by default. */

@@ -1,4 +1,8 @@
 spring:
+  data:
+    mongodb:
+      # create the indexes declared with @Indexed / @CompoundIndex (off by default in Spring Boot)
+      auto-index-creation: true
   application:
     name: multiplayer-game-engine
   config:

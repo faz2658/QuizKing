@@ -5,6 +5,8 @@ services:
   caddy:
     image: caddy:2.10
     restart: unless-stopped
+    mem_limit: 256m
+    memswap_limit: 256m
     ports: ["80:80", "443:443", "443:443/udp"]
     environment:
       SITE_ADDRESS: ${SITE_ADDRESS:?set SITE_ADDRESS}

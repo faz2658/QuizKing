@@ -33,6 +33,18 @@ public class GameCatalogService {
 	private final CatalogEvents events;
 	private final AutoGames autoGames;
 
+	/** Bumped by every change to a game or category, so cached lists know they're out of date. */
+	private final java.util.concurrent.atomic.AtomicLong version = new java.util.concurrent.atomic.AtomicLong();
+
+	public long version() {
+		return version.get();
+	}
+
+	private <T> T changed(T result) {
+		version.incrementAndGet();
+		return result;
+	}
+
 	public GameCatalogService(GameRepository games, MultiPlayerGameRepository multiGames,
 			CategoryRepository categories, GameIdGenerator ids, QuestionSelector selector, CatalogEvents events,
 			AutoGames autoGames) {
@@ -107,7 +119,7 @@ public class GameCatalogService {
 				}
 			}
 		}
-		return saved;
+		return changed(saved);
 	}
 
 	/** Games of a topic always draw from its current pool, so new questions show up in existing games. */
@@ -192,7 +204,7 @@ public class GameCatalogService {
 		Game saved = games.save(game);
 		events.gameCreated(saved);
 		events.gameDefinition(saved);
-		return saved;
+		return changed(saved);
 	}
 
 	public Game game(int gameId) {
@@ -242,7 +254,7 @@ public class GameCatalogService {
 		}
 		Game saved = games.save(game);
 		events.gameDefinition(saved);
-		return saved;
+		return changed(saved);
 	}
 
 	public void deleteGame(int gameId) {
@@ -252,6 +264,7 @@ public class GameCatalogService {
 		games.deleteById(gameId);
 		multiGames.deleteById(gameId);
 		events.gameDeleted(gameId);
+		version.incrementAndGet();
 	}
 
 	/** Answers a game engine's request for a game definition. Unknown ids are ignored. */
@@ -293,7 +306,7 @@ public class GameCatalogService {
 
 		MultiPlayerGame saved = multiGames.save(game);
 		events.multiPlayerGameCreated(saved);
-		return saved;
+		return changed(saved);
 	}
 
 	public MultiPlayerGame multiPlayerGame(int gameId) {

@@ -67,6 +67,7 @@ class GameManagerControllerTest {
 		q.setQuestionStem("Secret?");
 		q.setCorrectAnswer("SECRET-ANSWER");
 		g.setQuestions(java.util.List.of(q, q, q));
+		when(catalog.version()).thenReturn(System.nanoTime()); // each test sees a fresh catalog
 		when(catalog.games()).thenReturn(java.util.List.of(g));
 
 		mvc.perform(get("/api/game/games").with(admin())).andExpect(status().isOk())
@@ -99,6 +100,7 @@ class GameManagerControllerTest {
 
 	@Test
 	void anyoneMayBrowseButOnlyAdminsChangeGames() throws Exception {
+		when(catalog.version()).thenReturn(System.nanoTime()); // each test sees a fresh catalog
 		when(catalog.games()).thenReturn(java.util.List.of());
 
 		mvc.perform(get("/api/game/games")).andExpect(status().isOk());
@@ -106,5 +108,20 @@ class GameManagerControllerTest {
 				.content("{}")).andExpect(status().isForbidden());
 		mvc.perform(delete("/api/game/deletegame/7").with(player(5))).andExpect(status().isForbidden());
 		mvc.perform(delete("/api/game/deletegame/7")).andExpect(status().isUnauthorized());
+	}
+
+	@Test
+	void theGamesListIsBuiltOnceUntilTheCatalogChanges() throws Exception {
+		long v = System.nanoTime();
+		when(catalog.version()).thenReturn(v);
+		when(catalog.games()).thenReturn(java.util.List.of());
+		for (int i = 0; i < 5; i++) {
+			mvc.perform(get("/api/game/games").with(admin())).andExpect(status().isOk());
+		}
+		org.mockito.Mockito.verify(catalog, org.mockito.Mockito.times(1)).games();
+
+		when(catalog.version()).thenReturn(v + 1); // someone created or changed a game
+		mvc.perform(get("/api/game/games").with(admin())).andExpect(status().isOk());
+		org.mockito.Mockito.verify(catalog, org.mockito.Mockito.times(2)).games();
 	}
 }

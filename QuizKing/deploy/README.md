@@ -11,9 +11,17 @@ Live: https://40-233-75-213.sslip.io (Ampere A1, 4 OCPU / 12 GB, Ubuntu 24.04, T
 
 ## Continuous deployment (GitHub Actions)
 `.github/workflows/deploy.yml` deploys automatically after CI passes on `master` (or `main`), that is, after a
-pull request is merged, and from the Actions tab by hand. It uploads the commit CI tested and runs
-`deploy/deploy.sh` on the server: swap in the code (keeping `.env`, the AI model and the databases), build the
-jars, rebuild and restart the containers, and wait until the site answers (the run fails if it doesn't).
+pull request is merged, and from the Actions tab by hand:
+
+1. **Build images** (on GitHub's ARM runner, the same architecture as the server): builds the jars and every app
+   image for the commit CI tested and pushes them to `ghcr.io/faz2658/quizking/<service>:<commit>`.
+2. **Deploy**: copies the compose files to the server and runs `deploy/deploy.sh`, which records the image tag
+   in `.env` (`IMAGE_REGISTRY`, `IMAGE_TAG`), pulls the new images with the job's short-lived token, restarts
+   only the services whose image changed, and waits until the site answers (the run fails if it doesn't).
+
+Nothing is compiled on the live server any more, so a deploy no longer eats its CPU and memory. Keeps `.env`,
+the AI model and the databases. Emergency fallback when GitHub is unavailable: `BUILD_ON_SERVER=1 bash
+deploy/deploy.sh manual` builds on the server the old way.
 
 One-time setup:
 1. Make a key just for deployments and allow it on the server:
@@ -28,12 +36,18 @@ One-time setup:
 3. Optional: Settings > Environments > `production` can require an approval before each deploy.
 
 ## Deploy / update by hand
+Run the Deploy workflow from the Actions tab. To restart the live images without a new release:
 ```bash
-# on your machine: send the source (jars are built on the server, it has fast downloads)
-git archive --format=tar.gz --prefix=quiz-king/ HEAD | ssh quizking 'tar -xzf -'
-ssh quizking 'cd quiz-king && ./mvnw -B -q -DskipTests package && \
-  sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml --profile ai up -d --build'
+ssh quizking 'cd quiz-king && sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml --profile ai up -d'
 ```
+
+## Memory
+Every container has a memory ceiling (`mem_limit` in `docker-compose.yml`) and no swap of its own, and Java
+heaps are 60% of their container. A service that runs out restarts on its own instead of pushing the whole
+server into swap (which froze it for 20 minutes on 16 Nov 2026). Most Java services get 640 MB
+(`JAVA_MEM_LIMIT`), game-manager, game-engine and game-reporting 896 MB (`HEAVY_MEM_LIMIT`); MongoDB's cache
+is 0.5 GB, Kafka's heap 384 MB, and the AI model 3 GB (its 2.5 GB file stays loaded). Under a 100-player
+load test the whole stack peaked at about 10 GB of the server's 12 GB.
 `.env` on the server (never committed) holds `SITE_ADDRESS`, `CORS_ALLOWED_ORIGINS=https://<site>`,
 `QUIZKING_JWT_SECRET`, `QUIZKING_ADMIN_EMAILS`, `MYSQL_PASSWORD`, `NEO4J_PASSWORD`, `GRAFANA_PASSWORD` and
 `AI_MODEL_URL=http://question-model:8080` (with the GGUF in `ai/question-model/models/`), and optionally
