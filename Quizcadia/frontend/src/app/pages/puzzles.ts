@@ -124,7 +124,7 @@ export class Puzzles {
 
   protected show(kind: PuzzleKind): void {
     this.open.set(kind);
-    setTimeout(() => this.stage()?.nativeElement.scrollIntoView({ behavior: 'smooth', block: 'start' }));
+    setTimeout(() => this.stage()?.nativeElement.scrollIntoView?.({ behavior: 'smooth', block: 'start' }));
   }
 
   protected playAll(): void {
