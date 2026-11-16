@@ -8,10 +8,11 @@ import { InstallPrompt } from './core/install-prompt';
 import { World } from './core/world';
 import { Aurora } from './motion/aurora';
 import { ConsentBanner } from './ui/consent-banner';
+import { Support } from './ui/support';
 
 @Component({
   selector: 'app-root',
-  imports: [NgTemplateOutlet, RouterOutlet, RouterLink, RouterLinkActive, Aurora, ConsentBanner],
+  imports: [NgTemplateOutlet, RouterOutlet, RouterLink, RouterLinkActive, Aurora, ConsentBanner, Support],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './app.html',
   styleUrl: './app.scss',

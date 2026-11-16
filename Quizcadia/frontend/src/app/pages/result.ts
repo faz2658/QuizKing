@@ -14,6 +14,7 @@ import { Sparks } from '../motion/sparks';
 import { GameFx } from '../core/game-fx';
 import { DailyBoard } from '../ui/daily-board';
 import { QuestionFeedback } from '../ui/question-feedback';
+import { Support } from '../ui/support';
 
 export function verdict(percentage: number): string {
   if (percentage >= 90) return 'Outstanding!';
@@ -25,7 +26,7 @@ export function verdict(percentage: number): string {
 
 @Component({
   selector: 'mv-result',
-  imports: [RouterLink, CountUp, DailyBoard, QuestionFeedback],
+  imports: [RouterLink, CountUp, DailyBoard, QuestionFeedback, Support],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (state(); as st) {
@@ -71,6 +72,8 @@ export function verdict(percentage: number): string {
             @if (shareNote()) { <p class="muted share-note">{{ shareNote() }}</p> }
           </div>
         </section>
+
+        <mv-support kind="card" placement="results" />
 
         @if (r.variant === 'DAILY') { <mv-daily-board [date]="r.variantKey" /> }
 
