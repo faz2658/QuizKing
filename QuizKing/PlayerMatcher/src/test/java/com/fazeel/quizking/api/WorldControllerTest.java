@@ -1,13 +1,9 @@
 package com.fazeel.quizking.api;
 
-import static org.mockito.Mockito.when;
 import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
-
-import java.time.Instant;
-import java.util.List;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +25,9 @@ class WorldControllerTest {
 	@Autowired
 	MockMvc mvc;
 
-	@MockitoBean
+	// The real Presence, not a mock: the app's scheduled task calls presence.tick() as the context starts, and on a
+	// mock that background call can steal a when(...) stubbing made at the same moment (a flaky CI failure).
+	@Autowired
 	Presence presence;
 
 	@MockitoBean
@@ -46,8 +44,7 @@ class WorldControllerTest {
 
 	@Test
 	void onlyAdminsSeeTheNamesOfWhoIsOnline() throws Exception {
-		Instant t = Instant.parse("2026-11-16T05:00:00Z");
-		when(presence.whoIsOnline()).thenReturn(List.of(new Presence.OnlinePlayer(7, "Ada", "CA", false, t, t)));
+		presence.seen(7, "Ada", "CA"); // a heartbeat
 
 		mvc.perform(get("/api/v1/matching/admin/online")
 				.with(jwt().jwt(j -> j.subject("2")).authorities(new SimpleGrantedAuthority("ROLE_USER"))))
