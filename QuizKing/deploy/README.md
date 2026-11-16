@@ -48,9 +48,10 @@ Admin > Website analytics reads Google Analytics with a read-only service accoun
 2. Google Analytics: Admin > Property access management > add the service account's email as **Viewer**.
 3. Copy the key to the server and point the settings at it:
    ```bash
-   ssh quizking 'mkdir -p ~/quiz-king/secrets && chmod 700 ~/quiz-king/secrets'
+   ssh quizking 'mkdir -p ~/quiz-king/secrets && chmod 711 ~/quiz-king/secrets'
    scp ~/Downloads/<key-file>.json quizking:quiz-king/secrets/ga-service-account.json
-   ssh quizking 'chmod 644 ~/quiz-king/secrets/ga-service-account.json'   # the container reads it as uid 1000
+   # the Java containers run as uid 1000 (the server's own user is 1001): give the key to them only
+   ssh quizking 'sudo chown 1000:1000 ~/quiz-king/secrets/ga-service-account.json && sudo chmod 400 ~/quiz-king/secrets/ga-service-account.json'
    ```
    In the server's `.env`: `GA_PROPERTY_ID=564461039` and `GA_CREDENTIALS_FILE=/run/secrets/ga-service-account.json`,
    then restart game-reporting. `secrets/` is never committed and deploys leave it alone.
