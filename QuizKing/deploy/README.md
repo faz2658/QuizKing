@@ -56,6 +56,13 @@ Admin > Website analytics reads Google Analytics with a read-only service accoun
    In the server's `.env`: `GA_PROPERTY_ID=564461039` and `GA_CREDENTIALS_FILE=/run/secrets/ga-service-account.json`,
    then restart game-reporting. `secrets/` is never committed and deploys leave it alone.
 
+## Health alerts
+`.github/workflows/health.yml` runs every 15 minutes (and from the Actions tab). It checks that the site and its API
+answer, and over SSH that the disk is under 85%, at least 10% of memory is available, and every container is running
+and healthy. On a problem it opens a GitHub issue labelled `site-alert` that mentions the owner (GitHub emails and
+pushes it), comments when the problem changes, and closes it when everything is fine again. Deploys also remove the
+previous release's images and the Docker build cache, which had filled the disk to 96%.
+
 ## Memory
 Every container has a memory ceiling (`mem_limit` in `docker-compose.yml`) and no swap of its own, and Java
 heaps are 60% of their container. A service that runs out restarts on its own instead of pushing the whole

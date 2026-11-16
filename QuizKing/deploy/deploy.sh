@@ -54,7 +54,11 @@ else
   "${COMPOSE[@]}" up -d --no-build --remove-orphans
 fi
 DOCKER="sudo docker" bash deploy/rename-migration.sh after
-sudo docker image prune -f >/dev/null
+# Every deploy brings a new set of images; remove the ones no container uses any more (the previous release) and
+# any build cache, or the disk fills up (it reached 96% after a few days). Rolling back = pulling an older tag.
+sudo docker image prune -a -f >/dev/null
+sudo docker builder prune -a -f >/dev/null
+echo "==> Disk: $(df -h / | awk 'NR==2 {print $5 " used, " $4 " free"}')"
 
 SITE=$(grep -E '^SITE_ADDRESS=' .env | cut -d= -f2-)
 echo "==> Waiting for https://$SITE"
