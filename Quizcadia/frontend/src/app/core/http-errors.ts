@@ -11,6 +11,10 @@ export function errorMessage(err: unknown, fallback = 'Something went wrong. Ple
     if (detail) {
       return detail;
     }
+    if (err.status === 429) {
+      // the proxy's limit (plain page, no detail): many sign-ins from one network in a short time
+      return 'Too many attempts from your network just now. Please wait a minute and try again.';
+    }
   }
   return fallback;
 }

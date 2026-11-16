@@ -88,6 +88,27 @@ class AuthFlowTest {
 	}
 
 	@Test
+	void passwordGuessingLocksThatEmailOnly() {
+		post("/api/v1/auth/register", Map.of("userName", "Cleo", "email", "cleo@example.test", "password", "right-password-1"));
+		post("/api/v1/auth/register", Map.of("userName", "Dan", "email", "dan@example.test", "password", "right-password-2"));
+		for (int i = 0; i < 10; i++) {
+			assertThat(post("/api/v1/auth/login", Map.of("email", "cleo@example.test", "password", "guess-" + i))).isEqualTo(401);
+		}
+		// locked now, even with the right password, and whatever capitals are used. (A plain JDK client: the default
+		// one would honour Retry-After and wait out the whole lock before returning.)
+		var noRetry = RestClient.builder().baseUrl("http://localhost:" + port)
+				.requestFactory(new org.springframework.http.client.JdkClientHttpRequestFactory())
+				.defaultStatusHandler(HttpStatusCode::isError, (req, res) -> {
+				}).build();
+		var locked = noRetry.post().uri("/api/v1/auth/login").contentType(MediaType.APPLICATION_JSON)
+				.body(Map.of("email", "Cleo@Example.test", "password", "right-password-1")).retrieve().toBodilessEntity();
+		assertThat(locked.getStatusCode().value()).isEqualTo(429);
+		assertThat(locked.getHeaders().getFirst("Retry-After")).isNotBlank();
+		// other accounts are unaffected
+		assertThat(post("/api/v1/auth/login", Map.of("email", "dan@example.test", "password", "right-password-2"))).isEqualTo(200);
+	}
+
+	@Test
 	void wrongPasswordAndUnknownEmailAreBoth401() {
 		post("/api/v1/auth/register", Map.of("userName", "Bob", "email", "bob@example.test", "password", "password123"));
 

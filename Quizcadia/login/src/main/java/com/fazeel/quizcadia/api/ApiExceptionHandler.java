@@ -18,6 +18,13 @@ public class ApiExceptionHandler {
 		return ProblemDetail.forStatusAndDetail(HttpStatus.CONFLICT, e.getMessage());
 	}
 
+	@ExceptionHandler(com.fazeel.quizcadia.account.TooManyAttemptsException.class)
+	org.springframework.http.ResponseEntity<ProblemDetail> tooMany(com.fazeel.quizcadia.account.TooManyAttemptsException e) {
+		return org.springframework.http.ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS)
+				.header("Retry-After", String.valueOf(e.retryAfterSeconds()))
+				.body(ProblemDetail.forStatusAndDetail(HttpStatus.TOO_MANY_REQUESTS, e.getMessage()));
+	}
+
 	@ExceptionHandler(BadCredentialsException.class)
 	ProblemDetail badCredentials(BadCredentialsException e) {
 		return ProblemDetail.forStatusAndDetail(HttpStatus.UNAUTHORIZED, e.getMessage());

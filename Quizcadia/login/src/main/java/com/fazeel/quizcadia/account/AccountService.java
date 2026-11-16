@@ -27,9 +27,11 @@ public class AccountService {
 	private final AccountEvents events;
 	private final Clock clock;
 	private final Set<String> adminEmails;
+	private final LoginThrottle throttle;
 
 	public AccountService(AccountRepository accounts, PasswordEncoder encoder, AccountEvents events, Clock clock,
-			@Value("${quizcadia.admin-emails:}") Set<String> adminEmails) {
+			@Value("${quizcadia.admin-emails:}") Set<String> adminEmails, LoginThrottle throttle) {
+		this.throttle = throttle;
 		this.accounts = accounts;
 		this.encoder = encoder;
 		this.events = events;
@@ -65,11 +67,15 @@ public class AccountService {
 	}
 
 	public Account authenticate(String email, String password) {
-		Optional<Account> account = accounts.findByEmailIgnoreCase(normalize(email));
+		String key = normalize(email);
+		throttle.check(key); // too many wrong passwords for this email lately
+		Optional<Account> account = accounts.findByEmailIgnoreCase(key);
 		boolean ok = encoder.matches(password, account.map(Account::getPasswordHash).orElse(dummyHash));
 		if (account.isEmpty() || !ok) {
+			throttle.failed(key);
 			throw new BadCredentialsException();
 		}
+		throttle.succeeded(key);
 		return account.get();
 	}
 

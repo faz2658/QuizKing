@@ -65,11 +65,12 @@ public class InquiryController {
 
 	@PostMapping
 	public ResponseEntity<Map<String, Boolean>> send(@Valid @RequestBody InquiryRequest r,
+			@RequestHeader(value = "X-Real-IP", required = false) String realIp,
 			@RequestHeader(value = "X-Forwarded-For", required = false) String forwardedFor, HttpServletRequest http) {
 		if (r.website() != null && !r.website().isBlank()) {
 			return ResponseEntity.accepted().body(Map.of("received", true)); // a bot: pretend all went well
 		}
-		if (!limiter.allow(sender(forwardedFor, http))) {
+		if (!limiter.allow(sender(realIp, forwardedFor, http))) {
 			throw new ResponseStatusException(HttpStatus.TOO_MANY_REQUESTS, "Too many requests. Please try again later.");
 		}
 		var now = clock.instant();
@@ -91,8 +92,14 @@ public class InquiryController {
 		return repo.save(i.withStatus(change.status(), clock.instant()));
 	}
 
-	/** The visitor's address: the first one the proxies recorded, else the connection's. */
-	static String sender(String forwardedFor, HttpServletRequest http) {
+	/**
+	 * The visitor's address: X-Real-IP, which nginx sets from the address Caddy recorded (visitors can't set it),
+	 * else the first X-Forwarded-For entry, else the connection's.
+	 */
+	static String sender(String realIp, String forwardedFor, HttpServletRequest http) {
+		if (realIp != null && !realIp.isBlank()) {
+			return realIp.strip();
+		}
 		if (forwardedFor != null && !forwardedFor.isBlank()) {
 			return forwardedFor.split(",")[0].strip();
 		}
