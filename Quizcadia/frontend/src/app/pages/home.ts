@@ -36,6 +36,11 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
 
     <mv-progress-strip />
     <mv-daily-banner />
+    <a class="card puzzle-strip" routerLink="/puzzles">
+      <span class="pz-icon" aria-hidden="true">🧩</span>
+      <span><strong>Puzzle of the Day</strong><span class="muted"> · Clue Trail, Letter Vault, Four by Four and a Brain Teaser</span></span>
+      <span class="pz-go">Play →</span>
+    </a>
     <mv-friends-strip />
 
     @if (state().loading) {
@@ -68,6 +73,10 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
     }
   `,
   styles: `
+    .puzzle-strip { display: flex; align-items: center; gap: 14px; padding: 14px 18px; margin: -16px 0 28px; color: var(--text); text-decoration: none; }
+    .puzzle-strip:hover { border-color: var(--accent); }
+    .pz-icon { font-size: 1.5rem; }
+    .pz-go { margin-left: auto; font-weight: 800; color: var(--accent); white-space: nowrap; }
     .head { display: flex; justify-content: space-between; align-items: end; gap: 24px; flex-wrap: wrap; margin-bottom: 36px; }
     .head h1 { margin: 14px 0 8px; }
     .head p { margin: 0; }
