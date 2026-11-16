@@ -67,7 +67,9 @@ public class PlayerMatcherApplication {
 				new com.fazeel.quizking.config.MultiplayerGames(http, gameManagerUrl, Clock.systemUTC()), matchPublisher);
 	}
 
+	/** Background ticks (lobby timeouts, bots, forgetting old presence). Tests switch them off with quizking.timers.enabled=false. */
 	@Bean
+	@org.springframework.boot.autoconfigure.condition.ConditionalOnProperty(name = "quizking.timers.enabled", havingValue = "true", matchIfMissing = true)
 	LobbyTimer lobbyTimer(Matchmaker matchmaker, PrivateRooms rooms, QuickMatch quick, Presence presence) {
 		return new LobbyTimer(matchmaker, rooms, quick, presence);
 	}
