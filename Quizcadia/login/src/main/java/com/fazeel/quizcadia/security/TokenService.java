@@ -17,6 +17,9 @@ public class TokenService {
 
 	public static final String ISSUER = "quizcadia-login";
 
+	/** What tokens said before the rename to QuizCadia; still accepted until they expire. */
+	public static final String LEGACY_ISSUER = "quiz-king-login";
+
 	private final JwtEncoder encoder;
 	private final Duration lifetime;
 	private final Clock clock;

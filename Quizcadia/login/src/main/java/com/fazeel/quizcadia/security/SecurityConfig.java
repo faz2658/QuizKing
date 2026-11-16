@@ -22,6 +22,9 @@ import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.jose.jws.MacAlgorithm;
+import org.springframework.security.oauth2.core.DelegatingOAuth2TokenValidator;
+import org.springframework.security.oauth2.jwt.JwtClaimNames;
+import org.springframework.security.oauth2.jwt.JwtClaimValidator;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
 import org.springframework.security.oauth2.jwt.JwtEncoder;
 import org.springframework.security.oauth2.jwt.JwtValidators;
@@ -90,7 +93,11 @@ public class SecurityConfig {
 	@Bean
 	JwtDecoder jwtDecoder(SecretKey key) {
 		NimbusJwtDecoder decoder = NimbusJwtDecoder.withSecretKey(key).macAlgorithm(MacAlgorithm.HS256).build();
-		decoder.setJwtValidator(JwtValidators.createDefaultWithIssuer(TokenService.ISSUER));
+		// Tokens signed before the rename to QuizCadia say "quiz-king-login" (same key): still accepted until they
+		// expire (quizcadia.jwt.lifetime), so nobody who was signed in gets 401s from this service
+		decoder.setJwtValidator(new DelegatingOAuth2TokenValidator<>(JwtValidators.createDefault(),
+				new JwtClaimValidator<Object>(JwtClaimNames.ISS, iss -> iss != null
+						&& (TokenService.ISSUER.equals(iss.toString()) || TokenService.LEGACY_ISSUER.equals(iss.toString())))));
 		return decoder;
 	}
 
