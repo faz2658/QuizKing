@@ -49,6 +49,8 @@ const styles = `
       <li>To run the game: sign you in, save your progress, and show leaderboards and results.</li>
       <li>To show your display name, flag and scores to other players on leaderboards, in multiplayer matches and on
         quizzes you share.</li>
+      <li>To show the site's administrators who is online right now (display name, flag and how long you've been
+        online), so they can look after the game. This isn't stored once you leave.</li>
       <li>To send password reset emails when you ask for one. We don't send marketing email.</li>
       <li>To understand how the game is used (with Google Analytics, if you allow it) so we can improve it.</li>
     </ul>

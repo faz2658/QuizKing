@@ -21,6 +21,10 @@ describe('Admin user stats', () => {
       signupsByDay: [{ day: '2026-11-14', count: 3 }, { day: '2026-11-15', count: 2 }],
       recent: [{ userId: 12, userName: 'Ada', email: 'ada@example.test', createdAt: '2026-11-15T10:00:00Z', google: true, admin: false }],
     });
+    http.expectOne('/api/v1/matching/admin/online').flush([
+      { userId: 3, name: 'Bo', country: 'CA', guest: false, onlineSince: new Date(Date.now() - 12 * 60000).toISOString(), lastSeen: new Date().toISOString() },
+      { userId: 912345678, name: 'Visitor', country: null, guest: true, onlineSince: new Date().toISOString(), lastSeen: new Date().toISOString() },
+    ]);
     http.expectOne('/api/v1/reports/admin/stats?days=30').flush({
       gamesAllTime: 400, gamesInPeriod: 120, activeToday: 4, active7Days: 8, active30Days: 11, guestPlayers30Days: 6,
       byDay: [{ day: '2026-11-14', games: 30, players: 5, guestGames: 2 }, { day: '2026-11-15', games: 40, players: 4, guestGames: 0 }],
@@ -34,6 +38,13 @@ describe('Admin user stats', () => {
     expect(el.textContent).toContain('Canada');
     expect(el.textContent).toContain('Bo');
     expect(el.querySelectorAll('.chart .col').length).toBe(4);
+    const people = el.querySelectorAll('.people li');
+    expect(people.length).toBe(2);
+    expect(people[0].textContent).toContain('Bo');
+    expect(people[0].textContent).toContain('12 min');
+    expect(people[1].textContent).toContain('guest');
+    expect(people[1].textContent).toContain('just now');
+    expect(el.querySelector('.online .count')?.textContent).toContain('2');
 
     (el.querySelectorAll('.seg button')[0] as HTMLButtonElement).click();
     http.expectOne('/api/v1/auth/admin/stats?days=7').flush({ total: 0, google: 0, password: 0, admins: 0, today: 0, last7Days: 0, last30Days: 0, signupsByDay: [], recent: [] });

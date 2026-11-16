@@ -39,4 +39,27 @@ class PresenceTest {
 		assertThat(enriched.names()).containsEntry(1, "Ada").containsEntry(-2, "🤖 Turing");
 		assertThat(enriched.countries()).containsEntry(1, "CA").containsEntry(-2, "JP");
 	}
+
+	@Test
+	void adminsSeeWhoIsOnlineAccountsFirstWithTheTimeTheyCameOnline() {
+		java.time.Instant start = clock.now;
+		presence.seen(Presence.GUEST_ID_BASE + 5, "zed (guest)", null);
+		presence.seen(2, "bo", "IN");
+		presence.seen(1, "Ada", "ca");
+		clock.now = clock.now.plus(Duration.ofSeconds(60));
+		presence.seen(1, "Ada", null); // still online: keeps the time she came online
+		presence.seen(3, "Cy", "IN");
+
+		List<Presence.OnlinePlayer> online = presence.whoIsOnline();
+		assertThat(online).extracting(Presence.OnlinePlayer::name).containsExactly("Ada", "bo", "Cy", "zed (guest)");
+		assertThat(online.get(0).onlineSince()).isEqualTo(start);
+		assertThat(online.get(0).lastSeen()).isEqualTo(clock.now);
+		assertThat(online.get(0).country()).isEqualTo("CA");
+		assertThat(online.get(3).guest()).isTrue();
+
+		clock.now = clock.now.plus(Duration.ofMinutes(5)); // everyone left; Ada comes back later
+		presence.seen(1, "Ada", null);
+		assertThat(presence.whoIsOnline()).extracting(Presence.OnlinePlayer::name).containsExactly("Ada");
+		assertThat(presence.whoIsOnline().get(0).onlineSince()).isEqualTo(clock.now);
+	}
 }

@@ -18,6 +18,8 @@ export interface ActivityStatsView {
   byDay: ActivityDay[]; modes: NameCount[]; topGames: NameCount[]; countries: NameCount[]; topPlayers: TopPlayer[];
 }
 
+export interface OnlinePlayer { userId: number; name: string | null; country: string | null; guest: boolean; onlineSince: string; lastSeen: string }
+
 /** Admin-only numbers: accounts from the login service, play from the reporting service. */
 @Injectable({ providedIn: 'root' })
 export class AdminStatsApi {
@@ -25,6 +27,11 @@ export class AdminStatsApi {
 
   accounts(days: number): Observable<AccountStatsView> {
     return this.http.get<AccountStatsView>('/api/v1/auth/admin/stats', { params: new HttpParams().set('days', days) });
+  }
+
+  /** Everyone with Quiz King open right now (from the "online" heartbeat; gone after 2 minutes without one). */
+  online(): Observable<OnlinePlayer[]> {
+    return this.http.get<OnlinePlayer[]>('/api/v1/matching/admin/online');
   }
 
   activity(days: number): Observable<ActivityStatsView> {
