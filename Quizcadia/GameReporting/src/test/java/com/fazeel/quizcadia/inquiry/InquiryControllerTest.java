@@ -73,7 +73,7 @@ class InquiryControllerTest {
 	void anyoneCanSendARequestWithoutAnAccount() throws Exception {
 		when(limiter.allow(anyString())).thenReturn(true);
 		mvc.perform(post("/api/v1/reports/inquiries").contentType(MediaType.APPLICATION_JSON).content(EVENT)
-				.header("X-Forwarded-For", "203.0.113.9, 10.0.0.2"))
+				.header("X-Forwarded-For", "198.51.100.66, 10.0.0.2").header("X-Real-IP", "203.0.113.9"))
 				.andExpect(status().isAccepted()).andExpect(jsonPath("$.received").value(true));
 
 		ArgumentCaptor<Inquiry> saved = ArgumentCaptor.forClass(Inquiry.class);
