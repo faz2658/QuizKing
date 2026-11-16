@@ -135,6 +135,12 @@ class AuthFlowTest {
 	}
 
 	@Test
+	void passwordResetIsOffUntilEmailIsSetUp() {
+		// the test configuration has no MAIL_HOST, so reset links can't be emailed and the app hides the option
+		assertThat(http().get().uri("/api/v1/auth/providers").retrieve().body(Map.class)).containsEntry("passwordReset", false);
+	}
+
+	@Test
 	@SuppressWarnings("unchecked")
 	void meDescribesAGuestFromTheirToken() {
 		String token = (String) postForMap("/api/v1/auth/guest", Map.of("userName", "Visitor")).get("token");

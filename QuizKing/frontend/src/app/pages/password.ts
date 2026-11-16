@@ -24,7 +24,12 @@ const shared = `
   template: `
     <div class="card panel fade-up">
       <h1>Forgot your password?</h1>
-      @if (sent()) {
+      @if (available() === false) {
+        <div class="done" role="status">
+          Password reset by email isn't available yet. If you signed up with Google, use <strong>Sign in with Google</strong>
+          on the log-in page. Otherwise, ask the site's admin for a reset link.
+        </div>
+      } @else if (sent()) {
         <div class="done" role="status">
           If an account uses {{ sentTo() }}, a reset link is on its way. It works for 30 minutes.
           Check your spam folder if it doesn't arrive.
@@ -48,6 +53,12 @@ const shared = `
 })
 export class ForgotPassword {
   private readonly auth = inject(AuthService);
+  /** null while we ask the server; false when it can't email reset links. */
+  protected readonly available = signal<boolean | null>(null);
+
+  constructor() {
+    this.auth.providers().subscribe({ next: (p) => this.available.set(!!p?.passwordReset), error: () => this.available.set(null) });
+  }
   protected email = '';
   protected readonly busy = signal(false);
   protected readonly sent = signal(false);
