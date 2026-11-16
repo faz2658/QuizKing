@@ -41,6 +41,21 @@ Run the Deploy workflow from the Actions tab. To restart the live images without
 ssh quizking 'cd quiz-king && sudo docker compose -f docker-compose.yml -f docker-compose.prod.yml --profile ai up -d'
 ```
 
+## Website analytics on the admin page
+Admin > Website analytics reads Google Analytics with a read-only service account:
+1. Google Cloud (project quiz-king-514821): enable the **Google Analytics Data API**, create a service account
+   (no roles needed) and add a JSON key; the browser downloads it.
+2. Google Analytics: Admin > Property access management > add the service account's email as **Viewer**.
+3. Copy the key to the server and point the settings at it:
+   ```bash
+   ssh quizking 'mkdir -p ~/quiz-king/secrets && chmod 711 ~/quiz-king/secrets'
+   scp ~/Downloads/<key-file>.json quizking:quiz-king/secrets/ga-service-account.json
+   # the Java containers run as uid 1000 (the server's own user is 1001): give the key to them only
+   ssh quizking 'sudo chown 1000:1000 ~/quiz-king/secrets/ga-service-account.json && sudo chmod 400 ~/quiz-king/secrets/ga-service-account.json'
+   ```
+   In the server's `.env`: `GA_PROPERTY_ID=564461039` and `GA_CREDENTIALS_FILE=/run/secrets/ga-service-account.json`,
+   then restart game-reporting. `secrets/` is never committed and deploys leave it alone.
+
 ## Memory
 Every container has a memory ceiling (`mem_limit` in `docker-compose.yml`) and no swap of its own, and Java
 heaps are 60% of their container. A service that runs out restarts on its own instead of pushing the whole

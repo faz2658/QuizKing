@@ -21,7 +21,8 @@ APP_SERVICES=(discovery config question-generator game-manager game-engine multi
 echo "==> Deploying $COMMIT"
 if [ -d "$NEXT" ]; then
   rsync -a --delete \
-    --exclude .env --exclude 'ai/question-model/models/' --exclude 'target/' --exclude 'frontend/node_modules/' \
+    --exclude .env --exclude 'secrets/' --exclude 'ai/question-model/models/' --exclude 'target/' \
+    --exclude 'frontend/node_modules/' \
     --exclude DEPLOYED_COMMIT \
     "$NEXT/" "$APP/"
   rm -rf "$NEXT"

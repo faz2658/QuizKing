@@ -252,6 +252,12 @@ services:
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/Game_Reports
+      # Google Analytics on the admin page: the property's number and a read-only service account key, kept in
+      # ./secrets on the server (never committed). Without them the page explains how to set it up.
+      GA_PROPERTY_ID: ${GA_PROPERTY_ID:-}
+      GA_CREDENTIALS_FILE: ${GA_CREDENTIALS_FILE:-}
+    volumes:
+      - ./secrets:/run/secrets:ro
 
   # Fine-tuned question model (optional): docker compose --profile ai up -d
   # Needs ai/question-model/models/quiz-king-q4_k_m.gguf, produced by the Colab notebook.

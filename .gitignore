@@ -25,3 +25,6 @@ hs_err_pid*.log
 # Local secrets
 .env
 data/
+
+# Service account keys and other files mounted into containers on the server
+secrets/

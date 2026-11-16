@@ -28,6 +28,10 @@ server:
   port: ${PORT:9099}
 
 quizking:
+  # Google Analytics numbers on the admin page (read-only service account). Empty = the page explains the setup.
+  analytics:
+    property-id: ${GA_PROPERTY_ID:}
+    credentials-file: ${GA_CREDENTIALS_FILE:}
   kafka:
     enabled: ${KAFKA_ENABLED:true}
   cors:
