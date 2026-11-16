@@ -4,6 +4,7 @@ import java.time.Instant;
 import java.util.List;
 
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.CompoundIndex;
 import org.springframework.data.mongodb.core.index.Indexed;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -12,9 +13,11 @@ import org.springframework.data.mongodb.core.mapping.Document;
  * the player, so a replayed Kafka message overwrites the same report instead of duplicating it.
  */
 @Document(collection = "game_reports")
-public record GameReport(@Id String id, GameMode mode, @Indexed int userId, int gameId, String gameName,
+@CompoundIndex(name = "player_history", def = "{'userId': 1, 'completedAt': -1}") // a player's games, newest first
+@CompoundIndex(name = "variant_day", def = "{'variant': 1, 'variantKey': 1}") // one day's Daily Challenge runs
+public record GameReport(@Id String id, GameMode mode, int userId, int gameId, String gameName,
 		int categoryId, int score, Integer maxScore, int correctAnswers, int totalQuestions, Integer rank,
-		Integer players, Integer highestLevel, Instant completedAt, List<ReviewItem> questions, String variant,
+		Integer players, Integer highestLevel, @Indexed Instant completedAt, List<ReviewItem> questions, String variant,
 		String variantKey, Integer opponentScore) {
 
 	/** A report without a variant (multiplayer, adaptive, older single-player results). */
