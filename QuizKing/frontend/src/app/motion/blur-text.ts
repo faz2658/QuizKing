@@ -11,19 +11,25 @@ import { ChangeDetectionStrategy, Component, computed, input } from '@angular/co
     <span class="sr-only">{{ plain() }}</span>
     <span aria-hidden="true">
       @for (w of words(); track $index) {
-        <span class="word" [class.glow]="w.glow" [style.animation-delay.ms]="delay() + $index * stagger()">{{ w.text }}</span>{{ ' ' }}
+        <span class="word" [style.animation-delay.ms]="delay() + $index * stagger()"><span [class.glow]="w.glow">{{ w.text }}</span></span>{{ ' ' }}
       }
     </span>
   `,
   styles: `
-    .word { display: inline-block; animation: blur-in 0.75s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
+    .word { display: inline-block; animation: blur-in 0.75s cubic-bezier(0.2, 0.7, 0.2, 1) backwards; }
+    /* The gradient lives on an inner span with no filter of its own. A filter on the same element as
+       background-clip: text (the old drop-shadow glow) left the word stuck blurred and faded in Safari
+       and at some sizes, because the blur-in animation had to blend into it. */
     .glow {
+      display: inline-block;
       background: linear-gradient(100deg, var(--pink), var(--lavender) 45%, var(--accent));
-      -webkit-background-clip: text; background-clip: text; color: transparent;
-      filter: drop-shadow(0 0 22px color-mix(in srgb, var(--pink) 45%, transparent));
-      font-style: italic; padding-right: 0.06em;
+      -webkit-background-clip: text; background-clip: text; color: transparent; -webkit-text-fill-color: transparent;
+      font-style: italic; padding-right: 0.08em;
     }
-    @keyframes blur-in { from { opacity: 0; filter: blur(12px); transform: translateY(0.35em); } }
+    @keyframes blur-in {
+      from { opacity: 0; filter: blur(12px); transform: translateY(0.35em); }
+      to { opacity: 1; filter: none; transform: none; }
+    }
     @media (prefers-reduced-motion: reduce) { .word { animation: none; } }
   `,
 })
