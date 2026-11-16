@@ -52,6 +52,11 @@ public final class Callers {
 				.anyMatch(a -> "ROLE_USER".equals(a.getAuthority()) || "ROLE_ADMIN".equals(a.getAuthority()));
 	}
 
+	/** The caller is an admin. */
+	public static boolean isAdmin() {
+		return isAdmin(SecurityContextHolder.getContext().getAuthentication());
+	}
+
 	static boolean isAdmin(Authentication auth) {
 		return auth != null && auth.getAuthorities().stream().anyMatch(a -> "ROLE_ADMIN".equals(a.getAuthority()));
 	}

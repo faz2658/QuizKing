@@ -11,12 +11,16 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.fazeel.quizcadia.auth.Callers;
 import com.fazeel.quizcadia.board.LeaderboardService;
+import com.fazeel.quizcadia.board.NameMask;
 import com.fazeel.quizcadia.board.LeaderboardService.DailyBoard;
 import com.fazeel.quizcadia.board.LeaderboardService.Period;
 import com.fazeel.quizcadia.board.LeaderboardService.XpBoard;
 import com.fazeel.quizcadia.report.PlayerNames;
 
-/** Leaderboards every player may see. Calling them also records the caller's display name. */
+/**
+ * Leaderboards every player may see. Calling them also records the caller's display name. Other players' names
+ * are masked ("Faz***") for privacy; callers see their own name, and admins see everyone's (see {@link NameMask}).
+ */
 @RestController
 @RequestMapping("/api/v1/reports")
 public class BoardController {
@@ -45,7 +49,7 @@ public class BoardController {
 			@RequestParam(required = false) Integer categoryId) {
 		int me = Callers.currentUserId();
 		names.remember(me, Callers.currentUserName());
-		return boards.xp(period, categoryId, me, clock.instant());
+		return NameMask.xp(boards.xp(period, categoryId, me, clock.instant()), me, Callers.isAdmin());
 	}
 
 	/** Countries ranked by their players' XP. */
@@ -62,7 +66,7 @@ public class BoardController {
 	/** This week's Country Cup, with the caller's country's place. */
 	@GetMapping("/cup")
 	public com.fazeel.quizcadia.board.CountryCup.CupView cup() {
-		return cup.view(com.fazeel.quizcadia.auth.Callers.currentUserId());
+		return NameMask.cup(cup.view(Callers.currentUserId()), Callers.isAdmin());
 	}
 
 	@GetMapping("/leaderboards/countries")
@@ -86,6 +90,7 @@ public class BoardController {
 	public DailyBoard daily(@RequestParam(required = false) LocalDate date) {
 		int me = Callers.currentUserId();
 		names.remember(me, Callers.currentUserName());
-		return boards.daily(date != null ? date : LocalDate.now(clock.withZone(ZoneOffset.UTC)), me);
+		return NameMask.daily(boards.daily(date != null ? date : LocalDate.now(clock.withZone(ZoneOffset.UTC)), me), me,
+				Callers.isAdmin());
 	}
 }
