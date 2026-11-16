@@ -20,7 +20,7 @@ permissions:
   issues: write
 
 env:
-  SITE: https://40-233-75-213.sslip.io
+  SITE: https://quizcadia.com
   DISK_MAX: 85
   MEM_MIN_AVAILABLE: 10
 
