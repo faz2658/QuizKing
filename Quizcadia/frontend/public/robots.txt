@@ -1,0 +1,7 @@
+# QuizCadia: everything public may be indexed; the API and admin pages are not pages.
+User-agent: *
+Disallow: /api/
+Disallow: /admin
+Allow: /
+
+Sitemap: https://quizcadia.com/sitemap.xml
