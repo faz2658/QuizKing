@@ -5,6 +5,13 @@ import { TokenResponse, User } from './models';
 import { track } from './analytics';
 
 const STORAGE_KEY = 'quizking.session';
+
+/** What the server offers at sign-in. {@code passwordReset} is false until it can email reset links. */
+export interface Providers {
+  googleClientId: string | null;
+  analyticsId?: string | null;
+  passwordReset?: boolean;
+}
 const INVITE_KEY = 'quizking.invite';
 
 /** Remembers the invite code from a friend's /join link until the visitor signs up. */
@@ -67,8 +74,8 @@ export class AuthService {
   }
 
   /** Which sign-in options the server offers (the Google button needs its public client id). */
-  providers(): Observable<{ googleClientId: string | null; analyticsId?: string | null }> {
-    return this.http.get<{ googleClientId: string | null; analyticsId?: string | null }>('/api/v1/auth/providers');
+  providers(): Observable<Providers> {
+    return this.http.get<Providers>('/api/v1/auth/providers');
   }
 
   /** Signs in with the ID token Google's button handed us; a first-time player gets an account. */

@@ -34,6 +34,8 @@ public class AuthController {
 	private final GoogleTokenVerifier google;
 
 	private final String analyticsId;
+	@org.springframework.beans.factory.annotation.Value("#{!'${quizking.mail.host:}'.isBlank()}")
+	private boolean mailConfigured;
 
 	public AuthController(AccountService accounts, TokenService tokens, PasswordResetService resets,
 			GoogleTokenVerifier google,
@@ -46,12 +48,13 @@ public class AuthController {
 	}
 
 	/** Which sign-in options the browser should show, and the analytics id. Both are public by design. */
-	public record ProvidersView(String googleClientId, String analyticsId) {
+	/** {@code passwordReset}: reset links can be emailed (MAIL_HOST is set); otherwise the app hides "Forgot password?". */
+	public record ProvidersView(String googleClientId, String analyticsId, boolean passwordReset) {
 	}
 
 	@GetMapping("/providers")
 	public ProvidersView providers() {
-		return new ProvidersView(google.enabled() ? google.clientId() : null, analyticsId);
+		return new ProvidersView(google.enabled() ? google.clientId() : null, analyticsId, mailConfigured);
 	}
 
 	public record GoogleRequest(@NotBlank @Size(max = 4096) String credential, @Size(max = 16) String invite) {

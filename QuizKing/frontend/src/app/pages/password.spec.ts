@@ -17,6 +17,7 @@ describe('Forgot / reset password', () => {
 
   it('asks for a link and says it was sent without revealing whether the account exists', async () => {
     const f = TestBed.createComponent(ForgotPassword);
+    http.expectOne('/api/v1/auth/providers').flush({ googleClientId: null, passwordReset: true });
     await f.whenStable();
     const el = f.nativeElement as HTMLElement;
     const input = el.querySelector('input[name=email]') as HTMLInputElement;
@@ -65,5 +66,13 @@ describe('Forgot / reset password', () => {
     const f = TestBed.createComponent(ResetPassword);
     await f.whenStable();
     expect((f.nativeElement as HTMLElement).textContent).toContain('This link is incomplete');
+  });
+  it('explains that reset by email is off, and shows no form, until the server can send email', async () => {
+    const f = TestBed.createComponent(ForgotPassword);
+    http.expectOne('/api/v1/auth/providers').flush({ googleClientId: 'x', passwordReset: false });
+    await f.whenStable();
+    const el = f.nativeElement as HTMLElement;
+    expect(el.textContent).toContain("Password reset by email isn't available yet");
+    expect(el.querySelector('form')).toBeNull();
   });
 });

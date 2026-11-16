@@ -66,7 +66,7 @@ type Tab = 'login' | 'register' | 'guest';
                 [attr.autocomplete]="tab() === 'register' ? 'new-password' : 'current-password'" />
               @if (tab() === 'register') { <span class="muted hint">At least 8 characters</span> }
             </label>
-            @if (tab() === 'login') { <a class="forgot" routerLink="/forgot-password">Forgot password?</a> }
+            @if (tab() === 'login' && canReset()) { <a class="forgot" routerLink="/forgot-password">Forgot password?</a> }
           } @else {
             <p class="muted">Jump straight in. Guest stats are kept in this browser only.</p>
           }
@@ -123,6 +123,8 @@ export class Welcome implements OnInit {
     { icon: '⚡', title: 'Multiplayer', text: 'Same question, same moment. First correct answer takes the points.' },
   ];
   protected readonly tab = signal<Tab>('login');
+  /** "Forgot password?" only once the server can email reset links. */
+  protected readonly canReset = signal(false);
   protected readonly invited = signal(!!pendingInvite());
   protected readonly busy = signal(false);
   protected readonly error = signal<string | null>(null);
@@ -136,6 +138,7 @@ export class Welcome implements OnInit {
 
   /** Someone opening a friend's link plays as a guest in one tap: no sign-up between them and the fun. */
   ngOnInit(): void {
+    this.auth.providers().subscribe({ next: (p) => this.canReset.set(!!p?.passwordReset), error: () => this.canReset.set(false) });
     if (pendingInvite() && !this.next()) {
       this.tab.set('register'); // a friend's invite only counts for a new account
     }
