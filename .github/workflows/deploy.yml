@@ -1,6 +1,6 @@
 name: Deploy
 
-# Ships to the live server (Oracle, https://40-233-75-213.sslip.io) once CI has passed on the main branch,
+# Ships to the live server (Oracle, https://quizcadia.com) once CI has passed on the main branch,
 # i.e. after a pull request is merged. Can also be started by hand from the Actions tab.
 #
 # 1. "Build images" compiles the jars and builds every app image on an ARM runner (the server is ARM too),
