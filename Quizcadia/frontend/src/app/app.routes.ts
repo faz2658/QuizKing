@@ -4,6 +4,7 @@ import { adminGuard, playerGuard, welcomeGuard } from './core/auth.guard';
 export const routes: Routes = [
   { path: 'welcome', title: 'QuizCadia: free trivia quiz games, timed, adaptive and multiplayer', canActivate: [welcomeGuard], loadComponent: () => import('./pages/welcome').then((m) => m.Welcome) },
   { path: 'join/:code', title: 'Join QuizCadia', loadComponent: () => import('./pages/invite').then((m) => m.Join) },
+  { path: 'puzzles', title: 'Puzzle of the Day · QuizCadia', loadComponent: () => import('./pages/puzzles').then((m) => m.Puzzles) },
   { path: 'privacy', title: 'Privacy policy · QuizCadia', loadComponent: () => import('./pages/legal').then((m) => m.Privacy) },
   { path: 'terms', title: 'Terms of service · QuizCadia', loadComponent: () => import('./pages/legal').then((m) => m.Terms) },
   { path: 'forgot-password', title: 'Forgot password · QuizCadia', loadComponent: () => import('./pages/password').then((m) => m.ForgotPassword) },

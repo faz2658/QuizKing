@@ -32,6 +32,7 @@ type Tab = 'login' | 'register' | 'guest';
         <div><strong><mv-count-up [value]="topicCount()" [duration]="1400" /></strong><span class="muted">topics</span></div>
         <div><strong>3</strong><span class="muted">ways to play</span></div>
       </div>
+      <a class="btn puzzle-link fade-up" style="animation-delay: 700ms" routerLink="/puzzles">🧩 Try today's Puzzle of the Day, no sign-up needed</a>
     </section>
 
     <section class="split">
