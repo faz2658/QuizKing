@@ -12,6 +12,8 @@ describe('Legal pages', () => {
     await p.whenStable();
     expect((p.nativeElement as HTMLElement).textContent).toContain('Sign in with Google');
     expect((p.nativeElement as HTMLElement).textContent).toContain('Google Analytics (only if you allow it)');
+    const contact = (p.nativeElement as HTMLElement).querySelector('a[href^="mailto:"]');
+    expect(contact?.textContent).toContain('faz2658@gmail.com'); // where to ask for an account to be deleted
     const t = TestBed.createComponent(Terms);
     await t.whenStable();
     expect((t.nativeElement as HTMLElement).textContent).toContain('Playing fair');

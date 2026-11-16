@@ -38,7 +38,6 @@ if [ "${BUILD_ON_SERVER:-0}" = 1 ]; then
   set_env IMAGE_REGISTRY quizking-local
   set_env IMAGE_TAG "$COMMIT"
   ./mvnw -B -q -DskipTests package
-  DOCKER="sudo docker" bash deploy/rename-migration.sh before
   "${COMPOSE[@]}" up -d --build --remove-orphans
 else
   set_env IMAGE_REGISTRY "$REGISTRY"
@@ -49,11 +48,9 @@ else
   echo "==> Pulling images for $COMMIT"
   "${COMPOSE[@]}" pull --quiet "${APP_SERVICES[@]}"
   [ -n "$TOKEN" ] && sudo docker logout "${REGISTRY%%/*}" >/dev/null || true
-  DOCKER="sudo docker" bash deploy/rename-migration.sh before
   echo "==> Restarting the services that changed"
   "${COMPOSE[@]}" up -d --no-build --remove-orphans
 fi
-DOCKER="sudo docker" bash deploy/rename-migration.sh after
 # Every deploy brings a new set of images; remove the ones no container uses any more (the previous release) and
 # any build cache, or the disk fills up (it reached 96% after a few days). Rolling back = pulling an older tag.
 sudo docker image prune -a -f >/dev/null

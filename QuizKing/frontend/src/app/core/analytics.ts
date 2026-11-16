@@ -1,7 +1,7 @@
 import { DestroyRef, Injectable, computed, inject, signal } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
+import { SignInOptions } from './sign-in-options';
 
 type Gtag = (...args: unknown[]) => void;
 type Consent = 'granted' | 'denied';
@@ -35,7 +35,7 @@ function readConsent(): Consent | null {
  */
 @Injectable({ providedIn: 'root' })
 export class Analytics {
-  private readonly http = inject(HttpClient);
+  private readonly signInOptions = inject(SignInOptions);
   private readonly router = inject(Router);
   private readonly id = signal<string | null>(null);
   readonly consent = signal<Consent | null>(readConsent());
@@ -50,7 +50,7 @@ export class Analytics {
 
   /** Fetches the measurement id once at start-up; loads GA if the player already said yes. */
   init(): void {
-    this.http.get<{ analyticsId?: string | null }>('/api/v1/auth/providers').subscribe({
+    this.signInOptions.get().subscribe({
       next: (p) => {
         const id = p?.analyticsId && /^G-[A-Z0-9]{4,20}$/.test(p.analyticsId) ? p.analyticsId : null;
         this.id.set(id);

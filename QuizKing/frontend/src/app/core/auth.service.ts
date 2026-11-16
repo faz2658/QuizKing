@@ -3,15 +3,11 @@ import { Injectable, computed, inject, signal } from '@angular/core';
 import { Observable, tap } from 'rxjs';
 import { TokenResponse, User } from './models';
 import { track } from './analytics';
+import { Providers, SignInOptions } from './sign-in-options';
+
+export type { Providers } from './sign-in-options';
 
 const STORAGE_KEY = 'quizking.session';
-
-/** What the server offers at sign-in. {@code passwordReset} is false until it can email reset links. */
-export interface Providers {
-  googleClientId: string | null;
-  analyticsId?: string | null;
-  passwordReset?: boolean;
-}
 const INVITE_KEY = 'quizking.invite';
 
 /** Remembers the invite code from a friend's /join link until the visitor signs up. */
@@ -49,6 +45,7 @@ interface StoredSession {
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   private readonly http = inject(HttpClient);
+  private readonly signInOptions = inject(SignInOptions);
   private readonly session = signal<StoredSession | null>(this.restore());
 
   readonly user = computed(() => this.session()?.user ?? null);
@@ -73,9 +70,9 @@ export class AuthService {
       .pipe(tap((t) => { this.store(t); track('login', { method: 'guest' }); }));
   }
 
-  /** Which sign-in options the server offers (the Google button needs its public client id). */
+  /** Which sign-in options the server offers (fetched once per visit and shared, see SignInOptions). */
   providers(): Observable<Providers> {
-    return this.http.get<Providers>('/api/v1/auth/providers');
+    return this.signInOptions.get();
   }
 
   /** Signs in with the ID token Google's button handed us; a first-time player gets an account. */
