@@ -1,9 +1,16 @@
 # Whole Quiz King platform. Build the jars first:  ./mvnw -DskipTests package
 # then:  docker compose up --build      (UI on http://localhost:4280, or QUIZKING_HTTP_PORT)
+# Images are named ${IMAGE_REGISTRY}/<service>:${IMAGE_TAG}. Locally that's quizking/<service>:dev; production
+# pulls the images CI built, ghcr.io/faz2658/quizking/<service>:<commit> (see .github/workflows/deploy.yml).
 name: quiz-king
 
+# Memory: every container has a ceiling, so one that runs away is restarted on its own instead of pushing the
+# whole server into swap. Java heaps are 60% of their container (see each Dockerfile). Swap is off per container
+# (memswap_limit = mem_limit). Override any limit from .env, e.g. JAVA_MEM_LIMIT=640m.
 x-service: &service
   restart: unless-stopped
+  mem_limit: ${JAVA_MEM_LIMIT:-640m}
+  memswap_limit: ${JAVA_MEM_LIMIT:-640m}
   environment: &env
     EUREKA_URL: http://discovery:8082/eureka
     CONFIG_SERVER_URL: http://config:8083
@@ -25,6 +32,10 @@ services:
   mongo:
     image: mongo:8.0
     restart: unless-stopped
+    # WiredTiger's cache would otherwise take half of the machine's memory
+    command: ["--wiredTigerCacheSizeGB", "0.5"]
+    mem_limit: 1g
+    memswap_limit: 1g
     volumes: [mongo-data:/data/db]
     ports: ["27017:27017"]
 
@@ -33,6 +44,11 @@ services:
     restart: unless-stopped
     environment:
       NEO4J_AUTH: neo4j/${NEO4J_PASSWORD:-quizking-dev-password}
+      NEO4J_server_memory_heap_initial__size: 256m
+      NEO4J_server_memory_heap_max__size: 384m
+      NEO4J_server_memory_pagecache_size: 128m
+    mem_limit: 768m
+    memswap_limit: 768m
     volumes: [neo4j-data:/data]
     ports: ["7474:7474", "7687:7687"]
 
@@ -44,6 +60,8 @@ services:
       MYSQL_USER: ${MYSQL_USER:-quizking}
       MYSQL_PASSWORD: ${MYSQL_PASSWORD:-quizking-dev-password}
       MYSQL_RANDOM_ROOT_PASSWORD: "yes"
+    mem_limit: 640m
+    memswap_limit: 640m
     volumes: [mysql-data:/var/lib/mysql]
     healthcheck:
       test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
@@ -53,7 +71,10 @@ services:
   kafka:
     image: apache/kafka:4.1.0
     restart: unless-stopped
+    mem_limit: 768m
+    memswap_limit: 768m
     environment:
+      KAFKA_HEAP_OPTS: "-Xms384m -Xmx384m"
       KAFKA_NODE_ID: 1
       KAFKA_PROCESS_ROLES: broker,controller
       KAFKA_LISTENERS: INTERNAL://:9092,EXTERNAL://:19092,CONTROLLER://:9093
@@ -76,6 +97,8 @@ services:
     image: prom/prometheus:v3.5.0
     restart: unless-stopped
     volumes: [./grafana/prometheus.yml:/etc/prometheus/prometheus.yml:ro]
+    mem_limit: 384m
+    memswap_limit: 384m
     ports: ["9190:9090"]
 
   grafana:
@@ -83,19 +106,27 @@ services:
     restart: unless-stopped
     environment:
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:-quizking-dev-password}
+    mem_limit: 320m
+    memswap_limit: 320m
     ports: ["3000:3000"]
     depends_on: [prometheus]
 
   # ---- platform ----------------------------------------------------------------------
   discovery:
     build: ./Quiz-app
+    image: ${IMAGE_REGISTRY:-quizking}/discovery:${IMAGE_TAG:-dev}
     restart: unless-stopped
+    mem_limit: 512m
+    memswap_limit: 512m
     environment:
       EUREKA_HOSTNAME: discovery
 
   config:
     build: ./configuration-service
+    image: ${IMAGE_REGISTRY:-quizking}/config:${IMAGE_TAG:-dev}
     restart: unless-stopped
+    mem_limit: 512m
+    memswap_limit: 512m
     environment:
       EUREKA_URL: http://discovery:8082/eureka
     depends_on: [discovery]
@@ -103,6 +134,7 @@ services:
   question-generator:
     <<: *service
     build: ./questionGenerator
+    image: ${IMAGE_REGISTRY:-quizking}/question-generator:${IMAGE_TAG:-dev}
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/questiondb
@@ -113,7 +145,10 @@ services:
 
   game-manager:
     <<: *service
+    mem_limit: ${HEAVY_MEM_LIMIT:-896m}
+    memswap_limit: ${HEAVY_MEM_LIMIT:-896m}
     build: ./GameManager
+    image: ${IMAGE_REGISTRY:-quizking}/game-manager:${IMAGE_TAG:-dev}
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/gamemanagerdb
@@ -122,7 +157,10 @@ services:
 
   game-engine:
     <<: *service
+    mem_limit: ${HEAVY_MEM_LIMIT:-896m}
+    memswap_limit: ${HEAVY_MEM_LIMIT:-896m}
     build: ./game
+    image: ${IMAGE_REGISTRY:-quizking}/game-engine:${IMAGE_TAG:-dev}
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/GameQuestionDb
@@ -132,6 +170,7 @@ services:
   multiplayer-game-engine:
     <<: *service
     build: ./MultiplayerGameEngine
+    image: ${IMAGE_REGISTRY:-quizking}/multiplayer-game-engine:${IMAGE_TAG:-dev}
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/multiPlayerGameEngine
@@ -139,6 +178,7 @@ services:
   adaptive-game-engine:
     <<: *service
     build: ./AdaptiveGameEngine
+    image: ${IMAGE_REGISTRY:-quizking}/adaptive-game-engine:${IMAGE_TAG:-dev}
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/adaptiveGameEngine
@@ -146,10 +186,12 @@ services:
   player-matcher:
     <<: *service
     build: ./PlayerMatcher
+    image: ${IMAGE_REGISTRY:-quizking}/player-matcher:${IMAGE_TAG:-dev}
 
   recommendations:
     <<: *service
     build: ./recommendations
+    image: ${IMAGE_REGISTRY:-quizking}/recommendations:${IMAGE_TAG:-dev}
     environment:
       <<: *env
       NEO4J_URI: bolt://neo4j:7687
@@ -163,10 +205,12 @@ services:
   search-service:
     <<: *service
     build: ./SearchService
+    image: ${IMAGE_REGISTRY:-quizking}/search-service:${IMAGE_TAG:-dev}
 
   login:
     <<: *service
     build: ./login
+    image: ${IMAGE_REGISTRY:-quizking}/login:${IMAGE_TAG:-dev}
     environment:
       <<: *env
       DATABASE_URL: jdbc:mysql://mysql:3306/quizzApp
@@ -194,13 +238,17 @@ services:
   user-service:
     <<: *service
     build: ./UserService-master
+    image: ${IMAGE_REGISTRY:-quizking}/user-service:${IMAGE_TAG:-dev}
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/UserProfile
 
   game-reporting:
     <<: *service
+    mem_limit: ${HEAVY_MEM_LIMIT:-896m}
+    memswap_limit: ${HEAVY_MEM_LIMIT:-896m}
     build: ./GameReporting
+    image: ${IMAGE_REGISTRY:-quizking}/game-reporting:${IMAGE_TAG:-dev}
     environment:
       <<: *env
       MONGODB_URI: mongodb://mongo:27017/Game_Reports
@@ -213,14 +261,16 @@ services:
     restart: unless-stopped
     volumes: [./ai/question-model/models:/models:ro]
     command: ["-m", "/models/quiz-king-q4_k_m.gguf", "--jinja", "--host", "0.0.0.0", "--port", "8080", "-c", "2048", "--alias", "quiz-king"]
-    deploy:
-      resources:
-        limits:
-          memory: 5g
+    # the 2.5 GB model file is memory-mapped and stays resident once loaded
+    mem_limit: 3g
+    memswap_limit: 3g
 
   frontend:
     build: ./frontend
+    image: ${IMAGE_REGISTRY:-quizking}/frontend:${IMAGE_TAG:-dev}
     restart: unless-stopped
+    mem_limit: 128m
+    memswap_limit: 128m
     ports: ["${QUIZKING_HTTP_PORT:-4280}:80"]
     depends_on: [game-engine, game-manager, login]
 
