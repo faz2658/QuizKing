@@ -2,7 +2,7 @@
 // - API calls (/api/*) always go to the network: scores and questions must never come from a cache.
 // - Pages: network first, falling back to the cached app shell when offline.
 // - Hashed build files, icons and fonts: cache first (their names change when their content does).
-const CACHE = 'quiz-king-v1';
+const CACHE = 'quizcadia-v2'; // bump when unhashed files (icons, manifest) change, so old copies are dropped
 const SHELL = ['/', '/manifest.webmanifest', '/favicon.svg', '/icon-192.png', '/icon-512.png'];
 
 self.addEventListener('install', (event) => {

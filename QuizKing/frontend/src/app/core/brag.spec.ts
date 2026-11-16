@@ -27,6 +27,6 @@ describe('brag lines', () => {
 
   it('builds the paste-anywhere daily text', () => {
     expect(dailyShareText('2026-11-15', [q(true), q(false)], 1, 2, 'Top 8% today', 'https://x/daily'))
-      .toBe('👑 Quizcadia Daily 2026-11-15\n🟩🟥 1/2\nTop 8% today\nhttps://x/daily');
+      .toBe('✨ Quizcadia Daily 2026-11-15\n🟩🟥 1/2\nTop 8% today\nhttps://x/daily');
   });
 });
