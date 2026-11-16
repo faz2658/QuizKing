@@ -90,11 +90,6 @@ public class GameManagerController {
 		return shared("games", () -> catalog.games().stream().map(GameSummary::of).toList());
 	}
 
-	@GetMapping("/game1/{gameId}")
-	public Game game(@PathVariable int gameId) {
-		return catalog.game(gameId);
-	}
-
 	@GetMapping("/category/{categoryId}/{topicName}")
 	public List<GameSummary> gamesInTopic(@PathVariable int categoryId, @PathVariable String topicName) {
 		return catalog.gamesInTopic(categoryId, topicName).stream().map(GameSummary::of).toList();
@@ -133,11 +128,6 @@ public class GameManagerController {
 	@GetMapping("/games/mp")
 	public List<GameSummary> multiPlayerGames() {
 		return shared("mp", () -> catalog.multiPlayerGames().stream().map(GameSummary::of).toList());
-	}
-
-	@GetMapping("/games/mp/{gameId}")
-	public MultiPlayerGame multiPlayerGame(@PathVariable int gameId) {
-		return catalog.multiPlayerGame(gameId);
 	}
 
 	@GetMapping("/mp/category/{categoryId}/{topicName}")

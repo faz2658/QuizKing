@@ -23,6 +23,9 @@ public class SecurityConfig {
 	SecurityFilterChain security(HttpSecurity http) throws Exception {
 		return ApiSecurity.build(http, auth -> auth
 				.requestMatchers(HttpMethod.GET, "/api/game/**").permitAll()
+				// Full game definitions, answers included, for the game engines. The public proxy only forwards /api/,
+				// so /internal/ is reachable only inside the Docker network (see InternalGameController).
+				.requestMatchers(HttpMethod.GET, "/internal/game/**").permitAll()
 				.anyRequest().hasRole(ADMIN));
 	}
 }

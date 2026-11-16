@@ -27,7 +27,7 @@ public class GameManagerClient implements GameSource {
 	@Override
 	public Optional<MultiPlayerGame> fetch(int gameId) {
 		try {
-			return Optional.ofNullable(http.get().uri("/api/game/games/mp/{id}", gameId).retrieve()
+			return Optional.ofNullable(http.get().uri("/internal/game/mp/{id}", gameId).retrieve()
 					.body(MultiPlayerGame.class));
 		}
 		catch (RestClientException e) {
