@@ -20,7 +20,13 @@ Open **http://localhost:4280** (change it with `QUIZKING_HTTP_PORT`). On first s
 imports **Open Trivia DB** (about 5,300 questions in 24 categories; it takes about 10 minutes because the API
 allows one request every 5 seconds) and every topic with at least 12 questions gets a solo game and a
 multiplayer game automatically. Games fill in while the import runs. Register with an email listed in
-`QUIZKING_ADMIN_EMAILS` to get the **Create** page, which also shows the question bank and can rerun the import.
+`QUIZKING_ADMIN_EMAILS` to get the **Admin** pages: **Users & activity** (accounts, sign-ups per day, active
+players, games per day, top games and countries, newest accounts) and **Questions & games** (the question bank,
+the import, and creating games).
+
+Set `GA_MEASUREMENT_ID` (a Google Analytics 4 id, `G-…`) to add Google Analytics. Players are asked first;
+nothing loads until they allow it, ad features are off, and only page views and a few events (login, sign_up,
+share) are sent, never names, emails or ids.
 
 ### Questions don't repeat
 
@@ -98,4 +104,4 @@ no account stored). Every other service checks that token itself through the sha
 All settings have local defaults and can be overridden with environment variables: `MONGODB_URI`,
 `KAFKA_BOOTSTRAP_SERVERS` (default `localhost:19092`), `EUREKA_URL`, `CONFIG_SERVER_URL`, `GAME_MANAGER_URL`,
 `NEO4J_URI`/`NEO4J_PASSWORD`, `DATABASE_URL` (login), `QUIZKING_JWT_SECRET`, `QUIZKING_ADMIN_EMAILS`,
-`CORS_ALLOWED_ORIGINS`. Metrics: `/actuator/prometheus` on every service; Prometheus on :9190, Grafana on :3000.
+`GA_MEASUREMENT_ID`, `CORS_ALLOWED_ORIGINS`. Metrics: `/actuator/prometheus` on every service; Prometheus on :9190, Grafana on :3000.

@@ -12,7 +12,7 @@
         <a routerLink="/world" routerLinkActive="active">World</a>
         <a routerLink="/leaderboard" routerLinkActive="active">Leaderboard</a>
         <a routerLink="/me" routerLinkActive="active">My stats</a>
-        @if (auth.isAdmin()) { <a routerLink="/admin" routerLinkActive="active">Create</a> }
+        @if (auth.isAdmin()) { <a routerLink="/admin" routerLinkActive="active">Admin</a> }
       </nav>
       <div class="spacer"></div>
       @if (world.online(); as o) {
@@ -37,3 +37,4 @@
   <router-outlet />
 </main>
 <footer class="container foot muted">Quiz King · think fast, play smart · Trivia questions from <a href="https://opentdb.com" target="_blank" rel="noopener">Open Trivia DB</a> (CC BY-SA 4.0) · <a routerLink="/privacy">Privacy</a> · <a routerLink="/terms">Terms</a></footer>
+<mv-consent-banner />

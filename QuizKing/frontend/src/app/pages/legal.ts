@@ -1,5 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Analytics } from '../core/analytics';
 
 const UPDATED = '15 November 2026';
 
@@ -10,6 +11,7 @@ const styles = `
   p, li { color: var(--text); }
   ul { padding-left: 22px; }
   .updated { margin-top: 0; }
+  .linkish { background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; cursor: pointer; font: inherit; }
 `;
 
 /** Plain-language privacy policy (linked from the footer and from Google's sign-in screen). */
@@ -33,8 +35,13 @@ const styles = `
       <li><strong>Country (optional):</strong> if you pick one, it's shown as a flag next to your name and used for the
         country leaderboards.</li>
       <li><strong>Guests:</strong> playing as a guest needs only a nickname; no account or email is stored.</li>
-      <li><strong>Your browser:</strong> we keep your sign-in session and a few preferences (sound, country) in your
-        browser's local storage. We don't use advertising or tracking cookies.</li>
+      <li><strong>Your browser:</strong> we keep your sign-in session and a few preferences (sound, country, your
+        analytics choice) in your browser's local storage. We don't use advertising cookies.</li>
+      <li><strong>Google Analytics (only if you allow it):</strong> when you first visit we ask whether we may use
+        Google Analytics. If you say yes, Google sets analytics cookies and receives which pages you open, rough
+        location from your IP address, your device and browser type, and events such as signing in, signing up or
+        sharing a link. We never send your name, email or account id to Google, and advertising features are turned
+        off. If you say no, the analytics script never loads.</li>
     </ul>
 
     <h2>How we use it</h2>
@@ -43,8 +50,10 @@ const styles = `
       <li>To show your display name, flag and scores to other players on leaderboards, in multiplayer matches and on
         quizzes you share.</li>
       <li>To send password reset emails when you ask for one. We don't send marketing email.</li>
+      <li>To understand how the game is used (with Google Analytics, if you allow it) so we can improve it.</li>
     </ul>
-    <p>We don't sell your data or share it with advertisers.</p>
+    <p>We don't sell your data or share it with advertisers. Google processes analytics data as described in
+      <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites that use its services</a>.</p>
 
     <h2>Where it's kept</h2>
     <p>Quiz King runs on servers in Oracle Cloud's Toronto, Canada region. Data travels over encrypted HTTPS connections.</p>
@@ -57,6 +66,9 @@ const styles = `
     <ul>
       <li>You can play as a guest without giving us any personal details.</li>
       <li>You can clear your country at any time.</li>
+      <li>You can turn analytics off at any time: <button type="button" class="linkish" (click)="optOut()">stop analytics</button>
+        @if (optedOut()) { <span class="muted">(done)</span> }. You can also block it with Google's
+        <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">opt-out add-on</a>.</li>
       <li>You can ask us to delete your account and game history by writing to the support email shown on the Google
         sign-in screen; we'll do it within 30 days.</li>
     </ul>
@@ -70,7 +82,14 @@ const styles = `
   styles,
 })
 export class Privacy {
+  private readonly analytics = inject(Analytics);
   protected readonly updated = UPDATED;
+  protected readonly optedOut = signal(false);
+
+  protected optOut(): void {
+    this.analytics.choose('denied');
+    this.optedOut.set(true);
+  }
 }
 
 /** Plain-language terms of service. */

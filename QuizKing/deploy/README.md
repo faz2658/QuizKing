@@ -36,7 +36,8 @@ ssh quizking 'cd quiz-king && ./mvnw -B -q -DskipTests package && \
 ```
 `.env` on the server (never committed) holds `SITE_ADDRESS`, `CORS_ALLOWED_ORIGINS=https://<site>`,
 `QUIZKING_JWT_SECRET`, `QUIZKING_ADMIN_EMAILS`, `MYSQL_PASSWORD`, `NEO4J_PASSWORD`, `GRAFANA_PASSWORD` and
-`AI_MODEL_URL=http://question-model:8080` (with the GGUF in `ai/question-model/models/`).
+`AI_MODEL_URL=http://question-model:8080` (with the GGUF in `ai/question-model/models/`), and optionally
+`GOOGLE_CLIENT_ID`, `GA_MEASUREMENT_ID` and `MAIL_*`.
 
 `docker-compose.prod.yml` puts Caddy (automatic Let's Encrypt HTTPS) in front and closes every other port.
 

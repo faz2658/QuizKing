@@ -177,6 +177,7 @@ services:
       PUBLIC_URL: ${PUBLIC_URL:-http://localhost:4280}
       # "Sign in with Google" (optional): the OAuth client id from Google Cloud
       GOOGLE_CLIENT_ID: ${GOOGLE_CLIENT_ID:-}
+      GA_MEASUREMENT_ID: ${GA_MEASUREMENT_ID:-}
       # Outgoing email for password resets (optional, any SMTP). Unset = links go to the login service log
       MAIL_HOST: ${MAIL_HOST:-}
       MAIL_PORT: ${MAIL_PORT:-587}

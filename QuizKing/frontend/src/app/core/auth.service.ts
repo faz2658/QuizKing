@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { Observable, tap } from 'rxjs';
 import { TokenResponse, User } from './models';
+import { track } from './analytics';
 
 const STORAGE_KEY = 'quizking.session';
 const INVITE_KEY = 'quizking.invite';
@@ -49,32 +50,32 @@ export class AuthService {
   readonly isAdmin = computed(() => this.session()?.user.role === 'ADMIN');
 
   login(email: string, password: string): Observable<TokenResponse> {
-    return this.http.post<TokenResponse>('/api/v1/auth/login', { email, password }).pipe(tap((t) => this.store(t)));
+    return this.http.post<TokenResponse>('/api/v1/auth/login', { email, password }).pipe(tap((t) => { this.store(t); track('login', { method: 'password' }); }));
   }
 
   register(userName: string, email: string, password: string): Observable<TokenResponse> {
     return this.http
       .post<TokenResponse>('/api/v1/auth/register', { userName, email, password, invite: pendingInvite() })
-      .pipe(tap((t) => { this.store(t); clearInvite(); }));
+      .pipe(tap((t) => { track('sign_up', { method: 'password', invited: !!pendingInvite() }); this.store(t); clearInvite(); }));
   }
 
   /** Plays without an account: the server hands out a guest token (no account is stored). */
   playAsGuest(name: string): Observable<TokenResponse> {
     return this.http
       .post<TokenResponse>('/api/v1/auth/guest', { userName: name.trim() || 'Guest' })
-      .pipe(tap((t) => this.store(t)));
+      .pipe(tap((t) => { this.store(t); track('login', { method: 'guest' }); }));
   }
 
   /** Which sign-in options the server offers (the Google button needs its public client id). */
-  providers(): Observable<{ googleClientId: string | null }> {
-    return this.http.get<{ googleClientId: string | null }>('/api/v1/auth/providers');
+  providers(): Observable<{ googleClientId: string | null; analyticsId?: string | null }> {
+    return this.http.get<{ googleClientId: string | null; analyticsId?: string | null }>('/api/v1/auth/providers');
   }
 
   /** Signs in with the ID token Google's button handed us; a first-time player gets an account. */
   signInWithGoogle(credential: string): Observable<TokenResponse> {
     return this.http
       .post<TokenResponse>('/api/v1/auth/google', { credential, invite: pendingInvite() })
-      .pipe(tap((t) => { this.store(t); clearInvite(); }));
+      .pipe(tap((t) => { track('login', { method: 'google' }); this.store(t); clearInvite(); }));
   }
 
   /** Asks for a reset link by email. The server answers the same whether or not the account exists. */

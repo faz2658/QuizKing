@@ -44,6 +44,8 @@ quizking:
   # OAuth client id from Google Cloud ("Web application"). Empty = no "Sign in with Google" button.
   google:
     client-id: ${GOOGLE_CLIENT_ID:}
+  # Google Analytics 4 measurement id (G-XXXXXXX). Empty = no analytics; players opt in before it loads.
+  analytics-id: ${GA_MEASUREMENT_ID:}
   # Outgoing email (any SMTP service). Without MAIL_HOST, emails are written to the log instead.
   mail:
     host: ${MAIL_HOST:}

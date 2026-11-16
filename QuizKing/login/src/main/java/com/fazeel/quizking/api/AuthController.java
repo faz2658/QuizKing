@@ -33,21 +33,25 @@ public class AuthController {
 	private final PasswordResetService resets;
 	private final GoogleTokenVerifier google;
 
+	private final String analyticsId;
+
 	public AuthController(AccountService accounts, TokenService tokens, PasswordResetService resets,
-			GoogleTokenVerifier google) {
+			GoogleTokenVerifier google,
+			@org.springframework.beans.factory.annotation.Value("${quizking.analytics-id:}") String analyticsId) {
+		this.analyticsId = analyticsId == null || !analyticsId.matches("G-[A-Z0-9]{4,20}") ? null : analyticsId;
 		this.accounts = accounts;
 		this.tokens = tokens;
 		this.resets = resets;
 		this.google = google;
 	}
 
-	/** Which sign-in options the browser should show. The Google client id is public by design. */
-	public record ProvidersView(String googleClientId) {
+	/** Which sign-in options the browser should show, and the analytics id. Both are public by design. */
+	public record ProvidersView(String googleClientId, String analyticsId) {
 	}
 
 	@GetMapping("/providers")
 	public ProvidersView providers() {
-		return new ProvidersView(google.enabled() ? google.clientId() : null);
+		return new ProvidersView(google.enabled() ? google.clientId() : null, analyticsId);
 	}
 
 	public record GoogleRequest(@NotBlank @Size(max = 4096) String credential, @Size(max = 16) String invite) {

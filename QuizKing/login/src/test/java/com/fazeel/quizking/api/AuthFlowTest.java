@@ -102,6 +102,38 @@ class AuthFlowTest {
 		assertThat(((Map<String, Object>) r.get("user")).get("role")).isEqualTo("ADMIN");
 	}
 
+	@Autowired
+	org.springframework.security.crypto.password.PasswordEncoder encoder;
+
+	@Test
+	@SuppressWarnings("unchecked")
+	void onlyAdminsSeeAccountStats() {
+		accounts.saveAndFlush(new com.fazeel.quizking.account.Account("Stats", "stats-admin@quizking.test",
+				encoder.encode("password123"), com.fazeel.quizking.account.Account.Role.ADMIN, java.time.Instant.now()));
+		String admin = (String) postForMap("/api/v1/auth/login",
+				Map.of("email", "stats-admin@quizking.test", "password", "password123")).get("token");
+		String player = (String) postForMap("/api/v1/auth/register",
+				Map.of("userName", "Pat", "email", "pat-stats@example.test", "password", "password123")).get("token");
+
+		var asPlayer = http().get().uri("/api/v1/auth/admin/stats").header("Authorization", "Bearer " + player)
+				.retrieve().toBodilessEntity();
+		assertThat(asPlayer.getStatusCode().value()).isEqualTo(403);
+		assertThat(http().get().uri("/api/v1/auth/admin/stats").retrieve().toBodilessEntity().getStatusCode().value())
+				.isEqualTo(401);
+
+		Map<String, Object> stats = http().get().uri("/api/v1/auth/admin/stats?days=7")
+				.header("Authorization", "Bearer " + admin).retrieve().body(Map.class);
+		assertThat((Integer) stats.get("total")).isGreaterThanOrEqualTo(2);
+		assertThat((Integer) stats.get("today")).isGreaterThanOrEqualTo(2);
+		assertThat((java.util.List<?>) stats.get("signupsByDay")).hasSize(7);
+		assertThat(stats.get("recent").toString()).contains("pat-stats@example.test");
+	}
+
+	@Test
+	void providersListsTheAnalyticsIdOnlyWhenItLooksRight() {
+		assertThat(http().get().uri("/api/v1/auth/providers").retrieve().body(Map.class)).containsKey("analyticsId");
+	}
+
 	@Test
 	@SuppressWarnings("unchecked")
 	void guestsGetATokenButNoAccount() {

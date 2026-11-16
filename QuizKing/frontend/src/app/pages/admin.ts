@@ -9,13 +9,15 @@ import { errorMessage } from '../core/http-errors';
 import { Category, ImportStatus, TopicStats } from '../core/models';
 import { AiDrafts } from './ai-drafts';
 import { FeedbackReviewPanel } from './feedback-review';
+import { AdminTabs } from '../ui/admin-tabs';
 
 /** Creates a game from a topic's question bank in the game manager. */
 @Component({
   selector: 'mv-admin',
-  imports: [FormsModule, AiDrafts, FeedbackReviewPanel],
+  imports: [FormsModule, AiDrafts, FeedbackReviewPanel, AdminTabs],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
+    <mv-admin-tabs />
     <h1>Question bank</h1>
     <section class="card stack bank">
       <div class="row">
