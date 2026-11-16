@@ -14,7 +14,7 @@ export interface ShareInfo {
 
 export function shareText(i: ShareInfo): string {
   const rank = i.rankLine ? ` (${i.rankLine})` : '';
-  return `👑 I scored ${i.score}/${i.maxScore} (${i.correct}/${i.total} right) in ${i.title} on Quiz King${rank}. Can you beat me? ${i.url}`;
+  return `👑 I scored ${i.score}/${i.maxScore} (${i.correct}/${i.total} right) in ${i.title} on Quizcadia${rank}. Can you beat me? ${i.url}`;
 }
 
 /** Draws a 1080x1080 result card (Instagram/WhatsApp friendly) and returns it as a PNG. */
@@ -44,7 +44,7 @@ export async function drawShareCard(i: ShareInfo): Promise<Blob> {
   g.textAlign = 'center';
   g.fillStyle = '#ffffff';
   g.font = '900 64px system-ui, -apple-system, Segoe UI, sans-serif';
-  g.fillText('👑 Quiz King', size / 2, 140);
+  g.fillText('👑 Quizcadia', size / 2, 140);
 
   g.font = '600 46px system-ui, -apple-system, Segoe UI, sans-serif';
   g.fillStyle = 'rgba(255,255,255,0.85)';
@@ -83,7 +83,7 @@ export async function shareCard(i: ShareInfo): Promise<'shared' | 'downloaded'> 
   const file = new File([blob], 'quiz-king-result.png', { type: 'image/png' });
   const nav = navigator as Navigator & { canShare?: (d: ShareData) => boolean };
   if (nav.share && nav.canShare?.({ files: [file] })) {
-    await nav.share({ files: [file], text: shareText(i), title: 'Quiz King' });
+    await nav.share({ files: [file], text: shareText(i), title: 'Quizcadia' });
     return 'shared';
   }
   const url = URL.createObjectURL(blob);

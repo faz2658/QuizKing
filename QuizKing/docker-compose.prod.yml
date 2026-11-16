@@ -1,6 +1,6 @@
 # Production overrides: HTTPS in front, nothing else reachable from outside.
 #   docker compose -f docker-compose.yml -f docker-compose.prod.yml --profile ai up -d --build
-# Needs SITE_ADDRESS (e.g. 40-233-75-213.sslip.io or your domain) and the secrets in .env.
+# Needs SITE_ADDRESS (the site's one name, e.g. quizcadia.com) and the secrets in .env; optional REDIRECT_ADDRESSES.
 services:
   caddy:
     image: caddy:2.10
@@ -10,6 +10,8 @@ services:
     ports: ["80:80", "443:443", "443:443/udp"]
     environment:
       SITE_ADDRESS: ${SITE_ADDRESS:?set SITE_ADDRESS}
+      # Other names that should send visitors to SITE_ADDRESS, e.g. "www.quizcadia.com, 40-233-75-213.sslip.io"
+      REDIRECT_ADDRESSES: ${REDIRECT_ADDRESSES:-http://redirect.localhost}
     volumes:
       - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy-data:/data

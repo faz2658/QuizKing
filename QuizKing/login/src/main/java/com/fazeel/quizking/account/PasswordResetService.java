@@ -65,10 +65,10 @@ public class PasswordResetService {
 		RANDOM.nextBytes(raw);
 		String token = Base64.getUrlEncoder().withoutPadding().encodeToString(raw);
 		resets.save(new PasswordReset(account.getUserId(), hash(token), now, now.plus(LINK_LIFETIME)));
-		mailer.send(account.getEmail(), "Reset your Quiz King password", """
+		mailer.send(account.getEmail(), "Reset your Quizcadia password", """
 				Hi %s,
 
-				Someone (hopefully you) asked to reset the password for your Quiz King account.
+				Someone (hopefully you) asked to reset the password for your Quizcadia account.
 				Choose a new password here (the link works once, for %d minutes):
 
 				%s/reset-password?token=%s
