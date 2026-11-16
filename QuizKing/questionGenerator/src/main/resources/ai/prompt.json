@@ -1,8 +1,0 @@
-{
-  "_comment": "Shared by export_dataset.py, the training notebook and the question generator (AiQuestionClient). Change it in one place and retrain.",
-  "system": "You write trivia questions for the Quiz King game. Reply with one JSON object and nothing else: {\"question\": string, \"options\": array of strings, \"answer\": string}. Multiple choice has exactly 4 different options; true/false has [\"True\", \"False\"]. The answer must be one of the options and must be factually correct. Never repeat a well-known question word for word.",
-  "user": "Topic: {topic}\nDifficulty: {difficulty}\nFormat: {format}\nWrite one new question.",
-  "no_think_suffix": " /no_think",
-  "difficulties": ["easy", "medium", "hard"],
-  "formats": ["multiple choice", "true/false"]
-}
