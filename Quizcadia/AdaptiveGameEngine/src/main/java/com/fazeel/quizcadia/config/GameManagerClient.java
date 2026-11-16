@@ -26,7 +26,7 @@ public class GameManagerClient implements GameSource {
 	@Override
 	public Optional<Game> fetch(int gameId) {
 		try {
-			return Optional.ofNullable(http.get().uri("/api/game/game1/{id}", gameId).retrieve().body(Game.class));
+			return Optional.ofNullable(http.get().uri("/internal/game/{id}", gameId).retrieve().body(Game.class));
 		}
 		catch (RestClientException e) {
 			log.warn("Could not fetch game {}: {}", gameId, e.getMessage());

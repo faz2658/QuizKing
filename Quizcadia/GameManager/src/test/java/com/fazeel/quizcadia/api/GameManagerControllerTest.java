@@ -86,10 +86,16 @@ class GameManagerControllerTest {
 	}
 
 	@Test
-	void unknownGameIs404() throws Exception {
-		when(catalog.game(7)).thenThrow(new NotFoundException("No game 7"));
-
-		mvc.perform(get("/api/game/game1/7").with(admin())).andExpect(status().isNotFound());
+	void fullGameDefinitionsAreNotOnThePublicApi() throws Exception {
+		// they hold every answer: only the engines read them, on /internal/ (which the public proxy never forwards)
+		for (String path : new String[] { "/api/game/game1/7", "/api/game/games/mp/7", "/api/game/games/mp/+7", "/api/game/game1/+7" }) {
+			mvc.perform(get(path)).andExpect(result -> {
+				String body = result.getResponse().getContentAsString();
+				org.assertj.core.api.Assertions.assertThat(body).as(path).doesNotContain("correctAnswer").doesNotContain("\"questions\"");
+			});
+		}
+		org.mockito.Mockito.verify(catalog, org.mockito.Mockito.never()).game(org.mockito.ArgumentMatchers.anyInt());
+		org.mockito.Mockito.verify(catalog, org.mockito.Mockito.never()).multiPlayerGame(org.mockito.ArgumentMatchers.anyInt());
 	}
 
 	@Test
