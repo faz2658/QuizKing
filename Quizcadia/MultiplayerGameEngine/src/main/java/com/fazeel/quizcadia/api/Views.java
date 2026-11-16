@@ -30,7 +30,7 @@ public final class Views {
 	/** What one player sees. The open question never includes its answer. */
 	public record MatchView(String matchId, int gameId, String gameName, MultiplayerMatch.Status status,
 			int totalQuestions, int pointsPerQuestion, int secondsPerQuestion, List<PlayerView> standings,
-			QuestionView currentQuestion, RevealView lastQuestion) {
+			QuestionView currentQuestion, RevealView lastQuestion, String version) {
 
 		static MatchView of(MultiplayerMatch m, int userId, Instant now) {
 			QuestionView current = m.currentQuestion()
@@ -44,8 +44,12 @@ public final class Views {
 					.map(p -> new PlayerView(p.getUserId(), p.getScore(), p.getQuestionsWon(), p.getName(), p.getCountry(),
 							p.isBot()))
 					.toList();
+			// what this player would see, without the ticking clock: equal versions mean nothing new to show
+			String version = Integer.toHexString(java.util.Objects.hash(m.getStatus(), m.getCurrentIndex(), standings,
+					current == null ? null : current.yourAnswer(),
+					m.currentQuestion().map(q -> q.getAnswers().size()).orElse(0), last));
 			return new MatchView(m.getMatchId(), m.getGameId(), m.getGameName(), m.getStatus(), m.getQuestions().size(),
-					m.getPointsPerQuestion(), m.getSecondsPerQuestion(), standings, current, last);
+					m.getPointsPerQuestion(), m.getSecondsPerQuestion(), standings, current, last, version);
 		}
 
 		private static String yourAnswer(MatchQuestion q, int userId) {

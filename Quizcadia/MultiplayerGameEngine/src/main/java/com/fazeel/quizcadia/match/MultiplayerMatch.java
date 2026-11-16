@@ -148,9 +148,7 @@ public class MultiplayerMatch {
 			if (!p.isBot() || q.answerOf(p.getUserId()).isPresent()) {
 				continue;
 			}
-			java.util.Random r = new java.util.Random(java.util.Objects.hash(matchId, q.getQuestionId(), p.getUserId()));
-			long window = Math.max(1000, (secondsPerQuestion - 4) * 1000L);
-			Instant at = q.getOpenedAt().plusMillis(2000 + (long) (r.nextDouble() * window));
+			Instant at = botAnswersAt(q, p);
 			if (!upTo.isBefore(at)) {
 				due.add(p);
 				when.put(p.getUserId(), at);
@@ -173,6 +171,34 @@ public class MultiplayerMatch {
 			played = true;
 		}
 		return played;
+	}
+
+	/** When a bot answers question {@code q}: fixed per match, question and bot (see {@link #playBots}). */
+	private Instant botAnswersAt(MatchQuestion q, PlayerScore bot) {
+		java.util.Random r = new java.util.Random(java.util.Objects.hash(matchId, q.getQuestionId(), bot.getUserId()));
+		long window = Math.max(1000, (secondsPerQuestion - 4) * 1000L);
+		return q.getOpenedAt().plusMillis(2000 + (long) (r.nextDouble() * window));
+	}
+
+	/**
+	 * The next moment the match changes by itself, without anyone answering: a bot answering, or the open question
+	 * closing after its grace period. Null once the match is over. Lets a waiting client be answered exactly then.
+	 */
+	public Instant nextChangeAt(Instant now) {
+		if (status != Status.IN_PROGRESS) {
+			return null;
+		}
+		MatchQuestion q = current();
+		Instant next = deadline(q).plus(GRACE);
+		for (PlayerScore p : players) {
+			if (p.isBot() && q.answerOf(p.getUserId()).isEmpty()) {
+				Instant at = botAnswersAt(q, p);
+				if (at.isAfter(now) && at.isBefore(next)) {
+					next = at;
+				}
+			}
+		}
+		return next;
 	}
 
 	public Optional<MatchQuestion> currentQuestion() {

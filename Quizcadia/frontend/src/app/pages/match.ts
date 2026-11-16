@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, computed, inject, input, signal } from '@angular/core';
 import { RouterLink } from '@angular/router';
-import { Subscription, exhaustMap, timer } from 'rxjs';
+import { Subscription, timer } from 'rxjs';
 import { MultiplayerApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { flag } from '../core/countries';
@@ -116,13 +116,35 @@ export class MatchPage implements OnInit {
   protected readonly myScore = computed(() => this.match()?.standings.find((s) => s.userId === this.me)?.score ?? 0);
 
   ngOnInit(): void {
-    this.destroyRef.onDestroy(() => this.subs.unsubscribe());
-    this.subs.add(
-      timer(0, 1000)
-        .pipe(exhaustMap(() => this.api.match(this.matchId(), this.me)))
-        .subscribe({ next: (m) => this.show(m), error: (e) => this.error.set(errorMessage(e)) }),
-    );
+    this.destroyRef.onDestroy(() => {
+      this.subs.unsubscribe();
+      clearTimeout(this.retry);
+    });
+    this.follow();
     this.subs.add(timer(0, 250).subscribe(() => this.secondsLeft.set(Math.max(0, Math.ceil((this.deadline - Date.now()) / 1000)))));
+  }
+
+  private retry: ReturnType<typeof setTimeout> | undefined;
+
+  /**
+   * Keeps the screen up to date with one request per change instead of one per second: the server answers when the
+   * match differs from what we show (an answer, a bot, the next question), then we ask again.
+   */
+  private follow(after?: string): void {
+    if (this.subs.closed) return;
+    this.subs.add(
+      this.api.nextMatch(this.matchId(), this.me, after).subscribe({
+        next: (m) => {
+          this.error.set(null);
+          this.show(m);
+          if (m.status !== 'COMPLETED') this.follow(m.version);
+        },
+        error: (e) => {
+          this.error.set(errorMessage(e));
+          this.retry = setTimeout(() => this.follow(after), 2000); // a dropped connection: try again shortly
+        },
+      }),
+    );
   }
 
   private readonly sparks = inject(Sparks);
@@ -151,6 +173,7 @@ export class MatchPage implements OnInit {
     if (m.currentQuestion && m.currentQuestion.questionId !== previous) {
       this.flash.set(null);
       this.deadline = Date.now() + m.currentQuestion.secondsRemaining * 1000;
+      this.secondsLeft.set(m.currentQuestion.secondsRemaining); // don't show the old question's 0 until the next tick
     }
     if (m.status === 'COMPLETED') {
       this.subs.unsubscribe();

@@ -346,6 +346,16 @@ export class MultiplayerApi {
       .pipe(retryWhileLoading(10));
   }
 
+  /**
+   * The match once it differs from {@code after} (its {@code version}): at once if it already does, otherwise the
+   * server holds the request until someone answers, a bot answers or the question closes (at most 20 s).
+   */
+  nextMatch(matchId: string, userId: number, after?: string): Observable<MatchView> {
+    let params = new HttpParams().set('userId', userId);
+    if (after) params = params.set('after', after);
+    return this.http.get<MatchView>(`/api/v1/matches/${matchId}/next`, { params }).pipe(retryWhileLoading(10));
+  }
+
   answer(matchId: string, userId: number, questionId: number, answer: string): Observable<MatchAnswer> {
     return this.http.post<MatchAnswer>(`/api/v1/matches/${matchId}/answers`, { userId, questionId, answer });
   }

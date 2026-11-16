@@ -1,11 +1,12 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, computed, inject, input, signal } from '@angular/core';
 import { Router, RouterLink } from '@angular/router';
-import { Subscription, switchMap, timer } from 'rxjs';
+import { Subscription } from 'rxjs';
 import { MultiplayerApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { shareLink } from '../core/invite';
 import { RoomStatus } from '../core/models';
+import { livePoll } from '../core/live-poll';
 
 /** A private room: the code to share, who's in, and the host's start button. */
 @Component({
@@ -78,8 +79,7 @@ export class Room implements OnInit {
     this.api.joinRoom(this.code()).subscribe({
       next: (r) => {
         this.update(r);
-        this.poll = timer(1500, 1500)
-          .pipe(switchMap(() => this.api.room(this.code())))
+        this.poll = livePoll(() => this.api.room(this.code()), { every: 1500, max: 4000, firstAfter: 1500 })
           .subscribe({ next: (n) => this.update(n), error: (e) => this.error.set(errorMessage(e)) });
       },
       error: (e) => this.error.set(errorMessage(e)),
