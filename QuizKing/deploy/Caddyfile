@@ -1,4 +1,4 @@
-# HTTPS with an automatic Let's Encrypt certificate for SITE_ADDRESS, then everything to the Quiz King frontend.
+# HTTPS with an automatic Let's Encrypt certificate for SITE_ADDRESS, then everything to the Quizcadia frontend.
 {$SITE_ADDRESS} {
 	encode zstd gzip
 	header {
@@ -8,4 +8,10 @@
 		-Server
 	}
 	reverse_proxy frontend:80
+}
+
+# Other names for the site (www, the old sslip.io address): their own certificate, then a permanent redirect so links
+# and bookmarks keep working. When REDIRECT_ADDRESSES is empty this block only answers http://redirect.localhost.
+{$REDIRECT_ADDRESSES:http://redirect.localhost} {
+	redir https://{$SITE_ADDRESS}{uri} permanent
 }

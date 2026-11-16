@@ -1,6 +1,13 @@
-# Deploying Quiz King (Oracle Cloud Always Free)
+# Deploying Quizcadia (Oracle Cloud Always Free)
 
-Live: https://40-233-75-213.sslip.io (Ampere A1, 4 OCPU / 12 GB, Ubuntu 24.04, Toronto).
+Live: https://quizcadia.com (Ampere A1, 4 OCPU / 12 GB, Ubuntu 24.04, Toronto). The old address
+https://40-233-75-213.sslip.io and www.quizcadia.com redirect there.
+
+## Domain
+`quizcadia.com` is registered at Cloudflare. DNS: `A @` and `A www` to `40.233.75.213`, both **DNS only** (grey
+cloud) so Caddy gets its own Let's Encrypt certificates. Server `.env`: `SITE_ADDRESS=quizcadia.com` (the one name
+used in links and emails), `REDIRECT_ADDRESSES=www.quizcadia.com, 40-233-75-213.sslip.io`, and
+`CORS_ALLOWED_ORIGINS=https://quizcadia.com`.
 
 ## Server setup (once)
 1. Ubuntu 24.04 on `VM.Standard.A1.Flex`, public subnet, ingress TCP 80 and 443 in the security list.
