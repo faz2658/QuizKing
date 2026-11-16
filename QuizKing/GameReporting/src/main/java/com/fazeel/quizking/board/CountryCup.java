@@ -32,11 +32,22 @@ public class CountryCup {
 	private final GameReportRepository reports;
 	private final PlayerNames names;
 	private final Clock clock;
+	private final BoardCache cache;
 
-	public CountryCup(GameReportRepository reports, PlayerNames names, Clock clock) {
+	/** Cache key prefix of the cup standings (dropped when someone changes country). */
+	public static final String KEY = "cup:";
+	static final java.time.Duration TTL = java.time.Duration.ofSeconds(30);
+
+	@org.springframework.beans.factory.annotation.Autowired
+	public CountryCup(GameReportRepository reports, PlayerNames names, Clock clock, BoardCache cache) {
 		this.reports = reports;
 		this.names = names;
 		this.clock = clock;
+		this.cache = cache;
+	}
+
+	public CountryCup(GameReportRepository reports, PlayerNames names, Clock clock) {
+		this(reports, names, clock, new BoardCache(clock));
 	}
 
 	public record Entry(int rank, String country, int points, int players, String star) {
@@ -86,6 +97,10 @@ public class CountryCup {
 	}
 
 	private Standings standings(Instant since, Instant until) {
+		return cache.get(KEY + since + ":" + until, TTL, () -> computeStandings(since, until));
+	}
+
+	private Standings computeStandings(Instant since, Instant until) {
 		Map<Integer, Integer> xp = new HashMap<>();
 		for (GameReport r : reports.findCompletedBetween(since, until)) {
 			if (com.fazeel.quizking.report.Players.isAccount(r.userId())) { // bots and guests never score for a country

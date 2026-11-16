@@ -24,17 +24,37 @@ public class LeaderboardService {
 
 	static final int TOP = 20;
 
+	/** How long a computed board is shared. The daily board is also dropped whenever a daily run arrives. */
+	static final java.time.Duration DAILY_TTL = java.time.Duration.ofSeconds(15);
+	static final java.time.Duration XP_TTL = java.time.Duration.ofSeconds(30);
+
 	private final GameReportRepository reports;
 	private final PlayerNames names;
+	private final BoardCache cache;
 
-	public LeaderboardService(GameReportRepository reports, PlayerNames names) {
+	@org.springframework.beans.factory.annotation.Autowired
+	public LeaderboardService(GameReportRepository reports, PlayerNames names, BoardCache cache) {
 		this.reports = reports;
 		this.names = names;
+		this.cache = cache;
 	}
+
+	public LeaderboardService(GameReportRepository reports, PlayerNames names) {
+		this(reports, names, new BoardCache());
+	}
+
+	/** Cache key prefix of the daily boards (see {@link BoardCache#evict}). */
+	public static final String DAILY_KEY = "daily:";
 
 	/** One day's challenge: highest score first, the earlier finish wins a tie. */
 	public DailyBoard daily(LocalDate date, int callerId) {
-		List<GameReport> runs = new ArrayList<>(reports.findByVariantAndVariantKey(GameReport.DAILY, date.toString())
+		List<DailyEntry> entries = cache.get(DAILY_KEY + date, DAILY_TTL, () -> dailyEntries(date));
+		DailyEntry you = entries.stream().filter(e -> e.userId() == callerId).findFirst().orElse(null);
+		return new DailyBoard(date.toString(), entries.size(), entries.stream().limit(TOP).toList(), you, place(you, entries));
+	}
+
+	private List<DailyEntry> dailyEntries(LocalDate date) {
+		List<GameReport> runs = new ArrayList<>(reports.findScoresByVariantAndVariantKey(GameReport.DAILY, date.toString())
 				.stream().filter(r -> Players.isAccount(r.userId())).toList()); // guests aren't ranked
 		runs.sort(Comparator.comparingInt(GameReport::score).reversed()
 				.thenComparing(GameReport::completedAt, Comparator.nullsLast(Comparator.naturalOrder())));
@@ -46,8 +66,7 @@ public class LeaderboardService {
 			entries.add(new DailyEntry(i + 1, r.userId(), who.get(r.userId()), r.score(), r.maxScore(),
 					r.correctAnswers(), r.totalQuestions(), where.get(r.userId())));
 		}
-		DailyEntry you = entries.stream().filter(e -> e.userId() == callerId).findFirst().orElse(null);
-		return new DailyBoard(date.toString(), entries.size(), entries.stream().limit(TOP).toList(), you, place(you, entries));
+		return List.copyOf(entries);
 	}
 
 	/** Brag material for the caller: rank among players from their country, and "top N%" of everyone. */
@@ -78,8 +97,14 @@ public class LeaderboardService {
 			case WEEK -> today.with(DayOfWeek.MONDAY).atStartOfDay(ZoneOffset.UTC).toInstant();
 			case ALL -> Instant.EPOCH;
 		};
+		List<XpEntry> entries = cache.get("xp:" + since + ":" + categoryId, XP_TTL, () -> xpEntries(since, categoryId));
+		XpEntry you = entries.stream().filter(e -> e.userId() == callerId).findFirst().orElse(null);
+		return new XpBoard(period, categoryId, entries.size(), entries.stream().limit(TOP).toList(), you, entries);
+	}
+
+	private List<XpEntry> xpEntries(Instant since, Integer categoryId) {
 		Map<Integer, int[]> totals = new HashMap<>(); // userId -> {xp, games}
-		for (GameReport r : reports.findByCompletedAtGreaterThanEqual(since)) {
+		for (GameReport r : reports.findScoresCompletedSince(since)) {
 			if (!Players.isAccount(r.userId()) || categoryId != null && r.categoryId() != categoryId) {
 				continue; // guests and bots aren't ranked
 			}
@@ -99,8 +124,7 @@ public class LeaderboardService {
 			entries.add(new XpEntry(i + 1, e.getKey(), who.get(e.getKey()), xp, e.getValue()[1], Xp.title(Xp.level(xp)),
 					where.get(e.getKey())));
 		}
-		XpEntry you = entries.stream().filter(e -> e.userId() == callerId).findFirst().orElse(null);
-		return new XpBoard(period, categoryId, entries.size(), entries.stream().limit(TOP).toList(), you, entries);
+		return List.copyOf(entries);
 	}
 
 	/** {@code title} is the rank the period's XP alone would earn, a fun label rather than the player's level. */

@@ -30,15 +30,45 @@ public class GameManagerController {
 
 	private final GameCatalogService catalog;
 
+	/**
+	 * The home page's lists. Building them reads every game or category with all its questions embedded (about
+	 * 1.4 MB from the database), so each list is built once and shared until the catalog changes, or for a minute.
+	 */
+	private record Snapshot<T>(long version, long builtAt, List<T> items) {
+	}
+
+	private static final long MAX_AGE_MS = 60_000;
+
+	private final java.util.concurrent.ConcurrentHashMap<String, Snapshot<?>> lists = new java.util.concurrent.ConcurrentHashMap<>();
+
 	public GameManagerController(GameCatalogService catalog) {
 		this.catalog = catalog;
+	}
+
+	@SuppressWarnings("unchecked")
+	private <T> List<T> shared(String name, java.util.function.Supplier<List<T>> build) {
+		long v = catalog.version();
+		long now = System.currentTimeMillis();
+		Snapshot<T> s = (Snapshot<T>) lists.get(name);
+		if (s != null && s.version() == v && now - s.builtAt() < MAX_AGE_MS) {
+			return s.items();
+		}
+		synchronized (lists) { // one rebuild at a time; everyone else waits for it instead of reading the database too
+			s = (Snapshot<T>) lists.get(name);
+			if (s != null && s.version() == v && now - s.builtAt() < MAX_AGE_MS) {
+				return s.items();
+			}
+			List<T> items = List.copyOf(build.get());
+			lists.put(name, new Snapshot<>(v, now, items));
+			return items;
+		}
 	}
 
 	// categories / question bank
 
 	@GetMapping("/categories")
 	public List<CategorySummary> categories() {
-		return catalog.categories().stream().map(CategorySummary::of).toList();
+		return shared("categories", () -> catalog.categories().stream().map(CategorySummary::of).toList());
 	}
 
 	@PostMapping("/category")
@@ -57,7 +87,7 @@ public class GameManagerController {
 
 	@GetMapping("/games")
 	public List<GameSummary> games() {
-		return catalog.games().stream().map(GameSummary::of).toList();
+		return shared("games", () -> catalog.games().stream().map(GameSummary::of).toList());
 	}
 
 	@GetMapping("/game1/{gameId}")
@@ -102,7 +132,7 @@ public class GameManagerController {
 
 	@GetMapping("/games/mp")
 	public List<GameSummary> multiPlayerGames() {
-		return catalog.multiPlayerGames().stream().map(GameSummary::of).toList();
+		return shared("mp", () -> catalog.multiPlayerGames().stream().map(GameSummary::of).toList());
 	}
 
 	@GetMapping("/games/mp/{gameId}")

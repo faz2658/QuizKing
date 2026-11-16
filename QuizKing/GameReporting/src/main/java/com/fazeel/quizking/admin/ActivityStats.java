@@ -34,11 +34,19 @@ public class ActivityStats {
 	private final GameReportRepository reports;
 	private final PlayerNameRepository names;
 	private final Clock clock;
+	private final com.fazeel.quizking.board.BoardCache cache;
 
-	public ActivityStats(GameReportRepository reports, PlayerNameRepository names, Clock clock) {
+	@org.springframework.beans.factory.annotation.Autowired
+	public ActivityStats(GameReportRepository reports, PlayerNameRepository names, Clock clock,
+			com.fazeel.quizking.board.BoardCache cache) {
 		this.reports = reports;
 		this.names = names;
 		this.clock = clock;
+		this.cache = cache;
+	}
+
+	public ActivityStats(GameReportRepository reports, PlayerNameRepository names, Clock clock) {
+		this(reports, names, clock, new com.fazeel.quizking.board.BoardCache(clock));
 	}
 
 	public record Day(LocalDate day, int games, int players, int guestGames) {
@@ -60,6 +68,10 @@ public class ActivityStats {
 	}
 
 	public View view(int days) {
+		return cache.get("admin:" + days, java.time.Duration.ofSeconds(30), () -> compute(days));
+	}
+
+	private View compute(int days) {
 		Instant now = clock.instant();
 		LocalDate today = LocalDate.now(clock.withZone(ZoneOffset.UTC));
 		int span = Math.max(days, 30);

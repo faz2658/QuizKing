@@ -35,7 +35,7 @@ class LeaderboardServiceTest {
 
 	@Test
 	void highestScoreFirstAndTheEarlierFinishWinsATie() {
-		when(reports.findByVariantAndVariantKey(GameReport.DAILY, "2026-11-15")).thenReturn(List.of(
+		when(reports.findScoresByVariantAndVariantKey(GameReport.DAILY, "2026-11-15")).thenReturn(List.of(
 				daily(1, 120, "2026-11-15T12:00:00Z"), daily(2, 180, "2026-11-15T13:00:00Z"),
 				daily(3, 120, "2026-11-15T09:00:00Z")));
 		when(names.lookup(anyCollection())).thenReturn(Map.of(1, "Ada", 2, "Bo", 3, "Cy"));
@@ -54,7 +54,7 @@ class LeaderboardServiceTest {
 				Instant.parse("2026-11-15T10:00:00Z"), List.of());
 		GameReport boMonday = new GameReport("2", GameMode.SINGLE, 2, 6, "Maths", 4, 90, 100, 9, 10, null, null, null,
 				Instant.parse("2026-11-10T10:00:00Z"), List.of());
-		when(reports.findByCompletedAtGreaterThanEqual(Instant.parse("2026-11-09T00:00:00Z")))
+		when(reports.findScoresCompletedSince(Instant.parse("2026-11-09T00:00:00Z")))
 				.thenReturn(List.of(adaToday, boMonday));
 		when(names.lookup(anyCollection())).thenAnswer(i -> Map.of(1, "Ada", 2, "Bo"));
 		LeaderboardService service = new LeaderboardService(reports, names);
@@ -77,7 +77,7 @@ class LeaderboardServiceTest {
 				Instant.parse("2026-11-14T10:00:00Z"), List.of());
 		GameReport cy = new GameReport("3", GameMode.SINGLE, 3, 6, "Maths", 4, 20, 100, 2, 10, null, null, null,
 				Instant.parse("2026-11-14T10:00:00Z"), List.of());
-		when(reports.findByCompletedAtGreaterThanEqual(Instant.parse("2026-11-09T00:00:00Z"))).thenReturn(List.of(ada, bo, cy));
+		when(reports.findScoresCompletedSince(Instant.parse("2026-11-09T00:00:00Z"))).thenReturn(List.of(ada, bo, cy));
 		when(names.lookup(anyCollection())).thenAnswer(i -> Map.of(1, "Ada", 2, "Bo", 3, "Cy"));
 		when(names.countries(anyCollection())).thenAnswer(i -> Map.of(1, "CA", 2, "IN", 3, "CA"));
 
@@ -109,7 +109,7 @@ class LeaderboardServiceTest {
 	@Test
 	void guestsAndBotsAreNotRanked() {
 		int guest = com.fazeel.quizking.report.Players.GUEST_ID_BASE + 42;
-		when(reports.findByVariantAndVariantKey(GameReport.DAILY, "2026-11-15")).thenReturn(List.of(
+		when(reports.findScoresByVariantAndVariantKey(GameReport.DAILY, "2026-11-15")).thenReturn(List.of(
 				daily(1, 120, "2026-11-15T12:00:00Z"), daily(guest, 300, "2026-11-15T10:00:00Z"),
 				daily(-1, 250, "2026-11-15T11:00:00Z")));
 		when(names.lookup(anyCollection())).thenReturn(Map.of(1, "Ada"));
@@ -125,7 +125,7 @@ class LeaderboardServiceTest {
 				Instant.parse("2026-11-15T10:00:00Z"), List.of());
 		GameReport adaGame = new GameReport("a", GameMode.SINGLE, 1, 5, "Art", 9, 10, 100, 1, 10, null, null, null,
 				Instant.parse("2026-11-15T10:00:00Z"), List.of());
-		when(reports.findByCompletedAtGreaterThanEqual(Instant.parse("2026-11-15T00:00:00Z")))
+		when(reports.findScoresCompletedSince(Instant.parse("2026-11-15T00:00:00Z")))
 				.thenReturn(List.of(guestGame, adaGame));
 		var day = service.xp(LeaderboardService.Period.DAY, null, guest, now);
 		assertThat(day.top()).extracting(e -> e.userId()).containsExactly(1);
