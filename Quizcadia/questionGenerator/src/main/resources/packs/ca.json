@@ -772,6 +772,732 @@
       "Beatrice and Virgil"
      ],
      "why": "It is about a boy adrift with a tiger."
+    },
+    {
+     "q": "Which Canadian author wrote 'The Handmaid's Tale' sequel 'The Testaments'?",
+     "a": "Margaret Atwood",
+     "wrong": [
+      "Alice Munro",
+      "Carol Shields",
+      "Emma Donoghue"
+     ],
+     "level": 1,
+     "why": "It shared the 2019 Booker Prize."
+    },
+    {
+     "q": "Which island is Anne of Green Gables set on?",
+     "a": "Prince Edward Island",
+     "wrong": [
+      "Cape Breton Island",
+      "Vancouver Island",
+      "Newfoundland"
+     ],
+     "level": 1,
+     "why": "Cavendish draws many visitors."
+    },
+    {
+     "q": "Which Canadian author wrote 'The English Patient'?",
+     "a": "Michael Ondaatje",
+     "wrong": [
+      "Rohinton Mistry",
+      "Yann Martel",
+      "Mordecai Richler"
+     ],
+     "level": 1,
+     "why": "It won the 1992 Booker Prize."
+    },
+    {
+     "q": "Which Montreal author wrote 'The Apprenticeship of Duddy Kravitz'?",
+     "a": "Mordecai Richler",
+     "wrong": [
+      "Leonard Cohen",
+      "Mavis Gallant",
+      "Gabrielle Roy"
+     ],
+     "level": 1,
+     "why": "It is set in Montreal's Jewish quarter."
+    },
+    {
+     "q": "Which Canadian novelist wrote 'Room'?",
+     "a": "Emma Donoghue",
+     "wrong": [
+      "Margaret Atwood",
+      "Miriam Toews",
+      "Esi Edugyan"
+     ],
+     "level": 1,
+     "why": "It is told by a five-year-old boy."
+    },
+    {
+     "q": "Which Canadian children's author wrote 'The Paper Bag Princess'?",
+     "a": "Robert Munsch",
+     "wrong": [
+      "Dennis Lee",
+      "Mordecai Richler",
+      "Kenneth Oppel"
+     ],
+     "level": 1,
+     "why": "It was published in 1980."
+    },
+    {
+     "q": "Which Canadian poet wrote 'Alligator Pie'?",
+     "a": "Dennis Lee",
+     "wrong": [
+      "Robert Munsch",
+      "Leonard Cohen",
+      "Al Purdy"
+     ],
+     "level": 1,
+     "why": "He also wrote songs for Fraggle Rock."
+    },
+    {
+     "q": "Which First World War poem by a Canadian doctor is read on Remembrance Day?",
+     "a": "In Flanders Fields",
+     "wrong": [
+      "Dulce et Decorum Est",
+      "For the Fallen",
+      "The Soldier"
+     ],
+     "level": 1,
+     "why": "John McCrae wrote it in 1915."
+    },
+    {
+     "q": "Who wrote 'In Flanders Fields'?",
+     "a": "John McCrae",
+     "wrong": [
+      "Wilfred Owen",
+      "Rupert Brooke",
+      "Robert Service"
+     ],
+     "level": 1,
+     "why": "He was a Canadian army doctor."
+    },
+    {
+     "q": "Which poet wrote 'The Cremation of Sam McGee' about the Yukon?",
+     "a": "Robert W. Service",
+     "wrong": [
+      "John McCrae",
+      "E. Pauline Johnson",
+      "Al Purdy"
+     ],
+     "level": 1,
+     "why": "He was called the 'Bard of the Yukon'."
+    },
+    {
+     "q": "Which Canadian author wrote 'Life of Pi'?",
+     "a": "Yann Martel",
+     "wrong": [
+      "Michael Ondaatje",
+      "Rohinton Mistry",
+      "Lawrence Hill"
+     ],
+     "level": 1,
+     "why": "It became an Ang Lee film."
+    },
+    {
+     "q": "Which Canadian author wrote 'The Book of Negroes'?",
+     "a": "Lawrence Hill",
+     "wrong": [
+      "Esi Edugyan",
+      "Austin Clarke",
+      "Dionne Brand"
+     ],
+     "level": 1,
+     "why": "It became a TV miniseries."
+    },
+    {
+     "q": "Which Canadian novelist wrote 'Fifth Business'?",
+     "a": "Robertson Davies",
+     "wrong": [
+      "Hugh MacLennan",
+      "Margaret Laurence",
+      "Timothy Findley"
+     ],
+     "level": 1,
+     "why": "It begins the Deptford Trilogy."
+    },
+    {
+     "q": "Which Canadian author wrote 'The Stone Angel'?",
+     "a": "Margaret Laurence",
+     "wrong": [
+      "Margaret Atwood",
+      "Carol Shields",
+      "Gabrielle Roy"
+     ],
+     "level": 1,
+     "why": "It is set in a fictional Manitoba town."
+    },
+    {
+     "q": "Which Canadian author wrote 'Who Has Seen the Wind'?",
+     "a": "W. O. Mitchell",
+     "wrong": [
+      "Farley Mowat",
+      "Sinclair Ross",
+      "Robert Kroetsch"
+     ],
+     "level": 1,
+     "why": "It is about a boy on the prairies."
+    },
+    {
+     "q": "Which Canadian author wrote 'Never Cry Wolf'?",
+     "a": "Farley Mowat",
+     "wrong": [
+      "W. O. Mitchell",
+      "Pierre Berton",
+      "Grey Owl"
+     ],
+     "level": 1,
+     "why": "It is about wolves in the Arctic."
+    },
+    {
+     "q": "Which popular historian wrote 'The National Dream' about the railway?",
+     "a": "Pierre Berton",
+     "wrong": [
+      "Farley Mowat",
+      "Peter C. Newman",
+      "Charlotte Gray"
+     ],
+     "level": 1,
+     "why": "He wrote over 50 books."
+    },
+    {
+     "q": "Which Canadian author wrote 'The Diviners'?",
+     "a": "Margaret Laurence",
+     "wrong": [
+      "Carol Shields",
+      "Alice Munro",
+      "Mavis Gallant"
+     ],
+     "level": 1,
+     "why": "It won a Governor General's Award."
+    },
+    {
+     "q": "Which American-born Canadian wrote 'The Stone Diaries'?",
+     "a": "Carol Shields",
+     "wrong": [
+      "Margaret Atwood",
+      "Alice Munro",
+      "Jane Urquhart"
+     ],
+     "level": 1,
+     "why": "It won the Pulitzer Prize."
+    },
+    {
+     "q": "Which prize is Canada's richest literary award for fiction?",
+     "a": "Giller Prize",
+     "wrong": [
+      "Governor General's Award",
+      "Booker Prize",
+      "Stephen Leacock Medal"
+     ],
+     "level": 1,
+     "why": "It was founded in 1994."
+    },
+    {
+     "q": "Which Canadian humorist wrote 'Sunshine Sketches of a Little Town'?",
+     "a": "Stephen Leacock",
+     "wrong": [
+      "Robertson Davies",
+      "Mordecai Richler",
+      "Pierre Berton"
+     ],
+     "level": 1,
+     "why": "A medal for humour is named after him."
+    },
+    {
+     "q": "Which Canadian author created the detective series set in Three Pines, Quebec?",
+     "a": "Louise Penny",
+     "wrong": [
+      "Margaret Atwood",
+      "Kathy Reichs",
+      "Peter Robinson"
+     ],
+     "level": 1,
+     "why": "The detective is Armand Gamache."
+    },
+    {
+     "q": "Which Canadian author wrote 'Station Eleven'?",
+     "a": "Emily St. John Mandel",
+     "wrong": [
+      "Margaret Atwood",
+      "Miriam Toews",
+      "Madeleine Thien"
+     ],
+     "level": 1,
+     "why": "It became a TV series."
+    },
+    {
+     "q": "Which Canadian author wrote 'Women Talking'?",
+     "a": "Miriam Toews",
+     "wrong": [
+      "Emma Donoghue",
+      "Heather O'Neill",
+      "Rawi Hage"
+     ],
+     "level": 1,
+     "why": "It was filmed by Sarah Polley."
+    },
+    {
+     "q": "Which Canadian author wrote 'Indian Horse'?",
+     "a": "Richard Wagamese",
+     "wrong": [
+      "Thomas King",
+      "Tomson Highway",
+      "Eden Robinson"
+     ],
+     "level": 1,
+     "why": "It is about a residential school survivor and hockey."
+    },
+    {
+     "q": "Which Canadian author wrote 'The Inconvenient Indian'?",
+     "a": "Thomas King",
+     "wrong": [
+      "Richard Wagamese",
+      "Tanya Talaga",
+      "Jesse Thistle"
+     ],
+     "level": 1,
+     "why": "It is a history of Indigenous peoples in North America."
+    },
+    {
+     "q": "Which Haida-Heiltsuk author wrote 'Monkey Beach'?",
+     "a": "Eden Robinson",
+     "wrong": [
+      "Thomas King",
+      "Lee Maracle",
+      "Cherie Dimaline"
+     ],
+     "level": 1,
+     "why": "It is set in British Columbia."
+    },
+    {
+     "q": "Which Métis author wrote 'The Marrow Thieves'?",
+     "a": "Cherie Dimaline",
+     "wrong": [
+      "Eden Robinson",
+      "Katherena Vermette",
+      "Waubgeshig Rice"
+     ],
+     "level": 1,
+     "why": "It won the Governor General's Award."
+    },
+    {
+     "q": "Which Canadian author wrote 'Lullabies for Little Criminals'?",
+     "a": "Heather O'Neill",
+     "wrong": [
+      "Miriam Toews",
+      "Emma Donoghue",
+      "Mavis Gallant"
+     ],
+     "level": 1,
+     "why": "It is set in Montreal."
+    },
+    {
+     "q": "Which Canadian author wrote 'Do Not Say We Have Nothing'?",
+     "a": "Madeleine Thien",
+     "wrong": [
+      "Esi Edugyan",
+      "Emma Donoghue",
+      "Miriam Toews"
+     ],
+     "level": 1,
+     "why": "It won the 2016 Giller Prize."
+    },
+    {
+     "q": "Which Canadian author won the Giller twice, for 'Half-Blood Blues' and 'Washington Black'?",
+     "a": "Esi Edugyan",
+     "wrong": [
+      "M. G. Vassanji",
+      "Alice Munro",
+      "Margaret Atwood"
+     ],
+     "level": 2,
+     "why": "She was born in Calgary."
+    },
+    {
+     "q": "Which author won the Giller Prize twice, including the first, in 1994?",
+     "a": "M. G. Vassanji",
+     "wrong": [
+      "Alice Munro",
+      "Esi Edugyan",
+      "Michael Ondaatje"
+     ],
+     "level": 2,
+     "why": "He won for 'The Book of Secrets'."
+    },
+    {
+     "q": "Which Canadian Alice Munro book won the 1998 Giller Prize?",
+     "a": "The Love of a Good Woman",
+     "wrong": [
+      "Runaway",
+      "Dear Life",
+      "Lives of Girls and Women"
+     ],
+     "level": 2,
+     "why": "She won the Giller twice."
+    },
+    {
+     "q": "Which French writer set 'Maria Chapdelaine' in Quebec?",
+     "a": "Louis Hémon",
+     "wrong": [
+      "Gabrielle Roy",
+      "Roch Carrier",
+      "Michel Tremblay"
+     ],
+     "level": 2,
+     "why": "It was published in 1913."
+    },
+    {
+     "q": "Which Franco-Manitoban author wrote 'The Tin Flute' (Bonheur d'occasion)?",
+     "a": "Gabrielle Roy",
+     "wrong": [
+      "Anne Hébert",
+      "Antonine Maillet",
+      "Marie-Claire Blais"
+     ],
+     "level": 2,
+     "why": "It won France's Prix Femina."
+    },
+    {
+     "q": "Which Acadian author won France's Prix Goncourt in 1979?",
+     "a": "Antonine Maillet",
+     "wrong": [
+      "Gabrielle Roy",
+      "Anne Hébert",
+      "Marie-Claire Blais"
+     ],
+     "level": 2,
+     "why": "She won for 'Pélagie-la-Charrette'."
+    },
+    {
+     "q": "Which Quebec author wrote the short story 'The Hockey Sweater'?",
+     "a": "Roch Carrier",
+     "wrong": [
+      "Michel Tremblay",
+      "Gabrielle Roy",
+      "Dany Laferrière"
+     ],
+     "level": 2,
+     "why": "A boy is sent a Toronto Maple Leafs sweater."
+    },
+    {
+     "q": "Which Quebec playwright wrote 'Les Belles-sœurs'?",
+     "a": "Michel Tremblay",
+     "wrong": [
+      "Robert Lepage",
+      "Wajdi Mouawad",
+      "Roch Carrier"
+     ],
+     "level": 2,
+     "why": "It used Montreal's joual dialect."
+    },
+    {
+     "q": "Which Haitian-born Montreal author joined the Académie française in 2013?",
+     "a": "Dany Laferrière",
+     "wrong": [
+      "Antonine Maillet",
+      "Kim Thúy",
+      "Wajdi Mouawad"
+     ],
+     "level": 2,
+     "why": "He was the first Canadian member."
+    },
+    {
+     "q": "Which Vietnamese-born Quebec author wrote 'Ru'?",
+     "a": "Kim Thúy",
+     "wrong": [
+      "Dany Laferrière",
+      "Madeleine Thien",
+      "Heather O'Neill"
+     ],
+     "level": 2,
+     "why": "She came to Canada as a boat refugee."
+    },
+    {
+     "q": "Which 1893 dog story by a Canadian was a best-seller?",
+     "a": "Beautiful Joe",
+     "wrong": [
+      "Lassie Come-Home",
+      "Old Yeller",
+      "Owls in the Family"
+     ],
+     "level": 2,
+     "why": "Margaret Marshall Saunders wrote it."
+    },
+    {
+     "q": "Which Canadian author wrote the 'Silverwing' books about bats?",
+     "a": "Kenneth Oppel",
+     "wrong": [
+      "Robert Munsch",
+      "Gordon Korman",
+      "Eric Walters"
+     ],
+     "level": 2,
+     "why": "He was published as a teenager."
+    },
+    {
+     "q": "Which Toronto author wrote the 'Macdonald Hall' books as a teenager?",
+     "a": "Gordon Korman",
+     "wrong": [
+      "Kenneth Oppel",
+      "Eric Walters",
+      "Jean Little"
+     ],
+     "level": 2,
+     "why": "He wrote the first at age 12."
+    },
+    {
+     "q": "Which Mohawk poet became famous for 'The Song My Paddle Sings'?",
+     "a": "E. Pauline Johnson",
+     "wrong": [
+      "Lee Maracle",
+      "Rita Joe",
+      "Louise Halfe"
+     ],
+     "level": 2,
+     "why": "She toured as a performer in the 1890s."
+    },
+    {
+     "q": "Which Prince Edward Island town is Anne Shirley's fictional home?",
+     "a": "Avonlea",
+     "wrong": [
+      "Charlottetown",
+      "Summerside",
+      "Cavendish"
+     ],
+     "level": 2,
+     "why": "It is based on Cavendish."
+    },
+    {
+     "q": "Which Canadian author wrote 'The Cellist of Sarajevo'?",
+     "a": "Steven Galloway",
+     "wrong": [
+      "Lawrence Hill",
+      "Joseph Boyden",
+      "David Bergen"
+     ],
+     "level": 2,
+     "why": "It is set during the siege of Sarajevo."
+    },
+    {
+     "q": "Which Canadian author wrote 'Three Day Road' about Cree snipers in the First World War?",
+     "a": "Joseph Boyden",
+     "wrong": [
+      "Lawrence Hill",
+      "Richard Wagamese",
+      "Wayson Choy"
+     ],
+     "level": 2,
+     "why": "It was published in 2005."
+    },
+    {
+     "q": "Which Canadian novelist wrote 'Two Solitudes'?",
+     "a": "Hugh MacLennan",
+     "wrong": [
+      "Robertson Davies",
+      "Morley Callaghan",
+      "Mordecai Richler"
+     ],
+     "level": 2,
+     "why": "Its title describes English and French Canada."
+    },
+    {
+     "q": "Which Canadian writer wrote 'The Collected Works of Billy the Kid'?",
+     "a": "Michael Ondaatje",
+     "wrong": [
+      "Leonard Cohen",
+      "bpNichol",
+      "Al Purdy"
+     ],
+     "level": 2,
+     "why": "It mixes poems and prose."
+    },
+    {
+     "q": "Which Canadian author wrote 'Beautiful Losers'?",
+     "a": "Leonard Cohen",
+     "wrong": [
+      "Michael Ondaatje",
+      "Irving Layton",
+      "Mordecai Richler"
+     ],
+     "level": 2,
+     "why": "He was a poet before a singer."
+    },
+    {
+     "q": "Which Canadian author wrote 'Unless' and 'Larry's Party'?",
+     "a": "Carol Shields",
+     "wrong": [
+      "Alice Munro",
+      "Margaret Atwood",
+      "Jane Urquhart"
+     ],
+     "level": 2,
+     "why": "She died in 2003."
+    },
+    {
+     "q": "Which Canadian critic wrote 'Anatomy of Criticism'?",
+     "a": "Northrop Frye",
+     "wrong": [
+      "Marshall McLuhan",
+      "Harold Innis",
+      "George Grant"
+     ],
+     "level": 3,
+     "why": "He taught at the University of Toronto."
+    },
+    {
+     "q": "Which Canadian thinker coined 'the medium is the message'?",
+     "a": "Marshall McLuhan",
+     "wrong": [
+      "Northrop Frye",
+      "Harold Innis",
+      "Jane Jacobs"
+     ],
+     "level": 3,
+     "why": "He also spoke of the 'global village'."
+    },
+    {
+     "q": "Which American-born Toronto writer wrote 'The Death and Life of Great American Cities'?",
+     "a": "Jane Jacobs",
+     "wrong": [
+      "Naomi Klein",
+      "Margaret Atwood",
+      "Rachel Carson"
+     ],
+     "level": 3,
+     "why": "She moved to Toronto in 1968."
+    },
+    {
+     "q": "Which Canadian author wrote 'No Logo'?",
+     "a": "Naomi Klein",
+     "wrong": [
+      "Malcolm Gladwell",
+      "Jane Jacobs",
+      "Douglas Coupland"
+     ],
+     "level": 3,
+     "why": "It criticised global brands."
+    },
+    {
+     "q": "Which Canadian author coined the term 'Generation X' with his first novel?",
+     "a": "Douglas Coupland",
+     "wrong": [
+      "Malcolm Gladwell",
+      "Naomi Klein",
+      "Yann Martel"
+     ],
+     "level": 3,
+     "why": "It was published in 1991."
+    },
+    {
+     "q": "Which Canadian-raised writer wrote 'The Tipping Point' and 'Outliers'?",
+     "a": "Malcolm Gladwell",
+     "wrong": [
+      "Douglas Coupland",
+      "Steven Pinker",
+      "Naomi Klein"
+     ],
+     "level": 3,
+     "why": "He grew up in Ontario."
+    },
+    {
+     "q": "Which American-Canadian author coined 'cyberspace'?",
+     "a": "William Gibson",
+     "wrong": [
+      "Douglas Coupland",
+      "Cory Doctorow",
+      "Robert J. Sawyer"
+     ],
+     "level": 3,
+     "why": "He lives in Vancouver."
+    },
+    {
+     "q": "Which Canadian science fiction author won the Hugo for 'Hominids'?",
+     "a": "Robert J. Sawyer",
+     "wrong": [
+      "William Gibson",
+      "Cory Doctorow",
+      "Peter Watts"
+     ],
+     "level": 3,
+     "why": "It is about Neanderthals."
+    },
+    {
+     "q": "Which Canadian novel by Sheila Watson is seen as the first modernist Canadian novel?",
+     "a": "The Double Hook",
+     "wrong": [
+      "As for Me and My House",
+      "Two Solitudes",
+      "Fifth Business"
+     ],
+     "level": 3,
+     "why": "It was published in 1959."
+    },
+    {
+     "q": "Which Sinclair Ross novel is set in a Depression-era prairie town?",
+     "a": "As for Me and My House",
+     "wrong": [
+      "The Double Hook",
+      "Who Has Seen the Wind",
+      "The Stone Angel"
+     ],
+     "level": 3,
+     "why": "It is written as a diary."
+    },
+    {
+     "q": "Which Canadian poet won the Governor General's Award for 'The Cariboo Horses'?",
+     "a": "Al Purdy",
+     "wrong": [
+      "Irving Layton",
+      "Earle Birney",
+      "P. K. Page"
+     ],
+     "level": 3,
+     "why": "He is called the voice of the land."
+    },
+    {
+     "q": "Which Montreal poet wrote 'A Red Carpet for the Sun'?",
+     "a": "Irving Layton",
+     "wrong": [
+      "Leonard Cohen",
+      "A. M. Klein",
+      "F. R. Scott"
+     ],
+     "level": 3,
+     "why": "He was a mentor to Leonard Cohen."
+    },
+    {
+     "q": "Which Acadian poem by Longfellow is set in Nova Scotia?",
+     "a": "Evangeline",
+     "wrong": [
+      "Hiawatha",
+      "The Wreck of the Hesperus",
+      "Paul Revere's Ride"
+     ],
+     "level": 3,
+     "why": "It tells of the 1755 expulsion."
+    },
+    {
+     "q": "Which prize honours Canada's best book of humour?",
+     "a": "Stephen Leacock Memorial Medal",
+     "wrong": [
+      "Giller Prize",
+      "Governor General's Award",
+      "Writers' Trust Prize"
+     ],
+     "level": 3,
+     "why": "It is awarded in Orillia."
+    },
+    {
+     "q": "Which Governor General's Award did Margaret Atwood first win, for 'The Circle Game'?",
+     "a": "Poetry, in 1966",
+     "wrong": [
+      "Fiction, in 1985",
+      "Drama, in 1970",
+      "Non-fiction, in 2000"
+     ],
+     "level": 3,
+     "why": "She later won for 'The Handmaid's Tale'."
     }
    ]
   },
@@ -789,6 +1515,1007 @@
       "Province House, Halifax"
      ],
      "why": "The Centre Block has the Peace Tower."
+    },
+    {
+     "level": 2,
+     "q": "Who represents the monarch in Canada?",
+     "a": "The Governor General",
+     "wrong": [
+      "The Prime Minister",
+      "The Chief Justice",
+      "The Speaker of the Senate"
+     ],
+     "why": "The Governor General lives at Rideau Hall."
+    },
+    {
+     "q": "Who became Canada's Prime Minister in March 2025?",
+     "a": "Mark Carney",
+     "wrong": [
+      "Justin Trudeau",
+      "Pierre Poilievre",
+      "Chrystia Freeland"
+     ],
+     "level": 1,
+     "why": "He was earlier Governor of the Bank of England."
+    },
+    {
+     "q": "Who was Canada's Prime Minister from 2015 to 2025?",
+     "a": "Justin Trudeau",
+     "wrong": [
+      "Stephen Harper",
+      "Mark Carney",
+      "Paul Martin"
+     ],
+     "level": 1,
+     "why": "He is Pierre Trudeau's son."
+    },
+    {
+     "q": "Which party did Stephen Harper lead?",
+     "a": "Conservative Party",
+     "wrong": [
+      "Liberal Party",
+      "New Democratic Party",
+      "Bloc Québécois"
+     ],
+     "level": 1,
+     "why": "He was Prime Minister from 2006 to 2015."
+    },
+    {
+     "q": "What are the two houses of Canada's Parliament?",
+     "a": "House of Commons and Senate",
+     "wrong": [
+      "House of Lords and Commons",
+      "Assembly and Council",
+      "Congress and Senate"
+     ],
+     "level": 1,
+     "why": "Senators are appointed, not elected."
+    },
+    {
+     "q": "How are Canada's senators chosen?",
+     "a": "Appointed on the Prime Minister's advice",
+     "wrong": [
+      "Elected by voters",
+      "Chosen by provinces",
+      "Inherited titles"
+     ],
+     "level": 1,
+     "why": "They can serve until age 75."
+    },
+    {
+     "q": "Who is Canada's head of state?",
+     "a": "The monarch (King Charles III)",
+     "wrong": [
+      "The Prime Minister",
+      "The Governor General",
+      "The Chief Justice"
+     ],
+     "level": 1,
+     "why": "Canada is a constitutional monarchy."
+    },
+    {
+     "q": "Which party mainly seeks independence for Quebec in federal elections?",
+     "a": "Bloc Québécois",
+     "wrong": [
+      "Parti Québécois",
+      "Liberal Party",
+      "Coalition Avenir Québec"
+     ],
+     "level": 1,
+     "why": "It runs candidates only in Quebec."
+    },
+    {
+     "q": "Which party seeks Quebec independence in provincial elections?",
+     "a": "Parti Québécois",
+     "wrong": [
+      "Bloc Québécois",
+      "Quebec Liberal Party",
+      "Québec solidaire"
+     ],
+     "level": 1,
+     "why": "René Lévesque founded it."
+    },
+    {
+     "q": "Which left-leaning party was founded in 1961 from the CCF?",
+     "a": "New Democratic Party",
+     "wrong": [
+      "Green Party",
+      "Reform Party",
+      "Liberal Party"
+     ],
+     "level": 1,
+     "why": "Tommy Douglas was its first leader."
+    },
+    {
+     "q": "Which Saskatchewan premier is called the father of medicare?",
+     "a": "Tommy Douglas",
+     "wrong": [
+      "John Diefenbaker",
+      "Lester Pearson",
+      "Ralph Klein"
+     ],
+     "level": 1,
+     "why": "He was voted 'The Greatest Canadian' in 2004."
+    },
+    {
+     "q": "Which party did Pierre Trudeau lead?",
+     "a": "Liberal Party",
+     "wrong": [
+      "Progressive Conservative Party",
+      "NDP",
+      "Reform Party"
+     ],
+     "level": 1,
+     "why": "He was Prime Minister for over 15 years."
+    },
+    {
+     "q": "What is the official home of Canada's Prime Minister?",
+     "a": "24 Sussex Drive",
+     "wrong": [
+      "Rideau Hall",
+      "Stornoway",
+      "Harrington Lake"
+     ],
+     "level": 1,
+     "why": "It has been empty for repairs since 2015."
+    },
+    {
+     "q": "Where does the Governor General live in Ottawa?",
+     "a": "Rideau Hall",
+     "wrong": [
+      "24 Sussex Drive",
+      "Stornoway",
+      "Château Laurier"
+     ],
+     "level": 1,
+     "why": "It is open to visitors."
+    },
+    {
+     "q": "What is the leader of a Canadian province's government called?",
+     "a": "Premier",
+     "wrong": [
+      "Governor",
+      "Chief Minister",
+      "Mayor"
+     ],
+     "level": 1,
+     "why": "Each province has one."
+    },
+    {
+     "q": "What is Canada's system of government?",
+     "a": "Parliamentary democracy and constitutional monarchy",
+     "wrong": [
+      "Presidential republic",
+      "Absolute monarchy",
+      "One-party state"
+     ],
+     "level": 1,
+     "why": "It follows the Westminster model."
+    },
+    {
+     "q": "Which 1982 law added a Charter of Rights to Canada's Constitution?",
+     "a": "Constitution Act, 1982",
+     "wrong": [
+      "British North America Act",
+      "Statute of Westminster",
+      "Quebec Act"
+     ],
+     "level": 1,
+     "why": "The Queen signed it in Ottawa."
+    },
+    {
+     "q": "What is the bill of rights in Canada's Constitution called?",
+     "a": "Canadian Charter of Rights and Freedoms",
+     "wrong": [
+      "Canadian Bill of Rights",
+      "Canada Act",
+      "Charter of Quebec"
+     ],
+     "level": 1,
+     "why": "It protects freedoms like speech."
+    },
+    {
+     "q": "What was the British North America Act renamed?",
+     "a": "Constitution Act, 1867",
+     "wrong": [
+      "Statute of Westminster",
+      "Canada Act",
+      "Charter of Rights"
+     ],
+     "level": 1,
+     "why": "It created the Dominion of Canada."
+    },
+    {
+     "q": "How old must a Canadian be to vote in federal elections?",
+     "a": "18",
+     "wrong": [
+      "16",
+      "19",
+      "21"
+     ],
+     "level": 1,
+     "why": "The age was lowered from 21 in 1970."
+    },
+    {
+     "q": "Which agency runs Canada's federal elections?",
+     "a": "Elections Canada",
+     "wrong": [
+      "Canada Elections Board",
+      "Parliament Office",
+      "Privy Council"
+     ],
+     "level": 1,
+     "why": "It is independent of the government."
+    },
+    {
+     "q": "Which Prime Minister brought in official bilingualism in 1969?",
+     "a": "Pierre Trudeau",
+     "wrong": [
+      "Lester Pearson",
+      "Brian Mulroney",
+      "John Diefenbaker"
+     ],
+     "level": 1,
+     "why": "The Official Languages Act made French and English equal."
+    },
+    {
+     "q": "Which Prime Minister signed the North American Free Trade Agreement?",
+     "a": "Brian Mulroney",
+     "wrong": [
+      "Jean Chrétien",
+      "Pierre Trudeau",
+      "Stephen Harper"
+     ],
+     "level": 1,
+     "why": "NAFTA began in 1994."
+    },
+    {
+     "q": "Which Prime Minister led Canada from 1993 to 2003?",
+     "a": "Jean Chrétien",
+     "wrong": [
+      "Paul Martin",
+      "Brian Mulroney",
+      "Kim Campbell"
+     ],
+     "level": 1,
+     "why": "He kept Canada out of the 2003 Iraq War."
+    },
+    {
+     "q": "Which Prime Minister brought in the maple leaf flag in 1965?",
+     "a": "Lester B. Pearson",
+     "wrong": [
+      "John Diefenbaker",
+      "Pierre Trudeau",
+      "Louis St. Laurent"
+     ],
+     "level": 1,
+     "why": "The debate was called the 'Great Flag Debate'."
+    },
+    {
+     "q": "Which Prime Minister led Canada through most of the Second World War?",
+     "a": "William Lyon Mackenzie King",
+     "wrong": [
+      "R. B. Bennett",
+      "Louis St. Laurent",
+      "Arthur Meighen"
+     ],
+     "level": 1,
+     "why": "He is Canada's longest-serving Prime Minister."
+    },
+    {
+     "q": "Who was the first French-Canadian Prime Minister?",
+     "a": "Wilfrid Laurier",
+     "wrong": [
+      "Louis St. Laurent",
+      "Pierre Trudeau",
+      "George-Étienne Cartier"
+     ],
+     "level": 1,
+     "why": "He is on the $5 note."
+    },
+    {
+     "q": "Who is on Canada's $20 note?",
+     "a": "The monarch",
+     "wrong": [
+      "John A. Macdonald",
+      "Wilfrid Laurier",
+      "Viola Desmond"
+     ],
+     "level": 1,
+     "why": "King Charles III's image is planned to replace Queen Elizabeth II's."
+    },
+    {
+     "q": "Which civil rights pioneer is on Canada's $10 note?",
+     "a": "Viola Desmond",
+     "wrong": [
+      "Harriet Tubman",
+      "Nellie McClung",
+      "Emily Murphy"
+     ],
+     "level": 1,
+     "why": "She refused to leave a whites-only cinema section in 1946."
+    },
+    {
+     "q": "Which group of women won the 1929 'Persons Case'?",
+     "a": "The Famous Five",
+     "wrong": [
+      "The Suffragettes",
+      "The Valiant Six",
+      "The Persons Four"
+     ],
+     "level": 1,
+     "why": "Women were declared 'persons' who could sit in the Senate."
+    },
+    {
+     "q": "Which Manitoba campaigner helped win votes for women in 1916?",
+     "a": "Nellie McClung",
+     "wrong": [
+      "Emily Murphy",
+      "Agnes Macphail",
+      "Viola Desmond"
+     ],
+     "level": 1,
+     "why": "Manitoba was the first province to let women vote."
+    },
+    {
+     "q": "Who was the first woman elected to Canada's House of Commons?",
+     "a": "Agnes Macphail",
+     "wrong": [
+      "Nellie McClung",
+      "Kim Campbell",
+      "Emily Murphy"
+     ],
+     "level": 1,
+     "why": "She was elected in 1921."
+    },
+    {
+     "q": "Which province held independence referendums in 1980 and 1995?",
+     "a": "Quebec",
+     "wrong": [
+      "Alberta",
+      "Newfoundland",
+      "British Columbia"
+     ],
+     "level": 1,
+     "why": "The 1995 vote was lost by about one percent."
+    },
+    {
+     "q": "Which 1970 events saw kidnappings by a Quebec separatist group?",
+     "a": "October Crisis",
+     "wrong": [
+      "Quiet Revolution",
+      "Oka Crisis",
+      "Conscription Crisis"
+     ],
+     "level": 1,
+     "why": "The War Measures Act was used."
+    },
+    {
+     "q": "Which separatist group carried out the 1970 kidnappings?",
+     "a": "Front de libération du Québec (FLQ)",
+     "wrong": [
+      "Parti Québécois",
+      "Bloc Québécois",
+      "Patriotes"
+     ],
+     "level": 1,
+     "why": "It kidnapped a British diplomat and a minister."
+    },
+    {
+     "q": "Which 1960s period of change in Quebec reduced the Church's power?",
+     "a": "Quiet Revolution",
+     "wrong": [
+      "October Crisis",
+      "Patriote Rebellion",
+      "Great Darkness"
+     ],
+     "level": 1,
+     "why": "Jean Lesage's government led it."
+    },
+    {
+     "q": "What was the period of strict conservative rule in Quebec under Duplessis called?",
+     "a": "The Great Darkness",
+     "wrong": [
+      "The Quiet Revolution",
+      "The Long Winter",
+      "The Silent Years"
+     ],
+     "level": 1,
+     "why": "It ended with his death in 1959."
+    },
+    {
+     "q": "What is the name of the area in Ottawa where Parliament stands?",
+     "a": "Parliament Hill",
+     "wrong": [
+      "Capitol Hill",
+      "Byward Hill",
+      "Rideau Heights"
+     ],
+     "level": 1,
+     "why": "Its Peace Tower has a carillon."
+    },
+    {
+     "q": "Which tower is the clock tower of Canada's Parliament?",
+     "a": "Peace Tower",
+     "wrong": [
+      "Victoria Tower",
+      "Elizabeth Tower",
+      "CN Tower"
+     ],
+     "level": 1,
+     "why": "It honours soldiers of the First World War."
+    },
+    {
+     "q": "Which body is Canada's highest court?",
+     "a": "Supreme Court of Canada",
+     "wrong": [
+      "Federal Court of Appeal",
+      "Privy Council",
+      "Court of Queen's Bench"
+     ],
+     "level": 1,
+     "why": "It sits in Ottawa."
+    },
+    {
+     "q": "How many judges sit on the Supreme Court of Canada?",
+     "a": "Nine",
+     "wrong": [
+      "Seven",
+      "Twelve",
+      "Five"
+     ],
+     "level": 1,
+     "why": "Three must come from Quebec."
+    },
+    {
+     "q": "Which Prime Minister served only 79 days in 1984?",
+     "a": "John Turner",
+     "wrong": [
+      "Kim Campbell",
+      "Joe Clark",
+      "Charles Tupper"
+     ],
+     "level": 2,
+     "why": "He lost the election to Brian Mulroney."
+    },
+    {
+     "q": "Which Prime Minister served the shortest time, 69 days in 1896?",
+     "a": "Charles Tupper",
+     "wrong": [
+      "John Turner",
+      "Kim Campbell",
+      "Mackenzie Bowell"
+     ],
+     "level": 2,
+     "why": "He was also a Father of Confederation."
+    },
+    {
+     "q": "Which Progressive Conservative Prime Minister came from Saskatchewan and championed a Bill of Rights?",
+     "a": "John Diefenbaker",
+     "wrong": [
+      "Joe Clark",
+      "Brian Mulroney",
+      "Arthur Meighen"
+     ],
+     "level": 2,
+     "why": "The Canadian Bill of Rights passed in 1960."
+    },
+    {
+     "q": "Which Prime Minister was the youngest when first elected, in 1979?",
+     "a": "Joe Clark",
+     "wrong": [
+      "Justin Trudeau",
+      "Brian Mulroney",
+      "Pierre Trudeau"
+     ],
+     "level": 2,
+     "why": "He was 39."
+    },
+    {
+     "q": "Which Prime Minister's 1957 speech helped create UN peacekeeping?",
+     "a": "Lester B. Pearson",
+     "wrong": [
+      "Louis St. Laurent",
+      "John Diefenbaker",
+      "Mackenzie King"
+     ],
+     "level": 2,
+     "why": "He won the Nobel Peace Prize for it."
+    },
+    {
+     "q": "Which failed 1987 agreement would have called Quebec a 'distinct society'?",
+     "a": "Meech Lake Accord",
+     "wrong": [
+      "Charlottetown Accord",
+      "Victoria Charter",
+      "Clarity Act"
+     ],
+     "level": 2,
+     "why": "It died in 1990."
+    },
+    {
+     "q": "Which 1992 constitutional deal was rejected in a national referendum?",
+     "a": "Charlottetown Accord",
+     "wrong": [
+      "Meech Lake Accord",
+      "Kelowna Accord",
+      "Victoria Charter"
+     ],
+     "level": 2,
+     "why": "It was voted down 54% to 46%."
+    },
+    {
+     "q": "Which Manitoba MLA blocked the Meech Lake Accord with an eagle feather?",
+     "a": "Elijah Harper",
+     "wrong": [
+      "Phil Fontaine",
+      "Ovide Mercredi",
+      "Louis Riel"
+     ],
+     "level": 2,
+     "why": "He was a Cree politician."
+    },
+    {
+     "q": "Which law of 2000 set rules for any future Quebec secession vote?",
+     "a": "Clarity Act",
+     "wrong": [
+      "Constitution Act",
+      "Meech Lake Accord",
+      "Official Languages Act"
+     ],
+     "level": 2,
+     "why": "It followed a Supreme Court reference."
+    },
+    {
+     "q": "Which 1990 standoff in Quebec involved Mohawk land at a golf course?",
+     "a": "Oka Crisis",
+     "wrong": [
+      "October Crisis",
+      "Ipperwash Crisis",
+      "Caledonia dispute"
+     ],
+     "level": 2,
+     "why": "It lasted 78 days."
+    },
+    {
+     "q": "Which commission reported on residential schools in 2015?",
+     "a": "Truth and Reconciliation Commission",
+     "wrong": [
+      "Royal Commission on Aboriginal Peoples",
+      "Indian Act Commission",
+      "Berger Inquiry"
+     ],
+     "level": 2,
+     "why": "It made 94 calls to action."
+    },
+    {
+     "q": "Which law has governed First Nations since 1876?",
+     "a": "Indian Act",
+     "wrong": [
+      "Constitution Act",
+      "Treaty Act",
+      "Royal Proclamation"
+     ],
+     "level": 2,
+     "why": "It has been changed many times."
+    },
+    {
+     "q": "Which 1763 document recognised Indigenous land rights?",
+     "a": "Royal Proclamation of 1763",
+     "wrong": [
+      "Quebec Act",
+      "Treaty of Paris",
+      "Constitution Act"
+     ],
+     "level": 2,
+     "why": "It is called the 'Indian Magna Carta'."
+    },
+    {
+     "q": "Which section of the 1982 Constitution protects Aboriginal and treaty rights?",
+     "a": "Section 35",
+     "wrong": [
+      "Section 33",
+      "Section 91",
+      "Section 1"
+     ],
+     "level": 2,
+     "why": "It recognises existing rights."
+    },
+    {
+     "q": "Which section lets governments override some Charter rights?",
+     "a": "Notwithstanding clause (section 33)",
+     "wrong": [
+      "Section 35",
+      "Section 1",
+      "Section 91"
+     ],
+     "level": 2,
+     "why": "Quebec has used it often."
+    },
+    {
+     "q": "Which 1988 deal created free trade between Canada and the US?",
+     "a": "Canada–United States Free Trade Agreement",
+     "wrong": [
+      "NAFTA",
+      "CUSMA",
+      "Auto Pact"
+     ],
+     "level": 2,
+     "why": "It was the main issue of the 1988 election."
+    },
+    {
+     "q": "Which trade deal replaced NAFTA in 2020?",
+     "a": "CUSMA (USMCA)",
+     "wrong": [
+      "CETA",
+      "TPP",
+      "Auto Pact"
+     ],
+     "level": 2,
+     "why": "Canada calls it CUSMA."
+    },
+    {
+     "q": "Which 1965 trade deal made cars move freely between Canada and the US?",
+     "a": "Auto Pact",
+     "wrong": [
+      "NAFTA",
+      "CUSMA",
+      "Free Trade Agreement"
+     ],
+     "level": 2,
+     "why": "It helped Ontario's car industry."
+    },
+    {
+     "q": "Which tax did Brian Mulroney introduce in 1991?",
+     "a": "Goods and Services Tax (GST)",
+     "wrong": [
+      "Harmonized Sales Tax",
+      "Income tax",
+      "Carbon tax"
+     ],
+     "level": 2,
+     "why": "It was very unpopular."
+    },
+    {
+     "q": "Which 2005 law made Canada the fourth country to allow same-sex marriage?",
+     "a": "Civil Marriage Act",
+     "wrong": [
+      "Charter Amendment Act",
+      "Equality Act",
+      "Family Act"
+     ],
+     "level": 2,
+     "why": "Paul Martin's government passed it."
+    },
+    {
+     "q": "In which year did Canada legalise recreational cannabis?",
+     "a": "2018",
+     "wrong": [
+      "2015",
+      "2020",
+      "2013"
+     ],
+     "level": 2,
+     "why": "It was the second country to do so nationally."
+    },
+    {
+     "q": "Which Prime Minister apologised in 2008 for residential schools?",
+     "a": "Stephen Harper",
+     "wrong": [
+      "Justin Trudeau",
+      "Paul Martin",
+      "Jean Chrétien"
+     ],
+     "level": 2,
+     "why": "He spoke in the House of Commons."
+    },
+    {
+     "q": "Which political party did Preston Manning found in 1987?",
+     "a": "Reform Party",
+     "wrong": [
+      "Canadian Alliance",
+      "Bloc Québécois",
+      "Progressive Conservative Party"
+     ],
+     "level": 2,
+     "why": "It was strongest in the West."
+    },
+    {
+     "q": "Which party did Pierre Poilievre lead in the 2025 election?",
+     "a": "Conservative Party",
+     "wrong": [
+      "Liberal Party",
+      "New Democratic Party",
+      "People's Party"
+     ],
+     "level": 2,
+     "why": "He lost his own seat in that election."
+    },
+    {
+     "q": "Which party leader became the first person of colour to lead a major federal party?",
+     "a": "Jagmeet Singh",
+     "wrong": [
+      "Ujjal Dosanjh",
+      "Olivia Chow",
+      "Navdeep Bains"
+     ],
+     "level": 2,
+     "why": "He led the NDP from 2017 to 2025."
+    },
+    {
+     "q": "Who was Canada's first Inuk Governor General?",
+     "a": "Mary Simon",
+     "wrong": [
+      "Adrienne Clarkson",
+      "Michaëlle Jean",
+      "Julie Payette"
+     ],
+     "level": 2,
+     "why": "She took office in 2021."
+    },
+    {
+     "q": "Which Governor General was born in Hong Kong and came to Canada as a refugee?",
+     "a": "Adrienne Clarkson",
+     "wrong": [
+      "Michaëlle Jean",
+      "Mary Simon",
+      "Julie Payette"
+     ],
+     "level": 2,
+     "why": "She served from 1999 to 2005."
+    },
+    {
+     "q": "Which Governor General was a former astronaut?",
+     "a": "Julie Payette",
+     "wrong": [
+      "Mary Simon",
+      "Michaëlle Jean",
+      "Adrienne Clarkson"
+     ],
+     "level": 2,
+     "why": "She served from 2017 to 2021."
+    },
+    {
+     "q": "Which Haitian-born journalist became Governor General in 2005?",
+     "a": "Michaëlle Jean",
+     "wrong": [
+      "Adrienne Clarkson",
+      "Mary Simon",
+      "Julie Payette"
+     ],
+     "level": 2,
+     "why": "She later led the Francophonie."
+    },
+    {
+     "q": "Which Canadian province has no provincial sales tax?",
+     "a": "Alberta",
+     "wrong": [
+      "Ontario",
+      "Manitoba",
+      "Nova Scotia"
+     ],
+     "level": 2,
+     "why": "It charges only the federal GST."
+    },
+    {
+     "q": "Which Canadian province has a unicameral legislature called the National Assembly?",
+     "a": "Quebec",
+     "wrong": [
+      "Ontario",
+      "Manitoba",
+      "New Brunswick"
+     ],
+     "level": 2,
+     "why": "Its members are called MNAs."
+    },
+    {
+     "q": "Which is Canada's only officially bilingual province?",
+     "a": "New Brunswick",
+     "wrong": [
+      "Quebec",
+      "Ontario",
+      "Manitoba"
+     ],
+     "level": 2,
+     "why": "About a third of its people speak French."
+    },
+    {
+     "q": "Which Father of Confederation was assassinated in 1868?",
+     "a": "Thomas D'Arcy McGee",
+     "wrong": [
+      "George Brown",
+      "George-Étienne Cartier",
+      "Alexander Galt"
+     ],
+     "level": 3,
+     "why": "He was shot in Ottawa."
+    },
+    {
+     "q": "Which Toronto newspaper editor helped forge Confederation?",
+     "a": "George Brown",
+     "wrong": [
+      "Thomas D'Arcy McGee",
+      "Joseph Howe",
+      "William Lyon Mackenzie"
+     ],
+     "level": 3,
+     "why": "He founded The Globe."
+    },
+    {
+     "q": "Which Quebec leader partnered with John A. Macdonald for Confederation?",
+     "a": "George-Étienne Cartier",
+     "wrong": [
+      "Wilfrid Laurier",
+      "Louis-Joseph Papineau",
+      "Honoré Mercier"
+     ],
+     "level": 3,
+     "why": "He brought Quebec into the deal."
+    },
+    {
+     "q": "Which 1864 conference first discussed Confederation?",
+     "a": "Charlottetown Conference",
+     "wrong": [
+      "Quebec Conference",
+      "London Conference",
+      "Halifax Conference"
+     ],
+     "level": 3,
+     "why": "It was meant to discuss Maritime union."
+    },
+    {
+     "q": "Which scandal brought down John A. Macdonald's government in 1873?",
+     "a": "Pacific Scandal",
+     "wrong": [
+      "King–Byng Affair",
+      "Sponsorship scandal",
+      "Beauharnois scandal"
+     ],
+     "level": 3,
+     "why": "It involved railway money."
+    },
+    {
+     "q": "Which 1926 dispute saw a Governor General refuse a Prime Minister's request?",
+     "a": "King–Byng Affair",
+     "wrong": [
+      "Pacific Scandal",
+      "Persons Case",
+      "Conscription Crisis"
+     ],
+     "level": 3,
+     "why": "Lord Byng refused to dissolve Parliament."
+    },
+    {
+     "q": "Which scandal of the early 2000s involved Quebec advertising contracts?",
+     "a": "Sponsorship scandal",
+     "wrong": [
+      "Pacific Scandal",
+      "SNC-Lavalin affair",
+      "Airbus affair"
+     ],
+     "level": 3,
+     "why": "The Gomery Commission investigated it."
+    },
+    {
+     "q": "Which 2019 affair involved pressure on the Attorney General over a prosecution?",
+     "a": "SNC-Lavalin affair",
+     "wrong": [
+      "Sponsorship scandal",
+      "WE Charity scandal",
+      "Aga Khan affair"
+     ],
+     "level": 3,
+     "why": "Jody Wilson-Raybould resigned."
+    },
+    {
+     "q": "Who was the first Indigenous Minister of Justice?",
+     "a": "Jody Wilson-Raybould",
+     "wrong": [
+      "Mary Simon",
+      "Carolyn Bennett",
+      "Leona Aglukkaq"
+     ],
+     "level": 3,
+     "why": "She is from the We Wai Kai Nation."
+    },
+    {
+     "q": "Which 1942 vote asked Canadians to release the government from its promise on conscription?",
+     "a": "Conscription plebiscite",
+     "wrong": [
+      "Charlottetown referendum",
+      "Prohibition plebiscite",
+      "Quebec referendum"
+     ],
+     "level": 3,
+     "why": "Quebec voted strongly against."
+    },
+    {
+     "q": "Which 1917 crisis split English and French Canada over the draft?",
+     "a": "Conscription Crisis",
+     "wrong": [
+      "October Crisis",
+      "Manitoba Schools Question",
+      "Quiet Revolution"
+     ],
+     "level": 3,
+     "why": "Robert Borden's government brought in conscription."
+    },
+    {
+     "q": "Which court in London was Canada's final court of appeal until 1949?",
+     "a": "Judicial Committee of the Privy Council",
+     "wrong": [
+      "House of Lords",
+      "High Court of Justice",
+      "Court of King's Bench"
+     ],
+     "level": 3,
+     "why": "The Supreme Court of Canada then became final."
+    },
+    {
+     "q": "Which section of the Constitution lists federal powers?",
+     "a": "Section 91",
+     "wrong": [
+      "Section 92",
+      "Section 33",
+      "Section 35"
+     ],
+     "level": 3,
+     "why": "Section 92 lists provincial powers."
+    },
+    {
+     "q": "Which tax charged Chinese immigrants entering Canada from 1885?",
+     "a": "Chinese head tax",
+     "wrong": [
+      "Exclusion fee",
+      "Landing duty",
+      "Pacific levy"
+     ],
+     "level": 3,
+     "why": "It rose to $500 by 1903."
+    },
+    {
+     "q": "Which ship carrying Sikh passengers was turned away from Vancouver in 1914?",
+     "a": "Komagata Maru",
+     "wrong": [
+      "St. Louis",
+      "Empress of Ireland",
+      "Hector"
+     ],
+     "level": 3,
+     "why": "Canada apologised in 2016."
+    },
+    {
+     "q": "Which 2005 Kelowna deal on Indigenous funding was later cancelled?",
+     "a": "Kelowna Accord",
+     "wrong": [
+      "Charlottetown Accord",
+      "Meech Lake Accord",
+      "Calder decision"
+     ],
+     "level": 3,
+     "why": "The new Conservative government dropped it."
+    },
+    {
+     "q": "Which 1973 court case first recognised Aboriginal title in Canada?",
+     "a": "Calder case",
+     "wrong": [
+      "Delgamuukw case",
+      "Sparrow case",
+      "Tsilhqot'in case"
+     ],
+     "level": 3,
+     "why": "It involved the Nisga'a Nation."
+    },
+    {
+     "q": "Which 2014 Supreme Court case granted Aboriginal title to a specific territory?",
+     "a": "Tsilhqot'in Nation v. British Columbia",
+     "wrong": [
+      "Calder case",
+      "Delgamuukw case",
+      "Haida Nation case"
+     ],
+     "level": 3,
+     "why": "It was the first such ruling."
     }
    ]
   },
@@ -1054,17 +2781,6 @@
       "5"
      ],
      "why": "Yukon, the Northwest Territories and Nunavut."
-    },
-    {
-     "level": 2,
-     "q": "Who represents the monarch in Canada?",
-     "a": "The Governor General",
-     "wrong": [
-      "The Prime Minister",
-      "The Chief Justice",
-      "The Speaker of the Senate"
-     ],
-     "why": "The Governor General lives at Rideau Hall."
     },
     {
      "level": 2,
