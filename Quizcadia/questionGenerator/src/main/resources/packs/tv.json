@@ -1,0 +1,346 @@
+{
+ "category": "Tuvalu",
+ "country": "TV",
+ "topics": [
+  {
+   "name": "Tuvalu: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Tuvalu?",
+     "a": "Funafuti",
+     "wrong": [
+      "Nukulaelae",
+      "Vaitupu",
+      "Nanumea"
+     ],
+     "why": "It is an atoll."
+    },
+    {
+     "level": 1,
+     "q": "What was Tuvalu called as a British colony?",
+     "a": "Ellice Islands",
+     "wrong": [
+      "Gilbert Islands",
+      "Phoenix Islands",
+      "Line Islands"
+     ],
+     "why": "It split from the Gilbert Islands in 1975."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Tuvalu become independent?",
+     "a": "1978",
+     "wrong": [
+      "1968",
+      "1988",
+      "1998"
+     ],
+     "why": "It is in the Commonwealth."
+    },
+    {
+     "level": 1,
+     "q": "Which currency does Tuvalu use?",
+     "a": "Australian dollar",
+     "wrong": [
+      "Tuvaluan pound",
+      "New Zealand dollar",
+      "Tala"
+     ],
+     "why": "It also issues its own coins."
+    },
+    {
+     "level": 1,
+     "q": "Which threat could make Tuvalu one of the first countries to disappear?",
+     "a": "Rising sea levels",
+     "wrong": [
+      "Earthquakes",
+      "Volcanoes",
+      "Desertification"
+     ],
+     "why": "Its highest point is about 4.6 m above sea."
+    },
+    {
+     "level": 1,
+     "q": "How many islands make up Tuvalu?",
+     "a": "Nine",
+     "wrong": [
+      "Three",
+      "Twenty",
+      "Fifty"
+     ],
+     "why": "'Tuvalu' means 'eight standing together'."
+    },
+    {
+     "level": 1,
+     "q": "Which country lets Tuvaluans move there under a 2023 treaty?",
+     "a": "Australia",
+     "wrong": [
+      "New Zealand",
+      "Fiji",
+      "Japan"
+     ],
+     "why": "It offers residency for climate reasons."
+    },
+    {
+     "level": 2,
+     "q": "Which internet domain earns Tuvalu big money?",
+     "a": ".tv",
+     "wrong": [
+      ".tu",
+      ".tl",
+      ".vu"
+     ],
+     "why": "TV companies use it."
+    },
+    {
+     "level": 2,
+     "q": "Which foreign minister gave a 2021 climate speech standing knee-deep in the sea?",
+     "a": "Simon Kofe",
+     "wrong": [
+      "Enele Sopoaga",
+      "Kausea Natano",
+      "Feleti Teo"
+     ],
+     "why": "It was filmed for COP26."
+    },
+    {
+     "level": 2,
+     "q": "Which ocean is Tuvalu in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It lies between Hawaii and Australia."
+    },
+    {
+     "level": 2,
+     "q": "Who became Prime Minister of Tuvalu in 2024?",
+     "a": "Feleti Teo",
+     "wrong": [
+      "Kausea Natano",
+      "Enele Sopoaga",
+      "Simon Kofe"
+     ],
+     "why": "He had been a Pacific fisheries official."
+    },
+    {
+     "level": 2,
+     "q": "What is Tuvalu's population roughly?",
+     "a": "About 11,000",
+     "wrong": [
+      "About 1,000",
+      "About 100,000",
+      "About 1 million"
+     ],
+     "why": "It is one of the least populous countries."
+    },
+    {
+     "level": 3,
+     "q": "Which wartime airstrip was built on Funafuti by US forces in 1943?",
+     "a": "Funafuti airfield",
+     "wrong": [
+      "Henderson Field",
+      "Bonriki Airport",
+      "Hickam Field"
+     ],
+     "why": "It is still the only runway."
+    },
+    {
+     "level": 3,
+     "q": "Which country does Tuvalu officially recognise instead of China?",
+     "a": "Taiwan",
+     "wrong": [
+      "Japan",
+      "South Korea",
+      "Singapore"
+     ],
+     "why": "It is one of few countries to do so."
+    },
+    {
+     "level": 3,
+     "q": "Which Tuvaluan plan is creating a 'digital nation' to save its culture?",
+     "a": "Future Now Project",
+     "wrong": [
+      "Tuvalu Online",
+      "Pacific Cloud",
+      "Island Archive"
+     ],
+     "why": "It would copy the islands into the metaverse."
+    }
+   ]
+  },
+  {
+   "name": "Tuvalu: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which lagoon conservation area protects Funafuti's wildlife?",
+     "a": "Funafuti Conservation Area",
+     "wrong": [
+      "Rainbow Reef",
+      "Marovo Lagoon",
+      "Ironbottom Sound"
+     ],
+     "why": "It covers part of the lagoon."
+    },
+    {
+     "level": 1,
+     "q": "Which traditional dance is performed in Tuvalu?",
+     "a": "Fatele",
+     "wrong": [
+      "Haka",
+      "Siva afi",
+      "Hula"
+     ],
+     "why": "It speeds up as it goes."
+    },
+    {
+     "level": 1,
+     "q": "Which root crop is grown in pits on Tuvalu?",
+     "a": "Pulaka (swamp taro)",
+     "wrong": [
+      "Potato",
+      "Cassava",
+      "Yam"
+     ],
+     "why": "Salty water threatens the pits."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is popular on the runway when no planes are due?",
+     "a": "Football and volleyball",
+     "wrong": [
+      "Ice hockey",
+      "Skiing",
+      "Golf"
+     ],
+     "why": "The airstrip is the biggest open space."
+    },
+    {
+     "level": 1,
+     "q": "What are Tuvalu's islands made of?",
+     "a": "Coral atolls and reef islands",
+     "wrong": [
+      "Volcanic rock",
+      "Granite",
+      "Limestone cliffs"
+     ],
+     "why": "They are very low."
+    },
+    {
+     "level": 1,
+     "q": "Which fruit tree is used for food, rope and building?",
+     "a": "Coconut palm",
+     "wrong": [
+      "Banana",
+      "Mango",
+      "Breadfruit"
+     ],
+     "why": "It is called the 'tree of life'."
+    },
+    {
+     "level": 1,
+     "q": "Which language is spoken in Tuvalu besides English?",
+     "a": "Tuvaluan",
+     "wrong": [
+      "Samoan",
+      "Fijian",
+      "Gilbertese"
+     ],
+     "why": "It is a Polynesian language."
+    },
+    {
+     "level": 2,
+     "q": "Which meeting house is the centre of island life?",
+     "a": "Maneapa",
+     "wrong": [
+      "Fale",
+      "Bure",
+      "Marae"
+     ],
+     "why": "Meetings and dances happen there."
+    },
+    {
+     "level": 2,
+     "q": "Which sport has Tuvalu competed in at every Olympics since 2008?",
+     "a": "Athletics",
+     "wrong": [
+      "Swimming",
+      "Judo",
+      "Boxing"
+     ],
+     "why": "It sends a sprinter."
+    },
+    {
+     "level": 2,
+     "q": "Which annual stamp sales once supported Tuvalu?",
+     "a": "Collectors' stamps",
+     "wrong": [
+      "Gold coins",
+      "Timber",
+      "Oil"
+     ],
+     "why": "Now fishing licences and .tv bring money."
+    },
+    {
+     "level": 2,
+     "q": "Which national holiday on 1 October marks independence?",
+     "a": "Independence Day",
+     "wrong": [
+      "Te Aso Fiafia",
+      "Gospel Day",
+      "Children's Day"
+     ],
+     "why": "There are canoe races."
+    },
+    {
+     "level": 2,
+     "q": "Which island is the largest by land area?",
+     "a": "Vaitupu",
+     "wrong": [
+      "Funafuti",
+      "Nanumea",
+      "Nui"
+     ],
+     "why": "It has the main secondary school."
+    },
+    {
+     "level": 3,
+     "q": "What does the country's motto 'Tuvalu mo te Atua' mean?",
+     "a": "Tuvalu for the Almighty",
+     "wrong": [
+      "Tuvalu forever",
+      "Island of hope",
+      "Unity in the sea"
+     ],
+     "why": "It shows the role of Christianity."
+    },
+    {
+     "level": 3,
+     "q": "Which Tuvaluan atoll is the northernmost?",
+     "a": "Nanumea",
+     "wrong": [
+      "Funafuti",
+      "Nukulaelae",
+      "Niulakita"
+     ],
+     "why": "It has a large church."
+    },
+    {
+     "level": 3,
+     "q": "Which reef island near Funafuti is home to many seabirds?",
+     "a": "Tepuka",
+     "wrong": [
+      "Fongafale",
+      "Fuafatu",
+      "Amatuku"
+     ],
+     "why": "It is in the conservation area."
+    }
+   ]
+  }
+ ]
+}

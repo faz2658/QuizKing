@@ -1,0 +1,346 @@
+{
+ "category": "Tonga",
+ "country": "TO",
+ "topics": [
+  {
+   "name": "Tonga: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Tonga?",
+     "a": "Nuku'alofa",
+     "wrong": [
+      "Neiafu",
+      "Pangai",
+      "Ohonua"
+     ],
+     "why": "It is on Tongatapu."
+    },
+    {
+     "level": 1,
+     "q": "What kind of government does Tonga have?",
+     "a": "Constitutional monarchy",
+     "wrong": [
+      "Republic",
+      "Military rule",
+      "Absolute monarchy"
+     ],
+     "why": "It is the only kingdom in the Pacific."
+    },
+    {
+     "level": 1,
+     "q": "What is Tonga's currency?",
+     "a": "Pa'anga",
+     "wrong": [
+      "Tala",
+      "Vatu",
+      "Kina"
+     ],
+     "why": "Its code is TOP."
+    },
+    {
+     "level": 1,
+     "q": "What did Captain Cook call Tonga?",
+     "a": "The Friendly Islands",
+     "wrong": [
+      "The Spice Islands",
+      "The Lost Isles",
+      "The Treasure Islands"
+     ],
+     "why": "He was welcomed there."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is Tonga in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It has about 170 islands."
+    },
+    {
+     "level": 1,
+     "q": "Who has been King of Tonga since 2012?",
+     "a": "Tupou VI",
+     "wrong": [
+      "George Tupou V",
+      "Taufa'ahau Tupou IV",
+      "Queen Salote"
+     ],
+     "why": "He was formerly Prime Minister."
+    },
+    {
+     "level": 1,
+     "q": "Which 2022 volcanic eruption caused a Pacific-wide tsunami?",
+     "a": "Hunga Tonga–Hunga Ha'apai",
+     "wrong": [
+      "Mount Pinatubo",
+      "Krakatoa",
+      "Tavurvur"
+     ],
+     "why": "It was the largest eruption this century."
+    },
+    {
+     "level": 2,
+     "q": "Which country is the only Pacific nation never colonised?",
+     "a": "Tonga",
+     "wrong": [
+      "Samoa",
+      "Fiji",
+      "Vanuatu"
+     ],
+     "why": "It was a British protected state but kept its monarchy."
+    },
+    {
+     "level": 2,
+     "q": "Which queen charmed crowds at Elizabeth II's 1953 coronation?",
+     "a": "Queen Salote Tupou III",
+     "wrong": [
+      "Queen Liliuokalani",
+      "Queen Pomare IV",
+      "Queen Victoria"
+     ],
+     "why": "She rode in an open carriage in the rain."
+    },
+    {
+     "level": 2,
+     "q": "Which king united Tonga and created its constitution in 1875?",
+     "a": "George Tupou I",
+     "wrong": [
+      "Tupou VI",
+      "George Tupou V",
+      "Taufa'ahau Tupou IV"
+     ],
+     "why": "He founded the modern kingdom."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Tonga join the Commonwealth as fully independent?",
+     "a": "1970",
+     "wrong": [
+      "1900",
+      "1945",
+      "1980"
+     ],
+     "why": "It had been a protected state since 1900."
+    },
+    {
+     "level": 2,
+     "q": "Which riots damaged Nuku'alofa in 2006?",
+     "a": "Pro-democracy riots",
+     "wrong": [
+      "Food riots",
+      "Rugby riots",
+      "Election celebrations"
+     ],
+     "why": "Much of the town centre burned."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient stone trilithon stands on Tongatapu?",
+     "a": "Ha'amonga 'a Maui",
+     "wrong": [
+      "Stonehenge",
+      "Moai",
+      "Nan Madol"
+     ],
+     "why": "It was built around 1200."
+    },
+    {
+     "level": 3,
+     "q": "Which Tongan king was listed as the world's heaviest monarch?",
+     "a": "Taufa'ahau Tupou IV",
+     "wrong": [
+      "George Tupou V",
+      "Tupou VI",
+      "George Tupou I"
+     ],
+     "why": "He later lost a lot of weight."
+    },
+    {
+     "level": 3,
+     "q": "Which empire did Tonga's rulers lead across the Pacific in the Middle Ages?",
+     "a": "Tu'i Tonga Empire",
+     "wrong": [
+      "Polynesian Empire",
+      "Samoan Empire",
+      "Fiji Kingdom"
+     ],
+     "why": "It reached Samoa and Fiji."
+    }
+   ]
+  },
+  {
+   "name": "Tonga: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which sport is Tonga's most popular?",
+     "a": "Rugby union",
+     "wrong": [
+      "Football",
+      "Cricket",
+      "Baseball"
+     ],
+     "why": "The team performs the Sipi Tau war dance."
+    },
+    {
+     "level": 1,
+     "q": "Which whales can tourists swim with in Tonga?",
+     "a": "Humpback whales",
+     "wrong": [
+      "Blue whales",
+      "Orcas",
+      "Belugas"
+     ],
+     "why": "They breed there from July to October."
+    },
+    {
+     "level": 1,
+     "q": "Which Tongan flag-bearer became famous for wearing oil at the Olympics?",
+     "a": "Pita Taufatofua",
+     "wrong": [
+      "Sione Vailahi",
+      "Ata Maama Tuutafaiva",
+      "Malia Paseka"
+     ],
+     "why": "He competed in taekwondo, skiing and canoeing."
+    },
+    {
+     "level": 1,
+     "q": "Which bark cloth is a Tongan craft?",
+     "a": "Ngatu (tapa cloth)",
+     "wrong": [
+      "Kente",
+      "Batik",
+      "Lavalava"
+     ],
+     "why": "It is given at weddings and funerals."
+    },
+    {
+     "level": 1,
+     "q": "Which Sunday rule is strict in Tonga?",
+     "a": "Work and trade are banned by the constitution",
+     "wrong": [
+      "Only fishing is allowed",
+      "Shops open all night",
+      "No church allowed"
+     ],
+     "why": "Even flights are limited."
+    },
+    {
+     "level": 1,
+     "q": "Which island group in the north is a sailing paradise?",
+     "a": "Vava'u",
+     "wrong": [
+      "Ha'apai",
+      "Tongatapu",
+      "'Eua"
+     ],
+     "why": "It has a sheltered harbour."
+    },
+    {
+     "level": 1,
+     "q": "Which earth oven is used for feasts in Tonga?",
+     "a": "'Umu",
+     "wrong": [
+      "Lovo",
+      "Mumu",
+      "Hangi"
+     ],
+     "why": "Pigs are roasted whole."
+    },
+    {
+     "level": 2,
+     "q": "Which blowholes on Tongatapu shoot water high into the air?",
+     "a": "Mapu'a 'a Vaea",
+     "wrong": [
+      "Alofaaga",
+      "Kiama",
+      "Spouting Horn"
+     ],
+     "why": "There are hundreds along the coast."
+    },
+    {
+     "level": 2,
+     "q": "Which dance with graceful hand movements is performed by women?",
+     "a": "Tau'olunga",
+     "wrong": [
+      "Haka",
+      "Siva afi",
+      "Hula"
+     ],
+     "why": "Dancers' skin is oiled."
+    },
+    {
+     "level": 2,
+     "q": "Which royal palace in Nuku'alofa is made of wood?",
+     "a": "Royal Palace of Tonga",
+     "wrong": [
+      "Iolani Palace",
+      "Buckingham Palace",
+      "Government House"
+     ],
+     "why": "It was built in New Zealand in 1867."
+    },
+    {
+     "level": 2,
+     "q": "Which island is the oldest and highest in Tonga?",
+     "a": "'Eua",
+     "wrong": [
+      "Tongatapu",
+      "Vava'u",
+      "Tofua"
+     ],
+     "why": "It has rainforest and cliffs."
+    },
+    {
+     "level": 2,
+     "q": "Which Tongan raw fish dish is popular?",
+     "a": "'Ota 'ika",
+     "wrong": [
+      "Kokoda",
+      "Poke",
+      "Ceviche"
+     ],
+     "why": "It is marinated in lime and coconut."
+    },
+    {
+     "level": 3,
+     "q": "Which flying fox bats are sacred in a Tongan village?",
+     "a": "Bats of Kolovai",
+     "wrong": [
+      "Bats of Kolonga",
+      "Bats of Mu'a",
+      "Bats of Neiafu"
+     ],
+     "why": "Only royals may hunt them."
+    },
+    {
+     "level": 3,
+     "q": "Which tombs of the old kings are in Mu'a?",
+     "a": "Langi (royal tombs)",
+     "wrong": [
+      "Marae",
+      "Moai",
+      "Heiau"
+     ],
+     "why": "They are stepped stone platforms."
+    },
+    {
+     "level": 3,
+     "q": "Which volcano island in Ha'apai has a crater lake?",
+     "a": "Tofua",
+     "wrong": [
+      "'Eua",
+      "Kao",
+      "Tongatapu"
+     ],
+     "why": "The Bounty mutiny took place nearby."
+    }
+   ]
+  }
+ ]
+}
