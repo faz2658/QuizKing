@@ -3,19 +3,9 @@
  "country": "CD",
  "topics": [
   {
-   "name": "DR Congo: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of the Democratic Republic of the Congo?",
-     "a": "Kinshasa",
-     "wrong": [
-      "Lubumbashi",
-      "Brazzaville",
-      "Goma"
-     ],
-     "why": "It is Africa's largest French-speaking city."
-    },
     {
      "level": 1,
      "q": "Which European king owned the Congo as his personal property?",
@@ -61,28 +51,6 @@
      "why": "It became the DR Congo again in 1997."
     },
     {
-     "level": 1,
-     "q": "What is the currency of the DR Congo?",
-     "a": "Congolese franc",
-     "wrong": [
-      "CFA franc",
-      "Zaire",
-      "Kwacha"
-     ],
-     "why": "Its code is CDF."
-    },
-    {
-     "level": 1,
-     "q": "Which metal used in phone batteries comes mostly from the DR Congo?",
-     "a": "Cobalt",
-     "wrong": [
-      "Lithium",
-      "Nickel",
-      "Tin"
-     ],
-     "why": "It produces about 70% of the world's supply."
-    },
-    {
      "level": 2,
      "q": "Who ruled the country as Mobutu Sese Seko from 1965 to 1997?",
      "a": "Mobutu",
@@ -95,17 +63,6 @@
     },
     {
      "level": 2,
-     "q": "Which 1974 boxing match was held in Kinshasa?",
-     "a": "The Rumble in the Jungle",
-     "wrong": [
-      "The Thrilla in Manila",
-      "The Fight of the Century",
-      "The Brawl in Montreal"
-     ],
-     "why": "Muhammad Ali beat George Foreman."
-    },
-    {
-     "level": 2,
      "q": "Which province tried to break away in 1960?",
      "a": "Katanga",
      "wrong": [
@@ -114,17 +71,6 @@
       "Équateur"
      ],
      "why": "Moïse Tshombe led it."
-    },
-    {
-     "level": 2,
-     "q": "Who has been President of the DR Congo since 2019?",
-     "a": "Félix Tshisekedi",
-     "wrong": [
-      "Joseph Kabila",
-      "Martin Fayulu",
-      "Jean-Pierre Bemba"
-     ],
-     "why": "He is the son of Étienne Tshisekedi."
     },
     {
      "level": 2,
@@ -173,8 +119,20 @@
    ]
   },
   {
-   "name": "DR Congo: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Democratic Republic of the Congo?",
+     "a": "Kinshasa",
+     "wrong": [
+      "Lubumbashi",
+      "Brazzaville",
+      "Goma"
+     ],
+     "why": "It is Africa's largest French-speaking city."
+    },
     {
      "level": 1,
      "q": "Which river is the deepest in the world?",
@@ -199,39 +157,6 @@
     },
     {
      "level": 1,
-     "q": "Which great ape lives only in the DR Congo?",
-     "a": "Bonobo",
-     "wrong": [
-      "Mountain gorilla",
-      "Orangutan",
-      "Chimpanzee"
-     ],
-     "why": "It is very close to humans."
-    },
-    {
-     "level": 1,
-     "q": "Which dance music from Kinshasa spread across Africa?",
-     "a": "Congolese rumba (soukous)",
-     "wrong": [
-      "Highlife",
-      "Afrobeat",
-      "Mbalax"
-     ],
-     "why": "It is on UNESCO's list."
-    },
-    {
-     "level": 1,
-     "q": "Which forest animal is the DR Congo's national animal?",
-     "a": "Okapi",
-     "wrong": [
-      "Zebra",
-      "Giraffe",
-      "Bongo"
-     ],
-     "why": "It looks like a zebra and giraffe mixed."
-    },
-    {
-     "level": 1,
      "q": "Which city across the river from Kinshasa is another capital?",
      "a": "Brazzaville",
      "wrong": [
@@ -240,17 +165,6 @@
       "Kigali"
      ],
      "why": "They are the closest capitals in the world, apart from Rome and Vatican City."
-    },
-    {
-     "level": 1,
-     "q": "Which language is official in the DR Congo?",
-     "a": "French",
-     "wrong": [
-      "English",
-      "Portuguese",
-      "Arabic"
-     ],
-     "why": "Lingala, Swahili, Kikongo and Tshiluba are national languages."
     },
     {
      "level": 2,
@@ -262,50 +176,6 @@
       "Mount Cameroon"
      ],
      "why": "It erupted in 2021."
-    },
-    {
-     "level": 2,
-     "q": "Which Congolese musician was called 'the Grand Maître'?",
-     "a": "Franco Luambo",
-     "wrong": [
-      "Papa Wemba",
-      "Koffi Olomidé",
-      "Tabu Ley Rochereau"
-     ],
-     "why": "He led the band OK Jazz."
-    },
-    {
-     "level": 2,
-     "q": "Which dandies in Kinshasa wear designer clothes?",
-     "a": "La Sape",
-     "wrong": [
-      "Les Élégants",
-      "Fashionistas",
-      "Les Dandies"
-     ],
-     "why": "Members are called sapeurs."
-    },
-    {
-     "level": 2,
-     "q": "Which NBA star from Kinshasa was famous for wagging his finger?",
-     "a": "Dikembe Mutombo",
-     "wrong": [
-      "Serge Ibaka",
-      "Bismack Biyombo",
-      "Christian Eyenga"
-     ],
-     "why": "He was a top shot-blocker."
-    },
-    {
-     "level": 2,
-     "q": "Which Congolese football club won the African Champions League five times?",
-     "a": "TP Mazembe",
-     "wrong": [
-      "AS Vita Club",
-      "DC Motema Pembe",
-      "Daring Club"
-     ],
-     "why": "It is from Lubumbashi."
     },
     {
      "level": 3,
@@ -328,6 +198,73 @@
       "Livingstone Falls"
      ],
      "why": "They were called Stanley Falls."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which 1974 boxing match was held in Kinshasa?",
+     "a": "The Rumble in the Jungle",
+     "wrong": [
+      "The Thrilla in Manila",
+      "The Fight of the Century",
+      "The Brawl in Montreal"
+     ],
+     "why": "Muhammad Ali beat George Foreman."
+    },
+    {
+     "level": 2,
+     "q": "Which NBA star from Kinshasa was famous for wagging his finger?",
+     "a": "Dikembe Mutombo",
+     "wrong": [
+      "Serge Ibaka",
+      "Bismack Biyombo",
+      "Christian Eyenga"
+     ],
+     "why": "He was a top shot-blocker."
+    },
+    {
+     "level": 2,
+     "q": "Which Congolese football club won the African Champions League five times?",
+     "a": "TP Mazembe",
+     "wrong": [
+      "AS Vita Club",
+      "DC Motema Pembe",
+      "Daring Club"
+     ],
+     "why": "It is from Lubumbashi."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which dance music from Kinshasa spread across Africa?",
+     "a": "Congolese rumba (soukous)",
+     "wrong": [
+      "Highlife",
+      "Afrobeat",
+      "Mbalax"
+     ],
+     "why": "It is on UNESCO's list."
+    },
+    {
+     "level": 2,
+     "q": "Which Congolese musician was called 'the Grand Maître'?",
+     "a": "Franco Luambo",
+     "wrong": [
+      "Papa Wemba",
+      "Koffi Olomidé",
+      "Tabu Ley Rochereau"
+     ],
+     "why": "He led the band OK Jazz."
     },
     {
      "level": 3,
@@ -339,6 +276,101 @@
       "Werrason"
      ],
      "why": "He promoted La Sape."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who has been President of the DR Congo since 2019?",
+     "a": "Félix Tshisekedi",
+     "wrong": [
+      "Joseph Kabila",
+      "Martin Fayulu",
+      "Jean-Pierre Bemba"
+     ],
+     "why": "He is the son of Étienne Tshisekedi."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which great ape lives only in the DR Congo?",
+     "a": "Bonobo",
+     "wrong": [
+      "Mountain gorilla",
+      "Orangutan",
+      "Chimpanzee"
+     ],
+     "why": "It is very close to humans."
+    },
+    {
+     "level": 1,
+     "q": "Which forest animal is the DR Congo's national animal?",
+     "a": "Okapi",
+     "wrong": [
+      "Zebra",
+      "Giraffe",
+      "Bongo"
+     ],
+     "why": "It looks like a zebra and giraffe mixed."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the currency of the DR Congo?",
+     "a": "Congolese franc",
+     "wrong": [
+      "CFA franc",
+      "Zaire",
+      "Kwacha"
+     ],
+     "why": "Its code is CDF."
+    },
+    {
+     "level": 1,
+     "q": "Which metal used in phone batteries comes mostly from the DR Congo?",
+     "a": "Cobalt",
+     "wrong": [
+      "Lithium",
+      "Nickel",
+      "Tin"
+     ],
+     "why": "It produces about 70% of the world's supply."
+    },
+    {
+     "level": 1,
+     "q": "Which language is official in the DR Congo?",
+     "a": "French",
+     "wrong": [
+      "English",
+      "Portuguese",
+      "Arabic"
+     ],
+     "why": "Lingala, Swahili, Kikongo and Tshiluba are national languages."
+    },
+    {
+     "level": 2,
+     "q": "Which dandies in Kinshasa wear designer clothes?",
+     "a": "La Sape",
+     "wrong": [
+      "Les Élégants",
+      "Fashionistas",
+      "Les Dandies"
+     ],
+     "why": "Members are called sapeurs."
     }
    ]
   }

@@ -3,30 +3,9 @@
  "country": "PL",
  "topics": [
   {
-   "name": "Poland: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which Polish astronomer said the Earth goes around the Sun?",
-     "a": "Nicolaus Copernicus",
-     "wrong": [
-      "Johannes Kepler",
-      "Galileo Galilei",
-      "Tycho Brahe"
-     ],
-     "why": "His book was published in 1543."
-    },
-    {
-     "level": 1,
-     "q": "Which Polish-born scientist won two Nobel Prizes?",
-     "a": "Marie Curie",
-     "wrong": [
-      "Irène Joliot-Curie",
-      "Lise Meitner",
-      "Rosalind Franklin"
-     ],
-     "why": "She was born in Warsaw."
-    },
     {
      "level": 1,
      "q": "Which Polish Pope led the Catholic Church from 1978 to 2005?",
@@ -48,39 +27,6 @@
       "Japan's invasion of China"
      ],
      "why": "Britain and France then declared war."
-    },
-    {
-     "level": 1,
-     "q": "Which trade union led by Lech Wałęsa challenged communism?",
-     "a": "Solidarity",
-     "wrong": [
-      "Unity",
-      "Freedom",
-      "Workers' Front"
-     ],
-     "why": "It began at the Gdańsk shipyard in 1980."
-    },
-    {
-     "level": 1,
-     "q": "Which Nazi camp in southern Poland became a symbol of the Holocaust?",
-     "a": "Auschwitz-Birkenau",
-     "wrong": [
-      "Treblinka",
-      "Majdanek",
-      "Sobibor"
-     ],
-     "why": "It is now a museum and memorial."
-    },
-    {
-     "level": 1,
-     "q": "Which composer of piano music was born near Warsaw in 1810?",
-     "a": "Frédéric Chopin",
-     "wrong": [
-      "Ignacy Paderewski",
-      "Stanisław Moniuszko",
-      "Karol Szymanowski"
-     ],
-     "why": "Warsaw's airport is named after him."
     },
     {
      "level": 2,
@@ -169,22 +115,6 @@
       "Władysław Sikorski"
      ],
      "why": "The 1920 victory is called the 'Miracle on the Vistula'."
-    }
-   ]
-  },
-  {
-   "name": "Poland: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Poland?",
-     "a": "Warsaw",
-     "wrong": [
-      "Kraków",
-      "Gdańsk",
-      "Wrocław"
-     ],
-     "why": "Its old town was rebuilt after the war."
     },
     {
      "level": 1,
@@ -196,17 +126,23 @@
       "Łódź"
      ],
      "why": "Its old town is a UNESCO site."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
     {
      "level": 1,
-     "q": "Which filled dumplings are a Polish favourite?",
-     "a": "Pierogi",
+     "q": "What is the capital of Poland?",
+     "a": "Warsaw",
      "wrong": [
-      "Gyoza",
-      "Ravioli",
-      "Pelmeni"
+      "Kraków",
+      "Gdańsk",
+      "Wrocław"
      ],
-     "why": "They can be filled with potato, cheese or meat."
+     "why": "Its old town was rebuilt after the war."
     },
     {
      "level": 1,
@@ -231,16 +167,22 @@
      "why": "Gdańsk and Gdynia are on it."
     },
     {
-     "level": 1,
-     "q": "What is Poland's currency?",
-     "a": "Złoty",
+     "level": 2,
+     "q": "Which mountains form Poland's southern border with Slovakia?",
+     "a": "Tatra Mountains",
      "wrong": [
-      "Euro",
-      "Koruna",
-      "Forint"
+      "Sudetes",
+      "Alps",
+      "Ural Mountains"
      ],
-     "why": "Its name means 'golden'."
-    },
+     "why": "Zakopane is the main resort."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 1,
      "q": "Which Polish striker scored 41 Bundesliga goals in one season?",
@@ -253,6 +195,57 @@
      "why": "He broke Gerd Müller's record in 2021."
     },
     {
+     "level": 3,
+     "q": "Which Polish tennis player won four French Open titles?",
+     "a": "Iga Świątek",
+     "wrong": [
+      "Agnieszka Radwańska",
+      "Magda Linette",
+      "Hubert Hurkacz"
+     ],
+     "why": "She also won Wimbledon in 2025."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which composer of piano music was born near Warsaw in 1810?",
+     "a": "Frédéric Chopin",
+     "wrong": [
+      "Ignacy Paderewski",
+      "Stanisław Moniuszko",
+      "Karol Szymanowski"
+     ],
+     "why": "Warsaw's airport is named after him."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Polish writer won the 2018 Nobel Prize in Literature?",
+     "a": "Olga Tokarczuk",
+     "wrong": [
+      "Wisława Szymborska",
+      "Czesław Miłosz",
+      "Henryk Sienkiewicz"
+     ],
+     "why": "She wrote 'Flights'."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
      "level": 2,
      "q": "Which underground salt mine near Kraków has chapels carved from salt?",
      "a": "Wieliczka",
@@ -262,18 +255,13 @@
       "Inowrocław"
      ],
      "why": "It is one of the first UNESCO sites."
-    },
-    {
-     "level": 2,
-     "q": "Which mountains form Poland's southern border with Slovakia?",
-     "a": "Tatra Mountains",
-     "wrong": [
-      "Sudetes",
-      "Alps",
-      "Ural Mountains"
-     ],
-     "why": "Zakopane is the main resort."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
     {
      "level": 2,
      "q": "Which forest is home to Europe's largest herd of wild bison?",
@@ -284,6 +272,78 @@
       "Bory Tucholskie"
      ],
      "why": "It is shared with Belarus."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Polish astronomer said the Earth goes around the Sun?",
+     "a": "Nicolaus Copernicus",
+     "wrong": [
+      "Johannes Kepler",
+      "Galileo Galilei",
+      "Tycho Brahe"
+     ],
+     "why": "His book was published in 1543."
+    },
+    {
+     "level": 1,
+     "q": "Which Polish-born scientist won two Nobel Prizes?",
+     "a": "Marie Curie",
+     "wrong": [
+      "Irène Joliot-Curie",
+      "Lise Meitner",
+      "Rosalind Franklin"
+     ],
+     "why": "She was born in Warsaw."
+    },
+    {
+     "level": 1,
+     "q": "Which trade union led by Lech Wałęsa challenged communism?",
+     "a": "Solidarity",
+     "wrong": [
+      "Unity",
+      "Freedom",
+      "Workers' Front"
+     ],
+     "why": "It began at the Gdańsk shipyard in 1980."
+    },
+    {
+     "level": 1,
+     "q": "Which Nazi camp in southern Poland became a symbol of the Holocaust?",
+     "a": "Auschwitz-Birkenau",
+     "wrong": [
+      "Treblinka",
+      "Majdanek",
+      "Sobibor"
+     ],
+     "why": "It is now a museum and memorial."
+    },
+    {
+     "level": 1,
+     "q": "Which filled dumplings are a Polish favourite?",
+     "a": "Pierogi",
+     "wrong": [
+      "Gyoza",
+      "Ravioli",
+      "Pelmeni"
+     ],
+     "why": "They can be filled with potato, cheese or meat."
+    },
+    {
+     "level": 1,
+     "q": "What is Poland's currency?",
+     "a": "Złoty",
+     "wrong": [
+      "Euro",
+      "Koruna",
+      "Forint"
+     ],
+     "why": "Its name means 'golden'."
     },
     {
      "level": 2,
@@ -306,28 +366,6 @@
       "Kiełbasa"
      ],
      "why": "It is often called the national dish."
-    },
-    {
-     "level": 3,
-     "q": "Which Polish writer won the 2018 Nobel Prize in Literature?",
-     "a": "Olga Tokarczuk",
-     "wrong": [
-      "Wisława Szymborska",
-      "Czesław Miłosz",
-      "Henryk Sienkiewicz"
-     ],
-     "why": "She wrote 'Flights'."
-    },
-    {
-     "level": 3,
-     "q": "Which Polish tennis player won four French Open titles?",
-     "a": "Iga Świątek",
-     "wrong": [
-      "Agnieszka Radwańska",
-      "Magda Linette",
-      "Hubert Hurkacz"
-     ],
-     "why": "She also won Wimbledon in 2025."
     },
     {
      "level": 3,

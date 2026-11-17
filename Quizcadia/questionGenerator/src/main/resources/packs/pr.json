@@ -3,19 +3,9 @@
  "country": "PR",
  "topics": [
   {
-   "name": "Puerto Rico: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Puerto Rico?",
-     "a": "San Juan",
-     "wrong": [
-      "Ponce",
-      "Mayagüez",
-      "Bayamón"
-     ],
-     "why": "Its old city has huge forts."
-    },
     {
      "level": 1,
      "q": "Which country has Puerto Rico been a territory of since 1898?",
@@ -40,17 +30,6 @@
     },
     {
      "level": 1,
-     "q": "Which Indigenous people called the island Borikén?",
-     "a": "Taíno",
-     "wrong": [
-      "Carib",
-      "Maya",
-      "Arawak of Guyana"
-     ],
-     "why": "Puerto Ricans call themselves Boricuas."
-    },
-    {
-     "level": 1,
      "q": "Which hurricane devastated Puerto Rico in 2017?",
      "a": "Hurricane Maria",
      "wrong": [
@@ -59,17 +38,6 @@
       "Hurricane Andrew"
      ],
      "why": "It caused a months-long blackout."
-    },
-    {
-     "level": 1,
-     "q": "What political status does Puerto Rico have?",
-     "a": "Commonwealth (unincorporated US territory)",
-     "wrong": [
-      "US state",
-      "Independent country",
-      "British colony"
-     ],
-     "why": "Residents cannot vote for the US President."
     },
     {
      "level": 1,
@@ -150,6 +118,56 @@
     },
     {
      "level": 3,
+     "q": "Who was the first woman elected governor of Puerto Rico?",
+     "a": "Sila Calderón",
+     "wrong": [
+      "Wanda Vázquez",
+      "Jenniffer González",
+      "Sonia Sotomayor"
+     ],
+     "why": "She took office in 2001."
+    },
+    {
+     "level": 2,
+     "q": "Which giant radio telescope collapsed in 2020?",
+     "a": "Arecibo Observatory",
+     "wrong": [
+      "Green Bank Telescope",
+      "ALMA",
+      "Jodrell Bank"
+     ],
+     "why": "It appeared in the film 'GoldenEye'."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Puerto Rico?",
+     "a": "San Juan",
+     "wrong": [
+      "Ponce",
+      "Mayagüez",
+      "Bayamón"
+     ],
+     "why": "Its old city has huge forts."
+    },
+    {
+     "level": 1,
+     "q": "Which Indigenous people called the island Borikén?",
+     "a": "Taíno",
+     "wrong": [
+      "Carib",
+      "Maya",
+      "Arawak of Guyana"
+     ],
+     "why": "Puerto Ricans call themselves Boricuas."
+    },
+    {
+     "level": 3,
      "q": "Which old Spanish fort guards the entrance to San Juan Bay?",
      "a": "Castillo San Felipe del Morro",
      "wrong": [
@@ -160,20 +178,54 @@
      "why": "It is part of a UNESCO site."
     },
     {
-     "level": 3,
-     "q": "Who was the first woman elected governor of Puerto Rico?",
-     "a": "Sila Calderón",
+     "level": 1,
+     "q": "Which rainforest is the only tropical one in the US National Forest System?",
+     "a": "El Yunque",
      "wrong": [
-      "Wanda Vázquez",
-      "Jenniffer González",
-      "Sonia Sotomayor"
+      "Olympic",
+      "Tongass",
+      "Hoh"
      ],
-     "why": "She took office in 2001."
+     "why": "It is in the northeast."
+    },
+    {
+     "level": 2,
+     "q": "Which bay glows at night with tiny organisms?",
+     "a": "Mosquito Bay (bioluminescent bay)",
+     "wrong": [
+      "Flamenco Bay",
+      "Condado Lagoon",
+      "Guánica Bay"
+     ],
+     "why": "It is on the island of Vieques."
+    },
+    {
+     "level": 3,
+     "q": "Which southern city is called the 'Pearl of the South'?",
+     "a": "Ponce",
+     "wrong": [
+      "Mayagüez",
+      "Guayama",
+      "Arecibo"
+     ],
+     "why": "Its firehouse is painted red and black."
+    },
+    {
+     "level": 3,
+     "q": "Which island off the east coast is famous for wild horses?",
+     "a": "Vieques",
+     "wrong": [
+      "Culebra",
+      "Mona",
+      "Caja de Muertos"
+     ],
+     "why": "It was once used by the US Navy."
     }
    ]
   },
   {
-   "name": "Puerto Rico: Places & Culture",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
     {
      "level": 1,
@@ -199,17 +251,6 @@
     },
     {
      "level": 1,
-     "q": "Which cocktail was invented in San Juan?",
-     "a": "Piña colada",
-     "wrong": [
-      "Mojito",
-      "Daiquiri",
-      "Margarita"
-     ],
-     "why": "It became the official drink in 1978."
-    },
-    {
-     "level": 1,
      "q": "Which Puerto Rican rapper became Spotify's most-streamed artist for years?",
      "a": "Bad Bunny",
      "wrong": [
@@ -218,50 +259,6 @@
       "Anuel AA"
      ],
      "why": "He was the world's top streamed artist several times."
-    },
-    {
-     "level": 1,
-     "q": "Which tiny tree frog is a symbol of Puerto Rico?",
-     "a": "Coquí",
-     "wrong": [
-      "Poison dart frog",
-      "Cane toad",
-      "Glass frog"
-     ],
-     "why": "It is named after its 'ko-kee' call."
-    },
-    {
-     "level": 1,
-     "q": "Which mashed fried plantain dish is a favourite?",
-     "a": "Mofongo",
-     "wrong": [
-      "Mangú",
-      "Arepas",
-      "Pupusas"
-     ],
-     "why": "It is often filled with meat or seafood."
-    },
-    {
-     "level": 1,
-     "q": "Which rainforest is the only tropical one in the US National Forest System?",
-     "a": "El Yunque",
-     "wrong": [
-      "Olympic",
-      "Tongass",
-      "Hoh"
-     ],
-     "why": "It is in the northeast."
-    },
-    {
-     "level": 2,
-     "q": "Which bay glows at night with tiny organisms?",
-     "a": "Mosquito Bay (bioluminescent bay)",
-     "wrong": [
-      "Flamenco Bay",
-      "Condado Lagoon",
-      "Guánica Bay"
-     ],
-     "why": "It is on the island of Vieques."
     },
     {
      "level": 2,
@@ -276,14 +273,87 @@
     },
     {
      "level": 2,
-     "q": "Which giant radio telescope collapsed in 2020?",
-     "a": "Arecibo Observatory",
+     "q": "Which creator of the musical 'Hamilton' has Puerto Rican roots?",
+     "a": "Lin-Manuel Miranda",
      "wrong": [
-      "Green Bank Telescope",
-      "ALMA",
-      "Jodrell Bank"
+      "Benicio del Toro",
+      "Rita Moreno",
+      "José Feliciano"
      ],
-     "why": "It appeared in the film 'GoldenEye'."
+     "why": "He grew up in New York."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Puerto Rican actress has won an Emmy, Grammy, Oscar and Tony?",
+     "a": "Rita Moreno",
+     "wrong": [
+      "Jennifer Lopez",
+      "Rosie Perez",
+      "Rosario Dawson"
+     ],
+     "why": "She won her Oscar for 'West Side Story'."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which tiny tree frog is a symbol of Puerto Rico?",
+     "a": "Coquí",
+     "wrong": [
+      "Poison dart frog",
+      "Cane toad",
+      "Glass frog"
+     ],
+     "why": "It is named after its 'ko-kee' call."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What political status does Puerto Rico have?",
+     "a": "Commonwealth (unincorporated US territory)",
+     "wrong": [
+      "US state",
+      "Independent country",
+      "British colony"
+     ],
+     "why": "Residents cannot vote for the US President."
+    },
+    {
+     "level": 1,
+     "q": "Which cocktail was invented in San Juan?",
+     "a": "Piña colada",
+     "wrong": [
+      "Mojito",
+      "Daiquiri",
+      "Margarita"
+     ],
+     "why": "It became the official drink in 1978."
+    },
+    {
+     "level": 1,
+     "q": "Which mashed fried plantain dish is a favourite?",
+     "a": "Mofongo",
+     "wrong": [
+      "Mangú",
+      "Arepas",
+      "Pupusas"
+     ],
+     "why": "It is often filled with meat or seafood."
     },
     {
      "level": 2,
@@ -295,50 +365,6 @@
       "Asado"
      ],
      "why": "Whole pigs are roasted on a spit."
-    },
-    {
-     "level": 2,
-     "q": "Which creator of the musical 'Hamilton' has Puerto Rican roots?",
-     "a": "Lin-Manuel Miranda",
-     "wrong": [
-      "Benicio del Toro",
-      "Rita Moreno",
-      "José Feliciano"
-     ],
-     "why": "He grew up in New York."
-    },
-    {
-     "level": 3,
-     "q": "Which Puerto Rican actress has won an Emmy, Grammy, Oscar and Tony?",
-     "a": "Rita Moreno",
-     "wrong": [
-      "Jennifer Lopez",
-      "Rosie Perez",
-      "Rosario Dawson"
-     ],
-     "why": "She won her Oscar for 'West Side Story'."
-    },
-    {
-     "level": 3,
-     "q": "Which southern city is called the 'Pearl of the South'?",
-     "a": "Ponce",
-     "wrong": [
-      "Mayagüez",
-      "Guayama",
-      "Arecibo"
-     ],
-     "why": "Its firehouse is painted red and black."
-    },
-    {
-     "level": 3,
-     "q": "Which island off the east coast is famous for wild horses?",
-     "a": "Vieques",
-     "wrong": [
-      "Culebra",
-      "Mona",
-      "Caja de Muertos"
-     ],
-     "why": "It was once used by the US Navy."
     }
    ]
   }

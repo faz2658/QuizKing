@@ -3,7 +3,8 @@
  "country": "RU",
  "topics": [
   {
-   "name": "Russia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -51,17 +52,6 @@
     },
     {
      "level": 1,
-     "q": "In which year did the Soviet Union break up?",
-     "a": "1991",
-     "wrong": [
-      "1989",
-      "1985",
-      "1993"
-     ],
-     "why": "Fifteen republics became independent."
-    },
-    {
-     "level": 1,
      "q": "Which tsar founded St Petersburg in 1703?",
      "a": "Peter the Great",
      "wrong": [
@@ -92,17 +82,6 @@
       "Sally Ride"
      ],
      "why": "She flew on Vostok 6."
-    },
-    {
-     "level": 2,
-     "q": "Which Soviet leader introduced glasnost and perestroika?",
-     "a": "Mikhail Gorbachev",
-     "wrong": [
-      "Boris Yeltsin",
-      "Yuri Andropov",
-      "Konstantin Chernenko"
-     ],
-     "why": "He won the 1990 Nobel Peace Prize."
     },
     {
      "level": 2,
@@ -173,7 +152,8 @@
    ]
   },
   {
-   "name": "Russia: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -188,17 +168,6 @@
     },
     {
      "level": 1,
-     "q": "Which onion-domed cathedral stands on Red Square?",
-     "a": "St Basil's Cathedral",
-     "wrong": [
-      "Cathedral of Christ the Saviour",
-      "St Isaac's Cathedral",
-      "Kazan Cathedral"
-     ],
-     "why": "Ivan the Terrible ordered it."
-    },
-    {
-     "level": 1,
      "q": "Which Siberian lake is the deepest in the world?",
      "a": "Lake Baikal",
      "wrong": [
@@ -207,6 +176,162 @@
       "Lake Onega"
      ],
      "why": "It holds about a fifth of Earth's unfrozen fresh water."
+    },
+    {
+     "level": 2,
+     "q": "Which is Europe's longest river?",
+     "a": "Volga",
+     "wrong": [
+      "Danube",
+      "Dnieper",
+      "Ural"
+     ],
+     "why": "It flows into the Caspian Sea."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain in the Caucasus is Europe's highest?",
+     "a": "Mount Elbrus",
+     "wrong": [
+      "Mont Blanc",
+      "Kazbek",
+      "Dykh-Tau"
+     ],
+     "why": "It is 5,642 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which far-eastern peninsula is famous for volcanoes and brown bears?",
+     "a": "Kamchatka",
+     "wrong": [
+      "Chukotka",
+      "Taymyr",
+      "Kola"
+     ],
+     "why": "It has around 30 active volcanoes."
+    },
+    {
+     "level": 3,
+     "q": "How many time zones does Russia span?",
+     "a": "11",
+     "wrong": [
+      "9",
+      "7",
+      "13"
+     ],
+     "why": "It is the largest country in the world."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which composer wrote 'Swan Lake' and 'The Nutcracker'?",
+     "a": "Pyotr Tchaikovsky",
+     "wrong": [
+      "Sergei Rachmaninoff",
+      "Igor Stravinsky",
+      "Modest Mussorgsky"
+     ],
+     "why": "He was born in 1840."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who wrote 'War and Peace'?",
+     "a": "Leo Tolstoy",
+     "wrong": [
+      "Fyodor Dostoevsky",
+      "Anton Chekhov",
+      "Alexander Pushkin"
+     ],
+     "why": "It is set during Napoleon's invasion."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote 'Crime and Punishment'?",
+     "a": "Fyodor Dostoevsky",
+     "wrong": [
+      "Leo Tolstoy",
+      "Nikolai Gogol",
+      "Ivan Turgenev"
+     ],
+     "why": "It was published in 1866."
+    },
+    {
+     "level": 3,
+     "q": "Who is called the father of Russian literature?",
+     "a": "Alexander Pushkin",
+     "wrong": [
+      "Leo Tolstoy",
+      "Mikhail Lermontov",
+      "Nikolai Gogol"
+     ],
+     "why": "He wrote 'Eugene Onegin'."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which St Petersburg museum fills the Winter Palace?",
+     "a": "Hermitage",
+     "wrong": [
+      "Pushkin Museum",
+      "Tretyakov Gallery",
+      "Russian Museum"
+     ],
+     "why": "It is one of the world's largest museums."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did the Soviet Union break up?",
+     "a": "1991",
+     "wrong": [
+      "1989",
+      "1985",
+      "1993"
+     ],
+     "why": "Fifteen republics became independent."
+    },
+    {
+     "level": 2,
+     "q": "Which Soviet leader introduced glasnost and perestroika?",
+     "a": "Mikhail Gorbachev",
+     "wrong": [
+      "Boris Yeltsin",
+      "Yuri Andropov",
+      "Konstantin Chernenko"
+     ],
+     "why": "He won the 1990 Nobel Peace Prize."
+    },
+    {
+     "level": 1,
+     "q": "Which onion-domed cathedral stands on Red Square?",
+     "a": "St Basil's Cathedral",
+     "wrong": [
+      "Cathedral of Christ the Saviour",
+      "St Isaac's Cathedral",
+      "Kazan Cathedral"
+     ],
+     "why": "Ivan the Terrible ordered it."
     },
     {
      "level": 1,
@@ -231,72 +356,6 @@
      "why": "Each doll opens to reveal a smaller one."
     },
     {
-     "level": 1,
-     "q": "Which composer wrote 'Swan Lake' and 'The Nutcracker'?",
-     "a": "Pyotr Tchaikovsky",
-     "wrong": [
-      "Sergei Rachmaninoff",
-      "Igor Stravinsky",
-      "Modest Mussorgsky"
-     ],
-     "why": "He was born in 1840."
-    },
-    {
-     "level": 1,
-     "q": "Who wrote 'War and Peace'?",
-     "a": "Leo Tolstoy",
-     "wrong": [
-      "Fyodor Dostoevsky",
-      "Anton Chekhov",
-      "Alexander Pushkin"
-     ],
-     "why": "It is set during Napoleon's invasion."
-    },
-    {
-     "level": 2,
-     "q": "Which is Europe's longest river?",
-     "a": "Volga",
-     "wrong": [
-      "Danube",
-      "Dnieper",
-      "Ural"
-     ],
-     "why": "It flows into the Caspian Sea."
-    },
-    {
-     "level": 2,
-     "q": "Which St Petersburg museum fills the Winter Palace?",
-     "a": "Hermitage",
-     "wrong": [
-      "Pushkin Museum",
-      "Tretyakov Gallery",
-      "Russian Museum"
-     ],
-     "why": "It is one of the world's largest museums."
-    },
-    {
-     "level": 2,
-     "q": "Who wrote 'Crime and Punishment'?",
-     "a": "Fyodor Dostoevsky",
-     "wrong": [
-      "Leo Tolstoy",
-      "Nikolai Gogol",
-      "Ivan Turgenev"
-     ],
-     "why": "It was published in 1866."
-    },
-    {
-     "level": 2,
-     "q": "Which mountain in the Caucasus is Europe's highest?",
-     "a": "Mount Elbrus",
-     "wrong": [
-      "Mont Blanc",
-      "Kazbek",
-      "Dykh-Tau"
-     ],
-     "why": "It is 5,642 m high."
-    },
-    {
      "level": 2,
      "q": "Which beetroot soup is popular in Russia and Ukraine?",
      "a": "Borscht",
@@ -306,39 +365,6 @@
       "Okroshka"
      ],
      "why": "Ukraine's borscht is on UNESCO's list."
-    },
-    {
-     "level": 3,
-     "q": "Who is called the father of Russian literature?",
-     "a": "Alexander Pushkin",
-     "wrong": [
-      "Leo Tolstoy",
-      "Mikhail Lermontov",
-      "Nikolai Gogol"
-     ],
-     "why": "He wrote 'Eugene Onegin'."
-    },
-    {
-     "level": 3,
-     "q": "Which far-eastern peninsula is famous for volcanoes and brown bears?",
-     "a": "Kamchatka",
-     "wrong": [
-      "Chukotka",
-      "Taymyr",
-      "Kola"
-     ],
-     "why": "It has around 30 active volcanoes."
-    },
-    {
-     "level": 3,
-     "q": "How many time zones does Russia span?",
-     "a": "11",
-     "wrong": [
-      "9",
-      "7",
-      "13"
-     ],
-     "why": "It is the largest country in the world."
     }
    ]
   }

@@ -3,7 +3,36 @@
  "country": "SM",
  "topics": [
   {
-   "name": "San Marino: History & People",
+   "category": "History",
+   "name": "History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which stonemason saint is said to have founded San Marino?",
+     "a": "Saint Marinus",
+     "wrong": [
+      "Saint Mark",
+      "Saint Martin",
+      "Saint Leo"
+     ],
+     "why": "He fled persecution from the island of Rab."
+    },
+    {
+     "level": 2,
+     "q": "Which Italian patriot found refuge in San Marino in 1849?",
+     "a": "Giuseppe Garibaldi",
+     "wrong": [
+      "Giuseppe Mazzini",
+      "Camillo Cavour",
+      "Victor Emmanuel II"
+     ],
+     "why": "San Marino later stayed independent of unified Italy."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -18,50 +47,6 @@
     },
     {
      "level": 1,
-     "q": "Which country completely surrounds San Marino?",
-     "a": "Italy",
-     "wrong": [
-      "France",
-      "Switzerland",
-      "Austria"
-     ],
-     "why": "It lies near Rimini."
-    },
-    {
-     "level": 1,
-     "q": "What is San Marino often called?",
-     "a": "The world's oldest republic",
-     "wrong": [
-      "Europe's newest state",
-      "The island republic",
-      "The alpine kingdom"
-     ],
-     "why": "Its traditional founding date is 301."
-    },
-    {
-     "level": 1,
-     "q": "Which stonemason saint is said to have founded San Marino?",
-     "a": "Saint Marinus",
-     "wrong": [
-      "Saint Mark",
-      "Saint Martin",
-      "Saint Leo"
-     ],
-     "why": "He fled persecution from the island of Rab."
-    },
-    {
-     "level": 1,
-     "q": "What is San Marino's currency?",
-     "a": "Euro",
-     "wrong": [
-      "Sammarinese lira",
-      "Swiss franc",
-      "Italian lira"
-     ],
-     "why": "It mints its own euro coins."
-    },
-    {
-     "level": 1,
      "q": "How many heads of state does San Marino have at a time?",
      "a": "Two",
      "wrong": [
@@ -70,17 +55,6 @@
       "Four"
      ],
      "why": "They are called Captains Regent."
-    },
-    {
-     "level": 1,
-     "q": "For how long do the Captains Regent serve?",
-     "a": "Six months",
-     "wrong": [
-      "One year",
-      "Four years",
-      "Five years"
-     ],
-     "why": "New ones take office in April and October."
     },
     {
      "level": 2,
@@ -94,50 +68,6 @@
      "why": "It is a UNESCO site."
     },
     {
-     "level": 2,
-     "q": "Which American President was made an honorary citizen of San Marino?",
-     "a": "Abraham Lincoln",
-     "wrong": [
-      "George Washington",
-      "Thomas Jefferson",
-      "Theodore Roosevelt"
-     ],
-     "why": "He wrote back to thank them in 1861."
-    },
-    {
-     "level": 2,
-     "q": "Which French leader offered San Marino more land, which it turned down?",
-     "a": "Napoleon",
-     "wrong": [
-      "Louis XIV",
-      "Charles de Gaulle",
-      "Napoleon III"
-     ],
-     "why": "It feared losing its independence."
-    },
-    {
-     "level": 2,
-     "q": "What is San Marino's parliament called?",
-     "a": "Grand and General Council",
-     "wrong": [
-      "Consulta",
-      "Senate",
-      "Great Assembly"
-     ],
-     "why": "It has 60 members."
-    },
-    {
-     "level": 2,
-     "q": "Which Italian patriot found refuge in San Marino in 1849?",
-     "a": "Giuseppe Garibaldi",
-     "wrong": [
-      "Giuseppe Mazzini",
-      "Camillo Cavour",
-      "Victor Emmanuel II"
-     ],
-     "why": "San Marino later stayed independent of unified Italy."
-    },
-    {
      "level": 3,
      "q": "How many 'castelli' or districts is San Marino divided into?",
      "a": "Nine",
@@ -147,55 +77,6 @@
       "Twelve"
      ],
      "why": "Each has its own council."
-    },
-    {
-     "level": 3,
-     "q": "Which three towers on Monte Titano appear on the flag?",
-     "a": "Guaita, Cesta and Montale",
-     "wrong": [
-      "Torre del Mangia, Garisenda and Asinelli",
-      "Rocca, Torre and Castello",
-      "Prima, Seconda and Terza"
-     ],
-     "why": "They are also called the First, Second and Third Towers."
-    },
-    {
-     "level": 3,
-     "q": "In which year did San Marino's women gain the vote?",
-     "a": "1960",
-     "wrong": [
-      "1945",
-      "1974",
-      "1984"
-     ],
-     "why": "They could stand for office from 1973."
-    }
-   ]
-  },
-  {
-   "name": "San Marino: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which motor-racing event once took its name from San Marino?",
-     "a": "San Marino Grand Prix",
-     "wrong": [
-      "Rimini Grand Prix",
-      "Adriatic Grand Prix",
-      "Titano Grand Prix"
-     ],
-     "why": "It was held at Imola in Italy."
-    },
-    {
-     "level": 1,
-     "q": "What is the official language of San Marino?",
-     "a": "Italian",
-     "wrong": [
-      "Latin",
-      "Sammarinese",
-      "French"
-     ],
-     "why": "A local Romagnol dialect is also spoken."
     },
     {
      "level": 1,
@@ -210,28 +91,6 @@
     },
     {
      "level": 1,
-     "q": "How large is San Marino?",
-     "a": "About 61 square kilometres",
-     "wrong": [
-      "About 6 square kilometres",
-      "About 600 square kilometres",
-      "About 1,600 square kilometres"
-     ],
-     "why": "It is the fifth-smallest country in the world."
-    },
-    {
-     "level": 1,
-     "q": "What is San Marino famous for selling to collectors?",
-     "a": "Stamps and coins",
-     "wrong": [
-      "Wine labels",
-      "Postcards of saints",
-      "Watches"
-     ],
-     "why": "They bring in tourist income."
-    },
-    {
-     "level": 1,
      "q": "Which nearby Italian seaside city do most visitors come from?",
      "a": "Rimini",
      "wrong": [
@@ -241,6 +100,23 @@
      ],
      "why": "It is about 25 km away."
     },
+    {
+     "level": 3,
+     "q": "Which basilica in the old town holds the saint's relics?",
+     "a": "Basilica di San Marino",
+     "wrong": [
+      "St Peter's Basilica",
+      "Basilica of San Francesco",
+      "Duomo di Rimini"
+     ],
+     "why": "It was rebuilt in the 1800s."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 1,
      "q": "Which national football team is famous for rarely winning?",
@@ -254,17 +130,6 @@
     },
     {
      "level": 2,
-     "q": "Which layered cake is a San Marino speciality?",
-     "a": "Torta Tre Monti",
-     "wrong": [
-      "Tiramisu",
-      "Panettone",
-      "Sachertorte"
-     ],
-     "why": "It is named after the three towers."
-    },
-    {
-     "level": 2,
      "q": "Which circuit near the border hosts the San Marino MotoGP?",
      "a": "Misano",
      "wrong": [
@@ -273,17 +138,6 @@
       "Monza"
      ],
      "why": "It is named after Marco Simoncelli."
-    },
-    {
-     "level": 2,
-     "q": "What is the national day of San Marino?",
-     "a": "3 September (Feast of Saint Marinus)",
-     "wrong": [
-      "25 March",
-      "1 April",
-      "2 June"
-     ],
-     "why": "It marks the founding of the republic."
     },
     {
      "level": 2,
@@ -309,28 +163,6 @@
     },
     {
      "level": 3,
-     "q": "Which museum in San Marino displays medieval weapons?",
-     "a": "Museum of Ancient Arms",
-     "wrong": [
-      "Museo del Prado",
-      "Museo delle Cere",
-      "Royal Armouries"
-     ],
-     "why": "It is in the Cesta tower."
-    },
-    {
-     "level": 3,
-     "q": "Which basilica in the old town holds the saint's relics?",
-     "a": "Basilica di San Marino",
-     "wrong": [
-      "St Peter's Basilica",
-      "Basilica of San Francesco",
-      "Duomo di Rimini"
-     ],
-     "why": "It was rebuilt in the 1800s."
-    },
-    {
-     "level": 3,
      "q": "How many medals did San Marino win at the 2020 Tokyo Olympics?",
      "a": "Three",
      "wrong": [
@@ -339,6 +171,200 @@
       "Zero"
      ],
      "why": "It was the smallest country to win a medal."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which American President was made an honorary citizen of San Marino?",
+     "a": "Abraham Lincoln",
+     "wrong": [
+      "George Washington",
+      "Thomas Jefferson",
+      "Theodore Roosevelt"
+     ],
+     "why": "He wrote back to thank them in 1861."
+    },
+    {
+     "level": 2,
+     "q": "What is San Marino's parliament called?",
+     "a": "Grand and General Council",
+     "wrong": [
+      "Consulta",
+      "Senate",
+      "Great Assembly"
+     ],
+     "why": "It has 60 members."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which museum in San Marino displays medieval weapons?",
+     "a": "Museum of Ancient Arms",
+     "wrong": [
+      "Museo del Prado",
+      "Museo delle Cere",
+      "Royal Armouries"
+     ],
+     "why": "It is in the Cesta tower."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which country completely surrounds San Marino?",
+     "a": "Italy",
+     "wrong": [
+      "France",
+      "Switzerland",
+      "Austria"
+     ],
+     "why": "It lies near Rimini."
+    },
+    {
+     "level": 1,
+     "q": "What is San Marino often called?",
+     "a": "The world's oldest republic",
+     "wrong": [
+      "Europe's newest state",
+      "The island republic",
+      "The alpine kingdom"
+     ],
+     "why": "Its traditional founding date is 301."
+    },
+    {
+     "level": 1,
+     "q": "What is San Marino's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Sammarinese lira",
+      "Swiss franc",
+      "Italian lira"
+     ],
+     "why": "It mints its own euro coins."
+    },
+    {
+     "level": 1,
+     "q": "For how long do the Captains Regent serve?",
+     "a": "Six months",
+     "wrong": [
+      "One year",
+      "Four years",
+      "Five years"
+     ],
+     "why": "New ones take office in April and October."
+    },
+    {
+     "level": 2,
+     "q": "Which French leader offered San Marino more land, which it turned down?",
+     "a": "Napoleon",
+     "wrong": [
+      "Louis XIV",
+      "Charles de Gaulle",
+      "Napoleon III"
+     ],
+     "why": "It feared losing its independence."
+    },
+    {
+     "level": 3,
+     "q": "Which three towers on Monte Titano appear on the flag?",
+     "a": "Guaita, Cesta and Montale",
+     "wrong": [
+      "Torre del Mangia, Garisenda and Asinelli",
+      "Rocca, Torre and Castello",
+      "Prima, Seconda and Terza"
+     ],
+     "why": "They are also called the First, Second and Third Towers."
+    },
+    {
+     "level": 3,
+     "q": "In which year did San Marino's women gain the vote?",
+     "a": "1960",
+     "wrong": [
+      "1945",
+      "1974",
+      "1984"
+     ],
+     "why": "They could stand for office from 1973."
+    },
+    {
+     "level": 1,
+     "q": "Which motor-racing event once took its name from San Marino?",
+     "a": "San Marino Grand Prix",
+     "wrong": [
+      "Rimini Grand Prix",
+      "Adriatic Grand Prix",
+      "Titano Grand Prix"
+     ],
+     "why": "It was held at Imola in Italy."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of San Marino?",
+     "a": "Italian",
+     "wrong": [
+      "Latin",
+      "Sammarinese",
+      "French"
+     ],
+     "why": "A local Romagnol dialect is also spoken."
+    },
+    {
+     "level": 1,
+     "q": "How large is San Marino?",
+     "a": "About 61 square kilometres",
+     "wrong": [
+      "About 6 square kilometres",
+      "About 600 square kilometres",
+      "About 1,600 square kilometres"
+     ],
+     "why": "It is the fifth-smallest country in the world."
+    },
+    {
+     "level": 1,
+     "q": "What is San Marino famous for selling to collectors?",
+     "a": "Stamps and coins",
+     "wrong": [
+      "Wine labels",
+      "Postcards of saints",
+      "Watches"
+     ],
+     "why": "They bring in tourist income."
+    },
+    {
+     "level": 2,
+     "q": "Which layered cake is a San Marino speciality?",
+     "a": "Torta Tre Monti",
+     "wrong": [
+      "Tiramisu",
+      "Panettone",
+      "Sachertorte"
+     ],
+     "why": "It is named after the three towers."
+    },
+    {
+     "level": 2,
+     "q": "What is the national day of San Marino?",
+     "a": "3 September (Feast of Saint Marinus)",
+     "wrong": [
+      "25 March",
+      "1 April",
+      "2 June"
+     ],
+     "why": "It marks the founding of the republic."
     }
    ]
   }

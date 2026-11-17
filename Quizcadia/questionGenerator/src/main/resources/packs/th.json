@@ -3,7 +3,8 @@
  "country": "TH",
  "topics": [
   {
-   "name": "Thailand: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -70,17 +71,6 @@
       "Thonburi dynasty"
      ],
      "why": "Its kings are also called Rama."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Siam become a constitutional monarchy?",
-     "a": "1932",
-     "wrong": [
-      "1910",
-      "1946",
-      "1973"
-     ],
-     "why": "A bloodless revolution ended absolute monarchy."
     },
     {
      "level": 2,
@@ -173,7 +163,8 @@
    ]
   },
   {
-   "name": "Thailand: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -186,6 +177,118 @@
      ],
      "why": "Thais call it Krung Thep."
     },
+    {
+     "level": 1,
+     "q": "Which festival floats decorated baskets on rivers?",
+     "a": "Loy Krathong",
+     "wrong": [
+      "Songkran",
+      "Yi Peng",
+      "Makha Bucha"
+     ],
+     "why": "It falls on the full moon of the 12th lunar month."
+    },
+    {
+     "level": 1,
+     "q": "Which is Thailand's largest island?",
+     "a": "Phuket",
+     "wrong": [
+      "Koh Samui",
+      "Koh Chang",
+      "Koh Phangan"
+     ],
+     "why": "It is in the Andaman Sea."
+    },
+    {
+     "level": 2,
+     "q": "Which river flows through Bangkok?",
+     "a": "Chao Phraya",
+     "wrong": [
+      "Mekong",
+      "Ping",
+      "Mun"
+     ],
+     "why": "It is called the 'River of Kings'."
+    },
+    {
+     "level": 2,
+     "q": "Which northern city is famous for releasing sky lanterns at Yi Peng?",
+     "a": "Chiang Mai",
+     "wrong": [
+      "Chiang Rai",
+      "Sukhothai",
+      "Lampang"
+     ],
+     "why": "It was the Lanna capital."
+    },
+    {
+     "level": 3,
+     "q": "What is Thailand's highest mountain?",
+     "a": "Doi Inthanon",
+     "wrong": [
+      "Doi Suthep",
+      "Doi Chiang Dao",
+      "Phu Kradueng"
+     ],
+     "why": "It is 2,565 m high."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which combat sport is Thailand's national sport?",
+     "a": "Muay Thai",
+     "wrong": [
+      "Taekwondo",
+      "Sepak takraw",
+      "Krabi-krabong"
+     ],
+     "why": "It is called the 'art of eight limbs'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which islands were the setting of the film 'The Beach'?",
+     "a": "Phi Phi Islands",
+     "wrong": [
+      "Similan Islands",
+      "Koh Tao",
+      "Koh Lanta"
+     ],
+     "why": "It was filmed at Maya Bay."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Siam become a constitutional monarchy?",
+     "a": "1932",
+     "wrong": [
+      "1910",
+      "1946",
+      "1973"
+     ],
+     "why": "A bloodless revolution ended absolute monarchy."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
     {
      "level": 1,
      "q": "Which stir-fried rice noodle dish is a Thai classic?",
@@ -210,28 +313,6 @@
     },
     {
      "level": 1,
-     "q": "Which festival floats decorated baskets on rivers?",
-     "a": "Loy Krathong",
-     "wrong": [
-      "Songkran",
-      "Yi Peng",
-      "Makha Bucha"
-     ],
-     "why": "It falls on the full moon of the 12th lunar month."
-    },
-    {
-     "level": 1,
-     "q": "Which combat sport is Thailand's national sport?",
-     "a": "Muay Thai",
-     "wrong": [
-      "Taekwondo",
-      "Sepak takraw",
-      "Krabi-krabong"
-     ],
-     "why": "It is called the 'art of eight limbs'."
-    },
-    {
-     "level": 1,
      "q": "What is Thailand's currency?",
      "a": "Baht",
      "wrong": [
@@ -240,17 +321,6 @@
       "Ringgit"
      ],
      "why": "Its symbol is ฿."
-    },
-    {
-     "level": 1,
-     "q": "Which is Thailand's largest island?",
-     "a": "Phuket",
-     "wrong": [
-      "Koh Samui",
-      "Koh Chang",
-      "Koh Phangan"
-     ],
-     "why": "It is in the Andaman Sea."
     },
     {
      "level": 2,
@@ -286,28 +356,6 @@
      "why": "The Buddha is 46 m long."
     },
     {
-     "level": 2,
-     "q": "Which river flows through Bangkok?",
-     "a": "Chao Phraya",
-     "wrong": [
-      "Mekong",
-      "Ping",
-      "Mun"
-     ],
-     "why": "It is called the 'River of Kings'."
-    },
-    {
-     "level": 2,
-     "q": "Which northern city is famous for releasing sky lanterns at Yi Peng?",
-     "a": "Chiang Mai",
-     "wrong": [
-      "Chiang Rai",
-      "Sukhothai",
-      "Lampang"
-     ],
-     "why": "It was the Lanna capital."
-    },
-    {
      "level": 3,
      "q": "Which curry noodle soup is a northern Thai speciality?",
      "a": "Khao soi",
@@ -317,28 +365,6 @@
       "Boat noodles"
      ],
      "why": "It is topped with crispy noodles."
-    },
-    {
-     "level": 3,
-     "q": "What is Thailand's highest mountain?",
-     "a": "Doi Inthanon",
-     "wrong": [
-      "Doi Suthep",
-      "Doi Chiang Dao",
-      "Phu Kradueng"
-     ],
-     "why": "It is 2,565 m high."
-    },
-    {
-     "level": 3,
-     "q": "Which islands were the setting of the film 'The Beach'?",
-     "a": "Phi Phi Islands",
-     "wrong": [
-      "Similan Islands",
-      "Koh Tao",
-      "Koh Lanta"
-     ],
-     "why": "It was filmed at Maya Bay."
     }
    ]
   }

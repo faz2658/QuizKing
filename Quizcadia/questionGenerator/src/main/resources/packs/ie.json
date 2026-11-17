@@ -3,7 +3,8 @@
  "country": "IE",
  "topics": [
   {
-   "name": "Ireland History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -106,17 +107,6 @@
     },
     {
      "level": 2,
-     "q": "Which leader dominated Irish politics as Taoiseach and President?",
-     "a": "Éamon de Valera",
-     "wrong": [
-      "Michael Collins",
-      "Seán Lemass",
-      "W. T. Cosgrave"
-     ],
-     "why": "He wrote much of the 1937 Constitution."
-    },
-    {
-     "level": 2,
      "q": "Which 1690 battle is still remembered in Northern Ireland every July?",
      "a": "Battle of the Boyne",
      "wrong": [
@@ -180,11 +170,34 @@
       "Henry Grattan"
      ],
      "why": "Dublin's main street is named after him."
+    },
+    {
+     "level": 2,
+     "q": "Which ship built in Belfast sank in 1912 after calling at Cobh?",
+     "a": "Titanic",
+     "wrong": [
+      "Lusitania",
+      "Britannic",
+      "Olympic"
+     ],
+     "why": "Cobh was then called Queenstown."
+    },
+    {
+     "level": 2,
+     "q": "Which ship was sunk off the Old Head of Kinsale in 1915?",
+     "a": "Lusitania",
+     "wrong": [
+      "Titanic",
+      "Britannic",
+      "Leinster"
+     ],
+     "why": "A German U-boat torpedoed it."
     }
    ]
   },
   {
-   "name": "Ireland Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -361,11 +374,23 @@
       "Leinster, Meath, Connacht and Ulster"
      ],
      "why": "They appear on the Irish rugby crest."
+    },
+    {
+     "level": 2,
+     "q": "Which large Dublin park is one of Europe's biggest city parks?",
+     "a": "Phoenix Park",
+     "wrong": [
+      "St Stephen's Green",
+      "Merrion Square",
+      "Herbert Park"
+     ],
+     "why": "Wild deer roam there."
     }
    ]
   },
   {
-   "name": "Ireland Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,7 +571,8 @@
    ]
   },
   {
-   "name": "Ireland Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
     {
      "level": 1,
@@ -583,17 +609,6 @@
     },
     {
      "level": 1,
-     "q": "Which Irish actor starred in 'Oppenheimer' and won an Oscar?",
-     "a": "Cillian Murphy",
-     "wrong": [
-      "Colin Farrell",
-      "Paul Mescal",
-      "Barry Keoghan"
-     ],
-     "why": "He won Best Actor in 2024."
-    },
-    {
-     "level": 1,
      "q": "Which Irish dance show was first performed at Eurovision 1994?",
      "a": "Riverdance",
      "wrong": [
@@ -615,16 +630,105 @@
      "why": "It came out in 2013."
     },
     {
-     "level": 1,
-     "q": "Which member of One Direction is from Mullingar?",
-     "a": "Niall Horan",
+     "level": 2,
+     "q": "Which band led by Phil Lynott recorded 'Whiskey in the Jar'?",
+     "a": "Thin Lizzy",
      "wrong": [
-      "Harry Styles",
-      "Louis Tomlinson",
-      "Liam Payne"
+      "The Dubliners",
+      "U2",
+      "The Pogues"
      ],
-     "why": "He was the only Irish member."
+     "why": "A statue of Lynott stands in Dublin."
     },
+    {
+     "level": 1,
+     "q": "Which instrument is on Ireland's coat of arms?",
+     "a": "Harp",
+     "wrong": [
+      "Fiddle",
+      "Bodhrán",
+      "Uilleann pipes"
+     ],
+     "why": "It also appears on euro coins and Guinness."
+    },
+    {
+     "level": 2,
+     "q": "Which frame drum is used in Irish traditional music?",
+     "a": "Bodhrán",
+     "wrong": [
+      "Tabla",
+      "Djembe",
+      "Snare drum"
+     ],
+     "why": "It is played with a stick called a cipín."
+    },
+    {
+     "level": 2,
+     "q": "What is the national anthem of Ireland?",
+     "a": "Amhrán na bhFiann",
+     "wrong": [
+      "Ireland's Call",
+      "The Fields of Athenry",
+      "Danny Boy"
+     ],
+     "why": "It means 'The Soldier's Song'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Irish actor starred in 'Oppenheimer' and won an Oscar?",
+     "a": "Cillian Murphy",
+     "wrong": [
+      "Colin Farrell",
+      "Paul Mescal",
+      "Barry Keoghan"
+     ],
+     "why": "He won Best Actor in 2024."
+    },
+    {
+     "level": 2,
+     "q": "Which Sally Rooney novel became a hit TV series in 2020?",
+     "a": "Normal People",
+     "wrong": [
+      "Conversations with Friends",
+      "Beautiful World, Where Are You",
+      "Intermezzo"
+     ],
+     "why": "Paul Mescal starred in it."
+    },
+    {
+     "level": 3,
+     "q": "Which Irish film by Martin McDonagh is set on the island of Inisherin?",
+     "a": "The Banshees of Inisherin",
+     "wrong": [
+      "The Guard",
+      "In Bruges",
+      "Calvary"
+     ],
+     "why": "It got nine Oscar nominations."
+    },
+    {
+     "level": 3,
+     "q": "Which Irish-language film was Oscar-nominated in 2023?",
+     "a": "The Quiet Girl",
+     "wrong": [
+      "Arracht",
+      "Kneecap",
+      "Song of Granite"
+     ],
+     "why": "Its Irish title is 'An Cailín Ciúin'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
      "level": 2,
      "q": "Who wrote 'Ulysses', set in Dublin on a single day?",
@@ -670,28 +774,6 @@
      "why": "He was Dean of St Patrick's Cathedral."
     },
     {
-     "level": 2,
-     "q": "Which band led by Phil Lynott recorded 'Whiskey in the Jar'?",
-     "a": "Thin Lizzy",
-     "wrong": [
-      "The Dubliners",
-      "U2",
-      "The Pogues"
-     ],
-     "why": "A statue of Lynott stands in Dublin."
-    },
-    {
-     "level": 2,
-     "q": "Which Sally Rooney novel became a hit TV series in 2020?",
-     "a": "Normal People",
-     "wrong": [
-      "Conversations with Friends",
-      "Beautiful World, Where Are You",
-      "Intermezzo"
-     ],
-     "why": "Paul Mescal starred in it."
-    },
-    {
      "level": 3,
      "q": "Which poet won the Nobel Prize in Literature in 1923?",
      "a": "W. B. Yeats",
@@ -701,34 +783,91 @@
       "Louis MacNeice"
      ],
      "why": "Seamus Heaney won in 1995."
-    },
-    {
-     "level": 3,
-     "q": "Which Irish film by Martin McDonagh is set on the island of Inisherin?",
-     "a": "The Banshees of Inisherin",
-     "wrong": [
-      "The Guard",
-      "In Bruges",
-      "Calvary"
-     ],
-     "why": "It got nine Oscar nominations."
-    },
-    {
-     "level": 3,
-     "q": "Which Irish-language film was Oscar-nominated in 2023?",
-     "a": "The Quiet Girl",
-     "wrong": [
-      "Arracht",
-      "Kneecap",
-      "Song of Granite"
-     ],
-     "why": "Its Irish title is 'An Cailín Ciúin'."
     }
    ]
   },
   {
-   "name": "Ireland Food & Traditions",
+   "category": "Politics",
+   "name": "Politics",
    "questions": [
+    {
+     "level": 2,
+     "q": "Which leader dominated Irish politics as Taoiseach and President?",
+     "a": "Éamon de Valera",
+     "wrong": [
+      "Michael Collins",
+      "Seán Lemass",
+      "W. T. Cosgrave"
+     ],
+     "why": "He wrote much of the 1937 Constitution."
+    },
+    {
+     "level": 1,
+     "q": "What is the Irish head of government called?",
+     "a": "Taoiseach",
+     "wrong": [
+      "Tánaiste",
+      "Uachtarán",
+      "Ceann Comhairle"
+     ],
+     "why": "The Tánaiste is the deputy."
+    },
+    {
+     "level": 1,
+     "q": "What is the Irish parliament called?",
+     "a": "Oireachtas",
+     "wrong": [
+      "Bundestag",
+      "Stormont",
+      "Senedd"
+     ],
+     "why": "It is made up of the President, the Dáil and the Seanad."
+    },
+    {
+     "level": 1,
+     "q": "What is the President of Ireland's residence called?",
+     "a": "Áras an Uachtaráin",
+     "wrong": [
+      "Leinster House",
+      "Dublin Castle",
+      "Farmleigh"
+     ],
+     "why": "It is in the Phoenix Park."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Irish mathematician carved his quaternion formula on a Dublin bridge in 1843?",
+     "a": "William Rowan Hamilton",
+     "wrong": [
+      "George Boole",
+      "Ernest Walton",
+      "John Bell"
+     ],
+     "why": "He scratched it on Broom Bridge."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which member of One Direction is from Mullingar?",
+     "a": "Niall Horan",
+     "wrong": [
+      "Harry Styles",
+      "Louis Tomlinson",
+      "Liam Payne"
+     ],
+     "why": "He was the only Irish member."
+    },
     {
      "level": 1,
      "q": "Which dark stout is brewed at St James's Gate in Dublin?",
@@ -786,17 +925,6 @@
     },
     {
      "level": 1,
-     "q": "Which instrument is on Ireland's coat of arms?",
-     "a": "Harp",
-     "wrong": [
-      "Fiddle",
-      "Bodhrán",
-      "Uilleann pipes"
-     ],
-     "why": "It also appears on euro coins and Guinness."
-    },
-    {
-     "level": 1,
      "q": "What is a 'full Irish'?",
      "a": "A cooked breakfast",
      "wrong": [
@@ -838,17 +966,6 @@
       "Irish stew"
      ],
      "why": "It was a Saturday-night meal."
-    },
-    {
-     "level": 2,
-     "q": "Which frame drum is used in Irish traditional music?",
-     "a": "Bodhrán",
-     "wrong": [
-      "Tabla",
-      "Djembe",
-      "Snare drum"
-     ],
-     "why": "It is played with a stick called a cipín."
     },
     {
      "level": 2,
@@ -904,12 +1021,7 @@
       "Gaita"
      ],
      "why": "'Uilleann' means 'of the elbow'."
-    }
-   ]
-  },
-  {
-   "name": "Ireland General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is Ireland's currency?",
@@ -920,17 +1032,6 @@
       "Krone"
      ],
      "why": "It replaced the Irish pound in 2002."
-    },
-    {
-     "level": 1,
-     "q": "What is the Irish head of government called?",
-     "a": "Taoiseach",
-     "wrong": [
-      "Tánaiste",
-      "Uachtarán",
-      "Ceann Comhairle"
-     ],
-     "why": "The Tánaiste is the deputy."
     },
     {
      "level": 1,
@@ -966,39 +1067,6 @@
      "why": "It was made around AD 800."
     },
     {
-     "level": 1,
-     "q": "What is the Irish parliament called?",
-     "a": "Oireachtas",
-     "wrong": [
-      "Bundestag",
-      "Stormont",
-      "Senedd"
-     ],
-     "why": "It is made up of the President, the Dáil and the Seanad."
-    },
-    {
-     "level": 1,
-     "q": "What is the President of Ireland's residence called?",
-     "a": "Áras an Uachtaráin",
-     "wrong": [
-      "Leinster House",
-      "Dublin Castle",
-      "Farmleigh"
-     ],
-     "why": "It is in the Phoenix Park."
-    },
-    {
-     "level": 2,
-     "q": "Which large Dublin park is one of Europe's biggest city parks?",
-     "a": "Phoenix Park",
-     "wrong": [
-      "St Stephen's Green",
-      "Merrion Square",
-      "Herbert Park"
-     ],
-     "why": "Wild deer roam there."
-    },
-    {
      "level": 2,
      "q": "What does 'Sláinte' mean?",
      "a": "Cheers (good health)",
@@ -1008,39 +1076,6 @@
       "Thank you"
      ],
      "why": "It is said when raising a glass."
-    },
-    {
-     "level": 2,
-     "q": "Which ship built in Belfast sank in 1912 after calling at Cobh?",
-     "a": "Titanic",
-     "wrong": [
-      "Lusitania",
-      "Britannic",
-      "Olympic"
-     ],
-     "why": "Cobh was then called Queenstown."
-    },
-    {
-     "level": 2,
-     "q": "Which ship was sunk off the Old Head of Kinsale in 1915?",
-     "a": "Lusitania",
-     "wrong": [
-      "Titanic",
-      "Britannic",
-      "Leinster"
-     ],
-     "why": "A German U-boat torpedoed it."
-    },
-    {
-     "level": 2,
-     "q": "What is the national anthem of Ireland?",
-     "a": "Amhrán na bhFiann",
-     "wrong": [
-      "Ireland's Call",
-      "The Fields of Athenry",
-      "Danny Boy"
-     ],
-     "why": "It means 'The Soldier's Song'."
     },
     {
      "level": 2,
@@ -1074,17 +1109,6 @@
       "Northern counties"
      ],
      "why": "They are mostly along the west coast."
-    },
-    {
-     "level": 3,
-     "q": "Which Irish mathematician carved his quaternion formula on a Dublin bridge in 1843?",
-     "a": "William Rowan Hamilton",
-     "wrong": [
-      "George Boole",
-      "Ernest Walton",
-      "John Bell"
-     ],
-     "why": "He scratched it on Broom Bridge."
     }
    ]
   }

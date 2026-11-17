@@ -3,19 +3,9 @@
  "country": "PY",
  "topics": [
   {
-   "name": "Paraguay: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Paraguay?",
-     "a": "Asunción",
-     "wrong": [
-      "Ciudad del Este",
-      "Encarnación",
-      "Luque"
-     ],
-     "why": "It is one of South America's oldest cities."
-    },
     {
      "level": 1,
      "q": "In which year did Paraguay become independent?",
@@ -40,17 +30,6 @@
     },
     {
      "level": 1,
-     "q": "Which two languages are official in Paraguay?",
-     "a": "Spanish and Guaraní",
-     "wrong": [
-      "Spanish and Portuguese",
-      "Guaraní and Quechua",
-      "Spanish and English"
-     ],
-     "why": "Most Paraguayans speak Guaraní."
-    },
-    {
-     "level": 1,
      "q": "Which 1932–35 war did Paraguay win against Bolivia?",
      "a": "Chaco War",
      "wrong": [
@@ -72,17 +51,6 @@
      "why": "His rule was one of the longest in Latin America."
     },
     {
-     "level": 1,
-     "q": "Which religious order built missions among the Guaraní?",
-     "a": "Jesuits",
-     "wrong": [
-      "Franciscans",
-      "Dominicans",
-      "Benedictines"
-     ],
-     "why": "Their story is told in the film 'The Mission'."
-    },
-    {
      "level": 2,
      "q": "Which leader died in the final battle of the Paraguayan War in 1870?",
      "a": "Francisco Solano López",
@@ -92,61 +60,6 @@
       "Bernardino Caballero"
      ],
      "why": "Paraguay lost much of its population."
-    },
-    {
-     "level": 2,
-     "q": "Which dictator after independence was called 'El Supremo'?",
-     "a": "José Gaspar Rodríguez de Francia",
-     "wrong": [
-      "Alfredo Stroessner",
-      "Carlos Antonio López",
-      "Francisco Solano López"
-     ],
-     "why": "He closed the country to the outside world."
-    },
-    {
-     "level": 2,
-     "q": "Which giant dam on the Paraná does Paraguay share with Brazil?",
-     "a": "Itaipu",
-     "wrong": [
-      "Belo Monte",
-      "Tucuruí",
-      "Guri"
-     ],
-     "why": "It produces huge amounts of electricity."
-    },
-    {
-     "level": 2,
-     "q": "Which Jesuit mission ruins are a UNESCO site?",
-     "a": "La Santísima Trinidad de Paraná and Jesús de Tavarangue",
-     "wrong": [
-      "San Ignacio Miní",
-      "Chiquitos missions",
-      "São Miguel das Missões"
-     ],
-     "why": "They date from the 1700s."
-    },
-    {
-     "level": 2,
-     "q": "Which Paraguayan author wrote 'I, the Supreme'?",
-     "a": "Augusto Roa Bastos",
-     "wrong": [
-      "Gabriel Casaccia",
-      "Josefina Plá",
-      "Elvio Romero"
-     ],
-     "why": "He won the Cervantes Prize."
-    },
-    {
-     "level": 3,
-     "q": "Which president was impeached and removed in 2012?",
-     "a": "Fernando Lugo",
-     "wrong": [
-      "Horacio Cartes",
-      "Mario Abdo Benítez",
-      "Nicanor Duarte"
-     ],
-     "why": "He had been a Catholic bishop."
     },
     {
      "level": 3,
@@ -169,33 +82,45 @@
       "Velvet Revolution"
      ],
      "why": "Rodríguez then became President."
+    },
+    {
+     "level": 2,
+     "q": "Which German-founded farming communities are in the Chaco?",
+     "a": "Mennonite colonies",
+     "wrong": [
+      "Amish villages",
+      "Jesuit missions",
+      "Gaucho ranches"
+     ],
+     "why": "Filadelfia is a main town."
     }
    ]
   },
   {
-   "name": "Paraguay: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "What is Paraguay's currency?",
-     "a": "Guaraní",
+     "q": "What is the capital of Paraguay?",
+     "a": "Asunción",
      "wrong": [
-      "Peso",
-      "Real",
-      "Boliviano"
+      "Ciudad del Este",
+      "Encarnación",
+      "Luque"
      ],
-     "why": "It is named after the Indigenous people."
+     "why": "It is one of South America's oldest cities."
     },
     {
-     "level": 1,
-     "q": "Which cold herbal drink is Paraguay's national drink?",
-     "a": "Tereré",
+     "level": 2,
+     "q": "Which Jesuit mission ruins are a UNESCO site?",
+     "a": "La Santísima Trinidad de Paraná and Jesús de Tavarangue",
      "wrong": [
-      "Mate cocido",
-      "Coca tea",
-      "Chicha"
+      "San Ignacio Miní",
+      "Chiquitos missions",
+      "São Miguel das Missões"
      ],
-     "why": "It is made with yerba mate and iced water."
+     "why": "They date from the 1700s."
     },
     {
      "level": 1,
@@ -221,28 +146,6 @@
     },
     {
      "level": 1,
-     "q": "Which cheesy cornbread is Paraguay's national dish?",
-     "a": "Sopa paraguaya",
-     "wrong": [
-      "Arepa",
-      "Pupusa",
-      "Tamale"
-     ],
-     "why": "It is called a soup but is solid."
-    },
-    {
-     "level": 1,
-     "q": "Which delicate lace is a Paraguayan craft?",
-     "a": "Ñandutí",
-     "wrong": [
-      "Bobbin lace",
-      "Battenberg lace",
-      "Crochet"
-     ],
-     "why": "Its name means 'spider web' in Guaraní."
-    },
-    {
-     "level": 1,
      "q": "Which border city is a big shopping hub?",
      "a": "Ciudad del Este",
      "wrong": [
@@ -264,27 +167,22 @@
      "why": "It is hot and sparsely populated."
     },
     {
-     "level": 2,
-     "q": "Which cheese bread rings are popular snacks?",
-     "a": "Chipa",
+     "level": 3,
+     "q": "Which pilgrimage town's basilica draws crowds on 8 December?",
+     "a": "Caacupé",
      "wrong": [
-      "Pão de queijo",
-      "Arepa",
-      "Empanada"
+      "Itauguá",
+      "Luque",
+      "Areguá"
      ],
-     "why": "They are made with cassava flour."
-    },
-    {
-     "level": 2,
-     "q": "Which harp is Paraguay's national instrument?",
-     "a": "Paraguayan harp",
-     "wrong": [
-      "Charango",
-      "Bandoneón",
-      "Cuatro"
-     ],
-     "why": "It has 36 or more strings."
-    },
+     "why": "It honours the Virgin of Caacupé."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 2,
      "q": "Which Paraguayan football goalkeeper also scored many goals?",
@@ -295,17 +193,168 @@
       "Carlos Gamarra"
      ],
      "why": "He took free kicks and penalties."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which harp is Paraguay's national instrument?",
+     "a": "Paraguayan harp",
+     "wrong": [
+      "Charango",
+      "Bandoneón",
+      "Cuatro"
+     ],
+     "why": "It has 36 or more strings."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Paraguayan author wrote 'I, the Supreme'?",
+     "a": "Augusto Roa Bastos",
+     "wrong": [
+      "Gabriel Casaccia",
+      "Josefina Plá",
+      "Elvio Romero"
+     ],
+     "why": "He won the Cervantes Prize."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which dictator after independence was called 'El Supremo'?",
+     "a": "José Gaspar Rodríguez de Francia",
+     "wrong": [
+      "Alfredo Stroessner",
+      "Carlos Antonio López",
+      "Francisco Solano López"
+     ],
+     "why": "He closed the country to the outside world."
+    },
+    {
+     "level": 3,
+     "q": "Which president was impeached and removed in 2012?",
+     "a": "Fernando Lugo",
+     "wrong": [
+      "Horacio Cartes",
+      "Mario Abdo Benítez",
+      "Nicanor Duarte"
+     ],
+     "why": "He had been a Catholic bishop."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which delicate lace is a Paraguayan craft?",
+     "a": "Ñandutí",
+     "wrong": [
+      "Bobbin lace",
+      "Battenberg lace",
+      "Crochet"
+     ],
+     "why": "Its name means 'spider web' in Guaraní."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which two languages are official in Paraguay?",
+     "a": "Spanish and Guaraní",
+     "wrong": [
+      "Spanish and Portuguese",
+      "Guaraní and Quechua",
+      "Spanish and English"
+     ],
+     "why": "Most Paraguayans speak Guaraní."
+    },
+    {
+     "level": 1,
+     "q": "Which religious order built missions among the Guaraní?",
+     "a": "Jesuits",
+     "wrong": [
+      "Franciscans",
+      "Dominicans",
+      "Benedictines"
+     ],
+     "why": "Their story is told in the film 'The Mission'."
     },
     {
      "level": 2,
-     "q": "Which German-founded farming communities are in the Chaco?",
-     "a": "Mennonite colonies",
+     "q": "Which giant dam on the Paraná does Paraguay share with Brazil?",
+     "a": "Itaipu",
      "wrong": [
-      "Amish villages",
-      "Jesuit missions",
-      "Gaucho ranches"
+      "Belo Monte",
+      "Tucuruí",
+      "Guri"
      ],
-     "why": "Filadelfia is a main town."
+     "why": "It produces huge amounts of electricity."
+    },
+    {
+     "level": 1,
+     "q": "What is Paraguay's currency?",
+     "a": "Guaraní",
+     "wrong": [
+      "Peso",
+      "Real",
+      "Boliviano"
+     ],
+     "why": "It is named after the Indigenous people."
+    },
+    {
+     "level": 1,
+     "q": "Which cold herbal drink is Paraguay's national drink?",
+     "a": "Tereré",
+     "wrong": [
+      "Mate cocido",
+      "Coca tea",
+      "Chicha"
+     ],
+     "why": "It is made with yerba mate and iced water."
+    },
+    {
+     "level": 1,
+     "q": "Which cheesy cornbread is Paraguay's national dish?",
+     "a": "Sopa paraguaya",
+     "wrong": [
+      "Arepa",
+      "Pupusa",
+      "Tamale"
+     ],
+     "why": "It is called a soup but is solid."
+    },
+    {
+     "level": 2,
+     "q": "Which cheese bread rings are popular snacks?",
+     "a": "Chipa",
+     "wrong": [
+      "Pão de queijo",
+      "Arepa",
+      "Empanada"
+     ],
+     "why": "They are made with cassava flour."
     },
     {
      "level": 3,
@@ -328,17 +377,6 @@
       "Día de la Tradición"
      ],
      "why": "It is held each June."
-    },
-    {
-     "level": 3,
-     "q": "Which pilgrimage town's basilica draws crowds on 8 December?",
-     "a": "Caacupé",
-     "wrong": [
-      "Itauguá",
-      "Luque",
-      "Areguá"
-     ],
-     "why": "It honours the Virgin of Caacupé."
     }
    ]
   }

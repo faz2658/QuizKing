@@ -3,30 +3,9 @@
  "country": "EC",
  "topics": [
   {
-   "name": "Ecuador: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Ecuador?",
-     "a": "Quito",
-     "wrong": [
-      "Guayaquil",
-      "Cuenca",
-      "Manta"
-     ],
-     "why": "It is one of the world's highest capitals."
-    },
-    {
-     "level": 1,
-     "q": "Which line gives Ecuador its name?",
-     "a": "The Equator",
-     "wrong": [
-      "The Tropic of Cancer",
-      "The Prime Meridian",
-      "The Andes"
-     ],
-     "why": "'Ecuador' is Spanish for equator."
-    },
     {
      "level": 1,
      "q": "Which empire ruled the Ecuadorian highlands before the Spanish?",
@@ -95,17 +74,6 @@
     },
     {
      "level": 2,
-     "q": "Which President took the country left from 2007 to 2017?",
-     "a": "Rafael Correa",
-     "wrong": [
-      "Lenín Moreno",
-      "Lucio Gutiérrez",
-      "Daniel Noboa"
-     ],
-     "why": "He wrote a new constitution in 2008."
-    },
-    {
-     "level": 2,
      "q": "Which constitution of 2008 was the first to give rights to nature?",
      "a": "Ecuador's constitution",
      "wrong": [
@@ -127,17 +95,6 @@
      "why": "It proved the Earth bulges at the equator."
     },
     {
-     "level": 2,
-     "q": "Which hat, made in Ecuador, is wrongly named after another country?",
-     "a": "Panama hat",
-     "wrong": [
-      "Fedora",
-      "Sombrero",
-      "Bowler"
-     ],
-     "why": "It is woven from toquilla straw."
-    },
-    {
      "level": 3,
      "q": "Which heroine helped free Quito and fought with Bolívar?",
      "a": "Manuela Sáenz",
@@ -149,32 +106,44 @@
      "why": "She saved Bolívar's life in 1828."
     },
     {
-     "level": 3,
-     "q": "Which ancient culture made pottery in Ecuador over 5,000 years ago?",
-     "a": "Valdivia culture",
+     "level": 2,
+     "q": "Which colonial city in the south is a UNESCO site?",
+     "a": "Cuenca",
      "wrong": [
-      "Chavín culture",
-      "Moche",
-      "Nazca"
+      "Loja",
+      "Riobamba",
+      "Ibarra"
      ],
-     "why": "It is one of the oldest in the Americas."
+     "why": "It is famous for its blue domes."
     },
     {
      "level": 3,
-     "q": "Which President took office in 2023 at age 35?",
-     "a": "Daniel Noboa",
+     "q": "Which Ecuadorian city's old centre was among the first two UNESCO sites in 1978?",
+     "a": "Quito",
      "wrong": [
-      "Guillermo Lasso",
-      "Lenín Moreno",
-      "Rafael Correa"
+      "Cuenca",
+      "Guayaquil",
+      "Loja"
      ],
-     "why": "He was re-elected in 2025."
+     "why": "Kraków was the other city."
     }
    ]
   },
   {
-   "name": "Ecuador: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Ecuador?",
+     "a": "Quito",
+     "wrong": [
+      "Guayaquil",
+      "Cuenca",
+      "Manta"
+     ],
+     "why": "It is one of the world's highest capitals."
+    },
     {
      "level": 1,
      "q": "Which islands inspired Darwin's theory of evolution?",
@@ -188,17 +157,6 @@
     },
     {
      "level": 1,
-     "q": "Which giant reptiles live on the Galápagos?",
-     "a": "Giant tortoises",
-     "wrong": [
-      "Komodo dragons",
-      "Crocodiles",
-      "Alligators"
-     ],
-     "why": "Some live over 100 years."
-    },
-    {
-     "level": 1,
      "q": "Which is Ecuador's largest city and main port?",
      "a": "Guayaquil",
      "wrong": [
@@ -207,17 +165,6 @@
       "Ambato"
      ],
      "why": "It is on the Guayas River."
-    },
-    {
-     "level": 1,
-     "q": "Which fruit is Ecuador one of the world's largest exporters of?",
-     "a": "Bananas",
-     "wrong": [
-      "Apples",
-      "Grapes",
-      "Oranges"
-     ],
-     "why": "They grow on the coast."
     },
     {
      "level": 1,
@@ -265,39 +212,6 @@
     },
     {
      "level": 2,
-     "q": "Which colonial city in the south is a UNESCO site?",
-     "a": "Cuenca",
-     "wrong": [
-      "Loja",
-      "Riobamba",
-      "Ibarra"
-     ],
-     "why": "It is famous for its blue domes."
-    },
-    {
-     "level": 2,
-     "q": "Which Indigenous market town north of Quito is famous for crafts?",
-     "a": "Otavalo",
-     "wrong": [
-      "Baños",
-      "Latacunga",
-      "Puyo"
-     ],
-     "why": "Its Saturday market is huge."
-    },
-    {
-     "level": 2,
-     "q": "Which roasted rodent is a traditional Andean dish?",
-     "a": "Cuy (guinea pig)",
-     "wrong": [
-      "Rabbit",
-      "Squirrel",
-      "Capybara"
-     ],
-     "why": "It is eaten at celebrations."
-    },
-    {
-     "level": 2,
      "q": "Which spa town sits at the foot of Tungurahua volcano?",
      "a": "Baños",
      "wrong": [
@@ -306,18 +220,13 @@
       "Cuenca"
      ],
      "why": "It is known for its hot springs and swings."
-    },
-    {
-     "level": 3,
-     "q": "Which Ecuadorian city's old centre was among the first two UNESCO sites in 1978?",
-     "a": "Quito",
-     "wrong": [
-      "Cuenca",
-      "Guayaquil",
-      "Loja"
-     ],
-     "why": "Kraków was the other city."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 3,
      "q": "Which Ecuadorian race walker won Olympic gold in 1996?",
@@ -339,6 +248,129 @@
       "Andrés Gómez"
      ],
      "why": "He also won the 2019 Giro d'Italia."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which President took the country left from 2007 to 2017?",
+     "a": "Rafael Correa",
+     "wrong": [
+      "Lenín Moreno",
+      "Lucio Gutiérrez",
+      "Daniel Noboa"
+     ],
+     "why": "He wrote a new constitution in 2008."
+    },
+    {
+     "level": 3,
+     "q": "Which President took office in 2023 at age 35?",
+     "a": "Daniel Noboa",
+     "wrong": [
+      "Guillermo Lasso",
+      "Lenín Moreno",
+      "Rafael Correa"
+     ],
+     "why": "He was re-elected in 2025."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which ancient culture made pottery in Ecuador over 5,000 years ago?",
+     "a": "Valdivia culture",
+     "wrong": [
+      "Chavín culture",
+      "Moche",
+      "Nazca"
+     ],
+     "why": "It is one of the oldest in the Americas."
+    },
+    {
+     "level": 2,
+     "q": "Which Indigenous market town north of Quito is famous for crafts?",
+     "a": "Otavalo",
+     "wrong": [
+      "Baños",
+      "Latacunga",
+      "Puyo"
+     ],
+     "why": "Its Saturday market is huge."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which giant reptiles live on the Galápagos?",
+     "a": "Giant tortoises",
+     "wrong": [
+      "Komodo dragons",
+      "Crocodiles",
+      "Alligators"
+     ],
+     "why": "Some live over 100 years."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which line gives Ecuador its name?",
+     "a": "The Equator",
+     "wrong": [
+      "The Tropic of Cancer",
+      "The Prime Meridian",
+      "The Andes"
+     ],
+     "why": "'Ecuador' is Spanish for equator."
+    },
+    {
+     "level": 2,
+     "q": "Which hat, made in Ecuador, is wrongly named after another country?",
+     "a": "Panama hat",
+     "wrong": [
+      "Fedora",
+      "Sombrero",
+      "Bowler"
+     ],
+     "why": "It is woven from toquilla straw."
+    },
+    {
+     "level": 1,
+     "q": "Which fruit is Ecuador one of the world's largest exporters of?",
+     "a": "Bananas",
+     "wrong": [
+      "Apples",
+      "Grapes",
+      "Oranges"
+     ],
+     "why": "They grow on the coast."
+    },
+    {
+     "level": 2,
+     "q": "Which roasted rodent is a traditional Andean dish?",
+     "a": "Cuy (guinea pig)",
+     "wrong": [
+      "Rabbit",
+      "Squirrel",
+      "Capybara"
+     ],
+     "why": "It is eaten at celebrations."
     }
    ]
   }

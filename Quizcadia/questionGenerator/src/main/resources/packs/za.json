@@ -1,132 +1,1110 @@
 {
-  "category": "South Africa",
-  "country": "ZA",
-  "topics": [
+ "category": "South Africa",
+ "country": "ZA",
+ "topics": [
+  {
+   "category": "History",
+   "name": "History",
+   "questions": [
     {
-      "name": "South Africa History",
-      "questions": [
-        { "level": 1, "q": "Who became South Africa's first democratically elected President, in 1994?", "a": "Nelson Mandela", "wrong": ["Thabo Mbeki", "F. W. de Klerk", "Oliver Tambo"], "why": "He had spent 27 years in prison." },
-        { "level": 1, "q": "In which year were South Africa's first all-race elections held?", "a": "1994", "wrong": ["1990", "1989", "1999"], "why": "Voting took place on 27 April." },
-        { "level": 1, "q": "What was the system of racial segregation in South Africa called?", "a": "Apartheid", "wrong": ["Ubuntu", "Indaba", "Trek"], "why": "It was official policy from 1948 to the early 1990s." },
-        { "level": 1, "q": "On which island was Nelson Mandela imprisoned for 18 years?", "a": "Robben Island", "wrong": ["Seal Island", "Dassen Island", "Bird Island"], "why": "It lies off Cape Town." },
-        { "level": 1, "q": "What does South Africa celebrate on 27 April?", "a": "Freedom Day", "wrong": ["Heritage Day", "Youth Day", "Reconciliation Day"], "why": "It marks the first democratic election." },
-        { "level": 1, "q": "Youth Day on 16 June remembers the 1976 uprising in which township?", "a": "Soweto", "wrong": ["Sharpeville", "Alexandra", "Khayelitsha"], "why": "Students protested against being taught in Afrikaans." },
-        { "level": 1, "q": "Which archbishop won the Nobel Peace Prize in 1984?", "a": "Desmond Tutu", "wrong": ["Trevor Huddleston", "Allan Boesak", "Denis Hurley"], "why": "He later chaired the Truth and Reconciliation Commission." },
-        { "level": 2, "q": "Which President released Mandela and shared the 1993 Nobel Peace Prize with him?", "a": "F. W. de Klerk", "wrong": ["P. W. Botha", "John Vorster", "Thabo Mbeki"], "why": "Mandela was freed on 11 February 1990." },
-        { "level": 2, "q": "In which year did police kill 69 protesters at Sharpeville?", "a": "1960", "wrong": ["1976", "1948", "1985"], "why": "21 March is now Human Rights Day." },
-        { "level": 2, "q": "Which Zulu king built a powerful kingdom in the early 1800s?", "a": "Shaka", "wrong": ["Cetshwayo", "Dingane", "Moshoeshoe"], "why": "He reorganised the Zulu army." },
-        { "level": 2, "q": "In which 1879 battle did the Zulu army defeat British troops?", "a": "Isandlwana", "wrong": ["Blood River", "Majuba Hill", "Spion Kop"], "why": "It was one of Britain's worst colonial defeats." },
-        { "level": 2, "q": "Which Dutch commander set up a supply station at the Cape in 1652?", "a": "Jan van Riebeeck", "wrong": ["Simon van der Stel", "Bartolomeu Dias", "Paul Kruger"], "why": "It was for the Dutch East India Company." },
-        { "level": 2, "q": "Which document of 1955 called for equal rights for all South Africans?", "a": "Freedom Charter", "wrong": ["Bill of Rights", "Rivonia Declaration", "Natives Land Act"], "why": "It was adopted at Kliptown in Soweto." },
-        { "level": 3, "q": "Which war between Britain and the Boer republics began in 1899?", "a": "Second Anglo-Boer War", "wrong": ["Xhosa Wars", "Anglo-Zulu War", "First Anglo-Boer War"], "why": "It ended in 1902." },
-        { "level": 3, "q": "Which Black Consciousness leader died in police custody in 1977?", "a": "Steve Biko", "wrong": ["Chris Hani", "Robert Sobukwe", "Walter Sisulu"], "why": "Peter Gabriel wrote a song about him." },
-        { "level": 3, "q": "In which year did the Union of South Africa come into being?", "a": "1910", "wrong": ["1902", "1931", "1961"], "why": "It joined four British colonies." }
-      ]
+     "level": 1,
+     "q": "Who became South Africa's first democratically elected President, in 1994?",
+     "a": "Nelson Mandela",
+     "wrong": [
+      "Thabo Mbeki",
+      "F. W. de Klerk",
+      "Oliver Tambo"
+     ],
+     "why": "He had spent 27 years in prison."
     },
     {
-      "name": "South Africa Geography",
-      "questions": [
-        { "level": 1, "q": "Which flat-topped mountain overlooks Cape Town?", "a": "Table Mountain", "wrong": ["Lion's Head", "Devil's Peak", "Signal Hill"], "why": "It is one of the New 7 Wonders of Nature." },
-        { "level": 1, "q": "Which is South Africa's largest city?", "a": "Johannesburg", "wrong": ["Cape Town", "Durban", "Pretoria"], "why": "It grew after gold was found in 1886." },
-        { "level": 1, "q": "Which famous national park is in the northeast?", "a": "Kruger National Park", "wrong": ["Addo Elephant Park", "Pilanesberg", "Hluhluwe–iMfolozi"], "why": "It covers nearly 20,000 square kilometres." },
-        { "level": 1, "q": "How many capital cities does South Africa have?", "a": "3", "wrong": ["1", "2", "4"], "why": "Pretoria, Cape Town and Bloemfontein." },
-        { "level": 1, "q": "Which city on the Indian Ocean is South Africa's busiest port?", "a": "Durban", "wrong": ["Cape Town", "Port Elizabeth", "East London"], "why": "It is in KwaZulu-Natal." },
-        { "level": 1, "q": "Which small kingdom lies entirely within South Africa?", "a": "Lesotho", "wrong": ["Eswatini", "Botswana", "Namibia"], "why": "It is called the 'Kingdom in the Sky'." },
-        { "level": 1, "q": "How many provinces does South Africa have?", "a": "9", "wrong": ["7", "10", "11"], "why": "Gauteng is the smallest but most populous." },
-        { "level": 2, "q": "Which city is the seat of government, with the Union Buildings?", "a": "Pretoria", "wrong": ["Cape Town", "Bloemfontein", "Johannesburg"], "why": "Parliament sits in Cape Town." },
-        { "level": 2, "q": "Which is South Africa's longest river?", "a": "Orange River", "wrong": ["Vaal River", "Limpopo River", "Tugela River"], "why": "It flows into the Atlantic." },
-        { "level": 2, "q": "Which mountain range is called uKhahlamba in Zulu?", "a": "Drakensberg", "wrong": ["Cederberg", "Magaliesberg", "Swartberg"], "why": "It is famous for San rock art." },
-        { "level": 2, "q": "Which cape is the southernmost point of Africa?", "a": "Cape Agulhas", "wrong": ["Cape of Good Hope", "Cape Point", "Cape St. Francis"], "why": "The Atlantic and Indian Oceans officially meet there." },
-        { "level": 2, "q": "Which red canyon in Mpumalanga is one of the largest in the world?", "a": "Blyde River Canyon", "wrong": ["Fish River Canyon", "Oribi Gorge", "Storms River Gorge"], "why": "Fish River Canyon is in Namibia." },
-        { "level": 2, "q": "Which semi-desert region covers much of the Northern Cape?", "a": "Karoo", "wrong": ["Kalahari", "Highveld", "Namaqualand"], "why": "Its name means 'land of thirst'." },
-        { "level": 3, "q": "Which city is the judicial capital?", "a": "Bloemfontein", "wrong": ["Pretoria", "Cape Town", "Kimberley"], "why": "The Supreme Court of Appeal sits there." },
-        { "level": 3, "q": "Which river forms the border with Zimbabwe?", "a": "Limpopo River", "wrong": ["Orange River", "Vaal River", "Zambezi River"], "why": "Kipling called it 'great grey-green, greasy'." },
-        { "level": 3, "q": "Kimberley is famous for which huge hand-dug mine?", "a": "The Big Hole", "wrong": ["The Cullinan Mine", "The Witwatersrand", "The Sterkfontein Caves"], "why": "It was dug for diamonds from 1871." }
-      ]
+     "level": 1,
+     "q": "In which year were South Africa's first all-race elections held?",
+     "a": "1994",
+     "wrong": [
+      "1990",
+      "1989",
+      "1999"
+     ],
+     "why": "Voting took place on 27 April."
     },
     {
-      "name": "South Africa Sport",
-      "questions": [
-        { "level": 1, "q": "What is South Africa's national rugby team called?", "a": "Springboks", "wrong": ["Proteas", "Bafana Bafana", "Blitzboks"], "why": "They have won four Rugby World Cups." },
-        { "level": 1, "q": "What is the national cricket team called?", "a": "Proteas", "wrong": ["Springboks", "Bafana Bafana", "Banyana Banyana"], "why": "The protea is the national flower." },
-        { "level": 1, "q": "What is the men's national football team called?", "a": "Bafana Bafana", "wrong": ["Banyana Banyana", "Proteas", "Super Eagles"], "why": "It means 'the boys' in Zulu." },
-        { "level": 1, "q": "Which country hosted the first FIFA World Cup in Africa, in 2010?", "a": "South Africa", "wrong": ["Egypt", "Nigeria", "Morocco"], "why": "The vuvuzela became famous worldwide." },
-        { "level": 1, "q": "In which year did Mandela present the Rugby World Cup to Francois Pienaar?", "a": "1995", "wrong": ["1999", "2007", "1991"], "why": "The film 'Invictus' tells the story." },
-        { "level": 1, "q": "Which South African swimmer won breaststroke golds at the Olympics?", "a": "Tatjana Smith", "wrong": ["Penny Heyns", "Chad le Clos", "Natalie du Toit"], "why": "She won in Tokyo and Paris." },
-        { "level": 1, "q": "Which sprinter holds the 400 m world record?", "a": "Wayde van Niekerk", "wrong": ["Akani Simbine", "Caster Semenya", "Luvo Manyonga"], "why": "He ran 43.03 at Rio 2016." },
-        { "level": 2, "q": "Who captained the Springboks to World Cup wins in 2019 and 2023?", "a": "Siya Kolisi", "wrong": ["John Smit", "Eben Etzebeth", "Handré Pollard"], "why": "He was the first Black Springbok Test captain." },
-        { "level": 2, "q": "What is the women's national football team called?", "a": "Banyana Banyana", "wrong": ["Bafana Bafana", "Lady Proteas", "Springbokkies"], "why": "They won the 2022 Women's Africa Cup of Nations." },
-        { "level": 2, "q": "Which golfer, 'The Big Easy', won the US Open twice?", "a": "Ernie Els", "wrong": ["Gary Player", "Retief Goosen", "Louis Oosthuizen"], "why": "He also won The Open twice." },
-        { "level": 2, "q": "Which golfer, 'The Black Knight', won nine majors?", "a": "Gary Player", "wrong": ["Ernie Els", "Bobby Locke", "Trevor Immelman"], "why": "He won the career Grand Slam." },
-        { "level": 2, "q": "Which famous ultramarathon runs between Durban and Pietermaritzburg?", "a": "Comrades Marathon", "wrong": ["Two Oceans Marathon", "Soweto Marathon", "Cape Epic"], "why": "It is about 90 km long." },
-        { "level": 2, "q": "Which Johannesburg stadium hosted the 2010 World Cup final?", "a": "FNB Stadium", "wrong": ["Ellis Park", "Loftus Versfeld", "Moses Mabhida Stadium"], "why": "It is also called Soccer City." },
-        { "level": 3, "q": "Which batter scored the fastest ODI century, off 31 balls, in 2015?", "a": "AB de Villiers", "wrong": ["Hashim Amla", "Herschelle Gibbs", "Quinton de Kock"], "why": "He hit it against the West Indies." },
-        { "level": 3, "q": "Which swimmer won Olympic 200 m butterfly gold in 2012, beating Michael Phelps?", "a": "Chad le Clos", "wrong": ["Roland Schoeman", "Cameron van der Burgh", "Ryan Coetzee"], "why": "Phelps was his childhood hero." },
-        { "level": 3, "q": "How many Rugby World Cups have the Springboks won?", "a": "4", "wrong": ["2", "3", "5"], "why": "In 1995, 2007, 2019 and 2023." }
-      ]
+     "level": 1,
+     "q": "What was the system of racial segregation in South Africa called?",
+     "a": "Apartheid",
+     "wrong": [
+      "Ubuntu",
+      "Indaba",
+      "Trek"
+     ],
+     "why": "It was official policy from 1948 to the early 1990s."
     },
     {
-      "name": "South Africa Film, TV & Music",
-      "questions": [
-        { "level": 1, "q": "Which singer was called 'Mama Africa'?", "a": "Miriam Makeba", "wrong": ["Brenda Fassie", "Yvonne Chaka Chaka", "Lira"], "why": "Her hit 'Pata Pata' was a worldwide success." },
-        { "level": 1, "q": "Which choir won Grammys and sang on Paul Simon's 'Graceland'?", "a": "Ladysmith Black Mambazo", "wrong": ["Soweto Gospel Choir", "Mahotella Queens", "Stimela"], "why": "Joseph Shabalala founded it." },
-        { "level": 1, "q": "Which piano-led house music style was born in South African townships?", "a": "Amapiano", "wrong": ["Kwaito", "Gqom", "Afrobeat"], "why": "It grew in Gauteng in the 2010s." },
-        { "level": 1, "q": "Which South African comedian hosted 'The Daily Show'?", "a": "Trevor Noah", "wrong": ["Loyiso Gola", "Marc Lottering", "Riaad Moosa"], "why": "He hosted it from 2015 to 2022." },
-        { "level": 1, "q": "Which song by Master KG became a global dance hit in 2020?", "a": "Jerusalema", "wrong": ["Pata Pata", "Weekend Special", "Vulindlela"], "why": "Nomcebo Zikode sang on it." },
-        { "level": 1, "q": "Which South African actress won an Oscar for 'Monster'?", "a": "Charlize Theron", "wrong": ["Thuso Mbedu", "Pearl Thusi", "Embeth Davidtz"], "why": "She won Best Actress in 2004." },
-        { "level": 1, "q": "Which singer was called the 'Madonna of the Townships'?", "a": "Brenda Fassie", "wrong": ["Miriam Makeba", "Yvonne Chaka Chaka", "Thandiswa Mazwai"], "why": "Her hit 'Weekend Special' came out in 1983." },
-        { "level": 2, "q": "Which trumpeter wrote 'Grazing in the Grass'?", "a": "Hugh Masekela", "wrong": ["Abdullah Ibrahim", "Jonas Gwangwa", "Johnny Dyani"], "why": "It topped the US charts in 1968." },
-        { "level": 2, "q": "Which 2005 film won South Africa its first Oscar for Best Foreign Language Film?", "a": "Tsotsi", "wrong": ["District 9", "Yesterday", "Skoonheid"], "why": "It is set in Johannesburg's townships." },
-        { "level": 2, "q": "Who directed 'District 9'?", "a": "Neill Blomkamp", "wrong": ["Gavin Hood", "Jamie Uys", "Oliver Schmitz"], "why": "It is set in Johannesburg." },
-        { "level": 2, "q": "Which 1980 comedy by Jamie Uys features a Coke bottle in the Kalahari?", "a": "The Gods Must Be Crazy", "wrong": ["Mr. Bones", "Leon Schuster's Funny People", "Beautiful People"], "why": "It was a huge international hit." },
-        { "level": 2, "q": "Which writer won the Nobel Prize in Literature in 1991?", "a": "Nadine Gordimer", "wrong": ["J. M. Coetzee", "Alan Paton", "André Brink"], "why": "Coetzee won in 2003." },
-        { "level": 2, "q": "Who wrote 'Cry, the Beloved Country'?", "a": "Alan Paton", "wrong": ["Nadine Gordimer", "J. M. Coetzee", "Athol Fugard"], "why": "It was published in 1948." },
-        { "level": 3, "q": "Which author won the Booker Prize twice, for 'Life & Times of Michael K' and 'Disgrace'?", "a": "J. M. Coetzee", "wrong": ["Damon Galgut", "Nadine Gordimer", "André Brink"], "why": "Damon Galgut won it in 2021." },
-        { "level": 3, "q": "Which music style of the 1990s takes its name from a slang word for 'hot'?", "a": "Kwaito", "wrong": ["Mbaqanga", "Maskandi", "Gqom"], "why": "It was the sound of the post-apartheid generation." },
-        { "level": 3, "q": "Which playwright wrote 'Master Harold... and the Boys'?", "a": "Athol Fugard", "wrong": ["Zakes Mda", "Gibson Kente", "John Kani"], "why": "It is set in a tea room in Port Elizabeth." }
-      ]
+     "level": 1,
+     "q": "On which island was Nelson Mandela imprisoned for 18 years?",
+     "a": "Robben Island",
+     "wrong": [
+      "Seal Island",
+      "Dassen Island",
+      "Bird Island"
+     ],
+     "why": "It lies off Cape Town."
     },
     {
-      "name": "South Africa Food & Traditions",
-      "questions": [
-        { "level": 1, "q": "What do South Africans call a barbecue?", "a": "Braai", "wrong": ["Potjie", "Shisanyama", "Bunny chow"], "why": "Heritage Day is also called National Braai Day." },
-        { "level": 1, "q": "What is dried, cured meat like beef jerky called?", "a": "Biltong", "wrong": ["Boerewors", "Droëwors", "Bobotie"], "why": "It comes from Dutch words for 'buttock' and 'strip'." },
-        { "level": 1, "q": "Which Durban dish is a hollowed loaf filled with curry?", "a": "Bunny chow", "wrong": ["Bobotie", "Gatsby", "Vetkoek"], "why": "It came from Durban's Indian community." },
-        { "level": 1, "q": "What is the spiced sausage cooked at a braai called?", "a": "Boerewors", "wrong": ["Biltong", "Chakalaka", "Pap"], "why": "Its name means 'farmer's sausage'." },
-        { "level": 1, "q": "Which spiced minced-meat bake with an egg topping is a national dish?", "a": "Bobotie", "wrong": ["Bredie", "Potjiekos", "Sosatie"], "why": "It comes from Cape Malay cooking." },
-        { "level": 1, "q": "What is pap?", "a": "Maize porridge", "wrong": ["Sorghum beer", "A meat pie", "A sweet bun"], "why": "It is a staple across the country." },
-        { "level": 1, "q": "Which plaited, syrup-soaked doughnut is an Afrikaner treat?", "a": "Koeksister", "wrong": ["Vetkoek", "Melktert", "Malva pudding"], "why": "A Cape Malay version is spiced and coated in coconut." },
-        { "level": 2, "q": "What does South Africa celebrate on 24 September?", "a": "Heritage Day", "wrong": ["Freedom Day", "Youth Day", "Day of Reconciliation"], "why": "People celebrate their cultures and traditions." },
-        { "level": 2, "q": "Which spicy vegetable relish is served with pap and braai meat?", "a": "Chakalaka", "wrong": ["Atchar", "Blatjang", "Sambal"], "why": "It is thought to come from Johannesburg's townships." },
-        { "level": 2, "q": "What is a potjie?", "a": "A three-legged cast-iron pot", "wrong": ["A wooden spoon", "A clay oven", "A grilling rack"], "why": "Potjiekos is a stew cooked slowly in it." },
-        { "level": 2, "q": "What is the herbal tea from the Cederberg called?", "a": "Rooibos", "wrong": ["Honeybush", "Buchu", "Masala chai"], "why": "Its name means 'red bush'." },
-        { "level": 2, "q": "Which Cape Town carnival with minstrels takes place on 2 January?", "a": "Kaapse Klopse", "wrong": ["Cape Town Pride", "Afrikaburn", "Splashy Fen"], "why": "It is also called Tweede Nuwe Jaar." },
-        { "level": 2, "q": "Which baked custard tart is a South African favourite?", "a": "Melktert", "wrong": ["Koeksister", "Malva pudding", "Vetkoek"], "why": "Its name means 'milk tart'." },
-        { "level": 3, "q": "Which Zulu ceremony sees young women present reeds to the king?", "a": "Umkhosi woMhlanga", "wrong": ["Ukweshwama", "Umemulo", "Inxwala"], "why": "It is the Reed Dance, held each September." },
-        { "level": 3, "q": "Which spongy apricot-jam pudding is served with custard?", "a": "Malva pudding", "wrong": ["Melktert", "Sago pudding", "Brandy tart"], "why": "It is a Cape Dutch dessert." },
-        { "level": 3, "q": "Which fried bread is filled with mince or jam?", "a": "Vetkoek", "wrong": ["Roosterkoek", "Mosbolletjie", "Potbrood"], "why": "Its name means 'fat cake'." }
-      ]
+     "level": 1,
+     "q": "What does South Africa celebrate on 27 April?",
+     "a": "Freedom Day",
+     "wrong": [
+      "Heritage Day",
+      "Youth Day",
+      "Reconciliation Day"
+     ],
+     "why": "It marks the first democratic election."
     },
     {
-      "name": "South Africa General Knowledge",
-      "questions": [
-        { "level": 1, "q": "What is South Africa's currency?", "a": "Rand", "wrong": ["Pula", "Naira", "Shilling"], "why": "It is named after the Witwatersrand ridge." },
-        { "level": 1, "q": "How many official languages does South Africa have?", "a": "12", "wrong": ["2", "9", "5"], "why": "Sign language became the 12th in 2023." },
-        { "level": 1, "q": "What is South Africa's nickname?", "a": "The Rainbow Nation", "wrong": ["The Giant of Africa", "The Pearl of Africa", "The Land of a Thousand Hills"], "why": "Archbishop Desmond Tutu used the phrase." },
-        { "level": 1, "q": "What is the national flower?", "a": "King protea", "wrong": ["Bird of paradise", "Arum lily", "Red disa"], "why": "It is the largest of the proteas." },
-        { "level": 1, "q": "What is the national animal?", "a": "Springbok", "wrong": ["Lion", "Elephant", "Blue crane"], "why": "It is a fast antelope." },
-        { "level": 1, "q": "Which Zulu word means 'humanity towards others'?", "a": "Ubuntu", "wrong": ["Indaba", "Sawubona", "Lekker"], "why": "It is often explained as 'I am because we are'." },
-        { "level": 1, "q": "Which surgeon performed the world's first human heart transplant, in Cape Town?", "a": "Christiaan Barnard", "wrong": ["Hamilton Naki", "Denton Cooley", "Max Theiler"], "why": "It was done at Groote Schuur Hospital in 1967." },
-        { "level": 2, "q": "What is the national bird?", "a": "Blue crane", "wrong": ["African fish eagle", "Ostrich", "Secretary bird"], "why": "It appeared on the old five-cent coin." },
-        { "level": 2, "q": "Which caves near Johannesburg are called the 'Cradle of Humankind'?", "a": "Sterkfontein Caves", "wrong": ["Cango Caves", "Sudwala Caves", "Wonderwerk Cave"], "why": "The fossil 'Mrs Ples' was found there." },
-        { "level": 2, "q": "What was the largest gem-quality diamond ever found, in 1905?", "a": "The Cullinan Diamond", "wrong": ["The Hope Diamond", "The Koh-i-Noor", "The Great Mogul"], "why": "Pieces of it are in the British Crown Jewels." },
-        { "level": 2, "q": "Which Johannesburg-born entrepreneur founded SpaceX?", "a": "Elon Musk", "wrong": ["Mark Shuttleworth", "Patrice Motsepe", "Koos Bekker"], "why": "He grew up in Pretoria." },
-        { "level": 2, "q": "Which South African became the first African in space, in 2002?", "a": "Mark Shuttleworth", "wrong": ["Elon Musk", "Mandla Maseko", "Patrice Motsepe"], "why": "He flew to the International Space Station." },
-        { "level": 2, "q": "Which hymn by Enoch Sontonga opens South Africa's national anthem?", "a": "Nkosi Sikelel' iAfrika", "wrong": ["Die Stem van Suid-Afrika", "Shosholoza", "Senzeni Na"], "why": "The anthem uses five of the official languages." },
-        { "level": 3, "q": "Which ancient fossil skull, found in 1947, is nicknamed 'Mrs Ples'?", "a": "Australopithecus africanus", "wrong": ["Homo naledi", "Homo erectus", "Paranthropus robustus"], "why": "It is about 2.1 million years old." },
-        { "level": 3, "q": "Which body investigated apartheid-era crimes from 1996?", "a": "Truth and Reconciliation Commission", "wrong": ["Constitutional Court", "Human Rights Commission", "Electoral Commission"], "why": "Desmond Tutu chaired it." },
-        { "level": 3, "q": "Which word means 'great' or 'nice' in South African slang?", "a": "Lekker", "wrong": ["Eish", "Howzit", "Shame"], "why": "It comes from Afrikaans." }
-      ]
+     "level": 1,
+     "q": "Youth Day on 16 June remembers the 1976 uprising in which township?",
+     "a": "Soweto",
+     "wrong": [
+      "Sharpeville",
+      "Alexandra",
+      "Khayelitsha"
+     ],
+     "why": "Students protested against being taught in Afrikaans."
+    },
+    {
+     "level": 1,
+     "q": "Which archbishop won the Nobel Peace Prize in 1984?",
+     "a": "Desmond Tutu",
+     "wrong": [
+      "Trevor Huddleston",
+      "Allan Boesak",
+      "Denis Hurley"
+     ],
+     "why": "He later chaired the Truth and Reconciliation Commission."
+    },
+    {
+     "level": 2,
+     "q": "Which President released Mandela and shared the 1993 Nobel Peace Prize with him?",
+     "a": "F. W. de Klerk",
+     "wrong": [
+      "P. W. Botha",
+      "John Vorster",
+      "Thabo Mbeki"
+     ],
+     "why": "Mandela was freed on 11 February 1990."
+    },
+    {
+     "level": 2,
+     "q": "In which year did police kill 69 protesters at Sharpeville?",
+     "a": "1960",
+     "wrong": [
+      "1976",
+      "1948",
+      "1985"
+     ],
+     "why": "21 March is now Human Rights Day."
+    },
+    {
+     "level": 2,
+     "q": "Which Zulu king built a powerful kingdom in the early 1800s?",
+     "a": "Shaka",
+     "wrong": [
+      "Cetshwayo",
+      "Dingane",
+      "Moshoeshoe"
+     ],
+     "why": "He reorganised the Zulu army."
+    },
+    {
+     "level": 2,
+     "q": "In which 1879 battle did the Zulu army defeat British troops?",
+     "a": "Isandlwana",
+     "wrong": [
+      "Blood River",
+      "Majuba Hill",
+      "Spion Kop"
+     ],
+     "why": "It was one of Britain's worst colonial defeats."
+    },
+    {
+     "level": 2,
+     "q": "Which Dutch commander set up a supply station at the Cape in 1652?",
+     "a": "Jan van Riebeeck",
+     "wrong": [
+      "Simon van der Stel",
+      "Bartolomeu Dias",
+      "Paul Kruger"
+     ],
+     "why": "It was for the Dutch East India Company."
+    },
+    {
+     "level": 2,
+     "q": "Which document of 1955 called for equal rights for all South Africans?",
+     "a": "Freedom Charter",
+     "wrong": [
+      "Bill of Rights",
+      "Rivonia Declaration",
+      "Natives Land Act"
+     ],
+     "why": "It was adopted at Kliptown in Soweto."
+    },
+    {
+     "level": 3,
+     "q": "Which war between Britain and the Boer republics began in 1899?",
+     "a": "Second Anglo-Boer War",
+     "wrong": [
+      "Xhosa Wars",
+      "Anglo-Zulu War",
+      "First Anglo-Boer War"
+     ],
+     "why": "It ended in 1902."
+    },
+    {
+     "level": 3,
+     "q": "Which Black Consciousness leader died in police custody in 1977?",
+     "a": "Steve Biko",
+     "wrong": [
+      "Chris Hani",
+      "Robert Sobukwe",
+      "Walter Sisulu"
+     ],
+     "why": "Peter Gabriel wrote a song about him."
+    },
+    {
+     "level": 3,
+     "q": "In which year did the Union of South Africa come into being?",
+     "a": "1910",
+     "wrong": [
+      "1902",
+      "1931",
+      "1961"
+     ],
+     "why": "It joined four British colonies."
+    },
+    {
+     "level": 2,
+     "q": "What was the largest gem-quality diamond ever found, in 1905?",
+     "a": "The Cullinan Diamond",
+     "wrong": [
+      "The Hope Diamond",
+      "The Koh-i-Noor",
+      "The Great Mogul"
+     ],
+     "why": "Pieces of it are in the British Crown Jewels."
+    },
+    {
+     "level": 2,
+     "q": "Which Johannesburg-born entrepreneur founded SpaceX?",
+     "a": "Elon Musk",
+     "wrong": [
+      "Mark Shuttleworth",
+      "Patrice Motsepe",
+      "Koos Bekker"
+     ],
+     "why": "He grew up in Pretoria."
+    },
+    {
+     "level": 2,
+     "q": "Which South African became the first African in space, in 2002?",
+     "a": "Mark Shuttleworth",
+     "wrong": [
+      "Elon Musk",
+      "Mandla Maseko",
+      "Patrice Motsepe"
+     ],
+     "why": "He flew to the International Space Station."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient fossil skull, found in 1947, is nicknamed 'Mrs Ples'?",
+     "a": "Australopithecus africanus",
+     "wrong": [
+      "Homo naledi",
+      "Homo erectus",
+      "Paranthropus robustus"
+     ],
+     "why": "It is about 2.1 million years old."
+    },
+    {
+     "level": 3,
+     "q": "Which body investigated apartheid-era crimes from 1996?",
+     "a": "Truth and Reconciliation Commission",
+     "wrong": [
+      "Constitutional Court",
+      "Human Rights Commission",
+      "Electoral Commission"
+     ],
+     "why": "Desmond Tutu chaired it."
     }
-  ]
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which flat-topped mountain overlooks Cape Town?",
+     "a": "Table Mountain",
+     "wrong": [
+      "Lion's Head",
+      "Devil's Peak",
+      "Signal Hill"
+     ],
+     "why": "It is one of the New 7 Wonders of Nature."
+    },
+    {
+     "level": 1,
+     "q": "Which is South Africa's largest city?",
+     "a": "Johannesburg",
+     "wrong": [
+      "Cape Town",
+      "Durban",
+      "Pretoria"
+     ],
+     "why": "It grew after gold was found in 1886."
+    },
+    {
+     "level": 1,
+     "q": "Which famous national park is in the northeast?",
+     "a": "Kruger National Park",
+     "wrong": [
+      "Addo Elephant Park",
+      "Pilanesberg",
+      "Hluhluwe–iMfolozi"
+     ],
+     "why": "It covers nearly 20,000 square kilometres."
+    },
+    {
+     "level": 1,
+     "q": "How many capital cities does South Africa have?",
+     "a": "3",
+     "wrong": [
+      "1",
+      "2",
+      "4"
+     ],
+     "why": "Pretoria, Cape Town and Bloemfontein."
+    },
+    {
+     "level": 1,
+     "q": "Which city on the Indian Ocean is South Africa's busiest port?",
+     "a": "Durban",
+     "wrong": [
+      "Cape Town",
+      "Port Elizabeth",
+      "East London"
+     ],
+     "why": "It is in KwaZulu-Natal."
+    },
+    {
+     "level": 1,
+     "q": "Which small kingdom lies entirely within South Africa?",
+     "a": "Lesotho",
+     "wrong": [
+      "Eswatini",
+      "Botswana",
+      "Namibia"
+     ],
+     "why": "It is called the 'Kingdom in the Sky'."
+    },
+    {
+     "level": 1,
+     "q": "How many provinces does South Africa have?",
+     "a": "9",
+     "wrong": [
+      "7",
+      "10",
+      "11"
+     ],
+     "why": "Gauteng is the smallest but most populous."
+    },
+    {
+     "level": 2,
+     "q": "Which city is the seat of government, with the Union Buildings?",
+     "a": "Pretoria",
+     "wrong": [
+      "Cape Town",
+      "Bloemfontein",
+      "Johannesburg"
+     ],
+     "why": "Parliament sits in Cape Town."
+    },
+    {
+     "level": 2,
+     "q": "Which is South Africa's longest river?",
+     "a": "Orange River",
+     "wrong": [
+      "Vaal River",
+      "Limpopo River",
+      "Tugela River"
+     ],
+     "why": "It flows into the Atlantic."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain range is called uKhahlamba in Zulu?",
+     "a": "Drakensberg",
+     "wrong": [
+      "Cederberg",
+      "Magaliesberg",
+      "Swartberg"
+     ],
+     "why": "It is famous for San rock art."
+    },
+    {
+     "level": 2,
+     "q": "Which cape is the southernmost point of Africa?",
+     "a": "Cape Agulhas",
+     "wrong": [
+      "Cape of Good Hope",
+      "Cape Point",
+      "Cape St. Francis"
+     ],
+     "why": "The Atlantic and Indian Oceans officially meet there."
+    },
+    {
+     "level": 2,
+     "q": "Which red canyon in Mpumalanga is one of the largest in the world?",
+     "a": "Blyde River Canyon",
+     "wrong": [
+      "Fish River Canyon",
+      "Oribi Gorge",
+      "Storms River Gorge"
+     ],
+     "why": "Fish River Canyon is in Namibia."
+    },
+    {
+     "level": 2,
+     "q": "Which semi-desert region covers much of the Northern Cape?",
+     "a": "Karoo",
+     "wrong": [
+      "Kalahari",
+      "Highveld",
+      "Namaqualand"
+     ],
+     "why": "Its name means 'land of thirst'."
+    },
+    {
+     "level": 3,
+     "q": "Which city is the judicial capital?",
+     "a": "Bloemfontein",
+     "wrong": [
+      "Pretoria",
+      "Cape Town",
+      "Kimberley"
+     ],
+     "why": "The Supreme Court of Appeal sits there."
+    },
+    {
+     "level": 3,
+     "q": "Which river forms the border with Zimbabwe?",
+     "a": "Limpopo River",
+     "wrong": [
+      "Orange River",
+      "Vaal River",
+      "Zambezi River"
+     ],
+     "why": "Kipling called it 'great grey-green, greasy'."
+    },
+    {
+     "level": 3,
+     "q": "Kimberley is famous for which huge hand-dug mine?",
+     "a": "The Big Hole",
+     "wrong": [
+      "The Cullinan Mine",
+      "The Witwatersrand",
+      "The Sterkfontein Caves"
+     ],
+     "why": "It was dug for diamonds from 1871."
+    },
+    {
+     "level": 1,
+     "q": "Which surgeon performed the world's first human heart transplant, in Cape Town?",
+     "a": "Christiaan Barnard",
+     "wrong": [
+      "Hamilton Naki",
+      "Denton Cooley",
+      "Max Theiler"
+     ],
+     "why": "It was done at Groote Schuur Hospital in 1967."
+    },
+    {
+     "level": 2,
+     "q": "Which caves near Johannesburg are called the 'Cradle of Humankind'?",
+     "a": "Sterkfontein Caves",
+     "wrong": [
+      "Cango Caves",
+      "Sudwala Caves",
+      "Wonderwerk Cave"
+     ],
+     "why": "The fossil 'Mrs Ples' was found there."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is South Africa's national rugby team called?",
+     "a": "Springboks",
+     "wrong": [
+      "Proteas",
+      "Bafana Bafana",
+      "Blitzboks"
+     ],
+     "why": "They have won four Rugby World Cups."
+    },
+    {
+     "level": 1,
+     "q": "What is the national cricket team called?",
+     "a": "Proteas",
+     "wrong": [
+      "Springboks",
+      "Bafana Bafana",
+      "Banyana Banyana"
+     ],
+     "why": "The protea is the national flower."
+    },
+    {
+     "level": 1,
+     "q": "What is the men's national football team called?",
+     "a": "Bafana Bafana",
+     "wrong": [
+      "Banyana Banyana",
+      "Proteas",
+      "Super Eagles"
+     ],
+     "why": "It means 'the boys' in Zulu."
+    },
+    {
+     "level": 1,
+     "q": "Which country hosted the first FIFA World Cup in Africa, in 2010?",
+     "a": "South Africa",
+     "wrong": [
+      "Egypt",
+      "Nigeria",
+      "Morocco"
+     ],
+     "why": "The vuvuzela became famous worldwide."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Mandela present the Rugby World Cup to Francois Pienaar?",
+     "a": "1995",
+     "wrong": [
+      "1999",
+      "2007",
+      "1991"
+     ],
+     "why": "The film 'Invictus' tells the story."
+    },
+    {
+     "level": 1,
+     "q": "Which South African swimmer won breaststroke golds at the Olympics?",
+     "a": "Tatjana Smith",
+     "wrong": [
+      "Penny Heyns",
+      "Chad le Clos",
+      "Natalie du Toit"
+     ],
+     "why": "She won in Tokyo and Paris."
+    },
+    {
+     "level": 1,
+     "q": "Which sprinter holds the 400 m world record?",
+     "a": "Wayde van Niekerk",
+     "wrong": [
+      "Akani Simbine",
+      "Caster Semenya",
+      "Luvo Manyonga"
+     ],
+     "why": "He ran 43.03 at Rio 2016."
+    },
+    {
+     "level": 2,
+     "q": "Who captained the Springboks to World Cup wins in 2019 and 2023?",
+     "a": "Siya Kolisi",
+     "wrong": [
+      "John Smit",
+      "Eben Etzebeth",
+      "Handré Pollard"
+     ],
+     "why": "He was the first Black Springbok Test captain."
+    },
+    {
+     "level": 2,
+     "q": "What is the women's national football team called?",
+     "a": "Banyana Banyana",
+     "wrong": [
+      "Bafana Bafana",
+      "Lady Proteas",
+      "Springbokkies"
+     ],
+     "why": "They won the 2022 Women's Africa Cup of Nations."
+    },
+    {
+     "level": 2,
+     "q": "Which golfer, 'The Big Easy', won the US Open twice?",
+     "a": "Ernie Els",
+     "wrong": [
+      "Gary Player",
+      "Retief Goosen",
+      "Louis Oosthuizen"
+     ],
+     "why": "He also won The Open twice."
+    },
+    {
+     "level": 2,
+     "q": "Which golfer, 'The Black Knight', won nine majors?",
+     "a": "Gary Player",
+     "wrong": [
+      "Ernie Els",
+      "Bobby Locke",
+      "Trevor Immelman"
+     ],
+     "why": "He won the career Grand Slam."
+    },
+    {
+     "level": 2,
+     "q": "Which famous ultramarathon runs between Durban and Pietermaritzburg?",
+     "a": "Comrades Marathon",
+     "wrong": [
+      "Two Oceans Marathon",
+      "Soweto Marathon",
+      "Cape Epic"
+     ],
+     "why": "It is about 90 km long."
+    },
+    {
+     "level": 2,
+     "q": "Which Johannesburg stadium hosted the 2010 World Cup final?",
+     "a": "FNB Stadium",
+     "wrong": [
+      "Ellis Park",
+      "Loftus Versfeld",
+      "Moses Mabhida Stadium"
+     ],
+     "why": "It is also called Soccer City."
+    },
+    {
+     "level": 3,
+     "q": "Which batter scored the fastest ODI century, off 31 balls, in 2015?",
+     "a": "AB de Villiers",
+     "wrong": [
+      "Hashim Amla",
+      "Herschelle Gibbs",
+      "Quinton de Kock"
+     ],
+     "why": "He hit it against the West Indies."
+    },
+    {
+     "level": 3,
+     "q": "Which swimmer won Olympic 200 m butterfly gold in 2012, beating Michael Phelps?",
+     "a": "Chad le Clos",
+     "wrong": [
+      "Roland Schoeman",
+      "Cameron van der Burgh",
+      "Ryan Coetzee"
+     ],
+     "why": "Phelps was his childhood hero."
+    },
+    {
+     "level": 3,
+     "q": "How many Rugby World Cups have the Springboks won?",
+     "a": "4",
+     "wrong": [
+      "2",
+      "3",
+      "5"
+     ],
+     "why": "In 1995, 2007, 2019 and 2023."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which singer was called 'Mama Africa'?",
+     "a": "Miriam Makeba",
+     "wrong": [
+      "Brenda Fassie",
+      "Yvonne Chaka Chaka",
+      "Lira"
+     ],
+     "why": "Her hit 'Pata Pata' was a worldwide success."
+    },
+    {
+     "level": 1,
+     "q": "Which choir won Grammys and sang on Paul Simon's 'Graceland'?",
+     "a": "Ladysmith Black Mambazo",
+     "wrong": [
+      "Soweto Gospel Choir",
+      "Mahotella Queens",
+      "Stimela"
+     ],
+     "why": "Joseph Shabalala founded it."
+    },
+    {
+     "level": 1,
+     "q": "Which piano-led house music style was born in South African townships?",
+     "a": "Amapiano",
+     "wrong": [
+      "Kwaito",
+      "Gqom",
+      "Afrobeat"
+     ],
+     "why": "It grew in Gauteng in the 2010s."
+    },
+    {
+     "level": 1,
+     "q": "Which song by Master KG became a global dance hit in 2020?",
+     "a": "Jerusalema",
+     "wrong": [
+      "Pata Pata",
+      "Weekend Special",
+      "Vulindlela"
+     ],
+     "why": "Nomcebo Zikode sang on it."
+    },
+    {
+     "level": 1,
+     "q": "Which singer was called the 'Madonna of the Townships'?",
+     "a": "Brenda Fassie",
+     "wrong": [
+      "Miriam Makeba",
+      "Yvonne Chaka Chaka",
+      "Thandiswa Mazwai"
+     ],
+     "why": "Her hit 'Weekend Special' came out in 1983."
+    },
+    {
+     "level": 3,
+     "q": "Which music style of the 1990s takes its name from a slang word for 'hot'?",
+     "a": "Kwaito",
+     "wrong": [
+      "Mbaqanga",
+      "Maskandi",
+      "Gqom"
+     ],
+     "why": "It was the sound of the post-apartheid generation."
+    },
+    {
+     "level": 2,
+     "q": "Which hymn by Enoch Sontonga opens South Africa's national anthem?",
+     "a": "Nkosi Sikelel' iAfrika",
+     "wrong": [
+      "Die Stem van Suid-Afrika",
+      "Shosholoza",
+      "Senzeni Na"
+     ],
+     "why": "The anthem uses five of the official languages."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which South African comedian hosted 'The Daily Show'?",
+     "a": "Trevor Noah",
+     "wrong": [
+      "Loyiso Gola",
+      "Marc Lottering",
+      "Riaad Moosa"
+     ],
+     "why": "He hosted it from 2015 to 2022."
+    },
+    {
+     "level": 1,
+     "q": "Which South African actress won an Oscar for 'Monster'?",
+     "a": "Charlize Theron",
+     "wrong": [
+      "Thuso Mbedu",
+      "Pearl Thusi",
+      "Embeth Davidtz"
+     ],
+     "why": "She won Best Actress in 2004."
+    },
+    {
+     "level": 2,
+     "q": "Which 2005 film won South Africa its first Oscar for Best Foreign Language Film?",
+     "a": "Tsotsi",
+     "wrong": [
+      "District 9",
+      "Yesterday",
+      "Skoonheid"
+     ],
+     "why": "It is set in Johannesburg's townships."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which trumpeter wrote 'Grazing in the Grass'?",
+     "a": "Hugh Masekela",
+     "wrong": [
+      "Abdullah Ibrahim",
+      "Jonas Gwangwa",
+      "Johnny Dyani"
+     ],
+     "why": "It topped the US charts in 1968."
+    },
+    {
+     "level": 2,
+     "q": "Which writer won the Nobel Prize in Literature in 1991?",
+     "a": "Nadine Gordimer",
+     "wrong": [
+      "J. M. Coetzee",
+      "Alan Paton",
+      "André Brink"
+     ],
+     "why": "Coetzee won in 2003."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote 'Cry, the Beloved Country'?",
+     "a": "Alan Paton",
+     "wrong": [
+      "Nadine Gordimer",
+      "J. M. Coetzee",
+      "Athol Fugard"
+     ],
+     "why": "It was published in 1948."
+    },
+    {
+     "level": 3,
+     "q": "Which author won the Booker Prize twice, for 'Life & Times of Michael K' and 'Disgrace'?",
+     "a": "J. M. Coetzee",
+     "wrong": [
+      "Damon Galgut",
+      "Nadine Gordimer",
+      "André Brink"
+     ],
+     "why": "Damon Galgut won it in 2021."
+    },
+    {
+     "level": 3,
+     "q": "Which playwright wrote 'Master Harold... and the Boys'?",
+     "a": "Athol Fugard",
+     "wrong": [
+      "Zakes Mda",
+      "Gibson Kente",
+      "John Kani"
+     ],
+     "why": "It is set in a tea room in Port Elizabeth."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the national animal?",
+     "a": "Springbok",
+     "wrong": [
+      "Lion",
+      "Elephant",
+      "Blue crane"
+     ],
+     "why": "It is a fast antelope."
+    },
+    {
+     "level": 2,
+     "q": "What is the national bird?",
+     "a": "Blue crane",
+     "wrong": [
+      "African fish eagle",
+      "Ostrich",
+      "Secretary bird"
+     ],
+     "why": "It appeared on the old five-cent coin."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who directed 'District 9'?",
+     "a": "Neill Blomkamp",
+     "wrong": [
+      "Gavin Hood",
+      "Jamie Uys",
+      "Oliver Schmitz"
+     ],
+     "why": "It is set in Johannesburg."
+    },
+    {
+     "level": 2,
+     "q": "Which 1980 comedy by Jamie Uys features a Coke bottle in the Kalahari?",
+     "a": "The Gods Must Be Crazy",
+     "wrong": [
+      "Mr. Bones",
+      "Leon Schuster's Funny People",
+      "Beautiful People"
+     ],
+     "why": "It was a huge international hit."
+    },
+    {
+     "level": 1,
+     "q": "What do South Africans call a barbecue?",
+     "a": "Braai",
+     "wrong": [
+      "Potjie",
+      "Shisanyama",
+      "Bunny chow"
+     ],
+     "why": "Heritage Day is also called National Braai Day."
+    },
+    {
+     "level": 1,
+     "q": "What is dried, cured meat like beef jerky called?",
+     "a": "Biltong",
+     "wrong": [
+      "Boerewors",
+      "Droëwors",
+      "Bobotie"
+     ],
+     "why": "It comes from Dutch words for 'buttock' and 'strip'."
+    },
+    {
+     "level": 1,
+     "q": "Which Durban dish is a hollowed loaf filled with curry?",
+     "a": "Bunny chow",
+     "wrong": [
+      "Bobotie",
+      "Gatsby",
+      "Vetkoek"
+     ],
+     "why": "It came from Durban's Indian community."
+    },
+    {
+     "level": 1,
+     "q": "What is the spiced sausage cooked at a braai called?",
+     "a": "Boerewors",
+     "wrong": [
+      "Biltong",
+      "Chakalaka",
+      "Pap"
+     ],
+     "why": "Its name means 'farmer's sausage'."
+    },
+    {
+     "level": 1,
+     "q": "Which spiced minced-meat bake with an egg topping is a national dish?",
+     "a": "Bobotie",
+     "wrong": [
+      "Bredie",
+      "Potjiekos",
+      "Sosatie"
+     ],
+     "why": "It comes from Cape Malay cooking."
+    },
+    {
+     "level": 1,
+     "q": "What is pap?",
+     "a": "Maize porridge",
+     "wrong": [
+      "Sorghum beer",
+      "A meat pie",
+      "A sweet bun"
+     ],
+     "why": "It is a staple across the country."
+    },
+    {
+     "level": 1,
+     "q": "Which plaited, syrup-soaked doughnut is an Afrikaner treat?",
+     "a": "Koeksister",
+     "wrong": [
+      "Vetkoek",
+      "Melktert",
+      "Malva pudding"
+     ],
+     "why": "A Cape Malay version is spiced and coated in coconut."
+    },
+    {
+     "level": 2,
+     "q": "What does South Africa celebrate on 24 September?",
+     "a": "Heritage Day",
+     "wrong": [
+      "Freedom Day",
+      "Youth Day",
+      "Day of Reconciliation"
+     ],
+     "why": "People celebrate their cultures and traditions."
+    },
+    {
+     "level": 2,
+     "q": "Which spicy vegetable relish is served with pap and braai meat?",
+     "a": "Chakalaka",
+     "wrong": [
+      "Atchar",
+      "Blatjang",
+      "Sambal"
+     ],
+     "why": "It is thought to come from Johannesburg's townships."
+    },
+    {
+     "level": 2,
+     "q": "What is a potjie?",
+     "a": "A three-legged cast-iron pot",
+     "wrong": [
+      "A wooden spoon",
+      "A clay oven",
+      "A grilling rack"
+     ],
+     "why": "Potjiekos is a stew cooked slowly in it."
+    },
+    {
+     "level": 2,
+     "q": "What is the herbal tea from the Cederberg called?",
+     "a": "Rooibos",
+     "wrong": [
+      "Honeybush",
+      "Buchu",
+      "Masala chai"
+     ],
+     "why": "Its name means 'red bush'."
+    },
+    {
+     "level": 2,
+     "q": "Which Cape Town carnival with minstrels takes place on 2 January?",
+     "a": "Kaapse Klopse",
+     "wrong": [
+      "Cape Town Pride",
+      "Afrikaburn",
+      "Splashy Fen"
+     ],
+     "why": "It is also called Tweede Nuwe Jaar."
+    },
+    {
+     "level": 2,
+     "q": "Which baked custard tart is a South African favourite?",
+     "a": "Melktert",
+     "wrong": [
+      "Koeksister",
+      "Malva pudding",
+      "Vetkoek"
+     ],
+     "why": "Its name means 'milk tart'."
+    },
+    {
+     "level": 3,
+     "q": "Which Zulu ceremony sees young women present reeds to the king?",
+     "a": "Umkhosi woMhlanga",
+     "wrong": [
+      "Ukweshwama",
+      "Umemulo",
+      "Inxwala"
+     ],
+     "why": "It is the Reed Dance, held each September."
+    },
+    {
+     "level": 3,
+     "q": "Which spongy apricot-jam pudding is served with custard?",
+     "a": "Malva pudding",
+     "wrong": [
+      "Melktert",
+      "Sago pudding",
+      "Brandy tart"
+     ],
+     "why": "It is a Cape Dutch dessert."
+    },
+    {
+     "level": 3,
+     "q": "Which fried bread is filled with mince or jam?",
+     "a": "Vetkoek",
+     "wrong": [
+      "Roosterkoek",
+      "Mosbolletjie",
+      "Potbrood"
+     ],
+     "why": "Its name means 'fat cake'."
+    },
+    {
+     "level": 1,
+     "q": "What is South Africa's currency?",
+     "a": "Rand",
+     "wrong": [
+      "Pula",
+      "Naira",
+      "Shilling"
+     ],
+     "why": "It is named after the Witwatersrand ridge."
+    },
+    {
+     "level": 1,
+     "q": "How many official languages does South Africa have?",
+     "a": "12",
+     "wrong": [
+      "2",
+      "9",
+      "5"
+     ],
+     "why": "Sign language became the 12th in 2023."
+    },
+    {
+     "level": 1,
+     "q": "What is South Africa's nickname?",
+     "a": "The Rainbow Nation",
+     "wrong": [
+      "The Giant of Africa",
+      "The Pearl of Africa",
+      "The Land of a Thousand Hills"
+     ],
+     "why": "Archbishop Desmond Tutu used the phrase."
+    },
+    {
+     "level": 1,
+     "q": "What is the national flower?",
+     "a": "King protea",
+     "wrong": [
+      "Bird of paradise",
+      "Arum lily",
+      "Red disa"
+     ],
+     "why": "It is the largest of the proteas."
+    },
+    {
+     "level": 1,
+     "q": "Which Zulu word means 'humanity towards others'?",
+     "a": "Ubuntu",
+     "wrong": [
+      "Indaba",
+      "Sawubona",
+      "Lekker"
+     ],
+     "why": "It is often explained as 'I am because we are'."
+    },
+    {
+     "level": 3,
+     "q": "Which word means 'great' or 'nice' in South African slang?",
+     "a": "Lekker",
+     "wrong": [
+      "Eish",
+      "Howzit",
+      "Shame"
+     ],
+     "why": "It comes from Afrikaans."
+    }
+   ]
+  }
+ ]
 }

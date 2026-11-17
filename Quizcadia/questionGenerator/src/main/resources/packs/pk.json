@@ -1,132 +1,1122 @@
 {
-  "category": "Pakistan",
-  "country": "PK",
-  "topics": [
+ "category": "Pakistan",
+ "country": "PK",
+ "topics": [
+  {
+   "category": "History",
+   "name": "History",
+   "questions": [
     {
-      "name": "Pakistan History",
-      "questions": [
-        { "level": 1, "q": "On what date does Pakistan celebrate Independence Day?", "a": "14 August", "wrong": ["15 August", "23 March", "16 December"], "why": "Pakistan became independent on 14 August 1947." },
-        { "level": 1, "q": "Who was Pakistan's first Governor-General?", "a": "Muhammad Ali Jinnah", "wrong": ["Liaquat Ali Khan", "Khawaja Nazimuddin", "Iskander Mirza"], "why": "He held the post until his death in 1948." },
-        { "level": 1, "q": "Who was Pakistan's first Prime Minister?", "a": "Liaquat Ali Khan", "wrong": ["Muhammad Ali Jinnah", "Khawaja Nazimuddin", "Muhammad Ali Bogra"], "why": "He served from 1947 until 1951." },
-        { "level": 1, "q": "Pakistan Day on 23 March marks the Lahore Resolution of which year?", "a": "1940", "wrong": ["1947", "1930", "1956"], "why": "Minar-e-Pakistan stands where it was passed." },
-        { "level": 1, "q": "Which ruined city of the Indus civilisation lies near Larkana in Sindh?", "a": "Mohenjo-daro", "wrong": ["Taxila", "Harappa", "Mehrgarh"], "why": "It was built around 2500 BCE." },
-        { "level": 1, "q": "Who was the first woman to lead a Muslim-majority country as Prime Minister?", "a": "Benazir Bhutto", "wrong": ["Fatima Jinnah", "Hina Rabbani Khar", "Maryam Nawaz"], "why": "She became Pakistan's Prime Minister in 1988." },
-        { "level": 1, "q": "In which city was Muhammad Ali Jinnah born?", "a": "Karachi", "wrong": ["Lahore", "Bombay", "Delhi"], "why": "He was born there in 1876." },
-        { "level": 2, "q": "In which year did East Pakistan become independent as Bangladesh?", "a": "1971", "wrong": ["1965", "1958", "1973"], "why": "It followed a war that year." },
-        { "level": 2, "q": "In which year did Pakistan adopt its first constitution, becoming an Islamic Republic?", "a": "1956", "wrong": ["1947", "1962", "1973"], "why": "Until then it was a dominion." },
-        { "level": 2, "q": "Pakistan's current constitution was adopted in which year?", "a": "1973", "wrong": ["1956", "1962", "1985"], "why": "Zulfikar Ali Bhutto's government passed it." },
-        { "level": 2, "q": "Which city was Pakistan's first capital?", "a": "Karachi", "wrong": ["Lahore", "Rawalpindi", "Peshawar"], "why": "The capital moved north in the 1960s." },
-        { "level": 2, "q": "In which year did Pakistan carry out its nuclear tests at Chagai?", "a": "1998", "wrong": ["1974", "1988", "2002"], "why": "28 May is marked as Youm-e-Takbeer." },
-        { "level": 2, "q": "Which Mughal emperor built the Badshahi Mosque in Lahore?", "a": "Aurangzeb", "wrong": ["Shah Jahan", "Akbar", "Jahangir"], "why": "It was finished in 1673." },
-        { "level": 3, "q": "Which ancient Gandhara city near Islamabad is a UNESCO World Heritage Site?", "a": "Taxila", "wrong": ["Mohenjo-daro", "Rohtas", "Thatta"], "why": "It was a great centre of Buddhist learning." },
-        { "level": 3, "q": "Which sister of Jinnah was called 'Madar-e-Millat' (Mother of the Nation)?", "a": "Fatima Jinnah", "wrong": ["Ra'ana Liaquat Ali Khan", "Shireen Jinnah", "Nusrat Bhutto"], "why": "She ran for president in 1965." },
-        { "level": 3, "q": "Which general took power in 1958 and later made himself a Field Marshal?", "a": "Ayub Khan", "wrong": ["Yahya Khan", "Zia-ul-Haq", "Pervez Musharraf"], "why": "He ruled until 1969." }
-      ]
+     "level": 1,
+     "q": "On what date does Pakistan celebrate Independence Day?",
+     "a": "14 August",
+     "wrong": [
+      "15 August",
+      "23 March",
+      "16 December"
+     ],
+     "why": "Pakistan became independent on 14 August 1947."
     },
     {
-      "name": "Pakistan Geography",
-      "questions": [
-        { "level": 1, "q": "Which purpose-built city has been Pakistan's capital since the 1960s?", "a": "Islamabad", "wrong": ["Karachi", "Lahore", "Rawalpindi"], "why": "It sits at the foot of the Margalla Hills." },
-        { "level": 1, "q": "What is Pakistan's largest city?", "a": "Karachi", "wrong": ["Lahore", "Faisalabad", "Rawalpindi"], "why": "It is the country's main port." },
-        { "level": 1, "q": "Which is the world's second-highest mountain, in Gilgit-Baltistan?", "a": "K2", "wrong": ["Nanga Parbat", "Broad Peak", "Gasherbrum I"], "why": "It is 8,611 m high." },
-        { "level": 1, "q": "Which is Pakistan's main river?", "a": "Indus", "wrong": ["Jhelum", "Chenab", "Ravi"], "why": "It runs the whole length of the country." },
-        { "level": 1, "q": "Which city is called the 'Heart of Pakistan'?", "a": "Lahore", "wrong": ["Multan", "Peshawar", "Quetta"], "why": "It is the capital of Punjab." },
-        { "level": 1, "q": "How many provinces does Pakistan have?", "a": "4", "wrong": ["5", "6", "3"], "why": "Punjab, Sindh, Khyber Pakhtunkhwa and Balochistan." },
-        { "level": 1, "q": "Karachi lies on which sea?", "a": "Arabian Sea", "wrong": ["Bay of Bengal", "Red Sea", "Caspian Sea"], "why": "It is part of the Indian Ocean." },
-        { "level": 2, "q": "Which is Pakistan's largest province by area?", "a": "Balochistan", "wrong": ["Punjab", "Sindh", "Khyber Pakhtunkhwa"], "why": "It covers about 44% of the country." },
-        { "level": 2, "q": "Which is Pakistan's most populous province?", "a": "Punjab", "wrong": ["Sindh", "Khyber Pakhtunkhwa", "Balochistan"], "why": "About half of all Pakistanis live there." },
-        { "level": 2, "q": "What is the capital of Khyber Pakhtunkhwa?", "a": "Peshawar", "wrong": ["Abbottabad", "Mingora", "Mardan"], "why": "It is one of the oldest cities in South Asia." },
-        { "level": 2, "q": "What is the capital of Balochistan?", "a": "Quetta", "wrong": ["Gwadar", "Turbat", "Zhob"], "why": "It is known as the 'Fruit Garden of Pakistan'." },
-        { "level": 2, "q": "Which mountain pass links Pakistan and Afghanistan near Peshawar?", "a": "Khyber Pass", "wrong": ["Bolan Pass", "Khunjerab Pass", "Lowari Pass"], "why": "It has been a trade route for thousands of years." },
-        { "level": 2, "q": "Which highway links Pakistan with China?", "a": "Karakoram Highway", "wrong": ["Grand Trunk Road", "M-2 Motorway", "Makran Coastal Highway"], "why": "It crosses the Khunjerab Pass at about 4,700 m." },
-        { "level": 3, "q": "Which mountain is called the 'Killer Mountain'?", "a": "Nanga Parbat", "wrong": ["K2", "Rakaposhi", "Tirich Mir"], "why": "It is the ninth-highest mountain in the world." },
-        { "level": 3, "q": "Which deep-sea port in Balochistan is a key part of CPEC?", "a": "Gwadar", "wrong": ["Pasni", "Ormara", "Port Qasim"], "why": "CPEC is the China–Pakistan Economic Corridor." },
-        { "level": 3, "q": "Which is the largest freshwater lake in Pakistan?", "a": "Manchar Lake", "wrong": ["Saiful Muluk", "Attabad Lake", "Keenjhar Lake"], "why": "It is in Sindh, west of the Indus." }
-      ]
+     "level": 1,
+     "q": "Who was Pakistan's first Governor-General?",
+     "a": "Muhammad Ali Jinnah",
+     "wrong": [
+      "Liaquat Ali Khan",
+      "Khawaja Nazimuddin",
+      "Iskander Mirza"
+     ],
+     "why": "He held the post until his death in 1948."
     },
     {
-      "name": "Pakistan Sport",
-      "questions": [
-        { "level": 1, "q": "What is Pakistan's national game?", "a": "Field hockey", "wrong": ["Cricket", "Squash", "Kabaddi"], "why": "Pakistan has won three Olympic hockey golds." },
-        { "level": 1, "q": "Pakistan won the 1992 Cricket World Cup final against which team?", "a": "England", "wrong": ["Australia", "New Zealand", "South Africa"], "why": "The final was played in Melbourne." },
-        { "level": 1, "q": "Which fast bowler is called the 'Sultan of Swing'?", "a": "Wasim Akram", "wrong": ["Waqar Younis", "Shoaib Akhtar", "Imran Khan"], "why": "He took over 900 international wickets." },
-        { "level": 1, "q": "Which fast bowler is nicknamed the 'Rawalpindi Express'?", "a": "Shoaib Akhtar", "wrong": ["Waqar Younis", "Wasim Akram", "Mohammad Asif"], "why": "He bowled the first recorded 100 mph delivery." },
-        { "level": 1, "q": "Which all-rounder is nicknamed 'Boom Boom'?", "a": "Shahid Afridi", "wrong": ["Abdul Razzaq", "Shoaib Malik", "Imad Wasim"], "why": "He was famous for big hitting." },
-        { "level": 1, "q": "What is Pakistan's professional T20 cricket league called?", "a": "Pakistan Super League", "wrong": ["Indian Premier League", "Bangladesh Premier League", "Caribbean Premier League"], "why": "It began in 2016." },
-        { "level": 1, "q": "Who captained Pakistan at the 2021 T20 World Cup?", "a": "Babar Azam", "wrong": ["Mohammad Rizwan", "Sarfaraz Ahmed", "Shadab Khan"], "why": "Pakistan reached the semi-finals." },
-        { "level": 2, "q": "Which squash player won 555 matches in a row?", "a": "Jahangir Khan", "wrong": ["Jansher Khan", "Hashim Khan", "Qamar Zaman"], "why": "His run lasted from 1981 to 1986." },
-        { "level": 2, "q": "Who captained Pakistan to the 2009 T20 World Cup title?", "a": "Younis Khan", "wrong": ["Shahid Afridi", "Misbah-ul-Haq", "Inzamam-ul-Haq"], "why": "Pakistan beat Sri Lanka at Lord's." },
-        { "level": 2, "q": "Pakistan won the 2017 Champions Trophy by beating which team in the final?", "a": "India", "wrong": ["England", "Sri Lanka", "Bangladesh"], "why": "They won by 180 runs at The Oval." },
-        { "level": 2, "q": "Which athlete won javelin gold at Paris 2024 with an Olympic record throw?", "a": "Arshad Nadeem", "wrong": ["Neeraj Chopra", "Anderson Peters", "Julian Weber"], "why": "He threw 92.97 m." },
-        { "level": 2, "q": "How many times has Pakistan won the men's Hockey World Cup?", "a": "4", "wrong": ["2", "3", "1"], "why": "In 1971, 1978, 1982 and 1994." },
-        { "level": 2, "q": "Which Lahore stadium is Pakistan's best-known cricket ground?", "a": "Gaddafi Stadium", "wrong": ["National Stadium", "Rawalpindi Cricket Stadium", "Multan Cricket Stadium"], "why": "It hosted the 1996 World Cup final." },
-        { "level": 3, "q": "Which batter made Pakistan's highest Test score, 337, in 1958?", "a": "Hanif Mohammad", "wrong": ["Inzamam-ul-Haq", "Younis Khan", "Javed Miandad"], "why": "He batted for over 16 hours against the West Indies." },
-        { "level": 3, "q": "Who hit a 37-ball ODI century in 1996, then the fastest ever?", "a": "Shahid Afridi", "wrong": ["Saeed Anwar", "Inzamam-ul-Haq", "Ijaz Ahmed"], "why": "It was in his first innings in ODIs." },
-        { "level": 3, "q": "Which squash player won the World Open eight times?", "a": "Jansher Khan", "wrong": ["Jahangir Khan", "Hashim Khan", "Mohibullah Khan"], "why": "It is the record for the men's World Open." }
-      ]
+     "level": 1,
+     "q": "Who was Pakistan's first Prime Minister?",
+     "a": "Liaquat Ali Khan",
+     "wrong": [
+      "Muhammad Ali Jinnah",
+      "Khawaja Nazimuddin",
+      "Muhammad Ali Bogra"
+     ],
+     "why": "He served from 1947 until 1951."
     },
     {
-      "name": "Pakistan Film, TV & Music",
-      "questions": [
-        { "level": 1, "q": "Which singer was called the 'Shahenshah-e-Qawwali'?", "a": "Nusrat Fateh Ali Khan", "wrong": ["Rahat Fateh Ali Khan", "Aziz Mian", "Amjad Sabri"], "why": "He brought qawwali to audiences around the world." },
-        { "level": 1, "q": "Which Coke Studio song by Ali Sethi and Shae Gill became a global hit in 2022?", "a": "Pasoori", "wrong": ["Tajdar-e-Haram", "Afreen Afreen", "Kana Yaari"], "why": "It was viewed hundreds of millions of times." },
-        { "level": 1, "q": "Which live music show, started in 2008, mixes folk, Sufi and pop?", "a": "Coke Studio", "wrong": ["Pakistan Idol", "Nescafé Basement", "Uth Records"], "why": "Rohail Hyatt created it." },
-        { "level": 1, "q": "'Lollywood', Pakistan's film industry, is named after which city?", "a": "Lahore", "wrong": ["Karachi", "Islamabad", "Multan"], "why": "Most films were once made in Lahore's studios." },
-        { "level": 1, "q": "Which band sang 'Dil Dil Pakistan'?", "a": "Vital Signs", "wrong": ["Junoon", "Strings", "Noori"], "why": "It came out in 1987." },
-        { "level": 1, "q": "Which singer is called the 'Queen of Sufi music'?", "a": "Abida Parveen", "wrong": ["Noor Jehan", "Reshma", "Iqbal Bano"], "why": "She sings the poetry of Sufi saints." },
-        { "level": 1, "q": "Which 2011 TV drama starring Fawad Khan and Mahira Khan was a huge hit?", "a": "Humsafar", "wrong": ["Zindagi Gulzar Hai", "Mere Paas Tum Ho", "Dhoop Kinare"], "why": "It was based on a novel by Farhat Ishtiaq." },
-        { "level": 2, "q": "Which singer was called 'Malika-e-Tarannum' (Queen of Melody)?", "a": "Noor Jehan", "wrong": ["Abida Parveen", "Nayyara Noor", "Mehnaz"], "why": "She sang in films for over 50 years." },
-        { "level": 2, "q": "Which rock band, led by Salman Ahmad, recorded 'Sayonee'?", "a": "Junoon", "wrong": ["Strings", "Vital Signs", "Entity Paradigm"], "why": "They pioneered Sufi rock." },
-        { "level": 2, "q": "Which poet wrote 'Hum Dekhenge'?", "a": "Faiz Ahmad Faiz", "wrong": ["Habib Jalib", "Ahmad Faraz", "Jaun Elia"], "why": "Iqbal Bano's 1986 performance of it became famous." },
-        { "level": 2, "q": "Which Vital Signs singer later became a religious scholar?", "a": "Junaid Jamshed", "wrong": ["Ali Haider", "Abrar-ul-Haq", "Ali Azmat"], "why": "He later sang naats." },
-        { "level": 2, "q": "Which ghazal singer is famous for 'Chupke Chupke Raat Din'?", "a": "Ghulam Ali", "wrong": ["Mehdi Hassan", "Jagjit Singh", "Farida Khanum"], "why": "The song appeared in the 1982 film 'Nikaah'." },
-        { "level": 2, "q": "Which ghazal singer was called 'Shahenshah-e-Ghazal'?", "a": "Mehdi Hassan", "wrong": ["Ghulam Ali", "Nusrat Fateh Ali Khan", "Pervez Mehdi"], "why": "He sang ghazals and film songs for over five decades." },
-        { "level": 3, "q": "Which Pakistani film won the Jury Prize in Cannes' Un Certain Regard section in 2022?", "a": "Joyland", "wrong": ["Zindagi Tamasha", "Bol", "Cake"], "why": "Saim Sadiq directed it." },
-        { "level": 3, "q": "Which Pakistani filmmaker has won two Oscars for documentaries?", "a": "Sharmeen Obaid-Chinoy", "wrong": ["Mehreen Jabbar", "Asim Abbasi", "Jamshed Mahmood"], "why": "For 'Saving Face' and 'A Girl in the River'." },
-        { "level": 3, "q": "Who wrote the Urdu novel 'Raja Gidh'?", "a": "Bano Qudsia", "wrong": ["Umera Ahmed", "Mustansar Hussain Tarar", "Ashfaq Ahmed"], "why": "It was published in 1981." }
-      ]
+     "level": 1,
+     "q": "Pakistan Day on 23 March marks the Lahore Resolution of which year?",
+     "a": "1940",
+     "wrong": [
+      "1947",
+      "1930",
+      "1956"
+     ],
+     "why": "Minar-e-Pakistan stands where it was passed."
     },
     {
-      "name": "Pakistan Food & Traditions",
-      "questions": [
-        { "level": 1, "q": "Which spicy rice dish is named after a province of Pakistan?", "a": "Sindhi biryani", "wrong": ["Kabuli pulao", "Zarda", "Khichdi"], "why": "It is known for its potatoes and plums." },
-        { "level": 1, "q": "Which slow-cooked beef stew was traditionally eaten at dawn?", "a": "Nihari", "wrong": ["Haleem", "Karahi", "Qorma"], "why": "Its name comes from 'nahar', meaning morning." },
-        { "level": 1, "q": "Which festival marks the end of Ramadan?", "a": "Eid al-Fitr", "wrong": ["Eid al-Adha", "Shab-e-Barat", "Muharram"], "why": "It begins when the new moon is sighted." },
-        { "level": 1, "q": "Which spring kite-flying festival was famous in Lahore?", "a": "Basant", "wrong": ["Lohri", "Holi", "Nowruz"], "why": "It has been banned for years because of dangerous kite strings." },
-        { "level": 1, "q": "What is Pakistan's national dress?", "a": "Shalwar kameez", "wrong": ["Sari", "Thobe", "Lungi"], "why": "It is worn by both men and women." },
-        { "level": 1, "q": "Which mango variety is Pakistan especially famous for?", "a": "Chaunsa", "wrong": ["Alphonso", "Kent", "Tommy Atkins"], "why": "Multan is known as a mango capital." },
-        { "level": 1, "q": "The chapli kebab is named after a style of which city?", "a": "Peshawar", "wrong": ["Lahore", "Karachi", "Quetta"], "why": "It is a flat, spiced minced-meat patty." },
-        { "level": 2, "q": "Pakistan is famous for brightly painted and decorated what?", "a": "Trucks", "wrong": ["Boats", "Houses", "Bicycles"], "why": "Truck art is a well-known folk art." },
-        { "level": 2, "q": "Which Eid remembers Ibrahim's willingness to sacrifice his son?", "a": "Eid al-Adha", "wrong": ["Eid al-Fitr", "Eid Milad-un-Nabi", "Shab-e-Barat"], "why": "Families sacrifice an animal and share the meat." },
-        { "level": 2, "q": "Khewra, one of the world's largest salt mines, is known for salt of what colour?", "a": "Pink", "wrong": ["Black", "Blue", "Green"], "why": "It is sold worldwide as 'Himalayan' salt." },
-        { "level": 2, "q": "Which famous Sufi shrine is in Lahore?", "a": "Data Darbar", "wrong": ["Shah Rukn-e-Alam", "Lal Shahbaz Qalandar", "Abdullah Shah Ghazi"], "why": "It honours Data Ganj Bakhsh." },
-        { "level": 2, "q": "The shrine at Sehwan, famous for its dhamaal, honours which saint?", "a": "Lal Shahbaz Qalandar", "wrong": ["Data Ganj Bakhsh", "Bari Imam", "Baba Farid"], "why": "The song 'Dama Dam Mast Qalandar' is about him." },
-        { "level": 2, "q": "Which vermicelli dish with milk and dates is served on Eid morning?", "a": "Sheer khurma", "wrong": ["Kheer", "Gulab jamun", "Gajar halwa"], "why": "Its name means 'milk with dates' in Persian." },
-        { "level": 3, "q": "Which Kalash festival in Chitral welcomes spring?", "a": "Chilam Joshi", "wrong": ["Uchal", "Chaumos", "Shandur"], "why": "It is held every May." },
-        { "level": 3, "q": "Which festival is played on one of the world's highest polo grounds?", "a": "Shandur Polo Festival", "wrong": ["Lahore Polo Cup", "Gilgit Polo Cup", "Skardu Polo Festival"], "why": "Gilgit and Chitral teams meet at about 3,700 m." },
-        { "level": 3, "q": "Which Lahore food street looks out onto the Badshahi Mosque?", "a": "Fort Road Food Street", "wrong": ["Gawalmandi", "MM Alam Road", "Anarkali"], "why": "Diners eat on rooftops facing the mosque." }
-      ]
+     "level": 1,
+     "q": "Which ruined city of the Indus civilisation lies near Larkana in Sindh?",
+     "a": "Mohenjo-daro",
+     "wrong": [
+      "Taxila",
+      "Harappa",
+      "Mehrgarh"
+     ],
+     "why": "It was built around 2500 BCE."
     },
     {
-      "name": "Pakistan General Knowledge",
-      "questions": [
-        { "level": 1, "q": "What is Pakistan's national language?", "a": "Urdu", "wrong": ["Punjabi", "Sindhi", "Pashto"], "why": "English is also an official language." },
-        { "level": 1, "q": "What is Pakistan's currency?", "a": "Pakistani rupee", "wrong": ["Taka", "Riyal", "Afghani"], "why": "The State Bank of Pakistan issues it." },
-        { "level": 1, "q": "What is Pakistan's national animal?", "a": "Markhor", "wrong": ["Snow leopard", "Asiatic lion", "Ibex"], "why": "It is a wild goat with spiralled horns." },
-        { "level": 1, "q": "What colours are on Pakistan's flag?", "a": "Green and white", "wrong": ["Green and red", "Green and yellow", "White and blue"], "why": "White stands for religious minorities." },
-        { "level": 1, "q": "Who is Pakistan's national poet?", "a": "Allama Muhammad Iqbal", "wrong": ["Faiz Ahmad Faiz", "Mirza Ghalib", "Hafeez Jalandhari"], "why": "He is called the 'Poet of the East'." },
-        { "level": 1, "q": "Which large mosque in Islamabad is named after a Saudi king?", "a": "Faisal Mosque", "wrong": ["Badshahi Mosque", "Wazir Khan Mosque", "Shah Jahan Mosque"], "why": "It was finished in 1986." },
-        { "level": 1, "q": "Which Pakistani won the Nobel Peace Prize in 2014, aged 17?", "a": "Malala Yousafzai", "wrong": ["Abdul Sattar Edhi", "Mukhtaran Mai", "Asma Jahangir"], "why": "She campaigns for girls' education." },
-        { "level": 2, "q": "Who was the first Pakistani to win a Nobel Prize, in Physics in 1979?", "a": "Abdus Salam", "wrong": ["Pervez Hoodbhoy", "Atta-ur-Rahman", "Abdul Qadeer Khan"], "why": "He shared it for work on the electroweak force." },
-        { "level": 2, "q": "Which humanitarian built Pakistan's largest volunteer ambulance network?", "a": "Abdul Sattar Edhi", "wrong": ["Ansar Burney", "Ruth Pfau", "Hakim Said"], "why": "The Edhi Foundation runs hundreds of ambulances." },
-        { "level": 2, "q": "Which cancer hospital in Lahore did Imran Khan found?", "a": "Shaukat Khanum Memorial Cancer Hospital", "wrong": ["Mayo Hospital", "Aga Khan University Hospital", "Indus Hospital"], "why": "It is named after his mother." },
-        { "level": 2, "q": "What is Pakistan's national flower?", "a": "Jasmine", "wrong": ["Rose", "Lotus", "Tulip"], "why": "In Urdu it is called chambeli." },
-        { "level": 2, "q": "What is Pakistan's national bird?", "a": "Chukar partridge", "wrong": ["Peacock", "Hoopoe", "Bald eagle"], "why": "It lives in rocky hillsides." },
-        { "level": 2, "q": "What is Pakistan's national identity card called?", "a": "CNIC", "wrong": ["Aadhaar", "NID card", "Emirates ID"], "why": "It stands for Computerised National Identity Card." },
-        { "level": 3, "q": "What is Pakistan's national tree?", "a": "Deodar cedar", "wrong": ["Neem", "Banyan", "Chinar"], "why": "It grows in the northern mountains." },
-        { "level": 3, "q": "Which German-born doctor led Pakistan's fight against leprosy?", "a": "Ruth Pfau", "wrong": ["Annemarie Schimmel", "Mother Teresa", "Clara Swain"], "why": "Pakistan was declared leprosy-controlled in 1996." },
-        { "level": 3, "q": "Who wrote the words of Pakistan's national anthem?", "a": "Hafeez Jalandhari", "wrong": ["Allama Iqbal", "Faiz Ahmad Faiz", "Josh Malihabadi"], "why": "It was adopted in 1954." }
-      ]
+     "level": 1,
+     "q": "Who was the first woman to lead a Muslim-majority country as Prime Minister?",
+     "a": "Benazir Bhutto",
+     "wrong": [
+      "Fatima Jinnah",
+      "Hina Rabbani Khar",
+      "Maryam Nawaz"
+     ],
+     "why": "She became Pakistan's Prime Minister in 1988."
+    },
+    {
+     "level": 1,
+     "q": "In which city was Muhammad Ali Jinnah born?",
+     "a": "Karachi",
+     "wrong": [
+      "Lahore",
+      "Bombay",
+      "Delhi"
+     ],
+     "why": "He was born there in 1876."
+    },
+    {
+     "level": 2,
+     "q": "In which year did East Pakistan become independent as Bangladesh?",
+     "a": "1971",
+     "wrong": [
+      "1965",
+      "1958",
+      "1973"
+     ],
+     "why": "It followed a war that year."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Pakistan adopt its first constitution, becoming an Islamic Republic?",
+     "a": "1956",
+     "wrong": [
+      "1947",
+      "1962",
+      "1973"
+     ],
+     "why": "Until then it was a dominion."
+    },
+    {
+     "level": 2,
+     "q": "Which city was Pakistan's first capital?",
+     "a": "Karachi",
+     "wrong": [
+      "Lahore",
+      "Rawalpindi",
+      "Peshawar"
+     ],
+     "why": "The capital moved north in the 1960s."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Pakistan carry out its nuclear tests at Chagai?",
+     "a": "1998",
+     "wrong": [
+      "1974",
+      "1988",
+      "2002"
+     ],
+     "why": "28 May is marked as Youm-e-Takbeer."
+    },
+    {
+     "level": 2,
+     "q": "Which Mughal emperor built the Badshahi Mosque in Lahore?",
+     "a": "Aurangzeb",
+     "wrong": [
+      "Shah Jahan",
+      "Akbar",
+      "Jahangir"
+     ],
+     "why": "It was finished in 1673."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient Gandhara city near Islamabad is a UNESCO World Heritage Site?",
+     "a": "Taxila",
+     "wrong": [
+      "Mohenjo-daro",
+      "Rohtas",
+      "Thatta"
+     ],
+     "why": "It was a great centre of Buddhist learning."
+    },
+    {
+     "level": 3,
+     "q": "Which sister of Jinnah was called 'Madar-e-Millat' (Mother of the Nation)?",
+     "a": "Fatima Jinnah",
+     "wrong": [
+      "Ra'ana Liaquat Ali Khan",
+      "Shireen Jinnah",
+      "Nusrat Bhutto"
+     ],
+     "why": "She ran for president in 1965."
+    },
+    {
+     "level": 3,
+     "q": "Which general took power in 1958 and later made himself a Field Marshal?",
+     "a": "Ayub Khan",
+     "wrong": [
+      "Yahya Khan",
+      "Zia-ul-Haq",
+      "Pervez Musharraf"
+     ],
+     "why": "He ruled until 1969."
+    },
+    {
+     "level": 1,
+     "q": "Which large mosque in Islamabad is named after a Saudi king?",
+     "a": "Faisal Mosque",
+     "wrong": [
+      "Badshahi Mosque",
+      "Wazir Khan Mosque",
+      "Shah Jahan Mosque"
+     ],
+     "why": "It was finished in 1986."
+    },
+    {
+     "level": 1,
+     "q": "Which Pakistani won the Nobel Peace Prize in 2014, aged 17?",
+     "a": "Malala Yousafzai",
+     "wrong": [
+      "Abdul Sattar Edhi",
+      "Mukhtaran Mai",
+      "Asma Jahangir"
+     ],
+     "why": "She campaigns for girls' education."
+    },
+    {
+     "level": 2,
+     "q": "Who was the first Pakistani to win a Nobel Prize, in Physics in 1979?",
+     "a": "Abdus Salam",
+     "wrong": [
+      "Pervez Hoodbhoy",
+      "Atta-ur-Rahman",
+      "Abdul Qadeer Khan"
+     ],
+     "why": "He shared it for work on the electroweak force."
+    },
+    {
+     "level": 2,
+     "q": "Which cancer hospital in Lahore did Imran Khan found?",
+     "a": "Shaukat Khanum Memorial Cancer Hospital",
+     "wrong": [
+      "Mayo Hospital",
+      "Aga Khan University Hospital",
+      "Indus Hospital"
+     ],
+     "why": "It is named after his mother."
     }
-  ]
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which purpose-built city has been Pakistan's capital since the 1960s?",
+     "a": "Islamabad",
+     "wrong": [
+      "Karachi",
+      "Lahore",
+      "Rawalpindi"
+     ],
+     "why": "It sits at the foot of the Margalla Hills."
+    },
+    {
+     "level": 1,
+     "q": "What is Pakistan's largest city?",
+     "a": "Karachi",
+     "wrong": [
+      "Lahore",
+      "Faisalabad",
+      "Rawalpindi"
+     ],
+     "why": "It is the country's main port."
+    },
+    {
+     "level": 1,
+     "q": "Which is the world's second-highest mountain, in Gilgit-Baltistan?",
+     "a": "K2",
+     "wrong": [
+      "Nanga Parbat",
+      "Broad Peak",
+      "Gasherbrum I"
+     ],
+     "why": "It is 8,611 m high."
+    },
+    {
+     "level": 1,
+     "q": "Which is Pakistan's main river?",
+     "a": "Indus",
+     "wrong": [
+      "Jhelum",
+      "Chenab",
+      "Ravi"
+     ],
+     "why": "It runs the whole length of the country."
+    },
+    {
+     "level": 1,
+     "q": "Which city is called the 'Heart of Pakistan'?",
+     "a": "Lahore",
+     "wrong": [
+      "Multan",
+      "Peshawar",
+      "Quetta"
+     ],
+     "why": "It is the capital of Punjab."
+    },
+    {
+     "level": 1,
+     "q": "How many provinces does Pakistan have?",
+     "a": "4",
+     "wrong": [
+      "5",
+      "6",
+      "3"
+     ],
+     "why": "Punjab, Sindh, Khyber Pakhtunkhwa and Balochistan."
+    },
+    {
+     "level": 1,
+     "q": "Karachi lies on which sea?",
+     "a": "Arabian Sea",
+     "wrong": [
+      "Bay of Bengal",
+      "Red Sea",
+      "Caspian Sea"
+     ],
+     "why": "It is part of the Indian Ocean."
+    },
+    {
+     "level": 2,
+     "q": "Which is Pakistan's largest province by area?",
+     "a": "Balochistan",
+     "wrong": [
+      "Punjab",
+      "Sindh",
+      "Khyber Pakhtunkhwa"
+     ],
+     "why": "It covers about 44% of the country."
+    },
+    {
+     "level": 2,
+     "q": "Which is Pakistan's most populous province?",
+     "a": "Punjab",
+     "wrong": [
+      "Sindh",
+      "Khyber Pakhtunkhwa",
+      "Balochistan"
+     ],
+     "why": "About half of all Pakistanis live there."
+    },
+    {
+     "level": 2,
+     "q": "What is the capital of Khyber Pakhtunkhwa?",
+     "a": "Peshawar",
+     "wrong": [
+      "Abbottabad",
+      "Mingora",
+      "Mardan"
+     ],
+     "why": "It is one of the oldest cities in South Asia."
+    },
+    {
+     "level": 2,
+     "q": "What is the capital of Balochistan?",
+     "a": "Quetta",
+     "wrong": [
+      "Gwadar",
+      "Turbat",
+      "Zhob"
+     ],
+     "why": "It is known as the 'Fruit Garden of Pakistan'."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain pass links Pakistan and Afghanistan near Peshawar?",
+     "a": "Khyber Pass",
+     "wrong": [
+      "Bolan Pass",
+      "Khunjerab Pass",
+      "Lowari Pass"
+     ],
+     "why": "It has been a trade route for thousands of years."
+    },
+    {
+     "level": 2,
+     "q": "Which highway links Pakistan with China?",
+     "a": "Karakoram Highway",
+     "wrong": [
+      "Grand Trunk Road",
+      "M-2 Motorway",
+      "Makran Coastal Highway"
+     ],
+     "why": "It crosses the Khunjerab Pass at about 4,700 m."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain is called the 'Killer Mountain'?",
+     "a": "Nanga Parbat",
+     "wrong": [
+      "K2",
+      "Rakaposhi",
+      "Tirich Mir"
+     ],
+     "why": "It is the ninth-highest mountain in the world."
+    },
+    {
+     "level": 3,
+     "q": "Which deep-sea port in Balochistan is a key part of CPEC?",
+     "a": "Gwadar",
+     "wrong": [
+      "Pasni",
+      "Ormara",
+      "Port Qasim"
+     ],
+     "why": "CPEC is the China–Pakistan Economic Corridor."
+    },
+    {
+     "level": 3,
+     "q": "Which is the largest freshwater lake in Pakistan?",
+     "a": "Manchar Lake",
+     "wrong": [
+      "Saiful Muluk",
+      "Attabad Lake",
+      "Keenjhar Lake"
+     ],
+     "why": "It is in Sindh, west of the Indus."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Pakistan's national game?",
+     "a": "Field hockey",
+     "wrong": [
+      "Cricket",
+      "Squash",
+      "Kabaddi"
+     ],
+     "why": "Pakistan has won three Olympic hockey golds."
+    },
+    {
+     "level": 1,
+     "q": "Pakistan won the 1992 Cricket World Cup final against which team?",
+     "a": "England",
+     "wrong": [
+      "Australia",
+      "New Zealand",
+      "South Africa"
+     ],
+     "why": "The final was played in Melbourne."
+    },
+    {
+     "level": 1,
+     "q": "Which fast bowler is called the 'Sultan of Swing'?",
+     "a": "Wasim Akram",
+     "wrong": [
+      "Waqar Younis",
+      "Shoaib Akhtar",
+      "Imran Khan"
+     ],
+     "why": "He took over 900 international wickets."
+    },
+    {
+     "level": 1,
+     "q": "Which fast bowler is nicknamed the 'Rawalpindi Express'?",
+     "a": "Shoaib Akhtar",
+     "wrong": [
+      "Waqar Younis",
+      "Wasim Akram",
+      "Mohammad Asif"
+     ],
+     "why": "He bowled the first recorded 100 mph delivery."
+    },
+    {
+     "level": 1,
+     "q": "Which all-rounder is nicknamed 'Boom Boom'?",
+     "a": "Shahid Afridi",
+     "wrong": [
+      "Abdul Razzaq",
+      "Shoaib Malik",
+      "Imad Wasim"
+     ],
+     "why": "He was famous for big hitting."
+    },
+    {
+     "level": 1,
+     "q": "What is Pakistan's professional T20 cricket league called?",
+     "a": "Pakistan Super League",
+     "wrong": [
+      "Indian Premier League",
+      "Bangladesh Premier League",
+      "Caribbean Premier League"
+     ],
+     "why": "It began in 2016."
+    },
+    {
+     "level": 1,
+     "q": "Who captained Pakistan at the 2021 T20 World Cup?",
+     "a": "Babar Azam",
+     "wrong": [
+      "Mohammad Rizwan",
+      "Sarfaraz Ahmed",
+      "Shadab Khan"
+     ],
+     "why": "Pakistan reached the semi-finals."
+    },
+    {
+     "level": 2,
+     "q": "Which squash player won 555 matches in a row?",
+     "a": "Jahangir Khan",
+     "wrong": [
+      "Jansher Khan",
+      "Hashim Khan",
+      "Qamar Zaman"
+     ],
+     "why": "His run lasted from 1981 to 1986."
+    },
+    {
+     "level": 2,
+     "q": "Who captained Pakistan to the 2009 T20 World Cup title?",
+     "a": "Younis Khan",
+     "wrong": [
+      "Shahid Afridi",
+      "Misbah-ul-Haq",
+      "Inzamam-ul-Haq"
+     ],
+     "why": "Pakistan beat Sri Lanka at Lord's."
+    },
+    {
+     "level": 2,
+     "q": "Pakistan won the 2017 Champions Trophy by beating which team in the final?",
+     "a": "India",
+     "wrong": [
+      "England",
+      "Sri Lanka",
+      "Bangladesh"
+     ],
+     "why": "They won by 180 runs at The Oval."
+    },
+    {
+     "level": 2,
+     "q": "Which athlete won javelin gold at Paris 2024 with an Olympic record throw?",
+     "a": "Arshad Nadeem",
+     "wrong": [
+      "Neeraj Chopra",
+      "Anderson Peters",
+      "Julian Weber"
+     ],
+     "why": "He threw 92.97 m."
+    },
+    {
+     "level": 2,
+     "q": "How many times has Pakistan won the men's Hockey World Cup?",
+     "a": "4",
+     "wrong": [
+      "2",
+      "3",
+      "1"
+     ],
+     "why": "In 1971, 1978, 1982 and 1994."
+    },
+    {
+     "level": 2,
+     "q": "Which Lahore stadium is Pakistan's best-known cricket ground?",
+     "a": "Gaddafi Stadium",
+     "wrong": [
+      "National Stadium",
+      "Rawalpindi Cricket Stadium",
+      "Multan Cricket Stadium"
+     ],
+     "why": "It hosted the 1996 World Cup final."
+    },
+    {
+     "level": 3,
+     "q": "Which batter made Pakistan's highest Test score, 337, in 1958?",
+     "a": "Hanif Mohammad",
+     "wrong": [
+      "Inzamam-ul-Haq",
+      "Younis Khan",
+      "Javed Miandad"
+     ],
+     "why": "He batted for over 16 hours against the West Indies."
+    },
+    {
+     "level": 3,
+     "q": "Who hit a 37-ball ODI century in 1996, then the fastest ever?",
+     "a": "Shahid Afridi",
+     "wrong": [
+      "Saeed Anwar",
+      "Inzamam-ul-Haq",
+      "Ijaz Ahmed"
+     ],
+     "why": "It was in his first innings in ODIs."
+    },
+    {
+     "level": 3,
+     "q": "Which squash player won the World Open eight times?",
+     "a": "Jansher Khan",
+     "wrong": [
+      "Jahangir Khan",
+      "Hashim Khan",
+      "Mohibullah Khan"
+     ],
+     "why": "It is the record for the men's World Open."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which singer was called the 'Shahenshah-e-Qawwali'?",
+     "a": "Nusrat Fateh Ali Khan",
+     "wrong": [
+      "Rahat Fateh Ali Khan",
+      "Aziz Mian",
+      "Amjad Sabri"
+     ],
+     "why": "He brought qawwali to audiences around the world."
+    },
+    {
+     "level": 1,
+     "q": "Which Coke Studio song by Ali Sethi and Shae Gill became a global hit in 2022?",
+     "a": "Pasoori",
+     "wrong": [
+      "Tajdar-e-Haram",
+      "Afreen Afreen",
+      "Kana Yaari"
+     ],
+     "why": "It was viewed hundreds of millions of times."
+    },
+    {
+     "level": 1,
+     "q": "Which live music show, started in 2008, mixes folk, Sufi and pop?",
+     "a": "Coke Studio",
+     "wrong": [
+      "Pakistan Idol",
+      "Nescafé Basement",
+      "Uth Records"
+     ],
+     "why": "Rohail Hyatt created it."
+    },
+    {
+     "level": 1,
+     "q": "Which band sang 'Dil Dil Pakistan'?",
+     "a": "Vital Signs",
+     "wrong": [
+      "Junoon",
+      "Strings",
+      "Noori"
+     ],
+     "why": "It came out in 1987."
+    },
+    {
+     "level": 1,
+     "q": "Which singer is called the 'Queen of Sufi music'?",
+     "a": "Abida Parveen",
+     "wrong": [
+      "Noor Jehan",
+      "Reshma",
+      "Iqbal Bano"
+     ],
+     "why": "She sings the poetry of Sufi saints."
+    },
+    {
+     "level": 2,
+     "q": "Which singer was called 'Malika-e-Tarannum' (Queen of Melody)?",
+     "a": "Noor Jehan",
+     "wrong": [
+      "Abida Parveen",
+      "Nayyara Noor",
+      "Mehnaz"
+     ],
+     "why": "She sang in films for over 50 years."
+    },
+    {
+     "level": 2,
+     "q": "Which rock band, led by Salman Ahmad, recorded 'Sayonee'?",
+     "a": "Junoon",
+     "wrong": [
+      "Strings",
+      "Vital Signs",
+      "Entity Paradigm"
+     ],
+     "why": "They pioneered Sufi rock."
+    },
+    {
+     "level": 2,
+     "q": "Which Vital Signs singer later became a religious scholar?",
+     "a": "Junaid Jamshed",
+     "wrong": [
+      "Ali Haider",
+      "Abrar-ul-Haq",
+      "Ali Azmat"
+     ],
+     "why": "He later sang naats."
+    },
+    {
+     "level": 2,
+     "q": "Which ghazal singer is famous for 'Chupke Chupke Raat Din'?",
+     "a": "Ghulam Ali",
+     "wrong": [
+      "Mehdi Hassan",
+      "Jagjit Singh",
+      "Farida Khanum"
+     ],
+     "why": "The song appeared in the 1982 film 'Nikaah'."
+    },
+    {
+     "level": 2,
+     "q": "Which ghazal singer was called 'Shahenshah-e-Ghazal'?",
+     "a": "Mehdi Hassan",
+     "wrong": [
+      "Ghulam Ali",
+      "Nusrat Fateh Ali Khan",
+      "Pervez Mehdi"
+     ],
+     "why": "He sang ghazals and film songs for over five decades."
+    },
+    {
+     "level": 3,
+     "q": "Who wrote the words of Pakistan's national anthem?",
+     "a": "Hafeez Jalandhari",
+     "wrong": [
+      "Allama Iqbal",
+      "Faiz Ahmad Faiz",
+      "Josh Malihabadi"
+     ],
+     "why": "It was adopted in 1954."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "'Lollywood', Pakistan's film industry, is named after which city?",
+     "a": "Lahore",
+     "wrong": [
+      "Karachi",
+      "Islamabad",
+      "Multan"
+     ],
+     "why": "Most films were once made in Lahore's studios."
+    },
+    {
+     "level": 1,
+     "q": "Which 2011 TV drama starring Fawad Khan and Mahira Khan was a huge hit?",
+     "a": "Humsafar",
+     "wrong": [
+      "Zindagi Gulzar Hai",
+      "Mere Paas Tum Ho",
+      "Dhoop Kinare"
+     ],
+     "why": "It was based on a novel by Farhat Ishtiaq."
+    },
+    {
+     "level": 3,
+     "q": "Which Pakistani film won the Jury Prize in Cannes' Un Certain Regard section in 2022?",
+     "a": "Joyland",
+     "wrong": [
+      "Zindagi Tamasha",
+      "Bol",
+      "Cake"
+     ],
+     "why": "Saim Sadiq directed it."
+    },
+    {
+     "level": 3,
+     "q": "Which Pakistani filmmaker has won two Oscars for documentaries?",
+     "a": "Sharmeen Obaid-Chinoy",
+     "wrong": [
+      "Mehreen Jabbar",
+      "Asim Abbasi",
+      "Jamshed Mahmood"
+     ],
+     "why": "For 'Saving Face' and 'A Girl in the River'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which poet wrote 'Hum Dekhenge'?",
+     "a": "Faiz Ahmad Faiz",
+     "wrong": [
+      "Habib Jalib",
+      "Ahmad Faraz",
+      "Jaun Elia"
+     ],
+     "why": "Iqbal Bano's 1986 performance of it became famous."
+    },
+    {
+     "level": 3,
+     "q": "Who wrote the Urdu novel 'Raja Gidh'?",
+     "a": "Bano Qudsia",
+     "wrong": [
+      "Umera Ahmed",
+      "Mustansar Hussain Tarar",
+      "Ashfaq Ahmed"
+     ],
+     "why": "It was published in 1981."
+    },
+    {
+     "level": 1,
+     "q": "Who is Pakistan's national poet?",
+     "a": "Allama Muhammad Iqbal",
+     "wrong": [
+      "Faiz Ahmad Faiz",
+      "Mirza Ghalib",
+      "Hafeez Jalandhari"
+     ],
+     "why": "He is called the 'Poet of the East'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Pakistan's current constitution was adopted in which year?",
+     "a": "1973",
+     "wrong": [
+      "1956",
+      "1962",
+      "1985"
+     ],
+     "why": "Zulfikar Ali Bhutto's government passed it."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Pakistan is famous for brightly painted and decorated what?",
+     "a": "Trucks",
+     "wrong": [
+      "Boats",
+      "Houses",
+      "Bicycles"
+     ],
+     "why": "Truck art is a well-known folk art."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Pakistan's national animal?",
+     "a": "Markhor",
+     "wrong": [
+      "Snow leopard",
+      "Asiatic lion",
+      "Ibex"
+     ],
+     "why": "It is a wild goat with spiralled horns."
+    },
+    {
+     "level": 2,
+     "q": "What is Pakistan's national bird?",
+     "a": "Chukar partridge",
+     "wrong": [
+      "Peacock",
+      "Hoopoe",
+      "Bald eagle"
+     ],
+     "why": "It lives in rocky hillsides."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which spicy rice dish is named after a province of Pakistan?",
+     "a": "Sindhi biryani",
+     "wrong": [
+      "Kabuli pulao",
+      "Zarda",
+      "Khichdi"
+     ],
+     "why": "It is known for its potatoes and plums."
+    },
+    {
+     "level": 1,
+     "q": "Which slow-cooked beef stew was traditionally eaten at dawn?",
+     "a": "Nihari",
+     "wrong": [
+      "Haleem",
+      "Karahi",
+      "Qorma"
+     ],
+     "why": "Its name comes from 'nahar', meaning morning."
+    },
+    {
+     "level": 1,
+     "q": "Which festival marks the end of Ramadan?",
+     "a": "Eid al-Fitr",
+     "wrong": [
+      "Eid al-Adha",
+      "Shab-e-Barat",
+      "Muharram"
+     ],
+     "why": "It begins when the new moon is sighted."
+    },
+    {
+     "level": 1,
+     "q": "Which spring kite-flying festival was famous in Lahore?",
+     "a": "Basant",
+     "wrong": [
+      "Lohri",
+      "Holi",
+      "Nowruz"
+     ],
+     "why": "It has been banned for years because of dangerous kite strings."
+    },
+    {
+     "level": 1,
+     "q": "What is Pakistan's national dress?",
+     "a": "Shalwar kameez",
+     "wrong": [
+      "Sari",
+      "Thobe",
+      "Lungi"
+     ],
+     "why": "It is worn by both men and women."
+    },
+    {
+     "level": 1,
+     "q": "Which mango variety is Pakistan especially famous for?",
+     "a": "Chaunsa",
+     "wrong": [
+      "Alphonso",
+      "Kent",
+      "Tommy Atkins"
+     ],
+     "why": "Multan is known as a mango capital."
+    },
+    {
+     "level": 1,
+     "q": "The chapli kebab is named after a style of which city?",
+     "a": "Peshawar",
+     "wrong": [
+      "Lahore",
+      "Karachi",
+      "Quetta"
+     ],
+     "why": "It is a flat, spiced minced-meat patty."
+    },
+    {
+     "level": 2,
+     "q": "Which Eid remembers Ibrahim's willingness to sacrifice his son?",
+     "a": "Eid al-Adha",
+     "wrong": [
+      "Eid al-Fitr",
+      "Eid Milad-un-Nabi",
+      "Shab-e-Barat"
+     ],
+     "why": "Families sacrifice an animal and share the meat."
+    },
+    {
+     "level": 2,
+     "q": "Khewra, one of the world's largest salt mines, is known for salt of what colour?",
+     "a": "Pink",
+     "wrong": [
+      "Black",
+      "Blue",
+      "Green"
+     ],
+     "why": "It is sold worldwide as 'Himalayan' salt."
+    },
+    {
+     "level": 2,
+     "q": "Which famous Sufi shrine is in Lahore?",
+     "a": "Data Darbar",
+     "wrong": [
+      "Shah Rukn-e-Alam",
+      "Lal Shahbaz Qalandar",
+      "Abdullah Shah Ghazi"
+     ],
+     "why": "It honours Data Ganj Bakhsh."
+    },
+    {
+     "level": 2,
+     "q": "The shrine at Sehwan, famous for its dhamaal, honours which saint?",
+     "a": "Lal Shahbaz Qalandar",
+     "wrong": [
+      "Data Ganj Bakhsh",
+      "Bari Imam",
+      "Baba Farid"
+     ],
+     "why": "The song 'Dama Dam Mast Qalandar' is about him."
+    },
+    {
+     "level": 2,
+     "q": "Which vermicelli dish with milk and dates is served on Eid morning?",
+     "a": "Sheer khurma",
+     "wrong": [
+      "Kheer",
+      "Gulab jamun",
+      "Gajar halwa"
+     ],
+     "why": "Its name means 'milk with dates' in Persian."
+    },
+    {
+     "level": 3,
+     "q": "Which Kalash festival in Chitral welcomes spring?",
+     "a": "Chilam Joshi",
+     "wrong": [
+      "Uchal",
+      "Chaumos",
+      "Shandur"
+     ],
+     "why": "It is held every May."
+    },
+    {
+     "level": 3,
+     "q": "Which festival is played on one of the world's highest polo grounds?",
+     "a": "Shandur Polo Festival",
+     "wrong": [
+      "Lahore Polo Cup",
+      "Gilgit Polo Cup",
+      "Skardu Polo Festival"
+     ],
+     "why": "Gilgit and Chitral teams meet at about 3,700 m."
+    },
+    {
+     "level": 3,
+     "q": "Which Lahore food street looks out onto the Badshahi Mosque?",
+     "a": "Fort Road Food Street",
+     "wrong": [
+      "Gawalmandi",
+      "MM Alam Road",
+      "Anarkali"
+     ],
+     "why": "Diners eat on rooftops facing the mosque."
+    },
+    {
+     "level": 1,
+     "q": "What is Pakistan's national language?",
+     "a": "Urdu",
+     "wrong": [
+      "Punjabi",
+      "Sindhi",
+      "Pashto"
+     ],
+     "why": "English is also an official language."
+    },
+    {
+     "level": 1,
+     "q": "What is Pakistan's currency?",
+     "a": "Pakistani rupee",
+     "wrong": [
+      "Taka",
+      "Riyal",
+      "Afghani"
+     ],
+     "why": "The State Bank of Pakistan issues it."
+    },
+    {
+     "level": 1,
+     "q": "What colours are on Pakistan's flag?",
+     "a": "Green and white",
+     "wrong": [
+      "Green and red",
+      "Green and yellow",
+      "White and blue"
+     ],
+     "why": "White stands for religious minorities."
+    },
+    {
+     "level": 2,
+     "q": "Which humanitarian built Pakistan's largest volunteer ambulance network?",
+     "a": "Abdul Sattar Edhi",
+     "wrong": [
+      "Ansar Burney",
+      "Ruth Pfau",
+      "Hakim Said"
+     ],
+     "why": "The Edhi Foundation runs hundreds of ambulances."
+    },
+    {
+     "level": 2,
+     "q": "What is Pakistan's national flower?",
+     "a": "Jasmine",
+     "wrong": [
+      "Rose",
+      "Lotus",
+      "Tulip"
+     ],
+     "why": "In Urdu it is called chambeli."
+    },
+    {
+     "level": 2,
+     "q": "What is Pakistan's national identity card called?",
+     "a": "CNIC",
+     "wrong": [
+      "Aadhaar",
+      "NID card",
+      "Emirates ID"
+     ],
+     "why": "It stands for Computerised National Identity Card."
+    },
+    {
+     "level": 3,
+     "q": "What is Pakistan's national tree?",
+     "a": "Deodar cedar",
+     "wrong": [
+      "Neem",
+      "Banyan",
+      "Chinar"
+     ],
+     "why": "It grows in the northern mountains."
+    },
+    {
+     "level": 3,
+     "q": "Which German-born doctor led Pakistan's fight against leprosy?",
+     "a": "Ruth Pfau",
+     "wrong": [
+      "Annemarie Schimmel",
+      "Mother Teresa",
+      "Clara Swain"
+     ],
+     "why": "Pakistan was declared leprosy-controlled in 1996."
+    }
+   ]
+  }
+ ]
 }

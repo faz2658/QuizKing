@@ -3,30 +3,9 @@
  "country": "CI",
  "topics": [
   {
-   "name": "Côte d'Ivoire: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the official capital of Côte d'Ivoire?",
-     "a": "Yamoussoukro",
-     "wrong": [
-      "Abidjan",
-      "Bouaké",
-      "San-Pédro"
-     ],
-     "why": "Abidjan is the economic capital."
-    },
-    {
-     "level": 1,
-     "q": "What is the largest city of Côte d'Ivoire?",
-     "a": "Abidjan",
-     "wrong": [
-      "Yamoussoukro",
-      "Bouaké",
-      "Daloa"
-     ],
-     "why": "It is on the Ébrié Lagoon."
-    },
     {
      "level": 1,
      "q": "From which country did Côte d'Ivoire gain independence in 1960?",
@@ -48,83 +27,6 @@
       "Alassane Ouattara"
      ],
      "why": "He ruled from 1960 to 1993."
-    },
-    {
-     "level": 1,
-     "q": "Which crop is Côte d'Ivoire the world's largest producer of?",
-     "a": "Cocoa",
-     "wrong": [
-      "Coffee",
-      "Tea",
-      "Rubber"
-     ],
-     "why": "It grows about 40% of the world's cocoa."
-    },
-    {
-     "level": 1,
-     "q": "What is the currency of Côte d'Ivoire?",
-     "a": "West African CFA franc",
-     "wrong": [
-      "Cedi",
-      "Naira",
-      "Leone"
-     ],
-     "why": "It is shared by eight countries."
-    },
-    {
-     "level": 1,
-     "q": "Who has been President of Côte d'Ivoire since 2010?",
-     "a": "Alassane Ouattara",
-     "wrong": [
-      "Laurent Gbagbo",
-      "Guillaume Soro",
-      "Henri Konan Bédié"
-     ],
-     "why": "He won a fourth term in 2025."
-    },
-    {
-     "level": 2,
-     "q": "Which huge basilica in Yamoussoukro copies St Peter's?",
-     "a": "Basilica of Our Lady of Peace",
-     "wrong": [
-      "Notre-Dame de Paris",
-      "Sagrada Família",
-      "St Paul's Cathedral"
-     ],
-     "why": "It is one of the largest churches in the world."
-    },
-    {
-     "level": 2,
-     "q": "Which footballer helped stop the civil war with a 2005 speech?",
-     "a": "Didier Drogba",
-     "wrong": [
-      "Yaya Touré",
-      "Kolo Touré",
-      "Salomon Kalou"
-     ],
-     "why": "He begged both sides to lay down their arms."
-    },
-    {
-     "level": 2,
-     "q": "Which crisis followed the disputed 2010 election?",
-     "a": "2010–11 Ivorian crisis",
-     "wrong": [
-      "Biafran War",
-      "First Liberian War",
-      "Mali War"
-     ],
-     "why": "Laurent Gbagbo refused to step down."
-    },
-    {
-     "level": 2,
-     "q": "Which former President was tried at the International Criminal Court?",
-     "a": "Laurent Gbagbo",
-     "wrong": [
-      "Henri Konan Bédié",
-      "Robert Guéï",
-      "Alassane Ouattara"
-     ],
-     "why": "He was acquitted in 2019."
     },
     {
      "level": 2,
@@ -158,22 +60,145 @@
       "Kong Empire"
      ],
      "why": "Legend says she sacrificed her son at a river."
-    },
-    {
-     "level": 3,
-     "q": "Which nationalist idea of 'Ivoirité' caused tension in the 1990s?",
-     "a": "Being 'truly' Ivorian",
-     "wrong": [
-      "Pan-Africanism",
-      "Négritude",
-      "Cocoa nationalism"
-     ],
-     "why": "It excluded many northerners."
     }
    ]
   },
   {
-   "name": "Côte d'Ivoire: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the official capital of Côte d'Ivoire?",
+     "a": "Yamoussoukro",
+     "wrong": [
+      "Abidjan",
+      "Bouaké",
+      "San-Pédro"
+     ],
+     "why": "Abidjan is the economic capital."
+    },
+    {
+     "level": 1,
+     "q": "What is the largest city of Côte d'Ivoire?",
+     "a": "Abidjan",
+     "wrong": [
+      "Yamoussoukro",
+      "Bouaké",
+      "Daloa"
+     ],
+     "why": "It is on the Ébrié Lagoon."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is on Côte d'Ivoire's south coast?",
+     "a": "Atlantic Ocean (Gulf of Guinea)",
+     "wrong": [
+      "Indian Ocean",
+      "Mediterranean Sea",
+      "Red Sea"
+     ],
+     "why": "It has lagoons along the coast."
+    },
+    {
+     "level": 2,
+     "q": "Which national park in the west is home to wild chimpanzees?",
+     "a": "Taï National Park",
+     "wrong": [
+      "Comoé National Park",
+      "Mount Nimba",
+      "Banco National Park"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which forest in Abidjan is a national park inside the city?",
+     "a": "Banco National Park",
+     "wrong": [
+      "Taï",
+      "Comoé",
+      "Marahoué"
+     ],
+     "why": "It is a rare city rainforest."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which footballer helped stop the civil war with a 2005 speech?",
+     "a": "Didier Drogba",
+     "wrong": [
+      "Yaya Touré",
+      "Kolo Touré",
+      "Salomon Kalou"
+     ],
+     "why": "He begged both sides to lay down their arms."
+    },
+    {
+     "level": 1,
+     "q": "What is the national football team called?",
+     "a": "The Elephants",
+     "wrong": [
+      "The Black Stars",
+      "The Super Eagles",
+      "The Lions"
+     ],
+     "why": "The elephant is a national symbol."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Côte d'Ivoire win the Africa Cup of Nations on home soil?",
+     "a": "2024",
+     "wrong": [
+      "2015",
+      "1992",
+      "2006"
+     ],
+     "why": "They had nearly been knocked out early."
+    },
+    {
+     "level": 2,
+     "q": "Which Ivorian midfielder won four Premier League titles with Manchester City?",
+     "a": "Yaya Touré",
+     "wrong": [
+      "Kolo Touré",
+      "Didier Drogba",
+      "Gervinho"
+     ],
+     "why": "He was African Player of the Year four times."
+    },
+    {
+     "level": 3,
+     "q": "Which Ivorian sprinter won world indoor 60 m gold in 2018?",
+     "a": "Murielle Ahouré",
+     "wrong": [
+      "Marie-Josée Ta Lou",
+      "Gabriel Tiacoh",
+      "Ben Youssef Meïté"
+     ],
+     "why": "She won it in Birmingham."
+    },
+    {
+     "level": 3,
+     "q": "Which Ivorian taekwondo athlete won the country's first Olympic gold, in 2016?",
+     "a": "Cheick Sallah Cissé",
+     "wrong": [
+      "Ruth Gbagbi",
+      "Gabriel Tiacoh",
+      "Moussa Traoré"
+     ],
+     "why": "He won in the last second."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
     {
      "level": 1,
@@ -185,6 +210,134 @@
       "Soukous"
      ],
      "why": "It began in the 2000s."
+    },
+    {
+     "level": 2,
+     "q": "Which Ivorian reggae singer sang 'Brigadier Sabari'?",
+     "a": "Alpha Blondy",
+     "wrong": [
+      "Tiken Jah Fakoly",
+      "Magic System",
+      "Meiway"
+     ],
+     "why": "He is one of Africa's top reggae stars."
+    },
+    {
+     "level": 2,
+     "q": "Which group sang '1er Gaou'?",
+     "a": "Magic System",
+     "wrong": [
+      "Les Garagistes",
+      "DJ Arafat",
+      "Daouda"
+     ],
+     "why": "It became a hit in 2000."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Ivorian writer wrote 'Allah Is Not Obliged'?",
+     "a": "Ahmadou Kourouma",
+     "wrong": [
+      "Bernard Dadié",
+      "Véronique Tadjo",
+      "Amadou Hampâté Bâ"
+     ],
+     "why": "It is narrated by a child soldier."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been President of Côte d'Ivoire since 2010?",
+     "a": "Alassane Ouattara",
+     "wrong": [
+      "Laurent Gbagbo",
+      "Guillaume Soro",
+      "Henri Konan Bédié"
+     ],
+     "why": "He won a fourth term in 2025."
+    },
+    {
+     "level": 2,
+     "q": "Which crisis followed the disputed 2010 election?",
+     "a": "2010–11 Ivorian crisis",
+     "wrong": [
+      "Biafran War",
+      "First Liberian War",
+      "Mali War"
+     ],
+     "why": "Laurent Gbagbo refused to step down."
+    },
+    {
+     "level": 2,
+     "q": "Which former President was tried at the International Criminal Court?",
+     "a": "Laurent Gbagbo",
+     "wrong": [
+      "Henri Konan Bédié",
+      "Robert Guéï",
+      "Alassane Ouattara"
+     ],
+     "why": "He was acquitted in 2019."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which crop is Côte d'Ivoire the world's largest producer of?",
+     "a": "Cocoa",
+     "wrong": [
+      "Coffee",
+      "Tea",
+      "Rubber"
+     ],
+     "why": "It grows about 40% of the world's cocoa."
+    },
+    {
+     "level": 1,
+     "q": "What is the currency of Côte d'Ivoire?",
+     "a": "West African CFA franc",
+     "wrong": [
+      "Cedi",
+      "Naira",
+      "Leone"
+     ],
+     "why": "It is shared by eight countries."
+    },
+    {
+     "level": 2,
+     "q": "Which huge basilica in Yamoussoukro copies St Peter's?",
+     "a": "Basilica of Our Lady of Peace",
+     "wrong": [
+      "Notre-Dame de Paris",
+      "Sagrada Família",
+      "St Paul's Cathedral"
+     ],
+     "why": "It is one of the largest churches in the world."
+    },
+    {
+     "level": 3,
+     "q": "Which nationalist idea of 'Ivoirité' caused tension in the 1990s?",
+     "a": "Being 'truly' Ivorian",
+     "wrong": [
+      "Pan-Africanism",
+      "Négritude",
+      "Cocoa nationalism"
+     ],
+     "why": "It excluded many northerners."
     },
     {
      "level": 1,
@@ -218,127 +371,6 @@
       "Shebeens"
      ],
      "why": "They are found all over Abidjan."
-    },
-    {
-     "level": 1,
-     "q": "What is the national football team called?",
-     "a": "The Elephants",
-     "wrong": [
-      "The Black Stars",
-      "The Super Eagles",
-      "The Lions"
-     ],
-     "why": "The elephant is a national symbol."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Côte d'Ivoire win the Africa Cup of Nations on home soil?",
-     "a": "2024",
-     "wrong": [
-      "2015",
-      "1992",
-      "2006"
-     ],
-     "why": "They had nearly been knocked out early."
-    },
-    {
-     "level": 1,
-     "q": "Which ocean is on Côte d'Ivoire's south coast?",
-     "a": "Atlantic Ocean (Gulf of Guinea)",
-     "wrong": [
-      "Indian Ocean",
-      "Mediterranean Sea",
-      "Red Sea"
-     ],
-     "why": "It has lagoons along the coast."
-    },
-    {
-     "level": 2,
-     "q": "Which national park in the west is home to wild chimpanzees?",
-     "a": "Taï National Park",
-     "wrong": [
-      "Comoé National Park",
-      "Mount Nimba",
-      "Banco National Park"
-     ],
-     "why": "It is a UNESCO site."
-    },
-    {
-     "level": 2,
-     "q": "Which Ivorian midfielder won four Premier League titles with Manchester City?",
-     "a": "Yaya Touré",
-     "wrong": [
-      "Kolo Touré",
-      "Didier Drogba",
-      "Gervinho"
-     ],
-     "why": "He was African Player of the Year four times."
-    },
-    {
-     "level": 2,
-     "q": "Which Ivorian reggae singer sang 'Brigadier Sabari'?",
-     "a": "Alpha Blondy",
-     "wrong": [
-      "Tiken Jah Fakoly",
-      "Magic System",
-      "Meiway"
-     ],
-     "why": "He is one of Africa's top reggae stars."
-    },
-    {
-     "level": 2,
-     "q": "Which group sang '1er Gaou'?",
-     "a": "Magic System",
-     "wrong": [
-      "Les Garagistes",
-      "DJ Arafat",
-      "Daouda"
-     ],
-     "why": "It became a hit in 2000."
-    },
-    {
-     "level": 2,
-     "q": "Which forest in Abidjan is a national park inside the city?",
-     "a": "Banco National Park",
-     "wrong": [
-      "Taï",
-      "Comoé",
-      "Marahoué"
-     ],
-     "why": "It is a rare city rainforest."
-    },
-    {
-     "level": 3,
-     "q": "Which Ivorian sprinter won world indoor 60 m gold in 2018?",
-     "a": "Murielle Ahouré",
-     "wrong": [
-      "Marie-Josée Ta Lou",
-      "Gabriel Tiacoh",
-      "Ben Youssef Meïté"
-     ],
-     "why": "She won it in Birmingham."
-    },
-    {
-     "level": 3,
-     "q": "Which Ivorian writer wrote 'Allah Is Not Obliged'?",
-     "a": "Ahmadou Kourouma",
-     "wrong": [
-      "Bernard Dadié",
-      "Véronique Tadjo",
-      "Amadou Hampâté Bâ"
-     ],
-     "why": "It is narrated by a child soldier."
-    },
-    {
-     "level": 3,
-     "q": "Which Ivorian taekwondo athlete won the country's first Olympic gold, in 2016?",
-     "a": "Cheick Sallah Cissé",
-     "wrong": [
-      "Ruth Gbagbi",
-      "Gabriel Tiacoh",
-      "Moussa Traoré"
-     ],
-     "why": "He won in the last second."
     }
    ]
   }

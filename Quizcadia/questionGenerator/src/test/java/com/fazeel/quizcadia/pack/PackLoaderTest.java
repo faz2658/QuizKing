@@ -2,9 +2,11 @@ package com.fazeel.quizcadia.pack;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatCode;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.ArgumentMatchers.isNull;
 import static org.mockito.Mockito.clearInvocations;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
@@ -48,32 +50,33 @@ class PackLoaderTest {
 		}
 	}
 
+	/** The shared world topics on the live site that country questions join, as category / topic. */
+	static final Set<String> SHARED_TOPICS = Set.of("History / History", "Geography / Geography", "Sports / Sports",
+			"Entertainment / Music", "Entertainment / Film", "Entertainment / Books", "Politics / Politics", "Art / Art",
+			"Animals / Animals", "General Knowledge / General Knowledge");
+
 	@Test
-	void everyPackQuestionIsPlayableAndEveryTopicCanBecomeAGame() {
+	void everyPackQuestionIsPlayableAndGoesIntoASharedTopic() {
 		Set<Integer> ids = new HashSet<>();
 		Set<String> countries = new HashSet<>();
-		Set<String> categories = new HashSet<>();
-		Set<String> topics = new HashSet<>();
+		Map<String, Integer> perSharedTopic = new HashMap<>();
 		List<PackLoader.Pack> packs = PackLoader.bundled();
-		assertThat(packs).isNotEmpty();
+		assertThat(packs).hasSizeGreaterThanOrEqualTo(199);
 		for (PackLoader.Pack p : packs) {
 			QuestionPack pack = QuestionPack.parse(p.json());
 			assertThat(pack.category()).as(p.name()).isNotBlank();
-			assertThat(categories.add(pack.category().toLowerCase())).as("category used twice: " + pack.category()).isTrue();
 			assertThat(COUNTRIES).as(p.name() + " country").contains(pack.country());
 			assertThat(countries.add(pack.country())).as("two packs for " + pack.country()).isTrue();
 			assertThat(p.name()).as("file is named after its country").isEqualTo(pack.country().toLowerCase() + ".json");
+			Set<String> own = new HashSet<>();
 			for (QuestionPack.PackTopic topic : pack.topics()) {
-				// topic names become game names, so they must be unique across every country
-				assertThat(topics.add(topic.name().toLowerCase())).as("topic used twice: " + topic.name()).isTrue();
-				List<Questions> qs = QuestionPack.questions(topic);
-				// the game manager makes automatic games for topics with 12 or more questions
-				assertThat(qs).as(topic.name()).hasSizeGreaterThanOrEqualTo(14);
-				for (int level = 1; level <= 3; level++) {
-					int l = level;
-					assertThat(qs.stream().filter(q -> q.getQuestionLevel() == l).count()).as(topic.name() + " level " + l)
-							.isGreaterThanOrEqualTo(2);
-				}
+				String key = topic.category() + " / " + topic.name();
+				assertThat(topic.shared()).as(p.name() + " " + topic.name() + " has a shared category").isTrue();
+				assertThat(SHARED_TOPICS).as(p.name()).contains(key);
+				assertThat(own.add(key)).as(p.name() + " lists " + key + " twice").isTrue();
+				List<Questions> qs = QuestionPack.questions(topic, pack.country());
+				assertThat(qs).as(key).isNotEmpty().allMatch(q -> pack.country().equals(q.getCountry()));
+				perSharedTopic.merge(key, qs.size(), Integer::sum);
 				for (Questions q : qs) {
 					assertThatCode(() -> QuestionRules.validate(q)).as(q.getQuestionStem()).doesNotThrowAnyException();
 					assertThat(q.getOption4()).as(q.getQuestionStem()).isNotBlank();
@@ -83,6 +86,9 @@ class PackLoaderTest {
 				}
 			}
 		}
+		// every shared topic gets a real share of country questions
+		assertThat(perSharedTopic.keySet()).containsExactlyInAnyOrderElementsOf(SHARED_TOPICS);
+		perSharedTopic.forEach((k, n) -> assertThat(n).as(k).isGreaterThanOrEqualTo(100));
 	}
 
 	@Test
@@ -101,19 +107,37 @@ class PackLoaderTest {
 
 	@Test
 	@SuppressWarnings("unchecked")
-	void putsEachTopicInTheBankWithItsCountryAndLeavesRetiredQuestionsOut() {
+	void putsEachTopicIntoItsSharedTopicTaggedWithTheCountryAndLeavesRetiredQuestionsOut() {
 		QuestionBankService bank = mock(QuestionBankService.class);
 		PackLoader.Pack india = PackLoader.bundled().stream().filter(p -> p.name().equals("in.json")).findFirst().orElseThrow();
 		QuestionPack pack = QuestionPack.parse(india.json());
-		int retiredId = QuestionPack.questions(pack.topics().get(0)).get(0).getQuestionId();
+		QuestionPack.PackTopic first = pack.topics().get(0);
+		int retiredId = QuestionPack.questions(first).get(0).getQuestionId();
 
 		new PackLoader(bank, id -> id == retiredId, new Memory()).load(List.of(india));
 
-		verify(bank, times(pack.topics().size())).importQuestions(eq(pack.category()), eq("IN"), anyString(), anyList());
-		ArgumentCaptor<List<Questions>> first = ArgumentCaptor.forClass(List.class);
-		verify(bank).importQuestions(eq(pack.category()), eq("IN"), eq(pack.topics().get(0).name()), first.capture());
-		assertThat(first.getValue()).hasSize(pack.topics().get(0).questions().size() - 1)
-				.noneMatch(q -> q.getQuestionId() == retiredId);
+		// shared topics are not country categories: the country travels on each question instead
+		verify(bank, never()).importQuestions(anyString(), eq("IN"), anyString(), anyList());
+		verify(bank, times(pack.topics().size())).importQuestions(anyString(), isNull(), anyString(), anyList());
+		ArgumentCaptor<List<Questions>> captured = ArgumentCaptor.forClass(List.class);
+		verify(bank).importQuestions(eq(first.category()), isNull(), eq(first.name()), captured.capture());
+		assertThat(captured.getValue()).hasSize(first.questions().size() - 1)
+				.noneMatch(q -> q.getQuestionId() == retiredId)
+				.allMatch(q -> "IN".equals(q.getCountry())); // each question carries its country for the game mix
+	}
+
+	@Test
+	@SuppressWarnings("unchecked")
+	void aSharedTopicIsImportedOnceWithTheQuestionsOfEveryChangedPack() {
+		QuestionBankService bank = mock(QuestionBankService.class);
+		List<PackLoader.Pack> packs = PackLoader.bundled();
+
+		new PackLoader(bank, id -> false, new Memory()).load(packs);
+
+		ArgumentCaptor<List<Questions>> history = ArgumentCaptor.forClass(List.class);
+		verify(bank, times(1)).importQuestions(eq("History"), isNull(), eq("History"), history.capture());
+		assertThat(history.getValue().stream().map(Questions::getCountry).distinct().count()).isGreaterThan(150);
+		verify(bank, times(SHARED_TOPICS.size())).importQuestions(anyString(), isNull(), anyString(), anyList());
 	}
 
 	@Test
@@ -126,12 +150,12 @@ class PackLoaderTest {
 		loader.load(packs);
 		clearInvocations(bank);
 		loader.load(packs); // a normal restart
-		verify(bank, never()).importQuestions(anyString(), anyString(), anyString(), anyList());
+		verify(bank, never()).importQuestions(anyString(), any(), anyString(), anyList());
 
 		PackLoader.Pack india = packs.stream().filter(p -> p.name().equals("in.json")).findFirst().orElseThrow();
 		String edited = new String(india.json()).replace("The Wall", "The Great Wall");
 		loader.load(List.of(new PackLoader.Pack("in.json", edited.getBytes())));
-		verify(bank, times(QuestionPack.parse(india.json()).topics().size())).importQuestions(anyString(), eq("IN"),
+		verify(bank, times(QuestionPack.parse(india.json()).topics().size())).importQuestions(anyString(), isNull(),
 				anyString(), anyList());
 	}
 }

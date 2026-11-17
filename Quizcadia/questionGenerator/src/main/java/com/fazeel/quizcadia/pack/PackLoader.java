@@ -7,6 +7,8 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.HexFormat;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import java.util.List;
 import java.util.function.IntPredicate;
 
@@ -65,26 +67,42 @@ public class PackLoader {
 		}
 	}
 
-	/** @return how many questions were new to the bank */
+	/**
+	 * Imports the packs that changed since they were last loaded. Topics with a shared category (History,
+	 * Sports...) are gathered from all changed packs and imported once per shared topic, each question tagged
+	 * with its pack's country; topics without one become the pack's own country topic as before.
+	 *
+	 * @return how many questions were new to the bank
+	 */
 	public int load(List<Pack> packs) {
 		int added = 0;
-		int skipped = 0;
+		Map<List<String>, List<Questions>> shared = new LinkedHashMap<>();
+		Map<String, String> changed = new LinkedHashMap<>();
 		for (Pack p : packs) {
 			String hash = sha256(p.json());
 			if (hash.equals(loaded.hash(p.name()))) {
-				skipped++;
 				continue;
 			}
 			QuestionPack pack = QuestionPack.parse(p.json());
 			for (QuestionPack.PackTopic topic : pack.topics()) {
-				List<Questions> questions = QuestionPack.questions(topic).stream()
+				List<Questions> questions = QuestionPack.questions(topic, pack.country()).stream()
 						.filter(q -> !retired.test(q.getQuestionId())).toList();
-				added += bank.importQuestions(pack.category(), pack.country(), topic.name(), questions);
+				if (topic.shared()) {
+					shared.computeIfAbsent(List.of(topic.category().trim(), topic.name().trim()), k -> new ArrayList<>())
+							.addAll(questions);
+				} else {
+					added += bank.importQuestions(pack.category(), pack.country(), topic.name(), questions);
+				}
 			}
-			loaded.loaded(p.name(), hash);
-			log.info("Question pack {} loaded: {} topics", p.name(), pack.topics().size());
+			changed.put(p.name(), hash);
 		}
-		log.info("Question packs: {} loaded, {} unchanged", packs.size() - skipped, skipped);
+		for (Map.Entry<List<String>, List<Questions>> e : shared.entrySet()) {
+			added += bank.importQuestions(e.getKey().get(0), null, e.getKey().get(1), e.getValue());
+			log.info("Shared topic {} / {}: {} pack questions", e.getKey().get(0), e.getKey().get(1), e.getValue().size());
+		}
+		// only once everything is in the bank, so a failed start loads the same packs again next time
+		changed.forEach(loaded::loaded);
+		log.info("Question packs: {} loaded, {} unchanged", changed.size(), packs.size() - changed.size());
 		return added;
 	}
 

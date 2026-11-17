@@ -3,7 +3,8 @@
  "country": "SG",
  "topics": [
   {
-   "name": "Singapore History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -127,64 +128,32 @@
      "why": "It included Penang and Malacca."
     },
     {
-     "level": 2,
-     "q": "Who was Singapore's second Prime Minister?",
-     "a": "Goh Chok Tong",
+     "level": 1,
+     "q": "Since 1992, Singapore has banned the sale of what?",
+     "a": "Chewing gum",
      "wrong": [
-      "Lee Hsien Loong",
-      "Lawrence Wong",
-      "S. Rajaratnam"
+      "Chocolate",
+      "Fireworks",
+      "Soft drinks"
      ],
-     "why": "He served from 1990 to 2004."
-    },
-    {
-     "level": 2,
-     "q": "Who became Prime Minister of Singapore in 2024?",
-     "a": "Lawrence Wong",
-     "wrong": [
-      "Lee Hsien Loong",
-      "Tharman Shanmugaratnam",
-      "Heng Swee Keat"
-     ],
-     "why": "He is the country's fourth Prime Minister."
+     "why": "It was meant to keep streets and trains clean."
     },
     {
      "level": 3,
-     "q": "Which prince is said to have named the island Singapura after seeing a lion?",
-     "a": "Sang Nila Utama",
+     "q": "Which Singapore attraction was the world's first nocturnal zoo, opened in 1994?",
+     "a": "Night Safari",
      "wrong": [
-      "Parameswara",
-      "Hang Tuah",
-      "Iskandar Shah"
+      "River Wonders",
+      "Bird Paradise",
+      "S.E.A. Aquarium"
      ],
-     "why": "Singapura means 'lion city'."
-    },
-    {
-     "level": 3,
-     "q": "In which year did Singapore gain full self-government?",
-     "a": "1959",
-     "wrong": [
-      "1965",
-      "1963",
-      "1955"
-     ],
-     "why": "Lee Kuan Yew became Prime Minister that year."
-    },
-    {
-     "level": 3,
-     "q": "Who became President of Singapore in 2023?",
-     "a": "Tharman Shanmugaratnam",
-     "wrong": [
-      "Halimah Yacob",
-      "Tony Tan",
-      "S. R. Nathan"
-     ],
-     "why": "He won about 70% of the vote."
+     "why": "Visitors tour it by tram after dark."
     }
    ]
   },
   {
-   "name": "Singapore Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -365,7 +334,8 @@
    ]
   },
   {
-   "name": "Singapore Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,19 +516,9 @@
    ]
   },
   {
-   "name": "Singapore Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which 2018 Hollywood romantic comedy was largely set in Singapore?",
-     "a": "Crazy Rich Asians",
-     "wrong": [
-      "The Joy Luck Club",
-      "Parasite",
-      "Always Be My Maybe"
-     ],
-     "why": "It is based on Kevin Kwan's novel."
-    },
     {
      "level": 1,
      "q": "Singaporean star JJ Lin sings mainly in which genre?",
@@ -572,17 +532,6 @@
     },
     {
      "level": 1,
-     "q": "What is 'Singlish'?",
-     "a": "Singapore's English-based creole",
-     "wrong": [
-      "A TV channel",
-      "A dance style",
-      "A Malay dialect"
-     ],
-     "why": "It mixes English with Malay, Hokkien and Tamil words."
-    },
-    {
-     "level": 1,
      "q": "Which Singapore-born singer had huge Mandopop hits from 2000 onwards?",
      "a": "Stefanie Sun",
      "wrong": [
@@ -591,61 +540,6 @@
       "Eason Chan"
      ],
      "why": "Her fans call her Yanzi."
-    },
-    {
-     "level": 1,
-     "q": "Which waterfront arts centre has spiky roofs that look like durians?",
-     "a": "Esplanade – Theatres on the Bay",
-     "wrong": [
-      "Victoria Theatre",
-      "ArtScience Museum",
-      "Capitol Theatre"
-     ],
-     "why": "Its spikes are sunshades."
-    },
-    {
-     "level": 1,
-     "q": "Which sitcom builder wore yellow boots and a curly perm?",
-     "a": "Phua Chu Kang",
-     "wrong": [
-      "Mr Kiasu",
-      "Ah Beng",
-      "Under One Roof's Ah Kong"
-     ],
-     "why": "Gurmit Singh played him."
-    },
-    {
-     "level": 1,
-     "q": "Which lotus-shaped museum stands next to Marina Bay Sands?",
-     "a": "ArtScience Museum",
-     "wrong": [
-      "National Gallery",
-      "Asian Civilisations Museum",
-      "Peranakan Museum"
-     ],
-     "why": "Moshe Safdie designed it."
-    },
-    {
-     "level": 2,
-     "q": "Which Anthony Chen film won the Caméra d'Or at Cannes in 2013?",
-     "a": "Ilo Ilo",
-     "wrong": [
-      "12 Storeys",
-      "Pop Aye",
-      "Wet Season"
-     ],
-     "why": "It is about a family and their Filipino helper."
-    },
-    {
-     "level": 2,
-     "q": "Which director made the hit comedy 'I Not Stupid'?",
-     "a": "Jack Neo",
-     "wrong": [
-      "Eric Khoo",
-      "Royston Tan",
-      "Anthony Chen"
-     ],
-     "why": "It came out in 2002."
     },
     {
      "level": 2,
@@ -670,26 +564,54 @@
      "why": "He is a pioneer of Singapore pop."
     },
     {
-     "level": 2,
-     "q": "Which Singapore broadcaster runs Channel 5 and Channel 8?",
-     "a": "Mediacorp",
+     "level": 1,
+     "q": "What is Singapore's national anthem?",
+     "a": "Majulah Singapura",
      "wrong": [
-      "SPH",
-      "StarHub",
-      "Singtel"
+      "Negaraku",
+      "Home",
+      "Indonesia Raya"
      ],
-     "why": "Channel 8 broadcasts in Mandarin."
+     "why": "It means 'Onward Singapore'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which sitcom builder wore yellow boots and a curly perm?",
+     "a": "Phua Chu Kang",
+     "wrong": [
+      "Mr Kiasu",
+      "Ah Beng",
+      "Under One Roof's Ah Kong"
+     ],
+     "why": "Gurmit Singh played him."
     },
     {
      "level": 2,
-     "q": "Which festival lights up Marina Bay with art installations?",
-     "a": "i Light Singapore",
+     "q": "Which Anthony Chen film won the Caméra d'Or at Cannes in 2013?",
+     "a": "Ilo Ilo",
      "wrong": [
-      "Vivid Singapore",
-      "Singapore Night Festival",
-      "Chingay"
+      "12 Storeys",
+      "Pop Aye",
+      "Wet Season"
      ],
-     "why": "It focuses on sustainable light art."
+     "why": "It is about a family and their Filipino helper."
+    },
+    {
+     "level": 2,
+     "q": "Which director made the hit comedy 'I Not Stupid'?",
+     "a": "Jack Neo",
+     "wrong": [
+      "Eric Khoo",
+      "Royston Tan",
+      "Anthony Chen"
+     ],
+     "why": "It came out in 2002."
     },
     {
      "level": 3,
@@ -701,7 +623,13 @@
       "Ilo Ilo"
      ],
      "why": "It is set in a public housing block."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
      "level": 3,
      "q": "Which poet is often called the father of Singapore poetry?",
@@ -727,8 +655,148 @@
    ]
   },
   {
-   "name": "Singapore Food & Traditions",
+   "category": "Politics",
+   "name": "Politics",
    "questions": [
+    {
+     "level": 2,
+     "q": "Who was Singapore's second Prime Minister?",
+     "a": "Goh Chok Tong",
+     "wrong": [
+      "Lee Hsien Loong",
+      "Lawrence Wong",
+      "S. Rajaratnam"
+     ],
+     "why": "He served from 1990 to 2004."
+    },
+    {
+     "level": 2,
+     "q": "Who became Prime Minister of Singapore in 2024?",
+     "a": "Lawrence Wong",
+     "wrong": [
+      "Lee Hsien Loong",
+      "Tharman Shanmugaratnam",
+      "Heng Swee Keat"
+     ],
+     "why": "He is the country's fourth Prime Minister."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Singapore gain full self-government?",
+     "a": "1959",
+     "wrong": [
+      "1965",
+      "1963",
+      "1955"
+     ],
+     "why": "Lee Kuan Yew became Prime Minister that year."
+    },
+    {
+     "level": 3,
+     "q": "Who became President of Singapore in 2023?",
+     "a": "Tharman Shanmugaratnam",
+     "wrong": [
+      "Halimah Yacob",
+      "Tony Tan",
+      "S. R. Nathan"
+     ],
+     "why": "He won about 70% of the vote."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which lotus-shaped museum stands next to Marina Bay Sands?",
+     "a": "ArtScience Museum",
+     "wrong": [
+      "National Gallery",
+      "Asian Civilisations Museum",
+      "Peranakan Museum"
+     ],
+     "why": "Moshe Safdie designed it."
+    },
+    {
+     "level": 2,
+     "q": "Which festival lights up Marina Bay with art installations?",
+     "a": "i Light Singapore",
+     "wrong": [
+      "Vivid Singapore",
+      "Singapore Night Festival",
+      "Chingay"
+     ],
+     "why": "It focuses on sustainable light art."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which prince is said to have named the island Singapura after seeing a lion?",
+     "a": "Sang Nila Utama",
+     "wrong": [
+      "Parameswara",
+      "Hang Tuah",
+      "Iskandar Shah"
+     ],
+     "why": "Singapura means 'lion city'."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which 2018 Hollywood romantic comedy was largely set in Singapore?",
+     "a": "Crazy Rich Asians",
+     "wrong": [
+      "The Joy Luck Club",
+      "Parasite",
+      "Always Be My Maybe"
+     ],
+     "why": "It is based on Kevin Kwan's novel."
+    },
+    {
+     "level": 1,
+     "q": "What is 'Singlish'?",
+     "a": "Singapore's English-based creole",
+     "wrong": [
+      "A TV channel",
+      "A dance style",
+      "A Malay dialect"
+     ],
+     "why": "It mixes English with Malay, Hokkien and Tamil words."
+    },
+    {
+     "level": 1,
+     "q": "Which waterfront arts centre has spiky roofs that look like durians?",
+     "a": "Esplanade – Theatres on the Bay",
+     "wrong": [
+      "Victoria Theatre",
+      "ArtScience Museum",
+      "Capitol Theatre"
+     ],
+     "why": "Its spikes are sunshades."
+    },
+    {
+     "level": 2,
+     "q": "Which Singapore broadcaster runs Channel 5 and Channel 8?",
+     "a": "Mediacorp",
+     "wrong": [
+      "SPH",
+      "StarHub",
+      "Singtel"
+     ],
+     "why": "Channel 8 broadcasts in Mandarin."
+    },
     {
      "level": 1,
      "q": "Which dish is often called Singapore's national dish?",
@@ -904,12 +972,7 @@
       "Holi"
      ],
      "why": "The procession ends at a temple on Tank Road."
-    }
-   ]
-  },
-  {
-   "name": "Singapore General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is Singapore's currency?",
@@ -956,17 +1019,6 @@
     },
     {
      "level": 1,
-     "q": "Since 1992, Singapore has banned the sale of what?",
-     "a": "Chewing gum",
-     "wrong": [
-      "Chocolate",
-      "Fireworks",
-      "Soft drinks"
-     ],
-     "why": "It was meant to keep streets and trains clean."
-    },
-    {
-     "level": 1,
      "q": "What is Singapore's national airline?",
      "a": "Singapore Airlines",
      "wrong": [
@@ -975,17 +1027,6 @@
       "Merlion Airways"
      ],
      "why": "Scoot is its budget airline."
-    },
-    {
-     "level": 1,
-     "q": "What is Singapore's national anthem?",
-     "a": "Majulah Singapura",
-     "wrong": [
-      "Negaraku",
-      "Home",
-      "Indonesia Raya"
-     ],
-     "why": "It means 'Onward Singapore'."
     },
     {
      "level": 2,
@@ -1063,17 +1104,6 @@
       "Margaret Thatcher"
      ],
      "why": "Singaporeans now use it with pride."
-    },
-    {
-     "level": 3,
-     "q": "Which Singapore attraction was the world's first nocturnal zoo, opened in 1994?",
-     "a": "Night Safari",
-     "wrong": [
-      "River Wonders",
-      "Bird Paradise",
-      "S.E.A. Aquarium"
-     ],
-     "why": "Visitors tour it by tram after dark."
     },
     {
      "level": 3,

@@ -3,7 +3,8 @@
  "country": "CN",
  "topics": [
   {
-   "name": "China: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -26,17 +27,6 @@
       "Wu Zetian"
      ],
      "why": "He unified China in 221 BC."
-    },
-    {
-     "level": 1,
-     "q": "Which army of clay soldiers guards Qin Shi Huang's tomb?",
-     "a": "Terracotta Army",
-     "wrong": [
-      "Jade Army",
-      "Bronze Legion",
-      "Stone Guard"
-     ],
-     "why": "Farmers found it near Xi'an in 1974."
     },
     {
      "level": 1,
@@ -70,17 +60,6 @@
       "Sun Tzu"
      ],
      "why": "He lived around 500 BC."
-    },
-    {
-     "level": 1,
-     "q": "Which Chinese invention made printing books much easier around 1040?",
-     "a": "Movable type",
-     "wrong": [
-      "The telescope",
-      "The steam engine",
-      "The radio"
-     ],
-     "why": "Bi Sheng made the first type from clay."
     },
     {
      "level": 2,
@@ -139,17 +118,6 @@
     },
     {
      "level": 3,
-     "q": "Which military classic did Sun Tzu write?",
-     "a": "The Art of War",
-     "wrong": [
-      "The Analects",
-      "Tao Te Ching",
-      "Romance of the Three Kingdoms"
-     ],
-     "why": "It is still studied today."
-    },
-    {
-     "level": 3,
      "q": "Which admiral led huge treasure fleets in the early 1400s?",
      "a": "Zheng He",
      "wrong": [
@@ -169,11 +137,34 @@
       "Jiang Zemin"
      ],
      "why": "He set up special economic zones like Shenzhen."
+    },
+    {
+     "level": 1,
+     "q": "Which palace complex in Beijing was home to the emperors?",
+     "a": "Forbidden City",
+     "wrong": [
+      "Summer Palace",
+      "Potala Palace",
+      "Temple of Heaven"
+     ],
+     "why": "It has nearly 1,000 buildings."
+    },
+    {
+     "level": 2,
+     "q": "Which former British colony returned to China in 1997?",
+     "a": "Hong Kong",
+     "wrong": [
+      "Macau",
+      "Shenzhen",
+      "Xiamen"
+     ],
+     "why": "Macau was returned by Portugal in 1999."
     }
    ]
   },
   {
-   "name": "China: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -199,6 +190,56 @@
     },
     {
      "level": 1,
+     "q": "What is China's longest river?",
+     "a": "Yangtze",
+     "wrong": [
+      "Yellow River",
+      "Pearl River",
+      "Mekong"
+     ],
+     "why": "It is the longest river in Asia."
+    },
+    {
+     "level": 2,
+     "q": "Which river is called China's 'mother river'?",
+     "a": "Yellow River",
+     "wrong": [
+      "Yangtze",
+      "Pearl River",
+      "Huai River"
+     ],
+     "why": "Early Chinese civilisation grew on its banks."
+    },
+    {
+     "level": 3,
+     "q": "Which city on the Li River is famous for its karst hills?",
+     "a": "Guilin",
+     "wrong": [
+      "Kunming",
+      "Lijiang",
+      "Zhangjiajie"
+     ],
+     "why": "The scenery appears on the 20-yuan note."
+    },
+    {
+     "level": 3,
+     "q": "Which forest of stone pillars in Hunan inspired scenery in 'Avatar'?",
+     "a": "Zhangjiajie",
+     "wrong": [
+      "Huangshan",
+      "Guilin",
+      "Emeishan"
+     ],
+     "why": "One peak was renamed 'Avatar Hallelujah Mountain'."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
      "q": "Which black-and-white bear lives in Sichuan's bamboo forests?",
      "a": "Giant panda",
      "wrong": [
@@ -207,6 +248,45 @@
       "Moon bear"
      ],
      "why": "It spends most of the day eating bamboo."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which army of clay soldiers guards Qin Shi Huang's tomb?",
+     "a": "Terracotta Army",
+     "wrong": [
+      "Jade Army",
+      "Bronze Legion",
+      "Stone Guard"
+     ],
+     "why": "Farmers found it near Xi'an in 1974."
+    },
+    {
+     "level": 1,
+     "q": "Which Chinese invention made printing books much easier around 1040?",
+     "a": "Movable type",
+     "wrong": [
+      "The telescope",
+      "The steam engine",
+      "The radio"
+     ],
+     "why": "Bi Sheng made the first type from clay."
+    },
+    {
+     "level": 3,
+     "q": "Which military classic did Sun Tzu write?",
+     "a": "The Art of War",
+     "wrong": [
+      "The Analects",
+      "Tao Te Ching",
+      "Romance of the Three Kingdoms"
+     ],
+     "why": "It is still studied today."
     },
     {
      "level": 1,
@@ -221,28 +301,6 @@
     },
     {
      "level": 1,
-     "q": "What is China's longest river?",
-     "a": "Yangtze",
-     "wrong": [
-      "Yellow River",
-      "Pearl River",
-      "Mekong"
-     ],
-     "why": "It is the longest river in Asia."
-    },
-    {
-     "level": 1,
-     "q": "Which palace complex in Beijing was home to the emperors?",
-     "a": "Forbidden City",
-     "wrong": [
-      "Summer Palace",
-      "Potala Palace",
-      "Temple of Heaven"
-     ],
-     "why": "It has nearly 1,000 buildings."
-    },
-    {
-     "level": 1,
      "q": "What is the main spoken language of China?",
      "a": "Mandarin Chinese",
      "wrong": [
@@ -254,17 +312,6 @@
     },
     {
      "level": 2,
-     "q": "Which river is called China's 'mother river'?",
-     "a": "Yellow River",
-     "wrong": [
-      "Yangtze",
-      "Pearl River",
-      "Huai River"
-     ],
-     "why": "Early Chinese civilisation grew on its banks."
-    },
-    {
-     "level": 2,
      "q": "Which dam on the Yangtze is the world's largest power station?",
      "a": "Three Gorges Dam",
      "wrong": [
@@ -273,17 +320,6 @@
       "Gezhouba Dam"
      ],
      "why": "It is over 2 km long."
-    },
-    {
-     "level": 2,
-     "q": "Which former British colony returned to China in 1997?",
-     "a": "Hong Kong",
-     "wrong": [
-      "Macau",
-      "Shenzhen",
-      "Xiamen"
-     ],
-     "why": "Macau was returned by Portugal in 1999."
     },
     {
      "level": 2,
@@ -317,28 +353,6 @@
       "Dongpo pork"
      ],
      "why": "It is served with thin pancakes and sweet sauce."
-    },
-    {
-     "level": 3,
-     "q": "Which city on the Li River is famous for its karst hills?",
-     "a": "Guilin",
-     "wrong": [
-      "Kunming",
-      "Lijiang",
-      "Zhangjiajie"
-     ],
-     "why": "The scenery appears on the 20-yuan note."
-    },
-    {
-     "level": 3,
-     "q": "Which forest of stone pillars in Hunan inspired scenery in 'Avatar'?",
-     "a": "Zhangjiajie",
-     "wrong": [
-      "Huangshan",
-      "Guilin",
-      "Emeishan"
-     ],
-     "why": "One peak was renamed 'Avatar Hallelujah Mountain'."
     },
     {
      "level": 3,

@@ -3,19 +3,9 @@
  "country": "SY",
  "topics": [
   {
-   "name": "Syria: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which Syrian city is one of the oldest continuously inhabited cities in the world?",
-     "a": "Damascus",
-     "wrong": [
-      "Aleppo",
-      "Homs",
-      "Latakia"
-     ],
-     "why": "It has been lived in for thousands of years."
-    },
     {
      "level": 1,
      "q": "Which desert city ruled by Queen Zenobia challenged Rome?",
@@ -149,6 +139,34 @@
      "why": "He ruled from 244 to 249."
     },
     {
+     "level": 1,
+     "q": "Which city's huge medieval citadel stands on a hill?",
+     "a": "Aleppo",
+     "wrong": [
+      "Damascus",
+      "Homs",
+      "Latakia"
+     ],
+     "why": "Aleppo soap is also famous."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Syrian city is one of the oldest continuously inhabited cities in the world?",
+     "a": "Damascus",
+     "wrong": [
+      "Aleppo",
+      "Homs",
+      "Latakia"
+     ],
+     "why": "It has been lived in for thousands of years."
+    },
+    {
      "level": 3,
      "q": "Which old market in Aleppo was one of the longest covered souqs?",
      "a": "Al-Madina Souq",
@@ -160,22 +178,6 @@
      "why": "It was badly damaged in the war."
     },
     {
-     "level": 3,
-     "q": "Which saint is said to have converted on the road to Damascus?",
-     "a": "Paul the Apostle",
-     "wrong": [
-      "Peter",
-      "John",
-      "Thomas"
-     ],
-     "why": "Straight Street in Damascus is linked to him."
-    }
-   ]
-  },
-  {
-   "name": "Syria: Places & Culture",
-   "questions": [
-    {
      "level": 1,
      "q": "What is the capital of Syria?",
      "a": "Damascus",
@@ -185,39 +187,6 @@
       "Hama"
      ],
      "why": "It is called the 'City of Jasmine'."
-    },
-    {
-     "level": 1,
-     "q": "Which great mosque in Damascus dates from the early 700s?",
-     "a": "Umayyad Mosque",
-     "wrong": [
-      "Al-Aqsa Mosque",
-      "Blue Mosque",
-      "Great Mosque of Kairouan"
-     ],
-     "why": "It has beautiful golden mosaics."
-    },
-    {
-     "level": 1,
-     "q": "Which city's huge medieval citadel stands on a hill?",
-     "a": "Aleppo",
-     "wrong": [
-      "Damascus",
-      "Homs",
-      "Latakia"
-     ],
-     "why": "Aleppo soap is also famous."
-    },
-    {
-     "level": 1,
-     "q": "What is Syria's currency?",
-     "a": "Syrian pound",
-     "wrong": [
-      "Dinar",
-      "Riyal",
-      "Lebanese pound"
-     ],
-     "why": "It is also called the lira."
     },
     {
      "level": 1,
@@ -242,6 +211,67 @@
      "why": "Latakia is its main port."
     },
     {
+     "level": 2,
+     "q": "Which 'dead cities' in the north are abandoned Byzantine villages?",
+     "a": "The Dead Cities",
+     "wrong": [
+      "The Ghost Towns",
+      "The Lost Hamlets",
+      "The Ruins of Mari"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which Roman theatre city in the south is built of black basalt?",
+     "a": "Bosra",
+     "wrong": [
+      "Apamea",
+      "Palmyra",
+      "Shahba"
+     ],
+     "why": "Its theatre is one of the best preserved."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which saint is said to have converted on the road to Damascus?",
+     "a": "Paul the Apostle",
+     "wrong": [
+      "Peter",
+      "John",
+      "Thomas"
+     ],
+     "why": "Straight Street in Damascus is linked to him."
+    },
+    {
+     "level": 1,
+     "q": "Which great mosque in Damascus dates from the early 700s?",
+     "a": "Umayyad Mosque",
+     "wrong": [
+      "Al-Aqsa Mosque",
+      "Blue Mosque",
+      "Great Mosque of Kairouan"
+     ],
+     "why": "It has beautiful golden mosaics."
+    },
+    {
+     "level": 1,
+     "q": "What is Syria's currency?",
+     "a": "Syrian pound",
+     "wrong": [
+      "Dinar",
+      "Riyal",
+      "Lebanese pound"
+     ],
+     "why": "It is also called the lira."
+    },
+    {
      "level": 1,
      "q": "Which olive-oil and laurel soap comes from Aleppo?",
      "a": "Aleppo soap",
@@ -262,17 +292,6 @@
       "Windmills"
      ],
      "why": "Some are over 20 m tall."
-    },
-    {
-     "level": 2,
-     "q": "Which 'dead cities' in the north are abandoned Byzantine villages?",
-     "a": "The Dead Cities",
-     "wrong": [
-      "The Ghost Towns",
-      "The Lost Hamlets",
-      "The Ruins of Mari"
-     ],
-     "why": "They are a UNESCO site."
     },
     {
      "level": 2,
@@ -328,17 +347,6 @@
       "Shaizar"
      ],
      "why": "It is a UNESCO site."
-    },
-    {
-     "level": 3,
-     "q": "Which Roman theatre city in the south is built of black basalt?",
-     "a": "Bosra",
-     "wrong": [
-      "Apamea",
-      "Palmyra",
-      "Shahba"
-     ],
-     "why": "Its theatre is one of the best preserved."
     }
    ]
   }

@@ -3,7 +3,8 @@
  "country": "AZ",
  "topics": [
   {
-   "name": "Azerbaijan: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -37,39 +38,6 @@
       "The Huseynovs"
      ],
      "why": "Ilham Aliyev succeeded his father in 2003."
-    },
-    {
-     "level": 1,
-     "q": "Which region was at the centre of a long conflict with Armenia?",
-     "a": "Karabakh",
-     "wrong": [
-      "Nakhchivan",
-      "Ganja",
-      "Absheron"
-     ],
-     "why": "Azerbaijan regained full control in 2023."
-    },
-    {
-     "level": 1,
-     "q": "Which city became a world oil centre in the late 1800s?",
-     "a": "Baku",
-     "wrong": [
-      "Ganja",
-      "Sumgait",
-      "Sheki"
-     ],
-     "why": "The Nobel brothers worked there."
-    },
-    {
-     "level": 1,
-     "q": "Which Persian-language poet from Ganja wrote 'Khamsa'?",
-     "a": "Nizami Ganjavi",
-     "wrong": [
-      "Fuzuli",
-      "Ferdowsi",
-      "Hafez"
-     ],
-     "why": "He lived in the 1100s."
     },
     {
      "level": 1,
@@ -127,6 +95,45 @@
      "why": "He said 'A flag once raised will never fall'."
     },
     {
+     "level": 1,
+     "q": "Which ancient tower in Baku's old city is a symbol of the city?",
+     "a": "Maiden Tower",
+     "wrong": [
+      "Flame Tower",
+      "Shirvan Tower",
+      "Absheron Tower"
+     ],
+     "why": "It is part of a UNESCO site."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which region was at the centre of a long conflict with Armenia?",
+     "a": "Karabakh",
+     "wrong": [
+      "Nakhchivan",
+      "Ganja",
+      "Absheron"
+     ],
+     "why": "Azerbaijan regained full control in 2023."
+    },
+    {
+     "level": 1,
+     "q": "Which city became a world oil centre in the late 1800s?",
+     "a": "Baku",
+     "wrong": [
+      "Ganja",
+      "Sumgait",
+      "Sheki"
+     ],
+     "why": "The Nobel brothers worked there."
+    },
+    {
      "level": 2,
      "q": "Which Azerbaijani city has the Palace of the Shaki Khans?",
      "a": "Shaki",
@@ -136,6 +143,112 @@
       "Quba"
      ],
      "why": "Its windows are made of coloured glass without nails."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of Azerbaijan?",
+     "a": "Baku",
+     "wrong": [
+      "Ganja",
+      "Sumgait",
+      "Shaki"
+     ],
+     "why": "It is the largest city on the Caspian Sea."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies along Azerbaijan's eastern coast?",
+     "a": "Caspian Sea",
+     "wrong": [
+      "Black Sea",
+      "Aral Sea",
+      "Mediterranean"
+     ],
+     "why": "Baku sits on the Absheron Peninsula."
+    },
+    {
+     "level": 1,
+     "q": "Which 'burning mountain' near Baku has flames that never go out?",
+     "a": "Yanar Dag",
+     "wrong": [
+      "Ateshgah",
+      "Mount Bazarduzu",
+      "Gobustan"
+     ],
+     "why": "Gas seeps from the hillside."
+    },
+    {
+     "level": 3,
+     "q": "What is Azerbaijan's highest mountain?",
+     "a": "Mount Bazarduzu",
+     "wrong": [
+      "Mount Shahdag",
+      "Mount Elbrus",
+      "Mount Kapaz"
+     ],
+     "why": "It is about 4,466 m high."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Formula One race is held on Baku's streets?",
+     "a": "Azerbaijan Grand Prix",
+     "wrong": [
+      "Caspian Grand Prix",
+      "Baku Rally",
+      "Eurasia Grand Prix"
+     ],
+     "why": "Its castle section is famously narrow."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which song contest did Azerbaijan win in 2011?",
+     "a": "Eurovision Song Contest",
+     "wrong": [
+      "Junior Eurovision",
+      "Turkvision",
+      "Asia Song Festival"
+     ],
+     "why": "Ell & Nikki sang 'Running Scared'."
+    },
+    {
+     "level": 2,
+     "q": "Which music style, listed by UNESCO, is Azerbaijan's classical improvisation?",
+     "a": "Mugham",
+     "wrong": [
+      "Raga",
+      "Flamenco",
+      "Fado"
+     ],
+     "why": "It is played on the tar and kamancha."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Persian-language poet from Ganja wrote 'Khamsa'?",
+     "a": "Nizami Ganjavi",
+     "wrong": [
+      "Fuzuli",
+      "Ferdowsi",
+      "Hafez"
+     ],
+     "why": "He lived in the 1100s."
     },
     {
      "level": 3,
@@ -158,7 +271,52 @@
       "Nader Shah"
      ],
      "why": "He wrote under the name Khatai."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which rock-art site near Baku has thousands of ancient carvings?",
+     "a": "Gobustan",
+     "wrong": [
+      "Ateshgah",
+      "Absheron",
+      "Quba"
+     ],
+     "why": "It also has mud volcanoes."
     },
+    {
+     "level": 2,
+     "q": "Which architect designed the Heydar Aliyev Center's flowing curves?",
+     "a": "Zaha Hadid",
+     "wrong": [
+      "Norman Foster",
+      "Frank Gehry",
+      "Santiago Calatrava"
+     ],
+     "why": "It opened in 2012."
+    },
+    {
+     "level": 3,
+     "q": "Which hand-woven carpets from Azerbaijan are on UNESCO's list?",
+     "a": "Azerbaijani carpets",
+     "wrong": [
+      "Persian rugs",
+      "Turkish kilims",
+      "Afghan carpets"
+     ],
+     "why": "Baku has a carpet-shaped museum."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
     {
      "level": 3,
      "q": "Which exclave of Azerbaijan is separated from the mainland?",
@@ -169,22 +327,6 @@
       "Absheron"
      ],
      "why": "It borders Turkey and Iran."
-    }
-   ]
-  },
-  {
-   "name": "Azerbaijan: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Azerbaijan?",
-     "a": "Baku",
-     "wrong": [
-      "Ganja",
-      "Sumgait",
-      "Shaki"
-     ],
-     "why": "It is the largest city on the Caspian Sea."
     },
     {
      "level": 1,
@@ -209,83 +351,6 @@
      "why": "It is divided into 100 qapik."
     },
     {
-     "level": 1,
-     "q": "Which sea lies along Azerbaijan's eastern coast?",
-     "a": "Caspian Sea",
-     "wrong": [
-      "Black Sea",
-      "Aral Sea",
-      "Mediterranean"
-     ],
-     "why": "Baku sits on the Absheron Peninsula."
-    },
-    {
-     "level": 1,
-     "q": "Which song contest did Azerbaijan win in 2011?",
-     "a": "Eurovision Song Contest",
-     "wrong": [
-      "Junior Eurovision",
-      "Turkvision",
-      "Asia Song Festival"
-     ],
-     "why": "Ell & Nikki sang 'Running Scared'."
-    },
-    {
-     "level": 1,
-     "q": "Which 'burning mountain' near Baku has flames that never go out?",
-     "a": "Yanar Dag",
-     "wrong": [
-      "Ateshgah",
-      "Mount Bazarduzu",
-      "Gobustan"
-     ],
-     "why": "Gas seeps from the hillside."
-    },
-    {
-     "level": 1,
-     "q": "Which ancient tower in Baku's old city is a symbol of the city?",
-     "a": "Maiden Tower",
-     "wrong": [
-      "Flame Tower",
-      "Shirvan Tower",
-      "Absheron Tower"
-     ],
-     "why": "It is part of a UNESCO site."
-    },
-    {
-     "level": 2,
-     "q": "Which rock-art site near Baku has thousands of ancient carvings?",
-     "a": "Gobustan",
-     "wrong": [
-      "Ateshgah",
-      "Absheron",
-      "Quba"
-     ],
-     "why": "It also has mud volcanoes."
-    },
-    {
-     "level": 2,
-     "q": "Which music style, listed by UNESCO, is Azerbaijan's classical improvisation?",
-     "a": "Mugham",
-     "wrong": [
-      "Raga",
-      "Flamenco",
-      "Fado"
-     ],
-     "why": "It is played on the tar and kamancha."
-    },
-    {
-     "level": 2,
-     "q": "Which Formula One race is held on Baku's streets?",
-     "a": "Azerbaijan Grand Prix",
-     "wrong": [
-      "Caspian Grand Prix",
-      "Baku Rally",
-      "Eurasia Grand Prix"
-     ],
-     "why": "Its castle section is famously narrow."
-    },
-    {
      "level": 2,
      "q": "Which saffron rice dish is the centrepiece of feasts?",
      "a": "Plov (Azerbaijani pilaf)",
@@ -295,39 +360,6 @@
       "Dushbara"
      ],
      "why": "There are said to be over 40 kinds."
-    },
-    {
-     "level": 2,
-     "q": "Which architect designed the Heydar Aliyev Center's flowing curves?",
-     "a": "Zaha Hadid",
-     "wrong": [
-      "Norman Foster",
-      "Frank Gehry",
-      "Santiago Calatrava"
-     ],
-     "why": "It opened in 2012."
-    },
-    {
-     "level": 3,
-     "q": "What is Azerbaijan's highest mountain?",
-     "a": "Mount Bazarduzu",
-     "wrong": [
-      "Mount Shahdag",
-      "Mount Elbrus",
-      "Mount Kapaz"
-     ],
-     "why": "It is about 4,466 m high."
-    },
-    {
-     "level": 3,
-     "q": "Which hand-woven carpets from Azerbaijan are on UNESCO's list?",
-     "a": "Azerbaijani carpets",
-     "wrong": [
-      "Persian rugs",
-      "Turkish kilims",
-      "Afghan carpets"
-     ],
-     "why": "Baku has a carpet-shaped museum."
     },
     {
      "level": 3,

@@ -3,6 +3,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { catchError, map, of } from 'rxjs';
+import { WORLD } from '../core/region';
 import { CatalogApi } from '../core/api';
 import { CustomDifficulty, GameCard } from '../core/models';
 
@@ -67,7 +68,7 @@ export function topicsOf(games: GameCard[]): GameCard[] {
 export class Custom {
   protected readonly max = MAX_TOPICS;
   private readonly router = inject(Router);
-  protected readonly topics = toSignal(inject(CatalogApi).games().pipe(map(topicsOf), catchError(() => of([] as GameCard[]))), {
+  protected readonly topics = toSignal(inject(CatalogApi).games(WORLD).pipe(map(topicsOf), catchError(() => of([] as GameCard[]))), {
     initialValue: [] as GameCard[],
   });
   protected readonly picked = signal(new Set<number>());

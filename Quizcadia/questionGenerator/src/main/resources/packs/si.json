@@ -3,7 +3,8 @@
  "country": "SI",
  "topics": [
   {
-   "name": "Slovenia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -15,28 +16,6 @@
       "1989"
      ],
      "why": "It left Yugoslavia after a ten-day war."
-    },
-    {
-     "level": 1,
-     "q": "What is the capital of Slovenia?",
-     "a": "Ljubljana",
-     "wrong": [
-      "Maribor",
-      "Celje",
-      "Koper"
-     ],
-     "why": "Its name may mean 'beloved'."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Slovenia join the European Union?",
-     "a": "2004",
-     "wrong": [
-      "1995",
-      "2007",
-      "2013"
-     ],
-     "why": "It adopted the euro in 2007."
     },
     {
      "level": 1,
@@ -61,50 +40,6 @@
      "why": "It lasted until 1918."
     },
     {
-     "level": 1,
-     "q": "Which US First Lady was born in Slovenia?",
-     "a": "Melania Trump",
-     "wrong": [
-      "Jill Biden",
-      "Michelle Obama",
-      "Laura Bush"
-     ],
-     "why": "She grew up in Sevnica."
-    },
-    {
-     "level": 1,
-     "q": "Which Slovenian poet wrote the words of the national anthem?",
-     "a": "France Prešeren",
-     "wrong": [
-      "Ivan Cankar",
-      "Primož Trubar",
-      "Oton Župančič"
-     ],
-     "why": "The day of his death, 8 February, is Culture Day."
-    },
-    {
-     "level": 2,
-     "q": "Who printed the first books in Slovene in 1550?",
-     "a": "Primož Trubar",
-     "wrong": [
-      "France Prešeren",
-      "Ivan Cankar",
-      "Jurij Dalmatin"
-     ],
-     "why": "He appeared on the old 10-tolar note."
-    },
-    {
-     "level": 2,
-     "q": "Which architect redesigned much of Ljubljana?",
-     "a": "Jože Plečnik",
-     "wrong": [
-      "Max Fabiani",
-      "Edvard Ravnikar",
-      "Ivan Vurnik"
-     ],
-     "why": "He also worked on Prague Castle."
-    },
-    {
      "level": 2,
      "q": "Which First World War front ran along the Soča River?",
      "a": "Isonzo Front",
@@ -114,28 +49,23 @@
       "Salonika Front"
      ],
      "why": "Twelve battles were fought there."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
     {
-     "level": 2,
-     "q": "Which novel about the Isonzo Front did Hemingway set partly in Kobarid?",
-     "a": "A Farewell to Arms",
+     "level": 1,
+     "q": "What is the capital of Slovenia?",
+     "a": "Ljubljana",
      "wrong": [
-      "For Whom the Bell Tolls",
-      "The Sun Also Rises",
-      "Across the River"
+      "Maribor",
+      "Celje",
+      "Koper"
      ],
-     "why": "Kobarid was then called Caporetto."
-    },
-    {
-     "level": 2,
-     "q": "Which writer is seen as the greatest Slovene prose author?",
-     "a": "Ivan Cankar",
-     "wrong": [
-      "France Prešeren",
-      "Primož Trubar",
-      "Boris Pahor"
-     ],
-     "why": "He died in 1918."
+     "why": "Its name may mean 'beloved'."
     },
     {
      "level": 3,
@@ -149,33 +79,6 @@
      "why": "It was centred in today's Austria."
     },
     {
-     "level": 3,
-     "q": "Which mathematician born in Slovenia calculated logarithm tables?",
-     "a": "Jurij Vega",
-     "wrong": [
-      "Jožef Stefan",
-      "Herman Potočnik",
-      "Anton Codelli"
-     ],
-     "why": "A crater on the Moon is named after him."
-    },
-    {
-     "level": 3,
-     "q": "Which physicist born in Slovenia gave his name to a law of radiation?",
-     "a": "Jožef Stefan",
-     "wrong": [
-      "Jurij Vega",
-      "Herman Potočnik",
-      "Friderik Pregl"
-     ],
-     "why": "It is the Stefan–Boltzmann law."
-    }
-   ]
-  },
-  {
-   "name": "Slovenia: Places & Culture",
-   "questions": [
-    {
      "level": 1,
      "q": "Which lake has a church on a tiny island?",
      "a": "Lake Bled",
@@ -185,17 +88,6 @@
       "Lake Garda"
      ],
      "why": "Visitors ring its wishing bell."
-    },
-    {
-     "level": 1,
-     "q": "What is Slovenia's currency?",
-     "a": "Euro",
-     "wrong": [
-      "Tolar",
-      "Kuna",
-      "Forint"
-     ],
-     "why": "It replaced the tolar in 2007."
     },
     {
      "level": 1,
@@ -221,28 +113,6 @@
     },
     {
      "level": 1,
-     "q": "Which famous white horses come from a Slovenian stud farm?",
-     "a": "Lipizzaners",
-     "wrong": [
-      "Andalusians",
-      "Arabians",
-      "Friesians"
-     ],
-     "why": "Lipica stud was founded in 1580."
-    },
-    {
-     "level": 1,
-     "q": "Which Slovenian basketball star plays in the NBA?",
-     "a": "Luka Dončić",
-     "wrong": [
-      "Goran Dragić",
-      "Zoran Dragić",
-      "Beno Udrih"
-     ],
-     "why": "He is one of the league's top scorers."
-    },
-    {
-     "level": 1,
      "q": "Which sea does Slovenia's short coast face?",
      "a": "Adriatic Sea",
      "wrong": [
@@ -251,17 +121,6 @@
       "Aegean Sea"
      ],
      "why": "Its coast is only about 47 km long."
-    },
-    {
-     "level": 2,
-     "q": "Which Slovenian cyclist has won the Tour de France several times?",
-     "a": "Tadej Pogačar",
-     "wrong": [
-      "Primož Roglič",
-      "Matej Mohorič",
-      "Jan Polanc"
-     ],
-     "why": "He rides for UAE Team Emirates."
     },
     {
      "level": 2,
@@ -297,17 +156,6 @@
      "why": "It is popular for rafting."
     },
     {
-     "level": 2,
-     "q": "Which layered cake with poppy seeds, walnuts and apples is a Slovene speciality?",
-     "a": "Prekmurska gibanica",
-     "wrong": [
-      "Potica",
-      "Kremšnita",
-      "Štruklji"
-     ],
-     "why": "It comes from Prekmurje."
-    },
-    {
      "level": 3,
      "q": "Which ski-jumping hill in Planica set many world records?",
      "a": "Letalnica bratov Gorišek",
@@ -317,6 +165,190 @@
       "Vikersundbakken"
      ],
      "why": "It is a giant ski-flying hill."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Slovenian basketball star plays in the NBA?",
+     "a": "Luka Dončić",
+     "wrong": [
+      "Goran Dragić",
+      "Zoran Dragić",
+      "Beno Udrih"
+     ],
+     "why": "He is one of the league's top scorers."
+    },
+    {
+     "level": 2,
+     "q": "Which Slovenian cyclist has won the Tour de France several times?",
+     "a": "Tadej Pogačar",
+     "wrong": [
+      "Primož Roglič",
+      "Matej Mohorič",
+      "Jan Polanc"
+     ],
+     "why": "He rides for UAE Team Emirates."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Slovenian poet wrote the words of the national anthem?",
+     "a": "France Prešeren",
+     "wrong": [
+      "Ivan Cankar",
+      "Primož Trubar",
+      "Oton Župančič"
+     ],
+     "why": "The day of his death, 8 February, is Culture Day."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who printed the first books in Slovene in 1550?",
+     "a": "Primož Trubar",
+     "wrong": [
+      "France Prešeren",
+      "Ivan Cankar",
+      "Jurij Dalmatin"
+     ],
+     "why": "He appeared on the old 10-tolar note."
+    },
+    {
+     "level": 2,
+     "q": "Which novel about the Isonzo Front did Hemingway set partly in Kobarid?",
+     "a": "A Farewell to Arms",
+     "wrong": [
+      "For Whom the Bell Tolls",
+      "The Sun Also Rises",
+      "Across the River"
+     ],
+     "why": "Kobarid was then called Caporetto."
+    },
+    {
+     "level": 2,
+     "q": "Which writer is seen as the greatest Slovene prose author?",
+     "a": "Ivan Cankar",
+     "wrong": [
+      "France Prešeren",
+      "Primož Trubar",
+      "Boris Pahor"
+     ],
+     "why": "He died in 1918."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which architect redesigned much of Ljubljana?",
+     "a": "Jože Plečnik",
+     "wrong": [
+      "Max Fabiani",
+      "Edvard Ravnikar",
+      "Ivan Vurnik"
+     ],
+     "why": "He also worked on Prague Castle."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Slovenia join the European Union?",
+     "a": "2004",
+     "wrong": [
+      "1995",
+      "2007",
+      "2013"
+     ],
+     "why": "It adopted the euro in 2007."
+    },
+    {
+     "level": 1,
+     "q": "Which US First Lady was born in Slovenia?",
+     "a": "Melania Trump",
+     "wrong": [
+      "Jill Biden",
+      "Michelle Obama",
+      "Laura Bush"
+     ],
+     "why": "She grew up in Sevnica."
+    },
+    {
+     "level": 3,
+     "q": "Which mathematician born in Slovenia calculated logarithm tables?",
+     "a": "Jurij Vega",
+     "wrong": [
+      "Jožef Stefan",
+      "Herman Potočnik",
+      "Anton Codelli"
+     ],
+     "why": "A crater on the Moon is named after him."
+    },
+    {
+     "level": 3,
+     "q": "Which physicist born in Slovenia gave his name to a law of radiation?",
+     "a": "Jožef Stefan",
+     "wrong": [
+      "Jurij Vega",
+      "Herman Potočnik",
+      "Friderik Pregl"
+     ],
+     "why": "It is the Stefan–Boltzmann law."
+    },
+    {
+     "level": 1,
+     "q": "What is Slovenia's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Tolar",
+      "Kuna",
+      "Forint"
+     ],
+     "why": "It replaced the tolar in 2007."
+    },
+    {
+     "level": 1,
+     "q": "Which famous white horses come from a Slovenian stud farm?",
+     "a": "Lipizzaners",
+     "wrong": [
+      "Andalusians",
+      "Arabians",
+      "Friesians"
+     ],
+     "why": "Lipica stud was founded in 1580."
+    },
+    {
+     "level": 2,
+     "q": "Which layered cake with poppy seeds, walnuts and apples is a Slovene speciality?",
+     "a": "Prekmurska gibanica",
+     "wrong": [
+      "Potica",
+      "Kremšnita",
+      "Štruklji"
+     ],
+     "why": "It comes from Prekmurje."
     },
     {
      "level": 3,

@@ -3,19 +3,9 @@
  "country": "CG",
  "topics": [
   {
-   "name": "Republic of the Congo: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of the Republic of the Congo?",
-     "a": "Brazzaville",
-     "wrong": [
-      "Pointe-Noire",
-      "Kinshasa",
-      "Dolisie"
-     ],
-     "why": "It is named after an explorer."
-    },
     {
      "level": 1,
      "q": "From which country did the Republic of the Congo gain independence in 1960?",
@@ -40,28 +30,6 @@
     },
     {
      "level": 1,
-     "q": "What is the currency of the Republic of the Congo?",
-     "a": "Central African CFA franc",
-     "wrong": [
-      "Congolese franc",
-      "Kwanza",
-      "Naira"
-     ],
-     "why": "It is shared by six countries."
-    },
-    {
-     "level": 1,
-     "q": "Which resource is the main export?",
-     "a": "Oil",
-     "wrong": [
-      "Gold",
-      "Coffee",
-      "Cobalt"
-     ],
-     "why": "It comes from offshore fields."
-    },
-    {
-     "level": 1,
      "q": "Which explorer founded Brazzaville in 1880?",
      "a": "Pierre Savorgnan de Brazza",
      "wrong": [
@@ -70,17 +38,6 @@
       "Mungo Park"
      ],
      "why": "His remains were moved there in 2006."
-    },
-    {
-     "level": 1,
-     "q": "Which river separates Brazzaville from Kinshasa?",
-     "a": "Congo River",
-     "wrong": [
-      "Ubangi River",
-      "Ogooué River",
-      "Kasai River"
-     ],
-     "why": "Ferries cross it daily."
     },
     {
      "level": 2,
@@ -106,17 +63,6 @@
     },
     {
      "level": 2,
-     "q": "What was the country called during its Marxist years?",
-     "a": "People's Republic of the Congo",
-     "wrong": [
-      "Congo Free State",
-      "Socialist Congo",
-      "Union of Congo"
-     ],
-     "why": "It lasted from 1969 to 1992."
-    },
-    {
-     "level": 2,
      "q": "Which President was assassinated in 1977?",
      "a": "Marien Ngouabi",
      "wrong": [
@@ -125,17 +71,6 @@
       "Joachim Yhombi-Opango"
      ],
      "why": "He founded the Congolese Labour Party."
-    },
-    {
-     "level": 2,
-     "q": "Which port city is the economic hub?",
-     "a": "Pointe-Noire",
-     "wrong": [
-      "Dolisie",
-      "Ouesso",
-      "Nkayi"
-     ],
-     "why": "It is on the Atlantic coast."
     },
     {
      "level": 3,
@@ -161,20 +96,54 @@
     },
     {
      "level": 3,
-     "q": "Which railway links Brazzaville to Pointe-Noire?",
-     "a": "Congo–Ocean Railway",
+     "q": "Which mausoleum in Brazzaville holds the explorer's remains?",
+     "a": "Mémorial Pierre Savorgnan de Brazza",
      "wrong": [
-      "Trans-Gabon Railway",
-      "Benguela Railway",
-      "Tazara"
+      "Mausoleum of Lenin",
+      "Tomb of Askia",
+      "Lumumba Monument"
      ],
-     "why": "Thousands died building it."
+     "why": "It opened in 2006."
     }
    ]
   },
   {
-   "name": "Republic of the Congo: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Republic of the Congo?",
+     "a": "Brazzaville",
+     "wrong": [
+      "Pointe-Noire",
+      "Kinshasa",
+      "Dolisie"
+     ],
+     "why": "It is named after an explorer."
+    },
+    {
+     "level": 1,
+     "q": "Which river separates Brazzaville from Kinshasa?",
+     "a": "Congo River",
+     "wrong": [
+      "Ubangi River",
+      "Ogooué River",
+      "Kasai River"
+     ],
+     "why": "Ferries cross it daily."
+    },
+    {
+     "level": 2,
+     "q": "Which port city is the economic hub?",
+     "a": "Pointe-Noire",
+     "wrong": [
+      "Dolisie",
+      "Ouesso",
+      "Nkayi"
+     ],
+     "why": "It is on the Atlantic coast."
+    },
     {
      "level": 1,
      "q": "Which national park is famous for western lowland gorillas?",
@@ -188,39 +157,6 @@
     },
     {
      "level": 1,
-     "q": "Which dandies in Brazzaville wear bright designer clothes?",
-     "a": "Sapeurs (La Sape)",
-     "wrong": [
-      "Les Dandies",
-      "Les Élégants",
-      "Sartorialists"
-     ],
-     "why": "The movement began in the 1920s."
-    },
-    {
-     "level": 1,
-     "q": "Which music style is popular in both Congos?",
-     "a": "Congolese rumba",
-     "wrong": [
-      "Highlife",
-      "Afrobeat",
-      "Mbalax"
-     ],
-     "why": "It is on UNESCO's list."
-    },
-    {
-     "level": 1,
-     "q": "What is the main staple food?",
-     "a": "Cassava",
-     "wrong": [
-      "Rice",
-      "Wheat",
-      "Maize"
-     ],
-     "why": "It is made into a bread called chikwangue."
-    },
-    {
-     "level": 1,
      "q": "Which ocean is on the country's short coast?",
      "a": "Atlantic Ocean",
      "wrong": [
@@ -229,17 +165,6 @@
       "Mediterranean Sea"
      ],
      "why": "Pointe-Noire is the main port."
-    },
-    {
-     "level": 1,
-     "q": "What is the official language?",
-     "a": "French",
-     "wrong": [
-      "English",
-      "Portuguese",
-      "Arabic"
-     ],
-     "why": "Lingala and Kituba are national languages."
     },
     {
      "level": 1,
@@ -265,17 +190,6 @@
     },
     {
      "level": 2,
-     "q": "Which basilica in Brazzaville is a landmark?",
-     "a": "Basilica of Sainte-Anne",
-     "wrong": [
-      "Notre-Dame of Peace",
-      "St Peter's",
-      "Cathedral of Kinshasa"
-     ],
-     "why": "It has a green tiled roof."
-    },
-    {
-     "level": 2,
      "q": "Which rapids on the Congo River are near Brazzaville?",
      "a": "Les Rapides du Congo",
      "wrong": [
@@ -284,18 +198,30 @@
       "Murchison Falls"
      ],
      "why": "They block river ships."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
     {
-     "level": 2,
-     "q": "Which cassava bread is wrapped in leaves?",
-     "a": "Chikwangue",
+     "level": 1,
+     "q": "Which music style is popular in both Congos?",
+     "a": "Congolese rumba",
      "wrong": [
-      "Fufu",
-      "Ugali",
-      "Injera"
+      "Highlife",
+      "Afrobeat",
+      "Mbalax"
      ],
-     "why": "It can keep for days."
-    },
+     "why": "It is on UNESCO's list."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
      "level": 2,
      "q": "Which Congolese writer wrote 'La Vie et demie'?",
@@ -309,15 +235,21 @@
     },
     {
      "level": 3,
-     "q": "Which mausoleum in Brazzaville holds the explorer's remains?",
-     "a": "Mémorial Pierre Savorgnan de Brazza",
+     "q": "Which writer from Brazzaville wrote 'Broken Glass'?",
+     "a": "Alain Mabanckou",
      "wrong": [
-      "Mausoleum of Lenin",
-      "Tomb of Askia",
-      "Lumumba Monument"
+      "Sony Labou Tansi",
+      "Henri Lopes",
+      "Emmanuel Dongala"
      ],
-     "why": "It opened in 2006."
-    },
+     "why": "He teaches in California."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
     {
      "level": 3,
      "q": "Which painting school founded in 1951 is famous in Brazzaville?",
@@ -328,17 +260,111 @@
       "Nsukka School"
      ],
      "why": "It shaped African modern art."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the currency of the Republic of the Congo?",
+     "a": "Central African CFA franc",
+     "wrong": [
+      "Congolese franc",
+      "Kwanza",
+      "Naira"
+     ],
+     "why": "It is shared by six countries."
+    },
+    {
+     "level": 1,
+     "q": "Which resource is the main export?",
+     "a": "Oil",
+     "wrong": [
+      "Gold",
+      "Coffee",
+      "Cobalt"
+     ],
+     "why": "It comes from offshore fields."
+    },
+    {
+     "level": 2,
+     "q": "What was the country called during its Marxist years?",
+     "a": "People's Republic of the Congo",
+     "wrong": [
+      "Congo Free State",
+      "Socialist Congo",
+      "Union of Congo"
+     ],
+     "why": "It lasted from 1969 to 1992."
     },
     {
      "level": 3,
-     "q": "Which writer from Brazzaville wrote 'Broken Glass'?",
-     "a": "Alain Mabanckou",
+     "q": "Which railway links Brazzaville to Pointe-Noire?",
+     "a": "Congo–Ocean Railway",
      "wrong": [
-      "Sony Labou Tansi",
-      "Henri Lopes",
-      "Emmanuel Dongala"
+      "Trans-Gabon Railway",
+      "Benguela Railway",
+      "Tazara"
      ],
-     "why": "He teaches in California."
+     "why": "Thousands died building it."
+    },
+    {
+     "level": 1,
+     "q": "Which dandies in Brazzaville wear bright designer clothes?",
+     "a": "Sapeurs (La Sape)",
+     "wrong": [
+      "Les Dandies",
+      "Les Élégants",
+      "Sartorialists"
+     ],
+     "why": "The movement began in the 1920s."
+    },
+    {
+     "level": 1,
+     "q": "What is the main staple food?",
+     "a": "Cassava",
+     "wrong": [
+      "Rice",
+      "Wheat",
+      "Maize"
+     ],
+     "why": "It is made into a bread called chikwangue."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language?",
+     "a": "French",
+     "wrong": [
+      "English",
+      "Portuguese",
+      "Arabic"
+     ],
+     "why": "Lingala and Kituba are national languages."
+    },
+    {
+     "level": 2,
+     "q": "Which basilica in Brazzaville is a landmark?",
+     "a": "Basilica of Sainte-Anne",
+     "wrong": [
+      "Notre-Dame of Peace",
+      "St Peter's",
+      "Cathedral of Kinshasa"
+     ],
+     "why": "It has a green tiled roof."
+    },
+    {
+     "level": 2,
+     "q": "Which cassava bread is wrapped in leaves?",
+     "a": "Chikwangue",
+     "wrong": [
+      "Fufu",
+      "Ugali",
+      "Injera"
+     ],
+     "why": "It can keep for days."
     }
    ]
   }

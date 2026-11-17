@@ -3,19 +3,9 @@
  "country": "LR",
  "topics": [
   {
-   "name": "Liberia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Liberia?",
-     "a": "Monrovia",
-     "wrong": [
-      "Gbarnga",
-      "Buchanan",
-      "Harper"
-     ],
-     "why": "It is named after US President James Monroe."
-    },
     {
      "level": 1,
      "q": "Who founded Liberia as a home for freed slaves?",
@@ -50,39 +40,6 @@
      "why": "She shared the 2011 Nobel Peace Prize."
     },
     {
-     "level": 1,
-     "q": "What is Liberia's currency?",
-     "a": "Liberian dollar",
-     "wrong": [
-      "CFA franc",
-      "Leone",
-      "Cedi"
-     ],
-     "why": "US dollars are also widely used."
-    },
-    {
-     "level": 1,
-     "q": "Which footballer became President of Liberia in 2018?",
-     "a": "George Weah",
-     "wrong": [
-      "Didier Drogba",
-      "Samuel Eto'o",
-      "Jay-Jay Okocha"
-     ],
-     "why": "He won the 1995 Ballon d'Or."
-    },
-    {
-     "level": 1,
-     "q": "Which flag does Liberia's flag look like?",
-     "a": "The US flag",
-     "wrong": [
-      "The UK flag",
-      "The French flag",
-      "The Brazilian flag"
-     ],
-     "why": "It has one star."
-    },
-    {
      "level": 2,
      "q": "Which army sergeant took power in a 1980 coup?",
      "a": "Samuel Doe",
@@ -114,17 +71,6 @@
       "Dunlop"
      ],
      "why": "It is one of the world's largest rubber plantations."
-    },
-    {
-     "level": 2,
-     "q": "Who became President of Liberia in 2024?",
-     "a": "Joseph Boakai",
-     "wrong": [
-      "George Weah",
-      "Ellen Johnson Sirleaf",
-      "Jewel Taylor"
-     ],
-     "why": "He beat Weah in 2023."
     },
     {
      "level": 2,
@@ -169,12 +115,46 @@
       "Rubber Wars"
      ],
      "why": "About 250,000 people died."
+    },
+    {
+     "level": 2,
+     "q": "Which coastal county around Harper was once a separate colony?",
+     "a": "Maryland County",
+     "wrong": [
+      "Grand Bassa",
+      "Margibi",
+      "Bong"
+     ],
+     "why": "It joined Liberia in 1857."
+    },
+    {
+     "level": 3,
+     "q": "Which island in Monrovia is where settlers first landed?",
+     "a": "Providence Island",
+     "wrong": [
+      "Bushrod Island",
+      "Bunce Island",
+      "Sherbro Island"
+     ],
+     "why": "It is a national monument."
     }
    ]
   },
   {
-   "name": "Liberia: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Liberia?",
+     "a": "Monrovia",
+     "wrong": [
+      "Gbarnga",
+      "Buchanan",
+      "Harper"
+     ],
+     "why": "It is named after US President James Monroe."
+    },
     {
      "level": 1,
      "q": "Which ocean is on Liberia's coast?",
@@ -196,6 +176,123 @@
       "Senegal"
      ],
      "why": "Sapo National Park is in it."
+    },
+    {
+     "level": 1,
+     "q": "Which national park is Liberia's largest?",
+     "a": "Sapo National Park",
+     "wrong": [
+      "Gola Forest National Park",
+      "Taï",
+      "East Nimba"
+     ],
+     "why": "It has pygmy hippos."
+    },
+    {
+     "level": 2,
+     "q": "Which unfinished hotel in Monrovia overlooks the city?",
+     "a": "Ducor Hotel",
+     "wrong": [
+      "Mamba Point Hotel",
+      "Royal Hotel",
+      "Africa Hotel"
+     ],
+     "why": "It was once a luxury hotel."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain on the Guinea border is Liberia's highest?",
+     "a": "Mount Wuteve",
+     "wrong": [
+      "Mount Nimba",
+      "Mount Bintumani",
+      "Mount Loma"
+     ],
+     "why": "It is about 1,440 m high."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which footballer became President of Liberia in 2018?",
+     "a": "George Weah",
+     "wrong": [
+      "Didier Drogba",
+      "Samuel Eto'o",
+      "Jay-Jay Okocha"
+     ],
+     "why": "He won the 1995 Ballon d'Or."
+    },
+    {
+     "level": 2,
+     "q": "Which surfing town on the coast is popular?",
+     "a": "Robertsport",
+     "wrong": [
+      "Buchanan",
+      "Harper",
+      "Greenville"
+     ],
+     "why": "It has long point breaks."
+    },
+    {
+     "level": 3,
+     "q": "Which Liberian-American footballer played for the US at the 2022 World Cup?",
+     "a": "Timothy Weah",
+     "wrong": [
+      "Christian Pulisic",
+      "Weston McKennie",
+      "Tyler Adams"
+     ],
+     "why": "He is George Weah's son."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who became President of Liberia in 2024?",
+     "a": "Joseph Boakai",
+     "wrong": [
+      "George Weah",
+      "Ellen Johnson Sirleaf",
+      "Jewel Taylor"
+     ],
+     "why": "He beat Weah in 2023."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Liberia's currency?",
+     "a": "Liberian dollar",
+     "wrong": [
+      "CFA franc",
+      "Leone",
+      "Cedi"
+     ],
+     "why": "US dollars are also widely used."
+    },
+    {
+     "level": 1,
+     "q": "Which flag does Liberia's flag look like?",
+     "a": "The US flag",
+     "wrong": [
+      "The UK flag",
+      "The French flag",
+      "The Brazilian flag"
+     ],
+     "why": "It has one star."
     },
     {
      "level": 1,
@@ -232,17 +329,6 @@
     },
     {
      "level": 1,
-     "q": "Which national park is Liberia's largest?",
-     "a": "Sapo National Park",
-     "wrong": [
-      "Gola Forest National Park",
-      "Taï",
-      "East Nimba"
-     ],
-     "why": "It has pygmy hippos."
-    },
-    {
-     "level": 1,
      "q": "What is Liberia's motto?",
      "a": "The love of liberty brought us here",
      "wrong": [
@@ -251,50 +337,6 @@
       "One nation, one destiny"
      ],
      "why": "It is on the national seal."
-    },
-    {
-     "level": 2,
-     "q": "Which surfing town on the coast is popular?",
-     "a": "Robertsport",
-     "wrong": [
-      "Buchanan",
-      "Harper",
-      "Greenville"
-     ],
-     "why": "It has long point breaks."
-    },
-    {
-     "level": 2,
-     "q": "Which unfinished hotel in Monrovia overlooks the city?",
-     "a": "Ducor Hotel",
-     "wrong": [
-      "Mamba Point Hotel",
-      "Royal Hotel",
-      "Africa Hotel"
-     ],
-     "why": "It was once a luxury hotel."
-    },
-    {
-     "level": 2,
-     "q": "Which coastal county around Harper was once a separate colony?",
-     "a": "Maryland County",
-     "wrong": [
-      "Grand Bassa",
-      "Margibi",
-      "Bong"
-     ],
-     "why": "It joined Liberia in 1857."
-    },
-    {
-     "level": 2,
-     "q": "Which mountain on the Guinea border is Liberia's highest?",
-     "a": "Mount Wuteve",
-     "wrong": [
-      "Mount Nimba",
-      "Mount Bintumani",
-      "Mount Loma"
-     ],
-     "why": "It is about 1,440 m high."
     },
     {
      "level": 2,
@@ -317,28 +359,6 @@
       "Mau Mau"
      ],
      "why": "Sande is the women's society."
-    },
-    {
-     "level": 3,
-     "q": "Which Liberian-American footballer played for the US at the 2022 World Cup?",
-     "a": "Timothy Weah",
-     "wrong": [
-      "Christian Pulisic",
-      "Weston McKennie",
-      "Tyler Adams"
-     ],
-     "why": "He is George Weah's son."
-    },
-    {
-     "level": 3,
-     "q": "Which island in Monrovia is where settlers first landed?",
-     "a": "Providence Island",
-     "wrong": [
-      "Bushrod Island",
-      "Bunce Island",
-      "Sherbro Island"
-     ],
-     "why": "It is a national monument."
     }
    ]
   }

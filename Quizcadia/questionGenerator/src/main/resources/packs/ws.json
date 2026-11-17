@@ -3,19 +3,9 @@
  "country": "WS",
  "topics": [
   {
-   "name": "Samoa: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Samoa?",
-     "a": "Apia",
-     "wrong": [
-      "Salelologa",
-      "Faleolo",
-      "Pago Pago"
-     ],
-     "why": "It is on Upolu."
-    },
     {
      "level": 1,
      "q": "From which country did Samoa gain independence in 1962?",
@@ -26,50 +16,6 @@
       "Australia"
      ],
      "why": "It was the first Pacific nation to become independent in the 1900s."
-    },
-    {
-     "level": 1,
-     "q": "What is Samoa's currency?",
-     "a": "Tala",
-     "wrong": [
-      "Vatu",
-      "Kina",
-      "Pa'anga"
-     ],
-     "why": "Its code is WST."
-    },
-    {
-     "level": 1,
-     "q": "Which ocean is Samoa in?",
-     "a": "Pacific Ocean",
-     "wrong": [
-      "Indian Ocean",
-      "Atlantic Ocean",
-      "Arctic Ocean"
-     ],
-     "why": "It is northeast of Fiji."
-    },
-    {
-     "level": 1,
-     "q": "What are Samoa's two main islands?",
-     "a": "Upolu and Savai'i",
-     "wrong": [
-      "Tutuila and Manu'a",
-      "Viti Levu and Vanua Levu",
-      "Tongatapu and Vava'u"
-     ],
-     "why": "Most people live on Upolu."
-    },
-    {
-     "level": 1,
-     "q": "Which way of life guides Samoan culture?",
-     "a": "Fa'a Samoa",
-     "wrong": [
-      "Bula spirit",
-      "Aloha spirit",
-      "Ubuntu"
-     ],
-     "why": "It means 'the Samoan way'."
     },
     {
      "level": 1,
@@ -117,17 +63,6 @@
     },
     {
      "level": 2,
-     "q": "Which Scottish writer lived and died in Samoa?",
-     "a": "Robert Louis Stevenson",
-     "wrong": [
-      "Walter Scott",
-      "Arthur Conan Doyle",
-      "J. M. Barrie"
-     ],
-     "why": "Samoans called him 'Tusitala'."
-    },
-    {
-     "level": 2,
      "q": "What was Samoa called until 1997?",
      "a": "Western Samoa",
      "wrong": [
@@ -161,20 +96,54 @@
     },
     {
      "level": 3,
-     "q": "Who became Prime Minister of Samoa after the 2025 election?",
-     "a": "La'auli Leuatea Schmidt",
+     "q": "Which lava fields on Savai'i came from a 1905–11 eruption?",
+     "a": "Saleaula lava fields",
      "wrong": [
-      "Fiamē Naomi Mata'afa",
-      "Tuilaepa Sailele",
-      "Va'ai Papu Vailupe"
+      "Mauna Loa fields",
+      "Tavurvur fields",
+      "Yasur fields"
      ],
-     "why": "His party won the most seats."
+     "why": "The lava surrounded a church."
     }
    ]
   },
   {
-   "name": "Samoa: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Samoa?",
+     "a": "Apia",
+     "wrong": [
+      "Salelologa",
+      "Faleolo",
+      "Pago Pago"
+     ],
+     "why": "It is on Upolu."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is Samoa in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It is northeast of Fiji."
+    },
+    {
+     "level": 1,
+     "q": "What are Samoa's two main islands?",
+     "a": "Upolu and Savai'i",
+     "wrong": [
+      "Tutuila and Manu'a",
+      "Viti Levu and Vanua Levu",
+      "Tongatapu and Vava'u"
+     ],
+     "why": "Most people live on Upolu."
+    },
     {
      "level": 1,
      "q": "Which open-sided traditional house is found in Samoan villages?",
@@ -188,15 +157,43 @@
     },
     {
      "level": 1,
-     "q": "Which earth oven is used for Sunday meals?",
-     "a": "Umu",
+     "q": "Which American Samoan city is the territory's capital?",
+     "a": "Pago Pago",
      "wrong": [
-      "Lovo",
-      "Mumu",
-      "Hangi"
+      "Apia",
+      "Tafuna",
+      "Leone"
      ],
-     "why": "Food cooks under hot stones."
+     "why": "It is in a separate US territory."
     },
+    {
+     "level": 3,
+     "q": "Which national park has a canopy walkway on Savai'i?",
+     "a": "Falealupo Rainforest Preserve",
+     "wrong": [
+      "O Le Pupu-Pu'e National Park",
+      "Lake Lanoto'o",
+      "Afu Aau"
+     ],
+     "why": "It is on the island's western tip."
+    },
+    {
+     "level": 3,
+     "q": "Which house of chiefs, the 'matai system', leads Samoan villages?",
+     "a": "Matai (chiefly system)",
+     "wrong": [
+      "Ali'i Council",
+      "Elders' Club",
+      "Tribal Court"
+     ],
+     "why": "Only matai may sit in parliament."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 1,
      "q": "Which sport is Samoa's national sport?",
@@ -207,6 +204,96 @@
       "Baseball"
      ],
      "why": "The team is called Manu Samoa."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Samoan-heritage actor starred in 'Fast & Furious'?",
+     "a": "Dwayne Johnson",
+     "wrong": [
+      "Jason Momoa",
+      "Taika Waititi",
+      "Cliff Curtis"
+     ],
+     "why": "His mother is Samoan."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Scottish writer lived and died in Samoa?",
+     "a": "Robert Louis Stevenson",
+     "wrong": [
+      "Walter Scott",
+      "Arthur Conan Doyle",
+      "J. M. Barrie"
+     ],
+     "why": "Samoans called him 'Tusitala'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Who became Prime Minister of Samoa after the 2025 election?",
+     "a": "La'auli Leuatea Schmidt",
+     "wrong": [
+      "Fiamē Naomi Mata'afa",
+      "Tuilaepa Sailele",
+      "Va'ai Papu Vailupe"
+     ],
+     "why": "His party won the most seats."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Samoa's currency?",
+     "a": "Tala",
+     "wrong": [
+      "Vatu",
+      "Kina",
+      "Pa'anga"
+     ],
+     "why": "Its code is WST."
+    },
+    {
+     "level": 1,
+     "q": "Which way of life guides Samoan culture?",
+     "a": "Fa'a Samoa",
+     "wrong": [
+      "Bula spirit",
+      "Aloha spirit",
+      "Ubuntu"
+     ],
+     "why": "It means 'the Samoan way'."
+    },
+    {
+     "level": 1,
+     "q": "Which earth oven is used for Sunday meals?",
+     "a": "Umu",
+     "wrong": [
+      "Lovo",
+      "Mumu",
+      "Hangi"
+     ],
+     "why": "Food cooks under hot stones."
     },
     {
      "level": 1,
@@ -242,17 +329,6 @@
      "why": "It is worn every day."
     },
     {
-     "level": 1,
-     "q": "Which American Samoan city is the territory's capital?",
-     "a": "Pago Pago",
-     "wrong": [
-      "Apia",
-      "Tafuna",
-      "Leone"
-     ],
-     "why": "It is in a separate US territory."
-    },
-    {
      "level": 2,
      "q": "Which ceremonial drink is shared at important events?",
      "a": "Ava (kava)",
@@ -276,17 +352,6 @@
     },
     {
      "level": 2,
-     "q": "Which Samoan-heritage actor starred in 'Fast & Furious'?",
-     "a": "Dwayne Johnson",
-     "wrong": [
-      "Jason Momoa",
-      "Taika Waititi",
-      "Cliff Curtis"
-     ],
-     "why": "His mother is Samoan."
-    },
-    {
-     "level": 2,
      "q": "Which coconut cream dish wrapped in taro leaves is a favourite?",
      "a": "Palusami",
      "wrong": [
@@ -306,39 +371,6 @@
       "Hula"
      ],
      "why": "Dancers twirl flaming knives."
-    },
-    {
-     "level": 3,
-     "q": "Which lava fields on Savai'i came from a 1905–11 eruption?",
-     "a": "Saleaula lava fields",
-     "wrong": [
-      "Mauna Loa fields",
-      "Tavurvur fields",
-      "Yasur fields"
-     ],
-     "why": "The lava surrounded a church."
-    },
-    {
-     "level": 3,
-     "q": "Which national park has a canopy walkway on Savai'i?",
-     "a": "Falealupo Rainforest Preserve",
-     "wrong": [
-      "O Le Pupu-Pu'e National Park",
-      "Lake Lanoto'o",
-      "Afu Aau"
-     ],
-     "why": "It is on the island's western tip."
-    },
-    {
-     "level": 3,
-     "q": "Which house of chiefs, the 'matai system', leads Samoan villages?",
-     "a": "Matai (chiefly system)",
-     "wrong": [
-      "Ali'i Council",
-      "Elders' Club",
-      "Tribal Court"
-     ],
-     "why": "Only matai may sit in parliament."
     }
    ]
   }

@@ -3,19 +3,9 @@
  "country": "CY",
  "topics": [
   {
-   "name": "Cyprus: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Cyprus?",
-     "a": "Nicosia",
-     "wrong": [
-      "Limassol",
-      "Larnaca",
-      "Paphos"
-     ],
-     "why": "It is the last divided capital in Europe."
-    },
     {
      "level": 1,
      "q": "From which country did Cyprus gain independence in 1960?",
@@ -26,50 +16,6 @@
       "Italy"
      ],
      "why": "Britain kept two military bases."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Turkey invade northern Cyprus?",
-     "a": "1974",
-     "wrong": [
-      "1960",
-      "1963",
-      "1983"
-     ],
-     "why": "The island has been divided since."
-    },
-    {
-     "level": 1,
-     "q": "What is the UN buffer zone across Cyprus called?",
-     "a": "Green Line",
-     "wrong": [
-      "Blue Line",
-      "Red Line",
-      "Iron Line"
-     ],
-     "why": "It cuts through Nicosia."
-    },
-    {
-     "level": 1,
-     "q": "Which goddess is said to have been born from the sea near Paphos?",
-     "a": "Aphrodite",
-     "wrong": [
-      "Athena",
-      "Artemis",
-      "Hera"
-     ],
-     "why": "Her birthplace is called Petra tou Romiou."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Cyprus join the EU?",
-     "a": "2004",
-     "wrong": [
-      "1995",
-      "2007",
-      "2013"
-     ],
-     "why": "It adopted the euro in 2008."
     },
     {
      "level": 1,
@@ -95,17 +41,6 @@
     },
     {
      "level": 2,
-     "q": "Which Venetian-era Cypriot city has a famous Othello Tower?",
-     "a": "Famagusta",
-     "wrong": [
-      "Kyrenia",
-      "Paphos",
-      "Larnaca"
-     ],
-     "why": "It is linked to Shakespeare's play."
-    },
-    {
-     "level": 2,
      "q": "Which empire ruled Cyprus from 1571 to 1878?",
      "a": "Ottoman Empire",
      "wrong": [
@@ -128,14 +63,53 @@
     },
     {
      "level": 2,
-     "q": "Which 2004 UN plan to reunify Cyprus was rejected by Greek Cypriots?",
-     "a": "Annan Plan",
+     "q": "Which ancient city near Limassol has a cliff-top theatre?",
+     "a": "Kourion",
      "wrong": [
-      "Bush Plan",
-      "Geneva Plan",
-      "Crans-Montana Plan"
+      "Salamis",
+      "Amathus",
+      "Soli"
      ],
-     "why": "Turkish Cypriots voted for it."
+     "why": "It overlooks the sea."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Cyprus?",
+     "a": "Nicosia",
+     "wrong": [
+      "Limassol",
+      "Larnaca",
+      "Paphos"
+     ],
+     "why": "It is the last divided capital in Europe."
+    },
+    {
+     "level": 1,
+     "q": "Which goddess is said to have been born from the sea near Paphos?",
+     "a": "Aphrodite",
+     "wrong": [
+      "Athena",
+      "Artemis",
+      "Hera"
+     ],
+     "why": "Her birthplace is called Petra tou Romiou."
+    },
+    {
+     "level": 2,
+     "q": "Which Venetian-era Cypriot city has a famous Othello Tower?",
+     "a": "Famagusta",
+     "wrong": [
+      "Kyrenia",
+      "Paphos",
+      "Larnaca"
+     ],
+     "why": "It is linked to Shakespeare's play."
     },
     {
      "level": 3,
@@ -158,44 +132,6 @@
       "Enkomi"
      ],
      "why": "It dates back about 9,000 years."
-    },
-    {
-     "level": 3,
-     "q": "Which Stoic philosopher was born in Kition, today's Larnaca?",
-     "a": "Zeno of Citium",
-     "wrong": [
-      "Zeno of Elea",
-      "Epicurus",
-      "Diogenes"
-     ],
-     "why": "He founded Stoicism in Athens."
-    }
-   ]
-  },
-  {
-   "name": "Cyprus: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "What is the currency of the Republic of Cyprus?",
-     "a": "Euro",
-     "wrong": [
-      "Cyprus pound",
-      "Turkish lira",
-      "Drachma"
-     ],
-     "why": "It replaced the Cyprus pound in 2008."
-    },
-    {
-     "level": 1,
-     "q": "Which salty grilling cheese comes from Cyprus?",
-     "a": "Halloumi",
-     "wrong": [
-      "Feta",
-      "Kasseri",
-      "Manouri"
-     ],
-     "why": "It squeaks when you bite it."
     },
     {
      "level": 1,
@@ -221,17 +157,6 @@
     },
     {
      "level": 1,
-     "q": "Which two languages are official in Cyprus?",
-     "a": "Greek and Turkish",
-     "wrong": [
-      "Greek and English",
-      "Turkish and English",
-      "Greek and Italian"
-     ],
-     "why": "English is widely spoken too."
-    },
-    {
-     "level": 1,
      "q": "Which resort town in southeast Cyprus is famous for beaches and nightlife?",
      "a": "Ayia Napa",
      "wrong": [
@@ -240,6 +165,168 @@
       "Polis"
      ],
      "why": "It is near Cape Greco."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Cypriot tennis player reached the 2006 Australian Open final?",
+     "a": "Marcos Baghdatis",
+     "wrong": [
+      "Stefanos Tsitsipas",
+      "Grigor Dimitrov",
+      "Fernando Verdasco"
+     ],
+     "why": "He lost to Roger Federer."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the UN buffer zone across Cyprus called?",
+     "a": "Green Line",
+     "wrong": [
+      "Blue Line",
+      "Red Line",
+      "Iron Line"
+     ],
+     "why": "It cuts through Nicosia."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Cyprus join the EU?",
+     "a": "2004",
+     "wrong": [
+      "1995",
+      "2007",
+      "2013"
+     ],
+     "why": "It adopted the euro in 2008."
+    },
+    {
+     "level": 2,
+     "q": "Which 2004 UN plan to reunify Cyprus was rejected by Greek Cypriots?",
+     "a": "Annan Plan",
+     "wrong": [
+      "Bush Plan",
+      "Geneva Plan",
+      "Crans-Montana Plan"
+     ],
+     "why": "Turkish Cypriots voted for it."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which painted Byzantine churches in the Troodos are a UNESCO site?",
+     "a": "Painted Churches in the Troodos Region",
+     "wrong": [
+      "Monasteries of Meteora",
+      "Churches of Chiloé",
+      "Rila Monastery"
+     ],
+     "why": "There are ten of them."
+    },
+    {
+     "level": 3,
+     "q": "Which mosaics in Paphos are a UNESCO site?",
+     "a": "House of Dionysus mosaics",
+     "wrong": [
+      "Mosaics of Ravenna",
+      "Zeugma mosaics",
+      "Piazza Armerina mosaics"
+     ],
+     "why": "They date from Roman times."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which salt lake near Larnaca attracts flamingos in winter?",
+     "a": "Larnaca Salt Lake",
+     "wrong": [
+      "Limassol Salt Lake",
+      "Lake Koroneia",
+      "Lake Vouliagmeni"
+     ],
+     "why": "The Hala Sultan Tekke stands beside it."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Turkey invade northern Cyprus?",
+     "a": "1974",
+     "wrong": [
+      "1960",
+      "1963",
+      "1983"
+     ],
+     "why": "The island has been divided since."
+    },
+    {
+     "level": 3,
+     "q": "Which Stoic philosopher was born in Kition, today's Larnaca?",
+     "a": "Zeno of Citium",
+     "wrong": [
+      "Zeno of Elea",
+      "Epicurus",
+      "Diogenes"
+     ],
+     "why": "He founded Stoicism in Athens."
+    },
+    {
+     "level": 1,
+     "q": "What is the currency of the Republic of Cyprus?",
+     "a": "Euro",
+     "wrong": [
+      "Cyprus pound",
+      "Turkish lira",
+      "Drachma"
+     ],
+     "why": "It replaced the Cyprus pound in 2008."
+    },
+    {
+     "level": 1,
+     "q": "Which salty grilling cheese comes from Cyprus?",
+     "a": "Halloumi",
+     "wrong": [
+      "Feta",
+      "Kasseri",
+      "Manouri"
+     ],
+     "why": "It squeaks when you bite it."
+    },
+    {
+     "level": 1,
+     "q": "Which two languages are official in Cyprus?",
+     "a": "Greek and Turkish",
+     "wrong": [
+      "Greek and English",
+      "Turkish and English",
+      "Greek and Italian"
+     ],
+     "why": "English is widely spoken too."
     },
     {
      "level": 1,
@@ -265,39 +352,6 @@
     },
     {
      "level": 2,
-     "q": "Which painted Byzantine churches in the Troodos are a UNESCO site?",
-     "a": "Painted Churches in the Troodos Region",
-     "wrong": [
-      "Monasteries of Meteora",
-      "Churches of Chiloé",
-      "Rila Monastery"
-     ],
-     "why": "There are ten of them."
-    },
-    {
-     "level": 2,
-     "q": "Which ancient city near Limassol has a cliff-top theatre?",
-     "a": "Kourion",
-     "wrong": [
-      "Salamis",
-      "Amathus",
-      "Soli"
-     ],
-     "why": "It overlooks the sea."
-    },
-    {
-     "level": 2,
-     "q": "Which Cypriot tennis player reached the 2006 Australian Open final?",
-     "a": "Marcos Baghdatis",
-     "wrong": [
-      "Stefanos Tsitsipas",
-      "Grigor Dimitrov",
-      "Fernando Verdasco"
-     ],
-     "why": "He lost to Roger Federer."
-    },
-    {
-     "level": 2,
      "q": "Which large monastery in the Troodos houses a famous icon of the Virgin?",
      "a": "Kykkos Monastery",
      "wrong": [
@@ -306,28 +360,6 @@
       "Agios Neophytos"
      ],
      "why": "It was founded around 1100."
-    },
-    {
-     "level": 3,
-     "q": "Which salt lake near Larnaca attracts flamingos in winter?",
-     "a": "Larnaca Salt Lake",
-     "wrong": [
-      "Limassol Salt Lake",
-      "Lake Koroneia",
-      "Lake Vouliagmeni"
-     ],
-     "why": "The Hala Sultan Tekke stands beside it."
-    },
-    {
-     "level": 3,
-     "q": "Which mosaics in Paphos are a UNESCO site?",
-     "a": "House of Dionysus mosaics",
-     "wrong": [
-      "Mosaics of Ravenna",
-      "Zeugma mosaics",
-      "Piazza Armerina mosaics"
-     ],
-     "why": "They date from Roman times."
     },
     {
      "level": 3,

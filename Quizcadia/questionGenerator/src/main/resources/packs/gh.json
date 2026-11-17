@@ -3,7 +3,8 @@
  "country": "GH",
  "topics": [
   {
-   "name": "Ghana History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -180,11 +181,23 @@
       "Kofi Karikari"
      ],
      "why": "He returned in 1924."
+    },
+    {
+     "level": 3,
+     "q": "Who brought cocoa to Ghana in 1879?",
+     "a": "Tetteh Quarshie",
+     "wrong": [
+      "J. B. Danquah",
+      "Kwame Nkrumah",
+      "Paa Grant"
+     ],
+     "why": "He brought pods from Fernando Po."
     }
    ]
   },
   {
-   "name": "Ghana Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -361,11 +374,23 @@
       "Nakore Mosque"
      ],
      "why": "It is built of mud in the Sudanese style."
+    },
+    {
+     "level": 1,
+     "q": "Which mineral gave the Gold Coast its name?",
+     "a": "Gold",
+     "wrong": [
+      "Diamonds",
+      "Bauxite",
+      "Manganese"
+     ],
+     "why": "Ghana is Africa's top gold producer."
     }
    ]
   },
   {
-   "name": "Ghana Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,7 +571,8 @@
    ]
   },
   {
-   "name": "Ghana Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
     {
      "level": 1,
@@ -605,17 +631,6 @@
     },
     {
      "level": 1,
-     "q": "What is Ghana's film industry nicknamed?",
-     "a": "Ghallywood",
-     "wrong": [
-      "Nollywood",
-      "Kannywood",
-      "Bollywood"
-     ],
-     "why": "Many films are made in Kumasi."
-    },
-    {
-     "level": 1,
      "q": "Which Ghanaian singer had a hit with 'Terminator' in 2023?",
      "a": "King Promise",
      "wrong": [
@@ -649,6 +664,62 @@
     },
     {
      "level": 2,
+     "q": "Which reggae-dancehall artist sang 'Most Original'?",
+     "a": "Stonebwoy",
+     "wrong": [
+      "Shatta Wale",
+      "Samini",
+      "Kofi Kinaata"
+     ],
+     "why": "He has a BET award."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Ghana's film industry nicknamed?",
+     "a": "Ghallywood",
+     "wrong": [
+      "Nollywood",
+      "Kannywood",
+      "Bollywood"
+     ],
+     "why": "Many films are made in Kumasi."
+    },
+    {
+     "level": 3,
+     "q": "Which 1980 Ghanaian film by Kwaw Ansah is a classic of African cinema?",
+     "a": "Love Brewed in the African Pot",
+     "wrong": [
+      "Heritage Africa",
+      "Sinking Sands",
+      "The Burial of Kojo"
+     ],
+     "why": "It is about a marriage across social classes."
+    },
+    {
+     "level": 3,
+     "q": "Which Ghanaian-born actor starred in 'Beasts of No Nation' as a child soldier?",
+     "a": "Abraham Attah",
+     "wrong": [
+      "John Boyega",
+      "Idris Elba",
+      "Kofi Siriboe"
+     ],
+     "why": "He won a Venice award for it."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
      "q": "Which Ghanaian author wrote 'The Beautyful Ones Are Not Yet Born'?",
      "a": "Ayi Kwei Armah",
      "wrong": [
@@ -668,28 +739,6 @@
       "Nana Kwame Adjei-Brenyah"
      ],
      "why": "It follows two half-sisters' families."
-    },
-    {
-     "level": 2,
-     "q": "Which sculptor turns bottle caps into huge metal tapestries?",
-     "a": "El Anatsui",
-     "wrong": [
-      "Ablade Glover",
-      "Amoako Boafo",
-      "Ibrahim Mahama"
-     ],
-     "why": "He won the Venice Biennale's Golden Lion in 2015."
-    },
-    {
-     "level": 2,
-     "q": "Which reggae-dancehall artist sang 'Most Original'?",
-     "a": "Stonebwoy",
-     "wrong": [
-      "Shatta Wale",
-      "Samini",
-      "Kofi Kinaata"
-     ],
-     "why": "He has a BET award."
     },
     {
      "level": 3,
@@ -712,22 +761,68 @@
       "Mohammed ben Abdallah"
      ],
      "why": "She drew on Anansesem storytelling."
-    },
-    {
-     "level": 3,
-     "q": "Which 1980 Ghanaian film by Kwaw Ansah is a classic of African cinema?",
-     "a": "Love Brewed in the African Pot",
-     "wrong": [
-      "Heritage Africa",
-      "Sinking Sands",
-      "The Burial of Kojo"
-     ],
-     "why": "It is about a marriage across social classes."
     }
    ]
   },
   {
-   "name": "Ghana Food & Traditions",
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "What is Ghana's presidential palace called?",
+     "a": "Jubilee House",
+     "wrong": [
+      "Golden Jubilee Palace",
+      "State House",
+      "Peduase Lodge"
+     ],
+     "why": "It replaced Osu Castle as the seat of government."
+    },
+    {
+     "level": 2,
+     "q": "Which Ghanaian Nobel laureate led the UN?",
+     "a": "Kofi Annan",
+     "wrong": [
+      "Kwame Nkrumah",
+      "Jerry Rawlings",
+      "John Kufuor"
+     ],
+     "why": "He was Secretary-General from 1997 to 2006."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which sculptor turns bottle caps into huge metal tapestries?",
+     "a": "El Anatsui",
+     "wrong": [
+      "Ablade Glover",
+      "Amoako Boafo",
+      "Ibrahim Mahama"
+     ],
+     "why": "He won the Venice Biennale's Golden Lion in 2015."
+    },
+    {
+     "level": 2,
+     "q": "Ghana's carved 'fantasy coffins' are usually shaped like what?",
+     "a": "Something linked to the person's life",
+     "wrong": [
+      "Plain wooden boxes",
+      "Church buildings",
+      "Glass cases"
+     ],
+     "why": "A fisherman might be buried in a fish-shaped coffin."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
    "questions": [
     {
      "level": 1,
@@ -841,17 +936,6 @@
     },
     {
      "level": 2,
-     "q": "Ghana's carved 'fantasy coffins' are usually shaped like what?",
-     "a": "Something linked to the person's life",
-     "wrong": [
-      "Plain wooden boxes",
-      "Church buildings",
-      "Glass cases"
-     ],
-     "why": "A fisherman might be buried in a fish-shaped coffin."
-    },
-    {
-     "level": 2,
      "q": "Which northern millet porridge is called 'TZ'?",
      "a": "Tuo zaafi",
      "wrong": [
@@ -904,12 +988,7 @@
       "A groundnut soup"
      ],
      "why": "It is made with dried fish and shrimp."
-    }
-   ]
-  },
-  {
-   "name": "Ghana General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is Ghana's currency?",
@@ -967,17 +1046,6 @@
     },
     {
      "level": 1,
-     "q": "Which mineral gave the Gold Coast its name?",
-     "a": "Gold",
-     "wrong": [
-      "Diamonds",
-      "Bauxite",
-      "Manganese"
-     ],
-     "why": "Ghana is Africa's top gold producer."
-    },
-    {
-     "level": 1,
      "q": "What is the language of the Asante called?",
      "a": "Twi",
      "wrong": [
@@ -986,28 +1054,6 @@
       "Dagbani"
      ],
      "why": "It is part of the Akan group."
-    },
-    {
-     "level": 2,
-     "q": "What is Ghana's presidential palace called?",
-     "a": "Jubilee House",
-     "wrong": [
-      "Golden Jubilee Palace",
-      "State House",
-      "Peduase Lodge"
-     ],
-     "why": "It replaced Osu Castle as the seat of government."
-    },
-    {
-     "level": 2,
-     "q": "Which Ghanaian Nobel laureate led the UN?",
-     "a": "Kofi Annan",
-     "wrong": [
-      "Kwame Nkrumah",
-      "Jerry Rawlings",
-      "John Kufuor"
-     ],
-     "why": "He was Secretary-General from 1997 to 2006."
     },
     {
      "level": 2,
@@ -1052,28 +1098,6 @@
       "Ashesi University"
      ],
      "why": "It was founded in 1948."
-    },
-    {
-     "level": 3,
-     "q": "Who brought cocoa to Ghana in 1879?",
-     "a": "Tetteh Quarshie",
-     "wrong": [
-      "J. B. Danquah",
-      "Kwame Nkrumah",
-      "Paa Grant"
-     ],
-     "why": "He brought pods from Fernando Po."
-    },
-    {
-     "level": 3,
-     "q": "Which Ghanaian-born actor starred in 'Beasts of No Nation' as a child soldier?",
-     "a": "Abraham Attah",
-     "wrong": [
-      "John Boyega",
-      "Idris Elba",
-      "Kofi Siriboe"
-     ],
-     "why": "He won a Venice award for it."
     },
     {
      "level": 3,

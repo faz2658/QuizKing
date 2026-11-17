@@ -3,6 +3,7 @@ import { toSignal } from '@angular/core/rxjs-interop';
 import { Router, RouterLink } from '@angular/router';
 import QRCode from 'qrcode';
 import { catchError, EMPTY, interval, startWith, Subscription, switchMap } from 'rxjs';
+import { WORLD } from '../core/region';
 import { CatalogApi, MultiplayerApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { flag } from '../core/countries';
@@ -44,7 +45,7 @@ export class PartyStart {
   private readonly catalog = inject(CatalogApi);
   private readonly api = inject(MultiplayerApi);
   private readonly router = inject(Router);
-  protected readonly games = toSignal(this.catalog.multiplayerGames(), { initialValue: [] as GameCard[] });
+  protected readonly games = toSignal(this.catalog.multiplayerGames(WORLD), { initialValue: [] as GameCard[] });
   protected readonly busy = signal(false);
   protected readonly error = signal<string | null>(null);
 

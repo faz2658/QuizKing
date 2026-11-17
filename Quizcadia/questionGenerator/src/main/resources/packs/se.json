@@ -3,7 +3,8 @@
  "country": "SE",
  "topics": [
   {
-   "name": "Sweden: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -15,39 +16,6 @@
       "Goths"
      ],
      "why": "Swedish Vikings travelled east into Russia."
-    },
-    {
-     "level": 1,
-     "q": "Which Swedish inventor of dynamite founded the Nobel Prizes?",
-     "a": "Alfred Nobel",
-     "wrong": [
-      "Anders Celsius",
-      "Carl Linnaeus",
-      "Gustaf Dalén"
-     ],
-     "why": "He left his fortune for the prizes."
-    },
-    {
-     "level": 1,
-     "q": "Which Swedish botanist created the system of naming species?",
-     "a": "Carl Linnaeus",
-     "wrong": [
-      "Anders Celsius",
-      "Alfred Nobel",
-      "Jöns Jacob Berzelius"
-     ],
-     "why": "He gave us names like Homo sapiens."
-    },
-    {
-     "level": 1,
-     "q": "Which Swedish astronomer created a temperature scale?",
-     "a": "Anders Celsius",
-     "wrong": [
-      "Carl Linnaeus",
-      "Svante Arrhenius",
-      "Tycho Brahe"
-     ],
-     "why": "Water boils at 100 degrees on his scale."
     },
     {
      "level": 1,
@@ -158,7 +126,103 @@
       "Isra Hirsi"
      ],
      "why": "She began outside the Swedish parliament."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Sweden?",
+     "a": "Stockholm",
+     "wrong": [
+      "Gothenburg",
+      "Malmö",
+      "Uppsala"
+     ],
+     "why": "It is built on 14 islands."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Swedish band won Eurovision in 1974 with 'Waterloo'?",
+     "a": "ABBA",
+     "wrong": [
+      "Roxette",
+      "Ace of Base",
+      "The Cardigans"
+     ],
+     "why": "They became one of the best-selling bands ever."
     },
+    {
+     "level": 2,
+     "q": "Which Swedish DJ made 'Wake Me Up' and 'Levels'?",
+     "a": "Avicii",
+     "wrong": [
+      "Swedish House Mafia",
+      "Alesso",
+      "Eric Prydz"
+     ],
+     "why": "He was born Tim Bergling."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Swedish director made 'The Seventh Seal'?",
+     "a": "Ingmar Bergman",
+     "wrong": [
+      "Lasse Hallström",
+      "Ruben Östlund",
+      "Roy Andersson"
+     ],
+     "why": "Death plays chess with a knight in it."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Swedish author created Pippi Longstocking?",
+     "a": "Astrid Lindgren",
+     "wrong": [
+      "Selma Lagerlöf",
+      "Stieg Larsson",
+      "Tove Jansson"
+     ],
+     "why": "Pippi first appeared in 1945."
+    },
+    {
+     "level": 3,
+     "q": "Which writer was the first woman to win the Nobel Prize in Literature?",
+     "a": "Selma Lagerlöf",
+     "wrong": [
+      "Astrid Lindgren",
+      "Sigrid Undset",
+      "Nelly Sachs"
+     ],
+     "why": "She won in 1909."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
     {
      "level": 3,
      "q": "In which year did Sweden join NATO?",
@@ -173,29 +237,47 @@
    ]
   },
   {
-   "name": "Sweden: Places & Culture",
+   "category": "Animals",
+   "name": "Animals",
    "questions": [
     {
      "level": 1,
-     "q": "What is the capital of Sweden?",
-     "a": "Stockholm",
+     "q": "Which Swedish botanist created the system of naming species?",
+     "a": "Carl Linnaeus",
      "wrong": [
-      "Gothenburg",
-      "Malmö",
-      "Uppsala"
+      "Anders Celsius",
+      "Alfred Nobel",
+      "Jöns Jacob Berzelius"
      ],
-     "why": "It is built on 14 islands."
+     "why": "He gave us names like Homo sapiens."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Swedish inventor of dynamite founded the Nobel Prizes?",
+     "a": "Alfred Nobel",
+     "wrong": [
+      "Anders Celsius",
+      "Carl Linnaeus",
+      "Gustaf Dalén"
+     ],
+     "why": "He left his fortune for the prizes."
     },
     {
      "level": 1,
-     "q": "Which Swedish band won Eurovision in 1974 with 'Waterloo'?",
-     "a": "ABBA",
+     "q": "Which Swedish astronomer created a temperature scale?",
+     "a": "Anders Celsius",
      "wrong": [
-      "Roxette",
-      "Ace of Base",
-      "The Cardigans"
+      "Carl Linnaeus",
+      "Svante Arrhenius",
+      "Tycho Brahe"
      ],
-     "why": "They became one of the best-selling bands ever."
+     "why": "Water boils at 100 degrees on his scale."
     },
     {
      "level": 1,
@@ -242,17 +324,6 @@
      "why": "Sweden voted not to adopt the euro."
     },
     {
-     "level": 1,
-     "q": "Which Swedish author created Pippi Longstocking?",
-     "a": "Astrid Lindgren",
-     "wrong": [
-      "Selma Lagerlöf",
-      "Stieg Larsson",
-      "Tove Jansson"
-     ],
-     "why": "Pippi first appeared in 1945."
-    },
-    {
      "level": 2,
      "q": "Which hotel is rebuilt every winter from ice in Jukkasjärvi?",
      "a": "Icehotel",
@@ -295,39 +366,6 @@
       "Smörgås"
      ],
      "why": "It is a daily habit."
-    },
-    {
-     "level": 2,
-     "q": "Which Swedish DJ made 'Wake Me Up' and 'Levels'?",
-     "a": "Avicii",
-     "wrong": [
-      "Swedish House Mafia",
-      "Alesso",
-      "Eric Prydz"
-     ],
-     "why": "He was born Tim Bergling."
-    },
-    {
-     "level": 3,
-     "q": "Which writer was the first woman to win the Nobel Prize in Literature?",
-     "a": "Selma Lagerlöf",
-     "wrong": [
-      "Astrid Lindgren",
-      "Sigrid Undset",
-      "Nelly Sachs"
-     ],
-     "why": "She won in 1909."
-    },
-    {
-     "level": 3,
-     "q": "Which Swedish director made 'The Seventh Seal'?",
-     "a": "Ingmar Bergman",
-     "wrong": [
-      "Lasse Hallström",
-      "Ruben Östlund",
-      "Roy Andersson"
-     ],
-     "why": "Death plays chess with a knight in it."
     },
     {
      "level": 3,

@@ -3,30 +3,9 @@
  "country": "NL",
  "topics": [
   {
-   "name": "Netherlands: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which Dutch painter cut off part of his own ear?",
-     "a": "Vincent van Gogh",
-     "wrong": [
-      "Rembrandt",
-      "Johannes Vermeer",
-      "Piet Mondrian"
-     ],
-     "why": "He painted 'Sunflowers'."
-    },
-    {
-     "level": 1,
-     "q": "Which Jewish girl's diary was written while hiding in Amsterdam?",
-     "a": "Anne Frank",
-     "wrong": [
-      "Etty Hillesum",
-      "Corrie ten Boom",
-      "Margot Frank"
-     ],
-     "why": "Her hiding place is now a museum."
-    },
     {
      "level": 1,
      "q": "Which Dutch trading company was founded in 1602?",
@@ -50,6 +29,167 @@
      "why": "That is why the Dutch wear orange."
     },
     {
+     "level": 2,
+     "q": "Which 1953 disaster led to the Delta Works flood defences?",
+     "a": "North Sea flood",
+     "wrong": [
+      "Saint Elizabeth flood",
+      "Zuiderzee storm",
+      "Great Frost"
+     ],
+     "why": "Over 1,800 people died."
+    },
+    {
+     "level": 2,
+     "q": "Which Dutch explorer gave his name to Tasmania?",
+     "a": "Abel Tasman",
+     "wrong": [
+      "Willem Barentsz",
+      "Henry Hudson",
+      "Peter Minuit"
+     ],
+     "why": "He reached it in 1642."
+    },
+    {
+     "level": 2,
+     "q": "What was New York called when it was a Dutch colony?",
+     "a": "New Amsterdam",
+     "wrong": [
+      "New Holland",
+      "Fort Orange",
+      "New Zeeland"
+     ],
+     "why": "It was renamed in 1664."
+    },
+    {
+     "level": 3,
+     "q": "Which prince led the Dutch revolt against Spain?",
+     "a": "William the Silent",
+     "wrong": [
+      "Maurice of Nassau",
+      "William III",
+      "Frederick Henry"
+     ],
+     "why": "He was murdered in Delft in 1584."
+    },
+    {
+     "level": 3,
+     "q": "Which 1648 treaty recognised Dutch independence from Spain?",
+     "a": "Peace of Münster",
+     "wrong": [
+      "Treaty of Utrecht",
+      "Treaty of Breda",
+      "Peace of Nijmegen"
+     ],
+     "why": "It was part of the Peace of Westphalia."
+    },
+    {
+     "level": 1,
+     "q": "What is the national holiday for the king's birthday called?",
+     "a": "King's Day",
+     "wrong": [
+      "Orange Day",
+      "Liberation Day",
+      "Royal Day"
+     ],
+     "why": "People dress in orange on 27 April."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Netherlands?",
+     "a": "Amsterdam",
+     "wrong": [
+      "The Hague",
+      "Rotterdam",
+      "Utrecht"
+     ],
+     "why": "The government sits in The Hague."
+    },
+    {
+     "level": 1,
+     "q": "Which port city is Europe's busiest?",
+     "a": "Rotterdam",
+     "wrong": [
+      "Amsterdam",
+      "Antwerp",
+      "Hamburg"
+     ],
+     "why": "It handles hundreds of millions of tonnes a year."
+    },
+    {
+     "level": 2,
+     "q": "Which city is home to the International Court of Justice?",
+     "a": "The Hague",
+     "wrong": [
+      "Amsterdam",
+      "Utrecht",
+      "Leiden"
+     ],
+     "why": "It sits in the Peace Palace."
+    },
+    {
+     "level": 2,
+     "q": "What is land reclaimed from the sea called?",
+     "a": "Polder",
+     "wrong": [
+      "Dike",
+      "Dune",
+      "Fen"
+     ],
+     "why": "About a quarter of the country is below sea level."
+    },
+    {
+     "level": 3,
+     "q": "Which village has 19 historic windmills and is a UNESCO site?",
+     "a": "Kinderdijk",
+     "wrong": [
+      "Zaanse Schans",
+      "Giethoorn",
+      "Volendam"
+     ],
+     "why": "They were built to drain the land."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Dutch footballer pioneered 'Total Football'?",
+     "a": "Johan Cruyff",
+     "wrong": [
+      "Marco van Basten",
+      "Ruud Gullit",
+      "Dennis Bergkamp"
+     ],
+     "why": "He was also a great coach at Barcelona."
+    },
+    {
+     "level": 3,
+     "q": "Which Dutch driver won four F1 world titles from 2021 to 2024?",
+     "a": "Max Verstappen",
+     "wrong": [
+      "Jos Verstappen",
+      "Nyck de Vries",
+      "Giedo van der Garde"
+     ],
+     "why": "He drives for Red Bull."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
      "level": 1,
      "q": "Who has been King of the Netherlands since 2013?",
      "a": "Willem-Alexander",
@@ -59,6 +199,23 @@
       "Claus"
      ],
      "why": "His mother Beatrix abdicated."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Dutch painter cut off part of his own ear?",
+     "a": "Vincent van Gogh",
+     "wrong": [
+      "Rembrandt",
+      "Johannes Vermeer",
+      "Piet Mondrian"
+     ],
+     "why": "He painted 'Sunflowers'."
     },
     {
      "level": 1,
@@ -95,14 +252,42 @@
     },
     {
      "level": 2,
-     "q": "Which 1953 disaster led to the Delta Works flood defences?",
-     "a": "North Sea flood",
+     "q": "Which Amsterdam museum holds 'The Night Watch'?",
+     "a": "Rijksmuseum",
      "wrong": [
-      "Saint Elizabeth flood",
-      "Zuiderzee storm",
-      "Great Frost"
+      "Van Gogh Museum",
+      "Stedelijk Museum",
+      "Mauritshuis"
      ],
-     "why": "Over 1,800 people died."
+     "why": "It reopened in 2013 after a long renovation."
+    },
+    {
+     "level": 3,
+     "q": "Which abstract artist painted grids of primary colours?",
+     "a": "Piet Mondrian",
+     "wrong": [
+      "Kazimir Malevich",
+      "Theo van Doesburg",
+      "M. C. Escher"
+     ],
+     "why": "He was part of De Stijl."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Jewish girl's diary was written while hiding in Amsterdam?",
+     "a": "Anne Frank",
+     "wrong": [
+      "Etty Hillesum",
+      "Corrie ten Boom",
+      "Margot Frank"
+     ],
+     "why": "Her hiding place is now a museum."
     },
     {
      "level": 2,
@@ -116,28 +301,6 @@
      "why": "It is called the first speculative bubble."
     },
     {
-     "level": 2,
-     "q": "Which Dutch explorer gave his name to Tasmania?",
-     "a": "Abel Tasman",
-     "wrong": [
-      "Willem Barentsz",
-      "Henry Hudson",
-      "Peter Minuit"
-     ],
-     "why": "He reached it in 1642."
-    },
-    {
-     "level": 2,
-     "q": "What was New York called when it was a Dutch colony?",
-     "a": "New Amsterdam",
-     "wrong": [
-      "New Holland",
-      "Fort Orange",
-      "New Zeeland"
-     ],
-     "why": "It was renamed in 1664."
-    },
-    {
      "level": 3,
      "q": "Which Dutch scientist first saw bacteria with his microscopes?",
      "a": "Antonie van Leeuwenhoek",
@@ -147,44 +310,6 @@
       "Hugo de Vries"
      ],
      "why": "He called them 'animalcules'."
-    },
-    {
-     "level": 3,
-     "q": "Which prince led the Dutch revolt against Spain?",
-     "a": "William the Silent",
-     "wrong": [
-      "Maurice of Nassau",
-      "William III",
-      "Frederick Henry"
-     ],
-     "why": "He was murdered in Delft in 1584."
-    },
-    {
-     "level": 3,
-     "q": "Which 1648 treaty recognised Dutch independence from Spain?",
-     "a": "Peace of Münster",
-     "wrong": [
-      "Treaty of Utrecht",
-      "Treaty of Breda",
-      "Peace of Nijmegen"
-     ],
-     "why": "It was part of the Peace of Westphalia."
-    }
-   ]
-  },
-  {
-   "name": "Netherlands: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of the Netherlands?",
-     "a": "Amsterdam",
-     "wrong": [
-      "The Hague",
-      "Rotterdam",
-      "Utrecht"
-     ],
-     "why": "The government sits in The Hague."
     },
     {
      "level": 1,
@@ -210,28 +335,6 @@
     },
     {
      "level": 1,
-     "q": "What is the national holiday for the king's birthday called?",
-     "a": "King's Day",
-     "wrong": [
-      "Orange Day",
-      "Liberation Day",
-      "Royal Day"
-     ],
-     "why": "People dress in orange on 27 April."
-    },
-    {
-     "level": 1,
-     "q": "Which port city is Europe's busiest?",
-     "a": "Rotterdam",
-     "wrong": [
-      "Amsterdam",
-      "Antwerp",
-      "Hamburg"
-     ],
-     "why": "It handles hundreds of millions of tonnes a year."
-    },
-    {
-     "level": 1,
      "q": "Which wooden shoes are a Dutch symbol?",
      "a": "Clogs",
      "wrong": [
@@ -254,50 +357,6 @@
     },
     {
      "level": 2,
-     "q": "Which city is home to the International Court of Justice?",
-     "a": "The Hague",
-     "wrong": [
-      "Amsterdam",
-      "Utrecht",
-      "Leiden"
-     ],
-     "why": "It sits in the Peace Palace."
-    },
-    {
-     "level": 2,
-     "q": "What is land reclaimed from the sea called?",
-     "a": "Polder",
-     "wrong": [
-      "Dike",
-      "Dune",
-      "Fen"
-     ],
-     "why": "About a quarter of the country is below sea level."
-    },
-    {
-     "level": 2,
-     "q": "Which Amsterdam museum holds 'The Night Watch'?",
-     "a": "Rijksmuseum",
-     "wrong": [
-      "Van Gogh Museum",
-      "Stedelijk Museum",
-      "Mauritshuis"
-     ],
-     "why": "It reopened in 2013 after a long renovation."
-    },
-    {
-     "level": 2,
-     "q": "Which Dutch footballer pioneered 'Total Football'?",
-     "a": "Johan Cruyff",
-     "wrong": [
-      "Marco van Basten",
-      "Ruud Gullit",
-      "Dennis Bergkamp"
-     ],
-     "why": "He was also a great coach at Barcelona."
-    },
-    {
-     "level": 2,
      "q": "Which syrup waffles are a Dutch treat?",
      "a": "Stroopwafels",
      "wrong": [
@@ -306,39 +365,6 @@
       "Speculaas"
      ],
      "why": "They come from Gouda."
-    },
-    {
-     "level": 3,
-     "q": "Which village has 19 historic windmills and is a UNESCO site?",
-     "a": "Kinderdijk",
-     "wrong": [
-      "Zaanse Schans",
-      "Giethoorn",
-      "Volendam"
-     ],
-     "why": "They were built to drain the land."
-    },
-    {
-     "level": 3,
-     "q": "Which Dutch driver won four F1 world titles from 2021 to 2024?",
-     "a": "Max Verstappen",
-     "wrong": [
-      "Jos Verstappen",
-      "Nyck de Vries",
-      "Giedo van der Garde"
-     ],
-     "why": "He drives for Red Bull."
-    },
-    {
-     "level": 3,
-     "q": "Which abstract artist painted grids of primary colours?",
-     "a": "Piet Mondrian",
-     "wrong": [
-      "Kazimir Malevich",
-      "Theo van Doesburg",
-      "M. C. Escher"
-     ],
-     "why": "He was part of De Stijl."
     }
    ]
   }

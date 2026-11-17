@@ -3,19 +3,9 @@
  "country": "KP",
  "topics": [
   {
-   "name": "North Korea: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of North Korea?",
-     "a": "Pyongyang",
-     "wrong": [
-      "Kaesong",
-      "Wonsan",
-      "Hamhung"
-     ],
-     "why": "It lies on the Taedong River."
-    },
     {
      "level": 1,
      "q": "Who founded North Korea in 1948?",
@@ -29,17 +19,6 @@
     },
     {
      "level": 1,
-     "q": "Who has led North Korea since 2011?",
-     "a": "Kim Jong Un",
-     "wrong": [
-      "Kim Jong Il",
-      "Kim Il Sung",
-      "Kim Yo Jong"
-     ],
-     "why": "He is the third generation of his family to rule."
-    },
-    {
-     "level": 1,
      "q": "Which war was fought on the Korean Peninsula from 1950 to 1953?",
      "a": "Korean War",
      "wrong": [
@@ -50,37 +29,32 @@
      "why": "It ended in an armistice, not a peace treaty."
     },
     {
-     "level": 1,
-     "q": "Which line divides North and South Korea?",
-     "a": "38th parallel and the DMZ",
+     "level": 3,
+     "q": "Which US Navy ship was captured by North Korea in 1968?",
+     "a": "USS Pueblo",
      "wrong": [
-      "17th parallel",
-      "Yalu River",
-      "Han River"
+      "USS Liberty",
+      "USS Maddox",
+      "USS Cole"
      ],
-     "why": "The DMZ is about 4 km wide."
-    },
+     "why": "It is now a museum in Pyongyang."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
     {
      "level": 1,
-     "q": "What is North Korea's currency?",
-     "a": "North Korean won",
+     "q": "What is the capital of North Korea?",
+     "a": "Pyongyang",
      "wrong": [
-      "South Korean won",
-      "Yuan",
-      "Ruble"
+      "Kaesong",
+      "Wonsan",
+      "Hamhung"
      ],
-     "why": "It cannot be freely exchanged."
-    },
-    {
-     "level": 1,
-     "q": "Which country is North Korea's main ally?",
-     "a": "China",
-     "wrong": [
-      "Japan",
-      "South Korea",
-      "United States"
-     ],
-     "why": "China fought for it in the Korean War."
+     "why": "It lies on the Taedong River."
     },
     {
      "level": 2,
@@ -105,39 +79,6 @@
      "why": "The armistice was signed there."
     },
     {
-     "level": 2,
-     "q": "Which famine struck North Korea in the 1990s?",
-     "a": "Arduous March",
-     "wrong": [
-      "Great Leap Forward",
-      "Holodomor",
-      "Great Chinese Famine"
-     ],
-     "why": "Hundreds of thousands died."
-    },
-    {
-     "level": 2,
-     "q": "In which year did North Korea carry out its first nuclear test?",
-     "a": "2006",
-     "wrong": [
-      "1998",
-      "2013",
-      "2017"
-     ],
-     "why": "It has carried out six tests."
-    },
-    {
-     "level": 2,
-     "q": "Which US President met Kim Jong Un in Singapore in 2018?",
-     "a": "Donald Trump",
-     "wrong": [
-      "Barack Obama",
-      "Joe Biden",
-      "George W. Bush"
-     ],
-     "why": "It was the first such summit."
-    },
-    {
      "level": 3,
      "q": "Which industrial park near the border was run jointly with South Korea?",
      "a": "Kaesong Industrial Region",
@@ -147,66 +88,6 @@
       "Kumgang Zone"
      ],
      "why": "It closed in 2016."
-    },
-    {
-     "level": 3,
-     "q": "What was the 'Songun' policy?",
-     "a": "Military first",
-     "wrong": [
-      "Agriculture first",
-      "Party first",
-      "People first"
-     ],
-     "why": "Kim Jong Il made it central."
-    },
-    {
-     "level": 3,
-     "q": "Which US Navy ship was captured by North Korea in 1968?",
-     "a": "USS Pueblo",
-     "wrong": [
-      "USS Liberty",
-      "USS Maddox",
-      "USS Cole"
-     ],
-     "why": "It is now a museum in Pyongyang."
-    }
-   ]
-  },
-  {
-   "name": "North Korea: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which pyramid-shaped hotel dominates Pyongyang's skyline?",
-     "a": "Ryugyong Hotel",
-     "wrong": [
-      "Yanggakdo Hotel",
-      "Koryo Hotel",
-      "Pyongyang Tower"
-     ],
-     "why": "Building began in 1987."
-    },
-    {
-     "level": 1,
-     "q": "Which mass gymnastic show involves thousands of performers?",
-     "a": "Mass Games",
-     "wrong": [
-      "Arirang Parade",
-      "Victory Show",
-      "Pyongyang Spectacle"
-     ],
-     "why": "Card sections form giant pictures."
-    },
-    {
-     "level": 1,
-     "q": "Which cold buckwheat noodle dish is famous from Pyongyang?",
-     "a": "Naengmyeon",
-     "wrong": [
-      "Ramen",
-      "Japchae",
-      "Udon"
-     ],
-     "why": "Okryu-gwan restaurant is famous for it."
     },
     {
      "level": 1,
@@ -242,17 +123,6 @@
      "why": "It flies old Soviet planes."
     },
     {
-     "level": 1,
-     "q": "Which giant bronze statues stand on Mansu Hill?",
-     "a": "Statues of Kim Il Sung and Kim Jong Il",
-     "wrong": [
-      "Statues of Marx and Lenin",
-      "Statue of the Korean soldier",
-      "Statues of the Juche heroes"
-     ],
-     "why": "Visitors bow and lay flowers."
-    },
-    {
      "level": 2,
      "q": "Which mountains in the southeast are famous for beauty?",
      "a": "Kumgang (Diamond Mountains)",
@@ -275,26 +145,43 @@
      "why": "It has a red flame on top."
     },
     {
-     "level": 2,
-     "q": "Which winged horse statue symbolises rapid progress?",
-     "a": "Chollima",
+     "level": 3,
+     "q": "Which village is Kim Il Sung's claimed birthplace?",
+     "a": "Mangyongdae",
      "wrong": [
-      "Pegasus",
-      "Haetae",
-      "Bulgasari"
+      "Panmunjom",
+      "Kaesong",
+      "Hyesan"
      ],
-     "why": "It means 'thousand-li horse'."
+     "why": "It is on the edge of Pyongyang."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has led North Korea since 2011?",
+     "a": "Kim Jong Un",
+     "wrong": [
+      "Kim Jong Il",
+      "Kim Il Sung",
+      "Kim Yo Jong"
+     ],
+     "why": "He is the third generation of his family to rule."
     },
     {
      "level": 2,
-     "q": "Which arch in Pyongyang is taller than the one in Paris?",
-     "a": "Arch of Triumph",
+     "q": "Which US President met Kim Jong Un in Singapore in 2018?",
+     "a": "Donald Trump",
      "wrong": [
-      "Gate of Reunification",
-      "Juche Arch",
-      "Victory Arch"
+      "Barack Obama",
+      "Joe Biden",
+      "George W. Bush"
      ],
-     "why": "It was built in 1982."
+     "why": "It was the first such summit."
     },
     {
      "level": 2,
@@ -306,6 +193,150 @@
       "Samjiyon Band"
      ],
      "why": "It first performed in 2012."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which giant bronze statues stand on Mansu Hill?",
+     "a": "Statues of Kim Il Sung and Kim Jong Il",
+     "wrong": [
+      "Statues of Marx and Lenin",
+      "Statue of the Korean soldier",
+      "Statues of the Juche heroes"
+     ],
+     "why": "Visitors bow and lay flowers."
+    },
+    {
+     "level": 2,
+     "q": "Which winged horse statue symbolises rapid progress?",
+     "a": "Chollima",
+     "wrong": [
+      "Pegasus",
+      "Haetae",
+      "Bulgasari"
+     ],
+     "why": "It means 'thousand-li horse'."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which line divides North and South Korea?",
+     "a": "38th parallel and the DMZ",
+     "wrong": [
+      "17th parallel",
+      "Yalu River",
+      "Han River"
+     ],
+     "why": "The DMZ is about 4 km wide."
+    },
+    {
+     "level": 1,
+     "q": "What is North Korea's currency?",
+     "a": "North Korean won",
+     "wrong": [
+      "South Korean won",
+      "Yuan",
+      "Ruble"
+     ],
+     "why": "It cannot be freely exchanged."
+    },
+    {
+     "level": 1,
+     "q": "Which country is North Korea's main ally?",
+     "a": "China",
+     "wrong": [
+      "Japan",
+      "South Korea",
+      "United States"
+     ],
+     "why": "China fought for it in the Korean War."
+    },
+    {
+     "level": 2,
+     "q": "Which famine struck North Korea in the 1990s?",
+     "a": "Arduous March",
+     "wrong": [
+      "Great Leap Forward",
+      "Holodomor",
+      "Great Chinese Famine"
+     ],
+     "why": "Hundreds of thousands died."
+    },
+    {
+     "level": 2,
+     "q": "In which year did North Korea carry out its first nuclear test?",
+     "a": "2006",
+     "wrong": [
+      "1998",
+      "2013",
+      "2017"
+     ],
+     "why": "It has carried out six tests."
+    },
+    {
+     "level": 3,
+     "q": "What was the 'Songun' policy?",
+     "a": "Military first",
+     "wrong": [
+      "Agriculture first",
+      "Party first",
+      "People first"
+     ],
+     "why": "Kim Jong Il made it central."
+    },
+    {
+     "level": 1,
+     "q": "Which pyramid-shaped hotel dominates Pyongyang's skyline?",
+     "a": "Ryugyong Hotel",
+     "wrong": [
+      "Yanggakdo Hotel",
+      "Koryo Hotel",
+      "Pyongyang Tower"
+     ],
+     "why": "Building began in 1987."
+    },
+    {
+     "level": 1,
+     "q": "Which mass gymnastic show involves thousands of performers?",
+     "a": "Mass Games",
+     "wrong": [
+      "Arirang Parade",
+      "Victory Show",
+      "Pyongyang Spectacle"
+     ],
+     "why": "Card sections form giant pictures."
+    },
+    {
+     "level": 1,
+     "q": "Which cold buckwheat noodle dish is famous from Pyongyang?",
+     "a": "Naengmyeon",
+     "wrong": [
+      "Ramen",
+      "Japchae",
+      "Udon"
+     ],
+     "why": "Okryu-gwan restaurant is famous for it."
+    },
+    {
+     "level": 2,
+     "q": "Which arch in Pyongyang is taller than the one in Paris?",
+     "a": "Arch of Triumph",
+     "wrong": [
+      "Gate of Reunification",
+      "Juche Arch",
+      "Victory Arch"
+     ],
+     "why": "It was built in 1982."
     },
     {
      "level": 3,
@@ -328,17 +359,6 @@
       "Beijing Subway"
      ],
      "why": "Its stations double as bomb shelters."
-    },
-    {
-     "level": 3,
-     "q": "Which village is Kim Il Sung's claimed birthplace?",
-     "a": "Mangyongdae",
-     "wrong": [
-      "Panmunjom",
-      "Kaesong",
-      "Hyesan"
-     ],
-     "why": "It is on the edge of Pyongyang."
     }
    ]
   }

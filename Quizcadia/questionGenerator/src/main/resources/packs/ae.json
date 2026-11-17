@@ -3,7 +3,8 @@
  "country": "AE",
  "topics": [
   {
-   "name": "UAE History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -15,17 +16,6 @@
       "1961"
      ],
      "why": "The union was declared on 2 December 1971."
-    },
-    {
-     "level": 1,
-     "q": "Who was the UAE's founding President?",
-     "a": "Sheikh Zayed bin Sultan Al Nahyan",
-     "wrong": [
-      "Sheikh Rashid bin Saeed Al Maktoum",
-      "Sheikh Khalifa bin Zayed",
-      "Sheikh Saqr bin Mohammed"
-     ],
-     "why": "He is called the Father of the Nation."
     },
     {
      "level": 1,
@@ -70,28 +60,6 @@
       "Shipbuilding for Europe"
      ],
      "why": "Cultured pearls from Japan ended the trade in the 1930s."
-    },
-    {
-     "level": 1,
-     "q": "Who became President of the UAE in 2022?",
-     "a": "Sheikh Mohamed bin Zayed",
-     "wrong": [
-      "Sheikh Mohammed bin Rashid",
-      "Sheikh Hamdan bin Mohammed",
-      "Sheikh Saud bin Saqr"
-     ],
-     "why": "He succeeded Sheikh Khalifa."
-    },
-    {
-     "level": 2,
-     "q": "Which ruler of Dubai is also the UAE's Vice President and Prime Minister?",
-     "a": "Sheikh Mohammed bin Rashid Al Maktoum",
-     "wrong": [
-      "Sheikh Mohamed bin Zayed",
-      "Sheikh Sultan bin Muhammad Al Qasimi",
-      "Sheikh Humaid bin Rashid"
-     ],
-     "why": "He has ruled Dubai since 2006."
     },
     {
      "level": 2,
@@ -180,11 +148,56 @@
       "Mohammed Al Mulla"
      ],
      "why": "Sultan Al Neyadi later did a six-month mission."
+    },
+    {
+     "level": 1,
+     "q": "What was the name of the UAE's mission that reached Mars orbit in 2021?",
+     "a": "Hope",
+     "wrong": [
+      "Falcon",
+      "Zayed",
+      "Unity"
+     ],
+     "why": "It was the first Arab mission to Mars."
+    },
+    {
+     "level": 2,
+     "q": "In 2022 the UAE moved its weekend to which days?",
+     "a": "Saturday and Sunday",
+     "wrong": [
+      "Thursday and Friday",
+      "Friday and Saturday",
+      "Sunday and Monday"
+     ],
+     "why": "Friday became a half working day."
+    },
+    {
+     "level": 2,
+     "q": "Which city has a driverless metro, opened in 2009?",
+     "a": "Dubai",
+     "wrong": [
+      "Abu Dhabi",
+      "Sharjah",
+      "Al Ain"
+     ],
+     "why": "It was the first metro in the Gulf."
+    },
+    {
+     "level": 3,
+     "q": "What is the Expo 2020 site called today?",
+     "a": "Expo City Dubai",
+     "wrong": [
+      "Dubai South Park",
+      "Al Wasl City",
+      "Future District"
+     ],
+     "why": "Its Al Wasl dome still hosts events."
     }
    ]
   },
   {
-   "name": "UAE Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -361,11 +374,23 @@
       "Das Island"
      ],
      "why": "Sheikh Zayed made it a reserve in 1971."
+    },
+    {
+     "level": 2,
+     "q": "Which planned city in Abu Dhabi focuses on clean energy?",
+     "a": "Masdar City",
+     "wrong": [
+      "Expo City",
+      "Khalifa City",
+      "Dubai Silicon Oasis"
+     ],
+     "why": "IRENA has its headquarters there."
     }
    ]
   },
   {
-   "name": "UAE Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,30 +571,9 @@
    ]
   },
   {
-   "name": "UAE Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the traditional long white robe worn by Emirati men called?",
-     "a": "Kandura",
-     "wrong": [
-      "Abaya",
-      "Shemagh",
-      "Bisht"
-     ],
-     "why": "It is also called a dishdasha."
-    },
-    {
-     "level": 1,
-     "q": "What is the black cloak worn by many Emirati women called?",
-     "a": "Abaya",
-     "wrong": [
-      "Kandura",
-      "Sheila",
-      "Thobe"
-     ],
-     "why": "The headscarf is called a sheila."
-    },
     {
      "level": 1,
      "q": "Which traditional Emirati dance uses canes and drums?",
@@ -580,39 +584,6 @@
       "Khaleegy"
      ],
      "why": "It is on UNESCO's heritage list."
-    },
-    {
-     "level": 1,
-     "q": "Which museum opened on Saadiyat Island in 2017?",
-     "a": "Louvre Abu Dhabi",
-     "wrong": [
-      "Guggenheim Abu Dhabi",
-      "Museum of the Future",
-      "Etihad Museum"
-     ],
-     "why": "It has a huge dome that filters light."
-    },
-    {
-     "level": 1,
-     "q": "In which city is the Museum of the Future?",
-     "a": "Dubai",
-     "wrong": [
-      "Abu Dhabi",
-      "Sharjah",
-      "Ajman"
-     ],
-     "why": "Its walls are covered in Arabic calligraphy."
-    },
-    {
-     "level": 1,
-     "q": "What is traditional Arabic coffee called in the UAE?",
-     "a": "Gahwa",
-     "wrong": [
-      "Karak",
-      "Turkish coffee",
-      "Chai"
-     ],
-     "why": "It is spiced with cardamom."
     },
     {
      "level": 1,
@@ -638,6 +609,40 @@
     },
     {
      "level": 2,
+     "q": "What is the UAE's national anthem called?",
+     "a": "Ishy Bilady",
+     "wrong": [
+      "Mawtini",
+      "Nashid as-Salam",
+      "Qassaman"
+     ],
+     "why": "It means 'Long live my country'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which TV poetry competition from Abu Dhabi is watched across the Arab world?",
+     "a": "Million's Poet",
+     "wrong": [
+      "Arab Idol",
+      "The Voice Arabia",
+      "Arabs Got Talent"
+     ],
+     "why": "Contestants recite Nabati poems."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
      "q": "Which form of Bedouin poetry is popular in the UAE?",
      "a": "Nabati",
      "wrong": [
@@ -649,17 +654,6 @@
     },
     {
      "level": 2,
-     "q": "Which TV poetry competition from Abu Dhabi is watched across the Arab world?",
-     "a": "Million's Poet",
-     "wrong": [
-      "Arab Idol",
-      "The Voice Arabia",
-      "Arabs Got Talent"
-     ],
-     "why": "Contestants recite Nabati poems."
-    },
-    {
-     "level": 2,
      "q": "Which emirate was named UNESCO World Book Capital in 2019?",
      "a": "Sharjah",
      "wrong": [
@@ -668,6 +662,84 @@
       "Ajman"
      ],
      "why": "It hosts a huge international book fair."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who was the UAE's founding President?",
+     "a": "Sheikh Zayed bin Sultan Al Nahyan",
+     "wrong": [
+      "Sheikh Rashid bin Saeed Al Maktoum",
+      "Sheikh Khalifa bin Zayed",
+      "Sheikh Saqr bin Mohammed"
+     ],
+     "why": "He is called the Father of the Nation."
+    },
+    {
+     "level": 1,
+     "q": "Who became President of the UAE in 2022?",
+     "a": "Sheikh Mohamed bin Zayed",
+     "wrong": [
+      "Sheikh Mohammed bin Rashid",
+      "Sheikh Hamdan bin Mohammed",
+      "Sheikh Saud bin Saqr"
+     ],
+     "why": "He succeeded Sheikh Khalifa."
+    },
+    {
+     "level": 2,
+     "q": "Which ruler of Dubai is also the UAE's Vice President and Prime Minister?",
+     "a": "Sheikh Mohammed bin Rashid Al Maktoum",
+     "wrong": [
+      "Sheikh Mohamed bin Zayed",
+      "Sheikh Sultan bin Muhammad Al Qasimi",
+      "Sheikh Humaid bin Rashid"
+     ],
+     "why": "He has ruled Dubai since 2006."
+    },
+    {
+     "level": 1,
+     "q": "Which huge white mosque in Abu Dhabi is named after the founding President?",
+     "a": "Sheikh Zayed Grand Mosque",
+     "wrong": [
+      "Jumeirah Mosque",
+      "King Faisal Mosque",
+      "Al Farooq Mosque"
+     ],
+     "why": "It has one of the world's largest carpets."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which museum opened on Saadiyat Island in 2017?",
+     "a": "Louvre Abu Dhabi",
+     "wrong": [
+      "Guggenheim Abu Dhabi",
+      "Museum of the Future",
+      "Etihad Museum"
+     ],
+     "why": "It has a huge dome that filters light."
+    },
+    {
+     "level": 1,
+     "q": "In which city is the Museum of the Future?",
+     "a": "Dubai",
+     "wrong": [
+      "Abu Dhabi",
+      "Sharjah",
+      "Ajman"
+     ],
+     "why": "Its walls are covered in Arabic calligraphy."
     },
     {
      "level": 2,
@@ -679,6 +751,95 @@
       "Norman Foster"
      ],
      "why": "Its dome is 180 m wide."
+    },
+    {
+     "level": 3,
+     "q": "Which Emirati heritage art is the weaving of Bedouin textiles?",
+     "a": "Al Sadu",
+     "wrong": [
+      "Al Talli",
+      "Khoos",
+      "Batik"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 3,
+     "q": "Which braided embroidery, made with silver thread, is an Emirati craft?",
+     "a": "Al Talli",
+     "wrong": [
+      "Al Sadu",
+      "Khoos",
+      "Arish"
+     ],
+     "why": "It decorates the collars and cuffs of clothing."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the UAE's national bird?",
+     "a": "Falcon",
+     "wrong": [
+      "Eagle",
+      "Flamingo",
+      "Houbara bustard"
+     ],
+     "why": "It appears on the coat of arms."
+    },
+    {
+     "level": 2,
+     "q": "What is the UAE's national animal?",
+     "a": "Arabian oryx",
+     "wrong": [
+      "Camel",
+      "Gazelle",
+      "Arabian leopard"
+     ],
+     "why": "It was saved from extinction in the wild."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the traditional long white robe worn by Emirati men called?",
+     "a": "Kandura",
+     "wrong": [
+      "Abaya",
+      "Shemagh",
+      "Bisht"
+     ],
+     "why": "It is also called a dishdasha."
+    },
+    {
+     "level": 1,
+     "q": "What is the black cloak worn by many Emirati women called?",
+     "a": "Abaya",
+     "wrong": [
+      "Kandura",
+      "Sheila",
+      "Thobe"
+     ],
+     "why": "The headscarf is called a sheila."
+    },
+    {
+     "level": 1,
+     "q": "What is traditional Arabic coffee called in the UAE?",
+     "a": "Gahwa",
+     "wrong": [
+      "Karak",
+      "Turkish coffee",
+      "Chai"
+     ],
+     "why": "It is spiced with cardamom."
     },
     {
      "level": 2,
@@ -713,22 +874,6 @@
      ],
      "why": "It is open from October to April."
     },
-    {
-     "level": 3,
-     "q": "Which Emirati heritage art is the weaving of Bedouin textiles?",
-     "a": "Al Sadu",
-     "wrong": [
-      "Al Talli",
-      "Khoos",
-      "Batik"
-     ],
-     "why": "It is on UNESCO's heritage list."
-    }
-   ]
-  },
-  {
-   "name": "UAE Food & Traditions",
-   "questions": [
     {
      "level": 1,
      "q": "Which fruit is a staple of Emirati hospitality?",
@@ -885,17 +1030,6 @@
     },
     {
      "level": 3,
-     "q": "Which braided embroidery, made with silver thread, is an Emirati craft?",
-     "a": "Al Talli",
-     "wrong": [
-      "Al Sadu",
-      "Khoos",
-      "Arish"
-     ],
-     "why": "It decorates the collars and cuffs of clothing."
-    },
-    {
-     "level": 3,
      "q": "What is 'arish'?",
      "a": "Palm-frond building material for summer houses",
      "wrong": [
@@ -904,12 +1038,7 @@
       "A camel saddle"
      ],
      "why": "Arish houses let the breeze through."
-    }
-   ]
-  },
-  {
-   "name": "UAE General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is the UAE's currency?",
@@ -945,17 +1074,6 @@
     },
     {
      "level": 1,
-     "q": "What is the UAE's national bird?",
-     "a": "Falcon",
-     "wrong": [
-      "Eagle",
-      "Flamingo",
-      "Houbara bustard"
-     ],
-     "why": "It appears on the coat of arms."
-    },
-    {
-     "level": 1,
      "q": "Which airline is based in Abu Dhabi?",
      "a": "Etihad Airways",
      "wrong": [
@@ -964,83 +1082,6 @@
       "Air Arabia"
      ],
      "why": "Emirates is based in Dubai."
-    },
-    {
-     "level": 1,
-     "q": "Which huge white mosque in Abu Dhabi is named after the founding President?",
-     "a": "Sheikh Zayed Grand Mosque",
-     "wrong": [
-      "Jumeirah Mosque",
-      "King Faisal Mosque",
-      "Al Farooq Mosque"
-     ],
-     "why": "It has one of the world's largest carpets."
-    },
-    {
-     "level": 1,
-     "q": "What was the name of the UAE's mission that reached Mars orbit in 2021?",
-     "a": "Hope",
-     "wrong": [
-      "Falcon",
-      "Zayed",
-      "Unity"
-     ],
-     "why": "It was the first Arab mission to Mars."
-    },
-    {
-     "level": 2,
-     "q": "What is the UAE's national animal?",
-     "a": "Arabian oryx",
-     "wrong": [
-      "Camel",
-      "Gazelle",
-      "Arabian leopard"
-     ],
-     "why": "It was saved from extinction in the wild."
-    },
-    {
-     "level": 2,
-     "q": "What is the UAE's national anthem called?",
-     "a": "Ishy Bilady",
-     "wrong": [
-      "Mawtini",
-      "Nashid as-Salam",
-      "Qassaman"
-     ],
-     "why": "It means 'Long live my country'."
-    },
-    {
-     "level": 2,
-     "q": "In 2022 the UAE moved its weekend to which days?",
-     "a": "Saturday and Sunday",
-     "wrong": [
-      "Thursday and Friday",
-      "Friday and Saturday",
-      "Sunday and Monday"
-     ],
-     "why": "Friday became a half working day."
-    },
-    {
-     "level": 2,
-     "q": "Which city has a driverless metro, opened in 2009?",
-     "a": "Dubai",
-     "wrong": [
-      "Abu Dhabi",
-      "Sharjah",
-      "Al Ain"
-     ],
-     "why": "It was the first metro in the Gulf."
-    },
-    {
-     "level": 2,
-     "q": "Which planned city in Abu Dhabi focuses on clean energy?",
-     "a": "Masdar City",
-     "wrong": [
-      "Expo City",
-      "Khalifa City",
-      "Dubai Silicon Oasis"
-     ],
-     "why": "IRENA has its headquarters there."
     },
     {
      "level": 2,
@@ -1074,17 +1115,6 @@
       "541 m"
      ],
      "why": "It has over 160 floors."
-    },
-    {
-     "level": 3,
-     "q": "What is the Expo 2020 site called today?",
-     "a": "Expo City Dubai",
-     "wrong": [
-      "Dubai South Park",
-      "Al Wasl City",
-      "Future District"
-     ],
-     "why": "Its Al Wasl dome still hosts events."
     }
    ]
   }

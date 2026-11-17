@@ -3,7 +3,8 @@
  "country": "NZ",
  "topics": [
   {
-   "name": "New Zealand History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -84,17 +85,6 @@
     },
     {
      "level": 2,
-     "q": "Who became Prime Minister at 37 in 2017 and led the Covid-19 response?",
-     "a": "Jacinda Ardern",
-     "wrong": [
-      "Helen Clark",
-      "Jenny Shipley",
-      "Judith Collins"
-     ],
-     "why": "She resigned in 2023."
-    },
-    {
-     "level": 2,
      "q": "Who was New Zealand's first woman Prime Minister, in 1997?",
      "a": "Jenny Shipley",
      "wrong": [
@@ -150,17 +140,6 @@
     },
     {
      "level": 3,
-     "q": "Which town was rebuilt in Art Deco style after the 1931 earthquake?",
-     "a": "Napier",
-     "wrong": [
-      "Nelson",
-      "Whanganui",
-      "Gisborne"
-     ],
-     "why": "It is famous for its Art Deco architecture."
-    },
-    {
-     "level": 3,
      "q": "Who was the first Governor of New Zealand?",
      "a": "William Hobson",
      "wrong": [
@@ -180,11 +159,23 @@
       "William Pickering"
      ],
      "why": "He appears on the $100 note."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient reptile, only found in New Zealand, is a 'living fossil'?",
+     "a": "Tuatara",
+     "wrong": [
+      "Gecko",
+      "Skink",
+      "Iguana"
+     ],
+     "why": "Its ancestors lived alongside dinosaurs."
     }
    ]
   },
   {
-   "name": "New Zealand Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -361,11 +352,23 @@
       "Hooker Glacier"
      ],
      "why": "Its Māori name is Kā Roimata o Hine Hukatere."
+    },
+    {
+     "level": 2,
+     "q": "Which giant kauri tree in Waipoua Forest is called 'Lord of the Forest'?",
+     "a": "Tāne Mahuta",
+     "wrong": [
+      "Te Matua Ngahere",
+      "Rangitoto",
+      "Tūmatauenga"
+     ],
+     "why": "It may be about 2,000 years old."
     }
    ]
   },
   {
-   "name": "New Zealand Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -542,11 +545,95 @@
       "1983"
      ],
      "why": "They co-hosted it with Australia."
+    },
+    {
+     "level": 1,
+     "q": "Which plant is a national symbol, worn by sports teams?",
+     "a": "Silver fern",
+     "wrong": [
+      "Pōhutukawa",
+      "Kōwhai",
+      "Kauri"
+     ],
+     "why": "It is silver underneath."
+    },
+    {
+     "level": 3,
+     "q": "Which New Zealander invented the bungy jump as a commercial sport?",
+     "a": "A. J. Hackett",
+     "wrong": [
+      "Edmund Hillary",
+      "Bill Hamilton",
+      "Richard Pearse"
+     ],
+     "why": "He opened the Kawarau Bridge jump in 1988."
     }
    ]
   },
   {
-   "name": "New Zealand Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which singer from Auckland had a hit with 'Royals'?",
+     "a": "Lorde",
+     "wrong": [
+      "Kimbra",
+      "Benee",
+      "Gin Wigmore"
+     ],
+     "why": "She was 16 when it came out."
+    },
+    {
+     "level": 1,
+     "q": "Which band recorded 'Don't Dream It's Over'?",
+     "a": "Crowded House",
+     "wrong": [
+      "Split Enz",
+      "Six60",
+      "The Exponents"
+     ],
+     "why": "Neil Finn wrote it."
+    },
+    {
+     "level": 2,
+     "q": "Which opera singer from Gisborne sang at Charles and Diana's wedding?",
+     "a": "Kiri Te Kanawa",
+     "wrong": [
+      "Hayley Westenra",
+      "Malvina Major",
+      "Kiri Mills"
+     ],
+     "why": "She sang 'Let the Bright Seraphim'."
+    },
+    {
+     "level": 2,
+     "q": "Which band led by the Finn brothers recorded 'I Got You'?",
+     "a": "Split Enz",
+     "wrong": [
+      "Crowded House",
+      "Th' Dudes",
+      "Dragon"
+     ],
+     "why": "It was a hit in 1980."
+    },
+    {
+     "level": 1,
+     "q": "Which song is New Zealand's national anthem alongside 'God Save the King'?",
+     "a": "God Defend New Zealand",
+     "wrong": [
+      "Advance Australia Fair",
+      "Pōkarekare Ana",
+      "Now Is the Hour"
+     ],
+     "why": "It is usually sung in Māori first, then English."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
    "questions": [
     {
      "level": 1,
@@ -558,17 +645,6 @@
       "Star Wars"
      ],
      "why": "Matamata became the Shire's Hobbiton."
-    },
-    {
-     "level": 1,
-     "q": "Which singer from Auckland had a hit with 'Royals'?",
-     "a": "Lorde",
-     "wrong": [
-      "Kimbra",
-      "Benee",
-      "Gin Wigmore"
-     ],
-     "why": "She was 16 when it came out."
     },
     {
      "level": 1,
@@ -591,17 +667,6 @@
       "Bret McKenzie and Rhys Darby"
      ],
      "why": "Bret later won an Oscar for a Muppets song."
-    },
-    {
-     "level": 1,
-     "q": "Which band recorded 'Don't Dream It's Over'?",
-     "a": "Crowded House",
-     "wrong": [
-      "Split Enz",
-      "Six60",
-      "The Exponents"
-     ],
-     "why": "Neil Finn wrote it."
     },
     {
      "level": 1,
@@ -649,15 +714,21 @@
     },
     {
      "level": 2,
-     "q": "Which opera singer from Gisborne sang at Charles and Diana's wedding?",
-     "a": "Kiri Te Kanawa",
+     "q": "Which Taika Waititi film follows a boy and his foster uncle in the bush?",
+     "a": "Hunt for the Wilderpeople",
      "wrong": [
-      "Hayley Westenra",
-      "Malvina Major",
-      "Kiri Mills"
+      "Boy",
+      "Eagle vs Shark",
+      "What We Do in the Shadows"
      ],
-     "why": "She sang 'Let the Bright Seraphim'."
-    },
+     "why": "Sam Neill co-starred."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
      "level": 2,
      "q": "Who wrote the Booker Prize-winning 'The Luminaries'?",
@@ -668,28 +739,6 @@
       "Witi Ihimaera"
      ],
      "why": "She was 28, the youngest winner."
-    },
-    {
-     "level": 2,
-     "q": "Which band led by the Finn brothers recorded 'I Got You'?",
-     "a": "Split Enz",
-     "wrong": [
-      "Crowded House",
-      "Th' Dudes",
-      "Dragon"
-     ],
-     "why": "It was a hit in 1980."
-    },
-    {
-     "level": 2,
-     "q": "Which Taika Waititi film follows a boy and his foster uncle in the bush?",
-     "a": "Hunt for the Wilderpeople",
-     "wrong": [
-      "Boy",
-      "Eagle vs Shark",
-      "What We Do in the Shadows"
-     ],
-     "why": "Sam Neill co-starred."
     },
     {
      "level": 3,
@@ -727,7 +776,114 @@
    ]
   },
   {
-   "name": "New Zealand Food & Traditions",
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who became Prime Minister at 37 in 2017 and led the Covid-19 response?",
+     "a": "Jacinda Ardern",
+     "wrong": [
+      "Helen Clark",
+      "Jenny Shipley",
+      "Judith Collins"
+     ],
+     "why": "She resigned in 2023."
+    },
+    {
+     "level": 1,
+     "q": "What is Wellington's distinctive parliament building nicknamed?",
+     "a": "The Beehive",
+     "wrong": [
+      "The Hive",
+      "The Dome",
+      "The Shell"
+     ],
+     "why": "It houses the executive wing."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which town was rebuilt in Art Deco style after the 1931 earthquake?",
+     "a": "Napier",
+     "wrong": [
+      "Nelson",
+      "Whanganui",
+      "Gisborne"
+     ],
+     "why": "It is famous for its Art Deco architecture."
+    },
+    {
+     "level": 3,
+     "q": "Which carved pendant is a Māori symbol of good luck?",
+     "a": "Hei-tiki",
+     "wrong": [
+      "Koru",
+      "Manaia",
+      "Pikorua"
+     ],
+     "why": "It is often carved from pounamu (greenstone)."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which flightless bird is New Zealand's national symbol?",
+     "a": "Kiwi",
+     "wrong": [
+      "Kākāpō",
+      "Moa",
+      "Takahē"
+     ],
+     "why": "New Zealanders are nicknamed Kiwis."
+    },
+    {
+     "level": 2,
+     "q": "Which giant flightless bird was hunted to extinction?",
+     "a": "Moa",
+     "wrong": [
+      "Kiwi",
+      "Kākāpō",
+      "Takahē"
+     ],
+     "why": "Some stood about 3.6 m tall."
+    },
+    {
+     "level": 2,
+     "q": "Which flightless parrot is critically endangered?",
+     "a": "Kākāpō",
+     "wrong": [
+      "Kea",
+      "Kākā",
+      "Tūī"
+     ],
+     "why": "It is the world's heaviest parrot."
+    },
+    {
+     "level": 2,
+     "q": "Which cheeky alpine parrot is known for stealing from cars?",
+     "a": "Kea",
+     "wrong": [
+      "Kākāpō",
+      "Kākā",
+      "Kererū"
+     ],
+     "why": "It is the world's only alpine parrot."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
    "questions": [
     {
      "level": 1,
@@ -874,17 +1030,6 @@
     },
     {
      "level": 3,
-     "q": "Which carved pendant is a Māori symbol of good luck?",
-     "a": "Hei-tiki",
-     "wrong": [
-      "Koru",
-      "Manaia",
-      "Pikorua"
-     ],
-     "why": "It is often carved from pounamu (greenstone)."
-    },
-    {
-     "level": 3,
      "q": "Which treasured stone, found on the West Coast, is called pounamu?",
      "a": "Greenstone (jade)",
      "wrong": [
@@ -904,22 +1049,6 @@
       "A burial cave"
      ],
      "why": "Its carved meeting house is the wharenui."
-    }
-   ]
-  },
-  {
-   "name": "New Zealand General Knowledge",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which flightless bird is New Zealand's national symbol?",
-     "a": "Kiwi",
-     "wrong": [
-      "Kākāpō",
-      "Moa",
-      "Takahē"
-     ],
-     "why": "New Zealanders are nicknamed Kiwis."
     },
     {
      "level": 1,
@@ -931,28 +1060,6 @@
       "Pacific franc"
      ],
      "why": "It is nicknamed the kiwi."
-    },
-    {
-     "level": 1,
-     "q": "Which song is New Zealand's national anthem alongside 'God Save the King'?",
-     "a": "God Defend New Zealand",
-     "wrong": [
-      "Advance Australia Fair",
-      "Pōkarekare Ana",
-      "Now Is the Hour"
-     ],
-     "why": "It is usually sung in Māori first, then English."
-    },
-    {
-     "level": 1,
-     "q": "Which plant is a national symbol, worn by sports teams?",
-     "a": "Silver fern",
-     "wrong": [
-      "Pōhutukawa",
-      "Kōwhai",
-      "Kauri"
-     ],
-     "why": "It is silver underneath."
     },
     {
      "level": 1,
@@ -977,28 +1084,6 @@
      "why": "It is 328 m tall."
     },
     {
-     "level": 1,
-     "q": "What is Wellington's distinctive parliament building nicknamed?",
-     "a": "The Beehive",
-     "wrong": [
-      "The Hive",
-      "The Dome",
-      "The Shell"
-     ],
-     "why": "It houses the executive wing."
-    },
-    {
-     "level": 2,
-     "q": "Which giant flightless bird was hunted to extinction?",
-     "a": "Moa",
-     "wrong": [
-      "Kiwi",
-      "Kākāpō",
-      "Takahē"
-     ],
-     "why": "Some stood about 3.6 m tall."
-    },
-    {
      "level": 2,
      "q": "Which tree is called the 'New Zealand Christmas tree'?",
      "a": "Pōhutukawa",
@@ -1008,61 +1093,6 @@
       "Kōwhai"
      ],
      "why": "It flowers bright red in December."
-    },
-    {
-     "level": 2,
-     "q": "Which giant kauri tree in Waipoua Forest is called 'Lord of the Forest'?",
-     "a": "Tāne Mahuta",
-     "wrong": [
-      "Te Matua Ngahere",
-      "Rangitoto",
-      "Tūmatauenga"
-     ],
-     "why": "It may be about 2,000 years old."
-    },
-    {
-     "level": 2,
-     "q": "Which flightless parrot is critically endangered?",
-     "a": "Kākāpō",
-     "wrong": [
-      "Kea",
-      "Kākā",
-      "Tūī"
-     ],
-     "why": "It is the world's heaviest parrot."
-    },
-    {
-     "level": 2,
-     "q": "Which cheeky alpine parrot is known for stealing from cars?",
-     "a": "Kea",
-     "wrong": [
-      "Kākāpō",
-      "Kākā",
-      "Kererū"
-     ],
-     "why": "It is the world's only alpine parrot."
-    },
-    {
-     "level": 2,
-     "q": "Which ancient reptile, only found in New Zealand, is a 'living fossil'?",
-     "a": "Tuatara",
-     "wrong": [
-      "Gecko",
-      "Skink",
-      "Iguana"
-     ],
-     "why": "Its ancestors lived alongside dinosaurs."
-    },
-    {
-     "level": 3,
-     "q": "Which New Zealander invented the bungy jump as a commercial sport?",
-     "a": "A. J. Hackett",
-     "wrong": [
-      "Edmund Hillary",
-      "Bill Hamilton",
-      "Richard Pearse"
-     ],
-     "why": "He opened the Kawarau Bridge jump in 1988."
     },
     {
      "level": 3,

@@ -3,19 +3,9 @@
  "country": "EE",
  "topics": [
   {
-   "name": "Estonia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Estonia?",
-     "a": "Tallinn",
-     "wrong": [
-      "Tartu",
-      "Pärnu",
-      "Narva"
-     ],
-     "why": "Its old town is a UNESCO site."
-    },
     {
      "level": 1,
      "q": "In which year did Estonia first declare independence?",
@@ -61,39 +51,6 @@
      "why": "About two million people held hands."
     },
     {
-     "level": 1,
-     "q": "In which year did Estonia join the EU and NATO?",
-     "a": "2004",
-     "wrong": [
-      "1995",
-      "2007",
-      "2011"
-     ],
-     "why": "It adopted the euro in 2011."
-    },
-    {
-     "level": 1,
-     "q": "Which video-calling software was developed by Estonian engineers?",
-     "a": "Skype",
-     "wrong": [
-      "Zoom",
-      "WhatsApp",
-      "Viber"
-     ],
-     "why": "It launched in 2003."
-    },
-    {
-     "level": 2,
-     "q": "Which medieval trading league did Tallinn belong to?",
-     "a": "Hanseatic League",
-     "wrong": [
-      "Kalmar Union",
-      "Teutonic Order",
-      "Kievan Rus'"
-     ],
-     "why": "It was then called Reval."
-    },
-    {
      "level": 2,
      "q": "Which crusading order conquered Estonia in the 1200s?",
      "a": "Livonian Brothers of the Sword",
@@ -114,17 +71,6 @@
       "Russia"
      ],
      "why": "The 'good old Swedish times'."
-    },
-    {
-     "level": 2,
-     "q": "What is the national epic poem of Estonia?",
-     "a": "Kalevipoeg",
-     "wrong": [
-      "Kalevala",
-      "Lāčplēsis",
-      "Edda"
-     ],
-     "why": "Friedrich Reinhold Kreutzwald compiled it."
     },
     {
      "level": 2,
@@ -150,17 +96,6 @@
     },
     {
      "level": 3,
-     "q": "Which university town is Estonia's intellectual centre?",
-     "a": "Tartu",
-     "wrong": [
-      "Tallinn",
-      "Narva",
-      "Viljandi"
-     ],
-     "why": "Its university was founded in 1632."
-    },
-    {
-     "level": 3,
      "q": "Who became Estonia's first woman Prime Minister, in 2021?",
      "a": "Kaja Kallas",
      "wrong": [
@@ -173,18 +108,30 @@
    ]
   },
   {
-   "name": "Estonia: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "What is Estonia's currency?",
-     "a": "Euro",
+     "q": "What is the capital of Estonia?",
+     "a": "Tallinn",
      "wrong": [
-      "Kroon",
-      "Lats",
-      "Litas"
+      "Tartu",
+      "Pärnu",
+      "Narva"
      ],
-     "why": "It replaced the kroon in 2011."
+     "why": "Its old town is a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which university town is Estonia's intellectual centre?",
+     "a": "Tartu",
+     "wrong": [
+      "Tallinn",
+      "Narva",
+      "Viljandi"
+     ],
+     "why": "Its university was founded in 1632."
     },
     {
      "level": 1,
@@ -199,6 +146,95 @@
     },
     {
      "level": 1,
+     "q": "Which is Estonia's largest island?",
+     "a": "Saaremaa",
+     "wrong": [
+      "Hiiumaa",
+      "Muhu",
+      "Vormsi"
+     ],
+     "why": "It has a meteorite crater."
+    },
+    {
+     "level": 2,
+     "q": "What is the meteorite crater on Saaremaa called?",
+     "a": "Kaali crater",
+     "wrong": [
+      "Barringer crater",
+      "Chicxulub",
+      "Lonar crater"
+     ],
+     "why": "It is about 110 m wide."
+    },
+    {
+     "level": 2,
+     "q": "Which national park near Tallinn is Estonia's oldest?",
+     "a": "Lahemaa",
+     "wrong": [
+      "Soomaa",
+      "Matsalu",
+      "Karula"
+     ],
+     "why": "Its name means 'land of bays'."
+    },
+    {
+     "level": 3,
+     "q": "Which region floods so much it is called the 'fifth season'?",
+     "a": "Soomaa",
+     "wrong": [
+      "Lahemaa",
+      "Matsalu",
+      "Vilsandi"
+     ],
+     "why": "Locals travel by dugout canoe."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which medieval trading league did Tallinn belong to?",
+     "a": "Hanseatic League",
+     "wrong": [
+      "Kalmar Union",
+      "Teutonic Order",
+      "Kievan Rus'"
+     ],
+     "why": "It was then called Reval."
+    },
+    {
+     "level": 3,
+     "q": "Which Estonian skier won Olympic golds in 2002 and 2006?",
+     "a": "Andrus Veerpalu",
+     "wrong": [
+      "Kristina Šmigun-Vähi",
+      "Jaak Mae",
+      "Ott Tänak"
+     ],
+     "why": "He won the 15 km classical twice."
+    },
+    {
+     "level": 3,
+     "q": "Which Estonian rally driver won the 2019 world title?",
+     "a": "Ott Tänak",
+     "wrong": [
+      "Markko Märtin",
+      "Sébastien Loeb",
+      "Kalle Rovanperä"
+     ],
+     "why": "He drove a Toyota."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
      "q": "Which song festival draws tens of thousands of singers?",
      "a": "Estonian Song Festival",
      "wrong": [
@@ -209,15 +245,77 @@
      "why": "It is held every five years."
     },
     {
-     "level": 1,
-     "q": "Which is Estonia's largest island?",
-     "a": "Saaremaa",
+     "level": 2,
+     "q": "Which Estonian composer is famous for 'Spiegel im Spiegel'?",
+     "a": "Arvo Pärt",
      "wrong": [
-      "Hiiumaa",
-      "Muhu",
-      "Vormsi"
+      "Veljo Tormis",
+      "Eduard Tubin",
+      "Erkki-Sven Tüür"
      ],
-     "why": "It has a meteorite crater."
+     "why": "He is one of the most performed living composers."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "What is the national epic poem of Estonia?",
+     "a": "Kalevipoeg",
+     "wrong": [
+      "Kalevala",
+      "Lāčplēsis",
+      "Edda"
+     ],
+     "why": "Friedrich Reinhold Kreutzwald compiled it."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Estonia join the EU and NATO?",
+     "a": "2004",
+     "wrong": [
+      "1995",
+      "2007",
+      "2011"
+     ],
+     "why": "It adopted the euro in 2011."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which video-calling software was developed by Estonian engineers?",
+     "a": "Skype",
+     "wrong": [
+      "Zoom",
+      "WhatsApp",
+      "Viber"
+     ],
+     "why": "It launched in 2003."
+    },
+    {
+     "level": 1,
+     "q": "What is Estonia's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Kroon",
+      "Lats",
+      "Litas"
+     ],
+     "why": "It replaced the kroon in 2011."
     },
     {
      "level": 1,
@@ -254,17 +352,6 @@
     },
     {
      "level": 2,
-     "q": "Which Estonian composer is famous for 'Spiegel im Spiegel'?",
-     "a": "Arvo Pärt",
-     "wrong": [
-      "Veljo Tormis",
-      "Eduard Tubin",
-      "Erkki-Sven Tüür"
-     ],
-     "why": "He is one of the most performed living composers."
-    },
-    {
-     "level": 2,
      "q": "Which programme lets foreigners become 'e-residents'?",
      "a": "e-Residency",
      "wrong": [
@@ -284,61 +371,6 @@
       "St Nicholas' Church"
      ],
      "why": "It may have been in the 1500s."
-    },
-    {
-     "level": 2,
-     "q": "What is the meteorite crater on Saaremaa called?",
-     "a": "Kaali crater",
-     "wrong": [
-      "Barringer crater",
-      "Chicxulub",
-      "Lonar crater"
-     ],
-     "why": "It is about 110 m wide."
-    },
-    {
-     "level": 2,
-     "q": "Which national park near Tallinn is Estonia's oldest?",
-     "a": "Lahemaa",
-     "wrong": [
-      "Soomaa",
-      "Matsalu",
-      "Karula"
-     ],
-     "why": "Its name means 'land of bays'."
-    },
-    {
-     "level": 3,
-     "q": "Which region floods so much it is called the 'fifth season'?",
-     "a": "Soomaa",
-     "wrong": [
-      "Lahemaa",
-      "Matsalu",
-      "Vilsandi"
-     ],
-     "why": "Locals travel by dugout canoe."
-    },
-    {
-     "level": 3,
-     "q": "Which Estonian skier won Olympic golds in 2002 and 2006?",
-     "a": "Andrus Veerpalu",
-     "wrong": [
-      "Kristina Šmigun-Vähi",
-      "Jaak Mae",
-      "Ott Tänak"
-     ],
-     "why": "He won the 15 km classical twice."
-    },
-    {
-     "level": 3,
-     "q": "Which Estonian rally driver won the 2019 world title?",
-     "a": "Ott Tänak",
-     "wrong": [
-      "Markko Märtin",
-      "Sébastien Loeb",
-      "Kalle Rovanperä"
-     ],
-     "why": "He drove a Toyota."
     }
    ]
   }

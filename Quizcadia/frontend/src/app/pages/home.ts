@@ -2,14 +2,12 @@ import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@a
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { catchError, debounceTime, distinctUntilChanged, filter, forkJoin, map, of, startWith, switchMap } from 'rxjs';
+import { catchError, debounceTime, distinctUntilChanged, forkJoin, map, of, shareReplay, startWith, switchMap } from 'rxjs';
 import { CatalogApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { GameCard } from '../core/models';
-import { countryName, flag } from '../core/countries';
-import { CountrySet, homeScope, WORLD } from '../core/region';
-import { World } from '../core/world';
+import { WORLD, withinCatalog } from '../core/region';
 import { GameCardView } from '../ui/game-card';
 import { BlurText } from '../motion/blur-text';
 import { DailyBanner } from '../ui/daily-banner';
@@ -61,14 +59,14 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
           <span class="intl-icon" aria-hidden="true">🌍</span>
           <span>
             <strong>International</strong>
-            <span class="muted"> · {{ local() ? 'Quizzes from ' + otherCountries() + ' other countries and world trivia' : 'Quizzes about ' + otherCountries() + ' countries' }}</span>
+            <span class="muted"> · Every topic with questions from all over the world, mixed together</span>
           </span>
           <span class="pz-go">Explore →</span>
         </a>
       }
 
       <div class="row section-head">
-        <h2>{{ query() ? 'Results for “' + query() + '”' : local() ? 'Games for ' + localLabel() : 'World trivia' }}</h2>
+        <h2>{{ query() ? 'Results for “' + query() + '”' : 'All games' }}</h2>
         <div class="spacer"></div>
         <div class="pill-tabs" role="group" aria-label="Game type">
           @for (f of filters; track f.id) {
@@ -112,7 +110,6 @@ export class Home {
   protected readonly Math = Math;
   protected readonly auth = inject(AuthService);
   private readonly catalog = inject(CatalogApi);
-  private readonly world = inject(World);
 
   protected readonly query = signal('');
   protected readonly filter = signal<Filter>('ALL');
@@ -122,38 +119,23 @@ export class Home {
     { id: 'MULTI', label: 'Multiplayer' },
   ];
 
-  /** Countries with their own question set; null while loading. */
-  private readonly sets = toSignal<CountrySet[] | null, null>(this.catalog.countries(), { initialValue: null });
-
-  /** The player's own country when it has a question set, otherwise WORLD (world trivia); null while loading. */
-  private readonly scope = computed(() => {
-    const sets = this.sets();
-    return sets === null ? null : homeScope(this.world.country(), sets);
-  });
-
-  /** The player's country, when the home page shows its games. */
-  protected readonly local = computed(() => {
-    const s = this.scope();
-    return s && s !== WORLD ? s : null;
-  });
-
-  protected readonly localLabel = computed(() => {
-    const c = this.local();
-    return c ? `${countryName(c)} ${flag(c)}` : '';
-  });
-
-  protected readonly otherCountries = computed(() => (this.sets() ?? []).filter((s) => s.country !== this.local() && s.games > 0).length);
+  /**
+   * The games every player sees: the shared topics, the same for everyone. Each player's country quietly shapes
+   * which questions a game asks (mostly their own country's), never which games are listed.
+   */
+  private readonly listed$ = forkJoin([this.catalog.games(WORLD), this.catalog.multiplayerGames(WORLD)]).pipe(
+    map(([s, m]) => [...s, ...m]),
+    shareReplay(1),
+  );
+  private readonly listed = toSignal(this.listed$.pipe(catchError(() => of([] as GameCard[]))), { initialValue: [] as GameCard[] });
 
   protected readonly state = toSignal(
-    toObservable(computed(() => ({ q: this.query().trim(), scope: this.scope() }))).pipe(
-      filter((v) => v.scope !== null || v.q !== ''),
+    toObservable(this.query).pipe(
+      map((q) => q.trim()),
       debounceTime(250),
-      distinctUntilChanged((a, b) => a.q === b.q && (a.q !== '' || a.scope === b.scope)),
-      switchMap(({ q, scope }) =>
-        (q
-          ? this.catalog.search(q)
-          : forkJoin([this.catalog.games(scope!), this.catalog.multiplayerGames(scope!)]).pipe(map(([s, m]) => [...s, ...m]))
-        ).pipe(
+      distinctUntilChanged(),
+      switchMap((q) =>
+        (q ? forkJoin([this.catalog.search(q), this.listed$]).pipe(map(([found, all]) => withinCatalog(found, all))) : this.listed$).pipe(
           map((games) => ({ loading: false, error: null as string | null, games })),
           catchError((e) => of({ loading: false, error: errorMessage(e), games: [] as GameCard[] })),
           startWith({ loading: true, error: null, games: [] as GameCard[] }),
@@ -168,14 +150,8 @@ export class Home {
     { initialValue: [] as GameCard[] },
   );
 
-  /** Recommendations from the games this page shows (a player with their own country set sees just those). */
-  protected readonly picked = computed(() => {
-    if (!this.local()) {
-      return this.recommended();
-    }
-    const ids = new Set(this.state().games.map((g) => g.gameId));
-    return this.recommended().filter((g) => ids.has(g.gameId));
-  });
+  /** Recommendations from the listed games only. */
+  protected readonly picked = computed(() => withinCatalog(this.recommended(), this.listed()));
 
   protected readonly gameCount = computed(() => this.visible().length);
 

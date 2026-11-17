@@ -3,19 +3,9 @@
  "country": "CV",
  "topics": [
   {
-   "name": "Cabo Verde: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Cabo Verde?",
-     "a": "Praia",
-     "wrong": [
-      "Mindelo",
-      "Espargos",
-      "Assomada"
-     ],
-     "why": "It is on Santiago island."
-    },
     {
      "level": 1,
      "q": "From which country did Cabo Verde gain independence in 1975?",
@@ -26,61 +16,6 @@
       "United Kingdom"
      ],
      "why": "It was uninhabited before the Portuguese arrived."
-    },
-    {
-     "level": 1,
-     "q": "In which ocean is Cabo Verde?",
-     "a": "Atlantic Ocean",
-     "wrong": [
-      "Indian Ocean",
-      "Mediterranean Sea",
-      "Pacific Ocean"
-     ],
-     "why": "It lies off Senegal."
-    },
-    {
-     "level": 1,
-     "q": "What is the currency of Cabo Verde?",
-     "a": "Cape Verdean escudo",
-     "wrong": [
-      "Euro",
-      "CFA franc",
-      "Real"
-     ],
-     "why": "It is pegged to the euro."
-    },
-    {
-     "level": 1,
-     "q": "How many main islands make up Cabo Verde?",
-     "a": "Ten",
-     "wrong": [
-      "Five",
-      "Fifteen",
-      "Twenty"
-     ],
-     "why": "Nine are lived on."
-    },
-    {
-     "level": 1,
-     "q": "Which singer from Mindelo was called the 'Barefoot Diva'?",
-     "a": "Cesária Évora",
-     "wrong": [
-      "Mayra Andrade",
-      "Lura",
-      "Sara Tavares"
-     ],
-     "why": "She won a Grammy in 2004."
-    },
-    {
-     "level": 1,
-     "q": "What is the official language of Cabo Verde?",
-     "a": "Portuguese",
-     "wrong": [
-      "Spanish",
-      "French",
-      "English"
-     ],
-     "why": "Cape Verdean Creole is spoken daily."
     },
     {
      "level": 2,
@@ -95,17 +30,6 @@
     },
     {
      "level": 2,
-     "q": "Which leader fought for both Guinea-Bissau and Cabo Verde?",
-     "a": "Amílcar Cabral",
-     "wrong": [
-      "Aristides Pereira",
-      "Pedro Pires",
-      "José Maria Neves"
-     ],
-     "why": "He was killed in 1973."
-    },
-    {
-     "level": 2,
      "q": "Who was the first President of Cabo Verde?",
      "a": "Aristides Pereira",
      "wrong": [
@@ -114,39 +38,6 @@
       "Jorge Carlos Fonseca"
      ],
      "why": "He served until 1991."
-    },
-    {
-     "level": 2,
-     "q": "Which former President won the Mo Ibrahim Prize in 2011?",
-     "a": "Pedro Pires",
-     "wrong": [
-      "Aristides Pereira",
-      "Jorge Carlos Fonseca",
-      "José Maria Neves"
-     ],
-     "why": "It rewards good leadership."
-    },
-    {
-     "level": 2,
-     "q": "Which dry wind from the Sahara brings dust to Cabo Verde?",
-     "a": "Harmattan",
-     "wrong": [
-      "Sirocco",
-      "Mistral",
-      "Monsoon"
-     ],
-     "why": "It blows in winter."
-    },
-    {
-     "level": 3,
-     "q": "Which prison camp on Santiago held political prisoners under Portugal?",
-     "a": "Tarrafal",
-     "wrong": [
-      "Robben Island",
-      "Peniche",
-      "Camp Boiro"
-     ],
-     "why": "It is now a museum."
     },
     {
      "level": 3,
@@ -158,23 +49,46 @@
       "2000"
      ],
      "why": "The ruling party lost peacefully."
-    },
-    {
-     "level": 3,
-     "q": "Who became President of Cabo Verde in 2021?",
-     "a": "José Maria Neves",
-     "wrong": [
-      "Jorge Carlos Fonseca",
-      "Pedro Pires",
-      "Ulisses Correia e Silva"
-     ],
-     "why": "He had been Prime Minister."
     }
    ]
   },
   {
-   "name": "Cabo Verde: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Cabo Verde?",
+     "a": "Praia",
+     "wrong": [
+      "Mindelo",
+      "Espargos",
+      "Assomada"
+     ],
+     "why": "It is on Santiago island."
+    },
+    {
+     "level": 1,
+     "q": "In which ocean is Cabo Verde?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Mediterranean Sea",
+      "Pacific Ocean"
+     ],
+     "why": "It lies off Senegal."
+    },
+    {
+     "level": 1,
+     "q": "How many main islands make up Cabo Verde?",
+     "a": "Ten",
+     "wrong": [
+      "Five",
+      "Fifteen",
+      "Twenty"
+     ],
+     "why": "Nine are lived on."
+    },
     {
      "level": 1,
      "q": "Which island is the active volcano Pico do Fogo on?",
@@ -199,39 +113,6 @@
     },
     {
      "level": 1,
-     "q": "Which slow sad music style did Cesária Évora sing?",
-     "a": "Morna",
-     "wrong": [
-      "Fado",
-      "Coladeira",
-      "Funaná"
-     ],
-     "why": "It is on UNESCO's list."
-    },
-    {
-     "level": 1,
-     "q": "Which slow-cooked corn and bean stew is the national dish?",
-     "a": "Cachupa",
-     "wrong": [
-      "Feijoada",
-      "Moamba",
-      "Caldeirada"
-     ],
-     "why": "It is eaten for breakfast fried."
-    },
-    {
-     "level": 1,
-     "q": "Which port city hosts a big music festival on São Vicente?",
-     "a": "Mindelo",
-     "wrong": [
-      "Praia",
-      "Espargos",
-      "Porto Novo"
-     ],
-     "why": "Its Baía das Gatas festival is famous."
-    },
-    {
-     "level": 1,
      "q": "Which island is the greenest and best for hiking?",
      "a": "Santo Antão",
      "wrong": [
@@ -240,17 +121,6 @@
       "Maio"
      ],
      "why": "It has steep valleys."
-    },
-    {
-     "level": 1,
-     "q": "Which island is known for its sand dunes and turtles?",
-     "a": "Boa Vista",
-     "wrong": [
-      "Fogo",
-      "Brava",
-      "São Nicolau"
-     ],
-     "why": "Loggerhead turtles nest there."
     },
     {
      "level": 2,
@@ -262,28 +132,6 @@
       "Salinas Grandes"
      ],
      "why": "It is inside an old volcano."
-    },
-    {
-     "level": 2,
-     "q": "Which fast accordion dance music is from Santiago?",
-     "a": "Funaná",
-     "wrong": [
-      "Morna",
-      "Batuque",
-      "Kizomba"
-     ],
-     "why": "It was banned under Portuguese rule."
-    },
-    {
-     "level": 2,
-     "q": "Which Cape Verdean drink is made from sugar cane?",
-     "a": "Grogue",
-     "wrong": [
-      "Ponche",
-      "Cachaça",
-      "Caipirinha"
-     ],
-     "why": "It is like rum."
     },
     {
      "level": 2,
@@ -339,6 +187,184 @@
       "Maio"
      ],
      "why": "Mindelo lies below it."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which singer from Mindelo was called the 'Barefoot Diva'?",
+     "a": "Cesária Évora",
+     "wrong": [
+      "Mayra Andrade",
+      "Lura",
+      "Sara Tavares"
+     ],
+     "why": "She won a Grammy in 2004."
+    },
+    {
+     "level": 1,
+     "q": "Which slow sad music style did Cesária Évora sing?",
+     "a": "Morna",
+     "wrong": [
+      "Fado",
+      "Coladeira",
+      "Funaná"
+     ],
+     "why": "It is on UNESCO's list."
+    },
+    {
+     "level": 1,
+     "q": "Which port city hosts a big music festival on São Vicente?",
+     "a": "Mindelo",
+     "wrong": [
+      "Praia",
+      "Espargos",
+      "Porto Novo"
+     ],
+     "why": "Its Baía das Gatas festival is famous."
+    },
+    {
+     "level": 2,
+     "q": "Which fast accordion dance music is from Santiago?",
+     "a": "Funaná",
+     "wrong": [
+      "Morna",
+      "Batuque",
+      "Kizomba"
+     ],
+     "why": "It was banned under Portuguese rule."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which former President won the Mo Ibrahim Prize in 2011?",
+     "a": "Pedro Pires",
+     "wrong": [
+      "Aristides Pereira",
+      "Jorge Carlos Fonseca",
+      "José Maria Neves"
+     ],
+     "why": "It rewards good leadership."
+    },
+    {
+     "level": 3,
+     "q": "Who became President of Cabo Verde in 2021?",
+     "a": "José Maria Neves",
+     "wrong": [
+      "Jorge Carlos Fonseca",
+      "Pedro Pires",
+      "Ulisses Correia e Silva"
+     ],
+     "why": "He had been Prime Minister."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which island is known for its sand dunes and turtles?",
+     "a": "Boa Vista",
+     "wrong": [
+      "Fogo",
+      "Brava",
+      "São Nicolau"
+     ],
+     "why": "Loggerhead turtles nest there."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the currency of Cabo Verde?",
+     "a": "Cape Verdean escudo",
+     "wrong": [
+      "Euro",
+      "CFA franc",
+      "Real"
+     ],
+     "why": "It is pegged to the euro."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of Cabo Verde?",
+     "a": "Portuguese",
+     "wrong": [
+      "Spanish",
+      "French",
+      "English"
+     ],
+     "why": "Cape Verdean Creole is spoken daily."
+    },
+    {
+     "level": 2,
+     "q": "Which leader fought for both Guinea-Bissau and Cabo Verde?",
+     "a": "Amílcar Cabral",
+     "wrong": [
+      "Aristides Pereira",
+      "Pedro Pires",
+      "José Maria Neves"
+     ],
+     "why": "He was killed in 1973."
+    },
+    {
+     "level": 2,
+     "q": "Which dry wind from the Sahara brings dust to Cabo Verde?",
+     "a": "Harmattan",
+     "wrong": [
+      "Sirocco",
+      "Mistral",
+      "Monsoon"
+     ],
+     "why": "It blows in winter."
+    },
+    {
+     "level": 3,
+     "q": "Which prison camp on Santiago held political prisoners under Portugal?",
+     "a": "Tarrafal",
+     "wrong": [
+      "Robben Island",
+      "Peniche",
+      "Camp Boiro"
+     ],
+     "why": "It is now a museum."
+    },
+    {
+     "level": 1,
+     "q": "Which slow-cooked corn and bean stew is the national dish?",
+     "a": "Cachupa",
+     "wrong": [
+      "Feijoada",
+      "Moamba",
+      "Caldeirada"
+     ],
+     "why": "It is eaten for breakfast fried."
+    },
+    {
+     "level": 2,
+     "q": "Which Cape Verdean drink is made from sugar cane?",
+     "a": "Grogue",
+     "wrong": [
+      "Ponche",
+      "Cachaça",
+      "Caipirinha"
+     ],
+     "why": "It is like rum."
     }
    ]
   }

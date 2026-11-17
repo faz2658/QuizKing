@@ -3,19 +3,9 @@
  "country": "BJ",
  "topics": [
   {
-   "name": "Benin: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the official capital of Benin?",
-     "a": "Porto-Novo",
-     "wrong": [
-      "Cotonou",
-      "Parakou",
-      "Abomey"
-     ],
-     "why": "Cotonou is the seat of government."
-    },
     {
      "level": 1,
      "q": "What was Benin called before 1975?",
@@ -50,39 +40,6 @@
      "why": "The film 'The Woman King' is about them."
     },
     {
-     "level": 1,
-     "q": "What is Benin's currency?",
-     "a": "West African CFA franc",
-     "wrong": [
-      "Naira",
-      "Cedi",
-      "Leone"
-     ],
-     "why": "It is shared by eight countries."
-    },
-    {
-     "level": 1,
-     "q": "Which religion is said to have begun in Benin?",
-     "a": "Vodun (Voodoo)",
-     "wrong": [
-      "Candomblé",
-      "Santería",
-      "Rastafari"
-     ],
-     "why": "10 January is a Vodun holiday."
-    },
-    {
-     "level": 1,
-     "q": "Which cotton-rich country lies between Togo and Nigeria?",
-     "a": "Benin",
-     "wrong": [
-      "Ghana",
-      "Burkina Faso",
-      "Niger"
-     ],
-     "why": "Cotton is its main export."
-    },
-    {
      "level": 2,
      "q": "Who led Benin's Marxist government from 1972 to 1991?",
      "a": "Mathieu Kérékou",
@@ -114,28 +71,6 @@
       "Allada"
      ],
      "why": "They are a UNESCO site."
-    },
-    {
-     "level": 2,
-     "q": "Which coastal town has the 'Door of No Return' memorial?",
-     "a": "Ouidah",
-     "wrong": [
-      "Grand-Popo",
-      "Cotonou",
-      "Porto-Novo"
-     ],
-     "why": "It was a major slave port."
-    },
-    {
-     "level": 2,
-     "q": "Who has been President of Benin since 2016?",
-     "a": "Patrice Talon",
-     "wrong": [
-      "Thomas Boni Yayi",
-      "Lionel Zinsou",
-      "Nicéphore Soglo"
-     ],
-     "why": "He made his money in cotton."
     },
     {
      "level": 3,
@@ -173,8 +108,42 @@
    ]
   },
   {
-   "name": "Benin: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the official capital of Benin?",
+     "a": "Porto-Novo",
+     "wrong": [
+      "Cotonou",
+      "Parakou",
+      "Abomey"
+     ],
+     "why": "Cotonou is the seat of government."
+    },
+    {
+     "level": 1,
+     "q": "Which cotton-rich country lies between Togo and Nigeria?",
+     "a": "Benin",
+     "wrong": [
+      "Ghana",
+      "Burkina Faso",
+      "Niger"
+     ],
+     "why": "Cotton is its main export."
+    },
+    {
+     "level": 2,
+     "q": "Which coastal town has the 'Door of No Return' memorial?",
+     "a": "Ouidah",
+     "wrong": [
+      "Grand-Popo",
+      "Cotonou",
+      "Porto-Novo"
+     ],
+     "why": "It was a major slave port."
+    },
     {
      "level": 1,
      "q": "Which lake village is built on stilts near Cotonou?",
@@ -185,17 +154,6 @@
       "Makoko"
      ],
      "why": "It is called the 'Venice of Africa'."
-    },
-    {
-     "level": 1,
-     "q": "Which Beninese singer has won several Grammys?",
-     "a": "Angélique Kidjo",
-     "wrong": [
-      "Oumou Sangaré",
-      "Miriam Makeba",
-      "Youssou N'Dour"
-     ],
-     "why": "She is called 'Africa's premier diva'."
     },
     {
      "level": 1,
@@ -218,6 +176,107 @@
       "Serengeti"
      ],
      "why": "It is one of West Africa's best wildlife parks."
+    },
+    {
+     "level": 3,
+     "q": "Which national park with lions does Benin share with Niger and Burkina Faso?",
+     "a": "W National Park",
+     "wrong": [
+      "Pendjari",
+      "Arly",
+      "Comoé"
+     ],
+     "why": "It is part of the W-Arly-Pendjari complex."
+    },
+    {
+     "level": 3,
+     "q": "Which Afro-Brazilian families returned from Brazil to the coast?",
+     "a": "Agudás",
+     "wrong": [
+      "Saros",
+      "Krios",
+      "Tabom"
+     ],
+     "why": "They brought Brazilian architecture."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Beninese singer has won several Grammys?",
+     "a": "Angélique Kidjo",
+     "wrong": [
+      "Oumou Sangaré",
+      "Miriam Makeba",
+      "Youssou N'Dour"
+     ],
+     "why": "She is called 'Africa's premier diva'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Beninese actor starred in 'Gladiator' and 'Amistad'?",
+     "a": "Djimon Hounsou",
+     "wrong": [
+      "Idris Elba",
+      "Chiwetel Ejiofor",
+      "Isaach de Bankolé"
+     ],
+     "why": "He was nominated for two Oscars."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who has been President of Benin since 2016?",
+     "a": "Patrice Talon",
+     "wrong": [
+      "Thomas Boni Yayi",
+      "Lionel Zinsou",
+      "Nicéphore Soglo"
+     ],
+     "why": "He made his money in cotton."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Benin's currency?",
+     "a": "West African CFA franc",
+     "wrong": [
+      "Naira",
+      "Cedi",
+      "Leone"
+     ],
+     "why": "It is shared by eight countries."
+    },
+    {
+     "level": 1,
+     "q": "Which religion is said to have begun in Benin?",
+     "a": "Vodun (Voodoo)",
+     "wrong": [
+      "Candomblé",
+      "Santería",
+      "Rastafari"
+     ],
+     "why": "10 January is a Vodun holiday."
     },
     {
      "level": 1,
@@ -297,17 +356,6 @@
      "why": "Pythons are sacred there."
     },
     {
-     "level": 2,
-     "q": "Which Beninese actor starred in 'Gladiator' and 'Amistad'?",
-     "a": "Djimon Hounsou",
-     "wrong": [
-      "Idris Elba",
-      "Chiwetel Ejiofor",
-      "Isaach de Bankolé"
-     ],
-     "why": "He was nominated for two Oscars."
-    },
-    {
      "level": 3,
      "q": "Which mud-walled 'tata' houses are built by the Somba people?",
      "a": "Tata somba",
@@ -317,28 +365,6 @@
       "Dogon houses"
      ],
      "why": "They look like small fortresses."
-    },
-    {
-     "level": 3,
-     "q": "Which national park with lions does Benin share with Niger and Burkina Faso?",
-     "a": "W National Park",
-     "wrong": [
-      "Pendjari",
-      "Arly",
-      "Comoé"
-     ],
-     "why": "It is part of the W-Arly-Pendjari complex."
-    },
-    {
-     "level": 3,
-     "q": "Which Afro-Brazilian families returned from Brazil to the coast?",
-     "a": "Agudás",
-     "wrong": [
-      "Saros",
-      "Krios",
-      "Tabom"
-     ],
-     "why": "They brought Brazilian architecture."
     }
    ]
   }

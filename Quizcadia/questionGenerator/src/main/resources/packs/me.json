@@ -3,7 +3,8 @@
  "country": "ME",
  "topics": [
   {
-   "name": "Montenegro: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -18,17 +19,6 @@
     },
     {
      "level": 1,
-     "q": "What is the capital of Montenegro?",
-     "a": "Podgorica",
-     "wrong": [
-      "Cetinje",
-      "Budva",
-      "Kotor"
-     ],
-     "why": "It was called Titograd in Yugoslav times."
-    },
-    {
-     "level": 1,
      "q": "Which old royal capital is home to the Cetinje Monastery?",
      "a": "Cetinje",
      "wrong": [
@@ -37,50 +27,6 @@
       "Bar"
      ],
      "why": "It is still the 'old royal capital'."
-    },
-    {
-     "level": 1,
-     "q": "Which currency does Montenegro use, without being in the eurozone?",
-     "a": "Euro",
-     "wrong": [
-      "Dinar",
-      "Lek",
-      "Kuna"
-     ],
-     "why": "It adopted the Deutsche Mark first."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Montenegro join NATO?",
-     "a": "2017",
-     "wrong": [
-      "2006",
-      "2009",
-      "2020"
-     ],
-     "why": "It was the 29th member."
-    },
-    {
-     "level": 1,
-     "q": "Which prince-bishop wrote the epic 'The Mountain Wreath'?",
-     "a": "Petar II Petrović-Njegoš",
-     "wrong": [
-      "Nikola I",
-      "Danilo I",
-      "Petar I"
-     ],
-     "why": "His mausoleum is on Mount Lovćen."
-    },
-    {
-     "level": 1,
-     "q": "What does 'Montenegro' mean?",
-     "a": "Black Mountain",
-     "wrong": [
-      "White Mountain",
-      "Blue Sea",
-      "Old Castle"
-     ],
-     "why": "In Montenegrin it is Crna Gora."
     },
     {
      "level": 2,
@@ -127,17 +73,6 @@
      "why": "Its early rulers were prince-bishops."
     },
     {
-     "level": 2,
-     "q": "Which old Venetian town in a fjord-like bay is a UNESCO site?",
-     "a": "Kotor",
-     "wrong": [
-      "Budva",
-      "Herceg Novi",
-      "Ulcinj"
-     ],
-     "why": "Its walls climb up the mountain."
-    },
-    {
      "level": 3,
      "q": "Which medieval state was a forerunner of Montenegro?",
      "a": "Duklja (Doclea)",
@@ -169,12 +104,46 @@
       "Doclea"
      ],
      "why": "It was named after Josip Broz Tito."
+    },
+    {
+     "level": 2,
+     "q": "Which bridge over the Tara canyon was blown up in the Second World War and rebuilt?",
+     "a": "Đurđevića Tara Bridge",
+     "wrong": [
+      "Mostar Bridge",
+      "Višegrad Bridge",
+      "Sutjeska Bridge"
+     ],
+     "why": "It was 150 m above the river."
     }
    ]
   },
   {
-   "name": "Montenegro: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Montenegro?",
+     "a": "Podgorica",
+     "wrong": [
+      "Cetinje",
+      "Budva",
+      "Kotor"
+     ],
+     "why": "It was called Titograd in Yugoslav times."
+    },
+    {
+     "level": 2,
+     "q": "Which old Venetian town in a fjord-like bay is a UNESCO site?",
+     "a": "Kotor",
+     "wrong": [
+      "Budva",
+      "Herceg Novi",
+      "Ulcinj"
+     ],
+     "why": "Its walls climb up the mountain."
+    },
     {
      "level": 1,
      "q": "Which bay is Montenegro's most famous landscape?",
@@ -276,28 +245,6 @@
     },
     {
      "level": 2,
-     "q": "Which sport has Montenegro excelled in with Olympic medals?",
-     "a": "Water polo and handball",
-     "wrong": [
-      "Ice hockey",
-      "Rugby",
-      "Cricket"
-     ],
-     "why": "Its women's handball team won silver in 2012."
-    },
-    {
-     "level": 2,
-     "q": "Which bridge over the Tara canyon was blown up in the Second World War and rebuilt?",
-     "a": "Đurđevića Tara Bridge",
-     "wrong": [
-      "Mostar Bridge",
-      "Višegrad Bridge",
-      "Sutjeska Bridge"
-     ],
-     "why": "It was 150 m above the river."
-    },
-    {
-     "level": 2,
      "q": "Which town on the bay is famous for Baroque palaces of sea captains?",
      "a": "Perast",
      "wrong": [
@@ -339,6 +286,85 @@
       "Maganik"
      ],
      "why": "It is in the Prokletije range."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which sport has Montenegro excelled in with Olympic medals?",
+     "a": "Water polo and handball",
+     "wrong": [
+      "Ice hockey",
+      "Rugby",
+      "Cricket"
+     ],
+     "why": "Its women's handball team won silver in 2012."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which prince-bishop wrote the epic 'The Mountain Wreath'?",
+     "a": "Petar II Petrović-Njegoš",
+     "wrong": [
+      "Nikola I",
+      "Danilo I",
+      "Petar I"
+     ],
+     "why": "His mausoleum is on Mount Lovćen."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Montenegro join NATO?",
+     "a": "2017",
+     "wrong": [
+      "2006",
+      "2009",
+      "2020"
+     ],
+     "why": "It was the 29th member."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which currency does Montenegro use, without being in the eurozone?",
+     "a": "Euro",
+     "wrong": [
+      "Dinar",
+      "Lek",
+      "Kuna"
+     ],
+     "why": "It adopted the Deutsche Mark first."
+    },
+    {
+     "level": 1,
+     "q": "What does 'Montenegro' mean?",
+     "a": "Black Mountain",
+     "wrong": [
+      "White Mountain",
+      "Blue Sea",
+      "Old Castle"
+     ],
+     "why": "In Montenegrin it is Crna Gora."
     }
    ]
   }

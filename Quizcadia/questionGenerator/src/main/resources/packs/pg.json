@@ -3,19 +3,9 @@
  "country": "PG",
  "topics": [
   {
-   "name": "Papua New Guinea: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Papua New Guinea?",
-     "a": "Port Moresby",
-     "wrong": [
-      "Lae",
-      "Mount Hagen",
-      "Madang"
-     ],
-     "why": "It is on the south coast."
-    },
     {
      "level": 1,
      "q": "From which country did Papua New Guinea gain independence in 1975?",
@@ -28,61 +18,6 @@
      "why": "It is in the Commonwealth."
     },
     {
-     "level": 1,
-     "q": "About how many languages are spoken in Papua New Guinea?",
-     "a": "Over 800",
-     "wrong": [
-      "About 50",
-      "About 200",
-      "About 2,000"
-     ],
-     "why": "It has more languages than any other country."
-    },
-    {
-     "level": 1,
-     "q": "What is Papua New Guinea's currency?",
-     "a": "Kina",
-     "wrong": [
-      "Tala",
-      "Vatu",
-      "Pa'anga"
-     ],
-     "why": "It is named after a shell once used as money."
-    },
-    {
-     "level": 1,
-     "q": "Which island does Papua New Guinea share with Indonesia?",
-     "a": "New Guinea",
-     "wrong": [
-      "Borneo",
-      "Timor",
-      "Sumatra"
-     ],
-     "why": "It is the world's second-largest island."
-    },
-    {
-     "level": 1,
-     "q": "Which bird appears on Papua New Guinea's flag?",
-     "a": "Bird of paradise",
-     "wrong": [
-      "Eagle",
-      "Parrot",
-      "Cassowary"
-     ],
-     "why": "It is the national bird."
-    },
-    {
-     "level": 1,
-     "q": "Which creole language is widely spoken in Papua New Guinea?",
-     "a": "Tok Pisin",
-     "wrong": [
-      "Bislama",
-      "Pijin",
-      "Fijian"
-     ],
-     "why": "It is one of the official languages."
-    },
-    {
      "level": 2,
      "q": "Who was Papua New Guinea's first Prime Minister?",
      "a": "Michael Somare",
@@ -92,17 +27,6 @@
       "Julius Chan"
      ],
      "why": "He is called the father of the nation."
-    },
-    {
-     "level": 2,
-     "q": "Who has been Prime Minister of Papua New Guinea since 2019?",
-     "a": "James Marape",
-     "wrong": [
-      "Peter O'Neill",
-      "Michael Somare",
-      "Julius Chan"
-     ],
-     "why": "He is from the Highlands."
     },
     {
      "level": 2,
@@ -125,17 +49,6 @@
       "Bataan Trail"
      ],
      "why": "It crosses the Owen Stanley Range."
-    },
-    {
-     "level": 2,
-     "q": "Which Highlands valley was unknown to outsiders until the 1930s?",
-     "a": "Wahgi Valley",
-     "wrong": [
-      "Sepik Valley",
-      "Markham Valley",
-      "Baliem Valley"
-     ],
-     "why": "About a million people lived there."
     },
     {
      "level": 3,
@@ -161,6 +74,56 @@
     },
     {
      "level": 3,
+     "q": "Which volcano destroyed Rabaul in 1994?",
+     "a": "Tavurvur",
+     "wrong": [
+      "Mount Lamington",
+      "Manam",
+      "Ulawun"
+     ],
+     "why": "Rabaul's town was mostly buried in ash."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Papua New Guinea?",
+     "a": "Port Moresby",
+     "wrong": [
+      "Lae",
+      "Mount Hagen",
+      "Madang"
+     ],
+     "why": "It is on the south coast."
+    },
+    {
+     "level": 1,
+     "q": "Which island does Papua New Guinea share with Indonesia?",
+     "a": "New Guinea",
+     "wrong": [
+      "Borneo",
+      "Timor",
+      "Sumatra"
+     ],
+     "why": "It is the world's second-largest island."
+    },
+    {
+     "level": 2,
+     "q": "Which Highlands valley was unknown to outsiders until the 1930s?",
+     "a": "Wahgi Valley",
+     "wrong": [
+      "Sepik Valley",
+      "Markham Valley",
+      "Baliem Valley"
+     ],
+     "why": "About a million people lived there."
+    },
+    {
+     "level": 3,
      "q": "Which island became a detention centre for Australian asylum seekers?",
      "a": "Manus Island",
      "wrong": [
@@ -169,12 +132,169 @@
       "New Ireland"
      ],
      "why": "It closed in 2017."
+    },
+    {
+     "level": 1,
+     "q": "Which mud-masked people come from the Asaro Valley?",
+     "a": "Asaro Mudmen",
+     "wrong": [
+      "Huli Wigmen",
+      "Chimbu Skeletons",
+      "Sepik Crocodile Men"
+     ],
+     "why": "Legend says they scared off enemies."
+    },
+    {
+     "level": 2,
+     "q": "Which Highlands peak is Papua New Guinea's highest?",
+     "a": "Mount Wilhelm",
+     "wrong": [
+      "Mount Giluwe",
+      "Mount Hagen",
+      "Puncak Jaya"
+     ],
+     "why": "It is about 4,510 m high."
     }
    ]
   },
   {
-   "name": "Papua New Guinea: Places & Culture",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which sport is the national sport of Papua New Guinea?",
+     "a": "Rugby league",
+     "wrong": [
+      "Football",
+      "Cricket",
+      "Basketball"
+     ],
+     "why": "The State of Origin series is hugely popular."
+    },
+    {
+     "level": 2,
+     "q": "Which islands have a famous yam festival and cricket game?",
+     "a": "Trobriand Islands",
+     "wrong": [
+      "Admiralty Islands",
+      "Bismarck Islands",
+      "Louisiade Islands"
+     ],
+     "why": "Their cricket has dancing and chanting."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which canoe and drum festival is held in Alotau?",
+     "a": "Kenu and Kundu Festival",
+     "wrong": [
+      "National Mask Festival",
+      "Goroka Show",
+      "Hiri Moale"
+     ],
+     "why": "It is held each November."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who has been Prime Minister of Papua New Guinea since 2019?",
+     "a": "James Marape",
+     "wrong": [
+      "Peter O'Neill",
+      "Michael Somare",
+      "Julius Chan"
+     ],
+     "why": "He is from the Highlands."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which bird appears on Papua New Guinea's flag?",
+     "a": "Bird of paradise",
+     "wrong": [
+      "Eagle",
+      "Parrot",
+      "Cassowary"
+     ],
+     "why": "It is the national bird."
+    },
+    {
+     "level": 1,
+     "q": "Which large flightless bird lives in Papua New Guinea's forests?",
+     "a": "Cassowary",
+     "wrong": [
+      "Emu",
+      "Ostrich",
+      "Kiwi"
+     ],
+     "why": "It can be dangerous."
+    },
+    {
+     "level": 2,
+     "q": "Which crocodile-scarification ritual is a Sepik tradition?",
+     "a": "Crocodile skin cutting",
+     "wrong": [
+      "Tattooing",
+      "Fire walking",
+      "Bungee jumping"
+     ],
+     "why": "It marks boys becoming men."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "About how many languages are spoken in Papua New Guinea?",
+     "a": "Over 800",
+     "wrong": [
+      "About 50",
+      "About 200",
+      "About 2,000"
+     ],
+     "why": "It has more languages than any other country."
+    },
+    {
+     "level": 1,
+     "q": "What is Papua New Guinea's currency?",
+     "a": "Kina",
+     "wrong": [
+      "Tala",
+      "Vatu",
+      "Pa'anga"
+     ],
+     "why": "It is named after a shell once used as money."
+    },
+    {
+     "level": 1,
+     "q": "Which creole language is widely spoken in Papua New Guinea?",
+     "a": "Tok Pisin",
+     "wrong": [
+      "Bislama",
+      "Pijin",
+      "Fijian"
+     ],
+     "why": "It is one of the official languages."
+    },
     {
      "level": 1,
      "q": "Which festival in the Highlands brings together many tribes?",
@@ -199,28 +319,6 @@
     },
     {
      "level": 1,
-     "q": "Which large flightless bird lives in Papua New Guinea's forests?",
-     "a": "Cassowary",
-     "wrong": [
-      "Emu",
-      "Ostrich",
-      "Kiwi"
-     ],
-     "why": "It can be dangerous."
-    },
-    {
-     "level": 1,
-     "q": "Which sport is the national sport of Papua New Guinea?",
-     "a": "Rugby league",
-     "wrong": [
-      "Football",
-      "Cricket",
-      "Basketball"
-     ],
-     "why": "The State of Origin series is hugely popular."
-    },
-    {
-     "level": 1,
      "q": "Which earth-oven feast is cooked with hot stones?",
      "a": "Mumu",
      "wrong": [
@@ -242,17 +340,6 @@
      "why": "They perform at festivals."
     },
     {
-     "level": 1,
-     "q": "Which mud-masked people come from the Asaro Valley?",
-     "a": "Asaro Mudmen",
-     "wrong": [
-      "Huli Wigmen",
-      "Chimbu Skeletons",
-      "Sepik Crocodile Men"
-     ],
-     "why": "Legend says they scared off enemies."
-    },
-    {
      "level": 2,
      "q": "Which people make wigs from their own hair?",
      "a": "Huli Wigmen",
@@ -262,28 +349,6 @@
       "Trobriand Islanders"
      ],
      "why": "They live in Hela Province."
-    },
-    {
-     "level": 2,
-     "q": "Which Highlands peak is Papua New Guinea's highest?",
-     "a": "Mount Wilhelm",
-     "wrong": [
-      "Mount Giluwe",
-      "Mount Hagen",
-      "Puncak Jaya"
-     ],
-     "why": "It is about 4,510 m high."
-    },
-    {
-     "level": 2,
-     "q": "Which islands have a famous yam festival and cricket game?",
-     "a": "Trobriand Islands",
-     "wrong": [
-      "Admiralty Islands",
-      "Bismarck Islands",
-      "Louisiade Islands"
-     ],
-     "why": "Their cricket has dancing and chanting."
     },
     {
      "level": 2,
@@ -297,28 +362,6 @@
      "why": "It is grown on small farms."
     },
     {
-     "level": 2,
-     "q": "Which crocodile-scarification ritual is a Sepik tradition?",
-     "a": "Crocodile skin cutting",
-     "wrong": [
-      "Tattooing",
-      "Fire walking",
-      "Bungee jumping"
-     ],
-     "why": "It marks boys becoming men."
-    },
-    {
-     "level": 3,
-     "q": "Which volcano destroyed Rabaul in 1994?",
-     "a": "Tavurvur",
-     "wrong": [
-      "Mount Lamington",
-      "Manam",
-      "Ulawun"
-     ],
-     "why": "Rabaul's town was mostly buried in ash."
-    },
-    {
      "level": 3,
      "q": "Which shell money is still used in parts of New Britain?",
      "a": "Tabu",
@@ -328,17 +371,6 @@
       "Cowrie"
      ],
      "why": "It is made from small shells."
-    },
-    {
-     "level": 3,
-     "q": "Which canoe and drum festival is held in Alotau?",
-     "a": "Kenu and Kundu Festival",
-     "wrong": [
-      "National Mask Festival",
-      "Goroka Show",
-      "Hiri Moale"
-     ],
-     "why": "It is held each November."
     }
    ]
   }

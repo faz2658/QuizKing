@@ -3,7 +3,8 @@
  "country": "OM",
  "topics": [
   {
-   "name": "Oman: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -40,17 +41,6 @@
     },
     {
      "level": 1,
-     "q": "Which legendary sailor is said to have come from the Omani port of Sohar?",
-     "a": "Sinbad",
-     "wrong": [
-      "Ali Baba",
-      "Aladdin",
-      "Ibn Battuta"
-     ],
-     "why": "Sohar was a great medieval port."
-    },
-    {
-     "level": 1,
      "q": "What did ancient Oman export that was worth more than gold?",
      "a": "Frankincense",
      "wrong": [
@@ -84,17 +74,6 @@
     },
     {
      "level": 2,
-     "q": "Which forts guard Muscat's old harbour?",
-     "a": "Al Jalali and Al Mirani",
-     "wrong": [
-      "Nizwa and Bahla",
-      "Jabrin and Rustaq",
-      "Sohar and Sur"
-     ],
-     "why": "The Portuguese built them in the 1580s."
-    },
-    {
-     "level": 2,
      "q": "Which 1960s–70s rebellion took place in the Dhofar region?",
      "a": "Dhofar Rebellion",
      "wrong": [
@@ -103,17 +82,6 @@
       "Imamate Revolt"
      ],
      "why": "It ended in 1976."
-    },
-    {
-     "level": 2,
-     "q": "Which UNESCO-listed oasis fort is one of Oman's oldest?",
-     "a": "Bahla Fort",
-     "wrong": [
-      "Nizwa Fort",
-      "Jabrin Castle",
-      "Rustaq Fort"
-     ],
-     "why": "It dates back to the 1200s."
     },
     {
      "level": 2,
@@ -147,6 +115,45 @@
       "Qalhat"
      ],
      "why": "It is part of the Land of Frankincense UNESCO site."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which legendary sailor is said to have come from the Omani port of Sohar?",
+     "a": "Sinbad",
+     "wrong": [
+      "Ali Baba",
+      "Aladdin",
+      "Ibn Battuta"
+     ],
+     "why": "Sohar was a great medieval port."
+    },
+    {
+     "level": 2,
+     "q": "Which forts guard Muscat's old harbour?",
+     "a": "Al Jalali and Al Mirani",
+     "wrong": [
+      "Nizwa and Bahla",
+      "Jabrin and Rustaq",
+      "Sohar and Sur"
+     ],
+     "why": "The Portuguese built them in the 1580s."
+    },
+    {
+     "level": 2,
+     "q": "Which UNESCO-listed oasis fort is one of Oman's oldest?",
+     "a": "Bahla Fort",
+     "wrong": [
+      "Nizwa Fort",
+      "Jabrin Castle",
+      "Rustaq Fort"
+     ],
+     "why": "It dates back to the 1200s."
     },
     {
      "level": 3,
@@ -169,12 +176,7 @@
       "Burial mounds of Dilmun"
      ],
      "why": "They date to the third millennium BC."
-    }
-   ]
-  },
-  {
-   "name": "Oman: Places & Culture",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is the capital of Oman?",
@@ -185,17 +187,6 @@
       "Nizwa"
      ],
      "why": "It sits between mountains and the sea."
-    },
-    {
-     "level": 1,
-     "q": "What is Oman's currency?",
-     "a": "Omani rial",
-     "wrong": [
-      "Dirham",
-      "Dinar",
-      "Saudi riyal"
-     ],
-     "why": "It is one of the most valuable currencies."
     },
     {
      "level": 1,
@@ -218,28 +209,6 @@
       "Ibri"
      ],
      "why": "The hills turn green each summer."
-    },
-    {
-     "level": 1,
-     "q": "Which huge mosque in Muscat has one of the world's largest carpets?",
-     "a": "Sultan Qaboos Grand Mosque",
-     "wrong": [
-      "Sheikh Zayed Grand Mosque",
-      "Al Zulfa Mosque",
-      "Said bin Taimur Mosque"
-     ],
-     "why": "It opened in 2001."
-    },
-    {
-     "level": 1,
-     "q": "Which curved dagger is Oman's national symbol?",
-     "a": "Khanjar",
-     "wrong": [
-      "Kris",
-      "Kukri",
-      "Tanto"
-     ],
-     "why": "It appears on the flag."
     },
     {
      "level": 1,
@@ -287,17 +256,6 @@
     },
     {
      "level": 2,
-     "q": "Which slow-cooked meat dish is made for Eid in an underground oven?",
-     "a": "Shuwa",
-     "wrong": [
-      "Harees",
-      "Majboos",
-      "Mishkak"
-     ],
-     "why": "It cooks for up to two days."
-    },
-    {
-     "level": 2,
      "q": "Which old capital is famous for its fort and Friday goat market?",
      "a": "Nizwa",
      "wrong": [
@@ -328,7 +286,13 @@
       "Khasab"
      ],
      "why": "Thousands nest there each year."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
     {
      "level": 3,
      "q": "Which Omani opera house opened in Muscat in 2011?",
@@ -339,6 +303,56 @@
       "Cairo Opera House"
      ],
      "why": "It was the first in the Gulf."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Oman's currency?",
+     "a": "Omani rial",
+     "wrong": [
+      "Dirham",
+      "Dinar",
+      "Saudi riyal"
+     ],
+     "why": "It is one of the most valuable currencies."
+    },
+    {
+     "level": 1,
+     "q": "Which huge mosque in Muscat has one of the world's largest carpets?",
+     "a": "Sultan Qaboos Grand Mosque",
+     "wrong": [
+      "Sheikh Zayed Grand Mosque",
+      "Al Zulfa Mosque",
+      "Said bin Taimur Mosque"
+     ],
+     "why": "It opened in 2001."
+    },
+    {
+     "level": 1,
+     "q": "Which curved dagger is Oman's national symbol?",
+     "a": "Khanjar",
+     "wrong": [
+      "Kris",
+      "Kukri",
+      "Tanto"
+     ],
+     "why": "It appears on the flag."
+    },
+    {
+     "level": 2,
+     "q": "Which slow-cooked meat dish is made for Eid in an underground oven?",
+     "a": "Shuwa",
+     "wrong": [
+      "Harees",
+      "Majboos",
+      "Mishkak"
+     ],
+     "why": "It cooks for up to two days."
     }
    ]
   }

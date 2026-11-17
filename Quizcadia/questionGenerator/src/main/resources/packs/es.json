@@ -3,7 +3,8 @@
  "country": "ES",
  "topics": [
   {
-   "name": "Spain History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -51,17 +52,6 @@
     },
     {
      "level": 1,
-     "q": "Which king led Spain's return to democracy after Franco?",
-     "a": "Juan Carlos I",
-     "wrong": [
-      "Felipe VI",
-      "Alfonso XIII",
-      "Carlos IV"
-     ],
-     "why": "He gave up the throne in 2014."
-    },
-    {
-     "level": 1,
      "q": "Which Muslim-built palace overlooks Granada?",
      "a": "The Alhambra",
      "wrong": [
@@ -70,17 +60,6 @@
       "El Escorial"
      ],
      "why": "It was the Nasrid sultans' palace."
-    },
-    {
-     "level": 1,
-     "q": "Who has been King of Spain since 2014?",
-     "a": "Felipe VI",
-     "wrong": [
-      "Juan Carlos I",
-      "Carlos III",
-      "Alfonso XIV"
-     ],
-     "why": "His wife is Queen Letizia."
     },
     {
      "level": 2,
@@ -128,17 +107,6 @@
     },
     {
      "level": 2,
-     "q": "In which year did Spain adopt its current democratic constitution?",
-     "a": "1978",
-     "wrong": [
-      "1975",
-      "1981",
-      "1931"
-     ],
-     "why": "6 December is Constitution Day."
-    },
-    {
-     "level": 2,
      "q": "Which war of 1898 cost Spain Cuba and the Philippines?",
      "a": "Spanish–American War",
      "wrong": [
@@ -161,17 +129,6 @@
     },
     {
      "level": 3,
-     "q": "Which Basque town was bombed in 1937 and painted by Picasso?",
-     "a": "Guernica",
-     "wrong": [
-      "Bilbao",
-      "Durango",
-      "Pamplona"
-     ],
-     "why": "German planes bombed it during the Civil War."
-    },
-    {
-     "level": 3,
      "q": "Which war against Napoleon is called the War of Independence in Spain?",
      "a": "Peninsular War",
      "wrong": [
@@ -180,11 +137,56 @@
       "Carlist War"
      ],
      "why": "It lasted from 1808 to 1814."
+    },
+    {
+     "level": 1,
+     "q": "Which Spanish fashion chain was founded in Galicia?",
+     "a": "Zara",
+     "wrong": [
+      "Mango",
+      "Desigual",
+      "Bershka"
+     ],
+     "why": "Amancio Ortega founded it in 1975."
+    },
+    {
+     "level": 2,
+     "q": "Which royal monastery-palace near Madrid did Philip II build?",
+     "a": "El Escorial",
+     "wrong": [
+      "Royal Palace of Madrid",
+      "Alcázar of Toledo",
+      "La Granja"
+     ],
+     "why": "Many Spanish kings are buried there."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient Roman lighthouse in A Coruña is still in use?",
+     "a": "Tower of Hercules",
+     "wrong": [
+      "Torre del Oro",
+      "La Giralda",
+      "Torre de Collserola"
+     ],
+     "why": "It is the oldest working Roman lighthouse."
+    },
+    {
+     "level": 3,
+     "q": "Which Spanish scientist won the 1906 Nobel Prize for studying neurons?",
+     "a": "Santiago Ramón y Cajal",
+     "wrong": [
+      "Severo Ochoa",
+      "Gregorio Marañón",
+      "Isaac Peral"
+     ],
+     "why": "He is called the father of neuroscience."
     }
    ]
   },
   {
-   "name": "Spain Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -361,11 +363,45 @@
       "9"
      ],
      "why": "It also has two autonomous cities."
+    },
+    {
+     "level": 2,
+     "q": "Which Basque-speaking region has a language unrelated to any other in Europe?",
+     "a": "Basque Country",
+     "wrong": [
+      "Galicia",
+      "Catalonia",
+      "Navarre"
+     ],
+     "why": "Basque is called Euskara."
+    },
+    {
+     "level": 3,
+     "q": "Which Roman aqueduct still stands in a Castilian city?",
+     "a": "Aqueduct of Segovia",
+     "wrong": [
+      "Aqueduct of Tarragona",
+      "Aqueduct of Mérida",
+      "Pont du Gard"
+     ],
+     "why": "It was built without mortar."
+    },
+    {
+     "level": 3,
+     "q": "Which British territory lies at Spain's southern tip?",
+     "a": "Gibraltar",
+     "wrong": [
+      "Ceuta",
+      "Andorra",
+      "Menorca"
+     ],
+     "why": "Spain gave it up in 1713."
     }
    ]
   },
   {
-   "name": "Spain Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,63 +582,9 @@
    ]
   },
   {
-   "name": "Spain Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which Spanish novel features Don Quixote and Sancho Panza?",
-     "a": "Don Quixote",
-     "wrong": [
-      "La Celestina",
-      "Lazarillo de Tormes",
-      "Fortunata y Jacinta"
-     ],
-     "why": "Miguel de Cervantes wrote it."
-    },
-    {
-     "level": 1,
-     "q": "Which Spanish painter co-founded Cubism?",
-     "a": "Pablo Picasso",
-     "wrong": [
-      "Salvador Dalí",
-      "Joan Miró",
-      "Diego Velázquez"
-     ],
-     "why": "He was born in Málaga."
-    },
-    {
-     "level": 1,
-     "q": "Which surrealist painted melting clocks?",
-     "a": "Salvador Dalí",
-     "wrong": [
-      "Joan Miró",
-      "Pablo Picasso",
-      "Francisco Goya"
-     ],
-     "why": "The painting is 'The Persistence of Memory'."
-    },
-    {
-     "level": 1,
-     "q": "Which Netflix series follows a gang robbing the Royal Mint of Spain?",
-     "a": "Money Heist",
-     "wrong": [
-      "Elite",
-      "Narcos",
-      "Cable Girls"
-     ],
-     "why": "Its Spanish title is 'La casa de papel'."
-    },
-    {
-     "level": 1,
-     "q": "Which Spanish actor starred in 'Puss in Boots' and 'The Mask of Zorro'?",
-     "a": "Antonio Banderas",
-     "wrong": [
-      "Javier Bardem",
-      "Mario Casas",
-      "Pedro Pascal"
-     ],
-     "why": "He is from Málaga."
-    },
     {
      "level": 1,
      "q": "Which Catalan singer had a global hit with 'Motomami'?",
@@ -624,6 +606,67 @@
       "David Bisbal"
      ],
      "why": "His father is Julio Iglesias."
+    },
+    {
+     "level": 2,
+     "q": "Which guitarist and composer wrote the 'Concierto de Aranjuez'?",
+     "a": "Joaquín Rodrigo",
+     "wrong": [
+      "Manuel de Falla",
+      "Isaac Albéniz",
+      "Paco de Lucía"
+     ],
+     "why": "He was blind from childhood."
+    },
+    {
+     "level": 3,
+     "q": "Which flamenco guitarist recorded 'Entre dos aguas'?",
+     "a": "Paco de Lucía",
+     "wrong": [
+      "Tomatito",
+      "Vicente Amigo",
+      "Sabicas"
+     ],
+     "why": "He brought flamenco guitar to the world."
+    },
+    {
+     "level": 1,
+     "q": "What is unusual about Spain's national anthem, the 'Marcha Real'?",
+     "a": "It has no official words",
+     "wrong": [
+      "It is sung in Latin",
+      "It is only drummed",
+      "It changes every year"
+     ],
+     "why": "Fans hum it at matches."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Netflix series follows a gang robbing the Royal Mint of Spain?",
+     "a": "Money Heist",
+     "wrong": [
+      "Elite",
+      "Narcos",
+      "Cable Girls"
+     ],
+     "why": "Its Spanish title is 'La casa de papel'."
+    },
+    {
+     "level": 1,
+     "q": "Which Spanish actor starred in 'Puss in Boots' and 'The Mask of Zorro'?",
+     "a": "Antonio Banderas",
+     "wrong": [
+      "Javier Bardem",
+      "Mario Casas",
+      "Pedro Pascal"
+     ],
+     "why": "He is from Málaga."
     },
     {
      "level": 2,
@@ -659,26 +702,32 @@
      "why": "She won Best Supporting Actress."
     },
     {
-     "level": 2,
-     "q": "Which painter made 'Las Meninas'?",
-     "a": "Diego Velázquez",
+     "level": 3,
+     "q": "Which Spanish director made 'The Others' with Nicole Kidman?",
+     "a": "Alejandro Amenábar",
      "wrong": [
-      "El Greco",
-      "Francisco Goya",
-      "Bartolomé Murillo"
+      "J. A. Bayona",
+      "Guillermo del Toro",
+      "Álex de la Iglesia"
      ],
-     "why": "It hangs in the Prado."
-    },
+     "why": "He also made 'The Sea Inside'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
-     "level": 2,
-     "q": "Which guitarist and composer wrote the 'Concierto de Aranjuez'?",
-     "a": "Joaquín Rodrigo",
+     "level": 1,
+     "q": "Which Spanish novel features Don Quixote and Sancho Panza?",
+     "a": "Don Quixote",
      "wrong": [
-      "Manuel de Falla",
-      "Isaac Albéniz",
-      "Paco de Lucía"
+      "La Celestina",
+      "Lazarillo de Tormes",
+      "Fortunata y Jacinta"
      ],
-     "why": "He was blind from childhood."
+     "why": "Miguel de Cervantes wrote it."
     },
     {
      "level": 2,
@@ -690,28 +739,106 @@
       "Rafael Alberti"
      ],
      "why": "He came from Granada."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which king led Spain's return to democracy after Franco?",
+     "a": "Juan Carlos I",
+     "wrong": [
+      "Felipe VI",
+      "Alfonso XIII",
+      "Carlos IV"
+     ],
+     "why": "He gave up the throne in 2014."
     },
     {
-     "level": 3,
-     "q": "Which flamenco guitarist recorded 'Entre dos aguas'?",
-     "a": "Paco de Lucía",
+     "level": 1,
+     "q": "Who has been King of Spain since 2014?",
+     "a": "Felipe VI",
      "wrong": [
-      "Tomatito",
-      "Vicente Amigo",
-      "Sabicas"
+      "Juan Carlos I",
+      "Carlos III",
+      "Alfonso XIV"
      ],
-     "why": "He brought flamenco guitar to the world."
+     "why": "His wife is Queen Letizia."
     },
     {
-     "level": 3,
-     "q": "Which Spanish director made 'The Others' with Nicole Kidman?",
-     "a": "Alejandro Amenábar",
+     "level": 2,
+     "q": "In which year did Spain adopt its current democratic constitution?",
+     "a": "1978",
      "wrong": [
-      "J. A. Bayona",
-      "Guillermo del Toro",
-      "Álex de la Iglesia"
+      "1975",
+      "1981",
+      "1931"
      ],
-     "why": "He also made 'The Sea Inside'."
+     "why": "6 December is Constitution Day."
+    },
+    {
+     "level": 2,
+     "q": "What is Spain's parliament called?",
+     "a": "Cortes Generales",
+     "wrong": [
+      "Bundestag",
+      "Assemblée nationale",
+      "Storting"
+     ],
+     "why": "It has a Congress and a Senate."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Basque town was bombed in 1937 and painted by Picasso?",
+     "a": "Guernica",
+     "wrong": [
+      "Bilbao",
+      "Durango",
+      "Pamplona"
+     ],
+     "why": "German planes bombed it during the Civil War."
+    },
+    {
+     "level": 1,
+     "q": "Which Spanish painter co-founded Cubism?",
+     "a": "Pablo Picasso",
+     "wrong": [
+      "Salvador Dalí",
+      "Joan Miró",
+      "Diego Velázquez"
+     ],
+     "why": "He was born in Málaga."
+    },
+    {
+     "level": 1,
+     "q": "Which surrealist painted melting clocks?",
+     "a": "Salvador Dalí",
+     "wrong": [
+      "Joan Miró",
+      "Pablo Picasso",
+      "Francisco Goya"
+     ],
+     "why": "The painting is 'The Persistence of Memory'."
+    },
+    {
+     "level": 2,
+     "q": "Which painter made 'Las Meninas'?",
+     "a": "Diego Velázquez",
+     "wrong": [
+      "El Greco",
+      "Francisco Goya",
+      "Bartolomé Murillo"
+     ],
+     "why": "It hangs in the Prado."
     },
     {
      "level": 3,
@@ -723,11 +850,34 @@
       "El Greco"
      ],
      "why": "It shows French troops executing Spaniards."
+    },
+    {
+     "level": 1,
+     "q": "Which Madrid museum houses works by Velázquez and Goya?",
+     "a": "Prado Museum",
+     "wrong": [
+      "Reina Sofía",
+      "Thyssen-Bornemisza",
+      "Guggenheim"
+     ],
+     "why": "It opened in 1819."
+    },
+    {
+     "level": 1,
+     "q": "Which architect designed Park Güell and Casa Batlló?",
+     "a": "Antoni Gaudí",
+     "wrong": [
+      "Santiago Calatrava",
+      "Rafael Moneo",
+      "Lluís Domènech i Montaner"
+     ],
+     "why": "His works are UNESCO-listed."
     }
    ]
   },
   {
-   "name": "Spain Food & Traditions",
+   "category": "General Knowledge",
+   "name": "General Knowledge",
    "questions": [
     {
      "level": 1,
@@ -904,12 +1054,7 @@
       "Sobremesa"
      ],
      "why": "Merienda is an afternoon snack."
-    }
-   ]
-  },
-  {
-   "name": "Spain General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is Spain's currency?",
@@ -920,28 +1065,6 @@
       "Real"
      ],
      "why": "It replaced the peseta in 2002."
-    },
-    {
-     "level": 1,
-     "q": "Which Madrid museum houses works by Velázquez and Goya?",
-     "a": "Prado Museum",
-     "wrong": [
-      "Reina Sofía",
-      "Thyssen-Bornemisza",
-      "Guggenheim"
-     ],
-     "why": "It opened in 1819."
-    },
-    {
-     "level": 1,
-     "q": "Which architect designed Park Güell and Casa Batlló?",
-     "a": "Antoni Gaudí",
-     "wrong": [
-      "Santiago Calatrava",
-      "Rafael Moneo",
-      "Lluís Domènech i Montaner"
-     ],
-     "why": "His works are UNESCO-listed."
     },
     {
      "level": 1,
@@ -966,28 +1089,6 @@
      "why": "Basque and Galician are official in their regions."
     },
     {
-     "level": 1,
-     "q": "Which Spanish fashion chain was founded in Galicia?",
-     "a": "Zara",
-     "wrong": [
-      "Mango",
-      "Desigual",
-      "Bershka"
-     ],
-     "why": "Amancio Ortega founded it in 1975."
-    },
-    {
-     "level": 1,
-     "q": "What is unusual about Spain's national anthem, the 'Marcha Real'?",
-     "a": "It has no official words",
-     "wrong": [
-      "It is sung in Latin",
-      "It is only drummed",
-      "It changes every year"
-     ],
-     "why": "Fans hum it at matches."
-    },
-    {
      "level": 2,
      "q": "Which Córdoba building was a mosque and became a cathedral?",
      "a": "Mezquita",
@@ -1000,39 +1101,6 @@
     },
     {
      "level": 2,
-     "q": "What is Spain's parliament called?",
-     "a": "Cortes Generales",
-     "wrong": [
-      "Bundestag",
-      "Assemblée nationale",
-      "Storting"
-     ],
-     "why": "It has a Congress and a Senate."
-    },
-    {
-     "level": 2,
-     "q": "Which Basque-speaking region has a language unrelated to any other in Europe?",
-     "a": "Basque Country",
-     "wrong": [
-      "Galicia",
-      "Catalonia",
-      "Navarre"
-     ],
-     "why": "Basque is called Euskara."
-    },
-    {
-     "level": 2,
-     "q": "Which royal monastery-palace near Madrid did Philip II build?",
-     "a": "El Escorial",
-     "wrong": [
-      "Royal Palace of Madrid",
-      "Alcázar of Toledo",
-      "La Granja"
-     ],
-     "why": "Many Spanish kings are buried there."
-    },
-    {
-     "level": 2,
      "q": "Which tower in Seville was once a minaret?",
      "a": "La Giralda",
      "wrong": [
@@ -1041,50 +1109,6 @@
       "Torre Picasso"
      ],
      "why": "It is now the cathedral's bell tower."
-    },
-    {
-     "level": 2,
-     "q": "Which ancient Roman lighthouse in A Coruña is still in use?",
-     "a": "Tower of Hercules",
-     "wrong": [
-      "Torre del Oro",
-      "La Giralda",
-      "Torre de Collserola"
-     ],
-     "why": "It is the oldest working Roman lighthouse."
-    },
-    {
-     "level": 3,
-     "q": "Which Spanish scientist won the 1906 Nobel Prize for studying neurons?",
-     "a": "Santiago Ramón y Cajal",
-     "wrong": [
-      "Severo Ochoa",
-      "Gregorio Marañón",
-      "Isaac Peral"
-     ],
-     "why": "He is called the father of neuroscience."
-    },
-    {
-     "level": 3,
-     "q": "Which Roman aqueduct still stands in a Castilian city?",
-     "a": "Aqueduct of Segovia",
-     "wrong": [
-      "Aqueduct of Tarragona",
-      "Aqueduct of Mérida",
-      "Pont du Gard"
-     ],
-     "why": "It was built without mortar."
-    },
-    {
-     "level": 3,
-     "q": "Which British territory lies at Spain's southern tip?",
-     "a": "Gibraltar",
-     "wrong": [
-      "Ceuta",
-      "Andorra",
-      "Menorca"
-     ],
-     "why": "Spain gave it up in 1713."
     }
    ]
   }

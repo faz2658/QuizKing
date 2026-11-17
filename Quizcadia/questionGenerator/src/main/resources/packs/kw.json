@@ -3,7 +3,8 @@
  "country": "KW",
  "topics": [
   {
-   "name": "Kuwait: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -18,17 +19,6 @@
     },
     {
      "level": 1,
-     "q": "Which family rules Kuwait?",
-     "a": "Al Sabah",
-     "wrong": [
-      "Al Thani",
-      "Al Khalifa",
-      "Al Saud"
-     ],
-     "why": "They have ruled since the 1750s."
-    },
-    {
-     "level": 1,
      "q": "Which country invaded Kuwait in August 1990?",
      "a": "Iraq",
      "wrong": [
@@ -37,28 +27,6 @@
       "Syria"
      ],
      "why": "A US-led coalition freed Kuwait in February 1991."
-    },
-    {
-     "level": 1,
-     "q": "What does Kuwait celebrate on 26 February?",
-     "a": "Liberation Day",
-     "wrong": [
-      "National Day",
-      "Accession Day",
-      "Flag Day"
-     ],
-     "why": "It marks the end of the Iraqi occupation."
-    },
-    {
-     "level": 1,
-     "q": "Before oil, what were Kuwait's main trades?",
-     "a": "Pearl diving and sea trade",
-     "wrong": [
-      "Gold mining",
-      "Coffee growing",
-      "Silk weaving"
-     ],
-     "why": "Kuwaiti dhows sailed to India and Africa."
     },
     {
      "level": 1,
@@ -72,17 +40,6 @@
      "why": "The Burgan field is one of the world's largest."
     },
     {
-     "level": 1,
-     "q": "Which landmark towers with blue-green spheres stand on Kuwait's coast?",
-     "a": "Kuwait Towers",
-     "wrong": [
-      "Liberation Tower",
-      "Al Hamra Tower",
-      "Arraya Tower"
-     ],
-     "why": "They opened in 1979."
-    },
-    {
      "level": 2,
      "q": "Which body, founded in 1963, is one of the Gulf's oldest elected parliaments?",
      "a": "National Assembly",
@@ -92,17 +49,6 @@
       "Federal Council"
      ],
      "why": "It has 50 elected members."
-    },
-    {
-     "level": 2,
-     "q": "In which year did Kuwaiti women win the right to vote?",
-     "a": "2005",
-     "wrong": [
-      "1963",
-      "1991",
-      "2015"
-     ],
-     "why": "Four women were elected in 2009."
     },
     {
      "level": 2,
@@ -136,28 +82,23 @@
       "Sabah Al-Ahmad"
      ],
      "why": "He laid the foundations of modern Kuwait."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
     {
-     "level": 3,
-     "q": "Which emir led Kuwait to independence and its constitution?",
-     "a": "Abdullah Al-Salim Al-Sabah",
+     "level": 1,
+     "q": "Which landmark towers with blue-green spheres stand on Kuwait's coast?",
+     "a": "Kuwait Towers",
      "wrong": [
-      "Mubarak Al-Sabah",
-      "Jaber Al-Ahmad",
-      "Sabah Al-Ahmad"
+      "Liberation Tower",
+      "Al Hamra Tower",
+      "Arraya Tower"
      ],
-     "why": "He is called the 'Father of the Constitution'."
-    },
-    {
-     "level": 3,
-     "q": "Which Kuwaiti emir was known as the 'Leader of Humanitarian Action'?",
-     "a": "Sabah Al-Ahmad Al-Jaber Al-Sabah",
-     "wrong": [
-      "Jaber Al-Ahmad",
-      "Nawaf Al-Ahmad",
-      "Saad Al-Abdullah"
-     ],
-     "why": "The UN gave him the title in 2014."
+     "why": "They opened in 1979."
     },
     {
      "level": 3,
@@ -169,12 +110,7 @@
       "Kubbar"
      ],
      "why": "The Greeks called it Ikaros."
-    }
-   ]
-  },
-  {
-   "name": "Kuwait: Places & Culture",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is the capital of Kuwait?",
@@ -188,17 +124,6 @@
     },
     {
      "level": 1,
-     "q": "What is Kuwait's currency?",
-     "a": "Kuwaiti dinar",
-     "wrong": [
-      "Dirham",
-      "Riyal",
-      "Rupee"
-     ],
-     "why": "It is the world's highest-valued currency unit."
-    },
-    {
-     "level": 1,
      "q": "Which body of water lies off Kuwait's coast?",
      "a": "Persian Gulf",
      "wrong": [
@@ -207,17 +132,6 @@
       "Gulf of Oman"
      ],
      "why": "Kuwait Bay cuts into the coast."
-    },
-    {
-     "level": 1,
-     "q": "Which spiced rice dish with meat is Kuwait's national dish?",
-     "a": "Machboos",
-     "wrong": [
-      "Mansaf",
-      "Kabsa",
-      "Mandi"
-     ],
-     "why": "It is often made with chicken or fish."
     },
     {
      "level": 1,
@@ -242,17 +156,6 @@
      "why": "It is one of the world's smaller countries."
     },
     {
-     "level": 1,
-     "q": "What is a traditional Kuwaiti gathering room for men called?",
-     "a": "Diwaniya",
-     "wrong": [
-      "Majlis Hall",
-      "Souq",
-      "Hammam"
-     ],
-     "why": "Politics and news are discussed there."
-    },
-    {
      "level": 2,
      "q": "Which old market in Kuwait City is a shopping landmark?",
      "a": "Souq Al-Mubarakiya",
@@ -262,6 +165,162 @@
       "Khan el-Khalili"
      ],
      "why": "It dates back over a century."
+    },
+    {
+     "level": 2,
+     "q": "Which bridge across Kuwait Bay is one of the world's longest?",
+     "a": "Sheikh Jaber Al-Ahmad Causeway",
+     "wrong": [
+      "Bubiyan Bridge",
+      "Kuwait Bay Bridge",
+      "Al Ghazali Bridge"
+     ],
+     "why": "It opened in 2019."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Kuwaiti shooter won Olympic gold in 2016 competing under the Olympic flag?",
+     "a": "Fehaid Al-Deehani",
+     "wrong": [
+      "Abdullah Al-Rashidi",
+      "Talal Al-Rashidi",
+      "Khaled Al-Mudhaf"
+     ],
+     "why": "Kuwait was suspended by the IOC at the time."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Kuwaiti TV comedy legend starred in 'Darb Al-Zalaq'?",
+     "a": "Abdulhussain Abdulredha",
+     "wrong": [
+      "Saad Al-Faraj",
+      "Dawood Hussain",
+      "Khalid Al-Nafisi"
+     ],
+     "why": "He was one of the Gulf's most loved actors."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which emir led Kuwait to independence and its constitution?",
+     "a": "Abdullah Al-Salim Al-Sabah",
+     "wrong": [
+      "Mubarak Al-Sabah",
+      "Jaber Al-Ahmad",
+      "Sabah Al-Ahmad"
+     ],
+     "why": "He is called the 'Father of the Constitution'."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which family rules Kuwait?",
+     "a": "Al Sabah",
+     "wrong": [
+      "Al Thani",
+      "Al Khalifa",
+      "Al Saud"
+     ],
+     "why": "They have ruled since the 1750s."
+    },
+    {
+     "level": 1,
+     "q": "What does Kuwait celebrate on 26 February?",
+     "a": "Liberation Day",
+     "wrong": [
+      "National Day",
+      "Accession Day",
+      "Flag Day"
+     ],
+     "why": "It marks the end of the Iraqi occupation."
+    },
+    {
+     "level": 1,
+     "q": "Before oil, what were Kuwait's main trades?",
+     "a": "Pearl diving and sea trade",
+     "wrong": [
+      "Gold mining",
+      "Coffee growing",
+      "Silk weaving"
+     ],
+     "why": "Kuwaiti dhows sailed to India and Africa."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Kuwaiti women win the right to vote?",
+     "a": "2005",
+     "wrong": [
+      "1963",
+      "1991",
+      "2015"
+     ],
+     "why": "Four women were elected in 2009."
+    },
+    {
+     "level": 3,
+     "q": "Which Kuwaiti emir was known as the 'Leader of Humanitarian Action'?",
+     "a": "Sabah Al-Ahmad Al-Jaber Al-Sabah",
+     "wrong": [
+      "Jaber Al-Ahmad",
+      "Nawaf Al-Ahmad",
+      "Saad Al-Abdullah"
+     ],
+     "why": "The UN gave him the title in 2014."
+    },
+    {
+     "level": 1,
+     "q": "What is Kuwait's currency?",
+     "a": "Kuwaiti dinar",
+     "wrong": [
+      "Dirham",
+      "Riyal",
+      "Rupee"
+     ],
+     "why": "It is the world's highest-valued currency unit."
+    },
+    {
+     "level": 1,
+     "q": "Which spiced rice dish with meat is Kuwait's national dish?",
+     "a": "Machboos",
+     "wrong": [
+      "Mansaf",
+      "Kabsa",
+      "Mandi"
+     ],
+     "why": "It is often made with chicken or fish."
+    },
+    {
+     "level": 1,
+     "q": "What is a traditional Kuwaiti gathering room for men called?",
+     "a": "Diwaniya",
+     "wrong": [
+      "Majlis Hall",
+      "Souq",
+      "Hammam"
+     ],
+     "why": "Politics and news are discussed there."
     },
     {
      "level": 2,
@@ -287,17 +346,6 @@
     },
     {
      "level": 2,
-     "q": "Which bridge across Kuwait Bay is one of the world's longest?",
-     "a": "Sheikh Jaber Al-Ahmad Causeway",
-     "wrong": [
-      "Bubiyan Bridge",
-      "Kuwait Bay Bridge",
-      "Al Ghazali Bridge"
-     ],
-     "why": "It opened in 2019."
-    },
-    {
-     "level": 2,
      "q": "Which seafood is Kuwait especially famous for?",
      "a": "Prawns (and zubaidi fish)",
      "wrong": [
@@ -317,28 +365,6 @@
       "Dar Al Athar"
      ],
      "why": "It opened in 2016."
-    },
-    {
-     "level": 3,
-     "q": "Which Kuwaiti shooter won Olympic gold in 2016 competing under the Olympic flag?",
-     "a": "Fehaid Al-Deehani",
-     "wrong": [
-      "Abdullah Al-Rashidi",
-      "Talal Al-Rashidi",
-      "Khaled Al-Mudhaf"
-     ],
-     "why": "Kuwait was suspended by the IOC at the time."
-    },
-    {
-     "level": 3,
-     "q": "Which Kuwaiti TV comedy legend starred in 'Darb Al-Zalaq'?",
-     "a": "Abdulhussain Abdulredha",
-     "wrong": [
-      "Saad Al-Faraj",
-      "Dawood Hussain",
-      "Khalid Al-Nafisi"
-     ],
-     "why": "He was one of the Gulf's most loved actors."
     }
    ]
   }

@@ -3,7 +3,8 @@
  "country": "UG",
  "topics": [
   {
-   "name": "Uganda: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -128,6 +129,117 @@
     },
     {
      "level": 2,
+     "q": "Which prehistoric-looking bird lives in Uganda's swamps?",
+     "a": "Shoebill",
+     "wrong": [
+      "Ostrich",
+      "Secretary bird",
+      "Marabou stork"
+     ],
+     "why": "It has a huge shoe-shaped bill."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which UNESCO-listed tombs in Kampala hold the kings of Buganda?",
+     "a": "Kasubi Tombs",
+     "wrong": [
+      "Namugongo Shrine",
+      "Mengo Palace",
+      "Bulange"
+     ],
+     "why": "They were rebuilt after a fire in 2010."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of Uganda?",
+     "a": "Kampala",
+     "wrong": [
+      "Entebbe",
+      "Jinja",
+      "Gulu"
+     ],
+     "why": "It was built on seven hills."
+    },
+    {
+     "level": 1,
+     "q": "Which town is called the 'source of the Nile'?",
+     "a": "Jinja",
+     "wrong": [
+      "Entebbe",
+      "Mbarara",
+      "Fort Portal"
+     ],
+     "why": "White-water rafting is popular there."
+    },
+    {
+     "level": 1,
+     "q": "Which lake does Uganda share with Kenya and Tanzania?",
+     "a": "Lake Victoria",
+     "wrong": [
+      "Lake Albert",
+      "Lake Kyoga",
+      "Lake Edward"
+     ],
+     "why": "It is Africa's largest lake."
+    },
+    {
+     "level": 2,
+     "q": "Which mountains on the Congo border are called the 'Mountains of the Moon'?",
+     "a": "Rwenzori Mountains",
+     "wrong": [
+      "Virunga Mountains",
+      "Mount Elgon",
+      "Imatong Mountains"
+     ],
+     "why": "Their peaks have glaciers."
+    },
+    {
+     "level": 2,
+     "q": "Which falls force the Nile through a gorge just 7 m wide?",
+     "a": "Murchison Falls",
+     "wrong": [
+      "Ripon Falls",
+      "Sipi Falls",
+      "Karuma Falls"
+     ],
+     "why": "They give their name to a national park."
+    },
+    {
+     "level": 3,
+     "q": "What is Uganda's highest peak?",
+     "a": "Margherita Peak on Mount Stanley",
+     "wrong": [
+      "Mount Elgon",
+      "Mount Muhavura",
+      "Mount Moroto"
+     ],
+     "why": "It is 5,109 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which national park is famous for tree-climbing lions?",
+     "a": "Queen Elizabeth National Park",
+     "wrong": [
+      "Murchison Falls",
+      "Kidepo Valley",
+      "Lake Mburo"
+     ],
+     "why": "They rest in fig trees in the Ishasha sector."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
      "q": "Which Ugandan won the Olympic marathon in 2012?",
      "a": "Stephen Kiprotich",
      "wrong": [
@@ -158,34 +270,30 @@
       "Moses Kipsiro"
      ],
      "why": "He had won 5,000 m gold in Tokyo."
-    },
-    {
-     "level": 3,
-     "q": "Which UNESCO-listed tombs in Kampala hold the kings of Buganda?",
-     "a": "Kasubi Tombs",
-     "wrong": [
-      "Namugongo Shrine",
-      "Mengo Palace",
-      "Bulange"
-     ],
-     "why": "They were rebuilt after a fire in 2010."
     }
    ]
   },
   {
-   "name": "Uganda: Places & Culture",
+   "category": "Art",
+   "name": "Art",
    "questions": [
     {
-     "level": 1,
-     "q": "What is the capital of Uganda?",
-     "a": "Kampala",
+     "level": 3,
+     "q": "Which Bugandan craft, made from tree bark, is on UNESCO's list?",
+     "a": "Barkcloth making",
      "wrong": [
-      "Entebbe",
-      "Jinja",
-      "Gulu"
+      "Kente weaving",
+      "Batik",
+      "Mudcloth"
      ],
-     "why": "It was built on seven hills."
-    },
+     "why": "It is made from the mutuba tree."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
     {
      "level": 1,
      "q": "Which great apes is Bwindi Impenetrable Forest famous for?",
@@ -199,26 +307,21 @@
     },
     {
      "level": 1,
-     "q": "Which town is called the 'source of the Nile'?",
-     "a": "Jinja",
+     "q": "Which bird is on Uganda's flag?",
+     "a": "Grey crowned crane",
      "wrong": [
-      "Entebbe",
-      "Mbarara",
-      "Fort Portal"
+      "Shoebill",
+      "African fish eagle",
+      "Flamingo"
      ],
-     "why": "White-water rafting is popular there."
-    },
-    {
-     "level": 1,
-     "q": "Which lake does Uganda share with Kenya and Tanzania?",
-     "a": "Lake Victoria",
-     "wrong": [
-      "Lake Albert",
-      "Lake Kyoga",
-      "Lake Edward"
-     ],
-     "why": "It is Africa's largest lake."
-    },
+     "why": "It stands in a white disc."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
     {
      "level": 1,
      "q": "What is Uganda's currency?",
@@ -229,17 +332,6 @@
       "Birr"
      ],
      "why": "Its code is UGX."
-    },
-    {
-     "level": 1,
-     "q": "Which bird is on Uganda's flag?",
-     "a": "Grey crowned crane",
-     "wrong": [
-      "Shoebill",
-      "African fish eagle",
-      "Flamingo"
-     ],
-     "why": "It stands in a white disc."
     },
     {
      "level": 1,
@@ -254,28 +346,6 @@
     },
     {
      "level": 2,
-     "q": "Which mountains on the Congo border are called the 'Mountains of the Moon'?",
-     "a": "Rwenzori Mountains",
-     "wrong": [
-      "Virunga Mountains",
-      "Mount Elgon",
-      "Imatong Mountains"
-     ],
-     "why": "Their peaks have glaciers."
-    },
-    {
-     "level": 2,
-     "q": "Which falls force the Nile through a gorge just 7 m wide?",
-     "a": "Murchison Falls",
-     "wrong": [
-      "Ripon Falls",
-      "Sipi Falls",
-      "Karuma Falls"
-     ],
-     "why": "They give their name to a national park."
-    },
-    {
-     "level": 2,
      "q": "What is a 'Rolex' in Uganda?",
      "a": "A chapati rolled with an omelette",
      "wrong": [
@@ -287,17 +357,6 @@
     },
     {
      "level": 2,
-     "q": "Which prehistoric-looking bird lives in Uganda's swamps?",
-     "a": "Shoebill",
-     "wrong": [
-      "Ostrich",
-      "Secretary bird",
-      "Marabou stork"
-     ],
-     "why": "It has a huge shoe-shaped bill."
-    },
-    {
-     "level": 2,
      "q": "Which steamed green bananas are a Ugandan staple?",
      "a": "Matooke",
      "wrong": [
@@ -306,39 +365,6 @@
       "Fufu"
      ],
      "why": "They are often steamed in banana leaves."
-    },
-    {
-     "level": 3,
-     "q": "Which Bugandan craft, made from tree bark, is on UNESCO's list?",
-     "a": "Barkcloth making",
-     "wrong": [
-      "Kente weaving",
-      "Batik",
-      "Mudcloth"
-     ],
-     "why": "It is made from the mutuba tree."
-    },
-    {
-     "level": 3,
-     "q": "What is Uganda's highest peak?",
-     "a": "Margherita Peak on Mount Stanley",
-     "wrong": [
-      "Mount Elgon",
-      "Mount Muhavura",
-      "Mount Moroto"
-     ],
-     "why": "It is 5,109 m high."
-    },
-    {
-     "level": 3,
-     "q": "Which national park is famous for tree-climbing lions?",
-     "a": "Queen Elizabeth National Park",
-     "wrong": [
-      "Murchison Falls",
-      "Kidepo Valley",
-      "Lake Mburo"
-     ],
-     "why": "They rest in fig trees in the Ishasha sector."
     }
    ]
   }

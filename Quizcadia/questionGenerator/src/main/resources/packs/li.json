@@ -3,7 +3,58 @@
  "country": "LI",
  "topics": [
   {
-   "name": "Liechtenstein: History & People",
+   "category": "History",
+   "name": "History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been Prince of Liechtenstein since 1989?",
+     "a": "Hans-Adam II",
+     "wrong": [
+      "Franz Joseph II",
+      "Alois",
+      "Johann II"
+     ],
+     "why": "His son Alois has run daily affairs since 2004."
+    },
+    {
+     "level": 2,
+     "q": "Which empire's breakup in 1806 left Liechtenstein independent?",
+     "a": "Holy Roman Empire",
+     "wrong": [
+      "Austrian Empire",
+      "Ottoman Empire",
+      "Russian Empire"
+     ],
+     "why": "It joined the Confederation of the Rhine."
+    },
+    {
+     "level": 2,
+     "q": "What did Liechtenstein abolish in 1868?",
+     "a": "Its army",
+     "wrong": [
+      "Its monarchy",
+      "Its currency",
+      "Its parliament"
+     ],
+     "why": "It has had no army since then."
+    },
+    {
+     "level": 3,
+     "q": "How many soldiers did Liechtenstein send to its last war in 1866, and how many returned?",
+     "a": "80 sent, 81 returned",
+     "wrong": [
+      "80 sent, 79 returned",
+      "100 sent, 100 returned",
+      "50 sent, 60 returned"
+     ],
+     "why": "An Italian friend came back with them."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -40,6 +91,101 @@
     },
     {
      "level": 1,
+     "q": "Which river forms Liechtenstein's border with Switzerland?",
+     "a": "Rhine",
+     "wrong": [
+      "Inn",
+      "Danube",
+      "Rhône"
+     ],
+     "why": "It flows north to Lake Constance."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain range covers Liechtenstein?",
+     "a": "Alps",
+     "wrong": [
+      "Pyrenees",
+      "Carpathians",
+      "Jura"
+     ],
+     "why": "Its highest peak is Grauspitz."
+    },
+    {
+     "level": 3,
+     "q": "What is Liechtenstein's highest mountain?",
+     "a": "Grauspitz",
+     "wrong": [
+      "Säntis",
+      "Piz Bernina",
+      "Zugspitze"
+     ],
+     "why": "It is about 2,600 m high."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which winter sport has won Liechtenstein its Olympic medals?",
+     "a": "Alpine skiing",
+     "wrong": [
+      "Ice hockey",
+      "Biathlon",
+      "Bobsleigh"
+     ],
+     "why": "Hanni Wenzel won two golds in 1980."
+    },
+    {
+     "level": 2,
+     "q": "Which skier won Liechtenstein two golds at the 1980 Olympics?",
+     "a": "Hanni Wenzel",
+     "wrong": [
+      "Andreas Wenzel",
+      "Marco Büchel",
+      "Tina Weirather"
+     ],
+     "why": "Her brother also won medals."
+    },
+    {
+     "level": 3,
+     "q": "Which Liechtenstein skier won Olympic super-G bronze in 2018?",
+     "a": "Tina Weirather",
+     "wrong": [
+      "Hanni Wenzel",
+      "Marco Büchel",
+      "Willi Frommelt"
+     ],
+     "why": "Her mother is Hanni Wenzel."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which art museum in Vaduz is a black concrete cube?",
+     "a": "Kunstmuseum Liechtenstein",
+     "wrong": [
+      "Liechtenstein Gallery",
+      "Palais Liechtenstein",
+      "Hilti Art Foundation"
+     ],
+     "why": "It opened in 2000."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
      "q": "What is Liechtenstein's currency?",
      "a": "Swiss franc",
      "wrong": [
@@ -61,28 +207,6 @@
      "why": "A local Alemannic dialect is spoken."
     },
     {
-     "level": 1,
-     "q": "Which river forms Liechtenstein's border with Switzerland?",
-     "a": "Rhine",
-     "wrong": [
-      "Inn",
-      "Danube",
-      "Rhône"
-     ],
-     "why": "It flows north to Lake Constance."
-    },
-    {
-     "level": 1,
-     "q": "Who has been Prince of Liechtenstein since 1989?",
-     "a": "Hans-Adam II",
-     "wrong": [
-      "Franz Joseph II",
-      "Alois",
-      "Johann II"
-     ],
-     "why": "His son Alois has run daily affairs since 2004."
-    },
-    {
      "level": 2,
      "q": "In which year did Liechtenstein become a principality?",
      "a": "1719",
@@ -92,17 +216,6 @@
       "1648"
      ],
      "why": "It was created in the Holy Roman Empire."
-    },
-    {
-     "level": 2,
-     "q": "Which empire's breakup in 1806 left Liechtenstein independent?",
-     "a": "Holy Roman Empire",
-     "wrong": [
-      "Austrian Empire",
-      "Ottoman Empire",
-      "Russian Empire"
-     ],
-     "why": "It joined the Confederation of the Rhine."
     },
     {
      "level": 2,
@@ -117,17 +230,6 @@
     },
     {
      "level": 2,
-     "q": "What did Liechtenstein abolish in 1868?",
-     "a": "Its army",
-     "wrong": [
-      "Its monarchy",
-      "Its currency",
-      "Its parliament"
-     ],
-     "why": "It has had no army since then."
-    },
-    {
-     "level": 2,
      "q": "Which country handles Liechtenstein's foreign embassies in many places?",
      "a": "Switzerland",
      "wrong": [
@@ -136,17 +238,6 @@
       "France"
      ],
      "why": "They also share a customs union."
-    },
-    {
-     "level": 3,
-     "q": "How many soldiers did Liechtenstein send to its last war in 1866, and how many returned?",
-     "a": "80 sent, 81 returned",
-     "wrong": [
-      "80 sent, 79 returned",
-      "100 sent, 100 returned",
-      "50 sent, 60 returned"
-     ],
-     "why": "An Italian friend came back with them."
     },
     {
      "level": 3,
@@ -169,12 +260,7 @@
       "House of Savoy"
      ],
      "why": "They came from Austria."
-    }
-   ]
-  },
-  {
-   "name": "Liechtenstein: Places & Culture",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "Which country is the fourth-smallest in Europe?",
@@ -185,17 +271,6 @@
       "Andorra"
      ],
      "why": "It is about 160 square kilometres."
-    },
-    {
-     "level": 1,
-     "q": "Which winter sport has won Liechtenstein its Olympic medals?",
-     "a": "Alpine skiing",
-     "wrong": [
-      "Ice hockey",
-      "Biathlon",
-      "Bobsleigh"
-     ],
-     "why": "Hanni Wenzel won two golds in 1980."
     },
     {
      "level": 1,
@@ -218,17 +293,6 @@
       "Sailors"
      ],
      "why": "Stamps were once a major income."
-    },
-    {
-     "level": 1,
-     "q": "Which mountain range covers Liechtenstein?",
-     "a": "Alps",
-     "wrong": [
-      "Pyrenees",
-      "Carpathians",
-      "Jura"
-     ],
-     "why": "Its highest peak is Grauspitz."
     },
     {
      "level": 1,
@@ -276,17 +340,6 @@
     },
     {
      "level": 2,
-     "q": "Which skier won Liechtenstein two golds at the 1980 Olympics?",
-     "a": "Hanni Wenzel",
-     "wrong": [
-      "Andreas Wenzel",
-      "Marco Büchel",
-      "Tina Weirather"
-     ],
-     "why": "Her brother also won medals."
-    },
-    {
-     "level": 2,
      "q": "What is the national day of Liechtenstein?",
      "a": "15 August",
      "wrong": [
@@ -295,17 +348,6 @@
       "3 October"
      ],
      "why": "Fireworks light up Vaduz."
-    },
-    {
-     "level": 2,
-     "q": "Which art museum in Vaduz is a black concrete cube?",
-     "a": "Kunstmuseum Liechtenstein",
-     "wrong": [
-      "Liechtenstein Gallery",
-      "Palais Liechtenstein",
-      "Hilti Art Foundation"
-     ],
-     "why": "It opened in 2000."
     },
     {
      "level": 3,
@@ -317,28 +359,6 @@
       "Raclette"
      ],
      "why": "It is topped with fried onions."
-    },
-    {
-     "level": 3,
-     "q": "What is Liechtenstein's highest mountain?",
-     "a": "Grauspitz",
-     "wrong": [
-      "Säntis",
-      "Piz Bernina",
-      "Zugspitze"
-     ],
-     "why": "It is about 2,600 m high."
-    },
-    {
-     "level": 3,
-     "q": "Which Liechtenstein skier won Olympic super-G bronze in 2018?",
-     "a": "Tina Weirather",
-     "wrong": [
-      "Hanni Wenzel",
-      "Marco Büchel",
-      "Willi Frommelt"
-     ],
-     "why": "Her mother is Hanni Wenzel."
     }
    ]
   }

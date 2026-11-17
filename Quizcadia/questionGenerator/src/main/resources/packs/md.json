@@ -3,7 +3,80 @@
  "country": "MD",
  "topics": [
   {
-   "name": "Moldova: History & People",
+   "category": "History",
+   "name": "History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Moldova become independent?",
+     "a": "1991",
+     "wrong": [
+      "1989",
+      "1994",
+      "1996"
+     ],
+     "why": "It declared independence on 27 August."
+    },
+    {
+     "level": 1,
+     "q": "Which medieval prince is Moldova's greatest hero?",
+     "a": "Stephen the Great",
+     "wrong": [
+      "Vlad the Impaler",
+      "Michael the Brave",
+      "Dimitrie Cantemir"
+     ],
+     "why": "He ruled Moldavia from 1457 to 1504."
+    },
+    {
+     "level": 2,
+     "q": "Who became Moldova's first woman President, in 2020?",
+     "a": "Maia Sandu",
+     "wrong": [
+      "Natalia Gavrilița",
+      "Zinaida Greceanîi",
+      "Doina Gherman"
+     ],
+     "why": "She was re-elected in 2024."
+    },
+    {
+     "level": 2,
+     "q": "Which Soviet republic was Moldova part of until 1991?",
+     "a": "Moldavian SSR",
+     "wrong": [
+      "Ukrainian SSR",
+      "Romanian SSR",
+      "Bessarabian SSR"
+     ],
+     "why": "It was created in 1940."
+    },
+    {
+     "level": 3,
+     "q": "Which 2009 protests are called the 'Twitter Revolution'?",
+     "a": "April 2009 protests in Chișinău",
+     "wrong": [
+      "Orange Revolution",
+      "Velvet Revolution",
+      "Rose Revolution"
+     ],
+     "why": "They followed disputed elections."
+    },
+    {
+     "level": 3,
+     "q": "Which Moldovan wine estate's wines were served at Queen Victoria's court?",
+     "a": "Purcari",
+     "wrong": [
+      "Cricova",
+      "Mileștii Mici",
+      "Asconi"
+     ],
+     "why": "Its Negru de Purcari is famous."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -18,17 +91,6 @@
     },
     {
      "level": 1,
-     "q": "In which year did Moldova become independent?",
-     "a": "1991",
-     "wrong": [
-      "1989",
-      "1994",
-      "1996"
-     ],
-     "why": "It declared independence on 27 August."
-    },
-    {
-     "level": 1,
      "q": "Which breakaway region on the Dniester is not under Moldova's control?",
      "a": "Transnistria",
      "wrong": [
@@ -37,28 +99,6 @@
       "Bukovina"
      ],
      "why": "It fought a short war in 1992."
-    },
-    {
-     "level": 1,
-     "q": "Which language is Moldova's official language?",
-     "a": "Romanian",
-     "wrong": [
-      "Russian",
-      "Ukrainian",
-      "Gagauz"
-     ],
-     "why": "In 2023 the constitution named it Romanian."
-    },
-    {
-     "level": 1,
-     "q": "Which medieval prince is Moldova's greatest hero?",
-     "a": "Stephen the Great",
-     "wrong": [
-      "Vlad the Impaler",
-      "Michael the Brave",
-      "Dimitrie Cantemir"
-     ],
-     "why": "He ruled Moldavia from 1457 to 1504."
     },
     {
      "level": 1,
@@ -83,16 +123,105 @@
      "why": "Russia annexed it in 1812."
     },
     {
-     "level": 2,
-     "q": "Who became Moldova's first woman President, in 2020?",
-     "a": "Maia Sandu",
+     "level": 3,
+     "q": "Which autonomous Turkic-speaking region is in southern Moldova?",
+     "a": "Gagauzia",
      "wrong": [
-      "Natalia Gavrilița",
-      "Zinaida Greceanîi",
-      "Doina Gherman"
+      "Transnistria",
+      "Bukovina",
+      "Budjak"
      ],
-     "why": "She was re-elected in 2024."
+     "why": "Its capital is Comrat."
     },
+    {
+     "level": 1,
+     "q": "Which river forms most of Moldova's border with Romania?",
+     "a": "Prut",
+     "wrong": [
+      "Dniester",
+      "Danube",
+      "Siret"
+     ],
+     "why": "The Dniester flows to the east."
+    },
+    {
+     "level": 1,
+     "q": "Which landlocked country lies between Romania and Ukraine?",
+     "a": "Moldova",
+     "wrong": [
+      "Belarus",
+      "Slovakia",
+      "Hungary"
+     ],
+     "why": "It is one of Europe's smaller countries."
+    },
+    {
+     "level": 2,
+     "q": "What is Moldova's highest hill?",
+     "a": "Bălănești Hill",
+     "wrong": [
+      "Mount Bucegi",
+      "Mount Hoverla",
+      "Mount Moldoveanu"
+     ],
+     "why": "It is only about 430 m high."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which poem by Alexei Mateevici is the national anthem?",
+     "a": "Limba noastră (Our Language)",
+     "wrong": [
+      "Deșteaptă-te, române!",
+      "Hora Unirii",
+      "Luceafărul"
+     ],
+     "why": "It praises the Romanian language."
+    },
+    {
+     "level": 1,
+     "q": "Which song by O-Zone from Moldova became a global hit in 2004?",
+     "a": "Dragostea Din Tei",
+     "wrong": [
+      "Ievan Polkka",
+      "Hej Sokoły",
+      "Kalinka"
+     ],
+     "why": "It is known as the 'Numa Numa' song."
+    },
+    {
+     "level": 2,
+     "q": "Which band from Moldova sang 'Hey Mamma' at Eurovision 2017?",
+     "a": "SunStroke Project",
+     "wrong": [
+      "O-Zone",
+      "Zdob și Zdub",
+      "Pasha Parfeni"
+     ],
+     "why": "Their 'Epic Sax Guy' became a meme."
+    },
+    {
+     "level": 3,
+     "q": "Which folk-punk band has represented Moldova at Eurovision several times?",
+     "a": "Zdob și Zdub",
+     "wrong": [
+      "O-Zone",
+      "SunStroke Project",
+      "Carla's Dreams"
+     ],
+     "why": "They finished sixth in 2005."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
      "level": 2,
      "q": "Which scholar-prince wrote 'Descriptio Moldaviae'?",
@@ -106,28 +235,6 @@
     },
     {
      "level": 2,
-     "q": "In which year did Moldova become an EU candidate country?",
-     "a": "2022",
-     "wrong": [
-      "2014",
-      "2019",
-      "2009"
-     ],
-     "why": "It applied soon after Russia invaded Ukraine."
-    },
-    {
-     "level": 2,
-     "q": "Which Soviet republic was Moldova part of until 1991?",
-     "a": "Moldavian SSR",
-     "wrong": [
-      "Ukrainian SSR",
-      "Romanian SSR",
-      "Bessarabian SSR"
-     ],
-     "why": "It was created in 1940."
-    },
-    {
-     "level": 2,
      "q": "Which poet is Moldova's national poet, shared with Romania?",
      "a": "Mihai Eminescu",
      "wrong": [
@@ -136,45 +243,58 @@
       "Alexei Mateevici"
      ],
      "why": "He wrote 'Luceafărul'."
-    },
-    {
-     "level": 3,
-     "q": "Which autonomous Turkic-speaking region is in southern Moldova?",
-     "a": "Gagauzia",
-     "wrong": [
-      "Transnistria",
-      "Bukovina",
-      "Budjak"
-     ],
-     "why": "Its capital is Comrat."
-    },
-    {
-     "level": 3,
-     "q": "Which poem by Alexei Mateevici is the national anthem?",
-     "a": "Limba noastră (Our Language)",
-     "wrong": [
-      "Deșteaptă-te, române!",
-      "Hora Unirii",
-      "Luceafărul"
-     ],
-     "why": "It praises the Romanian language."
-    },
-    {
-     "level": 3,
-     "q": "Which 2009 protests are called the 'Twitter Revolution'?",
-     "a": "April 2009 protests in Chișinău",
-     "wrong": [
-      "Orange Revolution",
-      "Velvet Revolution",
-      "Rose Revolution"
-     ],
-     "why": "They followed disputed elections."
     }
    ]
   },
   {
-   "name": "Moldova: Places & Culture",
+   "category": "Politics",
+   "name": "Politics",
    "questions": [
+    {
+     "level": 2,
+     "q": "In which year did Moldova become an EU candidate country?",
+     "a": "2022",
+     "wrong": [
+      "2014",
+      "2019",
+      "2009"
+     ],
+     "why": "It applied soon after Russia invaded Ukraine."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which cave monastery is carved into cliffs above the Răut River?",
+     "a": "Orheiul Vechi",
+     "wrong": [
+      "Țipova",
+      "Saharna",
+      "Căpriana"
+     ],
+     "why": "It is a famous archaeological complex."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which language is Moldova's official language?",
+     "a": "Romanian",
+     "wrong": [
+      "Russian",
+      "Ukrainian",
+      "Gagauz"
+     ],
+     "why": "In 2023 the constitution named it Romanian."
+    },
     {
      "level": 1,
      "q": "What is Moldova's currency?",
@@ -210,28 +330,6 @@
     },
     {
      "level": 1,
-     "q": "Which river forms most of Moldova's border with Romania?",
-     "a": "Prut",
-     "wrong": [
-      "Dniester",
-      "Danube",
-      "Siret"
-     ],
-     "why": "The Dniester flows to the east."
-    },
-    {
-     "level": 1,
-     "q": "Which landlocked country lies between Romania and Ukraine?",
-     "a": "Moldova",
-     "wrong": [
-      "Belarus",
-      "Slovakia",
-      "Hungary"
-     ],
-     "why": "It is one of Europe's smaller countries."
-    },
-    {
-     "level": 1,
      "q": "Which cornmeal porridge is a staple?",
      "a": "Mămăligă",
      "wrong": [
@@ -240,28 +338,6 @@
       "Kasha"
      ],
      "why": "It is served with cheese and sour cream."
-    },
-    {
-     "level": 1,
-     "q": "Which song by O-Zone from Moldova became a global hit in 2004?",
-     "a": "Dragostea Din Tei",
-     "wrong": [
-      "Ievan Polkka",
-      "Hej Sokoły",
-      "Kalinka"
-     ],
-     "why": "It is known as the 'Numa Numa' song."
-    },
-    {
-     "level": 2,
-     "q": "Which cave monastery is carved into cliffs above the Răut River?",
-     "a": "Orheiul Vechi",
-     "wrong": [
-      "Țipova",
-      "Saharna",
-      "Căpriana"
-     ],
-     "why": "It is a famous archaeological complex."
     },
     {
      "level": 2,
@@ -286,39 +362,6 @@
      "why": "Its tunnels run for about 120 km."
     },
     {
-     "level": 2,
-     "q": "Which band from Moldova sang 'Hey Mamma' at Eurovision 2017?",
-     "a": "SunStroke Project",
-     "wrong": [
-      "O-Zone",
-      "Zdob și Zdub",
-      "Pasha Parfeni"
-     ],
-     "why": "Their 'Epic Sax Guy' became a meme."
-    },
-    {
-     "level": 2,
-     "q": "What is Moldova's highest hill?",
-     "a": "Bălănești Hill",
-     "wrong": [
-      "Mount Bucegi",
-      "Mount Hoverla",
-      "Mount Moldoveanu"
-     ],
-     "why": "It is only about 430 m high."
-    },
-    {
-     "level": 3,
-     "q": "Which Moldovan wine estate's wines were served at Queen Victoria's court?",
-     "a": "Purcari",
-     "wrong": [
-      "Cricova",
-      "Mileștii Mici",
-      "Asconi"
-     ],
-     "why": "Its Negru de Purcari is famous."
-    },
-    {
      "level": 3,
      "q": "Which pies filled with cheese or cabbage are a Moldovan snack?",
      "a": "Plăcinte",
@@ -328,17 +371,6 @@
       "Burek"
      ],
      "why": "They are often fried or baked."
-    },
-    {
-     "level": 3,
-     "q": "Which folk-punk band has represented Moldova at Eurovision several times?",
-     "a": "Zdob și Zdub",
-     "wrong": [
-      "O-Zone",
-      "SunStroke Project",
-      "Carla's Dreams"
-     ],
-     "why": "They finished sixth in 2005."
     }
    ]
   }

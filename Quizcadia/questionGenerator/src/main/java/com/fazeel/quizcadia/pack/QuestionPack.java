@@ -29,7 +29,19 @@ public record QuestionPack(String category, String country, List<PackTopic> topi
 	public static final String TYPE = "pack";
 
 	@JsonIgnoreProperties(ignoreUnknown = true)
-	public record PackTopic(String name, List<PackQuestion> questions) {
+	/**
+	 * @param category the shared bank category the topic belongs to (e.g. History); when set, the topic's
+	 *        questions join that shared topic, each tagged with the pack's country, instead of a country topic
+	 */
+	public record PackTopic(String category, String name, List<PackQuestion> questions) {
+
+		public PackTopic(String name, List<PackQuestion> questions) {
+			this(null, name, questions);
+		}
+
+		public boolean shared() {
+			return category != null && !category.isBlank();
+		}
 	}
 
 	/** {@code a} is the answer, {@code wrong} the other options; {@code why} is shown after answering. */
@@ -52,6 +64,12 @@ public record QuestionPack(String category, String country, List<PackTopic> topi
 
 	/** The bank questions of one topic. Options are shuffled the same way every time, so ids and order stay stable. */
 	public static List<Questions> questions(PackTopic topic) {
+		return questions(topic, null);
+	}
+
+	/** Like {@link #questions(PackTopic)}, tagging each question with the pack's country (e.g. IN) when it has one. */
+	public static List<Questions> questions(PackTopic topic, String country) {
+		String tag = country == null || country.isBlank() ? null : country.trim().toUpperCase(java.util.Locale.ROOT);
 		List<Questions> out = new ArrayList<>();
 		for (PackQuestion p : topic.questions()) {
 			Questions q = new Questions();
@@ -69,6 +87,7 @@ public record QuestionPack(String category, String country, List<PackTopic> topi
 			q.setOption4(options.size() > 3 ? options.get(3) : null);
 			q.setCorrectAnswer(p.a().trim());
 			q.setExplanation(p.why());
+			q.setCountry(tag);
 			out.add(q);
 		}
 		return out;

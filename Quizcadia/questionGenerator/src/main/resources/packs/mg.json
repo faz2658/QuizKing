@@ -3,19 +3,9 @@
  "country": "MG",
  "topics": [
   {
-   "name": "Madagascar: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Madagascar?",
-     "a": "Antananarivo",
-     "wrong": [
-      "Toamasina",
-      "Antsirabe",
-      "Mahajanga"
-     ],
-     "why": "It is called 'Tana'."
-    },
     {
      "level": 1,
      "q": "From which country did Madagascar gain independence in 1960?",
@@ -26,61 +16,6 @@
       "Netherlands"
      ],
      "why": "26 June is Independence Day."
-    },
-    {
-     "level": 1,
-     "q": "Which ocean surrounds Madagascar?",
-     "a": "Indian Ocean",
-     "wrong": [
-      "Atlantic Ocean",
-      "Pacific Ocean",
-      "Southern Ocean"
-     ],
-     "why": "It is the world's fourth-largest island."
-    },
-    {
-     "level": 1,
-     "q": "What is Madagascar's currency?",
-     "a": "Ariary",
-     "wrong": [
-      "Rupee",
-      "Franc",
-      "Shilling"
-     ],
-     "why": "It is one of two currencies not divided into tens."
-    },
-    {
-     "level": 1,
-     "q": "Which spice is Madagascar the world's top producer of?",
-     "a": "Vanilla",
-     "wrong": [
-      "Cinnamon",
-      "Pepper",
-      "Nutmeg"
-     ],
-     "why": "It grows well in the northeast."
-    },
-    {
-     "level": 1,
-     "q": "Which animals live only on Madagascar and are primates?",
-     "a": "Lemurs",
-     "wrong": [
-      "Monkeys",
-      "Lorises",
-      "Tarsiers"
-     ],
-     "why": "There are over 100 kinds."
-    },
-    {
-     "level": 1,
-     "q": "Which group of people settled Madagascar from across the ocean around 1,500 years ago?",
-     "a": "Austronesians from Borneo",
-     "wrong": [
-      "Arabs from Oman",
-      "Bantu from Kenya",
-      "Indians from Gujarat"
-     ],
-     "why": "The Malagasy language comes from Borneo."
     },
     {
      "level": 2,
@@ -173,73 +108,41 @@
    ]
   },
   {
-   "name": "Madagascar: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "Which avenue of giant trees is a famous photo spot?",
-     "a": "Avenue of the Baobabs",
+     "q": "What is the capital of Madagascar?",
+     "a": "Antananarivo",
      "wrong": [
-      "Avenue of Palms",
-      "Palm Alley",
-      "Tree Tunnel"
+      "Toamasina",
+      "Antsirabe",
+      "Mahajanga"
      ],
-     "why": "It is near Morondava."
+     "why": "It is called 'Tana'."
     },
     {
      "level": 1,
-     "q": "Which lemur is famous for its black-and-white ringed tail?",
-     "a": "Ring-tailed lemur",
+     "q": "Which ocean surrounds Madagascar?",
+     "a": "Indian Ocean",
      "wrong": [
-      "Indri",
-      "Aye-aye",
-      "Sifaka"
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Southern Ocean"
      ],
-     "why": "It is often seen sunbathing."
+     "why": "It is the world's fourth-largest island."
     },
     {
      "level": 1,
-     "q": "Which animated film is set on Madagascar?",
-     "a": "Madagascar",
+     "q": "Which group of people settled Madagascar from across the ocean around 1,500 years ago?",
+     "a": "Austronesians from Borneo",
      "wrong": [
-      "The Lion King",
-      "Rio",
-      "Moana"
+      "Arabs from Oman",
+      "Bantu from Kenya",
+      "Indians from Gujarat"
      ],
-     "why": "It came out in 2005."
-    },
-    {
-     "level": 1,
-     "q": "Which predator is Madagascar's largest carnivore?",
-     "a": "Fossa",
-     "wrong": [
-      "Leopard",
-      "Hyena",
-      "Lynx"
-     ],
-     "why": "It hunts lemurs."
-    },
-    {
-     "level": 1,
-     "q": "What is the staple food eaten at almost every meal?",
-     "a": "Rice",
-     "wrong": [
-      "Maize",
-      "Cassava",
-      "Wheat"
-     ],
-     "why": "Malagasy eat more rice per person than most countries."
-    },
-    {
-     "level": 1,
-     "q": "Which colour-changing reptiles are common in Madagascar?",
-     "a": "Chameleons",
-     "wrong": [
-      "Iguanas",
-      "Geckos",
-      "Komodo dragons"
-     ],
-     "why": "About half the world's kinds live there."
+     "why": "The Malagasy language comes from Borneo."
     },
     {
      "level": 1,
@@ -265,6 +168,112 @@
     },
     {
      "level": 2,
+     "q": "Which island off the east coast was a pirate base?",
+     "a": "Île Sainte-Marie (Nosy Boraha)",
+     "wrong": [
+      "Nosy Be",
+      "Mauritius",
+      "Zanzibar"
+     ],
+     "why": "It has a pirate cemetery."
+    },
+    {
+     "level": 3,
+     "q": "Which national park has a sandstone massif and natural pools?",
+     "a": "Isalo National Park",
+     "wrong": [
+      "Ranomafana",
+      "Andasibe",
+      "Masoala"
+     ],
+     "why": "It is in the south-centre."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which largest living lemur sings loudly?",
+     "a": "Indri",
+     "wrong": [
+      "Sifaka",
+      "Aye-aye",
+      "Ring-tailed lemur"
+     ],
+     "why": "Its song can carry for kilometres."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which animated film is set on Madagascar?",
+     "a": "Madagascar",
+     "wrong": [
+      "The Lion King",
+      "Rio",
+      "Moana"
+     ],
+     "why": "It came out in 2005."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which animals live only on Madagascar and are primates?",
+     "a": "Lemurs",
+     "wrong": [
+      "Monkeys",
+      "Lorises",
+      "Tarsiers"
+     ],
+     "why": "There are over 100 kinds."
+    },
+    {
+     "level": 1,
+     "q": "Which lemur is famous for its black-and-white ringed tail?",
+     "a": "Ring-tailed lemur",
+     "wrong": [
+      "Indri",
+      "Aye-aye",
+      "Sifaka"
+     ],
+     "why": "It is often seen sunbathing."
+    },
+    {
+     "level": 1,
+     "q": "Which predator is Madagascar's largest carnivore?",
+     "a": "Fossa",
+     "wrong": [
+      "Leopard",
+      "Hyena",
+      "Lynx"
+     ],
+     "why": "It hunts lemurs."
+    },
+    {
+     "level": 1,
+     "q": "Which colour-changing reptiles are common in Madagascar?",
+     "a": "Chameleons",
+     "wrong": [
+      "Iguanas",
+      "Geckos",
+      "Komodo dragons"
+     ],
+     "why": "About half the world's kinds live there."
+    },
+    {
+     "level": 2,
      "q": "Which lemur with a long middle finger taps trees for grubs?",
      "a": "Aye-aye",
      "wrong": [
@@ -273,6 +282,56 @@
       "Mouse lemur"
      ],
      "why": "Some people think it brings bad luck."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Madagascar's currency?",
+     "a": "Ariary",
+     "wrong": [
+      "Rupee",
+      "Franc",
+      "Shilling"
+     ],
+     "why": "It is one of two currencies not divided into tens."
+    },
+    {
+     "level": 1,
+     "q": "Which spice is Madagascar the world's top producer of?",
+     "a": "Vanilla",
+     "wrong": [
+      "Cinnamon",
+      "Pepper",
+      "Nutmeg"
+     ],
+     "why": "It grows well in the northeast."
+    },
+    {
+     "level": 1,
+     "q": "Which avenue of giant trees is a famous photo spot?",
+     "a": "Avenue of the Baobabs",
+     "wrong": [
+      "Avenue of Palms",
+      "Palm Alley",
+      "Tree Tunnel"
+     ],
+     "why": "It is near Morondava."
+    },
+    {
+     "level": 1,
+     "q": "What is the staple food eaten at almost every meal?",
+     "a": "Rice",
+     "wrong": [
+      "Maize",
+      "Cassava",
+      "Wheat"
+     ],
+     "why": "Malagasy eat more rice per person than most countries."
     },
     {
      "level": 2,
@@ -297,28 +356,6 @@
      "why": "It is served with rice."
     },
     {
-     "level": 2,
-     "q": "Which island off the east coast was a pirate base?",
-     "a": "Île Sainte-Marie (Nosy Boraha)",
-     "wrong": [
-      "Nosy Be",
-      "Mauritius",
-      "Zanzibar"
-     ],
-     "why": "It has a pirate cemetery."
-    },
-    {
-     "level": 3,
-     "q": "Which largest living lemur sings loudly?",
-     "a": "Indri",
-     "wrong": [
-      "Sifaka",
-      "Aye-aye",
-      "Ring-tailed lemur"
-     ],
-     "why": "Its song can carry for kilometres."
-    },
-    {
      "level": 3,
      "q": "What are taboos called in Malagasy culture?",
      "a": "Fady",
@@ -328,17 +365,6 @@
       "Vintana"
      ],
      "why": "They differ from place to place."
-    },
-    {
-     "level": 3,
-     "q": "Which national park has a sandstone massif and natural pools?",
-     "a": "Isalo National Park",
-     "wrong": [
-      "Ranomafana",
-      "Andasibe",
-      "Masoala"
-     ],
-     "why": "It is in the south-centre."
     }
    ]
   }

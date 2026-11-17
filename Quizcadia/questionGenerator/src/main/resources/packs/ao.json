@@ -3,19 +3,9 @@
  "country": "AO",
  "topics": [
   {
-   "name": "Angola: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Angola?",
-     "a": "Luanda",
-     "wrong": [
-      "Huambo",
-      "Lobito",
-      "Benguela"
-     ],
-     "why": "It is one of Africa's most expensive cities."
-    },
     {
      "level": 1,
      "q": "From which country did Angola gain independence in 1975?",
@@ -26,39 +16,6 @@
       "Belgium"
      ],
      "why": "A civil war began at once."
-    },
-    {
-     "level": 1,
-     "q": "What is Angola's currency?",
-     "a": "Kwanza",
-     "wrong": [
-      "Escudo",
-      "Rand",
-      "Kwacha"
-     ],
-     "why": "It is named after the Kwanza River."
-    },
-    {
-     "level": 1,
-     "q": "Which resource is Angola's main export?",
-     "a": "Oil",
-     "wrong": [
-      "Gold",
-      "Coffee",
-      "Copper"
-     ],
-     "why": "It is one of Africa's largest producers."
-    },
-    {
-     "level": 1,
-     "q": "What is the official language of Angola?",
-     "a": "Portuguese",
-     "wrong": [
-      "Spanish",
-      "French",
-      "English"
-     ],
-     "why": "It is one of Africa's largest Portuguese-speaking countries."
     },
     {
      "level": 1,
@@ -106,17 +63,6 @@
     },
     {
      "level": 2,
-     "q": "Who has been President of Angola since 2017?",
-     "a": "João Lourenço",
-     "wrong": [
-      "José Eduardo dos Santos",
-      "Adalberto Costa Júnior",
-      "Isabel dos Santos"
-     ],
-     "why": "He was a defence minister."
-    },
-    {
-     "level": 2,
      "q": "Which 17th-century queen fought the Portuguese?",
      "a": "Queen Nzinga",
      "wrong": [
@@ -139,6 +85,34 @@
     },
     {
      "level": 3,
+     "q": "Which town in the far north was the capital of the Kingdom of Kongo?",
+     "a": "M'banza-Kongo",
+     "wrong": [
+      "Soyo",
+      "Uíge",
+      "Luanda"
+     ],
+     "why": "It is a UNESCO site."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Angola?",
+     "a": "Luanda",
+     "wrong": [
+      "Huambo",
+      "Lobito",
+      "Benguela"
+     ],
+     "why": "It is one of Africa's most expensive cities."
+    },
+    {
+     "level": 3,
      "q": "Which oil-rich province is separated from the rest of Angola?",
      "a": "Cabinda",
      "wrong": [
@@ -149,31 +123,82 @@
      "why": "It lies between the two Congos."
     },
     {
-     "level": 3,
-     "q": "Which party has ruled Angola since independence?",
-     "a": "MPLA",
+     "level": 1,
+     "q": "Which waterfall is one of Africa's largest by volume?",
+     "a": "Kalandula Falls",
      "wrong": [
-      "UNITA",
-      "FNLA",
-      "FRELIMO"
+      "Victoria Falls",
+      "Murchison Falls",
+      "Tugela Falls"
      ],
-     "why": "It was Marxist in the early years."
+     "why": "It is on the Lucala River."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is on Angola's coast?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Red Sea",
+      "Mediterranean Sea"
+     ],
+     "why": "The coast is long and dry in the south."
+    },
+    {
+     "level": 2,
+     "q": "Which desert in the south has the strange welwitschia plant?",
+     "a": "Namib Desert",
+     "wrong": [
+      "Kalahari",
+      "Sahara",
+      "Karoo"
+     ],
+     "why": "It can live for over 1,000 years."
+    },
+    {
+     "level": 2,
+     "q": "Which national park near Luanda has beaches and wildlife?",
+     "a": "Kissama National Park",
+     "wrong": [
+      "Iona National Park",
+      "Kruger",
+      "Etosha"
+     ],
+     "why": "Animals were flown in by 'Operation Noah's Ark'."
     },
     {
      "level": 3,
-     "q": "Which country sent tens of thousands of troops to help the MPLA?",
-     "a": "Cuba",
+     "q": "Which crater lake region near Lubango has the Tundavala gap?",
+     "a": "Tundavala Fissure",
      "wrong": [
-      "North Korea",
-      "China",
-      "East Germany"
+      "Rift Valley",
+      "Fish River Canyon",
+      "Blyde Canyon"
      ],
-     "why": "They arrived in 1975."
+     "why": "It drops over 1,000 m."
     }
    ]
   },
   {
-   "name": "Angola: Places & Culture",
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which sport has Angola's men's team won 11 African championships?",
+     "a": "Basketball",
+     "wrong": [
+      "Football",
+      "Cricket",
+      "Rugby"
+     ],
+     "why": "They are AfroBasket record holders."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
     {
      "level": 1,
@@ -198,16 +223,50 @@
      "why": "It means 'hard bottom'."
     },
     {
-     "level": 1,
-     "q": "Which waterfall is one of Africa's largest by volume?",
-     "a": "Kalandula Falls",
+     "level": 3,
+     "q": "Which Angolan singer is called the 'father of semba'?",
+     "a": "Bonga",
      "wrong": [
-      "Victoria Falls",
-      "Murchison Falls",
-      "Tugela Falls"
+      "Paulo Flores",
+      "Waldemar Bastos",
+      "Yuri da Cunha"
      ],
-     "why": "It is on the Lucala River."
+     "why": "He was also an athlete."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who has been President of Angola since 2017?",
+     "a": "João Lourenço",
+     "wrong": [
+      "José Eduardo dos Santos",
+      "Adalberto Costa Júnior",
+      "Isabel dos Santos"
+     ],
+     "why": "He was a defence minister."
     },
+    {
+     "level": 3,
+     "q": "Which party has ruled Angola since independence?",
+     "a": "MPLA",
+     "wrong": [
+      "UNITA",
+      "FNLA",
+      "FRELIMO"
+     ],
+     "why": "It was Marxist in the early years."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
     {
      "level": 1,
      "q": "Which giant antelope is Angola's national symbol?",
@@ -218,17 +277,56 @@
       "Oryx"
      ],
      "why": "It was thought extinct after the war."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Angola's currency?",
+     "a": "Kwanza",
+     "wrong": [
+      "Escudo",
+      "Rand",
+      "Kwacha"
+     ],
+     "why": "It is named after the Kwanza River."
     },
     {
      "level": 1,
-     "q": "Which ocean is on Angola's coast?",
-     "a": "Atlantic Ocean",
+     "q": "Which resource is Angola's main export?",
+     "a": "Oil",
      "wrong": [
-      "Indian Ocean",
-      "Red Sea",
-      "Mediterranean Sea"
+      "Gold",
+      "Coffee",
+      "Copper"
      ],
-     "why": "The coast is long and dry in the south."
+     "why": "It is one of Africa's largest producers."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of Angola?",
+     "a": "Portuguese",
+     "wrong": [
+      "Spanish",
+      "French",
+      "English"
+     ],
+     "why": "It is one of Africa's largest Portuguese-speaking countries."
+    },
+    {
+     "level": 3,
+     "q": "Which country sent tens of thousands of troops to help the MPLA?",
+     "a": "Cuba",
+     "wrong": [
+      "North Korea",
+      "China",
+      "East Germany"
+     ],
+     "why": "They arrived in 1975."
     },
     {
      "level": 1,
@@ -240,39 +338,6 @@
       "Malecón"
      ],
      "why": "It was rebuilt in the 2010s."
-    },
-    {
-     "level": 1,
-     "q": "In which sport has Angola's men's team won 11 African championships?",
-     "a": "Basketball",
-     "wrong": [
-      "Football",
-      "Cricket",
-      "Rugby"
-     ],
-     "why": "They are AfroBasket record holders."
-    },
-    {
-     "level": 2,
-     "q": "Which desert in the south has the strange welwitschia plant?",
-     "a": "Namib Desert",
-     "wrong": [
-      "Kalahari",
-      "Sahara",
-      "Karoo"
-     ],
-     "why": "It can live for over 1,000 years."
-    },
-    {
-     "level": 2,
-     "q": "Which national park near Luanda has beaches and wildlife?",
-     "a": "Kissama National Park",
-     "wrong": [
-      "Iona National Park",
-      "Kruger",
-      "Etosha"
-     ],
-     "why": "Animals were flown in by 'Operation Noah's Ark'."
     },
     {
      "level": 2,
@@ -306,39 +371,6 @@
       "Pap"
      ],
      "why": "It is eaten with stew."
-    },
-    {
-     "level": 3,
-     "q": "Which crater lake region near Lubango has the Tundavala gap?",
-     "a": "Tundavala Fissure",
-     "wrong": [
-      "Rift Valley",
-      "Fish River Canyon",
-      "Blyde Canyon"
-     ],
-     "why": "It drops over 1,000 m."
-    },
-    {
-     "level": 3,
-     "q": "Which Angolan singer is called the 'father of semba'?",
-     "a": "Bonga",
-     "wrong": [
-      "Paulo Flores",
-      "Waldemar Bastos",
-      "Yuri da Cunha"
-     ],
-     "why": "He was also an athlete."
-    },
-    {
-     "level": 3,
-     "q": "Which town in the far north was the capital of the Kingdom of Kongo?",
-     "a": "M'banza-Kongo",
-     "wrong": [
-      "Soyo",
-      "Uíge",
-      "Luanda"
-     ],
-     "why": "It is a UNESCO site."
     }
    ]
   }

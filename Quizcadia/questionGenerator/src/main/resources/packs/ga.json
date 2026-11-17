@@ -3,19 +3,9 @@
  "country": "GA",
  "topics": [
   {
-   "name": "Gabon: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Gabon?",
-     "a": "Libreville",
-     "wrong": [
-      "Port-Gentil",
-      "Franceville",
-      "Oyem"
-     ],
-     "why": "It was founded by freed slaves."
-    },
     {
      "level": 1,
      "q": "From which country did Gabon gain independence in 1960?",
@@ -37,50 +27,6 @@
       "Oligui family"
      ],
      "why": "Omar Bongo and then his son Ali."
-    },
-    {
-     "level": 1,
-     "q": "Who took power in Gabon in a 2023 coup?",
-     "a": "Brice Oligui Nguema",
-     "wrong": [
-      "Ali Bongo",
-      "Jean Ping",
-      "Pierre-Claver Maganga Moussavou"
-     ],
-     "why": "He was elected President in 2025."
-    },
-    {
-     "level": 1,
-     "q": "What is Gabon's currency?",
-     "a": "Central African CFA franc",
-     "wrong": [
-      "West African CFA franc",
-      "Naira",
-      "Cedi"
-     ],
-     "why": "It is shared by six countries."
-    },
-    {
-     "level": 1,
-     "q": "Which resource made Gabon one of Africa's richer countries?",
-     "a": "Oil",
-     "wrong": [
-      "Gold",
-      "Coffee",
-      "Diamonds"
-     ],
-     "why": "It is an OPEC member."
-    },
-    {
-     "level": 1,
-     "q": "How much of Gabon is covered by rainforest?",
-     "a": "About 88%",
-     "wrong": [
-      "About 30%",
-      "About 50%",
-      "About 10%"
-     ],
-     "why": "It is one of the greenest countries."
     },
     {
      "level": 2,
@@ -105,50 +51,6 @@
      "why": "He was one of the longest-serving leaders."
     },
     {
-     "level": 2,
-     "q": "Which doctor won the Nobel Peace Prize for his hospital in Lambaréné?",
-     "a": "Albert Schweitzer",
-     "wrong": [
-      "Paul Farmer",
-      "Denis Mukwege",
-      "Alexander Fleming"
-     ],
-     "why": "He opened it in 1913."
-    },
-    {
-     "level": 2,
-     "q": "Which natural nuclear reactors were found in Gabon?",
-     "a": "Oklo reactors",
-     "wrong": [
-      "Chernobyl",
-      "Rocky Flats",
-      "Dimona"
-     ],
-     "why": "They ran two billion years ago."
-    },
-    {
-     "level": 2,
-     "q": "Which former African Union chief ran against Ali Bongo in 2016?",
-     "a": "Jean Ping",
-     "wrong": [
-      "Albert Ondo Ossa",
-      "Léon M'ba",
-      "Casimir Oyé Mba"
-     ],
-     "why": "He was President of the UN General Assembly in 2004."
-    },
-    {
-     "level": 3,
-     "q": "How was Gabon's new constitution approved in 2024?",
-     "a": "In a referendum",
-     "wrong": [
-      "By the army council",
-      "By parliament",
-      "By the courts"
-     ],
-     "why": "It allows seven-year terms."
-    },
-    {
      "level": 3,
      "q": "Which 1964 coup was reversed by French troops?",
      "a": "1964 Gabon coup",
@@ -158,33 +60,34 @@
       "1990 coup"
      ],
      "why": "Léon M'ba was put back in power."
-    },
-    {
-     "level": 3,
-     "q": "Which Bantu spirit tradition uses the iboga plant?",
-     "a": "Bwiti",
-     "wrong": [
-      "Vodun",
-      "Candomblé",
-      "Zar"
-     ],
-     "why": "It is practised in initiation rites."
     }
    ]
   },
   {
-   "name": "Gabon: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "Which national park is famous for 'surfing hippos' on the beach?",
-     "a": "Loango National Park",
+     "q": "What is the capital of Gabon?",
+     "a": "Libreville",
      "wrong": [
-      "Lopé",
-      "Ivindo",
-      "Akanda"
+      "Port-Gentil",
+      "Franceville",
+      "Oyem"
      ],
-     "why": "Elephants walk on the beach too."
+     "why": "It was founded by freed slaves."
+    },
+    {
+     "level": 1,
+     "q": "How much of Gabon is covered by rainforest?",
+     "a": "About 88%",
+     "wrong": [
+      "About 30%",
+      "About 50%",
+      "About 10%"
+     ],
+     "why": "It is one of the greenest countries."
     },
     {
      "level": 1,
@@ -196,17 +99,6 @@
       "About 80%"
      ],
      "why": "They were created in 2002."
-    },
-    {
-     "level": 1,
-     "q": "Which forest elephants live in Gabon in large numbers?",
-     "a": "African forest elephants",
-     "wrong": [
-      "Asian elephants",
-      "Savanna elephants",
-      "Pygmy elephants of Borneo"
-     ],
-     "why": "Gabon has most of the world's population."
     },
     {
      "level": 1,
@@ -231,28 +123,6 @@
      "why": "Lambaréné is on it."
     },
     {
-     "level": 1,
-     "q": "Which footballer from Gabon starred for Dortmund and Arsenal?",
-     "a": "Pierre-Emerick Aubameyang",
-     "wrong": [
-      "Didier Drogba",
-      "Samuel Eto'o",
-      "Mario Lemina"
-     ],
-     "why": "He was African Player of the Year in 2015."
-    },
-    {
-     "level": 1,
-     "q": "Which language is official in Gabon?",
-     "a": "French",
-     "wrong": [
-      "English",
-      "Portuguese",
-      "Fang"
-     ],
-     "why": "Fang is widely spoken."
-    },
-    {
      "level": 2,
      "q": "Which national park with grassland and rainforest is a UNESCO site?",
      "a": "Lopé National Park",
@@ -265,17 +135,6 @@
     },
     {
      "level": 2,
-     "q": "Which monkey with a colourful face lives in big groups in Gabon?",
-     "a": "Mandrill",
-     "wrong": [
-      "Baboon",
-      "Gorilla",
-      "Chimpanzee"
-     ],
-     "why": "Groups can number over 800."
-    },
-    {
-     "level": 2,
      "q": "Which national park has the Kongou Falls?",
      "a": "Ivindo National Park",
      "wrong": [
@@ -284,28 +143,6 @@
       "Pongara"
      ],
      "why": "It is a UNESCO site."
-    },
-    {
-     "level": 2,
-     "q": "What is the national dish of chicken in palm nut sauce?",
-     "a": "Poulet nyembwe",
-     "wrong": [
-      "Mafé",
-      "Ndolé",
-      "Moambe"
-     ],
-     "why": "It is served with rice or plantains."
-    },
-    {
-     "level": 2,
-     "q": "Which Fang masks inspired Picasso?",
-     "a": "Fang masks",
-     "wrong": [
-      "Dogon masks",
-      "Dan masks",
-      "Bamum masks"
-     ],
-     "why": "Their reliquary figures are famous."
     },
     {
      "level": 3,
@@ -320,17 +157,6 @@
     },
     {
      "level": 3,
-     "q": "Which railway links Libreville to Franceville?",
-     "a": "Trans-Gabon Railway",
-     "wrong": [
-      "Tazara",
-      "Benguela Railway",
-      "Congo–Ocean Railway"
-     ],
-     "why": "It opened in 1987."
-    },
-    {
-     "level": 3,
      "q": "Which marine reserve network made Gabon a leader in ocean protection?",
      "a": "Network of 20 marine protected areas",
      "wrong": [
@@ -339,6 +165,212 @@
       "Chagos Reserve"
      ],
      "why": "It was set up in 2017."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which national park is famous for 'surfing hippos' on the beach?",
+     "a": "Loango National Park",
+     "wrong": [
+      "Lopé",
+      "Ivindo",
+      "Akanda"
+     ],
+     "why": "Elephants walk on the beach too."
+    },
+    {
+     "level": 1,
+     "q": "Which footballer from Gabon starred for Dortmund and Arsenal?",
+     "a": "Pierre-Emerick Aubameyang",
+     "wrong": [
+      "Didier Drogba",
+      "Samuel Eto'o",
+      "Mario Lemina"
+     ],
+     "why": "He was African Player of the Year in 2015."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who took power in Gabon in a 2023 coup?",
+     "a": "Brice Oligui Nguema",
+     "wrong": [
+      "Ali Bongo",
+      "Jean Ping",
+      "Pierre-Claver Maganga Moussavou"
+     ],
+     "why": "He was elected President in 2025."
+    },
+    {
+     "level": 2,
+     "q": "Which former African Union chief ran against Ali Bongo in 2016?",
+     "a": "Jean Ping",
+     "wrong": [
+      "Albert Ondo Ossa",
+      "Léon M'ba",
+      "Casimir Oyé Mba"
+     ],
+     "why": "He was President of the UN General Assembly in 2004."
+    },
+    {
+     "level": 3,
+     "q": "How was Gabon's new constitution approved in 2024?",
+     "a": "In a referendum",
+     "wrong": [
+      "By the army council",
+      "By parliament",
+      "By the courts"
+     ],
+     "why": "It allows seven-year terms."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Fang masks inspired Picasso?",
+     "a": "Fang masks",
+     "wrong": [
+      "Dogon masks",
+      "Dan masks",
+      "Bamum masks"
+     ],
+     "why": "Their reliquary figures are famous."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which forest elephants live in Gabon in large numbers?",
+     "a": "African forest elephants",
+     "wrong": [
+      "Asian elephants",
+      "Savanna elephants",
+      "Pygmy elephants of Borneo"
+     ],
+     "why": "Gabon has most of the world's population."
+    },
+    {
+     "level": 2,
+     "q": "Which monkey with a colourful face lives in big groups in Gabon?",
+     "a": "Mandrill",
+     "wrong": [
+      "Baboon",
+      "Gorilla",
+      "Chimpanzee"
+     ],
+     "why": "Groups can number over 800."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Gabon's currency?",
+     "a": "Central African CFA franc",
+     "wrong": [
+      "West African CFA franc",
+      "Naira",
+      "Cedi"
+     ],
+     "why": "It is shared by six countries."
+    },
+    {
+     "level": 1,
+     "q": "Which resource made Gabon one of Africa's richer countries?",
+     "a": "Oil",
+     "wrong": [
+      "Gold",
+      "Coffee",
+      "Diamonds"
+     ],
+     "why": "It is an OPEC member."
+    },
+    {
+     "level": 2,
+     "q": "Which doctor won the Nobel Peace Prize for his hospital in Lambaréné?",
+     "a": "Albert Schweitzer",
+     "wrong": [
+      "Paul Farmer",
+      "Denis Mukwege",
+      "Alexander Fleming"
+     ],
+     "why": "He opened it in 1913."
+    },
+    {
+     "level": 2,
+     "q": "Which natural nuclear reactors were found in Gabon?",
+     "a": "Oklo reactors",
+     "wrong": [
+      "Chernobyl",
+      "Rocky Flats",
+      "Dimona"
+     ],
+     "why": "They ran two billion years ago."
+    },
+    {
+     "level": 3,
+     "q": "Which Bantu spirit tradition uses the iboga plant?",
+     "a": "Bwiti",
+     "wrong": [
+      "Vodun",
+      "Candomblé",
+      "Zar"
+     ],
+     "why": "It is practised in initiation rites."
+    },
+    {
+     "level": 1,
+     "q": "Which language is official in Gabon?",
+     "a": "French",
+     "wrong": [
+      "English",
+      "Portuguese",
+      "Fang"
+     ],
+     "why": "Fang is widely spoken."
+    },
+    {
+     "level": 2,
+     "q": "What is the national dish of chicken in palm nut sauce?",
+     "a": "Poulet nyembwe",
+     "wrong": [
+      "Mafé",
+      "Ndolé",
+      "Moambe"
+     ],
+     "why": "It is served with rice or plantains."
+    },
+    {
+     "level": 3,
+     "q": "Which railway links Libreville to Franceville?",
+     "a": "Trans-Gabon Railway",
+     "wrong": [
+      "Tazara",
+      "Benguela Railway",
+      "Congo–Ocean Railway"
+     ],
+     "why": "It opened in 1987."
     }
    ]
   }

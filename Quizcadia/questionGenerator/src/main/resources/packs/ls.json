@@ -3,30 +3,9 @@
  "country": "LS",
  "topics": [
   {
-   "name": "Lesotho: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Lesotho?",
-     "a": "Maseru",
-     "wrong": [
-      "Teyateyaneng",
-      "Mafeteng",
-      "Leribe"
-     ],
-     "why": "It is on the Caledon River."
-    },
-    {
-     "level": 1,
-     "q": "Which country completely surrounds Lesotho?",
-     "a": "South Africa",
-     "wrong": [
-      "Botswana",
-      "Eswatini",
-      "Namibia"
-     ],
-     "why": "It is one of three countries inside another country."
-    },
     {
      "level": 1,
      "q": "What was Lesotho called before 1966?",
@@ -40,39 +19,6 @@
     },
     {
      "level": 1,
-     "q": "What is Lesotho's currency?",
-     "a": "Loti",
-     "wrong": [
-      "Kwacha",
-      "Pula",
-      "Lilangeni"
-     ],
-     "why": "The South African rand is also used."
-    },
-    {
-     "level": 1,
-     "q": "What kind of government does Lesotho have?",
-     "a": "Constitutional monarchy",
-     "wrong": [
-      "Republic",
-      "Absolute monarchy",
-      "Military rule"
-     ],
-     "why": "King Letsie III is head of state."
-    },
-    {
-     "level": 1,
-     "q": "What is Lesotho called because of its height?",
-     "a": "The Kingdom in the Sky",
-     "wrong": [
-      "The Pearl of Africa",
-      "The Warm Heart of Africa",
-      "Land of Clouds"
-     ],
-     "why": "All of it is over 1,000 m high."
-    },
-    {
-     "level": 1,
      "q": "Which king founded the Basotho nation in the 1800s?",
      "a": "Moshoeshoe I",
      "wrong": [
@@ -81,28 +27,6 @@
       "Mzilikazi"
      ],
      "why": "He made his base at Thaba Bosiu."
-    },
-    {
-     "level": 2,
-     "q": "Which mountain fortress was Moshoeshoe's stronghold?",
-     "a": "Thaba Bosiu",
-     "wrong": [
-      "Thaba Putsoa",
-      "Mount Moorosi",
-      "Qiloane"
-     ],
-     "why": "It was never captured."
-    },
-    {
-     "level": 2,
-     "q": "Which huge water project sends water to South Africa?",
-     "a": "Lesotho Highlands Water Project",
-     "wrong": [
-      "Kariba Project",
-      "Grand Inga",
-      "Cahora Bassa"
-     ],
-     "why": "Katse Dam is part of it."
     },
     {
      "level": 2,
@@ -127,17 +51,6 @@
      "why": "It was a SADC mission."
     },
     {
-     "level": 2,
-     "q": "Who became Prime Minister of Lesotho in 2022?",
-     "a": "Sam Matekane",
-     "wrong": [
-      "Thomas Thabane",
-      "Moeketsi Majoro",
-      "Pakalitha Mosisili"
-     ],
-     "why": "He is a businessman."
-    },
-    {
      "level": 3,
      "q": "Who was Lesotho's first Prime Minister?",
      "a": "Leabua Jonathan",
@@ -160,6 +73,45 @@
      "why": "Moshoeshoe asked Britain for protection."
     },
     {
+     "level": 2,
+     "q": "What kind of prehistoric tracks are found across Lesotho?",
+     "a": "Dinosaur footprints",
+     "wrong": [
+      "Mammoth tracks",
+      "Early human footprints",
+      "Sabre-tooth tracks"
+     ],
+     "why": "Many date from the early Jurassic."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Lesotho?",
+     "a": "Maseru",
+     "wrong": [
+      "Teyateyaneng",
+      "Mafeteng",
+      "Leribe"
+     ],
+     "why": "It is on the Caledon River."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain fortress was Moshoeshoe's stronghold?",
+     "a": "Thaba Bosiu",
+     "wrong": [
+      "Thaba Putsoa",
+      "Mount Moorosi",
+      "Qiloane"
+     ],
+     "why": "It was never captured."
+    },
+    {
      "level": 3,
      "q": "Which famous pass is one of Africa's highest roads into Lesotho?",
      "a": "Sani Pass",
@@ -169,33 +121,6 @@
       "Swartberg Pass"
      ],
      "why": "It climbs from South Africa."
-    }
-   ]
-  },
-  {
-   "name": "Lesotho: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which blanket is the national dress of Lesotho?",
-     "a": "Basotho blanket",
-     "wrong": [
-      "Kente cloth",
-      "Kanga",
-      "Shuka"
-     ],
-     "why": "It is worn as a cloak."
-    },
-    {
-     "level": 1,
-     "q": "Which conical straw hat is a national symbol?",
-     "a": "Mokorotlo",
-     "wrong": [
-      "Sombrero",
-      "Conical rice hat",
-      "Fez"
-     ],
-     "why": "It appears on the flag."
     },
     {
      "level": 1,
@@ -231,28 +156,6 @@
      "why": "It is about 3,480 m high."
     },
     {
-     "level": 1,
-     "q": "Which language is spoken by most people in Lesotho?",
-     "a": "Sesotho",
-     "wrong": [
-      "Setswana",
-      "Zulu",
-      "Xhosa"
-     ],
-     "why": "English is also official."
-    },
-    {
-     "level": 1,
-     "q": "Which winter sport can be enjoyed in Lesotho's highlands?",
-     "a": "Skiing",
-     "wrong": [
-      "Ice hockey",
-      "Surfing",
-      "Curling"
-     ],
-     "why": "Afriski is one of Africa's few ski resorts."
-    },
-    {
      "level": 2,
      "q": "Which waterfall is one of the highest single drops in southern Africa?",
      "a": "Maletsunyane Falls",
@@ -262,17 +165,6 @@
       "Augrabies Falls"
      ],
      "why": "It drops about 190 m."
-    },
-    {
-     "level": 2,
-     "q": "Which dam in Lesotho's highlands is one of Africa's tallest arch dams?",
-     "a": "Katse Dam",
-     "wrong": [
-      "Kariba Dam",
-      "Aswan High Dam",
-      "Cahora Bassa"
-     ],
-     "why": "It is about 185 m high."
     },
     {
      "level": 2,
@@ -297,15 +189,154 @@
      "why": "Its name means 'place of smoke'."
     },
     {
-     "level": 2,
-     "q": "What kind of prehistoric tracks are found across Lesotho?",
-     "a": "Dinosaur footprints",
+     "level": 3,
+     "q": "What is a Basotho mountain village hut called?",
+     "a": "Rondavel",
      "wrong": [
-      "Mammoth tracks",
-      "Early human footprints",
-      "Sabre-tooth tracks"
+      "Igloo",
+      "Yurt",
+      "Hogan"
      ],
-     "why": "Many date from the early Jurassic."
+     "why": "It is round with a thatched roof."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which winter sport can be enjoyed in Lesotho's highlands?",
+     "a": "Skiing",
+     "wrong": [
+      "Ice hockey",
+      "Surfing",
+      "Curling"
+     ],
+     "why": "Afriski is one of Africa's few ski resorts."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What kind of government does Lesotho have?",
+     "a": "Constitutional monarchy",
+     "wrong": [
+      "Republic",
+      "Absolute monarchy",
+      "Military rule"
+     ],
+     "why": "King Letsie III is head of state."
+    },
+    {
+     "level": 2,
+     "q": "Who became Prime Minister of Lesotho in 2022?",
+     "a": "Sam Matekane",
+     "wrong": [
+      "Thomas Thabane",
+      "Moeketsi Majoro",
+      "Pakalitha Mosisili"
+     ],
+     "why": "He is a businessman."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which country completely surrounds Lesotho?",
+     "a": "South Africa",
+     "wrong": [
+      "Botswana",
+      "Eswatini",
+      "Namibia"
+     ],
+     "why": "It is one of three countries inside another country."
+    },
+    {
+     "level": 1,
+     "q": "What is Lesotho's currency?",
+     "a": "Loti",
+     "wrong": [
+      "Kwacha",
+      "Pula",
+      "Lilangeni"
+     ],
+     "why": "The South African rand is also used."
+    },
+    {
+     "level": 1,
+     "q": "What is Lesotho called because of its height?",
+     "a": "The Kingdom in the Sky",
+     "wrong": [
+      "The Pearl of Africa",
+      "The Warm Heart of Africa",
+      "Land of Clouds"
+     ],
+     "why": "All of it is over 1,000 m high."
+    },
+    {
+     "level": 2,
+     "q": "Which huge water project sends water to South Africa?",
+     "a": "Lesotho Highlands Water Project",
+     "wrong": [
+      "Kariba Project",
+      "Grand Inga",
+      "Cahora Bassa"
+     ],
+     "why": "Katse Dam is part of it."
+    },
+    {
+     "level": 1,
+     "q": "Which blanket is the national dress of Lesotho?",
+     "a": "Basotho blanket",
+     "wrong": [
+      "Kente cloth",
+      "Kanga",
+      "Shuka"
+     ],
+     "why": "It is worn as a cloak."
+    },
+    {
+     "level": 1,
+     "q": "Which conical straw hat is a national symbol?",
+     "a": "Mokorotlo",
+     "wrong": [
+      "Sombrero",
+      "Conical rice hat",
+      "Fez"
+     ],
+     "why": "It appears on the flag."
+    },
+    {
+     "level": 1,
+     "q": "Which language is spoken by most people in Lesotho?",
+     "a": "Sesotho",
+     "wrong": [
+      "Setswana",
+      "Zulu",
+      "Xhosa"
+     ],
+     "why": "English is also official."
+    },
+    {
+     "level": 2,
+     "q": "Which dam in Lesotho's highlands is one of Africa's tallest arch dams?",
+     "a": "Katse Dam",
+     "wrong": [
+      "Kariba Dam",
+      "Aswan High Dam",
+      "Cahora Bassa"
+     ],
+     "why": "It is about 185 m high."
     },
     {
      "level": 3,
@@ -328,17 +359,6 @@
       "University of Botswana"
      ],
      "why": "It is in the Roma valley."
-    },
-    {
-     "level": 3,
-     "q": "What is a Basotho mountain village hut called?",
-     "a": "Rondavel",
-     "wrong": [
-      "Igloo",
-      "Yurt",
-      "Hogan"
-     ],
-     "why": "It is round with a thatched roof."
     }
    ]
   }

@@ -3,19 +3,9 @@
  "country": "BY",
  "topics": [
   {
-   "name": "Belarus: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Belarus?",
-     "a": "Minsk",
-     "wrong": [
-      "Brest",
-      "Grodno",
-      "Vitebsk"
-     ],
-     "why": "It was almost fully destroyed in the Second World War."
-    },
     {
      "level": 1,
      "q": "In which year did Belarus become independent?",
@@ -72,50 +62,6 @@
      "why": "It was signed in a forest lodge."
     },
     {
-     "level": 1,
-     "q": "Which state did Belarus belong to with Lithuania in the Middle Ages?",
-     "a": "Grand Duchy of Lithuania",
-     "wrong": [
-      "Kievan Rus'",
-      "Golden Horde",
-      "Habsburg Empire"
-     ],
-     "why": "Old Belarusian was its official language."
-    },
-    {
-     "level": 2,
-     "q": "Which opposition leader ran for President in 2020?",
-     "a": "Sviatlana Tsikhanouskaya",
-     "wrong": [
-      "Maria Kalesnikava",
-      "Veronika Tsepkalo",
-      "Svetlana Alexievich"
-     ],
-     "why": "She left for Lithuania after the vote."
-    },
-    {
-     "level": 2,
-     "q": "Which Belarusian author won the 2015 Nobel Prize in Literature?",
-     "a": "Svetlana Alexievich",
-     "wrong": [
-      "Vasil Bykaŭ",
-      "Yanka Kupala",
-      "Ales Adamovich"
-     ],
-     "why": "She wrote 'The Unwomanly Face of War'."
-    },
-    {
-     "level": 2,
-     "q": "Which printer published the first Belarusian books in 1517?",
-     "a": "Francysk Skaryna",
-     "wrong": [
-      "Simeon of Polotsk",
-      "Kastus Kalinouski",
-      "Yanka Kupala"
-     ],
-     "why": "He worked in Prague."
-    },
-    {
      "level": 2,
      "q": "Which ancient city was the first capital of a Belarusian principality?",
      "a": "Polotsk",
@@ -125,17 +71,6 @@
       "Turov"
      ],
      "why": "It is first mentioned in 862."
-    },
-    {
-     "level": 2,
-     "q": "Which painter born in Vitebsk is famous for dreamy village scenes?",
-     "a": "Marc Chagall",
-     "wrong": [
-      "Chaim Soutine",
-      "Kazimir Malevich",
-      "Ilya Repin"
-     ],
-     "why": "His house is a museum."
     },
     {
      "level": 3,
@@ -169,22 +104,6 @@
       "Malin"
      ],
      "why": "Its memorial has bells that ring every 30 seconds."
-    }
-   ]
-  },
-  {
-   "name": "Belarus: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "What is Belarus's currency?",
-     "a": "Belarusian ruble",
-     "wrong": [
-      "Russian ruble",
-      "Hryvnia",
-      "Złoty"
-     ],
-     "why": "It was redenominated in 2016."
     },
     {
      "level": 1,
@@ -196,17 +115,34 @@
       "Kampinos Forest"
      ],
      "why": "It is a UNESCO site."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Belarus?",
+     "a": "Minsk",
+     "wrong": [
+      "Brest",
+      "Grodno",
+      "Vitebsk"
+     ],
+     "why": "It was almost fully destroyed in the Second World War."
     },
     {
      "level": 1,
-     "q": "Which potato pancakes are the national dish?",
-     "a": "Draniki",
+     "q": "Which state did Belarus belong to with Lithuania in the Middle Ages?",
+     "a": "Grand Duchy of Lithuania",
      "wrong": [
-      "Blini",
-      "Latkes",
-      "Rösti"
+      "Kievan Rus'",
+      "Golden Horde",
+      "Habsburg Empire"
      ],
-     "why": "Belarusians eat a lot of potatoes."
+     "why": "Old Belarusian was its official language."
     },
     {
      "level": 1,
@@ -232,17 +168,6 @@
     },
     {
      "level": 1,
-     "q": "Which sport is Lukashenko famous for playing?",
-     "a": "Ice hockey",
-     "wrong": [
-      "Football",
-      "Tennis",
-      "Basketball"
-     ],
-     "why": "Belarus hosted the 2014 Ice Hockey World Championship."
-    },
-    {
-     "level": 1,
      "q": "How many lakes is Belarus said to have?",
      "a": "About 11,000",
      "wrong": [
@@ -254,25 +179,31 @@
     },
     {
      "level": 2,
-     "q": "Which palace and castle complex was home to the Radziwiłł family?",
-     "a": "Nesvizh Castle",
+     "q": "What is Belarus's largest lake?",
+     "a": "Lake Narach",
      "wrong": [
-      "Mir Castle",
-      "Gomel Palace",
-      "Ruzhany Palace"
+      "Lake Svir",
+      "Lake Drisvyaty",
+      "Lake Asveya"
      ],
-     "why": "It is a UNESCO site."
-    },
+     "why": "It is a popular resort."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
-     "level": 2,
-     "q": "Which art festival in Vitebsk features Slavic music?",
-     "a": "Slavianski Bazaar",
+     "level": 1,
+     "q": "Which sport is Lukashenko famous for playing?",
+     "a": "Ice hockey",
      "wrong": [
-      "Minsk Jazz Fest",
-      "Kupalle",
-      "Bazaar of Polotsk"
+      "Football",
+      "Tennis",
+      "Basketball"
      ],
-     "why": "It began in 1992."
+     "why": "Belarus hosted the 2014 Ice Hockey World Championship."
     },
     {
      "level": 2,
@@ -297,17 +228,6 @@
      "why": "She was world number one in 2012."
     },
     {
-     "level": 2,
-     "q": "What is Belarus's largest lake?",
-     "a": "Lake Narach",
-     "wrong": [
-      "Lake Svir",
-      "Lake Drisvyaty",
-      "Lake Asveya"
-     ],
-     "why": "It is a popular resort."
-    },
-    {
      "level": 3,
      "q": "Which gymnast from Minsk won four golds at the 1972 Olympics?",
      "a": "Olga Korbut",
@@ -317,6 +237,51 @@
       "Larisa Latynina"
      ],
      "why": "She was famous for her backflip on the beam."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which art festival in Vitebsk features Slavic music?",
+     "a": "Slavianski Bazaar",
+     "wrong": [
+      "Minsk Jazz Fest",
+      "Kupalle",
+      "Bazaar of Polotsk"
+     ],
+     "why": "It began in 1992."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Belarusian author won the 2015 Nobel Prize in Literature?",
+     "a": "Svetlana Alexievich",
+     "wrong": [
+      "Vasil Bykaŭ",
+      "Yanka Kupala",
+      "Ales Adamovich"
+     ],
+     "why": "She wrote 'The Unwomanly Face of War'."
+    },
+    {
+     "level": 2,
+     "q": "Which printer published the first Belarusian books in 1517?",
+     "a": "Francysk Skaryna",
+     "wrong": [
+      "Simeon of Polotsk",
+      "Kastus Kalinouski",
+      "Yanka Kupala"
+     ],
+     "why": "He worked in Prague."
     },
     {
      "level": 3,
@@ -328,6 +293,79 @@
       "Vasil Bykaŭ"
      ],
      "why": "It became an unofficial anthem."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which opposition leader ran for President in 2020?",
+     "a": "Sviatlana Tsikhanouskaya",
+     "wrong": [
+      "Maria Kalesnikava",
+      "Veronika Tsepkalo",
+      "Svetlana Alexievich"
+     ],
+     "why": "She left for Lithuania after the vote."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which painter born in Vitebsk is famous for dreamy village scenes?",
+     "a": "Marc Chagall",
+     "wrong": [
+      "Chaim Soutine",
+      "Kazimir Malevich",
+      "Ilya Repin"
+     ],
+     "why": "His house is a museum."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Belarus's currency?",
+     "a": "Belarusian ruble",
+     "wrong": [
+      "Russian ruble",
+      "Hryvnia",
+      "Złoty"
+     ],
+     "why": "It was redenominated in 2016."
+    },
+    {
+     "level": 1,
+     "q": "Which potato pancakes are the national dish?",
+     "a": "Draniki",
+     "wrong": [
+      "Blini",
+      "Latkes",
+      "Rösti"
+     ],
+     "why": "Belarusians eat a lot of potatoes."
+    },
+    {
+     "level": 2,
+     "q": "Which palace and castle complex was home to the Radziwiłł family?",
+     "a": "Nesvizh Castle",
+     "wrong": [
+      "Mir Castle",
+      "Gomel Palace",
+      "Ruzhany Palace"
+     ],
+     "why": "It is a UNESCO site."
     },
     {
      "level": 3,

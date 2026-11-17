@@ -3,41 +3,9 @@
  "country": "IS",
  "topics": [
   {
-   "name": "Iceland: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Iceland?",
-     "a": "Reykjavík",
-     "wrong": [
-      "Akureyri",
-      "Keflavík",
-      "Selfoss"
-     ],
-     "why": "It is the world's northernmost capital of a sovereign state."
-    },
-    {
-     "level": 1,
-     "q": "Which seafaring people settled Iceland around 874?",
-     "a": "Norse Vikings",
-     "wrong": [
-      "Celts",
-      "Romans",
-      "Inuit"
-     ],
-     "why": "Many came from Norway."
-    },
-    {
-     "level": 1,
-     "q": "Which parliament, founded in 930, is one of the oldest in the world?",
-     "a": "Althing",
-     "wrong": [
-      "Storting",
-      "Folketing",
-      "Riksdag"
-     ],
-     "why": "It first met at Þingvellir."
-    },
     {
      "level": 1,
      "q": "In which year did Iceland become a fully independent republic?",
@@ -84,39 +52,6 @@
     },
     {
      "level": 2,
-     "q": "Which disputes with Britain over fishing rights happened from the 1950s to 1970s?",
-     "a": "The Cod Wars",
-     "wrong": [
-      "The Herring Wars",
-      "The Whale Wars",
-      "The Fishing Feud"
-     ],
-     "why": "Iceland won them."
-    },
-    {
-     "level": 2,
-     "q": "Which writer recorded Norse myths in the 'Prose Edda'?",
-     "a": "Snorri Sturluson",
-     "wrong": [
-      "Halldór Laxness",
-      "Egill Skallagrímsson",
-      "Ari Thorgilsson"
-     ],
-     "why": "He lived in the 1200s."
-    },
-    {
-     "level": 2,
-     "q": "Which Icelandic author won the 1955 Nobel Prize in Literature?",
-     "a": "Halldór Laxness",
-     "wrong": [
-      "Snorri Sturluson",
-      "Gunnar Gunnarsson",
-      "Arnaldur Indriðason"
-     ],
-     "why": "He wrote 'Independent People'."
-    },
-    {
-     "level": 2,
      "q": "Which 2008 event saw Iceland's three big banks collapse?",
      "a": "Icelandic financial crisis",
      "wrong": [
@@ -136,17 +71,6 @@
       "Halla Tómasdóttir"
      ],
      "why": "She was Iceland's Prime Minister."
-    },
-    {
-     "level": 3,
-     "q": "Who is said to have been Iceland's first permanent settler?",
-     "a": "Ingólfur Arnarson",
-     "wrong": [
-      "Erik the Red",
-      "Leif Erikson",
-      "Flóki Vilgerðarson"
-     ],
-     "why": "He settled in Reykjavík around 874."
     },
     {
      "level": 3,
@@ -173,29 +97,19 @@
    ]
   },
   {
-   "name": "Iceland: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "What is Iceland's currency?",
-     "a": "Icelandic króna",
+     "q": "What is the capital of Iceland?",
+     "a": "Reykjavík",
      "wrong": [
-      "Euro",
-      "Danish krone",
-      "Norwegian krone"
+      "Akureyri",
+      "Keflavík",
+      "Selfoss"
      ],
-     "why": "Iceland is not in the EU."
-    },
-    {
-     "level": 1,
-     "q": "Which geothermal spa near Reykjavík is famous worldwide?",
-     "a": "Blue Lagoon",
-     "wrong": [
-      "Sky Lagoon",
-      "Mývatn Nature Baths",
-      "Secret Lagoon"
-     ],
-     "why": "Its milky-blue water is rich in silica."
+     "why": "It is the world's northernmost capital of a sovereign state."
     },
     {
      "level": 1,
@@ -207,39 +121,6 @@
       "Grýtufoss"
      ],
      "why": "It is in the Haukadalur valley."
-    },
-    {
-     "level": 1,
-     "q": "Which tourist route covers Þingvellir, Geysir and Gullfoss?",
-     "a": "Golden Circle",
-     "wrong": [
-      "Ring Road",
-      "Diamond Circle",
-      "Silver Route"
-     ],
-     "why": "It is about 300 km long."
-    },
-    {
-     "level": 1,
-     "q": "Which singer from Iceland is famous for 'Army of Me'?",
-     "a": "Björk",
-     "wrong": [
-      "Emilíana Torrini",
-      "Laufey",
-      "Of Monsters and Men"
-     ],
-     "why": "She first sang with the Sugarcubes."
-    },
-    {
-     "level": 1,
-     "q": "What do Icelanders use instead of family surnames?",
-     "a": "Patronymics (father's or mother's name)",
-     "wrong": [
-      "Clan names",
-      "Place names",
-      "Numbers"
-     ],
-     "why": "Sigurðardóttir means 'Sigurður's daughter'."
     },
     {
      "level": 1,
@@ -276,17 +157,6 @@
     },
     {
      "level": 2,
-     "q": "What is the Icelandic skyr?",
-     "a": "A thick dairy product like yoghurt",
-     "wrong": [
-      "A kind of fish",
-      "A wool jumper",
-      "A volcanic stone"
-     ],
-     "why": "It has been made for over a thousand years."
-    },
-    {
-     "level": 2,
      "q": "Which waterfall do visitors walk behind?",
      "a": "Seljalandsfoss",
      "wrong": [
@@ -295,6 +165,190 @@
       "Skógafoss"
      ],
      "why": "It is on the south coast."
+    },
+    {
+     "level": 3,
+     "q": "Which waterfall is Europe's most powerful?",
+     "a": "Dettifoss",
+     "wrong": [
+      "Gullfoss",
+      "Seljalandsfoss",
+      "Skógafoss"
+     ],
+     "why": "It is in the northeast."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which 2016 football tournament saw Iceland beat England?",
+     "a": "Euro 2016",
+     "wrong": [
+      "World Cup 2018",
+      "Euro 2012",
+      "Nations League"
+     ],
+     "why": "Fans became famous for the 'thunderclap'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which singer from Iceland is famous for 'Army of Me'?",
+     "a": "Björk",
+     "wrong": [
+      "Emilíana Torrini",
+      "Laufey",
+      "Of Monsters and Men"
+     ],
+     "why": "She first sang with the Sugarcubes."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which writer recorded Norse myths in the 'Prose Edda'?",
+     "a": "Snorri Sturluson",
+     "wrong": [
+      "Halldór Laxness",
+      "Egill Skallagrímsson",
+      "Ari Thorgilsson"
+     ],
+     "why": "He lived in the 1200s."
+    },
+    {
+     "level": 2,
+     "q": "Which Icelandic author won the 1955 Nobel Prize in Literature?",
+     "a": "Halldór Laxness",
+     "wrong": [
+      "Snorri Sturluson",
+      "Gunnar Gunnarsson",
+      "Arnaldur Indriðason"
+     ],
+     "why": "He wrote 'Independent People'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which parliament, founded in 930, is one of the oldest in the world?",
+     "a": "Althing",
+     "wrong": [
+      "Storting",
+      "Folketing",
+      "Riksdag"
+     ],
+     "why": "It first met at Þingvellir."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which seafaring people settled Iceland around 874?",
+     "a": "Norse Vikings",
+     "wrong": [
+      "Celts",
+      "Romans",
+      "Inuit"
+     ],
+     "why": "Many came from Norway."
+    },
+    {
+     "level": 2,
+     "q": "Which disputes with Britain over fishing rights happened from the 1950s to 1970s?",
+     "a": "The Cod Wars",
+     "wrong": [
+      "The Herring Wars",
+      "The Whale Wars",
+      "The Fishing Feud"
+     ],
+     "why": "Iceland won them."
+    },
+    {
+     "level": 3,
+     "q": "Who is said to have been Iceland's first permanent settler?",
+     "a": "Ingólfur Arnarson",
+     "wrong": [
+      "Erik the Red",
+      "Leif Erikson",
+      "Flóki Vilgerðarson"
+     ],
+     "why": "He settled in Reykjavík around 874."
+    },
+    {
+     "level": 1,
+     "q": "What is Iceland's currency?",
+     "a": "Icelandic króna",
+     "wrong": [
+      "Euro",
+      "Danish krone",
+      "Norwegian krone"
+     ],
+     "why": "Iceland is not in the EU."
+    },
+    {
+     "level": 1,
+     "q": "Which geothermal spa near Reykjavík is famous worldwide?",
+     "a": "Blue Lagoon",
+     "wrong": [
+      "Sky Lagoon",
+      "Mývatn Nature Baths",
+      "Secret Lagoon"
+     ],
+     "why": "Its milky-blue water is rich in silica."
+    },
+    {
+     "level": 1,
+     "q": "Which tourist route covers Þingvellir, Geysir and Gullfoss?",
+     "a": "Golden Circle",
+     "wrong": [
+      "Ring Road",
+      "Diamond Circle",
+      "Silver Route"
+     ],
+     "why": "It is about 300 km long."
+    },
+    {
+     "level": 1,
+     "q": "What do Icelanders use instead of family surnames?",
+     "a": "Patronymics (father's or mother's name)",
+     "wrong": [
+      "Clan names",
+      "Place names",
+      "Numbers"
+     ],
+     "why": "Sigurðardóttir means 'Sigurður's daughter'."
+    },
+    {
+     "level": 2,
+     "q": "What is the Icelandic skyr?",
+     "a": "A thick dairy product like yoghurt",
+     "wrong": [
+      "A kind of fish",
+      "A wool jumper",
+      "A volcanic stone"
+     ],
+     "why": "It has been made for over a thousand years."
     },
     {
      "level": 2,
@@ -309,17 +363,6 @@
     },
     {
      "level": 3,
-     "q": "Which waterfall is Europe's most powerful?",
-     "a": "Dettifoss",
-     "wrong": [
-      "Gullfoss",
-      "Seljalandsfoss",
-      "Skógafoss"
-     ],
-     "why": "It is in the northeast."
-    },
-    {
-     "level": 3,
      "q": "Which tradition sees 13 'Yule Lads' visit children before Christmas?",
      "a": "Jólasveinar",
      "wrong": [
@@ -328,17 +371,6 @@
       "Joulupukki"
      ],
      "why": "They leave gifts in shoes."
-    },
-    {
-     "level": 3,
-     "q": "Which 2016 football tournament saw Iceland beat England?",
-     "a": "Euro 2016",
-     "wrong": [
-      "World Cup 2018",
-      "Euro 2012",
-      "Nations League"
-     ],
-     "why": "Fans became famous for the 'thunderclap'."
     }
    ]
   }

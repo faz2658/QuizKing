@@ -3,7 +3,8 @@
  "country": "BR",
  "topics": [
   {
-   "name": "Brazil History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -95,17 +96,6 @@
     },
     {
      "level": 2,
-     "q": "Which president built Brasília?",
-     "a": "Juscelino Kubitschek",
-     "wrong": [
-      "Getúlio Vargas",
-      "João Goulart",
-      "Jânio Quadros"
-     ],
-     "why": "His slogan was '50 years in 5'."
-    },
-    {
-     "level": 2,
      "q": "Which president ruled from 1930 and created the 'Estado Novo'?",
      "a": "Getúlio Vargas",
      "wrong": [
@@ -114,17 +104,6 @@
       "Washington Luís"
      ],
      "why": "He dominated politics for two decades."
-    },
-    {
-     "level": 2,
-     "q": "In which year did a military coup begin 21 years of military rule?",
-     "a": "1964",
-     "wrong": [
-      "1954",
-      "1970",
-      "1985"
-     ],
-     "why": "Civilian rule returned in 1985."
     },
     {
      "level": 2,
@@ -180,11 +159,23 @@
       "Bento Gonçalves"
      ],
      "why": "21 April is a holiday in his honour."
+    },
+    {
+     "level": 2,
+     "q": "Which Brazilian aviation pioneer flew the 14-bis in Paris in 1906?",
+     "a": "Alberto Santos-Dumont",
+     "wrong": [
+      "Bartolomeu de Gusmão",
+      "Augusto Severo",
+      "Anésia Pinheiro"
+     ],
+     "why": "Brazilians call him the father of aviation."
     }
    ]
   },
   {
-   "name": "Brazil Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -361,11 +352,34 @@
       "Madeira"
      ],
      "why": "It is called the 'river of national unity'."
+    },
+    {
+     "level": 2,
+     "q": "What is a person from the state of Rio Grande do Sul called?",
+     "a": "Gaúcho",
+     "wrong": [
+      "Carioca",
+      "Baiano",
+      "Capixaba"
+     ],
+     "why": "They are known for cowboy culture."
+    },
+    {
+     "level": 3,
+     "q": "Which Brazilian city has the most people of Japanese descent outside Japan?",
+     "a": "São Paulo",
+     "wrong": [
+      "Curitiba",
+      "Londrina",
+      "Belém"
+     ],
+     "why": "Liberdade is its Japanese district."
     }
    ]
   },
   {
-   "name": "Brazil Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,7 +560,8 @@
    ]
   },
   {
-   "name": "Brazil Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
     {
      "level": 1,
@@ -559,6 +574,207 @@
      ],
      "why": "Samba schools parade in the Sambadrome."
     },
+    {
+     "level": 1,
+     "q": "Which singer had a hit with 'Envolver' and 'Show das Poderosas'?",
+     "a": "Anitta",
+     "wrong": [
+      "Ludmilla",
+      "Ivete Sangalo",
+      "Pabllo Vittar"
+     ],
+     "why": "She topped Spotify's global chart in 2022."
+    },
+    {
+     "level": 2,
+     "q": "Which Bahia singer-songwriter co-founded Tropicália?",
+     "a": "Caetano Veloso",
+     "wrong": [
+      "Roberto Carlos",
+      "Chico Buarque",
+      "Milton Nascimento"
+     ],
+     "why": "Gilberto Gil was its other leader."
+    },
+    {
+     "level": 2,
+     "q": "Which singer is called 'the King' of Brazilian music?",
+     "a": "Roberto Carlos",
+     "wrong": [
+      "Caetano Veloso",
+      "Tim Maia",
+      "Gilberto Gil"
+     ],
+     "why": "He has sold well over 100 million records."
+    },
+    {
+     "level": 2,
+     "q": "Which northeastern accordion dance music is popular at June festivals?",
+     "a": "Forró",
+     "wrong": [
+      "Samba",
+      "Pagode",
+      "Funk carioca"
+     ],
+     "why": "Luiz Gonzaga was its king."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which 2002 film is set in a Rio favela?",
+     "a": "City of God",
+     "wrong": [
+      "Central Station",
+      "Elite Squad",
+      "Black Orpheus"
+     ],
+     "why": "It received four Oscar nominations."
+    },
+    {
+     "level": 1,
+     "q": "What are Brazilian TV soap operas called?",
+     "a": "Telenovelas",
+     "wrong": [
+      "Radionovelas",
+      "Docusoaps",
+      "Mini-series"
+     ],
+     "why": "Globo's novelas are watched by millions nightly."
+    },
+    {
+     "level": 2,
+     "q": "Which 2024 Brazilian film won the Oscar for Best International Feature?",
+     "a": "I'm Still Here",
+     "wrong": [
+      "Central Station",
+      "City of God",
+      "The Second Mother"
+     ],
+     "why": "Fernanda Torres was nominated for Best Actress."
+    },
+    {
+     "level": 3,
+     "q": "Which 1998 film starring Fernanda Montenegro was Oscar-nominated?",
+     "a": "Central Station",
+     "wrong": [
+      "City of God",
+      "Pixote",
+      "Bacurau"
+     ],
+     "why": "Montenegro was nominated for Best Actress."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Brazilian author wrote 'The Alchemist'?",
+     "a": "Paulo Coelho",
+     "wrong": [
+      "Jorge Amado",
+      "Clarice Lispector",
+      "Machado de Assis"
+     ],
+     "why": "It has been translated into over 80 languages."
+    },
+    {
+     "level": 2,
+     "q": "Which writer of 'Dom Casmurro' founded the Brazilian Academy of Letters?",
+     "a": "Machado de Assis",
+     "wrong": [
+      "Jorge Amado",
+      "José de Alencar",
+      "Graciliano Ramos"
+     ],
+     "why": "He is often called Brazil's greatest writer."
+    },
+    {
+     "level": 3,
+     "q": "Who wrote 'Gabriela, Clove and Cinnamon'?",
+     "a": "Jorge Amado",
+     "wrong": [
+      "Machado de Assis",
+      "Clarice Lispector",
+      "Rubem Fonseca"
+     ],
+     "why": "It is set in Ilhéus, Bahia."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which president built Brasília?",
+     "a": "Juscelino Kubitschek",
+     "wrong": [
+      "Getúlio Vargas",
+      "João Goulart",
+      "Jânio Quadros"
+     ],
+     "why": "His slogan was '50 years in 5'."
+    },
+    {
+     "level": 2,
+     "q": "In which year did a military coup begin 21 years of military rule?",
+     "a": "1964",
+     "wrong": [
+      "1954",
+      "1970",
+      "1985"
+     ],
+     "why": "Civilian rule returned in 1985."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which architect designed Brasília's modernist buildings?",
+     "a": "Oscar Niemeyer",
+     "wrong": [
+      "Lúcio Costa",
+      "Roberto Burle Marx",
+      "Paulo Mendes da Rocha"
+     ],
+     "why": "Lúcio Costa drew the city plan."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which famous monkey-like mammal is endemic to Brazil's Atlantic Forest?",
+     "a": "Golden lion tamarin",
+     "wrong": [
+      "Howler monkey",
+      "Capuchin",
+      "Spider monkey"
+     ],
+     "why": "It appears on the 20-real note."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
     {
      "level": 1,
      "q": "Which 1960s style gave us 'The Girl from Ipanema'?",
@@ -582,127 +798,6 @@
      "why": "She was the world's highest-paid model for years."
     },
     {
-     "level": 1,
-     "q": "Which 2002 film is set in a Rio favela?",
-     "a": "City of God",
-     "wrong": [
-      "Central Station",
-      "Elite Squad",
-      "Black Orpheus"
-     ],
-     "why": "It received four Oscar nominations."
-    },
-    {
-     "level": 1,
-     "q": "Which Brazilian author wrote 'The Alchemist'?",
-     "a": "Paulo Coelho",
-     "wrong": [
-      "Jorge Amado",
-      "Clarice Lispector",
-      "Machado de Assis"
-     ],
-     "why": "It has been translated into over 80 languages."
-    },
-    {
-     "level": 1,
-     "q": "What are Brazilian TV soap operas called?",
-     "a": "Telenovelas",
-     "wrong": [
-      "Radionovelas",
-      "Docusoaps",
-      "Mini-series"
-     ],
-     "why": "Globo's novelas are watched by millions nightly."
-    },
-    {
-     "level": 1,
-     "q": "Which singer had a hit with 'Envolver' and 'Show das Poderosas'?",
-     "a": "Anitta",
-     "wrong": [
-      "Ludmilla",
-      "Ivete Sangalo",
-      "Pabllo Vittar"
-     ],
-     "why": "She topped Spotify's global chart in 2022."
-    },
-    {
-     "level": 2,
-     "q": "Which 2024 Brazilian film won the Oscar for Best International Feature?",
-     "a": "I'm Still Here",
-     "wrong": [
-      "Central Station",
-      "City of God",
-      "The Second Mother"
-     ],
-     "why": "Fernanda Torres was nominated for Best Actress."
-    },
-    {
-     "level": 2,
-     "q": "Which writer of 'Dom Casmurro' founded the Brazilian Academy of Letters?",
-     "a": "Machado de Assis",
-     "wrong": [
-      "Jorge Amado",
-      "José de Alencar",
-      "Graciliano Ramos"
-     ],
-     "why": "He is often called Brazil's greatest writer."
-    },
-    {
-     "level": 2,
-     "q": "Which Bahia singer-songwriter co-founded Tropicália?",
-     "a": "Caetano Veloso",
-     "wrong": [
-      "Roberto Carlos",
-      "Chico Buarque",
-      "Milton Nascimento"
-     ],
-     "why": "Gilberto Gil was its other leader."
-    },
-    {
-     "level": 2,
-     "q": "Which architect designed Brasília's modernist buildings?",
-     "a": "Oscar Niemeyer",
-     "wrong": [
-      "Lúcio Costa",
-      "Roberto Burle Marx",
-      "Paulo Mendes da Rocha"
-     ],
-     "why": "Lúcio Costa drew the city plan."
-    },
-    {
-     "level": 2,
-     "q": "Which singer is called 'the King' of Brazilian music?",
-     "a": "Roberto Carlos",
-     "wrong": [
-      "Caetano Veloso",
-      "Tim Maia",
-      "Gilberto Gil"
-     ],
-     "why": "He has sold well over 100 million records."
-    },
-    {
-     "level": 2,
-     "q": "Which northeastern accordion dance music is popular at June festivals?",
-     "a": "Forró",
-     "wrong": [
-      "Samba",
-      "Pagode",
-      "Funk carioca"
-     ],
-     "why": "Luiz Gonzaga was its king."
-    },
-    {
-     "level": 3,
-     "q": "Who wrote 'Gabriela, Clove and Cinnamon'?",
-     "a": "Jorge Amado",
-     "wrong": [
-      "Machado de Assis",
-      "Clarice Lispector",
-      "Rubem Fonseca"
-     ],
-     "why": "It is set in Ilhéus, Bahia."
-    },
-    {
      "level": 3,
      "q": "Which landscape designer created Copacabana's wave pavement?",
      "a": "Roberto Burle Marx",
@@ -713,22 +808,6 @@
      ],
      "why": "It was completed in 1970."
     },
-    {
-     "level": 3,
-     "q": "Which 1998 film starring Fernanda Montenegro was Oscar-nominated?",
-     "a": "Central Station",
-     "wrong": [
-      "City of God",
-      "Pixote",
-      "Bacurau"
-     ],
-     "why": "Montenegro was nominated for Best Actress."
-    }
-   ]
-  },
-  {
-   "name": "Brazil Food & Traditions",
-   "questions": [
     {
      "level": 1,
      "q": "Which black bean and pork stew is Brazil's national dish?",
@@ -904,12 +983,7 @@
       "Festa do Divino"
      ],
      "why": "Millions follow it each October."
-    }
-   ]
-  },
-  {
-   "name": "Brazil General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is the official language of Brazil?",
@@ -1000,17 +1074,6 @@
     },
     {
      "level": 2,
-     "q": "Which Brazilian aviation pioneer flew the 14-bis in Paris in 1906?",
-     "a": "Alberto Santos-Dumont",
-     "wrong": [
-      "Bartolomeu de Gusmão",
-      "Augusto Severo",
-      "Anésia Pinheiro"
-     ],
-     "why": "Brazilians call him the father of aviation."
-    },
-    {
-     "level": 2,
      "q": "Which dam on the Paraná is one of the world's largest hydroelectric plants?",
      "a": "Itaipu",
      "wrong": [
@@ -1043,28 +1106,6 @@
      "why": "Paulistas are from São Paulo."
     },
     {
-     "level": 2,
-     "q": "What is a person from the state of Rio Grande do Sul called?",
-     "a": "Gaúcho",
-     "wrong": [
-      "Carioca",
-      "Baiano",
-      "Capixaba"
-     ],
-     "why": "They are known for cowboy culture."
-    },
-    {
-     "level": 3,
-     "q": "Which famous monkey-like mammal is endemic to Brazil's Atlantic Forest?",
-     "a": "Golden lion tamarin",
-     "wrong": [
-      "Howler monkey",
-      "Capuchin",
-      "Spider monkey"
-     ],
-     "why": "It appears on the 20-real note."
-    },
-    {
      "level": 3,
      "q": "Who is Brazil's patron saint?",
      "a": "Our Lady of Aparecida",
@@ -1074,17 +1115,6 @@
       "Saint Anthony"
      ],
      "why": "Her basilica is one of the world's largest churches."
-    },
-    {
-     "level": 3,
-     "q": "Which Brazilian city has the most people of Japanese descent outside Japan?",
-     "a": "São Paulo",
-     "wrong": [
-      "Curitiba",
-      "Londrina",
-      "Belém"
-     ],
-     "why": "Liberdade is its Japanese district."
     }
    ]
   }

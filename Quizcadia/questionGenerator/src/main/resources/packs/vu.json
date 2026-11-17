@@ -3,19 +3,9 @@
  "country": "VU",
  "topics": [
   {
-   "name": "Vanuatu: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Vanuatu?",
-     "a": "Port Vila",
-     "wrong": [
-      "Luganville",
-      "Lenakel",
-      "Isangel"
-     ],
-     "why": "It is on Efate island."
-    },
     {
      "level": 1,
      "q": "Which two countries jointly ruled Vanuatu before 1980?",
@@ -37,50 +27,6 @@
       "New Ireland"
      ],
      "why": "It became independent in 1980."
-    },
-    {
-     "level": 1,
-     "q": "What is Vanuatu's currency?",
-     "a": "Vatu",
-     "wrong": [
-      "Tala",
-      "Kina",
-      "Pa'anga"
-     ],
-     "why": "Its code is VUV."
-    },
-    {
-     "level": 1,
-     "q": "Which creole language is spoken across Vanuatu?",
-     "a": "Bislama",
-     "wrong": [
-      "Tok Pisin",
-      "Pijin",
-      "Fijian"
-     ],
-     "why": "English and French are also official."
-    },
-    {
-     "level": 1,
-     "q": "Which island is famous for land diving, the origin of bungee?",
-     "a": "Pentecost",
-     "wrong": [
-      "Tanna",
-      "Efate",
-      "Espiritu Santo"
-     ],
-     "why": "Men jump from towers with vines on their ankles."
-    },
-    {
-     "level": 1,
-     "q": "Which ocean is Vanuatu in?",
-     "a": "Pacific Ocean",
-     "wrong": [
-      "Indian Ocean",
-      "Atlantic Ocean",
-      "Arctic Ocean"
-     ],
-     "why": "It is a chain of about 80 islands."
     },
     {
      "level": 2,
@@ -127,28 +73,6 @@
      "why": "It damaged buildings in the capital."
     },
     {
-     "level": 2,
-     "q": "Who became Prime Minister of Vanuatu in 2025?",
-     "a": "Jotham Napat",
-     "wrong": [
-      "Charlot Salwai",
-      "Ishmael Kalsakau",
-      "Bob Loughman"
-     ],
-     "why": "He took office in February."
-    },
-    {
-     "level": 3,
-     "q": "Which cargo cult on Tanna awaits a figure called John Frum?",
-     "a": "John Frum movement",
-     "wrong": [
-      "Prince Philip movement",
-      "Tom Navy cult",
-      "Cargo Kingdom"
-     ],
-     "why": "It began in the 1930s."
-    },
-    {
      "level": 3,
      "q": "Which British royal was worshipped by villagers on Tanna?",
      "a": "Prince Philip",
@@ -158,6 +82,45 @@
       "Prince Harry"
      ],
      "why": "They called him a son of the mountain spirit."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Vanuatu?",
+     "a": "Port Vila",
+     "wrong": [
+      "Luganville",
+      "Lenakel",
+      "Isangel"
+     ],
+     "why": "It is on Efate island."
+    },
+    {
+     "level": 1,
+     "q": "Which island is famous for land diving, the origin of bungee?",
+     "a": "Pentecost",
+     "wrong": [
+      "Tanna",
+      "Efate",
+      "Espiritu Santo"
+     ],
+     "why": "Men jump from towers with vines on their ankles."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is Vanuatu in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It is a chain of about 80 islands."
     },
     {
      "level": 3,
@@ -169,12 +132,7 @@
       "Tanna Kingdom"
      ],
      "why": "It includes a burial site on Artok island."
-    }
-   ]
-  },
-  {
-   "name": "Vanuatu: Places & Culture",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "Which active volcano on Tanna lets visitors look into the crater?",
@@ -185,6 +143,129 @@
       "Lopevi"
      ],
      "why": "It is one of the most accessible volcanoes."
+    },
+    {
+     "level": 1,
+     "q": "Which beach on Espiritu Santo is often voted among the best?",
+     "a": "Champagne Beach",
+     "wrong": [
+      "Whitehaven Beach",
+      "Anse Source d'Argent",
+      "Bora Bora Beach"
+     ],
+     "why": "It has white sand."
+    },
+    {
+     "level": 2,
+     "q": "Which island has a famous underwater post office?",
+     "a": "Hideaway Island",
+     "wrong": [
+      "Tanna",
+      "Pentecost",
+      "Ambrym"
+     ],
+     "why": "You can post waterproof postcards."
+    },
+    {
+     "level": 2,
+     "q": "Which island has two lava-lake volcanoes?",
+     "a": "Ambrym",
+     "wrong": [
+      "Tanna",
+      "Ambae",
+      "Efate"
+     ],
+     "why": "Marum and Benbow are its volcanoes."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which national sport has Vanuatu's beach team done well in?",
+     "a": "Beach volleyball",
+     "wrong": [
+      "Rugby league",
+      "Cricket",
+      "Surfing"
+     ],
+     "why": "Its women's team won Pacific titles."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who became Prime Minister of Vanuatu in 2025?",
+     "a": "Jotham Napat",
+     "wrong": [
+      "Charlot Salwai",
+      "Ishmael Kalsakau",
+      "Bob Loughman"
+     ],
+     "why": "He took office in February."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which sand-drawing art is on UNESCO's list?",
+     "a": "Vanuatu sand drawing",
+     "wrong": [
+      "Aboriginal dot painting",
+      "Mandala",
+      "Kolam"
+     ],
+     "why": "It is drawn with one finger."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Vanuatu's currency?",
+     "a": "Vatu",
+     "wrong": [
+      "Tala",
+      "Kina",
+      "Pa'anga"
+     ],
+     "why": "Its code is VUV."
+    },
+    {
+     "level": 1,
+     "q": "Which creole language is spoken across Vanuatu?",
+     "a": "Bislama",
+     "wrong": [
+      "Tok Pisin",
+      "Pijin",
+      "Fijian"
+     ],
+     "why": "English and French are also official."
+    },
+    {
+     "level": 3,
+     "q": "Which cargo cult on Tanna awaits a figure called John Frum?",
+     "a": "John Frum movement",
+     "wrong": [
+      "Prince Philip movement",
+      "Tom Navy cult",
+      "Cargo Kingdom"
+     ],
+     "why": "It began in the 1930s."
     },
     {
      "level": 1,
@@ -207,17 +288,6 @@
       "Yongala"
      ],
      "why": "It was a troop ship that hit a mine."
-    },
-    {
-     "level": 1,
-     "q": "Which beach on Espiritu Santo is often voted among the best?",
-     "a": "Champagne Beach",
-     "wrong": [
-      "Whitehaven Beach",
-      "Anse Source d'Argent",
-      "Bora Bora Beach"
-     ],
-     "why": "It has white sand."
     },
     {
      "level": 1,
@@ -254,39 +324,6 @@
     },
     {
      "level": 2,
-     "q": "Which sand-drawing art is on UNESCO's list?",
-     "a": "Vanuatu sand drawing",
-     "wrong": [
-      "Aboriginal dot painting",
-      "Mandala",
-      "Kolam"
-     ],
-     "why": "It is drawn with one finger."
-    },
-    {
-     "level": 2,
-     "q": "Which island has a famous underwater post office?",
-     "a": "Hideaway Island",
-     "wrong": [
-      "Tanna",
-      "Pentecost",
-      "Ambrym"
-     ],
-     "why": "You can post waterproof postcards."
-    },
-    {
-     "level": 2,
-     "q": "Which island has two lava-lake volcanoes?",
-     "a": "Ambrym",
-     "wrong": [
-      "Tanna",
-      "Ambae",
-      "Efate"
-     ],
-     "why": "Marum and Benbow are its volcanoes."
-    },
-    {
-     "level": 2,
      "q": "Which Vanuatu people are famous for their 'nambas' dress?",
      "a": "Big Nambas and Small Nambas of Malekula",
      "wrong": [
@@ -295,17 +332,6 @@
       "Trobriand Islanders"
      ],
      "why": "They are known by the size of their dress."
-    },
-    {
-     "level": 2,
-     "q": "Which national sport has Vanuatu's beach team done well in?",
-     "a": "Beach volleyball",
-     "wrong": [
-      "Rugby league",
-      "Cricket",
-      "Surfing"
-     ],
-     "why": "Its women's team won Pacific titles."
     },
     {
      "level": 3,

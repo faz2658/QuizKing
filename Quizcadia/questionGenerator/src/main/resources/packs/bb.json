@@ -3,30 +3,9 @@
  "country": "BB",
  "topics": [
   {
-   "name": "Barbados: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Barbados?",
-     "a": "Bridgetown",
-     "wrong": [
-      "Speightstown",
-      "Holetown",
-      "Oistins"
-     ],
-     "why": "Its historic centre is a UNESCO site."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Barbados become a republic?",
-     "a": "2021",
-     "wrong": [
-      "1966",
-      "2000",
-      "2016"
-     ],
-     "why": "It removed the Queen as head of state."
-    },
     {
      "level": 1,
      "q": "From which country did Barbados gain independence in 1966?",
@@ -37,28 +16,6 @@
       "Netherlands"
      ],
      "why": "It was English from 1627."
-    },
-    {
-     "level": 1,
-     "q": "Which pop star from Barbados was named a National Hero?",
-     "a": "Rihanna",
-     "wrong": [
-      "Shontelle",
-      "Alison Hinds",
-      "Nicki Minaj"
-     ],
-     "why": "She was honoured in 2021."
-    },
-    {
-     "level": 1,
-     "q": "What is Barbados's currency?",
-     "a": "Barbados dollar",
-     "wrong": [
-      "East Caribbean dollar",
-      "US dollar",
-      "Pound sterling"
-     ],
-     "why": "It is fixed at two to one US dollar."
     },
     {
      "level": 1,
@@ -81,17 +38,6 @@
       "Mia Mottley"
      ],
      "why": "He led the country to independence."
-    },
-    {
-     "level": 2,
-     "q": "Who became Prime Minister of Barbados in 2018?",
-     "a": "Mia Mottley",
-     "wrong": [
-      "Freundel Stuart",
-      "David Thompson",
-      "Owen Arthur"
-     ],
-     "why": "She is the first woman to hold the post."
     },
     {
      "level": 2,
@@ -127,39 +73,6 @@
      "why": "It was his only trip abroad."
     },
     {
-     "level": 2,
-     "q": "What is Barbados's nickname?",
-     "a": "Little England",
-     "wrong": [
-      "Pearl of the Antilles",
-      "Spice Isle",
-      "Land of Wood and Water"
-     ],
-     "why": "It was English for over 300 years."
-    },
-    {
-     "level": 3,
-     "q": "Which garrison in Bridgetown is part of the UNESCO site?",
-     "a": "The Garrison",
-     "wrong": [
-      "Fort Charles",
-      "Gun Hill",
-      "Codrington"
-     ],
-     "why": "It was a large British army base."
-    },
-    {
-     "level": 3,
-     "q": "Which Barbadian cricketer is often called the greatest all-rounder?",
-     "a": "Garfield Sobers",
-     "wrong": [
-      "Frank Worrell",
-      "Joel Garner",
-      "Wes Hall"
-     ],
-     "why": "He hit six sixes in an over in 1968."
-    },
-    {
      "level": 3,
      "q": "Which 1937 riots helped start Barbados's labour movement?",
      "a": "1937 Barbados labour riots",
@@ -173,8 +86,220 @@
    ]
   },
   {
-   "name": "Barbados: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Barbados?",
+     "a": "Bridgetown",
+     "wrong": [
+      "Speightstown",
+      "Holetown",
+      "Oistins"
+     ],
+     "why": "Its historic centre is a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which garrison in Bridgetown is part of the UNESCO site?",
+     "a": "The Garrison",
+     "wrong": [
+      "Fort Charles",
+      "Gun Hill",
+      "Codrington"
+     ],
+     "why": "It was a large British army base."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean lies to the east of Barbados?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Pacific Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It is the most easterly Caribbean island."
+    },
+    {
+     "level": 1,
+     "q": "Which cave on Barbados has a tram tour?",
+     "a": "Harrison's Cave",
+     "wrong": [
+      "Animal Flower Cave",
+      "Cueva Ventana",
+      "Green Grotto"
+     ],
+     "why": "It is full of stalactites."
+    },
+    {
+     "level": 2,
+     "q": "Which rugged east coast village has mushroom-shaped rocks?",
+     "a": "Bathsheba",
+     "wrong": [
+      "Holetown",
+      "Speightstown",
+      "Oistins"
+     ],
+     "why": "Surfers love the Soup Bowl there."
+    },
+    {
+     "level": 3,
+     "q": "Which old signal station in the middle of the island gives wide views?",
+     "a": "Gun Hill Signal Station",
+     "wrong": [
+      "Mount Hillaby",
+      "Grenade Hall",
+      "Cherry Tree Hill"
+     ],
+     "why": "It has a lion carved from stone."
+    },
+    {
+     "level": 3,
+     "q": "What is the highest point of Barbados?",
+     "a": "Mount Hillaby",
+     "wrong": [
+      "Mount Alvernia",
+      "Gun Hill",
+      "Cherry Tree Hill"
+     ],
+     "why": "It is about 340 m high."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Barbadian cricketer is often called the greatest all-rounder?",
+     "a": "Garfield Sobers",
+     "wrong": [
+      "Frank Worrell",
+      "Joel Garner",
+      "Wes Hall"
+     ],
+     "why": "He hit six sixes in an over in 1968."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is Barbados passionate about?",
+     "a": "Cricket",
+     "wrong": [
+      "Baseball",
+      "Ice hockey",
+      "Rugby"
+     ],
+     "why": "Kensington Oval hosted the 2007 World Cup final."
+    },
+    {
+     "level": 2,
+     "q": "Which stadium in Bridgetown is the home of Barbados cricket?",
+     "a": "Kensington Oval",
+     "wrong": [
+      "Sabina Park",
+      "Queen's Park Oval",
+      "Bourda"
+     ],
+     "why": "India won the 2024 T20 World Cup final there."
+    },
+    {
+     "level": 2,
+     "q": "Which Barbadian sprinter won 100 m bronze at the 2000 Olympics?",
+     "a": "Obadele Thompson",
+     "wrong": [
+      "Ryan Brathwaite",
+      "Kirani James",
+      "Ato Boldon"
+     ],
+     "why": "It was the country's first Olympic medal."
+    },
+    {
+     "level": 2,
+     "q": "Which Barbadian fast bowler was nicknamed 'Big Bird'?",
+     "a": "Joel Garner",
+     "wrong": [
+      "Wes Hall",
+      "Malcolm Marshall",
+      "Charlie Griffith"
+     ],
+     "why": "He was 2.03 m tall."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which pop star from Barbados was named a National Hero?",
+     "a": "Rihanna",
+     "wrong": [
+      "Shontelle",
+      "Alison Hinds",
+      "Nicki Minaj"
+     ],
+     "why": "She was honoured in 2021."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who became Prime Minister of Barbados in 2018?",
+     "a": "Mia Mottley",
+     "wrong": [
+      "Freundel Stuart",
+      "David Thompson",
+      "Owen Arthur"
+     ],
+     "why": "She is the first woman to hold the post."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Barbados become a republic?",
+     "a": "2021",
+     "wrong": [
+      "1966",
+      "2000",
+      "2016"
+     ],
+     "why": "It removed the Queen as head of state."
+    },
+    {
+     "level": 1,
+     "q": "What is Barbados's currency?",
+     "a": "Barbados dollar",
+     "wrong": [
+      "East Caribbean dollar",
+      "US dollar",
+      "Pound sterling"
+     ],
+     "why": "It is fixed at two to one US dollar."
+    },
+    {
+     "level": 2,
+     "q": "What is Barbados's nickname?",
+     "a": "Little England",
+     "wrong": [
+      "Pearl of the Antilles",
+      "Spice Isle",
+      "Land of Wood and Water"
+     ],
+     "why": "It was English for over 300 years."
+    },
     {
      "level": 1,
      "q": "Which festival marks the end of the sugar cane harvest?",
@@ -210,39 +335,6 @@
     },
     {
      "level": 1,
-     "q": "Which sport is Barbados passionate about?",
-     "a": "Cricket",
-     "wrong": [
-      "Baseball",
-      "Ice hockey",
-      "Rugby"
-     ],
-     "why": "Kensington Oval hosted the 2007 World Cup final."
-    },
-    {
-     "level": 1,
-     "q": "Which ocean lies to the east of Barbados?",
-     "a": "Atlantic Ocean",
-     "wrong": [
-      "Pacific Ocean",
-      "Indian Ocean",
-      "Arctic Ocean"
-     ],
-     "why": "It is the most easterly Caribbean island."
-    },
-    {
-     "level": 1,
-     "q": "Which cave on Barbados has a tram tour?",
-     "a": "Harrison's Cave",
-     "wrong": [
-      "Animal Flower Cave",
-      "Cueva Ventana",
-      "Green Grotto"
-     ],
-     "why": "It is full of stalactites."
-    },
-    {
-     "level": 1,
      "q": "Which fried snack from Oistins is famous on Friday nights?",
      "a": "Fish fry",
      "wrong": [
@@ -251,50 +343,6 @@
       "Johnny cakes"
      ],
      "why": "Oistins Fish Fry draws big crowds."
-    },
-    {
-     "level": 2,
-     "q": "Which stadium in Bridgetown is the home of Barbados cricket?",
-     "a": "Kensington Oval",
-     "wrong": [
-      "Sabina Park",
-      "Queen's Park Oval",
-      "Bourda"
-     ],
-     "why": "India won the 2024 T20 World Cup final there."
-    },
-    {
-     "level": 2,
-     "q": "Which rugged east coast village has mushroom-shaped rocks?",
-     "a": "Bathsheba",
-     "wrong": [
-      "Holetown",
-      "Speightstown",
-      "Oistins"
-     ],
-     "why": "Surfers love the Soup Bowl there."
-    },
-    {
-     "level": 2,
-     "q": "Which Barbadian sprinter won 100 m bronze at the 2000 Olympics?",
-     "a": "Obadele Thompson",
-     "wrong": [
-      "Ryan Brathwaite",
-      "Kirani James",
-      "Ato Boldon"
-     ],
-     "why": "It was the country's first Olympic medal."
-    },
-    {
-     "level": 2,
-     "q": "Which Barbadian fast bowler was nicknamed 'Big Bird'?",
-     "a": "Joel Garner",
-     "wrong": [
-      "Wes Hall",
-      "Malcolm Marshall",
-      "Charlie Griffith"
-     ],
-     "why": "He was 2.03 m tall."
     },
     {
      "level": 2,
@@ -309,17 +357,6 @@
     },
     {
      "level": 3,
-     "q": "Which old signal station in the middle of the island gives wide views?",
-     "a": "Gun Hill Signal Station",
-     "wrong": [
-      "Mount Hillaby",
-      "Grenade Hall",
-      "Cherry Tree Hill"
-     ],
-     "why": "It has a lion carved from stone."
-    },
-    {
-     "level": 3,
      "q": "Which spicy sauce is a Bajan favourite?",
      "a": "Bajan pepper sauce",
      "wrong": [
@@ -328,17 +365,6 @@
       "Pico de gallo"
      ],
      "why": "It is made with Scotch bonnets and mustard."
-    },
-    {
-     "level": 3,
-     "q": "What is the highest point of Barbados?",
-     "a": "Mount Hillaby",
-     "wrong": [
-      "Mount Alvernia",
-      "Gun Hill",
-      "Cherry Tree Hill"
-     ],
-     "why": "It is about 340 m high."
     }
    ]
   }

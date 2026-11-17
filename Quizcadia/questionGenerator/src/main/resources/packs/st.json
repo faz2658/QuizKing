@@ -3,19 +3,9 @@
  "country": "ST",
  "topics": [
   {
-   "name": "São Tomé and Príncipe: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of São Tomé and Príncipe?",
-     "a": "São Tomé",
-     "wrong": [
-      "Santo António",
-      "Neves",
-      "Trindade"
-     ],
-     "why": "It is on the larger island."
-    },
     {
      "level": 1,
      "q": "From which country did São Tomé and Príncipe gain independence in 1975?",
@@ -28,15 +18,76 @@
      "why": "It was uninhabited when the Portuguese came."
     },
     {
-     "level": 1,
-     "q": "What is the currency of São Tomé and Príncipe?",
-     "a": "Dobra",
+     "level": 2,
+     "q": "Who was the first President of São Tomé and Príncipe?",
+     "a": "Manuel Pinto da Costa",
      "wrong": [
-      "Escudo",
-      "CFA franc",
-      "Real"
+      "Miguel Trovoada",
+      "Fradique de Menezes",
+      "Evaristo Carvalho"
      ],
-     "why": "It was redenominated in 2018."
+     "why": "He returned to power in 2011."
+    },
+    {
+     "level": 2,
+     "q": "Which 1953 massacre of workers is remembered every February?",
+     "a": "Batepá massacre",
+     "wrong": [
+      "Pidjiguiti massacre",
+      "Mueda massacre",
+      "Sharpeville massacre"
+     ],
+     "why": "Hundreds were killed by colonial forces."
+    },
+    {
+     "level": 2,
+     "q": "Which famous 1919 eclipse photograph was taken on Príncipe?",
+     "a": "Arthur Eddington's eclipse photo testing relativity",
+     "wrong": [
+      "Halley's comet photo",
+      "First Moon photo",
+      "Darwin's sketch"
+     ],
+     "why": "It confirmed Einstein's theory."
+    },
+    {
+     "level": 2,
+     "q": "Which year did the country hold its first multi-party elections?",
+     "a": "1991",
+     "wrong": [
+      "1975",
+      "1985",
+      "2000"
+     ],
+     "why": "It moved peacefully to democracy."
+    },
+    {
+     "level": 2,
+     "q": "Which folk drama of São Tomé comes from a medieval European story?",
+     "a": "Tchiloli",
+     "wrong": [
+      "Danço-Congo",
+      "Auto de Floripes",
+      "Puíta"
+     ],
+     "why": "It tells of Charlemagne's court."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of São Tomé and Príncipe?",
+     "a": "São Tomé",
+     "wrong": [
+      "Santo António",
+      "Neves",
+      "Trindade"
+     ],
+     "why": "It is on the larger island."
     },
     {
      "level": 1,
@@ -83,83 +134,6 @@
      "why": "It is a UNESCO biosphere reserve."
     },
     {
-     "level": 2,
-     "q": "Who was the first President of São Tomé and Príncipe?",
-     "a": "Manuel Pinto da Costa",
-     "wrong": [
-      "Miguel Trovoada",
-      "Fradique de Menezes",
-      "Evaristo Carvalho"
-     ],
-     "why": "He returned to power in 2011."
-    },
-    {
-     "level": 2,
-     "q": "Which 1953 massacre of workers is remembered every February?",
-     "a": "Batepá massacre",
-     "wrong": [
-      "Pidjiguiti massacre",
-      "Mueda massacre",
-      "Sharpeville massacre"
-     ],
-     "why": "Hundreds were killed by colonial forces."
-    },
-    {
-     "level": 2,
-     "q": "What were the large plantations called?",
-     "a": "Roças",
-     "wrong": [
-      "Haciendas",
-      "Fazendas",
-      "Kraals"
-     ],
-     "why": "Many old buildings still stand."
-    },
-    {
-     "level": 2,
-     "q": "Which famous 1919 eclipse photograph was taken on Príncipe?",
-     "a": "Arthur Eddington's eclipse photo testing relativity",
-     "wrong": [
-      "Halley's comet photo",
-      "First Moon photo",
-      "Darwin's sketch"
-     ],
-     "why": "It confirmed Einstein's theory."
-    },
-    {
-     "level": 2,
-     "q": "Which year did the country hold its first multi-party elections?",
-     "a": "1991",
-     "wrong": [
-      "1975",
-      "1985",
-      "2000"
-     ],
-     "why": "It moved peacefully to democracy."
-    },
-    {
-     "level": 3,
-     "q": "Which 2003 coup attempt happened while the President was abroad?",
-     "a": "2003 São Tomé coup",
-     "wrong": [
-      "1995 coup",
-      "2009 plot",
-      "2022 attack"
-     ],
-     "why": "It was reversed within a week."
-    },
-    {
-     "level": 3,
-     "q": "Who became Prime Minister in 2025 after a dismissal?",
-     "a": "Américo Ramos",
-     "wrong": [
-      "Patrice Trovoada",
-      "Jorge Bom Jesus",
-      "Carlos Vila Nova"
-     ],
-     "why": "The President dismissed Trovoada."
-    },
-    {
      "level": 3,
      "q": "Which forced labourers from Angola and Cape Verde worked the plantations?",
      "a": "Serviçais",
@@ -169,12 +143,7 @@
       "Indentured Sikhs"
      ],
      "why": "Their conditions caused a cocoa boycott."
-    }
-   ]
-  },
-  {
-   "name": "São Tomé and Príncipe: Places & Culture",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "Which volcanic spire rises out of the rainforest?",
@@ -209,6 +178,123 @@
      "why": "It has many birds found nowhere else."
     },
     {
+     "level": 2,
+     "q": "Which islet south of São Tomé sits on the equator?",
+     "a": "Ilhéu das Rolas",
+     "wrong": [
+      "Ilhéu das Cabras",
+      "Bom Bom",
+      "Tinhosas"
+     ],
+     "why": "A marker shows the line."
+    },
+    {
+     "level": 2,
+     "q": "Which island is home to Roça Sundy, linked to Eddington's experiment?",
+     "a": "Príncipe",
+     "wrong": [
+      "São Tomé",
+      "Bioko",
+      "Annobón"
+     ],
+     "why": "A plaque marks the spot."
+    },
+    {
+     "level": 3,
+     "q": "Which waterfall on São Tomé is the tallest?",
+     "a": "São Nicolau Falls",
+     "wrong": [
+      "Kalandula Falls",
+      "Cascata Blublu",
+      "Bombaim Falls"
+     ],
+     "why": "It drops through lush forest."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which 2003 coup attempt happened while the President was abroad?",
+     "a": "2003 São Tomé coup",
+     "wrong": [
+      "1995 coup",
+      "2009 plot",
+      "2022 attack"
+     ],
+     "why": "It was reversed within a week."
+    },
+    {
+     "level": 3,
+     "q": "Who became Prime Minister in 2025 after a dismissal?",
+     "a": "Américo Ramos",
+     "wrong": [
+      "Patrice Trovoada",
+      "Jorge Bom Jesus",
+      "Carlos Vila Nova"
+     ],
+     "why": "The President dismissed Trovoada."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which sea animals nest on the beaches?",
+     "a": "Sea turtles",
+     "wrong": [
+      "Seals",
+      "Penguins",
+      "Walruses"
+     ],
+     "why": "Five species visit."
+    },
+    {
+     "level": 3,
+     "q": "Which bird found only on São Tomé is the world's largest sunbird?",
+     "a": "Giant sunbird",
+     "wrong": [
+      "Hummingbird",
+      "Cardinal",
+      "Kingfisher"
+     ],
+     "why": "It lives in the mountain forest."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the currency of São Tomé and Príncipe?",
+     "a": "Dobra",
+     "wrong": [
+      "Escudo",
+      "CFA franc",
+      "Real"
+     ],
+     "why": "It was redenominated in 2018."
+    },
+    {
+     "level": 2,
+     "q": "What were the large plantations called?",
+     "a": "Roças",
+     "wrong": [
+      "Haciendas",
+      "Fazendas",
+      "Kraals"
+     ],
+     "why": "Many old buildings still stand."
+    },
+    {
      "level": 1,
      "q": "What is the official language of São Tomé and Príncipe?",
      "a": "Portuguese",
@@ -232,17 +318,6 @@
     },
     {
      "level": 1,
-     "q": "Which sea animals nest on the beaches?",
-     "a": "Sea turtles",
-     "wrong": [
-      "Seals",
-      "Penguins",
-      "Walruses"
-     ],
-     "why": "Five species visit."
-    },
-    {
-     "level": 1,
      "q": "Which chocolate maker made São Tomé cocoa famous again?",
      "a": "Claudio Corallo",
      "wrong": [
@@ -251,28 +326,6 @@
       "Hershey"
      ],
      "why": "He grows and makes it on the island."
-    },
-    {
-     "level": 2,
-     "q": "Which islet south of São Tomé sits on the equator?",
-     "a": "Ilhéu das Rolas",
-     "wrong": [
-      "Ilhéu das Cabras",
-      "Bom Bom",
-      "Tinhosas"
-     ],
-     "why": "A marker shows the line."
-    },
-    {
-     "level": 2,
-     "q": "Which folk drama of São Tomé comes from a medieval European story?",
-     "a": "Tchiloli",
-     "wrong": [
-      "Danço-Congo",
-      "Auto de Floripes",
-      "Puíta"
-     ],
-     "why": "It tells of Charlemagne's court."
     },
     {
      "level": 2,
@@ -297,28 +350,6 @@
      "why": "It is one of the largest roças."
     },
     {
-     "level": 2,
-     "q": "Which island is home to Roça Sundy, linked to Eddington's experiment?",
-     "a": "Príncipe",
-     "wrong": [
-      "São Tomé",
-      "Bioko",
-      "Annobón"
-     ],
-     "why": "A plaque marks the spot."
-    },
-    {
-     "level": 3,
-     "q": "Which waterfall on São Tomé is the tallest?",
-     "a": "São Nicolau Falls",
-     "wrong": [
-      "Kalandula Falls",
-      "Cascata Blublu",
-      "Bombaim Falls"
-     ],
-     "why": "It drops through lush forest."
-    },
-    {
      "level": 3,
      "q": "Which festival on Príncipe is held on St Lawrence's Day?",
      "a": "Auto de Floripes",
@@ -328,17 +359,6 @@
       "Bulawê"
      ],
      "why": "It tells a story from Charlemagne's wars."
-    },
-    {
-     "level": 3,
-     "q": "Which bird found only on São Tomé is the world's largest sunbird?",
-     "a": "Giant sunbird",
-     "wrong": [
-      "Hummingbird",
-      "Cardinal",
-      "Kingfisher"
-     ],
-     "why": "It lives in the mountain forest."
     }
    ]
   }

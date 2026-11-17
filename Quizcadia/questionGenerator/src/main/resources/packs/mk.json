@@ -3,7 +3,8 @@
  "country": "MK",
  "topics": [
   {
-   "name": "North Macedonia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -15,17 +16,6 @@
       "2019"
      ],
      "why": "It left Yugoslavia peacefully."
-    },
-    {
-     "level": 1,
-     "q": "What is the capital of North Macedonia?",
-     "a": "Skopje",
-     "wrong": [
-      "Ohrid",
-      "Bitola",
-      "Tetovo"
-     ],
-     "why": "It was rebuilt after a 1963 earthquake."
     },
     {
      "level": 1,
@@ -48,17 +38,6 @@
       "Joan of Arc"
      ],
      "why": "She worked in Kolkata."
-    },
-    {
-     "level": 1,
-     "q": "In which year did North Macedonia join NATO?",
-     "a": "2020",
-     "wrong": [
-      "2004",
-      "2009",
-      "2017"
-     ],
-     "why": "It was the 30th member."
     },
     {
      "level": 1,
@@ -161,20 +140,32 @@
     },
     {
      "level": 3,
-     "q": "Which 2010s project filled Skopje's centre with statues?",
-     "a": "Skopje 2014",
+     "q": "Which ancient city near Gradsko was a major Roman town?",
+     "a": "Stobi",
      "wrong": [
-      "Skopje Renewal",
-      "New Macedonia",
-      "Vardar Vision"
+      "Heraclea",
+      "Lychnidos",
+      "Bylazora"
      ],
-     "why": "It was controversial."
+     "why": "It has a theatre and mosaics."
     }
    ]
   },
   {
-   "name": "North Macedonia: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of North Macedonia?",
+     "a": "Skopje",
+     "wrong": [
+      "Ohrid",
+      "Bitola",
+      "Tetovo"
+     ],
+     "why": "It was rebuilt after a 1963 earthquake."
+    },
     {
      "level": 1,
      "q": "Which lake on the Albanian border is one of Europe's oldest?",
@@ -188,17 +179,6 @@
     },
     {
      "level": 1,
-     "q": "What is North Macedonia's currency?",
-     "a": "Macedonian denar",
-     "wrong": [
-      "Euro",
-      "Lek",
-      "Dinar"
-     ],
-     "why": "Its code is MKD."
-    },
-    {
-     "level": 1,
      "q": "Which river flows through Skopje?",
      "a": "Vardar",
      "wrong": [
@@ -207,28 +187,6 @@
       "Morava"
      ],
      "why": "It flows into Greece."
-    },
-    {
-     "level": 1,
-     "q": "Which bean dish baked in a clay pot is the national dish?",
-     "a": "Tavče gravče",
-     "wrong": [
-      "Moussaka",
-      "Ajvar",
-      "Sarma"
-     ],
-     "why": "It is made with white beans."
-    },
-    {
-     "level": 1,
-     "q": "Which old bazaar is one of the largest in the Balkans?",
-     "a": "Old Bazaar of Skopje",
-     "wrong": [
-      "Baščaršija",
-      "Grand Bazaar",
-      "Spice Bazaar"
-     ],
-     "why": "It dates from the 1100s."
     },
     {
      "level": 1,
@@ -265,17 +223,6 @@
     },
     {
      "level": 2,
-     "q": "Which red pepper relish is popular here?",
-     "a": "Ajvar",
-     "wrong": [
-      "Tarator",
-      "Tzatziki",
-      "Kajmak"
-     ],
-     "why": "Families make it in autumn."
-    },
-    {
-     "level": 2,
      "q": "Which canyon near Skopje has a lake and caves?",
      "a": "Matka Canyon",
      "wrong": [
@@ -286,16 +233,22 @@
      "why": "It has a medieval monastery."
     },
     {
-     "level": 2,
-     "q": "Which ancient city near Bitola has rich mosaics?",
-     "a": "Heraclea Lyncestis",
+     "level": 3,
+     "q": "Which mountain is the country's highest?",
+     "a": "Mount Korab",
      "wrong": [
-      "Stobi",
-      "Ohrid",
-      "Skupi"
+      "Mount Pelister",
+      "Šar Mountains",
+      "Mount Galičica"
      ],
-     "why": "Philip II founded it."
-    },
+     "why": "It is on the Albanian border."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
     {
      "level": 2,
      "q": "Which singer represented the country at Eurovision with 'Proud' in 2019 and won the jury vote?",
@@ -317,28 +270,101 @@
       "Karolina Gočeva"
      ],
      "why": "He was hugely loved."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did North Macedonia join NATO?",
+     "a": "2020",
+     "wrong": [
+      "2004",
+      "2009",
+      "2017"
+     ],
+     "why": "It was the 30th member."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
     {
      "level": 3,
-     "q": "Which ancient city near Gradsko was a major Roman town?",
-     "a": "Stobi",
+     "q": "Which 2010s project filled Skopje's centre with statues?",
+     "a": "Skopje 2014",
      "wrong": [
-      "Heraclea",
-      "Lychnidos",
-      "Bylazora"
+      "Skopje Renewal",
+      "New Macedonia",
+      "Vardar Vision"
      ],
-     "why": "It has a theatre and mosaics."
+     "why": "It was controversial."
     },
     {
-     "level": 3,
-     "q": "Which mountain is the country's highest?",
-     "a": "Mount Korab",
+     "level": 2,
+     "q": "Which ancient city near Bitola has rich mosaics?",
+     "a": "Heraclea Lyncestis",
      "wrong": [
-      "Mount Pelister",
-      "Šar Mountains",
-      "Mount Galičica"
+      "Stobi",
+      "Ohrid",
+      "Skupi"
      ],
-     "why": "It is on the Albanian border."
+     "why": "Philip II founded it."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is North Macedonia's currency?",
+     "a": "Macedonian denar",
+     "wrong": [
+      "Euro",
+      "Lek",
+      "Dinar"
+     ],
+     "why": "Its code is MKD."
+    },
+    {
+     "level": 1,
+     "q": "Which bean dish baked in a clay pot is the national dish?",
+     "a": "Tavče gravče",
+     "wrong": [
+      "Moussaka",
+      "Ajvar",
+      "Sarma"
+     ],
+     "why": "It is made with white beans."
+    },
+    {
+     "level": 1,
+     "q": "Which old bazaar is one of the largest in the Balkans?",
+     "a": "Old Bazaar of Skopje",
+     "wrong": [
+      "Baščaršija",
+      "Grand Bazaar",
+      "Spice Bazaar"
+     ],
+     "why": "It dates from the 1100s."
+    },
+    {
+     "level": 2,
+     "q": "Which red pepper relish is popular here?",
+     "a": "Ajvar",
+     "wrong": [
+      "Tarator",
+      "Tzatziki",
+      "Kajmak"
+     ],
+     "why": "Families make it in autumn."
     }
    ]
   }

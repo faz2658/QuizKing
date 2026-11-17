@@ -3,19 +3,9 @@
  "country": "MM",
  "topics": [
   {
-   "name": "Myanmar: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Myanmar?",
-     "a": "Naypyidaw",
-     "wrong": [
-      "Yangon",
-      "Mandalay",
-      "Bagan"
-     ],
-     "why": "It replaced Yangon in 2006."
-    },
     {
      "level": 1,
      "q": "What was Myanmar called before 1989?",
@@ -59,28 +49,6 @@
       "U Nu"
      ],
      "why": "He was assassinated in 1947."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Myanmar's military most recently seize power in a coup?",
-     "a": "2021",
-     "wrong": [
-      "2015",
-      "2011",
-      "2007"
-     ],
-     "why": "It overthrew the elected government."
-    },
-    {
-     "level": 1,
-     "q": "What is Myanmar's currency?",
-     "a": "Kyat",
-     "wrong": [
-      "Baht",
-      "Rupee",
-      "Riel"
-     ],
-     "why": "Its code is MMK."
     },
     {
      "level": 2,
@@ -169,22 +137,6 @@
       "Thibaw"
      ],
      "why": "He ruled from Pegu (Bago)."
-    }
-   ]
-  },
-  {
-   "name": "Myanmar: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which golden pagoda towers over Yangon?",
-     "a": "Shwedagon Pagoda",
-     "wrong": [
-      "Sule Pagoda",
-      "Kyaiktiyo",
-      "Ananda Temple"
-     ],
-     "why": "It is said to hold relics of four Buddhas."
     },
     {
      "level": 1,
@@ -198,15 +150,32 @@
      "why": "Hot-air balloons float over it at dawn."
     },
     {
-     "level": 1,
-     "q": "Which lake is famous for leg-rowing fishermen?",
-     "a": "Inle Lake",
+     "level": 2,
+     "q": "Which ancient city in Rakhine has hilltop stone temples?",
+     "a": "Mrauk U",
      "wrong": [
-      "Tonlé Sap",
-      "Kandawgyi Lake",
-      "Indawgyi Lake"
+      "Bagan",
+      "Pyay",
+      "Bago"
      ],
-     "why": "They row with one leg."
+     "why": "It was a busy trading capital."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Myanmar?",
+     "a": "Naypyidaw",
+     "wrong": [
+      "Yangon",
+      "Mandalay",
+      "Bagan"
+     ],
+     "why": "It replaced Yangon in 2006."
     },
     {
      "level": 1,
@@ -218,6 +187,112 @@
       "Brahmaputra"
      ],
      "why": "It is the country's main waterway."
+    },
+    {
+     "level": 2,
+     "q": "Which teak bridge near Mandalay is the world's longest?",
+     "a": "U Bein Bridge",
+     "wrong": [
+      "Bagan Bridge",
+      "Kyaikkasan Bridge",
+      "Ava Bridge"
+     ],
+     "why": "It is about 1.2 km long."
+    },
+    {
+     "level": 3,
+     "q": "Which extinct volcano is home to the 37 nats (spirits)?",
+     "a": "Mount Popa",
+     "wrong": [
+      "Mount Victoria",
+      "Hkakabo Razi",
+      "Mount Kyaikhtiyo"
+     ],
+     "why": "A monastery stands on its peak."
+    },
+    {
+     "level": 3,
+     "q": "What is Myanmar's highest mountain?",
+     "a": "Hkakabo Razi",
+     "wrong": [
+      "Mount Victoria",
+      "Mount Popa",
+      "Saramati"
+     ],
+     "why": "It is about 5,880 m high."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which lake is famous for leg-rowing fishermen?",
+     "a": "Inle Lake",
+     "wrong": [
+      "Tonlé Sap",
+      "Kandawgyi Lake",
+      "Indawgyi Lake"
+     ],
+     "why": "They row with one leg."
+    },
+    {
+     "level": 3,
+     "q": "Which Myanmar sport is played with a rattan ball?",
+     "a": "Chinlone",
+     "wrong": [
+      "Sepak takraw",
+      "Polo",
+      "Kabaddi"
+     ],
+     "why": "Players keep the ball in the air."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Myanmar's military most recently seize power in a coup?",
+     "a": "2021",
+     "wrong": [
+      "2015",
+      "2011",
+      "2007"
+     ],
+     "why": "It overthrew the elected government."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Myanmar's currency?",
+     "a": "Kyat",
+     "wrong": [
+      "Baht",
+      "Rupee",
+      "Riel"
+     ],
+     "why": "Its code is MMK."
+    },
+    {
+     "level": 1,
+     "q": "Which golden pagoda towers over Yangon?",
+     "a": "Shwedagon Pagoda",
+     "wrong": [
+      "Sule Pagoda",
+      "Kyaiktiyo",
+      "Ananda Temple"
+     ],
+     "why": "It is said to hold relics of four Buddhas."
     },
     {
      "level": 1,
@@ -276,17 +351,6 @@
     },
     {
      "level": 2,
-     "q": "Which teak bridge near Mandalay is the world's longest?",
-     "a": "U Bein Bridge",
-     "wrong": [
-      "Bagan Bridge",
-      "Kyaikkasan Bridge",
-      "Ava Bridge"
-     ],
-     "why": "It is about 1.2 km long."
-    },
-    {
-     "level": 2,
      "q": "Which water festival marks the Burmese New Year?",
      "a": "Thingyan",
      "wrong": [
@@ -295,50 +359,6 @@
       "Tazaungdaing"
      ],
      "why": "It is held in April."
-    },
-    {
-     "level": 2,
-     "q": "Which ancient city in Rakhine has hilltop stone temples?",
-     "a": "Mrauk U",
-     "wrong": [
-      "Bagan",
-      "Pyay",
-      "Bago"
-     ],
-     "why": "It was a busy trading capital."
-    },
-    {
-     "level": 3,
-     "q": "Which extinct volcano is home to the 37 nats (spirits)?",
-     "a": "Mount Popa",
-     "wrong": [
-      "Mount Victoria",
-      "Hkakabo Razi",
-      "Mount Kyaikhtiyo"
-     ],
-     "why": "A monastery stands on its peak."
-    },
-    {
-     "level": 3,
-     "q": "Which Myanmar sport is played with a rattan ball?",
-     "a": "Chinlone",
-     "wrong": [
-      "Sepak takraw",
-      "Polo",
-      "Kabaddi"
-     ],
-     "why": "Players keep the ball in the air."
-    },
-    {
-     "level": 3,
-     "q": "What is Myanmar's highest mountain?",
-     "a": "Hkakabo Razi",
-     "wrong": [
-      "Mount Victoria",
-      "Mount Popa",
-      "Saramati"
-     ],
-     "why": "It is about 5,880 m high."
     }
    ]
   }

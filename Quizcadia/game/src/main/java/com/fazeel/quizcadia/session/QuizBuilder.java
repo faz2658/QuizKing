@@ -44,13 +44,133 @@ public class QuizBuilder {
 		return build(game, Map.of());
 	}
 
+	/** Share of a game's questions that come from the player's own country when it has enough. */
+	static final double HOME_SHARE = 0.75;
+
+	/** Pass as the country for an International quiz: questions from every country and general ones alike. */
+	public static final String EVERYWHERE = "*";
+
+	/**
+	 * Like {@link #build(Game, Map)}, for a player from {@code country}. Questions tagged with that country make
+	 * up about {@value #HOME_SHARE} of the quiz and general (untagged) questions the rest; other countries'
+	 * questions are left out. Unseen questions still come first: when the player has met all their country's
+	 * questions, general ones fill the gap before anything repeats. Without a country only general questions are
+	 * used, since shared topics hold every country's questions; a game with neither the player's country nor
+	 * general questions uses all it has.
+	 */
+	public List<SessionQuestion> build(Game game, Map<Integer, Instant> seen, String country) {
+		if (EVERYWHERE.equals(country)) {
+			return build(game, seen);
+		}
+		String home = country == null || country.isBlank() ? null : country.trim().toUpperCase(java.util.Locale.ROOT);
+		List<Questions> playable = Objects.requireNonNullElse(game.getQuestions(), List.<Questions>of()).stream()
+				.filter(QuizBuilder::isPlayable).toList();
+		List<Questions> mine = home == null ? List.of()
+				: playable.stream().filter(q -> home.equalsIgnoreCase(trimmed(q.getCountry()))).toList();
+		List<Questions> general = playable.stream().filter(q -> isBlank(q.getCountry())).toList();
+		if (home == null) {
+			return build(game, general.isEmpty() ? playable : general, seen);
+		}
+		if (mine.isEmpty() && general.isEmpty()) {
+			return build(game, seen);
+		}
+
+		Map<Difficulty, Integer> need = quota(game);
+		int total = need.values().stream().mapToInt(Integer::intValue).sum();
+		int homeShare = (int) Math.round(total * HOME_SHARE);
+		Pool own = new Pool(mine, seen);
+		Pool world = new Pool(general, seen);
+		Map<Difficulty, List<Questions>> picked = new EnumMap<>(Difficulty.class);
+		for (Difficulty d : Difficulty.values()) {
+			picked.put(d, new ArrayList<>());
+		}
+		// new questions first: the home share from the player's country, the rest from general questions,
+		// then more of the country's if general ones ran out
+		int fromHome = fill(own.unseen, need, picked, homeShare);
+		fill(world.unseen, need, picked, Integer.MAX_VALUE);
+		fromHome += fill(own.unseen, need, picked, Integer.MAX_VALUE);
+		// only then repeats, oldest sighting first, keeping the same proportion
+		fill(own.seenOldestFirst, need, picked, Math.max(0, homeShare - fromHome));
+		fill(world.seenOldestFirst, need, picked, Integer.MAX_VALUE);
+		fill(own.seenOldestFirst, need, picked, Integer.MAX_VALUE);
+
+		List<SessionQuestion> result = new ArrayList<>();
+		for (Difficulty d : Difficulty.values()) {
+			List<Questions> level = picked.get(d);
+			Collections.shuffle(level, random); // mix country and general questions within each level
+			for (Questions q : level) {
+				result.add(toSessionQuestion(q, d, game));
+			}
+		}
+		return result;
+	}
+
+	/** How many questions of each level the game asks for. */
+	private static Map<Difficulty, Integer> quota(Game game) {
+		boolean mixDefined = wanted(game.getQuestionLevels(), null) > 0;
+		Map<Difficulty, Integer> quota = new EnumMap<>(Difficulty.class);
+		for (Difficulty d : Difficulty.values()) {
+			quota.put(d, mixDefined ? wanted(game.getQuestionLevels(), d) : d == Difficulty.EASY ? DEFAULT_QUESTIONS : 0);
+		}
+		return quota;
+	}
+
+	/** Some questions sorted for picking: per level, never-seen ones in random order, and seen ones oldest first. */
+	private final class Pool {
+		final Map<Difficulty, List<Questions>> unseen = new EnumMap<>(Difficulty.class);
+		final Map<Difficulty, List<Questions>> seenOldestFirst = new EnumMap<>(Difficulty.class);
+
+		Pool(List<Questions> questions, Map<Integer, Instant> seen) {
+			for (Difficulty d : Difficulty.values()) {
+				List<Questions> level = new ArrayList<>(questions.stream()
+						.filter(q -> Difficulty.fromLevel(q.getQuestionLevel()) == d).toList());
+				Collections.shuffle(level, random);
+				unseen.put(d, new ArrayList<>(level.stream().filter(q -> !seen.containsKey(q.getQuestionId())).toList()));
+				List<Questions> old = new ArrayList<>(level.stream().filter(q -> seen.containsKey(q.getQuestionId())).toList());
+				old.sort(Comparator.comparing((Questions q) -> seen.get(q.getQuestionId())));
+				seenOldestFirst.put(d, old);
+			}
+		}
+	}
+
+	/**
+	 * Takes questions from {@code source} for what each level still {@code need}s, own level first and then the
+	 * nearest other level, at most {@code limit} in all. @return how many were taken
+	 */
+	private static int fill(Map<Difficulty, List<Questions>> source, Map<Difficulty, Integer> need,
+			Map<Difficulty, List<Questions>> picked, int limit) {
+		int taken = 0;
+		for (Difficulty d : Difficulty.values()) {
+			int k = take(source.get(d), picked.get(d), Math.min(need.get(d), limit - taken));
+			need.merge(d, -k, Integer::sum);
+			taken += k;
+		}
+		for (Difficulty d : Difficulty.values()) {
+			for (Difficulty other : byDistance(d)) {
+				int k = take(source.get(other), picked.get(other), Math.min(need.get(d), limit - taken));
+				need.merge(d, -k, Integer::sum);
+				taken += k;
+			}
+		}
+		return taken;
+	}
+
+	private static String trimmed(String s) {
+		return s == null ? "" : s.trim();
+	}
+
 	/** @param seen when the player last saw each question, by question id */
 	public List<SessionQuestion> build(Game game, Map<Integer, Instant> seen) {
+		return build(game, Objects.requireNonNullElse(game.getQuestions(), List.<Questions>of()), seen);
+	}
+
+	/** The game's quiz from {@code candidates} instead of all of the game's questions. */
+	private List<SessionQuestion> build(Game game, List<Questions> candidates, Map<Integer, Instant> seen) {
 		Map<Difficulty, List<Questions>> byLevel = new EnumMap<>(Difficulty.class);
 		for (Difficulty d : Difficulty.values()) {
 			byLevel.put(d, new ArrayList<>());
 		}
-		for (Questions q : Objects.requireNonNullElse(game.getQuestions(), List.<Questions>of())) {
+		for (Questions q : candidates) {
 			if (isPlayable(q)) {
 				byLevel.get(Difficulty.fromLevel(q.getQuestionLevel())).add(q);
 			}

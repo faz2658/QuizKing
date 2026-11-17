@@ -3,7 +3,8 @@
  "country": "AU",
  "topics": [
   {
-   "name": "Australia History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -117,28 +118,6 @@
     },
     {
      "level": 2,
-     "q": "Which Prime Minister made the 2008 National Apology to the Stolen Generations?",
-     "a": "Kevin Rudd",
-     "wrong": [
-      "John Howard",
-      "Julia Gillard",
-      "Paul Keating"
-     ],
-     "why": "He made it in Parliament on 13 February 2008."
-    },
-    {
-     "level": 2,
-     "q": "Who is Australia's longest-serving Prime Minister?",
-     "a": "Robert Menzies",
-     "wrong": [
-      "John Howard",
-      "Bob Hawke",
-      "Malcolm Fraser"
-     ],
-     "why": "He served over 18 years in total."
-    },
-    {
-     "level": 2,
      "q": "The 1967 referendum changed the Constitution so Aboriginal people would be counted in what?",
      "a": "The national census",
      "wrong": [
@@ -180,11 +159,23 @@
       "Ben Chifley"
      ],
      "why": "He vanished off Cheviot Beach, Victoria."
+    },
+    {
+     "level": 2,
+     "q": "Which Australian co-discovered that bacteria cause most stomach ulcers?",
+     "a": "Barry Marshall",
+     "wrong": [
+      "Howard Florey",
+      "Fiona Wood",
+      "Elizabeth Blackburn"
+     ],
+     "why": "He shared the 2005 Nobel Prize with Robin Warren."
     }
    ]
   },
   {
-   "name": "Australia Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -361,11 +352,23 @@
       "New South Wales"
      ],
      "why": "It only fills with water occasionally."
+    },
+    {
+     "level": 2,
+     "q": "Hobart is the capital of which state?",
+     "a": "Tasmania",
+     "wrong": [
+      "Victoria",
+      "South Australia",
+      "Queensland"
+     ],
+     "why": "It is Australia's second-oldest capital."
     }
    ]
   },
   {
-   "name": "Australia Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,7 +549,8 @@
    ]
   },
   {
-   "name": "Australia Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
     {
      "level": 1,
@@ -572,28 +576,6 @@
     },
     {
      "level": 1,
-     "q": "Which children's TV show is about a blue heeler puppy?",
-     "a": "Bluey",
-     "wrong": [
-      "Peppa Pig",
-      "Hey Duggee",
-      "Play School"
-     ],
-     "why": "It is made in Brisbane."
-    },
-    {
-     "level": 1,
-     "q": "Who starred as Mick Dundee in 'Crocodile Dundee'?",
-     "a": "Paul Hogan",
-     "wrong": [
-      "Hugh Jackman",
-      "Bryan Brown",
-      "Steve Irwin"
-     ],
-     "why": "It was released in 1986."
-    },
-    {
-     "level": 1,
      "q": "Which children's band wears coloured skivvies?",
      "a": "The Wiggles",
      "wrong": [
@@ -602,50 +584,6 @@
       "The Teletubbies"
      ],
      "why": "They formed in Sydney in 1991."
-    },
-    {
-     "level": 1,
-     "q": "Which Australian actor played Wolverine in the X-Men films?",
-     "a": "Hugh Jackman",
-     "wrong": [
-      "Chris Hemsworth",
-      "Russell Crowe",
-      "Heath Ledger"
-     ],
-     "why": "He played the role for 17 years."
-    },
-    {
-     "level": 1,
-     "q": "Which Australian actor plays Thor in Marvel films?",
-     "a": "Chris Hemsworth",
-     "wrong": [
-      "Liam Hemsworth",
-      "Hugh Jackman",
-      "Sam Worthington"
-     ],
-     "why": "He first played Thor in 2011."
-    },
-    {
-     "level": 2,
-     "q": "Which long-running soap opera is set on Ramsay Street?",
-     "a": "Neighbours",
-     "wrong": [
-      "Home and Away",
-      "Prisoner",
-      "A Country Practice"
-     ],
-     "why": "It started in 1985."
-    },
-    {
-     "level": 2,
-     "q": "Who directed 'Mad Max'?",
-     "a": "George Miller",
-     "wrong": [
-      "Baz Luhrmann",
-      "Peter Weir",
-      "Phillip Noyce"
-     ],
-     "why": "He also made 'Happy Feet'."
     },
     {
      "level": 2,
@@ -657,17 +595,6 @@
       "Missy Higgins"
      ],
      "why": "She often performs with her face hidden."
-    },
-    {
-     "level": 2,
-     "q": "Who directed 'Moulin Rouge!' and 'Elvis'?",
-     "a": "Baz Luhrmann",
-     "wrong": [
-      "George Miller",
-      "Peter Weir",
-      "Gillian Armstrong"
-     ],
-     "why": "He also made 'Strictly Ballroom'."
     },
     {
      "level": 2,
@@ -703,6 +630,78 @@
      "why": "He wrote it in 1895."
     },
     {
+     "level": 1,
+     "q": "What is Australia's national anthem?",
+     "a": "Advance Australia Fair",
+     "wrong": [
+      "Waltzing Matilda",
+      "God Save the King",
+      "I Am Australian"
+     ],
+     "why": "It became the anthem in 1984."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which children's TV show is about a blue heeler puppy?",
+     "a": "Bluey",
+     "wrong": [
+      "Peppa Pig",
+      "Hey Duggee",
+      "Play School"
+     ],
+     "why": "It is made in Brisbane."
+    },
+    {
+     "level": 1,
+     "q": "Who starred as Mick Dundee in 'Crocodile Dundee'?",
+     "a": "Paul Hogan",
+     "wrong": [
+      "Hugh Jackman",
+      "Bryan Brown",
+      "Steve Irwin"
+     ],
+     "why": "It was released in 1986."
+    },
+    {
+     "level": 1,
+     "q": "Which Australian actor played Wolverine in the X-Men films?",
+     "a": "Hugh Jackman",
+     "wrong": [
+      "Chris Hemsworth",
+      "Russell Crowe",
+      "Heath Ledger"
+     ],
+     "why": "He played the role for 17 years."
+    },
+    {
+     "level": 1,
+     "q": "Which Australian actor plays Thor in Marvel films?",
+     "a": "Chris Hemsworth",
+     "wrong": [
+      "Liam Hemsworth",
+      "Hugh Jackman",
+      "Sam Worthington"
+     ],
+     "why": "He first played Thor in 2011."
+    },
+    {
+     "level": 2,
+     "q": "Which long-running soap opera is set on Ramsay Street?",
+     "a": "Neighbours",
+     "wrong": [
+      "Home and Away",
+      "Prisoner",
+      "A Country Practice"
+     ],
+     "why": "It started in 1985."
+    },
+    {
      "level": 3,
      "q": "Which Australian actress won the Best Actress Oscar for 'The Hours'?",
      "a": "Nicole Kidman",
@@ -712,7 +711,13 @@
       "Margot Robbie"
      ],
      "why": "She played Virginia Woolf."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
      "level": 3,
      "q": "Which Australian author won the Booker Prize twice?",
@@ -727,8 +732,131 @@
    ]
   },
   {
-   "name": "Australia Food & Traditions",
+   "category": "Politics",
+   "name": "Politics",
    "questions": [
+    {
+     "level": 2,
+     "q": "Which Prime Minister made the 2008 National Apology to the Stolen Generations?",
+     "a": "Kevin Rudd",
+     "wrong": [
+      "John Howard",
+      "Julia Gillard",
+      "Paul Keating"
+     ],
+     "why": "He made it in Parliament on 13 February 2008."
+    },
+    {
+     "level": 2,
+     "q": "Who is Australia's longest-serving Prime Minister?",
+     "a": "Robert Menzies",
+     "wrong": [
+      "John Howard",
+      "Bob Hawke",
+      "Malcolm Fraser"
+     ],
+     "why": "He served over 18 years in total."
+    },
+    {
+     "level": 2,
+     "q": "What is the upper house of Australia's federal Parliament called?",
+     "a": "The Senate",
+     "wrong": [
+      "The House of Lords",
+      "The House of Representatives",
+      "The Legislative Council"
+     ],
+     "why": "Each state elects 12 senators."
+    },
+    {
+     "level": 2,
+     "q": "Voting in Australian federal elections is what?",
+     "a": "Compulsory",
+     "wrong": [
+      "Optional",
+      "Only for landowners and men",
+      "Only for landowners"
+     ],
+     "why": "It has been compulsory since 1924."
+    },
+    {
+     "level": 3,
+     "q": "How many points are there on the Commonwealth Star on Australia's flag?",
+     "a": "7",
+     "wrong": [
+      "6",
+      "5",
+      "8"
+     ],
+     "why": "Six for the states and one for the territories."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which bird appears with the kangaroo on Australia's coat of arms?",
+     "a": "Emu",
+     "wrong": [
+      "Kookaburra",
+      "Black swan",
+      "Cockatoo"
+     ],
+     "why": "Both are native animals, chosen for the 1912 coat of arms."
+    },
+    {
+     "level": 1,
+     "q": "Which egg-laying mammal has a bill like a duck?",
+     "a": "Platypus",
+     "wrong": [
+      "Echidna",
+      "Wombat",
+      "Quokka"
+     ],
+     "why": "The echidna also lays eggs."
+    },
+    {
+     "level": 1,
+     "q": "Which animal eats eucalyptus leaves and sleeps up to 20 hours a day?",
+     "a": "Koala",
+     "wrong": [
+      "Kangaroo",
+      "Wombat",
+      "Possum"
+     ],
+     "why": "Eucalyptus gives it very little energy."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who directed 'Mad Max'?",
+     "a": "George Miller",
+     "wrong": [
+      "Baz Luhrmann",
+      "Peter Weir",
+      "Phillip Noyce"
+     ],
+     "why": "He also made 'Happy Feet'."
+    },
+    {
+     "level": 2,
+     "q": "Who directed 'Moulin Rouge!' and 'Elvis'?",
+     "a": "Baz Luhrmann",
+     "wrong": [
+      "George Miller",
+      "Peter Weir",
+      "Gillian Armstrong"
+     ],
+     "why": "He also made 'Strictly Ballroom'."
+    },
     {
      "level": 1,
      "q": "Which dark yeast spread is an Australian favourite?",
@@ -904,22 +1032,6 @@
       "Splendour in the Grass"
      ],
      "why": "It ends with a nude swim in the cold Derwent River."
-    }
-   ]
-  },
-  {
-   "name": "Australia General Knowledge",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which bird appears with the kangaroo on Australia's coat of arms?",
-     "a": "Emu",
-     "wrong": [
-      "Kookaburra",
-      "Black swan",
-      "Cockatoo"
-     ],
-     "why": "Both are native animals, chosen for the 1912 coat of arms."
     },
     {
      "level": 1,
@@ -945,17 +1057,6 @@
     },
     {
      "level": 1,
-     "q": "Which egg-laying mammal has a bill like a duck?",
-     "a": "Platypus",
-     "wrong": [
-      "Echidna",
-      "Wombat",
-      "Quokka"
-     ],
-     "why": "The echidna also lays eggs."
-    },
-    {
-     "level": 1,
      "q": "How many states does Australia have?",
      "a": "6",
      "wrong": [
@@ -964,28 +1065,6 @@
       "5"
      ],
      "why": "It also has two main mainland territories."
-    },
-    {
-     "level": 1,
-     "q": "Which animal eats eucalyptus leaves and sleeps up to 20 hours a day?",
-     "a": "Koala",
-     "wrong": [
-      "Kangaroo",
-      "Wombat",
-      "Possum"
-     ],
-     "why": "Eucalyptus gives it very little energy."
-    },
-    {
-     "level": 1,
-     "q": "What is Australia's national anthem?",
-     "a": "Advance Australia Fair",
-     "wrong": [
-      "Waltzing Matilda",
-      "God Save the King",
-      "I Am Australian"
-     ],
-     "why": "It became the anthem in 1984."
     },
     {
      "level": 2,
@@ -1000,17 +1079,6 @@
     },
     {
      "level": 2,
-     "q": "Which Australian co-discovered that bacteria cause most stomach ulcers?",
-     "a": "Barry Marshall",
-     "wrong": [
-      "Howard Florey",
-      "Fiona Wood",
-      "Elizabeth Blackburn"
-     ],
-     "why": "He shared the 2005 Nobel Prize with Robin Warren."
-    },
-    {
-     "level": 2,
      "q": "What did Australian scientist David Warren invent?",
      "a": "The black box flight recorder",
      "wrong": [
@@ -1019,39 +1087,6 @@
       "Wi-Fi"
      ],
      "why": "He came up with the idea in the 1950s."
-    },
-    {
-     "level": 2,
-     "q": "What is the upper house of Australia's federal Parliament called?",
-     "a": "The Senate",
-     "wrong": [
-      "The House of Lords",
-      "The House of Representatives",
-      "The Legislative Council"
-     ],
-     "why": "Each state elects 12 senators."
-    },
-    {
-     "level": 2,
-     "q": "Voting in Australian federal elections is what?",
-     "a": "Compulsory",
-     "wrong": [
-      "Optional",
-      "Only for landowners and men",
-      "Only for landowners"
-     ],
-     "why": "It has been compulsory since 1924."
-    },
-    {
-     "level": 2,
-     "q": "Hobart is the capital of which state?",
-     "a": "Tasmania",
-     "wrong": [
-      "Victoria",
-      "South Australia",
-      "Queensland"
-     ],
-     "why": "It is Australia's second-oldest capital."
     },
     {
      "level": 3,
@@ -1074,17 +1109,6 @@
       "Gustav Nossal"
      ],
      "why": "The first one was implanted in 1978."
-    },
-    {
-     "level": 3,
-     "q": "How many points are there on the Commonwealth Star on Australia's flag?",
-     "a": "7",
-     "wrong": [
-      "6",
-      "5",
-      "8"
-     ],
-     "why": "Six for the states and one for the territories."
     }
    ]
   }

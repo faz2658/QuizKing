@@ -50,7 +50,8 @@ public class GameSessionController {
 	@ResponseStatus(HttpStatus.CREATED)
 	public SessionView start(@Valid @RequestBody StartRequest request) {
 		Callers.requireSelf(request.userId());
-		return SessionView.of(service.start(request.gameId(), request.userId(), Callers.currentUserName()),
+		return SessionView.of(service.start(request.gameId(), request.userId(), Callers.currentUserName(),
+				request.questionsFrom()),
 				clock.instant());
 	}
 
@@ -59,7 +60,7 @@ public class GameSessionController {
 	@ResponseStatus(HttpStatus.CREATED)
 	public SessionView startCustom(@Valid @RequestBody CustomRequest request) {
 		return SessionView.of(service.startCustom(request.gameIds(), request.difficulty(), request.count(),
-				Callers.currentUserId(), Callers.currentUserName()), clock.instant());
+				Callers.currentUserId(), Callers.currentUserName(), request.country()), clock.instant());
 	}
 
 	@GetMapping("/sessions/{sessionId}")

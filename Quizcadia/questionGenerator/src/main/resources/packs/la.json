@@ -3,30 +3,9 @@
  "country": "LA",
  "topics": [
   {
-   "name": "Laos: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Laos?",
-     "a": "Vientiane",
-     "wrong": [
-      "Luang Prabang",
-      "Pakse",
-      "Savannakhet"
-     ],
-     "why": "It lies on the Mekong."
-    },
-    {
-     "level": 1,
-     "q": "What is Laos often called because of its history?",
-     "a": "Land of a Million Elephants",
-     "wrong": [
-      "Land of Smiles",
-      "Pearl of the Orient",
-      "Land of Gold"
-     ],
-     "why": "The old kingdom was called Lan Xang."
-    },
     {
      "level": 1,
      "q": "Which ancient kingdom is the root of modern Laos?",
@@ -51,17 +30,6 @@
     },
     {
      "level": 1,
-     "q": "What is the currency of Laos?",
-     "a": "Kip",
-     "wrong": [
-      "Riel",
-      "Baht",
-      "Dong"
-     ],
-     "why": "Its code is LAK."
-    },
-    {
-     "level": 1,
      "q": "Which communist movement took power in 1975?",
      "a": "Pathet Lao",
      "wrong": [
@@ -70,17 +38,6 @@
       "Viet Cong"
      ],
      "why": "It ended the monarchy."
-    },
-    {
-     "level": 1,
-     "q": "Why is Laos the most heavily bombed country per person?",
-     "a": "US bombing during the Vietnam War",
-     "wrong": [
-      "Japanese bombing in 1942",
-      "French bombing in 1950",
-      "Chinese bombing in 1979"
-     ],
-     "why": "Many bombs still lie unexploded."
     },
     {
      "level": 2,
@@ -150,17 +107,6 @@
     },
     {
      "level": 3,
-     "q": "Who was the 'Red Prince' leader of the Pathet Lao?",
-     "a": "Souphanouvong",
-     "wrong": [
-      "Souvanna Phouma",
-      "Kaysone Phomvihane",
-      "Sisavang Vatthana"
-     ],
-     "why": "He became the first President of Laos."
-    },
-    {
-     "level": 3,
      "q": "Which party has ruled Laos since 1975?",
      "a": "Lao People's Revolutionary Party",
      "wrong": [
@@ -169,55 +115,6 @@
       "National Unity Party"
      ],
      "why": "It is the only legal party."
-    }
-   ]
-  },
-  {
-   "name": "Laos: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which golden stupa in Vientiane is a national symbol?",
-     "a": "Pha That Luang",
-     "wrong": [
-      "Shwedagon Pagoda",
-      "Wat Arun",
-      "Wat Xieng Thong"
-     ],
-     "why": "It appears on the national seal."
-    },
-    {
-     "level": 1,
-     "q": "Which sticky rice is the staple food of Laos?",
-     "a": "Khao niao",
-     "wrong": [
-      "Jasmine rice",
-      "Basmati rice",
-      "Arborio rice"
-     ],
-     "why": "It is eaten with the hands."
-    },
-    {
-     "level": 1,
-     "q": "Which spicy minced meat salad is the national dish?",
-     "a": "Larb",
-     "wrong": [
-      "Pad thai",
-      "Som tam",
-      "Nem"
-     ],
-     "why": "It is mixed with herbs and lime."
-    },
-    {
-     "level": 1,
-     "q": "Which river runs along much of the Thai border?",
-     "a": "Mekong",
-     "wrong": [
-      "Salween",
-      "Irrawaddy",
-      "Red River"
-     ],
-     "why": "It is the lifeline of Laos."
     },
     {
      "level": 1,
@@ -231,15 +128,43 @@
      "why": "It is a UNESCO site."
     },
     {
-     "level": 1,
-     "q": "Which morning ritual sees monks collect food in Luang Prabang?",
-     "a": "Tak Bat (alms giving)",
+     "level": 3,
+     "q": "Which ancient Khmer temple in southern Laos is a UNESCO site?",
+     "a": "Vat Phou",
      "wrong": [
-      "Bun Pha Wet",
-      "Songkran",
-      "Loy Krathong"
+      "Angkor Wat",
+      "Preah Vihear",
+      "Phimai"
      ],
-     "why": "It happens at dawn."
+     "why": "It is near Champasak."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Laos?",
+     "a": "Vientiane",
+     "wrong": [
+      "Luang Prabang",
+      "Pakse",
+      "Savannakhet"
+     ],
+     "why": "It lies on the Mekong."
+    },
+    {
+     "level": 1,
+     "q": "Which river runs along much of the Thai border?",
+     "a": "Mekong",
+     "wrong": [
+      "Salween",
+      "Irrawaddy",
+      "Red River"
+     ],
+     "why": "It is the lifeline of Laos."
     },
     {
      "level": 1,
@@ -295,6 +220,134 @@
       "Pakse"
      ],
      "why": "It is set among limestone hills."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which bamboo mouth organ is Laos's national instrument?",
+     "a": "Khene",
+     "wrong": [
+      "Pi",
+      "Sitar",
+      "Erhu"
+     ],
+     "why": "It is on UNESCO's list."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which temple in Luang Prabang has a famous 'tree of life' mosaic?",
+     "a": "Wat Xieng Thong",
+     "wrong": [
+      "Wat Mai",
+      "Wat Visoun",
+      "Pha That Luang"
+     ],
+     "why": "It was built in 1560."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Laos often called because of its history?",
+     "a": "Land of a Million Elephants",
+     "wrong": [
+      "Land of Smiles",
+      "Pearl of the Orient",
+      "Land of Gold"
+     ],
+     "why": "The old kingdom was called Lan Xang."
+    },
+    {
+     "level": 1,
+     "q": "What is the currency of Laos?",
+     "a": "Kip",
+     "wrong": [
+      "Riel",
+      "Baht",
+      "Dong"
+     ],
+     "why": "Its code is LAK."
+    },
+    {
+     "level": 1,
+     "q": "Why is Laos the most heavily bombed country per person?",
+     "a": "US bombing during the Vietnam War",
+     "wrong": [
+      "Japanese bombing in 1942",
+      "French bombing in 1950",
+      "Chinese bombing in 1979"
+     ],
+     "why": "Many bombs still lie unexploded."
+    },
+    {
+     "level": 3,
+     "q": "Who was the 'Red Prince' leader of the Pathet Lao?",
+     "a": "Souphanouvong",
+     "wrong": [
+      "Souvanna Phouma",
+      "Kaysone Phomvihane",
+      "Sisavang Vatthana"
+     ],
+     "why": "He became the first President of Laos."
+    },
+    {
+     "level": 1,
+     "q": "Which golden stupa in Vientiane is a national symbol?",
+     "a": "Pha That Luang",
+     "wrong": [
+      "Shwedagon Pagoda",
+      "Wat Arun",
+      "Wat Xieng Thong"
+     ],
+     "why": "It appears on the national seal."
+    },
+    {
+     "level": 1,
+     "q": "Which sticky rice is the staple food of Laos?",
+     "a": "Khao niao",
+     "wrong": [
+      "Jasmine rice",
+      "Basmati rice",
+      "Arborio rice"
+     ],
+     "why": "It is eaten with the hands."
+    },
+    {
+     "level": 1,
+     "q": "Which spicy minced meat salad is the national dish?",
+     "a": "Larb",
+     "wrong": [
+      "Pad thai",
+      "Som tam",
+      "Nem"
+     ],
+     "why": "It is mixed with herbs and lime."
+    },
+    {
+     "level": 1,
+     "q": "Which morning ritual sees monks collect food in Luang Prabang?",
+     "a": "Tak Bat (alms giving)",
+     "wrong": [
+      "Bun Pha Wet",
+      "Songkran",
+      "Loy Krathong"
+     ],
+     "why": "It happens at dawn."
     },
     {
      "level": 2,
@@ -306,39 +359,6 @@
       "Choul Chnam Thmey"
      ],
      "why": "People splash water for luck."
-    },
-    {
-     "level": 3,
-     "q": "Which temple in Luang Prabang has a famous 'tree of life' mosaic?",
-     "a": "Wat Xieng Thong",
-     "wrong": [
-      "Wat Mai",
-      "Wat Visoun",
-      "Pha That Luang"
-     ],
-     "why": "It was built in 1560."
-    },
-    {
-     "level": 3,
-     "q": "Which bamboo mouth organ is Laos's national instrument?",
-     "a": "Khene",
-     "wrong": [
-      "Pi",
-      "Sitar",
-      "Erhu"
-     ],
-     "why": "It is on UNESCO's list."
-    },
-    {
-     "level": 3,
-     "q": "Which ancient Khmer temple in southern Laos is a UNESCO site?",
-     "a": "Vat Phou",
-     "wrong": [
-      "Angkor Wat",
-      "Preah Vihear",
-      "Phimai"
-     ],
-     "why": "It is near Champasak."
     }
    ]
   }

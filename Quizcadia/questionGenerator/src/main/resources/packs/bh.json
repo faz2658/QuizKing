@@ -3,7 +3,8 @@
  "country": "BH",
  "topics": [
   {
-   "name": "Bahrain: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -18,17 +19,6 @@
     },
     {
      "level": 1,
-     "q": "Which family rules Bahrain?",
-     "a": "Al Khalifa",
-     "wrong": [
-      "Al Thani",
-      "Al Sabah",
-      "Al Nahyan"
-     ],
-     "why": "They have ruled since 1783."
-    },
-    {
-     "level": 1,
      "q": "Which ancient civilisation was centred on Bahrain?",
      "a": "Dilmun",
      "wrong": [
@@ -40,17 +30,6 @@
     },
     {
      "level": 1,
-     "q": "Before oil, what was Bahrain famous for?",
-     "a": "Pearl diving",
-     "wrong": [
-      "Silk weaving",
-      "Gold mining",
-      "Spice farming"
-     ],
-     "why": "Its pearling path is a UNESCO site."
-    },
-    {
-     "level": 1,
      "q": "In which year was oil discovered in Bahrain?",
      "a": "1932",
      "wrong": [
@@ -59,17 +38,6 @@
       "1965"
      ],
      "why": "It was the first discovery on the Arab side of the Gulf."
-    },
-    {
-     "level": 1,
-     "q": "Who has been King of Bahrain since 2002?",
-     "a": "Hamad bin Isa Al Khalifa",
-     "wrong": [
-      "Isa bin Salman",
-      "Salman bin Hamad",
-      "Khalifa bin Salman"
-     ],
-     "why": "He was Emir from 1999."
     },
     {
      "level": 1,
@@ -92,17 +60,6 @@
       "Bu Maher Fort"
      ],
      "why": "It was the capital of Dilmun."
-    },
-    {
-     "level": 2,
-     "q": "Which burial mounds number in the tens of thousands?",
-     "a": "Dilmun Burial Mounds",
-     "wrong": [
-      "Bat Tombs",
-      "Hili Tombs",
-      "Pyramids of Meroe"
-     ],
-     "why": "They are a UNESCO site."
     },
     {
      "level": 2,
@@ -139,17 +96,6 @@
     },
     {
      "level": 3,
-     "q": "Which 'Tree of Life' has survived alone in the desert for about 400 years?",
-     "a": "A mesquite tree in the Bahrain desert",
-     "wrong": [
-      "A date palm on Hawar",
-      "A baobab near Manama",
-      "A ghaf in Riffa"
-     ],
-     "why": "No one is sure where its water comes from."
-    },
-    {
-     "level": 3,
      "q": "Which oil company, founded in 1929, was Bahrain's first?",
      "a": "BAPCO (Bahrain Petroleum Company)",
      "wrong": [
@@ -169,12 +115,35 @@
       "Gertrude Bell"
      ],
      "why": "He set up schools and police."
+    },
+    {
+     "level": 3,
+     "q": "Which flower-filled 'pearl' monument was removed in 2011?",
+     "a": "Pearl Roundabout monument",
+     "wrong": [
+      "Bab Al Bahrain",
+      "Arad Fort gate",
+      "Riffa Clock Tower"
+     ],
+     "why": "It stood at a protest site."
     }
    ]
   },
   {
-   "name": "Bahrain: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 3,
+     "q": "Which 'Tree of Life' has survived alone in the desert for about 400 years?",
+     "a": "A mesquite tree in the Bahrain desert",
+     "wrong": [
+      "A date palm on Hawar",
+      "A baobab near Manama",
+      "A ghaf in Riffa"
+     ],
+     "why": "No one is sure where its water comes from."
+    },
     {
      "level": 1,
      "q": "What is the capital of Bahrain?",
@@ -185,17 +154,6 @@
       "Isa Town"
      ],
      "why": "It is on the north coast."
-    },
-    {
-     "level": 1,
-     "q": "What is Bahrain's currency?",
-     "a": "Bahraini dinar",
-     "wrong": [
-      "Dirham",
-      "Riyal",
-      "Rupee"
-     ],
-     "why": "It is one of the world's most valuable currencies."
     },
     {
      "level": 1,
@@ -210,15 +168,43 @@
     },
     {
      "level": 1,
-     "q": "Which bridge links Bahrain to Saudi Arabia?",
-     "a": "King Fahd Causeway",
+     "q": "Which sea surrounds Bahrain?",
+     "a": "Persian Gulf",
      "wrong": [
-      "Sheikh Jaber Causeway",
-      "Sitra Bridge",
-      "Hawar Bridge"
+      "Red Sea",
+      "Arabian Sea",
+      "Caspian Sea"
      ],
-     "why": "It opened in 1986."
+     "why": "It sits between Qatar and Saudi Arabia."
     },
+    {
+     "level": 2,
+     "q": "Which island town was Bahrain's old capital, with pearling houses?",
+     "a": "Muharraq",
+     "wrong": [
+      "Sitra",
+      "Riffa",
+      "Jidhafs"
+     ],
+     "why": "It is on the Pearling Path."
+    },
+    {
+     "level": 2,
+     "q": "Which island group belongs to Bahrain near Qatar?",
+     "a": "Hawar Islands",
+     "wrong": [
+      "Amwaj Islands",
+      "Durrat Islands",
+      "Failaka"
+     ],
+     "why": "The ICJ confirmed it in 2001."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 1,
      "q": "Which Formula One race is held in Bahrain?",
@@ -229,17 +215,101 @@
       "Saudi Grand Prix"
      ],
      "why": "It was the first F1 race in the Middle East, in 2004."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been King of Bahrain since 2002?",
+     "a": "Hamad bin Isa Al Khalifa",
+     "wrong": [
+      "Isa bin Salman",
+      "Salman bin Hamad",
+      "Khalifa bin Salman"
+     ],
+     "why": "He was Emir from 1999."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which national museum opened in Manama in 1988?",
+     "a": "Bahrain National Museum",
+     "wrong": [
+      "Dilmun Museum",
+      "Pearl Museum",
+      "Arad Museum"
+     ],
+     "why": "It holds Dilmun treasures."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which family rules Bahrain?",
+     "a": "Al Khalifa",
+     "wrong": [
+      "Al Thani",
+      "Al Sabah",
+      "Al Nahyan"
+     ],
+     "why": "They have ruled since 1783."
     },
     {
      "level": 1,
-     "q": "Which sea surrounds Bahrain?",
-     "a": "Persian Gulf",
+     "q": "Before oil, what was Bahrain famous for?",
+     "a": "Pearl diving",
      "wrong": [
-      "Red Sea",
-      "Arabian Sea",
-      "Caspian Sea"
+      "Silk weaving",
+      "Gold mining",
+      "Spice farming"
      ],
-     "why": "It sits between Qatar and Saudi Arabia."
+     "why": "Its pearling path is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which burial mounds number in the tens of thousands?",
+     "a": "Dilmun Burial Mounds",
+     "wrong": [
+      "Bat Tombs",
+      "Hili Tombs",
+      "Pyramids of Meroe"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "What is Bahrain's currency?",
+     "a": "Bahraini dinar",
+     "wrong": [
+      "Dirham",
+      "Riyal",
+      "Rupee"
+     ],
+     "why": "It is one of the world's most valuable currencies."
+    },
+    {
+     "level": 1,
+     "q": "Which bridge links Bahrain to Saudi Arabia?",
+     "a": "King Fahd Causeway",
+     "wrong": [
+      "Sheikh Jaber Causeway",
+      "Sitra Bridge",
+      "Hawar Bridge"
+     ],
+     "why": "It opened in 1986."
     },
     {
      "level": 1,
@@ -265,39 +335,6 @@
     },
     {
      "level": 2,
-     "q": "Which island town was Bahrain's old capital, with pearling houses?",
-     "a": "Muharraq",
-     "wrong": [
-      "Sitra",
-      "Riffa",
-      "Jidhafs"
-     ],
-     "why": "It is on the Pearling Path."
-    },
-    {
-     "level": 2,
-     "q": "Which national museum opened in Manama in 1988?",
-     "a": "Bahrain National Museum",
-     "wrong": [
-      "Dilmun Museum",
-      "Pearl Museum",
-      "Arad Museum"
-     ],
-     "why": "It holds Dilmun treasures."
-    },
-    {
-     "level": 2,
-     "q": "Which island group belongs to Bahrain near Qatar?",
-     "a": "Hawar Islands",
-     "wrong": [
-      "Amwaj Islands",
-      "Durrat Islands",
-      "Failaka"
-     ],
-     "why": "The ICJ confirmed it in 2001."
-    },
-    {
-     "level": 2,
      "q": "Which mosque in Manama is one of the world's largest?",
      "a": "Al Fateh Grand Mosque",
      "wrong": [
@@ -317,17 +354,6 @@
       "Maamoul"
      ],
      "why": "Halwa Showaiter is a famous maker."
-    },
-    {
-     "level": 3,
-     "q": "Which flower-filled 'pearl' monument was removed in 2011?",
-     "a": "Pearl Roundabout monument",
-     "wrong": [
-      "Bab Al Bahrain",
-      "Arad Fort gate",
-      "Riffa Clock Tower"
-     ],
-     "why": "It stood at a protest site."
     },
     {
      "level": 3,

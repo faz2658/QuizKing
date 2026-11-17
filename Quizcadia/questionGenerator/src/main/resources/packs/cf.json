@@ -3,19 +3,9 @@
  "country": "CF",
  "topics": [
   {
-   "name": "Central African Republic: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of the Central African Republic?",
-     "a": "Bangui",
-     "wrong": [
-      "Bimbo",
-      "Berbérati",
-      "Bambari"
-     ],
-     "why": "It is on the Ubangi River."
-    },
     {
      "level": 1,
      "q": "From which country did the Central African Republic gain independence in 1960?",
@@ -37,50 +27,6 @@
       "Ange-Félix Patassé"
      ],
      "why": "His coronation cost a fortune."
-    },
-    {
-     "level": 1,
-     "q": "What is the currency of the Central African Republic?",
-     "a": "Central African CFA franc",
-     "wrong": [
-      "West African CFA franc",
-      "Congolese franc",
-      "Naira"
-     ],
-     "why": "It is shared by six countries."
-    },
-    {
-     "level": 1,
-     "q": "Which two languages are official in the Central African Republic?",
-     "a": "French and Sango",
-     "wrong": [
-      "French and Arabic",
-      "French and English",
-      "Sango and Swahili"
-     ],
-     "why": "Sango is spoken by most people."
-    },
-    {
-     "level": 1,
-     "q": "Which gem is a key export?",
-     "a": "Diamonds",
-     "wrong": [
-      "Emeralds",
-      "Rubies",
-      "Opals"
-     ],
-     "why": "Gold and timber are too."
-    },
-    {
-     "level": 1,
-     "q": "Who has been President of the Central African Republic since 2016?",
-     "a": "Faustin-Archange Touadéra",
-     "wrong": [
-      "François Bozizé",
-      "Catherine Samba-Panza",
-      "Michel Djotodia"
-     ],
-     "why": "He was a mathematics professor."
     },
     {
      "level": 2,
@@ -116,28 +62,6 @@
      "why": "Michel Djotodia became President."
     },
     {
-     "level": 2,
-     "q": "Which militias formed to fight the Séléka?",
-     "a": "Anti-balaka",
-     "wrong": [
-      "Interahamwe",
-      "Mai-Mai",
-      "Janjaweed"
-     ],
-     "why": "The conflict became sectarian."
-    },
-    {
-     "level": 2,
-     "q": "Which woman served as interim President in 2014–16?",
-     "a": "Catherine Samba-Panza",
-     "wrong": [
-      "Ellen Johnson Sirleaf",
-      "Joyce Banda",
-      "Aminata Touré"
-     ],
-     "why": "She was mayor of Bangui."
-    },
-    {
      "level": 3,
      "q": "What was Bokassa's empire called?",
      "a": "Central African Empire",
@@ -147,17 +71,6 @@
       "Empire of Sango"
      ],
      "why": "It lasted from 1976 to 1979."
-    },
-    {
-     "level": 3,
-     "q": "Which French operation removed Bokassa in 1979?",
-     "a": "Operation Barracuda",
-     "wrong": [
-      "Operation Turquoise",
-      "Operation Serval",
-      "Operation Sangaris"
-     ],
-     "why": "Dacko was put back in power."
     },
     {
      "level": 3,
@@ -173,8 +86,20 @@
    ]
   },
   {
-   "name": "Central African Republic: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Central African Republic?",
+     "a": "Bangui",
+     "wrong": [
+      "Bimbo",
+      "Berbérati",
+      "Bambari"
+     ],
+     "why": "It is on the Ubangi River."
+    },
     {
      "level": 1,
      "q": "Which national park in the north is a UNESCO site?",
@@ -210,17 +135,6 @@
     },
     {
      "level": 1,
-     "q": "Which people of the southwest forests are famous hunters and singers?",
-     "a": "BaAka",
-     "wrong": [
-      "Maasai",
-      "San",
-      "Tuareg"
-     ],
-     "why": "Their polyphonic songs are on UNESCO's list."
-    },
-    {
-     "level": 1,
      "q": "Which landlocked country is in the very centre of Africa?",
      "a": "Central African Republic",
      "wrong": [
@@ -232,17 +146,6 @@
     },
     {
      "level": 1,
-     "q": "Which crop is a staple food?",
-     "a": "Cassava",
-     "wrong": [
-      "Wheat",
-      "Barley",
-      "Potato"
-     ],
-     "why": "It is made into a paste called gozo."
-    },
-    {
-     "level": 1,
      "q": "Which great waterfalls are near Boali?",
      "a": "Boali Falls",
      "wrong": [
@@ -251,39 +154,6 @@
       "Blue Nile Falls"
      ],
      "why": "They supply Bangui with power."
-    },
-    {
-     "level": 2,
-     "q": "Which gorilla can be tracked in Dzanga-Sangha?",
-     "a": "Western lowland gorilla",
-     "wrong": [
-      "Mountain gorilla",
-      "Eastern lowland gorilla",
-      "Cross River gorilla"
-     ],
-     "why": "Habituated groups can be visited."
-    },
-    {
-     "level": 2,
-     "q": "Which cassava paste is the national staple?",
-     "a": "Gozo",
-     "wrong": [
-      "Fufu",
-      "Ugali",
-      "Banku"
-     ],
-     "why": "It is served with sauce."
-    },
-    {
-     "level": 2,
-     "q": "In which sport did the Central African Republic win the African championship in 1974 and 1987?",
-     "a": "Basketball",
-     "wrong": [
-      "Football",
-      "Handball",
-      "Volleyball"
-     ],
-     "why": "It was a rare sporting high."
     },
     {
      "level": 2,
@@ -317,6 +187,90 @@
       "Ndélé"
      ],
      "why": "It is near Cameroon."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "In which sport did the Central African Republic win the African championship in 1974 and 1987?",
+     "a": "Basketball",
+     "wrong": [
+      "Football",
+      "Handball",
+      "Volleyball"
+     ],
+     "why": "It was a rare sporting high."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which French operation removed Bokassa in 1979?",
+     "a": "Operation Barracuda",
+     "wrong": [
+      "Operation Turquoise",
+      "Operation Serval",
+      "Operation Sangaris"
+     ],
+     "why": "Dacko was put back in power."
+    },
+    {
+     "level": 1,
+     "q": "Which people of the southwest forests are famous hunters and singers?",
+     "a": "BaAka",
+     "wrong": [
+      "Maasai",
+      "San",
+      "Tuareg"
+     ],
+     "why": "Their polyphonic songs are on UNESCO's list."
+    },
+    {
+     "level": 2,
+     "q": "Which gorilla can be tracked in Dzanga-Sangha?",
+     "a": "Western lowland gorilla",
+     "wrong": [
+      "Mountain gorilla",
+      "Eastern lowland gorilla",
+      "Cross River gorilla"
+     ],
+     "why": "Habituated groups can be visited."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been President of the Central African Republic since 2016?",
+     "a": "Faustin-Archange Touadéra",
+     "wrong": [
+      "François Bozizé",
+      "Catherine Samba-Panza",
+      "Michel Djotodia"
+     ],
+     "why": "He was a mathematics professor."
+    },
+    {
+     "level": 2,
+     "q": "Which woman served as interim President in 2014–16?",
+     "a": "Catherine Samba-Panza",
+     "wrong": [
+      "Ellen Johnson Sirleaf",
+      "Joyce Banda",
+      "Aminata Touré"
+     ],
+     "why": "She was mayor of Bangui."
     },
     {
      "level": 3,
@@ -328,6 +282,78 @@
       "Sandline"
      ],
      "why": "It guards officials and mines."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the currency of the Central African Republic?",
+     "a": "Central African CFA franc",
+     "wrong": [
+      "West African CFA franc",
+      "Congolese franc",
+      "Naira"
+     ],
+     "why": "It is shared by six countries."
+    },
+    {
+     "level": 1,
+     "q": "Which two languages are official in the Central African Republic?",
+     "a": "French and Sango",
+     "wrong": [
+      "French and Arabic",
+      "French and English",
+      "Sango and Swahili"
+     ],
+     "why": "Sango is spoken by most people."
+    },
+    {
+     "level": 1,
+     "q": "Which gem is a key export?",
+     "a": "Diamonds",
+     "wrong": [
+      "Emeralds",
+      "Rubies",
+      "Opals"
+     ],
+     "why": "Gold and timber are too."
+    },
+    {
+     "level": 2,
+     "q": "Which militias formed to fight the Séléka?",
+     "a": "Anti-balaka",
+     "wrong": [
+      "Interahamwe",
+      "Mai-Mai",
+      "Janjaweed"
+     ],
+     "why": "The conflict became sectarian."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is a staple food?",
+     "a": "Cassava",
+     "wrong": [
+      "Wheat",
+      "Barley",
+      "Potato"
+     ],
+     "why": "It is made into a paste called gozo."
+    },
+    {
+     "level": 2,
+     "q": "Which cassava paste is the national staple?",
+     "a": "Gozo",
+     "wrong": [
+      "Fufu",
+      "Ugali",
+      "Banku"
+     ],
+     "why": "It is served with sauce."
     },
     {
      "level": 3,

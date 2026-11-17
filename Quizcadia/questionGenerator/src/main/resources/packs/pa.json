@@ -3,30 +3,9 @@
  "country": "PA",
  "topics": [
   {
-   "name": "Panama: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Panama?",
-     "a": "Panama City",
-     "wrong": [
-      "Colón",
-      "David",
-      "Portobelo"
-     ],
-     "why": "It has a skyline of skyscrapers."
-    },
-    {
-     "level": 1,
-     "q": "Which waterway joins the Atlantic and Pacific through Panama?",
-     "a": "Panama Canal",
-     "wrong": [
-      "Suez Canal",
-      "Nicaragua Canal",
-      "Kiel Canal"
-     ],
-     "why": "It opened in 1914."
-    },
     {
      "level": 1,
      "q": "From which country did Panama separate in 1903?",
@@ -51,17 +30,6 @@
     },
     {
      "level": 1,
-     "q": "What is Panama's official currency alongside the US dollar?",
-     "a": "Balboa",
-     "wrong": [
-      "Colón",
-      "Peso",
-      "Quetzal"
-     ],
-     "why": "It is named after the explorer."
-    },
-    {
-     "level": 1,
      "q": "Which Spanish explorer first saw the Pacific from Panama in 1513?",
      "a": "Vasco Núñez de Balboa",
      "wrong": [
@@ -70,17 +38,6 @@
       "Christopher Columbus"
      ],
      "why": "He called it the South Sea."
-    },
-    {
-     "level": 1,
-     "q": "Which country first tried to build the canal in the 1880s?",
-     "a": "France",
-     "wrong": [
-      "United Kingdom",
-      "Spain",
-      "Germany"
-     ],
-     "why": "Ferdinand de Lesseps led the effort."
     },
     {
      "level": 2,
@@ -127,17 +84,6 @@
      "why": "They happened on 9 January."
     },
     {
-     "level": 2,
-     "q": "Which disease killed many French canal workers?",
-     "a": "Yellow fever and malaria",
-     "wrong": [
-      "Cholera",
-      "Smallpox",
-      "Plague"
-     ],
-     "why": "Mosquito control later made the US build possible."
-    },
-    {
      "level": 3,
      "q": "Which new, larger set of canal locks opened in 2016?",
      "a": "Panama Canal expansion (Agua Clara and Cocolí)",
@@ -158,6 +104,23 @@
       "Ana Matilde Gómez"
      ],
      "why": "She was the widow of Arnulfo Arias."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Panama?",
+     "a": "Panama City",
+     "wrong": [
+      "Colón",
+      "David",
+      "Portobelo"
+     ],
+     "why": "It has a skyline of skyscrapers."
     },
     {
      "level": 3,
@@ -169,22 +132,6 @@
       "Nombre de Dios"
      ],
      "why": "Its forts are a UNESCO site."
-    }
-   ]
-  },
-  {
-   "name": "Panama: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which famous hat is wrongly named after Panama?",
-     "a": "Panama hat",
-     "wrong": [
-      "Fedora",
-      "Sombrero",
-      "Bowler hat"
-     ],
-     "why": "It is made in Ecuador."
     },
     {
      "level": 1,
@@ -196,39 +143,6 @@
       "Coiba"
      ],
      "why": "They govern it themselves."
-    },
-    {
-     "level": 1,
-     "q": "Which colourful textile panels do Guna women sew?",
-     "a": "Molas",
-     "wrong": [
-      "Huipils",
-      "Ponchos",
-      "Kente"
-     ],
-     "why": "They use layered cloth."
-    },
-    {
-     "level": 1,
-     "q": "Which island chain near Costa Rica is popular with surfers?",
-     "a": "Bocas del Toro",
-     "wrong": [
-      "San Blas",
-      "Pearl Islands",
-      "Taboga"
-     ],
-     "why": "It has a Caribbean feel."
-    },
-    {
-     "level": 1,
-     "q": "Which chicken soup is Panama's national dish?",
-     "a": "Sancocho",
-     "wrong": [
-      "Ajiaco",
-      "Pozole",
-      "Caldo verde"
-     ],
-     "why": "It is flavoured with culantro."
     },
     {
      "level": 1,
@@ -254,14 +168,42 @@
     },
     {
      "level": 2,
-     "q": "Which Panamanian salsa singer starred in films and ran for President?",
-     "a": "Rubén Blades",
+     "q": "Which artificial lake forms part of the canal?",
+     "a": "Gatún Lake",
      "wrong": [
-      "Marc Anthony",
-      "Willie Colón",
-      "Héctor Lavoe"
+      "Lake Nicaragua",
+      "Lake Alajuela",
+      "Lake Atitlán"
      ],
-     "why": "He was later Minister of Tourism."
+     "why": "It was the world's largest artificial lake in 1913."
+    },
+    {
+     "level": 3,
+     "q": "Which island national park is a former prison and a UNESCO site?",
+     "a": "Coiba",
+     "wrong": [
+      "Taboga",
+      "Contadora",
+      "Isla Grande"
+     ],
+     "why": "Its waters are full of marine life."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which island chain near Costa Rica is popular with surfers?",
+     "a": "Bocas del Toro",
+     "wrong": [
+      "San Blas",
+      "Pearl Islands",
+      "Taboga"
+     ],
+     "why": "It has a Caribbean feel."
     },
     {
      "level": 2,
@@ -275,15 +217,49 @@
      "why": "He beat Sugar Ray Leonard in 1980."
     },
     {
-     "level": 2,
-     "q": "Which Panamanian baseball player was the first unanimous Hall of Famer?",
-     "a": "Mariano Rivera",
+     "level": 3,
+     "q": "At which World Cup did Panama make its debut?",
+     "a": "Russia 2018",
      "wrong": [
-      "Rod Carew",
-      "Carlos Lee",
-      "Manny Sanguillén"
+      "Brazil 2014",
+      "Qatar 2022",
+      "South Africa 2010"
      ],
-     "why": "He was a famous Yankees closer."
+     "why": "Panama scored against England."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Panamanian salsa singer starred in films and ran for President?",
+     "a": "Rubén Blades",
+     "wrong": [
+      "Marc Anthony",
+      "Willie Colón",
+      "Héctor Lavoe"
+     ],
+     "why": "He was later Minister of Tourism."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which colourful textile panels do Guna women sew?",
+     "a": "Molas",
+     "wrong": [
+      "Huipils",
+      "Ponchos",
+      "Kente"
+     ],
+     "why": "They use layered cloth."
     },
     {
      "level": 2,
@@ -295,39 +271,89 @@
       "Museo Reina Torres"
      ],
      "why": "It has bright coloured roofs."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which waterway joins the Atlantic and Pacific through Panama?",
+     "a": "Panama Canal",
+     "wrong": [
+      "Suez Canal",
+      "Nicaragua Canal",
+      "Kiel Canal"
+     ],
+     "why": "It opened in 1914."
+    },
+    {
+     "level": 1,
+     "q": "What is Panama's official currency alongside the US dollar?",
+     "a": "Balboa",
+     "wrong": [
+      "Colón",
+      "Peso",
+      "Quetzal"
+     ],
+     "why": "It is named after the explorer."
+    },
+    {
+     "level": 1,
+     "q": "Which country first tried to build the canal in the 1880s?",
+     "a": "France",
+     "wrong": [
+      "United Kingdom",
+      "Spain",
+      "Germany"
+     ],
+     "why": "Ferdinand de Lesseps led the effort."
     },
     {
      "level": 2,
-     "q": "Which artificial lake forms part of the canal?",
-     "a": "Gatún Lake",
+     "q": "Which disease killed many French canal workers?",
+     "a": "Yellow fever and malaria",
      "wrong": [
-      "Lake Nicaragua",
-      "Lake Alajuela",
-      "Lake Atitlán"
+      "Cholera",
+      "Smallpox",
+      "Plague"
      ],
-     "why": "It was the world's largest artificial lake in 1913."
+     "why": "Mosquito control later made the US build possible."
     },
     {
-     "level": 3,
-     "q": "At which World Cup did Panama make its debut?",
-     "a": "Russia 2018",
+     "level": 1,
+     "q": "Which famous hat is wrongly named after Panama?",
+     "a": "Panama hat",
      "wrong": [
-      "Brazil 2014",
-      "Qatar 2022",
-      "South Africa 2010"
+      "Fedora",
+      "Sombrero",
+      "Bowler hat"
      ],
-     "why": "Panama scored against England."
+     "why": "It is made in Ecuador."
     },
     {
-     "level": 3,
-     "q": "Which island national park is a former prison and a UNESCO site?",
-     "a": "Coiba",
+     "level": 1,
+     "q": "Which chicken soup is Panama's national dish?",
+     "a": "Sancocho",
      "wrong": [
-      "Taboga",
-      "Contadora",
-      "Isla Grande"
+      "Ajiaco",
+      "Pozole",
+      "Caldo verde"
      ],
-     "why": "Its waters are full of marine life."
+     "why": "It is flavoured with culantro."
+    },
+    {
+     "level": 2,
+     "q": "Which Panamanian baseball player was the first unanimous Hall of Famer?",
+     "a": "Mariano Rivera",
+     "wrong": [
+      "Rod Carew",
+      "Carlos Lee",
+      "Manny Sanguillén"
+     ],
+     "why": "He was a famous Yankees closer."
     },
     {
      "level": 3,

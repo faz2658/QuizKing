@@ -3,19 +3,9 @@
  "country": "SS",
  "topics": [
   {
-   "name": "South Sudan: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of South Sudan?",
-     "a": "Juba",
-     "wrong": [
-      "Wau",
-      "Malakal",
-      "Bor"
-     ],
-     "why": "It is on the White Nile."
-    },
     {
      "level": 1,
      "q": "In which year did South Sudan become independent?",
@@ -26,61 +16,6 @@
       "2015"
      ],
      "why": "It is the world's newest widely recognised country."
-    },
-    {
-     "level": 1,
-     "q": "From which country did South Sudan separate?",
-     "a": "Sudan",
-     "wrong": [
-      "Ethiopia",
-      "Uganda",
-      "Kenya"
-     ],
-     "why": "Almost 99% voted to leave."
-    },
-    {
-     "level": 1,
-     "q": "Who has been President of South Sudan since independence?",
-     "a": "Salva Kiir",
-     "wrong": [
-      "Riek Machar",
-      "John Garang",
-      "James Wani Igga"
-     ],
-     "why": "He wears a famous cowboy hat."
-    },
-    {
-     "level": 1,
-     "q": "What is South Sudan's currency?",
-     "a": "South Sudanese pound",
-     "wrong": [
-      "Sudanese pound",
-      "Shilling",
-      "Birr"
-     ],
-     "why": "It began in 2011."
-    },
-    {
-     "level": 1,
-     "q": "Which river flows through South Sudan?",
-     "a": "White Nile",
-     "wrong": [
-      "Blue Nile",
-      "Congo",
-      "Niger"
-     ],
-     "why": "It passes through the Sudd swamp."
-    },
-    {
-     "level": 1,
-     "q": "Which resource makes up most of South Sudan's exports?",
-     "a": "Oil",
-     "wrong": [
-      "Gold",
-      "Coffee",
-      "Copper"
-     ],
-     "why": "It is piped through Sudan."
     },
     {
      "level": 2,
@@ -106,17 +41,6 @@
     },
     {
      "level": 2,
-     "q": "Who is the long-time rival and sometime Vice-President?",
-     "a": "Riek Machar",
-     "wrong": [
-      "John Garang",
-      "Lam Akol",
-      "Pagan Amum"
-     ],
-     "why": "He was put on trial in 2025."
-    },
-    {
-     "level": 2,
      "q": "Which movement led the fight for South Sudan's independence?",
      "a": "SPLM/SPLA",
      "wrong": [
@@ -136,17 +60,6 @@
       "Doha Agreement"
      ],
      "why": "It was signed in Kenya."
-    },
-    {
-     "level": 3,
-     "q": "Which disputed border area claimed by both Sudans is rich in oil?",
-     "a": "Abyei",
-     "wrong": [
-      "Kafia Kingi",
-      "Kordofan",
-      "Blue Nile"
-     ],
-     "why": "A vote on its future was never held."
     },
     {
      "level": 3,
@@ -173,8 +86,42 @@
    ]
   },
   {
-   "name": "South Sudan: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of South Sudan?",
+     "a": "Juba",
+     "wrong": [
+      "Wau",
+      "Malakal",
+      "Bor"
+     ],
+     "why": "It is on the White Nile."
+    },
+    {
+     "level": 1,
+     "q": "Which river flows through South Sudan?",
+     "a": "White Nile",
+     "wrong": [
+      "Blue Nile",
+      "Congo",
+      "Niger"
+     ],
+     "why": "It passes through the Sudd swamp."
+    },
+    {
+     "level": 3,
+     "q": "Which disputed border area claimed by both Sudans is rich in oil?",
+     "a": "Abyei",
+     "wrong": [
+      "Kafia Kingi",
+      "Kordofan",
+      "Blue Nile"
+     ],
+     "why": "A vote on its future was never held."
+    },
     {
      "level": 1,
      "q": "Which huge swamp is one of the world's largest wetlands?",
@@ -188,15 +135,127 @@
     },
     {
      "level": 1,
-     "q": "Which people are famous for being among the tallest in the world?",
-     "a": "Dinka",
+     "q": "Which national park is home to the kob migration?",
+     "a": "Boma National Park",
      "wrong": [
-      "Maasai",
-      "Pygmies",
-      "Hadza"
+      "Serengeti",
+      "Kruger",
+      "Nimule"
      ],
-     "why": "Many herd cattle."
+     "why": "It is near Ethiopia."
     },
+    {
+     "level": 2,
+     "q": "Which border park in the south has the Fula rapids?",
+     "a": "Nimule National Park",
+     "wrong": [
+      "Boma",
+      "Bandingilo",
+      "Southern National Park"
+     ],
+     "why": "It is near Uganda."
+    },
+    {
+     "level": 2,
+     "q": "What is Mount Kinyeti?",
+     "a": "South Sudan's highest mountain",
+     "wrong": [
+      "A volcano in Darfur",
+      "A lake",
+      "A national park"
+     ],
+     "why": "It is in the Imatong Mountains."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which basketball player born in South Sudan was a famous NBA shot-blocker?",
+     "a": "Manute Bol",
+     "wrong": [
+      "Luol Deng",
+      "Dikembe Mutombo",
+      "Thon Maker"
+     ],
+     "why": "He was 2.31 m tall."
+    },
+    {
+     "level": 2,
+     "q": "In which team sport did South Sudan play at the 2024 Olympics?",
+     "a": "Basketball",
+     "wrong": [
+      "Football",
+      "Handball",
+      "Volleyball"
+     ],
+     "why": "They nearly beat the USA in a warm-up."
+    },
+    {
+     "level": 3,
+     "q": "Which South Sudanese runner competed as a refugee at the 2016 Olympics?",
+     "a": "Yiech Pur Biel",
+     "wrong": [
+      "Guor Marial",
+      "Lopez Lomong",
+      "Eliud Kipchoge"
+     ],
+     "why": "He ran the 800 m."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which British-born player of South Sudanese heritage starred for the Chicago Bulls?",
+     "a": "Luol Deng",
+     "wrong": [
+      "Manute Bol",
+      "Thon Maker",
+      "Wenyen Gabriel"
+     ],
+     "why": "He was an NBA All-Star."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been President of South Sudan since independence?",
+     "a": "Salva Kiir",
+     "wrong": [
+      "Riek Machar",
+      "John Garang",
+      "James Wani Igga"
+     ],
+     "why": "He wears a famous cowboy hat."
+    },
+    {
+     "level": 2,
+     "q": "Who is the long-time rival and sometime Vice-President?",
+     "a": "Riek Machar",
+     "wrong": [
+      "John Garang",
+      "Lam Akol",
+      "Pagan Amum"
+     ],
+     "why": "He was put on trial in 2025."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
     {
      "level": 1,
      "q": "Which animal is central to many South Sudanese cultures?",
@@ -220,6 +279,67 @@
      "why": "It is one of the largest on Earth."
     },
     {
+     "level": 3,
+     "q": "Which cattle camp people sleep among their herds by the Nile?",
+     "a": "Mundari",
+     "wrong": [
+      "Maasai",
+      "Fulani",
+      "Hadza"
+     ],
+     "why": "Their cattle have huge horns."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "From which country did South Sudan separate?",
+     "a": "Sudan",
+     "wrong": [
+      "Ethiopia",
+      "Uganda",
+      "Kenya"
+     ],
+     "why": "Almost 99% voted to leave."
+    },
+    {
+     "level": 1,
+     "q": "What is South Sudan's currency?",
+     "a": "South Sudanese pound",
+     "wrong": [
+      "Sudanese pound",
+      "Shilling",
+      "Birr"
+     ],
+     "why": "It began in 2011."
+    },
+    {
+     "level": 1,
+     "q": "Which resource makes up most of South Sudan's exports?",
+     "a": "Oil",
+     "wrong": [
+      "Gold",
+      "Coffee",
+      "Copper"
+     ],
+     "why": "It is piped through Sudan."
+    },
+    {
+     "level": 1,
+     "q": "Which people are famous for being among the tallest in the world?",
+     "a": "Dinka",
+     "wrong": [
+      "Maasai",
+      "Pygmies",
+      "Hadza"
+     ],
+     "why": "Many herd cattle."
+    },
+    {
      "level": 1,
      "q": "What is the official language of South Sudan?",
      "a": "English",
@@ -229,72 +349,6 @@
       "French"
      ],
      "why": "Juba Arabic is widely used."
-    },
-    {
-     "level": 1,
-     "q": "Which national park is home to the kob migration?",
-     "a": "Boma National Park",
-     "wrong": [
-      "Serengeti",
-      "Kruger",
-      "Nimule"
-     ],
-     "why": "It is near Ethiopia."
-    },
-    {
-     "level": 1,
-     "q": "Which basketball player born in South Sudan was a famous NBA shot-blocker?",
-     "a": "Manute Bol",
-     "wrong": [
-      "Luol Deng",
-      "Dikembe Mutombo",
-      "Thon Maker"
-     ],
-     "why": "He was 2.31 m tall."
-    },
-    {
-     "level": 2,
-     "q": "Which British-born player of South Sudanese heritage starred for the Chicago Bulls?",
-     "a": "Luol Deng",
-     "wrong": [
-      "Manute Bol",
-      "Thon Maker",
-      "Wenyen Gabriel"
-     ],
-     "why": "He was an NBA All-Star."
-    },
-    {
-     "level": 2,
-     "q": "In which team sport did South Sudan play at the 2024 Olympics?",
-     "a": "Basketball",
-     "wrong": [
-      "Football",
-      "Handball",
-      "Volleyball"
-     ],
-     "why": "They nearly beat the USA in a warm-up."
-    },
-    {
-     "level": 2,
-     "q": "Which border park in the south has the Fula rapids?",
-     "a": "Nimule National Park",
-     "wrong": [
-      "Boma",
-      "Bandingilo",
-      "Southern National Park"
-     ],
-     "why": "It is near Uganda."
-    },
-    {
-     "level": 2,
-     "q": "What is Mount Kinyeti?",
-     "a": "South Sudan's highest mountain",
-     "wrong": [
-      "A volcano in Darfur",
-      "A lake",
-      "A national park"
-     ],
-     "why": "It is in the Imatong Mountains."
     },
     {
      "level": 2,
@@ -317,28 +371,6 @@
       "Tswana and Sotho"
      ],
      "why": "The marks run across the forehead."
-    },
-    {
-     "level": 3,
-     "q": "Which South Sudanese runner competed as a refugee at the 2016 Olympics?",
-     "a": "Yiech Pur Biel",
-     "wrong": [
-      "Guor Marial",
-      "Lopez Lomong",
-      "Eliud Kipchoge"
-     ],
-     "why": "He ran the 800 m."
-    },
-    {
-     "level": 3,
-     "q": "Which cattle camp people sleep among their herds by the Nile?",
-     "a": "Mundari",
-     "wrong": [
-      "Maasai",
-      "Fulani",
-      "Hadza"
-     ],
-     "why": "Their cattle have huge horns."
     }
    ]
   }

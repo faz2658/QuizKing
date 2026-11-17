@@ -3,19 +3,9 @@
  "country": "BA",
  "topics": [
   {
-   "name": "Bosnia and Herzegovina: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Bosnia and Herzegovina?",
-     "a": "Sarajevo",
-     "wrong": [
-      "Mostar",
-      "Banja Luka",
-      "Tuzla"
-     ],
-     "why": "It hosted the 1984 Winter Olympics."
-    },
     {
      "level": 1,
      "q": "In which city was Archduke Franz Ferdinand shot in 1914?",
@@ -116,6 +106,162 @@
      "why": "The charter was with Dubrovnik."
     },
     {
+     "level": 3,
+     "q": "What are medieval Bosnian tombstones called?",
+     "a": "Stećci",
+     "wrong": [
+      "Khachkars",
+      "Menhirs",
+      "Runestones"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which old bridge in Mostar was rebuilt after the war?",
+     "a": "Stari Most",
+     "wrong": [
+      "Latin Bridge",
+      "Charles Bridge",
+      "Arslanagić Bridge"
+     ],
+     "why": "Divers jump from it into the Neretva."
+    },
+    {
+     "level": 3,
+     "q": "Which Sarajevo neighbourhood had a famous tunnel during the siege?",
+     "a": "Butmir",
+     "wrong": [
+      "Grbavica",
+      "Baščaršija",
+      "Marijin Dvor"
+     ],
+     "why": "The tunnel ran under the airport."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Bosnia and Herzegovina?",
+     "a": "Sarajevo",
+     "wrong": [
+      "Mostar",
+      "Banja Luka",
+      "Tuzla"
+     ],
+     "why": "It hosted the 1984 Winter Olympics."
+    },
+    {
+     "level": 1,
+     "q": "Which river flows through Mostar?",
+     "a": "Neretva",
+     "wrong": [
+      "Drina",
+      "Sava",
+      "Una"
+     ],
+     "why": "It flows to the Adriatic."
+    },
+    {
+     "level": 2,
+     "q": "Which waterfall flows into the centre of Jajce?",
+     "a": "Pliva Waterfall",
+     "wrong": [
+      "Kravice Waterfall",
+      "Štrbački Buk",
+      "Skakavac"
+     ],
+     "why": "The town has a medieval fortress above it."
+    },
+    {
+     "level": 2,
+     "q": "Which national park is home to the Štrbački Buk waterfall?",
+     "a": "Una National Park",
+     "wrong": [
+      "Sutjeska National Park",
+      "Kozara National Park",
+      "Plitvice Lakes"
+     ],
+     "why": "It is on the Croatian border."
+    },
+    {
+     "level": 3,
+     "q": "Which national park has one of Europe's last primeval forests?",
+     "a": "Sutjeska National Park",
+     "wrong": [
+      "Una National Park",
+      "Kozara National Park",
+      "Blidinje"
+     ],
+     "why": "The Perućica forest is there."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Bosnian footballer captained Roma and played for Inter?",
+     "a": "Edin Džeko",
+     "wrong": [
+      "Miralem Pjanić",
+      "Hasan Salihamidžić",
+      "Sead Kolašinac"
+     ],
+     "why": "He is Bosnia's all-time top scorer."
+    },
+    {
+     "level": 2,
+     "q": "Which mountains near Sarajevo hosted Olympic skiing in 1984?",
+     "a": "Jahorina and Bjelašnica",
+     "wrong": [
+      "Durmitor",
+      "Triglav",
+      "Prokletije"
+     ],
+     "why": "They are still ski resorts."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which film festival is held in Sarajevo each summer?",
+     "a": "Sarajevo Film Festival",
+     "wrong": [
+      "Motovun Film Festival",
+      "Pula Film Festival",
+      "Cannes Film Festival"
+     ],
+     "why": "It began during the siege in 1995."
+    },
+    {
+     "level": 2,
+     "q": "Which Bosnian director won the Oscar for 'No Man's Land'?",
+     "a": "Danis Tanović",
+     "wrong": [
+      "Jasmila Žbanić",
+      "Emir Kusturica",
+      "Ademir Kenović"
+     ],
+     "why": "It won Best Foreign Language Film in 2002."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
      "level": 2,
      "q": "Which Bosnian-born writer won the 1961 Nobel Prize in Literature?",
      "a": "Ivo Andrić",
@@ -126,6 +272,23 @@
      ],
      "why": "He wrote 'The Bridge on the Drina'."
     },
+    {
+     "level": 3,
+     "q": "Which writer from Tuzla wrote 'Death and the Dervish'?",
+     "a": "Meša Selimović",
+     "wrong": [
+      "Ivo Andrić",
+      "Branko Ćopić",
+      "Abdulah Sidran"
+     ],
+     "why": "It was published in 1966."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
     {
      "level": 2,
      "q": "What are the two entities created by the Dayton Agreement?",
@@ -139,28 +302,6 @@
     },
     {
      "level": 3,
-     "q": "What are medieval Bosnian tombstones called?",
-     "a": "Stećci",
-     "wrong": [
-      "Khachkars",
-      "Menhirs",
-      "Runestones"
-     ],
-     "why": "They are a UNESCO site."
-    },
-    {
-     "level": 3,
-     "q": "Which writer from Tuzla wrote 'Death and the Dervish'?",
-     "a": "Meša Selimović",
-     "wrong": [
-      "Ivo Andrić",
-      "Branko Ćopić",
-      "Abdulah Sidran"
-     ],
-     "why": "It was published in 1966."
-    },
-    {
-     "level": 3,
      "q": "Which bridge in Višegrad was built by Grand Vizier Mehmed Paša Sokolović?",
      "a": "Mehmed Paša Sokolović Bridge",
      "wrong": [
@@ -169,22 +310,6 @@
       "Arslanagić Bridge"
      ],
      "why": "It is a UNESCO site."
-    }
-   ]
-  },
-  {
-   "name": "Bosnia and Herzegovina: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which old bridge in Mostar was rebuilt after the war?",
-     "a": "Stari Most",
-     "wrong": [
-      "Latin Bridge",
-      "Charles Bridge",
-      "Arslanagić Bridge"
-     ],
-     "why": "Divers jump from it into the Neretva."
     },
     {
      "level": 1,
@@ -221,28 +346,6 @@
     },
     {
      "level": 1,
-     "q": "Which river flows through Mostar?",
-     "a": "Neretva",
-     "wrong": [
-      "Drina",
-      "Sava",
-      "Una"
-     ],
-     "why": "It flows to the Adriatic."
-    },
-    {
-     "level": 1,
-     "q": "Which film festival is held in Sarajevo each summer?",
-     "a": "Sarajevo Film Festival",
-     "wrong": [
-      "Motovun Film Festival",
-      "Pula Film Festival",
-      "Cannes Film Festival"
-     ],
-     "why": "It began during the siege in 1995."
-    },
-    {
-     "level": 1,
      "q": "Which flaky pastry filled with meat is a Bosnian favourite?",
      "a": "Burek",
      "wrong": [
@@ -251,83 +354,6 @@
       "Pita bread"
      ],
      "why": "Other fillings are called pita."
-    },
-    {
-     "level": 2,
-     "q": "Which Bosnian footballer captained Roma and played for Inter?",
-     "a": "Edin Džeko",
-     "wrong": [
-      "Miralem Pjanić",
-      "Hasan Salihamidžić",
-      "Sead Kolašinac"
-     ],
-     "why": "He is Bosnia's all-time top scorer."
-    },
-    {
-     "level": 2,
-     "q": "Which mountains near Sarajevo hosted Olympic skiing in 1984?",
-     "a": "Jahorina and Bjelašnica",
-     "wrong": [
-      "Durmitor",
-      "Triglav",
-      "Prokletije"
-     ],
-     "why": "They are still ski resorts."
-    },
-    {
-     "level": 2,
-     "q": "Which waterfall flows into the centre of Jajce?",
-     "a": "Pliva Waterfall",
-     "wrong": [
-      "Kravice Waterfall",
-      "Štrbački Buk",
-      "Skakavac"
-     ],
-     "why": "The town has a medieval fortress above it."
-    },
-    {
-     "level": 2,
-     "q": "Which Bosnian director won the Oscar for 'No Man's Land'?",
-     "a": "Danis Tanović",
-     "wrong": [
-      "Jasmila Žbanić",
-      "Emir Kusturica",
-      "Ademir Kenović"
-     ],
-     "why": "It won Best Foreign Language Film in 2002."
-    },
-    {
-     "level": 2,
-     "q": "Which national park is home to the Štrbački Buk waterfall?",
-     "a": "Una National Park",
-     "wrong": [
-      "Sutjeska National Park",
-      "Kozara National Park",
-      "Plitvice Lakes"
-     ],
-     "why": "It is on the Croatian border."
-    },
-    {
-     "level": 3,
-     "q": "Which Sarajevo neighbourhood had a famous tunnel during the siege?",
-     "a": "Butmir",
-     "wrong": [
-      "Grbavica",
-      "Baščaršija",
-      "Marijin Dvor"
-     ],
-     "why": "The tunnel ran under the airport."
-    },
-    {
-     "level": 3,
-     "q": "Which national park has one of Europe's last primeval forests?",
-     "a": "Sutjeska National Park",
-     "wrong": [
-      "Una National Park",
-      "Kozara National Park",
-      "Blidinje"
-     ],
-     "why": "The Perućica forest is there."
     },
     {
      "level": 3,

@@ -19,14 +19,22 @@ public final class Views {
 	private Views() {
 	}
 
-	public record StartRequest(@Positive int gameId, @Positive int userId) {
+	/** @param country the player's country (ISO code), optional; it decides which questions the game favours */
+	public record StartRequest(@Positive int gameId, @Positive int userId,
+			@jakarta.validation.constraints.Pattern(regexp = "[A-Za-z]{2}") String country, Boolean international) {
+
+		/** The country the quiz favours; for an International quiz, every country alike. */
+		public String questionsFrom() {
+			return Boolean.TRUE.equals(international) ? com.fazeel.quizcadia.session.QuizBuilder.EVERYWHERE : country;
+		}
 	}
 
 	public record AnswerRequest(@Positive int questionId, @NotNull String answer) {
 	}
 
 	public record CustomRequest(@NotNull List<Integer> gameIds,
-			@NotNull com.fazeel.quizcadia.service.GameSessionService.CustomDifficulty difficulty, int count) {
+			@NotNull com.fazeel.quizcadia.service.GameSessionService.CustomDifficulty difficulty, int count,
+			@jakarta.validation.constraints.Pattern(regexp = "[A-Za-z]{2}") String country) {
 	}
 
 	public record LifelineRequest(@NotNull Lifeline lifeline, @Positive int questionId) {

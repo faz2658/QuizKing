@@ -3,7 +3,8 @@
  "country": "HR",
  "topics": [
   {
-   "name": "Croatia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -15,39 +16,6 @@
       "2001"
      ],
      "why": "Independence was declared on 25 June."
-    },
-    {
-     "level": 1,
-     "q": "What is the capital of Croatia?",
-     "a": "Zagreb",
-     "wrong": [
-      "Split",
-      "Dubrovnik",
-      "Rijeka"
-     ],
-     "why": "It is in the north of the country."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Croatia join the European Union?",
-     "a": "2013",
-     "wrong": [
-      "2004",
-      "2007",
-      "2020"
-     ],
-     "why": "It was the 28th member."
-    },
-    {
-     "level": 1,
-     "q": "Which inventor of alternating current was born in Smiljan, Croatia?",
-     "a": "Nikola Tesla",
-     "wrong": [
-      "Faust Vrančić",
-      "Slavoljub Penkala",
-      "Ruđer Bošković"
-     ],
-     "why": "He was an ethnic Serb born in the Croatian region of Lika."
     },
     {
      "level": 1,
@@ -127,28 +95,6 @@
      "why": "She was popular at the 2018 World Cup."
     },
     {
-     "level": 2,
-     "q": "Which Croatian invented the mechanical pencil?",
-     "a": "Slavoljub Penkala",
-     "wrong": [
-      "Faust Vrančić",
-      "Ivan Vučetić",
-      "Nikola Tesla"
-     ],
-     "why": "In Croatian, a pen is still called a 'penkala'."
-    },
-    {
-     "level": 3,
-     "q": "Which Croatian-born police official pioneered fingerprint identification in Argentina?",
-     "a": "Ivan Vučetić",
-     "wrong": [
-      "Slavoljub Penkala",
-      "Faust Vrančić",
-      "Josip Jelačić"
-     ],
-     "why": "He worked in La Plata."
-    },
-    {
      "level": 3,
      "q": "Which ban (governor) of 1848 is remembered on Zagreb's main square?",
      "a": "Josip Jelačić",
@@ -158,33 +104,23 @@
       "Ante Starčević"
      ],
      "why": "His statue faces the square named after him."
-    },
-    {
-     "level": 3,
-     "q": "Which Renaissance inventor designed an early parachute called 'Homo Volans'?",
-     "a": "Faust Vrančić",
-     "wrong": [
-      "Leonardo da Vinci",
-      "Slavoljub Penkala",
-      "Ruđer Bošković"
-     ],
-     "why": "He described it in 1595."
     }
    ]
   },
   {
-   "name": "Croatia: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "Which walled city on the Adriatic was a filming location for 'Game of Thrones'?",
-     "a": "Dubrovnik",
+     "q": "What is the capital of Croatia?",
+     "a": "Zagreb",
      "wrong": [
       "Split",
-      "Zadar",
-      "Pula"
+      "Dubrovnik",
+      "Rijeka"
      ],
-     "why": "It played King's Landing."
+     "why": "It is in the north of the country."
     },
     {
      "level": 1,
@@ -210,17 +146,6 @@
     },
     {
      "level": 1,
-     "q": "What is Croatia's currency?",
-     "a": "Euro",
-     "wrong": [
-      "Kuna",
-      "Dinar",
-      "Forint"
-     ],
-     "why": "It replaced the kuna in 2023."
-    },
-    {
-     "level": 1,
      "q": "Which spotted dog breed comes from a Croatian region?",
      "a": "Dalmatian",
      "wrong": [
@@ -231,16 +156,33 @@
      "why": "It is named after Dalmatia."
     },
     {
-     "level": 1,
-     "q": "Which piece of men's clothing came from Croatian soldiers' scarves?",
-     "a": "The necktie (cravat)",
+     "level": 2,
+     "q": "Which hilltop truffle region lies in the northwest?",
+     "a": "Istria",
      "wrong": [
-      "The bow tie",
-      "The beret",
-      "The bowler hat"
+      "Slavonia",
+      "Dalmatia",
+      "Zagorje"
      ],
-     "why": "The word 'cravat' comes from 'Croat'."
+     "why": "Its white truffles are prized."
     },
+    {
+     "level": 2,
+     "q": "Which national park is famous for waterfalls on the Krka River?",
+     "a": "Krka National Park",
+     "wrong": [
+      "Plitvice Lakes",
+      "Risnjak",
+      "Mljet"
+     ],
+     "why": "Skradinski Buk is its biggest waterfall."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 1,
      "q": "Which team did Croatia lose to in the 2018 World Cup final?",
@@ -264,50 +206,6 @@
      "why": "He broke the Messi–Ronaldo run."
     },
     {
-     "level": 2,
-     "q": "Which Roman amphitheatre stands in Pula?",
-     "a": "Pula Arena",
-     "wrong": [
-      "Colosseum of Split",
-      "Salona Theatre",
-      "Zadar Forum"
-     ],
-     "why": "It is one of the best-preserved in the world."
-    },
-    {
-     "level": 2,
-     "q": "Which Zadar attraction makes music from waves?",
-     "a": "Sea Organ",
-     "wrong": [
-      "Sun Salutation",
-      "Singing Fountain",
-      "Wave Bell"
-     ],
-     "why": "It plays notes through pipes under the steps."
-    },
-    {
-     "level": 2,
-     "q": "Which hilltop truffle region lies in the northwest?",
-     "a": "Istria",
-     "wrong": [
-      "Slavonia",
-      "Dalmatia",
-      "Zagorje"
-     ],
-     "why": "Its white truffles are prized."
-    },
-    {
-     "level": 2,
-     "q": "Which national park is famous for waterfalls on the Krka River?",
-     "a": "Krka National Park",
-     "wrong": [
-      "Plitvice Lakes",
-      "Risnjak",
-      "Mljet"
-     ],
-     "why": "Skradinski Buk is its biggest waterfall."
-    },
-    {
      "level": 3,
      "q": "Which tennis player won Wimbledon in 2001 as a wildcard?",
      "a": "Goran Ivanišević",
@@ -328,7 +226,47 @@
       "Krk"
      ],
      "why": "Venice also claims him."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Zadar attraction makes music from waves?",
+     "a": "Sea Organ",
+     "wrong": [
+      "Sun Salutation",
+      "Singing Fountain",
+      "Wave Bell"
+     ],
+     "why": "It plays notes through pipes under the steps."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which walled city on the Adriatic was a filming location for 'Game of Thrones'?",
+     "a": "Dubrovnik",
+     "wrong": [
+      "Split",
+      "Zadar",
+      "Pula"
+     ],
+     "why": "It played King's Landing."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
     {
      "level": 3,
      "q": "Which museum in Zagreb displays objects left after relationships ended?",
@@ -339,6 +277,100 @@
       "Mimara Museum"
      ],
      "why": "It began as a travelling exhibition."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Croatia join the European Union?",
+     "a": "2013",
+     "wrong": [
+      "2004",
+      "2007",
+      "2020"
+     ],
+     "why": "It was the 28th member."
+    },
+    {
+     "level": 1,
+     "q": "Which inventor of alternating current was born in Smiljan, Croatia?",
+     "a": "Nikola Tesla",
+     "wrong": [
+      "Faust Vrančić",
+      "Slavoljub Penkala",
+      "Ruđer Bošković"
+     ],
+     "why": "He was an ethnic Serb born in the Croatian region of Lika."
+    },
+    {
+     "level": 2,
+     "q": "Which Croatian invented the mechanical pencil?",
+     "a": "Slavoljub Penkala",
+     "wrong": [
+      "Faust Vrančić",
+      "Ivan Vučetić",
+      "Nikola Tesla"
+     ],
+     "why": "In Croatian, a pen is still called a 'penkala'."
+    },
+    {
+     "level": 3,
+     "q": "Which Croatian-born police official pioneered fingerprint identification in Argentina?",
+     "a": "Ivan Vučetić",
+     "wrong": [
+      "Slavoljub Penkala",
+      "Faust Vrančić",
+      "Josip Jelačić"
+     ],
+     "why": "He worked in La Plata."
+    },
+    {
+     "level": 3,
+     "q": "Which Renaissance inventor designed an early parachute called 'Homo Volans'?",
+     "a": "Faust Vrančić",
+     "wrong": [
+      "Leonardo da Vinci",
+      "Slavoljub Penkala",
+      "Ruđer Bošković"
+     ],
+     "why": "He described it in 1595."
+    },
+    {
+     "level": 1,
+     "q": "What is Croatia's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Kuna",
+      "Dinar",
+      "Forint"
+     ],
+     "why": "It replaced the kuna in 2023."
+    },
+    {
+     "level": 1,
+     "q": "Which piece of men's clothing came from Croatian soldiers' scarves?",
+     "a": "The necktie (cravat)",
+     "wrong": [
+      "The bow tie",
+      "The beret",
+      "The bowler hat"
+     ],
+     "why": "The word 'cravat' comes from 'Croat'."
+    },
+    {
+     "level": 2,
+     "q": "Which Roman amphitheatre stands in Pula?",
+     "a": "Pula Arena",
+     "wrong": [
+      "Colosseum of Split",
+      "Salona Theatre",
+      "Zadar Forum"
+     ],
+     "why": "It is one of the best-preserved in the world."
     }
    ]
   }

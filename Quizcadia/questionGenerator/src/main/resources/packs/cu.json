@@ -3,7 +3,8 @@
  "country": "CU",
  "topics": [
   {
-   "name": "Cuba: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -51,17 +52,6 @@
     },
     {
      "level": 1,
-     "q": "Which poet and hero of independence died in battle in 1895?",
-     "a": "José Martí",
-     "wrong": [
-      "Antonio Maceo",
-      "Máximo Gómez",
-      "Carlos Manuel de Céspedes"
-     ],
-     "why": "Havana's airport is named after him."
-    },
-    {
-     "level": 1,
      "q": "Which European country ruled Cuba until 1898?",
      "a": "Spain",
      "wrong": [
@@ -70,28 +60,6 @@
       "Portugal"
      ],
      "why": "It lost Cuba in the Spanish–American War."
-    },
-    {
-     "level": 1,
-     "q": "Which US naval base is on Cuba's southeastern coast?",
-     "a": "Guantánamo Bay",
-     "wrong": [
-      "Pearl Harbor",
-      "Subic Bay",
-      "Norfolk"
-     ],
-     "why": "The US has leased it since 1903."
-    },
-    {
-     "level": 2,
-     "q": "Who succeeded Fidel Castro as President?",
-     "a": "Raúl Castro",
-     "wrong": [
-      "Miguel Díaz-Canel",
-      "Che Guevara",
-      "Camilo Cienfuegos"
-     ],
-     "why": "He is Fidel's younger brother."
     },
     {
      "level": 2,
@@ -169,12 +137,46 @@
       "Manuel Marrero"
      ],
      "why": "He was born after the revolution."
+    },
+    {
+     "level": 3,
+     "q": "Which Cuban-born ballerina founded the National Ballet of Cuba?",
+     "a": "Alicia Alonso",
+     "wrong": [
+      "Viengsay Valdés",
+      "Carlos Acosta",
+      "Lorna Feijóo"
+     ],
+     "why": "She danced into her seventies."
+    },
+    {
+     "level": 3,
+     "q": "Which colonial town near sugar plantations is a UNESCO site?",
+     "a": "Trinidad",
+     "wrong": [
+      "Cienfuegos",
+      "Remedios",
+      "Baracoa"
+     ],
+     "why": "It was founded in 1514."
     }
    ]
   },
   {
-   "name": "Cuba: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which US naval base is on Cuba's southeastern coast?",
+     "a": "Guantánamo Bay",
+     "wrong": [
+      "Pearl Harbor",
+      "Subic Bay",
+      "Norfolk"
+     ],
+     "why": "The US has leased it since 1903."
+    },
     {
      "level": 1,
      "q": "What is the capital of Cuba?",
@@ -188,61 +190,6 @@
     },
     {
      "level": 1,
-     "q": "Which Cuban drink is made with rum, mint, lime and soda?",
-     "a": "Mojito",
-     "wrong": [
-      "Daiquiri",
-      "Cuba libre",
-      "Piña colada"
-     ],
-     "why": "Hemingway is linked to it in Havana."
-    },
-    {
-     "level": 1,
-     "q": "Which style of music and dance comes from Cuba?",
-     "a": "Salsa (with Cuban son)",
-     "wrong": [
-      "Tango",
-      "Samba",
-      "Bachata"
-     ],
-     "why": "Son cubano is its root."
-    },
-    {
-     "level": 1,
-     "q": "Which crop has long been a major Cuban export?",
-     "a": "Sugar",
-     "wrong": [
-      "Coffee",
-      "Bananas",
-      "Cocoa"
-     ],
-     "why": "Cuba was once the world's top sugar exporter."
-    },
-    {
-     "level": 1,
-     "q": "Which hand-rolled products is Cuba world-famous for?",
-     "a": "Cigars",
-     "wrong": [
-      "Cigarettes",
-      "Pipes",
-      "Snuff"
-     ],
-     "why": "Havana cigars are prized."
-    },
-    {
-     "level": 1,
-     "q": "Which American writer lived near Havana and wrote 'The Old Man and the Sea'?",
-     "a": "Ernest Hemingway",
-     "wrong": [
-      "F. Scott Fitzgerald",
-      "John Steinbeck",
-      "William Faulkner"
-     ],
-     "why": "His house, Finca Vigía, is a museum."
-    },
-    {
-     "level": 1,
      "q": "Which seafront promenade runs along Havana's coast?",
      "a": "El Malecón",
      "wrong": [
@@ -251,17 +198,6 @@
       "Copacabana Promenade"
      ],
      "why": "Waves crash over it in storms."
-    },
-    {
-     "level": 2,
-     "q": "Which band of veteran musicians made a famous 1997 album?",
-     "a": "Buena Vista Social Club",
-     "wrong": [
-      "Los Van Van",
-      "Orquesta Aragón",
-      "Irakere"
-     ],
-     "why": "It was named after an old Havana club."
     },
     {
      "level": 2,
@@ -286,6 +222,45 @@
      "why": "It has 20 km of white sand."
     },
     {
+     "level": 3,
+     "q": "Which mountain range in the east sheltered Castro's rebels?",
+     "a": "Sierra Maestra",
+     "wrong": [
+      "Sierra del Escambray",
+      "Sierra de los Órganos",
+      "Cordillera de Guaniguanico"
+     ],
+     "why": "Pico Turquino, Cuba's highest peak, is there."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which style of music and dance comes from Cuba?",
+     "a": "Salsa (with Cuban son)",
+     "wrong": [
+      "Tango",
+      "Samba",
+      "Bachata"
+     ],
+     "why": "Son cubano is its root."
+    },
+    {
+     "level": 2,
+     "q": "Which band of veteran musicians made a famous 1997 album?",
+     "a": "Buena Vista Social Club",
+     "wrong": [
+      "Los Van Van",
+      "Orquesta Aragón",
+      "Irakere"
+     ],
+     "why": "It was named after an old Havana club."
+    },
+    {
      "level": 2,
      "q": "Which singer was the 'Queen of Salsa'?",
      "a": "Celia Cruz",
@@ -295,6 +270,90 @@
       "La Lupe"
      ],
      "why": "Her catchphrase was '¡Azúcar!'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which poet and hero of independence died in battle in 1895?",
+     "a": "José Martí",
+     "wrong": [
+      "Antonio Maceo",
+      "Máximo Gómez",
+      "Carlos Manuel de Céspedes"
+     ],
+     "why": "Havana's airport is named after him."
+    },
+    {
+     "level": 1,
+     "q": "Which American writer lived near Havana and wrote 'The Old Man and the Sea'?",
+     "a": "Ernest Hemingway",
+     "wrong": [
+      "F. Scott Fitzgerald",
+      "John Steinbeck",
+      "William Faulkner"
+     ],
+     "why": "His house, Finca Vigía, is a museum."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who succeeded Fidel Castro as President?",
+     "a": "Raúl Castro",
+     "wrong": [
+      "Miguel Díaz-Canel",
+      "Che Guevara",
+      "Camilo Cienfuegos"
+     ],
+     "why": "He is Fidel's younger brother."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Cuban drink is made with rum, mint, lime and soda?",
+     "a": "Mojito",
+     "wrong": [
+      "Daiquiri",
+      "Cuba libre",
+      "Piña colada"
+     ],
+     "why": "Hemingway is linked to it in Havana."
+    },
+    {
+     "level": 1,
+     "q": "Which crop has long been a major Cuban export?",
+     "a": "Sugar",
+     "wrong": [
+      "Coffee",
+      "Bananas",
+      "Cocoa"
+     ],
+     "why": "Cuba was once the world's top sugar exporter."
+    },
+    {
+     "level": 1,
+     "q": "Which hand-rolled products is Cuba world-famous for?",
+     "a": "Cigars",
+     "wrong": [
+      "Cigarettes",
+      "Pipes",
+      "Snuff"
+     ],
+     "why": "Havana cigars are prized."
     },
     {
      "level": 2,
@@ -306,39 +365,6 @@
       "Japanese kei cars"
      ],
      "why": "They have been kept running for decades."
-    },
-    {
-     "level": 3,
-     "q": "Which Cuban-born ballerina founded the National Ballet of Cuba?",
-     "a": "Alicia Alonso",
-     "wrong": [
-      "Viengsay Valdés",
-      "Carlos Acosta",
-      "Lorna Feijóo"
-     ],
-     "why": "She danced into her seventies."
-    },
-    {
-     "level": 3,
-     "q": "Which mountain range in the east sheltered Castro's rebels?",
-     "a": "Sierra Maestra",
-     "wrong": [
-      "Sierra del Escambray",
-      "Sierra de los Órganos",
-      "Cordillera de Guaniguanico"
-     ],
-     "why": "Pico Turquino, Cuba's highest peak, is there."
-    },
-    {
-     "level": 3,
-     "q": "Which colonial town near sugar plantations is a UNESCO site?",
-     "a": "Trinidad",
-     "wrong": [
-      "Cienfuegos",
-      "Remedios",
-      "Baracoa"
-     ],
-     "why": "It was founded in 1514."
     }
    ]
   }

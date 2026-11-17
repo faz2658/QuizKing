@@ -3,7 +3,8 @@
  "country": "TZ",
  "topics": [
   {
-   "name": "Tanzania: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -72,17 +73,6 @@
      "why": "She is from Zanzibar."
     },
     {
-     "level": 1,
-     "q": "Which language did Nyerere promote to unite the country?",
-     "a": "Swahili",
-     "wrong": [
-      "English",
-      "Arabic",
-      "Chagga"
-     ],
-     "why": "Tanzania is a heartland of Swahili."
-    },
-    {
      "level": 2,
      "q": "Which 1905–07 rebellion fought German rule?",
      "a": "Maji Maji Rebellion",
@@ -104,6 +94,23 @@
      ],
      "why": "It lasted under an hour."
     },
+    {
+     "level": 3,
+     "q": "Which coastal town was a caravan port and the first German colonial capital?",
+     "a": "Bagamoyo",
+     "wrong": [
+      "Tanga",
+      "Kilwa",
+      "Lindi"
+     ],
+     "why": "Its name may mean 'lay down your heart'."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
     {
      "level": 2,
      "q": "Which gorge's fossils made it famous as a 'Cradle of Mankind'?",
@@ -137,44 +144,6 @@
      ],
      "why": "It means 'familyhood'."
     },
-    {
-     "level": 3,
-     "q": "Which Queen singer was born in Zanzibar?",
-     "a": "Freddie Mercury",
-     "wrong": [
-      "Elton John",
-      "David Bowie",
-      "George Michael"
-     ],
-     "why": "He was born Farrokh Bulsara in 1946."
-    },
-    {
-     "level": 3,
-     "q": "Which coastal town was a caravan port and the first German colonial capital?",
-     "a": "Bagamoyo",
-     "wrong": [
-      "Tanga",
-      "Kilwa",
-      "Lindi"
-     ],
-     "why": "Its name may mean 'lay down your heart'."
-    },
-    {
-     "level": 3,
-     "q": "Which Zanzibar-born writer won the 2021 Nobel Prize in Literature?",
-     "a": "Abdulrazak Gurnah",
-     "wrong": [
-      "Ngũgĩ wa Thiong'o",
-      "Shaaban Robert",
-      "M. G. Vassanji"
-     ],
-     "why": "He wrote 'Paradise'."
-    }
-   ]
-  },
-  {
-   "name": "Tanzania: Places & Culture",
-   "questions": [
     {
      "level": 1,
      "q": "What is Africa's highest mountain?",
@@ -221,17 +190,6 @@
     },
     {
      "level": 1,
-     "q": "What is Tanzania's currency?",
-     "a": "Tanzanian shilling",
-     "wrong": [
-      "Kenyan shilling",
-      "Birr",
-      "Rand"
-     ],
-     "why": "Its code is TZS."
-    },
-    {
-     "level": 1,
      "q": "Which huge lake does Tanzania share with Kenya and Uganda?",
      "a": "Lake Victoria",
      "wrong": [
@@ -240,28 +198,6 @@
       "Lake Turkana"
      ],
      "why": "It is Africa's largest lake."
-    },
-    {
-     "level": 1,
-     "q": "Which people of northern Tanzania are famous for red cloth and jumping dances?",
-     "a": "Maasai",
-     "wrong": [
-      "Chagga",
-      "Sukuma",
-      "Hadza"
-     ],
-     "why": "They are herders."
-    },
-    {
-     "level": 2,
-     "q": "Which volcanic crater is a wildlife haven?",
-     "a": "Ngorongoro Crater",
-     "wrong": [
-      "Mount Meru",
-      "Olduvai Gorge",
-      "Lake Natron"
-     ],
-     "why": "It is the largest unbroken caldera."
     },
     {
      "level": 2,
@@ -273,39 +209,6 @@
       "Lake Eyasi"
      ],
      "why": "It is the world's second-deepest lake."
-    },
-    {
-     "level": 2,
-     "q": "Which violet-blue gemstone is found only in Tanzania?",
-     "a": "Tanzanite",
-     "wrong": [
-      "Sapphire",
-      "Lapis lazuli",
-      "Aquamarine"
-     ],
-     "why": "It was discovered in 1967."
-    },
-    {
-     "level": 2,
-     "q": "Which old part of Zanzibar City has narrow lanes and carved doors?",
-     "a": "Stone Town",
-     "wrong": [
-      "Nungwi",
-      "Paje",
-      "Chake Chake"
-     ],
-     "why": "It is a UNESCO site."
-    },
-    {
-     "level": 2,
-     "q": "Which alkaline lake is a breeding ground for flamingos?",
-     "a": "Lake Natron",
-     "wrong": [
-      "Lake Manyara",
-      "Lake Eyasi",
-      "Lake Rukwa"
-     ],
-     "why": "Its water can look red."
     },
     {
      "level": 3,
@@ -320,17 +223,6 @@
     },
     {
      "level": 3,
-     "q": "What is the printed cotton cloth with a Swahili saying called?",
-     "a": "Kanga",
-     "wrong": [
-      "Kente",
-      "Shuka",
-      "Tartan"
-     ],
-     "why": "Women wear and gift them."
-    },
-    {
-     "level": 3,
      "q": "Which hunter-gatherer people live near Lake Eyasi?",
      "a": "Hadza",
      "wrong": [
@@ -339,6 +231,146 @@
       "Sukuma"
      ],
      "why": "They speak a language with click sounds."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Queen singer was born in Zanzibar?",
+     "a": "Freddie Mercury",
+     "wrong": [
+      "Elton John",
+      "David Bowie",
+      "George Michael"
+     ],
+     "why": "He was born Farrokh Bulsara in 1946."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Zanzibar-born writer won the 2021 Nobel Prize in Literature?",
+     "a": "Abdulrazak Gurnah",
+     "wrong": [
+      "Ngũgĩ wa Thiong'o",
+      "Shaaban Robert",
+      "M. G. Vassanji"
+     ],
+     "why": "He wrote 'Paradise'."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which old part of Zanzibar City has narrow lanes and carved doors?",
+     "a": "Stone Town",
+     "wrong": [
+      "Nungwi",
+      "Paje",
+      "Chake Chake"
+     ],
+     "why": "It is a UNESCO site."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which volcanic crater is a wildlife haven?",
+     "a": "Ngorongoro Crater",
+     "wrong": [
+      "Mount Meru",
+      "Olduvai Gorge",
+      "Lake Natron"
+     ],
+     "why": "It is the largest unbroken caldera."
+    },
+    {
+     "level": 2,
+     "q": "Which alkaline lake is a breeding ground for flamingos?",
+     "a": "Lake Natron",
+     "wrong": [
+      "Lake Manyara",
+      "Lake Eyasi",
+      "Lake Rukwa"
+     ],
+     "why": "Its water can look red."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which language did Nyerere promote to unite the country?",
+     "a": "Swahili",
+     "wrong": [
+      "English",
+      "Arabic",
+      "Chagga"
+     ],
+     "why": "Tanzania is a heartland of Swahili."
+    },
+    {
+     "level": 1,
+     "q": "What is Tanzania's currency?",
+     "a": "Tanzanian shilling",
+     "wrong": [
+      "Kenyan shilling",
+      "Birr",
+      "Rand"
+     ],
+     "why": "Its code is TZS."
+    },
+    {
+     "level": 1,
+     "q": "Which people of northern Tanzania are famous for red cloth and jumping dances?",
+     "a": "Maasai",
+     "wrong": [
+      "Chagga",
+      "Sukuma",
+      "Hadza"
+     ],
+     "why": "They are herders."
+    },
+    {
+     "level": 2,
+     "q": "Which violet-blue gemstone is found only in Tanzania?",
+     "a": "Tanzanite",
+     "wrong": [
+      "Sapphire",
+      "Lapis lazuli",
+      "Aquamarine"
+     ],
+     "why": "It was discovered in 1967."
+    },
+    {
+     "level": 3,
+     "q": "What is the printed cotton cloth with a Swahili saying called?",
+     "a": "Kanga",
+     "wrong": [
+      "Kente",
+      "Shuka",
+      "Tartan"
+     ],
+     "why": "Women wear and gift them."
     }
    ]
   }

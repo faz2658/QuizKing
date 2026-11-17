@@ -3,19 +3,9 @@
  "country": "MH",
  "topics": [
   {
-   "name": "Marshall Islands: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of the Marshall Islands?",
-     "a": "Majuro",
-     "wrong": [
-      "Ebeye",
-      "Jaluit",
-      "Kwajalein"
-     ],
-     "why": "It is an atoll."
-    },
     {
      "level": 1,
      "q": "Which atoll was the site of US nuclear tests after the Second World War?",
@@ -26,17 +16,6 @@
       "Guam"
      ],
      "why": "The swimsuit was named after it."
-    },
-    {
-     "level": 1,
-     "q": "Which currency does the Marshall Islands use?",
-     "a": "US dollar",
-     "wrong": [
-      "Australian dollar",
-      "Marshallese dollar",
-      "Yen"
-     ],
-     "why": "It has a Compact of Free Association with the US."
     },
     {
      "level": 1,
@@ -59,28 +38,6 @@
       "Little Boy"
      ],
      "why": "It was far bigger than expected."
-    },
-    {
-     "level": 1,
-     "q": "Which ocean are the Marshall Islands in?",
-     "a": "Pacific Ocean",
-     "wrong": [
-      "Indian Ocean",
-      "Atlantic Ocean",
-      "Arctic Ocean"
-     ],
-     "why": "They are north of the equator."
-    },
-    {
-     "level": 1,
-     "q": "Which US Army base is on Kwajalein Atoll?",
-     "a": "Reagan Test Site",
-     "wrong": [
-      "Camp Lemonnier",
-      "Diego Garcia",
-      "Andersen AFB"
-     ],
-     "why": "It tests missiles."
     },
     {
      "level": 2,
@@ -114,6 +71,78 @@
       "Litokwa Tomeing"
      ],
      "why": "He served from 1979 to 1996."
+    },
+    {
+     "level": 2,
+     "q": "Which shark sanctuary did the Marshall Islands create in 2011?",
+     "a": "The world's largest shark sanctuary at the time",
+     "wrong": [
+      "A whale sanctuary",
+      "A turtle reserve",
+      "A coral farm"
+     ],
+     "why": "It covers its whole ocean area."
+    },
+    {
+     "level": 3,
+     "q": "Which atoll held the 1952 Ivy Mike test?",
+     "a": "Enewetak",
+     "wrong": [
+      "Bikini",
+      "Kwajalein",
+      "Rongelap"
+     ],
+     "why": "It was the first hydrogen bomb."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Marshall Islands?",
+     "a": "Majuro",
+     "wrong": [
+      "Ebeye",
+      "Jaluit",
+      "Kwajalein"
+     ],
+     "why": "It is an atoll."
+    },
+    {
+     "level": 1,
+     "q": "Which currency does the Marshall Islands use?",
+     "a": "US dollar",
+     "wrong": [
+      "Australian dollar",
+      "Marshallese dollar",
+      "Yen"
+     ],
+     "why": "It has a Compact of Free Association with the US."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean are the Marshall Islands in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "They are north of the equator."
+    },
+    {
+     "level": 1,
+     "q": "Which US Army base is on Kwajalein Atoll?",
+     "a": "Reagan Test Site",
+     "wrong": [
+      "Camp Lemonnier",
+      "Diego Garcia",
+      "Andersen AFB"
+     ],
+     "why": "It tests missiles."
     },
     {
      "level": 2,
@@ -160,6 +189,118 @@
      "why": "They ran from 1946 to 1958."
     },
     {
+     "level": 1,
+     "q": "What are the Marshall Islands made of?",
+     "a": "Coral atolls and islands",
+     "wrong": [
+      "Volcanic mountains",
+      "Granite peaks",
+      "Sandstone cliffs"
+     ],
+     "why": "There are 29 atolls."
+    },
+    {
+     "level": 1,
+     "q": "What is the main language of the Marshall Islands?",
+     "a": "Marshallese",
+     "wrong": [
+      "Tuvaluan",
+      "Samoan",
+      "Chamorro"
+     ],
+     "why": "English is also official."
+    },
+    {
+     "level": 1,
+     "q": "Which threat could cover much of the islands?",
+     "a": "Rising sea levels",
+     "wrong": [
+      "Volcanoes",
+      "Earthquakes",
+      "Desertification"
+     ],
+     "why": "The average height is about 2 m above sea."
+    },
+    {
+     "level": 3,
+     "q": "Which atoll's people were exposed to Castle Bravo fallout?",
+     "a": "Rongelap",
+     "wrong": [
+      "Majuro",
+      "Ebeye",
+      "Jaluit"
+     ],
+     "why": "They were moved away later."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which poet from the Marshall Islands spoke at the UN climate summit in 2014?",
+     "a": "Kathy Jetn̄il-Kijiner",
+     "wrong": [
+      "Hilda Heine",
+      "Selina Leem",
+      "Tony de Brum"
+     ],
+     "why": "Her poem was addressed to her daughter."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which foreign minister helped bring about the Paris climate deal?",
+     "a": "Tony de Brum",
+     "wrong": [
+      "Hilda Heine",
+      "Kessai Note",
+      "Anote Tong"
+     ],
+     "why": "He formed the 'High Ambition Coalition'."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which outrigger canoes are a famous craft?",
+     "a": "Proa canoes",
+     "wrong": [
+      "Dhows",
+      "Junks",
+      "Gondolas"
+     ],
+     "why": "They are fast and light."
+    },
+    {
+     "level": 2,
+     "q": "Which fine woven items from pandanus are a craft?",
+     "a": "Mats and handicrafts",
+     "wrong": [
+      "Silk scarves",
+      "Carpets",
+      "Pottery"
+     ],
+     "why": "Women weave them."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
      "level": 3,
      "q": "Which day on 1 March remembers the nuclear test victims?",
      "a": "Nuclear Victims Remembrance Day",
@@ -169,12 +310,7 @@
       "Fishermen's Day"
      ],
      "why": "It is a national holiday."
-    }
-   ]
-  },
-  {
-   "name": "Marshall Islands: Places & Culture",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "Which navigation charts were made from sticks and shells?",
@@ -185,17 +321,6 @@
       "Shell compasses"
      ],
      "why": "They showed ocean swells."
-    },
-    {
-     "level": 1,
-     "q": "What are the Marshall Islands made of?",
-     "a": "Coral atolls and islands",
-     "wrong": [
-      "Volcanic mountains",
-      "Granite peaks",
-      "Sandstone cliffs"
-     ],
-     "why": "There are 29 atolls."
     },
     {
      "level": 1,
@@ -220,50 +345,6 @@
      "why": "Fish is also central."
     },
     {
-     "level": 1,
-     "q": "What is the main language of the Marshall Islands?",
-     "a": "Marshallese",
-     "wrong": [
-      "Tuvaluan",
-      "Samoan",
-      "Chamorro"
-     ],
-     "why": "English is also official."
-    },
-    {
-     "level": 1,
-     "q": "Which outrigger canoes are a famous craft?",
-     "a": "Proa canoes",
-     "wrong": [
-      "Dhows",
-      "Junks",
-      "Gondolas"
-     ],
-     "why": "They are fast and light."
-    },
-    {
-     "level": 1,
-     "q": "Which threat could cover much of the islands?",
-     "a": "Rising sea levels",
-     "wrong": [
-      "Volcanoes",
-      "Earthquakes",
-      "Desertification"
-     ],
-     "why": "The average height is about 2 m above sea."
-    },
-    {
-     "level": 2,
-     "q": "Which fine woven items from pandanus are a craft?",
-     "a": "Mats and handicrafts",
-     "wrong": [
-      "Silk scarves",
-      "Carpets",
-      "Pottery"
-     ],
-     "why": "Women weave them."
-    },
-    {
      "level": 2,
      "q": "Which programme in Majuro keeps traditional canoe building alive?",
      "a": "Waan Aelõñ in Majel",
@@ -273,61 +354,6 @@
       "Canoe Corps"
      ],
      "why": "Its name means 'canoes of the Marshall Islands'."
-    },
-    {
-     "level": 2,
-     "q": "Which shark sanctuary did the Marshall Islands create in 2011?",
-     "a": "The world's largest shark sanctuary at the time",
-     "wrong": [
-      "A whale sanctuary",
-      "A turtle reserve",
-      "A coral farm"
-     ],
-     "why": "It covers its whole ocean area."
-    },
-    {
-     "level": 2,
-     "q": "Which poet from the Marshall Islands spoke at the UN climate summit in 2014?",
-     "a": "Kathy Jetn̄il-Kijiner",
-     "wrong": [
-      "Hilda Heine",
-      "Selina Leem",
-      "Tony de Brum"
-     ],
-     "why": "Her poem was addressed to her daughter."
-    },
-    {
-     "level": 2,
-     "q": "Which foreign minister helped bring about the Paris climate deal?",
-     "a": "Tony de Brum",
-     "wrong": [
-      "Hilda Heine",
-      "Kessai Note",
-      "Anote Tong"
-     ],
-     "why": "He formed the 'High Ambition Coalition'."
-    },
-    {
-     "level": 3,
-     "q": "Which atoll held the 1952 Ivy Mike test?",
-     "a": "Enewetak",
-     "wrong": [
-      "Bikini",
-      "Kwajalein",
-      "Rongelap"
-     ],
-     "why": "It was the first hydrogen bomb."
-    },
-    {
-     "level": 3,
-     "q": "Which atoll's people were exposed to Castle Bravo fallout?",
-     "a": "Rongelap",
-     "wrong": [
-      "Majuro",
-      "Ebeye",
-      "Jaluit"
-     ],
-     "why": "They were moved away later."
     },
     {
      "level": 3,

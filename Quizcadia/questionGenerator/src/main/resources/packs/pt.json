@@ -3,7 +3,8 @@
  "country": "PT",
  "topics": [
   {
-   "name": "Portugal: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -15,28 +16,6 @@
       "Pedro Álvares Cabral"
      ],
      "why": "He sailed around Africa."
-    },
-    {
-     "level": 1,
-     "q": "Which Portuguese navigator led the first voyage around the world?",
-     "a": "Ferdinand Magellan",
-     "wrong": [
-      "Vasco da Gama",
-      "Bartolomeu Dias",
-      "João Fernandes"
-     ],
-     "why": "He died in the Philippines; his crew finished the trip."
-    },
-    {
-     "level": 1,
-     "q": "Which prince sponsored early Portuguese voyages of discovery?",
-     "a": "Henry the Navigator",
-     "wrong": [
-      "João II",
-      "Manuel I",
-      "Afonso Henriques"
-     ],
-     "why": "He lived from 1394 to 1460."
     },
     {
      "level": 1,
@@ -169,11 +148,23 @@
       "Battle of Alcácer Quibir"
      ],
      "why": "The Batalha Monastery celebrates it."
+    },
+    {
+     "level": 2,
+     "q": "Which Lisbon monument was the starting point for explorers?",
+     "a": "Belém Tower",
+     "wrong": [
+      "Jerónimos Monastery",
+      "São Jorge Castle",
+      "Santa Justa Lift"
+     ],
+     "why": "It is a UNESCO site."
     }
    ]
   },
   {
-   "name": "Portugal: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -188,61 +179,6 @@
     },
     {
      "level": 1,
-     "q": "Which sweet fortified wine comes from northern Portugal?",
-     "a": "Port",
-     "wrong": [
-      "Sherry",
-      "Marsala",
-      "Vermouth"
-     ],
-     "why": "It is aged in Porto's cellars."
-    },
-    {
-     "level": 1,
-     "q": "Which sad, soulful music style comes from Lisbon?",
-     "a": "Fado",
-     "wrong": [
-      "Flamenco",
-      "Morna",
-      "Tango"
-     ],
-     "why": "It is on UNESCO's heritage list."
-    },
-    {
-     "level": 1,
-     "q": "Which Portuguese footballer has won five Ballon d'Or awards?",
-     "a": "Cristiano Ronaldo",
-     "wrong": [
-      "Luís Figo",
-      "Eusébio",
-      "Bernardo Silva"
-     ],
-     "why": "He is from Madeira."
-    },
-    {
-     "level": 1,
-     "q": "Which custard tarts are a Lisbon speciality?",
-     "a": "Pastéis de nata",
-     "wrong": [
-      "Queijadas",
-      "Bolas de Berlim",
-      "Pão de ló"
-     ],
-     "why": "The ones from Belém are famous."
-    },
-    {
-     "level": 1,
-     "q": "Which painted blue-and-white tiles decorate many Portuguese buildings?",
-     "a": "Azulejos",
-     "wrong": [
-      "Mosaicos",
-      "Majolica",
-      "Talavera"
-     ],
-     "why": "They came from Moorish traditions."
-    },
-    {
-     "level": 1,
      "q": "Which southern region is famous for beaches and cliffs?",
      "a": "Algarve",
      "wrong": [
@@ -251,17 +187,6 @@
       "Douro"
      ],
      "why": "Faro is its main city."
-    },
-    {
-     "level": 2,
-     "q": "Which salted cod is a Portuguese favourite?",
-     "a": "Bacalhau",
-     "wrong": [
-      "Sardinhas",
-      "Polvo",
-      "Lulas"
-     ],
-     "why": "There are said to be 365 recipes for it."
     },
     {
      "level": 2,
@@ -276,28 +201,6 @@
     },
     {
      "level": 2,
-     "q": "Which Lisbon monument was the starting point for explorers?",
-     "a": "Belém Tower",
-     "wrong": [
-      "Jerónimos Monastery",
-      "São Jorge Castle",
-      "Santa Justa Lift"
-     ],
-     "why": "It is a UNESCO site."
-    },
-    {
-     "level": 2,
-     "q": "Which river flows through Porto and its wine valley?",
-     "a": "Douro",
-     "wrong": [
-      "Tagus",
-      "Mondego",
-      "Minho"
-     ],
-     "why": "The Douro Valley is a UNESCO site."
-    },
-    {
-     "level": 2,
      "q": "Which city has one of the oldest universities in Europe?",
      "a": "Coimbra",
      "wrong": [
@@ -306,7 +209,47 @@
       "Faro"
      ],
      "why": "It traces its founding to 1290."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Portuguese footballer has won five Ballon d'Or awards?",
+     "a": "Cristiano Ronaldo",
+     "wrong": [
+      "Luís Figo",
+      "Eusébio",
+      "Bernardo Silva"
+     ],
+     "why": "He is from Madeira."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which sad, soulful music style comes from Lisbon?",
+     "a": "Fado",
+     "wrong": [
+      "Flamenco",
+      "Morna",
+      "Tango"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
      "level": 3,
      "q": "Which Portuguese writer won the 1998 Nobel Prize in Literature?",
@@ -339,6 +282,95 @@
       "Cantar de mio Cid"
      ],
      "why": "Luís de Camões wrote it."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which painted blue-and-white tiles decorate many Portuguese buildings?",
+     "a": "Azulejos",
+     "wrong": [
+      "Mosaicos",
+      "Majolica",
+      "Talavera"
+     ],
+     "why": "They came from Moorish traditions."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Portuguese navigator led the first voyage around the world?",
+     "a": "Ferdinand Magellan",
+     "wrong": [
+      "Vasco da Gama",
+      "Bartolomeu Dias",
+      "João Fernandes"
+     ],
+     "why": "He died in the Philippines; his crew finished the trip."
+    },
+    {
+     "level": 1,
+     "q": "Which prince sponsored early Portuguese voyages of discovery?",
+     "a": "Henry the Navigator",
+     "wrong": [
+      "João II",
+      "Manuel I",
+      "Afonso Henriques"
+     ],
+     "why": "He lived from 1394 to 1460."
+    },
+    {
+     "level": 1,
+     "q": "Which sweet fortified wine comes from northern Portugal?",
+     "a": "Port",
+     "wrong": [
+      "Sherry",
+      "Marsala",
+      "Vermouth"
+     ],
+     "why": "It is aged in Porto's cellars."
+    },
+    {
+     "level": 1,
+     "q": "Which custard tarts are a Lisbon speciality?",
+     "a": "Pastéis de nata",
+     "wrong": [
+      "Queijadas",
+      "Bolas de Berlim",
+      "Pão de ló"
+     ],
+     "why": "The ones from Belém are famous."
+    },
+    {
+     "level": 2,
+     "q": "Which salted cod is a Portuguese favourite?",
+     "a": "Bacalhau",
+     "wrong": [
+      "Sardinhas",
+      "Polvo",
+      "Lulas"
+     ],
+     "why": "There are said to be 365 recipes for it."
+    },
+    {
+     "level": 2,
+     "q": "Which river flows through Porto and its wine valley?",
+     "a": "Douro",
+     "wrong": [
+      "Tagus",
+      "Mondego",
+      "Minho"
+     ],
+     "why": "The Douro Valley is a UNESCO site."
     }
    ]
   }

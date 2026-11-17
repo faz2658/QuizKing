@@ -1,193 +1,1793 @@
 {
-  "category": "India & South Asia",
-  "country": "IN",
-  "topics": [
+ "category": "India & South Asia",
+ "country": "IN",
+ "topics": [
+  {
+   "category": "History",
+   "name": "History",
+   "questions": [
     {
-      "name": "Cricket",
-      "questions": [
-        { "level": 1, "q": "Who captained India to its first Cricket World Cup win in 1983?", "a": "Kapil Dev", "wrong": ["Sunil Gavaskar", "Mohinder Amarnath", "Ravi Shastri"], "why": "Kapil Dev's team beat the West Indies in the final at Lord's." },
-        { "level": 1, "q": "Who led India to victory in the first T20 World Cup in 2007?", "a": "MS Dhoni", "wrong": ["Rahul Dravid", "Sourav Ganguly", "Virat Kohli"], "why": "India beat Pakistan in the final in Johannesburg." },
-        { "level": 1, "q": "In which year did India win the ODI World Cup at home, with the final in Mumbai?", "a": "2011", "wrong": ["2007", "2015", "2003"], "why": "Dhoni finished the final against Sri Lanka with a six at the Wankhede Stadium." },
-        { "level": 1, "q": "Which Indian batter hit six sixes in one over at the 2007 T20 World Cup?", "a": "Yuvraj Singh", "wrong": ["Yusuf Pathan", "Rohit Sharma", "Gautam Gambhir"], "why": "He hit England's Stuart Broad for six sixes in Durban." },
-        { "level": 1, "q": "Which Indian batter is nicknamed 'The Wall'?", "a": "Rahul Dravid", "wrong": ["VVS Laxman", "Cheteshwar Pujara", "Sunil Gavaskar"], "why": "Dravid was famous for his solid defence." },
-        { "level": 1, "q": "Which ground in Ahmedabad is the largest cricket stadium in the world?", "a": "Narendra Modi Stadium", "wrong": ["Eden Gardens", "Wankhede Stadium", "M. Chinnaswamy Stadium"], "why": "It seats about 132,000 people." },
-        { "level": 1, "q": "Which IPL team's fans are known as the 'Yellow Army'?", "a": "Chennai Super Kings", "wrong": ["Mumbai Indians", "Kolkata Knight Riders", "Sunrisers Hyderabad"], "why": "CSK play in yellow." },
-        { "level": 1, "q": "Who captained Pakistan to the 1992 World Cup title?", "a": "Imran Khan", "wrong": ["Wasim Akram", "Javed Miandad", "Inzamam-ul-Haq"], "why": "Pakistan beat England in the final in Melbourne." },
-        { "level": 1, "q": "Which Sri Lankan spinner took 800 Test wickets, the most ever?", "a": "Muttiah Muralitharan", "wrong": ["Rangana Herath", "Ajantha Mendis", "Chaminda Vaas"], "why": "He took his 800th wicket with his last ball in Tests." },
-        { "level": 1, "q": "In which year was the first IPL season played?", "a": "2008", "wrong": ["2007", "2009", "2010"], "why": "The Indian Premier League began in April 2008." },
-        { "level": 1, "q": "Which Bollywood star co-owns the Kolkata Knight Riders?", "a": "Shah Rukh Khan", "wrong": ["Salman Khan", "Aamir Khan", "Akshay Kumar"], "why": "He co-owns KKR with Juhi Chawla's family." },
-        { "level": 2, "q": "How many international centuries did Sachin Tendulkar score?", "a": "100", "wrong": ["75", "89", "120"], "why": "51 in Tests and 49 in ODIs." },
-        { "level": 2, "q": "Which Indian bowler took all 10 wickets in a Test innings against Pakistan in 1999?", "a": "Anil Kumble", "wrong": ["Harbhajan Singh", "Javagal Srinath", "Zaheer Khan"], "why": "Kumble took 10 for 74 in Delhi." },
-        { "level": 2, "q": "In which stadium did India win the 2011 World Cup final?", "a": "Wankhede Stadium", "wrong": ["Eden Gardens", "Feroz Shah Kotla", "M. A. Chidambaram Stadium"], "why": "The Wankhede is in Mumbai." },
-        { "level": 2, "q": "Which team won the 1996 World Cup, co-hosted by India, Pakistan and Sri Lanka?", "a": "Sri Lanka", "wrong": ["Australia", "India", "Pakistan"], "why": "Sri Lanka beat Australia in the final in Lahore." },
-        { "level": 2, "q": "Who holds the record for the highest score in an ODI innings, 264?", "a": "Rohit Sharma", "wrong": ["Martin Guptill", "Virender Sehwag", "Chris Gayle"], "why": "He made 264 against Sri Lanka in Kolkata in 2014." },
-        { "level": 2, "q": "Which team won the first IPL season in 2008?", "a": "Rajasthan Royals", "wrong": ["Chennai Super Kings", "Deccan Chargers", "Mumbai Indians"], "why": "Shane Warne captained them." },
-        { "level": 2, "q": "Which Indian batter scored two triple centuries in Test cricket?", "a": "Virender Sehwag", "wrong": ["Karun Nair", "Rahul Dravid", "VVS Laxman"], "why": "309 against Pakistan in 2004 and 319 against South Africa in 2008." },
-        { "level": 2, "q": "VVS Laxman's famous 281 at Eden Gardens in 2001 came against which team?", "a": "Australia", "wrong": ["England", "Pakistan", "South Africa"], "why": "India followed on and still won the match." },
-        { "level": 2, "q": "What is India's top domestic first-class cricket competition called?", "a": "Ranji Trophy", "wrong": ["Vijay Hazare Trophy", "Syed Mushtaq Ali Trophy", "Deodhar Trophy"], "why": "It is named after Ranjitsinhji, who played for England." },
-        { "level": 2, "q": "Which Bangladeshi all-rounder was ranked the world's number one ODI all-rounder for years?", "a": "Shakib Al Hasan", "wrong": ["Mushfiqur Rahim", "Tamim Iqbal", "Mashrafe Mortaza"], "why": "He bats left-handed and bowls left-arm spin." },
-        { "level": 2, "q": "India won the 2024 T20 World Cup by beating which team in the final?", "a": "South Africa", "wrong": ["Australia", "England", "Pakistan"], "why": "India won by 7 runs in Barbados." },
-        { "level": 2, "q": "Which team beat India in the 2023 ODI World Cup final in Ahmedabad?", "a": "Australia", "wrong": ["New Zealand", "England", "South Africa"], "why": "It was Australia's sixth ODI World Cup title." },
-        { "level": 3, "q": "Who was the first batter to score 10,000 Test runs?", "a": "Sunil Gavaskar", "wrong": ["Allan Border", "Sachin Tendulkar", "Geoffrey Boycott"], "why": "Gavaskar reached it in 1987." },
-        { "level": 3, "q": "India won the 2013 Champions Trophy by beating which team in the final?", "a": "England", "wrong": ["Australia", "Pakistan", "Sri Lanka"], "why": "The rain-shortened final was played at Edgbaston." },
-        { "level": 3, "q": "Who scored the first double century in ODI cricket?", "a": "Sachin Tendulkar", "wrong": ["Virender Sehwag", "Rohit Sharma", "Saeed Anwar"], "why": "He made 200 not out against South Africa in 2010." },
-        { "level": 3, "q": "Who took the first hat-trick in World Cup history, in 1987?", "a": "Chetan Sharma", "wrong": ["Kapil Dev", "Saqlain Mushtaq", "Chaminda Vaas"], "why": "He took it against New Zealand in Nagpur." }
-      ]
+     "level": 2,
+     "q": "Which team won the first IPL season in 2008?",
+     "a": "Rajasthan Royals",
+     "wrong": [
+      "Chennai Super Kings",
+      "Deccan Chargers",
+      "Mumbai Indians"
+     ],
+     "why": "Shane Warne captained them."
     },
     {
-      "name": "Bollywood & Indian Cinema",
-      "questions": [
-        { "level": 1, "q": "The Oscar-winning song 'Naatu Naatu' is from which film?", "a": "RRR", "wrong": ["Baahubali 2", "Pushpa", "KGF Chapter 2"], "why": "It won Best Original Song in 2023." },
-        { "level": 1, "q": "Gabbar Singh is the villain of which classic film?", "a": "Sholay", "wrong": ["Deewaar", "Don", "Mughal-e-Azam"], "why": "Amjad Khan played him in the 1975 film." },
-        { "level": 1, "q": "Which actor is popularly called 'Big B'?", "a": "Amitabh Bachchan", "wrong": ["Dharmendra", "Rajesh Khanna", "Shah Rukh Khan"], "why": "He is also known as the 'Shahenshah' of Bollywood." },
-        { "level": 1, "q": "Who plays Raj in 'Dilwale Dulhania Le Jayenge' (1995)?", "a": "Shah Rukh Khan", "wrong": ["Salman Khan", "Aamir Khan", "Saif Ali Khan"], "why": "Kajol plays Simran." },
-        { "level": 1, "q": "Which Aamir Khan film about a cricket match against British officers was nominated for an Oscar?", "a": "Lagaan", "wrong": ["Dangal", "3 Idiots", "Taare Zameen Par"], "why": "It was nominated for Best Foreign Language Film in 2002." },
-        { "level": 1, "q": "Which film made the phrase 'All is well' famous?", "a": "3 Idiots", "wrong": ["PK", "Munna Bhai M.B.B.S.", "Chhichhore"], "why": "Rancho, played by Aamir Khan, says it to calm his heart." },
-        { "level": 1, "q": "Who directed 'Baahubali' and 'RRR'?", "a": "S. S. Rajamouli", "wrong": ["Mani Ratnam", "Shankar", "Prashanth Neel"], "why": "Rajamouli works mainly in Telugu cinema." },
-        { "level": 1, "q": "Which Tamil superstar is called 'Thalaivar' by his fans?", "a": "Rajinikanth", "wrong": ["Kamal Haasan", "Vijay", "Ajith Kumar"], "why": "Thalaivar means 'leader'." },
-        { "level": 1, "q": "Who composed the music for 'Slumdog Millionaire' and won two Oscars for it?", "a": "A. R. Rahman", "wrong": ["Ilaiyaraaja", "Pritam", "Shankar Mahadevan"], "why": "He won Best Original Score and Best Original Song for 'Jai Ho'." },
-        { "level": 1, "q": "What sport is the film 'Dangal' about?", "a": "Wrestling", "wrong": ["Boxing", "Kabaddi", "Hockey"], "why": "It follows Mahavir Singh Phogat and his wrestler daughters." },
-        { "level": 1, "q": "In which city is the Hindi film industry, Bollywood, based?", "a": "Mumbai", "wrong": ["Delhi", "Hyderabad", "Kolkata"], "why": "The name comes from Bombay, Mumbai's old name, and Hollywood." },
-        { "level": 1, "q": "Who plays Pushpa Raj in 'Pushpa: The Rise'?", "a": "Allu Arjun", "wrong": ["Ram Charan", "Mahesh Babu", "Prabhas"], "why": "He won the National Award for Best Actor for the role." },
-        { "level": 2, "q": "Who directed 'Sholay' (1975)?", "a": "Ramesh Sippy", "wrong": ["Yash Chopra", "Raj Kapoor", "Manmohan Desai"], "why": "Salim–Javed wrote it." },
-        { "level": 2, "q": "Which Bengali director made the 'Apu Trilogy'?", "a": "Satyajit Ray", "wrong": ["Ritwik Ghatak", "Mrinal Sen", "Shyam Benegal"], "why": "It began with 'Pather Panchali' in 1955." },
-        { "level": 2, "q": "India's highest award in cinema is named after which filmmaker?", "a": "Dadasaheb Phalke", "wrong": ["Satyajit Ray", "Raj Kapoor", "Guru Dutt"], "why": "Phalke made India's first feature film, 'Raja Harishchandra', in 1913." },
-        { "level": 2, "q": "Which singer, given the Bharat Ratna in 2001, sang film songs for over seven decades?", "a": "Lata Mangeshkar", "wrong": ["Asha Bhosle", "Kishore Kumar", "Mohammed Rafi"], "why": "She was known as the 'Queen of Melody'." },
-        { "level": 2, "q": "In which film franchise does Yash play Rocky?", "a": "KGF", "wrong": ["Kantara", "Pushpa", "Salaar"], "why": "KGF stands for the Kolar Gold Fields." },
-        { "level": 2, "q": "'Kuch Kuch Hota Hai' (1998) was the first film directed by whom?", "a": "Karan Johar", "wrong": ["Aditya Chopra", "Farah Khan", "Sanjay Leela Bhansali"], "why": "Aditya Chopra's debut was 'Dilwale Dulhania Le Jayenge'." },
-        { "level": 2, "q": "Which Sanjay Leela Bhansali film is about the queen of Chittor?", "a": "Padmaavat", "wrong": ["Bajirao Mastani", "Devdas", "Gangubai Kathiawadi"], "why": "Deepika Padukone plays Rani Padmavati." },
-        { "level": 3, "q": "Who played Anarkali in 'Mughal-e-Azam' (1960)?", "a": "Madhubala", "wrong": ["Meena Kumari", "Nargis", "Waheeda Rehman"], "why": "Dilip Kumar played Prince Salim." },
-        { "level": 3, "q": "'Mother India' (1957) was India's first film nominated for which Oscar?", "a": "Best Foreign Language Film", "wrong": ["Best Picture", "Best Actress", "Best Original Score"], "why": "It lost by a single vote, the story goes." },
-        { "level": 3, "q": "Which singer starred in the comedy 'Chalti Ka Naam Gaadi' with his brothers?", "a": "Kishore Kumar", "wrong": ["Mukesh", "Manna Dey", "Mohammed Rafi"], "why": "His brothers Ashok Kumar and Anoop Kumar also starred." },
-        { "level": 3, "q": "In which year did 'The Elephant Whisperers' win the Oscar for Best Documentary Short?", "a": "2023", "wrong": ["2022", "2021", "2019"], "why": "It is set in Tamil Nadu's Mudumalai reserve." },
-        { "level": 3, "q": "Who played the title role in the Pakistani blockbuster 'The Legend of Maula Jatt' (2022)?", "a": "Fawad Khan", "wrong": ["Humayun Saeed", "Ali Zafar", "Imran Abbas"], "why": "It became one of the highest-grossing Pakistani films." },
-        { "level": 3, "q": "Raj Kapoor's 'Awaara' (1951) was a huge hit in which country outside India?", "a": "Soviet Union", "wrong": ["Brazil", "Japan", "Egypt"], "why": "Its song 'Awaara Hoon' was famous across the USSR." }
-      ]
+     "level": 2,
+     "q": "VVS Laxman's famous 281 at Eden Gardens in 2001 came against which team?",
+     "a": "Australia",
+     "wrong": [
+      "England",
+      "Pakistan",
+      "South Africa"
+     ],
+     "why": "India followed on and still won the match."
     },
     {
-      "name": "Indian History",
-      "questions": [
-        { "level": 1, "q": "Who was the first Prime Minister of India?", "a": "Jawaharlal Nehru", "wrong": ["Sardar Vallabhbhai Patel", "Lal Bahadur Shastri", "Rajendra Prasad"], "why": "He served from 1947 until 1964." },
-        { "level": 1, "q": "On which date does India celebrate Independence Day?", "a": "15 August", "wrong": ["26 January", "2 October", "14 November"], "why": "India became independent on 15 August 1947." },
-        { "level": 1, "q": "In which year did the Constitution of India come into force?", "a": "1950", "wrong": ["1947", "1949", "1952"], "why": "It took effect on 26 January 1950, now Republic Day." },
-        { "level": 1, "q": "Who is known as the chief architect of the Indian Constitution?", "a": "B. R. Ambedkar", "wrong": ["Rajendra Prasad", "Sardar Vallabhbhai Patel", "Jawaharlal Nehru"], "why": "He chaired the Drafting Committee." },
-        { "level": 1, "q": "In which city did the Jallianwala Bagh massacre take place in 1919?", "a": "Amritsar", "wrong": ["Lahore", "Delhi", "Lucknow"], "why": "British troops fired on an unarmed crowd." },
-        { "level": 1, "q": "Which Mughal emperor built the Taj Mahal?", "a": "Shah Jahan", "wrong": ["Akbar", "Aurangzeb", "Jahangir"], "why": "He built it in memory of his wife Mumtaz Mahal." },
-        { "level": 1, "q": "Rani Lakshmibai, a leader of the 1857 uprising, was the queen of which kingdom?", "a": "Jhansi", "wrong": ["Gwalior", "Kittur", "Awadh"], "why": "She died fighting the British in 1858." },
-        { "level": 1, "q": "Which ruler was called the 'Tiger of Mysore'?", "a": "Tipu Sultan", "wrong": ["Hyder Ali", "Shivaji", "Ranjit Singh"], "why": "He fought four wars against the East India Company." },
-        { "level": 1, "q": "Who founded the Maratha Empire?", "a": "Chhatrapati Shivaji", "wrong": ["Bajirao I", "Sambhaji", "Madhavrao I"], "why": "He was crowned at Raigad in 1674." },
-        { "level": 1, "q": "Harappa and Mohenjo-daro were cities of which ancient civilisation?", "a": "Indus Valley Civilisation", "wrong": ["Vedic civilisation", "Mesopotamian civilisation", "Maurya Empire"], "why": "It flourished around 2500 BCE." },
-        { "level": 1, "q": "Who said 'Give me blood, and I will give you freedom'?", "a": "Subhas Chandra Bose", "wrong": ["Bhagat Singh", "Bal Gangadhar Tilak", "Chandra Shekhar Azad"], "why": "Netaji led the Indian National Army." },
-        { "level": 1, "q": "Who was India's first woman Prime Minister?", "a": "Indira Gandhi", "wrong": ["Sarojini Naidu", "Pratibha Patil", "Sucheta Kripalani"], "why": "She first took office in 1966." },
-        { "level": 1, "q": "Who is called the 'Iron Man of India' for uniting the princely states?", "a": "Sardar Vallabhbhai Patel", "wrong": ["Jawaharlal Nehru", "Lal Bahadur Shastri", "B. R. Ambedkar"], "why": "The Statue of Unity in Gujarat honours him." },
-        { "level": 1, "q": "Who is known as Quaid-e-Azam, the founder of Pakistan?", "a": "Muhammad Ali Jinnah", "wrong": ["Liaquat Ali Khan", "Allama Iqbal", "Ayub Khan"], "why": "Quaid-e-Azam means 'Great Leader'." },
-        { "level": 2, "q": "Gandhi's Salt March of 1930 ended at which coastal village?", "a": "Dandi", "wrong": ["Porbandar", "Sabarmati", "Champaran"], "why": "He walked about 385 km from Sabarmati Ashram." },
-        { "level": 2, "q": "Babur founded the Mughal Empire after winning which battle in 1526?", "a": "First Battle of Panipat", "wrong": ["Battle of Plassey", "Battle of Haldighati", "Battle of Talikota"], "why": "He defeated Ibrahim Lodi, the Sultan of Delhi." },
-        { "level": 2, "q": "At the Battle of Plassey in 1757, the East India Company defeated the Nawab of where?", "a": "Bengal", "wrong": ["Awadh", "Mysore", "Hyderabad"], "why": "Robert Clive defeated Siraj ud-Daulah." },
-        { "level": 2, "q": "Emperor Ashoka turned to Buddhism after which war?", "a": "Kalinga War", "wrong": ["Battle of the Hydaspes", "Third Battle of Panipat", "Battle of Tarain"], "why": "The bloodshed in Kalinga, in today's Odisha, changed him." },
-        { "level": 2, "q": "Who was Chandragupta Maurya's adviser, credited with writing the Arthashastra?", "a": "Chanakya", "wrong": ["Kalidasa", "Aryabhata", "Panini"], "why": "He is also known as Kautilya." },
-        { "level": 2, "q": "In which year was the Quit India Movement launched?", "a": "1942", "wrong": ["1930", "1920", "1947"], "why": "Gandhi gave the call 'Do or Die' in Bombay." },
-        { "level": 2, "q": "In which year did Bangladesh become independent?", "a": "1971", "wrong": ["1947", "1965", "1975"], "why": "It followed the Bangladesh Liberation War." },
-        { "level": 2, "q": "Hampi, a UNESCO site in Karnataka, was the capital of which empire?", "a": "Vijayanagara Empire", "wrong": ["Chola Empire", "Maurya Empire", "Mughal Empire"], "why": "It was one of the largest cities in the world around 1500." },
-        { "level": 2, "q": "Who was the first President of India?", "a": "Rajendra Prasad", "wrong": ["S. Radhakrishnan", "Zakir Husain", "V. V. Giri"], "why": "He served from 1950 to 1962." },
-        { "level": 3, "q": "Maharaja Ranjit Singh's Sikh Empire had its capital at which city?", "a": "Lahore", "wrong": ["Amritsar", "Patiala", "Multan"], "why": "He took Lahore in 1799." },
-        { "level": 3, "q": "In which city is the Chola-era Brihadeeswarar Temple?", "a": "Thanjavur", "wrong": ["Madurai", "Kanchipuram", "Mahabalipuram"], "why": "Rajaraja Chola I built it around 1010 CE." },
-        { "level": 3, "q": "Which Mughal emperor started the faith called Din-i-Ilahi?", "a": "Akbar", "wrong": ["Humayun", "Shah Jahan", "Babur"], "why": "It drew on several religions." }
-      ]
+     "level": 3,
+     "q": "India won the 2013 Champions Trophy by beating which team in the final?",
+     "a": "England",
+     "wrong": [
+      "Australia",
+      "Pakistan",
+      "Sri Lanka"
+     ],
+     "why": "The rain-shortened final was played at Edgbaston."
     },
     {
-      "name": "Geography of South Asia",
-      "questions": [
-        { "level": 1, "q": "What is the capital of India?", "a": "New Delhi", "wrong": ["Mumbai", "Kolkata", "Chennai"], "why": "New Delhi has been the capital since 1931." },
-        { "level": 1, "q": "Which is the longest river in India?", "a": "Ganga", "wrong": ["Godavari", "Yamuna", "Narmada"], "why": "It flows about 2,500 km from the Himalayas to the Bay of Bengal." },
-        { "level": 1, "q": "Which mountain on the Nepal–China border is the highest in the world?", "a": "Mount Everest", "wrong": ["K2", "Kangchenjunga", "Lhotse"], "why": "It is 8,849 m tall." },
-        { "level": 1, "q": "Which is India's largest state by area?", "a": "Rajasthan", "wrong": ["Madhya Pradesh", "Maharashtra", "Uttar Pradesh"], "why": "It covers about a tenth of India." },
-        { "level": 1, "q": "Which is India's most populous state?", "a": "Uttar Pradesh", "wrong": ["Maharashtra", "Bihar", "West Bengal"], "why": "It has over 200 million people." },
-        { "level": 1, "q": "Which desert lies mostly in Rajasthan?", "a": "Thar Desert", "wrong": ["Gobi Desert", "Karakum Desert", "Dasht-e-Kavir"], "why": "It is also called the Great Indian Desert." },
-        { "level": 1, "q": "What is the capital of Nepal?", "a": "Kathmandu", "wrong": ["Pokhara", "Lalitpur", "Thimphu"], "why": "It lies in the Kathmandu Valley." },
-        { "level": 1, "q": "What is the capital of Bangladesh?", "a": "Dhaka", "wrong": ["Chittagong", "Khulna", "Sylhet"], "why": "It stands on the Buriganga River." },
-        { "level": 1, "q": "What is the capital of Pakistan?", "a": "Islamabad", "wrong": ["Karachi", "Lahore", "Rawalpindi"], "why": "It replaced Karachi as the capital in the 1960s." },
-        { "level": 1, "q": "Malé is the capital of which island nation?", "a": "Maldives", "wrong": ["Sri Lanka", "Mauritius", "Seychelles"], "why": "The Maldives is made up of about 1,200 islands." },
-        { "level": 1, "q": "Which Indian state calls itself 'God's Own Country'?", "a": "Kerala", "wrong": ["Goa", "Karnataka", "Tamil Nadu"], "why": "It is the state's tourism slogan." },
-        { "level": 1, "q": "Which city is known as the 'Pink City'?", "a": "Jaipur", "wrong": ["Udaipur", "Jodhpur", "Bikaner"], "why": "It was painted pink to welcome the Prince of Wales in 1876." },
-        { "level": 1, "q": "Dal Lake is in which city?", "a": "Srinagar", "wrong": ["Shimla", "Leh", "Nainital"], "why": "It is famous for its houseboats and shikaras." },
-        { "level": 2, "q": "Which river, India's second longest, is called the 'Dakshin Ganga'?", "a": "Godavari", "wrong": ["Krishna", "Kaveri", "Narmada"], "why": "Dakshin Ganga means 'Ganga of the South'." },
-        { "level": 2, "q": "Which Indian state has the longest coastline?", "a": "Gujarat", "wrong": ["Andhra Pradesh", "Tamil Nadu", "Maharashtra"], "why": "Its coast is about 1,600 km long." },
-        { "level": 2, "q": "What is the capital of Bhutan?", "a": "Thimphu", "wrong": ["Paro", "Punakha", "Gangtok"], "why": "Bhutan's only international airport is in Paro, not the capital." },
-        { "level": 2, "q": "Which village in Meghalaya is often called the wettest place on Earth?", "a": "Mawsynram", "wrong": ["Cherrapunji", "Shillong", "Tawang"], "why": "It gets close to 12,000 mm of rain a year." },
-        { "level": 2, "q": "The Sundarbans, home of the Bengal tiger, is the world's largest what?", "a": "Mangrove forest", "wrong": ["Rainforest", "River island", "Coral reef"], "why": "It spans India and Bangladesh." },
-        { "level": 2, "q": "Majuli, one of the world's largest river islands, is in which river?", "a": "Brahmaputra", "wrong": ["Ganga", "Godavari", "Indus"], "why": "It is in Assam." },
-        { "level": 2, "q": "Which strait separates India and Sri Lanka?", "a": "Palk Strait", "wrong": ["Strait of Malacca", "Strait of Hormuz", "Bab-el-Mandeb"], "why": "It is named after Robert Palk, a governor of Madras." },
-        { "level": 2, "q": "Which state, formed in 2014, is India's newest?", "a": "Telangana", "wrong": ["Jharkhand", "Uttarakhand", "Chhattisgarh"], "why": "It was split from Andhra Pradesh." },
-        { "level": 2, "q": "At Kanyakumari, the Arabian Sea and the Bay of Bengal meet which other body of water?", "a": "Indian Ocean", "wrong": ["Red Sea", "Andaman Sea", "Persian Gulf"], "why": "It is the southern tip of mainland India." },
-        { "level": 3, "q": "Which city is Sri Lanka's official legislative capital?", "a": "Sri Jayawardenepura Kotte", "wrong": ["Colombo", "Kandy", "Galle"], "why": "Parliament sits there; Colombo is the commercial capital." },
-        { "level": 3, "q": "Chilika, Asia's largest brackish-water lagoon, is in which state?", "a": "Odisha", "wrong": ["Andhra Pradesh", "Kerala", "West Bengal"], "why": "It is known for its Irrawaddy dolphins and migratory birds." },
-        { "level": 3, "q": "Through how many Indian states does the Tropic of Cancer pass?", "a": "8", "wrong": ["6", "10", "5"], "why": "From Gujarat in the west to Mizoram in the east." },
-        { "level": 3, "q": "Which mountain pass links Srinagar and Leh by road?", "a": "Zoji La", "wrong": ["Khardung La", "Nathu La", "Rohtang Pass"], "why": "It is on the Srinagar–Leh highway, and the Zojila tunnel is being built under it." }
-      ]
+     "level": 1,
+     "q": "Who plays Raj in 'Dilwale Dulhania Le Jayenge' (1995)?",
+     "a": "Shah Rukh Khan",
+     "wrong": [
+      "Salman Khan",
+      "Aamir Khan",
+      "Saif Ali Khan"
+     ],
+     "why": "Kajol plays Simran."
     },
     {
-      "name": "Festivals, Food & Culture",
-      "questions": [
-        { "level": 1, "q": "Diwali is known as the festival of what?", "a": "Lights", "wrong": ["Colours", "Harvest", "Kites"], "why": "Homes are lit with diyas, small oil lamps." },
-        { "level": 1, "q": "Which festival is celebrated by throwing coloured powder?", "a": "Holi", "wrong": ["Diwali", "Eid al-Fitr", "Lohri"], "why": "It marks the arrival of spring." },
-        { "level": 1, "q": "Which Kerala festival is famous for its sadya feast and snake boat races?", "a": "Onam", "wrong": ["Pongal", "Vishu", "Bihu"], "why": "It celebrates the return of King Mahabali." },
-        { "level": 1, "q": "Pongal is a harvest festival celebrated mainly in which state?", "a": "Tamil Nadu", "wrong": ["Punjab", "Assam", "Gujarat"], "why": "Pongal is also the sweet rice dish cooked for it." },
-        { "level": 1, "q": "Bihu is the main festival of which state?", "a": "Assam", "wrong": ["Bihar", "Odisha", "Sikkim"], "why": "Rongali Bihu marks the Assamese new year." },
-        { "level": 1, "q": "Durga Puja is the biggest festival of which city?", "a": "Kolkata", "wrong": ["Mumbai", "Chennai", "Ahmedabad"], "why": "UNESCO lists Durga Puja in Kolkata as intangible heritage." },
-        { "level": 1, "q": "During which festival do people dance garba for nine nights?", "a": "Navratri", "wrong": ["Uttarayan", "Lohri", "Ugadi"], "why": "Navratri means 'nine nights'." },
-        { "level": 1, "q": "Which city is famous for its dum biryani and haleem?", "a": "Hyderabad", "wrong": ["Lucknow", "Kolkata", "Chennai"], "why": "Hyderabadi biryani dates back to the Nizams." },
-        { "level": 1, "q": "Dosa and idli are everyday foods from which part of India?", "a": "South India", "wrong": ["Northeast India", "Kashmir", "Rajasthan"], "why": "Both are made from a fermented rice and lentil batter." },
-        { "level": 1, "q": "Ravi Shankar was a world-famous player of which instrument?", "a": "Sitar", "wrong": ["Sarod", "Tabla", "Veena"], "why": "He taught George Harrison of the Beatles." },
-        { "level": 1, "q": "Ustad Zakir Hussain was a world-famous player of which instrument?", "a": "Tabla", "wrong": ["Sitar", "Santoor", "Shehnai"], "why": "He won several Grammy Awards." },
-        { "level": 1, "q": "Who wrote India's national anthem, 'Jana Gana Mana'?", "a": "Rabindranath Tagore", "wrong": ["Bankim Chandra Chatterjee", "Sarojini Naidu", "Muhammad Iqbal"], "why": "Tagore also wrote Bangladesh's anthem." },
-        { "level": 1, "q": "Which epic tells of the Pandavas and the war at Kurukshetra?", "a": "Mahabharata", "wrong": ["Ramayana", "Abhijnanashakuntalam", "Panchatantra"], "why": "The Bhagavad Gita is part of it." },
-        { "level": 1, "q": "What is India's national animal?", "a": "Bengal tiger", "wrong": ["Asiatic lion", "Indian elephant", "Indian peacock"], "why": "The peacock is the national bird." },
-        { "level": 1, "q": "What is India's national flower?", "a": "Lotus", "wrong": ["Rose", "Marigold", "Jasmine"], "why": "The lotus is a symbol of purity in Indian art." },
-        { "level": 2, "q": "Which classical dance from Kerala is known for its elaborate green face make-up?", "a": "Kathakali", "wrong": ["Bharatanatyam", "Kathak", "Odissi"], "why": "Green make-up, called pacha, marks noble heroes." },
-        { "level": 2, "q": "Bharatanatyam comes from which state?", "a": "Tamil Nadu", "wrong": ["Kerala", "Andhra Pradesh", "Odisha"], "why": "It grew out of temple dance traditions." },
-        { "level": 2, "q": "Dal baati churma is a traditional dish of which state?", "a": "Rajasthan", "wrong": ["Punjab", "West Bengal", "Kerala"], "why": "Baati are hard wheat rolls baked over fire." },
-        { "level": 2, "q": "Which spice, from a crocus flower, gives Kashmiri dishes a golden colour?", "a": "Saffron", "wrong": ["Turmeric", "Cumin", "Cardamom"], "why": "Pampore in Kashmir is famous for it." },
-        { "level": 2, "q": "The Kumbh Mela rotates between Prayagraj, Haridwar, Ujjain and which other city?", "a": "Nashik", "wrong": ["Varanasi", "Puri", "Ayodhya"], "why": "It is one of the largest gatherings of people on Earth." },
-        { "level": 2, "q": "Ustad Bismillah Khan was a master of which instrument?", "a": "Shehnai", "wrong": ["Flute", "Sarangi", "Sitar"], "why": "He played it at the Red Fort on Independence Day in 1947." },
-        { "level": 2, "q": "Who wrote 'Saare Jahan Se Achha'?", "a": "Muhammad Iqbal", "wrong": ["Rabindranath Tagore", "Faiz Ahmad Faiz", "Mirza Ghalib"], "why": "He wrote it in 1904." },
-        { "level": 3, "q": "The Hornbill Festival is held every December in which state?", "a": "Nagaland", "wrong": ["Mizoram", "Manipur", "Meghalaya"], "why": "It is named after the bird found in Naga folklore." },
-        { "level": 3, "q": "Kuchipudi dance comes from which state?", "a": "Andhra Pradesh", "wrong": ["Karnataka", "Manipur", "Assam"], "why": "It is named after a village in the Krishna district." },
-        { "level": 3, "q": "Which state received a GI tag for its rosogolla in 2017?", "a": "West Bengal", "wrong": ["Odisha", "Bihar", "Assam"], "why": "Odisha received one for its own 'Odisha Rasagola' in 2019." },
-        { "level": 3, "q": "Losar is the new year festival of which community?", "a": "Tibetan Buddhists", "wrong": ["Sikhs", "Parsis", "Jains"], "why": "It is widely celebrated in Ladakh, Sikkim and Bhutan." }
-      ]
+     "level": 2,
+     "q": "Who directed 'Sholay' (1975)?",
+     "a": "Ramesh Sippy",
+     "wrong": [
+      "Yash Chopra",
+      "Raj Kapoor",
+      "Manmohan Desai"
+     ],
+     "why": "Salim–Javed wrote it."
     },
     {
-      "name": "India General Knowledge",
-      "questions": [
-        { "level": 1, "q": "What is the name of India's space agency?", "a": "ISRO", "wrong": ["DRDO", "BARC", "HAL"], "why": "The Indian Space Research Organisation was founded in 1969." },
-        { "level": 1, "q": "In 2023, Chandrayaan-3 landed near which part of the Moon?", "a": "South pole", "wrong": ["North pole", "Equator", "Far side"], "why": "India was the first country to land near the lunar south pole." },
-        { "level": 1, "q": "Who was the first Indian to travel to space, in 1984?", "a": "Rakesh Sharma", "wrong": ["Kalpana Chawla", "Sunita Williams", "Ravish Malhotra"], "why": "He flew on a Soviet Soyuz mission." },
-        { "level": 1, "q": "Which scientist and former President was called the 'Missile Man of India'?", "a": "A. P. J. Abdul Kalam", "wrong": ["Vikram Sarabhai", "Homi Bhabha", "Satish Dhawan"], "why": "He led India's missile programme." },
-        { "level": 1, "q": "What is India's central bank called?", "a": "Reserve Bank of India", "wrong": ["State Bank of India", "NABARD", "SEBI"], "why": "The RBI was set up in 1935." },
-        { "level": 1, "q": "What is India's highest civilian award?", "a": "Bharat Ratna", "wrong": ["Padma Vibhushan", "Param Vir Chakra", "Padma Shri"], "why": "The Param Vir Chakra is the highest military award." },
-        { "level": 1, "q": "Who was the first Indian to win an individual Olympic gold medal?", "a": "Abhinav Bindra", "wrong": ["Neeraj Chopra", "Leander Paes", "Milkha Singh"], "why": "He won the 10 m air rifle in Beijing in 2008." },
-        { "level": 1, "q": "In which event did Neeraj Chopra win Olympic gold at Tokyo 2020?", "a": "Javelin throw", "wrong": ["Shot put", "Long jump", "Discus throw"], "why": "His winning throw was 87.58 m." },
-        { "level": 1, "q": "Which hockey legend won three Olympic gold medals with India?", "a": "Dhyan Chand", "wrong": ["Balbir Singh Sr.", "Dhanraj Pillay", "Roop Singh"], "why": "India's National Sports Day, 29 August, is his birthday." },
-        { "level": 1, "q": "Which Indian chess player became World Champion in 2000?", "a": "Viswanathan Anand", "wrong": ["Pentala Harikrishna", "Dibyendu Barua", "Koneru Humpy"], "why": "He went on to hold the title several times." },
-        { "level": 1, "q": "Which Indian city is called the 'Silicon Valley of India'?", "a": "Bengaluru", "wrong": ["Hyderabad", "Pune", "Chennai"], "why": "It is the hub of India's software industry." },
-        { "level": 1, "q": "Malala Yousafzai, the youngest Nobel Prize winner, is from which country?", "a": "Pakistan", "wrong": ["Afghanistan", "India", "Bangladesh"], "why": "She is from the Swat Valley." },
-        { "level": 2, "q": "In which year was the Mars Orbiter Mission, Mangalyaan, launched?", "a": "2013", "wrong": ["2008", "2016", "2019"], "why": "It reached Mars orbit on its first attempt in 2014." },
-        { "level": 2, "q": "India's first satellite, launched in 1975, was named after which ancient mathematician?", "a": "Aryabhata", "wrong": ["Brahmagupta", "Bhaskara", "Varahamihira"], "why": "It was launched on a Soviet rocket." },
-        { "level": 2, "q": "Which Indian scientist won the 1930 Nobel Prize in Physics for his work on light scattering?", "a": "C. V. Raman", "wrong": ["Homi Bhabha", "Satyendra Nath Bose", "Jagadish Chandra Bose"], "why": "The effect is named after him: the Raman effect." },
-        { "level": 2, "q": "Which self-taught mathematician is linked to 1729, the 'taxicab number'?", "a": "Srinivasa Ramanujan", "wrong": ["Aryabhata", "P. C. Mahalanobis", "Harish-Chandra"], "why": "1729 is the smallest number that is the sum of two cubes in two ways." },
-        { "level": 2, "q": "In 2024, who became the youngest undisputed World Chess Champion?", "a": "D. Gukesh", "wrong": ["R. Praggnanandhaa", "Arjun Erigaisi", "Nihal Sarin"], "why": "He won at 18, beating Ding Liren." },
-        { "level": 2, "q": "What does UPI stand for?", "a": "Unified Payments Interface", "wrong": ["Universal Payments of India", "United Payment Interface", "Unified Public Index"], "why": "It lets people pay instantly from their phones." },
-        { "level": 2, "q": "How many digits does an Aadhaar number have?", "a": "12", "wrong": ["10", "16", "14"], "why": "Aadhaar is India's biometric ID number." },
-        { "level": 2, "q": "India's first passenger train ran in 1853 from Bombay to which town?", "a": "Thane", "wrong": ["Pune", "Surat", "Kalyan"], "why": "It covered about 34 km." },
-        { "level": 2, "q": "Who is called the father of India's Green Revolution?", "a": "M. S. Swaminathan", "wrong": ["Verghese Kurien", "Homi Bhabha", "C. V. Raman"], "why": "High-yield wheat and rice made India self-sufficient in food." },
-        { "level": 2, "q": "Verghese Kurien's 'White Revolution' transformed India's production of what?", "a": "Milk", "wrong": ["Cotton", "Fish", "Wheat"], "why": "He built the Amul dairy cooperative." },
-        { "level": 2, "q": "Which Indian author won the 1997 Booker Prize for 'The God of Small Things'?", "a": "Arundhati Roy", "wrong": ["Kiran Desai", "Jhumpa Lahiri", "Anita Desai"], "why": "It was her first novel." },
-        { "level": 2, "q": "Muhammad Yunus of Bangladesh shared the Nobel Peace Prize with which bank he founded?", "a": "Grameen Bank", "wrong": ["BRAC Bank", "Sonali Bank", "Bangladesh Bank"], "why": "It pioneered microcredit for the poor." },
-        { "level": 3, "q": "In which year was the rupee symbol ₹ adopted?", "a": "2010", "wrong": ["2004", "2014", "1998"], "why": "It was designed by D. Udaya Kumar." },
-        { "level": 3, "q": "How many languages are listed in the Eighth Schedule of the Indian Constitution?", "a": "22", "wrong": ["18", "24", "14"], "why": "The last four were added in 2003." },
-        { "level": 3, "q": "In which city is ISRO's headquarters?", "a": "Bengaluru", "wrong": ["Sriharikota", "Thiruvananthapuram", "Ahmedabad"], "why": "Rockets launch from Sriharikota in Andhra Pradesh." }
-      ]
+     "level": 3,
+     "q": "Who played Anarkali in 'Mughal-e-Azam' (1960)?",
+     "a": "Madhubala",
+     "wrong": [
+      "Meena Kumari",
+      "Nargis",
+      "Waheeda Rehman"
+     ],
+     "why": "Dilip Kumar played Prince Salim."
+    },
+    {
+     "level": 3,
+     "q": "Who played the title role in the Pakistani blockbuster 'The Legend of Maula Jatt' (2022)?",
+     "a": "Fawad Khan",
+     "wrong": [
+      "Humayun Saeed",
+      "Ali Zafar",
+      "Imran Abbas"
+     ],
+     "why": "It became one of the highest-grossing Pakistani films."
+    },
+    {
+     "level": 3,
+     "q": "Raj Kapoor's 'Awaara' (1951) was a huge hit in which country outside India?",
+     "a": "Soviet Union",
+     "wrong": [
+      "Brazil",
+      "Japan",
+      "Egypt"
+     ],
+     "why": "Its song 'Awaara Hoon' was famous across the USSR."
+    },
+    {
+     "level": 1,
+     "q": "Who was the first Prime Minister of India?",
+     "a": "Jawaharlal Nehru",
+     "wrong": [
+      "Sardar Vallabhbhai Patel",
+      "Lal Bahadur Shastri",
+      "Rajendra Prasad"
+     ],
+     "why": "He served from 1947 until 1964."
+    },
+    {
+     "level": 1,
+     "q": "On which date does India celebrate Independence Day?",
+     "a": "15 August",
+     "wrong": [
+      "26 January",
+      "2 October",
+      "14 November"
+     ],
+     "why": "India became independent on 15 August 1947."
+    },
+    {
+     "level": 1,
+     "q": "In which city did the Jallianwala Bagh massacre take place in 1919?",
+     "a": "Amritsar",
+     "wrong": [
+      "Lahore",
+      "Delhi",
+      "Lucknow"
+     ],
+     "why": "British troops fired on an unarmed crowd."
+    },
+    {
+     "level": 1,
+     "q": "Which Mughal emperor built the Taj Mahal?",
+     "a": "Shah Jahan",
+     "wrong": [
+      "Akbar",
+      "Aurangzeb",
+      "Jahangir"
+     ],
+     "why": "He built it in memory of his wife Mumtaz Mahal."
+    },
+    {
+     "level": 1,
+     "q": "Rani Lakshmibai, a leader of the 1857 uprising, was the queen of which kingdom?",
+     "a": "Jhansi",
+     "wrong": [
+      "Gwalior",
+      "Kittur",
+      "Awadh"
+     ],
+     "why": "She died fighting the British in 1858."
+    },
+    {
+     "level": 1,
+     "q": "Which ruler was called the 'Tiger of Mysore'?",
+     "a": "Tipu Sultan",
+     "wrong": [
+      "Hyder Ali",
+      "Shivaji",
+      "Ranjit Singh"
+     ],
+     "why": "He fought four wars against the East India Company."
+    },
+    {
+     "level": 1,
+     "q": "Who founded the Maratha Empire?",
+     "a": "Chhatrapati Shivaji",
+     "wrong": [
+      "Bajirao I",
+      "Sambhaji",
+      "Madhavrao I"
+     ],
+     "why": "He was crowned at Raigad in 1674."
+    },
+    {
+     "level": 1,
+     "q": "Harappa and Mohenjo-daro were cities of which ancient civilisation?",
+     "a": "Indus Valley Civilisation",
+     "wrong": [
+      "Vedic civilisation",
+      "Mesopotamian civilisation",
+      "Maurya Empire"
+     ],
+     "why": "It flourished around 2500 BCE."
+    },
+    {
+     "level": 1,
+     "q": "Who said 'Give me blood, and I will give you freedom'?",
+     "a": "Subhas Chandra Bose",
+     "wrong": [
+      "Bhagat Singh",
+      "Bal Gangadhar Tilak",
+      "Chandra Shekhar Azad"
+     ],
+     "why": "Netaji led the Indian National Army."
+    },
+    {
+     "level": 1,
+     "q": "Who was India's first woman Prime Minister?",
+     "a": "Indira Gandhi",
+     "wrong": [
+      "Sarojini Naidu",
+      "Pratibha Patil",
+      "Sucheta Kripalani"
+     ],
+     "why": "She first took office in 1966."
+    },
+    {
+     "level": 1,
+     "q": "Who is called the 'Iron Man of India' for uniting the princely states?",
+     "a": "Sardar Vallabhbhai Patel",
+     "wrong": [
+      "Jawaharlal Nehru",
+      "Lal Bahadur Shastri",
+      "B. R. Ambedkar"
+     ],
+     "why": "The Statue of Unity in Gujarat honours him."
+    },
+    {
+     "level": 1,
+     "q": "Who is known as Quaid-e-Azam, the founder of Pakistan?",
+     "a": "Muhammad Ali Jinnah",
+     "wrong": [
+      "Liaquat Ali Khan",
+      "Allama Iqbal",
+      "Ayub Khan"
+     ],
+     "why": "Quaid-e-Azam means 'Great Leader'."
+    },
+    {
+     "level": 2,
+     "q": "Gandhi's Salt March of 1930 ended at which coastal village?",
+     "a": "Dandi",
+     "wrong": [
+      "Porbandar",
+      "Sabarmati",
+      "Champaran"
+     ],
+     "why": "He walked about 385 km from Sabarmati Ashram."
+    },
+    {
+     "level": 2,
+     "q": "Babur founded the Mughal Empire after winning which battle in 1526?",
+     "a": "First Battle of Panipat",
+     "wrong": [
+      "Battle of Plassey",
+      "Battle of Haldighati",
+      "Battle of Talikota"
+     ],
+     "why": "He defeated Ibrahim Lodi, the Sultan of Delhi."
+    },
+    {
+     "level": 2,
+     "q": "At the Battle of Plassey in 1757, the East India Company defeated the Nawab of where?",
+     "a": "Bengal",
+     "wrong": [
+      "Awadh",
+      "Mysore",
+      "Hyderabad"
+     ],
+     "why": "Robert Clive defeated Siraj ud-Daulah."
+    },
+    {
+     "level": 2,
+     "q": "Emperor Ashoka turned to Buddhism after which war?",
+     "a": "Kalinga War",
+     "wrong": [
+      "Battle of the Hydaspes",
+      "Third Battle of Panipat",
+      "Battle of Tarain"
+     ],
+     "why": "The bloodshed in Kalinga, in today's Odisha, changed him."
+    },
+    {
+     "level": 2,
+     "q": "Who was Chandragupta Maurya's adviser, credited with writing the Arthashastra?",
+     "a": "Chanakya",
+     "wrong": [
+      "Kalidasa",
+      "Aryabhata",
+      "Panini"
+     ],
+     "why": "He is also known as Kautilya."
+    },
+    {
+     "level": 2,
+     "q": "In which year was the Quit India Movement launched?",
+     "a": "1942",
+     "wrong": [
+      "1930",
+      "1920",
+      "1947"
+     ],
+     "why": "Gandhi gave the call 'Do or Die' in Bombay."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Bangladesh become independent?",
+     "a": "1971",
+     "wrong": [
+      "1947",
+      "1965",
+      "1975"
+     ],
+     "why": "It followed the Bangladesh Liberation War."
+    },
+    {
+     "level": 2,
+     "q": "Hampi, a UNESCO site in Karnataka, was the capital of which empire?",
+     "a": "Vijayanagara Empire",
+     "wrong": [
+      "Chola Empire",
+      "Maurya Empire",
+      "Mughal Empire"
+     ],
+     "why": "It was one of the largest cities in the world around 1500."
+    },
+    {
+     "level": 2,
+     "q": "Who was the first President of India?",
+     "a": "Rajendra Prasad",
+     "wrong": [
+      "S. Radhakrishnan",
+      "Zakir Husain",
+      "V. V. Giri"
+     ],
+     "why": "He served from 1950 to 1962."
+    },
+    {
+     "level": 3,
+     "q": "Maharaja Ranjit Singh's Sikh Empire had its capital at which city?",
+     "a": "Lahore",
+     "wrong": [
+      "Amritsar",
+      "Patiala",
+      "Multan"
+     ],
+     "why": "He took Lahore in 1799."
+    },
+    {
+     "level": 3,
+     "q": "In which city is the Chola-era Brihadeeswarar Temple?",
+     "a": "Thanjavur",
+     "wrong": [
+      "Madurai",
+      "Kanchipuram",
+      "Mahabalipuram"
+     ],
+     "why": "Rajaraja Chola I built it around 1010 CE."
+    },
+    {
+     "level": 3,
+     "q": "Which Mughal emperor started the faith called Din-i-Ilahi?",
+     "a": "Akbar",
+     "wrong": [
+      "Humayun",
+      "Shah Jahan",
+      "Babur"
+     ],
+     "why": "It drew on several religions."
+    },
+    {
+     "level": 2,
+     "q": "Which state, formed in 2014, is India's newest?",
+     "a": "Telangana",
+     "wrong": [
+      "Jharkhand",
+      "Uttarakhand",
+      "Chhattisgarh"
+     ],
+     "why": "It was split from Andhra Pradesh."
+    },
+    {
+     "level": 3,
+     "q": "Which state received a GI tag for its rosogolla in 2017?",
+     "a": "West Bengal",
+     "wrong": [
+      "Odisha",
+      "Bihar",
+      "Assam"
+     ],
+     "why": "Odisha received one for its own 'Odisha Rasagola' in 2019."
+    },
+    {
+     "level": 1,
+     "q": "In 2023, Chandrayaan-3 landed near which part of the Moon?",
+     "a": "South pole",
+     "wrong": [
+      "North pole",
+      "Equator",
+      "Far side"
+     ],
+     "why": "India was the first country to land near the lunar south pole."
+    },
+    {
+     "level": 1,
+     "q": "Who was the first Indian to travel to space, in 1984?",
+     "a": "Rakesh Sharma",
+     "wrong": [
+      "Kalpana Chawla",
+      "Sunita Williams",
+      "Ravish Malhotra"
+     ],
+     "why": "He flew on a Soviet Soyuz mission."
+    },
+    {
+     "level": 2,
+     "q": "India's first satellite, launched in 1975, was named after which ancient mathematician?",
+     "a": "Aryabhata",
+     "wrong": [
+      "Brahmagupta",
+      "Bhaskara",
+      "Varahamihira"
+     ],
+     "why": "It was launched on a Soviet rocket."
+    },
+    {
+     "level": 2,
+     "q": "Which Indian scientist won the 1930 Nobel Prize in Physics for his work on light scattering?",
+     "a": "C. V. Raman",
+     "wrong": [
+      "Homi Bhabha",
+      "Satyendra Nath Bose",
+      "Jagadish Chandra Bose"
+     ],
+     "why": "The effect is named after him: the Raman effect."
+    },
+    {
+     "level": 2,
+     "q": "Which self-taught mathematician is linked to 1729, the 'taxicab number'?",
+     "a": "Srinivasa Ramanujan",
+     "wrong": [
+      "Aryabhata",
+      "P. C. Mahalanobis",
+      "Harish-Chandra"
+     ],
+     "why": "1729 is the smallest number that is the sum of two cubes in two ways."
+    },
+    {
+     "level": 2,
+     "q": "India's first passenger train ran in 1853 from Bombay to which town?",
+     "a": "Thane",
+     "wrong": [
+      "Pune",
+      "Surat",
+      "Kalyan"
+     ],
+     "why": "It covered about 34 km."
+    },
+    {
+     "level": 2,
+     "q": "Who is called the father of India's Green Revolution?",
+     "a": "M. S. Swaminathan",
+     "wrong": [
+      "Verghese Kurien",
+      "Homi Bhabha",
+      "C. V. Raman"
+     ],
+     "why": "High-yield wheat and rice made India self-sufficient in food."
+    },
+    {
+     "level": 2,
+     "q": "Verghese Kurien's 'White Revolution' transformed India's production of what?",
+     "a": "Milk",
+     "wrong": [
+      "Cotton",
+      "Fish",
+      "Wheat"
+     ],
+     "why": "He built the Amul dairy cooperative."
+    },
+    {
+     "level": 2,
+     "q": "Muhammad Yunus of Bangladesh shared the Nobel Peace Prize with which bank he founded?",
+     "a": "Grameen Bank",
+     "wrong": [
+      "BRAC Bank",
+      "Sonali Bank",
+      "Bangladesh Bank"
+     ],
+     "why": "It pioneered microcredit for the poor."
     }
-  ]
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who holds the record for the highest score in an ODI innings, 264?",
+     "a": "Rohit Sharma",
+     "wrong": [
+      "Martin Guptill",
+      "Virender Sehwag",
+      "Chris Gayle"
+     ],
+     "why": "He made 264 against Sri Lanka in Kolkata in 2014."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of India?",
+     "a": "New Delhi",
+     "wrong": [
+      "Mumbai",
+      "Kolkata",
+      "Chennai"
+     ],
+     "why": "New Delhi has been the capital since 1931."
+    },
+    {
+     "level": 1,
+     "q": "Which is the longest river in India?",
+     "a": "Ganga",
+     "wrong": [
+      "Godavari",
+      "Yamuna",
+      "Narmada"
+     ],
+     "why": "It flows about 2,500 km from the Himalayas to the Bay of Bengal."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain on the Nepal–China border is the highest in the world?",
+     "a": "Mount Everest",
+     "wrong": [
+      "K2",
+      "Kangchenjunga",
+      "Lhotse"
+     ],
+     "why": "It is 8,849 m tall."
+    },
+    {
+     "level": 1,
+     "q": "Which is India's largest state by area?",
+     "a": "Rajasthan",
+     "wrong": [
+      "Madhya Pradesh",
+      "Maharashtra",
+      "Uttar Pradesh"
+     ],
+     "why": "It covers about a tenth of India."
+    },
+    {
+     "level": 1,
+     "q": "Which is India's most populous state?",
+     "a": "Uttar Pradesh",
+     "wrong": [
+      "Maharashtra",
+      "Bihar",
+      "West Bengal"
+     ],
+     "why": "It has over 200 million people."
+    },
+    {
+     "level": 1,
+     "q": "Which desert lies mostly in Rajasthan?",
+     "a": "Thar Desert",
+     "wrong": [
+      "Gobi Desert",
+      "Karakum Desert",
+      "Dasht-e-Kavir"
+     ],
+     "why": "It is also called the Great Indian Desert."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of Nepal?",
+     "a": "Kathmandu",
+     "wrong": [
+      "Pokhara",
+      "Lalitpur",
+      "Thimphu"
+     ],
+     "why": "It lies in the Kathmandu Valley."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of Bangladesh?",
+     "a": "Dhaka",
+     "wrong": [
+      "Chittagong",
+      "Khulna",
+      "Sylhet"
+     ],
+     "why": "It stands on the Buriganga River."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of Pakistan?",
+     "a": "Islamabad",
+     "wrong": [
+      "Karachi",
+      "Lahore",
+      "Rawalpindi"
+     ],
+     "why": "It replaced Karachi as the capital in the 1960s."
+    },
+    {
+     "level": 1,
+     "q": "Malé is the capital of which island nation?",
+     "a": "Maldives",
+     "wrong": [
+      "Sri Lanka",
+      "Mauritius",
+      "Seychelles"
+     ],
+     "why": "The Maldives is made up of about 1,200 islands."
+    },
+    {
+     "level": 1,
+     "q": "Which Indian state calls itself 'God's Own Country'?",
+     "a": "Kerala",
+     "wrong": [
+      "Goa",
+      "Karnataka",
+      "Tamil Nadu"
+     ],
+     "why": "It is the state's tourism slogan."
+    },
+    {
+     "level": 1,
+     "q": "Which city is known as the 'Pink City'?",
+     "a": "Jaipur",
+     "wrong": [
+      "Udaipur",
+      "Jodhpur",
+      "Bikaner"
+     ],
+     "why": "It was painted pink to welcome the Prince of Wales in 1876."
+    },
+    {
+     "level": 1,
+     "q": "Dal Lake is in which city?",
+     "a": "Srinagar",
+     "wrong": [
+      "Shimla",
+      "Leh",
+      "Nainital"
+     ],
+     "why": "It is famous for its houseboats and shikaras."
+    },
+    {
+     "level": 2,
+     "q": "Which river, India's second longest, is called the 'Dakshin Ganga'?",
+     "a": "Godavari",
+     "wrong": [
+      "Krishna",
+      "Kaveri",
+      "Narmada"
+     ],
+     "why": "Dakshin Ganga means 'Ganga of the South'."
+    },
+    {
+     "level": 2,
+     "q": "Which Indian state has the longest coastline?",
+     "a": "Gujarat",
+     "wrong": [
+      "Andhra Pradesh",
+      "Tamil Nadu",
+      "Maharashtra"
+     ],
+     "why": "Its coast is about 1,600 km long."
+    },
+    {
+     "level": 2,
+     "q": "What is the capital of Bhutan?",
+     "a": "Thimphu",
+     "wrong": [
+      "Paro",
+      "Punakha",
+      "Gangtok"
+     ],
+     "why": "Bhutan's only international airport is in Paro, not the capital."
+    },
+    {
+     "level": 2,
+     "q": "Which village in Meghalaya is often called the wettest place on Earth?",
+     "a": "Mawsynram",
+     "wrong": [
+      "Cherrapunji",
+      "Shillong",
+      "Tawang"
+     ],
+     "why": "It gets close to 12,000 mm of rain a year."
+    },
+    {
+     "level": 2,
+     "q": "Majuli, one of the world's largest river islands, is in which river?",
+     "a": "Brahmaputra",
+     "wrong": [
+      "Ganga",
+      "Godavari",
+      "Indus"
+     ],
+     "why": "It is in Assam."
+    },
+    {
+     "level": 2,
+     "q": "Which strait separates India and Sri Lanka?",
+     "a": "Palk Strait",
+     "wrong": [
+      "Strait of Malacca",
+      "Strait of Hormuz",
+      "Bab-el-Mandeb"
+     ],
+     "why": "It is named after Robert Palk, a governor of Madras."
+    },
+    {
+     "level": 2,
+     "q": "At Kanyakumari, the Arabian Sea and the Bay of Bengal meet which other body of water?",
+     "a": "Indian Ocean",
+     "wrong": [
+      "Red Sea",
+      "Andaman Sea",
+      "Persian Gulf"
+     ],
+     "why": "It is the southern tip of mainland India."
+    },
+    {
+     "level": 3,
+     "q": "Which city is Sri Lanka's official legislative capital?",
+     "a": "Sri Jayawardenepura Kotte",
+     "wrong": [
+      "Colombo",
+      "Kandy",
+      "Galle"
+     ],
+     "why": "Parliament sits there; Colombo is the commercial capital."
+    },
+    {
+     "level": 3,
+     "q": "Chilika, Asia's largest brackish-water lagoon, is in which state?",
+     "a": "Odisha",
+     "wrong": [
+      "Andhra Pradesh",
+      "Kerala",
+      "West Bengal"
+     ],
+     "why": "It is known for its Irrawaddy dolphins and migratory birds."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain pass links Srinagar and Leh by road?",
+     "a": "Zoji La",
+     "wrong": [
+      "Khardung La",
+      "Nathu La",
+      "Rohtang Pass"
+     ],
+     "why": "It is on the Srinagar–Leh highway, and the Zojila tunnel is being built under it."
+    },
+    {
+     "level": 1,
+     "q": "Pongal is a harvest festival celebrated mainly in which state?",
+     "a": "Tamil Nadu",
+     "wrong": [
+      "Punjab",
+      "Assam",
+      "Gujarat"
+     ],
+     "why": "Pongal is also the sweet rice dish cooked for it."
+    },
+    {
+     "level": 1,
+     "q": "Bihu is the main festival of which state?",
+     "a": "Assam",
+     "wrong": [
+      "Bihar",
+      "Odisha",
+      "Sikkim"
+     ],
+     "why": "Rongali Bihu marks the Assamese new year."
+    },
+    {
+     "level": 1,
+     "q": "Durga Puja is the biggest festival of which city?",
+     "a": "Kolkata",
+     "wrong": [
+      "Mumbai",
+      "Chennai",
+      "Ahmedabad"
+     ],
+     "why": "UNESCO lists Durga Puja in Kolkata as intangible heritage."
+    },
+    {
+     "level": 1,
+     "q": "Which city is famous for its dum biryani and haleem?",
+     "a": "Hyderabad",
+     "wrong": [
+      "Lucknow",
+      "Kolkata",
+      "Chennai"
+     ],
+     "why": "Hyderabadi biryani dates back to the Nizams."
+    },
+    {
+     "level": 2,
+     "q": "Bharatanatyam comes from which state?",
+     "a": "Tamil Nadu",
+     "wrong": [
+      "Kerala",
+      "Andhra Pradesh",
+      "Odisha"
+     ],
+     "why": "It grew out of temple dance traditions."
+    },
+    {
+     "level": 2,
+     "q": "The Kumbh Mela rotates between Prayagraj, Haridwar, Ujjain and which other city?",
+     "a": "Nashik",
+     "wrong": [
+      "Varanasi",
+      "Puri",
+      "Ayodhya"
+     ],
+     "why": "It is one of the largest gatherings of people on Earth."
+    },
+    {
+     "level": 3,
+     "q": "Kuchipudi dance comes from which state?",
+     "a": "Andhra Pradesh",
+     "wrong": [
+      "Karnataka",
+      "Manipur",
+      "Assam"
+     ],
+     "why": "It is named after a village in the Krishna district."
+    },
+    {
+     "level": 1,
+     "q": "What is India's highest civilian award?",
+     "a": "Bharat Ratna",
+     "wrong": [
+      "Padma Vibhushan",
+      "Param Vir Chakra",
+      "Padma Shri"
+     ],
+     "why": "The Param Vir Chakra is the highest military award."
+    },
+    {
+     "level": 1,
+     "q": "Which Indian city is called the 'Silicon Valley of India'?",
+     "a": "Bengaluru",
+     "wrong": [
+      "Hyderabad",
+      "Pune",
+      "Chennai"
+     ],
+     "why": "It is the hub of India's software industry."
+    },
+    {
+     "level": 3,
+     "q": "In which city is ISRO's headquarters?",
+     "a": "Bengaluru",
+     "wrong": [
+      "Sriharikota",
+      "Thiruvananthapuram",
+      "Ahmedabad"
+     ],
+     "why": "Rockets launch from Sriharikota in Andhra Pradesh."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who captained India to its first Cricket World Cup win in 1983?",
+     "a": "Kapil Dev",
+     "wrong": [
+      "Sunil Gavaskar",
+      "Mohinder Amarnath",
+      "Ravi Shastri"
+     ],
+     "why": "Kapil Dev's team beat the West Indies in the final at Lord's."
+    },
+    {
+     "level": 1,
+     "q": "Who led India to victory in the first T20 World Cup in 2007?",
+     "a": "MS Dhoni",
+     "wrong": [
+      "Rahul Dravid",
+      "Sourav Ganguly",
+      "Virat Kohli"
+     ],
+     "why": "India beat Pakistan in the final in Johannesburg."
+    },
+    {
+     "level": 1,
+     "q": "In which year did India win the ODI World Cup at home, with the final in Mumbai?",
+     "a": "2011",
+     "wrong": [
+      "2007",
+      "2015",
+      "2003"
+     ],
+     "why": "Dhoni finished the final against Sri Lanka with a six at the Wankhede Stadium."
+    },
+    {
+     "level": 1,
+     "q": "Which Indian batter hit six sixes in one over at the 2007 T20 World Cup?",
+     "a": "Yuvraj Singh",
+     "wrong": [
+      "Yusuf Pathan",
+      "Rohit Sharma",
+      "Gautam Gambhir"
+     ],
+     "why": "He hit England's Stuart Broad for six sixes in Durban."
+    },
+    {
+     "level": 1,
+     "q": "Which ground in Ahmedabad is the largest cricket stadium in the world?",
+     "a": "Narendra Modi Stadium",
+     "wrong": [
+      "Eden Gardens",
+      "Wankhede Stadium",
+      "M. Chinnaswamy Stadium"
+     ],
+     "why": "It seats about 132,000 people."
+    },
+    {
+     "level": 1,
+     "q": "Who captained Pakistan to the 1992 World Cup title?",
+     "a": "Imran Khan",
+     "wrong": [
+      "Wasim Akram",
+      "Javed Miandad",
+      "Inzamam-ul-Haq"
+     ],
+     "why": "Pakistan beat England in the final in Melbourne."
+    },
+    {
+     "level": 1,
+     "q": "Which Sri Lankan spinner took 800 Test wickets, the most ever?",
+     "a": "Muttiah Muralitharan",
+     "wrong": [
+      "Rangana Herath",
+      "Ajantha Mendis",
+      "Chaminda Vaas"
+     ],
+     "why": "He took his 800th wicket with his last ball in Tests."
+    },
+    {
+     "level": 2,
+     "q": "Which Indian bowler took all 10 wickets in a Test innings against Pakistan in 1999?",
+     "a": "Anil Kumble",
+     "wrong": [
+      "Harbhajan Singh",
+      "Javagal Srinath",
+      "Zaheer Khan"
+     ],
+     "why": "Kumble took 10 for 74 in Delhi."
+    },
+    {
+     "level": 2,
+     "q": "In which stadium did India win the 2011 World Cup final?",
+     "a": "Wankhede Stadium",
+     "wrong": [
+      "Eden Gardens",
+      "Feroz Shah Kotla",
+      "M. A. Chidambaram Stadium"
+     ],
+     "why": "The Wankhede is in Mumbai."
+    },
+    {
+     "level": 2,
+     "q": "Which team won the 1996 World Cup, co-hosted by India, Pakistan and Sri Lanka?",
+     "a": "Sri Lanka",
+     "wrong": [
+      "Australia",
+      "India",
+      "Pakistan"
+     ],
+     "why": "Sri Lanka beat Australia in the final in Lahore."
+    },
+    {
+     "level": 2,
+     "q": "Which Indian batter scored two triple centuries in Test cricket?",
+     "a": "Virender Sehwag",
+     "wrong": [
+      "Karun Nair",
+      "Rahul Dravid",
+      "VVS Laxman"
+     ],
+     "why": "309 against Pakistan in 2004 and 319 against South Africa in 2008."
+    },
+    {
+     "level": 2,
+     "q": "What is India's top domestic first-class cricket competition called?",
+     "a": "Ranji Trophy",
+     "wrong": [
+      "Vijay Hazare Trophy",
+      "Syed Mushtaq Ali Trophy",
+      "Deodhar Trophy"
+     ],
+     "why": "It is named after Ranjitsinhji, who played for England."
+    },
+    {
+     "level": 2,
+     "q": "India won the 2024 T20 World Cup by beating which team in the final?",
+     "a": "South Africa",
+     "wrong": [
+      "Australia",
+      "England",
+      "Pakistan"
+     ],
+     "why": "India won by 7 runs in Barbados."
+    },
+    {
+     "level": 2,
+     "q": "Which team beat India in the 2023 ODI World Cup final in Ahmedabad?",
+     "a": "Australia",
+     "wrong": [
+      "New Zealand",
+      "England",
+      "South Africa"
+     ],
+     "why": "It was Australia's sixth ODI World Cup title."
+    },
+    {
+     "level": 3,
+     "q": "Who scored the first double century in ODI cricket?",
+     "a": "Sachin Tendulkar",
+     "wrong": [
+      "Virender Sehwag",
+      "Rohit Sharma",
+      "Saeed Anwar"
+     ],
+     "why": "He made 200 not out against South Africa in 2010."
+    },
+    {
+     "level": 3,
+     "q": "Who took the first hat-trick in World Cup history, in 1987?",
+     "a": "Chetan Sharma",
+     "wrong": [
+      "Kapil Dev",
+      "Saqlain Mushtaq",
+      "Chaminda Vaas"
+     ],
+     "why": "He took it against New Zealand in Nagpur."
+    },
+    {
+     "level": 1,
+     "q": "Which Aamir Khan film about a cricket match against British officers was nominated for an Oscar?",
+     "a": "Lagaan",
+     "wrong": [
+      "Dangal",
+      "3 Idiots",
+      "Taare Zameen Par"
+     ],
+     "why": "It was nominated for Best Foreign Language Film in 2002."
+    },
+    {
+     "level": 1,
+     "q": "What sport is the film 'Dangal' about?",
+     "a": "Wrestling",
+     "wrong": [
+      "Boxing",
+      "Kabaddi",
+      "Hockey"
+     ],
+     "why": "It follows Mahavir Singh Phogat and his wrestler daughters."
+    },
+    {
+     "level": 1,
+     "q": "Who was the first Indian to win an individual Olympic gold medal?",
+     "a": "Abhinav Bindra",
+     "wrong": [
+      "Neeraj Chopra",
+      "Leander Paes",
+      "Milkha Singh"
+     ],
+     "why": "He won the 10 m air rifle in Beijing in 2008."
+    },
+    {
+     "level": 1,
+     "q": "In which event did Neeraj Chopra win Olympic gold at Tokyo 2020?",
+     "a": "Javelin throw",
+     "wrong": [
+      "Shot put",
+      "Long jump",
+      "Discus throw"
+     ],
+     "why": "His winning throw was 87.58 m."
+    },
+    {
+     "level": 1,
+     "q": "Which hockey legend won three Olympic gold medals with India?",
+     "a": "Dhyan Chand",
+     "wrong": [
+      "Balbir Singh Sr.",
+      "Dhanraj Pillay",
+      "Roop Singh"
+     ],
+     "why": "India's National Sports Day, 29 August, is his birthday."
+    },
+    {
+     "level": 1,
+     "q": "Which Indian chess player became World Champion in 2000?",
+     "a": "Viswanathan Anand",
+     "wrong": [
+      "Pentala Harikrishna",
+      "Dibyendu Barua",
+      "Koneru Humpy"
+     ],
+     "why": "He went on to hold the title several times."
+    },
+    {
+     "level": 2,
+     "q": "In 2024, who became the youngest undisputed World Chess Champion?",
+     "a": "D. Gukesh",
+     "wrong": [
+      "R. Praggnanandhaa",
+      "Arjun Erigaisi",
+      "Nihal Sarin"
+     ],
+     "why": "He won at 18, beating Ding Liren."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Ravi Shankar was a world-famous player of which instrument?",
+     "a": "Sitar",
+     "wrong": [
+      "Sarod",
+      "Tabla",
+      "Veena"
+     ],
+     "why": "He taught George Harrison of the Beatles."
+    },
+    {
+     "level": 1,
+     "q": "Ustad Zakir Hussain was a world-famous player of which instrument?",
+     "a": "Tabla",
+     "wrong": [
+      "Sitar",
+      "Santoor",
+      "Shehnai"
+     ],
+     "why": "He won several Grammy Awards."
+    },
+    {
+     "level": 1,
+     "q": "Who wrote India's national anthem, 'Jana Gana Mana'?",
+     "a": "Rabindranath Tagore",
+     "wrong": [
+      "Bankim Chandra Chatterjee",
+      "Sarojini Naidu",
+      "Muhammad Iqbal"
+     ],
+     "why": "Tagore also wrote Bangladesh's anthem."
+    },
+    {
+     "level": 2,
+     "q": "Ustad Bismillah Khan was a master of which instrument?",
+     "a": "Shehnai",
+     "wrong": [
+      "Flute",
+      "Sarangi",
+      "Sitar"
+     ],
+     "why": "He played it at the Red Fort on Independence Day in 1947."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Bollywood star co-owns the Kolkata Knight Riders?",
+     "a": "Shah Rukh Khan",
+     "wrong": [
+      "Salman Khan",
+      "Aamir Khan",
+      "Akshay Kumar"
+     ],
+     "why": "He co-owns KKR with Juhi Chawla's family."
+    },
+    {
+     "level": 1,
+     "q": "The Oscar-winning song 'Naatu Naatu' is from which film?",
+     "a": "RRR",
+     "wrong": [
+      "Baahubali 2",
+      "Pushpa",
+      "KGF Chapter 2"
+     ],
+     "why": "It won Best Original Song in 2023."
+    },
+    {
+     "level": 1,
+     "q": "Gabbar Singh is the villain of which classic film?",
+     "a": "Sholay",
+     "wrong": [
+      "Deewaar",
+      "Don",
+      "Mughal-e-Azam"
+     ],
+     "why": "Amjad Khan played him in the 1975 film."
+    },
+    {
+     "level": 1,
+     "q": "Which actor is popularly called 'Big B'?",
+     "a": "Amitabh Bachchan",
+     "wrong": [
+      "Dharmendra",
+      "Rajesh Khanna",
+      "Shah Rukh Khan"
+     ],
+     "why": "He is also known as the 'Shahenshah' of Bollywood."
+    },
+    {
+     "level": 1,
+     "q": "Which film made the phrase 'All is well' famous?",
+     "a": "3 Idiots",
+     "wrong": [
+      "PK",
+      "Munna Bhai M.B.B.S.",
+      "Chhichhore"
+     ],
+     "why": "Rancho, played by Aamir Khan, says it to calm his heart."
+    },
+    {
+     "level": 1,
+     "q": "Who composed the music for 'Slumdog Millionaire' and won two Oscars for it?",
+     "a": "A. R. Rahman",
+     "wrong": [
+      "Ilaiyaraaja",
+      "Pritam",
+      "Shankar Mahadevan"
+     ],
+     "why": "He won Best Original Score and Best Original Song for 'Jai Ho'."
+    },
+    {
+     "level": 1,
+     "q": "In which city is the Hindi film industry, Bollywood, based?",
+     "a": "Mumbai",
+     "wrong": [
+      "Delhi",
+      "Hyderabad",
+      "Kolkata"
+     ],
+     "why": "The name comes from Bombay, Mumbai's old name, and Hollywood."
+    },
+    {
+     "level": 2,
+     "q": "Which Bengali director made the 'Apu Trilogy'?",
+     "a": "Satyajit Ray",
+     "wrong": [
+      "Ritwik Ghatak",
+      "Mrinal Sen",
+      "Shyam Benegal"
+     ],
+     "why": "It began with 'Pather Panchali' in 1955."
+    },
+    {
+     "level": 2,
+     "q": "India's highest award in cinema is named after which filmmaker?",
+     "a": "Dadasaheb Phalke",
+     "wrong": [
+      "Satyajit Ray",
+      "Raj Kapoor",
+      "Guru Dutt"
+     ],
+     "why": "Phalke made India's first feature film, 'Raja Harishchandra', in 1913."
+    },
+    {
+     "level": 2,
+     "q": "Which singer, given the Bharat Ratna in 2001, sang film songs for over seven decades?",
+     "a": "Lata Mangeshkar",
+     "wrong": [
+      "Asha Bhosle",
+      "Kishore Kumar",
+      "Mohammed Rafi"
+     ],
+     "why": "She was known as the 'Queen of Melody'."
+    },
+    {
+     "level": 2,
+     "q": "In which film franchise does Yash play Rocky?",
+     "a": "KGF",
+     "wrong": [
+      "Kantara",
+      "Pushpa",
+      "Salaar"
+     ],
+     "why": "KGF stands for the Kolar Gold Fields."
+    },
+    {
+     "level": 2,
+     "q": "'Kuch Kuch Hota Hai' (1998) was the first film directed by whom?",
+     "a": "Karan Johar",
+     "wrong": [
+      "Aditya Chopra",
+      "Farah Khan",
+      "Sanjay Leela Bhansali"
+     ],
+     "why": "Aditya Chopra's debut was 'Dilwale Dulhania Le Jayenge'."
+    },
+    {
+     "level": 2,
+     "q": "Which Sanjay Leela Bhansali film is about the queen of Chittor?",
+     "a": "Padmaavat",
+     "wrong": [
+      "Bajirao Mastani",
+      "Devdas",
+      "Gangubai Kathiawadi"
+     ],
+     "why": "Deepika Padukone plays Rani Padmavati."
+    },
+    {
+     "level": 3,
+     "q": "'Mother India' (1957) was India's first film nominated for which Oscar?",
+     "a": "Best Foreign Language Film",
+     "wrong": [
+      "Best Picture",
+      "Best Actress",
+      "Best Original Score"
+     ],
+     "why": "It lost by a single vote, the story goes."
+    },
+    {
+     "level": 3,
+     "q": "Which singer starred in the comedy 'Chalti Ka Naam Gaadi' with his brothers?",
+     "a": "Kishore Kumar",
+     "wrong": [
+      "Mukesh",
+      "Manna Dey",
+      "Mohammed Rafi"
+     ],
+     "why": "His brothers Ashok Kumar and Anoop Kumar also starred."
+    },
+    {
+     "level": 3,
+     "q": "In which year did 'The Elephant Whisperers' win the Oscar for Best Documentary Short?",
+     "a": "2023",
+     "wrong": [
+      "2022",
+      "2021",
+      "2019"
+     ],
+     "why": "It is set in Tamil Nadu's Mudumalai reserve."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which epic tells of the Pandavas and the war at Kurukshetra?",
+     "a": "Mahabharata",
+     "wrong": [
+      "Ramayana",
+      "Abhijnanashakuntalam",
+      "Panchatantra"
+     ],
+     "why": "The Bhagavad Gita is part of it."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote 'Saare Jahan Se Achha'?",
+     "a": "Muhammad Iqbal",
+     "wrong": [
+      "Rabindranath Tagore",
+      "Faiz Ahmad Faiz",
+      "Mirza Ghalib"
+     ],
+     "why": "He wrote it in 1904."
+    },
+    {
+     "level": 2,
+     "q": "Which Indian author won the 1997 Booker Prize for 'The God of Small Things'?",
+     "a": "Arundhati Roy",
+     "wrong": [
+      "Kiran Desai",
+      "Jhumpa Lahiri",
+      "Anita Desai"
+     ],
+     "why": "It was her first novel."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did the Constitution of India come into force?",
+     "a": "1950",
+     "wrong": [
+      "1947",
+      "1949",
+      "1952"
+     ],
+     "why": "It took effect on 26 January 1950, now Republic Day."
+    },
+    {
+     "level": 1,
+     "q": "Which scientist and former President was called the 'Missile Man of India'?",
+     "a": "A. P. J. Abdul Kalam",
+     "wrong": [
+      "Vikram Sarabhai",
+      "Homi Bhabha",
+      "Satish Dhawan"
+     ],
+     "why": "He led India's missile programme."
+    },
+    {
+     "level": 3,
+     "q": "How many languages are listed in the Eighth Schedule of the Indian Constitution?",
+     "a": "22",
+     "wrong": [
+      "18",
+      "24",
+      "14"
+     ],
+     "why": "The last four were added in 2003."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who is known as the chief architect of the Indian Constitution?",
+     "a": "B. R. Ambedkar",
+     "wrong": [
+      "Rajendra Prasad",
+      "Sardar Vallabhbhai Patel",
+      "Jawaharlal Nehru"
+     ],
+     "why": "He chaired the Drafting Committee."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 2,
+     "q": "The Sundarbans, home of the Bengal tiger, is the world's largest what?",
+     "a": "Mangrove forest",
+     "wrong": [
+      "Rainforest",
+      "River island",
+      "Coral reef"
+     ],
+     "why": "It spans India and Bangladesh."
+    },
+    {
+     "level": 1,
+     "q": "Which Kerala festival is famous for its sadya feast and snake boat races?",
+     "a": "Onam",
+     "wrong": [
+      "Pongal",
+      "Vishu",
+      "Bihu"
+     ],
+     "why": "It celebrates the return of King Mahabali."
+    },
+    {
+     "level": 1,
+     "q": "What is India's national animal?",
+     "a": "Bengal tiger",
+     "wrong": [
+      "Asiatic lion",
+      "Indian elephant",
+      "Indian peacock"
+     ],
+     "why": "The peacock is the national bird."
+    },
+    {
+     "level": 3,
+     "q": "The Hornbill Festival is held every December in which state?",
+     "a": "Nagaland",
+     "wrong": [
+      "Mizoram",
+      "Manipur",
+      "Meghalaya"
+     ],
+     "why": "It is named after the bird found in Naga folklore."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Indian batter is nicknamed 'The Wall'?",
+     "a": "Rahul Dravid",
+     "wrong": [
+      "VVS Laxman",
+      "Cheteshwar Pujara",
+      "Sunil Gavaskar"
+     ],
+     "why": "Dravid was famous for his solid defence."
+    },
+    {
+     "level": 1,
+     "q": "Which IPL team's fans are known as the 'Yellow Army'?",
+     "a": "Chennai Super Kings",
+     "wrong": [
+      "Mumbai Indians",
+      "Kolkata Knight Riders",
+      "Sunrisers Hyderabad"
+     ],
+     "why": "CSK play in yellow."
+    },
+    {
+     "level": 1,
+     "q": "In which year was the first IPL season played?",
+     "a": "2008",
+     "wrong": [
+      "2007",
+      "2009",
+      "2010"
+     ],
+     "why": "The Indian Premier League began in April 2008."
+    },
+    {
+     "level": 2,
+     "q": "How many international centuries did Sachin Tendulkar score?",
+     "a": "100",
+     "wrong": [
+      "75",
+      "89",
+      "120"
+     ],
+     "why": "51 in Tests and 49 in ODIs."
+    },
+    {
+     "level": 2,
+     "q": "Which Bangladeshi all-rounder was ranked the world's number one ODI all-rounder for years?",
+     "a": "Shakib Al Hasan",
+     "wrong": [
+      "Mushfiqur Rahim",
+      "Tamim Iqbal",
+      "Mashrafe Mortaza"
+     ],
+     "why": "He bats left-handed and bowls left-arm spin."
+    },
+    {
+     "level": 3,
+     "q": "Who was the first batter to score 10,000 Test runs?",
+     "a": "Sunil Gavaskar",
+     "wrong": [
+      "Allan Border",
+      "Sachin Tendulkar",
+      "Geoffrey Boycott"
+     ],
+     "why": "Gavaskar reached it in 1987."
+    },
+    {
+     "level": 1,
+     "q": "Who directed 'Baahubali' and 'RRR'?",
+     "a": "S. S. Rajamouli",
+     "wrong": [
+      "Mani Ratnam",
+      "Shankar",
+      "Prashanth Neel"
+     ],
+     "why": "Rajamouli works mainly in Telugu cinema."
+    },
+    {
+     "level": 1,
+     "q": "Which Tamil superstar is called 'Thalaivar' by his fans?",
+     "a": "Rajinikanth",
+     "wrong": [
+      "Kamal Haasan",
+      "Vijay",
+      "Ajith Kumar"
+     ],
+     "why": "Thalaivar means 'leader'."
+    },
+    {
+     "level": 1,
+     "q": "Who plays Pushpa Raj in 'Pushpa: The Rise'?",
+     "a": "Allu Arjun",
+     "wrong": [
+      "Ram Charan",
+      "Mahesh Babu",
+      "Prabhas"
+     ],
+     "why": "He won the National Award for Best Actor for the role."
+    },
+    {
+     "level": 3,
+     "q": "Through how many Indian states does the Tropic of Cancer pass?",
+     "a": "8",
+     "wrong": [
+      "6",
+      "10",
+      "5"
+     ],
+     "why": "From Gujarat in the west to Mizoram in the east."
+    },
+    {
+     "level": 1,
+     "q": "Diwali is known as the festival of what?",
+     "a": "Lights",
+     "wrong": [
+      "Colours",
+      "Harvest",
+      "Kites"
+     ],
+     "why": "Homes are lit with diyas, small oil lamps."
+    },
+    {
+     "level": 1,
+     "q": "Which festival is celebrated by throwing coloured powder?",
+     "a": "Holi",
+     "wrong": [
+      "Diwali",
+      "Eid al-Fitr",
+      "Lohri"
+     ],
+     "why": "It marks the arrival of spring."
+    },
+    {
+     "level": 1,
+     "q": "During which festival do people dance garba for nine nights?",
+     "a": "Navratri",
+     "wrong": [
+      "Uttarayan",
+      "Lohri",
+      "Ugadi"
+     ],
+     "why": "Navratri means 'nine nights'."
+    },
+    {
+     "level": 1,
+     "q": "Dosa and idli are everyday foods from which part of India?",
+     "a": "South India",
+     "wrong": [
+      "Northeast India",
+      "Kashmir",
+      "Rajasthan"
+     ],
+     "why": "Both are made from a fermented rice and lentil batter."
+    },
+    {
+     "level": 1,
+     "q": "What is India's national flower?",
+     "a": "Lotus",
+     "wrong": [
+      "Rose",
+      "Marigold",
+      "Jasmine"
+     ],
+     "why": "The lotus is a symbol of purity in Indian art."
+    },
+    {
+     "level": 2,
+     "q": "Which classical dance from Kerala is known for its elaborate green face make-up?",
+     "a": "Kathakali",
+     "wrong": [
+      "Bharatanatyam",
+      "Kathak",
+      "Odissi"
+     ],
+     "why": "Green make-up, called pacha, marks noble heroes."
+    },
+    {
+     "level": 2,
+     "q": "Dal baati churma is a traditional dish of which state?",
+     "a": "Rajasthan",
+     "wrong": [
+      "Punjab",
+      "West Bengal",
+      "Kerala"
+     ],
+     "why": "Baati are hard wheat rolls baked over fire."
+    },
+    {
+     "level": 2,
+     "q": "Which spice, from a crocus flower, gives Kashmiri dishes a golden colour?",
+     "a": "Saffron",
+     "wrong": [
+      "Turmeric",
+      "Cumin",
+      "Cardamom"
+     ],
+     "why": "Pampore in Kashmir is famous for it."
+    },
+    {
+     "level": 3,
+     "q": "Losar is the new year festival of which community?",
+     "a": "Tibetan Buddhists",
+     "wrong": [
+      "Sikhs",
+      "Parsis",
+      "Jains"
+     ],
+     "why": "It is widely celebrated in Ladakh, Sikkim and Bhutan."
+    },
+    {
+     "level": 1,
+     "q": "What is the name of India's space agency?",
+     "a": "ISRO",
+     "wrong": [
+      "DRDO",
+      "BARC",
+      "HAL"
+     ],
+     "why": "The Indian Space Research Organisation was founded in 1969."
+    },
+    {
+     "level": 1,
+     "q": "What is India's central bank called?",
+     "a": "Reserve Bank of India",
+     "wrong": [
+      "State Bank of India",
+      "NABARD",
+      "SEBI"
+     ],
+     "why": "The RBI was set up in 1935."
+    },
+    {
+     "level": 1,
+     "q": "Malala Yousafzai, the youngest Nobel Prize winner, is from which country?",
+     "a": "Pakistan",
+     "wrong": [
+      "Afghanistan",
+      "India",
+      "Bangladesh"
+     ],
+     "why": "She is from the Swat Valley."
+    },
+    {
+     "level": 2,
+     "q": "In which year was the Mars Orbiter Mission, Mangalyaan, launched?",
+     "a": "2013",
+     "wrong": [
+      "2008",
+      "2016",
+      "2019"
+     ],
+     "why": "It reached Mars orbit on its first attempt in 2014."
+    },
+    {
+     "level": 2,
+     "q": "What does UPI stand for?",
+     "a": "Unified Payments Interface",
+     "wrong": [
+      "Universal Payments of India",
+      "United Payment Interface",
+      "Unified Public Index"
+     ],
+     "why": "It lets people pay instantly from their phones."
+    },
+    {
+     "level": 2,
+     "q": "How many digits does an Aadhaar number have?",
+     "a": "12",
+     "wrong": [
+      "10",
+      "16",
+      "14"
+     ],
+     "why": "Aadhaar is India's biometric ID number."
+    },
+    {
+     "level": 3,
+     "q": "In which year was the rupee symbol ₹ adopted?",
+     "a": "2010",
+     "wrong": [
+      "2004",
+      "2014",
+      "1998"
+     ],
+     "why": "It was designed by D. Udaya Kumar."
+    }
+   ]
+  }
+ ]
 }

@@ -3,7 +3,8 @@
  "country": "PH",
  "topics": [
   {
-   "name": "Philippines History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -150,17 +151,6 @@
     },
     {
      "level": 3,
-     "q": "Which José Rizal novel was published in 1887?",
-     "a": "Noli Me Tángere",
-     "wrong": [
-      "El Filibusterismo",
-      "Florante at Laura",
-      "Ibong Adarna"
-     ],
-     "why": "El Filibusterismo followed in 1891."
-    },
-    {
-     "level": 3,
      "q": "Who is called the 'Brains of the Revolution'?",
      "a": "Apolinario Mabini",
      "wrong": [
@@ -180,11 +170,56 @@
       "Carlos P. Garcia"
      ],
      "why": "The Ramon Magsaysay Award is named after him."
+    },
+    {
+     "level": 1,
+     "q": "Which Spanish king are the Philippines named after?",
+     "a": "Philip II",
+     "wrong": [
+      "Charles V",
+      "Ferdinand II",
+      "Philip V"
+     ],
+     "why": "The name was given in the 1540s."
+    },
+    {
+     "level": 2,
+     "q": "Which Filipina journalist shared the 2021 Nobel Peace Prize?",
+     "a": "Maria Ressa",
+     "wrong": [
+      "Leni Robredo",
+      "Sheila Coronel",
+      "Ces Drilon"
+     ],
+     "why": "She co-founded the news site Rappler."
+    },
+    {
+     "level": 2,
+     "q": "What was Typhoon Haiyan (2013) called in the Philippines?",
+     "a": "Yolanda",
+     "wrong": [
+      "Ondoy",
+      "Pablo",
+      "Sendong"
+     ],
+     "why": "It devastated Tacloban."
+    },
+    {
+     "level": 3,
+     "q": "Which Manila university, founded in 1611, is the oldest existing university in Asia?",
+     "a": "University of Santo Tomas",
+     "wrong": [
+      "Ateneo de Manila",
+      "University of the Philippines",
+      "De La Salle University"
+     ],
+     "why": "It is run by the Dominicans."
     }
    ]
   },
   {
-   "name": "Philippines Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -365,7 +400,8 @@
    ]
   },
   {
-   "name": "Philippines Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,7 +582,8 @@
    ]
   },
   {
-   "name": "Philippines Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
     {
      "level": 1,
@@ -561,17 +598,6 @@
     },
     {
      "level": 1,
-     "q": "Which Filipina was crowned Miss Universe 2018?",
-     "a": "Catriona Gray",
-     "wrong": [
-      "Pia Wurtzbach",
-      "Gloria Diaz",
-      "Margie Moran"
-     ],
-     "why": "Pia Wurtzbach won in 2015."
-    },
-    {
-     "level": 1,
      "q": "Which singer won a Tony Award for 'Miss Saigon'?",
      "a": "Lea Salonga",
      "wrong": [
@@ -580,17 +606,6 @@
       "Sarah Geronimo"
      ],
      "why": "She also sang for Disney's Jasmine and Mulan."
-    },
-    {
-     "level": 1,
-     "q": "Which noontime variety show has run for over 40 years?",
-     "a": "Eat Bulaga!",
-     "wrong": [
-      "It's Showtime",
-      "ASAP",
-      "Wowowee"
-     ],
-     "why": "It started in 1979."
     },
     {
      "level": 1,
@@ -615,38 +630,33 @@
      "why": "They are called the Beatles of the Philippines."
     },
     {
-     "level": 1,
-     "q": "Which P-pop girl group had a hit with 'Pantropiko' in 2024?",
-     "a": "BINI",
+     "level": 2,
+     "q": "Which singer is called 'Asia's Songbird'?",
+     "a": "Regine Velasquez",
      "wrong": [
-      "SB19",
-      "MNL48",
-      "Kaia"
+      "Lea Salonga",
+      "Sarah Geronimo",
+      "Kuh Ledesma"
      ],
-     "why": "They are called the 'Nation's Girl Group'."
+     "why": "She is famous for her vocal range."
     },
     {
      "level": 2,
-     "q": "Which P-pop boy group recorded 'Gento'?",
-     "a": "SB19",
+     "q": "What is the Philippine national anthem called?",
+     "a": "Lupang Hinirang",
      "wrong": [
-      "BINI",
-      "Ben&Ben",
-      "Alamat"
+      "Bayan Ko",
+      "Pilipinas Kong Mahal",
+      "Ako ay Pilipino"
      ],
-     "why": "They were the first Filipino act nominated at the Billboard Music Awards."
-    },
-    {
-     "level": 2,
-     "q": "Who directed the 1982 classic 'Himala'?",
-     "a": "Ishmael Bernal",
-     "wrong": [
-      "Lino Brocka",
-      "Brillante Mendoza",
-      "Lav Diaz"
-     ],
-     "why": "Nora Aunor starred in it."
-    },
+     "why": "It means 'Chosen Land'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
     {
      "level": 2,
      "q": "Which Lav Diaz film won the Golden Lion at Venice in 2016?",
@@ -657,39 +667,6 @@
       "Lullaby to the Sorrowful Mystery"
      ],
      "why": "It is almost four hours long."
-    },
-    {
-     "level": 2,
-     "q": "Who wrote the classic poem 'Florante at Laura'?",
-     "a": "Francisco Balagtas",
-     "wrong": [
-      "José Rizal",
-      "Andrés Bonifacio",
-      "Jose Corazon de Jesus"
-     ],
-     "why": "It was published in 1838."
-    },
-    {
-     "level": 2,
-     "q": "Which Filipino-American member of the Black Eyed Peas was born in Pampanga?",
-     "a": "apl.de.ap",
-     "wrong": [
-      "will.i.am",
-      "Taboo",
-      "Fergie"
-     ],
-     "why": "His song 'The Apl Song' is partly in Tagalog."
-    },
-    {
-     "level": 2,
-     "q": "Which singer is called 'Asia's Songbird'?",
-     "a": "Regine Velasquez",
-     "wrong": [
-      "Lea Salonga",
-      "Sarah Geronimo",
-      "Kuh Ledesma"
-     ],
-     "why": "She is famous for her vocal range."
     },
     {
      "level": 3,
@@ -727,8 +704,137 @@
    ]
   },
   {
-   "name": "Philippines Food & Traditions",
+   "category": "Entertainment",
+   "name": "Books",
    "questions": [
+    {
+     "level": 3,
+     "q": "Which José Rizal novel was published in 1887?",
+     "a": "Noli Me Tángere",
+     "wrong": [
+      "El Filibusterismo",
+      "Florante at Laura",
+      "Ibong Adarna"
+     ],
+     "why": "El Filibusterismo followed in 1891."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote the classic poem 'Florante at Laura'?",
+     "a": "Francisco Balagtas",
+     "wrong": [
+      "José Rizal",
+      "Andrés Bonifacio",
+      "Jose Corazon de Jesus"
+     ],
+     "why": "It was published in 1838."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which festival in Kalibo, Aklan, has dancers with soot-painted faces?",
+     "a": "Ati-Atihan",
+     "wrong": [
+      "Sinulog",
+      "Dinagyang",
+      "Panagbenga"
+     ],
+     "why": "It is one of the oldest festivals in the country."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the national bird of the Philippines?",
+     "a": "Philippine eagle",
+     "wrong": [
+      "Maya bird",
+      "Kingfisher",
+      "Hornbill"
+     ],
+     "why": "It is one of the largest eagles in the world."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Filipina was crowned Miss Universe 2018?",
+     "a": "Catriona Gray",
+     "wrong": [
+      "Pia Wurtzbach",
+      "Gloria Diaz",
+      "Margie Moran"
+     ],
+     "why": "Pia Wurtzbach won in 2015."
+    },
+    {
+     "level": 1,
+     "q": "Which noontime variety show has run for over 40 years?",
+     "a": "Eat Bulaga!",
+     "wrong": [
+      "It's Showtime",
+      "ASAP",
+      "Wowowee"
+     ],
+     "why": "It started in 1979."
+    },
+    {
+     "level": 1,
+     "q": "Which P-pop girl group had a hit with 'Pantropiko' in 2024?",
+     "a": "BINI",
+     "wrong": [
+      "SB19",
+      "MNL48",
+      "Kaia"
+     ],
+     "why": "They are called the 'Nation's Girl Group'."
+    },
+    {
+     "level": 2,
+     "q": "Which P-pop boy group recorded 'Gento'?",
+     "a": "SB19",
+     "wrong": [
+      "BINI",
+      "Ben&Ben",
+      "Alamat"
+     ],
+     "why": "They were the first Filipino act nominated at the Billboard Music Awards."
+    },
+    {
+     "level": 2,
+     "q": "Who directed the 1982 classic 'Himala'?",
+     "a": "Ishmael Bernal",
+     "wrong": [
+      "Lino Brocka",
+      "Brillante Mendoza",
+      "Lav Diaz"
+     ],
+     "why": "Nora Aunor starred in it."
+    },
+    {
+     "level": 2,
+     "q": "Which Filipino-American member of the Black Eyed Peas was born in Pampanga?",
+     "a": "apl.de.ap",
+     "wrong": [
+      "will.i.am",
+      "Taboo",
+      "Fergie"
+     ],
+     "why": "His song 'The Apl Song' is partly in Tagalog."
+    },
     {
      "level": 1,
      "q": "Which dish of meat stewed in vinegar, soy sauce and garlic is a national favourite?",
@@ -841,17 +947,6 @@
     },
     {
      "level": 2,
-     "q": "Which festival in Kalibo, Aklan, has dancers with soot-painted faces?",
-     "a": "Ati-Atihan",
-     "wrong": [
-      "Sinulog",
-      "Dinagyang",
-      "Panagbenga"
-     ],
-     "why": "It is one of the oldest festivals in the country."
-    },
-    {
-     "level": 2,
      "q": "Which purple yam is used in many Filipino desserts?",
      "a": "Ube",
      "wrong": [
@@ -904,12 +999,7 @@
       "Bicol express"
      ],
      "why": "Angeles City is called its home."
-    }
-   ]
-  },
-  {
-   "name": "Philippines General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is the currency of the Philippines?",
@@ -945,17 +1035,6 @@
     },
     {
      "level": 1,
-     "q": "What is the national bird of the Philippines?",
-     "a": "Philippine eagle",
-     "wrong": [
-      "Maya bird",
-      "Kingfisher",
-      "Hornbill"
-     ],
-     "why": "It is one of the largest eagles in the world."
-    },
-    {
-     "level": 1,
      "q": "What does it mean when the Philippine flag is flown red stripe on top?",
      "a": "The country is at war",
      "wrong": [
@@ -975,50 +1054,6 @@
       "Bushbaby"
      ],
      "why": "It is one of the smallest primates."
-    },
-    {
-     "level": 1,
-     "q": "Which Spanish king are the Philippines named after?",
-     "a": "Philip II",
-     "wrong": [
-      "Charles V",
-      "Ferdinand II",
-      "Philip V"
-     ],
-     "why": "The name was given in the 1540s."
-    },
-    {
-     "level": 2,
-     "q": "Which Filipina journalist shared the 2021 Nobel Peace Prize?",
-     "a": "Maria Ressa",
-     "wrong": [
-      "Leni Robredo",
-      "Sheila Coronel",
-      "Ces Drilon"
-     ],
-     "why": "She co-founded the news site Rappler."
-    },
-    {
-     "level": 2,
-     "q": "What was Typhoon Haiyan (2013) called in the Philippines?",
-     "a": "Yolanda",
-     "wrong": [
-      "Ondoy",
-      "Pablo",
-      "Sendong"
-     ],
-     "why": "It devastated Tacloban."
-    },
-    {
-     "level": 2,
-     "q": "What is the Philippine national anthem called?",
-     "a": "Lupang Hinirang",
-     "wrong": [
-      "Bayan Ko",
-      "Pilipinas Kong Mahal",
-      "Ako ay Pilipino"
-     ],
-     "why": "It means 'Chosen Land'."
     },
     {
      "level": 2,
@@ -1063,17 +1098,6 @@
       "12"
      ],
      "why": "One for each province that first rose against Spain."
-    },
-    {
-     "level": 3,
-     "q": "Which Manila university, founded in 1611, is the oldest existing university in Asia?",
-     "a": "University of Santo Tomas",
-     "wrong": [
-      "Ateneo de Manila",
-      "University of the Philippines",
-      "De La Salle University"
-     ],
-     "why": "It is run by the Dominicans."
     },
     {
      "level": 3,

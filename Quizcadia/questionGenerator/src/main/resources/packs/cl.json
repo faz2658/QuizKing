@@ -3,7 +3,8 @@
  "country": "CL",
  "topics": [
   {
-   "name": "Chile: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -51,28 +52,6 @@
     },
     {
      "level": 1,
-     "q": "Which Chilean poet won the 1971 Nobel Prize in Literature?",
-     "a": "Pablo Neruda",
-     "wrong": [
-      "Gabriela Mistral",
-      "Vicente Huidobro",
-      "Nicanor Parra"
-     ],
-     "why": "He wrote 'Twenty Love Poems and a Song of Despair'."
-    },
-    {
-     "level": 1,
-     "q": "Which Chilean poet was the first Latin American to win the Nobel Prize in Literature?",
-     "a": "Gabriela Mistral",
-     "wrong": [
-      "Pablo Neruda",
-      "Isabel Allende",
-      "Gabriel García Márquez"
-     ],
-     "why": "She won in 1945."
-    },
-    {
-     "level": 1,
      "q": "Who became Chile's first woman President, in 2006?",
      "a": "Michelle Bachelet",
      "wrong": [
@@ -92,17 +71,6 @@
       "Paraguayan War"
      ],
      "why": "It was fought against Peru and Bolivia."
-    },
-    {
-     "level": 2,
-     "q": "Which Indigenous people resisted Spanish conquest in the south for centuries?",
-     "a": "Mapuche",
-     "wrong": [
-      "Aymara",
-      "Quechua",
-      "Guaraní"
-     ],
-     "why": "Their resistance is called the Arauco War."
     },
     {
      "level": 2,
@@ -150,17 +118,6 @@
     },
     {
      "level": 3,
-     "q": "Which Chilean author wrote 'The House of the Spirits'?",
-     "a": "Isabel Allende",
-     "wrong": [
-      "Gabriela Mistral",
-      "Roberto Bolaño",
-      "Marcela Serrano"
-     ],
-     "why": "She is a relative of Salvador Allende."
-    },
-    {
-     "level": 3,
      "q": "Which 2010 rescue saved 33 miners trapped underground?",
      "a": "Copiapó mining rescue",
      "wrong": [
@@ -173,7 +130,8 @@
    ]
   },
   {
-   "name": "Chile: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -220,6 +178,106 @@
      "why": "It includes Ojos del Salado."
     },
     {
+     "level": 2,
+     "q": "Which national park in Patagonia is famous for granite towers?",
+     "a": "Torres del Paine",
+     "wrong": [
+      "Lauca",
+      "Conguillío",
+      "Vicente Pérez Rosales"
+     ],
+     "why": "Its name means 'towers of blue'."
+    },
+    {
+     "level": 2,
+     "q": "Which colourful port city is a UNESCO site?",
+     "a": "Valparaíso",
+     "wrong": [
+      "Antofagasta",
+      "Iquique",
+      "Puerto Montt"
+     ],
+     "why": "It is built on steep hills with funiculars."
+    },
+    {
+     "level": 2,
+     "q": "Which island in the south is known for wooden churches?",
+     "a": "Chiloé",
+     "wrong": [
+      "Easter Island",
+      "Navarino",
+      "Robinson Crusoe Island"
+     ],
+     "why": "Its churches are a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which archipelago is home to 'Robinson Crusoe Island'?",
+     "a": "Juan Fernández Islands",
+     "wrong": [
+      "Chiloé",
+      "Desventuradas",
+      "Falkland Islands"
+     ],
+     "why": "A sailor stranded there inspired the novel."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Chilean poet won the 1971 Nobel Prize in Literature?",
+     "a": "Pablo Neruda",
+     "wrong": [
+      "Gabriela Mistral",
+      "Vicente Huidobro",
+      "Nicanor Parra"
+     ],
+     "why": "He wrote 'Twenty Love Poems and a Song of Despair'."
+    },
+    {
+     "level": 1,
+     "q": "Which Chilean poet was the first Latin American to win the Nobel Prize in Literature?",
+     "a": "Gabriela Mistral",
+     "wrong": [
+      "Pablo Neruda",
+      "Isabel Allende",
+      "Gabriel García Márquez"
+     ],
+     "why": "She won in 1945."
+    },
+    {
+     "level": 3,
+     "q": "Which Chilean author wrote 'The House of the Spirits'?",
+     "a": "Isabel Allende",
+     "wrong": [
+      "Gabriela Mistral",
+      "Roberto Bolaño",
+      "Marcela Serrano"
+     ],
+     "why": "She is a relative of Salvador Allende."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Indigenous people resisted Spanish conquest in the south for centuries?",
+     "a": "Mapuche",
+     "wrong": [
+      "Aymara",
+      "Quechua",
+      "Guaraní"
+     ],
+     "why": "Their resistance is called the Arauco War."
+    },
+    {
      "level": 1,
      "q": "What is Chile's currency?",
      "a": "Chilean peso",
@@ -254,28 +312,6 @@
     },
     {
      "level": 2,
-     "q": "Which national park in Patagonia is famous for granite towers?",
-     "a": "Torres del Paine",
-     "wrong": [
-      "Lauca",
-      "Conguillío",
-      "Vicente Pérez Rosales"
-     ],
-     "why": "Its name means 'towers of blue'."
-    },
-    {
-     "level": 2,
-     "q": "Which colourful port city is a UNESCO site?",
-     "a": "Valparaíso",
-     "wrong": [
-      "Antofagasta",
-      "Iquique",
-      "Puerto Montt"
-     ],
-     "why": "It is built on steep hills with funiculars."
-    },
-    {
-     "level": 2,
      "q": "Which grape brandy does Chile share as a national drink with Peru?",
      "a": "Pisco",
      "wrong": [
@@ -284,17 +320,6 @@
       "Aguardiente"
      ],
      "why": "Both countries claim it."
-    },
-    {
-     "level": 2,
-     "q": "Which island in the south is known for wooden churches?",
-     "a": "Chiloé",
-     "wrong": [
-      "Easter Island",
-      "Navarino",
-      "Robinson Crusoe Island"
-     ],
-     "why": "Its churches are a UNESCO site."
     },
     {
      "level": 2,
@@ -328,17 +353,6 @@
       "Cumbia"
      ],
      "why": "Dancers wave handkerchiefs."
-    },
-    {
-     "level": 3,
-     "q": "Which archipelago is home to 'Robinson Crusoe Island'?",
-     "a": "Juan Fernández Islands",
-     "wrong": [
-      "Chiloé",
-      "Desventuradas",
-      "Falkland Islands"
-     ],
-     "why": "A sailor stranded there inspired the novel."
     }
    ]
   }

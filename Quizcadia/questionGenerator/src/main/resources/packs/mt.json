@@ -3,19 +3,9 @@
  "country": "MT",
  "topics": [
   {
-   "name": "Malta: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Malta?",
-     "a": "Valletta",
-     "wrong": [
-      "Mdina",
-      "Sliema",
-      "Birkirkara"
-     ],
-     "why": "It is one of Europe's smallest capitals."
-    },
     {
      "level": 1,
      "q": "From which country did Malta gain independence in 1964?",
@@ -51,28 +41,6 @@
     },
     {
      "level": 1,
-     "q": "Which British medal was awarded to the whole of Malta in 1942?",
-     "a": "George Cross",
-     "wrong": [
-      "Victoria Cross",
-      "Order of the Garter",
-      "Military Cross"
-     ],
-     "why": "It appears on the Maltese flag."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Malta join the EU?",
-     "a": "2004",
-     "wrong": [
-      "1995",
-      "2007",
-      "2013"
-     ],
-     "why": "It adopted the euro in 2008."
-    },
-    {
-     "level": 1,
      "q": "Which French leader took Malta from the Knights in 1798?",
      "a": "Napoleon Bonaparte",
      "wrong": [
@@ -81,28 +49,6 @@
       "Cardinal Richelieu"
      ],
      "why": "The British took over in 1800."
-    },
-    {
-     "level": 2,
-     "q": "Which Grand Master gave his name to Valletta?",
-     "a": "Jean de Valette",
-     "wrong": [
-      "Philippe Villiers de L'Isle-Adam",
-      "Emmanuel de Rohan",
-      "Manuel Pinto"
-     ],
-     "why": "He led the Great Siege."
-    },
-    {
-     "level": 2,
-     "q": "Which apostle was shipwrecked on Malta around AD 60?",
-     "a": "St Paul",
-     "wrong": [
-      "St Peter",
-      "St John",
-      "St Andrew"
-     ],
-     "why": "The Bible's Book of Acts tells the story."
     },
     {
      "level": 2,
@@ -117,17 +63,6 @@
     },
     {
      "level": 2,
-     "q": "Which ancient underground burial site is carved into rock in Paola?",
-     "a": "Ħal Saflieni Hypogeum",
-     "wrong": [
-      "Catacombs of Rome",
-      "Ġgantija",
-      "Tarxien Temples"
-     ],
-     "why": "It is about 5,000 years old."
-    },
-    {
-     "level": 2,
      "q": "Which Maltese Prime Minister led independence in 1964?",
      "a": "George Borg Olivier",
      "wrong": [
@@ -136,17 +71,6 @@
       "Joseph Muscat"
      ],
      "why": "He signed the independence agreement."
-    },
-    {
-     "level": 3,
-     "q": "Which Megalithic temples on Gozo are among the oldest free-standing buildings?",
-     "a": "Ġgantija",
-     "wrong": [
-      "Ħaġar Qim",
-      "Mnajdra",
-      "Tarxien"
-     ],
-     "why": "They are older than Stonehenge."
     },
     {
      "level": 3,
@@ -169,33 +93,45 @@
       "Operation Harpoon"
      ],
      "why": "The tanker Ohio limped into harbour."
+    },
+    {
+     "level": 2,
+     "q": "Which church dome in Mosta survived a German bomb in 1942?",
+     "a": "Mosta Rotunda",
+     "wrong": [
+      "St John's Co-Cathedral",
+      "Xewkija Rotunda",
+      "Ta' Pinu"
+     ],
+     "why": "The bomb did not explode."
+    },
+    {
+     "level": 3,
+     "q": "Which natural rock arch on Gozo collapsed in 2017?",
+     "a": "Azure Window",
+     "wrong": [
+      "Blue Grotto",
+      "Wied il-Mielaħ",
+      "Fungus Rock"
+     ],
+     "why": "It was a famous film location."
     }
    ]
   },
   {
-   "name": "Malta: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "What is Malta's currency?",
-     "a": "Euro",
+     "q": "What is the capital of Malta?",
+     "a": "Valletta",
      "wrong": [
-      "Maltese lira",
-      "Pound sterling",
-      "Italian lira"
+      "Mdina",
+      "Sliema",
+      "Birkirkara"
      ],
-     "why": "It replaced the lira in 2008."
-    },
-    {
-     "level": 1,
-     "q": "Which two languages are official in Malta?",
-     "a": "Maltese and English",
-     "wrong": [
-      "Maltese and Italian",
-      "English and Italian",
-      "Maltese and Arabic"
-     ],
-     "why": "Maltese is a Semitic language written in Latin letters."
+     "why": "It is one of Europe's smallest capitals."
     },
     {
      "level": 1,
@@ -221,17 +157,6 @@
     },
     {
      "level": 1,
-     "q": "Which colourful fishing boats are a symbol of Malta?",
-     "a": "Luzzu",
-     "wrong": [
-      "Gondola",
-      "Felucca",
-      "Dhow"
-     ],
-     "why": "They have painted 'Eyes of Osiris'."
-    },
-    {
-     "level": 1,
      "q": "Which walled 'Silent City' was Malta's old capital?",
      "a": "Mdina",
      "wrong": [
@@ -254,50 +179,6 @@
     },
     {
      "level": 2,
-     "q": "Which Valletta cathedral holds a famous Caravaggio painting?",
-     "a": "St John's Co-Cathedral",
-     "wrong": [
-      "St Paul's Cathedral, Mdina",
-      "Mosta Rotunda",
-      "Basilica of Our Lady of Victories"
-     ],
-     "why": "The painting is 'The Beheading of St John the Baptist'."
-    },
-    {
-     "level": 2,
-     "q": "Which pastry with ricotta or peas is a Maltese snack?",
-     "a": "Pastizzi",
-     "wrong": [
-      "Ftira",
-      "Imqaret",
-      "Qassatat"
-     ],
-     "why": "They are sold cheaply everywhere."
-    },
-    {
-     "level": 2,
-     "q": "Which church dome in Mosta survived a German bomb in 1942?",
-     "a": "Mosta Rotunda",
-     "wrong": [
-      "St John's Co-Cathedral",
-      "Xewkija Rotunda",
-      "Ta' Pinu"
-     ],
-     "why": "The bomb did not explode."
-    },
-    {
-     "level": 2,
-     "q": "Which rabbit stew is Malta's national dish?",
-     "a": "Stuffat tal-Fenek",
-     "wrong": [
-      "Bragioli",
-      "Timpana",
-      "Lampuki pie"
-     ],
-     "why": "Rabbit is a Maltese favourite."
-    },
-    {
-     "level": 2,
      "q": "Which three fortified cities face Valletta across the Grand Harbour?",
      "a": "The Three Cities",
      "wrong": [
@@ -317,18 +198,30 @@
       "Skorba"
      ],
      "why": "It is about 5,500 years old."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
-     "level": 3,
-     "q": "Which natural rock arch on Gozo collapsed in 2017?",
-     "a": "Azure Window",
+     "level": 1,
+     "q": "Which British medal was awarded to the whole of Malta in 1942?",
+     "a": "George Cross",
      "wrong": [
-      "Blue Grotto",
-      "Wied il-Mielaħ",
-      "Fungus Rock"
+      "Victoria Cross",
+      "Order of the Garter",
+      "Military Cross"
      ],
-     "why": "It was a famous film location."
-    },
+     "why": "It appears on the Maltese flag."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
     {
      "level": 3,
      "q": "Which Maltese singer finished second at Eurovision 2002 with '7th Wonder'?",
@@ -339,6 +232,145 @@
       "Fabrizio Faniello"
      ],
      "why": "Chiara was also second in 2005."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Malta join the EU?",
+     "a": "2004",
+     "wrong": [
+      "1995",
+      "2007",
+      "2013"
+     ],
+     "why": "It adopted the euro in 2008."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which ancient underground burial site is carved into rock in Paola?",
+     "a": "Ħal Saflieni Hypogeum",
+     "wrong": [
+      "Catacombs of Rome",
+      "Ġgantija",
+      "Tarxien Temples"
+     ],
+     "why": "It is about 5,000 years old."
+    },
+    {
+     "level": 2,
+     "q": "Which Valletta cathedral holds a famous Caravaggio painting?",
+     "a": "St John's Co-Cathedral",
+     "wrong": [
+      "St Paul's Cathedral, Mdina",
+      "Mosta Rotunda",
+      "Basilica of Our Lady of Victories"
+     ],
+     "why": "The painting is 'The Beheading of St John the Baptist'."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Grand Master gave his name to Valletta?",
+     "a": "Jean de Valette",
+     "wrong": [
+      "Philippe Villiers de L'Isle-Adam",
+      "Emmanuel de Rohan",
+      "Manuel Pinto"
+     ],
+     "why": "He led the Great Siege."
+    },
+    {
+     "level": 2,
+     "q": "Which apostle was shipwrecked on Malta around AD 60?",
+     "a": "St Paul",
+     "wrong": [
+      "St Peter",
+      "St John",
+      "St Andrew"
+     ],
+     "why": "The Bible's Book of Acts tells the story."
+    },
+    {
+     "level": 3,
+     "q": "Which Megalithic temples on Gozo are among the oldest free-standing buildings?",
+     "a": "Ġgantija",
+     "wrong": [
+      "Ħaġar Qim",
+      "Mnajdra",
+      "Tarxien"
+     ],
+     "why": "They are older than Stonehenge."
+    },
+    {
+     "level": 1,
+     "q": "What is Malta's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Maltese lira",
+      "Pound sterling",
+      "Italian lira"
+     ],
+     "why": "It replaced the lira in 2008."
+    },
+    {
+     "level": 1,
+     "q": "Which two languages are official in Malta?",
+     "a": "Maltese and English",
+     "wrong": [
+      "Maltese and Italian",
+      "English and Italian",
+      "Maltese and Arabic"
+     ],
+     "why": "Maltese is a Semitic language written in Latin letters."
+    },
+    {
+     "level": 1,
+     "q": "Which colourful fishing boats are a symbol of Malta?",
+     "a": "Luzzu",
+     "wrong": [
+      "Gondola",
+      "Felucca",
+      "Dhow"
+     ],
+     "why": "They have painted 'Eyes of Osiris'."
+    },
+    {
+     "level": 2,
+     "q": "Which pastry with ricotta or peas is a Maltese snack?",
+     "a": "Pastizzi",
+     "wrong": [
+      "Ftira",
+      "Imqaret",
+      "Qassatat"
+     ],
+     "why": "They are sold cheaply everywhere."
+    },
+    {
+     "level": 2,
+     "q": "Which rabbit stew is Malta's national dish?",
+     "a": "Stuffat tal-Fenek",
+     "wrong": [
+      "Bragioli",
+      "Timpana",
+      "Lampuki pie"
+     ],
+     "why": "Rabbit is a Maltese favourite."
     }
    ]
   }

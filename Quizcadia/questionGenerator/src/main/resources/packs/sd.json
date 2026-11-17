@@ -3,19 +3,9 @@
  "country": "SD",
  "topics": [
   {
-   "name": "Sudan: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Sudan?",
-     "a": "Khartoum",
-     "wrong": [
-      "Omdurman",
-      "Port Sudan",
-      "Kassala"
-     ],
-     "why": "The Blue and White Nile meet there."
-    },
     {
      "level": 1,
      "q": "Which country split from Sudan in 2011?",
@@ -48,17 +38,6 @@
       "Ottoman Empire"
      ],
      "why": "It was an Anglo-Egyptian condominium."
-    },
-    {
-     "level": 1,
-     "q": "What is Sudan's currency?",
-     "a": "Sudanese pound",
-     "wrong": [
-      "Sudanese dinar",
-      "Egyptian pound",
-      "Birr"
-     ],
-     "why": "It was reintroduced in 2007."
     },
     {
      "level": 1,
@@ -127,28 +106,6 @@
      "why": "Many civilians were killed."
     },
     {
-     "level": 2,
-     "q": "Who leads the Rapid Support Forces?",
-     "a": "Mohamed Hamdan Dagalo (Hemedti)",
-     "wrong": [
-      "Abdel Fattah al-Burhan",
-      "Omar al-Bashir",
-      "Abdalla Hamdok"
-     ],
-     "why": "The RSF grew from the Janjaweed."
-    },
-    {
-     "level": 3,
-     "q": "Which Prime Minister led the transition after 2019?",
-     "a": "Abdalla Hamdok",
-     "wrong": [
-      "Sadiq al-Mahdi",
-      "Kamil Idris",
-      "Hassan al-Turabi"
-     ],
-     "why": "He resigned in 2022."
-    },
-    {
      "level": 3,
      "q": "Which 2005 deal ended the long war with the south?",
      "a": "Comprehensive Peace Agreement",
@@ -169,12 +126,35 @@
       "Aksum"
      ],
      "why": "It lasted until the 1300s."
+    },
+    {
+     "level": 3,
+     "q": "Which dam on the Nile in northern Sudan opened in 2009?",
+     "a": "Merowe Dam",
+     "wrong": [
+      "Aswan Dam",
+      "Roseires Dam",
+      "Grand Renaissance Dam"
+     ],
+     "why": "It flooded old villages."
     }
    ]
   },
   {
-   "name": "Sudan: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Sudan?",
+     "a": "Khartoum",
+     "wrong": [
+      "Omdurman",
+      "Port Sudan",
+      "Kassala"
+     ],
+     "why": "The Blue and White Nile meet there."
+    },
     {
      "level": 1,
      "q": "Which two rivers meet at Khartoum?",
@@ -199,17 +179,6 @@
     },
     {
      "level": 1,
-     "q": "Which bean dish is eaten for breakfast in Sudan?",
-     "a": "Ful medames",
-     "wrong": [
-      "Shakshuka",
-      "Falafel",
-      "Hummus"
-     ],
-     "why": "It is made from fava beans."
-    },
-    {
-     "level": 1,
      "q": "Which sea is on Sudan's coast?",
      "a": "Red Sea",
      "wrong": [
@@ -218,17 +187,6 @@
       "Gulf of Aden"
      ],
      "why": "Port Sudan is its main port."
-    },
-    {
-     "level": 1,
-     "q": "Which gum from acacia trees does Sudan export?",
-     "a": "Gum arabic",
-     "wrong": [
-      "Rubber",
-      "Shea butter",
-      "Frankincense"
-     ],
-     "why": "It is used in soft drinks."
     },
     {
      "level": 1,
@@ -265,28 +223,6 @@
     },
     {
      "level": 2,
-     "q": "Which Sudanese writer wrote 'Season of Migration to the North'?",
-     "a": "Tayeb Salih",
-     "wrong": [
-      "Leila Aboulela",
-      "Abdel Aziz Baraka Sakin",
-      "Naguib Mahfouz"
-     ],
-     "why": "It is a classic of Arabic literature."
-    },
-    {
-     "level": 2,
-     "q": "Which whirling dervishes perform on Fridays at Omdurman?",
-     "a": "Sufi dervishes at Hamed al-Nil tomb",
-     "wrong": [
-      "Mevlevi dervishes of Konya",
-      "Gnawa musicians",
-      "Qawwali singers"
-     ],
-     "why": "Crowds watch at sunset."
-    },
-    {
-     "level": 2,
      "q": "Which marine park near Port Sudan is a UNESCO site?",
      "a": "Sanganeb Marine National Park",
      "wrong": [
@@ -306,17 +242,118 @@
       "Emi Koussi"
      ],
      "why": "It is the highest point in Sudan."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
     {
      "level": 3,
-     "q": "Which dam on the Nile in northern Sudan opened in 2009?",
-     "a": "Merowe Dam",
+     "q": "Which Sudanese singer was a pan-African star?",
+     "a": "Mohammed Wardi",
      "wrong": [
-      "Aswan Dam",
-      "Roseires Dam",
-      "Grand Renaissance Dam"
+      "Fela Kuti",
+      "Sayed Khalifa",
+      "Omar Ihsas"
      ],
-     "why": "It flooded old villages."
+     "why": "He sang in Arabic and Nubian."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Sudanese writer wrote 'Season of Migration to the North'?",
+     "a": "Tayeb Salih",
+     "wrong": [
+      "Leila Aboulela",
+      "Abdel Aziz Baraka Sakin",
+      "Naguib Mahfouz"
+     ],
+     "why": "It is a classic of Arabic literature."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Prime Minister led the transition after 2019?",
+     "a": "Abdalla Hamdok",
+     "wrong": [
+      "Sadiq al-Mahdi",
+      "Kamil Idris",
+      "Hassan al-Turabi"
+     ],
+     "why": "He resigned in 2022."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Sudan's currency?",
+     "a": "Sudanese pound",
+     "wrong": [
+      "Sudanese dinar",
+      "Egyptian pound",
+      "Birr"
+     ],
+     "why": "It was reintroduced in 2007."
+    },
+    {
+     "level": 2,
+     "q": "Who leads the Rapid Support Forces?",
+     "a": "Mohamed Hamdan Dagalo (Hemedti)",
+     "wrong": [
+      "Abdel Fattah al-Burhan",
+      "Omar al-Bashir",
+      "Abdalla Hamdok"
+     ],
+     "why": "The RSF grew from the Janjaweed."
+    },
+    {
+     "level": 1,
+     "q": "Which bean dish is eaten for breakfast in Sudan?",
+     "a": "Ful medames",
+     "wrong": [
+      "Shakshuka",
+      "Falafel",
+      "Hummus"
+     ],
+     "why": "It is made from fava beans."
+    },
+    {
+     "level": 1,
+     "q": "Which gum from acacia trees does Sudan export?",
+     "a": "Gum arabic",
+     "wrong": [
+      "Rubber",
+      "Shea butter",
+      "Frankincense"
+     ],
+     "why": "It is used in soft drinks."
+    },
+    {
+     "level": 2,
+     "q": "Which whirling dervishes perform on Fridays at Omdurman?",
+     "a": "Sufi dervishes at Hamed al-Nil tomb",
+     "wrong": [
+      "Mevlevi dervishes of Konya",
+      "Gnawa musicians",
+      "Qawwali singers"
+     ],
+     "why": "Crowds watch at sunset."
     },
     {
      "level": 3,
@@ -328,17 +365,6 @@
       "Cold brew"
      ],
      "why": "It is flavoured with ginger."
-    },
-    {
-     "level": 3,
-     "q": "Which Sudanese singer was a pan-African star?",
-     "a": "Mohammed Wardi",
-     "wrong": [
-      "Fela Kuti",
-      "Sayed Khalifa",
-      "Omar Ihsas"
-     ],
-     "why": "He sang in Arabic and Nubian."
     }
    ]
   }

@@ -3,19 +3,9 @@
  "country": "CM",
  "topics": [
   {
-   "name": "Cameroon: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Cameroon?",
-     "a": "Yaoundé",
-     "wrong": [
-      "Douala",
-      "Bamenda",
-      "Garoua"
-     ],
-     "why": "Douala is the largest city."
-    },
     {
      "level": 1,
      "q": "Which two European countries ran parts of Cameroon after the First World War?",
@@ -26,17 +16,6 @@
       "Italy and France"
      ],
      "why": "It had been a German colony."
-    },
-    {
-     "level": 1,
-     "q": "What is Cameroon often called because of its variety?",
-     "a": "Africa in miniature",
-     "wrong": [
-      "Pearl of Africa",
-      "Land of a Thousand Hills",
-      "Heart of Africa"
-     ],
-     "why": "It has deserts, rainforest, mountains and beaches."
     },
     {
      "level": 1,
@@ -59,28 +38,6 @@
       "Félix-Roland Moumié"
      ],
      "why": "He served from 1960 to 1982."
-    },
-    {
-     "level": 1,
-     "q": "What is the currency of Cameroon?",
-     "a": "Central African CFA franc",
-     "wrong": [
-      "West African CFA franc",
-      "Naira",
-      "Cedi"
-     ],
-     "why": "It is shared by six countries."
-    },
-    {
-     "level": 1,
-     "q": "Which two languages are official in Cameroon?",
-     "a": "French and English",
-     "wrong": [
-      "French and German",
-      "English and Arabic",
-      "French and Portuguese"
-     ],
-     "why": "Most people speak French."
     },
     {
      "level": 2,
@@ -127,17 +84,6 @@
      "why": "About 1,700 people died."
     },
     {
-     "level": 2,
-     "q": "Which Portuguese word gave Cameroon its name?",
-     "a": "Camarões (prawns)",
-     "wrong": [
-      "Camelos (camels)",
-      "Câmaras (rooms)",
-      "Cameras (cameras)"
-     ],
-     "why": "Explorers saw many prawns in the Wouri River."
-    },
-    {
      "level": 3,
      "q": "Which part of British Cameroons voted to join Nigeria in 1961?",
      "a": "Northern Cameroons",
@@ -161,6 +107,34 @@
     },
     {
      "level": 3,
+     "q": "Which kingdom in the west has a famous royal palace in Foumban?",
+     "a": "Bamum Kingdom",
+     "wrong": [
+      "Bafut Kingdom",
+      "Bamileke Kingdom",
+      "Mandara Kingdom"
+     ],
+     "why": "King Njoya invented a script."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Cameroon?",
+     "a": "Yaoundé",
+     "wrong": [
+      "Douala",
+      "Bamenda",
+      "Garoua"
+     ],
+     "why": "Douala is the largest city."
+    },
+    {
+     "level": 3,
      "q": "In which year did Cameroon become a unitary state instead of a federation?",
      "a": "1972",
      "wrong": [
@@ -169,11 +143,56 @@
       "1990"
      ],
      "why": "It was called the United Republic."
+    },
+    {
+     "level": 1,
+     "q": "Which active volcano is Cameroon's highest mountain?",
+     "a": "Mount Cameroon",
+     "wrong": [
+      "Mount Kilimanjaro",
+      "Mount Nimba",
+      "Mount Elgon"
+     ],
+     "why": "It is about 4,040 m high."
+    },
+    {
+     "level": 2,
+     "q": "Which wildlife reserve in the south is a UNESCO site?",
+     "a": "Dja Faunal Reserve",
+     "wrong": [
+      "Waza National Park",
+      "Korup National Park",
+      "Benoué National Park"
+     ],
+     "why": "It holds gorillas and chimpanzees."
+    },
+    {
+     "level": 2,
+     "q": "Which park in the far north is known for elephants and lions?",
+     "a": "Waza National Park",
+     "wrong": [
+      "Dja",
+      "Korup",
+      "Lobéké"
+     ],
+     "why": "It is on a floodplain."
+    },
+    {
+     "level": 3,
+     "q": "Which waterfall drops straight into the sea near Kribi?",
+     "a": "Lobé Falls",
+     "wrong": [
+      "Ekom-Nkam Falls",
+      "Menchum Falls",
+      "Lancrenon Falls"
+     ],
+     "why": "It is one of very few in the world."
     }
    ]
   },
   {
-   "name": "Cameroon: Places & Culture",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -209,83 +228,6 @@
      "why": "They reached the 1990 quarter-finals."
     },
     {
-     "level": 1,
-     "q": "Which active volcano is Cameroon's highest mountain?",
-     "a": "Mount Cameroon",
-     "wrong": [
-      "Mount Kilimanjaro",
-      "Mount Nimba",
-      "Mount Elgon"
-     ],
-     "why": "It is about 4,040 m high."
-    },
-    {
-     "level": 1,
-     "q": "Which dance music from Douala spread across Africa?",
-     "a": "Makossa",
-     "wrong": [
-      "Bikutsi",
-      "Highlife",
-      "Kwaito"
-     ],
-     "why": "Manu Dibango made it famous."
-    },
-    {
-     "level": 1,
-     "q": "Which saxophonist had a hit with 'Soul Makossa'?",
-     "a": "Manu Dibango",
-     "wrong": [
-      "Fela Kuti",
-      "Hugh Masekela",
-      "Youssou N'Dour"
-     ],
-     "why": "Michael Jackson borrowed from it."
-    },
-    {
-     "level": 1,
-     "q": "Which crop does Cameroon grow a lot of in the southwest?",
-     "a": "Bananas and cocoa",
-     "wrong": [
-      "Wheat",
-      "Rice",
-      "Tea"
-     ],
-     "why": "The volcanic soil is fertile."
-    },
-    {
-     "level": 2,
-     "q": "Which wildlife reserve in the south is a UNESCO site?",
-     "a": "Dja Faunal Reserve",
-     "wrong": [
-      "Waza National Park",
-      "Korup National Park",
-      "Benoué National Park"
-     ],
-     "why": "It holds gorillas and chimpanzees."
-    },
-    {
-     "level": 2,
-     "q": "Which park in the far north is known for elephants and lions?",
-     "a": "Waza National Park",
-     "wrong": [
-      "Dja",
-      "Korup",
-      "Lobéké"
-     ],
-     "why": "It is on a floodplain."
-    },
-    {
-     "level": 2,
-     "q": "Which mixed vegetable and nut dish is the national dish?",
-     "a": "Ndolé",
-     "wrong": [
-      "Jollof rice",
-      "Egusi soup",
-      "Fufu"
-     ],
-     "why": "It uses bitter leaves and peanuts."
-    },
-    {
      "level": 2,
      "q": "Which Cameroonian NBA player won the 2019 title with Toronto?",
      "a": "Pascal Siakam",
@@ -309,17 +251,6 @@
     },
     {
      "level": 3,
-     "q": "Which kingdom in the west has a famous royal palace in Foumban?",
-     "a": "Bamum Kingdom",
-     "wrong": [
-      "Bafut Kingdom",
-      "Bamileke Kingdom",
-      "Mandara Kingdom"
-     ],
-     "why": "King Njoya invented a script."
-    },
-    {
-     "level": 3,
      "q": "Which UFC heavyweight champion is from Cameroon?",
      "a": "Francis Ngannou",
      "wrong": [
@@ -328,17 +259,106 @@
       "Sodiq Yusuff"
      ],
      "why": "He crossed the Sahara to reach Europe."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which dance music from Douala spread across Africa?",
+     "a": "Makossa",
+     "wrong": [
+      "Bikutsi",
+      "Highlife",
+      "Kwaito"
+     ],
+     "why": "Manu Dibango made it famous."
     },
     {
-     "level": 3,
-     "q": "Which waterfall drops straight into the sea near Kribi?",
-     "a": "Lobé Falls",
+     "level": 1,
+     "q": "Which saxophonist had a hit with 'Soul Makossa'?",
+     "a": "Manu Dibango",
      "wrong": [
-      "Ekom-Nkam Falls",
-      "Menchum Falls",
-      "Lancrenon Falls"
+      "Fela Kuti",
+      "Hugh Masekela",
+      "Youssou N'Dour"
      ],
-     "why": "It is one of very few in the world."
+     "why": "Michael Jackson borrowed from it."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Cameroon often called because of its variety?",
+     "a": "Africa in miniature",
+     "wrong": [
+      "Pearl of Africa",
+      "Land of a Thousand Hills",
+      "Heart of Africa"
+     ],
+     "why": "It has deserts, rainforest, mountains and beaches."
+    },
+    {
+     "level": 1,
+     "q": "What is the currency of Cameroon?",
+     "a": "Central African CFA franc",
+     "wrong": [
+      "West African CFA franc",
+      "Naira",
+      "Cedi"
+     ],
+     "why": "It is shared by six countries."
+    },
+    {
+     "level": 1,
+     "q": "Which two languages are official in Cameroon?",
+     "a": "French and English",
+     "wrong": [
+      "French and German",
+      "English and Arabic",
+      "French and Portuguese"
+     ],
+     "why": "Most people speak French."
+    },
+    {
+     "level": 2,
+     "q": "Which Portuguese word gave Cameroon its name?",
+     "a": "Camarões (prawns)",
+     "wrong": [
+      "Camelos (camels)",
+      "Câmaras (rooms)",
+      "Cameras (cameras)"
+     ],
+     "why": "Explorers saw many prawns in the Wouri River."
+    },
+    {
+     "level": 1,
+     "q": "Which crop does Cameroon grow a lot of in the southwest?",
+     "a": "Bananas and cocoa",
+     "wrong": [
+      "Wheat",
+      "Rice",
+      "Tea"
+     ],
+     "why": "The volcanic soil is fertile."
+    },
+    {
+     "level": 2,
+     "q": "Which mixed vegetable and nut dish is the national dish?",
+     "a": "Ndolé",
+     "wrong": [
+      "Jollof rice",
+      "Egusi soup",
+      "Fufu"
+     ],
+     "why": "It uses bitter leaves and peanuts."
     }
    ]
   }

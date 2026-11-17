@@ -3,7 +3,8 @@
  "country": "JM",
  "topics": [
   {
-   "name": "Jamaica: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -15,28 +16,6 @@
       "1948"
      ],
      "why": "Independence Day is 6 August."
-    },
-    {
-     "level": 1,
-     "q": "Which Jamaican sprinter holds the 100 m and 200 m world records?",
-     "a": "Usain Bolt",
-     "wrong": [
-      "Yohan Blake",
-      "Asafa Powell",
-      "Shelly-Ann Fraser-Pryce"
-     ],
-     "why": "He ran 9.58 in 2009."
-    },
-    {
-     "level": 1,
-     "q": "Which reggae legend sang 'One Love' and 'No Woman, No Cry'?",
-     "a": "Bob Marley",
-     "wrong": [
-      "Peter Tosh",
-      "Jimmy Cliff",
-      "Bunny Wailer"
-     ],
-     "why": "He died in 1981."
     },
     {
      "level": 1,
@@ -59,17 +38,6 @@
       "Hugh Shearer"
      ],
      "why": "He was a trade union leader."
-    },
-    {
-     "level": 1,
-     "q": "Which Indigenous people lived in Jamaica when Columbus arrived?",
-     "a": "Taíno",
-     "wrong": [
-      "Maya",
-      "Carib",
-      "Aztec"
-     ],
-     "why": "The name Jamaica comes from their word for 'land of wood and water'."
     },
     {
      "level": 1,
@@ -158,22 +126,12 @@
       "Christmas Rebellion"
      ],
      "why": "He is a National Hero."
-    },
-    {
-     "level": 3,
-     "q": "Which buccaneer became governor of Jamaica?",
-     "a": "Henry Morgan",
-     "wrong": [
-      "Blackbeard",
-      "Calico Jack",
-      "Edward Low"
-     ],
-     "why": "He raided Panama in 1671."
     }
    ]
   },
   {
-   "name": "Jamaica: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -188,6 +146,95 @@
     },
     {
      "level": 1,
+     "q": "Which tourist town on the north coast has a famous airport?",
+     "a": "Montego Bay",
+     "wrong": [
+      "Negril",
+      "Ocho Rios",
+      "Port Antonio"
+     ],
+     "why": "It is often called MoBay."
+    },
+    {
+     "level": 2,
+     "q": "Which waterfall near Ocho Rios can be climbed?",
+     "a": "Dunn's River Falls",
+     "wrong": [
+      "YS Falls",
+      "Reach Falls",
+      "Mayfield Falls"
+     ],
+     "why": "It flows straight into the sea."
+    },
+    {
+     "level": 2,
+     "q": "What is the island's highest point?",
+     "a": "Blue Mountain Peak",
+     "wrong": [
+      "Dolphin Head",
+      "Mount Diablo",
+      "Cockpit Peak"
+     ],
+     "why": "It is about 2,256 m high."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Jamaican sprinter holds the 100 m and 200 m world records?",
+     "a": "Usain Bolt",
+     "wrong": [
+      "Yohan Blake",
+      "Asafa Powell",
+      "Shelly-Ann Fraser-Pryce"
+     ],
+     "why": "He ran 9.58 in 2009."
+    },
+    {
+     "level": 2,
+     "q": "Which Jamaican sprinter won Olympic 100 m gold in 2008 and 2012?",
+     "a": "Shelly-Ann Fraser-Pryce",
+     "wrong": [
+      "Elaine Thompson-Herah",
+      "Veronica Campbell-Brown",
+      "Merlene Ottey"
+     ],
+     "why": "She is nicknamed the 'Pocket Rocket'."
+    },
+    {
+     "level": 2,
+     "q": "Which famous bobsled team competed at the 1988 Winter Olympics?",
+     "a": "Jamaica's bobsled team",
+     "wrong": [
+      "Jamaica's ski team",
+      "Jamaica's skating team",
+      "Jamaica's curling team"
+     ],
+     "why": "The film 'Cool Runnings' tells their story."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which reggae legend sang 'One Love' and 'No Woman, No Cry'?",
+     "a": "Bob Marley",
+     "wrong": [
+      "Peter Tosh",
+      "Jimmy Cliff",
+      "Bunny Wailer"
+     ],
+     "why": "He died in 1981."
+    },
+    {
+     "level": 1,
      "q": "Which music genre was born in Jamaica in the late 1960s?",
      "a": "Reggae",
      "wrong": [
@@ -196,6 +243,79 @@
       "Merengue"
      ],
      "why": "UNESCO listed it in 2018."
+    },
+    {
+     "level": 3,
+     "q": "Which DJ style gave rise to dancehall and influenced hip hop?",
+     "a": "Toasting",
+     "wrong": [
+      "Rapping",
+      "Scatting",
+      "Freestyling"
+     ],
+     "why": "Kool Herc brought it to New York."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Jamaican poet wrote in patois and was called 'Miss Lou'?",
+     "a": "Louise Bennett-Coverley",
+     "wrong": [
+      "Claude McKay",
+      "Una Marson",
+      "Lorna Goodison"
+     ],
+     "why": "She championed Jamaican language."
+    },
+    {
+     "level": 3,
+     "q": "Which James Bond author had a house called GoldenEye in Jamaica?",
+     "a": "Ian Fleming",
+     "wrong": [
+      "Noël Coward",
+      "Graham Greene",
+      "Agatha Christie"
+     ],
+     "why": "He wrote all the Bond novels there."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which buccaneer became governor of Jamaica?",
+     "a": "Henry Morgan",
+     "wrong": [
+      "Blackbeard",
+      "Calico Jack",
+      "Edward Low"
+     ],
+     "why": "He raided Panama in 1671."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Indigenous people lived in Jamaica when Columbus arrived?",
+     "a": "Taíno",
+     "wrong": [
+      "Maya",
+      "Carib",
+      "Aztec"
+     ],
+     "why": "The name Jamaica comes from their word for 'land of wood and water'."
     },
     {
      "level": 1,
@@ -232,17 +352,6 @@
     },
     {
      "level": 1,
-     "q": "Which tourist town on the north coast has a famous airport?",
-     "a": "Montego Bay",
-     "wrong": [
-      "Negril",
-      "Ocho Rios",
-      "Port Antonio"
-     ],
-     "why": "It is often called MoBay."
-    },
-    {
-     "level": 1,
      "q": "What is Jamaica's currency?",
      "a": "Jamaican dollar",
      "wrong": [
@@ -254,17 +363,6 @@
     },
     {
      "level": 2,
-     "q": "Which waterfall near Ocho Rios can be climbed?",
-     "a": "Dunn's River Falls",
-     "wrong": [
-      "YS Falls",
-      "Reach Falls",
-      "Mayfield Falls"
-     ],
-     "why": "It flows straight into the sea."
-    },
-    {
-     "level": 2,
      "q": "Which religion emerged in Jamaica in the 1930s?",
      "a": "Rastafari",
      "wrong": [
@@ -273,72 +371,6 @@
       "Santería"
      ],
      "why": "Its followers honour Haile Selassie."
-    },
-    {
-     "level": 2,
-     "q": "Which Jamaican sprinter won Olympic 100 m gold in 2008 and 2012?",
-     "a": "Shelly-Ann Fraser-Pryce",
-     "wrong": [
-      "Elaine Thompson-Herah",
-      "Veronica Campbell-Brown",
-      "Merlene Ottey"
-     ],
-     "why": "She is nicknamed the 'Pocket Rocket'."
-    },
-    {
-     "level": 2,
-     "q": "Which famous bobsled team competed at the 1988 Winter Olympics?",
-     "a": "Jamaica's bobsled team",
-     "wrong": [
-      "Jamaica's ski team",
-      "Jamaica's skating team",
-      "Jamaica's curling team"
-     ],
-     "why": "The film 'Cool Runnings' tells their story."
-    },
-    {
-     "level": 2,
-     "q": "What is the island's highest point?",
-     "a": "Blue Mountain Peak",
-     "wrong": [
-      "Dolphin Head",
-      "Mount Diablo",
-      "Cockpit Peak"
-     ],
-     "why": "It is about 2,256 m high."
-    },
-    {
-     "level": 3,
-     "q": "Which DJ style gave rise to dancehall and influenced hip hop?",
-     "a": "Toasting",
-     "wrong": [
-      "Rapping",
-      "Scatting",
-      "Freestyling"
-     ],
-     "why": "Kool Herc brought it to New York."
-    },
-    {
-     "level": 3,
-     "q": "Which Jamaican poet wrote in patois and was called 'Miss Lou'?",
-     "a": "Louise Bennett-Coverley",
-     "wrong": [
-      "Claude McKay",
-      "Una Marson",
-      "Lorna Goodison"
-     ],
-     "why": "She championed Jamaican language."
-    },
-    {
-     "level": 3,
-     "q": "Which James Bond author had a house called GoldenEye in Jamaica?",
-     "a": "Ian Fleming",
-     "wrong": [
-      "Noël Coward",
-      "Graham Greene",
-      "Agatha Christie"
-     ],
-     "why": "He wrote all the Bond novels there."
     }
    ]
   }

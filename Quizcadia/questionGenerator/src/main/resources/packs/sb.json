@@ -3,19 +3,9 @@
  "country": "SB",
  "topics": [
   {
-   "name": "Solomon Islands: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of the Solomon Islands?",
-     "a": "Honiara",
-     "wrong": [
-      "Gizo",
-      "Auki",
-      "Tulagi"
-     ],
-     "why": "It is on Guadalcanal."
-    },
     {
      "level": 1,
      "q": "From which country did the Solomon Islands gain independence in 1978?",
@@ -37,39 +27,6 @@
       "Okinawa"
      ],
      "why": "US forces landed there in 1942."
-    },
-    {
-     "level": 1,
-     "q": "What is the currency of the Solomon Islands?",
-     "a": "Solomon Islands dollar",
-     "wrong": [
-      "Australian dollar",
-      "Kina",
-      "Vatu"
-     ],
-     "why": "Its code is SBD."
-    },
-    {
-     "level": 1,
-     "q": "Which creole language is widely spoken in the Solomon Islands?",
-     "a": "Pijin",
-     "wrong": [
-      "Tok Pisin",
-      "Bislama",
-      "Hiri Motu"
-     ],
-     "why": "English is official."
-    },
-    {
-     "level": 1,
-     "q": "Which ocean are the Solomon Islands in?",
-     "a": "Pacific Ocean",
-     "wrong": [
-      "Indian Ocean",
-      "Atlantic Ocean",
-      "Arctic Ocean"
-     ],
-     "why": "They are east of Papua New Guinea."
     },
     {
      "level": 1,
@@ -117,17 +74,6 @@
     },
     {
      "level": 2,
-     "q": "Who became Prime Minister in 2024?",
-     "a": "Jeremiah Manele",
-     "wrong": [
-      "Manasseh Sogavare",
-      "Rick Hou",
-      "Gordon Darcy Lilo"
-     ],
-     "why": "He had been foreign minister."
-    },
-    {
-     "level": 2,
      "q": "Which country did the Solomon Islands switch recognition to from Taiwan in 2019?",
      "a": "China",
      "wrong": [
@@ -136,6 +82,89 @@
       "Australia"
      ],
      "why": "It signed a security pact in 2022."
+    },
+    {
+     "level": 2,
+     "q": "Which canoe prow figures guarded war canoes?",
+     "a": "Nguzu nguzu",
+     "wrong": [
+      "Tiki",
+      "Moai",
+      "Tapa"
+     ],
+     "why": "They are carved in the Western Province."
+    },
+    {
+     "level": 3,
+     "q": "Which old capital on Nggela was destroyed in the war?",
+     "a": "Tulagi",
+     "wrong": [
+      "Gizo",
+      "Auki",
+      "Honiara"
+     ],
+     "why": "Honiara replaced it."
+    },
+    {
+     "level": 3,
+     "q": "Which Pacific Games did Honiara host in 2023?",
+     "a": "2023 Pacific Games",
+     "wrong": [
+      "2019 Pacific Games",
+      "2015 Pacific Games",
+      "2011 Pacific Games"
+     ],
+     "why": "It was the first time."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Solomon Islands?",
+     "a": "Honiara",
+     "wrong": [
+      "Gizo",
+      "Auki",
+      "Tulagi"
+     ],
+     "why": "It is on Guadalcanal."
+    },
+    {
+     "level": 1,
+     "q": "What is the currency of the Solomon Islands?",
+     "a": "Solomon Islands dollar",
+     "wrong": [
+      "Australian dollar",
+      "Kina",
+      "Vatu"
+     ],
+     "why": "Its code is SBD."
+    },
+    {
+     "level": 1,
+     "q": "Which creole language is widely spoken in the Solomon Islands?",
+     "a": "Pijin",
+     "wrong": [
+      "Tok Pisin",
+      "Bislama",
+      "Hiri Motu"
+     ],
+     "why": "English is official."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean are the Solomon Islands in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "They are east of Papua New Guinea."
     },
     {
      "level": 3,
@@ -169,12 +198,7 @@
       "Temotu"
      ],
      "why": "Munda is its main town."
-    }
-   ]
-  },
-  {
-   "name": "Solomon Islands: Places & Culture",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "Which world's largest raised coral atoll is a UNESCO site?",
@@ -185,17 +209,6 @@
       "Tarawa"
      ],
      "why": "Its lake is the biggest in the Pacific islands."
-    },
-    {
-     "level": 1,
-     "q": "Which shell money is made on Malaita?",
-     "a": "Shell money (red and white)",
-     "wrong": [
-      "Wampum",
-      "Cowrie",
-      "Tabu"
-     ],
-     "why": "It is used for bride price."
     },
     {
      "level": 1,
@@ -210,17 +223,6 @@
     },
     {
      "level": 1,
-     "q": "Which wrecks attract divers off Honiara?",
-     "a": "Second World War shipwrecks",
-     "wrong": [
-      "Pirate ships",
-      "Spanish galleons",
-      "Cruise liners"
-     ],
-     "why": "Some lie close to the beach."
-    },
-    {
-     "level": 1,
      "q": "Which famous lagoon in the Western Province is huge?",
      "a": "Marovo Lagoon",
      "wrong": [
@@ -229,28 +231,6 @@
       "Vona Vona Lagoon"
      ],
      "why": "It is one of the largest saltwater lagoons."
-    },
-    {
-     "level": 1,
-     "q": "Which sport is very popular in the Solomon Islands?",
-     "a": "Football and futsal",
-     "wrong": [
-      "Ice hockey",
-      "Baseball",
-      "Cricket"
-     ],
-     "why": "Their futsal team is one of Oceania's best."
-    },
-    {
-     "level": 1,
-     "q": "Which panpipe music is a Solomon Islands tradition?",
-     "a": "Bamboo panpipes",
-     "wrong": [
-      "Bagpipes",
-      "Steel drums",
-      "Didgeridoo"
-     ],
-     "why": "Groups play huge bamboo pipes."
     },
     {
      "level": 2,
@@ -276,14 +256,93 @@
     },
     {
      "level": 2,
-     "q": "Which canoe prow figures guarded war canoes?",
-     "a": "Nguzu nguzu",
+     "q": "Which islands in the far east are Polynesian outliers?",
+     "a": "Tikopia and Anuta",
      "wrong": [
-      "Tiki",
-      "Moai",
-      "Tapa"
+      "Malaita and Guadalcanal",
+      "Choiseul and Isabel",
+      "Makira and Ulawa"
      ],
-     "why": "They are carved in the Western Province."
+     "why": "Their people speak Polynesian languages."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which sport is very popular in the Solomon Islands?",
+     "a": "Football and futsal",
+     "wrong": [
+      "Ice hockey",
+      "Baseball",
+      "Cricket"
+     ],
+     "why": "Their futsal team is one of Oceania's best."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which panpipe music is a Solomon Islands tradition?",
+     "a": "Bamboo panpipes",
+     "wrong": [
+      "Bagpipes",
+      "Steel drums",
+      "Didgeridoo"
+     ],
+     "why": "Groups play huge bamboo pipes."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who became Prime Minister in 2024?",
+     "a": "Jeremiah Manele",
+     "wrong": [
+      "Manasseh Sogavare",
+      "Rick Hou",
+      "Gordon Darcy Lilo"
+     ],
+     "why": "He had been foreign minister."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which shell money is made on Malaita?",
+     "a": "Shell money (red and white)",
+     "wrong": [
+      "Wampum",
+      "Cowrie",
+      "Tabu"
+     ],
+     "why": "It is used for bride price."
+    },
+    {
+     "level": 1,
+     "q": "Which wrecks attract divers off Honiara?",
+     "a": "Second World War shipwrecks",
+     "wrong": [
+      "Pirate ships",
+      "Spanish galleons",
+      "Cruise liners"
+     ],
+     "why": "Some lie close to the beach."
     },
     {
      "level": 2,
@@ -297,28 +356,6 @@
      "why": "Fish is eaten often."
     },
     {
-     "level": 2,
-     "q": "Which islands in the far east are Polynesian outliers?",
-     "a": "Tikopia and Anuta",
-     "wrong": [
-      "Malaita and Guadalcanal",
-      "Choiseul and Isabel",
-      "Makira and Ulawa"
-     ],
-     "why": "Their people speak Polynesian languages."
-    },
-    {
-     "level": 3,
-     "q": "Which old capital on Nggela was destroyed in the war?",
-     "a": "Tulagi",
-     "wrong": [
-      "Gizo",
-      "Auki",
-      "Honiara"
-     ],
-     "why": "Honiara replaced it."
-    },
-    {
      "level": 3,
      "q": "Which hilltop memorial in Honiara honours US forces?",
      "a": "Guadalcanal American Memorial (Skyline Ridge)",
@@ -328,17 +365,6 @@
       "Punchbowl Memorial"
      ],
      "why": "It was built in 1992."
-    },
-    {
-     "level": 3,
-     "q": "Which Pacific Games did Honiara host in 2023?",
-     "a": "2023 Pacific Games",
-     "wrong": [
-      "2019 Pacific Games",
-      "2015 Pacific Games",
-      "2011 Pacific Games"
-     ],
-     "why": "It was the first time."
     }
    ]
   }

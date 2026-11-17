@@ -3,19 +3,9 @@
  "country": "GR",
  "topics": [
   {
-   "name": "Greece: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which city-state was the birthplace of democracy?",
-     "a": "Athens",
-     "wrong": [
-      "Sparta",
-      "Corinth",
-      "Thebes"
-     ],
-     "why": "Citizens voted in the assembly."
-    },
     {
      "level": 1,
      "q": "Which Macedonian king conquered an empire reaching India?",
@@ -29,39 +19,6 @@
     },
     {
      "level": 1,
-     "q": "Which temple on the Acropolis was dedicated to Athena?",
-     "a": "Parthenon",
-     "wrong": [
-      "Erechtheion",
-      "Temple of Zeus",
-      "Temple of Hephaestus"
-     ],
-     "why": "It was finished in 432 BC."
-    },
-    {
-     "level": 1,
-     "q": "Where were the ancient Olympic Games held?",
-     "a": "Olympia",
-     "wrong": [
-      "Athens",
-      "Delphi",
-      "Sparta"
-     ],
-     "why": "They began in 776 BC."
-    },
-    {
-     "level": 1,
-     "q": "Which philosopher was the teacher of Plato?",
-     "a": "Socrates",
-     "wrong": [
-      "Aristotle",
-      "Pythagoras",
-      "Diogenes"
-     ],
-     "why": "He left no writings of his own."
-    },
-    {
-     "level": 1,
      "q": "Which Spartan king fought at Thermopylae in 480 BC?",
      "a": "Leonidas",
      "wrong": [
@@ -70,17 +27,6 @@
       "Pausanias"
      ],
      "why": "300 Spartans led the defence."
-    },
-    {
-     "level": 1,
-     "q": "Which poet is said to have written the 'Iliad' and the 'Odyssey'?",
-     "a": "Homer",
-     "wrong": [
-      "Hesiod",
-      "Sophocles",
-      "Virgil"
-     ],
-     "why": "They tell of the Trojan War and Odysseus's journey home."
     },
     {
      "level": 2,
@@ -92,50 +38,6 @@
       "1912"
      ],
      "why": "25 March is Independence Day."
-    },
-    {
-     "level": 2,
-     "q": "Which philosopher taught Alexander the Great?",
-     "a": "Aristotle",
-     "wrong": [
-      "Plato",
-      "Socrates",
-      "Zeno"
-     ],
-     "why": "He founded the Lyceum in Athens."
-    },
-    {
-     "level": 2,
-     "q": "Which sanctuary was home to the famous oracle of Apollo?",
-     "a": "Delphi",
-     "wrong": [
-      "Olympia",
-      "Dodona",
-      "Delos"
-     ],
-     "why": "It was seen as the centre of the world."
-    },
-    {
-     "level": 2,
-     "q": "Which Bronze Age palace on Crete is linked to the Minotaur legend?",
-     "a": "Knossos",
-     "wrong": [
-      "Mycenae",
-      "Pylos",
-      "Phaistos"
-     ],
-     "why": "The Minoans built it."
-    },
-    {
-     "level": 2,
-     "q": "Which statesman led Athens in its golden age?",
-     "a": "Pericles",
-     "wrong": [
-      "Solon",
-      "Themistocles",
-      "Cleisthenes"
-     ],
-     "why": "He built the Parthenon."
     },
     {
      "level": 3,
@@ -158,23 +60,24 @@
       "Mystras"
      ],
      "why": "Greek rule there ended."
-    },
-    {
-     "level": 3,
-     "q": "Which mathematician gave his name to a theorem about right-angled triangles?",
-     "a": "Pythagoras",
-     "wrong": [
-      "Euclid",
-      "Archimedes",
-      "Thales"
-     ],
-     "why": "He lived on Samos."
     }
    ]
   },
   {
-   "name": "Greece: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 2,
+     "q": "Which sanctuary was home to the famous oracle of Apollo?",
+     "a": "Delphi",
+     "wrong": [
+      "Olympia",
+      "Dodona",
+      "Delos"
+     ],
+     "why": "It was seen as the centre of the world."
+    },
     {
      "level": 1,
      "q": "What is the capital of Greece?",
@@ -218,6 +121,213 @@
       "Mount Ida"
      ],
      "why": "It is Greece's highest mountain."
+    },
+    {
+     "level": 3,
+     "q": "Which self-governing monastic peninsula bans women?",
+     "a": "Mount Athos",
+     "wrong": [
+      "Meteora",
+      "Patmos",
+      "Delos"
+     ],
+     "why": "It has 20 monasteries."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Where were the ancient Olympic Games held?",
+     "a": "Olympia",
+     "wrong": [
+      "Athens",
+      "Delphi",
+      "Sparta"
+     ],
+     "why": "They began in 776 BC."
+    },
+    {
+     "level": 2,
+     "q": "Which Greek basketball star won NBA MVP twice?",
+     "a": "Giannis Antetokounmpo",
+     "wrong": [
+      "Nikos Galis",
+      "Kostas Sloukas",
+      "Vassilis Spanoulis"
+     ],
+     "why": "He is nicknamed the 'Greek Freak'."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Greece win the European football championship?",
+     "a": "2004",
+     "wrong": [
+      "1980",
+      "2008",
+      "1996"
+     ],
+     "why": "They beat hosts Portugal in the final."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which composer wrote the music for 'Zorba the Greek'?",
+     "a": "Mikis Theodorakis",
+     "wrong": [
+      "Vangelis",
+      "Manos Hatzidakis",
+      "Yanni"
+     ],
+     "why": "It made the sirtaki dance famous."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which composer won an Oscar for the score of 'Chariots of Fire'?",
+     "a": "Vangelis",
+     "wrong": [
+      "Mikis Theodorakis",
+      "Manos Hatzidakis",
+      "Yanni"
+     ],
+     "why": "He was born in Volos."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which poet is said to have written the 'Iliad' and the 'Odyssey'?",
+     "a": "Homer",
+     "wrong": [
+      "Hesiod",
+      "Sophocles",
+      "Virgil"
+     ],
+     "why": "They tell of the Trojan War and Odysseus's journey home."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which city-state was the birthplace of democracy?",
+     "a": "Athens",
+     "wrong": [
+      "Sparta",
+      "Corinth",
+      "Thebes"
+     ],
+     "why": "Citizens voted in the assembly."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which island is the birthplace of Hippocrates?",
+     "a": "Kos",
+     "wrong": [
+      "Rhodes",
+      "Samos",
+      "Lesbos"
+     ],
+     "why": "He is called the father of medicine."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which temple on the Acropolis was dedicated to Athena?",
+     "a": "Parthenon",
+     "wrong": [
+      "Erechtheion",
+      "Temple of Zeus",
+      "Temple of Hephaestus"
+     ],
+     "why": "It was finished in 432 BC."
+    },
+    {
+     "level": 1,
+     "q": "Which philosopher was the teacher of Plato?",
+     "a": "Socrates",
+     "wrong": [
+      "Aristotle",
+      "Pythagoras",
+      "Diogenes"
+     ],
+     "why": "He left no writings of his own."
+    },
+    {
+     "level": 2,
+     "q": "Which philosopher taught Alexander the Great?",
+     "a": "Aristotle",
+     "wrong": [
+      "Plato",
+      "Socrates",
+      "Zeno"
+     ],
+     "why": "He founded the Lyceum in Athens."
+    },
+    {
+     "level": 2,
+     "q": "Which Bronze Age palace on Crete is linked to the Minotaur legend?",
+     "a": "Knossos",
+     "wrong": [
+      "Mycenae",
+      "Pylos",
+      "Phaistos"
+     ],
+     "why": "The Minoans built it."
+    },
+    {
+     "level": 2,
+     "q": "Which statesman led Athens in its golden age?",
+     "a": "Pericles",
+     "wrong": [
+      "Solon",
+      "Themistocles",
+      "Cleisthenes"
+     ],
+     "why": "He built the Parthenon."
+    },
+    {
+     "level": 3,
+     "q": "Which mathematician gave his name to a theorem about right-angled triangles?",
+     "a": "Pythagoras",
+     "wrong": [
+      "Euclid",
+      "Archimedes",
+      "Thales"
+     ],
+     "why": "He lived on Samos."
     },
     {
      "level": 1,
@@ -273,72 +383,6 @@
       "Hosios Loukas"
      ],
      "why": "Their name means 'suspended in the air'."
-    },
-    {
-     "level": 2,
-     "q": "Which island is the birthplace of Hippocrates?",
-     "a": "Kos",
-     "wrong": [
-      "Rhodes",
-      "Samos",
-      "Lesbos"
-     ],
-     "why": "He is called the father of medicine."
-    },
-    {
-     "level": 2,
-     "q": "Which Greek basketball star won NBA MVP twice?",
-     "a": "Giannis Antetokounmpo",
-     "wrong": [
-      "Nikos Galis",
-      "Kostas Sloukas",
-      "Vassilis Spanoulis"
-     ],
-     "why": "He is nicknamed the 'Greek Freak'."
-    },
-    {
-     "level": 2,
-     "q": "Which composer wrote the music for 'Zorba the Greek'?",
-     "a": "Mikis Theodorakis",
-     "wrong": [
-      "Vangelis",
-      "Manos Hatzidakis",
-      "Yanni"
-     ],
-     "why": "It made the sirtaki dance famous."
-    },
-    {
-     "level": 3,
-     "q": "In which year did Greece win the European football championship?",
-     "a": "2004",
-     "wrong": [
-      "1980",
-      "2008",
-      "1996"
-     ],
-     "why": "They beat hosts Portugal in the final."
-    },
-    {
-     "level": 3,
-     "q": "Which composer won an Oscar for the score of 'Chariots of Fire'?",
-     "a": "Vangelis",
-     "wrong": [
-      "Mikis Theodorakis",
-      "Manos Hatzidakis",
-      "Yanni"
-     ],
-     "why": "He was born in Volos."
-    },
-    {
-     "level": 3,
-     "q": "Which self-governing monastic peninsula bans women?",
-     "a": "Mount Athos",
-     "wrong": [
-      "Meteora",
-      "Patmos",
-      "Delos"
-     ],
-     "why": "It has 20 monasteries."
     }
    ]
   }

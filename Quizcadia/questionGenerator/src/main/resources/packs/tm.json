@@ -3,19 +3,9 @@
  "country": "TM",
  "topics": [
   {
-   "name": "Turkmenistan: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Turkmenistan?",
-     "a": "Ashgabat",
-     "wrong": [
-      "Türkmenabat",
-      "Mary",
-      "Dashoguz"
-     ],
-     "why": "It has the most white marble buildings in the world."
-    },
     {
      "level": 1,
      "q": "In which year did Turkmenistan become independent?",
@@ -29,39 +19,6 @@
     },
     {
      "level": 1,
-     "q": "What is Turkmenistan's currency?",
-     "a": "Manat",
-     "wrong": [
-      "Som",
-      "Tenge",
-      "Somoni"
-     ],
-     "why": "Azerbaijan's currency has the same name."
-    },
-    {
-     "level": 1,
-     "q": "Which burning gas crater is called the 'Door to Hell'?",
-     "a": "Darvaza gas crater",
-     "wrong": [
-      "Mount Doom",
-      "Valley of Fire",
-      "Gates of Hades"
-     ],
-     "why": "It has burned since 1971."
-    },
-    {
-     "level": 1,
-     "q": "Which desert covers most of Turkmenistan?",
-     "a": "Karakum Desert",
-     "wrong": [
-      "Kyzylkum",
-      "Gobi",
-      "Taklamakan"
-     ],
-     "why": "Its name means 'black sand'."
-    },
-    {
-     "level": 1,
      "q": "Which status did the UN recognise for Turkmenistan in 1995?",
      "a": "Permanent neutrality",
      "wrong": [
@@ -70,17 +27,6 @@
       "Free trade status"
      ],
      "why": "It is celebrated each December."
-    },
-    {
-     "level": 1,
-     "q": "Who has been President of Turkmenistan since 2022?",
-     "a": "Serdar Berdimuhamedow",
-     "wrong": [
-      "Gurbanguly Berdimuhamedow",
-      "Saparmurat Niyazov",
-      "Kakageldi Gurbanov"
-     ],
-     "why": "He took over from his father."
     },
     {
      "level": 2,
@@ -92,17 +38,6 @@
       "Rashid Meredow"
      ],
      "why": "He renamed the months after his family."
-    },
-    {
-     "level": 2,
-     "q": "Which book written by Niyazov was required reading?",
-     "a": "Ruhnama",
-     "wrong": [
-      "Manas",
-      "Shahnameh",
-      "Gorkut Ata"
-     ],
-     "why": "It was part of the driving test."
     },
     {
      "level": 2,
@@ -125,28 +60,6 @@
       "Persepolis"
      ],
      "why": "It has old fortresses."
-    },
-    {
-     "level": 2,
-     "q": "Which resource gives Turkmenistan great wealth?",
-     "a": "Natural gas",
-     "wrong": [
-      "Oil",
-      "Gold",
-      "Copper"
-     ],
-     "why": "It has the fourth-largest reserves in the world."
-    },
-    {
-     "level": 3,
-     "q": "Which former President is now Chairman of the People's Council?",
-     "a": "Gurbanguly Berdimuhamedow",
-     "wrong": [
-      "Saparmurat Niyazov",
-      "Serdar Berdimuhamedow",
-      "Rashid Meredow"
-     ],
-     "why": "He is called 'Arkadag' (the Protector)."
     },
     {
      "level": 3,
@@ -173,7 +86,175 @@
    ]
   },
   {
-   "name": "Turkmenistan: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Turkmenistan?",
+     "a": "Ashgabat",
+     "wrong": [
+      "Türkmenabat",
+      "Mary",
+      "Dashoguz"
+     ],
+     "why": "It has the most white marble buildings in the world."
+    },
+    {
+     "level": 1,
+     "q": "Which burning gas crater is called the 'Door to Hell'?",
+     "a": "Darvaza gas crater",
+     "wrong": [
+      "Mount Doom",
+      "Valley of Fire",
+      "Gates of Hades"
+     ],
+     "why": "It has burned since 1971."
+    },
+    {
+     "level": 1,
+     "q": "Which desert covers most of Turkmenistan?",
+     "a": "Karakum Desert",
+     "wrong": [
+      "Kyzylkum",
+      "Gobi",
+      "Taklamakan"
+     ],
+     "why": "Its name means 'black sand'."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies to the west of Turkmenistan?",
+     "a": "Caspian Sea",
+     "wrong": [
+      "Black Sea",
+      "Aral Sea",
+      "Mediterranean Sea"
+     ],
+     "why": "It is the world's largest lake."
+    },
+    {
+     "level": 2,
+     "q": "Which underground lake in a cave is warm enough to swim in?",
+     "a": "Kow Ata",
+     "wrong": [
+      "Blue Lake",
+      "Lake Sevan",
+      "Dead Sea"
+     ],
+     "why": "It is around 33 °C."
+    },
+    {
+     "level": 2,
+     "q": "Which canal from the Amu Darya is one of the world's longest?",
+     "a": "Karakum Canal",
+     "wrong": [
+      "Suez Canal",
+      "Grand Canal",
+      "Panama Canal"
+     ],
+     "why": "It is about 1,375 km long."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain range lines the border with Iran?",
+     "a": "Kopet Dag",
+     "wrong": [
+      "Pamir",
+      "Tian Shan",
+      "Zagros"
+     ],
+     "why": "Ashgabat sits at its foot."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which book written by Niyazov was required reading?",
+     "a": "Ruhnama",
+     "wrong": [
+      "Manas",
+      "Shahnameh",
+      "Gorkut Ata"
+     ],
+     "why": "It was part of the driving test."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been President of Turkmenistan since 2022?",
+     "a": "Serdar Berdimuhamedow",
+     "wrong": [
+      "Gurbanguly Berdimuhamedow",
+      "Saparmurat Niyazov",
+      "Kakageldi Gurbanov"
+     ],
+     "why": "He took over from his father."
+    },
+    {
+     "level": 3,
+     "q": "Which former President is now Chairman of the People's Council?",
+     "a": "Gurbanguly Berdimuhamedow",
+     "wrong": [
+      "Saparmurat Niyazov",
+      "Serdar Berdimuhamedow",
+      "Rashid Meredow"
+     ],
+     "why": "He is called 'Arkadag' (the Protector)."
+    },
+    {
+     "level": 3,
+     "q": "What is the title of Turkmenistan's former President, meaning 'Protector'?",
+     "a": "Arkadag",
+     "wrong": [
+      "Turkmenbashi",
+      "Serdar",
+      "Beg"
+     ],
+     "why": "A new city is named after him."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Ashgabat landmark had a golden statue of Niyazov that turned with the sun?",
+     "a": "Arch of Neutrality",
+     "wrong": [
+      "Independence Monument",
+      "Ruhnama Monument",
+      "Earthquake Memorial"
+     ],
+     "why": "It was moved to the suburbs in 2010."
+    },
+    {
+     "level": 2,
+     "q": "Which dog breed is a national symbol and has a golden statue?",
+     "a": "Alabai",
+     "wrong": [
+      "Akita",
+      "Afghan hound",
+      "Saluki"
+     ],
+     "why": "It is a Central Asian shepherd dog."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
    "questions": [
     {
      "level": 1,
@@ -188,6 +269,45 @@
     },
     {
      "level": 1,
+     "q": "Which camel is common in Turkmenistan's desert?",
+     "a": "Dromedary (one-hump camel)",
+     "wrong": [
+      "Bactrian camel",
+      "Llama",
+      "Alpaca"
+     ],
+     "why": "It is well suited to the heat."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Turkmenistan's currency?",
+     "a": "Manat",
+     "wrong": [
+      "Som",
+      "Tenge",
+      "Somoni"
+     ],
+     "why": "Azerbaijan's currency has the same name."
+    },
+    {
+     "level": 2,
+     "q": "Which resource gives Turkmenistan great wealth?",
+     "a": "Natural gas",
+     "wrong": [
+      "Oil",
+      "Gold",
+      "Copper"
+     ],
+     "why": "It has the fourth-largest reserves in the world."
+    },
+    {
+     "level": 1,
      "q": "Which hand-knotted rugs are famous from Turkmenistan?",
      "a": "Turkmen carpets",
      "wrong": [
@@ -196,17 +316,6 @@
       "Turkish dhurries"
      ],
      "why": "A carpet design is on the flag."
-    },
-    {
-     "level": 1,
-     "q": "Which sea lies to the west of Turkmenistan?",
-     "a": "Caspian Sea",
-     "wrong": [
-      "Black Sea",
-      "Aral Sea",
-      "Mediterranean Sea"
-     ],
-     "why": "It is the world's largest lake."
     },
     {
      "level": 1,
@@ -232,17 +341,6 @@
     },
     {
      "level": 1,
-     "q": "Which camel is common in Turkmenistan's desert?",
-     "a": "Dromedary (one-hump camel)",
-     "wrong": [
-      "Bactrian camel",
-      "Llama",
-      "Alpaca"
-     ],
-     "why": "It is well suited to the heat."
-    },
-    {
-     "level": 1,
      "q": "Which language is official in Turkmenistan?",
      "a": "Turkmen",
      "wrong": [
@@ -251,17 +349,6 @@
       "Uzbek"
      ],
      "why": "It is a Turkic language."
-    },
-    {
-     "level": 2,
-     "q": "Which Ashgabat landmark had a golden statue of Niyazov that turned with the sun?",
-     "a": "Arch of Neutrality",
-     "wrong": [
-      "Independence Monument",
-      "Ruhnama Monument",
-      "Earthquake Memorial"
-     ],
-     "why": "It was moved to the suburbs in 2010."
     },
     {
      "level": 2,
@@ -275,50 +362,6 @@
      "why": "It holds Niyazov's tomb."
     },
     {
-     "level": 2,
-     "q": "Which underground lake in a cave is warm enough to swim in?",
-     "a": "Kow Ata",
-     "wrong": [
-      "Blue Lake",
-      "Lake Sevan",
-      "Dead Sea"
-     ],
-     "why": "It is around 33 °C."
-    },
-    {
-     "level": 2,
-     "q": "Which canal from the Amu Darya is one of the world's longest?",
-     "a": "Karakum Canal",
-     "wrong": [
-      "Suez Canal",
-      "Grand Canal",
-      "Panama Canal"
-     ],
-     "why": "It is about 1,375 km long."
-    },
-    {
-     "level": 2,
-     "q": "Which dog breed is a national symbol and has a golden statue?",
-     "a": "Alabai",
-     "wrong": [
-      "Akita",
-      "Afghan hound",
-      "Saluki"
-     ],
-     "why": "It is a Central Asian shepherd dog."
-    },
-    {
-     "level": 3,
-     "q": "Which mountain range lines the border with Iran?",
-     "a": "Kopet Dag",
-     "wrong": [
-      "Pamir",
-      "Tian Shan",
-      "Zagros"
-     ],
-     "why": "Ashgabat sits at its foot."
-    },
-    {
      "level": 3,
      "q": "Which day celebrates the horse each April?",
      "a": "Turkmen Horse Day",
@@ -328,17 +371,6 @@
       "Day of the Rider"
      ],
      "why": "It is a national holiday."
-    },
-    {
-     "level": 3,
-     "q": "What is the title of Turkmenistan's former President, meaning 'Protector'?",
-     "a": "Arkadag",
-     "wrong": [
-      "Turkmenbashi",
-      "Serdar",
-      "Beg"
-     ],
-     "why": "A new city is named after him."
     }
    ]
   }

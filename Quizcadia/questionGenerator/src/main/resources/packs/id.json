@@ -3,7 +3,8 @@
  "country": "ID",
  "topics": [
   {
-   "name": "Indonesia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -40,17 +41,6 @@
     },
     {
      "level": 1,
-     "q": "Which huge Buddhist temple stands in Central Java?",
-     "a": "Borobudur",
-     "wrong": [
-      "Prambanan",
-      "Angkor Wat",
-      "Shwedagon"
-     ],
-     "why": "It is the world's largest Buddhist temple."
-    },
-    {
-     "level": 1,
      "q": "Which president ruled Indonesia from 1967 to 1998?",
      "a": "Suharto",
      "wrong": [
@@ -59,39 +49,6 @@
       "B. J. Habibie"
      ],
      "why": "His era was called the New Order."
-    },
-    {
-     "level": 1,
-     "q": "Which 'Spice Islands' drew Europeans to Indonesia?",
-     "a": "The Maluku Islands",
-     "wrong": [
-      "The Riau Islands",
-      "Sumatra",
-      "Bali"
-     ],
-     "why": "They grew nutmeg and cloves."
-    },
-    {
-     "level": 1,
-     "q": "What is Indonesia's national motto?",
-     "a": "Bhinneka Tunggal Ika",
-     "wrong": [
-      "Pancasila",
-      "Merdeka",
-      "Gotong royong"
-     ],
-     "why": "It means 'Unity in Diversity'."
-    },
-    {
-     "level": 2,
-     "q": "Which Hindu temple complex near Yogyakarta is a UNESCO site?",
-     "a": "Prambanan",
-     "wrong": [
-      "Borobudur",
-      "Besakih",
-      "Tanah Lot"
-     ],
-     "why": "It honours Brahma, Vishnu and Shiva."
     },
     {
      "level": 2,
@@ -103,17 +60,6 @@
       "Demak"
      ],
      "why": "Its minister Gajah Mada vowed to unite the islands."
-    },
-    {
-     "level": 2,
-     "q": "What are Indonesia's five founding principles called?",
-     "a": "Pancasila",
-     "wrong": [
-      "Bhinneka",
-      "Reformasi",
-      "Merdeka"
-     ],
-     "why": "Sukarno set them out in 1945."
     },
     {
      "level": 2,
@@ -158,7 +104,102 @@
       "Kelud"
      ],
      "why": "It lies in the Sunda Strait."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Hindu temple complex near Yogyakarta is a UNESCO site?",
+     "a": "Prambanan",
+     "wrong": [
+      "Borobudur",
+      "Besakih",
+      "Tanah Lot"
+     ],
+     "why": "It honours Brahma, Vishnu and Shiva."
     },
+    {
+     "level": 1,
+     "q": "Which city has long been Indonesia's capital?",
+     "a": "Jakarta",
+     "wrong": [
+      "Surabaya",
+      "Bandung",
+      "Medan"
+     ],
+     "why": "A new capital, Nusantara, is being built on Borneo."
+    },
+    {
+     "level": 1,
+     "q": "Which is the world's most populous island?",
+     "a": "Java",
+     "wrong": [
+      "Sumatra",
+      "Honshu",
+      "Borneo"
+     ],
+     "why": "More than half of Indonesians live there."
+    },
+    {
+     "level": 2,
+     "q": "Roughly how many islands does Indonesia have?",
+     "a": "About 17,000",
+     "wrong": [
+      "About 1,700",
+      "About 7,000",
+      "About 50,000"
+     ],
+     "why": "It is the world's largest archipelago country."
+    },
+    {
+     "level": 3,
+     "q": "What is Indonesia's highest mountain?",
+     "a": "Puncak Jaya",
+     "wrong": [
+      "Mount Rinjani",
+      "Mount Semeru",
+      "Mount Kerinci"
+     ],
+     "why": "It is in Papua and has glaciers."
+    },
+    {
+     "level": 3,
+     "q": "Which Sumatran lake fills a huge supervolcano caldera?",
+     "a": "Lake Toba",
+     "wrong": [
+      "Lake Maninjau",
+      "Lake Singkarak",
+      "Lake Batur"
+     ],
+     "why": "Samosir Island lies in its middle."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which bamboo instrument from West Java is on UNESCO's list?",
+     "a": "Angklung",
+     "wrong": [
+      "Sasando",
+      "Kendang",
+      "Suling"
+     ],
+     "why": "Each bamboo tube plays one note."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
     {
      "level": 3,
      "q": "Who became Indonesia's President in 2024?",
@@ -173,18 +214,80 @@
    ]
   },
   {
-   "name": "Indonesia: Places & Culture",
+   "category": "Animals",
+   "name": "Animals",
    "questions": [
     {
      "level": 1,
-     "q": "Which city has long been Indonesia's capital?",
-     "a": "Jakarta",
+     "q": "Which giant lizard lives on Komodo Island?",
+     "a": "Komodo dragon",
      "wrong": [
-      "Surabaya",
-      "Bandung",
-      "Medan"
+      "Water monitor",
+      "Saltwater crocodile",
+      "Tuatara"
      ],
-     "why": "A new capital, Nusantara, is being built on Borneo."
+     "why": "It is the world's largest lizard."
+    },
+    {
+     "level": 2,
+     "q": "Which great ape lives in the forests of Sumatra and Borneo?",
+     "a": "Orangutan",
+     "wrong": [
+      "Gorilla",
+      "Chimpanzee",
+      "Bonobo"
+     ],
+     "why": "Its name means 'person of the forest'."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which huge Buddhist temple stands in Central Java?",
+     "a": "Borobudur",
+     "wrong": [
+      "Prambanan",
+      "Angkor Wat",
+      "Shwedagon"
+     ],
+     "why": "It is the world's largest Buddhist temple."
+    },
+    {
+     "level": 1,
+     "q": "Which 'Spice Islands' drew Europeans to Indonesia?",
+     "a": "The Maluku Islands",
+     "wrong": [
+      "The Riau Islands",
+      "Sumatra",
+      "Bali"
+     ],
+     "why": "They grew nutmeg and cloves."
+    },
+    {
+     "level": 1,
+     "q": "What is Indonesia's national motto?",
+     "a": "Bhinneka Tunggal Ika",
+     "wrong": [
+      "Pancasila",
+      "Merdeka",
+      "Gotong royong"
+     ],
+     "why": "It means 'Unity in Diversity'."
+    },
+    {
+     "level": 2,
+     "q": "What are Indonesia's five founding principles called?",
+     "a": "Pancasila",
+     "wrong": [
+      "Bhinneka",
+      "Reformasi",
+      "Merdeka"
+     ],
+     "why": "Sukarno set them out in 1945."
     },
     {
      "level": 1,
@@ -196,17 +299,6 @@
       "Sumatra"
      ],
      "why": "Most Balinese are Hindu."
-    },
-    {
-     "level": 1,
-     "q": "Which giant lizard lives on Komodo Island?",
-     "a": "Komodo dragon",
-     "wrong": [
-      "Water monitor",
-      "Saltwater crocodile",
-      "Tuatara"
-     ],
-     "why": "It is the world's largest lizard."
     },
     {
      "level": 1,
@@ -232,17 +324,6 @@
     },
     {
      "level": 1,
-     "q": "Which is the world's most populous island?",
-     "a": "Java",
-     "wrong": [
-      "Sumatra",
-      "Honshu",
-      "Borneo"
-     ],
-     "why": "More than half of Indonesians live there."
-    },
-    {
-     "level": 1,
      "q": "What is Indonesia's currency?",
      "a": "Rupiah",
      "wrong": [
@@ -251,17 +332,6 @@
       "Peso"
      ],
      "why": "Its code is IDR."
-    },
-    {
-     "level": 2,
-     "q": "Which great ape lives in the forests of Sumatra and Borneo?",
-     "a": "Orangutan",
-     "wrong": [
-      "Gorilla",
-      "Chimpanzee",
-      "Bonobo"
-     ],
-     "why": "Its name means 'person of the forest'."
     },
     {
      "level": 2,
@@ -287,17 +357,6 @@
     },
     {
      "level": 2,
-     "q": "Roughly how many islands does Indonesia have?",
-     "a": "About 17,000",
-     "wrong": [
-      "About 1,700",
-      "About 7,000",
-      "About 50,000"
-     ],
-     "why": "It is the world's largest archipelago country."
-    },
-    {
-     "level": 2,
      "q": "Which ensemble of gongs and metallophones comes from Java and Bali?",
      "a": "Gamelan",
      "wrong": [
@@ -306,39 +365,6 @@
       "Mbira"
      ],
      "why": "It accompanies dance and puppetry."
-    },
-    {
-     "level": 3,
-     "q": "Which bamboo instrument from West Java is on UNESCO's list?",
-     "a": "Angklung",
-     "wrong": [
-      "Sasando",
-      "Kendang",
-      "Suling"
-     ],
-     "why": "Each bamboo tube plays one note."
-    },
-    {
-     "level": 3,
-     "q": "What is Indonesia's highest mountain?",
-     "a": "Puncak Jaya",
-     "wrong": [
-      "Mount Rinjani",
-      "Mount Semeru",
-      "Mount Kerinci"
-     ],
-     "why": "It is in Papua and has glaciers."
-    },
-    {
-     "level": 3,
-     "q": "Which Sumatran lake fills a huge supervolcano caldera?",
-     "a": "Lake Toba",
-     "wrong": [
-      "Lake Maninjau",
-      "Lake Singkarak",
-      "Lake Batur"
-     ],
-     "why": "Samosir Island lies in its middle."
     }
    ]
   }

@@ -1,132 +1,1122 @@
 {
-  "category": "Bangladesh",
-  "country": "BD",
-  "topics": [
+ "category": "Bangladesh",
+ "country": "BD",
+ "topics": [
+  {
+   "category": "History",
+   "name": "History",
+   "questions": [
     {
-      "name": "Bangladesh History",
-      "questions": [
-        { "level": 1, "q": "On what date is Bangladesh's Independence Day?", "a": "26 March", "wrong": ["16 December", "21 February", "14 August"], "why": "Independence was declared on 26 March 1971." },
-        { "level": 1, "q": "What does Bangladesh celebrate on 16 December?", "a": "Victory Day", "wrong": ["Independence Day", "Language Martyrs' Day", "Pohela Boishakh"], "why": "The Liberation War ended on 16 December 1971." },
-        { "level": 1, "q": "Which founding leader of Bangladesh is called 'Bangabandhu'?", "a": "Sheikh Mujibur Rahman", "wrong": ["Ziaur Rahman", "Tajuddin Ahmad", "Maulana Bhashani"], "why": "Bangabandhu means 'Friend of Bengal'." },
-        { "level": 1, "q": "The 1952 Language Movement demanded recognition of which language?", "a": "Bangla", "wrong": ["Urdu", "English", "Hindi"], "why": "Students were killed in Dhaka on 21 February 1952." },
-        { "level": 1, "q": "UNESCO declared 21 February as what?", "a": "International Mother Language Day", "wrong": ["World Book Day", "World Poetry Day", "International Literacy Day"], "why": "It honours the Language Movement martyrs." },
-        { "level": 1, "q": "What is the 1971 war that created Bangladesh called there?", "a": "Liberation War", "wrong": ["Partition War", "Bengal War", "Freedom Revolt"], "why": "In Bangla it is the Muktijuddho." },
-        { "level": 1, "q": "Which monument in Dhaka honours the Language Movement martyrs?", "a": "Shaheed Minar", "wrong": ["Jatiyo Smriti Soudho", "Ahsan Manzil", "Lalbagh Fort"], "why": "People lay flowers there every 21 February." },
-        { "level": 2, "q": "Which monument at Savar honours those who died in the Liberation War?", "a": "Jatiyo Smriti Soudho", "wrong": ["Shaheed Minar", "Aparajeyo Bangla", "Shikha Anirban"], "why": "It is the National Martyrs' Memorial." },
-        { "level": 2, "q": "Which Mughal fort in Old Dhaka was never finished?", "a": "Lalbagh Fort", "wrong": ["Idrakpur Fort", "Red Fort", "Sonakanda Fort"], "why": "Work stopped in 1684 after the death of the governor's daughter." },
-        { "level": 2, "q": "Which pink palace in Dhaka was home to the Nawabs of Dhaka?", "a": "Ahsan Manzil", "wrong": ["Rose Garden Palace", "Bangabhaban", "Curzon Hall"], "why": "It is now a museum on the Buriganga River." },
-        { "level": 2, "q": "Who became Bangladesh's first woman Prime Minister, in 1991?", "a": "Khaleda Zia", "wrong": ["Sheikh Hasina", "Begum Rokeya", "Sufia Kamal"], "why": "Sheikh Hasina first became Prime Minister in 1996." },
-        { "level": 2, "q": "Which ancient Buddhist monastery at Paharpur is a UNESCO site?", "a": "Somapura Mahavihara", "wrong": ["Nalanda Mahavihara", "Shalban Vihara", "Mahasthangarh"], "why": "It was one of the largest monasteries south of the Himalayas." },
-        { "level": 2, "q": "The Sixty Dome Mosque is in which UNESCO-listed historic city?", "a": "Bagerhat", "wrong": ["Sylhet", "Bogura", "Cumilla"], "why": "Khan Jahan Ali built it in the 15th century." },
-        { "level": 3, "q": "Which ancient city at Bogura is among the oldest urban sites in Bangladesh?", "a": "Mahasthangarh", "wrong": ["Paharpur", "Wari-Bateshwar", "Sonargaon"], "why": "It dates back to at least the 3rd century BCE." },
-        { "level": 3, "q": "Which old capital near Dhaka was the seat of Isa Khan?", "a": "Sonargaon", "wrong": ["Gaur", "Pandua", "Bikrampur"], "why": "It was an important trading town." },
-        { "level": 3, "q": "In which year did Bangladesh adopt its constitution?", "a": "1972", "wrong": ["1971", "1975", "1991"], "why": "It took effect on 16 December 1972." }
-      ]
+     "level": 1,
+     "q": "On what date is Bangladesh's Independence Day?",
+     "a": "26 March",
+     "wrong": [
+      "16 December",
+      "21 February",
+      "14 August"
+     ],
+     "why": "Independence was declared on 26 March 1971."
     },
     {
-      "name": "Bangladesh Geography",
-      "questions": [
-        { "level": 1, "q": "Which city is Bangladesh's capital and largest city?", "a": "Dhaka", "wrong": ["Chattogram", "Khulna", "Rajshahi"], "why": "Its metro area has over 20 million people." },
-        { "level": 1, "q": "Which city is Bangladesh's main seaport?", "a": "Chattogram", "wrong": ["Mongla", "Khulna", "Barishal"], "why": "Most of the country's trade goes through it." },
-        { "level": 1, "q": "Which is the world's longest natural sea beach?", "a": "Cox's Bazar", "wrong": ["Kuakata", "Patenga", "Inani"], "why": "It is about 120 km long." },
-        { "level": 1, "q": "Bangladesh lies mostly on the delta of which rivers?", "a": "Ganges and Brahmaputra", "wrong": ["Indus and Sutlej", "Mekong and Red", "Tigris and Euphrates"], "why": "It is the world's largest river delta." },
-        { "level": 1, "q": "Which mangrove forest in southwest Bangladesh is home to the Bengal tiger?", "a": "Sundarbans", "wrong": ["Lawachara", "Madhupur", "Chunati"], "why": "It is a UNESCO World Heritage Site." },
-        { "level": 1, "q": "Which bay lies to the south of Bangladesh?", "a": "Bay of Bengal", "wrong": ["Arabian Sea", "Andaman Sea", "Gulf of Mannar"], "why": "It is the largest bay in the world." },
-        { "level": 1, "q": "Which division is famous for its tea gardens?", "a": "Sylhet", "wrong": ["Rajshahi", "Barishal", "Khulna"], "why": "Srimangal is called the tea capital." },
-        { "level": 2, "q": "In Bangladesh, the Ganges is known by which name?", "a": "Padma", "wrong": ["Jamuna", "Meghna", "Teesta"], "why": "The Brahmaputra's main channel is the Jamuna." },
-        { "level": 2, "q": "Which bridge across the Padma opened in 2022?", "a": "Padma Bridge", "wrong": ["Bangabandhu Bridge", "Meghna Bridge", "Lalon Shah Bridge"], "why": "It is over 6 km long." },
-        { "level": 2, "q": "Which is Bangladesh's only coral island?", "a": "Saint Martin's Island", "wrong": ["Bhola", "Hatiya", "Sandwip"], "why": "It lies off the southern tip near Teknaf." },
-        { "level": 2, "q": "Apart from India, which country borders Bangladesh?", "a": "Myanmar", "wrong": ["Nepal", "Bhutan", "China"], "why": "The border is in the southeast." },
-        { "level": 2, "q": "Kaptai Lake is in which hill district?", "a": "Rangamati", "wrong": ["Bandarban", "Khagrachari", "Sylhet"], "why": "It was formed by the Kaptai Dam." },
-        { "level": 2, "q": "Which city is known as the 'Silk City'?", "a": "Rajshahi", "wrong": ["Bogura", "Rangpur", "Sirajganj"], "why": "It is also famous for mangoes." },
-        { "level": 3, "q": "Which is Bangladesh's largest island?", "a": "Bhola", "wrong": ["Hatiya", "Sandwip", "Maheshkhali"], "why": "It lies at the mouth of the Meghna." },
-        { "level": 3, "q": "Near Chandpur, the Padma joins which river?", "a": "Meghna", "wrong": ["Jamuna", "Teesta", "Karnaphuli"], "why": "Together they flow into the Bay of Bengal." },
-        { "level": 3, "q": "Which port near the Sundarbans is Bangladesh's second-biggest seaport?", "a": "Mongla", "wrong": ["Payra", "Teknaf", "Kutubdia"], "why": "It is in Bagerhat district." }
-      ]
+     "level": 1,
+     "q": "What does Bangladesh celebrate on 16 December?",
+     "a": "Victory Day",
+     "wrong": [
+      "Independence Day",
+      "Language Martyrs' Day",
+      "Pohela Boishakh"
+     ],
+     "why": "The Liberation War ended on 16 December 1971."
     },
     {
-      "name": "Bangladesh Sport",
-      "questions": [
-        { "level": 1, "q": "Which is the most popular sport in Bangladesh?", "a": "Cricket", "wrong": ["Football", "Kabaddi", "Hockey"], "why": "Big matches bring the country to a standstill." },
-        { "level": 1, "q": "What is Bangladesh's national sport?", "a": "Kabaddi", "wrong": ["Cricket", "Football", "Hockey"], "why": "It is called Ha-du-du in villages." },
-        { "level": 1, "q": "What is the nickname of Bangladesh's cricket team?", "a": "The Tigers", "wrong": ["The Lions", "The Eagles", "The Rhinos"], "why": "It comes from the Royal Bengal tiger." },
-        { "level": 1, "q": "Which is the main cricket stadium in Dhaka?", "a": "Sher-e-Bangla National Stadium", "wrong": ["Zahur Ahmed Chowdhury Stadium", "Sylhet International Stadium", "Khan Shaheb Osman Ali Stadium"], "why": "It is in Mirpur." },
-        { "level": 1, "q": "What is Bangladesh's professional T20 cricket league called?", "a": "Bangladesh Premier League", "wrong": ["Pakistan Super League", "Lanka Premier League", "Dhaka Super League"], "why": "It began in 2012." },
-        { "level": 1, "q": "Which fast bowler is nicknamed 'The Fizz'?", "a": "Mustafizur Rahman", "wrong": ["Taskin Ahmed", "Rubel Hossain", "Shoriful Islam"], "why": "He is known for his slower cutters." },
-        { "level": 1, "q": "Which wicketkeeper-batter is nicknamed 'Mr. Dependable'?", "a": "Mushfiqur Rahim", "wrong": ["Litton Das", "Mahmudullah", "Nurul Hasan"], "why": "He has scored double centuries in Tests." },
-        { "level": 2, "q": "In which year did Bangladesh become a Test-playing nation?", "a": "2000", "wrong": ["1997", "2005", "1999"], "why": "Its first Test was against India in Dhaka." },
-        { "level": 2, "q": "Which tournament did Bangladesh's women win in 2018, beating India in the final?", "a": "Women's T20 Asia Cup", "wrong": ["Women's World Cup", "Asian Games", "Commonwealth Games"], "why": "They won off the last ball." },
-        { "level": 2, "q": "Who captained Bangladesh to the 2015 World Cup quarter-finals?", "a": "Mashrafe Mortaza", "wrong": ["Shakib Al Hasan", "Mushfiqur Rahim", "Tamim Iqbal"], "why": "They beat England to get there." },
-        { "level": 2, "q": "In which year did Bangladesh win the ICC Trophy to reach their first World Cup?", "a": "1997", "wrong": ["1999", "1994", "2001"], "why": "They played the 1999 World Cup in England." },
-        { "level": 2, "q": "In which year did Bangladesh win the Under-19 Cricket World Cup?", "a": "2020", "wrong": ["2016", "2018", "2022"], "why": "They beat India in the final." },
-        { "level": 2, "q": "Which opener became Bangladesh's leading ODI run-scorer?", "a": "Tamim Iqbal", "wrong": ["Habibul Bashar", "Imrul Kayes", "Soumya Sarkar"], "why": "He made over 8,000 ODI runs." },
-        { "level": 3, "q": "Who scored Bangladesh's first Test century, on debut in 2000?", "a": "Aminul Islam", "wrong": ["Habibul Bashar", "Mohammad Ashraful", "Al Sahariar"], "why": "He made 145 against India." },
-        { "level": 3, "q": "Which Bangladeshi became the youngest Test centurion, aged 17?", "a": "Mohammad Ashraful", "wrong": ["Tamim Iqbal", "Shakib Al Hasan", "Mushfiqur Rahim"], "why": "He scored it against Sri Lanka in 2001." },
-        { "level": 3, "q": "Which Bangladeshi archer won a World Championship bronze in 2019?", "a": "Roman Sana", "wrong": ["Sagor Islam", "Diya Siddique", "Hakim Ahmed Rubel"], "why": "It earned him a direct place at the Tokyo Olympics." }
-      ]
+     "level": 1,
+     "q": "Which founding leader of Bangladesh is called 'Bangabandhu'?",
+     "a": "Sheikh Mujibur Rahman",
+     "wrong": [
+      "Ziaur Rahman",
+      "Tajuddin Ahmad",
+      "Maulana Bhashani"
+     ],
+     "why": "Bangabandhu means 'Friend of Bengal'."
     },
     {
-      "name": "Bangladesh Film, TV & Music",
-      "questions": [
-        { "level": 1, "q": "Who wrote Bangladesh's national anthem, 'Amar Shonar Bangla'?", "a": "Rabindranath Tagore", "wrong": ["Kazi Nazrul Islam", "Jasimuddin", "Jibanananda Das"], "why": "He wrote it in 1905." },
-        { "level": 1, "q": "Who is Bangladesh's national poet, called the 'Rebel Poet'?", "a": "Kazi Nazrul Islam", "wrong": ["Rabindranath Tagore", "Shamsur Rahman", "Jasimuddin"], "why": "His poem 'Bidrohi' means 'The Rebel'." },
-        { "level": 1, "q": "Lalon Shah is the best-known singer of which mystic music tradition?", "a": "Baul", "wrong": ["Qawwali", "Bhatiali", "Rabindra Sangeet"], "why": "Baul music is on UNESCO's heritage list." },
-        { "level": 1, "q": "Which rock band was founded by Ayub Bachchu?", "a": "LRB", "wrong": ["Warfaze", "Souls", "Miles"], "why": "LRB stands for Love Runs Blind." },
-        { "level": 1, "q": "Which writer created the characters Himu and Misir Ali?", "a": "Humayun Ahmed", "wrong": ["Muhammed Zafar Iqbal", "Anisul Hoque", "Imdadul Haq Milan"], "why": "He also wrote and directed TV dramas and films." },
-        { "level": 1, "q": "What is Bangladesh's film industry, based in Dhaka, nicknamed?", "a": "Dhallywood", "wrong": ["Lollywood", "Tollywood", "Kollywood"], "why": "It combines Dhaka and Hollywood." },
-        { "level": 1, "q": "Which band was led by the singer James?", "a": "Nagar Baul", "wrong": ["LRB", "Warfaze", "Miles"], "why": "James also sang Hindi film songs." },
-        { "level": 2, "q": "Which actor is called 'Nayak Raj'?", "a": "Razzak", "wrong": ["Salman Shah", "Manna", "Alamgir"], "why": "He starred in hundreds of films." },
-        { "level": 2, "q": "Which film star of the 1990s died in 1996 at only 25?", "a": "Salman Shah", "wrong": ["Riaz", "Shakib Khan", "Ferdous"], "why": "He made 27 films in four years." },
-        { "level": 2, "q": "Who wrote the long poem 'Nakshi Kanthar Math'?", "a": "Jasimuddin", "wrong": ["Kazi Nazrul Islam", "Rabindranath Tagore", "Jibanananda Das"], "why": "He is called the 'Palli Kobi', the rural poet." },
-        { "level": 2, "q": "Which Bangladeshi singer made 'Dama Dam Mast Qalandar' famous in the 1970s?", "a": "Runa Laila", "wrong": ["Sabina Yasmin", "Abida Parveen", "Momtaz"], "why": "She sang in Bangla, Urdu and Hindi." },
-        { "level": 2, "q": "Whose film 'Matir Moina' won a critics' prize at Cannes in 2002?", "a": "Tareque Masud", "wrong": ["Mostofa Sarwar Farooki", "Humayun Ahmed", "Zahir Raihan"], "why": "It won the FIPRESCI Prize." },
-        { "level": 2, "q": "Which poet wrote 'Banalata Sen'?", "a": "Jibanananda Das", "wrong": ["Shamsur Rahman", "Al Mahmud", "Sufia Kamal"], "why": "It is one of the most loved Bangla poems." },
-        { "level": 3, "q": "Who directed the 1970 film 'Jibon Theke Neya'?", "a": "Zahir Raihan", "wrong": ["Tareque Masud", "Satyajit Ray", "Alamgir Kabir"], "why": "It was a political allegory before the Liberation War." },
-        { "level": 3, "q": "Which writer wrote the feminist story 'Sultana's Dream'?", "a": "Begum Rokeya", "wrong": ["Sufia Kamal", "Taslima Nasrin", "Selina Hossain"], "why": "It imagined a land run by women, in 1905." },
-        { "level": 3, "q": "Which poet wrote 'Swadhinata Tumi'?", "a": "Shamsur Rahman", "wrong": ["Nirmalendu Goon", "Helal Hafiz", "Syed Shamsul Haq"], "why": "It is a poem about freedom in 1971." }
-      ]
+     "level": 1,
+     "q": "The 1952 Language Movement demanded recognition of which language?",
+     "a": "Bangla",
+     "wrong": [
+      "Urdu",
+      "English",
+      "Hindi"
+     ],
+     "why": "Students were killed in Dhaka on 21 February 1952."
     },
     {
-      "name": "Bangladesh Food & Traditions",
-      "questions": [
-        { "level": 1, "q": "What is the Bengali New Year called?", "a": "Pohela Boishakh", "wrong": ["Nabanna", "Pohela Falgun", "Chaitra Sankranti"], "why": "It falls on 14 April." },
-        { "level": 1, "q": "What is Bangladesh's national fish?", "a": "Hilsa", "wrong": ["Rohu", "Pangas", "Koi"], "why": "It is called ilish in Bangla." },
-        { "level": 1, "q": "Which dish of soaked rice is eaten with fried hilsa on Pohela Boishakh?", "a": "Panta bhat", "wrong": ["Khichuri", "Biryani", "Polao"], "why": "The rice is soaked in water overnight." },
-        { "level": 1, "q": "Bogura is famous for which sweet dish?", "a": "Mishti doi", "wrong": ["Roshmalai", "Chomchom", "Kacha golla"], "why": "It is sweet yoghurt set in clay pots." },
-        { "level": 1, "q": "Which festival welcomes spring, with people dressed in yellow?", "a": "Pohela Falgun", "wrong": ["Nabanna", "Pohela Boishakh", "Ekushey"], "why": "It is the first day of the month of Falgun." },
-        { "level": 1, "q": "Which embroidered quilt is a famous Bangladeshi folk art?", "a": "Nakshi kantha", "wrong": ["Jamdani", "Batik", "Shital pati"], "why": "It is stitched from layers of old saris." },
-        { "level": 1, "q": "What is Bangladesh's national fruit?", "a": "Jackfruit", "wrong": ["Mango", "Banana", "Litchi"], "why": "It is the largest tree-borne fruit." },
-        { "level": 2, "q": "Which fine muslin weaving is on UNESCO's heritage list?", "a": "Jamdani", "wrong": ["Nakshi kantha", "Tant", "Khadi"], "why": "It is woven by hand near Dhaka." },
-        { "level": 2, "q": "Cumilla is famous for which sweet?", "a": "Roshmalai", "wrong": ["Mishti doi", "Chomchom", "Kacha golla"], "why": "It is made of cheese balls in thickened milk." },
-        { "level": 2, "q": "Which harvest festival celebrates the new rice crop?", "a": "Nabanna", "wrong": ["Pohela Boishakh", "Pohela Falgun", "Chaitra Sankranti"], "why": "It is held in the month of Agrahayan." },
-        { "level": 2, "q": "In winter, Bangladeshis make 'pitha'. What are they?", "a": "Rice cakes", "wrong": ["Fish curries", "Lentil soups", "Mango pickles"], "why": "Many are made with date-palm molasses." },
-        { "level": 2, "q": "Which Pohela Boishakh procession in Dhaka is on UNESCO's heritage list?", "a": "Mangal Shobhajatra", "wrong": ["Ekushey Boi Mela", "Lalon Mela", "Rath Jatra"], "why": "Fine Arts students make giant masks for it." },
-        { "level": 2, "q": "Which book fair takes place in Dhaka throughout February?", "a": "Amar Ekushey Book Fair", "wrong": ["Dhaka Lit Fest", "Boishakhi Mela", "Lalon Mela"], "why": "It honours the Language Movement." },
-        { "level": 2, "q": "Kacchi biryani, cooked with raw marinated meat, is a speciality of which area?", "a": "Old Dhaka", "wrong": ["Chattogram", "Sylhet", "Khulna"], "why": "It is cooked slowly in sealed pots." },
-        { "level": 3, "q": "What is a 'mezban' in Chattogram?", "a": "A large feast for guests", "wrong": ["A river boat", "A wedding song", "A fishing net"], "why": "Its spicy beef curry is famous." },
-        { "level": 3, "q": "Which Sylheti mat, woven from murta reed, is on UNESCO's heritage list?", "a": "Shital pati", "wrong": ["Nakshi kantha", "Jamdani", "Madur"], "why": "Its name means 'cool mat'." }
-      ]
+     "level": 1,
+     "q": "UNESCO declared 21 February as what?",
+     "a": "International Mother Language Day",
+     "wrong": [
+      "World Book Day",
+      "World Poetry Day",
+      "International Literacy Day"
+     ],
+     "why": "It honours the Language Movement martyrs."
     },
     {
-      "name": "Bangladesh General Knowledge",
-      "questions": [
-        { "level": 1, "q": "What is Bangladesh's currency?", "a": "Taka", "wrong": ["Rupee", "Rupiah", "Kyat"], "why": "Its symbol is ৳." },
-        { "level": 1, "q": "What does Bangladesh's flag show?", "a": "A red disc on a green field", "wrong": ["A crescent and star", "A green disc on a red field", "A white star on blue"], "why": "The red disc stands for the sun and the blood of the martyrs." },
-        { "level": 1, "q": "What is Bangladesh's national animal?", "a": "Royal Bengal tiger", "wrong": ["Asian elephant", "Spotted deer", "Asiatic lion"], "why": "It lives in the Sundarbans." },
-        { "level": 1, "q": "What is Bangladesh's national language?", "a": "Bangla", "wrong": ["Urdu", "Hindi", "English"], "why": "About 98% of people speak it." },
-        { "level": 1, "q": "What is Bangladesh's national flower?", "a": "Water lily", "wrong": ["Lotus", "Rose", "Jasmine"], "why": "It is called shapla." },
-        { "level": 1, "q": "Which Bangladeshi economist won the 2006 Nobel Peace Prize?", "a": "Muhammad Yunus", "wrong": ["Fazle Hasan Abed", "Amartya Sen", "Anisuzzaman"], "why": "He pioneered microcredit." },
-        { "level": 1, "q": "Dhaka is often called the city of what?", "a": "Mosques", "wrong": ["Joy", "Lakes", "Bridges"], "why": "It is also famous for its rickshaws." },
-        { "level": 2, "q": "Which development organisation, founded by Fazle Hasan Abed, is one of the world's largest NGOs?", "a": "BRAC", "wrong": ["Grameen Bank", "ASA", "Proshika"], "why": "It was founded in 1972." },
-        { "level": 2, "q": "What is Bangladesh's national tree?", "a": "Mango tree", "wrong": ["Jackfruit tree", "Banyan tree", "Palm tree"], "why": "It was chosen in 2010." },
-        { "level": 2, "q": "Which parliament building in Dhaka was designed by Louis Kahn?", "a": "Jatiya Sangsad Bhaban", "wrong": ["Bangabhaban", "Ganabhaban", "Curzon Hall"], "why": "It was completed in 1982." },
-        { "level": 2, "q": "What is Bangladesh's biggest export?", "a": "Ready-made garments", "wrong": ["Tea", "Jute", "Leather"], "why": "It is one of the world's largest clothing exporters." },
-        { "level": 2, "q": "Which plant fibre is called Bangladesh's 'golden fibre'?", "a": "Jute", "wrong": ["Cotton", "Silk", "Hemp"], "why": "It is used for sacks and rope." },
-        { "level": 2, "q": "What is the name of the President's residence in Dhaka?", "a": "Bangabhaban", "wrong": ["Ganabhaban", "Sangsad Bhaban", "Ahsan Manzil"], "why": "Ganabhaban is the Prime Minister's residence." },
-        { "level": 3, "q": "Which Bangladeshi-born engineer designed Chicago's Sears (Willis) Tower?", "a": "Fazlur Rahman Khan", "wrong": ["Jamilur Reza Choudhury", "Mazharul Islam", "Muzharul Haque"], "why": "He developed the tube system for skyscrapers." },
-        { "level": 3, "q": "Which scientist, born in today's Bangladesh, pioneered radio waves and plant physiology?", "a": "Jagadish Chandra Bose", "wrong": ["Satyendra Nath Bose", "Meghnad Saha", "Prafulla Chandra Ray"], "why": "He was born in Mymensingh in 1858." },
-        { "level": 3, "q": "Dhaka's cycle rickshaws and their painted art were added to which UNESCO list in 2023?", "a": "Intangible Cultural Heritage", "wrong": ["World Heritage in Danger", "Memory of the World", "Creative Cities Network"], "why": "Rickshaw painting is a famous Dhaka folk art." }
-      ]
+     "level": 1,
+     "q": "What is the 1971 war that created Bangladesh called there?",
+     "a": "Liberation War",
+     "wrong": [
+      "Partition War",
+      "Bengal War",
+      "Freedom Revolt"
+     ],
+     "why": "In Bangla it is the Muktijuddho."
+    },
+    {
+     "level": 1,
+     "q": "Which monument in Dhaka honours the Language Movement martyrs?",
+     "a": "Shaheed Minar",
+     "wrong": [
+      "Jatiyo Smriti Soudho",
+      "Ahsan Manzil",
+      "Lalbagh Fort"
+     ],
+     "why": "People lay flowers there every 21 February."
+    },
+    {
+     "level": 2,
+     "q": "Which monument at Savar honours those who died in the Liberation War?",
+     "a": "Jatiyo Smriti Soudho",
+     "wrong": [
+      "Shaheed Minar",
+      "Aparajeyo Bangla",
+      "Shikha Anirban"
+     ],
+     "why": "It is the National Martyrs' Memorial."
+    },
+    {
+     "level": 2,
+     "q": "Which Mughal fort in Old Dhaka was never finished?",
+     "a": "Lalbagh Fort",
+     "wrong": [
+      "Idrakpur Fort",
+      "Red Fort",
+      "Sonakanda Fort"
+     ],
+     "why": "Work stopped in 1684 after the death of the governor's daughter."
+    },
+    {
+     "level": 2,
+     "q": "Which pink palace in Dhaka was home to the Nawabs of Dhaka?",
+     "a": "Ahsan Manzil",
+     "wrong": [
+      "Rose Garden Palace",
+      "Bangabhaban",
+      "Curzon Hall"
+     ],
+     "why": "It is now a museum on the Buriganga River."
+    },
+    {
+     "level": 2,
+     "q": "Who became Bangladesh's first woman Prime Minister, in 1991?",
+     "a": "Khaleda Zia",
+     "wrong": [
+      "Sheikh Hasina",
+      "Begum Rokeya",
+      "Sufia Kamal"
+     ],
+     "why": "Sheikh Hasina first became Prime Minister in 1996."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient Buddhist monastery at Paharpur is a UNESCO site?",
+     "a": "Somapura Mahavihara",
+     "wrong": [
+      "Nalanda Mahavihara",
+      "Shalban Vihara",
+      "Mahasthangarh"
+     ],
+     "why": "It was one of the largest monasteries south of the Himalayas."
+    },
+    {
+     "level": 2,
+     "q": "The Sixty Dome Mosque is in which UNESCO-listed historic city?",
+     "a": "Bagerhat",
+     "wrong": [
+      "Sylhet",
+      "Bogura",
+      "Cumilla"
+     ],
+     "why": "Khan Jahan Ali built it in the 15th century."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient city at Bogura is among the oldest urban sites in Bangladesh?",
+     "a": "Mahasthangarh",
+     "wrong": [
+      "Paharpur",
+      "Wari-Bateshwar",
+      "Sonargaon"
+     ],
+     "why": "It dates back to at least the 3rd century BCE."
+    },
+    {
+     "level": 3,
+     "q": "Which old capital near Dhaka was the seat of Isa Khan?",
+     "a": "Sonargaon",
+     "wrong": [
+      "Gaur",
+      "Pandua",
+      "Bikrampur"
+     ],
+     "why": "It was an important trading town."
+    },
+    {
+     "level": 1,
+     "q": "Which Bangladeshi economist won the 2006 Nobel Peace Prize?",
+     "a": "Muhammad Yunus",
+     "wrong": [
+      "Fazle Hasan Abed",
+      "Amartya Sen",
+      "Anisuzzaman"
+     ],
+     "why": "He pioneered microcredit."
+    },
+    {
+     "level": 2,
+     "q": "Which development organisation, founded by Fazle Hasan Abed, is one of the world's largest NGOs?",
+     "a": "BRAC",
+     "wrong": [
+      "Grameen Bank",
+      "ASA",
+      "Proshika"
+     ],
+     "why": "It was founded in 1972."
     }
-  ]
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which city is Bangladesh's capital and largest city?",
+     "a": "Dhaka",
+     "wrong": [
+      "Chattogram",
+      "Khulna",
+      "Rajshahi"
+     ],
+     "why": "Its metro area has over 20 million people."
+    },
+    {
+     "level": 1,
+     "q": "Which city is Bangladesh's main seaport?",
+     "a": "Chattogram",
+     "wrong": [
+      "Mongla",
+      "Khulna",
+      "Barishal"
+     ],
+     "why": "Most of the country's trade goes through it."
+    },
+    {
+     "level": 1,
+     "q": "Which is the world's longest natural sea beach?",
+     "a": "Cox's Bazar",
+     "wrong": [
+      "Kuakata",
+      "Patenga",
+      "Inani"
+     ],
+     "why": "It is about 120 km long."
+    },
+    {
+     "level": 1,
+     "q": "Bangladesh lies mostly on the delta of which rivers?",
+     "a": "Ganges and Brahmaputra",
+     "wrong": [
+      "Indus and Sutlej",
+      "Mekong and Red",
+      "Tigris and Euphrates"
+     ],
+     "why": "It is the world's largest river delta."
+    },
+    {
+     "level": 1,
+     "q": "Which mangrove forest in southwest Bangladesh is home to the Bengal tiger?",
+     "a": "Sundarbans",
+     "wrong": [
+      "Lawachara",
+      "Madhupur",
+      "Chunati"
+     ],
+     "why": "It is a UNESCO World Heritage Site."
+    },
+    {
+     "level": 1,
+     "q": "Which bay lies to the south of Bangladesh?",
+     "a": "Bay of Bengal",
+     "wrong": [
+      "Arabian Sea",
+      "Andaman Sea",
+      "Gulf of Mannar"
+     ],
+     "why": "It is the largest bay in the world."
+    },
+    {
+     "level": 1,
+     "q": "Which division is famous for its tea gardens?",
+     "a": "Sylhet",
+     "wrong": [
+      "Rajshahi",
+      "Barishal",
+      "Khulna"
+     ],
+     "why": "Srimangal is called the tea capital."
+    },
+    {
+     "level": 2,
+     "q": "In Bangladesh, the Ganges is known by which name?",
+     "a": "Padma",
+     "wrong": [
+      "Jamuna",
+      "Meghna",
+      "Teesta"
+     ],
+     "why": "The Brahmaputra's main channel is the Jamuna."
+    },
+    {
+     "level": 2,
+     "q": "Which bridge across the Padma opened in 2022?",
+     "a": "Padma Bridge",
+     "wrong": [
+      "Bangabandhu Bridge",
+      "Meghna Bridge",
+      "Lalon Shah Bridge"
+     ],
+     "why": "It is over 6 km long."
+    },
+    {
+     "level": 2,
+     "q": "Which is Bangladesh's only coral island?",
+     "a": "Saint Martin's Island",
+     "wrong": [
+      "Bhola",
+      "Hatiya",
+      "Sandwip"
+     ],
+     "why": "It lies off the southern tip near Teknaf."
+    },
+    {
+     "level": 2,
+     "q": "Apart from India, which country borders Bangladesh?",
+     "a": "Myanmar",
+     "wrong": [
+      "Nepal",
+      "Bhutan",
+      "China"
+     ],
+     "why": "The border is in the southeast."
+    },
+    {
+     "level": 2,
+     "q": "Kaptai Lake is in which hill district?",
+     "a": "Rangamati",
+     "wrong": [
+      "Bandarban",
+      "Khagrachari",
+      "Sylhet"
+     ],
+     "why": "It was formed by the Kaptai Dam."
+    },
+    {
+     "level": 2,
+     "q": "Which city is known as the 'Silk City'?",
+     "a": "Rajshahi",
+     "wrong": [
+      "Bogura",
+      "Rangpur",
+      "Sirajganj"
+     ],
+     "why": "It is also famous for mangoes."
+    },
+    {
+     "level": 3,
+     "q": "Which is Bangladesh's largest island?",
+     "a": "Bhola",
+     "wrong": [
+      "Hatiya",
+      "Sandwip",
+      "Maheshkhali"
+     ],
+     "why": "It lies at the mouth of the Meghna."
+    },
+    {
+     "level": 3,
+     "q": "Near Chandpur, the Padma joins which river?",
+     "a": "Meghna",
+     "wrong": [
+      "Jamuna",
+      "Teesta",
+      "Karnaphuli"
+     ],
+     "why": "Together they flow into the Bay of Bengal."
+    },
+    {
+     "level": 3,
+     "q": "Which port near the Sundarbans is Bangladesh's second-biggest seaport?",
+     "a": "Mongla",
+     "wrong": [
+      "Payra",
+      "Teknaf",
+      "Kutubdia"
+     ],
+     "why": "It is in Bagerhat district."
+    },
+    {
+     "level": 1,
+     "q": "Dhaka is often called the city of what?",
+     "a": "Mosques",
+     "wrong": [
+      "Joy",
+      "Lakes",
+      "Bridges"
+     ],
+     "why": "It is also famous for its rickshaws."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which is the most popular sport in Bangladesh?",
+     "a": "Cricket",
+     "wrong": [
+      "Football",
+      "Kabaddi",
+      "Hockey"
+     ],
+     "why": "Big matches bring the country to a standstill."
+    },
+    {
+     "level": 1,
+     "q": "What is Bangladesh's national sport?",
+     "a": "Kabaddi",
+     "wrong": [
+      "Cricket",
+      "Football",
+      "Hockey"
+     ],
+     "why": "It is called Ha-du-du in villages."
+    },
+    {
+     "level": 1,
+     "q": "What is the nickname of Bangladesh's cricket team?",
+     "a": "The Tigers",
+     "wrong": [
+      "The Lions",
+      "The Eagles",
+      "The Rhinos"
+     ],
+     "why": "It comes from the Royal Bengal tiger."
+    },
+    {
+     "level": 1,
+     "q": "Which is the main cricket stadium in Dhaka?",
+     "a": "Sher-e-Bangla National Stadium",
+     "wrong": [
+      "Zahur Ahmed Chowdhury Stadium",
+      "Sylhet International Stadium",
+      "Khan Shaheb Osman Ali Stadium"
+     ],
+     "why": "It is in Mirpur."
+    },
+    {
+     "level": 1,
+     "q": "What is Bangladesh's professional T20 cricket league called?",
+     "a": "Bangladesh Premier League",
+     "wrong": [
+      "Pakistan Super League",
+      "Lanka Premier League",
+      "Dhaka Super League"
+     ],
+     "why": "It began in 2012."
+    },
+    {
+     "level": 1,
+     "q": "Which fast bowler is nicknamed 'The Fizz'?",
+     "a": "Mustafizur Rahman",
+     "wrong": [
+      "Taskin Ahmed",
+      "Rubel Hossain",
+      "Shoriful Islam"
+     ],
+     "why": "He is known for his slower cutters."
+    },
+    {
+     "level": 1,
+     "q": "Which wicketkeeper-batter is nicknamed 'Mr. Dependable'?",
+     "a": "Mushfiqur Rahim",
+     "wrong": [
+      "Litton Das",
+      "Mahmudullah",
+      "Nurul Hasan"
+     ],
+     "why": "He has scored double centuries in Tests."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Bangladesh become a Test-playing nation?",
+     "a": "2000",
+     "wrong": [
+      "1997",
+      "2005",
+      "1999"
+     ],
+     "why": "Its first Test was against India in Dhaka."
+    },
+    {
+     "level": 2,
+     "q": "Which tournament did Bangladesh's women win in 2018, beating India in the final?",
+     "a": "Women's T20 Asia Cup",
+     "wrong": [
+      "Women's World Cup",
+      "Asian Games",
+      "Commonwealth Games"
+     ],
+     "why": "They won off the last ball."
+    },
+    {
+     "level": 2,
+     "q": "Who captained Bangladesh to the 2015 World Cup quarter-finals?",
+     "a": "Mashrafe Mortaza",
+     "wrong": [
+      "Shakib Al Hasan",
+      "Mushfiqur Rahim",
+      "Tamim Iqbal"
+     ],
+     "why": "They beat England to get there."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Bangladesh win the ICC Trophy to reach their first World Cup?",
+     "a": "1997",
+     "wrong": [
+      "1999",
+      "1994",
+      "2001"
+     ],
+     "why": "They played the 1999 World Cup in England."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Bangladesh win the Under-19 Cricket World Cup?",
+     "a": "2020",
+     "wrong": [
+      "2016",
+      "2018",
+      "2022"
+     ],
+     "why": "They beat India in the final."
+    },
+    {
+     "level": 2,
+     "q": "Which opener became Bangladesh's leading ODI run-scorer?",
+     "a": "Tamim Iqbal",
+     "wrong": [
+      "Habibul Bashar",
+      "Imrul Kayes",
+      "Soumya Sarkar"
+     ],
+     "why": "He made over 8,000 ODI runs."
+    },
+    {
+     "level": 3,
+     "q": "Who scored Bangladesh's first Test century, on debut in 2000?",
+     "a": "Aminul Islam",
+     "wrong": [
+      "Habibul Bashar",
+      "Mohammad Ashraful",
+      "Al Sahariar"
+     ],
+     "why": "He made 145 against India."
+    },
+    {
+     "level": 3,
+     "q": "Which Bangladeshi became the youngest Test centurion, aged 17?",
+     "a": "Mohammad Ashraful",
+     "wrong": [
+      "Tamim Iqbal",
+      "Shakib Al Hasan",
+      "Mushfiqur Rahim"
+     ],
+     "why": "He scored it against Sri Lanka in 2001."
+    },
+    {
+     "level": 3,
+     "q": "Which Bangladeshi archer won a World Championship bronze in 2019?",
+     "a": "Roman Sana",
+     "wrong": [
+      "Sagor Islam",
+      "Diya Siddique",
+      "Hakim Ahmed Rubel"
+     ],
+     "why": "It earned him a direct place at the Tokyo Olympics."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who wrote Bangladesh's national anthem, 'Amar Shonar Bangla'?",
+     "a": "Rabindranath Tagore",
+     "wrong": [
+      "Kazi Nazrul Islam",
+      "Jasimuddin",
+      "Jibanananda Das"
+     ],
+     "why": "He wrote it in 1905."
+    },
+    {
+     "level": 1,
+     "q": "Lalon Shah is the best-known singer of which mystic music tradition?",
+     "a": "Baul",
+     "wrong": [
+      "Qawwali",
+      "Bhatiali",
+      "Rabindra Sangeet"
+     ],
+     "why": "Baul music is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "Which rock band was founded by Ayub Bachchu?",
+     "a": "LRB",
+     "wrong": [
+      "Warfaze",
+      "Souls",
+      "Miles"
+     ],
+     "why": "LRB stands for Love Runs Blind."
+    },
+    {
+     "level": 1,
+     "q": "Which band was led by the singer James?",
+     "a": "Nagar Baul",
+     "wrong": [
+      "LRB",
+      "Warfaze",
+      "Miles"
+     ],
+     "why": "James also sang Hindi film songs."
+    },
+    {
+     "level": 2,
+     "q": "Which Bangladeshi singer made 'Dama Dam Mast Qalandar' famous in the 1970s?",
+     "a": "Runa Laila",
+     "wrong": [
+      "Sabina Yasmin",
+      "Abida Parveen",
+      "Momtaz"
+     ],
+     "why": "She sang in Bangla, Urdu and Hindi."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Bangladesh's film industry, based in Dhaka, nicknamed?",
+     "a": "Dhallywood",
+     "wrong": [
+      "Lollywood",
+      "Tollywood",
+      "Kollywood"
+     ],
+     "why": "It combines Dhaka and Hollywood."
+    },
+    {
+     "level": 2,
+     "q": "Which actor is called 'Nayak Raj'?",
+     "a": "Razzak",
+     "wrong": [
+      "Salman Shah",
+      "Manna",
+      "Alamgir"
+     ],
+     "why": "He starred in hundreds of films."
+    },
+    {
+     "level": 2,
+     "q": "Which film star of the 1990s died in 1996 at only 25?",
+     "a": "Salman Shah",
+     "wrong": [
+      "Riaz",
+      "Shakib Khan",
+      "Ferdous"
+     ],
+     "why": "He made 27 films in four years."
+    },
+    {
+     "level": 2,
+     "q": "Whose film 'Matir Moina' won a critics' prize at Cannes in 2002?",
+     "a": "Tareque Masud",
+     "wrong": [
+      "Mostofa Sarwar Farooki",
+      "Humayun Ahmed",
+      "Zahir Raihan"
+     ],
+     "why": "It won the FIPRESCI Prize."
+    },
+    {
+     "level": 3,
+     "q": "Who directed the 1970 film 'Jibon Theke Neya'?",
+     "a": "Zahir Raihan",
+     "wrong": [
+      "Tareque Masud",
+      "Satyajit Ray",
+      "Alamgir Kabir"
+     ],
+     "why": "It was a political allegory before the Liberation War."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who is Bangladesh's national poet, called the 'Rebel Poet'?",
+     "a": "Kazi Nazrul Islam",
+     "wrong": [
+      "Rabindranath Tagore",
+      "Shamsur Rahman",
+      "Jasimuddin"
+     ],
+     "why": "His poem 'Bidrohi' means 'The Rebel'."
+    },
+    {
+     "level": 1,
+     "q": "Which writer created the characters Himu and Misir Ali?",
+     "a": "Humayun Ahmed",
+     "wrong": [
+      "Muhammed Zafar Iqbal",
+      "Anisul Hoque",
+      "Imdadul Haq Milan"
+     ],
+     "why": "He also wrote and directed TV dramas and films."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote the long poem 'Nakshi Kanthar Math'?",
+     "a": "Jasimuddin",
+     "wrong": [
+      "Kazi Nazrul Islam",
+      "Rabindranath Tagore",
+      "Jibanananda Das"
+     ],
+     "why": "He is called the 'Palli Kobi', the rural poet."
+    },
+    {
+     "level": 2,
+     "q": "Which poet wrote 'Banalata Sen'?",
+     "a": "Jibanananda Das",
+     "wrong": [
+      "Shamsur Rahman",
+      "Al Mahmud",
+      "Sufia Kamal"
+     ],
+     "why": "It is one of the most loved Bangla poems."
+    },
+    {
+     "level": 3,
+     "q": "Which writer wrote the feminist story 'Sultana's Dream'?",
+     "a": "Begum Rokeya",
+     "wrong": [
+      "Sufia Kamal",
+      "Taslima Nasrin",
+      "Selina Hossain"
+     ],
+     "why": "It imagined a land run by women, in 1905."
+    },
+    {
+     "level": 3,
+     "q": "Which poet wrote 'Swadhinata Tumi'?",
+     "a": "Shamsur Rahman",
+     "wrong": [
+      "Nirmalendu Goon",
+      "Helal Hafiz",
+      "Syed Shamsul Haq"
+     ],
+     "why": "It is a poem about freedom in 1971."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 3,
+     "q": "In which year did Bangladesh adopt its constitution?",
+     "a": "1972",
+     "wrong": [
+      "1971",
+      "1975",
+      "1991"
+     ],
+     "why": "It took effect on 16 December 1972."
+    },
+    {
+     "level": 2,
+     "q": "Which parliament building in Dhaka was designed by Louis Kahn?",
+     "a": "Jatiya Sangsad Bhaban",
+     "wrong": [
+      "Bangabhaban",
+      "Ganabhaban",
+      "Curzon Hall"
+     ],
+     "why": "It was completed in 1982."
+    },
+    {
+     "level": 2,
+     "q": "What is the name of the President's residence in Dhaka?",
+     "a": "Bangabhaban",
+     "wrong": [
+      "Ganabhaban",
+      "Sangsad Bhaban",
+      "Ahsan Manzil"
+     ],
+     "why": "Ganabhaban is the Prime Minister's residence."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which embroidered quilt is a famous Bangladeshi folk art?",
+     "a": "Nakshi kantha",
+     "wrong": [
+      "Jamdani",
+      "Batik",
+      "Shital pati"
+     ],
+     "why": "It is stitched from layers of old saris."
+    },
+    {
+     "level": 2,
+     "q": "Which fine muslin weaving is on UNESCO's heritage list?",
+     "a": "Jamdani",
+     "wrong": [
+      "Nakshi kantha",
+      "Tant",
+      "Khadi"
+     ],
+     "why": "It is woven by hand near Dhaka."
+    },
+    {
+     "level": 3,
+     "q": "Which Sylheti mat, woven from murta reed, is on UNESCO's heritage list?",
+     "a": "Shital pati",
+     "wrong": [
+      "Nakshi kantha",
+      "Jamdani",
+      "Madur"
+     ],
+     "why": "Its name means 'cool mat'."
+    },
+    {
+     "level": 3,
+     "q": "Dhaka's cycle rickshaws and their painted art were added to which UNESCO list in 2023?",
+     "a": "Intangible Cultural Heritage",
+     "wrong": [
+      "World Heritage in Danger",
+      "Memory of the World",
+      "Creative Cities Network"
+     ],
+     "why": "Rickshaw painting is a famous Dhaka folk art."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Bangladesh's national animal?",
+     "a": "Royal Bengal tiger",
+     "wrong": [
+      "Asian elephant",
+      "Spotted deer",
+      "Asiatic lion"
+     ],
+     "why": "It lives in the Sundarbans."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the Bengali New Year called?",
+     "a": "Pohela Boishakh",
+     "wrong": [
+      "Nabanna",
+      "Pohela Falgun",
+      "Chaitra Sankranti"
+     ],
+     "why": "It falls on 14 April."
+    },
+    {
+     "level": 1,
+     "q": "What is Bangladesh's national fish?",
+     "a": "Hilsa",
+     "wrong": [
+      "Rohu",
+      "Pangas",
+      "Koi"
+     ],
+     "why": "It is called ilish in Bangla."
+    },
+    {
+     "level": 1,
+     "q": "Which dish of soaked rice is eaten with fried hilsa on Pohela Boishakh?",
+     "a": "Panta bhat",
+     "wrong": [
+      "Khichuri",
+      "Biryani",
+      "Polao"
+     ],
+     "why": "The rice is soaked in water overnight."
+    },
+    {
+     "level": 1,
+     "q": "Bogura is famous for which sweet dish?",
+     "a": "Mishti doi",
+     "wrong": [
+      "Roshmalai",
+      "Chomchom",
+      "Kacha golla"
+     ],
+     "why": "It is sweet yoghurt set in clay pots."
+    },
+    {
+     "level": 1,
+     "q": "Which festival welcomes spring, with people dressed in yellow?",
+     "a": "Pohela Falgun",
+     "wrong": [
+      "Nabanna",
+      "Pohela Boishakh",
+      "Ekushey"
+     ],
+     "why": "It is the first day of the month of Falgun."
+    },
+    {
+     "level": 1,
+     "q": "What is Bangladesh's national fruit?",
+     "a": "Jackfruit",
+     "wrong": [
+      "Mango",
+      "Banana",
+      "Litchi"
+     ],
+     "why": "It is the largest tree-borne fruit."
+    },
+    {
+     "level": 2,
+     "q": "Cumilla is famous for which sweet?",
+     "a": "Roshmalai",
+     "wrong": [
+      "Mishti doi",
+      "Chomchom",
+      "Kacha golla"
+     ],
+     "why": "It is made of cheese balls in thickened milk."
+    },
+    {
+     "level": 2,
+     "q": "Which harvest festival celebrates the new rice crop?",
+     "a": "Nabanna",
+     "wrong": [
+      "Pohela Boishakh",
+      "Pohela Falgun",
+      "Chaitra Sankranti"
+     ],
+     "why": "It is held in the month of Agrahayan."
+    },
+    {
+     "level": 2,
+     "q": "In winter, Bangladeshis make 'pitha'. What are they?",
+     "a": "Rice cakes",
+     "wrong": [
+      "Fish curries",
+      "Lentil soups",
+      "Mango pickles"
+     ],
+     "why": "Many are made with date-palm molasses."
+    },
+    {
+     "level": 2,
+     "q": "Which Pohela Boishakh procession in Dhaka is on UNESCO's heritage list?",
+     "a": "Mangal Shobhajatra",
+     "wrong": [
+      "Ekushey Boi Mela",
+      "Lalon Mela",
+      "Rath Jatra"
+     ],
+     "why": "Fine Arts students make giant masks for it."
+    },
+    {
+     "level": 2,
+     "q": "Which book fair takes place in Dhaka throughout February?",
+     "a": "Amar Ekushey Book Fair",
+     "wrong": [
+      "Dhaka Lit Fest",
+      "Boishakhi Mela",
+      "Lalon Mela"
+     ],
+     "why": "It honours the Language Movement."
+    },
+    {
+     "level": 2,
+     "q": "Kacchi biryani, cooked with raw marinated meat, is a speciality of which area?",
+     "a": "Old Dhaka",
+     "wrong": [
+      "Chattogram",
+      "Sylhet",
+      "Khulna"
+     ],
+     "why": "It is cooked slowly in sealed pots."
+    },
+    {
+     "level": 3,
+     "q": "What is a 'mezban' in Chattogram?",
+     "a": "A large feast for guests",
+     "wrong": [
+      "A river boat",
+      "A wedding song",
+      "A fishing net"
+     ],
+     "why": "Its spicy beef curry is famous."
+    },
+    {
+     "level": 1,
+     "q": "What is Bangladesh's currency?",
+     "a": "Taka",
+     "wrong": [
+      "Rupee",
+      "Rupiah",
+      "Kyat"
+     ],
+     "why": "Its symbol is ৳."
+    },
+    {
+     "level": 1,
+     "q": "What does Bangladesh's flag show?",
+     "a": "A red disc on a green field",
+     "wrong": [
+      "A crescent and star",
+      "A green disc on a red field",
+      "A white star on blue"
+     ],
+     "why": "The red disc stands for the sun and the blood of the martyrs."
+    },
+    {
+     "level": 1,
+     "q": "What is Bangladesh's national language?",
+     "a": "Bangla",
+     "wrong": [
+      "Urdu",
+      "Hindi",
+      "English"
+     ],
+     "why": "About 98% of people speak it."
+    },
+    {
+     "level": 1,
+     "q": "What is Bangladesh's national flower?",
+     "a": "Water lily",
+     "wrong": [
+      "Lotus",
+      "Rose",
+      "Jasmine"
+     ],
+     "why": "It is called shapla."
+    },
+    {
+     "level": 2,
+     "q": "What is Bangladesh's national tree?",
+     "a": "Mango tree",
+     "wrong": [
+      "Jackfruit tree",
+      "Banyan tree",
+      "Palm tree"
+     ],
+     "why": "It was chosen in 2010."
+    },
+    {
+     "level": 2,
+     "q": "What is Bangladesh's biggest export?",
+     "a": "Ready-made garments",
+     "wrong": [
+      "Tea",
+      "Jute",
+      "Leather"
+     ],
+     "why": "It is one of the world's largest clothing exporters."
+    },
+    {
+     "level": 2,
+     "q": "Which plant fibre is called Bangladesh's 'golden fibre'?",
+     "a": "Jute",
+     "wrong": [
+      "Cotton",
+      "Silk",
+      "Hemp"
+     ],
+     "why": "It is used for sacks and rope."
+    },
+    {
+     "level": 3,
+     "q": "Which Bangladeshi-born engineer designed Chicago's Sears (Willis) Tower?",
+     "a": "Fazlur Rahman Khan",
+     "wrong": [
+      "Jamilur Reza Choudhury",
+      "Mazharul Islam",
+      "Muzharul Haque"
+     ],
+     "why": "He developed the tube system for skyscrapers."
+    },
+    {
+     "level": 3,
+     "q": "Which scientist, born in today's Bangladesh, pioneered radio waves and plant physiology?",
+     "a": "Jagadish Chandra Bose",
+     "wrong": [
+      "Satyendra Nath Bose",
+      "Meghnad Saha",
+      "Prafulla Chandra Ray"
+     ],
+     "why": "He was born in Mymensingh in 1858."
+    }
+   ]
+  }
+ ]
 }

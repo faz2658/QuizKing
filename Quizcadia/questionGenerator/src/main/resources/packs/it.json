@@ -3,7 +3,8 @@
  "country": "IT",
  "topics": [
   {
-   "name": "Italy History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -95,17 +96,6 @@
     },
     {
      "level": 2,
-     "q": "In which year did Italy become a republic by referendum?",
-     "a": "1946",
-     "wrong": [
-      "1945",
-      "1922",
-      "1948"
-     ],
-     "why": "2 June is Republic Day."
-    },
-    {
-     "level": 2,
      "q": "Which Florentine banking family were great patrons of the Renaissance?",
      "a": "The Medici",
      "wrong": [
@@ -171,20 +161,54 @@
      "why": "He was King of Sardinia before."
     },
     {
-     "level": 3,
-     "q": "Which writer wrote 'The Prince' in 1513?",
-     "a": "Niccolò Machiavelli",
+     "level": 1,
+     "q": "Which ancient amphitheatre in Rome held gladiator fights?",
+     "a": "Colosseum",
      "wrong": [
-      "Dante Alighieri",
-      "Petrarch",
-      "Baldassare Castiglione"
+      "Pantheon",
+      "Circus Maximus",
+      "Forum"
      ],
-     "why": "'Machiavellian' comes from his name."
+     "why": "It held about 50,000 people."
+    },
+    {
+     "level": 2,
+     "q": "Which physicist built the first nuclear reactor in 1942?",
+     "a": "Enrico Fermi",
+     "wrong": [
+      "Ettore Majorana",
+      "Emilio Segrè",
+      "Guglielmo Marconi"
+     ],
+     "why": "He built it in Chicago."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient road ran from Rome to Brindisi?",
+     "a": "Via Appia",
+     "wrong": [
+      "Via Flaminia",
+      "Via Aurelia",
+      "Via Emilia"
+     ],
+     "why": "It was called the 'queen of roads'."
+    },
+    {
+     "level": 3,
+     "q": "Which Italian scientist won the 1986 Nobel Prize for discovering nerve growth factor?",
+     "a": "Rita Levi-Montalcini",
+     "wrong": [
+      "Maria Montessori",
+      "Fabiola Gianotti",
+      "Samantha Cristoforetti"
+     ],
+     "why": "She lived to 103."
     }
    ]
   },
   {
-   "name": "Italy Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -361,11 +385,23 @@
       "Liechtenstein"
      ],
      "why": "It claims to be the oldest republic."
+    },
+    {
+     "level": 2,
+     "q": "Which country has the most UNESCO World Heritage Sites?",
+     "a": "Italy",
+     "wrong": [
+      "France",
+      "Spain",
+      "Greece"
+     ],
+     "why": "It has around 60, just ahead of China."
     }
    ]
   },
   {
-   "name": "Italy Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,41 +582,9 @@
    ]
   },
   {
-   "name": "Italy Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
-    {
-     "level": 1,
-     "q": "Who painted the 'Mona Lisa'?",
-     "a": "Leonardo da Vinci",
-     "wrong": [
-      "Michelangelo",
-      "Raphael",
-      "Botticelli"
-     ],
-     "why": "He was born in Vinci, Tuscany."
-    },
-    {
-     "level": 1,
-     "q": "Who painted the Sistine Chapel ceiling?",
-     "a": "Michelangelo",
-     "wrong": [
-      "Raphael",
-      "Leonardo da Vinci",
-      "Caravaggio"
-     ],
-     "why": "He worked on it from 1508 to 1512."
-    },
-    {
-     "level": 1,
-     "q": "Which tenor was part of 'The Three Tenors'?",
-     "a": "Luciano Pavarotti",
-     "wrong": [
-      "Andrea Bocelli",
-      "Enrico Caruso",
-      "Mario Lanza"
-     ],
-     "why": "He sang 'Nessun dorma' at the 1990 World Cup."
-    },
     {
      "level": 1,
      "q": "Which rock band won Eurovision 2021 for Italy?",
@@ -591,28 +595,6 @@
       "Modà"
      ],
      "why": "They sang 'Zitti e buoni'."
-    },
-    {
-     "level": 1,
-     "q": "Which poet wrote 'The Divine Comedy'?",
-     "a": "Dante Alighieri",
-     "wrong": [
-      "Petrarch",
-      "Boccaccio",
-      "Virgil"
-     ],
-     "why": "It follows Dante through Hell, Purgatory and Paradise."
-    },
-    {
-     "level": 1,
-     "q": "Which Roberto Benigni film won three Oscars in 1999?",
-     "a": "Life Is Beautiful",
-     "wrong": [
-      "Cinema Paradiso",
-      "Il Postino",
-      "The Great Beauty"
-     ],
-     "why": "Benigni won Best Actor."
     },
     {
      "level": 1,
@@ -649,17 +631,6 @@
     },
     {
      "level": 2,
-     "q": "Which director made 'La Dolce Vita'?",
-     "a": "Federico Fellini",
-     "wrong": [
-      "Michelangelo Antonioni",
-      "Vittorio De Sica",
-      "Roberto Rossellini"
-     ],
-     "why": "Its Trevi Fountain scene is iconic."
-    },
-    {
-     "level": 2,
      "q": "Which composer scored 'The Good, the Bad and the Ugly'?",
      "a": "Ennio Morricone",
      "wrong": [
@@ -692,6 +663,45 @@
      "why": "He was a Venetian priest."
     },
     {
+     "level": 2,
+     "q": "What is the Italian national anthem often called?",
+     "a": "Il Canto degli Italiani (Fratelli d'Italia)",
+     "wrong": [
+      "Va, pensiero",
+      "O sole mio",
+      "Bella ciao"
+     ],
+     "why": "Goffredo Mameli wrote the words in 1847."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Roberto Benigni film won three Oscars in 1999?",
+     "a": "Life Is Beautiful",
+     "wrong": [
+      "Cinema Paradiso",
+      "Il Postino",
+      "The Great Beauty"
+     ],
+     "why": "Benigni won Best Actor."
+    },
+    {
+     "level": 2,
+     "q": "Which director made 'La Dolce Vita'?",
+     "a": "Federico Fellini",
+     "wrong": [
+      "Michelangelo Antonioni",
+      "Vittorio De Sica",
+      "Roberto Rossellini"
+     ],
+     "why": "Its Trevi Fountain scene is iconic."
+    },
+    {
      "level": 3,
      "q": "Which 1948 neorealist film follows a father searching for his stolen bicycle?",
      "a": "Bicycle Thieves",
@@ -701,6 +711,34 @@
       "La Strada"
      ],
      "why": "Vittorio De Sica directed it."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which writer wrote 'The Prince' in 1513?",
+     "a": "Niccolò Machiavelli",
+     "wrong": [
+      "Dante Alighieri",
+      "Petrarch",
+      "Baldassare Castiglione"
+     ],
+     "why": "'Machiavellian' comes from his name."
+    },
+    {
+     "level": 1,
+     "q": "Which poet wrote 'The Divine Comedy'?",
+     "a": "Dante Alighieri",
+     "wrong": [
+      "Petrarch",
+      "Boccaccio",
+      "Virgil"
+     ],
+     "why": "It follows Dante through Hell, Purgatory and Paradise."
     },
     {
      "level": 3,
@@ -712,6 +750,51 @@
       "Alberto Moravia"
      ],
      "why": "It is a mystery set in a monastery."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "In which year did Italy become a republic by referendum?",
+     "a": "1946",
+     "wrong": [
+      "1945",
+      "1922",
+      "1948"
+     ],
+     "why": "2 June is Republic Day."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who painted the 'Mona Lisa'?",
+     "a": "Leonardo da Vinci",
+     "wrong": [
+      "Michelangelo",
+      "Raphael",
+      "Botticelli"
+     ],
+     "why": "He was born in Vinci, Tuscany."
+    },
+    {
+     "level": 1,
+     "q": "Who painted the Sistine Chapel ceiling?",
+     "a": "Michelangelo",
+     "wrong": [
+      "Raphael",
+      "Leonardo da Vinci",
+      "Caravaggio"
+     ],
+     "why": "He worked on it from 1508 to 1512."
     },
     {
      "level": 3,
@@ -723,12 +806,46 @@
       "Giotto"
      ],
      "why": "It hangs in the Uffizi in Florence."
+    },
+    {
+     "level": 2,
+     "q": "Which Venice festival is famous for masks?",
+     "a": "Carnival of Venice",
+     "wrong": [
+      "Palio di Siena",
+      "Festa della Repubblica",
+      "Ferragosto"
+     ],
+     "why": "It ends on Shrove Tuesday."
+    },
+    {
+     "level": 2,
+     "q": "Which Florence gallery holds Botticelli's works?",
+     "a": "Uffizi",
+     "wrong": [
+      "Accademia",
+      "Pitti Palace",
+      "Bargello"
+     ],
+     "why": "Michelangelo's David is in the Accademia."
     }
    ]
   },
   {
-   "name": "Italy Food & Traditions",
+   "category": "General Knowledge",
+   "name": "General Knowledge",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which tenor was part of 'The Three Tenors'?",
+     "a": "Luciano Pavarotti",
+     "wrong": [
+      "Andrea Bocelli",
+      "Enrico Caruso",
+      "Mario Lanza"
+     ],
+     "why": "He sang 'Nessun dorma' at the 1990 World Cup."
+    },
     {
      "level": 1,
      "q": "Which city is the home of pizza margherita?",
@@ -819,17 +936,6 @@
     },
     {
      "level": 2,
-     "q": "Which Venice festival is famous for masks?",
-     "a": "Carnival of Venice",
-     "wrong": [
-      "Palio di Siena",
-      "Festa della Repubblica",
-      "Ferragosto"
-     ],
-     "why": "It ends on Shrove Tuesday."
-    },
-    {
-     "level": 2,
      "q": "Which Siena horse race is run around the Piazza del Campo?",
      "a": "Palio di Siena",
      "wrong": [
@@ -904,12 +1010,7 @@
       "Passeggiata"
      ],
      "why": "Spritz is a popular choice."
-    }
-   ]
-  },
-  {
-   "name": "Italy General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What are the colours of the Italian flag?",
@@ -920,17 +1021,6 @@
       "Red, yellow and green"
      ],
      "why": "It is called 'il Tricolore'."
-    },
-    {
-     "level": 1,
-     "q": "Which ancient amphitheatre in Rome held gladiator fights?",
-     "a": "Colosseum",
-     "wrong": [
-      "Pantheon",
-      "Circus Maximus",
-      "Forum"
-     ],
-     "why": "It held about 50,000 people."
     },
     {
      "level": 1,
@@ -1000,17 +1090,6 @@
     },
     {
      "level": 2,
-     "q": "Which physicist built the first nuclear reactor in 1942?",
-     "a": "Enrico Fermi",
-     "wrong": [
-      "Ettore Majorana",
-      "Emilio Segrè",
-      "Guglielmo Marconi"
-     ],
-     "why": "He built it in Chicago."
-    },
-    {
-     "level": 2,
      "q": "Which Roman temple has a huge concrete dome with an open oculus?",
      "a": "Pantheon",
      "wrong": [
@@ -1019,39 +1098,6 @@
       "Ara Pacis"
      ],
      "why": "It is almost 2,000 years old."
-    },
-    {
-     "level": 2,
-     "q": "Which country has the most UNESCO World Heritage Sites?",
-     "a": "Italy",
-     "wrong": [
-      "France",
-      "Spain",
-      "Greece"
-     ],
-     "why": "It has around 60, just ahead of China."
-    },
-    {
-     "level": 2,
-     "q": "Which Florence gallery holds Botticelli's works?",
-     "a": "Uffizi",
-     "wrong": [
-      "Accademia",
-      "Pitti Palace",
-      "Bargello"
-     ],
-     "why": "Michelangelo's David is in the Accademia."
-    },
-    {
-     "level": 2,
-     "q": "What is the Italian national anthem often called?",
-     "a": "Il Canto degli Italiani (Fratelli d'Italia)",
-     "wrong": [
-      "Va, pensiero",
-      "O sole mio",
-      "Bella ciao"
-     ],
-     "why": "Goffredo Mameli wrote the words in 1847."
     },
     {
      "level": 3,
@@ -1063,28 +1109,6 @@
       "Matilde Serao"
      ],
      "why": "She opened her first school in Rome in 1907."
-    },
-    {
-     "level": 3,
-     "q": "Which ancient road ran from Rome to Brindisi?",
-     "a": "Via Appia",
-     "wrong": [
-      "Via Flaminia",
-      "Via Aurelia",
-      "Via Emilia"
-     ],
-     "why": "It was called the 'queen of roads'."
-    },
-    {
-     "level": 3,
-     "q": "Which Italian scientist won the 1986 Nobel Prize for discovering nerve growth factor?",
-     "a": "Rita Levi-Montalcini",
-     "wrong": [
-      "Maria Montessori",
-      "Fabiola Gianotti",
-      "Samantha Cristoforetti"
-     ],
-     "why": "She lived to 103."
     }
    ]
   }

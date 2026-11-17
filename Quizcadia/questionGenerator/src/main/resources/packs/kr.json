@@ -3,7 +3,8 @@
  "country": "KR",
  "topics": [
   {
-   "name": "South Korea: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -26,28 +27,6 @@
       "Vietnam War"
      ],
      "why": "It ended with an armistice, not a peace treaty."
-    },
-    {
-     "level": 1,
-     "q": "Which strip of land separates North and South Korea?",
-     "a": "Demilitarized Zone (DMZ)",
-     "wrong": [
-      "Green Line",
-      "38th Corridor",
-      "Peace Belt"
-     ],
-     "why": "It is about 4 km wide."
-    },
-    {
-     "level": 1,
-     "q": "Which city hosted the 1988 Summer Olympics?",
-     "a": "Seoul",
-     "wrong": [
-      "Busan",
-      "Incheon",
-      "Daegu"
-     ],
-     "why": "It was South Korea's first Olympics."
     },
     {
      "level": 1,
@@ -117,17 +96,6 @@
     },
     {
      "level": 2,
-     "q": "Which South Korean President won the 2000 Nobel Peace Prize?",
-     "a": "Kim Dae-jung",
-     "wrong": [
-      "Roh Moo-hyun",
-      "Kim Young-sam",
-      "Moon Jae-in"
-     ],
-     "why": "He pursued the 'Sunshine Policy' toward the North."
-    },
-    {
-     "level": 2,
      "q": "Which 1 March 1919 movement called for independence from Japan?",
      "a": "March 1st Movement",
      "wrong": [
@@ -169,66 +137,6 @@
       "Choi Kyu-hah"
      ],
      "why": "He took office in 1948."
-    }
-   ]
-  },
-  {
-   "name": "South Korea: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of South Korea?",
-     "a": "Seoul",
-     "wrong": [
-      "Busan",
-      "Incheon",
-      "Daegu"
-     ],
-     "why": "About half of South Koreans live in its metro area."
-    },
-    {
-     "level": 1,
-     "q": "Which fermented cabbage dish is a Korean staple?",
-     "a": "Kimchi",
-     "wrong": [
-      "Bibimbap",
-      "Bulgogi",
-      "Japchae"
-     ],
-     "why": "Kimjang, the making of kimchi, is on UNESCO's list."
-    },
-    {
-     "level": 1,
-     "q": "Which boy band sang 'Dynamite' and 'Butter'?",
-     "a": "BTS",
-     "wrong": [
-      "EXO",
-      "Big Bang",
-      "Seventeen"
-     ],
-     "why": "They were the first K-pop act to top the Billboard Hot 100."
-    },
-    {
-     "level": 1,
-     "q": "Which Korean film won the Oscar for Best Picture in 2020?",
-     "a": "Parasite",
-     "wrong": [
-      "Oldboy",
-      "Burning",
-      "Train to Busan"
-     ],
-     "why": "Bong Joon-ho directed it."
-    },
-    {
-     "level": 1,
-     "q": "Which Korean electronics giant makes Galaxy phones?",
-     "a": "Samsung",
-     "wrong": [
-      "LG",
-      "Hyundai",
-      "SK"
-     ],
-     "why": "It was founded in 1938."
     },
     {
      "level": 1,
@@ -240,17 +148,23 @@
       "All of Us Are Dead"
      ],
      "why": "Contestants play deadly children's games."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
     {
      "level": 1,
-     "q": "Which Korean martial art is known for its high kicks?",
-     "a": "Taekwondo",
+     "q": "What is the capital of South Korea?",
+     "a": "Seoul",
      "wrong": [
-      "Hapkido",
-      "Judo",
-      "Karate"
+      "Busan",
+      "Incheon",
+      "Daegu"
      ],
-     "why": "It became an Olympic sport in 2000."
+     "why": "About half of South Koreans live in its metro area."
     },
     {
      "level": 2,
@@ -275,6 +189,62 @@
      "why": "Its women free-divers are called haenyeo."
     },
     {
+     "level": 3,
+     "q": "What is South Korea's highest mountain?",
+     "a": "Hallasan",
+     "wrong": [
+      "Seoraksan",
+      "Jirisan",
+      "Bukhansan"
+     ],
+     "why": "It is a volcano on Jeju Island."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which city hosted the 1988 Summer Olympics?",
+     "a": "Seoul",
+     "wrong": [
+      "Busan",
+      "Incheon",
+      "Daegu"
+     ],
+     "why": "It was South Korea's first Olympics."
+    },
+    {
+     "level": 1,
+     "q": "Which Korean martial art is known for its high kicks?",
+     "a": "Taekwondo",
+     "wrong": [
+      "Hapkido",
+      "Judo",
+      "Karate"
+     ],
+     "why": "It became an Olympic sport in 2000."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which boy band sang 'Dynamite' and 'Butter'?",
+     "a": "BTS",
+     "wrong": [
+      "EXO",
+      "Big Bang",
+      "Seventeen"
+     ],
+     "why": "They were the first K-pop act to top the Billboard Hot 100."
+    },
+    {
      "level": 2,
      "q": "Which girl group sang 'How You Like That'?",
      "a": "Blackpink",
@@ -287,17 +257,6 @@
     },
     {
      "level": 2,
-     "q": "Which rice bowl dish is topped with vegetables and an egg?",
-     "a": "Bibimbap",
-     "wrong": [
-      "Bulgogi",
-      "Tteokbokki",
-      "Japchae"
-     ],
-     "why": "Jeonju is famous for it."
-    },
-    {
-     "level": 2,
      "q": "Which singer's 'Gangnam Style' was the first YouTube video to reach a billion views?",
      "a": "Psy",
      "wrong": [
@@ -306,7 +265,30 @@
       "Jay Park"
      ],
      "why": "It came out in 2012."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Korean film won the Oscar for Best Picture in 2020?",
+     "a": "Parasite",
+     "wrong": [
+      "Oldboy",
+      "Burning",
+      "Train to Busan"
+     ],
+     "why": "Bong Joon-ho directed it."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
      "level": 3,
      "q": "Which Korean author won the Nobel Prize in Literature in 2024?",
@@ -317,17 +299,73 @@
       "Hwang Sok-yong"
      ],
      "why": "She wrote 'The Vegetarian'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which South Korean President won the 2000 Nobel Peace Prize?",
+     "a": "Kim Dae-jung",
+     "wrong": [
+      "Roh Moo-hyun",
+      "Kim Young-sam",
+      "Moon Jae-in"
+     ],
+     "why": "He pursued the 'Sunshine Policy' toward the North."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which strip of land separates North and South Korea?",
+     "a": "Demilitarized Zone (DMZ)",
+     "wrong": [
+      "Green Line",
+      "38th Corridor",
+      "Peace Belt"
+     ],
+     "why": "It is about 4 km wide."
     },
     {
-     "level": 3,
-     "q": "What is South Korea's highest mountain?",
-     "a": "Hallasan",
+     "level": 1,
+     "q": "Which fermented cabbage dish is a Korean staple?",
+     "a": "Kimchi",
      "wrong": [
-      "Seoraksan",
-      "Jirisan",
-      "Bukhansan"
+      "Bibimbap",
+      "Bulgogi",
+      "Japchae"
      ],
-     "why": "It is a volcano on Jeju Island."
+     "why": "Kimjang, the making of kimchi, is on UNESCO's list."
+    },
+    {
+     "level": 1,
+     "q": "Which Korean electronics giant makes Galaxy phones?",
+     "a": "Samsung",
+     "wrong": [
+      "LG",
+      "Hyundai",
+      "SK"
+     ],
+     "why": "It was founded in 1938."
+    },
+    {
+     "level": 2,
+     "q": "Which rice bowl dish is topped with vegetables and an egg?",
+     "a": "Bibimbap",
+     "wrong": [
+      "Bulgogi",
+      "Tteokbokki",
+      "Japchae"
+     ],
+     "why": "Jeonju is famous for it."
     },
     {
      "level": 3,

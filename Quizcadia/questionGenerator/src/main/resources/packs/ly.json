@@ -3,7 +3,8 @@
  "country": "LY",
  "topics": [
   {
-   "name": "Libya: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -117,17 +118,6 @@
     },
     {
      "level": 2,
-     "q": "What was Gaddafi's political book called?",
-     "a": "The Green Book",
-     "wrong": [
-      "The Red Book",
-      "The Blue Book",
-      "Little Book of Freedom"
-     ],
-     "why": "It set out his 'Third Universal Theory'."
-    },
-    {
-     "level": 2,
      "q": "Which Sufi order led resistance to Italian rule?",
      "a": "Senussi",
      "wrong": [
@@ -169,11 +159,23 @@
       "Euesperides"
      ],
      "why": "It was famous for the plant silphium."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient plant, now extinct, made Cyrene rich?",
+     "a": "Silphium",
+     "wrong": [
+      "Saffron",
+      "Papyrus",
+      "Frankincense"
+     ],
+     "why": "It was so valuable it appeared on coins."
     }
    ]
   },
   {
-   "name": "Libya: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -185,17 +187,6 @@
       "Sabha"
      ],
      "why": "It is on the Mediterranean coast."
-    },
-    {
-     "level": 1,
-     "q": "What is Libya's currency?",
-     "a": "Libyan dinar",
-     "wrong": [
-      "Dirham",
-      "Pound",
-      "Riyal"
-     ],
-     "why": "Its code is LYD."
     },
     {
      "level": 1,
@@ -242,17 +233,6 @@
      "why": "Libya has Africa's longest Mediterranean coastline."
     },
     {
-     "level": 1,
-     "q": "What is Libya's main export?",
-     "a": "Oil",
-     "wrong": [
-      "Gold",
-      "Coffee",
-      "Cotton"
-     ],
-     "why": "It has Africa's largest proven oil reserves."
-    },
-    {
      "level": 2,
      "q": "Which desert oasis town with a covered old town is a UNESCO site?",
      "a": "Ghadames",
@@ -265,6 +245,68 @@
     },
     {
      "level": 2,
+     "q": "Which Roman city near Tripoli has a seaside theatre?",
+     "a": "Sabratha",
+     "wrong": [
+      "Leptis Magna",
+      "Cyrene",
+      "Apollonia"
+     ],
+     "why": "Its theatre has three storeys."
+    },
+    {
+     "level": 3,
+     "q": "Which Libyan region in the southwest is a vast desert area?",
+     "a": "Fezzan",
+     "wrong": [
+      "Cyrenaica",
+      "Tripolitania",
+      "Kufra"
+     ],
+     "why": "It was home to the Garamantes."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which film about Omar Mukhtar starred Anthony Quinn?",
+     "a": "Lion of the Desert",
+     "wrong": [
+      "Lawrence of Arabia",
+      "The Message",
+      "Desert Fox"
+     ],
+     "why": "It was released in 1981."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "What was Gaddafi's political book called?",
+     "a": "The Green Book",
+     "wrong": [
+      "The Red Book",
+      "The Blue Book",
+      "Little Book of Freedom"
+     ],
+     "why": "It set out his 'Third Universal Theory'."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
      "q": "Which mountain massif has ancient rock art in the southwest?",
      "a": "Tadrart Acacus",
      "wrong": [
@@ -273,6 +315,34 @@
       "Atlas"
      ],
      "why": "It is a UNESCO site."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Libya's currency?",
+     "a": "Libyan dinar",
+     "wrong": [
+      "Dirham",
+      "Pound",
+      "Riyal"
+     ],
+     "why": "Its code is LYD."
+    },
+    {
+     "level": 1,
+     "q": "What is Libya's main export?",
+     "a": "Oil",
+     "wrong": [
+      "Gold",
+      "Coffee",
+      "Cotton"
+     ],
+     "why": "It has Africa's largest proven oil reserves."
     },
     {
      "level": 2,
@@ -287,17 +357,6 @@
     },
     {
      "level": 2,
-     "q": "Which Roman city near Tripoli has a seaside theatre?",
-     "a": "Sabratha",
-     "wrong": [
-      "Leptis Magna",
-      "Cyrene",
-      "Apollonia"
-     ],
-     "why": "Its theatre has three storeys."
-    },
-    {
-     "level": 2,
      "q": "Which Tripoli castle is called the 'Red Castle'?",
      "a": "Assaraya al-Hamra",
      "wrong": [
@@ -306,39 +365,6 @@
       "Ghadames Fort"
      ],
      "why": "It houses a museum."
-    },
-    {
-     "level": 3,
-     "q": "Which Libyan region in the southwest is a vast desert area?",
-     "a": "Fezzan",
-     "wrong": [
-      "Cyrenaica",
-      "Tripolitania",
-      "Kufra"
-     ],
-     "why": "It was home to the Garamantes."
-    },
-    {
-     "level": 3,
-     "q": "Which film about Omar Mukhtar starred Anthony Quinn?",
-     "a": "Lion of the Desert",
-     "wrong": [
-      "Lawrence of Arabia",
-      "The Message",
-      "Desert Fox"
-     ],
-     "why": "It was released in 1981."
-    },
-    {
-     "level": 3,
-     "q": "Which ancient plant, now extinct, made Cyrene rich?",
-     "a": "Silphium",
-     "wrong": [
-      "Saffron",
-      "Papyrus",
-      "Frankincense"
-     ],
-     "why": "It was so valuable it appeared on coins."
     }
    ]
   }

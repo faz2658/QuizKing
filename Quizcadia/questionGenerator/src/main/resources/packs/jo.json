@@ -3,19 +3,9 @@
  "country": "JO",
  "topics": [
   {
-   "name": "Jordan: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which ancient city carved into pink rock was the Nabataean capital?",
-     "a": "Petra",
-     "wrong": [
-      "Jerash",
-      "Palmyra",
-      "Hegra"
-     ],
-     "why": "It is one of the New 7 Wonders of the World."
-    },
     {
      "level": 1,
      "q": "In which year did Jordan become independent from Britain?",
@@ -50,39 +40,6 @@
      "why": "He made peace with Israel in 1994."
     },
     {
-     "level": 1,
-     "q": "Which family has ruled Jordan since its founding?",
-     "a": "Hashemites",
-     "wrong": [
-      "Saudis",
-      "Alaouites",
-      "Al Thanis"
-     ],
-     "why": "They trace descent from the Prophet Muhammad."
-    },
-    {
-     "level": 1,
-     "q": "Which film was shot in Wadi Rum and Petra in 1962?",
-     "a": "Lawrence of Arabia",
-     "wrong": [
-      "Ben-Hur",
-      "The Mummy",
-      "Gladiator"
-     ],
-     "why": "T. E. Lawrence fought in the region."
-    },
-    {
-     "level": 1,
-     "q": "Which river runs along Jordan's western border?",
-     "a": "Jordan River",
-     "wrong": [
-      "Euphrates",
-      "Litani",
-      "Orontes"
-     ],
-     "why": "Jesus is said to have been baptised there."
-    },
-    {
      "level": 2,
      "q": "Which king founded the Emirate of Transjordan in 1921?",
      "a": "Abdullah I",
@@ -92,17 +49,6 @@
       "Talal"
      ],
      "why": "He became king in 1946."
-    },
-    {
-     "level": 2,
-     "q": "Which Roman city in the north is called the 'Pompeii of the East'?",
-     "a": "Jerash",
-     "wrong": [
-      "Umm Qais",
-      "Pella",
-      "Madaba"
-     ],
-     "why": "Its colonnaded streets are well preserved."
     },
     {
      "level": 2,
@@ -127,17 +73,6 @@
      "why": "He travelled in disguise."
     },
     {
-     "level": 2,
-     "q": "Which town is famous for a 6th-century mosaic map of the Holy Land?",
-     "a": "Madaba",
-     "wrong": [
-      "Karak",
-      "Aqaba",
-      "Salt"
-     ],
-     "why": "It is in St George's Church."
-    },
-    {
      "level": 3,
      "q": "Which 1916 revolt against the Ottomans began in the Hejaz?",
      "a": "Great Arab Revolt",
@@ -160,6 +95,45 @@
      "why": "It was besieged by Saladin."
     },
     {
+     "level": 2,
+     "q": "Which queen of Jordan is known for education campaigns?",
+     "a": "Queen Rania",
+     "wrong": [
+      "Queen Noor",
+      "Queen Alia",
+      "Queen Zein"
+     ],
+     "why": "She was born in Kuwait."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which river runs along Jordan's western border?",
+     "a": "Jordan River",
+     "wrong": [
+      "Euphrates",
+      "Litani",
+      "Orontes"
+     ],
+     "why": "Jesus is said to have been baptised there."
+    },
+    {
+     "level": 2,
+     "q": "Which Roman city in the north is called the 'Pompeii of the East'?",
+     "a": "Jerash",
+     "wrong": [
+      "Umm Qais",
+      "Pella",
+      "Madaba"
+     ],
+     "why": "Its colonnaded streets are well preserved."
+    },
+    {
      "level": 3,
      "q": "Which site on the Jordan River is the UNESCO-listed baptism site?",
      "a": "Bethany Beyond the Jordan",
@@ -169,12 +143,7 @@
       "Jericho"
      ],
      "why": "It is called Al-Maghtas."
-    }
-   ]
-  },
-  {
-   "name": "Jordan: Places & Culture",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is the capital of Jordan?",
@@ -221,28 +190,6 @@
     },
     {
      "level": 1,
-     "q": "What is Jordan's currency?",
-     "a": "Jordanian dinar",
-     "wrong": [
-      "Riyal",
-      "Pound",
-      "Lira"
-     ],
-     "why": "It is one of the world's highest-valued currencies."
-    },
-    {
-     "level": 1,
-     "q": "Which lamb and rice dish with dried yoghurt sauce is the national dish?",
-     "a": "Mansaf",
-     "wrong": [
-      "Maqluba",
-      "Kabsa",
-      "Musakhan"
-     ],
-     "why": "It is eaten with the right hand."
-    },
-    {
-     "level": 1,
      "q": "What is the famous building at the end of Petra's narrow gorge called?",
      "a": "The Treasury (Al-Khazneh)",
      "wrong": [
@@ -265,14 +212,115 @@
     },
     {
      "level": 2,
-     "q": "Which queen of Jordan is known for education campaigns?",
-     "a": "Queen Rania",
+     "q": "Which nature reserve has canyons for river hikes?",
+     "a": "Wadi Mujib",
      "wrong": [
-      "Queen Noor",
-      "Queen Alia",
-      "Queen Zein"
+      "Dana",
+      "Azraq",
+      "Ajloun"
      ],
-     "why": "She was born in Kuwait."
+     "why": "It is near the Dead Sea."
+    },
+    {
+     "level": 3,
+     "q": "Which large oasis in the eastern desert has a wetland reserve?",
+     "a": "Azraq",
+     "wrong": [
+      "Dana",
+      "Wadi Rum",
+      "Mujib"
+     ],
+     "why": "T. E. Lawrence stayed at its castle."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which film was shot in Wadi Rum and Petra in 1962?",
+     "a": "Lawrence of Arabia",
+     "wrong": [
+      "Ben-Hur",
+      "The Mummy",
+      "Gladiator"
+     ],
+     "why": "T. E. Lawrence fought in the region."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which family has ruled Jordan since its founding?",
+     "a": "Hashemites",
+     "wrong": [
+      "Saudis",
+      "Alaouites",
+      "Al Thanis"
+     ],
+     "why": "They trace descent from the Prophet Muhammad."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which ancient city carved into pink rock was the Nabataean capital?",
+     "a": "Petra",
+     "wrong": [
+      "Jerash",
+      "Palmyra",
+      "Hegra"
+     ],
+     "why": "It is one of the New 7 Wonders of the World."
+    },
+    {
+     "level": 2,
+     "q": "Which town is famous for a 6th-century mosaic map of the Holy Land?",
+     "a": "Madaba",
+     "wrong": [
+      "Karak",
+      "Aqaba",
+      "Salt"
+     ],
+     "why": "It is in St George's Church."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Jordan's currency?",
+     "a": "Jordanian dinar",
+     "wrong": [
+      "Riyal",
+      "Pound",
+      "Lira"
+     ],
+     "why": "It is one of the world's highest-valued currencies."
+    },
+    {
+     "level": 1,
+     "q": "Which lamb and rice dish with dried yoghurt sauce is the national dish?",
+     "a": "Mansaf",
+     "wrong": [
+      "Maqluba",
+      "Kabsa",
+      "Musakhan"
+     ],
+     "why": "It is eaten with the right hand."
     },
     {
      "level": 2,
@@ -287,17 +335,6 @@
     },
     {
      "level": 2,
-     "q": "Which nature reserve has canyons for river hikes?",
-     "a": "Wadi Mujib",
-     "wrong": [
-      "Dana",
-      "Azraq",
-      "Ajloun"
-     ],
-     "why": "It is near the Dead Sea."
-    },
-    {
-     "level": 2,
      "q": "Which Bedouin red-and-white headscarf is a Jordanian symbol?",
      "a": "Shemagh (keffiyeh)",
      "wrong": [
@@ -306,17 +343,6 @@
       "Taqiyah"
      ],
      "why": "The red-and-white pattern is typical of Jordan."
-    },
-    {
-     "level": 3,
-     "q": "Which large oasis in the eastern desert has a wetland reserve?",
-     "a": "Azraq",
-     "wrong": [
-      "Dana",
-      "Wadi Rum",
-      "Mujib"
-     ],
-     "why": "T. E. Lawrence stayed at its castle."
     },
     {
      "level": 3,
