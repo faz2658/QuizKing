@@ -1,0 +1,346 @@
+{
+ "category": "Kazakhstan",
+ "country": "KZ",
+ "topics": [
+  {
+   "name": "Kazakhstan: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Kazakhstan become independent?",
+     "a": "1991",
+     "wrong": [
+      "1989",
+      "1993",
+      "1995"
+     ],
+     "why": "It was the last Soviet republic to leave."
+    },
+    {
+     "level": 1,
+     "q": "Who was Kazakhstan's first President, serving until 2019?",
+     "a": "Nursultan Nazarbayev",
+     "wrong": [
+      "Kassym-Jomart Tokayev",
+      "Dinmukhamed Kunayev",
+      "Askar Akayev"
+     ],
+     "why": "The capital was named Nur-Sultan after him for a while."
+    },
+    {
+     "level": 1,
+     "q": "Which spaceport in Kazakhstan launched Sputnik and Gagarin?",
+     "a": "Baikonur Cosmodrome",
+     "wrong": [
+      "Plesetsk",
+      "Vostochny",
+      "Kapustin Yar"
+     ],
+     "why": "Russia still leases it."
+    },
+    {
+     "level": 1,
+     "q": "Which empire of the steppe did Genghis Khan found?",
+     "a": "Mongol Empire",
+     "wrong": [
+      "Ottoman Empire",
+      "Timurid Empire",
+      "Khazar Khaganate"
+     ],
+     "why": "Its armies swept across Kazakh lands."
+    },
+    {
+     "level": 1,
+     "q": "Which nomadic peoples' state was founded around 1465?",
+     "a": "Kazakh Khanate",
+     "wrong": [
+      "Golden Horde",
+      "Kokand Khanate",
+      "Bukhara Emirate"
+     ],
+     "why": "Kerei and Janibek founded it."
+    },
+    {
+     "level": 1,
+     "q": "Which Soviet nuclear test site was in Kazakhstan?",
+     "a": "Semipalatinsk",
+     "wrong": [
+      "Novaya Zemlya",
+      "Totskoye",
+      "Kapustin Yar"
+     ],
+     "why": "Over 450 tests were carried out there."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of Kazakhstan since 2019?",
+     "a": "Kassym-Jomart Tokayev",
+     "wrong": [
+      "Nursultan Nazarbayev",
+      "Karim Massimov",
+      "Askar Mamin"
+     ],
+     "why": "He was a career diplomat."
+    },
+    {
+     "level": 2,
+     "q": "Which disappearing sea did Kazakhstan share with Uzbekistan?",
+     "a": "Aral Sea",
+     "wrong": [
+      "Caspian Sea",
+      "Lake Balkhash",
+      "Black Sea"
+     ],
+     "why": "Soviet irrigation drained it."
+    },
+    {
+     "level": 2,
+     "q": "In which year did the capital move from Almaty to Astana?",
+     "a": "1997",
+     "wrong": [
+      "1991",
+      "2005",
+      "2010"
+     ],
+     "why": "Astana means 'capital'."
+    },
+    {
+     "level": 2,
+     "q": "Which Soviet campaign of the 1950s ploughed up Kazakh steppe for wheat?",
+     "a": "Virgin Lands campaign",
+     "wrong": [
+      "Great Leap Forward",
+      "Collectivisation",
+      "New Economic Policy"
+     ],
+     "why": "Khrushchev launched it."
+    },
+    {
+     "level": 2,
+     "q": "Which 1930s disaster killed over a million Kazakhs?",
+     "a": "Kazakh famine (Asharshylyk)",
+     "wrong": [
+      "Holodomor",
+      "Great Purge",
+      "Volga famine"
+     ],
+     "why": "It followed forced collectivisation."
+    },
+    {
+     "level": 2,
+     "q": "Which poet and philosopher is Kazakhstan's national writer?",
+     "a": "Abai Qunanbaiuly",
+     "wrong": [
+      "Mukhtar Auezov",
+      "Olzhas Suleimenov",
+      "Shokan Valikhanov"
+     ],
+     "why": "His 'Book of Words' is widely read."
+    },
+    {
+     "level": 3,
+     "q": "Which golden-clad warrior from an ancient Saka burial is a national symbol?",
+     "a": "Golden Man",
+     "wrong": [
+      "Bronze Archer",
+      "Silver Khan",
+      "Iron Rider"
+     ],
+     "why": "He was found at Issyk in 1969."
+    },
+    {
+     "level": 3,
+     "q": "Which 1986 protests in Almaty challenged Soviet rule?",
+     "a": "Jeltoqsan (December) events",
+     "wrong": [
+      "Prague Spring",
+      "Velvet Revolution",
+      "Singing Revolution"
+     ],
+     "why": "They followed the replacement of Kunayev."
+    },
+    {
+     "level": 3,
+     "q": "Which Sufi poet's mausoleum in Turkistan is a UNESCO site?",
+     "a": "Khoja Ahmed Yasawi",
+     "wrong": [
+      "Rumi",
+      "Bahauddin Naqshband",
+      "Hafez"
+     ],
+     "why": "Timur ordered it built."
+    }
+   ]
+  },
+  {
+   "name": "Kazakhstan: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Kazakhstan?",
+     "a": "Astana",
+     "wrong": [
+      "Almaty",
+      "Shymkent",
+      "Karaganda"
+     ],
+     "why": "It is one of the world's coldest capitals."
+    },
+    {
+     "level": 1,
+     "q": "Which is Kazakhstan's largest city?",
+     "a": "Almaty",
+     "wrong": [
+      "Astana",
+      "Shymkent",
+      "Aktobe"
+     ],
+     "why": "It was the capital until 1997."
+    },
+    {
+     "level": 1,
+     "q": "What is Kazakhstan's currency?",
+     "a": "Tenge",
+     "wrong": [
+      "Ruble",
+      "Som",
+      "Manat"
+     ],
+     "why": "It was introduced in 1993."
+    },
+    {
+     "level": 1,
+     "q": "Which is the largest landlocked country in the world?",
+     "a": "Kazakhstan",
+     "wrong": [
+      "Mongolia",
+      "Chad",
+      "Bolivia"
+     ],
+     "why": "It is the ninth-largest country overall."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies on Kazakhstan's western border?",
+     "a": "Caspian Sea",
+     "wrong": [
+      "Black Sea",
+      "Sea of Azov",
+      "Baltic Sea"
+     ],
+     "why": "It is the largest enclosed body of water."
+    },
+    {
+     "level": 1,
+     "q": "Which fruit is said to have originated in the forests near Almaty?",
+     "a": "Apple",
+     "wrong": [
+      "Banana",
+      "Orange",
+      "Grape"
+     ],
+     "why": "Almaty's old name means 'father of apples'."
+    },
+    {
+     "level": 1,
+     "q": "Which tower-shaped landmark in Astana has a golden ball on top?",
+     "a": "Baiterek",
+     "wrong": [
+      "Khan Shatyr",
+      "Kazakhstan Tower",
+      "Ak Orda"
+     ],
+     "why": "It represents the tree of life."
+    },
+    {
+     "level": 2,
+     "q": "Which horse-meat dish with noodles is the national dish?",
+     "a": "Beshbarmak",
+     "wrong": [
+      "Plov",
+      "Manti",
+      "Lagman"
+     ],
+     "why": "Its name means 'five fingers'."
+    },
+    {
+     "level": 2,
+     "q": "Which fermented mare's milk is a traditional drink?",
+     "a": "Kumis",
+     "wrong": [
+      "Kefir",
+      "Ayran",
+      "Shubat"
+     ],
+     "why": "Shubat is fermented camel milk."
+    },
+    {
+     "level": 2,
+     "q": "Which giant transparent tent in Astana is a shopping centre?",
+     "a": "Khan Shatyr",
+     "wrong": [
+      "Baiterek",
+      "Mega Silk Way",
+      "Pyramid of Peace"
+     ],
+     "why": "Norman Foster designed it."
+    },
+    {
+     "level": 2,
+     "q": "Which outdoor skating rink near Almaty sits high in the mountains?",
+     "a": "Medeu",
+     "wrong": [
+      "Shymbulak",
+      "Kok Tobe",
+      "Alatau"
+     ],
+     "why": "Many speed-skating records were set there."
+    },
+    {
+     "level": 2,
+     "q": "What is the traditional round felt tent of the steppe called?",
+     "a": "Yurt",
+     "wrong": [
+      "Tipi",
+      "Wigwam",
+      "Igloo"
+     ],
+     "why": "Its roof opening is called the shanyrak."
+    },
+    {
+     "level": 3,
+     "q": "Which Kazakh boxer won many world middleweight titles?",
+     "a": "Gennady Golovkin",
+     "wrong": [
+      "Vasiliy Jirov",
+      "Serik Sapiyev",
+      "Daniyar Yeleussinov"
+     ],
+     "why": "He is nicknamed 'GGG'."
+    },
+    {
+     "level": 3,
+     "q": "Which red rock canyon east of Almaty is compared to the Grand Canyon?",
+     "a": "Charyn Canyon",
+     "wrong": [
+      "Kolsai Canyon",
+      "Aksu Canyon",
+      "Temirlik Canyon"
+     ],
+     "why": "Its 'Valley of Castles' is famous."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient stringed instrument is Kazakhstan's best-known?",
+     "a": "Dombra",
+     "wrong": [
+      "Komuz",
+      "Dutar",
+      "Balalaika"
+     ],
+     "why": "It has two strings."
+    }
+   ]
+  }
+ ]
+}

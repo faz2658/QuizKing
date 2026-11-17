@@ -1,0 +1,346 @@
+{
+ "category": "Georgia",
+ "country": "GE",
+ "topics": [
+  {
+   "name": "Georgia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Georgia?",
+     "a": "Tbilisi",
+     "wrong": [
+      "Batumi",
+      "Kutaisi",
+      "Gori"
+     ],
+     "why": "Its name means 'warm place' for its hot springs."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Georgia regain independence from the Soviet Union?",
+     "a": "1991",
+     "wrong": [
+      "1989",
+      "1993",
+      "2003"
+     ],
+     "why": "Independence Day is 26 May, for the 1918 republic."
+    },
+    {
+     "level": 1,
+     "q": "Which Soviet leader was born in Gori, Georgia?",
+     "a": "Joseph Stalin",
+     "wrong": [
+      "Lavrentiy Beria",
+      "Eduard Shevardnadze",
+      "Nikita Khrushchev"
+     ],
+     "why": "His birthplace has a museum."
+    },
+    {
+     "level": 1,
+     "q": "Which queen of the 1100s–1200s ruled Georgia's golden age?",
+     "a": "Queen Tamar",
+     "wrong": [
+      "Queen Ketevan",
+      "Queen Rusudan",
+      "Queen Nino"
+     ],
+     "why": "She was called 'king' in official records."
+    },
+    {
+     "level": 1,
+     "q": "Which 2003 peaceful protests overturned a disputed election?",
+     "a": "Rose Revolution",
+     "wrong": [
+      "Orange Revolution",
+      "Tulip Revolution",
+      "Velvet Revolution"
+     ],
+     "why": "Protesters carried roses."
+    },
+    {
+     "level": 1,
+     "q": "With which country did Georgia fight a short war in 2008?",
+     "a": "Russia",
+     "wrong": [
+      "Armenia",
+      "Azerbaijan",
+      "Turkey"
+     ],
+     "why": "It lasted five days."
+    },
+    {
+     "level": 1,
+     "q": "Which saint brought Christianity to Georgia in the 300s?",
+     "a": "Saint Nino",
+     "wrong": [
+      "Saint George",
+      "Saint Andrew",
+      "Saint Gregory"
+     ],
+     "why": "Georgia was one of the first Christian nations."
+    },
+    {
+     "level": 2,
+     "q": "Which king, 'the Builder', united Georgia in the 1100s?",
+     "a": "David IV",
+     "wrong": [
+      "George III",
+      "Vakhtang I",
+      "Bagrat III"
+     ],
+     "why": "He won the Battle of Didgori in 1121."
+    },
+    {
+     "level": 2,
+     "q": "Which Georgian became Soviet foreign minister and later President of Georgia?",
+     "a": "Eduard Shevardnadze",
+     "wrong": [
+      "Mikheil Saakashvili",
+      "Zviad Gamsakhurdia",
+      "Giorgi Margvelashvili"
+     ],
+     "why": "He helped end the Cold War."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient kingdom of western Georgia was the land of the Golden Fleece?",
+     "a": "Colchis",
+     "wrong": [
+      "Iberia",
+      "Lazica",
+      "Kartli"
+     ],
+     "why": "Jason and the Argonauts sailed there."
+    },
+    {
+     "level": 2,
+     "q": "Which epic poem by Shota Rustaveli is Georgia's national masterpiece?",
+     "a": "The Knight in the Panther's Skin",
+     "wrong": [
+      "The Shahnameh",
+      "Digenis Akritas",
+      "The Lay of Igor"
+     ],
+     "why": "It was written around 1200."
+    },
+    {
+     "level": 2,
+     "q": "Which unique alphabet do Georgians use?",
+     "a": "Mkhedruli",
+     "wrong": [
+      "Cyrillic",
+      "Armenian",
+      "Latin"
+     ],
+     "why": "Georgia's three scripts are on UNESCO's list."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient cave city near Gori was carved into rock?",
+     "a": "Uplistsikhe",
+     "wrong": [
+      "Vardzia",
+      "Davit Gareja",
+      "Mtskheta"
+     ],
+     "why": "It dates back over 3,000 years."
+    },
+    {
+     "level": 3,
+     "q": "Which cliff monastery was built by Queen Tamar?",
+     "a": "Vardzia",
+     "wrong": [
+      "Uplistsikhe",
+      "Gelati",
+      "Jvari"
+     ],
+     "why": "It has hundreds of rooms in the rock."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient capital holds Svetitskhoveli Cathedral?",
+     "a": "Mtskheta",
+     "wrong": [
+      "Kutaisi",
+      "Telavi",
+      "Signagi"
+     ],
+     "why": "It is a UNESCO site."
+    }
+   ]
+  },
+  {
+   "name": "Georgia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which cheese-filled bread boat from Adjara has an egg on top?",
+     "a": "Khachapuri",
+     "wrong": [
+      "Lavash",
+      "Pide",
+      "Pirozhki"
+     ],
+     "why": "There are many regional types."
+    },
+    {
+     "level": 1,
+     "q": "What is Georgia's currency?",
+     "a": "Lari",
+     "wrong": [
+      "Manat",
+      "Dram",
+      "Ruble"
+     ],
+     "why": "It was introduced in 1995."
+    },
+    {
+     "level": 1,
+     "q": "Which Black Sea resort city is Georgia's second city?",
+     "a": "Batumi",
+     "wrong": [
+      "Kutaisi",
+      "Poti",
+      "Sukhumi"
+     ],
+     "why": "It has a seaside boulevard."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain range forms Georgia's northern border?",
+     "a": "Greater Caucasus",
+     "wrong": [
+      "Lesser Caucasus",
+      "Alps",
+      "Urals"
+     ],
+     "why": "Mount Shkhara is Georgia's highest peak."
+    },
+    {
+     "level": 1,
+     "q": "Which drink does Georgia claim to have made for 8,000 years?",
+     "a": "Wine",
+     "wrong": [
+      "Beer",
+      "Tea",
+      "Coffee"
+     ],
+     "why": "Wine is aged in clay jars called qvevri."
+    },
+    {
+     "level": 1,
+     "q": "Which soup dumplings are eaten by holding the top knot?",
+     "a": "Khinkali",
+     "wrong": [
+      "Dushbara",
+      "Manti",
+      "Momo"
+     ],
+     "why": "The knot is left on the plate."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies along Georgia's west coast?",
+     "a": "Black Sea",
+     "wrong": [
+      "Caspian Sea",
+      "Mediterranean",
+      "Azov Sea"
+     ],
+     "why": "Batumi and Poti are ports there."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain region is famous for its medieval defence towers?",
+     "a": "Svaneti",
+     "wrong": [
+      "Kakheti",
+      "Imereti",
+      "Adjara"
+     ],
+     "why": "Mestia is its main town."
+    },
+    {
+     "level": 2,
+     "q": "Which wine region is Georgia's most famous?",
+     "a": "Kakheti",
+     "wrong": [
+      "Svaneti",
+      "Racha",
+      "Guria"
+     ],
+     "why": "Telavi is its main town."
+    },
+    {
+     "level": 2,
+     "q": "What is a Georgian feast led by a toastmaster called?",
+     "a": "Supra",
+     "wrong": [
+      "Shashlik",
+      "Mtsvadi",
+      "Keipi"
+     ],
+     "why": "The toastmaster is the tamada."
+    },
+    {
+     "level": 2,
+     "q": "What is Georgian polyphonic singing known for?",
+     "a": "Multi-part harmony",
+     "wrong": [
+      "Solo throat singing",
+      "Yodelling",
+      "Call-and-response drumming"
+     ],
+     "why": "UNESCO listed it in 2001."
+    },
+    {
+     "level": 2,
+     "q": "Which church on a hill above the Kazbegi road is a famous sight?",
+     "a": "Gergeti Trinity Church",
+     "wrong": [
+      "Jvari Monastery",
+      "Gelati",
+      "Alaverdi"
+     ],
+     "why": "It sits below Mount Kazbek."
+    },
+    {
+     "level": 3,
+     "q": "Which candle-shaped sweet is made of walnuts dipped in grape juice?",
+     "a": "Churchkhela",
+     "wrong": [
+      "Pelamushi",
+      "Gozinaki",
+      "Baklava"
+     ],
+     "why": "It hangs at market stalls."
+    },
+    {
+     "level": 3,
+     "q": "What is Georgia's highest mountain?",
+     "a": "Mount Shkhara",
+     "wrong": [
+      "Mount Kazbek",
+      "Mount Elbrus",
+      "Mount Ushba"
+     ],
+     "why": "It is about 5,193 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which Georgian-born ballet choreographer co-founded New York City Ballet?",
+     "a": "George Balanchine",
+     "wrong": [
+      "Vakhtang Chabukiani",
+      "Rudolf Nureyev",
+      "Marius Petipa"
+     ],
+     "why": "His father was a Georgian composer."
+    }
+   ]
+  }
+ ]
+}
