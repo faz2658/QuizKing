@@ -84,6 +84,9 @@ public class GameCatalogService {
 		if (incoming.getCategoryImage() != null) {
 			target.setCategoryImage(incoming.getCategoryImage());
 		}
+		if (incoming.getCountryCode() != null) {
+			target.setCountryCode(incoming.getCountryCode().isBlank() ? null : incoming.getCountryCode());
+		}
 		List<Topic> topics = target.getTopic() == null ? new ArrayList<>() : new ArrayList<>(target.getTopic());
 		for (Topic in : Objects.requireNonNullElse(incoming.getTopic(), List.<Topic>of())) {
 			if (in == null || in.getTopicName() == null) {

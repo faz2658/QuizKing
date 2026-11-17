@@ -1,49 +1,25 @@
-import { browserZone, countryFromZone } from './countries';
-import { GameCard } from './models';
+/** The game manager's name for world trivia: games that belong to no country's question set. */
+export const WORLD = 'WORLD';
 
-/** The question-bank category of hand-written India & South Asia questions (questionGenerator packs/south-asia.json). */
-export const SOUTH_ASIA_CATEGORY = 'India & South Asia';
-
-const SOUTH_ASIA = ['IN', 'PK', 'BD', 'LK', 'NP', 'BT', 'MV'];
-
-/**
- * The South Asian country to show local games for, or null for players elsewhere. The player's chosen
- * country wins; otherwise the device's time zone decides.
- */
-export function southAsianCountry(country: string | null, zone: string | null = browserZone()): string | null {
-  if (country && SOUTH_ASIA.includes(country.toUpperCase())) {
-    return country.toUpperCase();
-  }
-  const fromZone = countryFromZone(zone);
-  return fromZone && SOUTH_ASIA.includes(fromZone) ? fromZone : null;
-}
-
-/** Splits games into the region's own games and the rest, keeping each list's order. */
-export function localFirst(games: GameCard[], localCategoryIds: ReadonlySet<number>): { local: GameCard[]; rest: GameCard[] } {
-  const local: GameCard[] = [];
-  const rest: GameCard[] = [];
-  for (const g of games) {
-    (localCategoryIds.has(g.categoryId) ? local : rest).push(g);
-  }
-  return { local, rest };
+/** A country with its own question set (GET /api/game/countries). */
+export interface CountrySet {
+  country: string;
+  categoryId: number;
+  categoryName: string;
+  games: number;
+  questions: number;
 }
 
 /**
- * The games a player's list shows. Players from South Asia see only their region's games (search still finds
- * everything, region's games first). Everyone else, or a region with no games yet, sees every game.
+ * Which games the home page shows a player: their own country's set when it has one, otherwise world trivia.
+ * Every other country's set is one tap away on the International page.
  */
-export function gamesFor(
-  games: GameCard[],
-  localCategoryIds: ReadonlySet<number>,
-  inRegion: boolean,
-  searching: boolean,
-): { games: GameCard[]; regionalOnly: boolean } {
-  if (!inRegion) {
-    return { games, regionalOnly: false };
-  }
-  const { local, rest } = localFirst(games, localCategoryIds);
-  if (searching) {
-    return { games: [...local, ...rest], regionalOnly: false };
-  }
-  return local.length ? { games: local, regionalOnly: true } : { games, regionalOnly: false };
+export function homeScope(country: string | null, sets: readonly CountrySet[]): string {
+  const c = country?.toUpperCase();
+  return c && sets.some((s) => s.country === c && s.games > 0) ? c : WORLD;
+}
+
+/** The sets the International page offers a player: every country but their own, by name. */
+export function internationalSets(own: string, sets: readonly CountrySet[], name: (code: string) => string): CountrySet[] {
+  return sets.filter((s) => s.country !== own && s.games > 0).sort((a, b) => name(a.country).localeCompare(name(b.country)));
 }

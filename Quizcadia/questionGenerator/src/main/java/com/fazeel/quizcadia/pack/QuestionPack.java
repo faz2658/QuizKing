@@ -21,7 +21,7 @@ import tools.jackson.databind.json.JsonMapper;
  * multiplayer game automatically.
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
-public record QuestionPack(String category, List<PackTopic> topics) {
+public record QuestionPack(String category, String country, List<PackTopic> topics) {
 
 	/** Pack ids live in [1.3e9, 1.5e9): below imported ones, above generated ones. */
 	static final int PACK_ID_BASE = 1_300_000_000;
@@ -39,11 +39,15 @@ public record QuestionPack(String category, List<PackTopic> topics) {
 
 	public static QuestionPack load(String resource) {
 		try (InputStream in = new ClassPathResource(resource).getInputStream()) {
-			return JsonMapper.builder().build().readValue(in, QuestionPack.class);
+			return parse(in.readAllBytes());
 		}
 		catch (IOException e) {
 			throw new UncheckedIOException(e);
 		}
+	}
+
+	public static QuestionPack parse(byte[] json) {
+		return JsonMapper.builder().build().readValue(json, QuestionPack.class);
 	}
 
 	/** The bank questions of one topic. Options are shuffled the same way every time, so ids and order stay stable. */

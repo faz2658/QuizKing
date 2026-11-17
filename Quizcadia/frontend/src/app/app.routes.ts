@@ -23,6 +23,7 @@ export const routes: Routes = [
   { path: 'adaptive/:gameId', title: 'Adaptive · QuizCadia', canActivate: [playerGuard], loadComponent: () => import('./pages/adaptive').then((m) => m.Adaptive) },
   { path: 'multiplayer/:gameId', title: 'Lobby · QuizCadia', canActivate: [playerGuard], loadComponent: () => import('./pages/lobby').then((m) => m.Lobby) },
   { path: 'match/:matchId', title: 'Match · QuizCadia', canActivate: [playerGuard], loadComponent: () => import('./pages/match').then((m) => m.MatchPage) },
+  { path: 'international', title: 'International · QuizCadia', canActivate: [playerGuard], loadComponent: () => import('./pages/international').then((m) => m.International) },
   { path: 'world', title: 'Play the world · QuizCadia', canActivate: [playerGuard], loadComponent: () => import('./pages/world').then((m) => m.WorldPage) },
   { path: 'arena', title: 'World Arena · QuizCadia', canActivate: [playerGuard], loadComponent: () => import('./pages/arena').then((m) => m.Arena) },
   { path: 'know-me/new', title: 'How well do you know me? · QuizCadia', canActivate: [playerGuard], loadComponent: () => import('./pages/know-me').then((m) => m.KnowMeCreate) },

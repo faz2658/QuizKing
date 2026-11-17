@@ -40,6 +40,7 @@ import {
   UserSummary,
   XpBoard,
 } from './models';
+import { CountrySet, WORLD } from './region';
 
 interface RawGame {
   gameId: number;
@@ -52,6 +53,7 @@ interface RawGame {
   questionCount?: number;
   questions?: unknown[];
   gameType?: { gameTypeId?: number } | null;
+  country?: string | null;
 }
 
 function toCard(g: RawGame, mode: GameCard['mode'] = 'SINGLE'): GameCard {
@@ -66,6 +68,7 @@ function toCard(g: RawGame, mode: GameCard['mode'] = 'SINGLE'): GameCard {
     topic,
     questionCount: g.questionCount ?? g.questions?.length,
     mode: g.gameType?.gameTypeId === 2 ? 'MULTI' : mode,
+    country: g.country ?? null,
   };
 }
 
@@ -78,9 +81,11 @@ export class CatalogApi {
    * Every solo game: the game manager's catalog plus games only the engine knows (its demo games).
    * Either source may be down; the page still works with the other one.
    */
-  games(): Observable<GameCard[]> {
-    const manager = this.http.get<RawGame[]>('/api/game/games').pipe(catchError(() => of(null)));
-    const engine = this.http.get<RawGame[]>('/api/v1/games').pipe(catchError(() => of(null)));
+  games(country?: string): Observable<GameCard[]> {
+    const params = country ? new HttpParams().set('country', country) : undefined;
+    const manager = this.http.get<RawGame[]>('/api/game/games', { params }).pipe(catchError(() => of(null)));
+    // the engine's own demo games are world trivia
+    const engine = !country || country === WORLD ? this.http.get<RawGame[]>('/api/v1/games').pipe(catchError(() => of(null))) : of([]);
     return forkJoin([manager, engine]).pipe(
       map(([m, e]) => {
         if (m === null && e === null) {
@@ -94,8 +99,9 @@ export class CatalogApi {
     );
   }
 
-  multiplayerGames(): Observable<GameCard[]> {
-    return this.http.get<RawGame[]>('/api/game/games/mp').pipe(
+  multiplayerGames(country?: string): Observable<GameCard[]> {
+    const params = country ? new HttpParams().set('country', country) : undefined;
+    return this.http.get<RawGame[]>('/api/game/games/mp', { params }).pipe(
       map((gs) => gs.map((g) => toCard(g, 'MULTI'))),
       catchError(() => of([])),
     );
@@ -116,6 +122,11 @@ export class CatalogApi {
     return this.http
       .get<RawGame[]>('/api/v1/search', { params: new HttpParams().set('q', q) })
       .pipe(map((gs) => gs.map((g) => toCard(g))));
+  }
+
+  /** Countries with their own question set (empty if the game manager can't say). */
+  countries(): Observable<CountrySet[]> {
+    return this.http.get<CountrySet[]>('/api/game/countries').pipe(catchError(() => of([])));
   }
 
   categories(): Observable<Category[]> {

@@ -46,6 +46,19 @@ class GameManagerControllerTest {
 	@MockitoBean
 	GameCatalogService catalog;
 
+	@MockitoBean
+	com.fazeel.quizcadia.catalog.CatalogCards cards;
+
+	static com.fazeel.quizcadia.catalog.CatalogCards.GameCard card(int gameId, String name, int categoryId, int questions) {
+		return new com.fazeel.quizcadia.catalog.CatalogCards.GameCard(gameId, name, null, null, null, categoryId, 1, name,
+				null, null, questions, null, null);
+	}
+
+	static com.fazeel.quizcadia.catalog.CatalogCards.CategoryCard category(int id, String name, String country) {
+		return new com.fazeel.quizcadia.catalog.CatalogCards.CategoryCard(id, name, null, country,
+				java.util.List.of(new com.fazeel.quizcadia.catalog.CatalogCards.TopicCard(1, name, 30)));
+	}
+
 	@Test
 	void createsAGame() throws Exception {
 		Game g = new Game();
@@ -60,15 +73,8 @@ class GameManagerControllerTest {
 
 	@Test
 	void gameListsNeverIncludeQuestionsOrAnswers() throws Exception {
-		Game g = new Game();
-		g.setGameId(5);
-		g.setGameName("Film");
-		com.fazeel.quizcadia.domain.Questions q = new com.fazeel.quizcadia.domain.Questions();
-		q.setQuestionStem("Secret?");
-		q.setCorrectAnswer("SECRET-ANSWER");
-		g.setQuestions(java.util.List.of(q, q, q));
 		when(catalog.version()).thenReturn(System.nanoTime()); // each test sees a fresh catalog
-		when(catalog.games()).thenReturn(java.util.List.of(g));
+		when(cards.games()).thenReturn(java.util.List.of(card(5, "Film", 1, 3)));
 
 		mvc.perform(get("/api/game/games").with(admin())).andExpect(status().isOk())
 				.andExpect(jsonPath("$[0].questionCount").value(3))
@@ -107,7 +113,7 @@ class GameManagerControllerTest {
 	@Test
 	void anyoneMayBrowseButOnlyAdminsChangeGames() throws Exception {
 		when(catalog.version()).thenReturn(System.nanoTime()); // each test sees a fresh catalog
-		when(catalog.games()).thenReturn(java.util.List.of());
+		when(cards.games()).thenReturn(java.util.List.of());
 
 		mvc.perform(get("/api/game/games")).andExpect(status().isOk());
 		mvc.perform(post("/api/game/category/1/Geography").with(player(5)).contentType(MediaType.APPLICATION_JSON)
@@ -120,14 +126,34 @@ class GameManagerControllerTest {
 	void theGamesListIsBuiltOnceUntilTheCatalogChanges() throws Exception {
 		long v = System.nanoTime();
 		when(catalog.version()).thenReturn(v);
-		when(catalog.games()).thenReturn(java.util.List.of());
+		when(cards.games()).thenReturn(java.util.List.of());
 		for (int i = 0; i < 5; i++) {
 			mvc.perform(get("/api/game/games").with(admin())).andExpect(status().isOk());
 		}
-		org.mockito.Mockito.verify(catalog, org.mockito.Mockito.times(1)).games();
+		org.mockito.Mockito.verify(cards, org.mockito.Mockito.times(1)).games();
 
 		when(catalog.version()).thenReturn(v + 1); // someone created or changed a game
 		mvc.perform(get("/api/game/games").with(admin())).andExpect(status().isOk());
-		org.mockito.Mockito.verify(catalog, org.mockito.Mockito.times(2)).games();
+		org.mockito.Mockito.verify(cards, org.mockito.Mockito.times(2)).games();
+	}
+
+	@Test
+	void listsGamesByCountryAndTheCountriesWithTheirOwnQuestions() throws Exception {
+		when(catalog.version()).thenReturn(System.nanoTime());
+		when(cards.categories()).thenReturn(java.util.List.of(category(1, "Film", null), category(14, "India", "IN"),
+				category(15, "Japan", "JP")));
+		when(cards.games()).thenReturn(java.util.List.of(card(1, "Film", 1, 300), card(2, "Cricket", 14, 27),
+				card(3, "Indian History", 14, 26), card(4, "Japan: History & Culture", 15, 15)));
+
+		mvc.perform(get("/api/game/games").param("country", "in")).andExpect(status().isOk())
+				.andExpect(jsonPath("$.length()").value(2)).andExpect(jsonPath("$[0].country").value("IN"));
+		mvc.perform(get("/api/game/games").param("country", "WORLD")).andExpect(status().isOk())
+				.andExpect(jsonPath("$.length()").value(1)).andExpect(jsonPath("$[0].gameName").value("Film"));
+		mvc.perform(get("/api/game/games")).andExpect(status().isOk()).andExpect(jsonPath("$.length()").value(4));
+		mvc.perform(get("/api/game/games").param("country", "FR")).andExpect(status().isOk())
+				.andExpect(jsonPath("$.length()").value(0));
+		mvc.perform(get("/api/game/countries")).andExpect(status().isOk()).andExpect(jsonPath("$.length()").value(2))
+				.andExpect(jsonPath("$[0].country").value("IN")).andExpect(jsonPath("$[0].games").value(2))
+				.andExpect(jsonPath("$[1].country").value("JP"));
 	}
 }

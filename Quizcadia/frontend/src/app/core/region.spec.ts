@@ -1,35 +1,23 @@
 import { describe, expect, it } from 'vitest';
-import { GameCard } from './models';
-import { gamesFor, localFirst, southAsianCountry } from './region';
+import { CountrySet, homeScope, internationalSets, WORLD } from './region';
 
-const game = (gameId: number, categoryId: number): GameCard => ({ gameId, gameName: 'g' + gameId, categoryId, mode: 'SINGLE' });
+const set = (country: string, games = 2): CountrySet => ({ country, categoryId: 1, categoryName: country, games, questions: 30 });
+const names: Record<string, string> = { IN: 'India', JP: 'Japan', BR: 'Brazil', GB: 'United Kingdom' };
 
 describe('region', () => {
-  it('finds South Asian players by their chosen country, or by time zone when the browser says en-US', () => {
-    expect(southAsianCountry('in', 'America/Toronto')).toBe('IN');
-    expect(southAsianCountry('PK', null)).toBe('PK');
-    expect(southAsianCountry('US', 'Asia/Kolkata')).toBe('IN');
-    expect(southAsianCountry(null, 'Asia/Dhaka')).toBe('BD');
-    expect(southAsianCountry(null, 'Asia/Calcutta')).toBe('IN');
-    expect(southAsianCountry('CA', 'America/Toronto')).toBeNull();
-    expect(southAsianCountry(null, null)).toBeNull();
+  const sets = [set('IN'), set('JP'), set('BR'), set('GB', 0)];
+
+  it('shows players their own country\'s games, or world trivia when their country has no set yet', () => {
+    expect(homeScope('IN', sets)).toBe('IN');
+    expect(homeScope('jp', sets)).toBe('JP');
+    expect(homeScope('FR', sets)).toBe(WORLD);
+    expect(homeScope('GB', sets)).toBe(WORLD); // a set without games yet (just after deploy)
+    expect(homeScope(null, sets)).toBe(WORLD);
+    expect(homeScope('IN', [])).toBe(WORLD); // the list failed to load
   });
 
-  it('puts the local games first and keeps the order of both lists', () => {
-    const { local, rest } = localFirst([game(1, 3), game(2, 14), game(3, 1), game(4, 14)], new Set([14]));
-    expect(local.map((g) => g.gameId)).toEqual([2, 4]);
-    expect(rest.map((g) => g.gameId)).toEqual([1, 3]);
-  });
-
-  it('shows South Asian players only their region\'s games, but search and other players see everything', () => {
-    const games = [game(1, 3), game(2, 14), game(3, 1), game(4, 14)];
-    const ids = (r: { games: GameCard[] }) => r.games.map((g) => g.gameId);
-    expect(gamesFor(games, new Set([14]), true, false)).toMatchObject({ regionalOnly: true });
-    expect(ids(gamesFor(games, new Set([14]), true, false))).toEqual([2, 4]);
-    expect(ids(gamesFor(games, new Set([14]), true, true))).toEqual([2, 4, 1, 3]);
-    expect(ids(gamesFor(games, new Set([14]), false, false))).toEqual([1, 2, 3, 4]);
-    // before the region's games exist (or if they fail to load), nobody is left with an empty list
-    expect(gamesFor(games, new Set<number>(), true, false)).toMatchObject({ regionalOnly: false });
-    expect(ids(gamesFor(games, new Set<number>(), true, false))).toEqual([1, 2, 3, 4]);
+  it('offers every other country on the International page, by name', () => {
+    expect(internationalSets('IN', sets, (c) => names[c]).map((s) => s.country)).toEqual(['BR', 'JP']);
+    expect(internationalSets(WORLD, sets, (c) => names[c]).map((s) => s.country)).toEqual(['BR', 'IN', 'JP']);
   });
 });

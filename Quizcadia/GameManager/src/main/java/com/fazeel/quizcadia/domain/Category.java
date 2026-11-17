@@ -15,6 +15,8 @@ public class Category {
 	private int categoryId;
 	private String categoryName;
 	private String categoryImage;
+	/** ISO country code for a country's own question set (e.g. IN); null for world trivia. */
+	private String countryCode;
 	private List<Topic> topic;
 	@JsonCreator
 	public Category() {
@@ -60,4 +62,12 @@ public class Category {
 	}
 	
 	
+
+	public String getCountryCode() {
+		return countryCode;
+	}
+
+	public void setCountryCode(String countryCode) {
+		this.countryCode = countryCode;
+	}
 }
