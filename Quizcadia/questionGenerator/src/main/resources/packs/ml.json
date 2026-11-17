@@ -1,0 +1,346 @@
+{
+ "category": "Mali",
+ "country": "ML",
+ "topics": [
+  {
+   "name": "Mali: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Mali?",
+     "a": "Bamako",
+     "wrong": [
+      "Timbuktu",
+      "Gao",
+      "Mopti"
+     ],
+     "why": "It is on the Niger River."
+    },
+    {
+     "level": 1,
+     "q": "Which famously rich emperor ruled Mali in the 1300s?",
+     "a": "Mansa Musa",
+     "wrong": [
+      "Sundiata Keita",
+      "Askia Muhammad",
+      "Sonni Ali"
+     ],
+     "why": "His 1324 pilgrimage to Mecca was legendary."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient city was a centre of Islamic learning?",
+     "a": "Timbuktu",
+     "wrong": [
+      "Djenné",
+      "Gao",
+      "Ségou"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Mali gain independence in 1960?",
+     "a": "France",
+     "wrong": [
+      "United Kingdom",
+      "Portugal",
+      "Belgium"
+     ],
+     "why": "It was called French Sudan."
+    },
+    {
+     "level": 1,
+     "q": "Who founded the Mali Empire around 1235?",
+     "a": "Sundiata Keita",
+     "wrong": [
+      "Mansa Musa",
+      "Askia Muhammad",
+      "Sonni Ali"
+     ],
+     "why": "The Epic of Sundiata tells his story."
+    },
+    {
+     "level": 1,
+     "q": "What is Mali's currency?",
+     "a": "West African CFA franc",
+     "wrong": [
+      "Ouguiya",
+      "Naira",
+      "Dinar"
+     ],
+     "why": "It is shared by eight countries."
+    },
+    {
+     "level": 1,
+     "q": "Which river runs through Mali?",
+     "a": "Niger River",
+     "wrong": [
+      "Nile",
+      "Congo River",
+      "Zambezi"
+     ],
+     "why": "It forms an inland delta."
+    },
+    {
+     "level": 2,
+     "q": "Who was Mali's first President?",
+     "a": "Modibo Keïta",
+     "wrong": [
+      "Moussa Traoré",
+      "Amadou Toumani Touré",
+      "Alpha Oumar Konaré"
+     ],
+     "why": "He led Mali towards socialism."
+    },
+    {
+     "level": 2,
+     "q": "Which empire based in Gao followed the Mali Empire?",
+     "a": "Songhai Empire",
+     "wrong": [
+      "Ghana Empire",
+      "Kanem Empire",
+      "Ashanti Empire"
+     ],
+     "why": "It was the largest in West African history."
+    },
+    {
+     "level": 2,
+     "q": "Which group took over northern Mali in 2012?",
+     "a": "Tuareg rebels and Islamist groups",
+     "wrong": [
+      "Boko Haram alone",
+      "Al-Shabaab",
+      "Polisario Front"
+     ],
+     "why": "France sent troops in 2013."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient manuscripts were rescued from Timbuktu in 2012?",
+     "a": "Timbuktu Manuscripts",
+     "wrong": [
+      "Dead Sea Scrolls",
+      "Nag Hammadi Codices",
+      "Lindisfarne Gospels"
+     ],
+     "why": "Librarians smuggled them south."
+    },
+    {
+     "level": 2,
+     "q": "Who has led Mali since the 2020–21 coups?",
+     "a": "Assimi Goïta",
+     "wrong": [
+      "Ibrahim Boubacar Keïta",
+      "Bah Ndaw",
+      "Moctar Ouane"
+     ],
+     "why": "He is an army colonel."
+    },
+    {
+     "level": 3,
+     "q": "Which ruler of Songhai made a famous pilgrimage in 1496?",
+     "a": "Askia Muhammad",
+     "wrong": [
+      "Sonni Ali",
+      "Mansa Musa",
+      "Askia Daoud"
+     ],
+     "why": "His tomb in Gao is a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which Moroccan army ended the Songhai Empire in 1591?",
+     "a": "Saadian army at the Battle of Tondibi",
+     "wrong": [
+      "Almoravid army",
+      "Ottoman army",
+      "Marinid army"
+     ],
+     "why": "They had muskets."
+    },
+    {
+     "level": 3,
+     "q": "Which alliance did Mali form with Burkina Faso and Niger in 2023?",
+     "a": "Alliance of Sahel States",
+     "wrong": [
+      "ECOWAS",
+      "Sahel G5",
+      "Mano River Union"
+     ],
+     "why": "They later left ECOWAS."
+    }
+   ]
+  },
+  {
+   "name": "Mali: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which mosque made of mud brick is the largest in the world?",
+     "a": "Great Mosque of Djenné",
+     "wrong": [
+      "Djinguereber Mosque",
+      "Hassan II Mosque",
+      "Great Mosque of Kairouan"
+     ],
+     "why": "It is replastered every year."
+    },
+    {
+     "level": 1,
+     "q": "Which cliffs are home to the Dogon people?",
+     "a": "Bandiagara Escarpment",
+     "wrong": [
+      "Hombori Tondo",
+      "Tassili n'Ajjer",
+      "Aïr Mountains"
+     ],
+     "why": "Their villages cling to the rock."
+    },
+    {
+     "level": 1,
+     "q": "Which desert covers northern Mali?",
+     "a": "Sahara",
+     "wrong": [
+      "Kalahari",
+      "Namib",
+      "Gobi"
+     ],
+     "why": "Tuareg nomads live there."
+    },
+    {
+     "level": 1,
+     "q": "Which string instrument with 21 strings is famous in Mali?",
+     "a": "Kora",
+     "wrong": [
+      "Ngoni",
+      "Balafon",
+      "Djembe"
+     ],
+     "why": "Toumani Diabaté was a master of it."
+    },
+    {
+     "level": 1,
+     "q": "Which Malian singer is called the 'Golden Voice of Africa'?",
+     "a": "Salif Keita",
+     "wrong": [
+      "Ali Farka Touré",
+      "Oumou Sangaré",
+      "Habib Koité"
+     ],
+     "why": "He is a descendant of Sundiata."
+    },
+    {
+     "level": 1,
+     "q": "Which hand drum comes from the Mandinka of Mali?",
+     "a": "Djembe",
+     "wrong": [
+      "Kora",
+      "Balafon",
+      "Talking drum"
+     ],
+     "why": "It is played with bare hands."
+    },
+    {
+     "level": 1,
+     "q": "Which blues guitarist from Niafunké won Grammys?",
+     "a": "Ali Farka Touré",
+     "wrong": [
+      "Salif Keita",
+      "Toumani Diabaté",
+      "Habib Koité"
+     ],
+     "why": "He came from Niafunké."
+    },
+    {
+     "level": 2,
+     "q": "Which desert blues band of Tuareg musicians won a Grammy?",
+     "a": "Tinariwen",
+     "wrong": [
+      "Bombino",
+      "Tamikrest",
+      "Songhoy Blues"
+     ],
+     "why": "They began in refugee camps."
+    },
+    {
+     "level": 2,
+     "q": "Which old mosque in Timbuktu was built for Mansa Musa?",
+     "a": "Djinguereber Mosque",
+     "wrong": [
+      "Sankore Mosque",
+      "Sidi Yahya Mosque",
+      "Great Mosque of Djenné"
+     ],
+     "why": "It dates from 1327."
+    },
+    {
+     "level": 2,
+     "q": "Which mud-cloth fabric is a famous Malian craft?",
+     "a": "Bògòlanfini",
+     "wrong": [
+      "Kente",
+      "Adire",
+      "Kanga"
+     ],
+     "why": "It is dyed with fermented mud."
+    },
+    {
+     "level": 2,
+     "q": "Which town on the Niger is called the 'Venice of Mali'?",
+     "a": "Mopti",
+     "wrong": [
+      "Ségou",
+      "Gao",
+      "Djenné"
+     ],
+     "why": "It is a busy river port."
+    },
+    {
+     "level": 2,
+     "q": "Which festival on the Niger in Ségou celebrates music?",
+     "a": "Festival sur le Niger",
+     "wrong": [
+      "Festival au Désert",
+      "Fespaco",
+      "Timitar"
+     ],
+     "why": "It began in 2005."
+    },
+    {
+     "level": 3,
+     "q": "Which singer is a champion of women's rights in Wassoulou music?",
+     "a": "Oumou Sangaré",
+     "wrong": [
+      "Rokia Traoré",
+      "Fatoumata Diawara",
+      "Nahawa Doumbia"
+     ],
+     "why": "She won a Grammy in 2011."
+    },
+    {
+     "level": 3,
+     "q": "Which festival in the desert near Timbuktu became world famous?",
+     "a": "Festival au Désert",
+     "wrong": [
+      "Fête de la Musique",
+      "Festival sur le Niger",
+      "Gnaoua Festival"
+     ],
+     "why": "It stopped after 2012."
+    },
+    {
+     "level": 3,
+     "q": "Which Dogon mask dance is held to honour the dead?",
+     "a": "Dama",
+     "wrong": [
+      "Egungun",
+      "Bwa",
+      "Gelede"
+     ],
+     "why": "Dancers wear tall masks."
+    }
+   ]
+  }
+ ]
+}
