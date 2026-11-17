@@ -1,0 +1,346 @@
+{
+ "category": "Eritrea",
+ "country": "ER",
+ "topics": [
+  {
+   "name": "Eritrea: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Eritrea?",
+     "a": "Asmara",
+     "wrong": [
+      "Massawa",
+      "Keren",
+      "Assab"
+     ],
+     "why": "Its modernist buildings are a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Eritrea gain independence in 1993?",
+     "a": "Ethiopia",
+     "wrong": [
+      "Italy",
+      "Sudan",
+      "United Kingdom"
+     ],
+     "why": "It fought a 30-year war."
+    },
+    {
+     "level": 1,
+     "q": "Which European country colonised Eritrea in 1890?",
+     "a": "Italy",
+     "wrong": [
+      "France",
+      "United Kingdom",
+      "Portugal"
+     ],
+     "why": "Many Italian buildings remain."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of Eritrea since 1993?",
+     "a": "Isaias Afwerki",
+     "wrong": [
+      "Meles Zenawi",
+      "Haile Selassie",
+      "Abiy Ahmed"
+     ],
+     "why": "No national election has been held."
+    },
+    {
+     "level": 1,
+     "q": "What is Eritrea's currency?",
+     "a": "Nakfa",
+     "wrong": [
+      "Birr",
+      "Shilling",
+      "Djiboutian franc"
+     ],
+     "why": "It is named after a town in the war."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies along Eritrea's coast?",
+     "a": "Red Sea",
+     "wrong": [
+      "Mediterranean Sea",
+      "Arabian Sea",
+      "Persian Gulf"
+     ],
+     "why": "It has a long coastline."
+    },
+    {
+     "level": 1,
+     "q": "Which 1998–2000 war was fought with Ethiopia?",
+     "a": "Eritrean–Ethiopian War",
+     "wrong": [
+      "Ogaden War",
+      "Somali War",
+      "Sudanese War"
+     ],
+     "why": "Peace came only in 2018."
+    },
+    {
+     "level": 2,
+     "q": "Which town was the resistance's base during the independence war?",
+     "a": "Nakfa",
+     "wrong": [
+      "Keren",
+      "Asmara",
+      "Massawa"
+     ],
+     "why": "Its name was given to the currency."
+    },
+    {
+     "level": 2,
+     "q": "Which country ruled Eritrea from 1941 to 1952?",
+     "a": "United Kingdom",
+     "wrong": [
+      "Italy",
+      "Egypt",
+      "Ethiopia"
+     ],
+     "why": "It then joined Ethiopia in a federation."
+    },
+    {
+     "level": 2,
+     "q": "Which Ethiopian leader made a peace deal with Eritrea in 2018?",
+     "a": "Abiy Ahmed",
+     "wrong": [
+      "Meles Zenawi",
+      "Mengistu Haile Mariam",
+      "Hailemariam Desalegn"
+     ],
+     "why": "He won the Nobel Peace Prize."
+    },
+    {
+     "level": 2,
+     "q": "Which front led Eritrea to independence?",
+     "a": "Eritrean People's Liberation Front (EPLF)",
+     "wrong": [
+      "TPLF",
+      "FRELIMO",
+      "SWAPO"
+     ],
+     "why": "It is now the ruling party."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient kingdom ruled parts of Eritrea from Aksum?",
+     "a": "Kingdom of Aksum",
+     "wrong": [
+      "Kingdom of Kush",
+      "Kingdom of Punt",
+      "Ottoman Empire"
+     ],
+     "why": "It was a great trading power."
+    },
+    {
+     "level": 3,
+     "q": "Which port city was badly damaged in the war and is famous for coral buildings?",
+     "a": "Massawa",
+     "wrong": [
+      "Assab",
+      "Asmara",
+      "Keren"
+     ],
+     "why": "It was called the 'Pearl of the Red Sea'."
+    },
+    {
+     "level": 3,
+     "q": "Which national service is compulsory and often indefinite?",
+     "a": "National service",
+     "wrong": [
+      "Temple service",
+      "Labour corps",
+      "Youth brigades"
+     ],
+     "why": "It has led many to flee."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Eritreans vote for independence?",
+     "a": "1993",
+     "wrong": [
+      "1991",
+      "1998",
+      "1981"
+     ],
+     "why": "Over 99% voted yes."
+    }
+   ]
+  },
+  {
+   "name": "Eritrea: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which famous modernist service station in Asmara looks like an aeroplane?",
+     "a": "Fiat Tagliero Building",
+     "wrong": [
+      "Bar Zilli",
+      "Cinema Impero",
+      "Opera House"
+     ],
+     "why": "It was built in 1938."
+    },
+    {
+     "level": 1,
+     "q": "Which train line climbs from Massawa to Asmara?",
+     "a": "Eritrean Railway",
+     "wrong": [
+      "Tazara",
+      "Lunatic Express",
+      "Djibouti Railway"
+     ],
+     "why": "It has steam engines."
+    },
+    {
+     "level": 1,
+     "q": "Which flatbread made from teff is eaten with stews?",
+     "a": "Injera",
+     "wrong": [
+      "Naan",
+      "Chapati",
+      "Pita"
+     ],
+     "why": "It is spongy and sour."
+    },
+    {
+     "level": 1,
+     "q": "Which island group is a famous diving area?",
+     "a": "Dahlak Archipelago",
+     "wrong": [
+      "Bazaruto",
+      "Quirimbas",
+      "Seychelles"
+     ],
+     "why": "It has around 200 islands."
+    },
+    {
+     "level": 1,
+     "q": "Which coffee ceremony is a common tradition?",
+     "a": "Roasting and serving coffee in three rounds",
+     "wrong": [
+      "Afternoon tea",
+      "Mate sharing",
+      "Yerba ritual"
+     ],
+     "why": "It is a sign of friendship."
+    },
+    {
+     "level": 1,
+     "q": "Which language is the most widely spoken in Eritrea?",
+     "a": "Tigrinya",
+     "wrong": [
+      "Amharic",
+      "Arabic",
+      "Somali"
+     ],
+     "why": "Tigre is also widely spoken."
+    },
+    {
+     "level": 1,
+     "q": "Which desert lowland is one of the hottest places on Earth?",
+     "a": "Danakil Depression",
+     "wrong": [
+      "Kalahari",
+      "Sahara",
+      "Namib"
+     ],
+     "why": "It stretches into Ethiopia."
+    },
+    {
+     "level": 2,
+     "q": "Which spicy stew is Eritrea's national dish?",
+     "a": "Zigni",
+     "wrong": [
+      "Doro wat",
+      "Tibs",
+      "Shiro"
+     ],
+     "why": "It is made with berbere spice."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient town has a rock-cut cistern and stone ruins?",
+     "a": "Qohaito",
+     "wrong": [
+      "Adulis",
+      "Keren",
+      "Metera"
+     ],
+     "why": "It dates from Aksumite times."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient port city traded with Rome?",
+     "a": "Adulis",
+     "wrong": [
+      "Massawa",
+      "Assab",
+      "Mitsiwa"
+     ],
+     "why": "It was the port of Aksum."
+    },
+    {
+     "level": 2,
+     "q": "Which sport is the most popular in Eritrea?",
+     "a": "Cycling",
+     "wrong": [
+      "Football",
+      "Running",
+      "Basketball"
+     ],
+     "why": "Italians brought it."
+    },
+    {
+     "level": 2,
+     "q": "Which Eritrean cyclist wore the Tour de France polka-dot jersey in 2015?",
+     "a": "Daniel Teklehaimanot",
+     "wrong": [
+      "Biniam Girmay",
+      "Natnael Tesfatsion",
+      "Merhawi Kudus"
+     ],
+     "why": "He wore it for four days."
+    },
+    {
+     "level": 3,
+     "q": "Which Eritrean cyclist was the first Black African to win a Tour de France stage?",
+     "a": "Biniam Girmay",
+     "wrong": [
+      "Daniel Teklehaimanot",
+      "Natnael Tesfatsion",
+      "Merhawi Kudus"
+     ],
+     "why": "He won the green jersey in 2024."
+    },
+    {
+     "level": 3,
+     "q": "Which Eritrean runner won Olympic 10,000 m bronze in 2004?",
+     "a": "Zersenay Tadese",
+     "wrong": [
+      "Ghirmay Ghebreslassie",
+      "Haile Gebrselassie",
+      "Kenenisa Bekele"
+     ],
+     "why": "It was Eritrea's first Olympic medal."
+    },
+    {
+     "level": 3,
+     "q": "Which town in the highlands has a Commonwealth war cemetery?",
+     "a": "Keren",
+     "wrong": [
+      "Mendefera",
+      "Dekemhare",
+      "Agordat"
+     ],
+     "why": "A big battle was fought there in 1941."
+    }
+   ]
+  }
+ ]
+}

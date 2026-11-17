@@ -1,0 +1,346 @@
+{
+ "category": "Djibouti",
+ "country": "DJ",
+ "topics": [
+  {
+   "name": "Djibouti: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Djibouti?",
+     "a": "Djibouti City",
+     "wrong": [
+      "Ali Sabieh",
+      "Tadjourah",
+      "Obock"
+     ],
+     "why": "Most people live there."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Djibouti gain independence in 1977?",
+     "a": "France",
+     "wrong": [
+      "Italy",
+      "United Kingdom",
+      "Ethiopia"
+     ],
+     "why": "It was called French Somaliland."
+    },
+    {
+     "level": 1,
+     "q": "Which strait does Djibouti guard at the mouth of the Red Sea?",
+     "a": "Bab-el-Mandeb",
+     "wrong": [
+      "Strait of Hormuz",
+      "Strait of Gibraltar",
+      "Bosporus"
+     ],
+     "why": "It is a key shipping route."
+    },
+    {
+     "level": 1,
+     "q": "What is Djibouti's currency?",
+     "a": "Djiboutian franc",
+     "wrong": [
+      "Birr",
+      "Shilling",
+      "Nakfa"
+     ],
+     "why": "It is pegged to the US dollar."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of Djibouti since 1999?",
+     "a": "Ismaïl Omar Guelleh",
+     "wrong": [
+      "Hassan Gouled Aptidon",
+      "Ahmed Dini",
+      "Daher Ahmed Farah"
+     ],
+     "why": "He took over from his uncle."
+    },
+    {
+     "level": 1,
+     "q": "Which two languages are official in Djibouti?",
+     "a": "French and Arabic",
+     "wrong": [
+      "French and English",
+      "Arabic and Somali",
+      "Somali and Afar"
+     ],
+     "why": "Somali and Afar are widely spoken."
+    },
+    {
+     "level": 1,
+     "q": "Which landlocked neighbour relies on Djibouti's port?",
+     "a": "Ethiopia",
+     "wrong": [
+      "Eritrea",
+      "Somalia",
+      "Sudan"
+     ],
+     "why": "A railway links Addis Ababa to Djibouti."
+    },
+    {
+     "level": 2,
+     "q": "Who was Djibouti's first President?",
+     "a": "Hassan Gouled Aptidon",
+     "wrong": [
+      "Ismaïl Omar Guelleh",
+      "Ahmed Dini",
+      "Mahmoud Harbi"
+     ],
+     "why": "He ruled until 1999."
+    },
+    {
+     "level": 2,
+     "q": "Which country has its only African military base in Djibouti, opened in 2017?",
+     "a": "China",
+     "wrong": [
+      "India",
+      "Russia",
+      "Turkey"
+     ],
+     "why": "The US and France also have bases there."
+    },
+    {
+     "level": 2,
+     "q": "Which US military base is in Djibouti?",
+     "a": "Camp Lemonnier",
+     "wrong": [
+      "Camp Bondsteel",
+      "Camp Humphreys",
+      "Diego Garcia"
+     ],
+     "why": "It is the only permanent US base in Africa."
+    },
+    {
+     "level": 2,
+     "q": "What was Djibouti called from 1967 to 1977?",
+     "a": "French Territory of the Afars and the Issas",
+     "wrong": [
+      "French Somaliland",
+      "Côte Française",
+      "Obock Colony"
+     ],
+     "why": "It named the two main groups."
+    },
+    {
+     "level": 2,
+     "q": "Which railway opened in 2018 linking Djibouti to Addis Ababa?",
+     "a": "Addis Ababa–Djibouti Railway",
+     "wrong": [
+      "Tazara",
+      "Lunatic Express",
+      "Benguela Railway"
+     ],
+     "why": "China built it."
+    },
+    {
+     "level": 3,
+     "q": "Which civil war of 1991–94 involved Afar rebels?",
+     "a": "Djiboutian Civil War",
+     "wrong": [
+      "Ogaden War",
+      "Eritrean War",
+      "Somali Civil War"
+     ],
+     "why": "FRUD rebels fought the government."
+    },
+    {
+     "level": 3,
+     "q": "Which town was the first French colonial capital?",
+     "a": "Obock",
+     "wrong": [
+      "Tadjourah",
+      "Ali Sabieh",
+      "Dikhil"
+     ],
+     "why": "France bought it in 1862."
+    },
+    {
+     "level": 3,
+     "q": "Which group of islands in the Gulf of Tadjoura is a marine park?",
+     "a": "Moucha and Maskali Islands",
+     "wrong": [
+      "Hanish Islands",
+      "Dahlak Islands",
+      "Socotra"
+     ],
+     "why": "They have coral reefs."
+    }
+   ]
+  },
+  {
+   "name": "Djibouti: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which salt lake is the lowest point in Africa?",
+     "a": "Lake Assal",
+     "wrong": [
+      "Lake Abbe",
+      "Lake Natron",
+      "Dead Sea"
+     ],
+     "why": "It is about 155 m below sea level."
+    },
+    {
+     "level": 1,
+     "q": "Which lake on the Ethiopian border has limestone chimneys?",
+     "a": "Lake Abbe",
+     "wrong": [
+      "Lake Assal",
+      "Lake Turkana",
+      "Lake Tana"
+     ],
+     "why": "It looks like another planet."
+    },
+    {
+     "level": 1,
+     "q": "Which gentle giant fish visits the Gulf of Tadjoura each winter?",
+     "a": "Whale shark",
+     "wrong": [
+      "Great white shark",
+      "Manta ray",
+      "Blue whale"
+     ],
+     "why": "Divers swim beside them."
+    },
+    {
+     "level": 1,
+     "q": "Which gulf cuts deep into Djibouti?",
+     "a": "Gulf of Tadjoura",
+     "wrong": [
+      "Gulf of Suez",
+      "Persian Gulf",
+      "Gulf of Oman"
+     ],
+     "why": "It opens into the Gulf of Aden."
+    },
+    {
+     "level": 1,
+     "q": "What is Djibouti's climate like?",
+     "a": "Very hot and dry",
+     "wrong": [
+      "Cold and wet",
+      "Mild and rainy",
+      "Snowy in winter"
+     ],
+     "why": "It is one of the hottest places on Earth."
+    },
+    {
+     "level": 1,
+     "q": "Which leaf do many Djiboutians chew in the afternoon?",
+     "a": "Khat",
+     "wrong": [
+      "Betel",
+      "Coca",
+      "Tobacco"
+     ],
+     "why": "It is a mild stimulant."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies to the east of Djibouti?",
+     "a": "Red Sea and Gulf of Aden",
+     "wrong": [
+      "Mediterranean Sea",
+      "Arabian Sea",
+      "Caspian Sea"
+     ],
+     "why": "It sits at their meeting point."
+    },
+    {
+     "level": 2,
+     "q": "Which forest in the Goda Mountains is a rare green area?",
+     "a": "Day Forest",
+     "wrong": [
+      "Kibira",
+      "Nyungwe",
+      "Bale"
+     ],
+     "why": "It is home to the Djibouti francolin."
+    },
+    {
+     "level": 2,
+     "q": "Which rift zone in Djibouti is where Africa is slowly splitting?",
+     "a": "Afar Triangle",
+     "wrong": [
+      "Kenya Rift",
+      "Albertine Rift",
+      "Gregory Rift"
+     ],
+     "why": "New ocean floor is forming."
+    },
+    {
+     "level": 2,
+     "q": "Which spicy dish of meat and rice is popular in Djibouti?",
+     "a": "Skoudehkaris",
+     "wrong": [
+      "Jollof rice",
+      "Biryani",
+      "Pilaf"
+     ],
+     "why": "It is often called the national dish."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain range in the north holds Djibouti's highest point?",
+     "a": "Mousa Ali",
+     "wrong": [
+      "Goda Mountains",
+      "Simien",
+      "Ahmar"
+     ],
+     "why": "It is on the triple border with Eritrea and Ethiopia."
+    },
+    {
+     "level": 2,
+     "q": "Which tall-masted Arab boats sailed from Djibouti's ports?",
+     "a": "Dhows",
+     "wrong": [
+      "Junks",
+      "Feluccas",
+      "Gondolas"
+     ],
+     "why": "They still carry goods."
+    },
+    {
+     "level": 3,
+     "q": "Which town on the Gulf of Tadjoura is the oldest in Djibouti?",
+     "a": "Tadjourah",
+     "wrong": [
+      "Obock",
+      "Ali Sabieh",
+      "Arta"
+     ],
+     "why": "It is called the 'white city'."
+    },
+    {
+     "level": 3,
+     "q": "What are Djibouti's two main ethnic groups?",
+     "a": "Somali Issa and Afar",
+     "wrong": [
+      "Amhara and Tigray",
+      "Oromo and Somali",
+      "Afar and Tigre"
+     ],
+     "why": "Each makes up a large share."
+    },
+    {
+     "level": 3,
+     "q": "Which Djiboutian runner won the 1985 World Marathon Cup?",
+     "a": "Hussein Ahmed Salah",
+     "wrong": [
+      "Abdi Bile",
+      "Abebe Bikila",
+      "Mohamed Farah"
+     ],
+     "why": "He won Olympic bronze in 1988."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,346 @@
+{
+ "category": "Sudan",
+ "country": "SD",
+ "topics": [
+  {
+   "name": "Sudan: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Sudan?",
+     "a": "Khartoum",
+     "wrong": [
+      "Omdurman",
+      "Port Sudan",
+      "Kassala"
+     ],
+     "why": "The Blue and White Nile meet there."
+    },
+    {
+     "level": 1,
+     "q": "Which country split from Sudan in 2011?",
+     "a": "South Sudan",
+     "wrong": [
+      "Eritrea",
+      "Chad",
+      "Libya"
+     ],
+     "why": "It voted for independence."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient kingdom built pyramids at Meroë?",
+     "a": "Kingdom of Kush",
+     "wrong": [
+      "Kingdom of Aksum",
+      "Ancient Egypt",
+      "Kingdom of Punt"
+     ],
+     "why": "Sudan has more pyramids than Egypt."
+    },
+    {
+     "level": 1,
+     "q": "From which countries did Sudan gain independence in 1956?",
+     "a": "United Kingdom and Egypt",
+     "wrong": [
+      "France",
+      "Italy",
+      "Ottoman Empire"
+     ],
+     "why": "It was an Anglo-Egyptian condominium."
+    },
+    {
+     "level": 1,
+     "q": "What is Sudan's currency?",
+     "a": "Sudanese pound",
+     "wrong": [
+      "Sudanese dinar",
+      "Egyptian pound",
+      "Birr"
+     ],
+     "why": "It was reintroduced in 2007."
+    },
+    {
+     "level": 1,
+     "q": "Who ruled Sudan from 1989 to 2019?",
+     "a": "Omar al-Bashir",
+     "wrong": [
+      "Jaafar Nimeiry",
+      "Abdel Fattah al-Burhan",
+      "Sadiq al-Mahdi"
+     ],
+     "why": "He was removed after mass protests."
+    },
+    {
+     "level": 1,
+     "q": "Which two forces have fought a civil war since April 2023?",
+     "a": "Sudanese Armed Forces and Rapid Support Forces",
+     "wrong": [
+      "Army and Al-Shabaab",
+      "Police and rebels",
+      "North and South"
+     ],
+     "why": "It is one of the world's worst crises."
+    },
+    {
+     "level": 2,
+     "q": "Which religious leader defeated the British at Khartoum in 1885?",
+     "a": "The Mahdi (Muhammad Ahmad)",
+     "wrong": [
+      "Omar al-Bashir",
+      "Sadiq al-Mahdi",
+      "Hassan al-Turabi"
+     ],
+     "why": "General Gordon was killed."
+    },
+    {
+     "level": 2,
+     "q": "Which British general was killed in the siege of Khartoum?",
+     "a": "Charles Gordon",
+     "wrong": [
+      "Herbert Kitchener",
+      "Garnet Wolseley",
+      "Evelyn Baring"
+     ],
+     "why": "He was called 'Gordon of Khartoum'."
+    },
+    {
+     "level": 2,
+     "q": "Which 1898 battle ended the Mahdist state?",
+     "a": "Battle of Omdurman",
+     "wrong": [
+      "Battle of Khartoum",
+      "Battle of Atbara",
+      "Battle of Adwa"
+     ],
+     "why": "Kitchener's army won."
+    },
+    {
+     "level": 2,
+     "q": "Which region in the west has faced conflict since 2003?",
+     "a": "Darfur",
+     "wrong": [
+      "Kordofan",
+      "Blue Nile",
+      "Kassala"
+     ],
+     "why": "Many civilians were killed."
+    },
+    {
+     "level": 2,
+     "q": "Who leads the Rapid Support Forces?",
+     "a": "Mohamed Hamdan Dagalo (Hemedti)",
+     "wrong": [
+      "Abdel Fattah al-Burhan",
+      "Omar al-Bashir",
+      "Abdalla Hamdok"
+     ],
+     "why": "The RSF grew from the Janjaweed."
+    },
+    {
+     "level": 3,
+     "q": "Which Prime Minister led the transition after 2019?",
+     "a": "Abdalla Hamdok",
+     "wrong": [
+      "Sadiq al-Mahdi",
+      "Kamil Idris",
+      "Hassan al-Turabi"
+     ],
+     "why": "He resigned in 2022."
+    },
+    {
+     "level": 3,
+     "q": "Which 2005 deal ended the long war with the south?",
+     "a": "Comprehensive Peace Agreement",
+     "wrong": [
+      "Addis Ababa Agreement",
+      "Doha Agreement",
+      "Khartoum Peace"
+     ],
+     "why": "It led to the 2011 vote."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient Christian kingdom ruled Nubia from Dongola?",
+     "a": "Makuria",
+     "wrong": [
+      "Alodia",
+      "Nobatia",
+      "Aksum"
+     ],
+     "why": "It lasted until the 1300s."
+    }
+   ]
+  },
+  {
+   "name": "Sudan: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which two rivers meet at Khartoum?",
+     "a": "Blue Nile and White Nile",
+     "wrong": [
+      "Niger and Benue",
+      "Congo and Ubangi",
+      "Tigris and Euphrates"
+     ],
+     "why": "They form the Nile."
+    },
+    {
+     "level": 1,
+     "q": "Which pyramids in Sudan are a UNESCO site?",
+     "a": "Pyramids of Meroë",
+     "wrong": [
+      "Pyramids of Giza",
+      "Pyramids of Teotihuacan",
+      "Pyramids of Güímar"
+     ],
+     "why": "There are about 200 of them."
+    },
+    {
+     "level": 1,
+     "q": "Which bean dish is eaten for breakfast in Sudan?",
+     "a": "Ful medames",
+     "wrong": [
+      "Shakshuka",
+      "Falafel",
+      "Hummus"
+     ],
+     "why": "It is made from fava beans."
+    },
+    {
+     "level": 1,
+     "q": "Which sea is on Sudan's coast?",
+     "a": "Red Sea",
+     "wrong": [
+      "Mediterranean Sea",
+      "Arabian Sea",
+      "Gulf of Aden"
+     ],
+     "why": "Port Sudan is its main port."
+    },
+    {
+     "level": 1,
+     "q": "Which gum from acacia trees does Sudan export?",
+     "a": "Gum arabic",
+     "wrong": [
+      "Rubber",
+      "Shea butter",
+      "Frankincense"
+     ],
+     "why": "It is used in soft drinks."
+    },
+    {
+     "level": 1,
+     "q": "Which desert covers much of northern Sudan?",
+     "a": "Sahara (Nubian Desert)",
+     "wrong": [
+      "Kalahari",
+      "Namib",
+      "Gobi"
+     ],
+     "why": "It is very dry."
+    },
+    {
+     "level": 1,
+     "q": "Which twin city of Khartoum was the Mahdi's capital?",
+     "a": "Omdurman",
+     "wrong": [
+      "Port Sudan",
+      "Kassala",
+      "Wad Madani"
+     ],
+     "why": "Its souq is huge."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain in Nubia is sacred and a UNESCO site?",
+     "a": "Jebel Barkal",
+     "wrong": [
+      "Jebel Marra",
+      "Mount Kinyeti",
+      "Jebel Musa"
+     ],
+     "why": "The god Amun was worshipped there."
+    },
+    {
+     "level": 2,
+     "q": "Which Sudanese writer wrote 'Season of Migration to the North'?",
+     "a": "Tayeb Salih",
+     "wrong": [
+      "Leila Aboulela",
+      "Abdel Aziz Baraka Sakin",
+      "Naguib Mahfouz"
+     ],
+     "why": "It is a classic of Arabic literature."
+    },
+    {
+     "level": 2,
+     "q": "Which whirling dervishes perform on Fridays at Omdurman?",
+     "a": "Sufi dervishes at Hamed al-Nil tomb",
+     "wrong": [
+      "Mevlevi dervishes of Konya",
+      "Gnawa musicians",
+      "Qawwali singers"
+     ],
+     "why": "Crowds watch at sunset."
+    },
+    {
+     "level": 2,
+     "q": "Which marine park near Port Sudan is a UNESCO site?",
+     "a": "Sanganeb Marine National Park",
+     "wrong": [
+      "Ras Mohammed",
+      "Dahlak",
+      "Farasan"
+     ],
+     "why": "It has a coral atoll."
+    },
+    {
+     "level": 2,
+     "q": "Which volcanic massif in Darfur has crater lakes?",
+     "a": "Jebel Marra",
+     "wrong": [
+      "Jebel Barkal",
+      "Mount Elgon",
+      "Emi Koussi"
+     ],
+     "why": "It is the highest point in Sudan."
+    },
+    {
+     "level": 3,
+     "q": "Which dam on the Nile in northern Sudan opened in 2009?",
+     "a": "Merowe Dam",
+     "wrong": [
+      "Aswan Dam",
+      "Roseires Dam",
+      "Grand Renaissance Dam"
+     ],
+     "why": "It flooded old villages."
+    },
+    {
+     "level": 3,
+     "q": "Which spiced coffee is served from a clay pot?",
+     "a": "Jebena coffee",
+     "wrong": [
+      "Turkish coffee",
+      "Espresso",
+      "Cold brew"
+     ],
+     "why": "It is flavoured with ginger."
+    },
+    {
+     "level": 3,
+     "q": "Which Sudanese singer was a pan-African star?",
+     "a": "Mohammed Wardi",
+     "wrong": [
+      "Fela Kuti",
+      "Sayed Khalifa",
+      "Omar Ihsas"
+     ],
+     "why": "He sang in Arabic and Nubian."
+    }
+   ]
+  }
+ ]
+}

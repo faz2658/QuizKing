@@ -1,0 +1,346 @@
+{
+ "category": "Somalia",
+ "country": "SO",
+ "topics": [
+  {
+   "name": "Somalia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Somalia?",
+     "a": "Mogadishu",
+     "wrong": [
+      "Hargeisa",
+      "Kismayo",
+      "Bosaso"
+     ],
+     "why": "It is on the Indian Ocean coast."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Somalia gain independence?",
+     "a": "1960",
+     "wrong": [
+      "1950",
+      "1970",
+      "1980"
+     ],
+     "why": "British and Italian Somaliland united that year."
+    },
+    {
+     "level": 1,
+     "q": "Which two European countries ruled parts of Somalia?",
+     "a": "Italy and the United Kingdom",
+     "wrong": [
+      "France and Portugal",
+      "Germany and Belgium",
+      "Spain and Italy"
+     ],
+     "why": "They united on 1 July 1960."
+    },
+    {
+     "level": 1,
+     "q": "Which region declared independence in 1991 but is not widely recognised?",
+     "a": "Somaliland",
+     "wrong": [
+      "Puntland",
+      "Jubaland",
+      "Galmudug"
+     ],
+     "why": "Its capital is Hargeisa."
+    },
+    {
+     "level": 1,
+     "q": "What is Somalia's currency?",
+     "a": "Somali shilling",
+     "wrong": [
+      "Birr",
+      "Kenyan shilling",
+      "Djiboutian franc"
+     ],
+     "why": "US dollars are widely used."
+    },
+    {
+     "level": 1,
+     "q": "Which militant group has fought the Somali government since 2006?",
+     "a": "Al-Shabaab",
+     "wrong": [
+      "Boko Haram",
+      "Hamas",
+      "Hezbollah"
+     ],
+     "why": "It is linked to al-Qaeda."
+    },
+    {
+     "level": 1,
+     "q": "Which 1993 battle in Mogadishu became the film 'Black Hawk Down'?",
+     "a": "Battle of Mogadishu",
+     "wrong": [
+      "Battle of Kismayo",
+      "Battle of Baidoa",
+      "Battle of Hargeisa"
+     ],
+     "why": "US helicopters were shot down."
+    },
+    {
+     "level": 2,
+     "q": "Which dictator ruled Somalia from 1969 to 1991?",
+     "a": "Siad Barre",
+     "wrong": [
+      "Aden Abdullah Osman",
+      "Mohamed Farrah Aidid",
+      "Sheikh Sharif"
+     ],
+     "why": "His fall led to civil war."
+    },
+    {
+     "level": 2,
+     "q": "Which 1977–78 war with Ethiopia was over a region?",
+     "a": "Ogaden War",
+     "wrong": [
+      "Eritrean War",
+      "Djibouti War",
+      "Kenyan War"
+     ],
+     "why": "Somalia lost the war."
+    },
+    {
+     "level": 2,
+     "q": "Who became President of Somalia again in 2022?",
+     "a": "Hassan Sheikh Mohamud",
+     "wrong": [
+      "Mohamed Abdullahi Farmaajo",
+      "Sharif Sheikh Ahmed",
+      "Abdiqasim Salad"
+     ],
+     "why": "He had served from 2012 to 2017."
+    },
+    {
+     "level": 2,
+     "q": "Which problem off Somalia peaked around 2009–11?",
+     "a": "Piracy",
+     "wrong": [
+      "Oil spills",
+      "Tsunamis",
+      "Smuggling"
+     ],
+     "why": "Ships were seized for ransom."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient land of incense may have been on the Somali coast?",
+     "a": "Land of Punt",
+     "wrong": [
+      "Kush",
+      "Ophir",
+      "Saba"
+     ],
+     "why": "Egyptians traded with it."
+    },
+    {
+     "level": 3,
+     "q": "Who was Somalia's first President?",
+     "a": "Aden Abdullah Osman",
+     "wrong": [
+      "Siad Barre",
+      "Abdirashid Ali Shermarke",
+      "Mohamed Egal"
+     ],
+     "why": "He stepped down peacefully in 1967."
+    },
+    {
+     "level": 3,
+     "q": "Which warlord fought US forces in 1993?",
+     "a": "Mohamed Farrah Aidid",
+     "wrong": [
+      "Siad Barre",
+      "Ali Mahdi",
+      "Hassan Dahir Aweys"
+     ],
+     "why": "His son later led a faction."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient sultanate ruled the coast from Mogadishu in the Middle Ages?",
+     "a": "Sultanate of Mogadishu",
+     "wrong": [
+      "Sultanate of Zanzibar",
+      "Adal Sultanate",
+      "Kilwa Sultanate"
+     ],
+     "why": "Ibn Battuta visited in 1331."
+    }
+   ]
+  },
+  {
+   "name": "Somalia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which ocean is on Somalia's long coast?",
+     "a": "Indian Ocean",
+     "wrong": [
+      "Atlantic Ocean",
+      "Mediterranean Sea",
+      "Pacific Ocean"
+     ],
+     "why": "It has Africa's longest mainland coastline."
+    },
+    {
+     "level": 1,
+     "q": "Which animal does Somalia have more of than any country?",
+     "a": "Camels",
+     "wrong": [
+      "Horses",
+      "Cows",
+      "Sheep"
+     ],
+     "why": "There are millions."
+    },
+    {
+     "level": 1,
+     "q": "Which spiced rice dish is popular in Somalia?",
+     "a": "Bariis iskukaris",
+     "wrong": [
+      "Jollof rice",
+      "Biryani",
+      "Paella"
+     ],
+     "why": "It is often served with goat."
+    },
+    {
+     "level": 1,
+     "q": "Which famous Somali-born model married David Bowie?",
+     "a": "Iman",
+     "wrong": [
+      "Waris Dirie",
+      "Naomi Campbell",
+      "Alek Wek"
+     ],
+     "why": "She was born in Mogadishu."
+    },
+    {
+     "level": 1,
+     "q": "Which Somali-born British runner won four Olympic golds?",
+     "a": "Mo Farah",
+     "wrong": [
+      "Haile Gebrselassie",
+      "Kenenisa Bekele",
+      "Abdi Bile"
+     ],
+     "why": "He was born in Mogadishu."
+    },
+    {
+     "level": 1,
+     "q": "Which tradition of poetry is central to Somali culture?",
+     "a": "Oral poetry",
+     "wrong": [
+      "Haiku",
+      "Sonnets",
+      "Limericks"
+     ],
+     "why": "Somalia is called a 'nation of poets'."
+    },
+    {
+     "level": 1,
+     "q": "Which language is official in Somalia?",
+     "a": "Somali and Arabic",
+     "wrong": [
+      "Swahili and English",
+      "Amharic and Somali",
+      "Italian and English"
+     ],
+     "why": "Somali was first written in 1972."
+    },
+    {
+     "level": 2,
+     "q": "Which cave paintings in Somaliland are thousands of years old?",
+     "a": "Laas Geel",
+     "wrong": [
+      "Twyfelfontein",
+      "Tassili",
+      "Tsodilo"
+     ],
+     "why": "They show cattle and herders."
+    },
+    {
+     "level": 2,
+     "q": "Which Somali singer is called the 'Queen of Somali music'?",
+     "a": "Magool",
+     "wrong": [
+      "Maryam Mursal",
+      "Hibo Nuura",
+      "Sahra Ahmed"
+     ],
+     "why": "She was famous in the 1970s."
+    },
+    {
+     "level": 2,
+     "q": "Which Somali-Canadian rapper had a hit with 'Wavin' Flag'?",
+     "a": "K'naan",
+     "wrong": [
+      "Aar Maanta",
+      "Mo Farah",
+      "Iman"
+     ],
+     "why": "It was the 2010 World Cup anthem."
+    },
+    {
+     "level": 2,
+     "q": "Which Somali runner won the 1987 world 1,500 m title?",
+     "a": "Abdi Bile",
+     "wrong": [
+      "Mo Farah",
+      "Hussein Ahmed Salah",
+      "Hassan Kiprop"
+     ],
+     "why": "He is a national hero."
+    },
+    {
+     "level": 2,
+     "q": "Which lighthouse peninsula is the tip of the Horn of Africa?",
+     "a": "Cape Guardafui",
+     "wrong": [
+      "Ras Hafun",
+      "Cape Agulhas",
+      "Cape Bon"
+     ],
+     "why": "Ras Hafun is the easternmost point."
+    },
+    {
+     "level": 3,
+     "q": "Which old port town was a stop on the Indian Ocean trade routes?",
+     "a": "Barawa",
+     "wrong": [
+      "Bosaso",
+      "Hobyo",
+      "Galkayo"
+     ],
+     "why": "It has ancient mosques."
+    },
+    {
+     "level": 3,
+     "q": "Which Somali writer won the Neustadt Prize in 1998?",
+     "a": "Nuruddin Farah",
+     "wrong": [
+      "Ayaan Hirsi Ali",
+      "Warsan Shire",
+      "Abdirazak Haji Hussein"
+     ],
+     "why": "He wrote 'Maps'."
+    },
+    {
+     "level": 3,
+     "q": "Which spongy flatbread is eaten for breakfast?",
+     "a": "Canjeero (laxoox)",
+     "wrong": [
+      "Injera",
+      "Naan",
+      "Paratha"
+     ],
+     "why": "It is like injera but thinner."
+    }
+   ]
+  }
+ ]
+}
