@@ -1,0 +1,346 @@
+{
+ "category": "Iraq",
+ "country": "IQ",
+ "topics": [
+  {
+   "name": "Iraq: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which ancient land between the Tigris and Euphrates is called the cradle of civilisation?",
+     "a": "Mesopotamia",
+     "wrong": [
+      "Anatolia",
+      "The Levant",
+      "Persia"
+     ],
+     "why": "Writing was invented there."
+    },
+    {
+     "level": 1,
+     "q": "Which people invented cuneiform writing?",
+     "a": "Sumerians",
+     "wrong": [
+      "Egyptians",
+      "Phoenicians",
+      "Hittites"
+     ],
+     "why": "They wrote on clay tablets."
+    },
+    {
+     "level": 1,
+     "q": "Which Babylonian king created a famous law code?",
+     "a": "Hammurabi",
+     "wrong": [
+      "Nebuchadnezzar II",
+      "Sargon",
+      "Ashurbanipal"
+     ],
+     "why": "It includes 'an eye for an eye'."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient city had the legendary Hanging Gardens?",
+     "a": "Babylon",
+     "wrong": [
+      "Nineveh",
+      "Ur",
+      "Uruk"
+     ],
+     "why": "They were a Wonder of the Ancient World."
+    },
+    {
+     "level": 1,
+     "q": "Which city was the capital of the Abbasid Caliphate?",
+     "a": "Baghdad",
+     "wrong": [
+      "Damascus",
+      "Cairo",
+      "Basra"
+     ],
+     "why": "It was founded in 762."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient poem is one of the oldest stories ever written?",
+     "a": "Epic of Gilgamesh",
+     "wrong": [
+      "Iliad",
+      "Mahabharata",
+      "Beowulf"
+     ],
+     "why": "Gilgamesh was a king of Uruk."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Iraq invade Kuwait, leading to the Gulf War?",
+     "a": "1990",
+     "wrong": [
+      "1980",
+      "1988",
+      "2003"
+     ],
+     "why": "A US-led coalition drove Iraq out in 1991."
+    },
+    {
+     "level": 2,
+     "q": "Which Abbasid centre of learning in Baghdad translated Greek works?",
+     "a": "House of Wisdom",
+     "wrong": [
+      "Library of Alexandria",
+      "Al-Azhar",
+      "Nizamiyya"
+     ],
+     "why": "It was at its height in the 800s."
+    },
+    {
+     "level": 2,
+     "q": "Which Babylonian king built the blue-tiled Ishtar Gate?",
+     "a": "Nebuchadnezzar II",
+     "wrong": [
+      "Hammurabi",
+      "Cyrus",
+      "Sennacherib"
+     ],
+     "why": "It now stands in a Berlin museum."
+    },
+    {
+     "level": 2,
+     "q": "Which Assyrian capital had a great library of clay tablets?",
+     "a": "Nineveh",
+     "wrong": [
+      "Babylon",
+      "Ur",
+      "Nimrud"
+     ],
+     "why": "King Ashurbanipal collected it."
+    },
+    {
+     "level": 2,
+     "q": "Which Sumerian city had a great ziggurat and royal tombs?",
+     "a": "Ur",
+     "wrong": [
+      "Uruk",
+      "Lagash",
+      "Nippur"
+     ],
+     "why": "It is near Nasiriyah."
+    },
+    {
+     "level": 2,
+     "q": "In which year did a US-led invasion topple Saddam Hussein?",
+     "a": "2003",
+     "wrong": [
+      "1991",
+      "1998",
+      "2006"
+     ],
+     "why": "He was captured that December."
+    },
+    {
+     "level": 3,
+     "q": "Which king became Iraq's first monarch in 1921?",
+     "a": "Faisal I",
+     "wrong": [
+      "Ghazi",
+      "Faisal II",
+      "Abdullah I"
+     ],
+     "why": "The monarchy ended in 1958."
+    },
+    {
+     "level": 3,
+     "q": "Which Akkadian ruler created what is called the first empire?",
+     "a": "Sargon of Akkad",
+     "wrong": [
+      "Hammurabi",
+      "Gilgamesh",
+      "Ur-Nammu"
+     ],
+     "why": "He ruled around 2300 BC."
+    },
+    {
+     "level": 3,
+     "q": "Which invaders sacked Baghdad in 1258?",
+     "a": "Mongols",
+     "wrong": [
+      "Crusaders",
+      "Ottomans",
+      "Seljuks"
+     ],
+     "why": "Hulagu Khan led them."
+    }
+   ]
+  },
+  {
+   "name": "Iraq: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Iraq?",
+     "a": "Baghdad",
+     "wrong": [
+      "Basra",
+      "Mosul",
+      "Erbil"
+     ],
+     "why": "It lies on the Tigris."
+    },
+    {
+     "level": 1,
+     "q": "Which two great rivers flow through Iraq?",
+     "a": "Tigris and Euphrates",
+     "wrong": [
+      "Nile and Jordan",
+      "Indus and Ganges",
+      "Volga and Don"
+     ],
+     "why": "They join to form the Shatt al-Arab."
+    },
+    {
+     "level": 1,
+     "q": "What is Iraq's currency?",
+     "a": "Iraqi dinar",
+     "wrong": [
+      "Riyal",
+      "Lira",
+      "Pound"
+     ],
+     "why": "The Central Bank of Iraq issues it."
+    },
+    {
+     "level": 1,
+     "q": "Which port city is in the far south of Iraq?",
+     "a": "Basra",
+     "wrong": [
+      "Mosul",
+      "Kirkuk",
+      "Najaf"
+     ],
+     "why": "Legend makes it the home of Sinbad."
+    },
+    {
+     "level": 1,
+     "q": "Which southern wetlands are home to the Marsh Arabs?",
+     "a": "Mesopotamian Marshes",
+     "wrong": [
+      "Okavango Delta",
+      "Sudd",
+      "Everglades"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which split and fire-grilled carp is a Baghdad speciality?",
+     "a": "Masgouf",
+     "wrong": [
+      "Kebab",
+      "Dolma",
+      "Kubba"
+     ],
+     "why": "It is cooked beside an open fire."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of Iraq's Kurdistan Region?",
+     "a": "Erbil",
+     "wrong": [
+      "Sulaymaniyah",
+      "Duhok",
+      "Kirkuk"
+     ],
+     "why": "Its citadel is one of the oldest lived-in sites."
+    },
+    {
+     "level": 2,
+     "q": "Which holy city has the shrine of Imam Ali?",
+     "a": "Najaf",
+     "wrong": [
+      "Karbala",
+      "Samarra",
+      "Kufa"
+     ],
+     "why": "It has one of the world's largest cemeteries."
+    },
+    {
+     "level": 2,
+     "q": "Which holy city has the shrine of Imam Husayn?",
+     "a": "Karbala",
+     "wrong": [
+      "Najaf",
+      "Kadhimiya",
+      "Samarra"
+     ],
+     "why": "Millions visit for Arbaeen."
+    },
+    {
+     "level": 2,
+     "q": "Which city's Great Mosque has a famous spiral minaret?",
+     "a": "Samarra",
+     "wrong": [
+      "Mosul",
+      "Kufa",
+      "Basra"
+     ],
+     "why": "The minaret is called the Malwiya."
+    },
+    {
+     "level": 2,
+     "q": "Which story collection includes Sinbad and many tales set in Baghdad?",
+     "a": "One Thousand and One Nights",
+     "wrong": [
+      "Kalila and Dimna",
+      "Shahnameh",
+      "Panchatantra"
+     ],
+     "why": "Harun al-Rashid appears in many tales."
+    },
+    {
+     "level": 2,
+     "q": "Which Iraqi-British architect designed the London Aquatics Centre?",
+     "a": "Zaha Hadid",
+     "wrong": [
+      "Rifat Chadirji",
+      "Mohamed Makiya",
+      "Norman Foster"
+     ],
+     "why": "She won the Pritzker Prize in 2004."
+    },
+    {
+     "level": 3,
+     "q": "Which stringed instrument did Iraqi master Munir Bashir play?",
+     "a": "Oud",
+     "wrong": [
+      "Sitar",
+      "Kora",
+      "Balalaika"
+     ],
+     "why": "He was called the 'Prince of the Oud'."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Iraq win the AFC Asian Cup?",
+     "a": "2007",
+     "wrong": [
+      "2004",
+      "2011",
+      "2019"
+     ],
+     "why": "The win united the country in hard times."
+    },
+    {
+     "level": 3,
+     "q": "Which city's Al-Nuri Mosque was rebuilt after 2017?",
+     "a": "Mosul",
+     "wrong": [
+      "Kirkuk",
+      "Tikrit",
+      "Fallujah"
+     ],
+     "why": "Its leaning minaret was called al-Hadba."
+    }
+   ]
+  }
+ ]
+}

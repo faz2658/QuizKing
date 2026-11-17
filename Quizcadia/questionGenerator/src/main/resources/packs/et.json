@@ -1,0 +1,346 @@
+{
+ "category": "Ethiopia",
+ "country": "ET",
+ "topics": [
+  {
+   "name": "Ethiopia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which African country was never colonised, apart from a brief Italian occupation?",
+     "a": "Ethiopia",
+     "wrong": [
+      "Ghana",
+      "Kenya",
+      "Nigeria"
+     ],
+     "why": "It defeated Italy at Adwa in 1896."
+    },
+    {
+     "level": 1,
+     "q": "Which 1896 battle saw Ethiopia defeat an Italian army?",
+     "a": "Battle of Adwa",
+     "wrong": [
+      "Battle of Isandlwana",
+      "Battle of Omdurman",
+      "Battle of Maychew"
+     ],
+     "why": "Adwa Victory Day is 2 March."
+    },
+    {
+     "level": 1,
+     "q": "Which last emperor of Ethiopia was crowned in 1930?",
+     "a": "Haile Selassie",
+     "wrong": [
+      "Menelik II",
+      "Tewodros II",
+      "Yohannes IV"
+     ],
+     "why": "He was overthrown in 1974."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient kingdom built tall stone obelisks at its capital?",
+     "a": "Aksumite Kingdom",
+     "wrong": [
+      "Kingdom of Kush",
+      "Land of Punt",
+      "Zagwe dynasty"
+     ],
+     "why": "Its capital was Aksum."
+    },
+    {
+     "level": 1,
+     "q": "Which 3.2-million-year-old fossil skeleton was found in Ethiopia in 1974?",
+     "a": "Lucy",
+     "wrong": [
+      "Turkana Boy",
+      "Mrs Ples",
+      "Taung Child"
+     ],
+     "why": "In Amharic she is called Dinkinesh."
+    },
+    {
+     "level": 1,
+     "q": "Which queen of legend visited King Solomon?",
+     "a": "Queen of Sheba",
+     "wrong": [
+      "Queen Nefertiti",
+      "Cleopatra",
+      "Queen Amanirenas"
+     ],
+     "why": "Ethiopians call her Makeda."
+    },
+    {
+     "level": 1,
+     "q": "Which Ethiopian Prime Minister won the 2019 Nobel Peace Prize?",
+     "a": "Abiy Ahmed",
+     "wrong": [
+      "Meles Zenawi",
+      "Hailemariam Desalegn",
+      "Mengistu Haile Mariam"
+     ],
+     "why": "It was for making peace with Eritrea."
+    },
+    {
+     "level": 2,
+     "q": "Which emperor won the Battle of Adwa and founded Addis Ababa?",
+     "a": "Menelik II",
+     "wrong": [
+      "Tewodros II",
+      "Haile Selassie",
+      "Yohannes IV"
+     ],
+     "why": "He ruled from 1889 to 1913."
+    },
+    {
+     "level": 2,
+     "q": "Which king had churches carved from solid rock in the 1100s–1200s?",
+     "a": "King Lalibela",
+     "wrong": [
+      "King Ezana",
+      "Emperor Fasilides",
+      "King Kaleb"
+     ],
+     "why": "The town is named after him."
+    },
+    {
+     "level": 2,
+     "q": "Which emperor built the castles of Gondar?",
+     "a": "Fasilides",
+     "wrong": [
+      "Menelik II",
+      "Tewodros II",
+      "Susenyos"
+     ],
+     "why": "Gondar became the capital in 1636."
+    },
+    {
+     "level": 2,
+     "q": "Which Aksumite king made Christianity the state religion in the 300s?",
+     "a": "Ezana",
+     "wrong": [
+      "Kaleb",
+      "Lalibela",
+      "Menelik I"
+     ],
+     "why": "Ethiopia is one of the oldest Christian nations."
+    },
+    {
+     "level": 2,
+     "q": "Which military regime ruled Ethiopia from 1974 to 1991?",
+     "a": "The Derg",
+     "wrong": [
+      "The Junta",
+      "The Shewa Council",
+      "The Red Guard"
+     ],
+     "why": "Mengistu Haile Mariam led it."
+    },
+    {
+     "level": 3,
+     "q": "Which country gained independence from Ethiopia in 1993?",
+     "a": "Eritrea",
+     "wrong": [
+      "Djibouti",
+      "Somalia",
+      "South Sudan"
+     ],
+     "why": "It followed a 30-year war."
+    },
+    {
+     "level": 3,
+     "q": "Which emperor took his own life at Magdala rather than surrender to the British in 1868?",
+     "a": "Tewodros II",
+     "wrong": [
+      "Yohannes IV",
+      "Menelik II",
+      "Iyasu V"
+     ],
+     "why": "He tried to modernise the country."
+    },
+    {
+     "level": 3,
+     "q": "Which 4.4-million-year-old skeleton from the Afar region is nicknamed 'Ardi'?",
+     "a": "Ardipithecus ramidus",
+     "wrong": [
+      "Australopithecus afarensis",
+      "Homo habilis",
+      "Homo erectus"
+     ],
+     "why": "It is older than Lucy."
+    }
+   ]
+  },
+  {
+   "name": "Ethiopia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Ethiopia?",
+     "a": "Addis Ababa",
+     "wrong": [
+      "Gondar",
+      "Bahir Dar",
+      "Dire Dawa"
+     ],
+     "why": "It hosts the African Union headquarters."
+    },
+    {
+     "level": 1,
+     "q": "Which drink is said to have been discovered in Ethiopia?",
+     "a": "Coffee",
+     "wrong": [
+      "Tea",
+      "Cocoa",
+      "Mate"
+     ],
+     "why": "Legend says a goatherd named Kaldi found it."
+    },
+    {
+     "level": 1,
+     "q": "What is the spongy flatbread made from teff called?",
+     "a": "Injera",
+     "wrong": [
+      "Naan",
+      "Pita",
+      "Chapati"
+     ],
+     "why": "Stews are served on top of it."
+    },
+    {
+     "level": 1,
+     "q": "How many months are in the Ethiopian calendar?",
+     "a": "13",
+     "wrong": [
+      "12",
+      "10",
+      "14"
+     ],
+     "why": "The calendar is about seven to eight years behind the Gregorian one."
+    },
+    {
+     "level": 1,
+     "q": "What is Ethiopia's currency?",
+     "a": "Birr",
+     "wrong": [
+      "Shilling",
+      "Nakfa",
+      "Rand"
+     ],
+     "why": "The National Bank of Ethiopia issues it."
+    },
+    {
+     "level": 1,
+     "q": "Which runner won the 1960 Olympic marathon barefoot?",
+     "a": "Abebe Bikila",
+     "wrong": [
+      "Haile Gebrselassie",
+      "Kenenisa Bekele",
+      "Mamo Wolde"
+     ],
+     "why": "He won again in 1964 wearing shoes."
+    },
+    {
+     "level": 1,
+     "q": "Which lake is the source of the Blue Nile?",
+     "a": "Lake Tana",
+     "wrong": [
+      "Lake Victoria",
+      "Lake Turkana",
+      "Lake Abaya"
+     ],
+     "why": "It has island monasteries."
+    },
+    {
+     "level": 2,
+     "q": "Which runner won Olympic 10,000 m gold in 1996 and 2000?",
+     "a": "Haile Gebrselassie",
+     "wrong": [
+      "Abebe Bikila",
+      "Miruts Yifter",
+      "Derartu Tulu"
+     ],
+     "why": "He set many world records."
+    },
+    {
+     "level": 2,
+     "q": "What is Ethiopia's main working language?",
+     "a": "Amharic",
+     "wrong": [
+      "Tigrinya",
+      "Arabic",
+      "Somali"
+     ],
+     "why": "Afaan Oromo has the most native speakers."
+    },
+    {
+     "level": 2,
+     "q": "Which spicy chicken stew is a national dish?",
+     "a": "Doro wat",
+     "wrong": [
+      "Shiro",
+      "Tibs",
+      "Kitfo"
+     ],
+     "why": "It is cooked with berbere spice."
+    },
+    {
+     "level": 2,
+     "q": "Which depression in the northeast is one of the hottest places on Earth?",
+     "a": "Danakil Depression",
+     "wrong": [
+      "Omo Valley",
+      "Ogaden",
+      "Awash Valley"
+     ],
+     "why": "It has colourful sulphur springs."
+    },
+    {
+     "level": 2,
+     "q": "Which September festival celebrates the finding of the True Cross with a bonfire?",
+     "a": "Meskel",
+     "wrong": [
+      "Timkat",
+      "Enkutatash",
+      "Fasika"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 3,
+     "q": "Which dam on the Blue Nile is Africa's largest hydropower project?",
+     "a": "Grand Ethiopian Renaissance Dam",
+     "wrong": [
+      "Aswan High Dam",
+      "Gibe III Dam",
+      "Inga Dam"
+     ],
+     "why": "It stands near the border with Sudan."
+    },
+    {
+     "level": 3,
+     "q": "Which mountains include Ethiopia's highest peak, Ras Dashen?",
+     "a": "Simien Mountains",
+     "wrong": [
+      "Bale Mountains",
+      "Ahmar Mountains",
+      "Entoto Hills"
+     ],
+     "why": "Gelada monkeys live there."
+    },
+    {
+     "level": 3,
+     "q": "Which January festival celebrates Epiphany with processions?",
+     "a": "Timkat",
+     "wrong": [
+      "Meskel",
+      "Enkutatash",
+      "Genna"
+     ],
+     "why": "Replicas of the Ark of the Covenant are carried."
+    }
+   ]
+  }
+ ]
+}

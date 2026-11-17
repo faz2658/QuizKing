@@ -1,0 +1,357 @@
+{
+ "category": "Ukraine",
+ "country": "UA",
+ "topics": [
+  {
+   "name": "Ukraine: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which medieval state centred on Kyiv was founded in the 800s?",
+     "a": "Kievan Rus'",
+     "wrong": [
+      "Golden Horde",
+      "Grand Duchy of Lithuania",
+      "Muscovy"
+     ],
+     "why": "It became Christian in 988."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Ukraine declare independence from the Soviet Union?",
+     "a": "1991",
+     "wrong": [
+      "1989",
+      "1994",
+      "2004"
+     ],
+     "why": "Independence Day is 24 August."
+    },
+    {
+     "level": 1,
+     "q": "Which 1986 nuclear disaster happened near the town of Pripyat?",
+     "a": "Chernobyl",
+     "wrong": [
+      "Zaporizhzhia",
+      "Fukushima",
+      "Kyshtym"
+     ],
+     "why": "The exclusion zone is still in place."
+    },
+    {
+     "level": 1,
+     "q": "What was the Holodomor of 1932–33?",
+     "a": "A man-made famine under Stalin",
+     "wrong": [
+      "A war with Poland",
+      "A Mongol invasion",
+      "A great flood"
+     ],
+     "why": "Millions of Ukrainians died."
+    },
+    {
+     "level": 1,
+     "q": "Which 2004 protests overturned a disputed presidential election?",
+     "a": "Orange Revolution",
+     "wrong": [
+      "Rose Revolution",
+      "Velvet Revolution",
+      "Revolution of Dignity"
+     ],
+     "why": "Protesters wore orange."
+    },
+    {
+     "level": 1,
+     "q": "Which 2013–14 protests in Kyiv's main square ousted the President?",
+     "a": "Euromaidan (Revolution of Dignity)",
+     "wrong": [
+      "Orange Revolution",
+      "Granite Revolution",
+      "Rose Revolution"
+     ],
+     "why": "They began over closer ties with the EU."
+    },
+    {
+     "level": 1,
+     "q": "Who became President of Ukraine in 2019?",
+     "a": "Volodymyr Zelenskyy",
+     "wrong": [
+      "Petro Poroshenko",
+      "Viktor Yushchenko",
+      "Viktor Yanukovych"
+     ],
+     "why": "He had been a comedian and actor."
+    },
+    {
+     "level": 2,
+     "q": "Which national poet wrote 'Kobzar'?",
+     "a": "Taras Shevchenko",
+     "wrong": [
+      "Ivan Franko",
+      "Lesya Ukrainka",
+      "Hryhorii Skovoroda"
+     ],
+     "why": "He was born a serf in 1814."
+    },
+    {
+     "level": 2,
+     "q": "What were the free warrior communities of the Dnieper called?",
+     "a": "Cossacks",
+     "wrong": [
+      "Hussars",
+      "Streltsy",
+      "Janissaries"
+     ],
+     "why": "The Zaporozhian Sich was their stronghold."
+    },
+    {
+     "level": 2,
+     "q": "Which Cossack leader led a 1648 uprising against Poland?",
+     "a": "Bohdan Khmelnytsky",
+     "wrong": [
+      "Ivan Mazepa",
+      "Petro Sahaidachny",
+      "Ivan Sirko"
+     ],
+     "why": "His statue stands in Kyiv."
+    },
+    {
+     "level": 2,
+     "q": "Which prince brought Christianity to Kievan Rus' in 988?",
+     "a": "Volodymyr the Great",
+     "wrong": [
+      "Yaroslav the Wise",
+      "Oleg",
+      "Sviatoslav"
+     ],
+     "why": "He was baptised in Crimea."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Russia launch its full-scale invasion of Ukraine?",
+     "a": "2022",
+     "wrong": [
+      "2014",
+      "2020",
+      "2023"
+     ],
+     "why": "It began on 24 February."
+    },
+    {
+     "level": 3,
+     "q": "Which Kyiv prince built St Sophia's Cathedral?",
+     "a": "Yaroslav the Wise",
+     "wrong": [
+      "Volodymyr the Great",
+      "Oleg",
+      "Ihor"
+     ],
+     "why": "He ruled in the 1000s."
+    },
+    {
+     "level": 3,
+     "q": "Which writer used the pen name Lesya Ukrainka?",
+     "a": "Larysa Kosach",
+     "wrong": [
+      "Marko Vovchok",
+      "Olha Kobylianska",
+      "Lina Kostenko"
+     ],
+     "why": "She wrote 'The Forest Song'."
+    },
+    {
+     "level": 3,
+     "q": "Which Ukrainian-born engineer led the programme that launched Sputnik?",
+     "a": "Serhiy Korolyov",
+     "wrong": [
+      "Igor Sikorsky",
+      "Yuri Kondratyuk",
+      "Valentin Glushko"
+     ],
+     "why": "He was born in Zhytomyr."
+    }
+   ]
+  },
+  {
+   "name": "Ukraine: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Ukraine?",
+     "a": "Kyiv",
+     "wrong": [
+      "Lviv",
+      "Kharkiv",
+      "Odesa"
+     ],
+     "why": "It stands on the Dnieper River."
+    },
+    {
+     "level": 1,
+     "q": "Which beetroot soup was listed by UNESCO as Ukrainian heritage in 2022?",
+     "a": "Borscht",
+     "wrong": [
+      "Solyanka",
+      "Okroshka",
+      "Rassolnik"
+     ],
+     "why": "It is often served with sour cream."
+    },
+    {
+     "level": 1,
+     "q": "What are the colours of Ukraine's flag?",
+     "a": "Blue and yellow",
+     "wrong": [
+      "Red and white",
+      "Green and yellow",
+      "Blue and white"
+     ],
+     "why": "They stand for sky and wheat fields."
+    },
+    {
+     "level": 1,
+     "q": "Which Black Sea port is famous for its Potemkin Stairs?",
+     "a": "Odesa",
+     "wrong": [
+      "Mykolaiv",
+      "Kherson",
+      "Mariupol"
+     ],
+     "why": "A 1925 film made them famous."
+    },
+    {
+     "level": 1,
+     "q": "What is Ukraine's currency?",
+     "a": "Hryvnia",
+     "wrong": [
+      "Ruble",
+      "Złoty",
+      "Leu"
+     ],
+     "why": "It was introduced in 1996."
+    },
+    {
+     "level": 1,
+     "q": "Which crop earned Ukraine the name 'breadbasket of Europe'?",
+     "a": "Wheat",
+     "wrong": [
+      "Rice",
+      "Potatoes",
+      "Coffee"
+     ],
+     "why": "Its black soil is very fertile."
+    },
+    {
+     "level": 1,
+     "q": "Which western city has a historic centre listed by UNESCO?",
+     "a": "Lviv",
+     "wrong": [
+      "Kharkiv",
+      "Dnipro",
+      "Zaporizhzhia"
+     ],
+     "why": "It is famous for its coffee houses."
+    },
+    {
+     "level": 2,
+     "q": "Which river runs through Kyiv?",
+     "a": "Dnieper",
+     "wrong": [
+      "Dniester",
+      "Danube",
+      "Don"
+     ],
+     "why": "It is one of Europe's longest rivers."
+    },
+    {
+     "level": 2,
+     "q": "What are Ukrainian dumplings called?",
+     "a": "Varenyky",
+     "wrong": [
+      "Pelmeni",
+      "Khinkali",
+      "Manti"
+     ],
+     "why": "They are often filled with potato or cherries."
+    },
+    {
+     "level": 2,
+     "q": "What are Ukraine's wax-decorated Easter eggs called?",
+     "a": "Pysanky",
+     "wrong": [
+      "Matryoshkas",
+      "Fabergé eggs",
+      "Kokeshi"
+     ],
+     "why": "Patterns are drawn with wax before dyeing."
+    },
+    {
+     "level": 2,
+     "q": "Which embroidered shirt is a symbol of Ukrainian identity?",
+     "a": "Vyshyvanka",
+     "wrong": [
+      "Rushnyk",
+      "Kozhukh",
+      "Sarafan"
+     ],
+     "why": "Vyshyvanka Day is in May."
+    },
+    {
+     "level": 2,
+     "q": "Which band won Eurovision 2022 for Ukraine?",
+     "a": "Kalush Orchestra",
+     "wrong": [
+      "Go_A",
+      "Jamala",
+      "Verka Serduchka"
+     ],
+     "why": "They sang 'Stefania'."
+    },
+    {
+     "level": 2,
+     "q": "Which mountains rise in western Ukraine?",
+     "a": "Carpathian Mountains",
+     "wrong": [
+      "Ural Mountains",
+      "Caucasus",
+      "Alps"
+     ],
+     "why": "Hoverla is the highest peak."
+    },
+    {
+     "level": 3,
+     "q": "Which Ukrainian brothers were both world heavyweight boxing champions?",
+     "a": "Vitali and Wladimir Klitschko",
+     "wrong": [
+      "Oleksandr Usyk and Vasyl Lomachenko",
+      "Andriy Shevchenko and Serhiy Rebrov",
+      "Serhiy and Vitaliy Bubka"
+     ],
+     "why": "Vitali became mayor of Kyiv."
+    },
+    {
+     "level": 3,
+     "q": "Which Ukrainian pole vaulter broke the world record 35 times?",
+     "a": "Serhiy Bubka",
+     "wrong": [
+      "Maksym Mazuryk",
+      "Denys Yurchenko",
+      "Renaud Lavillenie"
+     ],
+     "why": "He was the first to clear 6 metres."
+    },
+    {
+     "level": 3,
+     "q": "Which cave monastery in Kyiv is a UNESCO site?",
+     "a": "Kyiv Pechersk Lavra",
+     "wrong": [
+      "Pochaiv Lavra",
+      "Sviatohirsk Lavra",
+      "Mezhyhirya"
+     ],
+     "why": "It was founded in 1051."
+    }
+   ]
+  }
+ ]
+}
