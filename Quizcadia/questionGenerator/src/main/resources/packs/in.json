@@ -1167,6 +1167,996 @@
       "Sitar"
      ],
      "why": "He played it at the Red Fort on Independence Day in 1947."
+    },
+    {
+     "q": "Which singer is called the 'Nightingale of India' in music?",
+     "a": "Lata Mangeshkar",
+     "wrong": [
+      "Asha Bhosle",
+      "Shreya Ghoshal",
+      "Alka Yagnik"
+     ],
+     "level": 1,
+     "why": "She recorded thousands of songs."
+    },
+    {
+     "q": "Which singer, Lata Mangeshkar's sister, holds a record for most studio recordings?",
+     "a": "Asha Bhosle",
+     "wrong": [
+      "Usha Mangeshkar",
+      "Shreya Ghoshal",
+      "Kavita Krishnamurthy"
+     ],
+     "level": 1,
+     "why": "Guinness recognised her in 2011."
+    },
+    {
+     "q": "Which singer was famous for songs like 'Chura Liya Hai Tumne'?",
+     "a": "Asha Bhosle",
+     "wrong": [
+      "Lata Mangeshkar",
+      "Sunidhi Chauhan",
+      "Alka Yagnik"
+     ],
+     "level": 1,
+     "why": "It is from 'Yaadon Ki Baaraat' (1973)."
+    },
+    {
+     "q": "Which singer sang 'Kya Hua Tera Wada' and 'Chaudhvin Ka Chand'?",
+     "a": "Mohammed Rafi",
+     "wrong": [
+      "Kishore Kumar",
+      "Mukesh",
+      "Manna Dey"
+     ],
+     "level": 1,
+     "why": "He sang over 7,000 songs."
+    },
+    {
+     "q": "Which singer is known for 'Tum Hi Ho' from 'Aashiqui 2'?",
+     "a": "Arijit Singh",
+     "wrong": [
+      "Sonu Nigam",
+      "Atif Aslam",
+      "Armaan Malik"
+     ],
+     "level": 1,
+     "why": "He is one of India's most-streamed artists."
+    },
+    {
+     "q": "Which singer sang 'Kal Ho Naa Ho'?",
+     "a": "Sonu Nigam",
+     "wrong": [
+      "Shaan",
+      "KK",
+      "Udit Narayan"
+     ],
+     "level": 1,
+     "why": "It won him a Filmfare Award."
+    },
+    {
+     "q": "Which composer is called the 'Mozart of Madras'?",
+     "a": "A. R. Rahman",
+     "wrong": [
+      "Ilaiyaraaja",
+      "R. D. Burman",
+      "Anirudh Ravichander"
+     ],
+     "level": 1,
+     "why": "He won two Oscars in 2009."
+    },
+    {
+     "q": "Which composer is called 'Isaignani' and has scored over 1,000 films?",
+     "a": "Ilaiyaraaja",
+     "wrong": [
+      "A. R. Rahman",
+      "M. S. Viswanathan",
+      "Deva"
+     ],
+     "level": 1,
+     "why": "He is from Tamil Nadu."
+    },
+    {
+     "q": "Which composer was known as 'Pancham Da'?",
+     "a": "R. D. Burman",
+     "wrong": [
+      "S. D. Burman",
+      "Laxmikant",
+      "Kalyanji"
+     ],
+     "level": 1,
+     "why": "He scored 'Sholay'."
+    },
+    {
+     "q": "Which instrument did Hariprasad Chaurasia make famous?",
+     "a": "Bansuri (bamboo flute)",
+     "wrong": [
+      "Sitar",
+      "Santoor",
+      "Sarod"
+     ],
+     "level": 1,
+     "why": "He is a Hindustani classical master."
+    },
+    {
+     "q": "Which instrument did Shivkumar Sharma play?",
+     "a": "Santoor",
+     "wrong": [
+      "Sitar",
+      "Sarangi",
+      "Veena"
+     ],
+     "level": 1,
+     "why": "It is a hammered dulcimer from Kashmir."
+    },
+    {
+     "q": "Which instrument did Ustad Amjad Ali Khan play?",
+     "a": "Sarod",
+     "wrong": [
+      "Sitar",
+      "Santoor",
+      "Tabla"
+     ],
+     "level": 1,
+     "why": "His family claims six generations of players."
+    },
+    {
+     "q": "Which two traditions make up Indian classical music?",
+     "a": "Hindustani and Carnatic",
+     "wrong": [
+      "Raga and Tala",
+      "Dhrupad and Khayal",
+      "Qawwali and Ghazal"
+     ],
+     "level": 1,
+     "why": "Carnatic is the southern tradition."
+    },
+    {
+     "q": "What is the melodic framework of Indian classical music called?",
+     "a": "Raga",
+     "wrong": [
+      "Tala",
+      "Sur",
+      "Taan"
+     ],
+     "level": 1,
+     "why": "Each raga has its own mood and time of day."
+    },
+    {
+     "q": "What is the rhythmic cycle of Indian classical music called?",
+     "a": "Tala",
+     "wrong": [
+      "Raga",
+      "Laya",
+      "Bol"
+     ],
+     "level": 1,
+     "why": "Teentaal has 16 beats."
+    },
+    {
+     "q": "Which pair of drums is played in Hindustani music?",
+     "a": "Tabla",
+     "wrong": [
+      "Mridangam",
+      "Dhol",
+      "Pakhawaj"
+     ],
+     "level": 1,
+     "why": "The right drum is called dayan."
+    },
+    {
+     "q": "Which barrel drum is used in Carnatic music?",
+     "a": "Mridangam",
+     "wrong": [
+      "Tabla",
+      "Dholak",
+      "Nagaswaram"
+     ],
+     "level": 1,
+     "why": "It is played with both hands."
+    },
+    {
+     "q": "Which plucked instrument is linked to the goddess Saraswati?",
+     "a": "Veena",
+     "wrong": [
+      "Sitar",
+      "Sarod",
+      "Santoor"
+     ],
+     "level": 1,
+     "why": "Carnatic players use the Saraswati veena."
+    },
+    {
+     "q": "Which drum is central to Punjabi bhangra music?",
+     "a": "Dhol",
+     "wrong": [
+      "Tabla",
+      "Mridangam",
+      "Damru"
+     ],
+     "level": 1,
+     "why": "It is struck with two sticks."
+    },
+    {
+     "q": "Which Sufi devotional music is sung at dargahs?",
+     "a": "Qawwali",
+     "wrong": [
+      "Ghazal",
+      "Bhajan",
+      "Thumri"
+     ],
+     "level": 1,
+     "why": "It is sung at Sufi shrines."
+    },
+    {
+     "q": "What are Hindu devotional songs called?",
+     "a": "Bhajans",
+     "wrong": [
+      "Qawwalis",
+      "Ghazals",
+      "Lavanis"
+     ],
+     "level": 1,
+     "why": "They are often sung in groups."
+    },
+    {
+     "q": "Which Sikh hymns are sung at gurdwaras?",
+     "a": "Kirtan (Gurbani)",
+     "wrong": [
+      "Qawwali",
+      "Bhajan",
+      "Abhang"
+     ],
+     "level": 1,
+     "why": "They come from the Guru Granth Sahib."
+    },
+    {
+     "q": "Which annual music festival in Pune began in 1953?",
+     "a": "Sawai Gandharva Bhimsen Festival",
+     "wrong": [
+      "Saptak",
+      "Dover Lane Conference",
+      "Tansen Samaroh"
+     ],
+     "level": 1,
+     "why": "Bhimsen Joshi started it."
+    },
+    {
+     "q": "Which month-long music season is held in Chennai each December?",
+     "a": "Madras Music Season",
+     "wrong": [
+      "Margazhi Utsav of Delhi",
+      "Sawai Gandharva",
+      "Hornbill Festival"
+     ],
+     "level": 1,
+     "why": "Hundreds of Carnatic concerts take place."
+    },
+    {
+     "q": "Which Indian-American musician was Ravi Shankar's daughter and a Grammy winner?",
+     "a": "Norah Jones",
+     "wrong": [
+      "Anoushka Shankar",
+      "Lisa Mishra",
+      "Raja Kumari"
+     ],
+     "level": 1,
+     "why": "She won five Grammys in 2003."
+    },
+    {
+     "q": "Which sitar player is Ravi Shankar's daughter and a Grammy nominee many times?",
+     "a": "Anoushka Shankar",
+     "wrong": [
+      "Norah Jones",
+      "Nandini Shankar",
+      "Kaushiki Chakraborty"
+     ],
+     "level": 1,
+     "why": "She lives in London."
+    },
+    {
+     "q": "Which Beatle studied the sitar with Ravi Shankar?",
+     "a": "George Harrison",
+     "wrong": [
+      "John Lennon",
+      "Paul McCartney",
+      "Ringo Starr"
+     ],
+     "level": 1,
+     "why": "He played it on 'Norwegian Wood'."
+    },
+    {
+     "q": "Which festival song by Daler Mehndi became a 1990s pop hit?",
+     "a": "Tunak Tunak Tun",
+     "wrong": [
+      "Bolo Ta Ra Ra",
+      "Ho Jayegi Balle Balle",
+      "Rang De Basanti"
+     ],
+     "level": 1,
+     "why": "Its video showed four Daler Mehndis."
+    },
+    {
+     "q": "Which singer had the 1990s Indipop hit 'Made in India'?",
+     "a": "Alisha Chinai",
+     "wrong": [
+      "Lucky Ali",
+      "Shweta Shetty",
+      "Anaida"
+     ],
+     "level": 1,
+     "why": "It was released in 1995."
+    },
+    {
+     "q": "Which singer sang 'Pal' and 'Yaaron' in the 1990s?",
+     "a": "KK",
+     "wrong": [
+      "Shaan",
+      "Lucky Ali",
+      "Sonu Nigam"
+     ],
+     "level": 1,
+     "why": "His full name was Krishnakumar Kunnath."
+    },
+    {
+     "q": "Which singer's 'O Sanam' made him an Indipop star?",
+     "a": "Lucky Ali",
+     "wrong": [
+      "KK",
+      "Shaan",
+      "Mohit Chauhan"
+     ],
+     "level": 1,
+     "why": "He is the son of comedian Mehmood."
+    },
+    {
+     "q": "Which rapper sang 'Mere Gully Mein', which inspired 'Gully Boy'?",
+     "a": "Divine and Naezy",
+     "wrong": [
+      "Badshah and Raftaar",
+      "Honey Singh and Emiway",
+      "King and Krsna"
+     ],
+     "level": 1,
+     "why": "It came out in 2015."
+    },
+    {
+     "q": "Which Punjabi singer performed at Coachella in 2023, a first for a Punjabi artist?",
+     "a": "Diljit Dosanjh",
+     "wrong": [
+      "Sidhu Moose Wala",
+      "AP Dhillon",
+      "Guru Randhawa"
+     ],
+     "level": 1,
+     "why": "He also acts in films."
+    },
+    {
+     "q": "Which Delhi fusion band sang 'Kandisa'?",
+     "a": "Indian Ocean",
+     "wrong": [
+      "Euphoria",
+      "Parikrama",
+      "Agnee"
+     ],
+     "level": 2,
+     "why": "It formed in 1990."
+    },
+    {
+     "q": "What is India's national song?",
+     "a": "Vande Mataram",
+     "wrong": [
+      "Jana Gana Mana",
+      "Saare Jahan Se Achha",
+      "Aye Mere Watan Ke Logon"
+     ],
+     "level": 1,
+     "why": "The national anthem is 'Jana Gana Mana'."
+    },
+    {
+     "q": "Which song by Lata Mangeshkar made Nehru cry in 1963?",
+     "a": "Aye Mere Watan Ke Logon",
+     "wrong": [
+      "Vande Mataram",
+      "Saare Jahan Se Achha",
+      "Mere Desh Ki Dharti"
+     ],
+     "level": 1,
+     "why": "It honoured soldiers of the 1962 war."
+    },
+    {
+     "q": "How long should India's national anthem take to sing?",
+     "a": "About 52 seconds",
+     "wrong": [
+      "About 2 minutes",
+      "About 30 seconds",
+      "About 5 minutes"
+     ],
+     "level": 1,
+     "why": "A short version takes about 20 seconds."
+    },
+    {
+     "q": "Which singer was the first Indian musician to receive the Bharat Ratna?",
+     "a": "M. S. Subbulakshmi",
+     "wrong": [
+      "Lata Mangeshkar",
+      "Ravi Shankar",
+      "Bismillah Khan"
+     ],
+     "level": 2,
+     "why": "She received it in 1998."
+    },
+    {
+     "q": "Which Carnatic singer sang the 'Venkatesa Suprabhatam' recording heard in temples?",
+     "a": "M. S. Subbulakshmi",
+     "wrong": [
+      "M. Balamuralikrishna",
+      "K. J. Yesudas",
+      "D. K. Pattammal"
+     ],
+     "level": 2,
+     "why": "It plays daily at Tirupati."
+    },
+    {
+     "q": "Which three composers are called the 'Trinity of Carnatic music'?",
+     "a": "Tyagaraja, Muthuswami Dikshitar and Syama Sastri",
+     "wrong": [
+      "Purandara Dasa, Kabir and Tulsidas",
+      "Tansen, Baiju and Haridas",
+      "Swati Tirunal, Annamacharya and Kshetrayya"
+     ],
+     "level": 2,
+     "why": "They lived in the 1700s and 1800s."
+    },
+    {
+     "q": "Which composer is called the 'father of Carnatic music'?",
+     "a": "Purandara Dasa",
+     "wrong": [
+      "Tyagaraja",
+      "Annamacharya",
+      "Swati Tirunal"
+     ],
+     "level": 2,
+     "why": "He set up its teaching method."
+    },
+    {
+     "q": "Which legendary singer was one of the 'nine jewels' of Akbar's court?",
+     "a": "Tansen",
+     "wrong": [
+      "Baiju Bawra",
+      "Haridas",
+      "Amir Khusrau"
+     ],
+     "level": 2,
+     "why": "Legend says his raga could light lamps."
+    },
+    {
+     "q": "Which Hindustani singer of the Kirana gharana was given the Bharat Ratna in 2008?",
+     "a": "Bhimsen Joshi",
+     "wrong": [
+      "Kumar Gandharva",
+      "Jasraj",
+      "Mallikarjun Mansur"
+     ],
+     "level": 2,
+     "why": "He sang 'Mile Sur Mera Tumhara'."
+    },
+    {
+     "q": "Which song promoting unity was broadcast on Doordarshan in 1988?",
+     "a": "Mile Sur Mera Tumhara",
+     "wrong": [
+      "Desh Rangila",
+      "Saare Jahan Se Achha",
+      "Hum Honge Kamyab"
+     ],
+     "level": 2,
+     "why": "Many artists sang in their own languages."
+    },
+    {
+     "q": "Which sitar player was given the Bharat Ratna in 1999?",
+     "a": "Ravi Shankar",
+     "wrong": [
+      "Vilayat Khan",
+      "Nikhil Banerjee",
+      "Shahid Parvez"
+     ],
+     "level": 2,
+     "why": "He also played at Woodstock."
+    },
+    {
+     "q": "Which singer from Kerala is called 'Gana Gandharvan'?",
+     "a": "K. J. Yesudas",
+     "wrong": [
+      "S. P. Balasubrahmanyam",
+      "M. G. Sreekumar",
+      "P. Jayachandran"
+     ],
+     "level": 2,
+     "why": "He has sung in many languages."
+    },
+    {
+     "q": "Which singer recorded over 40,000 songs across many languages, from Andhra Pradesh?",
+     "a": "S. P. Balasubrahmanyam",
+     "wrong": [
+      "K. J. Yesudas",
+      "Ilaiyaraaja",
+      "Hariharan"
+     ],
+     "level": 2,
+     "why": "He died in 2020."
+    },
+    {
+     "q": "Which singer is known as the 'Melody Queen' of the south?",
+     "a": "K. S. Chithra",
+     "wrong": [
+      "S. Janaki",
+      "Vani Jairam",
+      "Sujatha"
+     ],
+     "level": 2,
+     "why": "She has six National Awards."
+    },
+    {
+     "q": "Which composer from Tamil Nadu scored 'Why This Kolaveri Di'?",
+     "a": "Anirudh Ravichander",
+     "wrong": [
+      "A. R. Rahman",
+      "Harris Jayaraj",
+      "Yuvan Shankar Raja"
+     ],
+     "level": 2,
+     "why": "The song went viral in 2011."
+    },
+    {
+     "q": "Which song by Dhanush went viral worldwide in 2011?",
+     "a": "Why This Kolaveri Di",
+     "wrong": [
+      "Rowdy Baby",
+      "Appadi Podu",
+      "Vaathi Coming"
+     ],
+     "level": 2,
+     "why": "It is sung in 'Tanglish'."
+    },
+    {
+     "q": "Which Telugu song from 'RRR' won the Golden Globe and Oscar?",
+     "a": "Naatu Naatu",
+     "wrong": [
+      "Dosti",
+      "Komuram Bheemudo",
+      "Etthara Jenda"
+     ],
+     "level": 2,
+     "why": "M. M. Keeravani composed it."
+    },
+    {
+     "q": "Who composed 'Naatu Naatu'?",
+     "a": "M. M. Keeravani",
+     "wrong": [
+      "A. R. Rahman",
+      "Devi Sri Prasad",
+      "Thaman S"
+     ],
+     "level": 2,
+     "why": "He also scored 'Baahubali'."
+    },
+    {
+     "q": "Which ghazal singer was called the 'Ghazal King'?",
+     "a": "Jagjit Singh",
+     "wrong": [
+      "Pankaj Udhas",
+      "Talat Aziz",
+      "Hariharan"
+     ],
+     "level": 2,
+     "why": "He sang 'Hothon Se Chhoo Lo Tum'."
+    },
+    {
+     "q": "Which ghazal singer sang 'Chitthi Aayi Hai'?",
+     "a": "Pankaj Udhas",
+     "wrong": [
+      "Jagjit Singh",
+      "Anup Jalota",
+      "Talat Mahmood"
+     ],
+     "level": 2,
+     "why": "It is from the film 'Naam' (1986)."
+    },
+    {
+     "q": "Which bhajan singer is famous for 'Aisi Lagi Lagan'?",
+     "a": "Anup Jalota",
+     "wrong": [
+      "Hari Om Sharan",
+      "Jagjit Singh",
+      "Narendra Chanchal"
+     ],
+     "level": 2,
+     "why": "He is called 'Bhajan Samrat'."
+    },
+    {
+     "q": "Which folk dance song form from Maharashtra is sung with dholki?",
+     "a": "Lavani",
+     "wrong": [
+      "Abhang",
+      "Powada",
+      "Ovi"
+     ],
+     "level": 2,
+     "why": "It is fast and lively."
+    },
+    {
+     "q": "Which Marathi ballads tell of heroes like Shivaji?",
+     "a": "Powada",
+     "wrong": [
+      "Lavani",
+      "Abhang",
+      "Bharud"
+     ],
+     "level": 2,
+     "why": "They are sung by shahirs."
+    },
+    {
+     "q": "Which Bengali folk singers wander singing mystical songs?",
+     "a": "Bauls",
+     "wrong": [
+      "Kirtaniyas",
+      "Bhatiyalis",
+      "Gambhiras"
+     ],
+     "level": 2,
+     "why": "Their songs are on UNESCO's list."
+    },
+    {
+     "q": "Which Bengali songs written by Tagore are a genre of their own?",
+     "a": "Rabindra Sangeet",
+     "wrong": [
+      "Nazrul Geeti",
+      "Baul songs",
+      "Kirtan"
+     ],
+     "level": 2,
+     "why": "He wrote over 2,000 songs."
+    },
+    {
+     "q": "Which Rajasthani community of musicians plays the kamaicha?",
+     "a": "Manganiyars",
+     "wrong": [
+      "Langas",
+      "Bhopas",
+      "Kalbelias"
+     ],
+     "level": 2,
+     "why": "They sang for Rajput patrons."
+    },
+    {
+     "q": "Which bowed instrument is closest to the human voice in Hindustani music?",
+     "a": "Sarangi",
+     "wrong": [
+      "Esraj",
+      "Violin",
+      "Dilruba"
+     ],
+     "level": 2,
+     "why": "Ustad Sultan Khan was a master."
+    },
+    {
+     "q": "Which wind instrument is played at South Indian weddings and temples?",
+     "a": "Nadaswaram",
+     "wrong": [
+      "Shehnai",
+      "Bansuri",
+      "Nagphani"
+     ],
+     "level": 2,
+     "why": "It is one of the loudest double-reed instruments."
+    },
+    {
+     "q": "Which vocal style of Hindustani music is the oldest, sung in temples?",
+     "a": "Dhrupad",
+     "wrong": [
+      "Khayal",
+      "Thumri",
+      "Tappa"
+     ],
+     "level": 2,
+     "why": "The Dagar family kept it alive."
+    },
+    {
+     "q": "Which light classical style of Hindustani music is romantic and from Lucknow and Benares?",
+     "a": "Thumri",
+     "wrong": [
+      "Dhrupad",
+      "Khayal",
+      "Tarana"
+     ],
+     "level": 2,
+     "why": "Begum Akhtar and Girija Devi sang it."
+    },
+    {
+     "q": "Which singer was called 'Mallika-e-Ghazal'?",
+     "a": "Begum Akhtar",
+     "wrong": [
+      "Noor Jehan",
+      "Girija Devi",
+      "Shobha Gurtu"
+     ],
+     "level": 2,
+     "why": "She sang ghazals and thumris."
+    },
+    {
+     "q": "Which music school is called a 'gharana'?",
+     "a": "A family or school of style",
+     "wrong": [
+      "A concert hall",
+      "A drum pattern",
+      "A raga for evening"
+     ],
+     "level": 2,
+     "why": "Famous ones include Gwalior and Kirana."
+    },
+    {
+     "q": "Which is the oldest khayal gharana?",
+     "a": "Gwalior gharana",
+     "wrong": [
+      "Kirana gharana",
+      "Agra gharana",
+      "Jaipur-Atrauli gharana"
+     ],
+     "level": 2,
+     "why": "It dates from the 1800s."
+    },
+    {
+     "q": "Which Indian composer and percussionist won Grammys with Shakti?",
+     "a": "Zakir Hussain",
+     "wrong": [
+      "Trilok Gurtu",
+      "Sivamani",
+      "Bikram Ghosh"
+     ],
+     "level": 2,
+     "why": "He won three Grammys in 2024."
+    },
+    {
+     "q": "Which band with John McLaughlin mixed Indian music and jazz?",
+     "a": "Shakti",
+     "wrong": [
+      "Indian Ocean",
+      "Euphoria",
+      "Parikrama"
+     ],
+     "level": 2,
+     "why": "It formed in the 1970s."
+    },
+    {
+     "q": "Which Bengaluru-born composer won three Grammys, including for 'Divine Tides'?",
+     "a": "Ricky Kej",
+     "wrong": [
+      "A. R. Rahman",
+      "Zakir Hussain",
+      "Vishal Dadlani"
+     ],
+     "level": 2,
+     "why": "He shared one with Stewart Copeland."
+    },
+    {
+     "q": "Which pop band led by Palash Sen sang 'Maaeri'?",
+     "a": "Euphoria",
+     "wrong": [
+      "Indian Ocean",
+      "Silk Route",
+      "Strings"
+     ],
+     "level": 2,
+     "why": "Palash Sen is also a doctor."
+    },
+    {
+     "q": "Which Punjabi singer was killed in 2022 and is famous for 'So High'?",
+     "a": "Sidhu Moose Wala",
+     "wrong": [
+      "Diljit Dosanjh",
+      "AP Dhillon",
+      "Babbu Maan"
+     ],
+     "level": 2,
+     "why": "His songs keep topping charts."
+    },
+    {
+     "q": "Which Indo-Canadian artist made 'Brown Munde'?",
+     "a": "AP Dhillon",
+     "wrong": [
+      "Diljit Dosanjh",
+      "Karan Aujla",
+      "Guru Randhawa"
+     ],
+     "level": 2,
+     "why": "It came out in 2020."
+    },
+    {
+     "q": "Which musician set 'Saare Jahan Se Achha' to its best-known tune?",
+     "a": "Ravi Shankar",
+     "wrong": [
+      "Vishnu Digambar Paluskar",
+      "Salil Chowdhury",
+      "Hemant Kumar"
+     ],
+     "level": 3,
+     "why": "He composed the tune in 1945."
+    },
+    {
+     "q": "Which raga is traditionally sung at dawn?",
+     "a": "Raga Bhairav",
+     "wrong": [
+      "Raga Yaman",
+      "Raga Darbari",
+      "Raga Malkauns"
+     ],
+     "level": 3,
+     "why": "Each raga has a time of day."
+    },
+    {
+     "q": "Which raga is often taught first and sung in the evening?",
+     "a": "Raga Yaman",
+     "wrong": [
+      "Raga Bhairav",
+      "Raga Todi",
+      "Raga Lalit"
+     ],
+     "level": 3,
+     "why": "It came into Hindustani music from Persia."
+    },
+    {
+     "q": "Which raga is linked to the monsoon?",
+     "a": "Raga Megh Malhar",
+     "wrong": [
+      "Raga Deepak",
+      "Raga Bhairavi",
+      "Raga Kalyan"
+     ],
+     "level": 3,
+     "why": "Legends say it can bring rain."
+    },
+    {
+     "q": "Which raga is said to light lamps when sung?",
+     "a": "Raga Deepak",
+     "wrong": [
+      "Raga Malhar",
+      "Raga Bhairav",
+      "Raga Yaman"
+     ],
+     "level": 3,
+     "why": "It is linked to Tansen."
+    },
+    {
+     "q": "Which raga often closes a concert?",
+     "a": "Raga Bhairavi",
+     "wrong": [
+      "Raga Yaman",
+      "Raga Bhairav",
+      "Raga Malkauns"
+     ],
+     "level": 3,
+     "why": "It is called the queen of ragas."
+    },
+    {
+     "q": "What is the 16-beat tala most common in Hindustani music called?",
+     "a": "Teentaal",
+     "wrong": [
+      "Jhaptaal",
+      "Ektaal",
+      "Rupak"
+     ],
+     "level": 3,
+     "why": "It has three claps and one wave."
+    },
+    {
+     "q": "What is the 8-beat tala of Carnatic music called?",
+     "a": "Adi tala",
+     "wrong": [
+      "Rupaka tala",
+      "Misra Chapu",
+      "Khanda Chapu"
+     ],
+     "level": 3,
+     "why": "It is the most common tala."
+    },
+    {
+     "q": "What is the system of 72 parent scales in Carnatic music called?",
+     "a": "Melakarta",
+     "wrong": [
+      "Thaat",
+      "Gamaka",
+      "Alapana"
+     ],
+     "level": 3,
+     "why": "Venkatamakhin set it out."
+    },
+    {
+     "q": "How many parent scales (thaats) did Bhatkhande use in Hindustani music?",
+     "a": "Ten",
+     "wrong": [
+      "Seven",
+      "Twelve",
+      "72"
+     ],
+     "level": 3,
+     "why": "He classified ragas in the early 1900s."
+    },
+    {
+     "q": "Which slow, unaccompanied opening of a raga performance is called?",
+     "a": "Alap",
+     "wrong": [
+      "Jor",
+      "Jhala",
+      "Gat"
+     ],
+     "level": 3,
+     "why": "It builds the raga's mood."
+    },
+    {
+     "q": "Which Hindustani singer of the Mewati gharana lived to 90 and has a planet named after him?",
+     "a": "Pandit Jasraj",
+     "wrong": [
+      "Bhimsen Joshi",
+      "Kumar Gandharva",
+      "Kishori Amonkar"
+     ],
+     "level": 3,
+     "why": "An asteroid was named after him in 2019."
+    },
+    {
+     "q": "Which Carnatic singer and composer created new ragas and sang until his 80s?",
+     "a": "M. Balamuralikrishna",
+     "wrong": [
+      "T. N. Seshagopalan",
+      "Maharajapuram Santhanam",
+      "Semmangudi Srinivasa Iyer"
+     ],
+     "level": 3,
+     "why": "He was a child prodigy."
+    },
+    {
+     "q": "Which Kerala king was also a famous composer?",
+     "a": "Swati Tirunal",
+     "wrong": [
+      "Marthanda Varma",
+      "Shaktan Thampuran",
+      "Chithira Thirunal"
+     ],
+     "level": 3,
+     "why": "He ruled Travancore in the 1800s."
+    },
+    {
+     "q": "Which 15th-century saint from Tirupati wrote thousands of songs to Venkateswara?",
+     "a": "Annamacharya",
+     "wrong": [
+      "Purandara Dasa",
+      "Tyagaraja",
+      "Kshetrayya"
+     ],
+     "level": 3,
+     "why": "Copper plates kept many of his songs."
+    },
+    {
+     "q": "Who sang 'Ae Mere Humsafar' in 'Qayamat Se Qayamat Tak'?",
+     "a": "Udit Narayan and Alka Yagnik",
+     "wrong": [
+      "Kumar Sanu and Sadhana Sargam",
+      "Mohammed Aziz and Kavita Krishnamurthy",
+      "Shabbir Kumar and Lata Mangeshkar"
+     ],
+     "level": 3,
+     "why": "The film came out in 1988."
+    },
+    {
+     "q": "Which singer holds a record for 28 songs recorded in one day?",
+     "a": "Kumar Sanu",
+     "wrong": [
+      "Udit Narayan",
+      "Sonu Nigam",
+      "Kishore Kumar"
+     ],
+     "level": 3,
+     "why": "He set it in 1993."
     }
    ]
   },
@@ -1349,6 +2339,765 @@
       "2019"
      ],
      "why": "It is set in Tamil Nadu's Mudumalai reserve."
+    },
+    {
+     "q": "Which 1975 film made Gabbar Singh a household name?",
+     "a": "Sholay",
+     "wrong": [
+      "Deewaar",
+      "Zanjeer",
+      "Don"
+     ],
+     "level": 1,
+     "why": "It ran for five years in a Mumbai cinema."
+    },
+    {
+     "q": "Which 1995 romance ran for over 1,000 weeks at Mumbai's Maratha Mandir?",
+     "a": "Dilwale Dulhania Le Jayenge",
+     "wrong": [
+      "Kuch Kuch Hota Hai",
+      "Hum Aapke Hain Koun..!",
+      "Maine Pyar Kiya"
+     ],
+     "level": 1,
+     "why": "It is called DDLJ."
+    },
+    {
+     "q": "Which actor is called the 'King of Bollywood'?",
+     "a": "Shah Rukh Khan",
+     "wrong": [
+      "Salman Khan",
+      "Aamir Khan",
+      "Hrithik Roshan"
+     ],
+     "level": 1,
+     "why": "He debuted in films in 1992."
+    },
+    {
+     "q": "Which actor starred in 'Lagaan', 'Dangal' and '3 Idiots'?",
+     "a": "Aamir Khan",
+     "wrong": [
+      "Shah Rukh Khan",
+      "Salman Khan",
+      "Akshay Kumar"
+     ],
+     "level": 1,
+     "why": "He is called 'Mr Perfectionist'."
+    },
+    {
+     "q": "Which 2001 film about a cricket match against the British was nominated for an Oscar?",
+     "a": "Lagaan",
+     "wrong": [
+      "Iqbal",
+      "Chak De! India",
+      "Dangal"
+     ],
+     "level": 1,
+     "why": "It was set in 1893."
+    },
+    {
+     "q": "Which film about a wrestler and his daughters became India's highest grosser abroad?",
+     "a": "Dangal",
+     "wrong": [
+      "Sultan",
+      "Mary Kom",
+      "Bajrangi Bhaijaan"
+     ],
+     "level": 1,
+     "why": "It was hugely popular in China."
+    },
+    {
+     "q": "Which Telugu epic film was released in two parts in 2015 and 2017?",
+     "a": "Baahubali",
+     "wrong": [
+      "RRR",
+      "Pushpa",
+      "Magadheera"
+     ],
+     "level": 1,
+     "why": "It was directed by S. S. Rajamouli."
+    },
+    {
+     "q": "Which Telugu director made both 'Baahubali' films and 'RRR'?",
+     "a": "S. S. Rajamouli",
+     "wrong": [
+      "Prashanth Neel",
+      "Sukumar",
+      "Shankar"
+     ],
+     "level": 1,
+     "why": "He is known for big-budget epics."
+    },
+    {
+     "q": "Which film's question 'Why did Kattappa kill Baahubali?' became a craze?",
+     "a": "Baahubali: The Beginning",
+     "wrong": [
+      "RRR",
+      "Magadheera",
+      "Eega"
+     ],
+     "level": 1,
+     "why": "The answer came in part two."
+    },
+    {
+     "q": "Which Tamil superstar is called 'Thalaivar'?",
+     "a": "Rajinikanth",
+     "wrong": [
+      "Kamal Haasan",
+      "Vijay",
+      "Ajith Kumar"
+     ],
+     "level": 1,
+     "why": "He began as a bus conductor."
+    },
+    {
+     "q": "Which actor starred in 'Pushpa' as a sandalwood smuggler?",
+     "a": "Allu Arjun",
+     "wrong": [
+      "Ram Charan",
+      "Prabhas",
+      "Jr NTR"
+     ],
+     "level": 1,
+     "why": "His line 'Pushpa, I hate tears' became famous."
+    },
+    {
+     "q": "Which actors played the leads in 'RRR'?",
+     "a": "N. T. Rama Rao Jr. and Ram Charan",
+     "wrong": [
+      "Prabhas and Rana Daggubati",
+      "Allu Arjun and Mahesh Babu",
+      "Yash and Prithviraj"
+     ],
+     "level": 1,
+     "why": "They play two freedom fighters."
+    },
+    {
+     "q": "Which actor played the lead in 'Baahubali'?",
+     "a": "Prabhas",
+     "wrong": [
+      "Rana Daggubati",
+      "Ram Charan",
+      "Mahesh Babu"
+     ],
+     "level": 1,
+     "why": "Rana Daggubati played the villain."
+    },
+    {
+     "q": "Which award is called India's Oscars?",
+     "a": "Filmfare Awards",
+     "wrong": [
+      "National Film Awards",
+      "IIFA Awards",
+      "Zee Cine Awards"
+     ],
+     "level": 1,
+     "why": "They began in 1954."
+    },
+    {
+     "q": "Which actress starred in 'Mughal-e-Azam' as Anarkali?",
+     "a": "Madhubala",
+     "wrong": [
+      "Meena Kumari",
+      "Nargis",
+      "Waheeda Rehman"
+     ],
+     "level": 1,
+     "why": "The film came out in 1960."
+    },
+    {
+     "q": "Which actress played Radha in 'Mother India'?",
+     "a": "Nargis",
+     "wrong": [
+      "Madhubala",
+      "Meena Kumari",
+      "Vyjayanthimala"
+     ],
+     "level": 1,
+     "why": "She married co-star Sunil Dutt."
+    },
+    {
+     "q": "Who made India's first full-length feature film, 'Raja Harishchandra' (1913)?",
+     "a": "Dadasaheb Phalke",
+     "wrong": [
+      "Ardeshir Irani",
+      "V. Shantaram",
+      "Bimal Roy"
+     ],
+     "level": 1,
+     "why": "It was a silent film."
+    },
+    {
+     "q": "Which was India's first sound film, in 1931?",
+     "a": "Alam Ara",
+     "wrong": [
+      "Raja Harishchandra",
+      "Devdas",
+      "Achhut Kanya"
+     ],
+     "level": 1,
+     "why": "Ardeshir Irani made it."
+    },
+    {
+     "q": "Which actress is called 'Dream Girl'?",
+     "a": "Hema Malini",
+     "wrong": [
+      "Rekha",
+      "Sridevi",
+      "Madhuri Dixit"
+     ],
+     "level": 1,
+     "why": "She starred as Basanti in 'Sholay'."
+    },
+    {
+     "q": "Which actress was famous for 'Hawa Hawai' and 'Chandni'?",
+     "a": "Sridevi",
+     "wrong": [
+      "Madhuri Dixit",
+      "Juhi Chawla",
+      "Rekha"
+     ],
+     "level": 1,
+     "why": "She died in 2018."
+    },
+    {
+     "q": "Which actress danced to 'Ek Do Teen' in 'Tezaab'?",
+     "a": "Madhuri Dixit",
+     "wrong": [
+      "Sridevi",
+      "Juhi Chawla",
+      "Karisma Kapoor"
+     ],
+     "level": 1,
+     "why": "Saroj Khan choreographed it."
+    },
+    {
+     "q": "Which actress became Miss World in 1994 and starred in 'Devdas'?",
+     "a": "Aishwarya Rai",
+     "wrong": [
+      "Sushmita Sen",
+      "Priyanka Chopra",
+      "Diana Hayden"
+     ],
+     "level": 1,
+     "why": "She played Paro."
+    },
+    {
+     "q": "Which actress won Miss World 2000 and later worked in Hollywood?",
+     "a": "Priyanka Chopra",
+     "wrong": [
+      "Aishwarya Rai",
+      "Lara Dutta",
+      "Diana Hayden"
+     ],
+     "level": 1,
+     "why": "She starred in 'Quantico'."
+    },
+    {
+     "q": "Which actor is called 'Bhaijaan' by fans?",
+     "a": "Salman Khan",
+     "wrong": [
+      "Shah Rukh Khan",
+      "Aamir Khan",
+      "Sanjay Dutt"
+     ],
+     "level": 1,
+     "why": "He starred in 'Bajrangi Bhaijaan'."
+    },
+    {
+     "q": "Which Akshay Kumar film is about making cheap sanitary pads?",
+     "a": "PadMan",
+     "wrong": [
+      "Toilet: Ek Prem Katha",
+      "Airlift",
+      "Kesari"
+     ],
+     "level": 1,
+     "why": "It is based on Arunachalam Muruganantham."
+    },
+    {
+     "q": "Which Hindi film series features 'Chulbul Pandey'?",
+     "a": "Dabangg",
+     "wrong": [
+      "Singham",
+      "Golmaal",
+      "Dhoom"
+     ],
+     "level": 1,
+     "why": "Salman Khan plays him."
+    },
+    {
+     "q": "Which Rohit Shetty cop film stars Ajay Devgn?",
+     "a": "Singham",
+     "wrong": [
+      "Dabangg",
+      "Simmba",
+      "Sooryavanshi"
+     ],
+     "level": 1,
+     "why": "It is a remake of a Tamil film."
+    },
+    {
+     "q": "Which film about a hockey coach stars Shah Rukh Khan?",
+     "a": "Chak De! India",
+     "wrong": [
+      "Lagaan",
+      "Gold",
+      "Soorma"
+     ],
+     "level": 1,
+     "why": "He coaches the women's team."
+    },
+    {
+     "q": "Which 2023 Shah Rukh Khan film earned over ₹1,000 crore worldwide?",
+     "a": "Jawan",
+     "wrong": [
+      "Pathaan",
+      "Dunki",
+      "Tiger 3"
+     ],
+     "level": 1,
+     "why": "Atlee directed it."
+    },
+    {
+     "q": "Which Kannada film franchise stars Yash as Rocky Bhai?",
+     "a": "KGF",
+     "wrong": [
+      "Kantara",
+      "Ugramm",
+      "Salaar"
+     ],
+     "level": 1,
+     "why": "Its second part came out in 2022."
+    },
+    {
+     "q": "Which Kannada film about a forest god became a 2022 hit?",
+     "a": "Kantara",
+     "wrong": [
+      "KGF",
+      "Charlie 777",
+      "Vikrant Rona"
+     ],
+     "level": 1,
+     "why": "Rishab Shetty directed and starred."
+    },
+    {
+     "q": "Which Malayalam film industry is nicknamed 'Mollywood'?",
+     "a": "Malayalam cinema",
+     "wrong": [
+      "Marathi cinema",
+      "Manipuri cinema",
+      "Mizo cinema"
+     ],
+     "level": 1,
+     "why": "It is based in Kochi."
+    },
+    {
+     "q": "In which year did Satyajit Ray receive an honorary Oscar?",
+     "a": "1992",
+     "wrong": [
+      "1985",
+      "1977",
+      "1999"
+     ],
+     "level": 2,
+     "why": "He accepted it from his hospital bed in Kolkata."
+    },
+    {
+     "q": "Which 1955 Satyajit Ray film is the first of the Apu Trilogy?",
+     "a": "Pather Panchali",
+     "wrong": [
+      "Aparajito",
+      "Apur Sansar",
+      "Charulata"
+     ],
+     "level": 2,
+     "why": "It won a prize at Cannes in 1956."
+    },
+    {
+     "q": "Which director made 'Do Bigha Zamin' (1953)?",
+     "a": "Bimal Roy",
+     "wrong": [
+      "Guru Dutt",
+      "Raj Kapoor",
+      "Mehboob Khan"
+     ],
+     "level": 2,
+     "why": "It won a prize at Cannes."
+    },
+    {
+     "q": "Which director-actor made 'Pyaasa' and 'Kaagaz Ke Phool'?",
+     "a": "Guru Dutt",
+     "wrong": [
+      "Raj Kapoor",
+      "Dev Anand",
+      "Bimal Roy"
+     ],
+     "level": 2,
+     "why": "'Pyaasa' is on many best-film lists."
+    },
+    {
+     "q": "Which actor-director was called 'the Showman' and made 'Awaara'?",
+     "a": "Raj Kapoor",
+     "wrong": [
+      "Dilip Kumar",
+      "Dev Anand",
+      "Guru Dutt"
+     ],
+     "level": 2,
+     "why": "'Awaara' was a hit in the Soviet Union."
+    },
+    {
+     "q": "Which actor was called the 'Tragedy King'?",
+     "a": "Dilip Kumar",
+     "wrong": [
+      "Raj Kapoor",
+      "Dev Anand",
+      "Rajesh Khanna"
+     ],
+     "level": 2,
+     "why": "He played Salim in 'Mughal-e-Azam'."
+    },
+    {
+     "q": "Which actor was Bollywood's first superstar, with 15 straight hits?",
+     "a": "Rajesh Khanna",
+     "wrong": [
+      "Amitabh Bachchan",
+      "Dharmendra",
+      "Shammi Kapoor"
+     ],
+     "level": 2,
+     "why": "He starred in 'Anand'."
+    },
+    {
+     "q": "Which actor says 'Mere paas maa hai' in 'Deewaar'?",
+     "a": "Shashi Kapoor",
+     "wrong": [
+      "Amitabh Bachchan",
+      "Pran",
+      "Shatrughan Sinha"
+     ],
+     "level": 2,
+     "why": "He played the honest brother, Ravi."
+    },
+    {
+     "q": "In which film does Amitabh Bachchan play Vijay opposite his brother Ravi?",
+     "a": "Deewaar",
+     "wrong": [
+      "Zanjeer",
+      "Trishul",
+      "Sholay"
+     ],
+     "level": 2,
+     "why": "Salim–Javed wrote it."
+    },
+    {
+     "q": "Which writing duo wrote 'Sholay', 'Deewaar' and 'Zanjeer'?",
+     "a": "Salim–Javed",
+     "wrong": [
+      "Laxmikant–Pyarelal",
+      "Shankar–Jaikishan",
+      "Vishal–Shekhar"
+     ],
+     "level": 2,
+     "why": "They created the 'angry young man'."
+    },
+    {
+     "q": "Which 1957 Mehboob Khan film was India's first Oscar nominee?",
+     "a": "Mother India",
+     "wrong": [
+      "Mughal-e-Azam",
+      "Do Bigha Zamin",
+      "Pyaasa"
+     ],
+     "level": 2,
+     "why": "It lost by one vote, legend says."
+    },
+    {
+     "q": "Which 1988 Mira Nair film about Mumbai's street children was Oscar-nominated?",
+     "a": "Salaam Bombay!",
+     "wrong": [
+      "Monsoon Wedding",
+      "Lagaan",
+      "Taare Zameen Par"
+     ],
+     "level": 2,
+     "why": "It won a prize at Cannes."
+    },
+    {
+     "q": "Which Mira Nair film won the Golden Lion at Venice in 2001?",
+     "a": "Monsoon Wedding",
+     "wrong": [
+      "Salaam Bombay!",
+      "The Namesake",
+      "Mississippi Masala"
+     ],
+     "level": 2,
+     "why": "It is set at a Punjabi wedding in Delhi."
+    },
+    {
+     "q": "Which actress won the 2016 National Award and starred in 'Queen'?",
+     "a": "Kangana Ranaut",
+     "wrong": [
+      "Vidya Balan",
+      "Deepika Padukone",
+      "Alia Bhatt"
+     ],
+     "level": 2,
+     "why": "She won for 'Queen' and 'Tanu Weds Manu Returns'."
+    },
+    {
+     "q": "Which actress starred in 'Gully Boy' and 'Gangubai Kathiawadi'?",
+     "a": "Alia Bhatt",
+     "wrong": [
+      "Deepika Padukone",
+      "Kiara Advani",
+      "Shraddha Kapoor"
+     ],
+     "level": 2,
+     "why": "She won the National Award for 'Gangubai'."
+    },
+    {
+     "q": "Which film about a Mumbai street rapper was India's 2020 Oscar entry?",
+     "a": "Gully Boy",
+     "wrong": [
+      "Article 15",
+      "Super 30",
+      "Uri"
+     ],
+     "level": 2,
+     "why": "Ranveer Singh played the lead."
+    },
+    {
+     "q": "Which Kerala actor is called 'Lalettan'?",
+     "a": "Mohanlal",
+     "wrong": [
+      "Mammootty",
+      "Fahadh Faasil",
+      "Dulquer Salmaan"
+     ],
+     "level": 2,
+     "why": "He has won five National Awards."
+    },
+    {
+     "q": "Which actor starred in Mani Ratnam's 'Nayakan'?",
+     "a": "Kamal Haasan",
+     "wrong": [
+      "Rajinikanth",
+      "Mammootty",
+      "Chiranjeevi"
+     ],
+     "level": 2,
+     "why": "It was inspired by 'The Godfather'."
+    },
+    {
+     "q": "Which director made 'Roja', 'Bombay' and 'Dil Se..'?",
+     "a": "Mani Ratnam",
+     "wrong": [
+      "Shankar",
+      "Bala",
+      "Vetrimaaran"
+     ],
+     "level": 2,
+     "why": "He often worked with A. R. Rahman."
+    },
+    {
+     "q": "Which Telugu star is called 'Megastar'?",
+     "a": "Chiranjeevi",
+     "wrong": [
+      "Prabhas",
+      "Mahesh Babu",
+      "Nagarjuna"
+     ],
+     "level": 2,
+     "why": "Ram Charan is his son."
+    },
+    {
+     "q": "Which 2024 film by Payal Kapadia won the Grand Prix at Cannes?",
+     "a": "All We Imagine as Light",
+     "wrong": [
+      "Laapataa Ladies",
+      "Girls Will Be Girls",
+      "Santosh"
+     ],
+     "level": 2,
+     "why": "It follows nurses in Mumbai."
+    },
+    {
+     "q": "Which Kiran Rao film was India's Oscar entry for 2025?",
+     "a": "Laapataa Ladies",
+     "wrong": [
+      "All We Imagine as Light",
+      "12th Fail",
+      "Animal"
+     ],
+     "level": 2,
+     "why": "It is about two swapped brides."
+    },
+    {
+     "q": "Which film about a UPSC aspirant became a 2023 sleeper hit?",
+     "a": "12th Fail",
+     "wrong": [
+      "Laapataa Ladies",
+      "Sam Bahadur",
+      "Zwigato"
+     ],
+     "level": 2,
+     "why": "Vidhu Vinod Chopra directed it."
+    },
+    {
+     "q": "Which streaming crime series is set in Mirzapur's underworld?",
+     "a": "Mirzapur",
+     "wrong": [
+      "Sacred Games",
+      "Paatal Lok",
+      "Delhi Crime"
+     ],
+     "level": 2,
+     "why": "Kaleen Bhaiya rules the town."
+    },
+    {
+     "q": "Which TV epic of 1987 emptied India's streets every Sunday?",
+     "a": "Ramayan",
+     "wrong": [
+      "Mahabharat",
+      "Hum Log",
+      "Buniyaad"
+     ],
+     "level": 2,
+     "why": "Ramanand Sagar made it."
+    },
+    {
+     "q": "Which B. R. Chopra series retold the Mahabharata from 1988?",
+     "a": "Mahabharat",
+     "wrong": [
+      "Ramayan",
+      "Chanakya",
+      "Shri Krishna"
+     ],
+     "level": 2,
+     "why": "Harish Bhimani voiced 'Samay'."
+    },
+    {
+     "q": "Which was India's first TV soap opera, in 1984?",
+     "a": "Hum Log",
+     "wrong": [
+      "Buniyaad",
+      "Malgudi Days",
+      "Nukkad"
+     ],
+     "level": 2,
+     "why": "It ran for 154 episodes."
+    },
+    {
+     "q": "Which quiz show did Amitabh Bachchan host from 2000?",
+     "a": "Kaun Banega Crorepati",
+     "wrong": [
+      "Sawaal Dus Crore Ka",
+      "Jeeto Pakistan",
+      "Dus Ka Dum"
+     ],
+     "level": 2,
+     "why": "It is based on 'Who Wants to Be a Millionaire?'."
+    },
+    {
+     "q": "Which TV show for children featured 'Shaktimaan'?",
+     "a": "Shaktimaan",
+     "wrong": [
+      "Chandrakanta",
+      "Vikram Aur Betaal",
+      "Alif Laila"
+     ],
+     "level": 2,
+     "why": "Mukesh Khanna played the hero."
+    },
+    {
+     "q": "Which 1925 silent film about Buddha was an Indo-German production?",
+     "a": "Prem Sanyas (The Light of Asia)",
+     "wrong": [
+      "Raja Harishchandra",
+      "Achhut Kanya",
+      "Karma"
+     ],
+     "level": 3,
+     "why": "Franz Osten directed it."
+    },
+    {
+     "q": "Which Bengali director made 'Meghe Dhaka Tara'?",
+     "a": "Ritwik Ghatak",
+     "wrong": [
+      "Mrinal Sen",
+      "Satyajit Ray",
+      "Tapan Sinha"
+     ],
+     "level": 3,
+     "why": "It was released in 1960."
+    },
+    {
+     "q": "Which Bengali director made 'Bhuvan Shome', a key film of Indian parallel cinema?",
+     "a": "Mrinal Sen",
+     "wrong": [
+      "Ritwik Ghatak",
+      "Shyam Benegal",
+      "Mani Kaul"
+     ],
+     "level": 3,
+     "why": "It came out in 1969."
+    },
+    {
+     "q": "Which director made 'Ankur' and 'Manthan'?",
+     "a": "Shyam Benegal",
+     "wrong": [
+      "Govind Nihalani",
+      "Mrinal Sen",
+      "Basu Chatterjee"
+     ],
+     "level": 3,
+     "why": "'Manthan' was funded by 500,000 farmers."
+    },
+    {
+     "q": "Which Malayalam director made 'Elippathayam'?",
+     "a": "Adoor Gopalakrishnan",
+     "wrong": [
+      "G. Aravindan",
+      "Shaji N. Karun",
+      "John Abraham"
+     ],
+     "level": 3,
+     "why": "It won a British Film Institute award."
+    },
+    {
+     "q": "Which film won the first National Award for Best Feature Film, in 1954?",
+     "a": "Shyamchi Aai",
+     "wrong": [
+      "Do Bigha Zamin",
+      "Pather Panchali",
+      "Jagte Raho"
+     ],
+     "level": 3,
+     "why": "It is a Marathi film by P. K. Atre."
+    },
+    {
+     "q": "Which Assamese director made 'Village Rockstars'?",
+     "a": "Rima Das",
+     "wrong": [
+      "Jahnu Barua",
+      "Bhaskar Hazarika",
+      "Manju Borah"
+     ],
+     "level": 3,
+     "why": "It was India's 2019 Oscar entry."
+    },
+    {
+     "q": "Which Tamil director made 'Visaranai', India's Oscar entry in 2017?",
+     "a": "Vetrimaaran",
+     "wrong": [
+      "Bala",
+      "Pa. Ranjith",
+      "Mysskin"
+     ],
+     "level": 3,
+     "why": "He also made 'Asuran'."
     }
    ]
   },
@@ -4667,6 +6416,28 @@
      ],
      "level": 3,
      "why": "It is named after the town of Paithan."
+    },
+    {
+     "q": "Which art form uses intricate cut paper in Mathura?",
+     "a": "Sanjhi",
+     "wrong": [
+      "Kirigami",
+      "Papel picado",
+      "Wycinanki"
+     ],
+     "level": 3,
+     "why": "It is linked to Krishna temples."
+    },
+    {
+     "q": "Which inlay work of semi-precious stones in marble decorates the Taj Mahal?",
+     "a": "Pietra dura (parchin kari)",
+     "wrong": [
+      "Mosaic",
+      "Terrazzo",
+      "Bidri"
+     ],
+     "level": 3,
+     "why": "Craftsmen in Agra still practise it."
     }
    ]
   },
@@ -5652,6 +7423,127 @@
      ],
      "level": 3,
      "why": "India has the Indian and Chinese pangolins."
+    },
+    {
+     "q": "Which bird is Delhi's state bird?",
+     "a": "House sparrow",
+     "wrong": [
+      "Peacock",
+      "Pigeon",
+      "Myna"
+     ],
+     "level": 2,
+     "why": "Its numbers have fallen in cities."
+    },
+    {
+     "q": "Which bird is Punjab's state bird?",
+     "a": "Northern goshawk (baaz)",
+     "wrong": [
+      "Peacock",
+      "Sarus crane",
+      "Black partridge"
+     ],
+     "level": 2,
+     "why": "It is linked to Guru Gobind Singh."
+    },
+    {
+     "q": "Which antelope is Andhra Pradesh's state animal?",
+     "a": "Blackbuck",
+     "wrong": [
+      "Nilgai",
+      "Chinkara",
+      "Chousingha"
+     ],
+     "level": 2,
+     "why": "It is called krishna jinka there."
+    },
+    {
+     "q": "Which animal is Gujarat's state animal?",
+     "a": "Asiatic lion",
+     "wrong": [
+      "Indian wild ass",
+      "Blackbuck",
+      "Leopard"
+     ],
+     "level": 2,
+     "why": "Gir is its only wild home."
+    },
+    {
+     "q": "Which animal is Assam's state animal?",
+     "a": "One-horned rhinoceros",
+     "wrong": [
+      "Elephant",
+      "Clouded leopard",
+      "Gaur"
+     ],
+     "level": 2,
+     "why": "Kaziranga protects most of them."
+    },
+    {
+     "q": "Which animal is Kerala's state animal?",
+     "a": "Indian elephant",
+     "wrong": [
+      "Nilgiri tahr",
+      "Lion-tailed macaque",
+      "Gaur"
+     ],
+     "level": 2,
+     "why": "Kerala has many temple elephants."
+    },
+    {
+     "q": "Which antelope with four horns lives in central India?",
+     "a": "Chousingha",
+     "wrong": [
+      "Blackbuck",
+      "Chinkara",
+      "Nilgai"
+     ],
+     "level": 2,
+     "why": "It is the only four-horned antelope."
+    },
+    {
+     "q": "Which venomous snakes make up India's 'Big Four'?",
+     "a": "Cobra, krait, Russell's viper and saw-scaled viper",
+     "wrong": [
+      "King cobra, python, krait and mamba",
+      "Cobra, viper, rat snake and sea snake",
+      "Krait, python, cobra and boa"
+     ],
+     "level": 3,
+     "why": "They cause most snakebite deaths."
+    },
+    {
+     "q": "Which Mumbai institute, founded in 1899, has long made antivenom?",
+     "a": "Haffkine Institute",
+     "wrong": [
+      "Pasteur Institute of India",
+      "National Institute of Virology",
+      "Central Drug Research Institute"
+     ],
+     "level": 3,
+     "why": "It is named after Waldemar Haffkine."
+    },
+    {
+     "q": "Which antelope is Punjab's state animal?",
+     "a": "Blackbuck",
+     "wrong": [
+      "Sambar",
+      "Chital",
+      "Barasingha"
+     ],
+     "level": 3,
+     "why": "It roams the state's farmland."
+    },
+    {
+     "q": "Which large lizard can grow over 1.5 m and lives across India?",
+     "a": "Bengal monitor",
+     "wrong": [
+      "Komodo dragon",
+      "Iguana",
+      "Tegu"
+     ],
+     "level": 3,
+     "why": "It is protected by law."
     }
    ]
   },
