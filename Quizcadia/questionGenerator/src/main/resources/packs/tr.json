@@ -1,0 +1,346 @@
+{
+ "category": "Türkiye",
+ "country": "TR",
+ "topics": [
+  {
+   "name": "Türkiye: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who founded the Republic of Türkiye in 1923?",
+     "a": "Mustafa Kemal Atatürk",
+     "wrong": [
+      "İsmet İnönü",
+      "Celal Bayar",
+      "Adnan Menderes"
+     ],
+     "why": "'Atatürk' means 'Father of the Turks'."
+    },
+    {
+     "level": 1,
+     "q": "Which empire ruled from Istanbul for over 450 years?",
+     "a": "Ottoman Empire",
+     "wrong": [
+      "Byzantine Empire",
+      "Seljuk Empire",
+      "Persian Empire"
+     ],
+     "why": "It ended in 1922."
+    },
+    {
+     "level": 1,
+     "q": "In which year did the Ottomans conquer Constantinople?",
+     "a": "1453",
+     "wrong": [
+      "1071",
+      "1517",
+      "1683"
+     ],
+     "why": "Sultan Mehmed II took the city."
+    },
+    {
+     "level": 1,
+     "q": "What was Istanbul called under the Byzantine Empire?",
+     "a": "Constantinople",
+     "wrong": [
+      "Ankara",
+      "Smyrna",
+      "Nicaea"
+     ],
+     "why": "It was named after Emperor Constantine."
+    },
+    {
+     "level": 1,
+     "q": "Which 1915 campaign did Ottoman forces win against the Allies?",
+     "a": "Gallipoli",
+     "wrong": [
+      "Kut",
+      "Sarıkamış",
+      "Megiddo"
+     ],
+     "why": "Atatürk made his name there."
+    },
+    {
+     "level": 1,
+     "q": "Which Ottoman sultan was called 'the Magnificent'?",
+     "a": "Suleiman I",
+     "wrong": [
+      "Mehmed II",
+      "Selim I",
+      "Murad IV"
+     ],
+     "why": "He ruled from 1520 to 1566."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient city of the Trojan War is in Türkiye?",
+     "a": "Troy",
+     "wrong": [
+      "Ephesus",
+      "Pergamon",
+      "Miletus"
+     ],
+     "why": "It is near Çanakkale."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient city with the Library of Celsus is near Izmir?",
+     "a": "Ephesus",
+     "wrong": [
+      "Troy",
+      "Perge",
+      "Side"
+     ],
+     "why": "Its Temple of Artemis was a Wonder of the World."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Turkish women win the vote in national elections?",
+     "a": "1934",
+     "wrong": [
+      "1923",
+      "1945",
+      "1960"
+     ],
+     "why": "This was before many European countries."
+    },
+    {
+     "level": 2,
+     "q": "Which 1071 battle opened Anatolia to the Seljuk Turks?",
+     "a": "Manzikert",
+     "wrong": [
+      "Kosovo",
+      "Ankara",
+      "Lepanto"
+     ],
+     "why": "They defeated the Byzantine emperor."
+    },
+    {
+     "level": 2,
+     "q": "Which Ottoman architect designed the Süleymaniye Mosque?",
+     "a": "Mimar Sinan",
+     "wrong": [
+      "Sedefkâr Mehmed Ağa",
+      "Mimar Kemaleddin",
+      "Davut Ağa"
+     ],
+     "why": "He designed hundreds of buildings."
+    },
+    {
+     "level": 2,
+     "q": "Which city became Türkiye's capital in 1923?",
+     "a": "Ankara",
+     "wrong": [
+      "Istanbul",
+      "Izmir",
+      "Bursa"
+     ],
+     "why": "Atatürk's mausoleum, Anıtkabir, is there."
+    },
+    {
+     "level": 3,
+     "q": "Which prehistoric site in the southeast is about 11,000 years old?",
+     "a": "Göbekli Tepe",
+     "wrong": [
+      "Çatalhöyük",
+      "Hattusa",
+      "Nemrut Dağı"
+     ],
+     "why": "It is far older than Stonehenge."
+    },
+    {
+     "level": 3,
+     "q": "What was the capital of the Hittite Empire?",
+     "a": "Hattusa",
+     "wrong": [
+      "Troy",
+      "Gordion",
+      "Sardis"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which Ottoman sultan conquered Egypt in 1517?",
+     "a": "Selim I",
+     "wrong": [
+      "Suleiman I",
+      "Mehmed II",
+      "Bayezid II"
+     ],
+     "why": "The Ottomans then claimed the caliphate."
+    }
+   ]
+  },
+  {
+   "name": "Türkiye: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Turkish city lies on two continents?",
+     "a": "Istanbul",
+     "wrong": [
+      "Ankara",
+      "Izmir",
+      "Antalya"
+     ],
+     "why": "The Bosphorus divides Europe and Asia there."
+    },
+    {
+     "level": 1,
+     "q": "Which domed building in Istanbul was built as a church in 537?",
+     "a": "Hagia Sophia",
+     "wrong": [
+      "Blue Mosque",
+      "Topkapı Palace",
+      "Chora Church"
+     ],
+     "why": "It later became a mosque."
+    },
+    {
+     "level": 1,
+     "q": "Which region is famous for 'fairy chimneys' and hot-air balloons?",
+     "a": "Cappadocia",
+     "wrong": [
+      "Pamukkale",
+      "Lycia",
+      "Thrace"
+     ],
+     "why": "People carved homes into the soft rock."
+    },
+    {
+     "level": 1,
+     "q": "Which white travertine terraces are near Denizli?",
+     "a": "Pamukkale",
+     "wrong": [
+      "Cappadocia",
+      "Ölüdeniz",
+      "Mount Ararat"
+     ],
+     "why": "Its name means 'cotton castle'."
+    },
+    {
+     "level": 1,
+     "q": "Which strong coffee is served unfiltered in small cups?",
+     "a": "Turkish coffee",
+     "wrong": [
+      "Espresso",
+      "Arabic qahwa",
+      "Cortado"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "Which sweet pastry is made of filo, nuts and syrup?",
+     "a": "Baklava",
+     "wrong": [
+      "Lokum",
+      "Künefe",
+      "Halva"
+     ],
+     "why": "Gaziantep's baklava is famous."
+    },
+    {
+     "level": 1,
+     "q": "What is Türkiye's currency?",
+     "a": "Turkish lira",
+     "wrong": [
+      "Euro",
+      "Dinar",
+      "Rial"
+     ],
+     "why": "Its symbol is ₺."
+    },
+    {
+     "level": 2,
+     "q": "Which spicy minced-meat kebab is named after a southern city?",
+     "a": "Adana kebab",
+     "wrong": [
+      "Döner kebab",
+      "İskender kebab",
+      "Şiş kebab"
+     ],
+     "why": "It is grilled on a wide skewer."
+    },
+    {
+     "level": 2,
+     "q": "What is Türkiye's highest mountain?",
+     "a": "Mount Ararat",
+     "wrong": [
+      "Mount Erciyes",
+      "Uludağ",
+      "Mount Nemrut"
+     ],
+     "why": "Tradition says Noah's Ark landed there."
+    },
+    {
+     "level": 2,
+     "q": "Which Istanbul palace was the Ottoman sultans' main home for centuries?",
+     "a": "Topkapı Palace",
+     "wrong": [
+      "Dolmabahçe Palace",
+      "Yıldız Palace",
+      "Beylerbeyi Palace"
+     ],
+     "why": "It is now a museum."
+    },
+    {
+     "level": 2,
+     "q": "What is lokum called in English?",
+     "a": "Turkish delight",
+     "wrong": [
+      "Baklava",
+      "Halva",
+      "Marzipan"
+     ],
+     "why": "It is dusted with sugar."
+    },
+    {
+     "level": 2,
+     "q": "Which Sufi order is famous for its spinning ceremony?",
+     "a": "Mevlevi (whirling dervishes)",
+     "wrong": [
+      "Bektashi",
+      "Naqshbandi",
+      "Qadiri"
+     ],
+     "why": "The poet Rumi inspired it in Konya."
+    },
+    {
+     "level": 3,
+     "q": "Which Turkish author won the Nobel Prize in Literature in 2006?",
+     "a": "Orhan Pamuk",
+     "wrong": [
+      "Yaşar Kemal",
+      "Nazım Hikmet",
+      "Elif Şafak"
+     ],
+     "why": "He wrote 'My Name Is Red'."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain-top tomb has giant stone heads of gods and kings?",
+     "a": "Mount Nemrut",
+     "wrong": [
+      "Mount Ararat",
+      "Mount Erciyes",
+      "Uludağ"
+     ],
+     "why": "King Antiochus I built it."
+    },
+    {
+     "level": 3,
+     "q": "Which oil-wrestling festival in Edirne is one of the oldest sports events?",
+     "a": "Kırkpınar",
+     "wrong": [
+      "Karakucak",
+      "Aba Güreşi",
+      "Kurash"
+     ],
+     "why": "It dates back at least to the 1360s."
+    }
+   ]
+  }
+ ]
+}
