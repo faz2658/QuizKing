@@ -2378,6 +2378,83 @@
      ],
      "level": 3,
      "why": "It is one of Bengal's best-loved poems."
+    },
+    {
+     "q": "Which novel by Kiran Nagarkar is set in Rajput Mewar?",
+     "a": "Cuckold",
+     "wrong": [
+      "Ravan and Eddie",
+      "Seven Sixes Are Forty-Three",
+      "God's Little Soldier"
+     ],
+     "level": 2,
+     "why": "It won the Sahitya Akademi Award."
+    },
+    {
+     "q": "Who wrote 'Shantaram', a novel set in Mumbai?",
+     "a": "Gregory David Roberts",
+     "wrong": [
+      "Vikas Swarup",
+      "Rohinton Mistry",
+      "Suketu Mehta"
+     ],
+     "level": 2,
+     "why": "It is based on his escape from an Australian prison."
+    },
+    {
+     "q": "Which Rohinton Mistry novel is set during the Emergency?",
+     "a": "A Fine Balance",
+     "wrong": [
+      "Such a Long Journey",
+      "Family Matters",
+      "Swimming Lessons"
+     ],
+     "level": 2,
+     "why": "It was shortlisted for the Booker Prize."
+    },
+    {
+     "q": "Who wrote 'Q & A', the novel behind 'Slumdog Millionaire'?",
+     "a": "Vikas Swarup",
+     "wrong": [
+      "Chetan Bhagat",
+      "Aravind Adiga",
+      "Vikram Chandra"
+     ],
+     "level": 2,
+     "why": "He was an Indian diplomat."
+    },
+    {
+     "q": "Which author wrote 'The Palace of Illusions', the Mahabharata told by Draupadi?",
+     "a": "Chitra Banerjee Divakaruni",
+     "wrong": [
+      "Amish Tripathi",
+      "Kavita Kané",
+      "Devdutt Pattanaik"
+     ],
+     "level": 2,
+     "why": "It was published in 2008."
+    },
+    {
+     "q": "Which author wrote 'Sacred Games' set in Mumbai's underworld?",
+     "a": "Vikram Chandra",
+     "wrong": [
+      "Vikram Seth",
+      "Salman Rushdie",
+      "Suketu Mehta"
+     ],
+     "level": 2,
+     "why": "It became a Netflix series."
+    },
+    {
+     "q": "Which Malayalam author wrote 'Khasakkinte Itihasam'?",
+     "a": "O. V. Vijayan",
+     "wrong": [
+      "M. T. Vasudevan Nair",
+      "Vaikom Muhammad Basheer",
+      "Thakazhi Sivasankara Pillai"
+     ],
+     "level": 3,
+     "why": "It means 'The Legends of Khasak'."
     }
    ]
   },
@@ -3495,13 +3572,7 @@
      ],
      "level": 3,
      "why": "He took office in 1977."
-    }
-   ]
-  },
-  {
-   "category": "Art",
-   "name": "Art",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "Who is known as the chief architect of the Indian Constitution?",
@@ -3512,6 +3583,1090 @@
       "Jawaharlal Nehru"
      ],
      "why": "He chaired the Drafting Committee."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "q": "Which white marble mausoleum in Agra is India's most famous building?",
+     "a": "Taj Mahal",
+     "wrong": [
+      "Red Fort",
+      "Humayun's Tomb",
+      "Qutb Minar"
+     ],
+     "level": 1,
+     "why": "It was finished around 1653."
+    },
+    {
+     "q": "Which city is home to the Taj Mahal?",
+     "a": "Agra",
+     "wrong": [
+      "Delhi",
+      "Jaipur",
+      "Lucknow"
+     ],
+     "level": 1,
+     "why": "It stands on the Yamuna River."
+    },
+    {
+     "q": "Which red sandstone fort in Delhi hosts the Independence Day speech?",
+     "a": "Red Fort",
+     "wrong": [
+      "Agra Fort",
+      "Purana Qila",
+      "Salimgarh Fort"
+     ],
+     "level": 1,
+     "why": "The Prime Minister speaks from its ramparts."
+    },
+    {
+     "q": "Which brick minaret in Delhi is one of the tallest in the world?",
+     "a": "Qutb Minar",
+     "wrong": [
+      "Charminar",
+      "Jama Masjid minaret",
+      "Chand Minar"
+     ],
+     "level": 1,
+     "why": "It is about 73 m tall."
+    },
+    {
+     "q": "Which Hyderabad monument has four minarets at its corners?",
+     "a": "Charminar",
+     "wrong": [
+      "Qutb Minar",
+      "Buland Darwaza",
+      "Golconda Fort"
+     ],
+     "level": 1,
+     "why": "It was built in 1591."
+    },
+    {
+     "q": "Which arch on Mumbai's waterfront was built for a royal visit in 1911?",
+     "a": "Gateway of India",
+     "wrong": [
+      "India Gate",
+      "Buland Darwaza",
+      "Teen Darwaza"
+     ],
+     "level": 1,
+     "why": "It was finished in 1924."
+    },
+    {
+     "q": "Which war memorial arch stands on Rajpath (Kartavya Path) in New Delhi?",
+     "a": "India Gate",
+     "wrong": [
+      "Gateway of India",
+      "Buland Darwaza",
+      "Victory Arch"
+     ],
+     "level": 1,
+     "why": "Edwin Lutyens designed it."
+    },
+    {
+     "q": "Which caves in Maharashtra are famous for Buddhist wall paintings?",
+     "a": "Ajanta Caves",
+     "wrong": [
+      "Elephanta Caves",
+      "Ellora Caves",
+      "Badami Caves"
+     ],
+     "level": 1,
+     "why": "They date from the 2nd century BC to about AD 480."
+    },
+    {
+     "q": "Which cave complex has the Kailasa temple carved from a single rock?",
+     "a": "Ellora Caves",
+     "wrong": [
+      "Ajanta Caves",
+      "Elephanta Caves",
+      "Udayagiri Caves"
+     ],
+     "level": 1,
+     "why": "It holds Hindu, Buddhist and Jain caves."
+    },
+    {
+     "q": "Which sun temple in Odisha is shaped like a giant chariot?",
+     "a": "Konark Sun Temple",
+     "wrong": [
+      "Jagannath Temple",
+      "Lingaraja Temple",
+      "Mukteshvara Temple"
+     ],
+     "level": 1,
+     "why": "It has 24 carved stone wheels."
+    },
+    {
+     "q": "Which group of temples in Madhya Pradesh is famous for its carvings?",
+     "a": "Khajuraho",
+     "wrong": [
+      "Sanchi",
+      "Mandu",
+      "Orchha"
+     ],
+     "level": 1,
+     "why": "They were built by the Chandela kings."
+    },
+    {
+     "q": "Which Buddhist monument in Madhya Pradesh has a great stupa built by Ashoka?",
+     "a": "Sanchi Stupa",
+     "wrong": [
+      "Dhamek Stupa",
+      "Mahabodhi Temple",
+      "Amaravati Stupa"
+     ],
+     "level": 1,
+     "why": "Its carved gateways are called toranas."
+    },
+    {
+     "q": "Which Mumbai island has caves with a giant three-headed Shiva?",
+     "a": "Elephanta",
+     "wrong": [
+      "Salsette",
+      "Madh",
+      "Gharapuri Fort"
+     ],
+     "level": 1,
+     "why": "The sculpture is called Trimurti."
+    },
+    {
+     "q": "Which pink city's palace has a honeycomb front with 953 windows?",
+     "a": "Hawa Mahal, Jaipur",
+     "wrong": [
+      "City Palace, Udaipur",
+      "Amber Fort",
+      "Jal Mahal"
+     ],
+     "level": 1,
+     "why": "Royal women watched street life from it."
+    },
+    {
+     "q": "Which Delhi tomb inspired the design of the Taj Mahal?",
+     "a": "Humayun's Tomb",
+     "wrong": [
+      "Safdarjung's Tomb",
+      "Itimad-ud-Daulah",
+      "Lodhi Tomb"
+     ],
+     "level": 1,
+     "why": "It was finished in 1570."
+    },
+    {
+     "q": "Which lotus-shaped building in Delhi is a Baháʼí house of worship?",
+     "a": "Lotus Temple",
+     "wrong": [
+      "Akshardham",
+      "ISKCON Temple",
+      "Birla Mandir"
+     ],
+     "level": 1,
+     "why": "It has 27 marble petals."
+    },
+    {
+     "q": "Which giant statue of Sardar Patel in Gujarat is the tallest in the world?",
+     "a": "Statue of Unity",
+     "wrong": [
+      "Statue of Equality",
+      "Mother Mary statue",
+      "Spring Temple Buddha"
+     ],
+     "level": 1,
+     "why": "It is 182 m tall."
+    },
+    {
+     "q": "Which Golden Temple in Amritsar is the holiest Sikh shrine?",
+     "a": "Harmandir Sahib",
+     "wrong": [
+      "Akal Takht",
+      "Bangla Sahib",
+      "Hazur Sahib"
+     ],
+     "level": 1,
+     "why": "Its upper floors are covered in gold."
+    },
+    {
+     "q": "Which folk painting style from Bihar uses bright colours and patterns?",
+     "a": "Madhubani",
+     "wrong": [
+      "Warli",
+      "Pattachitra",
+      "Gond"
+     ],
+     "level": 1,
+     "why": "It is also called Mithila painting."
+    },
+    {
+     "q": "Which tribe of Maharashtra paints stick figures in white on mud walls?",
+     "a": "Warli",
+     "wrong": [
+      "Gond",
+      "Bhil",
+      "Santhal"
+     ],
+     "level": 1,
+     "why": "The paintings show daily life and dance."
+    },
+    {
+     "q": "Which classical dance comes from Tamil Nadu?",
+     "a": "Bharatanatyam",
+     "wrong": [
+      "Kathak",
+      "Odissi",
+      "Kathakali"
+     ],
+     "level": 1,
+     "why": "It was once performed in temples."
+    },
+    {
+     "q": "Which classical dance from Kerala uses elaborate green face make-up?",
+     "a": "Kathakali",
+     "wrong": [
+      "Mohiniyattam",
+      "Kuchipudi",
+      "Manipuri"
+     ],
+     "level": 1,
+     "why": "Dancers tell stories from the epics."
+    },
+    {
+     "q": "Which classical dance of north India is known for fast spins and footwork?",
+     "a": "Kathak",
+     "wrong": [
+      "Bharatanatyam",
+      "Odissi",
+      "Sattriya"
+     ],
+     "level": 1,
+     "why": "Dancers wear ankle bells."
+    },
+    {
+     "q": "Which classical dance comes from Odisha?",
+     "a": "Odissi",
+     "wrong": [
+      "Kuchipudi",
+      "Manipuri",
+      "Sattriya"
+     ],
+     "level": 1,
+     "why": "Its key pose is called tribhangi."
+    },
+    {
+     "q": "Which classical dance is named after a village in Andhra Pradesh?",
+     "a": "Kuchipudi",
+     "wrong": [
+      "Kathakali",
+      "Bharatanatyam",
+      "Mohiniyattam"
+     ],
+     "level": 1,
+     "why": "Dancers sometimes perform on a brass plate."
+    },
+    {
+     "q": "Which colourful patterns of coloured powder are drawn on floors at Diwali?",
+     "a": "Rangoli",
+     "wrong": [
+      "Mehendi",
+      "Batik",
+      "Tanjore painting"
+     ],
+     "level": 1,
+     "why": "In the south it is called kolam."
+    },
+    {
+     "q": "Which body art uses henna paste for weddings and festivals?",
+     "a": "Mehendi",
+     "wrong": [
+      "Rangoli",
+      "Tattoo",
+      "Alta"
+     ],
+     "level": 1,
+     "why": "The paste leaves an orange-brown stain."
+    },
+    {
+     "q": "Who designed India's national flag in its first form?",
+     "a": "Pingali Venkayya",
+     "wrong": [
+      "Rabindranath Tagore",
+      "Abanindranath Tagore",
+      "Nandalal Bose"
+     ],
+     "level": 1,
+     "why": "He showed a design to Gandhi in 1921."
+    },
+    {
+     "q": "Which artist decorated the original pages of India's Constitution?",
+     "a": "Nandalal Bose",
+     "wrong": [
+      "Raja Ravi Varma",
+      "M. F. Husain",
+      "Amrita Sher-Gil"
+     ],
+     "level": 1,
+     "why": "His students helped him."
+    },
+    {
+     "q": "Which painter is famous for pictures of goddesses in a realistic European style?",
+     "a": "Raja Ravi Varma",
+     "wrong": [
+      "Abanindranath Tagore",
+      "Jamini Roy",
+      "S. H. Raza"
+     ],
+     "level": 1,
+     "why": "His prints spread across India."
+    },
+    {
+     "q": "Which Hungarian-Indian painter is often called India's Frida Kahlo?",
+     "a": "Amrita Sher-Gil",
+     "wrong": [
+      "Anjolie Ela Menon",
+      "Arpita Singh",
+      "Nalini Malani"
+     ],
+     "level": 2,
+     "why": "She died in 1941, aged 28."
+    },
+    {
+     "q": "Which painter was called the 'Picasso of India'?",
+     "a": "M. F. Husain",
+     "wrong": [
+      "S. H. Raza",
+      "F. N. Souza",
+      "Tyeb Mehta"
+     ],
+     "level": 2,
+     "why": "He was famous for painting horses."
+    },
+    {
+     "q": "Which painter is known for the 'Bindu', a black circle?",
+     "a": "S. H. Raza",
+     "wrong": [
+      "M. F. Husain",
+      "Akbar Padamsee",
+      "V. S. Gaitonde"
+     ],
+     "level": 2,
+     "why": "He lived in France for decades."
+    },
+    {
+     "q": "Which group of modern artists was founded in Bombay in 1947?",
+     "a": "Progressive Artists' Group",
+     "wrong": [
+      "Bengal School",
+      "Calcutta Group",
+      "Baroda Group"
+     ],
+     "level": 2,
+     "why": "Husain, Raza and Souza were members."
+    },
+    {
+     "q": "Which art movement did Abanindranath Tagore lead?",
+     "a": "Bengal School",
+     "wrong": [
+      "Progressive Artists' Group",
+      "Company School",
+      "Kalighat school"
+     ],
+     "level": 2,
+     "why": "It looked back to Indian traditions."
+    },
+    {
+     "q": "Which painting style from Kolkata showed gods and street life in bold lines?",
+     "a": "Kalighat painting",
+     "wrong": [
+      "Pattachitra",
+      "Tanjore painting",
+      "Kangra painting"
+     ],
+     "level": 2,
+     "why": "It was sold to pilgrims near the Kali temple."
+    },
+    {
+     "q": "Which painter drew on Bengal's folk art in simple flat shapes?",
+     "a": "Jamini Roy",
+     "wrong": [
+      "Abanindranath Tagore",
+      "Nandalal Bose",
+      "Ganesh Pyne"
+     ],
+     "level": 2,
+     "why": "He gave up European styles in the 1920s."
+    },
+    {
+     "q": "Which South Indian painting style uses gold leaf and gems?",
+     "a": "Tanjore painting",
+     "wrong": [
+      "Mysore painting",
+      "Pattachitra",
+      "Kalamkari"
+     ],
+     "level": 2,
+     "why": "It began in Thanjavur."
+    },
+    {
+     "q": "Which cloth painting from Odisha shows Jagannath stories?",
+     "a": "Pattachitra",
+     "wrong": [
+      "Kalamkari",
+      "Phad",
+      "Pichwai"
+     ],
+     "level": 2,
+     "why": "Its name means 'cloth picture'."
+    },
+    {
+     "q": "Which hand-painted cloth art from Andhra Pradesh uses a pen?",
+     "a": "Kalamkari",
+     "wrong": [
+      "Madhubani",
+      "Phad",
+      "Pichwai"
+     ],
+     "level": 2,
+     "why": "'Kalam' means pen."
+    },
+    {
+     "q": "Which Rajasthani scroll paintings are used by storytellers?",
+     "a": "Phad",
+     "wrong": [
+      "Pichwai",
+      "Tanjore",
+      "Kalighat"
+     ],
+     "level": 2,
+     "why": "They tell of folk heroes like Pabuji."
+    },
+    {
+     "q": "Which Nathdwara paintings hang behind images of Krishna?",
+     "a": "Pichwai",
+     "wrong": [
+      "Phad",
+      "Kalamkari",
+      "Madhubani"
+     ],
+     "level": 2,
+     "why": "They change with the seasons."
+    },
+    {
+     "q": "Which tribal art of Madhya Pradesh uses dots and lines to fill animals?",
+     "a": "Gond art",
+     "wrong": [
+      "Warli",
+      "Saura",
+      "Pithora"
+     ],
+     "level": 2,
+     "why": "Jangarh Singh Shyam made it famous."
+    },
+    {
+     "q": "Which Mughal emperor's court produced the illustrated 'Hamzanama'?",
+     "a": "Akbar",
+     "wrong": [
+      "Babur",
+      "Jahangir",
+      "Aurangzeb"
+     ],
+     "level": 2,
+     "why": "It had about 1,400 large paintings."
+    },
+    {
+     "q": "Which Mughal emperor was famous for paintings of birds and animals?",
+     "a": "Jahangir",
+     "wrong": [
+      "Akbar",
+      "Shah Jahan",
+      "Aurangzeb"
+     ],
+     "level": 2,
+     "why": "His artist Mansur painted a famous turkey."
+    },
+    {
+     "q": "Which hill painting school is known for Krishna and Radha love scenes?",
+     "a": "Kangra",
+     "wrong": [
+      "Basohli",
+      "Mewar",
+      "Bundi"
+     ],
+     "level": 2,
+     "why": "It flourished in Himachal Pradesh."
+    },
+    {
+     "q": "Which Rajput school painted the 'Bani Thani', called India's Mona Lisa?",
+     "a": "Kishangarh",
+     "wrong": [
+      "Mewar",
+      "Bundi",
+      "Marwar"
+     ],
+     "level": 2,
+     "why": "It shows a court singer."
+    },
+    {
+     "q": "Which architect designed much of New Delhi in the 1910s–30s?",
+     "a": "Edwin Lutyens",
+     "wrong": [
+      "Herbert Baker",
+      "Le Corbusier",
+      "Laurie Baker"
+     ],
+     "level": 2,
+     "why": "The area is called Lutyens' Delhi."
+    },
+    {
+     "q": "Which Swiss-French architect planned the city of Chandigarh?",
+     "a": "Le Corbusier",
+     "wrong": [
+      "Edwin Lutyens",
+      "Louis Kahn",
+      "Frank Lloyd Wright"
+     ],
+     "level": 2,
+     "why": "Its Capitol Complex is a UNESCO site."
+    },
+    {
+     "q": "Which Indian architect won the Pritzker Prize in 2018?",
+     "a": "Balkrishna Doshi",
+     "wrong": [
+      "Charles Correa",
+      "Laurie Baker",
+      "Raj Rewal"
+     ],
+     "level": 2,
+     "why": "He worked with Le Corbusier."
+    },
+    {
+     "q": "Which architect designed the Jawahar Kala Kendra in Jaipur and the Kanchanjunga Apartments?",
+     "a": "Charles Correa",
+     "wrong": [
+      "B. V. Doshi",
+      "Raj Rewal",
+      "Hafeez Contractor"
+     ],
+     "level": 2,
+     "why": "He was a leader of modern Indian architecture."
+    },
+    {
+     "q": "Which British-born architect built low-cost brick homes in Kerala?",
+     "a": "Laurie Baker",
+     "wrong": [
+      "Edwin Lutyens",
+      "Herbert Baker",
+      "Geoffrey Bawa"
+     ],
+     "level": 2,
+     "why": "He was called 'the Gandhi of architecture'."
+    },
+    {
+     "q": "Which Gujarat stepwell has seven levels of carvings?",
+     "a": "Rani ki Vav",
+     "wrong": [
+      "Adalaj Stepwell",
+      "Chand Baori",
+      "Agrasen ki Baoli"
+     ],
+     "level": 2,
+     "why": "It is pictured on the ₹100 note."
+    },
+    {
+     "q": "Which deep stepwell in Rajasthan has 3,500 steps?",
+     "a": "Chand Baori",
+     "wrong": [
+      "Rani ki Vav",
+      "Toorji ka Jhalra",
+      "Raniji ki Baori"
+     ],
+     "level": 2,
+     "why": "It is in Abhaneri village."
+    },
+    {
+     "q": "Which temple in Thanjavur, built by Rajaraja Chola, has a huge tower?",
+     "a": "Brihadeeswarar Temple",
+     "wrong": [
+      "Meenakshi Temple",
+      "Kailasanathar Temple",
+      "Ramanathaswamy Temple"
+     ],
+     "level": 2,
+     "why": "It was finished in 1010."
+    },
+    {
+     "q": "Which Madurai temple is famous for its colourful gopuram towers?",
+     "a": "Meenakshi Temple",
+     "wrong": [
+      "Brihadeeswarar Temple",
+      "Srirangam Temple",
+      "Kapaleeshwarar Temple"
+     ],
+     "level": 2,
+     "why": "It has 14 gopurams."
+    },
+    {
+     "q": "Which group of rock-cut temples is in Mamallapuram?",
+     "a": "Shore Temple and rathas",
+     "wrong": [
+      "Badami caves",
+      "Pattadakal",
+      "Aihole"
+     ],
+     "level": 2,
+     "why": "The Pallavas built them."
+    },
+    {
+     "q": "Which 17-metre stone statue of Bahubali stands in Karnataka?",
+     "a": "Gommateshwara at Shravanabelagola",
+     "wrong": [
+      "Statue of Unity",
+      "Hanuman of Shimla",
+      "Nandi of Lepakshi"
+     ],
+     "level": 2,
+     "why": "It was carved around 983."
+    },
+    {
+     "q": "Which Hoysala temple at Belur is famous for detailed carvings?",
+     "a": "Chennakeshava Temple",
+     "wrong": [
+      "Hoysaleswara Temple",
+      "Virupaksha Temple",
+      "Vittala Temple"
+     ],
+     "level": 2,
+     "why": "It was finished in 1117."
+    },
+    {
+     "q": "Which stone chariot is a symbol of Hampi?",
+     "a": "The stone chariot at Vittala Temple",
+     "wrong": [
+      "Konark chariot",
+      "Ratha of Mamallapuram",
+      "Puri chariot"
+     ],
+     "level": 2,
+     "why": "It appears on the ₹50 note."
+    },
+    {
+     "q": "Which Jain temples on Mount Abu are known for white marble carving?",
+     "a": "Dilwara Temples",
+     "wrong": [
+      "Ranakpur Temple",
+      "Palitana Temples",
+      "Shikharji"
+     ],
+     "level": 2,
+     "why": "They date from the 11th to 13th centuries."
+    },
+    {
+     "q": "Which Jain temple in Rajasthan has 1,444 carved pillars, all different?",
+     "a": "Ranakpur Temple",
+     "wrong": [
+      "Dilwara Temples",
+      "Sonagiri",
+      "Lodurva"
+     ],
+     "level": 2,
+     "why": "It is dedicated to Adinath."
+    },
+    {
+     "q": "Which Mughal city near Agra was built by Akbar and later abandoned?",
+     "a": "Fatehpur Sikri",
+     "wrong": [
+      "Mandu",
+      "Hampi",
+      "Champaner"
+     ],
+     "level": 2,
+     "why": "Its Buland Darwaza is a huge gateway."
+    },
+    {
+     "q": "Which giant gateway at Fatehpur Sikri celebrates Akbar's victory in Gujarat?",
+     "a": "Buland Darwaza",
+     "wrong": [
+      "Gateway of India",
+      "Delhi Darwaza",
+      "Teen Darwaza"
+     ],
+     "level": 2,
+     "why": "It is about 54 m tall."
+    },
+    {
+     "q": "Which Delhi mosque, built by Shah Jahan, is one of India's largest?",
+     "a": "Jama Masjid",
+     "wrong": [
+      "Moti Masjid",
+      "Quwwat-ul-Islam",
+      "Fatehpuri Masjid"
+     ],
+     "level": 2,
+     "why": "Its courtyard holds 25,000 people."
+    },
+    {
+     "q": "Which Mumbai railway station is a Gothic-style UNESCO site?",
+     "a": "Chhatrapati Shivaji Maharaj Terminus",
+     "wrong": [
+      "Mumbai Central",
+      "Churchgate",
+      "Dadar"
+     ],
+     "level": 2,
+     "why": "It was called Victoria Terminus."
+    },
+    {
+     "q": "Which Kolkata marble building honours Queen Victoria?",
+     "a": "Victoria Memorial",
+     "wrong": [
+      "Writers' Building",
+      "Raj Bhavan",
+      "Marble Palace"
+     ],
+     "level": 2,
+     "why": "It opened in 1921."
+    },
+    {
+     "q": "Which Akshardham temple complex is in Delhi?",
+     "a": "Swaminarayan Akshardham",
+     "wrong": [
+      "ISKCON",
+      "Birla Mandir",
+      "Lotus Temple"
+     ],
+     "level": 2,
+     "why": "It opened in 2005."
+    },
+    {
+     "q": "Which Ayodhya temple was opened in January 2024?",
+     "a": "Ram Mandir",
+     "wrong": [
+      "Kashi Vishwanath Corridor",
+      "Somnath Temple",
+      "Akshardham"
+     ],
+     "level": 2,
+     "why": "It is built in the Nagara style."
+    },
+    {
+     "q": "Which school of art did the Kushan kingdom develop under Greek influence?",
+     "a": "Gandhara art",
+     "wrong": [
+      "Mathura art",
+      "Amaravati art",
+      "Gupta art"
+     ],
+     "level": 3,
+     "why": "It produced early Buddha statues."
+    },
+    {
+     "q": "Which red sandstone school made early Buddha and Jain images?",
+     "a": "Mathura art",
+     "wrong": [
+      "Gandhara art",
+      "Pala art",
+      "Chola art"
+     ],
+     "level": 3,
+     "why": "It flourished under the Kushans."
+    },
+    {
+     "q": "Which dynasty is famous for bronze statues of Shiva as Nataraja?",
+     "a": "Chola",
+     "wrong": [
+      "Pallava",
+      "Pandya",
+      "Hoysala"
+     ],
+     "level": 3,
+     "why": "The lost-wax method was used."
+    },
+    {
+     "q": "Which method is used to cast Chola bronzes?",
+     "a": "Lost-wax casting",
+     "wrong": [
+      "Sand casting",
+      "Die casting",
+      "Forging"
+     ],
+     "level": 3,
+     "why": "A wax model is covered in clay and melted out."
+    },
+    {
+     "q": "Which bronze 'Dancing Girl' was found at Mohenjo-daro?",
+     "a": "A bronze statuette of a girl",
+     "wrong": [
+      "A stone priest-king",
+      "A terracotta bull",
+      "A clay mother goddess"
+     ],
+     "level": 3,
+     "why": "It is about 4,500 years old."
+    },
+    {
+     "q": "Which Indus figure in steatite is called the 'Priest-King'?",
+     "a": "A bearded man with a trefoil robe",
+     "wrong": [
+      "A bronze dancer",
+      "A clay bull",
+      "A stone lion"
+     ],
+     "level": 3,
+     "why": "It was found at Mohenjo-daro."
+    },
+    {
+     "q": "Which Ashokan pillar's lion capital is India's national emblem?",
+     "a": "Sarnath",
+     "wrong": [
+      "Vaishali",
+      "Sanchi",
+      "Lauriya Nandangarh"
+     ],
+     "level": 3,
+     "why": "Four lions stand back to back."
+    },
+    {
+     "q": "Which early Buddhist cave at Karla has a famous wooden-style hall?",
+     "a": "Chaitya hall at Karla",
+     "wrong": [
+      "Viharas of Ajanta",
+      "Barabar caves",
+      "Bhaja caves"
+     ],
+     "level": 3,
+     "why": "It is about 2,000 years old."
+    },
+    {
+     "q": "Which Bihar caves are the oldest surviving rock-cut caves in India?",
+     "a": "Barabar Caves",
+     "wrong": [
+      "Ajanta Caves",
+      "Udayagiri Caves",
+      "Ellora Caves"
+     ],
+     "level": 3,
+     "why": "They date from Ashoka's time."
+    },
+    {
+     "q": "Which Pallava king began the Mamallapuram monuments?",
+     "a": "Narasimhavarman I",
+     "wrong": [
+      "Mahendravarman I",
+      "Rajasimha",
+      "Nandivarman II"
+     ],
+     "level": 3,
+     "why": "The town is named after him, 'Mamalla'."
+    },
+    {
+     "q": "Which huge rock relief at Mamallapuram shows the 'Descent of the Ganges'?",
+     "a": "Arjuna's Penance",
+     "wrong": [
+      "Krishna's Butter Ball",
+      "Varaha Cave",
+      "Shore Temple"
+     ],
+     "level": 3,
+     "why": "It is 27 m long."
+    },
+    {
+     "q": "Which Chalukya site has temples in both north and south Indian styles?",
+     "a": "Pattadakal",
+     "wrong": [
+      "Badami",
+      "Aihole",
+      "Hampi"
+     ],
+     "level": 3,
+     "why": "It is a UNESCO site in Karnataka."
+    },
+    {
+     "q": "Which temple style has curved towers called shikharas?",
+     "a": "Nagara style",
+     "wrong": [
+      "Dravida style",
+      "Vesara style",
+      "Indo-Islamic style"
+     ],
+     "level": 3,
+     "why": "It is common in north India."
+    },
+    {
+     "q": "Which temple style has pyramid towers called vimanas?",
+     "a": "Dravida style",
+     "wrong": [
+      "Nagara style",
+      "Vesara style",
+      "Indo-Islamic style"
+     ],
+     "level": 3,
+     "why": "It is common in Tamil Nadu."
+    },
+    {
+     "q": "Which painter made 'Three Girls', which won a gold medal in 1937?",
+     "a": "Amrita Sher-Gil",
+     "wrong": [
+      "Jamini Roy",
+      "Raja Ravi Varma",
+      "Nandalal Bose"
+     ],
+     "level": 3,
+     "why": "It hangs in the National Gallery of Modern Art."
+    },
+    {
+     "q": "Which artist painted the 'Medieval Saints' mural at Hindi Bhavan, Santiniketan?",
+     "a": "Benode Behari Mukherjee",
+     "wrong": [
+      "Nandalal Bose",
+      "Ram Kinkar Baij",
+      "K. G. Subramanyan"
+     ],
+     "level": 3,
+     "why": "He finished it in 1947."
+    },
+    {
+     "q": "Which Amrita Sher-Gil painting sold for a record ₹61.8 crore in 2023?",
+     "a": "The Story Teller",
+     "wrong": [
+      "Three Girls",
+      "Bride's Toilet",
+      "Village Scene"
+     ],
+     "level": 3,
+     "why": "It was the most expensive Indian artwork at the time."
+    },
+    {
+     "q": "Which sculptor made the bronze 'Dandi March' statue in Delhi?",
+     "a": "Debiprasad Roy Chowdhury",
+     "wrong": [
+      "Ram Kinkar Baij",
+      "Ram V. Sutar",
+      "Sankho Chaudhuri"
+     ],
+     "level": 3,
+     "why": "It stands on Sardar Patel Marg."
+    },
+    {
+     "q": "Which sculptor designed the Statue of Unity?",
+     "a": "Ram V. Sutar",
+     "wrong": [
+      "Ram Kinkar Baij",
+      "Anish Kapoor",
+      "Sudarsan Pattnaik"
+     ],
+     "level": 3,
+     "why": "He was over 90 when it opened."
+    },
+    {
+     "q": "Which Mumbai-born sculptor made 'Cloud Gate' in Chicago?",
+     "a": "Anish Kapoor",
+     "wrong": [
+      "Subodh Gupta",
+      "Ram Kinkar Baij",
+      "Bharti Kher"
+     ],
+     "level": 3,
+     "why": "It is nicknamed 'The Bean'."
+    },
+    {
+     "q": "Which Indian artist is known for sculptures made of steel kitchen utensils?",
+     "a": "Subodh Gupta",
+     "wrong": [
+      "Anish Kapoor",
+      "Bharti Kher",
+      "Jitish Kallat"
+     ],
+     "level": 3,
+     "why": "His work 'Very Hungry God' is a skull of pots."
+    },
+    {
+     "q": "Which Santiniketan sculptor made the 'Santhal Family'?",
+     "a": "Ram Kinkar Baij",
+     "wrong": [
+      "Nandalal Bose",
+      "K. G. Subramanyan",
+      "Benode Behari Mukherjee"
+     ],
+     "level": 3,
+     "why": "It was made in 1938."
+    },
+    {
+     "q": "Which Odisha artist makes huge sand sculptures on Puri beach?",
+     "a": "Sudarsan Pattnaik",
+     "wrong": [
+      "Subodh Gupta",
+      "Ram V. Sutar",
+      "Jatin Das"
+     ],
+     "level": 3,
+     "why": "He has won many world titles."
+    },
+    {
+     "q": "Which two Persian masters led Akbar's painting workshop?",
+     "a": "Mir Sayyid Ali and Abd al-Samad",
+     "wrong": [
+      "Bihzad and Reza Abbasi",
+      "Mansur and Abul Hasan",
+      "Basawan and Daswanth"
+     ],
+     "level": 3,
+     "why": "They came to India with Humayun."
+    },
+    {
+     "q": "Which embroidery from Lucknow uses white thread on fine cloth?",
+     "a": "Chikankari",
+     "wrong": [
+      "Phulkari",
+      "Kantha",
+      "Zardozi"
+     ],
+     "level": 3,
+     "why": "It is said to have come with Nur Jahan."
+    },
+    {
+     "q": "Which Punjabi embroidery means 'flower work'?",
+     "a": "Phulkari",
+     "wrong": [
+      "Chikankari",
+      "Kantha",
+      "Kasuti"
+     ],
+     "level": 3,
+     "why": "It covers shawls in bright silk."
+    },
+    {
+     "q": "Which Bengal embroidery uses running stitches on old saris?",
+     "a": "Kantha",
+     "wrong": [
+      "Phulkari",
+      "Chikankari",
+      "Kasuti"
+     ],
+     "level": 3,
+     "why": "Layers of cloth are stitched into quilts."
+    },
+    {
+     "q": "Which silk weaving from Gujarat uses double ikat?",
+     "a": "Patola",
+     "wrong": [
+      "Paithani",
+      "Banarasi",
+      "Kanjeevaram"
+     ],
+     "level": 3,
+     "why": "Both threads are dyed before weaving."
+    },
+    {
+     "q": "Which silk sari from Maharashtra has a peacock-patterned border?",
+     "a": "Paithani",
+     "wrong": [
+      "Patola",
+      "Banarasi",
+      "Baluchari"
+     ],
+     "level": 3,
+     "why": "It is named after the town of Paithan."
     }
    ]
   },
@@ -3532,17 +4687,6 @@
     },
     {
      "level": 1,
-     "q": "Which Kerala festival is famous for its sadya feast and snake boat races?",
-     "a": "Onam",
-     "wrong": [
-      "Pongal",
-      "Vishu",
-      "Bihu"
-     ],
-     "why": "It celebrates the return of King Mahabali."
-    },
-    {
-     "level": 1,
      "q": "What is India's national animal?",
      "a": "Bengal tiger",
      "wrong": [
@@ -3553,15 +4697,961 @@
      "why": "The peacock is the national bird."
     },
     {
-     "level": 3,
-     "q": "The Hornbill Festival is held every December in which state?",
-     "a": "Nagaland",
+     "q": "What is India's national bird?",
+     "a": "Indian peafowl (peacock)",
      "wrong": [
-      "Mizoram",
-      "Manipur",
-      "Meghalaya"
+      "Great Indian bustard",
+      "Sarus crane",
+      "Indian roller"
      ],
-     "why": "It is named after the bird found in Naga folklore."
+     "level": 1,
+     "why": "The male spreads a huge tail."
+    },
+    {
+     "q": "What is India's national aquatic animal?",
+     "a": "Ganges river dolphin",
+     "wrong": [
+      "Gharial",
+      "Dugong",
+      "Olive ridley turtle"
+     ],
+     "level": 1,
+     "why": "It is nearly blind."
+    },
+    {
+     "q": "What is India's national heritage animal?",
+     "a": "Indian elephant",
+     "wrong": [
+      "Bengal tiger",
+      "Asiatic lion",
+      "One-horned rhino"
+     ],
+     "level": 1,
+     "why": "It was named in 2010."
+    },
+    {
+     "q": "Where in India do Asiatic lions live in the wild?",
+     "a": "Gir Forest, Gujarat",
+     "wrong": [
+      "Ranthambore",
+      "Kanha",
+      "Kaziranga"
+     ],
+     "level": 1,
+     "why": "It is their last wild home."
+    },
+    {
+     "q": "Which park in Assam is famous for one-horned rhinos?",
+     "a": "Kaziranga National Park",
+     "wrong": [
+      "Manas",
+      "Corbett",
+      "Bandipur"
+     ],
+     "level": 1,
+     "why": "It holds about two-thirds of the world's population."
+    },
+    {
+     "q": "Which was India's first national park, set up in 1936?",
+     "a": "Jim Corbett National Park",
+     "wrong": [
+      "Kaziranga",
+      "Gir",
+      "Kanha"
+     ],
+     "level": 1,
+     "why": "It was first called Hailey National Park."
+    },
+    {
+     "q": "Which big cat was brought back to India from Namibia in 2022?",
+     "a": "Cheetah",
+     "wrong": [
+      "Lion",
+      "Leopard",
+      "Snow leopard"
+     ],
+     "level": 1,
+     "why": "They were released in Kuno National Park."
+    },
+    {
+     "q": "In which national park were cheetahs released in 2022?",
+     "a": "Kuno National Park",
+     "wrong": [
+      "Gir",
+      "Ranthambore",
+      "Sariska"
+     ],
+     "level": 1,
+     "why": "It is in Madhya Pradesh."
+    },
+    {
+     "q": "Which long-snouted crocodile lives in Indian rivers?",
+     "a": "Gharial",
+     "wrong": [
+      "Mugger",
+      "Saltwater crocodile",
+      "Caiman"
+     ],
+     "level": 1,
+     "why": "It eats fish."
+    },
+    {
+     "q": "Which venomous snake is the world's longest?",
+     "a": "King cobra",
+     "wrong": [
+      "Russell's viper",
+      "Indian krait",
+      "Saw-scaled viper"
+     ],
+     "level": 1,
+     "why": "It can grow over 5 m long."
+    },
+    {
+     "q": "Which bird sanctuary in Rajasthan was a royal duck-shooting reserve?",
+     "a": "Keoladeo (Bharatpur)",
+     "wrong": [
+      "Sultanpur",
+      "Chilika",
+      "Ranganathittu"
+     ],
+     "level": 1,
+     "why": "It is a UNESCO site."
+    },
+    {
+     "q": "Which large lagoon in Odisha hosts migratory birds and dolphins?",
+     "a": "Chilika Lake",
+     "wrong": [
+      "Pulicat Lake",
+      "Vembanad Lake",
+      "Loktak Lake"
+     ],
+     "level": 1,
+     "why": "It is India's largest coastal lagoon."
+    },
+    {
+     "q": "Which sea turtles nest in huge numbers on Odisha's beaches?",
+     "a": "Olive ridley turtles",
+     "wrong": [
+      "Green turtles",
+      "Leatherbacks",
+      "Hawksbills"
+     ],
+     "level": 1,
+     "why": "The mass nesting is called arribada."
+    },
+    {
+     "q": "Which mammal is the state animal of many Himalayan regions and very rarely seen?",
+     "a": "Snow leopard",
+     "wrong": [
+      "Red panda",
+      "Clouded leopard",
+      "Himalayan tahr"
+     ],
+     "level": 1,
+     "why": "It lives in Ladakh and Spiti."
+    },
+    {
+     "q": "Which small red mammal lives in Sikkim's forests?",
+     "a": "Red panda",
+     "wrong": [
+      "Giant panda",
+      "Red fox",
+      "Binturong"
+     ],
+     "level": 1,
+     "why": "It is Sikkim's state animal."
+    },
+    {
+     "q": "Which tiger reserve in Rajasthan is famous for daytime tiger sightings?",
+     "a": "Ranthambore",
+     "wrong": [
+      "Sariska",
+      "Kanha",
+      "Pench"
+     ],
+     "level": 1,
+     "why": "A ruined fort stands inside it."
+    },
+    {
+     "q": "Which park in Madhya Pradesh inspired 'The Jungle Book'?",
+     "a": "Kanha",
+     "wrong": [
+      "Bandhavgarh",
+      "Satpura",
+      "Panna"
+     ],
+     "level": 1,
+     "why": "It is home to the barasingha deer."
+    },
+    {
+     "q": "Which deer is the state animal of Madhya Pradesh and lives in Kanha?",
+     "a": "Barasingha",
+     "wrong": [
+      "Sambar",
+      "Chital",
+      "Nilgai"
+     ],
+     "level": 1,
+     "why": "Its name means 'twelve tines'."
+    },
+    {
+     "q": "Which spotted deer is the most common deer in India?",
+     "a": "Chital",
+     "wrong": [
+      "Sambar",
+      "Barasingha",
+      "Hog deer"
+     ],
+     "level": 1,
+     "why": "It often follows langur monkeys."
+    },
+    {
+     "q": "Which monkey with a black face is common across India?",
+     "a": "Grey langur",
+     "wrong": [
+      "Rhesus macaque",
+      "Lion-tailed macaque",
+      "Hoolock gibbon"
+     ],
+     "level": 1,
+     "why": "It is also called the Hanuman langur."
+    },
+    {
+     "q": "Which is India's only ape?",
+     "a": "Hoolock gibbon",
+     "wrong": [
+      "Orangutan",
+      "Chimpanzee",
+      "Lion-tailed macaque"
+     ],
+     "level": 1,
+     "why": "It lives in the northeast."
+    },
+    {
+     "q": "Which project to save tigers began in India in 1973?",
+     "a": "Project Tiger",
+     "wrong": [
+      "Project Elephant",
+      "Save Tiger 1973",
+      "Tiger Task Force"
+     ],
+     "level": 1,
+     "why": "It started with nine reserves."
+    },
+    {
+     "q": "Which state has the most tigers in India?",
+     "a": "Madhya Pradesh",
+     "wrong": [
+      "Karnataka",
+      "Uttarakhand",
+      "Maharashtra"
+     ],
+     "level": 1,
+     "why": "It is called the 'Tiger State'."
+    },
+    {
+     "q": "Which deer-like antelope with spiralled horns roams India's plains?",
+     "a": "Blackbuck",
+     "wrong": [
+      "Chinkara",
+      "Nilgai",
+      "Chousingha"
+     ],
+     "level": 1,
+     "why": "The Bishnoi community protects it."
+    },
+    {
+     "q": "Which large antelope is called the 'blue bull'?",
+     "a": "Nilgai",
+     "wrong": [
+      "Blackbuck",
+      "Sambar",
+      "Gaur"
+     ],
+     "level": 1,
+     "why": "It is Asia's largest antelope."
+    },
+    {
+     "q": "Which wild ox is the largest bovine in the world?",
+     "a": "Gaur",
+     "wrong": [
+      "Wild water buffalo",
+      "Yak",
+      "Mithun"
+     ],
+     "level": 1,
+     "why": "It is also called the Indian bison."
+    },
+    {
+     "q": "Which birds make Mumbai's Sewri mudflats famous in winter?",
+     "a": "Flamingos",
+     "wrong": [
+      "Pelicans",
+      "Cranes",
+      "Storks"
+     ],
+     "level": 1,
+     "why": "Thousands visit each year."
+    },
+    {
+     "q": "Which tall crane is the world's tallest flying bird?",
+     "a": "Sarus crane",
+     "wrong": [
+      "Siberian crane",
+      "Demoiselle crane",
+      "Black-necked crane"
+     ],
+     "level": 1,
+     "why": "It mates for life."
+    },
+    {
+     "q": "Which community in Rajasthan is famous for protecting animals and trees?",
+     "a": "Bishnoi",
+     "wrong": [
+      "Bhil",
+      "Meena",
+      "Rabari"
+     ],
+     "level": 1,
+     "why": "Their rules forbid harming blackbuck."
+    },
+    {
+     "q": "Which large bird of prey is the vulture that nearly vanished from India?",
+     "a": "White-rumped vulture",
+     "wrong": [
+      "Golden eagle",
+      "Shikra",
+      "Black kite"
+     ],
+     "level": 1,
+     "why": "A cattle painkiller poisoned them."
+    },
+    {
+     "q": "Which painkiller for cattle killed millions of Indian vultures?",
+     "a": "Diclofenac",
+     "wrong": [
+      "Paracetamol",
+      "Ibuprofen",
+      "Aspirin"
+     ],
+     "level": 1,
+     "why": "It was banned for animals in 2006."
+    },
+    {
+     "q": "Which endangered bird is the state bird of Rajasthan?",
+     "a": "Great Indian bustard",
+     "wrong": [
+      "Sarus crane",
+      "Indian peafowl",
+      "Lesser florican"
+     ],
+     "level": 2,
+     "why": "Only about 150 are left."
+    },
+    {
+     "q": "Which macaque with a silver mane lives in the Western Ghats?",
+     "a": "Lion-tailed macaque",
+     "wrong": [
+      "Bonnet macaque",
+      "Rhesus macaque",
+      "Pig-tailed macaque"
+     ],
+     "level": 2,
+     "why": "It lives in Silent Valley."
+    },
+    {
+     "q": "Which Kerala park was saved from a dam in the 1980s?",
+     "a": "Silent Valley National Park",
+     "wrong": [
+      "Periyar",
+      "Eravikulam",
+      "Wayanad"
+     ],
+     "level": 2,
+     "why": "It is home to the lion-tailed macaque."
+    },
+    {
+     "q": "Which mountain goat lives in Eravikulam National Park in Kerala?",
+     "a": "Nilgiri tahr",
+     "wrong": [
+      "Himalayan tahr",
+      "Markhor",
+      "Ibex"
+     ],
+     "level": 2,
+     "why": "It is Tamil Nadu's state animal."
+    },
+    {
+     "q": "Which tiger reserve in the Sundarbans is famous for swimming tigers?",
+     "a": "Sundarbans Tiger Reserve",
+     "wrong": [
+      "Manas",
+      "Nagarhole",
+      "Dudhwa"
+     ],
+     "level": 2,
+     "why": "Tigers there can swim between islands."
+    },
+    {
+     "q": "Which park in Karnataka is known for elephants and tigers on the Kabini River?",
+     "a": "Nagarhole",
+     "wrong": [
+      "Bandipur",
+      "BRT Hills",
+      "Dandeli"
+     ],
+     "level": 2,
+     "why": "It borders Bandipur."
+    },
+    {
+     "q": "Which Assam park is a UNESCO site on the Bhutan border?",
+     "a": "Manas National Park",
+     "wrong": [
+      "Kaziranga",
+      "Nameri",
+      "Orang"
+     ],
+     "level": 2,
+     "why": "It is home to the pygmy hog."
+    },
+    {
+     "q": "Which tiny pig is the world's smallest and rarest wild pig?",
+     "a": "Pygmy hog",
+     "wrong": [
+      "Wild boar",
+      "Babirusa",
+      "Warthog"
+     ],
+     "level": 2,
+     "why": "It lives in Assam's grasslands."
+    },
+    {
+     "q": "Which floating national park in Manipur protects the dancing deer?",
+     "a": "Keibul Lamjao",
+     "wrong": [
+      "Kaziranga",
+      "Dibru-Saikhowa",
+      "Namdapha"
+     ],
+     "level": 2,
+     "why": "It floats on Loktak Lake."
+    },
+    {
+     "q": "What is the Manipur brow-antlered deer called?",
+     "a": "Sangai",
+     "wrong": [
+      "Barasingha",
+      "Hangul",
+      "Chital"
+     ],
+     "level": 2,
+     "why": "It is called the 'dancing deer'."
+    },
+    {
+     "q": "Which deer is found only in Kashmir?",
+     "a": "Hangul",
+     "wrong": [
+      "Sangai",
+      "Musk deer",
+      "Barasingha"
+     ],
+     "level": 2,
+     "why": "It is also called the Kashmir stag."
+    },
+    {
+     "q": "Which bird lives only in Narcondam Island in the Andamans?",
+     "a": "Narcondam hornbill",
+     "wrong": [
+      "Great hornbill",
+      "Malabar hornbill",
+      "Andaman wood pigeon"
+     ],
+     "level": 2,
+     "why": "Its island is a dormant volcano."
+    },
+    {
+     "q": "Which large hornbill is the state bird of Kerala?",
+     "a": "Great hornbill",
+     "wrong": [
+      "Malabar pied hornbill",
+      "Indian grey hornbill",
+      "Wreathed hornbill"
+     ],
+     "level": 2,
+     "why": "It has a big yellow casque."
+    },
+    {
+     "q": "Which bird is the state bird of Karnataka and Odisha?",
+     "a": "Indian roller",
+     "wrong": [
+      "Indian peafowl",
+      "Hornbill",
+      "Kingfisher"
+     ],
+     "level": 2,
+     "why": "Its wings flash bright blue in flight."
+    },
+    {
+     "q": "Which wild ass lives in Gujarat's Little Rann of Kutch?",
+     "a": "Indian wild ass (khur)",
+     "wrong": [
+      "Kiang",
+      "Onager of Iran",
+      "Zebra"
+     ],
+     "level": 2,
+     "why": "The Rann is its last home."
+    },
+    {
+     "q": "Which wild ass lives in Ladakh?",
+     "a": "Kiang",
+     "wrong": [
+      "Khur",
+      "Onager",
+      "Przewalski's horse"
+     ],
+     "level": 2,
+     "why": "It is the largest wild ass."
+    },
+    {
+     "q": "Which park in Uttarakhand is a UNESCO site of alpine flowers?",
+     "a": "Valley of Flowers",
+     "wrong": [
+      "Nanda Devi",
+      "Govind",
+      "Hemis"
+     ],
+     "level": 2,
+     "why": "It blooms in July and August."
+    },
+    {
+     "q": "Which Ladakh park is famous for snow leopards?",
+     "a": "Hemis National Park",
+     "wrong": [
+      "Valley of Flowers",
+      "Great Himalayan",
+      "Kishtwar"
+     ],
+     "level": 2,
+     "why": "It is India's largest national park."
+    },
+    {
+     "q": "Which park in Arunachal Pradesh has four big cats?",
+     "a": "Namdapha",
+     "wrong": [
+      "Pakke",
+      "Dibang",
+      "Mouling"
+     ],
+     "level": 2,
+     "why": "It has tigers, leopards, clouded leopards and snow leopards."
+    },
+    {
+     "q": "Which Indian dog breed is a lean sighthound from Karnataka?",
+     "a": "Mudhol hound",
+     "wrong": [
+      "Rajapalayam",
+      "Chippiparai",
+      "Kombai"
+     ],
+     "level": 2,
+     "why": "It has joined the Indian Army."
+    },
+    {
+     "q": "Which white Indian dog breed comes from Tamil Nadu?",
+     "a": "Rajapalayam",
+     "wrong": [
+      "Mudhol hound",
+      "Kanni",
+      "Gaddi"
+     ],
+     "level": 2,
+     "why": "It was used for hunting boar."
+    },
+    {
+     "q": "Which camel breed is famous at the Pushkar fair?",
+     "a": "Dromedary camels of Rajasthan",
+     "wrong": [
+      "Bactrian camels",
+      "Llamas",
+      "Alpacas"
+     ],
+     "level": 2,
+     "why": "The fair is held each November."
+    },
+    {
+     "q": "Which Indian cattle breed from Gujarat is famous for its milk?",
+     "a": "Gir",
+     "wrong": [
+      "Sahiwal",
+      "Ongole",
+      "Kankrej"
+     ],
+     "level": 2,
+     "why": "It has a domed forehead."
+    },
+    {
+     "q": "Which Andhra Pradesh cattle breed was exported to Brazil?",
+     "a": "Ongole",
+     "wrong": [
+      "Gir",
+      "Hallikar",
+      "Amrit Mahal"
+     ],
+     "level": 2,
+     "why": "It is called Nelore in Brazil."
+    },
+    {
+     "q": "Which Western Ghats bird is nicknamed the 'whistling schoolboy'?",
+     "a": "Malabar whistling thrush",
+     "wrong": [
+      "Asian koel",
+      "Red-whiskered bulbul",
+      "Indian robin"
+     ],
+     "level": 2,
+     "why": "Its song sounds like a boy whistling."
+    },
+    {
+     "q": "Which bird's call announces summer across India?",
+     "a": "Asian koel",
+     "wrong": [
+      "Coppersmith barbet",
+      "Indian robin",
+      "Bulbul"
+     ],
+     "level": 2,
+     "why": "Males call 'ku-oo' loudly."
+    },
+    {
+     "q": "Which bird makes a 'tuk-tuk-tuk' sound like a coppersmith?",
+     "a": "Coppersmith barbet",
+     "wrong": [
+      "Woodpecker",
+      "Hoopoe",
+      "Drongo"
+     ],
+     "level": 2,
+     "why": "It is often heard in cities."
+    },
+    {
+     "q": "Which elephant festival in Kerala features decorated elephants?",
+     "a": "Thrissur Pooram",
+     "wrong": [
+      "Onam",
+      "Vishu",
+      "Attukal Pongala"
+     ],
+     "level": 2,
+     "why": "Rows of elephants stand with umbrellas."
+    },
+    {
+     "q": "Which national park is home to most of India's wild water buffalo?",
+     "a": "Kaziranga",
+     "wrong": [
+      "Gir",
+      "Kanha",
+      "Bandipur"
+     ],
+     "level": 2,
+     "why": "It also has many swamp deer."
+    },
+    {
+     "q": "Which tiny Indian wild cat is one of the world's smallest?",
+     "a": "Rusty-spotted cat",
+     "wrong": [
+      "Fishing cat",
+      "Jungle cat",
+      "Caracal"
+     ],
+     "level": 2,
+     "why": "It weighs about 1.5 kg."
+    },
+    {
+     "q": "Which wild cat of the Sundarbans hunts fish in water?",
+     "a": "Fishing cat",
+     "wrong": [
+      "Rusty-spotted cat",
+      "Leopard cat",
+      "Jungle cat"
+     ],
+     "level": 2,
+     "why": "It is West Bengal's state animal."
+    },
+    {
+     "q": "Which large marine mammal lives in the Gulf of Mannar?",
+     "a": "Dugong",
+     "wrong": [
+      "Manatee",
+      "Walrus",
+      "Seal"
+     ],
+     "level": 2,
+     "why": "It eats sea grass."
+    },
+    {
+     "q": "Which coral reef national park is in the Gulf of Kutch?",
+     "a": "Marine National Park, Jamnagar",
+     "wrong": [
+      "Mahatma Gandhi Marine Park",
+      "Gulf of Mannar Park",
+      "Malvan Sanctuary"
+     ],
+     "level": 2,
+     "why": "It was India's first marine national park."
+    },
+    {
+     "q": "Which marine park protects the Andamans' reefs near Wandoor?",
+     "a": "Mahatma Gandhi Marine National Park",
+     "wrong": [
+      "Rani Jhansi Marine Park",
+      "Gulf of Mannar",
+      "Malvan"
+     ],
+     "level": 2,
+     "why": "It covers 15 islands."
+    },
+    {
+     "q": "Which river dolphin is called 'susu' in India?",
+     "a": "Ganges river dolphin",
+     "wrong": [
+      "Irrawaddy dolphin",
+      "Indus dolphin",
+      "Bottlenose dolphin"
+     ],
+     "level": 2,
+     "why": "It finds food by echolocation."
+    },
+    {
+     "q": "Which dolphin lives in Chilika Lake?",
+     "a": "Irrawaddy dolphin",
+     "wrong": [
+      "Ganges river dolphin",
+      "Spinner dolphin",
+      "Humpback dolphin"
+     ],
+     "level": 2,
+     "why": "It has a rounded head."
+    },
+    {
+     "q": "Which bird is India's rarest crane, wintering in Keoladeo until 2002?",
+     "a": "Siberian crane",
+     "wrong": [
+      "Sarus crane",
+      "Demoiselle crane",
+      "Common crane"
+     ],
+     "level": 3,
+     "why": "The western flock no longer arrives."
+    },
+    {
+     "q": "Which bird was rediscovered in 1986 after being thought extinct for 86 years?",
+     "a": "Jerdon's courser",
+     "wrong": [
+      "Pink-headed duck",
+      "Forest owlet",
+      "Himalayan quail"
+     ],
+     "level": 3,
+     "why": "It lives in Andhra Pradesh."
+    },
+    {
+     "q": "Which owl was rediscovered in Maharashtra in 1997 after 113 years?",
+     "a": "Forest owlet",
+     "wrong": [
+      "Barn owl",
+      "Mottled wood owl",
+      "Brown fish owl"
+     ],
+     "level": 3,
+     "why": "It is now critically endangered."
+    },
+    {
+     "q": "Which colourful duck of India is probably extinct?",
+     "a": "Pink-headed duck",
+     "wrong": [
+      "Mandarin duck",
+      "Spot-billed duck",
+      "Comb duck"
+     ],
+     "level": 3,
+     "why": "The last sure sighting was in 1949."
+    },
+    {
+     "q": "Which frog from the Western Ghats lives underground most of the year?",
+     "a": "Purple frog",
+     "wrong": [
+      "Bullfrog",
+      "Tree frog",
+      "Malabar gliding frog"
+     ],
+     "level": 3,
+     "why": "It comes out for a few weeks to breed."
+    },
+    {
+     "q": "Which frog glides between trees in the Western Ghats?",
+     "a": "Malabar gliding frog",
+     "wrong": [
+      "Purple frog",
+      "Bullfrog",
+      "Bush frog"
+     ],
+     "level": 3,
+     "why": "It uses webbed feet like wings."
+    },
+    {
+     "q": "Which national park in Kerala protects the Nilgiri tahr?",
+     "a": "Eravikulam",
+     "wrong": [
+      "Silent Valley",
+      "Periyar",
+      "Wayanad"
+     ],
+     "level": 3,
+     "why": "Neelakurinji flowers bloom there every 12 years."
+    },
+    {
+     "q": "Which tiger reserve was the first in India to have no tigers by 2005?",
+     "a": "Sariska",
+     "wrong": [
+      "Panna",
+      "Ranthambore",
+      "Buxa"
+     ],
+     "level": 3,
+     "why": "Tigers were later brought back."
+    },
+    {
+     "q": "Which tiger reserve in Madhya Pradesh lost all its tigers by 2009 and was restocked?",
+     "a": "Panna",
+     "wrong": [
+      "Sariska",
+      "Kanha",
+      "Satpura"
+     ],
+     "level": 3,
+     "why": "The recovery is a success story."
+    },
+    {
+     "q": "Which act of 1972 protects India's wild animals?",
+     "a": "Wildlife (Protection) Act",
+     "wrong": [
+      "Forest Rights Act",
+      "Environment Protection Act",
+      "Biodiversity Act"
+     ],
+     "level": 3,
+     "why": "It created schedules of protected species."
+    },
+    {
+     "q": "Which mountain sheep with huge curled horns lives in Ladakh?",
+     "a": "Argali",
+     "wrong": [
+      "Urial",
+      "Bharal",
+      "Markhor"
+     ],
+     "level": 3,
+     "why": "It is the largest wild sheep."
+    },
+    {
+     "q": "Which 'blue sheep' is snow leopards' main prey?",
+     "a": "Bharal",
+     "wrong": [
+      "Argali",
+      "Urial",
+      "Tahr"
+     ],
+     "level": 3,
+     "why": "It is really closer to goats."
+    },
+    {
+     "q": "Which pheasant is Nagaland's state bird?",
+     "a": "Blyth's tragopan",
+     "wrong": [
+      "Great hornbill",
+      "Mrs Hume's pheasant",
+      "Himalayan monal"
+     ],
+     "level": 3,
+     "why": "It is one of the rarest pheasants."
+    },
+    {
+     "q": "Which pheasant is the state bird of Uttarakhand?",
+     "a": "Himalayan monal",
+     "wrong": [
+      "Blyth's tragopan",
+      "Kalij pheasant",
+      "Koklass"
+     ],
+     "level": 3,
+     "why": "Males shine in many colours."
+    },
+    {
+     "q": "Which long-tailed pheasant is Manipur's and Mizoram's state bird?",
+     "a": "Mrs Hume's pheasant",
+     "wrong": [
+      "Himalayan monal",
+      "Kalij",
+      "Peafowl"
+     ],
+     "level": 3,
+     "why": "It is also called the bar-tailed pheasant."
+    },
+    {
+     "q": "Which turtle has a soft shell and lives in India's big rivers?",
+     "a": "Indian softshell turtle",
+     "wrong": [
+      "Olive ridley",
+      "Star tortoise",
+      "Green turtle"
+     ],
+     "level": 3,
+     "why": "It can weigh over 100 kg."
+    },
+    {
+     "q": "Which tortoise is often smuggled for its star-patterned shell?",
+     "a": "Indian star tortoise",
+     "wrong": [
+      "Leopard tortoise",
+      "Travancore tortoise",
+      "Box turtle"
+     ],
+     "level": 3,
+     "why": "It is protected in India."
+    },
+    {
+     "q": "Which lizard of the Thar Desert stores fat in its tail?",
+     "a": "Spiny-tailed lizard",
+     "wrong": [
+      "Monitor lizard",
+      "Chameleon",
+      "Gecko"
+     ],
+     "level": 3,
+     "why": "It eats mostly plants."
+    },
+    {
+     "q": "Which Indian mammal is famous for fighting cobras?",
+     "a": "Indian grey mongoose",
+     "wrong": [
+      "Meerkat",
+      "Honey badger",
+      "Pangolin"
+     ],
+     "level": 3,
+     "why": "Kipling's Rikki-Tikki-Tavi is one."
+    },
+    {
+     "q": "Which scaly mammal is the world's most trafficked animal?",
+     "a": "Pangolin",
+     "wrong": [
+      "Armadillo",
+      "Hedgehog",
+      "Porcupine"
+     ],
+     "level": 3,
+     "why": "India has the Indian and Chinese pangolins."
     }
    ]
   },
@@ -3854,6 +5944,28 @@
       "1998"
      ],
      "why": "It was designed by D. Udaya Kumar."
+    },
+    {
+     "level": 1,
+     "q": "Which Kerala festival is famous for its sadya feast and snake boat races?",
+     "a": "Onam",
+     "wrong": [
+      "Pongal",
+      "Vishu",
+      "Bihu"
+     ],
+     "why": "It celebrates the return of King Mahabali."
+    },
+    {
+     "level": 3,
+     "q": "The Hornbill Festival is held every December in which state?",
+     "a": "Nagaland",
+     "wrong": [
+      "Mizoram",
+      "Manipur",
+      "Meghalaya"
+     ],
+     "why": "It is named after the bird found in Naga folklore."
     }
    ]
   }
