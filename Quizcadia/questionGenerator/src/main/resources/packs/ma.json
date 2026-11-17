@@ -1,0 +1,346 @@
+{
+ "category": "Morocco",
+ "country": "MA",
+ "topics": [
+  {
+   "name": "Morocco: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Morocco gain independence from France?",
+     "a": "1956",
+     "wrong": [
+      "1962",
+      "1945",
+      "1912"
+     ],
+     "why": "Spain also gave up most of its zone that year."
+    },
+    {
+     "level": 1,
+     "q": "Who has been King of Morocco since 1999?",
+     "a": "Mohammed VI",
+     "wrong": [
+      "Hassan II",
+      "Mohammed V",
+      "Hassan I"
+     ],
+     "why": "He succeeded his father Hassan II."
+    },
+    {
+     "level": 1,
+     "q": "Which 1975 march sent 350,000 Moroccans into Western Sahara?",
+     "a": "Green March",
+     "wrong": [
+      "Long March",
+      "Salt March",
+      "Desert March"
+     ],
+     "why": "It was organised by Hassan II."
+    },
+    {
+     "level": 1,
+     "q": "Which dynasty has ruled Morocco since the 1600s?",
+     "a": "Alaouite dynasty",
+     "wrong": [
+      "Almohad dynasty",
+      "Saadi dynasty",
+      "Marinid dynasty"
+     ],
+     "why": "It is one of the oldest ruling dynasties."
+    },
+    {
+     "level": 1,
+     "q": "Which Moroccan city has the world's oldest existing university?",
+     "a": "Fez",
+     "wrong": [
+      "Marrakesh",
+      "Rabat",
+      "Tangier"
+     ],
+     "why": "Al-Qarawiyyin was founded in 859."
+    },
+    {
+     "level": 1,
+     "q": "Which woman founded the University of al-Qarawiyyin?",
+     "a": "Fatima al-Fihri",
+     "wrong": [
+      "Zaynab an-Nafzawiyya",
+      "Kenza al-Awrabiya",
+      "Lalla Salma"
+     ],
+     "why": "She used her inheritance to build it."
+    },
+    {
+     "level": 1,
+     "q": "Which famous traveller from Tangier visited much of the medieval world?",
+     "a": "Ibn Battuta",
+     "wrong": [
+      "Ibn Khaldun",
+      "Marco Polo",
+      "Leo Africanus"
+     ],
+     "why": "He travelled for nearly 30 years."
+    },
+    {
+     "level": 2,
+     "q": "Which Berber dynasty founded Marrakesh around 1070?",
+     "a": "Almoravids",
+     "wrong": [
+      "Almohads",
+      "Idrisids",
+      "Saadians"
+     ],
+     "why": "Marrakesh gave Morocco its name."
+    },
+    {
+     "level": 2,
+     "q": "Which king led Morocco to independence and was exiled by France in 1953?",
+     "a": "Mohammed V",
+     "wrong": [
+      "Hassan II",
+      "Mohammed VI",
+      "Moulay Ismail"
+     ],
+     "why": "He returned in triumph in 1955."
+    },
+    {
+     "level": 2,
+     "q": "Which sultan built the imperial city of Meknes in the late 1600s?",
+     "a": "Moulay Ismail",
+     "wrong": [
+      "Ahmad al-Mansur",
+      "Yusuf ibn Tashfin",
+      "Abd al-Mu'min"
+     ],
+     "why": "He ruled for 55 years."
+    },
+    {
+     "level": 2,
+     "q": "Which Roman city's ruins near Meknes are a UNESCO site?",
+     "a": "Volubilis",
+     "wrong": [
+      "Carthage",
+      "Leptis Magna",
+      "Timgad"
+     ],
+     "why": "It has beautiful mosaics."
+    },
+    {
+     "level": 2,
+     "q": "What is the main Indigenous people of North Africa called?",
+     "a": "Amazigh (Berbers)",
+     "wrong": [
+      "Bedouins",
+      "Copts",
+      "Nubians"
+     ],
+     "why": "Tamazight became an official language in 2011."
+    },
+    {
+     "level": 3,
+     "q": "Which 1578 battle is called the Battle of the Three Kings?",
+     "a": "Battle of Ksar el-Kebir",
+     "wrong": [
+      "Battle of Isly",
+      "Battle of Anual",
+      "Battle of Tondibi"
+     ],
+     "why": "Three kings died in it."
+    },
+    {
+     "level": 3,
+     "q": "Which Saadian sultan built the El Badi Palace in Marrakesh?",
+     "a": "Ahmad al-Mansur",
+     "wrong": [
+      "Moulay Ismail",
+      "Mohammed V",
+      "Yusuf ibn Tashfin"
+     ],
+     "why": "It was paid for partly with gold from West Africa."
+    },
+    {
+     "level": 3,
+     "q": "Which 1921 battle saw Rif fighters defeat a Spanish army?",
+     "a": "Battle of Annual",
+     "wrong": [
+      "Battle of Isly",
+      "Battle of Tetouan",
+      "Battle of Alhucemas"
+     ],
+     "why": "Abd el-Krim led the Rif forces."
+    }
+   ]
+  },
+  {
+   "name": "Morocco: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Morocco?",
+     "a": "Rabat",
+     "wrong": [
+      "Casablanca",
+      "Marrakesh",
+      "Fez"
+     ],
+     "why": "Casablanca is the largest city."
+    },
+    {
+     "level": 1,
+     "q": "Which slow-cooked dish is named after its cone-shaped clay pot?",
+     "a": "Tagine",
+     "wrong": [
+      "Couscous",
+      "Harira",
+      "Pastilla"
+     ],
+     "why": "It is often made with lamb and prunes."
+    },
+    {
+     "level": 1,
+     "q": "Which huge square in Marrakesh fills with food stalls at night?",
+     "a": "Jemaa el-Fnaa",
+     "wrong": [
+      "Place Mohammed V",
+      "Bab Boujloud",
+      "Place des Nations Unies"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain range crosses Morocco?",
+     "a": "Atlas Mountains",
+     "wrong": [
+      "Alps",
+      "Pyrenees",
+      "Andes"
+     ],
+     "why": "Toubkal is its highest peak."
+    },
+    {
+     "level": 1,
+     "q": "What is Morocco's currency?",
+     "a": "Moroccan dirham",
+     "wrong": [
+      "Dinar",
+      "Riyal",
+      "Franc"
+     ],
+     "why": "Its code is MAD."
+    },
+    {
+     "level": 1,
+     "q": "Which strait separates Morocco from Spain?",
+     "a": "Strait of Gibraltar",
+     "wrong": [
+      "Strait of Sicily",
+      "Bosphorus",
+      "Strait of Otranto"
+     ],
+     "why": "It is about 14 km wide at its narrowest."
+    },
+    {
+     "level": 1,
+     "q": "Which team became the first African side to reach a World Cup semi-final, in 2022?",
+     "a": "Morocco",
+     "wrong": [
+      "Senegal",
+      "Cameroon",
+      "Ghana"
+     ],
+     "why": "They beat Spain and Portugal on the way."
+    },
+    {
+     "level": 2,
+     "q": "Which 'blue city' in the Rif is famous for its painted streets?",
+     "a": "Chefchaouen",
+     "wrong": [
+      "Essaouira",
+      "Tetouan",
+      "Asilah"
+     ],
+     "why": "Its houses are washed in shades of blue."
+    },
+    {
+     "level": 2,
+     "q": "Which huge mosque in Casablanca has a minaret over 200 m tall?",
+     "a": "Hassan II Mosque",
+     "wrong": [
+      "Koutoubia Mosque",
+      "Kairouan Mosque",
+      "Tinmel Mosque"
+     ],
+     "why": "Part of it stands over the Atlantic."
+    },
+    {
+     "level": 2,
+     "q": "Which sweet mint drink is served everywhere in Morocco?",
+     "a": "Mint tea",
+     "wrong": [
+      "Arabic coffee",
+      "Lemonade",
+      "Sahlab"
+     ],
+     "why": "It is poured from a height."
+    },
+    {
+     "level": 2,
+     "q": "Which tree's nut oil is a Moroccan speciality?",
+     "a": "Argan",
+     "wrong": [
+      "Olive",
+      "Almond",
+      "Walnut"
+     ],
+     "why": "It grows mainly in the southwest."
+    },
+    {
+     "level": 2,
+     "q": "Which 1942 film is named after Morocco's biggest city?",
+     "a": "Casablanca",
+     "wrong": [
+      "Marrakesh Express",
+      "The Sheltering Sky",
+      "Lawrence of Arabia"
+     ],
+     "why": "Humphrey Bogart starred."
+    },
+    {
+     "level": 3,
+     "q": "What is Morocco's highest mountain?",
+     "a": "Jebel Toubkal",
+     "wrong": [
+      "Mount Atlas",
+      "Jebel Ayachi",
+      "Jebel Saghro"
+     ],
+     "why": "It is 4,167 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which coastal town is famous for gnawa music and windsurfing?",
+     "a": "Essaouira",
+     "wrong": [
+      "Agadir",
+      "El Jadida",
+      "Larache"
+     ],
+     "why": "It was once called Mogador."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient fortified village in the south appears in many films?",
+     "a": "Aït Benhaddou",
+     "wrong": [
+      "Ouarzazate",
+      "Erfoud",
+      "Merzouga"
+     ],
+     "why": "It is a UNESCO site."
+    }
+   ]
+  }
+ ]
+}

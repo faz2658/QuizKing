@@ -1,0 +1,346 @@
+{
+ "category": "Qatar",
+ "country": "QA",
+ "topics": [
+  {
+   "name": "Qatar: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Qatar become independent from Britain?",
+     "a": "1971",
+     "wrong": [
+      "1961",
+      "1981",
+      "1968"
+     ],
+     "why": "National Day is 18 December."
+    },
+    {
+     "level": 1,
+     "q": "Which family rules Qatar?",
+     "a": "Al Thani",
+     "wrong": [
+      "Al Nahyan",
+      "Al Saud",
+      "Al Khalifa"
+     ],
+     "why": "They have ruled since the 1800s."
+    },
+    {
+     "level": 1,
+     "q": "Who has been Emir of Qatar since 2013?",
+     "a": "Tamim bin Hamad Al Thani",
+     "wrong": [
+      "Hamad bin Khalifa",
+      "Khalifa bin Hamad",
+      "Abdullah bin Khalifa"
+     ],
+     "why": "His father stepped down for him."
+    },
+    {
+     "level": 1,
+     "q": "Which tournament did Qatar host in 2022?",
+     "a": "FIFA World Cup",
+     "wrong": [
+      "Summer Olympics",
+      "Asian Games",
+      "Expo"
+     ],
+     "why": "It was the first held in the Arab world."
+    },
+    {
+     "level": 1,
+     "q": "Before oil, what was Qatar's main industry?",
+     "a": "Pearl diving",
+     "wrong": [
+      "Coffee trading",
+      "Gold mining",
+      "Textiles"
+     ],
+     "why": "It collapsed in the 1930s."
+    },
+    {
+     "level": 1,
+     "q": "Which gas does Qatar export more of than almost any country?",
+     "a": "Liquefied natural gas",
+     "wrong": [
+      "Oxygen",
+      "Hydrogen",
+      "Coal gas"
+     ],
+     "why": "Its North Field is the world's largest gas field."
+    },
+    {
+     "level": 1,
+     "q": "Which Qatar-based news network launched in 1996?",
+     "a": "Al Jazeera",
+     "wrong": [
+      "Al Arabiya",
+      "BBC Arabic",
+      "Sky News Arabia"
+     ],
+     "why": "It is based in Doha."
+    },
+    {
+     "level": 2,
+     "q": "Which founder of modern Qatar is honoured on National Day?",
+     "a": "Jassim bin Mohammed Al Thani",
+     "wrong": [
+      "Hamad bin Khalifa",
+      "Tamim bin Hamad",
+      "Ahmad bin Ali"
+     ],
+     "why": "He led Qatar from the 1870s."
+    },
+    {
+     "level": 2,
+     "q": "Which 1893 battle saw Qatar defeat Ottoman forces?",
+     "a": "Battle of Al Wajbah",
+     "wrong": [
+      "Battle of Zubarah",
+      "Battle of Doha",
+      "Battle of Ras Laffan"
+     ],
+     "why": "Jassim bin Mohammed led the fighters."
+    },
+    {
+     "level": 2,
+     "q": "Which neighbours cut ties with Qatar from 2017 to 2021?",
+     "a": "Saudi Arabia, UAE, Bahrain and Egypt",
+     "wrong": [
+      "Iran, Iraq, Syria and Oman",
+      "Kuwait, Oman, Jordan and Yemen",
+      "Turkey, Iran, Oman and Kuwait"
+     ],
+     "why": "It is called the Qatar blockade."
+    },
+    {
+     "level": 2,
+     "q": "Which 2006 multi-sport event did Doha host?",
+     "a": "Asian Games",
+     "wrong": [
+      "Olympics",
+      "Commonwealth Games",
+      "Pan Arab Games only"
+     ],
+     "why": "Doha hosts the Asian Games again in 2030."
+    },
+    {
+     "level": 2,
+     "q": "Which ruined pearling town is Qatar's UNESCO site?",
+     "a": "Al Zubarah",
+     "wrong": [
+      "Al Wakra",
+      "Al Khor",
+      "Lusail"
+     ],
+     "why": "It flourished in the 1700s."
+    },
+    {
+     "level": 3,
+     "q": "In which year was oil first discovered in Qatar?",
+     "a": "1939",
+     "wrong": [
+      "1955",
+      "1925",
+      "1960"
+     ],
+     "why": "It was found at Dukhan."
+    },
+    {
+     "level": 3,
+     "q": "Which mother of the Emir founded Qatar Foundation?",
+     "a": "Sheikha Moza bint Nasser",
+     "wrong": [
+      "Sheikha Al Mayassa",
+      "Sheikha Jawaher",
+      "Sheikha Hind"
+     ],
+     "why": "It runs Education City."
+    },
+    {
+     "level": 3,
+     "q": "Which Qatari high jumper shared Olympic gold in Tokyo?",
+     "a": "Mutaz Essa Barshim",
+     "wrong": [
+      "Fares Ibrahim",
+      "Abdalelah Haroun",
+      "Tamás Kovács"
+     ],
+     "why": "He shared it with Italy's Gianmarco Tamberi."
+    }
+   ]
+  },
+  {
+   "name": "Qatar: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Qatar?",
+     "a": "Doha",
+     "wrong": [
+      "Al Rayyan",
+      "Al Wakra",
+      "Lusail"
+     ],
+     "why": "Most Qataris live there."
+    },
+    {
+     "level": 1,
+     "q": "What is Qatar's currency?",
+     "a": "Qatari riyal",
+     "wrong": [
+      "Dirham",
+      "Dinar",
+      "Rupee"
+     ],
+     "why": "It is pegged to the US dollar."
+    },
+    {
+     "level": 1,
+     "q": "Which stadium hosted the 2022 World Cup final?",
+     "a": "Lusail Stadium",
+     "wrong": [
+      "Al Bayt Stadium",
+      "Khalifa International Stadium",
+      "Stadium 974"
+     ],
+     "why": "Argentina beat France on penalties."
+    },
+    {
+     "level": 1,
+     "q": "Which museum was designed to look like a desert rose?",
+     "a": "National Museum of Qatar",
+     "wrong": [
+      "Museum of Islamic Art",
+      "Mathaf",
+      "3-2-1 Museum"
+     ],
+     "why": "Jean Nouvel designed it."
+    },
+    {
+     "level": 1,
+     "q": "Which old market in Doha is a lively place to shop?",
+     "a": "Souq Waqif",
+     "wrong": [
+      "Gold Souk",
+      "Souq Al Wakra",
+      "City Center"
+     ],
+     "why": "It was restored in the 2000s."
+    },
+    {
+     "level": 1,
+     "q": "Which Doha waterfront promenade curves around the bay?",
+     "a": "The Corniche",
+     "wrong": [
+      "The Pearl",
+      "The Creek",
+      "Marina Walk"
+     ],
+     "why": "It is about 7 km long."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of Qatar?",
+     "a": "Arabic",
+     "wrong": [
+      "English",
+      "Urdu",
+      "Persian"
+     ],
+     "why": "English is widely used."
+    },
+    {
+     "level": 2,
+     "q": "Which museum designed by I. M. Pei sits on its own island?",
+     "a": "Museum of Islamic Art",
+     "wrong": [
+      "National Museum of Qatar",
+      "Mathaf",
+      "Fire Station"
+     ],
+     "why": "It opened in 2008."
+    },
+    {
+     "level": 2,
+     "q": "Which artificial island in Doha has luxury homes and marinas?",
+     "a": "The Pearl-Qatar",
+     "wrong": [
+      "Palm Jumeirah",
+      "Yas Island",
+      "Reem Island"
+     ],
+     "why": "It is built on old pearl-diving grounds."
+    },
+    {
+     "level": 2,
+     "q": "Which 'inland sea' in the south meets the desert dunes?",
+     "a": "Khor Al Adaid",
+     "wrong": [
+      "Dukhan Bay",
+      "Al Thakira",
+      "Purple Island"
+     ],
+     "why": "It is one of the few places where the sea reaches deep into the desert."
+    },
+    {
+     "level": 2,
+     "q": "Which stadium of the 2022 World Cup was built from shipping containers?",
+     "a": "Stadium 974",
+     "wrong": [
+      "Al Janoub Stadium",
+      "Education City Stadium",
+      "Al Thumama Stadium"
+     ],
+     "why": "It was designed to be taken apart."
+    },
+    {
+     "level": 2,
+     "q": "Which national sport involves trained birds hunting prey?",
+     "a": "Falconry",
+     "wrong": [
+      "Camel racing",
+      "Archery",
+      "Dhow racing"
+     ],
+     "why": "Doha has a falcon souq."
+    },
+    {
+     "level": 3,
+     "q": "Which Qatari dish of meat and spiced rice is similar to kabsa?",
+     "a": "Machboos",
+     "wrong": [
+      "Harees",
+      "Thareed",
+      "Madrooba"
+     ],
+     "why": "It is often called the national dish."
+    },
+    {
+     "level": 3,
+     "q": "Which Richard Serra sculpture stands in the desert of Qatar?",
+     "a": "East-West/West-East",
+     "wrong": [
+      "Tilted Arc",
+      "Fernando Pessoa",
+      "Sequence"
+     ],
+     "why": "It is made of four huge steel plates."
+    },
+    {
+     "level": 3,
+     "q": "Which city is being built as Qatar's showpiece new city?",
+     "a": "Lusail",
+     "wrong": [
+      "Al Khor",
+      "Mesaieed",
+      "Dukhan"
+     ],
+     "why": "It hosted the World Cup final."
+    }
+   ]
+  }
+ ]
+}

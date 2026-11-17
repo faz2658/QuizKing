@@ -1,0 +1,346 @@
+{
+ "category": "Algeria",
+ "country": "DZ",
+ "topics": [
+  {
+   "name": "Algeria: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Algeria gain independence from France?",
+     "a": "1962",
+     "wrong": [
+      "1956",
+      "1954",
+      "1945"
+     ],
+     "why": "Independence Day is 5 July."
+    },
+    {
+     "level": 1,
+     "q": "Which war for independence began in 1954?",
+     "a": "Algerian War",
+     "wrong": [
+      "Rif War",
+      "Suez War",
+      "Ifni War"
+     ],
+     "why": "It lasted almost eight years."
+    },
+    {
+     "level": 1,
+     "q": "Which party led the fight for independence?",
+     "a": "National Liberation Front (FLN)",
+     "wrong": [
+      "Ba'ath Party",
+      "Muslim Brotherhood",
+      "Popular Front"
+     ],
+     "why": "It ruled for decades after independence."
+    },
+    {
+     "level": 1,
+     "q": "Which emir led resistance against French invasion in the 1830s–40s?",
+     "a": "Emir Abdelkader",
+     "wrong": [
+      "Ahmed Bey",
+      "Messali Hadj",
+      "Lalla Fatma N'Soumer"
+     ],
+     "why": "He was later admired even by his enemies."
+    },
+    {
+     "level": 1,
+     "q": "Who was Algeria's first President?",
+     "a": "Ahmed Ben Bella",
+     "wrong": [
+      "Houari Boumediene",
+      "Abdelaziz Bouteflika",
+      "Chadli Bendjedid"
+     ],
+     "why": "He was overthrown in 1965."
+    },
+    {
+     "level": 1,
+     "q": "Which French author born in Algeria wrote 'The Stranger'?",
+     "a": "Albert Camus",
+     "wrong": [
+      "Jean-Paul Sartre",
+      "André Gide",
+      "Frantz Fanon"
+     ],
+     "why": "He won the Nobel Prize in 1957."
+    },
+    {
+     "level": 1,
+     "q": "Which country colonised Algeria from 1830?",
+     "a": "France",
+     "wrong": [
+      "Spain",
+      "Italy",
+      "Britain"
+     ],
+     "why": "Algeria was treated as part of France."
+    },
+    {
+     "level": 2,
+     "q": "Who led Algeria from 1965 to 1978?",
+     "a": "Houari Boumediene",
+     "wrong": [
+      "Ahmed Ben Bella",
+      "Chadli Bendjedid",
+      "Liamine Zéroual"
+     ],
+     "why": "He nationalised the oil industry."
+    },
+    {
+     "level": 2,
+     "q": "Who was President from 1999 until 2019?",
+     "a": "Abdelaziz Bouteflika",
+     "wrong": [
+      "Abdelmadjid Tebboune",
+      "Liamine Zéroual",
+      "Mohamed Boudiaf"
+     ],
+     "why": "Mass protests called the Hirak ended his rule."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient Numidian king fought both Carthage and Rome?",
+     "a": "Massinissa",
+     "wrong": [
+      "Jugurtha",
+      "Juba I",
+      "Syphax"
+     ],
+     "why": "He united Numidia."
+    },
+    {
+     "level": 2,
+     "q": "Which 1957 battle saw French paratroopers fight in the capital?",
+     "a": "Battle of Algiers",
+     "wrong": [
+      "Battle of Oran",
+      "Battle of Constantine",
+      "Battle of Sétif"
+     ],
+     "why": "A famous 1966 film depicts it."
+    },
+    {
+     "level": 2,
+     "q": "Which woman led resistance to the French in Kabylie in the 1850s?",
+     "a": "Lalla Fatma N'Soumer",
+     "wrong": [
+      "Djamila Bouhired",
+      "Hassiba Ben Bouali",
+      "Kahina"
+     ],
+     "why": "She is called the 'Joan of Arc of Djurdjura'."
+    },
+    {
+     "level": 3,
+     "q": "Which Berber queen resisted the Arab conquest in the 600s?",
+     "a": "Dihya (Kahina)",
+     "wrong": [
+      "Tin Hinan",
+      "Lalla Fatma",
+      "Sophonisba"
+     ],
+     "why": "She was killed around 701."
+    },
+    {
+     "level": 3,
+     "q": "Which Christian thinker was born in Thagaste in Roman Algeria?",
+     "a": "Saint Augustine",
+     "wrong": [
+      "Tertullian",
+      "Cyprian",
+      "Origen"
+     ],
+     "why": "He was Bishop of Hippo."
+    },
+    {
+     "level": 3,
+     "q": "Which 2019 protest movement brought weekly marches?",
+     "a": "Hirak",
+     "wrong": [
+      "Arab Spring",
+      "Black Decade",
+      "Berber Spring"
+     ],
+     "why": "It began in February 2019."
+    }
+   ]
+  },
+  {
+   "name": "Algeria: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Algeria's capital?",
+     "a": "Algiers",
+     "wrong": [
+      "Oran",
+      "Constantine",
+      "Annaba"
+     ],
+     "why": "It is called 'Algiers the White'."
+    },
+    {
+     "level": 1,
+     "q": "Which is Africa's largest country by area?",
+     "a": "Algeria",
+     "wrong": [
+      "DR Congo",
+      "Sudan",
+      "Libya"
+     ],
+     "why": "Most of it is the Sahara."
+    },
+    {
+     "level": 1,
+     "q": "What is Algeria's currency?",
+     "a": "Algerian dinar",
+     "wrong": [
+      "Dirham",
+      "Franc",
+      "Riyal"
+     ],
+     "why": "Its code is DZD."
+    },
+    {
+     "level": 1,
+     "q": "Which desert covers most of Algeria?",
+     "a": "Sahara",
+     "wrong": [
+      "Kalahari",
+      "Namib",
+      "Gobi"
+     ],
+     "why": "It has huge sand seas called ergs."
+    },
+    {
+     "level": 1,
+     "q": "Which semolina dish is served with stews across the Maghreb?",
+     "a": "Couscous",
+     "wrong": [
+      "Bulgur",
+      "Polenta",
+      "Pilaf"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "Which old walled quarter of Algiers is a UNESCO site?",
+     "a": "Casbah",
+     "wrong": [
+      "Medina of Fez",
+      "Souk el Attarine",
+      "Bab el Oued"
+     ],
+     "why": "It climbs steeply above the harbour."
+    },
+    {
+     "level": 1,
+     "q": "Which music style from Oran made Khaled famous?",
+     "a": "Raï",
+     "wrong": [
+      "Chaabi",
+      "Gnawa",
+      "Malouf"
+     ],
+     "why": "Khaled's 'Didi' was a hit in 1992."
+    },
+    {
+     "level": 2,
+     "q": "Which city is called the 'City of Bridges'?",
+     "a": "Constantine",
+     "wrong": [
+      "Oran",
+      "Tlemcen",
+      "Béjaïa"
+     ],
+     "why": "It is built across a deep gorge."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain range in the Sahara has rock art and volcanic peaks?",
+     "a": "Hoggar Mountains",
+     "wrong": [
+      "Atlas Mountains",
+      "Aurès Mountains",
+      "Kabylie Mountains"
+     ],
+     "why": "Tamanrasset is its main town."
+    },
+    {
+     "level": 2,
+     "q": "Which UNESCO plateau in the Sahara has thousands of ancient rock paintings?",
+     "a": "Tassili n'Ajjer",
+     "wrong": [
+      "Hoggar",
+      "Tadrart Acacus",
+      "Ennedi"
+     ],
+     "why": "Some paintings are around 10,000 years old."
+    },
+    {
+     "level": 2,
+     "q": "Which Roman city in the east is called 'the Pompeii of Africa'?",
+     "a": "Timgad",
+     "wrong": [
+      "Djemila",
+      "Tipasa",
+      "Volubilis"
+     ],
+     "why": "Trajan founded it around AD 100."
+    },
+    {
+     "level": 2,
+     "q": "Which footballer born to Algerian parents won the 1998 World Cup with France?",
+     "a": "Zinedine Zidane",
+     "wrong": [
+      "Karim Benzema",
+      "Riyad Mahrez",
+      "Samir Nasri"
+     ],
+     "why": "His family came from Kabylie."
+    },
+    {
+     "level": 3,
+     "q": "Which Algerian winger won the Premier League with Leicester City in 2016?",
+     "a": "Riyad Mahrez",
+     "wrong": [
+      "Islam Slimani",
+      "Sofiane Feghouli",
+      "Yacine Brahimi"
+     ],
+     "why": "He was named PFA Player of the Year."
+    },
+    {
+     "level": 3,
+     "q": "Which oasis valley of the Sahara has five ksour towns and is a UNESCO site?",
+     "a": "M'zab Valley",
+     "wrong": [
+      "Souf Valley",
+      "Saoura Valley",
+      "Touat Valley"
+     ],
+     "why": "Ghardaïa is its main town."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Algeria win its second Africa Cup of Nations?",
+     "a": "2019",
+     "wrong": [
+      "1990",
+      "2004",
+      "2015"
+     ],
+     "why": "It first won in 1990."
+    }
+   ]
+  }
+ ]
+}
