@@ -17,6 +17,16 @@ public class Questions {
 	private String correctAnswer;
 	/** Optional one-line "why", shown after answering. */
 	private String explanation;
+	/** ISO country code for a country-specific question (e.g. "IN"); blank for general questions. */
+	private String country;
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
 
 	public int getQuestionId() {
 		return questionId;

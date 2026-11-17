@@ -113,7 +113,8 @@ class PackLoaderTest {
 		ArgumentCaptor<List<Questions>> first = ArgumentCaptor.forClass(List.class);
 		verify(bank).importQuestions(eq(pack.category()), eq("IN"), eq(pack.topics().get(0).name()), first.capture());
 		assertThat(first.getValue()).hasSize(pack.topics().get(0).questions().size() - 1)
-				.noneMatch(q -> q.getQuestionId() == retiredId);
+				.noneMatch(q -> q.getQuestionId() == retiredId)
+				.allMatch(q -> "IN".equals(q.getCountry())); // each question carries its country for the game mix
 	}
 
 	@Test

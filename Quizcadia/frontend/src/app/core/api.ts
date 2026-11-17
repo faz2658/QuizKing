@@ -2,6 +2,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable, catchError, forkJoin, map, of } from 'rxjs';
 import { retryWhileLoading } from './http-errors';
+import { World } from './world';
 import {
   Achievement,
   AdaptiveAnswer,
@@ -208,9 +209,16 @@ export class QuestionBankApi {
 @Injectable({ providedIn: 'root' })
 export class QuizApi {
   private readonly http = inject(HttpClient);
+  private readonly world = inject(World);
+
+  /** The player's country, sent when a game starts so most questions come from it (never shown to the player). */
+  private country(): { country?: string } {
+    const c = this.world.country();
+    return c ? { country: c } : {};
+  }
 
   start(gameId: number, userId: number): Observable<SessionView> {
-    return this.http.post<SessionView>('/api/v1/sessions', { gameId, userId }).pipe(retryWhileLoading());
+    return this.http.post<SessionView>('/api/v1/sessions', { gameId, userId, ...this.country() }).pipe(retryWhileLoading());
   }
 
   session(id: string): Observable<SessionView> {
@@ -239,7 +247,7 @@ export class QuizApi {
   }
 
   startCustom(gameIds: number[], difficulty: CustomDifficulty, count: number): Observable<SessionView> {
-    return this.http.post<SessionView>('/api/v1/sessions/custom', { gameIds, difficulty, count }).pipe(retryWhileLoading());
+    return this.http.post<SessionView>('/api/v1/sessions/custom', { gameIds, difficulty, count, ...this.country() }).pipe(retryWhileLoading());
   }
 
   /** Turns a finished game into a challenge link for friends. */

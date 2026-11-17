@@ -4,7 +4,11 @@ import static com.fazeel.quizcadia.session.TestGames.game;
 import static com.fazeel.quizcadia.session.TestGames.question;
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.time.Instant;
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Random;
 
 import org.junit.jupiter.api.Test;
@@ -160,5 +164,101 @@ class QuizBuilderTest {
 		g.setQuestions(null);
 
 		assertThat(builder.build(g)).isEmpty();
+	}
+
+	// --- country mix ---
+
+	private static Questions tagged(int id, int level, String country) {
+		Questions q = ok(id, level);
+		q.setCountry(country);
+		return q;
+	}
+
+	/** 30 questions each (10 per level) for India, general and Kenya: ids 100+, 200+ and 300+. */
+	private static Game mixedGame(GameQuestionLevel mix) {
+		List<Questions> qs = new ArrayList<>();
+		for (int i = 0; i < 30; i++) {
+			int level = i % 3 + 1;
+			qs.add(tagged(100 + i, level, "IN"));
+			qs.add(tagged(200 + i, level, null));
+			qs.add(tagged(300 + i, level, "KE"));
+		}
+		return game(1, mix, qs.toArray(Questions[]::new));
+	}
+
+	private static Map<String, Long> origin(List<SessionQuestion> quiz) {
+		Map<String, Long> by = new HashMap<>();
+		quiz.forEach(q -> by.merge(q.getQuestionId() < 200 ? "IN" : q.getQuestionId() < 300 ? "general" : "KE", 1L, Long::sum));
+		return by;
+	}
+
+	@Test
+	void aPlayersGameIsThreeQuartersTheirCountryAndAQuarterGeneral() {
+		List<SessionQuestion> quiz = builder.build(mixedGame(new GameQuestionLevel(0, 4, 4, 4)), Map.of(), "in");
+
+		assertThat(quiz).hasSize(12);
+		assertThat(origin(quiz)).containsEntry("IN", 9L).containsEntry("general", 3L).doesNotContainKey("KE");
+	}
+
+	@Test
+	void theMixKeepsTheLevelOrderAndNoRepeats() {
+		List<SessionQuestion> quiz = builder.build(mixedGame(new GameQuestionLevel(0, 4, 4, 4)), Map.of(), "IN");
+
+		assertThat(quiz.stream().map(SessionQuestion::getQuestionId).distinct()).hasSize(12);
+		List<Integer> levels = quiz.stream().map(q -> Difficulty.fromLevel(levelOf(q.getQuestionId())).level()).toList();
+		assertThat(levels).isSorted();
+	}
+
+	private static int levelOf(int id) {
+		return id % 100 % 3 + 1;
+	}
+
+	@Test
+	void whenTheCountryIsUsedUpGeneralQuestionsFillInBeforeAnythingRepeats() {
+		Map<Integer, Instant> seen = new HashMap<>();
+		for (int i = 0; i < 30; i++) {
+			seen.put(100 + i, Instant.ofEpochSecond(i));
+		}
+		List<SessionQuestion> quiz = builder.build(mixedGame(new GameQuestionLevel(0, 4, 4, 4)), seen, "IN");
+
+		assertThat(origin(quiz)).containsEntry("general", 12L).doesNotContainKeys("IN", "KE");
+	}
+
+	@Test
+	void withFewGeneralQuestionsTheCountryFillsTheRest() {
+		List<Questions> qs = new ArrayList<>();
+		for (int i = 0; i < 20; i++) {
+			qs.add(tagged(100 + i, 1, "IN"));
+		}
+		qs.add(tagged(200, 1, null));
+		List<SessionQuestion> quiz = builder.build(game(1, new GameQuestionLevel(0, 10, 0, 0), qs.toArray(Questions[]::new)),
+				Map.of(), "IN");
+
+		assertThat(origin(quiz)).containsEntry("IN", 9L).containsEntry("general", 1L);
+	}
+
+	@Test
+	void aPlayerWhoseCountryHasNoQuestionsGetsGeneralOnes() {
+		List<SessionQuestion> quiz = builder.build(mixedGame(new GameQuestionLevel(0, 4, 4, 4)), Map.of(), "US");
+
+		assertThat(origin(quiz)).containsEntry("general", 12L).hasSize(1);
+	}
+
+	@Test
+	void withoutACountryEveryQuestionIsEligibleAsBefore() {
+		Map<String, Long> seenOrigins = new HashMap<>();
+		for (long seed = 0; seed < 20; seed++) {
+			origin(new QuizBuilder(new Random(seed)).build(mixedGame(new GameQuestionLevel(0, 4, 4, 4)), Map.of(), null))
+					.forEach((k, v) -> seenOrigins.merge(k, v, Long::sum));
+		}
+
+		assertThat(seenOrigins).containsKeys("IN", "general", "KE");
+	}
+
+	@Test
+	void aGameWithOnlyOtherCountriesQuestionsStillPlays() {
+		Game kenyaOnly = game(1, new GameQuestionLevel(0, 3, 0, 0), tagged(1, 1, "KE"), tagged(2, 1, "KE"), tagged(3, 1, "KE"));
+
+		assertThat(builder.build(kenyaOnly, Map.of(), "IN")).hasSize(3);
 	}
 }

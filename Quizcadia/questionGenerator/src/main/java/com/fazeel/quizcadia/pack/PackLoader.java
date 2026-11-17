@@ -77,7 +77,7 @@ public class PackLoader {
 			}
 			QuestionPack pack = QuestionPack.parse(p.json());
 			for (QuestionPack.PackTopic topic : pack.topics()) {
-				List<Questions> questions = QuestionPack.questions(topic).stream()
+				List<Questions> questions = QuestionPack.questions(topic, pack.country()).stream()
 						.filter(q -> !retired.test(q.getQuestionId())).toList();
 				added += bank.importQuestions(pack.category(), pack.country(), topic.name(), questions);
 			}

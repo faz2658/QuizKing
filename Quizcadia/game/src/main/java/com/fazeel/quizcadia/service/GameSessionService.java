@@ -58,6 +58,11 @@ public class GameSessionService {
 	}
 
 	public GameSession start(int gameId, int userId, String playerName) {
+		return start(gameId, userId, playerName, null);
+	}
+
+	/** @param country the player's country (ISO code, may be null): most questions then come from it */
+	public GameSession start(int gameId, int userId, String playerName, String country) {
 		Game game = games.findById(gameId).orElseThrow(() -> {
 			events.requestGame(new GameRequest(gameId, userId));
 			return new GameNotReadyException(gameId);
@@ -66,7 +71,7 @@ public class GameSessionService {
 				: game.getQuestions().stream().filter(java.util.Objects::nonNull).map(Questions::getQuestionId).toList();
 		Map<Integer, Instant> lastSeen = seen.findByUserIdAndQuestionIdIn(userId, poolIds).stream()
 				.collect(Collectors.toMap(SeenQuestion::questionId, SeenQuestion::lastSeenAt, (a, b) -> a));
-		List<SessionQuestion> questions = quizBuilder.build(game, lastSeen);
+		List<SessionQuestion> questions = quizBuilder.build(game, lastSeen, country);
 		if (questions.isEmpty()) {
 			throw new QuizRuleException("Game " + gameId + " has no playable questions");
 		}
@@ -92,6 +97,12 @@ public class GameSessionService {
 	 */
 	public GameSession startCustom(List<Integer> gameIds, CustomDifficulty difficulty, int count, int userId,
 			String playerName) {
+		return startCustom(gameIds, difficulty, count, userId, playerName, null);
+	}
+
+	/** @param country the player's country (ISO code, may be null): most questions then come from it */
+	public GameSession startCustom(List<Integer> gameIds, CustomDifficulty difficulty, int count, int userId,
+			String playerName, String country) {
 		List<Integer> ids = gameIds == null ? List.of() : gameIds.stream().distinct().toList();
 		if (ids.isEmpty() || ids.size() > CUSTOM_MAX_TOPICS) {
 			throw new QuizRuleException("Pick between 1 and " + CUSTOM_MAX_TOPICS + " topics");
@@ -126,7 +137,7 @@ public class GameSessionService {
 		custom.setQuestionLevels(new com.fazeel.quizcadia.domain.GameQuestionLevel(0, easy, medium, advanced));
 		Map<Integer, Instant> lastSeen = seen.findByUserIdAndQuestionIdIn(userId, List.copyOf(pool.keySet())).stream()
 				.collect(Collectors.toMap(SeenQuestion::questionId, SeenQuestion::lastSeenAt, (a, b) -> a));
-		List<SessionQuestion> questions = quizBuilder.build(custom, lastSeen);
+		List<SessionQuestion> questions = quizBuilder.build(custom, lastSeen, country);
 		if (questions.isEmpty()) {
 			throw new QuizRuleException("Those topics have no playable questions yet");
 		}

@@ -75,11 +75,18 @@ class GameSessionControllerTest {
 	}
 
 	@Test
+	void aCountryThatIsNotATwoLetterCodeIsRejected() throws Exception {
+		mvc.perform(post("/api/v1/sessions").with(player(42)).contentType(MediaType.APPLICATION_JSON)
+				.content("{\"gameId\":5,\"userId\":42,\"country\":\"India\"}"))
+				.andExpect(status().isBadRequest());
+	}
+
+	@Test
 	void startingAGameReturnsTheFirstQuestionWithoutItsAnswer() throws Exception {
-		when(service.start(eq(5), eq(42), any())).thenReturn(session());
+		when(service.start(eq(5), eq(42), any(), eq("IN"))).thenReturn(session());
 
 		mvc.perform(post("/api/v1/sessions").with(player(42)).contentType(MediaType.APPLICATION_JSON)
-				.content("{\"gameId\":5,\"userId\":42}"))
+				.content("{\"gameId\":5,\"userId\":42,\"country\":\"IN\"}"))
 				.andExpect(status().isCreated())
 				.andExpect(jsonPath("$.sessionId").value("abc"))
 				.andExpect(jsonPath("$.currentQuestion.stem").value("Capital of France?"))
@@ -95,7 +102,7 @@ class GameSessionControllerTest {
 
 	@Test
 	void gameStillLoadingAnswers503WithRetryHint() throws Exception {
-		when(service.start(anyInt(), anyInt(), any())).thenThrow(new GameNotReadyException(5));
+		when(service.start(anyInt(), anyInt(), any(), any())).thenThrow(new GameNotReadyException(5));
 
 		mvc.perform(post("/api/v1/sessions").with(player(42)).contentType(MediaType.APPLICATION_JSON)
 				.content("{\"gameId\":5,\"userId\":42}"))

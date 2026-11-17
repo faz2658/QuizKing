@@ -4,6 +4,7 @@ import { TestBed } from '@angular/core/testing';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { CatalogApi, QuizApi } from './api';
 import { GameCard } from './models';
+import { World } from './world';
 
 describe('API clients', () => {
   let http: HttpTestingController;
@@ -56,5 +57,24 @@ describe('API clients', () => {
 
     expect(started).toBe(true);
     vi.useRealTimers();
+  });
+
+  it('sends the player country when a game starts, and leaves it out when unknown', () => {
+    const world = TestBed.inject(World);
+    const others = (r: { url: string }) => r.url.includes('/reports/') || r.url.includes('/matching/');
+    world.setCountry('IN');
+    http.match(others);
+    TestBed.inject(QuizApi).start(5, 9).subscribe();
+    expect(http.expectOne('/api/v1/sessions').request.body).toEqual({ gameId: 5, userId: 9, country: 'IN' });
+
+    TestBed.inject(QuizApi).startCustom([1, 2], 'MIXED', 10).subscribe();
+    expect(http.expectOne('/api/v1/sessions/custom').request.body).toEqual(
+      expect.objectContaining({ gameIds: [1, 2], country: 'IN' }),
+    );
+
+    world.setCountry(null);
+    http.match(others);
+    TestBed.inject(QuizApi).start(5, 9).subscribe();
+    expect(http.expectOne('/api/v1/sessions').request.body).toEqual({ gameId: 5, userId: 9 });
   });
 });
