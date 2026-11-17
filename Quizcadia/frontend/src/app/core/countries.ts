@@ -1,5 +1,7 @@
+import { COUNTRY_ZONES } from './zones';
+
 /** ISO 3166-1 alpha-2 codes offered in the country picker. */
-const CODES = (
+export const CODES = (
   'AF AL DZ AD AO AG AR AM AU AT AZ BS BH BD BB BY BE BZ BJ BT BO BA BW BR BN BG BF BI KH CM CA CV CF TD CL CN CO KM CG CD CR CI HR CU CY CZ ' +
   'DK DJ DM DO EC EG SV GQ ER EE SZ ET FJ FI FR GA GM GE DE GH GR GD GT GN GW GY HT HN HK HU IS IN ID IR IQ IE IL IT JM JP JO KZ KE KI KW KG ' +
   'LA LV LB LS LR LY LI LT LU MO MG MW MY MV ML MT MH MR MU MX FM MD MC MN ME MA MZ MM NA NR NP NL NZ NI NE NG KP MK NO OM PK PW PS PA PG PY PE ' +
@@ -31,48 +33,10 @@ export function allCountries(): { code: string; name: string }[] {
   return CODES.map((code) => ({ code, name: countryName(code) })).sort((a, b) => a.name.localeCompare(b.name));
 }
 
-/**
- * Time zones and their country. Covers each country's main zones (and old aliases browsers still report);
- * zones shared by several countries (UTC, Etc/*) are left out on purpose.
- */
-const ZONE_COUNTRY: Record<string, string> = {
-  // South Asia
-  'Asia/Kolkata': 'IN', 'Asia/Calcutta': 'IN', 'Asia/Karachi': 'PK', 'Asia/Dhaka': 'BD', 'Asia/Dacca': 'BD',
-  'Asia/Colombo': 'LK', 'Asia/Kathmandu': 'NP', 'Asia/Katmandu': 'NP', 'Asia/Thimphu': 'BT', 'Indian/Maldives': 'MV',
-  'Asia/Kabul': 'AF',
-  // rest of Asia and the Middle East
-  'Asia/Dubai': 'AE', 'Asia/Riyadh': 'SA', 'Asia/Qatar': 'QA', 'Asia/Kuwait': 'KW', 'Asia/Bahrain': 'BH', 'Asia/Muscat': 'OM',
-  'Asia/Tehran': 'IR', 'Asia/Baghdad': 'IQ', 'Asia/Jerusalem': 'IL', 'Asia/Tel_Aviv': 'IL', 'Asia/Amman': 'JO',
-  'Asia/Beirut': 'LB', 'Asia/Damascus': 'SY', 'Europe/Istanbul': 'TR', 'Asia/Istanbul': 'TR', 'Asia/Shanghai': 'CN',
-  'Asia/Chongqing': 'CN', 'Asia/Urumqi': 'CN', 'Asia/Hong_Kong': 'HK', 'Asia/Macau': 'MO', 'Asia/Taipei': 'TW',
-  'Asia/Tokyo': 'JP', 'Asia/Seoul': 'KR', 'Asia/Singapore': 'SG', 'Asia/Kuala_Lumpur': 'MY', 'Asia/Bangkok': 'TH',
-  'Asia/Ho_Chi_Minh': 'VN', 'Asia/Saigon': 'VN', 'Asia/Manila': 'PH', 'Asia/Jakarta': 'ID', 'Asia/Makassar': 'ID',
-  'Asia/Jayapura': 'ID', 'Asia/Yangon': 'MM', 'Asia/Rangoon': 'MM', 'Asia/Phnom_Penh': 'KH', 'Asia/Almaty': 'KZ',
-  'Asia/Tashkent': 'UZ', 'Asia/Baku': 'AZ', 'Asia/Tbilisi': 'GE', 'Asia/Yerevan': 'AM', 'Asia/Ulaanbaatar': 'MN',
-  // Europe
-  'Europe/London': 'GB', 'Europe/Dublin': 'IE', 'Europe/Paris': 'FR', 'Europe/Berlin': 'DE', 'Europe/Madrid': 'ES',
-  'Europe/Lisbon': 'PT', 'Europe/Rome': 'IT', 'Europe/Amsterdam': 'NL', 'Europe/Brussels': 'BE', 'Europe/Zurich': 'CH',
-  'Europe/Vienna': 'AT', 'Europe/Warsaw': 'PL', 'Europe/Prague': 'CZ', 'Europe/Stockholm': 'SE', 'Europe/Oslo': 'NO',
-  'Europe/Helsinki': 'FI', 'Europe/Copenhagen': 'DK', 'Europe/Athens': 'GR', 'Europe/Bucharest': 'RO',
-  'Europe/Budapest': 'HU', 'Europe/Kyiv': 'UA', 'Europe/Kiev': 'UA', 'Europe/Moscow': 'RU', 'Atlantic/Reykjavik': 'IS',
-  // Africa
-  'Africa/Cairo': 'EG', 'Africa/Casablanca': 'MA', 'Africa/Algiers': 'DZ', 'Africa/Tunis': 'TN', 'Africa/Lagos': 'NG',
-  'Africa/Accra': 'GH', 'Africa/Nairobi': 'KE', 'Africa/Addis_Ababa': 'ET', 'Africa/Johannesburg': 'ZA',
-  'Africa/Dar_es_Salaam': 'TZ', 'Africa/Kampala': 'UG', 'Africa/Dakar': 'SN', 'Africa/Abidjan': 'CI',
-  // Americas
-  'America/New_York': 'US', 'America/Chicago': 'US', 'America/Denver': 'US', 'America/Phoenix': 'US',
-  'America/Los_Angeles': 'US', 'America/Anchorage': 'US', 'America/Detroit': 'US', 'Pacific/Honolulu': 'US',
-  'America/Indiana/Indianapolis': 'US', 'America/Boise': 'US', 'US/Eastern': 'US', 'US/Central': 'US', 'US/Pacific': 'US',
-  'America/Toronto': 'CA', 'America/Vancouver': 'CA', 'America/Edmonton': 'CA', 'America/Winnipeg': 'CA',
-  'America/Halifax': 'CA', 'America/St_Johns': 'CA', 'America/Regina': 'CA', 'America/Montreal': 'CA',
-  'America/Mexico_City': 'MX', 'America/Sao_Paulo': 'BR', 'America/Argentina/Buenos_Aires': 'AR',
-  'America/Buenos_Aires': 'AR', 'America/Santiago': 'CL', 'America/Bogota': 'CO', 'America/Lima': 'PE',
-  'America/Caracas': 'VE', 'America/Havana': 'CU', 'America/Jamaica': 'JM', 'America/Port_of_Spain': 'TT',
-  // Oceania
-  'Australia/Sydney': 'AU', 'Australia/Melbourne': 'AU', 'Australia/Brisbane': 'AU', 'Australia/Perth': 'AU',
-  'Australia/Adelaide': 'AU', 'Australia/Hobart': 'AU', 'Australia/Darwin': 'AU', 'Pacific/Auckland': 'NZ',
-  'Pacific/Fiji': 'FJ',
-};
+/** Time zone → country (Asia/Kolkata → IN), from the generated per-country list in zones.ts. */
+const ZONE_COUNTRY: Record<string, string> = Object.fromEntries(
+  Object.entries(COUNTRY_ZONES).flatMap(([code, zones]) => zones.split(' ').map((zone) => [zone, code])),
+);
 
 /** The country of a time zone (Asia/Kolkata → IN), or null for zones not tied to one country. */
 export function countryFromZone(zone: string | null | undefined): string | null {
