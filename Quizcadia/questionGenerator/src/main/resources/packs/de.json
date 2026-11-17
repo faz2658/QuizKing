@@ -1,0 +1,1092 @@
+{
+ "category": "Germany",
+ "country": "DE",
+ "topics": [
+  {
+   "name": "Germany History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did the Berlin Wall fall?",
+     "a": "1989",
+     "wrong": [
+      "1991",
+      "1985",
+      "1961"
+     ],
+     "why": "The border opened on 9 November 1989."
+    },
+    {
+     "level": 1,
+     "q": "In which year was Germany reunified?",
+     "a": "1990",
+     "wrong": [
+      "1989",
+      "1992",
+      "1995"
+     ],
+     "why": "Reunification Day is 3 October."
+    },
+    {
+     "level": 1,
+     "q": "Who was the first Chancellor of the German Empire in 1871?",
+     "a": "Otto von Bismarck",
+     "wrong": [
+      "Wilhelm I",
+      "Konrad Adenauer",
+      "Friedrich Ebert"
+     ],
+     "why": "He was called the 'Iron Chancellor'."
+    },
+    {
+     "level": 1,
+     "q": "Who was Germany's first woman Chancellor?",
+     "a": "Angela Merkel",
+     "wrong": [
+      "Ursula von der Leyen",
+      "Annegret Kramp-Karrenbauer",
+      "Annalena Baerbock"
+     ],
+     "why": "She served from 2005 to 2021."
+    },
+    {
+     "level": 1,
+     "q": "Which monk started the Protestant Reformation in 1517?",
+     "a": "Martin Luther",
+     "wrong": [
+      "John Calvin",
+      "Huldrych Zwingli",
+      "Thomas Müntzer"
+     ],
+     "why": "He posted 95 theses in Wittenberg."
+    },
+    {
+     "level": 1,
+     "q": "Who invented the printing press with movable type around 1450?",
+     "a": "Johannes Gutenberg",
+     "wrong": [
+      "Albrecht Dürer",
+      "Martin Luther",
+      "Johannes Kepler"
+     ],
+     "why": "He worked in Mainz."
+    },
+    {
+     "level": 1,
+     "q": "Which city was divided into East and West during the Cold War?",
+     "a": "Berlin",
+     "wrong": [
+      "Munich",
+      "Bonn",
+      "Leipzig"
+     ],
+     "why": "The Wall stood from 1961 to 1989."
+    },
+    {
+     "level": 2,
+     "q": "Which city was West Germany's capital?",
+     "a": "Bonn",
+     "wrong": [
+      "Frankfurt",
+      "Cologne",
+      "Hamburg"
+     ],
+     "why": "Berlin became the capital again after reunification."
+    },
+    {
+     "level": 2,
+     "q": "Who was West Germany's first Chancellor?",
+     "a": "Konrad Adenauer",
+     "wrong": [
+      "Ludwig Erhard",
+      "Willy Brandt",
+      "Helmut Schmidt"
+     ],
+     "why": "He served from 1949 to 1963."
+    },
+    {
+     "level": 2,
+     "q": "Which Chancellor knelt at the Warsaw Ghetto memorial in 1970?",
+     "a": "Willy Brandt",
+     "wrong": [
+      "Helmut Kohl",
+      "Helmut Schmidt",
+      "Kurt Georg Kiesinger"
+     ],
+     "why": "He won the Nobel Peace Prize in 1971."
+    },
+    {
+     "level": 2,
+     "q": "Which Chancellor oversaw German reunification?",
+     "a": "Helmut Kohl",
+     "wrong": [
+      "Gerhard Schröder",
+      "Helmut Schmidt",
+      "Willy Brandt"
+     ],
+     "why": "He served for 16 years."
+    },
+    {
+     "level": 2,
+     "q": "What was the German democracy between 1919 and 1933 called?",
+     "a": "Weimar Republic",
+     "wrong": [
+      "Second Reich",
+      "Bonn Republic",
+      "Holy Roman Empire"
+     ],
+     "why": "Its constitution was drafted in Weimar."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient battle in AD 9 saw Germanic tribes defeat three Roman legions?",
+     "a": "Battle of the Teutoburg Forest",
+     "wrong": [
+      "Battle of Lechfeld",
+      "Battle of Leipzig",
+      "Battle of Tours"
+     ],
+     "why": "Arminius led the Germanic tribes."
+    },
+    {
+     "level": 3,
+     "q": "Which medieval trade league was centred on Lübeck?",
+     "a": "Hanseatic League",
+     "wrong": [
+      "Swabian League",
+      "Rhine League",
+      "Teutonic Order"
+     ],
+     "why": "Hamburg and Bremen still call themselves Hanseatic cities."
+    },
+    {
+     "level": 3,
+     "q": "Which 1648 peace treaties ended the Thirty Years' War?",
+     "a": "Peace of Westphalia",
+     "wrong": [
+      "Peace of Augsburg",
+      "Treaty of Versailles",
+      "Congress of Vienna"
+     ],
+     "why": "They were signed in Münster and Osnabrück."
+    },
+    {
+     "level": 3,
+     "q": "Which Frankish king was crowned emperor in AD 800?",
+     "a": "Charlemagne",
+     "wrong": [
+      "Otto I",
+      "Frederick Barbarossa",
+      "Clovis"
+     ],
+     "why": "His capital was Aachen."
+    }
+   ]
+  },
+  {
+   "name": "Germany Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Germany?",
+     "a": "Berlin",
+     "wrong": [
+      "Munich",
+      "Bonn",
+      "Frankfurt"
+     ],
+     "why": "It is also the largest city."
+    },
+    {
+     "level": 1,
+     "q": "Which river is famous for castles and the Lorelei rock?",
+     "a": "Rhine",
+     "wrong": [
+      "Danube",
+      "Elbe",
+      "Main"
+     ],
+     "why": "The Middle Rhine Valley is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "What is Germany's highest mountain?",
+     "a": "Zugspitze",
+     "wrong": [
+      "Watzmann",
+      "Feldberg",
+      "Brocken"
+     ],
+     "why": "It is 2,962 m high, on the Austrian border."
+    },
+    {
+     "level": 1,
+     "q": "In which city is the Oktoberfest held?",
+     "a": "Munich",
+     "wrong": [
+      "Berlin",
+      "Stuttgart",
+      "Nuremberg"
+     ],
+     "why": "It began in 1810."
+    },
+    {
+     "level": 1,
+     "q": "Which fairy-tale castle in Bavaria inspired Disney?",
+     "a": "Neuschwanstein",
+     "wrong": [
+      "Hohenzollern",
+      "Heidelberg Castle",
+      "Sanssouci"
+     ],
+     "why": "King Ludwig II built it."
+    },
+    {
+     "level": 1,
+     "q": "Which forest in the southwest is famous for cuckoo clocks?",
+     "a": "Black Forest",
+     "wrong": [
+      "Bavarian Forest",
+      "Thuringian Forest",
+      "Spreewald"
+     ],
+     "why": "Black Forest gateau is named after it."
+    },
+    {
+     "level": 1,
+     "q": "Which port city on the Elbe is Germany's second-largest city?",
+     "a": "Hamburg",
+     "wrong": [
+      "Bremen",
+      "Kiel",
+      "Rostock"
+     ],
+     "why": "It has more bridges than Venice."
+    },
+    {
+     "level": 2,
+     "q": "How many federal states (Länder) does Germany have?",
+     "a": "16",
+     "wrong": [
+      "12",
+      "10",
+      "20"
+     ],
+     "why": "Three are city-states: Berlin, Hamburg and Bremen."
+    },
+    {
+     "level": 2,
+     "q": "Which is Germany's largest state by area?",
+     "a": "Bavaria",
+     "wrong": [
+      "Lower Saxony",
+      "North Rhine-Westphalia",
+      "Baden-Württemberg"
+     ],
+     "why": "Its capital is Munich."
+    },
+    {
+     "level": 2,
+     "q": "Which is Germany's most populous state?",
+     "a": "North Rhine-Westphalia",
+     "wrong": [
+      "Bavaria",
+      "Baden-Württemberg",
+      "Lower Saxony"
+     ],
+     "why": "It includes Cologne and Düsseldorf."
+    },
+    {
+     "level": 2,
+     "q": "Which lake borders Germany, Austria and Switzerland?",
+     "a": "Lake Constance",
+     "wrong": [
+      "Chiemsee",
+      "Lake Geneva",
+      "Müritz"
+     ],
+     "why": "In German it is the Bodensee."
+    },
+    {
+     "level": 2,
+     "q": "Which Gothic cathedral is Cologne's landmark?",
+     "a": "Cologne Cathedral",
+     "wrong": [
+      "Aachen Cathedral",
+      "Ulm Minster",
+      "Frauenkirche"
+     ],
+     "why": "It took over 600 years to finish."
+    },
+    {
+     "level": 2,
+     "q": "Which is Germany's largest island?",
+     "a": "Rügen",
+     "wrong": [
+      "Sylt",
+      "Usedom",
+      "Fehmarn"
+     ],
+     "why": "It is famous for its chalk cliffs."
+    },
+    {
+     "level": 3,
+     "q": "Which church in Ulm has the world's tallest church spire?",
+     "a": "Ulm Minster",
+     "wrong": [
+      "Cologne Cathedral",
+      "St. Nicholas, Hamburg",
+      "Freiburg Minster"
+     ],
+     "why": "Its spire is about 161 m tall."
+    },
+    {
+     "level": 3,
+     "q": "Which river flows through Dresden?",
+     "a": "Elbe",
+     "wrong": [
+      "Oder",
+      "Spree",
+      "Saale"
+     ],
+     "why": "Dresden is called 'Florence on the Elbe'."
+    },
+    {
+     "level": 3,
+     "q": "Which shallow sea along the North Sea coast is a UNESCO site?",
+     "a": "Wadden Sea",
+     "wrong": [
+      "Baltic Sea",
+      "Kattegat",
+      "Bay of Kiel"
+     ],
+     "why": "At low tide you can walk across the mudflats."
+    }
+   ]
+  },
+  {
+   "name": "Germany Sport",
+   "questions": [
+    {
+     "level": 1,
+     "q": "How many FIFA World Cups has Germany won?",
+     "a": "4",
+     "wrong": [
+      "3",
+      "5",
+      "2"
+     ],
+     "why": "In 1954, 1974, 1990 and 2014."
+    },
+    {
+     "level": 1,
+     "q": "Which club has won the most Bundesliga titles?",
+     "a": "Bayern Munich",
+     "wrong": [
+      "Borussia Dortmund",
+      "Hamburger SV",
+      "Borussia Mönchengladbach"
+     ],
+     "why": "They won 11 titles in a row from 2013."
+    },
+    {
+     "level": 1,
+     "q": "Which German driver won seven Formula One titles?",
+     "a": "Michael Schumacher",
+     "wrong": [
+      "Sebastian Vettel",
+      "Nico Rosberg",
+      "Ralf Schumacher"
+     ],
+     "why": "Five came with Ferrari."
+    },
+    {
+     "level": 1,
+     "q": "Which tennis player won a 'Golden Slam' in 1988?",
+     "a": "Steffi Graf",
+     "wrong": [
+      "Martina Navratilova",
+      "Monica Seles",
+      "Angelique Kerber"
+     ],
+     "why": "She won all four majors and Olympic gold."
+    },
+    {
+     "level": 1,
+     "q": "Which 17-year-old won Wimbledon in 1985?",
+     "a": "Boris Becker",
+     "wrong": [
+      "Michael Stich",
+      "Alexander Zverev",
+      "Tommy Haas"
+     ],
+     "why": "He was the youngest men's champion."
+    },
+    {
+     "level": 1,
+     "q": "Which team did Germany beat 7–1 in the 2014 World Cup semi-final?",
+     "a": "Brazil",
+     "wrong": [
+      "Argentina",
+      "France",
+      "Netherlands"
+     ],
+     "why": "It was played in Belo Horizonte."
+    },
+    {
+     "level": 1,
+     "q": "Which German driver won four F1 titles with Red Bull?",
+     "a": "Sebastian Vettel",
+     "wrong": [
+      "Nico Rosberg",
+      "Nico Hülkenberg",
+      "Michael Schumacher"
+     ],
+     "why": "He won them from 2010 to 2013."
+    },
+    {
+     "level": 2,
+     "q": "Who scored the winning goal in the 2014 World Cup final?",
+     "a": "Mario Götze",
+     "wrong": [
+      "Thomas Müller",
+      "Miroslav Klose",
+      "André Schürrle"
+     ],
+     "why": "He scored in extra time against Argentina."
+    },
+    {
+     "level": 2,
+     "q": "Who is the all-time top scorer in World Cup finals?",
+     "a": "Miroslav Klose",
+     "wrong": [
+      "Gerd Müller",
+      "Thomas Müller",
+      "Jürgen Klinsmann"
+     ],
+     "why": "He scored 16 goals."
+    },
+    {
+     "level": 2,
+     "q": "Which defender, 'Der Kaiser', won the World Cup as player and coach?",
+     "a": "Franz Beckenbauer",
+     "wrong": [
+      "Berti Vogts",
+      "Lothar Matthäus",
+      "Paul Breitner"
+     ],
+     "why": "As captain in 1974 and coach in 1990."
+    },
+    {
+     "level": 2,
+     "q": "Which striker was nicknamed 'Der Bomber'?",
+     "a": "Gerd Müller",
+     "wrong": [
+      "Rudi Völler",
+      "Karl-Heinz Rummenigge",
+      "Uwe Seeler"
+     ],
+     "why": "He scored 365 Bundesliga goals."
+    },
+    {
+     "level": 2,
+     "q": "Which Dortmund stadium has the famous 'Yellow Wall' terrace?",
+     "a": "Signal Iduna Park",
+     "wrong": [
+      "Allianz Arena",
+      "Veltins-Arena",
+      "Olympiastadion"
+     ],
+     "why": "It is also called Westfalenstadion."
+    },
+    {
+     "level": 2,
+     "q": "Which city hosted the 1972 Summer Olympics?",
+     "a": "Munich",
+     "wrong": [
+      "Berlin",
+      "Stuttgart",
+      "Frankfurt"
+     ],
+     "why": "Its Olympic Park tent roofs are famous."
+    },
+    {
+     "level": 3,
+     "q": "Which German won the Tour de France in 1997?",
+     "a": "Jan Ullrich",
+     "wrong": [
+      "Erik Zabel",
+      "Andreas Klöden",
+      "Tony Martin"
+     ],
+     "why": "He was 23."
+    },
+    {
+     "level": 3,
+     "q": "The Four Hills ski-jumping tournament is held in Germany and which other country?",
+     "a": "Austria",
+     "wrong": [
+      "Switzerland",
+      "Norway",
+      "Italy"
+     ],
+     "why": "It visits Oberstdorf, Garmisch, Innsbruck and Bischofshofen."
+    },
+    {
+     "level": 3,
+     "q": "What was West Germany's 1954 World Cup win nicknamed?",
+     "a": "The Miracle of Bern",
+     "wrong": [
+      "The Miracle of Munich",
+      "The Bern Shock",
+      "The Swiss Surprise"
+     ],
+     "why": "They beat the favourites, Hungary, 3–2."
+    }
+   ]
+  },
+  {
+   "name": "Germany Film, TV & Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which composer wrote the 'Ode to Joy' in his Ninth Symphony?",
+     "a": "Ludwig van Beethoven",
+     "wrong": [
+      "Johann Sebastian Bach",
+      "Richard Wagner",
+      "Johannes Brahms"
+     ],
+     "why": "It is now the anthem of the European Union."
+    },
+    {
+     "level": 1,
+     "q": "Which band recorded 'Du hast'?",
+     "a": "Rammstein",
+     "wrong": [
+      "Kraftwerk",
+      "Scorpions",
+      "Tokio Hotel"
+     ],
+     "why": "It came out in 1997."
+    },
+    {
+     "level": 1,
+     "q": "Which band recorded 'Wind of Change'?",
+     "a": "Scorpions",
+     "wrong": [
+      "Rammstein",
+      "Nena",
+      "Modern Talking"
+     ],
+     "why": "It became an anthem of the end of the Cold War."
+    },
+    {
+     "level": 1,
+     "q": "Which singer had a hit with '99 Luftballons'?",
+     "a": "Nena",
+     "wrong": [
+      "Sandra",
+      "Helene Fischer",
+      "Lena"
+     ],
+     "why": "It topped charts in 1983."
+    },
+    {
+     "level": 1,
+     "q": "Which brothers collected tales like 'Hansel and Gretel'?",
+     "a": "The Brothers Grimm",
+     "wrong": [
+      "The Brothers Mann",
+      "The Schlegel Brothers",
+      "The Brothers Humboldt"
+     ],
+     "why": "Their first collection came out in 1812."
+    },
+    {
+     "level": 1,
+     "q": "Which writer wrote 'Faust'?",
+     "a": "Johann Wolfgang von Goethe",
+     "wrong": [
+      "Friedrich Schiller",
+      "Heinrich Heine",
+      "Thomas Mann"
+     ],
+     "why": "The Goethe-Institut is named after him."
+    },
+    {
+     "level": 1,
+     "q": "Which electronic pioneers recorded 'Autobahn'?",
+     "a": "Kraftwerk",
+     "wrong": [
+      "Tangerine Dream",
+      "Can",
+      "Neu!"
+     ],
+     "why": "They came from Düsseldorf."
+    },
+    {
+     "level": 2,
+     "q": "Which Baroque composer worked in Leipzig?",
+     "a": "Johann Sebastian Bach",
+     "wrong": [
+      "George Frideric Handel",
+      "Georg Philipp Telemann",
+      "Dietrich Buxtehude"
+     ],
+     "why": "He was cantor of St. Thomas Church."
+    },
+    {
+     "level": 2,
+     "q": "Which 2006 film about a Stasi officer won the Oscar for Best Foreign Language Film?",
+     "a": "The Lives of Others",
+     "wrong": [
+      "Good Bye, Lenin!",
+      "Run Lola Run",
+      "Downfall"
+     ],
+     "why": "Its German title is 'Das Leben der Anderen'."
+    },
+    {
+     "level": 2,
+     "q": "Which 2022 war film won four Oscars?",
+     "a": "All Quiet on the Western Front",
+     "wrong": [
+      "Das Boot",
+      "Downfall",
+      "The Tin Drum"
+     ],
+     "why": "It is based on Erich Maria Remarque's novel."
+    },
+    {
+     "level": 2,
+     "q": "Which German composer wrote 'The Ring of the Nibelung'?",
+     "a": "Richard Wagner",
+     "wrong": [
+      "Richard Strauss",
+      "Carl Maria von Weber",
+      "Engelbert Humperdinck"
+     ],
+     "why": "Its operas are staged at Bayreuth."
+    },
+    {
+     "level": 2,
+     "q": "Which singer won Eurovision for Germany in 2010?",
+     "a": "Lena",
+     "wrong": [
+      "Nicole",
+      "Nena",
+      "Helene Fischer"
+     ],
+     "why": "She sang 'Satellite'."
+    },
+    {
+     "level": 2,
+     "q": "Which director made 'Fitzcarraldo' and 'Aguirre, the Wrath of God'?",
+     "a": "Werner Herzog",
+     "wrong": [
+      "Wim Wenders",
+      "Rainer Werner Fassbinder",
+      "Fritz Lang"
+     ],
+     "why": "Klaus Kinski starred in both."
+    },
+    {
+     "level": 3,
+     "q": "Which 1927 silent film by Fritz Lang shows a futuristic city?",
+     "a": "Metropolis",
+     "wrong": [
+      "Nosferatu",
+      "The Cabinet of Dr. Caligari",
+      "M"
+     ],
+     "why": "Its robot Maria became an icon."
+    },
+    {
+     "level": 3,
+     "q": "Which novelist wrote 'Buddenbrooks' and 'The Magic Mountain'?",
+     "a": "Thomas Mann",
+     "wrong": [
+      "Hermann Hesse",
+      "Günter Grass",
+      "Heinrich Böll"
+     ],
+     "why": "He won the Nobel Prize in 1929."
+    },
+    {
+     "level": 3,
+     "q": "Which long-running Sunday crime series started in 1970?",
+     "a": "Tatort",
+     "wrong": [
+      "Derrick",
+      "Der Alte",
+      "Polizeiruf 110"
+     ],
+     "why": "Each city has its own detectives."
+    }
+   ]
+  },
+  {
+   "name": "Germany Food & Traditions",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which twisted bread is a German bakery classic?",
+     "a": "Pretzel",
+     "wrong": [
+      "Croissant",
+      "Bagel",
+      "Baguette"
+     ],
+     "why": "In German it is a Brezel."
+    },
+    {
+     "level": 1,
+     "q": "Which pickled cabbage is a famous German side dish?",
+     "a": "Sauerkraut",
+     "wrong": [
+      "Kimchi",
+      "Coleslaw",
+      "Rotkohl"
+     ],
+     "why": "Its name means 'sour cabbage'."
+    },
+    {
+     "level": 1,
+     "q": "Which sausage dish with curry ketchup is a Berlin street food?",
+     "a": "Currywurst",
+     "wrong": [
+      "Bratwurst",
+      "Weisswurst",
+      "Bockwurst"
+     ],
+     "why": "It was invented in 1949."
+    },
+    {
+     "level": 1,
+     "q": "What are traditional Christmas markets called in German?",
+     "a": "Weihnachtsmärkte",
+     "wrong": [
+      "Biergärten",
+      "Volksfeste",
+      "Kaffeeklatsch"
+     ],
+     "why": "Nuremberg's Christkindlesmarkt is famous."
+    },
+    {
+     "level": 1,
+     "q": "Which thin breaded cutlet is a favourite?",
+     "a": "Schnitzel",
+     "wrong": [
+      "Sauerbraten",
+      "Rouladen",
+      "Leberkäse"
+     ],
+     "why": "Jägerschnitzel comes with mushroom sauce."
+    },
+    {
+     "level": 1,
+     "q": "What do German children receive on their first school day?",
+     "a": "A Schultüte (cone of sweets and gifts)",
+     "wrong": [
+      "A bicycle",
+      "A pretzel necklace",
+      "A pet"
+     ],
+     "why": "It eases the start of school."
+    },
+    {
+     "level": 1,
+     "q": "Which spiced Christmas bread is filled with dried fruit?",
+     "a": "Stollen",
+     "wrong": [
+      "Lebkuchen",
+      "Strudel",
+      "Kuchen"
+     ],
+     "why": "Dresden's Stollen is the most famous."
+    },
+    {
+     "level": 2,
+     "q": "Which carnival season in Cologne and Mainz is called the 'fifth season'?",
+     "a": "Karneval",
+     "wrong": [
+      "Oktoberfest",
+      "Advent",
+      "Walpurgisnacht"
+     ],
+     "why": "It starts on 11 November at 11:11."
+    },
+    {
+     "level": 2,
+     "q": "Which white veal sausage is eaten in Bavaria before noon?",
+     "a": "Weisswurst",
+     "wrong": [
+      "Bratwurst",
+      "Thüringer",
+      "Mettwurst"
+     ],
+     "why": "It is eaten with sweet mustard and pretzels."
+    },
+    {
+     "level": 2,
+     "q": "What is 'Kaffee und Kuchen'?",
+     "a": "An afternoon coffee and cake break",
+     "wrong": [
+      "A breakfast cereal",
+      "A Christmas song",
+      "A beer garden game"
+     ],
+     "why": "It is a Sunday tradition."
+    },
+    {
+     "level": 2,
+     "q": "Which 1516 law limited beer to water, barley and hops?",
+     "a": "Reinheitsgebot",
+     "wrong": [
+      "Biergesetz",
+      "Grundgesetz",
+      "Hopfenrecht"
+     ],
+     "why": "Yeast was added later."
+    },
+    {
+     "level": 2,
+     "q": "Which Black Forest cake combines chocolate, cherries, cream and kirsch?",
+     "a": "Schwarzwälder Kirschtorte",
+     "wrong": [
+      "Bienenstich",
+      "Frankfurter Kranz",
+      "Käsekuchen"
+     ],
+     "why": "It became popular in the 1930s."
+    },
+    {
+     "level": 2,
+     "q": "What are Lebkuchen?",
+     "a": "Gingerbread biscuits",
+     "wrong": [
+      "Potato dumplings",
+      "Pork knuckles",
+      "Apple pancakes"
+     ],
+     "why": "Nuremberg is famous for them."
+    },
+    {
+     "level": 3,
+     "q": "What is the crispy roast pork knuckle of Bavaria called?",
+     "a": "Schweinshaxe",
+     "wrong": [
+      "Eisbein",
+      "Kassler",
+      "Leberkäse"
+     ],
+     "why": "Eisbein is the boiled version from Berlin."
+    },
+    {
+     "level": 3,
+     "q": "On which night do witches gather in folklore on the Brocken?",
+     "a": "Walpurgisnacht",
+     "wrong": [
+      "Silvester",
+      "Fasching",
+      "Martinstag"
+     ],
+     "why": "It is the night of 30 April."
+    },
+    {
+     "level": 3,
+     "q": "What do children carry lanterns for on 11 November?",
+     "a": "St. Martin's Day",
+     "wrong": [
+      "St. Nicholas Day",
+      "Epiphany",
+      "Advent Sunday"
+     ],
+     "why": "They sing songs in a parade."
+    }
+   ]
+  },
+  {
+   "name": "Germany General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What are the colours of the German flag?",
+     "a": "Black, red and gold",
+     "wrong": [
+      "Black, white and red",
+      "Red, white and black",
+      "Black, yellow and green"
+     ],
+     "why": "They date back to the 1800s."
+    },
+    {
+     "level": 1,
+     "q": "What is Germany's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Deutsche Mark",
+      "Franc",
+      "Schilling"
+     ],
+     "why": "The Deutsche Mark was replaced in 2002."
+    },
+    {
+     "level": 1,
+     "q": "Which famous gate is a symbol of Berlin?",
+     "a": "Brandenburg Gate",
+     "wrong": [
+      "Holsten Gate",
+      "Porta Nigra",
+      "Siegestor"
+     ],
+     "why": "It was built in the 1790s."
+    },
+    {
+     "level": 1,
+     "q": "Which German physicist developed the theory of relativity?",
+     "a": "Albert Einstein",
+     "wrong": [
+      "Max Planck",
+      "Werner Heisenberg",
+      "Wilhelm Röntgen"
+     ],
+     "why": "He was born in Ulm in 1879."
+    },
+    {
+     "level": 1,
+     "q": "What are Germany's motorways called?",
+     "a": "Autobahnen",
+     "wrong": [
+      "Schnellstraßen",
+      "Bundesbahnen",
+      "Landstraßen"
+     ],
+     "why": "Many stretches have no speed limit."
+    },
+    {
+     "level": 1,
+     "q": "Which car brand from Stuttgart has a three-pointed star logo?",
+     "a": "Mercedes-Benz",
+     "wrong": [
+      "BMW",
+      "Audi",
+      "Volkswagen"
+     ],
+     "why": "Porsche is also from Stuttgart."
+    },
+    {
+     "level": 1,
+     "q": "What is the German parliament called?",
+     "a": "Bundestag",
+     "wrong": [
+      "Reichstag",
+      "Bundesrat",
+      "Landtag"
+     ],
+     "why": "It meets in the Reichstag building."
+    },
+    {
+     "level": 2,
+     "q": "Who discovered X-rays in 1895?",
+     "a": "Wilhelm Röntgen",
+     "wrong": [
+      "Max Planck",
+      "Robert Koch",
+      "Heinrich Hertz"
+     ],
+     "why": "He won the first Nobel Prize in Physics."
+    },
+    {
+     "level": 2,
+     "q": "Which car did Volkswagen launch as the 'people's car'?",
+     "a": "Beetle",
+     "wrong": [
+      "Golf",
+      "Polo",
+      "Passat"
+     ],
+     "why": "Over 21 million were built."
+    },
+    {
+     "level": 2,
+     "q": "What is Germany's national anthem?",
+     "a": "Das Lied der Deutschen (third verse)",
+     "wrong": [
+      "Ode to Joy",
+      "Die Wacht am Rhein",
+      "Heil dir im Siegerkranz"
+     ],
+     "why": "It starts 'Einigkeit und Recht und Freiheit'."
+    },
+    {
+     "level": 2,
+     "q": "Which architect designed the glass dome on the Reichstag building?",
+     "a": "Norman Foster",
+     "wrong": [
+      "Frank Gehry",
+      "I. M. Pei",
+      "Zaha Hadid"
+     ],
+     "why": "Visitors can walk up its spiral ramp."
+    },
+    {
+     "level": 2,
+     "q": "Which German scientist identified the bacterium that causes tuberculosis?",
+     "a": "Robert Koch",
+     "wrong": [
+      "Paul Ehrlich",
+      "Rudolf Virchow",
+      "Emil von Behring"
+     ],
+     "why": "He announced it in 1882."
+    },
+    {
+     "level": 2,
+     "q": "Which city has Germany's biggest airport?",
+     "a": "Frankfurt",
+     "wrong": [
+      "Munich",
+      "Berlin",
+      "Düsseldorf"
+     ],
+     "why": "It is Lufthansa's main hub."
+    },
+    {
+     "level": 3,
+     "q": "Who built the first practical petrol-powered car in 1885–86?",
+     "a": "Carl Benz",
+     "wrong": [
+      "Gottlieb Daimler",
+      "Rudolf Diesel",
+      "Nikolaus Otto"
+     ],
+     "why": "His wife Bertha made the first long drive."
+    },
+    {
+     "level": 3,
+     "q": "What is Germany's constitution called?",
+     "a": "Grundgesetz (Basic Law)",
+     "wrong": [
+      "Reichsverfassung",
+      "Bundesgesetz",
+      "Magna Carta"
+     ],
+     "why": "It was adopted in 1949."
+    },
+    {
+     "level": 3,
+     "q": "Which German state is the smallest?",
+     "a": "Bremen",
+     "wrong": [
+      "Saarland",
+      "Hamburg",
+      "Berlin"
+     ],
+     "why": "It includes the port of Bremerhaven."
+    }
+   ]
+  }
+ ]
+}
