@@ -1,0 +1,346 @@
+{
+ "category": "South Korea",
+ "country": "KR",
+ "topics": [
+  {
+   "name": "South Korea: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Korean king created the Hangul alphabet in 1443?",
+     "a": "King Sejong the Great",
+     "wrong": [
+      "King Taejo",
+      "King Jeongjo",
+      "King Gwanggaeto"
+     ],
+     "why": "Hangul Day is 9 October."
+    },
+    {
+     "level": 1,
+     "q": "Which war from 1950 to 1953 left Korea divided?",
+     "a": "Korean War",
+     "wrong": [
+      "Pacific War",
+      "Imjin War",
+      "Vietnam War"
+     ],
+     "why": "It ended with an armistice, not a peace treaty."
+    },
+    {
+     "level": 1,
+     "q": "Which strip of land separates North and South Korea?",
+     "a": "Demilitarized Zone (DMZ)",
+     "wrong": [
+      "Green Line",
+      "38th Corridor",
+      "Peace Belt"
+     ],
+     "why": "It is about 4 km wide."
+    },
+    {
+     "level": 1,
+     "q": "Which city hosted the 1988 Summer Olympics?",
+     "a": "Seoul",
+     "wrong": [
+      "Busan",
+      "Incheon",
+      "Daegu"
+     ],
+     "why": "It was South Korea's first Olympics."
+    },
+    {
+     "level": 1,
+     "q": "Which dynasty ruled Korea from 1392 to 1897?",
+     "a": "Joseon",
+     "wrong": [
+      "Goryeo",
+      "Silla",
+      "Baekje"
+     ],
+     "why": "Seoul became its capital."
+    },
+    {
+     "level": 1,
+     "q": "Which admiral defeated Japanese fleets with 'turtle ships'?",
+     "a": "Yi Sun-sin",
+     "wrong": [
+      "Kim Yu-sin",
+      "Gang Gam-chan",
+      "Eulji Mundeok"
+     ],
+     "why": "His statue stands in Gwanghwamun Square."
+    },
+    {
+     "level": 1,
+     "q": "Which country ruled Korea from 1910 to 1945?",
+     "a": "Japan",
+     "wrong": [
+      "China",
+      "Russia",
+      "Mongolia"
+     ],
+     "why": "Liberation Day is 15 August."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient kingdom unified most of Korea in 676?",
+     "a": "Silla",
+     "wrong": [
+      "Goguryeo",
+      "Baekje",
+      "Gaya"
+     ],
+     "why": "Its capital was Gyeongju."
+    },
+    {
+     "level": 2,
+     "q": "From which dynasty does the name 'Korea' come?",
+     "a": "Goryeo",
+     "wrong": [
+      "Joseon",
+      "Silla",
+      "Balhae"
+     ],
+     "why": "Goryeo ruled from 918 to 1392."
+    },
+    {
+     "level": 2,
+     "q": "Who became South Korea's first woman President, in 2013?",
+     "a": "Park Geun-hye",
+     "wrong": [
+      "Han Myeong-sook",
+      "Kang Kyung-wha",
+      "Choo Mi-ae"
+     ],
+     "why": "She was removed from office in 2017."
+    },
+    {
+     "level": 2,
+     "q": "Which South Korean President won the 2000 Nobel Peace Prize?",
+     "a": "Kim Dae-jung",
+     "wrong": [
+      "Roh Moo-hyun",
+      "Kim Young-sam",
+      "Moon Jae-in"
+     ],
+     "why": "He pursued the 'Sunshine Policy' toward the North."
+    },
+    {
+     "level": 2,
+     "q": "Which 1 March 1919 movement called for independence from Japan?",
+     "a": "March 1st Movement",
+     "wrong": [
+      "Gwangju Uprising",
+      "Donghak Revolution",
+      "April Revolution"
+     ],
+     "why": "1 March is a national holiday."
+    },
+    {
+     "level": 3,
+     "q": "Which 1980 democracy uprising took place in the southwest?",
+     "a": "Gwangju Uprising",
+     "wrong": [
+      "Busan Uprising",
+      "Jeju Uprising",
+      "Daegu Uprising"
+     ],
+     "why": "It is remembered on 18 May."
+    },
+    {
+     "level": 3,
+     "q": "Which 1960 student-led revolution ended Syngman Rhee's rule?",
+     "a": "April Revolution",
+     "wrong": [
+      "June Struggle",
+      "March 1st Movement",
+      "Gwangju Uprising"
+     ],
+     "why": "It began on 19 April."
+    },
+    {
+     "level": 3,
+     "q": "Who was South Korea's first President?",
+     "a": "Syngman Rhee",
+     "wrong": [
+      "Park Chung-hee",
+      "Yun Bo-seon",
+      "Choi Kyu-hah"
+     ],
+     "why": "He took office in 1948."
+    }
+   ]
+  },
+  {
+   "name": "South Korea: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of South Korea?",
+     "a": "Seoul",
+     "wrong": [
+      "Busan",
+      "Incheon",
+      "Daegu"
+     ],
+     "why": "About half of South Koreans live in its metro area."
+    },
+    {
+     "level": 1,
+     "q": "Which fermented cabbage dish is a Korean staple?",
+     "a": "Kimchi",
+     "wrong": [
+      "Bibimbap",
+      "Bulgogi",
+      "Japchae"
+     ],
+     "why": "Kimjang, the making of kimchi, is on UNESCO's list."
+    },
+    {
+     "level": 1,
+     "q": "Which boy band sang 'Dynamite' and 'Butter'?",
+     "a": "BTS",
+     "wrong": [
+      "EXO",
+      "Big Bang",
+      "Seventeen"
+     ],
+     "why": "They were the first K-pop act to top the Billboard Hot 100."
+    },
+    {
+     "level": 1,
+     "q": "Which Korean film won the Oscar for Best Picture in 2020?",
+     "a": "Parasite",
+     "wrong": [
+      "Oldboy",
+      "Burning",
+      "Train to Busan"
+     ],
+     "why": "Bong Joon-ho directed it."
+    },
+    {
+     "level": 1,
+     "q": "Which Korean electronics giant makes Galaxy phones?",
+     "a": "Samsung",
+     "wrong": [
+      "LG",
+      "Hyundai",
+      "SK"
+     ],
+     "why": "It was founded in 1938."
+    },
+    {
+     "level": 1,
+     "q": "Which Korean survival drama became a global hit on Netflix in 2021?",
+     "a": "Squid Game",
+     "wrong": [
+      "Kingdom",
+      "Sweet Home",
+      "All of Us Are Dead"
+     ],
+     "why": "Contestants play deadly children's games."
+    },
+    {
+     "level": 1,
+     "q": "Which Korean martial art is known for its high kicks?",
+     "a": "Taekwondo",
+     "wrong": [
+      "Hapkido",
+      "Judo",
+      "Karate"
+     ],
+     "why": "It became an Olympic sport in 2000."
+    },
+    {
+     "level": 2,
+     "q": "Which is South Korea's second-largest city and main port?",
+     "a": "Busan",
+     "wrong": [
+      "Incheon",
+      "Daegu",
+      "Ulsan"
+     ],
+     "why": "It hosts Asia's biggest film festival."
+    },
+    {
+     "level": 2,
+     "q": "Which volcanic island is South Korea's top holiday spot?",
+     "a": "Jeju Island",
+     "wrong": [
+      "Ulleungdo",
+      "Geojedo",
+      "Ganghwado"
+     ],
+     "why": "Its women free-divers are called haenyeo."
+    },
+    {
+     "level": 2,
+     "q": "Which girl group sang 'How You Like That'?",
+     "a": "Blackpink",
+     "wrong": [
+      "Twice",
+      "Red Velvet",
+      "Girls' Generation"
+     ],
+     "why": "Its members are Jisoo, Jennie, Rosé and Lisa."
+    },
+    {
+     "level": 2,
+     "q": "Which rice bowl dish is topped with vegetables and an egg?",
+     "a": "Bibimbap",
+     "wrong": [
+      "Bulgogi",
+      "Tteokbokki",
+      "Japchae"
+     ],
+     "why": "Jeonju is famous for it."
+    },
+    {
+     "level": 2,
+     "q": "Which singer's 'Gangnam Style' was the first YouTube video to reach a billion views?",
+     "a": "Psy",
+     "wrong": [
+      "G-Dragon",
+      "Rain",
+      "Jay Park"
+     ],
+     "why": "It came out in 2012."
+    },
+    {
+     "level": 3,
+     "q": "Which Korean author won the Nobel Prize in Literature in 2024?",
+     "a": "Han Kang",
+     "wrong": [
+      "Ko Un",
+      "Shin Kyung-sook",
+      "Hwang Sok-yong"
+     ],
+     "why": "She wrote 'The Vegetarian'."
+    },
+    {
+     "level": 3,
+     "q": "What is South Korea's highest mountain?",
+     "a": "Hallasan",
+     "wrong": [
+      "Seoraksan",
+      "Jirisan",
+      "Bukhansan"
+     ],
+     "why": "It is a volcano on Jeju Island."
+    },
+    {
+     "level": 3,
+     "q": "What is traditional Korean clothing called?",
+     "a": "Hanbok",
+     "wrong": [
+      "Kimono",
+      "Ao dai",
+      "Qipao"
+     ],
+     "why": "It is worn at holidays like Chuseok."
+    }
+   ]
+  }
+ ]
+}

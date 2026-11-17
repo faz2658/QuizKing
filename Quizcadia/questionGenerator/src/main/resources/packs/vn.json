@@ -1,0 +1,346 @@
+{
+ "category": "Vietnam",
+ "country": "VN",
+ "topics": [
+  {
+   "name": "Vietnam: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who led Vietnam's independence movement and declared independence in 1945?",
+     "a": "Ho Chi Minh",
+     "wrong": [
+      "Vo Nguyen Giap",
+      "Ngo Dinh Diem",
+      "Pham Van Dong"
+     ],
+     "why": "Saigon was renamed after him."
+    },
+    {
+     "level": 1,
+     "q": "Which European country colonised Vietnam?",
+     "a": "France",
+     "wrong": [
+      "Portugal",
+      "Britain",
+      "The Netherlands"
+     ],
+     "why": "It was part of French Indochina."
+    },
+    {
+     "level": 1,
+     "q": "In which year did the Vietnam War end with the fall of Saigon?",
+     "a": "1975",
+     "wrong": [
+      "1973",
+      "1968",
+      "1980"
+     ],
+     "why": "The country was reunified in 1976."
+    },
+    {
+     "level": 1,
+     "q": "Which 1954 battle ended French rule?",
+     "a": "Dien Bien Phu",
+     "wrong": [
+      "Khe Sanh",
+      "Hue",
+      "Ia Drang"
+     ],
+     "why": "The Viet Minh besieged the French base."
+    },
+    {
+     "level": 1,
+     "q": "Which former imperial capital in central Vietnam is a UNESCO site?",
+     "a": "Hue",
+     "wrong": [
+      "Hoi An",
+      "Hanoi",
+      "Da Nang"
+     ],
+     "why": "The Nguyen emperors ruled from its citadel."
+    },
+    {
+     "level": 1,
+     "q": "Which Lunar New Year festival is Vietnam's biggest holiday?",
+     "a": "Tet",
+     "wrong": [
+      "Songkran",
+      "Seollal",
+      "Vesak"
+     ],
+     "why": "Families gather and give lucky money."
+    },
+    {
+     "level": 1,
+     "q": "What was Ho Chi Minh City called before 1976?",
+     "a": "Saigon",
+     "wrong": [
+      "Hue",
+      "Da Nang",
+      "Haiphong"
+     ],
+     "why": "Many people still call it Saigon."
+    },
+    {
+     "level": 2,
+     "q": "Which sisters led a rebellion against Chinese rule in AD 40?",
+     "a": "The Trung sisters",
+     "wrong": [
+      "The Trieu sisters",
+      "The Nguyen sisters",
+      "The Le sisters"
+     ],
+     "why": "They are national heroines."
+    },
+    {
+     "level": 2,
+     "q": "Which 1968 offensive surprised US and South Vietnamese forces?",
+     "a": "Tet Offensive",
+     "wrong": [
+      "Easter Offensive",
+      "Spring Offensive",
+      "Ho Chi Minh Campaign"
+     ],
+     "why": "It turned US opinion against the war."
+    },
+    {
+     "level": 2,
+     "q": "Which general defeated the French at Dien Bien Phu?",
+     "a": "Vo Nguyen Giap",
+     "wrong": [
+      "Ho Chi Minh",
+      "Tran Hung Dao",
+      "Le Duan"
+     ],
+     "why": "He later led forces against the US."
+    },
+    {
+     "level": 2,
+     "q": "Which last dynasty of Vietnam ruled from 1802 to 1945?",
+     "a": "Nguyen dynasty",
+     "wrong": [
+      "Le dynasty",
+      "Tran dynasty",
+      "Ly dynasty"
+     ],
+     "why": "Emperor Bao Dai was its last ruler."
+    },
+    {
+     "level": 2,
+     "q": "What were Vietnam's 1986 economic reforms called?",
+     "a": "Doi Moi",
+     "wrong": [
+      "Perestroika",
+      "Glasnost",
+      "Reformasi"
+     ],
+     "why": "The name means 'renovation'."
+    },
+    {
+     "level": 3,
+     "q": "Which general defeated Mongol invasions in the 1280s?",
+     "a": "Tran Hung Dao",
+     "wrong": [
+      "Ly Thuong Kiet",
+      "Le Loi",
+      "Quang Trung"
+     ],
+     "why": "He won at the Bach Dang River."
+    },
+    {
+     "level": 3,
+     "q": "Which tunnel network near Saigon was used by Viet Cong fighters?",
+     "a": "Cu Chi tunnels",
+     "wrong": [
+      "Vinh Moc tunnels",
+      "Khe Sanh tunnels",
+      "Hue tunnels"
+     ],
+     "why": "They are now a tourist site."
+    },
+    {
+     "level": 3,
+     "q": "Which Tay Son emperor defeated a Qing army near Hanoi in 1789?",
+     "a": "Quang Trung",
+     "wrong": [
+      "Gia Long",
+      "Minh Mang",
+      "Tu Duc"
+     ],
+     "why": "The victory is celebrated at Tet."
+    }
+   ]
+  },
+  {
+   "name": "Vietnam: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Vietnam?",
+     "a": "Hanoi",
+     "wrong": [
+      "Ho Chi Minh City",
+      "Hue",
+      "Da Nang"
+     ],
+     "why": "It was founded over 1,000 years ago."
+    },
+    {
+     "level": 1,
+     "q": "Which bay is famous for thousands of limestone islands?",
+     "a": "Ha Long Bay",
+     "wrong": [
+      "Nha Trang Bay",
+      "Cam Ranh Bay",
+      "Vung Tau Bay"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which noodle soup is Vietnam's national dish?",
+     "a": "Pho",
+     "wrong": [
+      "Bun cha",
+      "Banh mi",
+      "Laksa"
+     ],
+     "why": "It began in northern Vietnam."
+    },
+    {
+     "level": 1,
+     "q": "Which baguette sandwich shows French influence?",
+     "a": "Banh mi",
+     "wrong": [
+      "Banh xeo",
+      "Goi cuon",
+      "Com tam"
+     ],
+     "why": "It is filled with meat, pickles and herbs."
+    },
+    {
+     "level": 1,
+     "q": "What is Vietnam's currency?",
+     "a": "Dong",
+     "wrong": [
+      "Baht",
+      "Kip",
+      "Riel"
+     ],
+     "why": "Its notes are made of polymer."
+    },
+    {
+     "level": 1,
+     "q": "What is Vietnam's long tunic worn over trousers called?",
+     "a": "Ao dai",
+     "wrong": [
+      "Hanbok",
+      "Kimono",
+      "Cheongsam"
+     ],
+     "why": "It is the national costume."
+    },
+    {
+     "level": 1,
+     "q": "Which river delta in the south is called the 'rice bowl'?",
+     "a": "Mekong Delta",
+     "wrong": [
+      "Red River Delta",
+      "Irrawaddy Delta",
+      "Chao Phraya Delta"
+     ],
+     "why": "It is famous for floating markets."
+    },
+    {
+     "level": 2,
+     "q": "Which old trading town is famous for lanterns and a Japanese bridge?",
+     "a": "Hoi An",
+     "wrong": [
+      "Hue",
+      "Da Lat",
+      "Sa Pa"
+     ],
+     "why": "Its old town is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "What is the world's largest known cave, in Phong Nha?",
+     "a": "Son Doong",
+     "wrong": [
+      "Hang En",
+      "Paradise Cave",
+      "Phong Nha Cave"
+     ],
+     "why": "Its full extent was explored in 2009."
+    },
+    {
+     "level": 2,
+     "q": "What is Vietnam's highest mountain?",
+     "a": "Fansipan",
+     "wrong": [
+      "Ba Den",
+      "Bach Ma",
+      "Lang Biang"
+     ],
+     "why": "It is called the 'Roof of Indochina'."
+    },
+    {
+     "level": 2,
+     "q": "Vietnam is the world's second-largest exporter of which crop?",
+     "a": "Coffee",
+     "wrong": [
+      "Tea",
+      "Cocoa",
+      "Vanilla"
+     ],
+     "why": "Robusta beans grow in the Central Highlands."
+    },
+    {
+     "level": 2,
+     "q": "What is the fish sauce at the heart of Vietnamese cooking?",
+     "a": "Nuoc mam",
+     "wrong": [
+      "Nam pla",
+      "Patis",
+      "Garum"
+     ],
+     "why": "Phu Quoc's is famous."
+    },
+    {
+     "level": 3,
+     "q": "Which water puppet theatre is a northern Vietnamese tradition?",
+     "a": "Mua roi nuoc",
+     "wrong": [
+      "Wayang kulit",
+      "Bunraku",
+      "Hun lakhon lek"
+     ],
+     "why": "The puppets perform on a pool of water."
+    },
+    {
+     "level": 3,
+     "q": "Which highland town was a French hill station?",
+     "a": "Da Lat",
+     "wrong": [
+      "Sa Pa",
+      "Hue",
+      "Buon Ma Thuot"
+     ],
+     "why": "It is called the 'City of Eternal Spring'."
+    },
+    {
+     "level": 3,
+     "q": "Which Hanoi lake has a legend about a returned sword?",
+     "a": "Hoan Kiem Lake",
+     "wrong": [
+      "West Lake",
+      "Truc Bach Lake",
+      "Thien Quang Lake"
+     ],
+     "why": "Its name means 'Lake of the Returned Sword'."
+    }
+   ]
+  }
+ ]
+}

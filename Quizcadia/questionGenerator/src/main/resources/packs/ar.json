@@ -1,0 +1,346 @@
+{
+ "category": "Argentina",
+ "country": "AR",
+ "topics": [
+  {
+   "name": "Argentina: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Argentina declare independence?",
+     "a": "1816",
+     "wrong": [
+      "1810",
+      "1853",
+      "1825"
+     ],
+     "why": "It was declared on 9 July in Tucumán."
+    },
+    {
+     "level": 1,
+     "q": "Which general crossed the Andes to free Chile and Peru?",
+     "a": "José de San Martín",
+     "wrong": [
+      "Simón Bolívar",
+      "Manuel Belgrano",
+      "Bernardo O'Higgins"
+     ],
+     "why": "He is Argentina's national hero."
+    },
+    {
+     "level": 1,
+     "q": "Which First Lady was known as 'Evita'?",
+     "a": "Eva Perón",
+     "wrong": [
+      "Isabel Perón",
+      "Cristina Fernández",
+      "Juana Azurduy"
+     ],
+     "why": "A musical tells her story."
+    },
+    {
+     "level": 1,
+     "q": "Which 1982 war did Argentina fight against Britain?",
+     "a": "Falklands War (Malvinas)",
+     "wrong": [
+      "Paraguayan War",
+      "Chaco War",
+      "War of the Pacific"
+     ],
+     "why": "It lasted about ten weeks."
+    },
+    {
+     "level": 1,
+     "q": "Who created Argentina's flag?",
+     "a": "Manuel Belgrano",
+     "wrong": [
+      "José de San Martín",
+      "Juan Manuel de Rosas",
+      "Domingo Sarmiento"
+     ],
+     "why": "Flag Day is 20 June."
+    },
+    {
+     "level": 1,
+     "q": "Which Argentine-born revolutionary fought in the Cuban Revolution?",
+     "a": "Che Guevara",
+     "wrong": [
+      "Fidel Castro",
+      "Camilo Cienfuegos",
+      "Raúl Castro"
+     ],
+     "why": "He was born in Rosario."
+    },
+    {
+     "level": 1,
+     "q": "Which Argentine became Pope in 2013?",
+     "a": "Pope Francis",
+     "wrong": [
+      "Pope Benedict XVI",
+      "Pope Leo XIV",
+      "Pope John Paul II"
+     ],
+     "why": "He had been Archbishop of Buenos Aires."
+    },
+    {
+     "level": 2,
+     "q": "Which President founded the movement that still bears his name?",
+     "a": "Juan Perón",
+     "wrong": [
+      "Hipólito Yrigoyen",
+      "Arturo Frondizi",
+      "Raúl Alfonsín"
+     ],
+     "why": "Peronism still shapes politics."
+    },
+    {
+     "level": 2,
+     "q": "Which 1810 revolution in Buenos Aires began the path to independence?",
+     "a": "May Revolution",
+     "wrong": [
+      "July Revolution",
+      "Revolution of the Park",
+      "Argentine Revolution"
+     ],
+     "why": "25 May is a national holiday."
+    },
+    {
+     "level": 2,
+     "q": "Which President restored democracy in 1983?",
+     "a": "Raúl Alfonsín",
+     "wrong": [
+      "Carlos Menem",
+      "Néstor Kirchner",
+      "Fernando de la Rúa"
+     ],
+     "why": "He ended military rule."
+    },
+    {
+     "level": 2,
+     "q": "Which mothers protested in Buenos Aires for their missing children?",
+     "a": "Mothers of the Plaza de Mayo",
+     "wrong": [
+      "Grandmothers of Tucumán",
+      "Women of Córdoba",
+      "Daughters of the Republic"
+     ],
+     "why": "They wore white headscarves."
+    },
+    {
+     "level": 2,
+     "q": "Who became Argentina's first elected woman President, in 2007?",
+     "a": "Cristina Fernández de Kirchner",
+     "wrong": [
+      "Isabel Perón",
+      "Gabriela Michetti",
+      "Patricia Bullrich"
+     ],
+     "why": "Isabel Perón had become President by succession."
+    },
+    {
+     "level": 3,
+     "q": "Which educator-president founded many schools in the 1860s and 70s?",
+     "a": "Domingo Sarmiento",
+     "wrong": [
+      "Bartolomé Mitre",
+      "Nicolás Avellaneda",
+      "Julio Roca"
+     ],
+     "why": "Teacher's Day honours him."
+    },
+    {
+     "level": 3,
+     "q": "Which 19th-century strongman governed Buenos Aires until 1852?",
+     "a": "Juan Manuel de Rosas",
+     "wrong": [
+      "Bartolomé Mitre",
+      "Justo José de Urquiza",
+      "Julio Roca"
+     ],
+     "why": "He was overthrown at the Battle of Caseros."
+    },
+    {
+     "level": 3,
+     "q": "Which Argentine scientist won the 1947 Nobel Prize in Medicine?",
+     "a": "Bernardo Houssay",
+     "wrong": [
+      "Luis Leloir",
+      "César Milstein",
+      "René Favaloro"
+     ],
+     "why": "He studied hormones."
+    }
+   ]
+  },
+  {
+   "name": "Argentina: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Argentina?",
+     "a": "Buenos Aires",
+     "wrong": [
+      "Córdoba",
+      "Rosario",
+      "Mendoza"
+     ],
+     "why": "Its people are called porteños."
+    },
+    {
+     "level": 1,
+     "q": "Which passionate dance was born in Buenos Aires?",
+     "a": "Tango",
+     "wrong": [
+      "Salsa",
+      "Samba",
+      "Cumbia"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "Which footballer led Argentina to the 2022 World Cup title?",
+     "a": "Lionel Messi",
+     "wrong": [
+      "Diego Maradona",
+      "Ángel Di María",
+      "Julián Álvarez"
+     ],
+     "why": "He has won a record eight Ballon d'Or awards."
+    },
+    {
+     "level": 1,
+     "q": "Which herbal drink is sipped through a metal straw?",
+     "a": "Mate",
+     "wrong": [
+      "Coffee",
+      "Chicha",
+      "Pisco"
+     ],
+     "why": "The straw is called a bombilla."
+    },
+    {
+     "level": 1,
+     "q": "What is an Argentine barbecue called?",
+     "a": "Asado",
+     "wrong": [
+      "Churrasco",
+      "Braai",
+      "Barbacoa"
+     ],
+     "why": "It is a weekend ritual."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain is the highest in the Americas?",
+     "a": "Aconcagua",
+     "wrong": [
+      "Ojos del Salado",
+      "Chimborazo",
+      "Denali"
+     ],
+     "why": "It is 6,961 m high."
+    },
+    {
+     "level": 1,
+     "q": "Which waterfalls does Argentina share with Brazil?",
+     "a": "Iguazú Falls",
+     "wrong": [
+      "Angel Falls",
+      "Kaieteur Falls",
+      "Salto Grande"
+     ],
+     "why": "Most of the falls are on the Argentine side."
+    },
+    {
+     "level": 2,
+     "q": "Which region at the southern end of Argentina is famous for glaciers?",
+     "a": "Patagonia",
+     "wrong": [
+      "The Pampas",
+      "The Chaco",
+      "Cuyo"
+     ],
+     "why": "Perito Moreno Glacier is there."
+    },
+    {
+     "level": 2,
+     "q": "Which wine region is Argentina's most famous?",
+     "a": "Mendoza",
+     "wrong": [
+      "Salta",
+      "San Juan",
+      "Neuquén"
+     ],
+     "why": "It is known for Malbec."
+    },
+    {
+     "level": 2,
+     "q": "What are Argentina's grassy plains called?",
+     "a": "The Pampas",
+     "wrong": [
+      "The Llanos",
+      "The Savanna",
+      "The Tundra"
+     ],
+     "why": "Gauchos herd cattle there."
+    },
+    {
+     "level": 2,
+     "q": "Against which team did Maradona score the 'Hand of God' goal in 1986?",
+     "a": "England",
+     "wrong": [
+      "Belgium",
+      "West Germany",
+      "Italy"
+     ],
+     "why": "Minutes later he scored the 'Goal of the Century'."
+    },
+    {
+     "level": 2,
+     "q": "Which caramel spread is an Argentine favourite?",
+     "a": "Dulce de leche",
+     "wrong": [
+      "Cajeta",
+      "Manjar blanco",
+      "Brigadeiro"
+     ],
+     "why": "It fills alfajores."
+    },
+    {
+     "level": 3,
+     "q": "Which city calls itself 'the end of the world'?",
+     "a": "Ushuaia",
+     "wrong": [
+      "Río Gallegos",
+      "El Calafate",
+      "Punta Arenas"
+     ],
+     "why": "It is the capital of Tierra del Fuego."
+    },
+    {
+     "level": 3,
+     "q": "Who wrote 'Ficciones' and 'The Aleph'?",
+     "a": "Jorge Luis Borges",
+     "wrong": [
+      "Julio Cortázar",
+      "Ernesto Sabato",
+      "Adolfo Bioy Casares"
+     ],
+     "why": "He directed the National Library."
+    },
+    {
+     "level": 3,
+     "q": "Which glacier in Los Glaciares National Park is still advancing?",
+     "a": "Perito Moreno",
+     "wrong": [
+      "Upsala",
+      "Viedma",
+      "Spegazzini"
+     ],
+     "why": "Huge chunks crash into the lake."
+    }
+   ]
+  }
+ ]
+}
