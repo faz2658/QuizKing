@@ -1,0 +1,346 @@
+{
+ "category": "Montenegro",
+ "country": "ME",
+ "topics": [
+  {
+   "name": "Montenegro: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Montenegro become independent from Serbia?",
+     "a": "2006",
+     "wrong": [
+      "1991",
+      "1999",
+      "2010"
+     ],
+     "why": "A referendum narrowly approved it."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of Montenegro?",
+     "a": "Podgorica",
+     "wrong": [
+      "Cetinje",
+      "Budva",
+      "Kotor"
+     ],
+     "why": "It was called Titograd in Yugoslav times."
+    },
+    {
+     "level": 1,
+     "q": "Which old royal capital is home to the Cetinje Monastery?",
+     "a": "Cetinje",
+     "wrong": [
+      "Podgorica",
+      "Kotor",
+      "Bar"
+     ],
+     "why": "It is still the 'old royal capital'."
+    },
+    {
+     "level": 1,
+     "q": "Which currency does Montenegro use, without being in the eurozone?",
+     "a": "Euro",
+     "wrong": [
+      "Dinar",
+      "Lek",
+      "Kuna"
+     ],
+     "why": "It adopted the Deutsche Mark first."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Montenegro join NATO?",
+     "a": "2017",
+     "wrong": [
+      "2006",
+      "2009",
+      "2020"
+     ],
+     "why": "It was the 29th member."
+    },
+    {
+     "level": 1,
+     "q": "Which prince-bishop wrote the epic 'The Mountain Wreath'?",
+     "a": "Petar II Petrović-Njegoš",
+     "wrong": [
+      "Nikola I",
+      "Danilo I",
+      "Petar I"
+     ],
+     "why": "His mausoleum is on Mount Lovćen."
+    },
+    {
+     "level": 1,
+     "q": "What does 'Montenegro' mean?",
+     "a": "Black Mountain",
+     "wrong": [
+      "White Mountain",
+      "Blue Sea",
+      "Old Castle"
+     ],
+     "why": "In Montenegrin it is Crna Gora."
+    },
+    {
+     "level": 2,
+     "q": "Which king ruled Montenegro until 1918?",
+     "a": "Nikola I",
+     "wrong": [
+      "Petar II",
+      "Danilo II",
+      "Alexander I"
+     ],
+     "why": "He was called the 'father-in-law of Europe'."
+    },
+    {
+     "level": 2,
+     "q": "At which 1878 congress was Montenegro recognised as independent?",
+     "a": "Congress of Berlin",
+     "wrong": [
+      "Congress of Vienna",
+      "Treaty of Paris",
+      "Treaty of London"
+     ],
+     "why": "It gained land and a coastline."
+    },
+    {
+     "level": 2,
+     "q": "Which country did Montenegro join in 1918?",
+     "a": "Kingdom of Serbs, Croats and Slovenes",
+     "wrong": [
+      "Austria-Hungary",
+      "Albania",
+      "Italy"
+     ],
+     "why": "Its king was deposed."
+    },
+    {
+     "level": 2,
+     "q": "Which dynasty ruled Montenegro from 1696?",
+     "a": "Petrović-Njegoš",
+     "wrong": [
+      "Karađorđević",
+      "Obrenović",
+      "Nemanjić"
+     ],
+     "why": "Its early rulers were prince-bishops."
+    },
+    {
+     "level": 2,
+     "q": "Which old Venetian town in a fjord-like bay is a UNESCO site?",
+     "a": "Kotor",
+     "wrong": [
+      "Budva",
+      "Herceg Novi",
+      "Ulcinj"
+     ],
+     "why": "Its walls climb up the mountain."
+    },
+    {
+     "level": 3,
+     "q": "Which medieval state was a forerunner of Montenegro?",
+     "a": "Duklja (Doclea)",
+     "wrong": [
+      "Raška",
+      "Banate of Bosnia",
+      "Hum"
+     ],
+     "why": "It became Zeta later."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient Roman city near Podgorica gave its name to Duklja?",
+     "a": "Doclea",
+     "wrong": [
+      "Salona",
+      "Sirmium",
+      "Butua"
+     ],
+     "why": "Its ruins are outside the city."
+    },
+    {
+     "level": 3,
+     "q": "What was Podgorica called from 1946 to 1992?",
+     "a": "Titograd",
+     "wrong": [
+      "Tito City",
+      "Zeta Grad",
+      "Doclea"
+     ],
+     "why": "It was named after Josip Broz Tito."
+    }
+   ]
+  },
+  {
+   "name": "Montenegro: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which bay is Montenegro's most famous landscape?",
+     "a": "Bay of Kotor",
+     "wrong": [
+      "Bay of Budva",
+      "Bay of Bar",
+      "Gulf of Trieste"
+     ],
+     "why": "It looks like a fjord."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies along Montenegro's coast?",
+     "a": "Adriatic Sea",
+     "wrong": [
+      "Aegean Sea",
+      "Ionian Sea",
+      "Black Sea"
+     ],
+     "why": "Budva is its busiest resort."
+    },
+    {
+     "level": 1,
+     "q": "Which tiny island town is now a luxury resort?",
+     "a": "Sveti Stefan",
+     "wrong": [
+      "Perast",
+      "Ulcinj",
+      "Rose"
+     ],
+     "why": "It is joined to the mainland by a causeway."
+    },
+    {
+     "level": 1,
+     "q": "Which lake on the Albanian border is the largest in the Balkans?",
+     "a": "Lake Skadar",
+     "wrong": [
+      "Lake Ohrid",
+      "Lake Prespa",
+      "Lake Bled"
+     ],
+     "why": "It is famous for its birds."
+    },
+    {
+     "level": 1,
+     "q": "Which national park has the deep Tara River canyon?",
+     "a": "Durmitor",
+     "wrong": [
+      "Lovćen",
+      "Biogradska Gora",
+      "Prokletije"
+     ],
+     "why": "The canyon is Europe's deepest."
+    },
+    {
+     "level": 1,
+     "q": "Which island church in the Bay of Kotor was built on an artificial islet?",
+     "a": "Our Lady of the Rocks",
+     "wrong": [
+      "Sveti Stefan",
+      "St George's Island",
+      "Mamula"
+     ],
+     "why": "Sailors dropped stones to build the islet."
+    },
+    {
+     "level": 1,
+     "q": "Which coastal town has a long sandy beach near Albania?",
+     "a": "Ulcinj",
+     "wrong": [
+      "Budva",
+      "Kotor",
+      "Tivat"
+     ],
+     "why": "Its Velika Plaža is about 13 km long."
+    },
+    {
+     "level": 2,
+     "q": "Which monastery is built into a cliff high above the Bjelopavlići plain?",
+     "a": "Ostrog Monastery",
+     "wrong": [
+      "Cetinje Monastery",
+      "Morača Monastery",
+      "Savina Monastery"
+     ],
+     "why": "It is a major pilgrimage site."
+    },
+    {
+     "level": 2,
+     "q": "Which national park has one of Europe's last rainforests?",
+     "a": "Biogradska Gora",
+     "wrong": [
+      "Durmitor",
+      "Lovćen",
+      "Skadar"
+     ],
+     "why": "It has a glacial lake."
+    },
+    {
+     "level": 2,
+     "q": "Which sport has Montenegro excelled in with Olympic medals?",
+     "a": "Water polo and handball",
+     "wrong": [
+      "Ice hockey",
+      "Rugby",
+      "Cricket"
+     ],
+     "why": "Its women's handball team won silver in 2012."
+    },
+    {
+     "level": 2,
+     "q": "Which bridge over the Tara canyon was blown up in the Second World War and rebuilt?",
+     "a": "Đurđevića Tara Bridge",
+     "wrong": [
+      "Mostar Bridge",
+      "Višegrad Bridge",
+      "Sutjeska Bridge"
+     ],
+     "why": "It was 150 m above the river."
+    },
+    {
+     "level": 2,
+     "q": "Which town on the bay is famous for Baroque palaces of sea captains?",
+     "a": "Perast",
+     "wrong": [
+      "Kotor",
+      "Herceg Novi",
+      "Tivat"
+     ],
+     "why": "It once had its own fleet."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain holds Njegoš's mausoleum?",
+     "a": "Lovćen",
+     "wrong": [
+      "Durmitor",
+      "Orjen",
+      "Prokletije"
+     ],
+     "why": "It is reached by 461 steps."
+    },
+    {
+     "level": 3,
+     "q": "Which smoked ham from the village of Njeguši is a speciality?",
+     "a": "Njeguški pršut",
+     "wrong": [
+      "Serrano ham",
+      "Prosciutto di Parma",
+      "Kraški pršut"
+     ],
+     "why": "It is smoked over beech wood."
+    },
+    {
+     "level": 3,
+     "q": "What is Montenegro's highest peak?",
+     "a": "Zla Kolata",
+     "wrong": [
+      "Bobotov Kuk",
+      "Lovćen",
+      "Maganik"
+     ],
+     "why": "It is in the Prokletije range."
+    }
+   ]
+  }
+ ]
+}

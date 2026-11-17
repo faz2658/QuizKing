@@ -1,0 +1,346 @@
+{
+ "category": "North Macedonia",
+ "country": "MK",
+ "topics": [
+  {
+   "name": "North Macedonia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did North Macedonia become independent?",
+     "a": "1991",
+     "wrong": [
+      "1993",
+      "2001",
+      "2019"
+     ],
+     "why": "It left Yugoslavia peacefully."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of North Macedonia?",
+     "a": "Skopje",
+     "wrong": [
+      "Ohrid",
+      "Bitola",
+      "Tetovo"
+     ],
+     "why": "It was rebuilt after a 1963 earthquake."
+    },
+    {
+     "level": 1,
+     "q": "Which name change did the country agree with Greece in 2018?",
+     "a": "Macedonia to North Macedonia",
+     "wrong": [
+      "Macedonia to Vardar",
+      "Macedonia to Paeonia",
+      "Skopje to Macedonia"
+     ],
+     "why": "It is called the Prespa Agreement."
+    },
+    {
+     "level": 1,
+     "q": "Which saint and nun born in Skopje won the 1979 Nobel Peace Prize?",
+     "a": "Mother Teresa",
+     "wrong": [
+      "Saint Clement",
+      "Saint Naum",
+      "Joan of Arc"
+     ],
+     "why": "She worked in Kolkata."
+    },
+    {
+     "level": 1,
+     "q": "In which year did North Macedonia join NATO?",
+     "a": "2020",
+     "wrong": [
+      "2004",
+      "2009",
+      "2017"
+     ],
+     "why": "It was the 30th member."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient king's name was at the heart of the naming dispute with Greece?",
+     "a": "Alexander the Great",
+     "wrong": [
+      "Philip II",
+      "Ptolemy",
+      "Pyrrhus"
+     ],
+     "why": "Statues of him stand in Skopje."
+    },
+    {
+     "level": 1,
+     "q": "Which empire ruled the region for about 500 years?",
+     "a": "Ottoman Empire",
+     "wrong": [
+      "Byzantine Empire",
+      "Habsburg Empire",
+      "Venetian Republic"
+     ],
+     "why": "It ended in 1912."
+    },
+    {
+     "level": 2,
+     "q": "Which 1903 uprising against the Ottomans is a national holiday?",
+     "a": "Ilinden Uprising",
+     "wrong": [
+      "April Uprising",
+      "Ohrid Revolt",
+      "Karpoš Uprising"
+     ],
+     "why": "It is remembered on 2 August."
+    },
+    {
+     "level": 2,
+     "q": "Which short-lived republic was declared during the 1903 uprising?",
+     "a": "Kruševo Republic",
+     "wrong": [
+      "Ohrid Republic",
+      "Skopje Commune",
+      "Bitola Republic"
+     ],
+     "why": "It lasted ten days."
+    },
+    {
+     "level": 2,
+     "q": "Which saint founded a school in Ohrid that spread Slavic literacy?",
+     "a": "Saint Clement of Ohrid",
+     "wrong": [
+      "Saint Cyril",
+      "Saint Naum",
+      "Saint Methodius"
+     ],
+     "why": "He lived in the 800s and 900s."
+    },
+    {
+     "level": 2,
+     "q": "Which medieval tsar ruled from Ohrid around the year 1000?",
+     "a": "Samuel",
+     "wrong": [
+      "Simeon",
+      "Dušan",
+      "Basil II"
+     ],
+     "why": "He fought the Byzantine Empire."
+    },
+    {
+     "level": 2,
+     "q": "Which 2001 conflict ended with the Ohrid Agreement?",
+     "a": "Insurgency by Albanian rebels",
+     "wrong": [
+      "War with Greece",
+      "War with Bulgaria",
+      "Kosovo War"
+     ],
+     "why": "It expanded minority rights."
+    },
+    {
+     "level": 3,
+     "q": "Which Macedonian revolutionary is a national hero?",
+     "a": "Goce Delčev",
+     "wrong": [
+      "Dame Gruev",
+      "Pitu Guli",
+      "Jane Sandanski"
+     ],
+     "why": "He died in 1903."
+    },
+    {
+     "level": 3,
+     "q": "Which earthquake destroyed much of Skopje in 1963?",
+     "a": "Skopje earthquake",
+     "wrong": [
+      "Ohrid earthquake",
+      "Bitola earthquake",
+      "Vardar earthquake"
+     ],
+     "why": "About 1,000 people died."
+    },
+    {
+     "level": 3,
+     "q": "Which 2010s project filled Skopje's centre with statues?",
+     "a": "Skopje 2014",
+     "wrong": [
+      "Skopje Renewal",
+      "New Macedonia",
+      "Vardar Vision"
+     ],
+     "why": "It was controversial."
+    }
+   ]
+  },
+  {
+   "name": "North Macedonia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which lake on the Albanian border is one of Europe's oldest?",
+     "a": "Lake Ohrid",
+     "wrong": [
+      "Lake Prespa",
+      "Lake Skadar",
+      "Lake Bled"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "What is North Macedonia's currency?",
+     "a": "Macedonian denar",
+     "wrong": [
+      "Euro",
+      "Lek",
+      "Dinar"
+     ],
+     "why": "Its code is MKD."
+    },
+    {
+     "level": 1,
+     "q": "Which river flows through Skopje?",
+     "a": "Vardar",
+     "wrong": [
+      "Drina",
+      "Struma",
+      "Morava"
+     ],
+     "why": "It flows into Greece."
+    },
+    {
+     "level": 1,
+     "q": "Which bean dish baked in a clay pot is the national dish?",
+     "a": "Tavče gravče",
+     "wrong": [
+      "Moussaka",
+      "Ajvar",
+      "Sarma"
+     ],
+     "why": "It is made with white beans."
+    },
+    {
+     "level": 1,
+     "q": "Which old bazaar is one of the largest in the Balkans?",
+     "a": "Old Bazaar of Skopje",
+     "wrong": [
+      "Baščaršija",
+      "Grand Bazaar",
+      "Spice Bazaar"
+     ],
+     "why": "It dates from the 1100s."
+    },
+    {
+     "level": 1,
+     "q": "Which church on a cliff above Lake Ohrid is a famous sight?",
+     "a": "Church of St John at Kaneo",
+     "wrong": [
+      "St Sophia",
+      "Ohrid Cathedral",
+      "St Naum"
+     ],
+     "why": "It looks over the lake."
+    },
+    {
+     "level": 1,
+     "q": "Which countries border North Macedonia?",
+     "a": "Kosovo, Serbia, Bulgaria, Greece and Albania",
+     "wrong": [
+      "Croatia and Slovenia",
+      "Montenegro and Bosnia",
+      "Hungary and Romania"
+     ],
+     "why": "It has five neighbours."
+    },
+    {
+     "level": 2,
+     "q": "Which monastery sits by the springs at the southern end of Lake Ohrid?",
+     "a": "Monastery of Saint Naum",
+     "wrong": [
+      "Monastery of St Clement",
+      "Rila Monastery",
+      "Ostrog Monastery"
+     ],
+     "why": "Peacocks roam its grounds."
+    },
+    {
+     "level": 2,
+     "q": "Which red pepper relish is popular here?",
+     "a": "Ajvar",
+     "wrong": [
+      "Tarator",
+      "Tzatziki",
+      "Kajmak"
+     ],
+     "why": "Families make it in autumn."
+    },
+    {
+     "level": 2,
+     "q": "Which canyon near Skopje has a lake and caves?",
+     "a": "Matka Canyon",
+     "wrong": [
+      "Tara Canyon",
+      "Vikos Gorge",
+      "Rugova Canyon"
+     ],
+     "why": "It has a medieval monastery."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient city near Bitola has rich mosaics?",
+     "a": "Heraclea Lyncestis",
+     "wrong": [
+      "Stobi",
+      "Ohrid",
+      "Skupi"
+     ],
+     "why": "Philip II founded it."
+    },
+    {
+     "level": 2,
+     "q": "Which singer represented the country at Eurovision with 'Proud' in 2019 and won the jury vote?",
+     "a": "Tamara Todevska",
+     "wrong": [
+      "Kaliopi",
+      "Toše Proeski",
+      "Elena Risteska"
+     ],
+     "why": "It was the country's best result."
+    },
+    {
+     "level": 3,
+     "q": "Which pop singer, the 'Elvis of the Balkans', died in 2007?",
+     "a": "Toše Proeski",
+     "wrong": [
+      "Vlatko Ilievski",
+      "Kaliopi",
+      "Karolina Gočeva"
+     ],
+     "why": "He was hugely loved."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient city near Gradsko was a major Roman town?",
+     "a": "Stobi",
+     "wrong": [
+      "Heraclea",
+      "Lychnidos",
+      "Bylazora"
+     ],
+     "why": "It has a theatre and mosaics."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain is the country's highest?",
+     "a": "Mount Korab",
+     "wrong": [
+      "Mount Pelister",
+      "Šar Mountains",
+      "Mount Galičica"
+     ],
+     "why": "It is on the Albanian border."
+    }
+   ]
+  }
+ ]
+}

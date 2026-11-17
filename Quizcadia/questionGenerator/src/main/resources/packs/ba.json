@@ -1,0 +1,346 @@
+{
+ "category": "Bosnia and Herzegovina",
+ "country": "BA",
+ "topics": [
+  {
+   "name": "Bosnia and Herzegovina: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Bosnia and Herzegovina?",
+     "a": "Sarajevo",
+     "wrong": [
+      "Mostar",
+      "Banja Luka",
+      "Tuzla"
+     ],
+     "why": "It hosted the 1984 Winter Olympics."
+    },
+    {
+     "level": 1,
+     "q": "In which city was Archduke Franz Ferdinand shot in 1914?",
+     "a": "Sarajevo",
+     "wrong": [
+      "Mostar",
+      "Belgrade",
+      "Zagreb"
+     ],
+     "why": "It led to the First World War."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Bosnia and Herzegovina declare independence?",
+     "a": "1992",
+     "wrong": [
+      "1991",
+      "1995",
+      "1998"
+     ],
+     "why": "A war followed until 1995."
+    },
+    {
+     "level": 1,
+     "q": "Which 1995 agreement ended the Bosnian War?",
+     "a": "Dayton Agreement",
+     "wrong": [
+      "Oslo Accords",
+      "Treaty of Paris",
+      "Belfast Agreement"
+     ],
+     "why": "It was negotiated in Ohio, USA."
+    },
+    {
+     "level": 1,
+     "q": "Which 1995 massacre is recognised as genocide?",
+     "a": "Srebrenica massacre",
+     "wrong": [
+      "Vukovar massacre",
+      "Mostar siege",
+      "Ahmići massacre"
+     ],
+     "why": "Over 8,000 Bosniak men and boys were killed."
+    },
+    {
+     "level": 1,
+     "q": "Which empire ruled Bosnia for about 400 years?",
+     "a": "Ottoman Empire",
+     "wrong": [
+      "Habsburg Empire",
+      "Venetian Republic",
+      "Byzantine Empire"
+     ],
+     "why": "It ended in 1878."
+    },
+    {
+     "level": 1,
+     "q": "Which empire took over Bosnia in 1878?",
+     "a": "Austria-Hungary",
+     "wrong": [
+      "Russia",
+      "Ottoman Empire",
+      "Italy"
+     ],
+     "why": "It annexed Bosnia in 1908."
+    },
+    {
+     "level": 2,
+     "q": "How long did the siege of Sarajevo last?",
+     "a": "Nearly four years",
+     "wrong": [
+      "Six months",
+      "Ten years",
+      "Six weeks"
+     ],
+     "why": "It was the longest siege of a capital in modern history."
+    },
+    {
+     "level": 2,
+     "q": "Which medieval king was the most powerful ruler of Bosnia?",
+     "a": "Tvrtko I",
+     "wrong": [
+      "Kulin",
+      "Stjepan Tomašević",
+      "Stjepan Kotromanić"
+     ],
+     "why": "He was crowned king in 1377."
+    },
+    {
+     "level": 2,
+     "q": "Which medieval Bosnian ban is linked to a famous trade charter of 1189?",
+     "a": "Ban Kulin",
+     "wrong": [
+      "Tvrtko I",
+      "Hrvoje Vukčić",
+      "Stjepan Kotromanić"
+     ],
+     "why": "The charter was with Dubrovnik."
+    },
+    {
+     "level": 2,
+     "q": "Which Bosnian-born writer won the 1961 Nobel Prize in Literature?",
+     "a": "Ivo Andrić",
+     "wrong": [
+      "Meša Selimović",
+      "Danilo Kiš",
+      "Aleksandar Hemon"
+     ],
+     "why": "He wrote 'The Bridge on the Drina'."
+    },
+    {
+     "level": 2,
+     "q": "What are the two entities created by the Dayton Agreement?",
+     "a": "Federation of BiH and Republika Srpska",
+     "wrong": [
+      "Bosnia and Herzegovina",
+      "Brčko and Mostar",
+      "Sarajevo and Banja Luka"
+     ],
+     "why": "Brčko District is a separate unit."
+    },
+    {
+     "level": 3,
+     "q": "What are medieval Bosnian tombstones called?",
+     "a": "Stećci",
+     "wrong": [
+      "Khachkars",
+      "Menhirs",
+      "Runestones"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which writer from Tuzla wrote 'Death and the Dervish'?",
+     "a": "Meša Selimović",
+     "wrong": [
+      "Ivo Andrić",
+      "Branko Ćopić",
+      "Abdulah Sidran"
+     ],
+     "why": "It was published in 1966."
+    },
+    {
+     "level": 3,
+     "q": "Which bridge in Višegrad was built by Grand Vizier Mehmed Paša Sokolović?",
+     "a": "Mehmed Paša Sokolović Bridge",
+     "wrong": [
+      "Stari Most",
+      "Latin Bridge",
+      "Arslanagić Bridge"
+     ],
+     "why": "It is a UNESCO site."
+    }
+   ]
+  },
+  {
+   "name": "Bosnia and Herzegovina: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which old bridge in Mostar was rebuilt after the war?",
+     "a": "Stari Most",
+     "wrong": [
+      "Latin Bridge",
+      "Charles Bridge",
+      "Arslanagić Bridge"
+     ],
+     "why": "Divers jump from it into the Neretva."
+    },
+    {
+     "level": 1,
+     "q": "What is the currency of Bosnia and Herzegovina?",
+     "a": "Convertible mark",
+     "wrong": [
+      "Euro",
+      "Dinar",
+      "Kuna"
+     ],
+     "why": "It is pegged to the euro."
+    },
+    {
+     "level": 1,
+     "q": "Which grilled minced-meat dish is famous in Sarajevo?",
+     "a": "Ćevapi",
+     "wrong": [
+      "Burek",
+      "Sarma",
+      "Baklava"
+     ],
+     "why": "They are served in flatbread with onions."
+    },
+    {
+     "level": 1,
+     "q": "Which old bazaar is the heart of Sarajevo?",
+     "a": "Baščaršija",
+     "wrong": [
+      "Grand Bazaar",
+      "Khan el-Khalili",
+      "Spice Bazaar"
+     ],
+     "why": "It dates from the 1400s."
+    },
+    {
+     "level": 1,
+     "q": "Which river flows through Mostar?",
+     "a": "Neretva",
+     "wrong": [
+      "Drina",
+      "Sava",
+      "Una"
+     ],
+     "why": "It flows to the Adriatic."
+    },
+    {
+     "level": 1,
+     "q": "Which film festival is held in Sarajevo each summer?",
+     "a": "Sarajevo Film Festival",
+     "wrong": [
+      "Motovun Film Festival",
+      "Pula Film Festival",
+      "Cannes Film Festival"
+     ],
+     "why": "It began during the siege in 1995."
+    },
+    {
+     "level": 1,
+     "q": "Which flaky pastry filled with meat is a Bosnian favourite?",
+     "a": "Burek",
+     "wrong": [
+      "Baklava",
+      "Strudel",
+      "Pita bread"
+     ],
+     "why": "Other fillings are called pita."
+    },
+    {
+     "level": 2,
+     "q": "Which Bosnian footballer captained Roma and played for Inter?",
+     "a": "Edin Džeko",
+     "wrong": [
+      "Miralem Pjanić",
+      "Hasan Salihamidžić",
+      "Sead Kolašinac"
+     ],
+     "why": "He is Bosnia's all-time top scorer."
+    },
+    {
+     "level": 2,
+     "q": "Which mountains near Sarajevo hosted Olympic skiing in 1984?",
+     "a": "Jahorina and Bjelašnica",
+     "wrong": [
+      "Durmitor",
+      "Triglav",
+      "Prokletije"
+     ],
+     "why": "They are still ski resorts."
+    },
+    {
+     "level": 2,
+     "q": "Which waterfall flows into the centre of Jajce?",
+     "a": "Pliva Waterfall",
+     "wrong": [
+      "Kravice Waterfall",
+      "Štrbački Buk",
+      "Skakavac"
+     ],
+     "why": "The town has a medieval fortress above it."
+    },
+    {
+     "level": 2,
+     "q": "Which Bosnian director won the Oscar for 'No Man's Land'?",
+     "a": "Danis Tanović",
+     "wrong": [
+      "Jasmila Žbanić",
+      "Emir Kusturica",
+      "Ademir Kenović"
+     ],
+     "why": "It won Best Foreign Language Film in 2002."
+    },
+    {
+     "level": 2,
+     "q": "Which national park is home to the Štrbački Buk waterfall?",
+     "a": "Una National Park",
+     "wrong": [
+      "Sutjeska National Park",
+      "Kozara National Park",
+      "Plitvice Lakes"
+     ],
+     "why": "It is on the Croatian border."
+    },
+    {
+     "level": 3,
+     "q": "Which Sarajevo neighbourhood had a famous tunnel during the siege?",
+     "a": "Butmir",
+     "wrong": [
+      "Grbavica",
+      "Baščaršija",
+      "Marijin Dvor"
+     ],
+     "why": "The tunnel ran under the airport."
+    },
+    {
+     "level": 3,
+     "q": "Which national park has one of Europe's last primeval forests?",
+     "a": "Sutjeska National Park",
+     "wrong": [
+      "Una National Park",
+      "Kozara National Park",
+      "Blidinje"
+     ],
+     "why": "The Perućica forest is there."
+    },
+    {
+     "level": 3,
+     "q": "Which Bosnian pyramid claim near Visoko is rejected by scientists?",
+     "a": "Bosnian 'pyramids'",
+     "wrong": [
+      "Sarajevo obelisks",
+      "Mostar ziggurat",
+      "Jajce temple"
+     ],
+     "why": "They are natural hills."
+    }
+   ]
+  }
+ ]
+}
