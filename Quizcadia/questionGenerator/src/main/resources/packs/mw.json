@@ -1,0 +1,346 @@
+{
+ "category": "Malawi",
+ "country": "MW",
+ "topics": [
+  {
+   "name": "Malawi: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Malawi?",
+     "a": "Lilongwe",
+     "wrong": [
+      "Blantyre",
+      "Mzuzu",
+      "Zomba"
+     ],
+     "why": "It became capital in 1975."
+    },
+    {
+     "level": 1,
+     "q": "What was Malawi called before 1964?",
+     "a": "Nyasaland",
+     "wrong": [
+      "Northern Rhodesia",
+      "Bechuanaland",
+      "Tanganyika"
+     ],
+     "why": "It was a British protectorate."
+    },
+    {
+     "level": 1,
+     "q": "Who was Malawi's first President?",
+     "a": "Hastings Banda",
+     "wrong": [
+      "Bakili Muluzi",
+      "Bingu wa Mutharika",
+      "Joyce Banda"
+     ],
+     "why": "He ruled until 1994."
+    },
+    {
+     "level": 1,
+     "q": "What is Malawi's currency?",
+     "a": "Malawian kwacha",
+     "wrong": [
+      "Zambian kwacha",
+      "Shilling",
+      "Rand"
+     ],
+     "why": "Its code is MWK."
+    },
+    {
+     "level": 1,
+     "q": "What is Malawi's nickname?",
+     "a": "The Warm Heart of Africa",
+     "wrong": [
+      "The Pearl of Africa",
+      "Land of a Thousand Hills",
+      "The Smiling Coast"
+     ],
+     "why": "It is known for friendly people."
+    },
+    {
+     "level": 1,
+     "q": "Who became Africa's second woman President, in Malawi in 2012?",
+     "a": "Joyce Banda",
+     "wrong": [
+      "Ellen Johnson Sirleaf",
+      "Sahle-Work Zewde",
+      "Samia Suluhu Hassan"
+     ],
+     "why": "She took over when the President died."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is Malawi's main export?",
+     "a": "Tobacco",
+     "wrong": [
+      "Coffee",
+      "Cocoa",
+      "Cotton"
+     ],
+     "why": "It is grown on large estates."
+    },
+    {
+     "level": 2,
+     "q": "Which Scottish missionary explored Lake Malawi in 1859?",
+     "a": "David Livingstone",
+     "wrong": [
+      "Mungo Park",
+      "Henry Morton Stanley",
+      "Robert Moffat"
+     ],
+     "why": "A town is named after him."
+    },
+    {
+     "level": 2,
+     "q": "Which President was re-elected in 2025 after losing in 2020?",
+     "a": "Peter Mutharika",
+     "wrong": [
+      "Lazarus Chakwera",
+      "Joyce Banda",
+      "Bakili Muluzi"
+     ],
+     "why": "He beat Lazarus Chakwera."
+    },
+    {
+     "level": 2,
+     "q": "What was unusual about the 2019 election result?",
+     "a": "It was annulled by the courts",
+     "wrong": [
+      "It was a tie",
+      "Nobody voted",
+      "The King decided it"
+     ],
+     "why": "A new vote was held in 2020."
+    },
+    {
+     "level": 2,
+     "q": "Which old colonial capital sits below a plateau?",
+     "a": "Zomba",
+     "wrong": [
+      "Blantyre",
+      "Mangochi",
+      "Karonga"
+     ],
+     "why": "It was capital until 1975."
+    },
+    {
+     "level": 2,
+     "q": "Which city is named after a Scottish town and is the commercial centre?",
+     "a": "Blantyre",
+     "wrong": [
+      "Livingstonia",
+      "Zomba",
+      "Lilongwe"
+     ],
+     "why": "Livingstone was born in Blantyre, Scotland."
+    },
+    {
+     "level": 3,
+     "q": "Which 1915 uprising against British rule was led by a pastor?",
+     "a": "Chilembwe uprising",
+     "wrong": [
+      "Maji Maji rebellion",
+      "Bambatha rebellion",
+      "Mau Mau uprising"
+     ],
+     "why": "John Chilembwe is a national hero."
+    },
+    {
+     "level": 3,
+     "q": "Which 1959 crisis saw nationalist leaders jailed?",
+     "a": "Nyasaland Emergency",
+     "wrong": [
+      "Federation Crisis",
+      "Lilongwe Uprising",
+      "Blantyre Revolt"
+     ],
+     "why": "It led to the end of the Federation."
+    },
+    {
+     "level": 3,
+     "q": "Which federation did Nyasaland join with the two Rhodesias?",
+     "a": "Federation of Rhodesia and Nyasaland",
+     "wrong": [
+      "Central African Union",
+      "East African Federation",
+      "Union of South Africa"
+     ],
+     "why": "It lasted from 1953 to 1963."
+    }
+   ]
+  },
+  {
+   "name": "Malawi: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which large lake covers about a fifth of Malawi?",
+     "a": "Lake Malawi",
+     "wrong": [
+      "Lake Victoria",
+      "Lake Tanganyika",
+      "Lake Kariba"
+     ],
+     "why": "It has more fish species than any other lake."
+    },
+    {
+     "level": 1,
+     "q": "Which colourful fish live in Lake Malawi and are popular with aquarium owners?",
+     "a": "Cichlids",
+     "wrong": [
+      "Goldfish",
+      "Guppies",
+      "Clownfish"
+     ],
+     "why": "There are hundreds of species."
+    },
+    {
+     "level": 1,
+     "q": "Which national park on Lake Malawi is a UNESCO site?",
+     "a": "Lake Malawi National Park",
+     "wrong": [
+      "Liwonde",
+      "Nyika",
+      "Kasungu"
+     ],
+     "why": "It protects the fish."
+    },
+    {
+     "level": 1,
+     "q": "Which maize porridge is Malawi's staple?",
+     "a": "Nsima",
+     "wrong": [
+      "Ugali",
+      "Sadza",
+      "Pap"
+     ],
+     "why": "It is eaten with relish."
+    },
+    {
+     "level": 1,
+     "q": "Which fish from Lake Malawi is a famous dish?",
+     "a": "Chambo",
+     "wrong": [
+      "Catfish",
+      "Nile perch",
+      "Kapenta"
+     ],
+     "why": "It is a kind of tilapia."
+    },
+    {
+     "level": 1,
+     "q": "Which plateau is the highest in Malawi?",
+     "a": "Nyika Plateau",
+     "wrong": [
+      "Zomba Plateau",
+      "Dedza Mountain",
+      "Viphya"
+     ],
+     "why": "It has zebra and orchids."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain massif in the south is Malawi's highest?",
+     "a": "Mulanje Massif",
+     "wrong": [
+      "Nyika Plateau",
+      "Zomba Plateau",
+      "Dedza"
+     ],
+     "why": "Sapitwa peak is about 3,000 m."
+    },
+    {
+     "level": 2,
+     "q": "Which national park on the Shire River is famous for hippos and elephants?",
+     "a": "Liwonde National Park",
+     "wrong": [
+      "Majete",
+      "Kasungu",
+      "Nyika"
+     ],
+     "why": "It has been restocked with cheetahs."
+    },
+    {
+     "level": 2,
+     "q": "Which lakeside music festival was held on Lake Malawi?",
+     "a": "Lake of Stars",
+     "wrong": [
+      "Bushfire",
+      "Sauti za Busara",
+      "Festival au Désert"
+     ],
+     "why": "It began in 2004."
+    },
+    {
+     "level": 2,
+     "q": "Which Malawian dance of masked men is on UNESCO's list?",
+     "a": "Gule Wamkulu",
+     "wrong": [
+      "Umhlanga",
+      "Ingoma",
+      "Vimbuza"
+     ],
+     "why": "It is performed by the Nyau society."
+    },
+    {
+     "level": 2,
+     "q": "Which island in Lake Malawi has a big Anglican cathedral?",
+     "a": "Likoma Island",
+     "wrong": [
+      "Chizumulu",
+      "Mumbo",
+      "Thumbi"
+     ],
+     "why": "It belongs to Malawi but lies in Mozambique's waters."
+    },
+    {
+     "level": 2,
+     "q": "Which reserve in the south has the 'Big Five' again after restocking?",
+     "a": "Majete Wildlife Reserve",
+     "wrong": [
+      "Liwonde",
+      "Nyika",
+      "Vwaza"
+     ],
+     "why": "African Parks restored it."
+    },
+    {
+     "level": 3,
+     "q": "Which Malawian netball team is called the Queens?",
+     "a": "Malawi Queens",
+     "wrong": [
+      "Malawi Flames",
+      "Malawi Stars",
+      "Malawi Lions"
+     ],
+     "why": "Netball is very popular."
+    },
+    {
+     "level": 3,
+     "q": "Which healing dance of northern Malawi is on UNESCO's list?",
+     "a": "Vimbuza",
+     "wrong": [
+      "Gule Wamkulu",
+      "Beni",
+      "Tchopa"
+     ],
+     "why": "It is used to treat illness."
+    },
+    {
+     "level": 3,
+     "q": "Which old mission town in the north has views over the lake?",
+     "a": "Livingstonia",
+     "wrong": [
+      "Blantyre",
+      "Nkhata Bay",
+      "Karonga"
+     ],
+     "why": "It was founded in 1894."
+    }
+   ]
+  }
+ ]
+}
