@@ -1388,6 +1388,996 @@
       "Anita Desai"
      ],
      "why": "It was her first novel."
+    },
+    {
+     "q": "Which epic tells the story of Rama and Sita?",
+     "a": "Ramayana",
+     "wrong": [
+      "Mahabharata",
+      "Shahnameh",
+      "Gita Govinda"
+     ],
+     "level": 1,
+     "why": "Valmiki is credited as its author."
+    },
+    {
+     "q": "Which sage is credited with writing the Ramayana?",
+     "a": "Valmiki",
+     "wrong": [
+      "Vyasa",
+      "Kalidasa",
+      "Tulsidas"
+     ],
+     "level": 1,
+     "why": "He is called the 'Adi Kavi', the first poet."
+    },
+    {
+     "q": "Who is traditionally credited with composing the Mahabharata?",
+     "a": "Vyasa",
+     "wrong": [
+      "Valmiki",
+      "Kalidasa",
+      "Bana"
+     ],
+     "level": 1,
+     "why": "Ganesha is said to have written it down."
+    },
+    {
+     "q": "Which part of the Mahabharata records Krishna's advice to Arjuna?",
+     "a": "Bhagavad Gita",
+     "wrong": [
+      "Upanishads",
+      "Rig Veda",
+      "Ramcharitmanas"
+     ],
+     "level": 1,
+     "why": "It has 700 verses."
+    },
+    {
+     "q": "Which Indian poet won the Nobel Prize in Literature in 1913?",
+     "a": "Rabindranath Tagore",
+     "wrong": [
+      "Sarojini Naidu",
+      "Muhammad Iqbal",
+      "Kazi Nazrul Islam"
+     ],
+     "level": 1,
+     "why": "He won for 'Gitanjali'."
+    },
+    {
+     "q": "For which collection of poems did Tagore win the Nobel Prize?",
+     "a": "Gitanjali",
+     "wrong": [
+      "Gora",
+      "The Home and the World",
+      "Kabuliwala"
+     ],
+     "level": 1,
+     "why": "He translated it into English himself."
+    },
+    {
+     "q": "Which Hindi poet wrote the Ramcharitmanas?",
+     "a": "Tulsidas",
+     "wrong": [
+      "Kabir",
+      "Surdas",
+      "Mirabai"
+     ],
+     "level": 1,
+     "why": "He retold the Ramayana in Awadhi."
+    },
+    {
+     "q": "Which author created the fictional town of Malgudi?",
+     "a": "R. K. Narayan",
+     "wrong": [
+      "Mulk Raj Anand",
+      "Raja Rao",
+      "Ruskin Bond"
+     ],
+     "level": 1,
+     "why": "'Malgudi Days' became a TV series."
+    },
+    {
+     "q": "Who wrote 'Midnight's Children', which won the 1981 Booker Prize?",
+     "a": "Salman Rushdie",
+     "wrong": [
+      "Vikram Seth",
+      "Amitav Ghosh",
+      "Arundhati Roy"
+     ],
+     "level": 1,
+     "why": "It was later named the 'Booker of Bookers'."
+    },
+    {
+     "q": "Which author lives in Mussoorie and writes about the hills?",
+     "a": "Ruskin Bond",
+     "wrong": [
+      "R. K. Narayan",
+      "Jim Corbett",
+      "Rudyard Kipling"
+     ],
+     "level": 1,
+     "why": "He wrote 'The Room on the Roof'."
+    },
+    {
+     "q": "Who wrote 'Wings of Fire', an autobiography?",
+     "a": "A. P. J. Abdul Kalam",
+     "wrong": [
+      "Jawaharlal Nehru",
+      "Mahatma Gandhi",
+      "Sachin Tendulkar"
+     ],
+     "level": 1,
+     "why": "It tells of his life as a scientist."
+    },
+    {
+     "q": "Who wrote 'The Story of My Experiments with Truth'?",
+     "a": "Mahatma Gandhi",
+     "wrong": [
+      "Jawaharlal Nehru",
+      "B. R. Ambedkar",
+      "Vinoba Bhave"
+     ],
+     "level": 1,
+     "why": "It is his autobiography."
+    },
+    {
+     "q": "Which book did Jawaharlal Nehru write in Ahmednagar Fort prison?",
+     "a": "The Discovery of India",
+     "wrong": [
+      "Glimpses of World History",
+      "An Autobiography",
+      "Letters from a Father to His Daughter"
+     ],
+     "level": 1,
+     "why": "It was published in 1946."
+    },
+    {
+     "q": "Which animal fables collection is said to have been written to teach princes?",
+     "a": "Panchatantra",
+     "wrong": [
+      "Jataka tales",
+      "Hitopadesha",
+      "Baital Pachisi"
+     ],
+     "level": 1,
+     "why": "Vishnu Sharma is credited with it."
+    },
+    {
+     "q": "Which author wrote the bestseller 'Five Point Someone'?",
+     "a": "Chetan Bhagat",
+     "wrong": [
+      "Amish Tripathi",
+      "Ravinder Singh",
+      "Durjoy Datta"
+     ],
+     "level": 1,
+     "why": "It inspired the film '3 Idiots'."
+    },
+    {
+     "q": "Which author wrote 'The Immortals of Meluha'?",
+     "a": "Amish Tripathi",
+     "wrong": [
+      "Chetan Bhagat",
+      "Devdutt Pattanaik",
+      "Ashwin Sanghi"
+     ],
+     "level": 1,
+     "why": "It is the first of the Shiva trilogy."
+    },
+    {
+     "q": "Which British author born in Bombay wrote 'The Jungle Book'?",
+     "a": "Rudyard Kipling",
+     "wrong": [
+      "E. M. Forster",
+      "George Orwell",
+      "Jim Corbett"
+     ],
+     "level": 1,
+     "why": "Mowgli is raised by wolves."
+    },
+    {
+     "q": "Who wrote 'The White Tiger', winner of the 2008 Booker Prize?",
+     "a": "Aravind Adiga",
+     "wrong": [
+      "Kiran Desai",
+      "Arundhati Roy",
+      "Amitav Ghosh"
+     ],
+     "level": 1,
+     "why": "It became a Netflix film in 2021."
+    },
+    {
+     "q": "Which Indian comic series retells myths and history?",
+     "a": "Amar Chitra Katha",
+     "wrong": [
+      "Tinkle",
+      "Chacha Chaudhary",
+      "Nagraj"
+     ],
+     "level": 1,
+     "why": "Anant Pai founded it in 1967."
+    },
+    {
+     "q": "Which cartoon character's brain 'works faster than a computer'?",
+     "a": "Chacha Chaudhary",
+     "wrong": [
+      "Suppandi",
+      "Shikari Shambu",
+      "Nagraj"
+     ],
+     "level": 1,
+     "why": "Pran Kumar Sharma created him."
+    },
+    {
+     "q": "Which children's magazine features Suppandi and Shikari Shambu?",
+     "a": "Tinkle",
+     "wrong": [
+      "Champak",
+      "Chandamama",
+      "Nandan"
+     ],
+     "level": 1,
+     "why": "It began in 1980."
+    },
+    {
+     "q": "Which ancient grammarian wrote the 'Ashtadhyayi' on Sanskrit?",
+     "a": "Panini",
+     "wrong": [
+      "Patanjali",
+      "Kautilya",
+      "Aryabhata"
+     ],
+     "level": 1,
+     "why": "It has nearly 4,000 rules."
+    },
+    {
+     "q": "Which ancient text on statecraft is credited to Kautilya?",
+     "a": "Arthashastra",
+     "wrong": [
+      "Manusmriti",
+      "Kamasutra",
+      "Natyashastra"
+     ],
+     "level": 1,
+     "why": "Kautilya is also known as Chanakya."
+    },
+    {
+     "q": "Who wrote 'Train to Pakistan' about the Partition?",
+     "a": "Khushwant Singh",
+     "wrong": [
+      "Bhisham Sahni",
+      "Saadat Hasan Manto",
+      "Amrita Pritam"
+     ],
+     "level": 1,
+     "why": "It was published in 1956."
+    },
+    {
+     "q": "Who wrote the patriotic song 'Vande Mataram'?",
+     "a": "Bankim Chandra Chattopadhyay",
+     "wrong": [
+      "Rabindranath Tagore",
+      "Subramania Bharati",
+      "Muhammad Iqbal"
+     ],
+     "level": 1,
+     "why": "It appears in his novel 'Anandamath'."
+    },
+    {
+     "q": "In which novel does 'Vande Mataram' first appear?",
+     "a": "Anandamath",
+     "wrong": [
+      "Devdas",
+      "Gora",
+      "Kapalkundala"
+     ],
+     "level": 1,
+     "why": "Bankim Chandra published it in 1882."
+    },
+    {
+     "q": "Who wrote the novel 'Devdas'?",
+     "a": "Sarat Chandra Chattopadhyay",
+     "wrong": [
+      "Bankim Chandra Chattopadhyay",
+      "Tagore",
+      "Premchand"
+     ],
+     "level": 1,
+     "why": "It has been filmed many times."
+    },
+    {
+     "q": "Which Hindi writer wrote 'Godaan'?",
+     "a": "Munshi Premchand",
+     "wrong": [
+      "Harivansh Rai Bachchan",
+      "Jaishankar Prasad",
+      "Mahadevi Varma"
+     ],
+     "level": 1,
+     "why": "It tells of a poor farmer, Hori."
+    },
+    {
+     "q": "Who wrote 'Madhushala', a famous Hindi poem?",
+     "a": "Harivansh Rai Bachchan",
+     "wrong": [
+      "Ramdhari Singh Dinkar",
+      "Sumitranandan Pant",
+      "Nirala"
+     ],
+     "level": 1,
+     "why": "He was Amitabh Bachchan's father."
+    },
+    {
+     "q": "Which poet is called 'Rashtrakavi' for his patriotic Hindi poems?",
+     "a": "Ramdhari Singh Dinkar",
+     "wrong": [
+      "Maithili Sharan Gupt",
+      "Harivansh Rai Bachchan",
+      "Kabir"
+     ],
+     "level": 1,
+     "why": "He wrote 'Rashmirathi'."
+    },
+    {
+     "q": "Which 15th-century saint-poet wrote short couplets called dohas?",
+     "a": "Kabir",
+     "wrong": [
+      "Tulsidas",
+      "Surdas",
+      "Mirabai"
+     ],
+     "level": 1,
+     "why": "He criticised blind ritual."
+    },
+    {
+     "q": "Which Rajput princess wrote devotional songs to Krishna?",
+     "a": "Mirabai",
+     "wrong": [
+      "Ahilyabai",
+      "Padmini",
+      "Rani Durgavati"
+     ],
+     "level": 1,
+     "why": "She lived in the 1500s."
+    },
+    {
+     "q": "Who wrote the 'Gita Govinda' about Krishna and Radha?",
+     "a": "Jayadeva",
+     "wrong": [
+      "Kalidasa",
+      "Bhavabhuti",
+      "Bana"
+     ],
+     "level": 1,
+     "why": "It dates from the 12th century."
+    },
+    {
+     "q": "Which great Sanskrit poet wrote 'Abhijnanasakuntalam'?",
+     "a": "Kalidasa",
+     "wrong": [
+      "Bhasa",
+      "Bana",
+      "Valmiki"
+     ],
+     "level": 1,
+     "why": "It tells the story of Shakuntala."
+    },
+    {
+     "q": "Which Kalidasa poem sends a message through a cloud?",
+     "a": "Meghaduta",
+     "wrong": [
+      "Raghuvamsha",
+      "Kumarasambhava",
+      "Ritusamhara"
+     ],
+     "level": 1,
+     "why": "A yaksha asks a cloud to reach his wife."
+    },
+    {
+     "q": "Which Tamil text of moral couplets was written by Thiruvalluvar?",
+     "a": "Thirukkural",
+     "wrong": [
+      "Silappatikaram",
+      "Manimekalai",
+      "Tolkappiyam"
+     ],
+     "level": 1,
+     "why": "It has 1,330 couplets."
+    },
+    {
+     "q": "Which Tamil epic tells the story of Kannagi and her anklet?",
+     "a": "Silappatikaram",
+     "wrong": [
+      "Manimekalai",
+      "Thirukkural",
+      "Kamba Ramayanam"
+     ],
+     "level": 2,
+     "why": "Ilango Adigal wrote it."
+    },
+    {
+     "q": "Which Bengali author wrote 'Pather Panchali', filmed by Satyajit Ray?",
+     "a": "Bibhutibhushan Bandyopadhyay",
+     "wrong": [
+      "Sarat Chandra Chattopadhyay",
+      "Tarashankar Bandyopadhyay",
+      "Sunil Gangopadhyay"
+     ],
+     "level": 2,
+     "why": "Ray's film came out in 1955."
+    },
+    {
+     "q": "Which Indian-born author won the Nobel Prize in Literature in 2001?",
+     "a": "V. S. Naipaul",
+     "wrong": [
+      "Salman Rushdie",
+      "Amitav Ghosh",
+      "Vikram Seth"
+     ],
+     "level": 2,
+     "why": "He was born in Trinidad to Indian parents."
+    },
+    {
+     "q": "Which Indian-born author wrote 'A House for Mr Biswas'?",
+     "a": "V. S. Naipaul",
+     "wrong": [
+      "R. K. Narayan",
+      "Rohinton Mistry",
+      "Anita Desai"
+     ],
+     "level": 2,
+     "why": "It was published in 1961."
+    },
+    {
+     "q": "Who wrote 'A Suitable Boy', one of the longest novels in English?",
+     "a": "Vikram Seth",
+     "wrong": [
+      "Amitav Ghosh",
+      "Rohinton Mistry",
+      "Upamanyu Chatterjee"
+     ],
+     "level": 2,
+     "why": "It has about 1,350 pages."
+    },
+    {
+     "q": "Which author wrote 'The Inheritance of Loss' and won the 2006 Booker Prize?",
+     "a": "Kiran Desai",
+     "wrong": [
+      "Anita Desai",
+      "Jhumpa Lahiri",
+      "Arundhati Roy"
+     ],
+     "level": 2,
+     "why": "Her mother Anita was shortlisted three times."
+    },
+    {
+     "q": "Which Indian-American author won a Pulitzer Prize for 'Interpreter of Maladies'?",
+     "a": "Jhumpa Lahiri",
+     "wrong": [
+      "Kiran Desai",
+      "Chitra Banerjee Divakaruni",
+      "Bharati Mukherjee"
+     ],
+     "level": 2,
+     "why": "She won in 2000."
+    },
+    {
+     "q": "Who wrote 'The Namesake'?",
+     "a": "Jhumpa Lahiri",
+     "wrong": [
+      "Kiran Desai",
+      "Anita Desai",
+      "Manju Kapur"
+     ],
+     "level": 2,
+     "why": "It was filmed by Mira Nair."
+    },
+    {
+     "q": "Which author wrote 'The Glass Palace' and the Ibis trilogy?",
+     "a": "Amitav Ghosh",
+     "wrong": [
+      "Vikram Seth",
+      "Salman Rushdie",
+      "Pankaj Mishra"
+     ],
+     "level": 2,
+     "why": "'Sea of Poppies' begins the trilogy."
+    },
+    {
+     "q": "Which Hindi novel won the 2022 International Booker Prize?",
+     "a": "Tomb of Sand (Ret Samadhi)",
+     "wrong": [
+      "Godaan",
+      "Raag Darbari",
+      "Maila Anchal"
+     ],
+     "level": 2,
+     "why": "Geetanjali Shree wrote it."
+    },
+    {
+     "q": "Who wrote 'Tomb of Sand', winner of the 2022 International Booker?",
+     "a": "Geetanjali Shree",
+     "wrong": [
+      "Banu Mushtaq",
+      "Perumal Murugan",
+      "Mridula Garg"
+     ],
+     "level": 2,
+     "why": "Daisy Rockwell translated it."
+    },
+    {
+     "q": "Which Kannada writer won the 2025 International Booker Prize for 'Heart Lamp'?",
+     "a": "Banu Mushtaq",
+     "wrong": [
+      "Geetanjali Shree",
+      "Vivek Shanbhag",
+      "U. R. Ananthamurthy"
+     ],
+     "level": 2,
+     "why": "Deepa Bhasthi translated it."
+    },
+    {
+     "q": "Who wrote 'Toba Tek Singh', a short story about Partition?",
+     "a": "Saadat Hasan Manto",
+     "wrong": [
+      "Ismat Chughtai",
+      "Krishan Chander",
+      "Rajinder Singh Bedi"
+     ],
+     "level": 2,
+     "why": "It is set in an asylum."
+    },
+    {
+     "q": "Which Punjabi poet wrote the Partition lament 'Ajj Aakhaan Waris Shah Nu'?",
+     "a": "Amrita Pritam",
+     "wrong": [
+      "Shiv Kumar Batalvi",
+      "Faiz Ahmed Faiz",
+      "Gulzar"
+     ],
+     "level": 2,
+     "why": "She also wrote the novel 'Pinjar'."
+    },
+    {
+     "q": "Who wrote the Hindi satire 'Raag Darbari'?",
+     "a": "Shrilal Shukla",
+     "wrong": [
+      "Phanishwar Nath Renu",
+      "Mohan Rakesh",
+      "Bhisham Sahni"
+     ],
+     "level": 2,
+     "why": "It mocks village politics."
+    },
+    {
+     "q": "Which Hindi novel by Bhisham Sahni is about Partition riots?",
+     "a": "Tamas",
+     "wrong": [
+      "Pinjar",
+      "Jhootha Sach",
+      "Aadha Gaon"
+     ],
+     "level": 2,
+     "why": "It was made into a TV film in 1988."
+    },
+    {
+     "q": "Which Assamese writer won the Jnanpith Award in 2000?",
+     "a": "Indira Goswami",
+     "wrong": [
+      "Birendra Kumar Bhattacharya",
+      "Mamoni Raisom",
+      "Lakshminath Bezbaroa"
+     ],
+     "level": 2,
+     "why": "She wrote under the name Mamoni Raisom Goswami."
+    },
+    {
+     "q": "Which award is India's highest literary honour?",
+     "a": "Jnanpith Award",
+     "wrong": [
+      "Sahitya Akademi Award",
+      "Padma Bhushan",
+      "Kalinga Prize"
+     ],
+     "level": 2,
+     "why": "It was first given in 1965."
+    },
+    {
+     "q": "Who was the first winner of the Jnanpith Award, in 1965?",
+     "a": "G. Sankara Kurup",
+     "wrong": [
+      "Kuvempu",
+      "Tarashankar Bandyopadhyay",
+      "Umashankar Joshi"
+     ],
+     "level": 2,
+     "why": "He wrote in Malayalam."
+    },
+    {
+     "q": "Which Malayalam author wrote 'Randamoozham', retelling the Mahabharata?",
+     "a": "M. T. Vasudevan Nair",
+     "wrong": [
+      "O. V. Vijayan",
+      "Vaikom Muhammad Basheer",
+      "Thakazhi Sivasankara Pillai"
+     ],
+     "level": 2,
+     "why": "It is told by Bhima."
+    },
+    {
+     "q": "Which Malayalam author wrote 'Chemmeen' about fishing families?",
+     "a": "Thakazhi Sivasankara Pillai",
+     "wrong": [
+      "Vaikom Muhammad Basheer",
+      "M. T. Vasudevan Nair",
+      "Kamala Das"
+     ],
+     "level": 2,
+     "why": "It became a famous 1965 film."
+    },
+    {
+     "q": "Which Marathi play by Vijay Tendulkar shocked audiences in 1972?",
+     "a": "Ghashiram Kotwal",
+     "wrong": [
+      "Sakharam Binder",
+      "Tughlaq",
+      "Hayavadana"
+     ],
+     "level": 2,
+     "why": "It was banned for a time."
+    },
+    {
+     "q": "Which Kannada playwright wrote 'Tughlaq' and 'Hayavadana'?",
+     "a": "Girish Karnad",
+     "wrong": [
+      "Vijay Tendulkar",
+      "Badal Sircar",
+      "Mohan Rakesh"
+     ],
+     "level": 2,
+     "why": "He was also an actor."
+    },
+    {
+     "q": "Which Tamil poet wrote patriotic songs and was called 'Mahakavi'?",
+     "a": "Subramania Bharati",
+     "wrong": [
+      "Kambar",
+      "Bharathidasan",
+      "Kannadasan"
+     ],
+     "level": 2,
+     "why": "He died in 1921."
+    },
+    {
+     "q": "Which Urdu poet of the Mughal court wrote famous ghazals in Delhi?",
+     "a": "Mirza Ghalib",
+     "wrong": [
+      "Mir Taqi Mir",
+      "Zauq",
+      "Bahadur Shah Zafar"
+     ],
+     "level": 2,
+     "why": "He died in 1869."
+    },
+    {
+     "q": "Which lyricist wrote the songs of 'Kabhi Kabhie' (1976)?",
+     "a": "Sahir Ludhianvi",
+     "wrong": [
+      "Gulzar",
+      "Javed Akhtar",
+      "Anand Bakshi"
+     ],
+     "level": 2,
+     "why": "The title song became a classic."
+    },
+    {
+     "q": "Which lyricist and poet won an Oscar for 'Jai Ho'?",
+     "a": "Gulzar",
+     "wrong": [
+      "Javed Akhtar",
+      "Prasoon Joshi",
+      "Sahir Ludhianvi"
+     ],
+     "level": 2,
+     "why": "He shared it with A. R. Rahman."
+    },
+    {
+     "q": "Which author wrote the 'Feluda' detective stories?",
+     "a": "Satyajit Ray",
+     "wrong": [
+      "Sharadindu Bandyopadhyay",
+      "Sunil Gangopadhyay",
+      "Premendra Mitra"
+     ],
+     "level": 2,
+     "why": "Feluda lives in Kolkata."
+    },
+    {
+     "q": "Which Bengali detective was created by Sharadindu Bandyopadhyay?",
+     "a": "Byomkesh Bakshi",
+     "wrong": [
+      "Feluda",
+      "Kiriti Roy",
+      "Professor Shonku"
+     ],
+     "level": 2,
+     "why": "He calls himself a 'truth-seeker'."
+    },
+    {
+     "q": "Which Tagore short story is about an Afghan fruit seller and a little girl?",
+     "a": "Kabuliwala",
+     "wrong": [
+      "The Postmaster",
+      "Chokher Bali",
+      "Nastanirh"
+     ],
+     "level": 2,
+     "why": "The little girl is called Mini."
+    },
+    {
+     "q": "Which ancient Indian text on drama and dance is credited to Bharata?",
+     "a": "Natyashastra",
+     "wrong": [
+      "Kamasutra",
+      "Arthashastra",
+      "Yoga Sutras"
+     ],
+     "level": 3,
+     "why": "It describes rasa, the emotions of art."
+    },
+    {
+     "q": "Which Persian translation of the Upanishads did Dara Shikoh make?",
+     "a": "Sirr-i-Akbar",
+     "wrong": [
+      "Akbarnama",
+      "Baburnama",
+      "Tuzuk-i-Jahangiri"
+     ],
+     "level": 3,
+     "why": "He finished it in 1657."
+    },
+    {
+     "q": "Which Mughal emperor wrote his memoirs in Chagatai Turkic?",
+     "a": "Babur",
+     "wrong": [
+      "Akbar",
+      "Jahangir",
+      "Humayun"
+     ],
+     "level": 3,
+     "why": "The book is the Baburnama."
+    },
+    {
+     "q": "Who wrote the Akbarnama, the history of Akbar's reign?",
+     "a": "Abul Fazl",
+     "wrong": [
+      "Faizi",
+      "Badauni",
+      "Birbal"
+     ],
+     "level": 3,
+     "why": "It includes the Ain-i-Akbari."
+    },
+    {
+     "q": "Which travel account did the Moroccan Ibn Battuta write after visiting India?",
+     "a": "The Rihla",
+     "wrong": [
+      "The Travels of Marco Polo",
+      "Indica",
+      "Kitab al-Hind"
+     ],
+     "level": 3,
+     "why": "He served as a judge in Delhi."
+    },
+    {
+     "q": "Which Persian scholar wrote 'Kitab al-Hind' about India around 1030?",
+     "a": "Al-Biruni",
+     "wrong": [
+      "Ibn Battuta",
+      "Amir Khusrau",
+      "Firishta"
+     ],
+     "level": 3,
+     "why": "He came with Mahmud of Ghazni."
+    },
+    {
+     "q": "Which poet of the Delhi Sultanate is credited with early Hindavi verse?",
+     "a": "Amir Khusrau",
+     "wrong": [
+      "Kabir",
+      "Mir Taqi Mir",
+      "Bulleh Shah"
+     ],
+     "level": 3,
+     "why": "He was a disciple of Nizamuddin Auliya."
+    },
+    {
+     "q": "Which Kannada poet wrote the epic 'Sri Ramayana Darshanam' and won the first Kannada Jnanpith?",
+     "a": "Kuvempu",
+     "wrong": [
+      "D. R. Bendre",
+      "Shivaram Karanth",
+      "Masti Venkatesha Iyengar"
+     ],
+     "level": 3,
+     "why": "He also wrote Karnataka's state song."
+    },
+    {
+     "q": "Which Odia writer of the 1800s is called the father of modern Odia literature?",
+     "a": "Fakir Mohan Senapati",
+     "wrong": [
+      "Gopinath Mohanty",
+      "Upendra Bhanja",
+      "Radhanath Ray"
+     ],
+     "level": 3,
+     "why": "He wrote 'Chha Mana Atha Guntha'."
+    },
+    {
+     "q": "Which Telugu author wrote the novel 'Kanyasulkam' as a play?",
+     "a": "Gurajada Apparao",
+     "wrong": [
+      "Viswanatha Satyanarayana",
+      "Sri Sri",
+      "Kandukuri Veeresalingam"
+     ],
+     "level": 3,
+     "why": "It mocks the bride-price custom."
+    },
+    {
+     "q": "Which Telugu author won the first Telugu Jnanpith for 'Ramayana Kalpavrukshamu'?",
+     "a": "Viswanatha Satyanarayana",
+     "wrong": [
+      "C. Narayana Reddy",
+      "Sri Sri",
+      "Gurajada Apparao"
+     ],
+     "level": 3,
+     "why": "He won it in 1970."
+    },
+    {
+     "q": "Which Hindi poet wrote 'Kamayani', an epic of Manu?",
+     "a": "Jaishankar Prasad",
+     "wrong": [
+      "Sumitranandan Pant",
+      "Mahadevi Varma",
+      "Nirala"
+     ],
+     "level": 3,
+     "why": "It was published in 1936."
+    },
+    {
+     "q": "Which Hindi poet was called 'the modern Meera'?",
+     "a": "Mahadevi Varma",
+     "wrong": [
+      "Subhadra Kumari Chauhan",
+      "Amrita Pritam",
+      "Mridula Garg"
+     ],
+     "level": 3,
+     "why": "She wrote 'Yama'."
+    },
+    {
+     "q": "Which poem by Subhadra Kumari Chauhan praises the Rani of Jhansi?",
+     "a": "Jhansi Ki Rani",
+     "wrong": [
+      "Pushp Ki Abhilasha",
+      "Madhushala",
+      "Rashmirathi"
+     ],
+     "level": 3,
+     "why": "Schoolchildren across India learn it."
+    },
+    {
+     "q": "Which Gujarati novel by Govardhanram Tripathi has four volumes?",
+     "a": "Saraswatichandra",
+     "wrong": [
+      "Manvini Bhavai",
+      "Paddhar",
+      "Gramalakshmi"
+     ],
+     "level": 3,
+     "why": "It was published between 1887 and 1901."
+    },
+    {
+     "q": "Which Assamese writer founded modern Assamese short stories?",
+     "a": "Lakshminath Bezbaroa",
+     "wrong": [
+      "Indira Goswami",
+      "Jyoti Prasad Agarwala",
+      "Birendra Kumar Bhattacharya"
+     ],
+     "level": 3,
+     "why": "He wrote the state song 'O Mur Apunar Desh'."
+    },
+    {
+     "q": "Which Hindi poet known as 'Nirala' wrote 'Saroj Smriti'?",
+     "a": "Suryakant Tripathi",
+     "wrong": [
+      "Jaishankar Prasad",
+      "Sumitranandan Pant",
+      "Ramdhari Singh Dinkar"
+     ],
+     "level": 3,
+     "why": "It mourns his daughter."
+    },
+    {
+     "q": "Which Malayalam author wrote 'Balyakalasakhi'?",
+     "a": "Vaikom Muhammad Basheer",
+     "wrong": [
+      "M. T. Vasudevan Nair",
+      "O. V. Vijayan",
+      "Thakazhi Sivasankara Pillai"
+     ],
+     "level": 3,
+     "why": "He was called 'Beypore Sultan'."
+    },
+    {
+     "q": "Which Punjabi poet was called 'Birha da Sultan', the king of separation?",
+     "a": "Shiv Kumar Batalvi",
+     "wrong": [
+      "Amrita Pritam",
+      "Surjit Patar",
+      "Pash"
+     ],
+     "level": 3,
+     "why": "His verse play 'Loona' won the Sahitya Akademi Award."
+    },
+    {
+     "q": "Which Kannada author wrote 'Samskara', a novel about Brahmin orthodoxy?",
+     "a": "U. R. Ananthamurthy",
+     "wrong": [
+      "S. L. Bhyrappa",
+      "Girish Karnad",
+      "Shivaram Karanth"
+     ],
+     "level": 3,
+     "why": "It became a 1970 film."
+    },
+    {
+     "q": "Which Kannada author wrote 'Parva', a retelling of the Mahabharata?",
+     "a": "S. L. Bhyrappa",
+     "wrong": [
+      "U. R. Ananthamurthy",
+      "Kuvempu",
+      "Poornachandra Tejaswi"
+     ],
+     "level": 3,
+     "why": "It strips the epic of miracles."
+    },
+    {
+     "q": "Which Bengali poet was called 'Bidrohi Kobi', the rebel poet?",
+     "a": "Kazi Nazrul Islam",
+     "wrong": [
+      "Jibanananda Das",
+      "Michael Madhusudan Dutt",
+      "Sukanta Bhattacharya"
+     ],
+     "level": 3,
+     "why": "He is Bangladesh's national poet."
+    },
+    {
+     "q": "Which Bengali poet wrote the epic 'Meghnad Badh Kavya' in blank verse?",
+     "a": "Michael Madhusudan Dutt",
+     "wrong": [
+      "Bankim Chandra",
+      "Jibanananda Das",
+      "Nazrul Islam"
+     ],
+     "level": 3,
+     "why": "It makes Ravana's son the hero."
+    },
+    {
+     "q": "Which modern Bengali poet wrote 'Banalata Sen'?",
+     "a": "Jibanananda Das",
+     "wrong": [
+      "Shakti Chattopadhyay",
+      "Sunil Gangopadhyay",
+      "Buddhadeb Basu"
+     ],
+     "level": 3,
+     "why": "It is one of Bengal's best-loved poems."
     }
    ]
   },
@@ -1427,6 +2417,1084 @@
       "14"
      ],
      "why": "The last four were added in 2003."
+    },
+    {
+     "q": "Who was India's first Prime Minister?",
+     "a": "Jawaharlal Nehru",
+     "wrong": [
+      "Sardar Patel",
+      "Lal Bahadur Shastri",
+      "Indira Gandhi"
+     ],
+     "level": 1,
+     "why": "He served from 1947 until his death in 1964."
+    },
+    {
+     "q": "Who was India's first President?",
+     "a": "Rajendra Prasad",
+     "wrong": [
+      "Sarvepalli Radhakrishnan",
+      "Zakir Husain",
+      "V. V. Giri"
+     ],
+     "level": 1,
+     "why": "He served from 1950 to 1962."
+    },
+    {
+     "q": "Who became India's first woman Prime Minister?",
+     "a": "Indira Gandhi",
+     "wrong": [
+      "Sonia Gandhi",
+      "Pratibha Patil",
+      "Sarojini Naidu"
+     ],
+     "level": 1,
+     "why": "She first took office in 1966."
+    },
+    {
+     "q": "Who became India's first woman President, in 2007?",
+     "a": "Pratibha Patil",
+     "wrong": [
+      "Droupadi Murmu",
+      "Indira Gandhi",
+      "Sushma Swaraj"
+     ],
+     "level": 1,
+     "why": "She served until 2012."
+    },
+    {
+     "q": "Who has been India's Prime Minister since 2014?",
+     "a": "Narendra Modi",
+     "wrong": [
+      "Manmohan Singh",
+      "Rahul Gandhi",
+      "Amit Shah"
+     ],
+     "level": 1,
+     "why": "He was earlier Chief Minister of Gujarat."
+    },
+    {
+     "q": "Who became India's President in 2022?",
+     "a": "Droupadi Murmu",
+     "wrong": [
+      "Ram Nath Kovind",
+      "Pratibha Patil",
+      "Venkaiah Naidu"
+     ],
+     "level": 1,
+     "why": "She is the first tribal woman to hold the post."
+    },
+    {
+     "q": "What is the lower house of India's Parliament called?",
+     "a": "Lok Sabha",
+     "wrong": [
+      "Rajya Sabha",
+      "Vidhan Sabha",
+      "Gram Sabha"
+     ],
+     "level": 1,
+     "why": "Its members are directly elected."
+    },
+    {
+     "q": "What is the upper house of India's Parliament called?",
+     "a": "Rajya Sabha",
+     "wrong": [
+      "Lok Sabha",
+      "Vidhan Parishad",
+      "Lok Parishad"
+     ],
+     "level": 1,
+     "why": "Most of its members are elected by state assemblies."
+    },
+    {
+     "q": "Where does India's President live?",
+     "a": "Rashtrapati Bhavan",
+     "wrong": [
+      "Parliament House",
+      "Raj Bhavan",
+      "7 Lok Kalyan Marg"
+     ],
+     "level": 1,
+     "why": "It was built as the Viceroy's House."
+    },
+    {
+     "q": "Which date is India's Republic Day?",
+     "a": "26 January",
+     "wrong": [
+      "15 August",
+      "2 October",
+      "26 November"
+     ],
+     "level": 1,
+     "why": "The Constitution came into force on that day in 1950."
+    },
+    {
+     "q": "Which party did Narendra Modi lead to power in 2014?",
+     "a": "Bharatiya Janata Party (BJP)",
+     "wrong": [
+      "Indian National Congress",
+      "Aam Aadmi Party",
+      "Samajwadi Party"
+     ],
+     "level": 1,
+     "why": "It won an outright majority."
+    },
+    {
+     "q": "Which party led India's independence movement?",
+     "a": "Indian National Congress",
+     "wrong": [
+      "Bharatiya Janata Party",
+      "Muslim League",
+      "Swatantra Party"
+     ],
+     "level": 1,
+     "why": "It was founded in 1885."
+    },
+    {
+     "q": "How old must an Indian citizen be to vote?",
+     "a": "18",
+     "wrong": [
+      "21",
+      "16",
+      "25"
+     ],
+     "level": 1,
+     "why": "The age was lowered from 21 in 1989."
+    },
+    {
+     "q": "Who is called the 'Iron Man of India'?",
+     "a": "Sardar Vallabhbhai Patel",
+     "wrong": [
+      "Bhagat Singh",
+      "Subhas Chandra Bose",
+      "Lal Bahadur Shastri"
+     ],
+     "level": 1,
+     "why": "He united over 560 princely states."
+    },
+    {
+     "q": "Which Prime Minister gave the slogan 'Jai Jawan Jai Kisan'?",
+     "a": "Lal Bahadur Shastri",
+     "wrong": [
+      "Jawaharlal Nehru",
+      "Indira Gandhi",
+      "Morarji Desai"
+     ],
+     "level": 1,
+     "why": "He coined it during the 1965 war."
+    },
+    {
+     "q": "Which body runs India's elections?",
+     "a": "Election Commission of India",
+     "wrong": [
+      "Supreme Court",
+      "Lok Sabha Secretariat",
+      "NITI Aayog"
+     ],
+     "level": 1,
+     "why": "It was set up in 1950."
+    },
+    {
+     "q": "Which city is home to India's Supreme Court?",
+     "a": "New Delhi",
+     "wrong": [
+      "Mumbai",
+      "Kolkata",
+      "Chennai"
+     ],
+     "level": 1,
+     "why": "It opened in 1950."
+    },
+    {
+     "q": "What do Indians use to vote in national elections?",
+     "a": "Electronic voting machines (EVMs)",
+     "wrong": [
+      "Paper ballots",
+      "Postal votes",
+      "Online voting"
+     ],
+     "level": 1,
+     "why": "EVMs have been used nationwide since 2004."
+    },
+    {
+     "q": "Which Prime Minister was assassinated in 1984?",
+     "a": "Indira Gandhi",
+     "wrong": [
+      "Rajiv Gandhi",
+      "Lal Bahadur Shastri",
+      "Charan Singh"
+     ],
+     "level": 1,
+     "why": "She was killed by her bodyguards."
+    },
+    {
+     "q": "Which Indian Prime Minister was assassinated in 1991?",
+     "a": "Rajiv Gandhi",
+     "wrong": [
+      "Indira Gandhi",
+      "V. P. Singh",
+      "Chandra Shekhar"
+     ],
+     "level": 1,
+     "why": "He was killed during an election campaign."
+    },
+    {
+     "q": "How many Lok Sabha seats are filled by election?",
+     "a": "543",
+     "wrong": [
+      "250",
+      "500",
+      "600"
+     ],
+     "level": 1,
+     "why": "Two seats once reserved for Anglo-Indians were ended in 2020."
+    },
+    {
+     "q": "Which economist was India's Prime Minister from 2004 to 2014?",
+     "a": "Manmohan Singh",
+     "wrong": [
+      "P. Chidambaram",
+      "Pranab Mukherjee",
+      "Arun Jaitley"
+     ],
+     "level": 1,
+     "why": "He was earlier the finance minister of 1991's reforms."
+    },
+    {
+     "q": "Which party founded by Arvind Kejriwal won Delhi in 2015?",
+     "a": "Aam Aadmi Party",
+     "wrong": [
+      "Trinamool Congress",
+      "Janata Dal",
+      "Shiv Sena"
+     ],
+     "level": 1,
+     "why": "Its symbol is a broom."
+    },
+    {
+     "q": "What is India's national motto?",
+     "a": "Satyameva Jayate",
+     "wrong": [
+      "Vande Mataram",
+      "Jai Hind",
+      "Vasudhaiva Kutumbakam"
+     ],
+     "level": 1,
+     "why": "It means 'Truth alone triumphs'."
+    },
+    {
+     "q": "Who is the head of state in India?",
+     "a": "The President",
+     "wrong": [
+      "The Prime Minister",
+      "The Chief Justice",
+      "The Speaker"
+     ],
+     "level": 1,
+     "why": "The Prime Minister heads the government."
+    },
+    {
+     "q": "Which Indian leader was famous for his round glasses and spinning wheel?",
+     "a": "Mahatma Gandhi",
+     "wrong": [
+      "Jawaharlal Nehru",
+      "B. R. Ambedkar",
+      "Sardar Patel"
+     ],
+     "level": 1,
+     "why": "The spinning wheel stood for self-reliance."
+    },
+    {
+     "q": "What is the head of an Indian state's government called?",
+     "a": "Chief Minister",
+     "wrong": [
+      "Governor",
+      "Premier",
+      "Mayor"
+     ],
+     "level": 1,
+     "why": "The Governor is the state's formal head."
+    },
+    {
+     "q": "Which party has the hand as its election symbol?",
+     "a": "Indian National Congress",
+     "wrong": [
+      "BJP",
+      "Aam Aadmi Party",
+      "CPI(M)"
+     ],
+     "level": 1,
+     "why": "The BJP's symbol is the lotus."
+    },
+    {
+     "q": "What is the BJP's election symbol?",
+     "a": "Lotus",
+     "wrong": [
+      "Hand",
+      "Broom",
+      "Elephant"
+     ],
+     "level": 1,
+     "why": "The lotus is also India's national flower."
+    },
+    {
+     "q": "Which party uses the elephant as its symbol?",
+     "a": "Bahujan Samaj Party",
+     "wrong": [
+      "Samajwadi Party",
+      "Shiv Sena",
+      "Janata Dal (United)"
+     ],
+     "level": 1,
+     "why": "Mayawati leads it."
+    },
+    {
+     "q": "How many years is a normal term of India's Lok Sabha?",
+     "a": "Five",
+     "wrong": [
+      "Four",
+      "Six",
+      "Seven"
+     ],
+     "level": 1,
+     "why": "It can be dissolved earlier."
+    },
+    {
+     "q": "Who presides over India's Lok Sabha?",
+     "a": "The Speaker",
+     "wrong": [
+      "The Vice-President",
+      "The Prime Minister",
+      "The President"
+     ],
+     "level": 1,
+     "why": "The Vice-President chairs the Rajya Sabha."
+    },
+    {
+     "q": "Who chairs India's Rajya Sabha?",
+     "a": "The Vice-President",
+     "wrong": [
+      "The Speaker",
+      "The Prime Minister",
+      "The Chief Justice"
+     ],
+     "level": 1,
+     "why": "He or she presides over its sessions."
+    },
+    {
+     "q": "What is the name of the Prime Minister's official home in New Delhi?",
+     "a": "7 Lok Kalyan Marg",
+     "wrong": [
+      "10 Janpath",
+      "Rashtrapati Bhavan",
+      "Teen Murti Bhavan"
+     ],
+     "level": 1,
+     "why": "It was called 7 Race Course Road until 2016."
+    },
+    {
+     "q": "What is India's new Parliament building, opened in 2023, called?",
+     "a": "Sansad Bhavan (new Parliament House)",
+     "wrong": [
+      "Vigyan Bhavan",
+      "Shastri Bhawan",
+      "Nirman Bhawan"
+     ],
+     "level": 1,
+     "why": "It stands beside the old circular building."
+    },
+    {
+     "q": "Who was India's first Home Minister?",
+     "a": "Sardar Vallabhbhai Patel",
+     "wrong": [
+      "Jawaharlal Nehru",
+      "Rajendra Prasad",
+      "C. Rajagopalachari"
+     ],
+     "level": 1,
+     "why": "He was also Deputy Prime Minister."
+    },
+    {
+     "q": "Who was the last Governor-General of independent India?",
+     "a": "C. Rajagopalachari",
+     "wrong": [
+      "Lord Mountbatten",
+      "Rajendra Prasad",
+      "Lord Wavell"
+     ],
+     "level": 1,
+     "why": "He was the only Indian to hold the post."
+    },
+    {
+     "q": "What was the Planning Commission replaced by in 2015?",
+     "a": "NITI Aayog",
+     "wrong": [
+      "Finance Commission",
+      "Lok Pal",
+      "Election Commission"
+     ],
+     "level": 1,
+     "why": "It is a policy think tank."
+    },
+    {
+     "q": "Which Indian state was the first to elect a communist government, in 1957?",
+     "a": "Kerala",
+     "wrong": [
+      "West Bengal",
+      "Tripura",
+      "Punjab"
+     ],
+     "level": 1,
+     "why": "E. M. S. Namboodiripad became Chief Minister."
+    },
+    {
+     "q": "Which leader founded the Shiv Sena?",
+     "a": "Bal Thackeray",
+     "wrong": [
+      "Raj Thackeray",
+      "Sharad Pawar",
+      "Uddhav Thackeray"
+     ],
+     "level": 1,
+     "why": "It was founded in Mumbai in 1966."
+    },
+    {
+     "q": "What was the 1975–77 suspension of civil liberties in India called?",
+     "a": "The Emergency",
+     "wrong": [
+      "The Partition",
+      "Operation Blue Star",
+      "President's Rule"
+     ],
+     "level": 2,
+     "why": "Indira Gandhi declared it."
+    },
+    {
+     "q": "Which party defeated Congress in 1977 to form India's first non-Congress government?",
+     "a": "Janata Party",
+     "wrong": [
+      "BJP",
+      "Janata Dal",
+      "Lok Dal"
+     ],
+     "level": 2,
+     "why": "Morarji Desai became Prime Minister."
+    },
+    {
+     "q": "Who was the first non-Congress Prime Minister of India?",
+     "a": "Morarji Desai",
+     "wrong": [
+      "Charan Singh",
+      "V. P. Singh",
+      "Atal Bihari Vajpayee"
+     ],
+     "level": 2,
+     "why": "He took office in 1977."
+    },
+    {
+     "q": "Which BJP leader was Prime Minister from 1998 to 2004?",
+     "a": "Atal Bihari Vajpayee",
+     "wrong": [
+      "L. K. Advani",
+      "Murli Manohar Joshi",
+      "Jaswant Singh"
+     ],
+     "level": 2,
+     "why": "He also served briefly in 1996."
+    },
+    {
+     "q": "Which body chose the members who wrote India's Constitution?",
+     "a": "Constituent Assembly",
+     "wrong": [
+      "Lok Sabha",
+      "Planning Commission",
+      "Cabinet Mission"
+     ],
+     "level": 2,
+     "why": "It met from 1946 to 1949."
+    },
+    {
+     "q": "On which date was the Constitution of India adopted?",
+     "a": "26 November 1949",
+     "wrong": [
+      "26 January 1950",
+      "15 August 1947",
+      "2 October 1948"
+     ],
+     "level": 2,
+     "why": "It is marked as Constitution Day."
+    },
+    {
+     "q": "Which article of India's Constitution gave Jammu and Kashmir special status until 2019?",
+     "a": "Article 370",
+     "wrong": [
+      "Article 356",
+      "Article 21",
+      "Article 32"
+     ],
+     "level": 2,
+     "why": "It was revoked in August 2019."
+    },
+    {
+     "q": "Which article lets the central government impose President's Rule on a state?",
+     "a": "Article 356",
+     "wrong": [
+      "Article 370",
+      "Article 352",
+      "Article 32"
+     ],
+     "level": 2,
+     "why": "It has been used over 100 times."
+    },
+    {
+     "q": "Which article of India's Constitution protects life and personal liberty?",
+     "a": "Article 21",
+     "wrong": [
+      "Article 14",
+      "Article 19",
+      "Article 32"
+     ],
+     "level": 2,
+     "why": "Courts have read many rights into it."
+    },
+    {
+     "q": "Which act of 2005 lets Indians ask public bodies for information?",
+     "a": "Right to Information Act",
+     "wrong": [
+      "Lokpal Act",
+      "Aadhaar Act",
+      "Citizenship Act"
+     ],
+     "level": 2,
+     "why": "It is known as RTI."
+    },
+    {
+     "q": "Which tax replaced many indirect taxes across India in 2017?",
+     "a": "Goods and Services Tax (GST)",
+     "wrong": [
+      "Value Added Tax",
+      "Income Tax",
+      "Service Tax"
+     ],
+     "level": 2,
+     "why": "It was launched on 1 July 2017."
+    },
+    {
+     "q": "What is India's 12-digit biometric identity number called?",
+     "a": "Aadhaar",
+     "wrong": [
+      "PAN",
+      "Voter ID",
+      "Ration card"
+     ],
+     "level": 2,
+     "why": "Over a billion people have one."
+    },
+    {
+     "q": "Which 2016 move withdrew India's ₹500 and ₹1,000 notes?",
+     "a": "Demonetisation",
+     "wrong": [
+      "Disinvestment",
+      "Devaluation",
+      "Dematerialisation"
+     ],
+     "level": 2,
+     "why": "It was announced on 8 November 2016."
+    },
+    {
+     "q": "Which state was split in 2014 to create Telangana?",
+     "a": "Andhra Pradesh",
+     "wrong": [
+      "Karnataka",
+      "Maharashtra",
+      "Odisha"
+     ],
+     "level": 2,
+     "why": "Hyderabad became Telangana's capital."
+    },
+    {
+     "q": "Which leader led the 1974 'Total Revolution' movement?",
+     "a": "Jayaprakash Narayan",
+     "wrong": [
+      "Ram Manohar Lohia",
+      "Morarji Desai",
+      "Charan Singh"
+     ],
+     "level": 2,
+     "why": "He was called 'Lok Nayak'."
+    },
+    {
+     "q": "Who was India's first Chief Election Commissioner?",
+     "a": "Sukumar Sen",
+     "wrong": [
+      "T. N. Seshan",
+      "S. Y. Quraishi",
+      "Rajiv Kumar"
+     ],
+     "level": 2,
+     "why": "He ran the 1951–52 general election."
+    },
+    {
+     "q": "Which Chief Election Commissioner of the 1990s became famous for strict reforms?",
+     "a": "T. N. Seshan",
+     "wrong": [
+      "Sukumar Sen",
+      "J. M. Lyngdoh",
+      "N. Gopalaswami"
+     ],
+     "level": 2,
+     "why": "He enforced the model code of conduct."
+    },
+    {
+     "q": "Which Indian President was known as the 'People's President'?",
+     "a": "A. P. J. Abdul Kalam",
+     "wrong": [
+      "Rajendra Prasad",
+      "Pranab Mukherjee",
+      "K. R. Narayanan"
+     ],
+     "level": 2,
+     "why": "He loved talking with students."
+    },
+    {
+     "q": "Who was the first Dalit to become President of India?",
+     "a": "K. R. Narayanan",
+     "wrong": [
+      "Ram Nath Kovind",
+      "Zakir Husain",
+      "Fakhruddin Ali Ahmed"
+     ],
+     "level": 2,
+     "why": "He served from 1997 to 2002."
+    },
+    {
+     "q": "Which philosopher was India's second President?",
+     "a": "Sarvepalli Radhakrishnan",
+     "wrong": [
+      "Zakir Husain",
+      "V. V. Giri",
+      "Rajendra Prasad"
+     ],
+     "level": 2,
+     "why": "Teachers' Day falls on his birthday."
+    },
+    {
+     "q": "Who was the first woman Chief Minister in India?",
+     "a": "Sucheta Kripalani",
+     "wrong": [
+      "Indira Gandhi",
+      "Jayalalithaa",
+      "Mayawati"
+     ],
+     "level": 2,
+     "why": "She led Uttar Pradesh from 1963."
+    },
+    {
+     "q": "Who was Lok Sabha's first woman Speaker?",
+     "a": "Meira Kumar",
+     "wrong": [
+      "Sumitra Mahajan",
+      "Sushma Swaraj",
+      "Najma Heptulla"
+     ],
+     "level": 2,
+     "why": "She became Speaker in 2009."
+    },
+    {
+     "q": "Which state has the most Lok Sabha seats?",
+     "a": "Uttar Pradesh",
+     "wrong": [
+      "Maharashtra",
+      "Bihar",
+      "West Bengal"
+     ],
+     "level": 2,
+     "why": "It elects 80 members."
+    },
+    {
+     "q": "Which Chief Minister of Tamil Nadu was called 'Amma'?",
+     "a": "J. Jayalalithaa",
+     "wrong": [
+      "Mamata Banerjee",
+      "Mayawati",
+      "Sheila Dikshit"
+     ],
+     "level": 2,
+     "why": "She was also a film star."
+    },
+    {
+     "q": "Which leader founded the Trinamool Congress in 1998?",
+     "a": "Mamata Banerjee",
+     "wrong": [
+      "Jyoti Basu",
+      "Buddhadeb Bhattacharjee",
+      "Pranab Mukherjee"
+     ],
+     "level": 2,
+     "why": "She has been West Bengal's Chief Minister since 2011."
+    },
+    {
+     "q": "Which leader was West Bengal's Chief Minister for 23 years?",
+     "a": "Jyoti Basu",
+     "wrong": [
+      "Mamata Banerjee",
+      "Siddhartha Shankar Ray",
+      "Buddhadeb Bhattacharjee"
+     ],
+     "level": 2,
+     "why": "He led a communist government from 1977 to 2000."
+    },
+    {
+     "q": "Who served the longest as Delhi's Chief Minister, from 1998 to 2013?",
+     "a": "Sheila Dikshit",
+     "wrong": [
+      "Arvind Kejriwal",
+      "Sushma Swaraj",
+      "Madan Lal Khurana"
+     ],
+     "level": 2,
+     "why": "She belonged to the Congress party."
+    },
+    {
+     "q": "Which ruling did India's Supreme Court make in the 1973 Kesavananda Bharati case?",
+     "a": "Parliament cannot change the Constitution's basic structure",
+     "wrong": [
+      "Parliament can change any part",
+      "States can secede",
+      "The President can veto amendments"
+     ],
+     "level": 2,
+     "why": "It is one of India's landmark cases."
+    },
+    {
+     "q": "Which Indian law creates an anti-corruption ombudsman at the centre?",
+     "a": "Lokpal and Lokayuktas Act",
+     "wrong": [
+      "RTI Act",
+      "Prevention of Money Laundering Act",
+      "Whistle Blowers Act"
+     ],
+     "level": 2,
+     "why": "It was passed in 2013."
+    },
+    {
+     "q": "Which leader led the 2011 anti-corruption hunger strike in Delhi?",
+     "a": "Anna Hazare",
+     "wrong": [
+      "Baba Ramdev",
+      "Arvind Kejriwal",
+      "Medha Patkar"
+     ],
+     "level": 2,
+     "why": "It demanded a Lokpal law."
+    },
+    {
+     "q": "Which constitutional amendment created local self-government (panchayats) in 1992?",
+     "a": "73rd Amendment",
+     "wrong": [
+      "42nd Amendment",
+      "44th Amendment",
+      "86th Amendment"
+     ],
+     "level": 2,
+     "why": "It reserved seats for women too."
+    },
+    {
+     "q": "Which 1976 amendment added 'socialist' and 'secular' to India's Preamble?",
+     "a": "42nd Amendment",
+     "wrong": [
+      "44th Amendment",
+      "1st Amendment",
+      "73rd Amendment"
+     ],
+     "level": 2,
+     "why": "It is called a 'mini-Constitution'."
+    },
+    {
+     "q": "Which 2023 law reserves a third of Lok Sabha seats for women?",
+     "a": "Nari Shakti Vandan Adhiniyam",
+     "wrong": [
+      "Women's Reservation Act 1996",
+      "Beti Bachao Act",
+      "Mahila Samman Act"
+     ],
+     "level": 2,
+     "why": "It takes effect after a new census and delimitation."
+    },
+    {
+     "q": "Which party governed India in a coalition called the UPA from 2004?",
+     "a": "Indian National Congress",
+     "wrong": [
+      "BJP",
+      "Communist Party of India",
+      "Janata Dal"
+     ],
+     "level": 2,
+     "why": "UPA stands for United Progressive Alliance."
+    },
+    {
+     "q": "What is the BJP-led coalition called?",
+     "a": "National Democratic Alliance (NDA)",
+     "wrong": [
+      "United Progressive Alliance",
+      "Third Front",
+      "INDIA bloc"
+     ],
+     "level": 2,
+     "why": "It was formed in 1998."
+    },
+    {
+     "q": "Which Indian President served two full terms?",
+     "a": "Rajendra Prasad",
+     "wrong": [
+      "A. P. J. Abdul Kalam",
+      "Pranab Mukherjee",
+      "Zakir Husain"
+     ],
+     "level": 2,
+     "why": "He is the only one so far."
+    },
+    {
+     "q": "Who chaired the drafting committee of India's Constitution?",
+     "a": "B. R. Ambedkar",
+     "wrong": [
+      "Jawaharlal Nehru",
+      "Rajendra Prasad",
+      "K. M. Munshi"
+     ],
+     "level": 3,
+     "why": "He is called the father of the Constitution."
+    },
+    {
+     "q": "Who presided over India's Constituent Assembly?",
+     "a": "Rajendra Prasad",
+     "wrong": [
+      "B. R. Ambedkar",
+      "Jawaharlal Nehru",
+      "Sachchidananda Sinha"
+     ],
+     "level": 3,
+     "why": "He later became the first President."
+    },
+    {
+     "q": "Which Prime Minister served the shortest time in office, 13 days in 1996?",
+     "a": "Atal Bihari Vajpayee",
+     "wrong": [
+      "Charan Singh",
+      "Chandra Shekhar",
+      "H. D. Deve Gowda"
+     ],
+     "level": 3,
+     "why": "His first government lost a confidence vote."
+    },
+    {
+     "q": "Which Prime Minister never faced Parliament as PM?",
+     "a": "Charan Singh",
+     "wrong": [
+      "Chandra Shekhar",
+      "I. K. Gujral",
+      "Gulzarilal Nanda"
+     ],
+     "level": 3,
+     "why": "He resigned before a confidence vote in 1979."
+    },
+    {
+     "q": "Who was acting Prime Minister twice, after Nehru's and Shastri's deaths?",
+     "a": "Gulzarilal Nanda",
+     "wrong": [
+      "Morarji Desai",
+      "Y. B. Chavan",
+      "Jagjivan Ram"
+     ],
+     "level": 3,
+     "why": "Each time he served 13 days."
+    },
+    {
+     "q": "Which Prime Minister brought in the 1991 economic reforms with Manmohan Singh?",
+     "a": "P. V. Narasimha Rao",
+     "wrong": [
+      "Rajiv Gandhi",
+      "V. P. Singh",
+      "Chandra Shekhar"
+     ],
+     "level": 3,
+     "why": "They opened India's economy."
+    },
+    {
+     "q": "Which Prime Minister put the Mandal Commission report into effect in 1990?",
+     "a": "V. P. Singh",
+     "wrong": [
+      "Rajiv Gandhi",
+      "Morarji Desai",
+      "P. V. Narasimha Rao"
+     ],
+     "level": 3,
+     "why": "It reserved government jobs for backward classes."
+    },
+    {
+     "q": "Which Prime Minister came from the Janata Dal and Karnataka in 1996?",
+     "a": "H. D. Deve Gowda",
+     "wrong": [
+      "I. K. Gujral",
+      "Ramakrishna Hegde",
+      "S. R. Bommai"
+     ],
+     "level": 3,
+     "why": "He served for about ten months."
+    },
+    {
+     "q": "Which 1994 Supreme Court case limited the misuse of President's Rule?",
+     "a": "S. R. Bommai v. Union of India",
+     "wrong": [
+      "Kesavananda Bharati case",
+      "Minerva Mills case",
+      "Maneka Gandhi case"
+     ],
+     "level": 3,
+     "why": "Majority must be tested on the floor of the house."
+    },
+    {
+     "q": "Which state's elected communist government was dismissed under Article 356 in 1959?",
+     "a": "Kerala",
+     "wrong": [
+      "Punjab",
+      "Andhra Pradesh",
+      "West Bengal"
+     ],
+     "level": 3,
+     "why": "It was the first government of its kind to be removed."
+    },
+    {
+     "q": "Which Indian Constitution feature was borrowed from Ireland?",
+     "a": "Directive Principles of State Policy",
+     "wrong": [
+      "Parliamentary system",
+      "Fundamental Rights",
+      "Federal structure"
+     ],
+     "level": 3,
+     "why": "They guide the state but are not enforceable."
+    },
+    {
+     "q": "Which Indian state was the first to be formed on the basis of language, in 1953?",
+     "a": "Andhra State",
+     "wrong": [
+      "Kerala",
+      "Gujarat",
+      "Punjab"
+     ],
+     "level": 3,
+     "why": "Potti Sriramulu died fasting for it."
+    },
+    {
+     "q": "Who fasted to death in 1952 for a Telugu-speaking state?",
+     "a": "Potti Sriramulu",
+     "wrong": [
+      "Alluri Sitarama Raju",
+      "N. T. Rama Rao",
+      "Tanguturi Prakasam"
+     ],
+     "level": 3,
+     "why": "His death led to Andhra State."
+    },
+    {
+     "q": "Which actor founded the Telugu Desam Party in 1982?",
+     "a": "N. T. Rama Rao",
+     "wrong": [
+      "Chiranjeevi",
+      "M. G. Ramachandran",
+      "Rajinikanth"
+     ],
+     "level": 3,
+     "why": "He became Chief Minister within a year."
+    },
+    {
+     "q": "Which actor founded the AIADMK in 1972?",
+     "a": "M. G. Ramachandran",
+     "wrong": [
+      "J. Jayalalithaa",
+      "Sivaji Ganesan",
+      "C. N. Annadurai"
+     ],
+     "level": 3,
+     "why": "He was Chief Minister of Tamil Nadu from 1977."
+    },
+    {
+     "q": "Who founded the DMK in Tamil Nadu in 1949?",
+     "a": "C. N. Annadurai",
+     "wrong": [
+      "M. Karunanidhi",
+      "Periyar",
+      "M. G. Ramachandran"
+     ],
+     "level": 3,
+     "why": "He became Chief Minister in 1967."
+    },
+    {
+     "q": "Which leader of the self-respect movement founded the Dravidar Kazhagam?",
+     "a": "Periyar (E. V. Ramasamy)",
+     "wrong": [
+      "C. N. Annadurai",
+      "Kamaraj",
+      "Rajaji"
+     ],
+     "level": 3,
+     "why": "He campaigned against caste."
+    },
+    {
+     "q": "Which Congress President was known as the 'Kingmaker' in the 1960s?",
+     "a": "K. Kamaraj",
+     "wrong": [
+      "S. Nijalingappa",
+      "Atulya Ghosh",
+      "Neelam Sanjiva Reddy"
+     ],
+     "level": 3,
+     "why": "He helped choose Shastri and Indira Gandhi."
+    },
+    {
+     "q": "Which committee proposed India's states be redrawn by language in 1955?",
+     "a": "States Reorganisation Commission",
+     "wrong": [
+      "Sarkaria Commission",
+      "Punchhi Commission",
+      "Mandal Commission"
+     ],
+     "level": 3,
+     "why": "Fazl Ali chaired it."
+    },
+    {
+     "q": "What does the anti-defection law in the Tenth Schedule do?",
+     "a": "Disqualifies MPs and MLAs who switch parties",
+     "wrong": [
+      "Bans new parties",
+      "Limits ministers' terms",
+      "Lets voters recall MPs"
+     ],
+     "level": 3,
+     "why": "It was added in 1985."
+    },
+    {
+     "q": "Which Indian President returned the Postal Bill to Parliament with a 'pocket veto' in 1986?",
+     "a": "Zail Singh",
+     "wrong": [
+      "R. Venkataraman",
+      "Neelam Sanjiva Reddy",
+      "Shankar Dayal Sharma"
+     ],
+     "level": 3,
+     "why": "He simply never signed it."
+    },
+    {
+     "q": "Who was the only Indian President elected unopposed?",
+     "a": "Neelam Sanjiva Reddy",
+     "wrong": [
+      "Rajendra Prasad",
+      "Zakir Husain",
+      "K. R. Narayanan"
+     ],
+     "level": 3,
+     "why": "He took office in 1977."
     }
    ]
   },
