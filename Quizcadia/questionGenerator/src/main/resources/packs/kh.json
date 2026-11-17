@@ -1,0 +1,346 @@
+{
+ "category": "Cambodia",
+ "country": "KH",
+ "topics": [
+  {
+   "name": "Cambodia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Cambodia?",
+     "a": "Phnom Penh",
+     "wrong": [
+      "Siem Reap",
+      "Battambang",
+      "Sihanoukville"
+     ],
+     "why": "It lies where the Mekong meets the Tonlé Sap river."
+    },
+    {
+     "level": 1,
+     "q": "Which huge temple complex is on Cambodia's flag?",
+     "a": "Angkor Wat",
+     "wrong": [
+      "Bayon",
+      "Borobudur",
+      "Ta Prohm"
+     ],
+     "why": "It is the largest religious monument in the world."
+    },
+    {
+     "level": 1,
+     "q": "Which empire built Angkor?",
+     "a": "Khmer Empire",
+     "wrong": [
+      "Champa Kingdom",
+      "Srivijaya",
+      "Ayutthaya Kingdom"
+     ],
+     "why": "It was at its peak from the 800s to the 1400s."
+    },
+    {
+     "level": 1,
+     "q": "Which regime ruled Cambodia from 1975 to 1979?",
+     "a": "Khmer Rouge",
+     "wrong": [
+      "Viet Minh",
+      "Pathet Lao",
+      "Kuomintang"
+     ],
+     "why": "Its rule killed about two million people."
+    },
+    {
+     "level": 1,
+     "q": "Who led the Khmer Rouge?",
+     "a": "Pol Pot",
+     "wrong": [
+      "Ieng Sary",
+      "Lon Nol",
+      "Hun Sen"
+     ],
+     "why": "He died in 1998."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Cambodia gain independence in 1953?",
+     "a": "France",
+     "wrong": [
+      "United Kingdom",
+      "Japan",
+      "Thailand"
+     ],
+     "why": "King Norodom Sihanouk led the campaign."
+    },
+    {
+     "level": 1,
+     "q": "What is Cambodia's currency?",
+     "a": "Riel",
+     "wrong": [
+      "Kip",
+      "Baht",
+      "Dong"
+     ],
+     "why": "US dollars are also widely used."
+    },
+    {
+     "level": 2,
+     "q": "Which king led Cambodia to independence?",
+     "a": "Norodom Sihanouk",
+     "wrong": [
+      "Norodom Sihamoni",
+      "Jayavarman VII",
+      "Suryavarman II"
+     ],
+     "why": "He ruled, resigned and returned several times."
+    },
+    {
+     "level": 2,
+     "q": "Which king built Angkor Wat in the 1100s?",
+     "a": "Suryavarman II",
+     "wrong": [
+      "Jayavarman VII",
+      "Jayavarman II",
+      "Indravarman I"
+     ],
+     "why": "It was dedicated to Vishnu."
+    },
+    {
+     "level": 2,
+     "q": "Which former Khmer Rouge school became a prison museum?",
+     "a": "Tuol Sleng (S-21)",
+     "wrong": [
+      "Choeung Ek",
+      "Hoa Lo",
+      "Kampong Cham"
+     ],
+     "why": "About 20,000 people were held there."
+    },
+    {
+     "level": 2,
+     "q": "Which country invaded in 1979 and ended Khmer Rouge rule?",
+     "a": "Vietnam",
+     "wrong": [
+      "Thailand",
+      "China",
+      "Laos"
+     ],
+     "why": "It occupied Cambodia for ten years."
+    },
+    {
+     "level": 2,
+     "q": "Who was Prime Minister of Cambodia from 1985 to 2023?",
+     "a": "Hun Sen",
+     "wrong": [
+      "Hun Manet",
+      "Norodom Ranariddh",
+      "Sam Rainsy"
+     ],
+     "why": "His son Hun Manet succeeded him."
+    },
+    {
+     "level": 3,
+     "q": "Which 1984 film told the story of the Khmer Rouge years?",
+     "a": "The Killing Fields",
+     "wrong": [
+      "First They Killed My Father",
+      "Apocalypse Now",
+      "The Year of Living Dangerously"
+     ],
+     "why": "Haing S. Ngor won an Oscar for it."
+    },
+    {
+     "level": 3,
+     "q": "Which king built the Bayon temple with its stone faces?",
+     "a": "Jayavarman VII",
+     "wrong": [
+      "Suryavarman II",
+      "Indravarman I",
+      "Yasovarman I"
+     ],
+     "why": "He made Buddhism the state religion."
+    },
+    {
+     "level": 3,
+     "q": "Who has been King of Cambodia since 2004?",
+     "a": "Norodom Sihamoni",
+     "wrong": [
+      "Norodom Sihanouk",
+      "Norodom Ranariddh",
+      "Norodom Chakrapong"
+     ],
+     "why": "He was a ballet teacher in Paris."
+    }
+   ]
+  },
+  {
+   "name": "Cambodia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which great lake swells hugely in the rainy season?",
+     "a": "Tonlé Sap",
+     "wrong": [
+      "Inle Lake",
+      "Lake Toba",
+      "Songkhla Lake"
+     ],
+     "why": "Its river reverses direction each year."
+    },
+    {
+     "level": 1,
+     "q": "Which river flows through Cambodia?",
+     "a": "Mekong",
+     "wrong": [
+      "Irrawaddy",
+      "Chao Phraya",
+      "Red River"
+     ],
+     "why": "It flows from Tibet to Vietnam."
+    },
+    {
+     "level": 1,
+     "q": "Which jungle temple has trees growing over its walls?",
+     "a": "Ta Prohm",
+     "wrong": [
+      "Bayon",
+      "Banteay Srei",
+      "Preah Vihear"
+     ],
+     "why": "It appeared in 'Tomb Raider'."
+    },
+    {
+     "level": 1,
+     "q": "Which town is the gateway to Angkor?",
+     "a": "Siem Reap",
+     "wrong": [
+      "Kampot",
+      "Battambang",
+      "Kep"
+     ],
+     "why": "Its name means 'Siam defeated'."
+    },
+    {
+     "level": 1,
+     "q": "Which steamed fish curry is the national dish?",
+     "a": "Fish amok",
+     "wrong": [
+      "Tom yum",
+      "Laksa",
+      "Pho"
+     ],
+     "why": "It is cooked in banana leaves."
+    },
+    {
+     "level": 1,
+     "q": "What language is spoken in Cambodia?",
+     "a": "Khmer",
+     "wrong": [
+      "Thai",
+      "Lao",
+      "Vietnamese"
+     ],
+     "why": "It has the world's longest alphabet."
+    },
+    {
+     "level": 1,
+     "q": "Which classical dance shows celestial dancers?",
+     "a": "Apsara dance",
+     "wrong": [
+      "Ramwong",
+      "Kathak",
+      "Legong"
+     ],
+     "why": "It is on UNESCO's list."
+    },
+    {
+     "level": 2,
+     "q": "Which pink sandstone temple is famous for fine carvings?",
+     "a": "Banteay Srei",
+     "wrong": [
+      "Ta Prohm",
+      "Bayon",
+      "Phnom Bakheng"
+     ],
+     "why": "Its name means 'citadel of women'."
+    },
+    {
+     "level": 2,
+     "q": "Which hilltop temple caused a border dispute with Thailand?",
+     "a": "Preah Vihear",
+     "wrong": [
+      "Phnom Bakheng",
+      "Beng Mealea",
+      "Koh Ker"
+     ],
+     "why": "The world court gave it to Cambodia in 1962."
+    },
+    {
+     "level": 2,
+     "q": "Which seaside town is famous for pepper?",
+     "a": "Kampot",
+     "wrong": [
+      "Kep",
+      "Sihanoukville",
+      "Koh Kong"
+     ],
+     "why": "Kampot pepper has protected status."
+    },
+    {
+     "level": 2,
+     "q": "Which water festival marks the Tonlé Sap river reversing?",
+     "a": "Bon Om Touk",
+     "wrong": [
+      "Pchum Ben",
+      "Choul Chnam Thmey",
+      "Visak Bochea"
+     ],
+     "why": "It includes boat races in Phnom Penh."
+    },
+    {
+     "level": 2,
+     "q": "What is the Khmer New Year called?",
+     "a": "Choul Chnam Thmey",
+     "wrong": [
+      "Songkran",
+      "Tết",
+      "Pi Mai"
+     ],
+     "why": "It is held in April."
+    },
+    {
+     "level": 3,
+     "q": "Which bamboo train ran near Battambang?",
+     "a": "Norry",
+     "wrong": [
+      "Tuk-tuk",
+      "Cyclo",
+      "Remorque"
+     ],
+     "why": "It runs on old rails."
+    },
+    {
+     "level": 3,
+     "q": "Which 1960s rock singer is called Cambodia's 'King of Golden Voice'?",
+     "a": "Sinn Sisamouth",
+     "wrong": [
+      "Ros Sereysothea",
+      "Pan Ron",
+      "Yol Aularong"
+     ],
+     "why": "He died under the Khmer Rouge."
+    },
+    {
+     "level": 3,
+     "q": "Which riverside complex is the King's home in Phnom Penh?",
+     "a": "Royal Palace",
+     "wrong": [
+      "Wat Phnom",
+      "Independence Monument",
+      "Bokor Palace"
+     ],
+     "why": "Its Silver Pagoda has a silver floor."
+    }
+   ]
+  }
+ ]
+}

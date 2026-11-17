@@ -1,0 +1,346 @@
+{
+ "category": "Timor-Leste",
+ "country": "TL",
+ "topics": [
+  {
+   "name": "Timor-Leste: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Timor-Leste?",
+     "a": "Dili",
+     "wrong": [
+      "Baucau",
+      "Maliana",
+      "Suai"
+     ],
+     "why": "It is on the north coast."
+    },
+    {
+     "level": 1,
+     "q": "Which European country ruled East Timor for centuries?",
+     "a": "Portugal",
+     "wrong": [
+      "Netherlands",
+      "Spain",
+      "United Kingdom"
+     ],
+     "why": "Portugal left in 1975."
+    },
+    {
+     "level": 1,
+     "q": "Which neighbour occupied East Timor from 1975 to 1999?",
+     "a": "Indonesia",
+     "wrong": [
+      "Australia",
+      "Malaysia",
+      "Philippines"
+     ],
+     "why": "Many people died during the occupation."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Timor-Leste become fully independent?",
+     "a": "2002",
+     "wrong": [
+      "1975",
+      "1999",
+      "2005"
+     ],
+     "why": "It was the first new country of the century."
+    },
+    {
+     "level": 1,
+     "q": "What currency does Timor-Leste use?",
+     "a": "US dollar",
+     "wrong": [
+      "Rupiah",
+      "Escudo",
+      "Australian dollar"
+     ],
+     "why": "It also has local centavo coins."
+    },
+    {
+     "level": 1,
+     "q": "Which two languages are official in Timor-Leste?",
+     "a": "Tetum and Portuguese",
+     "wrong": [
+      "Tetum and Indonesian",
+      "Portuguese and English",
+      "Malay and Tetum"
+     ],
+     "why": "English and Indonesian are working languages."
+    },
+    {
+     "level": 1,
+     "q": "Which independence leader became the first President?",
+     "a": "Xanana Gusmão",
+     "wrong": [
+      "José Ramos-Horta",
+      "Mari Alkatiri",
+      "Taur Matan Ruak"
+     ],
+     "why": "He led the guerrilla resistance."
+    },
+    {
+     "level": 2,
+     "q": "Which two Timorese won the 1996 Nobel Peace Prize?",
+     "a": "José Ramos-Horta and Bishop Carlos Belo",
+     "wrong": [
+      "Xanana Gusmão and Mari Alkatiri",
+      "Nicolau Lobato and Xanana Gusmão",
+      "José Ramos-Horta and Xanana Gusmão"
+     ],
+     "why": "They worked for a peaceful solution."
+    },
+    {
+     "level": 2,
+     "q": "Which 1991 massacre in Dili brought world attention?",
+     "a": "Santa Cruz massacre",
+     "wrong": [
+      "Liquiçá massacre",
+      "Kraras massacre",
+      "Balibo massacre"
+     ],
+     "why": "It was filmed by a journalist."
+    },
+    {
+     "level": 2,
+     "q": "In which year did East Timor vote for independence in a UN referendum?",
+     "a": "1999",
+     "wrong": [
+      "1975",
+      "2002",
+      "1991"
+     ],
+     "why": "About 78% voted for independence."
+    },
+    {
+     "level": 2,
+     "q": "Which Australian-led force restored order in 1999?",
+     "a": "INTERFET",
+     "wrong": [
+      "UNTAET",
+      "ANZAC",
+      "SEATO"
+     ],
+     "why": "Violence broke out after the vote."
+    },
+    {
+     "level": 2,
+     "q": "Which resistance movement fought Indonesian rule?",
+     "a": "FRETILIN and FALINTIL",
+     "wrong": [
+      "Pathet Lao",
+      "Free Aceh Movement",
+      "Moro Front"
+     ],
+     "why": "FALINTIL was the armed wing."
+    },
+    {
+     "level": 3,
+     "q": "Which five journalists were killed in 1975 at a border town?",
+     "a": "The Balibo Five",
+     "wrong": [
+      "The Dili Five",
+      "The Timor Five",
+      "The Suai Five"
+     ],
+     "why": "A 2009 film tells their story."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Timor-Leste become ASEAN's 11th member?",
+     "a": "2025",
+     "wrong": [
+      "2022",
+      "2019",
+      "2015"
+     ],
+     "why": "It had applied in 2011."
+    },
+    {
+     "level": 3,
+     "q": "Which sea between Timor-Leste and Australia holds oil and gas?",
+     "a": "Timor Sea",
+     "wrong": [
+      "Banda Sea",
+      "Arafura Sea",
+      "Savu Sea"
+     ],
+     "why": "A 2018 treaty set the sea border."
+    }
+   ]
+  },
+  {
+   "name": "Timor-Leste: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which half of an island does Timor-Leste mainly cover?",
+     "a": "The eastern half of Timor",
+     "wrong": [
+      "The western half of Borneo",
+      "The northern half of New Guinea",
+      "The eastern half of Sumatra"
+     ],
+     "why": "West Timor is part of Indonesia."
+    },
+    {
+     "level": 1,
+     "q": "Which statue of Christ overlooks Dili?",
+     "a": "Cristo Rei of Dili",
+     "wrong": [
+      "Christ the Redeemer",
+      "Cristo Rei of Lisbon",
+      "Cristo de la Concordia"
+     ],
+     "why": "It is 27 m tall."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is Timor-Leste's main export after oil?",
+     "a": "Coffee",
+     "wrong": [
+      "Cocoa",
+      "Tea",
+      "Rubber"
+     ],
+     "why": "It is grown in the hills."
+    },
+    {
+     "level": 1,
+     "q": "Which island off Dili is famous for diving?",
+     "a": "Atauro Island",
+     "wrong": [
+      "Jaco Island",
+      "Bali",
+      "Flores"
+     ],
+     "why": "Its reefs are among the most diverse in the world."
+    },
+    {
+     "level": 1,
+     "q": "Which island neighbour lies south across the sea?",
+     "a": "Australia",
+     "wrong": [
+      "New Zealand",
+      "Papua New Guinea",
+      "Philippines"
+     ],
+     "why": "Darwin is about 700 km away."
+    },
+    {
+     "level": 1,
+     "q": "What is the main religion in Timor-Leste?",
+     "a": "Roman Catholicism",
+     "wrong": [
+      "Islam",
+      "Buddhism",
+      "Hinduism"
+     ],
+     "why": "It is one of Asia's most Catholic countries."
+    },
+    {
+     "level": 1,
+     "q": "What is the woven cloth of Timor-Leste called?",
+     "a": "Tais",
+     "wrong": [
+      "Batik",
+      "Songket",
+      "Kente"
+     ],
+     "why": "It is given at ceremonies."
+    },
+    {
+     "level": 2,
+     "q": "Which small isolated enclave of Timor-Leste lies in West Timor?",
+     "a": "Oecusse",
+     "wrong": [
+      "Atauro",
+      "Baucau",
+      "Lospalos"
+     ],
+     "why": "It is where the Portuguese first landed."
+    },
+    {
+     "level": 2,
+     "q": "What is Timor-Leste's highest mountain?",
+     "a": "Mount Ramelau",
+     "wrong": [
+      "Mount Matebian",
+      "Mount Kinabalu",
+      "Mount Rinjani"
+     ],
+     "why": "Pilgrims climb it at dawn."
+    },
+    {
+     "level": 2,
+     "q": "Which crocodile legend explains the island's shape?",
+     "a": "A boy helped a crocodile who became the island",
+     "wrong": [
+      "A whale swam into the sea",
+      "A dragon fell asleep",
+      "A turtle was stranded"
+     ],
+     "why": "The crocodile is a symbol of the nation."
+    },
+    {
+     "level": 2,
+     "q": "What are traditional sacred houses called?",
+     "a": "Uma lulik",
+     "wrong": [
+      "Tongkonan",
+      "Marae",
+      "Rumah gadang"
+     ],
+     "why": "They hold ancestral objects."
+    },
+    {
+     "level": 2,
+     "q": "Which national park is the country's first?",
+     "a": "Nino Konis Santana National Park",
+     "wrong": [
+      "Komodo National Park",
+      "Kakadu",
+      "Lorentz National Park"
+     ],
+     "why": "It includes Jaco Island."
+    },
+    {
+     "level": 3,
+     "q": "Whose name does Dili's international airport carry?",
+     "a": "Presidente Nicolau Lobato",
+     "wrong": [
+      "Xanana Gusmão",
+      "José Ramos-Horta",
+      "Carlos Belo"
+     ],
+     "why": "Lobato was a resistance leader killed in 1978."
+    },
+    {
+     "level": 3,
+     "q": "Which language family does Tetum belong to?",
+     "a": "Austronesian",
+     "wrong": [
+      "Papuan",
+      "Romance",
+      "Sino-Tibetan"
+     ],
+     "why": "It has many Portuguese loanwords."
+    },
+    {
+     "level": 3,
+     "q": "Which old Portuguese town is the second-largest city?",
+     "a": "Baucau",
+     "wrong": [
+      "Maliana",
+      "Same",
+      "Viqueque"
+     ],
+     "why": "Its old market is a landmark."
+    }
+   ]
+  }
+ ]
+}

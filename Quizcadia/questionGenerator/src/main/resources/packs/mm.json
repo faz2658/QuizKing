@@ -1,0 +1,346 @@
+{
+ "category": "Myanmar",
+ "country": "MM",
+ "topics": [
+  {
+   "name": "Myanmar: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Myanmar?",
+     "a": "Naypyidaw",
+     "wrong": [
+      "Yangon",
+      "Mandalay",
+      "Bagan"
+     ],
+     "why": "It replaced Yangon in 2006."
+    },
+    {
+     "level": 1,
+     "q": "What was Myanmar called before 1989?",
+     "a": "Burma",
+     "wrong": [
+      "Siam",
+      "Ceylon",
+      "Malaya"
+     ],
+     "why": "Many people still use that name."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Myanmar gain independence in 1948?",
+     "a": "United Kingdom",
+     "wrong": [
+      "France",
+      "Japan",
+      "India"
+     ],
+     "why": "It left the Commonwealth."
+    },
+    {
+     "level": 1,
+     "q": "Which democracy leader won the 1991 Nobel Peace Prize?",
+     "a": "Aung San Suu Kyi",
+     "wrong": [
+      "Daw Khin Kyi",
+      "U Thant",
+      "Min Ko Naing"
+     ],
+     "why": "She was under house arrest for years."
+    },
+    {
+     "level": 1,
+     "q": "Which general is called the father of modern Burma?",
+     "a": "Aung San",
+     "wrong": [
+      "Ne Win",
+      "Than Shwe",
+      "U Nu"
+     ],
+     "why": "He was assassinated in 1947."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Myanmar's military most recently seize power in a coup?",
+     "a": "2021",
+     "wrong": [
+      "2015",
+      "2011",
+      "2007"
+     ],
+     "why": "It overthrew the elected government."
+    },
+    {
+     "level": 1,
+     "q": "What is Myanmar's currency?",
+     "a": "Kyat",
+     "wrong": [
+      "Baht",
+      "Rupee",
+      "Riel"
+     ],
+     "why": "Its code is MMK."
+    },
+    {
+     "level": 2,
+     "q": "Which Burmese diplomat was UN Secretary-General from 1961 to 1971?",
+     "a": "U Thant",
+     "wrong": [
+      "Aung San",
+      "U Nu",
+      "Ne Win"
+     ],
+     "why": "He was the first Asian to hold the post."
+    },
+    {
+     "level": 2,
+     "q": "Which 2007 protests were led by Buddhist monks?",
+     "a": "Saffron Revolution",
+     "wrong": [
+      "Orange Revolution",
+      "Velvet Revolution",
+      "8888 Uprising"
+     ],
+     "why": "They were named after the monks' robes."
+    },
+    {
+     "level": 2,
+     "q": "Which 1988 uprising began on 8 August?",
+     "a": "8888 Uprising",
+     "wrong": [
+      "Saffron Revolution",
+      "Spring Revolution",
+      "Rangoon Rising"
+     ],
+     "why": "Thousands were killed."
+    },
+    {
+     "level": 2,
+     "q": "Which royal city was the last capital of the Burmese kings?",
+     "a": "Mandalay",
+     "wrong": [
+      "Bagan",
+      "Ava",
+      "Pegu"
+     ],
+     "why": "The British took it in 1885."
+    },
+    {
+     "level": 2,
+     "q": "Which Muslim minority fled Myanmar in large numbers in 2017?",
+     "a": "Rohingya",
+     "wrong": [
+      "Karen",
+      "Shan",
+      "Kachin"
+     ],
+     "why": "Most went to Bangladesh."
+    },
+    {
+     "level": 3,
+     "q": "Which king founded the first Burmese empire at Bagan?",
+     "a": "Anawrahta",
+     "wrong": [
+      "Bayinnaung",
+      "Alaungpaya",
+      "Thibaw"
+     ],
+     "why": "He ruled from 1044."
+    },
+    {
+     "level": 3,
+     "q": "Who was Burma's last king, exiled by the British?",
+     "a": "Thibaw Min",
+     "wrong": [
+      "Mindon Min",
+      "Bodawpaya",
+      "Bayinnaung"
+     ],
+     "why": "He was sent to India in 1885."
+    },
+    {
+     "level": 3,
+     "q": "Which 1500s Burmese king built one of Southeast Asia's largest empires?",
+     "a": "Bayinnaung",
+     "wrong": [
+      "Anawrahta",
+      "Alaungpaya",
+      "Thibaw"
+     ],
+     "why": "He ruled from Pegu (Bago)."
+    }
+   ]
+  },
+  {
+   "name": "Myanmar: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which golden pagoda towers over Yangon?",
+     "a": "Shwedagon Pagoda",
+     "wrong": [
+      "Sule Pagoda",
+      "Kyaiktiyo",
+      "Ananda Temple"
+     ],
+     "why": "It is said to hold relics of four Buddhas."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient plain has more than 2,000 temples?",
+     "a": "Bagan",
+     "wrong": [
+      "Mrauk U",
+      "Inle",
+      "Hpa-an"
+     ],
+     "why": "Hot-air balloons float over it at dawn."
+    },
+    {
+     "level": 1,
+     "q": "Which lake is famous for leg-rowing fishermen?",
+     "a": "Inle Lake",
+     "wrong": [
+      "Tonlé Sap",
+      "Kandawgyi Lake",
+      "Indawgyi Lake"
+     ],
+     "why": "They row with one leg."
+    },
+    {
+     "level": 1,
+     "q": "Which river flows through the heart of Myanmar?",
+     "a": "Irrawaddy",
+     "wrong": [
+      "Mekong",
+      "Salween",
+      "Brahmaputra"
+     ],
+     "why": "It is the country's main waterway."
+    },
+    {
+     "level": 1,
+     "q": "Which yellow paste do many Burmese wear on their faces?",
+     "a": "Thanaka",
+     "wrong": [
+      "Turmeric",
+      "Henna",
+      "Sandalwood"
+     ],
+     "why": "It protects from the sun."
+    },
+    {
+     "level": 1,
+     "q": "Which sarong-like garment do Burmese men and women wear?",
+     "a": "Longyi",
+     "wrong": [
+      "Sari",
+      "Kimono",
+      "Hanbok"
+     ],
+     "why": "Men's is called a paso."
+    },
+    {
+     "level": 1,
+     "q": "Which fish noodle soup is the national dish?",
+     "a": "Mohinga",
+     "wrong": [
+      "Pho",
+      "Laksa",
+      "Khao soi"
+     ],
+     "why": "It is often eaten for breakfast."
+    },
+    {
+     "level": 2,
+     "q": "Which boulder balanced on a cliff is a pilgrimage site?",
+     "a": "Golden Rock (Kyaiktiyo)",
+     "wrong": [
+      "Sule Rock",
+      "Mount Popa",
+      "Hpo Win Daung"
+     ],
+     "why": "It is covered in gold leaf."
+    },
+    {
+     "level": 2,
+     "q": "Which pickled tea leaf salad is a Burmese favourite?",
+     "a": "Lahpet thoke",
+     "wrong": [
+      "Som tam",
+      "Gado-gado",
+      "Larb"
+     ],
+     "why": "It is eaten with crunchy beans."
+    },
+    {
+     "level": 2,
+     "q": "Which teak bridge near Mandalay is the world's longest?",
+     "a": "U Bein Bridge",
+     "wrong": [
+      "Bagan Bridge",
+      "Kyaikkasan Bridge",
+      "Ava Bridge"
+     ],
+     "why": "It is about 1.2 km long."
+    },
+    {
+     "level": 2,
+     "q": "Which water festival marks the Burmese New Year?",
+     "a": "Thingyan",
+     "wrong": [
+      "Songkran",
+      "Pi Mai",
+      "Tazaungdaing"
+     ],
+     "why": "It is held in April."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient city in Rakhine has hilltop stone temples?",
+     "a": "Mrauk U",
+     "wrong": [
+      "Bagan",
+      "Pyay",
+      "Bago"
+     ],
+     "why": "It was a busy trading capital."
+    },
+    {
+     "level": 3,
+     "q": "Which extinct volcano is home to the 37 nats (spirits)?",
+     "a": "Mount Popa",
+     "wrong": [
+      "Mount Victoria",
+      "Hkakabo Razi",
+      "Mount Kyaikhtiyo"
+     ],
+     "why": "A monastery stands on its peak."
+    },
+    {
+     "level": 3,
+     "q": "Which Myanmar sport is played with a rattan ball?",
+     "a": "Chinlone",
+     "wrong": [
+      "Sepak takraw",
+      "Polo",
+      "Kabaddi"
+     ],
+     "why": "Players keep the ball in the air."
+    },
+    {
+     "level": 3,
+     "q": "What is Myanmar's highest mountain?",
+     "a": "Hkakabo Razi",
+     "wrong": [
+      "Mount Victoria",
+      "Mount Popa",
+      "Saramati"
+     ],
+     "why": "It is about 5,880 m high."
+    }
+   ]
+  }
+ ]
+}
