@@ -1117,6 +1117,963 @@
       "Nihal Sarin"
      ],
      "why": "He won at 18, beating Ding Liren."
+    },
+    {
+     "level": 1,
+     "q": "Which Indian batter is nicknamed 'The Wall'?",
+     "a": "Rahul Dravid",
+     "wrong": [
+      "VVS Laxman",
+      "Cheteshwar Pujara",
+      "Sunil Gavaskar"
+     ],
+     "why": "Dravid was famous for his solid defence."
+    },
+    {
+     "level": 1,
+     "q": "Which IPL team's fans are known as the 'Yellow Army'?",
+     "a": "Chennai Super Kings",
+     "wrong": [
+      "Mumbai Indians",
+      "Kolkata Knight Riders",
+      "Sunrisers Hyderabad"
+     ],
+     "why": "CSK play in yellow."
+    },
+    {
+     "level": 1,
+     "q": "In which year was the first IPL season played?",
+     "a": "2008",
+     "wrong": [
+      "2007",
+      "2009",
+      "2010"
+     ],
+     "why": "The Indian Premier League began in April 2008."
+    },
+    {
+     "level": 2,
+     "q": "How many international centuries did Sachin Tendulkar score?",
+     "a": "100",
+     "wrong": [
+      "75",
+      "89",
+      "120"
+     ],
+     "why": "51 in Tests and 49 in ODIs."
+    },
+    {
+     "level": 2,
+     "q": "Which Bangladeshi all-rounder was ranked the world's number one ODI all-rounder for years?",
+     "a": "Shakib Al Hasan",
+     "wrong": [
+      "Mushfiqur Rahim",
+      "Tamim Iqbal",
+      "Mashrafe Mortaza"
+     ],
+     "why": "He bats left-handed and bowls left-arm spin."
+    },
+    {
+     "level": 3,
+     "q": "Who was the first batter to score 10,000 Test runs?",
+     "a": "Sunil Gavaskar",
+     "wrong": [
+      "Allan Border",
+      "Sachin Tendulkar",
+      "Geoffrey Boycott"
+     ],
+     "why": "Gavaskar reached it in 1987."
+    },
+    {
+     "q": "Which Indian batter is called the 'Master Blaster'?",
+     "a": "Sachin Tendulkar",
+     "wrong": [
+      "Virat Kohli",
+      "Sunil Gavaskar",
+      "Virender Sehwag"
+     ],
+     "level": 1,
+     "why": "He played 200 Tests."
+    },
+    {
+     "q": "Which Indian batter is nicknamed 'King Kohli'?",
+     "a": "Virat Kohli",
+     "wrong": [
+      "Rohit Sharma",
+      "Shubman Gill",
+      "KL Rahul"
+     ],
+     "level": 1,
+     "why": "He has over 80 international centuries."
+    },
+    {
+     "q": "Which Indian batter has scored three ODI double centuries?",
+     "a": "Rohit Sharma",
+     "wrong": [
+      "Virat Kohli",
+      "Shikhar Dhawan",
+      "Ishan Kishan"
+     ],
+     "level": 1,
+     "why": "His best is 264."
+    },
+    {
+     "q": "What is the highest individual ODI score, made by Rohit Sharma in 2014?",
+     "a": "264",
+     "wrong": [
+      "219",
+      "237",
+      "200"
+     ],
+     "level": 1,
+     "why": "He made it against Sri Lanka in Kolkata."
+    },
+    {
+     "q": "Which Indian captain led India to win the 2013 Champions Trophy?",
+     "a": "MS Dhoni",
+     "wrong": [
+      "Virat Kohli",
+      "Sourav Ganguly",
+      "Rohit Sharma"
+     ],
+     "level": 1,
+     "why": "He is the only captain to win all three ICC white-ball titles."
+    },
+    {
+     "q": "Who captained India to win the 2025 Champions Trophy?",
+     "a": "Rohit Sharma",
+     "wrong": [
+      "Virat Kohli",
+      "Shubman Gill",
+      "Hardik Pandya"
+     ],
+     "level": 1,
+     "why": "India beat New Zealand in the final."
+    },
+    {
+     "q": "Which Indian fast bowler is famous for his yorkers and unusual action?",
+     "a": "Jasprit Bumrah",
+     "wrong": [
+      "Mohammed Shami",
+      "Mohammed Siraj",
+      "Bhuvneshwar Kumar"
+     ],
+     "level": 1,
+     "why": "He was Player of the Tournament at the 2024 T20 World Cup."
+    },
+    {
+     "q": "Which Indian spinner has the most Test wickets for India?",
+     "a": "Anil Kumble",
+     "wrong": [
+      "Harbhajan Singh",
+      "Ravichandran Ashwin",
+      "Kapil Dev"
+     ],
+     "level": 1,
+     "why": "He took 619 wickets."
+    },
+    {
+     "q": "Which IPL team has won the most titles, five each, along with Chennai?",
+     "a": "Mumbai Indians",
+     "wrong": [
+      "Kolkata Knight Riders",
+      "Rajasthan Royals",
+      "Sunrisers Hyderabad"
+     ],
+     "level": 1,
+     "why": "Both have five titles."
+    },
+    {
+     "q": "Which team won the 2025 IPL?",
+     "a": "Royal Challengers Bengaluru",
+     "wrong": [
+      "Punjab Kings",
+      "Mumbai Indians",
+      "Gujarat Titans"
+     ],
+     "level": 1,
+     "why": "It was their first title."
+    },
+    {
+     "q": "Which Indian shuttler won Olympic silver in 2016 and bronze in 2021?",
+     "a": "P. V. Sindhu",
+     "wrong": [
+      "Saina Nehwal",
+      "Jwala Gutta",
+      "Ashwini Ponnappa"
+     ],
+     "level": 1,
+     "why": "She is also a world champion."
+    },
+    {
+     "q": "Which Indian shuttler won Olympic bronze in 2012?",
+     "a": "Saina Nehwal",
+     "wrong": [
+      "P. V. Sindhu",
+      "Jwala Gutta",
+      "Aparna Popat"
+     ],
+     "level": 1,
+     "why": "She was once world number one."
+    },
+    {
+     "q": "Which Indian boxer won six world titles?",
+     "a": "Mary Kom",
+     "wrong": [
+      "Nikhat Zareen",
+      "Lovlina Borgohain",
+      "Sarita Devi"
+     ],
+     "level": 1,
+     "why": "A film about her came out in 2014."
+    },
+    {
+     "q": "Which Indian wrestler won Olympic silver at London 2012?",
+     "a": "Sushil Kumar",
+     "wrong": [
+      "Yogeshwar Dutt",
+      "Bajrang Punia",
+      "Ravi Dahiya"
+     ],
+     "level": 1,
+     "why": "He also won bronze in 2008."
+    },
+    {
+     "q": "Which Indian athlete was called the 'Flying Sikh'?",
+     "a": "Milkha Singh",
+     "wrong": [
+      "P. T. Usha",
+      "Neeraj Chopra",
+      "Gurbachan Singh Randhawa"
+     ],
+     "level": 1,
+     "why": "He came fourth in the 400 m at Rome 1960."
+    },
+    {
+     "q": "Which Indian sprinter was called the 'Payyoli Express'?",
+     "a": "P. T. Usha",
+     "wrong": [
+      "Shiny Abraham",
+      "Anju Bobby George",
+      "Dutee Chand"
+     ],
+     "level": 1,
+     "why": "She missed 1984 Olympic bronze by a hundredth of a second."
+    },
+    {
+     "q": "Which Indian tennis star won Olympic bronze in 1996?",
+     "a": "Leander Paes",
+     "wrong": [
+      "Mahesh Bhupathi",
+      "Sania Mirza",
+      "Vijay Amritraj"
+     ],
+     "level": 1,
+     "why": "He won 18 Grand Slam doubles titles."
+    },
+    {
+     "q": "Which Indian tennis player won six Grand Slam doubles titles and is from Hyderabad?",
+     "a": "Sania Mirza",
+     "wrong": [
+      "Leander Paes",
+      "Ankita Raina",
+      "Rohan Bopanna"
+     ],
+     "level": 1,
+     "why": "She retired in 2023."
+    },
+    {
+     "q": "What is India's national game, by popular belief?",
+     "a": "Hockey",
+     "wrong": [
+      "Cricket",
+      "Kabaddi",
+      "Football"
+     ],
+     "level": 1,
+     "why": "The government says there is no official national game."
+    },
+    {
+     "q": "How many Olympic hockey gold medals has India won?",
+     "a": "Eight",
+     "wrong": [
+      "Five",
+      "Six",
+      "Ten"
+     ],
+     "level": 1,
+     "why": "The first came in 1928."
+    },
+    {
+     "q": "Which contact sport has a professional league called Pro Kabaddi?",
+     "a": "Kabaddi",
+     "wrong": [
+      "Kho-kho",
+      "Wrestling",
+      "Gilli-danda"
+     ],
+     "level": 1,
+     "why": "Raiders chant 'kabaddi' as they attack."
+    },
+    {
+     "q": "Which Indian shooter won Olympic bronze at Paris 2024 in two events?",
+     "a": "Manu Bhaker",
+     "wrong": [
+      "Heena Sidhu",
+      "Apurvi Chandela",
+      "Sift Kaur Samra"
+     ],
+     "level": 1,
+     "why": "She was the first Indian to win two medals at one Games since independence."
+    },
+    {
+     "q": "Which Indian football captain has scored over 90 international goals?",
+     "a": "Sunil Chhetri",
+     "wrong": [
+      "Bhaichung Bhutia",
+      "I. M. Vijayan",
+      "Gurpreet Singh Sandhu"
+     ],
+     "level": 1,
+     "why": "He is among the top scorers in the world."
+    },
+    {
+     "q": "Which Indian footballer was called the 'Sikkimese Sniper'?",
+     "a": "Bhaichung Bhutia",
+     "wrong": [
+      "Sunil Chhetri",
+      "I. M. Vijayan",
+      "Baichung Lepcha"
+     ],
+     "level": 1,
+     "why": "He played for Bury in England."
+    },
+    {
+     "q": "Which Indian billiards and snooker player has won over 25 world titles?",
+     "a": "Pankaj Advani",
+     "wrong": [
+      "Geet Sethi",
+      "Michael Ferreira",
+      "Aditya Mehta"
+     ],
+     "level": 1,
+     "why": "He is from Bengaluru."
+    },
+    {
+     "q": "Which Indian chess player was India's first grandmaster?",
+     "a": "Viswanathan Anand",
+     "wrong": [
+      "Pentala Harikrishna",
+      "Dibyendu Barua",
+      "Praveen Thipsay"
+     ],
+     "level": 1,
+     "why": "He became a GM in 1988."
+    },
+    {
+     "q": "Which Indian woman became world rapid chess champion in 2019 and 2024?",
+     "a": "Koneru Humpy",
+     "wrong": [
+      "Harika Dronavalli",
+      "Divya Deshmukh",
+      "Vaishali Rameshbabu"
+     ],
+     "level": 1,
+     "why": "She was the youngest woman GM in 2002."
+    },
+    {
+     "q": "Which teenager won the 2025 Women's Chess World Cup?",
+     "a": "Divya Deshmukh",
+     "wrong": [
+      "Koneru Humpy",
+      "Vaishali Rameshbabu",
+      "Harika Dronavalli"
+     ],
+     "level": 1,
+     "why": "She beat Koneru Humpy in the final."
+    },
+    {
+     "q": "Which Indian javelin thrower won silver at the 2024 Olympics?",
+     "a": "Neeraj Chopra",
+     "wrong": [
+      "Kishore Jena",
+      "Arshad Nadeem",
+      "Sachin Yadav"
+     ],
+     "level": 1,
+     "why": "Pakistan's Arshad Nadeem won gold."
+    },
+    {
+     "q": "Which Indian weightlifter won silver at Tokyo 2020 on the first day?",
+     "a": "Mirabai Chanu",
+     "wrong": [
+      "Karnam Malleswari",
+      "Kunjarani Devi",
+      "Jeremy Lalrinnunga"
+     ],
+     "level": 1,
+     "why": "She is from Manipur."
+    },
+    {
+     "q": "Who was the first Indian woman to win an Olympic medal?",
+     "a": "Karnam Malleswari",
+     "wrong": [
+      "P. T. Usha",
+      "Mary Kom",
+      "Saina Nehwal"
+     ],
+     "level": 1,
+     "why": "She won weightlifting bronze in 2000."
+    },
+    {
+     "q": "Which Indian boxer won Olympic bronze at Tokyo 2020?",
+     "a": "Lovlina Borgohain",
+     "wrong": [
+      "Mary Kom",
+      "Nikhat Zareen",
+      "Pooja Rani"
+     ],
+     "level": 1,
+     "why": "She is from Assam."
+    },
+    {
+     "q": "Which Indian wrestler won bronze at Paris 2024?",
+     "a": "Aman Sehrawat",
+     "wrong": [
+      "Bajrang Punia",
+      "Ravi Dahiya",
+      "Deepak Punia"
+     ],
+     "level": 1,
+     "why": "He was 21."
+    },
+    {
+     "q": "Which Indian hockey team won bronze at both Tokyo 2020 and Paris 2024?",
+     "a": "Men's hockey team",
+     "wrong": [
+      "Women's hockey team",
+      "Junior hockey team",
+      "Hockey 5s team"
+     ],
+     "level": 1,
+     "why": "It ended a 41-year medal wait in 2021."
+    },
+    {
+     "q": "Which Indian goalkeeper is called 'the Wall of Indian hockey'?",
+     "a": "P. R. Sreejesh",
+     "wrong": [
+      "Savita Punia",
+      "Akash Chikte",
+      "Bharat Chettri"
+     ],
+     "level": 1,
+     "why": "He retired after Paris 2024."
+    },
+    {
+     "q": "Which Indian state is famous for producing many boxers and wrestlers?",
+     "a": "Haryana",
+     "wrong": [
+      "Kerala",
+      "Goa",
+      "Mizoram"
+     ],
+     "level": 1,
+     "why": "Bhiwani is called 'Mini Cuba'."
+    },
+    {
+     "q": "Which famous football club is from Kolkata and is known as the 'Mariners'?",
+     "a": "Mohun Bagan",
+     "wrong": [
+      "East Bengal",
+      "Mohammedan SC",
+      "Bengaluru FC"
+     ],
+     "level": 1,
+     "why": "It beat a British team in 1911."
+    },
+    {
+     "q": "Which Kolkata derby rivals play Mohun Bagan?",
+     "a": "East Bengal",
+     "wrong": [
+      "Mohammedan SC",
+      "Kerala Blasters",
+      "Bengaluru FC"
+     ],
+     "level": 1,
+     "why": "It is one of Asia's biggest derbies."
+    },
+    {
+     "q": "Which sport is Kerala's snake boat race?",
+     "a": "Boat racing (vallam kali)",
+     "wrong": [
+      "Rowing",
+      "Canoe slalom",
+      "Dragon boating"
+     ],
+     "level": 1,
+     "why": "The Nehru Trophy race is the most famous."
+    },
+    {
+     "q": "Which Indian cricketer took a hat-trick in the first over of a Test, in 2006?",
+     "a": "Irfan Pathan",
+     "wrong": [
+      "Harbhajan Singh",
+      "Zaheer Khan",
+      "Ajit Agarkar"
+     ],
+     "level": 2,
+     "why": "He did it in Karachi."
+    },
+    {
+     "q": "Which Indian bowler took the first Test hat-trick for India, in 2001?",
+     "a": "Harbhajan Singh",
+     "wrong": [
+      "Irfan Pathan",
+      "Anil Kumble",
+      "Javagal Srinath"
+     ],
+     "level": 2,
+     "why": "He did it against Australia in Kolkata."
+    },
+    {
+     "q": "Which famous 2001 Test saw India win after following on against Australia?",
+     "a": "Kolkata Test at Eden Gardens",
+     "wrong": [
+      "Chennai Test",
+      "Adelaide Test",
+      "Mumbai Test"
+     ],
+     "level": 2,
+     "why": "Laxman made 281."
+    },
+    {
+     "q": "Which Indian batter scored 281 at Eden Gardens in 2001?",
+     "a": "VVS Laxman",
+     "wrong": [
+      "Rahul Dravid",
+      "Sachin Tendulkar",
+      "Sourav Ganguly"
+     ],
+     "level": 2,
+     "why": "Dravid made 180 in the same innings."
+    },
+    {
+     "q": "Which Indian captain whirled his shirt on the Lord's balcony in 2002?",
+     "a": "Sourav Ganguly",
+     "wrong": [
+      "MS Dhoni",
+      "Rahul Dravid",
+      "Mohammad Azharuddin"
+     ],
+     "level": 2,
+     "why": "India had won the NatWest Trophy."
+    },
+    {
+     "q": "Who was the first Indian to score a Test triple century?",
+     "a": "Virender Sehwag",
+     "wrong": [
+      "Karun Nair",
+      "Rahul Dravid",
+      "Sunil Gavaskar"
+     ],
+     "level": 2,
+     "why": "He made 309 in Multan in 2004."
+    },
+    {
+     "q": "Which Indian leg-spinner took 16 wickets on his Test debut in 1988?",
+     "a": "Narendra Hirwani",
+     "wrong": [
+      "Anil Kumble",
+      "Axar Patel",
+      "Amit Mishra"
+     ],
+     "level": 2,
+     "why": "He took eight in each innings against West Indies."
+    },
+    {
+     "q": "Which Indian all-rounder took 434 Test wickets and scored 5,000 runs?",
+     "a": "Kapil Dev",
+     "wrong": [
+      "Ravi Shastri",
+      "Ravichandran Ashwin",
+      "Ravindra Jadeja"
+     ],
+     "level": 2,
+     "why": "He held the world record for wickets in 1994."
+    },
+    {
+     "q": "Which Indian spinner retired in 2024 with over 530 Test wickets?",
+     "a": "Ravichandran Ashwin",
+     "wrong": [
+      "Ravindra Jadeja",
+      "Harbhajan Singh",
+      "Pragyan Ojha"
+     ],
+     "level": 2,
+     "why": "He retired during the Australia tour."
+    },
+    {
+     "q": "Which Indian left-arm all-rounder is nicknamed 'Sir'?",
+     "a": "Ravindra Jadeja",
+     "wrong": [
+      "Axar Patel",
+      "Krunal Pandya",
+      "Washington Sundar"
+     ],
+     "level": 2,
+     "why": "He is also a brilliant fielder."
+    },
+    {
+     "q": "Who became India's Test captain in 2025?",
+     "a": "Shubman Gill",
+     "wrong": [
+      "Rishabh Pant",
+      "Jasprit Bumrah",
+      "KL Rahul"
+     ],
+     "level": 2,
+     "why": "He scored 754 runs in his first series as captain."
+    },
+    {
+     "q": "Which Indian woman cricketer is called 'Lady Tendulkar' and scored over 10,000 runs?",
+     "a": "Mithali Raj",
+     "wrong": [
+      "Harmanpreet Kaur",
+      "Smriti Mandhana",
+      "Jhulan Goswami"
+     ],
+     "level": 2,
+     "why": "She played for 23 years."
+    },
+    {
+     "q": "Which Indian fast bowler took 355 international wickets, a record in women's cricket?",
+     "a": "Jhulan Goswami",
+     "wrong": [
+      "Shikha Pandey",
+      "Renuka Singh",
+      "Pooja Vastrakar"
+     ],
+     "level": 2,
+     "why": "She is from West Bengal."
+    },
+    {
+     "q": "Who captained India's women to their first ODI World Cup title in 2025?",
+     "a": "Harmanpreet Kaur",
+     "wrong": [
+      "Smriti Mandhana",
+      "Mithali Raj",
+      "Deepti Sharma"
+     ],
+     "level": 2,
+     "why": "They beat South Africa in the final."
+    },
+    {
+     "q": "Which Indian club cricket competition is played between states for the Vijay Hazare Trophy?",
+     "a": "One-day domestic cricket",
+     "wrong": [
+      "Test cricket",
+      "T20 cricket",
+      "First-class cricket"
+     ],
+     "level": 2,
+     "why": "It is named after a former captain."
+    },
+    {
+     "q": "Which Indian became one of the youngest grandmasters ever in 2018, aged 12?",
+     "a": "R. Praggnanandhaa",
+     "wrong": [
+      "Arjun Erigaisi",
+      "Nihal Sarin",
+      "Vidit Gujrathi"
+     ],
+     "level": 2,
+     "why": "He was 12 years and 10 months old."
+    },
+    {
+     "q": "Which Indian chess player reached the World Cup final in 2023 and lost to Carlsen?",
+     "a": "R. Praggnanandhaa",
+     "wrong": [
+      "Arjun Erigaisi",
+      "Gukesh D",
+      "Vidit Gujrathi"
+     ],
+     "level": 2,
+     "why": "He was 18."
+    },
+    {
+     "q": "Which Indian man reached world number one in badminton in 2018?",
+     "a": "Kidambi Srikanth",
+     "wrong": [
+      "Lakshya Sen",
+      "Prannoy H. S.",
+      "Parupalli Kashyap"
+     ],
+     "level": 2,
+     "why": "He was coached by Gopichand."
+    },
+    {
+     "q": "Which coach runs a famous badminton academy in Hyderabad?",
+     "a": "Pullela Gopichand",
+     "wrong": [
+      "Prakash Padukone",
+      "Vimal Kumar",
+      "Syed Modi"
+     ],
+     "level": 2,
+     "why": "He won the All England title in 2001."
+    },
+    {
+     "q": "Which Indian won the All England Badminton Championship in 1980?",
+     "a": "Prakash Padukone",
+     "wrong": [
+      "Pullela Gopichand",
+      "Syed Modi",
+      "Lakshya Sen"
+     ],
+     "level": 2,
+     "why": "His daughter is actress Deepika Padukone."
+    },
+    {
+     "q": "Which men's team badminton title did India win in 2022?",
+     "a": "Thomas Cup",
+     "wrong": [
+      "Sudirman Cup",
+      "Uber Cup",
+      "Davis Cup"
+     ],
+     "level": 2,
+     "why": "They beat Indonesia in the final."
+    },
+    {
+     "q": "Which Indian golfer won the 2008 Asian Tour order of merit and is called 'Jeev'?",
+     "a": "Jeev Milkha Singh",
+     "wrong": [
+      "Arjun Atwal",
+      "Shubhankar Sharma",
+      "Anirban Lahiri"
+     ],
+     "level": 2,
+     "why": "He is Milkha Singh's son."
+    },
+    {
+     "q": "Which Indian golfer won on the PGA Tour in 2010?",
+     "a": "Arjun Atwal",
+     "wrong": [
+      "Jeev Milkha Singh",
+      "Anirban Lahiri",
+      "Shiv Kapur"
+     ],
+     "level": 2,
+     "why": "He was the first Indian-born winner."
+    },
+    {
+     "q": "Which Indian motor racer was the first Indian in Formula One?",
+     "a": "Narain Karthikeyan",
+     "wrong": [
+      "Karun Chandhok",
+      "Jehan Daruvala",
+      "Kush Maini"
+     ],
+     "level": 2,
+     "why": "He raced for Jordan in 2005."
+    },
+    {
+     "q": "Which Indian archer from Jharkhand has been world number one?",
+     "a": "Deepika Kumari",
+     "wrong": [
+      "Komalika Bari",
+      "Ankita Bhakat",
+      "Jyothi Surekha Vennam"
+     ],
+     "level": 2,
+     "why": "She won World Cup golds in 2012."
+    },
+    {
+     "q": "Which Indian gymnast came fourth in the vault at Rio 2016?",
+     "a": "Dipa Karmakar",
+     "wrong": [
+      "Aruna Reddy",
+      "Pranati Nayak",
+      "Ashish Kumar"
+     ],
+     "level": 2,
+     "why": "She landed the difficult Produnova."
+    },
+    {
+     "q": "Which Indian high jumper won Paralympic gold in 2016?",
+     "a": "Mariyappan Thangavelu",
+     "wrong": [
+      "Devendra Jhajharia",
+      "Sharad Kumar",
+      "Nishad Kumar"
+     ],
+     "level": 2,
+     "why": "He added silver in 2021."
+    },
+    {
+     "q": "Which para javelin thrower won Paralympic gold in 2004 and 2016?",
+     "a": "Devendra Jhajharia",
+     "wrong": [
+      "Sumit Antil",
+      "Ajeet Singh",
+      "Sundar Singh Gurjar"
+     ],
+     "level": 2,
+     "why": "He lost his left arm as a child."
+    },
+    {
+     "q": "Which Indian shooter won the 10 m air rifle gold at Beijing 2008?",
+     "a": "Abhinav Bindra",
+     "wrong": [
+      "Gagan Narang",
+      "Rajyavardhan Rathore",
+      "Vijay Kumar"
+     ],
+     "level": 2,
+     "why": "It was India's first individual Olympic gold."
+    },
+    {
+     "q": "Which Indian shooter won Olympic silver in the double trap at Athens 2004?",
+     "a": "Rajyavardhan Singh Rathore",
+     "wrong": [
+      "Abhinav Bindra",
+      "Gagan Narang",
+      "Manavjit Sandhu"
+     ],
+     "level": 2,
+     "why": "He later became a minister."
+    },
+    {
+     "q": "Which stadium in Kolkata is one of the oldest Test grounds in the world?",
+     "a": "Eden Gardens",
+     "wrong": [
+      "Feroz Shah Kotla",
+      "Wankhede",
+      "Chepauk"
+     ],
+     "level": 2,
+     "why": "It opened in 1864."
+    },
+    {
+     "q": "Who was India's first Test captain, in 1932?",
+     "a": "C. K. Nayudu",
+     "wrong": [
+      "Lala Amarnath",
+      "Vijay Hazare",
+      "Maharaja of Porbandar"
+     ],
+     "level": 3,
+     "why": "The match was at Lord's."
+    },
+    {
+     "q": "Who scored India's first Test century, in 1933?",
+     "a": "Lala Amarnath",
+     "wrong": [
+      "C. K. Nayudu",
+      "Vijay Merchant",
+      "Mushtaq Ali"
+     ],
+     "level": 3,
+     "why": "He scored it on debut in Bombay."
+    },
+    {
+     "q": "Who was India's first Olympic medallist, in athletics in 1900?",
+     "a": "Norman Pritchard",
+     "wrong": [
+      "Milkha Singh",
+      "K. D. Jadhav",
+      "Dhyan Chand"
+     ],
+     "level": 3,
+     "why": "He won two silvers in Paris."
+    },
+    {
+     "q": "Who won independent India's first individual Olympic medal, in 1952?",
+     "a": "K. D. Jadhav",
+     "wrong": [
+      "Milkha Singh",
+      "Leander Paes",
+      "Karnam Malleswari"
+     ],
+     "level": 3,
+     "why": "He won wrestling bronze in Helsinki."
+    },
+    {
+     "q": "Who scored five goals in the 1952 Olympic hockey final, still a record?",
+     "a": "Balbir Singh Sr.",
+     "wrong": [
+      "Dhyan Chand",
+      "Roop Singh",
+      "Udham Singh"
+     ],
+     "level": 3,
+     "why": "India beat the Netherlands 6–1."
+    },
+    {
+     "q": "Which Indian won the 440 yards gold at the 1958 Commonwealth Games?",
+     "a": "Milkha Singh",
+     "wrong": [
+      "Gurbachan Singh",
+      "Makhan Singh",
+      "Ajmer Singh"
+     ],
+     "level": 3,
+     "why": "It was India's first Commonwealth athletics gold."
+    },
+    {
+     "q": "Which Indian cricketer scored a century in his first three Tests, a world record?",
+     "a": "Mohammad Azharuddin",
+     "wrong": [
+      "Sourav Ganguly",
+      "Rohit Sharma",
+      "Shikhar Dhawan"
+     ],
+     "level": 3,
+     "why": "He did it against England in 1984–85."
+    },
+    {
+     "q": "Which Indian captain first won a Test series in England, in 1971?",
+     "a": "Ajit Wadekar",
+     "wrong": [
+      "Tiger Pataudi",
+      "Sunil Gavaskar",
+      "Bishan Singh Bedi"
+     ],
+     "level": 3,
+     "why": "India won at The Oval."
+    },
+    {
+     "q": "Which Indian spin quartet starred in the 1970s?",
+     "a": "Bedi, Prasanna, Chandrasekhar and Venkataraghavan",
+     "wrong": [
+      "Kumble, Harbhajan, Ojha and Mishra",
+      "Ashwin, Jadeja, Axar and Kuldeep",
+      "Gupte, Mankad, Durani and Nadkarni"
+     ],
+     "level": 3,
+     "why": "They took 853 Test wickets together."
+    },
+    {
+     "q": "Which Indian bowler bowled 21 maiden overs in a row in a Test in 1964?",
+     "a": "Bapu Nadkarni",
+     "wrong": [
+      "Vinoo Mankad",
+      "Erapalli Prasanna",
+      "Salim Durani"
+     ],
+     "level": 3,
+     "why": "His figures were 32–27–5–0."
+    },
+    {
+     "q": "What is 'Mankading' in cricket?",
+     "a": "Running out the non-striker before the ball is bowled",
+     "wrong": [
+      "Stumping off a wide",
+      "Catching off a no-ball",
+      "Hitting the ball twice"
+     ],
+     "level": 3,
+     "why": "Vinoo Mankad did it in 1947."
     }
    ]
   },
@@ -2157,6 +3114,72 @@
      ],
      "level": 3,
      "why": "He set it in 1993."
+    },
+    {
+     "q": "Which singer sang 'Lag Ja Gale' for 'Woh Kaun Thi?'?",
+     "a": "Lata Mangeshkar",
+     "wrong": [
+      "Asha Bhosle",
+      "Geeta Dutt",
+      "Suman Kalyanpur"
+     ],
+     "level": 3,
+     "why": "Madan Mohan composed it."
+    },
+    {
+     "q": "Which composer is known for 'Lag Ja Gale' and many ghazal-style film songs?",
+     "a": "Madan Mohan",
+     "wrong": [
+      "Naushad",
+      "Roshan",
+      "O. P. Nayyar"
+     ],
+     "level": 3,
+     "why": "He was called the 'Ghazal King' of Bollywood."
+    },
+    {
+     "q": "Which composer scored 'Mughal-e-Azam' and 'Baiju Bawra'?",
+     "a": "Naushad",
+     "wrong": [
+      "Madan Mohan",
+      "S. D. Burman",
+      "Shankar–Jaikishan"
+     ],
+     "level": 3,
+     "why": "He was the first music director to win a Filmfare award."
+    },
+    {
+     "q": "Which composer duo scored 'Awaara' and 'Shree 420'?",
+     "a": "Shankar–Jaikishan",
+     "wrong": [
+      "Laxmikant–Pyarelal",
+      "Kalyanji–Anandji",
+      "Salim–Sulaiman"
+     ],
+     "level": 3,
+     "why": "They worked with Raj Kapoor."
+    },
+    {
+     "q": "Which singer sang 'Ae Mere Pyare Watan' in 'Kabuliwala' (1961)?",
+     "a": "Manna Dey",
+     "wrong": [
+      "Mohammed Rafi",
+      "Mukesh",
+      "Hemant Kumar"
+     ],
+     "level": 3,
+     "why": "Salil Chowdhury composed it."
+    },
+    {
+     "q": "Which singer was Raj Kapoor's playback voice?",
+     "a": "Mukesh",
+     "wrong": [
+      "Mohammed Rafi",
+      "Kishore Kumar",
+      "Manna Dey"
+     ],
+     "level": 3,
+     "why": "He sang 'Mera Joota Hai Japani'."
     }
    ]
   },
@@ -2418,17 +3441,6 @@
      "why": "It was directed by S. S. Rajamouli."
     },
     {
-     "q": "Which Telugu director made both 'Baahubali' films and 'RRR'?",
-     "a": "S. S. Rajamouli",
-     "wrong": [
-      "Prashanth Neel",
-      "Sukumar",
-      "Shankar"
-     ],
-     "level": 1,
-     "why": "He is known for big-budget epics."
-    },
-    {
      "q": "Which film's question 'Why did Kattappa kill Baahubali?' became a craze?",
      "a": "Baahubali: The Beginning",
      "wrong": [
@@ -2438,28 +3450,6 @@
      ],
      "level": 1,
      "why": "The answer came in part two."
-    },
-    {
-     "q": "Which Tamil superstar is called 'Thalaivar'?",
-     "a": "Rajinikanth",
-     "wrong": [
-      "Kamal Haasan",
-      "Vijay",
-      "Ajith Kumar"
-     ],
-     "level": 1,
-     "why": "He began as a bus conductor."
-    },
-    {
-     "q": "Which actor starred in 'Pushpa' as a sandalwood smuggler?",
-     "a": "Allu Arjun",
-     "wrong": [
-      "Ram Charan",
-      "Prabhas",
-      "Jr NTR"
-     ],
-     "level": 1,
-     "why": "His line 'Pushpa, I hate tears' became famous."
     },
     {
      "q": "Which actors played the leads in 'RRR'?",
@@ -3098,6 +4088,204 @@
      ],
      "level": 3,
      "why": "He also made 'Asuran'."
+    },
+    {
+     "level": 1,
+     "q": "Who directed 'Baahubali' and 'RRR'?",
+     "a": "S. S. Rajamouli",
+     "wrong": [
+      "Mani Ratnam",
+      "Shankar",
+      "Prashanth Neel"
+     ],
+     "why": "Rajamouli works mainly in Telugu cinema."
+    },
+    {
+     "level": 1,
+     "q": "Which Tamil superstar is called 'Thalaivar' by his fans?",
+     "a": "Rajinikanth",
+     "wrong": [
+      "Kamal Haasan",
+      "Vijay",
+      "Ajith Kumar"
+     ],
+     "why": "Thalaivar means 'leader'."
+    },
+    {
+     "level": 1,
+     "q": "Who plays Pushpa Raj in 'Pushpa: The Rise'?",
+     "a": "Allu Arjun",
+     "wrong": [
+      "Ram Charan",
+      "Mahesh Babu",
+      "Prabhas"
+     ],
+     "why": "He won the National Award for Best Actor for the role."
+    },
+    {
+     "q": "Which actress starred in 'Pakeezah', finished after 14 years?",
+     "a": "Meena Kumari",
+     "wrong": [
+      "Madhubala",
+      "Nargis",
+      "Waheeda Rehman"
+     ],
+     "level": 2,
+     "why": "She was called the 'Tragedy Queen'."
+    },
+    {
+     "q": "Which Hindi film of 1960 was the costliest of its time and later colourised?",
+     "a": "Mughal-e-Azam",
+     "wrong": [
+      "Mother India",
+      "Naya Daur",
+      "Guide"
+     ],
+     "level": 2,
+     "why": "Its colour version came out in 2004."
+    },
+    {
+     "q": "Which Dev Anand film based on R. K. Narayan's novel came out in 1965?",
+     "a": "Guide",
+     "wrong": [
+      "Jewel Thief",
+      "Hare Rama Hare Krishna",
+      "Kala Pani"
+     ],
+     "level": 2,
+     "why": "Waheeda Rehman played Rosie."
+    },
+    {
+     "q": "Which Hrishikesh Mukherjee film stars Amol Palekar as a man pretending to have a twin?",
+     "a": "Golmaal",
+     "wrong": [
+      "Chupke Chupke",
+      "Baton Baton Mein",
+      "Chhoti Si Baat"
+     ],
+     "level": 2,
+     "why": "It came out in 1979."
+    },
+    {
+     "q": "Which actor played the lead in 'Anand' (1971) as a dying man who lives fully?",
+     "a": "Rajesh Khanna",
+     "wrong": [
+      "Amitabh Bachchan",
+      "Dharmendra",
+      "Sanjeev Kumar"
+     ],
+     "level": 2,
+     "why": "Amitabh played his doctor."
+    },
+    {
+     "q": "Which 2007 film about a dyslexic boy was directed by Aamir Khan?",
+     "a": "Taare Zameen Par",
+     "wrong": [
+      "3 Idiots",
+      "Rang De Basanti",
+      "Stanley Ka Dabba"
+     ],
+     "level": 2,
+     "why": "Darsheel Safary played Ishaan."
+    },
+    {
+     "q": "Which 2006 film inspired young Indians with its 'Rang De' anthem and Bhagat Singh story?",
+     "a": "Rang De Basanti",
+     "wrong": [
+      "Lagaan",
+      "Chak De! India",
+      "Swades"
+     ],
+     "level": 2,
+     "why": "Rakeysh Omprakash Mehra directed it."
+    },
+    {
+     "q": "Which 2012 Anurag Kashyap crime saga is set in Dhanbad's coal fields?",
+     "a": "Gangs of Wasseypur",
+     "wrong": [
+      "Black Friday",
+      "Dev.D",
+      "Ugly"
+     ],
+     "level": 2,
+     "why": "It runs over five hours in two parts."
+    },
+    {
+     "q": "Which Raju Hirani film features 'Munna Bhai' and Circuit?",
+     "a": "Munna Bhai M.B.B.S.",
+     "wrong": [
+      "PK",
+      "Sanju",
+      "3 Idiots"
+     ],
+     "level": 2,
+     "why": "Sanjay Dutt played Munna."
+    },
+    {
+     "q": "Which Yash Chopra film features the song 'Main Yahaan Hoon'?",
+     "a": "Veer-Zaara",
+     "wrong": [
+      "Main Hoon Na",
+      "Swades",
+      "Kal Ho Naa Ho"
+     ],
+     "level": 2,
+     "why": "It came out in 2004."
+    },
+    {
+     "q": "Which 2004 Ashutosh Gowariker film stars Shah Rukh Khan as a NASA scientist?",
+     "a": "Swades",
+     "wrong": [
+      "Lagaan",
+      "Jodhaa Akbar",
+      "Pardes"
+     ],
+     "level": 2,
+     "why": "He returns to his village."
+    },
+    {
+     "q": "Which film with 'Mogambo khush hua' came out in 1987?",
+     "a": "Mr. India",
+     "wrong": [
+      "Tezaab",
+      "Ram Lakhan",
+      "Karma"
+     ],
+     "level": 2,
+     "why": "Amrish Puri played Mogambo."
+    },
+    {
+     "q": "Which actor won the first Filmfare Best Actor award?",
+     "a": "Dilip Kumar",
+     "wrong": [
+      "Raj Kapoor",
+      "Dev Anand",
+      "Ashok Kumar"
+     ],
+     "level": 3,
+     "why": "He won it for 'Daag' (1952)."
+    },
+    {
+     "q": "Which actress was the first winner of the Dadasaheb Phalke Award, in 1969?",
+     "a": "Devika Rani",
+     "wrong": [
+      "Durga Khote",
+      "Nargis",
+      "Meena Kumari"
+     ],
+     "level": 3,
+     "why": "She was called the 'First Lady of Indian Screen'."
+    },
+    {
+     "q": "Which Marathi film by Nagraj Manjule became a 2016 hit?",
+     "a": "Sairat",
+     "wrong": [
+      "Court",
+      "Fandry",
+      "Natsamrat"
+     ],
+     "level": 3,
+     "why": "It was later remade in Hindi as 'Dhadak'."
     }
    ]
   },
@@ -7552,105 +8740,6 @@
    "name": "General Knowledge",
    "questions": [
     {
-     "level": 1,
-     "q": "Which Indian batter is nicknamed 'The Wall'?",
-     "a": "Rahul Dravid",
-     "wrong": [
-      "VVS Laxman",
-      "Cheteshwar Pujara",
-      "Sunil Gavaskar"
-     ],
-     "why": "Dravid was famous for his solid defence."
-    },
-    {
-     "level": 1,
-     "q": "Which IPL team's fans are known as the 'Yellow Army'?",
-     "a": "Chennai Super Kings",
-     "wrong": [
-      "Mumbai Indians",
-      "Kolkata Knight Riders",
-      "Sunrisers Hyderabad"
-     ],
-     "why": "CSK play in yellow."
-    },
-    {
-     "level": 1,
-     "q": "In which year was the first IPL season played?",
-     "a": "2008",
-     "wrong": [
-      "2007",
-      "2009",
-      "2010"
-     ],
-     "why": "The Indian Premier League began in April 2008."
-    },
-    {
-     "level": 2,
-     "q": "How many international centuries did Sachin Tendulkar score?",
-     "a": "100",
-     "wrong": [
-      "75",
-      "89",
-      "120"
-     ],
-     "why": "51 in Tests and 49 in ODIs."
-    },
-    {
-     "level": 2,
-     "q": "Which Bangladeshi all-rounder was ranked the world's number one ODI all-rounder for years?",
-     "a": "Shakib Al Hasan",
-     "wrong": [
-      "Mushfiqur Rahim",
-      "Tamim Iqbal",
-      "Mashrafe Mortaza"
-     ],
-     "why": "He bats left-handed and bowls left-arm spin."
-    },
-    {
-     "level": 3,
-     "q": "Who was the first batter to score 10,000 Test runs?",
-     "a": "Sunil Gavaskar",
-     "wrong": [
-      "Allan Border",
-      "Sachin Tendulkar",
-      "Geoffrey Boycott"
-     ],
-     "why": "Gavaskar reached it in 1987."
-    },
-    {
-     "level": 1,
-     "q": "Who directed 'Baahubali' and 'RRR'?",
-     "a": "S. S. Rajamouli",
-     "wrong": [
-      "Mani Ratnam",
-      "Shankar",
-      "Prashanth Neel"
-     ],
-     "why": "Rajamouli works mainly in Telugu cinema."
-    },
-    {
-     "level": 1,
-     "q": "Which Tamil superstar is called 'Thalaivar' by his fans?",
-     "a": "Rajinikanth",
-     "wrong": [
-      "Kamal Haasan",
-      "Vijay",
-      "Ajith Kumar"
-     ],
-     "why": "Thalaivar means 'leader'."
-    },
-    {
-     "level": 1,
-     "q": "Who plays Pushpa Raj in 'Pushpa: The Rise'?",
-     "a": "Allu Arjun",
-     "wrong": [
-      "Ram Charan",
-      "Mahesh Babu",
-      "Prabhas"
-     ],
-     "why": "He won the National Award for Best Actor for the role."
-    },
-    {
      "level": 3,
      "q": "Through how many Indian states does the Tropic of Cancer pass?",
      "a": "8",
@@ -7715,17 +8804,6 @@
       "Jasmine"
      ],
      "why": "The lotus is a symbol of purity in Indian art."
-    },
-    {
-     "level": 2,
-     "q": "Which classical dance from Kerala is known for its elaborate green face make-up?",
-     "a": "Kathakali",
-     "wrong": [
-      "Bharatanatyam",
-      "Kathak",
-      "Odissi"
-     ],
-     "why": "Green make-up, called pacha, marks noble heroes."
     },
     {
      "level": 2,
@@ -7858,6 +8936,908 @@
       "Meghalaya"
      ],
      "why": "It is named after the bird found in Naga folklore."
+    },
+    {
+     "q": "Which Indian festival marks Rama's return to Ayodhya?",
+     "a": "Diwali",
+     "wrong": [
+      "Holi",
+      "Dussehra",
+      "Navratri"
+     ],
+     "level": 1,
+     "why": "Homes are lit with diyas."
+    },
+    {
+     "q": "Which festival celebrates Rama's victory over Ravana?",
+     "a": "Dussehra",
+     "wrong": [
+      "Diwali",
+      "Holi",
+      "Janmashtami"
+     ],
+     "level": 1,
+     "why": "Effigies of Ravana are burned."
+    },
+    {
+     "q": "Which festival celebrates the birth of Krishna?",
+     "a": "Janmashtami",
+     "wrong": [
+      "Ram Navami",
+      "Shivaratri",
+      "Raksha Bandhan"
+     ],
+     "level": 1,
+     "why": "Young men form human pyramids to break a pot of curd."
+    },
+    {
+     "q": "On which festival do sisters tie a thread on their brothers' wrists?",
+     "a": "Raksha Bandhan",
+     "wrong": [
+      "Bhai Dooj",
+      "Karva Chauth",
+      "Teej"
+     ],
+     "level": 1,
+     "why": "The thread is called a rakhi."
+    },
+    {
+     "q": "Which 10-day festival honours the elephant-headed god in Maharashtra?",
+     "a": "Ganesh Chaturthi",
+     "wrong": [
+      "Navratri",
+      "Durga Puja",
+      "Onam"
+     ],
+     "level": 1,
+     "why": "Lokmanya Tilak made it a public festival."
+    },
+    {
+     "q": "Which festival is Bengal's biggest, honouring the goddess Durga?",
+     "a": "Durga Puja",
+     "wrong": [
+      "Kali Puja",
+      "Navratri",
+      "Lakshmi Puja"
+     ],
+     "level": 1,
+     "why": "It is on UNESCO's list."
+    },
+    {
+     "q": "Which harvest festival in Tamil Nadu boils rice and milk until it spills over?",
+     "a": "Pongal",
+     "wrong": [
+      "Onam",
+      "Bihu",
+      "Lohri"
+     ],
+     "level": 1,
+     "why": "It falls in mid-January."
+    },
+    {
+     "q": "Which harvest festival of Assam has three forms through the year?",
+     "a": "Bihu",
+     "wrong": [
+      "Pongal",
+      "Lohri",
+      "Baisakhi"
+     ],
+     "level": 1,
+     "why": "Rongali Bihu marks the new year."
+    },
+    {
+     "q": "Which Punjabi festival with bonfires is held in January?",
+     "a": "Lohri",
+     "wrong": [
+      "Baisakhi",
+      "Holi",
+      "Teej"
+     ],
+     "level": 1,
+     "why": "People toss sesame and popcorn into the fire."
+    },
+    {
+     "q": "Which festival in April marks the Sikh new year and the founding of the Khalsa?",
+     "a": "Baisakhi",
+     "wrong": [
+      "Lohri",
+      "Gurpurab",
+      "Hola Mohalla"
+     ],
+     "level": 1,
+     "why": "The Khalsa was founded in 1699."
+    },
+    {
+     "q": "Which giant gathering of pilgrims is held at Prayagraj every 12 years?",
+     "a": "Kumbh Mela",
+     "wrong": [
+      "Pushkar Mela",
+      "Sonepur Mela",
+      "Rath Yatra"
+     ],
+     "level": 1,
+     "why": "The 2025 Maha Kumbh drew hundreds of millions."
+    },
+    {
+     "q": "Which chariot festival is held in Puri each year?",
+     "a": "Rath Yatra",
+     "wrong": [
+      "Kumbh Mela",
+      "Pongal",
+      "Onam"
+     ],
+     "level": 1,
+     "why": "Jagannath's chariot gave English the word 'juggernaut'."
+    },
+    {
+     "q": "Which unleavened flatbread is cooked on a tawa across India?",
+     "a": "Roti (chapati)",
+     "wrong": [
+      "Naan",
+      "Bhatura",
+      "Kulcha"
+     ],
+     "level": 1,
+     "why": "Naan is baked in a tandoor."
+    },
+    {
+     "q": "Which layered rice dish is famous in Hyderabad and Lucknow?",
+     "a": "Biryani",
+     "wrong": [
+      "Pulao",
+      "Khichdi",
+      "Pongal"
+     ],
+     "level": 1,
+     "why": "Hyderabadi biryani is cooked in the dum style."
+    },
+    {
+     "q": "Which spiced tea is drunk across India?",
+     "a": "Masala chai",
+     "wrong": [
+      "Kahwa",
+      "Sulaimani",
+      "Butter tea"
+     ],
+     "level": 1,
+     "why": "It is boiled with milk and spices."
+    },
+    {
+     "q": "Which sweet is made from fried milk balls in sugar syrup?",
+     "a": "Gulab jamun",
+     "wrong": [
+      "Rasgulla",
+      "Jalebi",
+      "Barfi"
+     ],
+     "level": 1,
+     "why": "The name means 'rose berry'."
+    },
+    {
+     "q": "Which spongy cheese sweet is claimed by both Bengal and Odisha?",
+     "a": "Rasgulla",
+     "wrong": [
+      "Gulab jamun",
+      "Sandesh",
+      "Kalakand"
+     ],
+     "level": 1,
+     "why": "Both have a GI tag for their versions."
+    },
+    {
+     "q": "Which deep-fried spiral sweet is soaked in syrup?",
+     "a": "Jalebi",
+     "wrong": [
+      "Imarti",
+      "Gulab jamun",
+      "Malpua"
+     ],
+     "level": 1,
+     "why": "It is often eaten with rabri."
+    },
+    {
+     "q": "Which yoghurt drink is popular in Punjab?",
+     "a": "Lassi",
+     "wrong": [
+      "Chaas",
+      "Falooda",
+      "Thandai"
+     ],
+     "level": 1,
+     "why": "It can be sweet or salty."
+    },
+    {
+     "q": "Which crispy fried snack has a spicy potato filling?",
+     "a": "Samosa",
+     "wrong": [
+      "Kachori",
+      "Pakora",
+      "Vada"
+     ],
+     "level": 1,
+     "why": "It is shaped like a triangle."
+    },
+    {
+     "q": "Which Mumbai street food is a spiced potato patty in a bun?",
+     "a": "Vada pav",
+     "wrong": [
+      "Pav bhaji",
+      "Bhel puri",
+      "Misal pav"
+     ],
+     "level": 1,
+     "why": "It is called the 'Bombay burger'."
+    },
+    {
+     "q": "Which street snack of hollow puris filled with spiced water has many names?",
+     "a": "Pani puri",
+     "wrong": [
+      "Bhel puri",
+      "Dahi puri",
+      "Sev puri"
+     ],
+     "level": 1,
+     "why": "It is called golgappa in Delhi and puchka in Kolkata."
+    },
+    {
+     "q": "Which Kerala breakfast is steamed rice cake rolled in coconut?",
+     "a": "Puttu",
+     "wrong": [
+      "Appam",
+      "Idiyappam",
+      "Dosa"
+     ],
+     "level": 1,
+     "why": "It is often eaten with kadala curry."
+    },
+    {
+     "q": "Which Bengali dish is fish cooked in mustard sauce?",
+     "a": "Shorshe ilish",
+     "wrong": [
+      "Macher jhol",
+      "Chingri malai curry",
+      "Doi maach"
+     ],
+     "level": 1,
+     "why": "Ilish (hilsa) is the state fish."
+    },
+    {
+     "q": "What is India's national fruit?",
+     "a": "Mango",
+     "wrong": [
+      "Banana",
+      "Jackfruit",
+      "Guava"
+     ],
+     "level": 1,
+     "why": "India grows about half the world's mangoes."
+    },
+    {
+     "q": "What is India's national tree?",
+     "a": "Banyan",
+     "wrong": [
+      "Peepal",
+      "Neem",
+      "Ashoka"
+     ],
+     "level": 1,
+     "why": "Its roots grow down from its branches."
+    },
+    {
+     "q": "What is India's national river?",
+     "a": "Ganga",
+     "wrong": [
+      "Yamuna",
+      "Brahmaputra",
+      "Godavari"
+     ],
+     "level": 1,
+     "why": "It was declared in 2008."
+    },
+    {
+     "q": "What is India's national calendar?",
+     "a": "Saka calendar",
+     "wrong": [
+      "Vikram Samvat",
+      "Gregorian calendar",
+      "Hijri calendar"
+     ],
+     "level": 1,
+     "why": "It was adopted in 1957."
+    },
+    {
+     "q": "What is India's currency?",
+     "a": "Indian rupee",
+     "wrong": [
+      "Taka",
+      "Rupiah",
+      "Dinar"
+     ],
+     "level": 1,
+     "why": "One rupee has 100 paise."
+    },
+    {
+     "q": "What is the time zone of India called?",
+     "a": "Indian Standard Time (IST)",
+     "wrong": [
+      "Delhi Mean Time",
+      "South Asia Time",
+      "Bharat Standard Time"
+     ],
+     "level": 1,
+     "why": "It is 5 hours 30 minutes ahead of UTC."
+    },
+    {
+     "q": "Which language has the most native speakers in India?",
+     "a": "Hindi",
+     "wrong": [
+      "Bengali",
+      "Telugu",
+      "Marathi"
+     ],
+     "level": 1,
+     "why": "About 44% of Indians speak it as their first language."
+    },
+    {
+     "q": "How many states does India have?",
+     "a": "28",
+     "wrong": [
+      "29",
+      "26",
+      "31"
+     ],
+     "level": 1,
+     "why": "There are also 8 union territories."
+    },
+    {
+     "q": "Which is India's newest union territory, formed in 2019 with Jammu and Kashmir?",
+     "a": "Ladakh",
+     "wrong": [
+      "Puducherry",
+      "Lakshadweep",
+      "Chandigarh"
+     ],
+     "level": 1,
+     "why": "Leh is its main town."
+    },
+    {
+     "q": "Which Indian body launched Chandrayaan-3 to the Moon?",
+     "a": "ISRO",
+     "wrong": [
+      "DRDO",
+      "NASA",
+      "HAL"
+     ],
+     "level": 1,
+     "why": "It landed near the south pole in 2023."
+    },
+    {
+     "q": "Which date did Chandrayaan-3 land on the Moon?",
+     "a": "23 August 2023",
+     "wrong": [
+      "15 August 2023",
+      "14 July 2023",
+      "2 September 2023"
+     ],
+     "level": 1,
+     "why": "The day is now National Space Day."
+    },
+    {
+     "q": "Which Indian astronaut flew to the ISS in 2025?",
+     "a": "Shubhanshu Shukla",
+     "wrong": [
+      "Rakesh Sharma",
+      "Kalpana Chawla",
+      "Sunita Williams"
+     ],
+     "level": 1,
+     "why": "He flew on the Axiom-4 mission."
+    },
+    {
+     "q": "Who was the first Indian in space, in 1984?",
+     "a": "Rakesh Sharma",
+     "wrong": [
+      "Kalpana Chawla",
+      "Ravish Malhotra",
+      "Shubhanshu Shukla"
+     ],
+     "level": 1,
+     "why": "He said India looked 'Saare Jahan Se Achha'."
+    },
+    {
+     "q": "Which Indian-born astronaut died in the Columbia disaster in 2003?",
+     "a": "Kalpana Chawla",
+     "wrong": [
+      "Sunita Williams",
+      "Sirisha Bandla",
+      "Rakesh Sharma"
+     ],
+     "level": 1,
+     "why": "She was from Karnal, Haryana."
+    },
+    {
+     "q": "Which Indian mission studies the Sun from space?",
+     "a": "Aditya-L1",
+     "wrong": [
+      "Gaganyaan",
+      "Chandrayaan-3",
+      "NISAR"
+     ],
+     "level": 1,
+     "why": "It was launched in 2023."
+    },
+    {
+     "q": "Which Indian company makes the Tata Nano and owns Jaguar Land Rover?",
+     "a": "Tata Motors",
+     "wrong": [
+      "Mahindra",
+      "Maruti Suzuki",
+      "Ashok Leyland"
+     ],
+     "level": 1,
+     "why": "Tata bought JLR in 2008."
+    },
+    {
+     "q": "Which Indian business group bought Air India back in 2022?",
+     "a": "Tata Group",
+     "wrong": [
+      "Reliance",
+      "Adani Group",
+      "Birla Group"
+     ],
+     "level": 1,
+     "why": "Tata had founded it in 1932."
+    },
+    {
+     "q": "Which Indian railway is a UNESCO site nicknamed the 'Toy Train'?",
+     "a": "Darjeeling Himalayan Railway",
+     "wrong": [
+      "Kalka–Shimla Railway",
+      "Nilgiri Mountain Railway",
+      "Matheran Light Railway"
+     ],
+     "level": 1,
+     "why": "It opened in 1881."
+    },
+    {
+     "q": "What is India's high-speed train under construction between Mumbai and Ahmedabad called?",
+     "a": "Mumbai–Ahmedabad bullet train",
+     "wrong": [
+      "Vande Bharat",
+      "Rajdhani",
+      "Gatimaan"
+     ],
+     "level": 1,
+     "why": "Japan is helping to build it."
+    },
+    {
+     "q": "Which semi-high-speed trains were launched in 2019?",
+     "a": "Vande Bharat Express",
+     "wrong": [
+      "Shatabdi Express",
+      "Duronto Express",
+      "Tejas Express"
+     ],
+     "level": 1,
+     "why": "They were built in Chennai."
+    },
+    {
+     "q": "Which yoga day did the UN set on 21 June?",
+     "a": "International Day of Yoga",
+     "wrong": [
+      "World Health Day",
+      "Earth Day",
+      "Global Wellness Day"
+     ],
+     "level": 1,
+     "why": "It began in 2015."
+    },
+    {
+     "q": "Which Indian system of medicine uses herbs and diet?",
+     "a": "Ayurveda",
+     "wrong": [
+      "Unani",
+      "Siddha",
+      "Homeopathy"
+     ],
+     "level": 1,
+     "why": "It is thousands of years old."
+    },
+    {
+     "q": "Which number did Indian mathematicians first treat as a number in its own right?",
+     "a": "Zero",
+     "wrong": [
+      "One",
+      "Pi",
+      "Infinity"
+     ],
+     "level": 1,
+     "why": "Brahmagupta wrote rules for it in 628."
+    },
+    {
+     "q": "Which board game of snakes and ladders came from India?",
+     "a": "Moksha Patam",
+     "wrong": [
+      "Pachisi",
+      "Chaupar",
+      "Ludo"
+     ],
+     "level": 1,
+     "why": "It taught karma and virtue."
+    },
+    {
+     "q": "Which modern board game comes from the Indian game pachisi?",
+     "a": "Ludo",
+     "wrong": [
+      "Monopoly",
+      "Chess",
+      "Carrom"
+     ],
+     "level": 1,
+     "why": "Pachisi was played by Akbar."
+    },
+    {
+     "q": "Which game played on a square board with a striker comes from India?",
+     "a": "Carrom",
+     "wrong": [
+      "Ludo",
+      "Billiards",
+      "Shuffleboard"
+     ],
+     "level": 1,
+     "why": "It is popular in homes and clubs."
+    },
+    {
+     "q": "What is a 'dabbawala' in Mumbai?",
+     "a": "A lunchbox delivery worker",
+     "wrong": [
+      "A street food seller",
+      "A taxi driver",
+      "A milkman"
+     ],
+     "level": 1,
+     "why": "They deliver about 200,000 lunches a day."
+    },
+    {
+     "q": "Which Indian city is home to the film studio Ramoji Film City?",
+     "a": "Hyderabad",
+     "wrong": [
+      "Mumbai",
+      "Chennai",
+      "Kolkata"
+     ],
+     "level": 1,
+     "why": "It is one of the largest film studios."
+    },
+    {
+     "q": "Which old Indian cola brand did Reliance relaunch in 2023?",
+     "a": "Campa Cola",
+     "wrong": [
+      "Thums Up",
+      "Limca",
+      "Gold Spot"
+     ],
+     "level": 1,
+     "why": "It was popular in the 1970s."
+    },
+    {
+     "q": "Which Indian cola brand is famous for its strong fizz and 'Taste the Thunder'?",
+     "a": "Thums Up",
+     "wrong": [
+      "Campa Cola",
+      "Limca",
+      "Maaza"
+     ],
+     "level": 2,
+     "why": "Coca-Cola owns it."
+    },
+    {
+     "q": "Which Indian city hosted the G20 summit in 2023?",
+     "a": "New Delhi",
+     "wrong": [
+      "Mumbai",
+      "Bengaluru",
+      "Hyderabad"
+     ],
+     "level": 2,
+     "why": "It was held at Bharat Mandapam."
+    },
+    {
+     "q": "In which state is the Kudankulam nuclear power plant?",
+     "a": "Tamil Nadu",
+     "wrong": [
+      "Kerala",
+      "Karnataka",
+      "Andhra Pradesh"
+     ],
+     "level": 2,
+     "why": "It was built with Russian help."
+    },
+    {
+     "q": "Which space centre on an Andhra Pradesh island launches ISRO's rockets?",
+     "a": "Satish Dhawan Space Centre, Sriharikota",
+     "wrong": [
+      "Thumba",
+      "Kalpakkam",
+      "Chandipur"
+     ],
+     "level": 2,
+     "why": "It is named after a former ISRO chief."
+    },
+    {
+     "q": "Who is called the father of India's space programme?",
+     "a": "Vikram Sarabhai",
+     "wrong": [
+      "Satish Dhawan",
+      "A. P. J. Abdul Kalam",
+      "Homi Bhabha"
+     ],
+     "level": 2,
+     "why": "ISRO was founded in 1969."
+    },
+    {
+     "q": "Who is called the father of India's nuclear programme?",
+     "a": "Homi J. Bhabha",
+     "wrong": [
+      "Vikram Sarabhai",
+      "Raja Ramanna",
+      "C. V. Raman"
+     ],
+     "level": 2,
+     "why": "BARC is named after him."
+    },
+    {
+     "q": "Which Indian physicist won the Nobel Prize in 1930 for light scattering?",
+     "a": "C. V. Raman",
+     "wrong": [
+      "Satyendra Nath Bose",
+      "Meghnad Saha",
+      "J. C. Bose"
+     ],
+     "level": 2,
+     "why": "National Science Day marks his discovery."
+    },
+    {
+     "q": "Which particles are named after the Indian physicist Satyendra Nath Bose?",
+     "a": "Bosons",
+     "wrong": [
+      "Fermions",
+      "Quarks",
+      "Muons"
+     ],
+     "level": 2,
+     "why": "He worked with Einstein."
+    },
+    {
+     "q": "Which self-taught Indian mathematician worked with Hardy at Cambridge?",
+     "a": "Srinivasa Ramanujan",
+     "wrong": [
+      "Aryabhata",
+      "C. R. Rao",
+      "Harish-Chandra"
+     ],
+     "level": 2,
+     "why": "'The Man Who Knew Infinity' is about him."
+    },
+    {
+     "q": "What is the number 1729 called, after Ramanujan?",
+     "a": "The Hardy–Ramanujan number",
+     "wrong": [
+      "The Kaprekar constant",
+      "The Ramanujan prime",
+      "The Bose number"
+     ],
+     "level": 2,
+     "why": "It is the smallest sum of two cubes in two ways."
+    },
+    {
+     "q": "Which Indian-born scientist won the 2009 Nobel Prize in Chemistry?",
+     "a": "Venkatraman Ramakrishnan",
+     "wrong": [
+      "Har Gobind Khorana",
+      "Subrahmanyan Chandrasekhar",
+      "Amartya Sen"
+     ],
+     "level": 2,
+     "why": "He studied ribosomes."
+    },
+    {
+     "q": "Which Indian economist won the 1998 Nobel Prize in Economics?",
+     "a": "Amartya Sen",
+     "wrong": [
+      "Abhijit Banerjee",
+      "Jagdish Bhagwati",
+      "Raghuram Rajan"
+     ],
+     "level": 2,
+     "why": "He studied famines and welfare."
+    },
+    {
+     "q": "Which Indian-born economist shared the 2019 Nobel Prize with Esther Duflo?",
+     "a": "Abhijit Banerjee",
+     "wrong": [
+      "Amartya Sen",
+      "Raghuram Rajan",
+      "Kaushik Basu"
+     ],
+     "level": 2,
+     "why": "They studied ways to fight poverty."
+    },
+    {
+     "q": "Which Indian activist shared the 2014 Nobel Peace Prize?",
+     "a": "Kailash Satyarthi",
+     "wrong": [
+      "Medha Patkar",
+      "Anna Hazare",
+      "Baba Amte"
+     ],
+     "level": 2,
+     "why": "He campaigns against child labour."
+    },
+    {
+     "q": "Which nun won the 1979 Nobel Peace Prize for her work in Kolkata?",
+     "a": "Mother Teresa",
+     "wrong": [
+      "Sister Nirmala",
+      "Sister Nivedita",
+      "Annie Besant"
+     ],
+     "level": 2,
+     "why": "She founded the Missionaries of Charity."
+    },
+    {
+     "q": "Which award is India's highest civilian honour?",
+     "a": "Bharat Ratna",
+     "wrong": [
+      "Padma Vibhushan",
+      "Param Vir Chakra",
+      "Padma Shri"
+     ],
+     "level": 2,
+     "why": "It was first given in 1954."
+    },
+    {
+     "q": "Which medal is India's highest military award for bravery?",
+     "a": "Param Vir Chakra",
+     "wrong": [
+      "Ashoka Chakra",
+      "Maha Vir Chakra",
+      "Vir Chakra"
+     ],
+     "level": 2,
+     "why": "Few soldiers have received it."
+    },
+    {
+     "q": "Which research centre at Trombay leads India's nuclear work?",
+     "a": "Bhabha Atomic Research Centre",
+     "wrong": [
+      "Tata Institute of Fundamental Research",
+      "IIT Bombay",
+      "Indian Institute of Science"
+     ],
+     "level": 2,
+     "why": "It was founded in 1954."
+    },
+    {
+     "q": "Which was the first Indian Institute of Technology, founded in 1951?",
+     "a": "IIT Kharagpur",
+     "wrong": [
+      "IIT Bombay",
+      "IIT Delhi",
+      "IIT Madras"
+     ],
+     "level": 2,
+     "why": "It started in a former detention camp."
+    },
+    {
+     "q": "Which famous milk co-operative in Gujarat brought India's White Revolution?",
+     "a": "Amul",
+     "wrong": [
+      "Mother Dairy",
+      "Nandini",
+      "Aavin"
+     ],
+     "level": 2,
+     "why": "Verghese Kurien led it."
+    },
+    {
+     "q": "Who is called the father of India's White Revolution?",
+     "a": "Verghese Kurien",
+     "wrong": [
+      "M. S. Swaminathan",
+      "Norman Borlaug",
+      "Tribhuvandas Patel"
+     ],
+     "level": 2,
+     "why": "India became the world's largest milk producer."
+    },
+    {
+     "q": "Which Indian city is known as the 'City of Lakes' in Rajasthan?",
+     "a": "Udaipur",
+     "wrong": [
+      "Jaipur",
+      "Jodhpur",
+      "Bikaner"
+     ],
+     "level": 2,
+     "why": "Lake Pichola is its best known."
+    },
+    {
+     "q": "Which hill station was the British summer capital of India?",
+     "a": "Shimla",
+     "wrong": [
+      "Darjeeling",
+      "Ooty",
+      "Mussoorie"
+     ],
+     "level": 2,
+     "why": "The government moved there each summer."
+    },
+    {
+     "q": "Which city replaced Calcutta as the capital of British India in 1911?",
+     "a": "Delhi",
+     "wrong": [
+      "Bombay",
+      "Shimla",
+      "Allahabad"
+     ],
+     "level": 2,
+     "why": "New Delhi was inaugurated in 1931."
+    },
+    {
+     "q": "Which ancient university in Bihar drew students from across Asia?",
+     "a": "Nalanda",
+     "wrong": [
+      "Takshashila",
+      "Vikramashila",
+      "Vallabhi"
+     ],
+     "level": 3,
+     "why": "It was destroyed around 1193."
+    },
+    {
+     "q": "Which Indian mathematician first gave pi as 3.1416?",
+     "a": "Aryabhata",
+     "wrong": [
+      "Brahmagupta",
+      "Bhaskara II",
+      "Madhava"
+     ],
+     "level": 3,
+     "why": "He lived in the 5th century."
+    },
+    {
+     "q": "Which Kerala school of mathematics found infinite series for pi before Europe?",
+     "a": "Madhava's Kerala school",
+     "wrong": [
+      "Aryabhata's school",
+      "Ujjain school",
+      "Nalanda school"
+     ],
+     "level": 3,
+     "why": "Madhava lived in the 1300s."
+    },
+    {
+     "q": "Which Indian satellite was the country's first, launched in 1975?",
+     "a": "Aryabhata",
+     "wrong": [
+      "Bhaskara",
+      "Rohini",
+      "INSAT-1A"
+     ],
+     "level": 3,
+     "why": "It was launched by the Soviet Union."
+    },
+    {
+     "q": "Which test in 1974 was India's first nuclear explosion?",
+     "a": "Smiling Buddha",
+     "wrong": [
+      "Operation Shakti",
+      "Pokhran-II",
+      "Operation Meghdoot"
+     ],
+     "level": 3,
+     "why": "It was held at Pokhran."
     }
    ]
   }
