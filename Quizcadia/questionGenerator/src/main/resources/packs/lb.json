@@ -3,7 +3,8 @@
  "country": "LB",
  "topics": [
   {
-   "name": "Lebanon: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -40,17 +41,6 @@
     },
     {
      "level": 1,
-     "q": "Which tree is on Lebanon's flag?",
-     "a": "Cedar",
-     "wrong": [
-      "Olive",
-      "Palm",
-      "Oak"
-     ],
-     "why": "Cedars of Lebanon are mentioned in the Bible."
-    },
-    {
-     "level": 1,
      "q": "Which great explosion devastated Beirut's port in 2020?",
      "a": "Beirut port explosion",
      "wrong": [
@@ -59,28 +49,6 @@
       "Tripoli explosion"
      ],
      "why": "It was caused by stored ammonium nitrate."
-    },
-    {
-     "level": 1,
-     "q": "Which Phoenician city gave its name to the Bible ('biblion')?",
-     "a": "Byblos",
-     "wrong": [
-      "Tyre",
-      "Sidon",
-      "Baalbek"
-     ],
-     "why": "It is one of the oldest continuously lived-in cities."
-    },
-    {
-     "level": 1,
-     "q": "Which Lebanese-American poet wrote 'The Prophet'?",
-     "a": "Khalil Gibran",
-     "wrong": [
-      "Amin Maalouf",
-      "Nizar Qabbani",
-      "Mikhail Naimy"
-     ],
-     "why": "It was published in 1923."
     },
     {
      "level": 2,
@@ -106,28 +74,6 @@
     },
     {
      "level": 2,
-     "q": "Which Prime Minister was killed by a huge car bomb in 2005?",
-     "a": "Rafic Hariri",
-     "wrong": [
-      "Saad Hariri",
-      "Rashid Karami",
-      "Riad Al Solh"
-     ],
-     "why": "It led to the Cedar Revolution."
-    },
-    {
-     "level": 2,
-     "q": "What was Lebanon's capital called in Roman times?",
-     "a": "Berytus",
-     "wrong": [
-      "Heliopolis",
-      "Byblos",
-      "Sidon"
-     ],
-     "why": "It had a famous law school."
-    },
-    {
-     "level": 2,
      "q": "Which ancient purple dye made Tyre rich?",
      "a": "Tyrian purple",
      "wrong": [
@@ -150,17 +96,6 @@
     },
     {
      "level": 3,
-     "q": "Which French-Lebanese author wrote 'Leo Africanus' and won the Prix Goncourt?",
-     "a": "Amin Maalouf",
-     "wrong": [
-      "Khalil Gibran",
-      "Elias Khoury",
-      "Etel Adnan"
-     ],
-     "why": "He joined the Académie française in 2011."
-    },
-    {
-     "level": 3,
      "q": "Which agreement of 1943 shared power among religious groups?",
      "a": "National Pact",
      "wrong": [
@@ -169,12 +104,46 @@
       "Sykes–Picot"
      ],
      "why": "It was unwritten."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient Roman temples stand in the Beqaa Valley?",
+     "a": "Baalbek",
+     "wrong": [
+      "Palmyra",
+      "Jerash",
+      "Byblos"
+     ],
+     "why": "Its Temple of Bacchus is very well preserved."
     }
    ]
   },
   {
-   "name": "Lebanon: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which Phoenician city gave its name to the Bible ('biblion')?",
+     "a": "Byblos",
+     "wrong": [
+      "Tyre",
+      "Sidon",
+      "Baalbek"
+     ],
+     "why": "It is one of the oldest continuously lived-in cities."
+    },
+    {
+     "level": 2,
+     "q": "What was Lebanon's capital called in Roman times?",
+     "a": "Berytus",
+     "wrong": [
+      "Heliopolis",
+      "Byblos",
+      "Sidon"
+     ],
+     "why": "It had a famous law school."
+    },
     {
      "level": 1,
      "q": "What is the capital of Lebanon?",
@@ -188,50 +157,6 @@
     },
     {
      "level": 1,
-     "q": "Which parsley and bulgur salad is a Lebanese classic?",
-     "a": "Tabbouleh",
-     "wrong": [
-      "Fattoush",
-      "Hummus",
-      "Baba ghanoush"
-     ],
-     "why": "It is mostly parsley."
-    },
-    {
-     "level": 1,
-     "q": "What is Lebanon's currency?",
-     "a": "Lebanese pound",
-     "wrong": [
-      "Dinar",
-      "Riyal",
-      "Euro"
-     ],
-     "why": "It is also called the lira."
-    },
-    {
-     "level": 1,
-     "q": "Which ancient Roman temples stand in the Beqaa Valley?",
-     "a": "Baalbek",
-     "wrong": [
-      "Palmyra",
-      "Jerash",
-      "Byblos"
-     ],
-     "why": "Its Temple of Bacchus is very well preserved."
-    },
-    {
-     "level": 1,
-     "q": "Which singer is called the 'Soul of Lebanon'?",
-     "a": "Fairuz",
-     "wrong": [
-      "Umm Kulthum",
-      "Nancy Ajram",
-      "Majida El Roumi"
-     ],
-     "why": "She has sung since the 1950s."
-    },
-    {
-     "level": 1,
      "q": "Which sea lies along Lebanon's coast?",
      "a": "Mediterranean Sea",
      "wrong": [
@@ -240,17 +165,6 @@
       "Black Sea"
      ],
      "why": "The coast is about 225 km long."
-    },
-    {
-     "level": 1,
-     "q": "Which minced meat and bulgur dish is the national dish?",
-     "a": "Kibbeh",
-     "wrong": [
-      "Shawarma",
-      "Falafel",
-      "Mujaddara"
-     ],
-     "why": "It can be fried, baked or raw."
     },
     {
      "level": 2,
@@ -286,15 +200,32 @@
      "why": "It is famous for its wineries."
     },
     {
-     "level": 2,
-     "q": "Which bread salad with crispy pita and sumac is popular?",
-     "a": "Fattoush",
+     "level": 3,
+     "q": "What is Lebanon's highest mountain?",
+     "a": "Qurnat as Sawda'",
      "wrong": [
-      "Tabbouleh",
-      "Labneh",
-      "Manakish"
+      "Mount Hermon",
+      "Mount Lebanon",
+      "Mount Sannine"
      ],
-     "why": "It uses leftover bread."
+     "why": "It is 3,088 m high."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which singer is called the 'Soul of Lebanon'?",
+     "a": "Fairuz",
+     "wrong": [
+      "Umm Kulthum",
+      "Nancy Ajram",
+      "Majida El Roumi"
+     ],
+     "why": "She has sung since the 1950s."
     },
     {
      "level": 2,
@@ -306,7 +237,13 @@
       "Fairuz"
      ],
      "why": "She is one of the Arab world's best-selling singers."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
     {
      "level": 3,
      "q": "Which Lebanese director's 'Capernaum' was Oscar-nominated?",
@@ -317,6 +254,112 @@
       "Maroun Bagdadi"
      ],
      "why": "It won the Jury Prize at Cannes in 2018."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Lebanese-American poet wrote 'The Prophet'?",
+     "a": "Khalil Gibran",
+     "wrong": [
+      "Amin Maalouf",
+      "Nizar Qabbani",
+      "Mikhail Naimy"
+     ],
+     "why": "It was published in 1923."
+    },
+    {
+     "level": 3,
+     "q": "Which French-Lebanese author wrote 'Leo Africanus' and won the Prix Goncourt?",
+     "a": "Amin Maalouf",
+     "wrong": [
+      "Khalil Gibran",
+      "Elias Khoury",
+      "Etel Adnan"
+     ],
+     "why": "He joined the Académie française in 2011."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Prime Minister was killed by a huge car bomb in 2005?",
+     "a": "Rafic Hariri",
+     "wrong": [
+      "Saad Hariri",
+      "Rashid Karami",
+      "Riad Al Solh"
+     ],
+     "why": "It led to the Cedar Revolution."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which tree is on Lebanon's flag?",
+     "a": "Cedar",
+     "wrong": [
+      "Olive",
+      "Palm",
+      "Oak"
+     ],
+     "why": "Cedars of Lebanon are mentioned in the Bible."
+    },
+    {
+     "level": 1,
+     "q": "Which parsley and bulgur salad is a Lebanese classic?",
+     "a": "Tabbouleh",
+     "wrong": [
+      "Fattoush",
+      "Hummus",
+      "Baba ghanoush"
+     ],
+     "why": "It is mostly parsley."
+    },
+    {
+     "level": 1,
+     "q": "What is Lebanon's currency?",
+     "a": "Lebanese pound",
+     "wrong": [
+      "Dinar",
+      "Riyal",
+      "Euro"
+     ],
+     "why": "It is also called the lira."
+    },
+    {
+     "level": 1,
+     "q": "Which minced meat and bulgur dish is the national dish?",
+     "a": "Kibbeh",
+     "wrong": [
+      "Shawarma",
+      "Falafel",
+      "Mujaddara"
+     ],
+     "why": "It can be fried, baked or raw."
+    },
+    {
+     "level": 2,
+     "q": "Which bread salad with crispy pita and sumac is popular?",
+     "a": "Fattoush",
+     "wrong": [
+      "Tabbouleh",
+      "Labneh",
+      "Manakish"
+     ],
+     "why": "It uses leftover bread."
     },
     {
      "level": 3,
@@ -328,17 +371,6 @@
       "Khubz"
      ],
      "why": "It is topped with za'atar."
-    },
-    {
-     "level": 3,
-     "q": "What is Lebanon's highest mountain?",
-     "a": "Qurnat as Sawda'",
-     "wrong": [
-      "Mount Hermon",
-      "Mount Lebanon",
-      "Mount Sannine"
-     ],
-     "why": "It is 3,088 m high."
     }
    ]
   }

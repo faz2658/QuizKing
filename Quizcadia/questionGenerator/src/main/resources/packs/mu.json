@@ -3,30 +3,9 @@
  "country": "MU",
  "topics": [
   {
-   "name": "Mauritius: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Mauritius?",
-     "a": "Port Louis",
-     "wrong": [
-      "Curepipe",
-      "Rose Hill",
-      "Mahébourg"
-     ],
-     "why": "It is a busy port."
-    },
-    {
-     "level": 1,
-     "q": "Which extinct bird lived only on Mauritius?",
-     "a": "Dodo",
-     "wrong": [
-      "Moa",
-      "Great auk",
-      "Passenger pigeon"
-     ],
-     "why": "It died out in the late 1600s."
-    },
     {
      "level": 1,
      "q": "From which country did Mauritius gain independence in 1968?",
@@ -40,17 +19,6 @@
     },
     {
      "level": 1,
-     "q": "What is Mauritius's currency?",
-     "a": "Mauritian rupee",
-     "wrong": [
-      "Indian rupee",
-      "Euro",
-      "Seychellois rupee"
-     ],
-     "why": "Its code is MUR."
-    },
-    {
-     "level": 1,
      "q": "Which three European powers ruled Mauritius?",
      "a": "Dutch, French and British",
      "wrong": [
@@ -59,17 +27,6 @@
       "Portuguese, Dutch and Danish"
      ],
      "why": "It is named after Maurice of Nassau."
-    },
-    {
-     "level": 1,
-     "q": "Which ocean is Mauritius in?",
-     "a": "Indian Ocean",
-     "wrong": [
-      "Atlantic Ocean",
-      "Pacific Ocean",
-      "Southern Ocean"
-     ],
-     "why": "It lies east of Madagascar."
     },
     {
      "level": 1,
@@ -95,17 +52,6 @@
     },
     {
      "level": 2,
-     "q": "Which immigration depot for indentured workers is a UNESCO site?",
-     "a": "Aapravasi Ghat",
-     "wrong": [
-      "Le Morne",
-      "Fort Adelaide",
-      "Champ de Mars"
-     ],
-     "why": "Indian workers arrived there from 1834."
-    },
-    {
-     "level": 2,
      "q": "Which mountain was a refuge for runaway slaves?",
      "a": "Le Morne Brabant",
      "wrong": [
@@ -127,39 +73,6 @@
      "why": "There are only a few left."
     },
     {
-     "level": 2,
-     "q": "Which island is an autonomous part of Mauritius?",
-     "a": "Rodrigues",
-     "wrong": [
-      "Réunion",
-      "Chagos",
-      "Agaléga"
-     ],
-     "why": "It is about 560 km to the east."
-    },
-    {
-     "level": 3,
-     "q": "Who became Prime Minister of Mauritius again in 2024?",
-     "a": "Navin Ramgoolam",
-     "wrong": [
-      "Pravind Jugnauth",
-      "Anerood Jugnauth",
-      "Paul Bérenger"
-     ],
-     "why": "His alliance won all 60 mainland seats."
-    },
-    {
-     "level": 3,
-     "q": "Which French governor developed Port Louis in the 1730s?",
-     "a": "Bertrand-François Mahé de La Bourdonnais",
-     "wrong": [
-      "Pierre Poivre",
-      "Charles Decaen",
-      "Robert Surcouf"
-     ],
-     "why": "A statue of him stands in the city."
-    },
-    {
      "level": 3,
      "q": "Which 1810 battle was Napoleon's only naval win on the Arc de Triomphe?",
      "a": "Battle of Grand Port",
@@ -173,8 +86,53 @@
    ]
   },
   {
-   "name": "Mauritius: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Mauritius?",
+     "a": "Port Louis",
+     "wrong": [
+      "Curepipe",
+      "Rose Hill",
+      "Mahébourg"
+     ],
+     "why": "It is a busy port."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is Mauritius in?",
+     "a": "Indian Ocean",
+     "wrong": [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Southern Ocean"
+     ],
+     "why": "It lies east of Madagascar."
+    },
+    {
+     "level": 2,
+     "q": "Which immigration depot for indentured workers is a UNESCO site?",
+     "a": "Aapravasi Ghat",
+     "wrong": [
+      "Le Morne",
+      "Fort Adelaide",
+      "Champ de Mars"
+     ],
+     "why": "Indian workers arrived there from 1834."
+    },
+    {
+     "level": 2,
+     "q": "Which island is an autonomous part of Mauritius?",
+     "a": "Rodrigues",
+     "wrong": [
+      "Réunion",
+      "Chagos",
+      "Agaléga"
+     ],
+     "why": "It is about 560 km to the east."
+    },
     {
      "level": 1,
      "q": "Which colourful sand dunes are in Chamarel?",
@@ -188,28 +146,6 @@
     },
     {
      "level": 1,
-     "q": "Which music and dance tradition came from African slaves?",
-     "a": "Sega",
-     "wrong": [
-      "Calypso",
-      "Reggae",
-      "Maloya"
-     ],
-     "why": "It is on UNESCO's list."
-    },
-    {
-     "level": 1,
-     "q": "Which botanical garden has giant water lilies?",
-     "a": "Pamplemousses (SSR Botanic Garden)",
-     "wrong": [
-      "Kew Gardens",
-      "Singapore Botanic Gardens",
-      "Kirstenbosch"
-     ],
-     "why": "It is one of the oldest in the Southern Hemisphere."
-    },
-    {
-     "level": 1,
      "q": "What causes the 'underwater waterfall' illusion off Le Morne?",
      "a": "Sand and silt flowing down an underwater slope",
      "wrong": [
@@ -218,39 +154,6 @@
       "A coral cliff"
      ],
      "why": "It is best seen from a seaplane."
-    },
-    {
-     "level": 1,
-     "q": "Which language do most Mauritians speak at home?",
-     "a": "Mauritian Creole",
-     "wrong": [
-      "French",
-      "English",
-      "Hindi"
-     ],
-     "why": "English is official in parliament."
-    },
-    {
-     "level": 1,
-     "q": "Which crop has long been the main crop of Mauritius?",
-     "a": "Sugar cane",
-     "wrong": [
-      "Tea",
-      "Coffee",
-      "Vanilla"
-     ],
-     "why": "Much land is still under cane."
-    },
-    {
-     "level": 1,
-     "q": "Which flatbread snack filled with split peas is sold on the street?",
-     "a": "Dholl puri",
-     "wrong": [
-      "Roti canai",
-      "Naan",
-      "Chapati"
-     ],
-     "why": "It is a favourite lunch."
     },
     {
      "level": 2,
@@ -297,6 +200,23 @@
      "why": "The pink pigeon was saved there."
     },
     {
+     "level": 3,
+     "q": "Which mountain shaped like a thumb overlooks Port Louis?",
+     "a": "Le Pouce",
+     "wrong": [
+      "Pieter Both",
+      "Le Morne",
+      "Corps de Garde"
+     ],
+     "why": "Its name means 'the thumb'."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
      "level": 2,
      "q": "Which horse-racing course in Port Louis is one of the oldest?",
      "a": "Champ de Mars",
@@ -306,6 +226,68 @@
       "Longchamp"
      ],
      "why": "It opened in 1812."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which music and dance tradition came from African slaves?",
+     "a": "Sega",
+     "wrong": [
+      "Calypso",
+      "Reggae",
+      "Maloya"
+     ],
+     "why": "It is on UNESCO's list."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Who became Prime Minister of Mauritius again in 2024?",
+     "a": "Navin Ramgoolam",
+     "wrong": [
+      "Pravind Jugnauth",
+      "Anerood Jugnauth",
+      "Paul Bérenger"
+     ],
+     "why": "His alliance won all 60 mainland seats."
+    },
+    {
+     "level": 3,
+     "q": "Which French governor developed Port Louis in the 1730s?",
+     "a": "Bertrand-François Mahé de La Bourdonnais",
+     "wrong": [
+      "Pierre Poivre",
+      "Charles Decaen",
+      "Robert Surcouf"
+     ],
+     "why": "A statue of him stands in the city."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which extinct bird lived only on Mauritius?",
+     "a": "Dodo",
+     "wrong": [
+      "Moa",
+      "Great auk",
+      "Passenger pigeon"
+     ],
+     "why": "It died out in the late 1600s."
     },
     {
      "level": 3,
@@ -328,17 +310,67 @@
       "Seychelles kestrel"
      ],
      "why": "Only four were left in 1974."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Mauritius's currency?",
+     "a": "Mauritian rupee",
+     "wrong": [
+      "Indian rupee",
+      "Euro",
+      "Seychellois rupee"
+     ],
+     "why": "Its code is MUR."
     },
     {
-     "level": 3,
-     "q": "Which mountain shaped like a thumb overlooks Port Louis?",
-     "a": "Le Pouce",
+     "level": 1,
+     "q": "Which botanical garden has giant water lilies?",
+     "a": "Pamplemousses (SSR Botanic Garden)",
      "wrong": [
-      "Pieter Both",
-      "Le Morne",
-      "Corps de Garde"
+      "Kew Gardens",
+      "Singapore Botanic Gardens",
+      "Kirstenbosch"
      ],
-     "why": "Its name means 'the thumb'."
+     "why": "It is one of the oldest in the Southern Hemisphere."
+    },
+    {
+     "level": 1,
+     "q": "Which language do most Mauritians speak at home?",
+     "a": "Mauritian Creole",
+     "wrong": [
+      "French",
+      "English",
+      "Hindi"
+     ],
+     "why": "English is official in parliament."
+    },
+    {
+     "level": 1,
+     "q": "Which crop has long been the main crop of Mauritius?",
+     "a": "Sugar cane",
+     "wrong": [
+      "Tea",
+      "Coffee",
+      "Vanilla"
+     ],
+     "why": "Much land is still under cane."
+    },
+    {
+     "level": 1,
+     "q": "Which flatbread snack filled with split peas is sold on the street?",
+     "a": "Dholl puri",
+     "wrong": [
+      "Roti canai",
+      "Naan",
+      "Chapati"
+     ],
+     "why": "It is a favourite lunch."
     }
    ]
   }

@@ -3,7 +3,8 @@
  "country": "UA",
  "topics": [
   {
-   "name": "Ukraine: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -50,6 +51,190 @@
      "why": "Millions of Ukrainians died."
     },
     {
+     "level": 2,
+     "q": "What were the free warrior communities of the Dnieper called?",
+     "a": "Cossacks",
+     "wrong": [
+      "Hussars",
+      "Streltsy",
+      "Janissaries"
+     ],
+     "why": "The Zaporozhian Sich was their stronghold."
+    },
+    {
+     "level": 2,
+     "q": "Which Cossack leader led a 1648 uprising against Poland?",
+     "a": "Bohdan Khmelnytsky",
+     "wrong": [
+      "Ivan Mazepa",
+      "Petro Sahaidachny",
+      "Ivan Sirko"
+     ],
+     "why": "His statue stands in Kyiv."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Russia launch its full-scale invasion of Ukraine?",
+     "a": "2022",
+     "wrong": [
+      "2014",
+      "2020",
+      "2023"
+     ],
+     "why": "It began on 24 February."
+    },
+    {
+     "level": 1,
+     "q": "Which beetroot soup was listed by UNESCO as Ukrainian heritage in 2022?",
+     "a": "Borscht",
+     "wrong": [
+      "Solyanka",
+      "Okroshka",
+      "Rassolnik"
+     ],
+     "why": "It is often served with sour cream."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Ukraine?",
+     "a": "Kyiv",
+     "wrong": [
+      "Lviv",
+      "Kharkiv",
+      "Odesa"
+     ],
+     "why": "It stands on the Dnieper River."
+    },
+    {
+     "level": 1,
+     "q": "Which Black Sea port is famous for its Potemkin Stairs?",
+     "a": "Odesa",
+     "wrong": [
+      "Mykolaiv",
+      "Kherson",
+      "Mariupol"
+     ],
+     "why": "A 1925 film made them famous."
+    },
+    {
+     "level": 1,
+     "q": "Which western city has a historic centre listed by UNESCO?",
+     "a": "Lviv",
+     "wrong": [
+      "Kharkiv",
+      "Dnipro",
+      "Zaporizhzhia"
+     ],
+     "why": "It is famous for its coffee houses."
+    },
+    {
+     "level": 2,
+     "q": "Which river runs through Kyiv?",
+     "a": "Dnieper",
+     "wrong": [
+      "Dniester",
+      "Danube",
+      "Don"
+     ],
+     "why": "It is one of Europe's longest rivers."
+    },
+    {
+     "level": 2,
+     "q": "Which mountains rise in western Ukraine?",
+     "a": "Carpathian Mountains",
+     "wrong": [
+      "Ural Mountains",
+      "Caucasus",
+      "Alps"
+     ],
+     "why": "Hoverla is the highest peak."
+    },
+    {
+     "level": 3,
+     "q": "Which cave monastery in Kyiv is a UNESCO site?",
+     "a": "Kyiv Pechersk Lavra",
+     "wrong": [
+      "Pochaiv Lavra",
+      "Sviatohirsk Lavra",
+      "Mezhyhirya"
+     ],
+     "why": "It was founded in 1051."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Ukrainian brothers were both world heavyweight boxing champions?",
+     "a": "Vitali and Wladimir Klitschko",
+     "wrong": [
+      "Oleksandr Usyk and Vasyl Lomachenko",
+      "Andriy Shevchenko and Serhiy Rebrov",
+      "Serhiy and Vitaliy Bubka"
+     ],
+     "why": "Vitali became mayor of Kyiv."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which band won Eurovision 2022 for Ukraine?",
+     "a": "Kalush Orchestra",
+     "wrong": [
+      "Go_A",
+      "Jamala",
+      "Verka Serduchka"
+     ],
+     "why": "They sang 'Stefania'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which national poet wrote 'Kobzar'?",
+     "a": "Taras Shevchenko",
+     "wrong": [
+      "Ivan Franko",
+      "Lesya Ukrainka",
+      "Hryhorii Skovoroda"
+     ],
+     "why": "He was born a serf in 1814."
+    },
+    {
+     "level": 3,
+     "q": "Which writer used the pen name Lesya Ukrainka?",
+     "a": "Larysa Kosach",
+     "wrong": [
+      "Marko Vovchok",
+      "Olha Kobylianska",
+      "Lina Kostenko"
+     ],
+     "why": "She wrote 'The Forest Song'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
      "level": 1,
      "q": "Which 2004 protests overturned a disputed presidential election?",
      "a": "Orange Revolution",
@@ -81,40 +266,30 @@
       "Viktor Yanukovych"
      ],
      "why": "He had been a comedian and actor."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
     {
      "level": 2,
-     "q": "Which national poet wrote 'Kobzar'?",
-     "a": "Taras Shevchenko",
+     "q": "Which embroidered shirt is a symbol of Ukrainian identity?",
+     "a": "Vyshyvanka",
      "wrong": [
-      "Ivan Franko",
-      "Lesya Ukrainka",
-      "Hryhorii Skovoroda"
+      "Rushnyk",
+      "Kozhukh",
+      "Sarafan"
      ],
-     "why": "He was born a serf in 1814."
-    },
-    {
-     "level": 2,
-     "q": "What were the free warrior communities of the Dnieper called?",
-     "a": "Cossacks",
-     "wrong": [
-      "Hussars",
-      "Streltsy",
-      "Janissaries"
-     ],
-     "why": "The Zaporozhian Sich was their stronghold."
-    },
-    {
-     "level": 2,
-     "q": "Which Cossack leader led a 1648 uprising against Poland?",
-     "a": "Bohdan Khmelnytsky",
-     "wrong": [
-      "Ivan Mazepa",
-      "Petro Sahaidachny",
-      "Ivan Sirko"
-     ],
-     "why": "His statue stands in Kyiv."
-    },
+     "why": "Vyshyvanka Day is in May."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
     {
      "level": 2,
      "q": "Which prince brought Christianity to Kievan Rus' in 988?",
@@ -125,17 +300,6 @@
       "Sviatoslav"
      ],
      "why": "He was baptised in Crimea."
-    },
-    {
-     "level": 2,
-     "q": "In which year did Russia launch its full-scale invasion of Ukraine?",
-     "a": "2022",
-     "wrong": [
-      "2014",
-      "2020",
-      "2023"
-     ],
-     "why": "It began on 24 February."
     },
     {
      "level": 3,
@@ -150,17 +314,6 @@
     },
     {
      "level": 3,
-     "q": "Which writer used the pen name Lesya Ukrainka?",
-     "a": "Larysa Kosach",
-     "wrong": [
-      "Marko Vovchok",
-      "Olha Kobylianska",
-      "Lina Kostenko"
-     ],
-     "why": "She wrote 'The Forest Song'."
-    },
-    {
-     "level": 3,
      "q": "Which Ukrainian-born engineer led the programme that launched Sputnik?",
      "a": "Serhiy Korolyov",
      "wrong": [
@@ -169,33 +322,6 @@
       "Valentin Glushko"
      ],
      "why": "He was born in Zhytomyr."
-    }
-   ]
-  },
-  {
-   "name": "Ukraine: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Ukraine?",
-     "a": "Kyiv",
-     "wrong": [
-      "Lviv",
-      "Kharkiv",
-      "Odesa"
-     ],
-     "why": "It stands on the Dnieper River."
-    },
-    {
-     "level": 1,
-     "q": "Which beetroot soup was listed by UNESCO as Ukrainian heritage in 2022?",
-     "a": "Borscht",
-     "wrong": [
-      "Solyanka",
-      "Okroshka",
-      "Rassolnik"
-     ],
-     "why": "It is often served with sour cream."
     },
     {
      "level": 1,
@@ -207,17 +333,6 @@
       "Blue and white"
      ],
      "why": "They stand for sky and wheat fields."
-    },
-    {
-     "level": 1,
-     "q": "Which Black Sea port is famous for its Potemkin Stairs?",
-     "a": "Odesa",
-     "wrong": [
-      "Mykolaiv",
-      "Kherson",
-      "Mariupol"
-     ],
-     "why": "A 1925 film made them famous."
     },
     {
      "level": 1,
@@ -242,28 +357,6 @@
      "why": "Its black soil is very fertile."
     },
     {
-     "level": 1,
-     "q": "Which western city has a historic centre listed by UNESCO?",
-     "a": "Lviv",
-     "wrong": [
-      "Kharkiv",
-      "Dnipro",
-      "Zaporizhzhia"
-     ],
-     "why": "It is famous for its coffee houses."
-    },
-    {
-     "level": 2,
-     "q": "Which river runs through Kyiv?",
-     "a": "Dnieper",
-     "wrong": [
-      "Dniester",
-      "Danube",
-      "Don"
-     ],
-     "why": "It is one of Europe's longest rivers."
-    },
-    {
      "level": 2,
      "q": "What are Ukrainian dumplings called?",
      "a": "Varenyky",
@@ -286,50 +379,6 @@
      "why": "Patterns are drawn with wax before dyeing."
     },
     {
-     "level": 2,
-     "q": "Which embroidered shirt is a symbol of Ukrainian identity?",
-     "a": "Vyshyvanka",
-     "wrong": [
-      "Rushnyk",
-      "Kozhukh",
-      "Sarafan"
-     ],
-     "why": "Vyshyvanka Day is in May."
-    },
-    {
-     "level": 2,
-     "q": "Which band won Eurovision 2022 for Ukraine?",
-     "a": "Kalush Orchestra",
-     "wrong": [
-      "Go_A",
-      "Jamala",
-      "Verka Serduchka"
-     ],
-     "why": "They sang 'Stefania'."
-    },
-    {
-     "level": 2,
-     "q": "Which mountains rise in western Ukraine?",
-     "a": "Carpathian Mountains",
-     "wrong": [
-      "Ural Mountains",
-      "Caucasus",
-      "Alps"
-     ],
-     "why": "Hoverla is the highest peak."
-    },
-    {
-     "level": 3,
-     "q": "Which Ukrainian brothers were both world heavyweight boxing champions?",
-     "a": "Vitali and Wladimir Klitschko",
-     "wrong": [
-      "Oleksandr Usyk and Vasyl Lomachenko",
-      "Andriy Shevchenko and Serhiy Rebrov",
-      "Serhiy and Vitaliy Bubka"
-     ],
-     "why": "Vitali became mayor of Kyiv."
-    },
-    {
      "level": 3,
      "q": "Which Ukrainian pole vaulter broke the world record 35 times?",
      "a": "Serhiy Bubka",
@@ -339,17 +388,6 @@
       "Renaud Lavillenie"
      ],
      "why": "He was the first to clear 6 metres."
-    },
-    {
-     "level": 3,
-     "q": "Which cave monastery in Kyiv is a UNESCO site?",
-     "a": "Kyiv Pechersk Lavra",
-     "wrong": [
-      "Pochaiv Lavra",
-      "Sviatohirsk Lavra",
-      "Mezhyhirya"
-     ],
-     "why": "It was founded in 1051."
     }
    ]
   }

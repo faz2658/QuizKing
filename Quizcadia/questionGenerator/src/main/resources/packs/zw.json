@@ -3,19 +3,9 @@
  "country": "ZW",
  "topics": [
   {
-   "name": "Zimbabwe: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Zimbabwe?",
-     "a": "Harare",
-     "wrong": [
-      "Bulawayo",
-      "Mutare",
-      "Gweru"
-     ],
-     "why": "It was called Salisbury."
-    },
     {
      "level": 1,
      "q": "What was Zimbabwe called before 1980?",
@@ -48,28 +38,6 @@
       "Joshua Nkomo"
      ],
      "why": "He was removed in 2017."
-    },
-    {
-     "level": 1,
-     "q": "Who has been President of Zimbabwe since 2017?",
-     "a": "Emmerson Mnangagwa",
-     "wrong": [
-      "Robert Mugabe",
-      "Nelson Chamisa",
-      "Morgan Tsvangirai"
-     ],
-     "why": "He is called 'the Crocodile'."
-    },
-    {
-     "level": 1,
-     "q": "Which waterfall does Zimbabwe share with Zambia?",
-     "a": "Victoria Falls",
-     "wrong": [
-      "Kalandula Falls",
-      "Tugela Falls",
-      "Murchison Falls"
-     ],
-     "why": "It is one of the Seven Natural Wonders."
     },
     {
      "level": 1,
@@ -117,17 +85,6 @@
     },
     {
      "level": 2,
-     "q": "Which opposition leader became Prime Minister in a 2009 unity government?",
-     "a": "Morgan Tsvangirai",
-     "wrong": [
-      "Nelson Chamisa",
-      "Joshua Nkomo",
-      "Welshman Ncube"
-     ],
-     "why": "He led the MDC."
-    },
-    {
-     "level": 2,
      "q": "Which 1980s massacres in Matabeleland are called Gukurahundi?",
      "a": "Gukurahundi",
      "wrong": [
@@ -158,23 +115,35 @@
       "Mzilikazi"
      ],
      "why": "She is a national hero."
-    },
-    {
-     "level": 3,
-     "q": "Which 2005 operation destroyed city slums?",
-     "a": "Operation Murambatsvina",
-     "wrong": [
-      "Operation Gukurahundi",
-      "Operation Restore Legacy",
-      "Operation Clean-Up"
-     ],
-     "why": "It means 'drive out the rubbish'."
     }
    ]
   },
   {
-   "name": "Zimbabwe: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Zimbabwe?",
+     "a": "Harare",
+     "wrong": [
+      "Bulawayo",
+      "Mutare",
+      "Gweru"
+     ],
+     "why": "It was called Salisbury."
+    },
+    {
+     "level": 1,
+     "q": "Which waterfall does Zimbabwe share with Zambia?",
+     "a": "Victoria Falls",
+     "wrong": [
+      "Kalandula Falls",
+      "Tugela Falls",
+      "Murchison Falls"
+     ],
+     "why": "It is one of the Seven Natural Wonders."
+    },
     {
      "level": 1,
      "q": "Which lake did Zimbabwe and Zambia create on the Zambezi?",
@@ -199,39 +168,6 @@
     },
     {
      "level": 1,
-     "q": "Which maize porridge is the staple food?",
-     "a": "Sadza",
-     "wrong": [
-      "Ugali",
-      "Nshima",
-      "Pap"
-     ],
-     "why": "It is eaten with relish."
-    },
-    {
-     "level": 1,
-     "q": "Which stone-carved bird is a national emblem?",
-     "a": "Zimbabwe Bird",
-     "wrong": [
-      "Fish eagle",
-      "Phoenix",
-      "Hornbill"
-     ],
-     "why": "Carvings were found at Great Zimbabwe."
-    },
-    {
-     "level": 1,
-     "q": "Which thumb piano is a traditional instrument?",
-     "a": "Mbira",
-     "wrong": [
-      "Kora",
-      "Marimba",
-      "Balafon"
-     ],
-     "why": "It is used in Shona ceremonies."
-    },
-    {
-     "level": 1,
      "q": "Which city is Zimbabwe's second-largest?",
      "a": "Bulawayo",
      "wrong": [
@@ -240,17 +176,6 @@
       "Masvingo"
      ],
      "why": "It is the Ndebele heartland."
-    },
-    {
-     "level": 1,
-     "q": "Which famous cricket and golf players come from Zimbabwe?",
-     "a": "Andy Flower and Nick Price",
-     "wrong": [
-      "Brian Lara and Tiger Woods",
-      "Sachin Tendulkar and Ernie Els",
-      "Shane Warne and Gary Player"
-     ],
-     "why": "Price won three majors."
     },
     {
      "level": 2,
@@ -265,14 +190,81 @@
     },
     {
      "level": 2,
-     "q": "Which granite hills with rock art hold Cecil Rhodes's grave?",
-     "a": "Matobo Hills",
+     "q": "Which mountain range on the Mozambique border has Mount Nyangani?",
+     "a": "Eastern Highlands",
      "wrong": [
-      "Chimanimani",
-      "Nyanga",
-      "Eastern Highlands"
+      "Matobo Hills",
+      "Drakensberg",
+      "Mulanje"
      ],
-     "why": "It is a UNESCO site."
+     "why": "It is Zimbabwe's highest point."
+    },
+    {
+     "level": 3,
+     "q": "Which national park in the southeast means 'place of elephants'?",
+     "a": "Gonarezhou National Park",
+     "wrong": [
+      "Hwange",
+      "Mana Pools",
+      "Matusadona"
+     ],
+     "why": "It joins Kruger in a transfrontier park."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which famous cricket and golf players come from Zimbabwe?",
+     "a": "Andy Flower and Nick Price",
+     "wrong": [
+      "Brian Lara and Tiger Woods",
+      "Sachin Tendulkar and Ernie Els",
+      "Shane Warne and Gary Player"
+     ],
+     "why": "Price won three majors."
+    },
+    {
+     "level": 2,
+     "q": "Which Zimbabwean swimmer won seven Olympic medals?",
+     "a": "Kirsty Coventry",
+     "wrong": [
+      "Penny Heyns",
+      "Natalie du Toit",
+      "Chad le Clos"
+     ],
+     "why": "She later became IOC President."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which 2005 operation destroyed city slums?",
+     "a": "Operation Murambatsvina",
+     "wrong": [
+      "Operation Gukurahundi",
+      "Operation Restore Legacy",
+      "Operation Clean-Up"
+     ],
+     "why": "It means 'drive out the rubbish'."
+    },
+    {
+     "level": 1,
+     "q": "Which thumb piano is a traditional instrument?",
+     "a": "Mbira",
+     "wrong": [
+      "Kora",
+      "Marimba",
+      "Balafon"
+     ],
+     "why": "It is used in Shona ceremonies."
     },
     {
      "level": 2,
@@ -286,26 +278,71 @@
      "why": "He is called 'the Lion of Zimbabwe'."
     },
     {
-     "level": 2,
-     "q": "Which Zimbabwean swimmer won seven Olympic medals?",
-     "a": "Kirsty Coventry",
+     "level": 3,
+     "q": "Which singer had the hit 'Neria'?",
+     "a": "Oliver Mtukudzi",
      "wrong": [
-      "Penny Heyns",
-      "Natalie du Toit",
-      "Chad le Clos"
+      "Thomas Mapfumo",
+      "Jah Prayzah",
+      "Winky D"
      ],
-     "why": "She later became IOC President."
+     "why": "He was called 'Tuku'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been President of Zimbabwe since 2017?",
+     "a": "Emmerson Mnangagwa",
+     "wrong": [
+      "Robert Mugabe",
+      "Nelson Chamisa",
+      "Morgan Tsvangirai"
+     ],
+     "why": "He is called 'the Crocodile'."
     },
     {
      "level": 2,
-     "q": "Which mountain range on the Mozambique border has Mount Nyangani?",
-     "a": "Eastern Highlands",
+     "q": "Which opposition leader became Prime Minister in a 2009 unity government?",
+     "a": "Morgan Tsvangirai",
      "wrong": [
-      "Matobo Hills",
-      "Drakensberg",
-      "Mulanje"
+      "Nelson Chamisa",
+      "Joshua Nkomo",
+      "Welshman Ncube"
      ],
-     "why": "It is Zimbabwe's highest point."
+     "why": "He led the MDC."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which stone-carved bird is a national emblem?",
+     "a": "Zimbabwe Bird",
+     "wrong": [
+      "Fish eagle",
+      "Phoenix",
+      "Hornbill"
+     ],
+     "why": "Carvings were found at Great Zimbabwe."
+    },
+    {
+     "level": 2,
+     "q": "Which granite hills with rock art hold Cecil Rhodes's grave?",
+     "a": "Matobo Hills",
+     "wrong": [
+      "Chimanimani",
+      "Nyanga",
+      "Eastern Highlands"
+     ],
+     "why": "It is a UNESCO site."
     },
     {
      "level": 3,
@@ -317,28 +354,23 @@
       "Tingatinga"
      ],
      "why": "It became famous in the 1960s."
-    },
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
     {
-     "level": 3,
-     "q": "Which singer had the hit 'Neria'?",
-     "a": "Oliver Mtukudzi",
+     "level": 1,
+     "q": "Which maize porridge is the staple food?",
+     "a": "Sadza",
      "wrong": [
-      "Thomas Mapfumo",
-      "Jah Prayzah",
-      "Winky D"
+      "Ugali",
+      "Nshima",
+      "Pap"
      ],
-     "why": "He was called 'Tuku'."
-    },
-    {
-     "level": 3,
-     "q": "Which national park in the southeast means 'place of elephants'?",
-     "a": "Gonarezhou National Park",
-     "wrong": [
-      "Hwange",
-      "Mana Pools",
-      "Matusadona"
-     ],
-     "why": "It joins Kruger in a transfrontier park."
+     "why": "It is eaten with relish."
     }
    ]
   }

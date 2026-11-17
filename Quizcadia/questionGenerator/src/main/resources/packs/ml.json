@@ -3,19 +3,9 @@
  "country": "ML",
  "topics": [
   {
-   "name": "Mali: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Mali?",
-     "a": "Bamako",
-     "wrong": [
-      "Timbuktu",
-      "Gao",
-      "Mopti"
-     ],
-     "why": "It is on the Niger River."
-    },
     {
      "level": 1,
      "q": "Which famously rich emperor ruled Mali in the 1300s?",
@@ -59,28 +49,6 @@
       "Sonni Ali"
      ],
      "why": "The Epic of Sundiata tells his story."
-    },
-    {
-     "level": 1,
-     "q": "What is Mali's currency?",
-     "a": "West African CFA franc",
-     "wrong": [
-      "Ouguiya",
-      "Naira",
-      "Dinar"
-     ],
-     "why": "It is shared by eight countries."
-    },
-    {
-     "level": 1,
-     "q": "Which river runs through Mali?",
-     "a": "Niger River",
-     "wrong": [
-      "Nile",
-      "Congo River",
-      "Zambezi"
-     ],
-     "why": "It forms an inland delta."
     },
     {
      "level": 2,
@@ -127,17 +95,6 @@
      "why": "Librarians smuggled them south."
     },
     {
-     "level": 2,
-     "q": "Who has led Mali since the 2020–21 coups?",
-     "a": "Assimi Goïta",
-     "wrong": [
-      "Ibrahim Boubacar Keïta",
-      "Bah Ndaw",
-      "Moctar Ouane"
-     ],
-     "why": "He is an army colonel."
-    },
-    {
      "level": 3,
      "q": "Which ruler of Songhai made a famous pilgrimage in 1496?",
      "a": "Askia Muhammad",
@@ -173,29 +130,30 @@
    ]
   },
   {
-   "name": "Mali: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "Which mosque made of mud brick is the largest in the world?",
-     "a": "Great Mosque of Djenné",
+     "q": "What is the capital of Mali?",
+     "a": "Bamako",
      "wrong": [
-      "Djinguereber Mosque",
-      "Hassan II Mosque",
-      "Great Mosque of Kairouan"
+      "Timbuktu",
+      "Gao",
+      "Mopti"
      ],
-     "why": "It is replastered every year."
+     "why": "It is on the Niger River."
     },
     {
      "level": 1,
-     "q": "Which cliffs are home to the Dogon people?",
-     "a": "Bandiagara Escarpment",
+     "q": "Which river runs through Mali?",
+     "a": "Niger River",
      "wrong": [
-      "Hombori Tondo",
-      "Tassili n'Ajjer",
-      "Aïr Mountains"
+      "Nile",
+      "Congo River",
+      "Zambezi"
      ],
-     "why": "Their villages cling to the rock."
+     "why": "It forms an inland delta."
     },
     {
      "level": 1,
@@ -208,6 +166,34 @@
      ],
      "why": "Tuareg nomads live there."
     },
+    {
+     "level": 2,
+     "q": "Which town on the Niger is called the 'Venice of Mali'?",
+     "a": "Mopti",
+     "wrong": [
+      "Ségou",
+      "Gao",
+      "Djenné"
+     ],
+     "why": "It is a busy river port."
+    },
+    {
+     "level": 3,
+     "q": "Which festival in the desert near Timbuktu became world famous?",
+     "a": "Festival au Désert",
+     "wrong": [
+      "Fête de la Musique",
+      "Festival sur le Niger",
+      "Gnaoua Festival"
+     ],
+     "why": "It stopped after 2012."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
     {
      "level": 1,
      "q": "Which string instrument with 21 strings is famous in Mali?",
@@ -265,39 +251,6 @@
     },
     {
      "level": 2,
-     "q": "Which old mosque in Timbuktu was built for Mansa Musa?",
-     "a": "Djinguereber Mosque",
-     "wrong": [
-      "Sankore Mosque",
-      "Sidi Yahya Mosque",
-      "Great Mosque of Djenné"
-     ],
-     "why": "It dates from 1327."
-    },
-    {
-     "level": 2,
-     "q": "Which mud-cloth fabric is a famous Malian craft?",
-     "a": "Bògòlanfini",
-     "wrong": [
-      "Kente",
-      "Adire",
-      "Kanga"
-     ],
-     "why": "It is dyed with fermented mud."
-    },
-    {
-     "level": 2,
-     "q": "Which town on the Niger is called the 'Venice of Mali'?",
-     "a": "Mopti",
-     "wrong": [
-      "Ségou",
-      "Gao",
-      "Djenné"
-     ],
-     "why": "It is a busy river port."
-    },
-    {
-     "level": 2,
      "q": "Which festival on the Niger in Ségou celebrates music?",
      "a": "Festival sur le Niger",
      "wrong": [
@@ -317,17 +270,40 @@
       "Nahawa Doumbia"
      ],
      "why": "She won a Grammy in 2011."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
     {
-     "level": 3,
-     "q": "Which festival in the desert near Timbuktu became world famous?",
-     "a": "Festival au Désert",
+     "level": 2,
+     "q": "Who has led Mali since the 2020–21 coups?",
+     "a": "Assimi Goïta",
      "wrong": [
-      "Fête de la Musique",
-      "Festival sur le Niger",
-      "Gnaoua Festival"
+      "Ibrahim Boubacar Keïta",
+      "Bah Ndaw",
+      "Moctar Ouane"
      ],
-     "why": "It stopped after 2012."
+     "why": "He is an army colonel."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which mud-cloth fabric is a famous Malian craft?",
+     "a": "Bògòlanfini",
+     "wrong": [
+      "Kente",
+      "Adire",
+      "Kanga"
+     ],
+     "why": "It is dyed with fermented mud."
     },
     {
      "level": 3,
@@ -339,6 +315,56 @@
       "Gelede"
      ],
      "why": "Dancers wear tall masks."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Mali's currency?",
+     "a": "West African CFA franc",
+     "wrong": [
+      "Ouguiya",
+      "Naira",
+      "Dinar"
+     ],
+     "why": "It is shared by eight countries."
+    },
+    {
+     "level": 1,
+     "q": "Which mosque made of mud brick is the largest in the world?",
+     "a": "Great Mosque of Djenné",
+     "wrong": [
+      "Djinguereber Mosque",
+      "Hassan II Mosque",
+      "Great Mosque of Kairouan"
+     ],
+     "why": "It is replastered every year."
+    },
+    {
+     "level": 1,
+     "q": "Which cliffs are home to the Dogon people?",
+     "a": "Bandiagara Escarpment",
+     "wrong": [
+      "Hombori Tondo",
+      "Tassili n'Ajjer",
+      "Aïr Mountains"
+     ],
+     "why": "Their villages cling to the rock."
+    },
+    {
+     "level": 2,
+     "q": "Which old mosque in Timbuktu was built for Mansa Musa?",
+     "a": "Djinguereber Mosque",
+     "wrong": [
+      "Sankore Mosque",
+      "Sidi Yahya Mosque",
+      "Great Mosque of Djenné"
+     ],
+     "why": "It dates from 1327."
     }
    ]
   }

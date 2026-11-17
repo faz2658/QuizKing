@@ -3,7 +3,8 @@
  "country": "EG",
  "topics": [
   {
-   "name": "Egypt: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -40,17 +41,6 @@
     },
     {
      "level": 1,
-     "q": "Which stone helped scholars decode hieroglyphs?",
-     "a": "Rosetta Stone",
-     "wrong": [
-      "Palermo Stone",
-      "Narmer Palette",
-      "Moabite Stone"
-     ],
-     "why": "It has the same text in three scripts."
-    },
-    {
-     "level": 1,
      "q": "Who was the last active ruler of Ptolemaic Egypt?",
      "a": "Cleopatra VII",
      "wrong": [
@@ -70,17 +60,6 @@
       "Kiel Canal"
      ],
      "why": "Egypt nationalised it in 1956."
-    },
-    {
-     "level": 1,
-     "q": "Which statue with a lion's body and a human head guards Giza?",
-     "a": "The Great Sphinx",
-     "wrong": [
-      "The Colossi of Memnon",
-      "Abu Simbel",
-      "Karnak"
-     ],
-     "why": "It is about 4,500 years old."
     },
     {
      "level": 2,
@@ -169,11 +148,23 @@
       "Suez Uprising"
      ],
      "why": "Protesters filled Tahrir Square."
+    },
+    {
+     "level": 2,
+     "q": "Which huge dam on the Nile was finished in 1970?",
+     "a": "Aswan High Dam",
+     "wrong": [
+      "Merowe Dam",
+      "Grand Ethiopian Renaissance Dam",
+      "Owen Falls Dam"
+     ],
+     "why": "It created Lake Nasser."
     }
    ]
   },
   {
-   "name": "Egypt: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -207,6 +198,113 @@
       "Arabian Sea"
      ],
      "why": "Hurghada and Sharm el-Sheikh are on its coast."
+    },
+    {
+     "level": 2,
+     "q": "Which peninsula links Africa and Asia?",
+     "a": "Sinai",
+     "wrong": [
+      "Arabian Peninsula",
+      "Horn of Africa",
+      "Gallipoli"
+     ],
+     "why": "Mount Sinai is there."
+    },
+    {
+     "level": 3,
+     "q": "Which desert oasis near Libya had a famous Oracle of Amun?",
+     "a": "Siwa",
+     "wrong": [
+      "Bahariya",
+      "Kharga",
+      "Farafra"
+     ],
+     "why": "Alexander the Great visited it."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Cairo club has won the most African Champions League titles?",
+     "a": "Al Ahly",
+     "wrong": [
+      "Zamalek",
+      "Ismaily",
+      "Pyramids FC"
+     ],
+     "why": "It was founded in 1907."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which singer was called the 'Star of the East'?",
+     "a": "Umm Kulthum",
+     "wrong": [
+      "Fairuz",
+      "Dalida",
+      "Sherine"
+     ],
+     "why": "Streets emptied when her concerts aired."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Egyptian won the Nobel Prize in Literature in 1988?",
+     "a": "Naguib Mahfouz",
+     "wrong": [
+      "Taha Hussein",
+      "Tawfiq al-Hakim",
+      "Alaa Al Aswany"
+     ],
+     "why": "He wrote the Cairo Trilogy."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which statue with a lion's body and a human head guards Giza?",
+     "a": "The Great Sphinx",
+     "wrong": [
+      "The Colossi of Memnon",
+      "Abu Simbel",
+      "Karnak"
+     ],
+     "why": "It is about 4,500 years old."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which stone helped scholars decode hieroglyphs?",
+     "a": "Rosetta Stone",
+     "wrong": [
+      "Palermo Stone",
+      "Narmer Palette",
+      "Moabite Stone"
+     ],
+     "why": "It has the same text in three scripts."
     },
     {
      "level": 1,
@@ -264,61 +362,6 @@
      "why": "It is often called Egypt's national dish."
     },
     {
-     "level": 2,
-     "q": "Which huge dam on the Nile was finished in 1970?",
-     "a": "Aswan High Dam",
-     "wrong": [
-      "Merowe Dam",
-      "Grand Ethiopian Renaissance Dam",
-      "Owen Falls Dam"
-     ],
-     "why": "It created Lake Nasser."
-    },
-    {
-     "level": 2,
-     "q": "Which Egyptian won the Nobel Prize in Literature in 1988?",
-     "a": "Naguib Mahfouz",
-     "wrong": [
-      "Taha Hussein",
-      "Tawfiq al-Hakim",
-      "Alaa Al Aswany"
-     ],
-     "why": "He wrote the Cairo Trilogy."
-    },
-    {
-     "level": 2,
-     "q": "Which singer was called the 'Star of the East'?",
-     "a": "Umm Kulthum",
-     "wrong": [
-      "Fairuz",
-      "Dalida",
-      "Sherine"
-     ],
-     "why": "Streets emptied when her concerts aired."
-    },
-    {
-     "level": 2,
-     "q": "Which peninsula links Africa and Asia?",
-     "a": "Sinai",
-     "wrong": [
-      "Arabian Peninsula",
-      "Horn of Africa",
-      "Gallipoli"
-     ],
-     "why": "Mount Sinai is there."
-    },
-    {
-     "level": 3,
-     "q": "Which desert oasis near Libya had a famous Oracle of Amun?",
-     "a": "Siwa",
-     "wrong": [
-      "Bahariya",
-      "Kharga",
-      "Farafra"
-     ],
-     "why": "Alexander the Great visited it."
-    },
-    {
      "level": 3,
      "q": "Which temple complex at Luxor is one of the largest ever built?",
      "a": "Karnak",
@@ -328,17 +371,6 @@
       "Kom Ombo"
      ],
      "why": "It was added to for over 2,000 years."
-    },
-    {
-     "level": 3,
-     "q": "Which Cairo club has won the most African Champions League titles?",
-     "a": "Al Ahly",
-     "wrong": [
-      "Zamalek",
-      "Ismaily",
-      "Pyramids FC"
-     ],
-     "why": "It was founded in 1907."
     }
    ]
   }

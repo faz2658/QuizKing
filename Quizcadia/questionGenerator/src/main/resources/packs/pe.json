@@ -3,7 +3,8 @@
  "country": "PE",
  "topics": [
   {
-   "name": "Peru: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -59,28 +60,6 @@
       "Manco Inca"
      ],
      "why": "He was executed in 1533."
-    },
-    {
-     "level": 1,
-     "q": "Which giant desert drawings of animals are seen best from the air?",
-     "a": "Nazca Lines",
-     "wrong": [
-      "Paracas Candelabra",
-      "Chan Chan",
-      "Caral"
-     ],
-     "why": "They are around 2,000 years old."
-    },
-    {
-     "level": 1,
-     "q": "Which Inca language is still spoken by millions in Peru?",
-     "a": "Quechua",
-     "wrong": [
-      "Aymara",
-      "Nahuatl",
-      "Guaraní"
-     ],
-     "why": "It is an official language."
     },
     {
      "level": 2,
@@ -173,7 +152,8 @@
    ]
   },
   {
-   "name": "Peru: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -196,50 +176,6 @@
       "Lake Parón"
      ],
      "why": "It lies at about 3,800 m."
-    },
-    {
-     "level": 1,
-     "q": "Which raw fish dish cured in lime juice is Peru's national dish?",
-     "a": "Ceviche",
-     "wrong": [
-      "Lomo saltado",
-      "Ají de gallina",
-      "Causa"
-     ],
-     "why": "It is on UNESCO's heritage list."
-    },
-    {
-     "level": 1,
-     "q": "Which woolly animals are herded in the Peruvian Andes?",
-     "a": "Llamas and alpacas",
-     "wrong": [
-      "Camels and yaks",
-      "Goats and sheep",
-      "Bison"
-     ],
-     "why": "Alpaca wool is very soft and warm."
-    },
-    {
-     "level": 1,
-     "q": "What is Peru's currency?",
-     "a": "Sol",
-     "wrong": [
-      "Peso",
-      "Real",
-      "Bolívar"
-     ],
-     "why": "Its name means 'sun'."
-    },
-    {
-     "level": 1,
-     "q": "Which grape brandy does Peru claim as its national drink?",
-     "a": "Pisco",
-     "wrong": [
-      "Chicha",
-      "Aguardiente",
-      "Mezcal"
-     ],
-     "why": "A pisco sour is made with it."
     },
     {
      "level": 1,
@@ -295,6 +231,101 @@
       "Huayna Picchu"
      ],
      "why": "Its colours come from minerals."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Peruvian author won the 2010 Nobel Prize in Literature?",
+     "a": "Mario Vargas Llosa",
+     "wrong": [
+      "César Vallejo",
+      "Ciro Alegría",
+      "José María Arguedas"
+     ],
+     "why": "He wrote 'The Time of the Hero'."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which giant desert drawings of animals are seen best from the air?",
+     "a": "Nazca Lines",
+     "wrong": [
+      "Paracas Candelabra",
+      "Chan Chan",
+      "Caral"
+     ],
+     "why": "They are around 2,000 years old."
+    },
+    {
+     "level": 1,
+     "q": "Which woolly animals are herded in the Peruvian Andes?",
+     "a": "Llamas and alpacas",
+     "wrong": [
+      "Camels and yaks",
+      "Goats and sheep",
+      "Bison"
+     ],
+     "why": "Alpaca wool is very soft and warm."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Inca language is still spoken by millions in Peru?",
+     "a": "Quechua",
+     "wrong": [
+      "Aymara",
+      "Nahuatl",
+      "Guaraní"
+     ],
+     "why": "It is an official language."
+    },
+    {
+     "level": 1,
+     "q": "Which raw fish dish cured in lime juice is Peru's national dish?",
+     "a": "Ceviche",
+     "wrong": [
+      "Lomo saltado",
+      "Ají de gallina",
+      "Causa"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "What is Peru's currency?",
+     "a": "Sol",
+     "wrong": [
+      "Peso",
+      "Real",
+      "Bolívar"
+     ],
+     "why": "Its name means 'sun'."
+    },
+    {
+     "level": 1,
+     "q": "Which grape brandy does Peru claim as its national drink?",
+     "a": "Pisco",
+     "wrong": [
+      "Chicha",
+      "Aguardiente",
+      "Mezcal"
+     ],
+     "why": "A pisco sour is made with it."
     },
     {
      "level": 2,
@@ -306,17 +337,6 @@
       "Corpus Christi"
      ],
      "why": "It marks the winter solstice."
-    },
-    {
-     "level": 3,
-     "q": "Which Peruvian author won the 2010 Nobel Prize in Literature?",
-     "a": "Mario Vargas Llosa",
-     "wrong": [
-      "César Vallejo",
-      "Ciro Alegría",
-      "José María Arguedas"
-     ],
-     "why": "He wrote 'The Time of the Hero'."
     },
     {
      "level": 3,

@@ -3,19 +3,9 @@
  "country": "NA",
  "topics": [
   {
-   "name": "Namibia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Namibia?",
-     "a": "Windhoek",
-     "wrong": [
-      "Walvis Bay",
-      "Swakopmund",
-      "Oshakati"
-     ],
-     "why": "It is in the central highlands."
-    },
     {
      "level": 1,
      "q": "In which year did Namibia gain independence?",
@@ -48,17 +38,6 @@
       "Nangolo Mbumba"
      ],
      "why": "He is called the founding father."
-    },
-    {
-     "level": 1,
-     "q": "What is Namibia's currency?",
-     "a": "Namibian dollar",
-     "wrong": [
-      "Euro",
-      "Pula",
-      "Kwacha"
-     ],
-     "why": "The South African rand is also legal tender."
     },
     {
      "level": 1,
@@ -117,17 +96,6 @@
     },
     {
      "level": 2,
-     "q": "Which President of Namibia died in office in 2024?",
-     "a": "Hage Geingob",
-     "wrong": [
-      "Sam Nujoma",
-      "Hifikepunye Pohamba",
-      "Nangolo Mbumba"
-     ],
-     "why": "He had been President since 2015."
-    },
-    {
-     "level": 2,
      "q": "Which South African name did Namibia have under its rule?",
      "a": "South West Africa",
      "wrong": [
@@ -136,17 +104,6 @@
       "Transvaal"
      ],
      "why": "It was a League of Nations mandate."
-    },
-    {
-     "level": 3,
-     "q": "Which Nama leader fought the Germans and appears on banknotes?",
-     "a": "Hendrik Witbooi",
-     "wrong": [
-      "Samuel Maharero",
-      "Jacob Morenga",
-      "Kahimemua"
-     ],
-     "why": "He died in battle in 1905."
     },
     {
      "level": 3,
@@ -161,20 +118,43 @@
     },
     {
      "level": 3,
-     "q": "Which narrow panhandle in the northeast reaches the Zambezi?",
-     "a": "Zambezi Region (Caprivi Strip)",
+     "q": "Which seal colony at Cape Cross is one of the largest in the world?",
+     "a": "Cape fur seal colony",
      "wrong": [
-      "Kunene Region",
-      "Kavango Strip",
-      "Ovamboland"
+      "Elephant seal colony",
+      "Harbour seal colony",
+      "Monk seal colony"
      ],
-     "why": "Germany got it in 1890."
+     "why": "Up to 200,000 seals gather."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient rock engravings are a UNESCO site?",
+     "a": "Twyfelfontein",
+     "wrong": [
+      "Tsodilo Hills",
+      "Matobo",
+      "Drakensberg"
+     ],
+     "why": "There are over 2,000 engravings."
     }
    ]
   },
   {
-   "name": "Namibia: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Namibia?",
+     "a": "Windhoek",
+     "wrong": [
+      "Walvis Bay",
+      "Swakopmund",
+      "Oshakati"
+     ],
+     "why": "It is in the central highlands."
+    },
     {
      "level": 1,
      "q": "Which coastal desert in Namibia is one of the world's oldest?",
@@ -210,17 +190,6 @@
     },
     {
      "level": 1,
-     "q": "Which coast is littered with shipwrecks and whale bones?",
-     "a": "Skeleton Coast",
-     "wrong": [
-      "Wild Coast",
-      "Gold Coast",
-      "Swahili Coast"
-     ],
-     "why": "Fog makes it dangerous for ships."
-    },
-    {
-     "level": 1,
      "q": "Which canyon is one of the largest in Africa?",
      "a": "Fish River Canyon",
      "wrong": [
@@ -229,17 +198,6 @@
       "Batoka Gorge"
      ],
      "why": "It is about 160 km long."
-    },
-    {
-     "level": 1,
-     "q": "Which people are known for covering their skin with red ochre?",
-     "a": "Himba",
-     "wrong": [
-      "Herero",
-      "San",
-      "Nama"
-     ],
-     "why": "They live in Kunene."
     },
     {
      "level": 1,
@@ -254,15 +212,21 @@
     },
     {
      "level": 2,
-     "q": "Which white clay pan with dead camelthorn trees lies near Sossusvlei?",
-     "a": "Deadvlei",
+     "q": "Which ghost town in the sand was once a diamond town?",
+     "a": "Kolmanskop",
      "wrong": [
-      "Sossusvlei",
-      "Etosha Pan",
-      "Makgadikgadi"
+      "Elizabeth Bay",
+      "Oranjemund",
+      "Bogenfels"
      ],
-     "why": "The trees are about 700 years old."
-    },
+     "why": "It was abandoned in the 1950s."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 2,
      "q": "Which seaside town has German buildings and adventure sports?",
@@ -273,17 +237,6 @@
       "Henties Bay"
      ],
      "why": "Sandboarding is popular there."
-    },
-    {
-     "level": 2,
-     "q": "Which ghost town in the sand was once a diamond town?",
-     "a": "Kolmanskop",
-     "wrong": [
-      "Elizabeth Bay",
-      "Oranjemund",
-      "Bogenfels"
-     ],
-     "why": "It was abandoned in the 1950s."
     },
     {
      "level": 2,
@@ -306,28 +259,101 @@
       "Obadele Thompson"
      ],
      "why": "He was second in the 100 m and 200 m twice."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which President of Namibia died in office in 2024?",
+     "a": "Hage Geingob",
+     "wrong": [
+      "Sam Nujoma",
+      "Hifikepunye Pohamba",
+      "Nangolo Mbumba"
+     ],
+     "why": "He had been President since 2015."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which coast is littered with shipwrecks and whale bones?",
+     "a": "Skeleton Coast",
+     "wrong": [
+      "Wild Coast",
+      "Gold Coast",
+      "Swahili Coast"
+     ],
+     "why": "Fog makes it dangerous for ships."
+    },
+    {
+     "level": 2,
+     "q": "Which white clay pan with dead camelthorn trees lies near Sossusvlei?",
+     "a": "Deadvlei",
+     "wrong": [
+      "Sossusvlei",
+      "Etosha Pan",
+      "Makgadikgadi"
+     ],
+     "why": "The trees are about 700 years old."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Namibia's currency?",
+     "a": "Namibian dollar",
+     "wrong": [
+      "Euro",
+      "Pula",
+      "Kwacha"
+     ],
+     "why": "The South African rand is also legal tender."
     },
     {
      "level": 3,
-     "q": "Which seal colony at Cape Cross is one of the largest in the world?",
-     "a": "Cape fur seal colony",
+     "q": "Which Nama leader fought the Germans and appears on banknotes?",
+     "a": "Hendrik Witbooi",
      "wrong": [
-      "Elephant seal colony",
-      "Harbour seal colony",
-      "Monk seal colony"
+      "Samuel Maharero",
+      "Jacob Morenga",
+      "Kahimemua"
      ],
-     "why": "Up to 200,000 seals gather."
+     "why": "He died in battle in 1905."
     },
     {
      "level": 3,
-     "q": "Which ancient rock engravings are a UNESCO site?",
-     "a": "Twyfelfontein",
+     "q": "Which narrow panhandle in the northeast reaches the Zambezi?",
+     "a": "Zambezi Region (Caprivi Strip)",
      "wrong": [
-      "Tsodilo Hills",
-      "Matobo",
-      "Drakensberg"
+      "Kunene Region",
+      "Kavango Strip",
+      "Ovamboland"
      ],
-     "why": "There are over 2,000 engravings."
+     "why": "Germany got it in 1890."
+    },
+    {
+     "level": 1,
+     "q": "Which people are known for covering their skin with red ochre?",
+     "a": "Himba",
+     "wrong": [
+      "Herero",
+      "San",
+      "Nama"
+     ],
+     "why": "They live in Kunene."
     },
     {
      "level": 3,

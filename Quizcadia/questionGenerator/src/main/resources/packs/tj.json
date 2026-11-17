@@ -3,19 +3,9 @@
  "country": "TJ",
  "topics": [
   {
-   "name": "Tajikistan: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Tajikistan?",
-     "a": "Dushanbe",
-     "wrong": [
-      "Khujand",
-      "Kulob",
-      "Khorog"
-     ],
-     "why": "Its name means 'Monday', after a market day."
-    },
     {
      "level": 1,
      "q": "In which year did Tajikistan become independent?",
@@ -37,39 +27,6 @@
       "Rustam Emomali"
      ],
      "why": "He has ruled for over 30 years."
-    },
-    {
-     "level": 1,
-     "q": "What is Tajikistan's currency?",
-     "a": "Somoni",
-     "wrong": [
-      "Som",
-      "Tenge",
-      "Manat"
-     ],
-     "why": "It is named after a medieval ruler."
-    },
-    {
-     "level": 1,
-     "q": "Which language family does Tajik belong to?",
-     "a": "Persian (Iranian)",
-     "wrong": [
-      "Turkic",
-      "Slavic",
-      "Mongolic"
-     ],
-     "why": "It is close to Farsi and Dari."
-    },
-    {
-     "level": 1,
-     "q": "What share of Tajikistan is mountains?",
-     "a": "About 93%",
-     "wrong": [
-      "About 30%",
-      "About 50%",
-      "About 70%"
-     ],
-     "why": "It is one of the most mountainous countries."
     },
     {
      "level": 1,
@@ -95,17 +52,6 @@
     },
     {
      "level": 2,
-     "q": "Which poet is called the father of Persian poetry?",
-     "a": "Rudaki",
-     "wrong": [
-      "Rumi",
-      "Hafez",
-      "Ferdowsi"
-     ],
-     "why": "He was born near Panjakent."
-    },
-    {
-     "level": 2,
      "q": "Which ancient city near Panjakent is called the 'Pompeii of Central Asia'?",
      "a": "Sarazm",
      "wrong": [
@@ -127,6 +73,56 @@
      "why": "Its wall paintings are famous."
     },
     {
+     "level": 3,
+     "q": "Which 1997 agreement ended the civil war?",
+     "a": "General Agreement on Peace and National Accord",
+     "wrong": [
+      "Bishkek Protocol",
+      "Tashkent Accord",
+      "Moscow Treaty"
+     ],
+     "why": "It was signed in Moscow."
+    },
+    {
+     "level": 2,
+     "q": "Which lake was formed by a landslide in 1911?",
+     "a": "Sarez Lake",
+     "wrong": [
+      "Karakul",
+      "Iskanderkul",
+      "Zorkul"
+     ],
+     "why": "Its natural dam worries scientists."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Tajikistan?",
+     "a": "Dushanbe",
+     "wrong": [
+      "Khujand",
+      "Kulob",
+      "Khorog"
+     ],
+     "why": "Its name means 'Monday', after a market day."
+    },
+    {
+     "level": 1,
+     "q": "What share of Tajikistan is mountains?",
+     "a": "About 93%",
+     "wrong": [
+      "About 30%",
+      "About 50%",
+      "About 70%"
+     ],
+     "why": "It is one of the most mountainous countries."
+    },
+    {
      "level": 2,
      "q": "Which northern city did Alexander the Great found as Alexandria Eschate?",
      "a": "Khujand",
@@ -139,28 +135,6 @@
     },
     {
      "level": 3,
-     "q": "Which 1997 agreement ended the civil war?",
-     "a": "General Agreement on Peace and National Accord",
-     "wrong": [
-      "Bishkek Protocol",
-      "Tashkent Accord",
-      "Moscow Treaty"
-     ],
-     "why": "It was signed in Moscow."
-    },
-    {
-     "level": 3,
-     "q": "Which polymath born near Bukhara is honoured in Tajikistan as Abuali ibn Sino?",
-     "a": "Avicenna",
-     "wrong": [
-      "Al-Biruni",
-      "Al-Khwarizmi",
-      "Omar Khayyam"
-     ],
-     "why": "He wrote 'The Canon of Medicine'."
-    },
-    {
-     "level": 3,
      "q": "Which dam on the Vakhsh River is set to be the world's tallest?",
      "a": "Rogun Dam",
      "wrong": [
@@ -169,12 +143,7 @@
       "Hoover Dam"
      ],
      "why": "Nurek is currently one of the tallest."
-    }
-   ]
-  },
-  {
-   "name": "Tajikistan: Places & Culture",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "Which mountain range in the east is called the 'Roof of the World'?",
@@ -185,28 +154,6 @@
       "Hindu Kush"
      ],
      "why": "Most of Tajikistan's peaks are there."
-    },
-    {
-     "level": 1,
-     "q": "Which famous road crosses the Pamirs?",
-     "a": "Pamir Highway",
-     "wrong": [
-      "Karakoram Highway",
-      "Trans-Siberian Highway",
-      "Grand Trunk Road"
-     ],
-     "why": "It is the world's second-highest international road."
-    },
-    {
-     "level": 1,
-     "q": "Which rice dish is the national dish?",
-     "a": "Oshi palov (plov)",
-     "wrong": [
-      "Biryani",
-      "Paella",
-      "Risotto"
-     ],
-     "why": "It is cooked in a big kazan."
     },
     {
      "level": 1,
@@ -229,28 +176,6 @@
       "Sarez"
      ],
      "why": "Each has a different colour."
-    },
-    {
-     "level": 1,
-     "q": "What is the Persian New Year festival in March?",
-     "a": "Navruz",
-     "wrong": [
-      "Eid",
-      "Diwali",
-      "Losar"
-     ],
-     "why": "It is the biggest holiday."
-    },
-    {
-     "level": 1,
-     "q": "Which embroidered cloth is a Tajik craft?",
-     "a": "Suzani",
-     "wrong": [
-      "Kilim",
-      "Shyrdak",
-      "Batik"
-     ],
-     "why": "It is given as a wedding gift."
     },
     {
      "level": 2,
@@ -276,17 +201,6 @@
     },
     {
      "level": 2,
-     "q": "Which lake was formed by a landslide in 1911?",
-     "a": "Sarez Lake",
-     "wrong": [
-      "Karakul",
-      "Iskanderkul",
-      "Zorkul"
-     ],
-     "why": "Its natural dam worries scientists."
-    },
-    {
-     "level": 2,
      "q": "What is the highest peak in Tajikistan?",
      "a": "Ismoil Somoni Peak",
      "wrong": [
@@ -295,6 +209,123 @@
       "Khan Tengri"
      ],
      "why": "It was called Peak Communism."
+    },
+    {
+     "level": 3,
+     "q": "Which huge glacier in the Pamirs is one of the longest outside the poles?",
+     "a": "Fedchenko Glacier",
+     "wrong": [
+      "Siachen",
+      "Baltoro",
+      "Inylchek"
+     ],
+     "why": "It is about 77 km long."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which poet is called the father of Persian poetry?",
+     "a": "Rudaki",
+     "wrong": [
+      "Rumi",
+      "Hafez",
+      "Ferdowsi"
+     ],
+     "why": "He was born near Panjakent."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which embroidered cloth is a Tajik craft?",
+     "a": "Suzani",
+     "wrong": [
+      "Kilim",
+      "Shyrdak",
+      "Batik"
+     ],
+     "why": "It is given as a wedding gift."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Tajikistan's currency?",
+     "a": "Somoni",
+     "wrong": [
+      "Som",
+      "Tenge",
+      "Manat"
+     ],
+     "why": "It is named after a medieval ruler."
+    },
+    {
+     "level": 1,
+     "q": "Which language family does Tajik belong to?",
+     "a": "Persian (Iranian)",
+     "wrong": [
+      "Turkic",
+      "Slavic",
+      "Mongolic"
+     ],
+     "why": "It is close to Farsi and Dari."
+    },
+    {
+     "level": 3,
+     "q": "Which polymath born near Bukhara is honoured in Tajikistan as Abuali ibn Sino?",
+     "a": "Avicenna",
+     "wrong": [
+      "Al-Biruni",
+      "Al-Khwarizmi",
+      "Omar Khayyam"
+     ],
+     "why": "He wrote 'The Canon of Medicine'."
+    },
+    {
+     "level": 1,
+     "q": "Which famous road crosses the Pamirs?",
+     "a": "Pamir Highway",
+     "wrong": [
+      "Karakoram Highway",
+      "Trans-Siberian Highway",
+      "Grand Trunk Road"
+     ],
+     "why": "It is the world's second-highest international road."
+    },
+    {
+     "level": 1,
+     "q": "Which rice dish is the national dish?",
+     "a": "Oshi palov (plov)",
+     "wrong": [
+      "Biryani",
+      "Paella",
+      "Risotto"
+     ],
+     "why": "It is cooked in a big kazan."
+    },
+    {
+     "level": 1,
+     "q": "What is the Persian New Year festival in March?",
+     "a": "Navruz",
+     "wrong": [
+      "Eid",
+      "Diwali",
+      "Losar"
+     ],
+     "why": "It is the biggest holiday."
     },
     {
      "level": 2,
@@ -317,17 +348,6 @@
       "Baku Flagpole"
      ],
      "why": "It is 165 m tall."
-    },
-    {
-     "level": 3,
-     "q": "Which huge glacier in the Pamirs is one of the longest outside the poles?",
-     "a": "Fedchenko Glacier",
-     "wrong": [
-      "Siachen",
-      "Baltoro",
-      "Inylchek"
-     ],
-     "why": "It is about 77 km long."
     },
     {
      "level": 3,

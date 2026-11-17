@@ -3,19 +3,9 @@
  "country": "AG",
  "topics": [
   {
-   "name": "Antigua and Barbuda: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Antigua and Barbuda?",
-     "a": "St John's",
-     "wrong": [
-      "English Harbour",
-      "Codrington",
-      "All Saints"
-     ],
-     "why": "It is on Antigua's northwest coast."
-    },
     {
      "level": 1,
      "q": "From which country did Antigua and Barbuda gain independence in 1981?",
@@ -26,17 +16,6 @@
       "Netherlands"
      ],
      "why": "It is a Commonwealth realm."
-    },
-    {
-     "level": 1,
-     "q": "How many beaches is Antigua said to have?",
-     "a": "365, one for every day of the year",
-     "wrong": [
-      "52",
-      "100",
-      "1,000"
-     ],
-     "why": "It is a favourite tourist claim."
     },
     {
      "level": 1,
@@ -51,17 +30,6 @@
     },
     {
      "level": 1,
-     "q": "What currency is used in Antigua and Barbuda?",
-     "a": "East Caribbean dollar",
-     "wrong": [
-      "Antiguan dollar",
-      "US dollar",
-      "Pound sterling"
-     ],
-     "why": "It is shared with seven other territories."
-    },
-    {
-     "level": 1,
      "q": "Who was the first Prime Minister of Antigua and Barbuda?",
      "a": "Vere Bird",
      "wrong": [
@@ -70,17 +38,6 @@
       "Gaston Browne"
      ],
      "why": "He is called the father of the nation."
-    },
-    {
-     "level": 1,
-     "q": "Which crop did enslaved Africans grow on Antigua's plantations?",
-     "a": "Sugar cane",
-     "wrong": [
-      "Tobacco",
-      "Coffee",
-      "Cotton"
-     ],
-     "why": "Old sugar mills still dot the island."
     },
     {
      "level": 2,
@@ -95,6 +52,78 @@
     },
     {
      "level": 2,
+     "q": "Which enslaved leader planned a 1736 uprising on Antigua?",
+     "a": "Prince Klaas (Court)",
+     "wrong": [
+      "Bussa",
+      "Tacky",
+      "Cuffy"
+     ],
+     "why": "He is a national hero."
+    },
+    {
+     "level": 1,
+     "q": "Which bird colony on Barbuda is one of the largest of its kind?",
+     "a": "Frigatebird colony",
+     "wrong": [
+      "Flamingo colony",
+      "Pelican colony",
+      "Booby colony"
+     ],
+     "why": "Males puff up a red throat pouch."
+    },
+    {
+     "level": 1,
+     "q": "Which festival in summer marks the end of slavery?",
+     "a": "Antigua Carnival",
+     "wrong": [
+      "Crop Over",
+      "Junkanoo",
+      "Spicemas"
+     ],
+     "why": "It is held in late July and early August."
+    },
+    {
+     "level": 2,
+     "q": "What is Antigua's highest point, renamed in 2009?",
+     "a": "Mount Obama",
+     "wrong": [
+      "Mount Liamuiga",
+      "Morne Diablotin",
+      "Mount Scenery"
+     ],
+     "why": "It was earlier called Boggy Peak."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Antigua and Barbuda?",
+     "a": "St John's",
+     "wrong": [
+      "English Harbour",
+      "Codrington",
+      "All Saints"
+     ],
+     "why": "It is on Antigua's northwest coast."
+    },
+    {
+     "level": 1,
+     "q": "How many beaches is Antigua said to have?",
+     "a": "365, one for every day of the year",
+     "wrong": [
+      "52",
+      "100",
+      "1,000"
+     ],
+     "why": "It is a favourite tourist claim."
+    },
+    {
+     "level": 2,
      "q": "Which dockyard at English Harbour is a UNESCO site?",
      "a": "Nelson's Dockyard",
      "wrong": [
@@ -105,27 +134,77 @@
      "why": "It is still a working marina."
     },
     {
-     "level": 2,
-     "q": "Who has been Prime Minister of Antigua and Barbuda since 2014?",
-     "a": "Gaston Browne",
+     "level": 3,
+     "q": "Which uninhabited island is the third part of the nation?",
+     "a": "Redonda",
      "wrong": [
-      "Baldwin Spencer",
-      "Lester Bird",
-      "Vere Bird"
+      "Montserrat",
+      "Nevis",
+      "Anguilla"
      ],
-     "why": "He leads the Antigua and Barbuda Labour Party."
+     "why": "A writer once named himself its king."
+    },
+    {
+     "level": 1,
+     "q": "Which lookout over English Harbour hosts Sunday parties?",
+     "a": "Shirley Heights",
+     "wrong": [
+      "Fig Tree Drive",
+      "Signal Hill",
+      "Boggy Peak"
+     ],
+     "why": "Steel bands play at sunset."
+    },
+    {
+     "level": 1,
+     "q": "Which beach on Barbuda is famous for its colour?",
+     "a": "Pink Sand Beach",
+     "wrong": [
+      "Black Sand Beach",
+      "Green Beach",
+      "Red Beach"
+     ],
+     "why": "It is about 17 miles long."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies west of Antigua?",
+     "a": "Caribbean Sea",
+     "wrong": [
+      "Pacific Ocean",
+      "Gulf of Mexico",
+      "Mediterranean Sea"
+     ],
+     "why": "The Atlantic lies to the east."
     },
     {
      "level": 2,
-     "q": "Which enslaved leader planned a 1736 uprising on Antigua?",
-     "a": "Prince Klaas (Court)",
+     "q": "Which ruined fort at the end of a peninsula guards St John's harbour?",
+     "a": "Fort James",
      "wrong": [
-      "Bussa",
-      "Tacky",
-      "Cuffy"
+      "Fort Charlotte",
+      "Fort George",
+      "Fort Shirley"
      ],
-     "why": "He is a national hero."
+     "why": "It dates from the 1700s."
     },
+    {
+     "level": 3,
+     "q": "Which lagoon on Barbuda holds the frigatebird sanctuary?",
+     "a": "Codrington Lagoon",
+     "wrong": [
+      "Jolly Harbour",
+      "Falmouth Harbour",
+      "Dickenson Bay"
+     ],
+     "why": "It is next to Barbuda's only town."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 2,
      "q": "Which Antiguan cricketer is famous as 'the Master Blaster'?",
@@ -149,16 +228,22 @@
      "why": "He is 2.01 m tall."
     },
     {
-     "level": 3,
-     "q": "Which uninhabited island is the third part of the nation?",
-     "a": "Redonda",
+     "level": 2,
+     "q": "Which Antiguan cricketer captained the West Indies from 1991 to 1995?",
+     "a": "Richie Richardson",
      "wrong": [
-      "Montserrat",
-      "Nevis",
-      "Anguilla"
+      "Viv Richards",
+      "Curtly Ambrose",
+      "Andy Roberts"
      ],
-     "why": "A writer once named himself its king."
-    },
+     "why": "He was known for his maroon sun hat."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
      "level": 3,
      "q": "Which Antiguan writer wrote 'A Small Place'?",
@@ -173,151 +258,26 @@
    ]
   },
   {
-   "name": "Antigua and Barbuda: Places & Culture",
+   "category": "Politics",
+   "name": "Politics",
    "questions": [
     {
-     "level": 1,
-     "q": "Which lookout over English Harbour hosts Sunday parties?",
-     "a": "Shirley Heights",
-     "wrong": [
-      "Fig Tree Drive",
-      "Signal Hill",
-      "Boggy Peak"
-     ],
-     "why": "Steel bands play at sunset."
-    },
-    {
-     "level": 1,
-     "q": "Which famous sailing event is held each spring?",
-     "a": "Antigua Sailing Week",
-     "wrong": [
-      "Cowes Week",
-      "Carriacou Regatta",
-      "Bequia Easter Regatta"
-     ],
-     "why": "It began in 1967."
-    },
-    {
-     "level": 1,
-     "q": "Which bird colony on Barbuda is one of the largest of its kind?",
-     "a": "Frigatebird colony",
-     "wrong": [
-      "Flamingo colony",
-      "Pelican colony",
-      "Booby colony"
-     ],
-     "why": "Males puff up a red throat pouch."
-    },
-    {
-     "level": 1,
-     "q": "Which beach on Barbuda is famous for its colour?",
-     "a": "Pink Sand Beach",
-     "wrong": [
-      "Black Sand Beach",
-      "Green Beach",
-      "Red Beach"
-     ],
-     "why": "It is about 17 miles long."
-    },
-    {
-     "level": 1,
-     "q": "Which national dish is made of cornmeal and okra?",
-     "a": "Fungie and pepperpot",
-     "wrong": [
-      "Cou-cou and flying fish",
-      "Ackee and saltfish",
-      "Oil down"
-     ],
-     "why": "It is served with saltfish."
-    },
-    {
-     "level": 1,
-     "q": "Which festival in summer marks the end of slavery?",
-     "a": "Antigua Carnival",
-     "wrong": [
-      "Crop Over",
-      "Junkanoo",
-      "Spicemas"
-     ],
-     "why": "It is held in late July and early August."
-    },
-    {
-     "level": 1,
-     "q": "Which sea lies west of Antigua?",
-     "a": "Caribbean Sea",
-     "wrong": [
-      "Pacific Ocean",
-      "Gulf of Mexico",
-      "Mediterranean Sea"
-     ],
-     "why": "The Atlantic lies to the east."
-    },
-    {
      "level": 2,
-     "q": "What is Antigua's highest point, renamed in 2009?",
-     "a": "Mount Obama",
+     "q": "Who has been Prime Minister of Antigua and Barbuda since 2014?",
+     "a": "Gaston Browne",
      "wrong": [
-      "Mount Liamuiga",
-      "Morne Diablotin",
-      "Mount Scenery"
+      "Baldwin Spencer",
+      "Lester Bird",
+      "Vere Bird"
      ],
-     "why": "It was earlier called Boggy Peak."
-    },
-    {
-     "level": 2,
-     "q": "Which sweet pineapple is grown on Antigua?",
-     "a": "Antigua Black pineapple",
-     "wrong": [
-      "Smooth Cayenne",
-      "Red Spanish",
-      "Queen Victoria"
-     ],
-     "why": "It is the national fruit."
-    },
-    {
-     "level": 2,
-     "q": "Which ruined fort at the end of a peninsula guards St John's harbour?",
-     "a": "Fort James",
-     "wrong": [
-      "Fort Charlotte",
-      "Fort George",
-      "Fort Shirley"
-     ],
-     "why": "It dates from the 1700s."
-    },
-    {
-     "level": 2,
-     "q": "Which church in St John's has twin towers?",
-     "a": "St John's Cathedral",
-     "wrong": [
-      "Christ Church Cathedral",
-      "St Michael's Cathedral",
-      "Holy Trinity"
-     ],
-     "why": "Its stone outside protects a wooden inside."
-    },
-    {
-     "level": 2,
-     "q": "Which Antiguan cricketer captained the West Indies from 1991 to 1995?",
-     "a": "Richie Richardson",
-     "wrong": [
-      "Viv Richards",
-      "Curtly Ambrose",
-      "Andy Roberts"
-     ],
-     "why": "He was known for his maroon sun hat."
-    },
-    {
-     "level": 3,
-     "q": "Which lagoon on Barbuda holds the frigatebird sanctuary?",
-     "a": "Codrington Lagoon",
-     "wrong": [
-      "Jolly Harbour",
-      "Falmouth Harbour",
-      "Dickenson Bay"
-     ],
-     "why": "It is next to Barbuda's only town."
-    },
+     "why": "He leads the Antigua and Barbuda Labour Party."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
     {
      "level": 3,
      "q": "Which old sugar plantation has a restored windmill and museum?",
@@ -339,6 +299,78 @@
       "Harrison's Cave"
      ],
      "why": "They are on the island's coast."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What currency is used in Antigua and Barbuda?",
+     "a": "East Caribbean dollar",
+     "wrong": [
+      "Antiguan dollar",
+      "US dollar",
+      "Pound sterling"
+     ],
+     "why": "It is shared with seven other territories."
+    },
+    {
+     "level": 1,
+     "q": "Which crop did enslaved Africans grow on Antigua's plantations?",
+     "a": "Sugar cane",
+     "wrong": [
+      "Tobacco",
+      "Coffee",
+      "Cotton"
+     ],
+     "why": "Old sugar mills still dot the island."
+    },
+    {
+     "level": 1,
+     "q": "Which famous sailing event is held each spring?",
+     "a": "Antigua Sailing Week",
+     "wrong": [
+      "Cowes Week",
+      "Carriacou Regatta",
+      "Bequia Easter Regatta"
+     ],
+     "why": "It began in 1967."
+    },
+    {
+     "level": 1,
+     "q": "Which national dish is made of cornmeal and okra?",
+     "a": "Fungie and pepperpot",
+     "wrong": [
+      "Cou-cou and flying fish",
+      "Ackee and saltfish",
+      "Oil down"
+     ],
+     "why": "It is served with saltfish."
+    },
+    {
+     "level": 2,
+     "q": "Which sweet pineapple is grown on Antigua?",
+     "a": "Antigua Black pineapple",
+     "wrong": [
+      "Smooth Cayenne",
+      "Red Spanish",
+      "Queen Victoria"
+     ],
+     "why": "It is the national fruit."
+    },
+    {
+     "level": 2,
+     "q": "Which church in St John's has twin towers?",
+     "a": "St John's Cathedral",
+     "wrong": [
+      "Christ Church Cathedral",
+      "St Michael's Cathedral",
+      "Holy Trinity"
+     ],
+     "why": "Its stone outside protects a wooden inside."
     }
    ]
   }

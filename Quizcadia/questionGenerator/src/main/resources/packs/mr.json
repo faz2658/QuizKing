@@ -3,19 +3,9 @@
  "country": "MR",
  "topics": [
   {
-   "name": "Mauritania: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Mauritania?",
-     "a": "Nouakchott",
-     "wrong": [
-      "Nouadhibou",
-      "Atar",
-      "Kiffa"
-     ],
-     "why": "It was a small village in 1958."
-    },
     {
      "level": 1,
      "q": "From which country did Mauritania gain independence in 1960?",
@@ -29,28 +19,6 @@
     },
     {
      "level": 1,
-     "q": "What is Mauritania's currency?",
-     "a": "Ouguiya",
-     "wrong": [
-      "Dirham",
-      "Dinar",
-      "CFA franc"
-     ],
-     "why": "It is one of two currencies not split into tens."
-    },
-    {
-     "level": 1,
-     "q": "Which desert covers most of Mauritania?",
-     "a": "Sahara",
-     "wrong": [
-      "Kalahari",
-      "Namib",
-      "Gobi"
-     ],
-     "why": "About 90% of the land is desert."
-    },
-    {
-     "level": 1,
      "q": "Which ancient town was a stop for camel caravans and is a UNESCO site?",
      "a": "Chinguetti",
      "wrong": [
@@ -59,17 +27,6 @@
       "Ghadames"
      ],
      "why": "It holds old Islamic libraries."
-    },
-    {
-     "level": 1,
-     "q": "Which ocean lies to Mauritania's west?",
-     "a": "Atlantic Ocean",
-     "wrong": [
-      "Indian Ocean",
-      "Mediterranean Sea",
-      "Red Sea"
-     ],
-     "why": "Its waters are rich in fish."
     },
     {
      "level": 1,
@@ -92,17 +49,6 @@
       "Mohamed Ould Ghazouani"
      ],
      "why": "He was overthrown in 1978."
-    },
-    {
-     "level": 2,
-     "q": "Who has been President of Mauritania since 2019?",
-     "a": "Mohamed Ould Ghazouani",
-     "wrong": [
-      "Mohamed Ould Abdel Aziz",
-      "Sidi Ould Cheikh Abdallahi",
-      "Ely Ould Mohamed Vall"
-     ],
-     "why": "He was a general."
     },
     {
      "level": 2,
@@ -138,15 +84,65 @@
      "why": "It was a capital of the empire."
     },
     {
-     "level": 3,
-     "q": "Which former President was jailed for corruption in 2023?",
-     "a": "Mohamed Ould Abdel Aziz",
+     "level": 2,
+     "q": "Which old desert town is famous for its ancient library?",
+     "a": "Ouadane",
      "wrong": [
-      "Maaouya Ould Taya",
-      "Moktar Ould Daddah",
-      "Sidi Ould Cheikh Abdallahi"
+      "Atar",
+      "Kiffa",
+      "Rosso"
      ],
-     "why": "He got five years."
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient town in the east is a UNESCO site with old mosques?",
+     "a": "Oualata",
+     "wrong": [
+      "Tichitt",
+      "Koumbi Saleh",
+      "Atar"
+     ],
+     "why": "Its houses are decorated with red clay."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Mauritania?",
+     "a": "Nouakchott",
+     "wrong": [
+      "Nouadhibou",
+      "Atar",
+      "Kiffa"
+     ],
+     "why": "It was a small village in 1958."
+    },
+    {
+     "level": 1,
+     "q": "Which desert covers most of Mauritania?",
+     "a": "Sahara",
+     "wrong": [
+      "Kalahari",
+      "Namib",
+      "Gobi"
+     ],
+     "why": "About 90% of the land is desert."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean lies to Mauritania's west?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Mediterranean Sea",
+      "Red Sea"
+     ],
+     "why": "Its waters are rich in fish."
     },
     {
      "level": 3,
@@ -158,33 +154,6 @@
       "Blue Train"
      ],
      "why": "It can be over 2 km long."
-    },
-    {
-     "level": 3,
-     "q": "Which group of Moorish people speak Hassaniya Arabic?",
-     "a": "Bidhan (White Moors) and Haratin",
-     "wrong": [
-      "Tuareg",
-      "Fulani",
-      "Wolof"
-     ],
-     "why": "Hassaniya is the main local language."
-    }
-   ]
-  },
-  {
-   "name": "Mauritania: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which giant circular rock formation is called the 'Eye of the Sahara'?",
-     "a": "Richat Structure",
-     "wrong": [
-      "Ahaggar",
-      "Tassili",
-      "Erg Chebbi"
-     ],
-     "why": "It is about 40 km wide."
     },
     {
      "level": 1,
@@ -210,39 +179,6 @@
     },
     {
      "level": 1,
-     "q": "Which sweet mint tea is drunk in three rounds?",
-     "a": "Green tea with mint (atai)",
-     "wrong": [
-      "Masala chai",
-      "Karak",
-      "Bissap"
-     ],
-     "why": "Each round gets sweeter."
-    },
-    {
-     "level": 1,
-     "q": "Which animal is central to life in the Mauritanian desert?",
-     "a": "Camel",
-     "wrong": [
-      "Horse",
-      "Yak",
-      "Donkey"
-     ],
-     "why": "Camel milk is drunk daily."
-    },
-    {
-     "level": 1,
-     "q": "Which language is official in Mauritania?",
-     "a": "Arabic",
-     "wrong": [
-      "French",
-      "Berber",
-      "Wolof"
-     ],
-     "why": "French is widely used."
-    },
-    {
-     "level": 1,
      "q": "Which river forms Mauritania's southern border with Senegal?",
      "a": "Senegal River",
      "wrong": [
@@ -251,17 +187,6 @@
       "Volta River"
      ],
      "why": "Rosso is the border crossing."
-    },
-    {
-     "level": 2,
-     "q": "Which old desert town is famous for its ancient library?",
-     "a": "Ouadane",
-     "wrong": [
-      "Atar",
-      "Kiffa",
-      "Rosso"
-     ],
-     "why": "It is a UNESCO site."
     },
     {
      "level": 2,
@@ -276,28 +201,6 @@
     },
     {
      "level": 2,
-     "q": "Which long robe do Mauritanian men wear?",
-     "a": "Daraa (boubou)",
-     "wrong": [
-      "Kandura",
-      "Djellaba",
-      "Kaftan"
-     ],
-     "why": "It is usually blue or white."
-    },
-    {
-     "level": 2,
-     "q": "Which Imraguen people fish with help from dolphins?",
-     "a": "Imraguen fishermen",
-     "wrong": [
-      "Wolof fishermen",
-      "Bozo fishermen",
-      "Lebou fishermen"
-     ],
-     "why": "They live at Banc d'Arguin."
-    },
-    {
-     "level": 2,
      "q": "Which oasis town in Adrar is a starting point for desert tours?",
      "a": "Atar",
      "wrong": [
@@ -309,17 +212,6 @@
     },
     {
      "level": 3,
-     "q": "Which ancient town in the east is a UNESCO site with old mosques?",
-     "a": "Oualata",
-     "wrong": [
-      "Tichitt",
-      "Koumbi Saleh",
-      "Atar"
-     ],
-     "why": "Its houses are decorated with red clay."
-    },
-    {
-     "level": 3,
      "q": "Which iron-mining town in Mauritania's north is the railway's starting point?",
      "a": "Zouérat",
      "wrong": [
@@ -328,7 +220,13 @@
       "Rosso"
      ],
      "why": "The ore travels to Nouadhibou."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
     {
      "level": 3,
      "q": "Which Mauritanian film by Abderrahmane Sissako was nominated for an Oscar?",
@@ -339,6 +237,134 @@
       "Waiting for Happiness"
      ],
      "why": "It was nominated in 2015."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who has been President of Mauritania since 2019?",
+     "a": "Mohamed Ould Ghazouani",
+     "wrong": [
+      "Mohamed Ould Abdel Aziz",
+      "Sidi Ould Cheikh Abdallahi",
+      "Ely Ould Mohamed Vall"
+     ],
+     "why": "He was a general."
+    },
+    {
+     "level": 3,
+     "q": "Which former President was jailed for corruption in 2023?",
+     "a": "Mohamed Ould Abdel Aziz",
+     "wrong": [
+      "Maaouya Ould Taya",
+      "Moktar Ould Daddah",
+      "Sidi Ould Cheikh Abdallahi"
+     ],
+     "why": "He got five years."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which animal is central to life in the Mauritanian desert?",
+     "a": "Camel",
+     "wrong": [
+      "Horse",
+      "Yak",
+      "Donkey"
+     ],
+     "why": "Camel milk is drunk daily."
+    },
+    {
+     "level": 2,
+     "q": "Which Imraguen people fish with help from dolphins?",
+     "a": "Imraguen fishermen",
+     "wrong": [
+      "Wolof fishermen",
+      "Bozo fishermen",
+      "Lebou fishermen"
+     ],
+     "why": "They live at Banc d'Arguin."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Mauritania's currency?",
+     "a": "Ouguiya",
+     "wrong": [
+      "Dirham",
+      "Dinar",
+      "CFA franc"
+     ],
+     "why": "It is one of two currencies not split into tens."
+    },
+    {
+     "level": 3,
+     "q": "Which group of Moorish people speak Hassaniya Arabic?",
+     "a": "Bidhan (White Moors) and Haratin",
+     "wrong": [
+      "Tuareg",
+      "Fulani",
+      "Wolof"
+     ],
+     "why": "Hassaniya is the main local language."
+    },
+    {
+     "level": 1,
+     "q": "Which giant circular rock formation is called the 'Eye of the Sahara'?",
+     "a": "Richat Structure",
+     "wrong": [
+      "Ahaggar",
+      "Tassili",
+      "Erg Chebbi"
+     ],
+     "why": "It is about 40 km wide."
+    },
+    {
+     "level": 1,
+     "q": "Which sweet mint tea is drunk in three rounds?",
+     "a": "Green tea with mint (atai)",
+     "wrong": [
+      "Masala chai",
+      "Karak",
+      "Bissap"
+     ],
+     "why": "Each round gets sweeter."
+    },
+    {
+     "level": 1,
+     "q": "Which language is official in Mauritania?",
+     "a": "Arabic",
+     "wrong": [
+      "French",
+      "Berber",
+      "Wolof"
+     ],
+     "why": "French is widely used."
+    },
+    {
+     "level": 2,
+     "q": "Which long robe do Mauritanian men wear?",
+     "a": "Daraa (boubou)",
+     "wrong": [
+      "Kandura",
+      "Djellaba",
+      "Kaftan"
+     ],
+     "why": "It is usually blue or white."
     }
    ]
   }

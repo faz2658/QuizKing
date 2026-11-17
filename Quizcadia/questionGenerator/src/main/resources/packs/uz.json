@@ -3,19 +3,9 @@
  "country": "UZ",
  "topics": [
   {
-   "name": "Uzbekistan: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which Silk Road city's Registan square is a famous sight?",
-     "a": "Samarkand",
-     "wrong": [
-      "Bukhara",
-      "Khiva",
-      "Tashkent"
-     ],
-     "why": "It has three grand madrasas."
-    },
     {
      "level": 1,
      "q": "Which conqueror made Samarkand his capital in the 1300s?",
@@ -61,72 +51,6 @@
      "why": "Merchants traded silk, paper and spices."
     },
     {
-     "level": 1,
-     "q": "Which Mughal founder was born in the Fergana Valley?",
-     "a": "Babur",
-     "wrong": [
-      "Akbar",
-      "Timur",
-      "Humayun"
-     ],
-     "why": "He founded the Mughal Empire in India."
-    },
-    {
-     "level": 1,
-     "q": "Who has been President of Uzbekistan since 2016?",
-     "a": "Shavkat Mirziyoyev",
-     "wrong": [
-      "Islam Karimov",
-      "Abdulla Aripov",
-      "Rustam Azimov"
-     ],
-     "why": "He opened the country up."
-    },
-    {
-     "level": 2,
-     "q": "Which grandson of Timur built an observatory in Samarkand?",
-     "a": "Ulugh Beg",
-     "wrong": [
-      "Shah Rukh",
-      "Babur",
-      "Husayn Bayqara"
-     ],
-     "why": "He made an accurate star catalogue."
-    },
-    {
-     "level": 2,
-     "q": "Which mathematician from Khwarazm gave his name to the word 'algorithm'?",
-     "a": "Al-Khwarizmi",
-     "wrong": [
-      "Al-Biruni",
-      "Ibn Sina",
-      "Omar Khayyam"
-     ],
-     "why": "His work also gave us 'algebra'."
-    },
-    {
-     "level": 2,
-     "q": "Which walled inner city of Khiva is a UNESCO site?",
-     "a": "Itchan Kala",
-     "wrong": [
-      "Ark of Bukhara",
-      "Shah-i-Zinda",
-      "Kalta Minor"
-     ],
-     "why": "It is surrounded by mud-brick walls."
-    },
-    {
-     "level": 2,
-     "q": "Which scholar born near Bukhara wrote 'The Canon of Medicine'?",
-     "a": "Ibn Sina (Avicenna)",
-     "wrong": [
-      "Al-Biruni",
-      "Al-Farabi",
-      "Al-Khwarizmi"
-     ],
-     "why": "He was born in Afshona."
-    },
-    {
      "level": 2,
      "q": "Which Bukhara minaret was spared by Genghis Khan?",
      "a": "Kalyan Minaret",
@@ -169,12 +93,57 @@
       "Namangan uprising"
      ],
      "why": "Troops fired on protesters."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient city has the Ark fortress?",
+     "a": "Bukhara",
+     "wrong": [
+      "Samarkand",
+      "Khiva",
+      "Termez"
+     ],
+     "why": "Its old town is a UNESCO site."
     }
    ]
   },
   {
-   "name": "Uzbekistan: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which Silk Road city's Registan square is a famous sight?",
+     "a": "Samarkand",
+     "wrong": [
+      "Bukhara",
+      "Khiva",
+      "Tashkent"
+     ],
+     "why": "It has three grand madrasas."
+    },
+    {
+     "level": 1,
+     "q": "Which Mughal founder was born in the Fergana Valley?",
+     "a": "Babur",
+     "wrong": [
+      "Akbar",
+      "Timur",
+      "Humayun"
+     ],
+     "why": "He founded the Mughal Empire in India."
+    },
+    {
+     "level": 2,
+     "q": "Which walled inner city of Khiva is a UNESCO site?",
+     "a": "Itchan Kala",
+     "wrong": [
+      "Ark of Bukhara",
+      "Shah-i-Zinda",
+      "Kalta Minor"
+     ],
+     "why": "It is surrounded by mud-brick walls."
+    },
     {
      "level": 1,
      "q": "What is the capital of Uzbekistan?",
@@ -188,28 +157,6 @@
     },
     {
      "level": 1,
-     "q": "Which rice dish with meat and carrots is Uzbekistan's national dish?",
-     "a": "Plov",
-     "wrong": [
-      "Biryani",
-      "Paella",
-      "Pilaf of Persia"
-     ],
-     "why": "It is on UNESCO's heritage list."
-    },
-    {
-     "level": 1,
-     "q": "What is Uzbekistan's currency?",
-     "a": "Uzbek som",
-     "wrong": [
-      "Tenge",
-      "Ruble",
-      "Manat"
-     ],
-     "why": "It was introduced in 1993."
-    },
-    {
-     "level": 1,
      "q": "Which sea, shared with Kazakhstan, has largely dried up?",
      "a": "Aral Sea",
      "wrong": [
@@ -218,28 +165,6 @@
       "Dead Sea"
      ],
      "why": "Ships lie stranded on the old seabed at Moynaq."
-    },
-    {
-     "level": 1,
-     "q": "Which ancient city has the Ark fortress?",
-     "a": "Bukhara",
-     "wrong": [
-      "Samarkand",
-      "Khiva",
-      "Termez"
-     ],
-     "why": "Its old town is a UNESCO site."
-    },
-    {
-     "level": 1,
-     "q": "Which colourful patterned silk fabric is an Uzbek tradition?",
-     "a": "Ikat (atlas)",
-     "wrong": [
-      "Batik",
-      "Tartan",
-      "Kente"
-     ],
-     "why": "Margilan is famous for it."
     },
     {
      "level": 1,
@@ -265,6 +190,157 @@
     },
     {
      "level": 2,
+     "q": "Which city's metro stations are decorated like palaces?",
+     "a": "Tashkent",
+     "wrong": [
+      "Samarkand",
+      "Bukhara",
+      "Nukus"
+     ],
+     "why": "It opened in 1977."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Uzbek gymnast competed at a record eight Olympics?",
+     "a": "Oksana Chusovitina",
+     "wrong": [
+      "Alina Kabaeva",
+      "Nellie Kim",
+      "Svetlana Khorkina"
+     ],
+     "why": "She competed until Tokyo 2020."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which scholar born near Bukhara wrote 'The Canon of Medicine'?",
+     "a": "Ibn Sina (Avicenna)",
+     "wrong": [
+      "Al-Biruni",
+      "Al-Farabi",
+      "Al-Khwarizmi"
+     ],
+     "why": "He was born in Afshona."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been President of Uzbekistan since 2016?",
+     "a": "Shavkat Mirziyoyev",
+     "wrong": [
+      "Islam Karimov",
+      "Abdulla Aripov",
+      "Rustam Azimov"
+     ],
+     "why": "He opened the country up."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which embroidered wall hangings are an Uzbek craft?",
+     "a": "Suzani",
+     "wrong": [
+      "Kilim",
+      "Tapestry",
+      "Quilt"
+     ],
+     "why": "They often show flowers and suns."
+    },
+    {
+     "level": 3,
+     "q": "Which museum in Nukus holds a huge collection of banned Soviet art?",
+     "a": "Savitsky Museum",
+     "wrong": [
+      "Hermitage of Tashkent",
+      "State Museum of Samarkand",
+      "Amir Timur Museum"
+     ],
+     "why": "It is called the 'Louvre of the Steppes'."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which grandson of Timur built an observatory in Samarkand?",
+     "a": "Ulugh Beg",
+     "wrong": [
+      "Shah Rukh",
+      "Babur",
+      "Husayn Bayqara"
+     ],
+     "why": "He made an accurate star catalogue."
+    },
+    {
+     "level": 2,
+     "q": "Which mathematician from Khwarazm gave his name to the word 'algorithm'?",
+     "a": "Al-Khwarizmi",
+     "wrong": [
+      "Al-Biruni",
+      "Ibn Sina",
+      "Omar Khayyam"
+     ],
+     "why": "His work also gave us 'algebra'."
+    },
+    {
+     "level": 1,
+     "q": "Which rice dish with meat and carrots is Uzbekistan's national dish?",
+     "a": "Plov",
+     "wrong": [
+      "Biryani",
+      "Paella",
+      "Pilaf of Persia"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "What is Uzbekistan's currency?",
+     "a": "Uzbek som",
+     "wrong": [
+      "Tenge",
+      "Ruble",
+      "Manat"
+     ],
+     "why": "It was introduced in 1993."
+    },
+    {
+     "level": 1,
+     "q": "Which colourful patterned silk fabric is an Uzbek tradition?",
+     "a": "Ikat (atlas)",
+     "wrong": [
+      "Batik",
+      "Tartan",
+      "Kente"
+     ],
+     "why": "Margilan is famous for it."
+    },
+    {
+     "level": 2,
      "q": "What is Uzbekistan unusual for, along with Liechtenstein?",
      "a": "Being doubly landlocked",
      "wrong": [
@@ -284,50 +360,6 @@
       "Bagel"
      ],
      "why": "Samarkand non is famous."
-    },
-    {
-     "level": 2,
-     "q": "Which embroidered wall hangings are an Uzbek craft?",
-     "a": "Suzani",
-     "wrong": [
-      "Kilim",
-      "Tapestry",
-      "Quilt"
-     ],
-     "why": "They often show flowers and suns."
-    },
-    {
-     "level": 2,
-     "q": "Which city's metro stations are decorated like palaces?",
-     "a": "Tashkent",
-     "wrong": [
-      "Samarkand",
-      "Bukhara",
-      "Nukus"
-     ],
-     "why": "It opened in 1977."
-    },
-    {
-     "level": 3,
-     "q": "Which museum in Nukus holds a huge collection of banned Soviet art?",
-     "a": "Savitsky Museum",
-     "wrong": [
-      "Hermitage of Tashkent",
-      "State Museum of Samarkand",
-      "Amir Timur Museum"
-     ],
-     "why": "It is called the 'Louvre of the Steppes'."
-    },
-    {
-     "level": 3,
-     "q": "Which Uzbek gymnast competed at a record eight Olympics?",
-     "a": "Oksana Chusovitina",
-     "wrong": [
-      "Alina Kabaeva",
-      "Nellie Kim",
-      "Svetlana Khorkina"
-     ],
-     "why": "She competed until Tokyo 2020."
     },
     {
      "level": 3,

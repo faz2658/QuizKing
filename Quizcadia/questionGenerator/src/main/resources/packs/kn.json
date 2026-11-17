@@ -3,30 +3,9 @@
  "country": "KN",
  "topics": [
   {
-   "name": "Saint Kitts and Nevis: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Saint Kitts and Nevis?",
-     "a": "Basseterre",
-     "wrong": [
-      "Charlestown",
-      "Sandy Point",
-      "Cayon"
-     ],
-     "why": "It is on St Kitts."
-    },
-    {
-     "level": 1,
-     "q": "Which country is the smallest in the Americas?",
-     "a": "Saint Kitts and Nevis",
-     "wrong": [
-      "Grenada",
-      "Barbados",
-      "Antigua and Barbuda"
-     ],
-     "why": "It is about 260 square kilometres."
-    },
     {
      "level": 1,
      "q": "From which country did it gain independence in 1983?",
@@ -48,28 +27,6 @@
       "Thomas Paine"
      ],
      "why": "A musical tells his story."
-    },
-    {
-     "level": 1,
-     "q": "What currency is used in Saint Kitts and Nevis?",
-     "a": "East Caribbean dollar",
-     "wrong": [
-      "Kittitian dollar",
-      "US dollar",
-      "Euro"
-     ],
-     "why": "The Eastern Caribbean Central Bank is in Basseterre."
-    },
-    {
-     "level": 1,
-     "q": "What was St Kitts the first island in the Caribbean to become?",
-     "a": "An English colony",
-     "wrong": [
-      "A French colony",
-      "A Spanish colony",
-      "A Dutch colony"
-     ],
-     "why": "Thomas Warner landed in 1623."
     },
     {
      "level": 1,
@@ -95,17 +52,6 @@
     },
     {
      "level": 2,
-     "q": "Who became Prime Minister in 2022?",
-     "a": "Terrance Drew",
-     "wrong": [
-      "Timothy Harris",
-      "Denzil Douglas",
-      "Kennedy Simmonds"
-     ],
-     "why": "He is a doctor."
-    },
-    {
-     "level": 2,
      "q": "Which 1626 massacre killed many Kalinago people on St Kitts?",
      "a": "Bloody Point massacre",
      "wrong": [
@@ -114,17 +60,6 @@
       "Kalinago War"
      ],
      "why": "English and French settlers carried it out."
-    },
-    {
-     "level": 2,
-     "q": "Which island has the right to leave the federation by referendum?",
-     "a": "Nevis",
-     "wrong": [
-      "St Kitts",
-      "Anguilla",
-      "Montserrat"
-     ],
-     "why": "A 1998 vote fell just short."
     },
     {
      "level": 2,
@@ -161,20 +96,43 @@
     },
     {
      "level": 3,
-     "q": "How did the French and English share St Kitts in the 1600s?",
-     "a": "They divided the island between them",
+     "q": "Which programme first started selling citizenship in 1984?",
+     "a": "St Kitts Citizenship by Investment",
      "wrong": [
-      "They took turns each year",
-      "They shared one capital",
-      "They split it by language"
+      "Dominica Programme",
+      "Malta Passport",
+      "Portugal Golden Visa"
      ],
-     "why": "The French held both ends."
+     "why": "It is the world's oldest."
     }
    ]
   },
   {
-   "name": "Saint Kitts and Nevis: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Saint Kitts and Nevis?",
+     "a": "Basseterre",
+     "wrong": [
+      "Charlestown",
+      "Sandy Point",
+      "Cayon"
+     ],
+     "why": "It is on St Kitts."
+    },
+    {
+     "level": 1,
+     "q": "What was St Kitts the first island in the Caribbean to become?",
+     "a": "An English colony",
+     "wrong": [
+      "A French colony",
+      "A Spanish colony",
+      "A Dutch colony"
+     ],
+     "why": "Thomas Warner landed in 1623."
+    },
     {
      "level": 1,
      "q": "Which fortress on St Kitts is a UNESCO site?",
@@ -207,28 +165,6 @@
       "Morne Diablotin"
      ],
      "why": "It has a crater lake."
-    },
-    {
-     "level": 1,
-     "q": "Which monkeys brought by the French live on St Kitts?",
-     "a": "Green vervet monkeys",
-     "wrong": [
-      "Howler monkeys",
-      "Capuchins",
-      "Spider monkeys"
-     ],
-     "why": "They outnumber people by some counts."
-    },
-    {
-     "level": 1,
-     "q": "Which festival in December is St Kitts's carnival?",
-     "a": "Sugar Mas",
-     "wrong": [
-      "Crop Over",
-      "Junkanoo",
-      "Spicemas"
-     ],
-     "why": "It runs into the New Year."
     },
     {
      "level": 1,
@@ -265,28 +201,6 @@
     },
     {
      "level": 2,
-     "q": "Which old bathhouse on Nevis was a famous spa?",
-     "a": "Bath Hotel",
-     "wrong": [
-      "Montpelier",
-      "Golden Rock",
-      "Four Seasons"
-     ],
-     "why": "It used hot springs."
-    },
-    {
-     "level": 2,
-     "q": "Which Kittitian sprinter won the 2003 world 100 m title?",
-     "a": "Kim Collins",
-     "wrong": [
-      "Darrel Brown",
-      "Antoine Adams",
-      "Jason Rogers"
-     ],
-     "why": "He was one of the world's oldest sprinters."
-    },
-    {
-     "level": 2,
      "q": "What does the island name 'Liamuiga' mean?",
      "a": "Fertile land",
      "wrong": [
@@ -306,7 +220,30 @@
       "Newcastle"
      ],
      "why": "Hamilton's birthplace is there."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Kittitian sprinter won the 2003 world 100 m title?",
+     "a": "Kim Collins",
+     "wrong": [
+      "Darrel Brown",
+      "Antoine Adams",
+      "Jason Rogers"
+     ],
+     "why": "He was one of the world's oldest sprinters."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
     {
      "level": 3,
      "q": "Which music festival in Basseterre draws big names each June?",
@@ -317,17 +254,112 @@
       "Crop Over"
      ],
      "why": "It began in 1996."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who became Prime Minister in 2022?",
+     "a": "Terrance Drew",
+     "wrong": [
+      "Timothy Harris",
+      "Denzil Douglas",
+      "Kennedy Simmonds"
+     ],
+     "why": "He is a doctor."
+    },
+    {
+     "level": 2,
+     "q": "Which island has the right to leave the federation by referendum?",
+     "a": "Nevis",
+     "wrong": [
+      "St Kitts",
+      "Anguilla",
+      "Montserrat"
+     ],
+     "why": "A 1998 vote fell just short."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which monkeys brought by the French live on St Kitts?",
+     "a": "Green vervet monkeys",
+     "wrong": [
+      "Howler monkeys",
+      "Capuchins",
+      "Spider monkeys"
+     ],
+     "why": "They outnumber people by some counts."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which country is the smallest in the Americas?",
+     "a": "Saint Kitts and Nevis",
+     "wrong": [
+      "Grenada",
+      "Barbados",
+      "Antigua and Barbuda"
+     ],
+     "why": "It is about 260 square kilometres."
+    },
+    {
+     "level": 1,
+     "q": "What currency is used in Saint Kitts and Nevis?",
+     "a": "East Caribbean dollar",
+     "wrong": [
+      "Kittitian dollar",
+      "US dollar",
+      "Euro"
+     ],
+     "why": "The Eastern Caribbean Central Bank is in Basseterre."
     },
     {
      "level": 3,
-     "q": "Which programme first started selling citizenship in 1984?",
-     "a": "St Kitts Citizenship by Investment",
+     "q": "How did the French and English share St Kitts in the 1600s?",
+     "a": "They divided the island between them",
      "wrong": [
-      "Dominica Programme",
-      "Malta Passport",
-      "Portugal Golden Visa"
+      "They took turns each year",
+      "They shared one capital",
+      "They split it by language"
      ],
-     "why": "It is the world's oldest."
+     "why": "The French held both ends."
+    },
+    {
+     "level": 1,
+     "q": "Which festival in December is St Kitts's carnival?",
+     "a": "Sugar Mas",
+     "wrong": [
+      "Crop Over",
+      "Junkanoo",
+      "Spicemas"
+     ],
+     "why": "It runs into the New Year."
+    },
+    {
+     "level": 2,
+     "q": "Which old bathhouse on Nevis was a famous spa?",
+     "a": "Bath Hotel",
+     "wrong": [
+      "Montpelier",
+      "Golden Rock",
+      "Four Seasons"
+     ],
+     "why": "It used hot springs."
     },
     {
      "level": 3,

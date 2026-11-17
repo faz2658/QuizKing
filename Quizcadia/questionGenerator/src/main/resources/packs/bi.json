@@ -3,30 +3,9 @@
  "country": "BI",
  "topics": [
   {
-   "name": "Burundi: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the political capital of Burundi?",
-     "a": "Gitega",
-     "wrong": [
-      "Bujumbura",
-      "Ngozi",
-      "Muyinga"
-     ],
-     "why": "It replaced Bujumbura in 2019."
-    },
-    {
-     "level": 1,
-     "q": "Which is the largest city of Burundi?",
-     "a": "Bujumbura",
-     "wrong": [
-      "Gitega",
-      "Ngozi",
-      "Rumonge"
-     ],
-     "why": "It lies on Lake Tanganyika."
-    },
     {
      "level": 1,
      "q": "From which country did Burundi gain independence in 1962?",
@@ -37,50 +16,6 @@
       "United Kingdom"
      ],
      "why": "It was part of Ruanda-Urundi."
-    },
-    {
-     "level": 1,
-     "q": "What is Burundi's currency?",
-     "a": "Burundian franc",
-     "wrong": [
-      "Rwandan franc",
-      "Shilling",
-      "Kwacha"
-     ],
-     "why": "Its code is BIF."
-    },
-    {
-     "level": 1,
-     "q": "Which lake forms much of Burundi's western border?",
-     "a": "Lake Tanganyika",
-     "wrong": [
-      "Lake Victoria",
-      "Lake Kivu",
-      "Lake Malawi"
-     ],
-     "why": "It is the world's second-deepest lake."
-    },
-    {
-     "level": 1,
-     "q": "What are Burundi's two main ethnic groups?",
-     "a": "Hutu and Tutsi",
-     "wrong": [
-      "Zulu and Xhosa",
-      "Kikuyu and Luo",
-      "Shona and Ndebele"
-     ],
-     "why": "The Twa are a small third group."
-    },
-    {
-     "level": 1,
-     "q": "Who has been President of Burundi since 2020?",
-     "a": "Évariste Ndayishimiye",
-     "wrong": [
-      "Pierre Nkurunziza",
-      "Pierre Buyoya",
-      "Melchior Ndadaye"
-     ],
-     "why": "He took over after Nkurunziza died."
     },
     {
      "level": 2,
@@ -114,17 +49,6 @@
       "Pretoria Accord"
      ],
      "why": "Nelson Mandela helped mediate."
-    },
-    {
-     "level": 2,
-     "q": "Which President's third term bid caused a 2015 crisis?",
-     "a": "Pierre Nkurunziza",
-     "wrong": [
-      "Pierre Buyoya",
-      "Évariste Ndayishimiye",
-      "Domitien Ndayizeye"
-     ],
-     "why": "He died in 2020."
     },
     {
      "level": 2,
@@ -173,40 +97,41 @@
    ]
   },
   {
-   "name": "Burundi: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "Which royal drummers of Burundi are on UNESCO's list?",
-     "a": "Royal Drum of Burundi (Karyenda)",
+     "q": "What is the political capital of Burundi?",
+     "a": "Gitega",
      "wrong": [
-      "Kodo drummers",
-      "Djembe ensemble",
-      "Talking drums of Ghana"
+      "Bujumbura",
+      "Ngozi",
+      "Muyinga"
      ],
-     "why": "Drummers carry huge drums on their heads."
+     "why": "It replaced Bujumbura in 2019."
     },
     {
      "level": 1,
-     "q": "Which crop is Burundi's main export?",
-     "a": "Coffee",
+     "q": "Which is the largest city of Burundi?",
+     "a": "Bujumbura",
      "wrong": [
-      "Cocoa",
-      "Cotton",
-      "Rubber"
+      "Gitega",
+      "Ngozi",
+      "Rumonge"
      ],
-     "why": "Tea is also important."
+     "why": "It lies on Lake Tanganyika."
     },
     {
      "level": 1,
-     "q": "Which language do almost all Burundians speak?",
-     "a": "Kirundi",
+     "q": "Which lake forms much of Burundi's western border?",
+     "a": "Lake Tanganyika",
      "wrong": [
-      "Kinyarwanda",
-      "Swahili",
-      "Luganda"
+      "Lake Victoria",
+      "Lake Kivu",
+      "Lake Malawi"
      ],
-     "why": "French and English are also official."
+     "why": "It is the world's second-deepest lake."
     },
     {
      "level": 1,
@@ -242,17 +167,6 @@
      "why": "It is one of Africa's smallest countries."
     },
     {
-     "level": 1,
-     "q": "Which fish from Lake Tanganyika is often eaten?",
-     "a": "Mukeke",
-     "wrong": [
-      "Chambo",
-      "Nile perch",
-      "Catfish"
-     ],
-     "why": "It is a local perch."
-    },
-    {
      "level": 2,
      "q": "Which nature reserve near Bujumbura protects hippos and birds?",
      "a": "Rusizi National Park",
@@ -262,28 +176,6 @@
       "Akagera"
      ],
      "why": "It is on the Rusizi River delta."
-    },
-    {
-     "level": 2,
-     "q": "Which Burundian runner won Olympic 5,000 m gold in 1996?",
-     "a": "Vénuste Niyongabo",
-     "wrong": [
-      "Francine Niyonsaba",
-      "Haile Gebrselassie",
-      "Noah Ngeny"
-     ],
-     "why": "It was Burundi's first gold."
-    },
-    {
-     "level": 2,
-     "q": "Which Burundian runner won Olympic 800 m silver in 2016?",
-     "a": "Francine Niyonsaba",
-     "wrong": [
-      "Caster Semenya",
-      "Margaret Wambui",
-      "Vénuste Niyongabo"
-     ],
-     "why": "She later ran longer races."
     },
     {
      "level": 2,
@@ -317,6 +209,51 @@
       "Akagera"
      ],
      "why": "It is the largest in Burundi."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Burundian runner won Olympic 5,000 m gold in 1996?",
+     "a": "Vénuste Niyongabo",
+     "wrong": [
+      "Francine Niyonsaba",
+      "Haile Gebrselassie",
+      "Noah Ngeny"
+     ],
+     "why": "It was Burundi's first gold."
+    },
+    {
+     "level": 2,
+     "q": "Which Burundian runner won Olympic 800 m silver in 2016?",
+     "a": "Francine Niyonsaba",
+     "wrong": [
+      "Caster Semenya",
+      "Margaret Wambui",
+      "Vénuste Niyongabo"
+     ],
+     "why": "She later ran longer races."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which royal drummers of Burundi are on UNESCO's list?",
+     "a": "Royal Drum of Burundi (Karyenda)",
+     "wrong": [
+      "Kodo drummers",
+      "Djembe ensemble",
+      "Talking drums of Ghana"
+     ],
+     "why": "Drummers carry huge drums on their heads."
     },
     {
      "level": 3,
@@ -328,6 +265,95 @@
       "Fishing"
      ],
      "why": "Drummers perform for visitors."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been President of Burundi since 2020?",
+     "a": "Évariste Ndayishimiye",
+     "wrong": [
+      "Pierre Nkurunziza",
+      "Pierre Buyoya",
+      "Melchior Ndadaye"
+     ],
+     "why": "He took over after Nkurunziza died."
+    },
+    {
+     "level": 2,
+     "q": "Which President's third term bid caused a 2015 crisis?",
+     "a": "Pierre Nkurunziza",
+     "wrong": [
+      "Pierre Buyoya",
+      "Évariste Ndayishimiye",
+      "Domitien Ndayizeye"
+     ],
+     "why": "He died in 2020."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Burundi's currency?",
+     "a": "Burundian franc",
+     "wrong": [
+      "Rwandan franc",
+      "Shilling",
+      "Kwacha"
+     ],
+     "why": "Its code is BIF."
+    },
+    {
+     "level": 1,
+     "q": "What are Burundi's two main ethnic groups?",
+     "a": "Hutu and Tutsi",
+     "wrong": [
+      "Zulu and Xhosa",
+      "Kikuyu and Luo",
+      "Shona and Ndebele"
+     ],
+     "why": "The Twa are a small third group."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is Burundi's main export?",
+     "a": "Coffee",
+     "wrong": [
+      "Cocoa",
+      "Cotton",
+      "Rubber"
+     ],
+     "why": "Tea is also important."
+    },
+    {
+     "level": 1,
+     "q": "Which language do almost all Burundians speak?",
+     "a": "Kirundi",
+     "wrong": [
+      "Kinyarwanda",
+      "Swahili",
+      "Luganda"
+     ],
+     "why": "French and English are also official."
+    },
+    {
+     "level": 1,
+     "q": "Which fish from Lake Tanganyika is often eaten?",
+     "a": "Mukeke",
+     "wrong": [
+      "Chambo",
+      "Nile perch",
+      "Catfish"
+     ],
+     "why": "It is a local perch."
     },
     {
      "level": 3,

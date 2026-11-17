@@ -3,19 +3,9 @@
  "country": "SV",
  "topics": [
   {
-   "name": "El Salvador: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of El Salvador?",
-     "a": "San Salvador",
-     "wrong": [
-      "Santa Ana",
-      "San Miguel",
-      "La Libertad"
-     ],
-     "why": "It lies below a volcano."
-    },
     {
      "level": 1,
      "q": "Which archbishop was murdered while saying Mass in 1980?",
@@ -26,17 +16,6 @@
       "Jon Sobrino"
      ],
      "why": "He was made a saint in 2018."
-    },
-    {
-     "level": 1,
-     "q": "Which country is the smallest in Central America?",
-     "a": "El Salvador",
-     "wrong": [
-      "Belize",
-      "Costa Rica",
-      "Panama"
-     ],
-     "why": "It is also the most densely populated."
     },
     {
      "level": 1,
@@ -59,17 +38,6 @@
       "Litecoin"
      ],
      "why": "It was the first country to do so, and dropped it in 2025."
-    },
-    {
-     "level": 1,
-     "q": "Who has been President of El Salvador since 2019?",
-     "a": "Nayib Bukele",
-     "wrong": [
-      "Salvador Sánchez Cerén",
-      "Mauricio Funes",
-      "Tony Saca"
-     ],
-     "why": "He started a big crackdown on gangs."
     },
     {
      "level": 1,
@@ -106,17 +74,6 @@
     },
     {
      "level": 2,
-     "q": "Which guerrilla front became a political party after the war?",
-     "a": "FMLN",
-     "wrong": [
-      "FSLN",
-      "URNG",
-      "ARENA"
-     ],
-     "why": "It was named after Farabundo Martí."
-    },
-    {
-     "level": 2,
      "q": "Which Maya village was buried by volcanic ash around 600 AD?",
      "a": "Joya de Cerén",
      "wrong": [
@@ -125,17 +82,6 @@
       "Copán"
      ],
      "why": "It is called the 'Pompeii of the Americas'."
-    },
-    {
-     "level": 2,
-     "q": "Which country did El Salvador fight in the 1969 Football War?",
-     "a": "Honduras",
-     "wrong": [
-      "Guatemala",
-      "Nicaragua",
-      "Mexico"
-     ],
-     "why": "It lasted about 100 hours."
     },
     {
      "level": 3,
@@ -147,17 +93,6 @@
       "La Esperanza"
      ],
      "why": "It holds tens of thousands."
-    },
-    {
-     "level": 3,
-     "q": "Which Salvadoran poet wrote 'Poema de amor'?",
-     "a": "Roque Dalton",
-     "wrong": [
-      "Claribel Alegría",
-      "Salarrué",
-      "Alfredo Espino"
-     ],
-     "why": "He was killed in 1975."
     },
     {
      "level": 3,
@@ -173,18 +108,19 @@
    ]
   },
   {
-   "name": "El Salvador: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "Which thick stuffed corn tortilla is the national dish?",
-     "a": "Pupusa",
+     "q": "What is the capital of El Salvador?",
+     "a": "San Salvador",
      "wrong": [
-      "Baleada",
-      "Arepa",
-      "Tamale"
+      "Santa Ana",
+      "San Miguel",
+      "La Libertad"
      ],
-     "why": "It has its own national day in November."
+     "why": "It lies below a volcano."
     },
     {
      "level": 1,
@@ -196,28 +132,6 @@
       "Gulf of Mexico"
      ],
      "why": "It is the only Central American country without a Caribbean coast."
-    },
-    {
-     "level": 1,
-     "q": "Which beach town is famous for surfing?",
-     "a": "El Tunco",
-     "wrong": [
-      "Tamarindo",
-      "San Juan del Sur",
-      "Montañita"
-     ],
-     "why": "It is near La Libertad."
-    },
-    {
-     "level": 1,
-     "q": "Which flowering plant is El Salvador's national flower?",
-     "a": "Flor de izote",
-     "wrong": [
-      "Orchid",
-      "Rose",
-      "Sunflower"
-     ],
-     "why": "It is also eaten."
     },
     {
      "level": 1,
@@ -242,17 +156,6 @@
      "why": "It erupted almost constantly until 1966."
     },
     {
-     "level": 1,
-     "q": "What are Salvadorans called informally?",
-     "a": "Guanacos",
-     "wrong": [
-      "Ticos",
-      "Nicas",
-      "Catrachos"
-     ],
-     "why": "It is a friendly nickname."
-    },
-    {
      "level": 2,
      "q": "Which route of colourful mountain towns is famous with visitors?",
      "a": "Ruta de las Flores",
@@ -275,15 +178,43 @@
      "why": "It formed in a huge eruption."
     },
     {
-     "level": 2,
-     "q": "Which Maya site has a large pyramid in Chalchuapa?",
-     "a": "Tazumal",
+     "level": 3,
+     "q": "Which crater lake changes colour and draws visitors near Santa Ana?",
+     "a": "Lake Coatepeque",
      "wrong": [
-      "Joya de Cerén",
-      "Copán",
-      "San Andrés"
+      "Lake Ilopango",
+      "Lake Güija",
+      "Lake Yojoa"
      ],
-     "why": "It is the country's best-known ruin."
+     "why": "It can turn turquoise."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which country did El Salvador fight in the 1969 Football War?",
+     "a": "Honduras",
+     "wrong": [
+      "Guatemala",
+      "Nicaragua",
+      "Mexico"
+     ],
+     "why": "It lasted about 100 hours."
+    },
+    {
+     "level": 1,
+     "q": "Which beach town is famous for surfing?",
+     "a": "El Tunco",
+     "wrong": [
+      "Tamarindo",
+      "San Juan del Sur",
+      "Montañita"
+     ],
+     "why": "It is near La Libertad."
     },
     {
      "level": 2,
@@ -295,6 +226,129 @@
       "Hugo Sánchez"
      ],
      "why": "He played for Cádiz in Spain."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Salvadoran poet wrote 'Poema de amor'?",
+     "a": "Roque Dalton",
+     "wrong": [
+      "Claribel Alegría",
+      "Salarrué",
+      "Alfredo Espino"
+     ],
+     "why": "He was killed in 1975."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been President of El Salvador since 2019?",
+     "a": "Nayib Bukele",
+     "wrong": [
+      "Salvador Sánchez Cerén",
+      "Mauricio Funes",
+      "Tony Saca"
+     ],
+     "why": "He started a big crackdown on gangs."
+    },
+    {
+     "level": 2,
+     "q": "Which guerrilla front became a political party after the war?",
+     "a": "FMLN",
+     "wrong": [
+      "FSLN",
+      "URNG",
+      "ARENA"
+     ],
+     "why": "It was named after Farabundo Martí."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which artist from La Palma made the colourful naïve painting style famous?",
+     "a": "Fernando Llort",
+     "wrong": [
+      "Salarrué",
+      "Benjamín Cañas",
+      "Rosa Mena Valenzuela"
+     ],
+     "why": "His designs are on many crafts."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which country is the smallest in Central America?",
+     "a": "El Salvador",
+     "wrong": [
+      "Belize",
+      "Costa Rica",
+      "Panama"
+     ],
+     "why": "It is also the most densely populated."
+    },
+    {
+     "level": 1,
+     "q": "Which thick stuffed corn tortilla is the national dish?",
+     "a": "Pupusa",
+     "wrong": [
+      "Baleada",
+      "Arepa",
+      "Tamale"
+     ],
+     "why": "It has its own national day in November."
+    },
+    {
+     "level": 1,
+     "q": "Which flowering plant is El Salvador's national flower?",
+     "a": "Flor de izote",
+     "wrong": [
+      "Orchid",
+      "Rose",
+      "Sunflower"
+     ],
+     "why": "It is also eaten."
+    },
+    {
+     "level": 1,
+     "q": "What are Salvadorans called informally?",
+     "a": "Guanacos",
+     "wrong": [
+      "Ticos",
+      "Nicas",
+      "Catrachos"
+     ],
+     "why": "It is a friendly nickname."
+    },
+    {
+     "level": 2,
+     "q": "Which Maya site has a large pyramid in Chalchuapa?",
+     "a": "Tazumal",
+     "wrong": [
+      "Joya de Cerén",
+      "Copán",
+      "San Andrés"
+     ],
+     "why": "It is the country's best-known ruin."
     },
     {
      "level": 2,
@@ -317,28 +371,6 @@
       "La Tomatina"
      ],
      "why": "It is held on 31 August."
-    },
-    {
-     "level": 3,
-     "q": "Which crater lake changes colour and draws visitors near Santa Ana?",
-     "a": "Lake Coatepeque",
-     "wrong": [
-      "Lake Ilopango",
-      "Lake Güija",
-      "Lake Yojoa"
-     ],
-     "why": "It can turn turquoise."
-    },
-    {
-     "level": 3,
-     "q": "Which artist from La Palma made the colourful naïve painting style famous?",
-     "a": "Fernando Llort",
-     "wrong": [
-      "Salarrué",
-      "Benjamín Cañas",
-      "Rosa Mena Valenzuela"
-     ],
-     "why": "His designs are on many crafts."
     }
    ]
   }

@@ -3,74 +3,9 @@
  "country": "PS",
  "topics": [
   {
-   "name": "Palestine: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which city does Palestine claim as its capital?",
-     "a": "East Jerusalem",
-     "wrong": [
-      "Ramallah",
-      "Gaza City",
-      "Hebron"
-     ],
-     "why": "The government is based in Ramallah."
-    },
-    {
-     "level": 1,
-     "q": "Which two separate areas make up the Palestinian territories?",
-     "a": "West Bank and Gaza Strip",
-     "wrong": [
-      "Golan Heights and Sinai",
-      "Galilee and Negev",
-      "Jordan Valley and Sinai"
-     ],
-     "why": "Israel lies between them."
-    },
-    {
-     "level": 1,
-     "q": "Which leader headed the PLO for decades?",
-     "a": "Yasser Arafat",
-     "wrong": [
-      "Mahmoud Abbas",
-      "Ismail Haniyeh",
-      "Marwan Barghouti"
-     ],
-     "why": "He shared the 1994 Nobel Peace Prize."
-    },
-    {
-     "level": 1,
-     "q": "Who has been President of the Palestinian Authority since 2005?",
-     "a": "Mahmoud Abbas",
-     "wrong": [
-      "Yasser Arafat",
-      "Salam Fayyad",
-      "Rami Hamdallah"
-     ],
-     "why": "He is also known as Abu Mazen."
-    },
-    {
-     "level": 1,
-     "q": "Which 1993 agreements created the Palestinian Authority?",
-     "a": "Oslo Accords",
-     "wrong": [
-      "Camp David Accords",
-      "Abraham Accords",
-      "Wye River Memorandum"
-     ],
-     "why": "They were signed at the White House."
-    },
-    {
-     "level": 1,
-     "q": "Which city in the West Bank is the birthplace of Jesus in Christian tradition?",
-     "a": "Bethlehem",
-     "wrong": [
-      "Nazareth",
-      "Jericho",
-      "Nablus"
-     ],
-     "why": "The Church of the Nativity is there."
-    },
     {
      "level": 1,
      "q": "Which ancient city is often called the oldest continuously inhabited city?",
@@ -105,50 +40,6 @@
      "why": "It means 'shaking off'."
     },
     {
-     "level": 2,
-     "q": "In which year did the UN General Assembly make Palestine a non-member observer state?",
-     "a": "2012",
-     "wrong": [
-      "1993",
-      "2005",
-      "2020"
-     ],
-     "why": "It was upgraded from an observer entity."
-    },
-    {
-     "level": 2,
-     "q": "Which city holds the Cave of the Patriarchs?",
-     "a": "Hebron",
-     "wrong": [
-      "Nablus",
-      "Jericho",
-      "Bethlehem"
-     ],
-     "why": "It is sacred to Jews and Muslims."
-    },
-    {
-     "level": 2,
-     "q": "Which barrier built by Israel runs through the West Bank?",
-     "a": "West Bank barrier",
-     "wrong": [
-      "Green Line",
-      "Gaza fence",
-      "Jordan wall"
-     ],
-     "why": "Construction began in 2002."
-    },
-    {
-     "level": 3,
-     "q": "Which UN agency serves Palestinian refugees?",
-     "a": "UNRWA",
-     "wrong": [
-      "UNHCR",
-      "UNICEF",
-      "WFP"
-     ],
-     "why": "It was set up in 1949."
-    },
-    {
      "level": 3,
      "q": "Which 1916 deal divided the region between Britain and France?",
      "a": "Sykes–Picot Agreement",
@@ -173,8 +64,220 @@
    ]
   },
   {
-   "name": "Palestine: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which city does Palestine claim as its capital?",
+     "a": "East Jerusalem",
+     "wrong": [
+      "Ramallah",
+      "Gaza City",
+      "Hebron"
+     ],
+     "why": "The government is based in Ramallah."
+    },
+    {
+     "level": 1,
+     "q": "Which city in the West Bank is the birthplace of Jesus in Christian tradition?",
+     "a": "Bethlehem",
+     "wrong": [
+      "Nazareth",
+      "Jericho",
+      "Nablus"
+     ],
+     "why": "The Church of the Nativity is there."
+    },
+    {
+     "level": 2,
+     "q": "Which city holds the Cave of the Patriarchs?",
+     "a": "Hebron",
+     "wrong": [
+      "Nablus",
+      "Jericho",
+      "Bethlehem"
+     ],
+     "why": "It is sacred to Jews and Muslims."
+    },
+    {
+     "level": 1,
+     "q": "Which salty lake lies on the West Bank's eastern edge?",
+     "a": "Dead Sea",
+     "wrong": [
+      "Sea of Galilee",
+      "Lake Tiberias",
+      "Red Sea"
+     ],
+     "why": "It is the lowest place on land."
+    },
+    {
+     "level": 3,
+     "q": "Which church in Bethlehem is a UNESCO site?",
+     "a": "Church of the Nativity",
+     "wrong": [
+      "Church of the Holy Sepulchre",
+      "St Catherine's Monastery",
+      "Basilica of the Annunciation"
+     ],
+     "why": "It is one of the oldest working churches."
+    },
+    {
+     "level": 3,
+     "q": "Which Palestinian city is famous for olive oil soap?",
+     "a": "Nablus",
+     "wrong": [
+      "Hebron",
+      "Jenin",
+      "Ramallah"
+     ],
+     "why": "Soap has been made there for centuries."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been President of the Palestinian Authority since 2005?",
+     "a": "Mahmoud Abbas",
+     "wrong": [
+      "Yasser Arafat",
+      "Salam Fayyad",
+      "Rami Hamdallah"
+     ],
+     "why": "He is also known as Abu Mazen."
+    },
+    {
+     "level": 1,
+     "q": "Which 1993 agreements created the Palestinian Authority?",
+     "a": "Oslo Accords",
+     "wrong": [
+      "Camp David Accords",
+      "Abraham Accords",
+      "Wye River Memorandum"
+     ],
+     "why": "They were signed at the White House."
+    },
+    {
+     "level": 2,
+     "q": "Which poet is called Palestine's national poet?",
+     "a": "Mahmoud Darwish",
+     "wrong": [
+      "Edward Said",
+      "Ghassan Kanafani",
+      "Fadwa Tuqan"
+     ],
+     "why": "He wrote 'Identity Card'."
+    },
+    {
+     "level": 2,
+     "q": "Which scholar wrote 'Orientalism'?",
+     "a": "Edward Said",
+     "wrong": [
+      "Mahmoud Darwish",
+      "Rashid Khalidi",
+      "Sari Nusseibeh"
+     ],
+     "why": "He was born in Jerusalem."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "In which year did the UN General Assembly make Palestine a non-member observer state?",
+     "a": "2012",
+     "wrong": [
+      "1993",
+      "2005",
+      "2020"
+     ],
+     "why": "It was upgraded from an observer entity."
+    },
+    {
+     "level": 3,
+     "q": "Which UN agency serves Palestinian refugees?",
+     "a": "UNRWA",
+     "wrong": [
+      "UNHCR",
+      "UNICEF",
+      "WFP"
+     ],
+     "why": "It was set up in 1949."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which embroidery style is on UNESCO's list?",
+     "a": "Tatreez",
+     "wrong": [
+      "Suzani",
+      "Sashiko",
+      "Kantha"
+     ],
+     "why": "Patterns show a woman's village."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient palace near Jericho has a famous 'Tree of Life' mosaic?",
+     "a": "Hisham's Palace",
+     "wrong": [
+      "Herodium",
+      "Masada",
+      "Qasr al-Hayr"
+     ],
+     "why": "It dates from the Umayyad period."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which two separate areas make up the Palestinian territories?",
+     "a": "West Bank and Gaza Strip",
+     "wrong": [
+      "Golan Heights and Sinai",
+      "Galilee and Negev",
+      "Jordan Valley and Sinai"
+     ],
+     "why": "Israel lies between them."
+    },
+    {
+     "level": 1,
+     "q": "Which leader headed the PLO for decades?",
+     "a": "Yasser Arafat",
+     "wrong": [
+      "Mahmoud Abbas",
+      "Ismail Haniyeh",
+      "Marwan Barghouti"
+     ],
+     "why": "He shared the 1994 Nobel Peace Prize."
+    },
+    {
+     "level": 2,
+     "q": "Which barrier built by Israel runs through the West Bank?",
+     "a": "West Bank barrier",
+     "wrong": [
+      "Green Line",
+      "Gaza fence",
+      "Jordan wall"
+     ],
+     "why": "Construction began in 2002."
+    },
     {
      "level": 1,
      "q": "Which black-and-white checked scarf is a Palestinian symbol?",
@@ -196,17 +299,6 @@
       "Tabbouleh"
      ],
      "why": "They are often eaten in pita."
-    },
-    {
-     "level": 1,
-     "q": "Which salty lake lies on the West Bank's eastern edge?",
-     "a": "Dead Sea",
-     "wrong": [
-      "Sea of Galilee",
-      "Lake Tiberias",
-      "Red Sea"
-     ],
-     "why": "It is the lowest place on land."
     },
     {
      "level": 1,
@@ -254,28 +346,6 @@
     },
     {
      "level": 2,
-     "q": "Which poet is called Palestine's national poet?",
-     "a": "Mahmoud Darwish",
-     "wrong": [
-      "Edward Said",
-      "Ghassan Kanafani",
-      "Fadwa Tuqan"
-     ],
-     "why": "He wrote 'Identity Card'."
-    },
-    {
-     "level": 2,
-     "q": "Which scholar wrote 'Orientalism'?",
-     "a": "Edward Said",
-     "wrong": [
-      "Mahmoud Darwish",
-      "Rashid Khalidi",
-      "Sari Nusseibeh"
-     ],
-     "why": "He was born in Jerusalem."
-    },
-    {
-     "level": 2,
      "q": "Which chicken and onion dish on taboon bread is the national dish?",
      "a": "Musakhan",
      "wrong": [
@@ -295,50 +365,6 @@
       "Kabsa"
      ],
      "why": "Its name means 'upside down'."
-    },
-    {
-     "level": 2,
-     "q": "Which embroidery style is on UNESCO's list?",
-     "a": "Tatreez",
-     "wrong": [
-      "Suzani",
-      "Sashiko",
-      "Kantha"
-     ],
-     "why": "Patterns show a woman's village."
-    },
-    {
-     "level": 3,
-     "q": "Which church in Bethlehem is a UNESCO site?",
-     "a": "Church of the Nativity",
-     "wrong": [
-      "Church of the Holy Sepulchre",
-      "St Catherine's Monastery",
-      "Basilica of the Annunciation"
-     ],
-     "why": "It is one of the oldest working churches."
-    },
-    {
-     "level": 3,
-     "q": "Which ancient palace near Jericho has a famous 'Tree of Life' mosaic?",
-     "a": "Hisham's Palace",
-     "wrong": [
-      "Herodium",
-      "Masada",
-      "Qasr al-Hayr"
-     ],
-     "why": "It dates from the Umayyad period."
-    },
-    {
-     "level": 3,
-     "q": "Which Palestinian city is famous for olive oil soap?",
-     "a": "Nablus",
-     "wrong": [
-      "Hebron",
-      "Jenin",
-      "Ramallah"
-     ],
-     "why": "Soap has been made there for centuries."
     }
    ]
   }

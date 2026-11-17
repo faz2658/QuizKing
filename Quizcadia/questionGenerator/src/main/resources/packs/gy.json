@@ -3,19 +3,9 @@
  "country": "GY",
  "topics": [
   {
-   "name": "Guyana: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Guyana?",
-     "a": "Georgetown",
-     "wrong": [
-      "Linden",
-      "New Amsterdam",
-      "Bartica"
-     ],
-     "why": "It is built below sea level."
-    },
     {
      "level": 1,
      "q": "What was Guyana called before 1966?",
@@ -29,39 +19,6 @@
     },
     {
      "level": 1,
-     "q": "What is the official language of Guyana?",
-     "a": "English",
-     "wrong": [
-      "Spanish",
-      "Portuguese",
-      "Dutch"
-     ],
-     "why": "It is the only English-speaking country in South America."
-    },
-    {
-     "level": 1,
-     "q": "What is Guyana's currency?",
-     "a": "Guyanese dollar",
-     "wrong": [
-      "Surinamese dollar",
-      "Real",
-      "Bolívar"
-     ],
-     "why": "Its code is GYD."
-    },
-    {
-     "level": 1,
-     "q": "Which neighbour claims about two-thirds of Guyana's land?",
-     "a": "Venezuela",
-     "wrong": [
-      "Brazil",
-      "Suriname",
-      "Colombia"
-     ],
-     "why": "It claims the Essequibo region."
-    },
-    {
-     "level": 1,
      "q": "What discovery since 2015 has made Guyana's economy grow fast?",
      "a": "Offshore oil",
      "wrong": [
@@ -70,17 +27,6 @@
       "Natural gas"
      ],
      "why": "It has one of the fastest-growing economies."
-    },
-    {
-     "level": 1,
-     "q": "What does the name Guyana mean?",
-     "a": "Land of many waters",
-     "wrong": [
-      "Land of gold",
-      "Green land",
-      "Land of rivers and mountains"
-     ],
-     "why": "It comes from an Indigenous word."
     },
     {
      "level": 2,
@@ -147,34 +93,35 @@
       "Bussa's Rebellion"
      ],
      "why": "Quamina was one of its leaders."
-    },
-    {
-     "level": 3,
-     "q": "Who has been President of Guyana since 2020?",
-     "a": "Irfaan Ali",
-     "wrong": [
-      "David Granger",
-      "Donald Ramotar",
-      "Bharrat Jagdeo"
-     ],
-     "why": "He leads the PPP."
-    },
-    {
-     "level": 3,
-     "q": "Which group came to Guyana in the largest numbers as indentured workers?",
-     "a": "Indians",
-     "wrong": [
-      "Chinese",
-      "Portuguese",
-      "Irish"
-     ],
-     "why": "Their descendants are now the largest group."
     }
    ]
   },
   {
-   "name": "Guyana: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Guyana?",
+     "a": "Georgetown",
+     "wrong": [
+      "Linden",
+      "New Amsterdam",
+      "Bartica"
+     ],
+     "why": "It is built below sea level."
+    },
+    {
+     "level": 1,
+     "q": "Which neighbour claims about two-thirds of Guyana's land?",
+     "a": "Venezuela",
+     "wrong": [
+      "Brazil",
+      "Suriname",
+      "Colombia"
+     ],
+     "why": "It claims the Essequibo region."
+    },
     {
      "level": 1,
      "q": "Which single-drop waterfall in Guyana is one of the world's most powerful?",
@@ -185,72 +132,6 @@
       "Niagara Falls"
      ],
      "why": "It drops about 226 m."
-    },
-    {
-     "level": 1,
-     "q": "Which giant water lily is Guyana's national flower?",
-     "a": "Victoria amazonica",
-     "wrong": [
-      "Lotus",
-      "Rafflesia",
-      "Hibiscus"
-     ],
-     "why": "Its leaves can hold a child."
-    },
-    {
-     "level": 1,
-     "q": "Which festival on Republic Day has colourful parades?",
-     "a": "Mashramani",
-     "wrong": [
-      "Crop Over",
-      "Junkanoo",
-      "Diwali"
-     ],
-     "why": "It is held on 23 February."
-    },
-    {
-     "level": 1,
-     "q": "Which bird with a crest and claws on its wings is the national bird?",
-     "a": "Hoatzin",
-     "wrong": [
-      "Toucan",
-      "Harpy eagle",
-      "Scarlet ibis"
-     ],
-     "why": "It is also called the 'stinking bird'."
-    },
-    {
-     "level": 1,
-     "q": "Which slow-cooked meat stew is a Christmas favourite?",
-     "a": "Pepperpot",
-     "wrong": [
-      "Callaloo",
-      "Oil down",
-      "Goat curry"
-     ],
-     "why": "It uses cassareep from cassava."
-    },
-    {
-     "level": 1,
-     "q": "Which big wooden cathedral is in Georgetown?",
-     "a": "St George's Cathedral",
-     "wrong": [
-      "St Paul's Cathedral",
-      "Christ Church",
-      "Cathedral of St Mary"
-     ],
-     "why": "It is one of the tallest wooden churches."
-    },
-    {
-     "level": 1,
-     "q": "Which sport does Guyana play as part of the West Indies?",
-     "a": "Cricket",
-     "wrong": [
-      "Rugby",
-      "Baseball",
-      "Ice hockey"
-     ],
-     "why": "Providence Stadium hosts matches."
     },
     {
      "level": 2,
@@ -276,17 +157,6 @@
     },
     {
      "level": 2,
-     "q": "Which Guyanese cricketer captained the West Indies to two World Cups?",
-     "a": "Clive Lloyd",
-     "wrong": [
-      "Rohan Kanhai",
-      "Shivnarine Chanderpaul",
-      "Lance Gibbs"
-     ],
-     "why": "They won in 1975 and 1979."
-    },
-    {
-     "level": 2,
      "q": "Which brown sugar is named after a Guyanese region?",
      "a": "Demerara sugar",
      "wrong": [
@@ -295,6 +165,173 @@
       "Jaggery"
      ],
      "why": "It has large golden crystals."
+    },
+    {
+     "level": 3,
+     "q": "Which seawall in Georgetown keeps the sea out?",
+     "a": "Georgetown Seawall",
+     "wrong": [
+      "Great Wall of Demerara",
+      "Dutch Dyke",
+      "Kaieteur Wall"
+     ],
+     "why": "Families stroll on it on Sundays."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which sport does Guyana play as part of the West Indies?",
+     "a": "Cricket",
+     "wrong": [
+      "Rugby",
+      "Baseball",
+      "Ice hockey"
+     ],
+     "why": "Providence Stadium hosts matches."
+    },
+    {
+     "level": 2,
+     "q": "Which Guyanese cricketer captained the West Indies to two World Cups?",
+     "a": "Clive Lloyd",
+     "wrong": [
+      "Rohan Kanhai",
+      "Shivnarine Chanderpaul",
+      "Lance Gibbs"
+     ],
+     "why": "They won in 1975 and 1979."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Who has been President of Guyana since 2020?",
+     "a": "Irfaan Ali",
+     "wrong": [
+      "David Granger",
+      "Donald Ramotar",
+      "Bharrat Jagdeo"
+     ],
+     "why": "He leads the PPP."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which bird with a crest and claws on its wings is the national bird?",
+     "a": "Hoatzin",
+     "wrong": [
+      "Toucan",
+      "Harpy eagle",
+      "Scarlet ibis"
+     ],
+     "why": "It is also called the 'stinking bird'."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the official language of Guyana?",
+     "a": "English",
+     "wrong": [
+      "Spanish",
+      "Portuguese",
+      "Dutch"
+     ],
+     "why": "It is the only English-speaking country in South America."
+    },
+    {
+     "level": 1,
+     "q": "What is Guyana's currency?",
+     "a": "Guyanese dollar",
+     "wrong": [
+      "Surinamese dollar",
+      "Real",
+      "Bolívar"
+     ],
+     "why": "Its code is GYD."
+    },
+    {
+     "level": 1,
+     "q": "What does the name Guyana mean?",
+     "a": "Land of many waters",
+     "wrong": [
+      "Land of gold",
+      "Green land",
+      "Land of rivers and mountains"
+     ],
+     "why": "It comes from an Indigenous word."
+    },
+    {
+     "level": 3,
+     "q": "Which group came to Guyana in the largest numbers as indentured workers?",
+     "a": "Indians",
+     "wrong": [
+      "Chinese",
+      "Portuguese",
+      "Irish"
+     ],
+     "why": "Their descendants are now the largest group."
+    },
+    {
+     "level": 1,
+     "q": "Which giant water lily is Guyana's national flower?",
+     "a": "Victoria amazonica",
+     "wrong": [
+      "Lotus",
+      "Rafflesia",
+      "Hibiscus"
+     ],
+     "why": "Its leaves can hold a child."
+    },
+    {
+     "level": 1,
+     "q": "Which festival on Republic Day has colourful parades?",
+     "a": "Mashramani",
+     "wrong": [
+      "Crop Over",
+      "Junkanoo",
+      "Diwali"
+     ],
+     "why": "It is held on 23 February."
+    },
+    {
+     "level": 1,
+     "q": "Which slow-cooked meat stew is a Christmas favourite?",
+     "a": "Pepperpot",
+     "wrong": [
+      "Callaloo",
+      "Oil down",
+      "Goat curry"
+     ],
+     "why": "It uses cassareep from cassava."
+    },
+    {
+     "level": 1,
+     "q": "Which big wooden cathedral is in Georgetown?",
+     "a": "St George's Cathedral",
+     "wrong": [
+      "St Paul's Cathedral",
+      "Christ Church",
+      "Cathedral of St Mary"
+     ],
+     "why": "It is one of the tallest wooden churches."
     },
     {
      "level": 2,
@@ -317,17 +354,6 @@
       "Mashramani"
      ],
      "why": "It is celebrated by the Hindu community."
-    },
-    {
-     "level": 3,
-     "q": "Which seawall in Georgetown keeps the sea out?",
-     "a": "Georgetown Seawall",
-     "wrong": [
-      "Great Wall of Demerara",
-      "Dutch Dyke",
-      "Kaieteur Wall"
-     ],
-     "why": "Families stroll on it on Sundays."
     },
     {
      "level": 3,

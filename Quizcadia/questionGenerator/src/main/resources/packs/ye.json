@@ -3,7 +3,8 @@
  "country": "YE",
  "topics": [
   {
-   "name": "Yemen: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -29,17 +30,6 @@
     },
     {
      "level": 1,
-     "q": "In which year did North and South Yemen unite?",
-     "a": "1990",
-     "wrong": [
-      "1967",
-      "1979",
-      "1994"
-     ],
-     "why": "Unity Day is 22 May."
-    },
-    {
-     "level": 1,
      "q": "Which port city was a British colony until 1967?",
      "a": "Aden",
      "wrong": [
@@ -48,17 +38,6 @@
       "Mocha"
      ],
      "why": "It was a busy refuelling port."
-    },
-    {
-     "level": 1,
-     "q": "Which drink got its name from the Yemeni port of Mocha?",
-     "a": "Mocha coffee",
-     "wrong": [
-      "Earl Grey tea",
-      "Turkish coffee",
-      "Arabica tea"
-     ],
-     "why": "Yemen was the first big coffee exporter."
     },
     {
      "level": 1,
@@ -117,17 +96,6 @@
     },
     {
      "level": 2,
-     "q": "Which strait connects the Red Sea to the Gulf of Aden?",
-     "a": "Bab-el-Mandeb",
-     "wrong": [
-      "Strait of Hormuz",
-      "Suez Canal",
-      "Strait of Tiran"
-     ],
-     "why": "Its name means 'Gate of Lamentation'."
-    },
-    {
-     "level": 2,
      "q": "Which kingdom ruled much of Yemen from about 110 BC to AD 525?",
      "a": "Himyarite Kingdom",
      "wrong": [
@@ -169,12 +137,46 @@
       "Shajar al-Durr"
      ],
      "why": "She ruled for over 50 years."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient city in Hadramawt was a centre of Islamic learning?",
+     "a": "Tarim",
+     "wrong": [
+      "Zabid",
+      "Shibam",
+      "Seiyun"
+     ],
+     "why": "It has hundreds of mosques."
+    },
+    {
+     "level": 3,
+     "q": "Which coastal town was Yemen's capital under the Ziyadid dynasty and is a UNESCO site?",
+     "a": "Zabid",
+     "wrong": [
+      "Mocha",
+      "Hodeidah",
+      "Aden"
+     ],
+     "why": "It had a famous university."
     }
    ]
   },
   {
-   "name": "Yemen: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 2,
+     "q": "Which strait connects the Red Sea to the Gulf of Aden?",
+     "a": "Bab-el-Mandeb",
+     "wrong": [
+      "Strait of Hormuz",
+      "Suez Canal",
+      "Strait of Tiran"
+     ],
+     "why": "Its name means 'Gate of Lamentation'."
+    },
     {
      "level": 1,
      "q": "Which city is Yemen's historic capital?",
@@ -188,17 +190,6 @@
     },
     {
      "level": 1,
-     "q": "Which tall mud-brick towers make Shibam famous?",
-     "a": "Mud-brick skyscrapers",
-     "wrong": [
-      "Glass towers",
-      "Stone pyramids",
-      "Wooden pagodas"
-     ],
-     "why": "It is called the 'Manhattan of the Desert'."
-    },
-    {
-     "level": 1,
      "q": "Which island with dragon's blood trees belongs to Yemen?",
      "a": "Socotra",
      "wrong": [
@@ -207,6 +198,78 @@
       "Masirah"
      ],
      "why": "A third of its plants are found nowhere else."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies west of Yemen?",
+     "a": "Red Sea",
+     "wrong": [
+      "Arabian Sea",
+      "Mediterranean",
+      "Persian Gulf"
+     ],
+     "why": "The Gulf of Aden lies to the south."
+    },
+    {
+     "level": 2,
+     "q": "Which valley region in the east is home to Shibam and Tarim?",
+     "a": "Hadramawt",
+     "wrong": [
+      "Tihama",
+      "Marib",
+      "Lahej"
+     ],
+     "why": "It was famous for frankincense."
+    },
+    {
+     "level": 3,
+     "q": "What is Yemen's highest mountain, also the highest in Arabia?",
+     "a": "Jabal an-Nabi Shu'ayb",
+     "wrong": [
+      "Jebel Shams",
+      "Jabal Sawda",
+      "Jabal Bura"
+     ],
+     "why": "It is about 3,666 m high."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did North and South Yemen unite?",
+     "a": "1990",
+     "wrong": [
+      "1967",
+      "1979",
+      "1994"
+     ],
+     "why": "Unity Day is 22 May."
+    },
+    {
+     "level": 1,
+     "q": "Which drink got its name from the Yemeni port of Mocha?",
+     "a": "Mocha coffee",
+     "wrong": [
+      "Earl Grey tea",
+      "Turkish coffee",
+      "Arabica tea"
+     ],
+     "why": "Yemen was the first big coffee exporter."
+    },
+    {
+     "level": 1,
+     "q": "Which tall mud-brick towers make Shibam famous?",
+     "a": "Mud-brick skyscrapers",
+     "wrong": [
+      "Glass towers",
+      "Stone pyramids",
+      "Wooden pagodas"
+     ],
+     "why": "It is called the 'Manhattan of the Desert'."
     },
     {
      "level": 1,
@@ -240,28 +303,6 @@
       "Scimitar"
      ],
      "why": "Its handle shows the owner's status."
-    },
-    {
-     "level": 1,
-     "q": "Which sea lies west of Yemen?",
-     "a": "Red Sea",
-     "wrong": [
-      "Arabian Sea",
-      "Mediterranean",
-      "Persian Gulf"
-     ],
-     "why": "The Gulf of Aden lies to the south."
-    },
-    {
-     "level": 2,
-     "q": "Which valley region in the east is home to Shibam and Tarim?",
-     "a": "Hadramawt",
-     "wrong": [
-      "Tihama",
-      "Marib",
-      "Lahej"
-     ],
-     "why": "It was famous for frankincense."
     },
     {
      "level": 2,
@@ -306,39 +347,6 @@
       "Bilqis Palace"
      ],
      "why": "It was a summer home of Imam Yahya."
-    },
-    {
-     "level": 3,
-     "q": "Which ancient city in Hadramawt was a centre of Islamic learning?",
-     "a": "Tarim",
-     "wrong": [
-      "Zabid",
-      "Shibam",
-      "Seiyun"
-     ],
-     "why": "It has hundreds of mosques."
-    },
-    {
-     "level": 3,
-     "q": "Which coastal town was Yemen's capital under the Ziyadid dynasty and is a UNESCO site?",
-     "a": "Zabid",
-     "wrong": [
-      "Mocha",
-      "Hodeidah",
-      "Aden"
-     ],
-     "why": "It had a famous university."
-    },
-    {
-     "level": 3,
-     "q": "What is Yemen's highest mountain, also the highest in Arabia?",
-     "a": "Jabal an-Nabi Shu'ayb",
-     "wrong": [
-      "Jebel Shams",
-      "Jabal Sawda",
-      "Jabal Bura"
-     ],
-     "why": "It is about 3,666 m high."
     }
    ]
   }

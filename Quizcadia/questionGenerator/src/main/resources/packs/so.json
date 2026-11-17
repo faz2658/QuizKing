@@ -3,19 +3,9 @@
  "country": "SO",
  "topics": [
   {
-   "name": "Somalia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Somalia?",
-     "a": "Mogadishu",
-     "wrong": [
-      "Hargeisa",
-      "Kismayo",
-      "Bosaso"
-     ],
-     "why": "It is on the Indian Ocean coast."
-    },
     {
      "level": 1,
      "q": "In which year did Somalia gain independence?",
@@ -50,39 +40,6 @@
      "why": "Its capital is Hargeisa."
     },
     {
-     "level": 1,
-     "q": "What is Somalia's currency?",
-     "a": "Somali shilling",
-     "wrong": [
-      "Birr",
-      "Kenyan shilling",
-      "Djiboutian franc"
-     ],
-     "why": "US dollars are widely used."
-    },
-    {
-     "level": 1,
-     "q": "Which militant group has fought the Somali government since 2006?",
-     "a": "Al-Shabaab",
-     "wrong": [
-      "Boko Haram",
-      "Hamas",
-      "Hezbollah"
-     ],
-     "why": "It is linked to al-Qaeda."
-    },
-    {
-     "level": 1,
-     "q": "Which 1993 battle in Mogadishu became the film 'Black Hawk Down'?",
-     "a": "Battle of Mogadishu",
-     "wrong": [
-      "Battle of Kismayo",
-      "Battle of Baidoa",
-      "Battle of Hargeisa"
-     ],
-     "why": "US helicopters were shot down."
-    },
-    {
      "level": 2,
      "q": "Which dictator ruled Somalia from 1969 to 1991?",
      "a": "Siad Barre",
@@ -103,17 +60,6 @@
       "Kenyan War"
      ],
      "why": "Somalia lost the war."
-    },
-    {
-     "level": 2,
-     "q": "Who became President of Somalia again in 2022?",
-     "a": "Hassan Sheikh Mohamud",
-     "wrong": [
-      "Mohamed Abdullahi Farmaajo",
-      "Sharif Sheikh Ahmed",
-      "Abdiqasim Salad"
-     ],
-     "why": "He had served from 2012 to 2017."
     },
     {
      "level": 2,
@@ -173,8 +119,20 @@
    ]
   },
   {
-   "name": "Somalia: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Somalia?",
+     "a": "Mogadishu",
+     "wrong": [
+      "Hargeisa",
+      "Kismayo",
+      "Bosaso"
+     ],
+     "why": "It is on the Indian Ocean coast."
+    },
     {
      "level": 1,
      "q": "Which ocean is on Somalia's long coast?",
@@ -187,6 +145,180 @@
      "why": "It has Africa's longest mainland coastline."
     },
     {
+     "level": 2,
+     "q": "Which lighthouse peninsula is the tip of the Horn of Africa?",
+     "a": "Cape Guardafui",
+     "wrong": [
+      "Ras Hafun",
+      "Cape Agulhas",
+      "Cape Bon"
+     ],
+     "why": "Ras Hafun is the easternmost point."
+    },
+    {
+     "level": 3,
+     "q": "Which old port town was a stop on the Indian Ocean trade routes?",
+     "a": "Barawa",
+     "wrong": [
+      "Bosaso",
+      "Hobyo",
+      "Galkayo"
+     ],
+     "why": "It has ancient mosques."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Somali-born British runner won four Olympic golds?",
+     "a": "Mo Farah",
+     "wrong": [
+      "Haile Gebrselassie",
+      "Kenenisa Bekele",
+      "Abdi Bile"
+     ],
+     "why": "He was born in Mogadishu."
+    },
+    {
+     "level": 2,
+     "q": "Which Somali runner won the 1987 world 1,500 m title?",
+     "a": "Abdi Bile",
+     "wrong": [
+      "Mo Farah",
+      "Hussein Ahmed Salah",
+      "Hassan Kiprop"
+     ],
+     "why": "He is a national hero."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Somali singer is called the 'Queen of Somali music'?",
+     "a": "Magool",
+     "wrong": [
+      "Maryam Mursal",
+      "Hibo Nuura",
+      "Sahra Ahmed"
+     ],
+     "why": "She was famous in the 1970s."
+    },
+    {
+     "level": 2,
+     "q": "Which Somali-Canadian rapper had a hit with 'Wavin' Flag'?",
+     "a": "K'naan",
+     "wrong": [
+      "Aar Maanta",
+      "Mo Farah",
+      "Iman"
+     ],
+     "why": "It was the 2010 World Cup anthem."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which 1993 battle in Mogadishu became the film 'Black Hawk Down'?",
+     "a": "Battle of Mogadishu",
+     "wrong": [
+      "Battle of Kismayo",
+      "Battle of Baidoa",
+      "Battle of Hargeisa"
+     ],
+     "why": "US helicopters were shot down."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which tradition of poetry is central to Somali culture?",
+     "a": "Oral poetry",
+     "wrong": [
+      "Haiku",
+      "Sonnets",
+      "Limericks"
+     ],
+     "why": "Somalia is called a 'nation of poets'."
+    },
+    {
+     "level": 3,
+     "q": "Which Somali writer won the Neustadt Prize in 1998?",
+     "a": "Nuruddin Farah",
+     "wrong": [
+      "Ayaan Hirsi Ali",
+      "Warsan Shire",
+      "Abdirazak Haji Hussein"
+     ],
+     "why": "He wrote 'Maps'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which militant group has fought the Somali government since 2006?",
+     "a": "Al-Shabaab",
+     "wrong": [
+      "Boko Haram",
+      "Hamas",
+      "Hezbollah"
+     ],
+     "why": "It is linked to al-Qaeda."
+    },
+    {
+     "level": 2,
+     "q": "Who became President of Somalia again in 2022?",
+     "a": "Hassan Sheikh Mohamud",
+     "wrong": [
+      "Mohamed Abdullahi Farmaajo",
+      "Sharif Sheikh Ahmed",
+      "Abdiqasim Salad"
+     ],
+     "why": "He had served from 2012 to 2017."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which cave paintings in Somaliland are thousands of years old?",
+     "a": "Laas Geel",
+     "wrong": [
+      "Twyfelfontein",
+      "Tassili",
+      "Tsodilo"
+     ],
+     "why": "They show cattle and herders."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
      "level": 1,
      "q": "Which animal does Somalia have more of than any country?",
      "a": "Camels",
@@ -196,6 +328,23 @@
       "Sheep"
      ],
      "why": "There are millions."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Somalia's currency?",
+     "a": "Somali shilling",
+     "wrong": [
+      "Birr",
+      "Kenyan shilling",
+      "Djiboutian franc"
+     ],
+     "why": "US dollars are widely used."
     },
     {
      "level": 1,
@@ -221,28 +370,6 @@
     },
     {
      "level": 1,
-     "q": "Which Somali-born British runner won four Olympic golds?",
-     "a": "Mo Farah",
-     "wrong": [
-      "Haile Gebrselassie",
-      "Kenenisa Bekele",
-      "Abdi Bile"
-     ],
-     "why": "He was born in Mogadishu."
-    },
-    {
-     "level": 1,
-     "q": "Which tradition of poetry is central to Somali culture?",
-     "a": "Oral poetry",
-     "wrong": [
-      "Haiku",
-      "Sonnets",
-      "Limericks"
-     ],
-     "why": "Somalia is called a 'nation of poets'."
-    },
-    {
-     "level": 1,
      "q": "Which language is official in Somalia?",
      "a": "Somali and Arabic",
      "wrong": [
@@ -251,83 +378,6 @@
       "Italian and English"
      ],
      "why": "Somali was first written in 1972."
-    },
-    {
-     "level": 2,
-     "q": "Which cave paintings in Somaliland are thousands of years old?",
-     "a": "Laas Geel",
-     "wrong": [
-      "Twyfelfontein",
-      "Tassili",
-      "Tsodilo"
-     ],
-     "why": "They show cattle and herders."
-    },
-    {
-     "level": 2,
-     "q": "Which Somali singer is called the 'Queen of Somali music'?",
-     "a": "Magool",
-     "wrong": [
-      "Maryam Mursal",
-      "Hibo Nuura",
-      "Sahra Ahmed"
-     ],
-     "why": "She was famous in the 1970s."
-    },
-    {
-     "level": 2,
-     "q": "Which Somali-Canadian rapper had a hit with 'Wavin' Flag'?",
-     "a": "K'naan",
-     "wrong": [
-      "Aar Maanta",
-      "Mo Farah",
-      "Iman"
-     ],
-     "why": "It was the 2010 World Cup anthem."
-    },
-    {
-     "level": 2,
-     "q": "Which Somali runner won the 1987 world 1,500 m title?",
-     "a": "Abdi Bile",
-     "wrong": [
-      "Mo Farah",
-      "Hussein Ahmed Salah",
-      "Hassan Kiprop"
-     ],
-     "why": "He is a national hero."
-    },
-    {
-     "level": 2,
-     "q": "Which lighthouse peninsula is the tip of the Horn of Africa?",
-     "a": "Cape Guardafui",
-     "wrong": [
-      "Ras Hafun",
-      "Cape Agulhas",
-      "Cape Bon"
-     ],
-     "why": "Ras Hafun is the easternmost point."
-    },
-    {
-     "level": 3,
-     "q": "Which old port town was a stop on the Indian Ocean trade routes?",
-     "a": "Barawa",
-     "wrong": [
-      "Bosaso",
-      "Hobyo",
-      "Galkayo"
-     ],
-     "why": "It has ancient mosques."
-    },
-    {
-     "level": 3,
-     "q": "Which Somali writer won the Neustadt Prize in 1998?",
-     "a": "Nuruddin Farah",
-     "wrong": [
-      "Ayaan Hirsi Ali",
-      "Warsan Shire",
-      "Abdirazak Haji Hussein"
-     ],
-     "why": "He wrote 'Maps'."
     },
     {
      "level": 3,

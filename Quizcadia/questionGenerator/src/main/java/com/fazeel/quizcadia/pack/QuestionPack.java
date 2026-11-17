@@ -29,7 +29,19 @@ public record QuestionPack(String category, String country, List<PackTopic> topi
 	public static final String TYPE = "pack";
 
 	@JsonIgnoreProperties(ignoreUnknown = true)
-	public record PackTopic(String name, List<PackQuestion> questions) {
+	/**
+	 * @param category the shared bank category the topic belongs to (e.g. History); when set, the topic's
+	 *        questions join that shared topic, each tagged with the pack's country, instead of a country topic
+	 */
+	public record PackTopic(String category, String name, List<PackQuestion> questions) {
+
+		public PackTopic(String name, List<PackQuestion> questions) {
+			this(null, name, questions);
+		}
+
+		public boolean shared() {
+			return category != null && !category.isBlank();
+		}
 	}
 
 	/** {@code a} is the answer, {@code wrong} the other options; {@code why} is shown after answering. */

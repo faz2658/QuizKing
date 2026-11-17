@@ -129,14 +129,10 @@ class MatchFactoryTest {
 	}
 
 	@Test
-	void withNoCountriesKnownEveryQuestionIsEligibleAsBefore() {
-		Map<String, Long> seen = new java.util.HashMap<>();
-		for (long seed = 0; seed < 20; seed++) {
-			origin(new MatchFactory(new Random(seed)).create(MATCH, countryGame(new MultiPlayerGame.Level(4, 4, 4)), NOW))
-					.forEach((k, v) -> seen.merge(k, v, Long::sum));
-		}
+	void withNoCountriesKnownTheMatchUsesGeneralQuestions() {
+		MultiplayerMatch m = new MatchFactory(new Random(1)).create(MATCH, countryGame(new MultiPlayerGame.Level(4, 4, 4)), NOW);
 
-		assertThat(seen).containsKeys("IN", "general", "KE");
+		assertThat(origin(m)).containsEntry("general", 12L).hasSize(1);
 	}
 
 	@Test

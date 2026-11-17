@@ -3,7 +3,8 @@
  "country": "FR",
  "topics": [
   {
-   "name": "France History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -106,17 +107,6 @@
     },
     {
      "level": 2,
-     "q": "Which invention was used for executions during the Revolution?",
-     "a": "The guillotine",
-     "wrong": [
-      "The gallows",
-      "The firing squad",
-      "The rack"
-     ],
-     "why": "It is named after Joseph-Ignace Guillotin."
-    },
-    {
-     "level": 2,
      "q": "In which year did the Fifth Republic begin?",
      "a": "1958",
      "wrong": [
@@ -180,11 +170,56 @@
       "1799"
      ],
      "why": "It still shapes French law today."
+    },
+    {
+     "level": 1,
+     "q": "Which iron tower was built for the 1889 World's Fair?",
+     "a": "Eiffel Tower",
+     "wrong": [
+      "Montparnasse Tower",
+      "Tour Saint-Jacques",
+      "Arc de Triomphe"
+     ],
+     "why": "It is about 330 m tall."
+    },
+    {
+     "level": 1,
+     "q": "Which Paris cathedral was badly damaged by fire in 2019?",
+     "a": "Notre-Dame",
+     "wrong": [
+      "Sacré-Cœur",
+      "Saint-Sulpice",
+      "Sainte-Chapelle"
+     ],
+     "why": "It reopened in December 2024."
+    },
+    {
+     "level": 2,
+     "q": "Which scientist discovered radium with her husband Pierre?",
+     "a": "Marie Curie",
+     "wrong": [
+      "Irène Joliot-Curie",
+      "Lise Meitner",
+      "Rosalind Franklin"
+     ],
+     "why": "She won Nobel Prizes in two sciences."
+    },
+    {
+     "level": 3,
+     "q": "Which high-speed train first ran between Paris and Lyon in 1981?",
+     "a": "TGV",
+     "wrong": [
+      "Thalys",
+      "Eurostar",
+      "Intercités"
+     ],
+     "why": "It set a world rail speed record of 574.8 km/h in 2007."
     }
    ]
   },
   {
-   "name": "France Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -365,7 +400,8 @@
    ]
   },
   {
-   "name": "France Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,7 +582,8 @@
    ]
   },
   {
-   "name": "France Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
     {
      "level": 1,
@@ -560,16 +597,44 @@
      "why": "She sang 'La Vie en rose'."
     },
     {
-     "level": 1,
-     "q": "Which French duo recorded 'Get Lucky'?",
-     "a": "Daft Punk",
+     "level": 2,
+     "q": "Which singer recorded 'Non, je ne regrette rien'?",
+     "a": "Édith Piaf",
      "wrong": [
-      "Justice",
-      "Air",
-      "Phoenix"
+      "Dalida",
+      "Jacques Brel",
+      "Charles Aznavour"
      ],
-     "why": "They wore robot helmets."
+     "why": "It came out in 1960."
     },
+    {
+     "level": 3,
+     "q": "Which French composer wrote 'Boléro'?",
+     "a": "Maurice Ravel",
+     "wrong": [
+      "Claude Debussy",
+      "Erik Satie",
+      "Hector Berlioz"
+     ],
+     "why": "It was first performed in 1928."
+    },
+    {
+     "level": 1,
+     "q": "What is France's national anthem?",
+     "a": "La Marseillaise",
+     "wrong": [
+      "La Parisienne",
+      "Le Chant du départ",
+      "La Vie en rose"
+     ],
+     "why": "It was written in 1792."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
     {
      "level": 1,
      "q": "Which film festival on the Riviera awards the Palme d'Or?",
@@ -594,28 +659,6 @@
     },
     {
      "level": 1,
-     "q": "Who wrote 'Les Misérables'?",
-     "a": "Victor Hugo",
-     "wrong": [
-      "Émile Zola",
-      "Alexandre Dumas",
-      "Gustave Flaubert"
-     ],
-     "why": "It was published in 1862."
-    },
-    {
-     "level": 1,
-     "q": "Which artist drew Astérix with writer René Goscinny?",
-     "a": "Albert Uderzo",
-     "wrong": [
-      "Hergé",
-      "Morris",
-      "Jean Giraud"
-     ],
-     "why": "Hergé, who drew Tintin, was Belgian."
-    },
-    {
-     "level": 1,
      "q": "Which comic series follows a Gaul who drinks a magic potion?",
      "a": "Astérix",
      "wrong": [
@@ -624,28 +667,6 @@
       "Gaston"
      ],
      "why": "Goscinny and Uderzo created it in 1959."
-    },
-    {
-     "level": 2,
-     "q": "Who wrote 'The Three Musketeers'?",
-     "a": "Alexandre Dumas",
-     "wrong": [
-      "Victor Hugo",
-      "Jules Verne",
-      "Honoré de Balzac"
-     ],
-     "why": "D'Artagnan joins Athos, Porthos and Aramis."
-    },
-    {
-     "level": 2,
-     "q": "Which author wrote 'Twenty Thousand Leagues Under the Seas'?",
-     "a": "Jules Verne",
-     "wrong": [
-      "H. G. Wells",
-      "Alexandre Dumas",
-      "Victor Hugo"
-     ],
-     "why": "Captain Nemo commands the Nautilus."
     },
     {
      "level": 2,
@@ -670,28 +691,6 @@
      "why": "Jean Dujardin won Best Actor."
     },
     {
-     "level": 2,
-     "q": "Which Impressionist painted 'Water Lilies' at Giverny?",
-     "a": "Claude Monet",
-     "wrong": [
-      "Pierre-Auguste Renoir",
-      "Edgar Degas",
-      "Paul Cézanne"
-     ],
-     "why": "His 'Impression, Sunrise' named the movement."
-    },
-    {
-     "level": 2,
-     "q": "Which singer recorded 'Non, je ne regrette rien'?",
-     "a": "Édith Piaf",
-     "wrong": [
-      "Dalida",
-      "Jacques Brel",
-      "Charles Aznavour"
-     ],
-     "why": "It came out in 1960."
-    },
-    {
      "level": 3,
      "q": "Which director made 'The 400 Blows' and helped start the New Wave?",
      "a": "François Truffaut",
@@ -701,6 +700,56 @@
       "Claude Chabrol"
      ],
      "why": "It came out in 1959."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who wrote 'Les Misérables'?",
+     "a": "Victor Hugo",
+     "wrong": [
+      "Émile Zola",
+      "Alexandre Dumas",
+      "Gustave Flaubert"
+     ],
+     "why": "It was published in 1862."
+    },
+    {
+     "level": 1,
+     "q": "Which artist drew Astérix with writer René Goscinny?",
+     "a": "Albert Uderzo",
+     "wrong": [
+      "Hergé",
+      "Morris",
+      "Jean Giraud"
+     ],
+     "why": "Hergé, who drew Tintin, was Belgian."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote 'The Three Musketeers'?",
+     "a": "Alexandre Dumas",
+     "wrong": [
+      "Victor Hugo",
+      "Jules Verne",
+      "Honoré de Balzac"
+     ],
+     "why": "D'Artagnan joins Athos, Porthos and Aramis."
+    },
+    {
+     "level": 2,
+     "q": "Which author wrote 'Twenty Thousand Leagues Under the Seas'?",
+     "a": "Jules Verne",
+     "wrong": [
+      "H. G. Wells",
+      "Alexandre Dumas",
+      "Victor Hugo"
+     ],
+     "why": "Captain Nemo commands the Nautilus."
     },
     {
      "level": 3,
@@ -712,23 +761,97 @@
       "André Gide"
      ],
      "why": "It begins with a madeleine memory."
-    },
-    {
-     "level": 3,
-     "q": "Which French composer wrote 'Boléro'?",
-     "a": "Maurice Ravel",
-     "wrong": [
-      "Claude Debussy",
-      "Erik Satie",
-      "Hector Berlioz"
-     ],
-     "why": "It was first performed in 1928."
     }
    ]
   },
   {
-   "name": "France Food & Traditions",
+   "category": "Politics",
+   "name": "Politics",
    "questions": [
+    {
+     "level": 2,
+     "q": "Where does the French President live?",
+     "a": "Élysée Palace",
+     "wrong": [
+      "Palais Bourbon",
+      "Hôtel Matignon",
+      "Luxembourg Palace"
+     ],
+     "why": "Matignon is the Prime Minister's residence."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Impressionist painted 'Water Lilies' at Giverny?",
+     "a": "Claude Monet",
+     "wrong": [
+      "Pierre-Auguste Renoir",
+      "Edgar Degas",
+      "Paul Cézanne"
+     ],
+     "why": "His 'Impression, Sunrise' named the movement."
+    },
+    {
+     "level": 1,
+     "q": "Which Paris museum is home to the 'Mona Lisa'?",
+     "a": "Louvre",
+     "wrong": [
+      "Musée d'Orsay",
+      "Centre Pompidou",
+      "Musée Rodin"
+     ],
+     "why": "It is the world's most visited museum."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which animal is a national symbol of France?",
+     "a": "The Gallic rooster",
+     "wrong": [
+      "The eagle",
+      "The lion",
+      "The bear"
+     ],
+     "why": "It appears on sports shirts."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which invention was used for executions during the Revolution?",
+     "a": "The guillotine",
+     "wrong": [
+      "The gallows",
+      "The firing squad",
+      "The rack"
+     ],
+     "why": "It is named after Joseph-Ignace Guillotin."
+    },
+    {
+     "level": 1,
+     "q": "Which French duo recorded 'Get Lucky'?",
+     "a": "Daft Punk",
+     "wrong": [
+      "Justice",
+      "Air",
+      "Phoenix"
+     ],
+     "why": "They wore robot helmets."
+    },
     {
      "level": 1,
      "q": "Which crescent-shaped pastry is a French breakfast favourite?",
@@ -904,33 +1027,6 @@
       "Aligot"
      ],
      "why": "It was popularised in the 1980s."
-    }
-   ]
-  },
-  {
-   "name": "France General Knowledge",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which iron tower was built for the 1889 World's Fair?",
-     "a": "Eiffel Tower",
-     "wrong": [
-      "Montparnasse Tower",
-      "Tour Saint-Jacques",
-      "Arc de Triomphe"
-     ],
-     "why": "It is about 330 m tall."
-    },
-    {
-     "level": 1,
-     "q": "Which Paris museum is home to the 'Mona Lisa'?",
-     "a": "Louvre",
-     "wrong": [
-      "Musée d'Orsay",
-      "Centre Pompidou",
-      "Musée Rodin"
-     ],
-     "why": "It is the world's most visited museum."
     },
     {
      "level": 1,
@@ -945,39 +1041,6 @@
     },
     {
      "level": 1,
-     "q": "What is France's national anthem?",
-     "a": "La Marseillaise",
-     "wrong": [
-      "La Parisienne",
-      "Le Chant du départ",
-      "La Vie en rose"
-     ],
-     "why": "It was written in 1792."
-    },
-    {
-     "level": 1,
-     "q": "Which animal is a national symbol of France?",
-     "a": "The Gallic rooster",
-     "wrong": [
-      "The eagle",
-      "The lion",
-      "The bear"
-     ],
-     "why": "It appears on sports shirts."
-    },
-    {
-     "level": 1,
-     "q": "Which Paris cathedral was badly damaged by fire in 2019?",
-     "a": "Notre-Dame",
-     "wrong": [
-      "Sacré-Cœur",
-      "Saint-Sulpice",
-      "Sainte-Chapelle"
-     ],
-     "why": "It reopened in December 2024."
-    },
-    {
-     "level": 1,
      "q": "What is the female figure who symbolises the French Republic?",
      "a": "Marianne",
      "wrong": [
@@ -986,17 +1049,6 @@
       "Gaule"
      ],
      "why": "Her bust is in every town hall."
-    },
-    {
-     "level": 2,
-     "q": "Which scientist discovered radium with her husband Pierre?",
-     "a": "Marie Curie",
-     "wrong": [
-      "Irène Joliot-Curie",
-      "Lise Meitner",
-      "Rosalind Franklin"
-     ],
-     "why": "She won Nobel Prizes in two sciences."
     },
     {
      "level": 2,
@@ -1022,17 +1074,6 @@
     },
     {
      "level": 2,
-     "q": "Where does the French President live?",
-     "a": "Élysée Palace",
-     "wrong": [
-      "Palais Bourbon",
-      "Hôtel Matignon",
-      "Luxembourg Palace"
-     ],
-     "why": "Matignon is the Prime Minister's residence."
-    },
-    {
-     "level": 2,
      "q": "Which monument honours the Unknown Soldier at the top of the Champs-Élysées?",
      "a": "Arc de Triomphe",
      "wrong": [
@@ -1052,17 +1093,6 @@
       "Jean-Jacques Rousseau"
      ],
      "why": "In Latin, 'Cogito, ergo sum'."
-    },
-    {
-     "level": 3,
-     "q": "Which high-speed train first ran between Paris and Lyon in 1981?",
-     "a": "TGV",
-     "wrong": [
-      "Thalys",
-      "Eurostar",
-      "Intercités"
-     ],
-     "why": "It set a world rail speed record of 574.8 km/h in 2007."
     },
     {
      "level": 3,

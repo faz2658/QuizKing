@@ -3,19 +3,9 @@
  "country": "DK",
  "topics": [
   {
-   "name": "Denmark: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which Danish author wrote 'The Little Mermaid' and 'The Ugly Duckling'?",
-     "a": "Hans Christian Andersen",
-     "wrong": [
-      "Søren Kierkegaard",
-      "Karen Blixen",
-      "Brothers Grimm"
-     ],
-     "why": "He was born in Odense in 1805."
-    },
     {
      "level": 1,
      "q": "Which Viking king's name is used for wireless 'Bluetooth' technology?",
@@ -149,6 +139,45 @@
      "why": "It has about 54,000 people."
     },
     {
+     "level": 1,
+     "q": "Which amusement park opened in Copenhagen in 1843?",
+     "a": "Tivoli Gardens",
+     "wrong": [
+      "Legoland",
+      "Bakken",
+      "Djurs Sommerland"
+     ],
+     "why": "It inspired Walt Disney."
+    },
+    {
+     "level": 2,
+     "q": "Which brewery founded in Copenhagen in 1847 is world-famous?",
+     "a": "Carlsberg",
+     "wrong": [
+      "Tuborg",
+      "Heineken",
+      "Faxe"
+     ],
+     "why": "Its founder named it after his son Carl."
+    },
+    {
+     "level": 3,
+     "q": "Which tournament did Denmark win in 1992 after replacing Yugoslavia?",
+     "a": "European Championship",
+     "wrong": [
+      "World Cup",
+      "Olympic football",
+      "Confederations Cup"
+     ],
+     "why": "They replaced Yugoslavia with ten days' notice."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
      "level": 3,
      "q": "Which Danish astronomer built an observatory on the island of Hven?",
      "a": "Tycho Brahe",
@@ -159,22 +188,6 @@
      ],
      "why": "He made precise star measurements before telescopes."
     },
-    {
-     "level": 3,
-     "q": "Which Danish ship-and-oil company is one of the largest container shippers?",
-     "a": "Maersk",
-     "wrong": [
-      "Carlsberg",
-      "Novo Nordisk",
-      "Vestas"
-     ],
-     "why": "It was founded in 1904."
-    }
-   ]
-  },
-  {
-   "name": "Denmark: Places & Culture",
-   "questions": [
     {
      "level": 1,
      "q": "What is the capital of Denmark?",
@@ -187,6 +200,85 @@
      "why": "Its name means 'merchants' harbour'."
     },
     {
+     "level": 2,
+     "q": "Which island is Denmark's largest?",
+     "a": "Zealand",
+     "wrong": [
+      "Funen",
+      "Bornholm",
+      "Lolland"
+     ],
+     "why": "Copenhagen is on it."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which architect designed the Sydney Opera House?",
+     "a": "Jørn Utzon",
+     "wrong": [
+      "Arne Jacobsen",
+      "Bjarke Ingels",
+      "Henning Larsen"
+     ],
+     "why": "He won the Pritzker Prize in 2003."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Danish film director co-founded the Dogme 95 movement?",
+     "a": "Lars von Trier",
+     "wrong": [
+      "Thomas Vinterberg",
+      "Susanne Bier",
+      "Nicolas Winding Refn"
+     ],
+     "why": "Thomas Vinterberg was the other founder."
+    },
+    {
+     "level": 3,
+     "q": "Which Danish film won the Oscar for Best International Feature in 2021?",
+     "a": "Another Round",
+     "wrong": [
+      "The Hunt",
+      "In a Better World",
+      "Babette's Feast"
+     ],
+     "why": "Mads Mikkelsen starred."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Danish author wrote 'The Little Mermaid' and 'The Ugly Duckling'?",
+     "a": "Hans Christian Andersen",
+     "wrong": [
+      "Søren Kierkegaard",
+      "Karen Blixen",
+      "Brothers Grimm"
+     ],
+     "why": "He was born in Odense in 1805."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
      "level": 1,
      "q": "Which statue sits on a rock in Copenhagen harbour?",
      "a": "The Little Mermaid",
@@ -196,17 +288,23 @@
       "Hans Christian Andersen"
      ],
      "why": "It was unveiled in 1913."
-    },
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
     {
-     "level": 1,
-     "q": "Which amusement park opened in Copenhagen in 1843?",
-     "a": "Tivoli Gardens",
+     "level": 3,
+     "q": "Which Danish ship-and-oil company is one of the largest container shippers?",
+     "a": "Maersk",
      "wrong": [
-      "Legoland",
-      "Bakken",
-      "Djurs Sommerland"
+      "Carlsberg",
+      "Novo Nordisk",
+      "Vestas"
      ],
-     "why": "It inspired Walt Disney."
+     "why": "It was founded in 1904."
     },
     {
      "level": 1,
@@ -254,17 +352,6 @@
     },
     {
      "level": 2,
-     "q": "Which brewery founded in Copenhagen in 1847 is world-famous?",
-     "a": "Carlsberg",
-     "wrong": [
-      "Tuborg",
-      "Heineken",
-      "Faxe"
-     ],
-     "why": "Its founder named it after his son Carl."
-    },
-    {
-     "level": 2,
      "q": "Which Danish pharmaceutical company makes Ozempic?",
      "a": "Novo Nordisk",
      "wrong": [
@@ -284,61 +371,6 @@
       "Little Belt Bridge"
      ],
      "why": "It became famous from the TV series 'The Bridge'."
-    },
-    {
-     "level": 2,
-     "q": "Which island is Denmark's largest?",
-     "a": "Zealand",
-     "wrong": [
-      "Funen",
-      "Bornholm",
-      "Lolland"
-     ],
-     "why": "Copenhagen is on it."
-    },
-    {
-     "level": 2,
-     "q": "Which Danish film director co-founded the Dogme 95 movement?",
-     "a": "Lars von Trier",
-     "wrong": [
-      "Thomas Vinterberg",
-      "Susanne Bier",
-      "Nicolas Winding Refn"
-     ],
-     "why": "Thomas Vinterberg was the other founder."
-    },
-    {
-     "level": 3,
-     "q": "Which Danish film won the Oscar for Best International Feature in 2021?",
-     "a": "Another Round",
-     "wrong": [
-      "The Hunt",
-      "In a Better World",
-      "Babette's Feast"
-     ],
-     "why": "Mads Mikkelsen starred."
-    },
-    {
-     "level": 3,
-     "q": "Which architect designed the Sydney Opera House?",
-     "a": "Jørn Utzon",
-     "wrong": [
-      "Arne Jacobsen",
-      "Bjarke Ingels",
-      "Henning Larsen"
-     ],
-     "why": "He won the Pritzker Prize in 2003."
-    },
-    {
-     "level": 3,
-     "q": "Which tournament did Denmark win in 1992 after replacing Yugoslavia?",
-     "a": "European Championship",
-     "wrong": [
-      "World Cup",
-      "Olympic football",
-      "Confederations Cup"
-     ],
-     "why": "They replaced Yugoslavia with ten days' notice."
     }
    ]
   }

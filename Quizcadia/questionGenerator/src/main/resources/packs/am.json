@@ -3,19 +3,9 @@
  "country": "AM",
  "topics": [
   {
-   "name": "Armenia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which country was the first to make Christianity its state religion, in 301?",
-     "a": "Armenia",
-     "wrong": [
-      "Georgia",
-      "Ethiopia",
-      "Rome"
-     ],
-     "why": "Gregory the Illuminator converted King Tiridates III."
-    },
     {
      "level": 1,
      "q": "In which year did Armenia regain independence?",
@@ -40,28 +30,6 @@
     },
     {
      "level": 1,
-     "q": "Which mountain, now in Turkey, is a national symbol of Armenia?",
-     "a": "Mount Ararat",
-     "wrong": [
-      "Mount Aragats",
-      "Mount Elbrus",
-      "Mount Kazbek"
-     ],
-     "why": "It appears on the coat of arms."
-    },
-    {
-     "level": 1,
-     "q": "Who created the Armenian alphabet around 405?",
-     "a": "Mesrop Mashtots",
-     "wrong": [
-      "Gregory the Illuminator",
-      "Movses Khorenatsi",
-      "Tigranes the Great"
-     ],
-     "why": "It still has 36 original letters."
-    },
-    {
-     "level": 1,
      "q": "Which ancient king built an empire stretching to the Mediterranean?",
      "a": "Tigranes the Great",
      "wrong": [
@@ -81,17 +49,6 @@
       "Van earthquake"
      ],
      "why": "Around 25,000 people died."
-    },
-    {
-     "level": 2,
-     "q": "Which 2018 peaceful protests changed the government?",
-     "a": "Velvet Revolution",
-     "wrong": [
-      "Rose Revolution",
-      "Orange Revolution",
-      "Tulip Revolution"
-     ],
-     "why": "Nikol Pashinyan became Prime Minister."
     },
     {
      "level": 2,
@@ -127,17 +84,6 @@
      "why": "It allowed the first republic to be founded."
     },
     {
-     "level": 2,
-     "q": "Which 'father of Armenian history' wrote a chronicle of the nation?",
-     "a": "Movses Khorenatsi",
-     "wrong": [
-      "Mesrop Mashtots",
-      "Grigor Narekatsi",
-      "Hovhannes Tumanyan"
-     ],
-     "why": "He lived around the 400s."
-    },
-    {
      "level": 3,
      "q": "Which Armenian kingdom in Cilicia lasted until 1375?",
      "a": "Armenian Kingdom of Cilicia",
@@ -147,34 +93,35 @@
       "Arsacid Kingdom"
      ],
      "why": "It was on the Mediterranean coast."
-    },
-    {
-     "level": 3,
-     "q": "Which monk wrote 'The Book of Lamentations', a famous prayer-poem?",
-     "a": "Grigor Narekatsi",
-     "wrong": [
-      "Mesrop Mashtots",
-      "Sayat-Nova",
-      "Nerses Shnorhali"
-     ],
-     "why": "He lived in the 900s."
-    },
-    {
-     "level": 3,
-     "q": "Which composer of the 'Sabre Dance' was Armenian?",
-     "a": "Aram Khachaturian",
-     "wrong": [
-      "Komitas",
-      "Arno Babajanian",
-      "Tigran Mansurian"
-     ],
-     "why": "It is from the ballet 'Gayane'."
     }
    ]
   },
   {
-   "name": "Armenia: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which country was the first to make Christianity its state religion, in 301?",
+     "a": "Armenia",
+     "wrong": [
+      "Georgia",
+      "Ethiopia",
+      "Rome"
+     ],
+     "why": "Gregory the Illuminator converted King Tiridates III."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain, now in Turkey, is a national symbol of Armenia?",
+     "a": "Mount Ararat",
+     "wrong": [
+      "Mount Aragats",
+      "Mount Elbrus",
+      "Mount Kazbek"
+     ],
+     "why": "It appears on the coat of arms."
+    },
     {
      "level": 1,
      "q": "What is the capital of Armenia?",
@@ -185,17 +132,6 @@
       "Etchmiadzin"
      ],
      "why": "It is one of the oldest continuously inhabited cities."
-    },
-    {
-     "level": 1,
-     "q": "What is Armenia's currency?",
-     "a": "Dram",
-     "wrong": [
-      "Lari",
-      "Manat",
-      "Ruble"
-     ],
-     "why": "It was introduced in 1993."
     },
     {
      "level": 1,
@@ -221,6 +157,185 @@
     },
     {
      "level": 1,
+     "q": "Which country lies west of Armenia?",
+     "a": "Turkey",
+     "wrong": [
+      "Iran",
+      "Azerbaijan",
+      "Georgia"
+     ],
+     "why": "The border has been closed since 1993."
+    },
+    {
+     "level": 2,
+     "q": "Which cable car to Tatev Monastery is one of the world's longest?",
+     "a": "Wings of Tatev",
+     "wrong": [
+      "Wings of Sevan",
+      "Ararat Line",
+      "Yerevan Skyway"
+     ],
+     "why": "It is about 5.7 km long."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which chess champion from Baku was of Armenian descent?",
+     "a": "Garry Kasparov",
+     "wrong": [
+      "Tigran Petrosian",
+      "Levon Aronian",
+      "Anatoly Karpov"
+     ],
+     "why": "His mother was Armenian."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which composer of the 'Sabre Dance' was Armenian?",
+     "a": "Aram Khachaturian",
+     "wrong": [
+      "Komitas",
+      "Arno Babajanian",
+      "Tigran Mansurian"
+     ],
+     "why": "It is from the ballet 'Gayane'."
+    },
+    {
+     "level": 2,
+     "q": "Which double-reed woodwind instrument has a haunting sound?",
+     "a": "Duduk",
+     "wrong": [
+      "Zurna",
+      "Ney",
+      "Oboe"
+     ],
+     "why": "Its music is on UNESCO's list."
+    },
+    {
+     "level": 3,
+     "q": "Which Armenian-American singer leads System of a Down?",
+     "a": "Serj Tankian",
+     "wrong": [
+      "Daron Malakian",
+      "Shavo Odadjian",
+      "Cher"
+     ],
+     "why": "The band formed in Los Angeles."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which 'father of Armenian history' wrote a chronicle of the nation?",
+     "a": "Movses Khorenatsi",
+     "wrong": [
+      "Mesrop Mashtots",
+      "Grigor Narekatsi",
+      "Hovhannes Tumanyan"
+     ],
+     "why": "He lived around the 400s."
+    },
+    {
+     "level": 3,
+     "q": "Which monk wrote 'The Book of Lamentations', a famous prayer-poem?",
+     "a": "Grigor Narekatsi",
+     "wrong": [
+      "Mesrop Mashtots",
+      "Sayat-Nova",
+      "Nerses Shnorhali"
+     ],
+     "why": "He lived in the 900s."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which 2018 peaceful protests changed the government?",
+     "a": "Velvet Revolution",
+     "wrong": [
+      "Rose Revolution",
+      "Orange Revolution",
+      "Tulip Revolution"
+     ],
+     "why": "Nikol Pashinyan became Prime Minister."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which monastery is partly carved into a cliff?",
+     "a": "Geghard",
+     "wrong": [
+      "Tatev",
+      "Khor Virap",
+      "Noravank"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which large stone cross carvings are an Armenian art form?",
+     "a": "Khachkars",
+     "wrong": [
+      "Menhirs",
+      "Runestones",
+      "High crosses"
+     ],
+     "why": "Thousands survive across the country."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who created the Armenian alphabet around 405?",
+     "a": "Mesrop Mashtots",
+     "wrong": [
+      "Gregory the Illuminator",
+      "Movses Khorenatsi",
+      "Tigranes the Great"
+     ],
+     "why": "It still has 36 original letters."
+    },
+    {
+     "level": 1,
+     "q": "What is Armenia's currency?",
+     "a": "Dram",
+     "wrong": [
+      "Lari",
+      "Manat",
+      "Ruble"
+     ],
+     "why": "It was introduced in 1993."
+    },
+    {
+     "level": 1,
      "q": "Which brandy is Armenia famous for?",
      "a": "Armenian brandy (cognac)",
      "wrong": [
@@ -242,17 +357,6 @@
      "why": "Its Latin name is Prunus armeniaca."
     },
     {
-     "level": 1,
-     "q": "Which country lies west of Armenia?",
-     "a": "Turkey",
-     "wrong": [
-      "Iran",
-      "Azerbaijan",
-      "Georgia"
-     ],
-     "why": "The border has been closed since 1993."
-    },
-    {
      "level": 2,
      "q": "Which cathedral is the world's oldest, built in the 300s?",
      "a": "Etchmiadzin Cathedral",
@@ -265,39 +369,6 @@
     },
     {
      "level": 2,
-     "q": "Which monastery is partly carved into a cliff?",
-     "a": "Geghard",
-     "wrong": [
-      "Tatev",
-      "Khor Virap",
-      "Noravank"
-     ],
-     "why": "It is a UNESCO site."
-    },
-    {
-     "level": 2,
-     "q": "Which cable car to Tatev Monastery is one of the world's longest?",
-     "a": "Wings of Tatev",
-     "wrong": [
-      "Wings of Sevan",
-      "Ararat Line",
-      "Yerevan Skyway"
-     ],
-     "why": "It is about 5.7 km long."
-    },
-    {
-     "level": 2,
-     "q": "Which double-reed woodwind instrument has a haunting sound?",
-     "a": "Duduk",
-     "wrong": [
-      "Zurna",
-      "Ney",
-      "Oboe"
-     ],
-     "why": "Its music is on UNESCO's list."
-    },
-    {
-     "level": 2,
      "q": "Which pagan temple with columns survived in Armenia?",
      "a": "Garni Temple",
      "wrong": [
@@ -306,39 +377,6 @@
       "Khor Virap"
      ],
      "why": "It was built in the first century."
-    },
-    {
-     "level": 3,
-     "q": "Which Armenian-American singer leads System of a Down?",
-     "a": "Serj Tankian",
-     "wrong": [
-      "Daron Malakian",
-      "Shavo Odadjian",
-      "Cher"
-     ],
-     "why": "The band formed in Los Angeles."
-    },
-    {
-     "level": 3,
-     "q": "Which chess champion from Baku was of Armenian descent?",
-     "a": "Garry Kasparov",
-     "wrong": [
-      "Tigran Petrosian",
-      "Levon Aronian",
-      "Anatoly Karpov"
-     ],
-     "why": "His mother was Armenian."
-    },
-    {
-     "level": 3,
-     "q": "Which large stone cross carvings are an Armenian art form?",
-     "a": "Khachkars",
-     "wrong": [
-      "Menhirs",
-      "Runestones",
-      "High crosses"
-     ],
-     "why": "Thousands survive across the country."
     }
    ]
   }

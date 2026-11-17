@@ -1,132 +1,1116 @@
 {
-  "category": "Canada",
-  "country": "CA",
-  "topics": [
+ "category": "Canada",
+ "country": "CA",
+ "topics": [
+  {
+   "category": "History",
+   "name": "History",
+   "questions": [
     {
-      "name": "Canada History",
-      "questions": [
-        { "level": 1, "q": "Who was Canada's first Prime Minister?", "a": "John A. Macdonald", "wrong": ["Wilfrid Laurier", "Alexander Mackenzie", "George Brown"], "why": "He took office at Confederation in 1867." },
-        { "level": 1, "q": "In which year did Canadian Confederation take place?", "a": "1867", "wrong": ["1837", "1885", "1931"], "why": "Ontario, Quebec, Nova Scotia and New Brunswick joined on 1 July 1867." },
-        { "level": 1, "q": "On what date is Canada Day?", "a": "1 July", "wrong": ["4 July", "24 May", "1 August"], "why": "It marks Confederation." },
-        { "level": 1, "q": "Which explorer claimed land for France at Gaspé in 1534?", "a": "Jacques Cartier", "wrong": ["Samuel de Champlain", "John Cabot", "Henry Hudson"], "why": "He planted a cross on the Gaspé Peninsula." },
-        { "level": 1, "q": "Who founded Quebec City in 1608?", "a": "Samuel de Champlain", "wrong": ["Jacques Cartier", "René-Robert de La Salle", "Comte de Frontenac"], "why": "He is called the 'Father of New France'." },
-        { "level": 1, "q": "Which railway, finished in 1885, linked Canada from coast to coast?", "a": "Canadian Pacific Railway", "wrong": ["Grand Trunk Railway", "Intercolonial Railway", "Hudson Bay Railway"], "why": "The last spike was driven at Craigellachie, BC." },
-        { "level": 1, "q": "Which Prime Minister brought the Constitution home from Britain in 1982?", "a": "Pierre Trudeau", "wrong": ["Brian Mulroney", "Jean Chrétien", "Lester B. Pearson"], "why": "It included the Charter of Rights and Freedoms." },
-        { "level": 2, "q": "Which 1759 battle at Quebec decided the fate of New France?", "a": "Battle of the Plains of Abraham", "wrong": ["Battle of Queenston Heights", "Battle of Batoche", "Battle of Châteauguay"], "why": "Both generals, Wolfe and Montcalm, died." },
-        { "level": 2, "q": "Which First World War battle in April 1917 became a symbol of Canadian nationhood?", "a": "Vimy Ridge", "wrong": ["Passchendaele", "The Somme", "Ypres"], "why": "All four Canadian divisions fought together for the first time." },
-        { "level": 2, "q": "Which territory was created in 1999?", "a": "Nunavut", "wrong": ["Yukon", "Northwest Territories", "Labrador"], "why": "It was split from the Northwest Territories." },
-        { "level": 2, "q": "Which Métis leader led the Red River Resistance of 1869–70?", "a": "Louis Riel", "wrong": ["Gabriel Dumont", "Poundmaker", "Big Bear"], "why": "It led to Manitoba joining Canada." },
-        { "level": 2, "q": "Which gold rush drew prospectors to the Yukon in the late 1890s?", "a": "Klondike Gold Rush", "wrong": ["Cariboo Gold Rush", "Fraser Canyon Gold Rush", "Porcupine Gold Rush"], "why": "About 100,000 people set out for the Klondike." },
-        { "level": 2, "q": "Which future Prime Minister won the 1957 Nobel Peace Prize over the Suez Crisis?", "a": "Lester B. Pearson", "wrong": ["Mackenzie King", "Louis St. Laurent", "John Diefenbaker"], "why": "He proposed the first UN peacekeeping force." },
-        { "level": 3, "q": "In which year did Newfoundland join Canada?", "a": "1949", "wrong": ["1867", "1905", "1931"], "why": "It was the last province to join." },
-        { "level": 3, "q": "Which 1931 law gave Canada full control of its own laws?", "a": "Statute of Westminster", "wrong": ["British North America Act", "Constitution Act, 1982", "Quebec Act"], "why": "It applied to several British dominions." },
-        { "level": 3, "q": "Which two provinces were created in 1905?", "a": "Alberta and Saskatchewan", "wrong": ["Manitoba and British Columbia", "Alberta and Manitoba", "Saskatchewan and Manitoba"], "why": "They were carved from the Northwest Territories." }
-      ]
+     "level": 1,
+     "q": "Who was Canada's first Prime Minister?",
+     "a": "John A. Macdonald",
+     "wrong": [
+      "Wilfrid Laurier",
+      "Alexander Mackenzie",
+      "George Brown"
+     ],
+     "why": "He took office at Confederation in 1867."
     },
     {
-      "name": "Canada Geography",
-      "questions": [
-        { "level": 1, "q": "What is the capital of Canada?", "a": "Ottawa", "wrong": ["Toronto", "Montreal", "Vancouver"], "why": "Queen Victoria chose it in 1857." },
-        { "level": 1, "q": "What is Canada's largest city?", "a": "Toronto", "wrong": ["Montreal", "Vancouver", "Calgary"], "why": "Its metro area has over six million people." },
-        { "level": 1, "q": "How many provinces does Canada have?", "a": "10", "wrong": ["13", "12", "9"], "why": "It also has three territories." },
-        { "level": 1, "q": "Niagara Falls lies on the border between Ontario and which US state?", "a": "New York", "wrong": ["Michigan", "Ohio", "Pennsylvania"], "why": "The Horseshoe Falls are on the Canadian side." },
-        { "level": 1, "q": "Which province is mainly French-speaking?", "a": "Quebec", "wrong": ["New Brunswick", "Ontario", "Manitoba"], "why": "New Brunswick is officially bilingual." },
-        { "level": 1, "q": "Vancouver lies on which ocean?", "a": "Pacific Ocean", "wrong": ["Atlantic Ocean", "Arctic Ocean", "Indian Ocean"], "why": "It is Canada's largest Pacific port." },
-        { "level": 1, "q": "In which province is Banff National Park?", "a": "Alberta", "wrong": ["British Columbia", "Saskatchewan", "Yukon"], "why": "It is Canada's oldest national park, from 1885." },
-        { "level": 2, "q": "What is Canada's longest river?", "a": "Mackenzie River", "wrong": ["St. Lawrence River", "Fraser River", "Yukon River"], "why": "It flows into the Arctic Ocean." },
-        { "level": 2, "q": "What is Canada's highest mountain?", "a": "Mount Logan", "wrong": ["Mount Robson", "Mount Assiniboine", "Whistler Mountain"], "why": "It is 5,959 m high, in the Yukon." },
-        { "level": 2, "q": "What is the capital of British Columbia?", "a": "Victoria", "wrong": ["Vancouver", "Kelowna", "Surrey"], "why": "It is on Vancouver Island." },
-        { "level": 2, "q": "Which bay has the highest tides in the world?", "a": "Bay of Fundy", "wrong": ["Hudson Bay", "James Bay", "Baffin Bay"], "why": "Its tides can rise over 15 m." },
-        { "level": 2, "q": "Which is Canada's smallest province?", "a": "Prince Edward Island", "wrong": ["Nova Scotia", "New Brunswick", "Newfoundland and Labrador"], "why": "It is linked to the mainland by the Confederation Bridge." },
-        { "level": 2, "q": "What is the capital of Nunavut?", "a": "Iqaluit", "wrong": ["Yellowknife", "Whitehorse", "Rankin Inlet"], "why": "It is on Baffin Island." },
-        { "level": 3, "q": "Which is the largest lake entirely within Canada?", "a": "Great Bear Lake", "wrong": ["Great Slave Lake", "Lake Winnipeg", "Lake Superior"], "why": "It is in the Northwest Territories." },
-        { "level": 3, "q": "Regina is the capital of which province?", "a": "Saskatchewan", "wrong": ["Manitoba", "Alberta", "Ontario"], "why": "It is named after Queen Victoria (Regina is Latin for 'queen')." },
-        { "level": 3, "q": "Which strait separates Vancouver Island from the BC mainland?", "a": "Strait of Georgia", "wrong": ["Hecate Strait", "Northumberland Strait", "Belle Isle Strait"], "why": "It is part of the Salish Sea." }
-      ]
+     "level": 1,
+     "q": "In which year did Canadian Confederation take place?",
+     "a": "1867",
+     "wrong": [
+      "1837",
+      "1885",
+      "1931"
+     ],
+     "why": "Ontario, Quebec, Nova Scotia and New Brunswick joined on 1 July 1867."
     },
     {
-      "name": "Canada Sport",
-      "questions": [
-        { "level": 1, "q": "What is Canada's national winter sport?", "a": "Ice hockey", "wrong": ["Curling", "Skiing", "Speed skating"], "why": "Lacrosse is the national summer sport." },
-        { "level": 1, "q": "Which hockey player is called 'The Great One'?", "a": "Wayne Gretzky", "wrong": ["Mario Lemieux", "Sidney Crosby", "Bobby Orr"], "why": "He holds the NHL record for points." },
-        { "level": 1, "q": "What is the Canadian Football League's championship called?", "a": "Grey Cup", "wrong": ["Stanley Cup", "Memorial Cup", "Vanier Cup"], "why": "It was first played in 1909." },
-        { "level": 1, "q": "Which Toronto team won the 2019 NBA championship?", "a": "Toronto Raptors", "wrong": ["Toronto Blue Jays", "Toronto Maple Leafs", "Toronto Argonauts"], "why": "It was their first NBA title." },
-        { "level": 1, "q": "Which sport is played with stones and brooms on ice?", "a": "Curling", "wrong": ["Bandy", "Shuffleboard", "Bocce"], "why": "Canada has won many Olympic curling medals." },
-        { "level": 1, "q": "What is Canada's national summer sport?", "a": "Lacrosse", "wrong": ["Baseball", "Soccer", "Rugby"], "why": "It comes from Indigenous games." },
-        { "level": 1, "q": "Which Canadian city hosted the 2010 Winter Olympics?", "a": "Vancouver", "wrong": ["Calgary", "Montreal", "Edmonton"], "why": "Canada won 14 gold medals there." },
-        { "level": 2, "q": "Which NHL team has won the most Stanley Cups?", "a": "Montreal Canadiens", "wrong": ["Toronto Maple Leafs", "Detroit Red Wings", "Boston Bruins"], "why": "They have won it 24 times." },
-        { "level": 2, "q": "Sidney Crosby's 'Golden Goal' at the 2010 Olympics beat which team?", "a": "United States", "wrong": ["Russia", "Sweden", "Finland"], "why": "He scored in overtime." },
-        { "level": 2, "q": "Which Canadian sprinter won 100 m gold at the 1996 Olympics?", "a": "Donovan Bailey", "wrong": ["Ben Johnson", "Andre De Grasse", "Bruny Surin"], "why": "He set a world record of 9.84 seconds." },
-        { "level": 2, "q": "Which Canadian invented basketball in 1891?", "a": "James Naismith", "wrong": ["Abner Doubleday", "Walter Camp", "Lester Patrick"], "why": "He invented it at a YMCA in Springfield, Massachusetts." },
-        { "level": 2, "q": "Which city hosted the 1976 Summer Olympics?", "a": "Montreal", "wrong": ["Toronto", "Vancouver", "Calgary"], "why": "Nadia Comăneci scored the first perfect 10 there." },
-        { "level": 2, "q": "Which Canadian won the 2019 US Open women's singles title?", "a": "Bianca Andreescu", "wrong": ["Leylah Fernandez", "Eugenie Bouchard", "Gabriela Dabrowski"], "why": "She beat Serena Williams in the final." },
-        { "level": 3, "q": "Terry Fox ran his 'Marathon of Hope' to raise money for what?", "a": "Cancer research", "wrong": ["Spinal injury research", "Children's hospitals", "Diabetes research"], "why": "He ran 5,373 km on an artificial leg in 1980." },
-        { "level": 3, "q": "Which Canadian won the Formula One world championship in 1997?", "a": "Jacques Villeneuve", "wrong": ["Gilles Villeneuve", "Lance Stroll", "Paul Tracy"], "why": "His father Gilles also raced in F1." },
-        { "level": 3, "q": "Which team won the first Stanley Cup, in 1893?", "a": "Montreal Hockey Club", "wrong": ["Ottawa Senators", "Toronto Granites", "Winnipeg Victorias"], "why": "Lord Stanley donated the cup in 1892." }
-      ]
+     "level": 1,
+     "q": "On what date is Canada Day?",
+     "a": "1 July",
+     "wrong": [
+      "4 July",
+      "24 May",
+      "1 August"
+     ],
+     "why": "It marks Confederation."
     },
     {
-      "name": "Canada Film, TV & Music",
-      "questions": [
-        { "level": 1, "q": "Which pop star from Stratford, Ontario, was discovered on YouTube?", "a": "Justin Bieber", "wrong": ["Shawn Mendes", "The Weeknd", "Drake"], "why": "His first hit was 'One Time' in 2009." },
-        { "level": 1, "q": "Which Quebec singer recorded 'My Heart Will Go On'?", "a": "Céline Dion", "wrong": ["Shania Twain", "Alanis Morissette", "Avril Lavigne"], "why": "It was the theme of 'Titanic'." },
-        { "level": 1, "q": "Which Toronto rapper released 'Hotline Bling'?", "a": "Drake", "wrong": ["The Weeknd", "Tory Lanez", "Nav"], "why": "He calls Toronto 'the 6'." },
-        { "level": 1, "q": "Which circus company was founded in Quebec in 1984?", "a": "Cirque du Soleil", "wrong": ["Big Apple Circus", "Circus Oz", "Circus Roncalli"], "why": "It uses no animals." },
-        { "level": 1, "q": "Which Toronto singer recorded 'Blinding Lights'?", "a": "The Weeknd", "wrong": ["Drake", "Shawn Mendes", "Daniel Caesar"], "why": "It became the longest-charting Hot 100 hit." },
-        { "level": 1, "q": "Which Montreal-born singer-songwriter wrote 'Hallelujah'?", "a": "Leonard Cohen", "wrong": ["Neil Young", "Gordon Lightfoot", "Bryan Adams"], "why": "He released it in 1984." },
-        { "level": 1, "q": "Which band, led by Chad Kroeger, recorded 'How You Remind Me'?", "a": "Nickelback", "wrong": ["Rush", "The Tragically Hip", "Sum 41"], "why": "The band comes from Alberta." },
-        { "level": 2, "q": "Who wrote 'Anne of Green Gables'?", "a": "L. M. Montgomery", "wrong": ["Margaret Atwood", "Alice Munro", "Mordecai Richler"], "why": "It is set on Prince Edward Island." },
-        { "level": 2, "q": "Who wrote 'The Handmaid's Tale'?", "a": "Margaret Atwood", "wrong": ["Alice Munro", "Carol Shields", "Michael Ondaatje"], "why": "It was published in 1985." },
-        { "level": 2, "q": "Which Canadian won the Nobel Prize in Literature in 2013?", "a": "Alice Munro", "wrong": ["Margaret Atwood", "Michael Ondaatje", "Yann Martel"], "why": "She was praised as a master of the short story." },
-        { "level": 2, "q": "Which Canadian-born director made 'Titanic' and 'Avatar'?", "a": "James Cameron", "wrong": ["Denis Villeneuve", "David Cronenberg", "Norman Jewison"], "why": "He was born in Kapuskasing, Ontario." },
-        { "level": 2, "q": "Which Canadian sitcom swept the comedy Emmys in 2020?", "a": "Schitt's Creek", "wrong": ["Kim's Convenience", "Corner Gas", "Letterkenny"], "why": "It won all seven major comedy awards." },
-        { "level": 2, "q": "Which Toronto rock trio recorded the album '2112'?", "a": "Rush", "wrong": ["The Tragically Hip", "Nickelback", "Arcade Fire"], "why": "Neil Peart was its drummer and lyricist." },
-        { "level": 3, "q": "Which Quebec director made 'Dune' (2021)?", "a": "Denis Villeneuve", "wrong": ["Xavier Dolan", "Jean-Marc Vallée", "Denys Arcand"], "why": "He also made 'Arrival'." },
-        { "level": 3, "q": "Which singer, raised in Saskatoon, wrote 'Big Yellow Taxi'?", "a": "Joni Mitchell", "wrong": ["Buffy Sainte-Marie", "k.d. lang", "Sarah McLachlan"], "why": "It was released in 1970." },
-        { "level": 3, "q": "Which Yann Martel novel won the 2002 Booker Prize?", "a": "Life of Pi", "wrong": ["The English Patient", "The Blind Assassin", "Beatrice and Virgil"], "why": "It is about a boy adrift with a tiger." }
-      ]
+     "level": 1,
+     "q": "Which explorer claimed land for France at Gaspé in 1534?",
+     "a": "Jacques Cartier",
+     "wrong": [
+      "Samuel de Champlain",
+      "John Cabot",
+      "Henry Hudson"
+     ],
+     "why": "He planted a cross on the Gaspé Peninsula."
     },
     {
-      "name": "Canada Food & Traditions",
-      "questions": [
-        { "level": 1, "q": "Which Quebec dish is fries topped with cheese curds and gravy?", "a": "Poutine", "wrong": ["Tourtière", "Bannock", "Pâté chinois"], "why": "It appeared in rural Quebec in the 1950s." },
-        { "level": 1, "q": "Which syrup is Canada famous for producing?", "a": "Maple syrup", "wrong": ["Corn syrup", "Golden syrup", "Agave syrup"], "why": "Quebec makes most of the world's supply." },
-        { "level": 1, "q": "Which leaf is on Canada's flag?", "a": "Maple leaf", "wrong": ["Oak leaf", "Birch leaf", "Elm leaf"], "why": "The flag was adopted in 1965." },
-        { "level": 1, "q": "When is Thanksgiving in Canada?", "a": "Second Monday of October", "wrong": ["Fourth Thursday of November", "First Monday of September", "Last Monday of May"], "why": "It comes earlier than in the US because the harvest ends earlier." },
-        { "level": 1, "q": "Which city's winter carnival is hosted by a snowman called Bonhomme?", "a": "Quebec City", "wrong": ["Montreal", "Ottawa", "Winnipeg"], "why": "It is one of the world's largest winter festivals." },
-        { "level": 1, "q": "Which event is called 'The Greatest Outdoor Show on Earth'?", "a": "Calgary Stampede", "wrong": ["Pacific National Exhibition", "Canadian National Exhibition", "Winterlude"], "why": "It is a ten-day rodeo and fair each July." },
-        { "level": 1, "q": "Which coffee chain sells bite-sized doughnuts called Timbits?", "a": "Tim Hortons", "wrong": ["Second Cup", "Starbucks", "Coffee Time"], "why": "It was co-founded by hockey player Tim Horton in 1964." },
-        { "level": 2, "q": "Nanaimo bars are named after a city in which province?", "a": "British Columbia", "wrong": ["Ontario", "Nova Scotia", "Alberta"], "why": "Nanaimo is on Vancouver Island." },
-        { "level": 2, "q": "Which holiday falls on the Monday before 25 May?", "a": "Victoria Day", "wrong": ["Canada Day", "Civic Holiday", "Family Day"], "why": "It honours Queen Victoria's birthday." },
-        { "level": 2, "q": "Tourtière, a meat pie eaten at Christmas, is traditional in which province?", "a": "Quebec", "wrong": ["Ontario", "Manitoba", "Alberta"], "why": "It is often served on Réveillon, Christmas Eve." },
-        { "level": 2, "q": "Which Inuit stone figure appears on Nunavut's flag?", "a": "Inuksuk", "wrong": ["Totem pole", "Igloo", "Dreamcatcher"], "why": "Inuksuit mark routes and places on the land." },
-        { "level": 2, "q": "What do Canadians call the two-dollar coin?", "a": "Toonie", "wrong": ["Loonie", "Bluenose", "Caribou"], "why": "The one-dollar coin, with a loon on it, is the loonie." },
-        { "level": 2, "q": "Which day on 30 September honours residential school survivors?", "a": "National Day for Truth and Reconciliation", "wrong": ["Remembrance Day", "Family Day", "Heritage Day"], "why": "People wear orange shirts on it." },
-        { "level": 3, "q": "Which pastry, filled with butter, sugar, syrup and egg, is often called Canada's national dessert?", "a": "Butter tart", "wrong": ["Sugar pie", "Nanaimo bar", "Saskatoon berry pie"], "why": "Recipes date back to Ontario in the 1900s." },
-        { "level": 3, "q": "In which province do visitors get 'screeched in' with a shot of rum?", "a": "Newfoundland and Labrador", "wrong": ["Nova Scotia", "Prince Edward Island", "New Brunswick"], "why": "The ceremony can include kissing a cod." },
-        { "level": 3, "q": "Montreal-style bagels are boiled in water sweetened with what?", "a": "Honey", "wrong": ["Maple syrup", "Molasses", "Brown sugar"], "why": "They are then baked in a wood-fired oven." }
-      ]
+     "level": 1,
+     "q": "Who founded Quebec City in 1608?",
+     "a": "Samuel de Champlain",
+     "wrong": [
+      "Jacques Cartier",
+      "René-Robert de La Salle",
+      "Comte de Frontenac"
+     ],
+     "why": "He is called the 'Father of New France'."
     },
     {
-      "name": "Canada General Knowledge",
-      "questions": [
-        { "level": 1, "q": "What are Canada's two official languages?", "a": "English and French", "wrong": ["English and Spanish", "French and Inuktitut", "English and Cree"], "why": "The Official Languages Act was passed in 1969." },
-        { "level": 1, "q": "What is Canada's one-dollar coin called?", "a": "Loonie", "wrong": ["Toonie", "Bluenose", "Beaver"], "why": "It shows a common loon." },
-        { "level": 1, "q": "Which police force is famous for its red serge uniforms?", "a": "Royal Canadian Mounted Police", "wrong": ["Ontario Provincial Police", "Sûreté du Québec", "Canada Border Services Agency"], "why": "It was founded in 1873." },
-        { "level": 1, "q": "What is Canada's national anthem?", "a": "O Canada", "wrong": ["The Maple Leaf Forever", "God Save the King", "True North Strong"], "why": "It became the official anthem in 1980." },
-        { "level": 1, "q": "Which animal is on the Canadian five-cent coin?", "a": "Beaver", "wrong": ["Caribou", "Moose", "Loon"], "why": "The fur trade made the beaver a national symbol." },
-        { "level": 1, "q": "Which tower is Toronto's best-known landmark?", "a": "CN Tower", "wrong": ["Calgary Tower", "Harbour Centre", "Skylon Tower"], "why": "It is 553 m tall." },
-        { "level": 1, "q": "How many territories does Canada have?", "a": "3", "wrong": ["2", "4", "5"], "why": "Yukon, the Northwest Territories and Nunavut." },
-        { "level": 2, "q": "Insulin was discovered in 1921 by Frederick Banting and who else?", "a": "Charles Best", "wrong": ["Norman Bethune", "Wilder Penfield", "William Osler"], "why": "The work was done at the University of Toronto." },
-        { "level": 2, "q": "Who represents the monarch in Canada?", "a": "The Governor General", "wrong": ["The Prime Minister", "The Chief Justice", "The Speaker of the Senate"], "why": "The Governor General lives at Rideau Hall." },
-        { "level": 2, "q": "Where does Canada's Parliament meet?", "a": "Parliament Hill, Ottawa", "wrong": ["Queen's Park, Toronto", "Rideau Hall, Ottawa", "Province House, Halifax"], "why": "The Centre Block has the Peace Tower." },
-        { "level": 2, "q": "Which Quebec inventor created the snowmobile?", "a": "Joseph-Armand Bombardier", "wrong": ["Alexander Graham Bell", "Elijah McCoy", "Reginald Fessenden"], "why": "His Ski-Doo went on sale in 1959." },
-        { "level": 2, "q": "Alexander Graham Bell worked on the telephone at his family home in which Ontario city?", "a": "Brantford", "wrong": ["Hamilton", "Kingston", "London"], "why": "He made the first long-distance call from Brantford in 1876." },
-        { "level": 2, "q": "Which Canadian doctor is famous for serving with Mao Zedong's army in China?", "a": "Norman Bethune", "wrong": ["Frederick Banting", "William Osler", "Wilder Penfield"], "why": "He pioneered mobile blood transfusion." },
-        { "level": 3, "q": "What does Canada's motto 'A Mari Usque Ad Mare' mean?", "a": "From sea to sea", "wrong": ["I remember", "Strong and free", "Glorious and free"], "why": "'Je me souviens' (I remember) is Quebec's motto." },
-        { "level": 3, "q": "Who became Canada's first woman Prime Minister, in 1993?", "a": "Kim Campbell", "wrong": ["Rita Johnston", "Chrystia Freeland", "Audrey McLaughlin"], "why": "She served for about four months." },
-        { "level": 3, "q": "Which ship on the Canadian dime is a famous Nova Scotia racing schooner?", "a": "Bluenose", "wrong": ["Hector", "Mayflower", "Resolute"], "why": "It was never beaten in the International Fishermen's Race." }
-      ]
+     "level": 1,
+     "q": "Which railway, finished in 1885, linked Canada from coast to coast?",
+     "a": "Canadian Pacific Railway",
+     "wrong": [
+      "Grand Trunk Railway",
+      "Intercolonial Railway",
+      "Hudson Bay Railway"
+     ],
+     "why": "The last spike was driven at Craigellachie, BC."
+    },
+    {
+     "level": 1,
+     "q": "Which Prime Minister brought the Constitution home from Britain in 1982?",
+     "a": "Pierre Trudeau",
+     "wrong": [
+      "Brian Mulroney",
+      "Jean Chrétien",
+      "Lester B. Pearson"
+     ],
+     "why": "It included the Charter of Rights and Freedoms."
+    },
+    {
+     "level": 2,
+     "q": "Which 1759 battle at Quebec decided the fate of New France?",
+     "a": "Battle of the Plains of Abraham",
+     "wrong": [
+      "Battle of Queenston Heights",
+      "Battle of Batoche",
+      "Battle of Châteauguay"
+     ],
+     "why": "Both generals, Wolfe and Montcalm, died."
+    },
+    {
+     "level": 2,
+     "q": "Which First World War battle in April 1917 became a symbol of Canadian nationhood?",
+     "a": "Vimy Ridge",
+     "wrong": [
+      "Passchendaele",
+      "The Somme",
+      "Ypres"
+     ],
+     "why": "All four Canadian divisions fought together for the first time."
+    },
+    {
+     "level": 2,
+     "q": "Which territory was created in 1999?",
+     "a": "Nunavut",
+     "wrong": [
+      "Yukon",
+      "Northwest Territories",
+      "Labrador"
+     ],
+     "why": "It was split from the Northwest Territories."
+    },
+    {
+     "level": 2,
+     "q": "Which Métis leader led the Red River Resistance of 1869–70?",
+     "a": "Louis Riel",
+     "wrong": [
+      "Gabriel Dumont",
+      "Poundmaker",
+      "Big Bear"
+     ],
+     "why": "It led to Manitoba joining Canada."
+    },
+    {
+     "level": 2,
+     "q": "Which gold rush drew prospectors to the Yukon in the late 1890s?",
+     "a": "Klondike Gold Rush",
+     "wrong": [
+      "Cariboo Gold Rush",
+      "Fraser Canyon Gold Rush",
+      "Porcupine Gold Rush"
+     ],
+     "why": "About 100,000 people set out for the Klondike."
+    },
+    {
+     "level": 2,
+     "q": "Which future Prime Minister won the 1957 Nobel Peace Prize over the Suez Crisis?",
+     "a": "Lester B. Pearson",
+     "wrong": [
+      "Mackenzie King",
+      "Louis St. Laurent",
+      "John Diefenbaker"
+     ],
+     "why": "He proposed the first UN peacekeeping force."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Newfoundland join Canada?",
+     "a": "1949",
+     "wrong": [
+      "1867",
+      "1905",
+      "1931"
+     ],
+     "why": "It was the last province to join."
+    },
+    {
+     "level": 3,
+     "q": "Which 1931 law gave Canada full control of its own laws?",
+     "a": "Statute of Westminster",
+     "wrong": [
+      "British North America Act",
+      "Constitution Act, 1982",
+      "Quebec Act"
+     ],
+     "why": "It applied to several British dominions."
+    },
+    {
+     "level": 3,
+     "q": "Which two provinces were created in 1905?",
+     "a": "Alberta and Saskatchewan",
+     "wrong": [
+      "Manitoba and British Columbia",
+      "Alberta and Manitoba",
+      "Saskatchewan and Manitoba"
+     ],
+     "why": "They were carved from the Northwest Territories."
+    },
+    {
+     "level": 2,
+     "q": "Insulin was discovered in 1921 by Frederick Banting and who else?",
+     "a": "Charles Best",
+     "wrong": [
+      "Norman Bethune",
+      "Wilder Penfield",
+      "William Osler"
+     ],
+     "why": "The work was done at the University of Toronto."
+    },
+    {
+     "level": 3,
+     "q": "Who became Canada's first woman Prime Minister, in 1993?",
+     "a": "Kim Campbell",
+     "wrong": [
+      "Rita Johnston",
+      "Chrystia Freeland",
+      "Audrey McLaughlin"
+     ],
+     "why": "She served for about four months."
     }
-  ]
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Canada?",
+     "a": "Ottawa",
+     "wrong": [
+      "Toronto",
+      "Montreal",
+      "Vancouver"
+     ],
+     "why": "Queen Victoria chose it in 1857."
+    },
+    {
+     "level": 1,
+     "q": "What is Canada's largest city?",
+     "a": "Toronto",
+     "wrong": [
+      "Montreal",
+      "Vancouver",
+      "Calgary"
+     ],
+     "why": "Its metro area has over six million people."
+    },
+    {
+     "level": 1,
+     "q": "How many provinces does Canada have?",
+     "a": "10",
+     "wrong": [
+      "13",
+      "12",
+      "9"
+     ],
+     "why": "It also has three territories."
+    },
+    {
+     "level": 1,
+     "q": "Niagara Falls lies on the border between Ontario and which US state?",
+     "a": "New York",
+     "wrong": [
+      "Michigan",
+      "Ohio",
+      "Pennsylvania"
+     ],
+     "why": "The Horseshoe Falls are on the Canadian side."
+    },
+    {
+     "level": 1,
+     "q": "Which province is mainly French-speaking?",
+     "a": "Quebec",
+     "wrong": [
+      "New Brunswick",
+      "Ontario",
+      "Manitoba"
+     ],
+     "why": "New Brunswick is officially bilingual."
+    },
+    {
+     "level": 1,
+     "q": "Vancouver lies on which ocean?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Atlantic Ocean",
+      "Arctic Ocean",
+      "Indian Ocean"
+     ],
+     "why": "It is Canada's largest Pacific port."
+    },
+    {
+     "level": 1,
+     "q": "In which province is Banff National Park?",
+     "a": "Alberta",
+     "wrong": [
+      "British Columbia",
+      "Saskatchewan",
+      "Yukon"
+     ],
+     "why": "It is Canada's oldest national park, from 1885."
+    },
+    {
+     "level": 2,
+     "q": "What is Canada's longest river?",
+     "a": "Mackenzie River",
+     "wrong": [
+      "St. Lawrence River",
+      "Fraser River",
+      "Yukon River"
+     ],
+     "why": "It flows into the Arctic Ocean."
+    },
+    {
+     "level": 2,
+     "q": "What is Canada's highest mountain?",
+     "a": "Mount Logan",
+     "wrong": [
+      "Mount Robson",
+      "Mount Assiniboine",
+      "Whistler Mountain"
+     ],
+     "why": "It is 5,959 m high, in the Yukon."
+    },
+    {
+     "level": 2,
+     "q": "What is the capital of British Columbia?",
+     "a": "Victoria",
+     "wrong": [
+      "Vancouver",
+      "Kelowna",
+      "Surrey"
+     ],
+     "why": "It is on Vancouver Island."
+    },
+    {
+     "level": 2,
+     "q": "Which bay has the highest tides in the world?",
+     "a": "Bay of Fundy",
+     "wrong": [
+      "Hudson Bay",
+      "James Bay",
+      "Baffin Bay"
+     ],
+     "why": "Its tides can rise over 15 m."
+    },
+    {
+     "level": 2,
+     "q": "Which is Canada's smallest province?",
+     "a": "Prince Edward Island",
+     "wrong": [
+      "Nova Scotia",
+      "New Brunswick",
+      "Newfoundland and Labrador"
+     ],
+     "why": "It is linked to the mainland by the Confederation Bridge."
+    },
+    {
+     "level": 2,
+     "q": "What is the capital of Nunavut?",
+     "a": "Iqaluit",
+     "wrong": [
+      "Yellowknife",
+      "Whitehorse",
+      "Rankin Inlet"
+     ],
+     "why": "It is on Baffin Island."
+    },
+    {
+     "level": 3,
+     "q": "Which is the largest lake entirely within Canada?",
+     "a": "Great Bear Lake",
+     "wrong": [
+      "Great Slave Lake",
+      "Lake Winnipeg",
+      "Lake Superior"
+     ],
+     "why": "It is in the Northwest Territories."
+    },
+    {
+     "level": 3,
+     "q": "Regina is the capital of which province?",
+     "a": "Saskatchewan",
+     "wrong": [
+      "Manitoba",
+      "Alberta",
+      "Ontario"
+     ],
+     "why": "It is named after Queen Victoria (Regina is Latin for 'queen')."
+    },
+    {
+     "level": 3,
+     "q": "Which strait separates Vancouver Island from the BC mainland?",
+     "a": "Strait of Georgia",
+     "wrong": [
+      "Hecate Strait",
+      "Northumberland Strait",
+      "Belle Isle Strait"
+     ],
+     "why": "It is part of the Salish Sea."
+    },
+    {
+     "level": 2,
+     "q": "Alexander Graham Bell worked on the telephone at his family home in which Ontario city?",
+     "a": "Brantford",
+     "wrong": [
+      "Hamilton",
+      "Kingston",
+      "London"
+     ],
+     "why": "He made the first long-distance call from Brantford in 1876."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Canada's national winter sport?",
+     "a": "Ice hockey",
+     "wrong": [
+      "Curling",
+      "Skiing",
+      "Speed skating"
+     ],
+     "why": "Lacrosse is the national summer sport."
+    },
+    {
+     "level": 1,
+     "q": "Which hockey player is called 'The Great One'?",
+     "a": "Wayne Gretzky",
+     "wrong": [
+      "Mario Lemieux",
+      "Sidney Crosby",
+      "Bobby Orr"
+     ],
+     "why": "He holds the NHL record for points."
+    },
+    {
+     "level": 1,
+     "q": "What is the Canadian Football League's championship called?",
+     "a": "Grey Cup",
+     "wrong": [
+      "Stanley Cup",
+      "Memorial Cup",
+      "Vanier Cup"
+     ],
+     "why": "It was first played in 1909."
+    },
+    {
+     "level": 1,
+     "q": "Which Toronto team won the 2019 NBA championship?",
+     "a": "Toronto Raptors",
+     "wrong": [
+      "Toronto Blue Jays",
+      "Toronto Maple Leafs",
+      "Toronto Argonauts"
+     ],
+     "why": "It was their first NBA title."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is played with stones and brooms on ice?",
+     "a": "Curling",
+     "wrong": [
+      "Bandy",
+      "Shuffleboard",
+      "Bocce"
+     ],
+     "why": "Canada has won many Olympic curling medals."
+    },
+    {
+     "level": 1,
+     "q": "What is Canada's national summer sport?",
+     "a": "Lacrosse",
+     "wrong": [
+      "Baseball",
+      "Soccer",
+      "Rugby"
+     ],
+     "why": "It comes from Indigenous games."
+    },
+    {
+     "level": 1,
+     "q": "Which Canadian city hosted the 2010 Winter Olympics?",
+     "a": "Vancouver",
+     "wrong": [
+      "Calgary",
+      "Montreal",
+      "Edmonton"
+     ],
+     "why": "Canada won 14 gold medals there."
+    },
+    {
+     "level": 2,
+     "q": "Which NHL team has won the most Stanley Cups?",
+     "a": "Montreal Canadiens",
+     "wrong": [
+      "Toronto Maple Leafs",
+      "Detroit Red Wings",
+      "Boston Bruins"
+     ],
+     "why": "They have won it 24 times."
+    },
+    {
+     "level": 2,
+     "q": "Sidney Crosby's 'Golden Goal' at the 2010 Olympics beat which team?",
+     "a": "United States",
+     "wrong": [
+      "Russia",
+      "Sweden",
+      "Finland"
+     ],
+     "why": "He scored in overtime."
+    },
+    {
+     "level": 2,
+     "q": "Which Canadian sprinter won 100 m gold at the 1996 Olympics?",
+     "a": "Donovan Bailey",
+     "wrong": [
+      "Ben Johnson",
+      "Andre De Grasse",
+      "Bruny Surin"
+     ],
+     "why": "He set a world record of 9.84 seconds."
+    },
+    {
+     "level": 2,
+     "q": "Which Canadian invented basketball in 1891?",
+     "a": "James Naismith",
+     "wrong": [
+      "Abner Doubleday",
+      "Walter Camp",
+      "Lester Patrick"
+     ],
+     "why": "He invented it at a YMCA in Springfield, Massachusetts."
+    },
+    {
+     "level": 2,
+     "q": "Which city hosted the 1976 Summer Olympics?",
+     "a": "Montreal",
+     "wrong": [
+      "Toronto",
+      "Vancouver",
+      "Calgary"
+     ],
+     "why": "Nadia Comăneci scored the first perfect 10 there."
+    },
+    {
+     "level": 2,
+     "q": "Which Canadian won the 2019 US Open women's singles title?",
+     "a": "Bianca Andreescu",
+     "wrong": [
+      "Leylah Fernandez",
+      "Eugenie Bouchard",
+      "Gabriela Dabrowski"
+     ],
+     "why": "She beat Serena Williams in the final."
+    },
+    {
+     "level": 3,
+     "q": "Terry Fox ran his 'Marathon of Hope' to raise money for what?",
+     "a": "Cancer research",
+     "wrong": [
+      "Spinal injury research",
+      "Children's hospitals",
+      "Diabetes research"
+     ],
+     "why": "He ran 5,373 km on an artificial leg in 1980."
+    },
+    {
+     "level": 3,
+     "q": "Which Canadian won the Formula One world championship in 1997?",
+     "a": "Jacques Villeneuve",
+     "wrong": [
+      "Gilles Villeneuve",
+      "Lance Stroll",
+      "Paul Tracy"
+     ],
+     "why": "His father Gilles also raced in F1."
+    },
+    {
+     "level": 3,
+     "q": "Which team won the first Stanley Cup, in 1893?",
+     "a": "Montreal Hockey Club",
+     "wrong": [
+      "Ottawa Senators",
+      "Toronto Granites",
+      "Winnipeg Victorias"
+     ],
+     "why": "Lord Stanley donated the cup in 1892."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which pop star from Stratford, Ontario, was discovered on YouTube?",
+     "a": "Justin Bieber",
+     "wrong": [
+      "Shawn Mendes",
+      "The Weeknd",
+      "Drake"
+     ],
+     "why": "His first hit was 'One Time' in 2009."
+    },
+    {
+     "level": 1,
+     "q": "Which Quebec singer recorded 'My Heart Will Go On'?",
+     "a": "Céline Dion",
+     "wrong": [
+      "Shania Twain",
+      "Alanis Morissette",
+      "Avril Lavigne"
+     ],
+     "why": "It was the theme of 'Titanic'."
+    },
+    {
+     "level": 1,
+     "q": "Which Toronto rapper released 'Hotline Bling'?",
+     "a": "Drake",
+     "wrong": [
+      "The Weeknd",
+      "Tory Lanez",
+      "Nav"
+     ],
+     "why": "He calls Toronto 'the 6'."
+    },
+    {
+     "level": 1,
+     "q": "Which Toronto singer recorded 'Blinding Lights'?",
+     "a": "The Weeknd",
+     "wrong": [
+      "Drake",
+      "Shawn Mendes",
+      "Daniel Caesar"
+     ],
+     "why": "It became the longest-charting Hot 100 hit."
+    },
+    {
+     "level": 1,
+     "q": "Which Montreal-born singer-songwriter wrote 'Hallelujah'?",
+     "a": "Leonard Cohen",
+     "wrong": [
+      "Neil Young",
+      "Gordon Lightfoot",
+      "Bryan Adams"
+     ],
+     "why": "He released it in 1984."
+    },
+    {
+     "level": 1,
+     "q": "Which band, led by Chad Kroeger, recorded 'How You Remind Me'?",
+     "a": "Nickelback",
+     "wrong": [
+      "Rush",
+      "The Tragically Hip",
+      "Sum 41"
+     ],
+     "why": "The band comes from Alberta."
+    },
+    {
+     "level": 2,
+     "q": "Which Toronto rock trio recorded the album '2112'?",
+     "a": "Rush",
+     "wrong": [
+      "The Tragically Hip",
+      "Nickelback",
+      "Arcade Fire"
+     ],
+     "why": "Neil Peart was its drummer and lyricist."
+    },
+    {
+     "level": 3,
+     "q": "Which singer, raised in Saskatoon, wrote 'Big Yellow Taxi'?",
+     "a": "Joni Mitchell",
+     "wrong": [
+      "Buffy Sainte-Marie",
+      "k.d. lang",
+      "Sarah McLachlan"
+     ],
+     "why": "It was released in 1970."
+    },
+    {
+     "level": 1,
+     "q": "What is Canada's national anthem?",
+     "a": "O Canada",
+     "wrong": [
+      "The Maple Leaf Forever",
+      "God Save the King",
+      "True North Strong"
+     ],
+     "why": "It became the official anthem in 1980."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Canadian-born director made 'Titanic' and 'Avatar'?",
+     "a": "James Cameron",
+     "wrong": [
+      "Denis Villeneuve",
+      "David Cronenberg",
+      "Norman Jewison"
+     ],
+     "why": "He was born in Kapuskasing, Ontario."
+    },
+    {
+     "level": 2,
+     "q": "Which Canadian sitcom swept the comedy Emmys in 2020?",
+     "a": "Schitt's Creek",
+     "wrong": [
+      "Kim's Convenience",
+      "Corner Gas",
+      "Letterkenny"
+     ],
+     "why": "It won all seven major comedy awards."
+    },
+    {
+     "level": 3,
+     "q": "Which Quebec director made 'Dune' (2021)?",
+     "a": "Denis Villeneuve",
+     "wrong": [
+      "Xavier Dolan",
+      "Jean-Marc Vallée",
+      "Denys Arcand"
+     ],
+     "why": "He also made 'Arrival'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who wrote 'Anne of Green Gables'?",
+     "a": "L. M. Montgomery",
+     "wrong": [
+      "Margaret Atwood",
+      "Alice Munro",
+      "Mordecai Richler"
+     ],
+     "why": "It is set on Prince Edward Island."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote 'The Handmaid's Tale'?",
+     "a": "Margaret Atwood",
+     "wrong": [
+      "Alice Munro",
+      "Carol Shields",
+      "Michael Ondaatje"
+     ],
+     "why": "It was published in 1985."
+    },
+    {
+     "level": 2,
+     "q": "Which Canadian won the Nobel Prize in Literature in 2013?",
+     "a": "Alice Munro",
+     "wrong": [
+      "Margaret Atwood",
+      "Michael Ondaatje",
+      "Yann Martel"
+     ],
+     "why": "She was praised as a master of the short story."
+    },
+    {
+     "level": 3,
+     "q": "Which Yann Martel novel won the 2002 Booker Prize?",
+     "a": "Life of Pi",
+     "wrong": [
+      "The English Patient",
+      "The Blind Assassin",
+      "Beatrice and Virgil"
+     ],
+     "why": "It is about a boy adrift with a tiger."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Where does Canada's Parliament meet?",
+     "a": "Parliament Hill, Ottawa",
+     "wrong": [
+      "Queen's Park, Toronto",
+      "Rideau Hall, Ottawa",
+      "Province House, Halifax"
+     ],
+     "why": "The Centre Block has the Peace Tower."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which animal is on the Canadian five-cent coin?",
+     "a": "Beaver",
+     "wrong": [
+      "Caribou",
+      "Moose",
+      "Loon"
+     ],
+     "why": "The fur trade made the beaver a national symbol."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which circus company was founded in Quebec in 1984?",
+     "a": "Cirque du Soleil",
+     "wrong": [
+      "Big Apple Circus",
+      "Circus Oz",
+      "Circus Roncalli"
+     ],
+     "why": "It uses no animals."
+    },
+    {
+     "level": 1,
+     "q": "Which Quebec dish is fries topped with cheese curds and gravy?",
+     "a": "Poutine",
+     "wrong": [
+      "Tourtière",
+      "Bannock",
+      "Pâté chinois"
+     ],
+     "why": "It appeared in rural Quebec in the 1950s."
+    },
+    {
+     "level": 1,
+     "q": "Which syrup is Canada famous for producing?",
+     "a": "Maple syrup",
+     "wrong": [
+      "Corn syrup",
+      "Golden syrup",
+      "Agave syrup"
+     ],
+     "why": "Quebec makes most of the world's supply."
+    },
+    {
+     "level": 1,
+     "q": "Which leaf is on Canada's flag?",
+     "a": "Maple leaf",
+     "wrong": [
+      "Oak leaf",
+      "Birch leaf",
+      "Elm leaf"
+     ],
+     "why": "The flag was adopted in 1965."
+    },
+    {
+     "level": 1,
+     "q": "When is Thanksgiving in Canada?",
+     "a": "Second Monday of October",
+     "wrong": [
+      "Fourth Thursday of November",
+      "First Monday of September",
+      "Last Monday of May"
+     ],
+     "why": "It comes earlier than in the US because the harvest ends earlier."
+    },
+    {
+     "level": 1,
+     "q": "Which city's winter carnival is hosted by a snowman called Bonhomme?",
+     "a": "Quebec City",
+     "wrong": [
+      "Montreal",
+      "Ottawa",
+      "Winnipeg"
+     ],
+     "why": "It is one of the world's largest winter festivals."
+    },
+    {
+     "level": 1,
+     "q": "Which event is called 'The Greatest Outdoor Show on Earth'?",
+     "a": "Calgary Stampede",
+     "wrong": [
+      "Pacific National Exhibition",
+      "Canadian National Exhibition",
+      "Winterlude"
+     ],
+     "why": "It is a ten-day rodeo and fair each July."
+    },
+    {
+     "level": 1,
+     "q": "Which coffee chain sells bite-sized doughnuts called Timbits?",
+     "a": "Tim Hortons",
+     "wrong": [
+      "Second Cup",
+      "Starbucks",
+      "Coffee Time"
+     ],
+     "why": "It was co-founded by hockey player Tim Horton in 1964."
+    },
+    {
+     "level": 2,
+     "q": "Nanaimo bars are named after a city in which province?",
+     "a": "British Columbia",
+     "wrong": [
+      "Ontario",
+      "Nova Scotia",
+      "Alberta"
+     ],
+     "why": "Nanaimo is on Vancouver Island."
+    },
+    {
+     "level": 2,
+     "q": "Which holiday falls on the Monday before 25 May?",
+     "a": "Victoria Day",
+     "wrong": [
+      "Canada Day",
+      "Civic Holiday",
+      "Family Day"
+     ],
+     "why": "It honours Queen Victoria's birthday."
+    },
+    {
+     "level": 2,
+     "q": "Tourtière, a meat pie eaten at Christmas, is traditional in which province?",
+     "a": "Quebec",
+     "wrong": [
+      "Ontario",
+      "Manitoba",
+      "Alberta"
+     ],
+     "why": "It is often served on Réveillon, Christmas Eve."
+    },
+    {
+     "level": 2,
+     "q": "Which Inuit stone figure appears on Nunavut's flag?",
+     "a": "Inuksuk",
+     "wrong": [
+      "Totem pole",
+      "Igloo",
+      "Dreamcatcher"
+     ],
+     "why": "Inuksuit mark routes and places on the land."
+    },
+    {
+     "level": 2,
+     "q": "What do Canadians call the two-dollar coin?",
+     "a": "Toonie",
+     "wrong": [
+      "Loonie",
+      "Bluenose",
+      "Caribou"
+     ],
+     "why": "The one-dollar coin, with a loon on it, is the loonie."
+    },
+    {
+     "level": 2,
+     "q": "Which day on 30 September honours residential school survivors?",
+     "a": "National Day for Truth and Reconciliation",
+     "wrong": [
+      "Remembrance Day",
+      "Family Day",
+      "Heritage Day"
+     ],
+     "why": "People wear orange shirts on it."
+    },
+    {
+     "level": 3,
+     "q": "Which pastry, filled with butter, sugar, syrup and egg, is often called Canada's national dessert?",
+     "a": "Butter tart",
+     "wrong": [
+      "Sugar pie",
+      "Nanaimo bar",
+      "Saskatoon berry pie"
+     ],
+     "why": "Recipes date back to Ontario in the 1900s."
+    },
+    {
+     "level": 3,
+     "q": "In which province do visitors get 'screeched in' with a shot of rum?",
+     "a": "Newfoundland and Labrador",
+     "wrong": [
+      "Nova Scotia",
+      "Prince Edward Island",
+      "New Brunswick"
+     ],
+     "why": "The ceremony can include kissing a cod."
+    },
+    {
+     "level": 3,
+     "q": "Montreal-style bagels are boiled in water sweetened with what?",
+     "a": "Honey",
+     "wrong": [
+      "Maple syrup",
+      "Molasses",
+      "Brown sugar"
+     ],
+     "why": "They are then baked in a wood-fired oven."
+    },
+    {
+     "level": 1,
+     "q": "What are Canada's two official languages?",
+     "a": "English and French",
+     "wrong": [
+      "English and Spanish",
+      "French and Inuktitut",
+      "English and Cree"
+     ],
+     "why": "The Official Languages Act was passed in 1969."
+    },
+    {
+     "level": 1,
+     "q": "What is Canada's one-dollar coin called?",
+     "a": "Loonie",
+     "wrong": [
+      "Toonie",
+      "Bluenose",
+      "Beaver"
+     ],
+     "why": "It shows a common loon."
+    },
+    {
+     "level": 1,
+     "q": "Which police force is famous for its red serge uniforms?",
+     "a": "Royal Canadian Mounted Police",
+     "wrong": [
+      "Ontario Provincial Police",
+      "Sûreté du Québec",
+      "Canada Border Services Agency"
+     ],
+     "why": "It was founded in 1873."
+    },
+    {
+     "level": 1,
+     "q": "Which tower is Toronto's best-known landmark?",
+     "a": "CN Tower",
+     "wrong": [
+      "Calgary Tower",
+      "Harbour Centre",
+      "Skylon Tower"
+     ],
+     "why": "It is 553 m tall."
+    },
+    {
+     "level": 1,
+     "q": "How many territories does Canada have?",
+     "a": "3",
+     "wrong": [
+      "2",
+      "4",
+      "5"
+     ],
+     "why": "Yukon, the Northwest Territories and Nunavut."
+    },
+    {
+     "level": 2,
+     "q": "Who represents the monarch in Canada?",
+     "a": "The Governor General",
+     "wrong": [
+      "The Prime Minister",
+      "The Chief Justice",
+      "The Speaker of the Senate"
+     ],
+     "why": "The Governor General lives at Rideau Hall."
+    },
+    {
+     "level": 2,
+     "q": "Which Quebec inventor created the snowmobile?",
+     "a": "Joseph-Armand Bombardier",
+     "wrong": [
+      "Alexander Graham Bell",
+      "Elijah McCoy",
+      "Reginald Fessenden"
+     ],
+     "why": "His Ski-Doo went on sale in 1959."
+    },
+    {
+     "level": 2,
+     "q": "Which Canadian doctor is famous for serving with Mao Zedong's army in China?",
+     "a": "Norman Bethune",
+     "wrong": [
+      "Frederick Banting",
+      "William Osler",
+      "Wilder Penfield"
+     ],
+     "why": "He pioneered mobile blood transfusion."
+    },
+    {
+     "level": 3,
+     "q": "What does Canada's motto 'A Mari Usque Ad Mare' mean?",
+     "a": "From sea to sea",
+     "wrong": [
+      "I remember",
+      "Strong and free",
+      "Glorious and free"
+     ],
+     "why": "'Je me souviens' (I remember) is Quebec's motto."
+    },
+    {
+     "level": 3,
+     "q": "Which ship on the Canadian dime is a famous Nova Scotia racing schooner?",
+     "a": "Bluenose",
+     "wrong": [
+      "Hector",
+      "Mayflower",
+      "Resolute"
+     ],
+     "why": "It was never beaten in the International Fishermen's Race."
+    }
+   ]
+  }
+ ]
 }

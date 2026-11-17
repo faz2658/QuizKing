@@ -3,7 +3,8 @@
  "country": "TT",
  "topics": [
   {
-   "name": "Trinidad and Tobago: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -62,17 +63,6 @@
     },
     {
      "level": 1,
-     "q": "Which festival before Lent is Trinidad's biggest celebration?",
-     "a": "Carnival",
-     "wrong": [
-      "Diwali",
-      "Hosay",
-      "Emancipation Day"
-     ],
-     "why": "It is one of the world's greatest carnivals."
-    },
-    {
-     "level": 1,
      "q": "Who became the first woman Prime Minister, in 2010?",
      "a": "Kamla Persad-Bissessar",
      "wrong": [
@@ -81,17 +71,6 @@
       "Basdeo Panday"
      ],
      "why": "She returned to the post in 2025."
-    },
-    {
-     "level": 2,
-     "q": "Which writer from Trinidad won the 2001 Nobel Prize in Literature?",
-     "a": "V. S. Naipaul",
-     "wrong": [
-      "Derek Walcott",
-      "Sam Selvon",
-      "Earl Lovelace"
-     ],
-     "why": "He wrote 'A House for Mr Biswas'."
     },
     {
      "level": 2,
@@ -127,17 +106,6 @@
      "why": "It is the smaller island."
     },
     {
-     "level": 2,
-     "q": "Which Trinidadian writer wrote 'Beyond a Boundary' about cricket?",
-     "a": "C. L. R. James",
-     "wrong": [
-      "V. S. Naipaul",
-      "Sam Selvon",
-      "Eric Williams"
-     ],
-     "why": "It was published in 1963."
-    },
-    {
      "level": 3,
      "q": "Which attempted coup took place in 1990?",
      "a": "Jamaat al Muslimeen coup attempt",
@@ -158,22 +126,12 @@
       "Republic Day"
      ],
      "why": "Trinidad was the first country to make it a holiday."
-    },
-    {
-     "level": 3,
-     "q": "Which day on 30 May marks the arrival of Indian labourers?",
-     "a": "Indian Arrival Day",
-     "wrong": [
-      "Emancipation Day",
-      "Republic Day",
-      "Corpus Christi"
-     ],
-     "why": "The first ship was the Fatel Razack."
     }
    ]
   },
   {
-   "name": "Trinidad and Tobago: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -188,15 +146,93 @@
     },
     {
      "level": 1,
-     "q": "Which musical instrument was invented in Trinidad?",
-     "a": "Steelpan",
+     "q": "Which natural lake of tar is in southern Trinidad?",
+     "a": "Pitch Lake",
      "wrong": [
-      "Marimba",
-      "Kalimba",
-      "Bongo drum"
+      "Lake Asphalt",
+      "Bitumen Bay",
+      "Black Lake"
      ],
-     "why": "It was made from oil drums."
+     "why": "It is the world's largest natural asphalt deposit."
     },
+    {
+     "level": 2,
+     "q": "Which bird sanctuary is famous for scarlet ibises?",
+     "a": "Caroni Swamp",
+     "wrong": [
+      "Asa Wright",
+      "Nariva Swamp",
+      "Main Ridge"
+     ],
+     "why": "The scarlet ibis is a national bird."
+    },
+    {
+     "level": 2,
+     "q": "Which Tobago forest is the oldest protected rainforest in the Western Hemisphere?",
+     "a": "Main Ridge Forest Reserve",
+     "wrong": [
+      "El Yunque",
+      "Asa Wright",
+      "Northern Range"
+     ],
+     "why": "It was protected in 1776."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Trinidadian writer wrote 'Beyond a Boundary' about cricket?",
+     "a": "C. L. R. James",
+     "wrong": [
+      "V. S. Naipaul",
+      "Sam Selvon",
+      "Eric Williams"
+     ],
+     "why": "It was published in 1963."
+    },
+    {
+     "level": 1,
+     "q": "Which sprinter won Olympic 100 m gold for Trinidad in 1976?",
+     "a": "Hasely Crawford",
+     "wrong": [
+      "Ato Boldon",
+      "Richard Thompson",
+      "Keshorn Walcott"
+     ],
+     "why": "It was the country's first Olympic gold."
+    },
+    {
+     "level": 2,
+     "q": "Which Trinidadian cricketer once held the Test record score of 400?",
+     "a": "Brian Lara",
+     "wrong": [
+      "Viv Richards",
+      "Chris Gayle",
+      "Shivnarine Chanderpaul"
+     ],
+     "why": "He also scored 501 in a county match."
+    },
+    {
+     "level": 2,
+     "q": "Which javelin thrower won Olympic gold in 2012?",
+     "a": "Keshorn Walcott",
+     "wrong": [
+      "Hasely Crawford",
+      "Ato Boldon",
+      "Jehue Gordon"
+     ],
+     "why": "He was only 19."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
     {
      "level": 1,
      "q": "Which upbeat music style grew from calypso?",
@@ -207,6 +243,84 @@
       "Zouk"
      ],
      "why": "Its name comes from 'soul of calypso'."
+    },
+    {
+     "level": 3,
+     "q": "Which calypsonian known as 'The Mighty Sparrow' won many crowns?",
+     "a": "Slinger Francisco",
+     "wrong": [
+      "Lord Kitchener",
+      "Calypso Rose",
+      "David Rudder"
+     ],
+     "why": "He is called the Calypso King of the World."
+    },
+    {
+     "level": 3,
+     "q": "Which hip-hop star was born in Trinidad?",
+     "a": "Nicki Minaj",
+     "wrong": [
+      "Rihanna",
+      "Cardi B",
+      "Missy Elliott"
+     ],
+     "why": "She moved to New York as a child."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which writer from Trinidad won the 2001 Nobel Prize in Literature?",
+     "a": "V. S. Naipaul",
+     "wrong": [
+      "Derek Walcott",
+      "Sam Selvon",
+      "Earl Lovelace"
+     ],
+     "why": "He wrote 'A House for Mr Biswas'."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which festival before Lent is Trinidad's biggest celebration?",
+     "a": "Carnival",
+     "wrong": [
+      "Diwali",
+      "Hosay",
+      "Emancipation Day"
+     ],
+     "why": "It is one of the world's greatest carnivals."
+    },
+    {
+     "level": 3,
+     "q": "Which day on 30 May marks the arrival of Indian labourers?",
+     "a": "Indian Arrival Day",
+     "wrong": [
+      "Emancipation Day",
+      "Republic Day",
+      "Corpus Christi"
+     ],
+     "why": "The first ship was the Fatel Razack."
+    },
+    {
+     "level": 1,
+     "q": "Which musical instrument was invented in Trinidad?",
+     "a": "Steelpan",
+     "wrong": [
+      "Marimba",
+      "Kalimba",
+      "Bongo drum"
+     ],
+     "why": "It was made from oil drums."
     },
     {
      "level": 1,
@@ -231,28 +345,6 @@
      "why": "Its code is TTD."
     },
     {
-     "level": 1,
-     "q": "Which natural lake of tar is in southern Trinidad?",
-     "a": "Pitch Lake",
-     "wrong": [
-      "Lake Asphalt",
-      "Bitumen Bay",
-      "Black Lake"
-     ],
-     "why": "It is the world's largest natural asphalt deposit."
-    },
-    {
-     "level": 1,
-     "q": "Which sprinter won Olympic 100 m gold for Trinidad in 1976?",
-     "a": "Hasely Crawford",
-     "wrong": [
-      "Ato Boldon",
-      "Richard Thompson",
-      "Keshorn Walcott"
-     ],
-     "why": "It was the country's first Olympic gold."
-    },
-    {
      "level": 2,
      "q": "Which sandwich of fried fish in bread is famous at Maracas Bay?",
      "a": "Bake and shark",
@@ -262,72 +354,6 @@
       "Roti"
      ],
      "why": "It is topped with sauces."
-    },
-    {
-     "level": 2,
-     "q": "Which Trinidadian cricketer once held the Test record score of 400?",
-     "a": "Brian Lara",
-     "wrong": [
-      "Viv Richards",
-      "Chris Gayle",
-      "Shivnarine Chanderpaul"
-     ],
-     "why": "He also scored 501 in a county match."
-    },
-    {
-     "level": 2,
-     "q": "Which bird sanctuary is famous for scarlet ibises?",
-     "a": "Caroni Swamp",
-     "wrong": [
-      "Asa Wright",
-      "Nariva Swamp",
-      "Main Ridge"
-     ],
-     "why": "The scarlet ibis is a national bird."
-    },
-    {
-     "level": 2,
-     "q": "Which Tobago forest is the oldest protected rainforest in the Western Hemisphere?",
-     "a": "Main Ridge Forest Reserve",
-     "wrong": [
-      "El Yunque",
-      "Asa Wright",
-      "Northern Range"
-     ],
-     "why": "It was protected in 1776."
-    },
-    {
-     "level": 2,
-     "q": "Which javelin thrower won Olympic gold in 2012?",
-     "a": "Keshorn Walcott",
-     "wrong": [
-      "Hasely Crawford",
-      "Ato Boldon",
-      "Jehue Gordon"
-     ],
-     "why": "He was only 19."
-    },
-    {
-     "level": 3,
-     "q": "Which calypsonian known as 'The Mighty Sparrow' won many crowns?",
-     "a": "Slinger Francisco",
-     "wrong": [
-      "Lord Kitchener",
-      "Calypso Rose",
-      "David Rudder"
-     ],
-     "why": "He is called the Calypso King of the World."
-    },
-    {
-     "level": 3,
-     "q": "Which hip-hop star was born in Trinidad?",
-     "a": "Nicki Minaj",
-     "wrong": [
-      "Rihanna",
-      "Cardi B",
-      "Missy Elliott"
-     ],
-     "why": "She moved to New York as a child."
     },
     {
      "level": 3,

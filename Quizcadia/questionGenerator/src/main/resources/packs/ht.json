@@ -3,19 +3,9 @@
  "country": "HT",
  "topics": [
   {
-   "name": "Haiti: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Haiti?",
-     "a": "Port-au-Prince",
-     "wrong": [
-      "Cap-Haïtien",
-      "Gonaïves",
-      "Jacmel"
-     ],
-     "why": "It was struck by a huge earthquake in 2010."
-    },
     {
      "level": 1,
      "q": "In which year did Haiti become independent from France?",
@@ -59,17 +49,6 @@
       "Jean-Pierre Boyer"
      ],
      "why": "He became Emperor Jacques I."
-    },
-    {
-     "level": 1,
-     "q": "What are Haiti's two official languages?",
-     "a": "French and Haitian Creole",
-     "wrong": [
-      "Spanish and French",
-      "English and Creole",
-      "French and Spanish"
-     ],
-     "why": "Most Haitians speak Creole at home."
     },
     {
      "level": 1,
@@ -169,22 +148,56 @@
       "New France"
      ],
      "why": "It was France's richest colony."
+    },
+    {
+     "level": 1,
+     "q": "Which soup is eaten on Independence Day, 1 January?",
+     "a": "Soup joumou (pumpkin soup)",
+     "wrong": [
+      "Gumbo",
+      "Callaloo",
+      "Sancocho"
+     ],
+     "why": "It was once reserved for enslavers."
+    },
+    {
+     "level": 2,
+     "q": "Which northern city was the capital of King Henri Christophe?",
+     "a": "Cap-Haïtien",
+     "wrong": [
+      "Gonaïves",
+      "Jacmel",
+      "Les Cayes"
+     ],
+     "why": "The Citadelle is nearby."
+    },
+    {
+     "level": 2,
+     "q": "Which palace ruins near the Citadelle belonged to King Henri?",
+     "a": "Sans-Souci Palace",
+     "wrong": [
+      "Palais National",
+      "Versailles of the Caribbean",
+      "Fort Jacques"
+     ],
+     "why": "It was damaged by an 1842 earthquake."
     }
    ]
   },
   {
-   "name": "Haiti: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "What is Haiti's currency?",
-     "a": "Gourde",
+     "q": "What is the capital of Haiti?",
+     "a": "Port-au-Prince",
      "wrong": [
-      "Peso",
-      "Dollar",
-      "Franc"
+      "Cap-Haïtien",
+      "Gonaïves",
+      "Jacmel"
      ],
-     "why": "Its code is HTG."
+     "why": "It was struck by a huge earthquake in 2010."
     },
     {
      "level": 1,
@@ -199,26 +212,66 @@
     },
     {
      "level": 1,
-     "q": "Which religion, blending West African and Catholic traditions, is officially recognised in Haiti?",
-     "a": "Vodou",
+     "q": "Which sea lies south of Haiti?",
+     "a": "Caribbean Sea",
      "wrong": [
-      "Candomblé",
-      "Rastafari",
-      "Shinto"
+      "Atlantic Ocean",
+      "Gulf of Mexico",
+      "Pacific Ocean"
      ],
-     "why": "It is officially recognised."
+     "why": "The Atlantic lies to the north."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Haitian music style is popular across the French Caribbean?",
+     "a": "Kompa",
+     "wrong": [
+      "Calypso",
+      "Soca",
+      "Bachata"
+     ],
+     "why": "Nemours Jean-Baptiste pioneered it in the 1950s."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Haitian-American author wrote 'Breath, Eyes, Memory'?",
+     "a": "Edwidge Danticat",
+     "wrong": [
+      "Junot Díaz",
+      "Julia Alvarez",
+      "Jacques Roumain"
+     ],
+     "why": "It was an Oprah's Book Club pick."
     },
     {
-     "level": 1,
-     "q": "Which soup is eaten on Independence Day, 1 January?",
-     "a": "Soup joumou (pumpkin soup)",
+     "level": 3,
+     "q": "Which Haitian writer wrote 'Masters of the Dew'?",
+     "a": "Jacques Roumain",
      "wrong": [
-      "Gumbo",
-      "Callaloo",
-      "Sancocho"
+      "Jean Price-Mars",
+      "Edwidge Danticat",
+      "Dany Laferrière"
      ],
-     "why": "It was once reserved for enslavers."
-    },
+     "why": "It was published in 1944."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
     {
      "level": 1,
      "q": "What are the colourful hand-painted buses of Haiti called?",
@@ -242,39 +295,6 @@
      "why": "It often shows markets and village life."
     },
     {
-     "level": 1,
-     "q": "Which sea lies south of Haiti?",
-     "a": "Caribbean Sea",
-     "wrong": [
-      "Atlantic Ocean",
-      "Gulf of Mexico",
-      "Pacific Ocean"
-     ],
-     "why": "The Atlantic lies to the north."
-    },
-    {
-     "level": 2,
-     "q": "Which northern city was the capital of King Henri Christophe?",
-     "a": "Cap-Haïtien",
-     "wrong": [
-      "Gonaïves",
-      "Jacmel",
-      "Les Cayes"
-     ],
-     "why": "The Citadelle is nearby."
-    },
-    {
-     "level": 2,
-     "q": "Which palace ruins near the Citadelle belonged to King Henri?",
-     "a": "Sans-Souci Palace",
-     "wrong": [
-      "Palais National",
-      "Versailles of the Caribbean",
-      "Fort Jacques"
-     ],
-     "why": "It was damaged by an 1842 earthquake."
-    },
-    {
      "level": 2,
      "q": "Which seaside town is famous for papier-mâché carnival masks?",
      "a": "Jacmel",
@@ -284,6 +304,45 @@
       "Jérémie"
      ],
      "why": "It is an arts centre."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What are Haiti's two official languages?",
+     "a": "French and Haitian Creole",
+     "wrong": [
+      "Spanish and French",
+      "English and Creole",
+      "French and Spanish"
+     ],
+     "why": "Most Haitians speak Creole at home."
+    },
+    {
+     "level": 1,
+     "q": "What is Haiti's currency?",
+     "a": "Gourde",
+     "wrong": [
+      "Peso",
+      "Dollar",
+      "Franc"
+     ],
+     "why": "Its code is HTG."
+    },
+    {
+     "level": 1,
+     "q": "Which religion, blending West African and Catholic traditions, is officially recognised in Haiti?",
+     "a": "Vodou",
+     "wrong": [
+      "Candomblé",
+      "Rastafari",
+      "Shinto"
+     ],
+     "why": "It is officially recognised."
     },
     {
      "level": 2,
@@ -295,39 +354,6 @@
       "Sugar"
      ],
      "why": "It is used in perfumes."
-    },
-    {
-     "level": 2,
-     "q": "Which Haitian-American author wrote 'Breath, Eyes, Memory'?",
-     "a": "Edwidge Danticat",
-     "wrong": [
-      "Junot Díaz",
-      "Julia Alvarez",
-      "Jacques Roumain"
-     ],
-     "why": "It was an Oprah's Book Club pick."
-    },
-    {
-     "level": 3,
-     "q": "Which Haitian music style is popular across the French Caribbean?",
-     "a": "Kompa",
-     "wrong": [
-      "Calypso",
-      "Soca",
-      "Bachata"
-     ],
-     "why": "Nemours Jean-Baptiste pioneered it in the 1950s."
-    },
-    {
-     "level": 3,
-     "q": "Which Haitian writer wrote 'Masters of the Dew'?",
-     "a": "Jacques Roumain",
-     "wrong": [
-      "Jean Price-Mars",
-      "Edwidge Danticat",
-      "Dany Laferrière"
-     ],
-     "why": "It was published in 1944."
     },
     {
      "level": 3,

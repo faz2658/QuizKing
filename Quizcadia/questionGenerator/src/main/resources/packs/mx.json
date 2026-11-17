@@ -3,7 +3,8 @@
  "country": "MX",
  "topics": [
   {
-   "name": "Mexico History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -106,17 +107,6 @@
     },
     {
      "level": 2,
-     "q": "Which Zapotec president led liberal reforms in the 1850s–60s?",
-     "a": "Benito Juárez",
-     "wrong": [
-      "Porfirio Díaz",
-      "Lázaro Cárdenas",
-      "Ignacio Comonfort"
-     ],
-     "why": "He was Mexico's first Indigenous president."
-    },
-    {
-     "level": 2,
      "q": "Which dictator ruled Mexico for over 30 years before 1911?",
      "a": "Porfirio Díaz",
      "wrong": [
@@ -180,11 +170,34 @@
       "Rosario Robles"
      ],
      "why": "She is a climate scientist and former mayor of Mexico City."
+    },
+    {
+     "level": 3,
+     "q": "Which Mexican scientist shared the 1995 Nobel Prize for ozone research?",
+     "a": "Mario Molina",
+     "wrong": [
+      "Luis E. Miramontes",
+      "Octavio Paz",
+      "Alfonso García Robles"
+     ],
+     "why": "He warned about CFCs."
+    },
+    {
+     "level": 3,
+     "q": "Who was the first Mexican in space, in 1985?",
+     "a": "Rodolfo Neri Vela",
+     "wrong": [
+      "José Hernández",
+      "Katya Echazarreta",
+      "Mario Molina"
+     ],
+     "why": "He flew on the Space Shuttle Atlantis."
     }
    ]
   },
   {
-   "name": "Mexico Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -361,11 +374,34 @@
       "Tlatelolco"
      ],
      "why": "The boats are called trajineras."
+    },
+    {
+     "level": 1,
+     "q": "What is Mexico City's main square called?",
+     "a": "The Zócalo",
+     "wrong": [
+      "Plaza Mayor",
+      "Alameda",
+      "Reforma"
+     ],
+     "why": "Its official name is Plaza de la Constitución."
+    },
+    {
+     "level": 2,
+     "q": "Which university in Mexico City is Latin America's largest?",
+     "a": "UNAM",
+     "wrong": [
+      "IPN",
+      "Tec de Monterrey",
+      "UAM"
+     ],
+     "why": "Its central campus is a UNESCO site."
     }
    ]
   },
   {
-   "name": "Mexico Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,30 +582,9 @@
    ]
   },
   {
-   "name": "Mexico Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which painter is famous for self-portraits and her 'Blue House'?",
-     "a": "Frida Kahlo",
-     "wrong": [
-      "Leonora Carrington",
-      "María Izquierdo",
-      "Remedios Varo"
-     ],
-     "why": "Her house in Coyoacán is a museum."
-    },
-    {
-     "level": 1,
-     "q": "Which muralist was married to Frida Kahlo?",
-     "a": "Diego Rivera",
-     "wrong": [
-      "David Alfaro Siqueiros",
-      "José Clemente Orozco",
-      "Rufino Tamayo"
-     ],
-     "why": "His murals cover the National Palace."
-    },
     {
      "level": 1,
      "q": "Which kind of Mexican band plays violins, trumpets and guitars in charro suits?",
@@ -581,6 +596,23 @@
      ],
      "why": "It is on UNESCO's heritage list."
     },
+    {
+     "level": 2,
+     "q": "Which singer is called 'El Sol de México'?",
+     "a": "Luis Miguel",
+     "wrong": [
+      "Juan Gabriel",
+      "Vicente Fernández",
+      "Alejandro Fernández"
+     ],
+     "why": "He is known for his boleros."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
     {
      "level": 1,
      "q": "Which Mexican director made 'Gravity' and 'Roma'?",
@@ -659,27 +691,22 @@
      "why": "'Frida' came out in 2002."
     },
     {
-     "level": 2,
-     "q": "Which singer is called 'El Sol de México'?",
-     "a": "Luis Miguel",
+     "level": 3,
+     "q": "Which Oaxacan actress was nominated for an Oscar for 'Roma'?",
+     "a": "Yalitza Aparicio",
      "wrong": [
-      "Juan Gabriel",
-      "Vicente Fernández",
-      "Alejandro Fernández"
+      "Marina de Tavira",
+      "Salma Hayek",
+      "Ana de la Reguera"
      ],
-     "why": "He is known for his boleros."
-    },
-    {
-     "level": 2,
-     "q": "Which ranchera legend was nicknamed 'Chente'?",
-     "a": "Vicente Fernández",
-     "wrong": [
-      "Pedro Infante",
-      "Jorge Negrete",
-      "Juan Gabriel"
-     ],
-     "why": "He sang 'Volver, Volver'."
-    },
+     "why": "She was a first-time actor."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
      "level": 2,
      "q": "Which Nobel-winning poet wrote 'The Labyrinth of Solitude'?",
@@ -712,23 +739,130 @@
       "Rosario Castellanos"
      ],
      "why": "Each chapter begins with a recipe."
-    },
-    {
-     "level": 3,
-     "q": "Which Oaxacan actress was nominated for an Oscar for 'Roma'?",
-     "a": "Yalitza Aparicio",
-     "wrong": [
-      "Marina de Tavira",
-      "Salma Hayek",
-      "Ana de la Reguera"
-     ],
-     "why": "She was a first-time actor."
     }
    ]
   },
   {
-   "name": "Mexico Food & Traditions",
+   "category": "Politics",
+   "name": "Politics",
    "questions": [
+    {
+     "level": 2,
+     "q": "Which Zapotec president led liberal reforms in the 1850s–60s?",
+     "a": "Benito Juárez",
+     "wrong": [
+      "Porfirio Díaz",
+      "Lázaro Cárdenas",
+      "Ignacio Comonfort"
+     ],
+     "why": "He was Mexico's first Indigenous president."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which painter is famous for self-portraits and her 'Blue House'?",
+     "a": "Frida Kahlo",
+     "wrong": [
+      "Leonora Carrington",
+      "María Izquierdo",
+      "Remedios Varo"
+     ],
+     "why": "Her house in Coyoacán is a museum."
+    },
+    {
+     "level": 1,
+     "q": "Which muralist was married to Frida Kahlo?",
+     "a": "Diego Rivera",
+     "wrong": [
+      "David Alfaro Siqueiros",
+      "José Clemente Orozco",
+      "Rufino Tamayo"
+     ],
+     "why": "His murals cover the National Palace."
+    },
+    {
+     "level": 2,
+     "q": "Which brightly painted fantasy creatures come from Oaxaca and Mexico City?",
+     "a": "Alebrijes",
+     "wrong": [
+      "Piñatas",
+      "Calaveras",
+      "Huipiles"
+     ],
+     "why": "Pedro Linares created the first ones."
+    },
+    {
+     "level": 2,
+     "q": "What is the Mexican word for the colourful embroidered tunics of Indigenous women?",
+     "a": "Huipil",
+     "wrong": [
+      "Poncho",
+      "Rebozo",
+      "Sarape"
+     ],
+     "why": "Designs can show the wearer's village."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which butterfly migrates to Mexico's forests every winter?",
+     "a": "Monarch butterfly",
+     "wrong": [
+      "Swallowtail",
+      "Painted lady",
+      "Morpho"
+     ],
+     "why": "Millions gather in Michoacán."
+    },
+    {
+     "level": 2,
+     "q": "What is Mexico's national animal?",
+     "a": "Golden eagle",
+     "wrong": [
+      "Jaguar",
+      "Axolotl",
+      "Xoloitzcuintli"
+     ],
+     "why": "It appears on the flag."
+    },
+    {
+     "level": 2,
+     "q": "Which hairless dog breed was sacred to the Aztecs?",
+     "a": "Xoloitzcuintli",
+     "wrong": [
+      "Chihuahua",
+      "Chinese crested",
+      "Peruvian Inca orchid"
+     ],
+     "why": "It was said to guide souls of the dead."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which ranchera legend was nicknamed 'Chente'?",
+     "a": "Vicente Fernández",
+     "wrong": [
+      "Pedro Infante",
+      "Jorge Negrete",
+      "Juan Gabriel"
+     ],
+     "why": "He sang 'Volver, Volver'."
+    },
     {
      "level": 1,
      "q": "Which holiday honours dead loved ones with altars and marigolds?",
@@ -862,17 +996,6 @@
      "why": "Whoever finds the baby figurine hosts a tamale party."
     },
     {
-     "level": 2,
-     "q": "Which brightly painted fantasy creatures come from Oaxaca and Mexico City?",
-     "a": "Alebrijes",
-     "wrong": [
-      "Piñatas",
-      "Calaveras",
-      "Huipiles"
-     ],
-     "why": "Pedro Linares created the first ones."
-    },
-    {
      "level": 3,
      "q": "Which Oaxaca festival in July celebrates Indigenous dances?",
      "a": "Guelaguetza",
@@ -904,12 +1027,7 @@
       "Oreja"
      ],
      "why": "It is decorated with dough 'bones'."
-    }
-   ]
-  },
-  {
-   "name": "Mexico General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is Mexico's currency?",
@@ -956,28 +1074,6 @@
     },
     {
      "level": 1,
-     "q": "Which butterfly migrates to Mexico's forests every winter?",
-     "a": "Monarch butterfly",
-     "wrong": [
-      "Swallowtail",
-      "Painted lady",
-      "Morpho"
-     ],
-     "why": "Millions gather in Michoacán."
-    },
-    {
-     "level": 1,
-     "q": "What is Mexico City's main square called?",
-     "a": "The Zócalo",
-     "wrong": [
-      "Plaza Mayor",
-      "Alameda",
-      "Reforma"
-     ],
-     "why": "Its official name is Plaza de la Constitución."
-    },
-    {
-     "level": 1,
      "q": "Which Indigenous language with over a million speakers comes from the Aztecs?",
      "a": "Nahuatl",
      "wrong": [
@@ -989,17 +1085,6 @@
     },
     {
      "level": 2,
-     "q": "What is Mexico's national animal?",
-     "a": "Golden eagle",
-     "wrong": [
-      "Jaguar",
-      "Axolotl",
-      "Xoloitzcuintli"
-     ],
-     "why": "It appears on the flag."
-    },
-    {
-     "level": 2,
      "q": "Which salamander from Xochimilco never grows up?",
      "a": "Axolotl",
      "wrong": [
@@ -1008,39 +1093,6 @@
       "Olm"
      ],
      "why": "It keeps its gills as an adult."
-    },
-    {
-     "level": 2,
-     "q": "Which hairless dog breed was sacred to the Aztecs?",
-     "a": "Xoloitzcuintli",
-     "wrong": [
-      "Chihuahua",
-      "Chinese crested",
-      "Peruvian Inca orchid"
-     ],
-     "why": "It was said to guide souls of the dead."
-    },
-    {
-     "level": 2,
-     "q": "What is the Mexican word for the colourful embroidered tunics of Indigenous women?",
-     "a": "Huipil",
-     "wrong": [
-      "Poncho",
-      "Rebozo",
-      "Sarape"
-     ],
-     "why": "Designs can show the wearer's village."
-    },
-    {
-     "level": 2,
-     "q": "Which university in Mexico City is Latin America's largest?",
-     "a": "UNAM",
-     "wrong": [
-      "IPN",
-      "Tec de Monterrey",
-      "UAM"
-     ],
-     "why": "Its central campus is a UNESCO site."
     },
     {
      "level": 2,
@@ -1063,28 +1115,6 @@
       "Rodolfo Neri Vela"
      ],
      "why": "He synthesised norethisterone in 1951."
-    },
-    {
-     "level": 3,
-     "q": "Which Mexican scientist shared the 1995 Nobel Prize for ozone research?",
-     "a": "Mario Molina",
-     "wrong": [
-      "Luis E. Miramontes",
-      "Octavio Paz",
-      "Alfonso García Robles"
-     ],
-     "why": "He warned about CFCs."
-    },
-    {
-     "level": 3,
-     "q": "Who was the first Mexican in space, in 1985?",
-     "a": "Rodolfo Neri Vela",
-     "wrong": [
-      "José Hernández",
-      "Katya Echazarreta",
-      "Mario Molina"
-     ],
-     "why": "He flew on the Space Shuttle Atlantis."
     }
    ]
   }

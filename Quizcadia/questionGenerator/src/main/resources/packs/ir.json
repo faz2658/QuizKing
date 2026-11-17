@@ -3,7 +3,8 @@
  "country": "IR",
  "topics": [
   {
-   "name": "Iran: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -29,17 +30,6 @@
     },
     {
      "level": 1,
-     "q": "Which ceremonial capital was built by Darius I?",
-     "a": "Persepolis",
-     "wrong": [
-      "Pasargadae",
-      "Susa",
-      "Ctesiphon"
-     ],
-     "why": "Alexander the Great burned it."
-    },
-    {
-     "level": 1,
      "q": "Which 1979 event ended Iran's monarchy?",
      "a": "Islamic Revolution",
      "wrong": [
@@ -51,17 +41,6 @@
     },
     {
      "level": 1,
-     "q": "What was the title of Iran's kings?",
-     "a": "Shah",
-     "wrong": [
-      "Sultan",
-      "Emir",
-      "Caliph"
-     ],
-     "why": "The last shah was Mohammad Reza Pahlavi."
-    },
-    {
-     "level": 1,
      "q": "Which war did Iran fight against Iraq from 1980 to 1988?",
      "a": "Iran–Iraq War",
      "wrong": [
@@ -70,17 +49,6 @@
       "Anglo-Persian War"
      ],
      "why": "It ended in a stalemate."
-    },
-    {
-     "level": 1,
-     "q": "Which poet wrote the 'Shahnameh' (Book of Kings)?",
-     "a": "Ferdowsi",
-     "wrong": [
-      "Hafez",
-      "Rumi",
-      "Saadi"
-     ],
-     "why": "It took him about 30 years."
     },
     {
      "level": 2,
@@ -95,17 +63,6 @@
     },
     {
      "level": 2,
-     "q": "Which Safavid shah made Isfahan his capital?",
-     "a": "Shah Abbas I",
-     "wrong": [
-      "Shah Ismail I",
-      "Nader Shah",
-      "Karim Khan Zand"
-     ],
-     "why": "He built its great square."
-    },
-    {
-     "level": 2,
      "q": "Which Iranian lawyer won the 2003 Nobel Peace Prize?",
      "a": "Shirin Ebadi",
      "wrong": [
@@ -114,39 +71,6 @@
       "Azar Nafisi"
      ],
      "why": "She was the first Muslim woman to win it."
-    },
-    {
-     "level": 2,
-     "q": "Which poet's tomb in Shiraz draws many readers?",
-     "a": "Hafez",
-     "wrong": [
-      "Ferdowsi",
-      "Omar Khayyam",
-      "Rumi"
-     ],
-     "why": "Iranians open his poems to tell fortunes."
-    },
-    {
-     "level": 2,
-     "q": "Which poet and astronomer wrote the 'Rubaiyat'?",
-     "a": "Omar Khayyam",
-     "wrong": [
-      "Avicenna",
-      "Al-Biruni",
-      "Ferdowsi"
-     ],
-     "why": "He also helped reform the calendar."
-    },
-    {
-     "level": 3,
-     "q": "Which physician wrote 'The Canon of Medicine'?",
-     "a": "Avicenna (Ibn Sina)",
-     "wrong": [
-      "Al-Razi",
-      "Al-Biruni",
-      "Ibn Rushd"
-     ],
-     "why": "It was used in Europe for centuries."
     },
     {
      "level": 3,
@@ -161,20 +85,43 @@
     },
     {
      "level": 3,
-     "q": "Which Iranian mathematician won the Fields Medal in 2014?",
-     "a": "Maryam Mirzakhani",
+     "q": "Which ancient city in Fars holds the tomb of Cyrus the Great?",
+     "a": "Pasargadae",
      "wrong": [
-      "Cumrun Vafa",
-      "Caucher Birkar",
-      "Firouz Naderi"
+      "Persepolis",
+      "Susa",
+      "Naqsh-e Rustam"
      ],
-     "why": "She was the first woman to win it."
+     "why": "It is a UNESCO site."
     }
    ]
   },
   {
-   "name": "Iran: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which ceremonial capital was built by Darius I?",
+     "a": "Persepolis",
+     "wrong": [
+      "Pasargadae",
+      "Susa",
+      "Ctesiphon"
+     ],
+     "why": "Alexander the Great burned it."
+    },
+    {
+     "level": 2,
+     "q": "Which Safavid shah made Isfahan his capital?",
+     "a": "Shah Abbas I",
+     "wrong": [
+      "Shah Ismail I",
+      "Nader Shah",
+      "Karim Khan Zand"
+     ],
+     "why": "He built its great square."
+    },
     {
      "level": 1,
      "q": "What is the capital of Iran?",
@@ -185,50 +132,6 @@
       "Mashhad"
      ],
      "why": "It lies below the Alborz mountains."
-    },
-    {
-     "level": 1,
-     "q": "What is the Persian New Year called?",
-     "a": "Nowruz",
-     "wrong": [
-      "Yalda",
-      "Mehregan",
-      "Chaharshanbe Suri"
-     ],
-     "why": "It begins at the spring equinox."
-    },
-    {
-     "level": 1,
-     "q": "Iran is the world's top producer of which spice from crocus flowers?",
-     "a": "Saffron",
-     "wrong": [
-      "Turmeric",
-      "Cumin",
-      "Sumac"
-     ],
-     "why": "Most comes from Khorasan."
-    },
-    {
-     "level": 1,
-     "q": "What is Iran's currency?",
-     "a": "Rial",
-     "wrong": [
-      "Dinar",
-      "Lira",
-      "Dirham"
-     ],
-     "why": "People often count prices in tomans."
-    },
-    {
-     "level": 1,
-     "q": "Which hand-knotted floor coverings is Iran famous for?",
-     "a": "Persian carpets",
-     "wrong": [
-      "Tapestries",
-      "Quilts",
-      "Batik cloths"
-     ],
-     "why": "Tabriz and Isfahan are famous centres."
     },
     {
      "level": 1,
@@ -295,7 +198,30 @@
       "Mehregan"
      ],
      "why": "Families read Hafez's poems."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Iranian mathematician won the Fields Medal in 2014?",
+     "a": "Maryam Mirzakhani",
+     "wrong": [
+      "Cumrun Vafa",
+      "Caucher Birkar",
+      "Firouz Naderi"
+     ],
+     "why": "She was the first woman to win it."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
     {
      "level": 2,
      "q": "Which Iranian director won Oscars for 'A Separation' and 'The Salesman'?",
@@ -306,17 +232,117 @@
       "Majid Majidi"
      ],
      "why": "Both won Best Foreign Language Film."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which poet wrote the 'Shahnameh' (Book of Kings)?",
+     "a": "Ferdowsi",
+     "wrong": [
+      "Hafez",
+      "Rumi",
+      "Saadi"
+     ],
+     "why": "It took him about 30 years."
+    },
+    {
+     "level": 2,
+     "q": "Which poet's tomb in Shiraz draws many readers?",
+     "a": "Hafez",
+     "wrong": [
+      "Ferdowsi",
+      "Omar Khayyam",
+      "Rumi"
+     ],
+     "why": "Iranians open his poems to tell fortunes."
+    },
+    {
+     "level": 2,
+     "q": "Which poet and astronomer wrote the 'Rubaiyat'?",
+     "a": "Omar Khayyam",
+     "wrong": [
+      "Avicenna",
+      "Al-Biruni",
+      "Ferdowsi"
+     ],
+     "why": "He also helped reform the calendar."
     },
     {
      "level": 3,
-     "q": "Which ancient city in Fars holds the tomb of Cyrus the Great?",
-     "a": "Pasargadae",
+     "q": "Which physician wrote 'The Canon of Medicine'?",
+     "a": "Avicenna (Ibn Sina)",
      "wrong": [
-      "Persepolis",
-      "Susa",
-      "Naqsh-e Rustam"
+      "Al-Razi",
+      "Al-Biruni",
+      "Ibn Rushd"
      ],
-     "why": "It is a UNESCO site."
+     "why": "It was used in Europe for centuries."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What was the title of Iran's kings?",
+     "a": "Shah",
+     "wrong": [
+      "Sultan",
+      "Emir",
+      "Caliph"
+     ],
+     "why": "The last shah was Mohammad Reza Pahlavi."
+    },
+    {
+     "level": 1,
+     "q": "What is the Persian New Year called?",
+     "a": "Nowruz",
+     "wrong": [
+      "Yalda",
+      "Mehregan",
+      "Chaharshanbe Suri"
+     ],
+     "why": "It begins at the spring equinox."
+    },
+    {
+     "level": 1,
+     "q": "Iran is the world's top producer of which spice from crocus flowers?",
+     "a": "Saffron",
+     "wrong": [
+      "Turmeric",
+      "Cumin",
+      "Sumac"
+     ],
+     "why": "Most comes from Khorasan."
+    },
+    {
+     "level": 1,
+     "q": "What is Iran's currency?",
+     "a": "Rial",
+     "wrong": [
+      "Dinar",
+      "Lira",
+      "Dirham"
+     ],
+     "why": "People often count prices in tomans."
+    },
+    {
+     "level": 1,
+     "q": "Which hand-knotted floor coverings is Iran famous for?",
+     "a": "Persian carpets",
+     "wrong": [
+      "Tapestries",
+      "Quilts",
+      "Batik cloths"
+     ],
+     "why": "Tabriz and Isfahan are famous centres."
     },
     {
      "level": 3,

@@ -3,7 +3,8 @@
  "country": "MA",
  "topics": [
   {
-   "name": "Morocco: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -37,28 +38,6 @@
       "Desert March"
      ],
      "why": "It was organised by Hassan II."
-    },
-    {
-     "level": 1,
-     "q": "Which dynasty has ruled Morocco since the 1600s?",
-     "a": "Alaouite dynasty",
-     "wrong": [
-      "Almohad dynasty",
-      "Saadi dynasty",
-      "Marinid dynasty"
-     ],
-     "why": "It is one of the oldest ruling dynasties."
-    },
-    {
-     "level": 1,
-     "q": "Which Moroccan city has the world's oldest existing university?",
-     "a": "Fez",
-     "wrong": [
-      "Marrakesh",
-      "Rabat",
-      "Tangier"
-     ],
-     "why": "Al-Qarawiyyin was founded in 859."
     },
     {
      "level": 1,
@@ -116,28 +95,6 @@
      "why": "He ruled for 55 years."
     },
     {
-     "level": 2,
-     "q": "Which Roman city's ruins near Meknes are a UNESCO site?",
-     "a": "Volubilis",
-     "wrong": [
-      "Carthage",
-      "Leptis Magna",
-      "Timgad"
-     ],
-     "why": "It has beautiful mosaics."
-    },
-    {
-     "level": 2,
-     "q": "What is the main Indigenous people of North Africa called?",
-     "a": "Amazigh (Berbers)",
-     "wrong": [
-      "Bedouins",
-      "Copts",
-      "Nubians"
-     ],
-     "why": "Tamazight became an official language in 2011."
-    },
-    {
      "level": 3,
      "q": "Which 1578 battle is called the Battle of the Three Kings?",
      "a": "Battle of Ksar el-Kebir",
@@ -173,8 +130,31 @@
    ]
   },
   {
-   "name": "Morocco: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which Moroccan city has the world's oldest existing university?",
+     "a": "Fez",
+     "wrong": [
+      "Marrakesh",
+      "Rabat",
+      "Tangier"
+     ],
+     "why": "Al-Qarawiyyin was founded in 859."
+    },
+    {
+     "level": 2,
+     "q": "Which Roman city's ruins near Meknes are a UNESCO site?",
+     "a": "Volubilis",
+     "wrong": [
+      "Carthage",
+      "Leptis Magna",
+      "Timgad"
+     ],
+     "why": "It has beautiful mosaics."
+    },
     {
      "level": 1,
      "q": "What is the capital of Morocco?",
@@ -185,6 +165,163 @@
       "Fez"
      ],
      "why": "Casablanca is the largest city."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain range crosses Morocco?",
+     "a": "Atlas Mountains",
+     "wrong": [
+      "Alps",
+      "Pyrenees",
+      "Andes"
+     ],
+     "why": "Toubkal is its highest peak."
+    },
+    {
+     "level": 1,
+     "q": "Which strait separates Morocco from Spain?",
+     "a": "Strait of Gibraltar",
+     "wrong": [
+      "Strait of Sicily",
+      "Bosphorus",
+      "Strait of Otranto"
+     ],
+     "why": "It is about 14 km wide at its narrowest."
+    },
+    {
+     "level": 3,
+     "q": "What is Morocco's highest mountain?",
+     "a": "Jebel Toubkal",
+     "wrong": [
+      "Mount Atlas",
+      "Jebel Ayachi",
+      "Jebel Saghro"
+     ],
+     "why": "It is 4,167 m high."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which team became the first African side to reach a World Cup semi-final, in 2022?",
+     "a": "Morocco",
+     "wrong": [
+      "Senegal",
+      "Cameroon",
+      "Ghana"
+     ],
+     "why": "They beat Spain and Portugal on the way."
+    },
+    {
+     "level": 2,
+     "q": "Which huge mosque in Casablanca has a minaret over 200 m tall?",
+     "a": "Hassan II Mosque",
+     "wrong": [
+      "Koutoubia Mosque",
+      "Kairouan Mosque",
+      "Tinmel Mosque"
+     ],
+     "why": "Part of it stands over the Atlantic."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which coastal town is famous for gnawa music and windsurfing?",
+     "a": "Essaouira",
+     "wrong": [
+      "Agadir",
+      "El Jadida",
+      "Larache"
+     ],
+     "why": "It was once called Mogador."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which 1942 film is named after Morocco's biggest city?",
+     "a": "Casablanca",
+     "wrong": [
+      "Marrakesh Express",
+      "The Sheltering Sky",
+      "Lawrence of Arabia"
+     ],
+     "why": "Humphrey Bogart starred."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient fortified village in the south appears in many films?",
+     "a": "Aït Benhaddou",
+     "wrong": [
+      "Ouarzazate",
+      "Erfoud",
+      "Merzouga"
+     ],
+     "why": "It is a UNESCO site."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which dynasty has ruled Morocco since the 1600s?",
+     "a": "Alaouite dynasty",
+     "wrong": [
+      "Almohad dynasty",
+      "Saadi dynasty",
+      "Marinid dynasty"
+     ],
+     "why": "It is one of the oldest ruling dynasties."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which 'blue city' in the Rif is famous for its painted streets?",
+     "a": "Chefchaouen",
+     "wrong": [
+      "Essaouira",
+      "Tetouan",
+      "Asilah"
+     ],
+     "why": "Its houses are washed in shades of blue."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 2,
+     "q": "What is the main Indigenous people of North Africa called?",
+     "a": "Amazigh (Berbers)",
+     "wrong": [
+      "Bedouins",
+      "Copts",
+      "Nubians"
+     ],
+     "why": "Tamazight became an official language in 2011."
     },
     {
      "level": 1,
@@ -210,17 +347,6 @@
     },
     {
      "level": 1,
-     "q": "Which mountain range crosses Morocco?",
-     "a": "Atlas Mountains",
-     "wrong": [
-      "Alps",
-      "Pyrenees",
-      "Andes"
-     ],
-     "why": "Toubkal is its highest peak."
-    },
-    {
-     "level": 1,
      "q": "What is Morocco's currency?",
      "a": "Moroccan dirham",
      "wrong": [
@@ -229,50 +355,6 @@
       "Franc"
      ],
      "why": "Its code is MAD."
-    },
-    {
-     "level": 1,
-     "q": "Which strait separates Morocco from Spain?",
-     "a": "Strait of Gibraltar",
-     "wrong": [
-      "Strait of Sicily",
-      "Bosphorus",
-      "Strait of Otranto"
-     ],
-     "why": "It is about 14 km wide at its narrowest."
-    },
-    {
-     "level": 1,
-     "q": "Which team became the first African side to reach a World Cup semi-final, in 2022?",
-     "a": "Morocco",
-     "wrong": [
-      "Senegal",
-      "Cameroon",
-      "Ghana"
-     ],
-     "why": "They beat Spain and Portugal on the way."
-    },
-    {
-     "level": 2,
-     "q": "Which 'blue city' in the Rif is famous for its painted streets?",
-     "a": "Chefchaouen",
-     "wrong": [
-      "Essaouira",
-      "Tetouan",
-      "Asilah"
-     ],
-     "why": "Its houses are washed in shades of blue."
-    },
-    {
-     "level": 2,
-     "q": "Which huge mosque in Casablanca has a minaret over 200 m tall?",
-     "a": "Hassan II Mosque",
-     "wrong": [
-      "Koutoubia Mosque",
-      "Kairouan Mosque",
-      "Tinmel Mosque"
-     ],
-     "why": "Part of it stands over the Atlantic."
     },
     {
      "level": 2,
@@ -295,50 +377,6 @@
       "Walnut"
      ],
      "why": "It grows mainly in the southwest."
-    },
-    {
-     "level": 2,
-     "q": "Which 1942 film is named after Morocco's biggest city?",
-     "a": "Casablanca",
-     "wrong": [
-      "Marrakesh Express",
-      "The Sheltering Sky",
-      "Lawrence of Arabia"
-     ],
-     "why": "Humphrey Bogart starred."
-    },
-    {
-     "level": 3,
-     "q": "What is Morocco's highest mountain?",
-     "a": "Jebel Toubkal",
-     "wrong": [
-      "Mount Atlas",
-      "Jebel Ayachi",
-      "Jebel Saghro"
-     ],
-     "why": "It is 4,167 m high."
-    },
-    {
-     "level": 3,
-     "q": "Which coastal town is famous for gnawa music and windsurfing?",
-     "a": "Essaouira",
-     "wrong": [
-      "Agadir",
-      "El Jadida",
-      "Larache"
-     ],
-     "why": "It was once called Mogador."
-    },
-    {
-     "level": 3,
-     "q": "Which ancient fortified village in the south appears in many films?",
-     "a": "Aït Benhaddou",
-     "wrong": [
-      "Ouarzazate",
-      "Erfoud",
-      "Merzouga"
-     ],
-     "why": "It is a UNESCO site."
     }
    ]
   }

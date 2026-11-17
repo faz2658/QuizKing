@@ -3,19 +3,9 @@
  "country": "GQ",
  "topics": [
   {
-   "name": "Equatorial Guinea: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Equatorial Guinea?",
-     "a": "Malabo",
-     "wrong": [
-      "Bata",
-      "Ebebiyín",
-      "Oyala"
-     ],
-     "why": "It is on Bioko island."
-    },
     {
      "level": 1,
      "q": "From which country did Equatorial Guinea gain independence in 1968?",
@@ -29,28 +19,6 @@
     },
     {
      "level": 1,
-     "q": "What is Equatorial Guinea's main export?",
-     "a": "Oil",
-     "wrong": [
-      "Cocoa",
-      "Coffee",
-      "Timber"
-     ],
-     "why": "Oil was found in the 1990s."
-    },
-    {
-     "level": 1,
-     "q": "What is the currency of Equatorial Guinea?",
-     "a": "Central African CFA franc",
-     "wrong": [
-      "Peseta",
-      "Euro",
-      "Naira"
-     ],
-     "why": "It is shared by six countries."
-    },
-    {
-     "level": 1,
      "q": "Who has been President of Equatorial Guinea since 1979?",
      "a": "Teodoro Obiang Nguema Mbasogo",
      "wrong": [
@@ -59,28 +27,6 @@
       "Severo Moto"
      ],
      "why": "He is the world's longest-serving President."
-    },
-    {
-     "level": 1,
-     "q": "Which island holds the capital?",
-     "a": "Bioko",
-     "wrong": [
-      "Annobón",
-      "Corisco",
-      "Elobey"
-     ],
-     "why": "It was called Fernando Pó."
-    },
-    {
-     "level": 1,
-     "q": "Which part of the country is on the African mainland?",
-     "a": "Río Muni",
-     "wrong": [
-      "Bioko",
-      "Annobón",
-      "Elobey"
-     ],
-     "why": "Its main city is Bata."
     },
     {
      "level": 2,
@@ -92,61 +38,6 @@
       "Bonifacio Ondó Edu"
      ],
      "why": "He was overthrown in 1979 by his nephew."
-    },
-    {
-     "level": 2,
-     "q": "Which 2004 coup plot involved Simon Mann and Mark Thatcher?",
-     "a": "The Wonga Coup",
-     "wrong": [
-      "Operation Barracuda",
-      "Bob Denard plot",
-      "Malabo Raid"
-     ],
-     "why": "Mann was arrested in Zimbabwe."
-    },
-    {
-     "level": 2,
-     "q": "Which new capital is being built on the mainland?",
-     "a": "Ciudad de la Paz (Oyala)",
-     "wrong": [
-      "Bata",
-      "Mongomo",
-      "Evinayong"
-     ],
-     "why": "It is in the rainforest."
-    },
-    {
-     "level": 2,
-     "q": "Which tiny island far to the south is part of the country?",
-     "a": "Annobón",
-     "wrong": [
-      "Corisco",
-      "Bioko",
-      "Elobey Grande"
-     ],
-     "why": "It is south of the equator."
-    },
-    {
-     "level": 2,
-     "q": "Which famous slow swimmer from Equatorial Guinea became known at Sydney 2000?",
-     "a": "Eric Moussambani",
-     "wrong": [
-      "Paula Barila Bolopa",
-      "Kieren Perkins",
-      "Ian Thorpe"
-     ],
-     "why": "He was called 'Eric the Eel'."
-    },
-    {
-     "level": 3,
-     "q": "Which Vice-President is the President's son?",
-     "a": "Teodoro Nguema Obiang Mangue (Teodorín)",
-     "wrong": [
-      "Gabriel Obiang",
-      "Severo Moto",
-      "Ignacio Milam Tang"
-     ],
-     "why": "He is known for luxury spending."
     },
     {
      "level": 3,
@@ -173,18 +64,74 @@
    ]
   },
   {
-   "name": "Equatorial Guinea: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "Which language is official along with French and Portuguese?",
-     "a": "Spanish",
+     "q": "What is the capital of Equatorial Guinea?",
+     "a": "Malabo",
      "wrong": [
-      "English",
-      "Arabic",
-      "Fang"
+      "Bata",
+      "Ebebiyín",
+      "Oyala"
      ],
-     "why": "Fang and Bubi are local languages."
+     "why": "It is on Bioko island."
+    },
+    {
+     "level": 1,
+     "q": "What is Equatorial Guinea's main export?",
+     "a": "Oil",
+     "wrong": [
+      "Cocoa",
+      "Coffee",
+      "Timber"
+     ],
+     "why": "Oil was found in the 1990s."
+    },
+    {
+     "level": 1,
+     "q": "What is the currency of Equatorial Guinea?",
+     "a": "Central African CFA franc",
+     "wrong": [
+      "Peseta",
+      "Euro",
+      "Naira"
+     ],
+     "why": "It is shared by six countries."
+    },
+    {
+     "level": 1,
+     "q": "Which island holds the capital?",
+     "a": "Bioko",
+     "wrong": [
+      "Annobón",
+      "Corisco",
+      "Elobey"
+     ],
+     "why": "It was called Fernando Pó."
+    },
+    {
+     "level": 2,
+     "q": "Which new capital is being built on the mainland?",
+     "a": "Ciudad de la Paz (Oyala)",
+     "wrong": [
+      "Bata",
+      "Mongomo",
+      "Evinayong"
+     ],
+     "why": "It is in the rainforest."
+    },
+    {
+     "level": 2,
+     "q": "Which tiny island far to the south is part of the country?",
+     "a": "Annobón",
+     "wrong": [
+      "Corisco",
+      "Bioko",
+      "Elobey Grande"
+     ],
+     "why": "It is south of the equator."
     },
     {
      "level": 1,
@@ -199,6 +146,112 @@
     },
     {
      "level": 1,
+     "q": "Which beach city on the mainland is the largest city?",
+     "a": "Bata",
+     "wrong": [
+      "Malabo",
+      "Mongomo",
+      "Ebebiyín"
+     ],
+     "why": "It is the main port of Río Muni."
+    },
+    {
+     "level": 2,
+     "q": "Which national park on the mainland has gorillas and forest elephants?",
+     "a": "Monte Alén National Park",
+     "wrong": [
+      "Lopé",
+      "Odzala",
+      "Dja"
+     ],
+     "why": "It covers about 2,000 square kilometres."
+    },
+    {
+     "level": 2,
+     "q": "Which crater lake on Bioko is surrounded by forest?",
+     "a": "Lake Biao",
+     "wrong": [
+      "Lake Nyos",
+      "Lake Chad",
+      "Lake Kivu"
+     ],
+     "why": "It is in a caldera."
+    },
+    {
+     "level": 2,
+     "q": "Which falls in the south of Bioko are near Ureca?",
+     "a": "Iladyi Falls",
+     "wrong": [
+      "Victoria Falls",
+      "Kalandula Falls",
+      "Boali Falls"
+     ],
+     "why": "It is in a rainforest reserve."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which famous slow swimmer from Equatorial Guinea became known at Sydney 2000?",
+     "a": "Eric Moussambani",
+     "wrong": [
+      "Paula Barila Bolopa",
+      "Kieren Perkins",
+      "Ian Thorpe"
+     ],
+     "why": "He was called 'Eric the Eel'."
+    },
+    {
+     "level": 3,
+     "q": "Which AFCON tournament did Equatorial Guinea co-host in 2012?",
+     "a": "2012 Africa Cup of Nations",
+     "wrong": [
+      "2010 World Cup",
+      "2015 World Cup",
+      "2008 AFCON"
+     ],
+     "why": "It co-hosted with Gabon."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which 2004 coup plot involved Simon Mann and Mark Thatcher?",
+     "a": "The Wonga Coup",
+     "wrong": [
+      "Operation Barracuda",
+      "Bob Denard plot",
+      "Malabo Raid"
+     ],
+     "why": "Mann was arrested in Zimbabwe."
+    },
+    {
+     "level": 3,
+     "q": "Which Vice-President is the President's son?",
+     "a": "Teodoro Nguema Obiang Mangue (Teodorín)",
+     "wrong": [
+      "Gabriel Obiang",
+      "Severo Moto",
+      "Ignacio Milam Tang"
+     ],
+     "why": "He is known for luxury spending."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
      "q": "Which monkeys live in the forests of Bioko?",
      "a": "Drills and colobus monkeys",
      "wrong": [
@@ -209,15 +262,43 @@
      "why": "Bioko has many rare primates."
     },
     {
-     "level": 1,
-     "q": "Which beach city on the mainland is the largest city?",
-     "a": "Bata",
+     "level": 3,
+     "q": "Which turtle beaches on Bioko are among Africa's most important?",
+     "a": "Ureca beaches",
      "wrong": [
-      "Malabo",
-      "Mongomo",
-      "Ebebiyín"
+      "Annobón beaches",
+      "Corisco beaches",
+      "Bata beaches"
      ],
-     "why": "It is the main port of Río Muni."
+     "why": "Leatherbacks nest there."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which part of the country is on the African mainland?",
+     "a": "Río Muni",
+     "wrong": [
+      "Bioko",
+      "Annobón",
+      "Elobey"
+     ],
+     "why": "Its main city is Bata."
+    },
+    {
+     "level": 1,
+     "q": "Which language is official along with French and Portuguese?",
+     "a": "Spanish",
+     "wrong": [
+      "English",
+      "Arabic",
+      "Fang"
+     ],
+     "why": "Fang and Bubi are local languages."
     },
     {
      "level": 1,
@@ -254,17 +335,6 @@
     },
     {
      "level": 2,
-     "q": "Which national park on the mainland has gorillas and forest elephants?",
-     "a": "Monte Alén National Park",
-     "wrong": [
-      "Lopé",
-      "Odzala",
-      "Dja"
-     ],
-     "why": "It covers about 2,000 square kilometres."
-    },
-    {
-     "level": 2,
      "q": "Which cathedral in Malabo is a Gothic-style landmark?",
      "a": "Malabo Cathedral (Santa Isabel)",
      "wrong": [
@@ -273,17 +343,6 @@
       "Sacré-Cœur"
      ],
      "why": "It was finished in 1916."
-    },
-    {
-     "level": 2,
-     "q": "Which crater lake on Bioko is surrounded by forest?",
-     "a": "Lake Biao",
-     "wrong": [
-      "Lake Nyos",
-      "Lake Chad",
-      "Lake Kivu"
-     ],
-     "why": "It is in a caldera."
     },
     {
      "level": 2,
@@ -297,28 +356,6 @@
      "why": "It is the second-largest in Africa."
     },
     {
-     "level": 2,
-     "q": "Which falls in the south of Bioko are near Ureca?",
-     "a": "Iladyi Falls",
-     "wrong": [
-      "Victoria Falls",
-      "Kalandula Falls",
-      "Boali Falls"
-     ],
-     "why": "It is in a rainforest reserve."
-    },
-    {
-     "level": 3,
-     "q": "Which turtle beaches on Bioko are among Africa's most important?",
-     "a": "Ureca beaches",
-     "wrong": [
-      "Annobón beaches",
-      "Corisco beaches",
-      "Bata beaches"
-     ],
-     "why": "Leatherbacks nest there."
-    },
-    {
      "level": 3,
      "q": "Which spicy fish stew is called 'pepesup'?",
      "a": "Pepper soup",
@@ -328,17 +365,6 @@
       "Ndolé"
      ],
      "why": "It is made with lots of chilli."
-    },
-    {
-     "level": 3,
-     "q": "Which AFCON tournament did Equatorial Guinea co-host in 2012?",
-     "a": "2012 Africa Cup of Nations",
-     "wrong": [
-      "2010 World Cup",
-      "2015 World Cup",
-      "2008 AFCON"
-     ],
-     "why": "It co-hosted with Gabon."
     }
    ]
   }

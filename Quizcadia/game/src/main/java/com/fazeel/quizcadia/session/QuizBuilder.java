@@ -51,8 +51,9 @@ public class QuizBuilder {
 	 * Like {@link #build(Game, Map)}, for a player from {@code country}. Questions tagged with that country make
 	 * up about {@value #HOME_SHARE} of the quiz and general (untagged) questions the rest; other countries'
 	 * questions are left out. Unseen questions still come first: when the player has met all their country's
-	 * questions, general ones fill the gap before anything repeats. Without a country, or when the game has
-	 * neither the player's country nor general questions, every question is eligible as before.
+	 * questions, general ones fill the gap before anything repeats. Without a country only general questions are
+	 * used, since shared topics hold every country's questions; a game with neither the player's country nor
+	 * general questions uses all it has.
 	 */
 	public List<SessionQuestion> build(Game game, Map<Integer, Instant> seen, String country) {
 		String home = country == null || country.isBlank() ? null : country.trim().toUpperCase(java.util.Locale.ROOT);
@@ -61,7 +62,10 @@ public class QuizBuilder {
 		List<Questions> mine = home == null ? List.of()
 				: playable.stream().filter(q -> home.equalsIgnoreCase(trimmed(q.getCountry()))).toList();
 		List<Questions> general = playable.stream().filter(q -> isBlank(q.getCountry())).toList();
-		if (home == null || mine.isEmpty() && general.isEmpty()) {
+		if (home == null) {
+			return build(game, general.isEmpty() ? playable : general, seen);
+		}
+		if (mine.isEmpty() && general.isEmpty()) {
 			return build(game, seen);
 		}
 
@@ -151,11 +155,16 @@ public class QuizBuilder {
 
 	/** @param seen when the player last saw each question, by question id */
 	public List<SessionQuestion> build(Game game, Map<Integer, Instant> seen) {
+		return build(game, Objects.requireNonNullElse(game.getQuestions(), List.<Questions>of()), seen);
+	}
+
+	/** The game's quiz from {@code candidates} instead of all of the game's questions. */
+	private List<SessionQuestion> build(Game game, List<Questions> candidates, Map<Integer, Instant> seen) {
 		Map<Difficulty, List<Questions>> byLevel = new EnumMap<>(Difficulty.class);
 		for (Difficulty d : Difficulty.values()) {
 			byLevel.put(d, new ArrayList<>());
 		}
-		for (Questions q : Objects.requireNonNullElse(game.getQuestions(), List.<Questions>of())) {
+		for (Questions q : candidates) {
 			if (isPlayable(q)) {
 				byLevel.get(Difficulty.fromLevel(q.getQuestionLevel())).add(q);
 			}

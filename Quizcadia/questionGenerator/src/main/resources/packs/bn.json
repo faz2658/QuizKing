@@ -3,7 +3,124 @@
  "country": "BN",
  "topics": [
   {
-   "name": "Brunei: History & People",
+   "category": "History",
+   "name": "History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has ruled Brunei since 1967?",
+     "a": "Sultan Hassanal Bolkiah",
+     "wrong": [
+      "Sultan Omar Ali Saifuddien III",
+      "Sultan Bolkiah",
+      "Sultan Abdul Momin"
+     ],
+     "why": "He is one of the world's longest-reigning monarchs."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Brunei gain independence in 1984?",
+     "a": "United Kingdom",
+     "wrong": [
+      "Malaysia",
+      "Netherlands",
+      "Portugal"
+     ],
+     "why": "It had been a British protectorate."
+    },
+    {
+     "level": 2,
+     "q": "Which sultan ruled when Brunei controlled much of Borneo?",
+     "a": "Sultan Bolkiah",
+     "wrong": [
+      "Sultan Hassanal Bolkiah",
+      "Sultan Omar Ali",
+      "Sultan Muhammad Shah"
+     ],
+     "why": "The 1500s were its golden age."
+    },
+    {
+     "level": 2,
+     "q": "Which 1962 revolt in Brunei was put down by British troops?",
+     "a": "Brunei Revolt",
+     "wrong": [
+      "Sarawak Uprising",
+      "Malay Emergency",
+      "Borneo War"
+     ],
+     "why": "It opposed joining Malaysia."
+    },
+    {
+     "level": 2,
+     "q": "Which federation did Brunei decide not to join in 1963?",
+     "a": "Malaysia",
+     "wrong": [
+      "Indonesia",
+      "Singapore",
+      "Philippines"
+     ],
+     "why": "It stayed a British protectorate."
+    },
+    {
+     "level": 3,
+     "q": "What is the name of the Sultan's palace, one of the world's largest residences?",
+     "a": "Istana Nurul Iman",
+     "wrong": [
+      "Istana Negara",
+      "Istana Bogor",
+      "Istana Kota Batu"
+     ],
+     "why": "It has about 1,700 rooms."
+    },
+    {
+     "level": 3,
+     "q": "Which Brunei sultan was the first to convert to Islam, in the 1300s?",
+     "a": "Muhammad Shah",
+     "wrong": [
+      "Bolkiah",
+      "Hassanal Bolkiah",
+      "Omar Ali"
+     ],
+     "why": "He was earlier called Awang Alak Betatar."
+    },
+    {
+     "level": 1,
+     "q": "Which bridge opened in 2020 links Temburong to the rest of Brunei?",
+     "a": "Temburong Bridge",
+     "wrong": [
+      "Penang Bridge",
+      "Raja Isteri Pengiran Anak Hajah Saleha Bridge",
+      "Brunei Bay Link"
+     ],
+     "why": "It is about 30 km long."
+    },
+    {
+     "level": 2,
+     "q": "At which festival does Brunei's royal palace open to the public?",
+     "a": "Hari Raya Aidilfitri",
+     "wrong": [
+      "Chinese New Year",
+      "National Day",
+      "Christmas"
+     ],
+     "why": "Visitors can shake hands with the royal family."
+    },
+    {
+     "level": 3,
+     "q": "Which theme park was a gift from the Sultan to the people?",
+     "a": "Jerudong Park",
+     "wrong": [
+      "Sunway Lagoon",
+      "Genting",
+      "Legoland"
+     ],
+     "why": "Michael Jackson played there in 1996."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -28,27 +145,117 @@
      "why": "It shares the island with Malaysia and Indonesia."
     },
     {
-     "level": 1,
-     "q": "Who has ruled Brunei since 1967?",
-     "a": "Sultan Hassanal Bolkiah",
+     "level": 2,
+     "q": "What is Brunei's state philosophy called?",
+     "a": "Melayu Islam Beraja",
      "wrong": [
-      "Sultan Omar Ali Saifuddien III",
-      "Sultan Bolkiah",
-      "Sultan Abdul Momin"
+      "Pancasila",
+      "Rukun Negara",
+      "Bhinneka Tunggal Ika"
      ],
-     "why": "He is one of the world's longest-reigning monarchs."
+     "why": "It means Malay Islamic Monarchy."
     },
     {
      "level": 1,
-     "q": "From which country did Brunei gain independence in 1984?",
-     "a": "United Kingdom",
+     "q": "Which water village on stilts is in the capital?",
+     "a": "Kampong Ayer",
      "wrong": [
-      "Malaysia",
-      "Netherlands",
-      "Portugal"
+      "Kampung Baru",
+      "Tai O",
+      "Ganvie"
      ],
-     "why": "It had been a British protectorate."
+     "why": "It is called 'the Venice of the East'."
     },
+    {
+     "level": 1,
+     "q": "Which forest national park has a canopy walkway?",
+     "a": "Ulu Temburong National Park",
+     "wrong": [
+      "Taman Negara",
+      "Kinabalu Park",
+      "Gunung Mulu"
+     ],
+     "why": "It is reached by longboat."
+    },
+    {
+     "level": 2,
+     "q": "Which oil town has a 'Billionth Barrel' monument?",
+     "a": "Seria",
+     "wrong": [
+      "Kuala Belait",
+      "Tutong",
+      "Muara"
+     ],
+     "why": "It marks a billion barrels produced."
+    },
+    {
+     "level": 3,
+     "q": "Which rainforest district is cut off from the rest of Brunei by Malaysia?",
+     "a": "Temburong",
+     "wrong": [
+      "Tutong",
+      "Belait",
+      "Brunei-Muara"
+     ],
+     "why": "It is reached by the new bridge."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which year did Brunei join ASEAN?",
+     "a": "1984",
+     "wrong": [
+      "1967",
+      "1995",
+      "1999"
+     ],
+     "why": "It joined soon after independence."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which royal museum shows the Sultan's coronation regalia?",
+     "a": "Royal Regalia Museum",
+     "wrong": [
+      "Brunei Museum",
+      "Malay Technology Museum",
+      "Istana Museum"
+     ],
+     "why": "It has a golden chariot."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which big-nosed monkey lives in Brunei's mangroves?",
+     "a": "Proboscis monkey",
+     "wrong": [
+      "Orangutan",
+      "Macaque",
+      "Gibbon"
+     ],
+     "why": "Males have large drooping noses."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
     {
      "level": 1,
      "q": "What made Brunei rich?",
@@ -84,17 +291,6 @@
     },
     {
      "level": 2,
-     "q": "Which sultan ruled when Brunei controlled much of Borneo?",
-     "a": "Sultan Bolkiah",
-     "wrong": [
-      "Sultan Hassanal Bolkiah",
-      "Sultan Omar Ali",
-      "Sultan Muhammad Shah"
-     ],
-     "why": "The 1500s were its golden age."
-    },
-    {
-     "level": 2,
      "q": "Which British adventurer became the 'White Rajah' of Sarawak, taken from Brunei?",
      "a": "James Brooke",
      "wrong": [
@@ -105,77 +301,6 @@
      "why": "He was made Rajah in 1841."
     },
     {
-     "level": 2,
-     "q": "Which 1962 revolt in Brunei was put down by British troops?",
-     "a": "Brunei Revolt",
-     "wrong": [
-      "Sarawak Uprising",
-      "Malay Emergency",
-      "Borneo War"
-     ],
-     "why": "It opposed joining Malaysia."
-    },
-    {
-     "level": 2,
-     "q": "Which federation did Brunei decide not to join in 1963?",
-     "a": "Malaysia",
-     "wrong": [
-      "Indonesia",
-      "Singapore",
-      "Philippines"
-     ],
-     "why": "It stayed a British protectorate."
-    },
-    {
-     "level": 2,
-     "q": "What is Brunei's state philosophy called?",
-     "a": "Melayu Islam Beraja",
-     "wrong": [
-      "Pancasila",
-      "Rukun Negara",
-      "Bhinneka Tunggal Ika"
-     ],
-     "why": "It means Malay Islamic Monarchy."
-    },
-    {
-     "level": 3,
-     "q": "What is the name of the Sultan's palace, one of the world's largest residences?",
-     "a": "Istana Nurul Iman",
-     "wrong": [
-      "Istana Negara",
-      "Istana Bogor",
-      "Istana Kota Batu"
-     ],
-     "why": "It has about 1,700 rooms."
-    },
-    {
-     "level": 3,
-     "q": "Which year did Brunei join ASEAN?",
-     "a": "1984",
-     "wrong": [
-      "1967",
-      "1995",
-      "1999"
-     ],
-     "why": "It joined soon after independence."
-    },
-    {
-     "level": 3,
-     "q": "Which Brunei sultan was the first to convert to Islam, in the 1300s?",
-     "a": "Muhammad Shah",
-     "wrong": [
-      "Bolkiah",
-      "Hassanal Bolkiah",
-      "Omar Ali"
-     ],
-     "why": "He was earlier called Awang Alak Betatar."
-    }
-   ]
-  },
-  {
-   "name": "Brunei: Places & Culture",
-   "questions": [
-    {
      "level": 1,
      "q": "Which golden-domed mosque is Brunei's landmark?",
      "a": "Omar Ali Saifuddien Mosque",
@@ -185,39 +310,6 @@
       "Istiqlal Mosque"
      ],
      "why": "It stands beside a lagoon."
-    },
-    {
-     "level": 1,
-     "q": "Which water village on stilts is in the capital?",
-     "a": "Kampong Ayer",
-     "wrong": [
-      "Kampung Baru",
-      "Tai O",
-      "Ganvie"
-     ],
-     "why": "It is called 'the Venice of the East'."
-    },
-    {
-     "level": 1,
-     "q": "Which forest national park has a canopy walkway?",
-     "a": "Ulu Temburong National Park",
-     "wrong": [
-      "Taman Negara",
-      "Kinabalu Park",
-      "Gunung Mulu"
-     ],
-     "why": "It is reached by longboat."
-    },
-    {
-     "level": 1,
-     "q": "Which big-nosed monkey lives in Brunei's mangroves?",
-     "a": "Proboscis monkey",
-     "wrong": [
-      "Orangutan",
-      "Macaque",
-      "Gibbon"
-     ],
-     "why": "Males have large drooping noses."
     },
     {
      "level": 1,
@@ -232,17 +324,6 @@
     },
     {
      "level": 1,
-     "q": "Which bridge opened in 2020 links Temburong to the rest of Brunei?",
-     "a": "Temburong Bridge",
-     "wrong": [
-      "Penang Bridge",
-      "Raja Isteri Pengiran Anak Hajah Saleha Bridge",
-      "Brunei Bay Link"
-     ],
-     "why": "It is about 30 km long."
-    },
-    {
-     "level": 1,
      "q": "Which sticky sago starch dish is Brunei's national dish?",
      "a": "Ambuyat",
      "wrong": [
@@ -254,28 +335,6 @@
     },
     {
      "level": 2,
-     "q": "Which royal museum shows the Sultan's coronation regalia?",
-     "a": "Royal Regalia Museum",
-     "wrong": [
-      "Brunei Museum",
-      "Malay Technology Museum",
-      "Istana Museum"
-     ],
-     "why": "It has a golden chariot."
-    },
-    {
-     "level": 2,
-     "q": "Which oil town has a 'Billionth Barrel' monument?",
-     "a": "Seria",
-     "wrong": [
-      "Kuala Belait",
-      "Tutong",
-      "Muara"
-     ],
-     "why": "It marks a billion barrels produced."
-    },
-    {
-     "level": 2,
      "q": "Which mosque has 29 golden domes?",
      "a": "Jame' Asr Hassanil Bolkiah Mosque",
      "wrong": [
@@ -284,17 +343,6 @@
       "Masjid Negara"
      ],
      "why": "It honours the 29th sultan."
-    },
-    {
-     "level": 2,
-     "q": "At which festival does Brunei's royal palace open to the public?",
-     "a": "Hari Raya Aidilfitri",
-     "wrong": [
-      "Chinese New Year",
-      "National Day",
-      "Christmas"
-     ],
-     "why": "Visitors can shake hands with the royal family."
     },
     {
      "level": 2,
@@ -317,28 +365,6 @@
       "Churros"
      ],
      "why": "Many are made from rice flour and coconut."
-    },
-    {
-     "level": 3,
-     "q": "Which rainforest district is cut off from the rest of Brunei by Malaysia?",
-     "a": "Temburong",
-     "wrong": [
-      "Tutong",
-      "Belait",
-      "Brunei-Muara"
-     ],
-     "why": "It is reached by the new bridge."
-    },
-    {
-     "level": 3,
-     "q": "Which theme park was a gift from the Sultan to the people?",
-     "a": "Jerudong Park",
-     "wrong": [
-      "Sunway Lagoon",
-      "Genting",
-      "Legoland"
-     ],
-     "why": "Michael Jackson played there in 1996."
     }
    ]
   }

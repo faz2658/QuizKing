@@ -3,19 +3,9 @@
  "country": "SZ",
  "topics": [
   {
-   "name": "Eswatini: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the administrative capital of Eswatini?",
-     "a": "Mbabane",
-     "wrong": [
-      "Lobamba",
-      "Manzini",
-      "Siteki"
-     ],
-     "why": "Lobamba is the royal and legislative capital."
-    },
     {
      "level": 1,
      "q": "What was Eswatini called before 2018?",
@@ -26,17 +16,6 @@
       "Zululand"
      ],
      "why": "The King changed the name."
-    },
-    {
-     "level": 1,
-     "q": "What kind of government does Eswatini have?",
-     "a": "Absolute monarchy",
-     "wrong": [
-      "Republic",
-      "Constitutional monarchy",
-      "Military rule"
-     ],
-     "why": "It is Africa's last absolute monarchy."
     },
     {
      "level": 1,
@@ -59,28 +38,6 @@
       "Netherlands"
      ],
      "why": "It is in the Commonwealth."
-    },
-    {
-     "level": 1,
-     "q": "What is Eswatini's currency?",
-     "a": "Lilangeni",
-     "wrong": [
-      "Loti",
-      "Kwacha",
-      "Pula"
-     ],
-     "why": "The rand is also used."
-    },
-    {
-     "level": 1,
-     "q": "Which two countries border Eswatini?",
-     "a": "South Africa and Mozambique",
-     "wrong": [
-      "Botswana and Zimbabwe",
-      "Lesotho and South Africa",
-      "Mozambique and Malawi"
-     ],
-     "why": "It is landlocked."
     },
     {
      "level": 2,
@@ -150,52 +107,53 @@
     },
     {
      "level": 3,
-     "q": "Which Swazi constitution came into force in 2006?",
-     "a": "The 2005 Constitution",
+     "q": "What is the Queen Mother's royal village at Lobamba called?",
+     "a": "Ludzidzini Royal Village",
      "wrong": [
-      "The Tinkhundla Code",
-      "The Royal Charter",
-      "The Lobamba Accord"
+      "Embo State Palace",
+      "Lozitha Palace",
+      "Mbabane Palace"
      ],
-     "why": "It kept the King's power."
+     "why": "The Umhlanga is held there."
     },
     {
      "level": 3,
-     "q": "Which system of local councils elects MPs without parties?",
-     "a": "Tinkhundla",
+     "q": "Which Swazi dance is performed by men in warrior dress?",
+     "a": "Sibhaca",
      "wrong": [
-      "Indaba",
-      "Kgotla",
-      "Lekgotla"
+      "Indlamu",
+      "Gumboot",
+      "Pantsula"
      ],
-     "why": "Candidates stand as individuals."
+     "why": "It involves high kicks."
     }
    ]
   },
   {
-   "name": "Eswatini: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "Which reed dance ceremony draws thousands of young women?",
-     "a": "Umhlanga",
+     "q": "What is the administrative capital of Eswatini?",
+     "a": "Mbabane",
      "wrong": [
-      "Incwala",
-      "Kuomboka",
-      "Ncwala"
+      "Lobamba",
+      "Manzini",
+      "Siteki"
      ],
-     "why": "It is held in August or September."
+     "why": "Lobamba is the royal and legislative capital."
     },
     {
      "level": 1,
-     "q": "Which kingship ceremony is held around the summer solstice?",
-     "a": "Incwala",
+     "q": "Which two countries border Eswatini?",
+     "a": "South Africa and Mozambique",
      "wrong": [
-      "Umhlanga",
-      "Kuomboka",
-      "Bira"
+      "Botswana and Zimbabwe",
+      "Lesotho and South Africa",
+      "Mozambique and Malawi"
      ],
-     "why": "It is the most sacred Swazi ceremony."
+     "why": "It is landlocked."
     },
     {
      "level": 1,
@@ -218,6 +176,134 @@
       "Mkhaya"
      ],
      "why": "It is the largest protected area."
+    },
+    {
+     "level": 2,
+     "q": "Which reserve in the highlands has a canopy tour and old mines?",
+     "a": "Malolotja Nature Reserve",
+     "wrong": [
+      "Hlane",
+      "Mlilwane",
+      "Mkhaya"
+     ],
+     "why": "It has one of the oldest mines."
+    },
+    {
+     "level": 2,
+     "q": "Which valley near Mbabane is the heart of tourism?",
+     "a": "Ezulwini Valley",
+     "wrong": [
+      "Malkerns Valley",
+      "Great Usutu Valley",
+      "Lubombo Valley"
+     ],
+     "why": "Its name means 'Valley of Heaven'."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain range in the east borders Mozambique?",
+     "a": "Lubombo Mountains",
+     "wrong": [
+      "Drakensberg",
+      "Maloti",
+      "Chimanimani"
+     ],
+     "why": "They are part of a UNESCO bid."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which festival of music and arts is held in Eswatini?",
+     "a": "MTN Bushfire",
+     "wrong": [
+      "Lake of Stars",
+      "Sauti za Busara",
+      "Oppikoppi"
+     ],
+     "why": "It is held at House on Fire."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What kind of government does Eswatini have?",
+     "a": "Absolute monarchy",
+     "wrong": [
+      "Republic",
+      "Constitutional monarchy",
+      "Military rule"
+     ],
+     "why": "It is Africa's last absolute monarchy."
+    },
+    {
+     "level": 3,
+     "q": "Which Swazi constitution came into force in 2006?",
+     "a": "The 2005 Constitution",
+     "wrong": [
+      "The Tinkhundla Code",
+      "The Royal Charter",
+      "The Lobamba Accord"
+     ],
+     "why": "It kept the King's power."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Eswatini's currency?",
+     "a": "Lilangeni",
+     "wrong": [
+      "Loti",
+      "Kwacha",
+      "Pula"
+     ],
+     "why": "The rand is also used."
+    },
+    {
+     "level": 3,
+     "q": "Which system of local councils elects MPs without parties?",
+     "a": "Tinkhundla",
+     "wrong": [
+      "Indaba",
+      "Kgotla",
+      "Lekgotla"
+     ],
+     "why": "Candidates stand as individuals."
+    },
+    {
+     "level": 1,
+     "q": "Which reed dance ceremony draws thousands of young women?",
+     "a": "Umhlanga",
+     "wrong": [
+      "Incwala",
+      "Kuomboka",
+      "Ncwala"
+     ],
+     "why": "It is held in August or September."
+    },
+    {
+     "level": 1,
+     "q": "Which kingship ceremony is held around the summer solstice?",
+     "a": "Incwala",
+     "wrong": [
+      "Umhlanga",
+      "Kuomboka",
+      "Bira"
+     ],
+     "why": "It is the most sacred Swazi ceremony."
     },
     {
      "level": 1,
@@ -254,17 +340,6 @@
     },
     {
      "level": 2,
-     "q": "Which reserve in the highlands has a canopy tour and old mines?",
-     "a": "Malolotja Nature Reserve",
-     "wrong": [
-      "Hlane",
-      "Mlilwane",
-      "Mkhaya"
-     ],
-     "why": "It has one of the oldest mines."
-    },
-    {
-     "level": 2,
      "q": "Which large granite dome is one of the largest in the world?",
      "a": "Sibebe Rock",
      "wrong": [
@@ -276,28 +351,6 @@
     },
     {
      "level": 2,
-     "q": "Which valley near Mbabane is the heart of tourism?",
-     "a": "Ezulwini Valley",
-     "wrong": [
-      "Malkerns Valley",
-      "Great Usutu Valley",
-      "Lubombo Valley"
-     ],
-     "why": "Its name means 'Valley of Heaven'."
-    },
-    {
-     "level": 2,
-     "q": "Which festival of music and arts is held in Eswatini?",
-     "a": "MTN Bushfire",
-     "wrong": [
-      "Lake of Stars",
-      "Sauti za Busara",
-      "Oppikoppi"
-     ],
-     "why": "It is held at House on Fire."
-    },
-    {
-     "level": 2,
      "q": "What are traditional Swazi beehive huts made from?",
      "a": "Grass and reeds",
      "wrong": [
@@ -306,39 +359,6 @@
       "Wood planks"
      ],
      "why": "They are woven over a frame."
-    },
-    {
-     "level": 3,
-     "q": "Which mountain range in the east borders Mozambique?",
-     "a": "Lubombo Mountains",
-     "wrong": [
-      "Drakensberg",
-      "Maloti",
-      "Chimanimani"
-     ],
-     "why": "They are part of a UNESCO bid."
-    },
-    {
-     "level": 3,
-     "q": "What is the Queen Mother's royal village at Lobamba called?",
-     "a": "Ludzidzini Royal Village",
-     "wrong": [
-      "Embo State Palace",
-      "Lozitha Palace",
-      "Mbabane Palace"
-     ],
-     "why": "The Umhlanga is held there."
-    },
-    {
-     "level": 3,
-     "q": "Which Swazi dance is performed by men in warrior dress?",
-     "a": "Sibhaca",
-     "wrong": [
-      "Indlamu",
-      "Gumboot",
-      "Pantsula"
-     ],
-     "why": "It involves high kicks."
     }
    ]
   }

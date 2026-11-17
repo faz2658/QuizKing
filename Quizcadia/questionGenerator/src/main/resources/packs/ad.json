@@ -3,7 +3,58 @@
  "country": "AD",
  "topics": [
   {
-   "name": "Andorra: History & People",
+   "category": "History",
+   "name": "History",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which year did Andorra adopt its first written constitution?",
+     "a": "1993",
+     "wrong": [
+      "1278",
+      "1866",
+      "1945"
+     ],
+     "why": "It joined the UN the same year."
+    },
+    {
+     "level": 2,
+     "q": "Which 1278 agreement set up Andorra's shared rule?",
+     "a": "Paréage",
+     "wrong": [
+      "Magna Carta",
+      "Treaty of Corbeil",
+      "Peace of Westphalia"
+     ],
+     "why": "It was between the Bishop of Urgell and a French count."
+    },
+    {
+     "level": 2,
+     "q": "Which ruler is said to have granted Andorra a charter?",
+     "a": "Charlemagne",
+     "wrong": [
+      "Napoleon",
+      "Louis XIV",
+      "Philip II"
+     ],
+     "why": "The national anthem mentions him."
+    },
+    {
+     "level": 3,
+     "q": "Which Russian adventurer briefly declared himself King of Andorra in 1934?",
+     "a": "Boris Skossyreff",
+     "wrong": [
+      "Grigori Rasputin",
+      "Nikolai Romanov",
+      "Pyotr Wrangel"
+     ],
+     "why": "He was arrested within days."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -40,28 +91,6 @@
     },
     {
      "level": 1,
-     "q": "What is the official language of Andorra?",
-     "a": "Catalan",
-     "wrong": [
-      "Spanish",
-      "French",
-      "Occitan"
-     ],
-     "why": "It is the only country where Catalan is the sole official language."
-    },
-    {
-     "level": 1,
-     "q": "What is Andorra's currency?",
-     "a": "Euro",
-     "wrong": [
-      "Peseta",
-      "French franc",
-      "Andorran diner"
-     ],
-     "why": "It uses the euro by agreement with the EU."
-    },
-    {
-     "level": 1,
      "q": "Which mountain range covers Andorra?",
      "a": "Pyrenees",
      "wrong": [
@@ -70,83 +99,6 @@
       "Cantabrian Mountains"
      ],
      "why": "It is about 470 square kilometres."
-    },
-    {
-     "level": 1,
-     "q": "What is Andorra famous for among shoppers?",
-     "a": "Low taxes and duty-free goods",
-     "wrong": [
-      "Silk markets",
-      "Gold mining",
-      "Fishing harbours"
-     ],
-     "why": "Many visitors come to shop."
-    },
-    {
-     "level": 2,
-     "q": "Which year did Andorra adopt its first written constitution?",
-     "a": "1993",
-     "wrong": [
-      "1278",
-      "1866",
-      "1945"
-     ],
-     "why": "It joined the UN the same year."
-    },
-    {
-     "level": 2,
-     "q": "Which 1278 agreement set up Andorra's shared rule?",
-     "a": "Paréage",
-     "wrong": [
-      "Magna Carta",
-      "Treaty of Corbeil",
-      "Peace of Westphalia"
-     ],
-     "why": "It was between the Bishop of Urgell and a French count."
-    },
-    {
-     "level": 2,
-     "q": "Which ruler is said to have granted Andorra a charter?",
-     "a": "Charlemagne",
-     "wrong": [
-      "Napoleon",
-      "Louis XIV",
-      "Philip II"
-     ],
-     "why": "The national anthem mentions him."
-    },
-    {
-     "level": 2,
-     "q": "What is Andorra's parliament called?",
-     "a": "General Council",
-     "wrong": [
-      "Cortes",
-      "Assemblée nationale",
-      "Consell Grand"
-     ],
-     "why": "It dates back to 1419."
-    },
-    {
-     "level": 2,
-     "q": "How many parishes is Andorra divided into?",
-     "a": "Seven",
-     "wrong": [
-      "Three",
-      "Twelve",
-      "Five"
-     ],
-     "why": "Sant Julià de Lòria is one of them."
-    },
-    {
-     "level": 3,
-     "q": "Which Russian adventurer briefly declared himself King of Andorra in 1934?",
-     "a": "Boris Skossyreff",
-     "wrong": [
-      "Grigori Rasputin",
-      "Nikolai Romanov",
-      "Pyotr Wrangel"
-     ],
-     "why": "He was arrested within days."
     },
     {
      "level": 3,
@@ -169,12 +121,152 @@
       "Vic"
      ],
      "why": "It is just south of the border."
+    },
+    {
+     "level": 1,
+     "q": "Which European microstate lies between France and Spain?",
+     "a": "Andorra",
+     "wrong": [
+      "Monaco",
+      "San Marino",
+      "Liechtenstein"
+     ],
+     "why": "It has about 80,000 people."
+    },
+    {
+     "level": 2,
+     "q": "Which valley in Andorra is a UNESCO site?",
+     "a": "Madriu-Perafita-Claror Valley",
+     "wrong": [
+      "Vall de Núria",
+      "Aran Valley",
+      "Ordesa Valley"
+     ],
+     "why": "It shows centuries of mountain farming."
+    },
+    {
+     "level": 3,
+     "q": "What is the highest peak in Andorra?",
+     "a": "Coma Pedrosa",
+     "wrong": [
+      "Aneto",
+      "Pic du Midi",
+      "Monte Perdido"
+     ],
+     "why": "It is about 2,940 m high."
     }
    ]
   },
   {
-   "name": "Andorra: Places & Culture",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
+    {
+     "level": 2,
+     "q": "Which basketball club from Andorra has played in Spain's top league?",
+     "a": "MoraBanc Andorra",
+     "wrong": [
+      "Valencia Basket",
+      "Joventut Badalona",
+      "Unicaja"
+     ],
+     "why": "It is one of the strongest in the region."
+    },
+    {
+     "level": 3,
+     "q": "Which Andorran win in 2017 shocked European football?",
+     "a": "1–0 against Hungary",
+     "wrong": [
+      "2–0 against England",
+      "1–0 against France",
+      "3–1 against Portugal"
+     ],
+     "why": "It ended a run of 86 games without a competitive win."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "What is Andorra's parliament called?",
+     "a": "General Council",
+     "wrong": [
+      "Cortes",
+      "Assemblée nationale",
+      "Consell Grand"
+     ],
+     "why": "It dates back to 1419."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Andorran sanctuary was rebuilt by architect Ricardo Bofill?",
+     "a": "Sanctuary of Meritxell",
+     "wrong": [
+      "Sant Joan de Caselles",
+      "Santa Coloma",
+      "Sant Esteve"
+     ],
+     "why": "The old one burned in 1972."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the official language of Andorra?",
+     "a": "Catalan",
+     "wrong": [
+      "Spanish",
+      "French",
+      "Occitan"
+     ],
+     "why": "It is the only country where Catalan is the sole official language."
+    },
+    {
+     "level": 1,
+     "q": "What is Andorra's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Peseta",
+      "French franc",
+      "Andorran diner"
+     ],
+     "why": "It uses the euro by agreement with the EU."
+    },
+    {
+     "level": 1,
+     "q": "What is Andorra famous for among shoppers?",
+     "a": "Low taxes and duty-free goods",
+     "wrong": [
+      "Silk markets",
+      "Gold mining",
+      "Fishing harbours"
+     ],
+     "why": "Many visitors come to shop."
+    },
+    {
+     "level": 2,
+     "q": "How many parishes is Andorra divided into?",
+     "a": "Seven",
+     "wrong": [
+      "Three",
+      "Twelve",
+      "Five"
+     ],
+     "why": "Sant Julià de Lòria is one of them."
+    },
     {
      "level": 1,
      "q": "What is Andorra's main tourist activity in winter?",
@@ -232,17 +324,6 @@
     },
     {
      "level": 1,
-     "q": "Which European microstate lies between France and Spain?",
-     "a": "Andorra",
-     "wrong": [
-      "Monaco",
-      "San Marino",
-      "Liechtenstein"
-     ],
-     "why": "It has about 80,000 people."
-    },
-    {
-     "level": 1,
      "q": "What is the main road between France and Andorra called?",
      "a": "Envalira Pass",
      "wrong": [
@@ -251,17 +332,6 @@
       "St Gotthard Pass"
      ],
      "why": "It is the highest paved pass in the Pyrenees."
-    },
-    {
-     "level": 2,
-     "q": "Which valley in Andorra is a UNESCO site?",
-     "a": "Madriu-Perafita-Claror Valley",
-     "wrong": [
-      "Vall de Núria",
-      "Aran Valley",
-      "Ordesa Valley"
-     ],
-     "why": "It shows centuries of mountain farming."
     },
     {
      "level": 2,
@@ -287,17 +357,6 @@
     },
     {
      "level": 2,
-     "q": "Which basketball club from Andorra has played in Spain's top league?",
-     "a": "MoraBanc Andorra",
-     "wrong": [
-      "Valencia Basket",
-      "Joventut Badalona",
-      "Unicaja"
-     ],
-     "why": "It is one of the strongest in the region."
-    },
-    {
-     "level": 2,
      "q": "Which country handles Andorra's defence?",
      "a": "Spain and France",
      "wrong": [
@@ -306,39 +365,6 @@
       "Switzerland"
      ],
      "why": "Andorra has no army."
-    },
-    {
-     "level": 3,
-     "q": "Which Andorran sanctuary was rebuilt by architect Ricardo Bofill?",
-     "a": "Sanctuary of Meritxell",
-     "wrong": [
-      "Sant Joan de Caselles",
-      "Santa Coloma",
-      "Sant Esteve"
-     ],
-     "why": "The old one burned in 1972."
-    },
-    {
-     "level": 3,
-     "q": "Which Andorran win in 2017 shocked European football?",
-     "a": "1–0 against Hungary",
-     "wrong": [
-      "2–0 against England",
-      "1–0 against France",
-      "3–1 against Portugal"
-     ],
-     "why": "It ended a run of 86 games without a competitive win."
-    },
-    {
-     "level": 3,
-     "q": "What is the highest peak in Andorra?",
-     "a": "Coma Pedrosa",
-     "wrong": [
-      "Aneto",
-      "Pic du Midi",
-      "Monte Perdido"
-     ],
-     "why": "It is about 2,940 m high."
     }
    ]
   }

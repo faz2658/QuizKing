@@ -245,14 +245,19 @@ class QuizBuilderTest {
 	}
 
 	@Test
-	void withoutACountryEveryQuestionIsEligibleAsBefore() {
-		Map<String, Long> seenOrigins = new HashMap<>();
+	void withoutACountryOnlyGeneralQuestionsAreUsed() {
 		for (long seed = 0; seed < 20; seed++) {
-			origin(new QuizBuilder(new Random(seed)).build(mixedGame(new GameQuestionLevel(0, 4, 4, 4)), Map.of(), null))
-					.forEach((k, v) -> seenOrigins.merge(k, v, Long::sum));
+			List<SessionQuestion> quiz = new QuizBuilder(new Random(seed))
+					.build(mixedGame(new GameQuestionLevel(0, 4, 4, 4)), Map.of(), null);
+			assertThat(origin(quiz)).containsEntry("general", 12L).hasSize(1);
 		}
+	}
 
-		assertThat(seenOrigins).containsKeys("IN", "general", "KE");
+	@Test
+	void withoutACountryAGameWithNoGeneralQuestionsUsesWhatItHas() {
+		Game kenyaOnly = game(1, new GameQuestionLevel(0, 2, 0, 0), tagged(1, 1, "KE"), tagged(2, 1, "KE"));
+
+		assertThat(builder.build(kenyaOnly, Map.of(), null)).hasSize(2);
 	}
 
 	@Test

@@ -3,7 +3,8 @@
  "country": "CH",
  "topics": [
   {
-   "name": "Switzerland: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -40,17 +41,6 @@
     },
     {
      "level": 1,
-     "q": "Which scientist developed relativity while working in the Bern patent office?",
-     "a": "Albert Einstein",
-     "wrong": [
-      "Niels Bohr",
-      "Max Planck",
-      "Werner Heisenberg"
-     ],
-     "why": "He published his special relativity paper in 1905."
-    },
-    {
-     "level": 1,
      "q": "In which year was the Swiss Confederation founded?",
      "a": "1291",
      "wrong": [
@@ -59,28 +49,6 @@
       "1848"
      ],
      "why": "1 August is Swiss National Day."
-    },
-    {
-     "level": 1,
-     "q": "Which Swiss guard protects the Pope?",
-     "a": "Swiss Guard",
-     "wrong": [
-      "Papal Gendarmes",
-      "Holy Legion",
-      "Vatican Lancers"
-     ],
-     "why": "It was founded in 1506."
-    },
-    {
-     "level": 1,
-     "q": "Which Swiss tennis player won 20 Grand Slam titles?",
-     "a": "Roger Federer",
-     "wrong": [
-      "Stan Wawrinka",
-      "Martina Hingis",
-      "Belinda Bencic"
-     ],
-     "why": "He won Wimbledon eight times."
     },
     {
      "level": 2,
@@ -92,50 +60,6 @@
       "Jean-Jacques Rousseau"
      ],
      "why": "He was inspired by the Battle of Solferino."
-    },
-    {
-     "level": 2,
-     "q": "Which reformer led the Protestant Reformation in Geneva?",
-     "a": "John Calvin",
-     "wrong": [
-      "Martin Luther",
-      "Huldrych Zwingli",
-      "John Knox"
-     ],
-     "why": "Geneva was called the 'Protestant Rome'."
-    },
-    {
-     "level": 2,
-     "q": "In which year did Swiss women win the vote in federal elections?",
-     "a": "1971",
-     "wrong": [
-      "1918",
-      "1945",
-      "1990"
-     ],
-     "why": "One canton held out until 1990."
-    },
-    {
-     "level": 2,
-     "q": "Which Geneva-born philosopher wrote 'The Social Contract'?",
-     "a": "Jean-Jacques Rousseau",
-     "wrong": [
-      "Voltaire",
-      "John Calvin",
-      "Benjamin Constant"
-     ],
-     "why": "It was published in 1762."
-    },
-    {
-     "level": 2,
-     "q": "Which research centre near Geneva runs the Large Hadron Collider?",
-     "a": "CERN",
-     "wrong": [
-      "ESA",
-      "ETH",
-      "EPFL"
-     ],
-     "why": "The World Wide Web was invented there."
     },
     {
      "level": 3,
@@ -158,22 +82,12 @@
       "Jean Piaget"
      ],
      "why": "He wrote about archetypes."
-    },
-    {
-     "level": 3,
-     "q": "In which year did Switzerland join the United Nations?",
-     "a": "2002",
-     "wrong": [
-      "1945",
-      "1971",
-      "1992"
-     ],
-     "why": "It held a referendum first."
     }
    ]
   },
   {
-   "name": "Switzerland: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -196,6 +110,190 @@
       "Mont Blanc"
      ],
      "why": "It is 4,478 m high."
+    },
+    {
+     "level": 2,
+     "q": "Which railway station is the highest in Europe?",
+     "a": "Jungfraujoch",
+     "wrong": [
+      "Gornergrat",
+      "Pilatus",
+      "Schilthorn"
+     ],
+     "why": "It is called the 'Top of Europe'."
+    },
+    {
+     "level": 3,
+     "q": "Which town hosts the World Economic Forum each January?",
+     "a": "Davos",
+     "wrong": [
+      "St. Moritz",
+      "Lucerne",
+      "Interlaken"
+     ],
+     "why": "World leaders meet there."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Swiss tennis player won 20 Grand Slam titles?",
+     "a": "Roger Federer",
+     "wrong": [
+      "Stan Wawrinka",
+      "Martina Hingis",
+      "Belinda Bencic"
+     ],
+     "why": "He won Wimbledon eight times."
+    },
+    {
+     "level": 2,
+     "q": "Which city is the home of the International Olympic Committee?",
+     "a": "Lausanne",
+     "wrong": [
+      "Geneva",
+      "Zürich",
+      "Lucerne"
+     ],
+     "why": "It is called the Olympic Capital."
+    },
+    {
+     "level": 3,
+     "q": "Which ski resort in the Engadine hosted two Winter Olympics?",
+     "a": "St. Moritz",
+     "wrong": [
+      "Davos",
+      "Zermatt",
+      "Verbier"
+     ],
+     "why": "It hosted in 1928 and 1948."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Geneva-born philosopher wrote 'The Social Contract'?",
+     "a": "Jean-Jacques Rousseau",
+     "wrong": [
+      "Voltaire",
+      "John Calvin",
+      "Benjamin Constant"
+     ],
+     "why": "It was published in 1762."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "In which year did Swiss women win the vote in federal elections?",
+     "a": "1971",
+     "wrong": [
+      "1918",
+      "1945",
+      "1990"
+     ],
+     "why": "One canton held out until 1990."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Switzerland join the United Nations?",
+     "a": "2002",
+     "wrong": [
+      "1945",
+      "1971",
+      "1992"
+     ],
+     "why": "It held a referendum first."
+    },
+    {
+     "level": 2,
+     "q": "Which city hosts the European headquarters of the United Nations?",
+     "a": "Geneva",
+     "wrong": [
+      "Zürich",
+      "Bern",
+      "Lausanne"
+     ],
+     "why": "It is in the Palais des Nations."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which wooden bridge with paintings is a Lucerne landmark?",
+     "a": "Chapel Bridge",
+     "wrong": [
+      "Spreuer Bridge",
+      "Rhine Bridge",
+      "Kapell Tower"
+     ],
+     "why": "It dates from 1333."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which scientist developed relativity while working in the Bern patent office?",
+     "a": "Albert Einstein",
+     "wrong": [
+      "Niels Bohr",
+      "Max Planck",
+      "Werner Heisenberg"
+     ],
+     "why": "He published his special relativity paper in 1905."
+    },
+    {
+     "level": 1,
+     "q": "Which Swiss guard protects the Pope?",
+     "a": "Swiss Guard",
+     "wrong": [
+      "Papal Gendarmes",
+      "Holy Legion",
+      "Vatican Lancers"
+     ],
+     "why": "It was founded in 1506."
+    },
+    {
+     "level": 2,
+     "q": "Which reformer led the Protestant Reformation in Geneva?",
+     "a": "John Calvin",
+     "wrong": [
+      "Martin Luther",
+      "Huldrych Zwingli",
+      "John Knox"
+     ],
+     "why": "Geneva was called the 'Protestant Rome'."
+    },
+    {
+     "level": 2,
+     "q": "Which research centre near Geneva runs the Large Hadron Collider?",
+     "a": "CERN",
+     "wrong": [
+      "ESA",
+      "ETH",
+      "EPFL"
+     ],
+     "why": "The World Wide Web was invented there."
     },
     {
      "level": 1,
@@ -265,39 +363,6 @@
     },
     {
      "level": 2,
-     "q": "Which city hosts the European headquarters of the United Nations?",
-     "a": "Geneva",
-     "wrong": [
-      "Zürich",
-      "Bern",
-      "Lausanne"
-     ],
-     "why": "It is in the Palais des Nations."
-    },
-    {
-     "level": 2,
-     "q": "Which city is the home of the International Olympic Committee?",
-     "a": "Lausanne",
-     "wrong": [
-      "Geneva",
-      "Zürich",
-      "Lucerne"
-     ],
-     "why": "It is called the Olympic Capital."
-    },
-    {
-     "level": 2,
-     "q": "Which railway station is the highest in Europe?",
-     "a": "Jungfraujoch",
-     "wrong": [
-      "Gornergrat",
-      "Pilatus",
-      "Schilthorn"
-     ],
-     "why": "It is called the 'Top of Europe'."
-    },
-    {
-     "level": 2,
      "q": "What is the Swiss country code 'CH' short for?",
      "a": "Confoederatio Helvetica",
      "wrong": [
@@ -306,39 +371,6 @@
       "Central Helvetia"
      ],
      "why": "Helvetia is the Latin name."
-    },
-    {
-     "level": 3,
-     "q": "Which ski resort in the Engadine hosted two Winter Olympics?",
-     "a": "St. Moritz",
-     "wrong": [
-      "Davos",
-      "Zermatt",
-      "Verbier"
-     ],
-     "why": "It hosted in 1928 and 1948."
-    },
-    {
-     "level": 3,
-     "q": "Which town hosts the World Economic Forum each January?",
-     "a": "Davos",
-     "wrong": [
-      "St. Moritz",
-      "Lucerne",
-      "Interlaken"
-     ],
-     "why": "World leaders meet there."
-    },
-    {
-     "level": 3,
-     "q": "Which wooden bridge with paintings is a Lucerne landmark?",
-     "a": "Chapel Bridge",
-     "wrong": [
-      "Spreuer Bridge",
-      "Rhine Bridge",
-      "Kapell Tower"
-     ],
-     "why": "It dates from 1333."
     }
    ]
   }

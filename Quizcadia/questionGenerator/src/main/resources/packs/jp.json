@@ -3,7 +3,8 @@
  "country": "JP",
  "topics": [
   {
-   "name": "Japan History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -184,7 +185,8 @@
    ]
   },
   {
-   "name": "Japan Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -365,7 +367,8 @@
    ]
   },
   {
-   "name": "Japan Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,19 +549,9 @@
    ]
   },
   {
-   "name": "Japan Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Film",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which studio made 'Spirited Away' and 'My Neighbor Totoro'?",
-     "a": "Studio Ghibli",
-     "wrong": [
-      "Toei Animation",
-      "Sunrise",
-      "Kyoto Animation"
-     ],
-     "why": "Hayao Miyazaki co-founded it."
-    },
     {
      "level": 1,
      "q": "Which giant monster first appeared in a 1954 film?",
@@ -569,61 +562,6 @@
       "Gamera"
      ],
      "why": "In Japan it is called Gojira."
-    },
-    {
-     "level": 1,
-     "q": "Which video game company created Mario and Zelda?",
-     "a": "Nintendo",
-     "wrong": [
-      "Sega",
-      "Sony",
-      "Capcom"
-     ],
-     "why": "It began as a playing-card company in Kyoto."
-    },
-    {
-     "level": 1,
-     "q": "What are Japanese comic books called?",
-     "a": "Manga",
-     "wrong": [
-      "Anime",
-      "Kanji",
-      "Haiku"
-     ],
-     "why": "Anime is the animated form."
-    },
-    {
-     "level": 1,
-     "q": "Which yellow electric mouse is the face of Pokémon?",
-     "a": "Pikachu",
-     "wrong": [
-      "Jigglypuff",
-      "Meowth",
-      "Eevee"
-     ],
-     "why": "Pokémon began as a Game Boy game in 1996."
-    },
-    {
-     "level": 1,
-     "q": "Which singing activity was invented in Japan in the 1970s?",
-     "a": "Karaoke",
-     "wrong": [
-      "Beatboxing",
-      "Kabuki",
-      "Rap battles"
-     ],
-     "why": "Its name means 'empty orchestra'."
-    },
-    {
-     "level": 1,
-     "q": "Which three-line poem has 5, 7 and 5 syllables?",
-     "a": "Haiku",
-     "wrong": [
-      "Tanka",
-      "Sonnet",
-      "Limerick"
-     ],
-     "why": "Matsuo Bashō was a master of it."
     },
     {
      "level": 2,
@@ -648,50 +586,6 @@
      "why": "All roles are played by men."
     },
     {
-     "level": 2,
-     "q": "Which author wrote 'Norwegian Wood' and 'Kafka on the Shore'?",
-     "a": "Haruki Murakami",
-     "wrong": [
-      "Yukio Mishima",
-      "Kenzaburō Ōe",
-      "Banana Yoshimoto"
-     ],
-     "why": "His books are translated into over 50 languages."
-    },
-    {
-     "level": 2,
-     "q": "Which woodblock print shows a giant wave with Mount Fuji?",
-     "a": "The Great Wave off Kanagawa",
-     "wrong": [
-      "Red Fuji",
-      "Sudden Shower over Shin-Ōhashi",
-      "Plum Garden"
-     ],
-     "why": "Hokusai made it around 1831."
-    },
-    {
-     "level": 2,
-     "q": "Which 11th-century work is often called the world's first novel?",
-     "a": "The Tale of Genji",
-     "wrong": [
-      "The Pillow Book",
-      "Kojiki",
-      "The Tale of the Heike"
-     ],
-     "why": "Murasaki Shikibu wrote it."
-    },
-    {
-     "level": 2,
-     "q": "Which puppet theatre form uses large puppets with three handlers each?",
-     "a": "Bunraku",
-     "wrong": [
-      "Kabuki",
-      "Noh",
-      "Kyōgen"
-     ],
-     "why": "It developed in Osaka."
-    },
-    {
      "level": 3,
      "q": "Which film won Japan the Oscar for Best International Feature in 2022?",
      "a": "Drive My Car",
@@ -701,17 +595,6 @@
       "Perfect Days"
      ],
      "why": "Ryusuke Hamaguchi directed it."
-    },
-    {
-     "level": 3,
-     "q": "Which Japanese author won the Nobel Prize in Literature in 1968?",
-     "a": "Yasunari Kawabata",
-     "wrong": [
-      "Kenzaburō Ōe",
-      "Yukio Mishima",
-      "Kazuo Ishiguro"
-     ],
-     "why": "Ōe won in 1994."
     },
     {
      "level": 3,
@@ -727,8 +610,203 @@
    ]
   },
   {
-   "name": "Japan Food & Traditions",
+   "category": "Entertainment",
+   "name": "Books",
    "questions": [
+    {
+     "level": 1,
+     "q": "What are Japanese comic books called?",
+     "a": "Manga",
+     "wrong": [
+      "Anime",
+      "Kanji",
+      "Haiku"
+     ],
+     "why": "Anime is the animated form."
+    },
+    {
+     "level": 1,
+     "q": "Which three-line poem has 5, 7 and 5 syllables?",
+     "a": "Haiku",
+     "wrong": [
+      "Tanka",
+      "Sonnet",
+      "Limerick"
+     ],
+     "why": "Matsuo Bashō was a master of it."
+    },
+    {
+     "level": 2,
+     "q": "Which author wrote 'Norwegian Wood' and 'Kafka on the Shore'?",
+     "a": "Haruki Murakami",
+     "wrong": [
+      "Yukio Mishima",
+      "Kenzaburō Ōe",
+      "Banana Yoshimoto"
+     ],
+     "why": "His books are translated into over 50 languages."
+    },
+    {
+     "level": 2,
+     "q": "Which 11th-century work is often called the world's first novel?",
+     "a": "The Tale of Genji",
+     "wrong": [
+      "The Pillow Book",
+      "Kojiki",
+      "The Tale of the Heike"
+     ],
+     "why": "Murasaki Shikibu wrote it."
+    },
+    {
+     "level": 3,
+     "q": "Which Japanese author won the Nobel Prize in Literature in 1968?",
+     "a": "Yasunari Kawabata",
+     "wrong": [
+      "Kenzaburō Ōe",
+      "Yukio Mishima",
+      "Kazuo Ishiguro"
+     ],
+     "why": "Ōe won in 1994."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "What is Japan's parliament called?",
+     "a": "National Diet",
+     "wrong": [
+      "Bundestag",
+      "Knesset",
+      "National Assembly"
+     ],
+     "why": "It has two houses."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the art of paper folding called?",
+     "a": "Origami",
+     "wrong": [
+      "Ikebana",
+      "Bonsai",
+      "Kintsugi"
+     ],
+     "why": "The paper crane is a symbol of peace."
+    },
+    {
+     "level": 2,
+     "q": "What is the art of arranging flowers called?",
+     "a": "Ikebana",
+     "wrong": [
+      "Origami",
+      "Bonsai",
+      "Shodo"
+     ],
+     "why": "It focuses on line and form."
+    },
+    {
+     "level": 2,
+     "q": "What is the art of mending pottery with gold called?",
+     "a": "Kintsugi",
+     "wrong": [
+      "Raku",
+      "Urushi",
+      "Ikebana"
+     ],
+     "why": "It celebrates flaws as part of an object's history."
+    },
+    {
+     "level": 2,
+     "q": "What is the Japanese art of growing miniature trees?",
+     "a": "Bonsai",
+     "wrong": [
+      "Ikebana",
+      "Karesansui",
+      "Kokedama"
+     ],
+     "why": "Some bonsai are hundreds of years old."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which studio made 'Spirited Away' and 'My Neighbor Totoro'?",
+     "a": "Studio Ghibli",
+     "wrong": [
+      "Toei Animation",
+      "Sunrise",
+      "Kyoto Animation"
+     ],
+     "why": "Hayao Miyazaki co-founded it."
+    },
+    {
+     "level": 1,
+     "q": "Which video game company created Mario and Zelda?",
+     "a": "Nintendo",
+     "wrong": [
+      "Sega",
+      "Sony",
+      "Capcom"
+     ],
+     "why": "It began as a playing-card company in Kyoto."
+    },
+    {
+     "level": 1,
+     "q": "Which yellow electric mouse is the face of Pokémon?",
+     "a": "Pikachu",
+     "wrong": [
+      "Jigglypuff",
+      "Meowth",
+      "Eevee"
+     ],
+     "why": "Pokémon began as a Game Boy game in 1996."
+    },
+    {
+     "level": 1,
+     "q": "Which singing activity was invented in Japan in the 1970s?",
+     "a": "Karaoke",
+     "wrong": [
+      "Beatboxing",
+      "Kabuki",
+      "Rap battles"
+     ],
+     "why": "Its name means 'empty orchestra'."
+    },
+    {
+     "level": 2,
+     "q": "Which woodblock print shows a giant wave with Mount Fuji?",
+     "a": "The Great Wave off Kanagawa",
+     "wrong": [
+      "Red Fuji",
+      "Sudden Shower over Shin-Ōhashi",
+      "Plum Garden"
+     ],
+     "why": "Hokusai made it around 1831."
+    },
+    {
+     "level": 2,
+     "q": "Which puppet theatre form uses large puppets with three handlers each?",
+     "a": "Bunraku",
+     "wrong": [
+      "Kabuki",
+      "Noh",
+      "Kyōgen"
+     ],
+     "why": "It developed in Osaka."
+    },
     {
      "level": 1,
      "q": "Which dish of vinegared rice with fish is world-famous?",
@@ -786,17 +864,6 @@
     },
     {
      "level": 1,
-     "q": "What is the art of paper folding called?",
-     "a": "Origami",
-     "wrong": [
-      "Ikebana",
-      "Bonsai",
-      "Kintsugi"
-     ],
-     "why": "The paper crane is a symbol of peace."
-    },
-    {
-     "level": 1,
      "q": "Which seafood and vegetables are deep-fried in light batter?",
      "a": "Tempura",
      "wrong": [
@@ -805,28 +872,6 @@
       "Yakitori"
      ],
      "why": "Portuguese missionaries introduced it."
-    },
-    {
-     "level": 2,
-     "q": "What is the art of arranging flowers called?",
-     "a": "Ikebana",
-     "wrong": [
-      "Origami",
-      "Bonsai",
-      "Shodo"
-     ],
-     "why": "It focuses on line and form."
-    },
-    {
-     "level": 2,
-     "q": "What is the art of mending pottery with gold called?",
-     "a": "Kintsugi",
-     "wrong": [
-      "Raku",
-      "Urushi",
-      "Ikebana"
-     ],
-     "why": "It celebrates flaws as part of an object's history."
     },
     {
      "level": 2,
@@ -849,17 +894,6 @@
       "Umeshu"
      ],
      "why": "In Japan, sake means any alcoholic drink; rice wine is nihonshu."
-    },
-    {
-     "level": 2,
-     "q": "What is the Japanese art of growing miniature trees?",
-     "a": "Bonsai",
-     "wrong": [
-      "Ikebana",
-      "Karesansui",
-      "Kokedama"
-     ],
-     "why": "Some bonsai are hundreds of years old."
     },
     {
      "level": 2,
@@ -904,12 +938,7 @@
       "Shōgatsu"
      ],
      "why": "It celebrates two star-crossed lovers."
-    }
-   ]
-  },
-  {
-   "name": "Japan General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is Japan's currency?",
@@ -997,17 +1026,6 @@
       "1985"
      ],
      "why": "It opened just before the Tokyo Olympics."
-    },
-    {
-     "level": 2,
-     "q": "What is Japan's parliament called?",
-     "a": "National Diet",
-     "wrong": [
-      "Bundestag",
-      "Knesset",
-      "National Assembly"
-     ],
-     "why": "It has two houses."
     },
     {
      "level": 2,

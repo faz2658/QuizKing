@@ -3,52 +3,9 @@
  "country": "BO",
  "topics": [
   {
-   "name": "Bolivia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which city is Bolivia's seat of government?",
-     "a": "La Paz",
-     "wrong": [
-      "Sucre",
-      "Santa Cruz",
-      "Cochabamba"
-     ],
-     "why": "It is the world's highest seat of government."
-    },
-    {
-     "level": 1,
-     "q": "Which city is Bolivia's constitutional capital?",
-     "a": "Sucre",
-     "wrong": [
-      "La Paz",
-      "Potosí",
-      "Oruro"
-     ],
-     "why": "It is named after Antonio José de Sucre."
-    },
-    {
-     "level": 1,
-     "q": "After which liberator is Bolivia named?",
-     "a": "Simón Bolívar",
-     "wrong": [
-      "José de San Martín",
-      "Antonio José de Sucre",
-      "Francisco de Miranda"
-     ],
-     "why": "It became independent in 1825."
-    },
-    {
-     "level": 1,
-     "q": "Which silver mountain made Potosí one of the world's richest cities?",
-     "a": "Cerro Rico",
-     "wrong": [
-      "Illimani",
-      "Huayna Potosí",
-      "Sajama"
-     ],
-     "why": "Its silver funded the Spanish Empire."
-    },
     {
      "level": 1,
      "q": "Which coastline did Bolivia lose to Chile in the War of the Pacific?",
@@ -173,18 +130,19 @@
    ]
   },
   {
-   "name": "Bolivia: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "What is the world's largest salt flat, in Bolivia?",
-     "a": "Salar de Uyuni",
+     "q": "Which silver mountain made Potosí one of the world's richest cities?",
+     "a": "Cerro Rico",
      "wrong": [
-      "Salar de Atacama",
-      "Chott el Djerid",
-      "Bonneville Salt Flats"
+      "Illimani",
+      "Huayna Potosí",
+      "Sajama"
      ],
-     "why": "It becomes a giant mirror after rain."
+     "why": "Its silver funded the Spanish Empire."
     },
     {
      "level": 1,
@@ -199,17 +157,6 @@
     },
     {
      "level": 1,
-     "q": "What is Bolivia's currency?",
-     "a": "Boliviano",
-     "wrong": [
-      "Peso",
-      "Sol",
-      "Real"
-     ],
-     "why": "Its code is BOB."
-    },
-    {
-     "level": 1,
      "q": "Which cable car network is the world's highest and longest urban one?",
      "a": "Mi Teleférico",
      "wrong": [
@@ -218,28 +165,6 @@
       "Roosevelt Island Tramway"
      ],
      "why": "It links La Paz with El Alto."
-    },
-    {
-     "level": 1,
-     "q": "Which pastries filled with juicy stew are a Bolivian breakfast?",
-     "a": "Salteñas",
-     "wrong": [
-      "Empanadas",
-      "Arepas",
-      "Tamales"
-     ],
-     "why": "Eat them carefully: they drip."
-    },
-    {
-     "level": 1,
-     "q": "Which Indigenous language is spoken by many Bolivians around La Paz?",
-     "a": "Aymara",
-     "wrong": [
-      "Nahuatl",
-      "Guaraní",
-      "Maya"
-     ],
-     "why": "Bolivia has 37 official languages."
     },
     {
      "level": 1,
@@ -254,17 +179,6 @@
     },
     {
      "level": 2,
-     "q": "Which leaf is chewed or drunk as tea in the Andes?",
-     "a": "Coca",
-     "wrong": [
-      "Mate",
-      "Tea",
-      "Khat"
-     ],
-     "why": "It helps with altitude sickness."
-    },
-    {
-     "level": 2,
      "q": "Which Bolivian city is the country's largest and economic hub?",
      "a": "Santa Cruz de la Sierra",
      "wrong": [
@@ -273,39 +187,6 @@
       "El Alto"
      ],
      "why": "It is in the eastern lowlands."
-    },
-    {
-     "level": 2,
-     "q": "Which bowler hats are worn by Aymara women?",
-     "a": "Bombín hats",
-     "wrong": [
-      "Fedoras",
-      "Sombreros",
-      "Berets"
-     ],
-     "why": "The women are called cholitas."
-    },
-    {
-     "level": 2,
-     "q": "Which road near La Paz was called the 'World's Most Dangerous Road'?",
-     "a": "Yungas Road",
-     "wrong": [
-      "Death Valley Road",
-      "Andes Highway",
-      "Inca Highway"
-     ],
-     "why": "It is now popular with mountain bikers."
-    },
-    {
-     "level": 2,
-     "q": "Which giant statue of Christ in Cochabamba is taller than Rio's?",
-     "a": "Cristo de la Concordia",
-     "wrong": [
-      "Christ the Redeemer",
-      "Cristo Rei",
-      "Christ of the Andes"
-     ],
-     "why": "It is about 34 m tall."
     },
     {
      "level": 3,
@@ -339,6 +220,151 @@
       "Missions of Cusco"
      ],
      "why": "They have baroque music traditions."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which bowler hats are worn by Aymara women?",
+     "a": "Bombín hats",
+     "wrong": [
+      "Fedoras",
+      "Sombreros",
+      "Berets"
+     ],
+     "why": "The women are called cholitas."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which city is Bolivia's seat of government?",
+     "a": "La Paz",
+     "wrong": [
+      "Sucre",
+      "Santa Cruz",
+      "Cochabamba"
+     ],
+     "why": "It is the world's highest seat of government."
+    },
+    {
+     "level": 1,
+     "q": "Which city is Bolivia's constitutional capital?",
+     "a": "Sucre",
+     "wrong": [
+      "La Paz",
+      "Potosí",
+      "Oruro"
+     ],
+     "why": "It is named after Antonio José de Sucre."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which giant statue of Christ in Cochabamba is taller than Rio's?",
+     "a": "Cristo de la Concordia",
+     "wrong": [
+      "Christ the Redeemer",
+      "Cristo Rei",
+      "Christ of the Andes"
+     ],
+     "why": "It is about 34 m tall."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "After which liberator is Bolivia named?",
+     "a": "Simón Bolívar",
+     "wrong": [
+      "José de San Martín",
+      "Antonio José de Sucre",
+      "Francisco de Miranda"
+     ],
+     "why": "It became independent in 1825."
+    },
+    {
+     "level": 1,
+     "q": "What is the world's largest salt flat, in Bolivia?",
+     "a": "Salar de Uyuni",
+     "wrong": [
+      "Salar de Atacama",
+      "Chott el Djerid",
+      "Bonneville Salt Flats"
+     ],
+     "why": "It becomes a giant mirror after rain."
+    },
+    {
+     "level": 1,
+     "q": "What is Bolivia's currency?",
+     "a": "Boliviano",
+     "wrong": [
+      "Peso",
+      "Sol",
+      "Real"
+     ],
+     "why": "Its code is BOB."
+    },
+    {
+     "level": 1,
+     "q": "Which pastries filled with juicy stew are a Bolivian breakfast?",
+     "a": "Salteñas",
+     "wrong": [
+      "Empanadas",
+      "Arepas",
+      "Tamales"
+     ],
+     "why": "Eat them carefully: they drip."
+    },
+    {
+     "level": 1,
+     "q": "Which Indigenous language is spoken by many Bolivians around La Paz?",
+     "a": "Aymara",
+     "wrong": [
+      "Nahuatl",
+      "Guaraní",
+      "Maya"
+     ],
+     "why": "Bolivia has 37 official languages."
+    },
+    {
+     "level": 2,
+     "q": "Which leaf is chewed or drunk as tea in the Andes?",
+     "a": "Coca",
+     "wrong": [
+      "Mate",
+      "Tea",
+      "Khat"
+     ],
+     "why": "It helps with altitude sickness."
+    },
+    {
+     "level": 2,
+     "q": "Which road near La Paz was called the 'World's Most Dangerous Road'?",
+     "a": "Yungas Road",
+     "wrong": [
+      "Death Valley Road",
+      "Andes Highway",
+      "Inca Highway"
+     ],
+     "why": "It is now popular with mountain bikers."
     }
    ]
   }

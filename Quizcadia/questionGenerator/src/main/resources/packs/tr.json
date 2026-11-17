@@ -3,7 +3,8 @@
  "country": "TR",
  "topics": [
   {
-   "name": "Türkiye: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -95,17 +96,6 @@
     },
     {
      "level": 2,
-     "q": "In which year did Turkish women win the vote in national elections?",
-     "a": "1934",
-     "wrong": [
-      "1923",
-      "1945",
-      "1960"
-     ],
-     "why": "This was before many European countries."
-    },
-    {
-     "level": 2,
      "q": "Which 1071 battle opened Anatolia to the Seljuk Turks?",
      "a": "Manzikert",
      "wrong": [
@@ -114,17 +104,6 @@
       "Lepanto"
      ],
      "why": "They defeated the Byzantine emperor."
-    },
-    {
-     "level": 2,
-     "q": "Which Ottoman architect designed the Süleymaniye Mosque?",
-     "a": "Mimar Sinan",
-     "wrong": [
-      "Sedefkâr Mehmed Ağa",
-      "Mimar Kemaleddin",
-      "Davut Ağa"
-     ],
-     "why": "He designed hundreds of buildings."
     },
     {
      "level": 2,
@@ -169,11 +148,23 @@
       "Bayezid II"
      ],
      "why": "The Ottomans then claimed the caliphate."
+    },
+    {
+     "level": 2,
+     "q": "Which Istanbul palace was the Ottoman sultans' main home for centuries?",
+     "a": "Topkapı Palace",
+     "wrong": [
+      "Dolmabahçe Palace",
+      "Yıldız Palace",
+      "Beylerbeyi Palace"
+     ],
+     "why": "It is now a museum."
     }
    ]
   },
   {
-   "name": "Türkiye: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -188,17 +179,6 @@
     },
     {
      "level": 1,
-     "q": "Which domed building in Istanbul was built as a church in 537?",
-     "a": "Hagia Sophia",
-     "wrong": [
-      "Blue Mosque",
-      "Topkapı Palace",
-      "Chora Church"
-     ],
-     "why": "It later became a mosque."
-    },
-    {
-     "level": 1,
      "q": "Which region is famous for 'fairy chimneys' and hot-air balloons?",
      "a": "Cappadocia",
      "wrong": [
@@ -207,6 +187,124 @@
       "Thrace"
      ],
      "why": "People carved homes into the soft rock."
+    },
+    {
+     "level": 2,
+     "q": "Which spicy minced-meat kebab is named after a southern city?",
+     "a": "Adana kebab",
+     "wrong": [
+      "Döner kebab",
+      "İskender kebab",
+      "Şiş kebab"
+     ],
+     "why": "It is grilled on a wide skewer."
+    },
+    {
+     "level": 2,
+     "q": "What is Türkiye's highest mountain?",
+     "a": "Mount Ararat",
+     "wrong": [
+      "Mount Erciyes",
+      "Uludağ",
+      "Mount Nemrut"
+     ],
+     "why": "Tradition says Noah's Ark landed there."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain-top tomb has giant stone heads of gods and kings?",
+     "a": "Mount Nemrut",
+     "wrong": [
+      "Mount Ararat",
+      "Mount Erciyes",
+      "Uludağ"
+     ],
+     "why": "King Antiochus I built it."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which oil-wrestling festival in Edirne is one of the oldest sports events?",
+     "a": "Kırkpınar",
+     "wrong": [
+      "Karakucak",
+      "Aba Güreşi",
+      "Kurash"
+     ],
+     "why": "It dates back at least to the 1360s."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Turkish author won the Nobel Prize in Literature in 2006?",
+     "a": "Orhan Pamuk",
+     "wrong": [
+      "Yaşar Kemal",
+      "Nazım Hikmet",
+      "Elif Şafak"
+     ],
+     "why": "He wrote 'My Name Is Red'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "In which year did Turkish women win the vote in national elections?",
+     "a": "1934",
+     "wrong": [
+      "1923",
+      "1945",
+      "1960"
+     ],
+     "why": "This was before many European countries."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Ottoman architect designed the Süleymaniye Mosque?",
+     "a": "Mimar Sinan",
+     "wrong": [
+      "Sedefkâr Mehmed Ağa",
+      "Mimar Kemaleddin",
+      "Davut Ağa"
+     ],
+     "why": "He designed hundreds of buildings."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which domed building in Istanbul was built as a church in 537?",
+     "a": "Hagia Sophia",
+     "wrong": [
+      "Blue Mosque",
+      "Topkapı Palace",
+      "Chora Church"
+     ],
+     "why": "It later became a mosque."
     },
     {
      "level": 1,
@@ -254,39 +352,6 @@
     },
     {
      "level": 2,
-     "q": "Which spicy minced-meat kebab is named after a southern city?",
-     "a": "Adana kebab",
-     "wrong": [
-      "Döner kebab",
-      "İskender kebab",
-      "Şiş kebab"
-     ],
-     "why": "It is grilled on a wide skewer."
-    },
-    {
-     "level": 2,
-     "q": "What is Türkiye's highest mountain?",
-     "a": "Mount Ararat",
-     "wrong": [
-      "Mount Erciyes",
-      "Uludağ",
-      "Mount Nemrut"
-     ],
-     "why": "Tradition says Noah's Ark landed there."
-    },
-    {
-     "level": 2,
-     "q": "Which Istanbul palace was the Ottoman sultans' main home for centuries?",
-     "a": "Topkapı Palace",
-     "wrong": [
-      "Dolmabahçe Palace",
-      "Yıldız Palace",
-      "Beylerbeyi Palace"
-     ],
-     "why": "It is now a museum."
-    },
-    {
-     "level": 2,
      "q": "What is lokum called in English?",
      "a": "Turkish delight",
      "wrong": [
@@ -306,39 +371,6 @@
       "Qadiri"
      ],
      "why": "The poet Rumi inspired it in Konya."
-    },
-    {
-     "level": 3,
-     "q": "Which Turkish author won the Nobel Prize in Literature in 2006?",
-     "a": "Orhan Pamuk",
-     "wrong": [
-      "Yaşar Kemal",
-      "Nazım Hikmet",
-      "Elif Şafak"
-     ],
-     "why": "He wrote 'My Name Is Red'."
-    },
-    {
-     "level": 3,
-     "q": "Which mountain-top tomb has giant stone heads of gods and kings?",
-     "a": "Mount Nemrut",
-     "wrong": [
-      "Mount Ararat",
-      "Mount Erciyes",
-      "Uludağ"
-     ],
-     "why": "King Antiochus I built it."
-    },
-    {
-     "level": 3,
-     "q": "Which oil-wrestling festival in Edirne is one of the oldest sports events?",
-     "a": "Kırkpınar",
-     "wrong": [
-      "Karakucak",
-      "Aba Güreşi",
-      "Kurash"
-     ],
-     "why": "It dates back at least to the 1360s."
     }
    ]
   }

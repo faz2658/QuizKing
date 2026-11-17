@@ -3,19 +3,9 @@
  "country": "VC",
  "topics": [
   {
-   "name": "Saint Vincent and the Grenadines: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Saint Vincent and the Grenadines?",
-     "a": "Kingstown",
-     "wrong": [
-      "Georgetown",
-      "Port Elizabeth",
-      "Barrouallie"
-     ],
-     "why": "It is called the 'City of Arches'."
-    },
     {
      "level": 1,
      "q": "Which volcano on St Vincent erupted in 2021?",
@@ -39,50 +29,6 @@
      "why": "It is a Commonwealth realm."
     },
     {
-     "level": 1,
-     "q": "What currency is used in Saint Vincent and the Grenadines?",
-     "a": "East Caribbean dollar",
-     "wrong": [
-      "Vincentian dollar",
-      "US dollar",
-      "Euro"
-     ],
-     "why": "It is shared by eight territories."
-    },
-    {
-     "level": 1,
-     "q": "Which film series was partly shot on St Vincent?",
-     "a": "Pirates of the Caribbean",
-     "wrong": [
-      "Jurassic Park",
-      "James Bond",
-      "Indiana Jones"
-     ],
-     "why": "Wallilabou Bay was a main set."
-    },
-    {
-     "level": 1,
-     "q": "Which people of African and Kalinago descent fought the British here?",
-     "a": "Garifuna (Black Caribs)",
-     "wrong": [
-      "Maroons",
-      "Miskito",
-      "Taíno"
-     ],
-     "why": "Many were exiled to Central America."
-    },
-    {
-     "level": 1,
-     "q": "Which island in the Grenadines is a celebrity hideaway?",
-     "a": "Mustique",
-     "wrong": [
-      "Bequia",
-      "Canouan",
-      "Union Island"
-     ],
-     "why": "Princess Margaret had a house there."
-    },
-    {
      "level": 2,
      "q": "Which Garifuna chief is the national hero?",
      "a": "Joseph Chatoyer",
@@ -92,17 +38,6 @@
       "Bussa"
      ],
      "why": "He died fighting the British in 1795."
-    },
-    {
-     "level": 2,
-     "q": "Who has been Prime Minister since 2001?",
-     "a": "Ralph Gonsalves",
-     "wrong": [
-      "James Mitchell",
-      "Milton Cato",
-      "Arnhim Eustace"
-     ],
-     "why": "He is called 'Comrade Ralph'."
     },
     {
      "level": 2,
@@ -139,17 +74,6 @@
     },
     {
      "level": 3,
-     "q": "Which botanical garden is the oldest in the Americas?",
-     "a": "St Vincent Botanical Gardens",
-     "wrong": [
-      "Hope Gardens",
-      "Andromeda Gardens",
-      "Diamond Gardens"
-     ],
-     "why": "It was founded in 1765."
-    },
-    {
-     "level": 3,
      "q": "Which 1902 eruption killed about 1,600 people on St Vincent?",
      "a": "La Soufrière",
      "wrong": [
@@ -158,6 +82,190 @@
       "Kick 'em Jenny"
      ],
      "why": "Mount Pelée on Martinique erupted the next day."
+    },
+    {
+     "level": 2,
+     "q": "Which fort above Kingstown is named after Queen Charlotte?",
+     "a": "Fort Charlotte",
+     "wrong": [
+      "Fort George",
+      "Fort Shirley",
+      "Fort James"
+     ],
+     "why": "It was built in 1806."
+    },
+    {
+     "level": 2,
+     "q": "Which new international airport opened in 2017?",
+     "a": "Argyle International Airport",
+     "wrong": [
+      "E.T. Joshua Airport",
+      "Canouan Airport",
+      "Union Island Airport"
+     ],
+     "why": "It replaced E.T. Joshua."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Saint Vincent and the Grenadines?",
+     "a": "Kingstown",
+     "wrong": [
+      "Georgetown",
+      "Port Elizabeth",
+      "Barrouallie"
+     ],
+     "why": "It is called the 'City of Arches'."
+    },
+    {
+     "level": 1,
+     "q": "Which island in the Grenadines is a celebrity hideaway?",
+     "a": "Mustique",
+     "wrong": [
+      "Bequia",
+      "Canouan",
+      "Union Island"
+     ],
+     "why": "Princess Margaret had a house there."
+    },
+    {
+     "level": 1,
+     "q": "Which islands of the Grenadines are a famous sailing spot?",
+     "a": "Tobago Cays",
+     "wrong": [
+      "Exuma Cays",
+      "Florida Keys",
+      "Bay Islands"
+     ],
+     "why": "Sea turtles swim in the lagoon."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean lies to the east of St Vincent?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Pacific Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "The Caribbean is to the west."
+    },
+    {
+     "level": 2,
+     "q": "Which waterfall is the highest on St Vincent?",
+     "a": "Dark View Falls",
+     "wrong": [
+      "Trafalgar Falls",
+      "Kuang Si",
+      "Emerald Pool"
+     ],
+     "why": "It is a twin waterfall."
+    },
+    {
+     "level": 2,
+     "q": "Which tiny Grenadines island is home to Salt Whistle Bay?",
+     "a": "Mayreau",
+     "wrong": [
+      "Bequia",
+      "Mustique",
+      "Canouan"
+     ],
+     "why": "It is one of the smallest lived-on islands."
+    },
+    {
+     "level": 3,
+     "q": "Which island in the Grenadines is privately owned and called Prune Island?",
+     "a": "Palm Island",
+     "wrong": [
+      "Mustique",
+      "Petit St Vincent",
+      "Young Island"
+     ],
+     "why": "An American couple renamed it."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which island has the Easter Regatta and a whaling tradition?",
+     "a": "Bequia",
+     "wrong": [
+      "Mustique",
+      "Canouan",
+      "Mayreau"
+     ],
+     "why": "It is the largest of the Grenadines."
+    },
+    {
+     "level": 2,
+     "q": "Which Grenadines island is the southern port of entry with a kite-surfing lagoon?",
+     "a": "Union Island",
+     "wrong": [
+      "Mayreau",
+      "Palm Island",
+      "Bequia"
+     ],
+     "why": "Clifton is its main town."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which steel pan style competition is held at Vincy Mas?",
+     "a": "Panorama",
+     "wrong": [
+      "Soca Monarch",
+      "Calypso Monarch",
+      "Mas Band of the Year"
+     ],
+     "why": "Steel bands compete."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which film series was partly shot on St Vincent?",
+     "a": "Pirates of the Caribbean",
+     "wrong": [
+      "Jurassic Park",
+      "James Bond",
+      "Indiana Jones"
+     ],
+     "why": "Wallilabou Bay was a main set."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who has been Prime Minister since 2001?",
+     "a": "Ralph Gonsalves",
+     "wrong": [
+      "James Mitchell",
+      "Milton Cato",
+      "Arnhim Eustace"
+     ],
+     "why": "He is called 'Comrade Ralph'."
     },
     {
      "level": 3,
@@ -173,29 +281,69 @@
    ]
   },
   {
-   "name": "Saint Vincent and the Grenadines: Places & Culture",
+   "category": "Animals",
+   "name": "Animals",
    "questions": [
     {
      "level": 1,
-     "q": "Which islands of the Grenadines are a famous sailing spot?",
-     "a": "Tobago Cays",
+     "q": "Which colourful parrot is St Vincent's national bird?",
+     "a": "St Vincent amazon",
      "wrong": [
-      "Exuma Cays",
-      "Florida Keys",
-      "Bay Islands"
+      "Sisserou",
+      "Jacquot",
+      "Scarlet macaw"
      ],
-     "why": "Sea turtles swim in the lagoon."
+     "why": "It lives in the rainforest."
+    },
+    {
+     "level": 3,
+     "q": "Which animal may Bequia's traditional whalers still hunt?",
+     "a": "Humpback whale",
+     "wrong": [
+      "Sperm whale",
+      "Blue whale",
+      "Orca"
+     ],
+     "why": "A few may be taken each year."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What currency is used in Saint Vincent and the Grenadines?",
+     "a": "East Caribbean dollar",
+     "wrong": [
+      "Vincentian dollar",
+      "US dollar",
+      "Euro"
+     ],
+     "why": "It is shared by eight territories."
     },
     {
      "level": 1,
-     "q": "Which island has the Easter Regatta and a whaling tradition?",
-     "a": "Bequia",
+     "q": "Which people of African and Kalinago descent fought the British here?",
+     "a": "Garifuna (Black Caribs)",
      "wrong": [
-      "Mustique",
-      "Canouan",
-      "Mayreau"
+      "Maroons",
+      "Miskito",
+      "Taíno"
      ],
-     "why": "It is the largest of the Grenadines."
+     "why": "Many were exiled to Central America."
+    },
+    {
+     "level": 3,
+     "q": "Which botanical garden is the oldest in the Americas?",
+     "a": "St Vincent Botanical Gardens",
+     "wrong": [
+      "Hope Gardens",
+      "Andromeda Gardens",
+      "Diamond Gardens"
+     ],
+     "why": "It was founded in 1765."
     },
     {
      "level": 1,
@@ -229,116 +377,6 @@
       "Taro"
      ],
      "why": "It is used in medicine and food."
-    },
-    {
-     "level": 1,
-     "q": "Which colourful parrot is St Vincent's national bird?",
-     "a": "St Vincent amazon",
-     "wrong": [
-      "Sisserou",
-      "Jacquot",
-      "Scarlet macaw"
-     ],
-     "why": "It lives in the rainforest."
-    },
-    {
-     "level": 1,
-     "q": "Which ocean lies to the east of St Vincent?",
-     "a": "Atlantic Ocean",
-     "wrong": [
-      "Pacific Ocean",
-      "Indian Ocean",
-      "Arctic Ocean"
-     ],
-     "why": "The Caribbean is to the west."
-    },
-    {
-     "level": 2,
-     "q": "Which fort above Kingstown is named after Queen Charlotte?",
-     "a": "Fort Charlotte",
-     "wrong": [
-      "Fort George",
-      "Fort Shirley",
-      "Fort James"
-     ],
-     "why": "It was built in 1806."
-    },
-    {
-     "level": 2,
-     "q": "Which waterfall is the highest on St Vincent?",
-     "a": "Dark View Falls",
-     "wrong": [
-      "Trafalgar Falls",
-      "Kuang Si",
-      "Emerald Pool"
-     ],
-     "why": "It is a twin waterfall."
-    },
-    {
-     "level": 2,
-     "q": "Which new international airport opened in 2017?",
-     "a": "Argyle International Airport",
-     "wrong": [
-      "E.T. Joshua Airport",
-      "Canouan Airport",
-      "Union Island Airport"
-     ],
-     "why": "It replaced E.T. Joshua."
-    },
-    {
-     "level": 2,
-     "q": "Which tiny Grenadines island is home to Salt Whistle Bay?",
-     "a": "Mayreau",
-     "wrong": [
-      "Bequia",
-      "Mustique",
-      "Canouan"
-     ],
-     "why": "It is one of the smallest lived-on islands."
-    },
-    {
-     "level": 2,
-     "q": "Which Grenadines island is the southern port of entry with a kite-surfing lagoon?",
-     "a": "Union Island",
-     "wrong": [
-      "Mayreau",
-      "Palm Island",
-      "Bequia"
-     ],
-     "why": "Clifton is its main town."
-    },
-    {
-     "level": 3,
-     "q": "Which animal may Bequia's traditional whalers still hunt?",
-     "a": "Humpback whale",
-     "wrong": [
-      "Sperm whale",
-      "Blue whale",
-      "Orca"
-     ],
-     "why": "A few may be taken each year."
-    },
-    {
-     "level": 3,
-     "q": "Which island in the Grenadines is privately owned and called Prune Island?",
-     "a": "Palm Island",
-     "wrong": [
-      "Mustique",
-      "Petit St Vincent",
-      "Young Island"
-     ],
-     "why": "An American couple renamed it."
-    },
-    {
-     "level": 3,
-     "q": "Which steel pan style competition is held at Vincy Mas?",
-     "a": "Panorama",
-     "wrong": [
-      "Soca Monarch",
-      "Calypso Monarch",
-      "Mas Band of the Year"
-     ],
-     "why": "Steel bands compete."
     }
    ]
   }

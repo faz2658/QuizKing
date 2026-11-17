@@ -3,7 +3,8 @@
  "country": "SK",
  "topics": [
   {
-   "name": "Slovakia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -18,17 +19,6 @@
     },
     {
      "level": 1,
-     "q": "What is the capital of Slovakia?",
-     "a": "Bratislava",
-     "wrong": [
-      "Košice",
-      "Žilina",
-      "Nitra"
-     ],
-     "why": "It borders both Austria and Hungary."
-    },
-    {
-     "level": 1,
      "q": "Which 9th-century state was centred in today's Slovakia and Moravia?",
      "a": "Great Moravia",
      "wrong": [
@@ -37,17 +27,6 @@
       "Pannonia"
      ],
      "why": "Saints Cyril and Methodius came there."
-    },
-    {
-     "level": 1,
-     "q": "Which brothers brought Christianity and a Slavic script to Great Moravia?",
-     "a": "Cyril and Methodius",
-     "wrong": [
-      "Peter and Paul",
-      "Boris and Gleb",
-      "Wenceslas and Ludmila"
-     ],
-     "why": "They arrived in 863."
     },
     {
      "level": 1,
@@ -62,17 +41,6 @@
     },
     {
      "level": 1,
-     "q": "In which year did Slovakia join the EU and NATO?",
-     "a": "2004",
-     "wrong": [
-      "1993",
-      "1999",
-      "2009"
-     ],
-     "why": "It adopted the euro in 2009."
-    },
-    {
-     "level": 1,
      "q": "Which Slovak-born politician led the Prague Spring of 1968?",
      "a": "Alexander Dubček",
      "wrong": [
@@ -81,17 +49,6 @@
       "Milan Rastislav Štefánik"
      ],
      "why": "He called it 'socialism with a human face'."
-    },
-    {
-     "level": 2,
-     "q": "Which scholar codified the Slovak literary language in the 1840s?",
-     "a": "Ľudovít Štúr",
-     "wrong": [
-      "Anton Bernolák",
-      "Pavol Országh",
-      "Ján Kollár"
-     ],
-     "why": "He is a national hero."
     },
     {
      "level": 2,
@@ -127,17 +84,6 @@
      "why": "She was a lawyer and activist."
     },
     {
-     "level": 2,
-     "q": "Which legendary outlaw is called the Slovak Robin Hood?",
-     "a": "Juraj Jánošík",
-     "wrong": [
-      "Ilja Muromets",
-      "Juraj Dózsa",
-      "Matúš Čák"
-     ],
-     "why": "He was executed in 1713."
-    },
-    {
      "level": 3,
      "q": "Which city was the coronation city of Hungarian kings from 1563 to 1830?",
      "a": "Bratislava (Pressburg)",
@@ -147,44 +93,23 @@
       "Trnava"
      ],
      "why": "Kings were crowned in St Martin's Cathedral."
-    },
-    {
-     "level": 3,
-     "q": "Which Slovak inventor is credited with an early parachute design?",
-     "a": "Štefan Banič",
-     "wrong": [
-      "Jozef Murgaš",
-      "Aurel Stodola",
-      "Ján Bahýľ"
-     ],
-     "why": "He patented it in the USA in 1914."
-    },
-    {
-     "level": 3,
-     "q": "Which Slovak inventor pioneered wireless telegraphy?",
-     "a": "Jozef Murgaš",
-     "wrong": [
-      "Štefan Banič",
-      "Aurel Stodola",
-      "Ján Bahýľ"
-     ],
-     "why": "He was a priest and painter too."
     }
    ]
   },
   {
-   "name": "Slovakia: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "What is Slovakia's currency?",
-     "a": "Euro",
+     "q": "What is the capital of Slovakia?",
+     "a": "Bratislava",
      "wrong": [
-      "Koruna",
-      "Forint",
-      "Złoty"
+      "Košice",
+      "Žilina",
+      "Nitra"
      ],
-     "why": "It was adopted in 2009."
+     "why": "It borders both Austria and Hungary."
     },
     {
      "level": 1,
@@ -207,61 +132,6 @@
       "Vltava"
      ],
      "why": "It also flows to Vienna and Budapest."
-    },
-    {
-     "level": 1,
-     "q": "Which potato dumplings with sheep's cheese are the national dish?",
-     "a": "Bryndzové halušky",
-     "wrong": [
-      "Pierogi",
-      "Knedlíky",
-      "Gnocchi"
-     ],
-     "why": "They are topped with bacon."
-    },
-    {
-     "level": 1,
-     "q": "Which castle ruins in eastern Slovakia are among Central Europe's largest?",
-     "a": "Spiš Castle",
-     "wrong": [
-      "Bojnice Castle",
-      "Devín Castle",
-      "Orava Castle"
-     ],
-     "why": "It is a UNESCO site."
-    },
-    {
-     "level": 1,
-     "q": "Which Slovak ice hockey star played for the Boston Bruins?",
-     "a": "Zdeno Chára",
-     "wrong": [
-      "Marián Hossa",
-      "Peter Šťastný",
-      "Marián Gáborík"
-     ],
-     "why": "He was one of the tallest NHL players."
-    },
-    {
-     "level": 1,
-     "q": "Which fairy-tale castle in central Slovakia looks like it's from a storybook?",
-     "a": "Bojnice Castle",
-     "wrong": [
-      "Spiš Castle",
-      "Trenčín Castle",
-      "Bratislava Castle"
-     ],
-     "why": "It hosts a festival of ghosts."
-    },
-    {
-     "level": 2,
-     "q": "Which castle above the Orava River appeared in the 1922 film 'Nosferatu'?",
-     "a": "Orava Castle",
-     "wrong": [
-      "Bojnice Castle",
-      "Spiš Castle",
-      "Devín Castle"
-     ],
-     "why": "It sits on a high rock."
     },
     {
      "level": 2,
@@ -297,17 +167,6 @@
      "why": "It was once one of the largest cities in Hungary."
     },
     {
-     "level": 2,
-     "q": "Which Slovak cyclist won three world road race titles in a row?",
-     "a": "Peter Sagan",
-     "wrong": [
-      "Juraj Sagan",
-      "Peter Velits",
-      "Ján Svorada"
-     ],
-     "why": "He won from 2015 to 2017."
-    },
-    {
      "level": 3,
      "q": "What is the tallest peak in Slovakia?",
      "a": "Gerlachovský štít",
@@ -339,6 +198,179 @@
       "Bagpipe"
      ],
      "why": "It can be nearly two metres long."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Slovak ice hockey star played for the Boston Bruins?",
+     "a": "Zdeno Chára",
+     "wrong": [
+      "Marián Hossa",
+      "Peter Šťastný",
+      "Marián Gáborík"
+     ],
+     "why": "He was one of the tallest NHL players."
+    },
+    {
+     "level": 2,
+     "q": "Which Slovak cyclist won three world road race titles in a row?",
+     "a": "Peter Sagan",
+     "wrong": [
+      "Juraj Sagan",
+      "Peter Velits",
+      "Ján Svorada"
+     ],
+     "why": "He won from 2015 to 2017."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which castle above the Orava River appeared in the 1922 film 'Nosferatu'?",
+     "a": "Orava Castle",
+     "wrong": [
+      "Bojnice Castle",
+      "Spiš Castle",
+      "Devín Castle"
+     ],
+     "why": "It sits on a high rock."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which scholar codified the Slovak literary language in the 1840s?",
+     "a": "Ľudovít Štúr",
+     "wrong": [
+      "Anton Bernolák",
+      "Pavol Országh",
+      "Ján Kollár"
+     ],
+     "why": "He is a national hero."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Slovakia join the EU and NATO?",
+     "a": "2004",
+     "wrong": [
+      "1993",
+      "1999",
+      "2009"
+     ],
+     "why": "It adopted the euro in 2009."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which brothers brought Christianity and a Slavic script to Great Moravia?",
+     "a": "Cyril and Methodius",
+     "wrong": [
+      "Peter and Paul",
+      "Boris and Gleb",
+      "Wenceslas and Ludmila"
+     ],
+     "why": "They arrived in 863."
+    },
+    {
+     "level": 2,
+     "q": "Which legendary outlaw is called the Slovak Robin Hood?",
+     "a": "Juraj Jánošík",
+     "wrong": [
+      "Ilja Muromets",
+      "Juraj Dózsa",
+      "Matúš Čák"
+     ],
+     "why": "He was executed in 1713."
+    },
+    {
+     "level": 3,
+     "q": "Which Slovak inventor is credited with an early parachute design?",
+     "a": "Štefan Banič",
+     "wrong": [
+      "Jozef Murgaš",
+      "Aurel Stodola",
+      "Ján Bahýľ"
+     ],
+     "why": "He patented it in the USA in 1914."
+    },
+    {
+     "level": 3,
+     "q": "Which Slovak inventor pioneered wireless telegraphy?",
+     "a": "Jozef Murgaš",
+     "wrong": [
+      "Štefan Banič",
+      "Aurel Stodola",
+      "Ján Bahýľ"
+     ],
+     "why": "He was a priest and painter too."
+    },
+    {
+     "level": 1,
+     "q": "What is Slovakia's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Koruna",
+      "Forint",
+      "Złoty"
+     ],
+     "why": "It was adopted in 2009."
+    },
+    {
+     "level": 1,
+     "q": "Which potato dumplings with sheep's cheese are the national dish?",
+     "a": "Bryndzové halušky",
+     "wrong": [
+      "Pierogi",
+      "Knedlíky",
+      "Gnocchi"
+     ],
+     "why": "They are topped with bacon."
+    },
+    {
+     "level": 1,
+     "q": "Which castle ruins in eastern Slovakia are among Central Europe's largest?",
+     "a": "Spiš Castle",
+     "wrong": [
+      "Bojnice Castle",
+      "Devín Castle",
+      "Orava Castle"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which fairy-tale castle in central Slovakia looks like it's from a storybook?",
+     "a": "Bojnice Castle",
+     "wrong": [
+      "Spiš Castle",
+      "Trenčín Castle",
+      "Bratislava Castle"
+     ],
+     "why": "It hosts a festival of ghosts."
     }
    ]
   }

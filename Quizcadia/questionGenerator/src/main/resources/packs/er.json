@@ -3,19 +3,9 @@
  "country": "ER",
  "topics": [
   {
-   "name": "Eritrea: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Eritrea?",
-     "a": "Asmara",
-     "wrong": [
-      "Massawa",
-      "Keren",
-      "Assab"
-     ],
-     "why": "Its modernist buildings are a UNESCO site."
-    },
     {
      "level": 1,
      "q": "From which country did Eritrea gain independence in 1993?",
@@ -48,28 +38,6 @@
       "Abiy Ahmed"
      ],
      "why": "No national election has been held."
-    },
-    {
-     "level": 1,
-     "q": "What is Eritrea's currency?",
-     "a": "Nakfa",
-     "wrong": [
-      "Birr",
-      "Shilling",
-      "Djiboutian franc"
-     ],
-     "why": "It is named after a town in the war."
-    },
-    {
-     "level": 1,
-     "q": "Which sea lies along Eritrea's coast?",
-     "a": "Red Sea",
-     "wrong": [
-      "Mediterranean Sea",
-      "Arabian Sea",
-      "Persian Gulf"
-     ],
-     "why": "It has a long coastline."
     },
     {
      "level": 1,
@@ -150,17 +118,6 @@
     },
     {
      "level": 3,
-     "q": "Which national service is compulsory and often indefinite?",
-     "a": "National service",
-     "wrong": [
-      "Temple service",
-      "Labour corps",
-      "Youth brigades"
-     ],
-     "why": "It has led many to flee."
-    },
-    {
-     "level": 3,
      "q": "In which year did Eritreans vote for independence?",
      "a": "1993",
      "wrong": [
@@ -169,99 +126,6 @@
       "1981"
      ],
      "why": "Over 99% voted yes."
-    }
-   ]
-  },
-  {
-   "name": "Eritrea: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which famous modernist service station in Asmara looks like an aeroplane?",
-     "a": "Fiat Tagliero Building",
-     "wrong": [
-      "Bar Zilli",
-      "Cinema Impero",
-      "Opera House"
-     ],
-     "why": "It was built in 1938."
-    },
-    {
-     "level": 1,
-     "q": "Which train line climbs from Massawa to Asmara?",
-     "a": "Eritrean Railway",
-     "wrong": [
-      "Tazara",
-      "Lunatic Express",
-      "Djibouti Railway"
-     ],
-     "why": "It has steam engines."
-    },
-    {
-     "level": 1,
-     "q": "Which flatbread made from teff is eaten with stews?",
-     "a": "Injera",
-     "wrong": [
-      "Naan",
-      "Chapati",
-      "Pita"
-     ],
-     "why": "It is spongy and sour."
-    },
-    {
-     "level": 1,
-     "q": "Which island group is a famous diving area?",
-     "a": "Dahlak Archipelago",
-     "wrong": [
-      "Bazaruto",
-      "Quirimbas",
-      "Seychelles"
-     ],
-     "why": "It has around 200 islands."
-    },
-    {
-     "level": 1,
-     "q": "Which coffee ceremony is a common tradition?",
-     "a": "Roasting and serving coffee in three rounds",
-     "wrong": [
-      "Afternoon tea",
-      "Mate sharing",
-      "Yerba ritual"
-     ],
-     "why": "It is a sign of friendship."
-    },
-    {
-     "level": 1,
-     "q": "Which language is the most widely spoken in Eritrea?",
-     "a": "Tigrinya",
-     "wrong": [
-      "Amharic",
-      "Arabic",
-      "Somali"
-     ],
-     "why": "Tigre is also widely spoken."
-    },
-    {
-     "level": 1,
-     "q": "Which desert lowland is one of the hottest places on Earth?",
-     "a": "Danakil Depression",
-     "wrong": [
-      "Kalahari",
-      "Sahara",
-      "Namib"
-     ],
-     "why": "It stretches into Ethiopia."
-    },
-    {
-     "level": 2,
-     "q": "Which spicy stew is Eritrea's national dish?",
-     "a": "Zigni",
-     "wrong": [
-      "Doro wat",
-      "Tibs",
-      "Shiro"
-     ],
-     "why": "It is made with berbere spice."
     },
     {
      "level": 2,
@@ -284,7 +148,63 @@
       "Mitsiwa"
      ],
      "why": "It was the port of Aksum."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Eritrea?",
+     "a": "Asmara",
+     "wrong": [
+      "Massawa",
+      "Keren",
+      "Assab"
+     ],
+     "why": "Its modernist buildings are a UNESCO site."
     },
+    {
+     "level": 1,
+     "q": "Which sea lies along Eritrea's coast?",
+     "a": "Red Sea",
+     "wrong": [
+      "Mediterranean Sea",
+      "Arabian Sea",
+      "Persian Gulf"
+     ],
+     "why": "It has a long coastline."
+    },
+    {
+     "level": 1,
+     "q": "Which island group is a famous diving area?",
+     "a": "Dahlak Archipelago",
+     "wrong": [
+      "Bazaruto",
+      "Quirimbas",
+      "Seychelles"
+     ],
+     "why": "It has around 200 islands."
+    },
+    {
+     "level": 1,
+     "q": "Which desert lowland is one of the hottest places on Earth?",
+     "a": "Danakil Depression",
+     "wrong": [
+      "Kalahari",
+      "Sahara",
+      "Namib"
+     ],
+     "why": "It stretches into Ethiopia."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 2,
      "q": "Which sport is the most popular in Eritrea?",
@@ -328,7 +248,13 @@
       "Kenenisa Bekele"
      ],
      "why": "It was Eritrea's first Olympic medal."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
     {
      "level": 3,
      "q": "Which town in the highlands has a Commonwealth war cemetery?",
@@ -339,6 +265,100 @@
       "Agordat"
      ],
      "why": "A big battle was fought there in 1941."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Eritrea's currency?",
+     "a": "Nakfa",
+     "wrong": [
+      "Birr",
+      "Shilling",
+      "Djiboutian franc"
+     ],
+     "why": "It is named after a town in the war."
+    },
+    {
+     "level": 3,
+     "q": "Which national service is compulsory and often indefinite?",
+     "a": "National service",
+     "wrong": [
+      "Temple service",
+      "Labour corps",
+      "Youth brigades"
+     ],
+     "why": "It has led many to flee."
+    },
+    {
+     "level": 1,
+     "q": "Which famous modernist service station in Asmara looks like an aeroplane?",
+     "a": "Fiat Tagliero Building",
+     "wrong": [
+      "Bar Zilli",
+      "Cinema Impero",
+      "Opera House"
+     ],
+     "why": "It was built in 1938."
+    },
+    {
+     "level": 1,
+     "q": "Which train line climbs from Massawa to Asmara?",
+     "a": "Eritrean Railway",
+     "wrong": [
+      "Tazara",
+      "Lunatic Express",
+      "Djibouti Railway"
+     ],
+     "why": "It has steam engines."
+    },
+    {
+     "level": 1,
+     "q": "Which flatbread made from teff is eaten with stews?",
+     "a": "Injera",
+     "wrong": [
+      "Naan",
+      "Chapati",
+      "Pita"
+     ],
+     "why": "It is spongy and sour."
+    },
+    {
+     "level": 1,
+     "q": "Which coffee ceremony is a common tradition?",
+     "a": "Roasting and serving coffee in three rounds",
+     "wrong": [
+      "Afternoon tea",
+      "Mate sharing",
+      "Yerba ritual"
+     ],
+     "why": "It is a sign of friendship."
+    },
+    {
+     "level": 1,
+     "q": "Which language is the most widely spoken in Eritrea?",
+     "a": "Tigrinya",
+     "wrong": [
+      "Amharic",
+      "Arabic",
+      "Somali"
+     ],
+     "why": "Tigre is also widely spoken."
+    },
+    {
+     "level": 2,
+     "q": "Which spicy stew is Eritrea's national dish?",
+     "a": "Zigni",
+     "wrong": [
+      "Doro wat",
+      "Tibs",
+      "Shiro"
+     ],
+     "why": "It is made with berbere spice."
     }
    ]
   }

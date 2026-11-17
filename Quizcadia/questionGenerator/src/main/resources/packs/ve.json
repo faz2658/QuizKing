@@ -3,19 +3,9 @@
  "country": "VE",
  "topics": [
   {
-   "name": "Venezuela: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which liberator, born in Caracas, freed much of South America?",
-     "a": "Simón Bolívar",
-     "wrong": [
-      "José de San Martín",
-      "Antonio José de Sucre",
-      "Francisco de Miranda"
-     ],
-     "why": "Venezuela's currency is named after him."
-    },
     {
      "level": 1,
      "q": "In which year did Venezuela declare independence?",
@@ -48,17 +38,6 @@
       "Hernán Cortés"
      ],
      "why": "Stilt houses reminded them of Venice."
-    },
-    {
-     "level": 1,
-     "q": "Which resource made Venezuela rich in the 1900s?",
-     "a": "Oil",
-     "wrong": [
-      "Gold",
-      "Coffee",
-      "Silver"
-     ],
-     "why": "It has the world's largest proven oil reserves."
     },
     {
      "level": 1,
@@ -106,17 +85,6 @@
     },
     {
      "level": 2,
-     "q": "Who succeeded Hugo Chávez as President?",
-     "a": "Nicolás Maduro",
-     "wrong": [
-      "Diosdado Cabello",
-      "Juan Guaidó",
-      "Henrique Capriles"
-     ],
-     "why": "He had been a bus driver."
-    },
-    {
-     "level": 2,
      "q": "Which Venezuelan opposition leader won the 2025 Nobel Peace Prize?",
      "a": "María Corina Machado",
      "wrong": [
@@ -149,31 +117,21 @@
      "why": "Bolivia's capital is named after him."
     },
     {
-     "level": 3,
-     "q": "Which teacher of Bolívar was a famous educator?",
-     "a": "Simón Rodríguez",
+     "level": 2,
+     "q": "Which Venezuelan baseball star won the Triple Crown in 2012?",
+     "a": "Miguel Cabrera",
      "wrong": [
-      "Andrés Bello",
-      "Francisco de Miranda",
-      "José Martí"
+      "José Altuve",
+      "Ronald Acuña Jr.",
+      "Félix Hernández"
      ],
-     "why": "He took Bolívar to Europe."
-    },
-    {
-     "level": 3,
-     "q": "Which scholar from Caracas wrote Chile's civil code?",
-     "a": "Andrés Bello",
-     "wrong": [
-      "Simón Rodríguez",
-      "Rómulo Gallegos",
-      "Arturo Uslar Pietri"
-     ],
-     "why": "He also wrote a famous Spanish grammar."
+     "why": "It was the first in 45 years."
     }
    ]
   },
   {
-   "name": "Venezuela: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -199,28 +157,6 @@
     },
     {
      "level": 1,
-     "q": "Which corn cakes are a Venezuelan staple?",
-     "a": "Arepas",
-     "wrong": [
-      "Tortillas",
-      "Pupusas",
-      "Empanadas"
-     ],
-     "why": "They are stuffed with cheese, meat or beans."
-    },
-    {
-     "level": 1,
-     "q": "What is Venezuela's currency?",
-     "a": "Bolívar",
-     "wrong": [
-      "Peso",
-      "Sol",
-      "Real"
-     ],
-     "why": "It is named after Simón Bolívar."
-    },
-    {
-     "level": 1,
      "q": "Which river flows across Venezuela to the Atlantic?",
      "a": "Orinoco",
      "wrong": [
@@ -229,28 +165,6 @@
       "Paraná"
      ],
      "why": "Its delta is huge."
-    },
-    {
-     "level": 1,
-     "q": "Which country has won the most Miss Universe titles after the USA?",
-     "a": "Venezuela",
-     "wrong": [
-      "Colombia",
-      "Philippines",
-      "Brazil"
-     ],
-     "why": "Beauty pageants are hugely popular."
-    },
-    {
-     "level": 1,
-     "q": "Which sport is the most popular in Venezuela?",
-     "a": "Baseball",
-     "wrong": [
-      "Football",
-      "Basketball",
-      "Cricket"
-     ],
-     "why": "Many Venezuelans play in MLB."
     },
     {
      "level": 2,
@@ -275,50 +189,6 @@
      "why": "Mount Roraima is one of them."
     },
     {
-     "level": 2,
-     "q": "Which Christmas dish wraps meat in corn dough and banana leaves?",
-     "a": "Hallaca",
-     "wrong": [
-      "Tamal",
-      "Pastel",
-      "Bollo"
-     ],
-     "why": "Families make them together."
-    },
-    {
-     "level": 2,
-     "q": "Which Venezuelan baseball star won the Triple Crown in 2012?",
-     "a": "Miguel Cabrera",
-     "wrong": [
-      "José Altuve",
-      "Ronald Acuña Jr.",
-      "Félix Hernández"
-     ],
-     "why": "It was the first in 45 years."
-    },
-    {
-     "level": 2,
-     "q": "Which Venezuelan network of youth orchestras is world-famous?",
-     "a": "El Sistema",
-     "wrong": [
-      "La Banda",
-      "Orquesta Bolívar",
-      "Música Joven"
-     ],
-     "why": "Conductor Gustavo Dudamel came from it."
-    },
-    {
-     "level": 3,
-     "q": "Which writer and President wrote 'Doña Bárbara'?",
-     "a": "Rómulo Gallegos",
-     "wrong": [
-      "Andrés Bello",
-      "Arturo Uslar Pietri",
-      "Teresa de la Parra"
-     ],
-     "why": "A major literature prize is named after him."
-    },
-    {
      "level": 3,
      "q": "What is the name of the never-ending lightning storm over Lake Maracaibo?",
      "a": "Catatumbo lightning",
@@ -339,6 +209,168 @@
       "Auyán-tepui"
      ],
      "why": "It is about 4,978 m high."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which sport is the most popular in Venezuela?",
+     "a": "Baseball",
+     "wrong": [
+      "Football",
+      "Basketball",
+      "Cricket"
+     ],
+     "why": "Many Venezuelans play in MLB."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Venezuelan network of youth orchestras is world-famous?",
+     "a": "El Sistema",
+     "wrong": [
+      "La Banda",
+      "Orquesta Bolívar",
+      "Música Joven"
+     ],
+     "why": "Conductor Gustavo Dudamel came from it."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which scholar from Caracas wrote Chile's civil code?",
+     "a": "Andrés Bello",
+     "wrong": [
+      "Simón Rodríguez",
+      "Rómulo Gallegos",
+      "Arturo Uslar Pietri"
+     ],
+     "why": "He also wrote a famous Spanish grammar."
+    },
+    {
+     "level": 3,
+     "q": "Which writer and President wrote 'Doña Bárbara'?",
+     "a": "Rómulo Gallegos",
+     "wrong": [
+      "Andrés Bello",
+      "Arturo Uslar Pietri",
+      "Teresa de la Parra"
+     ],
+     "why": "A major literature prize is named after him."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who succeeded Hugo Chávez as President?",
+     "a": "Nicolás Maduro",
+     "wrong": [
+      "Diosdado Cabello",
+      "Juan Guaidó",
+      "Henrique Capriles"
+     ],
+     "why": "He had been a bus driver."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which liberator, born in Caracas, freed much of South America?",
+     "a": "Simón Bolívar",
+     "wrong": [
+      "José de San Martín",
+      "Antonio José de Sucre",
+      "Francisco de Miranda"
+     ],
+     "why": "Venezuela's currency is named after him."
+    },
+    {
+     "level": 1,
+     "q": "Which resource made Venezuela rich in the 1900s?",
+     "a": "Oil",
+     "wrong": [
+      "Gold",
+      "Coffee",
+      "Silver"
+     ],
+     "why": "It has the world's largest proven oil reserves."
+    },
+    {
+     "level": 3,
+     "q": "Which teacher of Bolívar was a famous educator?",
+     "a": "Simón Rodríguez",
+     "wrong": [
+      "Andrés Bello",
+      "Francisco de Miranda",
+      "José Martí"
+     ],
+     "why": "He took Bolívar to Europe."
+    },
+    {
+     "level": 1,
+     "q": "Which corn cakes are a Venezuelan staple?",
+     "a": "Arepas",
+     "wrong": [
+      "Tortillas",
+      "Pupusas",
+      "Empanadas"
+     ],
+     "why": "They are stuffed with cheese, meat or beans."
+    },
+    {
+     "level": 1,
+     "q": "What is Venezuela's currency?",
+     "a": "Bolívar",
+     "wrong": [
+      "Peso",
+      "Sol",
+      "Real"
+     ],
+     "why": "It is named after Simón Bolívar."
+    },
+    {
+     "level": 1,
+     "q": "Which country has won the most Miss Universe titles after the USA?",
+     "a": "Venezuela",
+     "wrong": [
+      "Colombia",
+      "Philippines",
+      "Brazil"
+     ],
+     "why": "Beauty pageants are hugely popular."
+    },
+    {
+     "level": 2,
+     "q": "Which Christmas dish wraps meat in corn dough and banana leaves?",
+     "a": "Hallaca",
+     "wrong": [
+      "Tamal",
+      "Pastel",
+      "Bollo"
+     ],
+     "why": "Families make them together."
     }
    ]
   }

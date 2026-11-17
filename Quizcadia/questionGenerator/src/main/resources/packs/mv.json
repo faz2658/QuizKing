@@ -3,30 +3,9 @@
  "country": "MV",
  "topics": [
   {
-   "name": "Maldives: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of the Maldives?",
-     "a": "Malé",
-     "wrong": [
-      "Addu City",
-      "Fuvahmulah",
-      "Hulhumalé"
-     ],
-     "why": "It is one of the most crowded cities in the world."
-    },
-    {
-     "level": 1,
-     "q": "What is the official religion of the Maldives?",
-     "a": "Islam",
-     "wrong": [
-      "Buddhism",
-      "Hinduism",
-      "Christianity"
-     ],
-     "why": "It converted in 1153."
-    },
     {
      "level": 1,
      "q": "From which country did the Maldives gain independence in 1965?",
@@ -37,39 +16,6 @@
       "Netherlands"
      ],
      "why": "It had been a British protectorate."
-    },
-    {
-     "level": 1,
-     "q": "What is the currency of the Maldives?",
-     "a": "Maldivian rufiyaa",
-     "wrong": [
-      "Rupee",
-      "Taka",
-      "Dirham"
-     ],
-     "why": "Its code is MVR."
-    },
-    {
-     "level": 1,
-     "q": "Which threat does the Maldives face as the world's lowest country?",
-     "a": "Rising sea levels",
-     "wrong": [
-      "Earthquakes",
-      "Volcanoes",
-      "Desertification"
-     ],
-     "why": "Its average height is about 1.5 m above sea level."
-    },
-    {
-     "level": 1,
-     "q": "What language is spoken in the Maldives?",
-     "a": "Dhivehi",
-     "wrong": [
-      "Sinhala",
-      "Tamil",
-      "Urdu"
-     ],
-     "why": "It is written in Thaana script."
     },
     {
      "level": 1,
@@ -94,50 +40,6 @@
      "why": "He was Asia's longest-serving leader."
     },
     {
-     "level": 2,
-     "q": "Which President held a cabinet meeting underwater in 2009?",
-     "a": "Mohamed Nasheed",
-     "wrong": [
-      "Maumoon Abdul Gayoom",
-      "Abdulla Yameen",
-      "Mohamed Muizzu"
-     ],
-     "why": "It drew attention to climate change."
-    },
-    {
-     "level": 2,
-     "q": "Who became President of the Maldives in 2023?",
-     "a": "Mohamed Muizzu",
-     "wrong": [
-      "Ibrahim Solih",
-      "Mohamed Nasheed",
-      "Abdulla Yameen"
-     ],
-     "why": "He was mayor of Malé."
-    },
-    {
-     "level": 2,
-     "q": "Which Moroccan traveller was a judge in the Maldives in the 1300s?",
-     "a": "Ibn Battuta",
-     "wrong": [
-      "Marco Polo",
-      "Zheng He",
-      "Al-Idrisi"
-     ],
-     "why": "He married there."
-    },
-    {
-     "level": 2,
-     "q": "Which European power held Malé for 15 years in the 1500s?",
-     "a": "Portugal",
-     "wrong": [
-      "Netherlands",
-      "United Kingdom",
-      "France"
-     ],
-     "why": "Muhammad Thakurufaanu drove them out."
-    },
-    {
      "level": 3,
      "q": "Who is the national hero who drove out the Portuguese in 1573?",
      "a": "Muhammad Thakurufaanu",
@@ -150,17 +52,6 @@
     },
     {
      "level": 3,
-     "q": "What shells were the Maldives famous for exporting as money?",
-     "a": "Cowrie shells",
-     "wrong": [
-      "Pearl shells",
-      "Conch shells",
-      "Nautilus shells"
-     ],
-     "why": "They were used as money across Asia and Africa."
-    },
-    {
-     "level": 3,
      "q": "Which 1988 coup attempt was stopped with India's help?",
      "a": "1988 Maldives coup attempt",
      "wrong": [
@@ -169,12 +60,35 @@
       "Operation Island"
      ],
      "why": "India's mission was called Operation Cactus."
+    },
+    {
+     "level": 3,
+     "q": "Which bridge opened in 2018 links Malé to the airport island?",
+     "a": "Sinamalé Bridge",
+     "wrong": [
+      "Hulhulé Link",
+      "Friendship Bridge",
+      "Atoll Bridge"
+     ],
+     "why": "It was built with Chinese help."
     }
    ]
   },
   {
-   "name": "Maldives: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Maldives?",
+     "a": "Malé",
+     "wrong": [
+      "Addu City",
+      "Fuvahmulah",
+      "Hulhumalé"
+     ],
+     "why": "It is one of the most crowded cities in the world."
+    },
     {
      "level": 1,
      "q": "How many coral islands does the Maldives have?",
@@ -188,17 +102,6 @@
     },
     {
      "level": 1,
-     "q": "Which ring-shaped coral formations make up the Maldives?",
-     "a": "Atolls",
-     "wrong": [
-      "Fjords",
-      "Deltas",
-      "Mesas"
-     ],
-     "why": "There are 26 natural atolls."
-    },
-    {
-     "level": 1,
      "q": "Which ocean are the Maldives in?",
      "a": "Indian Ocean",
      "wrong": [
@@ -207,39 +110,6 @@
       "Arabian Gulf"
      ],
      "why": "They lie southwest of India."
-    },
-    {
-     "level": 1,
-     "q": "Which type of hotel room is famous in the Maldives?",
-     "a": "Overwater villa",
-     "wrong": [
-      "Treehouse",
-      "Ice hotel",
-      "Cave room"
-     ],
-     "why": "They stand on stilts over the lagoon."
-    },
-    {
-     "level": 1,
-     "q": "Which fish is the main catch of the Maldives?",
-     "a": "Tuna",
-     "wrong": [
-      "Salmon",
-      "Cod",
-      "Sardine"
-     ],
-     "why": "It is caught by pole and line."
-    },
-    {
-     "level": 1,
-     "q": "Which spicy tuna and coconut paste is eaten for breakfast?",
-     "a": "Mas huni",
-     "wrong": [
-      "Sambal",
-      "Chutney",
-      "Hummus"
-     ],
-     "why": "It is eaten with flat roti."
     },
     {
      "level": 1,
@@ -276,17 +146,6 @@
     },
     {
      "level": 2,
-     "q": "Which old mosque in Malé is built of coral stone?",
-     "a": "Old Friday Mosque (Hukuru Miskiy)",
-     "wrong": [
-      "Grand Friday Mosque",
-      "Sheikh Zayed Mosque",
-      "Blue Mosque"
-     ],
-     "why": "It was built in 1658."
-    },
-    {
-     "level": 2,
      "q": "Which artificial island was built to ease crowding in Malé?",
      "a": "Hulhumalé",
      "wrong": [
@@ -295,17 +154,6 @@
       "Thilafushi"
      ],
      "why": "It was built on reclaimed land."
-    },
-    {
-     "level": 2,
-     "q": "Which drum music and dance is a national tradition?",
-     "a": "Bodu beru",
-     "wrong": [
-      "Kathak",
-      "Bhangra",
-      "Tabla"
-     ],
-     "why": "It means 'big drum'."
     },
     {
      "level": 3,
@@ -328,17 +176,189 @@
       "Kulhudhuffushi"
      ],
      "why": "It is a single-island atoll."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which drum music and dance is a national tradition?",
+     "a": "Bodu beru",
+     "wrong": [
+      "Kathak",
+      "Bhangra",
+      "Tabla"
+     ],
+     "why": "It means 'big drum'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which President held a cabinet meeting underwater in 2009?",
+     "a": "Mohamed Nasheed",
+     "wrong": [
+      "Maumoon Abdul Gayoom",
+      "Abdulla Yameen",
+      "Mohamed Muizzu"
+     ],
+     "why": "It drew attention to climate change."
+    },
+    {
+     "level": 2,
+     "q": "Who became President of the Maldives in 2023?",
+     "a": "Mohamed Muizzu",
+     "wrong": [
+      "Ibrahim Solih",
+      "Mohamed Nasheed",
+      "Abdulla Yameen"
+     ],
+     "why": "He was mayor of Malé."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the official religion of the Maldives?",
+     "a": "Islam",
+     "wrong": [
+      "Buddhism",
+      "Hinduism",
+      "Christianity"
+     ],
+     "why": "It converted in 1153."
+    },
+    {
+     "level": 1,
+     "q": "What is the currency of the Maldives?",
+     "a": "Maldivian rufiyaa",
+     "wrong": [
+      "Rupee",
+      "Taka",
+      "Dirham"
+     ],
+     "why": "Its code is MVR."
+    },
+    {
+     "level": 1,
+     "q": "Which threat does the Maldives face as the world's lowest country?",
+     "a": "Rising sea levels",
+     "wrong": [
+      "Earthquakes",
+      "Volcanoes",
+      "Desertification"
+     ],
+     "why": "Its average height is about 1.5 m above sea level."
+    },
+    {
+     "level": 1,
+     "q": "What language is spoken in the Maldives?",
+     "a": "Dhivehi",
+     "wrong": [
+      "Sinhala",
+      "Tamil",
+      "Urdu"
+     ],
+     "why": "It is written in Thaana script."
+    },
+    {
+     "level": 2,
+     "q": "Which Moroccan traveller was a judge in the Maldives in the 1300s?",
+     "a": "Ibn Battuta",
+     "wrong": [
+      "Marco Polo",
+      "Zheng He",
+      "Al-Idrisi"
+     ],
+     "why": "He married there."
+    },
+    {
+     "level": 2,
+     "q": "Which European power held Malé for 15 years in the 1500s?",
+     "a": "Portugal",
+     "wrong": [
+      "Netherlands",
+      "United Kingdom",
+      "France"
+     ],
+     "why": "Muhammad Thakurufaanu drove them out."
     },
     {
      "level": 3,
-     "q": "Which bridge opened in 2018 links Malé to the airport island?",
-     "a": "Sinamalé Bridge",
+     "q": "What shells were the Maldives famous for exporting as money?",
+     "a": "Cowrie shells",
      "wrong": [
-      "Hulhulé Link",
-      "Friendship Bridge",
-      "Atoll Bridge"
+      "Pearl shells",
+      "Conch shells",
+      "Nautilus shells"
      ],
-     "why": "It was built with Chinese help."
+     "why": "They were used as money across Asia and Africa."
+    },
+    {
+     "level": 1,
+     "q": "Which ring-shaped coral formations make up the Maldives?",
+     "a": "Atolls",
+     "wrong": [
+      "Fjords",
+      "Deltas",
+      "Mesas"
+     ],
+     "why": "There are 26 natural atolls."
+    },
+    {
+     "level": 1,
+     "q": "Which type of hotel room is famous in the Maldives?",
+     "a": "Overwater villa",
+     "wrong": [
+      "Treehouse",
+      "Ice hotel",
+      "Cave room"
+     ],
+     "why": "They stand on stilts over the lagoon."
+    },
+    {
+     "level": 1,
+     "q": "Which fish is the main catch of the Maldives?",
+     "a": "Tuna",
+     "wrong": [
+      "Salmon",
+      "Cod",
+      "Sardine"
+     ],
+     "why": "It is caught by pole and line."
+    },
+    {
+     "level": 1,
+     "q": "Which spicy tuna and coconut paste is eaten for breakfast?",
+     "a": "Mas huni",
+     "wrong": [
+      "Sambal",
+      "Chutney",
+      "Hummus"
+     ],
+     "why": "It is eaten with flat roti."
+    },
+    {
+     "level": 2,
+     "q": "Which old mosque in Malé is built of coral stone?",
+     "a": "Old Friday Mosque (Hukuru Miskiy)",
+     "wrong": [
+      "Grand Friday Mosque",
+      "Sheikh Zayed Mosque",
+      "Blue Mosque"
+     ],
+     "why": "It was built in 1658."
     }
    ]
   }

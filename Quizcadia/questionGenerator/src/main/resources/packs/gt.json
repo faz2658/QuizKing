@@ -3,19 +3,9 @@
  "country": "GT",
  "topics": [
   {
-   "name": "Guatemala: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Guatemala?",
-     "a": "Guatemala City",
-     "wrong": [
-      "Antigua",
-      "Quetzaltenango",
-      "Flores"
-     ],
-     "why": "It is the largest city in Central America."
-    },
     {
      "level": 1,
      "q": "Which ancient civilisation built Tikal?",
@@ -48,17 +38,6 @@
       "Bernardo Arévalo"
      ],
      "why": "She campaigned for Indigenous rights."
-    },
-    {
-     "level": 1,
-     "q": "What is Guatemala's currency?",
-     "a": "Quetzal",
-     "wrong": [
-      "Lempira",
-      "Colón",
-      "Peso"
-     ],
-     "why": "It is named after a bird."
     },
     {
      "level": 1,
@@ -95,28 +74,6 @@
     },
     {
      "level": 2,
-     "q": "Which Guatemalan novelist won the 1967 Nobel Prize in Literature?",
-     "a": "Miguel Ángel Asturias",
-     "wrong": [
-      "Rigoberta Menchú",
-      "Augusto Monterroso",
-      "Gabriel García Márquez"
-     ],
-     "why": "He wrote 'El Señor Presidente'."
-    },
-    {
-     "level": 2,
-     "q": "Which K'iche' Maya book tells the creation story?",
-     "a": "Popol Vuh",
-     "wrong": [
-      "Chilam Balam",
-      "Codex Mendoza",
-      "Dresden Codex"
-     ],
-     "why": "It was written down in the 1500s."
-    },
-    {
-     "level": 2,
      "q": "Which Spanish conquistador conquered Guatemala in 1524?",
      "a": "Pedro de Alvarado",
      "wrong": [
@@ -125,17 +82,6 @@
       "Pedrarias Dávila"
      ],
      "why": "He was one of Cortés's captains."
-    },
-    {
-     "level": 2,
-     "q": "Who became President of Guatemala in 2024?",
-     "a": "Bernardo Arévalo",
-     "wrong": [
-      "Alejandro Giammattei",
-      "Jimmy Morales",
-      "Sandra Torres"
-     ],
-     "why": "He is the son of a former President."
     },
     {
      "level": 3,
@@ -147,17 +93,6 @@
       "Lempira"
      ],
      "why": "He is a national hero."
-    },
-    {
-     "level": 3,
-     "q": "Which Maya site is linked to the 'Star Wars' rebel base?",
-     "a": "Tikal",
-     "wrong": [
-      "Copán",
-      "Palenque",
-      "Chichén Itzá"
-     ],
-     "why": "It was filmed for the 1977 film."
     },
     {
      "level": 3,
@@ -173,8 +108,20 @@
    ]
   },
   {
-   "name": "Guatemala: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Guatemala?",
+     "a": "Guatemala City",
+     "wrong": [
+      "Antigua",
+      "Quetzaltenango",
+      "Flores"
+     ],
+     "why": "It is the largest city in Central America."
+    },
     {
      "level": 1,
      "q": "Which deep lake is surrounded by three volcanoes?",
@@ -188,17 +135,6 @@
     },
     {
      "level": 1,
-     "q": "Which colourful bird is Guatemala's national symbol?",
-     "a": "Resplendent quetzal",
-     "wrong": [
-      "Macaw",
-      "Toucan",
-      "Hummingbird"
-     ],
-     "why": "It is on the flag."
-    },
-    {
-     "level": 1,
      "q": "Which market town is famous for its huge Maya market?",
      "a": "Chichicastenango",
      "wrong": [
@@ -207,61 +143,6 @@
       "Flores"
      ],
      "why": "It is held on Thursdays and Sundays."
-    },
-    {
-     "level": 1,
-     "q": "Which crop is Guatemala famous for exporting?",
-     "a": "Coffee",
-     "wrong": [
-      "Wheat",
-      "Tea",
-      "Cotton"
-     ],
-     "why": "Antigua coffee is well known."
-    },
-    {
-     "level": 1,
-     "q": "Which colourful embroidered blouse do Maya women wear?",
-     "a": "Huipil",
-     "wrong": [
-      "Mola",
-      "Poncho",
-      "Sari"
-     ],
-     "why": "Each village has its own patterns."
-    },
-    {
-     "level": 1,
-     "q": "Which old US school buses are painted bright colours in Guatemala?",
-     "a": "Chicken buses",
-     "wrong": [
-      "Jeepneys",
-      "Chivas",
-      "Matatus"
-     ],
-     "why": "They run between towns."
-    },
-    {
-     "level": 1,
-     "q": "Which language family do many Guatemalans speak besides Spanish?",
-     "a": "Mayan languages",
-     "wrong": [
-      "Nahuatl",
-      "Quechua",
-      "Guaraní"
-     ],
-     "why": "There are over 20 of them."
-    },
-    {
-     "level": 2,
-     "q": "Which Semana Santa tradition fills Antigua's streets?",
-     "a": "Carpets of coloured sawdust (alfombras)",
-     "wrong": [
-      "Running of the bulls",
-      "Water fights",
-      "Lantern parades"
-     ],
-     "why": "Processions walk over them."
     },
     {
      "level": 2,
@@ -284,6 +165,185 @@
       "Atitlán"
      ],
      "why": "It is the highest point in Central America."
+    },
+    {
+     "level": 3,
+     "q": "Which island town sits on Lake Petén Itzá?",
+     "a": "Flores",
+     "wrong": [
+      "Panajachel",
+      "Livingston",
+      "Río Dulce"
+     ],
+     "why": "It is the gateway to Tikal."
+    },
+    {
+     "level": 3,
+     "q": "Which Garífuna town on the Caribbean is reached only by boat?",
+     "a": "Livingston",
+     "wrong": [
+      "Puerto Barrios",
+      "Flores",
+      "Monterrico"
+     ],
+     "why": "Garífuna culture is on UNESCO's list."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Maya site is linked to the 'Star Wars' rebel base?",
+     "a": "Tikal",
+     "wrong": [
+      "Copán",
+      "Palenque",
+      "Chichén Itzá"
+     ],
+     "why": "It was filmed for the 1977 film."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Guatemalan novelist won the 1967 Nobel Prize in Literature?",
+     "a": "Miguel Ángel Asturias",
+     "wrong": [
+      "Rigoberta Menchú",
+      "Augusto Monterroso",
+      "Gabriel García Márquez"
+     ],
+     "why": "He wrote 'El Señor Presidente'."
+    },
+    {
+     "level": 2,
+     "q": "Which K'iche' Maya book tells the creation story?",
+     "a": "Popol Vuh",
+     "wrong": [
+      "Chilam Balam",
+      "Codex Mendoza",
+      "Dresden Codex"
+     ],
+     "why": "It was written down in the 1500s."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who became President of Guatemala in 2024?",
+     "a": "Bernardo Arévalo",
+     "wrong": [
+      "Alejandro Giammattei",
+      "Jimmy Morales",
+      "Sandra Torres"
+     ],
+     "why": "He is the son of a former President."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which colourful embroidered blouse do Maya women wear?",
+     "a": "Huipil",
+     "wrong": [
+      "Mola",
+      "Poncho",
+      "Sari"
+     ],
+     "why": "Each village has its own patterns."
+    },
+    {
+     "level": 1,
+     "q": "Which old US school buses are painted bright colours in Guatemala?",
+     "a": "Chicken buses",
+     "wrong": [
+      "Jeepneys",
+      "Chivas",
+      "Matatus"
+     ],
+     "why": "They run between towns."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which colourful bird is Guatemala's national symbol?",
+     "a": "Resplendent quetzal",
+     "wrong": [
+      "Macaw",
+      "Toucan",
+      "Hummingbird"
+     ],
+     "why": "It is on the flag."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Guatemala's currency?",
+     "a": "Quetzal",
+     "wrong": [
+      "Lempira",
+      "Colón",
+      "Peso"
+     ],
+     "why": "It is named after a bird."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is Guatemala famous for exporting?",
+     "a": "Coffee",
+     "wrong": [
+      "Wheat",
+      "Tea",
+      "Cotton"
+     ],
+     "why": "Antigua coffee is well known."
+    },
+    {
+     "level": 1,
+     "q": "Which language family do many Guatemalans speak besides Spanish?",
+     "a": "Mayan languages",
+     "wrong": [
+      "Nahuatl",
+      "Quechua",
+      "Guaraní"
+     ],
+     "why": "There are over 20 of them."
+    },
+    {
+     "level": 2,
+     "q": "Which Semana Santa tradition fills Antigua's streets?",
+     "a": "Carpets of coloured sawdust (alfombras)",
+     "wrong": [
+      "Running of the bulls",
+      "Water fights",
+      "Lantern parades"
+     ],
+     "why": "Processions walk over them."
     },
     {
      "level": 2,
@@ -317,28 +377,6 @@
       "Rokkaku"
      ],
      "why": "Sumpango holds a famous festival."
-    },
-    {
-     "level": 3,
-     "q": "Which island town sits on Lake Petén Itzá?",
-     "a": "Flores",
-     "wrong": [
-      "Panajachel",
-      "Livingston",
-      "Río Dulce"
-     ],
-     "why": "It is the gateway to Tikal."
-    },
-    {
-     "level": 3,
-     "q": "Which Garífuna town on the Caribbean is reached only by boat?",
-     "a": "Livingston",
-     "wrong": [
-      "Puerto Barrios",
-      "Flores",
-      "Monterrico"
-     ],
-     "why": "Garífuna culture is on UNESCO's list."
     }
    ]
   }

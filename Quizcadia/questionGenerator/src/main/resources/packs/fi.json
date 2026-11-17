@@ -3,7 +3,8 @@
  "country": "FI",
  "topics": [
   {
-   "name": "Finland: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -40,39 +41,6 @@
     },
     {
      "level": 1,
-     "q": "Which Finnish national epic was compiled by Elias Lönnrot?",
-     "a": "Kalevala",
-     "wrong": [
-      "Edda",
-      "Beowulf",
-      "Nibelungenlied"
-     ],
-     "why": "It was published in 1835."
-    },
-    {
-     "level": 1,
-     "q": "Which Finnish company once made more mobile phones than anyone?",
-     "a": "Nokia",
-     "wrong": [
-      "Ericsson",
-      "Siemens",
-      "Rovio"
-     ],
-     "why": "It started as a paper mill in 1865."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Finland join NATO?",
-     "a": "2023",
-     "wrong": [
-      "2022",
-      "2024",
-      "1995"
-     ],
-     "why": "It applied after Russia invaded Ukraine."
-    },
-    {
-     "level": 1,
      "q": "In 1906 Finland was the first European country to give women what?",
      "a": "The right to vote and stand for parliament",
      "wrong": [
@@ -81,17 +49,6 @@
       "The right to attend university"
      ],
      "why": "Nineteen women were elected in 1907."
-    },
-    {
-     "level": 2,
-     "q": "Which marshal led Finland's army in the Second World War and later became President?",
-     "a": "Carl Gustaf Emil Mannerheim",
-     "wrong": [
-      "Urho Kekkonen",
-      "Risto Ryti",
-      "J. K. Paasikivi"
-     ],
-     "why": "The Mannerheim Line was named after him."
     },
     {
      "level": 2,
@@ -106,17 +63,6 @@
     },
     {
      "level": 2,
-     "q": "Which Finnish President won the 2008 Nobel Peace Prize?",
-     "a": "Martti Ahtisaari",
-     "wrong": [
-      "Tarja Halonen",
-      "Sauli Niinistö",
-      "Urho Kekkonen"
-     ],
-     "why": "He mediated peace deals around the world."
-    },
-    {
-     "level": 2,
      "q": "Who became Finland's first woman President, in 2000?",
      "a": "Tarja Halonen",
      "wrong": [
@@ -125,28 +71,6 @@
       "Mari Kiviniemi"
      ],
      "why": "She served two terms."
-    },
-    {
-     "level": 2,
-     "q": "Which composer wrote the patriotic piece 'Finlandia'?",
-     "a": "Jean Sibelius",
-     "wrong": [
-      "Edvard Grieg",
-      "Carl Nielsen",
-      "Kaija Saariaho"
-     ],
-     "why": "It was written in 1899."
-    },
-    {
-     "level": 3,
-     "q": "Which Finnish software engineer created the Linux kernel?",
-     "a": "Linus Torvalds",
-     "wrong": [
-      "Michael Widenius",
-      "Jarkko Oikarinen",
-      "Peter Vesterbacka"
-     ],
-     "why": "He released it in 1991."
     },
     {
      "level": 3,
@@ -158,7 +82,13 @@
       "Adolf Ehrnrooth"
      ],
      "why": "He wore white camouflage in the snow."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
     {
      "level": 3,
      "q": "Which sea fortress off Helsinki is a UNESCO site?",
@@ -169,12 +99,7 @@
       "Hämeenlinna"
      ],
      "why": "It was built by Sweden in the 1700s."
-    }
-   ]
-  },
-  {
-   "name": "Finland: Places & Culture",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is the capital of Finland?",
@@ -188,17 +113,6 @@
     },
     {
      "level": 1,
-     "q": "Which hot steam room is a Finnish tradition?",
-     "a": "Sauna",
-     "wrong": [
-      "Hammam",
-      "Onsen",
-      "Banya"
-     ],
-     "why": "Finland has about three million saunas."
-    },
-    {
-     "level": 1,
      "q": "Which Finnish region claims to be Santa Claus's home?",
      "a": "Lapland",
      "wrong": [
@@ -207,7 +121,170 @@
       "Ostrobothnia"
      ],
      "why": "Rovaniemi has a Santa Claus Village."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Finnish Formula One driver won the 2007 world title?",
+     "a": "Kimi Räikkönen",
+     "wrong": [
+      "Mika Häkkinen",
+      "Valtteri Bottas",
+      "Keke Rosberg"
+     ],
+     "why": "He drove for Ferrari."
     },
+    {
+     "level": 3,
+     "q": "Which Finnish runner won nine Olympic gold medals in the 1920s?",
+     "a": "Paavo Nurmi",
+     "wrong": [
+      "Lasse Virén",
+      "Hannes Kolehmainen",
+      "Ville Ritola"
+     ],
+     "why": "He was called the 'Flying Finn'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which composer wrote the patriotic piece 'Finlandia'?",
+     "a": "Jean Sibelius",
+     "wrong": [
+      "Edvard Grieg",
+      "Carl Nielsen",
+      "Kaija Saariaho"
+     ],
+     "why": "It was written in 1899."
+    },
+    {
+     "level": 2,
+     "q": "Which Finnish band won Eurovision 2006 dressed as monsters?",
+     "a": "Lordi",
+     "wrong": [
+      "Nightwish",
+      "HIM",
+      "The Rasmus"
+     ],
+     "why": "They sang 'Hard Rock Hallelujah'."
+    },
+    {
+     "level": 3,
+     "q": "Which castle on an island in Savonlinna hosts an opera festival?",
+     "a": "Olavinlinna",
+     "wrong": [
+      "Suomenlinna",
+      "Turku Castle",
+      "Häme Castle"
+     ],
+     "why": "It was built in 1475."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which white, round cartoon trolls were created by Tove Jansson?",
+     "a": "The Moomins",
+     "wrong": [
+      "The Smurfs",
+      "The Snorks",
+      "The Fraggles"
+     ],
+     "why": "They first appeared in 1945."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Finnish national epic was compiled by Elias Lönnrot?",
+     "a": "Kalevala",
+     "wrong": [
+      "Edda",
+      "Beowulf",
+      "Nibelungenlied"
+     ],
+     "why": "It was published in 1835."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Finland join NATO?",
+     "a": "2023",
+     "wrong": [
+      "2022",
+      "2024",
+      "1995"
+     ],
+     "why": "It applied after Russia invaded Ukraine."
+    },
+    {
+     "level": 2,
+     "q": "Which marshal led Finland's army in the Second World War and later became President?",
+     "a": "Carl Gustaf Emil Mannerheim",
+     "wrong": [
+      "Urho Kekkonen",
+      "Risto Ryti",
+      "J. K. Paasikivi"
+     ],
+     "why": "The Mannerheim Line was named after him."
+    },
+    {
+     "level": 2,
+     "q": "Which Finnish President won the 2008 Nobel Peace Prize?",
+     "a": "Martti Ahtisaari",
+     "wrong": [
+      "Tarja Halonen",
+      "Sauli Niinistö",
+      "Urho Kekkonen"
+     ],
+     "why": "He mediated peace deals around the world."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which architect designed the Paimio Sanatorium and famous stools?",
+     "a": "Alvar Aalto",
+     "wrong": [
+      "Eero Saarinen",
+      "Eliel Saarinen",
+      "Juha Leiviskä"
+     ],
+     "why": "His wife Aino also designed glassware."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
     {
      "level": 1,
      "q": "Which phone game with angry birds was made in Finland?",
@@ -218,6 +295,45 @@
       "Fruit Ninja"
      ],
      "why": "Rovio released it in 2009."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Finnish company once made more mobile phones than anyone?",
+     "a": "Nokia",
+     "wrong": [
+      "Ericsson",
+      "Siemens",
+      "Rovio"
+     ],
+     "why": "It started as a paper mill in 1865."
+    },
+    {
+     "level": 3,
+     "q": "Which Finnish software engineer created the Linux kernel?",
+     "a": "Linus Torvalds",
+     "wrong": [
+      "Michael Widenius",
+      "Jarkko Oikarinen",
+      "Peter Vesterbacka"
+     ],
+     "why": "He released it in 1991."
+    },
+    {
+     "level": 1,
+     "q": "Which hot steam room is a Finnish tradition?",
+     "a": "Sauna",
+     "wrong": [
+      "Hammam",
+      "Onsen",
+      "Banya"
+     ],
+     "why": "Finland has about three million saunas."
     },
     {
      "level": 1,
@@ -242,17 +358,6 @@
      "why": "It replaced the markka in 2002."
     },
     {
-     "level": 1,
-     "q": "Which white, round cartoon trolls were created by Tove Jansson?",
-     "a": "The Moomins",
-     "wrong": [
-      "The Smurfs",
-      "The Snorks",
-      "The Fraggles"
-     ],
-     "why": "They first appeared in 1945."
-    },
-    {
      "level": 2,
      "q": "Which Finnish word describes grit and determination?",
      "a": "Sisu",
@@ -262,17 +367,6 @@
       "Fika"
      ],
      "why": "It means never giving up."
-    },
-    {
-     "level": 2,
-     "q": "Which Finnish band won Eurovision 2006 dressed as monsters?",
-     "a": "Lordi",
-     "wrong": [
-      "Nightwish",
-      "HIM",
-      "The Rasmus"
-     ],
-     "why": "They sang 'Hard Rock Hallelujah'."
     },
     {
      "level": 2,
@@ -287,17 +381,6 @@
     },
     {
      "level": 2,
-     "q": "Which Finnish Formula One driver won the 2007 world title?",
-     "a": "Kimi Räikkönen",
-     "wrong": [
-      "Mika Häkkinen",
-      "Valtteri Bottas",
-      "Keke Rosberg"
-     ],
-     "why": "He drove for Ferrari."
-    },
-    {
-     "level": 2,
      "q": "Which Finnish rye pastry from Karelia is filled with rice porridge?",
      "a": "Karelian pie",
      "wrong": [
@@ -306,39 +389,6 @@
       "Kalakukko"
      ],
      "why": "It is often topped with egg butter."
-    },
-    {
-     "level": 3,
-     "q": "Which Finnish runner won nine Olympic gold medals in the 1920s?",
-     "a": "Paavo Nurmi",
-     "wrong": [
-      "Lasse Virén",
-      "Hannes Kolehmainen",
-      "Ville Ritola"
-     ],
-     "why": "He was called the 'Flying Finn'."
-    },
-    {
-     "level": 3,
-     "q": "Which architect designed the Paimio Sanatorium and famous stools?",
-     "a": "Alvar Aalto",
-     "wrong": [
-      "Eero Saarinen",
-      "Eliel Saarinen",
-      "Juha Leiviskä"
-     ],
-     "why": "His wife Aino also designed glassware."
-    },
-    {
-     "level": 3,
-     "q": "Which castle on an island in Savonlinna hosts an opera festival?",
-     "a": "Olavinlinna",
-     "wrong": [
-      "Suomenlinna",
-      "Turku Castle",
-      "Häme Castle"
-     ],
-     "why": "It was built in 1475."
     }
    ]
   }

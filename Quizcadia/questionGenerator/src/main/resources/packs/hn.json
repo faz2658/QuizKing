@@ -3,41 +3,9 @@
  "country": "HN",
  "topics": [
   {
-   "name": "Honduras: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Honduras?",
-     "a": "Tegucigalpa",
-     "wrong": [
-      "San Pedro Sula",
-      "La Ceiba",
-      "Comayagua"
-     ],
-     "why": "It is in a mountain valley."
-    },
-    {
-     "level": 1,
-     "q": "What is Honduras's currency?",
-     "a": "Lempira",
-     "wrong": [
-      "Quetzal",
-      "Colón",
-      "Córdoba"
-     ],
-     "why": "It is named after an Indigenous chief."
-    },
-    {
-     "level": 1,
-     "q": "Which Maya city in western Honduras is a UNESCO site?",
-     "a": "Copán",
-     "wrong": [
-      "Tikal",
-      "Palenque",
-      "Uxmal"
-     ],
-     "why": "It is famous for carved stelae."
-    },
     {
      "level": 1,
      "q": "From which country did Honduras gain independence in 1821?",
@@ -48,17 +16,6 @@
       "United Kingdom"
      ],
      "why": "It joined the Central American federation."
-    },
-    {
-     "level": 1,
-     "q": "Which crop led to the phrase 'banana republic' about Honduras?",
-     "a": "Bananas",
-     "wrong": [
-      "Coffee",
-      "Sugar",
-      "Tobacco"
-     ],
-     "why": "American fruit companies held great power."
     },
     {
      "level": 1,
@@ -84,50 +41,6 @@
     },
     {
      "level": 2,
-     "q": "Which Lenca chief fought the Spanish in the 1530s?",
-     "a": "Lempira",
-     "wrong": [
-      "Tecún Umán",
-      "Atlacatl",
-      "Nicarao"
-     ],
-     "why": "The currency is named after him."
-    },
-    {
-     "level": 2,
-     "q": "Which 1969 conflict with El Salvador followed World Cup qualifiers?",
-     "a": "Football War",
-     "wrong": [
-      "Banana War",
-      "Soccer Crisis",
-      "Hundred Years War"
-     ],
-     "why": "It lasted about 100 hours."
-    },
-    {
-     "level": 2,
-     "q": "Which Central American leader born in Tegucigalpa led the federation?",
-     "a": "Francisco Morazán",
-     "wrong": [
-      "José Cecilio del Valle",
-      "Rafael Carrera",
-      "Gerardo Barrios"
-     ],
-     "why": "He fought to keep Central America united."
-    },
-    {
-     "level": 2,
-     "q": "Which President was removed in a 2009 coup?",
-     "a": "Manuel Zelaya",
-     "wrong": [
-      "Juan Orlando Hernández",
-      "Porfirio Lobo",
-      "Ricardo Maduro"
-     ],
-     "why": "He was flown out in his pyjamas."
-    },
-    {
-     "level": 2,
      "q": "Which Honduran environmental activist was killed in 2016?",
      "a": "Berta Cáceres",
      "wrong": [
@@ -136,28 +49,6 @@
       "Wangari Maathai"
      ],
      "why": "She opposed a dam on the Gualcarque River."
-    },
-    {
-     "level": 3,
-     "q": "Which former President was convicted of drug trafficking in New York in 2024?",
-     "a": "Juan Orlando Hernández",
-     "wrong": [
-      "Manuel Zelaya",
-      "Porfirio Lobo",
-      "Roberto Micheletti"
-     ],
-     "why": "He was sentenced to 45 years."
-    },
-    {
-     "level": 3,
-     "q": "Which old capital has one of the oldest working clocks in the Americas?",
-     "a": "Comayagua",
-     "wrong": [
-      "Gracias",
-      "Trujillo",
-      "Santa Rosa de Copán"
-     ],
-     "why": "The cathedral clock came from Spain."
     },
     {
      "level": 3,
@@ -173,8 +64,42 @@
    ]
   },
   {
-   "name": "Honduras: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Honduras?",
+     "a": "Tegucigalpa",
+     "wrong": [
+      "San Pedro Sula",
+      "La Ceiba",
+      "Comayagua"
+     ],
+     "why": "It is in a mountain valley."
+    },
+    {
+     "level": 1,
+     "q": "Which Maya city in western Honduras is a UNESCO site?",
+     "a": "Copán",
+     "wrong": [
+      "Tikal",
+      "Palenque",
+      "Uxmal"
+     ],
+     "why": "It is famous for carved stelae."
+    },
+    {
+     "level": 3,
+     "q": "Which old capital has one of the oldest working clocks in the Americas?",
+     "a": "Comayagua",
+     "wrong": [
+      "Gracias",
+      "Trujillo",
+      "Santa Rosa de Copán"
+     ],
+     "why": "The cathedral clock came from Spain."
+    },
     {
      "level": 1,
      "q": "Which island is the most famous of the Bay Islands?",
@@ -185,28 +110,6 @@
       "Ometepe"
      ],
      "why": "It is close to the Mesoamerican Reef."
-    },
-    {
-     "level": 1,
-     "q": "Which island is known for cheap diving and whale sharks?",
-     "a": "Utila",
-     "wrong": [
-      "Roatán",
-      "Guanaja",
-      "Cayos Cochinos"
-     ],
-     "why": "Many people learn to dive there."
-    },
-    {
-     "level": 1,
-     "q": "Which folded flour tortilla with beans and cream is a favourite?",
-     "a": "Baleada",
-     "wrong": [
-      "Pupusa",
-      "Taco",
-      "Arepa"
-     ],
-     "why": "It is the classic Honduran snack."
     },
     {
      "level": 1,
@@ -242,28 +145,6 @@
      "why": "The south has a short Pacific shore."
     },
     {
-     "level": 1,
-     "q": "Which national bird is a large colourful parrot?",
-     "a": "Scarlet macaw",
-     "wrong": [
-      "Quetzal",
-      "Toucan",
-      "Hummingbird"
-     ],
-     "why": "Copán has a macaw park."
-    },
-    {
-     "level": 2,
-     "q": "What strange 'rain of fish' happens in Yoro each year?",
-     "a": "Lluvia de Peces",
-     "wrong": [
-      "Fish Rain Fiesta",
-      "Raining Sardines",
-      "Sky Fishing"
-     ],
-     "why": "Small fish appear after storms."
-    },
-    {
      "level": 2,
      "q": "Which legendary lost city was searched for in the Mosquitia?",
      "a": "Ciudad Blanca",
@@ -297,6 +178,34 @@
      "why": "It hosts a big carnival in May."
     },
     {
+     "level": 3,
+     "q": "Which large lake near San Pedro Sula is Honduras's biggest?",
+     "a": "Lake Yojoa",
+     "wrong": [
+      "Lake Atitlán",
+      "Lake Nicaragua",
+      "Lake Izabal"
+     ],
+     "why": "It is famous for birdwatching."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which 1969 conflict with El Salvador followed World Cup qualifiers?",
+     "a": "Football War",
+     "wrong": [
+      "Banana War",
+      "Soccer Crisis",
+      "Hundred Years War"
+     ],
+     "why": "It lasted about 100 hours."
+    },
+    {
      "level": 2,
      "q": "Which Honduran footballer starred for Wigan and Tottenham?",
      "a": "Wilson Palacios",
@@ -306,18 +215,13 @@
       "Emilio Izaguirre"
      ],
      "why": "He later played for Stoke City."
-    },
-    {
-     "level": 3,
-     "q": "What are the stone carvings at Copán's famous staircase called?",
-     "a": "Hieroglyphic Stairway",
-     "wrong": [
-      "Temple of Inscriptions",
-      "Pyramid of the Sun",
-      "El Castillo"
-     ],
-     "why": "It holds the longest Maya text."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
      "level": 3,
      "q": "Which Honduran author wrote 'Prisión verde'?",
@@ -328,17 +232,151 @@
       "Froylán Turcios"
      ],
      "why": "It is about banana workers."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which President was removed in a 2009 coup?",
+     "a": "Manuel Zelaya",
+     "wrong": [
+      "Juan Orlando Hernández",
+      "Porfirio Lobo",
+      "Ricardo Maduro"
+     ],
+     "why": "He was flown out in his pyjamas."
     },
     {
      "level": 3,
-     "q": "Which large lake near San Pedro Sula is Honduras's biggest?",
-     "a": "Lake Yojoa",
+     "q": "Which former President was convicted of drug trafficking in New York in 2024?",
+     "a": "Juan Orlando Hernández",
      "wrong": [
-      "Lake Atitlán",
-      "Lake Nicaragua",
-      "Lake Izabal"
+      "Manuel Zelaya",
+      "Porfirio Lobo",
+      "Roberto Micheletti"
      ],
-     "why": "It is famous for birdwatching."
+     "why": "He was sentenced to 45 years."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "What are the stone carvings at Copán's famous staircase called?",
+     "a": "Hieroglyphic Stairway",
+     "wrong": [
+      "Temple of Inscriptions",
+      "Pyramid of the Sun",
+      "El Castillo"
+     ],
+     "why": "It holds the longest Maya text."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which island is known for cheap diving and whale sharks?",
+     "a": "Utila",
+     "wrong": [
+      "Roatán",
+      "Guanaja",
+      "Cayos Cochinos"
+     ],
+     "why": "Many people learn to dive there."
+    },
+    {
+     "level": 1,
+     "q": "Which national bird is a large colourful parrot?",
+     "a": "Scarlet macaw",
+     "wrong": [
+      "Quetzal",
+      "Toucan",
+      "Hummingbird"
+     ],
+     "why": "Copán has a macaw park."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Honduras's currency?",
+     "a": "Lempira",
+     "wrong": [
+      "Quetzal",
+      "Colón",
+      "Córdoba"
+     ],
+     "why": "It is named after an Indigenous chief."
+    },
+    {
+     "level": 1,
+     "q": "Which crop led to the phrase 'banana republic' about Honduras?",
+     "a": "Bananas",
+     "wrong": [
+      "Coffee",
+      "Sugar",
+      "Tobacco"
+     ],
+     "why": "American fruit companies held great power."
+    },
+    {
+     "level": 2,
+     "q": "Which Lenca chief fought the Spanish in the 1530s?",
+     "a": "Lempira",
+     "wrong": [
+      "Tecún Umán",
+      "Atlacatl",
+      "Nicarao"
+     ],
+     "why": "The currency is named after him."
+    },
+    {
+     "level": 2,
+     "q": "Which Central American leader born in Tegucigalpa led the federation?",
+     "a": "Francisco Morazán",
+     "wrong": [
+      "José Cecilio del Valle",
+      "Rafael Carrera",
+      "Gerardo Barrios"
+     ],
+     "why": "He fought to keep Central America united."
+    },
+    {
+     "level": 1,
+     "q": "Which folded flour tortilla with beans and cream is a favourite?",
+     "a": "Baleada",
+     "wrong": [
+      "Pupusa",
+      "Taco",
+      "Arepa"
+     ],
+     "why": "It is the classic Honduran snack."
+    },
+    {
+     "level": 2,
+     "q": "What strange 'rain of fish' happens in Yoro each year?",
+     "a": "Lluvia de Peces",
+     "wrong": [
+      "Fish Rain Fiesta",
+      "Raining Sardines",
+      "Sky Fishing"
+     ],
+     "why": "Small fish appear after storms."
     }
    ]
   }

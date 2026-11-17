@@ -3,19 +3,9 @@
  "country": "AT",
  "topics": [
   {
-   "name": "Austria: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which composer was born in Salzburg in 1756?",
-     "a": "Wolfgang Amadeus Mozart",
-     "wrong": [
-      "Joseph Haydn",
-      "Franz Schubert",
-      "Johann Strauss II"
-     ],
-     "why": "He wrote 'The Magic Flute'."
-    },
     {
      "level": 1,
      "q": "Which royal family ruled Austria for over 600 years?",
@@ -51,17 +41,6 @@
     },
     {
      "level": 1,
-     "q": "Which empress, nicknamed 'Sisi', was married to Franz Joseph?",
-     "a": "Elisabeth",
-     "wrong": [
-      "Maria Theresa",
-      "Zita",
-      "Marie Antoinette"
-     ],
-     "why": "She was assassinated in 1898."
-    },
-    {
-     "level": 1,
      "q": "Which empress ruled the Habsburg lands from 1740 to 1780?",
      "a": "Maria Theresa",
      "wrong": [
@@ -70,17 +49,6 @@
       "Zita"
      ],
      "why": "She had 16 children."
-    },
-    {
-     "level": 1,
-     "q": "Which Austrian-born actor became Governor of California?",
-     "a": "Arnold Schwarzenegger",
-     "wrong": [
-      "Christoph Waltz",
-      "Klaus Maria Brandauer",
-      "Maximilian Schell"
-     ],
-     "why": "He was born near Graz."
     },
     {
      "level": 2,
@@ -106,28 +74,6 @@
     },
     {
      "level": 2,
-     "q": "Which physicist imagined a cat both alive and dead?",
-     "a": "Erwin Schrödinger",
-     "wrong": [
-      "Wolfgang Pauli",
-      "Lise Meitner",
-      "Ludwig Boltzmann"
-     ],
-     "why": "He won the Nobel Prize in 1933."
-    },
-    {
-     "level": 2,
-     "q": "In which year did Austria join the European Union?",
-     "a": "1995",
-     "wrong": [
-      "1957",
-      "1973",
-      "2004"
-     ],
-     "why": "Sweden and Finland joined at the same time."
-    },
-    {
-     "level": 2,
      "q": "Which 1815 congress in Vienna redrew Europe's map after Napoleon?",
      "a": "Congress of Vienna",
      "wrong": [
@@ -150,17 +96,6 @@
     },
     {
      "level": 3,
-     "q": "Which Austrian chancellor led the Congress of Vienna?",
-     "a": "Klemens von Metternich",
-     "wrong": [
-      "Otto von Bismarck",
-      "Engelbert Dollfuss",
-      "Leopold Figl"
-     ],
-     "why": "He dominated Europe until 1848."
-    },
-    {
-     "level": 3,
      "q": "In which year did Austria regain full independence after the war?",
      "a": "1955",
      "wrong": [
@@ -169,11 +104,23 @@
       "1961"
      ],
      "why": "The State Treaty was signed at Belvedere Palace."
+    },
+    {
+     "level": 3,
+     "q": "Which shredded pancake dessert is named after an emperor?",
+     "a": "Kaiserschmarrn",
+     "wrong": [
+      "Apfelstrudel",
+      "Sachertorte",
+      "Topfenstrudel"
+     ],
+     "why": "Franz Joseph is said to have loved it."
     }
    ]
   },
   {
-   "name": "Austria: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -188,25 +135,81 @@
     },
     {
      "level": 1,
-     "q": "Which film musical was set in Salzburg?",
-     "a": "The Sound of Music",
+     "q": "Which river flows through Vienna?",
+     "a": "Danube",
      "wrong": [
-      "Mary Poppins",
-      "My Fair Lady",
-      "Cabaret"
+      "Rhine",
+      "Inn",
+      "Elbe"
      ],
-     "why": "It tells the story of the von Trapp family."
+     "why": "It flows on to Budapest."
     },
     {
-     "level": 1,
-     "q": "Which breaded veal cutlet is Austria's national dish?",
-     "a": "Wiener Schnitzel",
+     "level": 2,
+     "q": "Which village on a lake is one of the world's most photographed?",
+     "a": "Hallstatt",
      "wrong": [
-      "Tafelspitz",
-      "Goulash",
-      "Kaiserschmarrn"
+      "Zell am See",
+      "St. Wolfgang",
+      "Bad Ischl"
      ],
-     "why": "Wiener means 'from Vienna'."
+     "why": "A copy was built in China."
+    },
+    {
+     "level": 3,
+     "q": "What is Austria's highest mountain?",
+     "a": "Grossglockner",
+     "wrong": [
+      "Wildspitze",
+      "Dachstein",
+      "Zugspitze"
+     ],
+     "why": "A famous alpine road climbs near it."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Tyrolean city hosted two Winter Olympics?",
+     "a": "Innsbruck",
+     "wrong": [
+      "Salzburg",
+      "Kitzbühel",
+      "St. Anton"
+     ],
+     "why": "It hosted in 1964 and 1976."
+    },
+    {
+     "level": 3,
+     "q": "Which Austrian racing driver won three Formula One titles?",
+     "a": "Niki Lauda",
+     "wrong": [
+      "Jochen Rindt",
+      "Gerhard Berger",
+      "Alexander Wurz"
+     ],
+     "why": "He returned weeks after a terrible crash in 1976."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which composer was born in Salzburg in 1756?",
+     "a": "Wolfgang Amadeus Mozart",
+     "wrong": [
+      "Joseph Haydn",
+      "Franz Schubert",
+      "Johann Strauss II"
+     ],
+     "why": "He wrote 'The Magic Flute'."
     },
     {
      "level": 1,
@@ -218,17 +221,118 @@
       "Anton Bruckner"
      ],
      "why": "It is played every New Year's Day."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Austrian-born actor became Governor of California?",
+     "a": "Arnold Schwarzenegger",
+     "wrong": [
+      "Christoph Waltz",
+      "Klaus Maria Brandauer",
+      "Maximilian Schell"
+     ],
+     "why": "He was born near Graz."
     },
     {
      "level": 1,
-     "q": "Which river flows through Vienna?",
-     "a": "Danube",
+     "q": "Which film musical was set in Salzburg?",
+     "a": "The Sound of Music",
      "wrong": [
-      "Rhine",
-      "Inn",
-      "Elbe"
+      "Mary Poppins",
+      "My Fair Lady",
+      "Cabaret"
      ],
-     "why": "It flows on to Budapest."
+     "why": "It tells the story of the von Trapp family."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Austrian chancellor led the Congress of Vienna?",
+     "a": "Klemens von Metternich",
+     "wrong": [
+      "Otto von Bismarck",
+      "Engelbert Dollfuss",
+      "Leopold Figl"
+     ],
+     "why": "He dominated Europe until 1848."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which painter made 'The Kiss' with gold leaf?",
+     "a": "Gustav Klimt",
+     "wrong": [
+      "Egon Schiele",
+      "Oskar Kokoschka",
+      "Friedensreich Hundertwasser"
+     ],
+     "why": "It hangs in the Belvedere."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which empress, nicknamed 'Sisi', was married to Franz Joseph?",
+     "a": "Elisabeth",
+     "wrong": [
+      "Maria Theresa",
+      "Zita",
+      "Marie Antoinette"
+     ],
+     "why": "She was assassinated in 1898."
+    },
+    {
+     "level": 2,
+     "q": "Which physicist imagined a cat both alive and dead?",
+     "a": "Erwin Schrödinger",
+     "wrong": [
+      "Wolfgang Pauli",
+      "Lise Meitner",
+      "Ludwig Boltzmann"
+     ],
+     "why": "He won the Nobel Prize in 1933."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Austria join the European Union?",
+     "a": "1995",
+     "wrong": [
+      "1957",
+      "1973",
+      "2004"
+     ],
+     "why": "Sweden and Finland joined at the same time."
+    },
+    {
+     "level": 1,
+     "q": "Which breaded veal cutlet is Austria's national dish?",
+     "a": "Wiener Schnitzel",
+     "wrong": [
+      "Tafelspitz",
+      "Goulash",
+      "Kaiserschmarrn"
+     ],
+     "why": "Wiener means 'from Vienna'."
     },
     {
      "level": 1,
@@ -265,39 +369,6 @@
     },
     {
      "level": 2,
-     "q": "Which Tyrolean city hosted two Winter Olympics?",
-     "a": "Innsbruck",
-     "wrong": [
-      "Salzburg",
-      "Kitzbühel",
-      "St. Anton"
-     ],
-     "why": "It hosted in 1964 and 1976."
-    },
-    {
-     "level": 2,
-     "q": "Which painter made 'The Kiss' with gold leaf?",
-     "a": "Gustav Klimt",
-     "wrong": [
-      "Egon Schiele",
-      "Oskar Kokoschka",
-      "Friedensreich Hundertwasser"
-     ],
-     "why": "It hangs in the Belvedere."
-    },
-    {
-     "level": 2,
-     "q": "Which village on a lake is one of the world's most photographed?",
-     "a": "Hallstatt",
-     "wrong": [
-      "Zell am See",
-      "St. Wolfgang",
-      "Bad Ischl"
-     ],
-     "why": "A copy was built in China."
-    },
-    {
-     "level": 2,
      "q": "Which Austrian drinks company makes an energy drink with a bull logo?",
      "a": "Red Bull",
      "wrong": [
@@ -306,39 +377,6 @@
       "Almdudler"
      ],
      "why": "It was founded in 1987."
-    },
-    {
-     "level": 3,
-     "q": "Which shredded pancake dessert is named after an emperor?",
-     "a": "Kaiserschmarrn",
-     "wrong": [
-      "Apfelstrudel",
-      "Sachertorte",
-      "Topfenstrudel"
-     ],
-     "why": "Franz Joseph is said to have loved it."
-    },
-    {
-     "level": 3,
-     "q": "What is Austria's highest mountain?",
-     "a": "Grossglockner",
-     "wrong": [
-      "Wildspitze",
-      "Dachstein",
-      "Zugspitze"
-     ],
-     "why": "A famous alpine road climbs near it."
-    },
-    {
-     "level": 3,
-     "q": "Which Austrian racing driver won three Formula One titles?",
-     "a": "Niki Lauda",
-     "wrong": [
-      "Jochen Rindt",
-      "Gerhard Berger",
-      "Alexander Wurz"
-     ],
-     "why": "He returned weeks after a terrible crash in 1976."
     }
    ]
   }

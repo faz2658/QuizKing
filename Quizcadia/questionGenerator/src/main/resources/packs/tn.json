@@ -3,7 +3,8 @@
  "country": "TN",
  "topics": [
   {
-   "name": "Tunisia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -117,17 +118,6 @@
     },
     {
      "level": 2,
-     "q": "Which Roman amphitheatre in El Jem is one of the largest ever built?",
-     "a": "Amphitheatre of El Jem",
-     "wrong": [
-      "Colosseum of Sousse",
-      "Arena of Dougga",
-      "Theatre of Carthage"
-     ],
-     "why": "It held about 35,000 people."
-    },
-    {
-     "level": 2,
      "q": "Which street vendor's act set off the 2010 revolution?",
      "a": "Mohamed Bouazizi",
      "wrong": [
@@ -147,18 +137,13 @@
       "Gabès"
      ],
      "why": "It was named after the caliph al-Mahdi."
-    },
-    {
-     "level": 3,
-     "q": "Which Tunis-born scholar wrote the 'Muqaddimah'?",
-     "a": "Ibn Khaldun",
-     "wrong": [
-      "Ibn Battuta",
-      "Al-Idrisi",
-      "Ibn Rushd"
-     ],
-     "why": "He is seen as a founder of sociology."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
     {
      "level": 3,
      "q": "Which Roman town with a hilltop Capitol is a UNESCO site?",
@@ -169,12 +154,7 @@
       "Utica"
      ],
      "why": "It is well preserved."
-    }
-   ]
-  },
-  {
-   "name": "Tunisia: Places & Culture",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is the capital of Tunisia?",
@@ -199,28 +179,6 @@
     },
     {
      "level": 1,
-     "q": "Which spicy chilli paste is a Tunisian staple?",
-     "a": "Harissa",
-     "wrong": [
-      "Chermoula",
-      "Zhug",
-      "Ras el hanout"
-     ],
-     "why": "It is on UNESCO's heritage list."
-    },
-    {
-     "level": 1,
-     "q": "What is Tunisia's currency?",
-     "a": "Tunisian dinar",
-     "wrong": [
-      "Dirham",
-      "Euro",
-      "Franc"
-     ],
-     "why": "Its code is TND."
-    },
-    {
-     "level": 1,
      "q": "Which large island in the south is a popular holiday spot?",
      "a": "Djerba",
      "wrong": [
@@ -229,17 +187,6 @@
       "Sicily"
      ],
      "why": "It has one of the oldest synagogues in Africa."
-    },
-    {
-     "level": 1,
-     "q": "Which film series used southern Tunisia as the planet Tatooine?",
-     "a": "Star Wars",
-     "wrong": [
-      "Dune",
-      "Indiana Jones",
-      "The Mummy"
-     ],
-     "why": "The village of Matmata hosted Luke's home."
     },
     {
      "level": 1,
@@ -254,17 +201,6 @@
     },
     {
      "level": 2,
-     "q": "Which egg-in-pastry snack is a Tunisian favourite?",
-     "a": "Brik",
-     "wrong": [
-      "Börek",
-      "Samosa",
-      "Empanada"
-     ],
-     "why": "It is fried and often filled with tuna."
-    },
-    {
-     "level": 2,
      "q": "Which salt lake in the south is the largest in the Sahara?",
      "a": "Chott el Djerid",
      "wrong": [
@@ -274,6 +210,23 @@
      ],
      "why": "Mirages often appear over it."
     },
+    {
+     "level": 3,
+     "q": "Which national park around a lake is a UNESCO site for birds?",
+     "a": "Ichkeul",
+     "wrong": [
+      "Bou Hedma",
+      "Chambi",
+      "Zembra"
+     ],
+     "why": "Hundreds of thousands of birds winter there."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 2,
      "q": "Which tennis player became the first Arab woman to reach a Grand Slam final?",
@@ -295,7 +248,13 @@
       "Habiba Ghribi"
      ],
      "why": "He also won 10 km open-water gold in 2012."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
     {
      "level": 2,
      "q": "Which musical tradition came from Andalusia to Tunisia?",
@@ -306,6 +265,107 @@
       "Mizwed"
      ],
      "why": "It is played with oud and violin."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which film series used southern Tunisia as the planet Tatooine?",
+     "a": "Star Wars",
+     "wrong": [
+      "Dune",
+      "Indiana Jones",
+      "The Mummy"
+     ],
+     "why": "The village of Matmata hosted Luke's home."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Tunis-born scholar wrote the 'Muqaddimah'?",
+     "a": "Ibn Khaldun",
+     "wrong": [
+      "Ibn Battuta",
+      "Al-Idrisi",
+      "Ibn Rushd"
+     ],
+     "why": "He is seen as a founder of sociology."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which underground homes in Matmata were carved by Berbers?",
+     "a": "Troglodyte pit houses",
+     "wrong": [
+      "Rock temples",
+      "Salt caves",
+      "Kasbah towers"
+     ],
+     "why": "Rooms open onto a deep circular courtyard."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Roman amphitheatre in El Jem is one of the largest ever built?",
+     "a": "Amphitheatre of El Jem",
+     "wrong": [
+      "Colosseum of Sousse",
+      "Arena of Dougga",
+      "Theatre of Carthage"
+     ],
+     "why": "It held about 35,000 people."
+    },
+    {
+     "level": 1,
+     "q": "Which spicy chilli paste is a Tunisian staple?",
+     "a": "Harissa",
+     "wrong": [
+      "Chermoula",
+      "Zhug",
+      "Ras el hanout"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "What is Tunisia's currency?",
+     "a": "Tunisian dinar",
+     "wrong": [
+      "Dirham",
+      "Euro",
+      "Franc"
+     ],
+     "why": "Its code is TND."
+    },
+    {
+     "level": 2,
+     "q": "Which egg-in-pastry snack is a Tunisian favourite?",
+     "a": "Brik",
+     "wrong": [
+      "Börek",
+      "Samosa",
+      "Empanada"
+     ],
+     "why": "It is fried and often filled with tuna."
     },
     {
      "level": 3,
@@ -317,28 +377,6 @@
       "Zlabia"
      ],
      "why": "They are fried and soaked in syrup."
-    },
-    {
-     "level": 3,
-     "q": "Which national park around a lake is a UNESCO site for birds?",
-     "a": "Ichkeul",
-     "wrong": [
-      "Bou Hedma",
-      "Chambi",
-      "Zembra"
-     ],
-     "why": "Hundreds of thousands of birds winter there."
-    },
-    {
-     "level": 3,
-     "q": "Which underground homes in Matmata were carved by Berbers?",
-     "a": "Troglodyte pit houses",
-     "wrong": [
-      "Rock temples",
-      "Salt caves",
-      "Kasbah towers"
-     ],
-     "why": "Rooms open onto a deep circular courtyard."
     }
    ]
   }

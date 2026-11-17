@@ -3,19 +3,9 @@
  "country": "CZ",
  "topics": [
   {
-   "name": "Czechia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "In which year did Czechoslovakia split into two countries?",
-     "a": "1993",
-     "wrong": [
-      "1989",
-      "1968",
-      "1991"
-     ],
-     "why": "The 'Velvet Divorce' was peaceful."
-    },
     {
      "level": 1,
      "q": "What was the peaceful 1989 revolution that ended communist rule called?",
@@ -26,17 +16,6 @@
       "Singing Revolution"
      ],
      "why": "Students and artists led the protests."
-    },
-    {
-     "level": 1,
-     "q": "Which playwright became President after the 1989 revolution?",
-     "a": "Václav Havel",
-     "wrong": [
-      "Alexander Dubček",
-      "Václav Klaus",
-      "Tomáš Masaryk"
-     ],
-     "why": "Prague's airport is named after him."
     },
     {
      "level": 1,
@@ -59,17 +38,6 @@
       "Klement Gottwald"
      ],
      "why": "He is called the father of the nation."
-    },
-    {
-     "level": 1,
-     "q": "Which saint and duke of Bohemia is honoured in a Christmas carol?",
-     "a": "Wenceslas",
-     "wrong": [
-      "Vitus",
-      "Adalbert",
-      "Ludmila"
-     ],
-     "why": "He is the 'Good King Wenceslas'."
     },
     {
      "level": 1,
@@ -127,17 +95,6 @@
      "why": "A square in Prague is named after him."
     },
     {
-     "level": 2,
-     "q": "Which emperor made Prague a centre of art and alchemy around 1600?",
-     "a": "Rudolf II",
-     "wrong": [
-      "Charles IV",
-      "Ferdinand I",
-      "Maximilian II"
-     ],
-     "why": "Astronomers Tycho Brahe and Kepler worked for him."
-    },
-    {
      "level": 3,
      "q": "Which 1620 battle ended Bohemian independence for centuries?",
      "a": "Battle of White Mountain",
@@ -169,11 +126,23 @@
       "Josef Ressel"
      ],
      "why": "He worked with pea plants."
+    },
+    {
+     "level": 1,
+     "q": "Which medieval clock on Prague's Old Town Hall shows moving apostles?",
+     "a": "Astronomical Clock (Orloj)",
+     "wrong": [
+      "Big Ben",
+      "Zytglogge",
+      "Strasbourg Clock"
+     ],
+     "why": "It was first installed in 1410."
     }
    ]
   },
   {
-   "name": "Czechia: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -199,17 +168,6 @@
     },
     {
      "level": 1,
-     "q": "Which medieval bridge in Prague is lined with statues?",
-     "a": "Charles Bridge",
-     "wrong": [
-      "Wenceslas Bridge",
-      "Golden Bridge",
-      "Vltava Bridge"
-     ],
-     "why": "Building began in 1357."
-    },
-    {
-     "level": 1,
      "q": "Which river flows through Prague?",
      "a": "Vltava",
      "wrong": [
@@ -218,28 +176,85 @@
       "Morava"
      ],
      "why": "Smetana wrote a famous piece about it."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which runner, the 'Czech Locomotive', won three golds at Helsinki 1952?",
+     "a": "Emil Zátopek",
+     "wrong": [
+      "Jan Železný",
+      "Roman Šebrle",
+      "Dana Zátopková"
+     ],
+     "why": "He won the 5,000 m, 10,000 m and marathon."
     },
     {
-     "level": 1,
-     "q": "What is Czechia's currency?",
-     "a": "Czech koruna",
+     "level": 3,
+     "q": "Which tennis player born in Prague won 18 Grand Slam singles titles?",
+     "a": "Martina Navratilova",
      "wrong": [
-      "Euro",
-      "Złoty",
-      "Forint"
+      "Petra Kvitová",
+      "Hana Mandlíková",
+      "Jana Novotná"
      ],
-     "why": "It means 'crown'."
-    },
+     "why": "She won Wimbledon nine times."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which composer wrote the 'New World Symphony'?",
+     "a": "Antonín Dvořák",
+     "wrong": [
+      "Bedřich Smetana",
+      "Leoš Janáček",
+      "Bohuslav Martinů"
+     ],
+     "why": "He wrote it in the USA in 1893."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which spa town hosts an international film festival?",
+     "a": "Karlovy Vary",
+     "wrong": [
+      "Mariánské Lázně",
+      "Český Krumlov",
+      "Teplice"
+     ],
+     "why": "It is famous for its hot springs."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
     {
      "level": 1,
-     "q": "Which medieval clock on Prague's Old Town Hall shows moving apostles?",
-     "a": "Astronomical Clock (Orloj)",
+     "q": "Which playwright became President after the 1989 revolution?",
+     "a": "Václav Havel",
      "wrong": [
-      "Big Ben",
-      "Zytglogge",
-      "Strasbourg Clock"
+      "Alexander Dubček",
+      "Václav Klaus",
+      "Tomáš Masaryk"
      ],
-     "why": "It was first installed in 1410."
+     "why": "Prague's airport is named after him."
     },
     {
      "level": 1,
@@ -264,26 +279,82 @@
      "why": "It appeared in his 1920 play 'R.U.R.'."
     },
     {
-     "level": 2,
-     "q": "Which composer wrote the 'New World Symphony'?",
-     "a": "Antonín Dvořák",
+     "level": 3,
+     "q": "Which writer wrote 'The Unbearable Lightness of Being'?",
+     "a": "Milan Kundera",
      "wrong": [
-      "Bedřich Smetana",
-      "Leoš Janáček",
-      "Bohuslav Martinů"
+      "Bohumil Hrabal",
+      "Josef Škvorecký",
+      "Ivan Klíma"
      ],
-     "why": "He wrote it in the USA in 1893."
-    },
+     "why": "It is set during the Prague Spring."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
     {
      "level": 2,
-     "q": "Which spa town hosts an international film festival?",
-     "a": "Karlovy Vary",
+     "q": "Which emperor made Prague a centre of art and alchemy around 1600?",
+     "a": "Rudolf II",
      "wrong": [
-      "Mariánské Lázně",
-      "Český Krumlov",
-      "Teplice"
+      "Charles IV",
+      "Ferdinand I",
+      "Maximilian II"
      ],
-     "why": "It is famous for its hot springs."
+     "why": "Astronomers Tycho Brahe and Kepler worked for him."
+    },
+    {
+     "level": 1,
+     "q": "Which medieval bridge in Prague is lined with statues?",
+     "a": "Charles Bridge",
+     "wrong": [
+      "Wenceslas Bridge",
+      "Golden Bridge",
+      "Vltava Bridge"
+     ],
+     "why": "Building began in 1357."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Czechoslovakia split into two countries?",
+     "a": "1993",
+     "wrong": [
+      "1989",
+      "1968",
+      "1991"
+     ],
+     "why": "The 'Velvet Divorce' was peaceful."
+    },
+    {
+     "level": 1,
+     "q": "Which saint and duke of Bohemia is honoured in a Christmas carol?",
+     "a": "Wenceslas",
+     "wrong": [
+      "Vitus",
+      "Adalbert",
+      "Ludmila"
+     ],
+     "why": "He is the 'Good King Wenceslas'."
+    },
+    {
+     "level": 1,
+     "q": "What is Czechia's currency?",
+     "a": "Czech koruna",
+     "wrong": [
+      "Euro",
+      "Złoty",
+      "Forint"
+     ],
+     "why": "It means 'crown'."
     },
     {
      "level": 2,
@@ -297,17 +368,6 @@
      "why": "It holds St Vitus Cathedral."
     },
     {
-     "level": 2,
-     "q": "Which runner, the 'Czech Locomotive', won three golds at Helsinki 1952?",
-     "a": "Emil Zátopek",
-     "wrong": [
-      "Jan Železný",
-      "Roman Šebrle",
-      "Dana Zátopková"
-     ],
-     "why": "He won the 5,000 m, 10,000 m and marathon."
-    },
-    {
      "level": 3,
      "q": "Which bone church near Kutná Hora is decorated with human bones?",
      "a": "Sedlec Ossuary",
@@ -317,28 +377,6 @@
       "St Michael's Church"
      ],
      "why": "About 40,000 skeletons were used."
-    },
-    {
-     "level": 3,
-     "q": "Which tennis player born in Prague won 18 Grand Slam singles titles?",
-     "a": "Martina Navratilova",
-     "wrong": [
-      "Petra Kvitová",
-      "Hana Mandlíková",
-      "Jana Novotná"
-     ],
-     "why": "She won Wimbledon nine times."
-    },
-    {
-     "level": 3,
-     "q": "Which writer wrote 'The Unbearable Lightness of Being'?",
-     "a": "Milan Kundera",
-     "wrong": [
-      "Bohumil Hrabal",
-      "Josef Škvorecký",
-      "Ivan Klíma"
-     ],
-     "why": "It is set during the Prague Spring."
     }
    ]
   }

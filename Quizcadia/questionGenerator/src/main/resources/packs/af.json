@@ -3,30 +3,9 @@
  "country": "AF",
  "topics": [
   {
-   "name": "Afghanistan: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Afghanistan?",
-     "a": "Kabul",
-     "wrong": [
-      "Kandahar",
-      "Herat",
-      "Mazar-i-Sharif"
-     ],
-     "why": "It sits about 1,800 m above sea level."
-    },
-    {
-     "level": 1,
-     "q": "Which giant Buddha statues were destroyed in 2001?",
-     "a": "Buddhas of Bamiyan",
-     "wrong": [
-      "Leshan Buddha",
-      "Tian Tan Buddha",
-      "Gal Vihara"
-     ],
-     "why": "They had stood for about 1,500 years."
-    },
     {
      "level": 1,
      "q": "Which group took control of Afghanistan in 1996 and again in 2021?",
@@ -37,17 +16,6 @@
       "The Northern Alliance"
      ],
      "why": "Their rule ended in 2001 and returned 20 years later."
-    },
-    {
-     "level": 1,
-     "q": "Which pass connects Afghanistan and Pakistan?",
-     "a": "Khyber Pass",
-     "wrong": [
-      "Bolan Pass",
-      "Salang Pass",
-      "Wakhan Corridor"
-     ],
-     "why": "It has been a trade and invasion route for centuries."
     },
     {
      "level": 1,
@@ -70,17 +38,6 @@
       "Safavid Empire"
      ],
      "why": "He founded it in 1747."
-    },
-    {
-     "level": 1,
-     "q": "Which Afghan lion of Panjshir fought the Soviets and the Taliban?",
-     "a": "Ahmad Shah Massoud",
-     "wrong": [
-      "Gulbuddin Hekmatyar",
-      "Abdul Rashid Dostum",
-      "Burhanuddin Rabbani"
-     ],
-     "why": "He was killed two days before 9/11."
     },
     {
      "level": 2,
@@ -139,17 +96,6 @@
     },
     {
      "level": 3,
-     "q": "Which Sufi poet was born in Balkh in 1207?",
-     "a": "Rumi",
-     "wrong": [
-      "Hafez",
-      "Saadi",
-      "Ferdowsi"
-     ],
-     "why": "He later lived in Konya, Turkey."
-    },
-    {
-     "level": 3,
      "q": "Which ancient Greek city was found at Ai-Khanoum?",
      "a": "A Hellenistic city of Alexander's successors",
      "wrong": [
@@ -158,6 +104,23 @@
       "A Mongol camp"
      ],
      "why": "It had a theatre and gymnasium."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Afghanistan?",
+     "a": "Kabul",
+     "wrong": [
+      "Kandahar",
+      "Herat",
+      "Mazar-i-Sharif"
+     ],
+     "why": "It sits about 1,800 m above sea level."
     },
     {
      "level": 3,
@@ -169,22 +132,6 @@
       "Minaret of Herat"
      ],
      "why": "It is about 65 m tall."
-    }
-   ]
-  },
-  {
-   "name": "Afghanistan: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "What is Afghanistan's currency?",
-     "a": "Afghani",
-     "wrong": [
-      "Rupee",
-      "Rial",
-      "Som"
-     ],
-     "why": "It was introduced in 1925."
     },
     {
      "level": 1,
@@ -196,6 +143,157 @@
       "Atlas Mountains"
      ],
      "why": "Its name may mean 'Hindu killer'."
+    },
+    {
+     "level": 1,
+     "q": "Which landlocked country borders Afghanistan to the east and south?",
+     "a": "Pakistan",
+     "wrong": [
+      "India",
+      "China",
+      "Iran"
+     ],
+     "why": "They share a long mountain border."
+    },
+    {
+     "level": 2,
+     "q": "Which lakes in Bamiyan are Afghanistan's first national park?",
+     "a": "Band-e Amir",
+     "wrong": [
+      "Lake Zorkul",
+      "Kajaki Reservoir",
+      "Lake Shewa"
+     ],
+     "why": "They are a chain of deep blue lakes."
+    },
+    {
+     "level": 2,
+     "q": "Which western city is famous for its Friday Mosque and citadel?",
+     "a": "Herat",
+     "wrong": [
+      "Kandahar",
+      "Kunduz",
+      "Jalalabad"
+     ],
+     "why": "It was a Timurid capital."
+    },
+    {
+     "level": 3,
+     "q": "What is Afghanistan's highest mountain?",
+     "a": "Noshaq",
+     "wrong": [
+      "K2",
+      "Tirich Mir",
+      "Mount Kailash"
+     ],
+     "why": "It is about 7,492 m high."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which game of horsemen and a goat carcass is the national sport?",
+     "a": "Buzkashi",
+     "wrong": [
+      "Polo",
+      "Kabaddi",
+      "Lacrosse"
+     ],
+     "why": "Riders compete to carry the carcass to a goal."
+    },
+    {
+     "level": 2,
+     "q": "Which Afghan-American author wrote 'The Kite Runner'?",
+     "a": "Khaled Hosseini",
+     "wrong": [
+      "Atiq Rahimi",
+      "Tamim Ansary",
+      "Nadia Hashimi"
+     ],
+     "why": "It was published in 2003."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Sufi poet was born in Balkh in 1207?",
+     "a": "Rumi",
+     "wrong": [
+      "Hafez",
+      "Saadi",
+      "Ferdowsi"
+     ],
+     "why": "He later lived in Konya, Turkey."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which giant Buddha statues were destroyed in 2001?",
+     "a": "Buddhas of Bamiyan",
+     "wrong": [
+      "Leshan Buddha",
+      "Tian Tan Buddha",
+      "Gal Vihara"
+     ],
+     "why": "They had stood for about 1,500 years."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Afghan lion of Panjshir fought the Soviets and the Taliban?",
+     "a": "Ahmad Shah Massoud",
+     "wrong": [
+      "Gulbuddin Hekmatyar",
+      "Abdul Rashid Dostum",
+      "Burhanuddin Rabbani"
+     ],
+     "why": "He was killed two days before 9/11."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which pass connects Afghanistan and Pakistan?",
+     "a": "Khyber Pass",
+     "wrong": [
+      "Bolan Pass",
+      "Salang Pass",
+      "Wakhan Corridor"
+     ],
+     "why": "It has been a trade and invasion route for centuries."
+    },
+    {
+     "level": 1,
+     "q": "What is Afghanistan's currency?",
+     "a": "Afghani",
+     "wrong": [
+      "Rupee",
+      "Rial",
+      "Som"
+     ],
+     "why": "It was introduced in 1925."
     },
     {
      "level": 1,
@@ -221,28 +319,6 @@
     },
     {
      "level": 1,
-     "q": "Which landlocked country borders Afghanistan to the east and south?",
-     "a": "Pakistan",
-     "wrong": [
-      "India",
-      "China",
-      "Iran"
-     ],
-     "why": "They share a long mountain border."
-    },
-    {
-     "level": 1,
-     "q": "Which game of horsemen and a goat carcass is the national sport?",
-     "a": "Buzkashi",
-     "wrong": [
-      "Polo",
-      "Kabaddi",
-      "Lacrosse"
-     ],
-     "why": "Riders compete to carry the carcass to a goal."
-    },
-    {
-     "level": 1,
      "q": "What are Afghanistan's two official languages?",
      "a": "Pashto and Dari",
      "wrong": [
@@ -262,39 +338,6 @@
       "Shah-Do Shamshira Mosque"
      ],
      "why": "It is famous for white doves."
-    },
-    {
-     "level": 2,
-     "q": "Which lakes in Bamiyan are Afghanistan's first national park?",
-     "a": "Band-e Amir",
-     "wrong": [
-      "Lake Zorkul",
-      "Kajaki Reservoir",
-      "Lake Shewa"
-     ],
-     "why": "They are a chain of deep blue lakes."
-    },
-    {
-     "level": 2,
-     "q": "Which western city is famous for its Friday Mosque and citadel?",
-     "a": "Herat",
-     "wrong": [
-      "Kandahar",
-      "Kunduz",
-      "Jalalabad"
-     ],
-     "why": "It was a Timurid capital."
-    },
-    {
-     "level": 2,
-     "q": "Which Afghan-American author wrote 'The Kite Runner'?",
-     "a": "Khaled Hosseini",
-     "wrong": [
-      "Atiq Rahimi",
-      "Tamim Ansary",
-      "Nadia Hashimi"
-     ],
-     "why": "It was published in 2003."
     },
     {
      "level": 2,
@@ -328,17 +371,6 @@
       "Wakhan Tunnel"
      ],
      "why": "It was built by the Soviets in 1964."
-    },
-    {
-     "level": 3,
-     "q": "What is Afghanistan's highest mountain?",
-     "a": "Noshaq",
-     "wrong": [
-      "K2",
-      "Tirich Mir",
-      "Mount Kailash"
-     ],
-     "why": "It is about 7,492 m high."
     }
    ]
   }

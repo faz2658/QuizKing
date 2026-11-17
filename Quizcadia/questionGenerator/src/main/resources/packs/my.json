@@ -3,7 +3,8 @@
  "country": "MY",
  "topics": [
   {
-   "name": "Malaysia History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -70,17 +71,6 @@
       "Spain"
      ],
      "why": "The A Famosa fort gate still stands."
-    },
-    {
-     "level": 1,
-     "q": "Who is Malaysia's longest-serving Prime Minister?",
-     "a": "Mahathir Mohamad",
-     "wrong": [
-      "Najib Razak",
-      "Abdullah Badawi",
-      "Anwar Ibrahim"
-     ],
-     "why": "He served over 22 years in two spells."
     },
     {
      "level": 2,
@@ -150,17 +140,6 @@
     },
     {
      "level": 3,
-     "q": "At which stadium did Tunku Abdul Rahman declare independence in 1957?",
-     "a": "Stadium Merdeka",
-     "wrong": [
-      "Bukit Jalil Stadium",
-      "Stadium Negara",
-      "Shah Alam Stadium"
-     ],
-     "why": "He shouted 'Merdeka!' seven times."
-    },
-    {
-     "level": 3,
      "q": "Which 1824 treaty split the Malay world between Britain and the Netherlands?",
      "a": "Anglo-Dutch Treaty",
      "wrong": [
@@ -180,11 +159,45 @@
       "Kota Tinggi"
      ],
      "why": "It dates back over 1,500 years."
+    },
+    {
+     "level": 1,
+     "q": "What is Malaysia's King called?",
+     "a": "Yang di-Pertuan Agong",
+     "wrong": [
+      "Sultan of Malaysia",
+      "Raja Muda",
+      "Bendahara"
+     ],
+     "why": "The nine Malay rulers take turns for five years."
+    },
+    {
+     "level": 2,
+     "q": "Who became the first Malaysian in space, in 2007?",
+     "a": "Sheikh Muszaphar Shukor",
+     "wrong": [
+      "Faiz Khaleed",
+      "Mazlan Othman",
+      "Ahmad Fauzi"
+     ],
+     "why": "He flew to the International Space Station."
+    },
+    {
+     "level": 3,
+     "q": "Which Kuala Lumpur skyscraper became the world's second-tallest building in 2023?",
+     "a": "Merdeka 118",
+     "wrong": [
+      "Petronas Towers",
+      "Exchange 106",
+      "KL Tower"
+     ],
+     "why": "It is 678.9 m tall."
     }
    ]
   },
   {
-   "name": "Malaysia Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -361,12 +374,35 @@
       "Gaya"
      ],
      "why": "It is an offshore financial centre."
+    },
+    {
+     "level": 3,
+     "q": "Which expressway runs from the Thai border to Singapore?",
+     "a": "North–South Expressway",
+     "wrong": [
+      "East Coast Expressway",
+      "Pan Borneo Highway",
+      "Karak Highway"
+     ],
+     "why": "It is about 772 km long."
     }
    ]
   },
   {
-   "name": "Malaysia Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
+    {
+     "level": 3,
+     "q": "At which stadium did Tunku Abdul Rahman declare independence in 1957?",
+     "a": "Stadium Merdeka",
+     "wrong": [
+      "Bukit Jalil Stadium",
+      "Stadium Negara",
+      "Shah Alam Stadium"
+     ],
+     "why": "He shouted 'Merdeka!' seven times."
+    },
     {
      "level": 1,
      "q": "Which badminton player won three Olympic silver medals for Malaysia?",
@@ -546,7 +582,80 @@
    ]
   },
   {
-   "name": "Malaysia Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which award-winning pop singer is famous for songs like 'Cindai'?",
+     "a": "Siti Nurhaliza",
+     "wrong": [
+      "Yuna",
+      "Zee Avi",
+      "Sheila Majid"
+     ],
+     "why": "She has won dozens of awards since the 1990s."
+    },
+    {
+     "level": 1,
+     "q": "Which singer-songwriter recorded 'Crush' with Usher?",
+     "a": "Yuna",
+     "wrong": [
+      "Siti Nurhaliza",
+      "Zee Avi",
+      "Elizabeth Tan"
+     ],
+     "why": "She moved to Los Angeles to record."
+    },
+    {
+     "level": 2,
+     "q": "Which singer was called the 'Queen of Jazz' of Malaysia?",
+     "a": "Sheila Majid",
+     "wrong": [
+      "Siti Nurhaliza",
+      "Ella",
+      "Ning Baizura"
+     ],
+     "why": "Her hit 'Sinaran' is still loved."
+    },
+    {
+     "level": 2,
+     "q": "Which singer is called the 'Queen of Rock' in Malaysia?",
+     "a": "Ella",
+     "wrong": [
+      "Siti Nurhaliza",
+      "Sheila Majid",
+      "Yuna"
+     ],
+     "why": "She was a star of the 1990s rock scene."
+    },
+    {
+     "level": 3,
+     "q": "Which Malaysian singer, P. Ramlee's wife, was a star in her own right?",
+     "a": "Saloma",
+     "wrong": [
+      "Siti Nurhaliza",
+      "Sharifah Aini",
+      "Normadiah"
+     ],
+     "why": "A famous bistro in Kuala Lumpur is named after her."
+    },
+    {
+     "level": 2,
+     "q": "What is Malaysia's national anthem?",
+     "a": "Negaraku",
+     "wrong": [
+      "Majulah Singapura",
+      "Indonesia Raya",
+      "Tanah Pusaka"
+     ],
+     "why": "It means 'My Country'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
    "questions": [
     {
      "level": 1,
@@ -583,17 +692,6 @@
     },
     {
      "level": 1,
-     "q": "Which award-winning pop singer is famous for songs like 'Cindai'?",
-     "a": "Siti Nurhaliza",
-     "wrong": [
-      "Yuna",
-      "Zee Avi",
-      "Sheila Majid"
-     ],
-     "why": "She has won dozens of awards since the 1990s."
-    },
-    {
-     "level": 1,
      "q": "Which animated hero can control lightning, wind and earth?",
      "a": "BoBoiBoy",
      "wrong": [
@@ -602,39 +700,6 @@
       "Keluang Man"
      ],
      "why": "The series was made by Animonsta."
-    },
-    {
-     "level": 1,
-     "q": "Which Malay poetry form uses four-line rhyming verses?",
-     "a": "Pantun",
-     "wrong": [
-      "Syair",
-      "Gurindam",
-      "Haiku"
-     ],
-     "why": "It is on UNESCO's heritage list."
-    },
-    {
-     "level": 1,
-     "q": "Which singer-songwriter recorded 'Crush' with Usher?",
-     "a": "Yuna",
-     "wrong": [
-      "Siti Nurhaliza",
-      "Zee Avi",
-      "Elizabeth Tan"
-     ],
-     "why": "She moved to Los Angeles to record."
-    },
-    {
-     "level": 2,
-     "q": "Which shadow puppet theatre is a traditional art in Kelantan?",
-     "a": "Wayang kulit",
-     "wrong": [
-      "Mak Yong",
-      "Dikir barat",
-      "Bangsawan"
-     ],
-     "why": "Puppets are made of buffalo hide."
     },
     {
      "level": 2,
@@ -646,72 +711,6 @@
       "Tan Chui Mui"
      ],
      "why": "She was also famous for heartfelt TV adverts."
-    },
-    {
-     "level": 2,
-     "q": "Which Kelantan dance-drama was added to UNESCO's list in 2005?",
-     "a": "Mak Yong",
-     "wrong": [
-      "Zapin",
-      "Joget",
-      "Kuda kepang"
-     ],
-     "why": "It combines acting, singing and dance."
-    },
-    {
-     "level": 2,
-     "q": "Which singer was called the 'Queen of Jazz' of Malaysia?",
-     "a": "Sheila Majid",
-     "wrong": [
-      "Siti Nurhaliza",
-      "Ella",
-      "Ning Baizura"
-     ],
-     "why": "Her hit 'Sinaran' is still loved."
-    },
-    {
-     "level": 2,
-     "q": "Which Malaysian author was Booker-shortlisted for 'The Garden of Evening Mists'?",
-     "a": "Tan Twan Eng",
-     "wrong": [
-      "Rani Manicka",
-      "Preeta Samarasan",
-      "Tash Aw"
-     ],
-     "why": "It is set in the Cameron Highlands."
-    },
-    {
-     "level": 2,
-     "q": "Which singer is called the 'Queen of Rock' in Malaysia?",
-     "a": "Ella",
-     "wrong": [
-      "Siti Nurhaliza",
-      "Sheila Majid",
-      "Yuna"
-     ],
-     "why": "She was a star of the 1990s rock scene."
-    },
-    {
-     "level": 3,
-     "q": "Which P. Ramlee comedy follows three bachelors in a run-down house?",
-     "a": "Bujang Lapok",
-     "wrong": [
-      "Labu dan Labi",
-      "Ibu Mertuaku",
-      "Antara Dua Darjat"
-     ],
-     "why": "It was made in 1957."
-    },
-    {
-     "level": 3,
-     "q": "Which Malaysian singer, P. Ramlee's wife, was a star in her own right?",
-     "a": "Saloma",
-     "wrong": [
-      "Siti Nurhaliza",
-      "Sharifah Aini",
-      "Normadiah"
-     ],
-     "why": "A famous bistro in Kuala Lumpur is named after her."
     },
     {
      "level": 3,
@@ -727,8 +726,121 @@
    ]
   },
   {
-   "name": "Malaysia Food & Traditions",
+   "category": "Entertainment",
+   "name": "Books",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which Malay poetry form uses four-line rhyming verses?",
+     "a": "Pantun",
+     "wrong": [
+      "Syair",
+      "Gurindam",
+      "Haiku"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 2,
+     "q": "Which Malaysian author was Booker-shortlisted for 'The Garden of Evening Mists'?",
+     "a": "Tan Twan Eng",
+     "wrong": [
+      "Rani Manicka",
+      "Preeta Samarasan",
+      "Tash Aw"
+     ],
+     "why": "It is set in the Cameron Highlands."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who is Malaysia's longest-serving Prime Minister?",
+     "a": "Mahathir Mohamad",
+     "wrong": [
+      "Najib Razak",
+      "Abdullah Badawi",
+      "Anwar Ibrahim"
+     ],
+     "why": "He served over 22 years in two spells."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which shadow puppet theatre is a traditional art in Kelantan?",
+     "a": "Wayang kulit",
+     "wrong": [
+      "Mak Yong",
+      "Dikir barat",
+      "Bangsawan"
+     ],
+     "why": "Puppets are made of buffalo hide."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which animals hold the shield on Malaysia's coat of arms?",
+     "a": "Two tigers",
+     "wrong": [
+      "Two lions",
+      "Two eagles",
+      "Two elephants"
+     ],
+     "why": "The motto is 'Unity is Strength'."
+    },
+    {
+     "level": 2,
+     "q": "Which centre in Sabah rehabilitates orphaned orangutans?",
+     "a": "Sepilok",
+     "wrong": [
+      "Semenggoh",
+      "Kinabatangan",
+      "Danum Valley"
+     ],
+     "why": "It opened in 1964."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Kelantan dance-drama was added to UNESCO's list in 2005?",
+     "a": "Mak Yong",
+     "wrong": [
+      "Zapin",
+      "Joget",
+      "Kuda kepang"
+     ],
+     "why": "It combines acting, singing and dance."
+    },
+    {
+     "level": 3,
+     "q": "Which P. Ramlee comedy follows three bachelors in a run-down house?",
+     "a": "Bujang Lapok",
+     "wrong": [
+      "Labu dan Labi",
+      "Ibu Mertuaku",
+      "Antara Dua Darjat"
+     ],
+     "why": "It was made in 1957."
+    },
     {
      "level": 1,
      "q": "Which coconut rice dish with sambal is Malaysia's national dish?",
@@ -904,12 +1016,7 @@
       "Hari Raya Haji"
      ],
      "why": "It honours the rice spirit, Bambaazon."
-    }
-   ]
-  },
-  {
-   "name": "Malaysia General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is Malaysia's currency?",
@@ -967,17 +1074,6 @@
     },
     {
      "level": 1,
-     "q": "What is Malaysia's King called?",
-     "a": "Yang di-Pertuan Agong",
-     "wrong": [
-      "Sultan of Malaysia",
-      "Raja Muda",
-      "Bendahara"
-     ],
-     "why": "The nine Malay rulers take turns for five years."
-    },
-    {
-     "level": 1,
      "q": "What does the slogan 'Malaysia Boleh!' mean?",
      "a": "Malaysia can!",
      "wrong": [
@@ -1000,17 +1096,6 @@
     },
     {
      "level": 2,
-     "q": "What is Malaysia's national anthem?",
-     "a": "Negaraku",
-     "wrong": [
-      "Majulah Singapura",
-      "Indonesia Raya",
-      "Tanah Pusaka"
-     ],
-     "why": "It means 'My Country'."
-    },
-    {
-     "level": 2,
      "q": "Which giant flower, found in Borneo, is one of the world's largest?",
      "a": "Rafflesia",
      "wrong": [
@@ -1019,39 +1104,6 @@
       "Lotus"
      ],
      "why": "It smells like rotting meat."
-    },
-    {
-     "level": 2,
-     "q": "Which animals hold the shield on Malaysia's coat of arms?",
-     "a": "Two tigers",
-     "wrong": [
-      "Two lions",
-      "Two eagles",
-      "Two elephants"
-     ],
-     "why": "The motto is 'Unity is Strength'."
-    },
-    {
-     "level": 2,
-     "q": "Which centre in Sabah rehabilitates orphaned orangutans?",
-     "a": "Sepilok",
-     "wrong": [
-      "Semenggoh",
-      "Kinabatangan",
-      "Danum Valley"
-     ],
-     "why": "It opened in 1964."
-    },
-    {
-     "level": 2,
-     "q": "Who became the first Malaysian in space, in 2007?",
-     "a": "Sheikh Muszaphar Shukor",
-     "wrong": [
-      "Faiz Khaleed",
-      "Mazlan Othman",
-      "Ahmad Fauzi"
-     ],
-     "why": "He flew to the International Space Station."
     },
     {
      "level": 3,
@@ -1063,28 +1115,6 @@
       "Bufori"
      ],
      "why": "Its Myvi is a best-seller."
-    },
-    {
-     "level": 3,
-     "q": "Which Kuala Lumpur skyscraper became the world's second-tallest building in 2023?",
-     "a": "Merdeka 118",
-     "wrong": [
-      "Petronas Towers",
-      "Exchange 106",
-      "KL Tower"
-     ],
-     "why": "It is 678.9 m tall."
-    },
-    {
-     "level": 3,
-     "q": "Which expressway runs from the Thai border to Singapore?",
-     "a": "North–South Expressway",
-     "wrong": [
-      "East Coast Expressway",
-      "Pan Borneo Highway",
-      "Karak Highway"
-     ],
-     "why": "It is about 772 km long."
     }
    ]
   }

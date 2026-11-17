@@ -3,19 +3,9 @@
  "country": "GW",
  "topics": [
   {
-   "name": "Guinea-Bissau: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Guinea-Bissau?",
-     "a": "Bissau",
-     "wrong": [
-      "Bafatá",
-      "Gabú",
-      "Cacheu"
-     ],
-     "why": "It is on the Geba River."
-    },
     {
      "level": 1,
      "q": "From which country did Guinea-Bissau gain independence?",
@@ -39,50 +29,6 @@
      "why": "He was killed in 1973."
     },
     {
-     "level": 1,
-     "q": "What is the official language of Guinea-Bissau?",
-     "a": "Portuguese",
-     "wrong": [
-      "French",
-      "English",
-      "Spanish"
-     ],
-     "why": "Kriol is widely spoken."
-    },
-    {
-     "level": 1,
-     "q": "What is Guinea-Bissau's currency?",
-     "a": "West African CFA franc",
-     "wrong": [
-      "Escudo",
-      "Guinean franc",
-      "Dalasi"
-     ],
-     "why": "It joined the CFA zone in 1997."
-    },
-    {
-     "level": 1,
-     "q": "Which nut is Guinea-Bissau's main export?",
-     "a": "Cashew",
-     "wrong": [
-      "Peanut",
-      "Almond",
-      "Macadamia"
-     ],
-     "why": "It is one of the world's top producers."
-    },
-    {
-     "level": 1,
-     "q": "Which island chain off the coast is a UNESCO biosphere reserve?",
-     "a": "Bijagós Archipelago",
-     "wrong": [
-      "Cape Verde Islands",
-      "Îles de Los",
-      "Banana Islands"
-     ],
-     "why": "It has saltwater hippos."
-    },
-    {
      "level": 2,
      "q": "Who was the first President of Guinea-Bissau?",
      "a": "Luís Cabral",
@@ -92,17 +38,6 @@
       "Malam Bacai Sanhá"
      ],
      "why": "He was Amílcar's half-brother."
-    },
-    {
-     "level": 2,
-     "q": "Which country was linked with Guinea-Bissau under the PAIGC?",
-     "a": "Cape Verde",
-     "wrong": [
-      "São Tomé and Príncipe",
-      "Angola",
-      "Mozambique"
-     ],
-     "why": "They split after a 1980 coup."
     },
     {
      "level": 2,
@@ -139,17 +74,6 @@
     },
     {
      "level": 3,
-     "q": "Who was President of Guinea-Bissau from 2020 until a 2025 coup?",
-     "a": "Umaro Sissoco Embaló",
-     "wrong": [
-      "José Mário Vaz",
-      "Domingos Simões Pereira",
-      "Malam Bacai Sanhá"
-     ],
-     "why": "The military took over in November 2025."
-    },
-    {
-     "level": 3,
      "q": "Which 1959 dock strike massacre spurred armed struggle?",
      "a": "Pidjiguiti massacre",
      "wrong": [
@@ -173,29 +97,30 @@
    ]
   },
   {
-   "name": "Guinea-Bissau: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "Which carnival in Bissau features masks and dances?",
-     "a": "Bissau Carnival",
+     "q": "What is the capital of Guinea-Bissau?",
+     "a": "Bissau",
      "wrong": [
-      "Crop Over",
-      "Mardi Gras",
-      "Mashramani"
+      "Bafatá",
+      "Gabú",
+      "Cacheu"
      ],
-     "why": "It is held before Lent."
+     "why": "It is on the Geba River."
     },
     {
      "level": 1,
-     "q": "Which animals swim in the sea around the Bijagós?",
-     "a": "Saltwater hippos",
+     "q": "Which island chain off the coast is a UNESCO biosphere reserve?",
+     "a": "Bijagós Archipelago",
      "wrong": [
-      "Polar bears",
-      "Penguins",
-      "Orcas"
+      "Cape Verde Islands",
+      "Îles de Los",
+      "Banana Islands"
      ],
-     "why": "They are a rare sight."
+     "why": "It has saltwater hippos."
     },
     {
      "level": 1,
@@ -207,50 +132,6 @@
       "Red Sea"
      ],
      "why": "The coast is full of mangroves."
-    },
-    {
-     "level": 1,
-     "q": "Which music style from Guinea-Bissau uses fast drums?",
-     "a": "Gumbé",
-     "wrong": [
-      "Soukous",
-      "Highlife",
-      "Kizomba"
-     ],
-     "why": "It is the national music."
-    },
-    {
-     "level": 1,
-     "q": "Which crop is grown in the coastal rice paddies?",
-     "a": "Rice",
-     "wrong": [
-      "Wheat",
-      "Barley",
-      "Oats"
-     ],
-     "why": "The Balanta are famous rice farmers."
-    },
-    {
-     "level": 1,
-     "q": "Which creole language is spoken across the country?",
-     "a": "Guinea-Bissau Creole (Kriol)",
-     "wrong": [
-      "Papiamento",
-      "Krio",
-      "Sranan Tongo"
-     ],
-     "why": "It is based on Portuguese."
-    },
-    {
-     "level": 1,
-     "q": "Which drink is made from cashew fruit?",
-     "a": "Cajú wine",
-     "wrong": [
-      "Palm wine",
-      "Bissap",
-      "Dolo"
-     ],
-     "why": "It is made in the cashew season."
     },
     {
      "level": 2,
@@ -286,6 +167,23 @@
      "why": "Ferries come from Bissau."
     },
     {
+     "level": 3,
+     "q": "Which wildlife reserve in the Bijagós protects sea turtles?",
+     "a": "João Vieira and Poilão Marine National Park",
+     "wrong": [
+      "Orango National Park",
+      "Cacheu Mangroves",
+      "Cantanhez"
+     ],
+     "why": "Green turtles nest there."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
      "level": 2,
      "q": "Which footballer born in Bissau played for Barcelona and Spain?",
      "a": "Ansu Fati",
@@ -306,28 +204,23 @@
       "Danilo Pereira"
      ],
      "why": "He scored the winning goal."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
     {
-     "level": 3,
-     "q": "Which ethnic group is the largest in Guinea-Bissau?",
-     "a": "Balanta",
+     "level": 1,
+     "q": "Which music style from Guinea-Bissau uses fast drums?",
+     "a": "Gumbé",
      "wrong": [
-      "Fula",
-      "Mandinka",
-      "Papel"
+      "Soukous",
+      "Highlife",
+      "Kizomba"
      ],
-     "why": "They live mostly in the south and centre."
-    },
-    {
-     "level": 3,
-     "q": "Which wildlife reserve in the Bijagós protects sea turtles?",
-     "a": "João Vieira and Poilão Marine National Park",
-     "wrong": [
-      "Orango National Park",
-      "Cacheu Mangroves",
-      "Cantanhez"
-     ],
-     "why": "Green turtles nest there."
+     "why": "It is the national music."
     },
     {
      "level": 3,
@@ -339,6 +232,151 @@
       "Youssou N'Dour"
      ],
      "why": "He sang 'Paraíso di Gumbé'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Who was President of Guinea-Bissau from 2020 until a 2025 coup?",
+     "a": "Umaro Sissoco Embaló",
+     "wrong": [
+      "José Mário Vaz",
+      "Domingos Simões Pereira",
+      "Malam Bacai Sanhá"
+     ],
+     "why": "The military took over in November 2025."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which carnival in Bissau features masks and dances?",
+     "a": "Bissau Carnival",
+     "wrong": [
+      "Crop Over",
+      "Mardi Gras",
+      "Mashramani"
+     ],
+     "why": "It is held before Lent."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which animals swim in the sea around the Bijagós?",
+     "a": "Saltwater hippos",
+     "wrong": [
+      "Polar bears",
+      "Penguins",
+      "Orcas"
+     ],
+     "why": "They are a rare sight."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the official language of Guinea-Bissau?",
+     "a": "Portuguese",
+     "wrong": [
+      "French",
+      "English",
+      "Spanish"
+     ],
+     "why": "Kriol is widely spoken."
+    },
+    {
+     "level": 1,
+     "q": "What is Guinea-Bissau's currency?",
+     "a": "West African CFA franc",
+     "wrong": [
+      "Escudo",
+      "Guinean franc",
+      "Dalasi"
+     ],
+     "why": "It joined the CFA zone in 1997."
+    },
+    {
+     "level": 1,
+     "q": "Which nut is Guinea-Bissau's main export?",
+     "a": "Cashew",
+     "wrong": [
+      "Peanut",
+      "Almond",
+      "Macadamia"
+     ],
+     "why": "It is one of the world's top producers."
+    },
+    {
+     "level": 2,
+     "q": "Which country was linked with Guinea-Bissau under the PAIGC?",
+     "a": "Cape Verde",
+     "wrong": [
+      "São Tomé and Príncipe",
+      "Angola",
+      "Mozambique"
+     ],
+     "why": "They split after a 1980 coup."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is grown in the coastal rice paddies?",
+     "a": "Rice",
+     "wrong": [
+      "Wheat",
+      "Barley",
+      "Oats"
+     ],
+     "why": "The Balanta are famous rice farmers."
+    },
+    {
+     "level": 1,
+     "q": "Which creole language is spoken across the country?",
+     "a": "Guinea-Bissau Creole (Kriol)",
+     "wrong": [
+      "Papiamento",
+      "Krio",
+      "Sranan Tongo"
+     ],
+     "why": "It is based on Portuguese."
+    },
+    {
+     "level": 1,
+     "q": "Which drink is made from cashew fruit?",
+     "a": "Cajú wine",
+     "wrong": [
+      "Palm wine",
+      "Bissap",
+      "Dolo"
+     ],
+     "why": "It is made in the cashew season."
+    },
+    {
+     "level": 3,
+     "q": "Which ethnic group is the largest in Guinea-Bissau?",
+     "a": "Balanta",
+     "wrong": [
+      "Fula",
+      "Mandinka",
+      "Papel"
+     ],
+     "why": "They live mostly in the south and centre."
     }
    ]
   }

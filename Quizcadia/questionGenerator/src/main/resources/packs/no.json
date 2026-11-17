@@ -3,7 +3,8 @@
  "country": "NO",
  "topics": [
   {
-   "name": "Norway: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -29,17 +30,6 @@
     },
     {
      "level": 1,
-     "q": "What is Norway's Constitution Day?",
-     "a": "17 May",
-     "wrong": [
-      "6 June",
-      "1 May",
-      "24 June"
-     ],
-     "why": "Children's parades fill the streets."
-    },
-    {
-     "level": 1,
      "q": "Which Viking reached North America around the year 1000?",
      "a": "Leif Erikson",
      "wrong": [
@@ -59,17 +49,6 @@
       "Børge Ousland"
      ],
      "why": "The voyage was in 1947."
-    },
-    {
-     "level": 1,
-     "q": "Which city hands out the Nobel Peace Prize?",
-     "a": "Oslo",
-     "wrong": [
-      "Stockholm",
-      "Bergen",
-      "Geneva"
-     ],
-     "why": "The other prizes are given in Stockholm."
     },
     {
      "level": 1,
@@ -173,8 +152,20 @@
    ]
   },
   {
-   "name": "Norway: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which city hands out the Nobel Peace Prize?",
+     "a": "Oslo",
+     "wrong": [
+      "Stockholm",
+      "Bergen",
+      "Geneva"
+     ],
+     "why": "The other prizes are given in Stockholm."
+    },
     {
      "level": 1,
      "q": "What is the capital of Norway?",
@@ -188,61 +179,6 @@
     },
     {
      "level": 1,
-     "q": "Which long, deep sea inlets carved by glaciers is Norway famous for?",
-     "a": "Fjords",
-     "wrong": [
-      "Lochs",
-      "Lagoons",
-      "Estuaries"
-     ],
-     "why": "Geirangerfjord is a UNESCO site."
-    },
-    {
-     "level": 1,
-     "q": "Which Norwegian painter created 'The Scream'?",
-     "a": "Edvard Munch",
-     "wrong": [
-      "Johan Christian Dahl",
-      "Harald Sohlberg",
-      "Nikolai Astrup"
-     ],
-     "why": "Several versions exist."
-    },
-    {
-     "level": 1,
-     "q": "Which band from Norway sang 'Take On Me'?",
-     "a": "a-ha",
-     "wrong": [
-      "Röyksopp",
-      "Kygo",
-      "Madcon"
-     ],
-     "why": "Its video used pencil-sketch animation."
-    },
-    {
-     "level": 1,
-     "q": "What are the natural light displays in the northern sky called?",
-     "a": "Northern lights (aurora borealis)",
-     "wrong": [
-      "Midnight sun",
-      "Fata Morgana",
-      "St Elmo's fire"
-     ],
-     "why": "Tromsø is a top viewing spot."
-    },
-    {
-     "level": 1,
-     "q": "What is Norway's currency?",
-     "a": "Norwegian krone",
-     "wrong": [
-      "Euro",
-      "Swedish krona",
-      "Danish krone"
-     ],
-     "why": "Norway is not in the EU."
-    },
-    {
-     "level": 1,
      "q": "Which Arctic archipelago belongs to Norway?",
      "a": "Svalbard",
      "wrong": [
@@ -251,29 +187,13 @@
       "Åland Islands"
      ],
      "why": "It has a global seed vault."
-    },
-    {
-     "level": 2,
-     "q": "Which playwright wrote 'A Doll's House'?",
-     "a": "Henrik Ibsen",
-     "wrong": [
-      "August Strindberg",
-      "Knut Hamsun",
-      "Bjørnstjerne Bjørnson"
-     ],
-     "why": "It caused a stir in 1879."
-    },
-    {
-     "level": 2,
-     "q": "Which composer wrote 'In the Hall of the Mountain King'?",
-     "a": "Edvard Grieg",
-     "wrong": [
-      "Johan Svendsen",
-      "Christian Sinding",
-      "Ole Bull"
-     ],
-     "why": "It is from 'Peer Gynt'."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 2,
      "q": "Which Norwegian cross-country skier won eight Olympic golds?",
@@ -297,17 +217,6 @@
      "why": "He is from Tønsberg."
     },
     {
-     "level": 2,
-     "q": "What is the brown, sweet Norwegian cheese called?",
-     "a": "Brunost",
-     "wrong": [
-      "Jarlsberg",
-      "Gamalost",
-      "Nøkkelost"
-     ],
-     "why": "It is made from whey."
-    },
-    {
      "level": 3,
      "q": "Which Norwegian striker scored 36 Premier League goals in one season?",
      "a": "Erling Haaland",
@@ -317,6 +226,135 @@
       "John Carew"
      ],
      "why": "He did it for Manchester City in 2022–23."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which band from Norway sang 'Take On Me'?",
+     "a": "a-ha",
+     "wrong": [
+      "Röyksopp",
+      "Kygo",
+      "Madcon"
+     ],
+     "why": "Its video used pencil-sketch animation."
+    },
+    {
+     "level": 2,
+     "q": "Which composer wrote 'In the Hall of the Mountain King'?",
+     "a": "Edvard Grieg",
+     "wrong": [
+      "Johan Svendsen",
+      "Christian Sinding",
+      "Ole Bull"
+     ],
+     "why": "It is from 'Peer Gynt'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which playwright wrote 'A Doll's House'?",
+     "a": "Henrik Ibsen",
+     "wrong": [
+      "August Strindberg",
+      "Knut Hamsun",
+      "Bjørnstjerne Bjørnson"
+     ],
+     "why": "It caused a stir in 1879."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Norway's Constitution Day?",
+     "a": "17 May",
+     "wrong": [
+      "6 June",
+      "1 May",
+      "24 June"
+     ],
+     "why": "Children's parades fill the streets."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which long, deep sea inlets carved by glaciers is Norway famous for?",
+     "a": "Fjords",
+     "wrong": [
+      "Lochs",
+      "Lagoons",
+      "Estuaries"
+     ],
+     "why": "Geirangerfjord is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which Norwegian painter created 'The Scream'?",
+     "a": "Edvard Munch",
+     "wrong": [
+      "Johan Christian Dahl",
+      "Harald Sohlberg",
+      "Nikolai Astrup"
+     ],
+     "why": "Several versions exist."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What are the natural light displays in the northern sky called?",
+     "a": "Northern lights (aurora borealis)",
+     "wrong": [
+      "Midnight sun",
+      "Fata Morgana",
+      "St Elmo's fire"
+     ],
+     "why": "Tromsø is a top viewing spot."
+    },
+    {
+     "level": 1,
+     "q": "What is Norway's currency?",
+     "a": "Norwegian krone",
+     "wrong": [
+      "Euro",
+      "Swedish krona",
+      "Danish krone"
+     ],
+     "why": "Norway is not in the EU."
+    },
+    {
+     "level": 2,
+     "q": "What is the brown, sweet Norwegian cheese called?",
+     "a": "Brunost",
+     "wrong": [
+      "Jarlsberg",
+      "Gamalost",
+      "Nøkkelost"
+     ],
+     "why": "It is made from whey."
     },
     {
      "level": 3,

@@ -3,19 +3,9 @@
  "country": "SN",
  "topics": [
   {
-   "name": "Senegal: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Senegal?",
-     "a": "Dakar",
-     "wrong": [
-      "Saint-Louis",
-      "Thiès",
-      "Touba"
-     ],
-     "why": "It is the westernmost city of mainland Africa."
-    },
     {
      "level": 1,
      "q": "From which country did Senegal gain independence in 1960?",
@@ -29,17 +19,6 @@
     },
     {
      "level": 1,
-     "q": "Who was Senegal's first President and a famous poet?",
-     "a": "Léopold Sédar Senghor",
-     "wrong": [
-      "Abdou Diouf",
-      "Abdoulaye Wade",
-      "Macky Sall"
-     ],
-     "why": "He helped found the Négritude movement."
-    },
-    {
-     "level": 1,
      "q": "Which island off Dakar was a centre of the slave trade?",
      "a": "Gorée Island",
      "wrong": [
@@ -48,72 +27,6 @@
       "Banana Island"
      ],
      "why": "Its 'Door of No Return' is famous."
-    },
-    {
-     "level": 1,
-     "q": "What is Senegal's currency?",
-     "a": "West African CFA franc",
-     "wrong": [
-      "Dalasi",
-      "Naira",
-      "Cedi"
-     ],
-     "why": "It is shared by eight countries."
-    },
-    {
-     "level": 1,
-     "q": "Which country is almost surrounded by Senegal?",
-     "a": "The Gambia",
-     "wrong": [
-      "Guinea-Bissau",
-      "Mali",
-      "Mauritania"
-     ],
-     "why": "It follows the Gambia River."
-    },
-    {
-     "level": 1,
-     "q": "Who became President of Senegal in 2024?",
-     "a": "Bassirou Diomaye Faye",
-     "wrong": [
-      "Macky Sall",
-      "Ousmane Sonko",
-      "Abdoulaye Wade"
-     ],
-     "why": "He was the youngest elected President in Africa."
-    },
-    {
-     "level": 2,
-     "q": "Which Senegalese singer is famous for 'Seven Seconds' with Neneh Cherry?",
-     "a": "Youssou N'Dour",
-     "wrong": [
-      "Baaba Maal",
-      "Ismaël Lô",
-      "Akon"
-     ],
-     "why": "He was also Minister of Culture."
-    },
-    {
-     "level": 2,
-     "q": "Which old capital is on an island in the Senegal River?",
-     "a": "Saint-Louis",
-     "wrong": [
-      "Rufisque",
-      "Ziguinchor",
-      "Kaolack"
-     ],
-     "why": "It was capital of French West Africa."
-    },
-    {
-     "level": 2,
-     "q": "Which Sufi brotherhood is centred in the holy city of Touba?",
-     "a": "Mouride brotherhood",
-     "wrong": [
-      "Tijaniyya",
-      "Qadiriyya",
-      "Layene"
-     ],
-     "why": "Its founder was Cheikh Amadou Bamba."
     },
     {
      "level": 2,
@@ -150,17 +63,6 @@
     },
     {
      "level": 3,
-     "q": "Which Senegalese film director is called the father of African cinema?",
-     "a": "Ousmane Sembène",
-     "wrong": [
-      "Djibril Diop Mambéty",
-      "Souleymane Cissé",
-      "Abderrahmane Sissako"
-     ],
-     "why": "He made 'Black Girl' in 1966."
-    },
-    {
-     "level": 3,
      "q": "Which historian argued that ancient Egyptians were Black Africans?",
      "a": "Cheikh Anta Diop",
      "wrong": [
@@ -173,8 +75,42 @@
    ]
   },
   {
-   "name": "Senegal: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Senegal?",
+     "a": "Dakar",
+     "wrong": [
+      "Saint-Louis",
+      "Thiès",
+      "Touba"
+     ],
+     "why": "It is the westernmost city of mainland Africa."
+    },
+    {
+     "level": 2,
+     "q": "Which old capital is on an island in the Senegal River?",
+     "a": "Saint-Louis",
+     "wrong": [
+      "Rufisque",
+      "Ziguinchor",
+      "Kaolack"
+     ],
+     "why": "It was capital of French West Africa."
+    },
+    {
+     "level": 2,
+     "q": "Which Sufi brotherhood is centred in the holy city of Touba?",
+     "a": "Mouride brotherhood",
+     "wrong": [
+      "Tijaniyya",
+      "Qadiriyya",
+      "Layene"
+     ],
+     "why": "Its founder was Cheikh Amadou Bamba."
+    },
     {
      "level": 1,
      "q": "Which pink lake near Dakar gets its colour from algae?",
@@ -187,16 +123,44 @@
      "why": "Salt collectors work in it."
     },
     {
-     "level": 1,
-     "q": "Which spicy fish and rice dish is Senegal's national dish?",
-     "a": "Thieboudienne",
+     "level": 2,
+     "q": "Which national park is a famous bird sanctuary on the Senegal River?",
+     "a": "Djoudj National Bird Sanctuary",
      "wrong": [
-      "Jollof rice",
-      "Couscous",
-      "Mafé"
+      "Niokolo-Koba",
+      "Saloum Delta",
+      "Langue de Barbarie"
      ],
-     "why": "It is said to be the origin of jollof."
+     "why": "Millions of birds spend winter there."
     },
+    {
+     "level": 2,
+     "q": "Which delta of mangroves and islands is a UNESCO site?",
+     "a": "Saloum Delta",
+     "wrong": [
+      "Casamance Delta",
+      "Niger Delta",
+      "Okavango Delta"
+     ],
+     "why": "It has huge shell mounds."
+    },
+    {
+     "level": 3,
+     "q": "Which southern region is known for its forests and Diola people?",
+     "a": "Casamance",
+     "wrong": [
+      "Fouta",
+      "Sine-Saloum",
+      "Kédougou"
+     ],
+     "why": "It had a long separatist conflict."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 1,
      "q": "Which famous rally used to end in Dakar?",
@@ -210,17 +174,6 @@
     },
     {
      "level": 1,
-     "q": "Which giant bronze statue overlooks Dakar?",
-     "a": "African Renaissance Monument",
-     "wrong": [
-      "Statue of Liberty",
-      "Motherland Calls",
-      "Christ the Redeemer"
-     ],
-     "why": "It is taller than the Statue of Liberty."
-    },
-    {
-     "level": 1,
      "q": "Which traditional wrestling is Senegal's most popular sport?",
      "a": "Laamb",
      "wrong": [
@@ -229,17 +182,6 @@
       "Judo"
      ],
      "why": "Matches fill stadiums."
-    },
-    {
-     "level": 1,
-     "q": "What is the main language spoken in Senegal besides French?",
-     "a": "Wolof",
-     "wrong": [
-      "Hausa",
-      "Yoruba",
-      "Swahili"
-     ],
-     "why": "Most people understand it."
     },
     {
      "level": 1,
@@ -275,15 +217,150 @@
      "why": "They beat Egypt on penalties."
     },
     {
-     "level": 2,
-     "q": "Which national park is a famous bird sanctuary on the Senegal River?",
-     "a": "Djoudj National Bird Sanctuary",
+     "level": 3,
+     "q": "Which Senegalese defender captained Napoli and played for Chelsea?",
+     "a": "Kalidou Koulibaly",
      "wrong": [
-      "Niokolo-Koba",
-      "Saloum Delta",
-      "Langue de Barbarie"
+      "Sadio Mané",
+      "El Hadji Diouf",
+      "Idrissa Gueye"
      ],
-     "why": "Millions of birds spend winter there."
+     "why": "He was born in France."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Senegalese singer is famous for 'Seven Seconds' with Neneh Cherry?",
+     "a": "Youssou N'Dour",
+     "wrong": [
+      "Baaba Maal",
+      "Ismaël Lô",
+      "Akon"
+     ],
+     "why": "He was also Minister of Culture."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Senegalese film director is called the father of African cinema?",
+     "a": "Ousmane Sembène",
+     "wrong": [
+      "Djibril Diop Mambéty",
+      "Souleymane Cissé",
+      "Abderrahmane Sissako"
+     ],
+     "why": "He made 'Black Girl' in 1966."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who was Senegal's first President and a famous poet?",
+     "a": "Léopold Sédar Senghor",
+     "wrong": [
+      "Abdou Diouf",
+      "Abdoulaye Wade",
+      "Macky Sall"
+     ],
+     "why": "He helped found the Négritude movement."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who became President of Senegal in 2024?",
+     "a": "Bassirou Diomaye Faye",
+     "wrong": [
+      "Macky Sall",
+      "Ousmane Sonko",
+      "Abdoulaye Wade"
+     ],
+     "why": "He was the youngest elected President in Africa."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which giant bronze statue overlooks Dakar?",
+     "a": "African Renaissance Monument",
+     "wrong": [
+      "Statue of Liberty",
+      "Motherland Calls",
+      "Christ the Redeemer"
+     ],
+     "why": "It is taller than the Statue of Liberty."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Senegal's currency?",
+     "a": "West African CFA franc",
+     "wrong": [
+      "Dalasi",
+      "Naira",
+      "Cedi"
+     ],
+     "why": "It is shared by eight countries."
+    },
+    {
+     "level": 1,
+     "q": "Which country is almost surrounded by Senegal?",
+     "a": "The Gambia",
+     "wrong": [
+      "Guinea-Bissau",
+      "Mali",
+      "Mauritania"
+     ],
+     "why": "It follows the Gambia River."
+    },
+    {
+     "level": 1,
+     "q": "Which spicy fish and rice dish is Senegal's national dish?",
+     "a": "Thieboudienne",
+     "wrong": [
+      "Jollof rice",
+      "Couscous",
+      "Mafé"
+     ],
+     "why": "It is said to be the origin of jollof."
+    },
+    {
+     "level": 1,
+     "q": "What is the main language spoken in Senegal besides French?",
+     "a": "Wolof",
+     "wrong": [
+      "Hausa",
+      "Yoruba",
+      "Swahili"
+     ],
+     "why": "Most people understand it."
     },
     {
      "level": 2,
@@ -295,39 +372,6 @@
       "Café Touba"
      ],
      "why": "It is deep red."
-    },
-    {
-     "level": 2,
-     "q": "Which delta of mangroves and islands is a UNESCO site?",
-     "a": "Saloum Delta",
-     "wrong": [
-      "Casamance Delta",
-      "Niger Delta",
-      "Okavango Delta"
-     ],
-     "why": "It has huge shell mounds."
-    },
-    {
-     "level": 3,
-     "q": "Which southern region is known for its forests and Diola people?",
-     "a": "Casamance",
-     "wrong": [
-      "Fouta",
-      "Sine-Saloum",
-      "Kédougou"
-     ],
-     "why": "It had a long separatist conflict."
-    },
-    {
-     "level": 3,
-     "q": "Which Senegalese defender captained Napoli and played for Chelsea?",
-     "a": "Kalidou Koulibaly",
-     "wrong": [
-      "Sadio Mané",
-      "El Hadji Diouf",
-      "Idrissa Gueye"
-     ],
-     "why": "He was born in France."
     },
     {
      "level": 3,

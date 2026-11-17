@@ -3,19 +3,9 @@
  "country": "LT",
  "topics": [
   {
-   "name": "Lithuania: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Lithuania?",
-     "a": "Vilnius",
-     "wrong": [
-      "Kaunas",
-      "Klaipėda",
-      "Šiauliai"
-     ],
-     "why": "Its old town is a UNESCO site."
-    },
     {
      "level": 1,
      "q": "In which year did Lithuania declare independence from the Soviet Union?",
@@ -37,28 +27,6 @@
       "Habsburg Empire"
      ],
      "why": "It was one of Europe's largest states."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Lithuania join the EU and NATO?",
-     "a": "2004",
-     "wrong": [
-      "1995",
-      "2007",
-      "2015"
-     ],
-     "why": "It adopted the euro in 2015."
-    },
-    {
-     "level": 1,
-     "q": "Which grand duke made Lithuania one of Europe's largest states?",
-     "a": "Vytautas the Great",
-     "wrong": [
-      "Mindaugas",
-      "Gediminas",
-      "Jogaila"
-     ],
-     "why": "He ruled from 1392 to 1430."
     },
     {
      "level": 1,
@@ -95,17 +63,6 @@
     },
     {
      "level": 2,
-     "q": "Which 1991 Soviet attack on Vilnius's TV tower killed 14 civilians?",
-     "a": "January Events",
-     "wrong": [
-      "Black January",
-      "Bloody Sunday",
-      "Baltic Crackdown"
-     ],
-     "why": "13 January is Freedom Defenders' Day."
-    },
-    {
-     "level": 2,
      "q": "In which year did Lithuania first declare independence?",
      "a": "1918",
      "wrong": [
@@ -114,17 +71,6 @@
       "1945"
      ],
      "why": "16 February is Independence Day."
-    },
-    {
-     "level": 2,
-     "q": "Which language is often called one of the oldest living Indo-European languages?",
-     "a": "Lithuanian",
-     "wrong": [
-      "Latvian",
-      "Polish",
-      "Estonian"
-     ],
-     "why": "It keeps many ancient features."
     },
     {
      "level": 2,
@@ -173,62 +119,19 @@
    ]
   },
   {
-   "name": "Lithuania: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "Which sport is called Lithuania's 'second religion'?",
-     "a": "Basketball",
+     "q": "What is the capital of Lithuania?",
+     "a": "Vilnius",
      "wrong": [
-      "Football",
-      "Ice hockey",
-      "Volleyball"
+      "Kaunas",
+      "Klaipėda",
+      "Šiauliai"
      ],
-     "why": "The national team has won three Olympic bronzes."
-    },
-    {
-     "level": 1,
-     "q": "What is Lithuania's currency?",
-     "a": "Euro",
-     "wrong": [
-      "Litas",
-      "Lats",
-      "Złoty"
-     ],
-     "why": "It replaced the litas in 2015."
-    },
-    {
-     "level": 1,
-     "q": "Which long sand spit is shared with Russia?",
-     "a": "Curonian Spit",
-     "wrong": [
-      "Hel Peninsula",
-      "Vistula Spit",
-      "Saaremaa Spit"
-     ],
-     "why": "Its dunes are a UNESCO site."
-    },
-    {
-     "level": 1,
-     "q": "Which pink cold beetroot soup is a summer favourite?",
-     "a": "Šaltibarščiai",
-     "wrong": [
-      "Borscht",
-      "Gazpacho",
-      "Okroshka"
-     ],
-     "why": "It is served with hot potatoes."
-    },
-    {
-     "level": 1,
-     "q": "Which zeppelin-shaped potato dumplings are the national dish?",
-     "a": "Cepelinai",
-     "wrong": [
-      "Pierogi",
-      "Varenyky",
-      "Knödel"
-     ],
-     "why": "They are filled with meat or curd."
+     "why": "Its old town is a UNESCO site."
     },
     {
      "level": 1,
@@ -276,17 +179,6 @@
     },
     {
      "level": 2,
-     "q": "Which Lithuanian basketball star played for the Sacramento Kings and Portland?",
-     "a": "Arvydas Sabonis",
-     "wrong": [
-      "Šarūnas Marčiulionis",
-      "Jonas Valančiūnas",
-      "Domantas Sabonis"
-     ],
-     "why": "He was a giant centre."
-    },
-    {
-     "level": 2,
      "q": "Which port city is Lithuania's only one on the Baltic?",
      "a": "Klaipėda",
      "wrong": [
@@ -295,18 +187,92 @@
       "Nida"
      ],
      "why": "It was called Memel."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which sport is called Lithuania's 'second religion'?",
+     "a": "Basketball",
+     "wrong": [
+      "Football",
+      "Ice hockey",
+      "Volleyball"
+     ],
+     "why": "The national team has won three Olympic bronzes."
     },
     {
      "level": 2,
-     "q": "Which tree cake is cooked on a spit?",
-     "a": "Šakotis",
+     "q": "Which Lithuanian basketball star played for the Sacramento Kings and Portland?",
+     "a": "Arvydas Sabonis",
      "wrong": [
-      "Kürtőskalács",
-      "Strudel",
-      "Napoleon cake"
+      "Šarūnas Marčiulionis",
+      "Jonas Valančiūnas",
+      "Domantas Sabonis"
      ],
-     "why": "It looks like a spiky tree."
-    },
+     "why": "He was a giant centre."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which 1991 Soviet attack on Vilnius's TV tower killed 14 civilians?",
+     "a": "January Events",
+     "wrong": [
+      "Black January",
+      "Bloody Sunday",
+      "Baltic Crackdown"
+     ],
+     "why": "13 January is Freedom Defenders' Day."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Lithuanian-born poet won the Nobel Prize while writing in Polish?",
+     "a": "Czesław Miłosz",
+     "wrong": [
+      "Wisława Szymborska",
+      "Adam Mickiewicz",
+      "Tomas Venclova"
+     ],
+     "why": "He grew up near Kėdainiai."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Lithuania join the EU and NATO?",
+     "a": "2004",
+     "wrong": [
+      "1995",
+      "2007",
+      "2015"
+     ],
+     "why": "It adopted the euro in 2015."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
     {
      "level": 3,
      "q": "Which Lithuanian-born artist painted mystical symphonic paintings?",
@@ -320,17 +286,6 @@
     },
     {
      "level": 3,
-     "q": "Which Lithuanian-born poet won the Nobel Prize while writing in Polish?",
-     "a": "Czesław Miłosz",
-     "wrong": [
-      "Wisława Szymborska",
-      "Adam Mickiewicz",
-      "Tomas Venclova"
-     ],
-     "why": "He grew up near Kėdainiai."
-    },
-    {
-     "level": 3,
      "q": "Which Kaunas-born artist founded the Fluxus movement?",
      "a": "George Maciunas",
      "wrong": [
@@ -339,6 +294,89 @@
       "Yoko Ono"
      ],
      "why": "He organised it in New York in the 1960s."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which grand duke made Lithuania one of Europe's largest states?",
+     "a": "Vytautas the Great",
+     "wrong": [
+      "Mindaugas",
+      "Gediminas",
+      "Jogaila"
+     ],
+     "why": "He ruled from 1392 to 1430."
+    },
+    {
+     "level": 2,
+     "q": "Which language is often called one of the oldest living Indo-European languages?",
+     "a": "Lithuanian",
+     "wrong": [
+      "Latvian",
+      "Polish",
+      "Estonian"
+     ],
+     "why": "It keeps many ancient features."
+    },
+    {
+     "level": 1,
+     "q": "What is Lithuania's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Litas",
+      "Lats",
+      "Złoty"
+     ],
+     "why": "It replaced the litas in 2015."
+    },
+    {
+     "level": 1,
+     "q": "Which long sand spit is shared with Russia?",
+     "a": "Curonian Spit",
+     "wrong": [
+      "Hel Peninsula",
+      "Vistula Spit",
+      "Saaremaa Spit"
+     ],
+     "why": "Its dunes are a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which pink cold beetroot soup is a summer favourite?",
+     "a": "Šaltibarščiai",
+     "wrong": [
+      "Borscht",
+      "Gazpacho",
+      "Okroshka"
+     ],
+     "why": "It is served with hot potatoes."
+    },
+    {
+     "level": 1,
+     "q": "Which zeppelin-shaped potato dumplings are the national dish?",
+     "a": "Cepelinai",
+     "wrong": [
+      "Pierogi",
+      "Varenyky",
+      "Knödel"
+     ],
+     "why": "They are filled with meat or curd."
+    },
+    {
+     "level": 2,
+     "q": "Which tree cake is cooked on a spit?",
+     "a": "Šakotis",
+     "wrong": [
+      "Kürtőskalács",
+      "Strudel",
+      "Napoleon cake"
+     ],
+     "why": "It looks like a spiky tree."
     }
    ]
   }

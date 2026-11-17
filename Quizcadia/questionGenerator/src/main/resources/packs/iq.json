@@ -3,7 +3,8 @@
  "country": "IQ",
  "topics": [
   {
-   "name": "Iraq: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -15,17 +16,6 @@
       "Persia"
      ],
      "why": "Writing was invented there."
-    },
-    {
-     "level": 1,
-     "q": "Which people invented cuneiform writing?",
-     "a": "Sumerians",
-     "wrong": [
-      "Egyptians",
-      "Phoenicians",
-      "Hittites"
-     ],
-     "why": "They wrote on clay tablets."
     },
     {
      "level": 1,
@@ -51,28 +41,6 @@
     },
     {
      "level": 1,
-     "q": "Which city was the capital of the Abbasid Caliphate?",
-     "a": "Baghdad",
-     "wrong": [
-      "Damascus",
-      "Cairo",
-      "Basra"
-     ],
-     "why": "It was founded in 762."
-    },
-    {
-     "level": 1,
-     "q": "Which ancient poem is one of the oldest stories ever written?",
-     "a": "Epic of Gilgamesh",
-     "wrong": [
-      "Iliad",
-      "Mahabharata",
-      "Beowulf"
-     ],
-     "why": "Gilgamesh was a king of Uruk."
-    },
-    {
-     "level": 1,
      "q": "In which year did Iraq invade Kuwait, leading to the Gulf War?",
      "a": "1990",
      "wrong": [
@@ -84,17 +52,6 @@
     },
     {
      "level": 2,
-     "q": "Which Abbasid centre of learning in Baghdad translated Greek works?",
-     "a": "House of Wisdom",
-     "wrong": [
-      "Library of Alexandria",
-      "Al-Azhar",
-      "Nizamiyya"
-     ],
-     "why": "It was at its height in the 800s."
-    },
-    {
-     "level": 2,
      "q": "Which Babylonian king built the blue-tiled Ishtar Gate?",
      "a": "Nebuchadnezzar II",
      "wrong": [
@@ -103,17 +60,6 @@
       "Sennacherib"
      ],
      "why": "It now stands in a Berlin museum."
-    },
-    {
-     "level": 2,
-     "q": "Which Assyrian capital had a great library of clay tablets?",
-     "a": "Nineveh",
-     "wrong": [
-      "Babylon",
-      "Ur",
-      "Nimrud"
-     ],
-     "why": "King Ashurbanipal collected it."
     },
     {
      "level": 2,
@@ -169,12 +115,46 @@
       "Seljuks"
      ],
      "why": "Hulagu Khan led them."
+    },
+    {
+     "level": 3,
+     "q": "Which city's Al-Nuri Mosque was rebuilt after 2017?",
+     "a": "Mosul",
+     "wrong": [
+      "Kirkuk",
+      "Tikrit",
+      "Fallujah"
+     ],
+     "why": "Its leaning minaret was called al-Hadba."
     }
    ]
   },
   {
-   "name": "Iraq: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which city was the capital of the Abbasid Caliphate?",
+     "a": "Baghdad",
+     "wrong": [
+      "Damascus",
+      "Cairo",
+      "Basra"
+     ],
+     "why": "It was founded in 762."
+    },
+    {
+     "level": 2,
+     "q": "Which Assyrian capital had a great library of clay tablets?",
+     "a": "Nineveh",
+     "wrong": [
+      "Babylon",
+      "Ur",
+      "Nimrud"
+     ],
+     "why": "King Ashurbanipal collected it."
+    },
     {
      "level": 1,
      "q": "What is the capital of Iraq?",
@@ -199,17 +179,6 @@
     },
     {
      "level": 1,
-     "q": "What is Iraq's currency?",
-     "a": "Iraqi dinar",
-     "wrong": [
-      "Riyal",
-      "Lira",
-      "Pound"
-     ],
-     "why": "The Central Bank of Iraq issues it."
-    },
-    {
-     "level": 1,
      "q": "Which port city is in the far south of Iraq?",
      "a": "Basra",
      "wrong": [
@@ -229,17 +198,6 @@
       "Everglades"
      ],
      "why": "They are a UNESCO site."
-    },
-    {
-     "level": 1,
-     "q": "Which split and fire-grilled carp is a Baghdad speciality?",
-     "a": "Masgouf",
-     "wrong": [
-      "Kebab",
-      "Dolma",
-      "Kubba"
-     ],
-     "why": "It is cooked beside an open fire."
     },
     {
      "level": 1,
@@ -284,6 +242,107 @@
       "Basra"
      ],
      "why": "The minaret is called the Malwiya."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which stringed instrument did Iraqi master Munir Bashir play?",
+     "a": "Oud",
+     "wrong": [
+      "Sitar",
+      "Kora",
+      "Balalaika"
+     ],
+     "why": "He was called the 'Prince of the Oud'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which ancient poem is one of the oldest stories ever written?",
+     "a": "Epic of Gilgamesh",
+     "wrong": [
+      "Iliad",
+      "Mahabharata",
+      "Beowulf"
+     ],
+     "why": "Gilgamesh was a king of Uruk."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Iraqi-British architect designed the London Aquatics Centre?",
+     "a": "Zaha Hadid",
+     "wrong": [
+      "Rifat Chadirji",
+      "Mohamed Makiya",
+      "Norman Foster"
+     ],
+     "why": "She won the Pritzker Prize in 2004."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which people invented cuneiform writing?",
+     "a": "Sumerians",
+     "wrong": [
+      "Egyptians",
+      "Phoenicians",
+      "Hittites"
+     ],
+     "why": "They wrote on clay tablets."
+    },
+    {
+     "level": 2,
+     "q": "Which Abbasid centre of learning in Baghdad translated Greek works?",
+     "a": "House of Wisdom",
+     "wrong": [
+      "Library of Alexandria",
+      "Al-Azhar",
+      "Nizamiyya"
+     ],
+     "why": "It was at its height in the 800s."
+    },
+    {
+     "level": 1,
+     "q": "What is Iraq's currency?",
+     "a": "Iraqi dinar",
+     "wrong": [
+      "Riyal",
+      "Lira",
+      "Pound"
+     ],
+     "why": "The Central Bank of Iraq issues it."
+    },
+    {
+     "level": 1,
+     "q": "Which split and fire-grilled carp is a Baghdad speciality?",
+     "a": "Masgouf",
+     "wrong": [
+      "Kebab",
+      "Dolma",
+      "Kubba"
+     ],
+     "why": "It is cooked beside an open fire."
     },
     {
      "level": 2,
@@ -297,28 +356,6 @@
      "why": "Harun al-Rashid appears in many tales."
     },
     {
-     "level": 2,
-     "q": "Which Iraqi-British architect designed the London Aquatics Centre?",
-     "a": "Zaha Hadid",
-     "wrong": [
-      "Rifat Chadirji",
-      "Mohamed Makiya",
-      "Norman Foster"
-     ],
-     "why": "She won the Pritzker Prize in 2004."
-    },
-    {
-     "level": 3,
-     "q": "Which stringed instrument did Iraqi master Munir Bashir play?",
-     "a": "Oud",
-     "wrong": [
-      "Sitar",
-      "Kora",
-      "Balalaika"
-     ],
-     "why": "He was called the 'Prince of the Oud'."
-    },
-    {
      "level": 3,
      "q": "In which year did Iraq win the AFC Asian Cup?",
      "a": "2007",
@@ -328,17 +365,6 @@
       "2019"
      ],
      "why": "The win united the country in hard times."
-    },
-    {
-     "level": 3,
-     "q": "Which city's Al-Nuri Mosque was rebuilt after 2017?",
-     "a": "Mosul",
-     "wrong": [
-      "Kirkuk",
-      "Tikrit",
-      "Fallujah"
-     ],
-     "why": "Its leaning minaret was called al-Hadba."
     }
    ]
   }

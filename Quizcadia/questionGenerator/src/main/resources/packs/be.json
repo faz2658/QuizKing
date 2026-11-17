@@ -3,19 +3,9 @@
  "country": "BE",
  "topics": [
   {
-   "name": "Belgium: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Belgium?",
-     "a": "Brussels",
-     "wrong": [
-      "Antwerp",
-      "Ghent",
-      "Bruges"
-     ],
-     "why": "It also hosts the EU and NATO headquarters."
-    },
     {
      "level": 1,
      "q": "In which year did Belgium become independent?",
@@ -61,28 +51,6 @@
      "why": "The Menin Gate lists the missing."
     },
     {
-     "level": 1,
-     "q": "Which three languages are official in Belgium?",
-     "a": "Dutch, French and German",
-     "wrong": [
-      "Dutch, French and English",
-      "French, German and Luxembourgish",
-      "Dutch, French and Italian"
-     ],
-     "why": "The German-speaking area is in the east."
-    },
-    {
-     "level": 1,
-     "q": "Who has been King of the Belgians since 2013?",
-     "a": "Philippe",
-     "wrong": [
-      "Albert II",
-      "Baudouin",
-      "Leopold III"
-     ],
-     "why": "His father Albert II abdicated."
-    },
-    {
      "level": 2,
      "q": "Which Belgian king led the army in the First World War?",
      "a": "Albert I",
@@ -116,16 +84,162 @@
      "why": "Patrice Lumumba became Prime Minister."
     },
     {
-     "level": 2,
-     "q": "Which Belgian invented the saxophone?",
-     "a": "Adolphe Sax",
+     "level": 3,
+     "q": "Which Belgian physicist shared the 2013 Nobel Prize for the Higgs boson?",
+     "a": "François Englert",
      "wrong": [
-      "César Franck",
-      "Jacques Brel",
-      "Django Reinhardt"
+      "Georges Lemaître",
+      "Ilya Prigogine",
+      "Christian de Duve"
      ],
-     "why": "He patented it in 1846."
+     "why": "He shared it with Peter Higgs."
     },
+    {
+     "level": 1,
+     "q": "Which Belgian comic hero is a reporter with a dog named Snowy?",
+     "a": "Tintin",
+     "wrong": [
+      "Astérix",
+      "Spirou",
+      "Lucky Luke"
+     ],
+     "why": "Hergé created him in 1929."
+    },
+    {
+     "level": 1,
+     "q": "Which medieval canal city is called the 'Venice of the North'?",
+     "a": "Bruges",
+     "wrong": [
+      "Ghent",
+      "Antwerp",
+      "Leuven"
+     ],
+     "why": "Its centre is a UNESCO site."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Belgium?",
+     "a": "Brussels",
+     "wrong": [
+      "Antwerp",
+      "Ghent",
+      "Bruges"
+     ],
+     "why": "It also hosts the EU and NATO headquarters."
+    },
+    {
+     "level": 2,
+     "q": "Which Belgian city is a world centre of the diamond trade?",
+     "a": "Antwerp",
+     "wrong": [
+      "Ghent",
+      "Liège",
+      "Mechelen"
+     ],
+     "why": "Most of the world's rough diamonds pass through it."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Belgian cyclist won the Tour de France five times?",
+     "a": "Eddy Merckx",
+     "wrong": [
+      "Lucien Van Impe",
+      "Tom Boonen",
+      "Remco Evenepoel"
+     ],
+     "why": "He was nicknamed 'The Cannibal'."
+    },
+    {
+     "level": 3,
+     "q": "Which famous Formula One track is in the Ardennes?",
+     "a": "Spa-Francorchamps",
+     "wrong": [
+      "Zolder",
+      "Nivelles",
+      "Zandvoort"
+     ],
+     "why": "Its Eau Rouge corner is legendary."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Belgian singer wrote 'Ne me quitte pas'?",
+     "a": "Jacques Brel",
+     "wrong": [
+      "Stromae",
+      "Adamo",
+      "Toots Thielemans"
+     ],
+     "why": "He sang in French."
+    },
+    {
+     "level": 3,
+     "q": "Which Belgian singer had a hit with 'Alors on danse'?",
+     "a": "Stromae",
+     "wrong": [
+      "Angèle",
+      "Lost Frequencies",
+      "Lara Fabian"
+     ],
+     "why": "He is from Brussels."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which blue cartoon characters were created by Peyo?",
+     "a": "The Smurfs",
+     "wrong": [
+      "The Snorks",
+      "The Moomins",
+      "The Barbapapas"
+     ],
+     "why": "They first appeared in 1958."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been King of the Belgians since 2013?",
+     "a": "Philippe",
+     "wrong": [
+      "Albert II",
+      "Baudouin",
+      "Leopold III"
+     ],
+     "why": "His father Albert II abdicated."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
     {
      "level": 2,
      "q": "Which Flemish painter made 'The Ghent Altarpiece' with his brother?",
@@ -139,17 +253,6 @@
     },
     {
      "level": 3,
-     "q": "Which Belgian priest first proposed the Big Bang theory?",
-     "a": "Georges Lemaître",
-     "wrong": [
-      "Ernest Solvay",
-      "Christian de Duve",
-      "François Englert"
-     ],
-     "why": "He called it the 'primeval atom'."
-    },
-    {
-     "level": 3,
      "q": "Which Antwerp painter is famous for full-figured women?",
      "a": "Peter Paul Rubens",
      "wrong": [
@@ -159,22 +262,6 @@
      ],
      "why": "'Rubenesque' comes from his name."
     },
-    {
-     "level": 3,
-     "q": "Which Belgian physicist shared the 2013 Nobel Prize for the Higgs boson?",
-     "a": "François Englert",
-     "wrong": [
-      "Georges Lemaître",
-      "Ilya Prigogine",
-      "Christian de Duve"
-     ],
-     "why": "He shared it with Peter Higgs."
-    }
-   ]
-  },
-  {
-   "name": "Belgium: Places & Culture",
-   "questions": [
     {
      "level": 1,
      "q": "Which small statue of a boy is a Brussels landmark?",
@@ -187,15 +274,54 @@
      "why": "He is often dressed in costumes."
     },
     {
-     "level": 1,
-     "q": "Which Belgian comic hero is a reporter with a dog named Snowy?",
-     "a": "Tintin",
+     "level": 3,
+     "q": "Which surrealist painted 'The Son of Man' with an apple over the face?",
+     "a": "René Magritte",
      "wrong": [
-      "Astérix",
-      "Spirou",
-      "Lucky Luke"
+      "Paul Delvaux",
+      "James Ensor",
+      "Salvador Dalí"
      ],
-     "why": "Hergé created him in 1929."
+     "why": "He also painted 'This is not a pipe'."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which three languages are official in Belgium?",
+     "a": "Dutch, French and German",
+     "wrong": [
+      "Dutch, French and English",
+      "French, German and Luxembourgish",
+      "Dutch, French and Italian"
+     ],
+     "why": "The German-speaking area is in the east."
+    },
+    {
+     "level": 2,
+     "q": "Which Belgian invented the saxophone?",
+     "a": "Adolphe Sax",
+     "wrong": [
+      "César Franck",
+      "Jacques Brel",
+      "Django Reinhardt"
+     ],
+     "why": "He patented it in 1846."
+    },
+    {
+     "level": 3,
+     "q": "Which Belgian priest first proposed the Big Bang theory?",
+     "a": "Georges Lemaître",
+     "wrong": [
+      "Ernest Solvay",
+      "Christian de Duve",
+      "François Englert"
+     ],
+     "why": "He called it the 'primeval atom'."
     },
     {
      "level": 1,
@@ -221,17 +347,6 @@
     },
     {
      "level": 1,
-     "q": "Which blue cartoon characters were created by Peyo?",
-     "a": "The Smurfs",
-     "wrong": [
-      "The Snorks",
-      "The Moomins",
-      "The Barbapapas"
-     ],
-     "why": "They first appeared in 1958."
-    },
-    {
-     "level": 1,
      "q": "Which sweet is Belgium famous for, along with waffles?",
      "a": "Chocolate",
      "wrong": [
@@ -240,17 +355,6 @@
       "Marzipan"
      ],
      "why": "Pralines were invented in Brussels."
-    },
-    {
-     "level": 1,
-     "q": "Which medieval canal city is called the 'Venice of the North'?",
-     "a": "Bruges",
-     "wrong": [
-      "Ghent",
-      "Antwerp",
-      "Leuven"
-     ],
-     "why": "Its centre is a UNESCO site."
     },
     {
      "level": 2,
@@ -273,72 +377,6 @@
       "Jesuits"
      ],
      "why": "Westvleteren is one of them."
-    },
-    {
-     "level": 2,
-     "q": "Which Belgian city is a world centre of the diamond trade?",
-     "a": "Antwerp",
-     "wrong": [
-      "Ghent",
-      "Liège",
-      "Mechelen"
-     ],
-     "why": "Most of the world's rough diamonds pass through it."
-    },
-    {
-     "level": 2,
-     "q": "Which Belgian cyclist won the Tour de France five times?",
-     "a": "Eddy Merckx",
-     "wrong": [
-      "Lucien Van Impe",
-      "Tom Boonen",
-      "Remco Evenepoel"
-     ],
-     "why": "He was nicknamed 'The Cannibal'."
-    },
-    {
-     "level": 2,
-     "q": "Which Belgian singer wrote 'Ne me quitte pas'?",
-     "a": "Jacques Brel",
-     "wrong": [
-      "Stromae",
-      "Adamo",
-      "Toots Thielemans"
-     ],
-     "why": "He sang in French."
-    },
-    {
-     "level": 3,
-     "q": "Which surrealist painted 'The Son of Man' with an apple over the face?",
-     "a": "René Magritte",
-     "wrong": [
-      "Paul Delvaux",
-      "James Ensor",
-      "Salvador Dalí"
-     ],
-     "why": "He also painted 'This is not a pipe'."
-    },
-    {
-     "level": 3,
-     "q": "Which Belgian singer had a hit with 'Alors on danse'?",
-     "a": "Stromae",
-     "wrong": [
-      "Angèle",
-      "Lost Frequencies",
-      "Lara Fabian"
-     ],
-     "why": "He is from Brussels."
-    },
-    {
-     "level": 3,
-     "q": "Which famous Formula One track is in the Ardennes?",
-     "a": "Spa-Francorchamps",
-     "wrong": [
-      "Zolder",
-      "Nivelles",
-      "Zandvoort"
-     ],
-     "why": "Its Eau Rouge corner is legendary."
     }
    ]
   }

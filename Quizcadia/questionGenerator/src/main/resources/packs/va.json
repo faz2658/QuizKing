@@ -3,41 +3,9 @@
  "country": "VA",
  "topics": [
   {
-   "name": "Vatican City: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which city surrounds Vatican City?",
-     "a": "Rome",
-     "wrong": [
-      "Milan",
-      "Florence",
-      "Naples"
-     ],
-     "why": "It is an enclave inside Rome."
-    },
-    {
-     "level": 1,
-     "q": "What is Vatican City famous for being?",
-     "a": "The world's smallest country",
-     "wrong": [
-      "Europe's newest country",
-      "The world's largest monastery",
-      "An island state"
-     ],
-     "why": "It covers about 0.44 square kilometres."
-    },
-    {
-     "level": 1,
-     "q": "Who is the head of state of Vatican City?",
-     "a": "The Pope",
-     "wrong": [
-      "The President of Italy",
-      "A Cardinal Secretary",
-      "An elected mayor"
-     ],
-     "why": "He is also Bishop of Rome."
-    },
     {
      "level": 1,
      "q": "Which 1929 treaty created Vatican City as a state?",
@@ -48,50 +16,6 @@
       "Concordat of Worms"
      ],
      "why": "Mussolini's government signed it."
-    },
-    {
-     "level": 1,
-     "q": "Which Swiss soldiers guard the Pope?",
-     "a": "Swiss Guard",
-     "wrong": [
-      "Papal Lancers",
-      "Vatican Rangers",
-      "Holy Grenadiers"
-     ],
-     "why": "They have served since 1506."
-    },
-    {
-     "level": 1,
-     "q": "Which pope was elected in May 2025?",
-     "a": "Leo XIV",
-     "wrong": [
-      "Francis",
-      "Benedict XVI",
-      "John XXIII"
-     ],
-     "why": "He was born in Chicago."
-    },
-    {
-     "level": 1,
-     "q": "What rises from the chimney when a new pope is chosen?",
-     "a": "White smoke",
-     "wrong": [
-      "Black smoke",
-      "Red smoke",
-      "Blue smoke"
-     ],
-     "why": "Black smoke means no decision yet."
-    },
-    {
-     "level": 2,
-     "q": "What is the gathering of cardinals that elects a pope called?",
-     "a": "Conclave",
-     "wrong": [
-      "Synod",
-      "Council",
-      "Consistory"
-     ],
-     "why": "It is held in the Sistine Chapel."
     },
     {
      "level": 2,
@@ -160,6 +84,95 @@
      "why": "It allowed Mass in local languages."
     },
     {
+     "level": 1,
+     "q": "Which square in front of St Peter's has a colonnade by Bernini?",
+     "a": "St Peter's Square",
+     "wrong": [
+      "Piazza Navona",
+      "Piazza Venezia",
+      "Campo de' Fiori"
+     ],
+     "why": "It can hold tens of thousands of people."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient Egyptian monument stands in St Peter's Square?",
+     "a": "An obelisk",
+     "wrong": [
+      "A sphinx",
+      "A pyramid",
+      "A statue of Ramses"
+     ],
+     "why": "It was moved there in 1586."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which city surrounds Vatican City?",
+     "a": "Rome",
+     "wrong": [
+      "Milan",
+      "Florence",
+      "Naples"
+     ],
+     "why": "It is an enclave inside Rome."
+    },
+    {
+     "level": 1,
+     "q": "What is Vatican City famous for being?",
+     "a": "The world's smallest country",
+     "wrong": [
+      "Europe's newest country",
+      "The world's largest monastery",
+      "An island state"
+     ],
+     "why": "It covers about 0.44 square kilometres."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of Vatican City's state?",
+     "a": "Italian",
+     "wrong": [
+      "Latin",
+      "French",
+      "English"
+     ],
+     "why": "Latin is the language of the Holy See."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who is the head of state of Vatican City?",
+     "a": "The Pope",
+     "wrong": [
+      "The President of Italy",
+      "A Cardinal Secretary",
+      "An elected mayor"
+     ],
+     "why": "He is also Bishop of Rome."
+    },
+    {
+     "level": 1,
+     "q": "Which pope was elected in May 2025?",
+     "a": "Leo XIV",
+     "wrong": [
+      "Francis",
+      "Benedict XVI",
+      "John XXIII"
+     ],
+     "why": "He was born in Chicago."
+    },
+    {
      "level": 3,
      "q": "What is the Vatican's central government office called?",
      "a": "Roman Curia",
@@ -173,7 +186,8 @@
    ]
   },
   {
-   "name": "Vatican City: Places & Culture",
+   "category": "Art",
+   "name": "Art",
    "questions": [
     {
      "level": 1,
@@ -188,39 +202,6 @@
     },
     {
      "level": 1,
-     "q": "Which huge church stands over the tomb of St Peter?",
-     "a": "St Peter's Basilica",
-     "wrong": [
-      "St John Lateran",
-      "Santa Maria Maggiore",
-      "St Paul Outside the Walls"
-     ],
-     "why": "It is one of the largest churches in the world."
-    },
-    {
-     "level": 1,
-     "q": "What is the official language of Vatican City's state?",
-     "a": "Italian",
-     "wrong": [
-      "Latin",
-      "French",
-      "English"
-     ],
-     "why": "Latin is the language of the Holy See."
-    },
-    {
-     "level": 1,
-     "q": "Which square in front of St Peter's has a colonnade by Bernini?",
-     "a": "St Peter's Square",
-     "wrong": [
-      "Piazza Navona",
-      "Piazza Venezia",
-      "Campo de' Fiori"
-     ],
-     "why": "It can hold tens of thousands of people."
-    },
-    {
-     "level": 1,
      "q": "Which fresco shows God giving life to Adam?",
      "a": "The Creation of Adam",
      "wrong": [
@@ -229,28 +210,6 @@
       "The Last Supper"
      ],
      "why": "It is on the Sistine Chapel ceiling."
-    },
-    {
-     "level": 1,
-     "q": "What is the Vatican's currency?",
-     "a": "Euro",
-     "wrong": [
-      "Vatican lira",
-      "Swiss franc",
-      "Papal scudo"
-     ],
-     "why": "It issues its own euro coins."
-    },
-    {
-     "level": 1,
-     "q": "Which radio station broadcasts from the Vatican?",
-     "a": "Vatican Radio",
-     "wrong": [
-      "Radio Roma",
-      "RAI Uno",
-      "Radio Maria"
-     ],
-     "why": "Guglielmo Marconi helped set it up in 1931."
     },
     {
      "level": 2,
@@ -284,6 +243,78 @@
       "Borghese Gallery"
      ],
      "why": "It has about 7 km of halls."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Swiss soldiers guard the Pope?",
+     "a": "Swiss Guard",
+     "wrong": [
+      "Papal Lancers",
+      "Vatican Rangers",
+      "Holy Grenadiers"
+     ],
+     "why": "They have served since 1506."
+    },
+    {
+     "level": 1,
+     "q": "What rises from the chimney when a new pope is chosen?",
+     "a": "White smoke",
+     "wrong": [
+      "Black smoke",
+      "Red smoke",
+      "Blue smoke"
+     ],
+     "why": "Black smoke means no decision yet."
+    },
+    {
+     "level": 2,
+     "q": "What is the gathering of cardinals that elects a pope called?",
+     "a": "Conclave",
+     "wrong": [
+      "Synod",
+      "Council",
+      "Consistory"
+     ],
+     "why": "It is held in the Sistine Chapel."
+    },
+    {
+     "level": 1,
+     "q": "Which huge church stands over the tomb of St Peter?",
+     "a": "St Peter's Basilica",
+     "wrong": [
+      "St John Lateran",
+      "Santa Maria Maggiore",
+      "St Paul Outside the Walls"
+     ],
+     "why": "It is one of the largest churches in the world."
+    },
+    {
+     "level": 1,
+     "q": "What is the Vatican's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Vatican lira",
+      "Swiss franc",
+      "Papal scudo"
+     ],
+     "why": "It issues its own euro coins."
+    },
+    {
+     "level": 1,
+     "q": "Which radio station broadcasts from the Vatican?",
+     "a": "Vatican Radio",
+     "wrong": [
+      "Radio Roma",
+      "RAI Uno",
+      "Radio Maria"
+     ],
+     "why": "Guglielmo Marconi helped set it up in 1931."
     },
     {
      "level": 2,
@@ -295,17 +326,6 @@
       "Purple and silver"
      ],
      "why": "The design is often credited to Michelangelo."
-    },
-    {
-     "level": 2,
-     "q": "Which ancient Egyptian monument stands in St Peter's Square?",
-     "a": "An obelisk",
-     "wrong": [
-      "A sphinx",
-      "A pyramid",
-      "A statue of Ramses"
-     ],
-     "why": "It was moved there in 1586."
     },
     {
      "level": 3,

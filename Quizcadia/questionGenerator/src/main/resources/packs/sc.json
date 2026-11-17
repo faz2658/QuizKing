@@ -3,19 +3,9 @@
  "country": "SC",
  "topics": [
   {
-   "name": "Seychelles: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of the Seychelles?",
-     "a": "Victoria",
-     "wrong": [
-      "Anse Royale",
-      "Beau Vallon",
-      "Baie Lazare"
-     ],
-     "why": "It is one of the world's smallest capitals."
-    },
     {
      "level": 1,
      "q": "From which country did the Seychelles gain independence in 1976?",
@@ -26,50 +16,6 @@
       "Netherlands"
      ],
      "why": "It was first settled by the French."
-    },
-    {
-     "level": 1,
-     "q": "How many islands make up the Seychelles?",
-     "a": "115",
-     "wrong": [
-      "15",
-      "50",
-      "300"
-     ],
-     "why": "Mahé is the largest."
-    },
-    {
-     "level": 1,
-     "q": "What is the currency of the Seychelles?",
-     "a": "Seychellois rupee",
-     "wrong": [
-      "Euro",
-      "Mauritian rupee",
-      "Indian rupee"
-     ],
-     "why": "Its code is SCR."
-    },
-    {
-     "level": 1,
-     "q": "Which ocean is the Seychelles in?",
-     "a": "Indian Ocean",
-     "wrong": [
-      "Atlantic Ocean",
-      "Pacific Ocean",
-      "Arctic Ocean"
-     ],
-     "why": "It is northeast of Madagascar."
-    },
-    {
-     "level": 1,
-     "q": "What is the largest island of the Seychelles?",
-     "a": "Mahé",
-     "wrong": [
-      "Praslin",
-      "La Digue",
-      "Aldabra"
-     ],
-     "why": "Most people live there."
     },
     {
      "level": 1,
@@ -95,28 +41,6 @@
     },
     {
      "level": 2,
-     "q": "Who became President in 2025?",
-     "a": "Patrick Herminie",
-     "wrong": [
-      "Wavel Ramkalawan",
-      "Danny Faure",
-      "James Michel"
-     ],
-     "why": "He beat Ramkalawan in a run-off."
-    },
-    {
-     "level": 2,
-     "q": "Which French minister gave the islands their name?",
-     "a": "Jean Moreau de Séchelles",
-     "wrong": [
-      "Louis XV",
-      "Mahé de La Bourdonnais",
-      "Pierre Poivre"
-     ],
-     "why": "He was a finance minister."
-    },
-    {
-     "level": 2,
      "q": "Which 1981 mercenary attack was led by 'Mad Mike' Hoare?",
      "a": "1981 Seychelles coup attempt",
      "wrong": [
@@ -125,17 +49,6 @@
       "Bay of Pigs"
      ],
      "why": "They pretended to be a rugby club."
-    },
-    {
-     "level": 2,
-     "q": "Which island group is the Seychelles' most remote, with giant tortoises?",
-     "a": "Aldabra Atoll",
-     "wrong": [
-      "Amirantes",
-      "Farquhar",
-      "Cosmoledo"
-     ],
-     "why": "It is a UNESCO site."
     },
     {
      "level": 3,
@@ -147,6 +60,56 @@
       "James Michel"
      ],
      "why": "He was an Anglican priest."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Seychelles?",
+     "a": "Victoria",
+     "wrong": [
+      "Anse Royale",
+      "Beau Vallon",
+      "Baie Lazare"
+     ],
+     "why": "It is one of the world's smallest capitals."
+    },
+    {
+     "level": 1,
+     "q": "How many islands make up the Seychelles?",
+     "a": "115",
+     "wrong": [
+      "15",
+      "50",
+      "300"
+     ],
+     "why": "Mahé is the largest."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is the Seychelles in?",
+     "a": "Indian Ocean",
+     "wrong": [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It is northeast of Madagascar."
+    },
+    {
+     "level": 1,
+     "q": "What is the largest island of the Seychelles?",
+     "a": "Mahé",
+     "wrong": [
+      "Praslin",
+      "La Digue",
+      "Aldabra"
+     ],
+     "why": "Most people live there."
     },
     {
      "level": 3,
@@ -158,33 +121,6 @@
       "Bird and Denis"
      ],
      "why": "They were returned in 1976."
-    },
-    {
-     "level": 3,
-     "q": "In which year did Britain take the Seychelles from France?",
-     "a": "1814",
-     "wrong": [
-      "1756",
-      "1903",
-      "1976"
-     ],
-     "why": "It was ruled from Mauritius until 1903."
-    }
-   ]
-  },
-  {
-   "name": "Seychelles: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "Which giant palm nut grows only on Praslin and Curieuse?",
-     "a": "Coco de mer",
-     "wrong": [
-      "Coconut",
-      "Date",
-      "Betel nut"
-     ],
-     "why": "It is the world's largest seed."
     },
     {
      "level": 1,
@@ -207,6 +143,145 @@
       "Grand Anse"
      ],
      "why": "It is one of the most photographed beaches."
+    },
+    {
+     "level": 2,
+     "q": "Which national park covers the highest mountain on Mahé?",
+     "a": "Morne Seychellois National Park",
+     "wrong": [
+      "Vallée de Mai",
+      "Ste Anne Marine Park",
+      "Curieuse"
+     ],
+     "why": "It covers a fifth of Mahé."
+    },
+    {
+     "level": 3,
+     "q": "Which marine park off Victoria protects coral reefs?",
+     "a": "Sainte Anne Marine National Park",
+     "wrong": [
+      "Aldabra Marine Park",
+      "Curieuse",
+      "Bazaruto"
+     ],
+     "why": "It was created in 1973."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Who became President in 2025?",
+     "a": "Patrick Herminie",
+     "wrong": [
+      "Wavel Ramkalawan",
+      "Danny Faure",
+      "James Michel"
+     ],
+     "why": "He beat Ramkalawan in a run-off."
+    },
+    {
+     "level": 2,
+     "q": "Which French minister gave the islands their name?",
+     "a": "Jean Moreau de Séchelles",
+     "wrong": [
+      "Louis XV",
+      "Mahé de La Bourdonnais",
+      "Pierre Poivre"
+     ],
+     "why": "He was a finance minister."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which island group is the Seychelles' most remote, with giant tortoises?",
+     "a": "Aldabra Atoll",
+     "wrong": [
+      "Amirantes",
+      "Farquhar",
+      "Cosmoledo"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which giant animals live on Aldabra?",
+     "a": "Giant tortoises",
+     "wrong": [
+      "Komodo dragons",
+      "Elephant seals",
+      "Polar bears"
+     ],
+     "why": "About 100,000 live there."
+    },
+    {
+     "level": 2,
+     "q": "Which island is home to rare birds and huge tortoises near Praslin?",
+     "a": "Cousin Island",
+     "wrong": [
+      "Bird Island",
+      "Silhouette",
+      "Fregate"
+     ],
+     "why": "It is a bird reserve."
+    },
+    {
+     "level": 3,
+     "q": "Which bird found only on Seychelles is a black paradise flycatcher?",
+     "a": "Seychelles paradise flycatcher",
+     "wrong": [
+      "Seychelles kestrel",
+      "Pink pigeon",
+      "Kakapo"
+     ],
+     "why": "It lives on La Digue."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the currency of the Seychelles?",
+     "a": "Seychellois rupee",
+     "wrong": [
+      "Euro",
+      "Mauritian rupee",
+      "Indian rupee"
+     ],
+     "why": "Its code is SCR."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Britain take the Seychelles from France?",
+     "a": "1814",
+     "wrong": [
+      "1756",
+      "1903",
+      "1976"
+     ],
+     "why": "It was ruled from Mauritius until 1903."
+    },
+    {
+     "level": 1,
+     "q": "Which giant palm nut grows only on Praslin and Curieuse?",
+     "a": "Coco de mer",
+     "wrong": [
+      "Coconut",
+      "Date",
+      "Betel nut"
+     ],
+     "why": "It is the world's largest seed."
     },
     {
      "level": 1,
@@ -232,17 +307,6 @@
     },
     {
      "level": 1,
-     "q": "Which giant animals live on Aldabra?",
-     "a": "Giant tortoises",
-     "wrong": [
-      "Komodo dragons",
-      "Elephant seals",
-      "Polar bears"
-     ],
-     "why": "About 100,000 live there."
-    },
-    {
-     "level": 1,
      "q": "Which fish is the basis of much Seychellois cooking?",
      "a": "Fish and seafood with curry",
      "wrong": [
@@ -251,28 +315,6 @@
       "Pork"
      ],
      "why": "Octopus curry is popular."
-    },
-    {
-     "level": 2,
-     "q": "Which national park covers the highest mountain on Mahé?",
-     "a": "Morne Seychellois National Park",
-     "wrong": [
-      "Vallée de Mai",
-      "Ste Anne Marine Park",
-      "Curieuse"
-     ],
-     "why": "It covers a fifth of Mahé."
-    },
-    {
-     "level": 2,
-     "q": "Which island is home to rare birds and huge tortoises near Praslin?",
-     "a": "Cousin Island",
-     "wrong": [
-      "Bird Island",
-      "Silhouette",
-      "Fregate"
-     ],
-     "why": "It is a bird reserve."
     },
     {
      "level": 2,
@@ -306,28 +348,6 @@
       "Shark fin curry"
      ],
      "why": "Bats are cooked in a spicy sauce."
-    },
-    {
-     "level": 3,
-     "q": "Which marine park off Victoria protects coral reefs?",
-     "a": "Sainte Anne Marine National Park",
-     "wrong": [
-      "Aldabra Marine Park",
-      "Curieuse",
-      "Bazaruto"
-     ],
-     "why": "It was created in 1973."
-    },
-    {
-     "level": 3,
-     "q": "Which bird found only on Seychelles is a black paradise flycatcher?",
-     "a": "Seychelles paradise flycatcher",
-     "wrong": [
-      "Seychelles kestrel",
-      "Pink pigeon",
-      "Kakapo"
-     ],
-     "why": "It lives on La Digue."
     },
     {
      "level": 3,

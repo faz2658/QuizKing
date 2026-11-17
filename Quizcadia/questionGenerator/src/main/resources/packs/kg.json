@@ -3,19 +3,9 @@
  "country": "KG",
  "topics": [
   {
-   "name": "Kyrgyzstan: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Kyrgyzstan?",
-     "a": "Bishkek",
-     "wrong": [
-      "Osh",
-      "Jalal-Abad",
-      "Karakol"
-     ],
-     "why": "It was called Frunze in Soviet times."
-    },
     {
      "level": 1,
      "q": "In which year did Kyrgyzstan become independent?",
@@ -26,72 +16,6 @@
       "1996"
      ],
      "why": "It left the Soviet Union."
-    },
-    {
-     "level": 1,
-     "q": "What is Kyrgyzstan's currency?",
-     "a": "Som",
-     "wrong": [
-      "Tenge",
-      "Somoni",
-      "Manat"
-     ],
-     "why": "Its code is KGS."
-    },
-    {
-     "level": 1,
-     "q": "Which epic poem is one of the longest in the world?",
-     "a": "Epic of Manas",
-     "wrong": [
-      "Shahnameh",
-      "Mahabharata",
-      "Iliad"
-     ],
-     "why": "It is about a Kyrgyz hero."
-    },
-    {
-     "level": 1,
-     "q": "Which mountain range covers most of Kyrgyzstan?",
-     "a": "Tian Shan",
-     "wrong": [
-      "Himalayas",
-      "Altai",
-      "Hindu Kush"
-     ],
-     "why": "About 90% of the land is over 1,500 m."
-    },
-    {
-     "level": 1,
-     "q": "Which nomadic tent do Kyrgyz people use?",
-     "a": "Yurt (boz üy)",
-     "wrong": [
-      "Tipi",
-      "Igloo",
-      "Hogan"
-     ],
-     "why": "A yurt crown is on the flag."
-    },
-    {
-     "level": 1,
-     "q": "Who became President of Kyrgyzstan in 2021?",
-     "a": "Sadyr Japarov",
-     "wrong": [
-      "Sooronbay Jeenbekov",
-      "Almazbek Atambayev",
-      "Kurmanbek Bakiyev"
-     ],
-     "why": "He was freed from prison during protests."
-    },
-    {
-     "level": 2,
-     "q": "Which 2005 protests ousted President Askar Akayev?",
-     "a": "Tulip Revolution",
-     "wrong": [
-      "Rose Revolution",
-      "Orange Revolution",
-      "Velvet Revolution"
-     ],
-     "why": "He fled to Russia."
     },
     {
      "level": 2,
@@ -127,28 +51,6 @@
      "why": "Papermaking spread west after it."
     },
     {
-     "level": 2,
-     "q": "Which writer wrote 'Jamila' and 'The Day Lasts More Than a Hundred Years'?",
-     "a": "Chinghiz Aitmatov",
-     "wrong": [
-      "Mukhtar Auezov",
-      "Abai Kunanbayev",
-      "Alisher Navoi"
-     ],
-     "why": "He is the country's best-known author."
-    },
-    {
-     "level": 3,
-     "q": "Which sacred mountain in Osh is a UNESCO site?",
-     "a": "Sulaiman-Too",
-     "wrong": [
-      "Khan Tengri",
-      "Peak Lenin",
-      "Ala-Too"
-     ],
-     "why": "It was a beacon on the Silk Road."
-    },
-    {
      "level": 3,
      "q": "Which ancient Silk Road city ruins near Tokmok include a minaret?",
      "a": "Burana Tower (Balasagun)",
@@ -173,8 +75,42 @@
    ]
   },
   {
-   "name": "Kyrgyzstan: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Kyrgyzstan?",
+     "a": "Bishkek",
+     "wrong": [
+      "Osh",
+      "Jalal-Abad",
+      "Karakol"
+     ],
+     "why": "It was called Frunze in Soviet times."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain range covers most of Kyrgyzstan?",
+     "a": "Tian Shan",
+     "wrong": [
+      "Himalayas",
+      "Altai",
+      "Hindu Kush"
+     ],
+     "why": "About 90% of the land is over 1,500 m."
+    },
+    {
+     "level": 3,
+     "q": "Which sacred mountain in Osh is a UNESCO site?",
+     "a": "Sulaiman-Too",
+     "wrong": [
+      "Khan Tengri",
+      "Peak Lenin",
+      "Ala-Too"
+     ],
+     "why": "It was a beacon on the Silk Road."
+    },
     {
      "level": 1,
      "q": "Which huge mountain lake never freezes in winter?",
@@ -185,6 +121,190 @@
       "Lake Balkhash"
      ],
      "why": "It is slightly salty."
+    },
+    {
+     "level": 1,
+     "q": "Which high summer lake is famous for yurt stays?",
+     "a": "Song-Kul",
+     "wrong": [
+      "Issyk-Kul",
+      "Sary-Chelek",
+      "Kel-Suu"
+     ],
+     "why": "It is at about 3,000 m."
+    },
+    {
+     "level": 2,
+     "q": "Which peak on the China border is Kyrgyzstan's highest?",
+     "a": "Jengish Chokusu (Victory Peak)",
+     "wrong": [
+      "Peak Lenin",
+      "Khan Tengri",
+      "Peak Communism"
+     ],
+     "why": "It is about 7,440 m high."
+    },
+    {
+     "level": 2,
+     "q": "Which stone caravanserai on the Silk Road is near the Chinese border?",
+     "a": "Tash Rabat",
+     "wrong": [
+      "Burana",
+      "Bukhara Caravanserai",
+      "Hunza Fort"
+     ],
+     "why": "It dates from the 1400s."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain in the south is a famous climbing peak on the Tajik border?",
+     "a": "Peak Lenin (Ibn Sina Peak)",
+     "wrong": [
+      "Victory Peak",
+      "Khan Tengri",
+      "K2"
+     ],
+     "why": "It is about 7,134 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which walnut forest in Arslanbob is one of the world's largest?",
+     "a": "Arslanbob walnut forest",
+     "wrong": [
+      "Black Forest",
+      "Białowieża",
+      "Sherwood Forest"
+     ],
+     "why": "Legend links it to Alexander the Great."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which three-string instrument is played in Kyrgyz music?",
+     "a": "Komuz",
+     "wrong": [
+      "Dombra",
+      "Balalaika",
+      "Sitar"
+     ],
+     "why": "It has no frets."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which epic poem is one of the longest in the world?",
+     "a": "Epic of Manas",
+     "wrong": [
+      "Shahnameh",
+      "Mahabharata",
+      "Iliad"
+     ],
+     "why": "It is about a Kyrgyz hero."
+    },
+    {
+     "level": 2,
+     "q": "Which writer wrote 'Jamila' and 'The Day Lasts More Than a Hundred Years'?",
+     "a": "Chinghiz Aitmatov",
+     "wrong": [
+      "Mukhtar Auezov",
+      "Abai Kunanbayev",
+      "Alisher Navoi"
+     ],
+     "why": "He is the country's best-known author."
+    },
+    {
+     "level": 2,
+     "q": "Which red rock canyon near Issyk-Kul is named after a fairy tale?",
+     "a": "Skazka Canyon",
+     "wrong": [
+      "Jeti-Ögüz",
+      "Charyn Canyon",
+      "Barskoon"
+     ],
+     "why": "Its name means 'fairy tale'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who became President of Kyrgyzstan in 2021?",
+     "a": "Sadyr Japarov",
+     "wrong": [
+      "Sooronbay Jeenbekov",
+      "Almazbek Atambayev",
+      "Kurmanbek Bakiyev"
+     ],
+     "why": "He was freed from prison during protests."
+    },
+    {
+     "level": 2,
+     "q": "Which 2005 protests ousted President Askar Akayev?",
+     "a": "Tulip Revolution",
+     "wrong": [
+      "Rose Revolution",
+      "Orange Revolution",
+      "Velvet Revolution"
+     ],
+     "why": "He fled to Russia."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which felt carpets with bold patterns are a Kyrgyz craft?",
+     "a": "Shyrdak",
+     "wrong": [
+      "Kilim",
+      "Suzani",
+      "Ikat"
+     ],
+     "why": "They are on UNESCO's list."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Kyrgyzstan's currency?",
+     "a": "Som",
+     "wrong": [
+      "Tenge",
+      "Somoni",
+      "Manat"
+     ],
+     "why": "Its code is KGS."
+    },
+    {
+     "level": 1,
+     "q": "Which nomadic tent do Kyrgyz people use?",
+     "a": "Yurt (boz üy)",
+     "wrong": [
+      "Tipi",
+      "Igloo",
+      "Hogan"
+     ],
+     "why": "A yurt crown is on the flag."
     },
     {
      "level": 1,
@@ -231,72 +351,6 @@
      "why": "It is a national symbol."
     },
     {
-     "level": 1,
-     "q": "Which three-string instrument is played in Kyrgyz music?",
-     "a": "Komuz",
-     "wrong": [
-      "Dombra",
-      "Balalaika",
-      "Sitar"
-     ],
-     "why": "It has no frets."
-    },
-    {
-     "level": 1,
-     "q": "Which high summer lake is famous for yurt stays?",
-     "a": "Song-Kul",
-     "wrong": [
-      "Issyk-Kul",
-      "Sary-Chelek",
-      "Kel-Suu"
-     ],
-     "why": "It is at about 3,000 m."
-    },
-    {
-     "level": 2,
-     "q": "Which peak on the China border is Kyrgyzstan's highest?",
-     "a": "Jengish Chokusu (Victory Peak)",
-     "wrong": [
-      "Peak Lenin",
-      "Khan Tengri",
-      "Peak Communism"
-     ],
-     "why": "It is about 7,440 m high."
-    },
-    {
-     "level": 2,
-     "q": "Which red rock canyon near Issyk-Kul is named after a fairy tale?",
-     "a": "Skazka Canyon",
-     "wrong": [
-      "Jeti-Ögüz",
-      "Charyn Canyon",
-      "Barskoon"
-     ],
-     "why": "Its name means 'fairy tale'."
-    },
-    {
-     "level": 2,
-     "q": "Which stone caravanserai on the Silk Road is near the Chinese border?",
-     "a": "Tash Rabat",
-     "wrong": [
-      "Burana",
-      "Bukhara Caravanserai",
-      "Hunza Fort"
-     ],
-     "why": "It dates from the 1400s."
-    },
-    {
-     "level": 2,
-     "q": "Which felt carpets with bold patterns are a Kyrgyz craft?",
-     "a": "Shyrdak",
-     "wrong": [
-      "Kilim",
-      "Suzani",
-      "Ikat"
-     ],
-     "why": "They are on UNESCO's list."
-    },
-    {
      "level": 2,
      "q": "Which hand-pulled noodle dish is popular?",
      "a": "Lagman",
@@ -306,28 +360,6 @@
       "Udon"
      ],
      "why": "It came from the Uyghurs."
-    },
-    {
-     "level": 3,
-     "q": "Which mountain in the south is a famous climbing peak on the Tajik border?",
-     "a": "Peak Lenin (Ibn Sina Peak)",
-     "wrong": [
-      "Victory Peak",
-      "Khan Tengri",
-      "K2"
-     ],
-     "why": "It is about 7,134 m high."
-    },
-    {
-     "level": 3,
-     "q": "Which walnut forest in Arslanbob is one of the world's largest?",
-     "a": "Arslanbob walnut forest",
-     "wrong": [
-      "Black Forest",
-      "Białowieża",
-      "Sherwood Forest"
-     ],
-     "why": "Legend links it to Alexander the Great."
     },
     {
      "level": 3,

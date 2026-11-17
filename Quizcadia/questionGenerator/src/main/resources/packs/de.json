@@ -3,7 +3,8 @@
  "country": "DE",
  "topics": [
   {
-   "name": "Germany History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -62,17 +63,6 @@
     },
     {
      "level": 1,
-     "q": "Who invented the printing press with movable type around 1450?",
-     "a": "Johannes Gutenberg",
-     "wrong": [
-      "Albrecht Dürer",
-      "Martin Luther",
-      "Johannes Kepler"
-     ],
-     "why": "He worked in Mainz."
-    },
-    {
-     "level": 1,
      "q": "Which city was divided into East and West during the Cold War?",
      "a": "Berlin",
      "wrong": [
@@ -117,17 +107,6 @@
     },
     {
      "level": 2,
-     "q": "Which Chancellor oversaw German reunification?",
-     "a": "Helmut Kohl",
-     "wrong": [
-      "Gerhard Schröder",
-      "Helmut Schmidt",
-      "Willy Brandt"
-     ],
-     "why": "He served for 16 years."
-    },
-    {
-     "level": 2,
      "q": "What was the German democracy between 1919 and 1933 called?",
      "a": "Weimar Republic",
      "wrong": [
@@ -150,17 +129,6 @@
     },
     {
      "level": 3,
-     "q": "Which medieval trade league was centred on Lübeck?",
-     "a": "Hanseatic League",
-     "wrong": [
-      "Swabian League",
-      "Rhine League",
-      "Teutonic Order"
-     ],
-     "why": "Hamburg and Bremen still call themselves Hanseatic cities."
-    },
-    {
-     "level": 3,
      "q": "Which 1648 peace treaties ended the Thirty Years' War?",
      "a": "Peace of Westphalia",
      "wrong": [
@@ -180,11 +148,34 @@
       "Clovis"
      ],
      "why": "His capital was Aachen."
+    },
+    {
+     "level": 2,
+     "q": "Who discovered X-rays in 1895?",
+     "a": "Wilhelm Röntgen",
+     "wrong": [
+      "Max Planck",
+      "Robert Koch",
+      "Heinrich Hertz"
+     ],
+     "why": "He won the first Nobel Prize in Physics."
+    },
+    {
+     "level": 3,
+     "q": "Who built the first practical petrol-powered car in 1885–86?",
+     "a": "Carl Benz",
+     "wrong": [
+      "Gottlieb Daimler",
+      "Rudolf Diesel",
+      "Nikolaus Otto"
+     ],
+     "why": "His wife Bertha made the first long drive."
     }
    ]
   },
   {
-   "name": "Germany Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -361,12 +352,46 @@
       "Bay of Kiel"
      ],
      "why": "At low tide you can walk across the mudflats."
+    },
+    {
+     "level": 2,
+     "q": "Which city has Germany's biggest airport?",
+     "a": "Frankfurt",
+     "wrong": [
+      "Munich",
+      "Berlin",
+      "Düsseldorf"
+     ],
+     "why": "It is Lufthansa's main hub."
+    },
+    {
+     "level": 3,
+     "q": "Which German state is the smallest?",
+     "a": "Bremen",
+     "wrong": [
+      "Saarland",
+      "Hamburg",
+      "Berlin"
+     ],
+     "why": "It includes the port of Bremerhaven."
     }
    ]
   },
   {
-   "name": "Germany Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
+    {
+     "level": 3,
+     "q": "Which medieval trade league was centred on Lübeck?",
+     "a": "Hanseatic League",
+     "wrong": [
+      "Swabian League",
+      "Rhine League",
+      "Teutonic Order"
+     ],
+     "why": "Hamburg and Bremen still call themselves Hanseatic cities."
+    },
     {
      "level": 1,
      "q": "How many FIFA World Cups has Germany won?",
@@ -546,7 +571,8 @@
    ]
   },
   {
-   "name": "Germany Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
     {
      "level": 1,
@@ -593,39 +619,6 @@
      "why": "It topped charts in 1983."
     },
     {
-     "level": 1,
-     "q": "Which brothers collected tales like 'Hansel and Gretel'?",
-     "a": "The Brothers Grimm",
-     "wrong": [
-      "The Brothers Mann",
-      "The Schlegel Brothers",
-      "The Brothers Humboldt"
-     ],
-     "why": "Their first collection came out in 1812."
-    },
-    {
-     "level": 1,
-     "q": "Which writer wrote 'Faust'?",
-     "a": "Johann Wolfgang von Goethe",
-     "wrong": [
-      "Friedrich Schiller",
-      "Heinrich Heine",
-      "Thomas Mann"
-     ],
-     "why": "The Goethe-Institut is named after him."
-    },
-    {
-     "level": 1,
-     "q": "Which electronic pioneers recorded 'Autobahn'?",
-     "a": "Kraftwerk",
-     "wrong": [
-      "Tangerine Dream",
-      "Can",
-      "Neu!"
-     ],
-     "why": "They came from Düsseldorf."
-    },
-    {
      "level": 2,
      "q": "Which Baroque composer worked in Leipzig?",
      "a": "Johann Sebastian Bach",
@@ -635,28 +628,6 @@
       "Dietrich Buxtehude"
      ],
      "why": "He was cantor of St. Thomas Church."
-    },
-    {
-     "level": 2,
-     "q": "Which 2006 film about a Stasi officer won the Oscar for Best Foreign Language Film?",
-     "a": "The Lives of Others",
-     "wrong": [
-      "Good Bye, Lenin!",
-      "Run Lola Run",
-      "Downfall"
-     ],
-     "why": "Its German title is 'Das Leben der Anderen'."
-    },
-    {
-     "level": 2,
-     "q": "Which 2022 war film won four Oscars?",
-     "a": "All Quiet on the Western Front",
-     "wrong": [
-      "Das Boot",
-      "Downfall",
-      "The Tin Drum"
-     ],
-     "why": "It is based on Erich Maria Remarque's novel."
     },
     {
      "level": 2,
@@ -682,6 +653,45 @@
     },
     {
      "level": 2,
+     "q": "What is Germany's national anthem?",
+     "a": "Das Lied der Deutschen (third verse)",
+     "wrong": [
+      "Ode to Joy",
+      "Die Wacht am Rhein",
+      "Heil dir im Siegerkranz"
+     ],
+     "why": "It starts 'Einigkeit und Recht und Freiheit'."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which 2006 film about a Stasi officer won the Oscar for Best Foreign Language Film?",
+     "a": "The Lives of Others",
+     "wrong": [
+      "Good Bye, Lenin!",
+      "Run Lola Run",
+      "Downfall"
+     ],
+     "why": "Its German title is 'Das Leben der Anderen'."
+    },
+    {
+     "level": 2,
+     "q": "Which 2022 war film won four Oscars?",
+     "a": "All Quiet on the Western Front",
+     "wrong": [
+      "Das Boot",
+      "Downfall",
+      "The Tin Drum"
+     ],
+     "why": "It is based on Erich Maria Remarque's novel."
+    },
+    {
+     "level": 2,
      "q": "Which director made 'Fitzcarraldo' and 'Aguirre, the Wrath of God'?",
      "a": "Werner Herzog",
      "wrong": [
@@ -704,17 +714,6 @@
     },
     {
      "level": 3,
-     "q": "Which novelist wrote 'Buddenbrooks' and 'The Magic Mountain'?",
-     "a": "Thomas Mann",
-     "wrong": [
-      "Hermann Hesse",
-      "Günter Grass",
-      "Heinrich Böll"
-     ],
-     "why": "He won the Nobel Prize in 1929."
-    },
-    {
-     "level": 3,
      "q": "Which long-running Sunday crime series started in 1970?",
      "a": "Tatort",
      "wrong": [
@@ -727,8 +726,126 @@
    ]
   },
   {
-   "name": "Germany Food & Traditions",
+   "category": "Entertainment",
+   "name": "Books",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which writer wrote 'Faust'?",
+     "a": "Johann Wolfgang von Goethe",
+     "wrong": [
+      "Friedrich Schiller",
+      "Heinrich Heine",
+      "Thomas Mann"
+     ],
+     "why": "The Goethe-Institut is named after him."
+    },
+    {
+     "level": 3,
+     "q": "Which novelist wrote 'Buddenbrooks' and 'The Magic Mountain'?",
+     "a": "Thomas Mann",
+     "wrong": [
+      "Hermann Hesse",
+      "Günter Grass",
+      "Heinrich Böll"
+     ],
+     "why": "He won the Nobel Prize in 1929."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Chancellor oversaw German reunification?",
+     "a": "Helmut Kohl",
+     "wrong": [
+      "Gerhard Schröder",
+      "Helmut Schmidt",
+      "Willy Brandt"
+     ],
+     "why": "He served for 16 years."
+    },
+    {
+     "level": 1,
+     "q": "What is the German parliament called?",
+     "a": "Bundestag",
+     "wrong": [
+      "Reichstag",
+      "Bundesrat",
+      "Landtag"
+     ],
+     "why": "It meets in the Reichstag building."
+    },
+    {
+     "level": 3,
+     "q": "What is Germany's constitution called?",
+     "a": "Grundgesetz (Basic Law)",
+     "wrong": [
+      "Reichsverfassung",
+      "Bundesgesetz",
+      "Magna Carta"
+     ],
+     "why": "It was adopted in 1949."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which architect designed the glass dome on the Reichstag building?",
+     "a": "Norman Foster",
+     "wrong": [
+      "Frank Gehry",
+      "I. M. Pei",
+      "Zaha Hadid"
+     ],
+     "why": "Visitors can walk up its spiral ramp."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who invented the printing press with movable type around 1450?",
+     "a": "Johannes Gutenberg",
+     "wrong": [
+      "Albrecht Dürer",
+      "Martin Luther",
+      "Johannes Kepler"
+     ],
+     "why": "He worked in Mainz."
+    },
+    {
+     "level": 1,
+     "q": "Which brothers collected tales like 'Hansel and Gretel'?",
+     "a": "The Brothers Grimm",
+     "wrong": [
+      "The Brothers Mann",
+      "The Schlegel Brothers",
+      "The Brothers Humboldt"
+     ],
+     "why": "Their first collection came out in 1812."
+    },
+    {
+     "level": 1,
+     "q": "Which electronic pioneers recorded 'Autobahn'?",
+     "a": "Kraftwerk",
+     "wrong": [
+      "Tangerine Dream",
+      "Can",
+      "Neu!"
+     ],
+     "why": "They came from Düsseldorf."
+    },
     {
      "level": 1,
      "q": "Which twisted bread is a German bakery classic?",
@@ -904,12 +1021,7 @@
       "Advent Sunday"
      ],
      "why": "They sing songs in a parade."
-    }
-   ]
-  },
-  {
-   "name": "Germany General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What are the colours of the German flag?",
@@ -977,28 +1089,6 @@
      "why": "Porsche is also from Stuttgart."
     },
     {
-     "level": 1,
-     "q": "What is the German parliament called?",
-     "a": "Bundestag",
-     "wrong": [
-      "Reichstag",
-      "Bundesrat",
-      "Landtag"
-     ],
-     "why": "It meets in the Reichstag building."
-    },
-    {
-     "level": 2,
-     "q": "Who discovered X-rays in 1895?",
-     "a": "Wilhelm Röntgen",
-     "wrong": [
-      "Max Planck",
-      "Robert Koch",
-      "Heinrich Hertz"
-     ],
-     "why": "He won the first Nobel Prize in Physics."
-    },
-    {
      "level": 2,
      "q": "Which car did Volkswagen launch as the 'people's car'?",
      "a": "Beetle",
@@ -1011,28 +1101,6 @@
     },
     {
      "level": 2,
-     "q": "What is Germany's national anthem?",
-     "a": "Das Lied der Deutschen (third verse)",
-     "wrong": [
-      "Ode to Joy",
-      "Die Wacht am Rhein",
-      "Heil dir im Siegerkranz"
-     ],
-     "why": "It starts 'Einigkeit und Recht und Freiheit'."
-    },
-    {
-     "level": 2,
-     "q": "Which architect designed the glass dome on the Reichstag building?",
-     "a": "Norman Foster",
-     "wrong": [
-      "Frank Gehry",
-      "I. M. Pei",
-      "Zaha Hadid"
-     ],
-     "why": "Visitors can walk up its spiral ramp."
-    },
-    {
-     "level": 2,
      "q": "Which German scientist identified the bacterium that causes tuberculosis?",
      "a": "Robert Koch",
      "wrong": [
@@ -1041,50 +1109,6 @@
       "Emil von Behring"
      ],
      "why": "He announced it in 1882."
-    },
-    {
-     "level": 2,
-     "q": "Which city has Germany's biggest airport?",
-     "a": "Frankfurt",
-     "wrong": [
-      "Munich",
-      "Berlin",
-      "Düsseldorf"
-     ],
-     "why": "It is Lufthansa's main hub."
-    },
-    {
-     "level": 3,
-     "q": "Who built the first practical petrol-powered car in 1885–86?",
-     "a": "Carl Benz",
-     "wrong": [
-      "Gottlieb Daimler",
-      "Rudolf Diesel",
-      "Nikolaus Otto"
-     ],
-     "why": "His wife Bertha made the first long drive."
-    },
-    {
-     "level": 3,
-     "q": "What is Germany's constitution called?",
-     "a": "Grundgesetz (Basic Law)",
-     "wrong": [
-      "Reichsverfassung",
-      "Bundesgesetz",
-      "Magna Carta"
-     ],
-     "why": "It was adopted in 1949."
-    },
-    {
-     "level": 3,
-     "q": "Which German state is the smallest?",
-     "a": "Bremen",
-     "wrong": [
-      "Saarland",
-      "Hamburg",
-      "Berlin"
-     ],
-     "why": "It includes the port of Bremerhaven."
     }
    ]
   }

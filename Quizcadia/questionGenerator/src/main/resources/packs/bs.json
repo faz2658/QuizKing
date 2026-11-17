@@ -3,19 +3,9 @@
  "country": "BS",
  "topics": [
   {
-   "name": "Bahamas: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of the Bahamas?",
-     "a": "Nassau",
-     "wrong": [
-      "Freeport",
-      "George Town",
-      "Marsh Harbour"
-     ],
-     "why": "It is on New Providence island."
-    },
     {
      "level": 1,
      "q": "Where did Christopher Columbus first land in the Americas in 1492?",
@@ -40,28 +30,6 @@
     },
     {
      "level": 1,
-     "q": "What is the Bahamian currency?",
-     "a": "Bahamian dollar",
-     "wrong": [
-      "US dollar",
-      "Pound sterling",
-      "East Caribbean dollar"
-     ],
-     "why": "It is equal to the US dollar."
-    },
-    {
-     "level": 1,
-     "q": "Who were the first known people of the Bahamas?",
-     "a": "Lucayans",
-     "wrong": [
-      "Caribs",
-      "Maya",
-      "Ciboney"
-     ],
-     "why": "They were Taíno people."
-    },
-    {
-     "level": 1,
      "q": "Which 2019 hurricane devastated Abaco and Grand Bahama?",
      "a": "Hurricane Dorian",
      "wrong": [
@@ -70,17 +38,6 @@
       "Hurricane Matthew"
      ],
      "why": "It stalled over the islands for a day."
-    },
-    {
-     "level": 1,
-     "q": "Which pirate used Nassau as a base in the early 1700s?",
-     "a": "Blackbeard (Edward Teach)",
-     "wrong": [
-      "Henry Morgan",
-      "Captain Kidd",
-      "Francis Drake"
-     ],
-     "why": "Nassau was a 'Republic of Pirates'."
     },
     {
      "level": 2,
@@ -92,17 +49,6 @@
       "Philip Davis"
      ],
      "why": "He is called the father of the nation."
-    },
-    {
-     "level": 2,
-     "q": "Which British royal was Governor of the Bahamas during the Second World War?",
-     "a": "Duke of Windsor",
-     "wrong": [
-      "Prince Philip",
-      "Duke of Kent",
-      "Prince Charles"
-     ],
-     "why": "He had given up the throne in 1936."
     },
     {
      "level": 2,
@@ -127,28 +73,6 @@
      "why": "Pindling's PLP won power."
     },
     {
-     "level": 2,
-     "q": "Which US ban made the Bahamas rich from rum running?",
-     "a": "Prohibition",
-     "wrong": [
-      "Embargo Act",
-      "Civil War blockade",
-      "Dry Laws of 1950"
-     ],
-     "why": "Liquor was smuggled to Florida."
-    },
-    {
-     "level": 3,
-     "q": "Who became Prime Minister of the Bahamas in 2021?",
-     "a": "Philip Davis",
-     "wrong": [
-      "Hubert Minnis",
-      "Perry Christie",
-      "Hubert Ingraham"
-     ],
-     "why": "He leads the PLP."
-    },
-    {
      "level": 3,
      "q": "Which loyalists settled the Bahamas after the American Revolution?",
      "a": "American Loyalists",
@@ -169,33 +93,34 @@
       "1888"
      ],
      "why": "It ended across the British Empire."
+    },
+    {
+     "level": 3,
+     "q": "Which island is home to the largest flamingo colony?",
+     "a": "Great Inagua",
+     "wrong": [
+      "Andros",
+      "Eleuthera",
+      "Cat Island"
+     ],
+     "why": "Tens of thousands breed there."
     }
    ]
   },
   {
-   "name": "Bahamas: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
-     "q": "Which street festival with costumes and cowbells is held at Christmas?",
-     "a": "Junkanoo",
+     "q": "What is the capital of the Bahamas?",
+     "a": "Nassau",
      "wrong": [
-      "Carnival",
-      "Crop Over",
-      "Mashramani"
+      "Freeport",
+      "George Town",
+      "Marsh Harbour"
      ],
-     "why": "The main parade is on Boxing Day."
-    },
-    {
-     "level": 1,
-     "q": "Which shellfish is the national dish?",
-     "a": "Conch",
-     "wrong": [
-      "Lobster",
-      "Shrimp",
-      "Oyster"
-     ],
-     "why": "It is eaten in fritters and salads."
+     "why": "It is on New Providence island."
     },
     {
      "level": 1,
@@ -254,28 +179,6 @@
     },
     {
      "level": 2,
-     "q": "Which Bahamian sprinter won Olympic 400 m gold in 2016 and 2020?",
-     "a": "Shaunae Miller-Uibo",
-     "wrong": [
-      "Tonique Williams",
-      "Pauline Davis",
-      "Debbie Ferguson"
-     ],
-     "why": "She dived over the line in 2016."
-    },
-    {
-     "level": 2,
-     "q": "Which actor of Bahamian heritage won the Oscar for Best Actor in 1964?",
-     "a": "Sidney Poitier",
-     "wrong": [
-      "Harry Belafonte",
-      "Denzel Washington",
-      "Morgan Freeman"
-     ],
-     "why": "He was the first Black man to win it."
-    },
-    {
-     "level": 2,
      "q": "Which island holds one of the world's deepest blue holes, Dean's Blue Hole?",
      "a": "Long Island",
      "wrong": [
@@ -309,28 +212,6 @@
     },
     {
      "level": 3,
-     "q": "Which flamingo is the national bird?",
-     "a": "Caribbean flamingo",
-     "wrong": [
-      "Bahama parrot",
-      "Frigatebird",
-      "Pelican"
-     ],
-     "why": "Inagua has a big colony."
-    },
-    {
-     "level": 3,
-     "q": "Which island is home to the largest flamingo colony?",
-     "a": "Great Inagua",
-     "wrong": [
-      "Andros",
-      "Eleuthera",
-      "Cat Island"
-     ],
-     "why": "Tens of thousands breed there."
-    },
-    {
-     "level": 3,
      "q": "What is the highest point in the Bahamas?",
      "a": "Mount Alvernia",
      "wrong": [
@@ -339,6 +220,157 @@
       "Mount Scenery"
      ],
      "why": "It is only 63 m high."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which Bahamian sprinter won Olympic 400 m gold in 2016 and 2020?",
+     "a": "Shaunae Miller-Uibo",
+     "wrong": [
+      "Tonique Williams",
+      "Pauline Davis",
+      "Debbie Ferguson"
+     ],
+     "why": "She dived over the line in 2016."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which actor of Bahamian heritage won the Oscar for Best Actor in 1964?",
+     "a": "Sidney Poitier",
+     "wrong": [
+      "Harry Belafonte",
+      "Denzel Washington",
+      "Morgan Freeman"
+     ],
+     "why": "He was the first Black man to win it."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which British royal was Governor of the Bahamas during the Second World War?",
+     "a": "Duke of Windsor",
+     "wrong": [
+      "Prince Philip",
+      "Duke of Kent",
+      "Prince Charles"
+     ],
+     "why": "He had given up the throne in 1936."
+    },
+    {
+     "level": 3,
+     "q": "Who became Prime Minister of the Bahamas in 2021?",
+     "a": "Philip Davis",
+     "wrong": [
+      "Hubert Minnis",
+      "Perry Christie",
+      "Hubert Ingraham"
+     ],
+     "why": "He leads the PLP."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which flamingo is the national bird?",
+     "a": "Caribbean flamingo",
+     "wrong": [
+      "Bahama parrot",
+      "Frigatebird",
+      "Pelican"
+     ],
+     "why": "Inagua has a big colony."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the Bahamian currency?",
+     "a": "Bahamian dollar",
+     "wrong": [
+      "US dollar",
+      "Pound sterling",
+      "East Caribbean dollar"
+     ],
+     "why": "It is equal to the US dollar."
+    },
+    {
+     "level": 1,
+     "q": "Who were the first known people of the Bahamas?",
+     "a": "Lucayans",
+     "wrong": [
+      "Caribs",
+      "Maya",
+      "Ciboney"
+     ],
+     "why": "They were Taíno people."
+    },
+    {
+     "level": 1,
+     "q": "Which pirate used Nassau as a base in the early 1700s?",
+     "a": "Blackbeard (Edward Teach)",
+     "wrong": [
+      "Henry Morgan",
+      "Captain Kidd",
+      "Francis Drake"
+     ],
+     "why": "Nassau was a 'Republic of Pirates'."
+    },
+    {
+     "level": 2,
+     "q": "Which US ban made the Bahamas rich from rum running?",
+     "a": "Prohibition",
+     "wrong": [
+      "Embargo Act",
+      "Civil War blockade",
+      "Dry Laws of 1950"
+     ],
+     "why": "Liquor was smuggled to Florida."
+    },
+    {
+     "level": 1,
+     "q": "Which street festival with costumes and cowbells is held at Christmas?",
+     "a": "Junkanoo",
+     "wrong": [
+      "Carnival",
+      "Crop Over",
+      "Mashramani"
+     ],
+     "why": "The main parade is on Boxing Day."
+    },
+    {
+     "level": 1,
+     "q": "Which shellfish is the national dish?",
+     "a": "Conch",
+     "wrong": [
+      "Lobster",
+      "Shrimp",
+      "Oyster"
+     ],
+     "why": "It is eaten in fritters and salads."
     }
    ]
   }

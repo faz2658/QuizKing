@@ -3,30 +3,9 @@
  "country": "RW",
  "topics": [
   {
-   "name": "Rwanda: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Rwanda?",
-     "a": "Kigali",
-     "wrong": [
-      "Butare",
-      "Gisenyi",
-      "Ruhengeri"
-     ],
-     "why": "It is known for being very clean."
-    },
-    {
-     "level": 1,
-     "q": "What is Rwanda's nickname?",
-     "a": "Land of a Thousand Hills",
-     "wrong": [
-      "Pearl of Africa",
-      "Warm Heart of Africa",
-      "Roof of Africa"
-     ],
-     "why": "It is very hilly."
-    },
     {
      "level": 1,
      "q": "In which year did the genocide against the Tutsi take place?",
@@ -40,28 +19,6 @@
     },
     {
      "level": 1,
-     "q": "Who has been President of Rwanda since 2000?",
-     "a": "Paul Kagame",
-     "wrong": [
-      "Pasteur Bizimungu",
-      "Juvénal Habyarimana",
-      "Grégoire Kayibanda"
-     ],
-     "why": "He led the RPF."
-    },
-    {
-     "level": 1,
-     "q": "What is Rwanda's currency?",
-     "a": "Rwandan franc",
-     "wrong": [
-      "Shilling",
-      "Burundian franc",
-      "CFA franc"
-     ],
-     "why": "Its code is RWF."
-    },
-    {
-     "level": 1,
      "q": "Which country did Rwanda gain independence from in 1962?",
      "a": "Belgium",
      "wrong": [
@@ -70,39 +27,6 @@
       "United Kingdom"
      ],
      "why": "Germany ruled it before 1916."
-    },
-    {
-     "level": 1,
-     "q": "Which film tells the story of a hotel manager who saved over 1,200 people?",
-     "a": "Hotel Rwanda",
-     "wrong": [
-      "Shooting Dogs",
-      "Sometimes in April",
-      "Blood Diamond"
-     ],
-     "why": "It is about Paul Rusesabagina."
-    },
-    {
-     "level": 2,
-     "q": "Which country's parliament has the highest share of women in the world?",
-     "a": "Rwanda",
-     "wrong": [
-      "Sweden",
-      "Cuba",
-      "New Zealand"
-     ],
-     "why": "Over 60% of MPs are women."
-    },
-    {
-     "level": 2,
-     "q": "Which monthly community clean-up is held in Rwanda?",
-     "a": "Umuganda",
-     "wrong": [
-      "Ubuntu",
-      "Harambee",
-      "Ujamaa"
-     ],
-     "why": "It is held on the last Saturday of each month."
     },
     {
      "level": 2,
@@ -160,21 +84,44 @@
      "why": "It joined the Commonwealth in 2009."
     },
     {
-     "level": 3,
-     "q": "Which memorial in Kigali is a burial site for over 250,000 victims?",
-     "a": "Kigali Genocide Memorial",
+     "level": 1,
+     "q": "Which primatologist studied gorillas in Rwanda and was killed in 1985?",
+     "a": "Dian Fossey",
      "wrong": [
-      "Murambi Memorial",
-      "Nyamata Church",
-      "Ntarama Church"
+      "Jane Goodall",
+      "Biruté Galdikas",
+      "Cynthia Moss"
      ],
-     "why": "It opened in 2004."
+     "why": "'Gorillas in the Mist' is about her."
+    },
+    {
+     "level": 3,
+     "q": "What is the annual commemoration of the genocide called?",
+     "a": "Kwibuka",
+     "wrong": [
+      "Umuganda",
+      "Umuganura",
+      "Gacaca"
+     ],
+     "why": "It means 'to remember'."
     }
    ]
   },
   {
-   "name": "Rwanda: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Rwanda?",
+     "a": "Kigali",
+     "wrong": [
+      "Butare",
+      "Gisenyi",
+      "Ruhengeri"
+     ],
+     "why": "It is known for being very clean."
+    },
     {
      "level": 1,
      "q": "Which park is famous for mountain gorilla trekking?",
@@ -185,17 +132,6 @@
       "Gishwati"
      ],
      "why": "Dian Fossey studied gorillas there."
-    },
-    {
-     "level": 1,
-     "q": "Which primatologist studied gorillas in Rwanda and was killed in 1985?",
-     "a": "Dian Fossey",
-     "wrong": [
-      "Jane Goodall",
-      "Biruté Galdikas",
-      "Cynthia Moss"
-     ],
-     "why": "'Gorillas in the Mist' is about her."
     },
     {
      "level": 1,
@@ -240,29 +176,13 @@
       "Rubber"
      ],
      "why": "Rwandan coffee is highly rated."
-    },
-    {
-     "level": 1,
-     "q": "Which ceremony names baby gorillas each year?",
-     "a": "Kwita Izina",
-     "wrong": [
-      "Umuganda",
-      "Umuganura",
-      "Gacaca"
-     ],
-     "why": "It began in 2005."
-    },
-    {
-     "level": 2,
-     "q": "Which dance with long grass headdresses is famous?",
-     "a": "Intore dance",
-     "wrong": [
-      "Gule Wamkulu",
-      "Umhlanga",
-      "Sibhaca"
-     ],
-     "why": "It was danced for kings."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
     {
      "level": 2,
      "q": "Which arena in Kigali hosts basketball and concerts?",
@@ -284,6 +204,157 @@
       "Tour of Africa"
      ],
      "why": "Rwanda hosted the 2025 Road World Championships."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which film tells the story of a hotel manager who saved over 1,200 people?",
+     "a": "Hotel Rwanda",
+     "wrong": [
+      "Shooting Dogs",
+      "Sometimes in April",
+      "Blood Diamond"
+     ],
+     "why": "It is about Paul Rusesabagina."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who has been President of Rwanda since 2000?",
+     "a": "Paul Kagame",
+     "wrong": [
+      "Pasteur Bizimungu",
+      "Juvénal Habyarimana",
+      "Grégoire Kayibanda"
+     ],
+     "why": "He led the RPF."
+    },
+    {
+     "level": 2,
+     "q": "Which country's parliament has the highest share of women in the world?",
+     "a": "Rwanda",
+     "wrong": [
+      "Sweden",
+      "Cuba",
+      "New Zealand"
+     ],
+     "why": "Over 60% of MPs are women."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which royal palace museum is at Nyanza?",
+     "a": "King's Palace Museum",
+     "wrong": [
+      "Kigali Palace",
+      "Murambi",
+      "Kandt House"
+     ],
+     "why": "Long-horned Inyambo cattle are kept there."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which ceremony names baby gorillas each year?",
+     "a": "Kwita Izina",
+     "wrong": [
+      "Umuganda",
+      "Umuganura",
+      "Gacaca"
+     ],
+     "why": "It began in 2005."
+    },
+    {
+     "level": 3,
+     "q": "Which long-horned cattle were kept for the kings?",
+     "a": "Inyambo",
+     "wrong": [
+      "Zebu",
+      "Holstein",
+      "Brahman"
+     ],
+     "why": "They are trained to parade."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Rwanda's nickname?",
+     "a": "Land of a Thousand Hills",
+     "wrong": [
+      "Pearl of Africa",
+      "Warm Heart of Africa",
+      "Roof of Africa"
+     ],
+     "why": "It is very hilly."
+    },
+    {
+     "level": 1,
+     "q": "What is Rwanda's currency?",
+     "a": "Rwandan franc",
+     "wrong": [
+      "Shilling",
+      "Burundian franc",
+      "CFA franc"
+     ],
+     "why": "Its code is RWF."
+    },
+    {
+     "level": 2,
+     "q": "Which monthly community clean-up is held in Rwanda?",
+     "a": "Umuganda",
+     "wrong": [
+      "Ubuntu",
+      "Harambee",
+      "Ujamaa"
+     ],
+     "why": "It is held on the last Saturday of each month."
+    },
+    {
+     "level": 3,
+     "q": "Which memorial in Kigali is a burial site for over 250,000 victims?",
+     "a": "Kigali Genocide Memorial",
+     "wrong": [
+      "Murambi Memorial",
+      "Nyamata Church",
+      "Ntarama Church"
+     ],
+     "why": "It opened in 2004."
+    },
+    {
+     "level": 2,
+     "q": "Which dance with long grass headdresses is famous?",
+     "a": "Intore dance",
+     "wrong": [
+      "Gule Wamkulu",
+      "Umhlanga",
+      "Sibhaca"
+     ],
+     "why": "It was danced for kings."
     },
     {
      "level": 2,
@@ -297,28 +368,6 @@
      "why": "Almost everyone speaks it."
     },
     {
-     "level": 2,
-     "q": "Which royal palace museum is at Nyanza?",
-     "a": "King's Palace Museum",
-     "wrong": [
-      "Kigali Palace",
-      "Murambi",
-      "Kandt House"
-     ],
-     "why": "Long-horned Inyambo cattle are kept there."
-    },
-    {
-     "level": 3,
-     "q": "Which long-horned cattle were kept for the kings?",
-     "a": "Inyambo",
-     "wrong": [
-      "Zebu",
-      "Holstein",
-      "Brahman"
-     ],
-     "why": "They are trained to parade."
-    },
-    {
      "level": 3,
      "q": "Which harvest festival is a national holiday?",
      "a": "Umuganura",
@@ -328,17 +377,6 @@
       "Kwibuka"
      ],
      "why": "It celebrates the first fruits."
-    },
-    {
-     "level": 3,
-     "q": "What is the annual commemoration of the genocide called?",
-     "a": "Kwibuka",
-     "wrong": [
-      "Umuganda",
-      "Umuganura",
-      "Gacaca"
-     ],
-     "why": "It means 'to remember'."
     }
    ]
   }

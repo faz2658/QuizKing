@@ -3,7 +3,8 @@
  "country": "VN",
  "topics": [
   {
-   "name": "Vietnam: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -48,28 +49,6 @@
       "Ia Drang"
      ],
      "why": "The Viet Minh besieged the French base."
-    },
-    {
-     "level": 1,
-     "q": "Which former imperial capital in central Vietnam is a UNESCO site?",
-     "a": "Hue",
-     "wrong": [
-      "Hoi An",
-      "Hanoi",
-      "Da Nang"
-     ],
-     "why": "The Nguyen emperors ruled from its citadel."
-    },
-    {
-     "level": 1,
-     "q": "Which Lunar New Year festival is Vietnam's biggest holiday?",
-     "a": "Tet",
-     "wrong": [
-      "Songkran",
-      "Seollal",
-      "Vesak"
-     ],
-     "why": "Families gather and give lucky money."
     },
     {
      "level": 1,
@@ -150,17 +129,6 @@
     },
     {
      "level": 3,
-     "q": "Which tunnel network near Saigon was used by Viet Cong fighters?",
-     "a": "Cu Chi tunnels",
-     "wrong": [
-      "Vinh Moc tunnels",
-      "Khe Sanh tunnels",
-      "Hue tunnels"
-     ],
-     "why": "They are now a tourist site."
-    },
-    {
-     "level": 3,
      "q": "Which Tay Son emperor defeated a Qing army near Hanoi in 1789?",
      "a": "Quang Trung",
      "wrong": [
@@ -173,8 +141,20 @@
    ]
   },
   {
-   "name": "Vietnam: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which former imperial capital in central Vietnam is a UNESCO site?",
+     "a": "Hue",
+     "wrong": [
+      "Hoi An",
+      "Hanoi",
+      "Da Nang"
+     ],
+     "why": "The Nguyen emperors ruled from its citadel."
+    },
     {
      "level": 1,
      "q": "What is the capital of Vietnam?",
@@ -196,6 +176,89 @@
       "Vung Tau Bay"
      ],
      "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which old trading town is famous for lanterns and a Japanese bridge?",
+     "a": "Hoi An",
+     "wrong": [
+      "Hue",
+      "Da Lat",
+      "Sa Pa"
+     ],
+     "why": "Its old town is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "What is the world's largest known cave, in Phong Nha?",
+     "a": "Son Doong",
+     "wrong": [
+      "Hang En",
+      "Paradise Cave",
+      "Phong Nha Cave"
+     ],
+     "why": "Its full extent was explored in 2009."
+    },
+    {
+     "level": 2,
+     "q": "What is Vietnam's highest mountain?",
+     "a": "Fansipan",
+     "wrong": [
+      "Ba Den",
+      "Bach Ma",
+      "Lang Biang"
+     ],
+     "why": "It is called the 'Roof of Indochina'."
+    },
+    {
+     "level": 3,
+     "q": "Which highland town was a French hill station?",
+     "a": "Da Lat",
+     "wrong": [
+      "Sa Pa",
+      "Hue",
+      "Buon Ma Thuot"
+     ],
+     "why": "It is called the 'City of Eternal Spring'."
+    },
+    {
+     "level": 3,
+     "q": "Which Hanoi lake has a legend about a returned sword?",
+     "a": "Hoan Kiem Lake",
+     "wrong": [
+      "West Lake",
+      "Truc Bach Lake",
+      "Thien Quang Lake"
+     ],
+     "why": "Its name means 'Lake of the Returned Sword'."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Lunar New Year festival is Vietnam's biggest holiday?",
+     "a": "Tet",
+     "wrong": [
+      "Songkran",
+      "Seollal",
+      "Vesak"
+     ],
+     "why": "Families gather and give lucky money."
+    },
+    {
+     "level": 3,
+     "q": "Which tunnel network near Saigon was used by Viet Cong fighters?",
+     "a": "Cu Chi tunnels",
+     "wrong": [
+      "Vinh Moc tunnels",
+      "Khe Sanh tunnels",
+      "Hue tunnels"
+     ],
+     "why": "They are now a tourist site."
     },
     {
      "level": 1,
@@ -254,39 +317,6 @@
     },
     {
      "level": 2,
-     "q": "Which old trading town is famous for lanterns and a Japanese bridge?",
-     "a": "Hoi An",
-     "wrong": [
-      "Hue",
-      "Da Lat",
-      "Sa Pa"
-     ],
-     "why": "Its old town is a UNESCO site."
-    },
-    {
-     "level": 2,
-     "q": "What is the world's largest known cave, in Phong Nha?",
-     "a": "Son Doong",
-     "wrong": [
-      "Hang En",
-      "Paradise Cave",
-      "Phong Nha Cave"
-     ],
-     "why": "Its full extent was explored in 2009."
-    },
-    {
-     "level": 2,
-     "q": "What is Vietnam's highest mountain?",
-     "a": "Fansipan",
-     "wrong": [
-      "Ba Den",
-      "Bach Ma",
-      "Lang Biang"
-     ],
-     "why": "It is called the 'Roof of Indochina'."
-    },
-    {
-     "level": 2,
      "q": "Vietnam is the world's second-largest exporter of which crop?",
      "a": "Coffee",
      "wrong": [
@@ -317,28 +347,6 @@
       "Hun lakhon lek"
      ],
      "why": "The puppets perform on a pool of water."
-    },
-    {
-     "level": 3,
-     "q": "Which highland town was a French hill station?",
-     "a": "Da Lat",
-     "wrong": [
-      "Sa Pa",
-      "Hue",
-      "Buon Ma Thuot"
-     ],
-     "why": "It is called the 'City of Eternal Spring'."
-    },
-    {
-     "level": 3,
-     "q": "Which Hanoi lake has a legend about a returned sword?",
-     "a": "Hoan Kiem Lake",
-     "wrong": [
-      "West Lake",
-      "Truc Bach Lake",
-      "Thien Quang Lake"
-     ],
-     "why": "Its name means 'Lake of the Returned Sword'."
     }
    ]
   }

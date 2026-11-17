@@ -3,19 +3,9 @@
  "country": "BG",
  "topics": [
   {
-   "name": "Bulgaria: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Bulgaria?",
-     "a": "Sofia",
-     "wrong": [
-      "Plovdiv",
-      "Varna",
-      "Burgas"
-     ],
-     "why": "It sits below Vitosha Mountain."
-    },
     {
      "level": 1,
      "q": "Which alphabet was developed in the First Bulgarian Empire?",
@@ -37,17 +27,6 @@
       "Habsburg Empire"
      ],
      "why": "Bulgaria became free in 1878."
-    },
-    {
-     "level": 1,
-     "q": "In which year did Bulgaria join the European Union?",
-     "a": "2007",
-     "wrong": [
-      "2004",
-      "1995",
-      "2013"
-     ],
-     "why": "Romania joined at the same time."
     },
     {
      "level": 1,
@@ -84,17 +63,6 @@
     },
     {
      "level": 2,
-     "q": "Which tsar's reign was the golden age of Bulgarian culture?",
-     "a": "Simeon I (the Great)",
-     "wrong": [
-      "Boris I",
-      "Samuel",
-      "Ivan Asen II"
-     ],
-     "why": "He ruled from 893 to 927."
-    },
-    {
-     "level": 2,
      "q": "Which khan made Christianity the state religion in 864?",
      "a": "Boris I",
      "wrong": [
@@ -127,6 +95,45 @@
      "why": "He was hanged in 1873."
     },
     {
+     "level": 3,
+     "q": "Which medieval capital sits on hills above the Yantra River?",
+     "a": "Veliko Tarnovo",
+     "wrong": [
+      "Pliska",
+      "Preslav",
+      "Vidin"
+     ],
+     "why": "It was the capital of the Second Bulgarian Empire."
+    },
+    {
+     "level": 1,
+     "q": "What was Bulgaria's currency before it adopted the euro in 2026?",
+     "a": "Lev",
+     "wrong": [
+      "Leu",
+      "Forint",
+      "Dinar"
+     ],
+     "why": "It means 'lion'."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Bulgaria?",
+     "a": "Sofia",
+     "wrong": [
+      "Plovdiv",
+      "Varna",
+      "Burgas"
+     ],
+     "why": "It sits below Vitosha Mountain."
+    },
+    {
      "level": 2,
      "q": "Which Bulgarian city is one of the oldest in Europe?",
      "a": "Plovdiv",
@@ -138,15 +145,121 @@
      "why": "It was Europe's Capital of Culture in 2019."
     },
     {
-     "level": 3,
-     "q": "Which medieval capital sits on hills above the Yantra River?",
-     "a": "Veliko Tarnovo",
+     "level": 1,
+     "q": "Which sea lies along Bulgaria's east coast?",
+     "a": "Black Sea",
      "wrong": [
-      "Pliska",
-      "Preslav",
-      "Vidin"
+      "Aegean Sea",
+      "Adriatic Sea",
+      "Caspian Sea"
      ],
-     "why": "It was the capital of the Second Bulgarian Empire."
+     "why": "Varna and Burgas are its main ports."
+    },
+    {
+     "level": 1,
+     "q": "Which monastery in the mountains is Bulgaria's largest?",
+     "a": "Rila Monastery",
+     "wrong": [
+      "Bachkovo Monastery",
+      "Troyan Monastery",
+      "Aladzha Monastery"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain range gives the Balkans its name?",
+     "a": "Balkan Mountains",
+     "wrong": [
+      "Rila Mountains",
+      "Rhodopes",
+      "Pirin Mountains"
+     ],
+     "why": "In Bulgarian it is called Stara Planina."
+    },
+    {
+     "level": 3,
+     "q": "What is Bulgaria's highest mountain?",
+     "a": "Musala",
+     "wrong": [
+      "Vihren",
+      "Botev",
+      "Cherni Vrah"
+     ],
+     "why": "It is 2,925 m high, the highest in the Balkans."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which footballer won the 1994 Ballon d'Or?",
+     "a": "Hristo Stoichkov",
+     "wrong": [
+      "Dimitar Berbatov",
+      "Krasimir Balakov",
+      "Emil Kostadinov"
+     ],
+     "why": "He played for Barcelona."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Bulgarian-born artist wrapped the Reichstag in fabric?",
+     "a": "Christo",
+     "wrong": [
+      "Jules Pascin",
+      "Nikolay Diulgheroff",
+      "Vladimir Dimitrov"
+     ],
+     "why": "He worked with his wife Jeanne-Claude."
+    },
+    {
+     "level": 3,
+     "q": "Which Thracian tomb near Kazanlak has famous wall paintings?",
+     "a": "Thracian Tomb of Kazanlak",
+     "wrong": [
+      "Tomb of Sveshtari",
+      "Valley of the Thracian Kings",
+      "Perperikon"
+     ],
+     "why": "It is a UNESCO site."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Bulgaria join the European Union?",
+     "a": "2007",
+     "wrong": [
+      "2004",
+      "1995",
+      "2013"
+     ],
+     "why": "Romania joined at the same time."
+    },
+    {
+     "level": 2,
+     "q": "Which tsar's reign was the golden age of Bulgarian culture?",
+     "a": "Simeon I (the Great)",
+     "wrong": [
+      "Boris I",
+      "Samuel",
+      "Ivan Asen II"
+     ],
+     "why": "He ruled from 893 to 927."
     },
     {
      "level": 3,
@@ -160,22 +273,6 @@
      "why": "It is over 6,000 years old."
     },
     {
-     "level": 3,
-     "q": "Which Bulgarian-born artist wrapped the Reichstag in fabric?",
-     "a": "Christo",
-     "wrong": [
-      "Jules Pascin",
-      "Nikolay Diulgheroff",
-      "Vladimir Dimitrov"
-     ],
-     "why": "He worked with his wife Jeanne-Claude."
-    }
-   ]
-  },
-  {
-   "name": "Bulgaria: Places & Culture",
-   "questions": [
-    {
      "level": 1,
      "q": "Which flower oil is Bulgaria famous for producing?",
      "a": "Rose oil",
@@ -185,28 +282,6 @@
       "Olive oil"
      ],
      "why": "The Rose Valley is near Kazanlak."
-    },
-    {
-     "level": 1,
-     "q": "What was Bulgaria's currency before it adopted the euro in 2026?",
-     "a": "Lev",
-     "wrong": [
-      "Leu",
-      "Forint",
-      "Dinar"
-     ],
-     "why": "It means 'lion'."
-    },
-    {
-     "level": 1,
-     "q": "Which sea lies along Bulgaria's east coast?",
-     "a": "Black Sea",
-     "wrong": [
-      "Aegean Sea",
-      "Adriatic Sea",
-      "Caspian Sea"
-     ],
-     "why": "Varna and Burgas are its main ports."
     },
     {
      "level": 1,
@@ -242,17 +317,6 @@
      "why": "Its colours match the flag."
     },
     {
-     "level": 1,
-     "q": "Which monastery in the mountains is Bulgaria's largest?",
-     "a": "Rila Monastery",
-     "wrong": [
-      "Bachkovo Monastery",
-      "Troyan Monastery",
-      "Aladzha Monastery"
-     ],
-     "why": "It is a UNESCO site."
-    },
-    {
      "level": 2,
      "q": "What do Bulgarians exchange on 1 March to welcome spring?",
      "a": "Martenitsi",
@@ -276,17 +340,6 @@
     },
     {
      "level": 2,
-     "q": "Which mountain range gives the Balkans its name?",
-     "a": "Balkan Mountains",
-     "wrong": [
-      "Rila Mountains",
-      "Rhodopes",
-      "Pirin Mountains"
-     ],
-     "why": "In Bulgarian it is called Stara Planina."
-    },
-    {
-     "level": 2,
      "q": "What is unusual about how Bulgarians nod and shake their heads?",
      "a": "A nod means 'no' and a shake means 'yes'",
      "wrong": [
@@ -295,39 +348,6 @@
       "They wink instead"
      ],
      "why": "Visitors often get confused."
-    },
-    {
-     "level": 2,
-     "q": "Which footballer won the 1994 Ballon d'Or?",
-     "a": "Hristo Stoichkov",
-     "wrong": [
-      "Dimitar Berbatov",
-      "Krasimir Balakov",
-      "Emil Kostadinov"
-     ],
-     "why": "He played for Barcelona."
-    },
-    {
-     "level": 3,
-     "q": "Which Thracian tomb near Kazanlak has famous wall paintings?",
-     "a": "Thracian Tomb of Kazanlak",
-     "wrong": [
-      "Tomb of Sveshtari",
-      "Valley of the Thracian Kings",
-      "Perperikon"
-     ],
-     "why": "It is a UNESCO site."
-    },
-    {
-     "level": 3,
-     "q": "What is Bulgaria's highest mountain?",
-     "a": "Musala",
-     "wrong": [
-      "Vihren",
-      "Botev",
-      "Cherni Vrah"
-     ],
-     "why": "It is 2,925 m high, the highest in the Balkans."
     },
     {
      "level": 3,

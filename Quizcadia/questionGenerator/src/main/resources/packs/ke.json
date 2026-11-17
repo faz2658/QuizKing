@@ -3,7 +3,8 @@
  "country": "KE",
  "topics": [
   {
-   "name": "Kenya History",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -84,17 +85,6 @@
     },
     {
      "level": 2,
-     "q": "In which year did Kenya adopt its current constitution?",
-     "a": "2010",
-     "wrong": [
-      "2002",
-      "2007",
-      "1992"
-     ],
-     "why": "It created the 47 counties."
-    },
-    {
-     "level": 2,
      "q": "Which Mau Mau leader was executed by the British in 1957?",
      "a": "Dedan Kimathi",
      "wrong": [
@@ -171,20 +161,54 @@
      "why": "The town was abandoned in the 1600s."
     },
     {
-     "level": 3,
-     "q": "Who became Prime Minister under the 2008 power-sharing deal?",
-     "a": "Raila Odinga",
+     "level": 1,
+     "q": "Which mobile money service started in Kenya in 2007?",
+     "a": "M-Pesa",
      "wrong": [
-      "Musalia Mudavadi",
-      "Kalonzo Musyoka",
-      "Uhuru Kenyatta"
+      "PayPal",
+      "Airtel Money",
+      "MTN MoMo"
      ],
-     "why": "It followed post-election violence."
+     "why": "'Pesa' means money in Swahili."
+    },
+    {
+     "level": 1,
+     "q": "Which Kenyan won the 2004 Nobel Peace Prize?",
+     "a": "Wangari Maathai",
+     "wrong": [
+      "Ngũgĩ wa Thiong'o",
+      "Richard Leakey",
+      "Raila Odinga"
+     ],
+     "why": "She founded the Green Belt Movement."
+    },
+    {
+     "level": 2,
+     "q": "What is the name of the Nairobi–Mombasa railway that opened in 2017?",
+     "a": "Madaraka Express",
+     "wrong": [
+      "Lunatic Express",
+      "Harambee Line",
+      "Uhuru Express"
+     ],
+     "why": "It runs on the Standard Gauge Railway."
+    },
+    {
+     "level": 3,
+     "q": "Which 1.5-million-year-old skeleton was found near Lake Turkana in 1984?",
+     "a": "Turkana Boy",
+     "wrong": [
+      "Lucy",
+      "Mrs Ples",
+      "Taung Child"
+     ],
+     "why": "It is one of the most complete early human skeletons."
     }
    ]
   },
   {
-   "name": "Kenya Geography",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -365,7 +389,8 @@
    ]
   },
   {
-   "name": "Kenya Sport",
+   "category": "Sports",
+   "name": "Sports",
    "questions": [
     {
      "level": 1,
@@ -546,19 +571,9 @@
    ]
   },
   {
-   "name": "Kenya Film, TV & Music",
+   "category": "Entertainment",
+   "name": "Music",
    "questions": [
-    {
-     "level": 1,
-     "q": "Which Kenyan-Mexican actress won an Oscar for '12 Years a Slave'?",
-     "a": "Lupita Nyong'o",
-     "wrong": [
-      "Wanuri Kahiu",
-      "Sheila Munyiva",
-      "Catherine Kamau"
-     ],
-     "why": "She won Best Supporting Actress in 2014."
-    },
     {
      "level": 1,
      "q": "Which Kenyan band recorded 'Sura Yako'?",
@@ -569,28 +584,6 @@
       "Wakadinali"
      ],
      "why": "They formed in Nairobi in 2005."
-    },
-    {
-     "level": 1,
-     "q": "Which Kenyan pop style is Nairobi's take on hip hop and dancehall?",
-     "a": "Genge",
-     "wrong": [
-      "Bongo Flava",
-      "Kwaito",
-      "Highlife"
-     ],
-     "why": "Jua Cali helped make it popular."
-    },
-    {
-     "level": 1,
-     "q": "Which writer wrote 'Weep Not, Child' and 'Petals of Blood'?",
-     "a": "Ngũgĩ wa Thiong'o",
-     "wrong": [
-      "Grace Ogot",
-      "Binyavanga Wainaina",
-      "Meja Mwangi"
-     ],
-     "why": "He later wrote mainly in Gikuyu."
     },
     {
      "level": 1,
@@ -627,28 +620,6 @@
     },
     {
      "level": 2,
-     "q": "Which 2018 film by Wanuri Kahiu was first banned in Kenya?",
-     "a": "Rafiki",
-     "wrong": [
-      "Nairobi Half Life",
-      "Supa Modo",
-      "Kati Kati"
-     ],
-     "why": "It was the first Kenyan film shown at Cannes."
-    },
-    {
-     "level": 2,
-     "q": "What is the Nairobi street slang mixing Swahili and English called?",
-     "a": "Sheng",
-     "wrong": [
-      "Pidgin",
-      "Kiswahili Sanifu",
-      "Patois"
-     ],
-     "why": "It changes quickly from estate to estate."
-    },
-    {
-     "level": 2,
      "q": "Which 2002 hit by Gidi Gidi Maji Maji became an election anthem?",
      "a": "Unbwogable",
      "wrong": [
@@ -660,17 +631,6 @@
     },
     {
      "level": 2,
-     "q": "Who wrote the satirical essay 'How to Write About Africa'?",
-     "a": "Binyavanga Wainaina",
-     "wrong": [
-      "Ngũgĩ wa Thiong'o",
-      "Yvonne Owuor",
-      "Meja Mwangi"
-     ],
-     "why": "It appeared in Granta in 2005."
-    },
-    {
-     "level": 2,
      "q": "Which Benga music star sang with the Shirati Jazz band?",
      "a": "D. O. Misiani",
      "wrong": [
@@ -679,39 +639,6 @@
       "Joseph Kamaru"
      ],
      "why": "Benga grew among the Luo in the 1960s."
-    },
-    {
-     "level": 2,
-     "q": "Which character does Lupita Nyong'o play in 'Black Panther'?",
-     "a": "Nakia",
-     "wrong": [
-      "Shuri",
-      "Okoye",
-      "Ramonda"
-     ],
-     "why": "Nakia is a Wakandan spy."
-    },
-    {
-     "level": 3,
-     "q": "Which 2012 Kenyan film about a young actor was Kenya's Oscar entry?",
-     "a": "Nairobi Half Life",
-     "wrong": [
-      "Rafiki",
-      "Supa Modo",
-      "Soul Boy"
-     ],
-     "why": "David 'Tosh' Gitonga directed it."
-    },
-    {
-     "level": 3,
-     "q": "Which Kenyan author wrote 'Dust' (2013)?",
-     "a": "Yvonne Adhiambo Owuor",
-     "wrong": [
-      "Ngũgĩ wa Thiong'o",
-      "Margaret Ogola",
-      "Grace Ogot"
-     ],
-     "why": "It won the Jomo Kenyatta Prize for Literature."
     },
     {
      "level": 3,
@@ -727,8 +654,198 @@
    ]
   },
   {
-   "name": "Kenya Food & Traditions",
+   "category": "Entertainment",
+   "name": "Film",
    "questions": [
+    {
+     "level": 1,
+     "q": "Which Kenyan-Mexican actress won an Oscar for '12 Years a Slave'?",
+     "a": "Lupita Nyong'o",
+     "wrong": [
+      "Wanuri Kahiu",
+      "Sheila Munyiva",
+      "Catherine Kamau"
+     ],
+     "why": "She won Best Supporting Actress in 2014."
+    },
+    {
+     "level": 2,
+     "q": "Which 2018 film by Wanuri Kahiu was first banned in Kenya?",
+     "a": "Rafiki",
+     "wrong": [
+      "Nairobi Half Life",
+      "Supa Modo",
+      "Kati Kati"
+     ],
+     "why": "It was the first Kenyan film shown at Cannes."
+    },
+    {
+     "level": 3,
+     "q": "Which 2012 Kenyan film about a young actor was Kenya's Oscar entry?",
+     "a": "Nairobi Half Life",
+     "wrong": [
+      "Rafiki",
+      "Supa Modo",
+      "Soul Boy"
+     ],
+     "why": "David 'Tosh' Gitonga directed it."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which writer wrote 'Weep Not, Child' and 'Petals of Blood'?",
+     "a": "Ngũgĩ wa Thiong'o",
+     "wrong": [
+      "Grace Ogot",
+      "Binyavanga Wainaina",
+      "Meja Mwangi"
+     ],
+     "why": "He later wrote mainly in Gikuyu."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote the satirical essay 'How to Write About Africa'?",
+     "a": "Binyavanga Wainaina",
+     "wrong": [
+      "Ngũgĩ wa Thiong'o",
+      "Yvonne Owuor",
+      "Meja Mwangi"
+     ],
+     "why": "It appeared in Granta in 2005."
+    },
+    {
+     "level": 3,
+     "q": "Which Kenyan author wrote 'Dust' (2013)?",
+     "a": "Yvonne Adhiambo Owuor",
+     "wrong": [
+      "Ngũgĩ wa Thiong'o",
+      "Margaret Ogola",
+      "Grace Ogot"
+     ],
+     "why": "It won the Jomo Kenyatta Prize for Literature."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain range near Nairobi is named after a Danish author's farm?",
+     "a": "Ngong Hills",
+     "wrong": [
+      "Aberdare Range",
+      "Chyulu Hills",
+      "Taita Hills"
+     ],
+     "why": "Karen Blixen wrote 'Out of Africa' about her farm there."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 2,
+     "q": "In which year did Kenya adopt its current constitution?",
+     "a": "2010",
+     "wrong": [
+      "2002",
+      "2007",
+      "1992"
+     ],
+     "why": "It created the 47 counties."
+    },
+    {
+     "level": 3,
+     "q": "Who became Prime Minister under the 2008 power-sharing deal?",
+     "a": "Raila Odinga",
+     "wrong": [
+      "Musalia Mudavadi",
+      "Kalonzo Musyoka",
+      "Uhuru Kenyatta"
+     ],
+     "why": "It followed post-election violence."
+    },
+    {
+     "level": 2,
+     "q": "Which UN headquarters is in Nairobi?",
+     "a": "UN Environment Programme",
+     "wrong": [
+      "World Health Organization",
+      "UNESCO",
+      "UNICEF"
+     ],
+     "why": "UN-Habitat is also based there."
+    }
+   ]
+  },
+  {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which animals hold the shield on Kenya's coat of arms?",
+     "a": "Two lions",
+     "wrong": [
+      "Two elephants",
+      "Two zebras",
+      "Two leopards"
+     ],
+     "why": "The motto 'Harambee' is written beneath them."
+    },
+    {
+     "level": 2,
+     "q": "Which conservancy holds the last two northern white rhinos?",
+     "a": "Ol Pejeta",
+     "wrong": [
+      "Lewa",
+      "Solio",
+      "Nairobi National Park"
+     ],
+     "why": "Both are female."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Kenyan pop style is Nairobi's take on hip hop and dancehall?",
+     "a": "Genge",
+     "wrong": [
+      "Bongo Flava",
+      "Kwaito",
+      "Highlife"
+     ],
+     "why": "Jua Cali helped make it popular."
+    },
+    {
+     "level": 2,
+     "q": "What is the Nairobi street slang mixing Swahili and English called?",
+     "a": "Sheng",
+     "wrong": [
+      "Pidgin",
+      "Kiswahili Sanifu",
+      "Patois"
+     ],
+     "why": "It changes quickly from estate to estate."
+    },
+    {
+     "level": 2,
+     "q": "Which character does Lupita Nyong'o play in 'Black Panther'?",
+     "a": "Nakia",
+     "wrong": [
+      "Shuri",
+      "Okoye",
+      "Ramonda"
+     ],
+     "why": "Nakia is a Wakandan spy."
+    },
     {
      "level": 1,
      "q": "What is Kenya's stiff maize porridge staple called?",
@@ -904,12 +1021,7 @@
       "A coastal sweet"
      ],
      "why": "It is stored in gourds smoked with charcoal."
-    }
-   ]
-  },
-  {
-   "name": "Kenya General Knowledge",
-   "questions": [
+    },
     {
      "level": 1,
      "q": "What is Kenya's currency?",
@@ -931,39 +1043,6 @@
       "Maasai and English"
      ],
      "why": "Over 40 local languages are spoken too."
-    },
-    {
-     "level": 1,
-     "q": "Which mobile money service started in Kenya in 2007?",
-     "a": "M-Pesa",
-     "wrong": [
-      "PayPal",
-      "Airtel Money",
-      "MTN MoMo"
-     ],
-     "why": "'Pesa' means money in Swahili."
-    },
-    {
-     "level": 1,
-     "q": "Which Kenyan won the 2004 Nobel Peace Prize?",
-     "a": "Wangari Maathai",
-     "wrong": [
-      "Ngũgĩ wa Thiong'o",
-      "Richard Leakey",
-      "Raila Odinga"
-     ],
-     "why": "She founded the Green Belt Movement."
-    },
-    {
-     "level": 1,
-     "q": "Which animals hold the shield on Kenya's coat of arms?",
-     "a": "Two lions",
-     "wrong": [
-      "Two elephants",
-      "Two zebras",
-      "Two leopards"
-     ],
-     "why": "The motto 'Harambee' is written beneath them."
     },
     {
      "level": 1,
@@ -1011,39 +1090,6 @@
     },
     {
      "level": 2,
-     "q": "Which UN headquarters is in Nairobi?",
-     "a": "UN Environment Programme",
-     "wrong": [
-      "World Health Organization",
-      "UNESCO",
-      "UNICEF"
-     ],
-     "why": "UN-Habitat is also based there."
-    },
-    {
-     "level": 2,
-     "q": "What is the name of the Nairobi–Mombasa railway that opened in 2017?",
-     "a": "Madaraka Express",
-     "wrong": [
-      "Lunatic Express",
-      "Harambee Line",
-      "Uhuru Express"
-     ],
-     "why": "It runs on the Standard Gauge Railway."
-    },
-    {
-     "level": 2,
-     "q": "Which conservancy holds the last two northern white rhinos?",
-     "a": "Ol Pejeta",
-     "wrong": [
-      "Lewa",
-      "Solio",
-      "Nairobi National Park"
-     ],
-     "why": "Both are female."
-    },
-    {
-     "level": 2,
      "q": "What does 'Hakuna matata' mean?",
      "a": "No worries",
      "wrong": [
@@ -1052,28 +1098,6 @@
       "Good morning"
      ],
      "why": "'The Lion King' made it famous."
-    },
-    {
-     "level": 3,
-     "q": "Which 1.5-million-year-old skeleton was found near Lake Turkana in 1984?",
-     "a": "Turkana Boy",
-     "wrong": [
-      "Lucy",
-      "Mrs Ples",
-      "Taung Child"
-     ],
-     "why": "It is one of the most complete early human skeletons."
-    },
-    {
-     "level": 3,
-     "q": "Which mountain range near Nairobi is named after a Danish author's farm?",
-     "a": "Ngong Hills",
-     "wrong": [
-      "Aberdare Range",
-      "Chyulu Hills",
-      "Taita Hills"
-     ],
-     "why": "Karen Blixen wrote 'Out of Africa' about her farm there."
     },
     {
      "level": 3,

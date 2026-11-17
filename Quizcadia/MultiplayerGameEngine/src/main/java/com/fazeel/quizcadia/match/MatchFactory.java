@@ -59,8 +59,9 @@ public class MatchFactory {
 			List<Candidate> mine = all.stream().filter(c -> players.home().equals(c.country())).toList();
 			picked = mine.isEmpty() && general.isEmpty() ? pick(all, mix, target, seenBy)
 					: pickWithHome(mine, general, mix, target, seenBy);
-		} else if (players.mixed() && !general.isEmpty()) {
-			// players from different countries: general questions only, so nobody plays at home
+		} else if (!general.isEmpty()) {
+			// players from different countries (or countries unknown): general questions only, so nobody plays
+			// at home and nobody gets another country's questions
 			picked = pick(general, mix, target, seenBy);
 		} else {
 			picked = pick(all, mix, target, seenBy);
@@ -192,7 +193,7 @@ public class MatchFactory {
 		}
 		List<String> codes = people.stream().map(id -> code(match.countries().get(id))).toList();
 		if (codes.stream().allMatch(Objects::isNull)) {
-			return new Players(null, false); // nothing known: every question is fair game, as before
+			return new Players(null, false); // nothing known: general questions, like a mixed match
 		}
 		if (codes.stream().noneMatch(Objects::isNull) && codes.stream().distinct().count() == 1) {
 			return new Players(codes.get(0), false);

@@ -3,7 +3,80 @@
  "country": "SA",
  "topics": [
   {
-   "name": "Saudi Arabia: History & People",
+   "category": "History",
+   "name": "History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who founded the modern Kingdom of Saudi Arabia in 1932?",
+     "a": "King Abdulaziz (Ibn Saud)",
+     "wrong": [
+      "King Faisal",
+      "King Fahd",
+      "King Salman"
+     ],
+     "why": "His sons have ruled since."
+    },
+    {
+     "level": 2,
+     "q": "Which day on 22 February marks the first Saudi state of 1727?",
+     "a": "Founding Day",
+     "wrong": [
+      "National Day",
+      "Flag Day",
+      "Unity Day"
+     ],
+     "why": "It was first celebrated in 2022."
+    },
+    {
+     "level": 2,
+     "q": "Who became King of Saudi Arabia in 2015?",
+     "a": "King Salman",
+     "wrong": [
+      "King Abdullah",
+      "King Fahd",
+      "King Khalid"
+     ],
+     "why": "His son Mohammed is Crown Prince."
+    },
+    {
+     "level": 3,
+     "q": "Which plan, launched in 2016, aims to move the economy beyond oil?",
+     "a": "Vision 2030",
+     "wrong": [
+      "NEOM Plan",
+      "Vision 2020",
+      "Green Riyadh"
+     ],
+     "why": "It includes tourism and entertainment projects."
+    },
+    {
+     "level": 3,
+     "q": "Which king was assassinated in 1975?",
+     "a": "King Faisal",
+     "wrong": [
+      "King Saud",
+      "King Khalid",
+      "King Abdullah"
+     ],
+     "why": "He led the 1973 oil embargo."
+    },
+    {
+     "level": 2,
+     "q": "Which Portuguese superstar joined Al Nassr in 2023?",
+     "a": "Cristiano Ronaldo",
+     "wrong": [
+      "Neymar",
+      "Karim Benzema",
+      "Sadio Mané"
+     ],
+     "why": "Benzema joined Al Ittihad that summer."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -28,16 +101,133 @@
      "why": "The Prophet Muhammad is buried there."
     },
     {
-     "level": 1,
-     "q": "Who founded the modern Kingdom of Saudi Arabia in 1932?",
-     "a": "King Abdulaziz (Ibn Saud)",
+     "level": 2,
+     "q": "Which state-owned company is the world's largest oil producer?",
+     "a": "Saudi Aramco",
      "wrong": [
-      "King Faisal",
-      "King Fahd",
-      "King Salman"
+      "Petrobras",
+      "ADNOC",
+      "Gazprom"
      ],
-     "why": "His sons have ruled since."
+     "why": "It listed some shares in 2019."
     },
+    {
+     "level": 2,
+     "q": "Which town was the capital of the first Saudi state?",
+     "a": "Diriyah",
+     "wrong": [
+      "Riyadh",
+      "Ha'il",
+      "Unaizah"
+     ],
+     "why": "Its At-Turaif district is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of Saudi Arabia?",
+     "a": "Riyadh",
+     "wrong": [
+      "Jeddah",
+      "Mecca",
+      "Dammam"
+     ],
+     "why": "It is in the centre of the country."
+    },
+    {
+     "level": 1,
+     "q": "Which Red Sea city is the main gateway for pilgrims to Mecca?",
+     "a": "Jeddah",
+     "wrong": [
+      "Yanbu",
+      "Dammam",
+      "Ta'if"
+     ],
+     "why": "Its old town, Al-Balad, is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "What is the world's largest continuous sand desert, in southern Saudi Arabia?",
+     "a": "Rub' al Khali (Empty Quarter)",
+     "wrong": [
+      "Sahara",
+      "Nefud",
+      "Dahna"
+     ],
+     "why": "It is shared with neighbouring countries."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain city is famous for its roses?",
+     "a": "Ta'if",
+     "wrong": [
+      "Abha",
+      "Al Baha",
+      "Najran"
+     ],
+     "why": "Its rose water is prized."
+    },
+    {
+     "level": 3,
+     "q": "Which eastern oasis is one of the largest in the world?",
+     "a": "Al-Ahsa",
+     "wrong": [
+      "AlUla",
+      "Tabuk",
+      "Najran"
+     ],
+     "why": "It has millions of palm trees."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which club has won the AFC Champions League a record number of times?",
+     "a": "Al Hilal",
+     "wrong": [
+      "Al Nassr",
+      "Al Ittihad",
+      "Al Ahli"
+     ],
+     "why": "It is based in Riyadh."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which ancient Nabataean city in AlUla has tombs carved into rock?",
+     "a": "Hegra",
+     "wrong": [
+      "Petra",
+      "Palmyra",
+      "Ubar"
+     ],
+     "why": "It was Saudi Arabia's first UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which southwestern region is famous for brightly painted house interiors?",
+     "a": "Asir",
+     "wrong": [
+      "Najd",
+      "Hejaz",
+      "Al-Ahsa"
+     ],
+     "why": "The art is called Al-Qatt Al-Asiri."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
     {
      "level": 1,
      "q": "What is the annual pilgrimage to Mecca called?",
@@ -84,50 +274,6 @@
     },
     {
      "level": 2,
-     "q": "Which state-owned company is the world's largest oil producer?",
-     "a": "Saudi Aramco",
-     "wrong": [
-      "Petrobras",
-      "ADNOC",
-      "Gazprom"
-     ],
-     "why": "It listed some shares in 2019."
-    },
-    {
-     "level": 2,
-     "q": "Which day on 22 February marks the first Saudi state of 1727?",
-     "a": "Founding Day",
-     "wrong": [
-      "National Day",
-      "Flag Day",
-      "Unity Day"
-     ],
-     "why": "It was first celebrated in 2022."
-    },
-    {
-     "level": 2,
-     "q": "Which town was the capital of the first Saudi state?",
-     "a": "Diriyah",
-     "wrong": [
-      "Riyadh",
-      "Ha'il",
-      "Unaizah"
-     ],
-     "why": "Its At-Turaif district is a UNESCO site."
-    },
-    {
-     "level": 2,
-     "q": "Who became King of Saudi Arabia in 2015?",
-     "a": "King Salman",
-     "wrong": [
-      "King Abdullah",
-      "King Fahd",
-      "King Khalid"
-     ],
-     "why": "His son Mohammed is Crown Prince."
-    },
-    {
-     "level": 2,
      "q": "In which year were women first allowed to drive in Saudi Arabia?",
      "a": "2018",
      "wrong": [
@@ -136,77 +282,6 @@
       "2022"
      ],
      "why": "The ban was lifted in June 2018."
-    },
-    {
-     "level": 3,
-     "q": "Which ancient Nabataean city in AlUla has tombs carved into rock?",
-     "a": "Hegra",
-     "wrong": [
-      "Petra",
-      "Palmyra",
-      "Ubar"
-     ],
-     "why": "It was Saudi Arabia's first UNESCO site."
-    },
-    {
-     "level": 3,
-     "q": "Which plan, launched in 2016, aims to move the economy beyond oil?",
-     "a": "Vision 2030",
-     "wrong": [
-      "NEOM Plan",
-      "Vision 2020",
-      "Green Riyadh"
-     ],
-     "why": "It includes tourism and entertainment projects."
-    },
-    {
-     "level": 3,
-     "q": "Which king was assassinated in 1975?",
-     "a": "King Faisal",
-     "wrong": [
-      "King Saud",
-      "King Khalid",
-      "King Abdullah"
-     ],
-     "why": "He led the 1973 oil embargo."
-    }
-   ]
-  },
-  {
-   "name": "Saudi Arabia: Places & Culture",
-   "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Saudi Arabia?",
-     "a": "Riyadh",
-     "wrong": [
-      "Jeddah",
-      "Mecca",
-      "Dammam"
-     ],
-     "why": "It is in the centre of the country."
-    },
-    {
-     "level": 1,
-     "q": "Which Red Sea city is the main gateway for pilgrims to Mecca?",
-     "a": "Jeddah",
-     "wrong": [
-      "Yanbu",
-      "Dammam",
-      "Ta'if"
-     ],
-     "why": "Its old town, Al-Balad, is a UNESCO site."
-    },
-    {
-     "level": 1,
-     "q": "What is the world's largest continuous sand desert, in southern Saudi Arabia?",
-     "a": "Rub' al Khali (Empty Quarter)",
-     "wrong": [
-      "Sahara",
-      "Nefud",
-      "Dahna"
-     ],
-     "why": "It is shared with neighbouring countries."
     },
     {
      "level": 1,
@@ -273,61 +348,6 @@
       "Khaleegy"
      ],
      "why": "It is on UNESCO's heritage list."
-    },
-    {
-     "level": 2,
-     "q": "Which club has won the AFC Champions League a record number of times?",
-     "a": "Al Hilal",
-     "wrong": [
-      "Al Nassr",
-      "Al Ittihad",
-      "Al Ahli"
-     ],
-     "why": "It is based in Riyadh."
-    },
-    {
-     "level": 2,
-     "q": "Which Portuguese superstar joined Al Nassr in 2023?",
-     "a": "Cristiano Ronaldo",
-     "wrong": [
-      "Neymar",
-      "Karim Benzema",
-      "Sadio Mané"
-     ],
-     "why": "Benzema joined Al Ittihad that summer."
-    },
-    {
-     "level": 2,
-     "q": "Which mountain city is famous for its roses?",
-     "a": "Ta'if",
-     "wrong": [
-      "Abha",
-      "Al Baha",
-      "Najran"
-     ],
-     "why": "Its rose water is prized."
-    },
-    {
-     "level": 3,
-     "q": "Which southwestern region is famous for brightly painted house interiors?",
-     "a": "Asir",
-     "wrong": [
-      "Najd",
-      "Hejaz",
-      "Al-Ahsa"
-     ],
-     "why": "The art is called Al-Qatt Al-Asiri."
-    },
-    {
-     "level": 3,
-     "q": "Which eastern oasis is one of the largest in the world?",
-     "a": "Al-Ahsa",
-     "wrong": [
-      "AlUla",
-      "Tabuk",
-      "Najran"
-     ],
-     "why": "It has millions of palm trees."
     },
     {
      "level": 3,

@@ -3,7 +3,8 @@
  "country": "CO",
  "topics": [
   {
-   "name": "Colombia: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -40,28 +41,6 @@
     },
     {
      "level": 1,
-     "q": "Which Colombian author won the 1982 Nobel Prize in Literature?",
-     "a": "Gabriel García Márquez",
-     "wrong": [
-      "Álvaro Mutis",
-      "Jorge Isaacs",
-      "Fernando Vallejo"
-     ],
-     "why": "He wrote 'One Hundred Years of Solitude'."
-    },
-    {
-     "level": 1,
-     "q": "What was the union of Colombia, Venezuela, Ecuador and Panama called?",
-     "a": "Gran Colombia",
-     "wrong": [
-      "United Provinces",
-      "Andean Union",
-      "New Granada Federation"
-     ],
-     "why": "It broke apart in 1831."
-    },
-    {
-     "level": 1,
      "q": "What was the Spanish colony covering Colombia called?",
      "a": "New Granada",
      "wrong": [
@@ -70,17 +49,6 @@
       "New Castile"
      ],
      "why": "Its viceroy sat in Bogotá."
-    },
-    {
-     "level": 1,
-     "q": "Which President won the 2016 Nobel Peace Prize for a deal with the FARC?",
-     "a": "Juan Manuel Santos",
-     "wrong": [
-      "Álvaro Uribe",
-      "Iván Duque",
-      "Gustavo Petro"
-     ],
-     "why": "The deal ended over 50 years of conflict."
     },
     {
      "level": 2,
@@ -95,17 +63,6 @@
     },
     {
      "level": 2,
-     "q": "Which legendary city of gold did Spaniards hunt for in Colombia?",
-     "a": "El Dorado",
-     "wrong": [
-      "Cíbola",
-      "Paititi",
-      "Quivira"
-     ],
-     "why": "The legend began with a Muisca ritual at Lake Guatavita."
-    },
-    {
-     "level": 2,
      "q": "Which period of violence began in 1948 after the murder of Jorge Gaitán?",
      "a": "La Violencia",
      "wrong": [
@@ -114,17 +71,6 @@
       "La Guerra Sucia"
      ],
      "why": "It lasted about ten years."
-    },
-    {
-     "level": 2,
-     "q": "Which Indigenous people lived in the highlands around Bogotá?",
-     "a": "Muisca",
-     "wrong": [
-      "Inca",
-      "Maya",
-      "Taíno"
-     ],
-     "why": "They were skilled goldsmiths."
     },
     {
      "level": 2,
@@ -139,6 +85,34 @@
     },
     {
      "level": 3,
+     "q": "Which ancient 'Lost City' in the Sierra Nevada de Santa Marta was found in 1972?",
+     "a": "Ciudad Perdida",
+     "wrong": [
+      "Machu Picchu",
+      "San Agustín",
+      "Tierradentro"
+     ],
+     "why": "It is older than Machu Picchu."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which legendary city of gold did Spaniards hunt for in Colombia?",
+     "a": "El Dorado",
+     "wrong": [
+      "Cíbola",
+      "Paititi",
+      "Quivira"
+     ],
+     "why": "The legend began with a Muisca ritual at Lake Guatavita."
+    },
+    {
+     "level": 3,
      "q": "Which walled Caribbean city is a UNESCO site?",
      "a": "Cartagena",
      "wrong": [
@@ -149,33 +123,6 @@
      "why": "Its walls protected Spanish treasure fleets."
     },
     {
-     "level": 3,
-     "q": "Which ancient 'Lost City' in the Sierra Nevada de Santa Marta was found in 1972?",
-     "a": "Ciudad Perdida",
-     "wrong": [
-      "Machu Picchu",
-      "San Agustín",
-      "Tierradentro"
-     ],
-     "why": "It is older than Machu Picchu."
-    },
-    {
-     "level": 3,
-     "q": "Who was the 'Man of Laws', Bolívar's vice-president?",
-     "a": "Francisco de Paula Santander",
-     "wrong": [
-      "Antonio Nariño",
-      "Rafael Núñez",
-      "Camilo Torres"
-     ],
-     "why": "He later became President of New Granada."
-    }
-   ]
-  },
-  {
-   "name": "Colombia: Places & Culture",
-   "questions": [
-    {
      "level": 1,
      "q": "What is the capital of Colombia?",
      "a": "Bogotá",
@@ -185,39 +132,6 @@
       "Cartagena"
      ],
      "why": "It sits at about 2,640 m."
-    },
-    {
-     "level": 1,
-     "q": "Which crop is Colombia world-famous for?",
-     "a": "Coffee",
-     "wrong": [
-      "Tea",
-      "Cocoa",
-      "Vanilla"
-     ],
-     "why": "The Coffee Cultural Landscape is a UNESCO site."
-    },
-    {
-     "level": 1,
-     "q": "Which Colombian singer had hits with 'Hips Don't Lie' and 'Waka Waka'?",
-     "a": "Shakira",
-     "wrong": [
-      "Karol G",
-      "Juanes",
-      "Maluma"
-     ],
-     "why": "She is from Barranquilla."
-    },
-    {
-     "level": 1,
-     "q": "Which dance music from Colombia's Caribbean coast spread across Latin America?",
-     "a": "Cumbia",
-     "wrong": [
-      "Tango",
-      "Merengue",
-      "Bachata"
-     ],
-     "why": "It mixes African, Indigenous and Spanish roots."
     },
     {
      "level": 1,
@@ -232,17 +146,6 @@
     },
     {
      "level": 1,
-     "q": "What is Colombia's currency?",
-     "a": "Colombian peso",
-     "wrong": [
-      "Sol",
-      "Bolívar",
-      "Real"
-     ],
-     "why": "Its code is COP."
-    },
-    {
-     "level": 1,
      "q": "Which two seas or oceans does Colombia have coasts on?",
      "a": "Pacific Ocean and Caribbean Sea",
      "wrong": [
@@ -251,17 +154,6 @@
       "Mediterranean Sea and Caribbean"
      ],
      "why": "It is the only South American country with both."
-    },
-    {
-     "level": 2,
-     "q": "Which city is called the world's salsa capital?",
-     "a": "Cali",
-     "wrong": [
-      "Medellín",
-      "Barranquilla",
-      "Bogotá"
-     ],
-     "why": "It holds a huge salsa festival."
     },
     {
      "level": 2,
@@ -287,17 +179,6 @@
     },
     {
      "level": 2,
-     "q": "Which corn cakes are a Colombian staple?",
-     "a": "Arepas",
-     "wrong": [
-      "Tamales",
-      "Empanadas",
-      "Pupusas"
-     ],
-     "why": "They are eaten at breakfast and beyond."
-    },
-    {
-     "level": 2,
      "q": "Which is Colombia's main river?",
      "a": "Magdalena",
      "wrong": [
@@ -306,7 +187,97 @@
       "Orinoco"
      ],
      "why": "It runs north to the Caribbean."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Colombian singer had hits with 'Hips Don't Lie' and 'Waka Waka'?",
+     "a": "Shakira",
+     "wrong": [
+      "Karol G",
+      "Juanes",
+      "Maluma"
+     ],
+     "why": "She is from Barranquilla."
     },
+    {
+     "level": 1,
+     "q": "Which dance music from Colombia's Caribbean coast spread across Latin America?",
+     "a": "Cumbia",
+     "wrong": [
+      "Tango",
+      "Merengue",
+      "Bachata"
+     ],
+     "why": "It mixes African, Indigenous and Spanish roots."
+    },
+    {
+     "level": 2,
+     "q": "Which city is called the world's salsa capital?",
+     "a": "Cali",
+     "wrong": [
+      "Medellín",
+      "Barranquilla",
+      "Bogotá"
+     ],
+     "why": "It holds a huge salsa festival."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Colombian author won the 1982 Nobel Prize in Literature?",
+     "a": "Gabriel García Márquez",
+     "wrong": [
+      "Álvaro Mutis",
+      "Jorge Isaacs",
+      "Fernando Vallejo"
+     ],
+     "why": "He wrote 'One Hundred Years of Solitude'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which President won the 2016 Nobel Peace Prize for a deal with the FARC?",
+     "a": "Juan Manuel Santos",
+     "wrong": [
+      "Álvaro Uribe",
+      "Iván Duque",
+      "Gustavo Petro"
+     ],
+     "why": "The deal ended over 50 years of conflict."
+    },
+    {
+     "level": 3,
+     "q": "Who was the 'Man of Laws', Bolívar's vice-president?",
+     "a": "Francisco de Paula Santander",
+     "wrong": [
+      "Antonio Nariño",
+      "Rafael Núñez",
+      "Camilo Torres"
+     ],
+     "why": "He later became President of New Granada."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
     {
      "level": 3,
      "q": "Which Colombian artist painted and sculpted plump, rounded figures?",
@@ -328,6 +299,67 @@
       "Medellín Cathedral"
      ],
      "why": "It holds services deep below ground."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What was the union of Colombia, Venezuela, Ecuador and Panama called?",
+     "a": "Gran Colombia",
+     "wrong": [
+      "United Provinces",
+      "Andean Union",
+      "New Granada Federation"
+     ],
+     "why": "It broke apart in 1831."
+    },
+    {
+     "level": 2,
+     "q": "Which Indigenous people lived in the highlands around Bogotá?",
+     "a": "Muisca",
+     "wrong": [
+      "Inca",
+      "Maya",
+      "Taíno"
+     ],
+     "why": "They were skilled goldsmiths."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is Colombia world-famous for?",
+     "a": "Coffee",
+     "wrong": [
+      "Tea",
+      "Cocoa",
+      "Vanilla"
+     ],
+     "why": "The Coffee Cultural Landscape is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "What is Colombia's currency?",
+     "a": "Colombian peso",
+     "wrong": [
+      "Sol",
+      "Bolívar",
+      "Real"
+     ],
+     "why": "Its code is COP."
+    },
+    {
+     "level": 2,
+     "q": "Which corn cakes are a Colombian staple?",
+     "a": "Arepas",
+     "wrong": [
+      "Tamales",
+      "Empanadas",
+      "Pupusas"
+     ],
+     "why": "They are eaten at breakfast and beyond."
     },
     {
      "level": 3,

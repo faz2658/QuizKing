@@ -3,41 +3,9 @@
  "country": "LU",
  "topics": [
   {
-   "name": "Luxembourg: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Luxembourg?",
-     "a": "Luxembourg City",
-     "wrong": [
-      "Esch-sur-Alzette",
-      "Differdange",
-      "Dudelange"
-     ],
-     "why": "It is home to several EU institutions."
-    },
-    {
-     "level": 1,
-     "q": "What kind of state is Luxembourg?",
-     "a": "Grand Duchy",
-     "wrong": [
-      "Kingdom",
-      "Principality",
-      "Republic"
-     ],
-     "why": "It is the world's only grand duchy."
-    },
-    {
-     "level": 1,
-     "q": "Which three languages are official in Luxembourg?",
-     "a": "Luxembourgish, French and German",
-     "wrong": [
-      "Dutch, French and German",
-      "French, German and English",
-      "Luxembourgish, Dutch and French"
-     ],
-     "why": "Most people speak several languages."
-    },
     {
      "level": 1,
      "q": "Which 1957 treaty did Luxembourg sign as a founding member of the EEC?",
@@ -48,39 +16,6 @@
       "Lisbon Treaty"
      ],
      "why": "It was one of the six founders."
-    },
-    {
-     "level": 1,
-     "q": "Which customs union did Luxembourg form with Belgium and the Netherlands?",
-     "a": "Benelux",
-     "wrong": [
-      "Schengen Area",
-      "Nordic Council",
-      "EFTA"
-     ],
-     "why": "It began in 1944."
-    },
-    {
-     "level": 1,
-     "q": "Which village in Luxembourg gave its name to Europe's border-free zone?",
-     "a": "Schengen",
-     "wrong": [
-      "Remich",
-      "Vianden",
-      "Echternach"
-     ],
-     "why": "The agreement was signed on a boat in 1985."
-    },
-    {
-     "level": 1,
-     "q": "Which Luxembourger was President of the European Commission from 2014 to 2019?",
-     "a": "Jean-Claude Juncker",
-     "wrong": [
-      "Jacques Santer",
-      "Xavier Bettel",
-      "Gaston Thorn"
-     ],
-     "why": "He was also Prime Minister for 18 years."
     },
     {
      "level": 2,
@@ -127,17 +62,6 @@
      "why": "She ruled from 1919 to 1964."
     },
     {
-     "level": 2,
-     "q": "Which industry made Luxembourg rich in the late 1800s?",
-     "a": "Steel",
-     "wrong": [
-      "Coal",
-      "Textiles",
-      "Shipbuilding"
-     ],
-     "why": "ArcelorMittal is based there."
-    },
-    {
      "level": 3,
      "q": "Which House of Luxembourg members became Holy Roman Emperors?",
      "a": "Henry VII and Charles IV",
@@ -147,6 +71,123 @@
       "Maximilian I and Rudolf II"
      ],
      "why": "The family also ruled Bohemia."
+    },
+    {
+     "level": 1,
+     "q": "What was Luxembourg the first country to make free for everyone, in 2020?",
+     "a": "Public transport",
+     "wrong": [
+      "University",
+      "Healthcare",
+      "Broadband"
+     ],
+     "why": "Buses, trams and trains cost nothing."
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Luxembourg?",
+     "a": "Luxembourg City",
+     "wrong": [
+      "Esch-sur-Alzette",
+      "Differdange",
+      "Dudelange"
+     ],
+     "why": "It is home to several EU institutions."
+    },
+    {
+     "level": 1,
+     "q": "What kind of state is Luxembourg?",
+     "a": "Grand Duchy",
+     "wrong": [
+      "Kingdom",
+      "Principality",
+      "Republic"
+     ],
+     "why": "It is the world's only grand duchy."
+    },
+    {
+     "level": 1,
+     "q": "Which village in Luxembourg gave its name to Europe's border-free zone?",
+     "a": "Schengen",
+     "wrong": [
+      "Remich",
+      "Vianden",
+      "Echternach"
+     ],
+     "why": "The agreement was signed on a boat in 1985."
+    },
+    {
+     "level": 1,
+     "q": "Which hilly forest region covers northern Luxembourg?",
+     "a": "Ardennes (Éislek)",
+     "wrong": [
+      "Black Forest",
+      "Vosges",
+      "Hunsrück"
+     ],
+     "why": "It is popular for hiking."
+    },
+    {
+     "level": 2,
+     "q": "Which abbey town holds a dancing procession every Whit Tuesday?",
+     "a": "Echternach",
+     "wrong": [
+      "Clervaux",
+      "Wiltz",
+      "Diekirch"
+     ],
+     "why": "It is on UNESCO's list."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which cyclist from Luxembourg won the 2010 Tour de France?",
+     "a": "Andy Schleck",
+     "wrong": [
+      "Fränk Schleck",
+      "Charly Gaul",
+      "Bob Jungels"
+     ],
+     "why": "He got the title after Contador was stripped."
+    },
+    {
+     "level": 3,
+     "q": "Which cyclist from Luxembourg won the Tour de France in 1958?",
+     "a": "Charly Gaul",
+     "wrong": [
+      "Nicolas Frantz",
+      "François Faber",
+      "Andy Schleck"
+     ],
+     "why": "He was called 'the Angel of the Mountains'."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Luxembourger was President of the European Commission from 2014 to 2019?",
+     "a": "Jean-Claude Juncker",
+     "wrong": [
+      "Jacques Santer",
+      "Xavier Bettel",
+      "Gaston Thorn"
+     ],
+     "why": "He was also Prime Minister for 18 years."
     },
     {
      "level": 3,
@@ -173,8 +214,59 @@
    ]
   },
   {
-   "name": "Luxembourg: Places & Culture",
+   "category": "Art",
+   "name": "Art",
    "questions": [
+    {
+     "level": 2,
+     "q": "Which tunnels carved in the rock protected Luxembourg City?",
+     "a": "Bock Casemates",
+     "wrong": [
+      "Catacombs",
+      "Petrus Tunnels",
+      "Maginot Line"
+     ],
+     "why": "They are a UNESCO site."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which three languages are official in Luxembourg?",
+     "a": "Luxembourgish, French and German",
+     "wrong": [
+      "Dutch, French and German",
+      "French, German and English",
+      "Luxembourgish, Dutch and French"
+     ],
+     "why": "Most people speak several languages."
+    },
+    {
+     "level": 1,
+     "q": "Which customs union did Luxembourg form with Belgium and the Netherlands?",
+     "a": "Benelux",
+     "wrong": [
+      "Schengen Area",
+      "Nordic Council",
+      "EFTA"
+     ],
+     "why": "It began in 1944."
+    },
+    {
+     "level": 2,
+     "q": "Which industry made Luxembourg rich in the late 1800s?",
+     "a": "Steel",
+     "wrong": [
+      "Coal",
+      "Textiles",
+      "Shipbuilding"
+     ],
+     "why": "ArcelorMittal is based there."
+    },
     {
      "level": 1,
      "q": "What is Luxembourg's currency?",
@@ -196,28 +288,6 @@
       "International Criminal Court"
      ],
      "why": "It interprets EU law."
-    },
-    {
-     "level": 1,
-     "q": "What was Luxembourg the first country to make free for everyone, in 2020?",
-     "a": "Public transport",
-     "wrong": [
-      "University",
-      "Healthcare",
-      "Broadband"
-     ],
-     "why": "Buses, trams and trains cost nothing."
-    },
-    {
-     "level": 1,
-     "q": "Which hilly forest region covers northern Luxembourg?",
-     "a": "Ardennes (Éislek)",
-     "wrong": [
-      "Black Forest",
-      "Vosges",
-      "Hunsrück"
-     ],
-     "why": "It is popular for hiking."
     },
     {
      "level": 1,
@@ -254,28 +324,6 @@
     },
     {
      "level": 2,
-     "q": "Which tunnels carved in the rock protected Luxembourg City?",
-     "a": "Bock Casemates",
-     "wrong": [
-      "Catacombs",
-      "Petrus Tunnels",
-      "Maginot Line"
-     ],
-     "why": "They are a UNESCO site."
-    },
-    {
-     "level": 2,
-     "q": "Which cyclist from Luxembourg won the 2010 Tour de France?",
-     "a": "Andy Schleck",
-     "wrong": [
-      "Fränk Schleck",
-      "Charly Gaul",
-      "Bob Jungels"
-     ],
-     "why": "He got the title after Contador was stripped."
-    },
-    {
-     "level": 2,
      "q": "Which dish of smoked pork collar and broad beans is the national dish?",
      "a": "Judd mat Gaardebounen",
      "wrong": [
@@ -295,17 +343,6 @@
       "ZDF"
      ],
      "why": "It started as Radio Luxembourg."
-    },
-    {
-     "level": 2,
-     "q": "Which abbey town holds a dancing procession every Whit Tuesday?",
-     "a": "Echternach",
-     "wrong": [
-      "Clervaux",
-      "Wiltz",
-      "Diekirch"
-     ],
-     "why": "It is on UNESCO's list."
     },
     {
      "level": 3,
@@ -328,17 +365,6 @@
       "Liberté, égalité, fraternité"
      ],
      "why": "It means 'We want to remain what we are'."
-    },
-    {
-     "level": 3,
-     "q": "Which cyclist from Luxembourg won the Tour de France in 1958?",
-     "a": "Charly Gaul",
-     "wrong": [
-      "Nicolas Frantz",
-      "François Faber",
-      "Andy Schleck"
-     ],
-     "why": "He was called 'the Angel of the Mountains'."
     }
    ]
   }

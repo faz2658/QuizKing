@@ -3,7 +3,8 @@
  "country": "IL",
  "topics": [
   {
-   "name": "Israel: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
     {
      "level": 1,
@@ -48,17 +49,6 @@
       "Caesarea"
      ],
      "why": "It overlooks the Dead Sea."
-    },
-    {
-     "level": 1,
-     "q": "Which old wall in Jerusalem is a holy site for Jewish prayer?",
-     "a": "Western Wall",
-     "wrong": [
-      "Wailing Gate",
-      "Lion's Gate",
-      "Tower of David"
-     ],
-     "why": "It is part of the Second Temple compound."
     },
     {
      "level": 1,
@@ -117,17 +107,6 @@
     },
     {
      "level": 2,
-     "q": "Which Israeli leader signed the Camp David Accords with Egypt?",
-     "a": "Menachem Begin",
-     "wrong": [
-      "Golda Meir",
-      "Yitzhak Shamir",
-      "Shimon Peres"
-     ],
-     "why": "He shared the 1978 Nobel Peace Prize with Sadat."
-    },
-    {
-     "level": 2,
      "q": "Which king built the First Temple in Jerusalem?",
      "a": "Solomon",
      "wrong": [
@@ -149,31 +128,32 @@
      "why": "He also built Masada's palaces."
     },
     {
-     "level": 3,
-     "q": "Which writer founded modern political Zionism?",
-     "a": "Theodor Herzl",
+     "level": 2,
+     "q": "Which ancient port next to Tel Aviv is one of the world's oldest?",
+     "a": "Jaffa",
      "wrong": [
-      "Chaim Weizmann",
-      "Ahad Ha'am",
-      "Max Nordau"
+      "Caesarea",
+      "Akko",
+      "Ashkelon"
      ],
-     "why": "He wrote 'The Jewish State' in 1896."
+     "why": "It is mentioned in the Bible."
     },
     {
      "level": 3,
-     "q": "Which language did Eliezer Ben-Yehuda revive for everyday speech?",
-     "a": "Hebrew",
+     "q": "Which crusader city with underground halls is a UNESCO site?",
+     "a": "Akko (Acre)",
      "wrong": [
-      "Yiddish",
-      "Ladino",
-      "Aramaic"
+      "Caesarea",
+      "Jaffa",
+      "Tiberias"
      ],
-     "why": "He compiled the first modern Hebrew dictionary."
+     "why": "The Knights Hospitaller built there."
     }
    ]
   },
   {
-   "name": "Israel: Places & Culture",
+   "category": "Geography",
+   "name": "Geography",
    "questions": [
     {
      "level": 1,
@@ -210,39 +190,6 @@
     },
     {
      "level": 1,
-     "q": "Which fried chickpea balls are a popular street food?",
-     "a": "Falafel",
-     "wrong": [
-      "Hummus",
-      "Shakshuka",
-      "Sabich"
-     ],
-     "why": "They are served in pita."
-    },
-    {
-     "level": 1,
-     "q": "What is Israel's currency?",
-     "a": "New shekel",
-     "wrong": [
-      "Lira",
-      "Dinar",
-      "Pound"
-     ],
-     "why": "Its symbol is ₪."
-    },
-    {
-     "level": 1,
-     "q": "What is the main language of Israel?",
-     "a": "Hebrew",
-     "wrong": [
-      "Yiddish",
-      "Aramaic",
-      "Ladino"
-     ],
-     "why": "Arabic also has a special status."
-    },
-    {
-     "level": 1,
      "q": "Which lake is also called Lake Kinneret?",
      "a": "Sea of Galilee",
      "wrong": [
@@ -275,6 +222,140 @@
      "why": "It is famous for coral reefs."
     },
     {
+     "level": 3,
+     "q": "Which large desert covers southern Israel?",
+     "a": "Negev",
+     "wrong": [
+      "Sinai",
+      "Sahara",
+      "Gobi"
+     ],
+     "why": "It covers over half the country."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 2,
+     "q": "Which singer won Eurovision for Israel in 2018 with 'Toy'?",
+     "a": "Netta",
+     "wrong": [
+      "Dana International",
+      "Izhar Cohen",
+      "Noa Kirel"
+     ],
+     "why": "Israel has won four times."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Israeli actress played Wonder Woman?",
+     "a": "Gal Gadot",
+     "wrong": [
+      "Natalie Portman",
+      "Ayelet Zurer",
+      "Noa Tishby"
+     ],
+     "why": "She served in the army before acting."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Books",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which writer founded modern political Zionism?",
+     "a": "Theodor Herzl",
+     "wrong": [
+      "Chaim Weizmann",
+      "Ahad Ha'am",
+      "Max Nordau"
+     ],
+     "why": "He wrote 'The Jewish State' in 1896."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which old wall in Jerusalem is a holy site for Jewish prayer?",
+     "a": "Western Wall",
+     "wrong": [
+      "Wailing Gate",
+      "Lion's Gate",
+      "Tower of David"
+     ],
+     "why": "It is part of the Second Temple compound."
+    },
+    {
+     "level": 2,
+     "q": "Which Israeli leader signed the Camp David Accords with Egypt?",
+     "a": "Menachem Begin",
+     "wrong": [
+      "Golda Meir",
+      "Yitzhak Shamir",
+      "Shimon Peres"
+     ],
+     "why": "He shared the 1978 Nobel Peace Prize with Sadat."
+    },
+    {
+     "level": 3,
+     "q": "Which language did Eliezer Ben-Yehuda revive for everyday speech?",
+     "a": "Hebrew",
+     "wrong": [
+      "Yiddish",
+      "Ladino",
+      "Aramaic"
+     ],
+     "why": "He compiled the first modern Hebrew dictionary."
+    },
+    {
+     "level": 1,
+     "q": "Which fried chickpea balls are a popular street food?",
+     "a": "Falafel",
+     "wrong": [
+      "Hummus",
+      "Shakshuka",
+      "Sabich"
+     ],
+     "why": "They are served in pita."
+    },
+    {
+     "level": 1,
+     "q": "What is Israel's currency?",
+     "a": "New shekel",
+     "wrong": [
+      "Lira",
+      "Dinar",
+      "Pound"
+     ],
+     "why": "Its symbol is ₪."
+    },
+    {
+     "level": 1,
+     "q": "What is the main language of Israel?",
+     "a": "Hebrew",
+     "wrong": [
+      "Yiddish",
+      "Aramaic",
+      "Ladino"
+     ],
+     "why": "Arabic also has a special status."
+    },
+    {
      "level": 2,
      "q": "Which eggs-in-tomato-sauce dish is a breakfast favourite?",
      "a": "Shakshuka",
@@ -295,61 +376,6 @@
       "A desert fort"
      ],
      "why": "The first was founded in 1910."
-    },
-    {
-     "level": 2,
-     "q": "Which singer won Eurovision for Israel in 2018 with 'Toy'?",
-     "a": "Netta",
-     "wrong": [
-      "Dana International",
-      "Izhar Cohen",
-      "Noa Kirel"
-     ],
-     "why": "Israel has won four times."
-    },
-    {
-     "level": 2,
-     "q": "Which ancient port next to Tel Aviv is one of the world's oldest?",
-     "a": "Jaffa",
-     "wrong": [
-      "Caesarea",
-      "Akko",
-      "Ashkelon"
-     ],
-     "why": "It is mentioned in the Bible."
-    },
-    {
-     "level": 3,
-     "q": "Which Israeli actress played Wonder Woman?",
-     "a": "Gal Gadot",
-     "wrong": [
-      "Natalie Portman",
-      "Ayelet Zurer",
-      "Noa Tishby"
-     ],
-     "why": "She served in the army before acting."
-    },
-    {
-     "level": 3,
-     "q": "Which large desert covers southern Israel?",
-     "a": "Negev",
-     "wrong": [
-      "Sinai",
-      "Sahara",
-      "Gobi"
-     ],
-     "why": "It covers over half the country."
-    },
-    {
-     "level": 3,
-     "q": "Which crusader city with underground halls is a UNESCO site?",
-     "a": "Akko (Acre)",
-     "wrong": [
-      "Caesarea",
-      "Jaffa",
-      "Tiberias"
-     ],
-     "why": "The Knights Hospitaller built there."
     }
    ]
   }

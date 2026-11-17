@@ -3,19 +3,9 @@
  "country": "TW",
  "topics": [
   {
-   "name": "Taiwan: History & People",
+   "category": "History",
+   "name": "History",
    "questions": [
-    {
-     "level": 1,
-     "q": "What is the capital of Taiwan?",
-     "a": "Taipei",
-     "wrong": [
-      "Kaohsiung",
-      "Taichung",
-      "Tainan"
-     ],
-     "why": "Taipei 101 stands there."
-    },
     {
      "level": 1,
      "q": "Which party fled to Taiwan after losing China's civil war in 1949?",
@@ -50,50 +40,6 @@
      "why": "It took Taiwan after the First Sino-Japanese War."
     },
     {
-     "level": 1,
-     "q": "What is Taiwan's currency?",
-     "a": "New Taiwan dollar",
-     "wrong": [
-      "Renminbi",
-      "Hong Kong dollar",
-      "Yen"
-     ],
-     "why": "Its code is TWD."
-    },
-    {
-     "level": 1,
-     "q": "What is the official name of Taiwan's government?",
-     "a": "Republic of China",
-     "wrong": [
-      "People's Republic of China",
-      "Republic of Formosa",
-      "Taiwan Federation"
-     ],
-     "why": "It was founded in 1912 on the mainland."
-    },
-    {
-     "level": 1,
-     "q": "What did Portuguese sailors call Taiwan?",
-     "a": "Formosa",
-     "wrong": [
-      "Cipangu",
-      "Cathay",
-      "Taprobane"
-     ],
-     "why": "It means 'beautiful island'."
-    },
-    {
-     "level": 2,
-     "q": "Which company in Taiwan makes most of the world's advanced chips?",
-     "a": "TSMC",
-     "wrong": [
-      "Samsung",
-      "Intel",
-      "Foxconn"
-     ],
-     "why": "It was founded by Morris Chang in 1987."
-    },
-    {
      "level": 2,
      "q": "Who became Taiwan's first woman President, in 2016?",
      "a": "Tsai Ing-wen",
@@ -103,17 +49,6 @@
       "Lai Ching-te"
      ],
      "why": "She served two terms."
-    },
-    {
-     "level": 2,
-     "q": "Who became President of Taiwan in 2024?",
-     "a": "Lai Ching-te",
-     "wrong": [
-      "Tsai Ing-wen",
-      "Ma Ying-jeou",
-      "Ko Wen-je"
-     ],
-     "why": "He is from the DPP."
     },
     {
      "level": 2,
@@ -128,17 +63,6 @@
     },
     {
      "level": 2,
-     "q": "Which Dutch fort in Tainan dates from the 1600s?",
-     "a": "Fort Zeelandia",
-     "wrong": [
-      "Fort Santiago",
-      "Fort Cochin",
-      "Fort Jesus"
-     ],
-     "why": "The Dutch ruled southern Taiwan from 1624."
-    },
-    {
-     "level": 2,
      "q": "Which Ming loyalist drove the Dutch out of Taiwan in 1662?",
      "a": "Koxinga (Zheng Chenggong)",
      "wrong": [
@@ -147,17 +71,6 @@
       "Shi Lang"
      ],
      "why": "He is a folk hero in Taiwan."
-    },
-    {
-     "level": 3,
-     "q": "Which 2014 student protest occupied Taiwan's parliament?",
-     "a": "Sunflower Movement",
-     "wrong": [
-      "Umbrella Movement",
-      "Wild Lily Movement",
-      "Jasmine Movement"
-     ],
-     "why": "It opposed a trade pact with China."
     },
     {
      "level": 3,
@@ -171,22 +84,6 @@
      "why": "He was called 'Mr Democracy'."
     },
     {
-     "level": 3,
-     "q": "In which year did Taiwan lift martial law?",
-     "a": "1987",
-     "wrong": [
-      "1975",
-      "1996",
-      "1949"
-     ],
-     "why": "It had lasted 38 years."
-    }
-   ]
-  },
-  {
-   "name": "Taiwan: Places & Culture",
-   "questions": [
-    {
      "level": 1,
      "q": "Which Taipei skyscraper was the world's tallest from 2004 to 2010?",
      "a": "Taipei 101",
@@ -196,50 +93,23 @@
       "Burj Khalifa"
      ],
      "why": "It has a huge damper ball."
-    },
+    }
+   ]
+  },
+  {
+   "category": "Geography",
+   "name": "Geography",
+   "questions": [
     {
      "level": 1,
-     "q": "Which tea drink with tapioca pearls was invented in Taiwan?",
-     "a": "Bubble tea",
+     "q": "What is the capital of Taiwan?",
+     "a": "Taipei",
      "wrong": [
-      "Masala chai",
-      "Matcha latte",
-      "Thai iced tea"
+      "Kaohsiung",
+      "Taichung",
+      "Tainan"
      ],
-     "why": "It began in the 1980s."
-    },
-    {
-     "level": 1,
-     "q": "Which Taipei museum holds treasures from China's imperial collection?",
-     "a": "National Palace Museum",
-     "wrong": [
-      "Forbidden City",
-      "Shanghai Museum",
-      "Taipei Fine Arts Museum"
-     ],
-     "why": "The Jadeite Cabbage is a favourite."
-    },
-    {
-     "level": 1,
-     "q": "Which famous evening markets sell street food all over Taiwan?",
-     "a": "Night markets",
-     "wrong": [
-      "Floating markets",
-      "Souks",
-      "Bazaars"
-     ],
-     "why": "Shilin is Taipei's best known."
-    },
-    {
-     "level": 1,
-     "q": "Which smelly fermented snack is sold at night markets?",
-     "a": "Stinky tofu",
-     "wrong": [
-      "Natto",
-      "Durian cake",
-      "Kimchi"
-     ],
-     "why": "You can smell it from afar."
+     "why": "Taipei 101 stands there."
     },
     {
      "level": 1,
@@ -265,6 +135,68 @@
     },
     {
      "level": 2,
+     "q": "Which mountain is Taiwan's highest?",
+     "a": "Yushan (Jade Mountain)",
+     "wrong": [
+      "Xueshan",
+      "Alishan",
+      "Hehuanshan"
+     ],
+     "why": "It is about 3,950 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which forest railway climbs through sacred tree groves?",
+     "a": "Alishan Forest Railway",
+     "wrong": [
+      "Pingxi Line",
+      "Jiji Line",
+      "Taroko Railway"
+     ],
+     "why": "It was built during Japanese rule."
+    }
+   ]
+  },
+  {
+   "category": "Sports",
+   "name": "Sports",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which sport did Taiwan's national team win the 2024 Premier12 in?",
+     "a": "Baseball",
+     "wrong": [
+      "Basketball",
+      "Badminton",
+      "Volleyball"
+     ],
+     "why": "It beat Japan in the final."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Music",
+   "questions": [
+    {
+     "level": 3,
+     "q": "Which Taiwanese singer is called the 'King of Mandopop'?",
+     "a": "Jay Chou",
+     "wrong": [
+      "Teresa Teng",
+      "Jolin Tsai",
+      "A-mei"
+     ],
+     "why": "He blends R&B and Chinese styles."
+    }
+   ]
+  },
+  {
+   "category": "Entertainment",
+   "name": "Film",
+   "questions": [
+    {
+     "level": 2,
      "q": "Which Taiwanese director won Oscars for 'Brokeback Mountain' and 'Life of Pi'?",
      "a": "Ang Lee",
      "wrong": [
@@ -273,6 +205,156 @@
       "Tsai Ming-liang"
      ],
      "why": "He won Best Director twice."
+    }
+   ]
+  },
+  {
+   "category": "Politics",
+   "name": "Politics",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the official name of Taiwan's government?",
+     "a": "Republic of China",
+     "wrong": [
+      "People's Republic of China",
+      "Republic of Formosa",
+      "Taiwan Federation"
+     ],
+     "why": "It was founded in 1912 on the mainland."
+    },
+    {
+     "level": 2,
+     "q": "Who became President of Taiwan in 2024?",
+     "a": "Lai Ching-te",
+     "wrong": [
+      "Tsai Ing-wen",
+      "Ma Ying-jeou",
+      "Ko Wen-je"
+     ],
+     "why": "He is from the DPP."
+    },
+    {
+     "level": 3,
+     "q": "Which 2014 student protest occupied Taiwan's parliament?",
+     "a": "Sunflower Movement",
+     "wrong": [
+      "Umbrella Movement",
+      "Wild Lily Movement",
+      "Jasmine Movement"
+     ],
+     "why": "It opposed a trade pact with China."
+    }
+   ]
+  },
+  {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Taipei museum holds treasures from China's imperial collection?",
+     "a": "National Palace Museum",
+     "wrong": [
+      "Forbidden City",
+      "Shanghai Museum",
+      "Taipei Fine Arts Museum"
+     ],
+     "why": "The Jadeite Cabbage is a favourite."
+    }
+   ]
+  },
+  {
+   "category": "General Knowledge",
+   "name": "General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Taiwan's currency?",
+     "a": "New Taiwan dollar",
+     "wrong": [
+      "Renminbi",
+      "Hong Kong dollar",
+      "Yen"
+     ],
+     "why": "Its code is TWD."
+    },
+    {
+     "level": 1,
+     "q": "What did Portuguese sailors call Taiwan?",
+     "a": "Formosa",
+     "wrong": [
+      "Cipangu",
+      "Cathay",
+      "Taprobane"
+     ],
+     "why": "It means 'beautiful island'."
+    },
+    {
+     "level": 2,
+     "q": "Which company in Taiwan makes most of the world's advanced chips?",
+     "a": "TSMC",
+     "wrong": [
+      "Samsung",
+      "Intel",
+      "Foxconn"
+     ],
+     "why": "It was founded by Morris Chang in 1987."
+    },
+    {
+     "level": 2,
+     "q": "Which Dutch fort in Tainan dates from the 1600s?",
+     "a": "Fort Zeelandia",
+     "wrong": [
+      "Fort Santiago",
+      "Fort Cochin",
+      "Fort Jesus"
+     ],
+     "why": "The Dutch ruled southern Taiwan from 1624."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Taiwan lift martial law?",
+     "a": "1987",
+     "wrong": [
+      "1975",
+      "1996",
+      "1949"
+     ],
+     "why": "It had lasted 38 years."
+    },
+    {
+     "level": 1,
+     "q": "Which tea drink with tapioca pearls was invented in Taiwan?",
+     "a": "Bubble tea",
+     "wrong": [
+      "Masala chai",
+      "Matcha latte",
+      "Thai iced tea"
+     ],
+     "why": "It began in the 1980s."
+    },
+    {
+     "level": 1,
+     "q": "Which famous evening markets sell street food all over Taiwan?",
+     "a": "Night markets",
+     "wrong": [
+      "Floating markets",
+      "Souks",
+      "Bazaars"
+     ],
+     "why": "Shilin is Taipei's best known."
+    },
+    {
+     "level": 1,
+     "q": "Which smelly fermented snack is sold at night markets?",
+     "a": "Stinky tofu",
+     "wrong": [
+      "Natto",
+      "Durian cake",
+      "Kimchi"
+     ],
+     "why": "You can smell it from afar."
     },
     {
      "level": 2,
@@ -306,50 +388,6 @@
       "Crystal Jade"
      ],
      "why": "Its xiaolongbao have 18 folds."
-    },
-    {
-     "level": 2,
-     "q": "Which mountain is Taiwan's highest?",
-     "a": "Yushan (Jade Mountain)",
-     "wrong": [
-      "Xueshan",
-      "Alishan",
-      "Hehuanshan"
-     ],
-     "why": "It is about 3,950 m high."
-    },
-    {
-     "level": 3,
-     "q": "Which Taiwanese singer is called the 'King of Mandopop'?",
-     "a": "Jay Chou",
-     "wrong": [
-      "Teresa Teng",
-      "Jolin Tsai",
-      "A-mei"
-     ],
-     "why": "He blends R&B and Chinese styles."
-    },
-    {
-     "level": 3,
-     "q": "Which forest railway climbs through sacred tree groves?",
-     "a": "Alishan Forest Railway",
-     "wrong": [
-      "Pingxi Line",
-      "Jiji Line",
-      "Taroko Railway"
-     ],
-     "why": "It was built during Japanese rule."
-    },
-    {
-     "level": 3,
-     "q": "Which sport did Taiwan's national team win the 2024 Premier12 in?",
-     "a": "Baseball",
-     "wrong": [
-      "Basketball",
-      "Badminton",
-      "Volleyball"
-     ],
-     "why": "It beat Japan in the final."
     }
    ]
   }
