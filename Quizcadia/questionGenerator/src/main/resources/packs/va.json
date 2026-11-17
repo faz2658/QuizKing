@@ -1,0 +1,346 @@
+{
+ "category": "Vatican City",
+ "country": "VA",
+ "topics": [
+  {
+   "name": "Vatican City: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which city surrounds Vatican City?",
+     "a": "Rome",
+     "wrong": [
+      "Milan",
+      "Florence",
+      "Naples"
+     ],
+     "why": "It is an enclave inside Rome."
+    },
+    {
+     "level": 1,
+     "q": "What is Vatican City famous for being?",
+     "a": "The world's smallest country",
+     "wrong": [
+      "Europe's newest country",
+      "The world's largest monastery",
+      "An island state"
+     ],
+     "why": "It covers about 0.44 square kilometres."
+    },
+    {
+     "level": 1,
+     "q": "Who is the head of state of Vatican City?",
+     "a": "The Pope",
+     "wrong": [
+      "The President of Italy",
+      "A Cardinal Secretary",
+      "An elected mayor"
+     ],
+     "why": "He is also Bishop of Rome."
+    },
+    {
+     "level": 1,
+     "q": "Which 1929 treaty created Vatican City as a state?",
+     "a": "Lateran Treaty",
+     "wrong": [
+      "Treaty of Rome",
+      "Treaty of Versailles",
+      "Concordat of Worms"
+     ],
+     "why": "Mussolini's government signed it."
+    },
+    {
+     "level": 1,
+     "q": "Which Swiss soldiers guard the Pope?",
+     "a": "Swiss Guard",
+     "wrong": [
+      "Papal Lancers",
+      "Vatican Rangers",
+      "Holy Grenadiers"
+     ],
+     "why": "They have served since 1506."
+    },
+    {
+     "level": 1,
+     "q": "Which pope was elected in May 2025?",
+     "a": "Leo XIV",
+     "wrong": [
+      "Francis",
+      "Benedict XVI",
+      "John XXIII"
+     ],
+     "why": "He was born in Chicago."
+    },
+    {
+     "level": 1,
+     "q": "What rises from the chimney when a new pope is chosen?",
+     "a": "White smoke",
+     "wrong": [
+      "Black smoke",
+      "Red smoke",
+      "Blue smoke"
+     ],
+     "why": "Black smoke means no decision yet."
+    },
+    {
+     "level": 2,
+     "q": "What is the gathering of cardinals that elects a pope called?",
+     "a": "Conclave",
+     "wrong": [
+      "Synod",
+      "Council",
+      "Consistory"
+     ],
+     "why": "It is held in the Sistine Chapel."
+    },
+    {
+     "level": 2,
+     "q": "Which Polish pope led the Church from 1978 to 2005?",
+     "a": "John Paul II",
+     "wrong": [
+      "Benedict XVI",
+      "Paul VI",
+      "Pius XII"
+     ],
+     "why": "He was made a saint in 2014."
+    },
+    {
+     "level": 2,
+     "q": "Which pope resigned in 2013?",
+     "a": "Benedict XVI",
+     "wrong": [
+      "John Paul II",
+      "Francis",
+      "Paul VI"
+     ],
+     "why": "It was the first resignation in about 600 years."
+    },
+    {
+     "level": 2,
+     "q": "What were the lands the popes ruled until 1870 called?",
+     "a": "Papal States",
+     "wrong": [
+      "Holy Lands",
+      "Roman Provinces",
+      "Lands of Peter"
+     ],
+     "why": "Italian troops took Rome in 1870."
+    },
+    {
+     "level": 2,
+     "q": "Which Argentine pope served from 2013 to 2025?",
+     "a": "Francis",
+     "wrong": [
+      "Benedict XVI",
+      "Leo XIV",
+      "John Paul II"
+     ],
+     "why": "He was the first pope from the Americas."
+    },
+    {
+     "level": 3,
+     "q": "Which pope began building the new St Peter's Basilica in 1506?",
+     "a": "Julius II",
+     "wrong": [
+      "Leo X",
+      "Sixtus IV",
+      "Paul III"
+     ],
+     "why": "He also hired Michelangelo for the Sistine ceiling."
+    },
+    {
+     "level": 3,
+     "q": "Which council of 1962–65 modernised the Catholic Church?",
+     "a": "Second Vatican Council",
+     "wrong": [
+      "Council of Trent",
+      "First Vatican Council",
+      "Council of Nicaea"
+     ],
+     "why": "It allowed Mass in local languages."
+    },
+    {
+     "level": 3,
+     "q": "What is the Vatican's central government office called?",
+     "a": "Roman Curia",
+     "wrong": [
+      "Holy Synod",
+      "Papal Senate",
+      "College of Bishops"
+     ],
+     "why": "It helps the Pope run the Church."
+    }
+   ]
+  },
+  {
+   "name": "Vatican City: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which artist painted the Sistine Chapel ceiling?",
+     "a": "Michelangelo",
+     "wrong": [
+      "Raphael",
+      "Leonardo da Vinci",
+      "Caravaggio"
+     ],
+     "why": "He worked on it from 1508 to 1512."
+    },
+    {
+     "level": 1,
+     "q": "Which huge church stands over the tomb of St Peter?",
+     "a": "St Peter's Basilica",
+     "wrong": [
+      "St John Lateran",
+      "Santa Maria Maggiore",
+      "St Paul Outside the Walls"
+     ],
+     "why": "It is one of the largest churches in the world."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of Vatican City's state?",
+     "a": "Italian",
+     "wrong": [
+      "Latin",
+      "French",
+      "English"
+     ],
+     "why": "Latin is the language of the Holy See."
+    },
+    {
+     "level": 1,
+     "q": "Which square in front of St Peter's has a colonnade by Bernini?",
+     "a": "St Peter's Square",
+     "wrong": [
+      "Piazza Navona",
+      "Piazza Venezia",
+      "Campo de' Fiori"
+     ],
+     "why": "It can hold tens of thousands of people."
+    },
+    {
+     "level": 1,
+     "q": "Which fresco shows God giving life to Adam?",
+     "a": "The Creation of Adam",
+     "wrong": [
+      "The Last Judgment",
+      "The School of Athens",
+      "The Last Supper"
+     ],
+     "why": "It is on the Sistine Chapel ceiling."
+    },
+    {
+     "level": 1,
+     "q": "What is the Vatican's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Vatican lira",
+      "Swiss franc",
+      "Papal scudo"
+     ],
+     "why": "It issues its own euro coins."
+    },
+    {
+     "level": 1,
+     "q": "Which radio station broadcasts from the Vatican?",
+     "a": "Vatican Radio",
+     "wrong": [
+      "Radio Roma",
+      "RAI Uno",
+      "Radio Maria"
+     ],
+     "why": "Guglielmo Marconi helped set it up in 1931."
+    },
+    {
+     "level": 2,
+     "q": "Which Raphael fresco in the Vatican shows Greek philosophers?",
+     "a": "The School of Athens",
+     "wrong": [
+      "The Creation of Adam",
+      "The Transfiguration",
+      "Parnassus"
+     ],
+     "why": "Plato and Aristotle stand at its centre."
+    },
+    {
+     "level": 2,
+     "q": "Which Michelangelo statue of Mary holding Jesus is in St Peter's?",
+     "a": "Pietà",
+     "wrong": [
+      "David",
+      "Moses",
+      "Bacchus"
+     ],
+     "why": "It is the only work he signed."
+    },
+    {
+     "level": 2,
+     "q": "Which Vatican museum is one of the most visited in the world?",
+     "a": "Vatican Museums",
+     "wrong": [
+      "Uffizi",
+      "Louvre",
+      "Borghese Gallery"
+     ],
+     "why": "It has about 7 km of halls."
+    },
+    {
+     "level": 2,
+     "q": "What colour are the Swiss Guards' famous uniforms?",
+     "a": "Blue, red and yellow",
+     "wrong": [
+      "Black and gold",
+      "White and green",
+      "Purple and silver"
+     ],
+     "why": "The design is often credited to Michelangelo."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient Egyptian monument stands in St Peter's Square?",
+     "a": "An obelisk",
+     "wrong": [
+      "A sphinx",
+      "A pyramid",
+      "A statue of Ramses"
+     ],
+     "why": "It was moved there in 1586."
+    },
+    {
+     "level": 3,
+     "q": "Which secret passage links the Vatican to Castel Sant'Angelo?",
+     "a": "Passetto di Borgo",
+     "wrong": [
+      "Via della Conciliazione",
+      "Scala Santa",
+      "Ponte Sant'Angelo"
+     ],
+     "why": "Popes fled through it during the 1527 sack of Rome."
+    },
+    {
+     "level": 3,
+     "q": "What is the Vatican's library called?",
+     "a": "Vatican Apostolic Library",
+     "wrong": [
+      "Papal Archive Library",
+      "Biblioteca Ambrosiana",
+      "Biblioteca Nazionale"
+     ],
+     "why": "It was founded in 1475."
+    },
+    {
+     "level": 3,
+     "q": "Which Bernini canopy stands over the altar in St Peter's?",
+     "a": "Baldacchino",
+     "wrong": [
+      "Cathedra Petri",
+      "Pietà",
+      "Fontana dei Quattro Fiumi"
+     ],
+     "why": "It is made of bronze."
+    }
+   ]
+  }
+ ]
+}

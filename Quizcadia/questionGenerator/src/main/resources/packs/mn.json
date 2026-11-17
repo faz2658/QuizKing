@@ -1,0 +1,357 @@
+{
+ "category": "Mongolia",
+ "country": "MN",
+ "topics": [
+  {
+   "name": "Mongolia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Mongolia?",
+     "a": "Ulaanbaatar",
+     "wrong": [
+      "Erdenet",
+      "Darkhan",
+      "Kharkhorin"
+     ],
+     "why": "It is the coldest capital city in the world."
+    },
+    {
+     "level": 1,
+     "q": "Who founded the Mongol Empire in 1206?",
+     "a": "Genghis Khan",
+     "wrong": [
+      "Kublai Khan",
+      "Ögedei Khan",
+      "Tamerlane"
+     ],
+     "why": "He united the steppe tribes."
+    },
+    {
+     "level": 1,
+     "q": "Which grandson of Genghis Khan founded China's Yuan dynasty?",
+     "a": "Kublai Khan",
+     "wrong": [
+      "Ögedei Khan",
+      "Hülegü",
+      "Batu Khan"
+     ],
+     "why": "Marco Polo visited his court."
+    },
+    {
+     "level": 1,
+     "q": "Which empire was the largest contiguous land empire in history?",
+     "a": "Mongol Empire",
+     "wrong": [
+      "British Empire",
+      "Roman Empire",
+      "Russian Empire"
+     ],
+     "why": "It stretched from Korea to Hungary."
+    },
+    {
+     "level": 1,
+     "q": "Which two countries border Mongolia?",
+     "a": "Russia and China",
+     "wrong": [
+      "China and Kazakhstan",
+      "Russia and Kazakhstan",
+      "China and North Korea"
+     ],
+     "why": "It is landlocked."
+    },
+    {
+     "level": 1,
+     "q": "What is Mongolia's currency?",
+     "a": "Tögrög (tugrik)",
+     "wrong": [
+      "Yuan",
+      "Ruble",
+      "Som"
+     ],
+     "why": "Its code is MNT."
+    },
+    {
+     "level": 1,
+     "q": "Which round felt tents do many Mongolians live in?",
+     "a": "Ger (yurt)",
+     "wrong": [
+      "Tipi",
+      "Igloo",
+      "Bivouac"
+     ],
+     "why": "Many families in Ulaanbaatar still use them."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Mongolia gain independence from China's Qing dynasty?",
+     "a": "1911",
+     "wrong": [
+      "1921",
+      "1945",
+      "1990"
+     ],
+     "why": "Soviet-backed revolution followed in 1921."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Mongolia hold its peaceful democratic revolution?",
+     "a": "1990",
+     "wrong": [
+      "1989",
+      "1991",
+      "1996"
+     ],
+     "why": "Hunger strikes led to multi-party elections."
+    },
+    {
+     "level": 2,
+     "q": "Which old Mongol capital is near today's Kharkhorin?",
+     "a": "Karakorum",
+     "wrong": [
+      "Xanadu",
+      "Samarkand",
+      "Sarai"
+     ],
+     "why": "Ögedei built it in the 1230s."
+    },
+    {
+     "level": 2,
+     "q": "Which secret history tells the life of Genghis Khan?",
+     "a": "The Secret History of the Mongols",
+     "wrong": [
+      "The Book of Kings",
+      "The Travels of Marco Polo",
+      "The Jami al-Tawarikh"
+     ],
+     "why": "It was written in the 1200s."
+    },
+    {
+     "level": 2,
+     "q": "Which revolutionary leader of 1921 is honoured with the capital's name and main square?",
+     "a": "Damdin Sükhbaatar",
+     "wrong": [
+      "Khorloogiin Choibalsan",
+      "Yumjaagiin Tsedenbal",
+      "Zanabazar"
+     ],
+     "why": "Ulaanbaatar means 'Red Hero'."
+    },
+    {
+     "level": 3,
+     "q": "Which Buddhist leader was Mongolia's head of state from 1911 to 1924?",
+     "a": "Bogd Khan",
+     "wrong": [
+      "Zanabazar",
+      "Dalai Lama",
+      "Panchen Lama"
+     ],
+     "why": "He was the eighth Jebtsundamba Khutughtu."
+    },
+    {
+     "level": 3,
+     "q": "Which 1939 battle saw Soviet and Mongolian forces defeat Japan?",
+     "a": "Battle of Khalkhin Gol",
+     "wrong": [
+      "Battle of Mukden",
+      "Battle of Lake Khasan",
+      "Battle of Port Arthur"
+     ],
+     "why": "Georgy Zhukov led the Soviet forces."
+    },
+    {
+     "level": 3,
+     "q": "Which Mongol general's army reached Hungary and Poland in 1241?",
+     "a": "Subutai",
+     "wrong": [
+      "Jebe",
+      "Batu Khan",
+      "Hülegü"
+     ],
+     "why": "He was one of history's greatest generals."
+    }
+   ]
+  },
+  {
+   "name": "Mongolia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which desert covers southern Mongolia?",
+     "a": "Gobi Desert",
+     "wrong": [
+      "Sahara",
+      "Taklamakan",
+      "Karakum"
+     ],
+     "why": "Dinosaur eggs were found there."
+    },
+    {
+     "level": 1,
+     "q": "Which summer festival features wrestling, archery and horse racing?",
+     "a": "Naadam",
+     "wrong": [
+      "Tsagaan Sar",
+      "Nowruz",
+      "Eid"
+     ],
+     "why": "It is held in July."
+    },
+    {
+     "level": 1,
+     "q": "What is the Mongolian New Year called?",
+     "a": "Tsagaan Sar",
+     "wrong": [
+      "Naadam",
+      "Nowruz",
+      "Losar"
+     ],
+     "why": "It means 'White Moon'."
+    },
+    {
+     "level": 1,
+     "q": "Which fermented mare's milk is the national drink?",
+     "a": "Airag",
+     "wrong": [
+      "Kefir",
+      "Ayran",
+      "Lassi"
+     ],
+     "why": "It is slightly alcoholic."
+    },
+    {
+     "level": 1,
+     "q": "Which animal is central to Mongolian life and culture?",
+     "a": "Horse",
+     "wrong": [
+      "Camel",
+      "Yak",
+      "Reindeer"
+     ],
+     "why": "There are more horses than people."
+    },
+    {
+     "level": 1,
+     "q": "Which style of singing produces two notes at once?",
+     "a": "Throat singing (khöömii)",
+     "wrong": [
+      "Yodelling",
+      "Falsetto",
+      "Beatboxing"
+     ],
+     "why": "It is on UNESCO's list."
+    },
+    {
+     "level": 1,
+     "q": "Which steamed meat dumplings are a Mongolian favourite?",
+     "a": "Buuz",
+     "wrong": [
+      "Momo",
+      "Gyoza",
+      "Pierogi"
+     ],
+     "why": "They are eaten in huge numbers at Tsagaan Sar."
+    },
+    {
+     "level": 2,
+     "q": "Which giant statue of Genghis Khan on horseback stands near Ulaanbaatar?",
+     "a": "Genghis Khan Equestrian Statue",
+     "wrong": [
+      "Motherland Calls",
+      "Statue of Unity",
+      "Kublai Monument"
+     ],
+     "why": "It is about 40 m tall."
+    },
+    {
+     "level": 2,
+     "q": "Which dinosaur famous from films was first found in Mongolia?",
+     "a": "Velociraptor",
+     "wrong": [
+      "Tyrannosaurus",
+      "Triceratops",
+      "Stegosaurus"
+     ],
+     "why": "Roy Chapman Andrews's team found it in the 1920s."
+    },
+    {
+     "level": 2,
+     "q": "Which large lake in the north is called the 'Blue Pearl'?",
+     "a": "Khövsgöl Lake",
+     "wrong": [
+      "Uvs Lake",
+      "Lake Baikal",
+      "Terkhiin Tsagaan Lake"
+     ],
+     "why": "It holds much of Mongolia's fresh water."
+    },
+    {
+     "level": 2,
+     "q": "Which famous cliffs in the Gobi glow red at sunset?",
+     "a": "Flaming Cliffs (Bayanzag)",
+     "wrong": [
+      "Khongoryn Els",
+      "Yolyn Am",
+      "Tsagaan Suvarga"
+     ],
+     "why": "Many dinosaur fossils were found there."
+    },
+    {
+     "level": 2,
+     "q": "Which wild horse was brought back to Mongolia from zoos?",
+     "a": "Przewalski's horse (takhi)",
+     "wrong": [
+      "Mustang",
+      "Brumby",
+      "Akhal-Teke"
+     ],
+     "why": "It lives in Hustai National Park."
+    },
+    {
+     "level": 2,
+     "q": "Which Mongolian-born sumo wrestler holds the record for most top-division titles?",
+     "a": "Hakuhō",
+     "wrong": [
+      "Asashōryū",
+      "Harumafuji",
+      "Kakuryū"
+     ],
+     "why": "He won 45 championships."
+    },
+    {
+     "level": 3,
+     "q": "Which hunters in western Mongolia use golden eagles?",
+     "a": "Kazakh eagle hunters",
+     "wrong": [
+      "Tuvan reindeer herders",
+      "Buryat fishermen",
+      "Khalkha horsemen"
+     ],
+     "why": "They hold a festival each autumn."
+    },
+    {
+     "level": 3,
+     "q": "Which monastery in Ulaanbaatar is the country's largest?",
+     "a": "Gandan Monastery",
+     "wrong": [
+      "Erdene Zuu",
+      "Amarbayasgalant",
+      "Manjusri"
+     ],
+     "why": "It has a 26 m standing Buddha."
+    },
+    {
+     "level": 3,
+     "q": "Which sand dunes in the Gobi are called 'singing sands'?",
+     "a": "Khongoryn Els",
+     "wrong": [
+      "Bayanzag",
+      "Elsen Tasarkhai",
+      "Moltsog Els"
+     ],
+     "why": "The wind makes them hum."
+    }
+   ]
+  }
+ ]
+}
