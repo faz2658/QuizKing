@@ -1,0 +1,1092 @@
+{
+ "category": "Mexico",
+ "country": "MX",
+ "topics": [
+  {
+   "name": "Mexico History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which empire had its capital at Tenochtitlan?",
+     "a": "Aztec Empire",
+     "wrong": [
+      "Maya Empire",
+      "Inca Empire",
+      "Olmec Empire"
+     ],
+     "why": "Mexico City stands on its site."
+    },
+    {
+     "level": 1,
+     "q": "Which Spanish conquistador conquered the Aztecs in 1521?",
+     "a": "Hernán Cortés",
+     "wrong": [
+      "Francisco Pizarro",
+      "Hernando de Soto",
+      "Pedro de Alvarado"
+     ],
+     "why": "He arrived in 1519."
+    },
+    {
+     "level": 1,
+     "q": "On what date is Mexico's Independence Day?",
+     "a": "16 September",
+     "wrong": [
+      "5 May",
+      "20 November",
+      "4 July"
+     ],
+     "why": "It marks the 'Grito de Dolores' of 1810."
+    },
+    {
+     "level": 1,
+     "q": "Which priest started the independence war with the 'Cry of Dolores'?",
+     "a": "Miguel Hidalgo",
+     "wrong": [
+      "José María Morelos",
+      "Vicente Guerrero",
+      "Agustín de Iturbide"
+     ],
+     "why": "He rang his church bell in 1810."
+    },
+    {
+     "level": 1,
+     "q": "What does Cinco de Mayo commemorate?",
+     "a": "Victory over France at the Battle of Puebla",
+     "wrong": [
+      "Independence from Spain",
+      "The Mexican Revolution",
+      "The founding of Mexico City"
+     ],
+     "why": "The battle was in 1862."
+    },
+    {
+     "level": 1,
+     "q": "Which civilisation built Chichén Itzá?",
+     "a": "Maya",
+     "wrong": [
+      "Aztec",
+      "Olmec",
+      "Toltec"
+     ],
+     "why": "Its pyramid is El Castillo."
+    },
+    {
+     "level": 1,
+     "q": "Which revolution began in 1910?",
+     "a": "Mexican Revolution",
+     "wrong": [
+      "War of Independence",
+      "Reform War",
+      "Cristero War"
+     ],
+     "why": "Revolution Day is 20 November."
+    },
+    {
+     "level": 2,
+     "q": "Which revolutionary leader from Morelos fought for 'land and liberty'?",
+     "a": "Emiliano Zapata",
+     "wrong": [
+      "Pancho Villa",
+      "Francisco Madero",
+      "Venustiano Carranza"
+     ],
+     "why": "His followers were called Zapatistas."
+    },
+    {
+     "level": 2,
+     "q": "Which northern revolutionary general was nicknamed 'the Centaur of the North'?",
+     "a": "Pancho Villa",
+     "wrong": [
+      "Emiliano Zapata",
+      "Álvaro Obregón",
+      "Pascual Orozco"
+     ],
+     "why": "He raided Columbus, New Mexico, in 1916."
+    },
+    {
+     "level": 2,
+     "q": "Which Zapotec president led liberal reforms in the 1850s–60s?",
+     "a": "Benito Juárez",
+     "wrong": [
+      "Porfirio Díaz",
+      "Lázaro Cárdenas",
+      "Ignacio Comonfort"
+     ],
+     "why": "He was Mexico's first Indigenous president."
+    },
+    {
+     "level": 2,
+     "q": "Which dictator ruled Mexico for over 30 years before 1911?",
+     "a": "Porfirio Díaz",
+     "wrong": [
+      "Antonio López de Santa Anna",
+      "Victoriano Huerta",
+      "Plutarco Elías Calles"
+     ],
+     "why": "The period is called the Porfiriato."
+    },
+    {
+     "level": 2,
+     "q": "Which Austrian archduke was made Emperor of Mexico in 1864?",
+     "a": "Maximilian",
+     "wrong": [
+      "Franz Joseph",
+      "Ferdinand",
+      "Leopold"
+     ],
+     "why": "He was executed in 1867."
+    },
+    {
+     "level": 2,
+     "q": "Which president nationalised Mexico's oil in 1938?",
+     "a": "Lázaro Cárdenas",
+     "wrong": [
+      "Benito Juárez",
+      "Miguel Alemán",
+      "Plutarco Elías Calles"
+     ],
+     "why": "It created Pemex."
+    },
+    {
+     "level": 3,
+     "q": "Which war of 1846–48 cost Mexico about half its territory?",
+     "a": "Mexican–American War",
+     "wrong": [
+      "Pastry War",
+      "Reform War",
+      "Texas Revolution"
+     ],
+     "why": "It ended with the Treaty of Guadalupe Hidalgo."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient city near Mexico City has the Pyramids of the Sun and Moon?",
+     "a": "Teotihuacan",
+     "wrong": [
+      "Tula",
+      "Monte Albán",
+      "Palenque"
+     ],
+     "why": "It was once one of the largest cities in the world."
+    },
+    {
+     "level": 3,
+     "q": "Who became Mexico's first woman President, in 2024?",
+     "a": "Claudia Sheinbaum",
+     "wrong": [
+      "Xóchitl Gálvez",
+      "Margarita Zavala",
+      "Rosario Robles"
+     ],
+     "why": "She is a climate scientist and former mayor of Mexico City."
+    }
+   ]
+  },
+  {
+   "name": "Mexico Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Mexico?",
+     "a": "Mexico City",
+     "wrong": [
+      "Guadalajara",
+      "Monterrey",
+      "Puebla"
+     ],
+     "why": "It is one of the world's largest cities."
+    },
+    {
+     "level": 1,
+     "q": "Which peninsula is home to Cancún?",
+     "a": "Yucatán Peninsula",
+     "wrong": [
+      "Baja California",
+      "Florida",
+      "Tehuantepec"
+     ],
+     "why": "It is famous for cenotes."
+    },
+    {
+     "level": 1,
+     "q": "Which country borders Mexico to the north?",
+     "a": "United States",
+     "wrong": [
+      "Guatemala",
+      "Belize",
+      "Canada"
+     ],
+     "why": "The border is about 3,100 km long."
+    },
+    {
+     "level": 1,
+     "q": "What are natural limestone sinkholes in the Yucatán called?",
+     "a": "Cenotes",
+     "wrong": [
+      "Lagunas",
+      "Barrancas",
+      "Mesas"
+     ],
+     "why": "The Maya saw them as sacred."
+    },
+    {
+     "level": 1,
+     "q": "Which long peninsula lies along the Pacific in the northwest?",
+     "a": "Baja California",
+     "wrong": [
+      "Yucatán",
+      "Sonora",
+      "Sinaloa"
+     ],
+     "why": "The Gulf of California lies beside it."
+    },
+    {
+     "level": 1,
+     "q": "Which city is famous for mariachi and tequila?",
+     "a": "Guadalajara",
+     "wrong": [
+      "Monterrey",
+      "Puebla",
+      "Mérida"
+     ],
+     "why": "It is the capital of Jalisco."
+    },
+    {
+     "level": 1,
+     "q": "Which river forms part of the US–Mexico border?",
+     "a": "Rio Grande",
+     "wrong": [
+      "Colorado River",
+      "Usumacinta",
+      "Lerma"
+     ],
+     "why": "Mexicans call it the Río Bravo."
+    },
+    {
+     "level": 2,
+     "q": "What is Mexico's highest mountain?",
+     "a": "Pico de Orizaba",
+     "wrong": [
+      "Popocatépetl",
+      "Iztaccíhuatl",
+      "Nevado de Toluca"
+     ],
+     "why": "It is a dormant volcano, about 5,636 m high."
+    },
+    {
+     "level": 2,
+     "q": "Which active volcano near Mexico City is nicknamed 'Popo'?",
+     "a": "Popocatépetl",
+     "wrong": [
+      "Iztaccíhuatl",
+      "Colima",
+      "Paricutín"
+     ],
+     "why": "Its name means 'smoking mountain'."
+    },
+    {
+     "level": 2,
+     "q": "Which huge canyon system in Chihuahua is bigger than the Grand Canyon?",
+     "a": "Copper Canyon",
+     "wrong": [
+      "Sumidero Canyon",
+      "Huasteca Canyon",
+      "Cañón del Pato"
+     ],
+     "why": "A famous railway runs through it."
+    },
+    {
+     "level": 2,
+     "q": "How many states does Mexico have?",
+     "a": "32 (31 states plus Mexico City)",
+     "wrong": [
+      "50",
+      "24",
+      "28"
+     ],
+     "why": "Mexico City became a federal entity in 2016."
+    },
+    {
+     "level": 2,
+     "q": "Which volcano was born in a cornfield in 1943?",
+     "a": "Paricutín",
+     "wrong": [
+      "Popocatépetl",
+      "Colima",
+      "Orizaba"
+     ],
+     "why": "Scientists watched it grow from scratch."
+    },
+    {
+     "level": 2,
+     "q": "Which colourful colonial city in Guanajuato is a UNESCO site with a pink church?",
+     "a": "San Miguel de Allende",
+     "wrong": [
+      "Taxco",
+      "Puebla",
+      "Oaxaca"
+     ],
+     "why": "Its Parroquia is neo-Gothic."
+    },
+    {
+     "level": 3,
+     "q": "Which isthmus is the narrowest part of Mexico?",
+     "a": "Isthmus of Tehuantepec",
+     "wrong": [
+      "Isthmus of Panama",
+      "Isthmus of Rivas",
+      "Isthmus of Darién"
+     ],
+     "why": "It is about 200 km wide."
+    },
+    {
+     "level": 3,
+     "q": "Which city is Mexico's main industrial city in the north?",
+     "a": "Monterrey",
+     "wrong": [
+      "Tijuana",
+      "Chihuahua",
+      "Saltillo"
+     ],
+     "why": "Cerro de la Silla overlooks it."
+    },
+    {
+     "level": 3,
+     "q": "Which UNESCO-listed canals in Mexico City are toured on colourful boats?",
+     "a": "Xochimilco",
+     "wrong": [
+      "Chapultepec",
+      "Coyoacán",
+      "Tlatelolco"
+     ],
+     "why": "The boats are called trajineras."
+    }
+   ]
+  },
+  {
+   "name": "Mexico Sport",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which theatrical wrestling style is hugely popular in Mexico?",
+     "a": "Lucha libre",
+     "wrong": [
+      "Sumo",
+      "Greco-Roman",
+      "Catch wrestling"
+     ],
+     "why": "Wrestlers wear colourful masks."
+    },
+    {
+     "level": 1,
+     "q": "Which Mexico City stadium has hosted two World Cup finals?",
+     "a": "Estadio Azteca",
+     "wrong": [
+      "Estadio Jalisco",
+      "Estadio Universitario",
+      "Estadio BBVA"
+     ],
+     "why": "It will also host matches in 2026."
+    },
+    {
+     "level": 1,
+     "q": "What is Mexico's national football team nicknamed?",
+     "a": "El Tri",
+     "wrong": [
+      "La Albiceleste",
+      "La Roja",
+      "Los Ticos"
+     ],
+     "why": "It comes from the three colours of the flag."
+    },
+    {
+     "level": 1,
+     "q": "Which Mexican boxer is known as 'Canelo'?",
+     "a": "Saúl Álvarez",
+     "wrong": [
+      "Julio César Chávez",
+      "Juan Manuel Márquez",
+      "Érik Morales"
+     ],
+     "why": "He has won titles in four weight classes."
+    },
+    {
+     "level": 1,
+     "q": "Which Formula One driver from Guadalajara is called 'Checo'?",
+     "a": "Sergio Pérez",
+     "wrong": [
+      "Esteban Gutiérrez",
+      "Pato O'Ward",
+      "Pedro Rodríguez"
+     ],
+     "why": "He raced for Red Bull."
+    },
+    {
+     "level": 1,
+     "q": "Which city hosted the 1968 Summer Olympics?",
+     "a": "Mexico City",
+     "wrong": [
+      "Guadalajara",
+      "Monterrey",
+      "Acapulco"
+     ],
+     "why": "It was the first Olympics in Latin America."
+    },
+    {
+     "level": 1,
+     "q": "Which cliff-diving show is famous in Acapulco?",
+     "a": "La Quebrada",
+     "wrong": [
+      "Cenote Ik Kil",
+      "Tulum Cliffs",
+      "Los Arcos"
+     ],
+     "why": "Divers leap about 35 m into the sea."
+    },
+    {
+     "level": 2,
+     "q": "Which Mexican boxer was nicknamed 'JC Superstar' and 'El César del Boxeo'?",
+     "a": "Julio César Chávez",
+     "wrong": [
+      "Saúl Álvarez",
+      "Salvador Sánchez",
+      "Rubén Olivares"
+     ],
+     "why": "He was unbeaten in his first 90 professional fights."
+    },
+    {
+     "level": 2,
+     "q": "Which tournament did Mexico win at the 2012 Olympics?",
+     "a": "Men's football",
+     "wrong": [
+      "Boxing team",
+      "Diving team",
+      "Taekwondo team"
+     ],
+     "why": "They beat Brazil 2–1 at Wembley."
+    },
+    {
+     "level": 2,
+     "q": "Which Mexican goalkeeper is famous for World Cup heroics?",
+     "a": "Guillermo Ochoa",
+     "wrong": [
+      "Jorge Campos",
+      "Oswaldo Sánchez",
+      "Alfredo Talavera"
+     ],
+     "why": "He starred against Brazil in 2014."
+    },
+    {
+     "level": 2,
+     "q": "Which ball game was played by ancient Mesoamericans on stone courts?",
+     "a": "Ōllamaliztli (the Mesoamerican ballgame)",
+     "wrong": [
+      "Chunkey",
+      "Lacrosse",
+      "Jai alai"
+     ],
+     "why": "Players hit a rubber ball with their hips."
+    },
+    {
+     "level": 2,
+     "q": "Which countries co-host the 2026 World Cup with Mexico?",
+     "a": "United States and Canada",
+     "wrong": [
+      "Colombia and Peru",
+      "Spain and Portugal",
+      "Brazil and Argentina"
+     ],
+     "why": "Mexico is the first country to host three World Cups."
+    },
+    {
+     "level": 2,
+     "q": "Which Mexican club is the most popular, nicknamed 'Las Águilas'?",
+     "a": "Club América",
+     "wrong": [
+      "Chivas",
+      "Cruz Azul",
+      "Pumas UNAM"
+     ],
+     "why": "Its great rival is Chivas."
+    },
+    {
+     "level": 3,
+     "q": "Which Guadalajara club only fields Mexican players?",
+     "a": "Chivas",
+     "wrong": [
+      "Club Atlas",
+      "Club América",
+      "Tigres"
+     ],
+     "why": "It is officially Club Deportivo Guadalajara."
+    },
+    {
+     "level": 3,
+     "q": "Who became Mexico's first female Olympic champion, at Sydney 2000?",
+     "a": "Soraya Jiménez",
+     "wrong": [
+      "Ana Guevara",
+      "Paola Espinosa",
+      "María del Rosario Espinoza"
+     ],
+     "why": "She won in weightlifting."
+    },
+    {
+     "level": 3,
+     "q": "Which legendary masked luchador starred in many films?",
+     "a": "El Santo",
+     "wrong": [
+      "Blue Demon",
+      "Mil Máscaras",
+      "Rey Mysterio"
+     ],
+     "why": "He was buried in his silver mask."
+    }
+   ]
+  },
+  {
+   "name": "Mexico Film, TV & Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which painter is famous for self-portraits and her 'Blue House'?",
+     "a": "Frida Kahlo",
+     "wrong": [
+      "Leonora Carrington",
+      "María Izquierdo",
+      "Remedios Varo"
+     ],
+     "why": "Her house in Coyoacán is a museum."
+    },
+    {
+     "level": 1,
+     "q": "Which muralist was married to Frida Kahlo?",
+     "a": "Diego Rivera",
+     "wrong": [
+      "David Alfaro Siqueiros",
+      "José Clemente Orozco",
+      "Rufino Tamayo"
+     ],
+     "why": "His murals cover the National Palace."
+    },
+    {
+     "level": 1,
+     "q": "Which kind of Mexican band plays violins, trumpets and guitars in charro suits?",
+     "a": "Mariachi",
+     "wrong": [
+      "Banda",
+      "Norteño",
+      "Son jarocho"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "Which Mexican director made 'Gravity' and 'Roma'?",
+     "a": "Alfonso Cuarón",
+     "wrong": [
+      "Guillermo del Toro",
+      "Alejandro G. Iñárritu",
+      "Carlos Reygadas"
+     ],
+     "why": "He won Best Director for both."
+    },
+    {
+     "level": 1,
+     "q": "Which Mexican director made 'The Shape of Water'?",
+     "a": "Guillermo del Toro",
+     "wrong": [
+      "Alfonso Cuarón",
+      "Alejandro G. Iñárritu",
+      "Luis Buñuel"
+     ],
+     "why": "It won Best Picture in 2018."
+    },
+    {
+     "level": 1,
+     "q": "Which 2017 Pixar film is set during the Day of the Dead?",
+     "a": "Coco",
+     "wrong": [
+      "Encanto",
+      "The Book of Life",
+      "Luca"
+     ],
+     "why": "Miguel enters the Land of the Dead."
+    },
+    {
+     "level": 1,
+     "q": "Which Mexican comedian played 'El Chavo del Ocho'?",
+     "a": "Roberto Gómez Bolaños",
+     "wrong": [
+      "Cantinflas",
+      "Eugenio Derbez",
+      "Héctor Suárez"
+     ],
+     "why": "He was nicknamed 'Chespirito'."
+    },
+    {
+     "level": 2,
+     "q": "Which Mexican director made 'Birdman' and 'The Revenant'?",
+     "a": "Alejandro G. Iñárritu",
+     "wrong": [
+      "Alfonso Cuarón",
+      "Guillermo del Toro",
+      "Arturo Ripstein"
+     ],
+     "why": "He won Best Director two years in a row."
+    },
+    {
+     "level": 2,
+     "q": "Which comic actor starred as a vagabond 'peladito'?",
+     "a": "Cantinflas",
+     "wrong": [
+      "Tin Tan",
+      "Chespirito",
+      "Pedro Infante"
+     ],
+     "why": "He played Passepartout in 'Around the World in 80 Days'."
+    },
+    {
+     "level": 2,
+     "q": "Which Mexican actress was nominated for Best Actress for playing Frida Kahlo?",
+     "a": "Salma Hayek",
+     "wrong": [
+      "Yalitza Aparicio",
+      "Kate del Castillo",
+      "Eiza González"
+     ],
+     "why": "'Frida' came out in 2002."
+    },
+    {
+     "level": 2,
+     "q": "Which singer is called 'El Sol de México'?",
+     "a": "Luis Miguel",
+     "wrong": [
+      "Juan Gabriel",
+      "Vicente Fernández",
+      "Alejandro Fernández"
+     ],
+     "why": "He is known for his boleros."
+    },
+    {
+     "level": 2,
+     "q": "Which ranchera legend was nicknamed 'Chente'?",
+     "a": "Vicente Fernández",
+     "wrong": [
+      "Pedro Infante",
+      "Jorge Negrete",
+      "Juan Gabriel"
+     ],
+     "why": "He sang 'Volver, Volver'."
+    },
+    {
+     "level": 2,
+     "q": "Which Nobel-winning poet wrote 'The Labyrinth of Solitude'?",
+     "a": "Octavio Paz",
+     "wrong": [
+      "Carlos Fuentes",
+      "Juan Rulfo",
+      "Elena Poniatowska"
+     ],
+     "why": "He won the Nobel in 1990."
+    },
+    {
+     "level": 3,
+     "q": "Who wrote 'Pedro Páramo'?",
+     "a": "Juan Rulfo",
+     "wrong": [
+      "Carlos Fuentes",
+      "Octavio Paz",
+      "Laura Esquivel"
+     ],
+     "why": "It inspired magical realism."
+    },
+    {
+     "level": 3,
+     "q": "Who wrote 'Like Water for Chocolate'?",
+     "a": "Laura Esquivel",
+     "wrong": [
+      "Elena Poniatowska",
+      "Ángeles Mastretta",
+      "Rosario Castellanos"
+     ],
+     "why": "Each chapter begins with a recipe."
+    },
+    {
+     "level": 3,
+     "q": "Which Oaxacan actress was nominated for an Oscar for 'Roma'?",
+     "a": "Yalitza Aparicio",
+     "wrong": [
+      "Marina de Tavira",
+      "Salma Hayek",
+      "Ana de la Reguera"
+     ],
+     "why": "She was a first-time actor."
+    }
+   ]
+  },
+  {
+   "name": "Mexico Food & Traditions",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which holiday honours dead loved ones with altars and marigolds?",
+     "a": "Día de los Muertos",
+     "wrong": [
+      "Cinco de Mayo",
+      "Las Posadas",
+      "Semana Santa"
+     ],
+     "why": "It is on 1 and 2 November."
+    },
+    {
+     "level": 1,
+     "q": "Which spirit is made from blue agave in Jalisco?",
+     "a": "Tequila",
+     "wrong": [
+      "Pulque",
+      "Rum",
+      "Sotol"
+     ],
+     "why": "Only spirits from certain regions may be called tequila."
+    },
+    {
+     "level": 1,
+     "q": "Which avocado dip comes from Mexico?",
+     "a": "Guacamole",
+     "wrong": [
+      "Salsa verde",
+      "Pico de gallo",
+      "Mole"
+     ],
+     "why": "The Aztecs made it."
+    },
+    {
+     "level": 1,
+     "q": "Which rich sauce often contains chillies and chocolate?",
+     "a": "Mole",
+     "wrong": [
+      "Salsa roja",
+      "Pipián",
+      "Adobo"
+     ],
+     "why": "Mole poblano comes from Puebla."
+    },
+    {
+     "level": 1,
+     "q": "What are corn dough parcels steamed in husks called?",
+     "a": "Tamales",
+     "wrong": [
+      "Tacos",
+      "Enchiladas",
+      "Quesadillas"
+     ],
+     "why": "They are eaten on Candlemas, 2 February."
+    },
+    {
+     "level": 1,
+     "q": "Which papier-mâché figure filled with sweets is broken at parties?",
+     "a": "Piñata",
+     "wrong": [
+      "Alebrije",
+      "Calavera",
+      "Catrina"
+     ],
+     "why": "Traditional ones have seven points."
+    },
+    {
+     "level": 1,
+     "q": "Which grain, first domesticated in Mexico, is the base of tortillas?",
+     "a": "Maize (corn)",
+     "wrong": [
+      "Wheat",
+      "Rice",
+      "Barley"
+     ],
+     "why": "Mexican cuisine is on UNESCO's heritage list."
+    },
+    {
+     "level": 2,
+     "q": "Which elegant skeleton lady is a Day of the Dead icon?",
+     "a": "La Catrina",
+     "wrong": [
+      "La Llorona",
+      "La Malinche",
+      "La Adelita"
+     ],
+     "why": "José Guadalupe Posada created her."
+    },
+    {
+     "level": 2,
+     "q": "Which tacos use pork marinated with pineapple, cooked on a spit?",
+     "a": "Tacos al pastor",
+     "wrong": [
+      "Tacos de carnitas",
+      "Tacos de barbacoa",
+      "Tacos de suadero"
+     ],
+     "why": "The method came with Lebanese immigrants."
+    },
+    {
+     "level": 2,
+     "q": "Which nine-night Christmas tradition re-enacts Mary and Joseph's search for shelter?",
+     "a": "Las Posadas",
+     "wrong": [
+      "Día de Reyes",
+      "La Candelaria",
+      "Nochebuena"
+     ],
+     "why": "It runs from 16 to 24 December."
+    },
+    {
+     "level": 2,
+     "q": "Which smoky agave spirit is mostly made in Oaxaca?",
+     "a": "Mezcal",
+     "wrong": [
+      "Tequila",
+      "Sotol",
+      "Raicilla"
+     ],
+     "why": "Its agave is roasted in pits."
+    },
+    {
+     "level": 2,
+     "q": "What is the ring-shaped bread eaten on 6 January?",
+     "a": "Rosca de Reyes",
+     "wrong": [
+      "Pan de muerto",
+      "Concha",
+      "Bolillo"
+     ],
+     "why": "Whoever finds the baby figurine hosts a tamale party."
+    },
+    {
+     "level": 2,
+     "q": "Which brightly painted fantasy creatures come from Oaxaca and Mexico City?",
+     "a": "Alebrijes",
+     "wrong": [
+      "Piñatas",
+      "Calaveras",
+      "Huipiles"
+     ],
+     "why": "Pedro Linares created the first ones."
+    },
+    {
+     "level": 3,
+     "q": "Which Oaxaca festival in July celebrates Indigenous dances?",
+     "a": "Guelaguetza",
+     "wrong": [
+      "Día de Muertos",
+      "Carnaval de Veracruz",
+      "Feria de San Marcos"
+     ],
+     "why": "Its name means 'offering' in Zapotec."
+    },
+    {
+     "level": 3,
+     "q": "Which Yucatán pork dish is slow-roasted with achiote in banana leaves?",
+     "a": "Cochinita pibil",
+     "wrong": [
+      "Carnitas",
+      "Birria",
+      "Pozole"
+     ],
+     "why": "'Pib' is a Maya earth oven."
+    },
+    {
+     "level": 3,
+     "q": "Which sweet bread is baked for the Day of the Dead?",
+     "a": "Pan de muerto",
+     "wrong": [
+      "Rosca de Reyes",
+      "Concha",
+      "Oreja"
+     ],
+     "why": "It is decorated with dough 'bones'."
+    }
+   ]
+  },
+  {
+   "name": "Mexico General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Mexico's currency?",
+     "a": "Mexican peso",
+     "wrong": [
+      "Dollar",
+      "Real",
+      "Quetzal"
+     ],
+     "why": "The $ sign was first used for the peso."
+    },
+    {
+     "level": 1,
+     "q": "What is shown in the centre of Mexico's flag?",
+     "a": "An eagle eating a snake on a cactus",
+     "wrong": [
+      "A sun with rays",
+      "A pyramid",
+      "A jaguar"
+     ],
+     "why": "It recalls the Aztec founding legend."
+    },
+    {
+     "level": 1,
+     "q": "Which country has the most Spanish speakers in the world?",
+     "a": "Mexico",
+     "wrong": [
+      "Spain",
+      "Colombia",
+      "Argentina"
+     ],
+     "why": "It has over 120 million people."
+    },
+    {
+     "level": 1,
+     "q": "Which Mexican chocolate drink is often frothed with a wooden whisk?",
+     "a": "Hot chocolate (with a molinillo)",
+     "wrong": [
+      "Horchata",
+      "Agua de jamaica",
+      "Tepache"
+     ],
+     "why": "The Olmecs and Maya first made cacao drinks."
+    },
+    {
+     "level": 1,
+     "q": "Which butterfly migrates to Mexico's forests every winter?",
+     "a": "Monarch butterfly",
+     "wrong": [
+      "Swallowtail",
+      "Painted lady",
+      "Morpho"
+     ],
+     "why": "Millions gather in Michoacán."
+    },
+    {
+     "level": 1,
+     "q": "What is Mexico City's main square called?",
+     "a": "The Zócalo",
+     "wrong": [
+      "Plaza Mayor",
+      "Alameda",
+      "Reforma"
+     ],
+     "why": "Its official name is Plaza de la Constitución."
+    },
+    {
+     "level": 1,
+     "q": "Which Indigenous language with over a million speakers comes from the Aztecs?",
+     "a": "Nahuatl",
+     "wrong": [
+      "Maya",
+      "Zapotec",
+      "Mixtec"
+     ],
+     "why": "Words like 'chocolate' and 'tomato' come from it."
+    },
+    {
+     "level": 2,
+     "q": "What is Mexico's national animal?",
+     "a": "Golden eagle",
+     "wrong": [
+      "Jaguar",
+      "Axolotl",
+      "Xoloitzcuintli"
+     ],
+     "why": "It appears on the flag."
+    },
+    {
+     "level": 2,
+     "q": "Which salamander from Xochimilco never grows up?",
+     "a": "Axolotl",
+     "wrong": [
+      "Newt",
+      "Hellbender",
+      "Olm"
+     ],
+     "why": "It keeps its gills as an adult."
+    },
+    {
+     "level": 2,
+     "q": "Which hairless dog breed was sacred to the Aztecs?",
+     "a": "Xoloitzcuintli",
+     "wrong": [
+      "Chihuahua",
+      "Chinese crested",
+      "Peruvian Inca orchid"
+     ],
+     "why": "It was said to guide souls of the dead."
+    },
+    {
+     "level": 2,
+     "q": "What is the Mexican word for the colourful embroidered tunics of Indigenous women?",
+     "a": "Huipil",
+     "wrong": [
+      "Poncho",
+      "Rebozo",
+      "Sarape"
+     ],
+     "why": "Designs can show the wearer's village."
+    },
+    {
+     "level": 2,
+     "q": "Which university in Mexico City is Latin America's largest?",
+     "a": "UNAM",
+     "wrong": [
+      "IPN",
+      "Tec de Monterrey",
+      "UAM"
+     ],
+     "why": "Its central campus is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which Mexican engineer invented an early colour television system?",
+     "a": "Guillermo González Camarena",
+     "wrong": [
+      "Luis E. Miramontes",
+      "Mario Molina",
+      "Manuel Sandoval Vallarta"
+     ],
+     "why": "He patented it in 1940."
+    },
+    {
+     "level": 3,
+     "q": "Which Mexican chemist co-invented the first oral contraceptive pill?",
+     "a": "Luis E. Miramontes",
+     "wrong": [
+      "Mario Molina",
+      "Guillermo González Camarena",
+      "Rodolfo Neri Vela"
+     ],
+     "why": "He synthesised norethisterone in 1951."
+    },
+    {
+     "level": 3,
+     "q": "Which Mexican scientist shared the 1995 Nobel Prize for ozone research?",
+     "a": "Mario Molina",
+     "wrong": [
+      "Luis E. Miramontes",
+      "Octavio Paz",
+      "Alfonso García Robles"
+     ],
+     "why": "He warned about CFCs."
+    },
+    {
+     "level": 3,
+     "q": "Who was the first Mexican in space, in 1985?",
+     "a": "Rodolfo Neri Vela",
+     "wrong": [
+      "José Hernández",
+      "Katya Echazarreta",
+      "Mario Molina"
+     ],
+     "why": "He flew on the Space Shuttle Atlantis."
+    }
+   ]
+  }
+ ]
+}
