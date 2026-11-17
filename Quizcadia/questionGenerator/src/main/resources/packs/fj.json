@@ -1,0 +1,346 @@
+{
+ "category": "Fiji",
+ "country": "FJ",
+ "topics": [
+  {
+   "name": "Fiji: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Fiji?",
+     "a": "Suva",
+     "wrong": [
+      "Nadi",
+      "Lautoka",
+      "Levuka"
+     ],
+     "why": "It is on Viti Levu."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Fiji gain independence in 1970?",
+     "a": "United Kingdom",
+     "wrong": [
+      "Australia",
+      "France",
+      "New Zealand"
+     ],
+     "why": "It became a republic in 1987."
+    },
+    {
+     "level": 1,
+     "q": "What is Fiji's currency?",
+     "a": "Fijian dollar",
+     "wrong": [
+      "Australian dollar",
+      "Pacific franc",
+      "Tala"
+     ],
+     "why": "Its code is FJD."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is Fiji in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It has over 300 islands."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is Fiji famous for winning Olympic gold in?",
+     "a": "Rugby sevens",
+     "wrong": [
+      "Football",
+      "Boxing",
+      "Swimming"
+     ],
+     "why": "It won in 2016 and 2020."
+    },
+    {
+     "level": 1,
+     "q": "What is the largest island of Fiji?",
+     "a": "Viti Levu",
+     "wrong": [
+      "Vanua Levu",
+      "Taveuni",
+      "Kadavu"
+     ],
+     "why": "Most people live there."
+    },
+    {
+     "level": 1,
+     "q": "Which greeting means 'hello' in Fijian?",
+     "a": "Bula",
+     "wrong": [
+      "Aloha",
+      "Kia ora",
+      "Talofa"
+     ],
+     "why": "It also means 'life'."
+    },
+    {
+     "level": 2,
+     "q": "Which army officer led coups in 1987?",
+     "a": "Sitiveni Rabuka",
+     "wrong": [
+      "Frank Bainimarama",
+      "Ratu Mara",
+      "Mahendra Chaudhry"
+     ],
+     "why": "He became Prime Minister again in 2022."
+    },
+    {
+     "level": 2,
+     "q": "Who led the 2006 coup and ruled until 2022?",
+     "a": "Frank Bainimarama",
+     "wrong": [
+      "Sitiveni Rabuka",
+      "Laisenia Qarase",
+      "George Speight"
+     ],
+     "why": "He was a navy commander."
+    },
+    {
+     "level": 2,
+     "q": "Who became Fiji's first Indo-Fijian Prime Minister in 1999?",
+     "a": "Mahendra Chaudhry",
+     "wrong": [
+      "Sitiveni Rabuka",
+      "Laisenia Qarase",
+      "Ratu Mara"
+     ],
+     "why": "He was ousted in a 2000 coup."
+    },
+    {
+     "level": 2,
+     "q": "Who was Fiji's first Prime Minister?",
+     "a": "Ratu Sir Kamisese Mara",
+     "wrong": [
+      "Sitiveni Rabuka",
+      "Frank Bainimarama",
+      "Ratu Cakobau"
+     ],
+     "why": "He is called the father of modern Fiji."
+    },
+    {
+     "level": 2,
+     "q": "Which old capital is a UNESCO site?",
+     "a": "Levuka",
+     "wrong": [
+      "Suva",
+      "Nadi",
+      "Savusavu"
+     ],
+     "why": "It is on Ovalau island."
+    },
+    {
+     "level": 3,
+     "q": "Which chief ceded Fiji to Britain in 1874?",
+     "a": "Ratu Seru Cakobau",
+     "wrong": [
+      "Ratu Mara",
+      "Ma'afu",
+      "Ratu Sukuna"
+     ],
+     "why": "He called himself King of Fiji."
+    },
+    {
+     "level": 3,
+     "q": "Which workers came from India from 1879?",
+     "a": "Girmitiyas (indentured labourers)",
+     "wrong": [
+      "Sepoys",
+      "Lascars",
+      "Kanakas"
+     ],
+     "why": "Their descendants are a big part of Fiji."
+    },
+    {
+     "level": 3,
+     "q": "Which businessman led the 2000 coup?",
+     "a": "George Speight",
+     "wrong": [
+      "Frank Bainimarama",
+      "Sitiveni Rabuka",
+      "Mahendra Chaudhry"
+     ],
+     "why": "He held MPs hostage for 56 days."
+    }
+   ]
+  },
+  {
+   "name": "Fiji: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which drink made from a root is shared in ceremonies?",
+     "a": "Kava (yaqona)",
+     "wrong": [
+      "Coconut wine",
+      "Palm toddy",
+      "Sake"
+     ],
+     "why": "It is drunk from a coconut shell."
+    },
+    {
+     "level": 1,
+     "q": "Which tiny islands off Nadi are a tourist favourite?",
+     "a": "Mamanuca Islands",
+     "wrong": [
+      "Yasawa Islands",
+      "Lau Islands",
+      "Kadavu"
+     ],
+     "why": "Many films were shot there."
+    },
+    {
+     "level": 1,
+     "q": "Which film starring Tom Hanks was shot on a Fijian island?",
+     "a": "Cast Away",
+     "wrong": [
+      "Moana",
+      "Jaws",
+      "Survivor"
+     ],
+     "why": "Monuriki island was used."
+    },
+    {
+     "level": 1,
+     "q": "Which raw fish dish in coconut milk is popular?",
+     "a": "Kokoda",
+     "wrong": [
+      "Poke",
+      "Ceviche",
+      "Sashimi"
+     ],
+     "why": "It is marinated in lime."
+    },
+    {
+     "level": 1,
+     "q": "Which earth oven is used for feasts?",
+     "a": "Lovo",
+     "wrong": [
+      "Umu",
+      "Hangi",
+      "Tandoor"
+     ],
+     "why": "Food is cooked underground."
+    },
+    {
+     "level": 1,
+     "q": "What is the national rugby team nicknamed?",
+     "a": "Flying Fijians",
+     "wrong": [
+      "Pacific Islanders",
+      "Wallabies",
+      "Pumas"
+     ],
+     "why": "They reached the 2023 World Cup quarter-finals."
+    },
+    {
+     "level": 1,
+     "q": "Which island is called 'the Garden Island'?",
+     "a": "Taveuni",
+     "wrong": [
+      "Kadavu",
+      "Vanua Levu",
+      "Ovalau"
+     ],
+     "why": "The 180th meridian passes through it."
+    },
+    {
+     "level": 2,
+     "q": "Which coach led Fiji to its first Olympic gold in 2016?",
+     "a": "Ben Ryan",
+     "wrong": [
+      "Eddie Jones",
+      "Warren Gatland",
+      "Gareth Baber"
+     ],
+     "why": "He is English."
+    },
+    {
+     "level": 2,
+     "q": "Which Hindu temple in Nadi is the largest in the Southern Hemisphere?",
+     "a": "Sri Siva Subramaniya Temple",
+     "wrong": [
+      "Batu Caves",
+      "Murugan Temple",
+      "Kali Temple"
+     ],
+     "why": "It is brightly painted."
+    },
+    {
+     "level": 2,
+     "q": "Which fire-walking tradition comes from Beqa island?",
+     "a": "Vilavilairevo",
+     "wrong": [
+      "Haka",
+      "Siva",
+      "Meke"
+     ],
+     "why": "Only a few clans may do it."
+    },
+    {
+     "level": 2,
+     "q": "Which coral reef is famous as the 'soft coral capital of the world'?",
+     "a": "Rainbow Reef",
+     "wrong": [
+      "Great Barrier Reef",
+      "Belize Reef",
+      "Red Sea Reef"
+     ],
+     "why": "It is near Taveuni."
+    },
+    {
+     "level": 2,
+     "q": "Which group of islands in the northwest is famous for backpacking?",
+     "a": "Yasawa Islands",
+     "wrong": [
+      "Mamanuca",
+      "Lau",
+      "Kadavu"
+     ],
+     "why": "A boat called the Yasawa Flyer serves them."
+    },
+    {
+     "level": 3,
+     "q": "Which golfer from Fiji won three majors?",
+     "a": "Vijay Singh",
+     "wrong": [
+      "Tiger Woods",
+      "Ernie Els",
+      "Adam Scott"
+     ],
+     "why": "He was world number one in 2004."
+    },
+    {
+     "level": 3,
+     "q": "Which traditional dance tells stories in song?",
+     "a": "Meke",
+     "wrong": [
+      "Haka",
+      "Hula",
+      "Siva"
+     ],
+     "why": "It is performed at ceremonies."
+    },
+    {
+     "level": 3,
+     "q": "Which whale tooth is a precious gift in Fijian culture?",
+     "a": "Tabua",
+     "wrong": [
+      "Hei-tiki",
+      "Kina",
+      "Moko"
+     ],
+     "why": "It is given at important events."
+    }
+   ]
+  }
+ ]
+}

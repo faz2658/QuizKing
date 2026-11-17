@@ -1,0 +1,346 @@
+{
+ "category": "Bhutan",
+ "country": "BT",
+ "topics": [
+  {
+   "name": "Bhutan: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Bhutanese city is the country's capital?",
+     "a": "Thimphu",
+     "wrong": [
+      "Paro",
+      "Punakha",
+      "Phuentsholing"
+     ],
+     "why": "It has no traffic lights."
+    },
+    {
+     "level": 1,
+     "q": "What does Bhutan measure instead of only GDP?",
+     "a": "Gross National Happiness",
+     "wrong": [
+      "Gross National Wealth",
+      "Happy Planet Score",
+      "National Smile Index"
+     ],
+     "why": "The idea came from the fourth King."
+    },
+    {
+     "level": 1,
+     "q": "What is Bhutan called in its own language?",
+     "a": "Druk Yul (Land of the Thunder Dragon)",
+     "wrong": [
+      "Land of Snows",
+      "Shangri-La",
+      "Roof of the World"
+     ],
+     "why": "A dragon is on the flag."
+    },
+    {
+     "level": 1,
+     "q": "Which religion is the main faith of Bhutan?",
+     "a": "Buddhism",
+     "wrong": [
+      "Hinduism",
+      "Islam",
+      "Christianity"
+     ],
+     "why": "It is the world's last Vajrayana Buddhist kingdom."
+    },
+    {
+     "level": 1,
+     "q": "What is Bhutan's currency?",
+     "a": "Ngultrum",
+     "wrong": [
+      "Rupee",
+      "Kyat",
+      "Taka"
+     ],
+     "why": "It is pegged to the Indian rupee."
+    },
+    {
+     "level": 1,
+     "q": "Which two countries border Bhutan?",
+     "a": "India and China",
+     "wrong": [
+      "Nepal and India",
+      "China and Nepal",
+      "India and Bangladesh"
+     ],
+     "why": "It is landlocked in the Himalayas."
+    },
+    {
+     "level": 1,
+     "q": "Who has been King of Bhutan since 2006?",
+     "a": "Jigme Khesar Namgyel Wangchuck",
+     "wrong": [
+      "Jigme Singye Wangchuck",
+      "Jigme Dorji Wangchuck",
+      "Ugyen Wangchuck"
+     ],
+     "why": "He is the fifth Dragon King."
+    },
+    {
+     "level": 2,
+     "q": "Which family has ruled Bhutan since 1907?",
+     "a": "Wangchuck dynasty",
+     "wrong": [
+      "Namgyal dynasty",
+      "Shah dynasty",
+      "Rana dynasty"
+     ],
+     "why": "Ugyen Wangchuck was the first King."
+    },
+    {
+     "level": 2,
+     "q": "Which Tibetan lama unified Bhutan in the 1600s?",
+     "a": "Zhabdrung Ngawang Namgyal",
+     "wrong": [
+      "Guru Rinpoche",
+      "Milarepa",
+      "Tsongkhapa"
+     ],
+     "why": "He built many fortresses."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Bhutan hold its first parliamentary elections?",
+     "a": "2008",
+     "wrong": [
+      "1998",
+      "1975",
+      "2015"
+     ],
+     "why": "The King gave up absolute power."
+    },
+    {
+     "level": 2,
+     "q": "Which King introduced Gross National Happiness?",
+     "a": "Jigme Singye Wangchuck",
+     "wrong": [
+      "Jigme Khesar Namgyel Wangchuck",
+      "Ugyen Wangchuck",
+      "Jigme Dorji Wangchuck"
+     ],
+     "why": "He stepped down in 2006."
+    },
+    {
+     "level": 2,
+     "q": "When did Bhutan allow television and the internet?",
+     "a": "1999",
+     "wrong": [
+      "1970",
+      "1985",
+      "2010"
+     ],
+     "why": "It was one of the last countries to do so."
+    },
+    {
+     "level": 3,
+     "q": "What is the large daily fee for tourists called?",
+     "a": "Sustainable Development Fee",
+     "wrong": [
+      "Visa Tax",
+      "Happiness Fee",
+      "Mountain Levy"
+     ],
+     "why": "It funds conservation and services."
+    },
+    {
+     "level": 3,
+     "q": "Which new 'city' is being built in the south near India?",
+     "a": "Gelephu Mindfulness City",
+     "wrong": [
+      "Thimphu Tech Park",
+      "Paro Smart City",
+      "Druk Valley"
+     ],
+     "why": "It was announced in 2023."
+    },
+    {
+     "level": 3,
+     "q": "Which saint is said to have flown to Paro on a tigress?",
+     "a": "Guru Rinpoche (Padmasambhava)",
+     "wrong": [
+      "Zhabdrung",
+      "Milarepa",
+      "Atisha"
+     ],
+     "why": "He brought Buddhism in the 700s."
+    }
+   ]
+  },
+  {
+   "name": "Bhutan: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which monastery clings to a cliff above the Paro valley?",
+     "a": "Tiger's Nest (Paro Taktsang)",
+     "wrong": [
+      "Punakha Dzong",
+      "Rumtek",
+      "Tashichho Dzong"
+     ],
+     "why": "It is about 900 m above the valley."
+    },
+    {
+     "level": 1,
+     "q": "What is Bhutan's national sport?",
+     "a": "Archery",
+     "wrong": [
+      "Football",
+      "Cricket",
+      "Polo"
+     ],
+     "why": "Matches include singing and dancing."
+    },
+    {
+     "level": 1,
+     "q": "Which spicy chilli and cheese dish is the national dish?",
+     "a": "Ema datshi",
+     "wrong": [
+      "Momos",
+      "Dal bhat",
+      "Thukpa"
+     ],
+     "why": "Chillies are eaten as vegetables."
+    },
+    {
+     "level": 1,
+     "q": "What is the knee-length robe worn by Bhutanese men?",
+     "a": "Gho",
+     "wrong": [
+      "Kira",
+      "Chuba",
+      "Kurta"
+     ],
+     "why": "Women wear the kira."
+    },
+    {
+     "level": 1,
+     "q": "What is Bhutan's national animal?",
+     "a": "Takin",
+     "wrong": [
+      "Yak",
+      "Snow leopard",
+      "Red panda"
+     ],
+     "why": "It looks like a goat-antelope."
+    },
+    {
+     "level": 1,
+     "q": "What share of Bhutan must remain forest by law?",
+     "a": "At least 60%",
+     "wrong": [
+      "At least 10%",
+      "At least 30%",
+      "At least 90%"
+     ],
+     "why": "It is carbon negative."
+    },
+    {
+     "level": 1,
+     "q": "Which fortress-monasteries are found across Bhutan?",
+     "a": "Dzongs",
+     "wrong": [
+      "Caravanserais",
+      "Stupas",
+      "Pagodas"
+     ],
+     "why": "They house monks and government offices."
+    },
+    {
+     "level": 2,
+     "q": "Which dzong stands where two rivers meet?",
+     "a": "Punakha Dzong",
+     "wrong": [
+      "Paro Dzong",
+      "Trongsa Dzong",
+      "Tashichho Dzong"
+     ],
+     "why": "The royal wedding was held there in 2011."
+    },
+    {
+     "level": 2,
+     "q": "Which masked dance festivals are held at monasteries?",
+     "a": "Tshechu",
+     "wrong": [
+      "Losar",
+      "Diwali",
+      "Dashain"
+     ],
+     "why": "Monks perform in colourful masks."
+    },
+    {
+     "level": 2,
+     "q": "Which valley is home to the black-necked cranes in winter?",
+     "a": "Phobjikha Valley",
+     "wrong": [
+      "Paro Valley",
+      "Bumthang",
+      "Haa Valley"
+     ],
+     "why": "A festival celebrates their arrival."
+    },
+    {
+     "level": 2,
+     "q": "Which peak is the highest unclimbed mountain in the world?",
+     "a": "Gangkhar Puensum",
+     "wrong": [
+      "Jomolhari",
+      "Everest",
+      "Kangchenjunga"
+     ],
+     "why": "Climbing high peaks is banned."
+    },
+    {
+     "level": 2,
+     "q": "What is Bhutan's national language?",
+     "a": "Dzongkha",
+     "wrong": [
+      "Nepali",
+      "Tibetan",
+      "Hindi"
+     ],
+     "why": "English is widely taught."
+    },
+    {
+     "level": 3,
+     "q": "Which airport is one of the hardest to land at in the world?",
+     "a": "Paro International Airport",
+     "wrong": [
+      "Lukla Airport",
+      "Kai Tak",
+      "Courchevel"
+     ],
+     "why": "Only a few pilots are allowed."
+    },
+    {
+     "level": 3,
+     "q": "Which giant Buddha statue overlooks Thimphu?",
+     "a": "Buddha Dordenma",
+     "wrong": [
+      "Leshan Buddha",
+      "Tian Tan Buddha",
+      "Spring Temple Buddha"
+     ],
+     "why": "It is about 51 m tall."
+    },
+    {
+     "level": 3,
+     "q": "Which painted symbol is often seen on walls to ward off evil?",
+     "a": "Phallus paintings",
+     "wrong": [
+      "Eyes of the Buddha",
+      "Dragon tails",
+      "Lotus flowers"
+     ],
+     "why": "They are linked to the 'Divine Madman' Drukpa Kunley."
+    }
+   ]
+  }
+ ]
+}
