@@ -1,0 +1,346 @@
+{
+ "category": "Denmark",
+ "country": "DK",
+ "topics": [
+  {
+   "name": "Denmark: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Danish author wrote 'The Little Mermaid' and 'The Ugly Duckling'?",
+     "a": "Hans Christian Andersen",
+     "wrong": [
+      "Søren Kierkegaard",
+      "Karen Blixen",
+      "Brothers Grimm"
+     ],
+     "why": "He was born in Odense in 1805."
+    },
+    {
+     "level": 1,
+     "q": "Which Viking king's name is used for wireless 'Bluetooth' technology?",
+     "a": "Harald Bluetooth",
+     "wrong": [
+      "Sweyn Forkbeard",
+      "Cnut the Great",
+      "Gorm the Old"
+     ],
+     "why": "The logo combines his runic initials."
+    },
+    {
+     "level": 1,
+     "q": "Which Danish king also ruled England and Norway?",
+     "a": "Cnut the Great",
+     "wrong": [
+      "Harald Bluetooth",
+      "Christian IV",
+      "Valdemar I"
+     ],
+     "why": "He ruled England from 1016."
+    },
+    {
+     "level": 1,
+     "q": "Which toy company was founded in Billund in 1932?",
+     "a": "LEGO",
+     "wrong": [
+      "Playmobil",
+      "Mattel",
+      "Hasbro"
+     ],
+     "why": "Its name comes from 'leg godt', 'play well'."
+    },
+    {
+     "level": 1,
+     "q": "Who became Queen of Denmark in 1972 and reigned until 2024?",
+     "a": "Margrethe II",
+     "wrong": [
+      "Ingrid",
+      "Mary",
+      "Christina"
+     ],
+     "why": "She stepped down in favour of her son Frederik."
+    },
+    {
+     "level": 1,
+     "q": "Who became King of Denmark in January 2024?",
+     "a": "Frederik X",
+     "wrong": [
+      "Christian X",
+      "Frederik IX",
+      "Joachim"
+     ],
+     "why": "His wife is Queen Mary, who was born in Australia."
+    },
+    {
+     "level": 1,
+     "q": "Which huge Arctic island is part of the Danish kingdom?",
+     "a": "Greenland",
+     "wrong": [
+      "Iceland",
+      "Svalbard",
+      "Baffin Island"
+     ],
+     "why": "It has its own self-government."
+    },
+    {
+     "level": 2,
+     "q": "What did the Danish resistance do for most of the country's Jews in 1943?",
+     "a": "Smuggled them to safety in Sweden",
+     "wrong": [
+      "Hid them in Greenland",
+      "Sent them to Britain by air",
+      "Hid them in castles"
+     ],
+     "why": "Over 7,000 people escaped by boat."
+    },
+    {
+     "level": 2,
+     "q": "Which king built Rosenborg Castle and many Copenhagen landmarks?",
+     "a": "Christian IV",
+     "wrong": [
+      "Frederik VII",
+      "Christian X",
+      "Valdemar IV"
+     ],
+     "why": "He ruled for 59 years."
+    },
+    {
+     "level": 2,
+     "q": "Which 1397 union joined Denmark, Norway and Sweden?",
+     "a": "Kalmar Union",
+     "wrong": [
+      "Treaty of Roskilde",
+      "Hanseatic League",
+      "Union of Lublin"
+     ],
+     "why": "Queen Margaret I created it."
+    },
+    {
+     "level": 2,
+     "q": "Which philosopher is called the father of existentialism?",
+     "a": "Søren Kierkegaard",
+     "wrong": [
+      "Hans Christian Andersen",
+      "Niels Bohr",
+      "N. F. S. Grundtvig"
+     ],
+     "why": "He lived in Copenhagen."
+    },
+    {
+     "level": 2,
+     "q": "Which Danish physicist won the 1922 Nobel Prize for his model of the atom?",
+     "a": "Niels Bohr",
+     "wrong": [
+      "Ole Rømer",
+      "Tycho Brahe",
+      "Hans Christian Ørsted"
+     ],
+     "why": "An element, bohrium, is named after him."
+    },
+    {
+     "level": 3,
+     "q": "Which island group in the North Atlantic is part of the Danish kingdom?",
+     "a": "Faroe Islands",
+     "wrong": [
+      "Shetland Islands",
+      "Orkney Islands",
+      "Lofoten Islands"
+     ],
+     "why": "It has about 54,000 people."
+    },
+    {
+     "level": 3,
+     "q": "Which Danish astronomer built an observatory on the island of Hven?",
+     "a": "Tycho Brahe",
+     "wrong": [
+      "Ole Rømer",
+      "Niels Bohr",
+      "Johannes Kepler"
+     ],
+     "why": "He made precise star measurements before telescopes."
+    },
+    {
+     "level": 3,
+     "q": "Which Danish ship-and-oil company is one of the largest container shippers?",
+     "a": "Maersk",
+     "wrong": [
+      "Carlsberg",
+      "Novo Nordisk",
+      "Vestas"
+     ],
+     "why": "It was founded in 1904."
+    }
+   ]
+  },
+  {
+   "name": "Denmark: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Denmark?",
+     "a": "Copenhagen",
+     "wrong": [
+      "Aarhus",
+      "Odense",
+      "Aalborg"
+     ],
+     "why": "Its name means 'merchants' harbour'."
+    },
+    {
+     "level": 1,
+     "q": "Which statue sits on a rock in Copenhagen harbour?",
+     "a": "The Little Mermaid",
+     "wrong": [
+      "The Gefion Fountain",
+      "The Fisherman",
+      "Hans Christian Andersen"
+     ],
+     "why": "It was unveiled in 1913."
+    },
+    {
+     "level": 1,
+     "q": "Which amusement park opened in Copenhagen in 1843?",
+     "a": "Tivoli Gardens",
+     "wrong": [
+      "Legoland",
+      "Bakken",
+      "Djurs Sommerland"
+     ],
+     "why": "It inspired Walt Disney."
+    },
+    {
+     "level": 1,
+     "q": "What is the Danish word for a cosy, contented feeling?",
+     "a": "Hygge",
+     "wrong": [
+      "Lagom",
+      "Sisu",
+      "Fika"
+     ],
+     "why": "It became popular worldwide in 2016."
+    },
+    {
+     "level": 1,
+     "q": "Which open sandwiches are a Danish lunch favourite?",
+     "a": "Smørrebrød",
+     "wrong": [
+      "Smörgåsbord",
+      "Tapas",
+      "Panini"
+     ],
+     "why": "They are made on rye bread."
+    },
+    {
+     "level": 1,
+     "q": "What is Denmark's currency?",
+     "a": "Danish krone",
+     "wrong": [
+      "Euro",
+      "Swedish krona",
+      "Pound"
+     ],
+     "why": "Denmark kept the krone in a 2000 referendum."
+    },
+    {
+     "level": 1,
+     "q": "Which colourful waterfront in Copenhagen is lined with old houses?",
+     "a": "Nyhavn",
+     "wrong": [
+      "Strøget",
+      "Christiania",
+      "Vesterbro"
+     ],
+     "why": "Andersen once lived there."
+    },
+    {
+     "level": 2,
+     "q": "Which brewery founded in Copenhagen in 1847 is world-famous?",
+     "a": "Carlsberg",
+     "wrong": [
+      "Tuborg",
+      "Heineken",
+      "Faxe"
+     ],
+     "why": "Its founder named it after his son Carl."
+    },
+    {
+     "level": 2,
+     "q": "Which Danish pharmaceutical company makes Ozempic?",
+     "a": "Novo Nordisk",
+     "wrong": [
+      "Lundbeck",
+      "Pfizer",
+      "Maersk"
+     ],
+     "why": "It is Europe's most valuable company at times."
+    },
+    {
+     "level": 2,
+     "q": "Which bridge links Copenhagen and Malmö?",
+     "a": "Øresund Bridge",
+     "wrong": [
+      "Great Belt Bridge",
+      "Storstrøm Bridge",
+      "Little Belt Bridge"
+     ],
+     "why": "It became famous from the TV series 'The Bridge'."
+    },
+    {
+     "level": 2,
+     "q": "Which island is Denmark's largest?",
+     "a": "Zealand",
+     "wrong": [
+      "Funen",
+      "Bornholm",
+      "Lolland"
+     ],
+     "why": "Copenhagen is on it."
+    },
+    {
+     "level": 2,
+     "q": "Which Danish film director co-founded the Dogme 95 movement?",
+     "a": "Lars von Trier",
+     "wrong": [
+      "Thomas Vinterberg",
+      "Susanne Bier",
+      "Nicolas Winding Refn"
+     ],
+     "why": "Thomas Vinterberg was the other founder."
+    },
+    {
+     "level": 3,
+     "q": "Which Danish film won the Oscar for Best International Feature in 2021?",
+     "a": "Another Round",
+     "wrong": [
+      "The Hunt",
+      "In a Better World",
+      "Babette's Feast"
+     ],
+     "why": "Mads Mikkelsen starred."
+    },
+    {
+     "level": 3,
+     "q": "Which architect designed the Sydney Opera House?",
+     "a": "Jørn Utzon",
+     "wrong": [
+      "Arne Jacobsen",
+      "Bjarke Ingels",
+      "Henning Larsen"
+     ],
+     "why": "He won the Pritzker Prize in 2003."
+    },
+    {
+     "level": 3,
+     "q": "Which tournament did Denmark win in 1992 after replacing Yugoslavia?",
+     "a": "European Championship",
+     "wrong": [
+      "World Cup",
+      "Olympic football",
+      "Confederations Cup"
+     ],
+     "why": "They replaced Yugoslavia with ten days' notice."
+    }
+   ]
+  }
+ ]
+}
