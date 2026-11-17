@@ -8,7 +8,7 @@ import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { GameCard } from '../core/models';
 import { countryName, flag } from '../core/countries';
-import { localFirst, SOUTH_ASIA_CATEGORY, southAsianCountry } from '../core/region';
+import { gamesFor, SOUTH_ASIA_CATEGORY, southAsianCountry } from '../core/region';
 import { World } from '../core/world';
 import { GameCardView } from '../ui/game-card';
 import { BlurText } from '../motion/blur-text';
@@ -51,18 +51,13 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
     } @else if (state().error) {
       <div class="alert" role="alert">{{ state().error }}</div>
     } @else {
-      @if (!query() && local().length) {
-        <h2>Popular in {{ localLabel() }}</h2>
-        <div class="grid">@for (g of local(); track g.gameId + g.mode; let i = $index) { <mv-game-card class="fade-up" [style.animation-delay.ms]="Math.min(i, 12) * 50" [game]="g" /> }</div>
-      }
-
-      @if (!query() && recommended().length) {
+      @if (!query() && picked().length) {
         <h2>Picked for you</h2>
-        <div class="grid">@for (g of recommended(); track g.gameId + g.mode; let i = $index) { <mv-game-card class="fade-up" [style.animation-delay.ms]="i * 70" [game]="g" /> }</div>
+        <div class="grid">@for (g of picked(); track g.gameId + g.mode; let i = $index) { <mv-game-card class="fade-up" [style.animation-delay.ms]="i * 70" [game]="g" /> }</div>
       }
 
       <div class="row section-head">
-        <h2>{{ query() ? 'Results for “' + query() + '”' : 'All games' }}</h2>
+        <h2>{{ query() ? 'Results for “' + query() + '”' : list().regionalOnly ? 'Games for ' + localLabel() : 'All games' }}</h2>
         <div class="spacer"></div>
         <div class="pill-tabs" role="group" aria-label="Game type">
           @for (f of filters; track f.id) {
@@ -70,6 +65,9 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
           }
         </div>
       </div>
+      @if (list().regionalOnly) {
+        <p class="muted region-note">Showing quizzes about {{ regionName() }} and South Asia. Search to find other games.</p>
+      }
       @if (visible().length) {
         <div class="grid">@for (g of visible(); track g.gameId + g.mode; let i = $index) { <mv-game-card class="fade-up" [style.animation-delay.ms]="Math.min(i, 12) * 50" [game]="g" /> }</div>
       } @else {
@@ -97,6 +95,7 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
     .section-head { margin-bottom: 16px; }
     .section-head h2 { margin: 0; }
     .empty { text-align: center; padding: 40px; }
+    .region-note { margin: -6px 0 18px; }
   `,
 })
 export class Home {
@@ -149,23 +148,25 @@ export class Home {
     return c ? `${countryName(c)} ${flag(c)}` : '';
   });
 
-  private readonly split = computed(() =>
-    this.region() ? localFirst(this.state().games, this.localCategories()) : { local: [] as GameCard[], rest: this.state().games },
-  );
-
-  /** Solo games of the player's region, for the "Popular in ..." row. */
-  protected readonly local = computed(() => this.split().local.filter((g) => g.mode === 'SINGLE'));
-
-  protected readonly gameCount = computed(() => {
-    const f = this.filter();
-    return this.state().games.filter((g) => f === 'ALL' || g.mode === f).length;
+  protected readonly regionName = computed(() => {
+    const c = this.region();
+    return c ? countryName(c) : '';
   });
 
-  /** All games, the region's first; without a search, the solo ones already in the "Popular in ..." row aren't repeated. */
+  /** What the list shows: only the region's games for South Asian players (search finds the rest). */
+  protected readonly list = computed(() =>
+    gamesFor(this.state().games, this.localCategories(), this.region() !== null, this.query().trim() !== ''),
+  );
+
+  /** Recommendations, limited to the region's games when the list is. */
+  protected readonly picked = computed(() =>
+    this.list().regionalOnly ? this.recommended().filter((g) => this.localCategories().has(g.categoryId)) : this.recommended(),
+  );
+
+  protected readonly gameCount = computed(() => this.visible().length);
+
   protected readonly visible = computed(() => {
     const f = this.filter();
-    const { local, rest } = this.split();
-    const shown = this.query() ? [] : this.local();
-    return [...local.filter((g) => !shown.includes(g)), ...rest].filter((g) => f === 'ALL' || g.mode === f);
+    return this.list().games.filter((g) => f === 'ALL' || g.mode === f);
   });
 }
