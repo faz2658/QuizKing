@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { GameCard } from './models';
-import { localFirst, southAsianCountry } from './region';
+import { gamesFor, localFirst, southAsianCountry } from './region';
 
 const game = (gameId: number, categoryId: number): GameCard => ({ gameId, gameName: 'g' + gameId, categoryId, mode: 'SINGLE' });
 
@@ -19,5 +19,17 @@ describe('region', () => {
     const { local, rest } = localFirst([game(1, 3), game(2, 14), game(3, 1), game(4, 14)], new Set([14]));
     expect(local.map((g) => g.gameId)).toEqual([2, 4]);
     expect(rest.map((g) => g.gameId)).toEqual([1, 3]);
+  });
+
+  it('shows South Asian players only their region\'s games, but search and other players see everything', () => {
+    const games = [game(1, 3), game(2, 14), game(3, 1), game(4, 14)];
+    const ids = (r: { games: GameCard[] }) => r.games.map((g) => g.gameId);
+    expect(gamesFor(games, new Set([14]), true, false)).toMatchObject({ regionalOnly: true });
+    expect(ids(gamesFor(games, new Set([14]), true, false))).toEqual([2, 4]);
+    expect(ids(gamesFor(games, new Set([14]), true, true))).toEqual([2, 4, 1, 3]);
+    expect(ids(gamesFor(games, new Set([14]), false, false))).toEqual([1, 2, 3, 4]);
+    // before the region's games exist (or if they fail to load), nobody is left with an empty list
+    expect(gamesFor(games, new Set<number>(), true, false)).toMatchObject({ regionalOnly: false });
+    expect(ids(gamesFor(games, new Set<number>(), true, false))).toEqual([1, 2, 3, 4]);
   });
 });
