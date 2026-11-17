@@ -1,0 +1,346 @@
+{
+ "category": "Romania",
+ "country": "RO",
+ "topics": [
+  {
+   "name": "Romania: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Romania?",
+     "a": "Bucharest",
+     "wrong": [
+      "Cluj-Napoca",
+      "Iași",
+      "Timișoara"
+     ],
+     "why": "It was once called 'Little Paris'."
+    },
+    {
+     "level": 1,
+     "q": "Which prince inspired the legend of Dracula?",
+     "a": "Vlad the Impaler",
+     "wrong": [
+      "Stephen the Great",
+      "Michael the Brave",
+      "Mircea the Elder"
+     ],
+     "why": "He ruled Wallachia in the 1400s."
+    },
+    {
+     "level": 1,
+     "q": "Which communist dictator was overthrown in 1989?",
+     "a": "Nicolae Ceaușescu",
+     "wrong": [
+      "Gheorghe Gheorghiu-Dej",
+      "Ion Iliescu",
+      "Petru Groza"
+     ],
+     "why": "He and his wife were executed on Christmas Day."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient people lived in today's Romania before the Romans?",
+     "a": "Dacians",
+     "wrong": [
+      "Celts",
+      "Goths",
+      "Huns"
+     ],
+     "why": "Their king Decebalus fought Rome."
+    },
+    {
+     "level": 1,
+     "q": "Which Roman emperor conquered Dacia in 106?",
+     "a": "Trajan",
+     "wrong": [
+      "Hadrian",
+      "Augustus",
+      "Marcus Aurelius"
+     ],
+     "why": "Trajan's Column in Rome shows the wars."
+    },
+    {
+     "level": 1,
+     "q": "Which gymnast scored the first perfect 10 at the Olympics, in 1976?",
+     "a": "Nadia Comăneci",
+     "wrong": [
+      "Simona Amânar",
+      "Ecaterina Szabo",
+      "Andreea Răducan"
+     ],
+     "why": "She was 14 years old."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Romania join the European Union?",
+     "a": "2007",
+     "wrong": [
+      "2004",
+      "1995",
+      "2013"
+     ],
+     "why": "Bulgaria joined at the same time."
+    },
+    {
+     "level": 2,
+     "q": "Which prince first united Wallachia, Moldavia and Transylvania in 1600?",
+     "a": "Michael the Brave",
+     "wrong": [
+      "Stephen the Great",
+      "Vlad III",
+      "Alexandru Ioan Cuza"
+     ],
+     "why": "The union lasted only a few months."
+    },
+    {
+     "level": 2,
+     "q": "Which Moldavian prince won many battles against the Ottomans?",
+     "a": "Stephen the Great",
+     "wrong": [
+      "Vlad III",
+      "Michael the Brave",
+      "Mircea the Elder"
+     ],
+     "why": "He built many painted monasteries."
+    },
+    {
+     "level": 2,
+     "q": "In which year did the 'Great Union' bring Transylvania into Romania?",
+     "a": "1918",
+     "wrong": [
+      "1859",
+      "1878",
+      "1947"
+     ],
+     "why": "1 December is National Day."
+    },
+    {
+     "level": 2,
+     "q": "Which revolution of December 1989 began in Timișoara?",
+     "a": "Romanian Revolution",
+     "wrong": [
+      "Velvet Revolution",
+      "Singing Revolution",
+      "Carnation Revolution"
+     ],
+     "why": "It ended communist rule."
+    },
+    {
+     "level": 2,
+     "q": "Who united Wallachia and Moldavia in 1859?",
+     "a": "Alexandru Ioan Cuza",
+     "wrong": [
+      "Carol I",
+      "Michael the Brave",
+      "Ferdinand I"
+     ],
+     "why": "This created modern Romania."
+    },
+    {
+     "level": 3,
+     "q": "Which German prince became Romania's first king in 1881?",
+     "a": "Carol I",
+     "wrong": [
+      "Ferdinand I",
+      "Carol II",
+      "Michael I"
+     ],
+     "why": "He built Peleș Castle."
+    },
+    {
+     "level": 3,
+     "q": "Which sculptor created 'The Endless Column'?",
+     "a": "Constantin Brâncuși",
+     "wrong": [
+      "Ion Jalea",
+      "George Enescu",
+      "Mircea Eliade"
+     ],
+     "why": "It stands in Târgu Jiu."
+    },
+    {
+     "level": 3,
+     "q": "Which Romanian-born writer won the 2009 Nobel Prize in Literature?",
+     "a": "Herta Müller",
+     "wrong": [
+      "Mircea Cărtărescu",
+      "Emil Cioran",
+      "Elie Wiesel"
+     ],
+     "why": "She wrote in German."
+    }
+   ]
+  },
+  {
+   "name": "Romania: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which region is famous for castles and the Dracula legend?",
+     "a": "Transylvania",
+     "wrong": [
+      "Wallachia",
+      "Moldavia",
+      "Dobruja"
+     ],
+     "why": "Its name means 'beyond the forest'."
+    },
+    {
+     "level": 1,
+     "q": "Which castle is often called 'Dracula's Castle'?",
+     "a": "Bran Castle",
+     "wrong": [
+      "Peleș Castle",
+      "Corvin Castle",
+      "Poenari Castle"
+     ],
+     "why": "It stands on a pass near Brașov."
+    },
+    {
+     "level": 1,
+     "q": "What is Romania's currency?",
+     "a": "Romanian leu",
+     "wrong": [
+      "Euro",
+      "Forint",
+      "Lev"
+     ],
+     "why": "Leu means 'lion'."
+    },
+    {
+     "level": 1,
+     "q": "Which mountains curve through Romania?",
+     "a": "Carpathian Mountains",
+     "wrong": [
+      "Alps",
+      "Balkan Mountains",
+      "Urals"
+     ],
+     "why": "They hold many brown bears."
+    },
+    {
+     "level": 1,
+     "q": "Which river forms a delta on Romania's Black Sea coast?",
+     "a": "Danube",
+     "wrong": [
+      "Prut",
+      "Mureș",
+      "Olt"
+     ],
+     "why": "The Danube Delta is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which huge government building in Bucharest is one of the heaviest in the world?",
+     "a": "Palace of the Parliament",
+     "wrong": [
+      "Romanian Athenaeum",
+      "CEC Palace",
+      "Arcul de Triumf"
+     ],
+     "why": "Ceaușescu ordered it built."
+    },
+    {
+     "level": 1,
+     "q": "Which cornmeal porridge is a Romanian staple?",
+     "a": "Mămăligă",
+     "wrong": [
+      "Couscous",
+      "Grits",
+      "Ugali"
+     ],
+     "why": "It is often served with cheese and sour cream."
+    },
+    {
+     "level": 2,
+     "q": "Which painted monasteries are in Bukovina?",
+     "a": "Painted Monasteries of Moldavia",
+     "wrong": [
+      "Meteora",
+      "Rila Monastery",
+      "Kizhi"
+     ],
+     "why": "Their outer walls are covered in frescoes."
+    },
+    {
+     "level": 2,
+     "q": "Which composer wrote the 'Romanian Rhapsodies'?",
+     "a": "George Enescu",
+     "wrong": [
+      "Ciprian Porumbescu",
+      "Béla Bartók",
+      "Franz Liszt"
+     ],
+     "why": "A music festival is named after him."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain road was called the 'best road in the world' by Top Gear?",
+     "a": "Transfăgărășan",
+     "wrong": [
+      "Transalpina",
+      "Stelvio Pass",
+      "Atlantic Road"
+     ],
+     "why": "It crosses the Făgăraș Mountains."
+    },
+    {
+     "level": 2,
+     "q": "Which cemetery in Săpânța has colourful, funny gravestones?",
+     "a": "Merry Cemetery",
+     "wrong": [
+      "Bellu Cemetery",
+      "Happy Graveyard of Sighet",
+      "Joyful Cemetery"
+     ],
+     "why": "Each cross has a painted poem."
+    },
+    {
+     "level": 2,
+     "q": "Which tennis player won Wimbledon in 2019?",
+     "a": "Simona Halep",
+     "wrong": [
+      "Irina-Camelia Begu",
+      "Sorana Cîrstea",
+      "Ilie Năstase"
+     ],
+     "why": "She beat Serena Williams in the final."
+    },
+    {
+     "level": 3,
+     "q": "Which royal castle in Sinaia was King Carol I's summer home?",
+     "a": "Peleș Castle",
+     "wrong": [
+      "Bran Castle",
+      "Corvin Castle",
+      "Cantacuzino Castle"
+     ],
+     "why": "It had electricity in the 1880s."
+    },
+    {
+     "level": 3,
+     "q": "Which Romanian invented an early jet-powered aircraft?",
+     "a": "Henri Coandă",
+     "wrong": [
+      "Aurel Vlaicu",
+      "Traian Vuia",
+      "Hermann Oberth"
+     ],
+     "why": "The Coandă effect is named after him."
+    },
+    {
+     "level": 3,
+     "q": "Which wooden churches in Maramureș are a UNESCO site?",
+     "a": "Wooden Churches of Maramureș",
+     "wrong": [
+      "Stave Churches of Norway",
+      "Carpathian Tserkvas of Ukraine",
+      "Kizhi churches"
+     ],
+     "why": "They have tall, thin spires."
+    }
+   ]
+  }
+ ]
+}

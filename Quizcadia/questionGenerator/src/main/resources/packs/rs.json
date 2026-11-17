@@ -1,0 +1,346 @@
+{
+ "category": "Serbia",
+ "country": "RS",
+ "topics": [
+  {
+   "name": "Serbia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Serbia?",
+     "a": "Belgrade",
+     "wrong": [
+      "Novi Sad",
+      "Niš",
+      "Kragujevac"
+     ],
+     "why": "It sits where the Sava meets the Danube."
+    },
+    {
+     "level": 1,
+     "q": "Which Serbian-American inventor developed alternating current systems?",
+     "a": "Nikola Tesla",
+     "wrong": [
+      "Mihajlo Pupin",
+      "Milutin Milanković",
+      "Thomas Edison"
+     ],
+     "why": "Belgrade's airport is named after him."
+    },
+    {
+     "level": 1,
+     "q": "Which 1389 battle against the Ottomans is central to Serbian identity?",
+     "a": "Battle of Kosovo",
+     "wrong": [
+      "Battle of Mohács",
+      "Battle of Maritsa",
+      "Battle of Varna"
+     ],
+     "why": "Prince Lazar died in it."
+    },
+    {
+     "level": 1,
+     "q": "Whose 1914 shooting of Archduke Franz Ferdinand started the First World War?",
+     "a": "Gavrilo Princip",
+     "wrong": [
+      "Nedeljko Čabrinović",
+      "Dragutin Dimitrijević",
+      "Muhamed Mehmedbašić"
+     ],
+     "why": "He was a Bosnian Serb."
+    },
+    {
+     "level": 1,
+     "q": "Which country did Serbia form with others in 1918?",
+     "a": "Kingdom of Serbs, Croats and Slovenes (later Yugoslavia)",
+     "wrong": [
+      "Austria-Hungary",
+      "Balkan League",
+      "Ottoman Empire"
+     ],
+     "why": "It was renamed Yugoslavia in 1929."
+    },
+    {
+     "level": 1,
+     "q": "Who led Yugoslavia from 1945 to 1980?",
+     "a": "Josip Broz Tito",
+     "wrong": [
+      "Slobodan Milošević",
+      "Aleksandar Ranković",
+      "Milovan Đilas"
+     ],
+     "why": "He kept Yugoslavia apart from the Soviet bloc."
+    },
+    {
+     "level": 1,
+     "q": "Which Serbian tennis player has won a record 24 Grand Slam titles?",
+     "a": "Novak Djokovic",
+     "wrong": [
+      "Janko Tipsarević",
+      "Viktor Troicki",
+      "Nenad Zimonjić"
+     ],
+     "why": "He also won Olympic gold in 2024."
+    },
+    {
+     "level": 2,
+     "q": "Which medieval king's empire was at its height in the 1300s?",
+     "a": "Stefan Dušan",
+     "wrong": [
+      "Stefan Nemanja",
+      "Prince Lazar",
+      "Milutin"
+     ],
+     "why": "He was crowned emperor in 1346."
+    },
+    {
+     "level": 2,
+     "q": "Which prince founded the Nemanjić dynasty in the 1100s?",
+     "a": "Stefan Nemanja",
+     "wrong": [
+      "Stefan Dušan",
+      "Saint Sava",
+      "Prince Lazar"
+     ],
+     "why": "His son Sava founded the Serbian Church."
+    },
+    {
+     "level": 2,
+     "q": "Which saint founded the independent Serbian Orthodox Church in 1219?",
+     "a": "Saint Sava",
+     "wrong": [
+      "Saint Lazar",
+      "Saint Simeon",
+      "Saint Nikolaj"
+     ],
+     "why": "A huge temple in Belgrade honours him."
+    },
+    {
+     "level": 2,
+     "q": "Which 1804 uprising began Serbia's fight for independence?",
+     "a": "First Serbian Uprising",
+     "wrong": [
+      "Second Serbian Uprising",
+      "Kosovo Uprising",
+      "Belgrade Revolt"
+     ],
+     "why": "Karađorđe led it."
+    },
+    {
+     "level": 2,
+     "q": "Which President was overthrown in 2000 and tried at The Hague?",
+     "a": "Slobodan Milošević",
+     "wrong": [
+      "Zoran Đinđić",
+      "Vojislav Koštunica",
+      "Boris Tadić"
+     ],
+     "why": "He died during his trial."
+    },
+    {
+     "level": 3,
+     "q": "Which scientist explained ice ages with cycles of Earth's orbit?",
+     "a": "Milutin Milanković",
+     "wrong": [
+      "Mihajlo Pupin",
+      "Nikola Tesla",
+      "Josif Pančić"
+     ],
+     "why": "The cycles are named after him."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Serbia gain full international recognition at the Congress of Berlin?",
+     "a": "1878",
+     "wrong": [
+      "1830",
+      "1912",
+      "1804"
+     ],
+     "why": "It became a kingdom in 1882."
+    },
+    {
+     "level": 3,
+     "q": "Which reformer standardised the Serbian language and Cyrillic alphabet?",
+     "a": "Vuk Karadžić",
+     "wrong": [
+      "Dositej Obradović",
+      "Petar Petrović Njegoš",
+      "Ivo Andrić"
+     ],
+     "why": "He followed the rule 'write as you speak'."
+    }
+   ]
+  },
+  {
+   "name": "Serbia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Serbia's currency?",
+     "a": "Serbian dinar",
+     "wrong": [
+      "Euro",
+      "Kuna",
+      "Lev"
+     ],
+     "why": "Its code is RSD."
+    },
+    {
+     "level": 1,
+     "q": "Which fortress overlooks the meeting of the Sava and Danube?",
+     "a": "Belgrade Fortress (Kalemegdan)",
+     "wrong": [
+      "Petrovaradin Fortress",
+      "Smederevo Fortress",
+      "Golubac Fortress"
+     ],
+     "why": "It has been fought over many times."
+    },
+    {
+     "level": 1,
+     "q": "Which grilled minced-meat rolls are a Serbian favourite?",
+     "a": "Ćevapi",
+     "wrong": [
+      "Sarma",
+      "Burek",
+      "Moussaka"
+     ],
+     "why": "They are served with onions and flatbread."
+    },
+    {
+     "level": 1,
+     "q": "Which music festival is held in Petrovaradin Fortress in Novi Sad?",
+     "a": "EXIT Festival",
+     "wrong": [
+      "Guča Trumpet Festival",
+      "Sziget",
+      "Open'er"
+     ],
+     "why": "It began in 2000 as a student protest."
+    },
+    {
+     "level": 1,
+     "q": "Which trumpet festival in a small village draws huge crowds?",
+     "a": "Guča Trumpet Festival",
+     "wrong": [
+      "EXIT Festival",
+      "Belgrade Beer Fest",
+      "Nišville"
+     ],
+     "why": "It celebrates brass bands."
+    },
+    {
+     "level": 1,
+     "q": "Which plum brandy is Serbia's national drink?",
+     "a": "Šljivovica (rakija)",
+     "wrong": [
+      "Ouzo",
+      "Grappa",
+      "Pálinka"
+     ],
+     "why": "UNESCO listed it in 2022."
+    },
+    {
+     "level": 1,
+     "q": "Which sport has Serbia won many world and Olympic titles in?",
+     "a": "Water polo",
+     "wrong": [
+      "Ice hockey",
+      "Cricket",
+      "Rugby"
+     ],
+     "why": "It won Olympic gold in 2016, 2020 and 2024."
+    },
+    {
+     "level": 2,
+     "q": "Which Nobel winner wrote 'The Bridge on the Drina'?",
+     "a": "Ivo Andrić",
+     "wrong": [
+      "Danilo Kiš",
+      "Miloš Crnjanski",
+      "Meša Selimović"
+     ],
+     "why": "He won the prize in 1961."
+    },
+    {
+     "level": 2,
+     "q": "Which national park on the Danube has the Iron Gates gorge?",
+     "a": "Đerdap",
+     "wrong": [
+      "Tara",
+      "Kopaonik",
+      "Fruška Gora"
+     ],
+     "why": "It is on the border with Romania."
+    },
+    {
+     "level": 2,
+     "q": "Which Serbian basketball star won NBA MVP three times?",
+     "a": "Nikola Jokić",
+     "wrong": [
+      "Vlade Divac",
+      "Peja Stojaković",
+      "Boban Marjanović"
+     ],
+     "why": "He plays for the Denver Nuggets."
+    },
+    {
+     "level": 2,
+     "q": "Which cheese spread like cream is eaten with bread?",
+     "a": "Kajmak",
+     "wrong": [
+      "Ajvar",
+      "Urnebes",
+      "Feta"
+     ],
+     "why": "It is made from milk skin."
+    },
+    {
+     "level": 2,
+     "q": "Which red pepper relish is popular in Serbia?",
+     "a": "Ajvar",
+     "wrong": [
+      "Kajmak",
+      "Harissa",
+      "Pesto"
+     ],
+     "why": "Families make it in autumn."
+    },
+    {
+     "level": 3,
+     "q": "Which medieval monastery with a white marble church is a UNESCO site?",
+     "a": "Studenica",
+     "wrong": [
+      "Sopoćani",
+      "Žiča",
+      "Manasija"
+     ],
+     "why": "Stefan Nemanja founded it."
+    },
+    {
+     "level": 3,
+     "q": "Which film director won two Palmes d'Or?",
+     "a": "Emir Kusturica",
+     "wrong": [
+      "Goran Paskaljević",
+      "Dušan Makavejev",
+      "Srdan Golubović"
+     ],
+     "why": "He won for 'When Father Was Away on Business' and 'Underground'."
+    },
+    {
+     "level": 3,
+     "q": "Which huge church in Belgrade is one of the largest Orthodox churches?",
+     "a": "Church of Saint Sava",
+     "wrong": [
+      "St Mark's Church",
+      "Cathedral of St Michael",
+      "Ružica Church"
+     ],
+     "why": "It stands on the Vračar plateau."
+    }
+   ]
+  }
+ ]
+}
