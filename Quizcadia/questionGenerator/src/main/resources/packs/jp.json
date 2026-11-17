@@ -1015,7 +1015,7 @@
      "a": "Kanji, hiragana and katakana",
      "wrong": [
       "Hangul and hanja",
-      "Kanji only",
+      "Pinyin and kanji",
       "Romaji and Cyrillic"
      ],
      "why": "Katakana is used for foreign words."

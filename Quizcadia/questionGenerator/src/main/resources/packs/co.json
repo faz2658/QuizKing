@@ -246,9 +246,9 @@
      "q": "Which two seas or oceans does Colombia have coasts on?",
      "a": "Pacific Ocean and Caribbean Sea",
      "wrong": [
-      "Pacific only",
+      "Indian Ocean and Pacific",
       "Atlantic and Indian",
-      "Caribbean only"
+      "Mediterranean Sea and Caribbean"
      ],
      "why": "It is the only South American country with both."
     },

@@ -1,132 +1,1092 @@
 {
-  "category": "Australia",
-  "country": "AU",
-  "topics": [
+ "category": "Australia",
+ "country": "AU",
+ "topics": [
+  {
+   "name": "Australia History",
+   "questions": [
     {
-      "name": "Australia History",
-      "questions": [
-        { "level": 1, "q": "Which British navigator charted Australia's east coast in 1770?", "a": "James Cook", "wrong": ["Arthur Phillip", "Matthew Flinders", "William Bligh"], "why": "He landed at Botany Bay." },
-        { "level": 1, "q": "In which year did the Australian colonies federate into one nation?", "a": "1901", "wrong": ["1788", "1851", "1915"], "why": "Federation took effect on 1 January 1901." },
-        { "level": 1, "q": "For how long have Aboriginal people lived in Australia?", "a": "At least 50,000 years", "wrong": ["About 5,000 years", "About 1,000 years", "About 500 years"], "why": "They are among the oldest continuous cultures on Earth." },
-        { "level": 1, "q": "Anzac Day remembers the 1915 landing at which place?", "a": "Gallipoli", "wrong": ["Kokoda", "Tobruk", "The Somme"], "why": "It is marked every 25 April." },
-        { "level": 1, "q": "Which bushranger wore homemade metal armour in his last stand?", "a": "Ned Kelly", "wrong": ["Captain Thunderbolt", "Ben Hall", "Captain Moonlite"], "why": "He was captured at Glenrowan in 1880." },
-        { "level": 1, "q": "Where did the First Fleet set up a British settlement in 1788?", "a": "Sydney", "wrong": ["Hobart", "Melbourne", "Brisbane"], "why": "It arrived at Sydney Cove on 26 January 1788." },
-        { "level": 1, "q": "What is 26 January called in Australia?", "a": "Australia Day", "wrong": ["Anzac Day", "Federation Day", "Foundation Day"], "why": "It marks the First Fleet's arrival; many call it Invasion Day." },
-        { "level": 2, "q": "Who was Australia's first Prime Minister?", "a": "Edmund Barton", "wrong": ["Alfred Deakin", "Robert Menzies", "John Curtin"], "why": "He served from 1901 to 1903." },
-        { "level": 2, "q": "Who commanded the First Fleet and became the first governor of New South Wales?", "a": "Arthur Phillip", "wrong": ["James Cook", "Lachlan Macquarie", "William Bligh"], "why": "He governed from 1788 to 1792." },
-        { "level": 2, "q": "The Eureka Stockade rebellion of 1854 took place on which goldfield?", "a": "Ballarat", "wrong": ["Bendigo", "Kalgoorlie", "Bathurst"], "why": "Miners rebelled against licence fees." },
-        { "level": 2, "q": "Which Prime Minister made the 2008 National Apology to the Stolen Generations?", "a": "Kevin Rudd", "wrong": ["John Howard", "Julia Gillard", "Paul Keating"], "why": "He made it in Parliament on 13 February 2008." },
-        { "level": 2, "q": "Who is Australia's longest-serving Prime Minister?", "a": "Robert Menzies", "wrong": ["John Howard", "Bob Hawke", "Malcolm Fraser"], "why": "He served over 18 years in total." },
-        { "level": 2, "q": "The 1967 referendum changed the Constitution so Aboriginal people would be counted in what?", "a": "The national census", "wrong": ["The electoral roll", "The armed forces", "The Senate"], "why": "Over 90% voted yes." },
-        { "level": 3, "q": "In which year did Parliament first sit in Canberra?", "a": "1927", "wrong": ["1901", "1913", "1945"], "why": "It met in Melbourne until then." },
-        { "level": 3, "q": "Which Second World War campaign in Papua is famous for its jungle track?", "a": "Kokoda", "wrong": ["Tobruk", "El Alamein", "Crete"], "why": "Australians fought there in 1942." },
-        { "level": 3, "q": "Which Prime Minister disappeared while swimming in 1967?", "a": "Harold Holt", "wrong": ["John Gorton", "William McMahon", "Ben Chifley"], "why": "He vanished off Cheviot Beach, Victoria." }
-      ]
+     "level": 1,
+     "q": "Which British navigator charted Australia's east coast in 1770?",
+     "a": "James Cook",
+     "wrong": [
+      "Arthur Phillip",
+      "Matthew Flinders",
+      "William Bligh"
+     ],
+     "why": "He landed at Botany Bay."
     },
     {
-      "name": "Australia Geography",
-      "questions": [
-        { "level": 1, "q": "What is the capital of Australia?", "a": "Canberra", "wrong": ["Sydney", "Melbourne", "Brisbane"], "why": "It was chosen as a compromise between Sydney and Melbourne." },
-        { "level": 1, "q": "What is the large sandstone rock in the Northern Territory called?", "a": "Uluru", "wrong": ["Kata Tjuta", "Wave Rock", "Mount Augustus"], "why": "It is sacred to the Anangu people." },
-        { "level": 1, "q": "Which is the world's largest coral reef system?", "a": "Great Barrier Reef", "wrong": ["Ningaloo Reef", "Belize Barrier Reef", "Great Southern Reef"], "why": "It stretches over 2,300 km off Queensland." },
-        { "level": 1, "q": "Which island state lies south of mainland Australia?", "a": "Tasmania", "wrong": ["Kangaroo Island", "K'gari", "Rottnest Island"], "why": "Its capital is Hobart." },
-        { "level": 1, "q": "What is Australia's largest city?", "a": "Sydney", "wrong": ["Melbourne", "Brisbane", "Perth"], "why": "Melbourne is close behind." },
-        { "level": 1, "q": "What is the capital of Western Australia?", "a": "Perth", "wrong": ["Fremantle", "Broome", "Darwin"], "why": "It is one of the most isolated big cities in the world." },
-        { "level": 1, "q": "What is the capital of Victoria?", "a": "Melbourne", "wrong": ["Geelong", "Ballarat", "Bendigo"], "why": "It was Australia's capital from 1901 to 1927." },
-        { "level": 2, "q": "What is Australia's longest river?", "a": "Murray River", "wrong": ["Darling River", "Murrumbidgee River", "Lachlan River"], "why": "It runs about 2,500 km to South Australia." },
-        { "level": 2, "q": "What is the highest mountain on mainland Australia?", "a": "Mount Kosciuszko", "wrong": ["Mount Townsend", "Mount Bogong", "Mount Ossa"], "why": "It is 2,228 m high, in New South Wales." },
-        { "level": 2, "q": "What is the capital of the Northern Territory?", "a": "Darwin", "wrong": ["Alice Springs", "Katherine", "Tennant Creek"], "why": "It is named after Charles Darwin." },
-        { "level": 2, "q": "Which is the world's largest sand island?", "a": "K'gari (Fraser Island)", "wrong": ["Moreton Island", "North Stradbroke Island", "Bribie Island"], "why": "It is off the Queensland coast." },
-        { "level": 2, "q": "Which is Australia's largest state by area?", "a": "Western Australia", "wrong": ["Queensland", "New South Wales", "South Australia"], "why": "It covers about a third of the country." },
-        { "level": 2, "q": "Which ocean lies to the west of Australia?", "a": "Indian Ocean", "wrong": ["Pacific Ocean", "Southern Ocean", "Atlantic Ocean"], "why": "The Pacific lies to the east." },
-        { "level": 3, "q": "Which sea separates Australia from New Zealand?", "a": "Tasman Sea", "wrong": ["Coral Sea", "Arafura Sea", "Timor Sea"], "why": "It is named after Abel Tasman." },
-        { "level": 3, "q": "Which strait separates Tasmania from the mainland?", "a": "Bass Strait", "wrong": ["Torres Strait", "Cook Strait", "Banks Strait"], "why": "It is about 240 km wide." },
-        { "level": 3, "q": "Kati Thanda–Lake Eyre, Australia's lowest point, is in which state?", "a": "South Australia", "wrong": ["Queensland", "Northern Territory", "New South Wales"], "why": "It only fills with water occasionally." }
-      ]
+     "level": 1,
+     "q": "In which year did the Australian colonies federate into one nation?",
+     "a": "1901",
+     "wrong": [
+      "1788",
+      "1851",
+      "1915"
+     ],
+     "why": "Federation took effect on 1 January 1901."
     },
     {
-      "name": "Australia Sport",
-      "questions": [
-        { "level": 1, "q": "Which horse race is called 'the race that stops the nation'?", "a": "Melbourne Cup", "wrong": ["Caulfield Cup", "Golden Slipper", "Cox Plate"], "why": "It is run on the first Tuesday of November." },
-        { "level": 1, "q": "Which cricketer had a Test batting average of 99.94?", "a": "Don Bradman", "wrong": ["Ricky Ponting", "Steve Waugh", "Steve Smith"], "why": "No one else has averaged over 62 in a long career." },
-        { "level": 1, "q": "Which football code is played on an oval and famous for high marks?", "a": "Australian rules football", "wrong": ["Rugby league", "Rugby union", "Soccer"], "why": "The AFL Grand Final is held at the MCG." },
-        { "level": 1, "q": "Which city hosted the 2000 Summer Olympics?", "a": "Sydney", "wrong": ["Melbourne", "Brisbane", "Adelaide"], "why": "Melbourne hosted in 1956, and Brisbane will in 2032." },
-        { "level": 1, "q": "Which Grand Slam tennis tournament is held in Melbourne?", "a": "Australian Open", "wrong": ["US Open", "Wimbledon", "French Open"], "why": "It is the first Grand Slam of each year." },
-        { "level": 1, "q": "Which swimmer was nicknamed the 'Thorpedo'?", "a": "Ian Thorpe", "wrong": ["Grant Hackett", "Kieren Perkins", "Michael Klim"], "why": "He won five Olympic gold medals." },
-        { "level": 1, "q": "Rugby league's State of Origin is played between Queensland and which state?", "a": "New South Wales", "wrong": ["Victoria", "South Australia", "Western Australia"], "why": "Players play for the state where they first played." },
-        { "level": 2, "q": "Which Aboriginal athlete lit the flame and won 400 m gold at Sydney 2000?", "a": "Cathy Freeman", "wrong": ["Nova Peris", "Evonne Goolagong", "Jana Pittman"], "why": "Over 110,000 people watched her race." },
-        { "level": 2, "q": "Which yacht won the America's Cup for Australia in 1983?", "a": "Australia II", "wrong": ["Southern Cross", "Kookaburra", "Gretel"], "why": "It ended the US's 132-year winning streak." },
-        { "level": 2, "q": "Which Australian won Wimbledon in 2021 and the Australian Open in 2022?", "a": "Ash Barty", "wrong": ["Sam Stosur", "Evonne Goolagong", "Daria Saville"], "why": "She retired while world number one." },
-        { "level": 2, "q": "Which cricket ground is known as 'the G'?", "a": "Melbourne Cricket Ground", "wrong": ["Sydney Cricket Ground", "The Gabba", "Adelaide Oval"], "why": "It holds about 100,000 people." },
-        { "level": 2, "q": "What is Australia's national rugby union team called?", "a": "Wallabies", "wrong": ["Kangaroos", "Socceroos", "Boomers"], "why": "The Kangaroos are the rugby league team." },
-        { "level": 2, "q": "Which Australian won the Formula One world championship in 1980?", "a": "Alan Jones", "wrong": ["Mark Webber", "Daniel Ricciardo", "Oscar Piastri"], "why": "He drove for Williams." },
-        { "level": 3, "q": "Who became Australia's first Formula One world champion, in 1959?", "a": "Jack Brabham", "wrong": ["Alan Jones", "Mark Webber", "Tim Schenken"], "why": "In 1966 he won in a car he built himself." },
-        { "level": 3, "q": "Which mare won the Melbourne Cup three years in a row, from 2003 to 2005?", "a": "Makybe Diva", "wrong": ["Phar Lap", "Winx", "Black Caviar"], "why": "No other horse has won it three times." },
-        { "level": 3, "q": "Which Australian has won the most Olympic gold medals?", "a": "Emma McKeon", "wrong": ["Ian Thorpe", "Dawn Fraser", "Ariarne Titmus"], "why": "She has won six, all in swimming." }
-      ]
+     "level": 1,
+     "q": "For how long have Aboriginal people lived in Australia?",
+     "a": "At least 50,000 years",
+     "wrong": [
+      "About 5,000 years",
+      "About 1,000 years",
+      "About 500 years"
+     ],
+     "why": "They are among the oldest continuous cultures on Earth."
     },
     {
-      "name": "Australia Film, TV & Music",
-      "questions": [
-        { "level": 1, "q": "Which band recorded 'Highway to Hell'?", "a": "AC/DC", "wrong": ["INXS", "Midnight Oil", "Cold Chisel"], "why": "It was released in 1979." },
-        { "level": 1, "q": "Which Melbourne-born singer had a hit with 'Can't Get You Out of My Head'?", "a": "Kylie Minogue", "wrong": ["Dannii Minogue", "Delta Goodrem", "Natalie Imbruglia"], "why": "It was released in 2001." },
-        { "level": 1, "q": "Which children's TV show is about a blue heeler puppy?", "a": "Bluey", "wrong": ["Peppa Pig", "Hey Duggee", "Play School"], "why": "It is made in Brisbane." },
-        { "level": 1, "q": "Who starred as Mick Dundee in 'Crocodile Dundee'?", "a": "Paul Hogan", "wrong": ["Hugh Jackman", "Bryan Brown", "Steve Irwin"], "why": "It was released in 1986." },
-        { "level": 1, "q": "Which children's band wears coloured skivvies?", "a": "The Wiggles", "wrong": ["Hi-5", "Bananas in Pyjamas", "The Teletubbies"], "why": "They formed in Sydney in 1991." },
-        { "level": 1, "q": "Which Australian actor played Wolverine in the X-Men films?", "a": "Hugh Jackman", "wrong": ["Chris Hemsworth", "Russell Crowe", "Heath Ledger"], "why": "He played the role for 17 years." },
-        { "level": 1, "q": "Which Australian actor plays Thor in Marvel films?", "a": "Chris Hemsworth", "wrong": ["Liam Hemsworth", "Hugh Jackman", "Sam Worthington"], "why": "He first played Thor in 2011." },
-        { "level": 2, "q": "Which long-running soap opera is set on Ramsay Street?", "a": "Neighbours", "wrong": ["Home and Away", "Prisoner", "A Country Practice"], "why": "It started in 1985." },
-        { "level": 2, "q": "Who directed 'Mad Max'?", "a": "George Miller", "wrong": ["Baz Luhrmann", "Peter Weir", "Phillip Noyce"], "why": "He also made 'Happy Feet'." },
-        { "level": 2, "q": "Which Adelaide-born singer had a hit with 'Chandelier'?", "a": "Sia", "wrong": ["Tones and I", "Courtney Barnett", "Missy Higgins"], "why": "She often performs with her face hidden." },
-        { "level": 2, "q": "Who directed 'Moulin Rouge!' and 'Elvis'?", "a": "Baz Luhrmann", "wrong": ["George Miller", "Peter Weir", "Gillian Armstrong"], "why": "He also made 'Strictly Ballroom'." },
-        { "level": 2, "q": "Which band recorded 'Beds Are Burning'?", "a": "Midnight Oil", "wrong": ["INXS", "Men at Work", "Crowded House"], "why": "It calls for land rights for Aboriginal people." },
-        { "level": 2, "q": "Which band had a 1981 hit with 'Down Under'?", "a": "Men at Work", "wrong": ["Air Supply", "Little River Band", "Hunters & Collectors"], "why": "It became an unofficial anthem for the 1983 America's Cup." },
-        { "level": 3, "q": "Which Banjo Paterson song is called Australia's unofficial anthem?", "a": "Waltzing Matilda", "wrong": ["Advance Australia Fair", "I Still Call Australia Home", "Down Under"], "why": "He wrote it in 1895." },
-        { "level": 3, "q": "Which Australian actress won the Best Actress Oscar for 'The Hours'?", "a": "Nicole Kidman", "wrong": ["Cate Blanchett", "Naomi Watts", "Margot Robbie"], "why": "She played Virginia Woolf." },
-        { "level": 3, "q": "Which Australian author won the Booker Prize twice?", "a": "Peter Carey", "wrong": ["Thomas Keneally", "Richard Flanagan", "Patrick White"], "why": "For 'Oscar and Lucinda' and 'True History of the Kelly Gang'." }
-      ]
+     "level": 1,
+     "q": "Anzac Day remembers the 1915 landing at which place?",
+     "a": "Gallipoli",
+     "wrong": [
+      "Kokoda",
+      "Tobruk",
+      "The Somme"
+     ],
+     "why": "It is marked every 25 April."
     },
     {
-      "name": "Australia Food & Traditions",
-      "questions": [
-        { "level": 1, "q": "Which dark yeast spread is an Australian favourite?", "a": "Vegemite", "wrong": ["Marmite", "Promite", "Bovril"], "why": "It was created in Melbourne in 1922." },
-        { "level": 1, "q": "Which meringue dessert topped with fruit do Australia and New Zealand both claim?", "a": "Pavlova", "wrong": ["Lamington", "Trifle", "Eton mess"], "why": "It is named after ballerina Anna Pavlova." },
-        { "level": 1, "q": "Which sponge cake is coated in chocolate and coconut?", "a": "Lamington", "wrong": ["Pavlova", "Anzac biscuit", "Tim Tam"], "why": "It is said to be named after Lord Lamington." },
-        { "level": 1, "q": "Which oat biscuit is linked to soldiers of the First World War?", "a": "Anzac biscuit", "wrong": ["Tim Tam", "Iced VoVo", "Monte Carlo"], "why": "It keeps well, so it could be posted overseas." },
-        { "level": 1, "q": "What do Australians call a barbecue?", "a": "Barbie", "wrong": ["Arvo", "Esky", "Ute"], "why": "'Arvo' means afternoon." },
-        { "level": 1, "q": "What is an 'esky'?", "a": "A portable cool box", "wrong": ["A pick-up truck", "A swimming costume", "A sun hat"], "why": "The name comes from a brand." },
-        { "level": 1, "q": "What are 'thongs' in Australian English?", "a": "Flip-flops", "wrong": ["Underwear", "Sunglasses", "Shorts"], "why": "They are the summer footwear of choice." },
-        { "level": 2, "q": "Where do Australians famously buy a 'democracy sausage'?", "a": "At polling places on election day", "wrong": ["At the cricket", "At the beach", "At Parliament House"], "why": "Schools sell them to raise money." },
-        { "level": 2, "q": "Which coin-tossing game may legally be played in pubs on Anzac Day?", "a": "Two-up", "wrong": ["Pokies", "Housie", "Crown and anchor"], "why": "Soldiers played it in the First World War." },
-        { "level": 2, "q": "Which Sydney festival ends with a parade along Oxford Street?", "a": "Sydney Gay and Lesbian Mardi Gras", "wrong": ["Vivid Sydney", "Sydney Festival", "City2Surf"], "why": "It began in 1978." },
-        { "level": 2, "q": "Which winter festival covers Sydney's buildings in light projections?", "a": "Vivid Sydney", "wrong": ["Dark Mofo", "White Night", "Splendour in the Grass"], "why": "The Opera House sails are its best-known canvas." },
-        { "level": 2, "q": "What is a 'ute' in Australia?", "a": "A pick-up truck", "wrong": ["A cool box", "A swimming costume", "A sandwich"], "why": "It is short for utility vehicle." },
-        { "level": 2, "q": "Which nut is native to Australia?", "a": "Macadamia", "wrong": ["Cashew", "Brazil nut", "Pistachio"], "why": "It grows in Queensland and New South Wales." },
-        { "level": 2, "q": "What does 'bush tucker' mean?", "a": "Food native to Australia", "wrong": ["A camping stove", "An outback pub", "A kind of damper bread"], "why": "It includes wattleseed, finger limes and quandongs." },
-        { "level": 3, "q": "On which day does the Sydney to Hobart Yacht Race start?", "a": "Boxing Day", "wrong": ["New Year's Day", "Australia Day", "Christmas Eve"], "why": "It covers about 630 nautical miles." },
-        { "level": 3, "q": "Which Hobart festival is held around the winter solstice?", "a": "Dark Mofo", "wrong": ["Vivid Sydney", "Woodford Folk Festival", "Splendour in the Grass"], "why": "It ends with a nude swim in the cold Derwent River." }
-      ]
+     "level": 1,
+     "q": "Which bushranger wore homemade metal armour in his last stand?",
+     "a": "Ned Kelly",
+     "wrong": [
+      "Captain Thunderbolt",
+      "Ben Hall",
+      "Captain Moonlite"
+     ],
+     "why": "He was captured at Glenrowan in 1880."
     },
     {
-      "name": "Australia General Knowledge",
-      "questions": [
-        { "level": 1, "q": "Which bird appears with the kangaroo on Australia's coat of arms?", "a": "Emu", "wrong": ["Kookaburra", "Black swan", "Cockatoo"], "why": "Both are native animals, chosen for the 1912 coat of arms." },
-        { "level": 1, "q": "What is Australia's currency?", "a": "Australian dollar", "wrong": ["Pound", "Euro", "Rand"], "why": "It replaced the pound in 1966." },
-        { "level": 1, "q": "Which Sydney building has a roof shaped like sails?", "a": "Sydney Opera House", "wrong": ["Sydney Town Hall", "Sydney Tower", "Queen Victoria Building"], "why": "Danish architect Jørn Utzon designed it." },
-        { "level": 1, "q": "Which egg-laying mammal has a bill like a duck?", "a": "Platypus", "wrong": ["Echidna", "Wombat", "Quokka"], "why": "The echidna also lays eggs." },
-        { "level": 1, "q": "How many states does Australia have?", "a": "6", "wrong": ["7", "8", "5"], "why": "It also has two main mainland territories." },
-        { "level": 1, "q": "Which animal eats eucalyptus leaves and sleeps up to 20 hours a day?", "a": "Koala", "wrong": ["Kangaroo", "Wombat", "Possum"], "why": "Eucalyptus gives it very little energy." },
-        { "level": 1, "q": "What is Australia's national anthem?", "a": "Advance Australia Fair", "wrong": ["Waltzing Matilda", "God Save the King", "I Am Australian"], "why": "It became the anthem in 1984." },
-        { "level": 2, "q": "What is Australia's national floral emblem?", "a": "Golden wattle", "wrong": ["Waratah", "Kangaroo paw", "Sturt's desert pea"], "why": "Its colours inspired the green and gold." },
-        { "level": 2, "q": "Which Australian co-discovered that bacteria cause most stomach ulcers?", "a": "Barry Marshall", "wrong": ["Howard Florey", "Fiona Wood", "Elizabeth Blackburn"], "why": "He shared the 2005 Nobel Prize with Robin Warren." },
-        { "level": 2, "q": "What did Australian scientist David Warren invent?", "a": "The black box flight recorder", "wrong": ["The pacemaker", "The cochlear implant", "Wi-Fi"], "why": "He came up with the idea in the 1950s." },
-        { "level": 2, "q": "What is the upper house of Australia's federal Parliament called?", "a": "The Senate", "wrong": ["The House of Lords", "The House of Representatives", "The Legislative Council"], "why": "Each state elects 12 senators." },
-        { "level": 2, "q": "Voting in Australian federal elections is what?", "a": "Compulsory", "wrong": ["Optional", "Online only", "Only for landowners"], "why": "It has been compulsory since 1924." },
-        { "level": 2, "q": "Hobart is the capital of which state?", "a": "Tasmania", "wrong": ["Victoria", "South Australia", "Queensland"], "why": "It is Australia's second-oldest capital." },
-        { "level": 3, "q": "Which Australian helped turn penicillin into a usable medicine?", "a": "Howard Florey", "wrong": ["Alexander Fleming", "Barry Marshall", "Macfarlane Burnet"], "why": "He shared the 1945 Nobel Prize." },
-        { "level": 3, "q": "Which Australian surgeon pioneered the multi-channel cochlear implant?", "a": "Graeme Clark", "wrong": ["Victor Chang", "Fiona Stanley", "Gustav Nossal"], "why": "The first one was implanted in 1978." },
-        { "level": 3, "q": "How many points are there on the Commonwealth Star on Australia's flag?", "a": "7", "wrong": ["6", "5", "8"], "why": "Six for the states and one for the territories." }
-      ]
+     "level": 1,
+     "q": "Where did the First Fleet set up a British settlement in 1788?",
+     "a": "Sydney",
+     "wrong": [
+      "Hobart",
+      "Melbourne",
+      "Brisbane"
+     ],
+     "why": "It arrived at Sydney Cove on 26 January 1788."
+    },
+    {
+     "level": 1,
+     "q": "What is 26 January called in Australia?",
+     "a": "Australia Day",
+     "wrong": [
+      "Anzac Day",
+      "Federation Day",
+      "Foundation Day"
+     ],
+     "why": "It marks the First Fleet's arrival; many call it Invasion Day."
+    },
+    {
+     "level": 2,
+     "q": "Who was Australia's first Prime Minister?",
+     "a": "Edmund Barton",
+     "wrong": [
+      "Alfred Deakin",
+      "Robert Menzies",
+      "John Curtin"
+     ],
+     "why": "He served from 1901 to 1903."
+    },
+    {
+     "level": 2,
+     "q": "Who commanded the First Fleet and became the first governor of New South Wales?",
+     "a": "Arthur Phillip",
+     "wrong": [
+      "James Cook",
+      "Lachlan Macquarie",
+      "William Bligh"
+     ],
+     "why": "He governed from 1788 to 1792."
+    },
+    {
+     "level": 2,
+     "q": "The Eureka Stockade rebellion of 1854 took place on which goldfield?",
+     "a": "Ballarat",
+     "wrong": [
+      "Bendigo",
+      "Kalgoorlie",
+      "Bathurst"
+     ],
+     "why": "Miners rebelled against licence fees."
+    },
+    {
+     "level": 2,
+     "q": "Which Prime Minister made the 2008 National Apology to the Stolen Generations?",
+     "a": "Kevin Rudd",
+     "wrong": [
+      "John Howard",
+      "Julia Gillard",
+      "Paul Keating"
+     ],
+     "why": "He made it in Parliament on 13 February 2008."
+    },
+    {
+     "level": 2,
+     "q": "Who is Australia's longest-serving Prime Minister?",
+     "a": "Robert Menzies",
+     "wrong": [
+      "John Howard",
+      "Bob Hawke",
+      "Malcolm Fraser"
+     ],
+     "why": "He served over 18 years in total."
+    },
+    {
+     "level": 2,
+     "q": "The 1967 referendum changed the Constitution so Aboriginal people would be counted in what?",
+     "a": "The national census",
+     "wrong": [
+      "The electoral roll",
+      "The armed forces",
+      "The Senate"
+     ],
+     "why": "Over 90% voted yes."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Parliament first sit in Canberra?",
+     "a": "1927",
+     "wrong": [
+      "1901",
+      "1913",
+      "1945"
+     ],
+     "why": "It met in Melbourne until then."
+    },
+    {
+     "level": 3,
+     "q": "Which Second World War campaign in Papua is famous for its jungle track?",
+     "a": "Kokoda",
+     "wrong": [
+      "Tobruk",
+      "El Alamein",
+      "Crete"
+     ],
+     "why": "Australians fought there in 1942."
+    },
+    {
+     "level": 3,
+     "q": "Which Prime Minister disappeared while swimming in 1967?",
+     "a": "Harold Holt",
+     "wrong": [
+      "John Gorton",
+      "William McMahon",
+      "Ben Chifley"
+     ],
+     "why": "He vanished off Cheviot Beach, Victoria."
     }
-  ]
+   ]
+  },
+  {
+   "name": "Australia Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Australia?",
+     "a": "Canberra",
+     "wrong": [
+      "Sydney",
+      "Melbourne",
+      "Brisbane"
+     ],
+     "why": "It was chosen as a compromise between Sydney and Melbourne."
+    },
+    {
+     "level": 1,
+     "q": "What is the large sandstone rock in the Northern Territory called?",
+     "a": "Uluru",
+     "wrong": [
+      "Kata Tjuta",
+      "Wave Rock",
+      "Mount Augustus"
+     ],
+     "why": "It is sacred to the Anangu people."
+    },
+    {
+     "level": 1,
+     "q": "Which is the world's largest coral reef system?",
+     "a": "Great Barrier Reef",
+     "wrong": [
+      "Ningaloo Reef",
+      "Belize Barrier Reef",
+      "Great Southern Reef"
+     ],
+     "why": "It stretches over 2,300 km off Queensland."
+    },
+    {
+     "level": 1,
+     "q": "Which island state lies south of mainland Australia?",
+     "a": "Tasmania",
+     "wrong": [
+      "Kangaroo Island",
+      "K'gari",
+      "Rottnest Island"
+     ],
+     "why": "Its capital is Hobart."
+    },
+    {
+     "level": 1,
+     "q": "What is Australia's largest city?",
+     "a": "Sydney",
+     "wrong": [
+      "Melbourne",
+      "Brisbane",
+      "Perth"
+     ],
+     "why": "Melbourne is close behind."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of Western Australia?",
+     "a": "Perth",
+     "wrong": [
+      "Fremantle",
+      "Broome",
+      "Darwin"
+     ],
+     "why": "It is one of the most isolated big cities in the world."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of Victoria?",
+     "a": "Melbourne",
+     "wrong": [
+      "Geelong",
+      "Ballarat",
+      "Bendigo"
+     ],
+     "why": "It was Australia's capital from 1901 to 1927."
+    },
+    {
+     "level": 2,
+     "q": "What is Australia's longest river?",
+     "a": "Murray River",
+     "wrong": [
+      "Darling River",
+      "Murrumbidgee River",
+      "Lachlan River"
+     ],
+     "why": "It runs about 2,500 km to South Australia."
+    },
+    {
+     "level": 2,
+     "q": "What is the highest mountain on mainland Australia?",
+     "a": "Mount Kosciuszko",
+     "wrong": [
+      "Mount Townsend",
+      "Mount Bogong",
+      "Mount Ossa"
+     ],
+     "why": "It is 2,228 m high, in New South Wales."
+    },
+    {
+     "level": 2,
+     "q": "What is the capital of the Northern Territory?",
+     "a": "Darwin",
+     "wrong": [
+      "Alice Springs",
+      "Katherine",
+      "Tennant Creek"
+     ],
+     "why": "It is named after Charles Darwin."
+    },
+    {
+     "level": 2,
+     "q": "Which is the world's largest sand island?",
+     "a": "K'gari (Fraser Island)",
+     "wrong": [
+      "Moreton Island",
+      "North Stradbroke Island",
+      "Bribie Island"
+     ],
+     "why": "It is off the Queensland coast."
+    },
+    {
+     "level": 2,
+     "q": "Which is Australia's largest state by area?",
+     "a": "Western Australia",
+     "wrong": [
+      "Queensland",
+      "New South Wales",
+      "South Australia"
+     ],
+     "why": "It covers about a third of the country."
+    },
+    {
+     "level": 2,
+     "q": "Which ocean lies to the west of Australia?",
+     "a": "Indian Ocean",
+     "wrong": [
+      "Pacific Ocean",
+      "Southern Ocean",
+      "Atlantic Ocean"
+     ],
+     "why": "The Pacific lies to the east."
+    },
+    {
+     "level": 3,
+     "q": "Which sea separates Australia from New Zealand?",
+     "a": "Tasman Sea",
+     "wrong": [
+      "Coral Sea",
+      "Arafura Sea",
+      "Timor Sea"
+     ],
+     "why": "It is named after Abel Tasman."
+    },
+    {
+     "level": 3,
+     "q": "Which strait separates Tasmania from the mainland?",
+     "a": "Bass Strait",
+     "wrong": [
+      "Torres Strait",
+      "Cook Strait",
+      "Banks Strait"
+     ],
+     "why": "It is about 240 km wide."
+    },
+    {
+     "level": 3,
+     "q": "Kati Thanda–Lake Eyre, Australia's lowest point, is in which state?",
+     "a": "South Australia",
+     "wrong": [
+      "Queensland",
+      "Northern Territory",
+      "New South Wales"
+     ],
+     "why": "It only fills with water occasionally."
+    }
+   ]
+  },
+  {
+   "name": "Australia Sport",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which horse race is called 'the race that stops the nation'?",
+     "a": "Melbourne Cup",
+     "wrong": [
+      "Caulfield Cup",
+      "Golden Slipper",
+      "Cox Plate"
+     ],
+     "why": "It is run on the first Tuesday of November."
+    },
+    {
+     "level": 1,
+     "q": "Which cricketer had a Test batting average of 99.94?",
+     "a": "Don Bradman",
+     "wrong": [
+      "Ricky Ponting",
+      "Steve Waugh",
+      "Steve Smith"
+     ],
+     "why": "No one else has averaged over 62 in a long career."
+    },
+    {
+     "level": 1,
+     "q": "Which football code is played on an oval and famous for high marks?",
+     "a": "Australian rules football",
+     "wrong": [
+      "Rugby league",
+      "Rugby union",
+      "Soccer"
+     ],
+     "why": "The AFL Grand Final is held at the MCG."
+    },
+    {
+     "level": 1,
+     "q": "Which city hosted the 2000 Summer Olympics?",
+     "a": "Sydney",
+     "wrong": [
+      "Melbourne",
+      "Brisbane",
+      "Adelaide"
+     ],
+     "why": "Melbourne hosted in 1956, and Brisbane will in 2032."
+    },
+    {
+     "level": 1,
+     "q": "Which Grand Slam tennis tournament is held in Melbourne?",
+     "a": "Australian Open",
+     "wrong": [
+      "US Open",
+      "Wimbledon",
+      "French Open"
+     ],
+     "why": "It is the first Grand Slam of each year."
+    },
+    {
+     "level": 1,
+     "q": "Which swimmer was nicknamed the 'Thorpedo'?",
+     "a": "Ian Thorpe",
+     "wrong": [
+      "Grant Hackett",
+      "Kieren Perkins",
+      "Michael Klim"
+     ],
+     "why": "He won five Olympic gold medals."
+    },
+    {
+     "level": 1,
+     "q": "Rugby league's State of Origin is played between Queensland and which state?",
+     "a": "New South Wales",
+     "wrong": [
+      "Victoria",
+      "South Australia",
+      "Western Australia"
+     ],
+     "why": "Players play for the state where they first played."
+    },
+    {
+     "level": 2,
+     "q": "Which Aboriginal athlete lit the flame and won 400 m gold at Sydney 2000?",
+     "a": "Cathy Freeman",
+     "wrong": [
+      "Nova Peris",
+      "Evonne Goolagong",
+      "Jana Pittman"
+     ],
+     "why": "Over 110,000 people watched her race."
+    },
+    {
+     "level": 2,
+     "q": "Which yacht won the America's Cup for Australia in 1983?",
+     "a": "Australia II",
+     "wrong": [
+      "Southern Cross",
+      "Kookaburra",
+      "Gretel"
+     ],
+     "why": "It ended the US's 132-year winning streak."
+    },
+    {
+     "level": 2,
+     "q": "Which Australian won Wimbledon in 2021 and the Australian Open in 2022?",
+     "a": "Ash Barty",
+     "wrong": [
+      "Sam Stosur",
+      "Evonne Goolagong",
+      "Daria Saville"
+     ],
+     "why": "She retired while world number one."
+    },
+    {
+     "level": 2,
+     "q": "Which cricket ground is known as 'the G'?",
+     "a": "Melbourne Cricket Ground",
+     "wrong": [
+      "Sydney Cricket Ground",
+      "The Gabba",
+      "Adelaide Oval"
+     ],
+     "why": "It holds about 100,000 people."
+    },
+    {
+     "level": 2,
+     "q": "What is Australia's national rugby union team called?",
+     "a": "Wallabies",
+     "wrong": [
+      "Kangaroos",
+      "Socceroos",
+      "Boomers"
+     ],
+     "why": "The Kangaroos are the rugby league team."
+    },
+    {
+     "level": 2,
+     "q": "Which Australian won the Formula One world championship in 1980?",
+     "a": "Alan Jones",
+     "wrong": [
+      "Mark Webber",
+      "Daniel Ricciardo",
+      "Oscar Piastri"
+     ],
+     "why": "He drove for Williams."
+    },
+    {
+     "level": 3,
+     "q": "Who became Australia's first Formula One world champion, in 1959?",
+     "a": "Jack Brabham",
+     "wrong": [
+      "Alan Jones",
+      "Mark Webber",
+      "Tim Schenken"
+     ],
+     "why": "In 1966 he won in a car he built himself."
+    },
+    {
+     "level": 3,
+     "q": "Which mare won the Melbourne Cup three years in a row, from 2003 to 2005?",
+     "a": "Makybe Diva",
+     "wrong": [
+      "Phar Lap",
+      "Winx",
+      "Black Caviar"
+     ],
+     "why": "No other horse has won it three times."
+    },
+    {
+     "level": 3,
+     "q": "Which Australian has won the most Olympic gold medals?",
+     "a": "Emma McKeon",
+     "wrong": [
+      "Ian Thorpe",
+      "Dawn Fraser",
+      "Ariarne Titmus"
+     ],
+     "why": "She has won six, all in swimming."
+    }
+   ]
+  },
+  {
+   "name": "Australia Film, TV & Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which band recorded 'Highway to Hell'?",
+     "a": "AC/DC",
+     "wrong": [
+      "INXS",
+      "Midnight Oil",
+      "Cold Chisel"
+     ],
+     "why": "It was released in 1979."
+    },
+    {
+     "level": 1,
+     "q": "Which Melbourne-born singer had a hit with 'Can't Get You Out of My Head'?",
+     "a": "Kylie Minogue",
+     "wrong": [
+      "Dannii Minogue",
+      "Delta Goodrem",
+      "Natalie Imbruglia"
+     ],
+     "why": "It was released in 2001."
+    },
+    {
+     "level": 1,
+     "q": "Which children's TV show is about a blue heeler puppy?",
+     "a": "Bluey",
+     "wrong": [
+      "Peppa Pig",
+      "Hey Duggee",
+      "Play School"
+     ],
+     "why": "It is made in Brisbane."
+    },
+    {
+     "level": 1,
+     "q": "Who starred as Mick Dundee in 'Crocodile Dundee'?",
+     "a": "Paul Hogan",
+     "wrong": [
+      "Hugh Jackman",
+      "Bryan Brown",
+      "Steve Irwin"
+     ],
+     "why": "It was released in 1986."
+    },
+    {
+     "level": 1,
+     "q": "Which children's band wears coloured skivvies?",
+     "a": "The Wiggles",
+     "wrong": [
+      "Hi-5",
+      "Bananas in Pyjamas",
+      "The Teletubbies"
+     ],
+     "why": "They formed in Sydney in 1991."
+    },
+    {
+     "level": 1,
+     "q": "Which Australian actor played Wolverine in the X-Men films?",
+     "a": "Hugh Jackman",
+     "wrong": [
+      "Chris Hemsworth",
+      "Russell Crowe",
+      "Heath Ledger"
+     ],
+     "why": "He played the role for 17 years."
+    },
+    {
+     "level": 1,
+     "q": "Which Australian actor plays Thor in Marvel films?",
+     "a": "Chris Hemsworth",
+     "wrong": [
+      "Liam Hemsworth",
+      "Hugh Jackman",
+      "Sam Worthington"
+     ],
+     "why": "He first played Thor in 2011."
+    },
+    {
+     "level": 2,
+     "q": "Which long-running soap opera is set on Ramsay Street?",
+     "a": "Neighbours",
+     "wrong": [
+      "Home and Away",
+      "Prisoner",
+      "A Country Practice"
+     ],
+     "why": "It started in 1985."
+    },
+    {
+     "level": 2,
+     "q": "Who directed 'Mad Max'?",
+     "a": "George Miller",
+     "wrong": [
+      "Baz Luhrmann",
+      "Peter Weir",
+      "Phillip Noyce"
+     ],
+     "why": "He also made 'Happy Feet'."
+    },
+    {
+     "level": 2,
+     "q": "Which Adelaide-born singer had a hit with 'Chandelier'?",
+     "a": "Sia",
+     "wrong": [
+      "Tones and I",
+      "Courtney Barnett",
+      "Missy Higgins"
+     ],
+     "why": "She often performs with her face hidden."
+    },
+    {
+     "level": 2,
+     "q": "Who directed 'Moulin Rouge!' and 'Elvis'?",
+     "a": "Baz Luhrmann",
+     "wrong": [
+      "George Miller",
+      "Peter Weir",
+      "Gillian Armstrong"
+     ],
+     "why": "He also made 'Strictly Ballroom'."
+    },
+    {
+     "level": 2,
+     "q": "Which band recorded 'Beds Are Burning'?",
+     "a": "Midnight Oil",
+     "wrong": [
+      "INXS",
+      "Men at Work",
+      "Crowded House"
+     ],
+     "why": "It calls for land rights for Aboriginal people."
+    },
+    {
+     "level": 2,
+     "q": "Which band had a 1981 hit with 'Down Under'?",
+     "a": "Men at Work",
+     "wrong": [
+      "Air Supply",
+      "Little River Band",
+      "Hunters & Collectors"
+     ],
+     "why": "It became an unofficial anthem for the 1983 America's Cup."
+    },
+    {
+     "level": 3,
+     "q": "Which Banjo Paterson song is called Australia's unofficial anthem?",
+     "a": "Waltzing Matilda",
+     "wrong": [
+      "Advance Australia Fair",
+      "I Still Call Australia Home",
+      "Down Under"
+     ],
+     "why": "He wrote it in 1895."
+    },
+    {
+     "level": 3,
+     "q": "Which Australian actress won the Best Actress Oscar for 'The Hours'?",
+     "a": "Nicole Kidman",
+     "wrong": [
+      "Cate Blanchett",
+      "Naomi Watts",
+      "Margot Robbie"
+     ],
+     "why": "She played Virginia Woolf."
+    },
+    {
+     "level": 3,
+     "q": "Which Australian author won the Booker Prize twice?",
+     "a": "Peter Carey",
+     "wrong": [
+      "Thomas Keneally",
+      "Richard Flanagan",
+      "Patrick White"
+     ],
+     "why": "For 'Oscar and Lucinda' and 'True History of the Kelly Gang'."
+    }
+   ]
+  },
+  {
+   "name": "Australia Food & Traditions",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which dark yeast spread is an Australian favourite?",
+     "a": "Vegemite",
+     "wrong": [
+      "Marmite",
+      "Promite",
+      "Bovril"
+     ],
+     "why": "It was created in Melbourne in 1922."
+    },
+    {
+     "level": 1,
+     "q": "Which meringue dessert topped with fruit do Australia and New Zealand both claim?",
+     "a": "Pavlova",
+     "wrong": [
+      "Lamington",
+      "Trifle",
+      "Eton mess"
+     ],
+     "why": "It is named after ballerina Anna Pavlova."
+    },
+    {
+     "level": 1,
+     "q": "Which sponge cake is coated in chocolate and coconut?",
+     "a": "Lamington",
+     "wrong": [
+      "Pavlova",
+      "Anzac biscuit",
+      "Tim Tam"
+     ],
+     "why": "It is said to be named after Lord Lamington."
+    },
+    {
+     "level": 1,
+     "q": "Which oat biscuit is linked to soldiers of the First World War?",
+     "a": "Anzac biscuit",
+     "wrong": [
+      "Tim Tam",
+      "Iced VoVo",
+      "Monte Carlo"
+     ],
+     "why": "It keeps well, so it could be posted overseas."
+    },
+    {
+     "level": 1,
+     "q": "What do Australians call a barbecue?",
+     "a": "Barbie",
+     "wrong": [
+      "Arvo",
+      "Esky",
+      "Ute"
+     ],
+     "why": "'Arvo' means afternoon."
+    },
+    {
+     "level": 1,
+     "q": "What is an 'esky'?",
+     "a": "A portable cool box",
+     "wrong": [
+      "A pick-up truck",
+      "A swimming costume",
+      "A sun hat"
+     ],
+     "why": "The name comes from a brand."
+    },
+    {
+     "level": 1,
+     "q": "What are 'thongs' in Australian English?",
+     "a": "Flip-flops",
+     "wrong": [
+      "Underwear",
+      "Sunglasses",
+      "Shorts"
+     ],
+     "why": "They are the summer footwear of choice."
+    },
+    {
+     "level": 2,
+     "q": "Where do Australians famously buy a 'democracy sausage'?",
+     "a": "At polling places on election day",
+     "wrong": [
+      "At the cricket",
+      "At the beach",
+      "At Parliament House"
+     ],
+     "why": "Schools sell them to raise money."
+    },
+    {
+     "level": 2,
+     "q": "Which coin-tossing game may legally be played in pubs on Anzac Day?",
+     "a": "Two-up",
+     "wrong": [
+      "Pokies",
+      "Housie",
+      "Crown and anchor"
+     ],
+     "why": "Soldiers played it in the First World War."
+    },
+    {
+     "level": 2,
+     "q": "Which Sydney festival ends with a parade along Oxford Street?",
+     "a": "Sydney Gay and Lesbian Mardi Gras",
+     "wrong": [
+      "Vivid Sydney",
+      "Sydney Festival",
+      "City2Surf"
+     ],
+     "why": "It began in 1978."
+    },
+    {
+     "level": 2,
+     "q": "Which winter festival covers Sydney's buildings in light projections?",
+     "a": "Vivid Sydney",
+     "wrong": [
+      "Dark Mofo",
+      "White Night",
+      "Splendour in the Grass"
+     ],
+     "why": "The Opera House sails are its best-known canvas."
+    },
+    {
+     "level": 2,
+     "q": "What is a 'ute' in Australia?",
+     "a": "A pick-up truck",
+     "wrong": [
+      "A cool box",
+      "A swimming costume",
+      "A sandwich"
+     ],
+     "why": "It is short for utility vehicle."
+    },
+    {
+     "level": 2,
+     "q": "Which nut is native to Australia?",
+     "a": "Macadamia",
+     "wrong": [
+      "Cashew",
+      "Brazil nut",
+      "Pistachio"
+     ],
+     "why": "It grows in Queensland and New South Wales."
+    },
+    {
+     "level": 2,
+     "q": "What does 'bush tucker' mean?",
+     "a": "Food native to Australia",
+     "wrong": [
+      "A camping stove",
+      "An outback pub",
+      "A kind of damper bread"
+     ],
+     "why": "It includes wattleseed, finger limes and quandongs."
+    },
+    {
+     "level": 3,
+     "q": "On which day does the Sydney to Hobart Yacht Race start?",
+     "a": "Boxing Day",
+     "wrong": [
+      "New Year's Day",
+      "Australia Day",
+      "Christmas Eve"
+     ],
+     "why": "It covers about 630 nautical miles."
+    },
+    {
+     "level": 3,
+     "q": "Which Hobart festival is held around the winter solstice?",
+     "a": "Dark Mofo",
+     "wrong": [
+      "Vivid Sydney",
+      "Woodford Folk Festival",
+      "Splendour in the Grass"
+     ],
+     "why": "It ends with a nude swim in the cold Derwent River."
+    }
+   ]
+  },
+  {
+   "name": "Australia General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which bird appears with the kangaroo on Australia's coat of arms?",
+     "a": "Emu",
+     "wrong": [
+      "Kookaburra",
+      "Black swan",
+      "Cockatoo"
+     ],
+     "why": "Both are native animals, chosen for the 1912 coat of arms."
+    },
+    {
+     "level": 1,
+     "q": "What is Australia's currency?",
+     "a": "Australian dollar",
+     "wrong": [
+      "Pound",
+      "Euro",
+      "Rand"
+     ],
+     "why": "It replaced the pound in 1966."
+    },
+    {
+     "level": 1,
+     "q": "Which Sydney building has a roof shaped like sails?",
+     "a": "Sydney Opera House",
+     "wrong": [
+      "Sydney Town Hall",
+      "Sydney Tower",
+      "Queen Victoria Building"
+     ],
+     "why": "Danish architect Jørn Utzon designed it."
+    },
+    {
+     "level": 1,
+     "q": "Which egg-laying mammal has a bill like a duck?",
+     "a": "Platypus",
+     "wrong": [
+      "Echidna",
+      "Wombat",
+      "Quokka"
+     ],
+     "why": "The echidna also lays eggs."
+    },
+    {
+     "level": 1,
+     "q": "How many states does Australia have?",
+     "a": "6",
+     "wrong": [
+      "7",
+      "8",
+      "5"
+     ],
+     "why": "It also has two main mainland territories."
+    },
+    {
+     "level": 1,
+     "q": "Which animal eats eucalyptus leaves and sleeps up to 20 hours a day?",
+     "a": "Koala",
+     "wrong": [
+      "Kangaroo",
+      "Wombat",
+      "Possum"
+     ],
+     "why": "Eucalyptus gives it very little energy."
+    },
+    {
+     "level": 1,
+     "q": "What is Australia's national anthem?",
+     "a": "Advance Australia Fair",
+     "wrong": [
+      "Waltzing Matilda",
+      "God Save the King",
+      "I Am Australian"
+     ],
+     "why": "It became the anthem in 1984."
+    },
+    {
+     "level": 2,
+     "q": "What is Australia's national floral emblem?",
+     "a": "Golden wattle",
+     "wrong": [
+      "Waratah",
+      "Kangaroo paw",
+      "Sturt's desert pea"
+     ],
+     "why": "Its colours inspired the green and gold."
+    },
+    {
+     "level": 2,
+     "q": "Which Australian co-discovered that bacteria cause most stomach ulcers?",
+     "a": "Barry Marshall",
+     "wrong": [
+      "Howard Florey",
+      "Fiona Wood",
+      "Elizabeth Blackburn"
+     ],
+     "why": "He shared the 2005 Nobel Prize with Robin Warren."
+    },
+    {
+     "level": 2,
+     "q": "What did Australian scientist David Warren invent?",
+     "a": "The black box flight recorder",
+     "wrong": [
+      "The pacemaker",
+      "The cochlear implant",
+      "Wi-Fi"
+     ],
+     "why": "He came up with the idea in the 1950s."
+    },
+    {
+     "level": 2,
+     "q": "What is the upper house of Australia's federal Parliament called?",
+     "a": "The Senate",
+     "wrong": [
+      "The House of Lords",
+      "The House of Representatives",
+      "The Legislative Council"
+     ],
+     "why": "Each state elects 12 senators."
+    },
+    {
+     "level": 2,
+     "q": "Voting in Australian federal elections is what?",
+     "a": "Compulsory",
+     "wrong": [
+      "Optional",
+      "Only for landowners and men",
+      "Only for landowners"
+     ],
+     "why": "It has been compulsory since 1924."
+    },
+    {
+     "level": 2,
+     "q": "Hobart is the capital of which state?",
+     "a": "Tasmania",
+     "wrong": [
+      "Victoria",
+      "South Australia",
+      "Queensland"
+     ],
+     "why": "It is Australia's second-oldest capital."
+    },
+    {
+     "level": 3,
+     "q": "Which Australian helped turn penicillin into a usable medicine?",
+     "a": "Howard Florey",
+     "wrong": [
+      "Alexander Fleming",
+      "Barry Marshall",
+      "Macfarlane Burnet"
+     ],
+     "why": "He shared the 1945 Nobel Prize."
+    },
+    {
+     "level": 3,
+     "q": "Which Australian surgeon pioneered the multi-channel cochlear implant?",
+     "a": "Graeme Clark",
+     "wrong": [
+      "Victor Chang",
+      "Fiona Stanley",
+      "Gustav Nossal"
+     ],
+     "why": "The first one was implanted in 1978."
+    },
+    {
+     "level": 3,
+     "q": "How many points are there on the Commonwealth Star on Australia's flag?",
+     "a": "7",
+     "wrong": [
+      "6",
+      "5",
+      "8"
+     ],
+     "why": "Six for the states and one for the territories."
+    }
+   ]
+  }
+ ]
 }

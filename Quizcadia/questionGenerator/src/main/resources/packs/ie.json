@@ -970,9 +970,9 @@
      "q": "What is the Irish parliament called?",
      "a": "Oireachtas",
      "wrong": [
-      "Dáil only",
+      "Bundestag",
       "Stormont",
-      "Seanad only"
+      "Senedd"
      ],
      "why": "It is made up of the President, the Dáil and the Seanad."
     },
