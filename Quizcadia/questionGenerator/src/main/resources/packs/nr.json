@@ -1,0 +1,346 @@
+{
+ "category": "Nauru",
+ "country": "NR",
+ "topics": [
+  {
+   "name": "Nauru: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Nauru?",
+     "a": "Nauru has no official capital",
+     "wrong": [
+      "Yaren",
+      "Aiwo",
+      "Denigomodu"
+     ],
+     "why": "Yaren is the seat of government."
+    },
+    {
+     "level": 1,
+     "q": "What is the smallest island country in the world?",
+     "a": "Nauru",
+     "wrong": [
+      "Tuvalu",
+      "Palau",
+      "Malta"
+     ],
+     "why": "It is about 21 square kilometres."
+    },
+    {
+     "level": 1,
+     "q": "Which mineral made Nauru rich in the 1970s?",
+     "a": "Phosphate",
+     "wrong": [
+      "Gold",
+      "Copper",
+      "Nickel"
+     ],
+     "why": "It came from ancient bird droppings."
+    },
+    {
+     "level": 1,
+     "q": "Which currency does Nauru use?",
+     "a": "Australian dollar",
+     "wrong": [
+      "Nauruan pound",
+      "New Zealand dollar",
+      "Tala"
+     ],
+     "why": "It has never had its own currency."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Nauru become independent?",
+     "a": "1968",
+     "wrong": [
+      "1978",
+      "1958",
+      "1988"
+     ],
+     "why": "It had been run by Australia."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is Nauru in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It is just south of the equator."
+    },
+    {
+     "level": 1,
+     "q": "Which country runs an offshore detention centre on Nauru?",
+     "a": "Australia",
+     "wrong": [
+      "New Zealand",
+      "United States",
+      "Japan"
+     ],
+     "why": "It holds asylum seekers."
+    },
+    {
+     "level": 2,
+     "q": "What did a British captain name Nauru in 1798?",
+     "a": "Pleasant Island",
+     "wrong": [
+      "Phosphate Island",
+      "Coral Isle",
+      "Paradise Island"
+     ],
+     "why": "Germany annexed it in 1888."
+    },
+    {
+     "level": 2,
+     "q": "Which country ruled Nauru before 1914?",
+     "a": "Germany",
+     "wrong": [
+      "Japan",
+      "United Kingdom",
+      "France"
+     ],
+     "why": "Australia took over in the First World War."
+    },
+    {
+     "level": 2,
+     "q": "Who was Nauru's first President?",
+     "a": "Hammer DeRoburt",
+     "wrong": [
+      "Bernard Dowiyogo",
+      "Marcus Stephen",
+      "Baron Waqa"
+     ],
+     "why": "He led it for most of its first 20 years."
+    },
+    {
+     "level": 2,
+     "q": "Which country occupied Nauru in the Second World War?",
+     "a": "Japan",
+     "wrong": [
+      "Germany",
+      "United States",
+      "France"
+     ],
+     "why": "Many Nauruans were deported to Chuuk."
+    },
+    {
+     "level": 2,
+     "q": "What problem does Nauru have with its people's health?",
+     "a": "Very high rates of obesity",
+     "wrong": [
+      "Malaria",
+      "Altitude sickness",
+      "Frostbite"
+     ],
+     "why": "Imported food changed diets."
+    },
+    {
+     "level": 3,
+     "q": "Which weightlifter later became President of Nauru?",
+     "a": "Marcus Stephen",
+     "wrong": [
+      "Hammer DeRoburt",
+      "Baron Waqa",
+      "David Adeang"
+     ],
+     "why": "He won Commonwealth golds."
+    },
+    {
+     "level": 3,
+     "q": "Which country did Nauru switch recognition to from Taiwan in 2024?",
+     "a": "China",
+     "wrong": [
+      "Japan",
+      "South Korea",
+      "Australia"
+     ],
+     "why": "It was one of Taiwan's last allies."
+    },
+    {
+     "level": 3,
+     "q": "Who became President of Nauru in 2023?",
+     "a": "David Adeang",
+     "wrong": [
+      "Russ Kun",
+      "Lionel Aingimea",
+      "Baron Waqa"
+     ],
+     "why": "He took office in October."
+    }
+   ]
+  },
+  {
+   "name": "Nauru: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What covers much of Nauru's interior after mining?",
+     "a": "Jagged limestone pinnacles",
+     "wrong": [
+      "Rainforest",
+      "Lakes",
+      "Sand dunes"
+     ],
+     "why": "About 80% of the land was mined."
+    },
+    {
+     "level": 1,
+     "q": "What is the main language of Nauru?",
+     "a": "Nauruan",
+     "wrong": [
+      "Samoan",
+      "Tongan",
+      "Fijian"
+     ],
+     "why": "English is widely used."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is the most popular on Nauru?",
+     "a": "Australian rules football",
+     "wrong": [
+      "Rugby league",
+      "Cricket",
+      "Ice hockey"
+     ],
+     "why": "It was brought from Australia."
+    },
+    {
+     "level": 1,
+     "q": "Which sport has won Nauru many Commonwealth medals?",
+     "a": "Weightlifting",
+     "wrong": [
+      "Swimming",
+      "Boxing",
+      "Cycling"
+     ],
+     "why": "It is a small country with strong lifters."
+    },
+    {
+     "level": 1,
+     "q": "How long is the ring road around Nauru?",
+     "a": "About 19 km",
+     "wrong": [
+      "About 100 km",
+      "About 5 km",
+      "About 50 km"
+     ],
+     "why": "You can drive round in 30 minutes."
+    },
+    {
+     "level": 1,
+     "q": "Which lagoon in the south is a popular spot?",
+     "a": "Buada Lagoon",
+     "wrong": [
+      "Blue Lagoon",
+      "Marovo Lagoon",
+      "Lau Lagoon"
+     ],
+     "why": "It is the only inland water."
+    },
+    {
+     "level": 1,
+     "q": "What is Nauru's highest point?",
+     "a": "Command Ridge",
+     "wrong": [
+      "Mount Wilhelm",
+      "Mount Tapochau",
+      "Mount Kosciuszko"
+     ],
+     "why": "It is about 70 m high."
+    },
+    {
+     "level": 2,
+     "q": "Which fish do Nauruans traditionally farm in lagoons?",
+     "a": "Milkfish (ibija)",
+     "wrong": [
+      "Salmon",
+      "Trout",
+      "Catfish"
+     ],
+     "why": "They were kept in ponds."
+    },
+    {
+     "level": 2,
+     "q": "Which bird did Nauruans traditionally catch and tame?",
+     "a": "Frigatebird",
+     "wrong": [
+      "Penguin",
+      "Parrot",
+      "Eagle"
+     ],
+     "why": "It was a sport."
+    },
+    {
+     "level": 2,
+     "q": "Which Japanese gun remains on Command Ridge?",
+     "a": "Second World War gun",
+     "wrong": [
+      "A cannon from Napoleon",
+      "A pirate cannon",
+      "A German tank"
+     ],
+     "why": "The Japanese built defences there."
+    },
+    {
+     "level": 2,
+     "q": "How many tribes are Nauruans traditionally split into?",
+     "a": "Twelve",
+     "wrong": [
+      "Two",
+      "Five",
+      "Twenty"
+     ],
+     "why": "The flag's star has 12 points."
+    },
+    {
+     "level": 2,
+     "q": "Which airline is Nauru's national carrier?",
+     "a": "Nauru Airlines",
+     "wrong": [
+      "Fiji Airways",
+      "Pacific Blue",
+      "Air Niugini"
+     ],
+     "why": "It flies to Brisbane."
+    },
+    {
+     "level": 3,
+     "q": "Which trust fund was meant to save phosphate money for the future?",
+     "a": "Nauru Phosphate Royalties Trust",
+     "wrong": [
+      "Nauru Sovereign Fund",
+      "Pacific Trust",
+      "Coral Fund"
+     ],
+     "why": "Much of it was lost in bad investments."
+    },
+    {
+     "level": 3,
+     "q": "Which 1990s scheme made Nauru a centre for offshore banking?",
+     "a": "Offshore banks and shell companies",
+     "wrong": [
+      "Online casinos",
+      "Space launches",
+      "Shipping registry"
+     ],
+     "why": "Hundreds of banks were registered."
+    },
+    {
+     "level": 3,
+     "q": "What does the star on Nauru's flag show?",
+     "a": "Nauru's place just south of the equator",
+     "wrong": [
+      "Twelve islands",
+      "The President",
+      "A lighthouse"
+     ],
+     "why": "The yellow line is the equator."
+    }
+   ]
+  }
+ ]
+}
