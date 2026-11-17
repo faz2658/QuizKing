@@ -1,0 +1,132 @@
+{
+  "category": "Nepal",
+  "country": "NP",
+  "topics": [
+    {
+      "name": "Nepal History",
+      "questions": [
+        { "level": 1, "q": "Which king unified Nepal in the 18th century?", "a": "Prithvi Narayan Shah", "wrong": ["Jung Bahadur Rana", "Tribhuvan", "Mahendra"], "why": "He took the Kathmandu Valley in 1768." },
+        { "level": 1, "q": "In which year did Nepal become a republic?", "a": "2008", "wrong": ["1990", "2006", "2015"], "why": "The monarchy was abolished in May 2008." },
+        { "level": 1, "q": "In which Nepali town was the Buddha born?", "a": "Lumbini", "wrong": ["Bodh Gaya", "Sarnath", "Pokhara"], "why": "Emperor Ashoka put up a pillar there." },
+        { "level": 1, "q": "Which earthquake devastated Nepal in April 2015?", "a": "Gorkha earthquake", "wrong": ["Bihar earthquake", "Kangra earthquake", "Dolakha earthquake"], "why": "It killed nearly 9,000 people." },
+        { "level": 1, "q": "Who first reached the summit of Everest, in 1953?", "a": "Tenzing Norgay and Edmund Hillary", "wrong": ["George Mallory and Andrew Irvine", "Reinhold Messner and Peter Habeler", "Tenzing Norgay and George Lowe"], "why": "They reached the top on 29 May 1953." },
+        { "level": 1, "q": "Which Nepali soldiers have long served in the British and Indian armies?", "a": "Gurkhas", "wrong": ["Sherpas", "Rajputs", "Sikhs"], "why": "Their curved knife is the khukuri." },
+        { "level": 1, "q": "Which family of hereditary prime ministers ruled Nepal from 1846 to 1951?", "a": "The Ranas", "wrong": ["The Shahs", "The Mallas", "The Licchavis"], "why": "Jung Bahadur Rana founded the line." },
+        { "level": 2, "q": "Which dynasty built many temples in the Kathmandu Valley's Durbar Squares?", "a": "Malla", "wrong": ["Rana", "Shah", "Licchavi"], "why": "Malla kings ruled from the 12th to the 18th century." },
+        { "level": 2, "q": "Which 1816 treaty ended the Anglo-Nepalese War?", "a": "Treaty of Sugauli", "wrong": ["Treaty of Lahore", "Treaty of Allahabad", "Treaty of Kathmandu"], "why": "Nepal lost land in the west and south." },
+        { "level": 2, "q": "In which year did the royal massacre at Narayanhiti Palace happen?", "a": "2001", "wrong": ["1990", "2006", "1999"], "why": "King Birendra and much of his family were killed." },
+        { "level": 2, "q": "Which king helped end Rana rule and bring democracy in 1951?", "a": "Tribhuvan", "wrong": ["Mahendra", "Birendra", "Gyanendra"], "why": "Kathmandu's airport is named after him." },
+        { "level": 2, "q": "In which year was Nepal's current constitution adopted?", "a": "2015", "wrong": ["2008", "1990", "2007"], "why": "It made Nepal a federal republic." },
+        { "level": 2, "q": "Which ancient valley city is called the 'City of Devotees'?", "a": "Bhaktapur", "wrong": ["Patan", "Kirtipur", "Banepa"], "why": "Its Durbar Square has the 55-Window Palace." },
+        { "level": 3, "q": "Which temple has Nepal's oldest dated inscription, from AD 464?", "a": "Changu Narayan", "wrong": ["Pashupatinath", "Swayambhunath", "Boudhanath"], "why": "King Manadeva set it up." },
+        { "level": 3, "q": "Who was Nepal's last king?", "a": "Gyanendra", "wrong": ["Birendra", "Dipendra", "Mahendra"], "why": "He reigned until 2008." },
+        { "level": 3, "q": "Which Nepali princess married the Tibetan king Songtsen Gampo?", "a": "Bhrikuti", "wrong": ["Yasodhara", "Maya Devi", "Sita"], "why": "She is said to have taken Buddhist images to Tibet." }
+      ]
+    },
+    {
+      "name": "Nepal Geography",
+      "questions": [
+        { "level": 1, "q": "In which valley is Nepal's capital?", "a": "Kathmandu Valley", "wrong": ["Pokhara Valley", "Langtang Valley", "Chitwan Valley"], "why": "It also holds Patan and Bhaktapur." },
+        { "level": 1, "q": "Which lakeside city is the gateway to the Annapurna mountains?", "a": "Pokhara", "wrong": ["Kathmandu", "Bhaktapur", "Lumbini"], "why": "It sits on Phewa Lake." },
+        { "level": 1, "q": "Which national park is most famous for its one-horned rhinos?", "a": "Chitwan", "wrong": ["Sagarmatha", "Langtang", "Shey Phoksundo"], "why": "It was Nepal's first national park, in 1973." },
+        { "level": 1, "q": "Which two countries border Nepal?", "a": "India and China", "wrong": ["India and Bhutan", "China and Bangladesh", "India and Pakistan"], "why": "Nepal is landlocked." },
+        { "level": 1, "q": "How many of the world's ten highest mountains are in Nepal?", "a": "8", "wrong": ["5", "10", "3"], "why": "Including Everest and Kangchenjunga." },
+        { "level": 1, "q": "What is Mount Everest called in Nepali?", "a": "Sagarmatha", "wrong": ["Chomolungma", "Kangchenjunga", "Annapurna"], "why": "Chomolungma is its Tibetan name." },
+        { "level": 1, "q": "What are the lowland plains of southern Nepal called?", "a": "Terai", "wrong": ["Deccan", "Pahad", "Himal"], "why": "They are hot, flat and farmed." },
+        { "level": 2, "q": "Which is the world's third-highest mountain, on the Nepal–India border?", "a": "Kangchenjunga", "wrong": ["Lhotse", "Makalu", "Cho Oyu"], "why": "It is 8,586 m high." },
+        { "level": 2, "q": "Which was the first 8,000 m mountain ever climbed, in 1950?", "a": "Annapurna I", "wrong": ["Everest", "Dhaulagiri", "Manaslu"], "why": "A French team led by Maurice Herzog climbed it." },
+        { "level": 2, "q": "What is Nepal's largest lake?", "a": "Rara Lake", "wrong": ["Phewa Lake", "Begnas Lake", "Tilicho Lake"], "why": "It is in remote Mugu district." },
+        { "level": 2, "q": "What is Nepal's longest river?", "a": "Karnali", "wrong": ["Koshi", "Gandaki", "Bagmati"], "why": "It rises in Tibet." },
+        { "level": 2, "q": "Which river flows past the Pashupatinath temple?", "a": "Bagmati", "wrong": ["Koshi", "Trishuli", "Seti"], "why": "Cremations take place on its banks there." },
+        { "level": 2, "q": "How many provinces does Nepal have?", "a": "7", "wrong": ["5", "14", "9"], "why": "They were created by the 2015 constitution." },
+        { "level": 3, "q": "Which lake near Manang is one of the highest lakes of its size in the world?", "a": "Tilicho Lake", "wrong": ["Rara Lake", "Gosaikunda", "Phoksundo Lake"], "why": "It lies at about 4,900 m." },
+        { "level": 3, "q": "Which is Nepal's deepest lake?", "a": "Phoksundo Lake", "wrong": ["Rara Lake", "Tilicho Lake", "Phewa Lake"], "why": "It is famous for its turquoise water." },
+        { "level": 3, "q": "Which peak overlooking Pokhara has never officially been climbed to the top?", "a": "Machapuchare", "wrong": ["Ama Dablam", "Annapurna South", "Manaslu"], "why": "It is sacred and closed to climbers." }
+      ]
+    },
+    {
+      "name": "Nepal Sport",
+      "questions": [
+        { "level": 1, "q": "Which sport was declared Nepal's national sport in 2017?", "a": "Volleyball", "wrong": ["Dandi biyo", "Cricket", "Football"], "why": "Dandi biyo had long been seen as the national game." },
+        { "level": 1, "q": "Which Nepali leg-spinner became the first from Nepal to play in the IPL?", "a": "Sandeep Lamichhane", "wrong": ["Paras Khadka", "Gyanendra Malla", "Rohit Paudel"], "why": "He played for Delhi in 2018." },
+        { "level": 1, "q": "Which climber, 'Nimsdai', climbed all 14 eight-thousanders in about six months?", "a": "Nirmal Purja", "wrong": ["Kami Rita Sherpa", "Apa Sherpa", "Mingma Gyalje Sherpa"], "why": "He did it in 2019." },
+        { "level": 1, "q": "Which Sherpa holds the record for the most Everest summits?", "a": "Kami Rita Sherpa", "wrong": ["Apa Sherpa", "Phurba Tashi", "Tenzing Norgay"], "why": "He has summited over 30 times." },
+        { "level": 1, "q": "Who captained Nepal's cricket team during its rise from 2009 to 2019?", "a": "Paras Khadka", "wrong": ["Sandeep Lamichhane", "Gyanendra Malla", "Binod Das"], "why": "He scored Nepal's first ODI century." },
+        { "level": 1, "q": "Which traditional Nepali game is played with a long stick and a short one?", "a": "Dandi biyo", "wrong": ["Kho-kho", "Kabaddi", "Elle"], "why": "It is like gilli-danda in India." },
+        { "level": 1, "q": "Which Kathmandu stadium is Nepal's main football ground?", "a": "Dasharath Rangasala", "wrong": ["TU International Cricket Ground", "Halchowk Stadium", "Pokhara Stadium"], "why": "It is named after the martyr Dasharath Chand." },
+        { "level": 2, "q": "In which year did Nepal gain ODI status?", "a": "2018", "wrong": ["2014", "2010", "2022"], "why": "They played their first ODI against the Netherlands." },
+        { "level": 2, "q": "At the 2023 Asian Games, Nepal scored a record 314 in a T20 against which team?", "a": "Mongolia", "wrong": ["Maldives", "Bhutan", "Hong Kong"], "why": "It was the first T20 international total over 300." },
+        { "level": 2, "q": "Who hit a nine-ball fifty in that record match?", "a": "Dipendra Singh Airee", "wrong": ["Kushal Malla", "Rohit Paudel", "Aasif Sheikh"], "why": "Kushal Malla hit a 34-ball century in the same innings." },
+        { "level": 2, "q": "Which cricket ground in Kirtipur is Nepal's main venue?", "a": "TU International Cricket Ground", "wrong": ["Dasharath Rangasala", "Mulpani Cricket Ground", "Pokhara Stadium"], "why": "Fans watch from the grassy slopes." },
+        { "level": 2, "q": "Which franchise T20 league did Nepal launch in 2024?", "a": "Nepal Premier League", "wrong": ["Everest Premier League", "Kathmandu Super League", "Himalayan T20"], "why": "Eight teams took part in the first season." },
+        { "level": 2, "q": "Kushal Malla's 2023 century against Mongolia came off how many balls?", "a": "34", "wrong": ["45", "28", "50"], "why": "It was then the fastest T20 international hundred." },
+        { "level": 3, "q": "Who was the first Nepali woman to climb Everest, in 1993?", "a": "Pasang Lhamu Sherpa", "wrong": ["Lhakpa Sherpa", "Maya Sherpa", "Purnima Shrestha"], "why": "She died on the way down and is a national hero." },
+        { "level": 3, "q": "Which Nepali woman has climbed Everest more times than any other woman?", "a": "Lhakpa Sherpa", "wrong": ["Pasang Lhamu Sherpa", "Maya Sherpa", "Dawa Yangzum Sherpa"], "why": "She has summited ten times." },
+        { "level": 3, "q": "At which Olympics did Nepal first compete?", "a": "Tokyo 1964", "wrong": ["Rome 1960", "Mexico City 1968", "Moscow 1980"], "why": "It was the first Olympics held in Asia." }
+      ]
+    },
+    {
+      "name": "Nepal Film, TV & Music",
+      "questions": [
+        { "level": 1, "q": "Who wrote the much-loved Nepali poem 'Muna Madan'?", "a": "Laxmi Prasad Devkota", "wrong": ["Bhanubhakta Acharya", "Parijat", "Lekhnath Paudyal"], "why": "He is called 'Mahakavi', the great poet." },
+        { "level": 1, "q": "Which 'Adikavi' translated the Ramayana into Nepali?", "a": "Bhanubhakta Acharya", "wrong": ["Laxmi Prasad Devkota", "Motiram Bhatta", "Lekhnath Paudyal"], "why": "His birthday is celebrated as Bhanu Jayanti." },
+        { "level": 1, "q": "What is Nepal's Kathmandu-based film industry nicknamed?", "a": "Kollywood", "wrong": ["Dhallywood", "Lollywood", "Tollywood"], "why": "K is for Kathmandu." },
+        { "level": 1, "q": "Which singer is called 'Swar Samrat', the emperor of voice?", "a": "Narayan Gopal", "wrong": ["Deep Shrestha", "Prem Dhoj Pradhan", "Bacchu Kailash"], "why": "He sang hundreds of modern Nepali songs." },
+        { "level": 1, "q": "Which Buddhist nun is internationally famous for her singing?", "a": "Ani Choying Drolma", "wrong": ["Aruna Lama", "Tara Devi", "Kunti Moktan"], "why": "She uses her earnings for girls' education." },
+        { "level": 1, "q": "'Resham Firiri' is a famous Nepali what?", "a": "Folk song", "wrong": ["Film", "Dance", "Festival"], "why": "It is about the heart fluttering like silk in the wind." },
+        { "level": 1, "q": "Which hand drum is central to Nepali folk music?", "a": "Madal", "wrong": ["Tabla", "Dhol", "Damaru"], "why": "It is played on both ends." },
+        { "level": 2, "q": "What is 'lok dohori'?", "a": "A sung contest between two sides", "wrong": ["A masked dance", "A kind of drum", "A historical film"], "why": "Singers trade witty verses back and forth." },
+        { "level": 2, "q": "Who wrote the novel 'Shirishko Phool' ('The Blue Mimosa')?", "a": "Parijat", "wrong": ["B. P. Koirala", "Laxmi Prasad Devkota", "Diamond Shumsher Rana"], "why": "It won the Madan Puraskar in 1965." },
+        { "level": 2, "q": "Which singer was called the 'Nightingale of the Hills'?", "a": "Aruna Lama", "wrong": ["Tara Devi", "Ani Choying Drolma", "Kunti Moktan"], "why": "She came from Darjeeling." },
+        { "level": 2, "q": "Which folk-rock band is led by Amrit Gurung?", "a": "Nepathya", "wrong": ["1974 AD", "The Elements", "Albatross"], "why": "It formed in 1990." },
+        { "level": 2, "q": "Which bowed folk fiddle is traditionally played by the Gandharva community?", "a": "Sarangi", "wrong": ["Madal", "Murchunga", "Bansuri"], "why": "Gandharvas were wandering musicians who carried news." },
+        { "level": 2, "q": "Which 2016 Nepali film by Deepak Rauniyar premiered at the Venice Film Festival?", "a": "White Sun", "wrong": ["Loot", "Kalo Pothi", "Pashupati Prasad"], "why": "It is set after the civil war." },
+        { "level": 3, "q": "Which 2012 heist film by Nischal Basnet helped revive Nepali cinema?", "a": "Loot", "wrong": ["Kabaddi", "Chhakka Panja", "Pashupati Prasad"], "why": "It was a surprise box-office hit." },
+        { "level": 3, "q": "Which Oscar-nominated 1999 film was shot in Nepal's Dolpo region?", "a": "Himalaya", "wrong": ["Seven Years in Tibet", "Kundun", "The Cup"], "why": "Eric Valli directed it with local cast members." },
+        { "level": 3, "q": "Which former Prime Minister also wrote the novel 'Sumnima'?", "a": "B. P. Koirala", "wrong": ["Girija Prasad Koirala", "Sushil Koirala", "Sher Bahadur Deuba"], "why": "He was Nepal's first elected Prime Minister." }
+      ]
+    },
+    {
+      "name": "Nepal Food & Traditions",
+      "questions": [
+        { "level": 1, "q": "Which is Nepal's biggest Hindu festival, lasting about 15 days?", "a": "Dashain", "wrong": ["Tihar", "Holi", "Teej"], "why": "Elders give tika and blessings." },
+        { "level": 1, "q": "Which festival of lights honours crows, dogs and cows?", "a": "Tihar", "wrong": ["Dashain", "Chhath", "Losar"], "why": "It lasts five days." },
+        { "level": 1, "q": "What are Nepal's famous steamed dumplings called?", "a": "Momo", "wrong": ["Dal bhat", "Sel roti", "Gundruk"], "why": "They came with Newar traders from Tibet." },
+        { "level": 1, "q": "Which meal of lentil soup and rice is Nepal's everyday staple?", "a": "Dal bhat", "wrong": ["Momo", "Thukpa", "Chow mein"], "why": "Many Nepalis eat it twice a day." },
+        { "level": 1, "q": "Which ring-shaped sweet rice bread is made for Tihar?", "a": "Sel roti", "wrong": ["Yomari", "Bara", "Chatamari"], "why": "It is deep-fried." },
+        { "level": 1, "q": "During which festival do women wear red and fast for their husbands?", "a": "Teej", "wrong": ["Tihar", "Chhath", "Maghe Sankranti"], "why": "They dance and sing at temples." },
+        { "level": 1, "q": "Which great Shiva temple stands on the Bagmati in Kathmandu?", "a": "Pashupatinath", "wrong": ["Swayambhunath", "Boudhanath", "Changu Narayan"], "why": "It is a UNESCO World Heritage Site." },
+        { "level": 2, "q": "What is gundruk?", "a": "Fermented leafy greens", "wrong": ["Fermented soybeans", "A pickle of radish", "Dried yak cheese"], "why": "It is often made into soup." },
+        { "level": 2, "q": "What is chhurpi?", "a": "Hard cheese made from yak or cow milk", "wrong": ["Fermented greens", "A rice bread", "A buckwheat pancake"], "why": "It can be chewed for hours." },
+        { "level": 2, "q": "Which Newar sweet dumpling is eaten at the festival named after it?", "a": "Yomari", "wrong": ["Momo", "Sel roti", "Juju dhau"], "why": "It is filled with molasses and sesame." },
+        { "level": 2, "q": "Bhaktapur's famous 'king curd' is called what?", "a": "Juju dhau", "wrong": ["Mishti doi", "Lassi", "Shrikhand"], "why": "It is set in clay pots." },
+        { "level": 2, "q": "What is the 'living goddess' of Kathmandu called?", "a": "Kumari", "wrong": ["Taleju", "Durga", "Devi"], "why": "She is a young girl chosen from the Newar community." },
+        { "level": 2, "q": "During which Kathmandu festival is the Kumari pulled through the streets in a chariot?", "a": "Indra Jatra", "wrong": ["Dashain", "Bisket Jatra", "Holi"], "why": "It is held in September." },
+        { "level": 3, "q": "Bisket Jatra is the New Year festival of which city?", "a": "Bhaktapur", "wrong": ["Patan", "Pokhara", "Kirtipur"], "why": "Two giant chariots are pulled in a tug of war." },
+        { "level": 3, "q": "Bara, a fried lentil patty, is a dish of which community?", "a": "Newar", "wrong": ["Sherpa", "Tharu", "Gurung"], "why": "It is sometimes topped with an egg." },
+        { "level": 3, "q": "Which hilltop stupa in Kathmandu is nicknamed the 'Monkey Temple'?", "a": "Swayambhunath", "wrong": ["Boudhanath", "Namo Buddha", "Kopan"], "why": "Monkeys live on the hill." }
+      ]
+    },
+    {
+      "name": "Nepal General Knowledge",
+      "questions": [
+        { "level": 1, "q": "What is unusual about Nepal's flag?", "a": "It is made of two stacked triangles", "wrong": ["It has three vertical stripes", "It is square", "It shows a dragon"], "why": "It is the only national flag that is not rectangular." },
+        { "level": 1, "q": "What is Nepal's currency?", "a": "Nepalese rupee", "wrong": ["Ngultrum", "Taka", "Yuan"], "why": "It is pegged to the Indian rupee." },
+        { "level": 1, "q": "What is Nepal's national animal?", "a": "Cow", "wrong": ["Tiger", "Yak", "Rhinoceros"], "why": "The cow is sacred in Hinduism." },
+        { "level": 1, "q": "What is Nepal's national flower?", "a": "Rhododendron", "wrong": ["Lotus", "Marigold", "Jasmine"], "why": "It is called lali gurans." },
+        { "level": 1, "q": "What is Nepal's official language?", "a": "Nepali", "wrong": ["Hindi", "Maithili", "Newari"], "why": "Over 120 languages are spoken in Nepal." },
+        { "level": 1, "q": "What is Nepal's national bird?", "a": "Himalayan monal", "wrong": ["Indian peafowl", "Sarus crane", "Golden eagle"], "why": "It is called danphe." },
+        { "level": 1, "q": "Which giant stupa in Kathmandu is one of the largest in the world?", "a": "Boudhanath", "wrong": ["Swayambhunath", "Namo Buddha", "Lumbini Stupa"], "why": "It is a centre of Tibetan Buddhism." },
+        { "level": 2, "q": "Nepal Standard Time is how far ahead of UTC?", "a": "5 hours 45 minutes", "wrong": ["5 hours 30 minutes", "6 hours", "5 hours"], "why": "It is one of the few time zones with a 45-minute offset." },
+        { "level": 2, "q": "Which UNESCO World Heritage Site is made of seven monument zones?", "a": "Kathmandu Valley", "wrong": ["Lumbini", "Chitwan National Park", "Sagarmatha National Park"], "why": "It includes the three Durbar Squares." },
+        { "level": 2, "q": "What is Nepal's national anthem?", "a": "Sayaun Thunga Phulka", "wrong": ["Jana Gana Mana", "Amar Shonar Bangla", "Druk Tsendhen"], "why": "It means 'Made of hundreds of flowers'." },
+        { "level": 2, "q": "What colour is the border of Nepal's flag?", "a": "Blue", "wrong": ["Green", "Gold", "White"], "why": "The field is crimson." },
+        { "level": 2, "q": "What is the curved knife of the Gurkhas called?", "a": "Khukuri", "wrong": ["Kirpan", "Kukri-dao", "Talwar"], "why": "It appears on the Nepal Army's emblem." },
+        { "level": 2, "q": "Which ethnic group from the Everest region is famous for mountain guiding?", "a": "Sherpa", "wrong": ["Tharu", "Magar", "Newar"], "why": "Sherpa means 'people from the east'." },
+        { "level": 3, "q": "In which year did Nepal join the United Nations?", "a": "1955", "wrong": ["1945", "1961", "1971"], "why": "It joined with several other countries that December." },
+        { "level": 3, "q": "Which sacred high-altitude lake is a pilgrimage site for Janai Purnima?", "a": "Gosaikunda", "wrong": ["Rara Lake", "Phewa Lake", "Begnas Lake"], "why": "It lies at about 4,380 m in Langtang." },
+        { "level": 3, "q": "What is Gorkhapatra, first published in 1901?", "a": "Nepal's oldest newspaper", "wrong": ["A royal palace", "A Gurkha regiment", "A mountain pass"], "why": "It is still published today." }
+      ]
+    }
+  ]
+}
