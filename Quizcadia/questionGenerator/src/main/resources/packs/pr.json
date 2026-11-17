@@ -1,0 +1,346 @@
+{
+ "category": "Puerto Rico",
+ "country": "PR",
+ "topics": [
+  {
+   "name": "Puerto Rico: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Puerto Rico?",
+     "a": "San Juan",
+     "wrong": [
+      "Ponce",
+      "Mayagüez",
+      "Bayamón"
+     ],
+     "why": "Its old city has huge forts."
+    },
+    {
+     "level": 1,
+     "q": "Which country has Puerto Rico been a territory of since 1898?",
+     "a": "United States",
+     "wrong": [
+      "Spain",
+      "Britain",
+      "Cuba"
+     ],
+     "why": "Puerto Ricans are US citizens."
+    },
+    {
+     "level": 1,
+     "q": "From which country did the US take Puerto Rico in 1898?",
+     "a": "Spain",
+     "wrong": [
+      "Britain",
+      "France",
+      "Mexico"
+     ],
+     "why": "It followed the Spanish–American War."
+    },
+    {
+     "level": 1,
+     "q": "Which Indigenous people called the island Borikén?",
+     "a": "Taíno",
+     "wrong": [
+      "Carib",
+      "Maya",
+      "Arawak of Guyana"
+     ],
+     "why": "Puerto Ricans call themselves Boricuas."
+    },
+    {
+     "level": 1,
+     "q": "Which hurricane devastated Puerto Rico in 2017?",
+     "a": "Hurricane Maria",
+     "wrong": [
+      "Hurricane Katrina",
+      "Hurricane Irma",
+      "Hurricane Andrew"
+     ],
+     "why": "It caused a months-long blackout."
+    },
+    {
+     "level": 1,
+     "q": "What political status does Puerto Rico have?",
+     "a": "Commonwealth (unincorporated US territory)",
+     "wrong": [
+      "US state",
+      "Independent country",
+      "British colony"
+     ],
+     "why": "Residents cannot vote for the US President."
+    },
+    {
+     "level": 1,
+     "q": "Which Puerto Rican baseball star died in a plane crash delivering aid in 1972?",
+     "a": "Roberto Clemente",
+     "wrong": [
+      "Yadier Molina",
+      "Iván Rodríguez",
+      "Carlos Beltrán"
+     ],
+     "why": "He had 3,000 hits."
+    },
+    {
+     "level": 2,
+     "q": "Which Spanish explorer founded the first settlement in 1508?",
+     "a": "Juan Ponce de León",
+     "wrong": [
+      "Christopher Columbus",
+      "Hernán Cortés",
+      "Diego Velázquez"
+     ],
+     "why": "He later searched for the Fountain of Youth."
+    },
+    {
+     "level": 2,
+     "q": "Which law of 1917 made Puerto Ricans US citizens?",
+     "a": "Jones–Shaw Act",
+     "wrong": [
+      "Foraker Act",
+      "Treaty of Paris",
+      "Organic Act of Guam"
+     ],
+     "why": "Many were then drafted in the First World War."
+    },
+    {
+     "level": 2,
+     "q": "Who was the first elected governor of Puerto Rico, in 1948?",
+     "a": "Luis Muñoz Marín",
+     "wrong": [
+      "Pedro Albizu Campos",
+      "Rafael Hernández Colón",
+      "Sila Calderón"
+     ],
+     "why": "He created the Commonwealth status."
+    },
+    {
+     "level": 2,
+     "q": "Which nationalist leader campaigned for independence?",
+     "a": "Pedro Albizu Campos",
+     "wrong": [
+      "Luis Muñoz Marín",
+      "Ramón Emeterio Betances",
+      "Lolita Lebrón"
+     ],
+     "why": "He spent many years in prison."
+    },
+    {
+     "level": 2,
+     "q": "Who became the first Puerto Rican Supreme Court Justice, in 2009?",
+     "a": "Sonia Sotomayor",
+     "wrong": [
+      "Elena Kagan",
+      "Ruth Bader Ginsburg",
+      "Sila Calderón"
+     ],
+     "why": "Her parents were from Puerto Rico."
+    },
+    {
+     "level": 3,
+     "q": "Which 1868 revolt called for independence from Spain?",
+     "a": "Grito de Lares",
+     "wrong": [
+      "Grito de Dolores",
+      "Grito de Yara",
+      "Grito de Baire"
+     ],
+     "why": "It began in the town of Lares."
+    },
+    {
+     "level": 3,
+     "q": "Which old Spanish fort guards the entrance to San Juan Bay?",
+     "a": "Castillo San Felipe del Morro",
+     "wrong": [
+      "Castillo San Cristóbal",
+      "La Fortaleza",
+      "Fort Zachary"
+     ],
+     "why": "It is part of a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Who was the first woman elected governor of Puerto Rico?",
+     "a": "Sila Calderón",
+     "wrong": [
+      "Wanda Vázquez",
+      "Jenniffer González",
+      "Sonia Sotomayor"
+     ],
+     "why": "She took office in 2001."
+    }
+   ]
+  },
+  {
+   "name": "Puerto Rico: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which music style blending reggae and hip hop grew in Puerto Rico?",
+     "a": "Reggaeton",
+     "wrong": [
+      "Merengue",
+      "Bachata",
+      "Calypso"
+     ],
+     "why": "Daddy Yankee's 'Gasolina' was a big hit."
+    },
+    {
+     "level": 1,
+     "q": "Which Puerto Rican singer released 'Despacito' with Daddy Yankee?",
+     "a": "Luis Fonsi",
+     "wrong": [
+      "Ricky Martin",
+      "Bad Bunny",
+      "Marc Anthony"
+     ],
+     "why": "It became one of YouTube's most-viewed videos."
+    },
+    {
+     "level": 1,
+     "q": "Which cocktail was invented in San Juan?",
+     "a": "Piña colada",
+     "wrong": [
+      "Mojito",
+      "Daiquiri",
+      "Margarita"
+     ],
+     "why": "It became the official drink in 1978."
+    },
+    {
+     "level": 1,
+     "q": "Which Puerto Rican rapper became Spotify's most-streamed artist for years?",
+     "a": "Bad Bunny",
+     "wrong": [
+      "Daddy Yankee",
+      "Ozuna",
+      "Anuel AA"
+     ],
+     "why": "He was the world's top streamed artist several times."
+    },
+    {
+     "level": 1,
+     "q": "Which tiny tree frog is a symbol of Puerto Rico?",
+     "a": "Coquí",
+     "wrong": [
+      "Poison dart frog",
+      "Cane toad",
+      "Glass frog"
+     ],
+     "why": "It is named after its 'ko-kee' call."
+    },
+    {
+     "level": 1,
+     "q": "Which mashed fried plantain dish is a favourite?",
+     "a": "Mofongo",
+     "wrong": [
+      "Mangú",
+      "Arepas",
+      "Pupusas"
+     ],
+     "why": "It is often filled with meat or seafood."
+    },
+    {
+     "level": 1,
+     "q": "Which rainforest is the only tropical one in the US National Forest System?",
+     "a": "El Yunque",
+     "wrong": [
+      "Olympic",
+      "Tongass",
+      "Hoh"
+     ],
+     "why": "It is in the northeast."
+    },
+    {
+     "level": 2,
+     "q": "Which bay glows at night with tiny organisms?",
+     "a": "Mosquito Bay (bioluminescent bay)",
+     "wrong": [
+      "Flamenco Bay",
+      "Condado Lagoon",
+      "Guánica Bay"
+     ],
+     "why": "It is on the island of Vieques."
+    },
+    {
+     "level": 2,
+     "q": "Which singer from Puerto Rico sang 'Livin' la Vida Loca'?",
+     "a": "Ricky Martin",
+     "wrong": [
+      "Marc Anthony",
+      "Chayanne",
+      "Luis Fonsi"
+     ],
+     "why": "He started in the boy band Menudo."
+    },
+    {
+     "level": 2,
+     "q": "Which giant radio telescope collapsed in 2020?",
+     "a": "Arecibo Observatory",
+     "wrong": [
+      "Green Bank Telescope",
+      "ALMA",
+      "Jodrell Bank"
+     ],
+     "why": "It appeared in the film 'GoldenEye'."
+    },
+    {
+     "level": 2,
+     "q": "Which slow-roasted pork is a Christmas feast?",
+     "a": "Lechón",
+     "wrong": [
+      "Barbacoa",
+      "Cochinita pibil",
+      "Asado"
+     ],
+     "why": "Whole pigs are roasted on a spit."
+    },
+    {
+     "level": 2,
+     "q": "Which creator of the musical 'Hamilton' has Puerto Rican roots?",
+     "a": "Lin-Manuel Miranda",
+     "wrong": [
+      "Benicio del Toro",
+      "Rita Moreno",
+      "José Feliciano"
+     ],
+     "why": "He grew up in New York."
+    },
+    {
+     "level": 3,
+     "q": "Which Puerto Rican actress has won an Emmy, Grammy, Oscar and Tony?",
+     "a": "Rita Moreno",
+     "wrong": [
+      "Jennifer Lopez",
+      "Rosie Perez",
+      "Rosario Dawson"
+     ],
+     "why": "She won her Oscar for 'West Side Story'."
+    },
+    {
+     "level": 3,
+     "q": "Which southern city is called the 'Pearl of the South'?",
+     "a": "Ponce",
+     "wrong": [
+      "Mayagüez",
+      "Guayama",
+      "Arecibo"
+     ],
+     "why": "Its firehouse is painted red and black."
+    },
+    {
+     "level": 3,
+     "q": "Which island off the east coast is famous for wild horses?",
+     "a": "Vieques",
+     "wrong": [
+      "Culebra",
+      "Mona",
+      "Caja de Muertos"
+     ],
+     "why": "It was once used by the US Navy."
+    }
+   ]
+  }
+ ]
+}

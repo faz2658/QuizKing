@@ -1,0 +1,346 @@
+{
+ "category": "Jamaica",
+ "country": "JM",
+ "topics": [
+  {
+   "name": "Jamaica: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Jamaica become independent from Britain?",
+     "a": "1962",
+     "wrong": [
+      "1958",
+      "1972",
+      "1948"
+     ],
+     "why": "Independence Day is 6 August."
+    },
+    {
+     "level": 1,
+     "q": "Which Jamaican sprinter holds the 100 m and 200 m world records?",
+     "a": "Usain Bolt",
+     "wrong": [
+      "Yohan Blake",
+      "Asafa Powell",
+      "Shelly-Ann Fraser-Pryce"
+     ],
+     "why": "He ran 9.58 in 2009."
+    },
+    {
+     "level": 1,
+     "q": "Which reggae legend sang 'One Love' and 'No Woman, No Cry'?",
+     "a": "Bob Marley",
+     "wrong": [
+      "Peter Tosh",
+      "Jimmy Cliff",
+      "Bunny Wailer"
+     ],
+     "why": "He died in 1981."
+    },
+    {
+     "level": 1,
+     "q": "Which European country colonised Jamaica first?",
+     "a": "Spain",
+     "wrong": [
+      "Britain",
+      "France",
+      "Netherlands"
+     ],
+     "why": "Britain took it in 1655."
+    },
+    {
+     "level": 1,
+     "q": "Who was Jamaica's first Prime Minister?",
+     "a": "Alexander Bustamante",
+     "wrong": [
+      "Norman Manley",
+      "Michael Manley",
+      "Hugh Shearer"
+     ],
+     "why": "He was a trade union leader."
+    },
+    {
+     "level": 1,
+     "q": "Which Indigenous people lived in Jamaica when Columbus arrived?",
+     "a": "Taíno",
+     "wrong": [
+      "Maya",
+      "Carib",
+      "Aztec"
+     ],
+     "why": "The name Jamaica comes from their word for 'land of wood and water'."
+    },
+    {
+     "level": 1,
+     "q": "Which communities of escaped slaves fought the British in the mountains?",
+     "a": "Maroons",
+     "wrong": [
+      "Rastas",
+      "Buccaneers",
+      "Creoles"
+     ],
+     "why": "They won treaties in 1739."
+    },
+    {
+     "level": 2,
+     "q": "Which pirate town was destroyed by an earthquake in 1692?",
+     "a": "Port Royal",
+     "wrong": [
+      "Spanish Town",
+      "Kingston",
+      "Montego Bay"
+     ],
+     "why": "It was called 'the wickedest city on Earth'."
+    },
+    {
+     "level": 2,
+     "q": "Which Jamaican activist founded the UNIA and promoted Pan-Africanism?",
+     "a": "Marcus Garvey",
+     "wrong": [
+      "Paul Bogle",
+      "Sam Sharpe",
+      "Walter Rodney"
+     ],
+     "why": "He is a National Hero."
+    },
+    {
+     "level": 2,
+     "q": "Which Maroon leader is Jamaica's only female National Hero?",
+     "a": "Nanny of the Maroons",
+     "wrong": [
+      "Mary Seacole",
+      "Louise Bennett",
+      "Portia Simpson-Miller"
+     ],
+     "why": "She appears on the 500-dollar note."
+    },
+    {
+     "level": 2,
+     "q": "Which nurse helped soldiers in the Crimean War?",
+     "a": "Mary Seacole",
+     "wrong": [
+      "Nanny of the Maroons",
+      "Florence Nightingale",
+      "Louise Bennett"
+     ],
+     "why": "She ran the 'British Hotel' near the front."
+    },
+    {
+     "level": 2,
+     "q": "Who became Jamaica's first woman Prime Minister, in 2006?",
+     "a": "Portia Simpson-Miller",
+     "wrong": [
+      "Pearnel Charles",
+      "Olivia Grange",
+      "Juliet Holness"
+     ],
+     "why": "She served twice."
+    },
+    {
+     "level": 3,
+     "q": "Which 1831 slave rebellion was led by Sam Sharpe?",
+     "a": "Baptist War (Christmas Rebellion)",
+     "wrong": [
+      "Morant Bay Rebellion",
+      "Tacky's War",
+      "Maroon War"
+     ],
+     "why": "It sped up the end of slavery."
+    },
+    {
+     "level": 3,
+     "q": "Which 1865 rebellion was led by Paul Bogle?",
+     "a": "Morant Bay Rebellion",
+     "wrong": [
+      "Baptist War",
+      "Tacky's War",
+      "Christmas Rebellion"
+     ],
+     "why": "He is a National Hero."
+    },
+    {
+     "level": 3,
+     "q": "Which buccaneer became governor of Jamaica?",
+     "a": "Henry Morgan",
+     "wrong": [
+      "Blackbeard",
+      "Calico Jack",
+      "Edward Low"
+     ],
+     "why": "He raided Panama in 1671."
+    }
+   ]
+  },
+  {
+   "name": "Jamaica: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Jamaica?",
+     "a": "Kingston",
+     "wrong": [
+      "Montego Bay",
+      "Spanish Town",
+      "Ocho Rios"
+     ],
+     "why": "It has one of the world's largest natural harbours."
+    },
+    {
+     "level": 1,
+     "q": "Which music genre was born in Jamaica in the late 1960s?",
+     "a": "Reggae",
+     "wrong": [
+      "Calypso",
+      "Salsa",
+      "Merengue"
+     ],
+     "why": "UNESCO listed it in 2018."
+    },
+    {
+     "level": 1,
+     "q": "Which spicy marinade is used on chicken and pork?",
+     "a": "Jerk",
+     "wrong": [
+      "Curry",
+      "Adobo",
+      "Mole"
+     ],
+     "why": "It uses scotch bonnet peppers and allspice."
+    },
+    {
+     "level": 1,
+     "q": "What is Jamaica's national dish?",
+     "a": "Ackee and saltfish",
+     "wrong": [
+      "Rice and peas",
+      "Curry goat",
+      "Patty"
+     ],
+     "why": "Ackee is a fruit."
+    },
+    {
+     "level": 1,
+     "q": "Which coffee from Jamaica's mountains is world-famous?",
+     "a": "Blue Mountain coffee",
+     "wrong": [
+      "Kona coffee",
+      "Java coffee",
+      "Mocha coffee"
+     ],
+     "why": "Much of it goes to Japan."
+    },
+    {
+     "level": 1,
+     "q": "Which tourist town on the north coast has a famous airport?",
+     "a": "Montego Bay",
+     "wrong": [
+      "Negril",
+      "Ocho Rios",
+      "Port Antonio"
+     ],
+     "why": "It is often called MoBay."
+    },
+    {
+     "level": 1,
+     "q": "What is Jamaica's currency?",
+     "a": "Jamaican dollar",
+     "wrong": [
+      "US dollar",
+      "Pound",
+      "Euro"
+     ],
+     "why": "Its code is JMD."
+    },
+    {
+     "level": 2,
+     "q": "Which waterfall near Ocho Rios can be climbed?",
+     "a": "Dunn's River Falls",
+     "wrong": [
+      "YS Falls",
+      "Reach Falls",
+      "Mayfield Falls"
+     ],
+     "why": "It flows straight into the sea."
+    },
+    {
+     "level": 2,
+     "q": "Which religion emerged in Jamaica in the 1930s?",
+     "a": "Rastafari",
+     "wrong": [
+      "Pocomania",
+      "Kumina",
+      "Santería"
+     ],
+     "why": "Its followers honour Haile Selassie."
+    },
+    {
+     "level": 2,
+     "q": "Which Jamaican sprinter won Olympic 100 m gold in 2008 and 2012?",
+     "a": "Shelly-Ann Fraser-Pryce",
+     "wrong": [
+      "Elaine Thompson-Herah",
+      "Veronica Campbell-Brown",
+      "Merlene Ottey"
+     ],
+     "why": "She is nicknamed the 'Pocket Rocket'."
+    },
+    {
+     "level": 2,
+     "q": "Which famous bobsled team competed at the 1988 Winter Olympics?",
+     "a": "Jamaica's bobsled team",
+     "wrong": [
+      "Jamaica's ski team",
+      "Jamaica's skating team",
+      "Jamaica's curling team"
+     ],
+     "why": "The film 'Cool Runnings' tells their story."
+    },
+    {
+     "level": 2,
+     "q": "What is the island's highest point?",
+     "a": "Blue Mountain Peak",
+     "wrong": [
+      "Dolphin Head",
+      "Mount Diablo",
+      "Cockpit Peak"
+     ],
+     "why": "It is about 2,256 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which DJ style gave rise to dancehall and influenced hip hop?",
+     "a": "Toasting",
+     "wrong": [
+      "Rapping",
+      "Scatting",
+      "Freestyling"
+     ],
+     "why": "Kool Herc brought it to New York."
+    },
+    {
+     "level": 3,
+     "q": "Which Jamaican poet wrote in patois and was called 'Miss Lou'?",
+     "a": "Louise Bennett-Coverley",
+     "wrong": [
+      "Claude McKay",
+      "Una Marson",
+      "Lorna Goodison"
+     ],
+     "why": "She championed Jamaican language."
+    },
+    {
+     "level": 3,
+     "q": "Which James Bond author had a house called GoldenEye in Jamaica?",
+     "a": "Ian Fleming",
+     "wrong": [
+      "Noël Coward",
+      "Graham Greene",
+      "Agatha Christie"
+     ],
+     "why": "He wrote all the Bond novels there."
+    }
+   ]
+  }
+ ]
+}

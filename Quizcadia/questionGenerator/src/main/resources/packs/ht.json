@@ -1,0 +1,346 @@
+{
+ "category": "Haiti",
+ "country": "HT",
+ "topics": [
+  {
+   "name": "Haiti: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Haiti?",
+     "a": "Port-au-Prince",
+     "wrong": [
+      "Cap-Haïtien",
+      "Gonaïves",
+      "Jacmel"
+     ],
+     "why": "It was struck by a huge earthquake in 2010."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Haiti become independent from France?",
+     "a": "1804",
+     "wrong": [
+      "1791",
+      "1825",
+      "1810"
+     ],
+     "why": "It was the first free Black republic."
+    },
+    {
+     "level": 1,
+     "q": "Which revolution was the only successful slave revolt to create a nation?",
+     "a": "Haitian Revolution",
+     "wrong": [
+      "French Revolution",
+      "American Revolution",
+      "Baptist War"
+     ],
+     "why": "It lasted from 1791 to 1804."
+    },
+    {
+     "level": 1,
+     "q": "Which leader of the revolution is called 'the Black Napoleon'?",
+     "a": "Toussaint Louverture",
+     "wrong": [
+      "Jean-Jacques Dessalines",
+      "Henri Christophe",
+      "Alexandre Pétion"
+     ],
+     "why": "He died in a French prison in 1803."
+    },
+    {
+     "level": 1,
+     "q": "Who declared Haiti's independence in 1804?",
+     "a": "Jean-Jacques Dessalines",
+     "wrong": [
+      "Toussaint Louverture",
+      "Henri Christophe",
+      "Jean-Pierre Boyer"
+     ],
+     "why": "He became Emperor Jacques I."
+    },
+    {
+     "level": 1,
+     "q": "What are Haiti's two official languages?",
+     "a": "French and Haitian Creole",
+     "wrong": [
+      "Spanish and French",
+      "English and Creole",
+      "French and Spanish"
+     ],
+     "why": "Most Haitians speak Creole at home."
+    },
+    {
+     "level": 1,
+     "q": "Which family ruled Haiti as dictators from 1957 to 1986?",
+     "a": "The Duvaliers",
+     "wrong": [
+      "The Christophes",
+      "The Aristides",
+      "The Trujillos"
+     ],
+     "why": "They were 'Papa Doc' and 'Baby Doc'."
+    },
+    {
+     "level": 2,
+     "q": "Which king built the Citadelle Laferrière mountain fortress?",
+     "a": "Henri Christophe",
+     "wrong": [
+      "Toussaint Louverture",
+      "Jean-Jacques Dessalines",
+      "Faustin Soulouque"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which priest became Haiti's first democratically elected President, in 1990?",
+     "a": "Jean-Bertrand Aristide",
+     "wrong": [
+      "René Préval",
+      "Michel Martelly",
+      "Jovenel Moïse"
+     ],
+     "why": "He was overthrown twice."
+    },
+    {
+     "level": 2,
+     "q": "Which country occupied Haiti from 1915 to 1934?",
+     "a": "United States",
+     "wrong": [
+      "France",
+      "Spain",
+      "Britain"
+     ],
+     "why": "US Marines ran the country."
+    },
+    {
+     "level": 2,
+     "q": "Which 1791 ceremony is said to have launched the revolution?",
+     "a": "Bois Caïman ceremony",
+     "wrong": [
+      "Storming of the Bastille",
+      "Tennis Court Oath",
+      "Fête de la Fédération"
+     ],
+     "why": "It took place in the north."
+    },
+    {
+     "level": 2,
+     "q": "Which President was assassinated in 2021?",
+     "a": "Jovenel Moïse",
+     "wrong": [
+      "Michel Martelly",
+      "René Préval",
+      "Ariel Henry"
+     ],
+     "why": "He was killed at his home."
+    },
+    {
+     "level": 3,
+     "q": "Which battle in 1803 was the last major victory over the French?",
+     "a": "Battle of Vertières",
+     "wrong": [
+      "Battle of Crête-à-Pierrot",
+      "Battle of Ravine-à-Couleuvres",
+      "Battle of Cap-Haïtien"
+     ],
+     "why": "18 November is a national holiday."
+    },
+    {
+     "level": 3,
+     "q": "What did France demand from Haiti in 1825 for recognising independence?",
+     "a": "A huge compensation payment",
+     "wrong": [
+      "Its northern provinces",
+      "A permanent naval base",
+      "Free trade forever"
+     ],
+     "why": "It took Haiti until 1947 to pay it off."
+    },
+    {
+     "level": 3,
+     "q": "What was Haiti called as a French colony?",
+     "a": "Saint-Domingue",
+     "wrong": [
+      "Hispaniola",
+      "Santo Domingo",
+      "New France"
+     ],
+     "why": "It was France's richest colony."
+    }
+   ]
+  },
+  {
+   "name": "Haiti: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Haiti's currency?",
+     "a": "Gourde",
+     "wrong": [
+      "Peso",
+      "Dollar",
+      "Franc"
+     ],
+     "why": "Its code is HTG."
+    },
+    {
+     "level": 1,
+     "q": "Which island does Haiti share with the Dominican Republic?",
+     "a": "Hispaniola",
+     "wrong": [
+      "Cuba",
+      "Jamaica",
+      "Puerto Rico"
+     ],
+     "why": "Haiti is on the western third."
+    },
+    {
+     "level": 1,
+     "q": "Which religion, blending West African and Catholic traditions, is officially recognised in Haiti?",
+     "a": "Vodou",
+     "wrong": [
+      "Candomblé",
+      "Rastafari",
+      "Shinto"
+     ],
+     "why": "It is officially recognised."
+    },
+    {
+     "level": 1,
+     "q": "Which soup is eaten on Independence Day, 1 January?",
+     "a": "Soup joumou (pumpkin soup)",
+     "wrong": [
+      "Gumbo",
+      "Callaloo",
+      "Sancocho"
+     ],
+     "why": "It was once reserved for enslavers."
+    },
+    {
+     "level": 1,
+     "q": "What are the colourful hand-painted buses of Haiti called?",
+     "a": "Tap-taps",
+     "wrong": [
+      "Jeepneys",
+      "Chiva buses",
+      "Matatus"
+     ],
+     "why": "Passengers tap to get off."
+    },
+    {
+     "level": 1,
+     "q": "Which artform shows Haiti's rich painting tradition?",
+     "a": "Naïve painting",
+     "wrong": [
+      "Pointillism",
+      "Cubism",
+      "Pop art"
+     ],
+     "why": "It often shows markets and village life."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies south of Haiti?",
+     "a": "Caribbean Sea",
+     "wrong": [
+      "Atlantic Ocean",
+      "Gulf of Mexico",
+      "Pacific Ocean"
+     ],
+     "why": "The Atlantic lies to the north."
+    },
+    {
+     "level": 2,
+     "q": "Which northern city was the capital of King Henri Christophe?",
+     "a": "Cap-Haïtien",
+     "wrong": [
+      "Gonaïves",
+      "Jacmel",
+      "Les Cayes"
+     ],
+     "why": "The Citadelle is nearby."
+    },
+    {
+     "level": 2,
+     "q": "Which palace ruins near the Citadelle belonged to King Henri?",
+     "a": "Sans-Souci Palace",
+     "wrong": [
+      "Palais National",
+      "Versailles of the Caribbean",
+      "Fort Jacques"
+     ],
+     "why": "It was damaged by an 1842 earthquake."
+    },
+    {
+     "level": 2,
+     "q": "Which seaside town is famous for papier-mâché carnival masks?",
+     "a": "Jacmel",
+     "wrong": [
+      "Cap-Haïtien",
+      "Port-de-Paix",
+      "Jérémie"
+     ],
+     "why": "It is an arts centre."
+    },
+    {
+     "level": 2,
+     "q": "Which crop is Haiti among the world's top exporters of?",
+     "a": "Vetiver oil",
+     "wrong": [
+      "Coffee",
+      "Cocoa",
+      "Sugar"
+     ],
+     "why": "It is used in perfumes."
+    },
+    {
+     "level": 2,
+     "q": "Which Haitian-American author wrote 'Breath, Eyes, Memory'?",
+     "a": "Edwidge Danticat",
+     "wrong": [
+      "Junot Díaz",
+      "Julia Alvarez",
+      "Jacques Roumain"
+     ],
+     "why": "It was an Oprah's Book Club pick."
+    },
+    {
+     "level": 3,
+     "q": "Which Haitian music style is popular across the French Caribbean?",
+     "a": "Kompa",
+     "wrong": [
+      "Calypso",
+      "Soca",
+      "Bachata"
+     ],
+     "why": "Nemours Jean-Baptiste pioneered it in the 1950s."
+    },
+    {
+     "level": 3,
+     "q": "Which Haitian writer wrote 'Masters of the Dew'?",
+     "a": "Jacques Roumain",
+     "wrong": [
+      "Jean Price-Mars",
+      "Edwidge Danticat",
+      "Dany Laferrière"
+     ],
+     "why": "It was published in 1944."
+    },
+    {
+     "level": 3,
+     "q": "Which deep-fried pork dish is a Haitian favourite?",
+     "a": "Griot",
+     "wrong": [
+      "Lechon",
+      "Carnitas",
+      "Chicharrón"
+     ],
+     "why": "It is served with pikliz, a spicy slaw."
+    }
+   ]
+  }
+ ]
+}

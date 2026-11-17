@@ -1,0 +1,346 @@
+{
+ "category": "Cuba",
+ "country": "CU",
+ "topics": [
+  {
+   "name": "Cuba: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who led the Cuban Revolution that took power in 1959?",
+     "a": "Fidel Castro",
+     "wrong": [
+      "Che Guevara",
+      "Fulgencio Batista",
+      "Raúl Castro"
+     ],
+     "why": "He led Cuba until 2008."
+    },
+    {
+     "level": 1,
+     "q": "Which dictator was overthrown by the Cuban Revolution?",
+     "a": "Fulgencio Batista",
+     "wrong": [
+      "Gerardo Machado",
+      "Tomás Estrada Palma",
+      "Carlos Prío"
+     ],
+     "why": "He fled on New Year's Day 1959."
+    },
+    {
+     "level": 1,
+     "q": "Which 1962 stand-off over Soviet missiles brought the world close to nuclear war?",
+     "a": "Cuban Missile Crisis",
+     "wrong": [
+      "Bay of Pigs",
+      "Berlin Crisis",
+      "Suez Crisis"
+     ],
+     "why": "It lasted 13 days."
+    },
+    {
+     "level": 1,
+     "q": "Which failed 1961 invasion was backed by the CIA?",
+     "a": "Bay of Pigs invasion",
+     "wrong": [
+      "Operation Mongoose",
+      "Cuban Missile Crisis",
+      "Mariel boatlift"
+     ],
+     "why": "Cuban exiles landed at Playa Girón."
+    },
+    {
+     "level": 1,
+     "q": "Which poet and hero of independence died in battle in 1895?",
+     "a": "José Martí",
+     "wrong": [
+      "Antonio Maceo",
+      "Máximo Gómez",
+      "Carlos Manuel de Céspedes"
+     ],
+     "why": "Havana's airport is named after him."
+    },
+    {
+     "level": 1,
+     "q": "Which European country ruled Cuba until 1898?",
+     "a": "Spain",
+     "wrong": [
+      "Britain",
+      "France",
+      "Portugal"
+     ],
+     "why": "It lost Cuba in the Spanish–American War."
+    },
+    {
+     "level": 1,
+     "q": "Which US naval base is on Cuba's southeastern coast?",
+     "a": "Guantánamo Bay",
+     "wrong": [
+      "Pearl Harbor",
+      "Subic Bay",
+      "Norfolk"
+     ],
+     "why": "The US has leased it since 1903."
+    },
+    {
+     "level": 2,
+     "q": "Who succeeded Fidel Castro as President?",
+     "a": "Raúl Castro",
+     "wrong": [
+      "Miguel Díaz-Canel",
+      "Che Guevara",
+      "Camilo Cienfuegos"
+     ],
+     "why": "He is Fidel's younger brother."
+    },
+    {
+     "level": 2,
+     "q": "Which independence general was called the 'Bronze Titan'?",
+     "a": "Antonio Maceo",
+     "wrong": [
+      "José Martí",
+      "Máximo Gómez",
+      "Calixto García"
+     ],
+     "why": "He fought in over 500 battles."
+    },
+    {
+     "level": 2,
+     "q": "Which 1980 boatlift brought about 125,000 Cubans to Florida?",
+     "a": "Mariel boatlift",
+     "wrong": [
+      "Balsero crisis",
+      "Operation Peter Pan",
+      "Freedom Flights"
+     ],
+     "why": "It left from the port of Mariel."
+    },
+    {
+     "level": 2,
+     "q": "Which landowner freed his slaves and began the war of independence in 1868?",
+     "a": "Carlos Manuel de Céspedes",
+     "wrong": [
+      "José Martí",
+      "Antonio Maceo",
+      "Máximo Gómez"
+     ],
+     "why": "He is called the Father of the Homeland."
+    },
+    {
+     "level": 2,
+     "q": "Which revolutionary attack of 1953 began Castro's movement?",
+     "a": "Attack on the Moncada Barracks",
+     "wrong": [
+      "Granma landing",
+      "Battle of Santa Clara",
+      "Bay of Pigs"
+     ],
+     "why": "The movement was named the 26th of July after it."
+    },
+    {
+     "level": 3,
+     "q": "Which yacht carried Castro's rebels to Cuba in 1956?",
+     "a": "Granma",
+     "wrong": [
+      "Pilar",
+      "Moncada",
+      "Liberty"
+     ],
+     "why": "Cuba's official newspaper is named after it."
+    },
+    {
+     "level": 3,
+     "q": "Which battle in 1958 was won by Che Guevara's column?",
+     "a": "Battle of Santa Clara",
+     "wrong": [
+      "Battle of Moncada",
+      "Battle of Playa Girón",
+      "Battle of Yaguajay"
+     ],
+     "why": "Batista fled soon after."
+    },
+    {
+     "level": 3,
+     "q": "Who became Cuba's President in 2018, the first not named Castro since 1959?",
+     "a": "Miguel Díaz-Canel",
+     "wrong": [
+      "Raúl Castro",
+      "Esteban Lazo",
+      "Manuel Marrero"
+     ],
+     "why": "He was born after the revolution."
+    }
+   ]
+  },
+  {
+   "name": "Cuba: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Cuba?",
+     "a": "Havana",
+     "wrong": [
+      "Santiago de Cuba",
+      "Camagüey",
+      "Varadero"
+     ],
+     "why": "Its old town is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which Cuban drink is made with rum, mint, lime and soda?",
+     "a": "Mojito",
+     "wrong": [
+      "Daiquiri",
+      "Cuba libre",
+      "Piña colada"
+     ],
+     "why": "Hemingway is linked to it in Havana."
+    },
+    {
+     "level": 1,
+     "q": "Which style of music and dance comes from Cuba?",
+     "a": "Salsa (with Cuban son)",
+     "wrong": [
+      "Tango",
+      "Samba",
+      "Bachata"
+     ],
+     "why": "Son cubano is its root."
+    },
+    {
+     "level": 1,
+     "q": "Which crop has long been a major Cuban export?",
+     "a": "Sugar",
+     "wrong": [
+      "Coffee",
+      "Bananas",
+      "Cocoa"
+     ],
+     "why": "Cuba was once the world's top sugar exporter."
+    },
+    {
+     "level": 1,
+     "q": "Which hand-rolled products is Cuba world-famous for?",
+     "a": "Cigars",
+     "wrong": [
+      "Cigarettes",
+      "Pipes",
+      "Snuff"
+     ],
+     "why": "Havana cigars are prized."
+    },
+    {
+     "level": 1,
+     "q": "Which American writer lived near Havana and wrote 'The Old Man and the Sea'?",
+     "a": "Ernest Hemingway",
+     "wrong": [
+      "F. Scott Fitzgerald",
+      "John Steinbeck",
+      "William Faulkner"
+     ],
+     "why": "His house, Finca Vigía, is a museum."
+    },
+    {
+     "level": 1,
+     "q": "Which seafront promenade runs along Havana's coast?",
+     "a": "El Malecón",
+     "wrong": [
+      "La Rambla",
+      "The Corniche",
+      "Copacabana Promenade"
+     ],
+     "why": "Waves crash over it in storms."
+    },
+    {
+     "level": 2,
+     "q": "Which band of veteran musicians made a famous 1997 album?",
+     "a": "Buena Vista Social Club",
+     "wrong": [
+      "Los Van Van",
+      "Orquesta Aragón",
+      "Irakere"
+     ],
+     "why": "It was named after an old Havana club."
+    },
+    {
+     "level": 2,
+     "q": "Which valley in the west is famous for tobacco and limestone hills?",
+     "a": "Viñales Valley",
+     "wrong": [
+      "Valle de los Ingenios",
+      "Escambray",
+      "Sierra Maestra"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which beach resort is Cuba's most famous?",
+     "a": "Varadero",
+     "wrong": [
+      "Cayo Coco",
+      "Trinidad",
+      "Guardalavaca"
+     ],
+     "why": "It has 20 km of white sand."
+    },
+    {
+     "level": 2,
+     "q": "Which singer was the 'Queen of Salsa'?",
+     "a": "Celia Cruz",
+     "wrong": [
+      "Gloria Estefan",
+      "Omara Portuondo",
+      "La Lupe"
+     ],
+     "why": "Her catchphrase was '¡Azúcar!'."
+    },
+    {
+     "level": 2,
+     "q": "Which old cars are a symbol of Havana's streets?",
+     "a": "1950s American cars",
+     "wrong": [
+      "Soviet Ladas",
+      "British Minis",
+      "Japanese kei cars"
+     ],
+     "why": "They have been kept running for decades."
+    },
+    {
+     "level": 3,
+     "q": "Which Cuban-born ballerina founded the National Ballet of Cuba?",
+     "a": "Alicia Alonso",
+     "wrong": [
+      "Viengsay Valdés",
+      "Carlos Acosta",
+      "Lorna Feijóo"
+     ],
+     "why": "She danced into her seventies."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain range in the east sheltered Castro's rebels?",
+     "a": "Sierra Maestra",
+     "wrong": [
+      "Sierra del Escambray",
+      "Sierra de los Órganos",
+      "Cordillera de Guaniguanico"
+     ],
+     "why": "Pico Turquino, Cuba's highest peak, is there."
+    },
+    {
+     "level": 3,
+     "q": "Which colonial town near sugar plantations is a UNESCO site?",
+     "a": "Trinidad",
+     "wrong": [
+      "Cienfuegos",
+      "Remedios",
+      "Baracoa"
+     ],
+     "why": "It was founded in 1514."
+    }
+   ]
+  }
+ ]
+}
