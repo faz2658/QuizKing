@@ -1,0 +1,346 @@
+{
+ "category": "Albania",
+ "country": "AL",
+ "topics": [
+  {
+   "name": "Albania: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Albania?",
+     "a": "Tirana",
+     "wrong": [
+      "Durrës",
+      "Shkodër",
+      "Vlorë"
+     ],
+     "why": "It has been the capital since 1920."
+    },
+    {
+     "level": 1,
+     "q": "Which national hero fought the Ottomans in the 1400s?",
+     "a": "Skanderbeg",
+     "wrong": [
+      "Ismail Qemali",
+      "Enver Hoxha",
+      "Ali Pasha"
+     ],
+     "why": "His statue stands in Tirana's main square."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Albania declare independence?",
+     "a": "1912",
+     "wrong": [
+      "1878",
+      "1918",
+      "1945"
+     ],
+     "why": "It was declared in Vlorë."
+    },
+    {
+     "level": 1,
+     "q": "Which communist leader ruled Albania from 1944 to 1985?",
+     "a": "Enver Hoxha",
+     "wrong": [
+      "Ramiz Alia",
+      "Mehmet Shehu",
+      "Sali Berisha"
+     ],
+     "why": "He isolated the country."
+    },
+    {
+     "level": 1,
+     "q": "Which saint of Albanian heritage worked with the poor in India?",
+     "a": "Mother Teresa",
+     "wrong": [
+      "Saint Clement",
+      "Joan of Arc",
+      "Saint Nicholas"
+     ],
+     "why": "Tirana's airport is named after her."
+    },
+    {
+     "level": 1,
+     "q": "Which concrete structures did Hoxha build across the country?",
+     "a": "Bunkers",
+     "wrong": [
+      "Watchtowers",
+      "Statues",
+      "Walls"
+     ],
+     "why": "There were over 170,000."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Albania join NATO?",
+     "a": "2009",
+     "wrong": [
+      "1999",
+      "2004",
+      "2020"
+     ],
+     "why": "It joined with Croatia."
+    },
+    {
+     "level": 2,
+     "q": "Who declared Albania's independence in 1912?",
+     "a": "Ismail Qemali",
+     "wrong": [
+      "Skanderbeg",
+      "Ahmet Zogu",
+      "Fan Noli"
+     ],
+     "why": "He became the first head of government."
+    },
+    {
+     "level": 2,
+     "q": "Which king ruled Albania from 1928 to 1939?",
+     "a": "Zog I",
+     "wrong": [
+      "Wilhelm of Wied",
+      "Victor Emmanuel III",
+      "Skanderbeg"
+     ],
+     "why": "He fled when Italy invaded."
+    },
+    {
+     "level": 2,
+     "q": "Which country invaded Albania in 1939?",
+     "a": "Italy",
+     "wrong": [
+      "Germany",
+      "Greece",
+      "Yugoslavia"
+     ],
+     "why": "Mussolini ordered it."
+    },
+    {
+     "level": 2,
+     "q": "Which 1997 crisis followed the collapse of pyramid schemes?",
+     "a": "Albanian civil unrest",
+     "wrong": [
+      "Albanian Revolution",
+      "Tirana Spring",
+      "Kosovo War"
+     ],
+     "why": "Many people lost their savings."
+    },
+    {
+     "level": 2,
+     "q": "Which code of customary law governed the northern highlands?",
+     "a": "Kanun",
+     "wrong": [
+      "Sharia",
+      "Napoleonic Code",
+      "Twelve Tables"
+     ],
+     "why": "It includes rules on blood feuds."
+    },
+    {
+     "level": 3,
+     "q": "Which Ottoman governor ruled Ioannina and much of Albania in the 1800s?",
+     "a": "Ali Pasha of Tepelena",
+     "wrong": [
+      "Skanderbeg",
+      "Ismail Qemali",
+      "Ahmet Zogu"
+     ],
+     "why": "Lord Byron visited him."
+    },
+    {
+     "level": 3,
+     "q": "Which 1908 congress agreed a Latin alphabet for Albanian?",
+     "a": "Congress of Manastir",
+     "wrong": [
+      "Congress of Berlin",
+      "League of Prizren",
+      "Congress of Lushnjë"
+     ],
+     "why": "It met in today's Bitola."
+    },
+    {
+     "level": 3,
+     "q": "Which 1878 league defended Albanian lands?",
+     "a": "League of Prizren",
+     "wrong": [
+      "League of Lezhë",
+      "Congress of Manastir",
+      "Vlora Assembly"
+     ],
+     "why": "It met in today's Kosovo."
+    }
+   ]
+  },
+  {
+   "name": "Albania: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Albania's currency?",
+     "a": "Lek",
+     "wrong": [
+      "Euro",
+      "Dinar",
+      "Denar"
+     ],
+     "why": "It is named after Alexander the Great (Leka)."
+    },
+    {
+     "level": 1,
+     "q": "Which two seas lie along Albania's coast?",
+     "a": "Adriatic and Ionian",
+     "wrong": [
+      "Aegean and Black",
+      "Mediterranean and Red",
+      "Baltic and North"
+     ],
+     "why": "The Albanian Riviera faces the Ionian."
+    },
+    {
+     "level": 1,
+     "q": "Which bird is on Albania's flag?",
+     "a": "Double-headed black eagle",
+     "wrong": [
+      "Golden eagle",
+      "Falcon",
+      "White dove"
+     ],
+     "why": "Albanians call their country Shqipëria, 'land of eagles'."
+    },
+    {
+     "level": 1,
+     "q": "Which 'city of a thousand windows' is a UNESCO site?",
+     "a": "Berat",
+     "wrong": [
+      "Gjirokastër",
+      "Shkodër",
+      "Korçë"
+     ],
+     "why": "Its white houses climb the hill."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient Greek and Roman city near Saranda is a UNESCO site?",
+     "a": "Butrint",
+     "wrong": [
+      "Apollonia",
+      "Durrës",
+      "Byllis"
+     ],
+     "why": "Its ruins are in a national park."
+    },
+    {
+     "level": 1,
+     "q": "Which stone city is the birthplace of Enver Hoxha?",
+     "a": "Gjirokastër",
+     "wrong": [
+      "Berat",
+      "Korçë",
+      "Elbasan"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which port city has a large Roman amphitheatre?",
+     "a": "Durrës",
+     "wrong": [
+      "Vlorë",
+      "Saranda",
+      "Shkodër"
+     ],
+     "why": "It is Albania's main port."
+    },
+    {
+     "level": 2,
+     "q": "Which singer born to Albanian parents had a hit with 'New Rules'?",
+     "a": "Dua Lipa",
+     "wrong": [
+      "Rita Ora",
+      "Bebe Rexha",
+      "Ava Max"
+     ],
+     "why": "Her family is from Kosovo."
+    },
+    {
+     "level": 2,
+     "q": "Which Albanian writer wrote 'The General of the Dead Army'?",
+     "a": "Ismail Kadare",
+     "wrong": [
+      "Fatos Lubonja",
+      "Dritëro Agolli",
+      "Lasgush Poradeci"
+     ],
+     "why": "He won the first Man Booker International Prize."
+    },
+    {
+     "level": 2,
+     "q": "Which spring near Saranda is famous for its deep blue water?",
+     "a": "Blue Eye",
+     "wrong": [
+      "Green Lake",
+      "Ohrid Springs",
+      "Vjosa Pool"
+     ],
+     "why": "Divers have not reached its bottom."
+    },
+    {
+     "level": 2,
+     "q": "Which river is one of Europe's last wild rivers?",
+     "a": "Vjosa",
+     "wrong": [
+      "Drin",
+      "Shkumbin",
+      "Seman"
+     ],
+     "why": "It became a national park in 2023."
+    },
+    {
+     "level": 2,
+     "q": "Which baked lamb and yoghurt dish is a national favourite?",
+     "a": "Tavë kosi",
+     "wrong": [
+      "Byrek",
+      "Fërgesë",
+      "Qifqi"
+     ],
+     "why": "It comes from Elbasan."
+    },
+    {
+     "level": 3,
+     "q": "Which mountains in the north are called the 'Accursed Mountains'?",
+     "a": "Prokletije",
+     "wrong": [
+      "Pindus",
+      "Korab",
+      "Tomorr"
+     ],
+     "why": "Theth and Valbona are there."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient Greek colony near Fier was famous for learning?",
+     "a": "Apollonia",
+     "wrong": [
+      "Butrint",
+      "Byllis",
+      "Antigonea"
+     ],
+     "why": "Augustus studied there as a young man."
+    },
+    {
+     "level": 3,
+     "q": "Which lake shared with Montenegro is Albania's largest?",
+     "a": "Lake Shkodër",
+     "wrong": [
+      "Lake Ohrid",
+      "Lake Prespa",
+      "Butrint Lagoon"
+     ],
+     "why": "It is called Skadar in Montenegro."
+    }
+   ]
+  }
+ ]
+}

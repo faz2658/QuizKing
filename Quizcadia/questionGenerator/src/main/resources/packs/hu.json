@@ -1,0 +1,346 @@
+{
+ "category": "Hungary",
+ "country": "HU",
+ "topics": [
+  {
+   "name": "Hungary: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Hungary?",
+     "a": "Budapest",
+     "wrong": [
+      "Debrecen",
+      "Szeged",
+      "Pécs"
+     ],
+     "why": "It was formed by joining Buda and Pest in 1873."
+    },
+    {
+     "level": 1,
+     "q": "Which king founded the Kingdom of Hungary in 1000?",
+     "a": "Stephen I",
+     "wrong": [
+      "Béla IV",
+      "Matthias Corvinus",
+      "Louis the Great"
+     ],
+     "why": "He is Hungary's patron saint."
+    },
+    {
+     "level": 1,
+     "q": "Which 1956 uprising was crushed by Soviet tanks?",
+     "a": "Hungarian Revolution",
+     "wrong": [
+      "Prague Spring",
+      "Polish October",
+      "Berlin Uprising"
+     ],
+     "why": "It began on 23 October."
+    },
+    {
+     "level": 1,
+     "q": "Which empire did Hungary share with Austria from 1867 to 1918?",
+     "a": "Austro-Hungarian Empire",
+     "wrong": [
+      "Holy Roman Empire",
+      "Ottoman Empire",
+      "German Empire"
+     ],
+     "why": "It was a dual monarchy."
+    },
+    {
+     "level": 1,
+     "q": "Which Hungarian invented the Rubik's Cube?",
+     "a": "Ernő Rubik",
+     "wrong": [
+      "Ferenc Puskás",
+      "László Bíró",
+      "John von Neumann"
+     ],
+     "why": "He invented it in 1974."
+    },
+    {
+     "level": 1,
+     "q": "Which Hungarian invented the ballpoint pen?",
+     "a": "László Bíró",
+     "wrong": [
+      "Ernő Rubik",
+      "Albert Szent-Györgyi",
+      "Ányos Jedlik"
+     ],
+     "why": "Many people still call pens 'biros'."
+    },
+    {
+     "level": 1,
+     "q": "Which nomadic people settled the Carpathian Basin in 895?",
+     "a": "Magyars",
+     "wrong": [
+      "Huns",
+      "Avars",
+      "Bulgars"
+     ],
+     "why": "Árpád led them."
+    },
+    {
+     "level": 2,
+     "q": "Which Renaissance king had a famous library, the Bibliotheca Corviniana?",
+     "a": "Matthias Corvinus",
+     "wrong": [
+      "Stephen I",
+      "Béla IV",
+      "Sigismund"
+     ],
+     "why": "He ruled from 1458 to 1490."
+    },
+    {
+     "level": 2,
+     "q": "Which 1526 battle led to Ottoman rule over much of Hungary?",
+     "a": "Battle of Mohács",
+     "wrong": [
+      "Battle of Kosovo",
+      "Battle of Varna",
+      "Siege of Eger"
+     ],
+     "why": "King Louis II died in it."
+    },
+    {
+     "level": 2,
+     "q": "Which 1848 revolution sought freedom from Austria?",
+     "a": "Hungarian Revolution of 1848",
+     "wrong": [
+      "Spring of Nations in Prague",
+      "Polish Uprising",
+      "Kossuth Rebellion of 1867"
+     ],
+     "why": "Lajos Kossuth led it."
+    },
+    {
+     "level": 2,
+     "q": "Which 1920 treaty took two-thirds of Hungary's territory?",
+     "a": "Treaty of Trianon",
+     "wrong": [
+      "Treaty of Versailles",
+      "Treaty of Saint-Germain",
+      "Treaty of Paris"
+     ],
+     "why": "It is still remembered with sorrow."
+    },
+    {
+     "level": 2,
+     "q": "Which Hungarian scientist discovered vitamin C?",
+     "a": "Albert Szent-Györgyi",
+     "wrong": [
+      "Ignaz Semmelweis",
+      "Ernő Rubik",
+      "Leó Szilárd"
+     ],
+     "why": "He won the 1937 Nobel Prize."
+    },
+    {
+     "level": 3,
+     "q": "Which doctor showed that handwashing saves mothers' lives?",
+     "a": "Ignaz Semmelweis",
+     "wrong": [
+      "Albert Szent-Györgyi",
+      "Robert Koch",
+      "Joseph Lister"
+     ],
+     "why": "He is called the 'saviour of mothers'."
+    },
+    {
+     "level": 3,
+     "q": "Which Hungarian-born mathematician helped design early computers?",
+     "a": "John von Neumann",
+     "wrong": [
+      "Paul Erdős",
+      "Edward Teller",
+      "Leó Szilárd"
+     ],
+     "why": "Most computers use 'von Neumann architecture'."
+    },
+    {
+     "level": 3,
+     "q": "Which leader of 1848 became a hero to Hungarians abroad?",
+     "a": "Lajos Kossuth",
+     "wrong": [
+      "Sándor Petőfi",
+      "István Széchenyi",
+      "Ferenc Deák"
+     ],
+     "why": "He toured the USA in 1851."
+    }
+   ]
+  },
+  {
+   "name": "Hungary: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which river divides Buda and Pest?",
+     "a": "Danube",
+     "wrong": [
+      "Tisza",
+      "Rába",
+      "Drava"
+     ],
+     "why": "Many bridges cross it."
+    },
+    {
+     "level": 1,
+     "q": "Which paprika-spiced stew is Hungary's national dish?",
+     "a": "Goulash",
+     "wrong": [
+      "Borscht",
+      "Ratatouille",
+      "Moussaka"
+     ],
+     "why": "Its name comes from 'gulyás', a cattle herder."
+    },
+    {
+     "level": 1,
+     "q": "Which spice is Hungary famous for?",
+     "a": "Paprika",
+     "wrong": [
+      "Saffron",
+      "Cumin",
+      "Turmeric"
+     ],
+     "why": "Szeged and Kalocsa are paprika centres."
+    },
+    {
+     "level": 1,
+     "q": "What is Hungary's currency?",
+     "a": "Forint",
+     "wrong": [
+      "Euro",
+      "Koruna",
+      "Leu"
+     ],
+     "why": "It was introduced in 1946."
+    },
+    {
+     "level": 1,
+     "q": "Which huge parliament building stands on the Danube in Budapest?",
+     "a": "Hungarian Parliament Building",
+     "wrong": [
+      "Buda Castle",
+      "St Stephen's Basilica",
+      "Vajdahunyad Castle"
+     ],
+     "why": "It is Hungary's largest building."
+    },
+    {
+     "level": 1,
+     "q": "Which lake is the largest in Central Europe?",
+     "a": "Lake Balaton",
+     "wrong": [
+      "Lake Neusiedl",
+      "Lake Velence",
+      "Lake Tisza"
+     ],
+     "why": "It is called the 'Hungarian Sea'."
+    },
+    {
+     "level": 1,
+     "q": "Which Hungarian footballer led the 'Mighty Magyars' in the 1950s?",
+     "a": "Ferenc Puskás",
+     "wrong": [
+      "Sándor Kocsis",
+      "Nándor Hidegkuti",
+      "Zoltán Czibor"
+     ],
+     "why": "FIFA's goal of the year award is named after him."
+    },
+    {
+     "level": 2,
+     "q": "Which famous thermal baths are in Budapest?",
+     "a": "Széchenyi Baths",
+     "wrong": [
+      "Blue Lagoon",
+      "Pamukkale",
+      "Baden-Baden"
+     ],
+     "why": "It is one of Europe's largest spa complexes."
+    },
+    {
+     "level": 2,
+     "q": "Which sweet wine comes from a northeastern region?",
+     "a": "Tokaji",
+     "wrong": [
+      "Port",
+      "Sherry",
+      "Madeira"
+     ],
+     "why": "Louis XIV called it 'the wine of kings'."
+    },
+    {
+     "level": 2,
+     "q": "Which composer and pianist was born in Hungary in 1811?",
+     "a": "Franz Liszt",
+     "wrong": [
+      "Béla Bartók",
+      "Zoltán Kodály",
+      "Ferenc Erkel"
+     ],
+     "why": "He wrote the 'Hungarian Rhapsodies'."
+    },
+    {
+     "level": 2,
+     "q": "Which fried dough snack topped with sour cream and cheese is popular?",
+     "a": "Lángos",
+     "wrong": [
+      "Kürtőskalács",
+      "Pogácsa",
+      "Rétes"
+     ],
+     "why": "It is sold at markets and beaches."
+    },
+    {
+     "level": 2,
+     "q": "Which chimney-shaped sweet bread is roasted on a spit?",
+     "a": "Kürtőskalács (chimney cake)",
+     "wrong": [
+      "Lángos",
+      "Dobos torte",
+      "Somlói galuska"
+     ],
+     "why": "It is coated in sugar."
+    },
+    {
+     "level": 3,
+     "q": "Which composer collected folk songs with Zoltán Kodály?",
+     "a": "Béla Bartók",
+     "wrong": [
+      "Franz Liszt",
+      "Ferenc Erkel",
+      "György Ligeti"
+     ],
+     "why": "He travelled to villages with a phonograph."
+    },
+    {
+     "level": 3,
+     "q": "Which water polo team is the most successful in Olympic history?",
+     "a": "Hungary",
+     "wrong": [
+      "Italy",
+      "Serbia",
+      "USA"
+     ],
+     "why": "It has won nine Olympic golds."
+    },
+    {
+     "level": 3,
+     "q": "Which huge plain in eastern Hungary is a UNESCO site?",
+     "a": "Hortobágy",
+     "wrong": [
+      "Great Hungarian Plain of Serbia",
+      "Pannonian Steppe",
+      "Puszta of Romania"
+     ],
+     "why": "Herdsmen keep grey cattle there."
+    }
+   ]
+  }
+ ]
+}

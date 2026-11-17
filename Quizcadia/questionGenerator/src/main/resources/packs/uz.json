@@ -1,0 +1,346 @@
+{
+ "category": "Uzbekistan",
+ "country": "UZ",
+ "topics": [
+  {
+   "name": "Uzbekistan: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Silk Road city's Registan square is a famous sight?",
+     "a": "Samarkand",
+     "wrong": [
+      "Bukhara",
+      "Khiva",
+      "Tashkent"
+     ],
+     "why": "It has three grand madrasas."
+    },
+    {
+     "level": 1,
+     "q": "Which conqueror made Samarkand his capital in the 1300s?",
+     "a": "Timur (Tamerlane)",
+     "wrong": [
+      "Genghis Khan",
+      "Babur",
+      "Ulugh Beg"
+     ],
+     "why": "His tomb is the Gur-e-Amir."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Uzbekistan become independent?",
+     "a": "1991",
+     "wrong": [
+      "1989",
+      "1993",
+      "1995"
+     ],
+     "why": "Independence Day is 1 September."
+    },
+    {
+     "level": 1,
+     "q": "Who was Uzbekistan's first President?",
+     "a": "Islam Karimov",
+     "wrong": [
+      "Shavkat Mirziyoyev",
+      "Nursultan Nazarbayev",
+      "Saparmurat Niyazov"
+     ],
+     "why": "He led the country until 2016."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient trade route ran through Uzbekistan's cities?",
+     "a": "Silk Road",
+     "wrong": [
+      "Spice Route",
+      "Amber Road",
+      "Tea Horse Road"
+     ],
+     "why": "Merchants traded silk, paper and spices."
+    },
+    {
+     "level": 1,
+     "q": "Which Mughal founder was born in the Fergana Valley?",
+     "a": "Babur",
+     "wrong": [
+      "Akbar",
+      "Timur",
+      "Humayun"
+     ],
+     "why": "He founded the Mughal Empire in India."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of Uzbekistan since 2016?",
+     "a": "Shavkat Mirziyoyev",
+     "wrong": [
+      "Islam Karimov",
+      "Abdulla Aripov",
+      "Rustam Azimov"
+     ],
+     "why": "He opened the country up."
+    },
+    {
+     "level": 2,
+     "q": "Which grandson of Timur built an observatory in Samarkand?",
+     "a": "Ulugh Beg",
+     "wrong": [
+      "Shah Rukh",
+      "Babur",
+      "Husayn Bayqara"
+     ],
+     "why": "He made an accurate star catalogue."
+    },
+    {
+     "level": 2,
+     "q": "Which mathematician from Khwarazm gave his name to the word 'algorithm'?",
+     "a": "Al-Khwarizmi",
+     "wrong": [
+      "Al-Biruni",
+      "Ibn Sina",
+      "Omar Khayyam"
+     ],
+     "why": "His work also gave us 'algebra'."
+    },
+    {
+     "level": 2,
+     "q": "Which walled inner city of Khiva is a UNESCO site?",
+     "a": "Itchan Kala",
+     "wrong": [
+      "Ark of Bukhara",
+      "Shah-i-Zinda",
+      "Kalta Minor"
+     ],
+     "why": "It is surrounded by mud-brick walls."
+    },
+    {
+     "level": 2,
+     "q": "Which scholar born near Bukhara wrote 'The Canon of Medicine'?",
+     "a": "Ibn Sina (Avicenna)",
+     "wrong": [
+      "Al-Biruni",
+      "Al-Farabi",
+      "Al-Khwarizmi"
+     ],
+     "why": "He was born in Afshona."
+    },
+    {
+     "level": 2,
+     "q": "Which Bukhara minaret was spared by Genghis Khan?",
+     "a": "Kalyan Minaret",
+     "wrong": [
+      "Kalta Minor",
+      "Minaret of Jam",
+      "Chor Minor"
+     ],
+     "why": "It was built in 1127."
+    },
+    {
+     "level": 3,
+     "q": "Which avenue of mausoleums in Samarkand is called the 'Living King'?",
+     "a": "Shah-i-Zinda",
+     "wrong": [
+      "Gur-e-Amir",
+      "Bibi-Khanym",
+      "Ulugh Beg Madrasa"
+     ],
+     "why": "It is said a cousin of the Prophet is buried there."
+    },
+    {
+     "level": 3,
+     "q": "Which Khanate was ruled from Khiva?",
+     "a": "Khanate of Khiva",
+     "wrong": [
+      "Emirate of Bukhara",
+      "Kokand Khanate",
+      "Kazakh Khanate"
+     ],
+     "why": "It was also called Khwarazm."
+    },
+    {
+     "level": 3,
+     "q": "Which 2005 events in Andijan drew wide criticism?",
+     "a": "Andijan massacre",
+     "wrong": [
+      "Tashkent protests",
+      "Fergana riots",
+      "Namangan uprising"
+     ],
+     "why": "Troops fired on protesters."
+    }
+   ]
+  },
+  {
+   "name": "Uzbekistan: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Uzbekistan?",
+     "a": "Tashkent",
+     "wrong": [
+      "Samarkand",
+      "Bukhara",
+      "Namangan"
+     ],
+     "why": "It is Central Asia's most populous city."
+    },
+    {
+     "level": 1,
+     "q": "Which rice dish with meat and carrots is Uzbekistan's national dish?",
+     "a": "Plov",
+     "wrong": [
+      "Biryani",
+      "Paella",
+      "Pilaf of Persia"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "What is Uzbekistan's currency?",
+     "a": "Uzbek som",
+     "wrong": [
+      "Tenge",
+      "Ruble",
+      "Manat"
+     ],
+     "why": "It was introduced in 1993."
+    },
+    {
+     "level": 1,
+     "q": "Which sea, shared with Kazakhstan, has largely dried up?",
+     "a": "Aral Sea",
+     "wrong": [
+      "Caspian Sea",
+      "Black Sea",
+      "Dead Sea"
+     ],
+     "why": "Ships lie stranded on the old seabed at Moynaq."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient city has the Ark fortress?",
+     "a": "Bukhara",
+     "wrong": [
+      "Samarkand",
+      "Khiva",
+      "Termez"
+     ],
+     "why": "Its old town is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which colourful patterned silk fabric is an Uzbek tradition?",
+     "a": "Ikat (atlas)",
+     "wrong": [
+      "Batik",
+      "Tartan",
+      "Kente"
+     ],
+     "why": "Margilan is famous for it."
+    },
+    {
+     "level": 1,
+     "q": "Which valley in the east is Uzbekistan's most fertile region?",
+     "a": "Fergana Valley",
+     "wrong": [
+      "Zarafshan Valley",
+      "Chirchiq Valley",
+      "Surkhandarya Valley"
+     ],
+     "why": "It is shared with Kyrgyzstan and Tajikistan."
+    },
+    {
+     "level": 2,
+     "q": "Which two rivers flow towards the Aral Sea?",
+     "a": "Amu Darya and Syr Darya",
+     "wrong": [
+      "Volga and Ural",
+      "Indus and Ganges",
+      "Tigris and Euphrates"
+     ],
+     "why": "Ancient Greeks called them the Oxus and Jaxartes."
+    },
+    {
+     "level": 2,
+     "q": "What is Uzbekistan unusual for, along with Liechtenstein?",
+     "a": "Being doubly landlocked",
+     "wrong": [
+      "Having no army",
+      "Having two capitals",
+      "Having no airports"
+     ],
+     "why": "You must cross two borders to reach the sea."
+    },
+    {
+     "level": 2,
+     "q": "Which domed bread is stamped with patterns?",
+     "a": "Non (lepyoshka)",
+     "wrong": [
+      "Naan of India",
+      "Pita",
+      "Bagel"
+     ],
+     "why": "Samarkand non is famous."
+    },
+    {
+     "level": 2,
+     "q": "Which embroidered wall hangings are an Uzbek craft?",
+     "a": "Suzani",
+     "wrong": [
+      "Kilim",
+      "Tapestry",
+      "Quilt"
+     ],
+     "why": "They often show flowers and suns."
+    },
+    {
+     "level": 2,
+     "q": "Which city's metro stations are decorated like palaces?",
+     "a": "Tashkent",
+     "wrong": [
+      "Samarkand",
+      "Bukhara",
+      "Nukus"
+     ],
+     "why": "It opened in 1977."
+    },
+    {
+     "level": 3,
+     "q": "Which museum in Nukus holds a huge collection of banned Soviet art?",
+     "a": "Savitsky Museum",
+     "wrong": [
+      "Hermitage of Tashkent",
+      "State Museum of Samarkand",
+      "Amir Timur Museum"
+     ],
+     "why": "It is called the 'Louvre of the Steppes'."
+    },
+    {
+     "level": 3,
+     "q": "Which Uzbek gymnast competed at a record eight Olympics?",
+     "a": "Oksana Chusovitina",
+     "wrong": [
+      "Alina Kabaeva",
+      "Nellie Kim",
+      "Svetlana Khorkina"
+     ],
+     "why": "She competed until Tokyo 2020."
+    },
+    {
+     "level": 3,
+     "q": "Which cotton-growing practice once forced students into the fields?",
+     "a": "Forced cotton harvest",
+     "wrong": [
+      "Silk weaving camps",
+      "Rice planting",
+      "Tea picking"
+     ],
+     "why": "It was ended in recent years."
+    }
+   ]
+  }
+ ]
+}

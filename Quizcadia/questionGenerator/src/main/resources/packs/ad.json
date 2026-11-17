@@ -1,0 +1,346 @@
+{
+ "category": "Andorra",
+ "country": "AD",
+ "topics": [
+  {
+   "name": "Andorra: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Andorra?",
+     "a": "Andorra la Vella",
+     "wrong": [
+      "Escaldes-Engordany",
+      "Encamp",
+      "La Massana"
+     ],
+     "why": "It is Europe's highest capital."
+    },
+    {
+     "level": 1,
+     "q": "Which two countries border Andorra?",
+     "a": "France and Spain",
+     "wrong": [
+      "Spain and Portugal",
+      "France and Italy",
+      "Spain and Switzerland"
+     ],
+     "why": "It lies in the Pyrenees."
+    },
+    {
+     "level": 1,
+     "q": "Who are the two heads of state of Andorra?",
+     "a": "The Bishop of Urgell and the French President",
+     "wrong": [
+      "The King of Spain and the French President",
+      "The Pope and the King of Spain",
+      "Two elected consuls"
+     ],
+     "why": "They are called co-princes."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of Andorra?",
+     "a": "Catalan",
+     "wrong": [
+      "Spanish",
+      "French",
+      "Occitan"
+     ],
+     "why": "It is the only country where Catalan is the sole official language."
+    },
+    {
+     "level": 1,
+     "q": "What is Andorra's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Peseta",
+      "French franc",
+      "Andorran diner"
+     ],
+     "why": "It uses the euro by agreement with the EU."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain range covers Andorra?",
+     "a": "Pyrenees",
+     "wrong": [
+      "Alps",
+      "Apennines",
+      "Cantabrian Mountains"
+     ],
+     "why": "It is about 470 square kilometres."
+    },
+    {
+     "level": 1,
+     "q": "What is Andorra famous for among shoppers?",
+     "a": "Low taxes and duty-free goods",
+     "wrong": [
+      "Silk markets",
+      "Gold mining",
+      "Fishing harbours"
+     ],
+     "why": "Many visitors come to shop."
+    },
+    {
+     "level": 2,
+     "q": "Which year did Andorra adopt its first written constitution?",
+     "a": "1993",
+     "wrong": [
+      "1278",
+      "1866",
+      "1945"
+     ],
+     "why": "It joined the UN the same year."
+    },
+    {
+     "level": 2,
+     "q": "Which 1278 agreement set up Andorra's shared rule?",
+     "a": "Paréage",
+     "wrong": [
+      "Magna Carta",
+      "Treaty of Corbeil",
+      "Peace of Westphalia"
+     ],
+     "why": "It was between the Bishop of Urgell and a French count."
+    },
+    {
+     "level": 2,
+     "q": "Which ruler is said to have granted Andorra a charter?",
+     "a": "Charlemagne",
+     "wrong": [
+      "Napoleon",
+      "Louis XIV",
+      "Philip II"
+     ],
+     "why": "The national anthem mentions him."
+    },
+    {
+     "level": 2,
+     "q": "What is Andorra's parliament called?",
+     "a": "General Council",
+     "wrong": [
+      "Cortes",
+      "Assemblée nationale",
+      "Consell Grand"
+     ],
+     "why": "It dates back to 1419."
+    },
+    {
+     "level": 2,
+     "q": "How many parishes is Andorra divided into?",
+     "a": "Seven",
+     "wrong": [
+      "Three",
+      "Twelve",
+      "Five"
+     ],
+     "why": "Sant Julià de Lòria is one of them."
+    },
+    {
+     "level": 3,
+     "q": "Which Russian adventurer briefly declared himself King of Andorra in 1934?",
+     "a": "Boris Skossyreff",
+     "wrong": [
+      "Grigori Rasputin",
+      "Nikolai Romanov",
+      "Pyotr Wrangel"
+     ],
+     "why": "He was arrested within days."
+    },
+    {
+     "level": 3,
+     "q": "Which Spanish region borders Andorra?",
+     "a": "Catalonia",
+     "wrong": [
+      "Aragon",
+      "Navarre",
+      "Basque Country"
+     ],
+     "why": "Andorra shares its language with it."
+    },
+    {
+     "level": 3,
+     "q": "Which Spanish town is the seat of Andorra's co-prince bishop?",
+     "a": "La Seu d'Urgell",
+     "wrong": [
+      "Lleida",
+      "Girona",
+      "Vic"
+     ],
+     "why": "It is just south of the border."
+    }
+   ]
+  },
+  {
+   "name": "Andorra: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Andorra's main tourist activity in winter?",
+     "a": "Skiing",
+     "wrong": [
+      "Ice fishing",
+      "Dog sledding",
+      "Surfing"
+     ],
+     "why": "Grandvalira is its largest ski area."
+    },
+    {
+     "level": 1,
+     "q": "Which is Andorra's largest ski area?",
+     "a": "Grandvalira",
+     "wrong": [
+      "Vallnord",
+      "Baqueira-Beret",
+      "La Molina"
+     ],
+     "why": "It hosts World Cup races."
+    },
+    {
+     "level": 1,
+     "q": "Which spa centre with a glass spire is in Escaldes?",
+     "a": "Caldea",
+     "wrong": [
+      "Blue Lagoon",
+      "Thermae Bath",
+      "Széchenyi Baths"
+     ],
+     "why": "It is fed by hot springs."
+    },
+    {
+     "level": 1,
+     "q": "What is the national day of Andorra?",
+     "a": "8 September (Our Lady of Meritxell)",
+     "wrong": [
+      "11 September",
+      "14 July",
+      "12 October"
+     ],
+     "why": "She is the country's patron saint."
+    },
+    {
+     "level": 1,
+     "q": "Is Andorra a member of the European Union?",
+     "a": "No",
+     "wrong": [
+      "Yes, since 2004",
+      "Yes, since 1995",
+      "Yes, since 2013"
+     ],
+     "why": "It has a customs union for some goods."
+    },
+    {
+     "level": 1,
+     "q": "Which European microstate lies between France and Spain?",
+     "a": "Andorra",
+     "wrong": [
+      "Monaco",
+      "San Marino",
+      "Liechtenstein"
+     ],
+     "why": "It has about 80,000 people."
+    },
+    {
+     "level": 1,
+     "q": "What is the main road between France and Andorra called?",
+     "a": "Envalira Pass",
+     "wrong": [
+      "Brenner Pass",
+      "Somport",
+      "St Gotthard Pass"
+     ],
+     "why": "It is the highest paved pass in the Pyrenees."
+    },
+    {
+     "level": 2,
+     "q": "Which valley in Andorra is a UNESCO site?",
+     "a": "Madriu-Perafita-Claror Valley",
+     "wrong": [
+      "Vall de Núria",
+      "Aran Valley",
+      "Ordesa Valley"
+     ],
+     "why": "It shows centuries of mountain farming."
+    },
+    {
+     "level": 2,
+     "q": "Which Romanesque church style is common across Andorra?",
+     "a": "Romanesque with bell towers",
+     "wrong": [
+      "Gothic with flying buttresses",
+      "Baroque with domes",
+      "Modernista"
+     ],
+     "why": "Sant Joan de Caselles is a fine example."
+    },
+    {
+     "level": 2,
+     "q": "Which stew of cabbage, potato and pork is a mountain favourite?",
+     "a": "Trinxat",
+     "wrong": [
+      "Paella",
+      "Fabada",
+      "Cocido"
+     ],
+     "why": "It is fried like a cake."
+    },
+    {
+     "level": 2,
+     "q": "Which basketball club from Andorra has played in Spain's top league?",
+     "a": "MoraBanc Andorra",
+     "wrong": [
+      "Valencia Basket",
+      "Joventut Badalona",
+      "Unicaja"
+     ],
+     "why": "It is one of the strongest in the region."
+    },
+    {
+     "level": 2,
+     "q": "Which country handles Andorra's defence?",
+     "a": "Spain and France",
+     "wrong": [
+      "Italy",
+      "NATO",
+      "Switzerland"
+     ],
+     "why": "Andorra has no army."
+    },
+    {
+     "level": 3,
+     "q": "Which Andorran sanctuary was rebuilt by architect Ricardo Bofill?",
+     "a": "Sanctuary of Meritxell",
+     "wrong": [
+      "Sant Joan de Caselles",
+      "Santa Coloma",
+      "Sant Esteve"
+     ],
+     "why": "The old one burned in 1972."
+    },
+    {
+     "level": 3,
+     "q": "Which Andorran win in 2017 shocked European football?",
+     "a": "1–0 against Hungary",
+     "wrong": [
+      "2–0 against England",
+      "1–0 against France",
+      "3–1 against Portugal"
+     ],
+     "why": "It ended a run of 86 games without a competitive win."
+    },
+    {
+     "level": 3,
+     "q": "What is the highest peak in Andorra?",
+     "a": "Coma Pedrosa",
+     "wrong": [
+      "Aneto",
+      "Pic du Midi",
+      "Monte Perdido"
+     ],
+     "why": "It is about 2,940 m high."
+    }
+   ]
+  }
+ ]
+}

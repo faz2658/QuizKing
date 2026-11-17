@@ -28,27 +28,40 @@ public final class Summaries {
 
 	public record GameSummary(int gameId, String gameName, String gameDescription, String gameImage, String gameRules,
 			int categoryId, TopicRef topic, GameType gameType, GameQuestionLevel questionLevels, int questionCount,
-			String createdBy, Date createdOn) {
+			String createdBy, Date createdOn, String country) {
+
+		/** From a list query (no questions loaded); {@code country} is the game's country set, null for world trivia. */
+		static GameSummary of(com.fazeel.quizcadia.catalog.CatalogCards.GameCard g, String country) {
+			return new GameSummary(g.gameId(), g.gameName(), g.gameDescription(), g.gameImage(), g.gameRules(),
+					g.categoryId(), g.topicName() == null ? null : new TopicRef(g.topicId() == null ? 0 : g.topicId(), g.topicName()),
+					g.gameType(), g.questionLevels(), g.questionCount(), g.createdBy(), g.createdOn(), country);
+		}
 
 		static GameSummary of(Game g) {
 			return new GameSummary(g.getGameId(), g.getGameName(), g.getGameDescription(), g.getGameImage(),
 					g.getGameRules(), g.getCategoryId(), TopicRef.of(g.getTopic()), g.getGameType(),
 					g.getQuestionLevels(), g.getQuestions() == null ? 0 : g.getQuestions().size(), g.getCreatedBy(),
-					g.getCreatedOn());
+					g.getCreatedOn(), null);
 		}
 
 		static GameSummary of(MultiPlayerGame g) {
 			return new GameSummary(g.getGameId(), g.getGameName(), g.getGameDescription(), g.getGameImage(),
 					g.getGameRules(), g.getCategoryId(), TopicRef.of(g.getTopic()), g.getGameType(),
 					g.getQuestionLevel(), g.getAutoquestions() == null ? 0 : g.getAutoquestions().size(),
-					g.getCreatedBy(), g.getCreatedOn());
+					g.getCreatedBy(), g.getCreatedOn(), null);
 		}
 	}
 
 	public record TopicSummary(int topicId, String topicName, int questionCount) {
 	}
 
-	public record CategorySummary(int categoryId, String categoryName, String categoryImage, List<TopicSummary> topic) {
+	public record CategorySummary(int categoryId, String categoryName, String categoryImage, List<TopicSummary> topic,
+			String countryCode) {
+
+		static CategorySummary of(com.fazeel.quizcadia.catalog.CatalogCards.CategoryCard c) {
+			return new CategorySummary(c.categoryId(), c.categoryName(), c.categoryImage(), c.topics().stream()
+					.map(t -> new TopicSummary(t.topicId(), t.topicName(), t.questionCount())).toList(), c.countryCode());
+		}
 
 		static CategorySummary of(Category c) {
 			List<TopicSummary> topics = Objects.requireNonNullElse(c.getTopic(), List.<Topic>of()).stream()
@@ -56,7 +69,12 @@ public final class Summaries {
 					.map(t -> new TopicSummary(t.getTopicId(), t.getTopicName(),
 							t.getQuestions() == null ? 0 : t.getQuestions().size()))
 					.toList();
-			return new CategorySummary(c.getCategoryId(), c.getCategoryName(), c.getCategoryImage(), topics);
+			return new CategorySummary(c.getCategoryId(), c.getCategoryName(), c.getCategoryImage(), topics,
+					c.getCountryCode());
 		}
+	}
+
+	/** A country with its own question set, for the International page. */
+	public record CountrySummary(String country, int categoryId, String categoryName, int games, int questions) {
 	}
 }

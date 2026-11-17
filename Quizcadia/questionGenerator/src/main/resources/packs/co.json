@@ -1,0 +1,346 @@
+{
+ "category": "Colombia",
+ "country": "CO",
+ "topics": [
+  {
+   "name": "Colombia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which liberator led Colombia's fight for independence from Spain?",
+     "a": "Simón Bolívar",
+     "wrong": [
+      "José de San Martín",
+      "Antonio José de Sucre",
+      "Francisco de Paula Santander"
+     ],
+     "why": "He was the first President of Gran Colombia."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Colombia declare independence?",
+     "a": "1810",
+     "wrong": [
+      "1821",
+      "1819",
+      "1830"
+     ],
+     "why": "20 July is Independence Day."
+    },
+    {
+     "level": 1,
+     "q": "Which 1819 battle secured Colombia's independence?",
+     "a": "Battle of Boyacá",
+     "wrong": [
+      "Battle of Ayacucho",
+      "Battle of Carabobo",
+      "Battle of Pichincha"
+     ],
+     "why": "It is remembered on 7 August."
+    },
+    {
+     "level": 1,
+     "q": "Which Colombian author won the 1982 Nobel Prize in Literature?",
+     "a": "Gabriel García Márquez",
+     "wrong": [
+      "Álvaro Mutis",
+      "Jorge Isaacs",
+      "Fernando Vallejo"
+     ],
+     "why": "He wrote 'One Hundred Years of Solitude'."
+    },
+    {
+     "level": 1,
+     "q": "What was the union of Colombia, Venezuela, Ecuador and Panama called?",
+     "a": "Gran Colombia",
+     "wrong": [
+      "United Provinces",
+      "Andean Union",
+      "New Granada Federation"
+     ],
+     "why": "It broke apart in 1831."
+    },
+    {
+     "level": 1,
+     "q": "What was the Spanish colony covering Colombia called?",
+     "a": "New Granada",
+     "wrong": [
+      "New Spain",
+      "Río de la Plata",
+      "New Castile"
+     ],
+     "why": "Its viceroy sat in Bogotá."
+    },
+    {
+     "level": 1,
+     "q": "Which President won the 2016 Nobel Peace Prize for a deal with the FARC?",
+     "a": "Juan Manuel Santos",
+     "wrong": [
+      "Álvaro Uribe",
+      "Iván Duque",
+      "Gustavo Petro"
+     ],
+     "why": "The deal ended over 50 years of conflict."
+    },
+    {
+     "level": 2,
+     "q": "Which country separated from Colombia in 1903?",
+     "a": "Panama",
+     "wrong": [
+      "Venezuela",
+      "Ecuador",
+      "Costa Rica"
+     ],
+     "why": "The US then built the Panama Canal."
+    },
+    {
+     "level": 2,
+     "q": "Which legendary city of gold did Spaniards hunt for in Colombia?",
+     "a": "El Dorado",
+     "wrong": [
+      "Cíbola",
+      "Paititi",
+      "Quivira"
+     ],
+     "why": "The legend began with a Muisca ritual at Lake Guatavita."
+    },
+    {
+     "level": 2,
+     "q": "Which period of violence began in 1948 after the murder of Jorge Gaitán?",
+     "a": "La Violencia",
+     "wrong": [
+      "La Patria Boba",
+      "Thousand Days' War",
+      "La Guerra Sucia"
+     ],
+     "why": "It lasted about ten years."
+    },
+    {
+     "level": 2,
+     "q": "Which Indigenous people lived in the highlands around Bogotá?",
+     "a": "Muisca",
+     "wrong": [
+      "Inca",
+      "Maya",
+      "Taíno"
+     ],
+     "why": "They were skilled goldsmiths."
+    },
+    {
+     "level": 2,
+     "q": "Who became Colombia's first left-wing President, in 2022?",
+     "a": "Gustavo Petro",
+     "wrong": [
+      "Juan Manuel Santos",
+      "Álvaro Uribe",
+      "Iván Duque"
+     ],
+     "why": "His Vice President is Francia Márquez."
+    },
+    {
+     "level": 3,
+     "q": "Which walled Caribbean city is a UNESCO site?",
+     "a": "Cartagena",
+     "wrong": [
+      "Santa Marta",
+      "Barranquilla",
+      "Cali"
+     ],
+     "why": "Its walls protected Spanish treasure fleets."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient 'Lost City' in the Sierra Nevada de Santa Marta was found in 1972?",
+     "a": "Ciudad Perdida",
+     "wrong": [
+      "Machu Picchu",
+      "San Agustín",
+      "Tierradentro"
+     ],
+     "why": "It is older than Machu Picchu."
+    },
+    {
+     "level": 3,
+     "q": "Who was the 'Man of Laws', Bolívar's vice-president?",
+     "a": "Francisco de Paula Santander",
+     "wrong": [
+      "Antonio Nariño",
+      "Rafael Núñez",
+      "Camilo Torres"
+     ],
+     "why": "He later became President of New Granada."
+    }
+   ]
+  },
+  {
+   "name": "Colombia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Colombia?",
+     "a": "Bogotá",
+     "wrong": [
+      "Medellín",
+      "Cali",
+      "Cartagena"
+     ],
+     "why": "It sits at about 2,640 m."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is Colombia world-famous for?",
+     "a": "Coffee",
+     "wrong": [
+      "Tea",
+      "Cocoa",
+      "Vanilla"
+     ],
+     "why": "The Coffee Cultural Landscape is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which Colombian singer had hits with 'Hips Don't Lie' and 'Waka Waka'?",
+     "a": "Shakira",
+     "wrong": [
+      "Karol G",
+      "Juanes",
+      "Maluma"
+     ],
+     "why": "She is from Barranquilla."
+    },
+    {
+     "level": 1,
+     "q": "Which dance music from Colombia's Caribbean coast spread across Latin America?",
+     "a": "Cumbia",
+     "wrong": [
+      "Tango",
+      "Merengue",
+      "Bachata"
+     ],
+     "why": "It mixes African, Indigenous and Spanish roots."
+    },
+    {
+     "level": 1,
+     "q": "Which city is called the 'City of Eternal Spring'?",
+     "a": "Medellín",
+     "wrong": [
+      "Cali",
+      "Bucaramanga",
+      "Pereira"
+     ],
+     "why": "Its mild climate lasts all year."
+    },
+    {
+     "level": 1,
+     "q": "What is Colombia's currency?",
+     "a": "Colombian peso",
+     "wrong": [
+      "Sol",
+      "Bolívar",
+      "Real"
+     ],
+     "why": "Its code is COP."
+    },
+    {
+     "level": 1,
+     "q": "Which two seas or oceans does Colombia have coasts on?",
+     "a": "Pacific Ocean and Caribbean Sea",
+     "wrong": [
+      "Indian Ocean and Pacific",
+      "Atlantic and Indian",
+      "Mediterranean Sea and Caribbean"
+     ],
+     "why": "It is the only South American country with both."
+    },
+    {
+     "level": 2,
+     "q": "Which city is called the world's salsa capital?",
+     "a": "Cali",
+     "wrong": [
+      "Medellín",
+      "Barranquilla",
+      "Bogotá"
+     ],
+     "why": "It holds a huge salsa festival."
+    },
+    {
+     "level": 2,
+     "q": "Which river is called the 'river of five colours'?",
+     "a": "Caño Cristales",
+     "wrong": [
+      "Magdalena",
+      "Amazon",
+      "Cauca"
+     ],
+     "why": "Water plants turn it red, yellow and green."
+    },
+    {
+     "level": 2,
+     "q": "Which Colombian carnival is on UNESCO's heritage list?",
+     "a": "Barranquilla Carnival",
+     "wrong": [
+      "Cali Fair",
+      "Medellín Flower Festival",
+      "Carnival of Pasto"
+     ],
+     "why": "It is one of Latin America's biggest."
+    },
+    {
+     "level": 2,
+     "q": "Which corn cakes are a Colombian staple?",
+     "a": "Arepas",
+     "wrong": [
+      "Tamales",
+      "Empanadas",
+      "Pupusas"
+     ],
+     "why": "They are eaten at breakfast and beyond."
+    },
+    {
+     "level": 2,
+     "q": "Which is Colombia's main river?",
+     "a": "Magdalena",
+     "wrong": [
+      "Cauca",
+      "Amazon",
+      "Orinoco"
+     ],
+     "why": "It runs north to the Caribbean."
+    },
+    {
+     "level": 3,
+     "q": "Which Colombian artist painted and sculpted plump, rounded figures?",
+     "a": "Fernando Botero",
+     "wrong": [
+      "Débora Arango",
+      "Alejandro Obregón",
+      "Omar Rayo"
+     ],
+     "why": "Medellín has a plaza of his sculptures."
+    },
+    {
+     "level": 3,
+     "q": "Which underground cathedral was carved into a salt mine near Bogotá?",
+     "a": "Salt Cathedral of Zipaquirá",
+     "wrong": [
+      "Las Lajas Sanctuary",
+      "Bogotá Cathedral",
+      "Medellín Cathedral"
+     ],
+     "why": "It holds services deep below ground."
+    },
+    {
+     "level": 3,
+     "q": "Which Bogotá soup is made with chicken, corn and three kinds of potato?",
+     "a": "Ajiaco",
+     "wrong": [
+      "Sancocho",
+      "Mondongo",
+      "Bandeja paisa"
+     ],
+     "why": "It is flavoured with the herb guasca."
+    }
+   ]
+  }
+ ]
+}

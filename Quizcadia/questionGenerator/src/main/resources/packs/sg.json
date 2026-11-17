@@ -1,0 +1,1092 @@
+{
+ "category": "Singapore",
+ "country": "SG",
+ "topics": [
+  {
+   "name": "Singapore History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who set up a British trading post in Singapore in 1819?",
+     "a": "Stamford Raffles",
+     "wrong": [
+      "Francis Light",
+      "William Farquhar",
+      "James Brooke"
+     ],
+     "why": "Raffles Hotel is named after him."
+    },
+    {
+     "level": 1,
+     "q": "Who was Singapore's first Prime Minister?",
+     "a": "Lee Kuan Yew",
+     "wrong": [
+      "Goh Chok Tong",
+      "Lee Hsien Loong",
+      "Yusof Ishak"
+     ],
+     "why": "He led the country from 1959 to 1990."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Singapore become an independent country?",
+     "a": "1965",
+     "wrong": [
+      "1963",
+      "1959",
+      "1957"
+     ],
+     "why": "It became independent on 9 August 1965."
+    },
+    {
+     "level": 1,
+     "q": "Which federation did Singapore leave in 1965?",
+     "a": "Malaysia",
+     "wrong": [
+      "Indonesia",
+      "The Straits Settlements",
+      "ASEAN"
+     ],
+     "why": "It had joined only two years earlier."
+    },
+    {
+     "level": 1,
+     "q": "On what date is Singapore's National Day?",
+     "a": "9 August",
+     "wrong": [
+      "31 August",
+      "16 September",
+      "1 October"
+     ],
+     "why": "It is marked with the National Day Parade."
+    },
+    {
+     "level": 1,
+     "q": "Which country occupied Singapore from 1942 to 1945?",
+     "a": "Japan",
+     "wrong": [
+      "Germany",
+      "China",
+      "Thailand"
+     ],
+     "why": "The British surrendered in February 1942."
+    },
+    {
+     "level": 1,
+     "q": "Who was Singapore's first President?",
+     "a": "Yusof Ishak",
+     "wrong": [
+      "Benjamin Sheares",
+      "Devan Nair",
+      "Wee Kim Wee"
+     ],
+     "why": "He appears on Singapore's banknotes."
+    },
+    {
+     "level": 2,
+     "q": "What did the Japanese rename Singapore during the occupation?",
+     "a": "Syonan-to",
+     "wrong": [
+      "Temasek",
+      "Singapura",
+      "Tumasik"
+     ],
+     "why": "It means 'Light of the South Island'."
+    },
+    {
+     "level": 2,
+     "q": "Which old name for Singapore means 'sea town'?",
+     "a": "Temasek",
+     "wrong": [
+      "Malacca",
+      "Johor",
+      "Riau"
+     ],
+     "why": "It appears in old Javanese records."
+    },
+    {
+     "level": 2,
+     "q": "Which British general surrendered Singapore in 1942?",
+     "a": "Arthur Percival",
+     "wrong": [
+      "Bernard Montgomery",
+      "Archibald Wavell",
+      "Robert Brooke-Popham"
+     ],
+     "why": "Churchill called it the worst disaster in British military history."
+    },
+    {
+     "level": 2,
+     "q": "From 1826, Singapore was part of which British colony?",
+     "a": "Straits Settlements",
+     "wrong": [
+      "Federated Malay States",
+      "British Borneo",
+      "British Malaya Union"
+     ],
+     "why": "It included Penang and Malacca."
+    },
+    {
+     "level": 2,
+     "q": "Who was Singapore's second Prime Minister?",
+     "a": "Goh Chok Tong",
+     "wrong": [
+      "Lee Hsien Loong",
+      "Lawrence Wong",
+      "S. Rajaratnam"
+     ],
+     "why": "He served from 1990 to 2004."
+    },
+    {
+     "level": 2,
+     "q": "Who became Prime Minister of Singapore in 2024?",
+     "a": "Lawrence Wong",
+     "wrong": [
+      "Lee Hsien Loong",
+      "Tharman Shanmugaratnam",
+      "Heng Swee Keat"
+     ],
+     "why": "He is the country's fourth Prime Minister."
+    },
+    {
+     "level": 3,
+     "q": "Which prince is said to have named the island Singapura after seeing a lion?",
+     "a": "Sang Nila Utama",
+     "wrong": [
+      "Parameswara",
+      "Hang Tuah",
+      "Iskandar Shah"
+     ],
+     "why": "Singapura means 'lion city'."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Singapore gain full self-government?",
+     "a": "1959",
+     "wrong": [
+      "1965",
+      "1963",
+      "1955"
+     ],
+     "why": "Lee Kuan Yew became Prime Minister that year."
+    },
+    {
+     "level": 3,
+     "q": "Who became President of Singapore in 2023?",
+     "a": "Tharman Shanmugaratnam",
+     "wrong": [
+      "Halimah Yacob",
+      "Tony Tan",
+      "S. R. Nathan"
+     ],
+     "why": "He won about 70% of the vote."
+    }
+   ]
+  },
+  {
+   "name": "Singapore Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which hotel has three towers joined by a rooftop SkyPark?",
+     "a": "Marina Bay Sands",
+     "wrong": [
+      "Raffles Hotel",
+      "Fullerton Hotel",
+      "Pan Pacific"
+     ],
+     "why": "Its infinity pool is 57 floors up."
+    },
+    {
+     "level": 1,
+     "q": "What is Singapore's half-lion, half-fish statue called?",
+     "a": "Merlion",
+     "wrong": [
+      "Merdragon",
+      "Singa",
+      "Leofish"
+     ],
+     "why": "It stands at Merlion Park by Marina Bay."
+    },
+    {
+     "level": 1,
+     "q": "Which resort island is home to Universal Studios Singapore?",
+     "a": "Sentosa",
+     "wrong": [
+      "Pulau Ubin",
+      "Jurong Island",
+      "St John's Island"
+     ],
+     "why": "It is linked to the main island by a causeway."
+    },
+    {
+     "level": 1,
+     "q": "Which country is joined to Singapore by the Causeway?",
+     "a": "Malaysia",
+     "wrong": [
+      "Indonesia",
+      "Thailand",
+      "Brunei"
+     ],
+     "why": "It links Woodlands to Johor Bahru."
+    },
+    {
+     "level": 1,
+     "q": "Which gardens are famous for their giant 'Supertrees'?",
+     "a": "Gardens by the Bay",
+     "wrong": [
+      "Singapore Botanic Gardens",
+      "Fort Canning Park",
+      "East Coast Park"
+     ],
+     "why": "They light up at night."
+    },
+    {
+     "level": 1,
+     "q": "What is Singapore's main airport called?",
+     "a": "Changi Airport",
+     "wrong": [
+      "Seletar Airport",
+      "Paya Lebar Airport",
+      "Tengah Airport"
+     ],
+     "why": "It has an indoor waterfall at Jewel."
+    },
+    {
+     "level": 1,
+     "q": "Which country's islands lie just south across the Singapore Strait?",
+     "a": "Indonesia",
+     "wrong": [
+      "Malaysia",
+      "Brunei",
+      "Philippines"
+     ],
+     "why": "Batam and Bintan are a short ferry ride away."
+    },
+    {
+     "level": 2,
+     "q": "What is Singapore's highest natural point?",
+     "a": "Bukit Timah Hill",
+     "wrong": [
+      "Mount Faber",
+      "Fort Canning Hill",
+      "Bukit Batok"
+     ],
+     "why": "It is 163 m high."
+    },
+    {
+     "level": 2,
+     "q": "Which northeastern island keeps old kampong village life?",
+     "a": "Pulau Ubin",
+     "wrong": [
+      "Sentosa",
+      "Pulau Tekong",
+      "Kusu Island"
+     ],
+     "why": "Visitors explore it by bicycle."
+    },
+    {
+     "level": 2,
+     "q": "What is Singapore's only UNESCO World Heritage Site?",
+     "a": "Singapore Botanic Gardens",
+     "wrong": [
+      "Gardens by the Bay",
+      "Chinatown",
+      "Raffles Hotel"
+     ],
+     "why": "It was listed in 2015."
+    },
+    {
+     "level": 2,
+     "q": "Which neighbourhood is home to the Sultan Mosque?",
+     "a": "Kampong Glam",
+     "wrong": [
+      "Little India",
+      "Chinatown",
+      "Tiong Bahru"
+     ],
+     "why": "Arab Street runs through it."
+    },
+    {
+     "level": 2,
+     "q": "Roughly how large is Singapore's land area?",
+     "a": "About 735 km²",
+     "wrong": [
+      "About 7,350 km²",
+      "About 73 km²",
+      "About 2,000 km²"
+     ],
+     "why": "Land reclamation keeps adding to it."
+    },
+    {
+     "level": 2,
+     "q": "Which river flows past Boat Quay and Clarke Quay?",
+     "a": "Singapore River",
+     "wrong": [
+      "Kallang River",
+      "Rochor River",
+      "Geylang River"
+     ],
+     "why": "It was once the centre of trade."
+    },
+    {
+     "level": 3,
+     "q": "Which wetland reserve in the northwest is famous for migratory birds?",
+     "a": "Sungei Buloh",
+     "wrong": [
+      "MacRitchie",
+      "Labrador Park",
+      "Chek Jawa"
+     ],
+     "why": "Crocodiles can also be seen there."
+    },
+    {
+     "level": 3,
+     "q": "Which island off the southwest coast is home to petrochemical plants?",
+     "a": "Jurong Island",
+     "wrong": [
+      "Sentosa",
+      "Pulau Ubin",
+      "Pulau Semakau"
+     ],
+     "why": "It was made by joining seven islands."
+    },
+    {
+     "level": 3,
+     "q": "Which wave-shaped footbridge is part of the Southern Ridges?",
+     "a": "Henderson Waves",
+     "wrong": [
+      "Helix Bridge",
+      "Jubilee Bridge",
+      "Cavenagh Bridge"
+     ],
+     "why": "It is Singapore's highest pedestrian bridge."
+    }
+   ]
+  },
+  {
+   "name": "Singapore Sport",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which swimmer won Singapore's first Olympic gold medal, in 2016?",
+     "a": "Joseph Schooling",
+     "wrong": [
+      "Quah Zheng Wen",
+      "Ang Peng Siong",
+      "Loh Kean Yew"
+     ],
+     "why": "He set an Olympic record."
+    },
+    {
+     "level": 1,
+     "q": "Which swimming legend did Joseph Schooling beat in the 2016 final?",
+     "a": "Michael Phelps",
+     "wrong": [
+      "Ryan Lochte",
+      "Caeleb Dressel",
+      "Chad le Clos"
+     ],
+     "why": "Schooling had met Phelps as a boy."
+    },
+    {
+     "level": 1,
+     "q": "Singapore hosted Formula One's first ever night race in which year?",
+     "a": "2008",
+     "wrong": [
+      "2000",
+      "2012",
+      "2015"
+     ],
+     "why": "It runs around Marina Bay."
+    },
+    {
+     "level": 1,
+     "q": "Which sport does Loh Kean Yew play?",
+     "a": "Badminton",
+     "wrong": [
+      "Table tennis",
+      "Tennis",
+      "Squash"
+     ],
+     "why": "He won the 2021 World Championships."
+    },
+    {
+     "level": 1,
+     "q": "What is Singapore's national football team nicknamed?",
+     "a": "The Lions",
+     "wrong": [
+      "The Tigers",
+      "The Eagles",
+      "The Dragons"
+     ],
+     "why": "It comes from Singapore's name, Lion City."
+    },
+    {
+     "level": 1,
+     "q": "Which stadium with a retractable dome is at the Sports Hub?",
+     "a": "National Stadium",
+     "wrong": [
+      "Jalan Besar Stadium",
+      "Bishan Stadium",
+      "Kallang Theatre"
+     ],
+     "why": "It opened in 2014."
+    },
+    {
+     "level": 1,
+     "q": "In which event did Joseph Schooling win Olympic gold?",
+     "a": "100 m butterfly",
+     "wrong": [
+      "200 m freestyle",
+      "100 m backstroke",
+      "200 m individual medley"
+     ],
+     "why": "He swam 50.39 seconds."
+    },
+    {
+     "level": 2,
+     "q": "Which teenager won Olympic bronze in kitefoiling at Paris 2024?",
+     "a": "Max Maeder",
+     "wrong": [
+      "Ryan Lo",
+      "Amanda Ng",
+      "Joseph Schooling"
+     ],
+     "why": "He was 17."
+    },
+    {
+     "level": 2,
+     "q": "Who won Singapore's first Olympic medal, in 1960?",
+     "a": "Tan Howe Liang",
+     "wrong": [
+      "Ang Peng Siong",
+      "Feng Tianwei",
+      "C. Kunalan"
+     ],
+     "why": "He won weightlifting silver in Rome."
+    },
+    {
+     "level": 2,
+     "q": "Which multi-sport event did Singapore host for the first time ever in 2010?",
+     "a": "Youth Olympic Games",
+     "wrong": [
+      "Asian Games",
+      "Commonwealth Games",
+      "World Games"
+     ],
+     "why": "It was the first Youth Olympics."
+    },
+    {
+     "level": 2,
+     "q": "In which sport did Singapore's women win Olympic silver in 2008?",
+     "a": "Table tennis",
+     "wrong": [
+      "Badminton",
+      "Swimming",
+      "Sailing"
+     ],
+     "why": "They won it in the team event."
+    },
+    {
+     "level": 2,
+     "q": "What is the Formula One circuit in Singapore called?",
+     "a": "Marina Bay Street Circuit",
+     "wrong": [
+      "Sentosa Raceway",
+      "Changi Circuit",
+      "Kallang Speedway"
+     ],
+     "why": "It passes the Esplanade and the Padang."
+    },
+    {
+     "level": 2,
+     "q": "Which table tennis player won two Olympic bronzes for Singapore in 2012?",
+     "a": "Feng Tianwei",
+     "wrong": [
+      "Li Jiawei",
+      "Yu Mengyu",
+      "Wang Yuegu"
+     ],
+     "why": "She won singles and team bronze."
+    },
+    {
+     "level": 3,
+     "q": "Which Singapore swimmer was called 'Asia's fastest man in the water' in the 1980s?",
+     "a": "Ang Peng Siong",
+     "wrong": [
+      "Tan Howe Liang",
+      "Joseph Schooling",
+      "David Lim"
+     ],
+     "why": "He once ranked first in the world in the 50 m freestyle."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Singapore most recently host the SEA Games?",
+     "a": "2015",
+     "wrong": [
+      "2005",
+      "1993",
+      "2023"
+     ],
+     "why": "It was held to mark 50 years of independence."
+    },
+    {
+     "level": 3,
+     "q": "Which women's golf tournament at Sentosa is nicknamed 'Asia's Major'?",
+     "a": "HSBC Women's World Championship",
+     "wrong": [
+      "Singapore Open",
+      "Asian Tour Championship",
+      "LPGA Thailand"
+     ],
+     "why": "It attracts many of the world's top players."
+    }
+   ]
+  },
+  {
+   "name": "Singapore Film, TV & Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which 2018 Hollywood romantic comedy was largely set in Singapore?",
+     "a": "Crazy Rich Asians",
+     "wrong": [
+      "The Joy Luck Club",
+      "Parasite",
+      "Always Be My Maybe"
+     ],
+     "why": "It is based on Kevin Kwan's novel."
+    },
+    {
+     "level": 1,
+     "q": "Singaporean star JJ Lin sings mainly in which genre?",
+     "a": "Mandopop",
+     "wrong": [
+      "K-pop",
+      "J-pop",
+      "Cantopop"
+     ],
+     "why": "He is hugely popular across the Chinese-speaking world."
+    },
+    {
+     "level": 1,
+     "q": "What is 'Singlish'?",
+     "a": "Singapore's English-based creole",
+     "wrong": [
+      "A TV channel",
+      "A dance style",
+      "A Malay dialect"
+     ],
+     "why": "It mixes English with Malay, Hokkien and Tamil words."
+    },
+    {
+     "level": 1,
+     "q": "Which Singapore-born singer had huge Mandopop hits from 2000 onwards?",
+     "a": "Stefanie Sun",
+     "wrong": [
+      "Jay Chou",
+      "Faye Wong",
+      "Eason Chan"
+     ],
+     "why": "Her fans call her Yanzi."
+    },
+    {
+     "level": 1,
+     "q": "Which waterfront arts centre has spiky roofs that look like durians?",
+     "a": "Esplanade – Theatres on the Bay",
+     "wrong": [
+      "Victoria Theatre",
+      "ArtScience Museum",
+      "Capitol Theatre"
+     ],
+     "why": "Its spikes are sunshades."
+    },
+    {
+     "level": 1,
+     "q": "Which sitcom builder wore yellow boots and a curly perm?",
+     "a": "Phua Chu Kang",
+     "wrong": [
+      "Mr Kiasu",
+      "Ah Beng",
+      "Under One Roof's Ah Kong"
+     ],
+     "why": "Gurmit Singh played him."
+    },
+    {
+     "level": 1,
+     "q": "Which lotus-shaped museum stands next to Marina Bay Sands?",
+     "a": "ArtScience Museum",
+     "wrong": [
+      "National Gallery",
+      "Asian Civilisations Museum",
+      "Peranakan Museum"
+     ],
+     "why": "Moshe Safdie designed it."
+    },
+    {
+     "level": 2,
+     "q": "Which Anthony Chen film won the Caméra d'Or at Cannes in 2013?",
+     "a": "Ilo Ilo",
+     "wrong": [
+      "12 Storeys",
+      "Pop Aye",
+      "Wet Season"
+     ],
+     "why": "It is about a family and their Filipino helper."
+    },
+    {
+     "level": 2,
+     "q": "Which director made the hit comedy 'I Not Stupid'?",
+     "a": "Jack Neo",
+     "wrong": [
+      "Eric Khoo",
+      "Royston Tan",
+      "Anthony Chen"
+     ],
+     "why": "It came out in 2002."
+    },
+    {
+     "level": 2,
+     "q": "Which singer first sang the National Day song 'Home'?",
+     "a": "Kit Chan",
+     "wrong": [
+      "Stefanie Sun",
+      "JJ Lin",
+      "Tanya Chua"
+     ],
+     "why": "Dick Lee wrote it in 1998."
+    },
+    {
+     "level": 2,
+     "q": "Which songwriter wrote 'Home' and the musical 'Beauty World'?",
+     "a": "Dick Lee",
+     "wrong": [
+      "Kit Chan",
+      "Iskandar Ismail",
+      "Liang Wern Fook"
+     ],
+     "why": "He is a pioneer of Singapore pop."
+    },
+    {
+     "level": 2,
+     "q": "Which Singapore broadcaster runs Channel 5 and Channel 8?",
+     "a": "Mediacorp",
+     "wrong": [
+      "SPH",
+      "StarHub",
+      "Singtel"
+     ],
+     "why": "Channel 8 broadcasts in Mandarin."
+    },
+    {
+     "level": 2,
+     "q": "Which festival lights up Marina Bay with art installations?",
+     "a": "i Light Singapore",
+     "wrong": [
+      "Vivid Singapore",
+      "Singapore Night Festival",
+      "Chingay"
+     ],
+     "why": "It focuses on sustainable light art."
+    },
+    {
+     "level": 3,
+     "q": "Which Eric Khoo film was the first from Singapore at Cannes, in 1997?",
+     "a": "12 Storeys",
+     "wrong": [
+      "Mee Pok Man",
+      "Be With Me",
+      "Ilo Ilo"
+     ],
+     "why": "It is set in a public housing block."
+    },
+    {
+     "level": 3,
+     "q": "Which poet is often called the father of Singapore poetry?",
+     "a": "Edwin Thumboo",
+     "wrong": [
+      "Arthur Yap",
+      "Lee Tzu Pheng",
+      "Alfian Sa'at"
+     ],
+     "why": "He wrote in English from the 1950s."
+    },
+    {
+     "level": 3,
+     "q": "Which Singapore-born author wrote the novel 'Crazy Rich Asians'?",
+     "a": "Kevin Kwan",
+     "wrong": [
+      "Amy Tan",
+      "Celeste Ng",
+      "Catherine Lim"
+     ],
+     "why": "It became the first of a trilogy."
+    }
+   ]
+  },
+  {
+   "name": "Singapore Food & Traditions",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which dish is often called Singapore's national dish?",
+     "a": "Hainanese chicken rice",
+     "wrong": [
+      "Nasi lemak",
+      "Laksa",
+      "Char kway teow"
+     ],
+     "why": "The rice is cooked in chicken stock."
+    },
+    {
+     "level": 1,
+     "q": "Which food centres were added to UNESCO's heritage list in 2020?",
+     "a": "Hawker centres",
+     "wrong": [
+      "Food courts",
+      "Coffee shops",
+      "Wet markets"
+     ],
+     "why": "UNESCO listed 'hawker culture'."
+    },
+    {
+     "level": 1,
+     "q": "Which seafood dish comes in a sweet and spicy tomato sauce?",
+     "a": "Chilli crab",
+     "wrong": [
+      "Black pepper crab",
+      "Sambal stingray",
+      "Prawn mee"
+     ],
+     "why": "It is often eaten with fried buns."
+    },
+    {
+     "level": 1,
+     "q": "Which spicy coconut noodle soup is a Peranakan favourite?",
+     "a": "Laksa",
+     "wrong": [
+      "Mee siam",
+      "Hokkien mee",
+      "Ban mian"
+     ],
+     "why": "Katong laksa is famous."
+    },
+    {
+     "level": 1,
+     "q": "Which breakfast is toast with coconut jam and soft-boiled eggs?",
+     "a": "Kaya toast",
+     "wrong": [
+      "Roti prata",
+      "Chwee kueh",
+      "Lor mee"
+     ],
+     "why": "Kaya is made of coconut, eggs and sugar."
+    },
+    {
+     "level": 1,
+     "q": "Which strong-smelling fruit is banned on Singapore's trains?",
+     "a": "Durian",
+     "wrong": [
+      "Jackfruit",
+      "Mangosteen",
+      "Rambutan"
+     ],
+     "why": "Signs show a crossed-out durian."
+    },
+    {
+     "level": 1,
+     "q": "Which street parade marks Chinese New Year in Singapore?",
+     "a": "Chingay",
+     "wrong": [
+      "Thaipusam",
+      "Deepavali",
+      "Hari Raya"
+     ],
+     "why": "It began in 1973."
+    },
+    {
+     "level": 2,
+     "q": "Which festival of lights decorates Little India?",
+     "a": "Deepavali",
+     "wrong": [
+      "Thaipusam",
+      "Pongal",
+      "Navaratri"
+     ],
+     "why": "It is a public holiday."
+    },
+    {
+     "level": 2,
+     "q": "What is 'teh tarik'?",
+     "a": "'Pulled' milk tea",
+     "wrong": [
+      "Iced lemon tea",
+      "Barley water",
+      "Coconut coffee"
+     ],
+     "why": "It is poured back and forth to make it frothy."
+    },
+    {
+     "level": 2,
+     "q": "Which festival marks the end of Ramadan in Singapore?",
+     "a": "Hari Raya Puasa",
+     "wrong": [
+      "Hari Raya Haji",
+      "Deepavali",
+      "Vesak Day"
+     ],
+     "why": "Geylang Serai has a big bazaar."
+    },
+    {
+     "level": 2,
+     "q": "Which pork rib soup is a breakfast favourite?",
+     "a": "Bak kut teh",
+     "wrong": [
+      "Fish head curry",
+      "Mee pok",
+      "Yong tau foo"
+     ],
+     "why": "Its name means 'meat bone tea'."
+    },
+    {
+     "level": 2,
+     "q": "Which festival is celebrated with mooncakes and lanterns?",
+     "a": "Mid-Autumn Festival",
+     "wrong": [
+      "Qing Ming",
+      "Dragon Boat Festival",
+      "Hungry Ghost Festival"
+     ],
+     "why": "It falls in the eighth lunar month."
+    },
+    {
+     "level": 2,
+     "q": "What is satay?",
+     "a": "Grilled meat skewers with peanut sauce",
+     "wrong": [
+      "Fried rice noodles",
+      "A coconut dessert",
+      "A fish curry"
+     ],
+     "why": "Lau Pa Sat's 'Satay Street' is famous."
+    },
+    {
+     "level": 3,
+     "q": "What does it mean to 'chope' a seat at a hawker centre?",
+     "a": "To reserve it, often with a tissue packet",
+     "wrong": [
+      "To share it",
+      "To clean it",
+      "To give it up"
+     ],
+     "why": "It is a very Singaporean habit."
+    },
+    {
+     "level": 3,
+     "q": "During which festival are offerings burned and getai shows held?",
+     "a": "Hungry Ghost Festival",
+     "wrong": [
+      "Mid-Autumn Festival",
+      "Qing Ming",
+      "Chinese New Year"
+     ],
+     "why": "It is in the seventh lunar month."
+    },
+    {
+     "level": 3,
+     "q": "During which festival do devotees carry kavadi through the streets?",
+     "a": "Thaipusam",
+     "wrong": [
+      "Deepavali",
+      "Pongal",
+      "Holi"
+     ],
+     "why": "The procession ends at a temple on Tank Road."
+    }
+   ]
+  },
+  {
+   "name": "Singapore General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Singapore's currency?",
+     "a": "Singapore dollar",
+     "wrong": [
+      "Ringgit",
+      "Rupiah",
+      "Baht"
+     ],
+     "why": "It is used alongside the Brunei dollar at par."
+    },
+    {
+     "level": 1,
+     "q": "How many official languages does Singapore have?",
+     "a": "4",
+     "wrong": [
+      "2",
+      "3",
+      "5"
+     ],
+     "why": "English, Malay, Mandarin and Tamil."
+    },
+    {
+     "level": 1,
+     "q": "What is Singapore's national flower?",
+     "a": "Vanda Miss Joaquim orchid",
+     "wrong": [
+      "Lotus",
+      "Hibiscus",
+      "Frangipani"
+     ],
+     "why": "It is a hybrid orchid bred in Singapore."
+    },
+    {
+     "level": 1,
+     "q": "What does the name 'Singapura' mean?",
+     "a": "Lion City",
+     "wrong": [
+      "Sea Town",
+      "Garden City",
+      "Red Dot"
+     ],
+     "why": "It comes from Sanskrit."
+    },
+    {
+     "level": 1,
+     "q": "Since 1992, Singapore has banned the sale of what?",
+     "a": "Chewing gum",
+     "wrong": [
+      "Chocolate",
+      "Fireworks",
+      "Soft drinks"
+     ],
+     "why": "It was meant to keep streets and trains clean."
+    },
+    {
+     "level": 1,
+     "q": "What is Singapore's national airline?",
+     "a": "Singapore Airlines",
+     "wrong": [
+      "Scoot",
+      "Changi Air",
+      "Merlion Airways"
+     ],
+     "why": "Scoot is its budget airline."
+    },
+    {
+     "level": 1,
+     "q": "What is Singapore's national anthem?",
+     "a": "Majulah Singapura",
+     "wrong": [
+      "Negaraku",
+      "Home",
+      "Indonesia Raya"
+     ],
+     "why": "It means 'Onward Singapore'."
+    },
+    {
+     "level": 2,
+     "q": "What is Singapore's national language?",
+     "a": "Malay",
+     "wrong": [
+      "English",
+      "Mandarin",
+      "Tamil"
+     ],
+     "why": "The anthem is sung in Malay."
+    },
+    {
+     "level": 2,
+     "q": "About how many Singaporeans live in public HDB flats?",
+     "a": "About 80%",
+     "wrong": [
+      "About 20%",
+      "About 50%",
+      "About 95%"
+     ],
+     "why": "HDB is the Housing & Development Board."
+    },
+    {
+     "level": 2,
+     "q": "What does MRT stand for?",
+     "a": "Mass Rapid Transit",
+     "wrong": [
+      "Metro Rail Transport",
+      "Main Railway Track",
+      "Modern Rapid Train"
+     ],
+     "why": "The first line opened in 1987."
+    },
+    {
+     "level": 2,
+     "q": "What is the CPF?",
+     "a": "A compulsory savings scheme",
+     "wrong": [
+      "A police force",
+      "A school exam",
+      "A housing estate"
+     ],
+     "why": "CPF stands for Central Provident Fund."
+    },
+    {
+     "level": 2,
+     "q": "How many stars are on Singapore's flag?",
+     "a": "5",
+     "wrong": [
+      "3",
+      "4",
+      "7"
+     ],
+     "why": "They stand for democracy, peace, progress, justice and equality."
+    },
+    {
+     "level": 2,
+     "q": "What is 'National Service' in Singapore?",
+     "a": "Compulsory service for male citizens",
+     "wrong": [
+      "A volunteer scheme",
+      "A charity",
+      "A civil-service exam"
+     ],
+     "why": "It lasts about two years."
+    },
+    {
+     "level": 3,
+     "q": "Who first called Singapore a 'little red dot'?",
+     "a": "Indonesian President B. J. Habibie",
+     "wrong": [
+      "Lee Kuan Yew",
+      "Mahathir Mohamad",
+      "Margaret Thatcher"
+     ],
+     "why": "Singaporeans now use it with pride."
+    },
+    {
+     "level": 3,
+     "q": "Which Singapore attraction was the world's first nocturnal zoo, opened in 1994?",
+     "a": "Night Safari",
+     "wrong": [
+      "River Wonders",
+      "Bird Paradise",
+      "S.E.A. Aquarium"
+     ],
+     "why": "Visitors tour it by tram after dark."
+    },
+    {
+     "level": 3,
+     "q": "Which body of water separates Singapore from Malaysia's Johor?",
+     "a": "Straits of Johor",
+     "wrong": [
+      "Singapore Strait",
+      "Strait of Malacca",
+      "Riau Strait"
+     ],
+     "why": "It is crossed by the Causeway and the Second Link."
+    }
+   ]
+  }
+ ]
+}

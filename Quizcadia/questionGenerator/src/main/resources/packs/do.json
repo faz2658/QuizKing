@@ -1,0 +1,346 @@
+{
+ "category": "Dominican Republic",
+ "country": "DO",
+ "topics": [
+  {
+   "name": "Dominican Republic: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Dominican Republic?",
+     "a": "Santo Domingo",
+     "wrong": [
+      "Santiago",
+      "Puerto Plata",
+      "La Romana"
+     ],
+     "why": "It is the oldest European city in the Americas."
+    },
+    {
+     "level": 1,
+     "q": "Which island does the Dominican Republic share with Haiti?",
+     "a": "Hispaniola",
+     "wrong": [
+      "Cuba",
+      "Puerto Rico",
+      "Jamaica"
+     ],
+     "why": "Columbus landed there in 1492."
+    },
+    {
+     "level": 1,
+     "q": "Which dictator ruled from 1930 to 1961?",
+     "a": "Rafael Trujillo",
+     "wrong": [
+      "Joaquín Balaguer",
+      "Juan Bosch",
+      "Ulises Heureaux"
+     ],
+     "why": "He renamed the capital Ciudad Trujillo."
+    },
+    {
+     "level": 1,
+     "q": "From which country did the Dominican Republic declare independence in 1844?",
+     "a": "Haiti",
+     "wrong": [
+      "Spain",
+      "France",
+      "USA"
+     ],
+     "why": "Independence Day is 27 February."
+    },
+    {
+     "level": 1,
+     "q": "Which three founding fathers led the independence movement?",
+     "a": "Duarte, Sánchez and Mella",
+     "wrong": [
+      "Bolívar, Sucre and Miranda",
+      "Martí, Maceo and Gómez",
+      "Hidalgo, Morelos and Allende"
+     ],
+     "why": "They are honoured in the Altar de la Patria."
+    },
+    {
+     "level": 1,
+     "q": "Which sisters, killed in 1960, became symbols of resistance to Trujillo?",
+     "a": "The Mirabal sisters",
+     "wrong": [
+      "The Trung sisters",
+      "The Duarte sisters",
+      "The Brontë sisters"
+     ],
+     "why": "25 November, the day against violence against women, honours them."
+    },
+    {
+     "level": 1,
+     "q": "Which explorer's remains are said to lie in Santo Domingo's Columbus Lighthouse?",
+     "a": "Christopher Columbus",
+     "wrong": [
+      "Diego Colón",
+      "Bartolomé de las Casas",
+      "Hernán Cortés"
+     ],
+     "why": "Seville also claims his remains."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote the novel 'In the Time of the Butterflies' about the Mirabal sisters?",
+     "a": "Julia Alvarez",
+     "wrong": [
+      "Junot Díaz",
+      "Isabel Allende",
+      "Edwidge Danticat"
+     ],
+     "why": "It was published in 1994."
+    },
+    {
+     "level": 2,
+     "q": "Which country occupied the Dominican Republic from 1916 to 1924?",
+     "a": "United States",
+     "wrong": [
+      "Spain",
+      "Haiti",
+      "France"
+     ],
+     "why": "It occupied it again in 1965."
+    },
+    {
+     "level": 2,
+     "q": "Which President served many terms and led from 1966 to 1978?",
+     "a": "Joaquín Balaguer",
+     "wrong": [
+      "Juan Bosch",
+      "Leonel Fernández",
+      "Danilo Medina"
+     ],
+     "why": "He was Trujillo's protégé."
+    },
+    {
+     "level": 2,
+     "q": "Which 1863–65 war restored independence from Spain?",
+     "a": "Restoration War",
+     "wrong": [
+      "Haitian Revolution",
+      "Ten Years' War",
+      "Spanish–American War"
+     ],
+     "why": "Spain had re-annexed the country in 1861."
+    },
+    {
+     "level": 2,
+     "q": "Which Dominican-American author won the Pulitzer Prize for 'The Brief Wondrous Life of Oscar Wao'?",
+     "a": "Junot Díaz",
+     "wrong": [
+      "Julia Alvarez",
+      "Elizabeth Acevedo",
+      "Edwidge Danticat"
+     ],
+     "why": "It won in 2008."
+    },
+    {
+     "level": 3,
+     "q": "Which 1937 massacre targeted Haitians on the border?",
+     "a": "Parsley Massacre",
+     "wrong": [
+      "Mirabal Massacre",
+      "Dajabón Uprising",
+      "Cibao Raid"
+     ],
+     "why": "Thousands were killed on Trujillo's orders."
+    },
+    {
+     "level": 3,
+     "q": "Which colonial zone of Santo Domingo is a UNESCO site?",
+     "a": "Ciudad Colonial",
+     "wrong": [
+      "Zona Franca",
+      "Malecón",
+      "Los Tres Ojos"
+     ],
+     "why": "It has the first cathedral in the Americas."
+    },
+    {
+     "level": 3,
+     "q": "Who became President in 2020?",
+     "a": "Luis Abinader",
+     "wrong": [
+      "Danilo Medina",
+      "Leonel Fernández",
+      "Hipólito Mejía"
+     ],
+     "why": "He was re-elected in 2024."
+    }
+   ]
+  },
+  {
+   "name": "Dominican Republic: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which dance music comes from the Dominican Republic?",
+     "a": "Merengue",
+     "wrong": [
+      "Salsa",
+      "Cumbia",
+      "Tango"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "Which guitar-led romantic music also comes from the Dominican Republic?",
+     "a": "Bachata",
+     "wrong": [
+      "Bolero",
+      "Son",
+      "Reggaeton"
+     ],
+     "why": "Romeo Santos made it world-famous."
+    },
+    {
+     "level": 1,
+     "q": "Which sport produces the most Dominican stars abroad?",
+     "a": "Baseball",
+     "wrong": [
+      "Football",
+      "Basketball",
+      "Boxing"
+     ],
+     "why": "Many play in the US major leagues."
+    },
+    {
+     "level": 1,
+     "q": "What is the Dominican Republic's currency?",
+     "a": "Dominican peso",
+     "wrong": [
+      "US dollar",
+      "Gourde",
+      "Euro"
+     ],
+     "why": "Its code is DOP."
+    },
+    {
+     "level": 1,
+     "q": "Which beach resort area in the east is the most visited?",
+     "a": "Punta Cana",
+     "wrong": [
+      "Puerto Plata",
+      "Samaná",
+      "Bayahibe"
+     ],
+     "why": "It has long white beaches."
+    },
+    {
+     "level": 1,
+     "q": "What is the meal of rice, beans and meat called?",
+     "a": "La bandera (the flag)",
+     "wrong": [
+      "Moro",
+      "Sancocho",
+      "Mangú"
+     ],
+     "why": "It is eaten at lunch."
+    },
+    {
+     "level": 1,
+     "q": "Which mashed plantain dish is a breakfast staple?",
+     "a": "Mangú",
+     "wrong": [
+      "Mofongo",
+      "Tostones",
+      "Arepa"
+     ],
+     "why": "It is topped with red onions."
+    },
+    {
+     "level": 2,
+     "q": "What is the highest peak in the Caribbean?",
+     "a": "Pico Duarte",
+     "wrong": [
+      "Blue Mountain Peak",
+      "Pic la Selle",
+      "Pico Turquino"
+     ],
+     "why": "It is about 3,098 m high."
+    },
+    {
+     "level": 2,
+     "q": "Which bay is famous for humpback whale watching?",
+     "a": "Samaná Bay",
+     "wrong": [
+      "Ocoa Bay",
+      "Manzanillo Bay",
+      "Bay of Pigs"
+     ],
+     "why": "Whales arrive each winter."
+    },
+    {
+     "level": 2,
+     "q": "Which hearty stew of meats and root vegetables is a favourite?",
+     "a": "Sancocho",
+     "wrong": [
+      "Pozole",
+      "Ajiaco",
+      "Mondongo"
+     ],
+     "why": "It is made for celebrations."
+    },
+    {
+     "level": 2,
+     "q": "Which lake is the lowest point in the Caribbean and home to crocodiles?",
+     "a": "Lake Enriquillo",
+     "wrong": [
+      "Lake Azuéi",
+      "Lake Valencia",
+      "Lake Nicaragua"
+     ],
+     "why": "It is below sea level."
+    },
+    {
+     "level": 2,
+     "q": "Which Dominican baseball star hit 696 home runs?",
+     "a": "Alex Rodríguez",
+     "wrong": [
+      "David Ortiz",
+      "Albert Pujols",
+      "Sammy Sosa"
+     ],
+     "why": "He was born in New York to Dominican parents."
+    },
+    {
+     "level": 3,
+     "q": "Which amber-rich region holds insects millions of years old?",
+     "a": "Dominican amber region near Santiago",
+     "wrong": [
+      "The Cibao coffee belt",
+      "The Samaná peninsula",
+      "The southwest desert"
+     ],
+     "why": "Dominican amber is prized for its clarity."
+    },
+    {
+     "level": 3,
+     "q": "Which Dominican designer founded a fashion house in New York?",
+     "a": "Oscar de la Renta",
+     "wrong": [
+      "Carolina Herrera",
+      "Narciso Rodriguez",
+      "Christian Siriano"
+     ],
+     "why": "He dressed many First Ladies."
+    },
+    {
+     "level": 3,
+     "q": "Which caves in Santo Domingo have three lakes?",
+     "a": "Los Tres Ojos",
+     "wrong": [
+      "Cueva de las Maravillas",
+      "Cueva del Pomier",
+      "Fun Fun Cave"
+     ],
+     "why": "Their name means 'The Three Eyes'."
+    }
+   ]
+  }
+ ]
+}

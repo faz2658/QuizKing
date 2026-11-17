@@ -1,0 +1,1092 @@
+{
+ "category": "Ireland",
+ "country": "IE",
+ "topics": [
+  {
+   "name": "Ireland History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which saint is said to have brought Christianity to Ireland?",
+     "a": "Saint Patrick",
+     "wrong": [
+      "Saint Brigid",
+      "Saint Columba",
+      "Saint Kevin"
+     ],
+     "why": "St Patrick's Day is 17 March."
+    },
+    {
+     "level": 1,
+     "q": "Which 1916 rebellion in Dublin began on Easter Monday?",
+     "a": "The Easter Rising",
+     "wrong": [
+      "The United Irishmen Rising",
+      "The Fenian Rising",
+      "The Land War"
+     ],
+     "why": "It was centred on the GPO on O'Connell Street."
+    },
+    {
+     "level": 1,
+     "q": "What was the Great Famine of the 1840s caused by?",
+     "a": "Potato blight",
+     "wrong": [
+      "Drought",
+      "A cattle plague",
+      "War"
+     ],
+     "why": "About a million people died and a million emigrated."
+    },
+    {
+     "level": 1,
+     "q": "Which Viking-founded city became Ireland's capital?",
+     "a": "Dublin",
+     "wrong": [
+      "Cork",
+      "Waterford",
+      "Limerick"
+     ],
+     "why": "Its name means 'black pool'."
+    },
+    {
+     "level": 1,
+     "q": "Who led the Irish delegation in the 1921 treaty talks and was killed in 1922?",
+     "a": "Michael Collins",
+     "wrong": [
+      "Éamon de Valera",
+      "Arthur Griffith",
+      "Patrick Pearse"
+     ],
+     "why": "He died in an ambush at Béal na Bláth."
+    },
+    {
+     "level": 1,
+     "q": "Which 1998 deal helped bring peace to Northern Ireland?",
+     "a": "Good Friday Agreement",
+     "wrong": [
+      "Anglo-Irish Treaty",
+      "Sunningdale Agreement",
+      "Downing Street Declaration"
+     ],
+     "why": "It was signed on 10 April 1998."
+    },
+    {
+     "level": 1,
+     "q": "Who was Ireland's first woman President, elected in 1990?",
+     "a": "Mary Robinson",
+     "wrong": [
+      "Mary McAleese",
+      "Countess Markievicz",
+      "Maud Gonne"
+     ],
+     "why": "She later became UN High Commissioner for Human Rights."
+    },
+    {
+     "level": 2,
+     "q": "In which year was the Anglo-Irish Treaty signed?",
+     "a": "1921",
+     "wrong": [
+      "1916",
+      "1937",
+      "1949"
+     ],
+     "why": "It created the Irish Free State."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Ireland formally become a republic?",
+     "a": "1949",
+     "wrong": [
+      "1922",
+      "1937",
+      "1973"
+     ],
+     "why": "It left the Commonwealth that year."
+    },
+    {
+     "level": 2,
+     "q": "Which leader dominated Irish politics as Taoiseach and President?",
+     "a": "Éamon de Valera",
+     "wrong": [
+      "Michael Collins",
+      "Seán Lemass",
+      "W. T. Cosgrave"
+     ],
+     "why": "He wrote much of the 1937 Constitution."
+    },
+    {
+     "level": 2,
+     "q": "Which 1690 battle is still remembered in Northern Ireland every July?",
+     "a": "Battle of the Boyne",
+     "wrong": [
+      "Battle of Kinsale",
+      "Battle of Aughrim",
+      "Siege of Derry"
+     ],
+     "why": "William III defeated James II."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient passage tomb in County Meath is older than the pyramids?",
+     "a": "Newgrange",
+     "wrong": [
+      "Knowth",
+      "Poulnabrone",
+      "Carrowmore"
+     ],
+     "why": "Sunlight floods its chamber at the winter solstice."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Ireland join the European Economic Community?",
+     "a": "1973",
+     "wrong": [
+      "1957",
+      "1985",
+      "1995"
+     ],
+     "why": "It joined with the UK and Denmark."
+    },
+    {
+     "level": 3,
+     "q": "Which High King defeated the Vikings at the Battle of Clontarf in 1014?",
+     "a": "Brian Boru",
+     "wrong": [
+      "Niall of the Nine Hostages",
+      "Rory O'Connor",
+      "Malachy"
+     ],
+     "why": "He was killed after the battle."
+    },
+    {
+     "level": 3,
+     "q": "Who led the United Irishmen's 1798 rebellion and is called the father of Irish republicanism?",
+     "a": "Wolfe Tone",
+     "wrong": [
+      "Robert Emmet",
+      "Daniel O'Connell",
+      "Charles Stewart Parnell"
+     ],
+     "why": "He sought help from revolutionary France."
+    },
+    {
+     "level": 3,
+     "q": "Who was called 'The Liberator' for winning Catholic Emancipation in 1829?",
+     "a": "Daniel O'Connell",
+     "wrong": [
+      "Charles Stewart Parnell",
+      "Wolfe Tone",
+      "Henry Grattan"
+     ],
+     "why": "Dublin's main street is named after him."
+    }
+   ]
+  },
+  {
+   "name": "Ireland Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which river flows through Dublin?",
+     "a": "Liffey",
+     "wrong": [
+      "Shannon",
+      "Lee",
+      "Boyne"
+     ],
+     "why": "The Ha'penny Bridge crosses it."
+    },
+    {
+     "level": 1,
+     "q": "Which is the longest river in Ireland?",
+     "a": "Shannon",
+     "wrong": [
+      "Liffey",
+      "Barrow",
+      "Suir"
+     ],
+     "why": "It is about 360 km long."
+    },
+    {
+     "level": 1,
+     "q": "Which dramatic sea cliffs are in County Clare?",
+     "a": "Cliffs of Moher",
+     "wrong": [
+      "Slieve League",
+      "Cliffs of Dover",
+      "Croaghaun"
+     ],
+     "why": "They rise over 200 m above the Atlantic."
+    },
+    {
+     "level": 1,
+     "q": "Which is Ireland's second-largest city?",
+     "a": "Cork",
+     "wrong": [
+      "Galway",
+      "Limerick",
+      "Waterford"
+     ],
+     "why": "Locals call it 'the real capital'."
+    },
+    {
+     "level": 1,
+     "q": "Which scenic driving route circles the Iveragh Peninsula in Kerry?",
+     "a": "Ring of Kerry",
+     "wrong": [
+      "Wild Atlantic Way",
+      "Dingle Way",
+      "Copper Coast"
+     ],
+     "why": "It is about 180 km long."
+    },
+    {
+     "level": 1,
+     "q": "How many counties are on the island of Ireland?",
+     "a": "32",
+     "wrong": [
+      "26",
+      "24",
+      "40"
+     ],
+     "why": "26 are in the Republic and 6 in Northern Ireland."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean lies west of Ireland?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Pacific Ocean",
+      "Arctic Ocean",
+      "Indian Ocean"
+     ],
+     "why": "The Irish Sea lies to the east."
+    },
+    {
+     "level": 2,
+     "q": "What is Ireland's highest mountain?",
+     "a": "Carrauntoohil",
+     "wrong": [
+      "Croagh Patrick",
+      "Lugnaquilla",
+      "Slieve Donard"
+     ],
+     "why": "It is 1,038 m high, in Kerry."
+    },
+    {
+     "level": 2,
+     "q": "Which holy mountain in Mayo do pilgrims climb every July?",
+     "a": "Croagh Patrick",
+     "wrong": [
+      "Carrauntoohil",
+      "Benbulbin",
+      "Errigal"
+     ],
+     "why": "St Patrick is said to have fasted there."
+    },
+    {
+     "level": 2,
+     "q": "Which limestone landscape in County Clare is famous for rare flowers?",
+     "a": "The Burren",
+     "wrong": [
+      "Connemara",
+      "The Mournes",
+      "The Wicklow Mountains"
+     ],
+     "why": "Arctic and Mediterranean plants grow side by side."
+    },
+    {
+     "level": 2,
+     "q": "Which island group lies off Galway Bay?",
+     "a": "Aran Islands",
+     "wrong": [
+      "Blasket Islands",
+      "Skellig Islands",
+      "Saltee Islands"
+     ],
+     "why": "Irish is the main language there."
+    },
+    {
+     "level": 2,
+     "q": "Which rocky island off Kerry has a monastery and appeared in 'Star Wars'?",
+     "a": "Skellig Michael",
+     "wrong": [
+      "Inishmore",
+      "Achill Island",
+      "Valentia Island"
+     ],
+     "why": "It is a UNESCO World Heritage Site."
+    },
+    {
+     "level": 2,
+     "q": "Which is the largest lake on the island of Ireland?",
+     "a": "Lough Neagh",
+     "wrong": [
+      "Lough Corrib",
+      "Lough Derg",
+      "Lough Erne"
+     ],
+     "why": "It is in Northern Ireland."
+    },
+    {
+     "level": 3,
+     "q": "Which is the largest island off the coast of Ireland?",
+     "a": "Achill Island",
+     "wrong": [
+      "Inishmore",
+      "Valentia Island",
+      "Clare Island"
+     ],
+     "why": "It is joined to Mayo by a bridge."
+    },
+    {
+     "level": 3,
+     "q": "Which flat-topped mountain in Sligo inspired W. B. Yeats?",
+     "a": "Benbulbin",
+     "wrong": [
+      "Knocknarea",
+      "Errigal",
+      "Slieve League"
+     ],
+     "why": "Yeats is buried in its shadow at Drumcliff."
+    },
+    {
+     "level": 3,
+     "q": "What are Ireland's four provinces?",
+     "a": "Leinster, Munster, Connacht and Ulster",
+     "wrong": [
+      "Leinster, Munster, Kerry and Ulster",
+      "Dublin, Cork, Galway and Belfast",
+      "Leinster, Meath, Connacht and Ulster"
+     ],
+     "why": "They appear on the Irish rugby crest."
+    }
+   ]
+  },
+  {
+   "name": "Ireland Sport",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which fast stick-and-ball sport is played by men with a sliotar?",
+     "a": "Hurling",
+     "wrong": [
+      "Camogie",
+      "Lacrosse",
+      "Shinty"
+     ],
+     "why": "Camogie is the women's game."
+    },
+    {
+     "level": 1,
+     "q": "Which organisation runs Gaelic football and hurling?",
+     "a": "GAA",
+     "wrong": [
+      "FAI",
+      "IRFU",
+      "IABA"
+     ],
+     "why": "The Gaelic Athletic Association was founded in 1884."
+    },
+    {
+     "level": 1,
+     "q": "Which Dublin stadium hosts the All-Ireland finals?",
+     "a": "Croke Park",
+     "wrong": [
+      "Aviva Stadium",
+      "Thomond Park",
+      "Semple Stadium"
+     ],
+     "why": "It holds over 82,000 people."
+    },
+    {
+     "level": 1,
+     "q": "Which Irish boxer won Olympic lightweight gold in Tokyo and in Paris?",
+     "a": "Kellie Harrington",
+     "wrong": [
+      "Katie Taylor",
+      "Michaela Walsh",
+      "Amy Broadhurst"
+     ],
+     "why": "She won in 2021 and 2024."
+    },
+    {
+     "level": 1,
+     "q": "Which golfer from Northern Ireland completed the career Grand Slam at the 2025 Masters?",
+     "a": "Rory McIlroy",
+     "wrong": [
+      "Shane Lowry",
+      "Pádraig Harrington",
+      "Graeme McDowell"
+     ],
+     "why": "He represents Ireland at the Olympics."
+    },
+    {
+     "level": 1,
+     "q": "Which rugby tournament does Ireland play every spring?",
+     "a": "Six Nations",
+     "wrong": [
+      "Rugby Championship",
+      "Pacific Nations Cup",
+      "Heineken Cup"
+     ],
+     "why": "Ireland won Grand Slams in 2009, 2018 and 2023."
+    },
+    {
+     "level": 1,
+     "q": "Which county has won the most All-Ireland hurling titles?",
+     "a": "Kilkenny",
+     "wrong": [
+      "Cork",
+      "Tipperary",
+      "Limerick"
+     ],
+     "why": "They are nicknamed 'the Cats'."
+    },
+    {
+     "level": 2,
+     "q": "Which county has won the most All-Ireland football titles?",
+     "a": "Kerry",
+     "wrong": [
+      "Dublin",
+      "Mayo",
+      "Galway"
+     ],
+     "why": "They are known as 'the Kingdom'."
+    },
+    {
+     "level": 2,
+     "q": "Which cyclist won the Tour de France in 1987?",
+     "a": "Stephen Roche",
+     "wrong": [
+      "Sean Kelly",
+      "Dan Martin",
+      "Nicolas Roche"
+     ],
+     "why": "He also won the Giro and the World Championship that year."
+    },
+    {
+     "level": 2,
+     "q": "Which jockey from County Antrim was champion jump jockey 20 years in a row?",
+     "a": "A. P. McCoy",
+     "wrong": [
+      "Ruby Walsh",
+      "Barry Geraghty",
+      "Davy Russell"
+     ],
+     "why": "He rode over 4,300 winners."
+    },
+    {
+     "level": 2,
+     "q": "Which footballer captained Ireland at the 2002 World Cup before leaving the squad?",
+     "a": "Roy Keane",
+     "wrong": [
+      "Robbie Keane",
+      "Damien Duff",
+      "Shay Given"
+     ],
+     "why": "The 'Saipan incident' caused a national row."
+    },
+    {
+     "level": 2,
+     "q": "Who is Ireland's all-time top try scorer in rugby Tests?",
+     "a": "Brian O'Driscoll",
+     "wrong": [
+      "Keith Earls",
+      "Tommy Bowe",
+      "Simon Zebo"
+     ],
+     "why": "He scored 46 tries for Ireland."
+    },
+    {
+     "level": 2,
+     "q": "At which Olympics did Katie Taylor win boxing gold?",
+     "a": "London 2012",
+     "wrong": [
+      "Beijing 2008",
+      "Rio 2016",
+      "Tokyo 2020"
+     ],
+     "why": "Women's boxing was new to the Olympics that year."
+    },
+    {
+     "level": 3,
+     "q": "Who won Ireland's first Olympic gold as an independent nation, in 1928?",
+     "a": "Pat O'Callaghan",
+     "wrong": [
+      "Ronnie Delany",
+      "Bob Tisdall",
+      "Michael Carruth"
+     ],
+     "why": "He won the hammer throw."
+    },
+    {
+     "level": 3,
+     "q": "Which runner won Olympic 1,500 m gold in Melbourne in 1956?",
+     "a": "Ronnie Delany",
+     "wrong": [
+      "Eamonn Coghlan",
+      "John Treacy",
+      "Marcus O'Sullivan"
+     ],
+     "why": "He was 21."
+    },
+    {
+     "level": 3,
+     "q": "Which Irish team sport is played with a round ball and both hands and feet?",
+     "a": "Gaelic football",
+     "wrong": [
+      "Hurling",
+      "Rounders",
+      "Handball"
+     ],
+     "why": "Players can hop or solo the ball."
+    }
+   ]
+  },
+  {
+   "name": "Ireland Film, TV & Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Dublin rock band is led by Bono?",
+     "a": "U2",
+     "wrong": [
+      "The Cranberries",
+      "Thin Lizzy",
+      "The Script"
+     ],
+     "why": "They formed in 1976."
+    },
+    {
+     "level": 1,
+     "q": "Which band's singer was Dolores O'Riordan?",
+     "a": "The Cranberries",
+     "wrong": [
+      "The Corrs",
+      "Clannad",
+      "Westlife"
+     ],
+     "why": "Their hit 'Zombie' came out in 1994."
+    },
+    {
+     "level": 1,
+     "q": "How many times has Ireland won the Eurovision Song Contest?",
+     "a": "7",
+     "wrong": [
+      "3",
+      "10",
+      "5"
+     ],
+     "why": "It shares the record with Sweden; Johnny Logan won twice as a singer."
+    },
+    {
+     "level": 1,
+     "q": "Which Irish actor starred in 'Oppenheimer' and won an Oscar?",
+     "a": "Cillian Murphy",
+     "wrong": [
+      "Colin Farrell",
+      "Paul Mescal",
+      "Barry Keoghan"
+     ],
+     "why": "He won Best Actor in 2024."
+    },
+    {
+     "level": 1,
+     "q": "Which Irish dance show was first performed at Eurovision 1994?",
+     "a": "Riverdance",
+     "wrong": [
+      "Lord of the Dance",
+      "Feet of Flames",
+      "Celtic Woman"
+     ],
+     "why": "Michael Flatley and Jean Butler danced in it."
+    },
+    {
+     "level": 1,
+     "q": "Which singer from Wicklow had a hit with 'Take Me to Church'?",
+     "a": "Hozier",
+     "wrong": [
+      "Dermot Kennedy",
+      "Niall Horan",
+      "Damien Rice"
+     ],
+     "why": "It came out in 2013."
+    },
+    {
+     "level": 1,
+     "q": "Which member of One Direction is from Mullingar?",
+     "a": "Niall Horan",
+     "wrong": [
+      "Harry Styles",
+      "Louis Tomlinson",
+      "Liam Payne"
+     ],
+     "why": "He was the only Irish member."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote 'Ulysses', set in Dublin on a single day?",
+     "a": "James Joyce",
+     "wrong": [
+      "Samuel Beckett",
+      "Oscar Wilde",
+      "Flann O'Brien"
+     ],
+     "why": "Bloomsday, 16 June, celebrates it."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote 'Waiting for Godot'?",
+     "a": "Samuel Beckett",
+     "wrong": [
+      "James Joyce",
+      "Seán O'Casey",
+      "Brendan Behan"
+     ],
+     "why": "He won the Nobel Prize in 1969."
+    },
+    {
+     "level": 2,
+     "q": "Which Irish author wrote 'Dracula'?",
+     "a": "Bram Stoker",
+     "wrong": [
+      "Oscar Wilde",
+      "Sheridan Le Fanu",
+      "Jonathan Swift"
+     ],
+     "why": "It was published in 1897."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote 'Gulliver's Travels'?",
+     "a": "Jonathan Swift",
+     "wrong": [
+      "Laurence Sterne",
+      "Oliver Goldsmith",
+      "Bram Stoker"
+     ],
+     "why": "He was Dean of St Patrick's Cathedral."
+    },
+    {
+     "level": 2,
+     "q": "Which band led by Phil Lynott recorded 'Whiskey in the Jar'?",
+     "a": "Thin Lizzy",
+     "wrong": [
+      "The Dubliners",
+      "U2",
+      "The Pogues"
+     ],
+     "why": "A statue of Lynott stands in Dublin."
+    },
+    {
+     "level": 2,
+     "q": "Which Sally Rooney novel became a hit TV series in 2020?",
+     "a": "Normal People",
+     "wrong": [
+      "Conversations with Friends",
+      "Beautiful World, Where Are You",
+      "Intermezzo"
+     ],
+     "why": "Paul Mescal starred in it."
+    },
+    {
+     "level": 3,
+     "q": "Which poet won the Nobel Prize in Literature in 1923?",
+     "a": "W. B. Yeats",
+     "wrong": [
+      "Seamus Heaney",
+      "Patrick Kavanagh",
+      "Louis MacNeice"
+     ],
+     "why": "Seamus Heaney won in 1995."
+    },
+    {
+     "level": 3,
+     "q": "Which Irish film by Martin McDonagh is set on the island of Inisherin?",
+     "a": "The Banshees of Inisherin",
+     "wrong": [
+      "The Guard",
+      "In Bruges",
+      "Calvary"
+     ],
+     "why": "It got nine Oscar nominations."
+    },
+    {
+     "level": 3,
+     "q": "Which Irish-language film was Oscar-nominated in 2023?",
+     "a": "The Quiet Girl",
+     "wrong": [
+      "Arracht",
+      "Kneecap",
+      "Song of Granite"
+     ],
+     "why": "Its Irish title is 'An Cailín Ciúin'."
+    }
+   ]
+  },
+  {
+   "name": "Ireland Food & Traditions",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which dark stout is brewed at St James's Gate in Dublin?",
+     "a": "Guinness",
+     "wrong": [
+      "Murphy's",
+      "Beamish",
+      "Smithwick's"
+     ],
+     "why": "Arthur Guinness signed a 9,000-year lease in 1759."
+    },
+    {
+     "level": 1,
+     "q": "Which bread is made with baking soda and buttermilk?",
+     "a": "Soda bread",
+     "wrong": [
+      "Barmbrack",
+      "Boxty",
+      "Blaa"
+     ],
+     "why": "A cross is cut in the top before baking."
+    },
+    {
+     "level": 1,
+     "q": "Which stew is made with lamb or mutton, potatoes and onions?",
+     "a": "Irish stew",
+     "wrong": [
+      "Coddle",
+      "Colcannon",
+      "Champ"
+     ],
+     "why": "It is often called the national dish."
+    },
+    {
+     "level": 1,
+     "q": "Which festival, the origin of Halloween, marks the end of the harvest?",
+     "a": "Samhain",
+     "wrong": [
+      "Bealtaine",
+      "Imbolc",
+      "Lughnasa"
+     ],
+     "why": "It falls on 31 October and 1 November."
+    },
+    {
+     "level": 1,
+     "q": "What is the national symbol worn on St Patrick's Day?",
+     "a": "Shamrock",
+     "wrong": [
+      "Thistle",
+      "Rose",
+      "Daffodil"
+     ],
+     "why": "St Patrick is said to have used it to explain the Trinity."
+    },
+    {
+     "level": 1,
+     "q": "Which instrument is on Ireland's coat of arms?",
+     "a": "Harp",
+     "wrong": [
+      "Fiddle",
+      "Bodhrán",
+      "Uilleann pipes"
+     ],
+     "why": "It also appears on euro coins and Guinness."
+    },
+    {
+     "level": 1,
+     "q": "What is a 'full Irish'?",
+     "a": "A cooked breakfast",
+     "wrong": [
+      "A pint of stout",
+      "A Sunday roast",
+      "A wedding cake"
+     ],
+     "why": "It includes black and white pudding."
+    },
+    {
+     "level": 2,
+     "q": "What is mashed potato with cabbage or kale called?",
+     "a": "Colcannon",
+     "wrong": [
+      "Champ",
+      "Boxty",
+      "Coddle"
+     ],
+     "why": "Champ is made with spring onions."
+    },
+    {
+     "level": 2,
+     "q": "Which fruit loaf hides a ring at Halloween?",
+     "a": "Barmbrack",
+     "wrong": [
+      "Soda bread",
+      "Porter cake",
+      "Blaa"
+     ],
+     "why": "Finding the ring meant marriage within a year."
+    },
+    {
+     "level": 2,
+     "q": "Which Dublin dish layers sausages, rashers and potatoes?",
+     "a": "Coddle",
+     "wrong": [
+      "Colcannon",
+      "Boxty",
+      "Irish stew"
+     ],
+     "why": "It was a Saturday-night meal."
+    },
+    {
+     "level": 2,
+     "q": "Which frame drum is used in Irish traditional music?",
+     "a": "Bodhrán",
+     "wrong": [
+      "Tabla",
+      "Djembe",
+      "Snare drum"
+     ],
+     "why": "It is played with a stick called a cipín."
+    },
+    {
+     "level": 2,
+     "q": "What is a 'céilí'?",
+     "a": "A social gathering with music and dancing",
+     "wrong": [
+      "A pub quiz",
+      "A harvest feast",
+      "A boat race"
+     ],
+     "why": "Céilí dances are done in groups."
+    },
+    {
+     "level": 2,
+     "q": "Which Irish-language word means 'fun and good times'?",
+     "a": "Craic",
+     "wrong": [
+      "Sláinte",
+      "Fáilte",
+      "Grá"
+     ],
+     "why": "'What's the craic?' means 'What's happening?'"
+    },
+    {
+     "level": 3,
+     "q": "Which potato pancake is a speciality of the north-west midlands?",
+     "a": "Boxty",
+     "wrong": [
+      "Farl",
+      "Blaa",
+      "Champ"
+     ],
+     "why": "'Boxty on the griddle, boxty on the pan' goes the rhyme."
+    },
+    {
+     "level": 3,
+     "q": "Which soft white bread roll is protected as a Waterford speciality?",
+     "a": "Blaa",
+     "wrong": [
+      "Bap",
+      "Farl",
+      "Batch loaf"
+     ],
+     "why": "It may come from the French Huguenots."
+    },
+    {
+     "level": 3,
+     "q": "Which pipes are played with bellows under the arm?",
+     "a": "Uilleann pipes",
+     "wrong": [
+      "Highland pipes",
+      "Northumbrian smallpipes",
+      "Gaita"
+     ],
+     "why": "'Uilleann' means 'of the elbow'."
+    }
+   ]
+  },
+  {
+   "name": "Ireland General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Ireland's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Pound sterling",
+      "Punt",
+      "Krone"
+     ],
+     "why": "It replaced the Irish pound in 2002."
+    },
+    {
+     "level": 1,
+     "q": "What is the Irish head of government called?",
+     "a": "Taoiseach",
+     "wrong": [
+      "Tánaiste",
+      "Uachtarán",
+      "Ceann Comhairle"
+     ],
+     "why": "The Tánaiste is the deputy."
+    },
+    {
+     "level": 1,
+     "q": "What are the colours of the Irish flag?",
+     "a": "Green, white and orange",
+     "wrong": [
+      "Green, white and red",
+      "Green and gold",
+      "Blue, white and orange"
+     ],
+     "why": "White stands for peace between traditions."
+    },
+    {
+     "level": 1,
+     "q": "What is Ireland's nickname?",
+     "a": "The Emerald Isle",
+     "wrong": [
+      "The Green Land",
+      "The Rainbow Isle",
+      "The Old Country"
+     ],
+     "why": "It refers to its green landscape."
+    },
+    {
+     "level": 1,
+     "q": "Which famous illuminated manuscript is kept at Trinity College Dublin?",
+     "a": "The Book of Kells",
+     "wrong": [
+      "The Lindisfarne Gospels",
+      "The Book of Durrow",
+      "The Domesday Book"
+     ],
+     "why": "It was made around AD 800."
+    },
+    {
+     "level": 1,
+     "q": "What is the Irish parliament called?",
+     "a": "Oireachtas",
+     "wrong": [
+      "Bundestag",
+      "Stormont",
+      "Senedd"
+     ],
+     "why": "It is made up of the President, the Dáil and the Seanad."
+    },
+    {
+     "level": 1,
+     "q": "What is the President of Ireland's residence called?",
+     "a": "Áras an Uachtaráin",
+     "wrong": [
+      "Leinster House",
+      "Dublin Castle",
+      "Farmleigh"
+     ],
+     "why": "It is in the Phoenix Park."
+    },
+    {
+     "level": 2,
+     "q": "Which large Dublin park is one of Europe's biggest city parks?",
+     "a": "Phoenix Park",
+     "wrong": [
+      "St Stephen's Green",
+      "Merrion Square",
+      "Herbert Park"
+     ],
+     "why": "Wild deer roam there."
+    },
+    {
+     "level": 2,
+     "q": "What does 'Sláinte' mean?",
+     "a": "Cheers (good health)",
+     "wrong": [
+      "Welcome",
+      "Goodbye",
+      "Thank you"
+     ],
+     "why": "It is said when raising a glass."
+    },
+    {
+     "level": 2,
+     "q": "Which ship built in Belfast sank in 1912 after calling at Cobh?",
+     "a": "Titanic",
+     "wrong": [
+      "Lusitania",
+      "Britannic",
+      "Olympic"
+     ],
+     "why": "Cobh was then called Queenstown."
+    },
+    {
+     "level": 2,
+     "q": "Which ship was sunk off the Old Head of Kinsale in 1915?",
+     "a": "Lusitania",
+     "wrong": [
+      "Titanic",
+      "Britannic",
+      "Leinster"
+     ],
+     "why": "A German U-boat torpedoed it."
+    },
+    {
+     "level": 2,
+     "q": "What is the national anthem of Ireland?",
+     "a": "Amhrán na bhFiann",
+     "wrong": [
+      "Ireland's Call",
+      "The Fields of Athenry",
+      "Danny Boy"
+     ],
+     "why": "It means 'The Soldier's Song'."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Ireland vote to allow same-sex marriage, the first country to do so by popular vote?",
+     "a": "2015",
+     "wrong": [
+      "2010",
+      "2018",
+      "2005"
+     ],
+     "why": "62% voted yes."
+    },
+    {
+     "level": 3,
+     "q": "Which Irish physicist co-split the atom with John Cockcroft and won a Nobel?",
+     "a": "Ernest Walton",
+     "wrong": [
+      "John Bell",
+      "William Rowan Hamilton",
+      "George Stokes"
+     ],
+     "why": "They shared the 1951 Nobel Prize in Physics."
+    },
+    {
+     "level": 3,
+     "q": "Which Irish-language areas are called the Gaeltacht?",
+     "a": "Regions where Irish is the main spoken language",
+     "wrong": [
+      "Old Viking towns",
+      "Protected bogs",
+      "Northern counties"
+     ],
+     "why": "They are mostly along the west coast."
+    },
+    {
+     "level": 3,
+     "q": "Which Irish mathematician carved his quaternion formula on a Dublin bridge in 1843?",
+     "a": "William Rowan Hamilton",
+     "wrong": [
+      "George Boole",
+      "Ernest Walton",
+      "John Bell"
+     ],
+     "why": "He scratched it on Broom Bridge."
+    }
+   ]
+  }
+ ]
+}

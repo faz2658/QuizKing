@@ -1,0 +1,346 @@
+{
+ "category": "Ecuador",
+ "country": "EC",
+ "topics": [
+  {
+   "name": "Ecuador: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Ecuador?",
+     "a": "Quito",
+     "wrong": [
+      "Guayaquil",
+      "Cuenca",
+      "Manta"
+     ],
+     "why": "It is one of the world's highest capitals."
+    },
+    {
+     "level": 1,
+     "q": "Which line gives Ecuador its name?",
+     "a": "The Equator",
+     "wrong": [
+      "The Tropic of Cancer",
+      "The Prime Meridian",
+      "The Andes"
+     ],
+     "why": "'Ecuador' is Spanish for equator."
+    },
+    {
+     "level": 1,
+     "q": "Which empire ruled the Ecuadorian highlands before the Spanish?",
+     "a": "Inca Empire",
+     "wrong": [
+      "Aztec Empire",
+      "Maya",
+      "Chimú"
+     ],
+     "why": "Quito was a northern Inca capital."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Ecuador become fully independent?",
+     "a": "1830",
+     "wrong": [
+      "1810",
+      "1822",
+      "1845"
+     ],
+     "why": "It left Gran Colombia."
+    },
+    {
+     "level": 1,
+     "q": "Which 1822 battle on a volcano's slopes freed Quito?",
+     "a": "Battle of Pichincha",
+     "wrong": [
+      "Battle of Ayacucho",
+      "Battle of Boyacá",
+      "Battle of Carabobo"
+     ],
+     "why": "Antonio José de Sucre won it."
+    },
+    {
+     "level": 1,
+     "q": "Which naturalist visited the Galápagos in 1835?",
+     "a": "Charles Darwin",
+     "wrong": [
+      "Alfred Russel Wallace",
+      "Alexander von Humboldt",
+      "Joseph Banks"
+     ],
+     "why": "The visit shaped his theory of evolution."
+    },
+    {
+     "level": 1,
+     "q": "What currency did Ecuador adopt in 2000?",
+     "a": "US dollar",
+     "wrong": [
+      "Euro",
+      "Peso",
+      "Sucre"
+     ],
+     "why": "It replaced the sucre."
+    },
+    {
+     "level": 2,
+     "q": "Which Inca emperor born near Quito fought his brother Huáscar?",
+     "a": "Atahualpa",
+     "wrong": [
+      "Huayna Capac",
+      "Pachacuti",
+      "Manco Inca"
+     ],
+     "why": "He was later captured by Pizarro."
+    },
+    {
+     "level": 2,
+     "q": "Which President took the country left from 2007 to 2017?",
+     "a": "Rafael Correa",
+     "wrong": [
+      "Lenín Moreno",
+      "Lucio Gutiérrez",
+      "Daniel Noboa"
+     ],
+     "why": "He wrote a new constitution in 2008."
+    },
+    {
+     "level": 2,
+     "q": "Which constitution of 2008 was the first to give rights to nature?",
+     "a": "Ecuador's constitution",
+     "wrong": [
+      "Bolivia's constitution",
+      "Chile's constitution",
+      "Peru's constitution"
+     ],
+     "why": "It recognises 'Pacha Mama'."
+    },
+    {
+     "level": 2,
+     "q": "Which explorer measured the Earth near Quito in the 1730s?",
+     "a": "The French Geodesic Mission",
+     "wrong": [
+      "Charles Darwin's expedition",
+      "Humboldt's team",
+      "The Royal Society team"
+     ],
+     "why": "It proved the Earth bulges at the equator."
+    },
+    {
+     "level": 2,
+     "q": "Which hat, made in Ecuador, is wrongly named after another country?",
+     "a": "Panama hat",
+     "wrong": [
+      "Fedora",
+      "Sombrero",
+      "Bowler"
+     ],
+     "why": "It is woven from toquilla straw."
+    },
+    {
+     "level": 3,
+     "q": "Which heroine helped free Quito and fought with Bolívar?",
+     "a": "Manuela Sáenz",
+     "wrong": [
+      "Juana Azurduy",
+      "Policarpa Salavarrieta",
+      "Josefa Ortiz"
+     ],
+     "why": "She saved Bolívar's life in 1828."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient culture made pottery in Ecuador over 5,000 years ago?",
+     "a": "Valdivia culture",
+     "wrong": [
+      "Chavín culture",
+      "Moche",
+      "Nazca"
+     ],
+     "why": "It is one of the oldest in the Americas."
+    },
+    {
+     "level": 3,
+     "q": "Which President took office in 2023 at age 35?",
+     "a": "Daniel Noboa",
+     "wrong": [
+      "Guillermo Lasso",
+      "Lenín Moreno",
+      "Rafael Correa"
+     ],
+     "why": "He was re-elected in 2025."
+    }
+   ]
+  },
+  {
+   "name": "Ecuador: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which islands inspired Darwin's theory of evolution?",
+     "a": "Galápagos Islands",
+     "wrong": [
+      "Easter Island",
+      "Falkland Islands",
+      "Juan Fernández Islands"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which giant reptiles live on the Galápagos?",
+     "a": "Giant tortoises",
+     "wrong": [
+      "Komodo dragons",
+      "Crocodiles",
+      "Alligators"
+     ],
+     "why": "Some live over 100 years."
+    },
+    {
+     "level": 1,
+     "q": "Which is Ecuador's largest city and main port?",
+     "a": "Guayaquil",
+     "wrong": [
+      "Quito",
+      "Cuenca",
+      "Ambato"
+     ],
+     "why": "It is on the Guayas River."
+    },
+    {
+     "level": 1,
+     "q": "Which fruit is Ecuador one of the world's largest exporters of?",
+     "a": "Bananas",
+     "wrong": [
+      "Apples",
+      "Grapes",
+      "Oranges"
+     ],
+     "why": "They grow on the coast."
+    },
+    {
+     "level": 1,
+     "q": "Which volcano near Quito is one of the highest active volcanoes?",
+     "a": "Cotopaxi",
+     "wrong": [
+      "Chimborazo",
+      "Pichincha",
+      "Tungurahua"
+     ],
+     "why": "It is about 5,897 m high."
+    },
+    {
+     "level": 1,
+     "q": "Which monument near Quito marks the equator?",
+     "a": "Mitad del Mundo",
+     "wrong": [
+      "Equator Arch",
+      "Centre of Earth Tower",
+      "Line Gate"
+     ],
+     "why": "Its name means 'middle of the world'."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean lies west of Ecuador?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Atlantic Ocean",
+      "Caribbean Sea",
+      "Indian Ocean"
+     ],
+     "why": "The Galápagos are about 1,000 km offshore."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain's summit is the farthest point from Earth's centre?",
+     "a": "Chimborazo",
+     "wrong": [
+      "Everest",
+      "Cotopaxi",
+      "Aconcagua"
+     ],
+     "why": "The equatorial bulge makes it so."
+    },
+    {
+     "level": 2,
+     "q": "Which colonial city in the south is a UNESCO site?",
+     "a": "Cuenca",
+     "wrong": [
+      "Loja",
+      "Riobamba",
+      "Ibarra"
+     ],
+     "why": "It is famous for its blue domes."
+    },
+    {
+     "level": 2,
+     "q": "Which Indigenous market town north of Quito is famous for crafts?",
+     "a": "Otavalo",
+     "wrong": [
+      "Baños",
+      "Latacunga",
+      "Puyo"
+     ],
+     "why": "Its Saturday market is huge."
+    },
+    {
+     "level": 2,
+     "q": "Which roasted rodent is a traditional Andean dish?",
+     "a": "Cuy (guinea pig)",
+     "wrong": [
+      "Rabbit",
+      "Squirrel",
+      "Capybara"
+     ],
+     "why": "It is eaten at celebrations."
+    },
+    {
+     "level": 2,
+     "q": "Which spa town sits at the foot of Tungurahua volcano?",
+     "a": "Baños",
+     "wrong": [
+      "Otavalo",
+      "Mindo",
+      "Cuenca"
+     ],
+     "why": "It is known for its hot springs and swings."
+    },
+    {
+     "level": 3,
+     "q": "Which Ecuadorian city's old centre was among the first two UNESCO sites in 1978?",
+     "a": "Quito",
+     "wrong": [
+      "Cuenca",
+      "Guayaquil",
+      "Loja"
+     ],
+     "why": "Kraków was the other city."
+    },
+    {
+     "level": 3,
+     "q": "Which Ecuadorian race walker won Olympic gold in 1996?",
+     "a": "Jefferson Pérez",
+     "wrong": [
+      "Brian Daniel Pintado",
+      "Richard Carapaz",
+      "Glenda Morejón"
+     ],
+     "why": "It was Ecuador's first Olympic medal."
+    },
+    {
+     "level": 3,
+     "q": "Which Ecuadorian cyclist won Olympic road race gold in Tokyo?",
+     "a": "Richard Carapaz",
+     "wrong": [
+      "Jhonatan Narváez",
+      "Jefferson Pérez",
+      "Andrés Gómez"
+     ],
+     "why": "He also won the 2019 Giro d'Italia."
+    }
+   ]
+  }
+ ]
+}

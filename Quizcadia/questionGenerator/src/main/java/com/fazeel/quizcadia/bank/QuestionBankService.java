@@ -185,8 +185,17 @@ public class QuestionBankService {
 	 * @return how many questions were new
 	 */
 	public int importQuestions(String categoryName, String topicName, List<Questions> questions) {
+		return importQuestions(categoryName, null, topicName, questions);
+	}
+
+	/** Like {@link #importQuestions(String, String, List)}, also tagging the category with a country (e.g. IN). */
+	public int importQuestions(String categoryName, String countryCode, String topicName, List<Questions> questions) {
 		Category c = categories.findByCategoryNameIgnoreCase(categoryName.trim())
 				.orElseGet(() -> createCategory(categoryName, null));
+		if (countryCode != null && !countryCode.equals(c.getCountryCode())) {
+			c.setCountryCode(countryCode);
+			c = categories.save(c);
+		}
 		if (topics(c).stream().noneMatch(t -> t.getTopicName().equalsIgnoreCase(topicName.trim()))) {
 			c = addTopic(c.getCategoryId(), topicName, null);
 		}
@@ -250,6 +259,7 @@ public class QuestionBankService {
 		partial.setCategoryId(c.getCategoryId());
 		partial.setCategoryName(c.getCategoryName());
 		partial.setCategoryImage(c.getCategoryImage());
+		partial.setCountryCode(c.getCountryCode());
 		partial.setTopic(List.of(t));
 		events.categoryChanged(partial);
 	}

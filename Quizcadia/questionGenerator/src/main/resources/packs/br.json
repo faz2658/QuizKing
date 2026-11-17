@@ -1,0 +1,1092 @@
+{
+ "category": "Brazil",
+ "country": "BR",
+ "topics": [
+  {
+   "name": "Brazil History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which European country colonised Brazil?",
+     "a": "Portugal",
+     "wrong": [
+      "Spain",
+      "France",
+      "The Netherlands"
+     ],
+     "why": "That is why Brazilians speak Portuguese."
+    },
+    {
+     "level": 1,
+     "q": "Which Portuguese navigator reached Brazil in 1500?",
+     "a": "Pedro Álvares Cabral",
+     "wrong": [
+      "Vasco da Gama",
+      "Ferdinand Magellan",
+      "Bartolomeu Dias"
+     ],
+     "why": "He landed in today's Bahia."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Brazil declare independence?",
+     "a": "1822",
+     "wrong": [
+      "1808",
+      "1889",
+      "1500"
+     ],
+     "why": "Independence Day is 7 September."
+    },
+    {
+     "level": 1,
+     "q": "Which city was Brazil's capital before Brasília?",
+     "a": "Rio de Janeiro",
+     "wrong": [
+      "Salvador",
+      "São Paulo",
+      "Recife"
+     ],
+     "why": "Salvador was the first capital, until 1763."
+    },
+    {
+     "level": 1,
+     "q": "In which year was Brasília inaugurated as the capital?",
+     "a": "1960",
+     "wrong": [
+      "1950",
+      "1945",
+      "1971"
+     ],
+     "why": "It was built in about four years."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Brazil become the last country in the Americas to abolish slavery?",
+     "a": "1888",
+     "wrong": [
+      "1865",
+      "1822",
+      "1900"
+     ],
+     "why": "Princess Isabel signed the Golden Law."
+    },
+    {
+     "level": 1,
+     "q": "Which prince declared Brazil's independence?",
+     "a": "Pedro I",
+     "wrong": [
+      "João VI",
+      "Pedro II",
+      "Maximilian"
+     ],
+     "why": "He cried 'Independence or death!'"
+    },
+    {
+     "level": 2,
+     "q": "In which year did Brazil become a republic?",
+     "a": "1889",
+     "wrong": [
+      "1822",
+      "1930",
+      "1964"
+     ],
+     "why": "Emperor Pedro II was overthrown."
+    },
+    {
+     "level": 2,
+     "q": "Which president built Brasília?",
+     "a": "Juscelino Kubitschek",
+     "wrong": [
+      "Getúlio Vargas",
+      "João Goulart",
+      "Jânio Quadros"
+     ],
+     "why": "His slogan was '50 years in 5'."
+    },
+    {
+     "level": 2,
+     "q": "Which president ruled from 1930 and created the 'Estado Novo'?",
+     "a": "Getúlio Vargas",
+     "wrong": [
+      "Juscelino Kubitschek",
+      "Eurico Dutra",
+      "Washington Luís"
+     ],
+     "why": "He dominated politics for two decades."
+    },
+    {
+     "level": 2,
+     "q": "In which year did a military coup begin 21 years of military rule?",
+     "a": "1964",
+     "wrong": [
+      "1954",
+      "1970",
+      "1985"
+     ],
+     "why": "Civilian rule returned in 1985."
+    },
+    {
+     "level": 2,
+     "q": "Which escaped-slave settlement was led by Zumbi?",
+     "a": "Palmares",
+     "wrong": [
+      "Canudos",
+      "Ouro Preto",
+      "Olinda"
+     ],
+     "why": "20 November, Black Consciousness Day, honours him."
+    },
+    {
+     "level": 2,
+     "q": "Who became Brazil's first woman President, in 2011?",
+     "a": "Dilma Rousseff",
+     "wrong": [
+      "Marina Silva",
+      "Benedita da Silva",
+      "Gleisi Hoffmann"
+     ],
+     "why": "She was impeached in 2016."
+    },
+    {
+     "level": 3,
+     "q": "Why did the Portuguese royal court move to Rio in 1808?",
+     "a": "To escape Napoleon's invasion of Portugal",
+     "wrong": [
+      "To flee a plague",
+      "To build a new empire in Africa",
+      "Because Lisbon had an earthquake"
+     ],
+     "why": "Rio became the capital of the Portuguese Empire."
+    },
+    {
+     "level": 3,
+     "q": "Which colonial gold-mining town in Minas Gerais is a UNESCO site?",
+     "a": "Ouro Preto",
+     "wrong": [
+      "Paraty",
+      "Olinda",
+      "Diamantina"
+     ],
+     "why": "Its name means 'black gold'."
+    },
+    {
+     "level": 3,
+     "q": "Which dentist led a 1789 independence plot and was executed?",
+     "a": "Tiradentes",
+     "wrong": [
+      "José Bonifácio",
+      "Frei Caneca",
+      "Bento Gonçalves"
+     ],
+     "why": "21 April is a holiday in his honour."
+    }
+   ]
+  },
+  {
+   "name": "Brazil Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Brazil?",
+     "a": "Brasília",
+     "wrong": [
+      "Rio de Janeiro",
+      "São Paulo",
+      "Salvador"
+     ],
+     "why": "Its layout looks like a plane from above."
+    },
+    {
+     "level": 1,
+     "q": "What is Brazil's largest city?",
+     "a": "São Paulo",
+     "wrong": [
+      "Rio de Janeiro",
+      "Belo Horizonte",
+      "Brasília"
+     ],
+     "why": "It is the largest city in the Southern Hemisphere."
+    },
+    {
+     "level": 1,
+     "q": "Which huge rainforest covers much of northern Brazil?",
+     "a": "Amazon",
+     "wrong": [
+      "Atlantic Forest",
+      "Pantanal",
+      "Cerrado"
+     ],
+     "why": "About 60% of the Amazon is in Brazil."
+    },
+    {
+     "level": 1,
+     "q": "Which statue stands on Corcovado above Rio?",
+     "a": "Christ the Redeemer",
+     "wrong": [
+      "Our Lady of Aparecida",
+      "Saint Sebastian",
+      "Christ of the Andes"
+     ],
+     "why": "It was finished in 1931."
+    },
+    {
+     "level": 1,
+     "q": "Which waterfalls lie on the Brazil–Argentina border?",
+     "a": "Iguaçu Falls",
+     "wrong": [
+      "Angel Falls",
+      "Kaieteur Falls",
+      "Victoria Falls"
+     ],
+     "why": "They are made of about 275 drops."
+    },
+    {
+     "level": 1,
+     "q": "Which rock peak at Rio's harbour has a cable car?",
+     "a": "Sugarloaf Mountain",
+     "wrong": [
+      "Corcovado",
+      "Pedra da Gávea",
+      "Dois Irmãos"
+     ],
+     "why": "In Portuguese it is Pão de Açúcar."
+    },
+    {
+     "level": 1,
+     "q": "Which famous beach is in Rio de Janeiro?",
+     "a": "Copacabana",
+     "wrong": [
+      "Jericoacoara",
+      "Praia do Forte",
+      "Porto de Galinhas"
+     ],
+     "why": "Its wavy pavement is famous."
+    },
+    {
+     "level": 2,
+     "q": "Which is the world's largest tropical wetland, in western Brazil?",
+     "a": "Pantanal",
+     "wrong": [
+      "Amazon",
+      "Cerrado",
+      "Caatinga"
+     ],
+     "why": "It is great for seeing jaguars."
+    },
+    {
+     "level": 2,
+     "q": "Which is Brazil's highest mountain?",
+     "a": "Pico da Neblina",
+     "wrong": [
+      "Pico da Bandeira",
+      "Pedra da Mina",
+      "Monte Roraima"
+     ],
+     "why": "It is near the Venezuelan border."
+    },
+    {
+     "level": 2,
+     "q": "How many countries border Brazil?",
+     "a": "10",
+     "wrong": [
+      "7",
+      "12",
+      "5"
+     ],
+     "why": "Only Chile and Ecuador in South America don't."
+    },
+    {
+     "level": 2,
+     "q": "Which city at the meeting of the Rio Negro and Solimões is the Amazon's main city?",
+     "a": "Manaus",
+     "wrong": [
+      "Belém",
+      "Porto Velho",
+      "Santarém"
+     ],
+     "why": "Its opera house was built in the rubber boom."
+    },
+    {
+     "level": 2,
+     "q": "Which city in Bahia was Brazil's first capital?",
+     "a": "Salvador",
+     "wrong": [
+      "Recife",
+      "Fortaleza",
+      "Ilhéus"
+     ],
+     "why": "Its old centre, Pelourinho, is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which state is the largest in Brazil?",
+     "a": "Amazonas",
+     "wrong": [
+      "Pará",
+      "Mato Grosso",
+      "Minas Gerais"
+     ],
+     "why": "It is bigger than many countries."
+    },
+    {
+     "level": 3,
+     "q": "Which coastal dunes park has rainwater lagoons between white dunes?",
+     "a": "Lençóis Maranhenses",
+     "wrong": [
+      "Jericoacoara",
+      "Chapada Diamantina",
+      "Fernando de Noronha"
+     ],
+     "why": "The lagoons fill in the rainy season."
+    },
+    {
+     "level": 3,
+     "q": "Which island group off the northeast is a marine park?",
+     "a": "Fernando de Noronha",
+     "wrong": [
+      "Ilha Grande",
+      "Abrolhos",
+      "Florianópolis"
+     ],
+     "why": "Visitor numbers are limited."
+    },
+    {
+     "level": 3,
+     "q": "Which is the longest river entirely within Brazil?",
+     "a": "São Francisco",
+     "wrong": [
+      "Paraná",
+      "Tocantins",
+      "Madeira"
+     ],
+     "why": "It is called the 'river of national unity'."
+    }
+   ]
+  },
+  {
+   "name": "Brazil Sport",
+   "questions": [
+    {
+     "level": 1,
+     "q": "How many FIFA World Cups has Brazil won?",
+     "a": "5",
+     "wrong": [
+      "4",
+      "3",
+      "6"
+     ],
+     "why": "More than any other nation."
+    },
+    {
+     "level": 1,
+     "q": "Which Brazilian footballer won three World Cups?",
+     "a": "Pelé",
+     "wrong": [
+      "Ronaldo",
+      "Garrincha",
+      "Zico"
+     ],
+     "why": "In 1958, 1962 and 1970."
+    },
+    {
+     "level": 1,
+     "q": "Which Rio stadium hosted the 1950 and 2014 World Cup finals?",
+     "a": "Maracanã",
+     "wrong": [
+      "Morumbi",
+      "Mineirão",
+      "Arena Corinthians"
+     ],
+     "why": "Nearly 200,000 attended in 1950."
+    },
+    {
+     "level": 1,
+     "q": "Which Brazilian F1 driver won world titles in 1988, 1990 and 1991?",
+     "a": "Ayrton Senna",
+     "wrong": [
+      "Nelson Piquet",
+      "Emerson Fittipaldi",
+      "Rubens Barrichello"
+     ],
+     "why": "He died at Imola in 1994."
+    },
+    {
+     "level": 1,
+     "q": "Which martial art mixing dance and acrobatics comes from Brazil?",
+     "a": "Capoeira",
+     "wrong": [
+      "Jiu-jitsu",
+      "Krav Maga",
+      "Taekwondo"
+     ],
+     "why": "It was developed by enslaved Africans."
+    },
+    {
+     "level": 1,
+     "q": "Which city hosted the 2016 Summer Olympics?",
+     "a": "Rio de Janeiro",
+     "wrong": [
+      "São Paulo",
+      "Brasília",
+      "Salvador"
+     ],
+     "why": "It was the first Olympics in South America."
+    },
+    {
+     "level": 1,
+     "q": "Which Brazilian forward joined PSG for a world-record fee in 2017?",
+     "a": "Neymar",
+     "wrong": [
+      "Vinícius Júnior",
+      "Ronaldinho",
+      "Philippe Coutinho"
+     ],
+     "why": "The fee was €222 million."
+    },
+    {
+     "level": 2,
+     "q": "Which striker, 'O Fenômeno', scored twice in the 2002 World Cup final?",
+     "a": "Ronaldo",
+     "wrong": [
+      "Rivaldo",
+      "Romário",
+      "Adriano"
+     ],
+     "why": "Brazil beat Germany 2–0."
+    },
+    {
+     "level": 2,
+     "q": "Which skateboarder won Olympic silver at 13 in 2021?",
+     "a": "Rayssa Leal",
+     "wrong": [
+      "Pâmela Rosa",
+      "Letícia Bufoni",
+      "Rebeca Andrade"
+     ],
+     "why": "She is nicknamed the 'Little Fairy'."
+    },
+    {
+     "level": 2,
+     "q": "Which gymnast won floor gold at Paris 2024 ahead of Simone Biles?",
+     "a": "Rebeca Andrade",
+     "wrong": [
+      "Daiane dos Santos",
+      "Flávia Saraiva",
+      "Jade Barbosa"
+     ],
+     "why": "She also won vault gold in Tokyo."
+    },
+    {
+     "level": 2,
+     "q": "Which Brazilian women's footballer won FIFA's best player award six times?",
+     "a": "Marta",
+     "wrong": [
+      "Formiga",
+      "Cristiane",
+      "Debinha"
+     ],
+     "why": "She is the top scorer in World Cup history."
+    },
+    {
+     "level": 2,
+     "q": "What was Brazil's 7–1 loss to Germany in 2014 nicknamed?",
+     "a": "Mineirazo",
+     "wrong": [
+      "Maracanazo",
+      "Blackout",
+      "Belo Disaster"
+     ],
+     "why": "It was played at the Mineirão."
+    },
+    {
+     "level": 2,
+     "q": "Which Brazilian family helped create Brazilian jiu-jitsu?",
+     "a": "The Gracies",
+     "wrong": [
+      "The Machados",
+      "The Nogueiras",
+      "The Silvas"
+     ],
+     "why": "Hélio and Carlos Gracie adapted judo."
+    },
+    {
+     "level": 3,
+     "q": "What was Uruguay's shock win over Brazil in the 1950 final called?",
+     "a": "Maracanazo",
+     "wrong": [
+      "Mineirazo",
+      "Centenario",
+      "Miracle of Rio"
+     ],
+     "why": "It was played in front of about 200,000 fans."
+    },
+    {
+     "level": 3,
+     "q": "Which Brazilian won Formula One titles in 1972 and 1974?",
+     "a": "Emerson Fittipaldi",
+     "wrong": [
+      "Nelson Piquet",
+      "Ayrton Senna",
+      "Carlos Pace"
+     ],
+     "why": "He later won the Indy 500 twice."
+    },
+    {
+     "level": 3,
+     "q": "Which Brazilian surfer won Brazil's first Olympic surfing gold?",
+     "a": "Ítalo Ferreira",
+     "wrong": [
+      "Gabriel Medina",
+      "Filipe Toledo",
+      "Adriano de Souza"
+     ],
+     "why": "Surfing debuted at Tokyo 2020."
+    }
+   ]
+  },
+  {
+   "name": "Brazil Film, TV & Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which music style, born in Rio, is played at Carnival?",
+     "a": "Samba",
+     "wrong": [
+      "Tango",
+      "Salsa",
+      "Merengue"
+     ],
+     "why": "Samba schools parade in the Sambadrome."
+    },
+    {
+     "level": 1,
+     "q": "Which 1960s style gave us 'The Girl from Ipanema'?",
+     "a": "Bossa nova",
+     "wrong": [
+      "Samba-reggae",
+      "Forró",
+      "Axé"
+     ],
+     "why": "Antônio Carlos Jobim co-wrote it."
+    },
+    {
+     "level": 1,
+     "q": "Which Brazilian supermodel became world-famous in the 2000s?",
+     "a": "Gisele Bündchen",
+     "wrong": [
+      "Adriana Lima",
+      "Alessandra Ambrosio",
+      "Izabel Goulart"
+     ],
+     "why": "She was the world's highest-paid model for years."
+    },
+    {
+     "level": 1,
+     "q": "Which 2002 film is set in a Rio favela?",
+     "a": "City of God",
+     "wrong": [
+      "Central Station",
+      "Elite Squad",
+      "Black Orpheus"
+     ],
+     "why": "It received four Oscar nominations."
+    },
+    {
+     "level": 1,
+     "q": "Which Brazilian author wrote 'The Alchemist'?",
+     "a": "Paulo Coelho",
+     "wrong": [
+      "Jorge Amado",
+      "Clarice Lispector",
+      "Machado de Assis"
+     ],
+     "why": "It has been translated into over 80 languages."
+    },
+    {
+     "level": 1,
+     "q": "What are Brazilian TV soap operas called?",
+     "a": "Telenovelas",
+     "wrong": [
+      "Radionovelas",
+      "Docusoaps",
+      "Mini-series"
+     ],
+     "why": "Globo's novelas are watched by millions nightly."
+    },
+    {
+     "level": 1,
+     "q": "Which singer had a hit with 'Envolver' and 'Show das Poderosas'?",
+     "a": "Anitta",
+     "wrong": [
+      "Ludmilla",
+      "Ivete Sangalo",
+      "Pabllo Vittar"
+     ],
+     "why": "She topped Spotify's global chart in 2022."
+    },
+    {
+     "level": 2,
+     "q": "Which 2024 Brazilian film won the Oscar for Best International Feature?",
+     "a": "I'm Still Here",
+     "wrong": [
+      "Central Station",
+      "City of God",
+      "The Second Mother"
+     ],
+     "why": "Fernanda Torres was nominated for Best Actress."
+    },
+    {
+     "level": 2,
+     "q": "Which writer of 'Dom Casmurro' founded the Brazilian Academy of Letters?",
+     "a": "Machado de Assis",
+     "wrong": [
+      "Jorge Amado",
+      "José de Alencar",
+      "Graciliano Ramos"
+     ],
+     "why": "He is often called Brazil's greatest writer."
+    },
+    {
+     "level": 2,
+     "q": "Which Bahia singer-songwriter co-founded Tropicália?",
+     "a": "Caetano Veloso",
+     "wrong": [
+      "Roberto Carlos",
+      "Chico Buarque",
+      "Milton Nascimento"
+     ],
+     "why": "Gilberto Gil was its other leader."
+    },
+    {
+     "level": 2,
+     "q": "Which architect designed Brasília's modernist buildings?",
+     "a": "Oscar Niemeyer",
+     "wrong": [
+      "Lúcio Costa",
+      "Roberto Burle Marx",
+      "Paulo Mendes da Rocha"
+     ],
+     "why": "Lúcio Costa drew the city plan."
+    },
+    {
+     "level": 2,
+     "q": "Which singer is called 'the King' of Brazilian music?",
+     "a": "Roberto Carlos",
+     "wrong": [
+      "Caetano Veloso",
+      "Tim Maia",
+      "Gilberto Gil"
+     ],
+     "why": "He has sold well over 100 million records."
+    },
+    {
+     "level": 2,
+     "q": "Which northeastern accordion dance music is popular at June festivals?",
+     "a": "Forró",
+     "wrong": [
+      "Samba",
+      "Pagode",
+      "Funk carioca"
+     ],
+     "why": "Luiz Gonzaga was its king."
+    },
+    {
+     "level": 3,
+     "q": "Who wrote 'Gabriela, Clove and Cinnamon'?",
+     "a": "Jorge Amado",
+     "wrong": [
+      "Machado de Assis",
+      "Clarice Lispector",
+      "Rubem Fonseca"
+     ],
+     "why": "It is set in Ilhéus, Bahia."
+    },
+    {
+     "level": 3,
+     "q": "Which landscape designer created Copacabana's wave pavement?",
+     "a": "Roberto Burle Marx",
+     "wrong": [
+      "Oscar Niemeyer",
+      "Lúcio Costa",
+      "Lina Bo Bardi"
+     ],
+     "why": "It was completed in 1970."
+    },
+    {
+     "level": 3,
+     "q": "Which 1998 film starring Fernanda Montenegro was Oscar-nominated?",
+     "a": "Central Station",
+     "wrong": [
+      "City of God",
+      "Pixote",
+      "Bacurau"
+     ],
+     "why": "Montenegro was nominated for Best Actress."
+    }
+   ]
+  },
+  {
+   "name": "Brazil Food & Traditions",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which black bean and pork stew is Brazil's national dish?",
+     "a": "Feijoada",
+     "wrong": [
+      "Moqueca",
+      "Vatapá",
+      "Churrasco"
+     ],
+     "why": "It is traditionally eaten on Saturdays."
+    },
+    {
+     "level": 1,
+     "q": "Which cocktail is made with cachaça, lime and sugar?",
+     "a": "Caipirinha",
+     "wrong": [
+      "Mojito",
+      "Pisco sour",
+      "Margarita"
+     ],
+     "why": "It is Brazil's national cocktail."
+    },
+    {
+     "level": 1,
+     "q": "What are Brazil's cheese breads called?",
+     "a": "Pão de queijo",
+     "wrong": [
+      "Coxinha",
+      "Esfiha",
+      "Pastel"
+     ],
+     "why": "They come from Minas Gerais."
+    },
+    {
+     "level": 1,
+     "q": "Which festival before Lent is world-famous in Rio?",
+     "a": "Carnival",
+     "wrong": [
+      "Festa Junina",
+      "Bumba Meu Boi",
+      "Parintins"
+     ],
+     "why": "Samba schools compete in the Sambadrome."
+    },
+    {
+     "level": 1,
+     "q": "What is Brazilian barbecue called?",
+     "a": "Churrasco",
+     "wrong": [
+      "Asado",
+      "Braai",
+      "Barbacoa"
+     ],
+     "why": "Waiters carve meat at the table in churrascarias."
+    },
+    {
+     "level": 1,
+     "q": "Which chocolate truffles are served at every birthday party?",
+     "a": "Brigadeiros",
+     "wrong": [
+      "Beijinhos",
+      "Quindim",
+      "Cajuzinhos"
+     ],
+     "why": "They are named after a brigadier."
+    },
+    {
+     "level": 1,
+     "q": "Which purple berry from the Amazon is served as a frozen bowl?",
+     "a": "Açaí",
+     "wrong": [
+      "Guaraná",
+      "Cupuaçu",
+      "Acerola"
+     ],
+     "why": "It is often topped with granola."
+    },
+    {
+     "level": 2,
+     "q": "Which June festivals celebrate saints with bonfires and square dancing?",
+     "a": "Festas Juninas",
+     "wrong": [
+      "Carnival",
+      "Círio de Nazaré",
+      "Oktoberfest"
+     ],
+     "why": "They are biggest in the northeast."
+    },
+    {
+     "level": 2,
+     "q": "Which teardrop-shaped fried snack is filled with chicken?",
+     "a": "Coxinha",
+     "wrong": [
+      "Pastel",
+      "Kibe",
+      "Empada"
+     ],
+     "why": "Its name means 'little thigh'."
+    },
+    {
+     "level": 2,
+     "q": "Which fish stew with coconut milk and dendê oil comes from Bahia?",
+     "a": "Moqueca baiana",
+     "wrong": [
+      "Feijoada",
+      "Vatapá",
+      "Caruru"
+     ],
+     "why": "The Espírito Santo version uses no coconut milk."
+    },
+    {
+     "level": 2,
+     "q": "Which fried bean fritter is sold by Baianas in Salvador?",
+     "a": "Acarajé",
+     "wrong": [
+      "Coxinha",
+      "Tapioca",
+      "Pamonha"
+     ],
+     "why": "It comes from West African cooking."
+    },
+    {
+     "level": 2,
+     "q": "Which toasted cassava flour is sprinkled on many dishes?",
+     "a": "Farofa",
+     "wrong": [
+      "Tapioca",
+      "Polvilho",
+      "Fubá"
+     ],
+     "why": "It often includes bacon or onion."
+    },
+    {
+     "level": 2,
+     "q": "Which caffeinated Amazon fruit flavours a popular soda?",
+     "a": "Guaraná",
+     "wrong": [
+      "Açaí",
+      "Caju",
+      "Maracujá"
+     ],
+     "why": "Guaraná Antarctica is a best-seller."
+    },
+    {
+     "level": 3,
+     "q": "Which Amazon festival in Parintins features two rival oxen teams?",
+     "a": "Festival de Parintins (Boi-Bumbá)",
+     "wrong": [
+      "Círio de Nazaré",
+      "Festa do Divino",
+      "Cavalhadas"
+     ],
+     "why": "The teams are Garantido and Caprichoso."
+    },
+    {
+     "level": 3,
+     "q": "What is the herbal tea drunk from a gourd in southern Brazil called?",
+     "a": "Chimarrão",
+     "wrong": [
+      "Tereré",
+      "Cafezinho",
+      "Caldo de cana"
+     ],
+     "why": "It is made from yerba mate."
+    },
+    {
+     "level": 3,
+     "q": "Which religious procession in Belém is one of the world's largest?",
+     "a": "Círio de Nazaré",
+     "wrong": [
+      "Lavagem do Bonfim",
+      "Festa de Iemanjá",
+      "Festa do Divino"
+     ],
+     "why": "Millions follow it each October."
+    }
+   ]
+  },
+  {
+   "name": "Brazil General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the official language of Brazil?",
+     "a": "Portuguese",
+     "wrong": [
+      "Spanish",
+      "Brazilian",
+      "English"
+     ],
+     "why": "Brazil has the most Portuguese speakers in the world."
+    },
+    {
+     "level": 1,
+     "q": "What is Brazil's currency?",
+     "a": "Real",
+     "wrong": [
+      "Peso",
+      "Cruzeiro",
+      "Escudo"
+     ],
+     "why": "It was introduced in 1994."
+    },
+    {
+     "level": 1,
+     "q": "What is written on Brazil's flag?",
+     "a": "Ordem e Progresso",
+     "wrong": [
+      "Pátria Amada",
+      "Deus e Pátria",
+      "Liberdade ou Morte"
+     ],
+     "why": "It means 'Order and Progress'."
+    },
+    {
+     "level": 1,
+     "q": "Which is the largest country in South America?",
+     "a": "Brazil",
+     "wrong": [
+      "Argentina",
+      "Peru",
+      "Colombia"
+     ],
+     "why": "It covers about half the continent."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is Brazil the world's largest producer of?",
+     "a": "Coffee",
+     "wrong": [
+      "Tea",
+      "Cocoa",
+      "Rice"
+     ],
+     "why": "Minas Gerais grows the most."
+    },
+    {
+     "level": 1,
+     "q": "What do the stars on Brazil's flag show?",
+     "a": "The sky over Rio on 15 November 1889",
+     "wrong": [
+      "The number of presidents",
+      "The moon phases",
+      "The rivers of Brazil"
+     ],
+     "why": "There are 27 stars, one for each state and the Federal District."
+    },
+    {
+     "level": 1,
+     "q": "Which aircraft maker is Brazilian?",
+     "a": "Embraer",
+     "wrong": [
+      "Bombardier",
+      "Airbus",
+      "Boeing"
+     ],
+     "why": "It is one of the world's top jet makers."
+    },
+    {
+     "level": 2,
+     "q": "What was Brazil's currency before the real?",
+     "a": "Cruzeiro real",
+     "wrong": [
+      "Peso",
+      "Escudo",
+      "Milréis"
+     ],
+     "why": "The Real Plan ended hyperinflation in 1994."
+    },
+    {
+     "level": 2,
+     "q": "Which Brazilian aviation pioneer flew the 14-bis in Paris in 1906?",
+     "a": "Alberto Santos-Dumont",
+     "wrong": [
+      "Bartolomeu de Gusmão",
+      "Augusto Severo",
+      "Anésia Pinheiro"
+     ],
+     "why": "Brazilians call him the father of aviation."
+    },
+    {
+     "level": 2,
+     "q": "Which dam on the Paraná is one of the world's largest hydroelectric plants?",
+     "a": "Itaipu",
+     "wrong": [
+      "Belo Monte",
+      "Tucuruí",
+      "Xingó"
+     ],
+     "why": "It is shared with Paraguay."
+    },
+    {
+     "level": 2,
+     "q": "How many states does Brazil have?",
+     "a": "26",
+     "wrong": [
+      "20",
+      "27",
+      "32"
+     ],
+     "why": "Plus the Federal District."
+    },
+    {
+     "level": 2,
+     "q": "What is a person from Rio de Janeiro called?",
+     "a": "Carioca",
+     "wrong": [
+      "Paulista",
+      "Gaúcho",
+      "Mineiro"
+     ],
+     "why": "Paulistas are from São Paulo."
+    },
+    {
+     "level": 2,
+     "q": "What is a person from the state of Rio Grande do Sul called?",
+     "a": "Gaúcho",
+     "wrong": [
+      "Carioca",
+      "Baiano",
+      "Capixaba"
+     ],
+     "why": "They are known for cowboy culture."
+    },
+    {
+     "level": 3,
+     "q": "Which famous monkey-like mammal is endemic to Brazil's Atlantic Forest?",
+     "a": "Golden lion tamarin",
+     "wrong": [
+      "Howler monkey",
+      "Capuchin",
+      "Spider monkey"
+     ],
+     "why": "It appears on the 20-real note."
+    },
+    {
+     "level": 3,
+     "q": "Who is Brazil's patron saint?",
+     "a": "Our Lady of Aparecida",
+     "wrong": [
+      "Saint Sebastian",
+      "Saint George",
+      "Saint Anthony"
+     ],
+     "why": "Her basilica is one of the world's largest churches."
+    },
+    {
+     "level": 3,
+     "q": "Which Brazilian city has the most people of Japanese descent outside Japan?",
+     "a": "São Paulo",
+     "wrong": [
+      "Curitiba",
+      "Londrina",
+      "Belém"
+     ],
+     "why": "Liberdade is its Japanese district."
+    }
+   ]
+  }
+ ]
+}

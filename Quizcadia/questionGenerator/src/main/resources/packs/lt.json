@@ -1,0 +1,346 @@
+{
+ "category": "Lithuania",
+ "country": "LT",
+ "topics": [
+  {
+   "name": "Lithuania: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Lithuania?",
+     "a": "Vilnius",
+     "wrong": [
+      "Kaunas",
+      "Klaipėda",
+      "Šiauliai"
+     ],
+     "why": "Its old town is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Lithuania declare independence from the Soviet Union?",
+     "a": "1990",
+     "wrong": [
+      "1991",
+      "1989",
+      "1993"
+     ],
+     "why": "It was the first Soviet republic to do so, on 11 March."
+    },
+    {
+     "level": 1,
+     "q": "Which large state did Lithuania form with Poland from 1569?",
+     "a": "Polish–Lithuanian Commonwealth",
+     "wrong": [
+      "Kalmar Union",
+      "Kievan Rus'",
+      "Habsburg Empire"
+     ],
+     "why": "It was one of Europe's largest states."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Lithuania join the EU and NATO?",
+     "a": "2004",
+     "wrong": [
+      "1995",
+      "2007",
+      "2015"
+     ],
+     "why": "It adopted the euro in 2015."
+    },
+    {
+     "level": 1,
+     "q": "Which grand duke made Lithuania one of Europe's largest states?",
+     "a": "Vytautas the Great",
+     "wrong": [
+      "Mindaugas",
+      "Gediminas",
+      "Jogaila"
+     ],
+     "why": "He ruled from 1392 to 1430."
+    },
+    {
+     "level": 1,
+     "q": "Which 1410 battle saw Lithuania and Poland defeat the Teutonic Knights?",
+     "a": "Battle of Grunwald (Žalgiris)",
+     "wrong": [
+      "Battle of Saule",
+      "Battle of Durbe",
+      "Battle of Orsha"
+     ],
+     "why": "Žalgiris is also a famous basketball club."
+    },
+    {
+     "level": 1,
+     "q": "Who was the only crowned King of Lithuania?",
+     "a": "Mindaugas",
+     "wrong": [
+      "Vytautas",
+      "Gediminas",
+      "Jogaila"
+     ],
+     "why": "He was crowned in 1253."
+    },
+    {
+     "level": 2,
+     "q": "Which grand duke founded Vilnius in the 1300s?",
+     "a": "Gediminas",
+     "wrong": [
+      "Mindaugas",
+      "Vytautas",
+      "Algirdas"
+     ],
+     "why": "Legend says an iron wolf appeared in his dream."
+    },
+    {
+     "level": 2,
+     "q": "Which 1991 Soviet attack on Vilnius's TV tower killed 14 civilians?",
+     "a": "January Events",
+     "wrong": [
+      "Black January",
+      "Bloody Sunday",
+      "Baltic Crackdown"
+     ],
+     "why": "13 January is Freedom Defenders' Day."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Lithuania first declare independence?",
+     "a": "1918",
+     "wrong": [
+      "1920",
+      "1938",
+      "1945"
+     ],
+     "why": "16 February is Independence Day."
+    },
+    {
+     "level": 2,
+     "q": "Which language is often called one of the oldest living Indo-European languages?",
+     "a": "Lithuanian",
+     "wrong": [
+      "Latvian",
+      "Polish",
+      "Estonian"
+     ],
+     "why": "It keeps many ancient features."
+    },
+    {
+     "level": 2,
+     "q": "Which Lithuanian leader declared the 1990 independence?",
+     "a": "Vytautas Landsbergis",
+     "wrong": [
+      "Algirdas Brazauskas",
+      "Valdas Adamkus",
+      "Dalia Grybauskaitė"
+     ],
+     "why": "He was a musicologist."
+    },
+    {
+     "level": 3,
+     "q": "Who became Lithuania's first woman President, in 2009?",
+     "a": "Dalia Grybauskaitė",
+     "wrong": [
+      "Ingrida Šimonytė",
+      "Kazimira Prunskienė",
+      "Vilija Blinkevičiūtė"
+     ],
+     "why": "She served two terms."
+    },
+    {
+     "level": 3,
+     "q": "Which Japanese diplomat in Kaunas saved thousands of Jews in 1940?",
+     "a": "Chiune Sugihara",
+     "wrong": [
+      "Raoul Wallenberg",
+      "Oskar Schindler",
+      "Nicholas Winton"
+     ],
+     "why": "He issued transit visas against orders."
+    },
+    {
+     "level": 3,
+     "q": "Which pagan duchy was the last in Europe to convert to Christianity, in 1387?",
+     "a": "Lithuania",
+     "wrong": [
+      "Latvia",
+      "Estonia",
+      "Prussia"
+     ],
+     "why": "Jogaila's baptism led the way."
+    }
+   ]
+  },
+  {
+   "name": "Lithuania: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which sport is called Lithuania's 'second religion'?",
+     "a": "Basketball",
+     "wrong": [
+      "Football",
+      "Ice hockey",
+      "Volleyball"
+     ],
+     "why": "The national team has won three Olympic bronzes."
+    },
+    {
+     "level": 1,
+     "q": "What is Lithuania's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Litas",
+      "Lats",
+      "Złoty"
+     ],
+     "why": "It replaced the litas in 2015."
+    },
+    {
+     "level": 1,
+     "q": "Which long sand spit is shared with Russia?",
+     "a": "Curonian Spit",
+     "wrong": [
+      "Hel Peninsula",
+      "Vistula Spit",
+      "Saaremaa Spit"
+     ],
+     "why": "Its dunes are a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which pink cold beetroot soup is a summer favourite?",
+     "a": "Šaltibarščiai",
+     "wrong": [
+      "Borscht",
+      "Gazpacho",
+      "Okroshka"
+     ],
+     "why": "It is served with hot potatoes."
+    },
+    {
+     "level": 1,
+     "q": "Which zeppelin-shaped potato dumplings are the national dish?",
+     "a": "Cepelinai",
+     "wrong": [
+      "Pierogi",
+      "Varenyky",
+      "Knödel"
+     ],
+     "why": "They are filled with meat or curd."
+    },
+    {
+     "level": 1,
+     "q": "Which hill near Šiauliai is covered with thousands of crosses?",
+     "a": "Hill of Crosses",
+     "wrong": [
+      "Gediminas Hill",
+      "Trakai Hill",
+      "Castle Hill"
+     ],
+     "why": "The Soviets bulldozed it several times."
+    },
+    {
+     "level": 1,
+     "q": "Which island castle stands on a lake near Vilnius?",
+     "a": "Trakai Island Castle",
+     "wrong": [
+      "Kaunas Castle",
+      "Medininkai Castle",
+      "Malbork Castle"
+     ],
+     "why": "It was built in the 1300s and 1400s."
+    },
+    {
+     "level": 2,
+     "q": "Which gemstone of fossil resin is washed up on Lithuania's coast?",
+     "a": "Amber",
+     "wrong": [
+      "Jet",
+      "Coral",
+      "Pearl"
+     ],
+     "why": "Palanga has an amber museum."
+    },
+    {
+     "level": 2,
+     "q": "Which Vilnius district declared itself a playful 'republic'?",
+     "a": "Užupis",
+     "wrong": [
+      "Antakalnis",
+      "Žvėrynas",
+      "Naujamiestis"
+     ],
+     "why": "Its constitution includes 'a cat is not obliged to love its owner'."
+    },
+    {
+     "level": 2,
+     "q": "Which Lithuanian basketball star played for the Sacramento Kings and Portland?",
+     "a": "Arvydas Sabonis",
+     "wrong": [
+      "Šarūnas Marčiulionis",
+      "Jonas Valančiūnas",
+      "Domantas Sabonis"
+     ],
+     "why": "He was a giant centre."
+    },
+    {
+     "level": 2,
+     "q": "Which port city is Lithuania's only one on the Baltic?",
+     "a": "Klaipėda",
+     "wrong": [
+      "Palanga",
+      "Šiauliai",
+      "Nida"
+     ],
+     "why": "It was called Memel."
+    },
+    {
+     "level": 2,
+     "q": "Which tree cake is cooked on a spit?",
+     "a": "Šakotis",
+     "wrong": [
+      "Kürtőskalács",
+      "Strudel",
+      "Napoleon cake"
+     ],
+     "why": "It looks like a spiky tree."
+    },
+    {
+     "level": 3,
+     "q": "Which Lithuanian-born artist painted mystical symphonic paintings?",
+     "a": "Mikalojus Konstantinas Čiurlionis",
+     "wrong": [
+      "Mark Rothko",
+      "Chaim Soutine",
+      "Jacques Lipchitz"
+     ],
+     "why": "He was also a composer."
+    },
+    {
+     "level": 3,
+     "q": "Which Lithuanian-born poet won the Nobel Prize while writing in Polish?",
+     "a": "Czesław Miłosz",
+     "wrong": [
+      "Wisława Szymborska",
+      "Adam Mickiewicz",
+      "Tomas Venclova"
+     ],
+     "why": "He grew up near Kėdainiai."
+    },
+    {
+     "level": 3,
+     "q": "Which Kaunas-born artist founded the Fluxus movement?",
+     "a": "George Maciunas",
+     "wrong": [
+      "Joseph Beuys",
+      "Nam June Paik",
+      "Yoko Ono"
+     ],
+     "why": "He organised it in New York in the 1960s."
+    }
+   ]
+  }
+ ]
+}

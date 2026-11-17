@@ -1,0 +1,357 @@
+{
+ "category": "China",
+ "country": "CN",
+ "topics": [
+  {
+   "name": "China: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which dynasty built most of the Great Wall that stands today?",
+     "a": "Ming",
+     "wrong": [
+      "Qin",
+      "Han",
+      "Tang"
+     ],
+     "why": "The Ming rebuilt it in brick and stone."
+    },
+    {
+     "level": 1,
+     "q": "Who was the first emperor of a unified China?",
+     "a": "Qin Shi Huang",
+     "wrong": [
+      "Kublai Khan",
+      "Sun Yat-sen",
+      "Wu Zetian"
+     ],
+     "why": "He unified China in 221 BC."
+    },
+    {
+     "level": 1,
+     "q": "Which army of clay soldiers guards Qin Shi Huang's tomb?",
+     "a": "Terracotta Army",
+     "wrong": [
+      "Jade Army",
+      "Bronze Legion",
+      "Stone Guard"
+     ],
+     "why": "Farmers found it near Xi'an in 1974."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient trade route linked China with the Mediterranean?",
+     "a": "Silk Road",
+     "wrong": [
+      "Spice Route",
+      "Amber Road",
+      "Incense Road"
+     ],
+     "why": "Silk, paper and ideas travelled along it."
+    },
+    {
+     "level": 1,
+     "q": "In which year was the People's Republic of China founded?",
+     "a": "1949",
+     "wrong": [
+      "1911",
+      "1937",
+      "1966"
+     ],
+     "why": "Mao Zedong proclaimed it on 1 October."
+    },
+    {
+     "level": 1,
+     "q": "Which philosopher taught respect for family, elders and rulers?",
+     "a": "Confucius",
+     "wrong": [
+      "Laozi",
+      "Mencius",
+      "Sun Tzu"
+     ],
+     "why": "He lived around 500 BC."
+    },
+    {
+     "level": 1,
+     "q": "Which Chinese invention made printing books much easier around 1040?",
+     "a": "Movable type",
+     "wrong": [
+      "The telescope",
+      "The steam engine",
+      "The radio"
+     ],
+     "why": "Bi Sheng made the first type from clay."
+    },
+    {
+     "level": 2,
+     "q": "Who led the 1911 revolution that ended imperial rule?",
+     "a": "Sun Yat-sen",
+     "wrong": [
+      "Chiang Kai-shek",
+      "Mao Zedong",
+      "Yuan Shikai"
+     ],
+     "why": "He is called the father of modern China."
+    },
+    {
+     "level": 2,
+     "q": "Who was China's last emperor?",
+     "a": "Puyi",
+     "wrong": [
+      "Guangxu",
+      "Kangxi",
+      "Qianlong"
+     ],
+     "why": "He gave up the throne in 1912 as a child."
+    },
+    {
+     "level": 2,
+     "q": "Which Mongol ruler founded the Yuan dynasty?",
+     "a": "Kublai Khan",
+     "wrong": [
+      "Genghis Khan",
+      "Ögedei Khan",
+      "Timur"
+     ],
+     "why": "Marco Polo visited his court."
+    },
+    {
+     "level": 2,
+     "q": "Who was the only woman to rule China as emperor in her own name?",
+     "a": "Wu Zetian",
+     "wrong": [
+      "Cixi",
+      "Lü Zhi",
+      "Ci'an"
+     ],
+     "why": "She ruled in the Tang era."
+    },
+    {
+     "level": 2,
+     "q": "Which 1934–35 retreat of the Red Army became legendary?",
+     "a": "The Long March",
+     "wrong": [
+      "The Northern Expedition",
+      "The Great Leap Forward",
+      "The Hundred Flowers"
+     ],
+     "why": "It covered about 10,000 km."
+    },
+    {
+     "level": 3,
+     "q": "Which military classic did Sun Tzu write?",
+     "a": "The Art of War",
+     "wrong": [
+      "The Analects",
+      "Tao Te Ching",
+      "Romance of the Three Kingdoms"
+     ],
+     "why": "It is still studied today."
+    },
+    {
+     "level": 3,
+     "q": "Which admiral led huge treasure fleets in the early 1400s?",
+     "a": "Zheng He",
+     "wrong": [
+      "Qi Jiguang",
+      "Yue Fei",
+      "Shi Lang"
+     ],
+     "why": "His ships reached East Africa."
+    },
+    {
+     "level": 3,
+     "q": "Which leader opened up China's economy from 1978?",
+     "a": "Deng Xiaoping",
+     "wrong": [
+      "Hua Guofeng",
+      "Zhou Enlai",
+      "Jiang Zemin"
+     ],
+     "why": "He set up special economic zones like Shenzhen."
+    }
+   ]
+  },
+  {
+   "name": "China: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of China?",
+     "a": "Beijing",
+     "wrong": [
+      "Shanghai",
+      "Guangzhou",
+      "Nanjing"
+     ],
+     "why": "Its name means 'northern capital'."
+    },
+    {
+     "level": 1,
+     "q": "Which city's riverside promenade is called the Bund?",
+     "a": "Shanghai",
+     "wrong": [
+      "Beijing",
+      "Guangzhou",
+      "Tianjin"
+     ],
+     "why": "It faces the Pudong skyline."
+    },
+    {
+     "level": 1,
+     "q": "Which black-and-white bear lives in Sichuan's bamboo forests?",
+     "a": "Giant panda",
+     "wrong": [
+      "Red panda",
+      "Sun bear",
+      "Moon bear"
+     ],
+     "why": "It spends most of the day eating bamboo."
+    },
+    {
+     "level": 1,
+     "q": "Which festival is celebrated with dragon dances, red envelopes and fireworks?",
+     "a": "Chinese New Year",
+     "wrong": [
+      "Mid-Autumn Festival",
+      "Qingming",
+      "Dragon Boat Festival"
+     ],
+     "why": "It is also called the Spring Festival."
+    },
+    {
+     "level": 1,
+     "q": "What is China's longest river?",
+     "a": "Yangtze",
+     "wrong": [
+      "Yellow River",
+      "Pearl River",
+      "Mekong"
+     ],
+     "why": "It is the longest river in Asia."
+    },
+    {
+     "level": 1,
+     "q": "Which palace complex in Beijing was home to the emperors?",
+     "a": "Forbidden City",
+     "wrong": [
+      "Summer Palace",
+      "Potala Palace",
+      "Temple of Heaven"
+     ],
+     "why": "It has nearly 1,000 buildings."
+    },
+    {
+     "level": 1,
+     "q": "What is the main spoken language of China?",
+     "a": "Mandarin Chinese",
+     "wrong": [
+      "Cantonese",
+      "Hokkien",
+      "Shanghainese"
+     ],
+     "why": "It is officially called Putonghua."
+    },
+    {
+     "level": 2,
+     "q": "Which river is called China's 'mother river'?",
+     "a": "Yellow River",
+     "wrong": [
+      "Yangtze",
+      "Pearl River",
+      "Huai River"
+     ],
+     "why": "Early Chinese civilisation grew on its banks."
+    },
+    {
+     "level": 2,
+     "q": "Which dam on the Yangtze is the world's largest power station?",
+     "a": "Three Gorges Dam",
+     "wrong": [
+      "Xiluodu Dam",
+      "Baihetan Dam",
+      "Gezhouba Dam"
+     ],
+     "why": "It is over 2 km long."
+    },
+    {
+     "level": 2,
+     "q": "Which former British colony returned to China in 1997?",
+     "a": "Hong Kong",
+     "wrong": [
+      "Macau",
+      "Shenzhen",
+      "Xiamen"
+     ],
+     "why": "Macau was returned by Portugal in 1999."
+    },
+    {
+     "level": 2,
+     "q": "Which festival in autumn is celebrated by eating mooncakes under the full moon?",
+     "a": "Mid-Autumn Festival",
+     "wrong": [
+      "Lantern Festival",
+      "Qingming",
+      "Double Ninth Festival"
+     ],
+     "why": "It falls in the eighth lunar month."
+    },
+    {
+     "level": 2,
+     "q": "Which palace in Lhasa was the Dalai Lama's winter home?",
+     "a": "Potala Palace",
+     "wrong": [
+      "Jokhang",
+      "Norbulingka",
+      "Drepung"
+     ],
+     "why": "It stands on Red Hill."
+    },
+    {
+     "level": 2,
+     "q": "Which roast duck dish from the capital is famous worldwide?",
+     "a": "Peking duck",
+     "wrong": [
+      "Roast goose",
+      "Kung pao chicken",
+      "Dongpo pork"
+     ],
+     "why": "It is served with thin pancakes and sweet sauce."
+    },
+    {
+     "level": 3,
+     "q": "Which city on the Li River is famous for its karst hills?",
+     "a": "Guilin",
+     "wrong": [
+      "Kunming",
+      "Lijiang",
+      "Zhangjiajie"
+     ],
+     "why": "The scenery appears on the 20-yuan note."
+    },
+    {
+     "level": 3,
+     "q": "Which forest of stone pillars in Hunan inspired scenery in 'Avatar'?",
+     "a": "Zhangjiajie",
+     "wrong": [
+      "Huangshan",
+      "Guilin",
+      "Emeishan"
+     ],
+     "why": "One peak was renamed 'Avatar Hallelujah Mountain'."
+    },
+    {
+     "level": 3,
+     "q": "What is the official name of China's currency?",
+     "a": "Renminbi",
+     "wrong": [
+      "Yen",
+      "Won",
+      "Dong"
+     ],
+     "why": "Its main unit is the yuan."
+    }
+   ]
+  }
+ ]
+}

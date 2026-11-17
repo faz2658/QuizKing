@@ -1,0 +1,357 @@
+{
+ "category": "Israel",
+ "country": "IL",
+ "topics": [
+  {
+   "name": "Israel: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year was the State of Israel founded?",
+     "a": "1948",
+     "wrong": [
+      "1917",
+      "1956",
+      "1967"
+     ],
+     "why": "David Ben-Gurion declared independence on 14 May."
+    },
+    {
+     "level": 1,
+     "q": "Who was Israel's first Prime Minister?",
+     "a": "David Ben-Gurion",
+     "wrong": [
+      "Golda Meir",
+      "Chaim Weizmann",
+      "Levi Eshkol"
+     ],
+     "why": "Israel's main airport is named after him."
+    },
+    {
+     "level": 1,
+     "q": "Who was Israel's first woman Prime Minister?",
+     "a": "Golda Meir",
+     "wrong": [
+      "Tzipi Livni",
+      "Shulamit Aloni",
+      "Dalia Itzik"
+     ],
+     "why": "She took office in 1969."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient fortress on a mesa was the site of a Roman siege?",
+     "a": "Masada",
+     "wrong": [
+      "Herodium",
+      "Megiddo",
+      "Caesarea"
+     ],
+     "why": "It overlooks the Dead Sea."
+    },
+    {
+     "level": 1,
+     "q": "Which old wall in Jerusalem is a holy site for Jewish prayer?",
+     "a": "Western Wall",
+     "wrong": [
+      "Wailing Gate",
+      "Lion's Gate",
+      "Tower of David"
+     ],
+     "why": "It is part of the Second Temple compound."
+    },
+    {
+     "level": 1,
+     "q": "Which 1967 war lasted six days?",
+     "a": "Six-Day War",
+     "wrong": [
+      "Yom Kippur War",
+      "Suez War",
+      "War of Independence"
+     ],
+     "why": "Israel fought Egypt, Jordan and Syria."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient scrolls were found in caves at Qumran?",
+     "a": "Dead Sea Scrolls",
+     "wrong": [
+      "Nag Hammadi codices",
+      "Codex Sinaiticus",
+      "Lachish letters"
+     ],
+     "why": "They were found from 1947."
+    },
+    {
+     "level": 2,
+     "q": "Who was Israel's first President?",
+     "a": "Chaim Weizmann",
+     "wrong": [
+      "David Ben-Gurion",
+      "Yitzhak Ben-Zvi",
+      "Zalman Shazar"
+     ],
+     "why": "He was a chemist."
+    },
+    {
+     "level": 2,
+     "q": "Which Prime Minister was assassinated in 1995?",
+     "a": "Yitzhak Rabin",
+     "wrong": [
+      "Shimon Peres",
+      "Menachem Begin",
+      "Ariel Sharon"
+     ],
+     "why": "He had signed the Oslo Accords."
+    },
+    {
+     "level": 2,
+     "q": "Which 1973 war began on the holiest day of the Jewish year?",
+     "a": "Yom Kippur War",
+     "wrong": [
+      "Six-Day War",
+      "Lebanon War",
+      "War of Attrition"
+     ],
+     "why": "Egypt and Syria attacked by surprise."
+    },
+    {
+     "level": 2,
+     "q": "Which Israeli leader signed the Camp David Accords with Egypt?",
+     "a": "Menachem Begin",
+     "wrong": [
+      "Golda Meir",
+      "Yitzhak Shamir",
+      "Shimon Peres"
+     ],
+     "why": "He shared the 1978 Nobel Peace Prize with Sadat."
+    },
+    {
+     "level": 2,
+     "q": "Which king built the First Temple in Jerusalem?",
+     "a": "Solomon",
+     "wrong": [
+      "David",
+      "Herod",
+      "Saul"
+     ],
+     "why": "His father was King David."
+    },
+    {
+     "level": 3,
+     "q": "Which Jewish king rebuilt the Second Temple on a grand scale?",
+     "a": "Herod the Great",
+     "wrong": [
+      "Solomon",
+      "Hezekiah",
+      "Josiah"
+     ],
+     "why": "He also built Masada's palaces."
+    },
+    {
+     "level": 3,
+     "q": "Which writer founded modern political Zionism?",
+     "a": "Theodor Herzl",
+     "wrong": [
+      "Chaim Weizmann",
+      "Ahad Ha'am",
+      "Max Nordau"
+     ],
+     "why": "He wrote 'The Jewish State' in 1896."
+    },
+    {
+     "level": 3,
+     "q": "Which language did Eliezer Ben-Yehuda revive for everyday speech?",
+     "a": "Hebrew",
+     "wrong": [
+      "Yiddish",
+      "Ladino",
+      "Aramaic"
+     ],
+     "why": "He compiled the first modern Hebrew dictionary."
+    }
+   ]
+  },
+  {
+   "name": "Israel: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which salt lake is the lowest point on land?",
+     "a": "Dead Sea",
+     "wrong": [
+      "Sea of Galilee",
+      "Lake Assal",
+      "Caspian Sea"
+     ],
+     "why": "You can float easily in it."
+    },
+    {
+     "level": 1,
+     "q": "Which coastal city is Israel's economic centre?",
+     "a": "Tel Aviv",
+     "wrong": [
+      "Haifa",
+      "Eilat",
+      "Netanya"
+     ],
+     "why": "Its 'White City' is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which city is holy to Jews, Christians and Muslims?",
+     "a": "Jerusalem",
+     "wrong": [
+      "Tel Aviv",
+      "Haifa",
+      "Nazareth"
+     ],
+     "why": "Its old city has four quarters."
+    },
+    {
+     "level": 1,
+     "q": "Which fried chickpea balls are a popular street food?",
+     "a": "Falafel",
+     "wrong": [
+      "Hummus",
+      "Shakshuka",
+      "Sabich"
+     ],
+     "why": "They are served in pita."
+    },
+    {
+     "level": 1,
+     "q": "What is Israel's currency?",
+     "a": "New shekel",
+     "wrong": [
+      "Lira",
+      "Dinar",
+      "Pound"
+     ],
+     "why": "Its symbol is ₪."
+    },
+    {
+     "level": 1,
+     "q": "What is the main language of Israel?",
+     "a": "Hebrew",
+     "wrong": [
+      "Yiddish",
+      "Aramaic",
+      "Ladino"
+     ],
+     "why": "Arabic also has a special status."
+    },
+    {
+     "level": 1,
+     "q": "Which lake is also called Lake Kinneret?",
+     "a": "Sea of Galilee",
+     "wrong": [
+      "Dead Sea",
+      "Lake Hula",
+      "Red Sea"
+     ],
+     "why": "It is Israel's main freshwater lake."
+    },
+    {
+     "level": 2,
+     "q": "Which port city has the terraced Bahá'í Gardens?",
+     "a": "Haifa",
+     "wrong": [
+      "Akko",
+      "Jaffa",
+      "Eilat"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which Red Sea resort is Israel's southernmost city?",
+     "a": "Eilat",
+     "wrong": [
+      "Ashdod",
+      "Beersheba",
+      "Dimona"
+     ],
+     "why": "It is famous for coral reefs."
+    },
+    {
+     "level": 2,
+     "q": "Which eggs-in-tomato-sauce dish is a breakfast favourite?",
+     "a": "Shakshuka",
+     "wrong": [
+      "Sabich",
+      "Bourekas",
+      "Jachnun"
+     ],
+     "why": "It came from North Africa."
+    },
+    {
+     "level": 2,
+     "q": "What is a kibbutz?",
+     "a": "A collective community",
+     "wrong": [
+      "A religious school",
+      "A type of bread",
+      "A desert fort"
+     ],
+     "why": "The first was founded in 1910."
+    },
+    {
+     "level": 2,
+     "q": "Which singer won Eurovision for Israel in 2018 with 'Toy'?",
+     "a": "Netta",
+     "wrong": [
+      "Dana International",
+      "Izhar Cohen",
+      "Noa Kirel"
+     ],
+     "why": "Israel has won four times."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient port next to Tel Aviv is one of the world's oldest?",
+     "a": "Jaffa",
+     "wrong": [
+      "Caesarea",
+      "Akko",
+      "Ashkelon"
+     ],
+     "why": "It is mentioned in the Bible."
+    },
+    {
+     "level": 3,
+     "q": "Which Israeli actress played Wonder Woman?",
+     "a": "Gal Gadot",
+     "wrong": [
+      "Natalie Portman",
+      "Ayelet Zurer",
+      "Noa Tishby"
+     ],
+     "why": "She served in the army before acting."
+    },
+    {
+     "level": 3,
+     "q": "Which large desert covers southern Israel?",
+     "a": "Negev",
+     "wrong": [
+      "Sinai",
+      "Sahara",
+      "Gobi"
+     ],
+     "why": "It covers over half the country."
+    },
+    {
+     "level": 3,
+     "q": "Which crusader city with underground halls is a UNESCO site?",
+     "a": "Akko (Acre)",
+     "wrong": [
+      "Caesarea",
+      "Jaffa",
+      "Tiberias"
+     ],
+     "why": "The Knights Hospitaller built there."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,346 @@
+{
+ "category": "Sweden",
+ "country": "SE",
+ "topics": [
+  {
+   "name": "Sweden: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which seafaring raiders came from Sweden and its neighbours around 800–1050?",
+     "a": "Vikings",
+     "wrong": [
+      "Normans",
+      "Saxons",
+      "Goths"
+     ],
+     "why": "Swedish Vikings travelled east into Russia."
+    },
+    {
+     "level": 1,
+     "q": "Which Swedish inventor of dynamite founded the Nobel Prizes?",
+     "a": "Alfred Nobel",
+     "wrong": [
+      "Anders Celsius",
+      "Carl Linnaeus",
+      "Gustaf Dalén"
+     ],
+     "why": "He left his fortune for the prizes."
+    },
+    {
+     "level": 1,
+     "q": "Which Swedish botanist created the system of naming species?",
+     "a": "Carl Linnaeus",
+     "wrong": [
+      "Anders Celsius",
+      "Alfred Nobel",
+      "Jöns Jacob Berzelius"
+     ],
+     "why": "He gave us names like Homo sapiens."
+    },
+    {
+     "level": 1,
+     "q": "Which Swedish astronomer created a temperature scale?",
+     "a": "Anders Celsius",
+     "wrong": [
+      "Carl Linnaeus",
+      "Svante Arrhenius",
+      "Tycho Brahe"
+     ],
+     "why": "Water boils at 100 degrees on his scale."
+    },
+    {
+     "level": 1,
+     "q": "Which warship sank on its first voyage in 1628?",
+     "a": "Vasa",
+     "wrong": [
+      "Kronan",
+      "Mars",
+      "Svärdet"
+     ],
+     "why": "It was raised in 1961 and is now a museum."
+    },
+    {
+     "level": 1,
+     "q": "Which king led Sweden in the Thirty Years' War?",
+     "a": "Gustavus Adolphus",
+     "wrong": [
+      "Charles XII",
+      "Gustav Vasa",
+      "Charles XI"
+     ],
+     "why": "He died at the Battle of Lützen in 1632."
+    },
+    {
+     "level": 1,
+     "q": "Who has been King of Sweden since 1973?",
+     "a": "Carl XVI Gustaf",
+     "wrong": [
+      "Gustaf VI Adolf",
+      "Carl Philip",
+      "Oscar II"
+     ],
+     "why": "His daughter Victoria is heir."
+    },
+    {
+     "level": 2,
+     "q": "Which king founded modern Sweden after leaving the Kalmar Union in 1523?",
+     "a": "Gustav Vasa",
+     "wrong": [
+      "Gustavus Adolphus",
+      "Charles XII",
+      "Eric XIV"
+     ],
+     "why": "6 June, National Day, marks his election."
+    },
+    {
+     "level": 2,
+     "q": "Which Swedish diplomat saved thousands of Jews in Budapest in 1944?",
+     "a": "Raoul Wallenberg",
+     "wrong": [
+      "Dag Hammarskjöld",
+      "Folke Bernadotte",
+      "Olof Palme"
+     ],
+     "why": "He disappeared in Soviet custody."
+    },
+    {
+     "level": 2,
+     "q": "Which Swedish UN Secretary-General died in a 1961 plane crash?",
+     "a": "Dag Hammarskjöld",
+     "wrong": [
+      "Raoul Wallenberg",
+      "Trygve Lie",
+      "Folke Bernadotte"
+     ],
+     "why": "He was awarded the Nobel Peace Prize after his death."
+    },
+    {
+     "level": 2,
+     "q": "Which Prime Minister was assassinated in Stockholm in 1986?",
+     "a": "Olof Palme",
+     "wrong": [
+      "Tage Erlander",
+      "Ingvar Carlsson",
+      "Anna Lindh"
+     ],
+     "why": "The case was officially closed in 2020."
+    },
+    {
+     "level": 2,
+     "q": "Which French marshal became King of Sweden as Charles XIV John?",
+     "a": "Jean-Baptiste Bernadotte",
+     "wrong": [
+      "Michel Ney",
+      "Joachim Murat",
+      "Louis Davout"
+     ],
+     "why": "The royal family descends from him."
+    },
+    {
+     "level": 3,
+     "q": "Which king lost the Battle of Poltava to Russia in 1709?",
+     "a": "Charles XII",
+     "wrong": [
+      "Gustavus Adolphus",
+      "Charles X",
+      "Gustav III"
+     ],
+     "why": "It ended Sweden's time as a great power."
+    },
+    {
+     "level": 3,
+     "q": "Which teenage climate activist began school strikes in 2018?",
+     "a": "Greta Thunberg",
+     "wrong": [
+      "Vanessa Nakate",
+      "Luisa Neubauer",
+      "Isra Hirsi"
+     ],
+     "why": "She began outside the Swedish parliament."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Sweden join NATO?",
+     "a": "2024",
+     "wrong": [
+      "2022",
+      "2023",
+      "1995"
+     ],
+     "why": "It had been neutral for about 200 years."
+    }
+   ]
+  },
+  {
+   "name": "Sweden: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Sweden?",
+     "a": "Stockholm",
+     "wrong": [
+      "Gothenburg",
+      "Malmö",
+      "Uppsala"
+     ],
+     "why": "It is built on 14 islands."
+    },
+    {
+     "level": 1,
+     "q": "Which Swedish band won Eurovision in 1974 with 'Waterloo'?",
+     "a": "ABBA",
+     "wrong": [
+      "Roxette",
+      "Ace of Base",
+      "The Cardigans"
+     ],
+     "why": "They became one of the best-selling bands ever."
+    },
+    {
+     "level": 1,
+     "q": "Which furniture company with flat-pack furniture is Swedish?",
+     "a": "IKEA",
+     "wrong": [
+      "H&M",
+      "Volvo",
+      "Ericsson"
+     ],
+     "why": "It was founded in 1943."
+    },
+    {
+     "level": 1,
+     "q": "Which midsummer tradition involves dancing around a pole?",
+     "a": "Midsommar",
+     "wrong": [
+      "Lucia",
+      "Valborg",
+      "Kräftskiva"
+     ],
+     "why": "People wear flower crowns."
+    },
+    {
+     "level": 1,
+     "q": "Which meatballs are served with lingonberry jam?",
+     "a": "Swedish meatballs (köttbullar)",
+     "wrong": [
+      "Frikadeller",
+      "Kofta",
+      "Polpette"
+     ],
+     "why": "They are often eaten with mashed potato."
+    },
+    {
+     "level": 1,
+     "q": "What is Sweden's currency?",
+     "a": "Swedish krona",
+     "wrong": [
+      "Euro",
+      "Danish krone",
+      "Norwegian krone"
+     ],
+     "why": "Sweden voted not to adopt the euro."
+    },
+    {
+     "level": 1,
+     "q": "Which Swedish author created Pippi Longstocking?",
+     "a": "Astrid Lindgren",
+     "wrong": [
+      "Selma Lagerlöf",
+      "Stieg Larsson",
+      "Tove Jansson"
+     ],
+     "why": "Pippi first appeared in 1945."
+    },
+    {
+     "level": 2,
+     "q": "Which hotel is rebuilt every winter from ice in Jukkasjärvi?",
+     "a": "Icehotel",
+     "wrong": [
+      "Snow Castle",
+      "Arctic Palace",
+      "Igloo Lodge"
+     ],
+     "why": "It was the world's first ice hotel."
+    },
+    {
+     "level": 2,
+     "q": "Which saint's day on 13 December features candle crowns?",
+     "a": "Lucia",
+     "wrong": [
+      "Midsommar",
+      "Valborg",
+      "Advent"
+     ],
+     "why": "A girl leads a procession wearing candles."
+    },
+    {
+     "level": 2,
+     "q": "Which Swedish car brand is known for safety?",
+     "a": "Volvo",
+     "wrong": [
+      "Saab",
+      "Scania",
+      "Koenigsegg"
+     ],
+     "why": "It invented the modern three-point seatbelt."
+    },
+    {
+     "level": 2,
+     "q": "What is the Swedish coffee-and-cake break called?",
+     "a": "Fika",
+     "wrong": [
+      "Hygge",
+      "Lagom",
+      "Smörgås"
+     ],
+     "why": "It is a daily habit."
+    },
+    {
+     "level": 2,
+     "q": "Which Swedish DJ made 'Wake Me Up' and 'Levels'?",
+     "a": "Avicii",
+     "wrong": [
+      "Swedish House Mafia",
+      "Alesso",
+      "Eric Prydz"
+     ],
+     "why": "He was born Tim Bergling."
+    },
+    {
+     "level": 3,
+     "q": "Which writer was the first woman to win the Nobel Prize in Literature?",
+     "a": "Selma Lagerlöf",
+     "wrong": [
+      "Astrid Lindgren",
+      "Sigrid Undset",
+      "Nelly Sachs"
+     ],
+     "why": "She won in 1909."
+    },
+    {
+     "level": 3,
+     "q": "Which Swedish director made 'The Seventh Seal'?",
+     "a": "Ingmar Bergman",
+     "wrong": [
+      "Lasse Hallström",
+      "Ruben Östlund",
+      "Roy Andersson"
+     ],
+     "why": "Death plays chess with a knight in it."
+    },
+    {
+     "level": 3,
+     "q": "Which indigenous people live in northern Sweden?",
+     "a": "Sámi",
+     "wrong": [
+      "Inuit",
+      "Basques",
+      "Karelians"
+     ],
+     "why": "Many herd reindeer."
+    }
+   ]
+  }
+ ]
+}

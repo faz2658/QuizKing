@@ -1,0 +1,346 @@
+{
+ "category": "Afghanistan",
+ "country": "AF",
+ "topics": [
+  {
+   "name": "Afghanistan: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Afghanistan?",
+     "a": "Kabul",
+     "wrong": [
+      "Kandahar",
+      "Herat",
+      "Mazar-i-Sharif"
+     ],
+     "why": "It sits about 1,800 m above sea level."
+    },
+    {
+     "level": 1,
+     "q": "Which giant Buddha statues were destroyed in 2001?",
+     "a": "Buddhas of Bamiyan",
+     "wrong": [
+      "Leshan Buddha",
+      "Tian Tan Buddha",
+      "Gal Vihara"
+     ],
+     "why": "They had stood for about 1,500 years."
+    },
+    {
+     "level": 1,
+     "q": "Which group took control of Afghanistan in 1996 and again in 2021?",
+     "a": "The Taliban",
+     "wrong": [
+      "The Mujahideen",
+      "Al-Qaeda",
+      "The Northern Alliance"
+     ],
+     "why": "Their rule ended in 2001 and returned 20 years later."
+    },
+    {
+     "level": 1,
+     "q": "Which pass connects Afghanistan and Pakistan?",
+     "a": "Khyber Pass",
+     "wrong": [
+      "Bolan Pass",
+      "Salang Pass",
+      "Wakhan Corridor"
+     ],
+     "why": "It has been a trade and invasion route for centuries."
+    },
+    {
+     "level": 1,
+     "q": "Which country invaded Afghanistan in 1979?",
+     "a": "Soviet Union",
+     "wrong": [
+      "United States",
+      "Britain",
+      "Iran"
+     ],
+     "why": "It withdrew in 1989."
+    },
+    {
+     "level": 1,
+     "q": "Which empire's founder, Ahmad Shah Durrani, is called the father of Afghanistan?",
+     "a": "Durrani Empire",
+     "wrong": [
+      "Mughal Empire",
+      "Ghaznavid Empire",
+      "Safavid Empire"
+     ],
+     "why": "He founded it in 1747."
+    },
+    {
+     "level": 1,
+     "q": "Which Afghan lion of Panjshir fought the Soviets and the Taliban?",
+     "a": "Ahmad Shah Massoud",
+     "wrong": [
+      "Gulbuddin Hekmatyar",
+      "Abdul Rashid Dostum",
+      "Burhanuddin Rabbani"
+     ],
+     "why": "He was killed two days before 9/11."
+    },
+    {
+     "level": 2,
+     "q": "Which three wars did Britain fight in Afghanistan between 1839 and 1919?",
+     "a": "The Anglo-Afghan Wars",
+     "wrong": [
+      "The Opium Wars",
+      "The Sikh Wars",
+      "The Durand Wars"
+     ],
+     "why": "The third led to full independence in 1919."
+    },
+    {
+     "level": 2,
+     "q": "Which king ruled Afghanistan from 1933 to 1973?",
+     "a": "Zahir Shah",
+     "wrong": [
+      "Amanullah Khan",
+      "Daoud Khan",
+      "Habibullah Khan"
+     ],
+     "why": "He was overthrown by his cousin."
+    },
+    {
+     "level": 2,
+     "q": "Which reforming king won independence in 1919?",
+     "a": "Amanullah Khan",
+     "wrong": [
+      "Zahir Shah",
+      "Abdur Rahman Khan",
+      "Nadir Shah"
+     ],
+     "why": "Independence Day is 19 August."
+    },
+    {
+     "level": 2,
+     "q": "Which medieval empire of Mahmud raided India from Afghanistan?",
+     "a": "Ghaznavid Empire",
+     "wrong": [
+      "Durrani Empire",
+      "Kushan Empire",
+      "Hotak dynasty"
+     ],
+     "why": "Ghazni was its capital."
+    },
+    {
+     "level": 2,
+     "q": "Which 1893 line forms the border with Pakistan?",
+     "a": "Durand Line",
+     "wrong": [
+      "McMahon Line",
+      "Radcliffe Line",
+      "Curzon Line"
+     ],
+     "why": "Afghanistan has never formally accepted it."
+    },
+    {
+     "level": 3,
+     "q": "Which Sufi poet was born in Balkh in 1207?",
+     "a": "Rumi",
+     "wrong": [
+      "Hafez",
+      "Saadi",
+      "Ferdowsi"
+     ],
+     "why": "He later lived in Konya, Turkey."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient Greek city was found at Ai-Khanoum?",
+     "a": "A Hellenistic city of Alexander's successors",
+     "wrong": [
+      "A Roman fort",
+      "A Persian palace",
+      "A Mongol camp"
+     ],
+     "why": "It had a theatre and gymnasium."
+    },
+    {
+     "level": 3,
+     "q": "Which minaret in Ghor province is a UNESCO site?",
+     "a": "Minaret of Jam",
+     "wrong": [
+      "Kalyan Minaret",
+      "Qutb Minar",
+      "Minaret of Herat"
+     ],
+     "why": "It is about 65 m tall."
+    }
+   ]
+  },
+  {
+   "name": "Afghanistan: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Afghanistan's currency?",
+     "a": "Afghani",
+     "wrong": [
+      "Rupee",
+      "Rial",
+      "Som"
+     ],
+     "why": "It was introduced in 1925."
+    },
+    {
+     "level": 1,
+     "q": "Which mountains run across Afghanistan?",
+     "a": "Hindu Kush",
+     "wrong": [
+      "Himalayas",
+      "Zagros",
+      "Atlas Mountains"
+     ],
+     "why": "Its name may mean 'Hindu killer'."
+    },
+    {
+     "level": 1,
+     "q": "Which blue stone has been mined in Badakhshan for thousands of years?",
+     "a": "Lapis lazuli",
+     "wrong": [
+      "Turquoise",
+      "Sapphire",
+      "Jade"
+     ],
+     "why": "It was used in Tutankhamun's mask."
+    },
+    {
+     "level": 1,
+     "q": "Which rice dish with carrots and raisins is the national dish?",
+     "a": "Kabuli pulao",
+     "wrong": [
+      "Biryani",
+      "Plov of Uzbekistan",
+      "Mandi"
+     ],
+     "why": "It is often served with lamb."
+    },
+    {
+     "level": 1,
+     "q": "Which landlocked country borders Afghanistan to the east and south?",
+     "a": "Pakistan",
+     "wrong": [
+      "India",
+      "China",
+      "Iran"
+     ],
+     "why": "They share a long mountain border."
+    },
+    {
+     "level": 1,
+     "q": "Which game of horsemen and a goat carcass is the national sport?",
+     "a": "Buzkashi",
+     "wrong": [
+      "Polo",
+      "Kabaddi",
+      "Lacrosse"
+     ],
+     "why": "Riders compete to carry the carcass to a goal."
+    },
+    {
+     "level": 1,
+     "q": "What are Afghanistan's two official languages?",
+     "a": "Pashto and Dari",
+     "wrong": [
+      "Urdu and Farsi",
+      "Pashto and Urdu",
+      "Dari and Uzbek"
+     ],
+     "why": "Dari is a form of Persian."
+    },
+    {
+     "level": 2,
+     "q": "Which blue-tiled shrine is in Mazar-i-Sharif?",
+     "a": "Blue Mosque (Shrine of Ali)",
+     "wrong": [
+      "Sheikh Lotfollah Mosque",
+      "Friday Mosque of Herat",
+      "Shah-Do Shamshira Mosque"
+     ],
+     "why": "It is famous for white doves."
+    },
+    {
+     "level": 2,
+     "q": "Which lakes in Bamiyan are Afghanistan's first national park?",
+     "a": "Band-e Amir",
+     "wrong": [
+      "Lake Zorkul",
+      "Kajaki Reservoir",
+      "Lake Shewa"
+     ],
+     "why": "They are a chain of deep blue lakes."
+    },
+    {
+     "level": 2,
+     "q": "Which western city is famous for its Friday Mosque and citadel?",
+     "a": "Herat",
+     "wrong": [
+      "Kandahar",
+      "Kunduz",
+      "Jalalabad"
+     ],
+     "why": "It was a Timurid capital."
+    },
+    {
+     "level": 2,
+     "q": "Which Afghan-American author wrote 'The Kite Runner'?",
+     "a": "Khaled Hosseini",
+     "wrong": [
+      "Atiq Rahimi",
+      "Tamim Ansary",
+      "Nadia Hashimi"
+     ],
+     "why": "It was published in 2003."
+    },
+    {
+     "level": 2,
+     "q": "Which narrow strip of land links Afghanistan to China?",
+     "a": "Wakhan Corridor",
+     "wrong": [
+      "Khyber Pass",
+      "Salang Tunnel",
+      "Pamir Gap"
+     ],
+     "why": "It is about 350 km long."
+    },
+    {
+     "level": 3,
+     "q": "Which dumplings are filled with leeks and topped with yoghurt?",
+     "a": "Aushak",
+     "wrong": [
+      "Mantu",
+      "Bolani",
+      "Samosa"
+     ],
+     "why": "They are a festive dish."
+    },
+    {
+     "level": 3,
+     "q": "Which tunnel through the Hindu Kush links north and south?",
+     "a": "Salang Tunnel",
+     "wrong": [
+      "Khyber Tunnel",
+      "Kabul Tunnel",
+      "Wakhan Tunnel"
+     ],
+     "why": "It was built by the Soviets in 1964."
+    },
+    {
+     "level": 3,
+     "q": "What is Afghanistan's highest mountain?",
+     "a": "Noshaq",
+     "wrong": [
+      "K2",
+      "Tirich Mir",
+      "Mount Kailash"
+     ],
+     "why": "It is about 7,492 m high."
+    }
+   ]
+  }
+ ]
+}

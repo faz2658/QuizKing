@@ -1,0 +1,346 @@
+{
+ "category": "Thailand",
+ "country": "TH",
+ "topics": [
+  {
+   "name": "Thailand: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What was Thailand called before 1939?",
+     "a": "Siam",
+     "wrong": [
+      "Burma",
+      "Lanna",
+      "Ayutthaya"
+     ],
+     "why": "The new name means 'land of the free'."
+    },
+    {
+     "level": 1,
+     "q": "Which is the only Southeast Asian country never colonised by Europeans?",
+     "a": "Thailand",
+     "wrong": [
+      "Vietnam",
+      "Myanmar",
+      "Malaysia"
+     ],
+     "why": "Skilful diplomacy kept it independent."
+    },
+    {
+     "level": 1,
+     "q": "Which old capital was destroyed by Burmese armies in 1767?",
+     "a": "Ayutthaya",
+     "wrong": [
+      "Sukhothai",
+      "Chiang Mai",
+      "Lopburi"
+     ],
+     "why": "Its ruins are a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which kingdom is seen as the first Thai kingdom?",
+     "a": "Sukhothai",
+     "wrong": [
+      "Ayutthaya",
+      "Lanna",
+      "Thonburi"
+     ],
+     "why": "Its name means 'dawn of happiness'."
+    },
+    {
+     "level": 1,
+     "q": "Which king reigned for 70 years until 2016?",
+     "a": "Bhumibol Adulyadej (Rama IX)",
+     "wrong": [
+      "Vajiralongkorn (Rama X)",
+      "Chulalongkorn (Rama V)",
+      "Mongkut (Rama IV)"
+     ],
+     "why": "He was then the world's longest-reigning monarch."
+    },
+    {
+     "level": 1,
+     "q": "Which dynasty has ruled Thailand since 1782?",
+     "a": "Chakri dynasty",
+     "wrong": [
+      "Ayutthaya dynasty",
+      "Sukhothai dynasty",
+      "Thonburi dynasty"
+     ],
+     "why": "Its kings are also called Rama."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Siam become a constitutional monarchy?",
+     "a": "1932",
+     "wrong": [
+      "1910",
+      "1946",
+      "1973"
+     ],
+     "why": "A bloodless revolution ended absolute monarchy."
+    },
+    {
+     "level": 2,
+     "q": "Which king, shown in 'The King and I', opened Siam to Western learning?",
+     "a": "Mongkut (Rama IV)",
+     "wrong": [
+      "Chulalongkorn (Rama V)",
+      "Taksin",
+      "Ramkhamhaeng"
+     ],
+     "why": "He was also a keen astronomer."
+    },
+    {
+     "level": 2,
+     "q": "Which king abolished slavery and modernised Siam?",
+     "a": "Chulalongkorn (Rama V)",
+     "wrong": [
+      "Mongkut (Rama IV)",
+      "Vajiravudh (Rama VI)",
+      "Prajadhipok (Rama VII)"
+     ],
+     "why": "23 October is Chulalongkorn Day."
+    },
+    {
+     "level": 2,
+     "q": "Which king refounded the kingdom at Thonburi after 1767?",
+     "a": "Taksin",
+     "wrong": [
+      "Naresuan",
+      "Ramkhamhaeng",
+      "Rama I"
+     ],
+     "why": "He is honoured on 28 December."
+    },
+    {
+     "level": 2,
+     "q": "Which Sukhothai king is credited with creating the Thai script?",
+     "a": "Ramkhamhaeng",
+     "wrong": [
+      "Taksin",
+      "Naresuan",
+      "Mengrai"
+     ],
+     "why": "His inscription is dated 1292."
+    },
+    {
+     "level": 2,
+     "q": "Which northern kingdom had its capital at Chiang Mai?",
+     "a": "Lanna",
+     "wrong": [
+      "Lan Xang",
+      "Sukhothai",
+      "Pagan"
+     ],
+     "why": "King Mengrai founded it."
+    },
+    {
+     "level": 3,
+     "q": "Which king of Ayutthaya won a famous elephant duel in 1593?",
+     "a": "Naresuan",
+     "wrong": [
+      "Taksin",
+      "Narai",
+      "Ekathotsarot"
+     ],
+     "why": "He defeated a Burmese crown prince."
+    },
+    {
+     "level": 3,
+     "q": "Which wartime railway built with prisoners of war is called the 'Death Railway'?",
+     "a": "Burma Railway",
+     "wrong": [
+      "Southern Line",
+      "Trans-Asian Railway",
+      "Eastern Line"
+     ],
+     "why": "The bridge over the River Kwai is part of it."
+    },
+    {
+     "level": 3,
+     "q": "Who became Thailand's first woman Prime Minister, in 2011?",
+     "a": "Yingluck Shinawatra",
+     "wrong": [
+      "Paetongtarn Shinawatra",
+      "Sudarat Keyuraphan",
+      "Kalaya Sophonpanich"
+     ],
+     "why": "Her brother Thaksin had also been Prime Minister."
+    }
+   ]
+  },
+  {
+   "name": "Thailand: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Thailand?",
+     "a": "Bangkok",
+     "wrong": [
+      "Chiang Mai",
+      "Phuket",
+      "Pattaya"
+     ],
+     "why": "Thais call it Krung Thep."
+    },
+    {
+     "level": 1,
+     "q": "Which stir-fried rice noodle dish is a Thai classic?",
+     "a": "Pad thai",
+     "wrong": [
+      "Pho",
+      "Laksa",
+      "Nasi goreng"
+     ],
+     "why": "It became popular in the 1930s and 40s."
+    },
+    {
+     "level": 1,
+     "q": "Which April festival is famous for water fights?",
+     "a": "Songkran",
+     "wrong": [
+      "Loy Krathong",
+      "Yi Peng",
+      "Vesak"
+     ],
+     "why": "It marks the Thai New Year."
+    },
+    {
+     "level": 1,
+     "q": "Which festival floats decorated baskets on rivers?",
+     "a": "Loy Krathong",
+     "wrong": [
+      "Songkran",
+      "Yi Peng",
+      "Makha Bucha"
+     ],
+     "why": "It falls on the full moon of the 12th lunar month."
+    },
+    {
+     "level": 1,
+     "q": "Which combat sport is Thailand's national sport?",
+     "a": "Muay Thai",
+     "wrong": [
+      "Taekwondo",
+      "Sepak takraw",
+      "Krabi-krabong"
+     ],
+     "why": "It is called the 'art of eight limbs'."
+    },
+    {
+     "level": 1,
+     "q": "What is Thailand's currency?",
+     "a": "Baht",
+     "wrong": [
+      "Riel",
+      "Kip",
+      "Ringgit"
+     ],
+     "why": "Its symbol is ฿."
+    },
+    {
+     "level": 1,
+     "q": "Which is Thailand's largest island?",
+     "a": "Phuket",
+     "wrong": [
+      "Koh Samui",
+      "Koh Chang",
+      "Koh Phangan"
+     ],
+     "why": "It is in the Andaman Sea."
+    },
+    {
+     "level": 2,
+     "q": "Which hot and sour soup is often made with prawns?",
+     "a": "Tom yum",
+     "wrong": [
+      "Tom kha",
+      "Khao soi",
+      "Green curry"
+     ],
+     "why": "UNESCO listed it in 2024."
+    },
+    {
+     "level": 2,
+     "q": "Which Bangkok temple houses the Emerald Buddha?",
+     "a": "Wat Phra Kaew",
+     "wrong": [
+      "Wat Arun",
+      "Wat Pho",
+      "Wat Saket"
+     ],
+     "why": "It is in the Grand Palace grounds."
+    },
+    {
+     "level": 2,
+     "q": "Which Bangkok temple is famous for its giant reclining Buddha?",
+     "a": "Wat Pho",
+     "wrong": [
+      "Wat Arun",
+      "Wat Phra Kaew",
+      "Wat Benchamabophit"
+     ],
+     "why": "The Buddha is 46 m long."
+    },
+    {
+     "level": 2,
+     "q": "Which river flows through Bangkok?",
+     "a": "Chao Phraya",
+     "wrong": [
+      "Mekong",
+      "Ping",
+      "Mun"
+     ],
+     "why": "It is called the 'River of Kings'."
+    },
+    {
+     "level": 2,
+     "q": "Which northern city is famous for releasing sky lanterns at Yi Peng?",
+     "a": "Chiang Mai",
+     "wrong": [
+      "Chiang Rai",
+      "Sukhothai",
+      "Lampang"
+     ],
+     "why": "It was the Lanna capital."
+    },
+    {
+     "level": 3,
+     "q": "Which curry noodle soup is a northern Thai speciality?",
+     "a": "Khao soi",
+     "wrong": [
+      "Khao man gai",
+      "Pad see ew",
+      "Boat noodles"
+     ],
+     "why": "It is topped with crispy noodles."
+    },
+    {
+     "level": 3,
+     "q": "What is Thailand's highest mountain?",
+     "a": "Doi Inthanon",
+     "wrong": [
+      "Doi Suthep",
+      "Doi Chiang Dao",
+      "Phu Kradueng"
+     ],
+     "why": "It is 2,565 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which islands were the setting of the film 'The Beach'?",
+     "a": "Phi Phi Islands",
+     "wrong": [
+      "Similan Islands",
+      "Koh Tao",
+      "Koh Lanta"
+     ],
+     "why": "It was filmed at Maya Bay."
+    }
+   ]
+  }
+ ]
+}

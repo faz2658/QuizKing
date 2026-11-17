@@ -1,0 +1,346 @@
+{
+ "category": "Croatia",
+ "country": "HR",
+ "topics": [
+  {
+   "name": "Croatia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Croatia declare independence from Yugoslavia?",
+     "a": "1991",
+     "wrong": [
+      "1995",
+      "1989",
+      "2001"
+     ],
+     "why": "Independence was declared on 25 June."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of Croatia?",
+     "a": "Zagreb",
+     "wrong": [
+      "Split",
+      "Dubrovnik",
+      "Rijeka"
+     ],
+     "why": "It is in the north of the country."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Croatia join the European Union?",
+     "a": "2013",
+     "wrong": [
+      "2004",
+      "2007",
+      "2020"
+     ],
+     "why": "It was the 28th member."
+    },
+    {
+     "level": 1,
+     "q": "Which inventor of alternating current was born in Smiljan, Croatia?",
+     "a": "Nikola Tesla",
+     "wrong": [
+      "Faust Vrančić",
+      "Slavoljub Penkala",
+      "Ruđer Bošković"
+     ],
+     "why": "He was an ethnic Serb born in the Croatian region of Lika."
+    },
+    {
+     "level": 1,
+     "q": "Which Roman emperor built a palace in Split?",
+     "a": "Diocletian",
+     "wrong": [
+      "Augustus",
+      "Hadrian",
+      "Constantine"
+     ],
+     "why": "The old town grew inside it."
+    },
+    {
+     "level": 1,
+     "q": "Which 1991–95 conflict is called the Homeland War in Croatia?",
+     "a": "Croatian War of Independence",
+     "wrong": [
+      "Bosnian War",
+      "Kosovo War",
+      "Slovenian Ten-Day War"
+     ],
+     "why": "It ended with Operation Storm in 1995."
+    },
+    {
+     "level": 1,
+     "q": "Who was Croatia's first President?",
+     "a": "Franjo Tuđman",
+     "wrong": [
+      "Stjepan Mesić",
+      "Ivo Josipović",
+      "Kolinda Grabar-Kitarović"
+     ],
+     "why": "He led the country from 1990 to 1999."
+    },
+    {
+     "level": 2,
+     "q": "Which medieval king was the first crowned King of Croatia, in 925?",
+     "a": "Tomislav",
+     "wrong": [
+      "Petar Krešimir IV",
+      "Zvonimir",
+      "Branimir"
+     ],
+     "why": "A square in Zagreb is named after him."
+    },
+    {
+     "level": 2,
+     "q": "Which city-state on the coast was the independent Republic of Ragusa?",
+     "a": "Dubrovnik",
+     "wrong": [
+      "Split",
+      "Zadar",
+      "Šibenik"
+     ],
+     "why": "It rivalled Venice in trade."
+    },
+    {
+     "level": 2,
+     "q": "Which 1102 agreement linked Croatia with the Kingdom of Hungary?",
+     "a": "Pacta conventa",
+     "wrong": [
+      "Golden Bull",
+      "Treaty of Trianon",
+      "Union of Lublin"
+     ],
+     "why": "Croatia kept its own institutions."
+    },
+    {
+     "level": 2,
+     "q": "Who became Croatia's first woman President, in 2015?",
+     "a": "Kolinda Grabar-Kitarović",
+     "wrong": [
+      "Jadranka Kosor",
+      "Vesna Pusić",
+      "Andrej Plenković"
+     ],
+     "why": "She was popular at the 2018 World Cup."
+    },
+    {
+     "level": 2,
+     "q": "Which Croatian invented the mechanical pencil?",
+     "a": "Slavoljub Penkala",
+     "wrong": [
+      "Faust Vrančić",
+      "Ivan Vučetić",
+      "Nikola Tesla"
+     ],
+     "why": "In Croatian, a pen is still called a 'penkala'."
+    },
+    {
+     "level": 3,
+     "q": "Which Croatian-born police official pioneered fingerprint identification in Argentina?",
+     "a": "Ivan Vučetić",
+     "wrong": [
+      "Slavoljub Penkala",
+      "Faust Vrančić",
+      "Josip Jelačić"
+     ],
+     "why": "He worked in La Plata."
+    },
+    {
+     "level": 3,
+     "q": "Which ban (governor) of 1848 is remembered on Zagreb's main square?",
+     "a": "Josip Jelačić",
+     "wrong": [
+      "Petar Zrinski",
+      "Fran Krsto Frankopan",
+      "Ante Starčević"
+     ],
+     "why": "His statue faces the square named after him."
+    },
+    {
+     "level": 3,
+     "q": "Which Renaissance inventor designed an early parachute called 'Homo Volans'?",
+     "a": "Faust Vrančić",
+     "wrong": [
+      "Leonardo da Vinci",
+      "Slavoljub Penkala",
+      "Ruđer Bošković"
+     ],
+     "why": "He described it in 1595."
+    }
+   ]
+  },
+  {
+   "name": "Croatia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which walled city on the Adriatic was a filming location for 'Game of Thrones'?",
+     "a": "Dubrovnik",
+     "wrong": [
+      "Split",
+      "Zadar",
+      "Pula"
+     ],
+     "why": "It played King's Landing."
+    },
+    {
+     "level": 1,
+     "q": "Which national park is famous for 16 terraced lakes and waterfalls?",
+     "a": "Plitvice Lakes",
+     "wrong": [
+      "Krka",
+      "Paklenica",
+      "Kornati"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies along Croatia's coast?",
+     "a": "Adriatic Sea",
+     "wrong": [
+      "Aegean Sea",
+      "Ionian Sea",
+      "Tyrrhenian Sea"
+     ],
+     "why": "Croatia has over 1,000 islands."
+    },
+    {
+     "level": 1,
+     "q": "What is Croatia's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Kuna",
+      "Dinar",
+      "Forint"
+     ],
+     "why": "It replaced the kuna in 2023."
+    },
+    {
+     "level": 1,
+     "q": "Which spotted dog breed comes from a Croatian region?",
+     "a": "Dalmatian",
+     "wrong": [
+      "Beagle",
+      "Boxer",
+      "Great Dane"
+     ],
+     "why": "It is named after Dalmatia."
+    },
+    {
+     "level": 1,
+     "q": "Which piece of men's clothing came from Croatian soldiers' scarves?",
+     "a": "The necktie (cravat)",
+     "wrong": [
+      "The bow tie",
+      "The beret",
+      "The bowler hat"
+     ],
+     "why": "The word 'cravat' comes from 'Croat'."
+    },
+    {
+     "level": 1,
+     "q": "Which team did Croatia lose to in the 2018 World Cup final?",
+     "a": "France",
+     "wrong": [
+      "Argentina",
+      "Germany",
+      "Brazil"
+     ],
+     "why": "It was Croatia's first World Cup final."
+    },
+    {
+     "level": 2,
+     "q": "Which Croatian midfielder won the 2018 Ballon d'Or?",
+     "a": "Luka Modrić",
+     "wrong": [
+      "Ivan Rakitić",
+      "Mario Mandžukić",
+      "Davor Šuker"
+     ],
+     "why": "He broke the Messi–Ronaldo run."
+    },
+    {
+     "level": 2,
+     "q": "Which Roman amphitheatre stands in Pula?",
+     "a": "Pula Arena",
+     "wrong": [
+      "Colosseum of Split",
+      "Salona Theatre",
+      "Zadar Forum"
+     ],
+     "why": "It is one of the best-preserved in the world."
+    },
+    {
+     "level": 2,
+     "q": "Which Zadar attraction makes music from waves?",
+     "a": "Sea Organ",
+     "wrong": [
+      "Sun Salutation",
+      "Singing Fountain",
+      "Wave Bell"
+     ],
+     "why": "It plays notes through pipes under the steps."
+    },
+    {
+     "level": 2,
+     "q": "Which hilltop truffle region lies in the northwest?",
+     "a": "Istria",
+     "wrong": [
+      "Slavonia",
+      "Dalmatia",
+      "Zagorje"
+     ],
+     "why": "Its white truffles are prized."
+    },
+    {
+     "level": 2,
+     "q": "Which national park is famous for waterfalls on the Krka River?",
+     "a": "Krka National Park",
+     "wrong": [
+      "Plitvice Lakes",
+      "Risnjak",
+      "Mljet"
+     ],
+     "why": "Skradinski Buk is its biggest waterfall."
+    },
+    {
+     "level": 3,
+     "q": "Which tennis player won Wimbledon in 2001 as a wildcard?",
+     "a": "Goran Ivanišević",
+     "wrong": [
+      "Marin Čilić",
+      "Ivan Ljubičić",
+      "Iva Majoli"
+     ],
+     "why": "He was ranked 125th at the time."
+    },
+    {
+     "level": 3,
+     "q": "Which island is said to be the birthplace of Marco Polo?",
+     "a": "Korčula",
+     "wrong": [
+      "Hvar",
+      "Brač",
+      "Krk"
+     ],
+     "why": "Venice also claims him."
+    },
+    {
+     "level": 3,
+     "q": "Which museum in Zagreb displays objects left after relationships ended?",
+     "a": "Museum of Broken Relationships",
+     "wrong": [
+      "Museum of Illusions",
+      "Croatian History Museum",
+      "Mimara Museum"
+     ],
+     "why": "It began as a travelling exhibition."
+    }
+   ]
+  }
+ ]
+}

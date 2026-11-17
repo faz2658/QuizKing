@@ -1,0 +1,346 @@
+{
+ "category": "Liechtenstein",
+ "country": "LI",
+ "topics": [
+  {
+   "name": "Liechtenstein: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Liechtenstein?",
+     "a": "Vaduz",
+     "wrong": [
+      "Schaan",
+      "Balzers",
+      "Triesen"
+     ],
+     "why": "Its castle is the prince's home."
+    },
+    {
+     "level": 1,
+     "q": "What kind of state is Liechtenstein?",
+     "a": "Principality",
+     "wrong": [
+      "Grand Duchy",
+      "Republic",
+      "Kingdom"
+     ],
+     "why": "It is ruled by a prince."
+    },
+    {
+     "level": 1,
+     "q": "Which two countries border Liechtenstein?",
+     "a": "Switzerland and Austria",
+     "wrong": [
+      "Germany and Austria",
+      "Switzerland and Italy",
+      "Germany and Switzerland"
+     ],
+     "why": "It is doubly landlocked."
+    },
+    {
+     "level": 1,
+     "q": "What is Liechtenstein's currency?",
+     "a": "Swiss franc",
+     "wrong": [
+      "Euro",
+      "Liechtenstein mark",
+      "Austrian schilling"
+     ],
+     "why": "It has used it since 1924."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of Liechtenstein?",
+     "a": "German",
+     "wrong": [
+      "French",
+      "Italian",
+      "Romansh"
+     ],
+     "why": "A local Alemannic dialect is spoken."
+    },
+    {
+     "level": 1,
+     "q": "Which river forms Liechtenstein's border with Switzerland?",
+     "a": "Rhine",
+     "wrong": [
+      "Inn",
+      "Danube",
+      "Rhône"
+     ],
+     "why": "It flows north to Lake Constance."
+    },
+    {
+     "level": 1,
+     "q": "Who has been Prince of Liechtenstein since 1989?",
+     "a": "Hans-Adam II",
+     "wrong": [
+      "Franz Joseph II",
+      "Alois",
+      "Johann II"
+     ],
+     "why": "His son Alois has run daily affairs since 2004."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Liechtenstein become a principality?",
+     "a": "1719",
+     "wrong": [
+      "1806",
+      "1866",
+      "1648"
+     ],
+     "why": "It was created in the Holy Roman Empire."
+    },
+    {
+     "level": 2,
+     "q": "Which empire's breakup in 1806 left Liechtenstein independent?",
+     "a": "Holy Roman Empire",
+     "wrong": [
+      "Austrian Empire",
+      "Ottoman Empire",
+      "Russian Empire"
+     ],
+     "why": "It joined the Confederation of the Rhine."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Liechtenstein give women the vote?",
+     "a": "1984",
+     "wrong": [
+      "1945",
+      "1971",
+      "1960"
+     ],
+     "why": "It was one of the last in Europe."
+    },
+    {
+     "level": 2,
+     "q": "What did Liechtenstein abolish in 1868?",
+     "a": "Its army",
+     "wrong": [
+      "Its monarchy",
+      "Its currency",
+      "Its parliament"
+     ],
+     "why": "It has had no army since then."
+    },
+    {
+     "level": 2,
+     "q": "Which country handles Liechtenstein's foreign embassies in many places?",
+     "a": "Switzerland",
+     "wrong": [
+      "Austria",
+      "Germany",
+      "France"
+     ],
+     "why": "They also share a customs union."
+    },
+    {
+     "level": 3,
+     "q": "How many soldiers did Liechtenstein send to its last war in 1866, and how many returned?",
+     "a": "80 sent, 81 returned",
+     "wrong": [
+      "80 sent, 79 returned",
+      "100 sent, 100 returned",
+      "50 sent, 60 returned"
+     ],
+     "why": "An Italian friend came back with them."
+    },
+    {
+     "level": 3,
+     "q": "Which economic area does Liechtenstein belong to?",
+     "a": "European Economic Area",
+     "wrong": [
+      "European Union",
+      "Benelux",
+      "Eurasian Economic Union"
+     ],
+     "why": "It joined in 1995."
+    },
+    {
+     "level": 3,
+     "q": "Which noble family bought the lands that became Liechtenstein?",
+     "a": "House of Liechtenstein",
+     "wrong": [
+      "House of Habsburg",
+      "House of Wittelsbach",
+      "House of Savoy"
+     ],
+     "why": "They came from Austria."
+    }
+   ]
+  },
+  {
+   "name": "Liechtenstein: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which country is the fourth-smallest in Europe?",
+     "a": "Liechtenstein",
+     "wrong": [
+      "Malta",
+      "San Marino",
+      "Andorra"
+     ],
+     "why": "It is about 160 square kilometres."
+    },
+    {
+     "level": 1,
+     "q": "Which winter sport has won Liechtenstein its Olympic medals?",
+     "a": "Alpine skiing",
+     "wrong": [
+      "Ice hockey",
+      "Biathlon",
+      "Bobsleigh"
+     ],
+     "why": "Hanni Wenzel won two golds in 1980."
+    },
+    {
+     "level": 1,
+     "q": "Which Alpine resort is Liechtenstein's ski area?",
+     "a": "Malbun",
+     "wrong": [
+      "Zermatt",
+      "St Moritz",
+      "Kitzbühel"
+     ],
+     "why": "It is in the mountains above Triesenberg."
+    },
+    {
+     "level": 1,
+     "q": "What are Liechtenstein's postage stamps famous among?",
+     "a": "Collectors",
+     "wrong": [
+      "Pilots",
+      "Chefs",
+      "Sailors"
+     ],
+     "why": "Stamps were once a major income."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain range covers Liechtenstein?",
+     "a": "Alps",
+     "wrong": [
+      "Pyrenees",
+      "Carpathians",
+      "Jura"
+     ],
+     "why": "Its highest peak is Grauspitz."
+    },
+    {
+     "level": 1,
+     "q": "Which castle above Vaduz is home to the prince?",
+     "a": "Vaduz Castle",
+     "wrong": [
+      "Gutenberg Castle",
+      "Schellenberg Castle",
+      "Hohenzollern Castle"
+     ],
+     "why": "It is not open to the public."
+    },
+    {
+     "level": 1,
+     "q": "Which industry made Liechtenstein rich?",
+     "a": "Banking and manufacturing",
+     "wrong": [
+      "Fishing",
+      "Oil",
+      "Tourism"
+     ],
+     "why": "It has one of the highest incomes per person."
+    },
+    {
+     "level": 2,
+     "q": "Which Liechtenstein company is a world leader in false teeth?",
+     "a": "Ivoclar Vivadent",
+     "wrong": [
+      "Hilti",
+      "Thyssenkrupp Presta",
+      "Hoval"
+     ],
+     "why": "It makes dental materials."
+    },
+    {
+     "level": 2,
+     "q": "Which Liechtenstein company makes power tools for builders?",
+     "a": "Hilti",
+     "wrong": [
+      "Bosch",
+      "Makita",
+      "Ivoclar"
+     ],
+     "why": "It is based in Schaan."
+    },
+    {
+     "level": 2,
+     "q": "Which skier won Liechtenstein two golds at the 1980 Olympics?",
+     "a": "Hanni Wenzel",
+     "wrong": [
+      "Andreas Wenzel",
+      "Marco Büchel",
+      "Tina Weirather"
+     ],
+     "why": "Her brother also won medals."
+    },
+    {
+     "level": 2,
+     "q": "What is the national day of Liechtenstein?",
+     "a": "15 August",
+     "wrong": [
+      "1 August",
+      "26 October",
+      "3 October"
+     ],
+     "why": "Fireworks light up Vaduz."
+    },
+    {
+     "level": 2,
+     "q": "Which art museum in Vaduz is a black concrete cube?",
+     "a": "Kunstmuseum Liechtenstein",
+     "wrong": [
+      "Liechtenstein Gallery",
+      "Palais Liechtenstein",
+      "Hilti Art Foundation"
+     ],
+     "why": "It opened in 2000."
+    },
+    {
+     "level": 3,
+     "q": "Which dish of cheese noodles is Liechtenstein's favourite?",
+     "a": "Käsknöpfle",
+     "wrong": [
+      "Rösti",
+      "Fondue",
+      "Raclette"
+     ],
+     "why": "It is topped with fried onions."
+    },
+    {
+     "level": 3,
+     "q": "What is Liechtenstein's highest mountain?",
+     "a": "Grauspitz",
+     "wrong": [
+      "Säntis",
+      "Piz Bernina",
+      "Zugspitze"
+     ],
+     "why": "It is about 2,600 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which Liechtenstein skier won Olympic super-G bronze in 2018?",
+     "a": "Tina Weirather",
+     "wrong": [
+      "Hanni Wenzel",
+      "Marco Büchel",
+      "Willi Frommelt"
+     ],
+     "why": "Her mother is Hanni Wenzel."
+    }
+   ]
+  }
+ ]
+}

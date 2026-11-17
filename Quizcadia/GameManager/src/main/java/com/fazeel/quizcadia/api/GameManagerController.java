@@ -14,10 +14,16 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fazeel.quizcadia.api.Summaries.CategorySummary;
+import com.fazeel.quizcadia.api.Summaries.CountrySummary;
 import com.fazeel.quizcadia.api.Summaries.GameSummary;
+import com.fazeel.quizcadia.api.Summaries.TopicSummary;
 import com.fazeel.quizcadia.catalog.GameCatalogService;
 import com.fazeel.quizcadia.domain.Category;
+import com.fazeel.quizcadia.catalog.CatalogCards;
 import com.fazeel.quizcadia.domain.Game;
+import java.util.HashMap;
+import java.util.Map;
+import org.springframework.web.bind.annotation.RequestParam;
 import com.fazeel.quizcadia.domain.MultiPlayerGame;
 
 /**
@@ -29,6 +35,7 @@ import com.fazeel.quizcadia.domain.MultiPlayerGame;
 public class GameManagerController {
 
 	private final GameCatalogService catalog;
+	private final CatalogCards cards;
 
 	/**
 	 * The home page's lists. Building them reads every game or category with all its questions embedded (about
@@ -41,8 +48,9 @@ public class GameManagerController {
 
 	private final java.util.concurrent.ConcurrentHashMap<String, Snapshot<?>> lists = new java.util.concurrent.ConcurrentHashMap<>();
 
-	public GameManagerController(GameCatalogService catalog) {
+	public GameManagerController(GameCatalogService catalog, CatalogCards cards) {
 		this.catalog = catalog;
+		this.cards = cards;
 	}
 
 	@SuppressWarnings("unchecked")
@@ -68,7 +76,65 @@ public class GameManagerController {
 
 	@GetMapping("/categories")
 	public List<CategorySummary> categories() {
-		return shared("categories", () -> catalog.categories().stream().map(CategorySummary::of).toList());
+		return shared("categories", () -> cards.categories().stream().map(CategorySummary::of).toList());
+	}
+
+	/** Category id to country code, for categories that are a country's own question set. */
+	private Map<Integer, String> countryOfCategory() {
+		Map<Integer, String> m = new HashMap<>();
+		for (CategorySummary c : categories()) {
+			if (c.countryCode() != null) {
+				m.put(c.categoryId(), c.countryCode());
+			}
+		}
+		return m;
+	}
+
+	/**
+	 * Countries with their own question set, with how many solo games and questions each has: what the
+	 * International page lists.
+	 */
+	@GetMapping("/countries")
+	public List<CountrySummary> countries() {
+		return shared("countries", () -> {
+			Map<String, Integer> games = new HashMap<>();
+			for (GameSummary g : allGames()) {
+				if (g.country() != null) {
+					games.merge(g.country(), 1, Integer::sum);
+				}
+			}
+			return categories().stream().filter(c -> c.countryCode() != null)
+					.map(c -> new CountrySummary(c.countryCode(), c.categoryId(), c.categoryName(),
+							games.getOrDefault(c.countryCode(), 0),
+							c.topic().stream().mapToInt(TopicSummary::questionCount).sum()))
+					.sorted(java.util.Comparator.comparing(CountrySummary::country)).toList();
+		});
+	}
+
+	/**
+	 * Keeps the games of one country's question set ({@code country=IN}), or the world trivia that belongs to no
+	 * country ({@code country=WORLD}); without {@code country}, every game.
+	 */
+	private static List<GameSummary> forCountry(List<GameSummary> all, String country) {
+		if (country == null || country.isBlank()) {
+			return all;
+		}
+		String c = country.trim().toUpperCase(java.util.Locale.ROOT);
+		return all.stream().filter(g -> "WORLD".equals(c) ? g.country() == null : c.equals(g.country())).toList();
+	}
+
+	private List<GameSummary> allGames() {
+		return shared("games", () -> {
+			Map<Integer, String> countries = countryOfCategory();
+			return cards.games().stream().map(g -> GameSummary.of(g, countries.get(g.categoryId()))).toList();
+		});
+	}
+
+	private List<GameSummary> allMultiPlayerGames() {
+		return shared("mp", () -> {
+			Map<Integer, String> countries = countryOfCategory();
+			return cards.multiPlayerGames().stream().map(g -> GameSummary.of(g, countries.get(g.categoryId()))).toList();
+		});
 	}
 
 	@PostMapping("/category")
@@ -86,8 +152,8 @@ public class GameManagerController {
 	}
 
 	@GetMapping("/games")
-	public List<GameSummary> games() {
-		return shared("games", () -> catalog.games().stream().map(GameSummary::of).toList());
+	public List<GameSummary> games(@RequestParam(required = false) String country) {
+		return forCountry(allGames(), country);
 	}
 
 	@GetMapping("/category/{categoryId}/{topicName}")
@@ -126,8 +192,8 @@ public class GameManagerController {
 	}
 
 	@GetMapping("/games/mp")
-	public List<GameSummary> multiPlayerGames() {
-		return shared("mp", () -> catalog.multiPlayerGames().stream().map(GameSummary::of).toList());
+	public List<GameSummary> multiPlayerGames(@RequestParam(required = false) String country) {
+		return forCountry(allMultiPlayerGames(), country);
 	}
 
 	@GetMapping("/mp/category/{categoryId}/{topicName}")

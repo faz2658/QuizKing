@@ -1,0 +1,346 @@
+{
+ "category": "Russia",
+ "country": "RU",
+ "topics": [
+  {
+   "name": "Russia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What were Russia's emperors called?",
+     "a": "Tsars",
+     "wrong": [
+      "Kaisers",
+      "Shahs",
+      "Sultans"
+     ],
+     "why": "The last tsar, Nicholas II, gave up the throne in 1917."
+    },
+    {
+     "level": 1,
+     "q": "Which 1917 revolution brought the Bolsheviks to power?",
+     "a": "October Revolution",
+     "wrong": [
+      "February Revolution",
+      "Decembrist Revolt",
+      "1905 Revolution"
+     ],
+     "why": "Lenin led it."
+    },
+    {
+     "level": 1,
+     "q": "Who led the Soviet Union during the Second World War?",
+     "a": "Joseph Stalin",
+     "wrong": [
+      "Vladimir Lenin",
+      "Nikita Khrushchev",
+      "Leonid Brezhnev"
+     ],
+     "why": "He ruled from the late 1920s until 1953."
+    },
+    {
+     "level": 1,
+     "q": "Who was the first human in space, in 1961?",
+     "a": "Yuri Gagarin",
+     "wrong": [
+      "Alexei Leonov",
+      "Gherman Titov",
+      "Valentina Tereshkova"
+     ],
+     "why": "He flew on Vostok 1."
+    },
+    {
+     "level": 1,
+     "q": "In which year did the Soviet Union break up?",
+     "a": "1991",
+     "wrong": [
+      "1989",
+      "1985",
+      "1993"
+     ],
+     "why": "Fifteen republics became independent."
+    },
+    {
+     "level": 1,
+     "q": "Which tsar founded St Petersburg in 1703?",
+     "a": "Peter the Great",
+     "wrong": [
+      "Ivan the Terrible",
+      "Catherine the Great",
+      "Alexander I"
+     ],
+     "why": "He wanted a 'window to Europe'."
+    },
+    {
+     "level": 1,
+     "q": "Which satellite, launched in 1957, was the first in orbit?",
+     "a": "Sputnik 1",
+     "wrong": [
+      "Vostok 1",
+      "Mir",
+      "Luna 2"
+     ],
+     "why": "It started the Space Race."
+    },
+    {
+     "level": 2,
+     "q": "Who was the first woman in space, in 1963?",
+     "a": "Valentina Tereshkova",
+     "wrong": [
+      "Svetlana Savitskaya",
+      "Yelena Kondakova",
+      "Sally Ride"
+     ],
+     "why": "She flew on Vostok 6."
+    },
+    {
+     "level": 2,
+     "q": "Which Soviet leader introduced glasnost and perestroika?",
+     "a": "Mikhail Gorbachev",
+     "wrong": [
+      "Boris Yeltsin",
+      "Yuri Andropov",
+      "Konstantin Chernenko"
+     ],
+     "why": "He won the 1990 Nobel Peace Prize."
+    },
+    {
+     "level": 2,
+     "q": "Which German-born empress ruled Russia from 1762 to 1796?",
+     "a": "Catherine the Great",
+     "wrong": [
+      "Elizabeth",
+      "Anna Ivanovna",
+      "Alexandra"
+     ],
+     "why": "She expanded the empire to the Black Sea."
+    },
+    {
+     "level": 2,
+     "q": "Which invader reached Moscow in 1812 but had to retreat?",
+     "a": "Napoleon",
+     "wrong": [
+      "Charles XII",
+      "Adolf Hitler",
+      "Frederick the Great"
+     ],
+     "why": "The winter destroyed his army."
+    },
+    {
+     "level": 2,
+     "q": "Who was Russia's first President?",
+     "a": "Boris Yeltsin",
+     "wrong": [
+      "Vladimir Putin",
+      "Dmitry Medvedev",
+      "Mikhail Gorbachev"
+     ],
+     "why": "He served from 1991 to 1999."
+    },
+    {
+     "level": 3,
+     "q": "Which 1942–43 battle on the Volga was a turning point of the war?",
+     "a": "Stalingrad",
+     "wrong": [
+      "Kursk",
+      "Moscow",
+      "Leningrad"
+     ],
+     "why": "The city is now called Volgograd."
+    },
+    {
+     "level": 3,
+     "q": "Who was the first to be crowned 'Tsar of All Russia', in 1547?",
+     "a": "Ivan IV (the Terrible)",
+     "wrong": [
+      "Ivan III",
+      "Peter I",
+      "Boris Godunov"
+     ],
+     "why": "He conquered Kazan."
+    },
+    {
+     "level": 3,
+     "q": "Which nuclear accident happened in the Soviet Union in 1986?",
+     "a": "Chernobyl",
+     "wrong": [
+      "Kyshtym",
+      "Fukushima",
+      "Three Mile Island"
+     ],
+     "why": "The plant is in today's Ukraine."
+    }
+   ]
+  },
+  {
+   "name": "Russia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Russia?",
+     "a": "Moscow",
+     "wrong": [
+      "St Petersburg",
+      "Novosibirsk",
+      "Kazan"
+     ],
+     "why": "The Kremlin is at its heart."
+    },
+    {
+     "level": 1,
+     "q": "Which onion-domed cathedral stands on Red Square?",
+     "a": "St Basil's Cathedral",
+     "wrong": [
+      "Cathedral of Christ the Saviour",
+      "St Isaac's Cathedral",
+      "Kazan Cathedral"
+     ],
+     "why": "Ivan the Terrible ordered it."
+    },
+    {
+     "level": 1,
+     "q": "Which Siberian lake is the deepest in the world?",
+     "a": "Lake Baikal",
+     "wrong": [
+      "Lake Ladoga",
+      "Caspian Sea",
+      "Lake Onega"
+     ],
+     "why": "It holds about a fifth of Earth's unfrozen fresh water."
+    },
+    {
+     "level": 1,
+     "q": "Which railway runs from Moscow to Vladivostok?",
+     "a": "Trans-Siberian Railway",
+     "wrong": [
+      "Baikal–Amur Mainline",
+      "Orient Express",
+      "Silk Road Railway"
+     ],
+     "why": "It is about 9,300 km long."
+    },
+    {
+     "level": 1,
+     "q": "What are Russian nesting dolls called?",
+     "a": "Matryoshka",
+     "wrong": [
+      "Kokeshi",
+      "Pysanka",
+      "Dymkovo toys"
+     ],
+     "why": "Each doll opens to reveal a smaller one."
+    },
+    {
+     "level": 1,
+     "q": "Which composer wrote 'Swan Lake' and 'The Nutcracker'?",
+     "a": "Pyotr Tchaikovsky",
+     "wrong": [
+      "Sergei Rachmaninoff",
+      "Igor Stravinsky",
+      "Modest Mussorgsky"
+     ],
+     "why": "He was born in 1840."
+    },
+    {
+     "level": 1,
+     "q": "Who wrote 'War and Peace'?",
+     "a": "Leo Tolstoy",
+     "wrong": [
+      "Fyodor Dostoevsky",
+      "Anton Chekhov",
+      "Alexander Pushkin"
+     ],
+     "why": "It is set during Napoleon's invasion."
+    },
+    {
+     "level": 2,
+     "q": "Which is Europe's longest river?",
+     "a": "Volga",
+     "wrong": [
+      "Danube",
+      "Dnieper",
+      "Ural"
+     ],
+     "why": "It flows into the Caspian Sea."
+    },
+    {
+     "level": 2,
+     "q": "Which St Petersburg museum fills the Winter Palace?",
+     "a": "Hermitage",
+     "wrong": [
+      "Pushkin Museum",
+      "Tretyakov Gallery",
+      "Russian Museum"
+     ],
+     "why": "It is one of the world's largest museums."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote 'Crime and Punishment'?",
+     "a": "Fyodor Dostoevsky",
+     "wrong": [
+      "Leo Tolstoy",
+      "Nikolai Gogol",
+      "Ivan Turgenev"
+     ],
+     "why": "It was published in 1866."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain in the Caucasus is Europe's highest?",
+     "a": "Mount Elbrus",
+     "wrong": [
+      "Mont Blanc",
+      "Kazbek",
+      "Dykh-Tau"
+     ],
+     "why": "It is 5,642 m high."
+    },
+    {
+     "level": 2,
+     "q": "Which beetroot soup is popular in Russia and Ukraine?",
+     "a": "Borscht",
+     "wrong": [
+      "Shchi",
+      "Solyanka",
+      "Okroshka"
+     ],
+     "why": "Ukraine's borscht is on UNESCO's list."
+    },
+    {
+     "level": 3,
+     "q": "Who is called the father of Russian literature?",
+     "a": "Alexander Pushkin",
+     "wrong": [
+      "Leo Tolstoy",
+      "Mikhail Lermontov",
+      "Nikolai Gogol"
+     ],
+     "why": "He wrote 'Eugene Onegin'."
+    },
+    {
+     "level": 3,
+     "q": "Which far-eastern peninsula is famous for volcanoes and brown bears?",
+     "a": "Kamchatka",
+     "wrong": [
+      "Chukotka",
+      "Taymyr",
+      "Kola"
+     ],
+     "why": "It has around 30 active volcanoes."
+    },
+    {
+     "level": 3,
+     "q": "How many time zones does Russia span?",
+     "a": "11",
+     "wrong": [
+      "9",
+      "7",
+      "13"
+     ],
+     "why": "It is the largest country in the world."
+    }
+   ]
+  }
+ ]
+}

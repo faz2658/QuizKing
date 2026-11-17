@@ -1,0 +1,346 @@
+{
+ "category": "Latvia",
+ "country": "LV",
+ "topics": [
+  {
+   "name": "Latvia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Latvia?",
+     "a": "Riga",
+     "wrong": [
+      "Daugavpils",
+      "Liepāja",
+      "Jūrmala"
+     ],
+     "why": "It is the largest city in the Baltics."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Latvia first declare independence?",
+     "a": "1918",
+     "wrong": [
+      "1991",
+      "1920",
+      "1940"
+     ],
+     "why": "18 November is Independence Day."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Latvia regain independence?",
+     "a": "1991",
+     "wrong": [
+      "1989",
+      "1993",
+      "1995"
+     ],
+     "why": "The Soviet coup failed in August."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Latvia join the EU and NATO?",
+     "a": "2004",
+     "wrong": [
+      "1995",
+      "2007",
+      "2014"
+     ],
+     "why": "It adopted the euro in 2014."
+    },
+    {
+     "level": 1,
+     "q": "Which 1989 human chain linked the three Baltic capitals?",
+     "a": "Baltic Way",
+     "wrong": [
+      "Singing Chain",
+      "Iron Curtain",
+      "Amber Line"
+     ],
+     "why": "About two million people took part."
+    },
+    {
+     "level": 1,
+     "q": "Which river flows through Riga?",
+     "a": "Daugava",
+     "wrong": [
+      "Neris",
+      "Neman",
+      "Gauja"
+     ],
+     "why": "It flows from Russia to the Baltic."
+    },
+    {
+     "level": 1,
+     "q": "Which crusading bishop founded Riga in 1201?",
+     "a": "Albert of Riga",
+     "wrong": [
+      "Valdemar II",
+      "Hermann of Salza",
+      "Absalon"
+     ],
+     "why": "It became a Hanseatic city."
+    },
+    {
+     "level": 2,
+     "q": "Which barricades were built in Riga in January 1991?",
+     "a": "The Barricades against Soviet forces",
+     "wrong": [
+      "The Iron Wall",
+      "The Riga Blockade",
+      "The Daugava Line"
+     ],
+     "why": "People camped in the cold to defend key buildings."
+    },
+    {
+     "level": 2,
+     "q": "What is Latvia's national epic poem?",
+     "a": "Lāčplēsis (The Bear Slayer)",
+     "wrong": [
+      "Kalevipoeg",
+      "Kalevala",
+      "Pan Tadeusz"
+     ],
+     "why": "Andrejs Pumpurs wrote it in 1888."
+    },
+    {
+     "level": 2,
+     "q": "Which empire ruled Latvia from the 1700s to 1918?",
+     "a": "Russian Empire",
+     "wrong": [
+      "Swedish Empire",
+      "Polish-Lithuanian Commonwealth",
+      "Habsburg Empire"
+     ],
+     "why": "Riga was a major Russian port."
+    },
+    {
+     "level": 2,
+     "q": "Which 1920 treaty recognised Latvia's independence?",
+     "a": "Treaty of Riga (Latvian–Soviet Peace Treaty)",
+     "wrong": [
+      "Treaty of Tartu",
+      "Treaty of Versailles",
+      "Treaty of Brest-Litovsk"
+     ],
+     "why": "Soviet Russia signed it."
+    },
+    {
+     "level": 2,
+     "q": "Who was Latvia's first woman President, in 1999?",
+     "a": "Vaira Vīķe-Freiberga",
+     "wrong": [
+      "Sandra Kalniete",
+      "Laimdota Straujuma",
+      "Evika Siliņa"
+     ],
+     "why": "She had lived in Canada."
+    },
+    {
+     "level": 3,
+     "q": "What were the four-line folk songs collected by Krišjānis Barons called?",
+     "a": "Dainas",
+     "wrong": [
+      "Runes",
+      "Sagas",
+      "Haiku"
+     ],
+     "why": "He gathered over 200,000."
+    },
+    {
+     "level": 3,
+     "q": "Which duchy in western Latvia had colonies in Gambia and Tobago?",
+     "a": "Duchy of Courland",
+     "wrong": [
+      "Duchy of Livonia",
+      "Duchy of Semigallia",
+      "Duchy of Prussia"
+     ],
+     "why": "Duke Jacob ruled in the 1600s."
+    },
+    {
+     "level": 3,
+     "q": "Which colour-field painter was born in Daugavpils, Latvia?",
+     "a": "Mark Rothko",
+     "wrong": [
+      "Jackson Pollock",
+      "Wassily Kandinsky",
+      "Marc Chagall"
+     ],
+     "why": "He was born there in 1903."
+    }
+   ]
+  },
+  {
+   "name": "Latvia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Latvia's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Lats",
+      "Kroon",
+      "Litas"
+     ],
+     "why": "It replaced the lats in 2014."
+    },
+    {
+     "level": 1,
+     "q": "Which architectural style fills much of Riga's centre?",
+     "a": "Art Nouveau",
+     "wrong": [
+      "Gothic",
+      "Brutalism",
+      "Baroque"
+     ],
+     "why": "About a third of the centre's buildings use it."
+    },
+    {
+     "level": 1,
+     "q": "Which song and dance festival is held every five years?",
+     "a": "Latvian Song and Dance Festival",
+     "wrong": [
+      "Eurovision",
+      "Midsummer Festival",
+      "Riga Opera Festival"
+     ],
+     "why": "It is on UNESCO's list with Estonia's and Lithuania's."
+    },
+    {
+     "level": 1,
+     "q": "Which midsummer festival is Latvia's biggest holiday?",
+     "a": "Jāņi",
+     "wrong": [
+      "Lieldienas",
+      "Ziemassvētki",
+      "Mārtiņi"
+     ],
+     "why": "People wear flower crowns and jump over bonfires."
+    },
+    {
+     "level": 1,
+     "q": "Which seaside resort town near Riga has wooden villas?",
+     "a": "Jūrmala",
+     "wrong": [
+      "Liepāja",
+      "Ventspils",
+      "Saulkrasti"
+     ],
+     "why": "It has a 33 km beach."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies along Latvia's coast?",
+     "a": "Baltic Sea",
+     "wrong": [
+      "North Sea",
+      "Black Sea",
+      "Barents Sea"
+     ],
+     "why": "The Gulf of Riga cuts into it."
+    },
+    {
+     "level": 1,
+     "q": "Which language family does Latvian belong to?",
+     "a": "Baltic",
+     "wrong": [
+      "Finno-Ugric",
+      "Slavic",
+      "Germanic"
+     ],
+     "why": "Its closest relative is Lithuanian."
+    },
+    {
+     "level": 2,
+     "q": "Which herbal liqueur is a Riga speciality?",
+     "a": "Riga Black Balsam",
+     "wrong": [
+      "Becherovka",
+      "Jägermeister",
+      "Unicum"
+     ],
+     "why": "It has been made since 1752."
+    },
+    {
+     "level": 2,
+     "q": "Which national park has a river valley with castles?",
+     "a": "Gauja National Park",
+     "wrong": [
+      "Ķemeri National Park",
+      "Slītere National Park",
+      "Rāzna National Park"
+     ],
+     "why": "Sigulda is its main town."
+    },
+    {
+     "level": 2,
+     "q": "Which Baroque palace was designed by Rastrelli?",
+     "a": "Rundāle Palace",
+     "wrong": [
+      "Riga Castle",
+      "Cēsis Castle",
+      "Jelgava Palace"
+     ],
+     "why": "It is called the 'Versailles of the Baltics'."
+    },
+    {
+     "level": 2,
+     "q": "Which Latvian city's concert hall is called 'Great Amber'?",
+     "a": "Liepāja",
+     "wrong": [
+      "Ventspils",
+      "Jelgava",
+      "Daugavpils"
+     ],
+     "why": "It opened in 2015."
+    },
+    {
+     "level": 2,
+     "q": "Which Latvian tennis player won the 2017 French Open?",
+     "a": "Jeļena Ostapenko",
+     "wrong": [
+      "Anastasija Sevastova",
+      "Larisa Neiland",
+      "Ernests Gulbis"
+     ],
+     "why": "She was unseeded and 20 years old."
+    },
+    {
+     "level": 3,
+     "q": "Which sculptor created Riga's Freedom Monument?",
+     "a": "Kārlis Zāle",
+     "wrong": [
+      "Mikhail Eisenstein",
+      "Ernests Štālbergs",
+      "Gunārs Birkerts"
+     ],
+     "why": "It was unveiled in 1935."
+    },
+    {
+     "level": 3,
+     "q": "Which Riga-born film pioneer's father designed Art Nouveau buildings?",
+     "a": "Sergei Eisenstein",
+     "wrong": [
+      "Andrei Tarkovsky",
+      "Dziga Vertov",
+      "Lev Kuleshov"
+     ],
+     "why": "His father was Mikhail Eisenstein."
+    },
+    {
+     "level": 3,
+     "q": "Which basketball star from Latvia played for the Boston Celtics?",
+     "a": "Kristaps Porziņģis",
+     "wrong": [
+      "Dāvis Bertāns",
+      "Andris Biedriņš",
+      "Rodions Kurucs"
+     ],
+     "why": "He won the 2024 NBA title."
+    }
+   ]
+  }
+ ]
+}

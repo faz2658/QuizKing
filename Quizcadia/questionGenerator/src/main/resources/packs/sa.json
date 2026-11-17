@@ -1,0 +1,346 @@
+{
+ "category": "Saudi Arabia",
+ "country": "SA",
+ "topics": [
+  {
+   "name": "Saudi Arabia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which city is Islam's holiest and the birthplace of the Prophet Muhammad?",
+     "a": "Mecca",
+     "wrong": [
+      "Medina",
+      "Riyadh",
+      "Jeddah"
+     ],
+     "why": "Millions visit for Hajj each year."
+    },
+    {
+     "level": 1,
+     "q": "Which city holds the Prophet's Mosque?",
+     "a": "Medina",
+     "wrong": [
+      "Mecca",
+      "Ta'if",
+      "Riyadh"
+     ],
+     "why": "The Prophet Muhammad is buried there."
+    },
+    {
+     "level": 1,
+     "q": "Who founded the modern Kingdom of Saudi Arabia in 1932?",
+     "a": "King Abdulaziz (Ibn Saud)",
+     "wrong": [
+      "King Faisal",
+      "King Fahd",
+      "King Salman"
+     ],
+     "why": "His sons have ruled since."
+    },
+    {
+     "level": 1,
+     "q": "What is the annual pilgrimage to Mecca called?",
+     "a": "Hajj",
+     "wrong": [
+      "Umrah",
+      "Ramadan",
+      "Eid"
+     ],
+     "why": "Muslims who are able should make it once in life."
+    },
+    {
+     "level": 1,
+     "q": "Which cube-shaped building stands at the centre of Mecca's Great Mosque?",
+     "a": "Kaaba",
+     "wrong": [
+      "Dome of the Rock",
+      "Al-Aqsa Mosque",
+      "Blue Mosque"
+     ],
+     "why": "Muslims pray facing it."
+    },
+    {
+     "level": 1,
+     "q": "In which year was oil found in commercial amounts in Saudi Arabia?",
+     "a": "1938",
+     "wrong": [
+      "1902",
+      "1950",
+      "1965"
+     ],
+     "why": "It was found at a well in Dammam."
+    },
+    {
+     "level": 1,
+     "q": "What does Saudi Arabia celebrate on 23 September?",
+     "a": "National Day",
+     "wrong": [
+      "Founding Day",
+      "Eid al-Fitr",
+      "Flag Day"
+     ],
+     "why": "It marks unification in 1932."
+    },
+    {
+     "level": 2,
+     "q": "Which state-owned company is the world's largest oil producer?",
+     "a": "Saudi Aramco",
+     "wrong": [
+      "Petrobras",
+      "ADNOC",
+      "Gazprom"
+     ],
+     "why": "It listed some shares in 2019."
+    },
+    {
+     "level": 2,
+     "q": "Which day on 22 February marks the first Saudi state of 1727?",
+     "a": "Founding Day",
+     "wrong": [
+      "National Day",
+      "Flag Day",
+      "Unity Day"
+     ],
+     "why": "It was first celebrated in 2022."
+    },
+    {
+     "level": 2,
+     "q": "Which town was the capital of the first Saudi state?",
+     "a": "Diriyah",
+     "wrong": [
+      "Riyadh",
+      "Ha'il",
+      "Unaizah"
+     ],
+     "why": "Its At-Turaif district is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Who became King of Saudi Arabia in 2015?",
+     "a": "King Salman",
+     "wrong": [
+      "King Abdullah",
+      "King Fahd",
+      "King Khalid"
+     ],
+     "why": "His son Mohammed is Crown Prince."
+    },
+    {
+     "level": 2,
+     "q": "In which year were women first allowed to drive in Saudi Arabia?",
+     "a": "2018",
+     "wrong": [
+      "2010",
+      "2015",
+      "2022"
+     ],
+     "why": "The ban was lifted in June 2018."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient Nabataean city in AlUla has tombs carved into rock?",
+     "a": "Hegra",
+     "wrong": [
+      "Petra",
+      "Palmyra",
+      "Ubar"
+     ],
+     "why": "It was Saudi Arabia's first UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which plan, launched in 2016, aims to move the economy beyond oil?",
+     "a": "Vision 2030",
+     "wrong": [
+      "NEOM Plan",
+      "Vision 2020",
+      "Green Riyadh"
+     ],
+     "why": "It includes tourism and entertainment projects."
+    },
+    {
+     "level": 3,
+     "q": "Which king was assassinated in 1975?",
+     "a": "King Faisal",
+     "wrong": [
+      "King Saud",
+      "King Khalid",
+      "King Abdullah"
+     ],
+     "why": "He led the 1973 oil embargo."
+    }
+   ]
+  },
+  {
+   "name": "Saudi Arabia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Saudi Arabia?",
+     "a": "Riyadh",
+     "wrong": [
+      "Jeddah",
+      "Mecca",
+      "Dammam"
+     ],
+     "why": "It is in the centre of the country."
+    },
+    {
+     "level": 1,
+     "q": "Which Red Sea city is the main gateway for pilgrims to Mecca?",
+     "a": "Jeddah",
+     "wrong": [
+      "Yanbu",
+      "Dammam",
+      "Ta'if"
+     ],
+     "why": "Its old town, Al-Balad, is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "What is the world's largest continuous sand desert, in southern Saudi Arabia?",
+     "a": "Rub' al Khali (Empty Quarter)",
+     "wrong": [
+      "Sahara",
+      "Nefud",
+      "Dahna"
+     ],
+     "why": "It is shared with neighbouring countries."
+    },
+    {
+     "level": 1,
+     "q": "What is Saudi Arabia's currency?",
+     "a": "Saudi riyal",
+     "wrong": [
+      "Dirham",
+      "Dinar",
+      "Pound"
+     ],
+     "why": "It is pegged to the US dollar."
+    },
+    {
+     "level": 1,
+     "q": "What does the Saudi flag show?",
+     "a": "The Shahada and a sword",
+     "wrong": [
+      "A crescent and star",
+      "A palm tree",
+      "An eagle"
+     ],
+     "why": "The background is green."
+    },
+    {
+     "level": 1,
+     "q": "Which spiced rice dish with meat is a national favourite?",
+     "a": "Kabsa",
+     "wrong": [
+      "Mandi",
+      "Biryani",
+      "Machboos"
+     ],
+     "why": "It is often made with chicken or lamb."
+    },
+    {
+     "level": 1,
+     "q": "Which Riyadh skyscraper has a skybridge near the top?",
+     "a": "Kingdom Centre",
+     "wrong": [
+      "Al Faisaliah Tower",
+      "Burj Rafal",
+      "Olaya Towers"
+     ],
+     "why": "It was finished in 2002."
+    },
+    {
+     "level": 2,
+     "q": "Which planned megacity is being built in the northwest?",
+     "a": "NEOM",
+     "wrong": [
+      "Masdar",
+      "Lusail",
+      "Duqm"
+     ],
+     "why": "It includes a linear city called The Line."
+    },
+    {
+     "level": 2,
+     "q": "Which traditional sword dance is performed at celebrations?",
+     "a": "Ardah",
+     "wrong": [
+      "Dabke",
+      "Yowla",
+      "Khaleegy"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 2,
+     "q": "Which club has won the AFC Champions League a record number of times?",
+     "a": "Al Hilal",
+     "wrong": [
+      "Al Nassr",
+      "Al Ittihad",
+      "Al Ahli"
+     ],
+     "why": "It is based in Riyadh."
+    },
+    {
+     "level": 2,
+     "q": "Which Portuguese superstar joined Al Nassr in 2023?",
+     "a": "Cristiano Ronaldo",
+     "wrong": [
+      "Neymar",
+      "Karim Benzema",
+      "Sadio Mané"
+     ],
+     "why": "Benzema joined Al Ittihad that summer."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain city is famous for its roses?",
+     "a": "Ta'if",
+     "wrong": [
+      "Abha",
+      "Al Baha",
+      "Najran"
+     ],
+     "why": "Its rose water is prized."
+    },
+    {
+     "level": 3,
+     "q": "Which southwestern region is famous for brightly painted house interiors?",
+     "a": "Asir",
+     "wrong": [
+      "Najd",
+      "Hejaz",
+      "Al-Ahsa"
+     ],
+     "why": "The art is called Al-Qatt Al-Asiri."
+    },
+    {
+     "level": 3,
+     "q": "Which eastern oasis is one of the largest in the world?",
+     "a": "Al-Ahsa",
+     "wrong": [
+      "AlUla",
+      "Tabuk",
+      "Najran"
+     ],
+     "why": "It has millions of palm trees."
+    },
+    {
+     "level": 3,
+     "q": "Which tournament will Saudi Arabia host in 2034?",
+     "a": "FIFA World Cup",
+     "wrong": [
+      "Summer Olympics",
+      "Asian Games",
+      "World Expo"
+     ],
+     "why": "It was confirmed in 2024."
+    }
+   ]
+  }
+ ]
+}

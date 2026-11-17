@@ -1,0 +1,346 @@
+{
+ "category": "Macau",
+ "country": "MO",
+ "topics": [
+  {
+   "name": "Macau: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which European country ruled Macau until 1999?",
+     "a": "Portugal",
+     "wrong": [
+      "Spain",
+      "United Kingdom",
+      "Netherlands"
+     ],
+     "why": "It was handed back to China on 20 December 1999."
+    },
+    {
+     "level": 1,
+     "q": "What is Macau's currency?",
+     "a": "Pataca",
+     "wrong": [
+      "Hong Kong dollar",
+      "Renminbi",
+      "Escudo"
+     ],
+     "why": "Hong Kong dollars are also widely used."
+    },
+    {
+     "level": 1,
+     "q": "Which industry makes Macau one of the richest places in the world?",
+     "a": "Gambling",
+     "wrong": [
+      "Oil",
+      "Banking",
+      "Shipbuilding"
+     ],
+     "why": "Its casinos earn more than Las Vegas."
+    },
+    {
+     "level": 1,
+     "q": "Which two languages are official in Macau?",
+     "a": "Chinese and Portuguese",
+     "wrong": [
+      "Chinese and English",
+      "Portuguese and English",
+      "Cantonese and Spanish"
+     ],
+     "why": "Cantonese is the most spoken."
+    },
+    {
+     "level": 1,
+     "q": "When did the Portuguese first settle in Macau?",
+     "a": "1557",
+     "wrong": [
+      "1498",
+      "1842",
+      "1700"
+     ],
+     "why": "It was the first and last European colony in China."
+    },
+    {
+     "level": 1,
+     "q": "What is Macau's status within China?",
+     "a": "Special Administrative Region",
+     "wrong": [
+      "Province",
+      "Free City",
+      "Autonomous Region"
+     ],
+     "why": "It has its own laws."
+    },
+    {
+     "level": 1,
+     "q": "Which ruins of a church facade are Macau's symbol?",
+     "a": "Ruins of St Paul's",
+     "wrong": [
+      "St Dominic's Church",
+      "Guia Fortress",
+      "A-Ma Temple"
+     ],
+     "why": "The church burned in 1835."
+    },
+    {
+     "level": 2,
+     "q": "Which goddess temple gave Macau its name?",
+     "a": "A-Ma Temple",
+     "wrong": [
+      "Kun Iam Temple",
+      "Lin Fong Temple",
+      "Na Tcha Temple"
+     ],
+     "why": "Sailors named the place after her."
+    },
+    {
+     "level": 2,
+     "q": "Which gambling tycoon held Macau's casino monopoly for decades?",
+     "a": "Stanley Ho",
+     "wrong": [
+      "Sheldon Adelson",
+      "Steve Wynn",
+      "Lui Che-woo"
+     ],
+     "why": "His company held it until 2002."
+    },
+    {
+     "level": 2,
+     "q": "Which Macau historic centre is a UNESCO site?",
+     "a": "Historic Centre of Macau",
+     "wrong": [
+      "Old Town of Lisbon",
+      "Kowloon Old City",
+      "Malacca Old Town"
+     ],
+     "why": "It was listed in 2005."
+    },
+    {
+     "level": 2,
+     "q": "Which fortress houses a lighthouse that was China's first modern one?",
+     "a": "Guia Fortress",
+     "wrong": [
+      "Monte Fort",
+      "Barra Fortress",
+      "Taipa Fort"
+     ],
+     "why": "The lighthouse dates from 1865."
+    },
+    {
+     "level": 2,
+     "q": "Which 1987 agreement arranged Macau's handover?",
+     "a": "Sino-Portuguese Joint Declaration",
+     "wrong": [
+      "Treaty of Lisbon",
+      "Basic Law",
+      "Treaty of Peking"
+     ],
+     "why": "It was signed in Beijing."
+    },
+    {
+     "level": 3,
+     "q": "Which Portuguese poet is said to have written part of 'The Lusiads' in Macau?",
+     "a": "Luís de Camões",
+     "wrong": [
+      "Fernando Pessoa",
+      "Eça de Queirós",
+      "Gil Vicente"
+     ],
+     "why": "A grotto there is named after him."
+    },
+    {
+     "level": 3,
+     "q": "Which island areas were joined by reclaimed land to form Cotai?",
+     "a": "Taipa and Coloane",
+     "wrong": [
+      "Lantau and Lamma",
+      "Hengqin and Taipa",
+      "Coloane and Hengqin"
+     ],
+     "why": "It is now the casino strip."
+    },
+    {
+     "level": 3,
+     "q": "Which mixed Portuguese-Chinese people are native to Macau?",
+     "a": "Macanese",
+     "wrong": [
+      "Creoles",
+      "Mestiços",
+      "Lusitanos"
+     ],
+     "why": "Their cuisine is on UNESCO's list."
+    }
+   ]
+  },
+  {
+   "name": "Macau: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which motor race runs through Macau's streets each November?",
+     "a": "Macau Grand Prix",
+     "wrong": [
+      "Monaco Grand Prix",
+      "Singapore Grand Prix",
+      "Hong Kong ePrix"
+     ],
+     "why": "It began in 1954."
+    },
+    {
+     "level": 1,
+     "q": "Which crumbly egg tart is Macau's famous snack?",
+     "a": "Portuguese egg tart",
+     "wrong": [
+      "Mooncake",
+      "Wife cake",
+      "Egg roll"
+     ],
+     "why": "Lord Stow's Bakery made it famous."
+    },
+    {
+     "level": 1,
+     "q": "Which tall tower offers a famous bungee jump?",
+     "a": "Macau Tower",
+     "wrong": [
+      "Sky Tower",
+      "CN Tower",
+      "Canton Tower"
+     ],
+     "why": "The jump is 233 m."
+    },
+    {
+     "level": 1,
+     "q": "Which casino strip is built on reclaimed land?",
+     "a": "Cotai Strip",
+     "wrong": [
+      "Las Vegas Strip",
+      "Sentosa",
+      "Patong"
+     ],
+     "why": "The Venetian Macao is there."
+    },
+    {
+     "level": 1,
+     "q": "Which huge casino resort in Macau copies a famous Italian city?",
+     "a": "The Venetian Macao",
+     "wrong": [
+      "The Bellagio",
+      "Palazzo Roma",
+      "The Florentine"
+     ],
+     "why": "It has indoor canals with gondolas."
+    },
+    {
+     "level": 1,
+     "q": "Which square with wavy tiled paving is in central Macau?",
+     "a": "Senado Square",
+     "wrong": [
+      "Rossio Square",
+      "Times Square",
+      "Statue Square"
+     ],
+     "why": "The tiles are Portuguese calçada."
+    },
+    {
+     "level": 1,
+     "q": "Which bridge links Macau with Hong Kong?",
+     "a": "Hong Kong–Zhuhai–Macau Bridge",
+     "wrong": [
+      "Tsing Ma Bridge",
+      "Golden Gate",
+      "Sai Van Bridge"
+     ],
+     "why": "It opened in 2018."
+    },
+    {
+     "level": 2,
+     "q": "Which bread roll with a fried pork chop is a Macau snack?",
+     "a": "Pork chop bun",
+     "wrong": [
+      "Char siu bao",
+      "Pineapple bun",
+      "Wife cake"
+     ],
+     "why": "Tai Lei Loi Kei on Taipa is famous for it."
+    },
+    {
+     "level": 2,
+     "q": "Which almond biscuits are a popular gift from Macau?",
+     "a": "Almond cookies",
+     "wrong": [
+      "Fortune cookies",
+      "Mooncakes",
+      "Wife cakes"
+     ],
+     "why": "Shops on Rua do Cupido sell them."
+    },
+    {
+     "level": 2,
+     "q": "Which village on Coloane has a famous chapel and bakery?",
+     "a": "Coloane Village",
+     "wrong": [
+      "Taipa Village",
+      "Tai O",
+      "Stanley"
+     ],
+     "why": "Lord Stow's first bakery is there."
+    },
+    {
+     "level": 2,
+     "q": "Which casino has a lotus-shaped golden tower?",
+     "a": "Grand Lisboa",
+     "wrong": [
+      "Wynn Macau",
+      "MGM Macau",
+      "Galaxy Macau"
+     ],
+     "why": "It opened in 2007."
+    },
+    {
+     "level": 2,
+     "q": "Which race is part of the Macau Grand Prix weekend?",
+     "a": "Formula 3 and motorcycle race",
+     "wrong": [
+      "Formula One",
+      "IndyCar",
+      "NASCAR"
+     ],
+     "why": "Ayrton Senna won it in 1983."
+    },
+    {
+     "level": 3,
+     "q": "What is the Macanese dish of minced meat and potato called?",
+     "a": "Minchi",
+     "wrong": [
+      "Feijoada",
+      "Bacalhau",
+      "Caldo verde"
+     ],
+     "why": "It is often topped with a fried egg."
+    },
+    {
+     "level": 3,
+     "q": "Which hill fort is home to the Macau Museum?",
+     "a": "Monte Fort",
+     "wrong": [
+      "Guia Fortress",
+      "Barra Fortress",
+      "Taipa Fort"
+     ],
+     "why": "It fought off the Dutch in 1622."
+    },
+    {
+     "level": 3,
+     "q": "Which 1622 attack did Macau repel?",
+     "a": "A Dutch invasion",
+     "wrong": [
+      "A British raid",
+      "A Spanish siege",
+      "A Japanese invasion"
+     ],
+     "why": "24 June was long a holiday."
+    }
+   ]
+  }
+ ]
+}

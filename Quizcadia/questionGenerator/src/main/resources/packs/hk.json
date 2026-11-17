@@ -1,0 +1,346 @@
+{
+ "category": "Hong Kong",
+ "country": "HK",
+ "topics": [
+  {
+   "name": "Hong Kong: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which country ruled Hong Kong until 1997?",
+     "a": "United Kingdom",
+     "wrong": [
+      "Portugal",
+      "Japan",
+      "France"
+     ],
+     "why": "It was handed back to China on 1 July 1997."
+    },
+    {
+     "level": 1,
+     "q": "What principle governs Hong Kong's relationship with China?",
+     "a": "One country, two systems",
+     "wrong": [
+      "One China, one voice",
+      "Two states, one nation",
+      "One nation, many lands"
+     ],
+     "why": "It was meant to last 50 years."
+    },
+    {
+     "level": 1,
+     "q": "Which war led to Britain taking Hong Kong Island in 1842?",
+     "a": "First Opium War",
+     "wrong": [
+      "Boxer Rebellion",
+      "Second Opium War",
+      "Sino-Japanese War"
+     ],
+     "why": "The Treaty of Nanking ceded it."
+    },
+    {
+     "level": 1,
+     "q": "Which martial arts film star grew up in Hong Kong?",
+     "a": "Bruce Lee",
+     "wrong": [
+      "Jet Li",
+      "Donnie Yen",
+      "Chow Yun-fat"
+     ],
+     "why": "He was born in San Francisco."
+    },
+    {
+     "level": 1,
+     "q": "What is Hong Kong's currency?",
+     "a": "Hong Kong dollar",
+     "wrong": [
+      "Renminbi",
+      "Pataca",
+      "Singapore dollar"
+     ],
+     "why": "It is pegged to the US dollar."
+    },
+    {
+     "level": 1,
+     "q": "Which country occupied Hong Kong during the Second World War?",
+     "a": "Japan",
+     "wrong": [
+      "Germany",
+      "Russia",
+      "Korea"
+     ],
+     "why": "The occupation lasted from 1941 to 1945."
+    },
+    {
+     "level": 1,
+     "q": "Which 2014 protests were named after umbrellas?",
+     "a": "Umbrella Movement",
+     "wrong": [
+      "Jasmine Revolution",
+      "Orange Revolution",
+      "Sunflower Movement"
+     ],
+     "why": "Protesters used umbrellas against pepper spray."
+    },
+    {
+     "level": 2,
+     "q": "Who was the last British Governor of Hong Kong?",
+     "a": "Chris Patten",
+     "wrong": [
+      "David Wilson",
+      "Murray MacLehose",
+      "Edward Youde"
+     ],
+     "why": "He left on the royal yacht Britannia."
+    },
+    {
+     "level": 2,
+     "q": "Which area was leased to Britain for 99 years in 1898?",
+     "a": "New Territories",
+     "wrong": [
+      "Kowloon Peninsula",
+      "Lantau",
+      "Hong Kong Island"
+     ],
+     "why": "The lease ended in 1997."
+    },
+    {
+     "level": 2,
+     "q": "Who was Hong Kong's first Chief Executive?",
+     "a": "Tung Chee-hwa",
+     "wrong": [
+      "Carrie Lam",
+      "Donald Tsang",
+      "John Lee"
+     ],
+     "why": "He took office in 1997."
+    },
+    {
+     "level": 2,
+     "q": "Which 1984 agreement set the terms for the 1997 handover?",
+     "a": "Sino-British Joint Declaration",
+     "wrong": [
+      "Treaty of Nanking",
+      "Basic Law",
+      "Convention of Peking"
+     ],
+     "why": "Margaret Thatcher and Zhao Ziyang signed it."
+    },
+    {
+     "level": 2,
+     "q": "Which mini-constitution has governed Hong Kong since 1997?",
+     "a": "Basic Law",
+     "wrong": [
+      "Joint Declaration",
+      "Charter of Rights",
+      "Letters Patent"
+     ],
+     "why": "It was passed by China's parliament in 1990."
+    },
+    {
+     "level": 3,
+     "q": "Which 2020 law changed Hong Kong's politics?",
+     "a": "National Security Law",
+     "wrong": [
+      "Basic Law",
+      "Extradition Law",
+      "Public Order Law"
+     ],
+     "why": "It was passed by Beijing."
+    },
+    {
+     "level": 3,
+     "q": "Which walled city in Kowloon was demolished in 1993?",
+     "a": "Kowloon Walled City",
+     "wrong": [
+      "Tai O Village",
+      "Chungking Mansions",
+      "Lei Yue Mun"
+     ],
+     "why": "It was one of the most crowded places on Earth."
+    },
+    {
+     "level": 3,
+     "q": "Which mainland city across the border grew from a fishing town?",
+     "a": "Shenzhen",
+     "wrong": [
+      "Guangzhou",
+      "Zhuhai",
+      "Dongguan"
+     ],
+     "why": "It became a special economic zone in 1980."
+    }
+   ]
+  },
+  {
+   "name": "Hong Kong: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which harbour lies between Hong Kong Island and Kowloon?",
+     "a": "Victoria Harbour",
+     "wrong": [
+      "Aberdeen Harbour",
+      "Repulse Bay",
+      "Tolo Harbour"
+     ],
+     "why": "Its skyline light show is famous."
+    },
+    {
+     "level": 1,
+     "q": "Which famous peak gives views over Hong Kong?",
+     "a": "Victoria Peak",
+     "wrong": [
+      "Lion Rock",
+      "Tai Mo Shan",
+      "Sharp Peak"
+     ],
+     "why": "A tram climbs to it."
+    },
+    {
+     "level": 1,
+     "q": "Which ferry has crossed Victoria Harbour since 1888?",
+     "a": "Star Ferry",
+     "wrong": [
+      "Blue Ferry",
+      "Pearl Ferry",
+      "Harbour Cat"
+     ],
+     "why": "It is one of the world's cheapest scenic rides."
+    },
+    {
+     "level": 1,
+     "q": "Which giant bronze Buddha sits on Lantau Island?",
+     "a": "Tian Tan Buddha (Big Buddha)",
+     "wrong": [
+      "Leshan Giant Buddha",
+      "Ushiku Daibutsu",
+      "Spring Temple Buddha"
+     ],
+     "why": "It is 34 m tall."
+    },
+    {
+     "level": 1,
+     "q": "Which small steamed dishes are eaten at yum cha?",
+     "a": "Dim sum",
+     "wrong": [
+      "Sushi",
+      "Tapas",
+      "Mezze"
+     ],
+     "why": "Har gow and siu mai are favourites."
+    },
+    {
+     "level": 1,
+     "q": "Which theme park opened on Lantau in 2005?",
+     "a": "Hong Kong Disneyland",
+     "wrong": [
+      "Ocean Park",
+      "Universal Studios",
+      "Legoland"
+     ],
+     "why": "Ocean Park is another big park."
+    },
+    {
+     "level": 1,
+     "q": "Which language is most widely spoken in Hong Kong?",
+     "a": "Cantonese",
+     "wrong": [
+      "Mandarin",
+      "Hakka",
+      "English"
+     ],
+     "why": "English is also an official language."
+    },
+    {
+     "level": 2,
+     "q": "Which bridge opened in 2018 links Hong Kong, Zhuhai and Macau?",
+     "a": "Hong Kong–Zhuhai–Macau Bridge",
+     "wrong": [
+      "Tsing Ma Bridge",
+      "Stonecutters Bridge",
+      "Donghai Bridge"
+     ],
+     "why": "It is about 55 km long."
+    },
+    {
+     "level": 2,
+     "q": "Which horse-racing venue lies in the heart of Hong Kong Island?",
+     "a": "Happy Valley Racecourse",
+     "wrong": [
+      "Sha Tin",
+      "Ascot",
+      "Meydan"
+     ],
+     "why": "Wednesday night races are popular."
+    },
+    {
+     "level": 2,
+     "q": "Which sweet egg tart is a Hong Kong café favourite?",
+     "a": "Egg tart (dan tat)",
+     "wrong": [
+      "Mooncake",
+      "Pineapple bun",
+      "Mochi"
+     ],
+     "why": "Cha chaan teng cafés serve it."
+    },
+    {
+     "level": 2,
+     "q": "Which Hong Kong actor starred in 'Police Story' and 'Rush Hour'?",
+     "a": "Jackie Chan",
+     "wrong": [
+      "Bruce Lee",
+      "Chow Yun-fat",
+      "Tony Leung"
+     ],
+     "why": "He does his own stunts."
+    },
+    {
+     "level": 2,
+     "q": "Which famous outdoor escalator system runs up a hill in Central?",
+     "a": "Central–Mid-Levels Escalator",
+     "wrong": [
+      "Peak Escalator",
+      "Kowloon Moving Walk",
+      "Admiralty Lift"
+     ],
+     "why": "It is the world's longest outdoor covered escalator."
+    },
+    {
+     "level": 3,
+     "q": "Which director made 'In the Mood for Love'?",
+     "a": "Wong Kar-wai",
+     "wrong": [
+      "John Woo",
+      "Ann Hui",
+      "Johnnie To"
+     ],
+     "why": "It starred Tony Leung and Maggie Cheung."
+    },
+    {
+     "level": 3,
+     "q": "Which rugby event is Hong Kong's biggest sporting party?",
+     "a": "Hong Kong Sevens",
+     "wrong": [
+      "Hong Kong Open",
+      "Dragon Boat Cup",
+      "Asian Rugby Cup"
+     ],
+     "why": "It has been held since 1976."
+    },
+    {
+     "level": 3,
+     "q": "Which Hong Kong fencer won Olympic gold in 2021 and 2024?",
+     "a": "Cheung Ka-long",
+     "wrong": [
+      "Vivian Kong",
+      "Siobhan Haughey",
+      "Lee Lai-shan"
+     ],
+     "why": "He won the men's foil twice."
+    }
+   ]
+  }
+ ]
+}

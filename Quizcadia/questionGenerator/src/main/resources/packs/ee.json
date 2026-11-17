@@ -1,0 +1,346 @@
+{
+ "category": "Estonia",
+ "country": "EE",
+ "topics": [
+  {
+   "name": "Estonia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Estonia?",
+     "a": "Tallinn",
+     "wrong": [
+      "Tartu",
+      "Pärnu",
+      "Narva"
+     ],
+     "why": "Its old town is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Estonia first declare independence?",
+     "a": "1918",
+     "wrong": [
+      "1991",
+      "1920",
+      "1940"
+     ],
+     "why": "24 February is Independence Day."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Estonia regain independence from the Soviet Union?",
+     "a": "1991",
+     "wrong": [
+      "1989",
+      "1993",
+      "1995"
+     ],
+     "why": "It was restored on 20 August."
+    },
+    {
+     "level": 1,
+     "q": "What was the 1987–91 movement of mass singing for freedom called?",
+     "a": "Singing Revolution",
+     "wrong": [
+      "Velvet Revolution",
+      "Rose Revolution",
+      "Baltic Spring"
+     ],
+     "why": "Hundreds of thousands sang together."
+    },
+    {
+     "level": 1,
+     "q": "Which 1989 human chain linked Tallinn, Riga and Vilnius?",
+     "a": "Baltic Way",
+     "wrong": [
+      "Iron Curtain",
+      "Freedom Line",
+      "Amber Road"
+     ],
+     "why": "About two million people held hands."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Estonia join the EU and NATO?",
+     "a": "2004",
+     "wrong": [
+      "1995",
+      "2007",
+      "2011"
+     ],
+     "why": "It adopted the euro in 2011."
+    },
+    {
+     "level": 1,
+     "q": "Which video-calling software was developed by Estonian engineers?",
+     "a": "Skype",
+     "wrong": [
+      "Zoom",
+      "WhatsApp",
+      "Viber"
+     ],
+     "why": "It launched in 2003."
+    },
+    {
+     "level": 2,
+     "q": "Which medieval trading league did Tallinn belong to?",
+     "a": "Hanseatic League",
+     "wrong": [
+      "Kalmar Union",
+      "Teutonic Order",
+      "Kievan Rus'"
+     ],
+     "why": "It was then called Reval."
+    },
+    {
+     "level": 2,
+     "q": "Which crusading order conquered Estonia in the 1200s?",
+     "a": "Livonian Brothers of the Sword",
+     "wrong": [
+      "Knights Templar",
+      "Knights Hospitaller",
+      "Order of Calatrava"
+     ],
+     "why": "They later joined the Teutonic Order."
+    },
+    {
+     "level": 2,
+     "q": "Which country ruled Estonia from 1561 to 1721?",
+     "a": "Sweden",
+     "wrong": [
+      "Denmark",
+      "Poland",
+      "Russia"
+     ],
+     "why": "The 'good old Swedish times'."
+    },
+    {
+     "level": 2,
+     "q": "What is the national epic poem of Estonia?",
+     "a": "Kalevipoeg",
+     "wrong": [
+      "Kalevala",
+      "Lāčplēsis",
+      "Edda"
+     ],
+     "why": "Friedrich Reinhold Kreutzwald compiled it."
+    },
+    {
+     "level": 2,
+     "q": "Which secret 1939 pact handed Estonia to the Soviet sphere?",
+     "a": "Molotov–Ribbentrop Pact",
+     "wrong": [
+      "Munich Agreement",
+      "Treaty of Tartu",
+      "Yalta Agreement"
+     ],
+     "why": "The Soviets occupied Estonia in 1940."
+    },
+    {
+     "level": 3,
+     "q": "Which 1920 treaty ended Estonia's War of Independence?",
+     "a": "Treaty of Tartu",
+     "wrong": [
+      "Treaty of Riga",
+      "Treaty of Brest-Litovsk",
+      "Treaty of Versailles"
+     ],
+     "why": "Soviet Russia recognised Estonia."
+    },
+    {
+     "level": 3,
+     "q": "Which university town is Estonia's intellectual centre?",
+     "a": "Tartu",
+     "wrong": [
+      "Tallinn",
+      "Narva",
+      "Viljandi"
+     ],
+     "why": "Its university was founded in 1632."
+    },
+    {
+     "level": 3,
+     "q": "Who became Estonia's first woman Prime Minister, in 2021?",
+     "a": "Kaja Kallas",
+     "wrong": [
+      "Kersti Kaljulaid",
+      "Ene Ergma",
+      "Siim Kallas"
+     ],
+     "why": "She later became EU foreign policy chief."
+    }
+   ]
+  },
+  {
+   "name": "Estonia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Estonia's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Kroon",
+      "Lats",
+      "Litas"
+     ],
+     "why": "It replaced the kroon in 2011."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies along Estonia's coast?",
+     "a": "Baltic Sea",
+     "wrong": [
+      "North Sea",
+      "Black Sea",
+      "White Sea"
+     ],
+     "why": "Its largest island is Saaremaa."
+    },
+    {
+     "level": 1,
+     "q": "Which song festival draws tens of thousands of singers?",
+     "a": "Estonian Song Festival",
+     "wrong": [
+      "Eurovision",
+      "Midsummer Festival",
+      "Tallinn Music Week"
+     ],
+     "why": "It is held every five years."
+    },
+    {
+     "level": 1,
+     "q": "Which is Estonia's largest island?",
+     "a": "Saaremaa",
+     "wrong": [
+      "Hiiumaa",
+      "Muhu",
+      "Vormsi"
+     ],
+     "why": "It has a meteorite crater."
+    },
+    {
+     "level": 1,
+     "q": "Which e-service lets Estonians vote online?",
+     "a": "i-Voting",
+     "wrong": [
+      "e-Ballot",
+      "NetVote",
+      "e-Poll"
+     ],
+     "why": "Estonia was first to use it nationwide in 2005."
+    },
+    {
+     "level": 1,
+     "q": "Which dark rye bread is a staple?",
+     "a": "Black bread (leib)",
+     "wrong": [
+      "Baguette",
+      "Ciabatta",
+      "Pita"
+     ],
+     "why": "It is served with almost every meal."
+    },
+    {
+     "level": 1,
+     "q": "Which language family does Estonian belong to?",
+     "a": "Finno-Ugric (Uralic)",
+     "wrong": [
+      "Slavic",
+      "Baltic",
+      "Germanic"
+     ],
+     "why": "It is close to Finnish."
+    },
+    {
+     "level": 2,
+     "q": "Which Estonian composer is famous for 'Spiegel im Spiegel'?",
+     "a": "Arvo Pärt",
+     "wrong": [
+      "Veljo Tormis",
+      "Eduard Tubin",
+      "Erkki-Sven Tüür"
+     ],
+     "why": "He is one of the most performed living composers."
+    },
+    {
+     "level": 2,
+     "q": "Which programme lets foreigners become 'e-residents'?",
+     "a": "e-Residency",
+     "wrong": [
+      "Digital Visa",
+      "Tallinn Pass",
+      "e-Citizen"
+     ],
+     "why": "It launched in 2014."
+    },
+    {
+     "level": 2,
+     "q": "Which Tallinn church's spire was once the world's tallest building?",
+     "a": "St Olaf's Church",
+     "wrong": [
+      "St Mary's Cathedral",
+      "Alexander Nevsky Cathedral",
+      "St Nicholas' Church"
+     ],
+     "why": "It may have been in the 1500s."
+    },
+    {
+     "level": 2,
+     "q": "What is the meteorite crater on Saaremaa called?",
+     "a": "Kaali crater",
+     "wrong": [
+      "Barringer crater",
+      "Chicxulub",
+      "Lonar crater"
+     ],
+     "why": "It is about 110 m wide."
+    },
+    {
+     "level": 2,
+     "q": "Which national park near Tallinn is Estonia's oldest?",
+     "a": "Lahemaa",
+     "wrong": [
+      "Soomaa",
+      "Matsalu",
+      "Karula"
+     ],
+     "why": "Its name means 'land of bays'."
+    },
+    {
+     "level": 3,
+     "q": "Which region floods so much it is called the 'fifth season'?",
+     "a": "Soomaa",
+     "wrong": [
+      "Lahemaa",
+      "Matsalu",
+      "Vilsandi"
+     ],
+     "why": "Locals travel by dugout canoe."
+    },
+    {
+     "level": 3,
+     "q": "Which Estonian skier won Olympic golds in 2002 and 2006?",
+     "a": "Andrus Veerpalu",
+     "wrong": [
+      "Kristina Šmigun-Vähi",
+      "Jaak Mae",
+      "Ott Tänak"
+     ],
+     "why": "He won the 15 km classical twice."
+    },
+    {
+     "level": 3,
+     "q": "Which Estonian rally driver won the 2019 world title?",
+     "a": "Ott Tänak",
+     "wrong": [
+      "Markko Märtin",
+      "Sébastien Loeb",
+      "Kalle Rovanperä"
+     ],
+     "why": "He drove a Toyota."
+    }
+   ]
+  }
+ ]
+}

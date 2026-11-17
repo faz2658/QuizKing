@@ -1,0 +1,346 @@
+{
+ "category": "Tunisia",
+ "country": "TN",
+ "topics": [
+  {
+   "name": "Tunisia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which ancient city near Tunis fought three wars with Rome?",
+     "a": "Carthage",
+     "wrong": [
+      "Utica",
+      "Kairouan",
+      "Sousse"
+     ],
+     "why": "Rome destroyed it in 146 BC."
+    },
+    {
+     "level": 1,
+     "q": "Which Carthage-born general invaded Italy in 218 BC?",
+     "a": "Hannibal",
+     "wrong": [
+      "Hamilcar",
+      "Hasdrubal",
+      "Masinissa"
+     ],
+     "why": "He was born in Carthage."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Tunisia gain independence from France?",
+     "a": "1956",
+     "wrong": [
+      "1962",
+      "1945",
+      "1954"
+     ],
+     "why": "It became a republic the next year."
+    },
+    {
+     "level": 1,
+     "q": "Who was Tunisia's first President?",
+     "a": "Habib Bourguiba",
+     "wrong": [
+      "Zine El Abidine Ben Ali",
+      "Beji Caid Essebsi",
+      "Moncef Marzouki"
+     ],
+     "why": "He championed women's rights."
+    },
+    {
+     "level": 1,
+     "q": "Which 2010–11 revolution began the Arab Spring?",
+     "a": "Tunisian Revolution (Jasmine Revolution)",
+     "wrong": [
+      "Egyptian Revolution",
+      "Libyan Civil War",
+      "Orange Revolution"
+     ],
+     "why": "A street vendor's protest sparked it."
+    },
+    {
+     "level": 1,
+     "q": "Which Tunisian group won the 2015 Nobel Peace Prize?",
+     "a": "National Dialogue Quartet",
+     "wrong": [
+      "Arab Spring Committee",
+      "Jasmine Alliance",
+      "Tunisian Red Crescent"
+     ],
+     "why": "It helped keep the democratic transition peaceful."
+    },
+    {
+     "level": 1,
+     "q": "Which Phoenician queen is said to have founded Carthage?",
+     "a": "Dido (Elissa)",
+     "wrong": [
+      "Cleopatra",
+      "Sophonisba",
+      "Kahina"
+     ],
+     "why": "She came from Tyre."
+    },
+    {
+     "level": 2,
+     "q": "Which 1956 law gave Tunisian women rights unusual in the region?",
+     "a": "Code of Personal Status",
+     "wrong": [
+      "Family Charter",
+      "Women's Act",
+      "Bourguiba Code"
+     ],
+     "why": "It banned polygamy."
+    },
+    {
+     "level": 2,
+     "q": "Who ruled Tunisia from 1987 to 2011?",
+     "a": "Zine El Abidine Ben Ali",
+     "wrong": [
+      "Habib Bourguiba",
+      "Beji Caid Essebsi",
+      "Kais Saied"
+     ],
+     "why": "He fled to Saudi Arabia in 2011."
+    },
+    {
+     "level": 2,
+     "q": "Which city has the oldest mosque in North Africa, the Great Mosque founded in 670?",
+     "a": "Kairouan",
+     "wrong": [
+      "Tunis",
+      "Sfax",
+      "Mahdia"
+     ],
+     "why": "It is a holy city of Islam."
+    },
+    {
+     "level": 2,
+     "q": "Which Roman amphitheatre in El Jem is one of the largest ever built?",
+     "a": "Amphitheatre of El Jem",
+     "wrong": [
+      "Colosseum of Sousse",
+      "Arena of Dougga",
+      "Theatre of Carthage"
+     ],
+     "why": "It held about 35,000 people."
+    },
+    {
+     "level": 2,
+     "q": "Which street vendor's act set off the 2010 revolution?",
+     "a": "Mohamed Bouazizi",
+     "wrong": [
+      "Chokri Belaid",
+      "Mohamed Brahmi",
+      "Lina Ben Mhenni"
+     ],
+     "why": "He set himself on fire in Sidi Bouzid."
+    },
+    {
+     "level": 3,
+     "q": "Which Fatimid capital on the coast was founded in 921?",
+     "a": "Mahdia",
+     "wrong": [
+      "Monastir",
+      "Bizerte",
+      "Gabès"
+     ],
+     "why": "It was named after the caliph al-Mahdi."
+    },
+    {
+     "level": 3,
+     "q": "Which Tunis-born scholar wrote the 'Muqaddimah'?",
+     "a": "Ibn Khaldun",
+     "wrong": [
+      "Ibn Battuta",
+      "Al-Idrisi",
+      "Ibn Rushd"
+     ],
+     "why": "He is seen as a founder of sociology."
+    },
+    {
+     "level": 3,
+     "q": "Which Roman town with a hilltop Capitol is a UNESCO site?",
+     "a": "Dougga",
+     "wrong": [
+      "Bulla Regia",
+      "Sbeitla",
+      "Utica"
+     ],
+     "why": "It is well preserved."
+    }
+   ]
+  },
+  {
+   "name": "Tunisia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Tunisia?",
+     "a": "Tunis",
+     "wrong": [
+      "Sfax",
+      "Sousse",
+      "Kairouan"
+     ],
+     "why": "Its medina is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which white-and-blue village near Tunis is famous for its views?",
+     "a": "Sidi Bou Said",
+     "wrong": [
+      "Hammamet",
+      "Djerba",
+      "Tabarka"
+     ],
+     "why": "Artists like Paul Klee painted there."
+    },
+    {
+     "level": 1,
+     "q": "Which spicy chilli paste is a Tunisian staple?",
+     "a": "Harissa",
+     "wrong": [
+      "Chermoula",
+      "Zhug",
+      "Ras el hanout"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "What is Tunisia's currency?",
+     "a": "Tunisian dinar",
+     "wrong": [
+      "Dirham",
+      "Euro",
+      "Franc"
+     ],
+     "why": "Its code is TND."
+    },
+    {
+     "level": 1,
+     "q": "Which large island in the south is a popular holiday spot?",
+     "a": "Djerba",
+     "wrong": [
+      "Kerkennah",
+      "Malta",
+      "Sicily"
+     ],
+     "why": "It has one of the oldest synagogues in Africa."
+    },
+    {
+     "level": 1,
+     "q": "Which film series used southern Tunisia as the planet Tatooine?",
+     "a": "Star Wars",
+     "wrong": [
+      "Dune",
+      "Indiana Jones",
+      "The Mummy"
+     ],
+     "why": "The village of Matmata hosted Luke's home."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies along Tunisia's coast?",
+     "a": "Mediterranean Sea",
+     "wrong": [
+      "Red Sea",
+      "Atlantic Ocean",
+      "Black Sea"
+     ],
+     "why": "It has over 1,000 km of coastline."
+    },
+    {
+     "level": 2,
+     "q": "Which egg-in-pastry snack is a Tunisian favourite?",
+     "a": "Brik",
+     "wrong": [
+      "Börek",
+      "Samosa",
+      "Empanada"
+     ],
+     "why": "It is fried and often filled with tuna."
+    },
+    {
+     "level": 2,
+     "q": "Which salt lake in the south is the largest in the Sahara?",
+     "a": "Chott el Djerid",
+     "wrong": [
+      "Lake Assal",
+      "Chott Melrhir",
+      "Lake Chad"
+     ],
+     "why": "Mirages often appear over it."
+    },
+    {
+     "level": 2,
+     "q": "Which tennis player became the first Arab woman to reach a Grand Slam final?",
+     "a": "Ons Jabeur",
+     "wrong": [
+      "Selima Sfar",
+      "Malek Jaziri",
+      "Aziz Dougaz"
+     ],
+     "why": "She reached Wimbledon finals in 2022 and 2023."
+    },
+    {
+     "level": 2,
+     "q": "Which Tunisian swimmer won Olympic 1,500 m gold in 2008?",
+     "a": "Oussama Mellouli",
+     "wrong": [
+      "Ahmed Hafnaoui",
+      "Mohamed Gammoudi",
+      "Habiba Ghribi"
+     ],
+     "why": "He also won 10 km open-water gold in 2012."
+    },
+    {
+     "level": 2,
+     "q": "Which musical tradition came from Andalusia to Tunisia?",
+     "a": "Malouf",
+     "wrong": [
+      "Raï",
+      "Gnawa",
+      "Mizwed"
+     ],
+     "why": "It is played with oud and violin."
+    },
+    {
+     "level": 3,
+     "q": "Which diamond-shaped semolina pastry filled with dates comes from Kairouan?",
+     "a": "Makroudh",
+     "wrong": [
+      "Baklava",
+      "Kaak",
+      "Zlabia"
+     ],
+     "why": "They are fried and soaked in syrup."
+    },
+    {
+     "level": 3,
+     "q": "Which national park around a lake is a UNESCO site for birds?",
+     "a": "Ichkeul",
+     "wrong": [
+      "Bou Hedma",
+      "Chambi",
+      "Zembra"
+     ],
+     "why": "Hundreds of thousands of birds winter there."
+    },
+    {
+     "level": 3,
+     "q": "Which underground homes in Matmata were carved by Berbers?",
+     "a": "Troglodyte pit houses",
+     "wrong": [
+      "Rock temples",
+      "Salt caves",
+      "Kasbah towers"
+     ],
+     "why": "Rooms open onto a deep circular courtyard."
+    }
+   ]
+  }
+ ]
+}

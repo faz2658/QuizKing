@@ -1,0 +1,346 @@
+{
+ "category": "Lebanon",
+ "country": "LB",
+ "topics": [
+  {
+   "name": "Lebanon: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which ancient seafaring people lived in today's Lebanon?",
+     "a": "Phoenicians",
+     "wrong": [
+      "Hittites",
+      "Philistines",
+      "Sumerians"
+     ],
+     "why": "They spread the alphabet around the Mediterranean."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Lebanon gain independence from France?",
+     "a": "1943",
+     "wrong": [
+      "1946",
+      "1920",
+      "1958"
+     ],
+     "why": "Independence Day is 22 November."
+    },
+    {
+     "level": 1,
+     "q": "Which war divided Lebanon from 1975 to 1990?",
+     "a": "Lebanese Civil War",
+     "wrong": [
+      "Six-Day War",
+      "Gulf War",
+      "War of Independence"
+     ],
+     "why": "The Taif Agreement ended it."
+    },
+    {
+     "level": 1,
+     "q": "Which tree is on Lebanon's flag?",
+     "a": "Cedar",
+     "wrong": [
+      "Olive",
+      "Palm",
+      "Oak"
+     ],
+     "why": "Cedars of Lebanon are mentioned in the Bible."
+    },
+    {
+     "level": 1,
+     "q": "Which great explosion devastated Beirut's port in 2020?",
+     "a": "Beirut port explosion",
+     "wrong": [
+      "Tyre blast",
+      "Sidon fire",
+      "Tripoli explosion"
+     ],
+     "why": "It was caused by stored ammonium nitrate."
+    },
+    {
+     "level": 1,
+     "q": "Which Phoenician city gave its name to the Bible ('biblion')?",
+     "a": "Byblos",
+     "wrong": [
+      "Tyre",
+      "Sidon",
+      "Baalbek"
+     ],
+     "why": "It is one of the oldest continuously lived-in cities."
+    },
+    {
+     "level": 1,
+     "q": "Which Lebanese-American poet wrote 'The Prophet'?",
+     "a": "Khalil Gibran",
+     "wrong": [
+      "Amin Maalouf",
+      "Nizar Qabbani",
+      "Mikhail Naimy"
+     ],
+     "why": "It was published in 1923."
+    },
+    {
+     "level": 2,
+     "q": "Which 1989 agreement ended the civil war?",
+     "a": "Taif Agreement",
+     "wrong": [
+      "Doha Agreement",
+      "Cairo Agreement",
+      "Oslo Accords"
+     ],
+     "why": "It was signed in Saudi Arabia."
+    },
+    {
+     "level": 2,
+     "q": "Which Phoenician city was besieged by Alexander the Great in 332 BC?",
+     "a": "Tyre",
+     "wrong": [
+      "Sidon",
+      "Byblos",
+      "Berytus"
+     ],
+     "why": "He built a causeway to reach the island city."
+    },
+    {
+     "level": 2,
+     "q": "Which Prime Minister was killed by a huge car bomb in 2005?",
+     "a": "Rafic Hariri",
+     "wrong": [
+      "Saad Hariri",
+      "Rashid Karami",
+      "Riad Al Solh"
+     ],
+     "why": "It led to the Cedar Revolution."
+    },
+    {
+     "level": 2,
+     "q": "What was Lebanon's capital called in Roman times?",
+     "a": "Berytus",
+     "wrong": [
+      "Heliopolis",
+      "Byblos",
+      "Sidon"
+     ],
+     "why": "It had a famous law school."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient purple dye made Tyre rich?",
+     "a": "Tyrian purple",
+     "wrong": [
+      "Indigo",
+      "Saffron yellow",
+      "Henna red"
+     ],
+     "why": "It was made from sea snails."
+    },
+    {
+     "level": 3,
+     "q": "Which 1958 crisis saw US Marines land in Beirut?",
+     "a": "1958 Lebanon crisis",
+     "wrong": [
+      "Suez Crisis",
+      "Black September",
+      "Litani Operation"
+     ],
+     "why": "President Chamoun asked for help."
+    },
+    {
+     "level": 3,
+     "q": "Which French-Lebanese author wrote 'Leo Africanus' and won the Prix Goncourt?",
+     "a": "Amin Maalouf",
+     "wrong": [
+      "Khalil Gibran",
+      "Elias Khoury",
+      "Etel Adnan"
+     ],
+     "why": "He joined the Académie française in 2011."
+    },
+    {
+     "level": 3,
+     "q": "Which agreement of 1943 shared power among religious groups?",
+     "a": "National Pact",
+     "wrong": [
+      "Taif Agreement",
+      "Lausanne Treaty",
+      "Sykes–Picot"
+     ],
+     "why": "It was unwritten."
+    }
+   ]
+  },
+  {
+   "name": "Lebanon: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Lebanon?",
+     "a": "Beirut",
+     "wrong": [
+      "Tripoli",
+      "Sidon",
+      "Tyre"
+     ],
+     "why": "It was once called the 'Paris of the Middle East'."
+    },
+    {
+     "level": 1,
+     "q": "Which parsley and bulgur salad is a Lebanese classic?",
+     "a": "Tabbouleh",
+     "wrong": [
+      "Fattoush",
+      "Hummus",
+      "Baba ghanoush"
+     ],
+     "why": "It is mostly parsley."
+    },
+    {
+     "level": 1,
+     "q": "What is Lebanon's currency?",
+     "a": "Lebanese pound",
+     "wrong": [
+      "Dinar",
+      "Riyal",
+      "Euro"
+     ],
+     "why": "It is also called the lira."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient Roman temples stand in the Beqaa Valley?",
+     "a": "Baalbek",
+     "wrong": [
+      "Palmyra",
+      "Jerash",
+      "Byblos"
+     ],
+     "why": "Its Temple of Bacchus is very well preserved."
+    },
+    {
+     "level": 1,
+     "q": "Which singer is called the 'Soul of Lebanon'?",
+     "a": "Fairuz",
+     "wrong": [
+      "Umm Kulthum",
+      "Nancy Ajram",
+      "Majida El Roumi"
+     ],
+     "why": "She has sung since the 1950s."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies along Lebanon's coast?",
+     "a": "Mediterranean Sea",
+     "wrong": [
+      "Red Sea",
+      "Dead Sea",
+      "Black Sea"
+     ],
+     "why": "The coast is about 225 km long."
+    },
+    {
+     "level": 1,
+     "q": "Which minced meat and bulgur dish is the national dish?",
+     "a": "Kibbeh",
+     "wrong": [
+      "Shawarma",
+      "Falafel",
+      "Mujaddara"
+     ],
+     "why": "It can be fried, baked or raw."
+    },
+    {
+     "level": 2,
+     "q": "Which grotto with stunning caves is a natural wonder finalist?",
+     "a": "Jeita Grotto",
+     "wrong": [
+      "Qadisha Grotto",
+      "Afqa Grotto",
+      "Kfarhim Grotto"
+     ],
+     "why": "It has upper and lower caves."
+    },
+    {
+     "level": 2,
+     "q": "Which valley with old monasteries is a UNESCO site?",
+     "a": "Qadisha Valley",
+     "wrong": [
+      "Beqaa Valley",
+      "Litani Valley",
+      "Nahr Ibrahim"
+     ],
+     "why": "It is called the Holy Valley."
+    },
+    {
+     "level": 2,
+     "q": "Which fertile valley lies between two mountain ranges?",
+     "a": "Beqaa Valley",
+     "wrong": [
+      "Qadisha Valley",
+      "Jordan Valley",
+      "Orontes Valley"
+     ],
+     "why": "It is famous for its wineries."
+    },
+    {
+     "level": 2,
+     "q": "Which bread salad with crispy pita and sumac is popular?",
+     "a": "Fattoush",
+     "wrong": [
+      "Tabbouleh",
+      "Labneh",
+      "Manakish"
+     ],
+     "why": "It uses leftover bread."
+    },
+    {
+     "level": 2,
+     "q": "Which Lebanese pop star is famous for 'Akhasmak Ah'?",
+     "a": "Nancy Ajram",
+     "wrong": [
+      "Haifa Wehbe",
+      "Elissa",
+      "Fairuz"
+     ],
+     "why": "She is one of the Arab world's best-selling singers."
+    },
+    {
+     "level": 3,
+     "q": "Which Lebanese director's 'Capernaum' was Oscar-nominated?",
+     "a": "Nadine Labaki",
+     "wrong": [
+      "Ziad Doueiri",
+      "Marjane Satrapi",
+      "Maroun Bagdadi"
+     ],
+     "why": "It won the Jury Prize at Cannes in 2018."
+    },
+    {
+     "level": 3,
+     "q": "Which thyme flatbread is a breakfast favourite?",
+     "a": "Manakish",
+     "wrong": [
+      "Ka'ak",
+      "Markook",
+      "Khubz"
+     ],
+     "why": "It is topped with za'atar."
+    },
+    {
+     "level": 3,
+     "q": "What is Lebanon's highest mountain?",
+     "a": "Qurnat as Sawda'",
+     "wrong": [
+      "Mount Hermon",
+      "Mount Lebanon",
+      "Mount Sannine"
+     ],
+     "why": "It is 3,088 m high."
+    }
+   ]
+  }
+ ]
+}

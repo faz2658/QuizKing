@@ -1,0 +1,346 @@
+{
+ "category": "Portugal",
+ "country": "PT",
+ "topics": [
+  {
+   "name": "Portugal: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Portuguese explorer first sailed from Europe to India, in 1498?",
+     "a": "Vasco da Gama",
+     "wrong": [
+      "Ferdinand Magellan",
+      "Bartolomeu Dias",
+      "Pedro Álvares Cabral"
+     ],
+     "why": "He sailed around Africa."
+    },
+    {
+     "level": 1,
+     "q": "Which Portuguese navigator led the first voyage around the world?",
+     "a": "Ferdinand Magellan",
+     "wrong": [
+      "Vasco da Gama",
+      "Bartolomeu Dias",
+      "João Fernandes"
+     ],
+     "why": "He died in the Philippines; his crew finished the trip."
+    },
+    {
+     "level": 1,
+     "q": "Which prince sponsored early Portuguese voyages of discovery?",
+     "a": "Henry the Navigator",
+     "wrong": [
+      "João II",
+      "Manuel I",
+      "Afonso Henriques"
+     ],
+     "why": "He lived from 1394 to 1460."
+    },
+    {
+     "level": 1,
+     "q": "Which disaster struck Lisbon on 1 November 1755?",
+     "a": "An earthquake and tsunami",
+     "wrong": [
+      "A plague",
+      "A volcanic eruption",
+      "A flood"
+     ],
+     "why": "It destroyed much of the city."
+    },
+    {
+     "level": 1,
+     "q": "What was the peaceful 1974 coup that ended dictatorship called?",
+     "a": "Carnation Revolution",
+     "wrong": [
+      "Velvet Revolution",
+      "Rose Revolution",
+      "Orange Revolution"
+     ],
+     "why": "Soldiers put carnations in their guns."
+    },
+    {
+     "level": 1,
+     "q": "Which South American country was Portugal's largest colony?",
+     "a": "Brazil",
+     "wrong": [
+      "Argentina",
+      "Venezuela",
+      "Peru"
+     ],
+     "why": "Brazil became independent in 1822."
+    },
+    {
+     "level": 1,
+     "q": "Who was Portugal's first king?",
+     "a": "Afonso Henriques",
+     "wrong": [
+      "João I",
+      "Manuel I",
+      "Sebastião"
+     ],
+     "why": "He became king in 1139."
+    },
+    {
+     "level": 2,
+     "q": "Which explorer first rounded the Cape of Good Hope in 1488?",
+     "a": "Bartolomeu Dias",
+     "wrong": [
+      "Vasco da Gama",
+      "Pedro Álvares Cabral",
+      "Diogo Cão"
+     ],
+     "why": "He called it the Cape of Storms."
+    },
+    {
+     "level": 2,
+     "q": "Which dictator led the Estado Novo regime from 1932?",
+     "a": "António de Oliveira Salazar",
+     "wrong": [
+      "Marcelo Caetano",
+      "Óscar Carmona",
+      "Sidónio Pais"
+     ],
+     "why": "It lasted until 1974."
+    },
+    {
+     "level": 2,
+     "q": "Which 1494 treaty split the newly found lands between Portugal and Spain?",
+     "a": "Treaty of Tordesillas",
+     "wrong": [
+      "Treaty of Zaragoza",
+      "Treaty of Lisbon",
+      "Treaty of Windsor"
+     ],
+     "why": "It drew a line through the Atlantic."
+    },
+    {
+     "level": 2,
+     "q": "Which Asian territory did Portugal hand back to China in 1999?",
+     "a": "Macau",
+     "wrong": [
+      "Goa",
+      "Hong Kong",
+      "Malacca"
+     ],
+     "why": "It had been Portuguese for over 400 years."
+    },
+    {
+     "level": 2,
+     "q": "Which alliance with England, from 1386, is the world's oldest still in force?",
+     "a": "Treaty of Windsor",
+     "wrong": [
+      "Treaty of Tordesillas",
+      "Methuen Treaty",
+      "Auld Alliance"
+     ],
+     "why": "It was sealed by a royal marriage."
+    },
+    {
+     "level": 3,
+     "q": "Which minister rebuilt Lisbon after the 1755 earthquake?",
+     "a": "Marquis of Pombal",
+     "wrong": [
+      "Duke of Wellington",
+      "Henry the Navigator",
+      "Afonso de Albuquerque"
+     ],
+     "why": "Lisbon's Baixa district is called Pombaline."
+    },
+    {
+     "level": 3,
+     "q": "Which Indian city was Portugal's main colony in Asia until 1961?",
+     "a": "Goa",
+     "wrong": [
+      "Kochi",
+      "Chennai",
+      "Mumbai"
+     ],
+     "why": "India took it back that year."
+    },
+    {
+     "level": 3,
+     "q": "Which 1385 battle secured Portugal's independence from Castile?",
+     "a": "Battle of Aljubarrota",
+     "wrong": [
+      "Battle of Ourique",
+      "Battle of Toro",
+      "Battle of Alcácer Quibir"
+     ],
+     "why": "The Batalha Monastery celebrates it."
+    }
+   ]
+  },
+  {
+   "name": "Portugal: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Portugal?",
+     "a": "Lisbon",
+     "wrong": [
+      "Porto",
+      "Coimbra",
+      "Faro"
+     ],
+     "why": "It is built on seven hills."
+    },
+    {
+     "level": 1,
+     "q": "Which sweet fortified wine comes from northern Portugal?",
+     "a": "Port",
+     "wrong": [
+      "Sherry",
+      "Marsala",
+      "Vermouth"
+     ],
+     "why": "It is aged in Porto's cellars."
+    },
+    {
+     "level": 1,
+     "q": "Which sad, soulful music style comes from Lisbon?",
+     "a": "Fado",
+     "wrong": [
+      "Flamenco",
+      "Morna",
+      "Tango"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "Which Portuguese footballer has won five Ballon d'Or awards?",
+     "a": "Cristiano Ronaldo",
+     "wrong": [
+      "Luís Figo",
+      "Eusébio",
+      "Bernardo Silva"
+     ],
+     "why": "He is from Madeira."
+    },
+    {
+     "level": 1,
+     "q": "Which custard tarts are a Lisbon speciality?",
+     "a": "Pastéis de nata",
+     "wrong": [
+      "Queijadas",
+      "Bolas de Berlim",
+      "Pão de ló"
+     ],
+     "why": "The ones from Belém are famous."
+    },
+    {
+     "level": 1,
+     "q": "Which painted blue-and-white tiles decorate many Portuguese buildings?",
+     "a": "Azulejos",
+     "wrong": [
+      "Mosaicos",
+      "Majolica",
+      "Talavera"
+     ],
+     "why": "They came from Moorish traditions."
+    },
+    {
+     "level": 1,
+     "q": "Which southern region is famous for beaches and cliffs?",
+     "a": "Algarve",
+     "wrong": [
+      "Alentejo",
+      "Minho",
+      "Douro"
+     ],
+     "why": "Faro is its main city."
+    },
+    {
+     "level": 2,
+     "q": "Which salted cod is a Portuguese favourite?",
+     "a": "Bacalhau",
+     "wrong": [
+      "Sardinhas",
+      "Polvo",
+      "Lulas"
+     ],
+     "why": "There are said to be 365 recipes for it."
+    },
+    {
+     "level": 2,
+     "q": "Which Atlantic island group, far from the mainland, is Portuguese?",
+     "a": "Azores",
+     "wrong": [
+      "Canary Islands",
+      "Balearic Islands",
+      "Cape Verde"
+     ],
+     "why": "Its highest peak is Mount Pico."
+    },
+    {
+     "level": 2,
+     "q": "Which Lisbon monument was the starting point for explorers?",
+     "a": "Belém Tower",
+     "wrong": [
+      "Jerónimos Monastery",
+      "São Jorge Castle",
+      "Santa Justa Lift"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which river flows through Porto and its wine valley?",
+     "a": "Douro",
+     "wrong": [
+      "Tagus",
+      "Mondego",
+      "Minho"
+     ],
+     "why": "The Douro Valley is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which city has one of the oldest universities in Europe?",
+     "a": "Coimbra",
+     "wrong": [
+      "Braga",
+      "Évora",
+      "Faro"
+     ],
+     "why": "It traces its founding to 1290."
+    },
+    {
+     "level": 3,
+     "q": "Which Portuguese writer won the 1998 Nobel Prize in Literature?",
+     "a": "José Saramago",
+     "wrong": [
+      "Fernando Pessoa",
+      "Eça de Queirós",
+      "António Lobo Antunes"
+     ],
+     "why": "He wrote 'Blindness'."
+    },
+    {
+     "level": 3,
+     "q": "Which poet wrote under many 'heteronyms' like Alberto Caeiro?",
+     "a": "Fernando Pessoa",
+     "wrong": [
+      "Luís de Camões",
+      "José Saramago",
+      "Sophia de Mello Breyner"
+     ],
+     "why": "His statue sits outside Café A Brasileira."
+    },
+    {
+     "level": 3,
+     "q": "Which epic poem tells of Vasco da Gama's voyage?",
+     "a": "The Lusiads",
+     "wrong": [
+      "The Odyssey",
+      "The Aeneid",
+      "Cantar de mio Cid"
+     ],
+     "why": "Luís de Camões wrote it."
+    }
+   ]
+  }
+ ]
+}

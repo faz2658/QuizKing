@@ -1,0 +1,1092 @@
+{
+ "category": "Ghana",
+ "country": "GH",
+ "topics": [
+  {
+   "name": "Ghana History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Ghana gain independence?",
+     "a": "1957",
+     "wrong": [
+      "1960",
+      "1963",
+      "1951"
+     ],
+     "why": "It was the first sub-Saharan African colony to do so."
+    },
+    {
+     "level": 1,
+     "q": "Who led Ghana to independence and became its first President?",
+     "a": "Kwame Nkrumah",
+     "wrong": [
+      "J. B. Danquah",
+      "Jerry Rawlings",
+      "Kofi Busia"
+     ],
+     "why": "He declared 'Ghana is free forever'."
+    },
+    {
+     "level": 1,
+     "q": "What was Ghana called before independence?",
+     "a": "Gold Coast",
+     "wrong": [
+      "Ivory Coast",
+      "Slave Coast",
+      "Grain Coast"
+     ],
+     "why": "It was named after its gold trade."
+    },
+    {
+     "level": 1,
+     "q": "On what date is Ghana's Independence Day?",
+     "a": "6 March",
+     "wrong": [
+      "1 July",
+      "24 September",
+      "1 October"
+     ],
+     "why": "Independence came on 6 March 1957."
+    },
+    {
+     "level": 1,
+     "q": "Which powerful kingdom had its capital at Kumasi?",
+     "a": "Asante (Ashanti)",
+     "wrong": [
+      "Dagbon",
+      "Akwamu",
+      "Denkyira"
+     ],
+     "why": "Its ruler is the Asantehene."
+    },
+    {
+     "level": 1,
+     "q": "What is the sacred symbol of the Asante nation?",
+     "a": "The Golden Stool",
+     "wrong": [
+      "The Golden Mask",
+      "The Silver Sword",
+      "The Bronze Drum"
+     ],
+     "why": "Legend says it came down from the sky."
+    },
+    {
+     "level": 1,
+     "q": "Which castle on the coast was a centre of the slave trade?",
+     "a": "Cape Coast Castle",
+     "wrong": [
+      "Kumasi Fort",
+      "Christiansborg Palace",
+      "Larabanga Fort"
+     ],
+     "why": "It is now a museum."
+    },
+    {
+     "level": 2,
+     "q": "Which queen mother led the 1900 War of the Golden Stool?",
+     "a": "Yaa Asantewaa",
+     "wrong": [
+      "Nana Afua Kobi",
+      "Asantewaa Kwaku",
+      "Akua Afriyie"
+     ],
+     "why": "She was exiled to the Seychelles."
+    },
+    {
+     "level": 2,
+     "q": "Which Portuguese-built fort of 1482 is the oldest European building south of the Sahara?",
+     "a": "Elmina Castle",
+     "wrong": [
+      "Cape Coast Castle",
+      "Fort Christiansborg",
+      "Fort Amsterdam"
+     ],
+     "why": "It is a UNESCO World Heritage Site."
+    },
+    {
+     "level": 2,
+     "q": "Which group of six leaders helped start the independence movement?",
+     "a": "The Big Six",
+     "wrong": [
+      "The Gold Coast Six",
+      "The Asante Council",
+      "The Founding Five"
+     ],
+     "why": "They appear on Ghana's cedi notes."
+    },
+    {
+     "level": 2,
+     "q": "Which flight lieutenant led coups in 1979 and 1981?",
+     "a": "Jerry Rawlings",
+     "wrong": [
+      "Ignatius Acheampong",
+      "Akwasi Afrifa",
+      "Kofi Busia"
+     ],
+     "why": "He later won two elections."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Ghana become a republic?",
+     "a": "1960",
+     "wrong": [
+      "1957",
+      "1966",
+      "1979"
+     ],
+     "why": "Nkrumah became President that year."
+    },
+    {
+     "level": 2,
+     "q": "Which 1948 shooting of ex-servicemen sparked riots in Accra?",
+     "a": "Christiansborg Crossroads shooting",
+     "wrong": [
+      "Kumasi Massacre",
+      "Elmina Riot",
+      "Sekondi Strike"
+     ],
+     "why": "Sergeant Adjetey was among those killed."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient West African empire inspired the name 'Ghana'?",
+     "a": "Ghana Empire (Wagadu)",
+     "wrong": [
+      "Mali Empire",
+      "Songhai Empire",
+      "Kanem Empire"
+     ],
+     "why": "It was in today's Mali and Mauritania."
+    },
+    {
+     "level": 3,
+     "q": "Which Ghanaian became UN Secretary-General in 1997?",
+     "a": "Kofi Annan",
+     "wrong": [
+      "Boutros Boutros-Ghali",
+      "Ban Ki-moon",
+      "Kwame Nkrumah"
+     ],
+     "why": "He shared the 2001 Nobel Peace Prize."
+    },
+    {
+     "level": 3,
+     "q": "Which Asantehene was exiled by the British in 1896?",
+     "a": "Prempeh I",
+     "wrong": [
+      "Osei Tutu",
+      "Opoku Ware",
+      "Kofi Karikari"
+     ],
+     "why": "He returned in 1924."
+    }
+   ]
+  },
+  {
+   "name": "Ghana Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Ghana's capital city?",
+     "a": "Accra",
+     "wrong": [
+      "Kumasi",
+      "Tamale",
+      "Takoradi"
+     ],
+     "why": "It is on the Gulf of Guinea."
+    },
+    {
+     "level": 1,
+     "q": "Which city is Ghana's second-largest and the Asante capital?",
+     "a": "Kumasi",
+     "wrong": [
+      "Tamale",
+      "Sekondi",
+      "Cape Coast"
+     ],
+     "why": "It is called the Garden City."
+    },
+    {
+     "level": 1,
+     "q": "Which huge lake was created by the Akosombo Dam?",
+     "a": "Lake Volta",
+     "wrong": [
+      "Lake Bosomtwe",
+      "Lake Chad",
+      "Lake Kainji"
+     ],
+     "why": "It is one of the world's largest artificial lakes."
+    },
+    {
+     "level": 1,
+     "q": "Which country borders Ghana to the west?",
+     "a": "Côte d'Ivoire",
+     "wrong": [
+      "Togo",
+      "Burkina Faso",
+      "Nigeria"
+     ],
+     "why": "Togo is to the east and Burkina Faso to the north."
+    },
+    {
+     "level": 1,
+     "q": "The Prime Meridian passes through which Ghanaian port city?",
+     "a": "Tema",
+     "wrong": [
+      "Takoradi",
+      "Cape Coast",
+      "Elmina"
+     ],
+     "why": "Tema is the city closest to 0° longitude on land."
+    },
+    {
+     "level": 1,
+     "q": "Which national park is famous for its canopy walkway?",
+     "a": "Kakum",
+     "wrong": [
+      "Mole",
+      "Digya",
+      "Bui"
+     ],
+     "why": "The walkway hangs about 40 m above the forest floor."
+    },
+    {
+     "level": 1,
+     "q": "Which national park is Ghana's largest and famous for elephants?",
+     "a": "Mole",
+     "wrong": [
+      "Kakum",
+      "Shai Hills",
+      "Ankasa"
+     ],
+     "why": "It is in the Savannah Region."
+    },
+    {
+     "level": 2,
+     "q": "Which natural lake in Asante was formed by a meteorite impact?",
+     "a": "Lake Bosomtwe",
+     "wrong": [
+      "Lake Volta",
+      "Weija Lake",
+      "Kpong Lake"
+     ],
+     "why": "It is sacred to the Asante."
+    },
+    {
+     "level": 2,
+     "q": "Which port city near Accra is Ghana's main harbour?",
+     "a": "Tema",
+     "wrong": [
+      "Takoradi",
+      "Elmina",
+      "Ada"
+     ],
+     "why": "It was built in the 1960s."
+    },
+    {
+     "level": 2,
+     "q": "What is Ghana's highest mountain?",
+     "a": "Mount Afadja",
+     "wrong": [
+      "Mount Kwahu",
+      "Mount Gemi",
+      "Shai Hills"
+     ],
+     "why": "It is about 885 m high, in the Volta Region."
+    },
+    {
+     "level": 2,
+     "q": "Which waterfall in the Volta Region is one of West Africa's highest?",
+     "a": "Wli Falls",
+     "wrong": [
+      "Boti Falls",
+      "Kintampo Falls",
+      "Tagbo Falls"
+     ],
+     "why": "It is home to thousands of fruit bats."
+    },
+    {
+     "level": 2,
+     "q": "Which city is the largest in northern Ghana?",
+     "a": "Tamale",
+     "wrong": [
+      "Bolgatanga",
+      "Wa",
+      "Yendi"
+     ],
+     "why": "It is the capital of the Northern Region."
+    },
+    {
+     "level": 2,
+     "q": "How many regions does Ghana have?",
+     "a": "16",
+     "wrong": [
+      "10",
+      "12",
+      "20"
+     ],
+     "why": "Six new regions were created in 2018."
+    },
+    {
+     "level": 3,
+     "q": "Which river forms much of Ghana's eastern border with Togo?",
+     "a": "Volta",
+     "wrong": [
+      "Pra",
+      "Tano",
+      "Ankobra"
+     ],
+     "why": "Its upper parts are the Black and White Volta."
+    },
+    {
+     "level": 3,
+     "q": "Which twin city lies at the western end of Ghana's coast?",
+     "a": "Sekondi-Takoradi",
+     "wrong": [
+      "Cape Coast-Elmina",
+      "Accra-Tema",
+      "Winneba-Apam"
+     ],
+     "why": "It is the centre of Ghana's oil industry."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient mosque in the north is said to be Ghana's oldest?",
+     "a": "Larabanga Mosque",
+     "wrong": [
+      "Wa Mosque",
+      "Bole Mosque",
+      "Nakore Mosque"
+     ],
+     "why": "It is built of mud in the Sudanese style."
+    }
+   ]
+  },
+  {
+   "name": "Ghana Sport",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Ghana's men's national football team called?",
+     "a": "Black Stars",
+     "wrong": [
+      "Super Eagles",
+      "Indomitable Lions",
+      "Elephants"
+     ],
+     "why": "The name comes from the star on the flag."
+    },
+    {
+     "level": 1,
+     "q": "How many Africa Cup of Nations titles has Ghana won?",
+     "a": "4",
+     "wrong": [
+      "2",
+      "6",
+      "1"
+     ],
+     "why": "In 1963, 1965, 1978 and 1982."
+    },
+    {
+     "level": 1,
+     "q": "Which team knocked Ghana out of the 2010 World Cup after Luis Suárez's handball?",
+     "a": "Uruguay",
+     "wrong": [
+      "Germany",
+      "Brazil",
+      "Netherlands"
+     ],
+     "why": "Asamoah Gyan missed the last-minute penalty."
+    },
+    {
+     "level": 1,
+     "q": "Which striker is Ghana's all-time top scorer?",
+     "a": "Asamoah Gyan",
+     "wrong": [
+      "Abedi Pelé",
+      "Tony Yeboah",
+      "André Ayew"
+     ],
+     "why": "He scored 51 goals."
+    },
+    {
+     "level": 1,
+     "q": "Which Ghanaian midfielder was nicknamed 'Pelé'?",
+     "a": "Abedi Ayew",
+     "wrong": [
+      "Michael Essien",
+      "Stephen Appiah",
+      "Sulley Muntari"
+     ],
+     "why": "He won the Champions League with Marseille in 1993."
+    },
+    {
+     "level": 1,
+     "q": "Which midfielder, nicknamed 'The Bison', played for Chelsea?",
+     "a": "Michael Essien",
+     "wrong": [
+      "Sulley Muntari",
+      "Kevin-Prince Boateng",
+      "Thomas Partey"
+     ],
+     "why": "He won the Premier League twice."
+    },
+    {
+     "level": 1,
+     "q": "Which Accra stadium is home to the Black Stars?",
+     "a": "Accra Sports Stadium",
+     "wrong": [
+      "Baba Yara Stadium",
+      "Cape Coast Stadium",
+      "Essipong Stadium"
+     ],
+     "why": "It is also called the Ohene Djan Stadium."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Ghana win the FIFA U-20 World Cup?",
+     "a": "2009",
+     "wrong": [
+      "2001",
+      "2013",
+      "1993"
+     ],
+     "why": "They beat Brazil on penalties."
+    },
+    {
+     "level": 2,
+     "q": "Which boxer, 'The Dark Destroyer', was world champion in three divisions?",
+     "a": "Azumah Nelson",
+     "wrong": [
+      "Ike Quartey",
+      "Joshua Clottey",
+      "David Kotei"
+     ],
+     "why": "He is one of Africa's greatest boxers."
+    },
+    {
+     "level": 2,
+     "q": "Which Kumasi club is one of Africa's most famous?",
+     "a": "Asante Kotoko",
+     "wrong": [
+      "Hearts of Oak",
+      "Medeama",
+      "Aduana Stars"
+     ],
+     "why": "Its nickname is the Porcupine Warriors."
+    },
+    {
+     "level": 2,
+     "q": "Which Accra club is Kotoko's great rival?",
+     "a": "Hearts of Oak",
+     "wrong": [
+      "Great Olympics",
+      "Liberty Professionals",
+      "Legon Cities"
+     ],
+     "why": "Their matches are called the 'super clash'."
+    },
+    {
+     "level": 2,
+     "q": "In which World Cup did Ghana reach the quarter-finals?",
+     "a": "2010",
+     "wrong": [
+      "2006",
+      "2014",
+      "2022"
+     ],
+     "why": "Cameroon (1990) and Senegal (2002) were the only African teams to do it before."
+    },
+    {
+     "level": 2,
+     "q": "Which Ghanaian midfielder won the Europa League with Atlético Madrid before joining Arsenal?",
+     "a": "Thomas Partey",
+     "wrong": [
+      "André Ayew",
+      "Mohammed Kudus",
+      "Daniel Amartey"
+     ],
+     "why": "Atlético won it in 2018."
+    },
+    {
+     "level": 3,
+     "q": "Who won Ghana's first Olympic medal, in boxing in 1960?",
+     "a": "Clement Quartey",
+     "wrong": [
+      "Azumah Nelson",
+      "Eddie Blay",
+      "Prince Amartey"
+     ],
+     "why": "He won silver in Rome."
+    },
+    {
+     "level": 3,
+     "q": "Ghana's 1992 Olympic bronze came in which team sport?",
+     "a": "Football",
+     "wrong": [
+      "Hockey",
+      "Basketball",
+      "Volleyball"
+     ],
+     "why": "It was the first Olympic football medal for an African team."
+    },
+    {
+     "level": 3,
+     "q": "Which team beat Ghana on penalties in the 1992 Africa Cup of Nations final?",
+     "a": "Côte d'Ivoire",
+     "wrong": [
+      "Nigeria",
+      "Cameroon",
+      "Egypt"
+     ],
+     "why": "The shoot-out finished 11–10."
+    }
+   ]
+  },
+  {
+   "name": "Ghana Film, TV & Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which music style, mixing brass bands with guitar, comes from Ghana?",
+     "a": "Highlife",
+     "wrong": [
+      "Afrobeat",
+      "Amapiano",
+      "Kwaito"
+     ],
+     "why": "It was popular from the 1920s onwards."
+    },
+    {
+     "level": 1,
+     "q": "Which modern Ghanaian style mixes hip hop with highlife?",
+     "a": "Hiplife",
+     "wrong": [
+      "Gqom",
+      "Benga",
+      "Zouk"
+     ],
+     "why": "Reggie Rockstone is called its godfather."
+    },
+    {
+     "level": 1,
+     "q": "Which Ghanaian dancehall star sang 'Kakai'?",
+     "a": "Shatta Wale",
+     "wrong": [
+      "Stonebwoy",
+      "Sarkodie",
+      "Kuami Eugene"
+     ],
+     "why": "He featured on Beyoncé's 'The Lion King: The Gift'."
+    },
+    {
+     "level": 1,
+     "q": "Which rapper is famous for fast Twi rhymes and the hit 'Adonai'?",
+     "a": "Sarkodie",
+     "wrong": [
+      "M.anifest",
+      "Kwesi Arthur",
+      "Medikal"
+     ],
+     "why": "He has won many BET awards."
+    },
+    {
+     "level": 1,
+     "q": "Which young singer had a 2022 hit with 'Kwaku the Traveller'?",
+     "a": "Black Sherif",
+     "wrong": [
+      "King Promise",
+      "Kidi",
+      "Camidoh"
+     ],
+     "why": "It topped charts across Africa."
+    },
+    {
+     "level": 1,
+     "q": "What is Ghana's film industry nicknamed?",
+     "a": "Ghallywood",
+     "wrong": [
+      "Nollywood",
+      "Kannywood",
+      "Bollywood"
+     ],
+     "why": "Many films are made in Kumasi."
+    },
+    {
+     "level": 1,
+     "q": "Which Ghanaian singer had a hit with 'Terminator' in 2023?",
+     "a": "King Promise",
+     "wrong": [
+      "Kidi",
+      "Camidoh",
+      "Kuami Eugene"
+     ],
+     "why": "It became one of the year's biggest Afrobeats songs."
+    },
+    {
+     "level": 2,
+     "q": "Who is called the 'King of Highlife'?",
+     "a": "E. T. Mensah",
+     "wrong": [
+      "Daddy Lumba",
+      "Nana Ampadu",
+      "Pat Thomas"
+     ],
+     "why": "He led the Tempos band."
+    },
+    {
+     "level": 2,
+     "q": "Which highlife star sang 'Aben Wo Ha'?",
+     "a": "Daddy Lumba",
+     "wrong": [
+      "Amakye Dede",
+      "Kojo Antwi",
+      "Nana Ampadu"
+     ],
+     "why": "He is one of Ghana's best-selling musicians."
+    },
+    {
+     "level": 2,
+     "q": "Which Ghanaian author wrote 'The Beautyful Ones Are Not Yet Born'?",
+     "a": "Ayi Kwei Armah",
+     "wrong": [
+      "Ama Ata Aidoo",
+      "Kofi Awoonor",
+      "Yaa Gyasi"
+     ],
+     "why": "It was published in 1968."
+    },
+    {
+     "level": 2,
+     "q": "Which Ghanaian-American author wrote 'Homegoing'?",
+     "a": "Yaa Gyasi",
+     "wrong": [
+      "Taiye Selasi",
+      "Ama Ata Aidoo",
+      "Nana Kwame Adjei-Brenyah"
+     ],
+     "why": "It follows two half-sisters' families."
+    },
+    {
+     "level": 2,
+     "q": "Which sculptor turns bottle caps into huge metal tapestries?",
+     "a": "El Anatsui",
+     "wrong": [
+      "Ablade Glover",
+      "Amoako Boafo",
+      "Ibrahim Mahama"
+     ],
+     "why": "He won the Venice Biennale's Golden Lion in 2015."
+    },
+    {
+     "level": 2,
+     "q": "Which reggae-dancehall artist sang 'Most Original'?",
+     "a": "Stonebwoy",
+     "wrong": [
+      "Shatta Wale",
+      "Samini",
+      "Kofi Kinaata"
+     ],
+     "why": "He has a BET award."
+    },
+    {
+     "level": 3,
+     "q": "Which playwright wrote 'The Dilemma of a Ghost'?",
+     "a": "Ama Ata Aidoo",
+     "wrong": [
+      "Efua Sutherland",
+      "Ayi Kwei Armah",
+      "Kofi Awoonor"
+     ],
+     "why": "It was first staged in 1964."
+    },
+    {
+     "level": 3,
+     "q": "Which playwright wrote 'The Marriage of Anansewa' and founded the Ghana Drama Studio?",
+     "a": "Efua Sutherland",
+     "wrong": [
+      "Ama Ata Aidoo",
+      "Joe de Graft",
+      "Mohammed ben Abdallah"
+     ],
+     "why": "She drew on Anansesem storytelling."
+    },
+    {
+     "level": 3,
+     "q": "Which 1980 Ghanaian film by Kwaw Ansah is a classic of African cinema?",
+     "a": "Love Brewed in the African Pot",
+     "wrong": [
+      "Heritage Africa",
+      "Sinking Sands",
+      "The Burial of Kojo"
+     ],
+     "why": "It is about a marriage across social classes."
+    }
+   ]
+  },
+  {
+   "name": "Ghana Food & Traditions",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which rice dish do Ghana and Nigeria compete over?",
+     "a": "Jollof rice",
+     "wrong": [
+      "Waakye",
+      "Omo tuo",
+      "Ampesi"
+     ],
+     "why": "Ghanaians often cook theirs with basmati rice."
+    },
+    {
+     "level": 1,
+     "q": "Which spicy fried plantain snack is a Ghanaian street food?",
+     "a": "Kelewele",
+     "wrong": [
+      "Dodo",
+      "Kenkey",
+      "Banku"
+     ],
+     "why": "It is seasoned with ginger and pepper."
+    },
+    {
+     "level": 1,
+     "q": "What is fufu made from in Ghana?",
+     "a": "Pounded cassava and plantain",
+     "wrong": [
+      "Ground rice",
+      "Fermented maize",
+      "Millet flour"
+     ],
+     "why": "It is eaten with light soup or groundnut soup."
+    },
+    {
+     "level": 1,
+     "q": "Which dish of rice and beans is a popular breakfast?",
+     "a": "Waakye",
+     "wrong": [
+      "Banku",
+      "Kenkey",
+      "Fufu"
+     ],
+     "why": "Its red colour comes from millet leaves."
+    },
+    {
+     "level": 1,
+     "q": "Which handwoven cloth of the Asante and Ewe is world-famous?",
+     "a": "Kente",
+     "wrong": [
+      "Adinkra",
+      "Batik",
+      "Mudcloth"
+     ],
+     "why": "Each pattern has a name and meaning."
+    },
+    {
+     "level": 1,
+     "q": "What are Adinkra?",
+     "a": "Visual symbols with meanings",
+     "wrong": [
+      "Talking drums",
+      "Gold weights",
+      "Funeral songs"
+     ],
+     "why": "Gye Nyame means 'except God'."
+    },
+    {
+     "level": 1,
+     "q": "Which fermented maize dumpling is eaten with fish and pepper?",
+     "a": "Kenkey",
+     "wrong": [
+      "Kelewele",
+      "Waakye",
+      "Ampesi"
+     ],
+     "why": "Ga kenkey is wrapped in maize husks."
+    },
+    {
+     "level": 2,
+     "q": "Which fermented corn and cassava dough is eaten with okro soup?",
+     "a": "Banku",
+     "wrong": [
+      "Kenkey",
+      "Fufu",
+      "Tuo zaafi"
+     ],
+     "why": "It is a favourite of the Ewe and Ga."
+    },
+    {
+     "level": 2,
+     "q": "Which Ga festival 'hoots at hunger'?",
+     "a": "Homowo",
+     "wrong": [
+      "Aboakyir",
+      "Hogbetsotso",
+      "Odwira"
+     ],
+     "why": "It is celebrated in Accra."
+    },
+    {
+     "level": 2,
+     "q": "Which Winneba festival involves hunting a live antelope?",
+     "a": "Aboakyir",
+     "wrong": [
+      "Homowo",
+      "Damba",
+      "Kundum"
+     ],
+     "why": "Two groups compete to catch it."
+    },
+    {
+     "level": 2,
+     "q": "Ghana's carved 'fantasy coffins' are usually shaped like what?",
+     "a": "Something linked to the person's life",
+     "wrong": [
+      "Plain wooden boxes",
+      "Church buildings",
+      "Glass cases"
+     ],
+     "why": "A fisherman might be buried in a fish-shaped coffin."
+    },
+    {
+     "level": 2,
+     "q": "Which northern millet porridge is called 'TZ'?",
+     "a": "Tuo zaafi",
+     "wrong": [
+      "Hausa koko",
+      "Kenkey",
+      "Banku"
+     ],
+     "why": "It is eaten with green ayoyo soup."
+    },
+    {
+     "level": 2,
+     "q": "Which Ewe festival remembers the escape from Notsie?",
+     "a": "Hogbetsotso",
+     "wrong": [
+      "Homowo",
+      "Aboakyir",
+      "Akwasidae"
+     ],
+     "why": "It is held in Anloga."
+    },
+    {
+     "level": 3,
+     "q": "Which is the only country that produces more cocoa than Ghana?",
+     "a": "Côte d'Ivoire",
+     "wrong": [
+      "Nigeria",
+      "Cameroon",
+      "Brazil"
+     ],
+     "why": "Cocoa came to Ghana in 1879 with Tetteh Quarshie."
+    },
+    {
+     "level": 3,
+     "q": "Which Asante festival marks the yam harvest?",
+     "a": "Odwira",
+     "wrong": [
+      "Homowo",
+      "Hogbetsotso",
+      "Damba"
+     ],
+     "why": "It cleanses the community for the new year."
+    },
+    {
+     "level": 3,
+     "q": "What is 'shito'?",
+     "a": "A spicy black pepper sauce",
+     "wrong": [
+      "A palm wine",
+      "A cassava bread",
+      "A groundnut soup"
+     ],
+     "why": "It is made with dried fish and shrimp."
+    }
+   ]
+  },
+  {
+   "name": "Ghana General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Ghana's currency?",
+     "a": "Cedi",
+     "wrong": [
+      "Naira",
+      "CFA franc",
+      "Dalasi"
+     ],
+     "why": "Its name comes from the Akan word for cowrie shell."
+    },
+    {
+     "level": 1,
+     "q": "What is Ghana's official language?",
+     "a": "English",
+     "wrong": [
+      "Twi",
+      "French",
+      "Ewe"
+     ],
+     "why": "Twi is the most widely spoken local language."
+    },
+    {
+     "level": 1,
+     "q": "What is in the centre of Ghana's flag?",
+     "a": "A black star",
+     "wrong": [
+      "A gold eagle",
+      "A green tree",
+      "A red sun"
+     ],
+     "why": "It is the lodestar of African freedom."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is Ghana's most famous export?",
+     "a": "Cocoa",
+     "wrong": [
+      "Coffee",
+      "Tea",
+      "Cotton"
+     ],
+     "why": "Ghana is the world's second-largest producer."
+    },
+    {
+     "level": 1,
+     "q": "Which monument in Accra has a black star on top?",
+     "a": "Black Star Square",
+     "wrong": [
+      "Kwame Nkrumah Mausoleum",
+      "Jubilee House",
+      "Osu Castle"
+     ],
+     "why": "Independence parades are held there."
+    },
+    {
+     "level": 1,
+     "q": "Which mineral gave the Gold Coast its name?",
+     "a": "Gold",
+     "wrong": [
+      "Diamonds",
+      "Bauxite",
+      "Manganese"
+     ],
+     "why": "Ghana is Africa's top gold producer."
+    },
+    {
+     "level": 1,
+     "q": "What is the language of the Asante called?",
+     "a": "Twi",
+     "wrong": [
+      "Ga",
+      "Ewe",
+      "Dagbani"
+     ],
+     "why": "It is part of the Akan group."
+    },
+    {
+     "level": 2,
+     "q": "What is Ghana's presidential palace called?",
+     "a": "Jubilee House",
+     "wrong": [
+      "Golden Jubilee Palace",
+      "State House",
+      "Peduase Lodge"
+     ],
+     "why": "It replaced Osu Castle as the seat of government."
+    },
+    {
+     "level": 2,
+     "q": "Which Ghanaian Nobel laureate led the UN?",
+     "a": "Kofi Annan",
+     "wrong": [
+      "Kwame Nkrumah",
+      "Jerry Rawlings",
+      "John Kufuor"
+     ],
+     "why": "He was Secretary-General from 1997 to 2006."
+    },
+    {
+     "level": 2,
+     "q": "What is Ghana's national motto?",
+     "a": "Freedom and Justice",
+     "wrong": [
+      "Unity and Faith",
+      "Harambee",
+      "Peace and Progress"
+     ],
+     "why": "It is on the coat of arms."
+    },
+    {
+     "level": 2,
+     "q": "Which dam on the Volta supplies much of Ghana's electricity?",
+     "a": "Akosombo Dam",
+     "wrong": [
+      "Bui Dam",
+      "Kpong Dam",
+      "Weija Dam"
+     ],
+     "why": "It was completed in 1965."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Ghana start producing oil commercially?",
+     "a": "2010",
+     "wrong": [
+      "1995",
+      "2005",
+      "2015"
+     ],
+     "why": "Oil comes from the offshore Jubilee field."
+    },
+    {
+     "level": 2,
+     "q": "Which university in Accra is Ghana's oldest?",
+     "a": "University of Ghana",
+     "wrong": [
+      "KNUST",
+      "University of Cape Coast",
+      "Ashesi University"
+     ],
+     "why": "It was founded in 1948."
+    },
+    {
+     "level": 3,
+     "q": "Who brought cocoa to Ghana in 1879?",
+     "a": "Tetteh Quarshie",
+     "wrong": [
+      "J. B. Danquah",
+      "Kwame Nkrumah",
+      "Paa Grant"
+     ],
+     "why": "He brought pods from Fernando Po."
+    },
+    {
+     "level": 3,
+     "q": "Which Ghanaian-born actor starred in 'Beasts of No Nation' as a child soldier?",
+     "a": "Abraham Attah",
+     "wrong": [
+      "John Boyega",
+      "Idris Elba",
+      "Kofi Siriboe"
+     ],
+     "why": "He won a Venice award for it."
+    },
+    {
+     "level": 3,
+     "q": "Which Adinkra symbol means 'except God'?",
+     "a": "Gye Nyame",
+     "wrong": [
+      "Sankofa",
+      "Dwennimmen",
+      "Adinkrahene"
+     ],
+     "why": "It is the most popular Adinkra symbol."
+    }
+   ]
+  }
+ ]
+}

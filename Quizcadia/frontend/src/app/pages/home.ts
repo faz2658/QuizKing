@@ -2,13 +2,13 @@ import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@a
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { catchError, debounceTime, distinctUntilChanged, forkJoin, map, of, startWith, switchMap } from 'rxjs';
+import { catchError, debounceTime, distinctUntilChanged, filter, forkJoin, map, of, startWith, switchMap } from 'rxjs';
 import { CatalogApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { GameCard } from '../core/models';
 import { countryName, flag } from '../core/countries';
-import { gamesFor, SOUTH_ASIA_CATEGORY, southAsianCountry } from '../core/region';
+import { CountrySet, homeScope, WORLD } from '../core/region';
 import { World } from '../core/world';
 import { GameCardView } from '../ui/game-card';
 import { BlurText } from '../motion/blur-text';
@@ -56,8 +56,19 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
         <div class="grid">@for (g of picked(); track g.gameId + g.mode; let i = $index) { <mv-game-card class="fade-up" [style.animation-delay.ms]="i * 70" [game]="g" /> }</div>
       }
 
+      @if (!query()) {
+        <a class="card international" routerLink="/international">
+          <span class="intl-icon" aria-hidden="true">🌍</span>
+          <span>
+            <strong>International</strong>
+            <span class="muted"> · {{ local() ? 'Quizzes from ' + otherCountries() + ' other countries and world trivia' : 'Quizzes about ' + otherCountries() + ' countries' }}</span>
+          </span>
+          <span class="pz-go">Explore →</span>
+        </a>
+      }
+
       <div class="row section-head">
-        <h2>{{ query() ? 'Results for “' + query() + '”' : list().regionalOnly ? 'Games for ' + localLabel() : 'All games' }}</h2>
+        <h2>{{ query() ? 'Results for “' + query() + '”' : local() ? 'Games for ' + localLabel() : 'World trivia' }}</h2>
         <div class="spacer"></div>
         <div class="pill-tabs" role="group" aria-label="Game type">
           @for (f of filters; track f.id) {
@@ -65,9 +76,6 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
           }
         </div>
       </div>
-      @if (list().regionalOnly) {
-        <p class="muted region-note">Showing quizzes about {{ regionName() }} and South Asia. Search to find other games.</p>
-      }
       @if (visible().length) {
         <div class="grid">@for (g of visible(); track g.gameId + g.mode; let i = $index) { <mv-game-card class="fade-up" [style.animation-delay.ms]="Math.min(i, 12) * 50" [game]="g" /> }</div>
       } @else {
@@ -95,7 +103,9 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
     .section-head { margin-bottom: 16px; }
     .section-head h2 { margin: 0; }
     .empty { text-align: center; padding: 40px; }
-    .region-note { margin: -6px 0 18px; }
+    .international { display: flex; align-items: center; gap: 14px; padding: 14px 18px; margin: 0 0 22px; color: var(--text); text-decoration: none; }
+    .international:hover { border-color: var(--accent); }
+    .intl-icon { font-size: 1.5rem; }
   `,
 })
 export class Home {
@@ -112,13 +122,38 @@ export class Home {
     { id: 'MULTI', label: 'Multiplayer' },
   ];
 
+  /** Countries with their own question set; null while loading. */
+  private readonly sets = toSignal<CountrySet[] | null, null>(this.catalog.countries(), { initialValue: null });
+
+  /** The player's own country when it has a question set, otherwise WORLD (world trivia); null while loading. */
+  private readonly scope = computed(() => {
+    const sets = this.sets();
+    return sets === null ? null : homeScope(this.world.country(), sets);
+  });
+
+  /** The player's country, when the home page shows its games. */
+  protected readonly local = computed(() => {
+    const s = this.scope();
+    return s && s !== WORLD ? s : null;
+  });
+
+  protected readonly localLabel = computed(() => {
+    const c = this.local();
+    return c ? `${countryName(c)} ${flag(c)}` : '';
+  });
+
+  protected readonly otherCountries = computed(() => (this.sets() ?? []).filter((s) => s.country !== this.local() && s.games > 0).length);
+
   protected readonly state = toSignal(
-    toObservable(this.query).pipe(
+    toObservable(computed(() => ({ q: this.query().trim(), scope: this.scope() }))).pipe(
+      filter((v) => v.scope !== null || v.q !== ''),
       debounceTime(250),
-      map((q) => q.trim()),
-      distinctUntilChanged(),
-      switchMap((q) =>
-        (q ? this.catalog.search(q) : forkJoin([this.catalog.games(), this.catalog.multiplayerGames()]).pipe(map(([s, m]) => [...s, ...m]))).pipe(
+      distinctUntilChanged((a, b) => a.q === b.q && (a.q !== '' || a.scope === b.scope)),
+      switchMap(({ q, scope }) =>
+        (q
+          ? this.catalog.search(q)
+          : forkJoin([this.catalog.games(scope!), this.catalog.multiplayerGames(scope!)]).pipe(map(([s, m]) => [...s, ...m]))
+        ).pipe(
           map((games) => ({ loading: false, error: null as string | null, games })),
           catchError((e) => of({ loading: false, error: errorMessage(e), games: [] as GameCard[] })),
           startWith({ loading: true, error: null, games: [] as GameCard[] }),
@@ -133,40 +168,19 @@ export class Home {
     { initialValue: [] as GameCard[] },
   );
 
-  /** Categories of region-specific questions (India & South Asia), shown first to players from there. */
-  private readonly localCategories = toSignal(
-    this.catalog.categories().pipe(
-      map((cs) => new Set(cs.filter((c) => c.categoryName === SOUTH_ASIA_CATEGORY).map((c) => c.categoryId))),
-      catchError(() => of(new Set<number>())),
-    ),
-    { initialValue: new Set<number>() },
-  );
-
-  private readonly region = computed(() => southAsianCountry(this.world.country()));
-  protected readonly localLabel = computed(() => {
-    const c = this.region();
-    return c ? `${countryName(c)} ${flag(c)}` : '';
+  /** Recommendations from the games this page shows (a player with their own country set sees just those). */
+  protected readonly picked = computed(() => {
+    if (!this.local()) {
+      return this.recommended();
+    }
+    const ids = new Set(this.state().games.map((g) => g.gameId));
+    return this.recommended().filter((g) => ids.has(g.gameId));
   });
-
-  protected readonly regionName = computed(() => {
-    const c = this.region();
-    return c ? countryName(c) : '';
-  });
-
-  /** What the list shows: only the region's games for South Asian players (search finds the rest). */
-  protected readonly list = computed(() =>
-    gamesFor(this.state().games, this.localCategories(), this.region() !== null, this.query().trim() !== ''),
-  );
-
-  /** Recommendations, limited to the region's games when the list is. */
-  protected readonly picked = computed(() =>
-    this.list().regionalOnly ? this.recommended().filter((g) => this.localCategories().has(g.categoryId)) : this.recommended(),
-  );
 
   protected readonly gameCount = computed(() => this.visible().length);
 
   protected readonly visible = computed(() => {
     const f = this.filter();
-    return this.list().games.filter((g) => f === 'ALL' || g.mode === f);
+    return this.state().games.filter((g) => f === 'ALL' || g.mode === f);
   });
 }

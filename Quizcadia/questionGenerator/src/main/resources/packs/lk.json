@@ -1,0 +1,132 @@
+{
+  "category": "Sri Lanka",
+  "country": "LK",
+  "topics": [
+    {
+      "name": "Sri Lanka History",
+      "questions": [
+        { "level": 1, "q": "What was Sri Lanka called until 1972?", "a": "Ceylon", "wrong": ["Serendib", "Taprobane", "Lanka Dvipa"], "why": "The name changed when it became a republic." },
+        { "level": 1, "q": "In which year did Sri Lanka gain independence from Britain?", "a": "1948", "wrong": ["1947", "1956", "1972"], "why": "Independence Day is 4 February." },
+        { "level": 1, "q": "Who became the world's first woman Prime Minister, in 1960?", "a": "Sirimavo Bandaranaike", "wrong": ["Chandrika Kumaratunga", "Indira Gandhi", "Golda Meir"], "why": "She led the country three times." },
+        { "level": 1, "q": "Which ancient rock fortress is famous for its frescoes and lion gate?", "a": "Sigiriya", "wrong": ["Dambulla", "Polonnaruwa", "Galle Fort"], "why": "It rises about 180 m above the plain." },
+        { "level": 1, "q": "Which city was Sri Lanka's first great ancient capital?", "a": "Anuradhapura", "wrong": ["Kandy", "Polonnaruwa", "Colombo"], "why": "It was the capital for over a thousand years." },
+        { "level": 1, "q": "Which European power arrived in Sri Lanka first, in 1505?", "a": "The Portuguese", "wrong": ["The Dutch", "The British", "The French"], "why": "The Dutch and then the British followed." },
+        { "level": 1, "q": "Which hill city was the last royal capital of Sri Lanka?", "a": "Kandy", "wrong": ["Nuwara Eliya", "Badulla", "Matale"], "why": "The Kandyan Kingdom fell to Britain in 1815." },
+        { "level": 2, "q": "Which king built his palace on top of Sigiriya?", "a": "Kashyapa I", "wrong": ["Dutugemunu", "Parakramabahu I", "Devanampiya Tissa"], "why": "He ruled in the 5th century." },
+        { "level": 2, "q": "Which southern fort city was built by the Portuguese and expanded by the Dutch?", "a": "Galle", "wrong": ["Jaffna", "Trincomalee", "Matara"], "why": "Galle Fort is a UNESCO World Heritage Site." },
+        { "level": 2, "q": "In which year did the British take over the Kandyan Kingdom?", "a": "1815", "wrong": ["1796", "1848", "1802"], "why": "The Kandyan Convention was signed that year." },
+        { "level": 2, "q": "Which medieval capital is famous for the Gal Vihara rock-cut Buddhas?", "a": "Polonnaruwa", "wrong": ["Anuradhapura", "Kandy", "Yapahuwa"], "why": "It flourished in the 11th and 12th centuries." },
+        { "level": 2, "q": "Which 12th-century king built the great reservoir Parakrama Samudra?", "a": "Parakramabahu I", "wrong": ["Dutugemunu", "Vijayabahu I", "Kashyapa I"], "why": "He is famous for his irrigation works." },
+        { "level": 2, "q": "What struck Sri Lanka's coasts on 26 December 2004?", "a": "A tsunami", "wrong": ["A cyclone", "A volcanic eruption", "A flood"], "why": "It killed over 30,000 people in Sri Lanka." },
+        { "level": 3, "q": "Which king, hero of the Mahavamsa chronicle, defeated King Elara?", "a": "Dutugemunu", "wrong": ["Kashyapa I", "Valagamba", "Mahasena"], "why": "He built the Ruwanwelisaya stupa." },
+        { "level": 3, "q": "In which year did Sri Lanka's civil war end?", "a": "2009", "wrong": ["2002", "2005", "2011"], "why": "It had lasted about 26 years." },
+        { "level": 3, "q": "Who was Sri Lanka's first Prime Minister?", "a": "D. S. Senanayake", "wrong": ["S. W. R. D. Bandaranaike", "Dudley Senanayake", "J. R. Jayewardene"], "why": "He is called the 'Father of the Nation'." }
+      ]
+    },
+    {
+      "name": "Sri Lanka Geography",
+      "questions": [
+        { "level": 1, "q": "Which is Sri Lanka's largest city and main port?", "a": "Colombo", "wrong": ["Galle", "Jaffna", "Kandy"], "why": "It is the commercial capital." },
+        { "level": 1, "q": "Which mountain has a sacred 'footprint' at its summit?", "a": "Adam's Peak", "wrong": ["Pidurutalagala", "Knuckles", "Ella Rock"], "why": "Pilgrims climb it at night to see the sunrise." },
+        { "level": 1, "q": "What is Sri Lanka's highest mountain?", "a": "Pidurutalagala", "wrong": ["Adam's Peak", "Kirigalpotta", "Namunukula"], "why": "It is 2,524 m high." },
+        { "level": 1, "q": "Which northern city is the heart of Sri Lankan Tamil culture?", "a": "Jaffna", "wrong": ["Batticaloa", "Trincomalee", "Vavuniya"], "why": "It is home to the Nallur Kandaswamy temple." },
+        { "level": 1, "q": "The Nine Arches Bridge is near which hill town?", "a": "Ella", "wrong": ["Kandy", "Galle", "Matale"], "why": "It is a famous stop on the hill-country railway." },
+        { "level": 1, "q": "Which national park is famous for its leopards?", "a": "Yala", "wrong": ["Udawalawe", "Minneriya", "Horton Plains"], "why": "It has one of the highest leopard densities in the world." },
+        { "level": 1, "q": "Which ocean surrounds Sri Lanka?", "a": "Indian Ocean", "wrong": ["Pacific Ocean", "Atlantic Ocean", "Southern Ocean"], "why": "India lies across the narrow Palk Strait." },
+        { "level": 2, "q": "What is Sri Lanka's longest river?", "a": "Mahaweli", "wrong": ["Kelani", "Kalu", "Walawe"], "why": "It runs about 335 km to Trincomalee." },
+        { "level": 2, "q": "Which east-coast harbour is one of the world's largest natural harbours?", "a": "Trincomalee", "wrong": ["Hambantota", "Galle", "Colombo"], "why": "It has been a naval base for centuries." },
+        { "level": 2, "q": "Which hill town is called 'Little England'?", "a": "Nuwara Eliya", "wrong": ["Kandy", "Ella", "Haputale"], "why": "British planters built cottages there." },
+        { "level": 2, "q": "Which park is famous for the 'Gathering' of hundreds of elephants?", "a": "Minneriya", "wrong": ["Yala", "Horton Plains", "Sinharaja"], "why": "They gather at the reservoir in the dry season." },
+        { "level": 2, "q": "Which rainforest is a UNESCO World Heritage Site?", "a": "Sinharaja", "wrong": ["Knuckles", "Kanneliya", "Kitulgala"], "why": "Many of its species live nowhere else." },
+        { "level": 2, "q": "Which plateau has the sheer cliff called World's End?", "a": "Horton Plains", "wrong": ["Knuckles Range", "Hakgala", "Namunukula"], "why": "The drop is about 870 m." },
+        { "level": 3, "q": "Which chain of shoals stretches from Mannar towards India?", "a": "Adam's Bridge", "wrong": ["Palk Bay Reef", "Delft Bank", "Kalpitiya Reef"], "why": "It is also called Rama Setu." },
+        { "level": 3, "q": "Which southern city has a large new port built in the 2010s?", "a": "Hambantota", "wrong": ["Matara", "Tangalle", "Weligama"], "why": "It is now leased to a Chinese company." },
+        { "level": 3, "q": "How many provinces does Sri Lanka have?", "a": "9", "wrong": ["7", "25", "4"], "why": "They are divided into 25 districts." }
+      ]
+    },
+    {
+      "name": "Sri Lanka Sport",
+      "questions": [
+        { "level": 1, "q": "Which is the most popular sport in Sri Lanka?", "a": "Cricket", "wrong": ["Rugby", "Volleyball", "Football"], "why": "It is followed with passion across the island." },
+        { "level": 1, "q": "What is Sri Lanka's official national sport?", "a": "Volleyball", "wrong": ["Cricket", "Elle", "Rugby"], "why": "It was declared in 1991." },
+        { "level": 1, "q": "Who captained Sri Lanka to the 1996 World Cup title?", "a": "Arjuna Ranatunga", "wrong": ["Aravinda de Silva", "Sanath Jayasuriya", "Mahela Jayawardene"], "why": "Sri Lanka beat Australia in the final." },
+        { "level": 1, "q": "In which year did Sri Lanka win the T20 World Cup?", "a": "2014", "wrong": ["2012", "2009", "2016"], "why": "They beat India in the final in Dhaka." },
+        { "level": 1, "q": "Which slinging fast bowler took four wickets in four balls twice in internationals?", "a": "Lasith Malinga", "wrong": ["Chaminda Vaas", "Nuwan Kulasekara", "Dilhara Fernando"], "why": "His yorkers were famous." },
+        { "level": 1, "q": "Who scored 374 in a Test against South Africa in 2006?", "a": "Mahela Jayawardene", "wrong": ["Kumar Sangakkara", "Sanath Jayasuriya", "Aravinda de Silva"], "why": "He shared a record 624-run stand with Sangakkara." },
+        { "level": 1, "q": "Which opener changed one-day batting with his attacking style at the 1996 World Cup?", "a": "Sanath Jayasuriya", "wrong": ["Marvan Atapattu", "Roshan Mahanama", "Hashan Tillakaratne"], "why": "He was named player of the tournament." },
+        { "level": 2, "q": "Which batter scored four hundreds in a row at the 2015 World Cup?", "a": "Kumar Sangakkara", "wrong": ["Tillakaratne Dilshan", "Mahela Jayawardene", "Angelo Mathews"], "why": "No one had done it before in ODIs." },
+        { "level": 2, "q": "Who scored the century in the 1996 World Cup final?", "a": "Aravinda de Silva", "wrong": ["Asanka Gurusinha", "Arjuna Ranatunga", "Sanath Jayasuriya"], "why": "He also took three wickets." },
+        { "level": 2, "q": "Which sprinter won a 200 m Olympic medal at Sydney 2000?", "a": "Susanthika Jayasinghe", "wrong": ["Damayanthi Dharsha", "Yupun Abeykoon", "Nimali Liyanarachchi"], "why": "Her bronze was later upgraded to silver." },
+        { "level": 2, "q": "Which Test ground lies beside a Dutch fort?", "a": "Galle International Stadium", "wrong": ["R. Premadasa Stadium", "Sinhalese Sports Club", "Pallekele Stadium"], "why": "Fans watch from the fort ramparts." },
+        { "level": 2, "q": "With which team did Sri Lanka share the 2002 Champions Trophy?", "a": "India", "wrong": ["Australia", "Pakistan", "England"], "why": "Rain washed out the final twice." },
+        { "level": 2, "q": "Which Colombo stadium hosted the 2012 T20 World Cup final?", "a": "R. Premadasa Stadium", "wrong": ["Sinhalese Sports Club", "P. Sara Oval", "Galle International Stadium"], "why": "It is Sri Lanka's largest stadium." },
+        { "level": 3, "q": "Who won Sri Lanka's first Olympic medal, in 1948?", "a": "Duncan White", "wrong": ["Susanthika Jayasinghe", "Yupun Abeykoon", "Damayanthi Dharsha"], "why": "He won silver in the 400 m hurdles." },
+        { "level": 3, "q": "Which bowler took 8 for 19, the best figures in ODI history, in 2001?", "a": "Chaminda Vaas", "wrong": ["Muttiah Muralitharan", "Lasith Malinga", "Ajantha Mendis"], "why": "It was against Zimbabwe in Colombo." },
+        { "level": 3, "q": "Which traditional bat-and-ball game, like rounders, is played at Avurudu?", "a": "Elle", "wrong": ["Gilli-danda", "Kho-kho", "Chinlone"], "why": "It is played with a bat and a rubber ball." }
+      ]
+    },
+    {
+      "name": "Sri Lanka Film, TV & Music",
+      "questions": [
+        { "level": 1, "q": "Who is called the father of Sri Lankan cinema?", "a": "Lester James Peries", "wrong": ["Prasanna Vithanage", "Dharmasena Pathiraja", "Tissa Abeysekara"], "why": "His first film was 'Rekava' in 1956." },
+        { "level": 1, "q": "Which singer's 'Manike Mage Hithe' went viral worldwide in 2021?", "a": "Yohani", "wrong": ["Natasha Rathnayake", "Umaria Sinhawansa", "Kanchana Anuradhi"], "why": "Her nickname is the 'Rap Princess'." },
+        { "level": 1, "q": "Which upbeat party music, influenced by the Portuguese, is popular in Sri Lanka?", "a": "Baila", "wrong": ["Nadagam", "Bhangra", "Qawwali"], "why": "It is played at weddings and parties." },
+        { "level": 1, "q": "Which classical dance comes from the hill country around Kandy?", "a": "Kandyan dance", "wrong": ["Kathakali", "Bharatanatyam", "Bihu"], "why": "Dancers wear a silver headdress called the ves." },
+        { "level": 1, "q": "Which science-fiction writer lived in Colombo for over 50 years?", "a": "Arthur C. Clarke", "wrong": ["Isaac Asimov", "Ray Bradbury", "H. G. Wells"], "why": "He wrote '2001: A Space Odyssey'." },
+        { "level": 1, "q": "Which Sri Lankan actress became a Bollywood star in films like 'Kick'?", "a": "Jacqueline Fernandez", "wrong": ["Nora Fatehi", "Pooja Umashankar", "Yami Gautam"], "why": "She was Miss Universe Sri Lanka in 2006." },
+        { "level": 1, "q": "Which Sri Lankan-born author wrote 'The English Patient'?", "a": "Michael Ondaatje", "wrong": ["Romesh Gunesekera", "Shyam Selvadurai", "Carl Muller"], "why": "It won the Booker Prize in 1992." },
+        { "level": 2, "q": "The town of Ambalangoda is famous for carving what?", "a": "Wooden masks", "wrong": ["Elephant statues", "Moonstones", "Batik prints"], "why": "Masks are used in traditional dance-dramas." },
+        { "level": 2, "q": "Who composed the national anthem 'Sri Lanka Matha'?", "a": "Ananda Samarakoon", "wrong": ["W. D. Amaradeva", "Sunil Shantha", "Premasiri Khemadasa"], "why": "It was adopted in 1951." },
+        { "level": 2, "q": "Which maestro is called the father of modern Sinhala music?", "a": "W. D. Amaradeva", "wrong": ["Victor Ratnayake", "Sunil Edirisinghe", "Clarence Wijewardena"], "why": "He won the Ramon Magsaysay Award." },
+        { "level": 2, "q": "Which Sri Lankan won the 2022 Booker Prize?", "a": "Shehan Karunatilaka", "wrong": ["Romesh Gunesekera", "Anuk Arudpragasam", "Ashok Ferrey"], "why": "For 'The Seven Moons of Maali Almeida'." },
+        { "level": 2, "q": "Which drum is central to Kandyan dance?", "a": "Geta bera", "wrong": ["Tabla", "Dhol", "Mridangam"], "why": "It is played with both hands." },
+        { "level": 2, "q": "Which singer is called the 'father of Sinhala pop'?", "a": "Clarence Wijewardena", "wrong": ["W. D. Amaradeva", "Victor Ratnayake", "Sunil Perera"], "why": "He led the band Moonstones in the 1960s." },
+        { "level": 3, "q": "Which Shyam Selvadurai novel follows a boy growing up in Colombo?", "a": "Funny Boy", "wrong": ["Reef", "Anil's Ghost", "The Seven Moons of Maali Almeida"], "why": "It was published in 1994." },
+        { "level": 3, "q": "Which Romesh Gunesekera novel was shortlisted for the 1994 Booker Prize?", "a": "Reef", "wrong": ["Funny Boy", "Anil's Ghost", "A Passage North"], "why": "It is set in a Sri Lankan coastal town." },
+        { "level": 3, "q": "What was Lester James Peries's first film, in 1956?", "a": "Rekava", "wrong": ["Gamperaliya", "Nidhanaya", "Wekande Walauwa"], "why": "It was shown at Cannes in 1957." }
+      ]
+    },
+    {
+      "name": "Sri Lanka Food & Traditions",
+      "questions": [
+        { "level": 1, "q": "What is the Sinhala and Tamil New Year in April called in Sinhala?", "a": "Avurudu", "wrong": ["Vesak", "Poson", "Thai Pongal"], "why": "It is timed by astrologers." },
+        { "level": 1, "q": "Which full-moon festival, lit with lanterns, marks the Buddha's birth, enlightenment and death?", "a": "Vesak", "wrong": ["Poson", "Esala", "Deepavali"], "why": "It falls in May." },
+        { "level": 1, "q": "What are bowl-shaped pancakes made with rice flour and coconut milk called?", "a": "Hoppers", "wrong": ["Dosa", "Roti", "Pittu"], "why": "An egg hopper has an egg cooked in the middle." },
+        { "level": 1, "q": "Which spice is native to Sri Lanka?", "a": "Cinnamon", "wrong": ["Black pepper", "Saffron", "Vanilla"], "why": "Ceylon cinnamon is called 'true cinnamon'." },
+        { "level": 1, "q": "Which festival in Kandy parades decorated elephants and the tooth relic?", "a": "Esala Perahera", "wrong": ["Vesak", "Poson", "Navam Perahera"], "why": "It is held in July or August." },
+        { "level": 1, "q": "Which relish is grated coconut mixed with chilli, onion and lime?", "a": "Pol sambol", "wrong": ["Seeni sambol", "Lunu miris", "Coconut chutney"], "why": "Pol means coconut." },
+        { "level": 1, "q": "Sri Lanka is world-famous for growing which crop?", "a": "Tea", "wrong": ["Coffee", "Cocoa", "Rice"], "why": "It is still sold as 'Ceylon tea'." },
+        { "level": 2, "q": "Which temple in Kandy holds the sacred tooth relic of the Buddha?", "a": "Sri Dalada Maligawa", "wrong": ["Kelaniya Raja Maha Vihara", "Gangaramaya", "Dambulla Cave Temple"], "why": "It is also called the Temple of the Tooth." },
+        { "level": 2, "q": "What is 'kottu'?", "a": "Chopped roti stir-fried with vegetables or meat", "wrong": ["A steamed rice cake", "A sour fish curry", "A coconut sweet"], "why": "The clatter of chopping blades is a street-food sound." },
+        { "level": 2, "q": "Which June full-moon festival marks the arrival of Buddhism in Sri Lanka?", "a": "Poson", "wrong": ["Vesak", "Esala", "Duruthu"], "why": "Pilgrims visit Mihintale." },
+        { "level": 2, "q": "What is kiribath?", "a": "Milk rice", "wrong": ["Fish curry", "A coconut sweet", "Flatbread"], "why": "It is eaten on New Year's morning and special days." },
+        { "level": 2, "q": "The Nallur festival is held in which city?", "a": "Jaffna", "wrong": ["Batticaloa", "Trincomalee", "Kandy"], "why": "It lasts about 25 days." },
+        { "level": 2, "q": "Which pudding is made with jaggery, coconut milk and eggs?", "a": "Watalappam", "wrong": ["Kavum", "Kokis", "Aluwa"], "why": "It came from Sri Lanka's Malay community." },
+        { "level": 3, "q": "Which crispy rice-flour snack, fried in a mould, is a New Year favourite?", "a": "Kokis", "wrong": ["Kavum", "Aluwa", "Halapa"], "why": "It came with the Dutch." },
+        { "level": 3, "q": "Lamprais, rice and curry baked in a banana leaf, comes from which community?", "a": "Dutch Burghers", "wrong": ["Tamils", "Moors", "Malays"], "why": "Its name comes from the Dutch 'lomprijst'." },
+        { "level": 3, "q": "Kithul treacle comes from which plant?", "a": "Fishtail palm", "wrong": ["Coconut palm", "Sugar cane", "Palmyra palm"], "why": "It is poured over curd as a dessert." }
+      ]
+    },
+    {
+      "name": "Sri Lanka General Knowledge",
+      "questions": [
+        { "level": 1, "q": "What is Sri Lanka's currency?", "a": "Sri Lankan rupee", "wrong": ["Taka", "Rufiyaa", "Kyat"], "why": "The Central Bank of Sri Lanka issues it." },
+        { "level": 1, "q": "What are Sri Lanka's two main languages?", "a": "Sinhala and Tamil", "wrong": ["Sinhala and Hindi", "Tamil and Malay", "Sinhala and Pali"], "why": "English is a link language." },
+        { "level": 1, "q": "Which animal holds a sword on Sri Lanka's flag?", "a": "A lion", "wrong": ["A tiger", "An elephant", "A peacock"], "why": "The flag is often called the Lion Flag." },
+        { "level": 1, "q": "What is Sri Lanka often called?", "a": "Pearl of the Indian Ocean", "wrong": ["Spice Island of Asia", "Emerald Isle", "Land of Smiles"], "why": "Its shape is also likened to a teardrop." },
+        { "level": 1, "q": "Which elephant orphanage near Kegalle cares for baby elephants?", "a": "Pinnawala", "wrong": ["Udawalawe", "Yala", "Minneriya"], "why": "It opened in 1975." },
+        { "level": 1, "q": "What is the main religion in Sri Lanka?", "a": "Buddhism", "wrong": ["Hinduism", "Islam", "Christianity"], "why": "About 70% of people are Buddhists." },
+        { "level": 1, "q": "What is Sri Lanka's national flower?", "a": "Blue water lily", "wrong": ["Lotus", "Jasmine", "Frangipani"], "why": "It is called nil manel." },
+        { "level": 2, "q": "What is Sri Lanka's national bird?", "a": "Sri Lanka junglefowl", "wrong": ["Indian peafowl", "Common myna", "White-throated kingfisher"], "why": "It lives nowhere else." },
+        { "level": 2, "q": "Ratnapura, the 'City of Gems', is especially famous for which stones?", "a": "Sapphires", "wrong": ["Emeralds", "Diamonds", "Opals"], "why": "Gems are mined from river gravel there." },
+        { "level": 2, "q": "Which ancient Pali chronicle records Sri Lanka's early history?", "a": "Mahavamsa", "wrong": ["Rigveda", "Tripitaka", "Jataka"], "why": "It was written in the 5th or 6th century." },
+        { "level": 2, "q": "Dambulla is famous for what?", "a": "Cave temples", "wrong": ["Tea factories", "A Dutch fort", "Surf beaches"], "why": "Its caves hold over 150 Buddha statues." },
+        { "level": 2, "q": "What is Sri Lanka's national tree?", "a": "Ceylon ironwood", "wrong": ["Bo tree", "Coconut palm", "Jackfruit tree"], "why": "It is called na in Sinhala." },
+        { "level": 2, "q": "What does the name 'Sri Lanka' mean?", "a": "Resplendent island", "wrong": ["Island of spices", "Land of lions", "Green teardrop"], "why": "'Sri' means resplendent or holy." },
+        { "level": 3, "q": "Which sacred fig tree in Anuradhapura is said to be the oldest planted tree with a known date?", "a": "Jaya Sri Maha Bodhi", "wrong": ["Kelaniya Bodhi", "Banyan of Kandy", "Talipot of Peradeniya"], "why": "It was planted in 288 BCE." },
+        { "level": 3, "q": "Which famous botanic gardens are near Kandy?", "a": "Royal Botanic Gardens, Peradeniya", "wrong": ["Hakgala Botanic Gardens", "Victoria Park", "Viharamahadevi Park"], "why": "They cover about 60 hectares." },
+        { "level": 3, "q": "In which year did Ceylon give all adults the vote, among the first in Asia?", "a": "1931", "wrong": ["1948", "1919", "1956"], "why": "It came with the Donoughmore Constitution." }
+      ]
+    }
+  ]
+}

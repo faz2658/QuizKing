@@ -1,0 +1,1092 @@
+{
+ "category": "Malaysia",
+ "country": "MY",
+ "topics": [
+  {
+   "name": "Malaysia History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Malaya gain independence from Britain?",
+     "a": "1957",
+     "wrong": [
+      "1963",
+      "1965",
+      "1948"
+     ],
+     "why": "Independence came on 31 August 1957."
+    },
+    {
+     "level": 1,
+     "q": "Who was Malaysia's first Prime Minister?",
+     "a": "Tunku Abdul Rahman",
+     "wrong": [
+      "Abdul Razak Hussein",
+      "Mahathir Mohamad",
+      "Hussein Onn"
+     ],
+     "why": "He is called 'Bapa Kemerdekaan', Father of Independence."
+    },
+    {
+     "level": 1,
+     "q": "On what date is Malaysia's Merdeka (Independence) Day?",
+     "a": "31 August",
+     "wrong": [
+      "16 September",
+      "9 August",
+      "1 May"
+     ],
+     "why": "Merdeka means 'freedom'."
+    },
+    {
+     "level": 1,
+     "q": "Malaysia Day on 16 September marks the federation formed in which year?",
+     "a": "1963",
+     "wrong": [
+      "1957",
+      "1965",
+      "1969"
+     ],
+     "why": "Sabah, Sarawak and Singapore joined Malaya."
+    },
+    {
+     "level": 1,
+     "q": "Which 15th-century sultanate grew rich as a port on the strait?",
+     "a": "Malacca Sultanate",
+     "wrong": [
+      "Johor Sultanate",
+      "Kedah Sultanate",
+      "Brunei Sultanate"
+     ],
+     "why": "Parameswara founded it around 1400."
+    },
+    {
+     "level": 1,
+     "q": "Which European power captured Malacca in 1511?",
+     "a": "Portugal",
+     "wrong": [
+      "The Netherlands",
+      "Britain",
+      "Spain"
+     ],
+     "why": "The A Famosa fort gate still stands."
+    },
+    {
+     "level": 1,
+     "q": "Who is Malaysia's longest-serving Prime Minister?",
+     "a": "Mahathir Mohamad",
+     "wrong": [
+      "Najib Razak",
+      "Abdullah Badawi",
+      "Anwar Ibrahim"
+     ],
+     "why": "He served over 22 years in two spells."
+    },
+    {
+     "level": 2,
+     "q": "Which two Bornean states joined Malaysia in 1963?",
+     "a": "Sabah and Sarawak",
+     "wrong": [
+      "Brunei and Sabah",
+      "Sarawak and Brunei",
+      "Labuan and Sabah"
+     ],
+     "why": "Brunei chose not to join."
+    },
+    {
+     "level": 2,
+     "q": "Which country left Malaysia in 1965?",
+     "a": "Singapore",
+     "wrong": [
+      "Brunei",
+      "Sabah",
+      "Sarawak"
+     ],
+     "why": "It became an independent republic."
+    },
+    {
+     "level": 2,
+     "q": "Which British family ruled Sarawak as 'White Rajahs'?",
+     "a": "The Brookes",
+     "wrong": [
+      "The Raffles",
+      "The Lights",
+      "The Swettenhams"
+     ],
+     "why": "They ruled from 1841 to 1946."
+    },
+    {
+     "level": 2,
+     "q": "Who founded the British settlement on Penang in 1786?",
+     "a": "Francis Light",
+     "wrong": [
+      "Stamford Raffles",
+      "James Brooke",
+      "Frank Swettenham"
+     ],
+     "why": "He named it Prince of Wales Island."
+    },
+    {
+     "level": 2,
+     "q": "What was the communist insurgency of 1948 to 1960 called?",
+     "a": "Malayan Emergency",
+     "wrong": [
+      "Konfrontasi",
+      "May 13 Incident",
+      "Batang Kali War"
+     ],
+     "why": "It was fought against the Malayan Communist Party."
+    },
+    {
+     "level": 2,
+     "q": "How many states does Malaysia have?",
+     "a": "13",
+     "wrong": [
+      "9",
+      "11",
+      "14"
+     ],
+     "why": "It also has three federal territories."
+    },
+    {
+     "level": 3,
+     "q": "At which stadium did Tunku Abdul Rahman declare independence in 1957?",
+     "a": "Stadium Merdeka",
+     "wrong": [
+      "Bukit Jalil Stadium",
+      "Stadium Negara",
+      "Shah Alam Stadium"
+     ],
+     "why": "He shouted 'Merdeka!' seven times."
+    },
+    {
+     "level": 3,
+     "q": "Which 1824 treaty split the Malay world between Britain and the Netherlands?",
+     "a": "Anglo-Dutch Treaty",
+     "wrong": [
+      "Treaty of Pangkor",
+      "Treaty of Bangkok",
+      "Burney Treaty"
+     ],
+     "why": "Sumatra went to the Dutch, Malacca to the British."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient Hindu-Buddhist archaeological site is in Kedah?",
+     "a": "Bujang Valley",
+     "wrong": [
+      "Lenggong Valley",
+      "Gua Niah",
+      "Kota Tinggi"
+     ],
+     "why": "It dates back over 1,500 years."
+    }
+   ]
+  },
+  {
+   "name": "Malaysia Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Malaysia's capital city?",
+     "a": "Kuala Lumpur",
+     "wrong": [
+      "Putrajaya",
+      "George Town",
+      "Johor Bahru"
+     ],
+     "why": "Its name means 'muddy confluence'."
+    },
+    {
+     "level": 1,
+     "q": "Which twin skyscrapers are Kuala Lumpur's landmark?",
+     "a": "Petronas Towers",
+     "wrong": [
+      "KL Tower",
+      "Merdeka 118",
+      "Exchange 106"
+     ],
+     "why": "They were the world's tallest buildings from 1998 to 2004."
+    },
+    {
+     "level": 1,
+     "q": "Which planned city is Malaysia's administrative centre?",
+     "a": "Putrajaya",
+     "wrong": [
+      "Cyberjaya",
+      "Shah Alam",
+      "Petaling Jaya"
+     ],
+     "why": "Government offices moved there from 1999."
+    },
+    {
+     "level": 1,
+     "q": "What is Malaysia's highest mountain?",
+     "a": "Mount Kinabalu",
+     "wrong": [
+      "Mount Tahan",
+      "Mount Murud",
+      "Mount Ophir"
+     ],
+     "why": "It is 4,095 m high, in Sabah."
+    },
+    {
+     "level": 1,
+     "q": "Which island state is famous for George Town?",
+     "a": "Penang",
+     "wrong": [
+      "Langkawi",
+      "Labuan",
+      "Malacca"
+     ],
+     "why": "George Town is a UNESCO World Heritage Site."
+    },
+    {
+     "level": 1,
+     "q": "Which archipelago of 99 islands lies off Kedah?",
+     "a": "Langkawi",
+     "wrong": [
+      "Perhentian",
+      "Redang",
+      "Tioman"
+     ],
+     "why": "It is a duty-free island."
+    },
+    {
+     "level": 1,
+     "q": "Malaysia is split into Peninsular Malaysia and which other part?",
+     "a": "Malaysian Borneo",
+     "wrong": [
+      "Malaysian Sumatra",
+      "Malaysian Java",
+      "Malaysian Timor"
+     ],
+     "why": "The South China Sea lies between them."
+    },
+    {
+     "level": 2,
+     "q": "What is Malaysia's longest river?",
+     "a": "Rajang River",
+     "wrong": [
+      "Pahang River",
+      "Kinabatangan River",
+      "Perak River"
+     ],
+     "why": "It is in Sarawak."
+    },
+    {
+     "level": 2,
+     "q": "Which highland area is famous for its tea plantations?",
+     "a": "Cameron Highlands",
+     "wrong": [
+      "Genting Highlands",
+      "Fraser's Hill",
+      "Bukit Tinggi"
+     ],
+     "why": "It was named after a British surveyor."
+    },
+    {
+     "level": 2,
+     "q": "Which Sarawak national park contains the world's largest known cave chamber?",
+     "a": "Gunung Mulu",
+     "wrong": [
+      "Niah",
+      "Bako",
+      "Similajau"
+     ],
+     "why": "The Sarawak Chamber could hold many jumbo jets."
+    },
+    {
+     "level": 2,
+     "q": "Which limestone caves near Kuala Lumpur have a giant golden statue of Murugan?",
+     "a": "Batu Caves",
+     "wrong": [
+      "Gua Tempurung",
+      "Niah Caves",
+      "Dark Cave"
+     ],
+     "why": "272 colourful steps lead up to them."
+    },
+    {
+     "level": 2,
+     "q": "Which strait separates Peninsular Malaysia from Sumatra?",
+     "a": "Strait of Malacca",
+     "wrong": [
+      "Singapore Strait",
+      "Strait of Johor",
+      "Sunda Strait"
+     ],
+     "why": "It is one of the world's busiest shipping lanes."
+    },
+    {
+     "level": 2,
+     "q": "Which is Malaysia's largest state?",
+     "a": "Sarawak",
+     "wrong": [
+      "Sabah",
+      "Pahang",
+      "Perak"
+     ],
+     "why": "Its capital is Kuching."
+    },
+    {
+     "level": 3,
+     "q": "Which national park is one of the world's oldest rainforests?",
+     "a": "Taman Negara",
+     "wrong": [
+      "Endau-Rompin",
+      "Royal Belum",
+      "Kinabalu Park"
+     ],
+     "why": "It is thought to be about 130 million years old."
+    },
+    {
+     "level": 3,
+     "q": "Which cape in Johor is the southernmost point of mainland Asia?",
+     "a": "Tanjung Piai",
+     "wrong": [
+      "Tanjung Bidara",
+      "Tanjung Rhu",
+      "Tanjung Aru"
+     ],
+     "why": "It is a mangrove park."
+    },
+    {
+     "level": 3,
+     "q": "Which island off Sabah is a federal territory?",
+     "a": "Labuan",
+     "wrong": [
+      "Sipadan",
+      "Mabul",
+      "Gaya"
+     ],
+     "why": "It is an offshore financial centre."
+    }
+   ]
+  },
+  {
+   "name": "Malaysia Sport",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which badminton player won three Olympic silver medals for Malaysia?",
+     "a": "Lee Chong Wei",
+     "wrong": [
+      "Lee Zii Jia",
+      "Misbun Sidek",
+      "Rashid Sidek"
+     ],
+     "why": "He was world number one for 199 weeks in a row."
+    },
+    {
+     "level": 1,
+     "q": "Which circuit hosted Formula One's Malaysian Grand Prix?",
+     "a": "Sepang International Circuit",
+     "wrong": [
+      "Batu Tiga",
+      "Johor Circuit",
+      "Marina Bay"
+     ],
+     "why": "It hosted F1 from 1999 to 2017."
+    },
+    {
+     "level": 1,
+     "q": "Which sport has won Malaysia most of its Olympic medals?",
+     "a": "Badminton",
+     "wrong": [
+      "Diving",
+      "Cycling",
+      "Squash"
+     ],
+     "why": "Squash is not an Olympic sport yet."
+    },
+    {
+     "level": 1,
+     "q": "What is Malaysia's national football team nicknamed?",
+     "a": "Harimau Malaya",
+     "wrong": [
+      "Garuda",
+      "Lions",
+      "War Elephants"
+     ],
+     "why": "It means 'Malayan Tigers'."
+    },
+    {
+     "level": 1,
+     "q": "Which squash player was world number one for nine years?",
+     "a": "Nicol David",
+     "wrong": [
+      "Low Wee Wern",
+      "Delia Arnold",
+      "Sivasangari Subramaniam"
+     ],
+     "why": "She won eight world titles."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is played by kicking a rattan ball over a net?",
+     "a": "Sepak takraw",
+     "wrong": [
+      "Sepak raga bulatan",
+      "Chinlone",
+      "Kabaddi"
+     ],
+     "why": "Players use feet, knees and heads."
+    },
+    {
+     "level": 1,
+     "q": "Which track cyclist is nicknamed 'The Pocket Rocketman'?",
+     "a": "Azizulhasni Awang",
+     "wrong": [
+      "Josiah Ng",
+      "Shah Firdaus Sahrom",
+      "Mohd Rizal Tisin"
+     ],
+     "why": "He won keirin silver at Tokyo 2020."
+    },
+    {
+     "level": 2,
+     "q": "When did Malaysia last win badminton's Thomas Cup?",
+     "a": "1992",
+     "wrong": [
+      "2014",
+      "2002",
+      "1967"
+     ],
+     "why": "They beat Indonesia in the final."
+    },
+    {
+     "level": 2,
+     "q": "Which diver won Olympic medals for Malaysia in 2012 and 2016?",
+     "a": "Pandelela Rinong",
+     "wrong": [
+      "Cheong Jun Hoong",
+      "Leong Mun Yee",
+      "Bryan Nickson Lomas"
+     ],
+     "why": "She was the first Malaysian woman to win an Olympic medal."
+    },
+    {
+     "level": 2,
+     "q": "Which pair won the men's doubles world title in 2022?",
+     "a": "Aaron Chia and Soh Wooi Yik",
+     "wrong": [
+      "Goh V Shem and Tan Wee Kiong",
+      "Koo Kien Keat and Tan Boon Heong",
+      "Ong Yew Sin and Teo Ee Yi"
+     ],
+     "why": "It was Malaysia's first world title in badminton."
+    },
+    {
+     "level": 2,
+     "q": "Which spinning-top game is a traditional Malaysian sport?",
+     "a": "Gasing",
+     "wrong": [
+      "Wau",
+      "Congkak",
+      "Batu seremban"
+     ],
+     "why": "Expert tops can spin for over an hour."
+    },
+    {
+     "level": 2,
+     "q": "Which stadium in Kuala Lumpur is Malaysia's national stadium?",
+     "a": "Bukit Jalil National Stadium",
+     "wrong": [
+      "Stadium Merdeka",
+      "Shah Alam Stadium",
+      "Stadium Negara"
+     ],
+     "why": "It hosted the 1998 Commonwealth Games."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Kuala Lumpur host the Commonwealth Games?",
+     "a": "1998",
+     "wrong": [
+      "1990",
+      "2006",
+      "1982"
+     ],
+     "why": "It was the first held in Asia."
+    },
+    {
+     "level": 3,
+     "q": "Who won Malaysia's first Olympic medal, in 1992?",
+     "a": "Razif and Jalani Sidek",
+     "wrong": [
+      "Lee Chong Wei",
+      "Cheah Soon Kit and Yap Kim Hock",
+      "Rashid Sidek"
+     ],
+     "why": "They won bronze in men's doubles badminton."
+    },
+    {
+     "level": 3,
+     "q": "Which city hosted the 1975 Hockey World Cup?",
+     "a": "Kuala Lumpur",
+     "wrong": [
+      "Penang",
+      "Ipoh",
+      "Johor Bahru"
+     ],
+     "why": "India won it."
+    },
+    {
+     "level": 3,
+     "q": "Which martial art is Malaysia's traditional fighting form?",
+     "a": "Silat",
+     "wrong": [
+      "Muay Thai",
+      "Arnis",
+      "Kalaripayattu"
+     ],
+     "why": "Pencak silat is on UNESCO's heritage list."
+    }
+   ]
+  },
+  {
+   "name": "Malaysia Film, TV & Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Malaysian actress won the 2023 Oscar for Best Actress?",
+     "a": "Michelle Yeoh",
+     "wrong": [
+      "Lisa Surihani",
+      "Fan Bingbing",
+      "Maggie Cheung"
+     ],
+     "why": "She won for 'Everything Everywhere All at Once'."
+    },
+    {
+     "level": 1,
+     "q": "Which animated twin boys from a Malaysian village became hugely popular?",
+     "a": "Upin & Ipin",
+     "wrong": [
+      "Boboiboy and Ochobot",
+      "Ali and Abu",
+      "Didi and Friends"
+     ],
+     "why": "The show began in 2007."
+    },
+    {
+     "level": 1,
+     "q": "Which legendary actor, singer and director starred in 1950s Malay films?",
+     "a": "P. Ramlee",
+     "wrong": [
+      "Saloma",
+      "Sudirman",
+      "Jins Shamsuddin"
+     ],
+     "why": "A Kuala Lumpur road is named after him."
+    },
+    {
+     "level": 1,
+     "q": "Which award-winning pop singer is famous for songs like 'Cindai'?",
+     "a": "Siti Nurhaliza",
+     "wrong": [
+      "Yuna",
+      "Zee Avi",
+      "Sheila Majid"
+     ],
+     "why": "She has won dozens of awards since the 1990s."
+    },
+    {
+     "level": 1,
+     "q": "Which animated hero can control lightning, wind and earth?",
+     "a": "BoBoiBoy",
+     "wrong": [
+      "Upin",
+      "Ejen Ali",
+      "Keluang Man"
+     ],
+     "why": "The series was made by Animonsta."
+    },
+    {
+     "level": 1,
+     "q": "Which Malay poetry form uses four-line rhyming verses?",
+     "a": "Pantun",
+     "wrong": [
+      "Syair",
+      "Gurindam",
+      "Haiku"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "Which singer-songwriter recorded 'Crush' with Usher?",
+     "a": "Yuna",
+     "wrong": [
+      "Siti Nurhaliza",
+      "Zee Avi",
+      "Elizabeth Tan"
+     ],
+     "why": "She moved to Los Angeles to record."
+    },
+    {
+     "level": 2,
+     "q": "Which shadow puppet theatre is a traditional art in Kelantan?",
+     "a": "Wayang kulit",
+     "wrong": [
+      "Mak Yong",
+      "Dikir barat",
+      "Bangsawan"
+     ],
+     "why": "Puppets are made of buffalo hide."
+    },
+    {
+     "level": 2,
+     "q": "Which director made 'Sepet' and 'Talentime'?",
+     "a": "Yasmin Ahmad",
+     "wrong": [
+      "U-Wei Haji Saari",
+      "Amir Muhammad",
+      "Tan Chui Mui"
+     ],
+     "why": "She was also famous for heartfelt TV adverts."
+    },
+    {
+     "level": 2,
+     "q": "Which Kelantan dance-drama was added to UNESCO's list in 2005?",
+     "a": "Mak Yong",
+     "wrong": [
+      "Zapin",
+      "Joget",
+      "Kuda kepang"
+     ],
+     "why": "It combines acting, singing and dance."
+    },
+    {
+     "level": 2,
+     "q": "Which singer was called the 'Queen of Jazz' of Malaysia?",
+     "a": "Sheila Majid",
+     "wrong": [
+      "Siti Nurhaliza",
+      "Ella",
+      "Ning Baizura"
+     ],
+     "why": "Her hit 'Sinaran' is still loved."
+    },
+    {
+     "level": 2,
+     "q": "Which Malaysian author was Booker-shortlisted for 'The Garden of Evening Mists'?",
+     "a": "Tan Twan Eng",
+     "wrong": [
+      "Rani Manicka",
+      "Preeta Samarasan",
+      "Tash Aw"
+     ],
+     "why": "It is set in the Cameron Highlands."
+    },
+    {
+     "level": 2,
+     "q": "Which singer is called the 'Queen of Rock' in Malaysia?",
+     "a": "Ella",
+     "wrong": [
+      "Siti Nurhaliza",
+      "Sheila Majid",
+      "Yuna"
+     ],
+     "why": "She was a star of the 1990s rock scene."
+    },
+    {
+     "level": 3,
+     "q": "Which P. Ramlee comedy follows three bachelors in a run-down house?",
+     "a": "Bujang Lapok",
+     "wrong": [
+      "Labu dan Labi",
+      "Ibu Mertuaku",
+      "Antara Dua Darjat"
+     ],
+     "why": "It was made in 1957."
+    },
+    {
+     "level": 3,
+     "q": "Which Malaysian singer, P. Ramlee's wife, was a star in her own right?",
+     "a": "Saloma",
+     "wrong": [
+      "Siti Nurhaliza",
+      "Sharifah Aini",
+      "Normadiah"
+     ],
+     "why": "A famous bistro in Kuala Lumpur is named after her."
+    },
+    {
+     "level": 3,
+     "q": "Which Kuching-born director won the Golden Lion at Venice in 1994?",
+     "a": "Tsai Ming-liang",
+     "wrong": [
+      "Yasmin Ahmad",
+      "Tan Chui Mui",
+      "Amir Muhammad"
+     ],
+     "why": "He won for 'Vive L'Amour' and works in Taiwan."
+    }
+   ]
+  },
+  {
+   "name": "Malaysia Food & Traditions",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which coconut rice dish with sambal is Malaysia's national dish?",
+     "a": "Nasi lemak",
+     "wrong": [
+      "Nasi goreng",
+      "Nasi kandar",
+      "Nasi kerabu"
+     ],
+     "why": "It comes with anchovies, peanuts and egg."
+    },
+    {
+     "level": 1,
+     "q": "Which flaky flatbread is often eaten with dhal or curry?",
+     "a": "Roti canai",
+     "wrong": [
+      "Chapati",
+      "Naan",
+      "Murtabak"
+     ],
+     "why": "It came with Indian Muslim cooks."
+    },
+    {
+     "level": 1,
+     "q": "What is the Malaysian festival at the end of Ramadan called?",
+     "a": "Hari Raya Aidilfitri",
+     "wrong": [
+      "Hari Raya Haji",
+      "Deepavali",
+      "Thaipusam"
+     ],
+     "why": "Families hold open houses for visitors."
+    },
+    {
+     "level": 1,
+     "q": "Malaysia's national drink, poured back and forth until frothy, is what?",
+     "a": "Teh tarik",
+     "wrong": [
+      "Kopi O",
+      "Milo dinosaur",
+      "Sirap bandung"
+     ],
+     "why": "Tarik means 'pull'."
+    },
+    {
+     "level": 1,
+     "q": "Which spiky fruit is called the 'king of fruits'?",
+     "a": "Durian",
+     "wrong": [
+      "Mangosteen",
+      "Jackfruit",
+      "Rambutan"
+     ],
+     "why": "Musang King is a famous variety."
+    },
+    {
+     "level": 1,
+     "q": "Which spicy dry beef curry is served at festivals?",
+     "a": "Rendang",
+     "wrong": [
+      "Laksa",
+      "Satay",
+      "Gulai"
+     ],
+     "why": "It is cooked slowly until the sauce disappears."
+    },
+    {
+     "level": 1,
+     "q": "What are rice cakes cooked in woven palm-leaf pouches called?",
+     "a": "Ketupat",
+     "wrong": [
+      "Lemang",
+      "Kuih",
+      "Lontong"
+     ],
+     "why": "They are a Hari Raya favourite."
+    },
+    {
+     "level": 2,
+     "q": "Which state is often called Malaysia's food capital?",
+     "a": "Penang",
+     "wrong": [
+      "Kelantan",
+      "Melaka",
+      "Sarawak"
+     ],
+     "why": "Char kway teow and asam laksa are famous there."
+    },
+    {
+     "level": 2,
+     "q": "Which town is famous for its satay?",
+     "a": "Kajang",
+     "wrong": [
+      "Ipoh",
+      "Kuantan",
+      "Seremban"
+     ],
+     "why": "Satay Kajang is known nationwide."
+    },
+    {
+     "level": 2,
+     "q": "What is the giant moon-shaped kite of Kelantan called?",
+     "a": "Wau bulan",
+     "wrong": [
+      "Gasing",
+      "Layang-layang",
+      "Congkak"
+     ],
+     "why": "It appears on Malaysia Airlines' logo."
+    },
+    {
+     "level": 2,
+     "q": "Which harvest festival is celebrated in Sarawak on 1 June?",
+     "a": "Gawai Dayak",
+     "wrong": [
+      "Kaamatan",
+      "Thaipusam",
+      "Chap Goh Mei"
+     ],
+     "why": "Sabah's harvest festival is Kaamatan."
+    },
+    {
+     "level": 2,
+     "q": "Which Hindu festival draws huge crowds to Batu Caves?",
+     "a": "Thaipusam",
+     "wrong": [
+      "Deepavali",
+      "Pongal",
+      "Navaratri"
+     ],
+     "why": "Devotees carry kavadi up the steps."
+    },
+    {
+     "level": 2,
+     "q": "What is songket?",
+     "a": "Cloth woven with gold or silver thread",
+     "wrong": [
+      "A wax-printed cloth",
+      "A rattan basket",
+      "A wooden carving"
+     ],
+     "why": "Batik is the wax-printed cloth."
+    },
+    {
+     "level": 3,
+     "q": "Nasi kerabu from Kelantan is blue because of which flower?",
+     "a": "Butterfly pea",
+     "wrong": [
+      "Hibiscus",
+      "Blue lotus",
+      "Cornflower"
+     ],
+     "why": "The petals are boiled with the rice."
+    },
+    {
+     "level": 3,
+     "q": "What is ais kacang, also called ABC?",
+     "a": "Shaved ice with beans, jelly and syrup",
+     "wrong": [
+      "A rice salad",
+      "A coconut soup",
+      "A noodle dish"
+     ],
+     "why": "ABC stands for air batu campur."
+    },
+    {
+     "level": 3,
+     "q": "Which harvest festival is celebrated in Sabah in May?",
+     "a": "Kaamatan",
+     "wrong": [
+      "Gawai",
+      "Bon Odori",
+      "Hari Raya Haji"
+     ],
+     "why": "It honours the rice spirit, Bambaazon."
+    }
+   ]
+  },
+  {
+   "name": "Malaysia General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Malaysia's currency?",
+     "a": "Ringgit",
+     "wrong": [
+      "Rupiah",
+      "Baht",
+      "Peso"
+     ],
+     "why": "Its code is MYR."
+    },
+    {
+     "level": 1,
+     "q": "What is Malaysia's national language?",
+     "a": "Bahasa Melayu (Malay)",
+     "wrong": [
+      "English",
+      "Mandarin",
+      "Tamil"
+     ],
+     "why": "English is widely spoken too."
+    },
+    {
+     "level": 1,
+     "q": "What is Malaysia's national flower?",
+     "a": "Hibiscus",
+     "wrong": [
+      "Orchid",
+      "Jasmine",
+      "Rafflesia"
+     ],
+     "why": "It is called bunga raya."
+    },
+    {
+     "level": 1,
+     "q": "What is Malaysia's flag called?",
+     "a": "Jalur Gemilang",
+     "wrong": [
+      "Sang Saka Merah Putih",
+      "Union Jack",
+      "Bendera Merah"
+     ],
+     "why": "It means 'Stripes of Glory'."
+    },
+    {
+     "level": 1,
+     "q": "What is Malaysia's first national car brand?",
+     "a": "Proton",
+     "wrong": [
+      "Perodua",
+      "Inokom",
+      "Naza"
+     ],
+     "why": "The first car, the Saga, came out in 1985."
+    },
+    {
+     "level": 1,
+     "q": "What is Malaysia's King called?",
+     "a": "Yang di-Pertuan Agong",
+     "wrong": [
+      "Sultan of Malaysia",
+      "Raja Muda",
+      "Bendahara"
+     ],
+     "why": "The nine Malay rulers take turns for five years."
+    },
+    {
+     "level": 1,
+     "q": "What does the slogan 'Malaysia Boleh!' mean?",
+     "a": "Malaysia can!",
+     "wrong": [
+      "Malaysia wins!",
+      "Long live Malaysia!",
+      "Malaysia is free!"
+     ],
+     "why": "It became popular in the 1990s."
+    },
+    {
+     "level": 2,
+     "q": "How many red and white stripes are on Malaysia's flag?",
+     "a": "14",
+     "wrong": [
+      "13",
+      "15",
+      "9"
+     ],
+     "why": "They stand for the 13 states and the federal government."
+    },
+    {
+     "level": 2,
+     "q": "What is Malaysia's national anthem?",
+     "a": "Negaraku",
+     "wrong": [
+      "Majulah Singapura",
+      "Indonesia Raya",
+      "Tanah Pusaka"
+     ],
+     "why": "It means 'My Country'."
+    },
+    {
+     "level": 2,
+     "q": "Which giant flower, found in Borneo, is one of the world's largest?",
+     "a": "Rafflesia",
+     "wrong": [
+      "Titan arum",
+      "Bunga raya",
+      "Lotus"
+     ],
+     "why": "It smells like rotting meat."
+    },
+    {
+     "level": 2,
+     "q": "Which animals hold the shield on Malaysia's coat of arms?",
+     "a": "Two tigers",
+     "wrong": [
+      "Two lions",
+      "Two eagles",
+      "Two elephants"
+     ],
+     "why": "The motto is 'Unity is Strength'."
+    },
+    {
+     "level": 2,
+     "q": "Which centre in Sabah rehabilitates orphaned orangutans?",
+     "a": "Sepilok",
+     "wrong": [
+      "Semenggoh",
+      "Kinabatangan",
+      "Danum Valley"
+     ],
+     "why": "It opened in 1964."
+    },
+    {
+     "level": 2,
+     "q": "Who became the first Malaysian in space, in 2007?",
+     "a": "Sheikh Muszaphar Shukor",
+     "wrong": [
+      "Faiz Khaleed",
+      "Mazlan Othman",
+      "Ahmad Fauzi"
+     ],
+     "why": "He flew to the International Space Station."
+    },
+    {
+     "level": 3,
+     "q": "Which is Malaysia's second national car brand?",
+     "a": "Perodua",
+     "wrong": [
+      "Proton",
+      "Inokom",
+      "Bufori"
+     ],
+     "why": "Its Myvi is a best-seller."
+    },
+    {
+     "level": 3,
+     "q": "Which Kuala Lumpur skyscraper became the world's second-tallest building in 2023?",
+     "a": "Merdeka 118",
+     "wrong": [
+      "Petronas Towers",
+      "Exchange 106",
+      "KL Tower"
+     ],
+     "why": "It is 678.9 m tall."
+    },
+    {
+     "level": 3,
+     "q": "Which expressway runs from the Thai border to Singapore?",
+     "a": "North–South Expressway",
+     "wrong": [
+      "East Coast Expressway",
+      "Pan Borneo Highway",
+      "Karak Highway"
+     ],
+     "why": "It is about 772 km long."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+{
+  "category": "United Kingdom",
+  "country": "GB",
+  "topics": [
+    {
+      "name": "United Kingdom History",
+      "questions": [
+        { "level": 1, "q": "Which English king had six wives?", "a": "Henry VIII", "wrong": ["Henry VII", "Edward VI", "Richard III"], "why": "He reigned from 1509 to 1547." },
+        { "level": 1, "q": "In which year was the Battle of Hastings?", "a": "1066", "wrong": ["1215", "1415", "1588"], "why": "William of Normandy defeated King Harold II." },
+        { "level": 1, "q": "Who was Prime Minister for most of the Second World War?", "a": "Winston Churchill", "wrong": ["Neville Chamberlain", "Clement Attlee", "Anthony Eden"], "why": "He led the country from 1940 to 1945." },
+        { "level": 1, "q": "Who is the longest-reigning British monarch?", "a": "Elizabeth II", "wrong": ["Victoria", "George III", "James I"], "why": "She reigned for 70 years, from 1952 to 2022." },
+        { "level": 1, "q": "Which charter did King John agree to in 1215?", "a": "Magna Carta", "wrong": ["Bill of Rights", "Domesday Book", "Act of Union"], "why": "It limited the king's power." },
+        { "level": 1, "q": "Who was the first woman to be UK Prime Minister?", "a": "Margaret Thatcher", "wrong": ["Theresa May", "Liz Truss", "Barbara Castle"], "why": "She took office in 1979." },
+        { "level": 1, "q": "Which prehistoric monument stands on Salisbury Plain?", "a": "Stonehenge", "wrong": ["Avebury", "Hadrian's Wall", "Silbury Hill"], "why": "It was built around 3000 to 2000 BCE." },
+        { "level": 2, "q": "Which Roman emperor ordered a wall built across northern Britain in AD 122?", "a": "Hadrian", "wrong": ["Claudius", "Augustus", "Constantine"], "why": "Hadrian's Wall ran about 117 km." },
+        { "level": 2, "q": "Guy Fawkes plotted to blow up what in 1605?", "a": "The Houses of Parliament", "wrong": ["The Tower of London", "St Paul's Cathedral", "Westminster Abbey"], "why": "The Gunpowder Plot is remembered on 5 November." },
+        { "level": 2, "q": "In which year was the Great Fire of London?", "a": "1666", "wrong": ["1605", "1688", "1745"], "why": "It started in a bakery on Pudding Lane." },
+        { "level": 2, "q": "The Spanish Armada was defeated in 1588 during whose reign?", "a": "Elizabeth I", "wrong": ["Henry VIII", "Mary I", "James I"], "why": "Storms wrecked much of the fleet." },
+        { "level": 2, "q": "Which battle in 1815 ended Napoleon's career?", "a": "Waterloo", "wrong": ["Trafalgar", "Austerlitz", "Agincourt"], "why": "Wellington and the Prussians defeated him in today's Belgium." },
+        { "level": 2, "q": "Which admiral was killed at the Battle of Trafalgar in 1805?", "a": "Horatio Nelson", "wrong": ["Francis Drake", "Walter Raleigh", "John Jervis"], "why": "His column stands in Trafalgar Square." },
+        { "level": 3, "q": "The Wars of the Roses were fought between the House of Lancaster and which house?", "a": "York", "wrong": ["Tudor", "Stuart", "Windsor"], "why": "Henry Tudor ended them in 1485." },
+        { "level": 3, "q": "Which acts united England and Scotland in 1707?", "a": "Acts of Union", "wrong": ["Act of Settlement", "Bill of Rights", "Reform Act"], "why": "They created the Kingdom of Great Britain." },
+        { "level": 3, "q": "In which year did some women first win the vote in UK general elections?", "a": "1918", "wrong": ["1928", "1900", "1945"], "why": "Women over 30 who met a property test; all women over 21 followed in 1928." }
+      ]
+    },
+    {
+      "name": "United Kingdom Geography",
+      "questions": [
+        { "level": 1, "q": "What is the capital of Scotland?", "a": "Edinburgh", "wrong": ["Glasgow", "Aberdeen", "Dundee"], "why": "Glasgow is Scotland's largest city." },
+        { "level": 1, "q": "What is the capital of Wales?", "a": "Cardiff", "wrong": ["Swansea", "Newport", "Bangor"], "why": "It became the capital in 1955." },
+        { "level": 1, "q": "What is the longest river in the UK?", "a": "River Severn", "wrong": ["River Thames", "River Trent", "River Tyne"], "why": "It runs about 350 km from Wales into the Bristol Channel." },
+        { "level": 1, "q": "What is the highest mountain in the UK?", "a": "Ben Nevis", "wrong": ["Snowdon", "Scafell Pike", "Ben Macdui"], "why": "It is 1,345 m high, near Fort William." },
+        { "level": 1, "q": "Which river flows through London?", "a": "Thames", "wrong": ["Severn", "Mersey", "Avon"], "why": "Tower Bridge crosses it." },
+        { "level": 1, "q": "What is the capital of Northern Ireland?", "a": "Belfast", "wrong": ["Derry", "Armagh", "Newry"], "why": "The Titanic was built there." },
+        { "level": 1, "q": "In which city is the Cavern Club, where the Beatles played?", "a": "Liverpool", "wrong": ["Manchester", "Leeds", "Birmingham"], "why": "The Beatles played there nearly 300 times." },
+        { "level": 2, "q": "What is the highest mountain in England?", "a": "Scafell Pike", "wrong": ["Helvellyn", "Skiddaw", "Cross Fell"], "why": "It is 978 m high, in the Lake District." },
+        { "level": 2, "q": "What is the largest natural lake in England?", "a": "Windermere", "wrong": ["Ullswater", "Coniston Water", "Derwentwater"], "why": "It is about 18 km long." },
+        { "level": 2, "q": "In which part of the UK is the Giant's Causeway?", "a": "Northern Ireland", "wrong": ["Scotland", "Wales", "Cornwall"], "why": "It is made of about 40,000 basalt columns." },
+        { "level": 2, "q": "Which Scottish city is called the 'Granite City'?", "a": "Aberdeen", "wrong": ["Edinburgh", "Glasgow", "Inverness"], "why": "Many of its buildings are made of local grey granite." },
+        { "level": 2, "q": "Loch Ness is in which part of Scotland?", "a": "The Highlands", "wrong": ["The Borders", "Fife", "The Lowlands"], "why": "It lies along the Great Glen, near Inverness." },
+        { "level": 2, "q": "What is the tunnel under the sea between England and France called?", "a": "Channel Tunnel", "wrong": ["Severn Tunnel", "Mersey Tunnel", "Blackwall Tunnel"], "why": "It opened in 1994." },
+        { "level": 3, "q": "In which county is Land's End?", "a": "Cornwall", "wrong": ["Devon", "Dorset", "Somerset"], "why": "It is the westernmost point of mainland England." },
+        { "level": 3, "q": "Which island group is the northernmost part of the UK?", "a": "Shetland", "wrong": ["Orkney", "Outer Hebrides", "Isle of Skye"], "why": "It is closer to Norway than to London." },
+        { "level": 3, "q": "Which is the largest lake in the UK by area?", "a": "Lough Neagh", "wrong": ["Loch Lomond", "Loch Ness", "Windermere"], "why": "It is in Northern Ireland." }
+      ]
+    },
+    {
+      "name": "United Kingdom Sport",
+      "questions": [
+        { "level": 1, "q": "Which tennis tournament is played at the All England Club?", "a": "Wimbledon", "wrong": ["US Open", "Roland-Garros", "Australian Open"], "why": "It is the oldest tennis tournament in the world." },
+        { "level": 1, "q": "Which football club is nicknamed 'The Red Devils'?", "a": "Manchester United", "wrong": ["Liverpool", "Arsenal", "Nottingham Forest"], "why": "They play at Old Trafford." },
+        { "level": 1, "q": "In which year did England win the FIFA World Cup?", "a": "1966", "wrong": ["1970", "1990", "1958"], "why": "They beat West Germany 4–2 at Wembley." },
+        { "level": 1, "q": "Which famous horse race is run at Aintree?", "a": "Grand National", "wrong": ["Epsom Derby", "Royal Ascot", "Cheltenham Gold Cup"], "why": "Aintree is near Liverpool." },
+        { "level": 1, "q": "England's cricket rivalry called 'the Ashes' is against which country?", "a": "Australia", "wrong": ["India", "New Zealand", "South Africa"], "why": "The urn is said to hold the ashes of a burnt bail." },
+        { "level": 1, "q": "Which British driver has won seven Formula One world titles?", "a": "Lewis Hamilton", "wrong": ["Jenson Button", "Nigel Mansell", "Jackie Stewart"], "why": "He shares the record with Michael Schumacher." },
+        { "level": 1, "q": "What is the annual rowing race between Oxford and Cambridge called?", "a": "The Boat Race", "wrong": ["Henley Regatta", "The Varsity Match", "The Head of the River"], "why": "It is rowed on the Thames." },
+        { "level": 2, "q": "Which Scot won Wimbledon in 2013, the first British men's champion for 77 years?", "a": "Andy Murray", "wrong": ["Tim Henman", "Greg Rusedski", "Cameron Norrie"], "why": "He won again in 2016." },
+        { "level": 2, "q": "Lord's Cricket Ground is in which city?", "a": "London", "wrong": ["Manchester", "Leeds", "Birmingham"], "why": "It is called the 'Home of Cricket'." },
+        { "level": 2, "q": "Twickenham Stadium is the home of English what?", "a": "Rugby union", "wrong": ["Cricket", "Tennis", "Football"], "why": "It is the world's largest rugby union stadium." },
+        { "level": 2, "q": "Who won the 5,000 m and 10,000 m at both London 2012 and Rio 2016?", "a": "Mo Farah", "wrong": ["Paula Radcliffe", "Kelly Holmes", "Steve Cram"], "why": "It is called the 'double double'." },
+        { "level": 2, "q": "Which Six Nations team plays at the Principality Stadium in Cardiff?", "a": "Wales", "wrong": ["Scotland", "England", "Ireland"], "why": "It has a retractable roof." },
+        { "level": 2, "q": "Which stadium is the home of the England football team?", "a": "Wembley Stadium", "wrong": ["Old Trafford", "Anfield", "Villa Park"], "why": "The new Wembley opened in 2007." },
+        { "level": 3, "q": "Who was the first man to run a mile in under four minutes, in 1954?", "a": "Roger Bannister", "wrong": ["Sebastian Coe", "Chris Chataway", "Steve Ovett"], "why": "He ran 3:59.4 in Oxford." },
+        { "level": 3, "q": "Which Sheffield theatre hosts the World Snooker Championship?", "a": "The Crucible", "wrong": ["Alexandra Palace", "Wembley Arena", "Royal Albert Hall"], "why": "It has hosted it since 1977." },
+        { "level": 3, "q": "In which year did Leicester City win the Premier League as 5,000–1 outsiders?", "a": "2016", "wrong": ["2015", "2017", "2014"], "why": "It is one of the biggest upsets in sport." }
+      ]
+    },
+    {
+      "name": "United Kingdom Film, TV & Music",
+      "questions": [
+        { "level": 1, "q": "Which band was made up of John, Paul, George and Ringo?", "a": "The Beatles", "wrong": ["The Rolling Stones", "The Who", "The Kinks"], "why": "They formed in Liverpool in 1960." },
+        { "level": 1, "q": "Who wrote 'Romeo and Juliet'?", "a": "William Shakespeare", "wrong": ["Christopher Marlowe", "Ben Jonson", "Charles Dickens"], "why": "It was written in the 1590s." },
+        { "level": 1, "q": "Which fictional spy has the code number 007?", "a": "James Bond", "wrong": ["George Smiley", "Harry Palmer", "Jason Bourne"], "why": "Ian Fleming created him in 1953." },
+        { "level": 1, "q": "Which detective lived at 221B Baker Street?", "a": "Sherlock Holmes", "wrong": ["Hercule Poirot", "Inspector Morse", "Miss Marple"], "why": "Arthur Conan Doyle created him." },
+        { "level": 1, "q": "Who wrote the Harry Potter books?", "a": "J. K. Rowling", "wrong": ["Roald Dahl", "Philip Pullman", "C. S. Lewis"], "why": "The first book came out in 1997." },
+        { "level": 1, "q": "Which TV series features a time machine called the TARDIS?", "a": "Doctor Who", "wrong": ["Red Dwarf", "Blake's 7", "Star Trek"], "why": "It first aired in 1963." },
+        { "level": 1, "q": "Which band recorded 'Bohemian Rhapsody'?", "a": "Queen", "wrong": ["The Who", "Led Zeppelin", "Pink Floyd"], "why": "Freddie Mercury wrote it in 1975." },
+        { "level": 2, "q": "Who wrote 'Pride and Prejudice'?", "a": "Jane Austen", "wrong": ["Charlotte Brontë", "George Eliot", "Emily Brontë"], "why": "It was published in 1813." },
+        { "level": 2, "q": "Which Charles Dickens story features Ebenezer Scrooge?", "a": "A Christmas Carol", "wrong": ["Oliver Twist", "Great Expectations", "Bleak House"], "why": "It was published in 1843." },
+        { "level": 2, "q": "Which soap opera is set in the fictional Albert Square?", "a": "EastEnders", "wrong": ["Coronation Street", "Emmerdale", "Hollyoaks"], "why": "It began in 1985." },
+        { "level": 2, "q": "Which London-born director made 'Psycho' and 'The Birds'?", "a": "Alfred Hitchcock", "wrong": ["David Lean", "Ridley Scott", "Stanley Kubrick"], "why": "He was called the 'Master of Suspense'." },
+        { "level": 2, "q": "Which band released 'Wonderwall' in 1995?", "a": "Oasis", "wrong": ["Blur", "Pulp", "The Verve"], "why": "Oasis came from Manchester." },
+        { "level": 2, "q": "Which author created the detective Hercule Poirot?", "a": "Agatha Christie", "wrong": ["Dorothy L. Sayers", "P. D. James", "Ruth Rendell"], "why": "She is the best-selling novelist of all time." },
+        { "level": 3, "q": "Which band released the 1973 album 'The Dark Side of the Moon'?", "a": "Pink Floyd", "wrong": ["Genesis", "Yes", "Deep Purple"], "why": "It stayed in the US charts for over 900 weeks." },
+        { "level": 3, "q": "Which British director made 'Lawrence of Arabia'?", "a": "David Lean", "wrong": ["Carol Reed", "Michael Powell", "Richard Attenborough"], "why": "It won Best Picture in 1963." },
+        { "level": 3, "q": "Who wrote the novel 'Nineteen Eighty-Four'?", "a": "George Orwell", "wrong": ["Aldous Huxley", "H. G. Wells", "Anthony Burgess"], "why": "It gave us 'Big Brother'." }
+      ]
+    },
+    {
+      "name": "United Kingdom Food & Traditions",
+      "questions": [
+        { "level": 1, "q": "Which takeaway meal is often served with mushy peas?", "a": "Fish and chips", "wrong": ["Shepherd's pie", "Bangers and mash", "Cornish pasty"], "why": "It became popular in the 1860s." },
+        { "level": 1, "q": "What is celebrated with fireworks on 5 November?", "a": "Bonfire Night", "wrong": ["Burns Night", "St George's Day", "Boxing Day"], "why": "It recalls the failed Gunpowder Plot of 1605." },
+        { "level": 1, "q": "What is the day after Christmas Day called in the UK?", "a": "Boxing Day", "wrong": ["Twelfth Night", "Hogmanay", "Shrove Tuesday"], "why": "It is a public holiday." },
+        { "level": 1, "q": "What is Scotland's New Year's Eve celebration called?", "a": "Hogmanay", "wrong": ["Burns Night", "Ceilidh", "Beltane"], "why": "People sing 'Auld Lang Syne' at midnight." },
+        { "level": 1, "q": "Haggis is the national dish of which country?", "a": "Scotland", "wrong": ["Wales", "Ireland", "England"], "why": "It is often served with neeps and tatties." },
+        { "level": 1, "q": "What do people traditionally eat on Shrove Tuesday?", "a": "Pancakes", "wrong": ["Hot cross buns", "Mince pies", "Christmas pudding"], "why": "It used up rich foods before Lent." },
+        { "level": 1, "q": "Which savoury pudding is traditionally served with roast beef?", "a": "Yorkshire pudding", "wrong": ["Christmas pudding", "Black pudding", "Sticky toffee pudding"], "why": "It is made from a batter of eggs, flour and milk." },
+        { "level": 2, "q": "Burns Night celebrates the poet who wrote which song?", "a": "Auld Lang Syne", "wrong": ["Danny Boy", "Jerusalem", "Greensleeves"], "why": "Robert Burns was born on 25 January 1759." },
+        { "level": 2, "q": "Which vegetable is a national emblem of Wales?", "a": "Leek", "wrong": ["Thistle", "Rose", "Shamrock"], "why": "People wear it, or a daffodil, on St David's Day." },
+        { "level": 2, "q": "Which flower is the national emblem of Scotland?", "a": "Thistle", "wrong": ["Rose", "Daffodil", "Shamrock"], "why": "Legend says it helped warn of a Norse attack." },
+        { "level": 2, "q": "Which August event in Edinburgh is the world's largest arts festival?", "a": "Edinburgh Festival Fringe", "wrong": ["Glastonbury", "Hay Festival", "Notting Hill Carnival"], "why": "It hosts thousands of shows." },
+        { "level": 2, "q": "Which Caribbean carnival takes over west London every August?", "a": "Notting Hill Carnival", "wrong": ["Leeds West Indian Carnival", "Glastonbury", "Pride in London"], "why": "It began in the 1960s." },
+        { "level": 2, "q": "Which cheese is named after a village in Somerset?", "a": "Cheddar", "wrong": ["Stilton", "Wensleydale", "Red Leicester"], "why": "It was matured in the Cheddar Gorge caves." },
+        { "level": 2, "q": "Which spiced bun is traditionally eaten on Good Friday?", "a": "Hot cross bun", "wrong": ["Chelsea bun", "Bath bun", "Eccles cake"], "why": "The cross on top is made of paste." },
+        { "level": 3, "q": "Eton mess is made of strawberries, cream and what?", "a": "Meringue", "wrong": ["Sponge cake", "Custard", "Jelly"], "why": "It is named after Eton College." },
+        { "level": 3, "q": "Which June parade marks the monarch's official birthday?", "a": "Trooping the Colour", "wrong": ["Changing of the Guard", "State Opening of Parliament", "Royal Maundy"], "why": "It takes place on Horse Guards Parade." }
+      ]
+    },
+    {
+      "name": "United Kingdom General Knowledge",
+      "questions": [
+        { "level": 1, "q": "Which four nations make up the United Kingdom?", "a": "England, Scotland, Wales and Northern Ireland", "wrong": ["England, Scotland, Wales and Ireland", "England, Scotland, Wales and Cornwall", "England, Scotland, Ireland and the Isle of Man"], "why": "The Republic of Ireland is a separate country." },
+        { "level": 1, "q": "What is the UK's flag commonly called?", "a": "Union Jack", "wrong": ["St George's Cross", "Saltire", "Red Ensign"], "why": "It combines the crosses of England, Scotland and Ireland." },
+        { "level": 1, "q": "What is the address of the Prime Minister's residence?", "a": "10 Downing Street", "wrong": ["11 Downing Street", "Kensington Palace", "Clarence House"], "why": "Number 11 belongs to the Chancellor." },
+        { "level": 1, "q": "What is the name of the great bell in the Elizabeth Tower at Westminster?", "a": "Big Ben", "wrong": ["Great Paul", "Great Tom", "Old Tom"], "why": "The name is often used for the whole tower." },
+        { "level": 1, "q": "What is the UK's currency?", "a": "Pound sterling", "wrong": ["Euro", "Shilling", "Guinea"], "why": "It is the oldest currency still in use." },
+        { "level": 1, "q": "What is the London Underground's nickname?", "a": "The Tube", "wrong": ["The Metro", "The El", "The Subway"], "why": "It opened in 1863, the world's first underground railway." },
+        { "level": 1, "q": "Who became King of the United Kingdom in 2022?", "a": "Charles III", "wrong": ["William V", "George VII", "Edward IX"], "why": "He succeeded Elizabeth II." },
+        { "level": 2, "q": "Which is the oldest university in the English-speaking world?", "a": "Oxford", "wrong": ["Cambridge", "St Andrews", "Edinburgh"], "why": "Teaching there dates back to at least 1096." },
+        { "level": 2, "q": "Who invented the World Wide Web?", "a": "Tim Berners-Lee", "wrong": ["Alan Turing", "Charles Babbage", "Ada Lovelace"], "why": "He proposed it in 1989." },
+        { "level": 2, "q": "At which country house did Alan Turing break codes in the Second World War?", "a": "Bletchley Park", "wrong": ["Porton Down", "Jodrell Bank", "Chequers"], "why": "It is now a museum." },
+        { "level": 2, "q": "How many MPs sit in the House of Commons?", "a": "650", "wrong": ["600", "500", "750"], "why": "Each represents one constituency." },
+        { "level": 2, "q": "Who discovered penicillin in 1928?", "a": "Alexander Fleming", "wrong": ["Joseph Lister", "Edward Jenner", "Francis Crick"], "why": "He noticed mould killing bacteria in a dish." },
+        { "level": 2, "q": "Which scientist described the laws of motion and universal gravitation?", "a": "Isaac Newton", "wrong": ["Robert Hooke", "Edmond Halley", "Michael Faraday"], "why": "He published them in 'Principia' in 1687." },
+        { "level": 3, "q": "Who wrote 'On the Origin of Species'?", "a": "Charles Darwin", "wrong": ["Alfred Russel Wallace", "Thomas Huxley", "Joseph Hooker"], "why": "It was published in 1859." },
+        { "level": 3, "q": "Which Scottish inventor gave the first public demonstration of television in 1926?", "a": "John Logie Baird", "wrong": ["Alexander Graham Bell", "James Watt", "Robert Watson-Watt"], "why": "He showed it in London." },
+        { "level": 3, "q": "Parliament meets in which palace?", "a": "Palace of Westminster", "wrong": ["St James's Palace", "Hampton Court Palace", "Windsor Castle"], "why": "It was rebuilt after a fire in 1834." }
+      ]
+    }
+  ]
+}

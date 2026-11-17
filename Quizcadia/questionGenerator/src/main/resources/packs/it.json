@@ -1,0 +1,1092 @@
+{
+ "category": "Italy",
+ "country": "IT",
+ "topics": [
+  {
+   "name": "Italy History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "According to legend, which twins founded Rome?",
+     "a": "Romulus and Remus",
+     "wrong": [
+      "Castor and Pollux",
+      "Apollo and Artemis",
+      "Cain and Abel"
+     ],
+     "why": "A she-wolf is said to have fed them."
+    },
+    {
+     "level": 1,
+     "q": "Which Roman leader was assassinated on the Ides of March, 44 BC?",
+     "a": "Julius Caesar",
+     "wrong": [
+      "Augustus",
+      "Nero",
+      "Mark Antony"
+     ],
+     "why": "Brutus was among the killers."
+    },
+    {
+     "level": 1,
+     "q": "Who was the first Roman emperor?",
+     "a": "Augustus",
+     "wrong": [
+      "Julius Caesar",
+      "Tiberius",
+      "Caligula"
+     ],
+     "why": "He ruled from 27 BC to AD 14."
+    },
+    {
+     "level": 1,
+     "q": "Which city was buried by Vesuvius in AD 79?",
+     "a": "Pompeii",
+     "wrong": [
+      "Ostia",
+      "Paestum",
+      "Capua"
+     ],
+     "why": "Herculaneum was buried too."
+    },
+    {
+     "level": 1,
+     "q": "Which general led the 'Expedition of the Thousand' to unify Italy?",
+     "a": "Giuseppe Garibaldi",
+     "wrong": [
+      "Camillo Cavour",
+      "Giuseppe Mazzini",
+      "Victor Emmanuel II"
+     ],
+     "why": "His men wore red shirts."
+    },
+    {
+     "level": 1,
+     "q": "Which Italian explorer gave his name to America?",
+     "a": "Amerigo Vespucci",
+     "wrong": [
+      "Christopher Columbus",
+      "John Cabot",
+      "Marco Polo"
+     ],
+     "why": "He realised the Americas were a new continent."
+    },
+    {
+     "level": 1,
+     "q": "Which Venetian travelled to Kublai Khan's court?",
+     "a": "Marco Polo",
+     "wrong": [
+      "Amerigo Vespucci",
+      "Giovanni da Verrazzano",
+      "Niccolò dei Conti"
+     ],
+     "why": "His travels were written down around 1300."
+    },
+    {
+     "level": 2,
+     "q": "In which year was Italy unified as a kingdom?",
+     "a": "1861",
+     "wrong": [
+      "1848",
+      "1871",
+      "1815"
+     ],
+     "why": "Rome became capital in 1871."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Italy become a republic by referendum?",
+     "a": "1946",
+     "wrong": [
+      "1945",
+      "1922",
+      "1948"
+     ],
+     "why": "2 June is Republic Day."
+    },
+    {
+     "level": 2,
+     "q": "Which Florentine banking family were great patrons of the Renaissance?",
+     "a": "The Medici",
+     "wrong": [
+      "The Borgia",
+      "The Sforza",
+      "The Este"
+     ],
+     "why": "They ruled Florence for generations."
+    },
+    {
+     "level": 2,
+     "q": "Which Carthaginian general crossed the Alps with elephants?",
+     "a": "Hannibal",
+     "wrong": [
+      "Hamilcar",
+      "Hasdrubal",
+      "Scipio"
+     ],
+     "why": "He invaded Italy in 218 BC."
+    },
+    {
+     "level": 2,
+     "q": "Which Roman emperor is blamed in legend for 'fiddling while Rome burned'?",
+     "a": "Nero",
+     "wrong": [
+      "Caligula",
+      "Domitian",
+      "Commodus"
+     ],
+     "why": "The Great Fire was in AD 64."
+    },
+    {
+     "level": 2,
+     "q": "Which fascist leader ruled Italy from 1922?",
+     "a": "Benito Mussolini",
+     "wrong": [
+      "Victor Emmanuel III",
+      "Antonio Gramsci",
+      "Pietro Badoglio"
+     ],
+     "why": "He was called 'Il Duce'."
+    },
+    {
+     "level": 3,
+     "q": "In which year did the Western Roman Empire fall?",
+     "a": "AD 476",
+     "wrong": [
+      "AD 410",
+      "AD 1453",
+      "AD 312"
+     ],
+     "why": "Odoacer deposed the last emperor."
+    },
+    {
+     "level": 3,
+     "q": "Who was the first King of united Italy?",
+     "a": "Victor Emmanuel II",
+     "wrong": [
+      "Umberto I",
+      "Charles Albert",
+      "Victor Emmanuel III"
+     ],
+     "why": "He was King of Sardinia before."
+    },
+    {
+     "level": 3,
+     "q": "Which writer wrote 'The Prince' in 1513?",
+     "a": "Niccolò Machiavelli",
+     "wrong": [
+      "Dante Alighieri",
+      "Petrarch",
+      "Baldassare Castiglione"
+     ],
+     "why": "'Machiavellian' comes from his name."
+    }
+   ]
+  },
+  {
+   "name": "Italy Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Italy?",
+     "a": "Rome",
+     "wrong": [
+      "Milan",
+      "Florence",
+      "Naples"
+     ],
+     "why": "It is called the Eternal City."
+    },
+    {
+     "level": 1,
+     "q": "Which city is built on canals and lagoon islands?",
+     "a": "Venice",
+     "wrong": [
+      "Verona",
+      "Genoa",
+      "Trieste"
+     ],
+     "why": "Gondolas carry tourists along its canals."
+    },
+    {
+     "level": 1,
+     "q": "Which city has a famous leaning tower?",
+     "a": "Pisa",
+     "wrong": [
+      "Lucca",
+      "Siena",
+      "Bologna"
+     ],
+     "why": "It began leaning during construction."
+    },
+    {
+     "level": 1,
+     "q": "What shape is mainland Italy often compared to?",
+     "a": "A boot",
+     "wrong": [
+      "A shoe horn",
+      "A hand",
+      "A fish"
+     ],
+     "why": "Sicily is the 'football'."
+    },
+    {
+     "level": 1,
+     "q": "Which is the largest island in the Mediterranean?",
+     "a": "Sicily",
+     "wrong": [
+      "Sardinia",
+      "Corsica",
+      "Cyprus"
+     ],
+     "why": "It is home to Mount Etna."
+    },
+    {
+     "level": 1,
+     "q": "Which tiny country lies inside Rome?",
+     "a": "Vatican City",
+     "wrong": [
+      "San Marino",
+      "Monaco",
+      "Malta"
+     ],
+     "why": "It is the world's smallest country."
+    },
+    {
+     "level": 1,
+     "q": "Which volcano overlooks Naples?",
+     "a": "Vesuvius",
+     "wrong": [
+      "Etna",
+      "Stromboli",
+      "Vulcano"
+     ],
+     "why": "It destroyed Pompeii."
+    },
+    {
+     "level": 2,
+     "q": "What is Italy's longest river?",
+     "a": "Po",
+     "wrong": [
+      "Tiber",
+      "Arno",
+      "Adige"
+     ],
+     "why": "It flows across the north into the Adriatic."
+    },
+    {
+     "level": 2,
+     "q": "Which river flows through Rome?",
+     "a": "Tiber",
+     "wrong": [
+      "Arno",
+      "Po",
+      "Adige"
+     ],
+     "why": "Its Italian name is Tevere."
+    },
+    {
+     "level": 2,
+     "q": "Which river flows through Florence?",
+     "a": "Arno",
+     "wrong": [
+      "Tiber",
+      "Po",
+      "Brenta"
+     ],
+     "why": "The Ponte Vecchio crosses it."
+    },
+    {
+     "level": 2,
+     "q": "What is Europe's tallest active volcano, on Sicily?",
+     "a": "Mount Etna",
+     "wrong": [
+      "Vesuvius",
+      "Stromboli",
+      "Campi Flegrei"
+     ],
+     "why": "It is over 3,300 m high."
+    },
+    {
+     "level": 2,
+     "q": "Which coastline south of Naples has cliffside towns like Positano?",
+     "a": "Amalfi Coast",
+     "wrong": [
+      "Cinque Terre",
+      "Riviera di Ponente",
+      "Costa Smeralda"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which is Italy's largest lake?",
+     "a": "Lake Garda",
+     "wrong": [
+      "Lake Como",
+      "Lake Maggiore",
+      "Lake Trasimeno"
+     ],
+     "why": "It lies between Milan and Venice."
+    },
+    {
+     "level": 3,
+     "q": "Which five villages on the Ligurian coast are a UNESCO site?",
+     "a": "Cinque Terre",
+     "wrong": [
+      "Amalfi Coast",
+      "Langhe",
+      "Val d'Orcia"
+     ],
+     "why": "A hiking path links them."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain range runs down the length of Italy?",
+     "a": "Apennines",
+     "wrong": [
+      "Alps",
+      "Dolomites",
+      "Carpathians"
+     ],
+     "why": "It is about 1,200 km long."
+    },
+    {
+     "level": 3,
+     "q": "Which enclave republic is surrounded by Italy near Rimini?",
+     "a": "San Marino",
+     "wrong": [
+      "Vatican City",
+      "Monaco",
+      "Liechtenstein"
+     ],
+     "why": "It claims to be the oldest republic."
+    }
+   ]
+  },
+  {
+   "name": "Italy Sport",
+   "questions": [
+    {
+     "level": 1,
+     "q": "How many FIFA World Cups has Italy won?",
+     "a": "4",
+     "wrong": [
+      "3",
+      "5",
+      "2"
+     ],
+     "why": "In 1934, 1938, 1982 and 2006."
+    },
+    {
+     "level": 1,
+     "q": "What is Italy's national football team nicknamed?",
+     "a": "Gli Azzurri",
+     "wrong": [
+      "La Roja",
+      "Les Bleus",
+      "Oranje"
+     ],
+     "why": "It means 'the Blues'."
+    },
+    {
+     "level": 1,
+     "q": "Which Formula One team is based in Maranello?",
+     "a": "Ferrari",
+     "wrong": [
+      "Alfa Romeo",
+      "Minardi",
+      "Lamborghini"
+     ],
+     "why": "Its symbol is a prancing horse."
+    },
+    {
+     "level": 1,
+     "q": "Which cycling race awards a pink jersey?",
+     "a": "Giro d'Italia",
+     "wrong": [
+      "Tour de France",
+      "Vuelta a España",
+      "Milan–San Remo"
+     ],
+     "why": "The maglia rosa is pink like the sponsor's paper."
+    },
+    {
+     "level": 1,
+     "q": "Which Italian club is nicknamed 'La Vecchia Signora' (Old Lady)?",
+     "a": "Juventus",
+     "wrong": [
+      "AC Milan",
+      "Inter Milan",
+      "AS Roma"
+     ],
+     "why": "It is based in Turin."
+    },
+    {
+     "level": 1,
+     "q": "Which Milan stadium do AC Milan and Inter share?",
+     "a": "San Siro",
+     "wrong": [
+      "Stadio Olimpico",
+      "Allianz Stadium",
+      "Stadio Maradona"
+     ],
+     "why": "It is officially the Giuseppe Meazza."
+    },
+    {
+     "level": 1,
+     "q": "Which Italian won the men's Australian Open in 2024?",
+     "a": "Jannik Sinner",
+     "wrong": [
+      "Lorenzo Musetti",
+      "Matteo Berrettini",
+      "Fabio Fognini"
+     ],
+     "why": "He was Italy's first men's Grand Slam champion since 1976."
+    },
+    {
+     "level": 2,
+     "q": "Which MotoGP rider is nicknamed 'The Doctor'?",
+     "a": "Valentino Rossi",
+     "wrong": [
+      "Max Biaggi",
+      "Andrea Dovizioso",
+      "Francesco Bagnaia"
+     ],
+     "why": "He won seven premier-class titles."
+    },
+    {
+     "level": 2,
+     "q": "Which goalkeeper won the 2006 World Cup and played into his 40s?",
+     "a": "Gianluigi Buffon",
+     "wrong": [
+      "Dino Zoff",
+      "Walter Zenga",
+      "Gianluigi Donnarumma"
+     ],
+     "why": "He played for Juventus for most of his career."
+    },
+    {
+     "level": 2,
+     "q": "Which team did Italy beat on penalties in the 2006 World Cup final?",
+     "a": "France",
+     "wrong": [
+      "Germany",
+      "Brazil",
+      "Portugal"
+     ],
+     "why": "Zidane was sent off in that final."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Italy win the European Championship at Wembley?",
+     "a": "2021",
+     "wrong": [
+      "2016",
+      "2000",
+      "2012"
+     ],
+     "why": "They beat England on penalties; it was Euro 2020."
+    },
+    {
+     "level": 2,
+     "q": "Which city hosted the 1960 Summer Olympics?",
+     "a": "Rome",
+     "wrong": [
+      "Milan",
+      "Turin",
+      "Naples"
+     ],
+     "why": "Abebe Bikila won the marathon barefoot."
+    },
+    {
+     "level": 2,
+     "q": "Which cities co-hosted the 2026 Winter Olympics?",
+     "a": "Milan and Cortina d'Ampezzo",
+     "wrong": [
+      "Turin and Milan",
+      "Rome and Cortina",
+      "Bolzano and Turin"
+     ],
+     "why": "Turin hosted in 2006."
+    },
+    {
+     "level": 3,
+     "q": "Which Italian sprinter won the 100 m at Tokyo 2020?",
+     "a": "Marcell Jacobs",
+     "wrong": [
+      "Filippo Tortu",
+      "Pietro Mennea",
+      "Lorenzo Patta"
+     ],
+     "why": "Italy also won the 4×100 m relay."
+    },
+    {
+     "level": 3,
+     "q": "Which Napoli legend has the club's stadium named after him?",
+     "a": "Diego Maradona",
+     "wrong": [
+      "Marek Hamšík",
+      "Dries Mertens",
+      "Ciro Ferrara"
+     ],
+     "why": "He won two league titles with Napoli."
+    },
+    {
+     "level": 3,
+     "q": "Which Italian sprinter held the 200 m world record from 1979 to 1996?",
+     "a": "Pietro Mennea",
+     "wrong": [
+      "Marcell Jacobs",
+      "Livio Berruti",
+      "Stefano Tilli"
+     ],
+     "why": "He ran 19.72 in Mexico City."
+    }
+   ]
+  },
+  {
+   "name": "Italy Film, TV & Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who painted the 'Mona Lisa'?",
+     "a": "Leonardo da Vinci",
+     "wrong": [
+      "Michelangelo",
+      "Raphael",
+      "Botticelli"
+     ],
+     "why": "He was born in Vinci, Tuscany."
+    },
+    {
+     "level": 1,
+     "q": "Who painted the Sistine Chapel ceiling?",
+     "a": "Michelangelo",
+     "wrong": [
+      "Raphael",
+      "Leonardo da Vinci",
+      "Caravaggio"
+     ],
+     "why": "He worked on it from 1508 to 1512."
+    },
+    {
+     "level": 1,
+     "q": "Which tenor was part of 'The Three Tenors'?",
+     "a": "Luciano Pavarotti",
+     "wrong": [
+      "Andrea Bocelli",
+      "Enrico Caruso",
+      "Mario Lanza"
+     ],
+     "why": "He sang 'Nessun dorma' at the 1990 World Cup."
+    },
+    {
+     "level": 1,
+     "q": "Which rock band won Eurovision 2021 for Italy?",
+     "a": "Måneskin",
+     "wrong": [
+      "Il Volo",
+      "Negramaro",
+      "Modà"
+     ],
+     "why": "They sang 'Zitti e buoni'."
+    },
+    {
+     "level": 1,
+     "q": "Which poet wrote 'The Divine Comedy'?",
+     "a": "Dante Alighieri",
+     "wrong": [
+      "Petrarch",
+      "Boccaccio",
+      "Virgil"
+     ],
+     "why": "It follows Dante through Hell, Purgatory and Paradise."
+    },
+    {
+     "level": 1,
+     "q": "Which Roberto Benigni film won three Oscars in 1999?",
+     "a": "Life Is Beautiful",
+     "wrong": [
+      "Cinema Paradiso",
+      "Il Postino",
+      "The Great Beauty"
+     ],
+     "why": "Benigni won Best Actor."
+    },
+    {
+     "level": 1,
+     "q": "Which blind singer had a hit with 'Con te partirò'?",
+     "a": "Andrea Bocelli",
+     "wrong": [
+      "Luciano Pavarotti",
+      "Eros Ramazzotti",
+      "Zucchero"
+     ],
+     "why": "The English version is 'Time to Say Goodbye'."
+    },
+    {
+     "level": 2,
+     "q": "Which composer wrote the operas 'Aida' and 'La Traviata'?",
+     "a": "Giuseppe Verdi",
+     "wrong": [
+      "Giacomo Puccini",
+      "Gioachino Rossini",
+      "Vincenzo Bellini"
+     ],
+     "why": "Many of his operas premiered at La Scala."
+    },
+    {
+     "level": 2,
+     "q": "Which composer wrote 'La Bohème' and 'Madama Butterfly'?",
+     "a": "Giacomo Puccini",
+     "wrong": [
+      "Giuseppe Verdi",
+      "Gaetano Donizetti",
+      "Pietro Mascagni"
+     ],
+     "why": "'Nessun dorma' is from his 'Turandot'."
+    },
+    {
+     "level": 2,
+     "q": "Which director made 'La Dolce Vita'?",
+     "a": "Federico Fellini",
+     "wrong": [
+      "Michelangelo Antonioni",
+      "Vittorio De Sica",
+      "Roberto Rossellini"
+     ],
+     "why": "Its Trevi Fountain scene is iconic."
+    },
+    {
+     "level": 2,
+     "q": "Which composer scored 'The Good, the Bad and the Ugly'?",
+     "a": "Ennio Morricone",
+     "wrong": [
+      "Nino Rota",
+      "Riz Ortolani",
+      "Ludovico Einaudi"
+     ],
+     "why": "He finally won a competitive Oscar for 'The Hateful Eight'."
+    },
+    {
+     "level": 2,
+     "q": "Which Milan opera house is one of the most famous in the world?",
+     "a": "La Scala",
+     "wrong": [
+      "La Fenice",
+      "Teatro San Carlo",
+      "Teatro Massimo"
+     ],
+     "why": "It opened in 1778."
+    },
+    {
+     "level": 2,
+     "q": "Which Baroque composer wrote 'The Four Seasons'?",
+     "a": "Antonio Vivaldi",
+     "wrong": [
+      "Arcangelo Corelli",
+      "Domenico Scarlatti",
+      "Claudio Monteverdi"
+     ],
+     "why": "He was a Venetian priest."
+    },
+    {
+     "level": 3,
+     "q": "Which 1948 neorealist film follows a father searching for his stolen bicycle?",
+     "a": "Bicycle Thieves",
+     "wrong": [
+      "Rome, Open City",
+      "Umberto D.",
+      "La Strada"
+     ],
+     "why": "Vittorio De Sica directed it."
+    },
+    {
+     "level": 3,
+     "q": "Who wrote 'The Name of the Rose'?",
+     "a": "Umberto Eco",
+     "wrong": [
+      "Italo Calvino",
+      "Elena Ferrante",
+      "Alberto Moravia"
+     ],
+     "why": "It is a mystery set in a monastery."
+    },
+    {
+     "level": 3,
+     "q": "Which Renaissance painter made 'The Birth of Venus'?",
+     "a": "Sandro Botticelli",
+     "wrong": [
+      "Titian",
+      "Raphael",
+      "Giotto"
+     ],
+     "why": "It hangs in the Uffizi in Florence."
+    }
+   ]
+  },
+  {
+   "name": "Italy Food & Traditions",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which city is the home of pizza margherita?",
+     "a": "Naples",
+     "wrong": [
+      "Rome",
+      "Milan",
+      "Palermo"
+     ],
+     "why": "Its colours match the Italian flag."
+    },
+    {
+     "level": 1,
+     "q": "Which layered coffee dessert means 'pick me up'?",
+     "a": "Tiramisu",
+     "wrong": [
+      "Panna cotta",
+      "Cannoli",
+      "Zabaglione"
+     ],
+     "why": "It is made with mascarpone and ladyfingers."
+    },
+    {
+     "level": 1,
+     "q": "Which hard cheese comes from around Parma and Reggio Emilia?",
+     "a": "Parmigiano Reggiano",
+     "wrong": [
+      "Pecorino Romano",
+      "Grana Padano",
+      "Mozzarella"
+     ],
+     "why": "It is aged for at least 12 months."
+    },
+    {
+     "level": 1,
+     "q": "Which Italian ice cream is famous worldwide?",
+     "a": "Gelato",
+     "wrong": [
+      "Sorbetto",
+      "Granita",
+      "Semifreddo"
+     ],
+     "why": "It has less air than ice cream."
+    },
+    {
+     "level": 1,
+     "q": "Which Roman pasta dish uses egg, cheese, guanciale and pepper?",
+     "a": "Carbonara",
+     "wrong": [
+      "Amatriciana",
+      "Arrabbiata",
+      "Puttanesca"
+     ],
+     "why": "Traditional carbonara has no cream."
+    },
+    {
+     "level": 1,
+     "q": "Which basil sauce comes from Genoa?",
+     "a": "Pesto",
+     "wrong": [
+      "Ragù",
+      "Pomodoro",
+      "Salsa verde"
+     ],
+     "why": "It uses basil, pine nuts and Parmesan."
+    },
+    {
+     "level": 1,
+     "q": "Which fried tube pastries filled with ricotta come from Sicily?",
+     "a": "Cannoli",
+     "wrong": [
+      "Sfogliatelle",
+      "Zeppole",
+      "Bomboloni"
+     ],
+     "why": "They appear in 'The Godfather'."
+    },
+    {
+     "level": 2,
+     "q": "Which meat sauce comes from Bologna?",
+     "a": "Ragù alla bolognese",
+     "wrong": [
+      "Carbonara",
+      "Cacio e pepe",
+      "Norma"
+     ],
+     "why": "In Bologna it is served with tagliatelle."
+    },
+    {
+     "level": 2,
+     "q": "Which Venice festival is famous for masks?",
+     "a": "Carnival of Venice",
+     "wrong": [
+      "Palio di Siena",
+      "Festa della Repubblica",
+      "Ferragosto"
+     ],
+     "why": "It ends on Shrove Tuesday."
+    },
+    {
+     "level": 2,
+     "q": "Which Siena horse race is run around the Piazza del Campo?",
+     "a": "Palio di Siena",
+     "wrong": [
+      "Giostra del Saracino",
+      "Calcio Storico",
+      "Regata Storica"
+     ],
+     "why": "It is held twice each summer."
+    },
+    {
+     "level": 2,
+     "q": "Which saffron rice dish is a Milanese classic?",
+     "a": "Risotto alla milanese",
+     "wrong": [
+      "Arancini",
+      "Risi e bisi",
+      "Paella"
+     ],
+     "why": "It is often served with osso buco."
+    },
+    {
+     "level": 2,
+     "q": "Which holiday on 15 August is a summer break for Italians?",
+     "a": "Ferragosto",
+     "wrong": [
+      "Epifania",
+      "Pasquetta",
+      "Festa della Liberazione"
+     ],
+     "why": "It dates back to Emperor Augustus."
+    },
+    {
+     "level": 2,
+     "q": "Which sweet bread is eaten at Christmas, especially in Milan?",
+     "a": "Panettone",
+     "wrong": [
+      "Pandoro",
+      "Colomba",
+      "Panforte"
+     ],
+     "why": "Pandoro is the star-shaped Verona version."
+    },
+    {
+     "level": 3,
+     "q": "Which balsamic vinegar city is in Emilia-Romagna?",
+     "a": "Modena",
+     "wrong": [
+      "Parma",
+      "Ferrara",
+      "Rimini"
+     ],
+     "why": "Traditional balsamic is aged for at least 12 years."
+    },
+    {
+     "level": 3,
+     "q": "Which kind witch brings gifts to children on 6 January?",
+     "a": "La Befana",
+     "wrong": [
+      "Babbo Natale",
+      "La Strega",
+      "Santa Lucia"
+     ],
+     "why": "Naughty children get coal."
+    },
+    {
+     "level": 3,
+     "q": "What is the pre-dinner drink and snack ritual called in Italy?",
+     "a": "Aperitivo",
+     "wrong": [
+      "Digestivo",
+      "Merenda",
+      "Passeggiata"
+     ],
+     "why": "Spritz is a popular choice."
+    }
+   ]
+  },
+  {
+   "name": "Italy General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What are the colours of the Italian flag?",
+     "a": "Green, white and red",
+     "wrong": [
+      "Red, white and blue",
+      "Green, white and orange",
+      "Red, yellow and green"
+     ],
+     "why": "It is called 'il Tricolore'."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient amphitheatre in Rome held gladiator fights?",
+     "a": "Colosseum",
+     "wrong": [
+      "Pantheon",
+      "Circus Maximus",
+      "Forum"
+     ],
+     "why": "It held about 50,000 people."
+    },
+    {
+     "level": 1,
+     "q": "Which fountain in Rome do visitors throw coins into?",
+     "a": "Trevi Fountain",
+     "wrong": [
+      "Fountain of the Four Rivers",
+      "Triton Fountain",
+      "Barcaccia"
+     ],
+     "why": "A coin means you will return to Rome."
+    },
+    {
+     "level": 1,
+     "q": "What is Italy's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Lira",
+      "Franc",
+      "Peseta"
+     ],
+     "why": "It replaced the lira in 2002."
+    },
+    {
+     "level": 1,
+     "q": "Which scientist was tried for saying the Earth goes round the Sun?",
+     "a": "Galileo Galilei",
+     "wrong": [
+      "Copernicus",
+      "Giordano Bruno",
+      "Kepler"
+     ],
+     "why": "He was tried in 1633."
+    },
+    {
+     "level": 2,
+     "q": "What does the car brand name FIAT stand for?",
+     "a": "Fabbrica Italiana Automobili Torino",
+     "wrong": [
+      "Fabbrica Italiana Auto Trasporti",
+      "Ferrovie Italiane Automobili Torino",
+      "Fabbrica Internazionale Automobili Torino"
+     ],
+     "why": "It was founded in Turin in 1899."
+    },
+    {
+     "level": 1,
+     "q": "Which Italian invented the radio?",
+     "a": "Guglielmo Marconi",
+     "wrong": [
+      "Alessandro Volta",
+      "Antonio Meucci",
+      "Enrico Fermi"
+     ],
+     "why": "He shared the 1909 Nobel Prize in Physics."
+    },
+    {
+     "level": 2,
+     "q": "Which unit of electricity is named after Alessandro Volta?",
+     "a": "Volt",
+     "wrong": [
+      "Watt",
+      "Ampere",
+      "Ohm"
+     ],
+     "why": "He invented the battery."
+    },
+    {
+     "level": 2,
+     "q": "Which physicist built the first nuclear reactor in 1942?",
+     "a": "Enrico Fermi",
+     "wrong": [
+      "Ettore Majorana",
+      "Emilio Segrè",
+      "Guglielmo Marconi"
+     ],
+     "why": "He built it in Chicago."
+    },
+    {
+     "level": 2,
+     "q": "Which Roman temple has a huge concrete dome with an open oculus?",
+     "a": "Pantheon",
+     "wrong": [
+      "Colosseum",
+      "Temple of Saturn",
+      "Ara Pacis"
+     ],
+     "why": "It is almost 2,000 years old."
+    },
+    {
+     "level": 2,
+     "q": "Which country has the most UNESCO World Heritage Sites?",
+     "a": "Italy",
+     "wrong": [
+      "France",
+      "Spain",
+      "Greece"
+     ],
+     "why": "It has around 60, just ahead of China."
+    },
+    {
+     "level": 2,
+     "q": "Which Florence gallery holds Botticelli's works?",
+     "a": "Uffizi",
+     "wrong": [
+      "Accademia",
+      "Pitti Palace",
+      "Bargello"
+     ],
+     "why": "Michelangelo's David is in the Accademia."
+    },
+    {
+     "level": 2,
+     "q": "What is the Italian national anthem often called?",
+     "a": "Il Canto degli Italiani (Fratelli d'Italia)",
+     "wrong": [
+      "Va, pensiero",
+      "O sole mio",
+      "Bella ciao"
+     ],
+     "why": "Goffredo Mameli wrote the words in 1847."
+    },
+    {
+     "level": 3,
+     "q": "Which teacher developed a famous child-centred education method?",
+     "a": "Maria Montessori",
+     "wrong": [
+      "Grazia Deledda",
+      "Rita Levi-Montalcini",
+      "Matilde Serao"
+     ],
+     "why": "She opened her first school in Rome in 1907."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient road ran from Rome to Brindisi?",
+     "a": "Via Appia",
+     "wrong": [
+      "Via Flaminia",
+      "Via Aurelia",
+      "Via Emilia"
+     ],
+     "why": "It was called the 'queen of roads'."
+    },
+    {
+     "level": 3,
+     "q": "Which Italian scientist won the 1986 Nobel Prize for discovering nerve growth factor?",
+     "a": "Rita Levi-Montalcini",
+     "wrong": [
+      "Maria Montessori",
+      "Fabiola Gianotti",
+      "Samantha Cristoforetti"
+     ],
+     "why": "She lived to 103."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,346 @@
+{
+ "category": "Tanzania",
+ "country": "TZ",
+ "topics": [
+  {
+   "name": "Tanzania: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which two states united in 1964 to form Tanzania?",
+     "a": "Tanganyika and Zanzibar",
+     "wrong": [
+      "Kenya and Uganda",
+      "Tanganyika and Rwanda",
+      "Zanzibar and Pemba"
+     ],
+     "why": "The name joins the two."
+    },
+    {
+     "level": 1,
+     "q": "Who was Tanzania's first President?",
+     "a": "Julius Nyerere",
+     "wrong": [
+      "Ali Hassan Mwinyi",
+      "Jakaya Kikwete",
+      "Benjamin Mkapa"
+     ],
+     "why": "He was called 'Mwalimu', the teacher."
+    },
+    {
+     "level": 1,
+     "q": "Which island was famous for its spice trade and slave market?",
+     "a": "Zanzibar",
+     "wrong": [
+      "Pemba",
+      "Mafia",
+      "Kilwa"
+     ],
+     "why": "Its Stone Town is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which European power ruled Tanganyika before Britain?",
+     "a": "Germany",
+     "wrong": [
+      "Portugal",
+      "France",
+      "Belgium"
+     ],
+     "why": "It was part of German East Africa."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Tanganyika become independent?",
+     "a": "1961",
+     "wrong": [
+      "1957",
+      "1964",
+      "1970"
+     ],
+     "why": "Zanzibar followed in 1963."
+    },
+    {
+     "level": 1,
+     "q": "Who became Tanzania's first woman President, in 2021?",
+     "a": "Samia Suluhu Hassan",
+     "wrong": [
+      "Asha-Rose Migiro",
+      "Anne Makinda",
+      "Tulia Ackson"
+     ],
+     "why": "She is from Zanzibar."
+    },
+    {
+     "level": 1,
+     "q": "Which language did Nyerere promote to unite the country?",
+     "a": "Swahili",
+     "wrong": [
+      "English",
+      "Arabic",
+      "Chagga"
+     ],
+     "why": "Tanzania is a heartland of Swahili."
+    },
+    {
+     "level": 2,
+     "q": "Which 1905–07 rebellion fought German rule?",
+     "a": "Maji Maji Rebellion",
+     "wrong": [
+      "Mau Mau uprising",
+      "Herero War",
+      "Chilembwe uprising"
+     ],
+     "why": "Fighters believed sacred water protected them."
+    },
+    {
+     "level": 2,
+     "q": "Which 1896 conflict is called the shortest war in history?",
+     "a": "Anglo-Zanzibar War",
+     "wrong": [
+      "Anglo-Zulu War",
+      "Boer War",
+      "Pastry War"
+     ],
+     "why": "It lasted under an hour."
+    },
+    {
+     "level": 2,
+     "q": "Which gorge's fossils made it famous as a 'Cradle of Mankind'?",
+     "a": "Olduvai Gorge",
+     "wrong": [
+      "Rift Gorge",
+      "Ngorongoro Gorge",
+      "Kilwa Gorge"
+     ],
+     "why": "Louis and Mary Leakey worked there."
+    },
+    {
+     "level": 2,
+     "q": "Which island trading city has ruins from the 1200s?",
+     "a": "Kilwa Kisiwani",
+     "wrong": [
+      "Bagamoyo",
+      "Lamu",
+      "Mombasa"
+     ],
+     "why": "Ibn Battuta visited it."
+    },
+    {
+     "level": 2,
+     "q": "Which village socialism did Nyerere introduce?",
+     "a": "Ujamaa",
+     "wrong": [
+      "Harambee",
+      "Ubuntu",
+      "Négritude"
+     ],
+     "why": "It means 'familyhood'."
+    },
+    {
+     "level": 3,
+     "q": "Which Queen singer was born in Zanzibar?",
+     "a": "Freddie Mercury",
+     "wrong": [
+      "Elton John",
+      "David Bowie",
+      "George Michael"
+     ],
+     "why": "He was born Farrokh Bulsara in 1946."
+    },
+    {
+     "level": 3,
+     "q": "Which coastal town was a caravan port and the first German colonial capital?",
+     "a": "Bagamoyo",
+     "wrong": [
+      "Tanga",
+      "Kilwa",
+      "Lindi"
+     ],
+     "why": "Its name may mean 'lay down your heart'."
+    },
+    {
+     "level": 3,
+     "q": "Which Zanzibar-born writer won the 2021 Nobel Prize in Literature?",
+     "a": "Abdulrazak Gurnah",
+     "wrong": [
+      "Ngũgĩ wa Thiong'o",
+      "Shaaban Robert",
+      "M. G. Vassanji"
+     ],
+     "why": "He wrote 'Paradise'."
+    }
+   ]
+  },
+  {
+   "name": "Tanzania: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Africa's highest mountain?",
+     "a": "Mount Kilimanjaro",
+     "wrong": [
+      "Mount Kenya",
+      "Mount Stanley",
+      "Ras Dashen"
+     ],
+     "why": "It is 5,895 m high."
+    },
+    {
+     "level": 1,
+     "q": "Which national park hosts most of the Great Migration of wildebeest?",
+     "a": "Serengeti",
+     "wrong": [
+      "Ruaha",
+      "Selous",
+      "Tarangire"
+     ],
+     "why": "Its name means 'endless plains'."
+    },
+    {
+     "level": 1,
+     "q": "Which is Tanzania's largest city?",
+     "a": "Dar es Salaam",
+     "wrong": [
+      "Dodoma",
+      "Arusha",
+      "Mwanza"
+     ],
+     "why": "Its name means 'haven of peace'."
+    },
+    {
+     "level": 1,
+     "q": "Which city is Tanzania's official capital?",
+     "a": "Dodoma",
+     "wrong": [
+      "Dar es Salaam",
+      "Arusha",
+      "Zanzibar City"
+     ],
+     "why": "It was chosen in 1973."
+    },
+    {
+     "level": 1,
+     "q": "What is Tanzania's currency?",
+     "a": "Tanzanian shilling",
+     "wrong": [
+      "Kenyan shilling",
+      "Birr",
+      "Rand"
+     ],
+     "why": "Its code is TZS."
+    },
+    {
+     "level": 1,
+     "q": "Which huge lake does Tanzania share with Kenya and Uganda?",
+     "a": "Lake Victoria",
+     "wrong": [
+      "Lake Tanganyika",
+      "Lake Malawi",
+      "Lake Turkana"
+     ],
+     "why": "It is Africa's largest lake."
+    },
+    {
+     "level": 1,
+     "q": "Which people of northern Tanzania are famous for red cloth and jumping dances?",
+     "a": "Maasai",
+     "wrong": [
+      "Chagga",
+      "Sukuma",
+      "Hadza"
+     ],
+     "why": "They are herders."
+    },
+    {
+     "level": 2,
+     "q": "Which volcanic crater is a wildlife haven?",
+     "a": "Ngorongoro Crater",
+     "wrong": [
+      "Mount Meru",
+      "Olduvai Gorge",
+      "Lake Natron"
+     ],
+     "why": "It is the largest unbroken caldera."
+    },
+    {
+     "level": 2,
+     "q": "Which long, deep lake lies on Tanzania's western border?",
+     "a": "Lake Tanganyika",
+     "wrong": [
+      "Lake Victoria",
+      "Lake Rukwa",
+      "Lake Eyasi"
+     ],
+     "why": "It is the world's second-deepest lake."
+    },
+    {
+     "level": 2,
+     "q": "Which violet-blue gemstone is found only in Tanzania?",
+     "a": "Tanzanite",
+     "wrong": [
+      "Sapphire",
+      "Lapis lazuli",
+      "Aquamarine"
+     ],
+     "why": "It was discovered in 1967."
+    },
+    {
+     "level": 2,
+     "q": "Which old part of Zanzibar City has narrow lanes and carved doors?",
+     "a": "Stone Town",
+     "wrong": [
+      "Nungwi",
+      "Paje",
+      "Chake Chake"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which alkaline lake is a breeding ground for flamingos?",
+     "a": "Lake Natron",
+     "wrong": [
+      "Lake Manyara",
+      "Lake Eyasi",
+      "Lake Rukwa"
+     ],
+     "why": "Its water can look red."
+    },
+    {
+     "level": 3,
+     "q": "Which huge game reserve was renamed Nyerere National Park?",
+     "a": "Selous",
+     "wrong": [
+      "Ruaha",
+      "Katavi",
+      "Mikumi"
+     ],
+     "why": "It is one of Africa's largest protected areas."
+    },
+    {
+     "level": 3,
+     "q": "What is the printed cotton cloth with a Swahili saying called?",
+     "a": "Kanga",
+     "wrong": [
+      "Kente",
+      "Shuka",
+      "Tartan"
+     ],
+     "why": "Women wear and gift them."
+    },
+    {
+     "level": 3,
+     "q": "Which hunter-gatherer people live near Lake Eyasi?",
+     "a": "Hadza",
+     "wrong": [
+      "Maasai",
+      "Chagga",
+      "Sukuma"
+     ],
+     "why": "They speak a language with click sounds."
+    }
+   ]
+  }
+ ]
+}

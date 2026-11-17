@@ -1,0 +1,346 @@
+{
+ "category": "Peru",
+ "country": "PE",
+ "topics": [
+  {
+   "name": "Peru: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which empire built Machu Picchu?",
+     "a": "Inca Empire",
+     "wrong": [
+      "Aztec Empire",
+      "Maya",
+      "Moche"
+     ],
+     "why": "It was built in the 1400s."
+    },
+    {
+     "level": 1,
+     "q": "What was the capital of the Inca Empire?",
+     "a": "Cusco",
+     "wrong": [
+      "Lima",
+      "Quito",
+      "Arequipa"
+     ],
+     "why": "Its name means 'navel' in Quechua."
+    },
+    {
+     "level": 1,
+     "q": "Which Spanish conquistador captured the Inca emperor at Cajamarca in 1532?",
+     "a": "Francisco Pizarro",
+     "wrong": [
+      "Hernán Cortés",
+      "Diego de Almagro",
+      "Pedro de Valdivia"
+     ],
+     "why": "He later founded Lima."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Peru declare independence?",
+     "a": "1821",
+     "wrong": [
+      "1810",
+      "1824",
+      "1830"
+     ],
+     "why": "San Martín proclaimed it in Lima on 28 July."
+    },
+    {
+     "level": 1,
+     "q": "Which Inca emperor offered a room full of gold as ransom?",
+     "a": "Atahualpa",
+     "wrong": [
+      "Huáscar",
+      "Pachacuti",
+      "Manco Inca"
+     ],
+     "why": "He was executed in 1533."
+    },
+    {
+     "level": 1,
+     "q": "Which giant desert drawings of animals are seen best from the air?",
+     "a": "Nazca Lines",
+     "wrong": [
+      "Paracas Candelabra",
+      "Chan Chan",
+      "Caral"
+     ],
+     "why": "They are around 2,000 years old."
+    },
+    {
+     "level": 1,
+     "q": "Which Inca language is still spoken by millions in Peru?",
+     "a": "Quechua",
+     "wrong": [
+      "Aymara",
+      "Nahuatl",
+      "Guaraní"
+     ],
+     "why": "It is an official language."
+    },
+    {
+     "level": 2,
+     "q": "Which Inca ruler expanded the empire and rebuilt Cusco?",
+     "a": "Pachacuti",
+     "wrong": [
+      "Atahualpa",
+      "Huayna Capac",
+      "Manco Capac"
+     ],
+     "why": "His name means 'he who shakes the earth'."
+    },
+    {
+     "level": 2,
+     "q": "Which 1824 battle ended Spanish rule in South America?",
+     "a": "Battle of Ayacucho",
+     "wrong": [
+      "Battle of Junín",
+      "Battle of Boyacá",
+      "Battle of Maipú"
+     ],
+     "why": "Antonio José de Sucre won it."
+    },
+    {
+     "level": 2,
+     "q": "Which American explorer brought Machu Picchu to world attention in 1911?",
+     "a": "Hiram Bingham",
+     "wrong": [
+      "Thor Heyerdahl",
+      "Percy Fawcett",
+      "Gene Savoy"
+     ],
+     "why": "The Spanish never found it."
+    },
+    {
+     "level": 2,
+     "q": "Which 1879–84 war did Peru and Bolivia fight against Chile?",
+     "a": "War of the Pacific",
+     "wrong": [
+      "Chaco War",
+      "Paraguayan War",
+      "Cenepa War"
+     ],
+     "why": "Peru lost its southern provinces."
+    },
+    {
+     "level": 2,
+     "q": "Which adobe city was the capital of the Chimú kingdom?",
+     "a": "Chan Chan",
+     "wrong": [
+      "Caral",
+      "Kuélap",
+      "Pachacamac"
+     ],
+     "why": "It is the largest adobe city in the Americas."
+    },
+    {
+     "level": 3,
+     "q": "Which rebel leader of 1780 took the name of the last Inca?",
+     "a": "Túpac Amaru II",
+     "wrong": [
+      "Juan Santos Atahualpa",
+      "Mateo Pumacahua",
+      "Manco Inca"
+     ],
+     "why": "He was executed in Cusco."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient city near Lima is among the oldest in the Americas?",
+     "a": "Caral",
+     "wrong": [
+      "Chan Chan",
+      "Chavín de Huántar",
+      "Pachacamac"
+     ],
+     "why": "It dates to about 2600 BC."
+    },
+    {
+     "level": 3,
+     "q": "Which royal Moche tomb found near Chiclayo in 1987 is called the 'Tutankhamun of the Americas'?",
+     "a": "Lord of Sipán",
+     "wrong": [
+      "Lady of Cao",
+      "Lord of Huari",
+      "King of Chimor"
+     ],
+     "why": "It was found unlooted."
+    }
+   ]
+  },
+  {
+   "name": "Peru: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Peru?",
+     "a": "Lima",
+     "wrong": [
+      "Cusco",
+      "Arequipa",
+      "Trujillo"
+     ],
+     "why": "Pizarro founded it in 1535."
+    },
+    {
+     "level": 1,
+     "q": "Which lake on the Peru–Bolivia border is the highest navigable lake in the world?",
+     "a": "Lake Titicaca",
+     "wrong": [
+      "Lake Junín",
+      "Lake Poopó",
+      "Lake Parón"
+     ],
+     "why": "It lies at about 3,800 m."
+    },
+    {
+     "level": 1,
+     "q": "Which raw fish dish cured in lime juice is Peru's national dish?",
+     "a": "Ceviche",
+     "wrong": [
+      "Lomo saltado",
+      "Ají de gallina",
+      "Causa"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "Which woolly animals are herded in the Peruvian Andes?",
+     "a": "Llamas and alpacas",
+     "wrong": [
+      "Camels and yaks",
+      "Goats and sheep",
+      "Bison"
+     ],
+     "why": "Alpaca wool is very soft and warm."
+    },
+    {
+     "level": 1,
+     "q": "What is Peru's currency?",
+     "a": "Sol",
+     "wrong": [
+      "Peso",
+      "Real",
+      "Bolívar"
+     ],
+     "why": "Its name means 'sun'."
+    },
+    {
+     "level": 1,
+     "q": "Which grape brandy does Peru claim as its national drink?",
+     "a": "Pisco",
+     "wrong": [
+      "Chicha",
+      "Aguardiente",
+      "Mezcal"
+     ],
+     "why": "A pisco sour is made with it."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain path leads hikers to Machu Picchu?",
+     "a": "Inca Trail",
+     "wrong": [
+      "Camino Real",
+      "Andes Path",
+      "Sun Road"
+     ],
+     "why": "It usually takes four days."
+    },
+    {
+     "level": 2,
+     "q": "Which canyon near Arequipa is famous for its Andean condors?",
+     "a": "Colca Canyon",
+     "wrong": [
+      "Cotahuasi Canyon",
+      "Sacred Valley",
+      "Callejón de Huaylas"
+     ],
+     "why": "Condors ride the morning air currents there."
+    },
+    {
+     "level": 2,
+     "q": "Which islands on Lake Titicaca are made of floating reeds?",
+     "a": "Uros Islands",
+     "wrong": [
+      "Taquile",
+      "Amantaní",
+      "Isla del Sol"
+     ],
+     "why": "People build them from totora reeds."
+    },
+    {
+     "level": 2,
+     "q": "What is Peru's highest mountain?",
+     "a": "Huascarán",
+     "wrong": [
+      "Ausangate",
+      "Alpamayo",
+      "Yerupajá"
+     ],
+     "why": "It is 6,768 m high."
+    },
+    {
+     "level": 2,
+     "q": "Which striped 'Rainbow Mountain' is near Cusco?",
+     "a": "Vinicunca",
+     "wrong": [
+      "Ausangate",
+      "Salkantay",
+      "Huayna Picchu"
+     ],
+     "why": "Its colours come from minerals."
+    },
+    {
+     "level": 2,
+     "q": "Which Inca Festival of the Sun is held in Cusco each June?",
+     "a": "Inti Raymi",
+     "wrong": [
+      "Qoyllur Rit'i",
+      "Carnaval",
+      "Corpus Christi"
+     ],
+     "why": "It marks the winter solstice."
+    },
+    {
+     "level": 3,
+     "q": "Which Peruvian author won the 2010 Nobel Prize in Literature?",
+     "a": "Mario Vargas Llosa",
+     "wrong": [
+      "César Vallejo",
+      "Ciro Alegría",
+      "José María Arguedas"
+     ],
+     "why": "He wrote 'The Time of the Hero'."
+    },
+    {
+     "level": 3,
+     "q": "Which purple corn drink is popular in Peru?",
+     "a": "Chicha morada",
+     "wrong": [
+      "Inca Kola",
+      "Emoliente",
+      "Masato"
+     ],
+     "why": "It is spiced with cinnamon and cloves."
+    },
+    {
+     "level": 3,
+     "q": "Which stir-fry of beef, onions and chips shows Chinese influence?",
+     "a": "Lomo saltado",
+     "wrong": [
+      "Anticuchos",
+      "Ají de gallina",
+      "Rocoto relleno"
+     ],
+     "why": "Chinese-Peruvian cooking is called chifa."
+    }
+   ]
+  }
+ ]
+}

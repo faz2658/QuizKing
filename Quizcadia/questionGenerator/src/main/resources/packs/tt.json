@@ -1,0 +1,346 @@
+{
+ "category": "Trinidad and Tobago",
+ "country": "TT",
+ "topics": [
+  {
+   "name": "Trinidad and Tobago: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Trinidad and Tobago become independent?",
+     "a": "1962",
+     "wrong": [
+      "1958",
+      "1976",
+      "1970"
+     ],
+     "why": "It became a republic in 1976."
+    },
+    {
+     "level": 1,
+     "q": "Who was the first Prime Minister of Trinidad and Tobago?",
+     "a": "Eric Williams",
+     "wrong": [
+      "A. N. R. Robinson",
+      "Basdeo Panday",
+      "Patrick Manning"
+     ],
+     "why": "He wrote 'Capitalism and Slavery'."
+    },
+    {
+     "level": 1,
+     "q": "Which explorer named Trinidad in 1498?",
+     "a": "Christopher Columbus",
+     "wrong": [
+      "Walter Raleigh",
+      "Amerigo Vespucci",
+      "Francis Drake"
+     ],
+     "why": "He named it after the Holy Trinity."
+    },
+    {
+     "level": 1,
+     "q": "Which country ruled Trinidad before Britain took it in 1797?",
+     "a": "Spain",
+     "wrong": [
+      "France",
+      "Netherlands",
+      "Portugal"
+     ],
+     "why": "It became British under the 1802 treaty."
+    },
+    {
+     "level": 1,
+     "q": "Which workers came from India from 1845 after slavery ended?",
+     "a": "Indentured labourers",
+     "wrong": [
+      "Soldiers",
+      "Missionaries",
+      "Traders"
+     ],
+     "why": "Over a third of the population has Indian roots."
+    },
+    {
+     "level": 1,
+     "q": "Which festival before Lent is Trinidad's biggest celebration?",
+     "a": "Carnival",
+     "wrong": [
+      "Diwali",
+      "Hosay",
+      "Emancipation Day"
+     ],
+     "why": "It is one of the world's greatest carnivals."
+    },
+    {
+     "level": 1,
+     "q": "Who became the first woman Prime Minister, in 2010?",
+     "a": "Kamla Persad-Bissessar",
+     "wrong": [
+      "Keith Rowley",
+      "Patrick Manning",
+      "Basdeo Panday"
+     ],
+     "why": "She returned to the post in 2025."
+    },
+    {
+     "level": 2,
+     "q": "Which writer from Trinidad won the 2001 Nobel Prize in Literature?",
+     "a": "V. S. Naipaul",
+     "wrong": [
+      "Derek Walcott",
+      "Sam Selvon",
+      "Earl Lovelace"
+     ],
+     "why": "He wrote 'A House for Mr Biswas'."
+    },
+    {
+     "level": 2,
+     "q": "Which 1970 movement challenged the government?",
+     "a": "Black Power Revolution",
+     "wrong": [
+      "Morant Bay Rebellion",
+      "Grenada Revolution",
+      "Butler Riots"
+     ],
+     "why": "It was led by students and unions."
+    },
+    {
+     "level": 2,
+     "q": "Which labour leader led the 1937 oil workers' strike?",
+     "a": "Tubal Uriah 'Buzz' Butler",
+     "wrong": [
+      "Eric Williams",
+      "Arthur Cipriani",
+      "C. L. R. James"
+     ],
+     "why": "Labour Day honours the strike."
+    },
+    {
+     "level": 2,
+     "q": "Which island joined with Trinidad as a colony in 1889?",
+     "a": "Tobago",
+     "wrong": [
+      "Grenada",
+      "Barbados",
+      "St Vincent"
+     ],
+     "why": "It is the smaller island."
+    },
+    {
+     "level": 2,
+     "q": "Which Trinidadian writer wrote 'Beyond a Boundary' about cricket?",
+     "a": "C. L. R. James",
+     "wrong": [
+      "V. S. Naipaul",
+      "Sam Selvon",
+      "Eric Williams"
+     ],
+     "why": "It was published in 1963."
+    },
+    {
+     "level": 3,
+     "q": "Which attempted coup took place in 1990?",
+     "a": "Jamaat al Muslimeen coup attempt",
+     "wrong": [
+      "Black Power Revolution",
+      "Butler Riots",
+      "Grenada invasion"
+     ],
+     "why": "Parliament was held hostage."
+    },
+    {
+     "level": 3,
+     "q": "Which day on 1 August marks the end of slavery?",
+     "a": "Emancipation Day",
+     "wrong": [
+      "Independence Day",
+      "Arrival Day",
+      "Republic Day"
+     ],
+     "why": "Trinidad was the first country to make it a holiday."
+    },
+    {
+     "level": 3,
+     "q": "Which day on 30 May marks the arrival of Indian labourers?",
+     "a": "Indian Arrival Day",
+     "wrong": [
+      "Emancipation Day",
+      "Republic Day",
+      "Corpus Christi"
+     ],
+     "why": "The first ship was the Fatel Razack."
+    }
+   ]
+  },
+  {
+   "name": "Trinidad and Tobago: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Trinidad and Tobago?",
+     "a": "Port of Spain",
+     "wrong": [
+      "San Fernando",
+      "Scarborough",
+      "Chaguanas"
+     ],
+     "why": "It is in northwest Trinidad."
+    },
+    {
+     "level": 1,
+     "q": "Which musical instrument was invented in Trinidad?",
+     "a": "Steelpan",
+     "wrong": [
+      "Marimba",
+      "Kalimba",
+      "Bongo drum"
+     ],
+     "why": "It was made from oil drums."
+    },
+    {
+     "level": 1,
+     "q": "Which upbeat music style grew from calypso?",
+     "a": "Soca",
+     "wrong": [
+      "Reggae",
+      "Merengue",
+      "Zouk"
+     ],
+     "why": "Its name comes from 'soul of calypso'."
+    },
+    {
+     "level": 1,
+     "q": "Which street food is curried chickpeas in fried bread?",
+     "a": "Doubles",
+     "wrong": [
+      "Roti",
+      "Bake and shark",
+      "Pholourie"
+     ],
+     "why": "It is a favourite breakfast."
+    },
+    {
+     "level": 1,
+     "q": "What is Trinidad and Tobago's currency?",
+     "a": "Trinidad and Tobago dollar",
+     "wrong": [
+      "US dollar",
+      "East Caribbean dollar",
+      "Pound"
+     ],
+     "why": "Its code is TTD."
+    },
+    {
+     "level": 1,
+     "q": "Which natural lake of tar is in southern Trinidad?",
+     "a": "Pitch Lake",
+     "wrong": [
+      "Lake Asphalt",
+      "Bitumen Bay",
+      "Black Lake"
+     ],
+     "why": "It is the world's largest natural asphalt deposit."
+    },
+    {
+     "level": 1,
+     "q": "Which sprinter won Olympic 100 m gold for Trinidad in 1976?",
+     "a": "Hasely Crawford",
+     "wrong": [
+      "Ato Boldon",
+      "Richard Thompson",
+      "Keshorn Walcott"
+     ],
+     "why": "It was the country's first Olympic gold."
+    },
+    {
+     "level": 2,
+     "q": "Which sandwich of fried fish in bread is famous at Maracas Bay?",
+     "a": "Bake and shark",
+     "wrong": [
+      "Doubles",
+      "Flying fish sandwich",
+      "Roti"
+     ],
+     "why": "It is topped with sauces."
+    },
+    {
+     "level": 2,
+     "q": "Which Trinidadian cricketer once held the Test record score of 400?",
+     "a": "Brian Lara",
+     "wrong": [
+      "Viv Richards",
+      "Chris Gayle",
+      "Shivnarine Chanderpaul"
+     ],
+     "why": "He also scored 501 in a county match."
+    },
+    {
+     "level": 2,
+     "q": "Which bird sanctuary is famous for scarlet ibises?",
+     "a": "Caroni Swamp",
+     "wrong": [
+      "Asa Wright",
+      "Nariva Swamp",
+      "Main Ridge"
+     ],
+     "why": "The scarlet ibis is a national bird."
+    },
+    {
+     "level": 2,
+     "q": "Which Tobago forest is the oldest protected rainforest in the Western Hemisphere?",
+     "a": "Main Ridge Forest Reserve",
+     "wrong": [
+      "El Yunque",
+      "Asa Wright",
+      "Northern Range"
+     ],
+     "why": "It was protected in 1776."
+    },
+    {
+     "level": 2,
+     "q": "Which javelin thrower won Olympic gold in 2012?",
+     "a": "Keshorn Walcott",
+     "wrong": [
+      "Hasely Crawford",
+      "Ato Boldon",
+      "Jehue Gordon"
+     ],
+     "why": "He was only 19."
+    },
+    {
+     "level": 3,
+     "q": "Which calypsonian known as 'The Mighty Sparrow' won many crowns?",
+     "a": "Slinger Francisco",
+     "wrong": [
+      "Lord Kitchener",
+      "Calypso Rose",
+      "David Rudder"
+     ],
+     "why": "He is called the Calypso King of the World."
+    },
+    {
+     "level": 3,
+     "q": "Which hip-hop star was born in Trinidad?",
+     "a": "Nicki Minaj",
+     "wrong": [
+      "Rihanna",
+      "Cardi B",
+      "Missy Elliott"
+     ],
+     "why": "She moved to New York as a child."
+    },
+    {
+     "level": 3,
+     "q": "Which Muslim festival in Trinidad commemorates Hussein with colourful tombs?",
+     "a": "Hosay",
+     "wrong": [
+      "Eid",
+      "Phagwah",
+      "Divali"
+     ],
+     "why": "It has Indian Shia roots."
+    }
+   ]
+  }
+ ]
+}

@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import { allCountries, countryFromZone, flag, guessCountry } from './countries';
+import { readdirSync } from 'node:fs';
+import { resolve } from 'node:path';
+import { allCountries, CODES, countryFromZone, flag, guessCountry } from './countries';
+import { COUNTRY_ZONES } from './zones';
 import { project } from '../ui/world-map';
 import { clock } from '../pages/world';
 
@@ -29,6 +32,39 @@ describe('countries', () => {
       expect(allCountries().some((c) => c.code === countryFromZone(zone))).toBe(true);
     }
     expect(countryFromZone('Etc/GMT+5')).toBeNull();
+  });
+
+  it('places players in every country by time zone, including the newer question packs', () => {
+    expect(countryFromZone('Europe/Tallinn')).toBe('EE');
+    expect(countryFromZone('Europe/Zagreb')).toBe('HR');
+    expect(countryFromZone('America/Montevideo')).toBe('UY');
+    expect(countryFromZone('Africa/Kinshasa')).toBe('CD');
+    expect(countryFromZone('Africa/Lubumbashi')).toBe('CD');
+    expect(guessCountry(['en-US'], 'Europe/Riga')).toBe('LV');
+    // old zone names some browsers still report
+    expect(countryFromZone('Asia/Calcutta')).toBe('IN');
+    expect(countryFromZone('Europe/Kiev')).toBe('UA');
+    expect(countryFromZone('US/Eastern')).toBe('US');
+  });
+
+  it('has at least one time zone for every country in the picker', () => {
+    const zoneCountries = new Set(Object.keys(COUNTRY_ZONES));
+    expect(CODES.filter((c) => !zoneCountries.has(c))).toEqual([]);
+    for (const [code, zones] of Object.entries(COUNTRY_ZONES)) {
+      expect(CODES).toContain(code);
+      for (const zone of zones.split(' ')) {
+        expect(countryFromZone(zone)).toBe(code);
+      }
+    }
+  });
+
+  it('has a time zone for the country of every question pack', () => {
+    const dir = resolve(process.cwd(), '../questionGenerator/src/main/resources/packs');
+    const packs = readdirSync(dir)
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => f.slice(0, -5).toUpperCase());
+    expect(packs.length).toBeGreaterThan(100);
+    expect(packs.filter((c) => !COUNTRY_ZONES[c])).toEqual([]);
   });
 
   it('lists countries by name', () => {

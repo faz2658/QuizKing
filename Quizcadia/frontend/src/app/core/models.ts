@@ -27,6 +27,8 @@ export interface GameCard {
   questionCount?: number;
   mode: 'SINGLE' | 'MULTI';
   reason?: string;
+  /** The country whose question set this game is from (e.g. IN); null for world trivia. */
+  country?: string | null;
 }
 
 // ---- single player (game engine) ----

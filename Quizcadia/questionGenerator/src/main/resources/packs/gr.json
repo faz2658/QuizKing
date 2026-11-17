@@ -1,0 +1,346 @@
+{
+ "category": "Greece",
+ "country": "GR",
+ "topics": [
+  {
+   "name": "Greece: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which city-state was the birthplace of democracy?",
+     "a": "Athens",
+     "wrong": [
+      "Sparta",
+      "Corinth",
+      "Thebes"
+     ],
+     "why": "Citizens voted in the assembly."
+    },
+    {
+     "level": 1,
+     "q": "Which Macedonian king conquered an empire reaching India?",
+     "a": "Alexander the Great",
+     "wrong": [
+      "Philip II",
+      "Pericles",
+      "Leonidas"
+     ],
+     "why": "He was taught by Aristotle."
+    },
+    {
+     "level": 1,
+     "q": "Which temple on the Acropolis was dedicated to Athena?",
+     "a": "Parthenon",
+     "wrong": [
+      "Erechtheion",
+      "Temple of Zeus",
+      "Temple of Hephaestus"
+     ],
+     "why": "It was finished in 432 BC."
+    },
+    {
+     "level": 1,
+     "q": "Where were the ancient Olympic Games held?",
+     "a": "Olympia",
+     "wrong": [
+      "Athens",
+      "Delphi",
+      "Sparta"
+     ],
+     "why": "They began in 776 BC."
+    },
+    {
+     "level": 1,
+     "q": "Which philosopher was the teacher of Plato?",
+     "a": "Socrates",
+     "wrong": [
+      "Aristotle",
+      "Pythagoras",
+      "Diogenes"
+     ],
+     "why": "He left no writings of his own."
+    },
+    {
+     "level": 1,
+     "q": "Which Spartan king fought at Thermopylae in 480 BC?",
+     "a": "Leonidas",
+     "wrong": [
+      "Lysander",
+      "Agis",
+      "Pausanias"
+     ],
+     "why": "300 Spartans led the defence."
+    },
+    {
+     "level": 1,
+     "q": "Which poet is said to have written the 'Iliad' and the 'Odyssey'?",
+     "a": "Homer",
+     "wrong": [
+      "Hesiod",
+      "Sophocles",
+      "Virgil"
+     ],
+     "why": "They tell of the Trojan War and Odysseus's journey home."
+    },
+    {
+     "level": 2,
+     "q": "In which year did the Greek War of Independence begin?",
+     "a": "1821",
+     "wrong": [
+      "1453",
+      "1830",
+      "1912"
+     ],
+     "why": "25 March is Independence Day."
+    },
+    {
+     "level": 2,
+     "q": "Which philosopher taught Alexander the Great?",
+     "a": "Aristotle",
+     "wrong": [
+      "Plato",
+      "Socrates",
+      "Zeno"
+     ],
+     "why": "He founded the Lyceum in Athens."
+    },
+    {
+     "level": 2,
+     "q": "Which sanctuary was home to the famous oracle of Apollo?",
+     "a": "Delphi",
+     "wrong": [
+      "Olympia",
+      "Dodona",
+      "Delos"
+     ],
+     "why": "It was seen as the centre of the world."
+    },
+    {
+     "level": 2,
+     "q": "Which Bronze Age palace on Crete is linked to the Minotaur legend?",
+     "a": "Knossos",
+     "wrong": [
+      "Mycenae",
+      "Pylos",
+      "Phaistos"
+     ],
+     "why": "The Minoans built it."
+    },
+    {
+     "level": 2,
+     "q": "Which statesman led Athens in its golden age?",
+     "a": "Pericles",
+     "wrong": [
+      "Solon",
+      "Themistocles",
+      "Cleisthenes"
+     ],
+     "why": "He built the Parthenon."
+    },
+    {
+     "level": 3,
+     "q": "Which naval battle in 480 BC saw the Greeks defeat Persia?",
+     "a": "Salamis",
+     "wrong": [
+      "Marathon",
+      "Actium",
+      "Lepanto"
+     ],
+     "why": "Themistocles planned the victory."
+    },
+    {
+     "level": 3,
+     "q": "Which Byzantine capital fell to the Ottomans in 1453?",
+     "a": "Constantinople",
+     "wrong": [
+      "Thessaloniki",
+      "Athens",
+      "Mystras"
+     ],
+     "why": "Greek rule there ended."
+    },
+    {
+     "level": 3,
+     "q": "Which mathematician gave his name to a theorem about right-angled triangles?",
+     "a": "Pythagoras",
+     "wrong": [
+      "Euclid",
+      "Archimedes",
+      "Thales"
+     ],
+     "why": "He lived on Samos."
+    }
+   ]
+  },
+  {
+   "name": "Greece: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Greece?",
+     "a": "Athens",
+     "wrong": [
+      "Thessaloniki",
+      "Sparta",
+      "Patras"
+     ],
+     "why": "It is named after the goddess Athena."
+    },
+    {
+     "level": 1,
+     "q": "Which island has white houses and blue domes above a volcanic caldera?",
+     "a": "Santorini",
+     "wrong": [
+      "Mykonos",
+      "Crete",
+      "Rhodes"
+     ],
+     "why": "It erupted around 1600 BC."
+    },
+    {
+     "level": 1,
+     "q": "Which is Greece's largest island?",
+     "a": "Crete",
+     "wrong": [
+      "Rhodes",
+      "Euboea",
+      "Corfu"
+     ],
+     "why": "Heraklion is its capital."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain was home to the Greek gods?",
+     "a": "Mount Olympus",
+     "wrong": [
+      "Mount Parnassus",
+      "Mount Athos",
+      "Mount Ida"
+     ],
+     "why": "It is Greece's highest mountain."
+    },
+    {
+     "level": 1,
+     "q": "Which cheese is used in a Greek salad?",
+     "a": "Feta",
+     "wrong": [
+      "Halloumi",
+      "Mozzarella",
+      "Ricotta"
+     ],
+     "why": "It is made from sheep's or goat's milk."
+    },
+    {
+     "level": 1,
+     "q": "Which sauce of yoghurt, cucumber and garlic is Greek?",
+     "a": "Tzatziki",
+     "wrong": [
+      "Hummus",
+      "Raita",
+      "Baba ganoush"
+     ],
+     "why": "It is served with souvlaki."
+    },
+    {
+     "level": 1,
+     "q": "What is Greece's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Drachma",
+      "Lira",
+      "Dinar"
+     ],
+     "why": "It replaced the drachma in 2002."
+    },
+    {
+     "level": 2,
+     "q": "Which layered aubergine and meat dish is Greek?",
+     "a": "Moussaka",
+     "wrong": [
+      "Pastitsio",
+      "Spanakopita",
+      "Dolmades"
+     ],
+     "why": "It is topped with béchamel sauce."
+    },
+    {
+     "level": 2,
+     "q": "Which monasteries are perched on rock pillars in Thessaly?",
+     "a": "Meteora",
+     "wrong": [
+      "Mount Athos",
+      "Mystras",
+      "Hosios Loukas"
+     ],
+     "why": "Their name means 'suspended in the air'."
+    },
+    {
+     "level": 2,
+     "q": "Which island is the birthplace of Hippocrates?",
+     "a": "Kos",
+     "wrong": [
+      "Rhodes",
+      "Samos",
+      "Lesbos"
+     ],
+     "why": "He is called the father of medicine."
+    },
+    {
+     "level": 2,
+     "q": "Which Greek basketball star won NBA MVP twice?",
+     "a": "Giannis Antetokounmpo",
+     "wrong": [
+      "Nikos Galis",
+      "Kostas Sloukas",
+      "Vassilis Spanoulis"
+     ],
+     "why": "He is nicknamed the 'Greek Freak'."
+    },
+    {
+     "level": 2,
+     "q": "Which composer wrote the music for 'Zorba the Greek'?",
+     "a": "Mikis Theodorakis",
+     "wrong": [
+      "Vangelis",
+      "Manos Hatzidakis",
+      "Yanni"
+     ],
+     "why": "It made the sirtaki dance famous."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Greece win the European football championship?",
+     "a": "2004",
+     "wrong": [
+      "1980",
+      "2008",
+      "1996"
+     ],
+     "why": "They beat hosts Portugal in the final."
+    },
+    {
+     "level": 3,
+     "q": "Which composer won an Oscar for the score of 'Chariots of Fire'?",
+     "a": "Vangelis",
+     "wrong": [
+      "Mikis Theodorakis",
+      "Manos Hatzidakis",
+      "Yanni"
+     ],
+     "why": "He was born in Volos."
+    },
+    {
+     "level": 3,
+     "q": "Which self-governing monastic peninsula bans women?",
+     "a": "Mount Athos",
+     "wrong": [
+      "Meteora",
+      "Patmos",
+      "Delos"
+     ],
+     "why": "It has 20 monasteries."
+    }
+   ]
+  }
+ ]
+}

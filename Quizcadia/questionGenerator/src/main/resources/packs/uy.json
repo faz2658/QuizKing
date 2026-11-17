@@ -1,0 +1,346 @@
+{
+ "category": "Uruguay",
+ "country": "UY",
+ "topics": [
+  {
+   "name": "Uruguay: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Uruguay?",
+     "a": "Montevideo",
+     "wrong": [
+      "Punta del Este",
+      "Salto",
+      "Colonia del Sacramento"
+     ],
+     "why": "Almost half of Uruguayans live there."
+    },
+    {
+     "level": 1,
+     "q": "Which country hosted and won the first FIFA World Cup in 1930?",
+     "a": "Uruguay",
+     "wrong": [
+      "Argentina",
+      "Brazil",
+      "Italy"
+     ],
+     "why": "It beat Argentina 4–2 in the final."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Uruguay become independent?",
+     "a": "1825",
+     "wrong": [
+      "1810",
+      "1830",
+      "1811"
+     ],
+     "why": "Independence was confirmed in 1828."
+    },
+    {
+     "level": 1,
+     "q": "Which national hero led Uruguay's early independence struggle?",
+     "a": "José Gervasio Artigas",
+     "wrong": [
+      "Juan Antonio Lavalleja",
+      "Fructuoso Rivera",
+      "Manuel Oribe"
+     ],
+     "why": "He is called the father of the nation."
+    },
+    {
+     "level": 1,
+     "q": "Which 1950 World Cup win in Rio stunned Brazil?",
+     "a": "Maracanazo",
+     "wrong": [
+      "Mineirazo",
+      "Centenario",
+      "Miracle of Montevideo"
+     ],
+     "why": "Uruguay won 2–1."
+    },
+    {
+     "level": 1,
+     "q": "Which President lived simply and gave most of his salary away?",
+     "a": "José 'Pepe' Mujica",
+     "wrong": [
+      "Tabaré Vázquez",
+      "Luis Lacalle Pou",
+      "Julio María Sanguinetti"
+     ],
+     "why": "He was called the world's 'poorest president'."
+    },
+    {
+     "level": 1,
+     "q": "Which neighbours fought over Uruguay before independence?",
+     "a": "Argentina and Brazil",
+     "wrong": [
+      "Chile and Peru",
+      "Spain and France",
+      "Paraguay and Bolivia"
+     ],
+     "why": "Uruguay became a buffer state."
+    },
+    {
+     "level": 2,
+     "q": "Which group of 33 patriots began the 1825 independence fight?",
+     "a": "The Thirty-Three Orientals",
+     "wrong": [
+      "The Thirty-Three Gauchos",
+      "The Thirty-Three Liberators",
+      "The Blancos"
+     ],
+     "why": "They landed on the Uruguay River."
+    },
+    {
+     "level": 2,
+     "q": "Which two traditional parties dominated Uruguayan politics?",
+     "a": "Colorados and Blancos",
+     "wrong": [
+      "Liberals and Conservatives",
+      "Peronists and Radicals",
+      "Greens and Socialists"
+     ],
+     "why": "They date back to the 1830s."
+    },
+    {
+     "level": 2,
+     "q": "Which President built Uruguay's welfare state in the early 1900s?",
+     "a": "José Batlle y Ordóñez",
+     "wrong": [
+      "José Mujica",
+      "Gabriel Terra",
+      "Luis Batlle Berres"
+     ],
+     "why": "He made education free and secular."
+    },
+    {
+     "level": 2,
+     "q": "Which 1972 air crash in the Andes involved a Uruguayan rugby team?",
+     "a": "Andes flight disaster",
+     "wrong": [
+      "Lockerbie",
+      "Tenerife disaster",
+      "Munich air disaster"
+     ],
+     "why": "Sixteen survivors were rescued after 72 days."
+    },
+    {
+     "level": 2,
+     "q": "Which 1973–85 period of military rule did Uruguay go through?",
+     "a": "Civic-military dictatorship",
+     "wrong": [
+      "Golden Age",
+      "Batllismo",
+      "Tupamaro Republic"
+     ],
+     "why": "It ended with elections in 1984."
+    },
+    {
+     "level": 3,
+     "q": "Which old Portuguese town across from Buenos Aires is a UNESCO site?",
+     "a": "Colonia del Sacramento",
+     "wrong": [
+      "Punta del Este",
+      "Fray Bentos",
+      "Carmelo"
+     ],
+     "why": "It was founded in 1680."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Uruguay legalise cannabis, the first country to do so?",
+     "a": "2013",
+     "wrong": [
+      "2009",
+      "2016",
+      "2020"
+     ],
+     "why": "The state regulates its sale."
+    },
+    {
+     "level": 3,
+     "q": "Which Uruguayan author wrote 'Open Veins of Latin America'?",
+     "a": "Eduardo Galeano",
+     "wrong": [
+      "Juan Carlos Onetti",
+      "Mario Benedetti",
+      "Horacio Quiroga"
+     ],
+     "why": "It was published in 1971."
+    }
+   ]
+  },
+  {
+   "name": "Uruguay: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Uruguay's currency?",
+     "a": "Uruguayan peso",
+     "wrong": [
+      "Real",
+      "Guaraní",
+      "Argentine peso"
+     ],
+     "why": "Its code is UYU."
+    },
+    {
+     "level": 1,
+     "q": "Which beach resort is Uruguay's most famous?",
+     "a": "Punta del Este",
+     "wrong": [
+      "Piriápolis",
+      "La Paloma",
+      "Colonia"
+     ],
+     "why": "Its 'Hand in the Sand' sculpture is famous."
+    },
+    {
+     "level": 1,
+     "q": "Which herbal drink do Uruguayans carry everywhere in a gourd?",
+     "a": "Mate",
+     "wrong": [
+      "Coffee",
+      "Tea",
+      "Tereré"
+     ],
+     "why": "Uruguayans drink more mate per person than anyone."
+    },
+    {
+     "level": 1,
+     "q": "Which steak sandwich is Uruguay's national dish?",
+     "a": "Chivito",
+     "wrong": [
+      "Choripán",
+      "Milanesa",
+      "Asado"
+     ],
+     "why": "It is piled with ham, cheese, egg and more."
+    },
+    {
+     "level": 1,
+     "q": "Which river forms Uruguay's western border with Argentina?",
+     "a": "Uruguay River",
+     "wrong": [
+      "Paraná River",
+      "Paraguay River",
+      "Amazon"
+     ],
+     "why": "The Río de la Plata estuary is to the south."
+    },
+    {
+     "level": 1,
+     "q": "Which drum-based music of African roots fills Montevideo's carnival?",
+     "a": "Candombe",
+     "wrong": [
+      "Tango",
+      "Samba",
+      "Cumbia"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "Which Uruguayan striker scored many goals for Barcelona and Liverpool?",
+     "a": "Luis Suárez",
+     "wrong": [
+      "Edinson Cavani",
+      "Diego Forlán",
+      "Enzo Francescoli"
+     ],
+     "why": "He is Uruguay's all-time top scorer."
+    },
+    {
+     "level": 2,
+     "q": "Which long carnival in Montevideo lasts about 40 days?",
+     "a": "Carnival of Montevideo",
+     "wrong": [
+      "Carnival of Rio",
+      "Carnival of Oruro",
+      "Carnival of Barranquilla"
+     ],
+     "why": "It is said to be the world's longest."
+    },
+    {
+     "level": 2,
+     "q": "Which Uruguayan won the Golden Ball at the 2010 World Cup?",
+     "a": "Diego Forlán",
+     "wrong": [
+      "Luis Suárez",
+      "Edinson Cavani",
+      "Óscar Tabárez"
+     ],
+     "why": "Uruguay finished fourth."
+    },
+    {
+     "level": 2,
+     "q": "Which famous tango was composed in Montevideo in 1917?",
+     "a": "La Cumparsita",
+     "wrong": [
+      "Por una Cabeza",
+      "Libertango",
+      "Adiós Nonino"
+     ],
+     "why": "It is one of the best-known tangos."
+    },
+    {
+     "level": 2,
+     "q": "Which grilled meat feast is a Sunday tradition?",
+     "a": "Asado",
+     "wrong": [
+      "Feijoada",
+      "Paella",
+      "Braai"
+     ],
+     "why": "It is cooked on a parrilla."
+    },
+    {
+     "level": 2,
+     "q": "Which stadium hosted the 1930 World Cup final?",
+     "a": "Estadio Centenario",
+     "wrong": [
+      "Estadio Gran Parque Central",
+      "Estadio Monumental",
+      "Maracanã"
+     ],
+     "why": "It was built for the tournament."
+    },
+    {
+     "level": 3,
+     "q": "Which painter founded the 'Universal Constructivism' movement?",
+     "a": "Joaquín Torres García",
+     "wrong": [
+      "Pedro Figari",
+      "Rafael Barradas",
+      "Carlos Páez Vilaró"
+     ],
+     "why": "His inverted map of South America is famous."
+    },
+    {
+     "level": 3,
+     "q": "Which town's meat-packing factory is a UNESCO site?",
+     "a": "Fray Bentos",
+     "wrong": [
+      "Paysandú",
+      "Salto",
+      "Colonia"
+     ],
+     "why": "It made the famous corned beef."
+    },
+    {
+     "level": 3,
+     "q": "Which landmark building in Montevideo was once South America's tallest?",
+     "a": "Palacio Salvo",
+     "wrong": [
+      "Palacio Legislativo",
+      "Torre de las Telecomunicaciones",
+      "Edificio Lapido"
+     ],
+     "why": "It opened in 1928."
+    }
+   ]
+  }
+ ]
+}

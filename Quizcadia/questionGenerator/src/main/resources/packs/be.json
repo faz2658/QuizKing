@@ -1,0 +1,346 @@
+{
+ "category": "Belgium",
+ "country": "BE",
+ "topics": [
+  {
+   "name": "Belgium: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Belgium?",
+     "a": "Brussels",
+     "wrong": [
+      "Antwerp",
+      "Ghent",
+      "Bruges"
+     ],
+     "why": "It also hosts the EU and NATO headquarters."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Belgium become independent?",
+     "a": "1830",
+     "wrong": [
+      "1815",
+      "1848",
+      "1870"
+     ],
+     "why": "It broke away from the Netherlands."
+    },
+    {
+     "level": 1,
+     "q": "Which 1815 battle that ended Napoleon's career was fought in Belgium?",
+     "a": "Waterloo",
+     "wrong": [
+      "Austerlitz",
+      "Leipzig",
+      "Trafalgar"
+     ],
+     "why": "It was near Brussels."
+    },
+    {
+     "level": 1,
+     "q": "Which Belgian king ruled the Congo as his private colony?",
+     "a": "Leopold II",
+     "wrong": [
+      "Albert I",
+      "Baudouin",
+      "Leopold I"
+     ],
+     "why": "Millions died under his rule."
+    },
+    {
+     "level": 1,
+     "q": "Which city's Flanders fields saw huge First World War battles?",
+     "a": "Ypres",
+     "wrong": [
+      "Liège",
+      "Namur",
+      "Bruges"
+     ],
+     "why": "The Menin Gate lists the missing."
+    },
+    {
+     "level": 1,
+     "q": "Which three languages are official in Belgium?",
+     "a": "Dutch, French and German",
+     "wrong": [
+      "Dutch, French and English",
+      "French, German and Luxembourgish",
+      "Dutch, French and Italian"
+     ],
+     "why": "The German-speaking area is in the east."
+    },
+    {
+     "level": 1,
+     "q": "Who has been King of the Belgians since 2013?",
+     "a": "Philippe",
+     "wrong": [
+      "Albert II",
+      "Baudouin",
+      "Leopold III"
+     ],
+     "why": "His father Albert II abdicated."
+    },
+    {
+     "level": 2,
+     "q": "Which Belgian king led the army in the First World War?",
+     "a": "Albert I",
+     "wrong": [
+      "Leopold II",
+      "Leopold III",
+      "Baudouin"
+     ],
+     "why": "He was called the Soldier King."
+    },
+    {
+     "level": 2,
+     "q": "Which Second World War battle in the Ardennes began in December 1944?",
+     "a": "Battle of the Bulge",
+     "wrong": [
+      "Battle of Arnhem",
+      "Battle of the Scheldt",
+      "Battle of Liège"
+     ],
+     "why": "Bastogne was surrounded."
+    },
+    {
+     "level": 2,
+     "q": "Which country did the Congo gain independence from in 1960?",
+     "a": "Belgium",
+     "wrong": [
+      "France",
+      "Portugal",
+      "Britain"
+     ],
+     "why": "Patrice Lumumba became Prime Minister."
+    },
+    {
+     "level": 2,
+     "q": "Which Belgian invented the saxophone?",
+     "a": "Adolphe Sax",
+     "wrong": [
+      "César Franck",
+      "Jacques Brel",
+      "Django Reinhardt"
+     ],
+     "why": "He patented it in 1846."
+    },
+    {
+     "level": 2,
+     "q": "Which Flemish painter made 'The Ghent Altarpiece' with his brother?",
+     "a": "Jan van Eyck",
+     "wrong": [
+      "Pieter Bruegel",
+      "Peter Paul Rubens",
+      "Hans Memling"
+     ],
+     "why": "It was finished in 1432."
+    },
+    {
+     "level": 3,
+     "q": "Which Belgian priest first proposed the Big Bang theory?",
+     "a": "Georges Lemaître",
+     "wrong": [
+      "Ernest Solvay",
+      "Christian de Duve",
+      "François Englert"
+     ],
+     "why": "He called it the 'primeval atom'."
+    },
+    {
+     "level": 3,
+     "q": "Which Antwerp painter is famous for full-figured women?",
+     "a": "Peter Paul Rubens",
+     "wrong": [
+      "Anthony van Dyck",
+      "Jacob Jordaens",
+      "Pieter Bruegel"
+     ],
+     "why": "'Rubenesque' comes from his name."
+    },
+    {
+     "level": 3,
+     "q": "Which Belgian physicist shared the 2013 Nobel Prize for the Higgs boson?",
+     "a": "François Englert",
+     "wrong": [
+      "Georges Lemaître",
+      "Ilya Prigogine",
+      "Christian de Duve"
+     ],
+     "why": "He shared it with Peter Higgs."
+    }
+   ]
+  },
+  {
+   "name": "Belgium: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which small statue of a boy is a Brussels landmark?",
+     "a": "Manneken Pis",
+     "wrong": [
+      "Jeanneke Pis",
+      "Atomium boy",
+      "Little Mermaid"
+     ],
+     "why": "He is often dressed in costumes."
+    },
+    {
+     "level": 1,
+     "q": "Which Belgian comic hero is a reporter with a dog named Snowy?",
+     "a": "Tintin",
+     "wrong": [
+      "Astérix",
+      "Spirou",
+      "Lucky Luke"
+     ],
+     "why": "Hergé created him in 1929."
+    },
+    {
+     "level": 1,
+     "q": "Which fried potato snack do Belgians claim to have invented?",
+     "a": "Fries",
+     "wrong": [
+      "Crisps",
+      "Rösti",
+      "Croquettes"
+     ],
+     "why": "They are served with mayonnaise."
+    },
+    {
+     "level": 1,
+     "q": "Which giant model of an iron crystal stands in Brussels?",
+     "a": "Atomium",
+     "wrong": [
+      "Grand Place",
+      "Royal Palace",
+      "Cinquantenaire"
+     ],
+     "why": "It was built for Expo 58."
+    },
+    {
+     "level": 1,
+     "q": "Which blue cartoon characters were created by Peyo?",
+     "a": "The Smurfs",
+     "wrong": [
+      "The Snorks",
+      "The Moomins",
+      "The Barbapapas"
+     ],
+     "why": "They first appeared in 1958."
+    },
+    {
+     "level": 1,
+     "q": "Which sweet is Belgium famous for, along with waffles?",
+     "a": "Chocolate",
+     "wrong": [
+      "Fudge",
+      "Toffee",
+      "Marzipan"
+     ],
+     "why": "Pralines were invented in Brussels."
+    },
+    {
+     "level": 1,
+     "q": "Which medieval canal city is called the 'Venice of the North'?",
+     "a": "Bruges",
+     "wrong": [
+      "Ghent",
+      "Antwerp",
+      "Leuven"
+     ],
+     "why": "Its centre is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which Brussels square is famous for its guildhalls and flower carpet?",
+     "a": "Grand Place",
+     "wrong": [
+      "Place Royale",
+      "Place Flagey",
+      "Mont des Arts"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which monks brew some of Belgium's most famous beers?",
+     "a": "Trappist monks",
+     "wrong": [
+      "Benedictine nuns",
+      "Franciscan friars",
+      "Jesuits"
+     ],
+     "why": "Westvleteren is one of them."
+    },
+    {
+     "level": 2,
+     "q": "Which Belgian city is a world centre of the diamond trade?",
+     "a": "Antwerp",
+     "wrong": [
+      "Ghent",
+      "Liège",
+      "Mechelen"
+     ],
+     "why": "Most of the world's rough diamonds pass through it."
+    },
+    {
+     "level": 2,
+     "q": "Which Belgian cyclist won the Tour de France five times?",
+     "a": "Eddy Merckx",
+     "wrong": [
+      "Lucien Van Impe",
+      "Tom Boonen",
+      "Remco Evenepoel"
+     ],
+     "why": "He was nicknamed 'The Cannibal'."
+    },
+    {
+     "level": 2,
+     "q": "Which Belgian singer wrote 'Ne me quitte pas'?",
+     "a": "Jacques Brel",
+     "wrong": [
+      "Stromae",
+      "Adamo",
+      "Toots Thielemans"
+     ],
+     "why": "He sang in French."
+    },
+    {
+     "level": 3,
+     "q": "Which surrealist painted 'The Son of Man' with an apple over the face?",
+     "a": "René Magritte",
+     "wrong": [
+      "Paul Delvaux",
+      "James Ensor",
+      "Salvador Dalí"
+     ],
+     "why": "He also painted 'This is not a pipe'."
+    },
+    {
+     "level": 3,
+     "q": "Which Belgian singer had a hit with 'Alors on danse'?",
+     "a": "Stromae",
+     "wrong": [
+      "Angèle",
+      "Lost Frequencies",
+      "Lara Fabian"
+     ],
+     "why": "He is from Brussels."
+    },
+    {
+     "level": 3,
+     "q": "Which famous Formula One track is in the Ardennes?",
+     "a": "Spa-Francorchamps",
+     "wrong": [
+      "Zolder",
+      "Nivelles",
+      "Zandvoort"
+     ],
+     "why": "Its Eau Rouge corner is legendary."
+    }
+   ]
+  }
+ ]
+}

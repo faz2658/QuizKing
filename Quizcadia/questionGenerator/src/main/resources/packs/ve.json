@@ -1,0 +1,346 @@
+{
+ "category": "Venezuela",
+ "country": "VE",
+ "topics": [
+  {
+   "name": "Venezuela: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which liberator, born in Caracas, freed much of South America?",
+     "a": "Simón Bolívar",
+     "wrong": [
+      "José de San Martín",
+      "Antonio José de Sucre",
+      "Francisco de Miranda"
+     ],
+     "why": "Venezuela's currency is named after him."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Venezuela declare independence?",
+     "a": "1811",
+     "wrong": [
+      "1810",
+      "1821",
+      "1830"
+     ],
+     "why": "It was declared on 5 July."
+    },
+    {
+     "level": 1,
+     "q": "Who was President of Venezuela from 1999 until his death in 2013?",
+     "a": "Hugo Chávez",
+     "wrong": [
+      "Nicolás Maduro",
+      "Carlos Andrés Pérez",
+      "Rafael Caldera"
+     ],
+     "why": "He called his movement the Bolivarian Revolution."
+    },
+    {
+     "level": 1,
+     "q": "Which explorer named Venezuela 'Little Venice'?",
+     "a": "Alonso de Ojeda's expedition",
+     "wrong": [
+      "Christopher Columbus",
+      "Francisco Pizarro",
+      "Hernán Cortés"
+     ],
+     "why": "Stilt houses reminded them of Venice."
+    },
+    {
+     "level": 1,
+     "q": "Which resource made Venezuela rich in the 1900s?",
+     "a": "Oil",
+     "wrong": [
+      "Gold",
+      "Coffee",
+      "Silver"
+     ],
+     "why": "It has the world's largest proven oil reserves."
+    },
+    {
+     "level": 1,
+     "q": "Which 1821 battle secured Venezuelan independence?",
+     "a": "Battle of Carabobo",
+     "wrong": [
+      "Battle of Boyacá",
+      "Battle of Ayacucho",
+      "Battle of Pichincha"
+     ],
+     "why": "Bolívar led the patriot army."
+    },
+    {
+     "level": 1,
+     "q": "Which precursor of independence led an early expedition in 1806?",
+     "a": "Francisco de Miranda",
+     "wrong": [
+      "Simón Bolívar",
+      "José Antonio Páez",
+      "Antonio José de Sucre"
+     ],
+     "why": "He fought in the American and French revolutions too."
+    },
+    {
+     "level": 2,
+     "q": "Which general became Venezuela's first President after it left Gran Colombia?",
+     "a": "José Antonio Páez",
+     "wrong": [
+      "Simón Bolívar",
+      "Antonio José de Sucre",
+      "Juan Vicente Gómez"
+     ],
+     "why": "He led the llaneros, plains cavalry."
+    },
+    {
+     "level": 2,
+     "q": "Which dictator ruled Venezuela from 1908 to 1935?",
+     "a": "Juan Vicente Gómez",
+     "wrong": [
+      "Marcos Pérez Jiménez",
+      "Cipriano Castro",
+      "Antonio Guzmán Blanco"
+     ],
+     "why": "Oil was discovered under his rule."
+    },
+    {
+     "level": 2,
+     "q": "Who succeeded Hugo Chávez as President?",
+     "a": "Nicolás Maduro",
+     "wrong": [
+      "Diosdado Cabello",
+      "Juan Guaidó",
+      "Henrique Capriles"
+     ],
+     "why": "He had been a bus driver."
+    },
+    {
+     "level": 2,
+     "q": "Which Venezuelan opposition leader won the 2025 Nobel Peace Prize?",
+     "a": "María Corina Machado",
+     "wrong": [
+      "Leopoldo López",
+      "Juan Guaidó",
+      "Edmundo González"
+     ],
+     "why": "She was honoured for her fight for democracy."
+    },
+    {
+     "level": 2,
+     "q": "Which 1958 agreement began Venezuela's democratic era?",
+     "a": "Punto Fijo Pact",
+     "wrong": [
+      "Pact of Caracas",
+      "Bolivarian Accord",
+      "Treaty of Maracay"
+     ],
+     "why": "Three parties agreed to share power."
+    },
+    {
+     "level": 3,
+     "q": "Which Venezuelan general won the decisive 1824 battle of Ayacucho?",
+     "a": "Antonio José de Sucre",
+     "wrong": [
+      "Simón Bolívar",
+      "José Antonio Páez",
+      "Rafael Urdaneta"
+     ],
+     "why": "Bolivia's capital is named after him."
+    },
+    {
+     "level": 3,
+     "q": "Which teacher of Bolívar was a famous educator?",
+     "a": "Simón Rodríguez",
+     "wrong": [
+      "Andrés Bello",
+      "Francisco de Miranda",
+      "José Martí"
+     ],
+     "why": "He took Bolívar to Europe."
+    },
+    {
+     "level": 3,
+     "q": "Which scholar from Caracas wrote Chile's civil code?",
+     "a": "Andrés Bello",
+     "wrong": [
+      "Simón Rodríguez",
+      "Rómulo Gallegos",
+      "Arturo Uslar Pietri"
+     ],
+     "why": "He also wrote a famous Spanish grammar."
+    }
+   ]
+  },
+  {
+   "name": "Venezuela: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Venezuela?",
+     "a": "Caracas",
+     "wrong": [
+      "Maracaibo",
+      "Valencia",
+      "Barquisimeto"
+     ],
+     "why": "It lies in a mountain valley."
+    },
+    {
+     "level": 1,
+     "q": "Which waterfall in Venezuela is the world's highest?",
+     "a": "Angel Falls",
+     "wrong": [
+      "Iguazú Falls",
+      "Niagara Falls",
+      "Kaieteur Falls"
+     ],
+     "why": "It drops 979 m."
+    },
+    {
+     "level": 1,
+     "q": "Which corn cakes are a Venezuelan staple?",
+     "a": "Arepas",
+     "wrong": [
+      "Tortillas",
+      "Pupusas",
+      "Empanadas"
+     ],
+     "why": "They are stuffed with cheese, meat or beans."
+    },
+    {
+     "level": 1,
+     "q": "What is Venezuela's currency?",
+     "a": "Bolívar",
+     "wrong": [
+      "Peso",
+      "Sol",
+      "Real"
+     ],
+     "why": "It is named after Simón Bolívar."
+    },
+    {
+     "level": 1,
+     "q": "Which river flows across Venezuela to the Atlantic?",
+     "a": "Orinoco",
+     "wrong": [
+      "Amazon",
+      "Magdalena",
+      "Paraná"
+     ],
+     "why": "Its delta is huge."
+    },
+    {
+     "level": 1,
+     "q": "Which country has won the most Miss Universe titles after the USA?",
+     "a": "Venezuela",
+     "wrong": [
+      "Colombia",
+      "Philippines",
+      "Brazil"
+     ],
+     "why": "Beauty pageants are hugely popular."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is the most popular in Venezuela?",
+     "a": "Baseball",
+     "wrong": [
+      "Football",
+      "Basketball",
+      "Cricket"
+     ],
+     "why": "Many Venezuelans play in MLB."
+    },
+    {
+     "level": 2,
+     "q": "Which lake in the west is one of the oldest in the world and full of oil?",
+     "a": "Lake Maracaibo",
+     "wrong": [
+      "Lake Valencia",
+      "Lake Titicaca",
+      "Lake Guri"
+     ],
+     "why": "Lightning strikes there almost every night."
+    },
+    {
+     "level": 2,
+     "q": "What are the flat-topped mountains of the Gran Sabana called?",
+     "a": "Tepuis",
+     "wrong": [
+      "Mesas",
+      "Inselbergs",
+      "Buttes"
+     ],
+     "why": "Mount Roraima is one of them."
+    },
+    {
+     "level": 2,
+     "q": "Which Christmas dish wraps meat in corn dough and banana leaves?",
+     "a": "Hallaca",
+     "wrong": [
+      "Tamal",
+      "Pastel",
+      "Bollo"
+     ],
+     "why": "Families make them together."
+    },
+    {
+     "level": 2,
+     "q": "Which Venezuelan baseball star won the Triple Crown in 2012?",
+     "a": "Miguel Cabrera",
+     "wrong": [
+      "José Altuve",
+      "Ronald Acuña Jr.",
+      "Félix Hernández"
+     ],
+     "why": "It was the first in 45 years."
+    },
+    {
+     "level": 2,
+     "q": "Which Venezuelan network of youth orchestras is world-famous?",
+     "a": "El Sistema",
+     "wrong": [
+      "La Banda",
+      "Orquesta Bolívar",
+      "Música Joven"
+     ],
+     "why": "Conductor Gustavo Dudamel came from it."
+    },
+    {
+     "level": 3,
+     "q": "Which writer and President wrote 'Doña Bárbara'?",
+     "a": "Rómulo Gallegos",
+     "wrong": [
+      "Andrés Bello",
+      "Arturo Uslar Pietri",
+      "Teresa de la Parra"
+     ],
+     "why": "A major literature prize is named after him."
+    },
+    {
+     "level": 3,
+     "q": "What is the name of the never-ending lightning storm over Lake Maracaibo?",
+     "a": "Catatumbo lightning",
+     "wrong": [
+      "Orinoco flash",
+      "Andes glow",
+      "Maracaibo fire"
+     ],
+     "why": "It can strike thousands of times an hour."
+    },
+    {
+     "level": 3,
+     "q": "What is Venezuela's highest mountain?",
+     "a": "Pico Bolívar",
+     "wrong": [
+      "Mount Roraima",
+      "Pico Humboldt",
+      "Auyán-tepui"
+     ],
+     "why": "It is about 4,978 m high."
+    }
+   ]
+  }
+ ]
+}

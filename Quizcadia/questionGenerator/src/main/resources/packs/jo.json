@@ -1,0 +1,346 @@
+{
+ "category": "Jordan",
+ "country": "JO",
+ "topics": [
+  {
+   "name": "Jordan: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which ancient city carved into pink rock was the Nabataean capital?",
+     "a": "Petra",
+     "wrong": [
+      "Jerash",
+      "Palmyra",
+      "Hegra"
+     ],
+     "why": "It is one of the New 7 Wonders of the World."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Jordan become independent from Britain?",
+     "a": "1946",
+     "wrong": [
+      "1956",
+      "1932",
+      "1967"
+     ],
+     "why": "Independence Day is 25 May."
+    },
+    {
+     "level": 1,
+     "q": "Who has been King of Jordan since 1999?",
+     "a": "Abdullah II",
+     "wrong": [
+      "Hussein",
+      "Talal",
+      "Abdullah I"
+     ],
+     "why": "His wife is Queen Rania."
+    },
+    {
+     "level": 1,
+     "q": "Which king ruled Jordan for 46 years until 1999?",
+     "a": "King Hussein",
+     "wrong": [
+      "King Abdullah I",
+      "King Talal",
+      "King Abdullah II"
+     ],
+     "why": "He made peace with Israel in 1994."
+    },
+    {
+     "level": 1,
+     "q": "Which family has ruled Jordan since its founding?",
+     "a": "Hashemites",
+     "wrong": [
+      "Saudis",
+      "Alaouites",
+      "Al Thanis"
+     ],
+     "why": "They trace descent from the Prophet Muhammad."
+    },
+    {
+     "level": 1,
+     "q": "Which film was shot in Wadi Rum and Petra in 1962?",
+     "a": "Lawrence of Arabia",
+     "wrong": [
+      "Ben-Hur",
+      "The Mummy",
+      "Gladiator"
+     ],
+     "why": "T. E. Lawrence fought in the region."
+    },
+    {
+     "level": 1,
+     "q": "Which river runs along Jordan's western border?",
+     "a": "Jordan River",
+     "wrong": [
+      "Euphrates",
+      "Litani",
+      "Orontes"
+     ],
+     "why": "Jesus is said to have been baptised there."
+    },
+    {
+     "level": 2,
+     "q": "Which king founded the Emirate of Transjordan in 1921?",
+     "a": "Abdullah I",
+     "wrong": [
+      "Hussein",
+      "Faisal I",
+      "Talal"
+     ],
+     "why": "He became king in 1946."
+    },
+    {
+     "level": 2,
+     "q": "Which Roman city in the north is called the 'Pompeii of the East'?",
+     "a": "Jerash",
+     "wrong": [
+      "Umm Qais",
+      "Pella",
+      "Madaba"
+     ],
+     "why": "Its colonnaded streets are well preserved."
+    },
+    {
+     "level": 2,
+     "q": "Which 1994 agreement did King Hussein sign?",
+     "a": "Peace treaty with Israel",
+     "wrong": [
+      "Oslo Accords",
+      "Camp David Accords",
+      "Treaty of Amman"
+     ],
+     "why": "It was signed in the Arava Valley."
+    },
+    {
+     "level": 2,
+     "q": "Which Swiss explorer rediscovered Petra for Europe in 1812?",
+     "a": "Johann Ludwig Burckhardt",
+     "wrong": [
+      "Gertrude Bell",
+      "T. E. Lawrence",
+      "Richard Burton"
+     ],
+     "why": "He travelled in disguise."
+    },
+    {
+     "level": 2,
+     "q": "Which town is famous for a 6th-century mosaic map of the Holy Land?",
+     "a": "Madaba",
+     "wrong": [
+      "Karak",
+      "Aqaba",
+      "Salt"
+     ],
+     "why": "It is in St George's Church."
+    },
+    {
+     "level": 3,
+     "q": "Which 1916 revolt against the Ottomans began in the Hejaz?",
+     "a": "Great Arab Revolt",
+     "wrong": [
+      "Iraqi Revolt",
+      "Druze Revolt",
+      "Hashemite War"
+     ],
+     "why": "Sharif Hussein of Mecca launched it."
+    },
+    {
+     "level": 3,
+     "q": "Which crusader castle on a hilltop dominates a southern town?",
+     "a": "Karak Castle",
+     "wrong": [
+      "Krak des Chevaliers",
+      "Shobak Castle",
+      "Ajloun Castle"
+     ],
+     "why": "It was besieged by Saladin."
+    },
+    {
+     "level": 3,
+     "q": "Which site on the Jordan River is the UNESCO-listed baptism site?",
+     "a": "Bethany Beyond the Jordan",
+     "wrong": [
+      "Qasr al-Yahud",
+      "Capernaum",
+      "Jericho"
+     ],
+     "why": "It is called Al-Maghtas."
+    }
+   ]
+  },
+  {
+   "name": "Jordan: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Jordan?",
+     "a": "Amman",
+     "wrong": [
+      "Aqaba",
+      "Irbid",
+      "Zarqa"
+     ],
+     "why": "It was once called Philadelphia."
+    },
+    {
+     "level": 1,
+     "q": "Which salt lake on Jordan's border is the lowest point on land?",
+     "a": "Dead Sea",
+     "wrong": [
+      "Red Sea",
+      "Sea of Galilee",
+      "Lake Assal"
+     ],
+     "why": "Its water is very salty."
+    },
+    {
+     "level": 1,
+     "q": "Which desert valley is called the 'Valley of the Moon'?",
+     "a": "Wadi Rum",
+     "wrong": [
+      "Wadi Mujib",
+      "Wadi Araba",
+      "Wadi Musa"
+     ],
+     "why": "Many sci-fi films were shot there."
+    },
+    {
+     "level": 1,
+     "q": "Which port city is Jordan's only outlet to the sea?",
+     "a": "Aqaba",
+     "wrong": [
+      "Amman",
+      "Karak",
+      "Ma'an"
+     ],
+     "why": "It is on the Red Sea."
+    },
+    {
+     "level": 1,
+     "q": "What is Jordan's currency?",
+     "a": "Jordanian dinar",
+     "wrong": [
+      "Riyal",
+      "Pound",
+      "Lira"
+     ],
+     "why": "It is one of the world's highest-valued currencies."
+    },
+    {
+     "level": 1,
+     "q": "Which lamb and rice dish with dried yoghurt sauce is the national dish?",
+     "a": "Mansaf",
+     "wrong": [
+      "Maqluba",
+      "Kabsa",
+      "Musakhan"
+     ],
+     "why": "It is eaten with the right hand."
+    },
+    {
+     "level": 1,
+     "q": "What is the famous building at the end of Petra's narrow gorge called?",
+     "a": "The Treasury (Al-Khazneh)",
+     "wrong": [
+      "The Monastery",
+      "The Royal Tombs",
+      "The Great Temple"
+     ],
+     "why": "It appears in 'Indiana Jones and the Last Crusade'."
+    },
+    {
+     "level": 2,
+     "q": "What is the narrow gorge leading into Petra called?",
+     "a": "The Siq",
+     "wrong": [
+      "Wadi Rum",
+      "The Gate",
+      "Wadi Musa"
+     ],
+     "why": "It is about 1.2 km long."
+    },
+    {
+     "level": 2,
+     "q": "Which queen of Jordan is known for education campaigns?",
+     "a": "Queen Rania",
+     "wrong": [
+      "Queen Noor",
+      "Queen Alia",
+      "Queen Zein"
+     ],
+     "why": "She was born in Kuwait."
+    },
+    {
+     "level": 2,
+     "q": "Which upside-down rice dish is a family favourite?",
+     "a": "Maqluba",
+     "wrong": [
+      "Mansaf",
+      "Fattoush",
+      "Kibbeh"
+     ],
+     "why": "Its name means 'upside down'."
+    },
+    {
+     "level": 2,
+     "q": "Which nature reserve has canyons for river hikes?",
+     "a": "Wadi Mujib",
+     "wrong": [
+      "Dana",
+      "Azraq",
+      "Ajloun"
+     ],
+     "why": "It is near the Dead Sea."
+    },
+    {
+     "level": 2,
+     "q": "Which Bedouin red-and-white headscarf is a Jordanian symbol?",
+     "a": "Shemagh (keffiyeh)",
+     "wrong": [
+      "Turban",
+      "Fez",
+      "Taqiyah"
+     ],
+     "why": "The red-and-white pattern is typical of Jordan."
+    },
+    {
+     "level": 3,
+     "q": "Which large oasis in the eastern desert has a wetland reserve?",
+     "a": "Azraq",
+     "wrong": [
+      "Dana",
+      "Wadi Rum",
+      "Mujib"
+     ],
+     "why": "T. E. Lawrence stayed at its castle."
+    },
+    {
+     "level": 3,
+     "q": "Which Petra building, reached by 800 steps, is larger than the Treasury?",
+     "a": "The Monastery (Ad Deir)",
+     "wrong": [
+      "The Royal Tombs",
+      "The Great Temple",
+      "Qasr al-Bint"
+     ],
+     "why": "It sits high on a mountain."
+    },
+    {
+     "level": 3,
+     "q": "What does the name 'Petra' mean?",
+     "a": "Rock",
+     "wrong": [
+      "Treasure",
+      "Red",
+      "City"
+     ],
+     "why": "The Nabataeans called it Raqmu."
+    }
+   ]
+  }
+ ]
+}

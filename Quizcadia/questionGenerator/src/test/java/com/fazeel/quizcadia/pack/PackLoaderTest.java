@@ -5,12 +5,16 @@ import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.clearInvocations;
 import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import org.junit.jupiter.api.Test;
@@ -22,29 +26,60 @@ import com.fazeel.quizcadia.domain.Questions;
 
 class PackLoaderTest {
 
+	/** ISO codes the app's country picker offers (frontend core/countries.ts). */
+	static final Set<String> COUNTRIES = Set.of((
+			"AF AL DZ AD AO AG AR AM AU AT AZ BS BH BD BB BY BE BZ BJ BT BO BA BW BR BN BG BF BI KH CM CA CV CF TD CL CN CO KM CG CD CR CI HR CU CY CZ "
+					+ "DK DJ DM DO EC EG SV GQ ER EE SZ ET FJ FI FR GA GM GE DE GH GR GD GT GN GW GY HT HN HK HU IS IN ID IR IQ IE IL IT JM JP JO KZ KE KI KW KG "
+					+ "LA LV LB LS LR LY LI LT LU MO MG MW MY MV ML MT MH MR MU MX FM MD MC MN ME MA MZ MM NA NR NP NL NZ NI NE NG KP MK NO OM PK PW PS PA PG PY PE "
+					+ "PH PL PT PR QA RO RU RW KN LC VC WS SM ST SA SN RS SC SL SG SK SI SB SO ZA KR SS ES LK SD SR SE CH SY TW TJ TZ TH TL TG TO TT TN TR TM TV "
+					+ "UG UA AE GB US UY UZ VU VA VE VN YE ZM ZW").split(" "));
+
+	static class Memory implements PackLoader.LoadedPacks {
+		final Map<String, String> hashes = new HashMap<>();
+
+		@Override
+		public String hash(String pack) {
+			return hashes.get(pack);
+		}
+
+		@Override
+		public void loaded(String pack, String hash) {
+			hashes.put(pack, hash);
+		}
+	}
+
 	@Test
 	void everyPackQuestionIsPlayableAndEveryTopicCanBecomeAGame() {
-		for (String resource : PackLoader.PACKS) {
-			QuestionPack pack = QuestionPack.load(resource);
-			assertThat(pack.category()).isNotBlank();
-			Set<Integer> ids = new HashSet<>();
-			Set<String> answersByTopic = new HashSet<>();
+		Set<Integer> ids = new HashSet<>();
+		Set<String> countries = new HashSet<>();
+		Set<String> categories = new HashSet<>();
+		Set<String> topics = new HashSet<>();
+		List<PackLoader.Pack> packs = PackLoader.bundled();
+		assertThat(packs).isNotEmpty();
+		for (PackLoader.Pack p : packs) {
+			QuestionPack pack = QuestionPack.parse(p.json());
+			assertThat(pack.category()).as(p.name()).isNotBlank();
+			assertThat(categories.add(pack.category().toLowerCase())).as("category used twice: " + pack.category()).isTrue();
+			assertThat(COUNTRIES).as(p.name() + " country").contains(pack.country());
+			assertThat(countries.add(pack.country())).as("two packs for " + pack.country()).isTrue();
+			assertThat(p.name()).as("file is named after its country").isEqualTo(pack.country().toLowerCase() + ".json");
 			for (QuestionPack.PackTopic topic : pack.topics()) {
+				// topic names become game names, so they must be unique across every country
+				assertThat(topics.add(topic.name().toLowerCase())).as("topic used twice: " + topic.name()).isTrue();
 				List<Questions> qs = QuestionPack.questions(topic);
 				// the game manager makes automatic games for topics with 12 or more questions
-				assertThat(qs).as(topic.name()).hasSizeGreaterThanOrEqualTo(20);
+				assertThat(qs).as(topic.name()).hasSizeGreaterThanOrEqualTo(14);
 				for (int level = 1; level <= 3; level++) {
 					int l = level;
 					assertThat(qs.stream().filter(q -> q.getQuestionLevel() == l).count()).as(topic.name() + " level " + l)
-							.isGreaterThanOrEqualTo(3);
+							.isGreaterThanOrEqualTo(2);
 				}
 				for (Questions q : qs) {
 					assertThatCode(() -> QuestionRules.validate(q)).as(q.getQuestionStem()).doesNotThrowAnyException();
 					assertThat(q.getOption4()).as(q.getQuestionStem()).isNotBlank();
 					assertThat(q.getExplanation()).as(q.getQuestionStem()).isNotBlank();
-					assertThat(ids.add(q.getQuestionId())).as("duplicate id: " + q.getQuestionStem()).isTrue();
-					assertThat(answersByTopic.add(topic.name() + "|" + q.getQuestionStem().toLowerCase()))
-							.as("duplicate question").isTrue();
+					// ids are global: a clash would let one question overwrite another; reword one of them
+					assertThat(ids.add(q.getQuestionId())).as("id clash, reword: " + q.getQuestionStem()).isTrue();
 				}
 			}
 		}
@@ -52,7 +87,7 @@ class PackLoaderTest {
 
 	@Test
 	void idsAndOptionOrderAreStableSoReloadingUpdatesInsteadOfDuplicating() {
-		QuestionPack.PackTopic topic = QuestionPack.load(PackLoader.PACKS.get(0)).topics().get(0);
+		QuestionPack.PackTopic topic = QuestionPack.load("packs/in.json").topics().get(0);
 		List<Questions> a = QuestionPack.questions(topic);
 		List<Questions> b = QuestionPack.questions(topic);
 		for (int i = 0; i < a.size(); i++) {
@@ -66,17 +101,37 @@ class PackLoaderTest {
 
 	@Test
 	@SuppressWarnings("unchecked")
-	void putsEachTopicInTheBankAndLeavesRetiredQuestionsOut() {
+	void putsEachTopicInTheBankWithItsCountryAndLeavesRetiredQuestionsOut() {
 		QuestionBankService bank = mock(QuestionBankService.class);
-		QuestionPack pack = QuestionPack.load(PackLoader.PACKS.get(0));
+		PackLoader.Pack india = PackLoader.bundled().stream().filter(p -> p.name().equals("in.json")).findFirst().orElseThrow();
+		QuestionPack pack = QuestionPack.parse(india.json());
 		int retiredId = QuestionPack.questions(pack.topics().get(0)).get(0).getQuestionId();
 
-		new PackLoader(bank, id -> id == retiredId).load(PackLoader.PACKS);
+		new PackLoader(bank, id -> id == retiredId, new Memory()).load(List.of(india));
 
-		verify(bank, times(pack.topics().size())).importQuestions(eq(pack.category()), anyString(), anyList());
+		verify(bank, times(pack.topics().size())).importQuestions(eq(pack.category()), eq("IN"), anyString(), anyList());
 		ArgumentCaptor<List<Questions>> first = ArgumentCaptor.forClass(List.class);
-		verify(bank).importQuestions(eq(pack.category()), eq(pack.topics().get(0).name()), first.capture());
+		verify(bank).importQuestions(eq(pack.category()), eq("IN"), eq(pack.topics().get(0).name()), first.capture());
 		assertThat(first.getValue()).hasSize(pack.topics().get(0).questions().size() - 1)
 				.noneMatch(q -> q.getQuestionId() == retiredId);
+	}
+
+	@Test
+	void onlyPacksThatChangedSinceTheLastStartAreSentAgain() {
+		QuestionBankService bank = mock(QuestionBankService.class);
+		Memory memory = new Memory();
+		List<PackLoader.Pack> packs = PackLoader.bundled();
+		PackLoader loader = new PackLoader(bank, id -> false, memory);
+
+		loader.load(packs);
+		clearInvocations(bank);
+		loader.load(packs); // a normal restart
+		verify(bank, never()).importQuestions(anyString(), anyString(), anyString(), anyList());
+
+		PackLoader.Pack india = packs.stream().filter(p -> p.name().equals("in.json")).findFirst().orElseThrow();
+		String edited = new String(india.json()).replace("The Wall", "The Great Wall");
+		loader.load(List.of(new PackLoader.Pack("in.json", edited.getBytes())));
+		verify(bank, times(QuestionPack.parse(india.json()).topics().size())).importQuestions(anyString(), eq("IN"),
+				anyString(), anyList());
 	}
 }

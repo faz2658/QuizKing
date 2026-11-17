@@ -13,6 +13,7 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.data.mongodb.core.MongoOperations;
 
 import com.fazeel.quizcadia.bank.QuestionBankService;
 import com.fazeel.quizcadia.generator.FactQuestionGenerator;
@@ -67,6 +68,7 @@ public class QuestionGeneratorApplication {
 	/** Adds the bundled question packs (India &amp; South Asia, ...) to the bank on every start; already-loaded ones are kept. */
 	@Bean
 	ApplicationRunner loadPacks(QuestionBankService bank, ObjectProvider<RetiredQuestionRepository> retired,
+			ObjectProvider<MongoOperations> mongo,
 			@Value("${quizcadia.packs.load-on-start:true}") boolean loadOnStart) {
 		return args -> {
 			if (!loadOnStart) {
@@ -74,11 +76,39 @@ public class QuestionGeneratorApplication {
 			}
 			try {
 				RetiredQuestionRepository r = retired.getIfAvailable();
-				int added = new PackLoader(bank, id -> r != null && r.existsById(id)).load(PackLoader.PACKS);
+				MongoOperations m = mongo.getIfAvailable();
+				PackLoader.LoadedPacks loaded = m == null ? inMemoryPacks() : new PackLoader.LoadedPacks() {
+					@Override
+					public String hash(String pack) {
+						org.bson.Document d = m.findById(pack, org.bson.Document.class, "question_packs");
+						return d == null ? null : d.getString("hash");
+					}
+
+					@Override
+					public void loaded(String pack, String hash) {
+						m.save(new org.bson.Document("_id", pack).append("hash", hash), "question_packs");
+					}
+				};
+				int added = new PackLoader(bank, id -> r != null && r.existsById(id), loaded).load(PackLoader.bundled());
 				log.info("Question packs: {} new questions", added);
 			}
 			catch (RuntimeException e) {
 				log.warn("Could not load the question packs", e);
+			}
+		};
+	}
+
+	private static PackLoader.LoadedPacks inMemoryPacks() {
+		java.util.Map<String, String> m = new java.util.concurrent.ConcurrentHashMap<>();
+		return new PackLoader.LoadedPacks() {
+			@Override
+			public String hash(String pack) {
+				return m.get(pack);
+			}
+
+			@Override
+			public void loaded(String pack, String hash) {
+				m.put(pack, hash);
 			}
 		};
 	}

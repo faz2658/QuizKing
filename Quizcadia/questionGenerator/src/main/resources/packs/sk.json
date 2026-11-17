@@ -1,0 +1,346 @@
+{
+ "category": "Slovakia",
+ "country": "SK",
+ "topics": [
+  {
+   "name": "Slovakia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Slovakia become an independent state?",
+     "a": "1993",
+     "wrong": [
+      "1989",
+      "1991",
+      "2004"
+     ],
+     "why": "It split peacefully from the Czech Republic."
+    },
+    {
+     "level": 1,
+     "q": "What is the capital of Slovakia?",
+     "a": "Bratislava",
+     "wrong": [
+      "Košice",
+      "Žilina",
+      "Nitra"
+     ],
+     "why": "It borders both Austria and Hungary."
+    },
+    {
+     "level": 1,
+     "q": "Which 9th-century state was centred in today's Slovakia and Moravia?",
+     "a": "Great Moravia",
+     "wrong": [
+      "Kievan Rus'",
+      "Bohemia",
+      "Pannonia"
+     ],
+     "why": "Saints Cyril and Methodius came there."
+    },
+    {
+     "level": 1,
+     "q": "Which brothers brought Christianity and a Slavic script to Great Moravia?",
+     "a": "Cyril and Methodius",
+     "wrong": [
+      "Peter and Paul",
+      "Boris and Gleb",
+      "Wenceslas and Ludmila"
+     ],
+     "why": "They arrived in 863."
+    },
+    {
+     "level": 1,
+     "q": "Which kingdom ruled Slovakia for about 1,000 years?",
+     "a": "Kingdom of Hungary",
+     "wrong": [
+      "Austria",
+      "Poland",
+      "Bohemia"
+     ],
+     "why": "Bratislava was the Hungarian capital for centuries."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Slovakia join the EU and NATO?",
+     "a": "2004",
+     "wrong": [
+      "1993",
+      "1999",
+      "2009"
+     ],
+     "why": "It adopted the euro in 2009."
+    },
+    {
+     "level": 1,
+     "q": "Which Slovak-born politician led the Prague Spring of 1968?",
+     "a": "Alexander Dubček",
+     "wrong": [
+      "Gustáv Husák",
+      "Ľudovít Štúr",
+      "Milan Rastislav Štefánik"
+     ],
+     "why": "He called it 'socialism with a human face'."
+    },
+    {
+     "level": 2,
+     "q": "Which scholar codified the Slovak literary language in the 1840s?",
+     "a": "Ľudovít Štúr",
+     "wrong": [
+      "Anton Bernolák",
+      "Pavol Országh",
+      "Ján Kollár"
+     ],
+     "why": "He is a national hero."
+    },
+    {
+     "level": 2,
+     "q": "Which Slovak astronomer and general co-founded Czechoslovakia?",
+     "a": "Milan Rastislav Štefánik",
+     "wrong": [
+      "Andrej Hlinka",
+      "Jozef Tiso",
+      "Ľudovít Štúr"
+     ],
+     "why": "He died in a plane crash in 1919."
+    },
+    {
+     "level": 2,
+     "q": "Which 1944 uprising fought the Nazis in Slovakia?",
+     "a": "Slovak National Uprising",
+     "wrong": [
+      "Warsaw Uprising",
+      "Prague Uprising",
+      "Tatra Rebellion"
+     ],
+     "why": "It started in Banská Bystrica."
+    },
+    {
+     "level": 2,
+     "q": "Who became Slovakia's first woman President, in 2019?",
+     "a": "Zuzana Čaputová",
+     "wrong": [
+      "Iveta Radičová",
+      "Lucia Žitňanská",
+      "Andrea Kalavská"
+     ],
+     "why": "She was a lawyer and activist."
+    },
+    {
+     "level": 2,
+     "q": "Which legendary outlaw is called the Slovak Robin Hood?",
+     "a": "Juraj Jánošík",
+     "wrong": [
+      "Ilja Muromets",
+      "Juraj Dózsa",
+      "Matúš Čák"
+     ],
+     "why": "He was executed in 1713."
+    },
+    {
+     "level": 3,
+     "q": "Which city was the coronation city of Hungarian kings from 1563 to 1830?",
+     "a": "Bratislava (Pressburg)",
+     "wrong": [
+      "Košice",
+      "Nitra",
+      "Trnava"
+     ],
+     "why": "Kings were crowned in St Martin's Cathedral."
+    },
+    {
+     "level": 3,
+     "q": "Which Slovak inventor is credited with an early parachute design?",
+     "a": "Štefan Banič",
+     "wrong": [
+      "Jozef Murgaš",
+      "Aurel Stodola",
+      "Ján Bahýľ"
+     ],
+     "why": "He patented it in the USA in 1914."
+    },
+    {
+     "level": 3,
+     "q": "Which Slovak inventor pioneered wireless telegraphy?",
+     "a": "Jozef Murgaš",
+     "wrong": [
+      "Štefan Banič",
+      "Aurel Stodola",
+      "Ján Bahýľ"
+     ],
+     "why": "He was a priest and painter too."
+    }
+   ]
+  },
+  {
+   "name": "Slovakia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Slovakia's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Koruna",
+      "Forint",
+      "Złoty"
+     ],
+     "why": "It was adopted in 2009."
+    },
+    {
+     "level": 1,
+     "q": "Which mountains are Slovakia's highest?",
+     "a": "High Tatras",
+     "wrong": [
+      "Low Tatras",
+      "Alps",
+      "Carpathians of Romania"
+     ],
+     "why": "Gerlachovský štít is the highest peak."
+    },
+    {
+     "level": 1,
+     "q": "Which river flows through Bratislava?",
+     "a": "Danube",
+     "wrong": [
+      "Váh",
+      "Hron",
+      "Vltava"
+     ],
+     "why": "It also flows to Vienna and Budapest."
+    },
+    {
+     "level": 1,
+     "q": "Which potato dumplings with sheep's cheese are the national dish?",
+     "a": "Bryndzové halušky",
+     "wrong": [
+      "Pierogi",
+      "Knedlíky",
+      "Gnocchi"
+     ],
+     "why": "They are topped with bacon."
+    },
+    {
+     "level": 1,
+     "q": "Which castle ruins in eastern Slovakia are among Central Europe's largest?",
+     "a": "Spiš Castle",
+     "wrong": [
+      "Bojnice Castle",
+      "Devín Castle",
+      "Orava Castle"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which Slovak ice hockey star played for the Boston Bruins?",
+     "a": "Zdeno Chára",
+     "wrong": [
+      "Marián Hossa",
+      "Peter Šťastný",
+      "Marián Gáborík"
+     ],
+     "why": "He was one of the tallest NHL players."
+    },
+    {
+     "level": 1,
+     "q": "Which fairy-tale castle in central Slovakia looks like it's from a storybook?",
+     "a": "Bojnice Castle",
+     "wrong": [
+      "Spiš Castle",
+      "Trenčín Castle",
+      "Bratislava Castle"
+     ],
+     "why": "It hosts a festival of ghosts."
+    },
+    {
+     "level": 2,
+     "q": "Which castle above the Orava River appeared in the 1922 film 'Nosferatu'?",
+     "a": "Orava Castle",
+     "wrong": [
+      "Bojnice Castle",
+      "Spiš Castle",
+      "Devín Castle"
+     ],
+     "why": "It sits on a high rock."
+    },
+    {
+     "level": 2,
+     "q": "Which cave system is famous for its ice formations?",
+     "a": "Dobšiná Ice Cave",
+     "wrong": [
+      "Domica Cave",
+      "Demänová Cave",
+      "Ochtinská Cave"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which wooden churches in the east are a UNESCO site?",
+     "a": "Wooden churches of the Carpathians",
+     "wrong": [
+      "Stave churches",
+      "Kizhi churches",
+      "Maramureș churches"
+     ],
+     "why": "Some were built without nails."
+    },
+    {
+     "level": 2,
+     "q": "Which mining town has a UNESCO-listed silver-mining heritage?",
+     "a": "Banská Štiavnica",
+     "wrong": [
+      "Kremnica",
+      "Banská Bystrica",
+      "Rožňava"
+     ],
+     "why": "It was once one of the largest cities in Hungary."
+    },
+    {
+     "level": 2,
+     "q": "Which Slovak cyclist won three world road race titles in a row?",
+     "a": "Peter Sagan",
+     "wrong": [
+      "Juraj Sagan",
+      "Peter Velits",
+      "Ján Svorada"
+     ],
+     "why": "He won from 2015 to 2017."
+    },
+    {
+     "level": 3,
+     "q": "What is the tallest peak in Slovakia?",
+     "a": "Gerlachovský štít",
+     "wrong": [
+      "Lomnický štít",
+      "Kriváň",
+      "Rysy"
+     ],
+     "why": "It is 2,655 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which village of log houses is a UNESCO site?",
+     "a": "Vlkolínec",
+     "wrong": [
+      "Čičmany",
+      "Ždiar",
+      "Podbiel"
+     ],
+     "why": "It is a well-preserved mountain village."
+    },
+    {
+     "level": 3,
+     "q": "Which traditional shepherd's flute is on UNESCO's list?",
+     "a": "Fujara",
+     "wrong": [
+      "Pan flute",
+      "Recorder",
+      "Bagpipe"
+     ],
+     "why": "It can be nearly two metres long."
+    }
+   ]
+  }
+ ]
+}

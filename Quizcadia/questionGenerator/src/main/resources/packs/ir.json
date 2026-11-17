@@ -1,0 +1,346 @@
+{
+ "category": "Iran",
+ "country": "IR",
+ "topics": [
+  {
+   "name": "Iran: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What was Iran called in the West until 1935?",
+     "a": "Persia",
+     "wrong": [
+      "Mesopotamia",
+      "Parthia",
+      "Babylon"
+     ],
+     "why": "Iranians have long called it Iran."
+    },
+    {
+     "level": 1,
+     "q": "Which king founded the Achaemenid Persian Empire?",
+     "a": "Cyrus the Great",
+     "wrong": [
+      "Darius I",
+      "Xerxes I",
+      "Shapur I"
+     ],
+     "why": "His cylinder is called an early charter of rights."
+    },
+    {
+     "level": 1,
+     "q": "Which ceremonial capital was built by Darius I?",
+     "a": "Persepolis",
+     "wrong": [
+      "Pasargadae",
+      "Susa",
+      "Ctesiphon"
+     ],
+     "why": "Alexander the Great burned it."
+    },
+    {
+     "level": 1,
+     "q": "Which 1979 event ended Iran's monarchy?",
+     "a": "Islamic Revolution",
+     "wrong": [
+      "White Revolution",
+      "Constitutional Revolution",
+      "Green Movement"
+     ],
+     "why": "Ayatollah Khomeini returned from exile."
+    },
+    {
+     "level": 1,
+     "q": "What was the title of Iran's kings?",
+     "a": "Shah",
+     "wrong": [
+      "Sultan",
+      "Emir",
+      "Caliph"
+     ],
+     "why": "The last shah was Mohammad Reza Pahlavi."
+    },
+    {
+     "level": 1,
+     "q": "Which war did Iran fight against Iraq from 1980 to 1988?",
+     "a": "Iran–Iraq War",
+     "wrong": [
+      "Gulf War",
+      "Six-Day War",
+      "Anglo-Persian War"
+     ],
+     "why": "It ended in a stalemate."
+    },
+    {
+     "level": 1,
+     "q": "Which poet wrote the 'Shahnameh' (Book of Kings)?",
+     "a": "Ferdowsi",
+     "wrong": [
+      "Hafez",
+      "Rumi",
+      "Saadi"
+     ],
+     "why": "It took him about 30 years."
+    },
+    {
+     "level": 2,
+     "q": "Which Achaemenid king invaded Greece and fought at Thermopylae?",
+     "a": "Xerxes I",
+     "wrong": [
+      "Cyrus II",
+      "Darius III",
+      "Artaxerxes I"
+     ],
+     "why": "He lost the naval battle of Salamis."
+    },
+    {
+     "level": 2,
+     "q": "Which Safavid shah made Isfahan his capital?",
+     "a": "Shah Abbas I",
+     "wrong": [
+      "Shah Ismail I",
+      "Nader Shah",
+      "Karim Khan Zand"
+     ],
+     "why": "He built its great square."
+    },
+    {
+     "level": 2,
+     "q": "Which Iranian lawyer won the 2003 Nobel Peace Prize?",
+     "a": "Shirin Ebadi",
+     "wrong": [
+      "Narges Mohammadi",
+      "Marjane Satrapi",
+      "Azar Nafisi"
+     ],
+     "why": "She was the first Muslim woman to win it."
+    },
+    {
+     "level": 2,
+     "q": "Which poet's tomb in Shiraz draws many readers?",
+     "a": "Hafez",
+     "wrong": [
+      "Ferdowsi",
+      "Omar Khayyam",
+      "Rumi"
+     ],
+     "why": "Iranians open his poems to tell fortunes."
+    },
+    {
+     "level": 2,
+     "q": "Which poet and astronomer wrote the 'Rubaiyat'?",
+     "a": "Omar Khayyam",
+     "wrong": [
+      "Avicenna",
+      "Al-Biruni",
+      "Ferdowsi"
+     ],
+     "why": "He also helped reform the calendar."
+    },
+    {
+     "level": 3,
+     "q": "Which physician wrote 'The Canon of Medicine'?",
+     "a": "Avicenna (Ibn Sina)",
+     "wrong": [
+      "Al-Razi",
+      "Al-Biruni",
+      "Ibn Rushd"
+     ],
+     "why": "It was used in Europe for centuries."
+    },
+    {
+     "level": 3,
+     "q": "Which 1906 revolution gave Iran its first parliament?",
+     "a": "Constitutional Revolution",
+     "wrong": [
+      "White Revolution",
+      "Islamic Revolution",
+      "Tobacco Protest"
+     ],
+     "why": "The Majlis was founded."
+    },
+    {
+     "level": 3,
+     "q": "Which Iranian mathematician won the Fields Medal in 2014?",
+     "a": "Maryam Mirzakhani",
+     "wrong": [
+      "Cumrun Vafa",
+      "Caucher Birkar",
+      "Firouz Naderi"
+     ],
+     "why": "She was the first woman to win it."
+    }
+   ]
+  },
+  {
+   "name": "Iran: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Iran?",
+     "a": "Tehran",
+     "wrong": [
+      "Isfahan",
+      "Shiraz",
+      "Mashhad"
+     ],
+     "why": "It lies below the Alborz mountains."
+    },
+    {
+     "level": 1,
+     "q": "What is the Persian New Year called?",
+     "a": "Nowruz",
+     "wrong": [
+      "Yalda",
+      "Mehregan",
+      "Chaharshanbe Suri"
+     ],
+     "why": "It begins at the spring equinox."
+    },
+    {
+     "level": 1,
+     "q": "Iran is the world's top producer of which spice from crocus flowers?",
+     "a": "Saffron",
+     "wrong": [
+      "Turmeric",
+      "Cumin",
+      "Sumac"
+     ],
+     "why": "Most comes from Khorasan."
+    },
+    {
+     "level": 1,
+     "q": "What is Iran's currency?",
+     "a": "Rial",
+     "wrong": [
+      "Dinar",
+      "Lira",
+      "Dirham"
+     ],
+     "why": "People often count prices in tomans."
+    },
+    {
+     "level": 1,
+     "q": "Which hand-knotted floor coverings is Iran famous for?",
+     "a": "Persian carpets",
+     "wrong": [
+      "Tapestries",
+      "Quilts",
+      "Batik cloths"
+     ],
+     "why": "Tabriz and Isfahan are famous centres."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies north of Iran?",
+     "a": "Caspian Sea",
+     "wrong": [
+      "Black Sea",
+      "Aral Sea",
+      "Red Sea"
+     ],
+     "why": "It is the world's largest lake."
+    },
+    {
+     "level": 1,
+     "q": "Which gulf lies south of Iran?",
+     "a": "Persian Gulf",
+     "wrong": [
+      "Gulf of Aden",
+      "Red Sea",
+      "Gulf of Mexico"
+     ],
+     "why": "The Strait of Hormuz is its mouth."
+    },
+    {
+     "level": 2,
+     "q": "Which city is famous for its 'Image of the World' square?",
+     "a": "Isfahan",
+     "wrong": [
+      "Shiraz",
+      "Tabriz",
+      "Yazd"
+     ],
+     "why": "Naqsh-e Jahan Square is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "What is Iran's highest mountain?",
+     "a": "Mount Damavand",
+     "wrong": [
+      "Mount Ararat",
+      "Mount Sabalan",
+      "Mount Dena"
+     ],
+     "why": "It is a dormant volcano."
+    },
+    {
+     "level": 2,
+     "q": "Which desert city is famous for its wind-catcher towers?",
+     "a": "Yazd",
+     "wrong": [
+      "Kerman",
+      "Isfahan",
+      "Tabriz"
+     ],
+     "why": "Its old town is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which celebration of the longest night features pomegranates?",
+     "a": "Yalda Night",
+     "wrong": [
+      "Nowruz",
+      "Sizdah Bedar",
+      "Mehregan"
+     ],
+     "why": "Families read Hafez's poems."
+    },
+    {
+     "level": 2,
+     "q": "Which Iranian director won Oscars for 'A Separation' and 'The Salesman'?",
+     "a": "Asghar Farhadi",
+     "wrong": [
+      "Abbas Kiarostami",
+      "Jafar Panahi",
+      "Majid Majidi"
+     ],
+     "why": "Both won Best Foreign Language Film."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient city in Fars holds the tomb of Cyrus the Great?",
+     "a": "Pasargadae",
+     "wrong": [
+      "Persepolis",
+      "Susa",
+      "Naqsh-e Rustam"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which crispy golden rice crust is a Persian favourite?",
+     "a": "Tahdig",
+     "wrong": [
+      "Chelow kebab",
+      "Ghormeh sabzi",
+      "Fesenjan"
+     ],
+     "why": "It forms at the bottom of the pot."
+    },
+    {
+     "level": 3,
+     "q": "Which herb stew with kidney beans is often called the national dish?",
+     "a": "Ghormeh sabzi",
+     "wrong": [
+      "Fesenjan",
+      "Ash reshteh",
+      "Dizi"
+     ],
+     "why": "It is flavoured with dried lime."
+    }
+   ]
+  }
+ ]
+}
