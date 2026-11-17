@@ -1,0 +1,1092 @@
+{
+ "category": "Japan",
+ "country": "JP",
+ "topics": [
+  {
+   "name": "Japan History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What were Japan's military rulers called from 1192 to 1867?",
+     "a": "Shoguns",
+     "wrong": [
+      "Daimyo",
+      "Emperors",
+      "Samurai"
+     ],
+     "why": "The emperor kept a ceremonial role."
+    },
+    {
+     "level": 1,
+     "q": "What were Japan's warrior class called?",
+     "a": "Samurai",
+     "wrong": [
+      "Ninja",
+      "Daimyo",
+      "Sumo"
+     ],
+     "why": "They followed a code later called bushido."
+    },
+    {
+     "level": 1,
+     "q": "Which two cities were hit by atomic bombs in 1945?",
+     "a": "Hiroshima and Nagasaki",
+     "wrong": [
+      "Tokyo and Osaka",
+      "Kyoto and Nara",
+      "Kobe and Yokohama"
+     ],
+     "why": "Japan surrendered soon after."
+    },
+    {
+     "level": 1,
+     "q": "Which city was Japan's imperial capital for over 1,000 years?",
+     "a": "Kyoto",
+     "wrong": [
+      "Nara",
+      "Osaka",
+      "Kamakura"
+     ],
+     "why": "Tokyo became the capital in 1868."
+    },
+    {
+     "level": 1,
+     "q": "What was Tokyo called before 1868?",
+     "a": "Edo",
+     "wrong": [
+      "Heian",
+      "Nara",
+      "Kamakura"
+     ],
+     "why": "The Edo period is named after it."
+    },
+    {
+     "level": 1,
+     "q": "Which 1868 event restored power to the emperor?",
+     "a": "Meiji Restoration",
+     "wrong": [
+      "Taika Reform",
+      "Kamakura Shogunate",
+      "Heian Revolution"
+     ],
+     "why": "Japan then modernised quickly."
+    },
+    {
+     "level": 1,
+     "q": "Which earthquake and tsunami struck northeastern Japan in March 2011?",
+     "a": "Tōhoku earthquake",
+     "wrong": [
+      "Great Kantō earthquake",
+      "Kobe earthquake",
+      "Niigata earthquake"
+     ],
+     "why": "It caused the Fukushima nuclear disaster."
+    },
+    {
+     "level": 2,
+     "q": "Which shogunate ruled Japan from 1603 to 1867?",
+     "a": "Tokugawa",
+     "wrong": [
+      "Ashikaga",
+      "Kamakura",
+      "Minamoto"
+     ],
+     "why": "Tokugawa Ieyasu founded it."
+    },
+    {
+     "level": 2,
+     "q": "Which American commodore's 'black ships' forced Japan to open in 1853?",
+     "a": "Matthew Perry",
+     "wrong": [
+      "George Dewey",
+      "David Farragut",
+      "William Halsey"
+     ],
+     "why": "Japan had been largely closed for over 200 years."
+    },
+    {
+     "level": 2,
+     "q": "Which 1600 battle gave Tokugawa Ieyasu control of Japan?",
+     "a": "Battle of Sekigahara",
+     "wrong": [
+      "Battle of Nagashino",
+      "Battle of Dan-no-ura",
+      "Battle of Okehazama"
+     ],
+     "why": "It is one of Japan's most famous battles."
+    },
+    {
+     "level": 2,
+     "q": "Which Japanese attack in December 1941 brought the US into the war?",
+     "a": "Pearl Harbor",
+     "wrong": [
+      "Midway",
+      "Singapore",
+      "Guadalcanal"
+     ],
+     "why": "It was on 7 December 1941."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Emperor Naruhito take the throne?",
+     "a": "2019",
+     "wrong": [
+      "1989",
+      "2015",
+      "2021"
+     ],
+     "why": "It began the Reiwa era."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient capital is famous for deer and a giant bronze Buddha?",
+     "a": "Nara",
+     "wrong": [
+      "Kyoto",
+      "Kamakura",
+      "Nikko"
+     ],
+     "why": "Tōdai-ji houses the Buddha."
+    },
+    {
+     "level": 3,
+     "q": "Which warlord began unifying Japan in the 1500s and died at Honnō-ji?",
+     "a": "Oda Nobunaga",
+     "wrong": [
+      "Toyotomi Hideyoshi",
+      "Tokugawa Ieyasu",
+      "Takeda Shingen"
+     ],
+     "why": "He was betrayed in 1582."
+    },
+    {
+     "level": 3,
+     "q": "Which earthquake devastated Tokyo and Yokohama in 1923?",
+     "a": "Great Kantō earthquake",
+     "wrong": [
+      "Tōhoku earthquake",
+      "Kobe earthquake",
+      "Ansei earthquake"
+     ],
+     "why": "Fires caused most of the damage."
+    },
+    {
+     "level": 3,
+     "q": "What was Japan's policy of national isolation called?",
+     "a": "Sakoku",
+     "wrong": [
+      "Bushido",
+      "Shinto",
+      "Zaibatsu"
+     ],
+     "why": "Only Dutch and Chinese traders could visit, at Nagasaki."
+    }
+   ]
+  },
+  {
+   "name": "Japan Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Japan?",
+     "a": "Tokyo",
+     "wrong": [
+      "Kyoto",
+      "Osaka",
+      "Yokohama"
+     ],
+     "why": "Its metro area is the world's largest."
+    },
+    {
+     "level": 1,
+     "q": "What is Japan's highest mountain?",
+     "a": "Mount Fuji",
+     "wrong": [
+      "Mount Kita",
+      "Mount Aso",
+      "Mount Ontake"
+     ],
+     "why": "It is 3,776 m high."
+    },
+    {
+     "level": 1,
+     "q": "What are Japan's four main islands?",
+     "a": "Honshu, Hokkaido, Kyushu and Shikoku",
+     "wrong": [
+      "Honshu, Okinawa, Kyushu and Shikoku",
+      "Hokkaido, Sakhalin, Honshu and Kyushu",
+      "Honshu, Hokkaido, Okinawa and Kyushu"
+     ],
+     "why": "Honshu is the largest."
+    },
+    {
+     "level": 1,
+     "q": "Which island prefecture in the south was the Ryukyu Kingdom?",
+     "a": "Okinawa",
+     "wrong": [
+      "Kyushu",
+      "Shikoku",
+      "Hokkaido"
+     ],
+     "why": "It joined Japan in 1879."
+    },
+    {
+     "level": 1,
+     "q": "Which northern island hosts the Sapporo Snow Festival?",
+     "a": "Hokkaido",
+     "wrong": [
+      "Honshu",
+      "Kyushu",
+      "Shikoku"
+     ],
+     "why": "Huge ice sculptures fill the city each February."
+    },
+    {
+     "level": 1,
+     "q": "What is Japan's second-largest city?",
+     "a": "Yokohama",
+     "wrong": [
+      "Osaka",
+      "Nagoya",
+      "Kyoto"
+     ],
+     "why": "It is next to Tokyo."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean lies east of Japan?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "The Sea of Japan lies to the west."
+    },
+    {
+     "level": 2,
+     "q": "What is Japan's largest lake?",
+     "a": "Lake Biwa",
+     "wrong": [
+      "Lake Ashi",
+      "Lake Kawaguchi",
+      "Lake Towada"
+     ],
+     "why": "It is in Shiga Prefecture."
+    },
+    {
+     "level": 2,
+     "q": "Which island is the shrine with a 'floating' torii gate on?",
+     "a": "Miyajima (Itsukushima)",
+     "wrong": [
+      "Naoshima",
+      "Enoshima",
+      "Sado"
+     ],
+     "why": "The gate seems to float at high tide."
+    },
+    {
+     "level": 2,
+     "q": "Which Tokyo crossing is one of the world's busiest?",
+     "a": "Shibuya Crossing",
+     "wrong": [
+      "Ginza Crossing",
+      "Shinjuku Crossing",
+      "Akihabara Crossing"
+     ],
+     "why": "Thousands cross at once."
+    },
+    {
+     "level": 2,
+     "q": "How many prefectures does Japan have?",
+     "a": "47",
+     "wrong": [
+      "50",
+      "43",
+      "36"
+     ],
+     "why": "Tokyo is called a metropolis."
+    },
+    {
+     "level": 2,
+     "q": "What is Japan's longest river?",
+     "a": "Shinano River",
+     "wrong": [
+      "Tone River",
+      "Ishikari River",
+      "Kiso River"
+     ],
+     "why": "It flows into the Sea of Japan."
+    },
+    {
+     "level": 2,
+     "q": "Which Tokyo tower is the world's tallest broadcasting tower?",
+     "a": "Tokyo Skytree",
+     "wrong": [
+      "Tokyo Tower",
+      "Sunshine 60",
+      "Abeno Harukas"
+     ],
+     "why": "It is 634 m tall."
+    },
+    {
+     "level": 3,
+     "q": "Which active volcano in Kyushu has one of the world's largest calderas?",
+     "a": "Mount Aso",
+     "wrong": [
+      "Sakurajima",
+      "Mount Unzen",
+      "Kirishima"
+     ],
+     "why": "People live inside the caldera."
+    },
+    {
+     "level": 3,
+     "q": "Which volcano erupts often across the bay from Kagoshima?",
+     "a": "Sakurajima",
+     "wrong": [
+      "Mount Aso",
+      "Mount Ontake",
+      "Mount Asama"
+     ],
+     "why": "Ash often falls on the city."
+    },
+    {
+     "level": 3,
+     "q": "Which cedar forest island is a UNESCO site south of Kyushu?",
+     "a": "Yakushima",
+     "wrong": [
+      "Amami Ōshima",
+      "Iriomote",
+      "Tanegashima"
+     ],
+     "why": "Some of its cedars are thousands of years old."
+    }
+   ]
+  },
+  {
+   "name": "Japan Sport",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which traditional wrestling sport is Japan's national sport?",
+     "a": "Sumo",
+     "wrong": [
+      "Judo",
+      "Karate",
+      "Kendo"
+     ],
+     "why": "Its top rank is yokozuna."
+    },
+    {
+     "level": 1,
+     "q": "Which baseball star plays as both pitcher and hitter in MLB?",
+     "a": "Shohei Ohtani",
+     "wrong": [
+      "Ichiro Suzuki",
+      "Hideki Matsui",
+      "Yu Darvish"
+     ],
+     "why": "He signed with the Los Angeles Dodgers."
+    },
+    {
+     "level": 1,
+     "q": "Which martial art was founded by Jigoro Kano in 1882?",
+     "a": "Judo",
+     "wrong": [
+      "Karate",
+      "Aikido",
+      "Kendo"
+     ],
+     "why": "It became an Olympic sport in 1964."
+    },
+    {
+     "level": 1,
+     "q": "Which city hosted the 2020 Summer Olympics, held in 2021?",
+     "a": "Tokyo",
+     "wrong": [
+      "Osaka",
+      "Sapporo",
+      "Nagano"
+     ],
+     "why": "It was delayed by the pandemic."
+    },
+    {
+     "level": 1,
+     "q": "Which martial art from Okinawa means 'empty hand'?",
+     "a": "Karate",
+     "wrong": [
+      "Judo",
+      "Kendo",
+      "Aikido"
+     ],
+     "why": "It debuted at the Tokyo Olympics."
+    },
+    {
+     "level": 1,
+     "q": "Which Japanese tennis player won four Grand Slam singles titles?",
+     "a": "Naomi Osaka",
+     "wrong": [
+      "Kei Nishikori",
+      "Kimiko Date",
+      "Ai Sugiyama"
+     ],
+     "why": "She won two US Opens and two Australian Opens."
+    },
+    {
+     "level": 1,
+     "q": "Which sport uses bamboo swords and armour?",
+     "a": "Kendo",
+     "wrong": [
+      "Kyudo",
+      "Aikido",
+      "Sumo"
+     ],
+     "why": "Its name means 'way of the sword'."
+    },
+    {
+     "level": 2,
+     "q": "Which Japanese baseball player had 262 hits in an MLB season?",
+     "a": "Ichiro Suzuki",
+     "wrong": [
+      "Hideki Matsui",
+      "Shohei Ohtani",
+      "Kosuke Fukudome"
+     ],
+     "why": "It was a record set in 2004."
+    },
+    {
+     "level": 2,
+     "q": "Which Japanese team won the 2011 Women's World Cup?",
+     "a": "Nadeshiko Japan",
+     "wrong": [
+      "Samurai Blue",
+      "Brave Blossoms",
+      "Hayabusa Japan"
+     ],
+     "why": "They beat the USA on penalties."
+    },
+    {
+     "level": 2,
+     "q": "Which team did Japan's rugby side beat in the 2015 'Miracle of Brighton'?",
+     "a": "South Africa",
+     "wrong": [
+      "New Zealand",
+      "England",
+      "Australia"
+     ],
+     "why": "They won 34–32."
+    },
+    {
+     "level": 2,
+     "q": "Which figure skater won Olympic gold in 2014 and 2018?",
+     "a": "Yuzuru Hanyu",
+     "wrong": [
+      "Shoma Uno",
+      "Daisuke Takahashi",
+      "Nathan Chen"
+     ],
+     "why": "He was the first man in 66 years to win twice in a row."
+    },
+    {
+     "level": 2,
+     "q": "What is the top rank in sumo called?",
+     "a": "Yokozuna",
+     "wrong": [
+      "Ōzeki",
+      "Sekiwake",
+      "Komusubi"
+     ],
+     "why": "Yokozuna wear a thick rope belt in ceremonies."
+    },
+    {
+     "level": 2,
+     "q": "Which tournament did Japan win in 2006, 2009 and 2023?",
+     "a": "World Baseball Classic",
+     "wrong": [
+      "FIFA World Cup",
+      "Rugby World Cup",
+      "WBSC Premier12"
+     ],
+     "why": "Ohtani was MVP in 2023."
+    },
+    {
+     "level": 3,
+     "q": "Which city hosted the 1998 Winter Olympics?",
+     "a": "Nagano",
+     "wrong": [
+      "Sapporo",
+      "Tokyo",
+      "Sendai"
+     ],
+     "why": "Sapporo hosted in 1972."
+    },
+    {
+     "level": 3,
+     "q": "Which boxer from Japan, 'The Monster', became undisputed champion in two divisions?",
+     "a": "Naoya Inoue",
+     "wrong": [
+      "Kazuto Ioka",
+      "Ryota Murata",
+      "Takuma Inoue"
+     ],
+     "why": "He did it at bantamweight and super bantamweight."
+    },
+    {
+     "level": 3,
+     "q": "Which high-school baseball tournament is held at Koshien Stadium every summer?",
+     "a": "Koshien",
+     "wrong": [
+      "Japan Series",
+      "Nippon Cup",
+      "Emperor's Cup"
+     ],
+     "why": "Players take home soil from the field."
+    }
+   ]
+  },
+  {
+   "name": "Japan Film, TV & Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which studio made 'Spirited Away' and 'My Neighbor Totoro'?",
+     "a": "Studio Ghibli",
+     "wrong": [
+      "Toei Animation",
+      "Sunrise",
+      "Kyoto Animation"
+     ],
+     "why": "Hayao Miyazaki co-founded it."
+    },
+    {
+     "level": 1,
+     "q": "Which giant monster first appeared in a 1954 film?",
+     "a": "Godzilla",
+     "wrong": [
+      "Mothra",
+      "King Ghidorah",
+      "Gamera"
+     ],
+     "why": "In Japan it is called Gojira."
+    },
+    {
+     "level": 1,
+     "q": "Which video game company created Mario and Zelda?",
+     "a": "Nintendo",
+     "wrong": [
+      "Sega",
+      "Sony",
+      "Capcom"
+     ],
+     "why": "It began as a playing-card company in Kyoto."
+    },
+    {
+     "level": 1,
+     "q": "What are Japanese comic books called?",
+     "a": "Manga",
+     "wrong": [
+      "Anime",
+      "Kanji",
+      "Haiku"
+     ],
+     "why": "Anime is the animated form."
+    },
+    {
+     "level": 1,
+     "q": "Which yellow electric mouse is the face of Pokémon?",
+     "a": "Pikachu",
+     "wrong": [
+      "Jigglypuff",
+      "Meowth",
+      "Eevee"
+     ],
+     "why": "Pokémon began as a Game Boy game in 1996."
+    },
+    {
+     "level": 1,
+     "q": "Which singing activity was invented in Japan in the 1970s?",
+     "a": "Karaoke",
+     "wrong": [
+      "Beatboxing",
+      "Kabuki",
+      "Rap battles"
+     ],
+     "why": "Its name means 'empty orchestra'."
+    },
+    {
+     "level": 1,
+     "q": "Which three-line poem has 5, 7 and 5 syllables?",
+     "a": "Haiku",
+     "wrong": [
+      "Tanka",
+      "Sonnet",
+      "Limerick"
+     ],
+     "why": "Matsuo Bashō was a master of it."
+    },
+    {
+     "level": 2,
+     "q": "Which Akira Kurosawa film follows warriors defending a village?",
+     "a": "Seven Samurai",
+     "wrong": [
+      "Rashomon",
+      "Ran",
+      "Yojimbo"
+     ],
+     "why": "It inspired 'The Magnificent Seven'."
+    },
+    {
+     "level": 2,
+     "q": "Which theatre form uses actors in bold make-up?",
+     "a": "Kabuki",
+     "wrong": [
+      "Noh",
+      "Bunraku",
+      "Rakugo"
+     ],
+     "why": "All roles are played by men."
+    },
+    {
+     "level": 2,
+     "q": "Which author wrote 'Norwegian Wood' and 'Kafka on the Shore'?",
+     "a": "Haruki Murakami",
+     "wrong": [
+      "Yukio Mishima",
+      "Kenzaburō Ōe",
+      "Banana Yoshimoto"
+     ],
+     "why": "His books are translated into over 50 languages."
+    },
+    {
+     "level": 2,
+     "q": "Which woodblock print shows a giant wave with Mount Fuji?",
+     "a": "The Great Wave off Kanagawa",
+     "wrong": [
+      "Red Fuji",
+      "Sudden Shower over Shin-Ōhashi",
+      "Plum Garden"
+     ],
+     "why": "Hokusai made it around 1831."
+    },
+    {
+     "level": 2,
+     "q": "Which 11th-century work is often called the world's first novel?",
+     "a": "The Tale of Genji",
+     "wrong": [
+      "The Pillow Book",
+      "Kojiki",
+      "The Tale of the Heike"
+     ],
+     "why": "Murasaki Shikibu wrote it."
+    },
+    {
+     "level": 2,
+     "q": "Which puppet theatre form uses large puppets with three handlers each?",
+     "a": "Bunraku",
+     "wrong": [
+      "Kabuki",
+      "Noh",
+      "Kyōgen"
+     ],
+     "why": "It developed in Osaka."
+    },
+    {
+     "level": 3,
+     "q": "Which film won Japan the Oscar for Best International Feature in 2022?",
+     "a": "Drive My Car",
+     "wrong": [
+      "Shoplifters",
+      "Departures",
+      "Perfect Days"
+     ],
+     "why": "Ryusuke Hamaguchi directed it."
+    },
+    {
+     "level": 3,
+     "q": "Which Japanese author won the Nobel Prize in Literature in 1968?",
+     "a": "Yasunari Kawabata",
+     "wrong": [
+      "Kenzaburō Ōe",
+      "Yukio Mishima",
+      "Kazuo Ishiguro"
+     ],
+     "why": "Ōe won in 1994."
+    },
+    {
+     "level": 3,
+     "q": "Which 2023 film won the Oscar for Best Visual Effects?",
+     "a": "Godzilla Minus One",
+     "wrong": [
+      "The Boy and the Heron",
+      "Shin Godzilla",
+      "Your Name"
+     ],
+     "why": "The Boy and the Heron won Best Animated Feature."
+    }
+   ]
+  },
+  {
+   "name": "Japan Food & Traditions",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which dish of vinegared rice with fish is world-famous?",
+     "a": "Sushi",
+     "wrong": [
+      "Tempura",
+      "Ramen",
+      "Udon"
+     ],
+     "why": "Nigiri is hand-pressed sushi."
+    },
+    {
+     "level": 1,
+     "q": "What is the spring custom of picnicking under cherry blossoms?",
+     "a": "Hanami",
+     "wrong": [
+      "Obon",
+      "Tanabata",
+      "Setsubun"
+     ],
+     "why": "The blossoms are called sakura."
+    },
+    {
+     "level": 1,
+     "q": "Which powdered green tea is used in the tea ceremony?",
+     "a": "Matcha",
+     "wrong": [
+      "Sencha",
+      "Genmaicha",
+      "Hojicha"
+     ],
+     "why": "It is whisked with a bamboo whisk."
+    },
+    {
+     "level": 1,
+     "q": "Which noodle soup comes in shoyu, miso and tonkotsu styles?",
+     "a": "Ramen",
+     "wrong": [
+      "Soba",
+      "Udon",
+      "Somen"
+     ],
+     "why": "Fukuoka is famous for tonkotsu."
+    },
+    {
+     "level": 1,
+     "q": "What is the traditional Japanese robe called?",
+     "a": "Kimono",
+     "wrong": [
+      "Hanbok",
+      "Qipao",
+      "Sari"
+     ],
+     "why": "A lighter summer version is the yukata."
+    },
+    {
+     "level": 1,
+     "q": "What is the art of paper folding called?",
+     "a": "Origami",
+     "wrong": [
+      "Ikebana",
+      "Bonsai",
+      "Kintsugi"
+     ],
+     "why": "The paper crane is a symbol of peace."
+    },
+    {
+     "level": 1,
+     "q": "Which seafood and vegetables are deep-fried in light batter?",
+     "a": "Tempura",
+     "wrong": [
+      "Tonkatsu",
+      "Karaage",
+      "Yakitori"
+     ],
+     "why": "Portuguese missionaries introduced it."
+    },
+    {
+     "level": 2,
+     "q": "What is the art of arranging flowers called?",
+     "a": "Ikebana",
+     "wrong": [
+      "Origami",
+      "Bonsai",
+      "Shodo"
+     ],
+     "why": "It focuses on line and form."
+    },
+    {
+     "level": 2,
+     "q": "What is the art of mending pottery with gold called?",
+     "a": "Kintsugi",
+     "wrong": [
+      "Raku",
+      "Urushi",
+      "Ikebana"
+     ],
+     "why": "It celebrates flaws as part of an object's history."
+    },
+    {
+     "level": 2,
+     "q": "Which summer festival honours the spirits of ancestors?",
+     "a": "Obon",
+     "wrong": [
+      "Hanami",
+      "Shichi-Go-San",
+      "Setsubun"
+     ],
+     "why": "Lanterns are floated on rivers."
+    },
+    {
+     "level": 2,
+     "q": "Which rice wine is served warm or cold?",
+     "a": "Sake",
+     "wrong": [
+      "Shochu",
+      "Mirin",
+      "Umeshu"
+     ],
+     "why": "In Japan, sake means any alcoholic drink; rice wine is nihonshu."
+    },
+    {
+     "level": 2,
+     "q": "What is the Japanese art of growing miniature trees?",
+     "a": "Bonsai",
+     "wrong": [
+      "Ikebana",
+      "Karesansui",
+      "Kokedama"
+     ],
+     "why": "Some bonsai are hundreds of years old."
+    },
+    {
+     "level": 2,
+     "q": "Which savoury pancake is a speciality of Osaka and Hiroshima?",
+     "a": "Okonomiyaki",
+     "wrong": [
+      "Takoyaki",
+      "Dorayaki",
+      "Taiyaki"
+     ],
+     "why": "Its name means 'grilled as you like it'."
+    },
+    {
+     "level": 3,
+     "q": "What is the festival on 3 March for girls called?",
+     "a": "Hinamatsuri",
+     "wrong": [
+      "Kodomo no Hi",
+      "Tanabata",
+      "Shichi-Go-San"
+     ],
+     "why": "Families display dolls on red tiers."
+    },
+    {
+     "level": 3,
+     "q": "During Setsubun, what do people throw to drive away demons?",
+     "a": "Roasted soybeans",
+     "wrong": [
+      "Rice",
+      "Salt",
+      "Coins"
+     ],
+     "why": "They shout 'Demons out, luck in!'"
+    },
+    {
+     "level": 3,
+     "q": "Which star festival on 7 July has wishes tied to bamboo?",
+     "a": "Tanabata",
+     "wrong": [
+      "Obon",
+      "Hinamatsuri",
+      "Shōgatsu"
+     ],
+     "why": "It celebrates two star-crossed lovers."
+    }
+   ]
+  },
+  {
+   "name": "Japan General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Japan's currency?",
+     "a": "Yen",
+     "wrong": [
+      "Won",
+      "Yuan",
+      "Ringgit"
+     ],
+     "why": "Its symbol is ¥."
+    },
+    {
+     "level": 1,
+     "q": "What is Japan called in Japanese?",
+     "a": "Nihon or Nippon",
+     "wrong": [
+      "Chūgoku",
+      "Hanguk",
+      "Zhonghua"
+     ],
+     "why": "It means 'origin of the sun'."
+    },
+    {
+     "level": 1,
+     "q": "What is Japan's high-speed train called?",
+     "a": "Shinkansen",
+     "wrong": [
+      "Maglev",
+      "TGV",
+      "KTX"
+     ],
+     "why": "It is nicknamed the bullet train."
+    },
+    {
+     "level": 1,
+     "q": "What does Japan's flag show?",
+     "a": "A red circle on a white background",
+     "wrong": [
+      "A white circle on red",
+      "A blue circle on white",
+      "A red cross on white"
+     ],
+     "why": "It is called the Hinomaru."
+    },
+    {
+     "level": 1,
+     "q": "Which carmaker from Japan is one of the world's largest?",
+     "a": "Toyota",
+     "wrong": [
+      "Hyundai",
+      "Volkswagen",
+      "Ford"
+     ],
+     "why": "It made the Prius hybrid."
+    },
+    {
+     "level": 1,
+     "q": "What is Japan's traditional religion, with shrines and torii gates?",
+     "a": "Shinto",
+     "wrong": [
+      "Taoism",
+      "Confucianism",
+      "Jainism"
+     ],
+     "why": "Most Japanese also follow Buddhist customs."
+    },
+    {
+     "level": 1,
+     "q": "Which electronics company made the Walkman and PlayStation?",
+     "a": "Sony",
+     "wrong": [
+      "Panasonic",
+      "Nintendo",
+      "Toshiba"
+     ],
+     "why": "The Walkman came out in 1979."
+    },
+    {
+     "level": 2,
+     "q": "In which year did the first Shinkansen line open?",
+     "a": "1964",
+     "wrong": [
+      "1972",
+      "1958",
+      "1985"
+     ],
+     "why": "It opened just before the Tokyo Olympics."
+    },
+    {
+     "level": 2,
+     "q": "What is Japan's parliament called?",
+     "a": "National Diet",
+     "wrong": [
+      "Bundestag",
+      "Knesset",
+      "National Assembly"
+     ],
+     "why": "It has two houses."
+    },
+    {
+     "level": 2,
+     "q": "Which writing systems does Japanese use?",
+     "a": "Kanji, hiragana and katakana",
+     "wrong": [
+      "Hangul and hanja",
+      "Kanji only",
+      "Romaji and Cyrillic"
+     ],
+     "why": "Katakana is used for foreign words."
+    },
+    {
+     "level": 2,
+     "q": "Which Japanese company made the Game Boy?",
+     "a": "Nintendo",
+     "wrong": [
+      "Sony",
+      "Sega",
+      "Bandai"
+     ],
+     "why": "It launched in 1989."
+    },
+    {
+     "level": 2,
+     "q": "Which flower is the emblem of Japan's imperial family?",
+     "a": "Chrysanthemum",
+     "wrong": [
+      "Cherry blossom",
+      "Lotus",
+      "Plum blossom"
+     ],
+     "why": "The throne is called the Chrysanthemum Throne."
+    },
+    {
+     "level": 2,
+     "q": "Which Japanese inventor created instant noodles in 1958?",
+     "a": "Momofuku Ando",
+     "wrong": [
+      "Akio Morita",
+      "Soichiro Honda",
+      "Konosuke Matsushita"
+     ],
+     "why": "He founded Nissin."
+    },
+    {
+     "level": 3,
+     "q": "Which Japanese physicist was the first from Japan to win a Nobel Prize?",
+     "a": "Hideki Yukawa",
+     "wrong": [
+      "Sin-Itiro Tomonaga",
+      "Leo Esaki",
+      "Shinya Yamanaka"
+     ],
+     "why": "He won in 1949 for predicting the meson."
+    },
+    {
+     "level": 3,
+     "q": "Which Japanese term means 'death from overwork'?",
+     "a": "Karoshi",
+     "wrong": [
+      "Ikigai",
+      "Kaizen",
+      "Hikikomori"
+     ],
+     "why": "It became recognised in the 1970s."
+    },
+    {
+     "level": 3,
+     "q": "What does the business idea 'kaizen' mean?",
+     "a": "Continuous improvement",
+     "wrong": [
+      "Just in time",
+      "Lifetime employment",
+      "Quality circles"
+     ],
+     "why": "Toyota made it famous."
+    }
+   ]
+  }
+ ]
+}
