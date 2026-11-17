@@ -1,0 +1,346 @@
+{
+ "category": "Luxembourg",
+ "country": "LU",
+ "topics": [
+  {
+   "name": "Luxembourg: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Luxembourg?",
+     "a": "Luxembourg City",
+     "wrong": [
+      "Esch-sur-Alzette",
+      "Differdange",
+      "Dudelange"
+     ],
+     "why": "It is home to several EU institutions."
+    },
+    {
+     "level": 1,
+     "q": "What kind of state is Luxembourg?",
+     "a": "Grand Duchy",
+     "wrong": [
+      "Kingdom",
+      "Principality",
+      "Republic"
+     ],
+     "why": "It is the world's only grand duchy."
+    },
+    {
+     "level": 1,
+     "q": "Which three languages are official in Luxembourg?",
+     "a": "Luxembourgish, French and German",
+     "wrong": [
+      "Dutch, French and German",
+      "French, German and English",
+      "Luxembourgish, Dutch and French"
+     ],
+     "why": "Most people speak several languages."
+    },
+    {
+     "level": 1,
+     "q": "Which 1957 treaty did Luxembourg sign as a founding member of the EEC?",
+     "a": "Treaty of Rome",
+     "wrong": [
+      "Maastricht Treaty",
+      "Treaty of Paris",
+      "Lisbon Treaty"
+     ],
+     "why": "It was one of the six founders."
+    },
+    {
+     "level": 1,
+     "q": "Which customs union did Luxembourg form with Belgium and the Netherlands?",
+     "a": "Benelux",
+     "wrong": [
+      "Schengen Area",
+      "Nordic Council",
+      "EFTA"
+     ],
+     "why": "It began in 1944."
+    },
+    {
+     "level": 1,
+     "q": "Which village in Luxembourg gave its name to Europe's border-free zone?",
+     "a": "Schengen",
+     "wrong": [
+      "Remich",
+      "Vianden",
+      "Echternach"
+     ],
+     "why": "The agreement was signed on a boat in 1985."
+    },
+    {
+     "level": 1,
+     "q": "Which Luxembourger was President of the European Commission from 2014 to 2019?",
+     "a": "Jean-Claude Juncker",
+     "wrong": [
+      "Jacques Santer",
+      "Xavier Bettel",
+      "Gaston Thorn"
+     ],
+     "why": "He was also Prime Minister for 18 years."
+    },
+    {
+     "level": 2,
+     "q": "Which battle of 1944–45 was fought partly in Luxembourg's Ardennes?",
+     "a": "Battle of the Bulge",
+     "wrong": [
+      "Battle of Arnhem",
+      "Battle of Normandy",
+      "Battle of Verdun"
+     ],
+     "why": "US General Patton is buried in Luxembourg."
+    },
+    {
+     "level": 2,
+     "q": "Which count founded Luxembourg in 963?",
+     "a": "Siegfried",
+     "wrong": [
+      "Charlemagne",
+      "Godfrey of Bouillon",
+      "Henry VII"
+     ],
+     "why": "He bought a castle called Lucilinburhuc."
+    },
+    {
+     "level": 2,
+     "q": "Which 1867 treaty made Luxembourg permanently neutral?",
+     "a": "Treaty of London",
+     "wrong": [
+      "Treaty of Vienna",
+      "Treaty of Paris",
+      "Treaty of Utrecht"
+     ],
+     "why": "Its fortress was then demolished."
+    },
+    {
+     "level": 2,
+     "q": "Which Grand Duchess led Luxembourg in exile during the Second World War?",
+     "a": "Charlotte",
+     "wrong": [
+      "Marie-Adélaïde",
+      "Maria Teresa",
+      "Joséphine-Charlotte"
+     ],
+     "why": "She ruled from 1919 to 1964."
+    },
+    {
+     "level": 2,
+     "q": "Which industry made Luxembourg rich in the late 1800s?",
+     "a": "Steel",
+     "wrong": [
+      "Coal",
+      "Textiles",
+      "Shipbuilding"
+     ],
+     "why": "ArcelorMittal is based there."
+    },
+    {
+     "level": 3,
+     "q": "Which House of Luxembourg members became Holy Roman Emperors?",
+     "a": "Henry VII and Charles IV",
+     "wrong": [
+      "Charles V and Philip II",
+      "Frederick I and Otto I",
+      "Maximilian I and Rudolf II"
+     ],
+     "why": "The family also ruled Bohemia."
+    },
+    {
+     "level": 3,
+     "q": "Which Grand Duke became head of state in 2000?",
+     "a": "Henri",
+     "wrong": [
+      "Jean",
+      "Guillaume",
+      "Adolphe"
+     ],
+     "why": "His son Guillaume took over in 2025."
+    },
+    {
+     "level": 3,
+     "q": "Who became Luxembourg's Prime Minister in 2023?",
+     "a": "Luc Frieden",
+     "wrong": [
+      "Xavier Bettel",
+      "Jean-Claude Juncker",
+      "Jean Asselborn"
+     ],
+     "why": "He leads the CSV party."
+    }
+   ]
+  },
+  {
+   "name": "Luxembourg: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Luxembourg's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Luxembourg franc",
+      "Swiss franc",
+      "Belgian franc"
+     ],
+     "why": "It replaced the franc in 2002."
+    },
+    {
+     "level": 1,
+     "q": "Which European court is based in Luxembourg?",
+     "a": "Court of Justice of the European Union",
+     "wrong": [
+      "European Court of Human Rights",
+      "International Court of Justice",
+      "International Criminal Court"
+     ],
+     "why": "It interprets EU law."
+    },
+    {
+     "level": 1,
+     "q": "What was Luxembourg the first country to make free for everyone, in 2020?",
+     "a": "Public transport",
+     "wrong": [
+      "University",
+      "Healthcare",
+      "Broadband"
+     ],
+     "why": "Buses, trams and trains cost nothing."
+    },
+    {
+     "level": 1,
+     "q": "Which hilly forest region covers northern Luxembourg?",
+     "a": "Ardennes (Éislek)",
+     "wrong": [
+      "Black Forest",
+      "Vosges",
+      "Hunsrück"
+     ],
+     "why": "It is popular for hiking."
+    },
+    {
+     "level": 1,
+     "q": "Which river valley in the east is known for wine?",
+     "a": "Moselle",
+     "wrong": [
+      "Rhine",
+      "Meuse",
+      "Danube"
+     ],
+     "why": "It is known for crisp white wines."
+    },
+    {
+     "level": 1,
+     "q": "Which hilltop castle in the north is one of Europe's finest?",
+     "a": "Vianden Castle",
+     "wrong": [
+      "Bourscheid Castle",
+      "Neuschwanstein",
+      "Clervaux Castle"
+     ],
+     "why": "Victor Hugo stayed in the town."
+    },
+    {
+     "level": 1,
+     "q": "Which satellite and media company is based in Luxembourg?",
+     "a": "SES",
+     "wrong": [
+      "Eutelsat",
+      "Inmarsat",
+      "Intelsat"
+     ],
+     "why": "It runs the Astra satellites."
+    },
+    {
+     "level": 2,
+     "q": "Which tunnels carved in the rock protected Luxembourg City?",
+     "a": "Bock Casemates",
+     "wrong": [
+      "Catacombs",
+      "Petrus Tunnels",
+      "Maginot Line"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which cyclist from Luxembourg won the 2010 Tour de France?",
+     "a": "Andy Schleck",
+     "wrong": [
+      "Fränk Schleck",
+      "Charly Gaul",
+      "Bob Jungels"
+     ],
+     "why": "He got the title after Contador was stripped."
+    },
+    {
+     "level": 2,
+     "q": "Which dish of smoked pork collar and broad beans is the national dish?",
+     "a": "Judd mat Gaardebounen",
+     "wrong": [
+      "Bouneschlupp",
+      "Kniddelen",
+      "Gromperekichelcher"
+     ],
+     "why": "It is eaten with potatoes."
+    },
+    {
+     "level": 2,
+     "q": "Which broadcaster that began in Luxembourg became a European media giant?",
+     "a": "RTL",
+     "wrong": [
+      "BBC",
+      "TF1",
+      "ZDF"
+     ],
+     "why": "It started as Radio Luxembourg."
+    },
+    {
+     "level": 2,
+     "q": "Which abbey town holds a dancing procession every Whit Tuesday?",
+     "a": "Echternach",
+     "wrong": [
+      "Clervaux",
+      "Wiltz",
+      "Diekirch"
+     ],
+     "why": "It is on UNESCO's list."
+    },
+    {
+     "level": 3,
+     "q": "Which Luxembourg-born photographer curated 'The Family of Man'?",
+     "a": "Edward Steichen",
+     "wrong": [
+      "Ansel Adams",
+      "Robert Capa",
+      "Alfred Stieglitz"
+     ],
+     "why": "The exhibition is kept at Clervaux Castle."
+    },
+    {
+     "level": 3,
+     "q": "What is the national motto of Luxembourg?",
+     "a": "Mir wëlle bleiwe wat mir sinn",
+     "wrong": [
+      "Je maintiendrai",
+      "Unity Makes Strength",
+      "Liberté, égalité, fraternité"
+     ],
+     "why": "It means 'We want to remain what we are'."
+    },
+    {
+     "level": 3,
+     "q": "Which cyclist from Luxembourg won the Tour de France in 1958?",
+     "a": "Charly Gaul",
+     "wrong": [
+      "Nicolas Frantz",
+      "François Faber",
+      "Andy Schleck"
+     ],
+     "why": "He was called 'the Angel of the Mountains'."
+    }
+   ]
+  }
+ ]
+}

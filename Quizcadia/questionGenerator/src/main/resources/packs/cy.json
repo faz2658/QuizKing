@@ -1,0 +1,346 @@
+{
+ "category": "Cyprus",
+ "country": "CY",
+ "topics": [
+  {
+   "name": "Cyprus: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Cyprus?",
+     "a": "Nicosia",
+     "wrong": [
+      "Limassol",
+      "Larnaca",
+      "Paphos"
+     ],
+     "why": "It is the last divided capital in Europe."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Cyprus gain independence in 1960?",
+     "a": "United Kingdom",
+     "wrong": [
+      "Greece",
+      "Turkey",
+      "Italy"
+     ],
+     "why": "Britain kept two military bases."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Turkey invade northern Cyprus?",
+     "a": "1974",
+     "wrong": [
+      "1960",
+      "1963",
+      "1983"
+     ],
+     "why": "The island has been divided since."
+    },
+    {
+     "level": 1,
+     "q": "What is the UN buffer zone across Cyprus called?",
+     "a": "Green Line",
+     "wrong": [
+      "Blue Line",
+      "Red Line",
+      "Iron Line"
+     ],
+     "why": "It cuts through Nicosia."
+    },
+    {
+     "level": 1,
+     "q": "Which goddess is said to have been born from the sea near Paphos?",
+     "a": "Aphrodite",
+     "wrong": [
+      "Athena",
+      "Artemis",
+      "Hera"
+     ],
+     "why": "Her birthplace is called Petra tou Romiou."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Cyprus join the EU?",
+     "a": "2004",
+     "wrong": [
+      "1995",
+      "2007",
+      "2013"
+     ],
+     "why": "It adopted the euro in 2008."
+    },
+    {
+     "level": 1,
+     "q": "Who was the first President of Cyprus?",
+     "a": "Archbishop Makarios III",
+     "wrong": [
+      "Glafcos Clerides",
+      "Spyros Kyprianou",
+      "Rauf Denktaş"
+     ],
+     "why": "He served from 1960 to 1977."
+    },
+    {
+     "level": 2,
+     "q": "Which English king conquered Cyprus in 1191 during the Crusades?",
+     "a": "Richard the Lionheart",
+     "wrong": [
+      "Henry II",
+      "Edward I",
+      "King John"
+     ],
+     "why": "He married Berengaria in Limassol."
+    },
+    {
+     "level": 2,
+     "q": "Which Venetian-era Cypriot city has a famous Othello Tower?",
+     "a": "Famagusta",
+     "wrong": [
+      "Kyrenia",
+      "Paphos",
+      "Larnaca"
+     ],
+     "why": "It is linked to Shakespeare's play."
+    },
+    {
+     "level": 2,
+     "q": "Which empire ruled Cyprus from 1571 to 1878?",
+     "a": "Ottoman Empire",
+     "wrong": [
+      "Venetian Republic",
+      "Byzantine Empire",
+      "Habsburg Empire"
+     ],
+     "why": "Britain took over its administration in 1878."
+    },
+    {
+     "level": 2,
+     "q": "Which guerrilla group fought British rule in the 1950s?",
+     "a": "EOKA",
+     "wrong": [
+      "PKK",
+      "IRA",
+      "Haganah"
+     ],
+     "why": "It sought union with Greece."
+    },
+    {
+     "level": 2,
+     "q": "Which 2004 UN plan to reunify Cyprus was rejected by Greek Cypriots?",
+     "a": "Annan Plan",
+     "wrong": [
+      "Bush Plan",
+      "Geneva Plan",
+      "Crans-Montana Plan"
+     ],
+     "why": "Turkish Cypriots voted for it."
+    },
+    {
+     "level": 3,
+     "q": "Which Lusignan-era abbey stands in the village of Bellapais?",
+     "a": "Bellapais Abbey",
+     "wrong": [
+      "Kykkos Monastery",
+      "St Hilarion",
+      "Stavrovouni"
+     ],
+     "why": "Lawrence Durrell wrote 'Bitter Lemons' there."
+    },
+    {
+     "level": 3,
+     "q": "Which Neolithic settlement in Cyprus is a UNESCO site?",
+     "a": "Choirokoitia",
+     "wrong": [
+      "Kourion",
+      "Salamis",
+      "Enkomi"
+     ],
+     "why": "It dates back about 9,000 years."
+    },
+    {
+     "level": 3,
+     "q": "Which Stoic philosopher was born in Kition, today's Larnaca?",
+     "a": "Zeno of Citium",
+     "wrong": [
+      "Zeno of Elea",
+      "Epicurus",
+      "Diogenes"
+     ],
+     "why": "He founded Stoicism in Athens."
+    }
+   ]
+  },
+  {
+   "name": "Cyprus: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the currency of the Republic of Cyprus?",
+     "a": "Euro",
+     "wrong": [
+      "Cyprus pound",
+      "Turkish lira",
+      "Drachma"
+     ],
+     "why": "It replaced the Cyprus pound in 2008."
+    },
+    {
+     "level": 1,
+     "q": "Which salty grilling cheese comes from Cyprus?",
+     "a": "Halloumi",
+     "wrong": [
+      "Feta",
+      "Kasseri",
+      "Manouri"
+     ],
+     "why": "It squeaks when you bite it."
+    },
+    {
+     "level": 1,
+     "q": "Which mountain range covers central Cyprus?",
+     "a": "Troodos Mountains",
+     "wrong": [
+      "Pentadaktylos",
+      "Taurus Mountains",
+      "Pindus Mountains"
+     ],
+     "why": "Its highest peak is Mount Olympus."
+    },
+    {
+     "level": 1,
+     "q": "Which sea surrounds Cyprus?",
+     "a": "Mediterranean Sea",
+     "wrong": [
+      "Aegean Sea",
+      "Red Sea",
+      "Adriatic Sea"
+     ],
+     "why": "It is the third-largest Mediterranean island."
+    },
+    {
+     "level": 1,
+     "q": "Which two languages are official in Cyprus?",
+     "a": "Greek and Turkish",
+     "wrong": [
+      "Greek and English",
+      "Turkish and English",
+      "Greek and Italian"
+     ],
+     "why": "English is widely spoken too."
+    },
+    {
+     "level": 1,
+     "q": "Which resort town in southeast Cyprus is famous for beaches and nightlife?",
+     "a": "Ayia Napa",
+     "wrong": [
+      "Paphos",
+      "Kyrenia",
+      "Polis"
+     ],
+     "why": "It is near Cape Greco."
+    },
+    {
+     "level": 1,
+     "q": "What is a Cypriot meal of many small dishes called?",
+     "a": "Meze",
+     "wrong": [
+      "Tapas",
+      "Dim sum",
+      "Antipasti"
+     ],
+     "why": "It can include 20 or more plates."
+    },
+    {
+     "level": 2,
+     "q": "Which sweet dessert wine is one of the world's oldest named wines?",
+     "a": "Commandaria",
+     "wrong": [
+      "Retsina",
+      "Marsala",
+      "Tokaji"
+     ],
+     "why": "It was served at Richard the Lionheart's wedding."
+    },
+    {
+     "level": 2,
+     "q": "Which painted Byzantine churches in the Troodos are a UNESCO site?",
+     "a": "Painted Churches in the Troodos Region",
+     "wrong": [
+      "Monasteries of Meteora",
+      "Churches of Chiloé",
+      "Rila Monastery"
+     ],
+     "why": "There are ten of them."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient city near Limassol has a cliff-top theatre?",
+     "a": "Kourion",
+     "wrong": [
+      "Salamis",
+      "Amathus",
+      "Soli"
+     ],
+     "why": "It overlooks the sea."
+    },
+    {
+     "level": 2,
+     "q": "Which Cypriot tennis player reached the 2006 Australian Open final?",
+     "a": "Marcos Baghdatis",
+     "wrong": [
+      "Stefanos Tsitsipas",
+      "Grigor Dimitrov",
+      "Fernando Verdasco"
+     ],
+     "why": "He lost to Roger Federer."
+    },
+    {
+     "level": 2,
+     "q": "Which large monastery in the Troodos houses a famous icon of the Virgin?",
+     "a": "Kykkos Monastery",
+     "wrong": [
+      "Stavrovouni Monastery",
+      "Mount Athos",
+      "Agios Neophytos"
+     ],
+     "why": "It was founded around 1100."
+    },
+    {
+     "level": 3,
+     "q": "Which salt lake near Larnaca attracts flamingos in winter?",
+     "a": "Larnaca Salt Lake",
+     "wrong": [
+      "Limassol Salt Lake",
+      "Lake Koroneia",
+      "Lake Vouliagmeni"
+     ],
+     "why": "The Hala Sultan Tekke stands beside it."
+    },
+    {
+     "level": 3,
+     "q": "Which mosaics in Paphos are a UNESCO site?",
+     "a": "House of Dionysus mosaics",
+     "wrong": [
+      "Mosaics of Ravenna",
+      "Zeugma mosaics",
+      "Piazza Armerina mosaics"
+     ],
+     "why": "They date from Roman times."
+    },
+    {
+     "level": 3,
+     "q": "What do Cypriots call the Easter cheese pastries?",
+     "a": "Flaounes",
+     "wrong": [
+      "Spanakopita",
+      "Bougatsa",
+      "Tiropita"
+     ],
+     "why": "They contain halloumi and raisins."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,346 @@
+{
+ "category": "Monaco",
+ "country": "MC",
+ "topics": [
+  {
+   "name": "Monaco: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What kind of state is Monaco?",
+     "a": "Principality",
+     "wrong": [
+      "Grand Duchy",
+      "Kingdom",
+      "Republic"
+     ],
+     "why": "It is ruled by a prince."
+    },
+    {
+     "level": 1,
+     "q": "Which family has ruled Monaco since 1297?",
+     "a": "Grimaldi",
+     "wrong": [
+      "Medici",
+      "Bourbon",
+      "Savoy"
+     ],
+     "why": "François Grimaldi took it disguised as a monk."
+    },
+    {
+     "level": 1,
+     "q": "Which American film star married Prince Rainier III in 1956?",
+     "a": "Grace Kelly",
+     "wrong": [
+      "Audrey Hepburn",
+      "Marilyn Monroe",
+      "Elizabeth Taylor"
+     ],
+     "why": "She became Princess Grace."
+    },
+    {
+     "level": 1,
+     "q": "Who has been Prince of Monaco since 2005?",
+     "a": "Albert II",
+     "wrong": [
+      "Rainier III",
+      "Louis II",
+      "Charles III"
+     ],
+     "why": "He competed in the Winter Olympics in bobsleigh."
+    },
+    {
+     "level": 1,
+     "q": "Which country surrounds Monaco on land?",
+     "a": "France",
+     "wrong": [
+      "Italy",
+      "Spain",
+      "Switzerland"
+     ],
+     "why": "Italy is only a few kilometres away."
+    },
+    {
+     "level": 1,
+     "q": "What is Monaco's currency?",
+     "a": "Euro",
+     "wrong": [
+      "Monégasque franc",
+      "French franc",
+      "Swiss franc"
+     ],
+     "why": "It is not in the EU but uses the euro."
+    },
+    {
+     "level": 1,
+     "q": "Which famous casino opened in Monte Carlo in 1863?",
+     "a": "Casino de Monte-Carlo",
+     "wrong": [
+      "Casino Lisboa",
+      "Bellagio",
+      "Casino Baden-Baden"
+     ],
+     "why": "Monégasque citizens may not gamble there."
+    },
+    {
+     "level": 2,
+     "q": "Which prince founded the Monte Carlo district to raise money?",
+     "a": "Charles III",
+     "wrong": [
+      "Albert I",
+      "Rainier III",
+      "Louis II"
+     ],
+     "why": "Monte Carlo is named after him."
+    },
+    {
+     "level": 2,
+     "q": "Which prince founded the Oceanographic Museum?",
+     "a": "Albert I",
+     "wrong": [
+      "Rainier III",
+      "Charles III",
+      "Albert II"
+     ],
+     "why": "He was a pioneering ocean scientist."
+    },
+    {
+     "level": 2,
+     "q": "Which explorer led the Oceanographic Museum for decades?",
+     "a": "Jacques Cousteau",
+     "wrong": [
+      "Thor Heyerdahl",
+      "Robert Ballard",
+      "Auguste Piccard"
+     ],
+     "why": "He was its director from 1957."
+    },
+    {
+     "level": 2,
+     "q": "How large is Monaco?",
+     "a": "About 2 square kilometres",
+     "wrong": [
+      "About 20 square kilometres",
+      "About 200 square kilometres",
+      "About 0.5 square kilometres"
+     ],
+     "why": "It is the world's second-smallest country."
+    },
+    {
+     "level": 2,
+     "q": "Which trick did François Grimaldi use to capture the fortress in 1297?",
+     "a": "He dressed as a monk",
+     "wrong": [
+      "He hid in a barrel",
+      "He bribed the guards",
+      "He tunnelled in"
+     ],
+     "why": "Monks appear on the coat of arms."
+    },
+    {
+     "level": 3,
+     "q": "Which 1918 treaty with France says Monaco would join France if the line died out?",
+     "a": "Franco-Monégasque Treaty",
+     "wrong": [
+      "Treaty of Péronne",
+      "Treaty of Paris",
+      "Treaty of Turin"
+     ],
+     "why": "A 2002 treaty updated it."
+    },
+    {
+     "level": 3,
+     "q": "Who are the twin children of Prince Albert II?",
+     "a": "Jacques and Gabriella",
+     "wrong": [
+      "Pierre and Charlotte",
+      "Andrea and Alexandra",
+      "Louis and Grace"
+     ],
+     "why": "They were born in 2014."
+    },
+    {
+     "level": 3,
+     "q": "Which old town on a rock holds the Prince's Palace?",
+     "a": "Monaco-Ville (the Rock)",
+     "wrong": [
+      "Fontvieille",
+      "La Condamine",
+      "Larvotto"
+     ],
+     "why": "The guard changes daily at noon."
+    }
+   ]
+  },
+  {
+   "name": "Monaco: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Formula One race is held on Monaco's streets?",
+     "a": "Monaco Grand Prix",
+     "wrong": [
+      "French Grand Prix",
+      "Italian Grand Prix",
+      "Riviera Grand Prix"
+     ],
+     "why": "It has been held since 1929."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies along Monaco?",
+     "a": "Mediterranean Sea",
+     "wrong": [
+      "Atlantic Ocean",
+      "Adriatic Sea",
+      "Black Sea"
+     ],
+     "why": "It is on the French Riviera."
+    },
+    {
+     "level": 1,
+     "q": "Which district of Monaco is famous for luxury and the casino?",
+     "a": "Monte Carlo",
+     "wrong": [
+      "Fontvieille",
+      "La Condamine",
+      "Moneghetti"
+     ],
+     "why": "It is often mistaken for the capital."
+    },
+    {
+     "level": 1,
+     "q": "Which football club from Monaco plays in the French league?",
+     "a": "AS Monaco",
+     "wrong": [
+      "OGC Nice",
+      "Olympique de Marseille",
+      "Paris Saint-Germain"
+     ],
+     "why": "They won the league in 2017."
+    },
+    {
+     "level": 1,
+     "q": "Which language is official in Monaco?",
+     "a": "French",
+     "wrong": [
+      "Italian",
+      "Monégasque",
+      "English"
+     ],
+     "why": "Monégasque is taught in schools."
+    },
+    {
+     "level": 1,
+     "q": "Which famous car rally starts or ends in Monaco?",
+     "a": "Monte Carlo Rally",
+     "wrong": [
+      "Dakar Rally",
+      "Paris–Dakar",
+      "Rally de Portugal"
+     ],
+     "why": "It has run since 1911."
+    },
+    {
+     "level": 1,
+     "q": "What is Monaco famous for not charging most residents?",
+     "a": "Income tax",
+     "wrong": [
+      "Sales tax",
+      "Road tolls",
+      "Parking fees"
+     ],
+     "why": "Many wealthy people live there."
+    },
+    {
+     "level": 2,
+     "q": "Which Monaco hairpin is the slowest corner in Formula One?",
+     "a": "Fairmont Hairpin",
+     "wrong": [
+      "Eau Rouge",
+      "Parabolica",
+      "Copse"
+     ],
+     "why": "Cars slow to about 50 km/h."
+    },
+    {
+     "level": 2,
+     "q": "Which famous tunnel corner is part of the Monaco circuit?",
+     "a": "The Tunnel under the Fairmont",
+     "wrong": [
+      "Eau Rouge",
+      "Spoon Curve",
+      "Lesmo"
+     ],
+     "why": "Cars go from dark to light at high speed."
+    },
+    {
+     "level": 2,
+     "q": "Which Monégasque driver won the Monaco Grand Prix in 2024?",
+     "a": "Charles Leclerc",
+     "wrong": [
+      "Louis Chiron",
+      "Olivier Beretta",
+      "Arthur Leclerc"
+     ],
+     "why": "He was the first local winner since 1931."
+    },
+    {
+     "level": 2,
+     "q": "Which tennis tournament is held in Monte Carlo each spring?",
+     "a": "Monte-Carlo Masters",
+     "wrong": [
+      "Monaco Open",
+      "Riviera Open",
+      "Côte d'Azur Cup"
+     ],
+     "why": "It is played on clay."
+    },
+    {
+     "level": 2,
+     "q": "Which ballet company founded by Diaghilev was based in Monte Carlo?",
+     "a": "Ballets Russes",
+     "wrong": [
+      "Bolshoi Ballet",
+      "Royal Ballet",
+      "Paris Opera Ballet"
+     ],
+     "why": "It performed there in the 1910s and 1920s."
+    },
+    {
+     "level": 3,
+     "q": "Which festival in Monaco is a top circus event?",
+     "a": "International Circus Festival of Monte-Carlo",
+     "wrong": [
+      "Festival du Cirque de Demain",
+      "Cirque du Soleil Fest",
+      "Riviera Circus Week"
+     ],
+     "why": "Prince Rainier founded it in 1974."
+    },
+    {
+     "level": 3,
+     "q": "Which Monaco district was built on land reclaimed from the sea?",
+     "a": "Fontvieille",
+     "wrong": [
+      "Monte Carlo",
+      "Monaco-Ville",
+      "La Rousse"
+     ],
+     "why": "It was built from the 1970s."
+    },
+    {
+     "level": 3,
+     "q": "Which saint's day on 27 January ends with a boat burning?",
+     "a": "St Devota's Day",
+     "wrong": [
+      "St Roman's Day",
+      "St Nicholas's Day",
+      "St John's Day"
+     ],
+     "why": "She is Monaco's patron saint."
+    }
+   ]
+  }
+ ]
+}
