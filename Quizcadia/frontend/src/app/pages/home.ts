@@ -7,6 +7,9 @@ import { CatalogApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { GameCard } from '../core/models';
+import { countryName, flag } from '../core/countries';
+import { localFirst, SOUTH_ASIA_CATEGORY, southAsianCountry } from '../core/region';
+import { World } from '../core/world';
 import { GameCardView } from '../ui/game-card';
 import { BlurText } from '../motion/blur-text';
 import { DailyBanner } from '../ui/daily-banner';
@@ -22,7 +25,7 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
   template: `
     <section class="head">
       <div>
-        <span class="badge"><span class="dot"></span>{{ visible().length }} games · new questions every play</span>
+        <span class="badge"><span class="dot"></span>{{ gameCount() }} games · new questions every play</span>
         <h1><mv-blur-text [text]="'Hi ' + (auth.user()?.userName ?? 'there') + ', ready to *play?*'" /></h1>
         <p class="muted">Pick a game. Easy questions are quick points; advanced ones pay the most.</p>
         <a class="btn btn-ghost custom-link" routerLink="/custom">🎛️ Build a custom quiz</a>
@@ -48,6 +51,11 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
     } @else if (state().error) {
       <div class="alert" role="alert">{{ state().error }}</div>
     } @else {
+      @if (!query() && local().length) {
+        <h2>Popular in {{ localLabel() }}</h2>
+        <div class="grid">@for (g of local(); track g.gameId + g.mode; let i = $index) { <mv-game-card class="fade-up" [style.animation-delay.ms]="Math.min(i, 12) * 50" [game]="g" /> }</div>
+      }
+
       @if (!query() && recommended().length) {
         <h2>Picked for you</h2>
         <div class="grid">@for (g of recommended(); track g.gameId + g.mode; let i = $index) { <mv-game-card class="fade-up" [style.animation-delay.ms]="i * 70" [game]="g" /> }</div>
@@ -95,6 +103,7 @@ export class Home {
   protected readonly Math = Math;
   protected readonly auth = inject(AuthService);
   private readonly catalog = inject(CatalogApi);
+  private readonly world = inject(World);
 
   protected readonly query = signal('');
   protected readonly filter = signal<Filter>('ALL');
@@ -125,8 +134,38 @@ export class Home {
     { initialValue: [] as GameCard[] },
   );
 
+  /** Categories of region-specific questions (India & South Asia), shown first to players from there. */
+  private readonly localCategories = toSignal(
+    this.catalog.categories().pipe(
+      map((cs) => new Set(cs.filter((c) => c.categoryName === SOUTH_ASIA_CATEGORY).map((c) => c.categoryId))),
+      catchError(() => of(new Set<number>())),
+    ),
+    { initialValue: new Set<number>() },
+  );
+
+  private readonly region = computed(() => southAsianCountry(this.world.country()));
+  protected readonly localLabel = computed(() => {
+    const c = this.region();
+    return c ? `${countryName(c)} ${flag(c)}` : '';
+  });
+
+  private readonly split = computed(() =>
+    this.region() ? localFirst(this.state().games, this.localCategories()) : { local: [] as GameCard[], rest: this.state().games },
+  );
+
+  /** Solo games of the player's region, for the "Popular in ..." row. */
+  protected readonly local = computed(() => this.split().local.filter((g) => g.mode === 'SINGLE'));
+
+  protected readonly gameCount = computed(() => {
+    const f = this.filter();
+    return this.state().games.filter((g) => f === 'ALL' || g.mode === f).length;
+  });
+
+  /** All games, the region's first; without a search, the solo ones already in the "Popular in ..." row aren't repeated. */
   protected readonly visible = computed(() => {
     const f = this.filter();
-    return this.state().games.filter((g) => f === 'ALL' || g.mode === f);
+    const { local, rest } = this.split();
+    const shown = this.query() ? [] : this.local();
+    return [...local.filter((g) => !shown.includes(g)), ...rest].filter((g) => f === 'ALL' || g.mode === f);
   });
 }
