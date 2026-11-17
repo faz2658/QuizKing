@@ -1,0 +1,346 @@
+{
+ "category": "Saint Lucia",
+ "country": "LC",
+ "topics": [
+  {
+   "name": "Saint Lucia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Saint Lucia?",
+     "a": "Castries",
+     "wrong": [
+      "Soufrière",
+      "Vieux Fort",
+      "Gros Islet"
+     ],
+     "why": "It was rebuilt after a 1948 fire."
+    },
+    {
+     "level": 1,
+     "q": "Which two volcanic peaks are Saint Lucia's landmark?",
+     "a": "The Pitons",
+     "wrong": [
+      "Twin Peaks",
+      "Mont Pelée",
+      "Les Deux Mamelles"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Saint Lucia gain independence in 1979?",
+     "a": "United Kingdom",
+     "wrong": [
+      "France",
+      "Spain",
+      "Netherlands"
+     ],
+     "why": "It is a Commonwealth realm."
+    },
+    {
+     "level": 1,
+     "q": "Why is Saint Lucia called the 'Helen of the West Indies'?",
+     "a": "Britain and France fought over it many times",
+     "wrong": [
+      "Its first governor was called Helen",
+      "A queen named Helen ruled it",
+      "It was found by Helen of Troy"
+     ],
+     "why": "It changed hands 14 times."
+    },
+    {
+     "level": 1,
+     "q": "How many Nobel Prize winners has Saint Lucia produced?",
+     "a": "Two",
+     "wrong": [
+      "One",
+      "Three",
+      "None"
+     ],
+     "why": "It has the most per person of any country."
+    },
+    {
+     "level": 1,
+     "q": "What currency is used in Saint Lucia?",
+     "a": "East Caribbean dollar",
+     "wrong": [
+      "Saint Lucian dollar",
+      "US dollar",
+      "Euro"
+     ],
+     "why": "It is pegged to the US dollar."
+    },
+    {
+     "level": 1,
+     "q": "Which Saint Lucian poet won the 1992 Nobel Prize in Literature?",
+     "a": "Derek Walcott",
+     "wrong": [
+      "V.S. Naipaul",
+      "Kamau Brathwaite",
+      "Jamaica Kincaid"
+     ],
+     "why": "He wrote the epic 'Omeros'."
+    },
+    {
+     "level": 2,
+     "q": "Which Saint Lucian economist won the 1979 Nobel Prize in Economics?",
+     "a": "Arthur Lewis",
+     "wrong": [
+      "Derek Walcott",
+      "Eric Williams",
+      "Amartya Sen"
+     ],
+     "why": "He studied developing economies."
+    },
+    {
+     "level": 2,
+     "q": "Who was Saint Lucia's first Prime Minister?",
+     "a": "John Compton",
+     "wrong": [
+      "Kenny Anthony",
+      "Allen Chastanet",
+      "Philip J. Pierre"
+     ],
+     "why": "He served more than once."
+    },
+    {
+     "level": 2,
+     "q": "Who has been Prime Minister of Saint Lucia since 2021?",
+     "a": "Philip J. Pierre",
+     "wrong": [
+      "Allen Chastanet",
+      "Kenny Anthony",
+      "Stephenson King"
+     ],
+     "why": "He leads the Labour Party."
+    },
+    {
+     "level": 2,
+     "q": "Which language do many Saint Lucians speak besides English?",
+     "a": "Kwéyòl (French Creole)",
+     "wrong": [
+      "Papiamento",
+      "Spanish",
+      "Dutch"
+     ],
+     "why": "It shows the island's French past."
+    },
+    {
+     "level": 2,
+     "q": "Which 1782 sea battle was planned from Pigeon Island?",
+     "a": "Battle of the Saintes",
+     "wrong": [
+      "Battle of Trafalgar",
+      "Battle of the Nile",
+      "Battle of Martinique"
+     ],
+     "why": "Admiral Rodney beat the French."
+    },
+    {
+     "level": 3,
+     "q": "Which national day is held on 13 December?",
+     "a": "National Day (Saint Lucy's Day)",
+     "wrong": [
+      "Independence Day",
+      "Emancipation Day",
+      "Carnival Day"
+     ],
+     "why": "The island is named after her."
+    },
+    {
+     "level": 3,
+     "q": "Which pirate known as 'Wooden Leg' was based at Pigeon Island?",
+     "a": "François le Clerc (Jambe de Bois)",
+     "wrong": [
+      "Henry Morgan",
+      "Blackbeard",
+      "Bartholomew Roberts"
+     ],
+     "why": "He attacked Spanish ships."
+    },
+    {
+     "level": 3,
+     "q": "Which Saint Lucian sprinter won Olympic 100 m gold in 2024?",
+     "a": "Julien Alfred",
+     "wrong": [
+      "Levern Spencer",
+      "Shelly-Ann Fraser-Pryce",
+      "Sha'Carri Richardson"
+     ],
+     "why": "It was the country's first Olympic medal."
+    }
+   ]
+  },
+  {
+   "name": "Saint Lucia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which drive-in volcano is near Soufrière?",
+     "a": "Sulphur Springs",
+     "wrong": [
+      "Mount Pelée",
+      "Boiling Lake",
+      "Soufrière Hills"
+     ],
+     "why": "You can bathe in its mud pools."
+    },
+    {
+     "level": 1,
+     "q": "Which festival in May brings famous musicians to the island?",
+     "a": "Saint Lucia Jazz Festival",
+     "wrong": [
+      "Reggae Sumfest",
+      "Crop Over",
+      "Junkanoo"
+     ],
+     "why": "It began in 1992."
+    },
+    {
+     "level": 1,
+     "q": "Which street party in Gros Islet is held every Friday?",
+     "a": "Gros Islet Jump-Up",
+     "wrong": [
+      "Oistins Fish Fry",
+      "Shirley Heights Party",
+      "Anse La Raye Fish Fry"
+     ],
+     "why": "There is food and music in the street."
+    },
+    {
+     "level": 1,
+     "q": "Which national dish is made with green figs and saltfish?",
+     "a": "Green fig and saltfish",
+     "wrong": [
+      "Ackee and saltfish",
+      "Oil down",
+      "Pepperpot"
+     ],
+     "why": "Green figs are unripe bananas."
+    },
+    {
+     "level": 1,
+     "q": "Which colourful parrot is Saint Lucia's national bird?",
+     "a": "Saint Lucia amazon (Jacquot)",
+     "wrong": [
+      "Sisserou",
+      "Scarlet macaw",
+      "Hyacinth macaw"
+     ],
+     "why": "It is found nowhere else."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean lies to the east of Saint Lucia?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Pacific Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "The Caribbean is to the west."
+    },
+    {
+     "level": 1,
+     "q": "Which fishing village is near the Pitons?",
+     "a": "Soufrière",
+     "wrong": [
+      "Gros Islet",
+      "Castries",
+      "Vieux Fort"
+     ],
+     "why": "It was the old French capital."
+    },
+    {
+     "level": 2,
+     "q": "Which national park has forts linked to land by a causeway?",
+     "a": "Pigeon Island National Landmark",
+     "wrong": [
+      "Brimstone Hill",
+      "Morne Fortune",
+      "Cabrits"
+     ],
+     "why": "The causeway was built in 1972."
+    },
+    {
+     "level": 2,
+     "q": "Which hill above Castries has old forts and views?",
+     "a": "Morne Fortune",
+     "wrong": [
+      "Morne Gimie",
+      "Mount Gimie",
+      "Morne Diablotin"
+     ],
+     "why": "Its name means 'Hill of Good Luck'."
+    },
+    {
+     "level": 2,
+     "q": "Which cricket ground is in Gros Islet?",
+     "a": "Daren Sammy Cricket Ground",
+     "wrong": [
+      "Kensington Oval",
+      "Sabina Park",
+      "Queen's Park Oval"
+     ],
+     "why": "It is named after a T20 World Cup-winning captain."
+    },
+    {
+     "level": 2,
+     "q": "Which Saint Lucian high jumper won Commonwealth gold?",
+     "a": "Levern Spencer",
+     "wrong": [
+      "Julien Alfred",
+      "Dominic Johnson",
+      "Jeanelle Scheper"
+     ],
+     "why": "She won in 2018."
+    },
+    {
+     "level": 2,
+     "q": "What is Saint Lucia's highest mountain?",
+     "a": "Mount Gimie",
+     "wrong": [
+      "Gros Piton",
+      "Petit Piton",
+      "Morne Fortune"
+     ],
+     "why": "It is about 950 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which garden in Soufrière has a waterfall and mineral baths?",
+     "a": "Diamond Botanical Gardens",
+     "wrong": [
+      "Andromeda Gardens",
+      "Hope Gardens",
+      "Fond Doux Gardens"
+     ],
+     "why": "Louis XVI built baths there."
+    },
+    {
+     "level": 3,
+     "q": "Which Saint Lucian flower festivals are rival societies?",
+     "a": "La Rose and La Marguerite",
+     "wrong": [
+      "Le Lys and La Tulipe",
+      "La Fleur and Le Soleil",
+      "Les Roses and Les Lys"
+     ],
+     "why": "They hold feasts in August and October."
+    },
+    {
+     "level": 3,
+     "q": "Which artist painted murals in Saint Lucian churches?",
+     "a": "Dunstan St Omer",
+     "wrong": [
+      "Derek Walcott",
+      "Llewellyn Xavier",
+      "Boscoe Holder"
+     ],
+     "why": "He designed the national flag."
+    }
+   ]
+  }
+ ]
+}

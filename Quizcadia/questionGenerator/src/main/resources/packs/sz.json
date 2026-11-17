@@ -1,0 +1,346 @@
+{
+ "category": "Eswatini",
+ "country": "SZ",
+ "topics": [
+  {
+   "name": "Eswatini: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the administrative capital of Eswatini?",
+     "a": "Mbabane",
+     "wrong": [
+      "Lobamba",
+      "Manzini",
+      "Siteki"
+     ],
+     "why": "Lobamba is the royal and legislative capital."
+    },
+    {
+     "level": 1,
+     "q": "What was Eswatini called before 2018?",
+     "a": "Swaziland",
+     "wrong": [
+      "Basutoland",
+      "Bechuanaland",
+      "Zululand"
+     ],
+     "why": "The King changed the name."
+    },
+    {
+     "level": 1,
+     "q": "What kind of government does Eswatini have?",
+     "a": "Absolute monarchy",
+     "wrong": [
+      "Republic",
+      "Constitutional monarchy",
+      "Military rule"
+     ],
+     "why": "It is Africa's last absolute monarchy."
+    },
+    {
+     "level": 1,
+     "q": "Who has been King of Eswatini since 1986?",
+     "a": "Mswati III",
+     "wrong": [
+      "Sobhuza II",
+      "Mswati II",
+      "Letsie III"
+     ],
+     "why": "He was crowned at 18."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Eswatini gain independence in 1968?",
+     "a": "United Kingdom",
+     "wrong": [
+      "South Africa",
+      "Portugal",
+      "Netherlands"
+     ],
+     "why": "It is in the Commonwealth."
+    },
+    {
+     "level": 1,
+     "q": "What is Eswatini's currency?",
+     "a": "Lilangeni",
+     "wrong": [
+      "Loti",
+      "Kwacha",
+      "Pula"
+     ],
+     "why": "The rand is also used."
+    },
+    {
+     "level": 1,
+     "q": "Which two countries border Eswatini?",
+     "a": "South Africa and Mozambique",
+     "wrong": [
+      "Botswana and Zimbabwe",
+      "Lesotho and South Africa",
+      "Mozambique and Malawi"
+     ],
+     "why": "It is landlocked."
+    },
+    {
+     "level": 2,
+     "q": "Which King reigned for over 82 years, one of the longest ever?",
+     "a": "Sobhuza II",
+     "wrong": [
+      "Mswati III",
+      "Moshoeshoe I",
+      "Bhumibol Adulyadej"
+     ],
+     "why": "He reigned from 1899 to 1982."
+    },
+    {
+     "level": 2,
+     "q": "What is the title of the King's mother?",
+     "a": "Indlovukazi (Great She-Elephant)",
+     "wrong": [
+      "Queen Regent",
+      "Princess Royal",
+      "Ndlovu"
+     ],
+     "why": "She shares royal duties."
+    },
+    {
+     "level": 2,
+     "q": "Which political parties were banned in 1973?",
+     "a": "All political parties",
+     "wrong": [
+      "The opposition",
+      "Communist parties",
+      "Trade unions"
+     ],
+     "why": "They remain unable to run in elections."
+    },
+    {
+     "level": 2,
+     "q": "Which 2021 events shook Eswatini?",
+     "a": "Pro-democracy protests",
+     "wrong": [
+      "A royal wedding",
+      "A border war",
+      "A famine"
+     ],
+     "why": "Dozens were killed."
+    },
+    {
+     "level": 2,
+     "q": "Which King gave Eswatini its name, meaning 'land of the Swazi'?",
+     "a": "Mswati II",
+     "wrong": [
+      "Sobhuza I",
+      "Ngwane III",
+      "Mbandzeni"
+     ],
+     "why": "The Swazi people are named after him."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient mine in Eswatini is one of the world's oldest?",
+     "a": "Lion Cavern (Ngwenya Mine)",
+     "wrong": [
+      "Kimberley Mine",
+      "Rio Tinto Mine",
+      "Grimes Graves"
+     ],
+     "why": "It was mined for red ochre over 40,000 years ago."
+    },
+    {
+     "level": 3,
+     "q": "Which Swazi constitution came into force in 2006?",
+     "a": "The 2005 Constitution",
+     "wrong": [
+      "The Tinkhundla Code",
+      "The Royal Charter",
+      "The Lobamba Accord"
+     ],
+     "why": "It kept the King's power."
+    },
+    {
+     "level": 3,
+     "q": "Which system of local councils elects MPs without parties?",
+     "a": "Tinkhundla",
+     "wrong": [
+      "Indaba",
+      "Kgotla",
+      "Lekgotla"
+     ],
+     "why": "Candidates stand as individuals."
+    }
+   ]
+  },
+  {
+   "name": "Eswatini: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which reed dance ceremony draws thousands of young women?",
+     "a": "Umhlanga",
+     "wrong": [
+      "Incwala",
+      "Kuomboka",
+      "Ncwala"
+     ],
+     "why": "It is held in August or September."
+    },
+    {
+     "level": 1,
+     "q": "Which kingship ceremony is held around the summer solstice?",
+     "a": "Incwala",
+     "wrong": [
+      "Umhlanga",
+      "Kuomboka",
+      "Bira"
+     ],
+     "why": "It is the most sacred Swazi ceremony."
+    },
+    {
+     "level": 1,
+     "q": "Which game reserve is Eswatini's oldest?",
+     "a": "Mlilwane Wildlife Sanctuary",
+     "wrong": [
+      "Hlane Royal National Park",
+      "Mkhaya",
+      "Kruger"
+     ],
+     "why": "It was founded by Ted Reilly."
+    },
+    {
+     "level": 1,
+     "q": "Which reserve is the best place to see rhinos and lions?",
+     "a": "Hlane Royal National Park",
+     "wrong": [
+      "Mlilwane",
+      "Malolotja",
+      "Mkhaya"
+     ],
+     "why": "It is the largest protected area."
+    },
+    {
+     "level": 1,
+     "q": "Which language is spoken by most people in Eswatini?",
+     "a": "siSwati",
+     "wrong": [
+      "Zulu",
+      "Sesotho",
+      "Setswana"
+     ],
+     "why": "English is also official."
+    },
+    {
+     "level": 1,
+     "q": "Which glass factory near Mbabane uses recycled glass?",
+     "a": "Ngwenya Glass",
+     "wrong": [
+      "Murano Glass",
+      "Swarovski",
+      "Waterford"
+     ],
+     "why": "It makes glass animals."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is a major export from Eswatini?",
+     "a": "Sugar",
+     "wrong": [
+      "Coffee",
+      "Tea",
+      "Cocoa"
+     ],
+     "why": "It also makes Coca-Cola concentrate."
+    },
+    {
+     "level": 2,
+     "q": "Which reserve in the highlands has a canopy tour and old mines?",
+     "a": "Malolotja Nature Reserve",
+     "wrong": [
+      "Hlane",
+      "Mlilwane",
+      "Mkhaya"
+     ],
+     "why": "It has one of the oldest mines."
+    },
+    {
+     "level": 2,
+     "q": "Which large granite dome is one of the largest in the world?",
+     "a": "Sibebe Rock",
+     "wrong": [
+      "Uluru",
+      "Ben Amera",
+      "Stone Mountain"
+     ],
+     "why": "It is near Mbabane."
+    },
+    {
+     "level": 2,
+     "q": "Which valley near Mbabane is the heart of tourism?",
+     "a": "Ezulwini Valley",
+     "wrong": [
+      "Malkerns Valley",
+      "Great Usutu Valley",
+      "Lubombo Valley"
+     ],
+     "why": "Its name means 'Valley of Heaven'."
+    },
+    {
+     "level": 2,
+     "q": "Which festival of music and arts is held in Eswatini?",
+     "a": "MTN Bushfire",
+     "wrong": [
+      "Lake of Stars",
+      "Sauti za Busara",
+      "Oppikoppi"
+     ],
+     "why": "It is held at House on Fire."
+    },
+    {
+     "level": 2,
+     "q": "What are traditional Swazi beehive huts made from?",
+     "a": "Grass and reeds",
+     "wrong": [
+      "Mud bricks",
+      "Stone",
+      "Wood planks"
+     ],
+     "why": "They are woven over a frame."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain range in the east borders Mozambique?",
+     "a": "Lubombo Mountains",
+     "wrong": [
+      "Drakensberg",
+      "Maloti",
+      "Chimanimani"
+     ],
+     "why": "They are part of a UNESCO bid."
+    },
+    {
+     "level": 3,
+     "q": "What is the Queen Mother's royal village at Lobamba called?",
+     "a": "Ludzidzini Royal Village",
+     "wrong": [
+      "Embo State Palace",
+      "Lozitha Palace",
+      "Mbabane Palace"
+     ],
+     "why": "The Umhlanga is held there."
+    },
+    {
+     "level": 3,
+     "q": "Which Swazi dance is performed by men in warrior dress?",
+     "a": "Sibhaca",
+     "wrong": [
+      "Indlamu",
+      "Gumboot",
+      "Pantsula"
+     ],
+     "why": "It involves high kicks."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,346 @@
+{
+ "category": "Benin",
+ "country": "BJ",
+ "topics": [
+  {
+   "name": "Benin: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the official capital of Benin?",
+     "a": "Porto-Novo",
+     "wrong": [
+      "Cotonou",
+      "Parakou",
+      "Abomey"
+     ],
+     "why": "Cotonou is the seat of government."
+    },
+    {
+     "level": 1,
+     "q": "What was Benin called before 1975?",
+     "a": "Dahomey",
+     "wrong": [
+      "Togoland",
+      "Upper Volta",
+      "Gold Coast"
+     ],
+     "why": "It was renamed after the Bight of Benin."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Benin gain independence in 1960?",
+     "a": "France",
+     "wrong": [
+      "United Kingdom",
+      "Portugal",
+      "Germany"
+     ],
+     "why": "It had several coups in the 1960s."
+    },
+    {
+     "level": 1,
+     "q": "Which kingdom had famous women soldiers?",
+     "a": "Kingdom of Dahomey",
+     "wrong": [
+      "Kingdom of Benin",
+      "Ashanti Empire",
+      "Oyo Empire"
+     ],
+     "why": "The film 'The Woman King' is about them."
+    },
+    {
+     "level": 1,
+     "q": "What is Benin's currency?",
+     "a": "West African CFA franc",
+     "wrong": [
+      "Naira",
+      "Cedi",
+      "Leone"
+     ],
+     "why": "It is shared by eight countries."
+    },
+    {
+     "level": 1,
+     "q": "Which religion is said to have begun in Benin?",
+     "a": "Vodun (Voodoo)",
+     "wrong": [
+      "Candomblé",
+      "Santería",
+      "Rastafari"
+     ],
+     "why": "10 January is a Vodun holiday."
+    },
+    {
+     "level": 1,
+     "q": "Which cotton-rich country lies between Togo and Nigeria?",
+     "a": "Benin",
+     "wrong": [
+      "Ghana",
+      "Burkina Faso",
+      "Niger"
+     ],
+     "why": "Cotton is its main export."
+    },
+    {
+     "level": 2,
+     "q": "Who led Benin's Marxist government from 1972 to 1991?",
+     "a": "Mathieu Kérékou",
+     "wrong": [
+      "Nicéphore Soglo",
+      "Thomas Boni Yayi",
+      "Patrice Talon"
+     ],
+     "why": "He returned by election in 1996."
+    },
+    {
+     "level": 2,
+     "q": "Which 1990 meeting made Benin a model of peaceful democratic change?",
+     "a": "National Conference",
+     "wrong": [
+      "Abomey Summit",
+      "Cotonou Accord",
+      "People's Congress"
+     ],
+     "why": "It ended one-party rule."
+    },
+    {
+     "level": 2,
+     "q": "Which old capital has the Royal Palaces of the Dahomey kings?",
+     "a": "Abomey",
+     "wrong": [
+      "Ouidah",
+      "Porto-Novo",
+      "Allada"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which coastal town has the 'Door of No Return' memorial?",
+     "a": "Ouidah",
+     "wrong": [
+      "Grand-Popo",
+      "Cotonou",
+      "Porto-Novo"
+     ],
+     "why": "It was a major slave port."
+    },
+    {
+     "level": 2,
+     "q": "Who has been President of Benin since 2016?",
+     "a": "Patrice Talon",
+     "wrong": [
+      "Thomas Boni Yayi",
+      "Lionel Zinsou",
+      "Nicéphore Soglo"
+     ],
+     "why": "He made his money in cotton."
+    },
+    {
+     "level": 3,
+     "q": "Which king of Dahomey fought the French in the 1890s?",
+     "a": "Béhanzin",
+     "wrong": [
+      "Ghezo",
+      "Agaja",
+      "Glele"
+     ],
+     "why": "He surrendered in 1894."
+    },
+    {
+     "level": 3,
+     "q": "Which Dahomey treasures did France return to Benin in 2021?",
+     "a": "Royal statues from Abomey",
+     "wrong": [
+      "The Benin Bronzes",
+      "The Ashanti Gold",
+      "The Koh-i-Noor"
+     ],
+     "why": "26 objects were returned."
+    },
+    {
+     "level": 3,
+     "q": "Who was the first President of independent Dahomey?",
+     "a": "Hubert Maga",
+     "wrong": [
+      "Sourou-Migan Apithy",
+      "Justin Ahomadégbé",
+      "Mathieu Kérékou"
+     ],
+     "why": "He was overthrown in 1963."
+    }
+   ]
+  },
+  {
+   "name": "Benin: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which lake village is built on stilts near Cotonou?",
+     "a": "Ganvié",
+     "wrong": [
+      "Kampong Ayer",
+      "Tai O",
+      "Makoko"
+     ],
+     "why": "It is called the 'Venice of Africa'."
+    },
+    {
+     "level": 1,
+     "q": "Which Beninese singer has won several Grammys?",
+     "a": "Angélique Kidjo",
+     "wrong": [
+      "Oumou Sangaré",
+      "Miriam Makeba",
+      "Youssou N'Dour"
+     ],
+     "why": "She is called 'Africa's premier diva'."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is on Benin's coast?",
+     "a": "Atlantic Ocean (Bight of Benin)",
+     "wrong": [
+      "Indian Ocean",
+      "Red Sea",
+      "Mediterranean Sea"
+     ],
+     "why": "The coast has lagoons."
+    },
+    {
+     "level": 1,
+     "q": "Which national park in the north is home to lions and elephants?",
+     "a": "Pendjari National Park",
+     "wrong": [
+      "Taï National Park",
+      "Kruger",
+      "Serengeti"
+     ],
+     "why": "It is one of West Africa's best wildlife parks."
+    },
+    {
+     "level": 1,
+     "q": "Which motorbike taxis are common in Cotonou?",
+     "a": "Zemidjans (zems)",
+     "wrong": [
+      "Okadas",
+      "Boda-bodas",
+      "Tuk-tuks"
+     ],
+     "why": "Riders wear yellow shirts."
+    },
+    {
+     "level": 1,
+     "q": "Which market in Cotonou is one of West Africa's largest?",
+     "a": "Dantokpa Market",
+     "wrong": [
+      "Kejetia Market",
+      "Balogun Market",
+      "Sandaga Market"
+     ],
+     "why": "It covers about 20 hectares."
+    },
+    {
+     "level": 1,
+     "q": "Which language is official in Benin?",
+     "a": "French",
+     "wrong": [
+      "English",
+      "Portuguese",
+      "Yoruba"
+     ],
+     "why": "Fon and Yoruba are widely spoken."
+    },
+    {
+     "level": 2,
+     "q": "Which festival on 10 January celebrates Vodun?",
+     "a": "Fête du Vodoun",
+     "wrong": [
+      "Gelede Festival",
+      "Egungun Festival",
+      "Durbar"
+     ],
+     "why": "Ouidah holds the biggest celebration."
+    },
+    {
+     "level": 2,
+     "q": "Which masked dance of the Yoruba-Nago honours women?",
+     "a": "Gelede",
+     "wrong": [
+      "Egungun",
+      "Zangbeto",
+      "Dama"
+     ],
+     "why": "It is on UNESCO's list."
+    },
+    {
+     "level": 2,
+     "q": "Which 'night watchmen' spirits look like spinning haystacks?",
+     "a": "Zangbeto",
+     "wrong": [
+      "Egungun",
+      "Gelede",
+      "Kanaga"
+     ],
+     "why": "They guard villages."
+    },
+    {
+     "level": 2,
+     "q": "Which python temple is in Ouidah?",
+     "a": "Temple of Pythons",
+     "wrong": [
+      "Temple of Crocodiles",
+      "Temple of Leopards",
+      "Temple of Lions"
+     ],
+     "why": "Pythons are sacred there."
+    },
+    {
+     "level": 2,
+     "q": "Which Beninese actor starred in 'Gladiator' and 'Amistad'?",
+     "a": "Djimon Hounsou",
+     "wrong": [
+      "Idris Elba",
+      "Chiwetel Ejiofor",
+      "Isaach de Bankolé"
+     ],
+     "why": "He was nominated for two Oscars."
+    },
+    {
+     "level": 3,
+     "q": "Which mud-walled 'tata' houses are built by the Somba people?",
+     "a": "Tata somba",
+     "wrong": [
+      "Rondavels",
+      "Tiébélé houses",
+      "Dogon houses"
+     ],
+     "why": "They look like small fortresses."
+    },
+    {
+     "level": 3,
+     "q": "Which national park with lions does Benin share with Niger and Burkina Faso?",
+     "a": "W National Park",
+     "wrong": [
+      "Pendjari",
+      "Arly",
+      "Comoé"
+     ],
+     "why": "It is part of the W-Arly-Pendjari complex."
+    },
+    {
+     "level": 3,
+     "q": "Which Afro-Brazilian families returned from Brazil to the coast?",
+     "a": "Agudás",
+     "wrong": [
+      "Saros",
+      "Krios",
+      "Tabom"
+     ],
+     "why": "They brought Brazilian architecture."
+    }
+   ]
+  }
+ ]
+}

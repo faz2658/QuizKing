@@ -1,0 +1,346 @@
+{
+ "category": "Samoa",
+ "country": "WS",
+ "topics": [
+  {
+   "name": "Samoa: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Samoa?",
+     "a": "Apia",
+     "wrong": [
+      "Salelologa",
+      "Faleolo",
+      "Pago Pago"
+     ],
+     "why": "It is on Upolu."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Samoa gain independence in 1962?",
+     "a": "New Zealand",
+     "wrong": [
+      "United Kingdom",
+      "Germany",
+      "Australia"
+     ],
+     "why": "It was the first Pacific nation to become independent in the 1900s."
+    },
+    {
+     "level": 1,
+     "q": "What is Samoa's currency?",
+     "a": "Tala",
+     "wrong": [
+      "Vatu",
+      "Kina",
+      "Pa'anga"
+     ],
+     "why": "Its code is WST."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is Samoa in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It is northeast of Fiji."
+    },
+    {
+     "level": 1,
+     "q": "What are Samoa's two main islands?",
+     "a": "Upolu and Savai'i",
+     "wrong": [
+      "Tutuila and Manu'a",
+      "Viti Levu and Vanua Levu",
+      "Tongatapu and Vava'u"
+     ],
+     "why": "Most people live on Upolu."
+    },
+    {
+     "level": 1,
+     "q": "Which way of life guides Samoan culture?",
+     "a": "Fa'a Samoa",
+     "wrong": [
+      "Bula spirit",
+      "Aloha spirit",
+      "Ubuntu"
+     ],
+     "why": "It means 'the Samoan way'."
+    },
+    {
+     "level": 1,
+     "q": "What did Samoa do in 2011 to its calendar?",
+     "a": "It skipped a day to cross the date line",
+     "wrong": [
+      "It added a month",
+      "It started a new year in June",
+      "It removed weekends"
+     ],
+     "why": "30 December 2011 never happened there."
+    },
+    {
+     "level": 2,
+     "q": "Which country ruled Western Samoa from 1900 to 1914?",
+     "a": "Germany",
+     "wrong": [
+      "United Kingdom",
+      "France",
+      "United States"
+     ],
+     "why": "New Zealand took over in the First World War."
+    },
+    {
+     "level": 2,
+     "q": "Which non-violent independence movement fought New Zealand rule?",
+     "a": "Mau movement",
+     "wrong": [
+      "Maori movement",
+      "Freedom Front",
+      "Ali'i movement"
+     ],
+     "why": "Its leaders were shot on 'Black Saturday' in 1929."
+    },
+    {
+     "level": 2,
+     "q": "Who became Samoa's first woman Prime Minister in 2021?",
+     "a": "Fiamē Naomi Mata'afa",
+     "wrong": [
+      "Tuilaepa Sailele",
+      "Fiamē Mata'afa Mulinu'u",
+      "Lagi Tuimavave"
+     ],
+     "why": "She had a constitutional crisis to win office."
+    },
+    {
+     "level": 2,
+     "q": "Which Scottish writer lived and died in Samoa?",
+     "a": "Robert Louis Stevenson",
+     "wrong": [
+      "Walter Scott",
+      "Arthur Conan Doyle",
+      "J. M. Barrie"
+     ],
+     "why": "Samoans called him 'Tusitala'."
+    },
+    {
+     "level": 2,
+     "q": "What was Samoa called until 1997?",
+     "a": "Western Samoa",
+     "wrong": [
+      "New Samoa",
+      "German Samoa",
+      "Upolu"
+     ],
+     "why": "American Samoa is a separate territory."
+    },
+    {
+     "level": 3,
+     "q": "Which Samoan leader served as Prime Minister from 1998 to 2021?",
+     "a": "Tuilaepa Sailele Malielegaoi",
+     "wrong": [
+      "Fiamē Naomi Mata'afa",
+      "Tofilau Eti Alesana",
+      "Va'ai Kolone"
+     ],
+     "why": "He was one of the longest-serving leaders."
+    },
+    {
+     "level": 3,
+     "q": "Which 2009 disaster struck Samoa?",
+     "a": "An earthquake and tsunami",
+     "wrong": [
+      "A cyclone",
+      "A volcanic eruption",
+      "A drought"
+     ],
+     "why": "Over 140 people died."
+    },
+    {
+     "level": 3,
+     "q": "Who became Prime Minister of Samoa after the 2025 election?",
+     "a": "La'auli Leuatea Schmidt",
+     "wrong": [
+      "Fiamē Naomi Mata'afa",
+      "Tuilaepa Sailele",
+      "Va'ai Papu Vailupe"
+     ],
+     "why": "His party won the most seats."
+    }
+   ]
+  },
+  {
+   "name": "Samoa: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which open-sided traditional house is found in Samoan villages?",
+     "a": "Fale",
+     "wrong": [
+      "Bure",
+      "Marae",
+      "Hogan"
+     ],
+     "why": "It has no walls."
+    },
+    {
+     "level": 1,
+     "q": "Which earth oven is used for Sunday meals?",
+     "a": "Umu",
+     "wrong": [
+      "Lovo",
+      "Mumu",
+      "Hangi"
+     ],
+     "why": "Food cooks under hot stones."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is Samoa's national sport?",
+     "a": "Rugby union",
+     "wrong": [
+      "Football",
+      "Cricket",
+      "Baseball"
+     ],
+     "why": "The team is called Manu Samoa."
+    },
+    {
+     "level": 1,
+     "q": "Which deep swimming hole is called To Sua?",
+     "a": "To Sua Ocean Trench",
+     "wrong": [
+      "Blue Hole",
+      "Dean's Blue Hole",
+      "Champagne Pool"
+     ],
+     "why": "It is reached by a long ladder."
+    },
+    {
+     "level": 1,
+     "q": "Which tattoo tradition is a Samoan rite of passage?",
+     "a": "Tatau (pe'a for men)",
+     "wrong": [
+      "Ta moko",
+      "Henna",
+      "Irezumi"
+     ],
+     "why": "The word 'tattoo' comes from 'tatau'."
+    },
+    {
+     "level": 1,
+     "q": "Which skirt-like cloth do Samoan men wear?",
+     "a": "Lavalava",
+     "wrong": [
+      "Sari",
+      "Kilt",
+      "Toga"
+     ],
+     "why": "It is worn every day."
+    },
+    {
+     "level": 1,
+     "q": "Which American Samoan city is the territory's capital?",
+     "a": "Pago Pago",
+     "wrong": [
+      "Apia",
+      "Tafuna",
+      "Leone"
+     ],
+     "why": "It is in a separate US territory."
+    },
+    {
+     "level": 2,
+     "q": "Which ceremonial drink is shared at important events?",
+     "a": "Ava (kava)",
+     "wrong": [
+      "Coconut wine",
+      "Palm toddy",
+      "Sake"
+     ],
+     "why": "It is part of the 'ava ceremony."
+    },
+    {
+     "level": 2,
+     "q": "Which blowholes on Savai'i shoot seawater high into the air?",
+     "a": "Alofaaga Blowholes",
+     "wrong": [
+      "Kiama Blowhole",
+      "Arch Rock",
+      "Spouting Horn"
+     ],
+     "why": "Locals throw coconuts into them."
+    },
+    {
+     "level": 2,
+     "q": "Which Samoan-heritage actor starred in 'Fast & Furious'?",
+     "a": "Dwayne Johnson",
+     "wrong": [
+      "Jason Momoa",
+      "Taika Waititi",
+      "Cliff Curtis"
+     ],
+     "why": "His mother is Samoan."
+    },
+    {
+     "level": 2,
+     "q": "Which coconut cream dish wrapped in taro leaves is a favourite?",
+     "a": "Palusami",
+     "wrong": [
+      "Laplap",
+      "Kokoda",
+      "Poi"
+     ],
+     "why": "It is baked in the umu."
+    },
+    {
+     "level": 2,
+     "q": "Which fire dance is famous in Samoa?",
+     "a": "Siva afi (fire knife dance)",
+     "wrong": [
+      "Haka",
+      "Meke",
+      "Hula"
+     ],
+     "why": "Dancers twirl flaming knives."
+    },
+    {
+     "level": 3,
+     "q": "Which lava fields on Savai'i came from a 1905–11 eruption?",
+     "a": "Saleaula lava fields",
+     "wrong": [
+      "Mauna Loa fields",
+      "Tavurvur fields",
+      "Yasur fields"
+     ],
+     "why": "The lava surrounded a church."
+    },
+    {
+     "level": 3,
+     "q": "Which national park has a canopy walkway on Savai'i?",
+     "a": "Falealupo Rainforest Preserve",
+     "wrong": [
+      "O Le Pupu-Pu'e National Park",
+      "Lake Lanoto'o",
+      "Afu Aau"
+     ],
+     "why": "It is on the island's western tip."
+    },
+    {
+     "level": 3,
+     "q": "Which house of chiefs, the 'matai system', leads Samoan villages?",
+     "a": "Matai (chiefly system)",
+     "wrong": [
+      "Ali'i Council",
+      "Elders' Club",
+      "Tribal Court"
+     ],
+     "why": "Only matai may sit in parliament."
+    }
+   ]
+  }
+ ]
+}

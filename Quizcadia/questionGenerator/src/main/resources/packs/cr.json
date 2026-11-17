@@ -1,0 +1,346 @@
+{
+ "category": "Costa Rica",
+ "country": "CR",
+ "topics": [
+  {
+   "name": "Costa Rica: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Costa Rica?",
+     "a": "San José",
+     "wrong": [
+      "Cartago",
+      "Alajuela",
+      "Limón"
+     ],
+     "why": "It sits in the Central Valley."
+    },
+    {
+     "level": 1,
+     "q": "What did Costa Rica abolish in 1948?",
+     "a": "Its army",
+     "wrong": [
+      "Its monarchy",
+      "Its currency",
+      "Its senate"
+     ],
+     "why": "The money went to schools and health care."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Costa Rica gain independence in 1821?",
+     "a": "Spain",
+     "wrong": [
+      "Portugal",
+      "Mexico",
+      "France"
+     ],
+     "why": "It is celebrated on 15 September."
+    },
+    {
+     "level": 1,
+     "q": "Which Costa Rican President won the 1987 Nobel Peace Prize?",
+     "a": "Óscar Arias",
+     "wrong": [
+      "José Figueres",
+      "Laura Chinchilla",
+      "Rodrigo Chaves"
+     ],
+     "why": "He drew up a peace plan for Central America."
+    },
+    {
+     "level": 1,
+     "q": "What is Costa Rica's currency?",
+     "a": "Colón",
+     "wrong": [
+      "Peso",
+      "Quetzal",
+      "Córdoba"
+     ],
+     "why": "It is named after Christopher Columbus."
+    },
+    {
+     "level": 1,
+     "q": "Which phrase do Costa Ricans use to mean 'all good'?",
+     "a": "Pura vida",
+     "wrong": [
+      "Hakuna matata",
+      "No pasa nada",
+      "Qué chévere"
+     ],
+     "why": "It is the national motto in spirit."
+    },
+    {
+     "level": 1,
+     "q": "What are Costa Ricans called informally?",
+     "a": "Ticos",
+     "wrong": [
+      "Chapines",
+      "Catrachos",
+      "Nicas"
+     ],
+     "why": "It comes from their habit of using '-tico' endings."
+    },
+    {
+     "level": 1,
+     "q": "Who became Costa Rica's first woman President, in 2010?",
+     "a": "Laura Chinchilla",
+     "wrong": [
+      "Epsy Campbell",
+      "Óscar Arias",
+      "Rebeca Grynspan"
+     ],
+     "why": "She served until 2014."
+    },
+    {
+     "level": 2,
+     "q": "Which leader abolished the army after the 1948 civil war?",
+     "a": "José Figueres Ferrer",
+     "wrong": [
+      "Óscar Arias",
+      "Rafael Calderón",
+      "Juan Mora Fernández"
+     ],
+     "why": "He is called 'Don Pepe'."
+    },
+    {
+     "level": 2,
+     "q": "Which 1856 battle saw Costa Rica defeat William Walker's army?",
+     "a": "Battle of Rivas",
+     "wrong": [
+      "Battle of Santa Rosa",
+      "Battle of San Jacinto",
+      "Battle of Ochomogo"
+     ],
+     "why": "Juan Santamaría is its hero."
+    },
+    {
+     "level": 2,
+     "q": "Which drummer boy hero set fire to Walker's fort in 1856?",
+     "a": "Juan Santamaría",
+     "wrong": [
+      "Juan Mora Porras",
+      "José María Cañas",
+      "Francisco Morazán"
+     ],
+     "why": "The main airport is named after him."
+    },
+    {
+     "level": 2,
+     "q": "Which city was Costa Rica's first capital?",
+     "a": "Cartago",
+     "wrong": [
+      "Heredia",
+      "Liberia",
+      "Puntarenas"
+     ],
+     "why": "It was the capital until 1823."
+    },
+    {
+     "level": 3,
+     "q": "Which crop made Costa Rica rich in the 1800s?",
+     "a": "Coffee",
+     "wrong": [
+      "Bananas",
+      "Sugar",
+      "Cocoa"
+     ],
+     "why": "Coffee money built the National Theatre."
+    },
+    {
+     "level": 3,
+     "q": "Which Costa Rican astronaut flew seven space missions?",
+     "a": "Franklin Chang-Díaz",
+     "wrong": [
+      "Rodolfo Neri Vela",
+      "Arnaldo Tamayo",
+      "Marcos Pontes"
+     ],
+     "why": "He tied the record for most flights."
+    },
+    {
+     "level": 3,
+     "q": "What are the mysterious stone balls of southern Costa Rica called?",
+     "a": "Diquís spheres",
+     "wrong": [
+      "Moai",
+      "Olmec heads",
+      "Menhirs"
+     ],
+     "why": "Some weigh over 15 tonnes."
+    }
+   ]
+  },
+  {
+   "name": "Costa Rica: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which cone-shaped volcano near La Fortuna was very active until 2010?",
+     "a": "Arenal",
+     "wrong": [
+      "Poás",
+      "Irazú",
+      "Turrialba"
+     ],
+     "why": "It looks like a perfect cone."
+    },
+    {
+     "level": 1,
+     "q": "Which cloud forest reserve is famous worldwide?",
+     "a": "Monteverde",
+     "wrong": [
+      "Corcovado",
+      "Tortuguero",
+      "Manuel Antonio"
+     ],
+     "why": "It has hanging bridges in the canopy."
+    },
+    {
+     "level": 1,
+     "q": "Which rice and beans dish is eaten for breakfast?",
+     "a": "Gallo pinto",
+     "wrong": [
+      "Casado",
+      "Arroz con pollo",
+      "Olla de carne"
+     ],
+     "why": "Nicaragua claims it too."
+    },
+    {
+     "level": 1,
+     "q": "Which slow animal is a symbol of Costa Rica's wildlife?",
+     "a": "Sloth",
+     "wrong": [
+      "Koala",
+      "Panda",
+      "Tortoise"
+     ],
+     "why": "Both two-toed and three-toed kinds live there."
+    },
+    {
+     "level": 1,
+     "q": "Which two oceans or seas does Costa Rica touch?",
+     "a": "Pacific Ocean and Caribbean Sea",
+     "wrong": [
+      "Atlantic and Indian Oceans",
+      "Pacific Ocean and Gulf of Mexico",
+      "Caribbean Sea and Gulf of Mexico"
+     ],
+     "why": "No town is far from a coast."
+    },
+    {
+     "level": 1,
+     "q": "How much of Costa Rica's electricity is from renewable sources?",
+     "a": "Almost all",
+     "wrong": [
+      "About half",
+      "About a quarter",
+      "About 10%"
+     ],
+     "why": "Hydro power provides most of it."
+    },
+    {
+     "level": 1,
+     "q": "Which painted carts are a national symbol?",
+     "a": "Ox carts (carretas)",
+     "wrong": [
+      "Tuk-tuks",
+      "Chiva buses",
+      "Gondolas"
+     ],
+     "why": "They are on UNESCO's list."
+    },
+    {
+     "level": 2,
+     "q": "Which park on the Osa Peninsula is called the most biologically intense place on Earth?",
+     "a": "Corcovado National Park",
+     "wrong": [
+      "Manuel Antonio",
+      "Tortuguero",
+      "Chirripó"
+     ],
+     "why": "National Geographic called it that."
+    },
+    {
+     "level": 2,
+     "q": "Where do sea turtles nest on the Caribbean coast?",
+     "a": "Tortuguero",
+     "wrong": [
+      "Manuel Antonio",
+      "Tamarindo",
+      "Cahuita"
+     ],
+     "why": "Its name means 'turtle catcher'."
+    },
+    {
+     "level": 2,
+     "q": "Which Costa Rican footballer starred as Real Madrid's goalkeeper?",
+     "a": "Keylor Navas",
+     "wrong": [
+      "Bryan Ruiz",
+      "Joel Campbell",
+      "Paulo Wanchope"
+     ],
+     "why": "He won three Champions League titles."
+    },
+    {
+     "level": 2,
+     "q": "How far did Costa Rica go at the 2014 World Cup?",
+     "a": "Quarter-finals",
+     "wrong": [
+      "Group stage",
+      "Final",
+      "Semi-finals"
+     ],
+     "why": "They topped a group with Uruguay, Italy and England."
+    },
+    {
+     "level": 2,
+     "q": "What is a 'casado' in Costa Rica?",
+     "a": "A set lunch plate",
+     "wrong": [
+      "A wedding dance",
+      "A bus",
+      "A coffee drink"
+     ],
+     "why": "It means 'married man'."
+    },
+    {
+     "level": 3,
+     "q": "Which grand theatre in San José was paid for by coffee taxes?",
+     "a": "National Theatre of Costa Rica",
+     "wrong": [
+      "Teatro Colón",
+      "Palacio de Bellas Artes",
+      "Teatro Nacional Sucre"
+     ],
+     "why": "It opened in 1897."
+    },
+    {
+     "level": 3,
+     "q": "What is Costa Rica's highest mountain?",
+     "a": "Cerro Chirripó",
+     "wrong": [
+      "Irazú",
+      "Barva",
+      "Cerro de la Muerte"
+     ],
+     "why": "It is about 3,820 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which Costa Rican swimmer won the country's first Olympic gold, in 1996?",
+     "a": "Claudia Poll",
+     "wrong": [
+      "Silvia Poll",
+      "Andrea Vargas",
+      "Nery Brenes"
+     ],
+     "why": "She won the 200 m freestyle in Atlanta."
+    }
+   ]
+  }
+ ]
+}

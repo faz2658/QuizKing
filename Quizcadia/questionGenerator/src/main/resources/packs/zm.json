@@ -1,0 +1,346 @@
+{
+ "category": "Zambia",
+ "country": "ZM",
+ "topics": [
+  {
+   "name": "Zambia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Zambia?",
+     "a": "Lusaka",
+     "wrong": [
+      "Ndola",
+      "Kitwe",
+      "Livingstone"
+     ],
+     "why": "It grew up along the railway."
+    },
+    {
+     "level": 1,
+     "q": "What was Zambia called before 1964?",
+     "a": "Northern Rhodesia",
+     "wrong": [
+      "Southern Rhodesia",
+      "Nyasaland",
+      "Bechuanaland"
+     ],
+     "why": "It became independent that year."
+    },
+    {
+     "level": 1,
+     "q": "Who was Zambia's first President?",
+     "a": "Kenneth Kaunda",
+     "wrong": [
+      "Frederick Chiluba",
+      "Levy Mwanawasa",
+      "Michael Sata"
+     ],
+     "why": "He ruled for 27 years."
+    },
+    {
+     "level": 1,
+     "q": "Which metal is Zambia's main export?",
+     "a": "Copper",
+     "wrong": [
+      "Gold",
+      "Cobalt",
+      "Iron"
+     ],
+     "why": "The Copperbelt is in the north."
+    },
+    {
+     "level": 1,
+     "q": "What is Zambia's currency?",
+     "a": "Zambian kwacha",
+     "wrong": [
+      "Rand",
+      "Pula",
+      "Kwanza"
+     ],
+     "why": "It was redenominated in 2013."
+    },
+    {
+     "level": 1,
+     "q": "Which waterfall does Zambia share with Zimbabwe?",
+     "a": "Victoria Falls",
+     "wrong": [
+      "Kalandula Falls",
+      "Murchison Falls",
+      "Tugela Falls"
+     ],
+     "why": "Its local name means 'the smoke that thunders'."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of Zambia since 2021?",
+     "a": "Hakainde Hichilema",
+     "wrong": [
+      "Edgar Lungu",
+      "Michael Sata",
+      "Rupiah Banda"
+     ],
+     "why": "He is a businessman."
+    },
+    {
+     "level": 2,
+     "q": "Which railway links Zambia to Tanzania's coast?",
+     "a": "TAZARA Railway",
+     "wrong": [
+      "Benguela Railway",
+      "Trans-Gabon Railway",
+      "Lunatic Express"
+     ],
+     "why": "China helped build it in the 1970s."
+    },
+    {
+     "level": 2,
+     "q": "Which explorer named Victoria Falls in 1855?",
+     "a": "David Livingstone",
+     "wrong": [
+      "Henry Morton Stanley",
+      "Richard Burton",
+      "Mungo Park"
+     ],
+     "why": "A town is named after him."
+    },
+    {
+     "level": 2,
+     "q": "Which man-made lake did Zambia and Zimbabwe create in 1959?",
+     "a": "Lake Kariba",
+     "wrong": [
+      "Lake Volta",
+      "Lake Nasser",
+      "Lake Malawi"
+     ],
+     "why": "It is one of the world's largest reservoirs."
+    },
+    {
+     "level": 2,
+     "q": "Which 1993 air crash killed most of Zambia's national football team?",
+     "a": "Gabon air disaster",
+     "wrong": [
+      "Munich air disaster",
+      "Superga disaster",
+      "Chapecoense crash"
+     ],
+     "why": "Zambia won AFCON in 2012 at the same place."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Zambia win the Africa Cup of Nations?",
+     "a": "2012",
+     "wrong": [
+      "1994",
+      "2006",
+      "2017"
+     ],
+     "why": "They won in Libreville."
+    },
+    {
+     "level": 3,
+     "q": "Which white Vice-President became acting President in 2014?",
+     "a": "Guy Scott",
+     "wrong": [
+      "Rupiah Banda",
+      "Inonge Wina",
+      "Nevers Mumba"
+     ],
+     "why": "He was Africa's first white leader since apartheid."
+    },
+    {
+     "level": 3,
+     "q": "Who led Zambia back to multi-party democracy in 1991?",
+     "a": "Frederick Chiluba",
+     "wrong": [
+      "Kenneth Kaunda",
+      "Levy Mwanawasa",
+      "Michael Sata"
+     ],
+     "why": "He was a trade union leader."
+    },
+    {
+     "level": 3,
+     "q": "What was Kaunda's political philosophy called?",
+     "a": "Zambian Humanism",
+     "wrong": [
+      "Ujamaa",
+      "Ubuntu",
+      "Négritude"
+     ],
+     "why": "It mixed African and Christian ideas."
+    }
+   ]
+  },
+  {
+   "name": "Zambia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which river forms Zambia's border with Zimbabwe?",
+     "a": "Zambezi River",
+     "wrong": [
+      "Limpopo",
+      "Congo",
+      "Kafue"
+     ],
+     "why": "Victoria Falls is on it."
+    },
+    {
+     "level": 1,
+     "q": "Which park is famous for walking safaris?",
+     "a": "South Luangwa National Park",
+     "wrong": [
+      "Kruger",
+      "Serengeti",
+      "Masai Mara"
+     ],
+     "why": "Walking safaris began there."
+    },
+    {
+     "level": 1,
+     "q": "Which maize porridge is Zambia's staple food?",
+     "a": "Nshima",
+     "wrong": [
+      "Ugali",
+      "Sadza",
+      "Pap"
+     ],
+     "why": "It is eaten with relish."
+    },
+    {
+     "level": 1,
+     "q": "Which pool at the edge of Victoria Falls lets people swim at the drop?",
+     "a": "Devil's Pool",
+     "wrong": [
+      "Angel's Pool",
+      "Rainbow Pool",
+      "Smoke Pool"
+     ],
+     "why": "It is open in the dry season."
+    },
+    {
+     "level": 1,
+     "q": "Which city is near Victoria Falls in Zambia?",
+     "a": "Livingstone",
+     "wrong": [
+      "Lusaka",
+      "Kitwe",
+      "Chipata"
+     ],
+     "why": "It is a tourist centre."
+    },
+    {
+     "level": 1,
+     "q": "Which bird is on Zambia's flag?",
+     "a": "African fish eagle",
+     "wrong": [
+      "Secretary bird",
+      "Lilac-breasted roller",
+      "Crowned crane"
+     ],
+     "why": "It stands for rising above problems."
+    },
+    {
+     "level": 1,
+     "q": "What is Zambia's national football team called?",
+     "a": "Chipolopolo (Copper Bullets)",
+     "wrong": [
+      "Warriors",
+      "Flames",
+      "Black Stars"
+     ],
+     "why": "They won the 2012 AFCON."
+    },
+    {
+     "level": 2,
+     "q": "Which bat migration in Kasanka is the biggest mammal migration?",
+     "a": "Straw-coloured fruit bat migration",
+     "wrong": [
+      "Wildebeest migration",
+      "Zebra migration",
+      "Elephant migration"
+     ],
+     "why": "About 10 million bats arrive each year."
+    },
+    {
+     "level": 2,
+     "q": "Which ceremony of the Lozi people moves the king by barge?",
+     "a": "Kuomboka",
+     "wrong": [
+      "Ncwala",
+      "Umhlanga",
+      "Mutomboko"
+     ],
+     "why": "It is held when the plains flood."
+    },
+    {
+     "level": 2,
+     "q": "Which national park is one of Africa's largest?",
+     "a": "Kafue National Park",
+     "wrong": [
+      "South Luangwa",
+      "Lower Zambezi",
+      "North Luangwa"
+     ],
+     "why": "It covers over 22,000 square kilometres."
+    },
+    {
+     "level": 2,
+     "q": "Which Ngoni ceremony in eastern Zambia is held each February?",
+     "a": "Ncwala",
+     "wrong": [
+      "Kuomboka",
+      "Umhlanga",
+      "Likumbi Lya Mize"
+     ],
+     "why": "It celebrates the first harvest."
+    },
+    {
+     "level": 2,
+     "q": "Which park along the Zambezi faces Zimbabwe's Mana Pools?",
+     "a": "Lower Zambezi National Park",
+     "wrong": [
+      "Kafue",
+      "Liuwa Plain",
+      "Sioma Ngwezi"
+     ],
+     "why": "Canoe safaris are popular."
+    },
+    {
+     "level": 3,
+     "q": "Which plain in the west hosts Africa's second-largest wildebeest migration?",
+     "a": "Liuwa Plain",
+     "wrong": [
+      "Kafue Flats",
+      "Bangweulu",
+      "Busanga"
+     ],
+     "why": "It is in Barotseland."
+    },
+    {
+     "level": 3,
+     "q": "Which wetland is home to the rare shoebill stork?",
+     "a": "Bangweulu Wetlands",
+     "wrong": [
+      "Okavango",
+      "Sudd",
+      "Lake Kariba"
+     ],
+     "why": "Its name means 'where the water meets the sky'."
+    },
+    {
+     "level": 3,
+     "q": "Which Zambian sprinter won 400 m bronze at the 2024 Olympics?",
+     "a": "Muzala Samukonga",
+     "wrong": [
+      "Sydney Siame",
+      "Samuel Matete",
+      "Kennedy Luchembe"
+     ],
+     "why": "He was the 2022 Commonwealth champion."
+    }
+   ]
+  }
+ ]
+}

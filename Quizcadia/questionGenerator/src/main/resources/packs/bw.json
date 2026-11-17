@@ -1,0 +1,346 @@
+{
+ "category": "Botswana",
+ "country": "BW",
+ "topics": [
+  {
+   "name": "Botswana: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Botswana?",
+     "a": "Gaborone",
+     "wrong": [
+      "Francistown",
+      "Maun",
+      "Kasane"
+     ],
+     "why": "It was built for independence."
+    },
+    {
+     "level": 1,
+     "q": "What was Botswana called before 1966?",
+     "a": "Bechuanaland",
+     "wrong": [
+      "Basutoland",
+      "Swaziland",
+      "Nyasaland"
+     ],
+     "why": "It was a British protectorate."
+    },
+    {
+     "level": 1,
+     "q": "Who was Botswana's first President?",
+     "a": "Seretse Khama",
+     "wrong": [
+      "Quett Masire",
+      "Festus Mogae",
+      "Ian Khama"
+     ],
+     "why": "He married an Englishwoman, Ruth Williams."
+    },
+    {
+     "level": 1,
+     "q": "Which gem made Botswana one of Africa's richest countries?",
+     "a": "Diamonds",
+     "wrong": [
+      "Emeralds",
+      "Gold",
+      "Rubies"
+     ],
+     "why": "They were found soon after independence."
+    },
+    {
+     "level": 1,
+     "q": "What is Botswana's currency?",
+     "a": "Pula",
+     "wrong": [
+      "Rand",
+      "Kwacha",
+      "Loti"
+     ],
+     "why": "'Pula' means rain in Setswana."
+    },
+    {
+     "level": 1,
+     "q": "Which inland delta is a famous wildlife wetland?",
+     "a": "Okavango Delta",
+     "wrong": [
+      "Niger Delta",
+      "Nile Delta",
+      "Zambezi Delta"
+     ],
+     "why": "It never reaches the sea."
+    },
+    {
+     "level": 1,
+     "q": "Who became President of Botswana in 2024?",
+     "a": "Duma Boko",
+     "wrong": [
+      "Mokgweetsi Masisi",
+      "Ian Khama",
+      "Festus Mogae"
+     ],
+     "why": "His win ended 58 years of BDP rule."
+    },
+    {
+     "level": 2,
+     "q": "Which film tells the love story of Seretse Khama and Ruth Williams?",
+     "a": "A United Kingdom",
+     "wrong": [
+      "Invictus",
+      "Mandela",
+      "Long Walk to Freedom"
+     ],
+     "why": "It came out in 2016."
+    },
+    {
+     "level": 2,
+     "q": "Which three chiefs travelled to London in 1895 to stop Cecil Rhodes's company?",
+     "a": "Khama III, Sebele I and Bathoen I",
+     "wrong": [
+      "Moshoeshoe, Shaka and Lobengula",
+      "Sekhukhune, Cetshwayo and Mzilikazi",
+      "Mswati, Moshoeshoe and Khama"
+     ],
+     "why": "Their statues stand in Gaborone."
+    },
+    {
+     "level": 2,
+     "q": "Which mine is one of the world's richest diamond mines?",
+     "a": "Jwaneng",
+     "wrong": [
+      "Orapa",
+      "Kimberley",
+      "Argyle"
+     ],
+     "why": "It is run by Debswana."
+    },
+    {
+     "level": 2,
+     "q": "Which party ruled Botswana from 1966 to 2024?",
+     "a": "Botswana Democratic Party",
+     "wrong": [
+      "Botswana National Front",
+      "Umbrella for Democratic Change",
+      "Botswana Congress Party"
+     ],
+     "why": "It was Africa's longest-ruling party in an elected democracy."
+    },
+    {
+     "level": 2,
+     "q": "Which President stepped down in 2018 after ten years?",
+     "a": "Ian Khama",
+     "wrong": [
+      "Festus Mogae",
+      "Quett Masire",
+      "Mokgweetsi Masisi"
+     ],
+     "why": "He is Seretse Khama's son."
+    },
+    {
+     "level": 3,
+     "q": "Which giant diamond found in 2015 is the second-largest ever?",
+     "a": "Lesedi La Rona",
+     "wrong": [
+      "Cullinan",
+      "Koh-i-Noor",
+      "Hope Diamond"
+     ],
+     "why": "It weighs 1,109 carats."
+    },
+    {
+     "level": 3,
+     "q": "Who was Botswana's second President?",
+     "a": "Quett Masire",
+     "wrong": [
+      "Festus Mogae",
+      "Seretse Khama",
+      "Ian Khama"
+     ],
+     "why": "He served from 1980 to 1998."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Bechuanaland become a British protectorate?",
+     "a": "1885",
+     "wrong": [
+      "1966",
+      "1910",
+      "1899"
+     ],
+     "why": "Britain feared Boer and German expansion."
+    }
+   ]
+  },
+  {
+   "name": "Botswana: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which national park has the largest elephant population in Africa?",
+     "a": "Chobe National Park",
+     "wrong": [
+      "Kruger",
+      "Hwange",
+      "Serengeti"
+     ],
+     "why": "Many elephants gather by the river."
+    },
+    {
+     "level": 1,
+     "q": "Which huge salt pans are among the largest in the world?",
+     "a": "Makgadikgadi Pans",
+     "wrong": [
+      "Etosha Pan",
+      "Salar de Uyuni",
+      "Lake Assal"
+     ],
+     "why": "They are what is left of an ancient lake."
+    },
+    {
+     "level": 1,
+     "q": "Which dugout canoes are used in the Okavango Delta?",
+     "a": "Mokoro",
+     "wrong": [
+      "Pirogue",
+      "Dhow",
+      "Felucca"
+     ],
+     "why": "Guides pole them through the reeds."
+    },
+    {
+     "level": 1,
+     "q": "Which desert covers much of Botswana?",
+     "a": "Kalahari Desert",
+     "wrong": [
+      "Namib Desert",
+      "Sahara",
+      "Karoo"
+     ],
+     "why": "It is a semi-desert with grass."
+    },
+    {
+     "level": 1,
+     "q": "Which people have hunted and gathered in the Kalahari for thousands of years?",
+     "a": "San (Bushmen)",
+     "wrong": [
+      "Herero",
+      "Tswana",
+      "Zulu"
+     ],
+     "why": "They are among the oldest peoples."
+    },
+    {
+     "level": 1,
+     "q": "Which language is the national language of Botswana?",
+     "a": "Setswana",
+     "wrong": [
+      "Sesotho",
+      "Zulu",
+      "Shona"
+     ],
+     "why": "English is the official language."
+    },
+    {
+     "level": 1,
+     "q": "Which series of novels by Alexander McCall Smith is set in Gaborone?",
+     "a": "The No. 1 Ladies' Detective Agency",
+     "wrong": [
+      "The Kalahari Mysteries",
+      "The Okavango Files",
+      "The Gaborone Cases"
+     ],
+     "why": "Precious Ramotswe is the detective."
+    },
+    {
+     "level": 2,
+     "q": "Which hills with rock paintings are called 'the Louvre of the Desert'?",
+     "a": "Tsodilo Hills",
+     "wrong": [
+      "Matobo Hills",
+      "Twyfelfontein",
+      "Drakensberg"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which pounded beef dish is the national dish?",
+     "a": "Seswaa",
+     "wrong": [
+      "Biltong",
+      "Braai",
+      "Bobotie"
+     ],
+     "why": "It is served with pap."
+    },
+    {
+     "level": 2,
+     "q": "Which Botswana sprinter won Olympic 200 m gold in 2024?",
+     "a": "Letsile Tebogo",
+     "wrong": [
+      "Isaac Makwala",
+      "Nijel Amos",
+      "Bayapo Ndori"
+     ],
+     "why": "It was Botswana's first Olympic gold."
+    },
+    {
+     "level": 2,
+     "q": "Which runner won Botswana's first Olympic medal, 800 m silver in 2012?",
+     "a": "Nijel Amos",
+     "wrong": [
+      "Isaac Makwala",
+      "Letsile Tebogo",
+      "Amantle Montsho"
+     ],
+     "why": "He was only 18."
+    },
+    {
+     "level": 2,
+     "q": "Which river flows into the Okavango Delta from Angola?",
+     "a": "Okavango River",
+     "wrong": [
+      "Zambezi River",
+      "Limpopo River",
+      "Orange River"
+     ],
+     "why": "Most of its water evaporates."
+    },
+    {
+     "level": 3,
+     "q": "Which Kalahari reserve is one of the largest game reserves in the world?",
+     "a": "Central Kalahari Game Reserve",
+     "wrong": [
+      "Kgalagadi Transfrontier Park",
+      "Moremi",
+      "Khutse"
+     ],
+     "why": "It is bigger than Switzerland."
+    },
+    {
+     "level": 3,
+     "q": "Which reserve in the Okavango is named after a chief's wife?",
+     "a": "Moremi Game Reserve",
+     "wrong": [
+      "Chobe",
+      "Khutse",
+      "Nxai Pan"
+     ],
+     "why": "Its people gave the land."
+    },
+    {
+     "level": 3,
+     "q": "Which giant baobab trees in the Pans are named after a painter?",
+     "a": "Baines' Baobabs",
+     "wrong": [
+      "Chapman's Baobab",
+      "Livingstone's Trees",
+      "Green's Baobabs"
+     ],
+     "why": "Thomas Baines painted them in 1862."
+    }
+   ]
+  }
+ ]
+}

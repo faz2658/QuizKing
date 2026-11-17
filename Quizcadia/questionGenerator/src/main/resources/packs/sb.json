@@ -1,0 +1,346 @@
+{
+ "category": "Solomon Islands",
+ "country": "SB",
+ "topics": [
+  {
+   "name": "Solomon Islands: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Solomon Islands?",
+     "a": "Honiara",
+     "wrong": [
+      "Gizo",
+      "Auki",
+      "Tulagi"
+     ],
+     "why": "It is on Guadalcanal."
+    },
+    {
+     "level": 1,
+     "q": "From which country did the Solomon Islands gain independence in 1978?",
+     "a": "United Kingdom",
+     "wrong": [
+      "Australia",
+      "France",
+      "New Zealand"
+     ],
+     "why": "It is a Commonwealth realm."
+    },
+    {
+     "level": 1,
+     "q": "Which island was the site of a big Second World War campaign?",
+     "a": "Guadalcanal",
+     "wrong": [
+      "Bougainville",
+      "Iwo Jima",
+      "Okinawa"
+     ],
+     "why": "US forces landed there in 1942."
+    },
+    {
+     "level": 1,
+     "q": "What is the currency of the Solomon Islands?",
+     "a": "Solomon Islands dollar",
+     "wrong": [
+      "Australian dollar",
+      "Kina",
+      "Vatu"
+     ],
+     "why": "Its code is SBD."
+    },
+    {
+     "level": 1,
+     "q": "Which creole language is widely spoken in the Solomon Islands?",
+     "a": "Pijin",
+     "wrong": [
+      "Tok Pisin",
+      "Bislama",
+      "Hiri Motu"
+     ],
+     "why": "English is official."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean are the Solomon Islands in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "They are east of Papua New Guinea."
+    },
+    {
+     "level": 1,
+     "q": "Which future US President was rescued in the Solomons in 1943?",
+     "a": "John F. Kennedy",
+     "wrong": [
+      "Richard Nixon",
+      "Gerald Ford",
+      "George H. W. Bush"
+     ],
+     "why": "His boat PT-109 was sunk."
+    },
+    {
+     "level": 2,
+     "q": "Which Spanish explorer named the islands in 1568?",
+     "a": "Álvaro de Mendaña",
+     "wrong": [
+      "Ferdinand Magellan",
+      "Abel Tasman",
+      "James Cook"
+     ],
+     "why": "He hoped they held King Solomon's gold."
+    },
+    {
+     "level": 2,
+     "q": "Which Australian-led mission restored order in 2003?",
+     "a": "RAMSI",
+     "wrong": [
+      "INTERFET",
+      "UNTAET",
+      "SEATO"
+     ],
+     "why": "It stayed until 2017."
+    },
+    {
+     "level": 2,
+     "q": "Which ethnic tensions troubled the islands in 1998–2003?",
+     "a": "Conflict between Guadalcanal and Malaita people",
+     "wrong": [
+      "A war with Papua New Guinea",
+      "A Japanese invasion",
+      "A British revolt"
+     ],
+     "why": "It was called 'the Tensions'."
+    },
+    {
+     "level": 2,
+     "q": "Who became Prime Minister in 2024?",
+     "a": "Jeremiah Manele",
+     "wrong": [
+      "Manasseh Sogavare",
+      "Rick Hou",
+      "Gordon Darcy Lilo"
+     ],
+     "why": "He had been foreign minister."
+    },
+    {
+     "level": 2,
+     "q": "Which country did the Solomon Islands switch recognition to from Taiwan in 2019?",
+     "a": "China",
+     "wrong": [
+      "Japan",
+      "South Korea",
+      "Australia"
+     ],
+     "why": "It signed a security pact in 2022."
+    },
+    {
+     "level": 3,
+     "q": "Which bay off Guadalcanal is called 'Ironbottom Sound'?",
+     "a": "Ironbottom Sound",
+     "wrong": [
+      "Shark Bay",
+      "Wreck Bay",
+      "Bloody Bay"
+     ],
+     "why": "Dozens of warships sank there."
+    },
+    {
+     "level": 3,
+     "q": "Which island is the most populous?",
+     "a": "Malaita",
+     "wrong": [
+      "Guadalcanal",
+      "Makira",
+      "Choiseul"
+     ],
+     "why": "Many people moved to Honiara from it."
+    },
+    {
+     "level": 3,
+     "q": "Which Solomon Islands province is home to the Roviana Lagoon?",
+     "a": "Western Province",
+     "wrong": [
+      "Malaita",
+      "Guadalcanal",
+      "Temotu"
+     ],
+     "why": "Munda is its main town."
+    }
+   ]
+  },
+  {
+   "name": "Solomon Islands: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which world's largest raised coral atoll is a UNESCO site?",
+     "a": "East Rennell",
+     "wrong": [
+      "Aldabra",
+      "Kiritimati",
+      "Tarawa"
+     ],
+     "why": "Its lake is the biggest in the Pacific islands."
+    },
+    {
+     "level": 1,
+     "q": "Which shell money is made on Malaita?",
+     "a": "Shell money (red and white)",
+     "wrong": [
+      "Wampum",
+      "Cowrie",
+      "Tabu"
+     ],
+     "why": "It is used for bride price."
+    },
+    {
+     "level": 1,
+     "q": "Which sea surrounds many of the Solomon Islands?",
+     "a": "Solomon Sea and Coral Sea",
+     "wrong": [
+      "Arafura Sea",
+      "Tasman Sea",
+      "Philippine Sea"
+     ],
+     "why": "Diving there is excellent."
+    },
+    {
+     "level": 1,
+     "q": "Which wrecks attract divers off Honiara?",
+     "a": "Second World War shipwrecks",
+     "wrong": [
+      "Pirate ships",
+      "Spanish galleons",
+      "Cruise liners"
+     ],
+     "why": "Some lie close to the beach."
+    },
+    {
+     "level": 1,
+     "q": "Which famous lagoon in the Western Province is huge?",
+     "a": "Marovo Lagoon",
+     "wrong": [
+      "Lau Lagoon",
+      "Blue Lagoon",
+      "Vona Vona Lagoon"
+     ],
+     "why": "It is one of the largest saltwater lagoons."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is very popular in the Solomon Islands?",
+     "a": "Football and futsal",
+     "wrong": [
+      "Ice hockey",
+      "Baseball",
+      "Cricket"
+     ],
+     "why": "Their futsal team is one of Oceania's best."
+    },
+    {
+     "level": 1,
+     "q": "Which panpipe music is a Solomon Islands tradition?",
+     "a": "Bamboo panpipes",
+     "wrong": [
+      "Bagpipes",
+      "Steel drums",
+      "Didgeridoo"
+     ],
+     "why": "Groups play huge bamboo pipes."
+    },
+    {
+     "level": 2,
+     "q": "Which town in the west is a diving centre?",
+     "a": "Gizo",
+     "wrong": [
+      "Auki",
+      "Tulagi",
+      "Kirakira"
+     ],
+     "why": "It was hit by a tsunami in 2007."
+    },
+    {
+     "level": 2,
+     "q": "Which island chain off Malaita are artificial islands?",
+     "a": "Lau Lagoon islets",
+     "wrong": [
+      "Shortland Islands",
+      "Russell Islands",
+      "Reef Islands"
+     ],
+     "why": "They are made of piled coral."
+    },
+    {
+     "level": 2,
+     "q": "Which canoe prow figures guarded war canoes?",
+     "a": "Nguzu nguzu",
+     "wrong": [
+      "Tiki",
+      "Moai",
+      "Tapa"
+     ],
+     "why": "They are carved in the Western Province."
+    },
+    {
+     "level": 2,
+     "q": "What is the main staple food in the Solomon Islands?",
+     "a": "Sweet potato, taro and rice",
+     "wrong": [
+      "Wheat bread",
+      "Maize porridge",
+      "Couscous"
+     ],
+     "why": "Fish is eaten often."
+    },
+    {
+     "level": 2,
+     "q": "Which islands in the far east are Polynesian outliers?",
+     "a": "Tikopia and Anuta",
+     "wrong": [
+      "Malaita and Guadalcanal",
+      "Choiseul and Isabel",
+      "Makira and Ulawa"
+     ],
+     "why": "Their people speak Polynesian languages."
+    },
+    {
+     "level": 3,
+     "q": "Which old capital on Nggela was destroyed in the war?",
+     "a": "Tulagi",
+     "wrong": [
+      "Gizo",
+      "Auki",
+      "Honiara"
+     ],
+     "why": "Honiara replaced it."
+    },
+    {
+     "level": 3,
+     "q": "Which hilltop memorial in Honiara honours US forces?",
+     "a": "Guadalcanal American Memorial (Skyline Ridge)",
+     "wrong": [
+      "Iwo Jima Memorial",
+      "Pearl Harbor Memorial",
+      "Punchbowl Memorial"
+     ],
+     "why": "It was built in 1992."
+    },
+    {
+     "level": 3,
+     "q": "Which Pacific Games did Honiara host in 2023?",
+     "a": "2023 Pacific Games",
+     "wrong": [
+      "2019 Pacific Games",
+      "2015 Pacific Games",
+      "2011 Pacific Games"
+     ],
+     "why": "It was the first time."
+    }
+   ]
+  }
+ ]
+}

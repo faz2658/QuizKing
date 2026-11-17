@@ -1,0 +1,346 @@
+{
+ "category": "Sierra Leone",
+ "country": "SL",
+ "topics": [
+  {
+   "name": "Sierra Leone: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Sierra Leone?",
+     "a": "Freetown",
+     "wrong": [
+      "Bo",
+      "Kenema",
+      "Makeni"
+     ],
+     "why": "It was founded for freed slaves."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Sierra Leone gain independence in 1961?",
+     "a": "United Kingdom",
+     "wrong": [
+      "France",
+      "Portugal",
+      "United States"
+     ],
+     "why": "It became a republic in 1971."
+    },
+    {
+     "level": 1,
+     "q": "Which civil war lasted from 1991 to 2002?",
+     "a": "Sierra Leone Civil War",
+     "wrong": [
+      "Liberian Civil War",
+      "Biafran War",
+      "Angolan Civil War"
+     ],
+     "why": "Diamonds fuelled the fighting."
+    },
+    {
+     "level": 1,
+     "q": "What is Sierra Leone's currency?",
+     "a": "Leone",
+     "wrong": [
+      "Cedi",
+      "Naira",
+      "Dalasi"
+     ],
+     "why": "It was redenominated in 2022."
+    },
+    {
+     "level": 1,
+     "q": "Which gem is Sierra Leone famous for?",
+     "a": "Diamonds",
+     "wrong": [
+      "Emeralds",
+      "Rubies",
+      "Sapphires"
+     ],
+     "why": "The Star of Sierra Leone is one of the largest ever found."
+    },
+    {
+     "level": 1,
+     "q": "Which 2006 film starred Leonardo DiCaprio and was set in Sierra Leone?",
+     "a": "Blood Diamond",
+     "wrong": [
+      "Hotel Rwanda",
+      "The Last King of Scotland",
+      "Tears of the Sun"
+     ],
+     "why": "It is about conflict diamonds."
+    },
+    {
+     "level": 1,
+     "q": "What does the name Sierra Leone mean?",
+     "a": "Lion Mountains",
+     "wrong": [
+      "Green Hills",
+      "Diamond Land",
+      "Sea Coast"
+     ],
+     "why": "A Portuguese explorer named it."
+    },
+    {
+     "level": 2,
+     "q": "Which rebel group led by Foday Sankoh fought in the civil war?",
+     "a": "Revolutionary United Front (RUF)",
+     "wrong": [
+      "NPFL",
+      "UNITA",
+      "Kamajors"
+     ],
+     "why": "It was known for cutting off limbs."
+    },
+    {
+     "level": 2,
+     "q": "Which Liberian President was convicted for helping Sierra Leone's rebels?",
+     "a": "Charles Taylor",
+     "wrong": [
+      "Samuel Doe",
+      "Ellen Johnson Sirleaf",
+      "Prince Johnson"
+     ],
+     "why": "He was sentenced to 50 years."
+    },
+    {
+     "level": 2,
+     "q": "Who has been President of Sierra Leone since 2018?",
+     "a": "Julius Maada Bio",
+     "wrong": [
+      "Ernest Bai Koroma",
+      "Ahmad Tejan Kabbah",
+      "Samura Kamara"
+     ],
+     "why": "He was a military leader in 1996."
+    },
+    {
+     "level": 2,
+     "q": "Which slave revolt leader on the Amistad came from Sierra Leone?",
+     "a": "Sengbe Pieh (Joseph Cinqué)",
+     "wrong": [
+      "Toussaint Louverture",
+      "Nat Turner",
+      "Zumbi"
+     ],
+     "why": "He appears on the banknotes."
+    },
+    {
+     "level": 2,
+     "q": "Which island near Freetown was a big slave-trading fort?",
+     "a": "Bunce Island",
+     "wrong": [
+      "Gorée Island",
+      "Kunta Kinteh Island",
+      "Elmina"
+     ],
+     "why": "Many slaves went to South Carolina."
+    },
+    {
+     "level": 3,
+     "q": "Which 2017 disaster struck Regent near Freetown?",
+     "a": "A mudslide",
+     "wrong": [
+      "An earthquake",
+      "A tsunami",
+      "A volcanic eruption"
+     ],
+     "why": "Over 1,000 people died."
+    },
+    {
+     "level": 3,
+     "q": "Who was Sierra Leone's first Prime Minister?",
+     "a": "Milton Margai",
+     "wrong": [
+      "Siaka Stevens",
+      "Albert Margai",
+      "Ahmad Tejan Kabbah"
+     ],
+     "why": "He was a doctor."
+    },
+    {
+     "level": 3,
+     "q": "Which British-led operation in 2000 rescued soldiers held by the West Side Boys?",
+     "a": "Operation Barras",
+     "wrong": [
+      "Operation Palliser",
+      "Operation Desert Storm",
+      "Operation Urgent Fury"
+     ],
+     "why": "The SAS took part."
+    }
+   ]
+  },
+  {
+   "name": "Sierra Leone: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which giant tree is a symbol of Freetown?",
+     "a": "Cotton Tree",
+     "wrong": [
+      "Baobab",
+      "Sacred Fig",
+      "Cedar"
+     ],
+     "why": "Freed slaves prayed under it; it fell in 2023."
+    },
+    {
+     "level": 1,
+     "q": "Which language is spoken by most Sierra Leoneans?",
+     "a": "Krio",
+     "wrong": [
+      "Papiamento",
+      "Kriol",
+      "Pidgin"
+     ],
+     "why": "It is based on English."
+    },
+    {
+     "level": 1,
+     "q": "Which sanctuary near Freetown cares for rescued chimpanzees?",
+     "a": "Tacugama Chimpanzee Sanctuary",
+     "wrong": [
+      "Gombe Stream",
+      "Tiwai Island",
+      "Ngamba Island"
+     ],
+     "why": "It is in the hills above the city."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is on Sierra Leone's coast?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Red Sea",
+      "Mediterranean Sea"
+     ],
+     "why": "Freetown has a large natural harbour."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is a big export after diamonds?",
+     "a": "Cocoa and coffee",
+     "wrong": [
+      "Tea",
+      "Wheat",
+      "Sugar beet"
+     ],
+     "why": "They grow in the east."
+    },
+    {
+     "level": 1,
+     "q": "Which leaf stew made with cassava leaves is a favourite?",
+     "a": "Cassava leaf stew",
+     "wrong": [
+      "Domoda",
+      "Egusi soup",
+      "Ndolé"
+     ],
+     "why": "It is cooked with palm oil."
+    },
+    {
+     "level": 1,
+     "q": "What is Sierra Leone's national football team called?",
+     "a": "Leone Stars",
+     "wrong": [
+      "Black Stars",
+      "Super Eagles",
+      "Lone Star"
+     ],
+     "why": "They first qualified for AFCON in 1994."
+    },
+    {
+     "level": 2,
+     "q": "Which islands off the Freetown peninsula are named after a fruit?",
+     "a": "Banana Islands",
+     "wrong": [
+      "Mango Islands",
+      "Pineapple Islands",
+      "Coconut Islands"
+     ],
+     "why": "They have old ruins and reefs."
+    },
+    {
+     "level": 2,
+     "q": "Which island near the coast has rare pygmy hippos?",
+     "a": "Tiwai Island",
+     "wrong": [
+      "Banana Islands",
+      "Bunce Island",
+      "Sherbro Island"
+     ],
+     "why": "It is in the Moa River."
+    },
+    {
+     "level": 2,
+     "q": "Which Freetown college was the first Western-style university in West Africa?",
+     "a": "Fourah Bay College",
+     "wrong": [
+      "Achimota School",
+      "University of Ibadan",
+      "Makerere University"
+     ],
+     "why": "It was founded in 1827."
+    },
+    {
+     "level": 2,
+     "q": "Which lantern parade is a December tradition in Freetown?",
+     "a": "Lantern parade",
+     "wrong": [
+      "Junkanoo",
+      "Durbar",
+      "Mardi Gras"
+     ],
+     "why": "Lit floats move through the streets."
+    },
+    {
+     "level": 2,
+     "q": "Which Freetown peninsula beach appeared in a Bounty chocolate advert?",
+     "a": "River No. 2 Beach",
+     "wrong": [
+      "Lumley Beach",
+      "Seven Mile Beach",
+      "Bijilo Beach"
+     ],
+     "why": "It is south of Freetown."
+    },
+    {
+     "level": 3,
+     "q": "What is the highest mountain in Sierra Leone?",
+     "a": "Mount Bintumani",
+     "wrong": [
+      "Mount Nimba",
+      "Mount Cameroon",
+      "Sugar Loaf"
+     ],
+     "why": "It is about 1,945 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which secret society for women is powerful in Sierra Leone?",
+     "a": "Sande (Bondo)",
+     "wrong": [
+      "Poro",
+      "Ogboni",
+      "Egungun"
+     ],
+     "why": "Poro is the men's society."
+    },
+    {
+     "level": 3,
+     "q": "Which Sierra Leonean author wrote 'The Memory of Love'?",
+     "a": "Aminatta Forna",
+     "wrong": [
+      "Ishmael Beah",
+      "Syl Cheney-Coker",
+      "Yulisa Amadu Maddy"
+     ],
+     "why": "She won a Commonwealth prize."
+    }
+   ]
+  }
+ ]
+}

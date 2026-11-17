@@ -1,0 +1,346 @@
+{
+ "category": "Dominica",
+ "country": "DM",
+ "topics": [
+  {
+   "name": "Dominica: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Dominica?",
+     "a": "Roseau",
+     "wrong": [
+      "Portsmouth",
+      "Marigot",
+      "Soufrière"
+     ],
+     "why": "It is on the west coast."
+    },
+    {
+     "level": 1,
+     "q": "What is Dominica's nickname?",
+     "a": "Nature Isle of the Caribbean",
+     "wrong": [
+      "Spice Isle",
+      "Little England",
+      "Isle of Spice"
+     ],
+     "why": "Most of it is rainforest."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Dominica gain independence in 1978?",
+     "a": "United Kingdom",
+     "wrong": [
+      "France",
+      "Spain",
+      "Netherlands"
+     ],
+     "why": "It became a republic at once."
+    },
+    {
+     "level": 1,
+     "q": "Which Indigenous people still live in their own territory on Dominica?",
+     "a": "Kalinago",
+     "wrong": [
+      "Taíno",
+      "Lucayans",
+      "Ciboney"
+     ],
+     "why": "It is the last such territory in the eastern Caribbean."
+    },
+    {
+     "level": 1,
+     "q": "Which 2017 hurricane devastated Dominica?",
+     "a": "Hurricane Maria",
+     "wrong": [
+      "Hurricane Irma",
+      "Hurricane Dorian",
+      "Hurricane Gilbert"
+     ],
+     "why": "It was a Category 5 storm."
+    },
+    {
+     "level": 1,
+     "q": "What currency is used in Dominica?",
+     "a": "East Caribbean dollar",
+     "wrong": [
+      "Dominican peso",
+      "US dollar",
+      "Euro"
+     ],
+     "why": "The Dominican Republic uses the peso."
+    },
+    {
+     "level": 1,
+     "q": "Which bird on Dominica's flag is found nowhere else?",
+     "a": "Sisserou parrot",
+     "wrong": [
+      "Hyacinth macaw",
+      "Scarlet ibis",
+      "Bananaquit"
+     ],
+     "why": "It is the national bird."
+    },
+    {
+     "level": 2,
+     "q": "Who became the first woman Prime Minister in the Caribbean, in Dominica?",
+     "a": "Eugenia Charles",
+     "wrong": [
+      "Mia Mottley",
+      "Portia Simpson-Miller",
+      "Janet Jagan"
+     ],
+     "why": "She served from 1980 to 1995."
+    },
+    {
+     "level": 2,
+     "q": "Who has been Prime Minister of Dominica since 2004?",
+     "a": "Roosevelt Skerrit",
+     "wrong": [
+      "Pierre Charles",
+      "Edison James",
+      "Eugenia Charles"
+     ],
+     "why": "He became one of the world's youngest leaders."
+    },
+    {
+     "level": 2,
+     "q": "Which European power first held Dominica before Britain?",
+     "a": "France",
+     "wrong": [
+      "Spain",
+      "Netherlands",
+      "Portugal"
+     ],
+     "why": "Many villages have French names."
+    },
+    {
+     "level": 2,
+     "q": "Which 1979 hurricane destroyed much of Dominica?",
+     "a": "Hurricane David",
+     "wrong": [
+      "Hurricane Allen",
+      "Hurricane Gilbert",
+      "Hurricane Hugo"
+     ],
+     "why": "It came a year after independence."
+    },
+    {
+     "level": 2,
+     "q": "Which Dominican-born writer wrote 'Wide Sargasso Sea'?",
+     "a": "Jean Rhys",
+     "wrong": [
+      "Phyllis Shand Allfrey",
+      "Jamaica Kincaid",
+      "Andrea Levy"
+     ],
+     "why": "It is a prequel to 'Jane Eyre'."
+    },
+    {
+     "level": 3,
+     "q": "What did Columbus name Dominica after?",
+     "a": "Sunday (Domingo)",
+     "wrong": [
+      "A saint",
+      "His ship",
+      "A Spanish queen"
+     ],
+     "why": "He sighted it on a Sunday in 1493."
+    },
+    {
+     "level": 3,
+     "q": "Which programme lets foreigners buy Dominican citizenship?",
+     "a": "Citizenship by Investment",
+     "wrong": [
+      "Golden Visa",
+      "e-Residency",
+      "Investor Green Card"
+     ],
+     "why": "Money helps rebuild after storms."
+    },
+    {
+     "level": 3,
+     "q": "Which fortress near Portsmouth is in Cabrits National Park?",
+     "a": "Fort Shirley",
+     "wrong": [
+      "Fort George",
+      "Fort Charlotte",
+      "Fort James"
+     ],
+     "why": "It was built by the British."
+    }
+   ]
+  },
+  {
+   "name": "Dominica: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which flooded volcanic vent is one of the world's largest hot lakes?",
+     "a": "Boiling Lake",
+     "wrong": [
+      "Grand Étang",
+      "Crater Lake",
+      "Lake Toba"
+     ],
+     "why": "It bubbles at about 90 °C."
+    },
+    {
+     "level": 1,
+     "q": "Which national park in Dominica is a UNESCO site?",
+     "a": "Morne Trois Pitons National Park",
+     "wrong": [
+      "Cabrits National Park",
+      "Pitons Management Area",
+      "Grand Étang Forest"
+     ],
+     "why": "It has the Boiling Lake."
+    },
+    {
+     "level": 1,
+     "q": "Which sea creatures can be seen all year off Dominica?",
+     "a": "Sperm whales",
+     "wrong": [
+      "Humpback whales",
+      "Orcas",
+      "Belugas"
+     ],
+     "why": "A resident group lives offshore."
+    },
+    {
+     "level": 1,
+     "q": "Which dive site has bubbles rising from the seabed?",
+     "a": "Champagne Reef",
+     "wrong": [
+      "Blue Hole",
+      "Coral Gardens",
+      "Bubble Bay"
+     ],
+     "why": "Volcanic gas makes the bubbles."
+    },
+    {
+     "level": 1,
+     "q": "Which waterfalls are a pair named 'mother and father'?",
+     "a": "Trafalgar Falls",
+     "wrong": [
+      "Emerald Pool",
+      "Victoria Falls",
+      "Middleham Falls"
+     ],
+     "why": "They are near Roseau."
+    },
+    {
+     "level": 1,
+     "q": "How many rivers is Dominica said to have?",
+     "a": "365",
+     "wrong": [
+      "12",
+      "52",
+      "1,000"
+     ],
+     "why": "It is very rainy."
+    },
+    {
+     "level": 1,
+     "q": "Which music festival in Roseau celebrates Creole music?",
+     "a": "World Creole Music Festival",
+     "wrong": [
+      "Reggae Sumfest",
+      "Crop Over",
+      "St Lucia Jazz"
+     ],
+     "why": "It is held in October."
+    },
+    {
+     "level": 2,
+     "q": "Which long-distance trail crosses all of Dominica?",
+     "a": "Waitukubuli National Trail",
+     "wrong": [
+      "Appalachian Trail",
+      "Inca Trail",
+      "Caribbean Path"
+     ],
+     "why": "It is about 185 km long."
+    },
+    {
+     "level": 2,
+     "q": "Which Dominican music style was created by Gordon Henderson?",
+     "a": "Cadence-lypso",
+     "wrong": [
+      "Bouyon",
+      "Zouk",
+      "Reggaeton"
+     ],
+     "why": "It mixes cadence and calypso."
+    },
+    {
+     "level": 2,
+     "q": "Which pirate films used Dominica as a location?",
+     "a": "Pirates of the Caribbean",
+     "wrong": [
+      "Treasure Island",
+      "Hook",
+      "Cutthroat Island"
+     ],
+     "why": "The second and third films were shot there."
+    },
+    {
+     "level": 2,
+     "q": "Which small pool with a waterfall is a famous stop?",
+     "a": "Emerald Pool",
+     "wrong": [
+      "Titou Gorge",
+      "Blue Lagoon",
+      "Jacko Falls"
+     ],
+     "why": "It is in the rainforest."
+    },
+    {
+     "level": 2,
+     "q": "What is Dominica's highest mountain?",
+     "a": "Morne Diablotin",
+     "wrong": [
+      "Morne Trois Pitons",
+      "Mount Scenery",
+      "Pitons"
+     ],
+     "why": "It is about 1,450 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which gorge do swimmers float through to a waterfall?",
+     "a": "Titou Gorge",
+     "wrong": [
+      "Emerald Gorge",
+      "Sari Sari Gorge",
+      "Layou Gorge"
+     ],
+     "why": "Its name means 'little throat'."
+    },
+    {
+     "level": 3,
+     "q": "Which Dominican athlete won the country's first Olympic gold, in 2024?",
+     "a": "Thea LaFond",
+     "wrong": [
+      "Jacky Ilmay",
+      "Dennick Luke",
+      "Yordanys Durañona"
+     ],
+     "why": "She won the triple jump in Paris."
+    },
+    {
+     "level": 3,
+     "q": "Which soup replaced 'mountain chicken' as Dominica's national dish?",
+     "a": "Callaloo soup",
+     "wrong": [
+      "Pepperpot",
+      "Oil down",
+      "Fish broth"
+     ],
+     "why": "Mountain chicken frogs became endangered."
+    }
+   ]
+  }
+ ]
+}

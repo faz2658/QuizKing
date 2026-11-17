@@ -1,0 +1,346 @@
+{
+ "category": "Senegal",
+ "country": "SN",
+ "topics": [
+  {
+   "name": "Senegal: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Senegal?",
+     "a": "Dakar",
+     "wrong": [
+      "Saint-Louis",
+      "Thiès",
+      "Touba"
+     ],
+     "why": "It is the westernmost city of mainland Africa."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Senegal gain independence in 1960?",
+     "a": "France",
+     "wrong": [
+      "United Kingdom",
+      "Portugal",
+      "Belgium"
+     ],
+     "why": "It briefly joined Mali in a federation."
+    },
+    {
+     "level": 1,
+     "q": "Who was Senegal's first President and a famous poet?",
+     "a": "Léopold Sédar Senghor",
+     "wrong": [
+      "Abdou Diouf",
+      "Abdoulaye Wade",
+      "Macky Sall"
+     ],
+     "why": "He helped found the Négritude movement."
+    },
+    {
+     "level": 1,
+     "q": "Which island off Dakar was a centre of the slave trade?",
+     "a": "Gorée Island",
+     "wrong": [
+      "Saint-Louis Island",
+      "Bijagós",
+      "Banana Island"
+     ],
+     "why": "Its 'Door of No Return' is famous."
+    },
+    {
+     "level": 1,
+     "q": "What is Senegal's currency?",
+     "a": "West African CFA franc",
+     "wrong": [
+      "Dalasi",
+      "Naira",
+      "Cedi"
+     ],
+     "why": "It is shared by eight countries."
+    },
+    {
+     "level": 1,
+     "q": "Which country is almost surrounded by Senegal?",
+     "a": "The Gambia",
+     "wrong": [
+      "Guinea-Bissau",
+      "Mali",
+      "Mauritania"
+     ],
+     "why": "It follows the Gambia River."
+    },
+    {
+     "level": 1,
+     "q": "Who became President of Senegal in 2024?",
+     "a": "Bassirou Diomaye Faye",
+     "wrong": [
+      "Macky Sall",
+      "Ousmane Sonko",
+      "Abdoulaye Wade"
+     ],
+     "why": "He was the youngest elected President in Africa."
+    },
+    {
+     "level": 2,
+     "q": "Which Senegalese singer is famous for 'Seven Seconds' with Neneh Cherry?",
+     "a": "Youssou N'Dour",
+     "wrong": [
+      "Baaba Maal",
+      "Ismaël Lô",
+      "Akon"
+     ],
+     "why": "He was also Minister of Culture."
+    },
+    {
+     "level": 2,
+     "q": "Which old capital is on an island in the Senegal River?",
+     "a": "Saint-Louis",
+     "wrong": [
+      "Rufisque",
+      "Ziguinchor",
+      "Kaolack"
+     ],
+     "why": "It was capital of French West Africa."
+    },
+    {
+     "level": 2,
+     "q": "Which Sufi brotherhood is centred in the holy city of Touba?",
+     "a": "Mouride brotherhood",
+     "wrong": [
+      "Tijaniyya",
+      "Qadiriyya",
+      "Layene"
+     ],
+     "why": "Its founder was Cheikh Amadou Bamba."
+    },
+    {
+     "level": 2,
+     "q": "Which riflemen from West Africa fought for France in the World Wars?",
+     "a": "Tirailleurs Sénégalais",
+     "wrong": [
+      "Zouaves",
+      "Askaris",
+      "Spahis"
+     ],
+     "why": "The 1944 Thiaroye massacre involved them."
+    },
+    {
+     "level": 2,
+     "q": "Which federation did Senegal briefly form in 1959–60?",
+     "a": "Mali Federation",
+     "wrong": [
+      "Senegambia",
+      "French Union",
+      "West African Union"
+     ],
+     "why": "It split after two months."
+    },
+    {
+     "level": 3,
+     "q": "Which confederation did Senegal form with The Gambia from 1982 to 1989?",
+     "a": "Senegambia",
+     "wrong": [
+      "Mali Federation",
+      "Gambia Union",
+      "West Atlantic League"
+     ],
+     "why": "It was dissolved in 1989."
+    },
+    {
+     "level": 3,
+     "q": "Which Senegalese film director is called the father of African cinema?",
+     "a": "Ousmane Sembène",
+     "wrong": [
+      "Djibril Diop Mambéty",
+      "Souleymane Cissé",
+      "Abderrahmane Sissako"
+     ],
+     "why": "He made 'Black Girl' in 1966."
+    },
+    {
+     "level": 3,
+     "q": "Which historian argued that ancient Egyptians were Black Africans?",
+     "a": "Cheikh Anta Diop",
+     "wrong": [
+      "Léopold Senghor",
+      "Amadou Hampâté Bâ",
+      "Ali Mazrui"
+     ],
+     "why": "Dakar's university is named after him."
+    }
+   ]
+  },
+  {
+   "name": "Senegal: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which pink lake near Dakar gets its colour from algae?",
+     "a": "Lake Retba (Lac Rose)",
+     "wrong": [
+      "Lake Natron",
+      "Lake Hillier",
+      "Lake Assal"
+     ],
+     "why": "Salt collectors work in it."
+    },
+    {
+     "level": 1,
+     "q": "Which spicy fish and rice dish is Senegal's national dish?",
+     "a": "Thieboudienne",
+     "wrong": [
+      "Jollof rice",
+      "Couscous",
+      "Mafé"
+     ],
+     "why": "It is said to be the origin of jollof."
+    },
+    {
+     "level": 1,
+     "q": "Which famous rally used to end in Dakar?",
+     "a": "Paris–Dakar Rally",
+     "wrong": [
+      "Monte Carlo Rally",
+      "Rally Safari",
+      "Tour de France"
+     ],
+     "why": "It moved to South America in 2009."
+    },
+    {
+     "level": 1,
+     "q": "Which giant bronze statue overlooks Dakar?",
+     "a": "African Renaissance Monument",
+     "wrong": [
+      "Statue of Liberty",
+      "Motherland Calls",
+      "Christ the Redeemer"
+     ],
+     "why": "It is taller than the Statue of Liberty."
+    },
+    {
+     "level": 1,
+     "q": "Which traditional wrestling is Senegal's most popular sport?",
+     "a": "Laamb",
+     "wrong": [
+      "Sumo",
+      "Kabaddi",
+      "Judo"
+     ],
+     "why": "Matches fill stadiums."
+    },
+    {
+     "level": 1,
+     "q": "What is the main language spoken in Senegal besides French?",
+     "a": "Wolof",
+     "wrong": [
+      "Hausa",
+      "Yoruba",
+      "Swahili"
+     ],
+     "why": "Most people understand it."
+    },
+    {
+     "level": 1,
+     "q": "Which country did Senegal beat in its first World Cup game in 2002?",
+     "a": "France",
+     "wrong": [
+      "Brazil",
+      "Germany",
+      "Argentina"
+     ],
+     "why": "France were the defending champions."
+    },
+    {
+     "level": 2,
+     "q": "Which Senegalese striker played for Liverpool and Bayern Munich?",
+     "a": "Sadio Mané",
+     "wrong": [
+      "El Hadji Diouf",
+      "Kalidou Koulibaly",
+      "Idrissa Gueye"
+     ],
+     "why": "He won the Champions League with Liverpool."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Senegal win the Africa Cup of Nations?",
+     "a": "2022",
+     "wrong": [
+      "2002",
+      "2019",
+      "2012"
+     ],
+     "why": "They beat Egypt on penalties."
+    },
+    {
+     "level": 2,
+     "q": "Which national park is a famous bird sanctuary on the Senegal River?",
+     "a": "Djoudj National Bird Sanctuary",
+     "wrong": [
+      "Niokolo-Koba",
+      "Saloum Delta",
+      "Langue de Barbarie"
+     ],
+     "why": "Millions of birds spend winter there."
+    },
+    {
+     "level": 2,
+     "q": "Which hibiscus drink is a Senegalese favourite?",
+     "a": "Bissap",
+     "wrong": [
+      "Bouye",
+      "Attaya",
+      "Café Touba"
+     ],
+     "why": "It is deep red."
+    },
+    {
+     "level": 2,
+     "q": "Which delta of mangroves and islands is a UNESCO site?",
+     "a": "Saloum Delta",
+     "wrong": [
+      "Casamance Delta",
+      "Niger Delta",
+      "Okavango Delta"
+     ],
+     "why": "It has huge shell mounds."
+    },
+    {
+     "level": 3,
+     "q": "Which southern region is known for its forests and Diola people?",
+     "a": "Casamance",
+     "wrong": [
+      "Fouta",
+      "Sine-Saloum",
+      "Kédougou"
+     ],
+     "why": "It had a long separatist conflict."
+    },
+    {
+     "level": 3,
+     "q": "Which Senegalese defender captained Napoli and played for Chelsea?",
+     "a": "Kalidou Koulibaly",
+     "wrong": [
+      "Sadio Mané",
+      "El Hadji Diouf",
+      "Idrissa Gueye"
+     ],
+     "why": "He was born in France."
+    },
+    {
+     "level": 3,
+     "q": "Which chicken dish with lemon and onions comes from Casamance?",
+     "a": "Poulet yassa",
+     "wrong": [
+      "Mafé",
+      "Thiéré",
+      "Ndambé"
+     ],
+     "why": "It is marinated for hours."
+    }
+   ]
+  }
+ ]
+}

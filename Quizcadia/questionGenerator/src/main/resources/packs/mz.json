@@ -1,0 +1,346 @@
+{
+ "category": "Mozambique",
+ "country": "MZ",
+ "topics": [
+  {
+   "name": "Mozambique: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Mozambique?",
+     "a": "Maputo",
+     "wrong": [
+      "Beira",
+      "Nampula",
+      "Pemba"
+     ],
+     "why": "It was called Lourenço Marques."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Mozambique gain independence in 1975?",
+     "a": "Portugal",
+     "wrong": [
+      "United Kingdom",
+      "France",
+      "Germany"
+     ],
+     "why": "FRELIMO led the fight."
+    },
+    {
+     "level": 1,
+     "q": "What is Mozambique's currency?",
+     "a": "Metical",
+     "wrong": [
+      "Kwacha",
+      "Rand",
+      "Escudo"
+     ],
+     "why": "Its code is MZN."
+    },
+    {
+     "level": 1,
+     "q": "Which weapon appears on Mozambique's flag?",
+     "a": "AK-47 rifle",
+     "wrong": [
+      "Spear",
+      "Sword",
+      "Bow and arrow"
+     ],
+     "why": "It stands for defence and vigilance."
+    },
+    {
+     "level": 1,
+     "q": "Who was Mozambique's first President?",
+     "a": "Samora Machel",
+     "wrong": [
+      "Joaquim Chissano",
+      "Armando Guebuza",
+      "Filipe Nyusi"
+     ],
+     "why": "He died in a plane crash in 1986."
+    },
+    {
+     "level": 1,
+     "q": "Which civil war lasted from 1977 to 1992?",
+     "a": "Mozambican Civil War",
+     "wrong": [
+      "Angolan Civil War",
+      "Rhodesian Bush War",
+      "Congo War"
+     ],
+     "why": "FRELIMO fought RENAMO."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is on Mozambique's long coast?",
+     "a": "Indian Ocean",
+     "wrong": [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Red Sea"
+     ],
+     "why": "It is about 2,500 km long."
+    },
+    {
+     "level": 2,
+     "q": "Which island was the colonial capital and is a UNESCO site?",
+     "a": "Island of Mozambique",
+     "wrong": [
+      "Inhaca Island",
+      "Ibo Island",
+      "Bazaruto"
+     ],
+     "why": "It gave the country its name."
+    },
+    {
+     "level": 2,
+     "q": "Who became President of Mozambique in 2025?",
+     "a": "Daniel Chapo",
+     "wrong": [
+      "Filipe Nyusi",
+      "Venâncio Mondlane",
+      "Armando Guebuza"
+     ],
+     "why": "His election caused protests."
+    },
+    {
+     "level": 2,
+     "q": "Which widow of Samora Machel later married Nelson Mandela?",
+     "a": "Graça Machel",
+     "wrong": [
+      "Winnie Mandela",
+      "Josina Machel",
+      "Luísa Diogo"
+     ],
+     "why": "She was Mozambique's first education minister."
+    },
+    {
+     "level": 2,
+     "q": "Which province has faced an Islamist insurgency since 2017?",
+     "a": "Cabo Delgado",
+     "wrong": [
+      "Niassa",
+      "Sofala",
+      "Tete"
+     ],
+     "why": "It has big gas reserves."
+    },
+    {
+     "level": 2,
+     "q": "Who founded FRELIMO in 1962?",
+     "a": "Eduardo Mondlane",
+     "wrong": [
+      "Samora Machel",
+      "Joaquim Chissano",
+      "Afonso Dhlakama"
+     ],
+     "why": "He was killed by a parcel bomb in 1969."
+    },
+    {
+     "level": 3,
+     "q": "Which 2019 cyclone devastated Beira?",
+     "a": "Cyclone Idai",
+     "wrong": [
+      "Cyclone Freddy",
+      "Cyclone Kenneth",
+      "Cyclone Eline"
+     ],
+     "why": "It killed over 1,000 people."
+    },
+    {
+     "level": 3,
+     "q": "Which Portuguese explorer landed on Mozambique Island in 1498?",
+     "a": "Vasco da Gama",
+     "wrong": [
+      "Bartolomeu Dias",
+      "Pedro Cabral",
+      "Ferdinand Magellan"
+     ],
+     "why": "He was on his way to India."
+    },
+    {
+     "level": 3,
+     "q": "Which leader of RENAMO died in 2018?",
+     "a": "Afonso Dhlakama",
+     "wrong": [
+      "Ossufo Momade",
+      "André Matsangaissa",
+      "Jonas Savimbi"
+     ],
+     "why": "He led it for nearly 40 years."
+    }
+   ]
+  },
+  {
+   "name": "Mozambique: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which island chain off Vilanculos is a marine park?",
+     "a": "Bazaruto Archipelago",
+     "wrong": [
+      "Quirimbas",
+      "Comoros",
+      "Seychelles"
+     ],
+     "why": "Dugongs live there."
+    },
+    {
+     "level": 1,
+     "q": "Which spicy chilli sauce is famous in Mozambique?",
+     "a": "Piri-piri",
+     "wrong": [
+      "Harissa",
+      "Sriracha",
+      "Tabasco"
+     ],
+     "why": "It is used on chicken and prawns."
+    },
+    {
+     "level": 1,
+     "q": "Which national park was rebuilt after the civil war?",
+     "a": "Gorongosa National Park",
+     "wrong": [
+      "Kruger",
+      "Limpopo",
+      "Niassa Reserve"
+     ],
+     "why": "It is a famous conservation success."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of Mozambique?",
+     "a": "Portuguese",
+     "wrong": [
+      "English",
+      "Swahili",
+      "French"
+     ],
+     "why": "Many local languages are spoken."
+    },
+    {
+     "level": 1,
+     "q": "Which large lake on the western border is shared with Malawi?",
+     "a": "Lake Malawi (Lake Niassa)",
+     "wrong": [
+      "Lake Victoria",
+      "Lake Kariba",
+      "Lake Tanganyika"
+     ],
+     "why": "It is called Niassa in Mozambique."
+    },
+    {
+     "level": 1,
+     "q": "Which dam on the Zambezi is one of Africa's largest?",
+     "a": "Cahora Bassa",
+     "wrong": [
+      "Kariba",
+      "Aswan",
+      "Inga"
+     ],
+     "why": "It supplies power to South Africa."
+    },
+    {
+     "level": 1,
+     "q": "Which seafood is Mozambique famous for?",
+     "a": "Prawns",
+     "wrong": [
+      "Lobster",
+      "Oysters",
+      "Mussels"
+     ],
+     "why": "They are grilled with piri-piri."
+    },
+    {
+     "level": 2,
+     "q": "Which Mozambican runner won Olympic 800 m gold in 2000?",
+     "a": "Maria Mutola",
+     "wrong": [
+      "Hasna Benhassi",
+      "Pamela Jelimo",
+      "Tegla Loroupe"
+     ],
+     "why": "It was the country's first gold."
+    },
+    {
+     "level": 2,
+     "q": "Which Mozambican-born footballer starred for Portugal in 1966?",
+     "a": "Eusébio",
+     "wrong": [
+      "Mário Coluna",
+      "Abel Xavier",
+      "Hilário"
+     ],
+     "why": "He was called 'the Black Panther'."
+    },
+    {
+     "level": 2,
+     "q": "Which xylophone music of the Chopi people is on UNESCO's list?",
+     "a": "Timbila",
+     "wrong": [
+      "Mbira",
+      "Kalimba",
+      "Kora"
+     ],
+     "why": "It is played by orchestras."
+    },
+    {
+     "level": 2,
+     "q": "Which archipelago in the north has old Portuguese forts on Ibo Island?",
+     "a": "Quirimbas Archipelago",
+     "wrong": [
+      "Bazaruto",
+      "Comoros",
+      "Zanzibar"
+     ],
+     "why": "It is a national park."
+    },
+    {
+     "level": 2,
+     "q": "Which wooden sculptures are made by the Makonde people?",
+     "a": "Makonde carvings",
+     "wrong": [
+      "Shona sculptures",
+      "Benin bronzes",
+      "Tingatinga"
+     ],
+     "why": "They are carved from ebony."
+    },
+    {
+     "level": 3,
+     "q": "Which Mozambican writer wrote 'Sleepwalking Land'?",
+     "a": "Mia Couto",
+     "wrong": [
+      "José Craveirinha",
+      "Paulina Chiziane",
+      "Ungulani Ba Ka Khosa"
+     ],
+     "why": "He won the Camões Prize in 2013."
+    },
+    {
+     "level": 3,
+     "q": "Which railway station in Maputo is often listed among the world's most beautiful?",
+     "a": "Maputo Central Station",
+     "wrong": [
+      "Luanda Station",
+      "Cape Town Station",
+      "Nairobi Station"
+     ],
+     "why": "It was finished in 1916."
+    },
+    {
+     "level": 3,
+     "q": "Which painter from Maputo is a national icon?",
+     "a": "Malangatana Ngwenya",
+     "wrong": [
+      "Bertina Lopes",
+      "Naguib",
+      "Chichorro"
+     ],
+     "why": "His paintings are full of figures."
+    }
+   ]
+  }
+ ]
+}

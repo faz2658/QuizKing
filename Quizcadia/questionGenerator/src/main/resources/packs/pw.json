@@ -1,0 +1,346 @@
+{
+ "category": "Palau",
+ "country": "PW",
+ "topics": [
+  {
+   "name": "Palau: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Palau?",
+     "a": "Ngerulmud",
+     "wrong": [
+      "Koror",
+      "Melekeok",
+      "Airai"
+     ],
+     "why": "It replaced Koror in 2006."
+    },
+    {
+     "level": 1,
+     "q": "Which currency does Palau use?",
+     "a": "US dollar",
+     "wrong": [
+      "Australian dollar",
+      "Yen",
+      "Palauan dollar"
+     ],
+     "why": "It has a Compact of Free Association with the US."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Palau become independent?",
+     "a": "1994",
+     "wrong": [
+      "1986",
+      "1978",
+      "2000"
+     ],
+     "why": "It was the last UN trust territory."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is Palau in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It is east of the Philippines."
+    },
+    {
+     "level": 1,
+     "q": "Which island was the site of a deadly 1944 battle?",
+     "a": "Peleliu",
+     "wrong": [
+      "Iwo Jima",
+      "Saipan",
+      "Guam"
+     ],
+     "why": "US Marines fought the Japanese there."
+    },
+    {
+     "level": 1,
+     "q": "Which country ruled Palau from 1914 to 1944?",
+     "a": "Japan",
+     "wrong": [
+      "Germany",
+      "Spain",
+      "United States"
+     ],
+     "why": "Koror was a Japanese capital for the region."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of Palau since 2021?",
+     "a": "Surangel Whipps Jr.",
+     "wrong": [
+      "Tommy Remengesau",
+      "Johnson Toribiong",
+      "Kuniwo Nakamura"
+     ],
+     "why": "He was re-elected in 2024."
+    },
+    {
+     "level": 2,
+     "q": "Who was the first President of Palau?",
+     "a": "Haruo Remeliik",
+     "wrong": [
+      "Kuniwo Nakamura",
+      "Tommy Remengesau",
+      "Lazarus Salii"
+     ],
+     "why": "He was assassinated in 1985."
+    },
+    {
+     "level": 2,
+     "q": "Which pledge must visitors sign in their passport?",
+     "a": "The Palau Pledge",
+     "wrong": [
+      "The Ocean Oath",
+      "The Reef Promise",
+      "The Island Vow"
+     ],
+     "why": "It promises to protect nature."
+    },
+    {
+     "level": 2,
+     "q": "Which country does Palau recognise instead of China?",
+     "a": "Taiwan",
+     "wrong": [
+      "Japan",
+      "South Korea",
+      "Philippines"
+     ],
+     "why": "It is one of Taiwan's few allies."
+    },
+    {
+     "level": 2,
+     "q": "Which marine sanctuary covers most of Palau's waters?",
+     "a": "Palau National Marine Sanctuary",
+     "wrong": [
+      "Phoenix Islands Reserve",
+      "Great Barrier Marine Park",
+      "Papahānaumokuākea"
+     ],
+     "why": "It bans most commercial fishing."
+    },
+    {
+     "level": 2,
+     "q": "What was Palau the first country to ban in 2020?",
+     "a": "Reef-toxic sunscreen",
+     "wrong": [
+      "Plastic bags",
+      "Cars",
+      "Smoking"
+     ],
+     "why": "It protects coral."
+    },
+    {
+     "level": 3,
+     "q": "Which country ruled Palau before Germany?",
+     "a": "Spain",
+     "wrong": [
+      "Portugal",
+      "Netherlands",
+      "United Kingdom"
+     ],
+     "why": "Germany bought it in 1899."
+    },
+    {
+     "level": 3,
+     "q": "Which shark sanctuary did Palau create in 2009?",
+     "a": "The world's first national shark sanctuary",
+     "wrong": [
+      "A whale sanctuary",
+      "A turtle farm",
+      "A coral reserve"
+     ],
+     "why": "It bans shark fishing."
+    },
+    {
+     "level": 3,
+     "q": "Which Palauan traditional money is made from glass and ceramic?",
+     "a": "Udoud (bead money)",
+     "wrong": [
+      "Rai stones",
+      "Tabu",
+      "Wampum"
+     ],
+     "why": "It is still used at ceremonies."
+    }
+   ]
+  },
+  {
+   "name": "Palau: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which lake has millions of stingless jellyfish?",
+     "a": "Jellyfish Lake",
+     "wrong": [
+      "Blue Lake",
+      "Crater Lake",
+      "Lake Toba"
+     ],
+     "why": "It is on Eil Malk island."
+    },
+    {
+     "level": 1,
+     "q": "Which green mushroom-shaped islands are a UNESCO site?",
+     "a": "Rock Islands Southern Lagoon",
+     "wrong": [
+      "Ha Long Bay",
+      "Phang Nga Bay",
+      "El Nido"
+     ],
+     "why": "There are over 400 of them."
+    },
+    {
+     "level": 1,
+     "q": "Which dive site has a famous wall and sharks?",
+     "a": "Blue Corner",
+     "wrong": [
+      "Great Blue Hole",
+      "Barracuda Point",
+      "Shark Bay"
+     ],
+     "why": "It is one of the world's best dives."
+    },
+    {
+     "level": 1,
+     "q": "Which traditional meeting houses have steep painted roofs?",
+     "a": "Bai",
+     "wrong": [
+      "Fale",
+      "Maneaba",
+      "Marae"
+     ],
+     "why": "Only men could enter some."
+    },
+    {
+     "level": 1,
+     "q": "What is the main language of Palau?",
+     "a": "Palauan",
+     "wrong": [
+      "Japanese",
+      "Tagalog",
+      "Chamorro"
+     ],
+     "why": "English is also official."
+    },
+    {
+     "level": 1,
+     "q": "Which unusual soup is a famous Palau dish?",
+     "a": "Fruit bat soup",
+     "wrong": [
+      "Shark fin soup",
+      "Turtle soup",
+      "Lobster bisque"
+     ],
+     "why": "It is served whole."
+    },
+    {
+     "level": 1,
+     "q": "Which bridge links Koror and Babeldaob?",
+     "a": "Japan–Palau Friendship Bridge",
+     "wrong": [
+      "Golden Gate",
+      "Sydney Harbour Bridge",
+      "Tower Bridge"
+     ],
+     "why": "It replaced a bridge that collapsed in 1996."
+    },
+    {
+     "level": 2,
+     "q": "What is the largest island of Palau?",
+     "a": "Babeldaob",
+     "wrong": [
+      "Koror",
+      "Peleliu",
+      "Angaur"
+     ],
+     "why": "The new capital is there."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient stone faces stand at Badrulchau?",
+     "a": "Stone monoliths",
+     "wrong": [
+      "Moai",
+      "Olmec heads",
+      "Sphinxes"
+     ],
+     "why": "They are about 2,000 years old."
+    },
+    {
+     "level": 2,
+     "q": "Which white-sand sandbar islands are popular day trips?",
+     "a": "Long Beach (Ngemelis sandbar)",
+     "wrong": [
+      "Whitehaven Beach",
+      "Seven Mile Beach",
+      "Champagne Beach"
+     ],
+     "why": "It appears at low tide."
+    },
+    {
+     "level": 2,
+     "q": "Which milky lagoon in the Rock Islands is a spa spot?",
+     "a": "Milky Way",
+     "wrong": [
+      "Blue Lagoon",
+      "Mud Pots",
+      "Dead Sea"
+     ],
+     "why": "Its white mud is said to be good for skin."
+    },
+    {
+     "level": 2,
+     "q": "Which reality show filmed a season in Palau?",
+     "a": "Survivor",
+     "wrong": [
+      "Big Brother",
+      "Love Island",
+      "The Amazing Race"
+     ],
+     "why": "It filmed there in 2005."
+    },
+    {
+     "level": 3,
+     "q": "Which giant clams are farmed in Palau?",
+     "a": "Tridacna giant clams",
+     "wrong": [
+      "Oysters",
+      "Mussels",
+      "Scallops"
+     ],
+     "why": "They can weigh over 200 kg."
+    },
+    {
+     "level": 3,
+     "q": "Which state on Babeldaob holds the capitol building?",
+     "a": "Melekeok",
+     "wrong": [
+      "Airai",
+      "Ngaraard",
+      "Koror"
+     ],
+     "why": "It looks like the US Capitol."
+    },
+    {
+     "level": 3,
+     "q": "Which island in the south had phosphate mines?",
+     "a": "Angaur",
+     "wrong": [
+      "Peleliu",
+      "Koror",
+      "Kayangel"
+     ],
+     "why": "It also has wild monkeys."
+    }
+   ]
+  }
+ ]
+}

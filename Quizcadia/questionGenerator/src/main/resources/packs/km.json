@@ -1,0 +1,346 @@
+{
+ "category": "Comoros",
+ "country": "KM",
+ "topics": [
+  {
+   "name": "Comoros: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Comoros?",
+     "a": "Moroni",
+     "wrong": [
+      "Mutsamudu",
+      "Fomboni",
+      "Mamoudzou"
+     ],
+     "why": "It is on Grande Comore."
+    },
+    {
+     "level": 1,
+     "q": "From which country did the Comoros declare independence in 1975?",
+     "a": "France",
+     "wrong": [
+      "Portugal",
+      "United Kingdom",
+      "Netherlands"
+     ],
+     "why": "Mayotte stayed French."
+    },
+    {
+     "level": 1,
+     "q": "Which island voted to remain French?",
+     "a": "Mayotte",
+     "wrong": [
+      "Anjouan",
+      "Mohéli",
+      "Grande Comore"
+     ],
+     "why": "The Comoros still claims it."
+    },
+    {
+     "level": 1,
+     "q": "What is the Comoros's currency?",
+     "a": "Comorian franc",
+     "wrong": [
+      "CFA franc",
+      "Euro",
+      "Ariary"
+     ],
+     "why": "It is pegged to the euro."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean are the Comoros in?",
+     "a": "Indian Ocean",
+     "wrong": [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Red Sea"
+     ],
+     "why": "They lie between Mozambique and Madagascar."
+    },
+    {
+     "level": 1,
+     "q": "What is the main religion in the Comoros?",
+     "a": "Islam",
+     "wrong": [
+      "Christianity",
+      "Hinduism",
+      "Buddhism"
+     ],
+     "why": "It is almost entirely Sunni Muslim."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of the Comoros for most of the time since 1999?",
+     "a": "Azali Assoumani",
+     "wrong": [
+      "Ahmed Abdallah Sambi",
+      "Ikililou Dhoinine",
+      "Said Mohamed Djohar"
+     ],
+     "why": "He first took power in a coup."
+    },
+    {
+     "level": 2,
+     "q": "Which French mercenary took part in several coups in the Comoros?",
+     "a": "Bob Denard",
+     "wrong": [
+      "Mike Hoare",
+      "Jean Schramme",
+      "Rolf Steiner"
+     ],
+     "why": "He was finally removed in 1995."
+    },
+    {
+     "level": 2,
+     "q": "Which two islands tried to break away in 1997?",
+     "a": "Anjouan and Mohéli",
+     "wrong": [
+      "Grande Comore and Mayotte",
+      "Mohéli and Mayotte",
+      "Anjouan and Grande Comore"
+     ],
+     "why": "It led to a new federal system."
+    },
+    {
+     "level": 2,
+     "q": "Which nickname do the Comoros have?",
+     "a": "The Perfume Islands",
+     "wrong": [
+      "The Spice Islands",
+      "The Pearl Islands",
+      "The Coral Isles"
+     ],
+     "why": "Ylang-ylang is grown there."
+    },
+    {
+     "level": 2,
+     "q": "How many coups or attempted coups has the Comoros had since 1975?",
+     "a": "Around 20",
+     "wrong": [
+      "Two",
+      "Five",
+      "None"
+     ],
+     "why": "It is one of the most coup-prone countries."
+    },
+    {
+     "level": 2,
+     "q": "Which three main islands make up the Comoros?",
+     "a": "Grande Comore, Anjouan and Mohéli",
+     "wrong": [
+      "Mayotte, Anjouan and Mohéli",
+      "Grande Comore, Mayotte and Réunion",
+      "Mohéli, Rodrigues and Anjouan"
+     ],
+     "why": "Their local names are Ngazidja, Ndzuani and Mwali."
+    },
+    {
+     "level": 3,
+     "q": "Who was the first President of the Comoros?",
+     "a": "Ahmed Abdallah",
+     "wrong": [
+      "Ali Soilih",
+      "Said Mohamed Djohar",
+      "Azali Assoumani"
+     ],
+     "why": "He was killed in 1989."
+    },
+    {
+     "level": 3,
+     "q": "Which regional union did the Comoros chair in 2023?",
+     "a": "African Union",
+     "wrong": [
+      "Arab League",
+      "ECOWAS",
+      "SADC"
+     ],
+     "why": "Azali Assoumani held the post."
+    },
+    {
+     "level": 3,
+     "q": "Which leader brought radical reforms in 1975–78?",
+     "a": "Ali Soilih",
+     "wrong": [
+      "Ahmed Abdallah",
+      "Bob Denard",
+      "Said Ibrahim"
+     ],
+     "why": "He was overthrown and killed."
+    }
+   ]
+  },
+  {
+   "name": "Comoros: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which active volcano is on Grande Comore?",
+     "a": "Mount Karthala",
+     "wrong": [
+      "Piton de la Fournaise",
+      "Mount Kilimanjaro",
+      "Nyiragongo"
+     ],
+     "why": "It is one of the world's largest active volcanoes."
+    },
+    {
+     "level": 1,
+     "q": "Which flower oil used in perfume is a major export?",
+     "a": "Ylang-ylang",
+     "wrong": [
+      "Rose",
+      "Jasmine",
+      "Lavender"
+     ],
+     "why": "Comoros is a top producer."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient fish once thought extinct lives off the Comoros?",
+     "a": "Coelacanth",
+     "wrong": [
+      "Sturgeon",
+      "Lungfish",
+      "Shark"
+     ],
+     "why": "It was found again in the 1950s there."
+    },
+    {
+     "level": 1,
+     "q": "Which spice is the Comoros a top producer of?",
+     "a": "Vanilla and cloves",
+     "wrong": [
+      "Saffron",
+      "Cumin",
+      "Paprika"
+     ],
+     "why": "They are main exports."
+    },
+    {
+     "level": 1,
+     "q": "Which languages are official in the Comoros?",
+     "a": "Comorian, French and Arabic",
+     "wrong": [
+      "Swahili and English",
+      "Malagasy and French",
+      "Portuguese"
+     ],
+     "why": "Comorian is related to Swahili."
+    },
+    {
+     "level": 1,
+     "q": "Which island is the smallest of the three main islands?",
+     "a": "Mohéli",
+     "wrong": [
+      "Grande Comore",
+      "Anjouan",
+      "Mayotte"
+     ],
+     "why": "It is a marine park."
+    },
+    {
+     "level": 1,
+     "q": "What is the 'grand mariage'?",
+     "a": "A huge traditional wedding",
+     "wrong": [
+      "A royal coronation",
+      "A New Year festival",
+      "A fishing contest"
+     ],
+     "why": "It shows social status."
+    },
+    {
+     "level": 2,
+     "q": "Which marine park on Mohéli protects turtles?",
+     "a": "Mohéli Marine Park",
+     "wrong": [
+      "Aldabra",
+      "Bazaruto",
+      "Ste Anne"
+     ],
+     "why": "Green turtles nest there."
+    },
+    {
+     "level": 2,
+     "q": "Which old town in Moroni has a Friday mosque by the harbour?",
+     "a": "Old Friday Mosque of Moroni",
+     "wrong": [
+      "Great Mosque of Djenné",
+      "Hukuru Miskiy",
+      "Al-Aqsa"
+     ],
+     "why": "It dates from the 1400s."
+    },
+    {
+     "level": 2,
+     "q": "Which bat species found only on the Comoros is very large?",
+     "a": "Livingstone's fruit bat",
+     "wrong": [
+      "Vampire bat",
+      "Flying fox of India",
+      "Pipistrelle"
+     ],
+     "why": "It is endangered."
+    },
+    {
+     "level": 2,
+     "q": "Which face paste do Comorian women wear for beauty?",
+     "a": "Msindzano",
+     "wrong": [
+      "Thanaka",
+      "Henna",
+      "Kohl"
+     ],
+     "why": "It is made from sandalwood."
+    },
+    {
+     "level": 2,
+     "q": "Which island is called 'the pearl of the Comoros'?",
+     "a": "Anjouan",
+     "wrong": [
+      "Mohéli",
+      "Grande Comore",
+      "Mayotte"
+     ],
+     "why": "It is green and mountainous."
+    },
+    {
+     "level": 3,
+     "q": "Which Comorian island lies furthest west, closest to Mozambique?",
+     "a": "Grande Comore",
+     "wrong": [
+      "Anjouan",
+      "Mohéli",
+      "Mayotte"
+     ],
+     "why": "It is also the largest island."
+    },
+    {
+     "level": 3,
+     "q": "Which Comorian old city on Anjouan has a citadel?",
+     "a": "Mutsamudu",
+     "wrong": [
+      "Domoni",
+      "Fomboni",
+      "Mitsamiouli"
+     ],
+     "why": "Its medina is old and narrow."
+    },
+    {
+     "level": 3,
+     "q": "Which Comorian national football team nickname refers to a fish?",
+     "a": "Les Cœlacanthes",
+     "wrong": [
+      "Les Dauphins",
+      "Les Requins",
+      "Les Marlins"
+     ],
+     "why": "They reached AFCON for the first time in 2022."
+    }
+   ]
+  }
+ ]
+}

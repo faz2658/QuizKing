@@ -1,0 +1,346 @@
+{
+ "category": "Turkmenistan",
+ "country": "TM",
+ "topics": [
+  {
+   "name": "Turkmenistan: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Turkmenistan?",
+     "a": "Ashgabat",
+     "wrong": [
+      "Türkmenabat",
+      "Mary",
+      "Dashoguz"
+     ],
+     "why": "It has the most white marble buildings in the world."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Turkmenistan become independent?",
+     "a": "1991",
+     "wrong": [
+      "1989",
+      "1993",
+      "1995"
+     ],
+     "why": "It left the Soviet Union."
+    },
+    {
+     "level": 1,
+     "q": "What is Turkmenistan's currency?",
+     "a": "Manat",
+     "wrong": [
+      "Som",
+      "Tenge",
+      "Somoni"
+     ],
+     "why": "Azerbaijan's currency has the same name."
+    },
+    {
+     "level": 1,
+     "q": "Which burning gas crater is called the 'Door to Hell'?",
+     "a": "Darvaza gas crater",
+     "wrong": [
+      "Mount Doom",
+      "Valley of Fire",
+      "Gates of Hades"
+     ],
+     "why": "It has burned since 1971."
+    },
+    {
+     "level": 1,
+     "q": "Which desert covers most of Turkmenistan?",
+     "a": "Karakum Desert",
+     "wrong": [
+      "Kyzylkum",
+      "Gobi",
+      "Taklamakan"
+     ],
+     "why": "Its name means 'black sand'."
+    },
+    {
+     "level": 1,
+     "q": "Which status did the UN recognise for Turkmenistan in 1995?",
+     "a": "Permanent neutrality",
+     "wrong": [
+      "Non-aligned leadership",
+      "Nuclear-free status",
+      "Free trade status"
+     ],
+     "why": "It is celebrated each December."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of Turkmenistan since 2022?",
+     "a": "Serdar Berdimuhamedow",
+     "wrong": [
+      "Gurbanguly Berdimuhamedow",
+      "Saparmurat Niyazov",
+      "Kakageldi Gurbanov"
+     ],
+     "why": "He took over from his father."
+    },
+    {
+     "level": 2,
+     "q": "Which first President called himself 'Turkmenbashi'?",
+     "a": "Saparmurat Niyazov",
+     "wrong": [
+      "Gurbanguly Berdimuhamedow",
+      "Serdar Berdimuhamedow",
+      "Rashid Meredow"
+     ],
+     "why": "He renamed the months after his family."
+    },
+    {
+     "level": 2,
+     "q": "Which book written by Niyazov was required reading?",
+     "a": "Ruhnama",
+     "wrong": [
+      "Manas",
+      "Shahnameh",
+      "Gorkut Ata"
+     ],
+     "why": "It was part of the driving test."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient Silk Road city near Mary is a UNESCO site?",
+     "a": "Merv",
+     "wrong": [
+      "Samarkand",
+      "Bukhara",
+      "Khiva"
+     ],
+     "why": "It may have been the world's largest city in the 1100s."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient Parthian capital near Ashgabat is a UNESCO site?",
+     "a": "Nisa",
+     "wrong": [
+      "Merv",
+      "Kunya-Urgench",
+      "Persepolis"
+     ],
+     "why": "It has old fortresses."
+    },
+    {
+     "level": 2,
+     "q": "Which resource gives Turkmenistan great wealth?",
+     "a": "Natural gas",
+     "wrong": [
+      "Oil",
+      "Gold",
+      "Copper"
+     ],
+     "why": "It has the fourth-largest reserves in the world."
+    },
+    {
+     "level": 3,
+     "q": "Which former President is now Chairman of the People's Council?",
+     "a": "Gurbanguly Berdimuhamedow",
+     "wrong": [
+      "Saparmurat Niyazov",
+      "Serdar Berdimuhamedow",
+      "Rashid Meredow"
+     ],
+     "why": "He is called 'Arkadag' (the Protector)."
+    },
+    {
+     "level": 3,
+     "q": "Which 1948 disaster destroyed Ashgabat?",
+     "a": "An earthquake",
+     "wrong": [
+      "A flood",
+      "A sandstorm",
+      "A fire"
+     ],
+     "why": "It killed tens of thousands."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient city with tall minarets is in the north near Uzbekistan?",
+     "a": "Kunya-Urgench",
+     "wrong": [
+      "Merv",
+      "Nisa",
+      "Dehistan"
+     ],
+     "why": "It was the capital of Khwarazm."
+    }
+   ]
+  },
+  {
+   "name": "Turkmenistan: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which horse breed from Turkmenistan has a metallic coat?",
+     "a": "Akhal-Teke",
+     "wrong": [
+      "Arabian",
+      "Mustang",
+      "Lipizzaner"
+     ],
+     "why": "It appears on the national emblem."
+    },
+    {
+     "level": 1,
+     "q": "Which hand-knotted rugs are famous from Turkmenistan?",
+     "a": "Turkmen carpets",
+     "wrong": [
+      "Persian kilims",
+      "Afghan flatweaves",
+      "Turkish dhurries"
+     ],
+     "why": "A carpet design is on the flag."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies to the west of Turkmenistan?",
+     "a": "Caspian Sea",
+     "wrong": [
+      "Black Sea",
+      "Aral Sea",
+      "Mediterranean Sea"
+     ],
+     "why": "It is the world's largest lake."
+    },
+    {
+     "level": 1,
+     "q": "Which rice and meat dish is a national favourite?",
+     "a": "Plov",
+     "wrong": [
+      "Biryani",
+      "Paella",
+      "Risotto"
+     ],
+     "why": "It is cooked for celebrations."
+    },
+    {
+     "level": 1,
+     "q": "Which tall lambskin hat do Turkmen men wear?",
+     "a": "Telpek",
+     "wrong": [
+      "Kalpak",
+      "Fez",
+      "Ushanka"
+     ],
+     "why": "It keeps the heat out."
+    },
+    {
+     "level": 1,
+     "q": "Which camel is common in Turkmenistan's desert?",
+     "a": "Dromedary (one-hump camel)",
+     "wrong": [
+      "Bactrian camel",
+      "Llama",
+      "Alpaca"
+     ],
+     "why": "It is well suited to the heat."
+    },
+    {
+     "level": 1,
+     "q": "Which language is official in Turkmenistan?",
+     "a": "Turkmen",
+     "wrong": [
+      "Russian",
+      "Persian",
+      "Uzbek"
+     ],
+     "why": "It is a Turkic language."
+    },
+    {
+     "level": 2,
+     "q": "Which Ashgabat landmark had a golden statue of Niyazov that turned with the sun?",
+     "a": "Arch of Neutrality",
+     "wrong": [
+      "Independence Monument",
+      "Ruhnama Monument",
+      "Earthquake Memorial"
+     ],
+     "why": "It was moved to the suburbs in 2010."
+    },
+    {
+     "level": 2,
+     "q": "Which giant mosque near Ashgabat is one of the largest in Central Asia?",
+     "a": "Türkmenbaşy Ruhy Mosque",
+     "wrong": [
+      "Ertugrul Gazi Mosque",
+      "Kalyan Mosque",
+      "Bibi-Khanym Mosque"
+     ],
+     "why": "It holds Niyazov's tomb."
+    },
+    {
+     "level": 2,
+     "q": "Which underground lake in a cave is warm enough to swim in?",
+     "a": "Kow Ata",
+     "wrong": [
+      "Blue Lake",
+      "Lake Sevan",
+      "Dead Sea"
+     ],
+     "why": "It is around 33 °C."
+    },
+    {
+     "level": 2,
+     "q": "Which canal from the Amu Darya is one of the world's longest?",
+     "a": "Karakum Canal",
+     "wrong": [
+      "Suez Canal",
+      "Grand Canal",
+      "Panama Canal"
+     ],
+     "why": "It is about 1,375 km long."
+    },
+    {
+     "level": 2,
+     "q": "Which dog breed is a national symbol and has a golden statue?",
+     "a": "Alabai",
+     "wrong": [
+      "Akita",
+      "Afghan hound",
+      "Saluki"
+     ],
+     "why": "It is a Central Asian shepherd dog."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain range lines the border with Iran?",
+     "a": "Kopet Dag",
+     "wrong": [
+      "Pamir",
+      "Tian Shan",
+      "Zagros"
+     ],
+     "why": "Ashgabat sits at its foot."
+    },
+    {
+     "level": 3,
+     "q": "Which day celebrates the horse each April?",
+     "a": "Turkmen Horse Day",
+     "wrong": [
+      "Horse Festival of Merv",
+      "Akhal-Teke Week",
+      "Day of the Rider"
+     ],
+     "why": "It is a national holiday."
+    },
+    {
+     "level": 3,
+     "q": "What is the title of Turkmenistan's former President, meaning 'Protector'?",
+     "a": "Arkadag",
+     "wrong": [
+      "Turkmenbashi",
+      "Serdar",
+      "Beg"
+     ],
+     "why": "A new city is named after him."
+    }
+   ]
+  }
+ ]
+}

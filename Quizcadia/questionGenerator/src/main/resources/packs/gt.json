@@ -1,0 +1,346 @@
+{
+ "category": "Guatemala",
+ "country": "GT",
+ "topics": [
+  {
+   "name": "Guatemala: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Guatemala?",
+     "a": "Guatemala City",
+     "wrong": [
+      "Antigua",
+      "Quetzaltenango",
+      "Flores"
+     ],
+     "why": "It is the largest city in Central America."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient civilisation built Tikal?",
+     "a": "Maya",
+     "wrong": [
+      "Aztec",
+      "Inca",
+      "Olmec"
+     ],
+     "why": "Its pyramids rise above the jungle."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Guatemala gain independence in 1821?",
+     "a": "Spain",
+     "wrong": [
+      "Mexico",
+      "Portugal",
+      "France"
+     ],
+     "why": "It was briefly part of Mexico."
+    },
+    {
+     "level": 1,
+     "q": "Which K'iche' Maya activist won the 1992 Nobel Peace Prize?",
+     "a": "Rigoberta Menchú",
+     "wrong": [
+      "Miguel Ángel Asturias",
+      "Jacobo Árbenz",
+      "Bernardo Arévalo"
+     ],
+     "why": "She campaigned for Indigenous rights."
+    },
+    {
+     "level": 1,
+     "q": "What is Guatemala's currency?",
+     "a": "Quetzal",
+     "wrong": [
+      "Lempira",
+      "Colón",
+      "Peso"
+     ],
+     "why": "It is named after a bird."
+    },
+    {
+     "level": 1,
+     "q": "Which civil war lasted from 1960 to 1996?",
+     "a": "Guatemalan Civil War",
+     "wrong": [
+      "Contra War",
+      "Salvadoran Civil War",
+      "Mexican Revolution"
+     ],
+     "why": "Peace accords ended it in 1996."
+    },
+    {
+     "level": 1,
+     "q": "Which colonial city was the old capital until an earthquake in 1773?",
+     "a": "Antigua Guatemala",
+     "wrong": [
+      "Quetzaltenango",
+      "Cobán",
+      "Flores"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which President was overthrown in a CIA-backed coup in 1954?",
+     "a": "Jacobo Árbenz",
+     "wrong": [
+      "Juan José Arévalo",
+      "Efraín Ríos Montt",
+      "Carlos Castillo Armas"
+     ],
+     "why": "His land reform angered the United Fruit Company."
+    },
+    {
+     "level": 2,
+     "q": "Which Guatemalan novelist won the 1967 Nobel Prize in Literature?",
+     "a": "Miguel Ángel Asturias",
+     "wrong": [
+      "Rigoberta Menchú",
+      "Augusto Monterroso",
+      "Gabriel García Márquez"
+     ],
+     "why": "He wrote 'El Señor Presidente'."
+    },
+    {
+     "level": 2,
+     "q": "Which K'iche' Maya book tells the creation story?",
+     "a": "Popol Vuh",
+     "wrong": [
+      "Chilam Balam",
+      "Codex Mendoza",
+      "Dresden Codex"
+     ],
+     "why": "It was written down in the 1500s."
+    },
+    {
+     "level": 2,
+     "q": "Which Spanish conquistador conquered Guatemala in 1524?",
+     "a": "Pedro de Alvarado",
+     "wrong": [
+      "Hernán Cortés",
+      "Francisco Pizarro",
+      "Pedrarias Dávila"
+     ],
+     "why": "He was one of Cortés's captains."
+    },
+    {
+     "level": 2,
+     "q": "Who became President of Guatemala in 2024?",
+     "a": "Bernardo Arévalo",
+     "wrong": [
+      "Alejandro Giammattei",
+      "Jimmy Morales",
+      "Sandra Torres"
+     ],
+     "why": "He is the son of a former President."
+    },
+    {
+     "level": 3,
+     "q": "Which K'iche' hero fought Alvarado in 1524?",
+     "a": "Tecún Umán",
+     "wrong": [
+      "Atahualpa",
+      "Cuauhtémoc",
+      "Lempira"
+     ],
+     "why": "He is a national hero."
+    },
+    {
+     "level": 3,
+     "q": "Which Maya site is linked to the 'Star Wars' rebel base?",
+     "a": "Tikal",
+     "wrong": [
+      "Copán",
+      "Palenque",
+      "Chichén Itzá"
+     ],
+     "why": "It was filmed for the 1977 film."
+    },
+    {
+     "level": 3,
+     "q": "Which general ruled during the worst massacres of 1982–83?",
+     "a": "Efraín Ríos Montt",
+     "wrong": [
+      "Jacobo Árbenz",
+      "Otto Pérez Molina",
+      "Romeo Lucas García"
+     ],
+     "why": "He was convicted of genocide in 2013."
+    }
+   ]
+  },
+  {
+   "name": "Guatemala: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which deep lake is surrounded by three volcanoes?",
+     "a": "Lake Atitlán",
+     "wrong": [
+      "Lake Petén Itzá",
+      "Lake Izabal",
+      "Lake Amatitlán"
+     ],
+     "why": "Aldous Huxley called it the world's most beautiful lake."
+    },
+    {
+     "level": 1,
+     "q": "Which colourful bird is Guatemala's national symbol?",
+     "a": "Resplendent quetzal",
+     "wrong": [
+      "Macaw",
+      "Toucan",
+      "Hummingbird"
+     ],
+     "why": "It is on the flag."
+    },
+    {
+     "level": 1,
+     "q": "Which market town is famous for its huge Maya market?",
+     "a": "Chichicastenango",
+     "wrong": [
+      "Panajachel",
+      "Cobán",
+      "Flores"
+     ],
+     "why": "It is held on Thursdays and Sundays."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is Guatemala famous for exporting?",
+     "a": "Coffee",
+     "wrong": [
+      "Wheat",
+      "Tea",
+      "Cotton"
+     ],
+     "why": "Antigua coffee is well known."
+    },
+    {
+     "level": 1,
+     "q": "Which colourful embroidered blouse do Maya women wear?",
+     "a": "Huipil",
+     "wrong": [
+      "Mola",
+      "Poncho",
+      "Sari"
+     ],
+     "why": "Each village has its own patterns."
+    },
+    {
+     "level": 1,
+     "q": "Which old US school buses are painted bright colours in Guatemala?",
+     "a": "Chicken buses",
+     "wrong": [
+      "Jeepneys",
+      "Chivas",
+      "Matatus"
+     ],
+     "why": "They run between towns."
+    },
+    {
+     "level": 1,
+     "q": "Which language family do many Guatemalans speak besides Spanish?",
+     "a": "Mayan languages",
+     "wrong": [
+      "Nahuatl",
+      "Quechua",
+      "Guaraní"
+     ],
+     "why": "There are over 20 of them."
+    },
+    {
+     "level": 2,
+     "q": "Which Semana Santa tradition fills Antigua's streets?",
+     "a": "Carpets of coloured sawdust (alfombras)",
+     "wrong": [
+      "Running of the bulls",
+      "Water fights",
+      "Lantern parades"
+     ],
+     "why": "Processions walk over them."
+    },
+    {
+     "level": 2,
+     "q": "Which active volcano near Antigua often erupts?",
+     "a": "Fuego",
+     "wrong": [
+      "Pacaya",
+      "Agua",
+      "Tajumulco"
+     ],
+     "why": "It erupted deadly in 2018."
+    },
+    {
+     "level": 2,
+     "q": "What is Guatemala's highest mountain?",
+     "a": "Tajumulco",
+     "wrong": [
+      "Fuego",
+      "Agua",
+      "Atitlán"
+     ],
+     "why": "It is the highest point in Central America."
+    },
+    {
+     "level": 2,
+     "q": "Which turquoise pools sit over a natural limestone bridge?",
+     "a": "Semuc Champey",
+     "wrong": [
+      "Lake Atitlán",
+      "Agua Azul",
+      "Tikal Pools"
+     ],
+     "why": "They are in Alta Verapaz."
+    },
+    {
+     "level": 2,
+     "q": "Which spicy meat stew is Guatemala's national dish?",
+     "a": "Pepián",
+     "wrong": [
+      "Mole",
+      "Sancocho",
+      "Pozole"
+     ],
+     "why": "It mixes Maya and Spanish styles."
+    },
+    {
+     "level": 3,
+     "q": "Which giant kites are flown on All Saints' Day?",
+     "a": "Barriletes gigantes",
+     "wrong": [
+      "Papalotes",
+      "Cometas de Bali",
+      "Rokkaku"
+     ],
+     "why": "Sumpango holds a famous festival."
+    },
+    {
+     "level": 3,
+     "q": "Which island town sits on Lake Petén Itzá?",
+     "a": "Flores",
+     "wrong": [
+      "Panajachel",
+      "Livingston",
+      "Río Dulce"
+     ],
+     "why": "It is the gateway to Tikal."
+    },
+    {
+     "level": 3,
+     "q": "Which Garífuna town on the Caribbean is reached only by boat?",
+     "a": "Livingston",
+     "wrong": [
+      "Puerto Barrios",
+      "Flores",
+      "Monterrico"
+     ],
+     "why": "Garífuna culture is on UNESCO's list."
+    }
+   ]
+  }
+ ]
+}
