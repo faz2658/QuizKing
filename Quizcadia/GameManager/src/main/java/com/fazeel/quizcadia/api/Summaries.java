@@ -40,14 +40,16 @@ public final class Summaries {
 		static GameSummary of(Game g) {
 			return new GameSummary(g.getGameId(), g.getGameName(), g.getGameDescription(), g.getGameImage(),
 					g.getGameRules(), g.getCategoryId(), TopicRef.of(g.getTopic()), g.getGameType(),
-					g.getQuestionLevels(), g.getQuestions() == null ? 0 : g.getQuestions().size(), g.getCreatedBy(),
+					g.getQuestionLevels(), g.getQuestionCount() != null ? g.getQuestionCount()
+							: g.getQuestions() == null ? 0 : g.getQuestions().size(), g.getCreatedBy(),
 					g.getCreatedOn(), null);
 		}
 
 		static GameSummary of(MultiPlayerGame g) {
 			return new GameSummary(g.getGameId(), g.getGameName(), g.getGameDescription(), g.getGameImage(),
 					g.getGameRules(), g.getCategoryId(), TopicRef.of(g.getTopic()), g.getGameType(),
-					g.getQuestionLevel(), g.getAutoquestions() == null ? 0 : g.getAutoquestions().size(),
+					g.getQuestionLevel(), g.getQuestionCount() != null ? g.getQuestionCount()
+							: g.getAutoquestions() == null ? 0 : g.getAutoquestions().size(),
 					g.getCreatedBy(), g.getCreatedOn(), null);
 		}
 	}
@@ -66,8 +68,8 @@ public final class Summaries {
 		static CategorySummary of(Category c) {
 			List<TopicSummary> topics = Objects.requireNonNullElse(c.getTopic(), List.<Topic>of()).stream()
 					.filter(Objects::nonNull)
-					.map(t -> new TopicSummary(t.getTopicId(), t.getTopicName(),
-							t.getQuestions() == null ? 0 : t.getQuestions().size()))
+					.map(t -> new TopicSummary(t.getTopicId(), t.getTopicName(), t.getQuestionCount() != null
+							? t.getQuestionCount() : t.getQuestions() == null ? 0 : t.getQuestions().size()))
 					.toList();
 			return new CategorySummary(c.getCategoryId(), c.getCategoryName(), c.getCategoryImage(), topics,
 					c.getCountryCode());

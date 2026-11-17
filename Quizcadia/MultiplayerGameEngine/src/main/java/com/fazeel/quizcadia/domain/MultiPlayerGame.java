@@ -11,7 +11,24 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Document(collection = "multiplayer_games")
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record MultiPlayerGame(@Id int gameId, String gameName, int categoryId, int timePerQuestion,
-		int scorePerQuestion, List<Question> autoquestions, int numberOfQuestions, Level questionLevel) {
+		int scorePerQuestion, List<Question> autoquestions, int numberOfQuestions, Level questionLevel, TopicRef topic) {
+
+	public MultiPlayerGame(int gameId, String gameName, int categoryId, int timePerQuestion, int scorePerQuestion,
+			List<Question> autoquestions, int numberOfQuestions, Level questionLevel) {
+		this(gameId, gameName, categoryId, timePerQuestion, scorePerQuestion, autoquestions, numberOfQuestions,
+				questionLevel, null);
+	}
+
+	/** The topic a game draws from; its questions are loaded from the question service when the game carries none. */
+	@JsonIgnoreProperties(ignoreUnknown = true)
+	public record TopicRef(int topicId, String topicName) {
+	}
+
+	/** The same game with these questions (not saved). */
+	public MultiPlayerGame withQuestions(List<Question> questions) {
+		return new MultiPlayerGame(gameId, gameName, categoryId, timePerQuestion, scorePerQuestion, questions,
+				numberOfQuestions, questionLevel, topic);
+	}
 
 	/** How many easy, medium and advanced questions a match asks. */
 	@JsonIgnoreProperties(ignoreUnknown = true)

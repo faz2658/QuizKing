@@ -290,4 +290,67 @@ class GameCatalogServiceTest {
 		verify(events).gameDefinition(sent.capture());
 		assertThat(sent.getValue()).isSameAs(g);
 	}
+
+	// --- topics sent as counts (questions stay in the question service) ---
+
+	private static Category slim(int id, String topicName, int easy, int medium, int advanced) {
+		Category c = category(id, topicName, List.of());
+		Topic t = c.getTopic().get(0);
+		t.setQuestions(null);
+		t.setQuestionCount(easy + medium + advanced);
+		t.setLevelCounts(List.of(easy, medium, advanced));
+		return c;
+	}
+
+	@Test
+	void aTopicSentAsCountsGetsAutoGamesThatReferenceItWithoutCopies() {
+		service = new GameCatalogService(games, multiGames, categories, ids, new QuestionSelector(), events,
+				new AutoGames(true, 12, 10, 8));
+		when(categories.findById(1)).thenReturn(Optional.empty(), Optional.of(slim(1, "History", 2000, 600, 200)));
+		when(games.findByCategoryIdAndTopicTopicNameIgnoreCase(1, "History")).thenReturn(List.of());
+		when(multiGames.findByCategoryIdAndTopicTopicNameIgnoreCase(1, "History")).thenReturn(List.of());
+
+		service.mergeCategory(slim(1, "History", 2000, 600, 200));
+
+		ArgumentCaptor<Game> solo = ArgumentCaptor.forClass(Game.class);
+		verify(events).gameDefinition(solo.capture());
+		assertThat(solo.getValue().getQuestions()).isNull();
+		assertThat(solo.getValue().getQuestionCount()).isEqualTo(2800);
+		assertThat(solo.getValue().getTopic().getTopicId()).isEqualTo(10);
+		assertThat(solo.getValue().getQuestionLevels().getEasyLevel()).isEqualTo(4);
+		ArgumentCaptor<MultiPlayerGame> multi = ArgumentCaptor.forClass(MultiPlayerGame.class);
+		verify(events).multiPlayerGameCreated(multi.capture());
+		assertThat(multi.getValue().getAutoquestions()).isNull();
+		assertThat(multi.getValue().getQuestionCount()).isEqualTo(2800);
+	}
+
+	@Test
+	void countsReplaceAnOldCopyOfATopicsQuestionsAndItsGamesStopCarryingThem() {
+		Category stored = category(1, "Geography", bank("manual", 30, 0, 0));
+		when(categories.findById(1)).thenReturn(Optional.of(stored));
+		Game existing = request(1, 0, 0);
+		existing.setGameId(5);
+		existing.setQuestions(bank("manual", 30, 0, 0));
+		when(games.findByCategoryIdAndTopicTopicNameIgnoreCase(1, "Geography")).thenReturn(List.of(existing));
+
+		Category merged = service.mergeCategory(slim(1, "Geography", 1500, 400, 100));
+
+		Topic t = merged.getTopic().get(0);
+		assertThat(t.getQuestions()).isNull();
+		assertThat(t.getQuestionCount()).isEqualTo(2000);
+		assertThat(existing.getQuestions()).isNull();
+		assertThat(existing.getQuestionCount()).isEqualTo(2000);
+		verify(events).gameDefinition(existing);
+	}
+
+	@Test
+	void aGameOnATopicSentAsCountsIsCheckedAgainstTheCounts() {
+		when(categories.findById(1)).thenReturn(Optional.of(slim(1, "Art", 3, 1, 0)));
+
+		assertThatThrownBy(() -> service.createGame(1, "Art", request(2, 2, 0)))
+				.isInstanceOf(NotEnoughQuestionsException.class);
+		Game ok = service.createGame(1, "Art", request(3, 1, 0));
+		assertThat(ok.getQuestions()).isNull();
+		assertThat(ok.getQuestionCount()).isEqualTo(4);
+	}
 }

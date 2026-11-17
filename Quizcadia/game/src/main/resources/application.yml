@@ -29,6 +29,8 @@ server:
   port: ${PORT:9092}
 
 quizcadia:
+  # The question service: games built from a topic load its questions from here when they start
+  question-generator-url: ${QUESTION_GENERATOR_URL:http://localhost:9090}
   kafka:
     enabled: ${KAFKA_ENABLED:true}
   demo-data: ${DEMO_DATA:false}

@@ -29,6 +29,8 @@ server:
 
 quizcadia:
   game-manager-url: ${GAME_MANAGER_URL:http://localhost:9091}
+  # The question service: games built from a topic load its questions from here when they start
+  question-generator-url: ${QUESTION_GENERATOR_URL:http://localhost:9090}
   adaptive:
     block-size: 4
     promote-at-percent: 60

@@ -31,10 +31,18 @@ public class ArenaService {
 	private final ArenaPublishedRepository published;
 	private final GameRepository games;
 	private final GameEvents events;
+	private final com.fazeel.quizcadia.service.TopicPools pools;
 	private final Clock clock;
 
 	public ArenaService(ArenaRoundRepository rounds, ArenaEntryRepository entries, ArenaPublishedRepository published, GameRepository games, GameEvents events,
 			Clock clock) {
+		this(rounds, entries, published, games, events, clock, com.fazeel.quizcadia.service.TopicPools.none());
+	}
+
+	@org.springframework.beans.factory.annotation.Autowired
+	public ArenaService(ArenaRoundRepository rounds, ArenaEntryRepository entries, ArenaPublishedRepository published, GameRepository games, GameEvents events,
+			Clock clock, com.fazeel.quizcadia.service.TopicPools pools) {
+		this.pools = pools;
 		this.rounds = rounds;
 		this.entries = entries;
 		this.published = published;
@@ -223,7 +231,7 @@ public class ArenaService {
 
 	ArenaRound roundFor(Instant start) {
 		return rounds.findById(id(start)).orElseGet(() -> {
-			DailyChallengeService.Picked p = DailyChallengeService.pick(start.getEpochSecond() * 31L + 7, games.findAll(), 4, 4, 4);
+			DailyChallengeService.Picked p = DailyChallengeService.pick(start.getEpochSecond() * 31L + 7, pools.withPools(games.findAll()), 4, 4, 4);
 			if (p.questions().isEmpty()) {
 				throw new QuizRuleException("There are no questions for the arena yet");
 			}

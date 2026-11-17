@@ -80,6 +80,33 @@ class MatchServiceTest {
 	}
 
 	@Test
+	void aGameThatReferencesItsTopicIsPlayedWithTheTopicsQuestions() {
+		Clock clock = Clock.fixed(now, ZoneOffset.UTC);
+		service = new MatchService(matches, games, source, new MatchFactory(new Random(2)), events, seen, clock,
+				new MatchUpdates(), new TopicPools(id -> id == 40
+						? List.of(new MultiPlayerGame.Question(1, 1, "Q1", "a", "b", null, null, "a"),
+								new MultiPlayerGame.Question(2, 1, "Q2", "a", "b", null, null, "b"))
+						: List.of(), clock, java.time.Duration.ofMinutes(10)));
+		MultiPlayerGame slim = new MultiPlayerGame(7, "History Showdown", 3, 10, 10, null, 2, null,
+				new MultiPlayerGame.TopicRef(40, "History"));
+		when(games.findById(7)).thenReturn(Optional.of(slim));
+
+		MultiplayerMatch m = service.start(new Match("m9", 7, List.of(1, 2), now));
+
+		assertThat(m.getQuestions()).hasSize(2);
+	}
+
+	@Test
+	void readsTheTopicOfAGameDefinition() {
+		MultiPlayerGame g = tools.jackson.databind.json.JsonMapper.builder().build().readValue(
+				"{\"gameId\":7,\"gameName\":\"History Showdown\",\"categoryId\":3,\"timePerQuestion\":15,\"scorePerQuestion\":10,\"numberOfQuestions\":8,\"topic\":{\"topicId\":40,\"topicName\":\"History\",\"topicImage\":null},\"questionCount\":2400}",
+				MultiPlayerGame.class);
+
+		assertThat(g.topic().topicId()).isEqualTo(40);
+		assertThat(g.autoquestions()).isNull();
+	}
+
+	@Test
 	void replayedMatchEventDoesNotRestartTheMatch() {
 		when(games.findById(7)).thenReturn(Optional.of(game()));
 		MultiplayerMatch first = service.start(new Match("m1", 7, List.of(1, 2), now));

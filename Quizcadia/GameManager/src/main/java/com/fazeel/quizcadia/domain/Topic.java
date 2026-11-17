@@ -14,6 +14,28 @@ public class Topic {
 	    private List<Questions> questions;
 	    /** Questions deleted from the bank, so copies elsewhere (the game manager's pools) drop them too. */
 	    private List<Integer> removedQuestionIds;
+	    /**
+	     * Set when the question service sends the topic as counts only (its questions stay in the question service,
+	     * which the engines load from when a game starts): playable questions in all, and per level 1-3.
+	     */
+	    private Integer questionCount;
+	    private List<Integer> levelCounts;
+
+	public Integer getQuestionCount() {
+		return questionCount;
+	}
+
+	public void setQuestionCount(Integer questionCount) {
+		this.questionCount = questionCount;
+	}
+
+	public List<Integer> getLevelCounts() {
+		return levelCounts;
+	}
+
+	public void setLevelCounts(List<Integer> levelCounts) {
+		this.levelCounts = levelCounts;
+	}
 		@JsonCreator
 		public Topic() {
 			super();

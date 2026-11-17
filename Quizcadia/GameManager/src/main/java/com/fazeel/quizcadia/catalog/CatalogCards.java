@@ -53,7 +53,7 @@ public class CatalogCards {
 				.append("topic", new Document("$map", new Document("input", new Document("$ifNull", List.of("$topic", List.of())))
 						.append("as", "t")
 						.append("in", new Document("topicId", "$$t.topicId").append("topicName", "$$t.topicName")
-								.append("questionCount", size("$$t.questions"))))));
+								.append("questionCount", countOr("$$t.questionCount", "$$t.questions"))))));
 		List<CategoryCard> out = new ArrayList<>();
 		for (Document d : mongo.aggregate(Aggregation.newAggregation(project), "category", Document.class)) {
 			List<TopicCard> topics = new ArrayList<>();
@@ -73,7 +73,7 @@ public class CatalogCards {
 				.append("gameDescription", 1).append("gameImage", 1).append("gameRules", 1).append("categoryId", 1)
 				.append("topicId", "$topic.topicId").append("topicName", "$topic.topicName").append("gameType", 1)
 				.append("levels", "$" + levelsField).append("createdBy", 1).append("createdOn", 1)
-				.append("questionCount", size("$" + questionsField)));
+				.append("questionCount", countOr("$questionCount", "$" + questionsField)));
 		List<GameCard> out = new ArrayList<>();
 		for (Document d : mongo.aggregate(Aggregation.newAggregation(project), collection, Document.class)) {
 			Document type = d.get("gameType", Document.class);
@@ -87,6 +87,11 @@ public class CatalogCards {
 					intOf(d.get("questionCount")), d.getString("createdBy"), d.getDate("createdOn")));
 		}
 		return out;
+	}
+
+	/** The stored count when there is one (questions kept in the question service), else the copied list's size. */
+	private static Document countOr(String countField, String arrayField) {
+		return new Document("$ifNull", List.of(countField, size(arrayField)));
 	}
 
 	private static Document size(String arrayField) {

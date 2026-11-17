@@ -226,6 +226,14 @@ public class QuestionBankService {
 		return ((Number) Objects.requireNonNull(seq).get("value")).intValue();
 	}
 
+	/** A topic's playable questions, as the game engines load them when a game starts. */
+	public List<Questions> topicQuestions(int topicId) {
+		Category c = categories.findFirstByTopic_TopicId(topicId)
+				.orElseThrow(() -> new NotFoundException("No topic " + topicId));
+		return TopicPool.playable(topics(c).stream().filter(t -> t.getTopicId() == topicId).findFirst()
+				.orElseThrow(() -> new NotFoundException("No topic " + topicId)));
+	}
+
 	private static List<Topic> topics(Category c) {
 		return c.getTopic() == null ? List.of() : c.getTopic();
 	}

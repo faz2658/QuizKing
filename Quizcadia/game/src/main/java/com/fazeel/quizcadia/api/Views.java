@@ -46,7 +46,7 @@ public final class Views {
 		static GameSummary of(Game g) {
 			return new GameSummary(g.getGameId(), g.getGameName(), g.getGameDescription(), g.getGameImage(),
 					g.getGameRules(), g.getCategoryId(), g.getTopic() == null ? null : g.getTopic().getTopicName(),
-					g.getQuestions() == null ? 0 : g.getQuestions().size());
+					g.getQuestionCount() != null ? g.getQuestionCount() : g.getQuestions() == null ? 0 : g.getQuestions().size());
 		}
 	}
 

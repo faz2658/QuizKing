@@ -98,6 +98,19 @@ public class GameCatalogService {
 				topics.add(in);
 				continue;
 			}
+			if (in.getQuestionCount() != null) {
+				// counts only: the questions live in the question service, so drop any old copy
+				existing.setQuestions(null);
+				existing.setRemovedQuestionIds(null);
+				existing.setQuestionCount(in.getQuestionCount());
+				existing.setLevelCounts(in.getLevelCounts());
+				if (in.getTopicImage() != null) {
+					existing.setTopicImage(in.getTopicImage());
+				}
+				continue;
+			}
+			existing.setQuestionCount(null);
+			existing.setLevelCounts(null);
 			List<Questions> qs = existing.getQuestions() == null ? new ArrayList<>()
 					: new ArrayList<>(existing.getQuestions());
 			for (Questions q : Objects.requireNonNullElse(in.getQuestions(), List.<Questions>of())) {
@@ -127,10 +140,12 @@ public class GameCatalogService {
 
 	/** Games of a topic always draw from its current pool, so new questions show up in existing games. */
 	private void refreshGames(int categoryId, Topic topic) {
-		List<Questions> pool = QuestionSelector.playable(topic.getQuestions());
-		int[] available = QuestionSelector.countByLevel(pool);
+		List<Questions> pool = copiedPool(topic);
+		int[] available = available(topic);
 		for (Game g : games.findByCategoryIdAndTopicTopicNameIgnoreCase(categoryId, topic.getTopicName())) {
 			g.setQuestions(pool);
+			g.setQuestionCount(count(topic));
+			g.setTopic(summary(topic));
 			if (AUTO_CREATOR.equals(g.getCreatedBy())) {
 				// auto games made early in an import get a better mix as more levels fill up
 				int[] mix = AutoGames.fit(autoGames.soloQuestions(), SOLO_MIX, available);
@@ -141,6 +156,8 @@ public class GameCatalogService {
 		for (MultiPlayerGame g : multiGames.findByCategoryIdAndTopicTopicNameIgnoreCase(categoryId,
 				topic.getTopicName())) {
 			g.setAutoquestions(pool);
+			g.setQuestionCount(count(topic));
+			g.setTopic(summary(topic));
 			if (AUTO_CREATOR.equals(g.getCreatedBy())) {
 				int[] mix = AutoGames.fit(autoGames.multiplayerQuestions(), MULTI_MIX, available);
 				g.setQuestionLevel(new GameQuestionLevel(mix[0], mix[1], mix[2]));
@@ -151,17 +168,17 @@ public class GameCatalogService {
 
 	/** Gives a topic with enough questions a solo and a multiplayer game, once. */
 	private void createAutoGames(Category category, Topic topic) {
-		List<Questions> pool = QuestionSelector.playable(topic.getQuestions());
-		if (pool.size() < autoGames.minQuestions()) {
+		int poolSize = count(topic);
+		if (poolSize < autoGames.minQuestions()) {
 			return;
 		}
-		int[] available = QuestionSelector.countByLevel(pool);
+		int[] available = available(topic);
 		if (games.findByCategoryIdAndTopicTopicNameIgnoreCase(category.getCategoryId(), topic.getTopicName())
 				.isEmpty()) {
 			int[] mix = AutoGames.fit(autoGames.soloQuestions(), SOLO_MIX, available);
 			Game g = new Game();
 			g.setGameName(topic.getTopicName());
-			g.setGameDescription(mix[0] + mix[1] + mix[2] + " questions from " + pool.size()
+			g.setGameDescription(mix[0] + mix[1] + mix[2] + " questions from " + poolSize
 					+ ". New ones every time you play.");
 			g.setGameRules("Answer before the timer runs out. Easy 10 points, medium 20, advanced 30.");
 			g.setCreatedBy(AUTO_CREATOR);
@@ -185,7 +202,7 @@ public class GameCatalogService {
 
 	public Game createGame(int categoryId, String topicName, Game request) {
 		Topic topic = topic(categoryId, topicName);
-		List<Questions> pool = selector.pool(topic.getQuestions(), request.getQuestionLevels());
+		selector.require(available(topic), request.getQuestionLevels());
 
 		Game game = new Game();
 		game.setGameId(ids.nextGameId());
@@ -202,7 +219,8 @@ public class GameCatalogService {
 		game.setQuestionTime(request.getQuestionTime());
 		game.setQuestionScore(request.getQuestionScore());
 		game.setTopic(summary(topic));
-		game.setQuestions(pool);
+		game.setQuestions(copiedPool(topic));
+		game.setQuestionCount(count(topic));
 
 		Game saved = games.save(game);
 		events.gameCreated(saved);
@@ -284,7 +302,7 @@ public class GameCatalogService {
 				&& request.getNumberOfQuestions() > 0) {
 			mix = new GameQuestionLevel(request.getNumberOfQuestions(), 0, 0);
 		}
-		List<Questions> pool = selector.pool(topic.getQuestions(), mix);
+		selector.require(available(topic), mix);
 		if (request.getTimePerQuestion() <= 0) {
 			throw new InvalidGameException("timePerQuestion must be positive");
 		}
@@ -305,7 +323,8 @@ public class GameCatalogService {
 		game.setTimePerQuestion(request.getTimePerQuestion());
 		game.setScorePerQuestion(request.getScorePerQuestion() > 0 ? request.getScorePerQuestion() : 10);
 		game.setTopic(summary(topic));
-		game.setAutoquestions(pool);
+		game.setAutoquestions(copiedPool(topic));
+		game.setQuestionCount(count(topic));
 
 		MultiPlayerGame saved = multiGames.save(game);
 		events.multiPlayerGameCreated(saved);
@@ -332,6 +351,27 @@ public class GameCatalogService {
 		return Objects.requireNonNullElse(category.getTopic(), List.<Topic>of()).stream()
 				.filter(t -> t != null && topicName.equalsIgnoreCase(t.getTopicName())).findFirst()
 				.orElseThrow(() -> new NotFoundException("No topic '" + topicName + "' in category " + categoryId));
+	}
+
+	/**
+	 * The questions to copy into a topic's games: none for a topic sent as counts (the engines load its questions
+	 * from the question service), otherwise its playable questions as before.
+	 */
+	static List<Questions> copiedPool(Topic t) {
+		return t.getQuestionCount() != null ? null : QuestionSelector.playable(t.getQuestions());
+	}
+
+	/** Playable questions per level (easy, medium, advanced), from the counts or the copied questions. */
+	static int[] available(Topic t) {
+		List<Integer> c = t.getLevelCounts();
+		if (t.getQuestionCount() != null && c != null && c.size() == 3) {
+			return new int[] { c.get(0), c.get(1), c.get(2) };
+		}
+		return QuestionSelector.countByLevel(QuestionSelector.playable(t.getQuestions()));
+	}
+
+	static int count(Topic t) {
+		return t.getQuestionCount() != null ? t.getQuestionCount() : QuestionSelector.playable(t.getQuestions()).size();
 	}
 
 	/** Topic reference stored on a game; the full question bank is not copied into every game. */

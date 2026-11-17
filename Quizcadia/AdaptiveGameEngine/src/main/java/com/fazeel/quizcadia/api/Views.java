@@ -13,7 +13,9 @@ public final class Views {
 	private Views() {
 	}
 
-	public record StartRequest(@Positive int gameId, @Positive int userId) {
+	/** @param country the player's country (ISO code), optional: other countries' questions are left out */
+	public record StartRequest(@Positive int gameId, @Positive int userId,
+			@jakarta.validation.constraints.Pattern(regexp = "[A-Za-z]{2}") String country) {
 	}
 
 	public record AnswerRequest(@Positive int questionId, @NotNull String answer) {

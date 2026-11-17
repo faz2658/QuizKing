@@ -69,7 +69,7 @@ class AdaptiveControllerTest {
 	void startReturnsFirstQuestionWithoutAnswer() throws Exception {
 		AdaptiveSession s = new AdaptiveSession("s1", 9, 5, "Adaptive", 1, 7,
 				List.of(new PooledQuestion(1, 1, "2 + 2?", List.of("4", "5"), "4")), AdaptiveRules.DEFAULT, NOW);
-		when(service.start(5, 9)).thenReturn(s);
+		when(service.start(5, 9, null)).thenReturn(s);
 
 		mvc.perform(post("/api/v1/adaptive/sessions").with(player(9)).contentType(MediaType.APPLICATION_JSON)
 				.content("{\"gameId\":5,\"userId\":9}"))

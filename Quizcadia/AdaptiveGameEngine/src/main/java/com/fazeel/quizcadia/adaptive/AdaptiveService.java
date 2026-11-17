@@ -30,9 +30,18 @@ public class AdaptiveService {
 	private final PoolBuilder poolBuilder;
 	private final AdaptiveRules rules;
 	private final Clock clock;
+	private final TopicPools pools;
 
 	public AdaptiveService(SessionRepository sessions, GameRepository games, SeenQuestionRepository seen,
 			GameSource gameSource, ResultEvents events, PoolBuilder poolBuilder, AdaptiveRules rules, Clock clock) {
+		this(sessions, games, seen, gameSource, events, poolBuilder, rules, clock, TopicPools.none());
+	}
+
+	@org.springframework.beans.factory.annotation.Autowired
+	public AdaptiveService(SessionRepository sessions, GameRepository games, SeenQuestionRepository seen,
+			GameSource gameSource, ResultEvents events, PoolBuilder poolBuilder, AdaptiveRules rules, Clock clock,
+			TopicPools pools) {
+		this.pools = pools;
 		this.sessions = sessions;
 		this.games = games;
 		this.seen = seen;
@@ -52,8 +61,13 @@ public class AdaptiveService {
 	}
 
 	public AdaptiveSession start(int gameId, int userId) {
-		Game game = games.findById(gameId).or(() -> gameSource.fetch(gameId).map(games::save))
-				.orElseThrow(() -> new NotFoundException("No game " + gameId));
+		return start(gameId, userId, null);
+	}
+
+	/** @param country the player's country (ISO code, may be null): only its questions and general ones are used */
+	public AdaptiveSession start(int gameId, int userId, String country) {
+		Game game = pools.withPool(games.findById(gameId).or(() -> gameSource.fetch(gameId).map(games::save))
+				.orElseThrow(() -> new NotFoundException("No game " + gameId))).forCountry(country);
 		List<Integer> ids = game.questions() == null ? List.of()
 				: game.questions().stream().filter(java.util.Objects::nonNull).map(Game.Question::questionId).toList();
 		Map<Integer, Instant> lastSeen = seen.findByUserIdAndQuestionIdIn(userId, ids).stream()

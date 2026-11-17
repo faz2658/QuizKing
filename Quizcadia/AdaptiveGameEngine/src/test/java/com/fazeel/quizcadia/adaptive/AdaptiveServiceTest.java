@@ -119,4 +119,35 @@ class AdaptiveServiceTest {
 		verify(events, times(1)).sessionCompleted(org.mockito.ArgumentMatchers.argThat(r -> r.answers().size() == 3
 				&& r.score() == 30 && r.userId() == 9 && Set.of(1, 2, 3, 4, 5).contains(r.answers().get(0).questionId())));
 	}
+
+	// --- shared topics: questions loaded from the question service, other countries' left out ---
+
+	static Game.Question tagged(int id, String country) {
+		return new Game.Question(id, 1, "Q" + id, "right", "wrong", null, null, "right", country);
+	}
+
+	@Test
+	void aGameThatReferencesItsTopicUsesTheTopicsQuestionsForThePlayersCountry() {
+		java.util.List<Game.Question> topic = new java.util.ArrayList<>();
+		for (int i = 0; i < 10; i++) {
+			topic.add(tagged(100 + i, "IN"));
+			topic.add(tagged(200 + i, null));
+			topic.add(tagged(300 + i, "KE"));
+		}
+		Clock clock = Clock.fixed(Instant.parse("2026-01-01T10:00:00Z"), ZoneOffset.UTC);
+		service = new AdaptiveService(sessions, games, seen, source, events, new PoolBuilder(new Random(3)),
+				new AdaptiveRules(4, 60, 30, 3, 20, 10), clock,
+				new TopicPools(id -> id == 7 ? topic : java.util.List.of(), clock, java.time.Duration.ofMinutes(10)));
+		when(games.findById(5)).thenReturn(Optional.of(new Game(5, "History", 1, new Game.Topic(7, "History"), null)));
+
+		AdaptiveSession india = service.start(5, 9, "IN");
+		AdaptiveSession unknown = service.start(5, 9, null);
+
+		assertThat(ids(india)).isNotEmpty().allMatch(id -> id < 300);
+		assertThat(ids(unknown)).isNotEmpty().allMatch(id -> id >= 200 && id < 300);
+	}
+
+	private static java.util.List<Integer> ids(AdaptiveSession s) {
+		return s.pool().stream().map(PooledQuestion::questionId).toList();
+	}
 }

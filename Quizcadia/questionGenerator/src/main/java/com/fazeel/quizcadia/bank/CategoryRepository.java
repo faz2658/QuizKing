@@ -9,4 +9,7 @@ import com.fazeel.quizcadia.domain.Category;
 public interface CategoryRepository extends MongoRepository<Category, Integer> {
 
 	Optional<Category> findByCategoryNameIgnoreCase(String name);
+
+	/** The category holding the topic with this id (topic ids are unique across the bank). */
+	Optional<Category> findFirstByTopic_TopicId(int topicId);
 }

@@ -137,4 +137,22 @@ public class DailyChallengeServiceTest {
 	static List<Integer> ids(DailyChallenge c) {
 		return c.questions().stream().map(SessionQuestion::getQuestionId).toList();
 	}
+
+	@Test
+	void theSharedChallengeLeavesCountrySpecificQuestionsOut() {
+		java.util.List<com.fazeel.quizcadia.domain.Questions> qs = new java.util.ArrayList<>();
+		for (int i = 0; i < 12; i++) {
+			com.fazeel.quizcadia.domain.Questions home = com.fazeel.quizcadia.session.TestGames.question(100 + i, i % 3 + 1, "a", "a", "b");
+			home.setCountry("IN");
+			qs.add(home);
+			qs.add(com.fazeel.quizcadia.session.TestGames.question(200 + i, i % 3 + 1, "a", "a", "b"));
+		}
+		com.fazeel.quizcadia.domain.Game g = com.fazeel.quizcadia.session.TestGames.game(1, null,
+				qs.toArray(com.fazeel.quizcadia.domain.Questions[]::new));
+
+		DailyChallengeService.Picked p = DailyChallengeService.pick(42, java.util.List.of(g), 3, 3, 3);
+
+		org.assertj.core.api.Assertions.assertThat(p.questions()).hasSize(9)
+				.allMatch(q -> q.getQuestionId() >= 200);
+	}
 }

@@ -44,6 +44,16 @@ public class MultiPlayerGame {
 	
 	private Topic topic;
 	private List<Questions> autoquestions;
+	/** How many questions the game draws from (its topic's pool when the questions are not copied in). */
+	private Integer questionCount;
+
+	public Integer getQuestionCount() {
+		return questionCount;
+	}
+
+	public void setQuestionCount(Integer questionCount) {
+		this.questionCount = questionCount;
+	}
 	
 	/**
 	 * Default Constructor

@@ -40,6 +40,11 @@ public class AdaptiveSession {
 	private AdaptiveRules rules;
 
 	private List<PooledQuestion> pool = new ArrayList<>();
+
+	/** The questions this run may ask (package-private, for tests). */
+	List<PooledQuestion> pool() {
+		return pool;
+	}
 	private List<AskedQuestion> asked = new ArrayList<>();
 	private int level = MIN_LEVEL;
 	private int highestLevel = MIN_LEVEL;

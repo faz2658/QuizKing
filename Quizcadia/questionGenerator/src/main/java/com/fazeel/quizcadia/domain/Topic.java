@@ -14,6 +14,27 @@ public class Topic {
 	    private List<Questions> questions;
 	    /** Questions deleted from the bank, so copies elsewhere (the game manager's pools) drop them too. */
 	    private List<Integer> removedQuestionIds;
+	    /** In messages only (not stored): how many playable questions the topic has, and per level 1-3. */
+	    @org.springframework.data.annotation.Transient
+	    private Integer questionCount;
+	    @org.springframework.data.annotation.Transient
+	    private List<Integer> levelCounts;
+
+	public Integer getQuestionCount() {
+		return questionCount;
+	}
+
+	public void setQuestionCount(Integer questionCount) {
+		this.questionCount = questionCount;
+	}
+
+	public List<Integer> getLevelCounts() {
+		return levelCounts;
+	}
+
+	public void setLevelCounts(List<Integer> levelCounts) {
+		this.levelCounts = levelCounts;
+	}
 		@JsonCreator
 		public Topic() {
 			super();
