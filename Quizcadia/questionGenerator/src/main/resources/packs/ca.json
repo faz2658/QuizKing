@@ -2520,6 +2520,958 @@
    ]
   },
   {
+   "category": "Art",
+   "name": "Art",
+   "questions": [
+    {
+     "q": "Which group of Canadian landscape painters formed in 1920?",
+     "a": "Group of Seven",
+     "wrong": [
+      "Painters Eleven",
+      "Beaver Hall Group",
+      "Automatistes"
+     ],
+     "level": 1,
+     "why": "They painted the northern wilderness."
+    },
+    {
+     "q": "Which painter, linked to the Group of Seven, died mysteriously in Algonquin Park in 1917?",
+     "a": "Tom Thomson",
+     "wrong": [
+      "Lawren Harris",
+      "A. Y. Jackson",
+      "J. E. H. MacDonald"
+     ],
+     "level": 1,
+     "why": "He painted 'The Jack Pine'."
+    },
+    {
+     "q": "Which Tom Thomson painting shows a lone pine against a lake?",
+     "a": "The Jack Pine",
+     "wrong": [
+      "The West Wind",
+      "The Red Maple",
+      "Algoma in October"
+     ],
+     "level": 1,
+     "why": "It hangs in the National Gallery of Canada."
+    },
+    {
+     "q": "Which British Columbia painter is famous for totem poles and forests?",
+     "a": "Emily Carr",
+     "wrong": [
+      "Lawren Harris",
+      "Mary Pratt",
+      "Christiane Pflug"
+     ],
+     "level": 1,
+     "why": "She also wrote 'Klee Wyck'."
+    },
+    {
+     "q": "Which Group of Seven painter is known for stark, simplified Arctic and mountain scenes?",
+     "a": "Lawren Harris",
+     "wrong": [
+      "A. J. Casson",
+      "Frank Johnston",
+      "Franklin Carmichael"
+     ],
+     "level": 1,
+     "why": "His work sells for millions."
+    },
+    {
+     "q": "Which Ottawa museum holds the nation's art collection?",
+     "a": "National Gallery of Canada",
+     "wrong": [
+      "Art Gallery of Ontario",
+      "Royal Ontario Museum",
+      "Canadian Museum of History"
+     ],
+     "level": 1,
+     "why": "Its building was designed by Moshe Safdie."
+    },
+    {
+     "q": "Which giant spider sculpture stands outside the National Gallery of Canada?",
+     "a": "Maman",
+     "wrong": [
+      "Spider Queen",
+      "Tarantula",
+      "Arachne"
+     ],
+     "level": 1,
+     "why": "Louise Bourgeois made it."
+    },
+    {
+     "q": "Which Toronto gallery was redesigned by Frank Gehry in 2008?",
+     "a": "Art Gallery of Ontario",
+     "wrong": [
+      "Royal Ontario Museum",
+      "Power Plant",
+      "McMichael Gallery"
+     ],
+     "level": 1,
+     "why": "Gehry grew up near it."
+    },
+    {
+     "q": "Which Toronto-born architect designed the Guggenheim Bilbao?",
+     "a": "Frank Gehry",
+     "wrong": [
+      "Moshe Safdie",
+      "Arthur Erickson",
+      "Raymond Moriyama"
+     ],
+     "level": 1,
+     "why": "He was born in 1929."
+    },
+    {
+     "q": "Which Montreal housing complex of stacked boxes was built for Expo 67?",
+     "a": "Habitat 67",
+     "wrong": [
+      "Olympic Stadium",
+      "Place Ville Marie",
+      "Biosphère"
+     ],
+     "level": 1,
+     "why": "Moshe Safdie designed it."
+    },
+    {
+     "q": "Which dome at Expo 67 was designed by Buckminster Fuller?",
+     "a": "Montreal Biosphère",
+     "wrong": [
+      "Habitat 67",
+      "Olympic Stadium",
+      "Saddledome"
+     ],
+     "level": 1,
+     "why": "It is now an environment museum."
+    },
+    {
+     "q": "Which Toronto museum's crystal-shaped extension opened in 2007?",
+     "a": "Royal Ontario Museum",
+     "wrong": [
+      "Art Gallery of Ontario",
+      "Aga Khan Museum",
+      "Bata Shoe Museum"
+     ],
+     "level": 1,
+     "why": "It is called the Michael Lee-Chin Crystal."
+    },
+    {
+     "q": "Which Inuit art form is carved from soapstone?",
+     "a": "Inuit stone carving",
+     "wrong": [
+      "Totem carving",
+      "Basketry",
+      "Quillwork"
+     ],
+     "level": 1,
+     "why": "Cape Dorset is famous for it."
+    },
+    {
+     "q": "Which Nunavut community is famous for Inuit prints?",
+     "a": "Kinngait (Cape Dorset)",
+     "wrong": [
+      "Iqaluit",
+      "Rankin Inlet",
+      "Igloolik"
+     ],
+     "level": 1,
+     "why": "Its print studio began in 1959."
+    },
+    {
+     "q": "Which Inuit artist made the famous print 'The Enchanted Owl'?",
+     "a": "Kenojuak Ashevak",
+     "wrong": [
+      "Pitseolak Ashoona",
+      "Annie Pootoogook",
+      "Karoo Ashevak"
+     ],
+     "level": 1,
+     "why": "It appeared on a 1970 stamp."
+    },
+    {
+     "q": "Which Pacific Northwest art form tells family histories on tall carved poles?",
+     "a": "Totem poles",
+     "wrong": [
+      "Inukshuks",
+      "Dreamcatchers",
+      "Medicine wheels"
+     ],
+     "level": 1,
+     "why": "Haida and Kwakwaka'wakw carvers make them."
+    },
+    {
+     "q": "Which Haida artist made 'The Spirit of Haida Gwaii' sculpture?",
+     "a": "Bill Reid",
+     "wrong": [
+      "Robert Davidson",
+      "Norval Morrisseau",
+      "Mungo Martin"
+     ],
+     "level": 1,
+     "why": "A version appeared on the $20 note."
+    },
+    {
+     "q": "Which Ojibwe artist founded the Woodland School of art?",
+     "a": "Norval Morrisseau",
+     "wrong": [
+      "Daphne Odjig",
+      "Alex Janvier",
+      "Carl Ray"
+     ],
+     "level": 1,
+     "why": "He was called the 'Picasso of the North'."
+    },
+    {
+     "q": "Which Quebec art movement signed the 1948 'Refus global' manifesto?",
+     "a": "Automatistes",
+     "wrong": [
+      "Group of Seven",
+      "Plasticiens",
+      "Painters Eleven"
+     ],
+     "level": 1,
+     "why": "It challenged Quebec's conservatism."
+    },
+    {
+     "q": "Which Automatiste painter became famous in Paris for thick abstract canvases?",
+     "a": "Jean-Paul Riopelle",
+     "wrong": [
+      "Paul-Émile Borduas",
+      "Fernand Leduc",
+      "Jean McEwen"
+     ],
+     "level": 1,
+     "why": "He was a key figure of Quebec art."
+    },
+    {
+     "q": "Which Quebec painter wrote the 'Refus global' manifesto?",
+     "a": "Paul-Émile Borduas",
+     "wrong": [
+      "Jean-Paul Riopelle",
+      "Marcelle Ferron",
+      "Alfred Pellan"
+     ],
+     "level": 1,
+     "why": "He lost his teaching job over it."
+    },
+    {
+     "q": "Which Canadian painter is known for realistic scenes of Maritime life?",
+     "a": "Alex Colville",
+     "wrong": [
+      "Christopher Pratt",
+      "Mary Pratt",
+      "David Milne"
+     ],
+     "level": 1,
+     "why": "'Horse and Train' is one of his best known."
+    },
+    {
+     "q": "Which Newfoundland painter is known for glowing still lifes of jelly jars?",
+     "a": "Mary Pratt",
+     "wrong": [
+      "Christopher Pratt",
+      "Alex Colville",
+      "Emily Carr"
+     ],
+     "level": 1,
+     "why": "She was married to Christopher Pratt."
+    },
+    {
+     "q": "Which Toronto group of abstract painters formed in 1953?",
+     "a": "Painters Eleven",
+     "wrong": [
+      "Group of Seven",
+      "Automatistes",
+      "Regina Five"
+     ],
+     "level": 1,
+     "why": "It brought abstraction to Ontario."
+    },
+    {
+     "q": "Which Kleinburg gallery holds a large Group of Seven collection?",
+     "a": "McMichael Canadian Art Collection",
+     "wrong": [
+      "Art Gallery of Ontario",
+      "National Gallery",
+      "Beaverbrook Art Gallery"
+     ],
+     "level": 1,
+     "why": "Six of the Group are buried there."
+    },
+    {
+     "q": "Which Fredericton gallery holds Salvador Dalí's 'Santiago El Grande'?",
+     "a": "Beaverbrook Art Gallery",
+     "wrong": [
+      "Art Gallery of Nova Scotia",
+      "National Gallery",
+      "Musée des beaux-arts"
+     ],
+     "level": 1,
+     "why": "Lord Beaverbrook founded it."
+    },
+    {
+     "q": "Which Nova Scotia folk painter's tiny house is shown in a Halifax gallery?",
+     "a": "Maud Lewis",
+     "wrong": [
+      "Emily Carr",
+      "Mary Pratt",
+      "Prudence Heward"
+     ],
+     "level": 1,
+     "why": "The film 'Maudie' tells her story."
+    },
+    {
+     "q": "Which Montreal museum is the oldest art museum in Canada?",
+     "a": "Montreal Museum of Fine Arts",
+     "wrong": [
+      "National Gallery",
+      "Art Gallery of Ontario",
+      "Musée d'art contemporain"
+     ],
+     "level": 1,
+     "why": "It was founded in 1860."
+    },
+    {
+     "q": "Which Indigenous architect designed the Canadian Museum of History?",
+     "a": "Douglas Cardinal",
+     "wrong": [
+      "Arthur Erickson",
+      "Moshe Safdie",
+      "Raymond Moriyama"
+     ],
+     "level": 1,
+     "why": "Its curved walls echo the land."
+    },
+    {
+     "q": "Which Vancouver architect designed the Museum of Anthropology at UBC?",
+     "a": "Arthur Erickson",
+     "wrong": [
+      "Douglas Cardinal",
+      "Moshe Safdie",
+      "Bing Thom"
+     ],
+     "level": 1,
+     "why": "It holds many totem poles."
+    },
+    {
+     "q": "Which Winnipeg museum, opened in 2014, focuses on human rights?",
+     "a": "Canadian Museum for Human Rights",
+     "wrong": [
+      "Canadian War Museum",
+      "Canadian Museum of Immigration",
+      "Manitoba Museum"
+     ],
+     "level": 1,
+     "why": "Antoine Predock designed it."
+    },
+    {
+     "q": "Which 'inukshuk' sculpture became the symbol of the 2010 Winter Olympics?",
+     "a": "Ilanaaq",
+     "wrong": [
+      "Quatchi",
+      "Miga",
+      "Sumi"
+     ],
+     "level": 1,
+     "why": "It was based on a stone figure."
+    },
+    {
+     "q": "What is an inukshuk?",
+     "a": "A stone landmark built by the Inuit",
+     "wrong": [
+      "A sealskin boat",
+      "A snow house",
+      "A carved mask"
+     ],
+     "level": 1,
+     "why": "It can mark routes or hunting spots."
+    },
+    {
+     "q": "Which Vancouver Island Kwakwaka'wakw carver revived totem pole carving in the 1950s?",
+     "a": "Mungo Martin",
+     "wrong": [
+      "Bill Reid",
+      "Robert Davidson",
+      "Charles Edenshaw"
+     ],
+     "level": 1,
+     "why": "He carved poles in Thunderbird Park."
+    },
+    {
+     "q": "Which Canadian photographer is famous for his portrait of a scowling Winston Churchill?",
+     "a": "Yousuf Karsh",
+     "wrong": [
+      "Edward Burtynsky",
+      "Jeff Wall",
+      "Freeman Patterson"
+     ],
+     "level": 1,
+     "why": "He took it in Ottawa in 1941."
+    },
+    {
+     "q": "Which Canadian photographer shows industrial landscapes from above?",
+     "a": "Edward Burtynsky",
+     "wrong": [
+      "Jeff Wall",
+      "Yousuf Karsh",
+      "Stan Douglas"
+     ],
+     "level": 1,
+     "why": "His film 'Manufactured Landscapes' came out in 2006."
+    },
+    {
+     "q": "Which Vancouver artist is known for large staged photographs in lightboxes?",
+     "a": "Jeff Wall",
+     "wrong": [
+      "Edward Burtynsky",
+      "Rodney Graham",
+      "Stan Douglas"
+     ],
+     "level": 1,
+     "why": "He is part of the Vancouver School."
+    },
+    {
+     "q": "Which Group of Seven painter designed Canada's coat of arms in 1921?",
+     "a": "J. E. H. MacDonald",
+     "wrong": [
+      "Lawren Harris",
+      "A. Y. Jackson",
+      "Arthur Lismer"
+     ],
+     "level": 2,
+     "why": "He was also a graphic designer."
+    },
+    {
+     "q": "Which Group of Seven painter spent the most time in Quebec villages?",
+     "a": "A. Y. Jackson",
+     "wrong": [
+      "Arthur Lismer",
+      "Frederick Varley",
+      "Frank Johnston"
+     ],
+     "level": 2,
+     "why": "He lived to 91."
+    },
+    {
+     "q": "Which Group of Seven painter later taught art in South Africa and Montreal?",
+     "a": "Arthur Lismer",
+     "wrong": [
+      "Frederick Varley",
+      "Franz Johnston",
+      "Lawren Harris"
+     ],
+     "level": 2,
+     "why": "He was a pioneer of art education."
+    },
+    {
+     "q": "Which Group of Seven painter is famous for portraits as well as landscapes?",
+     "a": "Frederick Varley",
+     "wrong": [
+      "A. J. Casson",
+      "Frank Johnston",
+      "J. E. H. MacDonald"
+     ],
+     "level": 2,
+     "why": "He taught in Vancouver."
+    },
+    {
+     "q": "Which Group of Seven painting by Varley shows a stormy Georgian Bay?",
+     "a": "Stormy Weather, Georgian Bay",
+     "wrong": [
+      "The West Wind",
+      "The Solemn Land",
+      "Falls, Montreal River"
+     ],
+     "level": 2,
+     "why": "It hangs in the National Gallery."
+    },
+    {
+     "q": "Which Group of Seven painter, J. E. H. MacDonald, painted 'The Solemn Land'?",
+     "a": "J. E. H. MacDonald",
+     "wrong": [
+      "Tom Thomson",
+      "Lawren Harris",
+      "Arthur Lismer"
+     ],
+     "level": 2,
+     "why": "It shows the Montreal River in Algoma."
+    },
+    {
+     "q": "Which Montreal women's art group of the 1920s was named after a street?",
+     "a": "Beaver Hall Group",
+     "wrong": [
+      "Painters Eleven",
+      "Group of Seven",
+      "Refus Global"
+     ],
+     "level": 2,
+     "why": "Prudence Heward was a member."
+    },
+    {
+     "q": "Which American painter's 'Voice of Fire' caused a stir when Canada's National Gallery bought it?",
+     "a": "Barnett Newman",
+     "wrong": [
+      "Jean-Paul Riopelle",
+      "Jack Bush",
+      "Guido Molinari"
+     ],
+     "level": 2,
+     "why": "It cost $1.8 million in 1990."
+    },
+    {
+     "q": "Which Painters Eleven member became famous for colour-field painting?",
+     "a": "Jack Bush",
+     "wrong": [
+      "Harold Town",
+      "William Ronald",
+      "Tom Hodgson"
+     ],
+     "level": 2,
+     "why": "Clement Greenberg admired him."
+    },
+    {
+     "q": "Which Indigenous artist made the 'Indian Group of Seven' with Daphne Odjig and others?",
+     "a": "Professional Native Indian Artists Inc.",
+     "wrong": [
+      "Woodland School",
+      "Group of Seven",
+      "Kiowa Six"
+     ],
+     "level": 2,
+     "why": "It was formed in 1973."
+    },
+    {
+     "q": "Which Odawa-Potawatomi artist was a founder of the 'Indian Group of Seven'?",
+     "a": "Daphne Odjig",
+     "wrong": [
+      "Norval Morrisseau",
+      "Alex Janvier",
+      "Jackson Beardy"
+     ],
+     "level": 2,
+     "why": "She painted bold Woodland-style murals."
+    },
+    {
+     "q": "Which Dene artist is known for curving abstract paintings?",
+     "a": "Alex Janvier",
+     "wrong": [
+      "Norval Morrisseau",
+      "Daphne Odjig",
+      "Kent Monkman"
+     ],
+     "level": 2,
+     "why": "He painted the 'Morning Star' dome at the Museum of History."
+    },
+    {
+     "q": "Which Cree artist created the drag alter ego Miss Chief Eagle Testickle?",
+     "a": "Kent Monkman",
+     "wrong": [
+      "Alex Janvier",
+      "Brian Jungen",
+      "Rebecca Belmore"
+     ],
+     "level": 2,
+     "why": "He repaints history from Indigenous points of view."
+    },
+    {
+     "q": "Which Dunne-za artist makes sculptures from Nike sneakers shaped like masks?",
+     "a": "Brian Jungen",
+     "wrong": [
+      "Kent Monkman",
+      "Alex Janvier",
+      "Kenojuak Ashevak"
+     ],
+     "level": 2,
+     "why": "The series is called 'Prototype for New Understanding'."
+    },
+    {
+     "q": "Which Anishinaabe artist represented Canada at the 2005 Venice Biennale?",
+     "a": "Rebecca Belmore",
+     "wrong": [
+      "Kent Monkman",
+      "Daphne Odjig",
+      "Shuvinai Ashoona"
+     ],
+     "level": 2,
+     "why": "She makes performance art."
+    },
+    {
+     "q": "Which Inuit artist from Kinngait won the Sobey Art Award in 2006 for her drawings?",
+     "a": "Annie Pootoogook",
+     "wrong": [
+      "Kenojuak Ashevak",
+      "Shuvinai Ashoona",
+      "Pitseolak Ashoona"
+     ],
+     "level": 2,
+     "why": "She drew everyday modern life."
+    },
+    {
+     "q": "Which award is Canada's top prize for young contemporary artists?",
+     "a": "Sobey Art Award",
+     "wrong": [
+      "Giller Prize",
+      "Governor General's Award",
+      "Juno Award"
+     ],
+     "level": 2,
+     "why": "It began in 2002."
+    },
+    {
+     "q": "Which Haida artist is famous for prints and totem poles, and raised Haida Gwaii's first new pole in 1969?",
+     "a": "Robert Davidson",
+     "wrong": [
+      "Bill Reid",
+      "Mungo Martin",
+      "Charles Edenshaw"
+     ],
+     "level": 2,
+     "why": "It was raised in Masset."
+    },
+    {
+     "q": "Which giant silver nickel sculpture stands in Sudbury?",
+     "a": "Big Nickel",
+     "wrong": [
+      "Big Loonie",
+      "Giant Toonie",
+      "Silver Dollar"
+     ],
+     "level": 2,
+     "why": "It is 9 m tall."
+    },
+    {
+     "q": "Which giant loonie stands in Echo Bay, Ontario?",
+     "a": "Big Loonie",
+     "wrong": [
+      "Big Nickel",
+      "Giant Beaver",
+      "Wawa Goose"
+     ],
+     "level": 2,
+     "why": "It celebrates the loon coin's designer's home."
+    },
+    {
+     "q": "Which Alberta town has a giant Ukrainian Easter egg?",
+     "a": "Vegreville",
+     "wrong": [
+      "Vulcan",
+      "Drumheller",
+      "Glendon"
+     ],
+     "level": 2,
+     "why": "It is called a pysanka."
+    },
+    {
+     "q": "Which Ontario town's giant Canada goose statue greets highway drivers?",
+     "a": "Wawa",
+     "wrong": [
+      "Sudbury",
+      "Kenora",
+      "Sault Ste. Marie"
+     ],
+     "level": 2,
+     "why": "It was put up in 1960."
+    },
+    {
+     "q": "Who designed the Château-style Supreme Court building in Ottawa?",
+     "a": "Ernest Cormier",
+     "wrong": [
+      "Arthur Erickson",
+      "Thomas Fuller",
+      "Moshe Safdie"
+     ],
+     "level": 2,
+     "why": "It opened in 1939."
+    },
+    {
+     "q": "Which architectural style do Canada's Parliament buildings use?",
+     "a": "Gothic Revival",
+     "wrong": [
+      "Neoclassical",
+      "Beaux-Arts",
+      "Art Deco"
+     ],
+     "level": 2,
+     "why": "The first buildings burned in 1916."
+    },
+    {
+     "q": "Which railway hotel style with copper roofs is common in Canada?",
+     "a": "Château style",
+     "wrong": [
+      "Brutalist style",
+      "Prairie style",
+      "Art Nouveau"
+     ],
+     "level": 2,
+     "why": "The Château Frontenac is the best known."
+    },
+    {
+     "q": "Which hotel in Quebec City is called the world's most photographed hotel?",
+     "a": "Château Frontenac",
+     "wrong": [
+      "Fairmont Banff Springs",
+      "Château Laurier",
+      "Royal York"
+     ],
+     "level": 2,
+     "why": "It opened in 1893."
+    },
+    {
+     "q": "Which hotel in Alberta is called the 'Castle in the Rockies'?",
+     "a": "Fairmont Banff Springs",
+     "wrong": [
+      "Château Lake Louise",
+      "Jasper Park Lodge",
+      "Prince of Wales Hotel"
+     ],
+     "level": 2,
+     "why": "It opened in 1888."
+    },
+    {
+     "q": "Which glass skyscraper in Montreal is a cross-shaped I. M. Pei design?",
+     "a": "Place Ville Marie",
+     "wrong": [
+      "Tour de la Bourse",
+      "1000 de La Gauchetière",
+      "Complexe Desjardins"
+     ],
+     "level": 2,
+     "why": "It opened in 1962."
+    },
+    {
+     "q": "Which brutalist Toronto city hall has two curved towers?",
+     "a": "Toronto City Hall",
+     "wrong": [
+      "Metro Hall",
+      "Queen's Park",
+      "Union Station"
+     ],
+     "level": 2,
+     "why": "Viljo Revell of Finland designed it."
+    },
+    {
+     "q": "Which Montreal stadium has an inclined tower, the tallest in the world?",
+     "a": "Olympic Stadium",
+     "wrong": [
+      "Bell Centre",
+      "Saputo Stadium",
+      "Percival Molson Stadium"
+     ],
+     "level": 2,
+     "why": "It was built for 1976."
+    },
+    {
+     "q": "Which painting by Lawren Harris sold for over $11 million in 2016?",
+     "a": "Mountain Forms",
+     "wrong": [
+      "North Shore, Lake Superior",
+      "Lake and Mountains",
+      "Icebergs, Davis Strait"
+     ],
+     "level": 3,
+     "why": "It set a Canadian record."
+    },
+    {
+     "q": "Which Emily Carr painting shows a carved raven pole in an overgrown village?",
+     "a": "Big Raven",
+     "wrong": [
+      "Klee Wyck",
+      "Scorned as Timber, Beloved of the Sky",
+      "The Crazy Stair"
+     ],
+     "level": 3,
+     "why": "It shows a carved raven pole."
+    },
+    {
+     "q": "Which Emily Carr book about her life among First Nations won the Governor General's Award?",
+     "a": "Klee Wyck",
+     "wrong": [
+      "Growing Pains",
+      "The Book of Small",
+      "Hundreds and Thousands"
+     ],
+     "level": 3,
+     "why": "It won in 1941."
+    },
+    {
+     "q": "Which artist made Toronto's 'Flight Stop' geese sculpture in the Eaton Centre?",
+     "a": "Michael Snow",
+     "wrong": [
+      "Jack Bush",
+      "Harold Town",
+      "Joyce Wieland"
+     ],
+     "level": 3,
+     "why": "Sixty geese hang from the ceiling."
+    },
+    {
+     "q": "Which Toronto artist made quilts and films, and was the first living woman to have a solo show at the National Gallery?",
+     "a": "Joyce Wieland",
+     "wrong": [
+      "Michael Snow",
+      "Mary Pratt",
+      "Emily Carr"
+     ],
+     "level": 3,
+     "why": "The show was in 1971."
+    },
+    {
+     "q": "Which Montreal painter used hard-edged stripes in the Plasticien style?",
+     "a": "Guido Molinari",
+     "wrong": [
+      "Jean-Paul Riopelle",
+      "Paul-Émile Borduas",
+      "Marcelle Ferron"
+     ],
+     "level": 3,
+     "why": "He was a leader of the Plasticiens."
+    },
+    {
+     "q": "Which Automatiste artist made huge stained-glass walls in Montreal's metro?",
+     "a": "Marcelle Ferron",
+     "wrong": [
+      "Paul-Émile Borduas",
+      "Jean-Paul Riopelle",
+      "Fernand Leduc"
+     ],
+     "level": 3,
+     "why": "They are at Champ-de-Mars station."
+    },
+    {
+     "q": "Which Quebec painter was famous for scenes of rural Quebec in the early 1900s?",
+     "a": "Clarence Gagnon",
+     "wrong": [
+      "Cornelius Krieghoff",
+      "Marc-Aurèle Fortin",
+      "Horatio Walker"
+     ],
+     "level": 3,
+     "why": "He illustrated 'Maria Chapdelaine'."
+    },
+    {
+     "q": "Which 1800s painter showed habitant life and winter sleigh scenes in Quebec?",
+     "a": "Cornelius Krieghoff",
+     "wrong": [
+      "Clarence Gagnon",
+      "Paul Kane",
+      "Robert Harris"
+     ],
+     "level": 3,
+     "why": "He was born in Amsterdam."
+    },
+    {
+     "q": "Which painter travelled west in the 1840s to paint First Nations peoples?",
+     "a": "Paul Kane",
+     "wrong": [
+      "Cornelius Krieghoff",
+      "Frederick Verner",
+      "George Catlin"
+     ],
+     "level": 3,
+     "why": "His book is 'Wanderings of an Artist'."
+    },
+    {
+     "q": "Which painter made 'The Fathers of Confederation', lost in the 1916 fire?",
+     "a": "Robert Harris",
+     "wrong": [
+      "Paul Kane",
+      "Cornelius Krieghoff",
+      "Homer Watson"
+     ],
+     "level": 3,
+     "why": "A copy hangs in Parliament."
+    },
+    {
+     "q": "Which Ontario painter of farm landscapes was praised by Oscar Wilde?",
+     "a": "Homer Watson",
+     "wrong": [
+      "Robert Harris",
+      "Horatio Walker",
+      "Paul Peel"
+     ],
+     "level": 3,
+     "why": "Wilde called him the 'Canadian Constable'."
+    },
+    {
+     "q": "Which Ontario painter's 'After the Bath' won a medal at the 1890 Paris Salon?",
+     "a": "Paul Peel",
+     "wrong": [
+      "Homer Watson",
+      "Robert Harris",
+      "William Brymner"
+     ],
+     "level": 3,
+     "why": "He died at 32."
+    },
+    {
+     "q": "Which Montreal artist made the bronze 'Illuminated Crowd' sculpture?",
+     "a": "Raymond Mason",
+     "wrong": [
+      "Robert Roussil",
+      "Armand Vaillancourt",
+      "Sorel Etrog"
+     ],
+     "level": 3,
+     "why": "It stands on McGill College Avenue."
+    },
+    {
+     "q": "Which Romanian-born Canadian sculptor designed the Genie award statuette?",
+     "a": "Sorel Etrog",
+     "wrong": [
+      "Armand Vaillancourt",
+      "Michael Snow",
+      "Robert Murray"
+     ],
+     "level": 3,
+     "why": "The award is now the Canadian Screen Award."
+    },
+    {
+     "q": "Which Quebec sculptor made the controversial fountain in San Francisco's Embarcadero?",
+     "a": "Armand Vaillancourt",
+     "wrong": [
+      "Sorel Etrog",
+      "Raymond Mason",
+      "Robert Roussil"
+     ],
+     "level": 3,
+     "why": "It is called the Vaillancourt Fountain."
+    },
+    {
+     "q": "Which Toronto firm's architect Raymond Moriyama designed the Canadian War Museum?",
+     "a": "Raymond Moriyama",
+     "wrong": [
+      "Arthur Erickson",
+      "Douglas Cardinal",
+      "Bing Thom"
+     ],
+     "level": 3,
+     "why": "It opened in 2005."
+    },
+    {
+     "q": "Which Vancouver landmark with white sails hosts cruise ships?",
+     "a": "Canada Place",
+     "wrong": [
+      "Science World",
+      "BC Place",
+      "Harbour Centre"
+     ],
+     "level": 3,
+     "why": "It was the Canada pavilion at Expo 86."
+    },
+    {
+     "q": "Which geodesic dome in Vancouver was built for Expo 86?",
+     "a": "Science World",
+     "wrong": [
+      "Canada Place",
+      "BC Place",
+      "Rogers Arena"
+     ],
+     "level": 3,
+     "why": "It is a science museum."
+    }
+   ]
+  },
+  {
    "category": "Animals",
    "name": "Animals",
    "questions": [
@@ -2533,6 +3485,853 @@
       "Loon"
      ],
      "why": "The fur trade made the beaver a national symbol."
+    },
+    {
+     "q": "Which bird is on the Canadian one-dollar coin?",
+     "a": "Common loon",
+     "wrong": [
+      "Canada goose",
+      "Snowy owl",
+      "Blue jay"
+     ],
+     "level": 1,
+     "why": "That is why it is called the loonie."
+    },
+    {
+     "q": "Which animal is on the Canadian quarter?",
+     "a": "Caribou",
+     "wrong": [
+      "Moose",
+      "Beaver",
+      "Polar bear"
+     ],
+     "level": 1,
+     "why": "It has been on the coin since 1937."
+    },
+    {
+     "q": "Which bear is on the Canadian two-dollar coin?",
+     "a": "Polar bear",
+     "wrong": [
+      "Grizzly bear",
+      "Black bear",
+      "Kermode bear"
+     ],
+     "level": 1,
+     "why": "It stands on an ice floe."
+    },
+    {
+     "q": "Which Manitoba town is called the 'Polar Bear Capital of the World'?",
+     "a": "Churchill",
+     "wrong": [
+      "Thompson",
+      "Iqaluit",
+      "Inuvik"
+     ],
+     "level": 1,
+     "why": "Bears gather there in autumn."
+    },
+    {
+     "q": "Which white whale gathers in the thousands at Churchill each summer?",
+     "a": "Beluga whale",
+     "wrong": [
+      "Narwhal",
+      "Orca",
+      "Bowhead whale"
+     ],
+     "level": 1,
+     "why": "Visitors kayak among them."
+    },
+    {
+     "q": "Which tusked whale lives in Canada's Arctic waters?",
+     "a": "Narwhal",
+     "wrong": [
+      "Beluga",
+      "Walrus",
+      "Bowhead whale"
+     ],
+     "level": 1,
+     "why": "The tusk is a long tooth."
+    },
+    {
+     "q": "Which large deer is the biggest in the world and common in Canada?",
+     "a": "Moose",
+     "wrong": [
+      "Elk",
+      "Caribou",
+      "White-tailed deer"
+     ],
+     "level": 1,
+     "why": "Males can weigh 700 kg."
+    },
+    {
+     "q": "What do Canadians call the reindeer that migrate across the north?",
+     "a": "Caribou",
+     "wrong": [
+      "Moose",
+      "Elk",
+      "Muskox"
+     ],
+     "level": 1,
+     "why": "The Porcupine herd crosses into Alaska."
+    },
+    {
+     "q": "Which shaggy Arctic animal forms a circle to protect its young?",
+     "a": "Muskox",
+     "wrong": [
+      "Bison",
+      "Caribou",
+      "Yak"
+     ],
+     "level": 1,
+     "why": "It survived the Ice Age."
+    },
+    {
+     "q": "Which large animal was saved from extinction in Wood Buffalo National Park?",
+     "a": "Wood bison",
+     "wrong": [
+      "Muskox",
+      "Moose",
+      "Elk"
+     ],
+     "level": 1,
+     "why": "It is the largest land animal in North America."
+    },
+    {
+     "q": "Which park is Canada's largest national park?",
+     "a": "Wood Buffalo National Park",
+     "wrong": [
+      "Banff",
+      "Jasper",
+      "Nahanni"
+     ],
+     "level": 1,
+     "why": "It spans Alberta and the Northwest Territories."
+    },
+    {
+     "q": "Which goose is famous for its V-shaped migration and black neck?",
+     "a": "Canada goose",
+     "wrong": [
+      "Snow goose",
+      "Brant goose",
+      "Barnacle goose"
+     ],
+     "level": 1,
+     "why": "It honks loudly."
+    },
+    {
+     "q": "Which bird is the provincial bird of Ontario and appears on the loonie?",
+     "a": "Common loon",
+     "wrong": [
+      "Snowy owl",
+      "Blue jay",
+      "Great horned owl"
+     ],
+     "level": 1,
+     "why": "Its eerie call carries over lakes."
+    },
+    {
+     "q": "Which bird is Canada's unofficial national bird chosen in 2016 by Canadian Geographic?",
+     "a": "Canada jay (grey jay)",
+     "wrong": [
+      "Common loon",
+      "Snowy owl",
+      "Canada goose"
+     ],
+     "level": 1,
+     "why": "It stays all winter."
+    },
+    {
+     "q": "Which owl is Quebec's provincial bird?",
+     "a": "Snowy owl",
+     "wrong": [
+      "Great horned owl",
+      "Barred owl",
+      "Great grey owl"
+     ],
+     "level": 1,
+     "why": "It hunts lemmings in the Arctic."
+    },
+    {
+     "q": "Which bird is Nova Scotia's provincial bird?",
+     "a": "Osprey",
+     "wrong": [
+      "Blue jay",
+      "Puffin",
+      "Bald eagle"
+     ],
+     "level": 1,
+     "why": "It dives for fish."
+    },
+    {
+     "q": "Which seabird with a colourful beak is Newfoundland and Labrador's bird?",
+     "a": "Atlantic puffin",
+     "wrong": [
+      "Northern gannet",
+      "Razorbill",
+      "Murre"
+     ],
+     "level": 1,
+     "why": "Witless Bay has huge colonies."
+    },
+    {
+     "q": "Which large orange salmon run up British Columbia's rivers?",
+     "a": "Sockeye salmon",
+     "wrong": [
+      "Atlantic salmon",
+      "Coho salmon",
+      "Chinook salmon"
+     ],
+     "level": 1,
+     "why": "The Adams River run is famous."
+    },
+    {
+     "q": "Which killer whale pods live off Vancouver Island?",
+     "a": "Orcas",
+     "wrong": [
+      "Belugas",
+      "Humpbacks",
+      "Grey whales"
+     ],
+     "level": 1,
+     "why": "The southern residents are endangered."
+    },
+    {
+     "q": "Which white bear lives in the Great Bear Rainforest?",
+     "a": "Spirit bear (Kermode bear)",
+     "wrong": [
+      "Polar bear",
+      "Albino grizzly",
+      "Glacier bear"
+     ],
+     "level": 1,
+     "why": "It is a black bear with a rare gene."
+    },
+    {
+     "q": "Which bear with a shoulder hump lives in the Rockies?",
+     "a": "Grizzly bear",
+     "wrong": [
+      "Black bear",
+      "Polar bear",
+      "Kodiak bear"
+     ],
+     "level": 1,
+     "why": "It is a brown bear."
+    },
+    {
+     "q": "Which small striped animal sprays a smelly liquid?",
+     "a": "Skunk",
+     "wrong": [
+      "Raccoon",
+      "Weasel",
+      "Porcupine"
+     ],
+     "level": 1,
+     "why": "It lifts its tail as a warning."
+    },
+    {
+     "q": "Which masked animal raids Toronto's green bins?",
+     "a": "Raccoon",
+     "wrong": [
+      "Skunk",
+      "Opossum",
+      "Badger"
+     ],
+     "level": 1,
+     "why": "Toronto is called its capital."
+    },
+    {
+     "q": "Which wild dog howls across Canada's forests?",
+     "a": "Grey wolf",
+     "wrong": [
+      "Coyote",
+      "Red fox",
+      "Dingo"
+     ],
+     "level": 1,
+     "why": "Algonquin Park runs public wolf howls."
+    },
+    {
+     "q": "Which wild cat with tufted ears lives in Canada's forests?",
+     "a": "Canada lynx",
+     "wrong": [
+      "Bobcat",
+      "Cougar",
+      "Wildcat"
+     ],
+     "level": 1,
+     "why": "It hunts snowshoe hares."
+    },
+    {
+     "q": "Which hare turns white in winter?",
+     "a": "Snowshoe hare",
+     "wrong": [
+      "Arctic fox",
+      "Cottontail",
+      "Jackrabbit"
+     ],
+     "level": 1,
+     "why": "Its big feet work like snowshoes."
+    },
+    {
+     "q": "Which fox turns white in winter in the Arctic?",
+     "a": "Arctic fox",
+     "wrong": [
+      "Red fox",
+      "Swift fox",
+      "Grey fox"
+     ],
+     "level": 1,
+     "why": "It can survive -50 °C."
+    },
+    {
+     "q": "Which small fox was brought back to the prairies after disappearing?",
+     "a": "Swift fox",
+     "wrong": [
+      "Arctic fox",
+      "Red fox",
+      "Kit fox"
+     ],
+     "level": 1,
+     "why": "It was reintroduced from 1983."
+    },
+    {
+     "q": "Which large cat is also called the mountain lion?",
+     "a": "Cougar",
+     "wrong": [
+      "Lynx",
+      "Bobcat",
+      "Jaguar"
+     ],
+     "level": 1,
+     "why": "Vancouver Island has many."
+    },
+    {
+     "q": "Which animal's quills can stick in a dog's nose?",
+     "a": "Porcupine",
+     "wrong": [
+      "Hedgehog",
+      "Skunk",
+      "Marten"
+     ],
+     "level": 1,
+     "why": "It cannot shoot its quills."
+    },
+    {
+     "q": "Which bird of prey is common on Canada's west coast and in winter at Brackendale?",
+     "a": "Bald eagle",
+     "wrong": [
+      "Golden eagle",
+      "Osprey",
+      "Peregrine falcon"
+     ],
+     "level": 1,
+     "why": "Thousands gather at Brackendale."
+    },
+    {
+     "q": "Which Atlantic fish crashed in 1992, closing the Newfoundland fishery?",
+     "a": "Northern cod",
+     "wrong": [
+      "Atlantic salmon",
+      "Herring",
+      "Haddock"
+     ],
+     "level": 1,
+     "why": "About 30,000 jobs were lost."
+    },
+    {
+     "q": "Which sea mammal hunt off Newfoundland drew protests for decades?",
+     "a": "The harp seal hunt",
+     "wrong": [
+      "The walrus hunt",
+      "The whale hunt",
+      "The sea lion hunt"
+     ],
+     "level": 1,
+     "why": "Celebrities campaigned against it."
+    },
+    {
+     "q": "Which huge whale feeds in the Bay of Fundy each summer?",
+     "a": "North Atlantic right whale",
+     "wrong": [
+      "Blue whale",
+      "Sperm whale",
+      "Grey whale"
+     ],
+     "level": 1,
+     "why": "It is one of the rarest whales."
+    },
+    {
+     "q": "Which tall white bird nests only in Wood Buffalo National Park?",
+     "a": "Whooping crane",
+     "wrong": [
+      "Sandhill crane",
+      "Great egret",
+      "Trumpeter swan"
+     ],
+     "level": 2,
+     "why": "Only about 15 birds were left in 1941."
+    },
+    {
+     "q": "Which Canadian national park on Vancouver Island includes the West Coast Trail?",
+     "a": "Pacific Rim National Park Reserve",
+     "wrong": [
+      "Gwaii Haanas",
+      "Glacier",
+      "Yoho"
+     ],
+     "level": 2,
+     "why": "The trail is 75 km long."
+    },
+    {
+     "q": "Which Haida Gwaii park protects land and sea together?",
+     "a": "Gwaii Haanas",
+     "wrong": [
+      "Pacific Rim",
+      "Kluane",
+      "Nahanni"
+     ],
+     "level": 2,
+     "why": "It includes the village of SGang Gwaay."
+    },
+    {
+     "q": "Which Canadian park in Ontario is famous for moose and canoe routes?",
+     "a": "Algonquin Provincial Park",
+     "wrong": [
+      "Killarney",
+      "Quetico",
+      "Bruce Peninsula"
+     ],
+     "level": 2,
+     "why": "It is about three hours from Toronto."
+    },
+    {
+     "q": "Which Alberta park is famous for dinosaur fossils?",
+     "a": "Dinosaur Provincial Park",
+     "wrong": [
+      "Banff National Park",
+      "Writing-on-Stone",
+      "Elk Island"
+     ],
+     "level": 2,
+     "why": "It is a UNESCO site."
+    },
+    {
+     "q": "Which Drumheller museum displays many Canadian dinosaurs?",
+     "a": "Royal Tyrrell Museum",
+     "wrong": [
+      "Royal Ontario Museum",
+      "Canadian Museum of Nature",
+      "Manitoba Museum"
+     ],
+     "level": 2,
+     "why": "It opened in 1985."
+    },
+    {
+     "q": "Which armoured dinosaur found in Alberta is so well preserved it is called a 'dinosaur mummy'?",
+     "a": "Borealopelta",
+     "wrong": [
+      "Albertosaurus",
+      "Edmontosaurus",
+      "Ankylosaurus"
+     ],
+     "level": 2,
+     "why": "Miners found it in 2011."
+    },
+    {
+     "q": "Which predator dinosaur is named after Alberta?",
+     "a": "Albertosaurus",
+     "wrong": [
+      "Tyrannosaurus",
+      "Daspletosaurus",
+      "Gorgosaurus"
+     ],
+     "level": 2,
+     "why": "It was found in 1884."
+    },
+    {
+     "q": "Which ancient sea creature fossils fill the Burgess Shale in Yoho?",
+     "a": "Cambrian sea animals",
+     "wrong": [
+      "Dinosaurs",
+      "Ice Age mammals",
+      "Birds"
+     ],
+     "level": 2,
+     "why": "They are over 500 million years old."
+    },
+    {
+     "q": "Which small mammal's dam-building shaped Canada's history?",
+     "a": "Beaver",
+     "wrong": [
+      "Otter",
+      "Muskrat",
+      "Mink"
+     ],
+     "level": 2,
+     "why": "Its fur drove the fur trade."
+    },
+    {
+     "q": "Which seabird colony on Bonaventure Island is one of the world's largest?",
+     "a": "Northern gannets",
+     "wrong": [
+      "Atlantic puffins",
+      "Murres",
+      "Kittiwakes"
+     ],
+     "level": 2,
+     "why": "It is off Quebec's Gaspé coast."
+    },
+    {
+     "q": "Which turtle is the largest found in Canadian waters?",
+     "a": "Leatherback sea turtle",
+     "wrong": [
+      "Snapping turtle",
+      "Painted turtle",
+      "Green turtle"
+     ],
+     "level": 2,
+     "why": "It visits Nova Scotia to eat jellyfish."
+    },
+    {
+     "q": "Which freshwater turtle is common across southern Canada?",
+     "a": "Painted turtle",
+     "wrong": [
+      "Box turtle",
+      "Softshell turtle",
+      "Leatherback"
+     ],
+     "level": 2,
+     "why": "It basks on logs."
+    },
+    {
+     "q": "Which fierce member of the weasel family is called the 'skunk bear'?",
+     "a": "Wolverine",
+     "wrong": [
+      "Badger",
+      "Fisher",
+      "Marten"
+     ],
+     "level": 2,
+     "why": "It can kill animals much bigger than itself."
+    },
+    {
+     "q": "Which bird is PEI's provincial bird?",
+     "a": "Blue jay",
+     "wrong": [
+      "Cardinal",
+      "Robin",
+      "Northern flicker"
+     ],
+     "level": 2,
+     "why": "It is noisy and bold."
+    },
+    {
+     "q": "Which bird is Alberta's provincial bird?",
+     "a": "Great horned owl",
+     "wrong": [
+      "Snowy owl",
+      "Raven",
+      "Magpie"
+     ],
+     "level": 2,
+     "why": "It hunts at night."
+    },
+    {
+     "q": "Which bird is British Columbia's provincial bird?",
+     "a": "Steller's jay",
+     "wrong": [
+      "Blue jay",
+      "Bald eagle",
+      "Raven"
+     ],
+     "level": 2,
+     "why": "It has a dark crest."
+    },
+    {
+     "q": "Which bird is Manitoba's provincial bird?",
+     "a": "Great grey owl",
+     "wrong": [
+      "Snowy owl",
+      "Great horned owl",
+      "Burrowing owl"
+     ],
+     "level": 2,
+     "why": "It is the tallest owl in North America."
+    },
+    {
+     "q": "Which bird is Saskatchewan's provincial bird?",
+     "a": "Sharp-tailed grouse",
+     "wrong": [
+      "Prairie chicken",
+      "Ring-necked pheasant",
+      "Meadowlark"
+     ],
+     "level": 2,
+     "why": "Its spring dance is famous."
+    },
+    {
+     "q": "Which bird is the Yukon's territorial bird?",
+     "a": "Common raven",
+     "wrong": [
+      "Bald eagle",
+      "Ptarmigan",
+      "Snowy owl"
+     ],
+     "level": 2,
+     "why": "It appears in many First Nations stories."
+    },
+    {
+     "q": "Which bird is Nunavut's territorial bird?",
+     "a": "Rock ptarmigan",
+     "wrong": [
+      "Snowy owl",
+      "Raven",
+      "Gyrfalcon"
+     ],
+     "level": 2,
+     "why": "It turns white in winter."
+    },
+    {
+     "q": "Which bird is the Northwest Territories' territorial bird?",
+     "a": "Gyrfalcon",
+     "wrong": [
+      "Raven",
+      "Snowy owl",
+      "Ptarmigan"
+     ],
+     "level": 2,
+     "why": "It is the largest falcon."
+    },
+    {
+     "q": "Which bird is New Brunswick's provincial bird?",
+     "a": "Black-capped chickadee",
+     "wrong": [
+      "Blue jay",
+      "Robin",
+      "Puffin"
+     ],
+     "level": 2,
+     "why": "It sings its own name."
+    },
+    {
+     "q": "Which bird is Ontario's provincial bird?",
+     "a": "Common loon",
+     "wrong": [
+      "Blue jay",
+      "Cardinal",
+      "Snowy owl"
+     ],
+     "level": 2,
+     "why": "It was chosen in 1994."
+    },
+    {
+     "q": "Which horse breed is called 'the little iron horse'?",
+     "a": "Canadian horse",
+     "wrong": [
+      "Sable Island horse",
+      "Newfoundland pony",
+      "Lac La Croix pony"
+     ],
+     "level": 2,
+     "why": "It came from France in the 1600s."
+    },
+    {
+     "q": "Which island off Nova Scotia has wild horses?",
+     "a": "Sable Island",
+     "wrong": [
+      "Cape Breton Island",
+      "Grand Manan",
+      "Prince Edward Island"
+     ],
+     "level": 2,
+     "why": "It is a national park reserve."
+    },
+    {
+     "q": "Which large working dog comes from Newfoundland?",
+     "a": "Newfoundland dog",
+     "wrong": [
+      "Golden retriever",
+      "Bernese mountain dog",
+      "Saint Bernard"
+     ],
+     "level": 2,
+     "why": "It is a strong swimmer."
+    },
+    {
+     "q": "Which dog breed is named after a region of eastern Canada and is a top family dog?",
+     "a": "Labrador retriever",
+     "wrong": [
+      "Newfoundland dog",
+      "Nova Scotia duck tolling retriever",
+      "Chesapeake retriever"
+     ],
+     "level": 2,
+     "why": "It came from Newfoundland's water dogs."
+    },
+    {
+     "q": "Which Canadian dog breed lures ducks by playing on the shore?",
+     "a": "Nova Scotia duck tolling retriever",
+     "wrong": [
+      "Labrador retriever",
+      "Newfoundland dog",
+      "Canadian Eskimo dog"
+     ],
+     "level": 2,
+     "why": "It is Nova Scotia's provincial dog."
+    },
+    {
+     "q": "Which sled dog breed comes from the Canadian Arctic?",
+     "a": "Canadian Eskimo dog (qimmiq)",
+     "wrong": [
+      "Siberian husky",
+      "Alaskan malamute",
+      "Samoyed"
+     ],
+     "level": 2,
+     "why": "It is one of the oldest breeds."
+    },
+    {
+     "q": "Which bird migrates from Canada's Arctic to Antarctica and back each year?",
+     "a": "Arctic tern",
+     "wrong": [
+      "Canada goose",
+      "Snow goose",
+      "Sandpiper"
+     ],
+     "level": 3,
+     "why": "It flies about 70,000 km a year."
+    },
+    {
+     "q": "Which shorebirds gather by the hundreds of thousands at the Bay of Fundy each August?",
+     "a": "Semipalmated sandpipers",
+     "wrong": [
+      "Arctic terns",
+      "Canada geese",
+      "Puffins"
+     ],
+     "level": 3,
+     "why": "They fatten up on mud shrimp."
+    },
+    {
+     "q": "Which is Ontario's only venomous snake?",
+     "a": "Massasauga rattlesnake",
+     "wrong": [
+      "Timber rattlesnake",
+      "Copperhead",
+      "Water moccasin"
+     ],
+     "level": 3,
+     "why": "It lives around Georgian Bay."
+    },
+    {
+     "q": "Which ancient fish lives in Canada's rivers and can live over 150 years?",
+     "a": "Lake sturgeon",
+     "wrong": [
+      "Atlantic salmon",
+      "Lake trout",
+      "Muskellunge"
+     ],
+     "level": 3,
+     "why": "It can grow over 2 m."
+    },
+    {
+     "q": "Which tiny Arctic rodent's numbers rise and fall in cycles?",
+     "a": "Lemming",
+     "wrong": [
+      "Vole",
+      "Shrew",
+      "Pika"
+     ],
+     "level": 3,
+     "why": "Snowy owls depend on it."
+    },
+    {
+     "q": "Which small rabbit relative calls from rock piles in the Rockies?",
+     "a": "Pika",
+     "wrong": [
+      "Hoary marmot",
+      "Ground squirrel",
+      "Chipmunk"
+     ],
+     "level": 3,
+     "why": "It gathers 'haypiles' for winter."
+    },
+    {
+     "q": "Which large rodent whistles in the mountains?",
+     "a": "Hoary marmot",
+     "wrong": [
+      "Pika",
+      "Groundhog",
+      "Beaver"
+     ],
+     "level": 3,
+     "why": "Whistler, BC, is named after it."
+    },
+    {
+     "q": "Which Ontario groundhog predicts spring each 2 February?",
+     "a": "Wiarton Willie",
+     "wrong": [
+      "Shubenacadie Sam",
+      "Punxsutawney Phil",
+      "Balzac Billy"
+     ],
+     "level": 3,
+     "why": "He lives in Wiarton."
+    },
+    {
+     "q": "Which endangered marmot lives only on Vancouver Island?",
+     "a": "Vancouver Island marmot",
+     "wrong": [
+      "Hoary marmot",
+      "Yellow-bellied marmot",
+      "Olympic marmot"
+     ],
+     "level": 3,
+     "why": "Fewer than 30 were left in 2003."
+    },
+    {
+     "q": "Which mollusc invader has spread through the Great Lakes since the 1980s?",
+     "a": "Zebra mussel",
+     "wrong": [
+      "Asian carp",
+      "Sea lamprey",
+      "Round goby"
+     ],
+     "level": 3,
+     "why": "It clogs water pipes."
+    },
+    {
+     "q": "Which prehistoric sea creature fossil site in Newfoundland is a UNESCO site?",
+     "a": "Mistaken Point",
+     "wrong": [
+      "Joggins",
+      "Miguasha",
+      "Burgess Shale"
+     ],
+     "level": 3,
+     "why": "Its fossils are among the oldest complex life."
+    },
+    {
+     "q": "Which Nova Scotia cliffs hold fossils of early reptiles in tree stumps?",
+     "a": "Joggins Fossil Cliffs",
+     "wrong": [
+      "Mistaken Point",
+      "Miguasha",
+      "Burgess Shale"
+     ],
+     "level": 3,
+     "why": "They are a UNESCO site."
+    },
+    {
+     "q": "Which Quebec park is famous for Devonian fish fossils?",
+     "a": "Miguasha National Park",
+     "wrong": [
+      "Joggins",
+      "Mistaken Point",
+      "Dinosaur Park"
+     ],
+     "level": 3,
+     "why": "It is a UNESCO site."
     }
    ]
   },
