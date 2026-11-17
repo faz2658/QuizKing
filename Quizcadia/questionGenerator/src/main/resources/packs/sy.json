@@ -1,0 +1,346 @@
+{
+ "category": "Syria",
+ "country": "SY",
+ "topics": [
+  {
+   "name": "Syria: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Syrian city is one of the oldest continuously inhabited cities in the world?",
+     "a": "Damascus",
+     "wrong": [
+      "Aleppo",
+      "Homs",
+      "Latakia"
+     ],
+     "why": "It has been lived in for thousands of years."
+    },
+    {
+     "level": 1,
+     "q": "Which desert city ruled by Queen Zenobia challenged Rome?",
+     "a": "Palmyra",
+     "wrong": [
+      "Petra",
+      "Hatra",
+      "Dura-Europos"
+     ],
+     "why": "Its ruins are a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which Muslim dynasty made Damascus its capital in 661?",
+     "a": "Umayyad Caliphate",
+     "wrong": [
+      "Abbasid Caliphate",
+      "Fatimid Caliphate",
+      "Ottoman Empire"
+     ],
+     "why": "The Umayyad Mosque is its legacy."
+    },
+    {
+     "level": 1,
+     "q": "Which country ruled Syria under a mandate after the First World War?",
+     "a": "France",
+     "wrong": [
+      "Britain",
+      "Italy",
+      "Ottoman Empire"
+     ],
+     "why": "Syria became independent in 1946."
+    },
+    {
+     "level": 1,
+     "q": "Which Kurdish sultan who fought the Crusaders is buried in Damascus?",
+     "a": "Saladin",
+     "wrong": [
+      "Baibars",
+      "Nur ad-Din",
+      "Qutuz"
+     ],
+     "why": "His tomb is next to the Umayyad Mosque."
+    },
+    {
+     "level": 1,
+     "q": "In which year did the Syrian civil war begin?",
+     "a": "2011",
+     "wrong": [
+      "2003",
+      "2014",
+      "2008"
+     ],
+     "why": "Millions were displaced."
+    },
+    {
+     "level": 1,
+     "q": "Which Crusader castle in Syria is one of the best preserved in the world?",
+     "a": "Krak des Chevaliers",
+     "wrong": [
+      "Karak Castle",
+      "Kerak of Moab",
+      "Saladin's Citadel of Cairo"
+     ],
+     "why": "The Knights Hospitaller held it."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient city on the coast developed one of the first alphabets?",
+     "a": "Ugarit",
+     "wrong": [
+      "Ebla",
+      "Mari",
+      "Byblos"
+     ],
+     "why": "Its cuneiform alphabet had 30 letters."
+    },
+    {
+     "level": 2,
+     "q": "Which queen of Palmyra declared independence from Rome in 270?",
+     "a": "Zenobia",
+     "wrong": [
+      "Cleopatra",
+      "Dido",
+      "Boudica"
+     ],
+     "why": "Emperor Aurelian defeated her."
+    },
+    {
+     "level": 2,
+     "q": "Which 1958–61 union joined Syria with Egypt?",
+     "a": "United Arab Republic",
+     "wrong": [
+      "Arab Federation",
+      "Arab League",
+      "Federation of Arab Republics"
+     ],
+     "why": "Syria left it in 1961."
+    },
+    {
+     "level": 2,
+     "q": "Which family ruled Syria from 1971 until December 2024?",
+     "a": "Al-Assad family",
+     "wrong": [
+      "Al-Atassi family",
+      "Al-Bitar family",
+      "Al-Quwatli family"
+     ],
+     "why": "Bashar al-Assad fled to Russia in December 2024."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient kingdom's archive of clay tablets was found at Ebla?",
+     "a": "Ebla",
+     "wrong": [
+      "Ugarit",
+      "Mari",
+      "Babylon"
+     ],
+     "why": "About 17,000 tablets were found."
+    },
+    {
+     "level": 3,
+     "q": "Which Roman emperor was born in Syria and built a grand city at Shahba?",
+     "a": "Philip the Arab",
+     "wrong": [
+      "Septimius Severus",
+      "Elagabalus",
+      "Caracalla"
+     ],
+     "why": "He ruled from 244 to 249."
+    },
+    {
+     "level": 3,
+     "q": "Which old market in Aleppo was one of the longest covered souqs?",
+     "a": "Al-Madina Souq",
+     "wrong": [
+      "Souq al-Hamidiyah",
+      "Khan el-Khalili",
+      "Grand Bazaar"
+     ],
+     "why": "It was badly damaged in the war."
+    },
+    {
+     "level": 3,
+     "q": "Which saint is said to have converted on the road to Damascus?",
+     "a": "Paul the Apostle",
+     "wrong": [
+      "Peter",
+      "John",
+      "Thomas"
+     ],
+     "why": "Straight Street in Damascus is linked to him."
+    }
+   ]
+  },
+  {
+   "name": "Syria: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Syria?",
+     "a": "Damascus",
+     "wrong": [
+      "Aleppo",
+      "Homs",
+      "Hama"
+     ],
+     "why": "It is called the 'City of Jasmine'."
+    },
+    {
+     "level": 1,
+     "q": "Which great mosque in Damascus dates from the early 700s?",
+     "a": "Umayyad Mosque",
+     "wrong": [
+      "Al-Aqsa Mosque",
+      "Blue Mosque",
+      "Great Mosque of Kairouan"
+     ],
+     "why": "It has beautiful golden mosaics."
+    },
+    {
+     "level": 1,
+     "q": "Which city's huge medieval citadel stands on a hill?",
+     "a": "Aleppo",
+     "wrong": [
+      "Damascus",
+      "Homs",
+      "Latakia"
+     ],
+     "why": "Aleppo soap is also famous."
+    },
+    {
+     "level": 1,
+     "q": "What is Syria's currency?",
+     "a": "Syrian pound",
+     "wrong": [
+      "Dinar",
+      "Riyal",
+      "Lebanese pound"
+     ],
+     "why": "It is also called the lira."
+    },
+    {
+     "level": 1,
+     "q": "Which river crosses northern and eastern Syria?",
+     "a": "Euphrates",
+     "wrong": [
+      "Nile",
+      "Tigris",
+      "Jordan"
+     ],
+     "why": "The Tabqa Dam forms Lake Assad."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies along Syria's west coast?",
+     "a": "Mediterranean Sea",
+     "wrong": [
+      "Red Sea",
+      "Caspian Sea",
+      "Black Sea"
+     ],
+     "why": "Latakia is its main port."
+    },
+    {
+     "level": 1,
+     "q": "Which olive-oil and laurel soap comes from Aleppo?",
+     "a": "Aleppo soap",
+     "wrong": [
+      "Marseille soap",
+      "Castile soap",
+      "Nablus soap"
+     ],
+     "why": "It has been made for centuries."
+    },
+    {
+     "level": 2,
+     "q": "Which giant wooden water wheels turn in Hama?",
+     "a": "Norias",
+     "wrong": [
+      "Shadufs",
+      "Archimedes screws",
+      "Windmills"
+     ],
+     "why": "Some are over 20 m tall."
+    },
+    {
+     "level": 2,
+     "q": "Which 'dead cities' in the north are abandoned Byzantine villages?",
+     "a": "The Dead Cities",
+     "wrong": [
+      "The Ghost Towns",
+      "The Lost Hamlets",
+      "The Ruins of Mari"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which covered souq in Damascus leads to the Umayyad Mosque?",
+     "a": "Souq al-Hamidiyah",
+     "wrong": [
+      "Al-Madina Souq",
+      "Khan el-Khalili",
+      "Souq Waqif"
+     ],
+     "why": "Its roof is pierced with bullet holes from 1925."
+    },
+    {
+     "level": 2,
+     "q": "Which red pepper and walnut dip is from Aleppo?",
+     "a": "Muhammara",
+     "wrong": [
+      "Hummus",
+      "Baba ghanoush",
+      "Tahini"
+     ],
+     "why": "It is sweetened with pomegranate molasses."
+    },
+    {
+     "level": 2,
+     "q": "Which pastry with cheese and syrup is popular in Syria?",
+     "a": "Kunafa",
+     "wrong": [
+      "Baklava",
+      "Basbousa",
+      "Maamoul"
+     ],
+     "why": "It is topped with pistachios."
+    },
+    {
+     "level": 3,
+     "q": "Which Syrian poet's 'Bread, Hashish and Moon' made him famous?",
+     "a": "Nizar Qabbani",
+     "wrong": [
+      "Adunis",
+      "Mahmoud Darwish",
+      "Muhammad al-Maghut"
+     ],
+     "why": "He was born in Damascus in 1923."
+    },
+    {
+     "level": 3,
+     "q": "Which castle on the coast is named after Saladin?",
+     "a": "Saladin's Castle (Qal'at Salah ed-Din)",
+     "wrong": [
+      "Krak des Chevaliers",
+      "Marqab Castle",
+      "Shaizar"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which Roman theatre city in the south is built of black basalt?",
+     "a": "Bosra",
+     "wrong": [
+      "Apamea",
+      "Palmyra",
+      "Shahba"
+     ],
+     "why": "Its theatre is one of the best preserved."
+    }
+   ]
+  }
+ ]
+}

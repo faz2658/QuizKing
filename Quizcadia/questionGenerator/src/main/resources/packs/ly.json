@@ -1,0 +1,346 @@
+{
+ "category": "Libya",
+ "country": "LY",
+ "topics": [
+  {
+   "name": "Libya: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Who ruled Libya from 1969 to 2011?",
+     "a": "Muammar Gaddafi",
+     "wrong": [
+      "Idris I",
+      "Abdessalam Jalloud",
+      "Fayez al-Sarraj"
+     ],
+     "why": "He took power in a coup."
+    },
+    {
+     "level": 1,
+     "q": "Who was Libya's only king?",
+     "a": "Idris I",
+     "wrong": [
+      "Farouk",
+      "Hussein",
+      "Faisal"
+     ],
+     "why": "He was overthrown in 1969."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Libya become independent?",
+     "a": "1951",
+     "wrong": [
+      "1962",
+      "1945",
+      "1956"
+     ],
+     "why": "It was the first country to gain independence through the UN."
+    },
+    {
+     "level": 1,
+     "q": "Which country colonised Libya from 1911?",
+     "a": "Italy",
+     "wrong": [
+      "France",
+      "Britain",
+      "Spain"
+     ],
+     "why": "It ruled until 1943."
+    },
+    {
+     "level": 1,
+     "q": "Which resistance leader fought the Italians and was executed in 1931?",
+     "a": "Omar Mukhtar",
+     "wrong": [
+      "Idris I",
+      "Ahmed Sharif as-Senussi",
+      "Ramadan Asswehly"
+     ],
+     "why": "He was called the 'Lion of the Desert'."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient Roman city near Tripoli is a UNESCO site?",
+     "a": "Leptis Magna",
+     "wrong": [
+      "Sabratha",
+      "Cyrene",
+      "Carthage"
+     ],
+     "why": "Emperor Septimius Severus was born there."
+    },
+    {
+     "level": 1,
+     "q": "Which 2011 uprising ended Gaddafi's rule?",
+     "a": "Libyan Civil War (17 February Revolution)",
+     "wrong": [
+      "Jasmine Revolution",
+      "Green Revolution",
+      "Arab Winter"
+     ],
+     "why": "NATO supported the rebels."
+    },
+    {
+     "level": 2,
+     "q": "Which Roman emperor was born in Leptis Magna?",
+     "a": "Septimius Severus",
+     "wrong": [
+      "Hadrian",
+      "Trajan",
+      "Caracalla"
+     ],
+     "why": "He ruled from 193 to 211."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient Greek city in the east is a UNESCO site?",
+     "a": "Cyrene",
+     "wrong": [
+      "Apollonia",
+      "Tocra",
+      "Ephesus"
+     ],
+     "why": "It was founded in 631 BC."
+    },
+    {
+     "level": 2,
+     "q": "Which Second World War battles were fought around Tobruk?",
+     "a": "Siege of Tobruk",
+     "wrong": [
+      "Battle of Kasserine",
+      "Battle of Monte Cassino",
+      "Battle of Crete"
+     ],
+     "why": "It was besieged in 1941."
+    },
+    {
+     "level": 2,
+     "q": "What was Gaddafi's political book called?",
+     "a": "The Green Book",
+     "wrong": [
+      "The Red Book",
+      "The Blue Book",
+      "Little Book of Freedom"
+     ],
+     "why": "It set out his 'Third Universal Theory'."
+    },
+    {
+     "level": 2,
+     "q": "Which Sufi order led resistance to Italian rule?",
+     "a": "Senussi",
+     "wrong": [
+      "Qadiriyya",
+      "Tijaniyya",
+      "Shadhiliyya"
+     ],
+     "why": "King Idris was its leader."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient people built cities in the Fezzan desert?",
+     "a": "Garamantes",
+     "wrong": [
+      "Phoenicians",
+      "Vandals",
+      "Nubians"
+     ],
+     "why": "They built underground water channels."
+    },
+    {
+     "level": 3,
+     "q": "Which 1988 bombing was linked to Libyan agents?",
+     "a": "Lockerbie bombing",
+     "wrong": [
+      "Berlin discotheque bombing",
+      "Rome airport attack",
+      "Achille Lauro hijacking"
+     ],
+     "why": "A plane exploded over Scotland."
+    },
+    {
+     "level": 3,
+     "q": "Which Greek colony gave its name to the eastern region of Cyrenaica?",
+     "a": "Cyrene",
+     "wrong": [
+      "Apollonia",
+      "Barca",
+      "Euesperides"
+     ],
+     "why": "It was famous for the plant silphium."
+    }
+   ]
+  },
+  {
+   "name": "Libya: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Libya?",
+     "a": "Tripoli",
+     "wrong": [
+      "Benghazi",
+      "Misrata",
+      "Sabha"
+     ],
+     "why": "It is on the Mediterranean coast."
+    },
+    {
+     "level": 1,
+     "q": "What is Libya's currency?",
+     "a": "Libyan dinar",
+     "wrong": [
+      "Dirham",
+      "Pound",
+      "Riyal"
+     ],
+     "why": "Its code is LYD."
+    },
+    {
+     "level": 1,
+     "q": "Which desert covers most of Libya?",
+     "a": "Sahara",
+     "wrong": [
+      "Kalahari",
+      "Namib",
+      "Arabian Desert"
+     ],
+     "why": "Over 90% of the country is desert."
+    },
+    {
+     "level": 1,
+     "q": "Which is Libya's second-largest city?",
+     "a": "Benghazi",
+     "wrong": [
+      "Tripoli",
+      "Misrata",
+      "Tobruk"
+     ],
+     "why": "It is in the east."
+    },
+    {
+     "level": 1,
+     "q": "Which huge water project pipes desert groundwater to the coast?",
+     "a": "Great Man-Made River",
+     "wrong": [
+      "Nile Canal",
+      "Saharan Aqueduct",
+      "Desert Pipeline"
+     ],
+     "why": "It is one of the world's largest irrigation projects."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies along Libya's north coast?",
+     "a": "Mediterranean Sea",
+     "wrong": [
+      "Red Sea",
+      "Atlantic Ocean",
+      "Black Sea"
+     ],
+     "why": "Libya has Africa's longest Mediterranean coastline."
+    },
+    {
+     "level": 1,
+     "q": "What is Libya's main export?",
+     "a": "Oil",
+     "wrong": [
+      "Gold",
+      "Coffee",
+      "Cotton"
+     ],
+     "why": "It has Africa's largest proven oil reserves."
+    },
+    {
+     "level": 2,
+     "q": "Which desert oasis town with a covered old town is a UNESCO site?",
+     "a": "Ghadames",
+     "wrong": [
+      "Sabha",
+      "Kufra",
+      "Siwa"
+     ],
+     "why": "It is called the 'Pearl of the Desert'."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain massif has ancient rock art in the southwest?",
+     "a": "Tadrart Acacus",
+     "wrong": [
+      "Hoggar",
+      "Aïr",
+      "Atlas"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which spicy pasta dish with tomato and lamb is popular in Libya?",
+     "a": "Macaroni imbakbaka",
+     "wrong": [
+      "Couscous",
+      "Shakshuka",
+      "Harira"
+     ],
+     "why": "It shows Italian influence."
+    },
+    {
+     "level": 2,
+     "q": "Which Roman city near Tripoli has a seaside theatre?",
+     "a": "Sabratha",
+     "wrong": [
+      "Leptis Magna",
+      "Cyrene",
+      "Apollonia"
+     ],
+     "why": "Its theatre has three storeys."
+    },
+    {
+     "level": 2,
+     "q": "Which Tripoli castle is called the 'Red Castle'?",
+     "a": "Assaraya al-Hamra",
+     "wrong": [
+      "Bab al-Aziziya",
+      "Qasr Libya",
+      "Ghadames Fort"
+     ],
+     "why": "It houses a museum."
+    },
+    {
+     "level": 3,
+     "q": "Which Libyan region in the southwest is a vast desert area?",
+     "a": "Fezzan",
+     "wrong": [
+      "Cyrenaica",
+      "Tripolitania",
+      "Kufra"
+     ],
+     "why": "It was home to the Garamantes."
+    },
+    {
+     "level": 3,
+     "q": "Which film about Omar Mukhtar starred Anthony Quinn?",
+     "a": "Lion of the Desert",
+     "wrong": [
+      "Lawrence of Arabia",
+      "The Message",
+      "Desert Fox"
+     ],
+     "why": "It was released in 1981."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient plant, now extinct, made Cyrene rich?",
+     "a": "Silphium",
+     "wrong": [
+      "Saffron",
+      "Papyrus",
+      "Frankincense"
+     ],
+     "why": "It was so valuable it appeared on coins."
+    }
+   ]
+  }
+ ]
+}

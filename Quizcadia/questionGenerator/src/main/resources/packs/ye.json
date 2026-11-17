@@ -1,0 +1,346 @@
+{
+ "category": "Yemen",
+ "country": "YE",
+ "topics": [
+  {
+   "name": "Yemen: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which legendary queen is linked to the ancient kingdom of Saba in Yemen?",
+     "a": "Queen of Sheba",
+     "wrong": [
+      "Zenobia",
+      "Cleopatra",
+      "Nefertiti"
+     ],
+     "why": "The Bible says she visited Solomon."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient dam in Yemen was one of the engineering wonders of the old world?",
+     "a": "Great Dam of Marib",
+     "wrong": [
+      "Aswan Dam",
+      "Hoover Dam",
+      "Kallanai Dam"
+     ],
+     "why": "Its collapse around 570 was legendary."
+    },
+    {
+     "level": 1,
+     "q": "In which year did North and South Yemen unite?",
+     "a": "1990",
+     "wrong": [
+      "1967",
+      "1979",
+      "1994"
+     ],
+     "why": "Unity Day is 22 May."
+    },
+    {
+     "level": 1,
+     "q": "Which port city was a British colony until 1967?",
+     "a": "Aden",
+     "wrong": [
+      "Mukalla",
+      "Hodeidah",
+      "Mocha"
+     ],
+     "why": "It was a busy refuelling port."
+    },
+    {
+     "level": 1,
+     "q": "Which drink got its name from the Yemeni port of Mocha?",
+     "a": "Mocha coffee",
+     "wrong": [
+      "Earl Grey tea",
+      "Turkish coffee",
+      "Arabica tea"
+     ],
+     "why": "Yemen was the first big coffee exporter."
+    },
+    {
+     "level": 1,
+     "q": "Which civil war began in Yemen in 2014?",
+     "a": "Yemeni civil war",
+     "wrong": [
+      "Gulf War",
+      "North Yemen civil war",
+      "Aden Emergency"
+     ],
+     "why": "It caused a huge humanitarian crisis."
+    },
+    {
+     "level": 1,
+     "q": "Which Yemeni journalist shared the 2011 Nobel Peace Prize?",
+     "a": "Tawakkol Karman",
+     "wrong": [
+      "Malala Yousafzai",
+      "Shirin Ebadi",
+      "Nadia Murad"
+     ],
+     "why": "She was the first Arab woman to win it."
+    },
+    {
+     "level": 2,
+     "q": "Who was President of united Yemen from 1990 to 2012?",
+     "a": "Ali Abdullah Saleh",
+     "wrong": [
+      "Abdrabbuh Mansur Hadi",
+      "Salem Rubaya Ali",
+      "Ali Nasser Muhammad"
+     ],
+     "why": "He had led North Yemen since 1978."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient kingdom's capital was Marib?",
+     "a": "Kingdom of Saba (Sheba)",
+     "wrong": [
+      "Kingdom of Himyar",
+      "Kingdom of Qataban",
+      "Kingdom of Hadramawt"
+     ],
+     "why": "It grew rich from incense."
+    },
+    {
+     "level": 2,
+     "q": "What was the north Yemen state ruled by imams until 1962?",
+     "a": "Mutawakkilite Kingdom",
+     "wrong": [
+      "Rasulid Sultanate",
+      "Zaydi Republic",
+      "Sultanate of Lahej"
+     ],
+     "why": "A revolution created the Yemen Arab Republic."
+    },
+    {
+     "level": 2,
+     "q": "Which strait connects the Red Sea to the Gulf of Aden?",
+     "a": "Bab-el-Mandeb",
+     "wrong": [
+      "Strait of Hormuz",
+      "Suez Canal",
+      "Strait of Tiran"
+     ],
+     "why": "Its name means 'Gate of Lamentation'."
+    },
+    {
+     "level": 2,
+     "q": "Which kingdom ruled much of Yemen from about 110 BC to AD 525?",
+     "a": "Himyarite Kingdom",
+     "wrong": [
+      "Sabaean Kingdom",
+      "Rasulid Kingdom",
+      "Aksumite Kingdom"
+     ],
+     "why": "Its kings later adopted Judaism."
+    },
+    {
+     "level": 3,
+     "q": "Which South Yemen state existed from 1967 to 1990?",
+     "a": "People's Democratic Republic of Yemen",
+     "wrong": [
+      "Yemen Arab Republic",
+      "Federation of South Arabia",
+      "Aden Protectorate"
+     ],
+     "why": "It was the Arab world's only Marxist state."
+    },
+    {
+     "level": 3,
+     "q": "Which Yemeni dynasty of the 1200s–1400s built Taiz into a centre of learning?",
+     "a": "Rasulid dynasty",
+     "wrong": [
+      "Ayyubid dynasty",
+      "Sulayhid dynasty",
+      "Tahirid dynasty"
+     ],
+     "why": "They also wrote on farming and astronomy."
+    },
+    {
+     "level": 3,
+     "q": "Which queen ruled Yemen in the 1000s from Jibla?",
+     "a": "Arwa al-Sulayhi",
+     "wrong": [
+      "Bilqis",
+      "Zenobia",
+      "Shajar al-Durr"
+     ],
+     "why": "She ruled for over 50 years."
+    }
+   ]
+  },
+  {
+   "name": "Yemen: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which city is Yemen's historic capital?",
+     "a": "Sana'a",
+     "wrong": [
+      "Aden",
+      "Taiz",
+      "Mukalla"
+     ],
+     "why": "Its old city is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which tall mud-brick towers make Shibam famous?",
+     "a": "Mud-brick skyscrapers",
+     "wrong": [
+      "Glass towers",
+      "Stone pyramids",
+      "Wooden pagodas"
+     ],
+     "why": "It is called the 'Manhattan of the Desert'."
+    },
+    {
+     "level": 1,
+     "q": "Which island with dragon's blood trees belongs to Yemen?",
+     "a": "Socotra",
+     "wrong": [
+      "Perim",
+      "Kamaran",
+      "Masirah"
+     ],
+     "why": "A third of its plants are found nowhere else."
+    },
+    {
+     "level": 1,
+     "q": "What is Yemen's currency?",
+     "a": "Yemeni rial",
+     "wrong": [
+      "Dirham",
+      "Dinar",
+      "Omani rial"
+     ],
+     "why": "It has lost much value during the war."
+    },
+    {
+     "level": 1,
+     "q": "Which leaf do many Yemenis chew in the afternoon?",
+     "a": "Qat",
+     "wrong": [
+      "Betel",
+      "Coca",
+      "Tobacco"
+     ],
+     "why": "It is a mild stimulant."
+    },
+    {
+     "level": 1,
+     "q": "Which curved dagger is worn by Yemeni men?",
+     "a": "Jambiya",
+     "wrong": [
+      "Katana",
+      "Kukri",
+      "Scimitar"
+     ],
+     "why": "Its handle shows the owner's status."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies west of Yemen?",
+     "a": "Red Sea",
+     "wrong": [
+      "Arabian Sea",
+      "Mediterranean",
+      "Persian Gulf"
+     ],
+     "why": "The Gulf of Aden lies to the south."
+    },
+    {
+     "level": 2,
+     "q": "Which valley region in the east is home to Shibam and Tarim?",
+     "a": "Hadramawt",
+     "wrong": [
+      "Tihama",
+      "Marib",
+      "Lahej"
+     ],
+     "why": "It was famous for frankincense."
+    },
+    {
+     "level": 2,
+     "q": "Which bread-and-honey dish is a Yemeni favourite?",
+     "a": "Bint al-sahn",
+     "wrong": [
+      "Saltah",
+      "Fahsa",
+      "Mandi"
+     ],
+     "why": "It is a layered honey cake."
+    },
+    {
+     "level": 2,
+     "q": "Which slow-roasted meat and rice dish comes from Hadramawt?",
+     "a": "Mandi",
+     "wrong": [
+      "Kabsa",
+      "Mansaf",
+      "Biryani"
+     ],
+     "why": "It is cooked in an underground oven."
+    },
+    {
+     "level": 2,
+     "q": "Which stew is called Yemen's national dish?",
+     "a": "Saltah",
+     "wrong": [
+      "Fahsa",
+      "Harees",
+      "Ful"
+     ],
+     "why": "It is topped with fenugreek froth."
+    },
+    {
+     "level": 2,
+     "q": "Which palace is built on top of a rock near Sana'a?",
+     "a": "Dar al-Hajar",
+     "wrong": [
+      "Ghumdan Palace",
+      "Seiyun Palace",
+      "Bilqis Palace"
+     ],
+     "why": "It was a summer home of Imam Yahya."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient city in Hadramawt was a centre of Islamic learning?",
+     "a": "Tarim",
+     "wrong": [
+      "Zabid",
+      "Shibam",
+      "Seiyun"
+     ],
+     "why": "It has hundreds of mosques."
+    },
+    {
+     "level": 3,
+     "q": "Which coastal town was Yemen's capital under the Ziyadid dynasty and is a UNESCO site?",
+     "a": "Zabid",
+     "wrong": [
+      "Mocha",
+      "Hodeidah",
+      "Aden"
+     ],
+     "why": "It had a famous university."
+    },
+    {
+     "level": 3,
+     "q": "What is Yemen's highest mountain, also the highest in Arabia?",
+     "a": "Jabal an-Nabi Shu'ayb",
+     "wrong": [
+      "Jebel Shams",
+      "Jabal Sawda",
+      "Jabal Bura"
+     ],
+     "why": "It is about 3,666 m high."
+    }
+   ]
+  }
+ ]
+}
