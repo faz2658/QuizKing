@@ -1,0 +1,346 @@
+{
+ "category": "Belize",
+ "country": "BZ",
+ "topics": [
+  {
+   "name": "Belize: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Belize?",
+     "a": "Belmopan",
+     "wrong": [
+      "Belize City",
+      "San Ignacio",
+      "Orange Walk"
+     ],
+     "why": "It replaced Belize City after a 1961 hurricane."
+    },
+    {
+     "level": 1,
+     "q": "What was Belize called before 1973?",
+     "a": "British Honduras",
+     "wrong": [
+      "British Guiana",
+      "Mosquito Coast",
+      "New Albion"
+     ],
+     "why": "It took the name of its main river."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Belize gain independence in 1981?",
+     "a": "United Kingdom",
+     "wrong": [
+      "Spain",
+      "Guatemala",
+      "Mexico"
+     ],
+     "why": "It is still in the Commonwealth."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of Belize?",
+     "a": "English",
+     "wrong": [
+      "Spanish",
+      "Kriol",
+      "Garifuna"
+     ],
+     "why": "It is the only Central American country with English as official language."
+    },
+    {
+     "level": 1,
+     "q": "What is Belize's currency?",
+     "a": "Belize dollar",
+     "wrong": [
+      "Quetzal",
+      "Peso",
+      "US dollar"
+     ],
+     "why": "It is fixed at two to one US dollar."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient people built cities like Caracol and Xunantunich?",
+     "a": "Maya",
+     "wrong": [
+      "Aztec",
+      "Olmec",
+      "Inca"
+     ],
+     "why": "Caracol was once bigger than Belize City is today."
+    },
+    {
+     "level": 1,
+     "q": "Which neighbour long claimed Belize as its own territory?",
+     "a": "Guatemala",
+     "wrong": [
+      "Mexico",
+      "Honduras",
+      "El Salvador"
+     ],
+     "why": "The dispute went to the world court."
+    },
+    {
+     "level": 2,
+     "q": "Who is called the father of Belizean independence?",
+     "a": "George Price",
+     "wrong": [
+      "Manuel Esquivel",
+      "Said Musa",
+      "Dean Barrow"
+     ],
+     "why": "He was the first Prime Minister."
+    },
+    {
+     "level": 2,
+     "q": "Which 1798 battle saw settlers defeat a Spanish fleet?",
+     "a": "Battle of St George's Caye",
+     "wrong": [
+      "Battle of Belize River",
+      "Battle of Cockscomb",
+      "Battle of Ambergris"
+     ],
+     "why": "It is celebrated on 10 September."
+    },
+    {
+     "level": 2,
+     "q": "Which 1961 hurricane led to a new inland capital?",
+     "a": "Hurricane Hattie",
+     "wrong": [
+      "Hurricane Mitch",
+      "Hurricane Janet",
+      "Hurricane Iris"
+     ],
+     "why": "It badly damaged Belize City."
+    },
+    {
+     "level": 2,
+     "q": "Which wood brought British loggers to Belize in the 1600s?",
+     "a": "Logwood",
+     "wrong": [
+      "Mahogany",
+      "Teak",
+      "Ebony"
+     ],
+     "why": "It was used to make dye."
+    },
+    {
+     "level": 2,
+     "q": "Which Maya site in western Belize has the carved 'El Castillo' pyramid?",
+     "a": "Xunantunich",
+     "wrong": [
+      "Caracol",
+      "Lamanai",
+      "Altun Ha"
+     ],
+     "why": "Its name means 'Stone Woman'."
+    },
+    {
+     "level": 3,
+     "q": "Which Maya site's name means 'submerged crocodile'?",
+     "a": "Lamanai",
+     "wrong": [
+      "Altun Ha",
+      "Cahal Pech",
+      "Lubaantun"
+     ],
+     "why": "It was lived in for over 3,000 years."
+    },
+    {
+     "level": 3,
+     "q": "Which jade head found at Altun Ha is a national treasure?",
+     "a": "Jade head of Kinich Ahau",
+     "wrong": [
+      "Olmec jade mask",
+      "Pakal's mask",
+      "Jade jaguar"
+     ],
+     "why": "It is the largest carved Maya jade."
+    },
+    {
+     "level": 3,
+     "q": "Who has been Prime Minister of Belize since 2020?",
+     "a": "Johnny Briceño",
+     "wrong": [
+      "Dean Barrow",
+      "Said Musa",
+      "Manuel Esquivel"
+     ],
+     "why": "He leads the People's United Party."
+    }
+   ]
+  },
+  {
+   "name": "Belize: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which famous circular sinkhole is a diving site?",
+     "a": "Great Blue Hole",
+     "wrong": [
+      "Dean's Blue Hole",
+      "Sun Hole",
+      "Dragon Hole"
+     ],
+     "why": "Jacques Cousteau made it famous."
+    },
+    {
+     "level": 1,
+     "q": "Which reef off Belize is the second-longest barrier reef in the world?",
+     "a": "Belize Barrier Reef",
+     "wrong": [
+      "Great Barrier Reef",
+      "Florida Reef",
+      "Andros Reef"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which large island off Belize is home to San Pedro?",
+     "a": "Ambergris Caye",
+     "wrong": [
+      "Caye Caulker",
+      "Tobacco Caye",
+      "Roatán"
+     ],
+     "why": "It was the setting of Madonna's 'La Isla Bonita'."
+    },
+    {
+     "level": 1,
+     "q": "Which small island's motto is 'Go slow'?",
+     "a": "Caye Caulker",
+     "wrong": [
+      "Ambergris Caye",
+      "St George's Caye",
+      "Glover's Reef"
+     ],
+     "why": "Golf carts are the main transport."
+    },
+    {
+     "level": 1,
+     "q": "Which wild cat has the world's first jaguar reserve in Belize?",
+     "a": "Jaguar",
+     "wrong": [
+      "Puma",
+      "Ocelot",
+      "Leopard"
+     ],
+     "why": "The reserve is in Cockscomb Basin."
+    },
+    {
+     "level": 1,
+     "q": "Which dish of rice and beans cooked in coconut milk is a staple?",
+     "a": "Rice and beans",
+     "wrong": [
+      "Gallo pinto",
+      "Jollof rice",
+      "Moros y cristianos"
+     ],
+     "why": "It is often served with stew chicken."
+    },
+    {
+     "level": 1,
+     "q": "Which people on the coast celebrate Settlement Day on 19 November?",
+     "a": "Garifuna",
+     "wrong": [
+      "Mennonites",
+      "Mestizos",
+      "Maya"
+     ],
+     "why": "It marks their arrival in 1832."
+    },
+    {
+     "level": 2,
+     "q": "Which cave with Maya skeletons is a famous adventure tour?",
+     "a": "Actun Tunichil Muknal",
+     "wrong": [
+      "Barton Creek Cave",
+      "Che Chem Ha",
+      "St Herman's Cave"
+     ],
+     "why": "A calcified skeleton is called the 'Crystal Maiden'."
+    },
+    {
+     "level": 2,
+     "q": "Which religious farming community from Europe lives in Belize?",
+     "a": "Mennonites",
+     "wrong": [
+      "Amish",
+      "Shakers",
+      "Hutterites"
+     ],
+     "why": "Many speak Low German."
+    },
+    {
+     "level": 2,
+     "q": "Which Garifuna musician made 'punta rock' famous?",
+     "a": "Andy Palacio",
+     "wrong": [
+      "Pen Cayetano",
+      "Aurelio Martínez",
+      "Paul Nabor"
+     ],
+     "why": "His album 'Wátina' won praise worldwide."
+    },
+    {
+     "level": 2,
+     "q": "What is the national animal of Belize?",
+     "a": "Baird's tapir",
+     "wrong": [
+      "Jaguar",
+      "Howler monkey",
+      "Manatee"
+     ],
+     "why": "It is called the 'mountain cow'."
+    },
+    {
+     "level": 2,
+     "q": "Which hot sauce made in Belize is sold worldwide?",
+     "a": "Marie Sharp's",
+     "wrong": [
+      "Tabasco",
+      "Cholula",
+      "Valentina"
+     ],
+     "why": "It uses habanero peppers."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain range in the south holds Belize's highest peak?",
+     "a": "Maya Mountains",
+     "wrong": [
+      "Sierra Madre",
+      "Blue Mountains",
+      "Cuchumatanes"
+     ],
+     "why": "Doyle's Delight is the highest point."
+    },
+    {
+     "level": 3,
+     "q": "What is the Belize creole language called?",
+     "a": "Kriol",
+     "wrong": [
+      "Patois",
+      "Papiamento",
+      "Sranan Tongo"
+     ],
+     "why": "It is widely spoken across the country."
+    },
+    {
+     "level": 3,
+     "q": "What is the national bird of Belize?",
+     "a": "Keel-billed toucan",
+     "wrong": [
+      "Harpy eagle",
+      "Scarlet macaw",
+      "Frigatebird"
+     ],
+     "why": "It has a huge rainbow-coloured bill."
+    }
+   ]
+  }
+ ]
+}

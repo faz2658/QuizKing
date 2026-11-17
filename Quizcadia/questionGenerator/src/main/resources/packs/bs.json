@@ -1,0 +1,346 @@
+{
+ "category": "Bahamas",
+ "country": "BS",
+ "topics": [
+  {
+   "name": "Bahamas: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Bahamas?",
+     "a": "Nassau",
+     "wrong": [
+      "Freeport",
+      "George Town",
+      "Marsh Harbour"
+     ],
+     "why": "It is on New Providence island."
+    },
+    {
+     "level": 1,
+     "q": "Where did Christopher Columbus first land in the Americas in 1492?",
+     "a": "San Salvador, Bahamas",
+     "wrong": [
+      "Hispaniola",
+      "Cuba",
+      "Puerto Rico"
+     ],
+     "why": "The Lucayan people called it Guanahani."
+    },
+    {
+     "level": 1,
+     "q": "From which country did the Bahamas gain independence in 1973?",
+     "a": "United Kingdom",
+     "wrong": [
+      "Spain",
+      "United States",
+      "France"
+     ],
+     "why": "It is a Commonwealth realm."
+    },
+    {
+     "level": 1,
+     "q": "What is the Bahamian currency?",
+     "a": "Bahamian dollar",
+     "wrong": [
+      "US dollar",
+      "Pound sterling",
+      "East Caribbean dollar"
+     ],
+     "why": "It is equal to the US dollar."
+    },
+    {
+     "level": 1,
+     "q": "Who were the first known people of the Bahamas?",
+     "a": "Lucayans",
+     "wrong": [
+      "Caribs",
+      "Maya",
+      "Ciboney"
+     ],
+     "why": "They were Taíno people."
+    },
+    {
+     "level": 1,
+     "q": "Which 2019 hurricane devastated Abaco and Grand Bahama?",
+     "a": "Hurricane Dorian",
+     "wrong": [
+      "Hurricane Irma",
+      "Hurricane Andrew",
+      "Hurricane Matthew"
+     ],
+     "why": "It stalled over the islands for a day."
+    },
+    {
+     "level": 1,
+     "q": "Which pirate used Nassau as a base in the early 1700s?",
+     "a": "Blackbeard (Edward Teach)",
+     "wrong": [
+      "Henry Morgan",
+      "Captain Kidd",
+      "Francis Drake"
+     ],
+     "why": "Nassau was a 'Republic of Pirates'."
+    },
+    {
+     "level": 2,
+     "q": "Who was the first Prime Minister of the Bahamas?",
+     "a": "Lynden Pindling",
+     "wrong": [
+      "Hubert Ingraham",
+      "Perry Christie",
+      "Philip Davis"
+     ],
+     "why": "He is called the father of the nation."
+    },
+    {
+     "level": 2,
+     "q": "Which British royal was Governor of the Bahamas during the Second World War?",
+     "a": "Duke of Windsor",
+     "wrong": [
+      "Prince Philip",
+      "Duke of Kent",
+      "Prince Charles"
+     ],
+     "why": "He had given up the throne in 1936."
+    },
+    {
+     "level": 2,
+     "q": "Which governor drove the pirates out of Nassau in 1718?",
+     "a": "Woodes Rogers",
+     "wrong": [
+      "Henry Morgan",
+      "John Hawkins",
+      "Walter Raleigh"
+     ],
+     "why": "His motto became 'Pirates expelled, commerce restored'."
+    },
+    {
+     "level": 2,
+     "q": "Which 1967 change brought majority rule to the Bahamas?",
+     "a": "Quiet Revolution",
+     "wrong": [
+      "Bloodless Coup",
+      "Velvet Change",
+      "Island Spring"
+     ],
+     "why": "Pindling's PLP won power."
+    },
+    {
+     "level": 2,
+     "q": "Which US ban made the Bahamas rich from rum running?",
+     "a": "Prohibition",
+     "wrong": [
+      "Embargo Act",
+      "Civil War blockade",
+      "Dry Laws of 1950"
+     ],
+     "why": "Liquor was smuggled to Florida."
+    },
+    {
+     "level": 3,
+     "q": "Who became Prime Minister of the Bahamas in 2021?",
+     "a": "Philip Davis",
+     "wrong": [
+      "Hubert Minnis",
+      "Perry Christie",
+      "Hubert Ingraham"
+     ],
+     "why": "He leads the PLP."
+    },
+    {
+     "level": 3,
+     "q": "Which loyalists settled the Bahamas after the American Revolution?",
+     "a": "American Loyalists",
+     "wrong": [
+      "French Huguenots",
+      "Scottish Covenanters",
+      "Dutch traders"
+     ],
+     "why": "They brought enslaved people with them."
+    },
+    {
+     "level": 3,
+     "q": "Which year did slavery end in the Bahamas?",
+     "a": "1834",
+     "wrong": [
+      "1807",
+      "1865",
+      "1888"
+     ],
+     "why": "It ended across the British Empire."
+    }
+   ]
+  },
+  {
+   "name": "Bahamas: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which street festival with costumes and cowbells is held at Christmas?",
+     "a": "Junkanoo",
+     "wrong": [
+      "Carnival",
+      "Crop Over",
+      "Mashramani"
+     ],
+     "why": "The main parade is on Boxing Day."
+    },
+    {
+     "level": 1,
+     "q": "Which shellfish is the national dish?",
+     "a": "Conch",
+     "wrong": [
+      "Lobster",
+      "Shrimp",
+      "Oyster"
+     ],
+     "why": "It is eaten in fritters and salads."
+    },
+    {
+     "level": 1,
+     "q": "Which island has famous swimming pigs?",
+     "a": "Big Major Cay (Exuma)",
+     "wrong": [
+      "Andros",
+      "Eleuthera",
+      "Bimini"
+     ],
+     "why": "Visitors swim with them."
+    },
+    {
+     "level": 1,
+     "q": "Which giant resort with an aquarium is on Paradise Island?",
+     "a": "Atlantis",
+     "wrong": [
+      "Baha Mar",
+      "Sandals",
+      "Kerzner Bay"
+     ],
+     "why": "It has a huge water park."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean surrounds the Bahamas?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Pacific Ocean",
+      "Indian Ocean",
+      "Gulf of Mexico"
+     ],
+     "why": "It is northeast of Cuba."
+    },
+    {
+     "level": 1,
+     "q": "How many islands does the Bahamas have roughly?",
+     "a": "About 700",
+     "wrong": [
+      "About 30",
+      "About 100",
+      "About 3,000"
+     ],
+     "why": "Only about 30 are lived on."
+    },
+    {
+     "level": 1,
+     "q": "Which island is famous for pink sand beaches?",
+     "a": "Harbour Island",
+     "wrong": [
+      "Andros",
+      "Bimini",
+      "Long Island"
+     ],
+     "why": "The colour comes from tiny sea creatures."
+    },
+    {
+     "level": 2,
+     "q": "Which Bahamian sprinter won Olympic 400 m gold in 2016 and 2020?",
+     "a": "Shaunae Miller-Uibo",
+     "wrong": [
+      "Tonique Williams",
+      "Pauline Davis",
+      "Debbie Ferguson"
+     ],
+     "why": "She dived over the line in 2016."
+    },
+    {
+     "level": 2,
+     "q": "Which actor of Bahamian heritage won the Oscar for Best Actor in 1964?",
+     "a": "Sidney Poitier",
+     "wrong": [
+      "Harry Belafonte",
+      "Denzel Washington",
+      "Morgan Freeman"
+     ],
+     "why": "He was the first Black man to win it."
+    },
+    {
+     "level": 2,
+     "q": "Which island holds one of the world's deepest blue holes, Dean's Blue Hole?",
+     "a": "Long Island",
+     "wrong": [
+      "Andros",
+      "Exuma",
+      "Bimini"
+     ],
+     "why": "It is over 200 m deep."
+    },
+    {
+     "level": 2,
+     "q": "Which largest Bahamian island is famous for blue holes?",
+     "a": "Andros",
+     "wrong": [
+      "Grand Bahama",
+      "Abaco",
+      "Eleuthera"
+     ],
+     "why": "It has a large barrier reef."
+    },
+    {
+     "level": 2,
+     "q": "Which island near Florida did Ernest Hemingway visit often?",
+     "a": "Bimini",
+     "wrong": [
+      "Abaco",
+      "Exuma",
+      "Andros"
+     ],
+     "why": "It is about 80 km from Miami."
+    },
+    {
+     "level": 3,
+     "q": "Which flamingo is the national bird?",
+     "a": "Caribbean flamingo",
+     "wrong": [
+      "Bahama parrot",
+      "Frigatebird",
+      "Pelican"
+     ],
+     "why": "Inagua has a big colony."
+    },
+    {
+     "level": 3,
+     "q": "Which island is home to the largest flamingo colony?",
+     "a": "Great Inagua",
+     "wrong": [
+      "Andros",
+      "Eleuthera",
+      "Cat Island"
+     ],
+     "why": "Tens of thousands breed there."
+    },
+    {
+     "level": 3,
+     "q": "What is the highest point in the Bahamas?",
+     "a": "Mount Alvernia",
+     "wrong": [
+      "Blue Mountain Peak",
+      "Pico Duarte",
+      "Mount Scenery"
+     ],
+     "why": "It is only 63 m high."
+    }
+   ]
+  }
+ ]
+}

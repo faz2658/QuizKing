@@ -1,0 +1,346 @@
+{
+ "category": "Guyana",
+ "country": "GY",
+ "topics": [
+  {
+   "name": "Guyana: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Guyana?",
+     "a": "Georgetown",
+     "wrong": [
+      "Linden",
+      "New Amsterdam",
+      "Bartica"
+     ],
+     "why": "It is built below sea level."
+    },
+    {
+     "level": 1,
+     "q": "What was Guyana called before 1966?",
+     "a": "British Guiana",
+     "wrong": [
+      "Dutch Guiana",
+      "French Guiana",
+      "New Holland"
+     ],
+     "why": "It became independent that year."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of Guyana?",
+     "a": "English",
+     "wrong": [
+      "Spanish",
+      "Portuguese",
+      "Dutch"
+     ],
+     "why": "It is the only English-speaking country in South America."
+    },
+    {
+     "level": 1,
+     "q": "What is Guyana's currency?",
+     "a": "Guyanese dollar",
+     "wrong": [
+      "Surinamese dollar",
+      "Real",
+      "Bolívar"
+     ],
+     "why": "Its code is GYD."
+    },
+    {
+     "level": 1,
+     "q": "Which neighbour claims about two-thirds of Guyana's land?",
+     "a": "Venezuela",
+     "wrong": [
+      "Brazil",
+      "Suriname",
+      "Colombia"
+     ],
+     "why": "It claims the Essequibo region."
+    },
+    {
+     "level": 1,
+     "q": "What discovery since 2015 has made Guyana's economy grow fast?",
+     "a": "Offshore oil",
+     "wrong": [
+      "Gold mines",
+      "Diamonds",
+      "Natural gas"
+     ],
+     "why": "It has one of the fastest-growing economies."
+    },
+    {
+     "level": 1,
+     "q": "What does the name Guyana mean?",
+     "a": "Land of many waters",
+     "wrong": [
+      "Land of gold",
+      "Green land",
+      "Land of rivers and mountains"
+     ],
+     "why": "It comes from an Indigenous word."
+    },
+    {
+     "level": 2,
+     "q": "Which country first colonised the coast of Guyana?",
+     "a": "Netherlands",
+     "wrong": [
+      "Spain",
+      "France",
+      "Portugal"
+     ],
+     "why": "The British took over in 1814."
+    },
+    {
+     "level": 2,
+     "q": "Which 1978 mass death happened at a cult settlement in Guyana?",
+     "a": "Jonestown",
+     "wrong": [
+      "Waco",
+      "Heaven's Gate",
+      "Kingston"
+     ],
+     "why": "Over 900 people died."
+    },
+    {
+     "level": 2,
+     "q": "Who was Guyana's first Prime Minister?",
+     "a": "Forbes Burnham",
+     "wrong": [
+      "Cheddi Jagan",
+      "Bharrat Jagdeo",
+      "Desmond Hoyte"
+     ],
+     "why": "He later became executive President."
+    },
+    {
+     "level": 2,
+     "q": "Which 1763 slave revolt leader is a national hero?",
+     "a": "Cuffy",
+     "wrong": [
+      "Bussa",
+      "Tacky",
+      "Quamina"
+     ],
+     "why": "1763 is honoured on the national monument."
+    },
+    {
+     "level": 2,
+     "q": "Who became Guyana's first woman President, in 1997?",
+     "a": "Janet Jagan",
+     "wrong": [
+      "Hamilton Green",
+      "Viola Burnham",
+      "Bharrat Jagdeo"
+     ],
+     "why": "She was born in Chicago."
+    },
+    {
+     "level": 3,
+     "q": "Which 1823 revolt in Demerara involved tens of thousands of slaves?",
+     "a": "Demerara Rebellion",
+     "wrong": [
+      "Berbice Rebellion",
+      "Baptist War",
+      "Bussa's Rebellion"
+     ],
+     "why": "Quamina was one of its leaders."
+    },
+    {
+     "level": 3,
+     "q": "Who has been President of Guyana since 2020?",
+     "a": "Irfaan Ali",
+     "wrong": [
+      "David Granger",
+      "Donald Ramotar",
+      "Bharrat Jagdeo"
+     ],
+     "why": "He leads the PPP."
+    },
+    {
+     "level": 3,
+     "q": "Which group came to Guyana in the largest numbers as indentured workers?",
+     "a": "Indians",
+     "wrong": [
+      "Chinese",
+      "Portuguese",
+      "Irish"
+     ],
+     "why": "Their descendants are now the largest group."
+    }
+   ]
+  },
+  {
+   "name": "Guyana: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which single-drop waterfall in Guyana is one of the world's most powerful?",
+     "a": "Kaieteur Falls",
+     "wrong": [
+      "Angel Falls",
+      "Iguazu Falls",
+      "Niagara Falls"
+     ],
+     "why": "It drops about 226 m."
+    },
+    {
+     "level": 1,
+     "q": "Which giant water lily is Guyana's national flower?",
+     "a": "Victoria amazonica",
+     "wrong": [
+      "Lotus",
+      "Rafflesia",
+      "Hibiscus"
+     ],
+     "why": "Its leaves can hold a child."
+    },
+    {
+     "level": 1,
+     "q": "Which festival on Republic Day has colourful parades?",
+     "a": "Mashramani",
+     "wrong": [
+      "Crop Over",
+      "Junkanoo",
+      "Diwali"
+     ],
+     "why": "It is held on 23 February."
+    },
+    {
+     "level": 1,
+     "q": "Which bird with a crest and claws on its wings is the national bird?",
+     "a": "Hoatzin",
+     "wrong": [
+      "Toucan",
+      "Harpy eagle",
+      "Scarlet ibis"
+     ],
+     "why": "It is also called the 'stinking bird'."
+    },
+    {
+     "level": 1,
+     "q": "Which slow-cooked meat stew is a Christmas favourite?",
+     "a": "Pepperpot",
+     "wrong": [
+      "Callaloo",
+      "Oil down",
+      "Goat curry"
+     ],
+     "why": "It uses cassareep from cassava."
+    },
+    {
+     "level": 1,
+     "q": "Which big wooden cathedral is in Georgetown?",
+     "a": "St George's Cathedral",
+     "wrong": [
+      "St Paul's Cathedral",
+      "Christ Church",
+      "Cathedral of St Mary"
+     ],
+     "why": "It is one of the tallest wooden churches."
+    },
+    {
+     "level": 1,
+     "q": "Which sport does Guyana play as part of the West Indies?",
+     "a": "Cricket",
+     "wrong": [
+      "Rugby",
+      "Baseball",
+      "Ice hockey"
+     ],
+     "why": "Providence Stadium hosts matches."
+    },
+    {
+     "level": 2,
+     "q": "Which savannah region in the south is home to cowboys?",
+     "a": "Rupununi",
+     "wrong": [
+      "Pakaraima",
+      "Essequibo",
+      "Demerara"
+     ],
+     "why": "It borders Brazil."
+    },
+    {
+     "level": 2,
+     "q": "Which river is the largest in Guyana?",
+     "a": "Essequibo",
+     "wrong": [
+      "Demerara",
+      "Berbice",
+      "Courantyne"
+     ],
+     "why": "It has many islands at its mouth."
+    },
+    {
+     "level": 2,
+     "q": "Which Guyanese cricketer captained the West Indies to two World Cups?",
+     "a": "Clive Lloyd",
+     "wrong": [
+      "Rohan Kanhai",
+      "Shivnarine Chanderpaul",
+      "Lance Gibbs"
+     ],
+     "why": "They won in 1975 and 1979."
+    },
+    {
+     "level": 2,
+     "q": "Which brown sugar is named after a Guyanese region?",
+     "a": "Demerara sugar",
+     "wrong": [
+      "Muscovado",
+      "Turbinado",
+      "Jaggery"
+     ],
+     "why": "It has large golden crystals."
+    },
+    {
+     "level": 2,
+     "q": "Which rum from Guyana is well known?",
+     "a": "El Dorado",
+     "wrong": [
+      "Mount Gay",
+      "Appleton",
+      "Bacardi"
+     ],
+     "why": "It is aged in wooden casks."
+    },
+    {
+     "level": 3,
+     "q": "Which spring colour festival is a public holiday in Guyana?",
+     "a": "Phagwah (Holi)",
+     "wrong": [
+      "Diwali",
+      "Eid",
+      "Mashramani"
+     ],
+     "why": "It is celebrated by the Hindu community."
+    },
+    {
+     "level": 3,
+     "q": "Which seawall in Georgetown keeps the sea out?",
+     "a": "Georgetown Seawall",
+     "wrong": [
+      "Great Wall of Demerara",
+      "Dutch Dyke",
+      "Kaieteur Wall"
+     ],
+     "why": "Families stroll on it on Sundays."
+    },
+    {
+     "level": 3,
+     "q": "Which large market with a clock tower is in Georgetown?",
+     "a": "Stabroek Market",
+     "wrong": [
+      "Bourda Market",
+      "Castries Market",
+      "Coronation Market"
+     ],
+     "why": "Its iron building dates from 1881."
+    }
+   ]
+  }
+ ]
+}
