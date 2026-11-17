@@ -1,0 +1,346 @@
+{
+ "category": "Burkina Faso",
+ "country": "BF",
+ "topics": [
+  {
+   "name": "Burkina Faso: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Burkina Faso?",
+     "a": "Ouagadougou",
+     "wrong": [
+      "Bobo-Dioulasso",
+      "Koudougou",
+      "Banfora"
+     ],
+     "why": "It is called 'Ouaga'."
+    },
+    {
+     "level": 1,
+     "q": "What was Burkina Faso called before 1984?",
+     "a": "Upper Volta",
+     "wrong": [
+      "Lower Niger",
+      "French Sahel",
+      "Mossi Republic"
+     ],
+     "why": "The name comes from the Volta rivers."
+    },
+    {
+     "level": 1,
+     "q": "What does 'Burkina Faso' mean?",
+     "a": "Land of upright (honest) people",
+     "wrong": [
+      "Land of gold",
+      "Land of rivers",
+      "Land of the Mossi"
+     ],
+     "why": "It mixes Mooré and Dioula words."
+    },
+    {
+     "level": 1,
+     "q": "Which revolutionary leader renamed the country?",
+     "a": "Thomas Sankara",
+     "wrong": [
+      "Blaise Compaoré",
+      "Maurice Yaméogo",
+      "Ibrahim Traoré"
+     ],
+     "why": "He was called 'Africa's Che Guevara'."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Burkina Faso gain independence in 1960?",
+     "a": "France",
+     "wrong": [
+      "United Kingdom",
+      "Belgium",
+      "Portugal"
+     ],
+     "why": "It was called Upper Volta then."
+    },
+    {
+     "level": 1,
+     "q": "What is Burkina Faso's currency?",
+     "a": "West African CFA franc",
+     "wrong": [
+      "Cedi",
+      "Naira",
+      "Ouguiya"
+     ],
+     "why": "It is shared by eight countries."
+    },
+    {
+     "level": 1,
+     "q": "Who has led Burkina Faso since 2022?",
+     "a": "Ibrahim Traoré",
+     "wrong": [
+      "Paul-Henri Damiba",
+      "Roch Marc Christian Kaboré",
+      "Blaise Compaoré"
+     ],
+     "why": "He was 34 when he took power."
+    },
+    {
+     "level": 2,
+     "q": "Who ruled after Sankara was killed in 1987?",
+     "a": "Blaise Compaoré",
+     "wrong": [
+      "Michel Kafando",
+      "Roch Kaboré",
+      "Isaac Zida"
+     ],
+     "why": "He ruled for 27 years."
+    },
+    {
+     "level": 2,
+     "q": "Which 2014 uprising forced out Blaise Compaoré?",
+     "a": "Burkinabè uprising",
+     "wrong": [
+      "Arab Spring",
+      "Velvet Revolution",
+      "Sahel Spring"
+     ],
+     "why": "He had tried to extend his rule."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient kingdom of the Mossi people is still respected today?",
+     "a": "Mossi Kingdom (Ouagadougou)",
+     "wrong": [
+      "Ghana Empire",
+      "Songhai Empire",
+      "Kong Empire"
+     ],
+     "why": "Its king is the Mogho Naba."
+    },
+    {
+     "level": 2,
+     "q": "Which stone ruins in the south are a UNESCO site?",
+     "a": "Ruins of Loropéni",
+     "wrong": [
+      "Great Zimbabwe",
+      "Koumbi Saleh",
+      "Kilwa"
+     ],
+     "why": "They are linked to gold trading."
+    },
+    {
+     "level": 2,
+     "q": "Which 1983 event brought Sankara to power?",
+     "a": "A coup",
+     "wrong": [
+      "An election",
+      "A royal decree",
+      "A referendum"
+     ],
+     "why": "He was 33."
+    },
+    {
+     "level": 3,
+     "q": "Which journalist was murdered in 1998, causing big protests?",
+     "a": "Norbert Zongo",
+     "wrong": [
+      "Thomas Sankara",
+      "Sennen Andriamirado",
+      "Ahmed Divela"
+     ],
+     "why": "He was investigating a murder."
+    },
+    {
+     "level": 3,
+     "q": "What is the Mossi king's title?",
+     "a": "Mogho Naba",
+     "wrong": [
+      "Asantehene",
+      "Oba",
+      "Kabaka"
+     ],
+     "why": "It means 'ruler of the world'."
+    },
+    {
+     "level": 3,
+     "q": "Which policy did Sankara launch to make Burkina self-sufficient?",
+     "a": "Mass tree planting and vaccination drives",
+     "wrong": [
+      "Oil drilling",
+      "Nuclear power",
+      "Free trade zones"
+     ],
+     "why": "He also banned forced marriage."
+    }
+   ]
+  },
+  {
+   "name": "Burkina Faso: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which film festival in Ouagadougou is Africa's biggest?",
+     "a": "FESPACO",
+     "wrong": [
+      "Cannes",
+      "Carthage Film Festival",
+      "Durban Film Festival"
+     ],
+     "why": "It is held every two years."
+    },
+    {
+     "level": 1,
+     "q": "Which crafts fair is held in Ouagadougou?",
+     "a": "SIAO (International Arts and Crafts Fair)",
+     "wrong": [
+      "Art Basel",
+      "Dakar Biennale",
+      "Fespaco"
+     ],
+     "why": "It is held every two years."
+    },
+    {
+     "level": 1,
+     "q": "Which millet dough is a staple food?",
+     "a": "Tô",
+     "wrong": [
+      "Fufu",
+      "Ugali",
+      "Banku"
+     ],
+     "why": "It is eaten with sauce."
+    },
+    {
+     "level": 1,
+     "q": "Which mud-built town in the south has painted houses?",
+     "a": "Tiébélé",
+     "wrong": [
+      "Djenné",
+      "Bandiagara",
+      "Loropéni"
+     ],
+     "why": "Women paint the walls."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is a big export from Burkina Faso?",
+     "a": "Cotton",
+     "wrong": [
+      "Cocoa",
+      "Coffee",
+      "Tea"
+     ],
+     "why": "Gold is now the top export."
+    },
+    {
+     "level": 1,
+     "q": "Which drink made from millet is shared in villages?",
+     "a": "Dolo",
+     "wrong": [
+      "Palm wine",
+      "Bissap",
+      "Bouye"
+     ],
+     "why": "It is a local beer."
+    },
+    {
+     "level": 1,
+     "q": "What is Burkina's national football team called?",
+     "a": "The Stallions",
+     "wrong": [
+      "The Elephants",
+      "The Eagles",
+      "The Black Stars"
+     ],
+     "why": "They reached the AFCON final in 2013."
+    },
+    {
+     "level": 2,
+     "q": "Which rock formations near Banfora attract visitors?",
+     "a": "Domes of Fabedougou",
+     "wrong": [
+      "Sindou Peaks",
+      "Hombori Tondo",
+      "Gobnangou Cliffs"
+     ],
+     "why": "They look like giant beehives."
+    },
+    {
+     "level": 2,
+     "q": "Which national park shares a W-shaped river with Niger and Benin?",
+     "a": "W National Park",
+     "wrong": [
+      "Arly National Park",
+      "Pendjari",
+      "Comoé"
+     ],
+     "why": "It is named after the river's bend."
+    },
+    {
+     "level": 2,
+     "q": "Which mosque in Bobo-Dioulasso is built of mud?",
+     "a": "Grand Mosque of Bobo-Dioulasso",
+     "wrong": [
+      "Great Mosque of Djenné",
+      "Djinguereber",
+      "Larabanga Mosque"
+     ],
+     "why": "It dates from the 1880s."
+    },
+    {
+     "level": 2,
+     "q": "Which Burkinabè architect won the 2022 Pritzker Prize?",
+     "a": "Diébédo Francis Kéré",
+     "wrong": [
+      "David Adjaye",
+      "Kunlé Adeyemi",
+      "Mariam Kamara"
+     ],
+     "why": "He was the first African winner."
+    },
+    {
+     "level": 2,
+     "q": "Which Burkinabè triple jumper won Olympic medals?",
+     "a": "Hugues Fabrice Zango",
+     "wrong": [
+      "Marie-José Pérec",
+      "Yannick Agnel",
+      "Christian Taylor"
+     ],
+     "why": "He won bronze in 2021."
+    },
+    {
+     "level": 3,
+     "q": "Which Burkinabè film won the Grand Prix at Cannes in 1990?",
+     "a": "Tilaï",
+     "wrong": [
+      "Yaaba",
+      "Buud Yam",
+      "Sia"
+     ],
+     "why": "Idrissa Ouédraogo directed it."
+    },
+    {
+     "level": 3,
+     "q": "Which waterfalls near Banfora are popular with visitors?",
+     "a": "Karfiguéla Falls",
+     "wrong": [
+      "Lobé Falls",
+      "Kaieteur Falls",
+      "Tagbo Falls"
+     ],
+     "why": "They tumble over rocky ledges."
+    },
+    {
+     "level": 3,
+     "q": "Which peaks of sandstone stand like needles near Sindou?",
+     "a": "Sindou Peaks",
+     "wrong": [
+      "Domes of Fabedougou",
+      "Tiébélé Peaks",
+      "Karfiguéla Peaks"
+     ],
+     "why": "They are a sacred site."
+    }
+   ]
+  }
+ ]
+}

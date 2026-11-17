@@ -1,0 +1,346 @@
+{
+ "category": "Togo",
+ "country": "TG",
+ "topics": [
+  {
+   "name": "Togo: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Togo?",
+     "a": "Lomé",
+     "wrong": [
+      "Sokodé",
+      "Kara",
+      "Kpalimé"
+     ],
+     "why": "It sits on the Ghana border."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Togo gain independence in 1960?",
+     "a": "France",
+     "wrong": [
+      "United Kingdom",
+      "Germany",
+      "Belgium"
+     ],
+     "why": "It had been a UN trust territory."
+    },
+    {
+     "level": 1,
+     "q": "Which country colonised Togo first, in 1884?",
+     "a": "Germany",
+     "wrong": [
+      "France",
+      "United Kingdom",
+      "Portugal"
+     ],
+     "why": "It was called Togoland."
+    },
+    {
+     "level": 1,
+     "q": "Which family has ruled Togo since 1967?",
+     "a": "Gnassingbé family",
+     "wrong": [
+      "Olympio family",
+      "Kérékou family",
+      "Grunitzky family"
+     ],
+     "why": "Faure Gnassingbé took over from his father."
+    },
+    {
+     "level": 1,
+     "q": "What is Togo's currency?",
+     "a": "West African CFA franc",
+     "wrong": [
+      "Cedi",
+      "Naira",
+      "Leone"
+     ],
+     "why": "It is shared by eight countries."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is on Togo's short coast?",
+     "a": "Atlantic Ocean (Gulf of Guinea)",
+     "wrong": [
+      "Indian Ocean",
+      "Red Sea",
+      "Mediterranean Sea"
+     ],
+     "why": "The coast is only about 56 km long."
+    },
+    {
+     "level": 1,
+     "q": "Who was the first President of Togo?",
+     "a": "Sylvanus Olympio",
+     "wrong": [
+      "Gnassingbé Eyadéma",
+      "Nicolas Grunitzky",
+      "Faure Gnassingbé"
+     ],
+     "why": "He was killed in 1963."
+    },
+    {
+     "level": 2,
+     "q": "Who ruled Togo from 1967 to 2005?",
+     "a": "Gnassingbé Eyadéma",
+     "wrong": [
+      "Sylvanus Olympio",
+      "Faure Gnassingbé",
+      "Nicolas Grunitzky"
+     ],
+     "why": "He was Africa's longest-serving leader at the time."
+    },
+    {
+     "level": 2,
+     "q": "Which part of German Togoland joined Ghana?",
+     "a": "British Togoland",
+     "wrong": [
+      "French Togoland",
+      "Atakpamé Region",
+      "Lomé Region"
+     ],
+     "why": "It voted in 1956."
+    },
+    {
+     "level": 2,
+     "q": "Which 2024 change made Togo a parliamentary system?",
+     "a": "A new constitution",
+     "wrong": [
+      "A referendum to join Ghana",
+      "A royal decree",
+      "A UN mandate"
+     ],
+     "why": "Faure Gnassingbé became President of the Council."
+    },
+    {
+     "level": 2,
+     "q": "Which lake town was the old German capital?",
+     "a": "Aného",
+     "wrong": [
+      "Togoville",
+      "Kpalimé",
+      "Atakpamé"
+     ],
+     "why": "It is on the coast."
+    },
+    {
+     "level": 2,
+     "q": "Which German-era royal treaty was signed at Togoville?",
+     "a": "Treaty with King Mlapa III",
+     "wrong": [
+      "Treaty of Berlin",
+      "Heligoland Treaty",
+      "Lomé Convention"
+     ],
+     "why": "It created the German protectorate in 1884."
+    },
+    {
+     "level": 3,
+     "q": "Which agreements between Europe and African countries were named after Lomé?",
+     "a": "Lomé Conventions",
+     "wrong": [
+      "Yaoundé Agreements",
+      "Cotonou Accords",
+      "Abuja Treaty"
+     ],
+     "why": "The first was signed in 1975."
+    },
+    {
+     "level": 3,
+     "q": "Which Togolese leader overthrew Olympio in 1963?",
+     "a": "Gnassingbé Eyadéma",
+     "wrong": [
+      "Nicolas Grunitzky",
+      "Kofi Busia",
+      "Mathieu Kérékou"
+     ],
+     "why": "He was a sergeant then and took power himself in 1967."
+    },
+    {
+     "level": 3,
+     "q": "Which ethnic group lives mainly in southern Togo?",
+     "a": "Ewe",
+     "wrong": [
+      "Kabye",
+      "Hausa",
+      "Wolof"
+     ],
+     "why": "Many Ewe also live in Ghana."
+    }
+   ]
+  },
+  {
+   "name": "Togo: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which mud tower houses of the Batammariba are a UNESCO site?",
+     "a": "Koutammakou",
+     "wrong": [
+      "Tiébélé",
+      "Djenné",
+      "Bandiagara"
+     ],
+     "why": "They look like small castles."
+    },
+    {
+     "level": 1,
+     "q": "Which market in Lomé sells traditional remedies?",
+     "a": "Akodessewa Fetish Market",
+     "wrong": [
+      "Grand Marché",
+      "Kejetia Market",
+      "Balogun Market"
+     ],
+     "why": "It is one of the largest of its kind."
+    },
+    {
+     "level": 1,
+     "q": "Which footballer from Togo starred for Arsenal and Manchester City?",
+     "a": "Emmanuel Adebayor",
+     "wrong": [
+      "Didier Drogba",
+      "Samuel Eto'o",
+      "Kanu"
+     ],
+     "why": "He was African Player of the Year in 2008."
+    },
+    {
+     "level": 1,
+     "q": "What is Togo's national football team called?",
+     "a": "Les Éperviers (Sparrowhawks)",
+     "wrong": [
+      "Black Stars",
+      "Super Eagles",
+      "Elephants"
+     ],
+     "why": "They played at the 2006 World Cup."
+    },
+    {
+     "level": 1,
+     "q": "Which lake near the coast is popular for boat trips?",
+     "a": "Lake Togo",
+     "wrong": [
+      "Lake Volta",
+      "Lake Chad",
+      "Lake Nokoué"
+     ],
+     "why": "Togoville is on its shore."
+    },
+    {
+     "level": 1,
+     "q": "Which language is the official language of Togo?",
+     "a": "French",
+     "wrong": [
+      "English",
+      "German",
+      "Ewe"
+     ],
+     "why": "Ewe and Kabye are national languages."
+    },
+    {
+     "level": 1,
+     "q": "Which hilly town is known for waterfalls and butterflies?",
+     "a": "Kpalimé",
+     "wrong": [
+      "Sokodé",
+      "Dapaong",
+      "Aného"
+     ],
+     "why": "It is near Mount Agou."
+    },
+    {
+     "level": 2,
+     "q": "What is Togo's highest mountain?",
+     "a": "Mont Agou",
+     "wrong": [
+      "Mont Nimba",
+      "Mount Cameroon",
+      "Mount Bintumani"
+     ],
+     "why": "It is about 986 m high."
+    },
+    {
+     "level": 2,
+     "q": "Which canoeist won Togo's first Olympic medal, in 2008?",
+     "a": "Benjamin Boukpeti",
+     "wrong": [
+      "Emmanuel Adebayor",
+      "Kossi Akoto",
+      "Amah Amegah"
+     ],
+     "why": "He won bronze in slalom."
+    },
+    {
+     "level": 2,
+     "q": "Which festival of the Kabye people includes wrestling?",
+     "a": "Evala",
+     "wrong": [
+      "Gerewol",
+      "Durbar",
+      "Timkat"
+     ],
+     "why": "Young men prove their strength."
+    },
+    {
+     "level": 2,
+     "q": "Which corn dough eaten with sauce is a Togolese staple?",
+     "a": "Akoumé",
+     "wrong": [
+      "Ugali",
+      "Injera",
+      "Couscous"
+     ],
+     "why": "It is similar to Ghana's banku."
+    },
+    {
+     "level": 2,
+     "q": "What attacked Togo's team bus at the 2010 Africa Cup of Nations?",
+     "a": "Gunmen in Cabinda",
+     "wrong": [
+      "A storm",
+      "Fans",
+      "A bridge collapse"
+     ],
+     "why": "Two staff members were killed."
+    },
+    {
+     "level": 3,
+     "q": "Which Togolese singer is called the 'King of Togolese music'?",
+     "a": "King Mensah",
+     "wrong": [
+      "Angélique Kidjo",
+      "Bella Bellow",
+      "Fifi Rafiatou"
+     ],
+     "why": "He sings in Ewe and Mina."
+    },
+    {
+     "level": 3,
+     "q": "Which is the largest national park in Togo?",
+     "a": "Fazao-Malfakassa National Park",
+     "wrong": [
+      "Kéran National Park",
+      "W National Park",
+      "Pendjari"
+     ],
+     "why": "It is the largest park in Togo."
+    },
+    {
+     "level": 3,
+     "q": "Which singer from Togo was a 1960s star across Africa?",
+     "a": "Bella Bellow",
+     "wrong": [
+      "King Mensah",
+      "Angélique Kidjo",
+      "Miriam Makeba"
+     ],
+     "why": "She died young in 1973."
+    }
+   ]
+  }
+ ]
+}

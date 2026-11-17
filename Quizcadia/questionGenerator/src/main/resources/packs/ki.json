@@ -1,0 +1,346 @@
+{
+ "category": "Kiribati",
+ "country": "KI",
+ "topics": [
+  {
+   "name": "Kiribati: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Kiribati?",
+     "a": "South Tarawa",
+     "wrong": [
+      "Kiritimati",
+      "Abaiang",
+      "Funafuti"
+     ],
+     "why": "Most government offices are on it."
+    },
+    {
+     "level": 1,
+     "q": "What was Kiribati called as a British colony?",
+     "a": "Gilbert Islands",
+     "wrong": [
+      "Ellice Islands",
+      "Phoenix Islands",
+      "Marshall Islands"
+     ],
+     "why": "It became independent in 1979."
+    },
+    {
+     "level": 1,
+     "q": "Which currency is used in Kiribati?",
+     "a": "Australian dollar",
+     "wrong": [
+      "Kiribati pound",
+      "Tala",
+      "Pa'anga"
+     ],
+     "why": "It also has its own coins."
+    },
+    {
+     "level": 1,
+     "q": "Which country is the only one in all four hemispheres?",
+     "a": "Kiribati",
+     "wrong": [
+      "Ecuador",
+      "Indonesia",
+      "Fiji"
+     ],
+     "why": "It crosses the equator and the 180th meridian."
+    },
+    {
+     "level": 1,
+     "q": "What did Kiribati do to the date line in 1995?",
+     "a": "Moved it so all its islands share the same day",
+     "wrong": [
+      "Abolished it",
+      "Split into two days",
+      "Created a new time zone for Hawaii"
+     ],
+     "why": "Its eastern islands had been a day behind."
+    },
+    {
+     "level": 1,
+     "q": "Which Kiribati island is among the first places to see each new year?",
+     "a": "Kiritimati (Christmas Island)",
+     "wrong": [
+      "Tarawa",
+      "Abaiang",
+      "Banaba"
+     ],
+     "why": "It is in the UTC+14 time zone."
+    },
+    {
+     "level": 1,
+     "q": "Which threat endangers Kiribati's low atolls?",
+     "a": "Rising sea levels",
+     "wrong": [
+      "Volcanoes",
+      "Earthquakes",
+      "Desertification"
+     ],
+     "why": "Most land is just a few metres above sea."
+    },
+    {
+     "level": 2,
+     "q": "Which 1943 battle saw US Marines fight Japanese forces in Kiribati?",
+     "a": "Battle of Tarawa",
+     "wrong": [
+      "Battle of Iwo Jima",
+      "Battle of Guadalcanal",
+      "Battle of Midway"
+     ],
+     "why": "It was one of the bloodiest Pacific battles."
+    },
+    {
+     "level": 2,
+     "q": "Which island was mined for phosphate until 1979?",
+     "a": "Banaba (Ocean Island)",
+     "wrong": [
+      "Kiritimati",
+      "Tarawa",
+      "Abemama"
+     ],
+     "why": "Its people were moved to Fiji."
+    },
+    {
+     "level": 2,
+     "q": "How is Kiribati pronounced?",
+     "a": "'Kiri-bas'",
+     "wrong": [
+      "'Kiri-bati'",
+      "'Kai-ri-bati'",
+      "'Kiri-bay'"
+     ],
+     "why": "'Ti' is said like 's'."
+    },
+    {
+     "level": 2,
+     "q": "Who has been President of Kiribati since 2016?",
+     "a": "Taneti Maamau",
+     "wrong": [
+      "Anote Tong",
+      "Teburoro Tito",
+      "Ieremia Tabai"
+     ],
+     "why": "He was re-elected in 2020 and 2024."
+    },
+    {
+     "level": 2,
+     "q": "Which island group in the middle of Kiribati is a huge marine reserve?",
+     "a": "Phoenix Islands",
+     "wrong": [
+      "Line Islands",
+      "Gilbert Islands",
+      "Ellice Islands"
+     ],
+     "why": "It is one of the world's largest protected areas."
+    },
+    {
+     "level": 3,
+     "q": "Which President became famous for warning about climate change?",
+     "a": "Anote Tong",
+     "wrong": [
+      "Taneti Maamau",
+      "Ieremia Tabai",
+      "Teburoro Tito"
+     ],
+     "why": "He bought land in Fiji as a safeguard."
+    },
+    {
+     "level": 3,
+     "q": "Who was the first President of Kiribati?",
+     "a": "Ieremia Tabai",
+     "wrong": [
+      "Anote Tong",
+      "Teburoro Tito",
+      "Taneti Maamau"
+     ],
+     "why": "He was only 29."
+    },
+    {
+     "level": 3,
+     "q": "Which British H-bomb tests took place near Kiritimati?",
+     "a": "Operation Grapple",
+     "wrong": [
+      "Operation Crossroads",
+      "Castle Bravo",
+      "Operation Mosaic"
+     ],
+     "why": "They were held in 1957–58."
+    }
+   ]
+  },
+  {
+   "name": "Kiribati: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which ocean is Kiribati in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It spreads over 3.5 million square kilometres of sea."
+    },
+    {
+     "level": 1,
+     "q": "Which atoll is the world's largest by land area?",
+     "a": "Kiritimati",
+     "wrong": [
+      "Tarawa",
+      "Kwajalein",
+      "Aldabra"
+     ],
+     "why": "It is a top bonefishing spot."
+    },
+    {
+     "level": 1,
+     "q": "What is the main language spoken in Kiribati?",
+     "a": "Gilbertese (Kiribati)",
+     "wrong": [
+      "Tuvaluan",
+      "Samoan",
+      "Fijian"
+     ],
+     "why": "English is also official."
+    },
+    {
+     "level": 1,
+     "q": "Which tree gives Kiribati food, drink and building material?",
+     "a": "Coconut palm",
+     "wrong": [
+      "Banana",
+      "Mango",
+      "Oak"
+     ],
+     "why": "Copra is a main export."
+    },
+    {
+     "level": 1,
+     "q": "Which open-sided meeting house is central to Kiribati villages?",
+     "a": "Maneaba",
+     "wrong": [
+      "Fale",
+      "Bure",
+      "Marae"
+     ],
+     "why": "Each family has a seat in it."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is very popular in Kiribati?",
+     "a": "Football and volleyball",
+     "wrong": [
+      "Ice hockey",
+      "Skiing",
+      "Cricket"
+     ],
+     "why": "Weightlifting has also had success."
+    },
+    {
+     "level": 1,
+     "q": "Which seabird is on Kiribati's flag?",
+     "a": "Frigatebird",
+     "wrong": [
+      "Albatross",
+      "Pelican",
+      "Gull"
+     ],
+     "why": "It flies over a rising sun."
+    },
+    {
+     "level": 2,
+     "q": "Which Kiribati weightlifter danced after his lifts at the Olympics?",
+     "a": "David Katoatau",
+     "wrong": [
+      "Pita Taufatofua",
+      "Etimoni Timuani",
+      "Tuau Lapua Lapua"
+     ],
+     "why": "He danced to draw attention to climate change."
+    },
+    {
+     "level": 2,
+     "q": "Which traditional dance uses bird-like arm movements?",
+     "a": "Te kaimatoa (Kiribati dance)",
+     "wrong": [
+      "Haka",
+      "Hula",
+      "Meke"
+     ],
+     "why": "Dancers copy the frigatebird."
+    },
+    {
+     "level": 2,
+     "q": "Which root crop is grown in pits on the atolls?",
+     "a": "Babai (giant swamp taro)",
+     "wrong": [
+      "Potato",
+      "Wheat",
+      "Rice"
+     ],
+     "why": "It is eaten at feasts."
+    },
+    {
+     "level": 2,
+     "q": "Which fishing is famous on Kiritimati?",
+     "a": "Bonefishing",
+     "wrong": [
+      "Salmon fishing",
+      "Ice fishing",
+      "Trout fishing"
+     ],
+     "why": "Anglers come from all over the world."
+    },
+    {
+     "level": 2,
+     "q": "Which wartime relics remain on Betio islet?",
+     "a": "Japanese guns and bunkers",
+     "wrong": [
+      "Roman ruins",
+      "Spanish forts",
+      "French castles"
+     ],
+     "why": "They date from 1943."
+    },
+    {
+     "level": 3,
+     "q": "Which fish is a key export?",
+     "a": "Tuna",
+     "wrong": [
+      "Salmon",
+      "Cod",
+      "Herring"
+     ],
+     "why": "Foreign fleets pay to fish there."
+    },
+    {
+     "level": 3,
+     "q": "Which Kiribati island group is furthest east, near Hawaii?",
+     "a": "Line Islands",
+     "wrong": [
+      "Gilbert Islands",
+      "Phoenix Islands",
+      "Ellice Islands"
+     ],
+     "why": "Kiritimati is one of them."
+    },
+    {
+     "level": 3,
+     "q": "Which body armour was made from coconut fibre?",
+     "a": "Woven coconut-fibre armour",
+     "wrong": [
+      "Leather armour",
+      "Bamboo armour",
+      "Shell plate armour"
+     ],
+     "why": "Warriors also wore helmets of pufferfish skin."
+    }
+   ]
+  }
+ ]
+}

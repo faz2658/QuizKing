@@ -1,0 +1,346 @@
+{
+ "category": "The Gambia",
+ "country": "GM",
+ "topics": [
+  {
+   "name": "The Gambia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of The Gambia?",
+     "a": "Banjul",
+     "wrong": [
+      "Serekunda",
+      "Brikama",
+      "Bakau"
+     ],
+     "why": "It is on St Mary's Island."
+    },
+    {
+     "level": 1,
+     "q": "What is the smallest country on mainland Africa?",
+     "a": "The Gambia",
+     "wrong": [
+      "Togo",
+      "Eswatini",
+      "Rwanda"
+     ],
+     "why": "It is a narrow strip along a river."
+    },
+    {
+     "level": 1,
+     "q": "Which country surrounds The Gambia on three sides?",
+     "a": "Senegal",
+     "wrong": [
+      "Guinea",
+      "Mali",
+      "Mauritania"
+     ],
+     "why": "The Atlantic is to the west."
+    },
+    {
+     "level": 1,
+     "q": "From which country did The Gambia gain independence in 1965?",
+     "a": "United Kingdom",
+     "wrong": [
+      "France",
+      "Portugal",
+      "Belgium"
+     ],
+     "why": "It became a republic in 1970."
+    },
+    {
+     "level": 1,
+     "q": "What is The Gambia's currency?",
+     "a": "Dalasi",
+     "wrong": [
+      "CFA franc",
+      "Leone",
+      "Cedi"
+     ],
+     "why": "Its code is GMD."
+    },
+    {
+     "level": 1,
+     "q": "Who ruled The Gambia from 1994 to 2017?",
+     "a": "Yahya Jammeh",
+     "wrong": [
+      "Dawda Jawara",
+      "Adama Barrow",
+      "Edward Singhateh"
+     ],
+     "why": "He lost an election and left in 2017."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of The Gambia since 2017?",
+     "a": "Adama Barrow",
+     "wrong": [
+      "Yahya Jammeh",
+      "Dawda Jawara",
+      "Ousainou Darboe"
+     ],
+     "why": "He was a property developer."
+    },
+    {
+     "level": 2,
+     "q": "Who was the first President of The Gambia?",
+     "a": "Dawda Jawara",
+     "wrong": [
+      "Yahya Jammeh",
+      "Adama Barrow",
+      "Pierre Sarr N'Jie"
+     ],
+     "why": "He led the country for 30 years."
+    },
+    {
+     "level": 2,
+     "q": "Which island in the river was a slave-trading post and is a UNESCO site?",
+     "a": "Kunta Kinteh Island",
+     "wrong": [
+      "Gorée Island",
+      "MacCarthy Island",
+      "Bunce Island"
+     ],
+     "why": "It was once called James Island."
+    },
+    {
+     "level": 2,
+     "q": "Which novel by Alex Haley traces his roots to Juffureh?",
+     "a": "Roots",
+     "wrong": [
+      "Things Fall Apart",
+      "Beloved",
+      "The Color Purple"
+     ],
+     "why": "Kunta Kinte was his ancestor."
+    },
+    {
+     "level": 2,
+     "q": "Which West African force entered The Gambia in 2017 to back the election result?",
+     "a": "ECOWAS mission (ECOMIG)",
+     "wrong": [
+      "African Union Standby Force",
+      "UN peacekeepers",
+      "French troops"
+     ],
+     "why": "Jammeh left soon after."
+    },
+    {
+     "level": 2,
+     "q": "Which stone circles are found in The Gambia and Senegal?",
+     "a": "Senegambian stone circles",
+     "wrong": [
+      "Stonehenge",
+      "Carnac stones",
+      "Nabta Playa"
+     ],
+     "why": "They are a UNESCO site."
+    },
+    {
+     "level": 3,
+     "q": "Which military council ruled after the 1994 coup?",
+     "a": "Armed Forces Provisional Ruling Council",
+     "wrong": [
+      "National Redemption Council",
+      "Supreme Military Council",
+      "Revolutionary Council"
+     ],
+     "why": "Jammeh led it."
+    },
+    {
+     "level": 3,
+     "q": "Which British name did Banjul have until 1973?",
+     "a": "Bathurst",
+     "wrong": [
+      "Freetown",
+      "Georgetown",
+      "Jamestown"
+     ],
+     "why": "It was named after a British official."
+    },
+    {
+     "level": 3,
+     "q": "Which 1981 coup attempt was stopped by Senegalese troops?",
+     "a": "Kukoi Samba Sanyang's coup",
+     "wrong": [
+      "Jammeh's coup",
+      "Banjul Rising",
+      "Kombo Revolt"
+     ],
+     "why": "It led to the Senegambia Confederation."
+    }
+   ]
+  },
+  {
+   "name": "The Gambia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which river gives The Gambia its name?",
+     "a": "Gambia River",
+     "wrong": [
+      "Senegal River",
+      "Niger River",
+      "Casamance River"
+     ],
+     "why": "It runs the length of the country."
+    },
+    {
+     "level": 1,
+     "q": "What is The Gambia's nickname?",
+     "a": "The Smiling Coast of Africa",
+     "wrong": [
+      "The Pearl of Africa",
+      "The Gold Coast",
+      "The Rainbow Nation"
+     ],
+     "why": "Visitors praise its friendliness."
+    },
+    {
+     "level": 1,
+     "q": "Which pool near Bakau has sacred crocodiles?",
+     "a": "Kachikally Crocodile Pool",
+     "wrong": [
+      "Paga Pond",
+      "Sabou Pond",
+      "Lake Tengrela"
+     ],
+     "why": "Visitors can touch the crocodiles."
+    },
+    {
+     "level": 1,
+     "q": "Which peanut stew is a favourite dish?",
+     "a": "Domoda",
+     "wrong": [
+      "Jollof rice",
+      "Thieboudienne",
+      "Egusi soup"
+     ],
+     "why": "Peanuts are a main crop."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is The Gambia's main export?",
+     "a": "Peanuts (groundnuts)",
+     "wrong": [
+      "Cocoa",
+      "Coffee",
+      "Cotton"
+     ],
+     "why": "It has been grown for export since the 1800s."
+    },
+    {
+     "level": 1,
+     "q": "Which string instrument is played by Gambian griots?",
+     "a": "Kora",
+     "wrong": [
+      "Sitar",
+      "Banjo",
+      "Oud"
+     ],
+     "why": "It has 21 strings."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean lies along The Gambia's coast?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Mediterranean Sea",
+      "Red Sea"
+     ],
+     "why": "Its beaches draw winter tourists."
+    },
+    {
+     "level": 2,
+     "q": "Which bird-watching spot near Banjul is famous?",
+     "a": "Abuko Nature Reserve",
+     "wrong": [
+      "Djoudj",
+      "Lake Nakuru",
+      "Okavango"
+     ],
+     "why": "Many bird species are seen there."
+    },
+    {
+     "level": 2,
+     "q": "Which island in the river is home to rescued chimpanzees?",
+     "a": "Baboon Islands (River Gambia National Park)",
+     "wrong": [
+      "Kunta Kinteh Island",
+      "Jinack Island",
+      "Bijol Islands"
+     ],
+     "why": "Visitors view them by boat."
+    },
+    {
+     "level": 2,
+     "q": "Which arch in Banjul marks the 1994 coup?",
+     "a": "Arch 22",
+     "wrong": [
+      "Independence Arch",
+      "Victory Gate",
+      "Freedom Gate"
+     ],
+     "why": "It is 35 m tall."
+    },
+    {
+     "level": 2,
+     "q": "Which resort strip near Serekunda is The Gambia's main tourist area?",
+     "a": "Kololi (Senegambia Strip)",
+     "wrong": [
+      "Tanji",
+      "Gunjur",
+      "Brikama"
+     ],
+     "why": "It has hotels, bars and markets."
+    },
+    {
+     "level": 2,
+     "q": "What are the traditional storytellers and musicians called?",
+     "a": "Griots (jali)",
+     "wrong": [
+      "Bards",
+      "Shamans",
+      "Minstrels"
+     ],
+     "why": "They keep family histories."
+    },
+    {
+     "level": 3,
+     "q": "Which fish market and beach in the Kombo is a busy hub?",
+     "a": "Tanji fishing village",
+     "wrong": [
+      "Bakau",
+      "Kololi",
+      "Brufut"
+     ],
+     "why": "Colourful boats land fish there."
+    },
+    {
+     "level": 3,
+     "q": "Which Gambian wrestling form is a traditional sport?",
+     "a": "Borreh",
+     "wrong": [
+      "Laamb",
+      "Sumo",
+      "Lutte Aïr"
+     ],
+     "why": "It is held at festivals."
+    },
+    {
+     "level": 3,
+     "q": "What is the main language spoken besides English?",
+     "a": "Mandinka",
+     "wrong": [
+      "Swahili",
+      "Hausa",
+      "Yoruba"
+     ],
+     "why": "Wolof and Fula are also spoken."
+    }
+   ]
+  }
+ ]
+}

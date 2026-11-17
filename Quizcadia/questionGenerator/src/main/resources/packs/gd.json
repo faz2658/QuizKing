@@ -1,0 +1,346 @@
+{
+ "category": "Grenada",
+ "country": "GD",
+ "topics": [
+  {
+   "name": "Grenada: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Grenada?",
+     "a": "St George's",
+     "wrong": [
+      "Grenville",
+      "Gouyave",
+      "Sauteurs"
+     ],
+     "why": "Its horseshoe harbour is famous."
+    },
+    {
+     "level": 1,
+     "q": "What is Grenada's nickname?",
+     "a": "Spice Isle",
+     "wrong": [
+      "Little England",
+      "Nature Isle",
+      "Rock"
+     ],
+     "why": "It grows nutmeg, cinnamon and cloves."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Grenada gain independence in 1974?",
+     "a": "United Kingdom",
+     "wrong": [
+      "France",
+      "Spain",
+      "Netherlands"
+     ],
+     "why": "It is in the Commonwealth."
+    },
+    {
+     "level": 1,
+     "q": "Which country invaded Grenada in 1983?",
+     "a": "United States",
+     "wrong": [
+      "Cuba",
+      "United Kingdom",
+      "Venezuela"
+     ],
+     "why": "The operation was called Urgent Fury."
+    },
+    {
+     "level": 1,
+     "q": "What is Grenada's currency?",
+     "a": "East Caribbean dollar",
+     "wrong": [
+      "Grenadian dollar",
+      "US dollar",
+      "Pound sterling"
+     ],
+     "why": "It is shared by eight territories."
+    },
+    {
+     "level": 1,
+     "q": "Which spice appears on the flag of Grenada?",
+     "a": "Nutmeg",
+     "wrong": [
+      "Cinnamon",
+      "Clove",
+      "Pepper"
+     ],
+     "why": "Grenada is a top nutmeg producer."
+    },
+    {
+     "level": 1,
+     "q": "Which 2004 hurricane damaged most buildings on Grenada?",
+     "a": "Hurricane Ivan",
+     "wrong": [
+      "Hurricane Katrina",
+      "Hurricane Gilbert",
+      "Hurricane Maria"
+     ],
+     "why": "It also destroyed many nutmeg trees."
+    },
+    {
+     "level": 2,
+     "q": "Which revolutionary leader took power in 1979?",
+     "a": "Maurice Bishop",
+     "wrong": [
+      "Eric Gairy",
+      "Bernard Coard",
+      "Keith Mitchell"
+     ],
+     "why": "He led the New Jewel Movement."
+    },
+    {
+     "level": 2,
+     "q": "Who was Grenada's first Prime Minister?",
+     "a": "Eric Gairy",
+     "wrong": [
+      "Maurice Bishop",
+      "Herbert Blaize",
+      "Keith Mitchell"
+     ],
+     "why": "He was overthrown in 1979."
+    },
+    {
+     "level": 2,
+     "q": "Which country ruled Grenada before Britain took it in 1763?",
+     "a": "France",
+     "wrong": [
+      "Spain",
+      "Netherlands",
+      "Portugal"
+     ],
+     "why": "Many place names are French."
+    },
+    {
+     "level": 2,
+     "q": "Which two islands are part of Grenada?",
+     "a": "Carriacou and Petite Martinique",
+     "wrong": [
+      "Bequia and Mustique",
+      "Nevis and Montserrat",
+      "Tobago and Margarita"
+     ],
+     "why": "They are in the Grenadines."
+    },
+    {
+     "level": 2,
+     "q": "Which 1795 rebellion was led by Julien Fédon?",
+     "a": "Fédon's Rebellion",
+     "wrong": [
+      "Bussa's Rebellion",
+      "Tacky's War",
+      "Haitian Revolution"
+     ],
+     "why": "It almost took the island."
+    },
+    {
+     "level": 3,
+     "q": "Which airport, built in the 1980s, was a cause of tension with the US?",
+     "a": "Point Salines (Maurice Bishop) International Airport",
+     "wrong": [
+      "Pearls Airport",
+      "Lauriston Airport",
+      "Grantley Adams"
+     ],
+     "why": "Cuban workers helped build it."
+    },
+    {
+     "level": 3,
+     "q": "Who became Prime Minister of Grenada in 2022?",
+     "a": "Dickon Mitchell",
+     "wrong": [
+      "Keith Mitchell",
+      "Tillman Thomas",
+      "Herbert Blaize"
+     ],
+     "why": "He is the youngest to hold the post."
+    },
+    {
+     "level": 3,
+     "q": "Which cliff did the last Caribs leap from rather than surrender?",
+     "a": "Leapers Hill (Caribs' Leap)",
+     "wrong": [
+      "Morne Fendue",
+      "Grand Étang",
+      "Mount Qua Qua"
+     ],
+     "why": "It is in Sauteurs."
+    }
+   ]
+  },
+  {
+   "name": "Grenada: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which famous beach curves for three kilometres on Grenada?",
+     "a": "Grand Anse Beach",
+     "wrong": [
+      "Seven Mile Beach",
+      "Pink Sands Beach",
+      "Shoal Bay"
+     ],
+     "why": "It is near St George's."
+    },
+    {
+     "level": 1,
+     "q": "Which one-pot stew is Grenada's national dish?",
+     "a": "Oil down",
+     "wrong": [
+      "Pepperpot",
+      "Callaloo soup",
+      "Pelau"
+     ],
+     "why": "It is cooked in coconut milk."
+    },
+    {
+     "level": 1,
+     "q": "Which underwater art park lies off Grenada?",
+     "a": "Underwater Sculpture Park",
+     "wrong": [
+      "Museo Atlántico",
+      "MUSA Cancún",
+      "Coral Gardens"
+     ],
+     "why": "Jason deCaires Taylor made it."
+    },
+    {
+     "level": 1,
+     "q": "Which spice cracks into mace and nut?",
+     "a": "Nutmeg",
+     "wrong": [
+      "Cinnamon",
+      "Clove",
+      "Allspice"
+     ],
+     "why": "Mace is its red covering."
+    },
+    {
+     "level": 1,
+     "q": "Which festival in August features J'ouvert and steel bands?",
+     "a": "Spicemas",
+     "wrong": [
+      "Crop Over",
+      "Junkanoo",
+      "Mashramani"
+     ],
+     "why": "It is Grenada's carnival."
+    },
+    {
+     "level": 1,
+     "q": "Which lake fills an old volcanic crater in the forest?",
+     "a": "Grand Étang Lake",
+     "wrong": [
+      "Antoine Lake",
+      "Lake Atitlán",
+      "Boiling Lake"
+     ],
+     "why": "Mona monkeys live nearby."
+    },
+    {
+     "level": 1,
+     "q": "Which sea lies to the west of Grenada?",
+     "a": "Caribbean Sea",
+     "wrong": [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Gulf of Mexico"
+     ],
+     "why": "It is the southern Windward Islands."
+    },
+    {
+     "level": 2,
+     "q": "Which Grenadian sprinter won Olympic 400 m gold in 2012?",
+     "a": "Kirani James",
+     "wrong": [
+      "Bralon Taplin",
+      "Obadele Thompson",
+      "Wayde van Niekerk"
+     ],
+     "why": "It was Grenada's first Olympic medal."
+    },
+    {
+     "level": 2,
+     "q": "Which chocolate company on Grenada makes bars from local cocoa?",
+     "a": "Grenada Chocolate Company",
+     "wrong": [
+      "Lindt",
+      "Hershey",
+      "Divine"
+     ],
+     "why": "It runs on solar power."
+    },
+    {
+     "level": 2,
+     "q": "Which ruined fortress overlooks St George's?",
+     "a": "Fort George",
+     "wrong": [
+      "Fort Charlotte",
+      "Brimstone Hill",
+      "Fort King George"
+     ],
+     "why": "It was built by the French in 1705."
+    },
+    {
+     "level": 2,
+     "q": "Which Carriacou festival celebrates sailing in August?",
+     "a": "Carriacou Regatta",
+     "wrong": [
+      "Antigua Sailing Week",
+      "Bequia Easter Regatta",
+      "Spicemas"
+     ],
+     "why": "Boats are built by hand there."
+    },
+    {
+     "level": 2,
+     "q": "What is Grenada's national bird?",
+     "a": "Grenada dove",
+     "wrong": [
+      "Bananaquit",
+      "Frigatebird",
+      "Hummingbird"
+     ],
+     "why": "It is critically endangered."
+    },
+    {
+     "level": 3,
+     "q": "Which Grenadian rum distillery uses a water wheel?",
+     "a": "River Antoine",
+     "wrong": [
+      "Westerhall",
+      "Clarke's Court",
+      "Mount Gay"
+     ],
+     "why": "It has run since 1785."
+    },
+    {
+     "level": 3,
+     "q": "What is Grenada's highest mountain?",
+     "a": "Mount St Catherine",
+     "wrong": [
+      "Mount Qua Qua",
+      "Morne Diablotin",
+      "Mount Liamuiga"
+     ],
+     "why": "It is about 840 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which Carriacou drum dance comes from African traditions?",
+     "a": "Big Drum Dance",
+     "wrong": [
+      "Quadrille",
+      "Limbo",
+      "Bomba"
+     ],
+     "why": "It honours ancestors."
+    }
+   ]
+  }
+ ]
+}

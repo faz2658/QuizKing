@@ -1,0 +1,346 @@
+{
+ "category": "Niger",
+ "country": "NE",
+ "topics": [
+  {
+   "name": "Niger: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Niger?",
+     "a": "Niamey",
+     "wrong": [
+      "Zinder",
+      "Agadez",
+      "Maradi"
+     ],
+     "why": "It is on the Niger River."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Niger gain independence in 1960?",
+     "a": "France",
+     "wrong": [
+      "United Kingdom",
+      "Belgium",
+      "Italy"
+     ],
+     "why": "It is named after the river."
+    },
+    {
+     "level": 1,
+     "q": "Which desert covers most of Niger?",
+     "a": "Sahara",
+     "wrong": [
+      "Kalahari",
+      "Namib",
+      "Gobi"
+     ],
+     "why": "About 80% of the land is desert."
+    },
+    {
+     "level": 1,
+     "q": "What is Niger's currency?",
+     "a": "West African CFA franc",
+     "wrong": [
+      "Naira",
+      "Dinar",
+      "Ouguiya"
+     ],
+     "why": "It is shared by eight countries."
+    },
+    {
+     "level": 1,
+     "q": "Which mineral is Niger a major producer of?",
+     "a": "Uranium",
+     "wrong": [
+      "Gold",
+      "Diamonds",
+      "Copper"
+     ],
+     "why": "It powers French reactors."
+    },
+    {
+     "level": 1,
+     "q": "Which country lies to the south of Niger?",
+     "a": "Nigeria",
+     "wrong": [
+      "Algeria",
+      "Libya",
+      "Chad"
+     ],
+     "why": "They share a long border."
+    },
+    {
+     "level": 1,
+     "q": "Who took power in Niger in a 2023 coup?",
+     "a": "Abdourahamane Tchiani",
+     "wrong": [
+      "Mohamed Bazoum",
+      "Mahamadou Issoufou",
+      "Salou Djibo"
+     ],
+     "why": "He led the presidential guard."
+    },
+    {
+     "level": 2,
+     "q": "Who was Niger's first President?",
+     "a": "Hamani Diori",
+     "wrong": [
+      "Seyni Kountché",
+      "Mahamadou Issoufou",
+      "Mamadou Tandja"
+     ],
+     "why": "He was overthrown in 1974."
+    },
+    {
+     "level": 2,
+     "q": "Which nomadic people in blue robes live in northern Niger?",
+     "a": "Tuareg",
+     "wrong": [
+      "Fulani",
+      "Hausa",
+      "Kanuri"
+     ],
+     "why": "They are called the 'blue people'."
+    },
+    {
+     "level": 2,
+     "q": "Which old desert city has a famous mud-brick minaret?",
+     "a": "Agadez",
+     "wrong": [
+      "Zinder",
+      "Tahoua",
+      "Dosso"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which elected President was removed in the 2023 coup?",
+     "a": "Mohamed Bazoum",
+     "wrong": [
+      "Mahamadou Issoufou",
+      "Mamadou Tandja",
+      "Seyni Kountché"
+     ],
+     "why": "He was held by the guard."
+    },
+    {
+     "level": 2,
+     "q": "Which old sultanate centred on Zinder had a famous palace?",
+     "a": "Sultanate of Damagaram",
+     "wrong": [
+      "Sokoto Caliphate",
+      "Kanem-Bornu",
+      "Air Sultanate"
+     ],
+     "why": "Zinder was its capital."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient Saharan sultanate is based in Agadez?",
+     "a": "Sultanate of Aïr",
+     "wrong": [
+      "Sultanate of Damagaram",
+      "Kanem Empire",
+      "Songhai Empire"
+     ],
+     "why": "It was founded in the 1400s."
+    },
+    {
+     "level": 3,
+     "q": "Which dinosaur graveyard in Niger revealed Jobaria and Sarcosuchus?",
+     "a": "Gadoufaoua",
+     "wrong": [
+      "Tendaguru",
+      "Ghost Ranch",
+      "Hell Creek"
+     ],
+     "why": "It is in the Ténéré."
+    },
+    {
+     "level": 3,
+     "q": "Which tree in the Ténéré was once the world's most isolated?",
+     "a": "Tree of Ténéré",
+     "wrong": [
+      "Tree of Life",
+      "Baobab of Agadez",
+      "General Sherman"
+     ],
+     "why": "A truck knocked it down in 1973."
+    }
+   ]
+  },
+  {
+   "name": "Niger: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which festival of the Wodaabe people features male beauty contests?",
+     "a": "Gerewol",
+     "wrong": [
+      "Fespaco",
+      "Durbar",
+      "Timkat"
+     ],
+     "why": "Men paint their faces."
+    },
+    {
+     "level": 1,
+     "q": "Which festival celebrates the end of the rainy season for herders?",
+     "a": "Cure Salée",
+     "wrong": [
+      "Timkat",
+      "Fespaco",
+      "Durbar"
+     ],
+     "why": "Herds go to salt pastures."
+    },
+    {
+     "level": 1,
+     "q": "Which river is the lifeline of Niger?",
+     "a": "Niger River",
+     "wrong": [
+      "Nile",
+      "Congo River",
+      "Benue River"
+     ],
+     "why": "It flows through Niamey."
+    },
+    {
+     "level": 1,
+     "q": "Which mountains rise in the Sahara of northern Niger?",
+     "a": "Aïr Mountains",
+     "wrong": [
+      "Atlas Mountains",
+      "Hoggar Mountains",
+      "Drakensberg"
+     ],
+     "why": "They have ancient rock art."
+    },
+    {
+     "level": 1,
+     "q": "Which desert region of Niger means 'desert' in Tuareg?",
+     "a": "Ténéré",
+     "wrong": [
+      "Erg Chebbi",
+      "Rub' al Khali",
+      "Sahel"
+     ],
+     "why": "It is a sea of sand dunes."
+    },
+    {
+     "level": 1,
+     "q": "Which language is most widely spoken in Niger?",
+     "a": "Hausa",
+     "wrong": [
+      "Arabic",
+      "Swahili",
+      "Yoruba"
+     ],
+     "why": "French is the official language."
+    },
+    {
+     "level": 1,
+     "q": "Which giraffes live only in Niger in West Africa?",
+     "a": "West African giraffes",
+     "wrong": [
+      "Masai giraffes",
+      "Reticulated giraffes",
+      "Rothschild's giraffes"
+     ],
+     "why": "They live near Kouré."
+    },
+    {
+     "level": 2,
+     "q": "Which national park covers parts of the Aïr and Ténéré?",
+     "a": "Aïr and Ténéré Natural Reserves",
+     "wrong": [
+      "W National Park",
+      "Termit",
+      "Gadabedji"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which rock carvings of giraffes are among the world's best?",
+     "a": "Dabous giraffes",
+     "wrong": [
+      "Twyfelfontein",
+      "Tassili n'Ajjer",
+      "Lascaux"
+     ],
+     "why": "They are about 6 m long."
+    },
+    {
+     "level": 2,
+     "q": "Which wrestling style is Niger's national sport?",
+     "a": "Traditional wrestling (lutte)",
+     "wrong": [
+      "Laamb",
+      "Sumo",
+      "Judo"
+     ],
+     "why": "The champion wins a sabre."
+    },
+    {
+     "level": 2,
+     "q": "Which silver cross of the Tuareg is famous?",
+     "a": "Agadez cross",
+     "wrong": [
+      "Coptic cross",
+      "Maltese cross",
+      "Celtic cross"
+     ],
+     "why": "Each town has its own design."
+    },
+    {
+     "level": 2,
+     "q": "Which oasis town in the Kawar is famous for salt caravans?",
+     "a": "Bilma",
+     "wrong": [
+      "Agadez",
+      "Arlit",
+      "Zinder"
+     ],
+     "why": "Salt is carried by camel."
+    },
+    {
+     "level": 3,
+     "q": "Which Nigerien taekwondo athlete won Olympic silver in 2016?",
+     "a": "Abdoul Razak Issoufou",
+     "wrong": [
+      "Issa Hayatou",
+      "Cheick Cissé",
+      "Moumouni Dagra"
+     ],
+     "why": "It was Niger's second Olympic medal."
+    },
+    {
+     "level": 3,
+     "q": "Which mining town in the north grew up around uranium?",
+     "a": "Arlit",
+     "wrong": [
+      "Bilma",
+      "Tahoua",
+      "Diffa"
+     ],
+     "why": "It is called 'the second Paris'."
+    },
+    {
+     "level": 3,
+     "q": "Which millet porridge drink is popular?",
+     "a": "Fura",
+     "wrong": [
+      "Dolo",
+      "Bissap",
+      "Palm wine"
+     ],
+     "why": "It is mixed with milk."
+    }
+   ]
+  }
+ ]
+}

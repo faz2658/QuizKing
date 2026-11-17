@@ -1,0 +1,346 @@
+{
+ "category": "Guinea",
+ "country": "GN",
+ "topics": [
+  {
+   "name": "Guinea: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Guinea?",
+     "a": "Conakry",
+     "wrong": [
+      "Kankan",
+      "Labé",
+      "Nzérékoré"
+     ],
+     "why": "It is on a peninsula."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Guinea gain independence in 1958?",
+     "a": "France",
+     "wrong": [
+      "United Kingdom",
+      "Portugal",
+      "Belgium"
+     ],
+     "why": "It was the first French African colony to vote for independence."
+    },
+    {
+     "level": 1,
+     "q": "Who was Guinea's first President?",
+     "a": "Ahmed Sékou Touré",
+     "wrong": [
+      "Lansana Conté",
+      "Alpha Condé",
+      "Mamadi Doumbouya"
+     ],
+     "why": "He ruled until 1984."
+    },
+    {
+     "level": 1,
+     "q": "Which mineral does Guinea have the world's largest reserves of?",
+     "a": "Bauxite",
+     "wrong": [
+      "Gold",
+      "Diamonds",
+      "Copper"
+     ],
+     "why": "It is used to make aluminium."
+    },
+    {
+     "level": 1,
+     "q": "What is Guinea's currency?",
+     "a": "Guinean franc",
+     "wrong": [
+      "CFA franc",
+      "Leone",
+      "Cedi"
+     ],
+     "why": "Its code is GNF."
+    },
+    {
+     "level": 1,
+     "q": "Which 2014–16 epidemic began in Guinea?",
+     "a": "Ebola",
+     "wrong": [
+      "Cholera",
+      "Yellow fever",
+      "Malaria"
+     ],
+     "why": "It spread to Liberia and Sierra Leone."
+    },
+    {
+     "level": 1,
+     "q": "Who seized power in Guinea in 2021?",
+     "a": "Mamadi Doumbouya",
+     "wrong": [
+      "Alpha Condé",
+      "Moussa Dadis Camara",
+      "Lansana Conté"
+     ],
+     "why": "He led special forces."
+    },
+    {
+     "level": 2,
+     "q": "What did Sékou Touré say in 1958 that became famous?",
+     "a": "Poverty in freedom rather than riches in slavery",
+     "wrong": [
+      "One people, one goal, one faith",
+      "Freedom now",
+      "Unity is strength"
+     ],
+     "why": "He said it to de Gaulle."
+    },
+    {
+     "level": 2,
+     "q": "Who became Guinea's first democratically elected President in 2010?",
+     "a": "Alpha Condé",
+     "wrong": [
+      "Lansana Conté",
+      "Cellou Dalein Diallo",
+      "Moussa Dadis Camara"
+     ],
+     "why": "He was removed in 2021."
+    },
+    {
+     "level": 2,
+     "q": "Which 2009 stadium massacre took place in Conakry?",
+     "a": "28 September stadium massacre",
+     "wrong": [
+      "Bloody Sunday",
+      "Soweto massacre",
+      "Sharpeville massacre"
+     ],
+     "why": "Over 150 protesters were killed."
+    },
+    {
+     "level": 2,
+     "q": "Which empire leader fought the French in the 1880s and 1890s?",
+     "a": "Samori Touré",
+     "wrong": [
+      "El Hadj Umar Tall",
+      "Sundiata Keita",
+      "Mansa Musa"
+     ],
+     "why": "He was Sékou Touré's ancestor."
+    },
+    {
+     "level": 2,
+     "q": "Which prison camp held Sékou Touré's opponents?",
+     "a": "Camp Boiro",
+     "wrong": [
+      "Robben Island",
+      "Camp Thiaroye",
+      "Fort Zeelandia"
+     ],
+     "why": "Thousands died there."
+    },
+    {
+     "level": 3,
+     "q": "Which highland region is the source of the Niger and Senegal rivers?",
+     "a": "Fouta Djallon",
+     "wrong": [
+      "Guinea Highlands",
+      "Mount Nimba",
+      "Aïr"
+     ],
+     "why": "It is called the 'water tower of West Africa'."
+    },
+    {
+     "level": 3,
+     "q": "Which Ghanaian leader joined a union with Guinea in 1958?",
+     "a": "Kwame Nkrumah",
+     "wrong": [
+      "Jerry Rawlings",
+      "Kofi Busia",
+      "John Kufuor"
+     ],
+     "why": "Mali joined later."
+    },
+    {
+     "level": 3,
+     "q": "Who led the military government after Lansana Conté died in 2008?",
+     "a": "Moussa Dadis Camara",
+     "wrong": [
+      "Mamadi Doumbouya",
+      "Sékouba Konaté",
+      "Alpha Condé"
+     ],
+     "why": "He was later convicted for the 2009 massacre."
+    }
+   ]
+  },
+  {
+   "name": "Guinea: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which mountain on the Côte d'Ivoire border is a UNESCO site?",
+     "a": "Mount Nimba",
+     "wrong": [
+      "Mount Cameroon",
+      "Kilimanjaro",
+      "Mount Elgon"
+     ],
+     "why": "It is home to a rare viviparous toad."
+    },
+    {
+     "level": 1,
+     "q": "Which ballet company from Guinea toured the world?",
+     "a": "Les Ballets Africains",
+     "wrong": [
+      "Ballet Kanaga",
+      "Ballet Nimba",
+      "Bembeya Jazz Ballet"
+     ],
+     "why": "It was founded in 1952."
+    },
+    {
+     "level": 1,
+     "q": "Which hand drum is central to Guinean music?",
+     "a": "Djembe",
+     "wrong": [
+      "Talking drum",
+      "Bongo",
+      "Tabla"
+     ],
+     "why": "Famadou Konaté was a master."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is on Guinea's coast?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Red Sea",
+      "Mediterranean Sea"
+     ],
+     "why": "Conakry is a big port."
+    },
+    {
+     "level": 1,
+     "q": "Which language is the most spoken in Guinea besides French?",
+     "a": "Fula (Pular)",
+     "wrong": [
+      "Swahili",
+      "Hausa",
+      "Arabic"
+     ],
+     "why": "Malinke and Susu are also common."
+    },
+    {
+     "level": 1,
+     "q": "Which islands lie off Conakry?",
+     "a": "Îles de Los",
+     "wrong": [
+      "Bijagós Islands",
+      "Banana Islands",
+      "Cape Verde Islands"
+     ],
+     "why": "They are popular for day trips."
+    },
+    {
+     "level": 1,
+     "q": "Which waterfall in the Fouta Djallon is called the 'Bridal Veil'?",
+     "a": "Voile de la Mariée",
+     "wrong": [
+      "Kambadaga Falls",
+      "Ditinn Falls",
+      "Victoria Falls"
+     ],
+     "why": "It is near Kindia."
+    },
+    {
+     "level": 2,
+     "q": "Which Guinean band led the 'authenticité' music movement?",
+     "a": "Bembeya Jazz National",
+     "wrong": [
+      "Les Ambassadeurs",
+      "Rail Band",
+      "Super Eagles"
+     ],
+     "why": "It was sponsored by the state."
+    },
+    {
+     "level": 2,
+     "q": "Which singer from Guinea had the hit 'Yé ké yé ké'?",
+     "a": "Mory Kanté",
+     "wrong": [
+      "Sekouba Bambino",
+      "Salif Keita",
+      "Youssou N'Dour"
+     ],
+     "why": "It sold millions in 1988."
+    },
+    {
+     "level": 2,
+     "q": "Which footballer from Guinea starred for Liverpool and Leipzig?",
+     "a": "Naby Keïta",
+     "wrong": [
+      "Serhou Guirassy",
+      "Pascal Feindouno",
+      "Titi Camara"
+     ],
+     "why": "He moved to Werder Bremen in 2023."
+    },
+    {
+     "level": 2,
+     "q": "Which Guinean striker joined Dortmund from Stuttgart in 2024?",
+     "a": "Serhou Guirassy",
+     "wrong": [
+      "Naby Keïta",
+      "Amadou Diawara",
+      "Pascal Feindouno"
+     ],
+     "why": "He scored 28 league goals the season before."
+    },
+    {
+     "level": 2,
+     "q": "What is Guinea's national football team called?",
+     "a": "Syli National",
+     "wrong": [
+      "Black Stars",
+      "Super Eagles",
+      "Leone Stars"
+     ],
+     "why": "'Syli' means elephant."
+    },
+    {
+     "level": 3,
+     "q": "Which forest region in the southeast is home to Mount Nimba?",
+     "a": "Forest Guinea (Guinée Forestière)",
+     "wrong": [
+      "Lower Guinea",
+      "Middle Guinea",
+      "Upper Guinea"
+     ],
+     "why": "It has rainforest and highlands."
+    },
+    {
+     "level": 3,
+     "q": "Which leaf sauce with rice is a favourite dish?",
+     "a": "Sauce feuille",
+     "wrong": [
+      "Jollof rice",
+      "Domoda",
+      "Thieboudienne"
+     ],
+     "why": "It uses cassava or sweet potato leaves."
+    },
+    {
+     "level": 3,
+     "q": "Which city is the main centre of Upper Guinea?",
+     "a": "Kankan",
+     "wrong": [
+      "Labé",
+      "Kindia",
+      "Boké"
+     ],
+     "why": "It is on the Milo River."
+    }
+   ]
+  }
+ ]
+}

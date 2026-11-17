@@ -1,0 +1,346 @@
+{
+ "category": "Burundi",
+ "country": "BI",
+ "topics": [
+  {
+   "name": "Burundi: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the political capital of Burundi?",
+     "a": "Gitega",
+     "wrong": [
+      "Bujumbura",
+      "Ngozi",
+      "Muyinga"
+     ],
+     "why": "It replaced Bujumbura in 2019."
+    },
+    {
+     "level": 1,
+     "q": "Which is the largest city of Burundi?",
+     "a": "Bujumbura",
+     "wrong": [
+      "Gitega",
+      "Ngozi",
+      "Rumonge"
+     ],
+     "why": "It lies on Lake Tanganyika."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Burundi gain independence in 1962?",
+     "a": "Belgium",
+     "wrong": [
+      "France",
+      "Germany",
+      "United Kingdom"
+     ],
+     "why": "It was part of Ruanda-Urundi."
+    },
+    {
+     "level": 1,
+     "q": "What is Burundi's currency?",
+     "a": "Burundian franc",
+     "wrong": [
+      "Rwandan franc",
+      "Shilling",
+      "Kwacha"
+     ],
+     "why": "Its code is BIF."
+    },
+    {
+     "level": 1,
+     "q": "Which lake forms much of Burundi's western border?",
+     "a": "Lake Tanganyika",
+     "wrong": [
+      "Lake Victoria",
+      "Lake Kivu",
+      "Lake Malawi"
+     ],
+     "why": "It is the world's second-deepest lake."
+    },
+    {
+     "level": 1,
+     "q": "What are Burundi's two main ethnic groups?",
+     "a": "Hutu and Tutsi",
+     "wrong": [
+      "Zulu and Xhosa",
+      "Kikuyu and Luo",
+      "Shona and Ndebele"
+     ],
+     "why": "The Twa are a small third group."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of Burundi since 2020?",
+     "a": "Évariste Ndayishimiye",
+     "wrong": [
+      "Pierre Nkurunziza",
+      "Pierre Buyoya",
+      "Melchior Ndadaye"
+     ],
+     "why": "He took over after Nkurunziza died."
+    },
+    {
+     "level": 2,
+     "q": "Which first elected Hutu President was killed in 1993?",
+     "a": "Melchior Ndadaye",
+     "wrong": [
+      "Cyprien Ntaryamira",
+      "Pierre Buyoya",
+      "Sylvestre Ntibantunganya"
+     ],
+     "why": "His death started a civil war."
+    },
+    {
+     "level": 2,
+     "q": "Which Burundian President died in the 1994 plane crash with Rwanda's President?",
+     "a": "Cyprien Ntaryamira",
+     "wrong": [
+      "Melchior Ndadaye",
+      "Pierre Buyoya",
+      "Domitien Ndayizeye"
+     ],
+     "why": "The crash sparked the Rwandan genocide."
+    },
+    {
+     "level": 2,
+     "q": "Which 2000 agreement helped end Burundi's civil war?",
+     "a": "Arusha Accords",
+     "wrong": [
+      "Lusaka Accord",
+      "Lomé Accord",
+      "Pretoria Accord"
+     ],
+     "why": "Nelson Mandela helped mediate."
+    },
+    {
+     "level": 2,
+     "q": "Which President's third term bid caused a 2015 crisis?",
+     "a": "Pierre Nkurunziza",
+     "wrong": [
+      "Pierre Buyoya",
+      "Évariste Ndayishimiye",
+      "Domitien Ndayizeye"
+     ],
+     "why": "He died in 2020."
+    },
+    {
+     "level": 2,
+     "q": "Which country colonised Burundi first?",
+     "a": "Germany",
+     "wrong": [
+      "Belgium",
+      "France",
+      "United Kingdom"
+     ],
+     "why": "It was part of German East Africa."
+    },
+    {
+     "level": 3,
+     "q": "Which Prince, the independence hero, was killed in 1961?",
+     "a": "Prince Louis Rwagasore",
+     "wrong": [
+      "Mwami Mwambutsa IV",
+      "Ntare V",
+      "Michel Micombero"
+     ],
+     "why": "He was Prime Minister for two weeks."
+    },
+    {
+     "level": 3,
+     "q": "Which officer ended the monarchy in 1966?",
+     "a": "Michel Micombero",
+     "wrong": [
+      "Pierre Buyoya",
+      "Jean-Baptiste Bagaza",
+      "Ntare V"
+     ],
+     "why": "He became the first President."
+    },
+    {
+     "level": 3,
+     "q": "Which 1972 killings targeted Hutu in Burundi?",
+     "a": "Ikiza",
+     "wrong": [
+      "Gacaca",
+      "Gukurahundi",
+      "Ikiriho"
+     ],
+     "why": "Tens of thousands died."
+    }
+   ]
+  },
+  {
+   "name": "Burundi: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which royal drummers of Burundi are on UNESCO's list?",
+     "a": "Royal Drum of Burundi (Karyenda)",
+     "wrong": [
+      "Kodo drummers",
+      "Djembe ensemble",
+      "Talking drums of Ghana"
+     ],
+     "why": "Drummers carry huge drums on their heads."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is Burundi's main export?",
+     "a": "Coffee",
+     "wrong": [
+      "Cocoa",
+      "Cotton",
+      "Rubber"
+     ],
+     "why": "Tea is also important."
+    },
+    {
+     "level": 1,
+     "q": "Which language do almost all Burundians speak?",
+     "a": "Kirundi",
+     "wrong": [
+      "Kinyarwanda",
+      "Swahili",
+      "Luganda"
+     ],
+     "why": "French and English are also official."
+    },
+    {
+     "level": 1,
+     "q": "Which river is said to have its southernmost source in Burundi?",
+     "a": "Nile",
+     "wrong": [
+      "Congo",
+      "Niger",
+      "Zambezi"
+     ],
+     "why": "A pyramid marks the spot."
+    },
+    {
+     "level": 1,
+     "q": "Which national park in the northwest has chimpanzees?",
+     "a": "Kibira National Park",
+     "wrong": [
+      "Ruvubu",
+      "Rusizi",
+      "Volcanoes"
+     ],
+     "why": "It joins Rwanda's Nyungwe forest."
+    },
+    {
+     "level": 1,
+     "q": "Which landlocked country lies between Rwanda and Tanzania?",
+     "a": "Burundi",
+     "wrong": [
+      "Uganda",
+      "Malawi",
+      "Zambia"
+     ],
+     "why": "It is one of Africa's smallest countries."
+    },
+    {
+     "level": 1,
+     "q": "Which fish from Lake Tanganyika is often eaten?",
+     "a": "Mukeke",
+     "wrong": [
+      "Chambo",
+      "Nile perch",
+      "Catfish"
+     ],
+     "why": "It is a local perch."
+    },
+    {
+     "level": 2,
+     "q": "Which nature reserve near Bujumbura protects hippos and birds?",
+     "a": "Rusizi National Park",
+     "wrong": [
+      "Kibira",
+      "Ruvubu",
+      "Akagera"
+     ],
+     "why": "It is on the Rusizi River delta."
+    },
+    {
+     "level": 2,
+     "q": "Which Burundian runner won Olympic 5,000 m gold in 1996?",
+     "a": "Vénuste Niyongabo",
+     "wrong": [
+      "Francine Niyonsaba",
+      "Haile Gebrselassie",
+      "Noah Ngeny"
+     ],
+     "why": "It was Burundi's first gold."
+    },
+    {
+     "level": 2,
+     "q": "Which Burundian runner won Olympic 800 m silver in 2016?",
+     "a": "Francine Niyonsaba",
+     "wrong": [
+      "Caster Semenya",
+      "Margaret Wambui",
+      "Vénuste Niyongabo"
+     ],
+     "why": "She later ran longer races."
+    },
+    {
+     "level": 2,
+     "q": "Which waterfall in the south is a famous sight?",
+     "a": "Karera Falls",
+     "wrong": [
+      "Kibira Falls",
+      "Rusumo Falls",
+      "Kalambo Falls"
+     ],
+     "why": "It drops in several steps."
+    },
+    {
+     "level": 2,
+     "q": "Which village holds the Livingstone–Stanley monument?",
+     "a": "Mugere",
+     "wrong": [
+      "Kigoma",
+      "Ujiji",
+      "Rumonge"
+     ],
+     "why": "They are said to have camped there."
+    },
+    {
+     "level": 3,
+     "q": "Which national park in the east follows a river?",
+     "a": "Ruvubu National Park",
+     "wrong": [
+      "Kibira",
+      "Rusizi",
+      "Akagera"
+     ],
+     "why": "It is the largest in Burundi."
+    },
+    {
+     "level": 3,
+     "q": "What is the drum sanctuary at Gishora known for?",
+     "a": "Royal drum traditions",
+     "wrong": [
+      "Coffee growing",
+      "Gold mining",
+      "Fishing"
+     ],
+     "why": "Drummers perform for visitors."
+    },
+    {
+     "level": 3,
+     "q": "Which beer made from bananas is traditional?",
+     "a": "Urwarwa",
+     "wrong": [
+      "Chang'aa",
+      "Dolo",
+      "Palm wine"
+     ],
+     "why": "It is shared at gatherings."
+    }
+   ]
+  }
+ ]
+}

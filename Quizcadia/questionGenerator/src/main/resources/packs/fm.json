@@ -1,0 +1,346 @@
+{
+ "category": "Micronesia",
+ "country": "FM",
+ "topics": [
+  {
+   "name": "Micronesia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Federated States of Micronesia?",
+     "a": "Palikir",
+     "wrong": [
+      "Kolonia",
+      "Weno",
+      "Tofol"
+     ],
+     "why": "It is on Pohnpei."
+    },
+    {
+     "level": 1,
+     "q": "How many states make up the Federated States of Micronesia?",
+     "a": "Four",
+     "wrong": [
+      "Two",
+      "Six",
+      "Eight"
+     ],
+     "why": "They are Yap, Chuuk, Pohnpei and Kosrae."
+    },
+    {
+     "level": 1,
+     "q": "Which currency does Micronesia use?",
+     "a": "US dollar",
+     "wrong": [
+      "Australian dollar",
+      "Yen",
+      "Micronesian dollar"
+     ],
+     "why": "It has a Compact of Free Association with the US."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Micronesia become independent?",
+     "a": "1986",
+     "wrong": [
+      "1979",
+      "1994",
+      "1975"
+     ],
+     "why": "It had been part of a UN trust territory."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is Micronesia in?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Indian Ocean",
+      "Atlantic Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It covers about 2.6 million square kilometres of sea."
+    },
+    {
+     "level": 1,
+     "q": "Which giant stone money comes from Yap?",
+     "a": "Rai stones",
+     "wrong": [
+      "Moai",
+      "Tabu",
+      "Wampum"
+     ],
+     "why": "Some are over 3 m wide."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient ruined city of basalt is off Pohnpei?",
+     "a": "Nan Madol",
+     "wrong": [
+      "Angkor Thom",
+      "Machu Picchu",
+      "Petra"
+     ],
+     "why": "It is called the 'Venice of the Pacific'."
+    },
+    {
+     "level": 2,
+     "q": "Which country ruled Micronesia from 1914 to 1945?",
+     "a": "Japan",
+     "wrong": [
+      "Germany",
+      "Spain",
+      "United States"
+     ],
+     "why": "Spain and Germany ruled before."
+    },
+    {
+     "level": 2,
+     "q": "Which Chuuk lagoon is famous for sunken Second World War ships?",
+     "a": "Chuuk Lagoon (Truk Lagoon)",
+     "wrong": [
+      "Ironbottom Sound",
+      "Bikini Lagoon",
+      "Scapa Flow"
+     ],
+     "why": "A US attack in 1944 sank many Japanese ships."
+    },
+    {
+     "level": 2,
+     "q": "Who was Micronesia's first President?",
+     "a": "Tosiwo Nakayama",
+     "wrong": [
+      "Emanuel Mori",
+      "Peter Christian",
+      "David Panuelo"
+     ],
+     "why": "He served from 1979 to 1987."
+    },
+    {
+     "level": 2,
+     "q": "Who has been President of Micronesia since 2023?",
+     "a": "Wesley Simina",
+     "wrong": [
+      "David Panuelo",
+      "Peter Christian",
+      "Emanuel Mori"
+     ],
+     "why": "He was Speaker of Congress."
+    },
+    {
+     "level": 2,
+     "q": "Which state is the smallest and easternmost?",
+     "a": "Kosrae",
+     "wrong": [
+      "Yap",
+      "Chuuk",
+      "Pohnpei"
+     ],
+     "why": "It is a single island."
+    },
+    {
+     "level": 3,
+     "q": "Which dynasty is said to have ruled Pohnpei from Nan Madol?",
+     "a": "Saudeleur dynasty",
+     "wrong": [
+      "Tu'i Tonga",
+      "Kamehameha",
+      "Pomare"
+     ],
+     "why": "It ended around 1628."
+    },
+    {
+     "level": 3,
+     "q": "Where did Yap islanders quarry their stone money?",
+     "a": "Palau",
+     "wrong": [
+      "Guam",
+      "Pohnpei",
+      "Saipan"
+     ],
+     "why": "They carried them by canoe."
+    },
+    {
+     "level": 3,
+     "q": "Which island in Chuuk is the state capital?",
+     "a": "Weno",
+     "wrong": [
+      "Tol",
+      "Fefen",
+      "Tonoas"
+     ],
+     "why": "It was called Moen."
+    }
+   ]
+  },
+  {
+   "name": "Micronesia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which state of Micronesia is famous for diving with manta rays?",
+     "a": "Yap",
+     "wrong": [
+      "Chuuk",
+      "Kosrae",
+      "Pohnpei"
+     ],
+     "why": "Manta rays live there all year."
+    },
+    {
+     "level": 1,
+     "q": "Which drink made from pepper plant roots is shared on Pohnpei?",
+     "a": "Sakau (kava)",
+     "wrong": [
+      "Toddy",
+      "Coconut wine",
+      "Sake"
+     ],
+     "why": "It is pounded on stones."
+    },
+    {
+     "level": 1,
+     "q": "Which staple food grows on trees across Micronesia?",
+     "a": "Breadfruit",
+     "wrong": [
+      "Wheat",
+      "Potato",
+      "Maize"
+     ],
+     "why": "It can be fermented and stored."
+    },
+    {
+     "level": 1,
+     "q": "Which Micronesian state is home to Nan Madol?",
+     "a": "Pohnpei",
+     "wrong": [
+      "Yap",
+      "Chuuk",
+      "Kosrae"
+     ],
+     "why": "The capital Palikir is also there."
+    },
+    {
+     "level": 1,
+     "q": "What do many Yapese men wear traditionally?",
+     "a": "Thu (loincloth)",
+     "wrong": [
+      "Kilt",
+      "Lavalava",
+      "Kimono"
+     ],
+     "why": "It is still worn on special days."
+    },
+    {
+     "level": 1,
+     "q": "Which plant's leaves are chewed with lime in Yap?",
+     "a": "Betel nut",
+     "wrong": [
+      "Coca",
+      "Khat",
+      "Tobacco"
+     ],
+     "why": "It stains teeth red."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of Micronesia?",
+     "a": "English",
+     "wrong": [
+      "Japanese",
+      "Spanish",
+      "Chamorro"
+     ],
+     "why": "Each state has its own languages."
+    },
+    {
+     "level": 2,
+     "q": "Which state has the largest population?",
+     "a": "Chuuk",
+     "wrong": [
+      "Pohnpei",
+      "Yap",
+      "Kosrae"
+     ],
+     "why": "It is a big lagoon of islands."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient city on Kosrae is like a smaller Nan Madol?",
+     "a": "Lelu ruins",
+     "wrong": [
+      "Angkor",
+      "Tiwanaku",
+      "Great Zimbabwe"
+     ],
+     "why": "It has tall basalt walls."
+    },
+    {
+     "level": 2,
+     "q": "Which Yap festival celebrates culture each March?",
+     "a": "Yap Day",
+     "wrong": [
+      "Pohnpei Day",
+      "Liberation Day",
+      "Constitution Day"
+     ],
+     "why": "It has traditional dances."
+    },
+    {
+     "level": 2,
+     "q": "Which traditional navigation school is known in Micronesia?",
+     "a": "Wayfinding by stars and swells",
+     "wrong": [
+      "GPS training",
+      "Compass navigation",
+      "Radio navigation"
+     ],
+     "why": "Satawal navigator Mau Piailug taught Hawaiians."
+    },
+    {
+     "level": 2,
+     "q": "Which waterfall on Pohnpei is a popular hike?",
+     "a": "Kepirohi Falls",
+     "wrong": [
+      "Angel Falls",
+      "Wailua Falls",
+      "Sipi Falls"
+     ],
+     "why": "It falls over basalt rock."
+    },
+    {
+     "level": 3,
+     "q": "Which navigator from Micronesia guided the Hōkūleʻa to Tahiti in 1976?",
+     "a": "Mau Piailug",
+     "wrong": [
+      "Nainoa Thompson",
+      "Kupe",
+      "Tupaia"
+     ],
+     "why": "He used no instruments."
+    },
+    {
+     "level": 3,
+     "q": "Which Pohnpei peak has a rainforest among the wettest on Earth?",
+     "a": "Nahnalaud",
+     "wrong": [
+      "Mount Wilhelm",
+      "Mauna Kea",
+      "Mount Bintumani"
+     ],
+     "why": "It gets huge amounts of rain."
+    },
+    {
+     "level": 3,
+     "q": "Where are Yap's stone money discs usually kept?",
+     "a": "Outdoors along village paths",
+     "wrong": [
+      "In a national vault",
+      "In a US bank",
+      "Buried underground"
+     ],
+     "why": "Ownership changes without moving them."
+    }
+   ]
+  }
+ ]
+}

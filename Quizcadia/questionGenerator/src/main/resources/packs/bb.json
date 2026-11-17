@@ -1,0 +1,346 @@
+{
+ "category": "Barbados",
+ "country": "BB",
+ "topics": [
+  {
+   "name": "Barbados: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Barbados?",
+     "a": "Bridgetown",
+     "wrong": [
+      "Speightstown",
+      "Holetown",
+      "Oistins"
+     ],
+     "why": "Its historic centre is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Barbados become a republic?",
+     "a": "2021",
+     "wrong": [
+      "1966",
+      "2000",
+      "2016"
+     ],
+     "why": "It removed the Queen as head of state."
+    },
+    {
+     "level": 1,
+     "q": "From which country did Barbados gain independence in 1966?",
+     "a": "United Kingdom",
+     "wrong": [
+      "France",
+      "Spain",
+      "Netherlands"
+     ],
+     "why": "It was English from 1627."
+    },
+    {
+     "level": 1,
+     "q": "Which pop star from Barbados was named a National Hero?",
+     "a": "Rihanna",
+     "wrong": [
+      "Shontelle",
+      "Alison Hinds",
+      "Nicki Minaj"
+     ],
+     "why": "She was honoured in 2021."
+    },
+    {
+     "level": 1,
+     "q": "What is Barbados's currency?",
+     "a": "Barbados dollar",
+     "wrong": [
+      "East Caribbean dollar",
+      "US dollar",
+      "Pound sterling"
+     ],
+     "why": "It is fixed at two to one US dollar."
+    },
+    {
+     "level": 1,
+     "q": "Which crop made Barbados a rich colony?",
+     "a": "Sugar",
+     "wrong": [
+      "Tobacco",
+      "Cotton",
+      "Coffee"
+     ],
+     "why": "It was worked by enslaved Africans."
+    },
+    {
+     "level": 1,
+     "q": "Who became the first Prime Minister of Barbados?",
+     "a": "Errol Barrow",
+     "wrong": [
+      "Tom Adams",
+      "Owen Arthur",
+      "Mia Mottley"
+     ],
+     "why": "He led the country to independence."
+    },
+    {
+     "level": 2,
+     "q": "Who became Prime Minister of Barbados in 2018?",
+     "a": "Mia Mottley",
+     "wrong": [
+      "Freundel Stuart",
+      "David Thompson",
+      "Owen Arthur"
+     ],
+     "why": "She is the first woman to hold the post."
+    },
+    {
+     "level": 2,
+     "q": "Who became Barbados's first President in 2021?",
+     "a": "Sandra Mason",
+     "wrong": [
+      "Mia Mottley",
+      "Jeffrey Bostic",
+      "Dame Nita Barrow"
+     ],
+     "why": "She had been Governor-General."
+    },
+    {
+     "level": 2,
+     "q": "Which 1816 slave rebellion is named after its leader?",
+     "a": "Bussa's Rebellion",
+     "wrong": [
+      "Tacky's War",
+      "Baptist War",
+      "Demerara Rebellion"
+     ],
+     "why": "Bussa is a National Hero."
+    },
+    {
+     "level": 2,
+     "q": "Which US President visited Barbados as a teenager in 1751?",
+     "a": "George Washington",
+     "wrong": [
+      "Thomas Jefferson",
+      "John Adams",
+      "Benjamin Franklin"
+     ],
+     "why": "It was his only trip abroad."
+    },
+    {
+     "level": 2,
+     "q": "What is Barbados's nickname?",
+     "a": "Little England",
+     "wrong": [
+      "Pearl of the Antilles",
+      "Spice Isle",
+      "Land of Wood and Water"
+     ],
+     "why": "It was English for over 300 years."
+    },
+    {
+     "level": 3,
+     "q": "Which garrison in Bridgetown is part of the UNESCO site?",
+     "a": "The Garrison",
+     "wrong": [
+      "Fort Charles",
+      "Gun Hill",
+      "Codrington"
+     ],
+     "why": "It was a large British army base."
+    },
+    {
+     "level": 3,
+     "q": "Which Barbadian cricketer is often called the greatest all-rounder?",
+     "a": "Garfield Sobers",
+     "wrong": [
+      "Frank Worrell",
+      "Joel Garner",
+      "Wes Hall"
+     ],
+     "why": "He hit six sixes in an over in 1968."
+    },
+    {
+     "level": 3,
+     "q": "Which 1937 riots helped start Barbados's labour movement?",
+     "a": "1937 Barbados labour riots",
+     "wrong": [
+      "Bussa Rising",
+      "Federation Riots",
+      "Crop Over Riots"
+     ],
+     "why": "Clement Payne is a National Hero."
+    }
+   ]
+  },
+  {
+   "name": "Barbados: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which festival marks the end of the sugar cane harvest?",
+     "a": "Crop Over",
+     "wrong": [
+      "Junkanoo",
+      "Carnival",
+      "Mashramani"
+     ],
+     "why": "Its climax is Grand Kadooment Day."
+    },
+    {
+     "level": 1,
+     "q": "Which flying fish dish is the national dish?",
+     "a": "Cou-cou and flying fish",
+     "wrong": [
+      "Ackee and saltfish",
+      "Callaloo",
+      "Roti"
+     ],
+     "why": "Cou-cou is made from cornmeal and okra."
+    },
+    {
+     "level": 1,
+     "q": "Which drink was first made in Barbados in the 1600s?",
+     "a": "Rum",
+     "wrong": [
+      "Gin",
+      "Whisky",
+      "Vodka"
+     ],
+     "why": "Mount Gay is one of the oldest rum makers."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is Barbados passionate about?",
+     "a": "Cricket",
+     "wrong": [
+      "Baseball",
+      "Ice hockey",
+      "Rugby"
+     ],
+     "why": "Kensington Oval hosted the 2007 World Cup final."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean lies to the east of Barbados?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Pacific Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "It is the most easterly Caribbean island."
+    },
+    {
+     "level": 1,
+     "q": "Which cave on Barbados has a tram tour?",
+     "a": "Harrison's Cave",
+     "wrong": [
+      "Animal Flower Cave",
+      "Cueva Ventana",
+      "Green Grotto"
+     ],
+     "why": "It is full of stalactites."
+    },
+    {
+     "level": 1,
+     "q": "Which fried snack from Oistins is famous on Friday nights?",
+     "a": "Fish fry",
+     "wrong": [
+      "Jerk chicken",
+      "Doubles",
+      "Johnny cakes"
+     ],
+     "why": "Oistins Fish Fry draws big crowds."
+    },
+    {
+     "level": 2,
+     "q": "Which stadium in Bridgetown is the home of Barbados cricket?",
+     "a": "Kensington Oval",
+     "wrong": [
+      "Sabina Park",
+      "Queen's Park Oval",
+      "Bourda"
+     ],
+     "why": "India won the 2024 T20 World Cup final there."
+    },
+    {
+     "level": 2,
+     "q": "Which rugged east coast village has mushroom-shaped rocks?",
+     "a": "Bathsheba",
+     "wrong": [
+      "Holetown",
+      "Speightstown",
+      "Oistins"
+     ],
+     "why": "Surfers love the Soup Bowl there."
+    },
+    {
+     "level": 2,
+     "q": "Which Barbadian sprinter won 100 m bronze at the 2000 Olympics?",
+     "a": "Obadele Thompson",
+     "wrong": [
+      "Ryan Brathwaite",
+      "Kirani James",
+      "Ato Boldon"
+     ],
+     "why": "It was the country's first Olympic medal."
+    },
+    {
+     "level": 2,
+     "q": "Which Barbadian fast bowler was nicknamed 'Big Bird'?",
+     "a": "Joel Garner",
+     "wrong": [
+      "Wes Hall",
+      "Malcolm Marshall",
+      "Charlie Griffith"
+     ],
+     "why": "He was 2.03 m tall."
+    },
+    {
+     "level": 2,
+     "q": "Which church in St John has views over the Atlantic?",
+     "a": "St John's Parish Church",
+     "wrong": [
+      "St Michael's Cathedral",
+      "St James Church",
+      "Holy Trinity"
+     ],
+     "why": "A descendant of a Byzantine emperor is buried there."
+    },
+    {
+     "level": 3,
+     "q": "Which old signal station in the middle of the island gives wide views?",
+     "a": "Gun Hill Signal Station",
+     "wrong": [
+      "Mount Hillaby",
+      "Grenade Hall",
+      "Cherry Tree Hill"
+     ],
+     "why": "It has a lion carved from stone."
+    },
+    {
+     "level": 3,
+     "q": "Which spicy sauce is a Bajan favourite?",
+     "a": "Bajan pepper sauce",
+     "wrong": [
+      "Sriracha",
+      "Harissa",
+      "Pico de gallo"
+     ],
+     "why": "It is made with Scotch bonnets and mustard."
+    },
+    {
+     "level": 3,
+     "q": "What is the highest point of Barbados?",
+     "a": "Mount Hillaby",
+     "wrong": [
+      "Mount Alvernia",
+      "Gun Hill",
+      "Cherry Tree Hill"
+     ],
+     "why": "It is about 340 m high."
+    }
+   ]
+  }
+ ]
+}

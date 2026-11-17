@@ -1,0 +1,346 @@
+{
+ "category": "Saint Vincent and the Grenadines",
+ "country": "VC",
+ "topics": [
+  {
+   "name": "Saint Vincent and the Grenadines: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Saint Vincent and the Grenadines?",
+     "a": "Kingstown",
+     "wrong": [
+      "Georgetown",
+      "Port Elizabeth",
+      "Barrouallie"
+     ],
+     "why": "It is called the 'City of Arches'."
+    },
+    {
+     "level": 1,
+     "q": "Which volcano on St Vincent erupted in 2021?",
+     "a": "La Soufrière",
+     "wrong": [
+      "Mount Pelée",
+      "Soufrière Hills",
+      "Kick 'em Jenny"
+     ],
+     "why": "About 20,000 people had to leave."
+    },
+    {
+     "level": 1,
+     "q": "From which country did it gain independence in 1979?",
+     "a": "United Kingdom",
+     "wrong": [
+      "France",
+      "Spain",
+      "Netherlands"
+     ],
+     "why": "It is a Commonwealth realm."
+    },
+    {
+     "level": 1,
+     "q": "What currency is used in Saint Vincent and the Grenadines?",
+     "a": "East Caribbean dollar",
+     "wrong": [
+      "Vincentian dollar",
+      "US dollar",
+      "Euro"
+     ],
+     "why": "It is shared by eight territories."
+    },
+    {
+     "level": 1,
+     "q": "Which film series was partly shot on St Vincent?",
+     "a": "Pirates of the Caribbean",
+     "wrong": [
+      "Jurassic Park",
+      "James Bond",
+      "Indiana Jones"
+     ],
+     "why": "Wallilabou Bay was a main set."
+    },
+    {
+     "level": 1,
+     "q": "Which people of African and Kalinago descent fought the British here?",
+     "a": "Garifuna (Black Caribs)",
+     "wrong": [
+      "Maroons",
+      "Miskito",
+      "Taíno"
+     ],
+     "why": "Many were exiled to Central America."
+    },
+    {
+     "level": 1,
+     "q": "Which island in the Grenadines is a celebrity hideaway?",
+     "a": "Mustique",
+     "wrong": [
+      "Bequia",
+      "Canouan",
+      "Union Island"
+     ],
+     "why": "Princess Margaret had a house there."
+    },
+    {
+     "level": 2,
+     "q": "Which Garifuna chief is the national hero?",
+     "a": "Joseph Chatoyer",
+     "wrong": [
+      "Duvallé",
+      "Cuffy",
+      "Bussa"
+     ],
+     "why": "He died fighting the British in 1795."
+    },
+    {
+     "level": 2,
+     "q": "Who has been Prime Minister since 2001?",
+     "a": "Ralph Gonsalves",
+     "wrong": [
+      "James Mitchell",
+      "Milton Cato",
+      "Arnhim Eustace"
+     ],
+     "why": "He is called 'Comrade Ralph'."
+    },
+    {
+     "level": 2,
+     "q": "Who was the first Prime Minister after independence?",
+     "a": "Milton Cato",
+     "wrong": [
+      "James Mitchell",
+      "Ralph Gonsalves",
+      "Ebenezer Joshua"
+     ],
+     "why": "He served until 1984."
+    },
+    {
+     "level": 2,
+     "q": "Which island were the Garifuna exiled to in 1797?",
+     "a": "Roatán",
+     "wrong": [
+      "Jamaica",
+      "Trinidad",
+      "Barbados"
+     ],
+     "why": "They later spread along the Central American coast."
+    },
+    {
+     "level": 2,
+     "q": "Which plant was brought to St Vincent by Captain Bligh in 1793?",
+     "a": "Breadfruit",
+     "wrong": [
+      "Mango",
+      "Banana",
+      "Nutmeg"
+     ],
+     "why": "A tree from that voyage still grows there."
+    },
+    {
+     "level": 3,
+     "q": "Which botanical garden is the oldest in the Americas?",
+     "a": "St Vincent Botanical Gardens",
+     "wrong": [
+      "Hope Gardens",
+      "Andromeda Gardens",
+      "Diamond Gardens"
+     ],
+     "why": "It was founded in 1765."
+    },
+    {
+     "level": 3,
+     "q": "Which 1902 eruption killed about 1,600 people on St Vincent?",
+     "a": "La Soufrière",
+     "wrong": [
+      "Mount Pelée",
+      "Soufrière Hills",
+      "Kick 'em Jenny"
+     ],
+     "why": "Mount Pelée on Martinique erupted the next day."
+    },
+    {
+     "level": 3,
+     "q": "Who became Prime Minister of Saint Vincent and the Grenadines in 2025?",
+     "a": "Godwin Friday",
+     "wrong": [
+      "Ralph Gonsalves",
+      "Camillo Gonsalves",
+      "Arnhim Eustace"
+     ],
+     "why": "The New Democratic Party won the election."
+    }
+   ]
+  },
+  {
+   "name": "Saint Vincent and the Grenadines: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which islands of the Grenadines are a famous sailing spot?",
+     "a": "Tobago Cays",
+     "wrong": [
+      "Exuma Cays",
+      "Florida Keys",
+      "Bay Islands"
+     ],
+     "why": "Sea turtles swim in the lagoon."
+    },
+    {
+     "level": 1,
+     "q": "Which island has the Easter Regatta and a whaling tradition?",
+     "a": "Bequia",
+     "wrong": [
+      "Mustique",
+      "Canouan",
+      "Mayreau"
+     ],
+     "why": "It is the largest of the Grenadines."
+    },
+    {
+     "level": 1,
+     "q": "Which carnival is held in Kingstown in summer?",
+     "a": "Vincy Mas",
+     "wrong": [
+      "Crop Over",
+      "Spicemas",
+      "Sugar Mas"
+     ],
+     "why": "It is held in late June and early July."
+    },
+    {
+     "level": 1,
+     "q": "Which national dish is roasted breadfruit and fried fish?",
+     "a": "Roasted breadfruit and fried jackfish",
+     "wrong": [
+      "Ackee and saltfish",
+      "Oil down",
+      "Cou-cou"
+     ],
+     "why": "Breadfruit came with Captain Bligh."
+    },
+    {
+     "level": 1,
+     "q": "Which root crop does St Vincent export a lot of?",
+     "a": "Arrowroot",
+     "wrong": [
+      "Cassava",
+      "Yam",
+      "Taro"
+     ],
+     "why": "It is used in medicine and food."
+    },
+    {
+     "level": 1,
+     "q": "Which colourful parrot is St Vincent's national bird?",
+     "a": "St Vincent amazon",
+     "wrong": [
+      "Sisserou",
+      "Jacquot",
+      "Scarlet macaw"
+     ],
+     "why": "It lives in the rainforest."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean lies to the east of St Vincent?",
+     "a": "Atlantic Ocean",
+     "wrong": [
+      "Pacific Ocean",
+      "Indian Ocean",
+      "Arctic Ocean"
+     ],
+     "why": "The Caribbean is to the west."
+    },
+    {
+     "level": 2,
+     "q": "Which fort above Kingstown is named after Queen Charlotte?",
+     "a": "Fort Charlotte",
+     "wrong": [
+      "Fort George",
+      "Fort Shirley",
+      "Fort James"
+     ],
+     "why": "It was built in 1806."
+    },
+    {
+     "level": 2,
+     "q": "Which waterfall is the highest on St Vincent?",
+     "a": "Dark View Falls",
+     "wrong": [
+      "Trafalgar Falls",
+      "Kuang Si",
+      "Emerald Pool"
+     ],
+     "why": "It is a twin waterfall."
+    },
+    {
+     "level": 2,
+     "q": "Which new international airport opened in 2017?",
+     "a": "Argyle International Airport",
+     "wrong": [
+      "E.T. Joshua Airport",
+      "Canouan Airport",
+      "Union Island Airport"
+     ],
+     "why": "It replaced E.T. Joshua."
+    },
+    {
+     "level": 2,
+     "q": "Which tiny Grenadines island is home to Salt Whistle Bay?",
+     "a": "Mayreau",
+     "wrong": [
+      "Bequia",
+      "Mustique",
+      "Canouan"
+     ],
+     "why": "It is one of the smallest lived-on islands."
+    },
+    {
+     "level": 2,
+     "q": "Which Grenadines island is the southern port of entry with a kite-surfing lagoon?",
+     "a": "Union Island",
+     "wrong": [
+      "Mayreau",
+      "Palm Island",
+      "Bequia"
+     ],
+     "why": "Clifton is its main town."
+    },
+    {
+     "level": 3,
+     "q": "Which animal may Bequia's traditional whalers still hunt?",
+     "a": "Humpback whale",
+     "wrong": [
+      "Sperm whale",
+      "Blue whale",
+      "Orca"
+     ],
+     "why": "A few may be taken each year."
+    },
+    {
+     "level": 3,
+     "q": "Which island in the Grenadines is privately owned and called Prune Island?",
+     "a": "Palm Island",
+     "wrong": [
+      "Mustique",
+      "Petit St Vincent",
+      "Young Island"
+     ],
+     "why": "An American couple renamed it."
+    },
+    {
+     "level": 3,
+     "q": "Which steel pan style competition is held at Vincy Mas?",
+     "a": "Panorama",
+     "wrong": [
+      "Soca Monarch",
+      "Calypso Monarch",
+      "Mas Band of the Year"
+     ],
+     "why": "Steel bands compete."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,346 @@
+{
+ "category": "Suriname",
+ "country": "SR",
+ "topics": [
+  {
+   "name": "Suriname: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Suriname?",
+     "a": "Paramaribo",
+     "wrong": [
+      "Nieuw Nickerie",
+      "Lelydorp",
+      "Moengo"
+     ],
+     "why": "Its wooden old town is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which European country ruled Suriname until 1975?",
+     "a": "Netherlands",
+     "wrong": [
+      "United Kingdom",
+      "France",
+      "Portugal"
+     ],
+     "why": "It was called Dutch Guiana."
+    },
+    {
+     "level": 1,
+     "q": "What is Suriname's official language?",
+     "a": "Dutch",
+     "wrong": [
+      "English",
+      "Spanish",
+      "Portuguese"
+     ],
+     "why": "Sranan Tongo is widely spoken too."
+    },
+    {
+     "level": 1,
+     "q": "What is Suriname's currency?",
+     "a": "Surinamese dollar",
+     "wrong": [
+      "Guilder",
+      "Guyanese dollar",
+      "Euro"
+     ],
+     "why": "It replaced the guilder in 2004."
+    },
+    {
+     "level": 1,
+     "q": "Which colony did the Dutch swap with England for Suriname in 1667?",
+     "a": "New Amsterdam (New York)",
+     "wrong": [
+      "Barbados",
+      "Jamaica",
+      "Cape Colony"
+     ],
+     "why": "It was part of the Treaty of Breda."
+    },
+    {
+     "level": 1,
+     "q": "What is the smallest country in South America?",
+     "a": "Suriname",
+     "wrong": [
+      "Guyana",
+      "Uruguay",
+      "Ecuador"
+     ],
+     "why": "It is about 164,000 square kilometres."
+    },
+    {
+     "level": 1,
+     "q": "What share of Suriname is covered by rainforest?",
+     "a": "About 90%",
+     "wrong": [
+      "About 30%",
+      "About 50%",
+      "About 10%"
+     ],
+     "why": "It is one of the greenest countries."
+    },
+    {
+     "level": 2,
+     "q": "Which escaped slaves built free communities in the forest?",
+     "a": "Maroons",
+     "wrong": [
+      "Caribs",
+      "Creoles",
+      "Arawaks"
+     ],
+     "why": "They are also called Bushinengue."
+    },
+    {
+     "level": 2,
+     "q": "Which military leader took power in a 1980 coup?",
+     "a": "Dési Bouterse",
+     "wrong": [
+      "Ronald Venetiaan",
+      "Jules Wijdenbosch",
+      "Chan Santokhi"
+     ],
+     "why": "He later became President."
+    },
+    {
+     "level": 2,
+     "q": "Which 1982 killings of opponents are called the December Murders?",
+     "a": "December Murders",
+     "wrong": [
+      "Moiwana Massacre",
+      "Fort Zeelandia Trial",
+      "Interior War"
+     ],
+     "why": "Fifteen critics were killed."
+    },
+    {
+     "level": 2,
+     "q": "Which mineral was Suriname's main export for decades?",
+     "a": "Bauxite",
+     "wrong": [
+      "Copper",
+      "Iron",
+      "Tin"
+     ],
+     "why": "It is used to make aluminium."
+    },
+    {
+     "level": 2,
+     "q": "Which fort in Paramaribo was used in the 1982 killings?",
+     "a": "Fort Zeelandia",
+     "wrong": [
+      "Fort Nieuw-Amsterdam",
+      "Fort Sommelsdijk",
+      "Fort Oranje"
+     ],
+     "why": "It is now a museum."
+    },
+    {
+     "level": 3,
+     "q": "Who became President of Suriname in 2025?",
+     "a": "Jennifer Geerlings-Simons",
+     "wrong": [
+      "Chan Santokhi",
+      "Dési Bouterse",
+      "Ronald Venetiaan"
+     ],
+     "why": "She is the first woman to hold the post."
+    },
+    {
+     "level": 3,
+     "q": "Which Maroon leader fought the Dutch in the 1700s?",
+     "a": "Boni",
+     "wrong": [
+      "Cuffy",
+      "Bussa",
+      "Tacky"
+     ],
+     "why": "French Guiana's Boni people are named after him."
+    },
+    {
+     "level": 3,
+     "q": "Which year did slavery end in Suriname?",
+     "a": "1863",
+     "wrong": [
+      "1834",
+      "1807",
+      "1888"
+     ],
+     "why": "Workers had to stay on plantations ten more years."
+    }
+   ]
+  },
+  {
+   "name": "Suriname: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which large nature reserve in Suriname is a UNESCO site?",
+     "a": "Central Suriname Nature Reserve",
+     "wrong": [
+      "Iwokrama",
+      "Manú",
+      "Yasuní"
+     ],
+     "why": "It covers 1.6 million hectares."
+    },
+    {
+     "level": 1,
+     "q": "Which footballers of Surinamese heritage starred for the Netherlands?",
+     "a": "Ruud Gullit and Edgar Davids",
+     "wrong": [
+      "Johan Cruyff and Marco van Basten",
+      "Arjen Robben and Wesley Sneijder",
+      "Dennis Bergkamp and Ronald Koeman"
+     ],
+     "why": "Many Dutch stars have Surinamese roots."
+    },
+    {
+     "level": 1,
+     "q": "Which wooden cathedral in Paramaribo is one of the largest wooden buildings in the Americas?",
+     "a": "St Peter and Paul Cathedral",
+     "wrong": [
+      "St George's Cathedral",
+      "Christ Church",
+      "Our Lady of Lourdes"
+     ],
+     "why": "It was finished in 1885."
+    },
+    {
+     "level": 1,
+     "q": "Which flatbread wrap shows Suriname's South Asian heritage?",
+     "a": "Roti",
+     "wrong": [
+      "Arepa",
+      "Tortilla",
+      "Pita"
+     ],
+     "why": "It is filled with curry."
+    },
+    {
+     "level": 1,
+     "q": "Which river forms Suriname's border with French Guiana?",
+     "a": "Maroni (Marowijne)",
+     "wrong": [
+      "Courantyne",
+      "Essequibo",
+      "Oyapock"
+     ],
+     "why": "Maroon villages line its banks."
+    },
+    {
+     "level": 1,
+     "q": "Which mosque and synagogue stand side by side in Paramaribo?",
+     "a": "Keizerstraat Mosque and Neve Shalom Synagogue",
+     "wrong": [
+      "Al-Aqsa and Hurva",
+      "Blue Mosque and Hagia Sophia",
+      "Istiqlal and Cathedral"
+     ],
+     "why": "They show the city's religious harmony."
+    },
+    {
+     "level": 1,
+     "q": "Which bird-singing contest is a Sunday tradition?",
+     "a": "Songbird competitions",
+     "wrong": [
+      "Cockfighting",
+      "Pigeon racing",
+      "Parrot shows"
+     ],
+     "why": "Men carry birds in cages to the square."
+    },
+    {
+     "level": 2,
+     "q": "Which large artificial lake was made for bauxite power?",
+     "a": "Brokopondo Reservoir",
+     "wrong": [
+      "Lake Nicaragua",
+      "Lake Guri",
+      "Kariba"
+     ],
+     "why": "It flooded large forests in 1964."
+    },
+    {
+     "level": 2,
+     "q": "Which Surinamese swimmer won Olympic gold in 1988?",
+     "a": "Anthony Nesty",
+     "wrong": [
+      "Chris Nesty",
+      "Siegfried Nesty",
+      "Jaap Jansen"
+     ],
+     "why": "He beat Matt Biondi in the 100 m butterfly."
+    },
+    {
+     "level": 2,
+     "q": "Which hill in Suriname has a famous cliff with views?",
+     "a": "Voltzberg",
+     "wrong": [
+      "Pico da Neblina",
+      "Roraima",
+      "Brownsberg"
+     ],
+     "why": "It rises from the rainforest."
+    },
+    {
+     "level": 2,
+     "q": "What is the national dish of chicken and root vegetables oven-baked with citrus?",
+     "a": "Pom",
+     "wrong": [
+      "Moksi alesi",
+      "Saoto soup",
+      "Bami"
+     ],
+     "why": "It came from Jewish Creole cooking."
+    },
+    {
+     "level": 2,
+     "q": "Which national holiday on 1 July celebrates the end of slavery?",
+     "a": "Keti Koti",
+     "wrong": [
+      "Mashramani",
+      "Phagwah",
+      "Diwali"
+     ],
+     "why": "Its name means 'chains cut'."
+    },
+    {
+     "level": 3,
+     "q": "Which Surinamese language is the country's lingua franca?",
+     "a": "Sranan Tongo",
+     "wrong": [
+      "Papiamento",
+      "Sarnami",
+      "Saramaccan"
+     ],
+     "why": "It is an English-based creole."
+    },
+    {
+     "level": 3,
+     "q": "Which old Jewish settlement in the forest was called the 'Jerusalem on the River'?",
+     "a": "Jodensavanne",
+     "wrong": [
+      "Joden Breestraat",
+      "Fort Zeelandia",
+      "Commewijne"
+     ],
+     "why": "Its ruins date from the 1600s."
+    },
+    {
+     "level": 3,
+     "q": "Which spicy soup with chicken, bean sprouts and rice is popular?",
+     "a": "Saoto",
+     "wrong": [
+      "Pom",
+      "Moksi alesi",
+      "Pepperpot"
+     ],
+     "why": "It came with Javanese settlers."
+    }
+   ]
+  }
+ ]
+}

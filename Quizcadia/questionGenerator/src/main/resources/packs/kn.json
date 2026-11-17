@@ -1,0 +1,346 @@
+{
+ "category": "Saint Kitts and Nevis",
+ "country": "KN",
+ "topics": [
+  {
+   "name": "Saint Kitts and Nevis: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Saint Kitts and Nevis?",
+     "a": "Basseterre",
+     "wrong": [
+      "Charlestown",
+      "Sandy Point",
+      "Cayon"
+     ],
+     "why": "It is on St Kitts."
+    },
+    {
+     "level": 1,
+     "q": "Which country is the smallest in the Americas?",
+     "a": "Saint Kitts and Nevis",
+     "wrong": [
+      "Grenada",
+      "Barbados",
+      "Antigua and Barbuda"
+     ],
+     "why": "It is about 260 square kilometres."
+    },
+    {
+     "level": 1,
+     "q": "From which country did it gain independence in 1983?",
+     "a": "United Kingdom",
+     "wrong": [
+      "France",
+      "Spain",
+      "Netherlands"
+     ],
+     "why": "It is a federation of two islands."
+    },
+    {
+     "level": 1,
+     "q": "Which US founding father was born on Nevis?",
+     "a": "Alexander Hamilton",
+     "wrong": [
+      "Benjamin Franklin",
+      "John Jay",
+      "Thomas Paine"
+     ],
+     "why": "A musical tells his story."
+    },
+    {
+     "level": 1,
+     "q": "What currency is used in Saint Kitts and Nevis?",
+     "a": "East Caribbean dollar",
+     "wrong": [
+      "Kittitian dollar",
+      "US dollar",
+      "Euro"
+     ],
+     "why": "The Eastern Caribbean Central Bank is in Basseterre."
+    },
+    {
+     "level": 1,
+     "q": "What was St Kitts the first island in the Caribbean to become?",
+     "a": "An English colony",
+     "wrong": [
+      "A French colony",
+      "A Spanish colony",
+      "A Dutch colony"
+     ],
+     "why": "Thomas Warner landed in 1623."
+    },
+    {
+     "level": 1,
+     "q": "Which crop dominated St Kitts until 2005?",
+     "a": "Sugar",
+     "wrong": [
+      "Coffee",
+      "Tobacco",
+      "Bananas"
+     ],
+     "why": "The sugar industry closed that year."
+    },
+    {
+     "level": 2,
+     "q": "Who was the first Prime Minister of Saint Kitts and Nevis?",
+     "a": "Kennedy Simmonds",
+     "wrong": [
+      "Denzil Douglas",
+      "Timothy Harris",
+      "Terrance Drew"
+     ],
+     "why": "He served from 1983 to 1995."
+    },
+    {
+     "level": 2,
+     "q": "Who became Prime Minister in 2022?",
+     "a": "Terrance Drew",
+     "wrong": [
+      "Timothy Harris",
+      "Denzil Douglas",
+      "Kennedy Simmonds"
+     ],
+     "why": "He is a doctor."
+    },
+    {
+     "level": 2,
+     "q": "Which 1626 massacre killed many Kalinago people on St Kitts?",
+     "a": "Bloody Point massacre",
+     "wrong": [
+      "Leapers' massacre",
+      "Sandy Point killing",
+      "Kalinago War"
+     ],
+     "why": "English and French settlers carried it out."
+    },
+    {
+     "level": 2,
+     "q": "Which island has the right to leave the federation by referendum?",
+     "a": "Nevis",
+     "wrong": [
+      "St Kitts",
+      "Anguilla",
+      "Montserrat"
+     ],
+     "why": "A 1998 vote fell just short."
+    },
+    {
+     "level": 2,
+     "q": "Which island once formed a colony with St Kitts and Nevis?",
+     "a": "Anguilla",
+     "wrong": [
+      "Montserrat",
+      "Antigua",
+      "Barbuda"
+     ],
+     "why": "It broke away in 1967."
+    },
+    {
+     "level": 3,
+     "q": "Which English admiral's wife came from Nevis?",
+     "a": "Horatio Nelson's wife, Fanny Nisbet",
+     "wrong": [
+      "Francis Drake's wife",
+      "George Rodney's wife",
+      "Edward Hawke's wife"
+     ],
+     "why": "They married on Nevis in 1787."
+    },
+    {
+     "level": 3,
+     "q": "Which national hero led the labour movement and became first Premier?",
+     "a": "Robert Bradshaw",
+     "wrong": [
+      "Kennedy Simmonds",
+      "Paul Southwell",
+      "Joseph France"
+     ],
+     "why": "His party pushed for independence."
+    },
+    {
+     "level": 3,
+     "q": "How did the French and English share St Kitts in the 1600s?",
+     "a": "They divided the island between them",
+     "wrong": [
+      "They took turns each year",
+      "They shared one capital",
+      "They split it by language"
+     ],
+     "why": "The French held both ends."
+    }
+   ]
+  },
+  {
+   "name": "Saint Kitts and Nevis: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which fortress on St Kitts is a UNESCO site?",
+     "a": "Brimstone Hill Fortress",
+     "wrong": [
+      "Fort Charlotte",
+      "Fort George",
+      "Nelson's Dockyard"
+     ],
+     "why": "It is called the 'Gibraltar of the West Indies'."
+    },
+    {
+     "level": 1,
+     "q": "Which narrow-gauge railway gives island tours?",
+     "a": "St Kitts Scenic Railway",
+     "wrong": [
+      "White Pass Railway",
+      "Darjeeling Railway",
+      "Caribbean Express"
+     ],
+     "why": "It was built for sugar cane."
+    },
+    {
+     "level": 1,
+     "q": "Which dormant volcano is the highest point of St Kitts?",
+     "a": "Mount Liamuiga",
+     "wrong": [
+      "Mount Nevis",
+      "Mount Scenery",
+      "Morne Diablotin"
+     ],
+     "why": "It has a crater lake."
+    },
+    {
+     "level": 1,
+     "q": "Which monkeys brought by the French live on St Kitts?",
+     "a": "Green vervet monkeys",
+     "wrong": [
+      "Howler monkeys",
+      "Capuchins",
+      "Spider monkeys"
+     ],
+     "why": "They outnumber people by some counts."
+    },
+    {
+     "level": 1,
+     "q": "Which festival in December is St Kitts's carnival?",
+     "a": "Sugar Mas",
+     "wrong": [
+      "Crop Over",
+      "Junkanoo",
+      "Spicemas"
+     ],
+     "why": "It runs into the New Year."
+    },
+    {
+     "level": 1,
+     "q": "Which strait separates St Kitts from Nevis?",
+     "a": "The Narrows",
+     "wrong": [
+      "Windward Passage",
+      "Mona Passage",
+      "Dragon's Mouth"
+     ],
+     "why": "It is about 3 km wide."
+    },
+    {
+     "level": 1,
+     "q": "Which volcano forms most of Nevis?",
+     "a": "Nevis Peak",
+     "wrong": [
+      "Mount Liamuiga",
+      "Soufrière",
+      "Mount Pelée"
+     ],
+     "why": "Its peak is often in cloud."
+    },
+    {
+     "level": 2,
+     "q": "Which beach on St Kitts's southeast peninsula is popular with visitors?",
+     "a": "South Friars Bay",
+     "wrong": [
+      "Seven Mile Beach",
+      "Grand Anse",
+      "Shoal Bay"
+     ],
+     "why": "Pinney's Beach is on Nevis."
+    },
+    {
+     "level": 2,
+     "q": "Which old bathhouse on Nevis was a famous spa?",
+     "a": "Bath Hotel",
+     "wrong": [
+      "Montpelier",
+      "Golden Rock",
+      "Four Seasons"
+     ],
+     "why": "It used hot springs."
+    },
+    {
+     "level": 2,
+     "q": "Which Kittitian sprinter won the 2003 world 100 m title?",
+     "a": "Kim Collins",
+     "wrong": [
+      "Darrel Brown",
+      "Antoine Adams",
+      "Jason Rogers"
+     ],
+     "why": "He was one of the world's oldest sprinters."
+    },
+    {
+     "level": 2,
+     "q": "What does the island name 'Liamuiga' mean?",
+     "a": "Fertile land",
+     "wrong": [
+      "Sweet water",
+      "Monkey island",
+      "Fire mountain"
+     ],
+     "why": "It is the Kalinago name for St Kitts."
+    },
+    {
+     "level": 2,
+     "q": "Which town is the capital of Nevis?",
+     "a": "Charlestown",
+     "wrong": [
+      "Basseterre",
+      "Gingerland",
+      "Newcastle"
+     ],
+     "why": "Hamilton's birthplace is there."
+    },
+    {
+     "level": 3,
+     "q": "Which music festival in Basseterre draws big names each June?",
+     "a": "St Kitts Music Festival",
+     "wrong": [
+      "Reggae Sumfest",
+      "Jazz on the Bay",
+      "Crop Over"
+     ],
+     "why": "It began in 1996."
+    },
+    {
+     "level": 3,
+     "q": "Which programme first started selling citizenship in 1984?",
+     "a": "St Kitts Citizenship by Investment",
+     "wrong": [
+      "Dominica Programme",
+      "Malta Passport",
+      "Portugal Golden Visa"
+     ],
+     "why": "It is the world's oldest."
+    },
+    {
+     "level": 3,
+     "q": "Which circular 'Circus' in Basseterre has a clock tower?",
+     "a": "The Circus (Berkeley Memorial)",
+     "wrong": [
+      "Independence Square",
+      "Piccadilly",
+      "Columbus Circle"
+     ],
+     "why": "It is modelled on Piccadilly Circus."
+    }
+   ]
+  }
+ ]
+}

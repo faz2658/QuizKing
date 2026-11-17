@@ -1,0 +1,346 @@
+{
+ "category": "El Salvador",
+ "country": "SV",
+ "topics": [
+  {
+   "name": "El Salvador: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of El Salvador?",
+     "a": "San Salvador",
+     "wrong": [
+      "Santa Ana",
+      "San Miguel",
+      "La Libertad"
+     ],
+     "why": "It lies below a volcano."
+    },
+    {
+     "level": 1,
+     "q": "Which archbishop was murdered while saying Mass in 1980?",
+     "a": "Óscar Romero",
+     "wrong": [
+      "Ignacio Ellacuría",
+      "Rutilio Grande",
+      "Jon Sobrino"
+     ],
+     "why": "He was made a saint in 2018."
+    },
+    {
+     "level": 1,
+     "q": "Which country is the smallest in Central America?",
+     "a": "El Salvador",
+     "wrong": [
+      "Belize",
+      "Costa Rica",
+      "Panama"
+     ],
+     "why": "It is also the most densely populated."
+    },
+    {
+     "level": 1,
+     "q": "Which currency did El Salvador adopt in 2001?",
+     "a": "US dollar",
+     "wrong": [
+      "Euro",
+      "Peso",
+      "Quetzal"
+     ],
+     "why": "It replaced the colón."
+    },
+    {
+     "level": 1,
+     "q": "Which cryptocurrency did El Salvador make legal tender in 2021?",
+     "a": "Bitcoin",
+     "wrong": [
+      "Ethereum",
+      "Dogecoin",
+      "Litecoin"
+     ],
+     "why": "It was the first country to do so, and dropped it in 2025."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of El Salvador since 2019?",
+     "a": "Nayib Bukele",
+     "wrong": [
+      "Salvador Sánchez Cerén",
+      "Mauricio Funes",
+      "Tony Saca"
+     ],
+     "why": "He started a big crackdown on gangs."
+    },
+    {
+     "level": 1,
+     "q": "Which civil war lasted from 1980 to 1992?",
+     "a": "Salvadoran Civil War",
+     "wrong": [
+      "Football War",
+      "Contra War",
+      "Guatemalan Civil War"
+     ],
+     "why": "Peace accords were signed in Mexico."
+    },
+    {
+     "level": 2,
+     "q": "Which 1932 massacre killed thousands of peasants?",
+     "a": "La Matanza",
+     "wrong": [
+      "El Mozote",
+      "Sumpul",
+      "Santa Cruz"
+     ],
+     "why": "It followed a rebellion."
+    },
+    {
+     "level": 2,
+     "q": "Which village was the site of a 1981 army massacre?",
+     "a": "El Mozote",
+     "wrong": [
+      "La Matanza",
+      "Sumpul",
+      "Tecoluca"
+     ],
+     "why": "About 800 civilians were killed."
+    },
+    {
+     "level": 2,
+     "q": "Which guerrilla front became a political party after the war?",
+     "a": "FMLN",
+     "wrong": [
+      "FSLN",
+      "URNG",
+      "ARENA"
+     ],
+     "why": "It was named after Farabundo Martí."
+    },
+    {
+     "level": 2,
+     "q": "Which Maya village was buried by volcanic ash around 600 AD?",
+     "a": "Joya de Cerén",
+     "wrong": [
+      "Tazumal",
+      "San Andrés",
+      "Copán"
+     ],
+     "why": "It is called the 'Pompeii of the Americas'."
+    },
+    {
+     "level": 2,
+     "q": "Which country did El Salvador fight in the 1969 Football War?",
+     "a": "Honduras",
+     "wrong": [
+      "Guatemala",
+      "Nicaragua",
+      "Mexico"
+     ],
+     "why": "It lasted about 100 hours."
+    },
+    {
+     "level": 3,
+     "q": "Which mega-prison opened in 2023 for gang members?",
+     "a": "CECOT",
+     "wrong": [
+      "Mariona",
+      "Izalco Prison",
+      "La Esperanza"
+     ],
+     "why": "It holds tens of thousands."
+    },
+    {
+     "level": 3,
+     "q": "Which Salvadoran poet wrote 'Poema de amor'?",
+     "a": "Roque Dalton",
+     "wrong": [
+      "Claribel Alegría",
+      "Salarrué",
+      "Alfredo Espino"
+     ],
+     "why": "He was killed in 1975."
+    },
+    {
+     "level": 3,
+     "q": "Which Indigenous Pipil warrior is a symbol of resistance?",
+     "a": "Atlacatl",
+     "wrong": [
+      "Lempira",
+      "Tecún Umán",
+      "Nicarao"
+     ],
+     "why": "He is said to have fought Alvarado."
+    }
+   ]
+  },
+  {
+   "name": "El Salvador: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which thick stuffed corn tortilla is the national dish?",
+     "a": "Pupusa",
+     "wrong": [
+      "Baleada",
+      "Arepa",
+      "Tamale"
+     ],
+     "why": "It has its own national day in November."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean is El Salvador's only coast on?",
+     "a": "Pacific Ocean",
+     "wrong": [
+      "Caribbean Sea",
+      "Atlantic Ocean",
+      "Gulf of Mexico"
+     ],
+     "why": "It is the only Central American country without a Caribbean coast."
+    },
+    {
+     "level": 1,
+     "q": "Which beach town is famous for surfing?",
+     "a": "El Tunco",
+     "wrong": [
+      "Tamarindo",
+      "San Juan del Sur",
+      "Montañita"
+     ],
+     "why": "It is near La Libertad."
+    },
+    {
+     "level": 1,
+     "q": "Which flowering plant is El Salvador's national flower?",
+     "a": "Flor de izote",
+     "wrong": [
+      "Orchid",
+      "Rose",
+      "Sunflower"
+     ],
+     "why": "It is also eaten."
+    },
+    {
+     "level": 1,
+     "q": "Which volcano is El Salvador's tallest?",
+     "a": "Santa Ana (Ilamatepec)",
+     "wrong": [
+      "Izalco",
+      "San Salvador",
+      "San Miguel"
+     ],
+     "why": "It has a green crater lake."
+    },
+    {
+     "level": 1,
+     "q": "Which young volcano was called the 'Lighthouse of the Pacific'?",
+     "a": "Izalco",
+     "wrong": [
+      "Santa Ana",
+      "Chaparrastique",
+      "Conchagua"
+     ],
+     "why": "It erupted almost constantly until 1966."
+    },
+    {
+     "level": 1,
+     "q": "What are Salvadorans called informally?",
+     "a": "Guanacos",
+     "wrong": [
+      "Ticos",
+      "Nicas",
+      "Catrachos"
+     ],
+     "why": "It is a friendly nickname."
+    },
+    {
+     "level": 2,
+     "q": "Which route of colourful mountain towns is famous with visitors?",
+     "a": "Ruta de las Flores",
+     "wrong": [
+      "Ruta Maya",
+      "Ruta del Café",
+      "Camino Real"
+     ],
+     "why": "Juayúa has a food festival there."
+    },
+    {
+     "level": 2,
+     "q": "Which large crater lake is close to San Salvador?",
+     "a": "Lake Ilopango",
+     "wrong": [
+      "Lake Coatepeque",
+      "Lake Atitlán",
+      "Lake Güija"
+     ],
+     "why": "It formed in a huge eruption."
+    },
+    {
+     "level": 2,
+     "q": "Which Maya site has a large pyramid in Chalchuapa?",
+     "a": "Tazumal",
+     "wrong": [
+      "Joya de Cerén",
+      "Copán",
+      "San Andrés"
+     ],
+     "why": "It is the country's best-known ruin."
+    },
+    {
+     "level": 2,
+     "q": "Which Salvadoran footballer is the country's best-known player?",
+     "a": "Jorge 'Mágico' González",
+     "wrong": [
+      "Cuauhtémoc Blanco",
+      "Carlos Pavón",
+      "Hugo Sánchez"
+     ],
+     "why": "He played for Cádiz in Spain."
+    },
+    {
+     "level": 2,
+     "q": "Which festival celebrates the Divine Saviour each August?",
+     "a": "Fiestas Agostinas",
+     "wrong": [
+      "Semana Santa",
+      "Día de Muertos",
+      "Carnaval de San Miguel"
+     ],
+     "why": "The country is named after the Saviour."
+    },
+    {
+     "level": 3,
+     "q": "Which festival sees men throw burning balls in Nejapa?",
+     "a": "Bolas de fuego",
+     "wrong": [
+      "Hogueras",
+      "Correfoc",
+      "La Tomatina"
+     ],
+     "why": "It is held on 31 August."
+    },
+    {
+     "level": 3,
+     "q": "Which crater lake changes colour and draws visitors near Santa Ana?",
+     "a": "Lake Coatepeque",
+     "wrong": [
+      "Lake Ilopango",
+      "Lake Güija",
+      "Lake Yojoa"
+     ],
+     "why": "It can turn turquoise."
+    },
+    {
+     "level": 3,
+     "q": "Which artist from La Palma made the colourful naïve painting style famous?",
+     "a": "Fernando Llort",
+     "wrong": [
+      "Salarrué",
+      "Benjamín Cañas",
+      "Rosa Mena Valenzuela"
+     ],
+     "why": "His designs are on many crafts."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,346 @@
+{
+ "category": "Namibia",
+ "country": "NA",
+ "topics": [
+  {
+   "name": "Namibia: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Namibia?",
+     "a": "Windhoek",
+     "wrong": [
+      "Walvis Bay",
+      "Swakopmund",
+      "Oshakati"
+     ],
+     "why": "It is in the central highlands."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Namibia gain independence?",
+     "a": "1990",
+     "wrong": [
+      "1980",
+      "1994",
+      "1975"
+     ],
+     "why": "It was ruled by South Africa before that."
+    },
+    {
+     "level": 1,
+     "q": "Which country colonised Namibia in 1884?",
+     "a": "Germany",
+     "wrong": [
+      "United Kingdom",
+      "Portugal",
+      "France"
+     ],
+     "why": "It was called German South West Africa."
+    },
+    {
+     "level": 1,
+     "q": "Who was Namibia's first President?",
+     "a": "Sam Nujoma",
+     "wrong": [
+      "Hifikepunye Pohamba",
+      "Hage Geingob",
+      "Nangolo Mbumba"
+     ],
+     "why": "He is called the founding father."
+    },
+    {
+     "level": 1,
+     "q": "What is Namibia's currency?",
+     "a": "Namibian dollar",
+     "wrong": [
+      "Euro",
+      "Pula",
+      "Kwacha"
+     ],
+     "why": "The South African rand is also legal tender."
+    },
+    {
+     "level": 1,
+     "q": "Who became Namibia's first woman President in 2025?",
+     "a": "Netumbo Nandi-Ndaitwah",
+     "wrong": [
+      "Saara Kuugongelwa",
+      "Monica Geingos",
+      "Libertina Amathila"
+     ],
+     "why": "She is from SWAPO."
+    },
+    {
+     "level": 1,
+     "q": "Which liberation movement has governed Namibia since 1990?",
+     "a": "SWAPO",
+     "wrong": [
+      "ANC",
+      "ZANU-PF",
+      "FRELIMO"
+     ],
+     "why": "It fought South African rule."
+    },
+    {
+     "level": 2,
+     "q": "Which genocide did German forces commit in 1904–08?",
+     "a": "Herero and Nama genocide",
+     "wrong": [
+      "Matabele massacre",
+      "Gukurahundi",
+      "Bambatha massacre"
+     ],
+     "why": "Germany recognised it in 2021."
+    },
+    {
+     "level": 2,
+     "q": "Which UN resolution of 1978 set out Namibia's path to independence?",
+     "a": "Resolution 435",
+     "wrong": [
+      "Resolution 242",
+      "Resolution 1514",
+      "Resolution 678"
+     ],
+     "why": "It was carried out in 1989–90."
+    },
+    {
+     "level": 2,
+     "q": "Which port enclave stayed South African until 1994?",
+     "a": "Walvis Bay",
+     "wrong": [
+      "Lüderitz",
+      "Swakopmund",
+      "Oranjemund"
+     ],
+     "why": "It is Namibia's main port."
+    },
+    {
+     "level": 2,
+     "q": "Which President of Namibia died in office in 2024?",
+     "a": "Hage Geingob",
+     "wrong": [
+      "Sam Nujoma",
+      "Hifikepunye Pohamba",
+      "Nangolo Mbumba"
+     ],
+     "why": "He had been President since 2015."
+    },
+    {
+     "level": 2,
+     "q": "Which South African name did Namibia have under its rule?",
+     "a": "South West Africa",
+     "wrong": [
+      "Damaraland",
+      "Ovamboland",
+      "Transvaal"
+     ],
+     "why": "It was a League of Nations mandate."
+    },
+    {
+     "level": 3,
+     "q": "Which Nama leader fought the Germans and appears on banknotes?",
+     "a": "Hendrik Witbooi",
+     "wrong": [
+      "Samuel Maharero",
+      "Jacob Morenga",
+      "Kahimemua"
+     ],
+     "why": "He died in battle in 1905."
+    },
+    {
+     "level": 3,
+     "q": "Which Herero chief led the 1904 uprising?",
+     "a": "Samuel Maharero",
+     "wrong": [
+      "Hendrik Witbooi",
+      "Hosea Kutako",
+      "Jacob Morenga"
+     ],
+     "why": "He fled to Botswana."
+    },
+    {
+     "level": 3,
+     "q": "Which narrow panhandle in the northeast reaches the Zambezi?",
+     "a": "Zambezi Region (Caprivi Strip)",
+     "wrong": [
+      "Kunene Region",
+      "Kavango Strip",
+      "Ovamboland"
+     ],
+     "why": "Germany got it in 1890."
+    }
+   ]
+  },
+  {
+   "name": "Namibia: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which coastal desert in Namibia is one of the world's oldest?",
+     "a": "Namib Desert",
+     "wrong": [
+      "Kalahari",
+      "Sahara",
+      "Atacama"
+     ],
+     "why": "It is about 55 million years old."
+    },
+    {
+     "level": 1,
+     "q": "Which red sand dunes area is one of the most photographed?",
+     "a": "Sossusvlei",
+     "wrong": [
+      "Erg Chebbi",
+      "Erg Chigaga",
+      "Kalahari Dunes"
+     ],
+     "why": "Some dunes are over 300 m tall."
+    },
+    {
+     "level": 1,
+     "q": "Which national park has a huge salt pan with wildlife?",
+     "a": "Etosha National Park",
+     "wrong": [
+      "Kruger",
+      "Serengeti",
+      "Chobe"
+     ],
+     "why": "Animals gather at its waterholes."
+    },
+    {
+     "level": 1,
+     "q": "Which coast is littered with shipwrecks and whale bones?",
+     "a": "Skeleton Coast",
+     "wrong": [
+      "Wild Coast",
+      "Gold Coast",
+      "Swahili Coast"
+     ],
+     "why": "Fog makes it dangerous for ships."
+    },
+    {
+     "level": 1,
+     "q": "Which canyon is one of the largest in Africa?",
+     "a": "Fish River Canyon",
+     "wrong": [
+      "Blyde River Canyon",
+      "Tugela Gorge",
+      "Batoka Gorge"
+     ],
+     "why": "It is about 160 km long."
+    },
+    {
+     "level": 1,
+     "q": "Which people are known for covering their skin with red ochre?",
+     "a": "Himba",
+     "wrong": [
+      "Herero",
+      "San",
+      "Nama"
+     ],
+     "why": "They live in Kunene."
+    },
+    {
+     "level": 1,
+     "q": "Which strange desert plant can live over 1,000 years?",
+     "a": "Welwitschia",
+     "wrong": [
+      "Baobab",
+      "Quiver tree",
+      "Aloe"
+     ],
+     "why": "It has only two leaves."
+    },
+    {
+     "level": 2,
+     "q": "Which white clay pan with dead camelthorn trees lies near Sossusvlei?",
+     "a": "Deadvlei",
+     "wrong": [
+      "Sossusvlei",
+      "Etosha Pan",
+      "Makgadikgadi"
+     ],
+     "why": "The trees are about 700 years old."
+    },
+    {
+     "level": 2,
+     "q": "Which seaside town has German buildings and adventure sports?",
+     "a": "Swakopmund",
+     "wrong": [
+      "Walvis Bay",
+      "Lüderitz",
+      "Henties Bay"
+     ],
+     "why": "Sandboarding is popular there."
+    },
+    {
+     "level": 2,
+     "q": "Which ghost town in the sand was once a diamond town?",
+     "a": "Kolmanskop",
+     "wrong": [
+      "Elizabeth Bay",
+      "Oranjemund",
+      "Bogenfels"
+     ],
+     "why": "It was abandoned in the 1950s."
+    },
+    {
+     "level": 2,
+     "q": "Which Namibian sprinter won Olympic 200 m silver in 2020?",
+     "a": "Christine Mboma",
+     "wrong": [
+      "Frankie Fredericks",
+      "Beatrice Masilingi",
+      "Agnes Samaria"
+     ],
+     "why": "She was 18."
+    },
+    {
+     "level": 2,
+     "q": "Which Namibian sprinter won four Olympic silver medals in the 1990s?",
+     "a": "Frankie Fredericks",
+     "wrong": [
+      "Christine Mboma",
+      "Ato Boldon",
+      "Obadele Thompson"
+     ],
+     "why": "He was second in the 100 m and 200 m twice."
+    },
+    {
+     "level": 3,
+     "q": "Which seal colony at Cape Cross is one of the largest in the world?",
+     "a": "Cape fur seal colony",
+     "wrong": [
+      "Elephant seal colony",
+      "Harbour seal colony",
+      "Monk seal colony"
+     ],
+     "why": "Up to 200,000 seals gather."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient rock engravings are a UNESCO site?",
+     "a": "Twyfelfontein",
+     "wrong": [
+      "Tsodilo Hills",
+      "Matobo",
+      "Drakensberg"
+     ],
+     "why": "There are over 2,000 engravings."
+    },
+    {
+     "level": 3,
+     "q": "Which meteorite in Namibia is the largest known on Earth?",
+     "a": "Hoba meteorite",
+     "wrong": [
+      "Willamette",
+      "Cape York",
+      "Campo del Cielo"
+     ],
+     "why": "It weighs about 60 tonnes."
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,346 @@
+{
+ "category": "Zimbabwe",
+ "country": "ZW",
+ "topics": [
+  {
+   "name": "Zimbabwe: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Zimbabwe?",
+     "a": "Harare",
+     "wrong": [
+      "Bulawayo",
+      "Mutare",
+      "Gweru"
+     ],
+     "why": "It was called Salisbury."
+    },
+    {
+     "level": 1,
+     "q": "What was Zimbabwe called before 1980?",
+     "a": "Rhodesia",
+     "wrong": [
+      "Nyasaland",
+      "Northern Rhodesia",
+      "Bechuanaland"
+     ],
+     "why": "It was named after Cecil Rhodes."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient stone city gave Zimbabwe its name?",
+     "a": "Great Zimbabwe",
+     "wrong": [
+      "Mapungubwe",
+      "Khami",
+      "Kilwa"
+     ],
+     "why": "'Zimbabwe' means 'stone houses'."
+    },
+    {
+     "level": 1,
+     "q": "Who ruled Zimbabwe from 1980 to 2017?",
+     "a": "Robert Mugabe",
+     "wrong": [
+      "Emmerson Mnangagwa",
+      "Morgan Tsvangirai",
+      "Joshua Nkomo"
+     ],
+     "why": "He was removed in 2017."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of Zimbabwe since 2017?",
+     "a": "Emmerson Mnangagwa",
+     "wrong": [
+      "Robert Mugabe",
+      "Nelson Chamisa",
+      "Morgan Tsvangirai"
+     ],
+     "why": "He is called 'the Crocodile'."
+    },
+    {
+     "level": 1,
+     "q": "Which waterfall does Zimbabwe share with Zambia?",
+     "a": "Victoria Falls",
+     "wrong": [
+      "Kalandula Falls",
+      "Tugela Falls",
+      "Murchison Falls"
+     ],
+     "why": "It is one of the Seven Natural Wonders."
+    },
+    {
+     "level": 1,
+     "q": "Which gold-backed currency did Zimbabwe launch in 2024?",
+     "a": "ZiG (Zimbabwe Gold)",
+     "wrong": [
+      "Zim dollar",
+      "Bond note",
+      "Rand"
+     ],
+     "why": "It followed years of hyperinflation."
+    },
+    {
+     "level": 2,
+     "q": "Which white-minority government declared independence from Britain in 1965?",
+     "a": "Ian Smith's government (UDI)",
+     "wrong": [
+      "Cecil Rhodes's government",
+      "Godfrey Huggins's government",
+      "Roy Welensky's government"
+     ],
+     "why": "It was not recognised."
+    },
+    {
+     "level": 2,
+     "q": "Which war led to majority rule in 1980?",
+     "a": "Rhodesian Bush War",
+     "wrong": [
+      "Matabele War",
+      "Angolan War",
+      "Border War"
+     ],
+     "why": "It is called the Second Chimurenga."
+    },
+    {
+     "level": 2,
+     "q": "Which 2008 problem saw a 100 trillion dollar note printed?",
+     "a": "Hyperinflation",
+     "wrong": [
+      "Gold shortage",
+      "Banking strike",
+      "Oil crisis"
+     ],
+     "why": "Prices doubled every day."
+    },
+    {
+     "level": 2,
+     "q": "Which opposition leader became Prime Minister in a 2009 unity government?",
+     "a": "Morgan Tsvangirai",
+     "wrong": [
+      "Nelson Chamisa",
+      "Joshua Nkomo",
+      "Welshman Ncube"
+     ],
+     "why": "He led the MDC."
+    },
+    {
+     "level": 2,
+     "q": "Which 1980s massacres in Matabeleland are called Gukurahundi?",
+     "a": "Gukurahundi",
+     "wrong": [
+      "Chimurenga",
+      "Operation Murambatsvina",
+      "Shangani Patrol"
+     ],
+     "why": "Thousands of Ndebele died."
+    },
+    {
+     "level": 3,
+     "q": "Which Ndebele king fought the British in the 1890s?",
+     "a": "Lobengula",
+     "wrong": [
+      "Mzilikazi",
+      "Shaka",
+      "Moshoeshoe"
+     ],
+     "why": "He ruled from Bulawayo."
+    },
+    {
+     "level": 3,
+     "q": "Which spirit medium led the First Chimurenga in 1896?",
+     "a": "Mbuya Nehanda",
+     "wrong": [
+      "Kaguvi",
+      "Lobengula",
+      "Mzilikazi"
+     ],
+     "why": "She is a national hero."
+    },
+    {
+     "level": 3,
+     "q": "Which 2005 operation destroyed city slums?",
+     "a": "Operation Murambatsvina",
+     "wrong": [
+      "Operation Gukurahundi",
+      "Operation Restore Legacy",
+      "Operation Clean-Up"
+     ],
+     "why": "It means 'drive out the rubbish'."
+    }
+   ]
+  },
+  {
+   "name": "Zimbabwe: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which lake did Zimbabwe and Zambia create on the Zambezi?",
+     "a": "Lake Kariba",
+     "wrong": [
+      "Lake Malawi",
+      "Lake Victoria",
+      "Lake Tanganyika"
+     ],
+     "why": "Houseboats are popular there."
+    },
+    {
+     "level": 1,
+     "q": "Which national park is Zimbabwe's largest?",
+     "a": "Hwange National Park",
+     "wrong": [
+      "Mana Pools",
+      "Gonarezhou",
+      "Matobo"
+     ],
+     "why": "It has huge elephant herds."
+    },
+    {
+     "level": 1,
+     "q": "Which maize porridge is the staple food?",
+     "a": "Sadza",
+     "wrong": [
+      "Ugali",
+      "Nshima",
+      "Pap"
+     ],
+     "why": "It is eaten with relish."
+    },
+    {
+     "level": 1,
+     "q": "Which stone-carved bird is a national emblem?",
+     "a": "Zimbabwe Bird",
+     "wrong": [
+      "Fish eagle",
+      "Phoenix",
+      "Hornbill"
+     ],
+     "why": "Carvings were found at Great Zimbabwe."
+    },
+    {
+     "level": 1,
+     "q": "Which thumb piano is a traditional instrument?",
+     "a": "Mbira",
+     "wrong": [
+      "Kora",
+      "Marimba",
+      "Balafon"
+     ],
+     "why": "It is used in Shona ceremonies."
+    },
+    {
+     "level": 1,
+     "q": "Which city is Zimbabwe's second-largest?",
+     "a": "Bulawayo",
+     "wrong": [
+      "Mutare",
+      "Gweru",
+      "Masvingo"
+     ],
+     "why": "It is the Ndebele heartland."
+    },
+    {
+     "level": 1,
+     "q": "Which famous cricket and golf players come from Zimbabwe?",
+     "a": "Andy Flower and Nick Price",
+     "wrong": [
+      "Brian Lara and Tiger Woods",
+      "Sachin Tendulkar and Ernie Els",
+      "Shane Warne and Gary Player"
+     ],
+     "why": "Price won three majors."
+    },
+    {
+     "level": 2,
+     "q": "Which national park on the Zambezi is famous for canoe safaris?",
+     "a": "Mana Pools National Park",
+     "wrong": [
+      "Hwange",
+      "Gonarezhou",
+      "Matusadona"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which granite hills with rock art hold Cecil Rhodes's grave?",
+     "a": "Matobo Hills",
+     "wrong": [
+      "Chimanimani",
+      "Nyanga",
+      "Eastern Highlands"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which Zimbabwean musician played chimurenga music?",
+     "a": "Thomas Mapfumo",
+     "wrong": [
+      "Oliver Mtukudzi",
+      "Hugh Masekela",
+      "Lucky Dube"
+     ],
+     "why": "He is called 'the Lion of Zimbabwe'."
+    },
+    {
+     "level": 2,
+     "q": "Which Zimbabwean swimmer won seven Olympic medals?",
+     "a": "Kirsty Coventry",
+     "wrong": [
+      "Penny Heyns",
+      "Natalie du Toit",
+      "Chad le Clos"
+     ],
+     "why": "She later became IOC President."
+    },
+    {
+     "level": 2,
+     "q": "Which mountain range on the Mozambique border has Mount Nyangani?",
+     "a": "Eastern Highlands",
+     "wrong": [
+      "Matobo Hills",
+      "Drakensberg",
+      "Mulanje"
+     ],
+     "why": "It is Zimbabwe's highest point."
+    },
+    {
+     "level": 3,
+     "q": "Which sculpture style from Zimbabwe uses serpentine stone?",
+     "a": "Shona sculpture",
+     "wrong": [
+      "Makonde carving",
+      "Benin bronze",
+      "Tingatinga"
+     ],
+     "why": "It became famous in the 1960s."
+    },
+    {
+     "level": 3,
+     "q": "Which singer had the hit 'Neria'?",
+     "a": "Oliver Mtukudzi",
+     "wrong": [
+      "Thomas Mapfumo",
+      "Jah Prayzah",
+      "Winky D"
+     ],
+     "why": "He was called 'Tuku'."
+    },
+    {
+     "level": 3,
+     "q": "Which national park in the southeast means 'place of elephants'?",
+     "a": "Gonarezhou National Park",
+     "wrong": [
+      "Hwange",
+      "Mana Pools",
+      "Matusadona"
+     ],
+     "why": "It joins Kruger in a transfrontier park."
+    }
+   ]
+  }
+ ]
+}

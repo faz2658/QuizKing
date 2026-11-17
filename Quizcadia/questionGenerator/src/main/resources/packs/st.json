@@ -1,0 +1,346 @@
+{
+ "category": "São Tomé and Príncipe",
+ "country": "ST",
+ "topics": [
+  {
+   "name": "São Tomé and Príncipe: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of São Tomé and Príncipe?",
+     "a": "São Tomé",
+     "wrong": [
+      "Santo António",
+      "Neves",
+      "Trindade"
+     ],
+     "why": "It is on the larger island."
+    },
+    {
+     "level": 1,
+     "q": "From which country did São Tomé and Príncipe gain independence in 1975?",
+     "a": "Portugal",
+     "wrong": [
+      "Spain",
+      "France",
+      "United Kingdom"
+     ],
+     "why": "It was uninhabited when the Portuguese came."
+    },
+    {
+     "level": 1,
+     "q": "What is the currency of São Tomé and Príncipe?",
+     "a": "Dobra",
+     "wrong": [
+      "Escudo",
+      "CFA franc",
+      "Real"
+     ],
+     "why": "It was redenominated in 2018."
+    },
+    {
+     "level": 1,
+     "q": "Which crop made the islands rich in the early 1900s?",
+     "a": "Cocoa",
+     "wrong": [
+      "Coffee",
+      "Sugar",
+      "Tea"
+     ],
+     "why": "It was once the world's top cocoa producer."
+    },
+    {
+     "level": 1,
+     "q": "Which imaginary line passes near the islands?",
+     "a": "The equator",
+     "wrong": [
+      "Tropic of Cancer",
+      "Prime meridian",
+      "Arctic Circle"
+     ],
+     "why": "A monument marks it on Ilhéu das Rolas."
+    },
+    {
+     "level": 1,
+     "q": "Which ocean are the islands in?",
+     "a": "Atlantic Ocean (Gulf of Guinea)",
+     "wrong": [
+      "Indian Ocean",
+      "Pacific Ocean",
+      "Red Sea"
+     ],
+     "why": "They lie off Gabon."
+    },
+    {
+     "level": 1,
+     "q": "Which is the smaller of the two main islands?",
+     "a": "Príncipe",
+     "wrong": [
+      "São Tomé",
+      "Annobón",
+      "Bioko"
+     ],
+     "why": "It is a UNESCO biosphere reserve."
+    },
+    {
+     "level": 2,
+     "q": "Who was the first President of São Tomé and Príncipe?",
+     "a": "Manuel Pinto da Costa",
+     "wrong": [
+      "Miguel Trovoada",
+      "Fradique de Menezes",
+      "Evaristo Carvalho"
+     ],
+     "why": "He returned to power in 2011."
+    },
+    {
+     "level": 2,
+     "q": "Which 1953 massacre of workers is remembered every February?",
+     "a": "Batepá massacre",
+     "wrong": [
+      "Pidjiguiti massacre",
+      "Mueda massacre",
+      "Sharpeville massacre"
+     ],
+     "why": "Hundreds were killed by colonial forces."
+    },
+    {
+     "level": 2,
+     "q": "What were the large plantations called?",
+     "a": "Roças",
+     "wrong": [
+      "Haciendas",
+      "Fazendas",
+      "Kraals"
+     ],
+     "why": "Many old buildings still stand."
+    },
+    {
+     "level": 2,
+     "q": "Which famous 1919 eclipse photograph was taken on Príncipe?",
+     "a": "Arthur Eddington's eclipse photo testing relativity",
+     "wrong": [
+      "Halley's comet photo",
+      "First Moon photo",
+      "Darwin's sketch"
+     ],
+     "why": "It confirmed Einstein's theory."
+    },
+    {
+     "level": 2,
+     "q": "Which year did the country hold its first multi-party elections?",
+     "a": "1991",
+     "wrong": [
+      "1975",
+      "1985",
+      "2000"
+     ],
+     "why": "It moved peacefully to democracy."
+    },
+    {
+     "level": 3,
+     "q": "Which 2003 coup attempt happened while the President was abroad?",
+     "a": "2003 São Tomé coup",
+     "wrong": [
+      "1995 coup",
+      "2009 plot",
+      "2022 attack"
+     ],
+     "why": "It was reversed within a week."
+    },
+    {
+     "level": 3,
+     "q": "Who became Prime Minister in 2025 after a dismissal?",
+     "a": "Américo Ramos",
+     "wrong": [
+      "Patrice Trovoada",
+      "Jorge Bom Jesus",
+      "Carlos Vila Nova"
+     ],
+     "why": "The President dismissed Trovoada."
+    },
+    {
+     "level": 3,
+     "q": "Which forced labourers from Angola and Cape Verde worked the plantations?",
+     "a": "Serviçais",
+     "wrong": [
+      "Maroons",
+      "Coolies",
+      "Indentured Sikhs"
+     ],
+     "why": "Their conditions caused a cocoa boycott."
+    }
+   ]
+  },
+  {
+   "name": "São Tomé and Príncipe: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which volcanic spire rises out of the rainforest?",
+     "a": "Pico Cão Grande",
+     "wrong": [
+      "Pico do Fogo",
+      "Pico do Príncipe",
+      "Mount Cameroon"
+     ],
+     "why": "It is about 370 m above the land around it."
+    },
+    {
+     "level": 1,
+     "q": "What is the highest mountain of the islands?",
+     "a": "Pico de São Tomé",
+     "wrong": [
+      "Pico Cão Grande",
+      "Pico do Príncipe",
+      "Mount Karthala"
+     ],
+     "why": "It is about 2,020 m high."
+    },
+    {
+     "level": 1,
+     "q": "Which national park covers much of the forest?",
+     "a": "Obô Natural Park",
+     "wrong": [
+      "Kakum",
+      "Lopé",
+      "Taï"
+     ],
+     "why": "It has many birds found nowhere else."
+    },
+    {
+     "level": 1,
+     "q": "What is the official language of São Tomé and Príncipe?",
+     "a": "Portuguese",
+     "wrong": [
+      "Spanish",
+      "French",
+      "English"
+     ],
+     "why": "Forro creole is widely spoken."
+    },
+    {
+     "level": 1,
+     "q": "What is the country's motto often said by visitors?",
+     "a": "Leve-leve (take it easy)",
+     "wrong": [
+      "Pura vida",
+      "Hakuna matata",
+      "No worries"
+     ],
+     "why": "Life moves slowly."
+    },
+    {
+     "level": 1,
+     "q": "Which sea animals nest on the beaches?",
+     "a": "Sea turtles",
+     "wrong": [
+      "Seals",
+      "Penguins",
+      "Walruses"
+     ],
+     "why": "Five species visit."
+    },
+    {
+     "level": 1,
+     "q": "Which chocolate maker made São Tomé cocoa famous again?",
+     "a": "Claudio Corallo",
+     "wrong": [
+      "Cadbury",
+      "Lindt",
+      "Hershey"
+     ],
+     "why": "He grows and makes it on the island."
+    },
+    {
+     "level": 2,
+     "q": "Which islet south of São Tomé sits on the equator?",
+     "a": "Ilhéu das Rolas",
+     "wrong": [
+      "Ilhéu das Cabras",
+      "Bom Bom",
+      "Tinhosas"
+     ],
+     "why": "A marker shows the line."
+    },
+    {
+     "level": 2,
+     "q": "Which folk drama of São Tomé comes from a medieval European story?",
+     "a": "Tchiloli",
+     "wrong": [
+      "Danço-Congo",
+      "Auto de Floripes",
+      "Puíta"
+     ],
+     "why": "It tells of Charlemagne's court."
+    },
+    {
+     "level": 2,
+     "q": "Which fish stew with breadfruit is the national dish?",
+     "a": "Calulu",
+     "wrong": [
+      "Moqueca",
+      "Cachupa",
+      "Muamba"
+     ],
+     "why": "It is cooked slowly."
+    },
+    {
+     "level": 2,
+     "q": "Which famous plantation building was once a hospital?",
+     "a": "Roça Agostinho Neto",
+     "wrong": [
+      "Roça Sundy",
+      "Roça Monte Café",
+      "Roça São João"
+     ],
+     "why": "It is one of the largest roças."
+    },
+    {
+     "level": 2,
+     "q": "Which island is home to Roça Sundy, linked to Eddington's experiment?",
+     "a": "Príncipe",
+     "wrong": [
+      "São Tomé",
+      "Bioko",
+      "Annobón"
+     ],
+     "why": "A plaque marks the spot."
+    },
+    {
+     "level": 3,
+     "q": "Which waterfall on São Tomé is the tallest?",
+     "a": "São Nicolau Falls",
+     "wrong": [
+      "Kalandula Falls",
+      "Cascata Blublu",
+      "Bombaim Falls"
+     ],
+     "why": "It drops through lush forest."
+    },
+    {
+     "level": 3,
+     "q": "Which festival on Príncipe is held on St Lawrence's Day?",
+     "a": "Auto de Floripes",
+     "wrong": [
+      "Tchiloli",
+      "Danço-Congo",
+      "Bulawê"
+     ],
+     "why": "It tells a story from Charlemagne's wars."
+    },
+    {
+     "level": 3,
+     "q": "Which bird found only on São Tomé is the world's largest sunbird?",
+     "a": "Giant sunbird",
+     "wrong": [
+      "Hummingbird",
+      "Cardinal",
+      "Kingfisher"
+     ],
+     "why": "It lives in the mountain forest."
+    }
+   ]
+  }
+ ]
+}
