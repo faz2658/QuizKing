@@ -1,0 +1,1092 @@
+{
+ "category": "United Arab Emirates",
+ "country": "AE",
+ "topics": [
+  {
+   "name": "UAE History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year was the United Arab Emirates founded?",
+     "a": "1971",
+     "wrong": [
+      "1968",
+      "1981",
+      "1961"
+     ],
+     "why": "The union was declared on 2 December 1971."
+    },
+    {
+     "level": 1,
+     "q": "Who was the UAE's founding President?",
+     "a": "Sheikh Zayed bin Sultan Al Nahyan",
+     "wrong": [
+      "Sheikh Rashid bin Saeed Al Maktoum",
+      "Sheikh Khalifa bin Zayed",
+      "Sheikh Saqr bin Mohammed"
+     ],
+     "why": "He is called the Father of the Nation."
+    },
+    {
+     "level": 1,
+     "q": "On what date is UAE National Day?",
+     "a": "2 December",
+     "wrong": [
+      "30 November",
+      "1 January",
+      "18 December"
+     ],
+     "why": "It is also called Eid Al Etihad."
+    },
+    {
+     "level": 1,
+     "q": "How many emirates make up the UAE?",
+     "a": "7",
+     "wrong": [
+      "5",
+      "6",
+      "9"
+     ],
+     "why": "Abu Dhabi is the largest."
+    },
+    {
+     "level": 1,
+     "q": "Which emirate joined the union in 1972, a few months after the others?",
+     "a": "Ras Al Khaimah",
+     "wrong": [
+      "Fujairah",
+      "Ajman",
+      "Umm Al Quwain"
+     ],
+     "why": "It joined in February 1972."
+    },
+    {
+     "level": 1,
+     "q": "Before oil, what was the main industry along the coast?",
+     "a": "Pearl diving",
+     "wrong": [
+      "Coffee farming",
+      "Gold mining",
+      "Shipbuilding for Europe"
+     ],
+     "why": "Cultured pearls from Japan ended the trade in the 1930s."
+    },
+    {
+     "level": 1,
+     "q": "Who became President of the UAE in 2022?",
+     "a": "Sheikh Mohamed bin Zayed",
+     "wrong": [
+      "Sheikh Mohammed bin Rashid",
+      "Sheikh Hamdan bin Mohammed",
+      "Sheikh Saud bin Saqr"
+     ],
+     "why": "He succeeded Sheikh Khalifa."
+    },
+    {
+     "level": 2,
+     "q": "Which ruler of Dubai is also the UAE's Vice President and Prime Minister?",
+     "a": "Sheikh Mohammed bin Rashid Al Maktoum",
+     "wrong": [
+      "Sheikh Mohamed bin Zayed",
+      "Sheikh Sultan bin Muhammad Al Qasimi",
+      "Sheikh Humaid bin Rashid"
+     ],
+     "why": "He has ruled Dubai since 2006."
+    },
+    {
+     "level": 2,
+     "q": "What were the coastal sheikhdoms under British protection called before 1971?",
+     "a": "Trucial States",
+     "wrong": [
+      "Pirate Coast Union",
+      "Gulf Emirates",
+      "Oman Protectorate"
+     ],
+     "why": "The name came from truces signed with Britain."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Abu Dhabi first export oil?",
+     "a": "1962",
+     "wrong": [
+      "1950",
+      "1971",
+      "1980"
+     ],
+     "why": "It was shipped from Das Island."
+    },
+    {
+     "level": 2,
+     "q": "Which fort is Dubai's oldest existing building?",
+     "a": "Al Fahidi Fort",
+     "wrong": [
+      "Qasr Al Hosn",
+      "Al Jahili Fort",
+      "Fujairah Fort"
+     ],
+     "why": "It was built around 1787."
+    },
+    {
+     "level": 2,
+     "q": "Which UAE city's oases and ancient tombs are a UNESCO World Heritage Site?",
+     "a": "Al Ain",
+     "wrong": [
+      "Sharjah",
+      "Dubai",
+      "Fujairah"
+     ],
+     "why": "It is called the Garden City."
+    },
+    {
+     "level": 2,
+     "q": "What is marked on 30 November each year?",
+     "a": "Commemoration Day",
+     "wrong": [
+      "Flag Day",
+      "National Day",
+      "Accession Day"
+     ],
+     "why": "It honours Emirati martyrs."
+    },
+    {
+     "level": 3,
+     "q": "Mleiha, with finds over 100,000 years old, is in which emirate?",
+     "a": "Sharjah",
+     "wrong": [
+      "Abu Dhabi",
+      "Ajman",
+      "Fujairah"
+     ],
+     "why": "Stone tools found there are among the oldest in Arabia."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Expo 2020 Dubai actually open?",
+     "a": "2021",
+     "wrong": [
+      "2020",
+      "2022",
+      "2019"
+     ],
+     "why": "It was delayed by the pandemic but kept its name."
+    },
+    {
+     "level": 3,
+     "q": "Who became the first Emirati in space, in 2019?",
+     "a": "Hazza Al Mansouri",
+     "wrong": [
+      "Sultan Al Neyadi",
+      "Nora Al Matrooshi",
+      "Mohammed Al Mulla"
+     ],
+     "why": "Sultan Al Neyadi later did a six-month mission."
+    }
+   ]
+  },
+  {
+   "name": "UAE Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the UAE?",
+     "a": "Abu Dhabi",
+     "wrong": [
+      "Dubai",
+      "Sharjah",
+      "Al Ain"
+     ],
+     "why": "It is on an island."
+    },
+    {
+     "level": 1,
+     "q": "Which Dubai skyscraper is the tallest building in the world?",
+     "a": "Burj Khalifa",
+     "wrong": [
+      "Burj Al Arab",
+      "Emirates Towers",
+      "Cayan Tower"
+     ],
+     "why": "It opened in 2010."
+    },
+    {
+     "level": 1,
+     "q": "Which is the UAE's most populous city?",
+     "a": "Dubai",
+     "wrong": [
+      "Abu Dhabi",
+      "Sharjah",
+      "Al Ain"
+     ],
+     "why": "Most of its people are expatriates."
+    },
+    {
+     "level": 1,
+     "q": "Which artificial island in Dubai is shaped like a palm tree?",
+     "a": "Palm Jumeirah",
+     "wrong": [
+      "The World Islands",
+      "Bluewaters Island",
+      "Saadiyat Island"
+     ],
+     "why": "Atlantis hotel sits at its tip."
+    },
+    {
+     "level": 1,
+     "q": "Which is the largest of the seven emirates?",
+     "a": "Abu Dhabi",
+     "wrong": [
+      "Dubai",
+      "Sharjah",
+      "Ras Al Khaimah"
+     ],
+     "why": "It covers over 80% of the country."
+    },
+    {
+     "level": 1,
+     "q": "Which two countries border the UAE?",
+     "a": "Saudi Arabia and Oman",
+     "wrong": [
+      "Qatar and Oman",
+      "Saudi Arabia and Qatar",
+      "Oman and Yemen"
+     ],
+     "why": "Qatar lies across the water."
+    },
+    {
+     "level": 1,
+     "q": "Which hotel in Dubai is shaped like a sail?",
+     "a": "Burj Al Arab",
+     "wrong": [
+      "Atlantis The Palm",
+      "Jumeirah Beach Hotel",
+      "Address Downtown"
+     ],
+     "why": "It stands on its own island."
+    },
+    {
+     "level": 2,
+     "q": "What is the UAE's highest peak?",
+     "a": "Jebel Jais",
+     "wrong": [
+      "Jebel Hafeet",
+      "Jebel Ali",
+      "Jebel Yibir"
+     ],
+     "why": "It is in Ras Al Khaimah and has a record zipline."
+    },
+    {
+     "level": 2,
+     "q": "Which emirate lies entirely on the Gulf of Oman coast?",
+     "a": "Fujairah",
+     "wrong": [
+      "Sharjah",
+      "Ras Al Khaimah",
+      "Umm Al Quwain"
+     ],
+     "why": "The others face the Persian Gulf."
+    },
+    {
+     "level": 2,
+     "q": "Which waterway divides old Dubai into Deira and Bur Dubai?",
+     "a": "Dubai Creek",
+     "wrong": [
+      "Dubai Canal",
+      "Khor Fakkan",
+      "Al Mamzar Lagoon"
+     ],
+     "why": "Abras ferry people across it."
+    },
+    {
+     "level": 2,
+     "q": "Which is the smallest emirate?",
+     "a": "Ajman",
+     "wrong": [
+      "Umm Al Quwain",
+      "Fujairah",
+      "Sharjah"
+     ],
+     "why": "It covers about 260 km²."
+    },
+    {
+     "level": 2,
+     "q": "On which island is the Louvre Abu Dhabi?",
+     "a": "Saadiyat Island",
+     "wrong": [
+      "Yas Island",
+      "Reem Island",
+      "Lulu Island"
+     ],
+     "why": "Saadiyat means 'island of happiness'."
+    },
+    {
+     "level": 2,
+     "q": "Which oasis on the edge of the Empty Quarter has some of the world's highest dunes?",
+     "a": "Liwa Oasis",
+     "wrong": [
+      "Al Ain Oasis",
+      "Hatta",
+      "Dhaid"
+     ],
+     "why": "Moreeb Dune is about 300 m high."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain near Al Ain has a winding road to its summit?",
+     "a": "Jebel Hafeet",
+     "wrong": [
+      "Jebel Jais",
+      "Jebel Ali",
+      "Jebel Faya"
+     ],
+     "why": "It is the UAE's second-highest peak."
+    },
+    {
+     "level": 3,
+     "q": "Which strait lies at the mouth of the Persian Gulf near the UAE?",
+     "a": "Strait of Hormuz",
+     "wrong": [
+      "Bab-el-Mandeb",
+      "Strait of Tiran",
+      "Gulf of Aden"
+     ],
+     "why": "Much of the world's oil passes through it."
+    },
+    {
+     "level": 3,
+     "q": "Which island is a wildlife reserve with Arabian oryx and cheetahs?",
+     "a": "Sir Bani Yas",
+     "wrong": [
+      "Yas Island",
+      "Delma",
+      "Das Island"
+     ],
+     "why": "Sheikh Zayed made it a reserve in 1971."
+    }
+   ]
+  },
+  {
+   "name": "UAE Sport",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Formula One race is held at Yas Marina?",
+     "a": "Abu Dhabi Grand Prix",
+     "wrong": [
+      "Bahrain Grand Prix",
+      "Saudi Arabian Grand Prix",
+      "Qatar Grand Prix"
+     ],
+     "why": "It is often the last race of the season."
+    },
+    {
+     "level": 1,
+     "q": "Which horse race in Dubai is among the richest in the world?",
+     "a": "Dubai World Cup",
+     "wrong": [
+      "Abu Dhabi Gold Cup",
+      "Emirates Derby",
+      "Sharjah Stakes"
+     ],
+     "why": "The prize fund is about US$12 million."
+    },
+    {
+     "level": 1,
+     "q": "Which traditional animal race now often uses robot jockeys?",
+     "a": "Camel racing",
+     "wrong": [
+      "Horse racing",
+      "Ostrich racing",
+      "Donkey racing"
+     ],
+     "why": "Robots replaced child jockeys in the 2000s."
+    },
+    {
+     "level": 1,
+     "q": "Which bird is used in the traditional sport of falconry?",
+     "a": "Falcon",
+     "wrong": [
+      "Eagle",
+      "Owl",
+      "Hawk-eagle"
+     ],
+     "why": "Abu Dhabi even has a falcon hospital."
+    },
+    {
+     "level": 1,
+     "q": "Which global cricket body has its headquarters in Dubai?",
+     "a": "ICC",
+     "wrong": [
+      "FIFA",
+      "IOC",
+      "World Athletics"
+     ],
+     "why": "It moved there from London in 2005."
+    },
+    {
+     "level": 1,
+     "q": "Which tennis tournament is held in Dubai every February?",
+     "a": "Dubai Duty Free Tennis Championships",
+     "wrong": [
+      "Qatar Open",
+      "Abu Dhabi Open",
+      "Gulf Masters"
+     ],
+     "why": "Roger Federer won it eight times."
+    },
+    {
+     "level": 1,
+     "q": "Which golf tournament ends the DP World Tour season?",
+     "a": "DP World Tour Championship, Dubai",
+     "wrong": [
+      "Abu Dhabi Championship",
+      "Dubai Desert Classic",
+      "Ras Al Khaimah Classic"
+     ],
+     "why": "It is played at Jumeirah Golf Estates."
+    },
+    {
+     "level": 2,
+     "q": "Who won the UAE's first Olympic gold, in shooting in 2004?",
+     "a": "Sheikh Ahmed bin Hasher Al Maktoum",
+     "wrong": [
+      "Sheikh Saeed bin Maktoum",
+      "Sergiu Toma",
+      "Omar Abdulrahman"
+     ],
+     "why": "He won the double trap in Athens."
+    },
+    {
+     "level": 2,
+     "q": "Which Al Ain club won the AFC Champions League in 2024?",
+     "a": "Al Ain FC",
+     "wrong": [
+      "Al Ahli",
+      "Al Wahda",
+      "Sharjah FC"
+     ],
+     "why": "It was their second Asian title."
+    },
+    {
+     "level": 2,
+     "q": "Which cyclist has won the Tour de France for UAE Team Emirates?",
+     "a": "Tadej Pogačar",
+     "wrong": [
+      "Jonas Vingegaard",
+      "Primož Roglič",
+      "Remco Evenepoel"
+     ],
+     "why": "He is from Slovenia."
+    },
+    {
+     "level": 2,
+     "q": "Which racecourse hosts the Dubai World Cup?",
+     "a": "Meydan",
+     "wrong": [
+      "Jebel Ali",
+      "Al Wathba",
+      "Nad Al Sheba"
+     ],
+     "why": "It opened in 2010."
+    },
+    {
+     "level": 2,
+     "q": "Which traditional wooden boats race in UAE heritage regattas?",
+     "a": "Dhows",
+     "wrong": [
+      "Junks",
+      "Feluccas",
+      "Gondolas"
+     ],
+     "why": "They were once used for pearling and trade."
+    },
+    {
+     "level": 2,
+     "q": "Which slender hunting dog is part of Emirati tradition?",
+     "a": "Saluki",
+     "wrong": [
+      "Greyhound",
+      "Afghan hound",
+      "Basenji"
+     ],
+     "why": "Bedouins used them to hunt gazelles."
+    },
+    {
+     "level": 3,
+     "q": "Which martial art is taught in Abu Dhabi schools and hosts world championships there?",
+     "a": "Brazilian jiu-jitsu",
+     "wrong": [
+      "Judo",
+      "Karate",
+      "Taekwondo"
+     ],
+     "why": "Abu Dhabi calls itself a jiu-jitsu capital."
+    },
+    {
+     "level": 3,
+     "q": "In which year did the UAE most recently host the AFC Asian Cup?",
+     "a": "2019",
+     "wrong": [
+      "2007",
+      "2015",
+      "2023"
+     ],
+     "why": "Qatar won the tournament."
+    },
+    {
+     "level": 3,
+     "q": "Which footballer, nicknamed 'Amoory', was 2016 Asian Footballer of the Year?",
+     "a": "Omar Abdulrahman",
+     "wrong": [
+      "Ali Mabkhout",
+      "Ismail Matar",
+      "Ahmed Khalil"
+     ],
+     "why": "He played for Al Ain."
+    }
+   ]
+  },
+  {
+   "name": "UAE Film, TV & Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the traditional long white robe worn by Emirati men called?",
+     "a": "Kandura",
+     "wrong": [
+      "Abaya",
+      "Shemagh",
+      "Bisht"
+     ],
+     "why": "It is also called a dishdasha."
+    },
+    {
+     "level": 1,
+     "q": "What is the black cloak worn by many Emirati women called?",
+     "a": "Abaya",
+     "wrong": [
+      "Kandura",
+      "Sheila",
+      "Thobe"
+     ],
+     "why": "The headscarf is called a sheila."
+    },
+    {
+     "level": 1,
+     "q": "Which traditional Emirati dance uses canes and drums?",
+     "a": "Al Ayyala",
+     "wrong": [
+      "Dabke",
+      "Belly dance",
+      "Khaleegy"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    },
+    {
+     "level": 1,
+     "q": "Which museum opened on Saadiyat Island in 2017?",
+     "a": "Louvre Abu Dhabi",
+     "wrong": [
+      "Guggenheim Abu Dhabi",
+      "Museum of the Future",
+      "Etihad Museum"
+     ],
+     "why": "It has a huge dome that filters light."
+    },
+    {
+     "level": 1,
+     "q": "In which city is the Museum of the Future?",
+     "a": "Dubai",
+     "wrong": [
+      "Abu Dhabi",
+      "Sharjah",
+      "Ajman"
+     ],
+     "why": "Its walls are covered in Arabic calligraphy."
+    },
+    {
+     "level": 1,
+     "q": "What is traditional Arabic coffee called in the UAE?",
+     "a": "Gahwa",
+     "wrong": [
+      "Karak",
+      "Turkish coffee",
+      "Chai"
+     ],
+     "why": "It is spiced with cardamom."
+    },
+    {
+     "level": 1,
+     "q": "Which stringed instrument is central to Gulf music?",
+     "a": "Oud",
+     "wrong": [
+      "Sitar",
+      "Banjo",
+      "Ukulele"
+     ],
+     "why": "It is pear-shaped and has no frets."
+    },
+    {
+     "level": 2,
+     "q": "Which Emirati singer is famous for 'Boshret Kheir'?",
+     "a": "Hussain Al Jassmi",
+     "wrong": [
+      "Mehad Hamad",
+      "Ahlam",
+      "Eida Al Menhali"
+     ],
+     "why": "The song encouraged Egyptians to vote."
+    },
+    {
+     "level": 2,
+     "q": "Which form of Bedouin poetry is popular in the UAE?",
+     "a": "Nabati",
+     "wrong": [
+      "Haiku",
+      "Ghazal",
+      "Sonnet"
+     ],
+     "why": "It is written in local Arabic."
+    },
+    {
+     "level": 2,
+     "q": "Which TV poetry competition from Abu Dhabi is watched across the Arab world?",
+     "a": "Million's Poet",
+     "wrong": [
+      "Arab Idol",
+      "The Voice Arabia",
+      "Arabs Got Talent"
+     ],
+     "why": "Contestants recite Nabati poems."
+    },
+    {
+     "level": 2,
+     "q": "Which emirate was named UNESCO World Book Capital in 2019?",
+     "a": "Sharjah",
+     "wrong": [
+      "Dubai",
+      "Abu Dhabi",
+      "Ajman"
+     ],
+     "why": "It hosts a huge international book fair."
+    },
+    {
+     "level": 2,
+     "q": "Which architect designed the Louvre Abu Dhabi?",
+     "a": "Jean Nouvel",
+     "wrong": [
+      "Zaha Hadid",
+      "Frank Gehry",
+      "Norman Foster"
+     ],
+     "why": "Its dome is 180 m wide."
+    },
+    {
+     "level": 2,
+     "q": "Which shopping festival, started in 1996, is held every winter?",
+     "a": "Dubai Shopping Festival",
+     "wrong": [
+      "Global Village",
+      "Abu Dhabi Festival",
+      "Sharjah Light Festival"
+     ],
+     "why": "It brings raffles and fireworks."
+    },
+    {
+     "level": 3,
+     "q": "Which fort is the oldest stone building in Abu Dhabi city?",
+     "a": "Qasr Al Hosn",
+     "wrong": [
+      "Al Jahili Fort",
+      "Al Fahidi Fort",
+      "Al Bithnah Fort"
+     ],
+     "why": "It was the ruling family's home."
+    },
+    {
+     "level": 3,
+     "q": "Which seasonal cultural park in Dubai has pavilions from many countries?",
+     "a": "Global Village",
+     "wrong": [
+      "Expo City",
+      "City Walk",
+      "Al Seef"
+     ],
+     "why": "It is open from October to April."
+    },
+    {
+     "level": 3,
+     "q": "Which Emirati heritage art is the weaving of Bedouin textiles?",
+     "a": "Al Sadu",
+     "wrong": [
+      "Al Talli",
+      "Khoos",
+      "Batik"
+     ],
+     "why": "It is on UNESCO's heritage list."
+    }
+   ]
+  },
+  {
+   "name": "UAE Food & Traditions",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which fruit is a staple of Emirati hospitality?",
+     "a": "Dates",
+     "wrong": [
+      "Figs",
+      "Olives",
+      "Pomegranates"
+     ],
+     "why": "They are served with gahwa."
+    },
+    {
+     "level": 1,
+     "q": "Which spiced rice dish with meat is a favourite Emirati meal?",
+     "a": "Machboos",
+     "wrong": [
+      "Biryani",
+      "Jollof rice",
+      "Paella"
+     ],
+     "why": "Dried lime gives it a sour note."
+    },
+    {
+     "level": 1,
+     "q": "Which sweet fried dumplings are drizzled with date syrup?",
+     "a": "Luqaimat",
+     "wrong": [
+      "Baklava",
+      "Kunafa",
+      "Basbousa"
+     ],
+     "why": "They are popular during Ramadan."
+    },
+    {
+     "level": 1,
+     "q": "What is the meal that breaks the fast in Ramadan called?",
+     "a": "Iftar",
+     "wrong": [
+      "Suhoor",
+      "Eid",
+      "Majlis"
+     ],
+     "why": "Suhoor is the meal before dawn."
+    },
+    {
+     "level": 1,
+     "q": "What is bakhoor?",
+     "a": "Scented wood chips burned as incense",
+     "wrong": [
+      "A date sweet",
+      "A coffee pot",
+      "A wedding song"
+     ],
+     "why": "It is burned to welcome guests."
+    },
+    {
+     "level": 1,
+     "q": "Which plant dye is used for decorative patterns on hands at celebrations?",
+     "a": "Henna",
+     "wrong": [
+      "Indigo",
+      "Saffron",
+      "Turmeric"
+     ],
+     "why": "It is popular before Eid and weddings."
+    },
+    {
+     "level": 1,
+     "q": "Which animal's milk is sold in the UAE as chocolate and ice cream?",
+     "a": "Camel",
+     "wrong": [
+      "Goat",
+      "Sheep",
+      "Buffalo"
+     ],
+     "why": "Camel milk is lower in fat than cow's milk."
+    },
+    {
+     "level": 2,
+     "q": "Which dish of wheat and meat is cooked slowly for Ramadan and Eid?",
+     "a": "Harees",
+     "wrong": [
+      "Thareed",
+      "Balaleet",
+      "Madrouba"
+     ],
+     "why": "It is slow-cooked for hours until smooth."
+    },
+    {
+     "level": 2,
+     "q": "What is a majlis?",
+     "a": "A sitting room for receiving guests",
+     "wrong": [
+      "A market",
+      "A mosque courtyard",
+      "A desert camp"
+     ],
+     "why": "Majlis culture is on UNESCO's heritage list."
+    },
+    {
+     "level": 2,
+     "q": "Which market in Deira is famous for jewellery?",
+     "a": "Gold Souk",
+     "wrong": [
+      "Spice Souk",
+      "Perfume Souk",
+      "Textile Souk"
+     ],
+     "why": "Shops display tonnes of gold."
+    },
+    {
+     "level": 2,
+     "q": "Which traditional hunting practice is on UNESCO's heritage list with UAE support?",
+     "a": "Falconry",
+     "wrong": [
+      "Camel racing",
+      "Pearl diving",
+      "Saluki racing"
+     ],
+     "why": "The UAE led the 2010 nomination."
+    },
+    {
+     "level": 2,
+     "q": "What are the small handleless cups for gahwa called?",
+     "a": "Finjan",
+     "wrong": [
+      "Dallah",
+      "Ibrik",
+      "Istikana"
+     ],
+     "why": "The pot is called a dallah."
+    },
+    {
+     "level": 2,
+     "q": "Which sweet vermicelli dish is topped with an omelette?",
+     "a": "Balaleet",
+     "wrong": [
+      "Luqaimat",
+      "Harees",
+      "Khanfaroosh"
+     ],
+     "why": "It is a traditional breakfast."
+    },
+    {
+     "level": 3,
+     "q": "Which festival in the Western Region holds a camel beauty contest?",
+     "a": "Al Dhafra Festival",
+     "wrong": [
+      "Liwa Date Festival",
+      "Sheikh Zayed Festival",
+      "Hatta Festival"
+     ],
+     "why": "Prizes run into millions of dirhams."
+    },
+    {
+     "level": 3,
+     "q": "Which braided embroidery, made with silver thread, is an Emirati craft?",
+     "a": "Al Talli",
+     "wrong": [
+      "Al Sadu",
+      "Khoos",
+      "Arish"
+     ],
+     "why": "It decorates the collars and cuffs of clothing."
+    },
+    {
+     "level": 3,
+     "q": "What is 'arish'?",
+     "a": "Palm-frond building material for summer houses",
+     "wrong": [
+      "A fishing net",
+      "A spice mix",
+      "A camel saddle"
+     ],
+     "why": "Arish houses let the breeze through."
+    }
+   ]
+  },
+  {
+   "name": "UAE General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the UAE's currency?",
+     "a": "Dirham",
+     "wrong": [
+      "Riyal",
+      "Dinar",
+      "Rupee"
+     ],
+     "why": "It is pegged to the US dollar."
+    },
+    {
+     "level": 1,
+     "q": "What is the UAE's official language?",
+     "a": "Arabic",
+     "wrong": [
+      "English",
+      "Urdu",
+      "Persian"
+     ],
+     "why": "English is widely used in business."
+    },
+    {
+     "level": 1,
+     "q": "What colours are on the UAE flag?",
+     "a": "Red, green, white and black",
+     "wrong": [
+      "Red, white and blue",
+      "Green, white and gold",
+      "Black, white and red only"
+     ],
+     "why": "They are the Pan-Arab colours."
+    },
+    {
+     "level": 1,
+     "q": "What is the UAE's national bird?",
+     "a": "Falcon",
+     "wrong": [
+      "Eagle",
+      "Flamingo",
+      "Houbara bustard"
+     ],
+     "why": "It appears on the coat of arms."
+    },
+    {
+     "level": 1,
+     "q": "Which airline is based in Abu Dhabi?",
+     "a": "Etihad Airways",
+     "wrong": [
+      "Emirates",
+      "flydubai",
+      "Air Arabia"
+     ],
+     "why": "Emirates is based in Dubai."
+    },
+    {
+     "level": 1,
+     "q": "Which huge white mosque in Abu Dhabi is named after the founding President?",
+     "a": "Sheikh Zayed Grand Mosque",
+     "wrong": [
+      "Jumeirah Mosque",
+      "King Faisal Mosque",
+      "Al Farooq Mosque"
+     ],
+     "why": "It has one of the world's largest carpets."
+    },
+    {
+     "level": 1,
+     "q": "What was the name of the UAE's mission that reached Mars orbit in 2021?",
+     "a": "Hope",
+     "wrong": [
+      "Falcon",
+      "Zayed",
+      "Unity"
+     ],
+     "why": "It was the first Arab mission to Mars."
+    },
+    {
+     "level": 2,
+     "q": "What is the UAE's national animal?",
+     "a": "Arabian oryx",
+     "wrong": [
+      "Camel",
+      "Gazelle",
+      "Arabian leopard"
+     ],
+     "why": "It was saved from extinction in the wild."
+    },
+    {
+     "level": 2,
+     "q": "What is the UAE's national anthem called?",
+     "a": "Ishy Bilady",
+     "wrong": [
+      "Mawtini",
+      "Nashid as-Salam",
+      "Qassaman"
+     ],
+     "why": "It means 'Long live my country'."
+    },
+    {
+     "level": 2,
+     "q": "In 2022 the UAE moved its weekend to which days?",
+     "a": "Saturday and Sunday",
+     "wrong": [
+      "Thursday and Friday",
+      "Friday and Saturday",
+      "Sunday and Monday"
+     ],
+     "why": "Friday became a half working day."
+    },
+    {
+     "level": 2,
+     "q": "Which city has a driverless metro, opened in 2009?",
+     "a": "Dubai",
+     "wrong": [
+      "Abu Dhabi",
+      "Sharjah",
+      "Al Ain"
+     ],
+     "why": "It was the first metro in the Gulf."
+    },
+    {
+     "level": 2,
+     "q": "Which planned city in Abu Dhabi focuses on clean energy?",
+     "a": "Masdar City",
+     "wrong": [
+      "Expo City",
+      "Khalifa City",
+      "Dubai Silicon Oasis"
+     ],
+     "why": "IRENA has its headquarters there."
+    },
+    {
+     "level": 2,
+     "q": "What is the UAE's consultative federal assembly called?",
+     "a": "Federal National Council",
+     "wrong": [
+      "Supreme Council of Rulers",
+      "National Assembly",
+      "Council of Ministers"
+     ],
+     "why": "Half its members are elected."
+    },
+    {
+     "level": 3,
+     "q": "Which nuclear power plant was the first in the Arab world?",
+     "a": "Barakah",
+     "wrong": [
+      "Bushehr",
+      "Dimona",
+      "El Dabaa"
+     ],
+     "why": "Its first unit began operating in 2020."
+    },
+    {
+     "level": 3,
+     "q": "How tall is the Burj Khalifa?",
+     "a": "828 m",
+     "wrong": [
+      "632 m",
+      "1,008 m",
+      "541 m"
+     ],
+     "why": "It has over 160 floors."
+    },
+    {
+     "level": 3,
+     "q": "What is the Expo 2020 site called today?",
+     "a": "Expo City Dubai",
+     "wrong": [
+      "Dubai South Park",
+      "Al Wasl City",
+      "Future District"
+     ],
+     "why": "Its Al Wasl dome still hosts events."
+    }
+   ]
+  }
+ ]
+}
