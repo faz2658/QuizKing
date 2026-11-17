@@ -1,0 +1,346 @@
+{
+ "category": "Paraguay",
+ "country": "PY",
+ "topics": [
+  {
+   "name": "Paraguay: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Paraguay?",
+     "a": "Asunción",
+     "wrong": [
+      "Ciudad del Este",
+      "Encarnación",
+      "Luque"
+     ],
+     "why": "It is one of South America's oldest cities."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Paraguay become independent?",
+     "a": "1811",
+     "wrong": [
+      "1816",
+      "1822",
+      "1830"
+     ],
+     "why": "It was declared on 14–15 May."
+    },
+    {
+     "level": 1,
+     "q": "Which 1864–70 war devastated Paraguay?",
+     "a": "Paraguayan War (War of the Triple Alliance)",
+     "wrong": [
+      "Chaco War",
+      "War of the Pacific",
+      "Cisplatine War"
+     ],
+     "why": "It fought Brazil, Argentina and Uruguay."
+    },
+    {
+     "level": 1,
+     "q": "Which two languages are official in Paraguay?",
+     "a": "Spanish and Guaraní",
+     "wrong": [
+      "Spanish and Portuguese",
+      "Guaraní and Quechua",
+      "Spanish and English"
+     ],
+     "why": "Most Paraguayans speak Guaraní."
+    },
+    {
+     "level": 1,
+     "q": "Which 1932–35 war did Paraguay win against Bolivia?",
+     "a": "Chaco War",
+     "wrong": [
+      "War of the Pacific",
+      "Paraguayan War",
+      "Acre War"
+     ],
+     "why": "It won much of the Chaco region."
+    },
+    {
+     "level": 1,
+     "q": "Which dictator ruled Paraguay from 1954 to 1989?",
+     "a": "Alfredo Stroessner",
+     "wrong": [
+      "José Gaspar Rodríguez de Francia",
+      "Francisco Solano López",
+      "Andrés Rodríguez"
+     ],
+     "why": "His rule was one of the longest in Latin America."
+    },
+    {
+     "level": 1,
+     "q": "Which religious order built missions among the Guaraní?",
+     "a": "Jesuits",
+     "wrong": [
+      "Franciscans",
+      "Dominicans",
+      "Benedictines"
+     ],
+     "why": "Their story is told in the film 'The Mission'."
+    },
+    {
+     "level": 2,
+     "q": "Which leader died in the final battle of the Paraguayan War in 1870?",
+     "a": "Francisco Solano López",
+     "wrong": [
+      "Carlos Antonio López",
+      "José Gaspar Rodríguez de Francia",
+      "Bernardino Caballero"
+     ],
+     "why": "Paraguay lost much of its population."
+    },
+    {
+     "level": 2,
+     "q": "Which dictator after independence was called 'El Supremo'?",
+     "a": "José Gaspar Rodríguez de Francia",
+     "wrong": [
+      "Alfredo Stroessner",
+      "Carlos Antonio López",
+      "Francisco Solano López"
+     ],
+     "why": "He closed the country to the outside world."
+    },
+    {
+     "level": 2,
+     "q": "Which giant dam on the Paraná does Paraguay share with Brazil?",
+     "a": "Itaipu",
+     "wrong": [
+      "Belo Monte",
+      "Tucuruí",
+      "Guri"
+     ],
+     "why": "It produces huge amounts of electricity."
+    },
+    {
+     "level": 2,
+     "q": "Which Jesuit mission ruins are a UNESCO site?",
+     "a": "La Santísima Trinidad de Paraná and Jesús de Tavarangue",
+     "wrong": [
+      "San Ignacio Miní",
+      "Chiquitos missions",
+      "São Miguel das Missões"
+     ],
+     "why": "They date from the 1700s."
+    },
+    {
+     "level": 2,
+     "q": "Which Paraguayan author wrote 'I, the Supreme'?",
+     "a": "Augusto Roa Bastos",
+     "wrong": [
+      "Gabriel Casaccia",
+      "Josefina Plá",
+      "Elvio Romero"
+     ],
+     "why": "He won the Cervantes Prize."
+    },
+    {
+     "level": 3,
+     "q": "Which president was impeached and removed in 2012?",
+     "a": "Fernando Lugo",
+     "wrong": [
+      "Horacio Cartes",
+      "Mario Abdo Benítez",
+      "Nicanor Duarte"
+     ],
+     "why": "He had been a Catholic bishop."
+    },
+    {
+     "level": 3,
+     "q": "Which national hero of the Chaco War led its armies?",
+     "a": "José Félix Estigarribia",
+     "wrong": [
+      "Bernardino Caballero",
+      "Eusebio Ayala",
+      "Rafael Franco"
+     ],
+     "why": "He later became President."
+    },
+    {
+     "level": 3,
+     "q": "Which 1989 coup ended Stroessner's rule?",
+     "a": "Coup by Andrés Rodríguez",
+     "wrong": [
+      "Coup by Lino Oviedo",
+      "Coup by Rafael Franco",
+      "Velvet Revolution"
+     ],
+     "why": "Rodríguez then became President."
+    }
+   ]
+  },
+  {
+   "name": "Paraguay: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Paraguay's currency?",
+     "a": "Guaraní",
+     "wrong": [
+      "Peso",
+      "Real",
+      "Boliviano"
+     ],
+     "why": "It is named after the Indigenous people."
+    },
+    {
+     "level": 1,
+     "q": "Which cold herbal drink is Paraguay's national drink?",
+     "a": "Tereré",
+     "wrong": [
+      "Mate cocido",
+      "Coca tea",
+      "Chicha"
+     ],
+     "why": "It is made with yerba mate and iced water."
+    },
+    {
+     "level": 1,
+     "q": "Which river flows past Asunción?",
+     "a": "Paraguay River",
+     "wrong": [
+      "Amazon",
+      "Orinoco",
+      "Uruguay River"
+     ],
+     "why": "It gives the country its name."
+    },
+    {
+     "level": 1,
+     "q": "Which landlocked countries are in South America?",
+     "a": "Paraguay and Bolivia",
+     "wrong": [
+      "Paraguay and Uruguay",
+      "Bolivia and Ecuador",
+      "Paraguay and Chile"
+     ],
+     "why": "Only these two have no coast."
+    },
+    {
+     "level": 1,
+     "q": "Which cheesy cornbread is Paraguay's national dish?",
+     "a": "Sopa paraguaya",
+     "wrong": [
+      "Arepa",
+      "Pupusa",
+      "Tamale"
+     ],
+     "why": "It is called a soup but is solid."
+    },
+    {
+     "level": 1,
+     "q": "Which delicate lace is a Paraguayan craft?",
+     "a": "Ñandutí",
+     "wrong": [
+      "Bobbin lace",
+      "Battenberg lace",
+      "Crochet"
+     ],
+     "why": "Its name means 'spider web' in Guaraní."
+    },
+    {
+     "level": 1,
+     "q": "Which border city is a big shopping hub?",
+     "a": "Ciudad del Este",
+     "wrong": [
+      "Encarnación",
+      "Concepción",
+      "Pilar"
+     ],
+     "why": "It borders Brazil and Argentina."
+    },
+    {
+     "level": 2,
+     "q": "Which dry plain covers western Paraguay?",
+     "a": "Gran Chaco",
+     "wrong": [
+      "Pampas",
+      "Llanos",
+      "Atacama"
+     ],
+     "why": "It is hot and sparsely populated."
+    },
+    {
+     "level": 2,
+     "q": "Which cheese bread rings are popular snacks?",
+     "a": "Chipa",
+     "wrong": [
+      "Pão de queijo",
+      "Arepa",
+      "Empanada"
+     ],
+     "why": "They are made with cassava flour."
+    },
+    {
+     "level": 2,
+     "q": "Which harp is Paraguay's national instrument?",
+     "a": "Paraguayan harp",
+     "wrong": [
+      "Charango",
+      "Bandoneón",
+      "Cuatro"
+     ],
+     "why": "It has 36 or more strings."
+    },
+    {
+     "level": 2,
+     "q": "Which Paraguayan football goalkeeper also scored many goals?",
+     "a": "José Luis Chilavert",
+     "wrong": [
+      "Justo Villar",
+      "Roque Santa Cruz",
+      "Carlos Gamarra"
+     ],
+     "why": "He took free kicks and penalties."
+    },
+    {
+     "level": 2,
+     "q": "Which German-founded farming communities are in the Chaco?",
+     "a": "Mennonite colonies",
+     "wrong": [
+      "Amish villages",
+      "Jesuit missions",
+      "Gaucho ranches"
+     ],
+     "why": "Filadelfia is a main town."
+    },
+    {
+     "level": 3,
+     "q": "Which dam on the Paraná does Paraguay share with Argentina?",
+     "a": "Yacyretá",
+     "wrong": [
+      "Itaipu",
+      "Salto Grande",
+      "Garabí"
+     ],
+     "why": "It flooded a huge area."
+    },
+    {
+     "level": 3,
+     "q": "Which festival of San Juan features walking on hot coals?",
+     "a": "Festival of San Juan",
+     "wrong": [
+      "Carnival of Encarnación",
+      "Feast of Caacupé",
+      "Día de la Tradición"
+     ],
+     "why": "It is held each June."
+    },
+    {
+     "level": 3,
+     "q": "Which pilgrimage town's basilica draws crowds on 8 December?",
+     "a": "Caacupé",
+     "wrong": [
+      "Itauguá",
+      "Luque",
+      "Areguá"
+     ],
+     "why": "It honours the Virgin of Caacupé."
+    }
+   ]
+  }
+ ]
+}
