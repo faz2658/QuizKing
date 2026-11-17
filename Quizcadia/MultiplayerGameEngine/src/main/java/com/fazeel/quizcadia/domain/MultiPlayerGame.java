@@ -31,7 +31,13 @@ public record MultiPlayerGame(@Id int gameId, String gameName, int categoryId, i
 	}
 
 	@JsonIgnoreProperties(ignoreUnknown = true)
+	/** @param country ISO code of a country-specific question (e.g. "IN"); blank for general questions */
 	public record Question(int questionId, int questionLevel, String questionStem, String option1, String option2,
-			String option3, String option4, String correctAnswer) {
+			String option3, String option4, String correctAnswer, String country) {
+
+		public Question(int questionId, int questionLevel, String questionStem, String option1, String option2,
+				String option3, String option4, String correctAnswer) {
+			this(questionId, questionLevel, questionStem, option1, option2, option3, option4, correctAnswer, null);
+		}
 	}
 }
