@@ -102,6 +102,8 @@ export class Play implements OnInit {
   readonly games = input<string>('');
   readonly difficulty = input<string>('MIXED');
   readonly count = input<string>('10');
+  /** '1' when started from the International page: questions from every country. */
+  readonly intl = input<string>('');
   private readonly api = inject(QuizApi);
   private readonly auth = inject(AuthService);
   private readonly router = inject(Router);
@@ -147,6 +149,7 @@ export class Play implements OnInit {
       : this.mode() === 'challenge' ? () => this.api.acceptChallenge(this.challengeId())
       : this.mode() === 'custom'
         ? () => this.api.startCustom(this.games().split(',').map(Number).filter((n) => n > 0), this.difficulty() as CustomDifficulty, Number(this.count()))
+      : this.intl() === '1' ? () => this.api.start(Number(this.gameId()), this.auth.user()!.userId, true)
       : undefined;
     this.runner = new QuizRunner(singlePlayerAdapter(this.api, Number(this.gameId()), this.auth.user()!.userId, start), this.destroyRef);
     this.runner.start();

@@ -51,7 +51,7 @@ public class GameSessionController {
 	public SessionView start(@Valid @RequestBody StartRequest request) {
 		Callers.requireSelf(request.userId());
 		return SessionView.of(service.start(request.gameId(), request.userId(), Callers.currentUserName(),
-				request.country()),
+				request.questionsFrom()),
 				clock.instant());
 	}
 

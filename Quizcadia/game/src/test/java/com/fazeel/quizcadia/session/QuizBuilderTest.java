@@ -266,4 +266,15 @@ class QuizBuilderTest {
 
 		assertThat(builder.build(kenyaOnly, Map.of(), "IN")).hasSize(3);
 	}
+
+	@Test
+	void anInternationalQuizTakesQuestionsFromEveryCountry() {
+		Map<String, Long> all = new HashMap<>();
+		for (long seed = 0; seed < 20; seed++) {
+			origin(new QuizBuilder(new Random(seed)).build(mixedGame(new GameQuestionLevel(0, 4, 4, 4)), Map.of(),
+					QuizBuilder.EVERYWHERE)).forEach((k, v) -> all.merge(k, v, Long::sum));
+		}
+
+		assertThat(all).containsKeys("IN", "general", "KE");
+	}
 }

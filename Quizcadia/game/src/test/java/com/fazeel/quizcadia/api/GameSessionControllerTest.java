@@ -75,6 +75,15 @@ class GameSessionControllerTest {
 	}
 
 	@Test
+	void anInternationalQuizAsksForQuestionsFromEveryCountry() throws Exception {
+		when(service.start(eq(5), eq(42), any(), eq(com.fazeel.quizcadia.session.QuizBuilder.EVERYWHERE))).thenReturn(session());
+
+		mvc.perform(post("/api/v1/sessions").with(player(42)).contentType(MediaType.APPLICATION_JSON)
+				.content("{\"gameId\":5,\"userId\":42,\"country\":\"IN\",\"international\":true}"))
+				.andExpect(status().isCreated());
+	}
+
+	@Test
 	void aCountryThatIsNotATwoLetterCodeIsRejected() throws Exception {
 		mvc.perform(post("/api/v1/sessions").with(player(42)).contentType(MediaType.APPLICATION_JSON)
 				.content("{\"gameId\":5,\"userId\":42,\"country\":\"India\"}"))

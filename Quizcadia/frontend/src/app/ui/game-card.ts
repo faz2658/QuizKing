@@ -34,7 +34,9 @@ const REASONS: Record<string, string> = {
         <h3>{{ game().gameName }}</h3>
         @if (game().gameDescription) { <p class="muted">{{ game().gameDescription }}</p> }
         <div class="actions">
-          @if (game().mode === 'MULTI') {
+          @if (international()) {
+            <a class="btn btn-primary" [routerLink]="['/play', game().gameId]" [queryParams]="{ intl: 1 }">Play</a>
+          } @else if (game().mode === 'MULTI') {
             <a class="btn btn-primary" [routerLink]="['/multiplayer', game().gameId]">Find opponents</a>
           } @else {
             <a class="btn btn-primary" [routerLink]="['/play', game().gameId]">Play</a>
@@ -63,6 +65,8 @@ const REASONS: Record<string, string> = {
 })
 export class GameCardView {
   readonly game = input.required<GameCard>();
+  /** On the International page: one Play button that asks questions from every country. */
+  readonly international = input(false);
 
   protected readonly art = computed(() => {
     const [a, b] = PALETTES[Math.abs(this.game().gameId) % PALETTES.length];

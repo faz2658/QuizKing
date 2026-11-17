@@ -47,6 +47,9 @@ public class QuizBuilder {
 	/** Share of a game's questions that come from the player's own country when it has enough. */
 	static final double HOME_SHARE = 0.75;
 
+	/** Pass as the country for an International quiz: questions from every country and general ones alike. */
+	public static final String EVERYWHERE = "*";
+
 	/**
 	 * Like {@link #build(Game, Map)}, for a player from {@code country}. Questions tagged with that country make
 	 * up about {@value #HOME_SHARE} of the quiz and general (untagged) questions the rest; other countries'
@@ -56,6 +59,9 @@ public class QuizBuilder {
 	 * general questions uses all it has.
 	 */
 	public List<SessionQuestion> build(Game game, Map<Integer, Instant> seen, String country) {
+		if (EVERYWHERE.equals(country)) {
+			return build(game, seen);
+		}
 		String home = country == null || country.isBlank() ? null : country.trim().toUpperCase(java.util.Locale.ROOT);
 		List<Questions> playable = Objects.requireNonNullElse(game.getQuestions(), List.<Questions>of()).stream()
 				.filter(QuizBuilder::isPlayable).toList();

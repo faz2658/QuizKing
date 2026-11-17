@@ -21,7 +21,12 @@ public final class Views {
 
 	/** @param country the player's country (ISO code), optional; it decides which questions the game favours */
 	public record StartRequest(@Positive int gameId, @Positive int userId,
-			@jakarta.validation.constraints.Pattern(regexp = "[A-Za-z]{2}") String country) {
+			@jakarta.validation.constraints.Pattern(regexp = "[A-Za-z]{2}") String country, Boolean international) {
+
+		/** The country the quiz favours; for an International quiz, every country alike. */
+		public String questionsFrom() {
+			return Boolean.TRUE.equals(international) ? com.fazeel.quizcadia.session.QuizBuilder.EVERYWHERE : country;
+		}
 	}
 
 	public record AnswerRequest(@Positive int questionId, @NotNull String answer) {

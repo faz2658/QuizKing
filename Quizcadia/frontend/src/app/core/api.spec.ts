@@ -72,6 +72,10 @@ describe('API clients', () => {
       expect.objectContaining({ gameIds: [1, 2], country: 'IN' }),
     );
 
+    // an International quiz asks for every country instead of the player's own
+    TestBed.inject(QuizApi).start(5, 9, true).subscribe();
+    expect(http.expectOne('/api/v1/sessions').request.body).toEqual({ gameId: 5, userId: 9, international: true });
+
     world.setCountry(null);
     http.match(others);
     TestBed.inject(QuizApi).start(5, 9).subscribe();

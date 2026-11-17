@@ -217,8 +217,10 @@ export class QuizApi {
     return c ? { country: c } : {};
   }
 
-  start(gameId: number, userId: number): Observable<SessionView> {
-    return this.http.post<SessionView>('/api/v1/sessions', { gameId, userId, ...this.country() }).pipe(retryWhileLoading());
+  /** @param international an International quiz: questions from every country alike, not mostly the player's own */
+  start(gameId: number, userId: number, international = false): Observable<SessionView> {
+    const from = international ? { international: true } : this.country();
+    return this.http.post<SessionView>('/api/v1/sessions', { gameId, userId, ...from }).pipe(retryWhileLoading());
   }
 
   session(id: string): Observable<SessionView> {
