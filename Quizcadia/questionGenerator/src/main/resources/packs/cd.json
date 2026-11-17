@@ -1,0 +1,346 @@
+{
+ "category": "DR Congo",
+ "country": "CD",
+ "topics": [
+  {
+   "name": "DR Congo: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of the Democratic Republic of the Congo?",
+     "a": "Kinshasa",
+     "wrong": [
+      "Lubumbashi",
+      "Brazzaville",
+      "Goma"
+     ],
+     "why": "It is Africa's largest French-speaking city."
+    },
+    {
+     "level": 1,
+     "q": "Which European king owned the Congo as his personal property?",
+     "a": "Leopold II of Belgium",
+     "wrong": [
+      "Albert I of Belgium",
+      "Wilhelm II",
+      "Victor Emmanuel III"
+     ],
+     "why": "His rule caused millions of deaths."
+    },
+    {
+     "level": 1,
+     "q": "From which country did the DR Congo gain independence in 1960?",
+     "a": "Belgium",
+     "wrong": [
+      "France",
+      "Portugal",
+      "United Kingdom"
+     ],
+     "why": "It was called the Belgian Congo."
+    },
+    {
+     "level": 1,
+     "q": "Who was the DR Congo's first Prime Minister?",
+     "a": "Patrice Lumumba",
+     "wrong": [
+      "Joseph Kasa-Vubu",
+      "Mobutu Sese Seko",
+      "Moïse Tshombe"
+     ],
+     "why": "He was killed in 1961."
+    },
+    {
+     "level": 1,
+     "q": "What did Mobutu rename the country in 1971?",
+     "a": "Zaire",
+     "wrong": [
+      "Katanga",
+      "Kongo",
+      "Ubangi"
+     ],
+     "why": "It became the DR Congo again in 1997."
+    },
+    {
+     "level": 1,
+     "q": "What is the currency of the DR Congo?",
+     "a": "Congolese franc",
+     "wrong": [
+      "CFA franc",
+      "Zaire",
+      "Kwacha"
+     ],
+     "why": "Its code is CDF."
+    },
+    {
+     "level": 1,
+     "q": "Which metal used in phone batteries comes mostly from the DR Congo?",
+     "a": "Cobalt",
+     "wrong": [
+      "Lithium",
+      "Nickel",
+      "Tin"
+     ],
+     "why": "It produces about 70% of the world's supply."
+    },
+    {
+     "level": 2,
+     "q": "Who ruled the country as Mobutu Sese Seko from 1965 to 1997?",
+     "a": "Mobutu",
+     "wrong": [
+      "Laurent-Désiré Kabila",
+      "Joseph Kabila",
+      "Moïse Tshombe"
+     ],
+     "why": "He was overthrown by Laurent Kabila."
+    },
+    {
+     "level": 2,
+     "q": "Which 1974 boxing match was held in Kinshasa?",
+     "a": "The Rumble in the Jungle",
+     "wrong": [
+      "The Thrilla in Manila",
+      "The Fight of the Century",
+      "The Brawl in Montreal"
+     ],
+     "why": "Muhammad Ali beat George Foreman."
+    },
+    {
+     "level": 2,
+     "q": "Which province tried to break away in 1960?",
+     "a": "Katanga",
+     "wrong": [
+      "Kivu",
+      "Bandundu",
+      "Équateur"
+     ],
+     "why": "Moïse Tshombe led it."
+    },
+    {
+     "level": 2,
+     "q": "Who has been President of the DR Congo since 2019?",
+     "a": "Félix Tshisekedi",
+     "wrong": [
+      "Joseph Kabila",
+      "Martin Fayulu",
+      "Jean-Pierre Bemba"
+     ],
+     "why": "He is the son of Étienne Tshisekedi."
+    },
+    {
+     "level": 2,
+     "q": "Which Congolese doctor won the 2018 Nobel Peace Prize?",
+     "a": "Denis Mukwege",
+     "wrong": [
+      "Patrice Lumumba",
+      "Dikembe Mutombo",
+      "Étienne Tshisekedi"
+     ],
+     "why": "He treats survivors of sexual violence."
+    },
+    {
+     "level": 3,
+     "q": "Which 1998–2003 war is called 'Africa's World War'?",
+     "a": "Second Congo War",
+     "wrong": [
+      "First Congo War",
+      "Kivu War",
+      "Angolan Civil War"
+     ],
+     "why": "Nine countries took part."
+    },
+    {
+     "level": 3,
+     "q": "Which rebel group seized Goma in 2025?",
+     "a": "M23",
+     "wrong": [
+      "Séléka",
+      "ADF",
+      "Mai-Mai"
+     ],
+     "why": "It is backed by Rwanda, the UN says."
+    },
+    {
+     "level": 3,
+     "q": "Which explorer's search for Livingstone crossed the Congo?",
+     "a": "Henry Morton Stanley",
+     "wrong": [
+      "Richard Burton",
+      "Mungo Park",
+      "John Speke"
+     ],
+     "why": "He later worked for Leopold II."
+    }
+   ]
+  },
+  {
+   "name": "DR Congo: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which river is the deepest in the world?",
+     "a": "Congo River",
+     "wrong": [
+      "Amazon",
+      "Nile",
+      "Mississippi"
+     ],
+     "why": "Parts are over 220 m deep."
+    },
+    {
+     "level": 1,
+     "q": "Which national park is Africa's oldest?",
+     "a": "Virunga National Park",
+     "wrong": [
+      "Kruger",
+      "Serengeti",
+      "Salonga"
+     ],
+     "why": "It was founded in 1925."
+    },
+    {
+     "level": 1,
+     "q": "Which great ape lives only in the DR Congo?",
+     "a": "Bonobo",
+     "wrong": [
+      "Mountain gorilla",
+      "Orangutan",
+      "Chimpanzee"
+     ],
+     "why": "It is very close to humans."
+    },
+    {
+     "level": 1,
+     "q": "Which dance music from Kinshasa spread across Africa?",
+     "a": "Congolese rumba (soukous)",
+     "wrong": [
+      "Highlife",
+      "Afrobeat",
+      "Mbalax"
+     ],
+     "why": "It is on UNESCO's list."
+    },
+    {
+     "level": 1,
+     "q": "Which forest animal is the DR Congo's national animal?",
+     "a": "Okapi",
+     "wrong": [
+      "Zebra",
+      "Giraffe",
+      "Bongo"
+     ],
+     "why": "It looks like a zebra and giraffe mixed."
+    },
+    {
+     "level": 1,
+     "q": "Which city across the river from Kinshasa is another capital?",
+     "a": "Brazzaville",
+     "wrong": [
+      "Luanda",
+      "Bangui",
+      "Kigali"
+     ],
+     "why": "They are the closest capitals in the world, apart from Rome and Vatican City."
+    },
+    {
+     "level": 1,
+     "q": "Which language is official in the DR Congo?",
+     "a": "French",
+     "wrong": [
+      "English",
+      "Portuguese",
+      "Arabic"
+     ],
+     "why": "Lingala, Swahili, Kikongo and Tshiluba are national languages."
+    },
+    {
+     "level": 2,
+     "q": "Which active volcano near Goma has a lava lake?",
+     "a": "Mount Nyiragongo",
+     "wrong": [
+      "Mount Nyamuragira",
+      "Kilimanjaro",
+      "Mount Cameroon"
+     ],
+     "why": "It erupted in 2021."
+    },
+    {
+     "level": 2,
+     "q": "Which Congolese musician was called 'the Grand Maître'?",
+     "a": "Franco Luambo",
+     "wrong": [
+      "Papa Wemba",
+      "Koffi Olomidé",
+      "Tabu Ley Rochereau"
+     ],
+     "why": "He led the band OK Jazz."
+    },
+    {
+     "level": 2,
+     "q": "Which dandies in Kinshasa wear designer clothes?",
+     "a": "La Sape",
+     "wrong": [
+      "Les Élégants",
+      "Fashionistas",
+      "Les Dandies"
+     ],
+     "why": "Members are called sapeurs."
+    },
+    {
+     "level": 2,
+     "q": "Which NBA star from Kinshasa was famous for wagging his finger?",
+     "a": "Dikembe Mutombo",
+     "wrong": [
+      "Serge Ibaka",
+      "Bismack Biyombo",
+      "Christian Eyenga"
+     ],
+     "why": "He was a top shot-blocker."
+    },
+    {
+     "level": 2,
+     "q": "Which Congolese football club won the African Champions League five times?",
+     "a": "TP Mazembe",
+     "wrong": [
+      "AS Vita Club",
+      "DC Motema Pembe",
+      "Daring Club"
+     ],
+     "why": "It is from Lubumbashi."
+    },
+    {
+     "level": 3,
+     "q": "Which rainforest park is Africa's largest tropical forest reserve?",
+     "a": "Salonga National Park",
+     "wrong": [
+      "Virunga",
+      "Kahuzi-Biega",
+      "Garamba"
+     ],
+     "why": "It protects bonobos."
+    },
+    {
+     "level": 3,
+     "q": "Which falls on the Congo River near Kisangani are the world's largest by flow?",
+     "a": "Boyoma Falls",
+     "wrong": [
+      "Victoria Falls",
+      "Inga Falls",
+      "Livingstone Falls"
+     ],
+     "why": "They were called Stanley Falls."
+    },
+    {
+     "level": 3,
+     "q": "Which singer was called the 'King of Rumba Rock'?",
+     "a": "Papa Wemba",
+     "wrong": [
+      "Franco",
+      "Koffi Olomidé",
+      "Werrason"
+     ],
+     "why": "He promoted La Sape."
+    }
+   ]
+  }
+ ]
+}
