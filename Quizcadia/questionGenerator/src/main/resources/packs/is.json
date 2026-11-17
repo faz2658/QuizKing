@@ -1,0 +1,346 @@
+{
+ "category": "Iceland",
+ "country": "IS",
+ "topics": [
+  {
+   "name": "Iceland: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Iceland?",
+     "a": "Reykjavík",
+     "wrong": [
+      "Akureyri",
+      "Keflavík",
+      "Selfoss"
+     ],
+     "why": "It is the world's northernmost capital of a sovereign state."
+    },
+    {
+     "level": 1,
+     "q": "Which seafaring people settled Iceland around 874?",
+     "a": "Norse Vikings",
+     "wrong": [
+      "Celts",
+      "Romans",
+      "Inuit"
+     ],
+     "why": "Many came from Norway."
+    },
+    {
+     "level": 1,
+     "q": "Which parliament, founded in 930, is one of the oldest in the world?",
+     "a": "Althing",
+     "wrong": [
+      "Storting",
+      "Folketing",
+      "Riksdag"
+     ],
+     "why": "It first met at Þingvellir."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Iceland become a fully independent republic?",
+     "a": "1944",
+     "wrong": [
+      "1918",
+      "1874",
+      "1951"
+     ],
+     "why": "It left the union with Denmark."
+    },
+    {
+     "level": 1,
+     "q": "Which Icelandic explorer reached North America around 1000?",
+     "a": "Leif Erikson",
+     "wrong": [
+      "Erik the Red",
+      "Ingólfur Arnarson",
+      "Snorri Sturluson"
+     ],
+     "why": "He was the son of Erik the Red."
+    },
+    {
+     "level": 1,
+     "q": "Who became the world's first democratically elected woman President, in 1980?",
+     "a": "Vigdís Finnbogadóttir",
+     "wrong": [
+      "Halla Tómasdóttir",
+      "Jóhanna Sigurðardóttir",
+      "Katrín Jakobsdóttir"
+     ],
+     "why": "She served for 16 years."
+    },
+    {
+     "level": 1,
+     "q": "Which 2010 volcanic eruption grounded flights across Europe?",
+     "a": "Eyjafjallajökull",
+     "wrong": [
+      "Hekla",
+      "Katla",
+      "Grímsvötn"
+     ],
+     "why": "About 100,000 flights were cancelled."
+    },
+    {
+     "level": 2,
+     "q": "Which disputes with Britain over fishing rights happened from the 1950s to 1970s?",
+     "a": "The Cod Wars",
+     "wrong": [
+      "The Herring Wars",
+      "The Whale Wars",
+      "The Fishing Feud"
+     ],
+     "why": "Iceland won them."
+    },
+    {
+     "level": 2,
+     "q": "Which writer recorded Norse myths in the 'Prose Edda'?",
+     "a": "Snorri Sturluson",
+     "wrong": [
+      "Halldór Laxness",
+      "Egill Skallagrímsson",
+      "Ari Thorgilsson"
+     ],
+     "why": "He lived in the 1200s."
+    },
+    {
+     "level": 2,
+     "q": "Which Icelandic author won the 1955 Nobel Prize in Literature?",
+     "a": "Halldór Laxness",
+     "wrong": [
+      "Snorri Sturluson",
+      "Gunnar Gunnarsson",
+      "Arnaldur Indriðason"
+     ],
+     "why": "He wrote 'Independent People'."
+    },
+    {
+     "level": 2,
+     "q": "Which 2008 event saw Iceland's three big banks collapse?",
+     "a": "Icelandic financial crisis",
+     "wrong": [
+      "Cod Wars",
+      "Black Monday",
+      "Great Depression"
+     ],
+     "why": "The 'pots and pans' protests followed."
+    },
+    {
+     "level": 2,
+     "q": "Who was the world's first openly gay head of government, in 2009?",
+     "a": "Jóhanna Sigurðardóttir",
+     "wrong": [
+      "Vigdís Finnbogadóttir",
+      "Katrín Jakobsdóttir",
+      "Halla Tómasdóttir"
+     ],
+     "why": "She was Iceland's Prime Minister."
+    },
+    {
+     "level": 3,
+     "q": "Who is said to have been Iceland's first permanent settler?",
+     "a": "Ingólfur Arnarson",
+     "wrong": [
+      "Erik the Red",
+      "Leif Erikson",
+      "Flóki Vilgerðarson"
+     ],
+     "why": "He settled in Reykjavík around 874."
+    },
+    {
+     "level": 3,
+     "q": "Which 1783 eruption caused a deadly haze across Europe?",
+     "a": "Laki",
+     "wrong": [
+      "Hekla",
+      "Katla",
+      "Askja"
+     ],
+     "why": "It killed many livestock and people."
+    },
+    {
+     "level": 3,
+     "q": "Which treaty of 1262 put Iceland under the Norwegian king?",
+     "a": "Old Covenant",
+     "wrong": [
+      "Kalmar Union",
+      "Treaty of Roskilde",
+      "Treaty of Kiel"
+     ],
+     "why": "Iceland later passed to Denmark."
+    }
+   ]
+  },
+  {
+   "name": "Iceland: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Iceland's currency?",
+     "a": "Icelandic króna",
+     "wrong": [
+      "Euro",
+      "Danish krone",
+      "Norwegian krone"
+     ],
+     "why": "Iceland is not in the EU."
+    },
+    {
+     "level": 1,
+     "q": "Which geothermal spa near Reykjavík is famous worldwide?",
+     "a": "Blue Lagoon",
+     "wrong": [
+      "Sky Lagoon",
+      "Mývatn Nature Baths",
+      "Secret Lagoon"
+     ],
+     "why": "Its milky-blue water is rich in silica."
+    },
+    {
+     "level": 1,
+     "q": "Which hot spring gave its name to all geysers?",
+     "a": "Geysir",
+     "wrong": [
+      "Strokkur",
+      "Old Faithful",
+      "Grýtufoss"
+     ],
+     "why": "It is in the Haukadalur valley."
+    },
+    {
+     "level": 1,
+     "q": "Which tourist route covers Þingvellir, Geysir and Gullfoss?",
+     "a": "Golden Circle",
+     "wrong": [
+      "Ring Road",
+      "Diamond Circle",
+      "Silver Route"
+     ],
+     "why": "It is about 300 km long."
+    },
+    {
+     "level": 1,
+     "q": "Which singer from Iceland is famous for 'Army of Me'?",
+     "a": "Björk",
+     "wrong": [
+      "Emilíana Torrini",
+      "Laufey",
+      "Of Monsters and Men"
+     ],
+     "why": "She first sang with the Sugarcubes."
+    },
+    {
+     "level": 1,
+     "q": "What do Icelanders use instead of family surnames?",
+     "a": "Patronymics (father's or mother's name)",
+     "wrong": [
+      "Clan names",
+      "Place names",
+      "Numbers"
+     ],
+     "why": "Sigurðardóttir means 'Sigurður's daughter'."
+    },
+    {
+     "level": 1,
+     "q": "Which national park is a rift between two tectonic plates?",
+     "a": "Þingvellir",
+     "wrong": [
+      "Vatnajökull",
+      "Snæfellsjökull",
+      "Skaftafell"
+     ],
+     "why": "You can dive in the Silfra fissure there."
+    },
+    {
+     "level": 2,
+     "q": "Which glacier is Europe's largest by volume?",
+     "a": "Vatnajökull",
+     "wrong": [
+      "Langjökull",
+      "Mýrdalsjökull",
+      "Snæfellsjökull"
+     ],
+     "why": "It covers about 8% of Iceland."
+    },
+    {
+     "level": 2,
+     "q": "Which lagoon of floating icebergs is in the southeast?",
+     "a": "Jökulsárlón",
+     "wrong": [
+      "Blue Lagoon",
+      "Mývatn",
+      "Kerið"
+     ],
+     "why": "Seals swim among the icebergs."
+    },
+    {
+     "level": 2,
+     "q": "What is the Icelandic skyr?",
+     "a": "A thick dairy product like yoghurt",
+     "wrong": [
+      "A kind of fish",
+      "A wool jumper",
+      "A volcanic stone"
+     ],
+     "why": "It has been made for over a thousand years."
+    },
+    {
+     "level": 2,
+     "q": "Which waterfall do visitors walk behind?",
+     "a": "Seljalandsfoss",
+     "wrong": [
+      "Gullfoss",
+      "Dettifoss",
+      "Skógafoss"
+     ],
+     "why": "It is on the south coast."
+    },
+    {
+     "level": 2,
+     "q": "Which Reykjavík church looks like basalt columns?",
+     "a": "Hallgrímskirkja",
+     "wrong": [
+      "Harpa",
+      "Perlan",
+      "Reykjavík Cathedral"
+     ],
+     "why": "It is the city's tallest church."
+    },
+    {
+     "level": 3,
+     "q": "Which waterfall is Europe's most powerful?",
+     "a": "Dettifoss",
+     "wrong": [
+      "Gullfoss",
+      "Seljalandsfoss",
+      "Skógafoss"
+     ],
+     "why": "It is in the northeast."
+    },
+    {
+     "level": 3,
+     "q": "Which tradition sees 13 'Yule Lads' visit children before Christmas?",
+     "a": "Jólasveinar",
+     "wrong": [
+      "Krampus",
+      "Tomte",
+      "Joulupukki"
+     ],
+     "why": "They leave gifts in shoes."
+    },
+    {
+     "level": 3,
+     "q": "Which 2016 football tournament saw Iceland beat England?",
+     "a": "Euro 2016",
+     "wrong": [
+      "World Cup 2018",
+      "Euro 2012",
+      "Nations League"
+     ],
+     "why": "Fans became famous for the 'thunderclap'."
+    }
+   ]
+  }
+ ]
+}

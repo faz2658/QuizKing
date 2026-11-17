@@ -1,0 +1,346 @@
+{
+ "category": "Belarus",
+ "country": "BY",
+ "topics": [
+  {
+   "name": "Belarus: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Belarus?",
+     "a": "Minsk",
+     "wrong": [
+      "Brest",
+      "Grodno",
+      "Vitebsk"
+     ],
+     "why": "It was almost fully destroyed in the Second World War."
+    },
+    {
+     "level": 1,
+     "q": "In which year did Belarus become independent?",
+     "a": "1991",
+     "wrong": [
+      "1989",
+      "1994",
+      "1996"
+     ],
+     "why": "It declared independence on 25 August."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of Belarus since 1994?",
+     "a": "Alexander Lukashenko",
+     "wrong": [
+      "Stanislav Shushkevich",
+      "Sviatlana Tsikhanouskaya",
+      "Vyacheslav Kebich"
+     ],
+     "why": "He is called 'Europe's last dictator'."
+    },
+    {
+     "level": 1,
+     "q": "Which fortress resisted German attack for weeks in 1941?",
+     "a": "Brest Fortress",
+     "wrong": [
+      "Minsk Citadel",
+      "Grodno Castle",
+      "Mir Castle"
+     ],
+     "why": "It is a war memorial."
+    },
+    {
+     "level": 1,
+     "q": "Which 1986 nuclear disaster affected much of Belarus?",
+     "a": "Chernobyl",
+     "wrong": [
+      "Kyshtym",
+      "Fukushima",
+      "Three Mile Island"
+     ],
+     "why": "About 70% of the fallout landed on Belarus."
+    },
+    {
+     "level": 1,
+     "q": "Which agreement signed in Belarus in 1991 ended the Soviet Union?",
+     "a": "Belovezha Accords",
+     "wrong": [
+      "Minsk Agreement",
+      "Brest Treaty",
+      "Alma-Ata Protocol"
+     ],
+     "why": "It was signed in a forest lodge."
+    },
+    {
+     "level": 1,
+     "q": "Which state did Belarus belong to with Lithuania in the Middle Ages?",
+     "a": "Grand Duchy of Lithuania",
+     "wrong": [
+      "Kievan Rus'",
+      "Golden Horde",
+      "Habsburg Empire"
+     ],
+     "why": "Old Belarusian was its official language."
+    },
+    {
+     "level": 2,
+     "q": "Which opposition leader ran for President in 2020?",
+     "a": "Sviatlana Tsikhanouskaya",
+     "wrong": [
+      "Maria Kalesnikava",
+      "Veronika Tsepkalo",
+      "Svetlana Alexievich"
+     ],
+     "why": "She left for Lithuania after the vote."
+    },
+    {
+     "level": 2,
+     "q": "Which Belarusian author won the 2015 Nobel Prize in Literature?",
+     "a": "Svetlana Alexievich",
+     "wrong": [
+      "Vasil Bykaŭ",
+      "Yanka Kupala",
+      "Ales Adamovich"
+     ],
+     "why": "She wrote 'The Unwomanly Face of War'."
+    },
+    {
+     "level": 2,
+     "q": "Which printer published the first Belarusian books in 1517?",
+     "a": "Francysk Skaryna",
+     "wrong": [
+      "Simeon of Polotsk",
+      "Kastus Kalinouski",
+      "Yanka Kupala"
+     ],
+     "why": "He worked in Prague."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient city was the first capital of a Belarusian principality?",
+     "a": "Polotsk",
+     "wrong": [
+      "Minsk",
+      "Vitebsk",
+      "Turov"
+     ],
+     "why": "It is first mentioned in 862."
+    },
+    {
+     "level": 2,
+     "q": "Which painter born in Vitebsk is famous for dreamy village scenes?",
+     "a": "Marc Chagall",
+     "wrong": [
+      "Chaim Soutine",
+      "Kazimir Malevich",
+      "Ilya Repin"
+     ],
+     "why": "His house is a museum."
+    },
+    {
+     "level": 3,
+     "q": "Which leader of the 1863 uprising is a Belarusian national hero?",
+     "a": "Kastus Kalinouski",
+     "wrong": [
+      "Tadeusz Kościuszko",
+      "Francysk Skaryna",
+      "Yanka Kupala"
+     ],
+     "why": "He published a revolutionary newspaper."
+    },
+    {
+     "level": 3,
+     "q": "Which military leader born near Brest fought in the American Revolution?",
+     "a": "Tadeusz Kościuszko",
+     "wrong": [
+      "Casimir Pulaski",
+      "Kastus Kalinouski",
+      "Józef Poniatowski"
+     ],
+     "why": "He also led a Polish uprising in 1794."
+    },
+    {
+     "level": 3,
+     "q": "Which village was destroyed with its people by Nazi forces in 1943?",
+     "a": "Khatyn",
+     "wrong": [
+      "Lidice",
+      "Oradour",
+      "Malin"
+     ],
+     "why": "Its memorial has bells that ring every 30 seconds."
+    }
+   ]
+  },
+  {
+   "name": "Belarus: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Belarus's currency?",
+     "a": "Belarusian ruble",
+     "wrong": [
+      "Russian ruble",
+      "Hryvnia",
+      "Złoty"
+     ],
+     "why": "It was redenominated in 2016."
+    },
+    {
+     "level": 1,
+     "q": "Which ancient forest on the Polish border is home to European bison?",
+     "a": "Białowieża Forest (Belovezhskaya Pushcha)",
+     "wrong": [
+      "Black Forest",
+      "Sherwood Forest",
+      "Kampinos Forest"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 1,
+     "q": "Which potato pancakes are the national dish?",
+     "a": "Draniki",
+     "wrong": [
+      "Blini",
+      "Latkes",
+      "Rösti"
+     ],
+     "why": "Belarusians eat a lot of potatoes."
+    },
+    {
+     "level": 1,
+     "q": "Which castle with red-brick towers is a UNESCO site?",
+     "a": "Mir Castle",
+     "wrong": [
+      "Nesvizh Castle",
+      "Brest Fortress",
+      "Lida Castle"
+     ],
+     "why": "It was built in the 1500s."
+    },
+    {
+     "level": 1,
+     "q": "Which large region of marshes lies in southern Belarus?",
+     "a": "Polesia",
+     "wrong": [
+      "Podlasie",
+      "Mazovia",
+      "Volhynia"
+     ],
+     "why": "It is one of Europe's largest wetlands."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is Lukashenko famous for playing?",
+     "a": "Ice hockey",
+     "wrong": [
+      "Football",
+      "Tennis",
+      "Basketball"
+     ],
+     "why": "Belarus hosted the 2014 Ice Hockey World Championship."
+    },
+    {
+     "level": 1,
+     "q": "How many lakes is Belarus said to have?",
+     "a": "About 11,000",
+     "wrong": [
+      "About 100",
+      "About 1,000",
+      "About 100,000"
+     ],
+     "why": "It is called 'the land of blue lakes'."
+    },
+    {
+     "level": 2,
+     "q": "Which palace and castle complex was home to the Radziwiłł family?",
+     "a": "Nesvizh Castle",
+     "wrong": [
+      "Mir Castle",
+      "Gomel Palace",
+      "Ruzhany Palace"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which art festival in Vitebsk features Slavic music?",
+     "a": "Slavianski Bazaar",
+     "wrong": [
+      "Minsk Jazz Fest",
+      "Kupalle",
+      "Bazaar of Polotsk"
+     ],
+     "why": "It began in 1992."
+    },
+    {
+     "level": 2,
+     "q": "Which Belarusian tennis player has been world number one and won the Australian Open?",
+     "a": "Aryna Sabalenka",
+     "wrong": [
+      "Victoria Azarenka",
+      "Olga Govortsova",
+      "Natasha Zvereva"
+     ],
+     "why": "She won it in 2023 and 2024."
+    },
+    {
+     "level": 2,
+     "q": "Which tennis player from Minsk won the Australian Open in 2012 and 2013?",
+     "a": "Victoria Azarenka",
+     "wrong": [
+      "Aryna Sabalenka",
+      "Natasha Zvereva",
+      "Olga Barabanschikova"
+     ],
+     "why": "She was world number one in 2012."
+    },
+    {
+     "level": 2,
+     "q": "What is Belarus's largest lake?",
+     "a": "Lake Narach",
+     "wrong": [
+      "Lake Svir",
+      "Lake Drisvyaty",
+      "Lake Asveya"
+     ],
+     "why": "It is a popular resort."
+    },
+    {
+     "level": 3,
+     "q": "Which gymnast from Minsk won four golds at the 1972 Olympics?",
+     "a": "Olga Korbut",
+     "wrong": [
+      "Nellie Kim",
+      "Ludmilla Tourischeva",
+      "Larisa Latynina"
+     ],
+     "why": "She was famous for her backflip on the beam."
+    },
+    {
+     "level": 3,
+     "q": "Which Belarusian poet wrote 'And Who Goes There?'",
+     "a": "Yanka Kupala",
+     "wrong": [
+      "Yakub Kolas",
+      "Maksim Bahdanovič",
+      "Vasil Bykaŭ"
+     ],
+     "why": "It became an unofficial anthem."
+    },
+    {
+     "level": 3,
+     "q": "Which summer festival on the shortest night involves bonfires and wreaths?",
+     "a": "Kupalle",
+     "wrong": [
+      "Maslenitsa",
+      "Kalyady",
+      "Dziady"
+     ],
+     "why": "People search for a magical fern flower."
+    }
+   ]
+  }
+ ]
+}
