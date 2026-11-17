@@ -1,0 +1,346 @@
+{
+ "category": "Nicaragua",
+ "country": "NI",
+ "topics": [
+  {
+   "name": "Nicaragua: History & People",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is the capital of Nicaragua?",
+     "a": "Managua",
+     "wrong": [
+      "León",
+      "Granada",
+      "Masaya"
+     ],
+     "why": "It lies on Lake Managua."
+    },
+    {
+     "level": 1,
+     "q": "Which revolutionary group took power in 1979?",
+     "a": "Sandinistas (FSLN)",
+     "wrong": [
+      "Contras",
+      "FMLN",
+      "Shining Path"
+     ],
+     "why": "They overthrew the Somoza family."
+    },
+    {
+     "level": 1,
+     "q": "Which family ruled Nicaragua from 1936 to 1979?",
+     "a": "Somoza",
+     "wrong": [
+      "Ortega",
+      "Chamorro",
+      "Zelaya"
+     ],
+     "why": "Three of them ruled in turn."
+    },
+    {
+     "level": 1,
+     "q": "Who has been President of Nicaragua since 2007?",
+     "a": "Daniel Ortega",
+     "wrong": [
+      "Violeta Chamorro",
+      "Arnoldo Alemán",
+      "Enrique Bolaños"
+     ],
+     "why": "He also led the country in the 1980s."
+    },
+    {
+     "level": 1,
+     "q": "What is Nicaragua's currency?",
+     "a": "Córdoba",
+     "wrong": [
+      "Colón",
+      "Lempira",
+      "Quetzal"
+     ],
+     "why": "It is named after the city's founder."
+    },
+    {
+     "level": 1,
+     "q": "Which group fought the Sandinistas in the 1980s with US support?",
+     "a": "Contras",
+     "wrong": [
+      "FMLN",
+      "Zapatistas",
+      "FARC"
+     ],
+     "why": "The Iran-Contra affair involved them."
+    },
+    {
+     "level": 1,
+     "q": "Who became the first woman elected President in the Americas, in 1990?",
+     "a": "Violeta Chamorro",
+     "wrong": [
+      "Laura Chinchilla",
+      "Mireya Moscoso",
+      "Michelle Bachelet"
+     ],
+     "why": "She defeated Daniel Ortega."
+    },
+    {
+     "level": 2,
+     "q": "Which rebel leader fought US Marines in the 1920s and 1930s?",
+     "a": "Augusto César Sandino",
+     "wrong": [
+      "Carlos Fonseca",
+      "Benjamín Zeledón",
+      "José Santos Zelaya"
+     ],
+     "why": "The Sandinistas are named after him."
+    },
+    {
+     "level": 2,
+     "q": "Which American adventurer made himself President of Nicaragua in 1856?",
+     "a": "William Walker",
+     "wrong": [
+      "Henry Morgan",
+      "Cornelius Vanderbilt",
+      "Sam Houston"
+     ],
+     "why": "He was later executed in Honduras."
+    },
+    {
+     "level": 2,
+     "q": "Which poet from Nicaragua founded the Modernismo movement?",
+     "a": "Rubén Darío",
+     "wrong": [
+      "Ernesto Cardenal",
+      "Gioconda Belli",
+      "Pablo Neruda"
+     ],
+     "why": "He wrote 'Azul'."
+    },
+    {
+     "level": 2,
+     "q": "Which two cities were rivals as capital until Managua was chosen in 1852?",
+     "a": "León and Granada",
+     "wrong": [
+      "Masaya and Rivas",
+      "Estelí and Matagalpa",
+      "Bluefields and Corinto"
+     ],
+     "why": "Managua was a compromise."
+    },
+    {
+     "level": 2,
+     "q": "Which 1972 earthquake destroyed much of Managua?",
+     "a": "1972 Managua earthquake",
+     "wrong": [
+      "1985 Mexico earthquake",
+      "1976 Guatemala earthquake",
+      "2010 Haiti earthquake"
+     ],
+     "why": "Aid money was stolen by Somoza's government."
+    },
+    {
+     "level": 3,
+     "q": "Which 2018 protests began over pension reforms?",
+     "a": "April 2018 protests",
+     "wrong": [
+      "Sandinista Revolution",
+      "Contra War",
+      "Mosquito Uprising"
+     ],
+     "why": "Hundreds were killed."
+    },
+    {
+     "level": 3,
+     "q": "Which Nicaraguan priest-poet was Minister of Culture in the 1980s?",
+     "a": "Ernesto Cardenal",
+     "wrong": [
+      "Miguel d'Escoto",
+      "Rubén Darío",
+      "Fernando Cardenal"
+     ],
+     "why": "He founded a community at Solentiname."
+    },
+    {
+     "level": 3,
+     "q": "Which Nicaraguan boxer won world titles in four weight classes?",
+     "a": "Román 'Chocolatito' González",
+     "wrong": [
+      "Alexis Argüello",
+      "Ricardo Mayorga",
+      "Rosendo Álvarez"
+     ],
+     "why": "He was named the best pound-for-pound boxer."
+    }
+   ]
+  },
+  {
+   "name": "Nicaragua: Places & Culture",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which huge lake in Nicaragua has freshwater sharks?",
+     "a": "Lake Nicaragua (Cocibolca)",
+     "wrong": [
+      "Lake Managua",
+      "Lake Titicaca",
+      "Lake Atitlán"
+     ],
+     "why": "It is Central America's largest lake."
+    },
+    {
+     "level": 1,
+     "q": "Which island in Lake Nicaragua has two volcanoes?",
+     "a": "Ometepe",
+     "wrong": [
+      "Zapatera",
+      "Solentiname",
+      "Corn Island"
+     ],
+     "why": "Concepción and Maderas form it."
+    },
+    {
+     "level": 1,
+     "q": "Which colonial city on Lake Nicaragua was founded in 1524?",
+     "a": "Granada",
+     "wrong": [
+      "León",
+      "Masaya",
+      "Rivas"
+     ],
+     "why": "It is one of the oldest in the Americas."
+    },
+    {
+     "level": 1,
+     "q": "Which sport is Nicaragua's most popular?",
+     "a": "Baseball",
+     "wrong": [
+      "Football",
+      "Basketball",
+      "Boxing"
+     ],
+     "why": "Many Nicaraguans play in the US major leagues."
+    },
+    {
+     "level": 1,
+     "q": "Which sport do tourists try by sliding down Cerro Negro?",
+     "a": "Volcano boarding",
+     "wrong": [
+      "Sandboarding",
+      "Snowboarding",
+      "Mountain biking"
+     ],
+     "why": "It is near León."
+    },
+    {
+     "level": 1,
+     "q": "Which beach town on the Pacific is a surf hub?",
+     "a": "San Juan del Sur",
+     "wrong": [
+      "El Tunco",
+      "Tamarindo",
+      "Montañita"
+     ],
+     "why": "A large statue of Christ overlooks the bay."
+    },
+    {
+     "level": 1,
+     "q": "Which Caribbean islands belong to Nicaragua?",
+     "a": "Corn Islands",
+     "wrong": [
+      "Bay Islands",
+      "San Blas",
+      "Cayman Islands"
+     ],
+     "why": "They are about 70 km offshore."
+    },
+    {
+     "level": 2,
+     "q": "Which volcano near Masaya has a glowing lava lake?",
+     "a": "Masaya Volcano",
+     "wrong": [
+      "Momotombo",
+      "Concepción",
+      "San Cristóbal"
+     ],
+     "why": "The Spanish called it the 'Mouth of Hell'."
+    },
+    {
+     "level": 2,
+     "q": "Which city has Central America's largest cathedral?",
+     "a": "León",
+     "wrong": [
+      "Granada",
+      "Managua",
+      "Masaya"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which ancient ruins of a colonial city were buried by a volcano?",
+     "a": "León Viejo",
+     "wrong": [
+      "Granada Viejo",
+      "Antigua",
+      "Panamá Viejo"
+     ],
+     "why": "It is a UNESCO site."
+    },
+    {
+     "level": 2,
+     "q": "Which Nicaraguan pitcher threw a perfect game for the Montreal Expos?",
+     "a": "Dennis Martínez",
+     "wrong": [
+      "Vicente Padilla",
+      "Erasmo Ramírez",
+      "Marvin Benard"
+     ],
+     "why": "He did it in 1991."
+    },
+    {
+     "level": 2,
+     "q": "Which satirical street theatre is a UNESCO-listed tradition?",
+     "a": "El Güegüense",
+     "wrong": [
+      "La Gigantona",
+      "Las Inditas",
+      "El Toro Huaco"
+     ],
+     "why": "It mocks colonial rulers."
+    },
+    {
+     "level": 3,
+     "q": "Which archipelago in Lake Nicaragua is famous for primitivist painters?",
+     "a": "Solentiname Islands",
+     "wrong": [
+      "Las Isletas",
+      "Corn Islands",
+      "Pearl Cays"
+     ],
+     "why": "Ernesto Cardenal founded a community there."
+    },
+    {
+     "level": 3,
+     "q": "Which Nicaraguan boxer was called 'El Flaco Explosivo'?",
+     "a": "Alexis Argüello",
+     "wrong": [
+      "Román González",
+      "Ricardo Mayorga",
+      "Rosendo Álvarez"
+     ],
+     "why": "He won titles in three divisions."
+    },
+    {
+     "level": 3,
+     "q": "Which Caribbean region is home to the Miskito people?",
+     "a": "Mosquito Coast",
+     "wrong": [
+      "Darién",
+      "Petén",
+      "Chocó"
+     ],
+     "why": "It was once a British protectorate."
+    }
+   ]
+  }
+ ]
+}
