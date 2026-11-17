@@ -1,0 +1,132 @@
+{
+  "category": "Nigeria",
+  "country": "NG",
+  "topics": [
+    {
+      "name": "Nigeria History",
+      "questions": [
+        { "level": 1, "q": "In which year did Nigeria gain independence from Britain?", "a": "1960", "wrong": ["1963", "1957", "1970"], "why": "Nigeria became a republic in 1963." },
+        { "level": 1, "q": "On what date is Nigeria's Independence Day?", "a": "1 October", "wrong": ["12 June", "27 May", "1 January"], "why": "Independence came on 1 October 1960." },
+        { "level": 1, "q": "In which year did Abuja officially replace Lagos as the capital?", "a": "1991", "wrong": ["1976", "1999", "1960"], "why": "Abuja was chosen in 1976 for its central location." },
+        { "level": 1, "q": "Since 2018, on which date is Democracy Day celebrated?", "a": "12 June", "wrong": ["1 October", "29 May", "15 January"], "why": "It remembers the 12 June 1993 election." },
+        { "level": 1, "q": "Which region declared itself the Republic of Biafra in 1967?", "a": "Eastern Region", "wrong": ["Northern Region", "Western Region", "Mid-Western Region"], "why": "The civil war lasted until 1970." },
+        { "level": 1, "q": "Who was Nigeria's first Prime Minister?", "a": "Abubakar Tafawa Balewa", "wrong": ["Nnamdi Azikiwe", "Obafemi Awolowo", "Ahmadu Bello"], "why": "He led the country from independence until 1966." },
+        { "level": 1, "q": "Who became Nigeria's first President, in 1963?", "a": "Nnamdi Azikiwe", "wrong": ["Abubakar Tafawa Balewa", "Obafemi Awolowo", "Yakubu Gowon"], "why": "He was known as 'Zik of Africa'." },
+        { "level": 2, "q": "Which kingdom made the famous Benin Bronzes?", "a": "Kingdom of Benin", "wrong": ["Oyo Empire", "Sokoto Caliphate", "Kanem-Bornu"], "why": "It was centred on today's Benin City." },
+        { "level": 2, "q": "Usman dan Fodio founded which state in 1804?", "a": "Sokoto Caliphate", "wrong": ["Kano Emirate", "Bornu Empire", "Ilorin Emirate"], "why": "It became one of Africa's largest states." },
+        { "level": 2, "q": "Who joined Northern and Southern Nigeria into one colony in 1914?", "a": "Frederick Lugard", "wrong": ["Cecil Rhodes", "George Goldie", "Lord Salisbury"], "why": "This is called the Amalgamation." },
+        { "level": 2, "q": "Who first suggested the name 'Nigeria'?", "a": "Flora Shaw", "wrong": ["Frederick Lugard", "Mungo Park", "Mary Slessor"], "why": "She later married Lugard." },
+        { "level": 2, "q": "Which ancient culture is famous for terracotta sculptures from around 500 BCE?", "a": "Nok", "wrong": ["Ife", "Igbo-Ukwu", "Benin"], "why": "It is named after a village in Kaduna State." },
+        { "level": 2, "q": "Who led Nigeria's federal government during the civil war?", "a": "Yakubu Gowon", "wrong": ["Murtala Mohammed", "Olusegun Obasanjo", "Johnson Aguiyi-Ironsi"], "why": "He declared 'no victor, no vanquished' in 1970." },
+        { "level": 3, "q": "In which year did Nigeria return to civilian rule with the Fourth Republic?", "a": "1999", "wrong": ["1979", "1993", "2007"], "why": "Olusegun Obasanjo was sworn in on 29 May 1999." },
+        { "level": 3, "q": "The 1929 'Women's War' against colonial taxes centred on which town?", "a": "Aba", "wrong": ["Abeokuta", "Kano", "Enugu"], "why": "It is also called the Aba Women's Riots." },
+        { "level": 3, "q": "Who won the annulled presidential election of 12 June 1993?", "a": "M. K. O. Abiola", "wrong": ["Bashir Tofa", "Olusegun Obasanjo", "Shehu Shagari"], "why": "He was later honoured as a national hero." }
+      ]
+    },
+    {
+      "name": "Nigeria Geography",
+      "questions": [
+        { "level": 1, "q": "What is Nigeria's largest city?", "a": "Lagos", "wrong": ["Kano", "Ibadan", "Abuja"], "why": "It is one of Africa's biggest cities." },
+        { "level": 1, "q": "Which river gives Nigeria its name?", "a": "Niger", "wrong": ["Benue", "Kaduna", "Cross"], "why": "It is West Africa's longest river." },
+        { "level": 1, "q": "What is Nigeria's capital city?", "a": "Abuja", "wrong": ["Lagos", "Kano", "Ibadan"], "why": "It is in the Federal Capital Territory." },
+        { "level": 1, "q": "Nigeria's coast lies on which gulf?", "a": "Gulf of Guinea", "wrong": ["Gulf of Aden", "Gulf of Sidra", "Persian Gulf"], "why": "It is part of the Atlantic Ocean." },
+        { "level": 1, "q": "Which African country has the most people?", "a": "Nigeria", "wrong": ["Ethiopia", "Egypt", "DR Congo"], "why": "It has over 220 million people." },
+        { "level": 1, "q": "How many states does Nigeria have?", "a": "36", "wrong": ["30", "19", "40"], "why": "Plus the Federal Capital Territory." },
+        { "level": 1, "q": "The Presidential Villa in Abuja is popularly named after which rock?", "a": "Aso Rock", "wrong": ["Zuma Rock", "Olumo Rock", "Idanre Hill"], "why": "The villa sits at its foot." },
+        { "level": 2, "q": "At Lokoja, the Niger meets which river?", "a": "Benue", "wrong": ["Kaduna", "Sokoto", "Ogun"], "why": "The meeting point is called the confluence." },
+        { "level": 2, "q": "What is Nigeria's highest point?", "a": "Chappal Waddi", "wrong": ["Obudu Hill", "Shere Hills", "Zuma Rock"], "why": "It is 2,419 m high, near the Cameroon border." },
+        { "level": 2, "q": "Which plateau city is known for its cool climate?", "a": "Jos", "wrong": ["Kaduna", "Enugu", "Ilorin"], "why": "It is about 1,200 m above sea level." },
+        { "level": 2, "q": "Olumo Rock is a landmark of which city?", "a": "Abeokuta", "wrong": ["Ibadan", "Oyo", "Osogbo"], "why": "It sheltered the Egba people in the 19th century." },
+        { "level": 2, "q": "Obudu Mountain Resort is in which state?", "a": "Cross River", "wrong": ["Plateau", "Taraba", "Enugu"], "why": "It has a cable car up the plateau." },
+        { "level": 2, "q": "Which Bauchi game reserve has the Wikki Warm Springs?", "a": "Yankari", "wrong": ["Kainji Lake", "Gashaka-Gumti", "Old Oyo"], "why": "It is known for its elephants." },
+        { "level": 3, "q": "Which lake in the northeast has shrunk greatly since the 1960s?", "a": "Lake Chad", "wrong": ["Kainji Lake", "Lake Volta", "Lake Victoria"], "why": "It is shared with Chad, Niger and Cameroon." },
+        { "level": 3, "q": "Which dam forms Nigeria's largest artificial lake?", "a": "Kainji Dam", "wrong": ["Shiroro Dam", "Jebba Dam", "Kashimbila Dam"], "why": "It is on the Niger River." },
+        { "level": 3, "q": "Port Harcourt is the main city of which oil-producing region?", "a": "Niger Delta", "wrong": ["Sahel", "Middle Belt", "Lake Chad Basin"], "why": "Most of Nigeria's oil comes from there." }
+      ]
+    },
+    {
+      "name": "Nigeria Sport",
+      "questions": [
+        { "level": 1, "q": "What is the nickname of Nigeria's men's football team?", "a": "Super Eagles", "wrong": ["Black Stars", "Indomitable Lions", "Bafana Bafana"], "why": "The eagle is on Nigeria's coat of arms." },
+        { "level": 1, "q": "What is the nickname of Nigeria's women's football team?", "a": "Super Falcons", "wrong": ["Super Eagles", "Flying Eagles", "Golden Eaglets"], "why": "They are Africa's most successful women's team." },
+        { "level": 1, "q": "At which Olympics did Nigeria win football gold?", "a": "Atlanta 1996", "wrong": ["Sydney 2000", "Beijing 2008", "Barcelona 1992"], "why": "They beat Brazil and Argentina on the way." },
+        { "level": 1, "q": "Which midfielder was famous for his 'Jay-Jay' tricks?", "a": "Austin Okocha", "wrong": ["Nwankwo Kanu", "Rashidi Yekini", "Daniel Amokachi"], "why": "He played for Bolton and PSG." },
+        { "level": 1, "q": "Who scored Nigeria's first World Cup goal, in 1994?", "a": "Rashidi Yekini", "wrong": ["Austin Okocha", "Daniel Amokachi", "Finidi George"], "why": "He celebrated by holding the net." },
+        { "level": 1, "q": "Which Lagos-born basketball legend was nicknamed 'The Dream'?", "a": "Hakeem Olajuwon", "wrong": ["Dikembe Mutombo", "Joel Embiid", "Giannis Antetokounmpo"], "why": "He won two NBA titles with Houston." },
+        { "level": 1, "q": "How many Africa Cup of Nations titles have the Super Eagles won?", "a": "3", "wrong": ["5", "1", "7"], "why": "In 1980, 1994 and 2013." },
+        { "level": 2, "q": "Which Nigerian set the women's 100 m hurdles world record in 2022?", "a": "Tobi Amusan", "wrong": ["Blessing Okagbare", "Chioma Ajunwa", "Mary Onyali"], "why": "She ran 12.12 seconds in Eugene." },
+        { "level": 2, "q": "Who won Nigeria's first Olympic gold medal, in the long jump in 1996?", "a": "Chioma Ajunwa", "wrong": ["Blessing Okagbare", "Mary Onyali", "Falilat Ogunkoya"], "why": "She had also played for the Super Falcons." },
+        { "level": 2, "q": "Which striker was named African Footballer of the Year in 1996 and 1999?", "a": "Nwankwo Kanu", "wrong": ["Austin Okocha", "Rashidi Yekini", "Victor Osimhen"], "why": "He won the Champions League with Ajax." },
+        { "level": 2, "q": "Which striker was named African Footballer of the Year in 2023?", "a": "Victor Osimhen", "wrong": ["Ademola Lookman", "Kelechi Iheanacho", "Alex Iwobi"], "why": "He led Napoli to the Serie A title." },
+        { "level": 2, "q": "Which tournament has Nigeria won a record five times with its 'Golden Eaglets'?", "a": "FIFA U-17 World Cup", "wrong": ["Africa Cup of Nations", "FIFA U-20 World Cup", "Olympic football"], "why": "The last win was in 2015." },
+        { "level": 2, "q": "Which Nigerian boxer was world champion at middleweight and light heavyweight?", "a": "Dick Tiger", "wrong": ["Hogan Bassey", "Samuel Peter", "Eric Okoro"], "why": "He held titles in the 1960s." },
+        { "level": 3, "q": "Who became Nigeria's first world boxing champion, in 1957?", "a": "Hogan 'Kid' Bassey", "wrong": ["Dick Tiger", "Samuel Peter", "Obisia Nwankpa"], "why": "He won the featherweight title." },
+        { "level": 3, "q": "How many Women's Africa Cup of Nations titles have the Super Falcons won?", "a": "10", "wrong": ["6", "4", "8"], "why": "No other team has won more than two." },
+        { "level": 3, "q": "Which Nigerian won a long jump medal at the Beijing 2008 Olympics?", "a": "Blessing Okagbare", "wrong": ["Tobi Amusan", "Chioma Ajunwa", "Ese Brume"], "why": "Her bronze was later upgraded to silver." }
+      ]
+    },
+    {
+      "name": "Nigeria Film, TV & Music",
+      "questions": [
+        { "level": 1, "q": "What is Nigeria's film industry called?", "a": "Nollywood", "wrong": ["Ghallywood", "Kannywood", "Riverwood"], "why": "It makes more films a year than almost any other." },
+        { "level": 1, "q": "Who pioneered Afrobeat music?", "a": "Fela Kuti", "wrong": ["King Sunny Adé", "Burna Boy", "Femi Kuti"], "why": "He mixed jazz, funk and Yoruba music." },
+        { "level": 1, "q": "Which singer won a Grammy for the album 'Twice as Tall'?", "a": "Burna Boy", "wrong": ["Wizkid", "Davido", "Tems"], "why": "He won Best Global Music Album in 2021." },
+        { "level": 1, "q": "Which singer released 'Essence' featuring Tems?", "a": "Wizkid", "wrong": ["Davido", "Burna Boy", "Rema"], "why": "It was a global hit in 2021." },
+        { "level": 1, "q": "Which singer had a global hit with 'Calm Down'?", "a": "Rema", "wrong": ["CKay", "Asake", "Fireboy DML"], "why": "A remix featured Selena Gomez." },
+        { "level": 1, "q": "Who wrote 'Things Fall Apart'?", "a": "Chinua Achebe", "wrong": ["Wole Soyinka", "Ben Okri", "Chimamanda Ngozi Adichie"], "why": "It was published in 1958." },
+        { "level": 1, "q": "Who wrote 'Half of a Yellow Sun'?", "a": "Chimamanda Ngozi Adichie", "wrong": ["Buchi Emecheta", "Ayọ̀bámi Adébáyọ̀", "Sefi Atta"], "why": "It is set during the civil war." },
+        { "level": 2, "q": "Who became the first Black African to win the Nobel Prize in Literature, in 1986?", "a": "Wole Soyinka", "wrong": ["Chinua Achebe", "Ben Okri", "Ngũgĩ wa Thiong'o"], "why": "He is a playwright and poet." },
+        { "level": 2, "q": "Which Nigerian-born author won the 1991 Booker Prize for 'The Famished Road'?", "a": "Ben Okri", "wrong": ["Chinua Achebe", "Wole Soyinka", "Teju Cole"], "why": "He was then the youngest winner." },
+        { "level": 2, "q": "Who is called the 'King of Jùjú music'?", "a": "King Sunny Adé", "wrong": ["Ebenezer Obey", "Fela Kuti", "Osita Osadebe"], "why": "He was nominated for a Grammy in 1984." },
+        { "level": 2, "q": "Which 2016 comedy became the highest-earning Nigerian film of its time?", "a": "The Wedding Party", "wrong": ["Living in Bondage", "King of Boys", "Omo Ghetto"], "why": "Kemi Adetiba directed it." },
+        { "level": 2, "q": "Which 1992 film is seen as the start of Nollywood?", "a": "Living in Bondage", "wrong": ["Glamour Girls", "Osuofia in London", "Sango"], "why": "It was sold straight to video." },
+        { "level": 2, "q": "Which Nigerian singer co-wrote the Oscar-nominated 'Lift Me Up'?", "a": "Tems", "wrong": ["Ayra Starr", "Yemi Alade", "Simi"], "why": "It was the theme of 'Black Panther: Wakanda Forever'." },
+        { "level": 3, "q": "Which highlife star sang 'Osondi Owendi'?", "a": "Osita Osadebe", "wrong": ["Oliver De Coque", "Victor Uwaifo", "Rex Lawson"], "why": "It came out in 1984." },
+        { "level": 3, "q": "What did Fela Kuti call his compound, which he declared independent of Nigeria?", "a": "Kalakuta Republic", "wrong": ["Afrika Shrine", "Lagos Free State", "Egypt 80"], "why": "Soldiers burned it down in 1977." },
+        { "level": 3, "q": "Who wrote 'The Joys of Motherhood'?", "a": "Buchi Emecheta", "wrong": ["Flora Nwapa", "Chimamanda Ngozi Adichie", "Sefi Atta"], "why": "It was published in 1979." }
+      ]
+    },
+    {
+      "name": "Nigeria Food & Traditions",
+      "questions": [
+        { "level": 1, "q": "Which tomato rice dish is at the heart of a friendly rivalry with Ghana?", "a": "Jollof rice", "wrong": ["Fried rice", "Coconut rice", "Ofada rice"], "why": "Both countries claim the best jollof." },
+        { "level": 1, "q": "What is egusi?", "a": "Ground melon seeds", "wrong": ["Dried fish", "Cassava flour", "Palm nuts"], "why": "It thickens a popular soup." },
+        { "level": 1, "q": "What is fried ripe plantain called in Nigeria?", "a": "Dodo", "wrong": ["Kelewele", "Moi moi", "Akara"], "why": "Kelewele is the spicy Ghanaian version." },
+        { "level": 1, "q": "Which spicy grilled meat skewer is a famous street food?", "a": "Suya", "wrong": ["Kilishi", "Asun", "Nkwobi"], "why": "It is coated in a peanut and pepper spice called yaji." },
+        { "level": 1, "q": "What are fried bean fritters called?", "a": "Akara", "wrong": ["Moi moi", "Puff-puff", "Chin chin"], "why": "They are often eaten with pap for breakfast." },
+        { "level": 1, "q": "Which are Nigeria's three largest ethnic groups?", "a": "Hausa, Yoruba and Igbo", "wrong": ["Akan, Ewe and Ga", "Zulu, Xhosa and Sotho", "Kikuyu, Luo and Kalenjin"], "why": "Nigeria has over 250 ethnic groups." },
+        { "level": 1, "q": "What is steamed bean pudding called?", "a": "Moi moi", "wrong": ["Akara", "Eba", "Amala"], "why": "It is often steamed in leaves." },
+        { "level": 2, "q": "Which festival in Osogbo honours a river goddess?", "a": "Osun-Osogbo Festival", "wrong": ["Eyo Festival", "Argungu Festival", "Durbar Festival"], "why": "The sacred grove is a UNESCO site." },
+        { "level": 2, "q": "Which Lagos festival features masquerades dressed in white?", "a": "Eyo Festival", "wrong": ["Osun-Osogbo Festival", "Ofala Festival", "Calabar Carnival"], "why": "The masquerades wear wide white hats." },
+        { "level": 2, "q": "Which Kebbi State festival is famous for its fishing contest?", "a": "Argungu Festival", "wrong": ["Durbar Festival", "Eyo Festival", "New Yam Festival"], "why": "Thousands of fishermen jump into the river at once." },
+        { "level": 2, "q": "Which northern festival features horse riders in colourful robes at Sallah?", "a": "Durbar", "wrong": ["Argungu", "Eyo", "Ofala"], "why": "Kano and Katsina hold famous ones." },
+        { "level": 2, "q": "Eba is made from which cassava product?", "a": "Garri", "wrong": ["Lafun", "Tapioca", "Starch"], "why": "Hot water is stirred into garri to make it." },
+        { "level": 2, "q": "Which festival in December is called 'Africa's biggest street party'?", "a": "Calabar Carnival", "wrong": ["Eyo Festival", "Felabration", "Ojude Oba"], "why": "It runs through the month in Cross River State." },
+        { "level": 3, "q": "Which Igbo festival celebrates the harvest with a new food crop?", "a": "New Yam Festival", "wrong": ["Ofala Festival", "Mmanwu Festival", "Ekpe Festival"], "why": "It is called Iri ji in Igbo." },
+        { "level": 3, "q": "Ofada rice is a local speciality of which state?", "a": "Ogun", "wrong": ["Kano", "Rivers", "Enugu"], "why": "It is served with a spicy pepper stew." },
+        { "level": 3, "q": "Nkwobi is a spicy dish made from what?", "a": "Cow foot", "wrong": ["Goat head", "Snails", "Catfish"], "why": "It is cooked in a palm-oil paste." }
+      ]
+    },
+    {
+      "name": "Nigeria General Knowledge",
+      "questions": [
+        { "level": 1, "q": "What is Nigeria's currency?", "a": "Naira", "wrong": ["Cedi", "Rand", "Shilling"], "why": "It replaced the pound in 1973." },
+        { "level": 1, "q": "What are the colours of Nigeria's flag?", "a": "Green and white", "wrong": ["Red, gold and green", "Green, yellow and black", "Blue and white"], "why": "Green for farming, white for peace." },
+        { "level": 1, "q": "What is Nigeria's popular nickname?", "a": "Giant of Africa", "wrong": ["Gold Coast", "Rainbow Nation", "Pearl of Africa"], "why": "It refers to its size and population." },
+        { "level": 1, "q": "Which Lagos bridge is one of the longest in Africa?", "a": "Third Mainland Bridge", "wrong": ["Carter Bridge", "Eko Bridge", "Niger Bridge"], "why": "It is about 11.8 km long." },
+        { "level": 1, "q": "What is Nigeria's official language?", "a": "English", "wrong": ["Hausa", "Yoruba", "French"], "why": "Hundreds of languages are spoken too." },
+        { "level": 1, "q": "Which Nigerian became Director-General of the World Trade Organization in 2021?", "a": "Ngozi Okonjo-Iweala", "wrong": ["Amina Mohammed", "Akinwumi Adesina", "Obiageli Ezekwesili"], "why": "She was the first woman and first African in the role." },
+        { "level": 1, "q": "Which businessman, Africa's richest person, made his fortune in cement?", "a": "Aliko Dangote", "wrong": ["Mike Adenuga", "Femi Otedola", "Tony Elumelu"], "why": "He has also built a huge oil refinery." },
+        { "level": 2, "q": "Which Nigerian led the African Development Bank from 2015?", "a": "Akinwumi Adesina", "wrong": ["Ngozi Okonjo-Iweala", "Charles Soludo", "Godwin Emefiele"], "why": "He had been Nigeria's agriculture minister." },
+        { "level": 2, "q": "Which Lagos district is nicknamed 'Yabacon Valley' for its tech start-ups?", "a": "Yaba", "wrong": ["Ikeja", "Lekki", "Surulere"], "why": "Many start-ups began there in the 2010s." },
+        { "level": 2, "q": "Nigeria's National Assembly is made up of the Senate and what?", "a": "House of Representatives", "wrong": ["House of Lords", "National Council", "House of Chiefs"], "why": "It meets in Abuja." },
+        { "level": 2, "q": "Which animals support the shield on Nigeria's coat of arms?", "a": "Two white horses", "wrong": ["Two lions", "Two eagles", "Two elephants"], "why": "A red eagle stands on top." },
+        { "level": 2, "q": "Which anthem did Nigeria bring back as its national anthem in 2024?", "a": "Nigeria, We Hail Thee", "wrong": ["Arise, O Compatriots", "God Bless Nigeria", "One Nigeria"], "why": "It had been the anthem from 1960 to 1978." },
+        { "level": 2, "q": "What is Nigeria's national motto?", "a": "Unity and Faith, Peace and Progress", "wrong": ["Unity, Freedom, Work", "Freedom and Justice", "One People, One Nation"], "why": "It appears on the coat of arms." },
+        { "level": 3, "q": "Who designed Nigeria's national flag?", "a": "Taiwo Akinkunmi", "wrong": ["Nnamdi Azikiwe", "Herbert Macaulay", "Ben Enwonwu"], "why": "He was a student in London in 1959." },
+        { "level": 3, "q": "How many local government areas does Nigeria have?", "a": "774", "wrong": ["500", "36", "1,000"], "why": "They are the third tier of government." },
+        { "level": 3, "q": "Which Nigerian sculptor made the famous 'Tutu' portrait?", "a": "Ben Enwonwu", "wrong": ["Bruce Onobrakpeya", "El Anatsui", "Yusuf Grillo"], "why": "It sold for over £1 million in 2018." }
+      ]
+    }
+  ]
+}
