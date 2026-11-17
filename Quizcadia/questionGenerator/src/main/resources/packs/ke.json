@@ -1,0 +1,1092 @@
+{
+ "category": "Kenya",
+ "country": "KE",
+ "topics": [
+  {
+   "name": "Kenya History",
+   "questions": [
+    {
+     "level": 1,
+     "q": "In which year did Kenya gain independence from Britain?",
+     "a": "1963",
+     "wrong": [
+      "1960",
+      "1957",
+      "1964"
+     ],
+     "why": "Independence came on 12 December 1963."
+    },
+    {
+     "level": 1,
+     "q": "Who was Kenya's first President?",
+     "a": "Jomo Kenyatta",
+     "wrong": [
+      "Daniel arap Moi",
+      "Mwai Kibaki",
+      "Tom Mboya"
+     ],
+     "why": "He led the country from 1964 to 1978."
+    },
+    {
+     "level": 1,
+     "q": "What is 12 December called in Kenya?",
+     "a": "Jamhuri Day",
+     "wrong": [
+      "Madaraka Day",
+      "Mashujaa Day",
+      "Utamaduni Day"
+     ],
+     "why": "Jamhuri means 'republic'."
+    },
+    {
+     "level": 1,
+     "q": "Madaraka Day on 1 June marks what?",
+     "a": "Self-rule in 1963",
+     "wrong": [
+      "Full independence",
+      "The new constitution",
+      "The end of the Mau Mau uprising"
+     ],
+     "why": "Madaraka means 'power' or 'responsibility'."
+    },
+    {
+     "level": 1,
+     "q": "Which uprising fought British rule in the 1950s?",
+     "a": "Mau Mau uprising",
+     "wrong": [
+      "Maji Maji rebellion",
+      "Nandi resistance",
+      "Giriama uprising"
+     ],
+     "why": "Dedan Kimathi was one of its leaders."
+    },
+    {
+     "level": 1,
+     "q": "Who was Kenya's second President, serving from 1978 to 2002?",
+     "a": "Daniel arap Moi",
+     "wrong": [
+      "Mwai Kibaki",
+      "Jomo Kenyatta",
+      "Uhuru Kenyatta"
+     ],
+     "why": "He ruled for 24 years."
+    },
+    {
+     "level": 1,
+     "q": "What does Mashujaa Day on 20 October honour?",
+     "a": "National heroes",
+     "wrong": [
+      "Farmers",
+      "Teachers",
+      "Mothers"
+     ],
+     "why": "Mashujaa means 'heroes'."
+    },
+    {
+     "level": 2,
+     "q": "In which year did Kenya adopt its current constitution?",
+     "a": "2010",
+     "wrong": [
+      "2002",
+      "2007",
+      "1992"
+     ],
+     "why": "It created the 47 counties."
+    },
+    {
+     "level": 2,
+     "q": "Which Mau Mau leader was executed by the British in 1957?",
+     "a": "Dedan Kimathi",
+     "wrong": [
+      "Jomo Kenyatta",
+      "Bildad Kaggia",
+      "Paul Ngei"
+     ],
+     "why": "His statue stands in central Nairobi."
+    },
+    {
+     "level": 2,
+     "q": "Which railway, begun in 1896, was nicknamed the 'Lunatic Express'?",
+     "a": "Uganda Railway",
+     "wrong": [
+      "Standard Gauge Railway",
+      "Tanganyika Railway",
+      "Rift Valley Railway"
+     ],
+     "why": "It ran from Mombasa to Lake Victoria."
+    },
+    {
+     "level": 2,
+     "q": "Which trade unionist and minister was assassinated in 1969?",
+     "a": "Tom Mboya",
+     "wrong": [
+      "Pio Gama Pinto",
+      "J. M. Kariuki",
+      "Oginga Odinga"
+     ],
+     "why": "He organised the 'airlift' of students to the US."
+    },
+    {
+     "level": 2,
+     "q": "Which Portuguese fort in Mombasa is a UNESCO site?",
+     "a": "Fort Jesus",
+     "wrong": [
+      "Fort Mombasa",
+      "Fort St. Joseph",
+      "Fort Lamu"
+     ],
+     "why": "It was built in the 1590s."
+    },
+    {
+     "level": 2,
+     "q": "Who was Kenya's first Vice-President?",
+     "a": "Jaramogi Oginga Odinga",
+     "wrong": [
+      "Daniel arap Moi",
+      "Tom Mboya",
+      "Joseph Murumbi"
+     ],
+     "why": "His son Raila became Prime Minister."
+    },
+    {
+     "level": 3,
+     "q": "Which Swahili town on an island is a UNESCO World Heritage Site?",
+     "a": "Lamu",
+     "wrong": [
+      "Malindi",
+      "Kilifi",
+      "Watamu"
+     ],
+     "why": "It is one of the oldest Swahili towns still lived in."
+    },
+    {
+     "level": 3,
+     "q": "Which ancient Swahili ruins lie in a forest near Watamu?",
+     "a": "Gedi",
+     "wrong": [
+      "Takwa",
+      "Mnarani",
+      "Jumba la Mtwana"
+     ],
+     "why": "The town was abandoned in the 1600s."
+    },
+    {
+     "level": 3,
+     "q": "Who became Prime Minister under the 2008 power-sharing deal?",
+     "a": "Raila Odinga",
+     "wrong": [
+      "Musalia Mudavadi",
+      "Kalonzo Musyoka",
+      "Uhuru Kenyatta"
+     ],
+     "why": "It followed post-election violence."
+    }
+   ]
+  },
+  {
+   "name": "Kenya Geography",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Kenya's capital city?",
+     "a": "Nairobi",
+     "wrong": [
+      "Mombasa",
+      "Kisumu",
+      "Nakuru"
+     ],
+     "why": "Its name means 'cool water' in Maasai."
+    },
+    {
+     "level": 1,
+     "q": "What is Kenya's highest mountain?",
+     "a": "Mount Kenya",
+     "wrong": [
+      "Mount Kilimanjaro",
+      "Mount Elgon",
+      "Mount Longonot"
+     ],
+     "why": "It is 5,199 m high."
+    },
+    {
+     "level": 1,
+     "q": "Which reserve is famous for the Great Migration of wildebeest?",
+     "a": "Maasai Mara",
+     "wrong": [
+      "Amboseli",
+      "Tsavo",
+      "Samburu"
+     ],
+     "why": "The herds cross the Mara River each year."
+    },
+    {
+     "level": 1,
+     "q": "Which is Kenya's main seaport?",
+     "a": "Mombasa",
+     "wrong": [
+      "Lamu",
+      "Malindi",
+      "Kisumu"
+     ],
+     "why": "It is on the Indian Ocean."
+    },
+    {
+     "level": 1,
+     "q": "Which lake does Kenya share with Uganda and Tanzania?",
+     "a": "Lake Victoria",
+     "wrong": [
+      "Lake Turkana",
+      "Lake Naivasha",
+      "Lake Nakuru"
+     ],
+     "why": "It is Africa's largest lake."
+    },
+    {
+     "level": 1,
+     "q": "Which great valley runs through Kenya from north to south?",
+     "a": "The Great Rift Valley",
+     "wrong": [
+      "The Kerio Valley",
+      "The Tana Valley",
+      "The Nile Valley"
+     ],
+     "why": "It is part of a rift stretching thousands of kilometres."
+    },
+    {
+     "level": 1,
+     "q": "Which national park has Nairobi's skyline in the background?",
+     "a": "Nairobi National Park",
+     "wrong": [
+      "Hell's Gate",
+      "Ol Pejeta",
+      "Aberdare"
+     ],
+     "why": "It is the only national park inside a capital city."
+    },
+    {
+     "level": 2,
+     "q": "Which is the world's largest desert lake, in northern Kenya?",
+     "a": "Lake Turkana",
+     "wrong": [
+      "Lake Baringo",
+      "Lake Bogoria",
+      "Lake Magadi"
+     ],
+     "why": "It is also called the Jade Sea."
+    },
+    {
+     "level": 2,
+     "q": "Which lake is famous for its flamingos?",
+     "a": "Lake Nakuru",
+     "wrong": [
+      "Lake Victoria",
+      "Lake Turkana",
+      "Lake Naivasha"
+     ],
+     "why": "Lake Bogoria also draws huge flocks."
+    },
+    {
+     "level": 2,
+     "q": "Which park is famous for views of Kilimanjaro and its elephants?",
+     "a": "Amboseli",
+     "wrong": [
+      "Tsavo East",
+      "Samburu",
+      "Meru"
+     ],
+     "why": "Kilimanjaro itself is in Tanzania."
+    },
+    {
+     "level": 2,
+     "q": "What is Kenya's longest river?",
+     "a": "Tana River",
+     "wrong": [
+      "Athi River",
+      "Mara River",
+      "Nzoia River"
+     ],
+     "why": "It flows into the Indian Ocean."
+    },
+    {
+     "level": 2,
+     "q": "How many counties does Kenya have?",
+     "a": "47",
+     "wrong": [
+      "8",
+      "36",
+      "52"
+     ],
+     "why": "They were created in 2013."
+    },
+    {
+     "level": 2,
+     "q": "Which city on Lake Victoria is Kenya's third-largest?",
+     "a": "Kisumu",
+     "wrong": [
+      "Eldoret",
+      "Nakuru",
+      "Kakamega"
+     ],
+     "why": "It is a major port on the lake."
+    },
+    {
+     "level": 3,
+     "q": "Which is Kenya's largest national park?",
+     "a": "Tsavo",
+     "wrong": [
+      "Maasai Mara",
+      "Amboseli",
+      "Meru"
+     ],
+     "why": "It is split into Tsavo East and Tsavo West."
+    },
+    {
+     "level": 3,
+     "q": "Which highland town is called the 'Home of Champions' for its runners?",
+     "a": "Iten",
+     "wrong": [
+      "Eldoret",
+      "Kericho",
+      "Nyahururu"
+     ],
+     "why": "It sits at about 2,400 m."
+    },
+    {
+     "level": 3,
+     "q": "Which park lets visitors cycle among zebras and giraffes near Naivasha?",
+     "a": "Hell's Gate",
+     "wrong": [
+      "Lake Nakuru",
+      "Aberdare",
+      "Ol Donyo Sabuk"
+     ],
+     "why": "It inspired scenery in 'The Lion King'."
+    }
+   ]
+  },
+  {
+   "name": "Kenya Sport",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Kenyan was the first to run a marathon in under two hours?",
+     "a": "Eliud Kipchoge",
+     "wrong": [
+      "Kelvin Kiptum",
+      "Paul Tergat",
+      "Wilson Kipsang"
+     ],
+     "why": "He ran 1:59:40 in Vienna in 2019."
+    },
+    {
+     "level": 1,
+     "q": "Who holds the 800 m world record?",
+     "a": "David Rudisha",
+     "wrong": [
+      "Wilson Kipketer",
+      "Emmanuel Korir",
+      "Paul Ereng"
+     ],
+     "why": "He ran 1:40.91 at London 2012."
+    },
+    {
+     "level": 1,
+     "q": "Which athletics event is Kenya famous for winning at the Olympics?",
+     "a": "3,000 m steeplechase",
+     "wrong": [
+      "Pole vault",
+      "Shot put",
+      "100 m"
+     ],
+     "why": "Kenyans won it at every Olympics they entered from 1968 to 2016."
+    },
+    {
+     "level": 1,
+     "q": "Which woman won Olympic 1,500 m gold three times in a row?",
+     "a": "Faith Kipyegon",
+     "wrong": [
+      "Hellen Obiri",
+      "Vivian Cheruiyot",
+      "Mary Keitany"
+     ],
+     "why": "In 2016, 2021 and 2024."
+    },
+    {
+     "level": 1,
+     "q": "What is Kenya's rugby sevens team called?",
+     "a": "Shujaa",
+     "wrong": [
+      "Simbas",
+      "Harambee Stars",
+      "Malkia Strikers"
+     ],
+     "why": "Shujaa means 'hero'."
+    },
+    {
+     "level": 1,
+     "q": "What is the men's national football team called?",
+     "a": "Harambee Stars",
+     "wrong": [
+      "Shujaa",
+      "Simbas",
+      "Super Eagles"
+     ],
+     "why": "Harambee means 'pull together'."
+    },
+    {
+     "level": 1,
+     "q": "Which Kenyan set the men's marathon world record of 2:00:35 in 2023?",
+     "a": "Kelvin Kiptum",
+     "wrong": [
+      "Eliud Kipchoge",
+      "Geoffrey Kamworor",
+      "Dennis Kimetto"
+     ],
+     "why": "He ran it in Chicago."
+    },
+    {
+     "level": 2,
+     "q": "At which Cricket World Cup did Kenya reach the semi-finals?",
+     "a": "2003",
+     "wrong": [
+      "1996",
+      "2011",
+      "1999"
+     ],
+     "why": "They are the only non-Test team ever to get that far."
+    },
+    {
+     "level": 2,
+     "q": "Which runner won Kenya's first Olympic gold, in the 1,500 m in 1968?",
+     "a": "Kipchoge Keino",
+     "wrong": [
+      "Naftali Temu",
+      "Amos Biwott",
+      "Ben Jipcho"
+     ],
+     "why": "He later ran a children's home."
+    },
+    {
+     "level": 2,
+     "q": "What is Kenya's women's volleyball team called?",
+     "a": "Malkia Strikers",
+     "wrong": [
+      "Harambee Starlets",
+      "Lionesses",
+      "Shujaa"
+     ],
+     "why": "Malkia means 'queen'."
+    },
+    {
+     "level": 2,
+     "q": "Which rally, once part of the World Championship, returned to the WRC in 2021?",
+     "a": "Safari Rally",
+     "wrong": [
+      "Rally Kenya Coast",
+      "East African Rally",
+      "Rift Valley Rally"
+     ],
+     "why": "It is now held around Naivasha."
+    },
+    {
+     "level": 2,
+     "q": "Which Kenyan won the women's Olympic marathon in Tokyo?",
+     "a": "Peres Jepchirchir",
+     "wrong": [
+      "Brigid Kosgei",
+      "Mary Keitany",
+      "Ruth Chepngetich"
+     ],
+     "why": "The race was held in Sapporo in 2021."
+    },
+    {
+     "level": 2,
+     "q": "Which footballer captained Kenya and played for Tottenham?",
+     "a": "Victor Wanyama",
+     "wrong": [
+      "Michael Olunga",
+      "McDonald Mariga",
+      "Dennis Oliech"
+     ],
+     "why": "He also played for Southampton and Celtic."
+    },
+    {
+     "level": 3,
+     "q": "Which Kenyan won the 2008 Olympic marathon?",
+     "a": "Samuel Wanjiru",
+     "wrong": [
+      "Martin Lel",
+      "Robert Cheruiyot",
+      "Eliud Kipchoge"
+     ],
+     "why": "He was Kenya's first Olympic marathon champion."
+    },
+    {
+     "level": 3,
+     "q": "Which Kenyan won the 2011 world 10,000 m title for women after earlier 5,000 m golds?",
+     "a": "Vivian Cheruiyot",
+     "wrong": [
+      "Tirunesh Dibaba",
+      "Sally Kipyego",
+      "Linet Masai"
+     ],
+     "why": "She later won Olympic 5,000 m gold in 2016."
+    },
+    {
+     "level": 3,
+     "q": "Which Kenyan won Olympic boxing gold in 1988?",
+     "a": "Robert Wangila",
+     "wrong": [
+      "Conjestina Achieng",
+      "Philip Waruinge",
+      "Stephen Muchoki"
+     ],
+     "why": "He won in the welterweight class."
+    }
+   ]
+  },
+  {
+   "name": "Kenya Film, TV & Music",
+   "questions": [
+    {
+     "level": 1,
+     "q": "Which Kenyan-Mexican actress won an Oscar for '12 Years a Slave'?",
+     "a": "Lupita Nyong'o",
+     "wrong": [
+      "Wanuri Kahiu",
+      "Sheila Munyiva",
+      "Catherine Kamau"
+     ],
+     "why": "She won Best Supporting Actress in 2014."
+    },
+    {
+     "level": 1,
+     "q": "Which Kenyan band recorded 'Sura Yako'?",
+     "a": "Sauti Sol",
+     "wrong": [
+      "Elani",
+      "H_art the Band",
+      "Wakadinali"
+     ],
+     "why": "They formed in Nairobi in 2005."
+    },
+    {
+     "level": 1,
+     "q": "Which Kenyan pop style is Nairobi's take on hip hop and dancehall?",
+     "a": "Genge",
+     "wrong": [
+      "Bongo Flava",
+      "Kwaito",
+      "Highlife"
+     ],
+     "why": "Jua Cali helped make it popular."
+    },
+    {
+     "level": 1,
+     "q": "Which writer wrote 'Weep Not, Child' and 'Petals of Blood'?",
+     "a": "Ngũgĩ wa Thiong'o",
+     "wrong": [
+      "Grace Ogot",
+      "Binyavanga Wainaina",
+      "Meja Mwangi"
+     ],
+     "why": "He later wrote mainly in Gikuyu."
+    },
+    {
+     "level": 1,
+     "q": "Which song by the band Them Mushrooms is a famous welcome song?",
+     "a": "Jambo Bwana",
+     "wrong": [
+      "Malaika",
+      "Sura Yako",
+      "Unbwogable"
+     ],
+     "why": "It says 'Hakuna matata'."
+    },
+    {
+     "level": 1,
+     "q": "Which love song, often sung by Miriam Makeba, is linked to Kenyan musician Fadhili William?",
+     "a": "Malaika",
+     "wrong": [
+      "Jambo Bwana",
+      "Pata Pata",
+      "Sura Yako"
+     ],
+     "why": "Malaika means 'angel'."
+    },
+    {
+     "level": 1,
+     "q": "What language are most Kenyan songs sung in alongside English?",
+     "a": "Swahili",
+     "wrong": [
+      "Amharic",
+      "Zulu",
+      "Hausa"
+     ],
+     "why": "Sheng, a street slang, mixes them."
+    },
+    {
+     "level": 2,
+     "q": "Which 2018 film by Wanuri Kahiu was first banned in Kenya?",
+     "a": "Rafiki",
+     "wrong": [
+      "Nairobi Half Life",
+      "Supa Modo",
+      "Kati Kati"
+     ],
+     "why": "It was the first Kenyan film shown at Cannes."
+    },
+    {
+     "level": 2,
+     "q": "What is the Nairobi street slang mixing Swahili and English called?",
+     "a": "Sheng",
+     "wrong": [
+      "Pidgin",
+      "Kiswahili Sanifu",
+      "Patois"
+     ],
+     "why": "It changes quickly from estate to estate."
+    },
+    {
+     "level": 2,
+     "q": "Which 2002 hit by Gidi Gidi Maji Maji became an election anthem?",
+     "a": "Unbwogable",
+     "wrong": [
+      "Jambo Bwana",
+      "Kuliko Jana",
+      "Nerea"
+     ],
+     "why": "It means 'unbeatable'."
+    },
+    {
+     "level": 2,
+     "q": "Who wrote the satirical essay 'How to Write About Africa'?",
+     "a": "Binyavanga Wainaina",
+     "wrong": [
+      "Ngũgĩ wa Thiong'o",
+      "Yvonne Owuor",
+      "Meja Mwangi"
+     ],
+     "why": "It appeared in Granta in 2005."
+    },
+    {
+     "level": 2,
+     "q": "Which Benga music star sang with the Shirati Jazz band?",
+     "a": "D. O. Misiani",
+     "wrong": [
+      "Fundi Konde",
+      "Daudi Kabaka",
+      "Joseph Kamaru"
+     ],
+     "why": "Benga grew among the Luo in the 1960s."
+    },
+    {
+     "level": 2,
+     "q": "Which character does Lupita Nyong'o play in 'Black Panther'?",
+     "a": "Nakia",
+     "wrong": [
+      "Shuri",
+      "Okoye",
+      "Ramonda"
+     ],
+     "why": "Nakia is a Wakandan spy."
+    },
+    {
+     "level": 3,
+     "q": "Which 2012 Kenyan film about a young actor was Kenya's Oscar entry?",
+     "a": "Nairobi Half Life",
+     "wrong": [
+      "Rafiki",
+      "Supa Modo",
+      "Soul Boy"
+     ],
+     "why": "David 'Tosh' Gitonga directed it."
+    },
+    {
+     "level": 3,
+     "q": "Which Kenyan author wrote 'Dust' (2013)?",
+     "a": "Yvonne Adhiambo Owuor",
+     "wrong": [
+      "Ngũgĩ wa Thiong'o",
+      "Margaret Ogola",
+      "Grace Ogot"
+     ],
+     "why": "It won the Jomo Kenyatta Prize for Literature."
+    },
+    {
+     "level": 3,
+     "q": "Which Kikuyu musician sang political and gospel songs for over five decades?",
+     "a": "Joseph Kamaru",
+     "wrong": [
+      "D. O. Misiani",
+      "Daudi Kabaka",
+      "John Nzenze"
+     ],
+     "why": "Some of his songs were banned in the 1970s and 80s."
+    }
+   ]
+  },
+  {
+   "name": "Kenya Food & Traditions",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Kenya's stiff maize porridge staple called?",
+     "a": "Ugali",
+     "wrong": [
+      "Pilau",
+      "Githeri",
+      "Chapati"
+     ],
+     "why": "It is eaten with stew or greens."
+    },
+    {
+     "level": 1,
+     "q": "What is grilled meat, a favourite at gatherings, called?",
+     "a": "Nyama choma",
+     "wrong": [
+      "Mutura",
+      "Mshikaki",
+      "Kuku paka"
+     ],
+     "why": "It means 'roasted meat'."
+    },
+    {
+     "level": 1,
+     "q": "Which leafy green is often served with ugali?",
+     "a": "Sukuma wiki",
+     "wrong": [
+      "Matoke",
+      "Mukimo",
+      "Githeri"
+     ],
+     "why": "Its name means 'stretch the week'."
+    },
+    {
+     "level": 1,
+     "q": "Which community is famous for its red shukas and jumping dance?",
+     "a": "Maasai",
+     "wrong": [
+      "Kikuyu",
+      "Luo",
+      "Kalenjin"
+     ],
+     "why": "The jump is part of the adumu ceremony."
+    },
+    {
+     "level": 1,
+     "q": "What is the dish of boiled maize and beans called?",
+     "a": "Githeri",
+     "wrong": [
+      "Ugali",
+      "Mukimo",
+      "Pilau"
+     ],
+     "why": "It is a Kikuyu staple."
+    },
+    {
+     "level": 1,
+     "q": "Which spiced rice dish is popular on the coast?",
+     "a": "Pilau",
+     "wrong": [
+      "Ugali",
+      "Githeri",
+      "Mandazi"
+     ],
+     "why": "It is cooked with cumin, cardamom and cloves."
+    },
+    {
+     "level": 1,
+     "q": "Which crop is Kenya the world's largest exporter of?",
+     "a": "Black tea",
+     "wrong": [
+      "Coffee",
+      "Cocoa",
+      "Vanilla"
+     ],
+     "why": "Kericho is the tea capital."
+    },
+    {
+     "level": 2,
+     "q": "What are mandazi?",
+     "a": "Fried sweet dough snacks",
+     "wrong": [
+      "Grilled meat skewers",
+      "Banana stews",
+      "Maize porridges"
+     ],
+     "why": "They are often flavoured with coconut or cardamom."
+    },
+    {
+     "level": 2,
+     "q": "What is mukimo?",
+     "a": "Mashed potatoes, greens, maize and beans",
+     "wrong": [
+      "Coconut fish curry",
+      "Fried dough",
+      "Roast goat"
+     ],
+     "why": "It is a Kikuyu dish."
+    },
+    {
+     "level": 2,
+     "q": "Which Swahili coastal festival celebrates culture with dhow races?",
+     "a": "Lamu Cultural Festival",
+     "wrong": [
+      "Rusinga Festival",
+      "Lake Turkana Festival",
+      "Mombasa Carnival"
+     ],
+     "why": "Donkey races are held too."
+    },
+    {
+     "level": 2,
+     "q": "What is a 'harambee'?",
+     "a": "A community fundraising effort",
+     "wrong": [
+      "A wedding feast",
+      "A harvest dance",
+      "A market day"
+     ],
+     "why": "Jomo Kenyatta made the word a national motto."
+    },
+    {
+     "level": 2,
+     "q": "Which coconut chicken curry is a coastal favourite?",
+     "a": "Kuku paka",
+     "wrong": [
+      "Nyama choma",
+      "Mutura",
+      "Pilau"
+     ],
+     "why": "It is often cooked over charcoal."
+    },
+    {
+     "level": 2,
+     "q": "What is mutura?",
+     "a": "A spiced sausage of goat or beef",
+     "wrong": [
+      "A banana beer",
+      "A sweet bun",
+      "A bean stew"
+     ],
+     "why": "It is sold by roadside grillers."
+    },
+    {
+     "level": 3,
+     "q": "In which lakeside town is the Lake Turkana Festival held?",
+     "a": "Loiyangalani",
+     "wrong": [
+      "Lodwar",
+      "Marsabit",
+      "Kalokol"
+     ],
+     "why": "It celebrates the cultures of northern Kenya."
+    },
+    {
+     "level": 3,
+     "q": "What is matoke?",
+     "a": "Cooked green bananas",
+     "wrong": [
+      "Fermented milk",
+      "Sorghum porridge",
+      "Fried fish"
+     ],
+     "why": "It is popular in western Kenya."
+    },
+    {
+     "level": 3,
+     "q": "What is mursik?",
+     "a": "Fermented milk of the Kalenjin",
+     "wrong": [
+      "A Maasai blanket",
+      "A Luo fish dish",
+      "A coastal sweet"
+     ],
+     "why": "It is stored in gourds smoked with charcoal."
+    }
+   ]
+  },
+  {
+   "name": "Kenya General Knowledge",
+   "questions": [
+    {
+     "level": 1,
+     "q": "What is Kenya's currency?",
+     "a": "Kenyan shilling",
+     "wrong": [
+      "Rand",
+      "Birr",
+      "Cedi"
+     ],
+     "why": "The Central Bank of Kenya issues it."
+    },
+    {
+     "level": 1,
+     "q": "What are Kenya's two official languages?",
+     "a": "Swahili and English",
+     "wrong": [
+      "Swahili and Kikuyu",
+      "English and French",
+      "Maasai and English"
+     ],
+     "why": "Over 40 local languages are spoken too."
+    },
+    {
+     "level": 1,
+     "q": "Which mobile money service started in Kenya in 2007?",
+     "a": "M-Pesa",
+     "wrong": [
+      "PayPal",
+      "Airtel Money",
+      "MTN MoMo"
+     ],
+     "why": "'Pesa' means money in Swahili."
+    },
+    {
+     "level": 1,
+     "q": "Which Kenyan won the 2004 Nobel Peace Prize?",
+     "a": "Wangari Maathai",
+     "wrong": [
+      "Ngũgĩ wa Thiong'o",
+      "Richard Leakey",
+      "Raila Odinga"
+     ],
+     "why": "She founded the Green Belt Movement."
+    },
+    {
+     "level": 1,
+     "q": "Which animals hold the shield on Kenya's coat of arms?",
+     "a": "Two lions",
+     "wrong": [
+      "Two elephants",
+      "Two zebras",
+      "Two leopards"
+     ],
+     "why": "The motto 'Harambee' is written beneath them."
+    },
+    {
+     "level": 1,
+     "q": "Which shield is at the centre of Kenya's flag?",
+     "a": "A Maasai shield with two spears",
+     "wrong": [
+      "A Zulu shield",
+      "A lion's head",
+      "A rising sun"
+     ],
+     "why": "It stands for the defence of freedom."
+    },
+    {
+     "level": 1,
+     "q": "What is Kenya's national motto?",
+     "a": "Harambee",
+     "wrong": [
+      "Uhuru",
+      "Hakuna Matata",
+      "Jambo"
+     ],
+     "why": "It means 'let us all pull together'."
+    },
+    {
+     "level": 2,
+     "q": "Which family of fossil hunters made famous finds in Kenya?",
+     "a": "The Leakeys",
+     "wrong": [
+      "The Attenboroughs",
+      "The Goodalls",
+      "The Johansons"
+     ],
+     "why": "The 'Turkana Boy' skeleton was found in 1984."
+    },
+    {
+     "level": 2,
+     "q": "Which Nairobi building is shaped like a traditional hut?",
+     "a": "Kenyatta International Convention Centre",
+     "wrong": [
+      "Times Tower",
+      "Britam Tower",
+      "Parliament Buildings"
+     ],
+     "why": "Its rooftop helipad gives views of the city."
+    },
+    {
+     "level": 2,
+     "q": "Which UN headquarters is in Nairobi?",
+     "a": "UN Environment Programme",
+     "wrong": [
+      "World Health Organization",
+      "UNESCO",
+      "UNICEF"
+     ],
+     "why": "UN-Habitat is also based there."
+    },
+    {
+     "level": 2,
+     "q": "What is the name of the Nairobi–Mombasa railway that opened in 2017?",
+     "a": "Madaraka Express",
+     "wrong": [
+      "Lunatic Express",
+      "Harambee Line",
+      "Uhuru Express"
+     ],
+     "why": "It runs on the Standard Gauge Railway."
+    },
+    {
+     "level": 2,
+     "q": "Which conservancy holds the last two northern white rhinos?",
+     "a": "Ol Pejeta",
+     "wrong": [
+      "Lewa",
+      "Solio",
+      "Nairobi National Park"
+     ],
+     "why": "Both are female."
+    },
+    {
+     "level": 2,
+     "q": "What does 'Hakuna matata' mean?",
+     "a": "No worries",
+     "wrong": [
+      "Welcome",
+      "Thank you",
+      "Good morning"
+     ],
+     "why": "'The Lion King' made it famous."
+    },
+    {
+     "level": 3,
+     "q": "Which 1.5-million-year-old skeleton was found near Lake Turkana in 1984?",
+     "a": "Turkana Boy",
+     "wrong": [
+      "Lucy",
+      "Mrs Ples",
+      "Taung Child"
+     ],
+     "why": "It is one of the most complete early human skeletons."
+    },
+    {
+     "level": 3,
+     "q": "Which mountain range near Nairobi is named after a Danish author's farm?",
+     "a": "Ngong Hills",
+     "wrong": [
+      "Aberdare Range",
+      "Chyulu Hills",
+      "Taita Hills"
+     ],
+     "why": "Karen Blixen wrote 'Out of Africa' about her farm there."
+    },
+    {
+     "level": 3,
+     "q": "In which year did Wangari Maathai found the Green Belt Movement?",
+     "a": "1977",
+     "wrong": [
+      "1990",
+      "1965",
+      "2004"
+     ],
+     "why": "It has planted over 50 million trees."
+    }
+   ]
+  }
+ ]
+}
