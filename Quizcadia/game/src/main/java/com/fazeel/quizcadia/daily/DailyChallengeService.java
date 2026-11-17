@@ -50,9 +50,17 @@ public class DailyChallengeService {
 	private final DailyChallengeRepository challenges;
 	private final GameSessionRepository sessions;
 	private final Clock clock;
+	private final com.fazeel.quizcadia.service.TopicPools pools;
 
 	public DailyChallengeService(GameRepository games, DailyChallengeRepository challenges,
 			GameSessionRepository sessions, Clock clock) {
+		this(games, challenges, sessions, clock, com.fazeel.quizcadia.service.TopicPools.none());
+	}
+
+	@org.springframework.beans.factory.annotation.Autowired
+	public DailyChallengeService(GameRepository games, DailyChallengeRepository challenges,
+			GameSessionRepository sessions, Clock clock, com.fazeel.quizcadia.service.TopicPools pools) {
+		this.pools = pools;
 		this.games = games;
 		this.challenges = challenges;
 		this.sessions = sessions;
@@ -72,7 +80,7 @@ public class DailyChallengeService {
 	public DailyChallenge challenge(LocalDate date) {
 		String key = date.toString();
 		return challenges.findById(key).orElseGet(() -> {
-			DailyChallenge built = build(date, games.findAll());
+			DailyChallenge built = build(date, pools.withPools(games.findAll()));
 			try {
 				return challenges.insert(built);
 			}
@@ -136,7 +144,9 @@ public class DailyChallengeService {
 			String topic = g.getTopic() == null || g.getTopic().getTopicName() == null ? g.getGameName()
 					: g.getTopic().getTopicName();
 			for (Questions q : g.getQuestions() == null ? List.<Questions>of() : g.getQuestions()) {
-				if (QuizBuilder.isPlayable(q) && seenIds.add(q.getQuestionId())) {
+				// everyone gets the same challenge, so country-specific questions are left out
+				if (QuizBuilder.isPlayable(q) && (q.getCountry() == null || q.getCountry().isBlank())
+						&& seenIds.add(q.getQuestionId())) {
 					byLevelAndTopic.get(Difficulty.fromLevel(q.getQuestionLevel()))
 							.computeIfAbsent(topic, t -> new ArrayList<>()).add(new Pick(q, g, topic));
 				}

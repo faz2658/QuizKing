@@ -16,6 +16,8 @@ x-service: &service
     CONFIG_SERVER_URL: http://config:8083
     KAFKA_BOOTSTRAP_SERVERS: kafka:9092
     GAME_MANAGER_URL: http://game-manager:9091
+    # The game engines load a topic's questions from the question service when a game starts
+    QUESTION_GENERATOR_URL: http://question-generator:9090
     # Every service checks the tokens the login service signs with this secret
     QUIZCADIA_JWT_SECRET: ${QUIZCADIA_JWT_SECRET:?set QUIZCADIA_JWT_SECRET (32+ characters)}
     # The site's own address (production: https://<site>). Behind the proxy the services see plain http,

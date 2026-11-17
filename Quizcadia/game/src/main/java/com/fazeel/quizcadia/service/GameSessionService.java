@@ -36,11 +36,19 @@ public class GameSessionService {
 	private final GameEvents events;
 	private final SeenQuestionRepository seen;
 	private final QuizBuilder quizBuilder;
+	private final TopicPools pools;
 	private final Clock clock;
 	private final java.util.random.RandomGenerator random = new java.security.SecureRandom();
 
 	public GameSessionService(GameRepository games, GameSessionRepository sessions, GameEvents events,
 			SeenQuestionRepository seen, QuizBuilder quizBuilder, Clock clock) {
+		this(games, sessions, events, seen, quizBuilder, clock, TopicPools.none());
+	}
+
+	@org.springframework.beans.factory.annotation.Autowired
+	public GameSessionService(GameRepository games, GameSessionRepository sessions, GameEvents events,
+			SeenQuestionRepository seen, QuizBuilder quizBuilder, Clock clock, TopicPools pools) {
+		this.pools = pools;
 		this.games = games;
 		this.sessions = sessions;
 		this.events = events;
@@ -63,10 +71,10 @@ public class GameSessionService {
 
 	/** @param country the player's country (ISO code, may be null): most questions then come from it */
 	public GameSession start(int gameId, int userId, String playerName, String country) {
-		Game game = games.findById(gameId).orElseThrow(() -> {
+		Game game = pools.withPool(games.findById(gameId).orElseThrow(() -> {
 			events.requestGame(new GameRequest(gameId, userId));
 			return new GameNotReadyException(gameId);
-		});
+		}));
 		List<Integer> poolIds = game.getQuestions() == null ? List.of()
 				: game.getQuestions().stream().filter(java.util.Objects::nonNull).map(Questions::getQuestionId).toList();
 		Map<Integer, Instant> lastSeen = seen.findByUserIdAndQuestionIdIn(userId, poolIds).stream()
@@ -112,10 +120,10 @@ public class GameSessionService {
 		}
 		List<Game> picked = new java.util.ArrayList<>();
 		for (int id : ids) {
-			picked.add(games.findById(id).orElseThrow(() -> {
+			picked.add(pools.withPool(games.findById(id).orElseThrow(() -> {
 				events.requestGame(new GameRequest(id, userId));
 				return new GameNotReadyException(id);
-			}));
+			})));
 		}
 		Map<Integer, Questions> pool = new java.util.LinkedHashMap<>();
 		picked.forEach(g -> java.util.Objects.requireNonNullElse(g.getQuestions(), List.<Questions>of()).stream()

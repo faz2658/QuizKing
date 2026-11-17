@@ -24,6 +24,8 @@ public class SecurityConfig {
 	SecurityFilterChain security(HttpSecurity http) throws Exception {
 		return ApiSecurity.build(http, auth -> auth
 				.requestMatchers(HttpMethod.GET, "/api/v1/question-generator/stats").permitAll()
+				// the game engines load a topic's questions here; nginx keeps /internal/ off the public site
+				.requestMatchers(HttpMethod.GET, "/internal/topics/**").permitAll()
 				.requestMatchers(HttpMethod.POST, "/api/v1/question-generator/feedback").authenticated()
 				.requestMatchers("/api/v1/question-generator/topic-quizzes", "/api/v1/question-generator/topic-quizzes/**").authenticated()
 				.anyRequest().hasRole(ADMIN));

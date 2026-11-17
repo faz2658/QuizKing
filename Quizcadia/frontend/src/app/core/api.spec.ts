@@ -2,7 +2,7 @@ import { provideHttpClient } from '@angular/common/http';
 import { HttpTestingController, provideHttpClientTesting } from '@angular/common/http/testing';
 import { TestBed } from '@angular/core/testing';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
-import { CatalogApi, QuizApi } from './api';
+import { AdaptiveApi, CatalogApi, QuizApi } from './api';
 import { GameCard } from './models';
 import { World } from './world';
 
@@ -75,6 +75,10 @@ describe('API clients', () => {
     // an International quiz asks for every country instead of the player's own
     TestBed.inject(QuizApi).start(5, 9, true).subscribe();
     expect(http.expectOne('/api/v1/sessions').request.body).toEqual({ gameId: 5, userId: 9, international: true });
+
+    // adaptive runs leave other countries' questions out too
+    TestBed.inject(AdaptiveApi).start(5, 9).subscribe();
+    expect(http.expectOne('/api/v1/adaptive/sessions').request.body).toEqual({ gameId: 5, userId: 9, country: 'IN' });
 
     world.setCountry(null);
     http.match(others);

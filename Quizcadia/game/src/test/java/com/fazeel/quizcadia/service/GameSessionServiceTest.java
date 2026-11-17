@@ -14,6 +14,7 @@ import java.time.Clock;
 import java.time.Instant;
 import java.time.ZoneOffset;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
@@ -70,6 +71,21 @@ class GameSessionServiceTest {
 
 	private Game twoQuestionGame() {
 		return game(5, null, question(1, 1, "a", "a", "b"), question(2, 1, "c", "c", "d"));
+	}
+
+	@Test
+	void aGameThatReferencesItsTopicIsPlayedWithTheTopicsQuestions() {
+		service = new GameSessionService(games, sessions, events, seen, new QuizBuilder(new Random(1)), clock,
+				new TopicPools(id -> id == 7 ? List.of(question(1, 1, "a", "a", "b"), question(2, 1, "c", "c", "d")) : List.of(),
+						clock, java.time.Duration.ofMinutes(10)));
+		Game g = game(5, null);
+		g.setQuestions(null);
+		g.setTopic(new com.fazeel.quizcadia.domain.Topic(7, "History", null, null));
+		when(games.findById(5)).thenReturn(Optional.of(g));
+
+		GameSession s = service.start(5, 42);
+
+		assertThat(s.getQuestions()).hasSize(2);
 	}
 
 	@Test

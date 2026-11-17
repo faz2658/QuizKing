@@ -32,6 +32,25 @@ public class QuestionSelector {
 		return playable;
 	}
 
+	/**
+	 * Checks a game's level mix against what a topic has per level (easy, medium, advanced), the same way
+	 * {@link #pool} does, for topics whose questions are not copied into the game manager.
+	 */
+	public void require(int[] available, GameQuestionLevel mix) {
+		if (mix == null || total(mix) <= 0) {
+			throw new InvalidGameException("A game needs at least one question (easy, medium or advanced)");
+		}
+		if (mix.getEasyLevel() < 0 || mix.getMediumLevel() < 0 || mix.getAdvancedLevel() < 0) {
+			throw new InvalidGameException("Question counts cannot be negative");
+		}
+		int[] wanted = { mix.getEasyLevel(), mix.getMediumLevel(), mix.getAdvancedLevel() };
+		for (int level = 1; level <= 3; level++) {
+			if (available[level - 1] < wanted[level - 1]) {
+				throw new NotEnoughQuestionsException(level, wanted[level - 1], available[level - 1]);
+			}
+		}
+	}
+
 	/** Playable questions of any type (hand-written, generated or imported). */
 	public static List<Questions> playable(List<Questions> bank) {
 		return bank == null ? List.of() : bank.stream().filter(q -> q != null && isPlayable(q)).toList();

@@ -28,15 +28,22 @@ public class MatchService {
 	private final SeenQuestionRepository seen;
 	private final Clock clock;
 	private final MatchUpdates updates;
+	private final TopicPools pools;
 
 	public MatchService(MatchRepository matches, GameRepository games, GameSource gameSource, MatchFactory factory,
 			MatchEvents events, SeenQuestionRepository seen, Clock clock) {
-		this(matches, games, gameSource, factory, events, seen, clock, new MatchUpdates());
+		this(matches, games, gameSource, factory, events, seen, clock, new MatchUpdates(), TopicPools.none());
+	}
+
+	public MatchService(MatchRepository matches, GameRepository games, GameSource gameSource, MatchFactory factory,
+			MatchEvents events, SeenQuestionRepository seen, Clock clock, MatchUpdates updates) {
+		this(matches, games, gameSource, factory, events, seen, clock, updates, TopicPools.none());
 	}
 
 	@org.springframework.beans.factory.annotation.Autowired
 	public MatchService(MatchRepository matches, GameRepository games, GameSource gameSource, MatchFactory factory,
-			MatchEvents events, SeenQuestionRepository seen, Clock clock, MatchUpdates updates) {
+			MatchEvents events, SeenQuestionRepository seen, Clock clock, MatchUpdates updates, TopicPools pools) {
+		this.pools = pools;
 		this.updates = updates;
 		this.matches = matches;
 		this.games = games;
@@ -58,9 +65,9 @@ public class MatchService {
 	/** Starts the match for players found by the player matcher. Replayed events are ignored. */
 	public MultiplayerMatch start(Match match) {
 		return matches.findById(match.matchId()).orElseGet(() -> {
-			MultiPlayerGame game = games.findById(match.gameId())
+			MultiPlayerGame game = pools.withPool(games.findById(match.gameId())
 					.or(() -> gameSource.fetch(match.gameId()).map(games::save))
-					.orElseThrow(() -> new NotFoundException("No multiplayer game " + match.gameId()));
+					.orElseThrow(() -> new NotFoundException("No multiplayer game " + match.gameId())));
 			List<Integer> ids = game.autoquestions() == null ? List.of()
 					: game.autoquestions().stream().filter(java.util.Objects::nonNull)
 							.map(MultiPlayerGame.Question::questionId).toList();

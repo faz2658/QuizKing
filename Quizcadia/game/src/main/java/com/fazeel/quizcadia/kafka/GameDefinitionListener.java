@@ -31,8 +31,9 @@ public class GameDefinitionListener {
 			log.warn("Ignoring game definition without an id");
 			return;
 		}
-		log.info("Caching game {} ({} questions)", game.getGameId(),
-				game.getQuestions() == null ? 0 : game.getQuestions().size());
+		log.info("Caching game {} ({} questions{})", game.getGameId(),
+				game.getQuestionCount() != null ? game.getQuestionCount() : game.getQuestions() == null ? 0 : game.getQuestions().size(),
+				game.getQuestions() == null || game.getQuestions().isEmpty() ? ", loaded from its topic when played" : "");
 		games.save(game);
 	}
 

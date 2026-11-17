@@ -299,9 +299,12 @@ export class BoardsApi {
 @Injectable({ providedIn: 'root' })
 export class AdaptiveApi {
   private readonly http = inject(HttpClient);
+  private readonly world = inject(World);
 
+  /** Sends the player's country (never shown) so other countries' questions stay out of shared topics. */
   start(gameId: number, userId: number): Observable<AdaptiveSession> {
-    return this.http.post<AdaptiveSession>('/api/v1/adaptive/sessions', { gameId, userId }).pipe(retryWhileLoading());
+    const c = this.world.country();
+    return this.http.post<AdaptiveSession>('/api/v1/adaptive/sessions', { gameId, userId, ...(c ? { country: c } : {}) }).pipe(retryWhileLoading());
   }
 
   session(id: string): Observable<AdaptiveSession> {
