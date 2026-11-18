@@ -31,6 +31,7 @@ import {
   LobbyStatus,
   MatchAnswer,
   MatchView,
+  HostAction,
   Progress,
   QuickStatus,
   ResultView,
@@ -376,6 +377,11 @@ export class MultiplayerApi {
     return this.http.post<RoomStatus>('/api/v1/matching/rooms', { gameId, party });
   }
 
+  /** A live room quiz on the big screen; {@code autoAdvance} moves on from each answer by itself. */
+  createQuiz(autoAdvance: boolean): Observable<RoomStatus> {
+    return this.http.post<RoomStatus>('/api/v1/matching/rooms', { gameId: 0, party: true, quiz: true, autoAdvance });
+  }
+
   room(code: string): Observable<RoomStatus> {
     return this.http.get<RoomStatus>(`/api/v1/matching/rooms/${encodeURIComponent(code)}`);
   }
@@ -406,6 +412,11 @@ export class MultiplayerApi {
     let params = new HttpParams().set('userId', userId);
     if (after) params = params.set('after', after);
     return this.http.get<MatchView>(`/api/v1/matches/${matchId}/next`, { params }).pipe(retryWhileLoading(10));
+  }
+
+  /** The host's big screen paces a room quiz. */
+  host(matchId: string, action: HostAction): Observable<MatchView> {
+    return this.http.post<MatchView>(`/api/v1/matches/${matchId}/host`, { action });
   }
 
   answer(matchId: string, userId: number, questionId: number, answer: string): Observable<MatchAnswer> {

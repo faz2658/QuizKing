@@ -4,6 +4,9 @@ import { adminGuard, playerGuard, welcomeGuard } from './core/auth.guard';
 export const routes: Routes = [
   { path: 'welcome', title: 'QuizCadia: free trivia quiz games, timed, adaptive and multiplayer', canActivate: [welcomeGuard], loadComponent: () => import('./pages/welcome').then((m) => m.Welcome) },
   { path: 'join/:code', title: 'Join QuizCadia', loadComponent: () => import('./pages/invite').then((m) => m.Join) },
+  // a live room quiz on a phone: scan the big screen's QR code, type a name, play (no account needed)
+  { path: 'live', title: 'Join a quiz · QuizCadia', loadComponent: () => import('./pages/live').then((m) => m.Live) },
+  { path: 'live/:code', title: 'Room quiz · QuizCadia', loadComponent: () => import('./pages/live').then((m) => m.Live) },
   { path: 'puzzles', title: 'Puzzle of the Day · QuizCadia', loadComponent: () => import('./pages/puzzles').then((m) => m.Puzzles) },
   { path: 'events', title: 'Private quiz nights · QuizCadia', loadComponent: () => import('./pages/events').then((m) => m.Events) },
   { path: 'venues', title: 'Trivia nights for venues · QuizCadia', loadComponent: () => import('./pages/venues').then((m) => m.Venues) },

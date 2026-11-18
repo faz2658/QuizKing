@@ -174,10 +174,37 @@ export interface MatchView {
     secondsRemaining: number;
     yourAnswer: string | null;
   } | null;
-  lastQuestion: { questionId: number; stem: string; correctAnswer: string; winnerUserId: number | null } | null;
+  lastQuestion: {
+    questionId: number;
+    stem: string;
+    correctAnswer: string;
+    winnerUserId: number | null;
+    /** 1-based position in the match. */
+    number?: number;
+    /** Room quiz: the options and how many picked each (same order). */
+    options?: string[] | null;
+    counts?: number[] | null;
+    answered?: number;
+  } | null;
   /** Changes whenever anything on the screen would; the server waits for a different one (see nextMatch). */
   version?: string;
+  /** A live room quiz (party mode) is host-paced; anything else is a fastest-finger match. */
+  format?: 'FASTEST_FINGER' | 'ROOM_QUIZ';
+  phase?: MatchPhase;
+  playerCount?: number;
+  /** How many answered the open question. */
+  answered?: number;
+  /** Room quiz: seconds until the first question opens. */
+  secondsToStart?: number;
+  /** Room quiz: seconds until the next question opens by itself (0: the host moves on). */
+  secondsToNext?: number;
+  revealSeconds?: number;
+  /** Room quiz: this player's rank and how their last answer went (null for the big screen). */
+  you?: { rank: number | null; score: number; lastAnswer: string | null; lastCorrect: boolean; lastPoints: number } | null;
 }
+
+export type MatchPhase = 'GET_READY' | 'QUESTION' | 'REVEAL' | 'FINISHED';
+export type HostAction = 'REVEAL' | 'NEXT' | 'END';
 
 export interface MatchAnswer {
   correct: boolean;
@@ -391,6 +418,8 @@ export interface RoomStatus {
   maxPlayers: number;
   /** A big-screen party: the host shows the game and doesn't play. */
   party: boolean;
+  /** A live room quiz: 20 random medium questions from every topic, no game. */
+  quiz?: boolean;
 }
 
 export interface ChallengeView {
