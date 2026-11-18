@@ -5,9 +5,12 @@ on:
   pull_request:
   workflow_dispatch: # "Run workflow" button on the Actions tab
 
+# On a feature branch or pull request a new push cancels the run it replaces. On master every commit gets a run of
+# its own, never cancelled: the deploy only follows a CI run that passed, so a cancelled master run (a new merge, or
+# re-running an older commit) would leave that commit undeployed.
 concurrency:
-  group: ci-${{ github.ref }}
-  cancel-in-progress: true
+  group: ci-${{ github.ref == 'refs/heads/master' && github.sha || github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
 
 jobs:
   backend:
