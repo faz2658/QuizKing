@@ -1,0 +1,5 @@
+# Profile "docker": the whole platform with docker compose on a developer machine (docker-compose.yml).
+management:
+  endpoint:
+    health:
+      show-details: always

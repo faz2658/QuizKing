@@ -1,0 +1,19 @@
+# Profile "prod": the live server (docker-compose.prod.yml sets SPRING_PROFILES_ACTIVE=prod on every app service).
+# Only tuning lives here: the config server is optional at startup, so nothing a service needs to be safe may depend
+# on this file (secrets and addresses come from the environment, see docker-compose.yml and .env).
+logging:
+  level:
+    com.fazeel: INFO
+    # these log every connection, rebalance and pool event at INFO
+    org.apache.kafka: WARN
+    org.mongodb.driver: WARN
+management:
+  endpoint:
+    health:
+      show-details: never
+# The game manager's OpenAPI docs and Swagger UI: for development only
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false

@@ -20,9 +20,32 @@ services:
       - caddy-config:/config
     depends_on: [frontend]
 
+  # The live server runs every app service with the "prod" Spring profile (config-repo/application-prod.yml).
+  question-generator:
+    environment: { SPRING_PROFILES_ACTIVE: prod }
+  game-manager:
+    environment: { SPRING_PROFILES_ACTIVE: prod }
+  game-engine:
+    environment: { SPRING_PROFILES_ACTIVE: prod }
+  multiplayer-game-engine:
+    environment: { SPRING_PROFILES_ACTIVE: prod }
+  adaptive-game-engine:
+    environment: { SPRING_PROFILES_ACTIVE: prod }
+  player-matcher:
+    environment: { SPRING_PROFILES_ACTIVE: prod }
+  recommendations:
+    environment: { SPRING_PROFILES_ACTIVE: prod }
+  search-service:
+    environment: { SPRING_PROFILES_ACTIVE: prod }
+  user-service:
+    environment: { SPRING_PROFILES_ACTIVE: prod }
+  game-reporting:
+    environment: { SPRING_PROFILES_ACTIVE: prod }
+
   # Only Caddy is public; databases, Kafka and dashboards stay inside the Docker network.
   login:
     environment:
+      SPRING_PROFILES_ACTIVE: prod
       PUBLIC_URL: https://${SITE_ADDRESS}
   frontend:
     ports: !reset []
