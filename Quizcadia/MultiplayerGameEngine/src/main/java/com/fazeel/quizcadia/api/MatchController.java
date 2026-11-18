@@ -65,14 +65,48 @@ public class MatchController {
 		java.util.function.Supplier<MatchView> fresh = () -> MatchView.of(service.get(matchId, userId), userId, clock.instant());
 		var result = new org.springframework.web.context.request.async.DeferredResult<MatchView>(wait,
 				(java.util.function.Supplier<Object>) () -> fresh.get());
-		Runnable stop = updates.await(matchId, () -> result.setResult(fresh.get()));
-		result.onCompletion(stop);
+		java.util.concurrent.atomic.AtomicReference<Runnable> stop = new java.util.concurrent.atomic.AtomicReference<>(() -> {
+		});
+		result.onCompletion(() -> stop.get().run());
+		awaitChange(matchId, after, fresh, result, stop);
 		// a change between reading the match and registering would otherwise wait for the timeout
 		MatchView recheck = fresh.get();
 		if (!recheck.version().equals(after)) {
 			result.setResult(recheck);
 		}
 		return result;
+	}
+
+	/** The host's big screen paces a room quiz: REVEAL the answer, NEXT question, or END it. */
+	@PostMapping("/{matchId}/host")
+	public MatchView host(@PathVariable String matchId, @Valid @RequestBody Views.HostRequest request) {
+		int userId = com.fazeel.quizcadia.auth.Callers.currentUserId();
+		return MatchView.of(service.host(matchId, userId, request.action()), userId, clock.instant());
+	}
+
+	/**
+	 * Answers {@code result} at the next change that this viewer would see. A change they wouldn't (on a phone in a
+	 * room quiz, someone else's answer) waits again instead of sending the same view back.
+	 */
+	private void awaitChange(String matchId, String after, java.util.function.Supplier<MatchView> fresh,
+			org.springframework.web.context.request.async.DeferredResult<MatchView> result,
+			java.util.concurrent.atomic.AtomicReference<Runnable> stop) {
+		stop.set(updates.await(matchId, () -> {
+			if (result.isSetOrExpired()) {
+				return;
+			}
+			try {
+				MatchView view = fresh.get();
+				if (!view.version().equals(after)) {
+					result.setResult(view);
+				} else {
+					awaitChange(matchId, after, fresh, result, stop);
+				}
+			}
+			catch (RuntimeException e) {
+				result.setErrorResult(e); // never fail the request whose save woke us
+			}
+		}));
 	}
 
 	@PostMapping("/{matchId}/answers")

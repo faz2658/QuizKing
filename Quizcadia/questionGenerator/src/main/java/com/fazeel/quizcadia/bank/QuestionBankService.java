@@ -239,6 +239,20 @@ public class QuestionBankService {
 				.orElseThrow(() -> new NotFoundException("No topic " + topicId)));
 	}
 
+	/**
+	 * A quiz across every topic for the live room quiz: {@code count} general questions of one level, spread over the
+	 * topics (see {@link QuestionMix}).
+	 */
+	public List<Questions> mixedQuestions(int level, int count, java.util.random.RandomGenerator random) {
+		Map<Integer, List<Questions>> byTopic = new java.util.HashMap<>();
+		for (Category c : categories.findAll()) {
+			for (Topic t : topics(c)) {
+				byTopic.computeIfAbsent(t.getTopicId(), k -> new ArrayList<>()).addAll(questions(t));
+			}
+		}
+		return QuestionMix.pick(byTopic, level, count, random);
+	}
+
 	private static List<Topic> topics(Category c) {
 		return c.getTopic() == null ? List.of() : c.getTopic();
 	}

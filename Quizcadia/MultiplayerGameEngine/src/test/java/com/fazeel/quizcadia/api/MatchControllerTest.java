@@ -134,4 +134,65 @@ class MatchControllerTest {
 				.content("{\"userId\":1,\"questionId\":5,\"answer\":\"Lima\"}")).andExpect(status().isForbidden());
 		mvc.perform(get("/api/v1/matches/m1").param("userId", "1")).andExpect(status().isUnauthorized());
 	}
+
+	static MultiplayerMatch roomQuiz() {
+		return MultiplayerMatch.roomQuiz("q1", List.of(1, 2), java.util.Map.of(1, "Ada", 2, "Bo"),
+				List.of(new MatchQuestion(5, "Capital of Peru?", List.of("Lima", "Quito"), "Lima"),
+						new MatchQuestion(6, "Capital of Chile?", List.of("Santiago", "Lima"), "Santiago")),
+				20, 0, 50, NOW.minus(MultiplayerMatch.LEAD_IN));
+	}
+
+	@Test
+	void aPhoneInARoomQuizKeepsWaitingThroughOtherPlayersAnswers() throws Exception {
+		MultiplayerMatch m = roomQuiz();
+		when(service.get("q1", 1)).thenReturn(m);
+		String current = com.fazeel.quizcadia.api.Views.MatchView.of(m, 1, NOW).version();
+		var waiting = mvc.perform(get("/api/v1/matches/q1/next").with(player(1)).param("userId", "1").param("after", current))
+				.andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.request().asyncStarted()).andReturn();
+		Thread.sleep(100);
+
+		m.answer(2, 5, "Lima", NOW.plusSeconds(1)); // someone else answers: nothing new on this phone
+		updates.changed("q1");
+		Thread.sleep(50);
+		org.assertj.core.api.Assertions.assertThat(updates.waitingFor("q1")).isEqualTo(1);
+
+		m.answer(1, 5, "Quito", NOW.plusSeconds(2)); // its own answer, the last one: the answer shows
+		updates.changed("q1");
+		mvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.asyncDispatch(waiting))
+				.andExpect(status().isOk())
+				.andExpect(jsonPath("$.phase").value("REVEAL"))
+				.andExpect(jsonPath("$.format").value("ROOM_QUIZ"))
+				.andExpect(jsonPath("$.lastQuestion.correctAnswer").value("Lima"))
+				.andExpect(jsonPath("$.lastQuestion.counts[0]").value(1))
+				.andExpect(jsonPath("$.lastQuestion.counts[1]").value(1))
+				.andExpect(jsonPath("$.you.rank").value(2))
+				.andExpect(jsonPath("$.you.lastCorrect").value(false))
+				.andExpect(jsonPath("$.you.lastAnswer").value("Quito"));
+	}
+
+	@Test
+	void theBigScreenSeesHowManyAnswered() throws Exception {
+		MultiplayerMatch m = roomQuiz();
+		m.answer(2, 5, "Lima", NOW.plusSeconds(1));
+		when(service.get("q1", 50)).thenReturn(m);
+
+		mvc.perform(get("/api/v1/matches/q1").with(player(50)).param("userId", "50")).andExpect(status().isOk())
+				.andExpect(jsonPath("$.phase").value("QUESTION"))
+				.andExpect(jsonPath("$.answered").value(1))
+				.andExpect(jsonPath("$.playerCount").value(2))
+				.andExpect(jsonPath("$.you").doesNotExist())
+				.andExpect(content().string(not(containsString("correctAnswer\":\"Lima"))));
+	}
+
+	@Test
+	void theHostPacesTheQuizAsTheCaller() throws Exception {
+		MultiplayerMatch m = roomQuiz();
+		when(service.host("q1", 50, MultiplayerMatch.HostAction.REVEAL)).thenReturn(m);
+
+		mvc.perform(post("/api/v1/matches/q1/host").with(player(50)).contentType(MediaType.APPLICATION_JSON)
+				.content("{\"action\":\"REVEAL\"}")).andExpect(status().isOk())
+				.andExpect(jsonPath("$.matchId").value("q1"));
+		mvc.perform(post("/api/v1/matches/q1/host").with(player(50)).contentType(MediaType.APPLICATION_JSON)
+				.content("{}")).andExpect(status().isBadRequest());
+	}
 }

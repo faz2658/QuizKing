@@ -18,7 +18,8 @@ import com.fazeel.quizcadia.matching.PrivateRooms.RoomException;
 import com.fazeel.quizcadia.matching.PrivateRooms.RoomStatus;
 
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.AssertTrue;
+import jakarta.validation.constraints.PositiveOrZero;
 
 /** Private rooms with a join code. The player is always the caller (from the token). */
 @RestController
@@ -31,13 +32,24 @@ public class RoomController {
 		this.rooms = rooms;
 	}
 
-	/** {@code party}: a big-screen party where the host shows the game and doesn't play. */
-	public record CreateRoom(@Positive int gameId, boolean party) {
+	/**
+	 * {@code party}: a big-screen party where the host shows the game and doesn't play. {@code quiz}: a live room
+	 * quiz instead of a game (no {@code gameId}); {@code autoAdvance} moves on from each answer by itself.
+	 */
+	public record CreateRoom(@PositiveOrZero int gameId, boolean party, boolean quiz, boolean autoAdvance) {
+
+		@AssertTrue(message = "Pick a game")
+		public boolean isGameChosen() {
+			return quiz || gameId > 0;
+		}
 	}
 
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public RoomStatus create(@Valid @RequestBody CreateRoom request) {
+		if (request.quiz()) {
+			return rooms.createQuiz(Callers.currentUserId(), Callers.currentUserName(), request.autoAdvance());
+		}
 		return rooms.create(request.gameId(), Callers.currentUserId(), Callers.currentUserName(), request.party());
 	}
 

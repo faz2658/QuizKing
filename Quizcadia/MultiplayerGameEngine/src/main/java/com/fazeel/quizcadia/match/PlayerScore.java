@@ -40,6 +40,11 @@ public class PlayerScore {
 		questionsWon++;
 	}
 
+	/** A wrong answer that costs nothing (room quiz). */
+	void missed() {
+		wrongAnswers++;
+	}
+
 	void wrong(int penalty) {
 		score = Math.max(0, score - penalty);
 		wrongAnswers++;

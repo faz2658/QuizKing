@@ -75,6 +75,22 @@ public class MatchFactory {
 	}
 
 	/**
+	 * A live room quiz from {@code pool}, asked in that order (the question service already shuffled it). Malformed
+	 * and repeated questions are dropped; options are shuffled like in any match.
+	 */
+	public MultiplayerMatch roomQuiz(Match match, List<MultiPlayerGame.Question> pool, Instant now) {
+		Match.RoomQuiz rules = match.quiz();
+		java.util.Set<Integer> ids = new java.util.HashSet<>();
+		List<MatchQuestion> questions = pool.stream().filter(q -> q != null && ids.add(q.questionId()))
+				.map(this::toQuestion).flatMap(java.util.Optional::stream).limit(Math.max(1, rules.questions())).toList();
+		return MultiplayerMatch.roomQuiz(match.matchId(), match.players(), match.names(), questions,
+				rules.secondsPerQuestion() > 0 ? rules.secondsPerQuestion() : ROOM_QUIZ_SECONDS, rules.revealSeconds(),
+				match.screenId(), now);
+	}
+
+	static final int ROOM_QUIZ_SECONDS = 20;
+
+	/**
 	 * The game's level mix (or {@code target} questions) from {@code candidates}, preferring questions that the
 	 * fewest of the players have seen: per level only unseen ones first, then the least-seen of the rest.
 	 */

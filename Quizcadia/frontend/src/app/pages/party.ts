@@ -10,6 +10,8 @@ import { flag } from '../core/countries';
 import { errorMessage } from '../core/http-errors';
 import { GameCard, MatchView, RoomStatus } from '../core/models';
 import { livePoll } from '../core/live-poll';
+import { liveJoinUrl } from '../core/room-quiz';
+import { RoomQuizScreen } from './room-quiz-screen';
 
 /** Pick a multiplayer game for a big-screen party. */
 @Component({
@@ -22,7 +24,18 @@ import { livePoll } from '../core/live-poll';
     <p class="muted lead">Open this on the big screen. Everyone joins on their phone with a QR code, up to 30 players,
       and the screen shows the questions and a live leaderboard.</p>
     @if (error()) { <div class="alert" role="alert">{{ error() }}</div> }
-    <h2>Pick a game</h2>
+    <section class="card spotlight quiz">
+      <div>
+        <span class="badge"><span class="dot"></span>New · no sign-up for players</span>
+        <h2>Room quiz</h2>
+        <p class="muted">20 random medium questions from every topic. Everyone scans the QR code, types a name and
+          answers on their phone; the screen shows each answer, how the room voted and the leaderboard.</p>
+        <label class="auto"><input type="checkbox" [checked]="autoAdvance()" (change)="autoAdvance.set($any($event.target).checked)" />
+          Move on by itself (8 s after each answer)</label>
+      </div>
+      <button class="btn btn-primary big" [disabled]="busy()" (click)="startQuiz()">Start a room quiz</button>
+    </section>
+    <h2>Or pick a game</h2>
     <div class="grid">
       @for (g of games(); track g.gameId) {
         <button class="card spotlight pick" [disabled]="busy()" (click)="start(g.gameId)">
@@ -38,6 +51,11 @@ import { livePoll } from '../core/live-poll';
     h1 { margin: 8px 0; }
     .lead { max-width: 60ch; }
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 14px; }
+    .quiz { display: flex; gap: 20px; align-items: center; justify-content: space-between; flex-wrap: wrap; padding: 22px; margin: 18px 0 8px; }
+    .quiz > div { flex: 1 1 320px; }
+    .quiz h2 { margin: 8px 0 4px; }
+    .auto { display: flex; gap: 8px; align-items: center; font-weight: 600; margin-top: 8px; }
+    .big { padding: 16px 26px; font-size: 1.1rem; }
     .pick { display: flex; flex-direction: column; gap: 4px; padding: 18px; text-align: left; cursor: pointer; color: inherit; font: inherit; }
   `,
 })
@@ -48,6 +66,18 @@ export class PartyStart {
   protected readonly games = toSignal(this.catalog.multiplayerGames(WORLD), { initialValue: [] as GameCard[] });
   protected readonly busy = signal(false);
   protected readonly error = signal<string | null>(null);
+  protected readonly autoAdvance = signal(false);
+
+  protected startQuiz(): void {
+    this.busy.set(true);
+    this.api.createQuiz(this.autoAdvance()).subscribe({
+      next: (r) => this.router.navigate(['/party', r.code]),
+      error: (e) => {
+        this.busy.set(false);
+        this.error.set(errorMessage(e));
+      },
+    });
+  }
 
   protected start(gameId: number): void {
     this.busy.set(true);
@@ -68,12 +98,15 @@ const REVEAL_MS = 4000;
 /** The big screen: join code and QR while players gather, then the live questions, reveals and leaderboard. */
 @Component({
   selector: 'mv-party-screen',
-  imports: [RouterLink],
+  imports: [RouterLink, RoomQuizScreen],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (error()) {
       <div class="alert" role="alert">{{ error() }}</div>
       <a class="btn" routerLink="/party">Start a new party</a>
+    } @else if (quizMatchId(); as id) {
+      <mv-room-quiz-screen [matchId]="id" (again)="quizAgain($event)" />
+      <p class="muted small join-hint">Late? Join at {{ shortLink() }}</p>
     } @else if (match(); as m) {
       @if (m.status === 'COMPLETED') {
         <section class="final">
@@ -132,13 +165,13 @@ const REVEAL_MS = 4000;
     } @else if (room(); as r) {
       <section class="join">
         <div class="how">
-          <span class="badge"><span class="dot"></span>Party mode</span>
+          <span class="badge"><span class="dot"></span>{{ r.quiz ? 'Room quiz · 20 questions · medium' : 'Party mode' }}</span>
           <h1>Scan to join</h1>
-          <p class="muted">or open <strong>{{ shortLink() }}</strong> and enter</p>
+          <p class="muted">or open <strong>{{ shortLink() }}</strong>{{ r.quiz ? '' : ' and enter' }}</p>
           <div class="code">{{ r.code }}</div>
           <div class="row">
-            <button class="btn btn-primary big" [disabled]="r.players.length < 2 || busy()" (click)="start()">
-              {{ r.players.length < 2 ? 'Waiting for players…' : 'Start with ' + r.players.length + ' players' }}
+            <button class="btn btn-primary big" [disabled]="r.players.length < minPlayers() || busy()" (click)="start()">
+              {{ r.players.length < minPlayers() ? 'Waiting for players…' : 'Start with ' + r.players.length + (r.players.length === 1 ? ' player' : ' players') }}
             </button>
             <button class="btn btn-ghost" (click)="fullscreen()">⛶ Full screen</button>
           </div>
@@ -184,6 +217,7 @@ const REVEAL_MS = 4000;
     .board ol { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 8px; }
     .board li { display: flex; justify-content: space-between; padding: 12px 14px; border-radius: 12px; background: var(--surface); border: 1px solid var(--border); font-size: 1.05rem; }
     .small { font-size: 0.85rem; margin-top: 14px; }
+    .join-hint { text-align: right; }
     .final { text-align: center; }
     .final h1 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
     .podium { display: flex; justify-content: center; align-items: flex-end; gap: 18px; margin: 30px 0; }
@@ -216,8 +250,18 @@ export class PartyScreen implements OnInit {
   private lastRevealId: number | null = null;
   private poll?: Subscription;
 
-  protected readonly joinUrl = computed(() => `${location.origin}/room/${this.code()}`);
-  protected readonly shortLink = computed(() => `${location.host}/room/${this.code()}`);
+  /** A room quiz's phones join at /live/<code> without an account; other parties use the private room page. */
+  protected readonly quiz = computed(() => this.room()?.quiz === true);
+  protected readonly joinUrl = computed(() =>
+    this.quiz() ? liveJoinUrl(location.origin, this.code()) : `${location.origin}/room/${this.code()}`,
+  );
+  protected readonly shortLink = computed(() => `${location.host}/${this.quiz() ? 'live' : 'room'}/${this.code()}`);
+  protected readonly minPlayers = computed(() => (this.quiz() ? 1 : 2));
+  /** A started room quiz: its own screen follows the match. */
+  protected readonly quizMatchId = computed(() => {
+    const r = this.room();
+    return r?.quiz && r.state === 'STARTED' ? r.matchId : null;
+  });
   protected readonly podium = computed(() => this.match()?.standings.slice(0, 3) ?? []);
   protected readonly reveal = computed(() => {
     const m = this.match();
@@ -246,7 +290,8 @@ export class PartyScreen implements OnInit {
     this.poll = livePoll(() => this.api.room(this.code()), { every: 1500, max: 4000 }).subscribe({
       next: (r) => {
         this.room.set(r);
-        if (r.state === 'STARTED' && r.matchId) this.follow(r.matchId);
+        if (r.state === 'STARTED' && r.matchId && r.quiz) this.poll?.unsubscribe(); // the quiz screen takes over
+        else if (r.state === 'STARTED' && r.matchId) this.follow(r.matchId);
         if (r.state === 'CLOSED') this.error.set('This party has closed.');
       },
       error: (e) => this.error.set(errorMessage(e)),
@@ -258,7 +303,8 @@ export class PartyScreen implements OnInit {
     this.api.startRoom(this.code()).subscribe({
       next: (r) => {
         this.room.set(r);
-        if (r.matchId) this.follow(r.matchId);
+        if (r.matchId && r.quiz) this.poll?.unsubscribe();
+        else if (r.matchId) this.follow(r.matchId);
       },
       error: (e) => {
         this.busy.set(false);
@@ -269,6 +315,13 @@ export class PartyScreen implements OnInit {
 
   protected again(gameId: number): void {
     this.api.createRoom(gameId, true).subscribe({
+      next: (r) => this.router.navigate(['/party', r.code]).then(() => location.reload()),
+      error: (e) => this.error.set(errorMessage(e)),
+    });
+  }
+
+  protected quizAgain(autoAdvance: boolean): void {
+    this.api.createQuiz(autoAdvance).subscribe({
       next: (r) => this.router.navigate(['/party', r.code]).then(() => location.reload()),
       error: (e) => this.error.set(errorMessage(e)),
     });

@@ -50,4 +50,32 @@ describe('Party screen', () => {
     expect(el.querySelector('.board')?.textContent).toContain('Bo');
     f.destroy();
   });
+
+  it('puts the phone join link for a room quiz in the QR code and starts with one player', async () => {
+    const f = TestBed.createComponent(PartyScreen);
+    f.componentRef.setInput('code', 'KING-4821');
+    f.detectChanges();
+    http.expectOne('/api/v1/matching/rooms/KING-4821').flush(room({ gameId: 0, quiz: true, maxPlayers: 50 }));
+    await f.whenStable();
+    f.detectChanges();
+    const el = f.nativeElement as HTMLElement;
+    expect(el.textContent).toContain(`${location.host}/live/KING-4821`);
+    expect(el.textContent).toContain('Room quiz');
+    expect((el.querySelector('.big') as HTMLButtonElement).disabled).toBe(false);
+    expect(el.querySelector('.big')?.textContent).toContain('Start with 1 player');
+    f.destroy();
+  });
+
+  it('hands a started room quiz to the quiz screen', async () => {
+    const f = TestBed.createComponent(PartyScreen);
+    f.componentRef.setInput('code', 'KING-4821');
+    f.detectChanges();
+    http.expectOne('/api/v1/matching/rooms/KING-4821').flush(room({ gameId: 0, quiz: true, state: 'STARTED', matchId: 'q-1' }));
+    await f.whenStable();
+    f.detectChanges();
+    expect((f.nativeElement as HTMLElement).querySelector('mv-room-quiz-screen')).not.toBeNull();
+    http.expectOne((r) => r.url === '/api/v1/matches/q-1/next');
+    http.expectNone((r) => r.url === '/api/v1/matches/q-1');
+    f.destroy();
+  });
 });
