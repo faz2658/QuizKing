@@ -18,6 +18,8 @@ import org.springframework.web.client.RestClientException;
 
 import com.fazeel.quizcadia.domain.MultiPlayerGame;
 import com.fazeel.quizcadia.web.InternalHttp;
+import com.fazeel.quizcadia.web.Breakers;
+import io.github.resilience4j.circuitbreaker.CircuitBreaker;
 
 /**
  * A multiplayer game's question pool. Games built from a topic no longer carry copies of its questions; they are
@@ -43,8 +45,9 @@ public class TopicPools {
 	private final Map<Integer, Cached> cache = new ConcurrentHashMap<>();
 
 	@Autowired
-	public TopicPools(@Value("${quizcadia.question-generator-url}") String url, Clock clock) {
-		this(http(InternalHttp.client(url).build()), clock, Duration.ofMinutes(10));
+	public TopicPools(@Value("${quizcadia.question-generator-url}") String url, Clock clock, Breakers breakers) {
+		this(http(InternalHttp.client(url).build(), breakers.forService("question-generator")), clock,
+				Duration.ofMinutes(10));
 	}
 
 	public TopicPools(Source source, Clock clock, Duration keep) {
@@ -80,11 +83,12 @@ public class TopicPools {
 		return loaded;
 	}
 
-	private static Source http(RestClient client) {
+	private static Source http(RestClient client, CircuitBreaker breaker) {
 		return topicId -> {
 			try {
-				MultiPlayerGame.Question[] qs = client.get().uri("/internal/topics/{id}/questions", topicId).retrieve()
-						.body(MultiPlayerGame.Question[].class);
+				// while the question service is down, fail at once instead of every game start waiting for a timeout
+				MultiPlayerGame.Question[] qs = Breakers.call(breaker, () -> client.get()
+						.uri("/internal/topics/{id}/questions", topicId).retrieve().body(MultiPlayerGame.Question[].class));
 				return qs == null ? List.of() : List.copyOf(Arrays.asList(qs));
 			}
 			catch (RestClientException e) {

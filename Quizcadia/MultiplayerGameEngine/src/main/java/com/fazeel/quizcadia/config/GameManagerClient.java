@@ -12,6 +12,8 @@ import org.springframework.web.client.RestClientException;
 import com.fazeel.quizcadia.domain.MultiPlayerGame;
 import com.fazeel.quizcadia.match.GameSource;
 import com.fazeel.quizcadia.web.InternalHttp;
+import com.fazeel.quizcadia.web.Breakers;
+import io.github.resilience4j.circuitbreaker.CircuitBreaker;
 
 /** Fetches a multiplayer game from the game manager (replaces the hard-coded game URL). */
 @Component
@@ -20,16 +22,19 @@ public class GameManagerClient implements GameSource {
 	private static final Logger log = LoggerFactory.getLogger(GameManagerClient.class);
 
 	private final RestClient http;
+	private final CircuitBreaker breaker;
 
-	public GameManagerClient(RestClient.Builder builder, @Value("${quizcadia.game-manager-url}") String baseUrl) {
+	public GameManagerClient(RestClient.Builder builder, @Value("${quizcadia.game-manager-url}") String baseUrl,
+			Breakers breakers) {
 		this.http = builder.baseUrl(baseUrl).requestFactory(InternalHttp.requestFactory()).build();
+		this.breaker = breakers.forService("game-manager");
 	}
 
 	@Override
 	public Optional<MultiPlayerGame> fetch(int gameId) {
 		try {
-			return Optional.ofNullable(http.get().uri("/internal/game/mp/{id}", gameId).retrieve()
-					.body(MultiPlayerGame.class));
+			return Optional.ofNullable(Breakers.call(breaker, () -> http.get().uri("/internal/game/mp/{id}", gameId).retrieve()
+					.body(MultiPlayerGame.class)));
 		}
 		catch (RestClientException e) {
 			log.warn("Could not fetch multiplayer game {}: {}", gameId, e.getMessage());

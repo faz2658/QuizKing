@@ -20,6 +20,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import tools.jackson.core.JacksonException;
 import tools.jackson.databind.json.JsonMapper;
 import com.fazeel.quizcadia.web.InternalHttp;
+import com.fazeel.quizcadia.web.Breakers;
+import io.github.resilience4j.circuitbreaker.CircuitBreaker;
 
 /**
  * Calls the question model through the OpenAI-compatible chat API that llama.cpp's llama-server
@@ -32,6 +34,7 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 	private static final Logger log = LoggerFactory.getLogger(OpenAiCompatibleQuestionModel.class);
 
 	private final RestClient http;
+	private final CircuitBreaker breaker;
 	private final boolean configured;
 	private final String modelName;
 	private final AiPrompt prompt = AiPrompt.load();
@@ -39,15 +42,28 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 
 	@Autowired
 	public OpenAiCompatibleQuestionModel(RestClient.Builder builder, @Value("${quizcadia.ai.url:}") String url,
-			@Value("${quizcadia.ai.model:quizcadia}") String modelName) {
+			@Value("${quizcadia.ai.model:quizcadia}") String modelName, Breakers breakers) {
 		// A small model on the server's CPU takes a while to write a question, but one that never answers must not
-		// hold the request for good: give up after a few minutes (AiUnavailableException, like an unreachable model)
-		this(builder, url, modelName, InternalHttp.requestFactory(Duration.ofMinutes(3)));
+		// hold the request for good: give up after a few minutes (AiUnavailableException, like an unreachable model).
+		// After a few failures in a row the breaker answers "not available" at once for two minutes.
+		this(builder, url, modelName, InternalHttp.requestFactory(Duration.ofMinutes(3)),
+				breakers.forSlowService("ai-model"));
+	}
+
+	OpenAiCompatibleQuestionModel(RestClient.Builder builder, String url, String modelName) {
+		this(builder, url, modelName, InternalHttp.requestFactory(Duration.ofMinutes(3)),
+				new Breakers().forSlowService("ai-model"));
 	}
 
 	/** {@code requestFactory} null keeps the builder's own (tests bind a mock server to it). */
 	OpenAiCompatibleQuestionModel(RestClient.Builder builder, String url, String modelName,
 			ClientHttpRequestFactory requestFactory) {
+		this(builder, url, modelName, requestFactory, new Breakers().forSlowService("ai-model"));
+	}
+
+	OpenAiCompatibleQuestionModel(RestClient.Builder builder, String url, String modelName,
+			ClientHttpRequestFactory requestFactory, CircuitBreaker breaker) {
+		this.breaker = breaker;
 		this.configured = url != null && !url.isBlank();
 		if (requestFactory != null) {
 			builder = builder.requestFactory(requestFactory);
@@ -61,16 +77,31 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 		return configured;
 	}
 
+	/** Longest topic passed to the model; players can type up to 200 characters, a topic needs far fewer. */
+	static final int TOPIC_MAX = 100;
+	static final java.util.Set<String> DIFFICULTIES = java.util.Set.of("easy", "medium", "hard");
+	static final java.util.Set<String> FORMATS = java.util.Set.of("multiple choice", "true/false");
+
 	@Override
 	public Optional<GeneratedQuestion> write(String topic, String difficulty, String format) {
+		// The topic is whatever a player typed for an AI quiz: keep it to one line of plain words, so it can only ever
+		// be the "Topic:" of the prompt (the fine-tuned model's training format), never new lines or instructions.
+		// Difficulty and format come from the server, but are checked against the values the model was trained on.
+		String safeTopic = cleanTopic(topic);
+		if (safeTopic.isEmpty()) {
+			return Optional.empty();
+		}
 		Map<String, Object> body = Map.of("model", modelName, "temperature", 0.7, "top_p", 0.8, "top_k", 20,
 				"max_tokens", 300, "messages", List.of(Map.of("role", "system", "content", prompt.system()),
-						Map.of("role", "user", "content", prompt.userTurn(topic, difficulty, format))));
+						Map.of("role", "user", "content",
+								prompt.userTurn(safeTopic, allowed(difficulty, DIFFICULTIES, "medium"),
+										allowed(format, FORMATS, "multiple choice")))));
 		ChatResponse response;
 		try {
 			// Serialised up front so the request carries a Content-Length (some servers reject chunked bodies)
-			response = http.post().uri("/v1/chat/completions").contentType(MediaType.APPLICATION_JSON)
-					.body(json.writeValueAsString(body)).retrieve().body(ChatResponse.class);
+			String payload = json.writeValueAsString(body);
+			response = Breakers.call(breaker, () -> http.post().uri("/v1/chat/completions")
+					.contentType(MediaType.APPLICATION_JSON).body(payload).retrieve().body(ChatResponse.class));
 		}
 		catch (RestClientException e) {
 			throw new AiUnavailableException("The question model is not reachable: " + e.getMessage());
@@ -82,6 +113,28 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 	}
 
 	/** Accepts a bare JSON object, one wrapped in ```json fences, or one after an empty think block. */
+	/**
+	 * A player's topic as one short line of text: no line breaks or other control characters (which could add
+	 * "Format:" or instruction lines), no chat-template markers such as {@code <|im_start|>} (which the model
+	 * server may read as a new message), and no {@code /think} / {@code /no_think} switches.
+	 */
+	static String cleanTopic(String topic) {
+		if (topic == null) {
+			return "";
+		}
+		String t = topic.replaceAll("[\\p{Cc}\\p{Cf}\\p{Zl}\\p{Zp}]", " ")
+				.replaceAll("[<>|\\[\\]{}`]", " ")
+				.replaceAll("(?i)/\\s*(no_)?think\\b", " ")
+				.replaceAll("\\s+", " ")
+				.strip();
+		return t.length() <= TOPIC_MAX ? t : t.substring(0, TOPIC_MAX).strip();
+	}
+
+	private static String allowed(String value, java.util.Set<String> allowed, String fallback) {
+		String v = value == null ? "" : value.strip().toLowerCase(java.util.Locale.ROOT);
+		return allowed.contains(v) ? v : fallback;
+	}
+
 	Optional<GeneratedQuestion> parse(String reply) {
 		if (reply == null) {
 			return Optional.empty();
