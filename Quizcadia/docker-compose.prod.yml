@@ -12,6 +12,8 @@ services:
       SITE_ADDRESS: ${SITE_ADDRESS:?set SITE_ADDRESS}
       # Other names that should send visitors to SITE_ADDRESS, e.g. "www.quizcadia.com, 40-233-75-213.sslip.io"
       REDIRECT_ADDRESSES: ${REDIRECT_ADDRESSES:-http://redirect.localhost}
+      # A CDN's address ranges, space-separated, when one is in front (see deploy/README.md); empty: none
+      TRUSTED_PROXIES: ${TRUSTED_PROXIES:-127.0.0.1/32}
     volumes:
       - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
       - caddy-data:/data

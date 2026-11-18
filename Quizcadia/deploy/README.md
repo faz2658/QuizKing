@@ -16,6 +16,40 @@ used in links and emails), `REDIRECT_ADDRESSES=www.quizcadia.com, 40-233-75-213.
    rule and `sudo netfilter-persistent save`.
 4. A 4 GB swap file as a memory safety net.
 
+## Caching
+
+- **App files:** the build files have a hash in their names, so they are cached for a year (`immutable`).
+  `index.html`, `sw.js`, the manifest, icons and the sitemap are `no-cache`: browsers re-check them each time and
+  get a cheap `304`. The service worker keeps the app shell for offline use. It never caches `/api`.
+- **API:** answers are `no-store` (Spring Security's default) except the lists that are the same for everyone:
+  - `/api/game/categories`, `/countries`, `/games` and `/games/mp`: re-checked by browsers through an ETag, kept
+    30 s by a CDN.
+  - `/api/v1/question-generator/stats`: 10 s.
+  - `/api/v1/auth/providers`: 5 minutes.
+- **On the servers:** the game manager builds the catalog lists once per catalog change, or once a minute. The game
+  engines keep each topic's questions for 10 minutes, and the leaderboards are cached in the reporting service. The
+  welcome page's question counts are counted by MongoDB and kept for 10 s.
+
+## CDN (optional, Cloudflare)
+
+The server is ready to sit behind a CDN, but nothing needs one at today's traffic. With Cloudflare's free plan:
+
+1. Add the domain to Cloudflare and switch the `quizcadia.com` and `www` DNS records to **Proxied** (orange cloud).
+2. **SSL/TLS → Full (strict)**: Caddy keeps its own Let's Encrypt certificate. Leave **Always Use HTTPS** off.
+   Caddy already redirects to https, and Cloudflare's redirect would block Caddy's certificate renewals (the
+   HTTP-01 challenge on port 80).
+3. Let the server see visitors' real addresses (for the sign-in rate limit and the logs). Add Cloudflare's ranges
+   to the server's `.env`, then `docker compose ... up -d caddy`:
+   ```bash
+   echo "TRUSTED_PROXIES=$(curl -s https://www.cloudflare.com/ips-v4 https://www.cloudflare.com/ips-v6 | tr '\n' ' ')" >> .env
+   ```
+   Without this, every visitor looks like one of Cloudflare's addresses to the server.
+4. Caching works without extra settings: Cloudflare caches the static files by extension and follows the
+   `Cache-Control` headers above. To also cache the public catalog lists at the edge, add a **Cache Rule**: URI path
+   starts with `/api/game/`, method `GET` → *Eligible for cache*, *Use cache-control header if present*. Don't
+   cache the rest of `/api`: it is per-player.
+5. Optionally, lock the Oracle security list to Cloudflare's ranges for ports 80/443, so nobody can bypass the CDN.
+
 ## Continuous deployment (GitHub Actions)
 `.github/workflows/deploy.yml` deploys automatically after CI passes on `master` (or `main`), that is, after a
 pull request is merged, and from the Actions tab by hand:

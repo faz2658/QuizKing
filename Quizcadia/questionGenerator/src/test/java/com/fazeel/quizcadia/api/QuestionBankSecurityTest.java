@@ -66,7 +66,9 @@ class QuestionBankSecurityTest {
 
 	@Test
 	void topicCountsArePublicForTheWelcomePage() throws Exception {
-		mvc.perform(get("/api/v1/question-generator/stats")).andExpect(status().isOk());
+		mvc.perform(get("/api/v1/question-generator/stats")).andExpect(status().isOk())
+				.andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.header()
+						.string("Cache-Control", "max-age=10, public, stale-while-revalidate=60"));
 	}
 
 	@Test

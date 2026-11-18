@@ -1,3 +1,13 @@
+# Behind a CDN (Cloudflare, ...): TRUSTED_PROXIES lists the CDN's address ranges, so the visitor's own address is
+# taken from CF-Connecting-IP / X-Forwarded-For for the sign-in rate limit and the logs. Only connections from those
+# ranges may set these headers. The default trusts nobody (no CDN in front), as before. See deploy/README.md.
+{
+	servers {
+		trusted_proxies static {$TRUSTED_PROXIES:127.0.0.1/32}
+		client_ip_headers CF-Connecting-IP X-Forwarded-For
+	}
+}
+
 # HTTPS with an automatic Let's Encrypt certificate for SITE_ADDRESS, then everything to the QuizCadia frontend.
 {$SITE_ADDRESS} {
 	encode zstd gzip
@@ -7,7 +17,10 @@
 		Referrer-Policy strict-origin-when-cross-origin
 		-Server
 	}
-	reverse_proxy frontend:80
+	reverse_proxy frontend:80 {
+		# exactly one address, the visitor's (with a CDN in front: the one the CDN reported), for nginx's real_ip
+		header_up X-Forwarded-For {client_ip}
+	}
 
 	# The frontend container itself is restarting (a deploy): Caddy can't reach it. API calls get the same 503 the
 	# frontend's nginx gives for a service that is down, which the app shows as its "being updated" banner; page
