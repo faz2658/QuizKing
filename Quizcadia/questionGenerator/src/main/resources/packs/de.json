@@ -8088,6 +8088,1194 @@
       "Zaha Hadid"
      ],
      "why": "Visitors can walk up its spiral ramp."
+    },
+    {
+     "q": "Which Nuremberg artist made the famous drawing 'Praying Hands'?",
+     "a": "Albrecht Dürer",
+     "wrong": [
+      "Lucas Cranach",
+      "Hans Holbein",
+      "Matthias Grünewald"
+     ],
+     "level": 1,
+     "why": "He drew it in 1508."
+    },
+    {
+     "q": "Which Albrecht Dürer woodcut shows an armoured animal he never saw?",
+     "a": "Rhinoceros",
+     "wrong": [
+      "Elephant",
+      "Lion",
+      "Crocodile"
+     ],
+     "level": 1,
+     "why": "He worked from a description."
+    },
+    {
+     "q": "Which Dürer watercolour of a young animal is in Vienna's Albertina?",
+     "a": "Young Hare",
+     "wrong": [
+      "Great Piece of Turf",
+      "Stag Beetle",
+      "Owl"
+     ],
+     "level": 1,
+     "why": "He painted it in 1502."
+    },
+    {
+     "q": "What was unusual about Dürer's 1500 self-portrait?",
+     "a": "He painted himself facing forward like Christ",
+     "wrong": [
+      "He painted himself as a child",
+      "He painted himself as a skeleton",
+      "He painted himself from behind"
+     ],
+     "level": 1,
+     "why": "It hangs in Munich's Alte Pinakothek."
+    },
+    {
+     "q": "Which German painter made portraits at the court of Henry VIII?",
+     "a": "Hans Holbein the Younger",
+     "wrong": [
+      "Albrecht Dürer",
+      "Lucas Cranach",
+      "Albrecht Altdorfer"
+     ],
+     "level": 1,
+     "why": "He painted 'The Ambassadors'."
+    },
+    {
+     "q": "Which Holbein painting hides a stretched skull?",
+     "a": "The Ambassadors",
+     "wrong": [
+      "Portrait of Henry VIII",
+      "The Dead Christ",
+      "Erasmus"
+     ],
+     "level": 1,
+     "why": "The skull appears when viewed from the side."
+    },
+    {
+     "q": "Which painter from Wittenberg made many portraits of Martin Luther?",
+     "a": "Lucas Cranach the Elder",
+     "wrong": [
+      "Albrecht Dürer",
+      "Hans Holbein",
+      "Hans Baldung"
+     ],
+     "level": 1,
+     "why": "He was Luther's friend."
+    },
+    {
+     "q": "Which German altarpiece in Colmar shows a terrible Crucifixion?",
+     "a": "Isenheim Altarpiece",
+     "wrong": [
+      "Ghent Altarpiece",
+      "Bamberg Altar",
+      "Merode Altarpiece"
+     ],
+     "level": 1,
+     "why": "Matthias Grünewald painted it."
+    },
+    {
+     "q": "Which German Romantic painter made 'Wanderer above the Sea of Fog'?",
+     "a": "Caspar David Friedrich",
+     "wrong": [
+      "Philipp Otto Runge",
+      "Carl Spitzweg",
+      "Adolph Menzel"
+     ],
+     "level": 1,
+     "why": "It is in the Hamburger Kunsthalle."
+    },
+    {
+     "q": "Which Caspar David Friedrich painting shows a shipwreck in Arctic ice?",
+     "a": "The Sea of Ice",
+     "wrong": [
+      "Monk by the Sea",
+      "Chalk Cliffs on Rügen",
+      "Two Men Contemplating the Moon"
+     ],
+     "level": 1,
+     "why": "It is also called 'The Wreck of Hope'."
+    },
+    {
+     "q": "Which Munich painter made 'The Poor Poet' and 'The Bookworm'?",
+     "a": "Carl Spitzweg",
+     "wrong": [
+      "Adolph Menzel",
+      "Wilhelm Leibl",
+      "Franz von Lenbach"
+     ],
+     "level": 1,
+     "why": "His style is called Biedermeier."
+    },
+    {
+     "q": "Which Berlin painter showed industry in 'The Iron Rolling Mill'?",
+     "a": "Adolph Menzel",
+     "wrong": [
+      "Max Liebermann",
+      "Lovis Corinth",
+      "Carl Spitzweg"
+     ],
+     "level": 1,
+     "why": "He also painted Frederick the Great."
+    },
+    {
+     "q": "Which Berlin Impressionist painted beer gardens and the Wannsee garden?",
+     "a": "Max Liebermann",
+     "wrong": [
+      "Lovis Corinth",
+      "Max Slevogt",
+      "Adolph Menzel"
+     ],
+     "level": 1,
+     "why": "His villa at Wannsee is now a museum."
+    },
+    {
+     "q": "Which group of Dresden Expressionists formed in 1905?",
+     "a": "Die Brücke",
+     "wrong": [
+      "Der Blaue Reiter",
+      "Bauhaus",
+      "Neue Sachlichkeit"
+     ],
+     "level": 1,
+     "why": "Its name means 'The Bridge'."
+    },
+    {
+     "q": "Which Munich art group was led by Kandinsky and Franz Marc?",
+     "a": "Der Blaue Reiter",
+     "wrong": [
+      "Die Brücke",
+      "Bauhaus",
+      "Secession"
+     ],
+     "level": 1,
+     "why": "Its name means 'The Blue Rider'."
+    },
+    {
+     "q": "Which German painter is famous for blue horses?",
+     "a": "Franz Marc",
+     "wrong": [
+      "Wassily Kandinsky",
+      "August Macke",
+      "Ernst Ludwig Kirchner"
+     ],
+     "level": 1,
+     "why": "He was killed at Verdun in 1916."
+    },
+    {
+     "q": "Which Brücke artist painted street scenes of Berlin before the First World War?",
+     "a": "Ernst Ludwig Kirchner",
+     "wrong": [
+      "Emil Nolde",
+      "Erich Heckel",
+      "Max Pechstein"
+     ],
+     "level": 1,
+     "why": "His work was labelled 'degenerate' by the Nazis."
+    },
+    {
+     "q": "Which German Expressionist is known for bright flower and sea paintings?",
+     "a": "Emil Nolde",
+     "wrong": [
+      "August Macke",
+      "Franz Marc",
+      "Otto Mueller"
+     ],
+     "level": 1,
+     "why": "His house is in Seebüll near Denmark."
+    },
+    {
+     "q": "Which Berlin printmaker showed grieving mothers and the poor?",
+     "a": "Käthe Kollwitz",
+     "wrong": [
+      "Paula Modersohn-Becker",
+      "Hannah Höch",
+      "Gabriele Münter"
+     ],
+     "level": 1,
+     "why": "Her 'Mother with her Dead Son' is in the Neue Wache."
+    },
+    {
+     "q": "Which painter from the Worpswede colony is called the first woman to paint a nude self-portrait?",
+     "a": "Paula Modersohn-Becker",
+     "wrong": [
+      "Käthe Kollwitz",
+      "Gabriele Münter",
+      "Marianne von Werefkin"
+     ],
+     "level": 1,
+     "why": "She died at 31."
+    },
+    {
+     "q": "Which art school did Walter Gropius found in Weimar in 1919?",
+     "a": "Bauhaus",
+     "wrong": [
+      "Werkbund",
+      "Ulm School of Design",
+      "Kunstakademie Düsseldorf"
+     ],
+     "level": 1,
+     "why": "It moved to Dessau and Berlin."
+    },
+    {
+     "q": "In which city is the famous Bauhaus building designed by Gropius?",
+     "a": "Dessau",
+     "wrong": [
+      "Weimar",
+      "Berlin",
+      "Leipzig"
+     ],
+     "level": 1,
+     "why": "It opened in 1926."
+    },
+    {
+     "q": "Which Bauhaus director said 'less is more'?",
+     "a": "Ludwig Mies van der Rohe",
+     "wrong": [
+      "Walter Gropius",
+      "Hannes Meyer",
+      "Marcel Breuer"
+     ],
+     "level": 1,
+     "why": "He later moved to Chicago."
+    },
+    {
+     "q": "Which Mies van der Rohe Berlin gallery is a glass and steel box?",
+     "a": "Neue Nationalgalerie",
+     "wrong": [
+      "Altes Museum",
+      "Neues Museum",
+      "Bauhaus Archive"
+     ],
+     "level": 1,
+     "why": "It opened in 1968."
+    },
+    {
+     "q": "Which Swiss-German Bauhaus teacher painted 'Twittering Machine'?",
+     "a": "Paul Klee",
+     "wrong": [
+      "Wassily Kandinsky",
+      "Lyonel Feininger",
+      "Oskar Schlemmer"
+     ],
+     "level": 1,
+     "why": "He was born near Bern."
+    },
+    {
+     "q": "Which Bauhaus artist created the 'Triadic Ballet'?",
+     "a": "Oskar Schlemmer",
+     "wrong": [
+      "Paul Klee",
+      "László Moholy-Nagy",
+      "Josef Albers"
+     ],
+     "level": 1,
+     "why": "Dancers wore geometric costumes."
+    },
+    {
+     "q": "Which Bauhaus designer created the tubular steel Wassily Chair?",
+     "a": "Marcel Breuer",
+     "wrong": [
+      "Mies van der Rohe",
+      "Walter Gropius",
+      "Wilhelm Wagenfeld"
+     ],
+     "level": 1,
+     "why": "It was inspired by bicycle handlebars."
+    },
+    {
+     "q": "Which Nazi exhibition in 1937 mocked modern art?",
+     "a": "Degenerate Art",
+     "wrong": [
+      "Great German Art",
+      "Forbidden Pictures",
+      "Art of Decay"
+     ],
+     "level": 1,
+     "why": "It toured many German cities."
+    },
+    {
+     "q": "Which Dada artist from Hanover made 'Merz' collages?",
+     "a": "Kurt Schwitters",
+     "wrong": [
+      "Max Ernst",
+      "Hannah Höch",
+      "Hans Arp"
+     ],
+     "level": 1,
+     "why": "He also built the Merzbau."
+    },
+    {
+     "q": "Which Dada artist made photomontages like 'Cut with the Kitchen Knife'?",
+     "a": "Hannah Höch",
+     "wrong": [
+      "Käthe Kollwitz",
+      "Kurt Schwitters",
+      "John Heartfield"
+     ],
+     "level": 1,
+     "why": "She worked in Berlin."
+    },
+    {
+     "q": "Which German painter showed corrupt Weimar society in works like 'Pillars of Society'?",
+     "a": "George Grosz",
+     "wrong": [
+      "Otto Dix",
+      "Max Beckmann",
+      "Christian Schad"
+     ],
+     "level": 1,
+     "why": "He moved to the US in 1933."
+    },
+    {
+     "q": "Which German painter made the war triptych 'The War' after serving in the trenches?",
+     "a": "Otto Dix",
+     "wrong": [
+      "George Grosz",
+      "Max Beckmann",
+      "Ernst Barlach"
+     ],
+     "level": 1,
+     "why": "It is in Dresden."
+    },
+    {
+     "q": "Which German painter is famous for 'Departure' and other triptychs?",
+     "a": "Max Beckmann",
+     "wrong": [
+      "Otto Dix",
+      "George Grosz",
+      "Lovis Corinth"
+     ],
+     "level": 1,
+     "why": "He went into exile in 1937."
+    },
+    {
+     "q": "Which Cologne-born Surrealist painted 'The Elephant Celebes'?",
+     "a": "Max Ernst",
+     "wrong": [
+      "Kurt Schwitters",
+      "Hans Arp",
+      "Richard Oelze"
+     ],
+     "level": 1,
+     "why": "He invented frottage, rubbing over textures."
+    },
+    {
+     "q": "Which Düsseldorf artist wearing a felt hat is known for felt and fat sculptures?",
+     "a": "Joseph Beuys",
+     "wrong": [
+      "Gerhard Richter",
+      "Anselm Kiefer",
+      "Sigmar Polke"
+     ],
+     "level": 1,
+     "why": "He said 'everyone is an artist'."
+    },
+    {
+     "q": "Which Beuys project planted 7,000 oak trees in Kassel?",
+     "a": "7000 Oaks",
+     "wrong": [
+      "Social Sculpture",
+      "Fat Chair",
+      "Honey Pump"
+     ],
+     "level": 1,
+     "why": "It began at documenta 7 in 1982."
+    },
+    {
+     "q": "Which German painter is famous for blurred photo-paintings and colour charts?",
+     "a": "Gerhard Richter",
+     "wrong": [
+      "Sigmar Polke",
+      "Anselm Kiefer",
+      "Georg Baselitz"
+     ],
+     "level": 1,
+     "why": "He designed a window for Cologne Cathedral."
+    },
+    {
+     "q": "Which German artist paints his figures upside down?",
+     "a": "Georg Baselitz",
+     "wrong": [
+      "Gerhard Richter",
+      "Markus Lüpertz",
+      "A. R. Penck"
+     ],
+     "level": 1,
+     "why": "He started doing it in 1969."
+    },
+    {
+     "q": "Which German artist works with lead, straw and ash about German history?",
+     "a": "Anselm Kiefer",
+     "wrong": [
+      "Gerhard Richter",
+      "Joseph Beuys",
+      "Jörg Immendorff"
+     ],
+     "level": 1,
+     "why": "He was a student of Beuys."
+    },
+    {
+     "q": "Which Kassel art exhibition is held every five years?",
+     "a": "documenta",
+     "wrong": [
+      "Art Basel",
+      "Venice Biennale",
+      "Berlin Biennale"
+     ],
+     "level": 1,
+     "why": "It began in 1955."
+    },
+    {
+     "q": "Which German photographer is famous for huge colour photos like 'Rhein II'?",
+     "a": "Andreas Gursky",
+     "wrong": [
+      "Thomas Ruff",
+      "Candida Höfer",
+      "Wolfgang Tillmans"
+     ],
+     "level": 1,
+     "why": "'Rhein II' sold for over $4 million."
+    },
+    {
+     "q": "Which German photographers documented old industrial buildings in grids?",
+     "a": "Bernd and Hilla Becher",
+     "wrong": [
+      "Andreas Gursky and Thomas Ruff",
+      "August Sander and Karl Blossfeldt",
+      "Helmut Newton and Peter Lindbergh"
+     ],
+     "level": 1,
+     "why": "They taught at the Düsseldorf Academy."
+    },
+    {
+     "q": "Which German photographer made 'People of the 20th Century'?",
+     "a": "August Sander",
+     "wrong": [
+      "Karl Blossfeldt",
+      "Albert Renger-Patzsch",
+      "Helmut Newton"
+     ],
+     "level": 1,
+     "why": "He photographed Germans of every class."
+    },
+    {
+     "q": "Which Berlin-born photographer became famous for fashion nudes in the 1970s?",
+     "a": "Helmut Newton",
+     "wrong": [
+      "Peter Lindbergh",
+      "Jürgen Teller",
+      "Wolfgang Tillmans"
+     ],
+     "level": 1,
+     "why": "A foundation in Berlin shows his work."
+    },
+    {
+     "q": "Which German photographer was the first non-British winner of the Turner Prize, in 2000?",
+     "a": "Wolfgang Tillmans",
+     "wrong": [
+      "Andreas Gursky",
+      "Thomas Struth",
+      "Jürgen Teller"
+     ],
+     "level": 1,
+     "why": "He is from Remscheid."
+    },
+    {
+     "q": "Which artist couple wrapped the Reichstag in fabric in 1995?",
+     "a": "Christo and Jeanne-Claude",
+     "wrong": [
+      "Gilbert and George",
+      "Bernd and Hilla Becher",
+      "Ulay and Abramović"
+     ],
+     "level": 1,
+     "why": "About five million people came to see it."
+    },
+    {
+     "q": "What is the open-air gallery on a remaining stretch of the Berlin Wall called?",
+     "a": "East Side Gallery",
+     "wrong": [
+      "Wall Museum",
+      "Checkpoint Gallery",
+      "Berlin Wall Memorial"
+     ],
+     "level": 1,
+     "why": "It is about 1.3 km long."
+    },
+    {
+     "q": "Which famous East Side Gallery mural shows Brezhnev and Honecker kissing?",
+     "a": "My God, Help Me to Survive This Deadly Love",
+     "wrong": [
+      "Wall Jumper",
+      "Trabant breaking through",
+      "Test the Best"
+     ],
+     "level": 1,
+     "why": "Dmitri Vrubel painted it."
+    },
+    {
+     "q": "Which Berlin memorial has 2,711 concrete slabs?",
+     "a": "Memorial to the Murdered Jews of Europe",
+     "wrong": [
+      "Neue Wache",
+      "Topography of Terror",
+      "Berlin Wall Memorial"
+     ],
+     "level": 1,
+     "why": "Peter Eisenman designed it."
+    },
+    {
+     "q": "Which architect designed the zigzag-shaped Jewish Museum Berlin?",
+     "a": "Daniel Libeskind",
+     "wrong": [
+      "Peter Eisenman",
+      "Frank Gehry",
+      "Zaha Hadid"
+     ],
+     "level": 1,
+     "why": "It opened in 2001."
+    },
+    {
+     "q": "What are the small brass plaques in pavements honouring Nazi victims called?",
+     "a": "Stolpersteine",
+     "wrong": [
+      "Gedenksteine",
+      "Mahnmale",
+      "Ehrenplatten"
+     ],
+     "level": 1,
+     "why": "Gunter Demnig began laying them in 1992."
+    },
+    {
+     "q": "Which Berlin museum houses the bust of Nefertiti?",
+     "a": "Neues Museum",
+     "wrong": [
+      "Pergamon Museum",
+      "Altes Museum",
+      "Bode Museum"
+     ],
+     "level": 1,
+     "why": "The bust was found in Egypt in 1912."
+    },
+    {
+     "q": "Which Berlin museum is famous for the Ishtar Gate from Babylon?",
+     "a": "Pergamon Museum",
+     "wrong": [
+      "Neues Museum",
+      "Altes Museum",
+      "Bode Museum"
+     ],
+     "level": 1,
+     "why": "It closed for a long renovation in 2023."
+    },
+    {
+     "q": "Which Munich museum holds old masters like Dürer and Rubens?",
+     "a": "Alte Pinakothek",
+     "wrong": [
+      "Neue Pinakothek",
+      "Pinakothek der Moderne",
+      "Lenbachhaus"
+     ],
+     "level": 1,
+     "why": "It opened in 1836."
+    },
+    {
+     "q": "Which Munich museum has the largest collection of Blaue Reiter art?",
+     "a": "Lenbachhaus",
+     "wrong": [
+      "Alte Pinakothek",
+      "Haus der Kunst",
+      "Museum Brandhorst"
+     ],
+     "level": 1,
+     "why": "Gabriele Münter donated many works."
+    },
+    {
+     "q": "Which Dresden collection includes Raphael's 'Sistine Madonna'?",
+     "a": "Old Masters Picture Gallery",
+     "wrong": [
+      "Green Vault",
+      "Albertinum",
+      "Zwinger Armoury"
+     ],
+     "level": 1,
+     "why": "It is in the Zwinger palace."
+    },
+    {
+     "q": "Which Dresden treasure chamber was robbed of jewels in 2019?",
+     "a": "Green Vault",
+     "wrong": [
+      "Zwinger",
+      "Semperoper",
+      "Albertinum"
+     ],
+     "level": 1,
+     "why": "Most of the jewels were later recovered."
+    },
+    {
+     "q": "Which Dresden Baroque church was rebuilt from rubble in 2005?",
+     "a": "Frauenkirche",
+     "wrong": [
+      "Hofkirche",
+      "Kreuzkirche",
+      "Zwinger Chapel"
+     ],
+     "level": 1,
+     "why": "Many original stones were reused."
+    },
+    {
+     "q": "Which Dresden opera house is named after its architect?",
+     "a": "Semperoper",
+     "wrong": [
+      "Zwinger",
+      "Staatsoper",
+      "Gewandhaus"
+     ],
+     "level": 1,
+     "why": "Gottfried Semper designed it."
+    },
+    {
+     "q": "Which Baroque palace complex in Dresden has a famous Crown Gate?",
+     "a": "Zwinger",
+     "wrong": [
+      "Moritzburg",
+      "Pillnitz",
+      "Residenzschloss"
+     ],
+     "level": 1,
+     "why": "Augustus the Strong built it."
+    },
+    {
+     "q": "Which Prussian architect designed the Altes Museum and many Berlin buildings?",
+     "a": "Karl Friedrich Schinkel",
+     "wrong": [
+      "Gottfried Semper",
+      "Leo von Klenze",
+      "Carl Gotthard Langhans"
+     ],
+     "level": 1,
+     "why": "He worked in the Neoclassical style."
+    },
+    {
+     "q": "Which architect designed the Brandenburg Gate?",
+     "a": "Carl Gotthard Langhans",
+     "wrong": [
+      "Karl Friedrich Schinkel",
+      "Gottfried Semper",
+      "Johann Gottfried Schadow"
+     ],
+     "level": 1,
+     "why": "It was finished in 1791."
+    },
+    {
+     "q": "What is the sculpture on top of the Brandenburg Gate called?",
+     "a": "Quadriga",
+     "wrong": [
+      "Victoria Column",
+      "Germania",
+      "Golden Else"
+     ],
+     "level": 1,
+     "why": "Napoleon took it to Paris in 1806."
+    },
+    {
+     "q": "Which golden statue on Berlin's Victory Column is nicknamed 'Goldelse'?",
+     "a": "Victoria",
+     "wrong": [
+      "Germania",
+      "Athena",
+      "Borussia"
+     ],
+     "level": 1,
+     "why": "It stands 67 m up."
+    },
+    {
+     "q": "Which huge statue of Germania overlooks the Rhine at Rüdesheim?",
+     "a": "Niederwald Monument",
+     "wrong": [
+      "Hermannsdenkmal",
+      "Kyffhäuser Monument",
+      "Bavaria Statue"
+     ],
+     "level": 1,
+     "why": "It celebrates the founding of the Empire in 1871."
+    },
+    {
+     "q": "Which Bavarian church is a Rococo masterpiece in a meadow?",
+     "a": "Wieskirche",
+     "wrong": [
+      "Ettal Abbey",
+      "Andechs Abbey",
+      "Ottobeuren Abbey"
+     ],
+     "level": 1,
+     "why": "It is a UNESCO site."
+    },
+    {
+     "q": "Which Würzburg palace has a huge ceiling fresco by Tiepolo?",
+     "a": "Würzburg Residence",
+     "wrong": [
+      "Nymphenburg Palace",
+      "Linderhof Palace",
+      "Schleissheim Palace"
+     ],
+     "level": 1,
+     "why": "Balthasar Neumann designed it."
+    },
+    {
+     "q": "Which Ludwig II palace copies the Hall of Mirrors at Versailles?",
+     "a": "Herrenchiemsee",
+     "wrong": [
+      "Linderhof",
+      "Neuschwanstein",
+      "Nymphenburg"
+     ],
+     "level": 1,
+     "why": "It stands on an island in the Chiemsee."
+    },
+    {
+     "q": "Which Ludwig II palace was the only one he lived to see finished?",
+     "a": "Linderhof",
+     "wrong": [
+      "Neuschwanstein",
+      "Herrenchiemsee",
+      "Hohenschwangau"
+     ],
+     "level": 1,
+     "why": "It has an artificial grotto."
+    },
+    {
+     "q": "Which Bavarian royal summer palace in Munich has a Gallery of Beauties?",
+     "a": "Nymphenburg Palace",
+     "wrong": [
+      "Residenz",
+      "Linderhof",
+      "Schleissheim"
+     ],
+     "level": 1,
+     "why": "Ludwig I commissioned the portraits."
+    },
+    {
+     "q": "What is the half-timbered style of German houses called?",
+     "a": "Fachwerk",
+     "wrong": [
+      "Backstein",
+      "Jugendstil",
+      "Bauhaus"
+     ],
+     "level": 1,
+     "why": "Many old towns are full of them."
+    },
+    {
+     "q": "What is the German name for Art Nouveau?",
+     "a": "Jugendstil",
+     "wrong": [
+      "Sezession",
+      "Biedermeier",
+      "Bauhaus"
+     ],
+     "level": 1,
+     "why": "It is named after a Munich magazine."
+    },
+    {
+     "q": "Which red brick Gothic style is common in northern German Hanseatic towns?",
+     "a": "Brick Gothic",
+     "wrong": [
+      "Weser Renaissance",
+      "Rhenish Romanesque",
+      "Flamboyant Gothic"
+     ],
+     "level": 1,
+     "why": "Lübeck's St. Mary's Church is an example."
+    },
+    {
+     "q": "Which Hamburg office building looks like a ship's bow?",
+     "a": "Chilehaus",
+     "wrong": [
+      "Elbphilharmonie",
+      "Sprinkenhof",
+      "Dancing Towers"
+     ],
+     "level": 1,
+     "why": "Fritz Höger designed it in the 1920s."
+    },
+    {
+     "q": "Which German architect designed the Olympic Stadium roof in Munich?",
+     "a": "Frei Otto",
+     "wrong": [
+      "Günter Behnisch",
+      "Walter Gropius",
+      "Gottfried Böhm"
+     ],
+     "level": 1,
+     "why": "It looks like a tent."
+    },
+    {
+     "q": "Which German architect won the 1986 Pritzker Prize?",
+     "a": "Gottfried Böhm",
+     "wrong": [
+      "Frei Otto",
+      "Ole Scheeren",
+      "Helmut Jahn"
+     ],
+     "level": 1,
+     "why": "He designed the Neviges pilgrimage church."
+    },
+    {
+     "q": "Which German porcelain maker uses crossed blue swords as its mark?",
+     "a": "Meissen",
+     "wrong": [
+      "Rosenthal",
+      "KPM",
+      "Villeroy & Boch"
+     ],
+     "level": 1,
+     "why": "It was founded in 1710."
+    },
+    {
+     "q": "What are the carved wooden soldiers from the Ore Mountains used to crack nuts called?",
+     "a": "Nutcrackers",
+     "wrong": [
+      "Smokers",
+      "Pyramids",
+      "Schwibbögen"
+     ],
+     "level": 1,
+     "why": "They became popular in the 1800s."
+    },
+    {
+     "q": "What are the candle arches from the Ore Mountains called?",
+     "a": "Schwibbögen",
+     "wrong": [
+      "Pyramids",
+      "Nutcrackers",
+      "Räuchermännchen"
+     ],
+     "level": 1,
+     "why": "They are placed in windows at Christmas."
+    },
+    {
+     "q": "Which German sculptor made the 'Floating Angel' in Güstrow Cathedral?",
+     "a": "Ernst Barlach",
+     "wrong": [
+      "Wilhelm Lehmbruck",
+      "Georg Kolbe",
+      "Käthe Kollwitz"
+     ],
+     "level": 1,
+     "why": "The Nazis melted down the first cast."
+    },
+    {
+     "q": "Which German Renaissance artist painted 'The Battle of Alexander at Issus'?",
+     "a": "Albrecht Altdorfer",
+     "wrong": [
+      "Albrecht Dürer",
+      "Hans Burgkmair",
+      "Lucas Cranach"
+     ],
+     "level": 2,
+     "why": "It is one of the first landscape-led paintings."
+    },
+    {
+     "q": "Which German woodcarver made the Altar of the Virgin in Creglingen?",
+     "a": "Tilman Riemenschneider",
+     "wrong": [
+      "Veit Stoss",
+      "Michael Pacher",
+      "Hans Multscher"
+     ],
+     "level": 2,
+     "why": "He did not paint his limewood figures."
+    },
+    {
+     "q": "Which Nuremberg sculptor carved the 'Annunciation' in St. Lorenz Church?",
+     "a": "Veit Stoss",
+     "wrong": [
+      "Tilman Riemenschneider",
+      "Adam Kraft",
+      "Peter Vischer"
+     ],
+     "level": 2,
+     "why": "It hangs from the ceiling."
+    },
+    {
+     "q": "Which medieval statue of a noblewoman in Naumburg Cathedral is famous?",
+     "a": "Uta of Naumburg",
+     "wrong": [
+      "Kriemhild",
+      "Queen Luise",
+      "Saint Elisabeth"
+     ],
+     "level": 2,
+     "why": "It was carved around 1250."
+    },
+    {
+     "q": "Which stone horseman statue in Bamberg Cathedral is a medieval mystery?",
+     "a": "Bamberg Horseman",
+     "wrong": [
+      "Magdeburg Rider",
+      "Lion of Brunswick",
+      "Roland of Bremen"
+     ],
+     "level": 2,
+     "why": "Nobody knows who it shows."
+    },
+    {
+     "q": "Which statue of a knight stands in Bremen's market square as a symbol of freedom?",
+     "a": "Roland",
+     "wrong": [
+      "Siegfried",
+      "Hermann",
+      "Barbarossa"
+     ],
+     "level": 2,
+     "why": "It was set up in 1404."
+    },
+    {
+     "q": "Which German Romantic painter made 'The Morning' and colour theory studies?",
+     "a": "Philipp Otto Runge",
+     "wrong": [
+      "Caspar David Friedrich",
+      "Carl Blechen",
+      "Moritz von Schwind"
+     ],
+     "level": 2,
+     "why": "He died at 33."
+    },
+    {
+     "q": "Which German painter showed 'Bismarck' and other leaders in many portraits?",
+     "a": "Franz von Lenbach",
+     "wrong": [
+      "Adolph Menzel",
+      "Anton von Werner",
+      "Wilhelm Leibl"
+     ],
+     "level": 2,
+     "why": "His Munich villa is now the Lenbachhaus."
+    },
+    {
+     "q": "Which painter recorded the 1871 proclamation of the German Empire at Versailles?",
+     "a": "Anton von Werner",
+     "wrong": [
+      "Adolph Menzel",
+      "Franz von Lenbach",
+      "Max Liebermann"
+     ],
+     "level": 2,
+     "why": "He painted three versions."
+    },
+    {
+     "q": "Which Berlin artist group split from the official academy in 1898?",
+     "a": "Berlin Secession",
+     "wrong": [
+      "Die Brücke",
+      "Novembergruppe",
+      "Der Sturm"
+     ],
+     "level": 2,
+     "why": "Max Liebermann was its first president."
+    },
+    {
+     "q": "Which German Expressionist woman lived with Kandinsky in Murnau?",
+     "a": "Gabriele Münter",
+     "wrong": [
+      "Marianne von Werefkin",
+      "Paula Modersohn-Becker",
+      "Käthe Kollwitz"
+     ],
+     "level": 2,
+     "why": "She hid his paintings from the Nazis."
+    },
+    {
+     "q": "Which Blaue Reiter painter was killed in France in September 1914?",
+     "a": "August Macke",
+     "wrong": [
+      "Franz Marc",
+      "Heinrich Campendonk",
+      "Alexej von Jawlensky"
+     ],
+     "level": 2,
+     "why": "He had visited Tunis with Paul Klee."
+    },
+    {
+     "q": "Which 1920s German art movement was called 'New Objectivity'?",
+     "a": "Neue Sachlichkeit",
+     "wrong": [
+      "Expressionism",
+      "Dada",
+      "Bauhaus"
+     ],
+     "level": 2,
+     "why": "Otto Dix and Christian Schad belonged to it."
+    },
+    {
+     "q": "Which Bauhaus teacher created the 'Homage to the Square' series later in America?",
+     "a": "Josef Albers",
+     "wrong": [
+      "Paul Klee",
+      "Johannes Itten",
+      "László Moholy-Nagy"
+     ],
+     "level": 2,
+     "why": "He taught at Black Mountain College and Yale."
+    },
+    {
+     "q": "Which ZERO group artist from Düsseldorf made light sculptures?",
+     "a": "Heinz Mack",
+     "wrong": [
+      "Otto Piene",
+      "Günther Uecker",
+      "Joseph Beuys"
+     ],
+     "level": 2,
+     "why": "He founded ZERO with Otto Piene."
+    },
+    {
+     "q": "Which German artist is known for hammering nails into canvases?",
+     "a": "Günther Uecker",
+     "wrong": [
+      "Heinz Mack",
+      "Otto Piene",
+      "Sigmar Polke"
+     ],
+     "level": 2,
+     "why": "He was part of the ZERO group."
+    },
+    {
+     "q": "Which German artist mixed pop art, dots and odd materials with Gerhard Richter in 'Capitalist Realism'?",
+     "a": "Sigmar Polke",
+     "wrong": [
+      "Konrad Lueg",
+      "Georg Baselitz",
+      "Markus Lüpertz"
+     ],
+     "level": 2,
+     "why": "He won the Golden Lion at Venice in 1986."
+    },
+    {
+     "q": "Which German artist made the painting series 'Café Deutschland'?",
+     "a": "Jörg Immendorff",
+     "wrong": [
+      "Markus Lüpertz",
+      "A. R. Penck",
+      "Georg Baselitz"
+     ],
+     "level": 2,
+     "why": "It explores Germany's division."
+    },
+    {
+     "q": "Which German artist designed the Cologne Cathedral south window in 2007?",
+     "a": "Gerhard Richter",
+     "wrong": [
+      "Sigmar Polke",
+      "Markus Lüpertz",
+      "Neo Rauch"
+     ],
+     "level": 2,
+     "why": "It has 11,263 coloured squares."
+    },
+    {
+     "q": "Which Leipzig painter leads the 'New Leipzig School'?",
+     "a": "Neo Rauch",
+     "wrong": [
+      "Gerhard Richter",
+      "Anselm Kiefer",
+      "Martin Kippenberger"
+     ],
+     "level": 2,
+     "why": "His paintings are dreamlike scenes."
+    },
+    {
+     "q": "Which German artist made 'Martin, Into the Corner, You Should Be Ashamed of Yourself'?",
+     "a": "Martin Kippenberger",
+     "wrong": [
+      "Joseph Beuys",
+      "Albert Oehlen",
+      "Jörg Immendorff"
+     ],
+     "level": 2,
+     "why": "It is a sculpture of the artist facing a wall."
+    },
+    {
+     "q": "Which German artist won the Golden Lion for the German pavilion in 2001 with 'Totes Haus u r'?",
+     "a": "Gregor Schneider",
+     "wrong": [
+      "Hans Haacke",
+      "Isa Genzken",
+      "Anne Imhof"
+     ],
+     "level": 2,
+     "why": "He rebuilt rooms of a house in Rheydt."
+    },
+    {
+     "q": "Which German-American artist won the Golden Lion in 1993 by smashing the German pavilion floor?",
+     "a": "Hans Haacke",
+     "wrong": [
+      "Gregor Schneider",
+      "Joseph Beuys",
+      "Anselm Kiefer"
+     ],
+     "level": 2,
+     "why": "He shared the prize with Nam June Paik."
+    },
+    {
+     "q": "Which Cologne cathedral treasure holds relics said to be the Three Kings'?",
+     "a": "Shrine of the Three Kings",
+     "wrong": [
+      "Golden Madonna",
+      "Gero Cross",
+      "Bernward Column"
+     ],
+     "level": 3,
+     "why": "It is the largest reliquary in the Western world."
+    },
+    {
+     "q": "Which 10th-century crucifix in Cologne Cathedral is one of the oldest large crucifixes north of the Alps?",
+     "a": "Gero Cross",
+     "wrong": [
+      "Bernward Cross",
+      "Lothair Cross",
+      "Essen Cross"
+     ],
+     "level": 3,
+     "why": "It was made around 970."
+    },
+    {
+     "q": "Which Hildesheim bishop commissioned bronze doors with Bible scenes around 1015?",
+     "a": "Bernward of Hildesheim",
+     "wrong": [
+      "Otto I",
+      "Thietmar of Merseburg",
+      "Willigis of Mainz"
+     ],
+     "level": 3,
+     "why": "St. Mary's Cathedral has them."
+    },
+    {
+     "q": "Which Romanesque abbey church on Lake Laach is a landmark of the Eifel?",
+     "a": "Maria Laach Abbey",
+     "wrong": [
+      "Lorsch Abbey",
+      "Corvey Abbey",
+      "Maulbronn Monastery"
+     ],
+     "level": 3,
+     "why": "Benedictine monks still live there."
+    },
+    {
+     "q": "Which Cistercian monastery in Baden-Württemberg is Europe's most complete medieval monastery?",
+     "a": "Maulbronn Monastery",
+     "wrong": [
+      "Lorsch Abbey",
+      "Eberbach Abbey",
+      "Bebenhausen Abbey"
+     ],
+     "level": 3,
+     "why": "It is a UNESCO site."
     }
    ]
   },
