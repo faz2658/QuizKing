@@ -42,12 +42,13 @@ public class SecurityConfig {
 
 	@Bean
 	SecurityFilterChain security(HttpSecurity http) throws Exception {
-		http.csrf(csrf -> csrf.disable()) // stateless bearer-token API, no cookies
+		http.csrf(csrf -> csrf.disable()) // bearer tokens; the one cookie (refresh) is SameSite=Strict, HttpOnly
 				.cors(Customizer.withDefaults())
 				.sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 				.authorizeHttpRequests(auth -> auth
 						.requestMatchers(HttpMethod.POST, "/api/v1/auth/register", "/api/v1/auth/login", "/api/v1/auth/guest",
-								"/api/v1/auth/google", "/api/v1/auth/password/forgot", "/api/v1/auth/password/reset").permitAll()
+								"/api/v1/auth/google", "/api/v1/auth/password/forgot", "/api/v1/auth/password/reset",
+								"/api/v1/auth/refresh", "/api/v1/auth/logout").permitAll()
 						.requestMatchers(HttpMethod.GET, "/api/v1/auth/providers").permitAll()
 						.requestMatchers("/actuator/health/**", "/actuator/info", "/error").permitAll()
 						.anyRequest().authenticated())
@@ -93,16 +94,13 @@ public class SecurityConfig {
 	@Bean
 	JwtDecoder jwtDecoder(SecretKey key) {
 		NimbusJwtDecoder decoder = NimbusJwtDecoder.withSecretKey(key).macAlgorithm(MacAlgorithm.HS256).build();
-		// Tokens signed before the rename to QuizCadia say "quiz-king-login" (same key): still accepted until they
-		// expire (quizcadia.jwt.lifetime), so nobody who was signed in gets 401s from this service
 		decoder.setJwtValidator(new DelegatingOAuth2TokenValidator<>(JwtValidators.createDefault(),
-				new JwtClaimValidator<Object>(JwtClaimNames.ISS, iss -> iss != null
-						&& (TokenService.ISSUER.equals(iss.toString()) || TokenService.LEGACY_ISSUER.equals(iss.toString())))));
+				new JwtClaimValidator<Object>(JwtClaimNames.ISS, iss -> iss != null && TokenService.ISSUER.equals(iss.toString()))));
 		return decoder;
 	}
 
 	@Bean
-	TokenService tokenService(JwtEncoder encoder, @Value("${quizcadia.jwt.lifetime:8h}") Duration lifetime,
+	TokenService tokenService(JwtEncoder encoder, @Value("${quizcadia.jwt.lifetime:15m}") Duration lifetime,
 			Clock clock) {
 		return new TokenService(encoder, lifetime, clock);
 	}

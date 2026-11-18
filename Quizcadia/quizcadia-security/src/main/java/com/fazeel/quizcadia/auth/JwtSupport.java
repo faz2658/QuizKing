@@ -32,12 +32,6 @@ public class JwtSupport {
 	/** Must match the login service's TokenService.ISSUER. */
 	public static final String ISSUER = "quizcadia-login";
 
-	/**
-	 * Tokens signed before the rename to QuizCadia say "quiz-king-login". Still accepted (same secret) so nobody is
-	 * signed out by the rename; safe to remove once the longest token lifetime has passed after that deploy.
-	 */
-	static final String LEGACY_ISSUER = "quiz-king-login";
-
 	private static final Logger log = LoggerFactory.getLogger(JwtSupport.class);
 
 	@Bean
@@ -45,7 +39,7 @@ public class JwtSupport {
 		NimbusJwtDecoder decoder = NimbusJwtDecoder.withSecretKey(key(secret)).macAlgorithm(MacAlgorithm.HS256).build();
 		decoder.setJwtValidator(new DelegatingOAuth2TokenValidator<>(JwtValidators.createDefault(),
 				new JwtClaimValidator<Object>(JwtClaimNames.ISS,
-						iss -> iss != null && (ISSUER.equals(iss.toString()) || LEGACY_ISSUER.equals(iss.toString())))));
+						iss -> iss != null && ISSUER.equals(iss.toString()))));
 		return decoder;
 	}
 

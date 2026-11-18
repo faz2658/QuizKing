@@ -28,9 +28,12 @@ public class AccountService {
 	private final Clock clock;
 	private final Set<String> adminEmails;
 	private final LoginThrottle throttle;
+	private final com.fazeel.quizcadia.session.SessionService sessions;
 
 	public AccountService(AccountRepository accounts, PasswordEncoder encoder, AccountEvents events, Clock clock,
-			@Value("${quizcadia.admin-emails:}") Set<String> adminEmails, LoginThrottle throttle) {
+			@Value("${quizcadia.admin-emails:}") Set<String> adminEmails, LoginThrottle throttle,
+			com.fazeel.quizcadia.session.SessionService sessions) {
+		this.sessions = sessions;
 		this.throttle = throttle;
 		this.accounts = accounts;
 		this.encoder = encoder;
@@ -105,6 +108,7 @@ public class AccountService {
 			Account a = sameEmail.get();
 			if (!a.isEmailVerified()) {
 				a.changePassword(unusablePassword());
+				sessions.endAll(a.getUserId()); // and whoever signed in with that password is signed out
 			}
 			a.linkGoogle(google.subject());
 			return a;

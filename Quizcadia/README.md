@@ -122,6 +122,14 @@ no account stored). Every other service checks that token itself through the sha
 - the full game pools the engines fetch (`/api/game/game1/*`, `/api/game/games/mp/*`) are blocked in nginx
 - `/actuator/**` is only reachable inside the Docker network
 
+Sessions: the JWT is an access token that lasts 15 minutes (`QUIZCADIA_JWT_LIFETIME`). Signing in also sets a
+refresh token in the `qc_refresh` cookie (HttpOnly, SameSite=Strict, path `/api/v1/auth`, Secure when `PUBLIC_URL`
+is https). The app swaps it at `POST /api/v1/auth/refresh` for a new access token and the next refresh token; a
+used-up refresh token that comes back later ends that sign-in. A sign-in ends after 30 days unused or 90 days in
+all (guests: 1 day; `QUIZCADIA_SESSION_IDLE`, `_ABSOLUTE`, `_GUEST`). `POST /api/v1/auth/logout` ends it,
+`/logout/all` ends every sign-in of the account, and so does a password reset. Other services only check the
+access token, so an ended sign-in can still reach them until its access token runs out.
+
 
 All settings have local defaults and can be overridden with environment variables: `MONGODB_URI`,
 `KAFKA_BOOTSTRAP_SERVERS` (default `localhost:19092`), `EUREKA_URL`, `CONFIG_SERVER_URL`, `GAME_MANAGER_URL`,

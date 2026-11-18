@@ -34,7 +34,13 @@ quizcadia:
   # Base64 or plain text, at least 32 bytes. Without it a random key is used (tokens die on restart).
   jwt:
     secret: ${QUIZCADIA_JWT_SECRET:}
-    lifetime: ${QUIZCADIA_JWT_LIFETIME:8h}
+    # Access tokens: every service accepts one until it runs out, so keep it short. The app renews it.
+    lifetime: ${QUIZCADIA_JWT_LIFETIME:15m}
+  # Refresh sessions (HttpOnly cookie): unused for `idle` or older than `absolute` means signing in again.
+  session:
+    idle: ${QUIZCADIA_SESSION_IDLE:30d}
+    absolute: ${QUIZCADIA_SESSION_ABSOLUTE:90d}
+    guest: ${QUIZCADIA_SESSION_GUEST:1d}
   # Comma-separated emails that get the ADMIN role when they register.
   admin-emails: ${QUIZCADIA_ADMIN_EMAILS:}
   kafka:

@@ -15,6 +15,20 @@ import com.fazeel.quizcadia.google.GoogleSignInException;
 @RestControllerAdvice
 public class ApiExceptionHandler {
 
+	private final com.fazeel.quizcadia.session.SessionCookie cookie;
+
+	ApiExceptionHandler(com.fazeel.quizcadia.session.SessionCookie cookie) {
+		this.cookie = cookie;
+	}
+
+	/** 401, and the dead refresh cookie is removed so the browser stops sending it. */
+	@ExceptionHandler(com.fazeel.quizcadia.session.SessionEndedException.class)
+	org.springframework.http.ResponseEntity<ProblemDetail> sessionEnded(com.fazeel.quizcadia.session.SessionEndedException e) {
+		return org.springframework.http.ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+				.header(org.springframework.http.HttpHeaders.SET_COOKIE, cookie.cleared())
+				.body(ProblemDetail.forStatusAndDetail(HttpStatus.UNAUTHORIZED, e.getMessage()));
+	}
+
 	/** 400 with one readable sentence per bad field in {@code detail}, and {@code errors}: field → message. */
 	@ExceptionHandler(MethodArgumentNotValidException.class)
 	ProblemDetail invalid(MethodArgumentNotValidException e) {
