@@ -80,7 +80,17 @@ export class Maintenance {
   private ticker: ReturnType<typeof setInterval> | null = null;
 
   constructor() {
-    inject(DestroyRef).onDestroy(() => this.stopTicker());
+    // the device's connection came back: check straight away instead of waiting out the countdown
+    const online = () => this.tryNow();
+    if (typeof window !== 'undefined') {
+      window.addEventListener('online', online);
+    }
+    inject(DestroyRef).onDestroy(() => {
+      this.stopTicker();
+      if (typeof window !== 'undefined') {
+        window.removeEventListener('online', online);
+      }
+    });
   }
 
   /** A call to the API failed because the servers are unreachable. Returns whether the site is now in maintenance. */

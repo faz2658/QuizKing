@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, computed, injec
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { Subscription, catchError, of, switchMap, takeWhile, timer } from 'rxjs';
+import { EMPTY, Subscription, catchError, of, switchMap, takeWhile, timer } from 'rxjs';
 import { CatalogApi, QuestionBankApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
@@ -150,7 +150,11 @@ export class Admin implements OnInit {
     }
     this.poll.unsubscribe();
     this.poll = timer(3000, 3000)
-      .pipe(switchMap(() => this.bank.importStatus()), takeWhile((st) => st.state === 'RUNNING', true))
+      .pipe(
+        // a status check that fails (a blip, a restart) is skipped, not the end of tracking: the next one tries again
+        switchMap(() => this.bank.importStatus().pipe(catchError(() => EMPTY))),
+        takeWhile((st) => st.state === 'RUNNING', true),
+      )
       .subscribe((st) => {
         this.importStatus.set(st);
         this.loadStats();

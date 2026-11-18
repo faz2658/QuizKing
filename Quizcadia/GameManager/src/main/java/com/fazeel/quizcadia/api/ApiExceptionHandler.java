@@ -1,5 +1,6 @@
 package com.fazeel.quizcadia.api;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -8,7 +9,9 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 import com.fazeel.quizcadia.catalog.InvalidGameException;
 import com.fazeel.quizcadia.catalog.NotFoundException;
 
+// Before FallbackExceptionHandler, which answers whatever this one does not
 @RestControllerAdvice
+@Order(0)
 public class ApiExceptionHandler {
 
 	@ExceptionHandler(NotFoundException.class)

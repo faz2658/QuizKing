@@ -12,6 +12,7 @@ import org.springframework.web.client.RestClientException;
 
 import com.fazeel.quizcadia.search.GameCard;
 import com.fazeel.quizcadia.search.GameCatalog;
+import com.fazeel.quizcadia.web.InternalHttp;
 
 /** Searches the game manager. The query is passed as an encoded URI variable (it used to be concatenated). */
 @Component
@@ -22,7 +23,7 @@ public class GameManagerCatalog implements GameCatalog {
 	private final RestClient http;
 
 	public GameManagerCatalog(RestClient.Builder builder, @Value("${quizcadia.game-manager-url}") String baseUrl) {
-		this.http = builder.baseUrl(baseUrl).build();
+		this.http = builder.baseUrl(baseUrl).requestFactory(InternalHttp.requestFactory()).build();
 	}
 
 	@Override

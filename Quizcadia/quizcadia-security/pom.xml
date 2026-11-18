@@ -10,7 +10,7 @@
 	</parent>
 	<artifactId>quizcadia-security</artifactId>
 	<name>quizcadia-security</name>
-	<description>Shared JWT checks: every service accepts the tokens the login service signs</description>
+	<description>Shared JWT checks (every service accepts the tokens the login service signs) and API error handling</description>
 
 	<dependencies>
 		<dependency>
@@ -24,6 +24,11 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+		</dependency>
+		<!-- DataAccessException, for the "database unavailable" answer of FallbackExceptionHandler -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>

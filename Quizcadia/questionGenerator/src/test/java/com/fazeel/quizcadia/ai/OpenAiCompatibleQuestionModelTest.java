@@ -31,7 +31,7 @@ class OpenAiCompatibleQuestionModelTest {
 						{"choices":[{"message":{"role":"assistant","content":"<think>\\n\\n</think>\\n\\n{\\"question\\": \\"Capital of Peru?\\", \\"options\\": [\\"Lima\\", \\"Quito\\", \\"Cusco\\", \\"Arequipa\\"], \\"answer\\": \\"Lima\\"}"}}]}""",
 						MediaType.APPLICATION_JSON));
 
-		var model = new OpenAiCompatibleQuestionModel(builder, "http://model:8080", "quizcadia");
+		var model = new OpenAiCompatibleQuestionModel(builder, "http://model:8080", "quizcadia", null);
 		var q = model.write("Geography", "hard", "multiple choice");
 
 		assertThat(q).get().satisfies(g -> {
@@ -59,7 +59,7 @@ class OpenAiCompatibleQuestionModelTest {
 		MockRestServiceServer server = MockRestServiceServer.bindTo(builder).build();
 		server.expect(requestTo("http://model:8080/v1/chat/completions")).andRespond(withServerError());
 
-		var model = new OpenAiCompatibleQuestionModel(builder, "http://model:8080", "m");
+		var model = new OpenAiCompatibleQuestionModel(builder, "http://model:8080", "m", null);
 
 		assertThatThrownBy(() -> model.write("X", "easy", "true/false")).isInstanceOf(AiUnavailableException.class);
 	}

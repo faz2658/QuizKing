@@ -1,5 +1,6 @@
 package com.fazeel.quizcadia.api;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -12,7 +13,9 @@ import com.fazeel.quizcadia.account.EmailTakenException;
 import com.fazeel.quizcadia.account.InvalidResetLinkException;
 import com.fazeel.quizcadia.google.GoogleSignInException;
 
+// Before FallbackExceptionHandler, which answers whatever this one does not
 @RestControllerAdvice
+@Order(0)
 public class ApiExceptionHandler {
 
 	private final com.fazeel.quizcadia.session.SessionCookie cookie;

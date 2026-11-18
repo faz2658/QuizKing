@@ -21,6 +21,7 @@ import com.fazeel.quizcadia.board.BoardCache;
 
 import tools.jackson.databind.JsonNode;
 import tools.jackson.databind.ObjectMapper;
+import com.fazeel.quizcadia.web.InternalHttp;
 
 /**
  * Website analytics for the admin page, read from the Google Analytics 4 Data API with a read-only service account.
@@ -64,7 +65,8 @@ public class WebsiteAnalytics {
 	@org.springframework.beans.factory.annotation.Autowired
 	public WebsiteAnalytics(@Value("${quizcadia.analytics.property-id:}") String propertyId,
 			@Value("${quizcadia.analytics.credentials-file:}") String credentialsFile, BoardCache cache, Clock clock) {
-		this(propertyId, readKey(credentialsFile), RestClient.create(), cache, clock);
+		this(propertyId, readKey(credentialsFile),
+				RestClient.builder().requestFactory(InternalHttp.requestFactory()).build(), cache, clock);
 	}
 
 	WebsiteAnalytics(String propertyId, String keyJson, RestClient http, BoardCache cache, Clock clock) {
