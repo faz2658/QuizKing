@@ -2,6 +2,8 @@ package com.fazeel.quizcadia.api;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
+import org.springframework.http.converter.HttpMessageNotReadableException;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
@@ -12,6 +14,17 @@ import com.fazeel.quizcadia.google.GoogleSignInException;
 
 @RestControllerAdvice
 public class ApiExceptionHandler {
+
+	/** 400 with one readable sentence per bad field in {@code detail}, and {@code errors}: field → message. */
+	@ExceptionHandler(MethodArgumentNotValidException.class)
+	ProblemDetail invalid(MethodArgumentNotValidException e) {
+		return ValidationProblems.of(e.getBindingResult());
+	}
+
+	@ExceptionHandler(HttpMessageNotReadableException.class)
+	ProblemDetail unreadable(HttpMessageNotReadableException e) {
+		return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, ValidationProblems.UNREADABLE);
+	}
 
 	@ExceptionHandler(EmailTakenException.class)
 	ProblemDetail taken(EmailTakenException e) {
