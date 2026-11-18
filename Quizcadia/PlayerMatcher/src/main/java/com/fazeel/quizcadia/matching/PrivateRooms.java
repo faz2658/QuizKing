@@ -21,11 +21,19 @@ import com.fazeel.quizcadia.domain.Match;
  * <p>
  * A party room is for a TV or classroom screen: the host's device shows the code, a QR code and the live game
  * but doesn't play, and up to {@link #PARTY_MAX_PLAYERS} phones join.
+ * <p>
+ * A quiz room is a party room for the live room quiz: no game (it asks {@link #QUIZ_QUESTIONS} random medium
+ * questions from every topic), up to {@link #QUIZ_MAX_PLAYERS} phones, and one player is enough to start.
  */
 public class PrivateRooms {
 
 	public static final int MAX_PLAYERS = 8;
 	public static final int PARTY_MAX_PLAYERS = 30;
+	public static final int QUIZ_MAX_PLAYERS = 50;
+	public static final int QUIZ_QUESTIONS = 20;
+	public static final int QUIZ_SECONDS = 20;
+	/** How long a quiz's answer shows when the host lets it run by itself. */
+	public static final int QUIZ_AUTO_REVEAL_SECONDS = 8;
 	static final Duration IDLE = Duration.ofMinutes(30);
 
 	public enum State {
@@ -35,8 +43,9 @@ public class PrivateRooms {
 	public record Player(int userId, String name) {
 	}
 
+	/** @param quiz a live room quiz (always a party room) */
 	public record RoomStatus(String code, int gameId, int hostId, List<Player> players, State state, String matchId,
-			int maxPlayers, boolean party) {
+			int maxPlayers, boolean party, boolean quiz) {
 	}
 
 	/** A room rule was broken; {@code notFound} means the code doesn't exist (any more). */
@@ -58,16 +67,19 @@ public class PrivateRooms {
 		final int gameId;
 		final int hostId;
 		final boolean party;
+		/** Null unless this is a live room quiz. */
+		final Match.RoomQuiz quiz;
 		final Map<Integer, String> players = new LinkedHashMap<>();
 		Instant lastActivity;
 		State state = State.WAITING;
 		String matchId;
 
-		Room(String code, int gameId, int hostId, boolean party, Instant now) {
+		Room(String code, int gameId, int hostId, boolean party, Match.RoomQuiz quiz, Instant now) {
 			this.code = code;
 			this.gameId = gameId;
 			this.hostId = hostId;
-			this.party = party;
+			this.party = party || quiz != null;
+			this.quiz = quiz;
 			this.lastActivity = now;
 		}
 	}
@@ -89,14 +101,29 @@ public class PrivateRooms {
 
 	/** @param party true for a big-screen party: the host only shows the game and doesn't play */
 	public synchronized RoomStatus create(int gameId, int userId, String name, boolean party) {
+		return create(gameId, userId, name, party, null);
+	}
+
+	/**
+	 * A live room quiz on the host's big screen: {@value #QUIZ_QUESTIONS} random medium questions from every topic.
+	 *
+	 * @param autoAdvance the next question opens by itself {@value #QUIZ_AUTO_REVEAL_SECONDS} s after each answer;
+	 *        otherwise the host moves on
+	 */
+	public synchronized RoomStatus createQuiz(int userId, String name, boolean autoAdvance) {
+		return create(0, userId, name, true,
+				new Match.RoomQuiz(QUIZ_QUESTIONS, QUIZ_SECONDS, autoAdvance ? QUIZ_AUTO_REVEAL_SECONDS : 0));
+	}
+
+	private RoomStatus create(int gameId, int userId, String name, boolean party, Match.RoomQuiz quiz) {
 		Instant now = clock.instant();
 		expire(now);
 		String code;
 		do {
 			code = "KING-" + (1000 + random.nextInt(9000));
 		} while (rooms.containsKey(code));
-		Room room = new Room(code, gameId, userId, party, now);
-		if (!party) {
+		Room room = new Room(code, gameId, userId, party, quiz, now);
+		if (!room.party) {
 			room.players.put(userId, name);
 		}
 		rooms.put(code, room);
@@ -111,7 +138,7 @@ public class PrivateRooms {
 		if (room.state != State.WAITING) {
 			throw new RoomException("That room has already started", false);
 		}
-		int max = room.party ? PARTY_MAX_PLAYERS : MAX_PLAYERS;
+		int max = max(room);
 		if (room.players.size() >= max) {
 			throw new RoomException("That room is full (" + max + " players)", false);
 		}
@@ -133,12 +160,15 @@ public class PrivateRooms {
 		if (room.state == State.STARTED) {
 			return status(room);
 		}
-		if (room.players.size() < 2) {
+		if (room.players.size() < (room.quiz != null ? 1 : 2)) {
+			if (room.quiz != null) {
+				throw new RoomException("Wait for someone to join", false);
+			}
 			throw new RoomException(room.party ? "Wait for at least two players to join" : "Wait for at least one friend to join", false);
 		}
 		Instant now = clock.instant();
 		Match match = new Match(UUID.randomUUID().toString(), room.gameId, new ArrayList<>(room.players.keySet()), now,
-				Map.copyOf(room.players), Map.of(), room.party ? room.hostId : null);
+				Map.copyOf(room.players), Map.of(), room.party ? room.hostId : null, room.quiz);
 		room.state = State.STARTED;
 		room.matchId = match.matchId();
 		room.lastActivity = now;
@@ -180,9 +210,12 @@ public class PrivateRooms {
 		return c.matches("\\d{4}") ? "KING-" + c : c; // friends may type just the digits
 	}
 
+	private static int max(Room r) {
+		return r.quiz != null ? QUIZ_MAX_PLAYERS : r.party ? PARTY_MAX_PLAYERS : MAX_PLAYERS;
+	}
+
 	private static RoomStatus status(Room r) {
 		List<Player> players = r.players.entrySet().stream().map(e -> new Player(e.getKey(), e.getValue())).toList();
-		return new RoomStatus(r.code, r.gameId, r.hostId, players, r.state, r.matchId,
-				r.party ? PARTY_MAX_PLAYERS : MAX_PLAYERS, r.party);
+		return new RoomStatus(r.code, r.gameId, r.hostId, players, r.state, r.matchId, max(r), r.party, r.quiz != null);
 	}
 }

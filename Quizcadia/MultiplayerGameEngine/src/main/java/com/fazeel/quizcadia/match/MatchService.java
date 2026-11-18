@@ -29,6 +29,7 @@ public class MatchService {
 	private final Clock clock;
 	private final MatchUpdates updates;
 	private final TopicPools pools;
+	private final RoomQuizQuestions quizQuestions;
 
 	public MatchService(MatchRepository matches, GameRepository games, GameSource gameSource, MatchFactory factory,
 			MatchEvents events, SeenQuestionRepository seen, Clock clock) {
@@ -40,9 +41,16 @@ public class MatchService {
 		this(matches, games, gameSource, factory, events, seen, clock, updates, TopicPools.none());
 	}
 
-	@org.springframework.beans.factory.annotation.Autowired
 	public MatchService(MatchRepository matches, GameRepository games, GameSource gameSource, MatchFactory factory,
 			MatchEvents events, SeenQuestionRepository seen, Clock clock, MatchUpdates updates, TopicPools pools) {
+		this(matches, games, gameSource, factory, events, seen, clock, updates, pools, RoomQuizQuestions.none());
+	}
+
+	@org.springframework.beans.factory.annotation.Autowired
+	public MatchService(MatchRepository matches, GameRepository games, GameSource gameSource, MatchFactory factory,
+			MatchEvents events, SeenQuestionRepository seen, Clock clock, MatchUpdates updates, TopicPools pools,
+			RoomQuizQuestions quizQuestions) {
+		this.quizQuestions = quizQuestions;
 		this.pools = pools;
 		this.updates = updates;
 		this.matches = matches;
@@ -64,6 +72,9 @@ public class MatchService {
 
 	/** Starts the match for players found by the player matcher. Replayed events are ignored. */
 	public MultiplayerMatch start(Match match) {
+		if (match.quiz() != null) {
+			return startRoomQuiz(match);
+		}
 		return matches.findById(match.matchId()).orElseGet(() -> {
 			MultiPlayerGame game = pools.withPool(games.findById(match.gameId())
 					.or(() -> gameSource.fetch(match.gameId()).map(games::save))
@@ -83,22 +94,72 @@ public class MatchService {
 		});
 	}
 
+	/** A live room quiz: random medium questions from every topic, the same for everyone, in the same order. */
+	private MultiplayerMatch startRoomQuiz(Match match) {
+		return matches.findById(match.matchId()).orElseGet(() -> {
+			List<MultiPlayerGame.Question> pool = quizQuestions.medium(match.quiz().questions());
+			if (pool.isEmpty()) {
+				throw new NotFoundException("No questions for room quiz " + match.matchId());
+			}
+			MultiplayerMatch created = factory.roomQuiz(match, pool, clock.instant());
+			log.info("Room quiz {} started: {} questions for {}", match.matchId(), created.getQuestions().size(),
+					match.players());
+			return matches.save(created);
+		});
+	}
+
+	/** The host's big screen paces a room quiz (reveal the answer, next question, end). */
+	public MultiplayerMatch host(String matchId, int userId, MultiplayerMatch.HostAction action) {
+		return retrying(() -> {
+			MultiplayerMatch match = load(matchId);
+			return match.host(userId, action, clock.instant()) ? save(match) : match;
+		});
+	}
+
+	/** Tries this many times when another save of the same match got in first (a room full of phones answering). */
+	static final int ATTEMPTS = 6;
+
+	/** Runs a load-change-save again when another request saved the match in between. */
+	private static <T> T retrying(java.util.function.Supplier<T> work) {
+		for (int attempt = 1;; attempt++) {
+			try {
+				return work.get();
+			}
+			catch (org.springframework.dao.OptimisticLockingFailureException e) {
+				if (attempt >= ATTEMPTS) {
+					throw e;
+				}
+				try {
+					Thread.sleep(java.util.concurrent.ThreadLocalRandom.current().nextLong(5, 20L * attempt));
+				}
+				catch (InterruptedException ie) {
+					Thread.currentThread().interrupt();
+					throw e;
+				}
+			}
+		}
+	}
+
 	public MultiplayerMatch get(String matchId, int userId) {
-		MultiplayerMatch match = load(matchId);
-		if (!match.isScreen(userId)) {
-			requirePlayer(match, userId);
-		}
-		if (match.advanceClock(clock.instant())) {
-			match = save(match);
-		}
-		return match;
+		return retrying(() -> {
+			MultiplayerMatch match = load(matchId);
+			if (!match.isScreen(userId)) {
+				requirePlayer(match, userId);
+			}
+			if (match.advanceClock(clock.instant())) {
+				match = save(match);
+			}
+			return match;
+		});
 	}
 
 	public AnswerResult answer(String matchId, int userId, int questionId, String answer) {
-		MultiplayerMatch match = load(matchId);
-		requirePlayer(match, userId);
-		AnswerOutcome outcome = match.answer(userId, questionId, answer, clock.instant());
-		return new AnswerResult(outcome, save(match));
+		return retrying(() -> {
+			MultiplayerMatch match = load(matchId);
+			requirePlayer(match, userId);
+			AnswerOutcome outcome = match.answer(userId, questionId, answer, clock.instant());
+			return new AnswerResult(outcome, save(match));
+		});
 	}
 
 	private void requirePlayer(MultiplayerMatch match, int userId) {
@@ -115,6 +176,8 @@ public class MatchService {
 		boolean publish = match.getStatus() == Status.COMPLETED && !match.isResultPublished();
 		if (publish) {
 			match.markResultPublished();
+			// room quizzes belong to no game, so there is nothing to report or recommend from them (yet)
+			publish = !match.isRoomQuiz();
 		}
 		MultiplayerMatch saved = matches.save(match);
 		if (publish) {

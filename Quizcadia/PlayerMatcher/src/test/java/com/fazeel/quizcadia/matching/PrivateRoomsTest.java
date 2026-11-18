@@ -107,4 +107,46 @@ class PrivateRoomsTest {
 			assertThat(m.names()).containsEntry(2, "Bo");
 		});
 	}
+
+	@Test
+	void aQuizRoomIsAPartyWithoutAGameAndOnePlayerIsEnough() {
+		RoomStatus room = rooms.createQuiz(1, "Host", false);
+		assertThat(room.quiz()).isTrue();
+		assertThat(room.party()).isTrue();
+		assertThat(room.players()).isEmpty(); // the host is the big screen
+		assertThat(room.maxPlayers()).isEqualTo(PrivateRooms.QUIZ_MAX_PLAYERS);
+		assertThatThrownBy(() -> rooms.start(room.code(), 1)).isInstanceOf(RoomException.class);
+
+		rooms.join(room.code(), 900_000_001, "Phone");
+		RoomStatus go = rooms.start(room.code(), 1);
+
+		assertThat(go.state()).isEqualTo(State.STARTED);
+		assertThat(started).singleElement().satisfies(m -> {
+			assertThat(m.gameId()).isZero();
+			assertThat(m.players()).containsExactly(900_000_001);
+			assertThat(m.screenId()).isEqualTo(1);
+			assertThat(m.names()).containsEntry(900_000_001, "Phone");
+			assertThat(m.quiz()).isEqualTo(new Match.RoomQuiz(20, 20, 0));
+		});
+	}
+
+	@Test
+	void aQuizRoomCanMoveOnByItself() {
+		RoomStatus room = rooms.createQuiz(1, "Host", true);
+		rooms.join(room.code(), 2, "Bo");
+		rooms.start(room.code(), 1);
+
+		assertThat(started.get(0).quiz().revealSeconds()).isEqualTo(PrivateRooms.QUIZ_AUTO_REVEAL_SECONDS);
+	}
+
+	@Test
+	void ordinaryRoomsCarryNoQuiz() {
+		RoomStatus room = rooms.create(7, 1, "Ada", true);
+		rooms.join(room.code(), 2, "Bo");
+		rooms.join(room.code(), 3, "Cy");
+		rooms.start(room.code(), 1);
+
+		assertThat(room.quiz()).isFalse();
+		assertThat(started.get(0).quiz()).isNull();
+	}
 }

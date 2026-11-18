@@ -159,4 +159,84 @@ class MatchServiceTest {
 		assertThatThrownBy(() -> service.answer("m1", 50, 1, "x")).hasMessageContaining("not in this match");
 		assertThatThrownBy(() -> service.get("m1", 51)).hasMessageContaining("not in this match");
 	}
+
+	static List<MultiPlayerGame.Question> mediumMix(int n) {
+		return java.util.stream.IntStream.rangeClosed(1, n)
+				.mapToObj(i -> new MultiPlayerGame.Question(100 + i, 2, "Q" + i + "?", "R" + i, "W1", "W2", "W3", "R" + i))
+				.toList();
+	}
+
+	@Test
+	void aRoomQuizAsksTheQuestionServicesMediumMixInOrder() {
+		java.util.List<Integer> asked = new java.util.ArrayList<>();
+		RoomQuizQuestions quizQuestions = new RoomQuizQuestions((level, count) -> {
+			asked.add(level);
+			asked.add(count);
+			return mediumMix(count);
+		});
+		service = new MatchService(matches, games, source, new MatchFactory(new Random(2)), events, seen,
+				Clock.fixed(now, ZoneOffset.UTC), new MatchUpdates(), TopicPools.none(), quizQuestions);
+
+		MultiplayerMatch m = service.start(new Match("q1", 0, List.of(900_000_001, 900_000_002), now,
+				Map.of(900_000_001, "Ada", 900_000_002, "Bo"), Map.of(), 50, new Match.RoomQuiz(20, 20, 0)));
+
+		assertThat(asked).containsExactly(RoomQuizQuestions.MEDIUM, 20);
+		assertThat(m.isRoomQuiz()).isTrue();
+		assertThat(m.getQuestions()).extracting(MatchQuestion::getQuestionId)
+				.containsExactlyElementsOf(java.util.stream.IntStream.rangeClosed(101, 120).boxed().toList());
+		assertThat(m.getPlayers()).extracting(PlayerScore::getName).containsExactly("Ada", "Bo");
+		assertThat(m.getScreenUserId()).isEqualTo(50);
+		verify(games, never()).findById(any());
+		// everyone plays the one stored match, so the same questions in the same order
+		assertThat(service.start(new Match("q1", 0, List.of(900_000_001, 900_000_002), now, Map.of(), Map.of(), 50,
+				new Match.RoomQuiz(20, 20, 0)))).isSameAs(m);
+		assertThat(asked).hasSize(2);
+	}
+
+	@Test
+	void aRoomQuizWithoutQuestionsDoesNotStart() {
+		service = new MatchService(matches, games, source, new MatchFactory(new Random(2)), events, seen,
+				Clock.fixed(now, ZoneOffset.UTC), new MatchUpdates(), TopicPools.none(), RoomQuizQuestions.none());
+
+		assertThatThrownBy(() -> service.start(new Match("q1", 0, List.of(1), now, Map.of(), Map.of(), 50,
+				new Match.RoomQuiz(20, 20, 0)))).isInstanceOf(NotFoundException.class);
+	}
+
+	@Test
+	void aFinishedRoomQuizPublishesNoGameResult() {
+		service = new MatchService(matches, games, source, new MatchFactory(new Random(2)), events, seen,
+				Clock.fixed(now, ZoneOffset.UTC), new MatchUpdates(), TopicPools.none(),
+				new RoomQuizQuestions((level, count) -> mediumMix(1)));
+		service.start(new Match("q1", 0, List.of(1), now, Map.of(), Map.of(), 50, new Match.RoomQuiz(20, 20, 0)));
+
+		MultiplayerMatch done = service.host("q1", 50, MultiplayerMatch.HostAction.END);
+
+		assertThat(done.getStatus()).isEqualTo(MultiplayerMatch.Status.COMPLETED);
+		verify(events, never()).matchCompleted(any());
+	}
+
+	@Test
+	void answersRetryWhenAnotherAnswerWasSavedAtTheSameMoment() {
+		java.util.function.Supplier<MultiplayerMatch> quiz = () -> MultiplayerMatch.roomQuiz("q1", List.of(1, 2), Map.of(),
+				List.of(new MatchQuestion(5, "Q?", List.of("A", "B"), "A")), 20, 0, 50, now.minus(MultiplayerMatch.LEAD_IN));
+		store.put("q1", quiz.get());
+		java.util.concurrent.atomic.AtomicInteger loads = new java.util.concurrent.atomic.AtomicInteger();
+		// the first load is a copy someone else saves over before this answer is saved
+		when(matches.findById("q1")).thenAnswer(i -> Optional.of(loads.getAndIncrement() == 0 ? quiz.get() : store.get("q1")));
+		java.util.concurrent.atomic.AtomicInteger saves = new java.util.concurrent.atomic.AtomicInteger();
+		org.mockito.Mockito.doAnswer(i -> {
+			if (saves.getAndIncrement() == 0) {
+				throw new org.springframework.dao.OptimisticLockingFailureException("someone else saved first");
+			}
+			MultiplayerMatch m = i.getArgument(0);
+			store.put(m.getMatchId(), m);
+			return m;
+		}).when(matches).save(any());
+
+		var result = service.answer("q1", 1, 5, "A");
+
+		assertThat(result.outcome().correct()).isTrue();
+		assertThat(saves.get()).isEqualTo(2);
+		assertThat(loads.get()).isEqualTo(2);
+	}
 }
