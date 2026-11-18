@@ -1,7 +1,8 @@
 /**
  * A glowing point-cloud "brain" drawn with plain WebGL 1: neurons on two folded hemispheres, faint links
  * between near neighbours and bright signals travelling along some links. Loaded lazily by {@link NeuralBg}
- * so its code only ships with the welcome page.
+ * after the first render, in its own chunk. Each kind of page frames it differently ({@link ScenePose}) and the
+ * camera glides between those framings, with a swing of the brain, when the player changes page.
  */
 
 export interface SceneColors {
@@ -25,9 +26,29 @@ export interface SceneOptions {
   colors: SceneColors;
 }
 
+/** How a page frames the brain. The scene eases from one pose to the next. */
+export interface ScenePose {
+  /** Sideways and upward shift of the brain, in scene units (about one brain radius). Ignored on tall screens. */
+  x: number;
+  y: number;
+  /** Camera distance as a multiple of the default; above 1 is further away. */
+  zoom: number;
+  /** Overall brightness, 0..1. */
+  alpha: number;
+  /** Turning speed as a multiple of the default; 0 holds still. */
+  spin: number;
+  /** How much the brain leans towards the pointer, 0..1. */
+  lean: number;
+}
+
 export interface NeuralScene {
-  /** Draws one frame at {@code time} seconds; pointer is -1..1 on both axes. */
-  render(time: number, pointerX: number, pointerY: number): void;
+  /**
+   * Draws one frame at {@code time} seconds; pointer is -1..1 on both axes. Returns true once the camera has
+   * reached the pose and the swing has died down, so a still pose needs no more frames.
+   */
+  render(time: number, pointerX: number, pointerY: number): boolean;
+  /** Moves the camera towards {@code pose}; {@code swing} spins the brain a little on the way, {@code instant} jumps. */
+  setPose(pose: ScenePose, swing?: number, instant?: boolean): void;
   /** Matches the drawing buffer to the canvas's CSS size. */
   resize(): void;
   setColors(colors: SceneColors): void;
@@ -174,10 +195,12 @@ function perspective(fovY: number, aspect: number, near: number, far: number): F
 }
 
 /** Rotate about X then Y, then push back by {@code dist} (column-major). */
-function view(rx: number, ry: number, dist: number, lift: number): Float32Array {
+function view(rx: number, ry: number, dist: number, tx: number, ty: number): Float32Array {
   const cx = Math.cos(rx), sx = Math.sin(rx), cy = Math.cos(ry), sy = Math.sin(ry);
-  return new Float32Array([cy, sx * sy, -cx * sy, 0, 0, cx, sx, 0, sy, -sx * cy, cx * cy, 0, 0, lift, -dist, 1]);
+  return new Float32Array([cy, sx * sy, -cx * sy, 0, 0, cx, sx, 0, sy, -sx * cy, cx * cy, 0, tx, ty, -dist, 1]);
 }
+
+const POSE_KEYS = ['x', 'y', 'zoom', 'alpha', 'spin', 'lean'] as const;
 
 export const createNeuralScene: SceneFactory = (canvas, { small, colors: initial }) => {
   const gl = canvas.getContext('webgl', { alpha: true, antialias: true, premultipliedAlpha: true, powerPreference: 'low-power' });
@@ -243,7 +266,13 @@ export const createNeuralScene: SceneFactory = (canvas, { small, colors: initial
   let dpr = 1;
   let proj = perspective(0.8, 1, 0.1, 20);
   let dist = 3.4;
+  let aspect = 1;
   let rx = 0, ry = 0; // eased pointer tilt
+  let angle = 0.5; // turn about the vertical axis
+  let swingSpeed = 0; // extra turning speed from a page change, dying away
+  let last = -1;
+  const cur: ScenePose = { x: 0, y: 0, zoom: 1, alpha: 1, spin: 1, lean: 1 };
+  let target: ScenePose = { ...cur };
 
   const resize = () => {
     dpr = Math.min(window.devicePixelRatio || 1, small ? 1.5 : 2);
@@ -253,7 +282,7 @@ export const createNeuralScene: SceneFactory = (canvas, { small, colors: initial
       canvas.width = w;
       canvas.height = h;
     }
-    const aspect = w / h;
+    aspect = w / h;
     // keep the whole brain in view on tall phone screens
     dist = aspect < 1 ? 3.1 / Math.max(aspect, 0.45) : 3.4;
     proj = perspective(0.8, aspect, 0.1, 20);
@@ -264,10 +293,31 @@ export const createNeuralScene: SceneFactory = (canvas, { small, colors: initial
   return {
     resize,
     setColors: (c) => (colors = c),
+    setPose(pose, swing = 0, instant = false) {
+      target = { ...pose };
+      swingSpeed += swing;
+      if (instant) {
+        Object.assign(cur, pose);
+        swingSpeed = 0;
+      }
+    },
     render(time, px, py) {
-      rx += (py * 0.22 - rx) * 0.05;
-      ry += (px * 0.35 - ry) * 0.05;
-      const v = view(0.18 + rx, time * 0.06 + ry, dist, 0.05);
+      const dt = last < 0 ? 0 : Math.min(Math.max(time - last, 0), 0.05);
+      last = time;
+      const k = 1 - Math.exp(-dt * 2.6);
+      let settled = swingSpeed < 0.01;
+      for (const key of POSE_KEYS) {
+        cur[key] += (target[key] - cur[key]) * k;
+        if (Math.abs(target[key] - cur[key]) > 0.002) settled = false;
+      }
+      angle += dt * (0.06 * cur.spin + swingSpeed);
+      swingSpeed *= Math.exp(-dt * 2.2);
+      const lk = 1 - Math.exp(-dt * 3);
+      rx += (py * 0.22 * cur.lean - rx) * lk;
+      ry += (px * 0.35 * cur.lean - ry) * lk;
+      // side-by-side framings only make sense on wide screens; phones keep the brain centred
+      const wide = Math.min(1, Math.max(0, (aspect - 0.9) / 0.5));
+      const v = view(0.18 + rx, angle + ry, dist * cur.zoom, cur.x * wide, 0.05 + cur.y);
       gl.clearColor(0, 0, 0, 0);
       gl.clear(gl.COLOR_BUFFER_BIT);
       gl.enable(gl.BLEND);
@@ -277,9 +327,9 @@ export const createNeuralScene: SceneFactory = (canvas, { small, colors: initial
       gl.useProgram(lineProg);
       gl.uniformMatrix4fv(lu['uProj'], false, proj);
       gl.uniformMatrix4fv(lu['uView'], false, v);
-      gl.uniform1f(lu['uDist'], dist);
+      gl.uniform1f(lu['uDist'], dist * cur.zoom);
       gl.uniform3fv(lu['uColor'], colors.link);
-      gl.uniform1f(lu['uAlpha'], colors.light ? 0.16 : 0.13);
+      gl.uniform1f(lu['uAlpha'], (colors.light ? 0.16 : 0.13) * cur.alpha);
       gl.bindBuffer(gl.ARRAY_BUFFER, lineBuf);
       gl.enableVertexAttribArray(aPos);
       gl.vertexAttribPointer(aPos, 3, gl.FLOAT, false, 0, 0);
@@ -291,12 +341,12 @@ export const createNeuralScene: SceneFactory = (canvas, { small, colors: initial
       gl.uniformMatrix4fv(pu['uView'], false, v);
       gl.uniform1f(pu['uTime'], time);
       gl.uniform1f(pu['uDpr'], dpr);
-      gl.uniform1f(pu['uDist'], dist);
+      gl.uniform1f(pu['uDist'], dist * cur.zoom);
       gl.uniform3fv(pu['uFrom'], colors.from);
       gl.uniform3fv(pu['uVia'], colors.via);
       gl.uniform3fv(pu['uTo'], colors.to);
       gl.uniform3fv(pu['uSignal'], colors.signal);
-      gl.uniform1f(pu['uAlpha'], colors.light ? 0.7 : 0.85);
+      gl.uniform1f(pu['uAlpha'], (colors.light ? 0.7 : 0.85) * cur.alpha);
       gl.bindBuffer(gl.ARRAY_BUFFER, pointBuf);
       const bytes = stride * 4;
       for (const [loc, size, offset] of [[aA, 3, 0], [aB, 3, 3], [aMeta, 4, 6]]) {
@@ -305,6 +355,7 @@ export const createNeuralScene: SceneFactory = (canvas, { small, colors: initial
       }
       gl.drawArrays(gl.POINTS, 0, count + signals);
       for (const loc of [aA, aB, aMeta]) gl.disableVertexAttribArray(loc);
+      return settled;
     },
     dispose() {
       gl.deleteBuffer(pointBuf);

@@ -184,8 +184,21 @@ select.input option { background: var(--bg-sunken); color: var(--text); }
 }
 @keyframes shine { to { background-position: 200% center; } }
 
-.fade-up { animation: fade-up 0.6s cubic-bezier(0.2, 0.7, 0.2, 1) both; }
-@keyframes fade-up { from { opacity: 0; transform: translateY(14px); } }
+/* Entrance used across the pages: rises and tips forward into place, like a card turned up off the table. */
+.fade-up { animation: fade-up 0.7s cubic-bezier(0.2, 0.7, 0.2, 1) both; transform-origin: 50% 100%; }
+@keyframes fade-up { from { opacity: 0; transform: perspective(900px) translateY(18px) rotateX(14deg); } }
+
+/*
+ * 3D page change (router view transitions, motion/page-transition.ts): the old page sinks back and tips away,
+ * the new one comes forward. Only <main> moves; the header and the 3D backdrop stay where they are.
+ */
+.page-vt main { view-transition-name: page; }
+::view-transition-old(root), ::view-transition-new(root) { animation: none; }
+::view-transition-group(page) { animation-duration: 0.55s; animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1); }
+::view-transition-old(page) { animation: page-out 0.3s cubic-bezier(0.4, 0, 1, 1) both; transform-origin: 50% 30vh; }
+::view-transition-new(page) { animation: page-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) 0.08s both; transform-origin: 50% 30vh; }
+@keyframes page-out { to { opacity: 0; transform: perspective(1200px) translateZ(-180px) rotateX(9deg); filter: blur(4px); } }
+@keyframes page-in { from { opacity: 0; transform: perspective(1200px) translateZ(120px) rotateX(-7deg); filter: blur(6px); } }
 
 .skeleton {
   background: linear-gradient(90deg, var(--surface), var(--surface-strong), var(--surface));
@@ -197,4 +210,5 @@ select.input option { background: var(--bg-sunken); color: var(--text); }
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
 }

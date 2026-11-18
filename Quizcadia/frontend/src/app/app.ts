@@ -7,13 +7,14 @@ import { GameFx } from './core/game-fx';
 import { InstallPrompt } from './core/install-prompt';
 import { World } from './core/world';
 import { Aurora } from './motion/aurora';
+import { NeuralBg } from './motion/neural-bg';
 import { ConsentBanner } from './ui/consent-banner';
 import { MaintenanceBanner } from './ui/maintenance-banner';
 import { Support } from './ui/support';
 
 @Component({
   selector: 'app-root',
-  imports: [NgTemplateOutlet, RouterOutlet, RouterLink, RouterLinkActive, Aurora, ConsentBanner, MaintenanceBanner, Support],
+  imports: [NgTemplateOutlet, RouterOutlet, RouterLink, RouterLinkActive, Aurora, NeuralBg, ConsentBanner, MaintenanceBanner, Support],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './app.html',
   styleUrl: './app.scss',

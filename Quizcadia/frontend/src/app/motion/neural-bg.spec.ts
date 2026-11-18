@@ -1,7 +1,10 @@
+import { Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
+import { provideRouter, Router, ViewTransitionInfo } from '@angular/router';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { NEURAL_SCENE_LOADER, NeuralBg } from './neural-bg';
+import { NEURAL_SCENE_LOADER, NeuralBg, POSES, poseFor } from './neural-bg';
 import { brainLinks, brainPoints, NeuralScene, SceneFactory } from './neural-scene';
+import { onPageTransition, PAGE_TRANSITION_CLASS } from './page-transition';
 
 function media(reduced: boolean) {
   vi.stubGlobal('matchMedia', (q: string) => ({
@@ -9,23 +12,32 @@ function media(reduced: boolean) {
   }));
 }
 
-function fakeScene(): NeuralScene {
-  return { render: vi.fn(), resize: vi.fn(), setColors: vi.fn(), dispose: vi.fn() };
+function fakeScene(settled = false): NeuralScene {
+  return { render: vi.fn(() => settled), resize: vi.fn(), setPose: vi.fn(), setColors: vi.fn(), dispose: vi.fn() };
 }
+
+@Component({ template: '' })
+class Blank {}
+
+/** The scene starts once the browser is idle (a 200 ms timer in jsdom); this waits past that and a few frames. */
+const frames = () => new Promise((r) => setTimeout(r, 300));
 
 async function mount(factory?: SceneFactory) {
   const load = vi.fn(async () => factory ?? (() => null));
-  TestBed.configureTestingModule({ providers: [{ provide: NEURAL_SCENE_LOADER, useValue: load }] });
+  TestBed.configureTestingModule({
+    providers: [
+      provideRouter([{ path: 'play/:id', component: Blank }, { path: 'welcome', component: Blank }, { path: '**', component: Blank }]),
+      { provide: NEURAL_SCENE_LOADER, useValue: load },
+    ],
+  });
   const f = TestBed.createComponent(NeuralBg);
   await f.whenStable();
-  await new Promise((r) => setTimeout(r));
+  await frames();
   await f.whenStable();
   return { f, load, host: f.nativeElement as HTMLElement };
 }
 
 describe('NeuralBg', () => {
-  const frames = () => new Promise((r) => setTimeout(r, 80));
-
   beforeEach(() => {
     // a real-ish frame clock, so a running loop shows up as repeated renders
     vi.stubGlobal('requestAnimationFrame', (cb: FrameRequestCallback) => setTimeout(() => cb(performance.now()), 16) as unknown as number);
@@ -52,15 +64,20 @@ describe('NeuralBg', () => {
     expect(host.getAttribute('data-mode')).toBe('fallback');
   });
 
-  it('with reduced motion it draws one still frame and never starts the animation loop', async () => {
+  it('with reduced motion it draws one still frame, and jumps to a new page framing without a swing', async () => {
     media(true);
     vi.stubGlobal('WebGLRenderingContext', class {});
     const scene = fakeScene();
-    const { host } = await mount(() => scene);
+    const { f, host } = await mount(() => scene);
 
-    await frames();
     expect(host.getAttribute('data-mode')).toBe('still');
     expect(scene.render).toHaveBeenCalledOnce();
+
+    await TestBed.inject(Router).navigateByUrl('/play/7');
+    await f.whenStable();
+    await frames();
+    expect(scene.setPose).toHaveBeenCalledWith(POSES.game, 0, true);
+    expect(scene.render).toHaveBeenCalledTimes(2); // one still frame per page, never a loop
   });
 
   it('animates normally, and frees the GL scene and its listeners when destroyed', async () => {
@@ -70,7 +87,6 @@ describe('NeuralBg', () => {
     const removed = vi.spyOn(window, 'removeEventListener');
     const { f, host } = await mount(() => scene);
 
-    await frames();
     expect(host.getAttribute('data-mode')).toBe('live');
     expect(vi.mocked(scene.render).mock.calls.length).toBeGreaterThan(1);
 
@@ -93,6 +109,65 @@ describe('NeuralBg', () => {
     await frames();
     expect(scene.render).toHaveBeenCalledTimes(drawn);
     hidden.mockRestore();
+  });
+
+  it('swings to the game framing on a page change and stops drawing once it holds still', async () => {
+    media(false);
+    vi.stubGlobal('WebGLRenderingContext', class {});
+    const scene = fakeScene(true); // the camera has always "arrived"
+    const { f, host } = await mount(() => scene);
+
+    await TestBed.inject(Router).navigateByUrl('/play/7');
+    await f.whenStable();
+    expect(host.getAttribute('data-pose')).toBe('game');
+    expect(scene.setPose).toHaveBeenLastCalledWith(POSES.game, expect.any(Number), false);
+    expect(vi.mocked(scene.setPose).mock.lastCall![1]).toBeGreaterThan(0);
+
+    await frames();
+    const drawn = vi.mocked(scene.render).mock.calls.length;
+    await frames();
+    expect(scene.render).toHaveBeenCalledTimes(drawn);
+  });
+});
+
+describe('poseFor', () => {
+  it('frames each kind of page', () => {
+    expect(poseFor('/welcome?next=%2Fparty%2FABC')).toBe('hero');
+    for (const url of ['/play/3', '/daily', '/vs/9/play', '/challenge/x/play', '/custom/play', '/match/4', '/party/ABCD', '/know-me/12', '/puzzles']) {
+      expect(poseFor(url), url).toBe('game');
+    }
+    for (const url of ['/admin/stats', '/privacy', '/reset-password?token=x']) expect(poseFor(url), url).toBe('quiet');
+    for (const url of ['/', '/leaderboard', '/me', '/know-me/new', '/vs/new', '/result/5', '/party']) expect(poseFor(url), url).toBe('browse');
+  });
+});
+
+describe('onPageTransition', () => {
+  afterEach(() => vi.unstubAllGlobals());
+
+  const info = (finished: Promise<void>) => {
+    const transition = { finished, skipTransition: vi.fn() };
+    return { info: { transition } as unknown as ViewTransitionInfo, transition };
+  };
+
+  it('names <main> only while the 3D page change runs', async () => {
+    media(false);
+    let done!: () => void;
+    const { info: i, transition } = info(new Promise<void>((r) => (done = r)));
+    onPageTransition(i);
+    expect(document.documentElement.classList.contains(PAGE_TRANSITION_CLASS)).toBe(true);
+    done();
+    await transition.finished;
+    await Promise.resolve();
+    expect(document.documentElement.classList.contains(PAGE_TRANSITION_CLASS)).toBe(false);
+    expect(transition.skipTransition).not.toHaveBeenCalled();
+  });
+
+  it('swaps pages at once with reduced motion', () => {
+    media(true);
+    const { info: i, transition } = info(Promise.resolve());
+    onPageTransition(i);
+    expect(transition.skipTransition).toHaveBeenCalledOnce();
+    expect(document.documentElement.classList.contains(PAGE_TRANSITION_CLASS)).toBe(false);
   });
 });
 
