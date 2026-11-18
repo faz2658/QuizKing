@@ -77,11 +77,25 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 		return configured;
 	}
 
+	/** Longest topic passed to the model; players can type up to 200 characters, a topic needs far fewer. */
+	static final int TOPIC_MAX = 100;
+	static final java.util.Set<String> DIFFICULTIES = java.util.Set.of("easy", "medium", "hard");
+	static final java.util.Set<String> FORMATS = java.util.Set.of("multiple choice", "true/false");
+
 	@Override
 	public Optional<GeneratedQuestion> write(String topic, String difficulty, String format) {
+		// The topic is whatever a player typed for an AI quiz: keep it to one line of plain words, so it can only ever
+		// be the "Topic:" of the prompt (the fine-tuned model's training format), never new lines or instructions.
+		// Difficulty and format come from the server, but are checked against the values the model was trained on.
+		String safeTopic = cleanTopic(topic);
+		if (safeTopic.isEmpty()) {
+			return Optional.empty();
+		}
 		Map<String, Object> body = Map.of("model", modelName, "temperature", 0.7, "top_p", 0.8, "top_k", 20,
 				"max_tokens", 300, "messages", List.of(Map.of("role", "system", "content", prompt.system()),
-						Map.of("role", "user", "content", prompt.userTurn(topic, difficulty, format))));
+						Map.of("role", "user", "content",
+								prompt.userTurn(safeTopic, allowed(difficulty, DIFFICULTIES, "medium"),
+										allowed(format, FORMATS, "multiple choice")))));
 		ChatResponse response;
 		try {
 			// Serialised up front so the request carries a Content-Length (some servers reject chunked bodies)
@@ -99,6 +113,28 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 	}
 
 	/** Accepts a bare JSON object, one wrapped in ```json fences, or one after an empty think block. */
+	/**
+	 * A player's topic as one short line of text: no line breaks or other control characters (which could add
+	 * "Format:" or instruction lines), no chat-template markers such as {@code <|im_start|>} (which the model
+	 * server may read as a new message), and no {@code /think} / {@code /no_think} switches.
+	 */
+	static String cleanTopic(String topic) {
+		if (topic == null) {
+			return "";
+		}
+		String t = topic.replaceAll("[\\p{Cc}\\p{Cf}\\p{Zl}\\p{Zp}]", " ")
+				.replaceAll("[<>|\\[\\]{}`]", " ")
+				.replaceAll("(?i)/\\s*(no_)?think\\b", " ")
+				.replaceAll("\\s+", " ")
+				.strip();
+		return t.length() <= TOPIC_MAX ? t : t.substring(0, TOPIC_MAX).strip();
+	}
+
+	private static String allowed(String value, java.util.Set<String> allowed, String fallback) {
+		String v = value == null ? "" : value.strip().toLowerCase(java.util.Locale.ROOT);
+		return allowed.contains(v) ? v : fallback;
+	}
+
 	Optional<GeneratedQuestion> parse(String reply) {
 		if (reply == null) {
 			return Optional.empty();
