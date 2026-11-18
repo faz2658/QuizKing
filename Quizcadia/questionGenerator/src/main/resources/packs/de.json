@@ -6938,6 +6938,1139 @@
       "Magna Carta"
      ],
      "why": "It was adopted in 1949."
+    },
+    {
+     "q": "What is the head of the German government called?",
+     "a": "Chancellor (Bundeskanzler)",
+     "wrong": [
+      "President",
+      "Prime Minister",
+      "Premier"
+     ],
+     "level": 1,
+     "why": "The Chancellor is elected by the Bundestag."
+    },
+    {
+     "q": "Who is Germany's head of state?",
+     "a": "Federal President",
+     "wrong": [
+      "Chancellor",
+      "Bundestag President",
+      "King"
+     ],
+     "level": 1,
+     "why": "The role is mostly ceremonial."
+    },
+    {
+     "q": "Which German Federal President took office in 2017?",
+     "a": "Frank-Walter Steinmeier",
+     "wrong": [
+      "Joachim Gauck",
+      "Christian Wulff",
+      "Horst Köhler"
+     ],
+     "level": 1,
+     "why": "He was re-elected in 2022."
+    },
+    {
+     "q": "In which building does the Bundestag meet?",
+     "a": "Reichstag building",
+     "wrong": [
+      "Bundesrat building",
+      "Chancellery",
+      "Bellevue Palace"
+     ],
+     "level": 1,
+     "why": "It has a glass dome open to visitors."
+    },
+    {
+     "q": "What is the chamber representing Germany's 16 states called?",
+     "a": "Bundesrat",
+     "wrong": [
+      "Bundestag",
+      "Landtag",
+      "Bundesversammlung"
+     ],
+     "level": 1,
+     "why": "State governments send members."
+    },
+    {
+     "q": "What is the parliament of a German state called?",
+     "a": "Landtag",
+     "wrong": [
+      "Bundesrat",
+      "Kreistag",
+      "Stadtrat"
+     ],
+     "level": 1,
+     "why": "Hamburg and Bremen call theirs the Bürgerschaft."
+    },
+    {
+     "q": "In which Berlin palace does the Federal President live officially?",
+     "a": "Bellevue Palace",
+     "wrong": [
+      "Charlottenburg Palace",
+      "Reichstag",
+      "Sanssouci"
+     ],
+     "level": 1,
+     "why": "It is in the Tiergarten."
+    },
+    {
+     "q": "What is the Chancellor's office building in Berlin called?",
+     "a": "Federal Chancellery",
+     "wrong": [
+      "Bellevue Palace",
+      "Reichstag",
+      "Red Town Hall"
+     ],
+     "level": 1,
+     "why": "Berliners nickname it the 'washing machine'."
+    },
+    {
+     "q": "In which city is Germany's Federal Constitutional Court?",
+     "a": "Karlsruhe",
+     "wrong": [
+      "Berlin",
+      "Bonn",
+      "Leipzig"
+     ],
+     "level": 1,
+     "why": "It can strike down laws."
+    },
+    {
+     "q": "What does CDU stand for?",
+     "a": "Christian Democratic Union",
+     "wrong": [
+      "Central Democratic Union",
+      "Christian Democratic Unity",
+      "Conservative Democratic Union"
+     ],
+     "level": 1,
+     "why": "It is Germany's main centre-right party."
+    },
+    {
+     "q": "Which party is the CDU's sister party in Bavaria?",
+     "a": "CSU",
+     "wrong": [
+      "FDP",
+      "Free Voters",
+      "AfD"
+     ],
+     "level": 1,
+     "why": "Together they form 'the Union'."
+    },
+    {
+     "q": "What does SPD stand for?",
+     "a": "Social Democratic Party of Germany",
+     "wrong": [
+      "Socialist Party of Germany",
+      "Social Democratic Party of Deutschland",
+      "Socialist People's Party"
+     ],
+     "level": 1,
+     "why": "It is Germany's oldest party."
+    },
+    {
+     "q": "Which colour is linked to the SPD?",
+     "a": "Red",
+     "wrong": [
+      "Black",
+      "Yellow",
+      "Green"
+     ],
+     "level": 1,
+     "why": "The CDU is linked to black."
+    },
+    {
+     "q": "Which colour is linked to the FDP?",
+     "a": "Yellow",
+     "wrong": [
+      "Red",
+      "Black",
+      "Green"
+     ],
+     "level": 1,
+     "why": "It is a liberal, pro-business party."
+    },
+    {
+     "q": "Which German party grew out of the environmental and peace movements?",
+     "a": "The Greens",
+     "wrong": [
+      "The Left",
+      "FDP",
+      "Pirates"
+     ],
+     "level": 1,
+     "why": "It entered the Bundestag in 1983."
+    },
+    {
+     "q": "Which right-wing party was founded in 2013 and entered the Bundestag in 2017?",
+     "a": "AfD (Alternative for Germany)",
+     "wrong": [
+      "NPD",
+      "Republikaner",
+      "Free Voters"
+     ],
+     "level": 1,
+     "why": "It began as an anti-euro party."
+    },
+    {
+     "q": "Which left-wing party grew partly from East Germany's former ruling party?",
+     "a": "The Left (Die Linke)",
+     "wrong": [
+      "SPD",
+      "The Greens",
+      "BSW"
+     ],
+     "level": 1,
+     "why": "It was formed in 2007."
+    },
+    {
+     "q": "Which party founded by Sahra Wagenknecht split from the Left in 2024?",
+     "a": "BSW",
+     "wrong": [
+      "AfD",
+      "Free Voters",
+      "Volt"
+     ],
+     "level": 1,
+     "why": "It is named after her."
+    },
+    {
+     "q": "What was East Germany's ruling party called?",
+     "a": "SED",
+     "wrong": [
+      "SPD",
+      "KPD",
+      "PDS"
+     ],
+     "level": 1,
+     "why": "It means Socialist Unity Party."
+    },
+    {
+     "q": "What is a coalition of SPD, Greens and FDP nicknamed?",
+     "a": "Traffic light coalition",
+     "wrong": [
+      "Jamaica coalition",
+      "Grand coalition",
+      "Kenya coalition"
+     ],
+     "level": 1,
+     "why": "The parties' colours are red, green and yellow."
+    },
+    {
+     "q": "What is a coalition of the CDU/CSU and SPD called?",
+     "a": "Grand coalition",
+     "wrong": [
+      "Traffic light coalition",
+      "Jamaica coalition",
+      "Black-yellow coalition"
+     ],
+     "level": 1,
+     "why": "It is often shortened to 'GroKo'."
+    },
+    {
+     "q": "Why is a CDU, Greens and FDP coalition called 'Jamaica'?",
+     "a": "Its colours match the Jamaican flag",
+     "wrong": [
+      "It was agreed in Jamaica",
+      "Its first leader was Jamaican",
+      "It is named after a song"
+     ],
+     "level": 1,
+     "why": "Black, green and yellow."
+    },
+    {
+     "q": "How many votes does a German voter cast in a Bundestag election?",
+     "a": "Two",
+     "wrong": [
+      "One",
+      "Three",
+      "Four"
+     ],
+     "level": 1,
+     "why": "One for a candidate and one for a party list."
+    },
+    {
+     "q": "What share of the party vote must a party usually win to enter the Bundestag?",
+     "a": "5%",
+     "wrong": [
+      "3%",
+      "7%",
+      "10%"
+     ],
+     "level": 1,
+     "why": "Parties with three constituency seats can also get in."
+    },
+    {
+     "q": "How often are regular Bundestag elections held?",
+     "a": "Every four years",
+     "wrong": [
+      "Every five years",
+      "Every three years",
+      "Every six years"
+     ],
+     "level": 1,
+     "why": "Early elections happen rarely."
+    },
+    {
+     "q": "In which year was the most recent early Bundestag election held?",
+     "a": "2025",
+     "wrong": [
+      "2021",
+      "2017",
+      "2005"
+     ],
+     "level": 1,
+     "why": "The traffic light coalition broke up in late 2024."
+    },
+    {
+     "q": "Which party won the most votes in the 2025 Bundestag election?",
+     "a": "CDU/CSU",
+     "wrong": [
+      "SPD",
+      "AfD",
+      "The Greens"
+     ],
+     "level": 1,
+     "why": "The AfD came second."
+    },
+    {
+     "q": "What is Germany's 'constructive vote of no confidence'?",
+     "a": "A vote that removes a Chancellor only by electing a successor",
+     "wrong": [
+      "A vote to call new elections",
+      "A vote to dissolve the Bundesrat",
+      "A vote against the President"
+     ],
+     "level": 1,
+     "why": "It was used successfully in 1982."
+    },
+    {
+     "q": "Which Chancellor replaced Helmut Schmidt after a vote of no confidence in 1982?",
+     "a": "Helmut Kohl",
+     "wrong": [
+      "Willy Brandt",
+      "Gerhard Schröder",
+      "Ludwig Erhard"
+     ],
+     "level": 1,
+     "why": "He then governed for 16 years."
+    },
+    {
+     "q": "Which German Chancellor was in office the longest?",
+     "a": "Helmut Kohl",
+     "wrong": [
+      "Angela Merkel",
+      "Konrad Adenauer",
+      "Helmut Schmidt"
+     ],
+     "level": 1,
+     "why": "Merkel was just 10 days short of his record."
+    },
+    {
+     "q": "Which Chancellor was the first from the SPD after the war?",
+     "a": "Willy Brandt",
+     "wrong": [
+      "Helmut Schmidt",
+      "Gerhard Schröder",
+      "Kurt Schumacher"
+     ],
+     "level": 1,
+     "why": "He took office in 1969."
+    },
+    {
+     "q": "Which Chancellor led West Germany from 1966 to 1969 in the first grand coalition?",
+     "a": "Kurt Georg Kiesinger",
+     "wrong": [
+      "Ludwig Erhard",
+      "Willy Brandt",
+      "Konrad Adenauer"
+     ],
+     "level": 1,
+     "why": "He had been a Nazi party member."
+    },
+    {
+     "q": "Which city was the seat of the West German government until 1999?",
+     "a": "Bonn",
+     "wrong": [
+      "Frankfurt",
+      "Cologne",
+      "Berlin"
+     ],
+     "level": 1,
+     "why": "The Bundestag voted to move to Berlin in 1991."
+    },
+    {
+     "q": "Which Bavarian premier became CSU leader in 2019?",
+     "a": "Markus Söder",
+     "wrong": [
+      "Horst Seehofer",
+      "Edmund Stoiber",
+      "Hubert Aiwanger"
+     ],
+     "level": 1,
+     "why": "He has led Bavaria since 2018."
+    },
+    {
+     "q": "Which long-time CSU leader led Bavaria from 1978 to 1988?",
+     "a": "Franz Josef Strauss",
+     "wrong": [
+      "Edmund Stoiber",
+      "Horst Seehofer",
+      "Alfons Goppel"
+     ],
+     "level": 1,
+     "why": "Munich airport is named after him."
+    },
+    {
+     "q": "Who became President of the European Commission in 2019?",
+     "a": "Ursula von der Leyen",
+     "wrong": [
+      "Angela Merkel",
+      "Annegret Kramp-Karrenbauer",
+      "Katarina Barley"
+     ],
+     "level": 1,
+     "why": "She was Germany's defence minister."
+    },
+    {
+     "q": "Which German city hosts the European Central Bank?",
+     "a": "Frankfurt",
+     "wrong": [
+      "Berlin",
+      "Bonn",
+      "Munich"
+     ],
+     "level": 1,
+     "why": "It sets interest rates for the eurozone."
+    },
+    {
+     "q": "What was the German currency before the euro?",
+     "a": "Deutsche Mark",
+     "wrong": [
+      "Reichsmark",
+      "Thaler",
+      "Schilling"
+     ],
+     "level": 1,
+     "why": "It was introduced in 1948."
+    },
+    {
+     "q": "In which year did euro notes and coins replace the Deutsche Mark?",
+     "a": "2002",
+     "wrong": [
+      "1999",
+      "1990",
+      "2005"
+     ],
+     "level": 1,
+     "why": "The euro was first used for bank transfers in 1999."
+    },
+    {
+     "q": "What was East Germany's currency called?",
+     "a": "Mark der DDR (East German mark)",
+     "wrong": [
+      "Reichsmark",
+      "Thaler",
+      "Rentenmark"
+     ],
+     "level": 1,
+     "why": "It was replaced by the Deutsche Mark in July 1990."
+    },
+    {
+     "q": "Which German minister is responsible for the armed forces?",
+     "a": "Defence minister",
+     "wrong": [
+      "Interior minister",
+      "Foreign minister",
+      "Finance minister"
+     ],
+     "level": 1,
+     "why": "In peacetime the defence minister commands the Bundeswehr."
+    },
+    {
+     "q": "What are Germany's armed forces called?",
+     "a": "Bundeswehr",
+     "wrong": [
+      "Wehrmacht",
+      "Reichswehr",
+      "Volksarmee"
+     ],
+     "level": 1,
+     "why": "They were founded in 1955."
+    },
+    {
+     "q": "What was East Germany's army called?",
+     "a": "National People's Army",
+     "wrong": [
+      "Bundeswehr",
+      "Volkspolizei",
+      "Red Army"
+     ],
+     "level": 1,
+     "why": "It was dissolved in 1990."
+    },
+    {
+     "q": "In which year did Germany suspend compulsory military service?",
+     "a": "2011",
+     "wrong": [
+      "1990",
+      "2001",
+      "2020"
+     ],
+     "level": 1,
+     "why": "It had been required for men since 1956."
+    },
+    {
+     "q": "Which federal ministry is responsible for police and internal security?",
+     "a": "Interior Ministry",
+     "wrong": [
+      "Justice Ministry",
+      "Defence Ministry",
+      "Foreign Office"
+     ],
+     "level": 1,
+     "why": "The Federal Police report to it."
+    },
+    {
+     "q": "What is Germany's foreign ministry called?",
+     "a": "Federal Foreign Office (Auswärtiges Amt)",
+     "wrong": [
+      "Bundesamt für Ausland",
+      "Foreign Chancellery",
+      "External Affairs Ministry"
+     ],
+     "level": 1,
+     "why": "It is in Berlin."
+    },
+    {
+     "q": "Which German Green politician became Foreign Minister in 2021?",
+     "a": "Annalena Baerbock",
+     "wrong": [
+      "Ricarda Lang",
+      "Katrin Göring-Eckardt",
+      "Claudia Roth"
+     ],
+     "level": 1,
+     "why": "She was the first woman in the job."
+    },
+    {
+     "q": "Which Green politician was Germany's Vice-Chancellor from 2021 to 2025?",
+     "a": "Robert Habeck",
+     "wrong": [
+      "Cem Özdemir",
+      "Joschka Fischer",
+      "Jürgen Trittin"
+     ],
+     "level": 1,
+     "why": "He was also economy minister."
+    },
+    {
+     "q": "Which Green politician was Germany's first Green Foreign Minister, from 1998?",
+     "a": "Joschka Fischer",
+     "wrong": [
+      "Jürgen Trittin",
+      "Cem Özdemir",
+      "Robert Habeck"
+     ],
+     "level": 1,
+     "why": "He was once a street fighter in Frankfurt."
+    },
+    {
+     "q": "Which FDP leader was finance minister until his dismissal in November 2024?",
+     "a": "Christian Lindner",
+     "wrong": [
+      "Wolfgang Kubicki",
+      "Guido Westerwelle",
+      "Marco Buschmann"
+     ],
+     "level": 1,
+     "why": "His firing ended the traffic light coalition."
+    },
+    {
+     "q": "Which CDU politician was finance minister from 2009 to 2017 and known for the 'black zero'?",
+     "a": "Wolfgang Schäuble",
+     "wrong": [
+      "Peter Altmaier",
+      "Thomas de Maizière",
+      "Friedrich Merz"
+     ],
+     "level": 1,
+     "why": "He later became Bundestag President."
+    },
+    {
+     "q": "What is the 'debt brake' in Germany?",
+     "a": "A constitutional limit on government borrowing",
+     "wrong": [
+      "A tax on debt",
+      "A ban on credit cards",
+      "A rule for state banks"
+     ],
+     "level": 1,
+     "why": "It was added to the Basic Law in 2009."
+    },
+    {
+     "q": "Which body elects Germany's Federal President?",
+     "a": "Federal Convention (Bundesversammlung)",
+     "wrong": [
+      "Bundestag alone",
+      "The voters",
+      "Bundesrat alone"
+     ],
+     "level": 1,
+     "why": "It includes Bundestag members and state delegates."
+    },
+    {
+     "q": "How long is a German Federal President's term?",
+     "a": "Five years",
+     "wrong": [
+      "Four years",
+      "Six years",
+      "Seven years"
+     ],
+     "level": 1,
+     "why": "They can serve two terms."
+    },
+    {
+     "q": "Which German Federal President gave a famous 1985 speech calling 8 May a day of liberation?",
+     "a": "Richard von Weizsäcker",
+     "wrong": [
+      "Roman Herzog",
+      "Walter Scheel",
+      "Karl Carstens"
+     ],
+     "level": 1,
+     "why": "He was President from 1984 to 1994."
+    },
+    {
+     "q": "Who was West Germany's first Federal President?",
+     "a": "Theodor Heuss",
+     "wrong": [
+      "Heinrich Lübke",
+      "Gustav Heinemann",
+      "Walter Scheel"
+     ],
+     "level": 1,
+     "why": "He was a liberal from Württemberg."
+    },
+    {
+     "q": "What is the 16 states' system of shared power called in Germany?",
+     "a": "Federalism",
+     "wrong": [
+      "Centralism",
+      "Confederalism",
+      "Monarchy"
+     ],
+     "level": 1,
+     "why": "Education is mostly run by the states."
+    },
+    {
+     "q": "What are German states' heads of government usually called?",
+     "a": "Minister-President",
+     "wrong": [
+      "Governor",
+      "Premier Minister",
+      "State Chancellor"
+     ],
+     "level": 1,
+     "why": "In Berlin it is the Governing Mayor."
+    },
+    {
+     "q": "What is the head of Berlin's government called?",
+     "a": "Governing Mayor",
+     "wrong": [
+      "Lord Mayor",
+      "Minister-President",
+      "First Mayor"
+     ],
+     "level": 1,
+     "why": "Hamburg has a First Mayor."
+    },
+    {
+     "q": "In which year did West Germany join NATO?",
+     "a": "1955",
+     "wrong": [
+      "1949",
+      "1961",
+      "1990"
+     ],
+     "level": 1,
+     "why": "The Bundeswehr was set up the same year."
+    },
+    {
+     "q": "Which 1957 treaty made West Germany a founder of the European Economic Community?",
+     "a": "Treaty of Rome",
+     "wrong": [
+      "Treaty of Paris",
+      "Maastricht Treaty",
+      "Treaty of Lisbon"
+     ],
+     "level": 1,
+     "why": "There were six founding countries."
+    },
+    {
+     "q": "Which 1963 treaty sealed friendship between France and West Germany?",
+     "a": "Élysée Treaty",
+     "wrong": [
+      "Treaty of Rome",
+      "Aachen Treaty",
+      "Locarno Treaty"
+     ],
+     "level": 1,
+     "why": "Adenauer and de Gaulle signed it."
+    },
+    {
+     "q": "Which 2015 decision by Merkel let in many refugees with the phrase 'Wir schaffen das'?",
+     "a": "Opening the border to refugees",
+     "wrong": [
+      "Leaving the euro",
+      "Closing nuclear plants",
+      "Ending conscription"
+     ],
+     "level": 1,
+     "why": "About a million asylum seekers arrived."
+    },
+    {
+     "q": "In which year did Germany switch off its last nuclear power plants?",
+     "a": "2023",
+     "wrong": [
+      "2011",
+      "2020",
+      "2025"
+     ],
+     "level": 1,
+     "why": "The decision followed Fukushima in 2011."
+    },
+    {
+     "q": "What is Germany's policy of switching to renewable energy called?",
+     "a": "Energiewende",
+     "wrong": [
+      "Klimaschutz",
+      "Atomausstieg",
+      "Grüne Wende"
+     ],
+     "level": 1,
+     "why": "It means 'energy turn'."
+    },
+    {
+     "q": "What is the speech by Scholz in 2022 about Germany's new defence policy called?",
+     "a": "Zeitenwende",
+     "wrong": [
+      "Wende",
+      "Energiewende",
+      "Neustart"
+     ],
+     "level": 1,
+     "why": "It came three days after Russia invaded Ukraine."
+    },
+    {
+     "q": "Which court in Karlsruhe is Germany's highest court for civil and criminal cases?",
+     "a": "Federal Court of Justice",
+     "wrong": [
+      "Federal Constitutional Court",
+      "Federal Administrative Court",
+      "Federal Labour Court"
+     ],
+     "level": 2,
+     "why": "It is called the Bundesgerichtshof."
+    },
+    {
+     "q": "Which agency is Germany's domestic intelligence service?",
+     "a": "Federal Office for the Protection of the Constitution",
+     "wrong": [
+      "BND",
+      "MAD",
+      "BKA"
+     ],
+     "level": 2,
+     "why": "It watches extremist groups."
+    },
+    {
+     "q": "What is Germany's foreign intelligence agency called?",
+     "a": "BND",
+     "wrong": [
+      "BKA",
+      "MAD",
+      "Stasi"
+     ],
+     "level": 2,
+     "why": "Its headquarters are in Berlin."
+    },
+    {
+     "q": "What is Germany's federal criminal police office called?",
+     "a": "BKA",
+     "wrong": [
+      "BND",
+      "LKA",
+      "BfV"
+     ],
+     "level": 2,
+     "why": "It is based in Wiesbaden."
+    },
+    {
+     "q": "Which article of the Basic Law says 'Human dignity shall be inviolable'?",
+     "a": "Article 1",
+     "wrong": [
+      "Article 20",
+      "Article 5",
+      "Article 146"
+     ],
+     "level": 2,
+     "why": "It is the first sentence of the constitution."
+    },
+    {
+     "q": "Which article of the Basic Law describes Germany as a democratic and social federal state?",
+     "a": "Article 20",
+     "wrong": [
+      "Article 1",
+      "Article 79",
+      "Article 23"
+     ],
+     "level": 2,
+     "why": "It also gives a right to resist tyranny."
+    },
+    {
+     "q": "Why was West Germany's constitution called the Basic Law instead of a constitution?",
+     "a": "It was meant to be temporary until reunification",
+     "wrong": [
+      "It was written by the Allies",
+      "It was never approved",
+      "It copied the Weimar constitution"
+     ],
+     "level": 2,
+     "why": "It was kept after 1990."
+    },
+    {
+     "q": "In which city was the Basic Law drafted in 1948–49?",
+     "a": "Bonn",
+     "wrong": [
+      "Frankfurt",
+      "Berlin",
+      "Munich"
+     ],
+     "level": 2,
+     "why": "The Parliamentary Council met there."
+    },
+    {
+     "q": "On which date did the Basic Law come into force?",
+     "a": "23 May 1949",
+     "wrong": [
+      "3 October 1949",
+      "9 November 1949",
+      "1 January 1950"
+     ],
+     "level": 2,
+     "why": "It is celebrated as Constitution Day."
+    },
+    {
+     "q": "Which 'eternity clause' protects the Basic Law's core principles?",
+     "a": "Article 79(3)",
+     "wrong": [
+      "Article 1(1)",
+      "Article 20(4)",
+      "Article 146"
+     ],
+     "level": 2,
+     "why": "It cannot be changed even by a two-thirds majority."
+    },
+    {
+     "q": "Which German Chancellor resigned in 1974 when his aide was exposed as a Stasi spy?",
+     "a": "Willy Brandt",
+     "wrong": [
+      "Helmut Schmidt",
+      "Kurt Kiesinger",
+      "Ludwig Erhard"
+     ],
+     "level": 2,
+     "why": "The spy was Günter Guillaume."
+    },
+    {
+     "q": "Which Federal President resigned in 2012 after a favours scandal?",
+     "a": "Christian Wulff",
+     "wrong": [
+      "Horst Köhler",
+      "Joachim Gauck",
+      "Roman Herzog"
+     ],
+     "level": 2,
+     "why": "He was later cleared in court."
+    },
+    {
+     "q": "Which Federal President resigned in 2010 after comments on military missions abroad?",
+     "a": "Horst Köhler",
+     "wrong": [
+      "Christian Wulff",
+      "Roman Herzog",
+      "Johannes Rau"
+     ],
+     "level": 2,
+     "why": "He had been head of the IMF."
+    },
+    {
+     "q": "Which former East German pastor became Federal President in 2012?",
+     "a": "Joachim Gauck",
+     "wrong": [
+      "Christian Wulff",
+      "Frank-Walter Steinmeier",
+      "Wolfgang Thierse"
+     ],
+     "level": 2,
+     "why": "He had run the Stasi files office."
+    },
+    {
+     "q": "What was the office that manages the Stasi files informally called after its first head?",
+     "a": "Gauck Authority",
+     "wrong": [
+      "Mielke Office",
+      "Birthler Archive",
+      "Stasi Museum"
+     ],
+     "level": 2,
+     "why": "Anyone can ask to see their own file."
+    },
+    {
+     "q": "Which CDU leader was Merkel's chosen successor but quit in 2020?",
+     "a": "Annegret Kramp-Karrenbauer",
+     "wrong": [
+      "Ursula von der Leyen",
+      "Armin Laschet",
+      "Julia Klöckner"
+     ],
+     "level": 2,
+     "why": "She was known as AKK."
+    },
+    {
+     "q": "Who was the CDU/CSU candidate for Chancellor in 2021?",
+     "a": "Armin Laschet",
+     "wrong": [
+      "Markus Söder",
+      "Friedrich Merz",
+      "Norbert Röttgen"
+     ],
+     "level": 2,
+     "why": "He was premier of North Rhine-Westphalia."
+    },
+    {
+     "q": "Which state election in 2024 made the AfD the largest party in a German state for the first time?",
+     "a": "Thuringia",
+     "wrong": [
+      "Saxony",
+      "Brandenburg",
+      "Bavaria"
+     ],
+     "level": 2,
+     "why": "Björn Höcke led its list."
+    },
+    {
+     "q": "Which German state elected Winfried Kretschmann as the first Green premier, in 2011?",
+     "a": "Baden-Württemberg",
+     "wrong": [
+      "Bavaria",
+      "Hesse",
+      "Lower Saxony"
+     ],
+     "level": 2,
+     "why": "He was re-elected in 2016 and 2021."
+    },
+    {
+     "q": "Which politician became Bundestag President in 2025?",
+     "a": "Julia Klöckner",
+     "wrong": [
+      "Bärbel Bas",
+      "Wolfgang Schäuble",
+      "Norbert Lammert"
+     ],
+     "level": 2,
+     "why": "She is from the CDU."
+    },
+    {
+     "q": "Which SPD politician became co-leader of the party and labour minister in 2025?",
+     "a": "Bärbel Bas",
+     "wrong": [
+      "Saskia Esken",
+      "Lars Klingbeil",
+      "Hubertus Heil"
+     ],
+     "level": 2,
+     "why": "She had been Bundestag President."
+    },
+    {
+     "q": "Which SPD politician became Vice-Chancellor and finance minister in 2025?",
+     "a": "Lars Klingbeil",
+     "wrong": [
+      "Boris Pistorius",
+      "Olaf Scholz",
+      "Hubertus Heil"
+     ],
+     "level": 2,
+     "why": "He co-leads the SPD."
+    },
+    {
+     "q": "Which SPD politician became defence minister in 2023?",
+     "a": "Boris Pistorius",
+     "wrong": [
+      "Christine Lambrecht",
+      "Lars Klingbeil",
+      "Olaf Scholz"
+     ],
+     "level": 2,
+     "why": "He stayed in the job under Merz."
+    },
+    {
+     "q": "Which CDU politician became Foreign Minister in 2025?",
+     "a": "Johann Wadephul",
+     "wrong": [
+      "Jens Spahn",
+      "Carsten Linnemann",
+      "Norbert Röttgen"
+     ],
+     "level": 2,
+     "why": "He is from Schleswig-Holstein."
+    },
+    {
+     "q": "Which office ranks second in German state protocol, after the Federal President?",
+     "a": "Bundestag President",
+     "wrong": [
+      "Chancellor",
+      "Bundesrat President",
+      "President of the Constitutional Court"
+     ],
+     "level": 2,
+     "why": "The Chancellor ranks third."
+    },
+    {
+     "q": "Which body solves disputes between the Bundestag and Bundesrat on laws?",
+     "a": "Mediation Committee",
+     "wrong": [
+      "Federal Convention",
+      "Council of Elders",
+      "Constitutional Court"
+     ],
+     "level": 2,
+     "why": "It finds compromise texts."
+    },
+    {
+     "q": "What is the German 'Kanzlerkandidat'?",
+     "a": "A party's candidate for Chancellor",
+     "wrong": [
+      "A trainee Chancellor",
+      "A Chancellor's deputy",
+      "A party treasurer"
+     ],
+     "level": 2,
+     "why": "Only big parties usually name one."
+    },
+    {
+     "q": "Which party's youth wing is called the Jusos?",
+     "a": "SPD",
+     "wrong": [
+      "CDU",
+      "Greens",
+      "FDP"
+     ],
+     "level": 2,
+     "why": "The CDU's is the Junge Union."
+    },
+    {
+     "q": "Which coalition governed Germany under Merz from 2025?",
+     "a": "CDU/CSU and SPD",
+     "wrong": [
+      "CDU/CSU and Greens",
+      "CDU/CSU and FDP",
+      "CDU/CSU, Greens and FDP"
+     ],
+     "level": 2,
+     "why": "It is a grand coalition, though a narrow one."
+    },
+    {
+     "q": "Which large German trade union represents metal and electrical workers?",
+     "a": "IG Metall",
+     "wrong": [
+      "Ver.di",
+      "IG BCE",
+      "GEW"
+     ],
+     "level": 2,
+     "why": "It is one of the world's largest unions."
+    },
+    {
+     "q": "What is the German system of workers sitting on company boards called?",
+     "a": "Co-determination (Mitbestimmung)",
+     "wrong": [
+      "Collective bargaining",
+      "Works council",
+      "Profit sharing"
+     ],
+     "level": 2,
+     "why": "Big firms must give workers half the supervisory board seats."
+    },
+    {
+     "q": "What were the labour market reforms under Schröder called?",
+     "a": "Hartz reforms",
+     "wrong": [
+      "Riester reforms",
+      "Bürgergeld",
+      "Rürup reforms"
+     ],
+     "level": 2,
+     "why": "They are named after Peter Hartz."
+    },
+    {
+     "q": "What was the name of the reform programme announced by Schröder in 2003?",
+     "a": "Agenda 2010",
+     "wrong": [
+      "Zeitenwende",
+      "Hartz IV",
+      "Wende 2000"
+     ],
+     "level": 3,
+     "why": "It led to the Hartz reforms."
+    },
+    {
+     "q": "What replaced Hartz IV unemployment benefits in 2023?",
+     "a": "Bürgergeld",
+     "wrong": [
+      "Grundsicherung",
+      "Arbeitslosengeld I",
+      "Kindergeld"
+     ],
+     "level": 3,
+     "why": "It means 'citizen's income'."
+    },
+    {
+     "q": "Which state's 2020 premier election caused a scandal when the AfD helped elect an FDP man?",
+     "a": "Thuringia",
+     "wrong": [
+      "Saxony",
+      "Saxony-Anhalt",
+      "Brandenburg"
+     ],
+     "level": 3,
+     "why": "Thomas Kemmerich resigned within days."
+    },
+    {
+     "q": "Which party did the SED rename itself as in 1990?",
+     "a": "PDS",
+     "wrong": [
+      "SPD Ost",
+      "Bündnis 90",
+      "KPD"
+     ],
+     "level": 3,
+     "why": "It means Party of Democratic Socialism."
+    },
+    {
+     "q": "Which East German citizens' movement merged with the Greens in 1993?",
+     "a": "Bündnis 90",
+     "wrong": [
+      "Neues Forum",
+      "Demokratie Jetzt",
+      "PDS"
+     ],
+     "level": 3,
+     "why": "The party is officially 'Bündnis 90/Die Grünen'."
     }
    ]
   },
