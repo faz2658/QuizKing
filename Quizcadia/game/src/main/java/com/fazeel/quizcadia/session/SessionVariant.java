@@ -9,5 +9,7 @@ public enum SessionVariant {
 	/** A player-picked mix of topics, difficulty and length. */
 	CUSTOM,
 	/** A replay of another player's exact quiz, to beat their score. */
-	CHALLENGE
+	CHALLENGE,
+	/** One side of a challenge between two friends: both play the same questions, the higher score wins. */
+	DUEL
 }

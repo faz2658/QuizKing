@@ -71,10 +71,7 @@ public class GameSessionService {
 
 	/** @param country the player's country (ISO code, may be null): most questions then come from it */
 	public GameSession start(int gameId, int userId, String playerName, String country) {
-		Game game = pools.withPool(games.findById(gameId).orElseThrow(() -> {
-			events.requestGame(new GameRequest(gameId, userId));
-			return new GameNotReadyException(gameId);
-		}));
+		Game game = loadGame(gameId, userId);
 		List<Integer> poolIds = game.getQuestions() == null ? List.of()
 				: game.getQuestions().stream().filter(java.util.Objects::nonNull).map(Questions::getQuestionId).toList();
 		Map<Integer, Instant> lastSeen = seen.findByUserIdAndQuestionIdIn(userId, poolIds).stream()
@@ -88,6 +85,17 @@ public class GameSessionService {
 				game.getGameName(), questions, now).playedBy(playerName);
 		seen.saveAll(questions.stream().map(q -> SeenQuestion.of(userId, q.getQuestionId(), now)).toList());
 		return sessions.save(session);
+	}
+
+	/**
+	 * The game with its topic's question pool. A game not cached yet is requested from the game manager on
+	 * behalf of {@code userId} and {@link GameNotReadyException} is thrown.
+	 */
+	public Game loadGame(int gameId, int userId) {
+		return pools.withPool(games.findById(gameId).orElseThrow(() -> {
+			events.requestGame(new GameRequest(gameId, userId));
+			return new GameNotReadyException(gameId);
+		}));
 	}
 
 	/** Difficulty of a custom quiz; MIXED is about 40% easy, 30% medium and 30% advanced. */

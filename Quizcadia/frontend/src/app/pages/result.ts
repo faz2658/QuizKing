@@ -55,7 +55,10 @@ export function verdict(percentage: number): string {
             </div>
             <div class="row">
               <button type="button" class="btn" (click)="share(r)" [disabled]="sharing()">📤 Share result</button>
-              @if (r.variant !== 'DAILY' && r.variant !== 'CHALLENGE') {
+              @if (r.variant === 'DUEL') {
+                <a class="btn btn-primary" [routerLink]="['/vs', r.variantKey]">⚔️ Back to the challenge</a>
+              }
+              @if (r.variant !== 'DAILY' && r.variant !== 'CHALLENGE' && r.variant !== 'DUEL') {
                 <button type="button" class="btn" (click)="challengeFriends(r)" [disabled]="sharing()">⚔️ Challenge a friend</button>
               }
               @if (r.variant === 'DAILY') {

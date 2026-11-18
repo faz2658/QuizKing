@@ -51,6 +51,20 @@ public class QuizBuilder {
 	public static final String EVERYWHERE = "*";
 
 	/**
+	 * The country a quiz for several players favours: their country when every one of them is from the same known
+	 * country, otherwise null, which means general questions only (players from different countries, or a
+	 * country unknown). The same rule as multiplayer matches.
+	 */
+	public static String sharedCountry(java.util.Collection<String> countries) {
+		List<String> codes = countries.stream()
+				.map(c -> c == null || c.isBlank() ? null : c.trim().toUpperCase(java.util.Locale.ROOT)).toList();
+		if (codes.isEmpty() || codes.stream().anyMatch(Objects::isNull) || codes.stream().distinct().count() != 1) {
+			return null;
+		}
+		return codes.get(0);
+	}
+
+	/**
 	 * Like {@link #build(Game, Map)}, for a player from {@code country}. Questions tagged with that country make
 	 * up about {@value #HOME_SHARE} of the quiz and general (untagged) questions the rest; other countries'
 	 * questions are left out. Unseen questions still come first: when the player has met all their country's
