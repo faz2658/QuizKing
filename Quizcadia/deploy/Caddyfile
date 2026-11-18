@@ -8,6 +8,47 @@
 		-Server
 	}
 	reverse_proxy frontend:80
+
+	# The frontend container itself is restarting (a deploy): Caddy can't reach it. API calls get the same 503 the
+	# frontend's nginx gives for a service that is down, which the app shows as its "being updated" banner; page
+	# loads get a small self-refreshing maintenance page (players with the app installed see the cached app instead).
+	handle_errors 502 503 504 {
+		header Retry-After 15
+		header Cache-Control no-store
+		@api path /api/*
+		handle @api {
+			header Content-Type application/problem+json
+			header X-Maintenance 1
+			respond `{"type":"about:blank","title":"Service Unavailable","status":503,"detail":"QuizCadia is being updated right now. Please try again in a moment.","maintenance":true,"retryAfterSeconds":15}` 503
+		}
+		handle {
+			header Content-Type "text/html; charset=utf-8"
+			respond <<HTML
+				<!doctype html>
+				<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+				<meta name="robots" content="noindex"><title>QuizCadia is being updated</title>
+				<style>
+				  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #08070f; color: #f5f3ff;
+				    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif; text-align: center; padding: 16px; }
+				  main { max-width: 440px; } h1 { font-size: 1.6rem; margin: 0 0 8px; } p { color: #a7a2c9; line-height: 1.5; }
+				  b { color: #ffb547; font-variant-numeric: tabular-nums; }
+				  button { margin-top: 12px; font: inherit; font-weight: 700; padding: 10px 20px; border-radius: 999px; border: 0;
+				    background: #f5f3ff; color: #0b0a14; cursor: pointer; }
+				</style></head>
+				<body><main>
+				  <h1>🛠️ QuizCadia is being updated</h1>
+				  <p>We're installing a new version. It usually takes a minute or two, and your account and scores are safe.</p>
+				  <p>Trying again in <b id="t">0:15</b></p>
+				  <button type="button" onclick="location.reload()">Try now</button>
+				</main>
+				<script>
+				  let s = 15; const t = document.getElementById('t');
+				  setInterval(() => { s--; if (s <= 0) location.reload(); else t.textContent = '0:' + String(s).padStart(2, '0'); }, 1000);
+				</script>
+				</body></html>
+				HTML 503
+		}
+	}
 }
 
 # Other names for the site (www, the old sslip.io address): their own certificate, then a permanent redirect so links

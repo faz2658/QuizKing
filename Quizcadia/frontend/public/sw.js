@@ -27,6 +27,11 @@ self.addEventListener('fetch', (event) => {
     event.respondWith(
       fetch(req)
         .then((res) => {
+          // during a deploy the proxy answers with its maintenance page: open the cached app instead (it shows its own
+          // maintenance banner and recovers by itself), and never cache that page as the app shell
+          if (res.status >= 500) {
+            return caches.match('/').then((hit) => hit || res);
+          }
           const copy = res.clone();
           caches.open(CACHE).then((c) => c.put('/', copy));
           return res;
