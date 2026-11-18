@@ -203,6 +203,908 @@
       "Audrey McLaughlin"
      ],
      "why": "She served for about four months."
+    },
+    {
+     "q": "Which Norse site in Newfoundland shows Vikings reached North America around 1000 AD?",
+     "a": "L'Anse aux Meadows",
+     "wrong": [
+      "Port Royal",
+      "Ferryland",
+      "Red Bay"
+     ],
+     "level": 1,
+     "why": "It is a UNESCO World Heritage Site."
+    },
+    {
+     "q": "Which Italian explorer sailing for England reached Newfoundland in 1497?",
+     "a": "John Cabot",
+     "wrong": [
+      "Jacques Cartier",
+      "Henry Hudson",
+      "Martin Frobisher"
+     ],
+     "level": 1,
+     "why": "His Italian name was Giovanni Caboto."
+    },
+    {
+     "q": "Which English explorer's name was given to a huge bay in northern Canada?",
+     "a": "Henry Hudson",
+     "wrong": [
+      "John Cabot",
+      "James Cook",
+      "George Vancouver"
+     ],
+     "level": 1,
+     "why": "His crew set him adrift in 1611."
+    },
+    {
+     "q": "What were French settlers in Nova Scotia and New Brunswick called?",
+     "a": "Acadians",
+     "wrong": [
+      "Québécois",
+      "Métis",
+      "Loyalists"
+     ],
+     "level": 1,
+     "why": "Many were expelled by the British in 1755."
+    },
+    {
+     "q": "What is the British expulsion of the Acadians from 1755 called?",
+     "a": "The Great Upheaval",
+     "wrong": [
+      "The Long March",
+      "The Conquest",
+      "The Clearances"
+     ],
+     "level": 1,
+     "why": "Many later settled in Louisiana as Cajuns."
+    },
+    {
+     "q": "Who were the settlers who moved to Canada after siding with Britain in the American Revolution?",
+     "a": "United Empire Loyalists",
+     "wrong": [
+      "Acadians",
+      "Patriots",
+      "Habitants"
+     ],
+     "level": 1,
+     "why": "Many settled in Ontario and New Brunswick."
+    },
+    {
+     "q": "Which war saw the US invade Canada and fail, from 1812 to 1815?",
+     "a": "War of 1812",
+     "wrong": [
+      "Seven Years' War",
+      "Fenian Raids",
+      "Boer War"
+     ],
+     "level": 1,
+     "why": "Canadians see it as a defence of their land."
+    },
+    {
+     "q": "Which Shawnee leader fought alongside the British in the War of 1812?",
+     "a": "Tecumseh",
+     "wrong": [
+      "Pontiac",
+      "Joseph Brant",
+      "Sitting Bull"
+     ],
+     "level": 1,
+     "why": "He was killed in 1813."
+    },
+    {
+     "q": "Which British general died at the Battle of Queenston Heights in 1812?",
+     "a": "Isaac Brock",
+     "wrong": [
+      "James Wolfe",
+      "Guy Carleton",
+      "John Graves Simcoe"
+     ],
+     "level": 1,
+     "why": "A tall monument marks the spot."
+    },
+    {
+     "q": "Which woman walked 30 km in 1813 to warn the British of an American attack?",
+     "a": "Laura Secord",
+     "wrong": [
+      "Madeleine de Verchères",
+      "Marie-Anne Gaboury",
+      "Mary Ann Shadd"
+     ],
+     "level": 1,
+     "why": "A chocolate company is named after her."
+    },
+    {
+     "q": "What was the secret network that helped enslaved Americans escape to Canada?",
+     "a": "Underground Railroad",
+     "wrong": [
+      "Freedom Trail",
+      "North Star Line",
+      "Liberty Road"
+     ],
+     "level": 1,
+     "why": "Many settled in southern Ontario."
+    },
+    {
+     "q": "Which woman led many people to freedom and lived in St. Catharines, Ontario?",
+     "a": "Harriet Tubman",
+     "wrong": [
+      "Mary Ann Shadd",
+      "Sojourner Truth",
+      "Viola Desmond"
+     ],
+     "level": 1,
+     "why": "She led escapes along the Underground Railroad."
+    },
+    {
+     "q": "Which Halifax businesswoman challenged segregation at a cinema in 1946 and is on the $10 note?",
+     "a": "Viola Desmond",
+     "wrong": [
+      "Rosa Parks",
+      "Mary Ann Shadd",
+      "Carrie Best"
+     ],
+     "level": 1,
+     "why": "She was pardoned in 2010."
+    },
+    {
+     "q": "Which city hosted the 1864 conference that led to Confederation?",
+     "a": "Charlottetown",
+     "wrong": [
+      "Quebec City",
+      "Halifax",
+      "Ottawa"
+     ],
+     "level": 1,
+     "why": "A second conference followed in Quebec City."
+    },
+    {
+     "q": "Which four provinces formed Canada in 1867?",
+     "a": "Ontario, Quebec, Nova Scotia and New Brunswick",
+     "wrong": [
+      "Ontario, Quebec, Manitoba and PEI",
+      "Quebec, Nova Scotia, PEI and Ontario",
+      "Ontario, Quebec, BC and New Brunswick"
+     ],
+     "level": 1,
+     "why": "The others joined later."
+    },
+    {
+     "q": "Which province joined Canada in 1871 on the promise of a railway?",
+     "a": "British Columbia",
+     "wrong": [
+      "Manitoba",
+      "Prince Edward Island",
+      "Alberta"
+     ],
+     "level": 1,
+     "why": "The railway was finished in 1885."
+    },
+    {
+     "q": "In which year did Manitoba join Canada?",
+     "a": "1870",
+     "wrong": [
+      "1867",
+      "1873",
+      "1905"
+     ],
+     "level": 1,
+     "why": "It followed the Red River Resistance."
+    },
+    {
+     "q": "In which year did Prince Edward Island join Canada?",
+     "a": "1873",
+     "wrong": [
+      "1867",
+      "1871",
+      "1949"
+     ],
+     "level": 1,
+     "why": "It had refused at first."
+    },
+    {
+     "q": "Which police force was founded in 1873 to keep order in the West?",
+     "a": "North-West Mounted Police",
+     "wrong": [
+      "Royal Canadian Navy",
+      "Ontario Provincial Police",
+      "Hudson's Bay Guard"
+     ],
+     "level": 1,
+     "why": "It later became the RCMP."
+    },
+    {
+     "q": "Which Halifax disaster in 1917 was the largest human-made explosion before the atomic bomb?",
+     "a": "Halifax Explosion",
+     "wrong": [
+      "Hindenburg disaster",
+      "Frank Slide",
+      "Springhill mine disaster"
+     ],
+     "level": 1,
+     "why": "Two ships collided in the harbour."
+    },
+    {
+     "q": "Which ship sank in 1912 and many of its victims are buried in Halifax?",
+     "a": "RMS Titanic",
+     "wrong": [
+      "Lusitania",
+      "Empress of Ireland",
+      "Bluenose"
+     ],
+     "level": 1,
+     "why": "Halifax ships recovered the bodies."
+    },
+    {
+     "q": "Which 1914 shipwreck in the St. Lawrence River killed over 1,000 people?",
+     "a": "Empress of Ireland",
+     "wrong": [
+      "Titanic",
+      "Lusitania",
+      "Edmund Fitzgerald"
+     ],
+     "level": 1,
+     "why": "It sank in 14 minutes."
+    },
+    {
+     "q": "Which beach did Canadian troops land on during D-Day in 1944?",
+     "a": "Juno Beach",
+     "wrong": [
+      "Omaha Beach",
+      "Gold Beach",
+      "Sword Beach"
+     ],
+     "level": 1,
+     "why": "About 14,000 Canadians landed there."
+    },
+    {
+     "q": "Which 1942 raid on a French port cost many Canadian lives?",
+     "a": "Dieppe Raid",
+     "wrong": [
+      "Operation Overlord",
+      "Battle of Ortona",
+      "Operation Market Garden"
+     ],
+     "level": 1,
+     "why": "Over 900 Canadians were killed."
+    },
+    {
+     "q": "Which country's liberation in 1945 is still thanked each year with tulips sent to Ottawa?",
+     "a": "Netherlands",
+     "wrong": [
+      "Belgium",
+      "France",
+      "Denmark"
+     ],
+     "level": 1,
+     "why": "The Dutch royal family sheltered in Ottawa during the war."
+    },
+    {
+     "q": "Which flag did Canada adopt in 1965?",
+     "a": "The Maple Leaf flag",
+     "wrong": [
+      "The Red Ensign",
+      "The Union Jack",
+      "The Fleur-de-lis"
+     ],
+     "level": 1,
+     "why": "It was first raised on 15 February 1965."
+    },
+    {
+     "q": "Which 1967 world's fair was held in Montreal?",
+     "a": "Expo 67",
+     "wrong": [
+      "Expo 86",
+      "World Expo 1970",
+      "Century 21"
+     ],
+     "level": 1,
+     "why": "It marked Canada's 100th birthday."
+    },
+    {
+     "q": "Which 1986 world's fair was held in Vancouver?",
+     "a": "Expo 86",
+     "wrong": [
+      "Expo 67",
+      "Expo 2000",
+      "World Expo 1988"
+     ],
+     "level": 1,
+     "why": "It focused on transport and communication."
+    },
+    {
+     "q": "In which year did 'O Canada' officially become the national anthem?",
+     "a": "1980",
+     "wrong": [
+      "1867",
+      "1967",
+      "1931"
+     ],
+     "level": 1,
+     "why": "It was first sung in 1880."
+    },
+    {
+     "q": "Which Prime Minister led Canada through the First World War?",
+     "a": "Robert Borden",
+     "wrong": [
+      "Wilfrid Laurier",
+      "Mackenzie King",
+      "Arthur Meighen"
+     ],
+     "level": 1,
+     "why": "His face was on the $100 note."
+    },
+    {
+     "q": "Who was Canada's first French-Canadian Prime Minister?",
+     "a": "Wilfrid Laurier",
+     "wrong": [
+      "Louis St. Laurent",
+      "Pierre Trudeau",
+      "George-Étienne Cartier"
+     ],
+     "level": 1,
+     "why": "He served from 1896 to 1911."
+    },
+    {
+     "q": "Which 1970 crisis saw the FLQ kidnap a British diplomat and a Quebec minister?",
+     "a": "October Crisis",
+     "wrong": [
+      "Quiet Revolution",
+      "Oka Crisis",
+      "Conscription Crisis"
+     ],
+     "level": 1,
+     "why": "The War Measures Act was invoked."
+    },
+    {
+     "q": "Which 1960s period of rapid change in Quebec moved power from the Church to the state?",
+     "a": "Quiet Revolution",
+     "wrong": [
+      "October Crisis",
+      "Great Darkness",
+      "Patriot Rebellion"
+     ],
+     "level": 1,
+     "why": "It began under Jean Lesage."
+    },
+    {
+     "q": "Which 1990 standoff in Quebec involved the Mohawk and a golf course?",
+     "a": "Oka Crisis",
+     "wrong": [
+      "October Crisis",
+      "Ipperwash Crisis",
+      "Caledonia dispute"
+     ],
+     "level": 1,
+     "why": "It lasted 78 days."
+    },
+    {
+     "q": "What were the church-run schools Indigenous children were forced to attend called?",
+     "a": "Residential schools",
+     "wrong": [
+      "Mission schools",
+      "Boarding academies",
+      "Day colleges"
+     ],
+     "level": 1,
+     "why": "The last one closed in 1996."
+    },
+    {
+     "q": "Which colour shirt do Canadians wear on the National Day for Truth and Reconciliation?",
+     "a": "Orange",
+     "wrong": [
+      "Red",
+      "Green",
+      "Purple"
+     ],
+     "level": 1,
+     "why": "It comes from Phyllis Webstad's story."
+    },
+    {
+     "q": "Which agreement in 1988 created free trade between Canada and the US?",
+     "a": "Canada–US Free Trade Agreement",
+     "wrong": [
+      "NAFTA",
+      "Auto Pact",
+      "Reciprocity Treaty"
+     ],
+     "level": 1,
+     "why": "NAFTA followed in 1994."
+    },
+    {
+     "q": "Which Quebec City fortress was built by the British after 1820?",
+     "a": "The Citadelle",
+     "wrong": [
+      "Fort York",
+      "Fortress of Louisbourg",
+      "Fort Henry"
+     ],
+     "level": 2,
+     "why": "It is still an active military base."
+    },
+    {
+     "q": "Which French fortress on Cape Breton Island was captured by the British in 1758?",
+     "a": "Fortress of Louisbourg",
+     "wrong": [
+      "Port Royal",
+      "Fort Beauséjour",
+      "The Citadelle"
+     ],
+     "level": 2,
+     "why": "Part of it has been rebuilt."
+    },
+    {
+     "q": "Which French settlement founded in 1605 in Nova Scotia was one of the first in North America?",
+     "a": "Port-Royal",
+     "wrong": [
+      "Tadoussac",
+      "Louisbourg",
+      "Ville-Marie"
+     ],
+     "level": 2,
+     "why": "Samuel de Champlain helped found it."
+    },
+    {
+     "q": "What was the original name of Montreal when it was founded in 1642?",
+     "a": "Ville-Marie",
+     "wrong": [
+      "Hochelaga",
+      "Stadacona",
+      "Mont-Réal"
+     ],
+     "level": 2,
+     "why": "Paul de Chomedey de Maisonneuve founded it."
+    },
+    {
+     "q": "What was the Iroquoian village on the site of Montreal called when Cartier arrived?",
+     "a": "Hochelaga",
+     "wrong": [
+      "Stadacona",
+      "Kanata",
+      "Tadoussac"
+     ],
+     "level": 2,
+     "why": "Cartier visited it in 1535."
+    },
+    {
+     "q": "What were the young French men who traded furs in the woods called?",
+     "a": "Coureurs des bois",
+     "wrong": [
+      "Voyageurs",
+      "Habitants",
+      "Seigneurs"
+     ],
+     "level": 2,
+     "why": "They often worked without licences."
+    },
+    {
+     "q": "Which British general won the 1759 Battle of the Plains of Abraham?",
+     "a": "James Wolfe",
+     "wrong": [
+      "Guy Carleton",
+      "Jeffery Amherst",
+      "Isaac Brock"
+     ],
+     "level": 2,
+     "why": "Both he and Montcalm died."
+    },
+    {
+     "q": "Which treaty in 1763 gave New France to Britain?",
+     "a": "Treaty of Paris",
+     "wrong": [
+      "Treaty of Utrecht",
+      "Treaty of Ghent",
+      "Treaty of Versailles"
+     ],
+     "level": 2,
+     "why": "France kept only Saint-Pierre and Miquelon."
+    },
+    {
+     "q": "Which 1774 British law let Quebec keep French civil law and the Catholic faith?",
+     "a": "Quebec Act",
+     "wrong": [
+      "Constitution Act",
+      "Act of Union",
+      "Royal Proclamation"
+     ],
+     "level": 2,
+     "why": "It angered the American colonists."
+    },
+    {
+     "q": "Which 1837 uprisings happened in Upper and Lower Canada?",
+     "a": "The Rebellions of 1837",
+     "wrong": [
+      "The Fenian Raids",
+      "The Riel Rebellion",
+      "The Conquest"
+     ],
+     "level": 2,
+     "why": "Louis-Joseph Papineau and William Lyon Mackenzie led them."
+    },
+    {
+     "q": "Which 1839 report recommended uniting Upper and Lower Canada?",
+     "a": "Durham Report",
+     "wrong": [
+      "Rowell-Sirois Report",
+      "Massey Report",
+      "Berger Report"
+     ],
+     "level": 2,
+     "why": "Lord Durham wrote it."
+    },
+    {
+     "q": "Which American raiders attacked Canada in the 1860s to pressure Britain over Ireland?",
+     "a": "Fenians",
+     "wrong": [
+      "Loyalists",
+      "Patriots",
+      "Confederates"
+     ],
+     "level": 2,
+     "why": "Their raids helped push Confederation."
+    },
+    {
+     "q": "What was the name of the town now called Toronto before 1834?",
+     "a": "York",
+     "wrong": [
+      "Fort Rouillé",
+      "Kingston",
+      "Newark"
+     ],
+     "level": 2,
+     "why": "It was renamed when it became a city."
+    },
+    {
+     "q": "Which city was the first capital of the united Province of Canada in 1841?",
+     "a": "Kingston",
+     "wrong": [
+      "Montreal",
+      "Toronto",
+      "Quebec City"
+     ],
+     "level": 2,
+     "why": "Ottawa became capital later."
+    },
+    {
+     "q": "Which monarch chose Ottawa as the capital in 1857?",
+     "a": "Queen Victoria",
+     "wrong": [
+      "George III",
+      "Edward VII",
+      "William IV"
+     ],
+     "level": 2,
+     "why": "It was seen as safer from the US."
+    },
+    {
+     "q": "Which 'Fathers of Confederation' leader from Quebec worked with Macdonald?",
+     "a": "George-Étienne Cartier",
+     "wrong": [
+      "Louis-Hippolyte LaFontaine",
+      "Wilfrid Laurier",
+      "Honoré Mercier"
+     ],
+     "level": 2,
+     "why": "He brought Quebec into Confederation."
+    },
+    {
+     "q": "Which 1885 conflict in Saskatchewan ended with Louis Riel's execution?",
+     "a": "North-West Resistance",
+     "wrong": [
+      "Red River Resistance",
+      "Fenian Raids",
+      "Battle of Seven Oaks"
+     ],
+     "level": 2,
+     "why": "The battle of Batoche ended it."
+    },
+    {
+     "q": "Which Métis military leader fought beside Riel in 1885?",
+     "a": "Gabriel Dumont",
+     "wrong": [
+      "Cuthbert Grant",
+      "Big Bear",
+      "Poundmaker"
+     ],
+     "level": 2,
+     "why": "He later toured with Buffalo Bill's show."
+    },
+    {
+     "q": "Which tax was charged on Chinese immigrants to Canada from 1885?",
+     "a": "Head tax",
+     "wrong": [
+      "Poll tax",
+      "Landing fee",
+      "Gold tax"
+     ],
+     "level": 2,
+     "why": "It rose to $500 in 1903."
+    },
+    {
+     "q": "Which 1914 ship carrying Indian passengers was turned away from Vancouver?",
+     "a": "Komagata Maru",
+     "wrong": [
+      "Empress of India",
+      "St. Louis",
+      "Sea Lion"
+     ],
+     "level": 2,
+     "why": "Canada apologised in 2016."
+    },
+    {
+     "q": "Which 1929 ruling opened the Canadian Senate to women?",
+     "a": "The Persons Case",
+     "wrong": [
+      "R v. Morgentaler",
+      "Roncarelli v. Duplessis",
+      "Reference re Secession of Quebec"
+     ],
+     "level": 2,
+     "why": "The 'Famous Five' brought it."
+    },
+    {
+     "q": "Who became the first woman elected to Canada's House of Commons, in 1921?",
+     "a": "Agnes Macphail",
+     "wrong": [
+      "Nellie McClung",
+      "Emily Murphy",
+      "Thérèse Casgrain"
+     ],
+     "level": 2,
+     "why": "She later helped reform prisons."
+    },
+    {
+     "q": "Which province first gave women the vote, in 1916?",
+     "a": "Manitoba",
+     "wrong": [
+      "Ontario",
+      "Quebec",
+      "British Columbia"
+     ],
+     "level": 2,
+     "why": "Quebec was last, in 1940."
+    },
+    {
+     "q": "Which 1919 strike in Winnipeg became Canada's most famous general strike?",
+     "a": "Winnipeg General Strike",
+     "wrong": [
+      "Estevan Strike",
+      "Asbestos Strike",
+      "Regina Riot"
+     ],
+     "level": 2,
+     "why": "About 30,000 workers walked out."
+    },
+    {
+     "q": "Which 1935 protest march of unemployed men ended with a riot in Regina?",
+     "a": "On-to-Ottawa Trek",
+     "wrong": [
+      "Hunger March",
+      "Bonus Army",
+      "Long March"
+     ],
+     "level": 2,
+     "why": "They were travelling to Ottawa by train."
+    },
+    {
+     "q": "Which Second World War policy forced Japanese Canadians from the BC coast?",
+     "a": "Internment",
+     "wrong": [
+      "Conscription",
+      "Head tax",
+      "Evacuation pact"
+     ],
+     "level": 2,
+     "why": "Canada apologised in 1988."
+    },
+    {
+     "q": "Which 1944 crisis split Canada over sending drafted soldiers overseas?",
+     "a": "Conscription Crisis",
+     "wrong": [
+      "October Crisis",
+      "Quiet Revolution",
+      "King-Byng Affair"
+     ],
+     "level": 2,
+     "why": "An earlier crisis happened in 1917."
+    },
+    {
+     "q": "Which 1945 defection by a Soviet clerk in Ottawa helped start the Cold War?",
+     "a": "Gouzenko Affair",
+     "wrong": [
+      "Profumo Affair",
+      "Avro Affair",
+      "Munsinger Affair"
+     ],
+     "level": 2,
+     "why": "Igor Gouzenko revealed a spy ring."
+    },
+    {
+     "q": "Which Canadian army battle in Italy in December 1943 was called 'little Stalingrad'?",
+     "a": "Battle of Ortona",
+     "wrong": [
+      "Battle of Monte Cassino",
+      "Battle of Anzio",
+      "Battle of Sicily"
+     ],
+     "level": 2,
+     "why": "It was fought street by street."
+    },
+    {
+     "q": "Which 1917 battle in Belgium saw Canadians take a muddy ridge?",
+     "a": "Passchendaele",
+     "wrong": [
+      "Ypres",
+      "Somme",
+      "Amiens"
+     ],
+     "level": 2,
+     "why": "Canadians won nine Victoria Crosses there."
+    },
+    {
+     "q": "Which First World War battle in 1916 devastated the Newfoundland Regiment?",
+     "a": "Beaumont-Hamel (the Somme)",
+     "wrong": [
+      "Vimy Ridge",
+      "Gallipoli",
+      "Passchendaele"
+     ],
+     "level": 2,
+     "why": "Most of the regiment was killed or wounded in minutes."
+    },
+    {
+     "q": "Which Canadian airman shot down 72 planes in the First World War?",
+     "a": "Billy Bishop",
+     "wrong": [
+      "Roy Brown",
+      "William Barker",
+      "Raymond Collishaw"
+     ],
+     "level": 2,
+     "why": "Toronto's island airport is named after him."
+    },
+    {
+     "q": "Which Canadian doctor served with Mao's army and is honoured in China?",
+     "a": "Norman Bethune",
+     "wrong": [
+      "Wilder Penfield",
+      "William Osler",
+      "Frederick Banting"
+     ],
+     "level": 2,
+     "why": "He died in China in 1939."
+    },
+    {
+     "q": "Which Canadian general commanded UN peacekeepers in Rwanda in 1994?",
+     "a": "Roméo Dallaire",
+     "wrong": [
+      "Lewis MacKenzie",
+      "Rick Hillier",
+      "Andrew Leslie"
+     ],
+     "level": 2,
+     "why": "He later became a senator."
+    },
+    {
+     "q": "In which year did Quebec vote on sovereignty for the second time, narrowly saying no?",
+     "a": "1995",
+     "wrong": [
+      "1980",
+      "1990",
+      "1998"
+     ],
+     "level": 2,
+     "why": "The No side won by about 1%."
+    },
+    {
+     "q": "Which 1982 document is part of Canada's Constitution and protects rights?",
+     "a": "Charter of Rights and Freedoms",
+     "wrong": [
+      "Bill of Rights",
+      "Magna Carta",
+      "British North America Act"
+     ],
+     "level": 2,
+     "why": "Pierre Trudeau championed it."
+    },
+    {
+     "q": "What was Canada's Constitution called from 1867 to 1982?",
+     "a": "British North America Act",
+     "wrong": [
+      "Constitution Act",
+      "Statute of Westminster",
+      "Quebec Act"
+     ],
+     "level": 2,
+     "why": "It is now the Constitution Act, 1867."
+    },
+    {
+     "q": "Which Hudson's Bay Company post at the mouth of the Hayes River was its main port?",
+     "a": "York Factory",
+     "wrong": [
+      "Fort Albany",
+      "Moose Factory",
+      "Fort Churchill"
+     ],
+     "level": 3,
+     "why": "It was used for over 250 years."
+    },
+    {
+     "q": "Which explorer was the first European to cross North America north of Mexico by land, in 1793?",
+     "a": "Alexander Mackenzie",
+     "wrong": [
+      "Simon Fraser",
+      "David Thompson",
+      "Samuel Hearne"
+     ],
+     "level": 3,
+     "why": "He reached the Pacific at Bella Coola."
+    },
+    {
+     "q": "Which surveyor mapped much of western Canada and is called the greatest land geographer?",
+     "a": "David Thompson",
+     "wrong": [
+      "Simon Fraser",
+      "Alexander Mackenzie",
+      "Anthony Henday"
+     ],
+     "level": 3,
+     "why": "He mapped about 3.9 million km²."
+    },
+    {
+     "q": "Which 1816 clash at Red River killed Governor Robert Semple?",
+     "a": "Battle of Seven Oaks",
+     "wrong": [
+      "Battle of Batoche",
+      "Battle of Frog Lake",
+      "Battle of Duck Lake"
+     ],
+     "level": 3,
+     "why": "Cuthbert Grant led the Métis."
+    },
+    {
+     "q": "Which Prime Minister's 1926 clash with the Governor General is called the King–Byng Affair?",
+     "a": "Mackenzie King",
+     "wrong": [
+      "Arthur Meighen",
+      "R. B. Bennett",
+      "Robert Borden"
+     ],
+     "level": 3,
+     "why": "Lord Byng refused his request to dissolve Parliament."
+    },
+    {
+     "q": "Which Prime Minister introduced the Canada Pension Plan in 1965?",
+     "a": "Lester B. Pearson",
+     "wrong": [
+      "John Diefenbaker",
+      "Pierre Trudeau",
+      "Louis St. Laurent"
+     ],
+     "level": 3,
+     "why": "His government also created the flag."
+    },
+    {
+     "q": "Which Prime Minister welcomed Newfoundland into Canada in 1949?",
+     "a": "Louis St. Laurent",
+     "wrong": [
+      "Mackenzie King",
+      "John Diefenbaker",
+      "Lester Pearson"
+     ],
+     "level": 3,
+     "why": "Joey Smallwood led Newfoundland in."
+    },
+    {
+     "q": "Who led Newfoundland into Confederation and became its first premier?",
+     "a": "Joey Smallwood",
+     "wrong": [
+      "Danny Williams",
+      "Brian Peckford",
+      "Clyde Wells"
+     ],
+     "level": 3,
+     "why": "He called himself the last Father of Confederation."
     }
    ]
   },
@@ -396,6 +1298,985 @@
       "London"
      ],
      "why": "He made the first long-distance call from Brantford in 1876."
+    },
+    {
+     "q": "How many territories make up northern Canada?",
+     "a": "3",
+     "wrong": [
+      "2",
+      "4",
+      "5"
+     ],
+     "level": 1,
+     "why": "They are Yukon, Northwest Territories and Nunavut."
+    },
+    {
+     "q": "What is the capital of Ontario?",
+     "a": "Toronto",
+     "wrong": [
+      "Ottawa",
+      "Hamilton",
+      "London"
+     ],
+     "level": 1,
+     "why": "It is also Canada's largest city."
+    },
+    {
+     "q": "What is the capital of Quebec?",
+     "a": "Quebec City",
+     "wrong": [
+      "Montreal",
+      "Gatineau",
+      "Sherbrooke"
+     ],
+     "level": 1,
+     "why": "Its old town is walled."
+    },
+    {
+     "q": "What is the capital of Alberta?",
+     "a": "Edmonton",
+     "wrong": [
+      "Calgary",
+      "Red Deer",
+      "Lethbridge"
+     ],
+     "level": 1,
+     "why": "Calgary is the bigger city."
+    },
+    {
+     "q": "What is the capital of Manitoba?",
+     "a": "Winnipeg",
+     "wrong": [
+      "Brandon",
+      "Thompson",
+      "Churchill"
+     ],
+     "level": 1,
+     "why": "It sits where the Red and Assiniboine rivers meet."
+    },
+    {
+     "q": "What is the capital of Nova Scotia?",
+     "a": "Halifax",
+     "wrong": [
+      "Sydney",
+      "Truro",
+      "Lunenburg"
+     ],
+     "level": 1,
+     "why": "It has one of the world's largest natural harbours."
+    },
+    {
+     "q": "What is the capital of New Brunswick?",
+     "a": "Fredericton",
+     "wrong": [
+      "Saint John",
+      "Moncton",
+      "Bathurst"
+     ],
+     "level": 1,
+     "why": "Saint John is a bigger city."
+    },
+    {
+     "q": "What is the capital of Newfoundland and Labrador?",
+     "a": "St. John's",
+     "wrong": [
+      "Corner Brook",
+      "Gander",
+      "Happy Valley-Goose Bay"
+     ],
+     "level": 1,
+     "why": "It is one of North America's oldest cities."
+    },
+    {
+     "q": "What is the capital of Prince Edward Island?",
+     "a": "Charlottetown",
+     "wrong": [
+      "Summerside",
+      "Cavendish",
+      "Souris"
+     ],
+     "level": 1,
+     "why": "It is called the birthplace of Confederation."
+    },
+    {
+     "q": "What is the capital of Yukon?",
+     "a": "Whitehorse",
+     "wrong": [
+      "Dawson City",
+      "Watson Lake",
+      "Carcross"
+     ],
+     "level": 1,
+     "why": "Most Yukoners live there."
+    },
+    {
+     "q": "What is the capital of the Northwest Territories?",
+     "a": "Yellowknife",
+     "wrong": [
+      "Inuvik",
+      "Hay River",
+      "Fort Smith"
+     ],
+     "level": 1,
+     "why": "It is on Great Slave Lake."
+    },
+    {
+     "q": "Which ocean lies to the north of Canada?",
+     "a": "Arctic Ocean",
+     "wrong": [
+      "Atlantic Ocean",
+      "Pacific Ocean",
+      "Indian Ocean"
+     ],
+     "level": 1,
+     "why": "Canada has the world's longest coastline."
+    },
+    {
+     "q": "Which country has the longest coastline in the world?",
+     "a": "Canada",
+     "wrong": [
+      "Russia",
+      "Norway",
+      "Indonesia"
+     ],
+     "level": 1,
+     "why": "It is over 200,000 km long."
+    },
+    {
+     "q": "Which country shares the world's longest international land border with Canada?",
+     "a": "United States",
+     "wrong": [
+      "Russia",
+      "Greenland",
+      "Mexico"
+     ],
+     "level": 1,
+     "why": "It is about 8,900 km long."
+    },
+    {
+     "q": "Which US state shares Canada's longest border with a single state?",
+     "a": "Alaska",
+     "wrong": [
+      "Montana",
+      "Michigan",
+      "Maine"
+     ],
+     "level": 1,
+     "why": "It borders Yukon and BC."
+    },
+    {
+     "q": "Which is the world's second-largest country by area?",
+     "a": "Canada",
+     "wrong": [
+      "United States",
+      "China",
+      "Brazil"
+     ],
+     "level": 1,
+     "why": "Only Russia is bigger."
+    },
+    {
+     "q": "Which Canadian province is the largest by area?",
+     "a": "Quebec",
+     "wrong": [
+      "Ontario",
+      "British Columbia",
+      "Alberta"
+     ],
+     "level": 1,
+     "why": "Nunavut is the largest of all regions."
+    },
+    {
+     "q": "Which Canadian province has the most people?",
+     "a": "Ontario",
+     "wrong": [
+      "Quebec",
+      "British Columbia",
+      "Alberta"
+     ],
+     "level": 1,
+     "why": "About four in ten Canadians live there."
+    },
+    {
+     "q": "Which Canadian territory is the largest by area?",
+     "a": "Nunavut",
+     "wrong": [
+      "Northwest Territories",
+      "Yukon",
+      "Labrador"
+     ],
+     "level": 1,
+     "why": "It covers about one-fifth of Canada."
+    },
+    {
+     "q": "Which river flows from Lake Ontario to the Atlantic past Montreal and Quebec City?",
+     "a": "St. Lawrence River",
+     "wrong": [
+      "Ottawa River",
+      "Saguenay River",
+      "Fraser River"
+     ],
+     "level": 1,
+     "why": "Its seaway carries ships to the Great Lakes."
+    },
+    {
+     "q": "Which river flows through Vancouver and was named after an explorer?",
+     "a": "Fraser River",
+     "wrong": [
+      "Columbia River",
+      "Thompson River",
+      "Skeena River"
+     ],
+     "level": 1,
+     "why": "Simon Fraser explored it in 1808."
+    },
+    {
+     "q": "Which river forms much of the border between Ontario and Quebec?",
+     "a": "Ottawa River",
+     "wrong": [
+      "St. Lawrence River",
+      "Rideau River",
+      "Saguenay River"
+     ],
+     "level": 1,
+     "why": "The capital stands on its banks."
+    },
+    {
+     "q": "Which great river flows through Whitehorse and Dawson City?",
+     "a": "Yukon River",
+     "wrong": [
+      "Mackenzie River",
+      "Peel River",
+      "Liard River"
+     ],
+     "level": 1,
+     "why": "It flows on to Alaska."
+    },
+    {
+     "q": "Which Great Lake lies entirely within the United States?",
+     "a": "Lake Michigan",
+     "wrong": [
+      "Lake Huron",
+      "Lake Erie",
+      "Lake Ontario"
+     ],
+     "level": 1,
+     "why": "The other four border Ontario."
+    },
+    {
+     "q": "Which is the largest of the Great Lakes?",
+     "a": "Lake Superior",
+     "wrong": [
+      "Lake Huron",
+      "Lake Michigan",
+      "Lake Erie"
+     ],
+     "level": 1,
+     "why": "It is the world's largest freshwater lake by area."
+    },
+    {
+     "q": "Which mountain range runs along the Alberta–BC border?",
+     "a": "Rocky Mountains",
+     "wrong": [
+      "Coast Mountains",
+      "Appalachians",
+      "Laurentians"
+     ],
+     "level": 1,
+     "why": "Banff and Jasper are in it."
+    },
+    {
+     "q": "Which territory is home to Mount Logan?",
+     "a": "Yukon",
+     "wrong": [
+      "Northwest Territories",
+      "British Columbia",
+      "Nunavut"
+     ],
+     "level": 1,
+     "why": "It is in Kluane National Park."
+    },
+    {
+     "q": "Which three provinces are called the Prairie Provinces?",
+     "a": "Alberta, Saskatchewan and Manitoba",
+     "wrong": [
+      "Ontario, Manitoba and Saskatchewan",
+      "BC, Alberta and Saskatchewan",
+      "Alberta, Manitoba and Ontario"
+     ],
+     "level": 1,
+     "why": "Much of the land is flat farmland."
+    },
+    {
+     "q": "Which four provinces are called the Atlantic provinces?",
+     "a": "Nova Scotia, New Brunswick, PEI, and Newfoundland and Labrador",
+     "wrong": [
+      "Nova Scotia, New Brunswick, PEI and Quebec",
+      "Newfoundland, Nova Scotia, Quebec and PEI",
+      "New Brunswick, Nova Scotia, PEI and Ontario"
+     ],
+     "level": 1,
+     "why": "The first three are the Maritimes."
+    },
+    {
+     "q": "Which Canadian city is the largest in Quebec?",
+     "a": "Montreal",
+     "wrong": [
+      "Quebec City",
+      "Laval",
+      "Gatineau"
+     ],
+     "level": 1,
+     "why": "It is one of the largest French-speaking cities in the world."
+    },
+    {
+     "q": "Which Canadian city is known as 'Cowtown' and hosts a famous rodeo?",
+     "a": "Calgary",
+     "wrong": [
+      "Edmonton",
+      "Red Deer",
+      "Regina"
+     ],
+     "level": 1,
+     "why": "The Stampede is held each July."
+    },
+    {
+     "q": "Which Canadian city stands across the river from Detroit?",
+     "a": "Windsor",
+     "wrong": [
+      "Sarnia",
+      "London",
+      "Hamilton"
+     ],
+     "level": 1,
+     "why": "The Ambassador Bridge links them."
+    },
+    {
+     "q": "Which Ontario city is called the 'Steel City'?",
+     "a": "Hamilton",
+     "wrong": [
+      "Sudbury",
+      "Sault Ste. Marie",
+      "Oshawa"
+     ],
+     "level": 1,
+     "why": "It has big steel mills."
+    },
+    {
+     "q": "Which Ontario city is famous for its huge nickel mines and the Big Nickel?",
+     "a": "Sudbury",
+     "wrong": [
+      "Timmins",
+      "Thunder Bay",
+      "North Bay"
+     ],
+     "level": 1,
+     "why": "A meteorite crater lies beneath it."
+    },
+    {
+     "q": "Which Ontario city lies at the head of Lake Superior?",
+     "a": "Thunder Bay",
+     "wrong": [
+      "Sault Ste. Marie",
+      "Kenora",
+      "Marathon"
+     ],
+     "level": 1,
+     "why": "The Sleeping Giant faces the city."
+    },
+    {
+     "q": "Which BC city on Vancouver Island is the provincial capital?",
+     "a": "Victoria",
+     "wrong": [
+      "Nanaimo",
+      "Courtenay",
+      "Campbell River"
+     ],
+     "level": 1,
+     "why": "It is known for gardens."
+    },
+    {
+     "q": "Which BC city is in the Okanagan Valley and known for wine?",
+     "a": "Kelowna",
+     "wrong": [
+      "Kamloops",
+      "Prince George",
+      "Nelson"
+     ],
+     "level": 1,
+     "why": "Okanagan Lake is said to hold Ogopogo."
+    },
+    {
+     "q": "Which Canadian national park in Alberta is the largest in the Rockies?",
+     "a": "Jasper National Park",
+     "wrong": [
+      "Banff National Park",
+      "Yoho National Park",
+      "Kootenay National Park"
+     ],
+     "level": 1,
+     "why": "It is a dark-sky preserve."
+    },
+    {
+     "q": "Which Alberta highway links Lake Louise and Jasper?",
+     "a": "Icefields Parkway",
+     "wrong": [
+      "Trans-Canada Highway",
+      "Sea-to-Sky Highway",
+      "Yellowhead Highway"
+     ],
+     "level": 1,
+     "why": "It passes the Columbia Icefield."
+    },
+    {
+     "q": "Which highway runs from Victoria to St. John's?",
+     "a": "Trans-Canada Highway",
+     "wrong": [
+      "Highway 401",
+      "Yellowhead Highway",
+      "Alaska Highway"
+     ],
+     "level": 1,
+     "why": "It is about 7,800 km long."
+    },
+    {
+     "q": "Which Ontario highway is one of the busiest in North America?",
+     "a": "Highway 401",
+     "wrong": [
+      "Highway 400",
+      "QEW",
+      "Highway 17"
+     ],
+     "level": 1,
+     "why": "It crosses Toronto."
+    },
+    {
+     "q": "Which bridge links Prince Edward Island to New Brunswick?",
+     "a": "Confederation Bridge",
+     "wrong": [
+      "Champlain Bridge",
+      "Lions Gate Bridge",
+      "Ambassador Bridge"
+     ],
+     "level": 1,
+     "why": "It is about 12.9 km long."
+    },
+    {
+     "q": "Which Vancouver bridge crosses the entrance to Burrard Inlet?",
+     "a": "Lions Gate Bridge",
+     "wrong": [
+      "Granville Bridge",
+      "Port Mann Bridge",
+      "Burrard Bridge"
+     ],
+     "level": 1,
+     "why": "It opened in 1938."
+    },
+    {
+     "q": "Which big Vancouver park sits on a peninsula next to downtown?",
+     "a": "Stanley Park",
+     "wrong": [
+      "Queen Elizabeth Park",
+      "Pacific Spirit Park",
+      "Lynn Canyon Park"
+     ],
+     "level": 1,
+     "why": "It has a famous seawall."
+    },
+    {
+     "q": "Which mountain gives Montreal its name?",
+     "a": "Mount Royal",
+     "wrong": [
+      "Mont-Tremblant",
+      "Mont Sainte-Anne",
+      "Mont Saint-Hilaire"
+     ],
+     "level": 1,
+     "why": "The city's big park is on it."
+    },
+    {
+     "q": "Which Toronto islands sit in Lake Ontario off downtown?",
+     "a": "Toronto Islands",
+     "wrong": [
+      "Thousand Islands",
+      "Manitoulin Islands",
+      "Bruce Islands"
+     ],
+     "level": 1,
+     "why": "Ferries take people there."
+    },
+    {
+     "q": "Which group of islands lies in the St. Lawrence River near Kingston?",
+     "a": "Thousand Islands",
+     "wrong": [
+      "Toronto Islands",
+      "Magdalen Islands",
+      "Gulf Islands"
+     ],
+     "level": 1,
+     "why": "It actually has over 1,800 islands."
+    },
+    {
+     "q": "What is the world's largest freshwater island, in Lake Huron?",
+     "a": "Manitoulin Island",
+     "wrong": [
+      "Isle Royale",
+      "Pelee Island",
+      "Wolfe Island"
+     ],
+     "level": 1,
+     "why": "It has lakes of its own."
+    },
+    {
+     "q": "Which island off Nova Scotia is home to the Cabot Trail?",
+     "a": "Cape Breton Island",
+     "wrong": [
+      "Sable Island",
+      "Grand Manan",
+      "Brier Island"
+     ],
+     "level": 1,
+     "why": "The trail loops around its north end."
+    },
+    {
+     "q": "Which BC islands were formerly called the Queen Charlotte Islands?",
+     "a": "Haida Gwaii",
+     "wrong": [
+      "Gulf Islands",
+      "Discovery Islands",
+      "Broughton Archipelago"
+     ],
+     "level": 1,
+     "why": "They are the home of the Haida."
+    },
+    {
+     "q": "What is the largest island in Canada?",
+     "a": "Baffin Island",
+     "wrong": [
+      "Victoria Island",
+      "Ellesmere Island",
+      "Newfoundland"
+     ],
+     "level": 1,
+     "why": "It is the fifth-largest in the world."
+    },
+    {
+     "q": "Which Nunavut station is the most northerly permanently inhabited place in the world?",
+     "a": "Alert",
+     "wrong": [
+      "Grise Fiord",
+      "Resolute",
+      "Iqaluit"
+     ],
+     "level": 2,
+     "why": "It is a military and weather station."
+    },
+    {
+     "q": "Which river in New Brunswick has a reversing falls?",
+     "a": "Saint John River",
+     "wrong": [
+      "Miramichi River",
+      "Restigouche River",
+      "Petitcodiac River"
+     ],
+     "level": 2,
+     "why": "The Bay of Fundy tide pushes it backwards."
+    },
+    {
+     "q": "Which New Brunswick rock formations are called the 'flowerpots'?",
+     "a": "Hopewell Rocks",
+     "wrong": [
+      "Percé Rock",
+      "Peggy's Cove",
+      "Fundy Trail"
+     ],
+     "level": 2,
+     "why": "You can walk on the sea floor at low tide."
+    },
+    {
+     "q": "Which Quebec rock with a hole in it stands off the Gaspé Peninsula?",
+     "a": "Percé Rock",
+     "wrong": [
+      "Hopewell Rocks",
+      "Sleeping Giant",
+      "Bonaventure Rock"
+     ],
+     "level": 2,
+     "why": "It is about 430 m long."
+    },
+    {
+     "q": "Which Quebec river is a deep fjord where belugas live?",
+     "a": "Saguenay River",
+     "wrong": [
+      "Ottawa River",
+      "Richelieu River",
+      "Saint-Maurice River"
+     ],
+     "level": 2,
+     "why": "It joins the St. Lawrence at Tadoussac."
+    },
+    {
+     "q": "Which Newfoundland national park is a UNESCO site for its exposed earth's mantle?",
+     "a": "Gros Morne National Park",
+     "wrong": [
+      "Terra Nova National Park",
+      "Torngat Mountains National Park",
+      "Cape Breton Highlands National Park"
+     ],
+     "level": 2,
+     "why": "You can walk on rocks from deep inside the Earth."
+    },
+    {
+     "q": "Which point in Newfoundland is the most easterly in North America?",
+     "a": "Cape Spear",
+     "wrong": [
+      "Cape Race",
+      "Cape Bonavista",
+      "Signal Hill"
+     ],
+     "level": 2,
+     "why": "Its lighthouse is Newfoundland's oldest."
+    },
+    {
+     "q": "Which name is given to the stretch of sea off Newfoundland where icebergs drift south?",
+     "a": "Iceberg Alley",
+     "wrong": [
+      "Davis Strait",
+      "Labrador Gulf",
+      "Titanic Lane"
+     ],
+     "level": 2,
+     "why": "Most icebergs come from Greenland."
+    },
+    {
+     "q": "Which island group in the Gulf of St. Lawrence belongs to Quebec?",
+     "a": "Magdalen Islands",
+     "wrong": [
+      "Anticosti Islands",
+      "Gulf Islands",
+      "Thousand Islands"
+     ],
+     "level": 2,
+     "why": "They are famous for red cliffs."
+    },
+    {
+     "q": "Which large Quebec island in the Gulf of St. Lawrence was once owned by a chocolate maker?",
+     "a": "Anticosti Island",
+     "wrong": [
+      "Île d'Orléans",
+      "Magdalen Islands",
+      "Île Bonaventure"
+     ],
+     "level": 2,
+     "why": "Henri Menier bought it in 1895."
+    },
+    {
+     "q": "Which French territory lies just south of Newfoundland?",
+     "a": "Saint-Pierre and Miquelon",
+     "wrong": [
+      "Martinique",
+      "Guadeloupe",
+      "Saint Barthélemy"
+     ],
+     "level": 2,
+     "why": "It uses the euro."
+    },
+    {
+     "q": "Which Arctic waterway links the Atlantic and Pacific through Canada's islands?",
+     "a": "Northwest Passage",
+     "wrong": [
+      "Bering Strait",
+      "Davis Strait",
+      "Lancaster Passage"
+     ],
+     "level": 2,
+     "why": "Roald Amundsen first sailed it in 1903–06."
+    },
+    {
+     "q": "Which island is the most northerly in Canada?",
+     "a": "Ellesmere Island",
+     "wrong": [
+      "Baffin Island",
+      "Devon Island",
+      "Axel Heiberg Island"
+     ],
+     "level": 2,
+     "why": "It is close to Greenland."
+    },
+    {
+     "q": "Which uninhabited Arctic island is the largest in the world with no people?",
+     "a": "Devon Island",
+     "wrong": [
+      "Baffin Island",
+      "Ellesmere Island",
+      "Bathurst Island"
+     ],
+     "level": 2,
+     "why": "NASA tests Mars gear there."
+    },
+    {
+     "q": "Which bay in northern Canada is one of the world's largest bays?",
+     "a": "Hudson Bay",
+     "wrong": [
+      "Baffin Bay",
+      "James Bay",
+      "Ungava Bay"
+     ],
+     "level": 2,
+     "why": "It freezes for much of the year."
+    },
+    {
+     "q": "Which BC mountain highway links Vancouver to Whistler?",
+     "a": "Sea-to-Sky Highway",
+     "wrong": [
+      "Coquihalla Highway",
+      "Crowsnest Highway",
+      "Icefields Parkway"
+     ],
+     "level": 2,
+     "why": "It runs along Howe Sound."
+    },
+    {
+     "q": "Which Alberta river flows through Calgary?",
+     "a": "Bow River",
+     "wrong": [
+      "North Saskatchewan River",
+      "Red Deer River",
+      "Athabasca River"
+     ],
+     "level": 2,
+     "why": "It starts at Bow Glacier."
+    },
+    {
+     "q": "Which river flows through Edmonton?",
+     "a": "North Saskatchewan River",
+     "wrong": [
+      "Bow River",
+      "Athabasca River",
+      "Peace River"
+     ],
+     "level": 2,
+     "why": "It has a long green river valley in the city."
+    },
+    {
+     "q": "Which Alberta oil sands region is one of the world's largest oil reserves?",
+     "a": "Athabasca oil sands",
+     "wrong": [
+      "Leduc fields",
+      "Hibernia field",
+      "Peace River sands"
+     ],
+     "level": 2,
+     "why": "Fort McMurray is the main town."
+    },
+    {
+     "q": "Which Saskatchewan city is home to the RCMP training academy?",
+     "a": "Regina",
+     "wrong": [
+      "Saskatoon",
+      "Moose Jaw",
+      "Prince Albert"
+     ],
+     "level": 2,
+     "why": "It is called Depot Division."
+    },
+    {
+     "q": "Which Saskatchewan city is called the 'City of Bridges'?",
+     "a": "Saskatoon",
+     "wrong": [
+      "Regina",
+      "Prince Albert",
+      "Swift Current"
+     ],
+     "level": 2,
+     "why": "It spans the South Saskatchewan River."
+    },
+    {
+     "q": "Which Manitoba lake is one of the largest in Canada?",
+     "a": "Lake Winnipeg",
+     "wrong": [
+      "Lake Manitoba",
+      "Lake Winnipegosis",
+      "Cedar Lake"
+     ],
+     "level": 2,
+     "why": "It is the sixth-largest freshwater lake in Canada."
+    },
+    {
+     "q": "Which Ontario falls on the Kaministiquia River are called the 'Niagara of the North'?",
+     "a": "Kakabeka Falls",
+     "wrong": [
+      "Ragged Falls",
+      "Hogs Back Falls",
+      "Bridal Veil Falls"
+     ],
+     "level": 2,
+     "why": "They are near Thunder Bay."
+    },
+    {
+     "q": "Which waterfall in Yoho National Park is one of Canada's tallest?",
+     "a": "Takakkaw Falls",
+     "wrong": [
+      "Helmcken Falls",
+      "Virginia Falls",
+      "Montmorency Falls"
+     ],
+     "level": 2,
+     "why": "Its name means 'magnificent' in Cree."
+    },
+    {
+     "q": "Which Quebec waterfall near Quebec City is taller than Niagara Falls?",
+     "a": "Montmorency Falls",
+     "wrong": [
+      "Kakabeka Falls",
+      "Chaudière Falls",
+      "Sainte-Anne Falls"
+     ],
+     "level": 2,
+     "why": "It is about 83 m high."
+    },
+    {
+     "q": "Which Northwest Territories waterfall is twice as tall as Niagara?",
+     "a": "Virginia Falls",
+     "wrong": [
+      "Alexandra Falls",
+      "Takakkaw Falls",
+      "Hunlen Falls"
+     ],
+     "level": 2,
+     "why": "It is in Nahanni National Park."
+    },
+    {
+     "q": "Which NWT national park was among the first UNESCO World Heritage Sites?",
+     "a": "Nahanni National Park Reserve",
+     "wrong": [
+      "Wood Buffalo National Park",
+      "Aulavik National Park",
+      "Tuktut Nogait National Park"
+     ],
+     "level": 2,
+     "why": "It was listed in 1978."
+    },
+    {
+     "q": "Which Northwest Territories town on the Arctic Ocean is reached by an all-season road since 2017?",
+     "a": "Tuktoyaktuk",
+     "wrong": [
+      "Inuvik",
+      "Aklavik",
+      "Paulatuk"
+     ],
+     "level": 2,
+     "why": "The road links it to Inuvik."
+    },
+    {
+     "q": "Which highway built in 1942 runs from BC to Alaska?",
+     "a": "Alaska Highway",
+     "wrong": [
+      "Klondike Highway",
+      "Dempster Highway",
+      "Yellowhead Highway"
+     ],
+     "level": 2,
+     "why": "It starts at Dawson Creek, BC."
+    },
+    {
+     "q": "What is the narrowest gorge of the Fraser River, crossed by an airtram, called?",
+     "a": "Hell's Gate",
+     "wrong": [
+      "Fraser Gate",
+      "Devil's Pass",
+      "Black Canyon"
+     ],
+     "level": 2,
+     "why": "The river squeezes to about 35 m wide."
+    },
+    {
+     "q": "Which BC mountain range runs along the Pacific coast?",
+     "a": "Coast Mountains",
+     "wrong": [
+      "Rocky Mountains",
+      "Selkirk Mountains",
+      "Cariboo Mountains"
+     ],
+     "level": 2,
+     "why": "They hold BC's highest peak, Mount Waddington."
+    },
+    {
+     "q": "Which glacier area straddles Alberta and BC and feeds three oceans?",
+     "a": "Columbia Icefield",
+     "wrong": [
+      "Kluane Icefield",
+      "Juneau Icefield",
+      "Wapta Icefield"
+     ],
+     "level": 2,
+     "why": "Its water flows to the Pacific, Atlantic and Arctic."
+    },
+    {
+     "q": "Which BC town sits in Canada's 'pocket desert'?",
+     "a": "Osoyoos",
+     "wrong": [
+      "Kelowna",
+      "Penticton",
+      "Kamloops"
+     ],
+     "level": 2,
+     "why": "It is in the southern Okanagan."
+    },
+    {
+     "q": "Which New Brunswick city has a large French-speaking Acadian population?",
+     "a": "Moncton",
+     "wrong": [
+      "Fredericton",
+      "Saint John",
+      "Miramichi"
+     ],
+     "level": 3,
+     "why": "It is home to the Université de Moncton."
+    },
+    {
+     "q": "Which line of latitude forms much of the western Canada–US border?",
+     "a": "49th parallel",
+     "wrong": [
+      "45th parallel",
+      "54th parallel",
+      "60th parallel"
+     ],
+     "level": 3,
+     "why": "It runs from Manitoba to BC."
+    },
+    {
+     "q": "Which line of latitude forms the southern border of Canada's three territories?",
+     "a": "60th parallel",
+     "wrong": [
+      "49th parallel",
+      "55th parallel",
+      "66th parallel"
+     ],
+     "level": 3,
+     "why": "It divides the territories from the provinces."
+    },
+    {
+     "q": "Which magnetic feature has moved from northern Canada towards Siberia?",
+     "a": "North Magnetic Pole",
+     "wrong": [
+      "Geographic North Pole",
+      "Arctic Circle",
+      "Pole of Inaccessibility"
+     ],
+     "level": 3,
+     "why": "It was first reached in 1831."
+    },
+    {
+     "q": "Which Quebec crater lake is one of the largest impact craters on Earth?",
+     "a": "Manicouagan Reservoir",
+     "wrong": [
+      "Lake Mistassini",
+      "Pingualuit Crater",
+      "Clearwater Lakes"
+     ],
+     "level": 3,
+     "why": "It is called 'the Eye of Quebec'."
     }
    ]
   },
@@ -6394,6 +8275,17 @@
      ],
      "level": 3,
      "why": "It is in the Valley of the Ten Peaks."
+    },
+    {
+     "q": "Which Toronto building by Frank Gehry was redesigned in 2008?",
+     "a": "Art Gallery of Ontario",
+     "wrong": [
+      "Royal Ontario Museum",
+      "Roy Thomson Hall",
+      "Four Seasons Centre"
+     ],
+     "level": 3,
+     "why": "Gehry grew up in Toronto."
     }
    ]
   },
