@@ -1,4 +1,8 @@
 spring:
+  profiles:
+    # local: run from the IDE or ./mvnw (this default); docker: docker compose on a laptop; prod: the live server.
+    # Profile settings for every service are in the config server's config-repo/application-<profile>.yml.
+    default: local
   application:
     name: recommendations
   config:
@@ -52,7 +56,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: health,info,metrics,prometheus
+        include: health,info,metrics,prometheus,jfr,heapdump,threaddump
   metrics:
     tags:
       application: ${spring.application.name}

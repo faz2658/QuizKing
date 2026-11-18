@@ -28,3 +28,6 @@ data/
 
 # Service account keys and other files mounted into containers on the server
 secrets/
+
+# Recordings and heap dumps fetched with deploy/profile.sh (heap dumps hold secrets)
+Quizcadia/profiles/

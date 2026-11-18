@@ -12,6 +12,8 @@ x-service: &service
   mem_limit: ${JAVA_MEM_LIMIT:-640m}
   memswap_limit: ${JAVA_MEM_LIMIT:-640m}
   environment: &env
+    # Spring profile (config-repo/application-<profile>.yml): "docker" here, "prod" in docker-compose.prod.yml
+    SPRING_PROFILES_ACTIVE: docker
     EUREKA_URL: http://discovery:8082/eureka
     CONFIG_SERVER_URL: http://config:8083
     KAFKA_BOOTSTRAP_SERVERS: kafka:9092

@@ -1,0 +1,9 @@
+# Profile "local" (the default): a service run from the IDE or with ./mvnw spring-boot:run.
+# Applies when the config server runs locally too; without it the services simply use their own defaults.
+logging:
+  level:
+    com.fazeel: DEBUG
+management:
+  endpoint:
+    health:
+      show-details: always

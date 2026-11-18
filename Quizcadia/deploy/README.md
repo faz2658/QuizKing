@@ -50,6 +50,54 @@ The server is ready to sit behind a CDN, but nothing needs one at today's traffi
    cache the rest of `/api`: it is per-player.
 5. Optionally, lock the Oracle security list to Cloudflare's ranges for ports 80/443, so nobody can bypass the CDN.
 
+## Profiling (where the time and memory go)
+
+Every app service runs Java Flight Recorder all the time with its low-overhead settings (about 1% CPU). It keeps
+the last 30 minutes, at most 25 MB, inside the container. When something was slow, grab that window on the
+server, then copy it to your computer:
+
+```bash
+ssh quizking 'cd quizcadia && deploy/profile.sh game-engine'          # last 30 minutes → profiles/*.jfr
+scp 'quizking:quizcadia/profiles/game-engine-*.jfr' .
+```
+
+- `deploy/profile.sh <service> jfr 60` records the next 60 s (up to 300) with detailed settings, while you
+  reproduce the problem.
+- `deploy/profile.sh <service> heap` takes a heap dump (`.hprof.gz`) when memory keeps growing. The service pauses
+  for a few seconds, and **the dump contains secrets** (tokens, passwords): keep it private and delete it when done.
+- `deploy/profile.sh <service> threads` shows what every thread is doing right now, for a request that hangs.
+
+Open `.jfr` files in [JDK Mission Control](https://adoptium.net/jmc/) or IntelliJ IDEA (*Run → Open Profiler
+Snapshot*):
+- *Method Profiling* / the flame graph: CPU hot spots.
+- *Memory → Allocations*: what creates the garbage.
+- *Lock Instances*: contention.
+- *Garbage Collections*: pauses.
+- *Socket I/O* and *File I/O*: slow calls to MongoDB, Kafka or other services.
+- *Exceptions*.
+
+Open heap dumps in Eclipse MAT or IntelliJ.
+
+These endpoints (`/actuator/jfr`, `/actuator/heapdump`, `/actuator/threaddump`) only answer from inside the
+service's own container (`docker compose exec`), never from the Docker network or the internet. Locally,
+`curl localhost:9092/actuator/jfr?seconds=30 -o game.jfr` works against a service started from the IDE.
+
+## Spring profiles
+
+Each app service runs with one Spring profile. The settings for each profile, shared by every service, are in
+the config server's `configuration-service/src/main/resources/config-repo/application-<profile>.yml`.
+
+| Profile | Where | Set by |
+|---|---|---|
+| `local` | a service started from the IDE or with `./mvnw spring-boot:run` | the default (`spring.profiles.default`) |
+| `docker` | `docker compose up` on a laptop | `docker-compose.yml` |
+| `prod` | the live server | `docker-compose.prod.yml` |
+
+- `local` and `docker` show health details and log QuizCadia's own code at DEBUG (`local`).
+- `prod` quiets the Kafka and MongoDB client logs and turns off the game manager's Swagger UI.
+- Addresses and secrets still come from environment variables (`.env`). The config server is optional at
+  startup, so nothing a service needs to run safely lives in these files.
+
 ## Continuous deployment (GitHub Actions)
 `.github/workflows/deploy.yml` deploys automatically after CI passes on `master` (or `main`), that is, after a
 pull request is merged, and from the Actions tab by hand:

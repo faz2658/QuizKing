@@ -50,7 +50,10 @@ public class SecurityConfig {
 								"/api/v1/auth/google", "/api/v1/auth/password/forgot", "/api/v1/auth/password/reset",
 								"/api/v1/auth/refresh", "/api/v1/auth/logout").permitAll()
 						.requestMatchers(HttpMethod.GET, "/api/v1/auth/providers").permitAll()
-						.requestMatchers("/actuator/health/**", "/actuator/info", "/error").permitAll()
+						// recordings and dumps: only from inside this container (they can hold secrets)
+						.requestMatchers(com.fazeel.quizcadia.diagnostics.Diagnostics.PATHS)
+						.access(com.fazeel.quizcadia.diagnostics.Diagnostics.fromInsideTheContainer())
+						.requestMatchers("/actuator/health/**", "/actuator/info", "/actuator/prometheus", "/error").permitAll()
 						.anyRequest().authenticated())
 				.oauth2ResourceServer(o -> o.jwt(Customizer.withDefaults()));
 		return http.build();

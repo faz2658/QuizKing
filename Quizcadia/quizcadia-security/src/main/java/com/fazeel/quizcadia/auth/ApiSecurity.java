@@ -10,6 +10,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.access.intercept.RequestAuthorizationContext;
 
+import com.fazeel.quizcadia.diagnostics.Diagnostics;
+
 /** The common shape of every service's security: stateless bearer tokens plus the service's own rules. */
 public final class ApiSecurity {
 
@@ -24,7 +26,9 @@ public final class ApiSecurity {
 		http.csrf(csrf -> csrf.disable()) // bearer tokens, no cookies
 				.sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 				.authorizeHttpRequests(auth -> {
-					// Actuator is only reachable inside the Docker network (nginx serves /api/** and the UI)
+					// Recordings and dumps: only from inside the service's own container (they can hold secrets)
+					auth.requestMatchers(Diagnostics.PATHS).access(Diagnostics.fromInsideTheContainer());
+					// The rest of Actuator is only reachable inside the Docker network (nginx serves /api/** and the UI)
 					auth.requestMatchers("/actuator/**", "/error").permitAll();
 					rules.customize(auth);
 				})

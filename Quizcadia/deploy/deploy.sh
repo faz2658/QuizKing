@@ -26,7 +26,7 @@ if [ -d "$NEXT" ]; then
   rsync -a --delete \
     --exclude .env --exclude 'secrets/' --exclude 'ai/question-model/models/' --exclude 'target/' \
     --exclude 'frontend/node_modules/' \
-    --exclude DEPLOYED_COMMIT \
+    --exclude DEPLOYED_COMMIT --exclude 'profiles/' \
     "$NEXT/" "$APP/"
   rm -rf "$NEXT"
 fi
