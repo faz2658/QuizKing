@@ -100,6 +100,10 @@ public class GameSession {
 	 * @throws QuizRuleException if the game is over or the question is not the current one
 	 */
 	public AnswerOutcome answer(int questionId, String answer, Instant now) {
+		AnswerOutcome again = sameAnswerAgain(questionId, answer);
+		if (again != null) {
+			return again;
+		}
 		expireOverdueQuestions(now);
 		if (status == SessionStatus.COMPLETED) {
 			throw new QuizRuleException("The game is already over");
@@ -124,6 +128,31 @@ public class GameSession {
 		AnswerOutcome outcome = AnswerOutcome.of(q, combo);
 		advance(now);
 		return outcome;
+	}
+
+	/**
+	 * The outcome of an answer the player already gave, when the same answer to the same question arrives again: a
+	 * retry whose first reply was lost. Nothing changes; without this the retry would be refused as "not the current
+	 * question" and the player would never see how they did. A different answer is still refused.
+	 */
+	private AnswerOutcome sameAnswerAgain(int questionId, String answer) {
+		int run = 0; // the combo as it was after each question: a timeout breaks it, a skip leaves it
+		for (SessionQuestion q : questions) {
+			if (q.getAnsweredAt() == null) {
+				return null; // reached the questions not played yet
+			}
+			if (q.isTimedOut()) {
+				run = 0;
+			}
+			else if (!q.isSkipped()) {
+				run = q.isCorrect() ? run + 1 : 0;
+			}
+			if (q.getQuestionId() == questionId) {
+				boolean answered = !q.isTimedOut() && !q.isSkipped();
+				return answered && java.util.Objects.equals(q.getAnswer(), answer) ? AnswerOutcome.of(q, run) : null;
+			}
+		}
+		return null;
 	}
 
 	/** Combo bonus for the {@code n}-th correct answer in a row: x1.5 from the 3rd, x2 from the 5th. */

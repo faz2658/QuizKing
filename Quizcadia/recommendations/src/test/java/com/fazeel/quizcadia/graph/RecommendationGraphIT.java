@@ -35,10 +35,11 @@ class RecommendationGraphIT {
 		graph.upsertGame(2, "Rivers", null, 10, GameMode.SINGLE);
 		graph.upsertGame(3, "Planets", null, 20, GameMode.MULTI);
 		graph.setFavoriteCategories(100, Set.of(20));
-		graph.recordPlay(100, 1, Instant.now());
-		graph.recordPlay(200, 1, Instant.now());
-		graph.recordPlay(200, 2, Instant.now());
-		graph.recordPlay(200, 2, Instant.now());
+		graph.recordPlay(100, 1, "single:a", Instant.now());
+		graph.recordPlay(200, 1, "single:b", Instant.now());
+		graph.recordPlay(200, 2, "single:c", Instant.now());
+		graph.recordPlay(200, 2, "single:d", Instant.now());
+		graph.recordPlay(200, 2, "single:d", Instant.now()); // the same result delivered twice: counted once
 
 		List<Candidate> cs = graph.candidates(100);
 

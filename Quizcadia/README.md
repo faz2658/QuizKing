@@ -141,6 +141,13 @@ is. Each service answers its own errors (404, 409, 400 with field messages...). 
 Calls between services give up after 3 s connecting and 15 s waiting (`InternalHttp`). A Kafka that is down holds a
 request for at most 5 s (`max.block.ms`).
 
+Retries are safe: every write from the app carries an `Idempotency-Key`, and `IdempotencyFilter` (in
+`quizcadia-security`, copied into login) answers a repeat with the first answer for 10 minutes instead of doing it
+again. So the app re-sends writes, not just reads, once the servers are back after an outage. As a second guard, the
+game engine returns the outcome of an answer sent twice instead of refusing it. Kafka may deliver an event twice, so
+every listener tolerates repeats: reports are stored under the session or match id, profiles and invite rewards are
+created only once, and the recommendation graph remembers which results it has counted.
+
 ### Veracode scanning
 
 `.github/workflows/veracode.yml` runs Veracode static analysis. It only reports and never blocks a merge or a

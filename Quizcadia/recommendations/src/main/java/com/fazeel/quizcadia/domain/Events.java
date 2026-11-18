@@ -20,15 +20,15 @@ public final class Events {
 	}
 
 	@JsonIgnoreProperties(ignoreUnknown = true)
-	public record SinglePlayerResult(int gameId, int userId) {
+	public record SinglePlayerResult(String sessionId, int gameId, int userId) {
 	}
 
 	@JsonIgnoreProperties(ignoreUnknown = true)
-	public record AdaptiveResult(int gameId, int userId) {
+	public record AdaptiveResult(String sessionId, int gameId, int userId) {
 	}
 
 	@JsonIgnoreProperties(ignoreUnknown = true)
-	public record MultiPlayerResult(int gameId, List<Standing> standings) {
+	public record MultiPlayerResult(String matchId, int gameId, List<Standing> standings) {
 	}
 
 	@JsonIgnoreProperties(ignoreUnknown = true)
