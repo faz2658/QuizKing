@@ -683,6 +683,1018 @@
       "True North Strong"
      ],
      "why": "It became the official anthem in 1980."
+    },
+    {
+     "q": "Which Canadian singer recorded 'Call Me Maybe'?",
+     "a": "Carly Rae Jepsen",
+     "wrong": [
+      "Avril Lavigne",
+      "Alessia Cara",
+      "Nelly Furtado"
+     ],
+     "level": 1,
+     "why": "It was a global hit in 2012."
+    },
+    {
+     "q": "Which Canadian pop-punk singer recorded 'Complicated' and 'Sk8er Boi'?",
+     "a": "Avril Lavigne",
+     "wrong": [
+      "Alanis Morissette",
+      "Shania Twain",
+      "Carly Rae Jepsen"
+     ],
+     "level": 1,
+     "why": "She is from Napanee, Ontario."
+    },
+    {
+     "q": "Which Canadian singer recorded the album 'Jagged Little Pill'?",
+     "a": "Alanis Morissette",
+     "wrong": [
+      "Avril Lavigne",
+      "Sarah McLachlan",
+      "k.d. lang"
+     ],
+     "level": 1,
+     "why": "It sold over 30 million copies."
+    },
+    {
+     "q": "Which Canadian country star recorded 'Man! I Feel Like a Woman!'?",
+     "a": "Shania Twain",
+     "wrong": [
+      "Anne Murray",
+      "k.d. lang",
+      "Terri Clark"
+     ],
+     "level": 1,
+     "why": "Her album 'Come On Over' is a best-seller."
+    },
+    {
+     "q": "Which Canadian singer recorded 'Summer of '69'?",
+     "a": "Bryan Adams",
+     "wrong": [
+      "Jim Cuddy",
+      "Corey Hart",
+      "Tom Cochrane"
+     ],
+     "level": 1,
+     "why": "It came out in 1985."
+    },
+    {
+     "q": "Which Bryan Adams song was a 16-week UK number one in 1991?",
+     "a": "(Everything I Do) I Do It for You",
+     "wrong": [
+      "Heaven",
+      "Summer of '69",
+      "Run to You"
+     ],
+     "level": 1,
+     "why": "It was from 'Robin Hood: Prince of Thieves'."
+    },
+    {
+     "q": "Which Canadian singer-songwriter recorded 'Heart of Gold'?",
+     "a": "Neil Young",
+     "wrong": [
+      "Gordon Lightfoot",
+      "Leonard Cohen",
+      "Bruce Cockburn"
+     ],
+     "level": 1,
+     "why": "He was born in Toronto."
+    },
+    {
+     "q": "Which Canadian folk singer wrote 'The Wreck of the Edmund Fitzgerald'?",
+     "a": "Gordon Lightfoot",
+     "wrong": [
+      "Neil Young",
+      "Stan Rogers",
+      "Ian Tyson"
+     ],
+     "level": 1,
+     "why": "It tells of a 1975 shipwreck on Lake Superior."
+    },
+    {
+     "q": "Which Canadian singer recorded 'Snowbird' in 1970?",
+     "a": "Anne Murray",
+     "wrong": [
+      "Shania Twain",
+      "Sylvia Tyson",
+      "Rita MacNeil"
+     ],
+     "level": 1,
+     "why": "She is from Springhill, Nova Scotia."
+    },
+    {
+     "q": "Which Canadian singer recorded 'Sunglasses at Night'?",
+     "a": "Corey Hart",
+     "wrong": [
+      "Bryan Adams",
+      "Gowan",
+      "Platinum Blonde"
+     ],
+     "level": 1,
+     "why": "It came out in 1984."
+    },
+    {
+     "q": "Which Canadian singer recorded 'Constant Craving'?",
+     "a": "k.d. lang",
+     "wrong": [
+      "Sarah McLachlan",
+      "Alanis Morissette",
+      "Jann Arden"
+     ],
+     "level": 1,
+     "why": "It won a Grammy in 1993."
+    },
+    {
+     "q": "Which Canadian singer founded the Lilith Fair tour?",
+     "a": "Sarah McLachlan",
+     "wrong": [
+      "Alanis Morissette",
+      "Jann Arden",
+      "Chantal Kreviazuk"
+     ],
+     "level": 1,
+     "why": "It featured women artists."
+    },
+    {
+     "q": "Which Canadian singer recorded 'Angel' and 'Building a Mystery'?",
+     "a": "Sarah McLachlan",
+     "wrong": [
+      "k.d. lang",
+      "Jann Arden",
+      "Alanis Morissette"
+     ],
+     "level": 1,
+     "why": "She is from Halifax."
+    },
+    {
+     "q": "Which Canadian singer recorded 'I'm Like a Bird'?",
+     "a": "Nelly Furtado",
+     "wrong": [
+      "Avril Lavigne",
+      "Alessia Cara",
+      "Feist"
+     ],
+     "level": 1,
+     "why": "She is from Victoria, BC."
+    },
+    {
+     "q": "Which Canadian singer's '1234' was used in an iPod advert?",
+     "a": "Feist",
+     "wrong": [
+      "Alessia Cara",
+      "Carly Rae Jepsen",
+      "Grimes"
+     ],
+     "level": 1,
+     "why": "She is from Nova Scotia."
+    },
+    {
+     "q": "Which Canadian singer recorded 'Scars to Your Beautiful'?",
+     "a": "Alessia Cara",
+     "wrong": [
+      "Carly Rae Jepsen",
+      "Tate McRae",
+      "Charlotte Cardin"
+     ],
+     "level": 1,
+     "why": "She won the Grammy for Best New Artist in 2018."
+    },
+    {
+     "q": "Which Canadian singer-dancer recorded 'Greedy' in 2023?",
+     "a": "Tate McRae",
+     "wrong": [
+      "Alessia Cara",
+      "Carly Rae Jepsen",
+      "Grimes"
+     ],
+     "level": 1,
+     "why": "She is from Calgary."
+    },
+    {
+     "q": "Which Canadian singer recorded 'Stitches' and 'Treat You Better'?",
+     "a": "Shawn Mendes",
+     "wrong": [
+      "Justin Bieber",
+      "Johnny Orlando",
+      "Daniel Caesar"
+     ],
+     "level": 1,
+     "why": "He is from Pickering, Ontario."
+    },
+    {
+     "q": "Which Canadian band recorded 'American Woman'?",
+     "a": "The Guess Who",
+     "wrong": [
+      "Bachman–Turner Overdrive",
+      "April Wine",
+      "Trooper"
+     ],
+     "level": 1,
+     "why": "It topped the US charts in 1970."
+    },
+    {
+     "q": "Which Canadian band recorded 'You Ain't Seen Nothing Yet'?",
+     "a": "Bachman–Turner Overdrive",
+     "wrong": [
+      "The Guess Who",
+      "Loverboy",
+      "Triumph"
+     ],
+     "level": 1,
+     "why": "Randy Bachman also played in the Guess Who."
+    },
+    {
+     "q": "Which Canadian band recorded 'Working for the Weekend'?",
+     "a": "Loverboy",
+     "wrong": [
+      "Trooper",
+      "Platinum Blonde",
+      "Honeymoon Suite"
+     ],
+     "level": 1,
+     "why": "It came out in 1981."
+    },
+    {
+     "q": "Which Kingston band led by Gord Downie recorded 'Bobcaygeon'?",
+     "a": "The Tragically Hip",
+     "wrong": [
+      "Blue Rodeo",
+      "Barenaked Ladies",
+      "Our Lady Peace"
+     ],
+     "level": 1,
+     "why": "Their last concert in 2016 drew 11.7 million viewers."
+    },
+    {
+     "q": "Which Canadian band recorded 'One Week' and 'If I Had $1000000'?",
+     "a": "Barenaked Ladies",
+     "wrong": [
+      "The Tragically Hip",
+      "Great Big Sea",
+      "Sloan"
+     ],
+     "level": 1,
+     "why": "They wrote the 'Big Bang Theory' theme."
+    },
+    {
+     "q": "Which Montreal band recorded 'Wake Up' and 'Funeral'?",
+     "a": "Arcade Fire",
+     "wrong": [
+      "Broken Social Scene",
+      "Wolf Parade",
+      "The Stills"
+     ],
+     "level": 1,
+     "why": "Their album 'The Suburbs' won a Grammy."
+    },
+    {
+     "q": "Which Toronto band recorded 'Lover's Spit'?",
+     "a": "Broken Social Scene",
+     "wrong": [
+      "Arcade Fire",
+      "Metric",
+      "Stars"
+     ],
+     "level": 1,
+     "why": "It is a large collective."
+    },
+    {
+     "q": "Which Toronto band led by Emily Haines recorded 'Help I'm Alive'?",
+     "a": "Metric",
+     "wrong": [
+      "Stars",
+      "Tegan and Sara",
+      "Broken Social Scene"
+     ],
+     "level": 1,
+     "why": "Emily Haines is the singer."
+    },
+    {
+     "q": "Which twin sisters from Calgary make pop-rock music?",
+     "a": "Tegan and Sara",
+     "wrong": [
+      "The Veronicas",
+      "Haim",
+      "Lily and Madeleine"
+     ],
+     "level": 1,
+     "why": "They wrote 'Everything Is Awesome' for 'The Lego Movie'."
+    },
+    {
+     "q": "Which Canadian rock band recorded 'Animal I Have Become'?",
+     "a": "Three Days Grace",
+     "wrong": [
+      "Nickelback",
+      "Billy Talent",
+      "Our Lady Peace"
+     ],
+     "level": 1,
+     "why": "They are from Norwood, Ontario."
+    },
+    {
+     "q": "Which Canadian band recorded 'Clumsy' and 'Superman's Dead'?",
+     "a": "Our Lady Peace",
+     "wrong": [
+      "Matthew Good Band",
+      "Moist",
+      "I Mother Earth"
+     ],
+     "level": 1,
+     "why": "Raine Maida sings."
+    },
+    {
+     "q": "Which Canadian band recorded 'Fat Lip'?",
+     "a": "Sum 41",
+     "wrong": [
+      "Simple Plan",
+      "Billy Talent",
+      "Marianas Trench"
+     ],
+     "level": 1,
+     "why": "They are from Ajax, Ontario."
+    },
+    {
+     "q": "Which Montreal pop-punk band recorded 'Welcome to My Life'?",
+     "a": "Simple Plan",
+     "wrong": [
+      "Sum 41",
+      "Billy Talent",
+      "Marianas Trench"
+     ],
+     "level": 1,
+     "why": "It came out in 2004."
+    },
+    {
+     "q": "Which Toronto rapper made 'Let Your Backbone Slide'?",
+     "a": "Maestro Fresh-Wes",
+     "wrong": [
+      "Kardinal Offishall",
+      "Choclair",
+      "k-os"
+     ],
+     "level": 1,
+     "why": "It was Canada's first big hip-hop hit."
+    },
+    {
+     "q": "Which Toronto rapper's 'God's Plan' topped charts in 2018?",
+     "a": "Drake",
+     "wrong": [
+      "The Weeknd",
+      "Tory Lanez",
+      "Nav"
+     ],
+     "level": 1,
+     "why": "He is from Toronto."
+    },
+    {
+     "q": "Which album by The Weeknd includes 'Blinding Lights'?",
+     "a": "After Hours",
+     "wrong": [
+      "Starboy",
+      "Dawn FM",
+      "Beauty Behind the Madness"
+     ],
+     "level": 1,
+     "why": "It came out in 2020."
+    },
+    {
+     "q": "Which Toronto R&B singer won a Grammy for 'Best Part' with H.E.R.?",
+     "a": "Daniel Caesar",
+     "wrong": [
+      "The Weeknd",
+      "PartyNextDoor",
+      "Majid Jordan"
+     ],
+     "level": 1,
+     "why": "His debut album is 'Freudian'."
+    },
+    {
+     "q": "Where is Grimes from?",
+     "a": "Vancouver",
+     "wrong": [
+      "Toronto",
+      "Montreal",
+      "Calgary"
+     ],
+     "level": 1,
+     "why": "She studied at McGill in Montreal."
+    },
+    {
+     "q": "Which Canadian music awards are named after a former CRTC chairman?",
+     "a": "Juno Awards",
+     "wrong": [
+      "Polaris Prize",
+      "Gemini Awards",
+      "Félix Awards"
+     ],
+     "level": 1,
+     "why": "Pierre Juneau gave the name."
+    },
+    {
+     "q": "Which prize is given each year to the best Canadian album?",
+     "a": "Polaris Music Prize",
+     "wrong": [
+      "Juno Award",
+      "Giller Prize",
+      "Félix Award"
+     ],
+     "level": 1,
+     "why": "It began in 2006."
+    },
+    {
+     "q": "Which Quebec music awards are given by ADISQ?",
+     "a": "Félix Awards",
+     "wrong": [
+      "Juno Awards",
+      "Polaris Prize",
+      "Gémeaux Awards"
+     ],
+     "level": 1,
+     "why": "They honour Quebec music."
+    },
+    {
+     "q": "Which Céline Dion album includes 'Because You Loved Me'?",
+     "a": "Falling into You",
+     "wrong": [
+      "Let's Talk About Love",
+      "The Colour of My Love",
+      "A New Day Has Come"
+     ],
+     "level": 1,
+     "why": "It won the Album of the Year Grammy."
+    },
+    {
+     "q": "Which song did Céline Dion sing at the 2024 Paris Olympics opening?",
+     "a": "Hymne à l'amour",
+     "wrong": [
+      "My Heart Will Go On",
+      "La Marseillaise",
+      "Ne me quitte pas"
+     ],
+     "level": 1,
+     "why": "She sang from the Eiffel Tower."
+    },
+    {
+     "q": "Which country did Céline Dion represent to win Eurovision 1988?",
+     "a": "Switzerland",
+     "wrong": [
+      "Canada",
+      "France",
+      "Belgium"
+     ],
+     "level": 1,
+     "why": "She sang 'Ne partez pas sans moi'."
+    },
+    {
+     "q": "Which Canadian jazz pianist recorded 'Night Train'?",
+     "a": "Oscar Peterson",
+     "wrong": [
+      "Diana Krall",
+      "Paul Bley",
+      "Oliver Jones"
+     ],
+     "level": 1,
+     "why": "He was called 'Maharaja of the keyboard'."
+    },
+    {
+     "q": "Which Canadian jazz pianist and singer is married to Elvis Costello?",
+     "a": "Diana Krall",
+     "wrong": [
+      "Holly Cole",
+      "Molly Johnson",
+      "Jill Barber"
+     ],
+     "level": 1,
+     "why": "She is from Nanaimo, BC."
+    },
+    {
+     "q": "Which Canadian pianist became famous for recording Bach's 'Goldberg Variations'?",
+     "a": "Glenn Gould",
+     "wrong": [
+      "Oscar Peterson",
+      "Angela Hewitt",
+      "Marc-André Hamelin"
+     ],
+     "level": 1,
+     "why": "He recorded them in 1955 and 1981."
+    },
+    {
+     "q": "Which Cape Breton singer recorded 'Working Man'?",
+     "a": "Rita MacNeil",
+     "wrong": [
+      "Anne Murray",
+      "Natalie MacMaster",
+      "Ashley MacIsaac"
+     ],
+     "level": 1,
+     "why": "It is sung by a miners' choir."
+    },
+    {
+     "q": "Which fiddle music tradition is famous on Cape Breton Island?",
+     "a": "Scottish-style fiddling",
+     "wrong": [
+      "Bluegrass",
+      "Klezmer",
+      "Cajun fiddle"
+     ],
+     "level": 1,
+     "why": "Natalie MacMaster is a star of it."
+    },
+    {
+     "q": "Which Newfoundland band recorded 'Ordinary Day' and sea shanties?",
+     "a": "Great Big Sea",
+     "wrong": [
+      "The Irish Descendants",
+      "Spirit of the West",
+      "Rawlins Cross"
+     ],
+     "level": 1,
+     "why": "Alan Doyle was a singer."
+    },
+    {
+     "q": "Which Nova Scotia folk singer wrote 'Northwest Passage'?",
+     "a": "Stan Rogers",
+     "wrong": [
+      "Gordon Lightfoot",
+      "Ian Tyson",
+      "Bruce Cockburn"
+     ],
+     "level": 1,
+     "why": "It is called Canada's unofficial anthem."
+    },
+    {
+     "q": "Which Canadian singer-songwriter wrote 'Four Strong Winds'?",
+     "a": "Ian Tyson",
+     "wrong": [
+      "Neil Young",
+      "Gordon Lightfoot",
+      "Joni Mitchell"
+     ],
+     "level": 1,
+     "why": "He recorded it as Ian & Sylvia."
+    },
+    {
+     "q": "Which Canadian rock trio recorded 'Tom Sawyer'?",
+     "a": "Rush",
+     "wrong": [
+      "Triumph",
+      "April Wine",
+      "Max Webster"
+     ],
+     "level": 1,
+     "why": "Neil Peart was the drummer."
+    },
+    {
+     "q": "Which Canadian singer-songwriter recorded 'If You Could Read My Mind'?",
+     "a": "Gordon Lightfoot",
+     "wrong": [
+      "Leonard Cohen",
+      "Neil Young",
+      "Murray McLauchlan"
+     ],
+     "level": 1,
+     "why": "It came out in 1970."
+    },
+    {
+     "q": "Which Canadian singer recorded 'Ironic' and 'You Oughta Know'?",
+     "a": "Alanis Morissette",
+     "wrong": [
+      "Avril Lavigne",
+      "Sarah McLachlan",
+      "Jewel"
+     ],
+     "level": 2,
+     "why": "She was born in Ottawa."
+    },
+    {
+     "q": "Which Joni Mitchell album includes 'A Case of You'?",
+     "a": "Blue",
+     "wrong": [
+      "Court and Spark",
+      "Hejira",
+      "Ladies of the Canyon"
+     ],
+     "level": 2,
+     "why": "It came out in 1971."
+    },
+    {
+     "q": "Which Neil Young album includes 'Heart of Gold'?",
+     "a": "Harvest",
+     "wrong": [
+      "After the Gold Rush",
+      "Rust Never Sleeps",
+      "Harvest Moon"
+     ],
+     "level": 2,
+     "why": "It came out in 1972."
+    },
+    {
+     "q": "Which band did Neil Young form with Stephen Stills in Los Angeles?",
+     "a": "Buffalo Springfield",
+     "wrong": [
+      "Crazy Horse",
+      "The Byrds",
+      "The Band"
+     ],
+     "level": 2,
+     "why": "He later joined Crosby, Stills & Nash."
+    },
+    {
+     "q": "Which Canadian-led group backed Bob Dylan and recorded 'The Weight'?",
+     "a": "The Band",
+     "wrong": [
+      "Crazy Horse",
+      "The Guess Who",
+      "Lighthouse"
+     ],
+     "level": 2,
+     "why": "Four of its five members were Canadian."
+    },
+    {
+     "q": "Which Leonard Cohen song was covered by Jeff Buckley?",
+     "a": "Hallelujah",
+     "wrong": [
+      "Suzanne",
+      "So Long, Marianne",
+      "Famous Blue Raincoat"
+     ],
+     "level": 2,
+     "why": "Cohen first recorded it in 1984."
+    },
+    {
+     "q": "Which Leonard Cohen album came out weeks before his death in 2016?",
+     "a": "You Want It Darker",
+     "wrong": [
+      "Old Ideas",
+      "Popular Problems",
+      "Thanks for the Dance"
+     ],
+     "level": 2,
+     "why": "He died in Los Angeles."
+    },
+    {
+     "q": "Which Drake album includes 'Hotline Bling' and 'One Dance'?",
+     "a": "Views",
+     "wrong": [
+      "Take Care",
+      "Scorpion",
+      "Nothing Was the Same"
+     ],
+     "level": 2,
+     "why": "It came out in 2016."
+    },
+    {
+     "q": "Which Canadian sang the Super Bowl halftime show in 2021?",
+     "a": "The Weeknd",
+     "wrong": [
+      "Drake",
+      "Justin Bieber",
+      "Shania Twain"
+     ],
+     "level": 2,
+     "why": "It was in Tampa."
+    },
+    {
+     "q": "Which Justin Bieber song features Luis Fonsi and Daddy Yankee?",
+     "a": "Despacito (remix)",
+     "wrong": [
+      "Sorry",
+      "Love Yourself",
+      "Peaches"
+     ],
+     "level": 2,
+     "why": "The remix topped the Billboard Hot 100."
+    },
+    {
+     "q": "Which Bryan Adams album includes 'Summer of '69' and 'Heaven'?",
+     "a": "Reckless",
+     "wrong": [
+      "Cuts Like a Knife",
+      "Waking Up the Neighbours",
+      "Into the Fire"
+     ],
+     "level": 2,
+     "why": "It came out in 1984."
+    },
+    {
+     "q": "Which Canadian group sang 'Tears Are Not Enough' for Ethiopian famine relief?",
+     "a": "Northern Lights",
+     "wrong": [
+      "Band Aid",
+      "USA for Africa",
+      "Canadian Aid"
+     ],
+     "level": 2,
+     "why": "It was released in 1985."
+    },
+    {
+     "q": "Which Quebec singer is called 'the poet of the Quiet Revolution' for 'Gens du pays'?",
+     "a": "Gilles Vigneault",
+     "wrong": [
+      "Félix Leclerc",
+      "Robert Charlebois",
+      "Claude Dubois"
+     ],
+     "level": 2,
+     "why": "The song is Quebec's unofficial anthem."
+    },
+    {
+     "q": "Which Quebec singer-songwriter is called the father of Quebec song?",
+     "a": "Félix Leclerc",
+     "wrong": [
+      "Gilles Vigneault",
+      "Robert Charlebois",
+      "Jean-Pierre Ferland"
+     ],
+     "level": 2,
+     "why": "The Félix Awards are named after him."
+    },
+    {
+     "q": "Which Quebec singer recorded 'Lindberg' with Louise Forestier?",
+     "a": "Robert Charlebois",
+     "wrong": [
+      "Gilles Vigneault",
+      "Michel Pagliaro",
+      "Claude Dubois"
+     ],
+     "level": 2,
+     "why": "It came out in 1968."
+    },
+    {
+     "q": "Which Quebec folk band recorded traditional songs with foot percussion?",
+     "a": "La Bottine Souriante",
+     "wrong": [
+      "Les Cowboys Fringants",
+      "Harmonium",
+      "Beau Dommage"
+     ],
+     "level": 2,
+     "why": "Foot tapping is called podorythmie."
+    },
+    {
+     "q": "Which Quebec band recorded the 1970s progressive album 'L'Heptade'?",
+     "a": "Harmonium",
+     "wrong": [
+      "Beau Dommage",
+      "Offenbach",
+      "Octobre"
+     ],
+     "level": 2,
+     "why": "Serge Fiori led it."
+    },
+    {
+     "q": "Which Quebec band's 'Les étoiles filantes' is a favourite singalong?",
+     "a": "Les Cowboys Fringants",
+     "wrong": [
+      "Les Colocs",
+      "Mes Aïeux",
+      "Kaïn"
+     ],
+     "level": 2,
+     "why": "Karl Tremblay was its singer."
+    },
+    {
+     "q": "Which conductor led the Montreal Symphony Orchestra from 1977 to 2002?",
+     "a": "Charles Dutoit",
+     "wrong": [
+      "Kent Nagano",
+      "Yannick Nézet-Séguin",
+      "Zubin Mehta"
+     ],
+     "level": 2,
+     "why": "He made many award-winning recordings."
+    },
+    {
+     "q": "Which Montreal conductor leads the Metropolitan Opera?",
+     "a": "Yannick Nézet-Séguin",
+     "wrong": [
+      "Kent Nagano",
+      "Charles Dutoit",
+      "Bramwell Tovey"
+     ],
+     "level": 2,
+     "why": "He also leads the Philadelphia Orchestra."
+    },
+    {
+     "q": "Which Canadian opera singer is a famous contralto from Quebec?",
+     "a": "Marie-Nicole Lemieux",
+     "wrong": [
+      "Maureen Forrester",
+      "Measha Brueggergosman",
+      "Teresa Stratas"
+     ],
+     "level": 2,
+     "why": "She won the Queen Elisabeth Competition in 2000."
+    },
+    {
+     "q": "Which Inuk throat singer won the 2014 Polaris Prize?",
+     "a": "Tanya Tagaq",
+     "wrong": [
+      "Susan Aglukark",
+      "Elisapie",
+      "Riit"
+     ],
+     "level": 2,
+     "why": "Her album was 'Animism'."
+    },
+    {
+     "q": "Which Inuk singer recorded 'O Siem'?",
+     "a": "Susan Aglukark",
+     "wrong": [
+      "Tanya Tagaq",
+      "Elisapie",
+      "Kelly Fraser"
+     ],
+     "level": 2,
+     "why": "It was a hit in 1995."
+    },
+    {
+     "q": "Which Cree singer-songwriter wrote 'Universal Soldier'?",
+     "a": "Buffy Sainte-Marie",
+     "wrong": [
+      "Susan Aglukark",
+      "Robbie Robertson",
+      "Tom Jackson"
+     ],
+     "level": 2,
+     "why": "She won an Oscar for 'Up Where We Belong'."
+    },
+    {
+     "q": "Which Ottawa DJ collective blended powwow drums with electronic music?",
+     "a": "The Halluci Nation (A Tribe Called Red)",
+     "wrong": [
+      "Snotty Nose Rez Kids",
+      "Digging Roots",
+      "Northern Cree"
+     ],
+     "level": 2,
+     "why": "They won a Polaris shortlist place."
+    },
+    {
+     "q": "Which Toronto suburb is Barenaked Ladies from?",
+     "a": "Scarborough",
+     "wrong": [
+      "Mississauga",
+      "Brampton",
+      "Markham"
+     ],
+     "level": 2,
+     "why": "They formed in 1988."
+    },
+    {
+     "q": "Which Somali-Canadian singer recorded 'Wavin' Flag'?",
+     "a": "K'naan",
+     "wrong": [
+      "Drake",
+      "Kardinal Offishall",
+      "Shad"
+     ],
+     "level": 2,
+     "why": "A version became a 2010 World Cup anthem."
+    },
+    {
+     "q": "Which Canadian singer-songwriter recorded 'Lovers in a Dangerous Time'?",
+     "a": "Bruce Cockburn",
+     "wrong": [
+      "Gordon Lightfoot",
+      "Murray McLauchlan",
+      "Bruce Guthro"
+     ],
+     "level": 2,
+     "why": "He is from Ottawa."
+    },
+    {
+     "q": "Which Halifax band recorded 'Underwhelmed'?",
+     "a": "Sloan",
+     "wrong": [
+      "The Tragically Hip",
+      "The Rheostatics",
+      "Odds"
+     ],
+     "level": 2,
+     "why": "They later moved to Toronto."
+    },
+    {
+     "q": "Which Toronto band co-led by Jim Cuddy and Greg Keelor recorded 'Try'?",
+     "a": "Blue Rodeo",
+     "wrong": [
+      "The Tragically Hip",
+      "Cowboy Junkies",
+      "Sloan"
+     ],
+     "level": 2,
+     "why": "It came out in 1987."
+    },
+    {
+     "q": "Which Toronto band recorded a famous slow cover of 'Sweet Jane'?",
+     "a": "Cowboy Junkies",
+     "wrong": [
+      "Blue Rodeo",
+      "Mother Mother",
+      "Junkhouse"
+     ],
+     "level": 2,
+     "why": "They recorded in a church in one day."
+    },
+    {
+     "q": "Who composed the music of 'O Canada'?",
+     "a": "Calixa Lavallée",
+     "wrong": [
+      "Ernest MacMillan",
+      "Healey Willan",
+      "Claude Champagne"
+     ],
+     "level": 3,
+     "why": "It was first sung in 1880."
+    },
+    {
+     "q": "Who wrote the original French words of 'O Canada'?",
+     "a": "Adolphe-Basile Routhier",
+     "wrong": [
+      "Calixa Lavallée",
+      "Robert Stanley Weir",
+      "Louis Fréchette"
+     ],
+     "level": 3,
+     "why": "The English words came later."
+    },
+    {
+     "q": "In which year did 'O Canada' become the official national anthem?",
+     "a": "1980",
+     "wrong": [
+      "1867",
+      "1927",
+      "1967"
+     ],
+     "level": 3,
+     "why": "Its lyrics were made gender-neutral in 2018."
+    },
+    {
+     "q": "Which Toronto concert hall, opened in 1894, is famous for its acoustics?",
+     "a": "Massey Hall",
+     "wrong": [
+      "Roy Thomson Hall",
+      "Koerner Hall",
+      "Elgin Theatre"
+     ],
+     "level": 3,
+     "why": "Gordon Lightfoot played there over 170 times."
+    },
+    {
+     "q": "Who composed 'The Hockey Theme'?",
+     "a": "Dolores Claman",
+     "wrong": [
+      "Bob Hope",
+      "Stompin' Tom Connors",
+      "Howard Cable"
+     ],
+     "level": 3,
+     "why": "It was used from 1968."
+    },
+    {
+     "q": "Which Canadian country singer wrote 'The Hockey Song' and 'Bud the Spud'?",
+     "a": "Stompin' Tom Connors",
+     "wrong": [
+      "Gordon Lightfoot",
+      "Ian Tyson",
+      "Hank Snow"
+     ],
+     "level": 3,
+     "why": "He stamped his boot on a board."
+    },
+    {
+     "q": "Which Nova Scotia country legend recorded 'I'm Movin' On'?",
+     "a": "Hank Snow",
+     "wrong": [
+      "Wilf Carter",
+      "Stompin' Tom Connors",
+      "Anne Murray"
+     ],
+     "level": 3,
+     "why": "He joined the Grand Ole Opry in 1950."
+    },
+    {
+     "q": "Which Canadian prog band from Ontario recorded 'Fly by Night'?",
+     "a": "Rush",
+     "wrong": [
+      "Triumph",
+      "Saga",
+      "FM"
+     ],
+     "level": 3,
+     "why": "It was their second album."
+    },
+    {
+     "q": "Which Canadian singer recorded 'Hallelujah' at the 2010 Olympics opening?",
+     "a": "k.d. lang",
+     "wrong": [
+      "Céline Dion",
+      "Sarah McLachlan",
+      "Nelly Furtado"
+     ],
+     "level": 3,
+     "why": "It was in Vancouver."
     }
    ]
   },
@@ -722,6 +1734,919 @@
       "Denys Arcand"
      ],
      "why": "He also made 'Arrival'."
+    },
+    {
+     "q": "Which Canadian actor starred in 'The Notebook' and 'La La Land'?",
+     "a": "Ryan Gosling",
+     "wrong": [
+      "Ryan Reynolds",
+      "Keanu Reeves",
+      "Seth Rogen"
+     ],
+     "level": 1,
+     "why": "He is from London, Ontario."
+    },
+    {
+     "q": "Which Vancouver-born actor plays Deadpool?",
+     "a": "Ryan Reynolds",
+     "wrong": [
+      "Ryan Gosling",
+      "Hayden Christensen",
+      "Seth Rogen"
+     ],
+     "level": 1,
+     "why": "The films are made partly in Vancouver."
+    },
+    {
+     "q": "Which actor raised in Toronto starred in 'The Matrix' and 'John Wick'?",
+     "a": "Keanu Reeves",
+     "wrong": [
+      "Ryan Gosling",
+      "Christopher Plummer",
+      "Donald Sutherland"
+     ],
+     "level": 1,
+     "why": "He was born in Beirut."
+    },
+    {
+     "q": "Which Canadian comedian starred in 'Ace Ventura' and 'The Mask'?",
+     "a": "Jim Carrey",
+     "wrong": [
+      "Mike Myers",
+      "Martin Short",
+      "Dan Aykroyd"
+     ],
+     "level": 1,
+     "why": "He is from Newmarket, Ontario."
+    },
+    {
+     "q": "Which Canadian comedian created 'Austin Powers' and voiced Shrek?",
+     "a": "Mike Myers",
+     "wrong": [
+      "Jim Carrey",
+      "Eugene Levy",
+      "Martin Short"
+     ],
+     "level": 1,
+     "why": "He co-wrote 'Wayne's World'."
+    },
+    {
+     "q": "Which Canadian actor co-wrote and starred in 'Ghostbusters'?",
+     "a": "Dan Aykroyd",
+     "wrong": [
+      "Bill Murray",
+      "Rick Moranis",
+      "Harold Ramis"
+     ],
+     "level": 1,
+     "why": "He also starred in 'The Blues Brothers'."
+    },
+    {
+     "q": "Which Vancouver comedian co-wrote 'Superbad' and 'Pineapple Express'?",
+     "a": "Seth Rogen",
+     "wrong": [
+      "Michael Cera",
+      "Jay Baruchel",
+      "Will Arnett"
+     ],
+     "level": 1,
+     "why": "He also co-created 'The Boys' series."
+    },
+    {
+     "q": "Which Canadian actor played Captain von Trapp in 'The Sound of Music'?",
+     "a": "Christopher Plummer",
+     "wrong": [
+      "Donald Sutherland",
+      "William Shatner",
+      "Lorne Greene"
+     ],
+     "level": 1,
+     "why": "He won an Oscar at 82."
+    },
+    {
+     "q": "Which Montreal-born actor played Captain Kirk in 'Star Trek'?",
+     "a": "William Shatner",
+     "wrong": [
+      "Leonard Nimoy",
+      "James Doohan",
+      "Christopher Plummer"
+     ],
+     "level": 1,
+     "why": "He went to space in 2021, aged 90."
+    },
+    {
+     "q": "Which Canadian actor played Scotty in 'Star Trek'?",
+     "a": "James Doohan",
+     "wrong": [
+      "William Shatner",
+      "Lorne Greene",
+      "Raymond Burr"
+     ],
+     "level": 1,
+     "why": "He was wounded on D-Day."
+    },
+    {
+     "q": "Which Canadian actress starred in 'Juno' and 'Inception'?",
+     "a": "Elliot Page",
+     "wrong": [
+      "Rachel McAdams",
+      "Sarah Polley",
+      "Evangeline Lilly"
+     ],
+     "level": 1,
+     "why": "He is from Halifax."
+    },
+    {
+     "q": "Which Canadian actress starred in 'Mean Girls' and 'The Notebook'?",
+     "a": "Rachel McAdams",
+     "wrong": [
+      "Elliot Page",
+      "Nina Dobrev",
+      "Sandra Oh"
+     ],
+     "level": 1,
+     "why": "She is from London, Ontario."
+    },
+    {
+     "q": "Which Ottawa-raised actress starred in 'Grey's Anatomy' and 'Killing Eve'?",
+     "a": "Sandra Oh",
+     "wrong": [
+      "Rachel McAdams",
+      "Kristin Kreuk",
+      "Tatiana Maslany"
+     ],
+     "level": 1,
+     "why": "She won a Golden Globe for 'Killing Eve'."
+    },
+    {
+     "q": "Which Canadian actress played many clones in 'Orphan Black'?",
+     "a": "Tatiana Maslany",
+     "wrong": [
+      "Sandra Oh",
+      "Elliot Page",
+      "Kristin Kreuk"
+     ],
+     "level": 1,
+     "why": "She won an Emmy in 2016."
+    },
+    {
+     "q": "Which Canadian father and son co-created 'Schitt's Creek'?",
+     "a": "Eugene and Dan Levy",
+     "wrong": [
+      "Martin and Mike Short",
+      "Dan and Peter Aykroyd",
+      "Ryan and Jim Reynolds"
+     ],
+     "level": 1,
+     "why": "They both won Emmys."
+    },
+    {
+     "q": "Which Canadian sitcom is set in a small-town Saskatchewan gas station?",
+     "a": "Corner Gas",
+     "wrong": [
+      "Kim's Convenience",
+      "Letterkenny",
+      "Trailer Park Boys"
+     ],
+     "level": 1,
+     "why": "Brent Butt created it."
+    },
+    {
+     "q": "Which Canadian sitcom follows a Korean family's store in Toronto?",
+     "a": "Kim's Convenience",
+     "wrong": [
+      "Corner Gas",
+      "Schitt's Creek",
+      "Workin' Moms"
+     ],
+     "level": 1,
+     "why": "Simu Liu starred in it."
+    },
+    {
+     "q": "Which actor from 'Kim's Convenience' played Shang-Chi?",
+     "a": "Simu Liu",
+     "wrong": [
+      "Paul Sun-Hyung Lee",
+      "Andrew Phung",
+      "Daniel Dae Kim"
+     ],
+     "level": 1,
+     "why": "He was born in China and raised in Ontario."
+    },
+    {
+     "q": "Which Canadian comedy follows small-town Ontario hicks?",
+     "a": "Letterkenny",
+     "wrong": [
+      "Corner Gas",
+      "Trailer Park Boys",
+      "Schitt's Creek"
+     ],
+     "level": 1,
+     "why": "Jared Keeso created it."
+    },
+    {
+     "q": "Which Nova Scotia mockumentary follows Ricky, Julian and Bubbles?",
+     "a": "Trailer Park Boys",
+     "wrong": [
+      "Letterkenny",
+      "Corner Gas",
+      "The Red Green Show"
+     ],
+     "level": 1,
+     "why": "It began in 2001."
+    },
+    {
+     "q": "Which Canadian teen drama followed students at a Toronto school?",
+     "a": "Degrassi",
+     "wrong": [
+      "Heartland",
+      "Being Erica",
+      "Instant Star"
+     ],
+     "level": 1,
+     "why": "Drake starred as Jimmy Brooks."
+    },
+    {
+     "q": "Which Canadian drama about a horse ranch is Canada's longest-running one-hour series?",
+     "a": "Heartland",
+     "wrong": [
+      "Degrassi",
+      "Murdoch Mysteries",
+      "Republic of Doyle"
+     ],
+     "level": 1,
+     "why": "It is set in Alberta."
+    },
+    {
+     "q": "Which Canadian detective series is set in 1890s Toronto?",
+     "a": "Murdoch Mysteries",
+     "wrong": [
+      "Heartland",
+      "Due South",
+      "Republic of Doyle"
+     ],
+     "level": 1,
+     "why": "Yannick Bisson plays the detective."
+    },
+    {
+     "q": "Which Canadian children's TV star was 'Mr. Dressup'?",
+     "a": "Ernie Coombs",
+     "wrong": [
+      "Fred Rogers",
+      "Bob Homme",
+      "Jim Henson"
+     ],
+     "level": 1,
+     "why": "He had a Tickle Trunk."
+    },
+    {
+     "q": "Which CBC children's show began 'Look up, look way up'?",
+     "a": "The Friendly Giant",
+     "wrong": [
+      "Mr. Dressup",
+      "Polka Dot Door",
+      "Sesame Park"
+     ],
+     "level": 1,
+     "why": "It ran from 1958 to 1985."
+    },
+    {
+     "q": "Which hockey broadcast is a Saturday night institution in Canada?",
+     "a": "Hockey Night in Canada",
+     "wrong": [
+      "Sportsnet Tonight",
+      "Coach's Corner",
+      "SportsCentre"
+     ],
+     "level": 1,
+     "why": "It began on radio in the 1930s."
+    },
+    {
+     "q": "Which Canadian hosted 'Jeopardy!' for 37 years?",
+     "a": "Alex Trebek",
+     "wrong": [
+      "Peter Mansbridge",
+      "Howie Mandel",
+      "Monty Hall"
+     ],
+     "level": 1,
+     "why": "He was from Sudbury."
+    },
+    {
+     "q": "Which Canadian hosted 'Let's Make a Deal'?",
+     "a": "Monty Hall",
+     "wrong": [
+      "Alex Trebek",
+      "Howie Mandel",
+      "Bob Barker"
+     ],
+     "level": 1,
+     "why": "The 'Monty Hall problem' is named after him."
+    },
+    {
+     "q": "Which Canadian comedian hosted 'Deal or No Deal'?",
+     "a": "Howie Mandel",
+     "wrong": [
+      "Alex Trebek",
+      "Martin Short",
+      "Russell Peters"
+     ],
+     "level": 1,
+     "why": "He is from Toronto."
+    },
+    {
+     "q": "Which Canadian created 'Saturday Night Live'?",
+     "a": "Lorne Michaels",
+     "wrong": [
+      "Lorne Greene",
+      "Dan Aykroyd",
+      "Martin Short"
+     ],
+     "level": 1,
+     "why": "He is from Toronto."
+    },
+    {
+     "q": "Which Toronto comedy show launched John Candy, Eugene Levy and Catherine O'Hara?",
+     "a": "SCTV",
+     "wrong": [
+      "Kids in the Hall",
+      "This Hour Has 22 Minutes",
+      "Codco"
+     ],
+     "level": 1,
+     "why": "It began in 1976."
+    },
+    {
+     "q": "Which Canadian actress played the mother in 'Home Alone'?",
+     "a": "Catherine O'Hara",
+     "wrong": [
+      "Andrea Martin",
+      "Eugene Levy",
+      "Megan Follows"
+     ],
+     "level": 1,
+     "why": "She later played Moira Rose."
+    },
+    {
+     "q": "Which Canadian comedian starred in 'Uncle Buck' and 'Cool Runnings'?",
+     "a": "John Candy",
+     "wrong": [
+      "Rick Moranis",
+      "Eugene Levy",
+      "Martin Short"
+     ],
+     "level": 1,
+     "why": "He died in 1994."
+    },
+    {
+     "q": "Which Canadian actor starred in 'Honey, I Shrunk the Kids'?",
+     "a": "Rick Moranis",
+     "wrong": [
+      "John Candy",
+      "Martin Short",
+      "Eugene Levy"
+     ],
+     "level": 1,
+     "why": "He was also in 'Ghostbusters'."
+    },
+    {
+     "q": "Which Canadian director made 'The Fly' and 'Crash'?",
+     "a": "David Cronenberg",
+     "wrong": [
+      "Atom Egoyan",
+      "Denis Villeneuve",
+      "Norman Jewison"
+     ],
+     "level": 1,
+     "why": "He is known for 'body horror'."
+    },
+    {
+     "q": "Which Canadian director made 'Ghostbusters' (1984)?",
+     "a": "Ivan Reitman",
+     "wrong": [
+      "Norman Jewison",
+      "James Cameron",
+      "David Cronenberg"
+     ],
+     "level": 1,
+     "why": "He was born in Czechoslovakia."
+    },
+    {
+     "q": "Which Canadian directed 'In the Heat of the Night' and 'Moonstruck'?",
+     "a": "Norman Jewison",
+     "wrong": [
+      "Ivan Reitman",
+      "Arthur Hiller",
+      "Ted Kotcheff"
+     ],
+     "level": 1,
+     "why": "He founded the Canadian Film Centre."
+    },
+    {
+     "q": "Which Canadian directed 'Terminator 2' and 'Aliens'?",
+     "a": "James Cameron",
+     "wrong": [
+      "Ivan Reitman",
+      "David Cronenberg",
+      "Denis Villeneuve"
+     ],
+     "level": 1,
+     "why": "He is from Kapuskasing, Ontario."
+    },
+    {
+     "q": "Which Quebec director made 'Arrival' and 'Blade Runner 2049'?",
+     "a": "Denis Villeneuve",
+     "wrong": [
+      "Xavier Dolan",
+      "Jean-Marc Vallée",
+      "Denys Arcand"
+     ],
+     "level": 1,
+     "why": "He also made 'Dune: Part Two'."
+    },
+    {
+     "q": "Which Quebec director made 'Dallas Buyers Club'?",
+     "a": "Jean-Marc Vallée",
+     "wrong": [
+      "Denis Villeneuve",
+      "Xavier Dolan",
+      "Denys Arcand"
+     ],
+     "level": 1,
+     "why": "He also directed 'Big Little Lies'."
+    },
+    {
+     "q": "Which Quebec director made 'Mommy' at age 25?",
+     "a": "Xavier Dolan",
+     "wrong": [
+      "Denis Villeneuve",
+      "Philippe Falardeau",
+      "Jean-Marc Vallée"
+     ],
+     "level": 1,
+     "why": "It won a prize at Cannes."
+    },
+    {
+     "q": "Which Quebec film won the Oscar for Best Foreign Language Film in 2004?",
+     "a": "The Barbarian Invasions",
+     "wrong": [
+      "Incendies",
+      "Monsieur Lazhar",
+      "Jesus of Montreal"
+     ],
+     "level": 1,
+     "why": "Denys Arcand directed it."
+    },
+    {
+     "q": "Which Toronto event is one of the world's biggest film festivals?",
+     "a": "Toronto International Film Festival (TIFF)",
+     "wrong": [
+      "Sundance",
+      "Cannes",
+      "Telluride"
+     ],
+     "level": 1,
+     "why": "It is held each September."
+    },
+    {
+     "q": "Which awards honour Canadian film and TV?",
+     "a": "Canadian Screen Awards",
+     "wrong": [
+      "Juno Awards",
+      "Polaris Prize",
+      "Félix Awards"
+     ],
+     "level": 1,
+     "why": "They replaced the Genies and Geminis in 2013."
+    },
+    {
+     "q": "Which Canadian government body has made thousands of documentaries and animations since 1939?",
+     "a": "National Film Board of Canada",
+     "wrong": [
+      "Telefilm Canada",
+      "CBC",
+      "CRTC"
+     ],
+     "level": 1,
+     "why": "It has won many Oscars."
+    },
+    {
+     "q": "Which Canadian film body funds feature films?",
+     "a": "Telefilm Canada",
+     "wrong": [
+      "National Film Board",
+      "CRTC",
+      "Canada Council"
+     ],
+     "level": 1,
+     "why": "It was founded in 1967."
+    },
+    {
+     "q": "Which NFB animator made 'Neighbours', which won an Oscar in 1953?",
+     "a": "Norman McLaren",
+     "wrong": [
+      "Frédéric Back",
+      "Richard Williams",
+      "Caroline Leaf"
+     ],
+     "level": 2,
+     "why": "He pioneered stop-motion with people."
+    },
+    {
+     "q": "Which Quebec animator made 'The Man Who Planted Trees'?",
+     "a": "Frédéric Back",
+     "wrong": [
+      "Norman McLaren",
+      "Caroline Leaf",
+      "Co Hoedeman"
+     ],
+     "level": 2,
+     "why": "It won an Oscar in 1988."
+    },
+    {
+     "q": "Which NFB animated short about a cat was nominated for an Oscar in 1989?",
+     "a": "The Cat Came Back",
+     "wrong": [
+      "The Sweater",
+      "The Big Snit",
+      "Bob's Birthday"
+     ],
+     "level": 2,
+     "why": "Cordell Barker made it."
+    },
+    {
+     "q": "Which Canadian actor won an Oscar for 'Beginners' in 2012?",
+     "a": "Christopher Plummer",
+     "wrong": [
+      "Donald Sutherland",
+      "Ryan Gosling",
+      "Kiefer Sutherland"
+     ],
+     "level": 2,
+     "why": "He was the oldest acting winner at the time."
+    },
+    {
+     "q": "Which Canadian actor played 'Jack Bauer' in '24'?",
+     "a": "Kiefer Sutherland",
+     "wrong": [
+      "Donald Sutherland",
+      "Ryan Reynolds",
+      "Keanu Reeves"
+     ],
+     "level": 2,
+     "why": "His father was also an actor."
+    },
+    {
+     "q": "Which Canadian actor played President Snow in 'The Hunger Games'?",
+     "a": "Donald Sutherland",
+     "wrong": [
+      "Christopher Plummer",
+      "Kiefer Sutherland",
+      "William Shatner"
+     ],
+     "level": 2,
+     "why": "He was born in Saint John, New Brunswick."
+    },
+    {
+     "q": "Which Canadian actor played Anakin Skywalker?",
+     "a": "Hayden Christensen",
+     "wrong": [
+      "Ryan Gosling",
+      "Michael Cera",
+      "Jay Baruchel"
+     ],
+     "level": 2,
+     "why": "He was raised in Toronto."
+    },
+    {
+     "q": "Which Canadian actor played Scott Pilgrim?",
+     "a": "Michael Cera",
+     "wrong": [
+      "Jay Baruchel",
+      "Seth Rogen",
+      "Hayden Christensen"
+     ],
+     "level": 2,
+     "why": "He is from Brampton, Ontario."
+    },
+    {
+     "q": "Which Toronto-set film based on a graphic novel stars Michael Cera?",
+     "a": "Scott Pilgrim vs. the World",
+     "wrong": [
+      "Superbad",
+      "Juno",
+      "Arrested Development"
+     ],
+     "level": 2,
+     "why": "It came out in 2010."
+    },
+    {
+     "q": "Which Canadian actor voices Hiccup in 'How to Train Your Dragon'?",
+     "a": "Jay Baruchel",
+     "wrong": [
+      "Seth Rogen",
+      "Michael Cera",
+      "Ryan Reynolds"
+     ],
+     "level": 2,
+     "why": "He is from Ottawa."
+    },
+    {
+     "q": "Which Canadian actress starred in 'Lost' as Kate?",
+     "a": "Evangeline Lilly",
+     "wrong": [
+      "Kristin Kreuk",
+      "Rachel McAdams",
+      "Nina Dobrev"
+     ],
+     "level": 2,
+     "why": "She is from Fort Saskatchewan, Alberta."
+    },
+    {
+     "q": "Which Canadian actress played Lana Lang in 'Smallville'?",
+     "a": "Kristin Kreuk",
+     "wrong": [
+      "Evangeline Lilly",
+      "Allison Mack",
+      "Nina Dobrev"
+     ],
+     "level": 2,
+     "why": "She is from Vancouver."
+    },
+    {
+     "q": "Which Canadian actress starred in 'The Vampire Diaries'?",
+     "a": "Nina Dobrev",
+     "wrong": [
+      "Kristin Kreuk",
+      "Rachel McAdams",
+      "Shay Mitchell"
+     ],
+     "level": 2,
+     "why": "She was raised in Toronto."
+    },
+    {
+     "q": "Which Canadian directed 'Away from Her' and 'Women Talking'?",
+     "a": "Sarah Polley",
+     "wrong": [
+      "Patricia Rozema",
+      "Deepa Mehta",
+      "Mary Harron"
+     ],
+     "level": 2,
+     "why": "She won an Oscar for 'Women Talking's screenplay."
+    },
+    {
+     "q": "Which Canadian director made the 'Elements' trilogy, including 'Water'?",
+     "a": "Deepa Mehta",
+     "wrong": [
+      "Sarah Polley",
+      "Mira Nair",
+      "Patricia Rozema"
+     ],
+     "level": 2,
+     "why": "'Water' was nominated for an Oscar."
+    },
+    {
+     "q": "Which Canadian director made 'American Psycho'?",
+     "a": "Mary Harron",
+     "wrong": [
+      "Sarah Polley",
+      "Patricia Rozema",
+      "Deepa Mehta"
+     ],
+     "level": 2,
+     "why": "She is from Bracebridge, Ontario."
+    },
+    {
+     "q": "Which Egyptian-born Canadian directed 'The Sweet Hereafter'?",
+     "a": "Atom Egoyan",
+     "wrong": [
+      "David Cronenberg",
+      "Denys Arcand",
+      "Bruce McDonald"
+     ],
+     "level": 2,
+     "why": "It won the Grand Prix at Cannes."
+    },
+    {
+     "q": "Which Denis Villeneuve film about Lebanon was nominated for an Oscar in 2011?",
+     "a": "Incendies",
+     "wrong": [
+      "Polytechnique",
+      "Prisoners",
+      "Enemy"
+     ],
+     "level": 2,
+     "why": "It is based on a play by Wajdi Mouawad."
+    },
+    {
+     "q": "Which Canadian series stars Paul Gross as a Mountie in Chicago?",
+     "a": "Due South",
+     "wrong": [
+      "Murdoch Mysteries",
+      "Flashpoint",
+      "Republic of Doyle"
+     ],
+     "level": 2,
+     "why": "It aired from 1994."
+    },
+    {
+     "q": "Which Canadian drama on CBC followed a Toronto police tactical unit?",
+     "a": "Flashpoint",
+     "wrong": [
+      "Rookie Blue",
+      "Due South",
+      "Cardinal"
+     ],
+     "level": 2,
+     "why": "It aired from 2008 to 2012."
+    },
+    {
+     "q": "Which Toronto-made series follows a group of 'workin' moms'?",
+     "a": "Workin' Moms",
+     "wrong": [
+      "Kim's Convenience",
+      "Schitt's Creek",
+      "Baroness von Sketch Show"
+     ],
+     "level": 2,
+     "why": "Catherine Reitman created it."
+    },
+    {
+     "q": "Which Canadian news anchor hosted 'The National' for nearly 30 years?",
+     "a": "Peter Mansbridge",
+     "wrong": [
+      "Lloyd Robertson",
+      "Knowlton Nash",
+      "Adrienne Arsenault"
+     ],
+     "level": 2,
+     "why": "He retired in 2017."
+    },
+    {
+     "q": "Which CTV anchor read the news for 35 years?",
+     "a": "Lloyd Robertson",
+     "wrong": [
+      "Peter Mansbridge",
+      "Knowlton Nash",
+      "Lisa LaFlamme"
+     ],
+     "level": 2,
+     "why": "He signed off 'that's the kind of day it's been'."
+    },
+    {
+     "q": "Which Canadian hockey commentator wore loud suits on 'Coach's Corner'?",
+     "a": "Don Cherry",
+     "wrong": [
+      "Ron MacLean",
+      "Bob Cole",
+      "Foster Hewitt"
+     ],
+     "level": 2,
+     "why": "He was fired in 2019."
+    },
+    {
+     "q": "Which Canadian was famous for the radio call 'He shoots, he scores!'?",
+     "a": "Foster Hewitt",
+     "wrong": [
+      "Don Cherry",
+      "Bob Cole",
+      "Danny Gallivan"
+     ],
+     "level": 2,
+     "why": "He called hockey from 1923."
+    },
+    {
+     "q": "Which Vancouver-filmed sci-fi series followed agents Mulder and Scully?",
+     "a": "The X-Files",
+     "wrong": [
+      "Stargate SG-1",
+      "Smallville",
+      "Fringe"
+     ],
+     "level": 2,
+     "why": "Its first five seasons were made in Vancouver."
+    },
+    {
+     "q": "Which Canadian sketch troupe made 'Brain Candy'?",
+     "a": "The Kids in the Hall",
+     "wrong": [
+      "SCTV",
+      "Codco",
+      "Royal Canadian Air Farce"
+     ],
+     "level": 2,
+     "why": "Their show aired from 1988."
+    },
+    {
+     "q": "Which Newfoundland comedy show mocks the news weekly on CBC?",
+     "a": "This Hour Has 22 Minutes",
+     "wrong": [
+      "Air Farce",
+      "Codco",
+      "The Rick Mercer Report"
+     ],
+     "level": 2,
+     "why": "It began in 1993."
+    },
+    {
+     "q": "Which Quebec film by Denys Arcand won the Jury Prize at Cannes in 1989?",
+     "a": "Jesus of Montreal",
+     "wrong": [
+      "The Decline of the American Empire",
+      "Mon oncle Antoine",
+      "Léolo"
+     ],
+     "level": 3,
+     "why": "It updates the Passion play."
+    },
+    {
+     "q": "Which 1971 Quebec film is often called the best Canadian film ever made?",
+     "a": "Mon oncle Antoine",
+     "wrong": [
+      "Les ordres",
+      "Kamouraska",
+      "Goin' Down the Road"
+     ],
+     "level": 3,
+     "why": "Claude Jutra directed it."
+    },
+    {
+     "q": "Which 1970 film follows two Nova Scotians looking for work in Toronto?",
+     "a": "Goin' Down the Road",
+     "wrong": [
+      "Mon oncle Antoine",
+      "Paperback Hero",
+      "The Rowdyman"
+     ],
+     "level": 3,
+     "why": "Don Shebib directed it."
+    },
+    {
+     "q": "Which Inuit film won the Caméra d'Or at Cannes in 2001?",
+     "a": "Atanarjuat: The Fast Runner",
+     "wrong": [
+      "Maliglutit",
+      "Before Tomorrow",
+      "Angry Inuk"
+     ],
+     "level": 3,
+     "why": "Zacharias Kunuk directed it."
+    },
+    {
+     "q": "Which bilingual 2006 comedy was Canada's top-grossing domestic film?",
+     "a": "Bon Cop, Bad Cop",
+     "wrong": [
+      "Porky's",
+      "Meatballs",
+      "Les Boys"
+     ],
+     "level": 3,
+     "why": "It mixes English and French."
+    },
+    {
+     "q": "Which 1981 sex comedy made in Florida was a Canadian box-office record holder for decades?",
+     "a": "Porky's",
+     "wrong": [
+      "Meatballs",
+      "Bon Cop, Bad Cop",
+      "Strange Brew"
+     ],
+     "level": 3,
+     "why": "Bob Clark directed it."
+    },
+    {
+     "q": "Which Canadian director made 'A Christmas Story'?",
+     "a": "Bob Clark",
+     "wrong": [
+      "Ivan Reitman",
+      "David Cronenberg",
+      "Norman Jewison"
+     ],
+     "level": 3,
+     "why": "Parts were filmed in Toronto."
+    },
+    {
+     "q": "Which SCTV beer-drinking brothers starred in 'Strange Brew'?",
+     "a": "Bob and Doug McKenzie",
+     "wrong": [
+      "Wayne and Garth",
+      "Ricky and Julian",
+      "Trevor and Simon"
+     ],
+     "level": 3,
+     "why": "They said 'Take off, eh!'."
+    },
+    {
+     "q": "Which Canadian film by Denis Villeneuve is about the 1989 École Polytechnique massacre?",
+     "a": "Polytechnique",
+     "wrong": [
+      "Incendies",
+      "Maelström",
+      "Enemy"
+     ],
+     "level": 3,
+     "why": "It was shot in black and white."
     }
    ]
   },
