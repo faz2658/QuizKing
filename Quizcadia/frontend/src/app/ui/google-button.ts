@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, ElementRef, inject, input, output, signal, viewChild } from '@angular/core';
+import { Theme } from '../core/theme';
 import { AuthService } from '../core/auth.service';
 
 /** The parts of Google Identity Services (accounts.google.com/gsi/client) this button uses. */
@@ -55,6 +56,7 @@ function loadGoogle(): Promise<GoogleIdentityServices> {
   `,
 })
 export class GoogleButton {
+  private readonly theme = inject(Theme);
   private readonly auth = inject(AuthService);
   private readonly slot = viewChild.required<ElementRef<HTMLElement>>('slot');
   /** "signin" or "signup": only changes the button's wording. */
@@ -84,7 +86,7 @@ export class GoogleButton {
             const el = this.slot().nativeElement;
             g.accounts.id.renderButton(el, {
               type: 'standard',
-              theme: matchMedia('(prefers-color-scheme: light)').matches ? 'outline' : 'filled_black', size: 'large', shape: 'pill',
+              theme: this.theme.current() === 'light' ? 'outline' : 'filled_black', size: 'large', shape: 'pill',
               text: this.context() === 'signup' ? 'signup_with' : 'signin_with',
               width: Math.min(360, Math.max(200, el.parentElement?.clientWidth ?? 320)),
             });

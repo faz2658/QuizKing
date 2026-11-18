@@ -41,7 +41,7 @@ import { flag } from '../core/countries';
             </ol>
           }
         } @else {
-          <p class="muted">Nobody has finished today's challenge yet.{{ guest ? ' Guest runs aren\'t ranked: create a free account to get on the board.' : '' }}</p>
+          <p class="muted">Nobody has finished today's challenge yet.@if (guest) { Guest runs aren't ranked: create a free account to get on the board.}</p>
         }
       </section>
     }
