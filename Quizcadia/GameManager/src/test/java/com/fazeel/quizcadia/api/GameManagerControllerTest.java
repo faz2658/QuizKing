@@ -13,6 +13,7 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import org.junit.jupiter.api.Test;
@@ -120,6 +121,28 @@ class GameManagerControllerTest {
 				.content("{}")).andExpect(status().isForbidden());
 		mvc.perform(delete("/api/game/deletegame/7").with(player(5))).andExpect(status().isForbidden());
 		mvc.perform(delete("/api/game/deletegame/7")).andExpect(status().isUnauthorized());
+	}
+
+	@Test
+	void catalogListsMayBeCachedAndAnswer304WhileUnchanged() throws Exception {
+		when(catalog.version()).thenReturn(System.nanoTime());
+		when(cards.games()).thenReturn(java.util.List.of(card(1, "Film", 1, 300)));
+		when(cards.categories()).thenReturn(java.util.List.of(category(1, "Film", null)));
+
+		var first = mvc.perform(get("/api/game/games"))
+				.andExpect(status().isOk())
+				.andExpect(header().string("Cache-Control", "max-age=0, must-revalidate, public, s-maxage=30"))
+				.andExpect(header().exists("ETag"))
+				.andReturn().getResponse();
+		mvc.perform(get("/api/game/games").header("If-None-Match", first.getHeader("ETag")))
+				.andExpect(status().isNotModified());
+		for (String path : java.util.List.of("/api/game/categories", "/api/game/countries", "/api/game/games/mp")) {
+			mvc.perform(get(path)).andExpect(status().isOk())
+					.andExpect(header().string("Cache-Control", org.hamcrest.Matchers.containsString("public")));
+		}
+		// anything else keeps Spring Security's "never cache"
+		mvc.perform(get("/api/game/games/Film")).andExpect(header().string("Cache-Control",
+				org.hamcrest.Matchers.containsString("no-store")));
 	}
 
 	@Test

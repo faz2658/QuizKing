@@ -24,6 +24,7 @@ import com.fazeel.quizcadia.ai.DraftService.GenerationResult;
 import com.fazeel.quizcadia.bank.InvalidQuestionException;
 import com.fazeel.quizcadia.bank.NotFoundException;
 import com.fazeel.quizcadia.bank.QuestionBankService;
+import com.fazeel.quizcadia.bank.TopicCounts;
 import com.fazeel.quizcadia.domain.Category;
 import com.fazeel.quizcadia.domain.Questions;
 import com.fazeel.quizcadia.domain.Topic;
@@ -88,13 +89,31 @@ public class QuestionBankController {
 		return importer.status();
 	}
 
-	/** Question counts per category and topic. */
+	/** How long the topic counts are kept; also how stale a browser or CDN may show them. */
+	static final java.time.Duration COUNTS_FOR = java.time.Duration.ofSeconds(10);
+
+	private record Counts(List<TopicCounts.TopicCount> items, long at) {
+	}
+
+	private volatile Counts counts;
+
+	/**
+	 * Question counts per category and topic. Public (the welcome page shows them to every visitor), so they are
+	 * counted at most every few seconds and may be cached briefly by browsers and a CDN. The admin page's import
+	 * progress still moves along, a few seconds behind.
+	 */
 	@GetMapping("/stats")
-	public List<java.util.Map<String, Object>> stats() {
-		return bank.categories().stream().flatMap(c -> (c.getTopic() == null ? List.<Topic>of() : c.getTopic()).stream()
-				.map(t -> java.util.Map.<String, Object>of("category", c.getCategoryName(), "topic", t.getTopicName(),
-						"questions", t.getQuestions() == null ? 0 : t.getQuestions().size())))
-				.toList();
+	public org.springframework.http.ResponseEntity<List<TopicCounts.TopicCount>> stats() {
+		long now = System.currentTimeMillis();
+		Counts c = counts;
+		if (c == null || now - c.at() >= COUNTS_FOR.toMillis()) {
+			c = new Counts(List.copyOf(bank.topicCounts()), now);
+			counts = c;
+		}
+		return org.springframework.http.ResponseEntity.ok()
+				.cacheControl(org.springframework.http.CacheControl.maxAge(COUNTS_FOR).cachePublic()
+						.staleWhileRevalidate(java.time.Duration.ofMinutes(1)))
+				.body(c.items());
 	}
 
 	@GetMapping("/category")

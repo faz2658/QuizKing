@@ -64,9 +64,12 @@ public class AuthController {
 	public record ProvidersView(String googleClientId, String analyticsId, boolean passwordReset) {
 	}
 
+	/** The same for everyone and only changes with a deploy, so browsers and a CDN may keep it for 5 minutes. */
 	@GetMapping("/providers")
-	public ProvidersView providers() {
-		return new ProvidersView(google.enabled() ? google.clientId() : null, analyticsId, mailConfigured);
+	public org.springframework.http.ResponseEntity<ProvidersView> providers() {
+		return org.springframework.http.ResponseEntity.ok()
+				.cacheControl(org.springframework.http.CacheControl.maxAge(java.time.Duration.ofMinutes(5)).cachePublic())
+				.body(new ProvidersView(google.enabled() ? google.clientId() : null, analyticsId, mailConfigured));
 	}
 
 	public record GoogleRequest(@NotBlank @Size(max = 4096) String credential, @Size(max = 16) String invite) {

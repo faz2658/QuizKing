@@ -65,6 +65,11 @@ public class QuestionBankService {
 		return categories.findAll();
 	}
 
+	/** Question counts per topic, without loading the questions. */
+	public List<TopicCounts.TopicCount> topicCounts() {
+		return TopicCounts.read(mongo);
+	}
+
 	public Category category(int categoryId) {
 		return categories.findById(categoryId).orElseThrow(() -> new NotFoundException("No category " + categoryId));
 	}

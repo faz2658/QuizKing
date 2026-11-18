@@ -1,8 +1,11 @@
 package com.fazeel.quizcadia.api;
 
+import java.time.Duration;
 import java.util.List;
 
+import org.springframework.http.CacheControl;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -74,15 +77,30 @@ public class GameManagerController {
 
 	// categories / question bank
 
+	/**
+	 * The catalog lists are the same for every visitor, so they may be cached: browsers check back each time (and
+	 * get a cheap "304 not modified" from {@link CatalogEtags} while nothing changed), a CDN keeps them for 30 s.
+	 */
+	static final CacheControl SHARED_LIST = CacheControl.maxAge(Duration.ZERO).mustRevalidate().cachePublic()
+			.sMaxAge(Duration.ofSeconds(30));
+
+	private static <T> ResponseEntity<List<T>> cacheable(List<T> items) {
+		return ResponseEntity.ok().cacheControl(SHARED_LIST).body(items);
+	}
+
 	@GetMapping("/categories")
-	public List<CategorySummary> categories() {
+	public ResponseEntity<List<CategorySummary>> categories() {
+		return cacheable(categoryList());
+	}
+
+	private List<CategorySummary> categoryList() {
 		return shared("categories", () -> cards.categories().stream().map(CategorySummary::of).toList());
 	}
 
 	/** Category id to country code, for categories that are a country's own question set. */
 	private Map<Integer, String> countryOfCategory() {
 		Map<Integer, String> m = new HashMap<>();
-		for (CategorySummary c : categories()) {
+		for (CategorySummary c : categoryList()) {
 			if (c.countryCode() != null) {
 				m.put(c.categoryId(), c.countryCode());
 			}
@@ -95,20 +113,20 @@ public class GameManagerController {
 	 * International page lists.
 	 */
 	@GetMapping("/countries")
-	public List<CountrySummary> countries() {
-		return shared("countries", () -> {
+	public ResponseEntity<List<CountrySummary>> countries() {
+		return cacheable(shared("countries", () -> {
 			Map<String, Integer> games = new HashMap<>();
 			for (GameSummary g : allGames()) {
 				if (g.country() != null) {
 					games.merge(g.country(), 1, Integer::sum);
 				}
 			}
-			return categories().stream().filter(c -> c.countryCode() != null)
+			return categoryList().stream().filter(c -> c.countryCode() != null)
 					.map(c -> new CountrySummary(c.countryCode(), c.categoryId(), c.categoryName(),
 							games.getOrDefault(c.countryCode(), 0),
 							c.topic().stream().mapToInt(TopicSummary::questionCount).sum()))
 					.sorted(java.util.Comparator.comparing(CountrySummary::country)).toList();
-		});
+		}));
 	}
 
 	/**
@@ -152,8 +170,8 @@ public class GameManagerController {
 	}
 
 	@GetMapping("/games")
-	public List<GameSummary> games(@RequestParam(required = false) String country) {
-		return forCountry(allGames(), country);
+	public ResponseEntity<List<GameSummary>> games(@RequestParam(required = false) String country) {
+		return cacheable(forCountry(allGames(), country));
 	}
 
 	@GetMapping("/category/{categoryId}/{topicName}")
@@ -192,8 +210,8 @@ public class GameManagerController {
 	}
 
 	@GetMapping("/games/mp")
-	public List<GameSummary> multiPlayerGames(@RequestParam(required = false) String country) {
-		return forCountry(allMultiPlayerGames(), country);
+	public ResponseEntity<List<GameSummary>> multiPlayerGames(@RequestParam(required = false) String country) {
+		return cacheable(forCountry(allMultiPlayerGames(), country));
 	}
 
 	@GetMapping("/mp/category/{categoryId}/{topicName}")
