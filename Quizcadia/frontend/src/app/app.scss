@@ -7,7 +7,10 @@
   background: color-mix(in srgb, var(--bg) 62%, transparent);
   border-bottom: 1px solid var(--border);
 }
-.inner { display: flex; align-items: center; gap: 18px; min-height: 66px; }
+.inner { display: flex; align-items: center; gap: 12px; min-height: 66px; }
+// Nothing in the bar may shrink or wrap its label: squeezed, "My stats", "1 online" and "Log out" broke onto two lines.
+.inner > * { flex-shrink: 0; white-space: nowrap; }
+.inner > .spacer { flex-shrink: 1; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 850; font-size: 1.15rem; letter-spacing: -0.02em; color: var(--text); text-decoration: none; }
 .logo {
   width: 34px; height: 34px; display: grid; place-items: center; border-radius: 11px; color: #fff;
@@ -34,11 +37,17 @@ main { padding: 36px 0 56px; min-height: 100vh; min-height: 100svh; }
 .foot { padding: 28px 0; font-size: 0.85rem; border-top: 1px solid var(--border); }
 .foot a { color: var(--text-muted); }
 
+// Too narrow for everything on one row: drop the name and install label first, then give the nav its own row.
+@media (max-width: 1280px) {
+  .name, .install-label { display: none; }
+}
+@media (max-width: 1100px) {
+  .inner { flex-wrap: wrap; padding: 10px 0; }
+  nav { order: 3; width: 100%; justify-content: center; flex-wrap: wrap; }
+}
 @media (max-width: 680px) {
-  .inner { gap: 10px; flex-wrap: wrap; padding: 10px 0; }
-  .name { display: none; }
+  .inner { gap: 10px; }
   .install { padding-inline: 10px; }
-  nav { order: 3; width: 100%; justify-content: center; }
 }
 
 .online { display: inline-flex; align-items: center; gap: 6px; font-weight: 800; font-size: 0.85rem; color: var(--good); text-decoration: none; margin-right: 6px; }
@@ -56,4 +65,3 @@ main { padding: 36px 0 56px; min-height: 100vh; min-height: 100svh; }
 .install-sheet .btn { width: 100%; margin-top: 4px; }
 .share-ico { display: inline-grid; place-items: center; width: 22px; height: 22px; border-radius: 6px; border: 1px solid var(--border-strong); font-size: 0.8rem; }
 @media (min-width: 681px) { .install-sheet { bottom: auto; top: 50%; transform: translate(-50%, -50%); } }
-@media (max-width: 360px) { .install-label { display: none; } }

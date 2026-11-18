@@ -40,7 +40,7 @@ import { Theme, ThemeName } from '../core/theme';
     .night button[aria-checked='true'] { color: #fff; }
     button:focus-visible { outline: 2px solid var(--lavender); outline-offset: 2px; }
     .ico { font-size: 0.95rem; line-height: 1; }
-    @media (max-width: 680px) { .label { display: none; } button { padding: 5px 9px; } }
+    @media (max-width: 1280px) { .label { display: none; } button { padding: 5px 9px; } }
   `,
 })
 export class ThemeSwitch {
