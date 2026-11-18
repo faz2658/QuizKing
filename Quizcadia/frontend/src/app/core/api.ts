@@ -13,6 +13,7 @@ import {
   ArenaView,
   Category,
   ChallengeView,
+  DuelView,
   CountryBoard,
   CustomDifficulty,
   DailyBoard,
@@ -263,6 +264,33 @@ export class QuizApi {
 
   acceptChallenge(id: string): Observable<SessionView> {
     return this.http.post<SessionView>(`/api/v1/challenges/${id}/sessions`, null);
+  }
+
+  /** Challenges a friend to a game (or its International version); the friend opens the link to accept. */
+  createDuel(gameId: number, international: boolean): Observable<DuelView> {
+    return this.http.post<DuelView>('/api/v1/challenges/duels', { gameId, international, ...this.country() }).pipe(retryWhileLoading());
+  }
+
+  /** Your challenges, sent and received, newest first. */
+  duels(): Observable<DuelView[]> {
+    return this.http.get<DuelView[]>('/api/v1/challenges/duels');
+  }
+
+  duel(id: string): Observable<DuelView> {
+    return this.http.get<DuelView>(`/api/v1/challenges/duels/${id}`);
+  }
+
+  acceptDuel(id: string): Observable<DuelView> {
+    return this.http.post<DuelView>(`/api/v1/challenges/duels/${id}/accept`, this.country()).pipe(retryWhileLoading());
+  }
+
+  declineDuel(id: string): Observable<DuelView> {
+    return this.http.post<DuelView>(`/api/v1/challenges/duels/${id}/decline`, null);
+  }
+
+  /** Starts (or resumes) your game in a challenge. */
+  playDuel(id: string): Observable<SessionView> {
+    return this.http.post<SessionView>(`/api/v1/challenges/duels/${id}/sessions`, null);
   }
 }
 

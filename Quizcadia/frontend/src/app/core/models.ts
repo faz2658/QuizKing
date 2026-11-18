@@ -267,7 +267,7 @@ export interface Category {
   topic: { topicId: number; topicName: string; questionCount: number }[] | null;
 }
 
-export type SessionVariant = 'STANDARD' | 'DAILY' | 'CUSTOM' | 'CHALLENGE';
+export type SessionVariant = 'STANDARD' | 'DAILY' | 'CUSTOM' | 'CHALLENGE' | 'DUEL';
 
 export interface DailyView {
   date: string;
@@ -402,6 +402,37 @@ export interface ChallengeView {
   yourStatus: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED' | 'OWN';
   yourSessionId: string | null;
   yourScore: number | null;
+}
+
+/** One player of a challenge between two friends; the friend's score shows once you've finished. */
+export interface DuelPlayer {
+  name: string | null;
+  status: 'NOT_STARTED' | 'IN_PROGRESS' | 'COMPLETED' | 'DECLINED';
+  score: number | null;
+  maxScore: number | null;
+  correctAnswers: number | null;
+  /** Only for your own game. */
+  sessionId: string | null;
+}
+
+export type DuelState = 'WAITING' | 'DECLINED' | 'EXPIRED' | 'PLAYING' | 'FINISHED';
+
+/** A challenge between two friends, from your side. */
+export interface DuelView {
+  id: string;
+  gameName: string;
+  gameId: number;
+  international: boolean;
+  /** 0 until the friend accepts (that's when the questions are picked). */
+  totalQuestions: number;
+  state: DuelState;
+  role: 'CHALLENGER' | 'OPPONENT' | 'INVITED' | 'OUTSIDER';
+  challengerName: string;
+  you: DuelPlayer | null;
+  friend: DuelPlayer | null;
+  outcome: 'WON' | 'LOST' | 'TIE' | null;
+  /** When it closes, while it is still open. */
+  expiresAt: string | null;
 }
 
 export type FlagReason = 'WRONG_ANSWER' | 'UNCLEAR' | 'TYPO' | 'OFFENSIVE' | 'OTHER';

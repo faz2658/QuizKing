@@ -95,9 +95,11 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
 })
 export class Play implements OnInit {
   readonly gameId = input<string>('0');
-  /** 'daily' for today's challenge, 'challenge' for a friend's challenge (set by the route). */
+  /** 'daily' for today's challenge, 'challenge' for a friend's score to beat, 'duel' for a friend challenge (set by the route). */
   readonly mode = input<string>('');
   readonly challengeId = input<string>('');
+  /** A challenge between two friends (mode 'duel'). */
+  readonly duelId = input<string>('');
   /** Custom quiz settings from the query string. */
   readonly games = input<string>('');
   readonly difficulty = input<string>('MIXED');
@@ -136,7 +138,9 @@ export class Play implements OnInit {
     effect(() => {
       if (this.runner?.phase() === 'done') {
         const id = this.runner.session()?.sessionId;
-        if (id) {
+        if (id && this.mode() === 'duel') {
+          this.router.navigate(['/vs', this.duelId()]);
+        } else if (id) {
           this.router.navigate(['/result', id]);
         }
       }
@@ -147,6 +151,7 @@ export class Play implements OnInit {
     const start =
       this.mode() === 'daily' ? () => this.api.startDaily()
       : this.mode() === 'challenge' ? () => this.api.acceptChallenge(this.challengeId())
+      : this.mode() === 'duel' ? () => this.api.playDuel(this.duelId())
       : this.mode() === 'custom'
         ? () => this.api.startCustom(this.games().split(',').map(Number).filter((n) => n > 0), this.difficulty() as CustomDifficulty, Number(this.count()))
       : this.intl() === '1' ? () => this.api.start(Number(this.gameId()), this.auth.user()!.userId, true)

@@ -7,6 +7,7 @@ QuizCadia is a quiz platform made of Spring Boot microservices, Kafka, and an An
 | **Timed** | Questions run from easy to advanced, each with its own time limit and points. The server does the scoring. |
 | **Adaptive** | You start on easy questions. Score at least 60% on a block of 4 and you move up a level; score under 30% and you move down. |
 | **Multiplayer** | 2–4 players get the same question; the first correct answer wins the points and a wrong answer costs 5. |
+| **Challenge a friend** | Send a friend a link; you both play the same questions in your own time, and the higher score wins. |
 
 ## Quick start (everything in Docker)
 
@@ -39,6 +40,27 @@ Questions come from three places:
   (CC BY-SA 4.0)
 - **Wikidata** templates (`POST .../category/{id}/{topic}/auto-questions?template=capitals|currencies|us-presidents`)
 - **Your own questions** (`POST .../category/{id}/{topic}/questions`)
+
+### Challenge a friend
+
+A signed-in player picks a solo game (or its International version) and gets a link to send: there is no
+friends list, so the link is how a friend is reached. It lives in the game engine (`game`, package `challenge`,
+collection `friend_duels`, `/api/v1/challenges/duels`) next to the older "beat my score" links, and both sides
+play it as ordinary timed sessions.
+
+- **Accept or decline.** The first other player to open the link accepts or declines it. It expires if nobody
+  answers within 3 days. You can't take your own challenge, and once one friend has it nobody else can.
+- **Asynchronous.** The questions are drawn once, when the friend accepts, because that is when both players'
+  countries are known. Then each player plays them whenever they like within 7 days: the same questions, in the
+  same order, with the same options. Questions neither of them has seen come first.
+- **Which questions.** The same rule as multiplayer: if both players are from the same country, about 75% of the
+  questions come from that country and the rest are general. If their countries differ (or one is unknown), only
+  general questions are used. International uses questions from every country. The country is sent when the
+  player creates or accepts a challenge and is never shown to anyone.
+- **Result.** When both have played, the higher score wins (equal scores are a tie). You don't see your friend's
+  score until you have played. If only one player plays in time, they win.
+- **Where it shows.** "Challenge a friend" on the home page's friends row and on every solo game card, the
+  challenge page `/vs/{id}`, and a **Challenges** list on the home page once you have one.
 
 ## Development
 

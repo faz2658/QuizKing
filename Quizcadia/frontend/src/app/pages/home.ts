@@ -13,12 +13,13 @@ import { BlurText } from '../motion/blur-text';
 import { DailyBanner } from '../ui/daily-banner';
 import { ProgressStrip } from '../ui/progress-strip';
 import { FriendsStrip } from '../ui/friends-strip';
+import { DuelList } from '../ui/duel-list';
 
 type Filter = 'ALL' | 'SINGLE' | 'MULTI';
 
 @Component({
   selector: 'mv-home',
-  imports: [FormsModule, RouterLink, GameCardView, BlurText, DailyBanner, ProgressStrip, FriendsStrip],
+  imports: [FormsModule, RouterLink, GameCardView, BlurText, DailyBanner, ProgressStrip, FriendsStrip, DuelList],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="head">
@@ -42,6 +43,7 @@ type Filter = 'ALL' | 'SINGLE' | 'MULTI';
       <span><strong>Puzzle of the Day</strong><span class="muted"> · Clue Trail, Letter Vault, Four by Four and a Brain Teaser</span></span>
       <span class="pz-go">Play →</span>
     </a>
+    <mv-duel-list />
     <mv-friends-strip />
 
     @if (state().loading) {

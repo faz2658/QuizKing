@@ -36,11 +36,13 @@ const REASONS: Record<string, string> = {
         <div class="actions">
           @if (international()) {
             <a class="btn btn-primary" [routerLink]="['/play', game().gameId]" [queryParams]="{ intl: 1 }">Play</a>
+            <a class="btn" routerLink="/vs/new" [queryParams]="{ game: game().gameId, intl: 1 }" title="Challenge a friend to this game">⚔️ Challenge</a>
           } @else if (game().mode === 'MULTI') {
             <a class="btn btn-primary" [routerLink]="['/multiplayer', game().gameId]">Find opponents</a>
           } @else {
             <a class="btn btn-primary" [routerLink]="['/play', game().gameId]">Play</a>
             <a class="btn" [routerLink]="['/adaptive', game().gameId]" title="Difficulty follows how well you do">Adaptive</a>
+            <a class="btn" routerLink="/vs/new" [queryParams]="{ game: game().gameId }" title="Challenge a friend to this game" aria-label="Challenge a friend to this game">⚔️</a>
           }
         </div>
       </div>
