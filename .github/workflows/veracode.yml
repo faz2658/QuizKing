@@ -1,0 +1,233 @@
+name: Veracode
+
+# Veracode security scanning. Report-only: nothing here blocks a merge or a deploy (deploy.yml only waits for CI).
+#
+# What is scanned
+#   - Backend: the 13 Spring Boot services plus the quizcadia-security library, built with ./mvnw from Quizcadia/.
+#     Veracode wants compiled code with debug info (Maven's default), so we upload each service's own classes
+#     (the "app.jar.original" Spring Boot leaves behind = the jar before the libraries were bundled in). That keeps
+#     the upload small enough for the pipeline scan's 200 MB limit; third-party libraries are covered by SCA instead.
+#   - Frontend: the Angular source in Quizcadia/frontend (TypeScript/HTML plus package.json and package-lock.json),
+#     zipped without node_modules, build output or *.spec.ts tests, as Veracode's JavaScript packaging guide asks.
+#
+# Jobs
+#   1. "Package"          builds and zips both, kept as the workflow artifact "veracode-package".
+#   2. "Pipeline scan"    (pull requests to master, and by hand) fast static scan of each zip. Findings are printed in
+#                         the job log and summary and saved as the artifact "veracode-pipeline-results" (results.json).
+#                         Nothing is stored in the Veracode platform.
+#   3. "Policy scan"      (weekly, and by hand) full static scan uploaded to the Veracode platform under the
+#                         application profile "QuizCadia"; read the results at https://analysis.veracode.com
+#                         (Applications > QuizCadia). It is created on the first run.
+#   4. "SCA"              (weekly, and by hand; only if SRCCLR_API_TOKEN is set) Veracode SCA agent scan of the Maven
+#                         and npm dependencies; results go to the Veracode platform's SCA workspace.
+#
+# Repository secrets (Settings > Secrets and variables > Actions > New repository secret):
+#   VERACODE_API_ID      Veracode API ID   } from the Veracode platform: your name (top right) > API Credentials
+#   VERACODE_API_KEY     Veracode API key  } > Generate API Credentials
+#   SRCCLR_API_TOKEN     optional, Veracode SCA agent token (Veracode platform: Workspaces > your workspace > Agents)
+# Without the Veracode secrets the scan jobs are skipped with a note, so forks and unconfigured repositories stay green.
+on:
+  pull_request:
+    branches: [master]
+  schedule:
+    - cron: '17 4 * * 1' # Mondays 04:17 UTC
+  workflow_dispatch:
+    inputs:
+      scan:
+        description: Which scan to run
+        type: choice
+        options: [pipeline, policy, both]
+        default: pipeline
+
+concurrency:
+  group: veracode-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  APP_PROFILE: QuizCadia
+
+jobs:
+  package:
+    name: Package
+    runs-on: ubuntu-latest
+    outputs:
+      configured: ${{ steps.secrets.outputs.configured }}
+      sca: ${{ steps.secrets.outputs.sca }}
+    steps:
+      - name: Are the Veracode secrets set?
+        id: secrets
+        env:
+          VID: ${{ secrets.VERACODE_API_ID }}
+          VKEY: ${{ secrets.VERACODE_API_KEY }}
+          SRCCLR: ${{ secrets.SRCCLR_API_TOKEN }}
+        run: |
+          if [ -n "$VID" ] && [ -n "$VKEY" ]; then echo configured=true >> "$GITHUB_OUTPUT"
+          else echo "::notice::VERACODE_API_ID / VERACODE_API_KEY are not set, so the Veracode scans are skipped."; fi
+          [ -n "$SRCCLR" ] && echo sca=true >> "$GITHUB_OUTPUT" || true
+
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+
+      - name: Build the backend jars
+        working-directory: Quizcadia
+        run: ./mvnw -B -DskipTests package
+
+      - name: Collect the backend jars
+        working-directory: Quizcadia
+        run: |
+          mkdir -p ../veracode/backend
+          for target in */target; do
+            module=${target%/target}
+            # Spring Boot services: the thin jar (own classes only); plain libraries: the jar itself
+            jar=$(ls "$target"/*.jar.original 2>/dev/null | head -1)
+            [ -n "$jar" ] || jar=$(ls "$target"/*.jar 2>/dev/null | grep -v -e '-sources.jar$' -e '-javadoc.jar$' | head -1)
+            [ -n "$jar" ] && cp "$jar" "../veracode/backend/$module.jar"
+          done
+          ls -l ../veracode/backend
+          (cd ../veracode/backend && zip -qr ../quizcadia-backend.zip .)
+
+      - name: Package the frontend source
+        working-directory: Quizcadia/frontend
+        run: |
+          zip -qr ../../veracode/quizcadia-frontend.zip \
+            package.json package-lock.json angular.json tsconfig*.json src public \
+            -x '*.spec.ts'
+          ls -l ../../veracode/*.zip
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: veracode-package
+          path: veracode/*.zip
+          retention-days: 7
+
+  pipeline-scan:
+    name: Pipeline scan (${{ matrix.part }})
+    needs: package
+    if: >-
+      needs.package.outputs.configured == 'true' &&
+      (github.event_name == 'pull_request' ||
+       (github.event_name == 'workflow_dispatch' && inputs.scan != 'policy'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        part: [backend, frontend]
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: veracode-package
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Download the Veracode pipeline scanner
+        run: |
+          curl -fsSL -o pipeline-scan.zip https://downloads.veracode.com/securityscan/pipeline-scan-LATEST.zip
+          unzip -oq pipeline-scan.zip pipeline-scan.jar
+
+      - name: Scan
+        id: scan
+        # Report-only: the scanner's exit code is the number of findings, so a non-zero exit doesn't fail the job.
+        continue-on-error: true
+        env:
+          VID: ${{ secrets.VERACODE_API_ID }}
+          VKEY: ${{ secrets.VERACODE_API_KEY }}
+        run: |
+          java -jar pipeline-scan.jar \
+            --veracode_api_id "$VID" --veracode_api_key "$VKEY" \
+            --file "quizcadia-${{ matrix.part }}.zip" \
+            --project_name "$APP_PROFILE" --project_ref "${{ github.ref_name }}" \
+            --fail_on_severity "Very High, High" \
+            --json_output_file results.json --summary_output true --summary_output_file results.txt
+
+      - name: Summary
+        if: always()
+        run: |
+          {
+            echo "## Veracode pipeline scan: ${{ matrix.part }}"
+            if [ -f results.json ]; then
+              echo
+              echo "| Severity | Findings |"
+              echo "|---|---|"
+              jq -r '[.findings[]?.severity] | group_by(.) | map({s: .[0], n: length}) | sort_by(-.s) | .[] |
+                     "| \(["Informational","Very Low","Low","Medium","High","Very High"][.s]) | \(.n) |"' results.json
+              echo
+              echo "Total: $(jq '.findings | length' results.json). Details: the job log, or the artifact"
+              echo "**veracode-pipeline-${{ matrix.part }}** (results.json / results.txt)."
+            else
+              echo "No results file. The scan did not finish; see the Scan step's log."
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: veracode-pipeline-${{ matrix.part }}
+          path: results.*
+          if-no-files-found: ignore
+          retention-days: 30
+
+  policy-scan:
+    name: Policy scan (Veracode platform)
+    needs: package
+    if: >-
+      needs.package.outputs.configured == 'true' &&
+      (github.event_name == 'schedule' ||
+       (github.event_name == 'workflow_dispatch' && inputs.scan != 'pipeline'))
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: veracode-package
+          path: upload
+      - name: Upload and scan
+        uses: veracode/veracode-uploadandscan-action@0.2.6
+        continue-on-error: true # report-only, see the top of this file
+        with:
+          appname: ${{ env.APP_PROFILE }}
+          createprofile: true
+          filepath: upload
+          version: ${{ github.run_number }}-${{ github.sha }}
+          vid: ${{ secrets.VERACODE_API_ID }}
+          vkey: ${{ secrets.VERACODE_API_KEY }}
+          deleteincompletescan: 2 # replace a scan still stuck from an earlier run instead of failing
+          scantimeout: 90         # wait for the results so the job shows whether the scan completed
+
+  sca:
+    name: SCA (dependencies)
+    needs: package
+    if: >-
+      needs.package.outputs.sca == 'true' &&
+      (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        project: [Quizcadia, Quizcadia/frontend]
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+      - name: Veracode SCA agent scan
+        continue-on-error: true # report-only
+        working-directory: ${{ matrix.project }}
+        env:
+          SRCCLR_API_TOKEN: ${{ secrets.SRCCLR_API_TOKEN }}
+        run: curl -sSL https://download.sourceclear.com/ci.sh | sh -s -- scan --update-advisor

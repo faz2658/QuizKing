@@ -130,6 +130,19 @@ all (guests: 1 day; `QUIZCADIA_SESSION_IDLE`, `_ABSOLUTE`, `_GUEST`). `POST /api
 `/logout/all` ends every sign-in of the account, and so does a password reset. Other services only check the
 access token, so an ended sign-in can still reach them until its access token runs out.
 
+### Veracode scanning
+
+`.github/workflows/veracode.yml` runs Veracode static analysis. It only reports and never blocks a merge or a
+deploy. It scans each service's own compiled classes (built with `./mvnw`) and the Angular source in `frontend/`.
+
+- **Pull requests to master:** a pipeline scan. Findings appear in the run's summary and log, and `results.json` is
+  kept as the artifact `veracode-pipeline-backend` / `-frontend`.
+- **Every Monday, or Actions > Veracode > Run workflow:** a policy scan uploaded to the Veracode platform
+  (application profile `QuizCadia`, at https://analysis.veracode.com). It also runs an SCA scan of the Maven and npm
+  dependencies when `SRCCLR_API_TOKEN` is set.
+- **Secrets** (Settings > Secrets and variables > Actions): `VERACODE_API_ID` and `VERACODE_API_KEY`, plus the
+  optional `SRCCLR_API_TOKEN`. Without them the scans are skipped.
+
 
 All settings have local defaults and can be overridden with environment variables: `MONGODB_URI`,
 `KAFKA_BOOTSTRAP_SERVERS` (default `localhost:19092`), `EUREKA_URL`, `CONFIG_SERVER_URL`, `GAME_MANAGER_URL`,
