@@ -4,6 +4,7 @@ import { TestBed } from '@angular/core/testing';
 import { provideRouter, Router } from '@angular/router';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 import { AuthService } from '../core/auth.service';
+import { MESSAGES } from '../core/validation';
 import { ForgotPassword, ResetPassword } from './password';
 
 describe('Forgot / reset password', () => {
@@ -74,5 +75,52 @@ describe('Forgot / reset password', () => {
     const el = f.nativeElement as HTMLElement;
     expect(el.textContent).toContain("Password reset by email isn't available yet");
     expect(el.querySelector('form')).toBeNull();
+  });
+
+  it('forgot: keeps submit off and says why until the email has the shape of one', async () => {
+    const f = TestBed.createComponent(ForgotPassword);
+    http.expectOne('/api/v1/auth/providers').flush({ googleClientId: null, passwordReset: true });
+    await f.whenStable();
+    const el = f.nativeElement as HTMLElement;
+    const input = el.querySelector('input[name=email]') as HTMLInputElement;
+    const button = el.querySelector('button[type=submit]') as HTMLButtonElement;
+    expect(button.disabled).toBe(true);
+    input.value = 'ada';
+    input.dispatchEvent(new Event('input'));
+    input.dispatchEvent(new Event('blur'));
+    await f.whenStable();
+    expect(el.querySelector('.field-error')?.textContent).toContain(MESSAGES.emailInvalid);
+    (el.querySelector('form') as HTMLFormElement).dispatchEvent(new Event('submit'));
+    http.expectNone('/api/v1/auth/password/forgot');
+    input.value = 'ada@localhost'; // older accounts may have such an address: it still gets a link
+    input.dispatchEvent(new Event('input'));
+    await f.whenStable();
+    expect(el.querySelector('.field-error')).toBeNull();
+    expect(button.disabled).toBe(false);
+  });
+
+  it('reset: explains the 8 to 72 rule inline and re-checks the confirm box when the first one changes', async () => {
+    const f = TestBed.createComponent(ResetPassword);
+    f.componentRef.setInput('token', 'tok-123');
+    await f.whenStable();
+    const el = f.nativeElement as HTMLElement;
+    const type = (name: string, v: string) => {
+      const i = el.querySelector(`input[name=${name}]`) as HTMLInputElement;
+      i.value = v;
+      i.dispatchEvent(new Event('input'));
+      i.dispatchEvent(new Event('blur'));
+    };
+    const errors = () => [...el.querySelectorAll('.field-error')].map((e) => e.textContent?.trim());
+    type('password', 'short');
+    await f.whenStable();
+    expect(errors()).toEqual([MESSAGES.passwordSize]);
+    type('password', 'long enough');
+    type('confirm', 'long enough');
+    await f.whenStable();
+    expect(errors()).toEqual([]);
+    expect((el.querySelector('button[type=submit]') as HTMLButtonElement).disabled).toBe(false);
+    type('password', 'long enough!');
+    await f.whenStable();
+    expect(errors()).toEqual([MESSAGES.mismatch]);
   });
 });

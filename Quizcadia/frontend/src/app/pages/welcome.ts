@@ -1,12 +1,13 @@
 import { ChangeDetectionStrategy, Component, computed, inject, input, OnInit, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
-import { FormsModule } from '@angular/forms';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { catchError, of } from 'rxjs';
 import { QuestionBankApi } from '../core/api';
 import { AuthService, pendingInvite } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { TopicStats } from '../core/models';
+import { emailValidator, fieldError, nameValidator, NAME_MAX, PASSWORD_MAX, passwordValidator } from '../core/validation';
 import { BlurText } from '../motion/blur-text';
 import { CountUp } from '../motion/count-up';
 import { Tilt } from '../motion/tilt';
@@ -16,7 +17,7 @@ type Tab = 'login' | 'register' | 'guest';
 
 @Component({
   selector: 'mv-welcome',
-  imports: [FormsModule, RouterLink, BlurText, CountUp, Tilt, GoogleButton],
+  imports: [ReactiveFormsModule, RouterLink, BlurText, CountUp, Tilt, GoogleButton],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <section class="hero">
@@ -48,24 +49,31 @@ type Tab = 'login' | 'register' | 'guest';
       <div class="card panel fade-up" style="animation-delay: 800ms">
         <div class="pill-tabs tabs" role="tablist" aria-label="Sign in options">
           @for (t of tabs; track t.id) {
-            <button type="button" role="tab" [attr.aria-selected]="tab() === t.id" (click)="tab.set(t.id); error.set(null)">{{ t.label }}</button>
+            <button type="button" role="tab" [attr.aria-selected]="tab() === t.id" (click)="select(t.id)">{{ t.label }}</button>
           }
         </div>
 
-        <form class="stack" (ngSubmit)="submit()">
+        <form class="stack" [formGroup]="form" (ngSubmit)="submit()" novalidate>
           @if (tab() !== 'login') {
             <label class="field">Name
-              <input class="input" name="userName" [(ngModel)]="userName" required maxlength="60" autocomplete="nickname" />
+              <input class="input" name="userName" formControlName="userName" [attr.maxlength]="nameMax" autocomplete="nickname"
+                [attr.aria-invalid]="!!err('userName')" aria-describedby="userName-error" />
+              @if (err('userName'); as m) { <span class="field-error" id="userName-error" role="alert">{{ m }}</span> }
             </label>
           }
           @if (tab() !== 'guest') {
             <label class="field">Email
-              <input class="input" name="email" type="email" [(ngModel)]="email" required autocomplete="email" />
+              <input class="input" name="email" type="email" formControlName="email" autocomplete="email"
+                [attr.aria-invalid]="!!err('email')" aria-describedby="email-error" />
+              @if (err('email'); as m) { <span class="field-error" id="email-error" role="alert">{{ m }}</span> }
             </label>
             <label class="field">Password
-              <input class="input" name="password" type="password" [(ngModel)]="password" required minlength="8"
-                [attr.autocomplete]="tab() === 'register' ? 'new-password' : 'current-password'" />
-              @if (tab() === 'register') { <span class="muted hint">At least 8 characters</span> }
+              <input class="input" name="password" type="password" formControlName="password" [attr.maxlength]="passwordMax"
+                [attr.autocomplete]="tab() === 'register' ? 'new-password' : 'current-password'"
+                [attr.aria-invalid]="!!err('password')" aria-describedby="password-error" />
+              @if (err('password'); as m) {
+                <span class="field-error" id="password-error" role="alert">{{ m }}</span>
+              } @else if (tab() === 'register') { <span class="muted hint">8 to 72 characters</span> }
             </label>
             @if (tab() === 'login' && canReset()) { <a class="forgot" routerLink="/forgot-password">Forgot password?</a> }
           } @else {
@@ -73,7 +81,7 @@ type Tab = 'login' | 'register' | 'guest';
           }
           @if (invited() && tab() === 'register') { <p class="invite-note">🛡️ A friend invited you: sign up and you both get a streak shield.</p> }
           @if (error()) { <div class="alert" role="alert">{{ error() }}</div> }
-          <button class="btn btn-primary wide" type="submit" [disabled]="busy()">
+          <button class="btn btn-primary wide" type="submit" [disabled]="busy() || form.invalid">
             {{ busy() ? 'One moment…' : tab() === 'login' ? 'Log in' : tab() === 'register' ? 'Create account' : 'Start playing' }}
             <span aria-hidden="true">→</span>
           </button>
@@ -129,9 +137,15 @@ export class Welcome implements OnInit {
   protected readonly invited = signal(!!pendingInvite());
   protected readonly busy = signal(false);
   protected readonly error = signal<string | null>(null);
-  protected userName = '';
-  protected email = '';
-  protected password = '';
+  protected readonly nameMax = NAME_MAX;
+  protected readonly passwordMax = PASSWORD_MAX;
+  /** One form for the three tabs: the fields a tab doesn't show are disabled, so they don't count. */
+  protected readonly form = new FormGroup({
+    userName: new FormControl('', { nonNullable: true }),
+    email: new FormControl('', { nonNullable: true }),
+    password: new FormControl('', { nonNullable: true }),
+  });
+  private readonly submitted = signal(false);
 
   private readonly stats = toSignal(this.bank.stats().pipe(catchError(() => of([] as TopicStats[]))), { initialValue: [] as TopicStats[] });
   protected readonly questionCount = computed(() => this.stats().reduce((n, t) => n + t.questions, 0));
@@ -140,26 +154,51 @@ export class Welcome implements OnInit {
   /** Someone opening a friend's link plays as a guest in one tap: no sign-up between them and the fun. */
   ngOnInit(): void {
     this.auth.providers().subscribe({ next: (p) => this.canReset.set(!!p?.passwordReset), error: () => this.canReset.set(false) });
+    let tab: Tab = this.tab();
     if (pendingInvite() && !this.next()) {
-      this.tab.set('register'); // a friend's invite only counts for a new account
+      tab = 'register'; // a friend's invite only counts for a new account
     }
     if (/^\/(know-me|party|ai-quiz|challenge|room|cup)\//.test(this.next() ?? '')) {
-      this.tab.set('guest');
+      tab = 'guest';
     }
+    this.select(tab);
+  }
+
+  protected select(tab: Tab): void {
+    this.tab.set(tab);
+    this.error.set(null);
+    this.submitted.set(false);
+    const { userName, email, password } = this.form.controls;
+    userName.setValidators(nameValidator);
+    email.setValidators(emailValidator(tab === 'register'));
+    password.setValidators(passwordValidator(tab === 'register' ? 'new' : 'current'));
+    for (const [c, shown] of [[userName, tab !== 'login'], [email, tab !== 'guest'], [password, tab !== 'guest']] as const) {
+      c.markAsUntouched();
+      if (shown) c.enable();
+      else c.disable();
+      c.updateValueAndValidity();
+    }
+  }
+
+  /** The inline message for a field, once it was left or the form was submitted. */
+  protected err(name: 'userName' | 'email' | 'password'): string | null {
+    return fieldError(this.form.controls[name], this.submitted());
   }
 
   protected submit(): void {
     this.error.set(null);
-    if (this.tab() === 'register' && this.password.length < 8) {
-      this.error.set('The password needs at least 8 characters.');
+    this.submitted.set(true);
+    if (this.form.invalid || this.busy()) {
+      this.form.markAllAsTouched();
       return;
     }
     this.busy.set(true);
+    const { userName, email, password } = this.form.getRawValue();
     const call = this.tab() === 'guest'
-      ? this.auth.playAsGuest(this.userName)
+      ? this.auth.playAsGuest(userName.trim())
       : this.tab() === 'login'
-        ? this.auth.login(this.email, this.password)
-        : this.auth.register(this.userName, this.email, this.password);
+        ? this.auth.login(email.trim(), password)
+        : this.auth.register(userName.trim(), email.trim(), password);
     call.subscribe({
       next: () => this.done(),
       error: (e) => {

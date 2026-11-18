@@ -27,7 +27,10 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
+
+import static com.fazeel.quizcadia.api.InputRules.*;
 
 @RestController
 @RequestMapping("/api/v1/auth")
@@ -75,7 +78,9 @@ public class AuthController {
 		return signIn(accounts.signInWithGoogle(google.verify(r.credential()), r.invite()), response);
 	}
 
-	public record ForgotRequest(@NotBlank @Email @Size(max = 254) String email) {
+	public record ForgotRequest(
+			@NotBlank(message = EMAIL_REQUIRED) @Pattern(regexp = EMAIL_LOOSE_PATTERN, message = EMAIL_INVALID)
+			@Size(max = EMAIL_MAX, message = EMAIL_SIZE) String email) {
 
 		public ForgotRequest {
 			email = email == null ? null : email.trim();
@@ -89,7 +94,11 @@ public class AuthController {
 		resets.requestReset(r.email());
 	}
 
-	public record ResetRequest(@NotBlank @Size(max = 200) String token, @NotBlank @Size(min = 8, max = 72) String password) {
+	public record ResetRequest(
+			@NotBlank(message = "This reset link is incomplete. Open the link from the email again.")
+			@Size(max = 200, message = "This reset link isn't valid. Ask for a new one.") String token,
+			@NotBlank(message = PASSWORD_REQUIRED)
+			@Size(min = PASSWORD_MIN, max = PASSWORD_MAX, message = PASSWORD_SIZE) String password) {
 	}
 
 	/** Sets a new password from an emailed link and logs the player in. */
@@ -98,8 +107,15 @@ public class AuthController {
 		return signIn(resets.reset(r.token(), r.password()), response); // the reset ended every other sign-in
 	}
 
-	public record RegisterRequest(@NotBlank @Size(max = 60) String userName, @NotBlank @Email @Size(max = 254) String email,
-			@NotBlank @Size(min = 8, max = 72) String password, @Size(max = 16) String invite) {
+	public record RegisterRequest(
+			@NotBlank(message = NAME_REQUIRED) @Size(max = NAME_MAX, message = NAME_SIZE)
+			@Pattern(regexp = NAME_PATTERN, message = NAME_CHARS) String userName,
+			@NotBlank(message = EMAIL_REQUIRED) @Email(message = EMAIL_INVALID)
+			@Pattern(regexp = EMAIL_PATTERN, message = EMAIL_INVALID) @Size(max = EMAIL_MAX, message = EMAIL_SIZE) String email,
+			@NotBlank(message = PASSWORD_REQUIRED)
+			@Size(min = PASSWORD_MIN, max = PASSWORD_MAX, message = PASSWORD_SIZE) String password,
+			// a broken invite never stops a sign-up (AccountService.referrer ignores it), so only the length is checked
+			@Size(max = 16) String invite) {
 
 		public RegisterRequest {
 			userName = userName == null ? null : userName.trim();
@@ -107,7 +123,14 @@ public class AuthController {
 		}
 	}
 
-	public record LoginRequest(@NotBlank String email, @NotBlank String password) {
+	public record LoginRequest(
+			@NotBlank(message = EMAIL_REQUIRED) @Pattern(regexp = EMAIL_LOOSE_PATTERN, message = EMAIL_INVALID)
+			@Size(max = EMAIL_MAX, message = EMAIL_SIZE) String email,
+			@NotBlank(message = "Enter your password.") @Size(max = PASSWORD_MAX, message = PASSWORD_TOO_LONG) String password) {
+
+		public LoginRequest {
+			email = email == null ? null : email.trim();
+		}
 	}
 
 	public record UserView(int userId, String userName, String email, String role) {
@@ -175,7 +198,9 @@ public class AuthController {
 		cookie.clear(response);
 	}
 
-	public record GuestRequest(@NotBlank @Size(max = 60) String userName) {
+	public record GuestRequest(
+			@NotBlank(message = NAME_REQUIRED) @Size(max = NAME_MAX, message = NAME_SIZE)
+			@Pattern(regexp = NAME_PATTERN, message = NAME_CHARS) String userName) {
 
 		public GuestRequest {
 			userName = userName == null ? null : userName.trim();

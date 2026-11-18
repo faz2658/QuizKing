@@ -151,6 +151,9 @@ a { color: var(--accent); }
 .pill-tabs button:focus-visible { outline: 2px solid var(--lavender); outline-offset: 2px; }
 
 .field { display: flex; flex-direction: column; gap: 6px; font-weight: 650; font-size: 0.9rem; }
+/* Inline message under a form field (core/validation.ts fieldError). */
+.field-error { font-weight: 600; font-size: 0.8rem; color: var(--bad); }
+.input[aria-invalid='true'] { border-color: var(--bad); }
 .input, select.input, textarea.input {
   font: inherit; font-weight: 450; color: var(--text);
   background: var(--surface); border: 1px solid var(--border); border-radius: 14px;
