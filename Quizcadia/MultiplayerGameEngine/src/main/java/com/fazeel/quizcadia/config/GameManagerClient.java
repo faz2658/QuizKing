@@ -11,6 +11,7 @@ import org.springframework.web.client.RestClientException;
 
 import com.fazeel.quizcadia.domain.MultiPlayerGame;
 import com.fazeel.quizcadia.match.GameSource;
+import com.fazeel.quizcadia.web.InternalHttp;
 
 /** Fetches a multiplayer game from the game manager (replaces the hard-coded game URL). */
 @Component
@@ -21,7 +22,7 @@ public class GameManagerClient implements GameSource {
 	private final RestClient http;
 
 	public GameManagerClient(RestClient.Builder builder, @Value("${quizcadia.game-manager-url}") String baseUrl) {
-		this.http = builder.baseUrl(baseUrl).build();
+		this.http = builder.baseUrl(baseUrl).requestFactory(InternalHttp.requestFactory()).build();
 	}
 
 	@Override

@@ -18,6 +18,7 @@ import org.springframework.web.client.RestClientException;
 
 import com.fazeel.quizcadia.domain.Game;
 import com.fazeel.quizcadia.domain.Questions;
+import com.fazeel.quizcadia.web.InternalHttp;
 
 /**
  * A game's question pool. Games built from a topic no longer carry copies of its questions (a big topic would
@@ -44,7 +45,7 @@ public class TopicPools {
 
 	@Autowired
 	public TopicPools(@Value("${quizcadia.question-generator-url}") String url, Clock clock) {
-		this(http(RestClient.builder().baseUrl(url).build()), clock, Duration.ofMinutes(10));
+		this(http(InternalHttp.client(url).build()), clock, Duration.ofMinutes(10));
 	}
 
 	public TopicPools(Source source, Clock clock, Duration keep) {

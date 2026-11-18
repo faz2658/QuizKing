@@ -1,6 +1,6 @@
 import { HttpErrorResponse } from '@angular/common/http';
-import { describe, expect, it } from 'vitest';
-import { errorMessage } from './http-errors';
+import { afterEach, describe, expect, it, vi } from 'vitest';
+import { OFFLINE_MESSAGE, errorMessage } from './http-errors';
 
 describe('errorMessage', () => {
   it('prefers the server\'s explanation, and explains rate limits without one', () => {
@@ -16,5 +16,21 @@ describe('errorMessage', () => {
       expect(errorMessage(new HttpErrorResponse({ status }))).toContain('being updated');
     }
     expect(errorMessage(new HttpErrorResponse({ status: 503, error: { maintenance: true, detail: 'x' } }))).toContain('being updated');
+  });
+
+  describe('when the device is offline', () => {
+    afterEach(() => vi.unstubAllGlobals());
+
+    it('says so instead of blaming an update', () => {
+      vi.stubGlobal('navigator', { onLine: false });
+      expect(errorMessage(new HttpErrorResponse({ status: 0 }))).toBe(OFFLINE_MESSAGE);
+      // the server did answer: its own explanation still wins
+      expect(errorMessage(new HttpErrorResponse({ status: 409, error: { detail: 'That quiz has ended' } }))).toBe('That quiz has ended');
+    });
+  });
+
+  it('shows the server\'s generic 500 sentence with its error id', () => {
+    const detail = 'Something went wrong on our side. Please try again. (error 1a2b3c4d)';
+    expect(errorMessage(new HttpErrorResponse({ status: 500, error: { detail, errorId: '1a2b3c4d' } }))).toBe(detail);
   });
 });

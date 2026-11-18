@@ -1,9 +1,14 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Observable, retry, throwError, timer } from 'rxjs';
 
+export const OFFLINE_MESSAGE = "You're offline. Check your connection and try again.";
+
 /** Human-readable message from an HTTP error (RFC 9457 problem details when the backend sent one). */
 export function errorMessage(err: unknown, fallback = 'Something went wrong. Please try again.'): string {
   if (err instanceof HttpErrorResponse) {
+    if (err.status === 0 && typeof navigator !== 'undefined' && navigator.onLine === false) {
+      return OFFLINE_MESSAGE;
+    }
     if (err.status === 0 || err.status === 502 || err.status === 504 || (err.error as { maintenance?: boolean } | null)?.maintenance) {
       return 'QuizCadia is being updated right now. Please try again in a moment.';
     }

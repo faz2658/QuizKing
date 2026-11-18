@@ -11,6 +11,7 @@ import org.springframework.web.client.RestClientException;
 
 import com.fazeel.quizcadia.adaptive.Ports.GameSource;
 import com.fazeel.quizcadia.domain.Game;
+import com.fazeel.quizcadia.web.InternalHttp;
 
 @Component
 public class GameManagerClient implements GameSource {
@@ -20,7 +21,7 @@ public class GameManagerClient implements GameSource {
 	private final RestClient http;
 
 	public GameManagerClient(RestClient.Builder builder, @Value("${quizcadia.game-manager-url}") String baseUrl) {
-		this.http = builder.baseUrl(baseUrl).build();
+		this.http = builder.baseUrl(baseUrl).requestFactory(InternalHttp.requestFactory()).build();
 	}
 
 	@Override

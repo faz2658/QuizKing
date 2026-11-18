@@ -130,6 +130,17 @@ all (guests: 1 day; `QUIZCADIA_SESSION_IDLE`, `_ABSOLUTE`, `_GUEST`). `POST /api
 `/logout/all` ends every sign-in of the account, and so does a password reset. Other services only check the
 access token, so an ended sign-in can still reach them until its access token runs out.
 
+Errors: every API error is RFC 9457 problem details (`application/problem+json`) with a `detail` the app shows as
+is. Each service answers its own errors (404, 409, 400 with field messages...). `FallbackExceptionHandler` in
+`quizcadia-security` answers the rest:
+- Spring's request errors become 400/404/405/415.
+- A database or service that can't be reached becomes 503 with `maintenance: true`, which the app shows as its
+  "being updated" banner.
+- Anything else becomes 500 with a short `errorId` that is also in the log. Internals never reach the browser.
+
+Calls between services give up after 3 s connecting and 15 s waiting (`InternalHttp`). A Kafka that is down holds a
+request for at most 5 s (`max.block.ms`).
+
 ### Veracode scanning
 
 `.github/workflows/veracode.yml` runs Veracode static analysis. It only reports and never blocks a merge or a

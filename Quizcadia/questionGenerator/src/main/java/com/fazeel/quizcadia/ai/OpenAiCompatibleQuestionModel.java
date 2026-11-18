@@ -1,13 +1,16 @@
 package com.fazeel.quizcadia.ai;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
+import org.springframework.http.client.ClientHttpRequestFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestClientException;
@@ -16,6 +19,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import tools.jackson.core.JacksonException;
 import tools.jackson.databind.json.JsonMapper;
+import com.fazeel.quizcadia.web.InternalHttp;
 
 /**
  * Calls the question model through the OpenAI-compatible chat API that llama.cpp's llama-server
@@ -33,9 +37,21 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 	private final AiPrompt prompt = AiPrompt.load();
 	private final JsonMapper json = JsonMapper.builder().build();
 
+	@Autowired
 	public OpenAiCompatibleQuestionModel(RestClient.Builder builder, @Value("${quizcadia.ai.url:}") String url,
 			@Value("${quizcadia.ai.model:quizcadia}") String modelName) {
+		// A small model on the server's CPU takes a while to write a question, but one that never answers must not
+		// hold the request for good: give up after a few minutes (AiUnavailableException, like an unreachable model)
+		this(builder, url, modelName, InternalHttp.requestFactory(Duration.ofMinutes(3)));
+	}
+
+	/** {@code requestFactory} null keeps the builder's own (tests bind a mock server to it). */
+	OpenAiCompatibleQuestionModel(RestClient.Builder builder, String url, String modelName,
+			ClientHttpRequestFactory requestFactory) {
 		this.configured = url != null && !url.isBlank();
+		if (requestFactory != null) {
+			builder = builder.requestFactory(requestFactory);
+		}
 		this.http = builder.baseUrl(configured ? url : "http://localhost").build();
 		this.modelName = modelName;
 	}

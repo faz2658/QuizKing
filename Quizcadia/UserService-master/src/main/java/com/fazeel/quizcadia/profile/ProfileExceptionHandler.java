@@ -1,5 +1,6 @@
 package com.fazeel.quizcadia.profile;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
 import org.springframework.http.converter.HttpMessageNotReadableException;
@@ -8,7 +9,9 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 /** Bad request bodies become 400 problem details with a {@code detail} the app can show as is. */
+// Before FallbackExceptionHandler, which answers whatever this one does not
 @RestControllerAdvice
+@Order(0)
 class ProfileExceptionHandler {
 
 	@ExceptionHandler(MethodArgumentNotValidException.class)

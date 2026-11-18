@@ -1,9 +1,11 @@
 package com.fazeel.quizcadia.google;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.security.oauth2.core.DelegatingOAuth2TokenValidator;
 import org.springframework.security.oauth2.core.OAuth2Error;
 import org.springframework.security.oauth2.core.OAuth2TokenValidatorResult;
@@ -14,6 +16,7 @@ import org.springframework.security.oauth2.jwt.JwtException;
 import org.springframework.security.oauth2.jwt.JwtTimestampValidator;
 import org.springframework.security.oauth2.jwt.NimbusJwtDecoder;
 import org.springframework.stereotype.Component;
+import org.springframework.web.client.RestTemplate;
 
 /**
  * Checks a "Sign in with Google" ID token: signed by Google (keys fetched from Google and cached), not
@@ -59,7 +62,13 @@ public class GoogleTokenVerifier {
 	}
 
 	static JwtDecoder decoder(String clientId) {
-		NimbusJwtDecoder d = NimbusJwtDecoder.withJwkSetUri(JWKS).jwsAlgorithm(SignatureAlgorithm.RS256).build();
+		// Google's keys are fetched with time limits: a slow Google answer then fails this sign-in ("please try again")
+		// instead of holding the request thread with no end
+		SimpleClientHttpRequestFactory http = new SimpleClientHttpRequestFactory();
+		http.setConnectTimeout(Duration.ofSeconds(5));
+		http.setReadTimeout(Duration.ofSeconds(10));
+		NimbusJwtDecoder d = NimbusJwtDecoder.withJwkSetUri(JWKS).jwsAlgorithm(SignatureAlgorithm.RS256)
+				.restOperations(new RestTemplate(http)).build();
 		d.setJwtValidator(validator(clientId));
 		return d;
 	}

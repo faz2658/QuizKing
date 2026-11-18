@@ -16,6 +16,8 @@ spring:
     producer:
       value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
       properties:
+        # Kafka down: give up on a message after 5 s (logged) instead of holding the player's request for 60 s
+        max.block.ms: 5000
         spring.json.add.type.headers: false
 
 server:

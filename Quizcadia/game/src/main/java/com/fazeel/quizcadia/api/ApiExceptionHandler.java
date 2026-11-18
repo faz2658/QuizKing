@@ -2,6 +2,7 @@ package com.fazeel.quizcadia.api;
 
 import java.net.URI;
 
+import org.springframework.core.annotation.Order;
 import org.springframework.dao.OptimisticLockingFailureException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
@@ -12,7 +13,9 @@ import com.fazeel.quizcadia.service.GameNotReadyException;
 import com.fazeel.quizcadia.service.NotFoundException;
 import com.fazeel.quizcadia.session.QuizRuleException;
 
+// Before FallbackExceptionHandler, which answers whatever this one does not
 @RestControllerAdvice
+@Order(0)
 public class ApiExceptionHandler {
 
 	@ExceptionHandler(NotFoundException.class)
