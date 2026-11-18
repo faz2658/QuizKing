@@ -1,6 +1,6 @@
 import { provideHttpClient, withInterceptors } from '@angular/common/http';
 import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
-import { provideRouter, withComponentInputBinding, withNavigationErrorHandler, withViewTransitions } from '@angular/router';
+import { provideRouter, withComponentInputBinding, withInMemoryScrolling, withNavigationErrorHandler, withViewTransitions } from '@angular/router';
 import { routes } from './app.routes';
 import { authInterceptor } from './core/auth.interceptor';
 import { idempotencyInterceptor } from './core/idempotency.interceptor';
@@ -20,6 +20,8 @@ export const appConfig: ApplicationConfig = {
           reloadIntoNewVersion(e.url);
         }
       }),
+      // a new page starts at the top (and Back returns to where you were), instead of keeping the last page's scroll
+      withInMemoryScrolling({ scrollPositionRestoration: 'enabled', anchorScrolling: 'enabled' }),
       // pages swap with a 3D sink-and-rise where the browser supports view transitions
       withViewTransitions({ skipInitialTransition: true, onViewTransitionCreated: onPageTransition }),
     ),
