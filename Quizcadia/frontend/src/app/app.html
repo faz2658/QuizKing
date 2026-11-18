@@ -19,6 +19,7 @@
       @if (world.online(); as o) {
         <a class="online" routerLink="/world" [title]="o.online + ' players online'"><span class="dot"></span>{{ o.online }} online</a>
       }
+      <mv-theme-switch />
       <ng-container [ngTemplateOutlet]="installBtn" />
       <button type="button" class="icon-btn" [attr.aria-pressed]="fx.settings().sound" [attr.aria-label]="fx.settings().sound ? 'Sound on' : 'Sound off'"
         [title]="fx.settings().sound ? 'Sound on' : 'Sound off'" (click)="fx.toggle('sound')">{{ fx.settings().sound ? '🔊' : '🔇' }}</button>
@@ -31,6 +32,7 @@
       <button type="button" class="btn btn-ghost" (click)="logout()">{{ user.role === 'GUEST' ? 'Leave' : 'Log out' }}</button>
     } @else {
       <div class="spacer"></div>
+      <mv-theme-switch />
       <ng-container [ngTemplateOutlet]="installBtn" />
     }
   </div>

@@ -11,10 +11,11 @@ import { NeuralBg } from './motion/neural-bg';
 import { ConsentBanner } from './ui/consent-banner';
 import { MaintenanceBanner } from './ui/maintenance-banner';
 import { Support } from './ui/support';
+import { ThemeSwitch } from './ui/theme-switch';
 
 @Component({
   selector: 'app-root',
-  imports: [NgTemplateOutlet, RouterOutlet, RouterLink, RouterLinkActive, Aurora, NeuralBg, ConsentBanner, MaintenanceBanner, Support],
+  imports: [NgTemplateOutlet, RouterOutlet, RouterLink, RouterLinkActive, Aurora, NeuralBg, ConsentBanner, MaintenanceBanner, Support, ThemeSwitch],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './app.html',
   styleUrl: './app.scss',

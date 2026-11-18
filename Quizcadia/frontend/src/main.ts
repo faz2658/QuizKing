@@ -2,8 +2,10 @@ import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { App } from './app/app';
 import { moveOldStorageKeys } from './app/core/storage-rename';
+import { applyTheme } from './app/core/theme';
 
 moveOldStorageKeys(); // before any service reads its saved values
+applyTheme(); // the saved Day/Night choice, before the first paint
 
 bootstrapApplication(App, appConfig)
   .catch((err) => console.error(err));

@@ -1,6 +1,7 @@
 /*
  * QuizCadia design tokens. Dark, glowing "arena" look by default (inspired by React Bits and
- * MotionSites); a light theme follows the OS setting.
+ * MotionSites); a light "Day" theme follows the OS setting or the
+ * player's Day/Night switch (core/theme.ts).
  */
 :root {
   color-scheme: dark light;
@@ -34,31 +35,37 @@
   --font: "Inter Tight Variable", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --bg: #f7f5ff;
-    --bg-raised: rgba(255, 255, 255, 0.78);
-    --bg-sunken: #ece8fb;
-    --surface: rgba(20, 16, 60, 0.04);
-    --surface-strong: rgba(20, 16, 60, 0.08);
-    --border: rgba(20, 16, 60, 0.12);
-    --border-strong: rgba(20, 16, 60, 0.24);
-    --text: #15122e;
-    --text-muted: #5b5682;
-    --accent: #d97a00;
-    --accent-ink: #ffffff;
-    --accent-2: #5b4ae6;
-    --pink: #e0408a;
-    --lavender: #7c6cff;
-    --cta-bg: #15122e;
-    --cta-ink: #ffffff;
-    --good: #0f9d63;
-    --good-bg: rgba(15, 157, 99, 0.12);
-    --bad: #d7334f;
-    --bad-bg: rgba(215, 51, 79, 0.1);
-    --shadow: 0 20px 50px rgba(40, 30, 120, 0.14);
-  }
+/* Light (Day) tokens: used when the player picks Day, or when their device is light and they haven't picked. */
+@mixin day-tokens {
+  color-scheme: light;
+  --bg: #f7f5ff;
+  --bg-raised: rgba(255, 255, 255, 0.78);
+  --bg-sunken: #ece8fb;
+  --surface: rgba(20, 16, 60, 0.04);
+  --surface-strong: rgba(20, 16, 60, 0.08);
+  --border: rgba(20, 16, 60, 0.12);
+  --border-strong: rgba(20, 16, 60, 0.24);
+  --text: #15122e;
+  --text-muted: #5b5682;
+  --accent: #d97a00;
+  --accent-ink: #ffffff;
+  --accent-2: #5b4ae6;
+  --pink: #e0408a;
+  --lavender: #7c6cff;
+  --cta-bg: #15122e;
+  --cta-ink: #ffffff;
+  --good: #0f9d63;
+  --good-bg: rgba(15, 157, 99, 0.12);
+  --bad: #d7334f;
+  --bad-bg: rgba(215, 51, 79, 0.1);
+  --shadow: 0 20px 50px rgba(40, 30, 120, 0.14);
 }
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme='dark']) { @include day-tokens; }
+}
+:root[data-theme='light'] { @include day-tokens; }
+:root[data-theme='dark'] { color-scheme: dark; }
 
 *, *::before, *::after { box-sizing: border-box; }
 html, body { margin: 0; min-height: 100%; }
@@ -189,16 +196,74 @@ select.input option { background: var(--bg-sunken); color: var(--text); }
 @keyframes fade-up { from { opacity: 0; transform: perspective(900px) translateY(18px) rotateX(14deg); } }
 
 /*
- * 3D page change (router view transitions, motion/page-transition.ts): the old page sinks back and tips away,
- * the new one comes forward. Only <main> moves; the header and the 3D backdrop stay where they are.
+ * Page changes as camera moves through one room (router view transitions, motion/page-transition.ts). Between
+ * sections the camera pans to the next wall, the old page turning away to one side as the new one turns in
+ * from the other; into a game or detail page it walks up close, and back out again. Only <main> and the nav's
+ * active pill move (the pill slides to its new tab); the header and the backdrop stay where they are.
  */
+$room: cubic-bezier(0.65, 0, 0.35, 1);
 .page-vt main { view-transition-name: page; }
-::view-transition-old(root), ::view-transition-new(root) { animation: none; }
-::view-transition-group(page) { animation-duration: 0.55s; animation-timing-function: cubic-bezier(0.2, 0.7, 0.2, 1); }
-::view-transition-old(page) { animation: page-out 0.3s cubic-bezier(0.4, 0, 1, 1) both; transform-origin: 50% 30vh; }
-::view-transition-new(page) { animation: page-in 0.55s cubic-bezier(0.2, 0.7, 0.2, 1) 0.08s both; transform-origin: 50% 30vh; }
-@keyframes page-out { to { opacity: 0; transform: perspective(1200px) translateZ(-180px) rotateX(9deg); filter: blur(4px); } }
-@keyframes page-in { from { opacity: 0; transform: perspective(1200px) translateZ(120px) rotateX(-7deg); filter: blur(6px); } }
+.page-vt nav a.active { view-transition-name: nav-pill; }
+.page-vt::view-transition-old(root), .page-vt::view-transition-new(root) { animation: none; }
+.page-vt::view-transition-group(page) { animation-duration: 0.75s; animation-timing-function: $room; }
+.page-vt::view-transition-group(nav-pill) { animation-duration: 0.6s; animation-timing-function: $room; }
+/* the two pills keep their own size and cross-fade as they slide, instead of the label stretching */
+.page-vt::view-transition-old(nav-pill), .page-vt::view-transition-new(nav-pill) { inline-size: auto; block-size: 100%; inset-inline-start: 50%; translate: -50% 0; }
+.page-vt::view-transition-old(page) { transform-origin: 50% var(--vt-old-y, 40vh); }
+.page-vt::view-transition-new(page) { transform-origin: 50% 40vh; }
+[data-move='right']::view-transition-old(page) { animation: wall-out-left 0.75s $room both; }
+[data-move='right']::view-transition-new(page) { animation: wall-in-right 0.75s $room both; }
+[data-move='left']::view-transition-old(page) { animation: wall-out-right 0.75s $room both; }
+[data-move='left']::view-transition-new(page) { animation: wall-in-left 0.75s $room both; }
+[data-move='in']::view-transition-old(page) { animation: walk-past 0.6s $room both; }
+[data-move='in']::view-transition-new(page) { animation: walk-up 0.75s $room 0.05s both; }
+[data-move='out']::view-transition-old(page) { animation: step-back 0.6s $room both; }
+[data-move='out']::view-transition-new(page) { animation: step-in-behind 0.75s $room 0.05s both; }
+@keyframes wall-out-left { to { opacity: 0; transform: perspective(1600px) translateX(-58%) rotateY(34deg) scale(0.9); } }
+@keyframes wall-in-right { from { opacity: 0; transform: perspective(1600px) translateX(58%) rotateY(-34deg) scale(0.9); } }
+@keyframes wall-out-right { to { opacity: 0; transform: perspective(1600px) translateX(58%) rotateY(-34deg) scale(0.9); } }
+@keyframes wall-in-left { from { opacity: 0; transform: perspective(1600px) translateX(-58%) rotateY(34deg) scale(0.9); } }
+@keyframes walk-past { to { opacity: 0; transform: perspective(1600px) translateZ(280px); filter: blur(8px); } }
+@keyframes walk-up { from { opacity: 0; transform: perspective(1600px) translateZ(-360px); } }
+@keyframes step-back { to { opacity: 0; transform: perspective(1600px) translateZ(-360px); } }
+@keyframes step-in-behind { from { opacity: 0; transform: perspective(1600px) translateZ(280px); filter: blur(8px); } }
+
+/*
+ * Day/Night relight (core/theme.ts): the new theme sweeps over the old one behind a soft edge, sunrise rising
+ * from the bottom for Day and dusk falling from the top for Night, with a band of haze riding the edge.
+ */
+.theme-vt::view-transition-old(root) { animation: none; }
+.theme-vt::view-transition-new(root) {
+  animation: relight-up 1.3s cubic-bezier(0.5, 0, 0.3, 1) both;
+  mask-size: 100% 260%; mask-repeat: no-repeat;
+}
+.theme-to-light::view-transition-new(root) { mask-image: linear-gradient(to top, #000 38%, transparent 62%); }
+.theme-to-dark::view-transition-new(root) { mask-image: linear-gradient(to bottom, #000 38%, transparent 62%); }
+.theme-to-light::view-transition-new(root) { animation-name: relight-up; }
+.theme-to-dark::view-transition-new(root) { animation-name: relight-down; }
+@keyframes relight-up { from { mask-position: 0 0; } to { mask-position: 0 100%; } }
+@keyframes relight-down { from { mask-position: 0 100%; } to { mask-position: 0 0; } }
+.theme-fog {
+  view-transition-name: theme-fog; position: fixed; left: -10vw; right: -10vw; height: 55vh; pointer-events: none; z-index: 1000;
+  filter: blur(28px);
+}
+.theme-to-light .theme-fog { top: 100%; background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(255, 226, 170, 0.75), rgba(255, 244, 222, 0.35) 55%, transparent 75%); }
+.theme-to-dark .theme-fog { bottom: 100%; background: radial-gradient(ellipse 60% 50% at 50% 50%, rgba(124, 108, 255, 0.6), rgba(40, 30, 90, 0.35) 55%, transparent 75%); }
+.theme-to-light::view-transition-new(theme-fog) { animation: haze-up 1.3s cubic-bezier(0.5, 0, 0.3, 1) both; }
+.theme-to-dark::view-transition-new(theme-fog) { animation: haze-down 1.3s cubic-bezier(0.5, 0, 0.3, 1) both; }
+.theme-vt::view-transition-group(theme-fog) { animation: none; }
+@keyframes haze-up {
+  0% { opacity: 0; transform: translateY(0); }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(-155vh); }
+}
+@keyframes haze-down {
+  0% { opacity: 0; transform: translateY(0); }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(155vh); }
+}
 
 .skeleton {
   background: linear-gradient(90deg, var(--surface), var(--surface-strong), var(--surface));

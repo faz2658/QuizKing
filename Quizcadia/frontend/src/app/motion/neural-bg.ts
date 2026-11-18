@@ -1,9 +1,10 @@
-import { afterNextRender, ChangeDetectionStrategy, Component, DestroyRef, ElementRef, inject, InjectionToken, signal, viewChild } from '@angular/core';
+import { afterNextRender, ChangeDetectionStrategy, Component, DestroyRef, effect, ElementRef, inject, InjectionToken, signal, viewChild } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { Theme } from '../core/theme';
 import type { NeuralScene, RGB, SceneColors, SceneFactory, ScenePose } from './neural-scene';
 import { prefersReducedMotion } from './reduced-motion';
 
-/** How the scene code is fetched: a separate chunk, loaded after the first render. Tests swap it. */
+/** How the scene code is fetched: a separate chunk, loaded the first time the welcome page shows. Tests swap it. */
 export const NEURAL_SCENE_LOADER = new InjectionToken<() => Promise<SceneFactory>>('NEURAL_SCENE_LOADER', {
   factory: () => () => import('./neural-scene').then((m) => m.createNeuralScene),
 });
@@ -14,15 +15,19 @@ export const NEURAL_SCENE_LOADER = new InjectionToken<() => Promise<SceneFactory
  */
 export type NeuralMode = 'loading' | 'live' | 'still' | 'fallback';
 
-/** hero: the welcome page; browse: lists and menus; game: while answering questions; quiet: forms, legal, admin. */
+/**
+ * hero: the welcome page, where the brain lives. Every other page has its own motion (camera moves between
+ * pages, the Day/Night relight), so there the brain drifts off in the direction of the page and fades away;
+ * once it has gone the scene stops drawing.
+ */
 export type PoseName = 'hero' | 'browse' | 'game' | 'quiet';
 
+const GONE = { alpha: 0, spin: 0, lean: 0 };
 export const POSES: Record<PoseName, ScenePose> = {
   hero: { x: 0, y: 0, zoom: 1, alpha: 0.9, spin: 1, lean: 1 },
-  browse: { x: 1.35, y: 0.1, zoom: 1.25, alpha: 0.55, spin: 0.6, lean: 0.6 },
-  // far back, dim and still: nothing moves behind a question while the clock runs
-  game: { x: 0, y: 0, zoom: 1.8, alpha: 0.25, spin: 0, lean: 0 },
-  quiet: { x: -1.4, y: -0.2, zoom: 1.45, alpha: 0.35, spin: 0.3, lean: 0.3 },
+  browse: { x: 1.4, y: 0.1, zoom: 1.6, ...GONE },
+  game: { x: 0, y: 0, zoom: 2.2, ...GONE },
+  quiet: { x: -1.4, y: -0.2, zoom: 1.6, ...GONE },
 };
 
 const GAME = /^\/(daily|play\/|adaptive\/|match\/|room\/|multiplayer\/|custom\/play|challenge\/[^/]+\/play|vs\/[^/]+\/play|party\/|ai-quiz\/|know-me\/(?!new)|puzzles)/;
@@ -44,8 +49,8 @@ function hex(value: string, fallback: RGB): RGB {
   return [(n >> 16) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255];
 }
 
-/** The scene's colours, taken from the theme's CSS variables so it follows light and dark. */
-function themeColors(): SceneColors {
+/** The scene's colours, taken from the theme's CSS variables so it follows Day and Night. */
+function themeColors(light: boolean): SceneColors {
   const css = getComputedStyle(document.documentElement);
   const v = (name: string, fallback: RGB) => hex(css.getPropertyValue(name), fallback);
   return {
@@ -54,7 +59,7 @@ function themeColors(): SceneColors {
     to: v('--pink', [1, 0.48, 0.71]),
     signal: v('--accent', [1, 0.71, 0.28]),
     link: v('--lavender', [0.77, 0.71, 1]),
-    light: !!window.matchMedia?.('(prefers-color-scheme: light)').matches,
+    light,
   };
 }
 
@@ -83,6 +88,7 @@ function themeColors(): SceneColors {
 export class NeuralBg {
   private readonly load = inject(NEURAL_SCENE_LOADER);
   private readonly router = inject(Router);
+  private readonly theme = inject(Theme);
   private readonly canvas = viewChild.required<ElementRef<HTMLCanvasElement>>('canvas');
   readonly mode = signal<NeuralMode>('loading');
   readonly pose = signal<PoseName>(poseFor(this.router.url));
@@ -94,27 +100,30 @@ export class NeuralBg {
   private last = 0;
   private pointer = [0, 0];
   private destroyed = false;
+  private started = false;
+  private afterFirstRender = false;
   private readonly cleanups: (() => void)[] = [];
 
   constructor() {
     inject(DestroyRef).onDestroy(() => this.destroy());
     const sub = this.router.events.subscribe((e) => e instanceof NavigationEnd && this.go(poseFor(e.urlAfterRedirects)));
     this.cleanups.push(() => sub.unsubscribe());
+    // nothing is downloaded or drawn until the welcome page shows
     afterNextRender(() => {
-      // the landing page shows it at once; elsewhere it waits until the page itself has loaded
+      this.afterFirstRender = true;
       if (this.pose() === 'hero') void this.start();
-      else this.idle(() => void this.start());
+    });
+    effect(() => {
+      const light = this.theme.current() === 'light';
+      if (!this.scene) return;
+      this.scene.setColors(themeColors(light));
+      this.wake();
     });
   }
 
-  private idle(fn: () => void): void {
-    const ric = (window as { requestIdleCallback?: (cb: () => void, o?: { timeout: number }) => number }).requestIdleCallback;
-    if (ric) ric(fn, { timeout: 2000 });
-    else setTimeout(fn, 200);
-  }
-
   private async start(): Promise<void> {
-    if (this.destroyed) return;
+    if (this.destroyed || this.started) return;
+    this.started = true;
     if (typeof WebGLRenderingContext === 'undefined') {
       this.mode.set('fallback');
       return;
@@ -129,7 +138,7 @@ export class NeuralBg {
     if (this.destroyed) return;
     const canvas = this.canvas().nativeElement;
     this.small = Math.min(window.innerWidth, window.innerHeight) < 600 || !!window.matchMedia?.('(pointer: coarse)').matches;
-    this.scene = factory(canvas, { small: this.small, colors: themeColors() });
+    this.scene = factory(canvas, { small: this.small, colors: themeColors(this.theme.current() === 'light') });
     if (!this.scene) {
       this.mode.set('fallback');
       return;
@@ -151,17 +160,10 @@ export class NeuralBg {
       if (POSES[this.pose()].lean) this.wake();
     });
     this.listen(document, 'visibilitychange', () => this.wake());
-    for (const [query, on] of [
-      ['(prefers-reduced-motion: reduce)', () => this.wake()],
-      ['(prefers-color-scheme: light)', () => {
-        this.scene?.setColors(themeColors());
-        this.wake();
-      }],
-    ] as const) {
-      const mq = window.matchMedia?.(query);
-      mq?.addEventListener?.('change', on);
-      this.cleanups.push(() => mq?.removeEventListener?.('change', on));
-    }
+    const motion = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+    const onMotion = () => this.wake();
+    motion?.addEventListener?.('change', onMotion);
+    this.cleanups.push(() => motion?.removeEventListener?.('change', onMotion));
     this.wake();
   }
 
@@ -174,6 +176,7 @@ export class NeuralBg {
   /** A page change: glide to the new framing with a swing of the brain. */
   private go(name: PoseName): void {
     this.pose.set(name);
+    if (name === 'hero' && !this.started && this.afterFirstRender) void this.start();
     if (!this.scene) return;
     const still = prefersReducedMotion();
     this.scene.setPose(this.target(name), still ? 0 : 1.4, still);

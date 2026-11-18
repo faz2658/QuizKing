@@ -4,7 +4,7 @@ import { provideRouter, Router, ViewTransitionInfo } from '@angular/router';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { NEURAL_SCENE_LOADER, NeuralBg, POSES, poseFor } from './neural-bg';
 import { brainLinks, brainPoints, NeuralScene, SceneFactory } from './neural-scene';
-import { onPageTransition, PAGE_TRANSITION_CLASS } from './page-transition';
+import { onPageTransition, PAGE_TRANSITION_CLASS, pageMove } from './page-transition';
 
 function media(reduced: boolean) {
   vi.stubGlobal('matchMedia', (q: string) => ({
@@ -19,18 +19,21 @@ function fakeScene(settled = false): NeuralScene {
 @Component({ template: '' })
 class Blank {}
 
-/** The scene starts once the browser is idle (a 200 ms timer in jsdom); this waits past that and a few frames. */
+/** A few animation frames. */
 const frames = () => new Promise((r) => setTimeout(r, 300));
 
-async function mount(factory?: SceneFactory) {
+/** The scene only loads on the welcome page, so tests open it there (or at {@code url}). */
+async function mount(factory?: SceneFactory, url = '/welcome') {
   const load = vi.fn(async () => factory ?? (() => null));
   TestBed.configureTestingModule({
     providers: [
-      provideRouter([{ path: 'play/:id', component: Blank }, { path: 'welcome', component: Blank }, { path: '**', component: Blank }]),
+      provideRouter([{ path: '**', component: Blank }]),
       { provide: NEURAL_SCENE_LOADER, useValue: load },
     ],
   });
   const f = TestBed.createComponent(NeuralBg);
+  await f.whenStable();
+  await TestBed.inject(Router).navigateByUrl(url);
   await f.whenStable();
   await frames();
   await f.whenStable();
@@ -53,6 +56,21 @@ describe('NeuralBg', () => {
     expect(load).not.toHaveBeenCalled();
     expect(host.getAttribute('data-mode')).toBe('fallback');
     expect(host.getAttribute('aria-hidden')).toBe('true');
+  });
+
+  it('downloads nothing away from the welcome page, and starts when the player gets there', async () => {
+    media(false);
+    vi.stubGlobal('WebGLRenderingContext', class {});
+    const scene = fakeScene();
+    const { f, load, host } = await mount(() => scene, '/leaderboard');
+    expect(load).not.toHaveBeenCalled();
+    expect(host.getAttribute('data-mode')).toBe('loading');
+
+    await TestBed.inject(Router).navigateByUrl('/welcome');
+    await f.whenStable();
+    await frames();
+    expect(load).toHaveBeenCalledOnce();
+    expect(host.getAttribute('data-mode')).toBe('live');
   });
 
   it('falls back when the browser has WebGL but no context can be made', async () => {
@@ -111,7 +129,7 @@ describe('NeuralBg', () => {
     hidden.mockRestore();
   });
 
-  it('swings to the game framing on a page change and stops drawing once it holds still', async () => {
+  it('drifts away and stops drawing when the player leaves the welcome page', async () => {
     media(false);
     vi.stubGlobal('WebGLRenderingContext', class {});
     const scene = fakeScene(true); // the camera has always "arrived"
@@ -139,14 +157,33 @@ describe('poseFor', () => {
     for (const url of ['/admin/stats', '/privacy', '/reset-password?token=x']) expect(poseFor(url), url).toBe('quiet');
     for (const url of ['/', '/leaderboard', '/me', '/know-me/new', '/vs/new', '/result/5', '/party']) expect(poseFor(url), url).toBe('browse');
   });
+
+  it('shows the brain only on the welcome page', () => {
+    expect(POSES.hero.alpha).toBeGreaterThan(0);
+    for (const p of [POSES.browse, POSES.game, POSES.quiet]) expect([p.alpha, p.spin]).toEqual([0, 0]);
+  });
+});
+
+describe('pageMove', () => {
+  it('pans between sections in nav order, walks in to detail pages and back out', () => {
+    expect(pageMove('/', '/leaderboard')).toBe('right');
+    expect(pageMove('/me', '/world')).toBe('left');
+    expect(pageMove('/welcome?next=x', '/')).toBe('right');
+    expect(pageMove('/', '/play/7?intl=1')).toBe('in');
+    expect(pageMove('/result/3', '/')).toBe('out');
+    expect(pageMove('/vs/4', '/vs/4/play')).toBe('in');
+    expect(pageMove('/admin/stats', '/admin')).toBe('out');
+    expect(pageMove('/play/7', '/result/3')).toBe('right');
+  });
 });
 
 describe('onPageTransition', () => {
   afterEach(() => vi.unstubAllGlobals());
 
+  const snap = (...path: string[]) => ({ url: [], firstChild: { url: path.map((p) => ({ path: p })), firstChild: null } });
   const info = (finished: Promise<void>) => {
     const transition = { finished, skipTransition: vi.fn() };
-    return { info: { transition } as unknown as ViewTransitionInfo, transition };
+    return { info: { transition, from: snap(), to: snap('leaderboard') } as unknown as ViewTransitionInfo, transition };
   };
 
   it('names <main> only while the 3D page change runs', async () => {
@@ -155,10 +192,12 @@ describe('onPageTransition', () => {
     const { info: i, transition } = info(new Promise<void>((r) => (done = r)));
     onPageTransition(i);
     expect(document.documentElement.classList.contains(PAGE_TRANSITION_CLASS)).toBe(true);
+    expect(document.documentElement.dataset['move']).toBe('right');
     done();
     await transition.finished;
     await Promise.resolve();
     expect(document.documentElement.classList.contains(PAGE_TRANSITION_CLASS)).toBe(false);
+    expect(document.documentElement.dataset['move']).toBeUndefined();
     expect(transition.skipTransition).not.toHaveBeenCalled();
   });
 
