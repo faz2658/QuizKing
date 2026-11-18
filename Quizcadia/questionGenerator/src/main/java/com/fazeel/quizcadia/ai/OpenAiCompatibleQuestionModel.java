@@ -20,6 +20,8 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import tools.jackson.core.JacksonException;
 import tools.jackson.databind.json.JsonMapper;
 import com.fazeel.quizcadia.web.InternalHttp;
+import com.fazeel.quizcadia.web.Breakers;
+import io.github.resilience4j.circuitbreaker.CircuitBreaker;
 
 /**
  * Calls the question model through the OpenAI-compatible chat API that llama.cpp's llama-server
@@ -32,6 +34,7 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 	private static final Logger log = LoggerFactory.getLogger(OpenAiCompatibleQuestionModel.class);
 
 	private final RestClient http;
+	private final CircuitBreaker breaker;
 	private final boolean configured;
 	private final String modelName;
 	private final AiPrompt prompt = AiPrompt.load();
@@ -39,15 +42,28 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 
 	@Autowired
 	public OpenAiCompatibleQuestionModel(RestClient.Builder builder, @Value("${quizcadia.ai.url:}") String url,
-			@Value("${quizcadia.ai.model:quizcadia}") String modelName) {
+			@Value("${quizcadia.ai.model:quizcadia}") String modelName, Breakers breakers) {
 		// A small model on the server's CPU takes a while to write a question, but one that never answers must not
-		// hold the request for good: give up after a few minutes (AiUnavailableException, like an unreachable model)
-		this(builder, url, modelName, InternalHttp.requestFactory(Duration.ofMinutes(3)));
+		// hold the request for good: give up after a few minutes (AiUnavailableException, like an unreachable model).
+		// After a few failures in a row the breaker answers "not available" at once for two minutes.
+		this(builder, url, modelName, InternalHttp.requestFactory(Duration.ofMinutes(3)),
+				breakers.forSlowService("ai-model"));
+	}
+
+	OpenAiCompatibleQuestionModel(RestClient.Builder builder, String url, String modelName) {
+		this(builder, url, modelName, InternalHttp.requestFactory(Duration.ofMinutes(3)),
+				new Breakers().forSlowService("ai-model"));
 	}
 
 	/** {@code requestFactory} null keeps the builder's own (tests bind a mock server to it). */
 	OpenAiCompatibleQuestionModel(RestClient.Builder builder, String url, String modelName,
 			ClientHttpRequestFactory requestFactory) {
+		this(builder, url, modelName, requestFactory, new Breakers().forSlowService("ai-model"));
+	}
+
+	OpenAiCompatibleQuestionModel(RestClient.Builder builder, String url, String modelName,
+			ClientHttpRequestFactory requestFactory, CircuitBreaker breaker) {
+		this.breaker = breaker;
 		this.configured = url != null && !url.isBlank();
 		if (requestFactory != null) {
 			builder = builder.requestFactory(requestFactory);
@@ -69,8 +85,9 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 		ChatResponse response;
 		try {
 			// Serialised up front so the request carries a Content-Length (some servers reject chunked bodies)
-			response = http.post().uri("/v1/chat/completions").contentType(MediaType.APPLICATION_JSON)
-					.body(json.writeValueAsString(body)).retrieve().body(ChatResponse.class);
+			String payload = json.writeValueAsString(body);
+			response = Breakers.call(breaker, () -> http.post().uri("/v1/chat/completions")
+					.contentType(MediaType.APPLICATION_JSON).body(payload).retrieve().body(ChatResponse.class));
 		}
 		catch (RestClientException e) {
 			throw new AiUnavailableException("The question model is not reachable: " + e.getMessage());

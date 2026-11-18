@@ -13,6 +13,8 @@ import org.springframework.web.client.RestClientException;
 import com.fazeel.quizcadia.search.GameCard;
 import com.fazeel.quizcadia.search.GameCatalog;
 import com.fazeel.quizcadia.web.InternalHttp;
+import com.fazeel.quizcadia.web.Breakers;
+import io.github.resilience4j.circuitbreaker.CircuitBreaker;
 
 /** Searches the game manager. The query is passed as an encoded URI variable (it used to be concatenated). */
 @Component
@@ -21,16 +23,19 @@ public class GameManagerCatalog implements GameCatalog {
 	private static final Logger log = LoggerFactory.getLogger(GameManagerCatalog.class);
 
 	private final RestClient http;
+	private final CircuitBreaker breaker;
 
-	public GameManagerCatalog(RestClient.Builder builder, @Value("${quizcadia.game-manager-url}") String baseUrl) {
+	public GameManagerCatalog(RestClient.Builder builder, @Value("${quizcadia.game-manager-url}") String baseUrl,
+			Breakers breakers) {
 		this.http = builder.baseUrl(baseUrl).requestFactory(InternalHttp.requestFactory()).build();
+		this.breaker = breakers.forService("game-manager");
 	}
 
 	@Override
 	public List<GameCard> gamesNamedLike(String prefix) {
 		try {
-			GameCard[] cards = http.get().uri("/api/game/gamesNameStartsWith/{prefix}", prefix).retrieve()
-					.body(GameCard[].class);
+			GameCard[] cards = Breakers.call(breaker, () -> http.get()
+					.uri("/api/game/gamesNameStartsWith/{prefix}", prefix).retrieve().body(GameCard[].class));
 			return cards == null ? List.of() : Arrays.asList(cards);
 		}
 		catch (RestClientException e) {

@@ -139,7 +139,10 @@ is. Each service answers its own errors (404, 409, 400 with field messages...). 
 - Anything else becomes 500 with a short `errorId` that is also in the log. Internals never reach the browser.
 
 Calls between services give up after 3 s connecting and 15 s waiting (`InternalHttp`). A Kafka that is down holds a
-request for at most 5 s (`max.block.ms`).
+request for at most 5 s (`max.block.ms`). Calls to the question service, the game manager and the AI model also go through
+circuit breakers (`Breakers`, Resilience4j). When most recent calls to one have failed, calls fail at once for 30 s
+(2 minutes for the AI model) and use their fallback, instead of every player waiting for a timeout. Each
+breaker's state is in Prometheus as `resilience4j_circuitbreaker_state`.
 
 Retries are safe: every write from the app carries an `Idempotency-Key`, and `IdempotencyFilter` (in
 `quizcadia-security`, copied into login) answers a repeat with the first answer for 10 minutes instead of doing it
