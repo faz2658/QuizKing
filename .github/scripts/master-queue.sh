@@ -52,6 +52,9 @@ while true; do
     sleep "$POLL"
     continue
   fi
+  # Keep only the fields reasons() reads: it hands the deploy runs to jq as a command-line argument, and the full API
+  # answer (~400 KB for 30 runs) is over Linux's 128 KB limit for one argument ("Argument list too long", exit 126).
+  deploys="$(jq -c '{workflow_runs: [.workflow_runs[] | {status, display_title, html_url, created_at}]}' <<<"$deploys")"
   why="$(reasons "$ci" "$deploys")"
   if [ -z "$why" ]; then
     echo "Our turn after $(( $(date -u +%s) - started ))s: building."
