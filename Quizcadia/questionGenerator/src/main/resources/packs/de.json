@@ -9280,6 +9280,1123 @@
    ]
   },
   {
+   "category": "Animals",
+   "name": "Animals",
+   "questions": [
+    {
+     "q": "Which bird of prey appears on Germany's coat of arms?",
+     "a": "Eagle",
+     "wrong": [
+      "Falcon",
+      "Owl",
+      "Hawk"
+     ],
+     "level": 1,
+     "why": "It is called the Bundesadler."
+    },
+    {
+     "q": "Which large wild animal returned to Germany around 2000 after 150 years?",
+     "a": "Grey wolf",
+     "wrong": [
+      "Brown bear",
+      "Lynx",
+      "Bison"
+     ],
+     "level": 1,
+     "why": "The first pack settled in Lusatia in Saxony."
+    },
+    {
+     "q": "Which brown bear was shot in Bavaria in 2006 as the first wild bear in Germany for 170 years?",
+     "a": "Bruno",
+     "wrong": [
+      "Knut",
+      "Ursus",
+      "Teddy"
+     ],
+     "level": 1,
+     "why": "He had wandered in from Italy."
+    },
+    {
+     "q": "Which polar bear cub at Berlin Zoo became world famous in 2007?",
+     "a": "Knut",
+     "wrong": [
+      "Bruno",
+      "Flocke",
+      "Fiete"
+     ],
+     "level": 1,
+     "why": "He was raised by a zookeeper."
+    },
+    {
+     "q": "Which Berlin zoo is the oldest in Germany?",
+     "a": "Berlin Zoological Garden",
+     "wrong": [
+      "Tierpark Berlin",
+      "Hagenbeck",
+      "Leipzig Zoo"
+     ],
+     "level": 1,
+     "why": "It opened in 1844."
+    },
+    {
+     "q": "Which Hamburg zoo first used open enclosures without bars?",
+     "a": "Tierpark Hagenbeck",
+     "wrong": [
+      "Hamburg Zoo",
+      "Berlin Zoo",
+      "Wilhelma"
+     ],
+     "level": 1,
+     "why": "Carl Hagenbeck opened it in 1907."
+    },
+    {
+     "q": "Which Stuttgart zoo is also a historic botanical garden?",
+     "a": "Wilhelma",
+     "wrong": [
+      "Hellabrunn",
+      "Hagenbeck",
+      "Opel Zoo"
+     ],
+     "level": 1,
+     "why": "It was built as a Moorish-style royal garden."
+    },
+    {
+     "q": "Which Munich zoo was the world's first 'geo-zoo', grouping animals by continent?",
+     "a": "Hellabrunn Zoo",
+     "wrong": [
+      "Wilhelma",
+      "Leipzig Zoo",
+      "Berlin Zoo"
+     ],
+     "level": 1,
+     "why": "It opened in 1911."
+    },
+    {
+     "q": "Which Leipzig zoo attraction is a huge indoor tropical hall?",
+     "a": "Gondwanaland",
+     "wrong": [
+      "Pongoland",
+      "Tropenhaus",
+      "Amazonia"
+     ],
+     "level": 1,
+     "why": "It opened in 2011."
+    },
+    {
+     "q": "Which wild cat has been reintroduced to the Harz mountains?",
+     "a": "Eurasian lynx",
+     "wrong": [
+      "Wildcat",
+      "Puma",
+      "Leopard"
+     ],
+     "level": 1,
+     "why": "Lynx were released there from 2000."
+    },
+    {
+     "q": "Which small striped wild cat lives in German forests like the Eifel?",
+     "a": "European wildcat",
+     "wrong": [
+      "Lynx",
+      "Pallas's cat",
+      "Serval"
+     ],
+     "level": 1,
+     "why": "It looks like a stocky tabby cat."
+    },
+    {
+     "q": "Which large deer is called the 'king of the forest' in Germany?",
+     "a": "Red deer",
+     "wrong": [
+      "Roe deer",
+      "Fallow deer",
+      "Elk"
+     ],
+     "level": 1,
+     "why": "Stags roar during the autumn rut."
+    },
+    {
+     "q": "Which small deer is the most common in Germany?",
+     "a": "Roe deer",
+     "wrong": [
+      "Red deer",
+      "Fallow deer",
+      "Sika deer"
+     ],
+     "level": 1,
+     "why": "It is called Reh in German."
+    },
+    {
+     "q": "Which wild pig is common in German forests and even in Berlin suburbs?",
+     "a": "Wild boar",
+     "wrong": [
+      "Warthog",
+      "Peccary",
+      "Babirusa"
+     ],
+     "level": 1,
+     "why": "Thousands live in and around Berlin."
+    },
+    {
+     "q": "Which masked American animal has spread widely across Germany?",
+     "a": "Raccoon",
+     "wrong": [
+      "Skunk",
+      "Opossum",
+      "Coati"
+     ],
+     "level": 1,
+     "why": "Kassel has a famous population."
+    },
+    {
+     "q": "Which rodent has returned to the Elbe and other German rivers?",
+     "a": "Eurasian beaver",
+     "wrong": [
+      "Coypu",
+      "Muskrat",
+      "Marmot"
+     ],
+     "level": 1,
+     "why": "It was almost wiped out by 1900."
+    },
+    {
+     "q": "Which South American rodent now lives wild along German rivers?",
+     "a": "Coypu (nutria)",
+     "wrong": [
+      "Capybara",
+      "Chinchilla",
+      "Guinea pig"
+     ],
+     "level": 1,
+     "why": "It escaped from fur farms."
+    },
+    {
+     "q": "Which red-furred animal lives in German parks and gardens?",
+     "a": "Red squirrel",
+     "wrong": [
+      "Grey squirrel",
+      "Chipmunk",
+      "Dormouse"
+     ],
+     "level": 1,
+     "why": "It is called Eichhörnchen."
+    },
+    {
+     "q": "Which German rodent is famous for sleeping through winter?",
+     "a": "Edible dormouse",
+     "wrong": [
+      "Hamster",
+      "Marmot",
+      "Squirrel"
+     ],
+     "level": 1,
+     "why": "In German it is the Siebenschläfer."
+    },
+    {
+     "q": "Which spiny animal hibernates in German gardens over winter?",
+     "a": "Hedgehog",
+     "wrong": [
+      "Porcupine",
+      "Mole",
+      "Shrew"
+     ],
+     "level": 1,
+     "why": "People leave leaf piles for them."
+    },
+    {
+     "q": "Which animal leaves molehills in German lawns?",
+     "a": "Mole",
+     "wrong": [
+      "Vole",
+      "Hedgehog",
+      "Shrew"
+     ],
+     "level": 1,
+     "why": "It is protected in Germany."
+    },
+    {
+     "q": "Which hamster that lives in German fields is now critically endangered?",
+     "a": "European hamster",
+     "wrong": [
+      "Golden hamster",
+      "Dwarf hamster",
+      "Chinese hamster"
+     ],
+     "level": 1,
+     "why": "Farming changes destroyed its habitat."
+    },
+    {
+     "q": "Which large white bird nests on church roofs and chimneys in Germany?",
+     "a": "White stork",
+     "wrong": [
+      "Grey heron",
+      "Crane",
+      "Spoonbill"
+     ],
+     "level": 1,
+     "why": "It is said to bring babies."
+    },
+    {
+     "q": "Which German village in Brandenburg is famous as a stork village?",
+     "a": "Rühstädt",
+     "wrong": [
+      "Bergen",
+      "Storkow",
+      "Wust"
+     ],
+     "level": 1,
+     "why": "Dozens of pairs nest there."
+    },
+    {
+     "q": "Which tall grey birds stop in huge numbers in Mecklenburg each autumn?",
+     "a": "Common cranes",
+     "wrong": [
+      "White storks",
+      "Grey herons",
+      "Flamingos"
+     ],
+     "level": 1,
+     "why": "Up to 70,000 rest near Rügen."
+    },
+    {
+     "q": "Which small black bird with a yellow beak sings in German gardens?",
+     "a": "Blackbird",
+     "wrong": [
+      "Starling",
+      "Crow",
+      "Jackdaw"
+     ],
+     "level": 1,
+     "why": "In German it is the Amsel."
+    },
+    {
+     "q": "Which bird's call is used in German cuckoo clocks?",
+     "a": "Cuckoo",
+     "wrong": [
+      "Owl",
+      "Woodpecker",
+      "Quail"
+     ],
+     "level": 1,
+     "why": "It lays its eggs in other birds' nests."
+    },
+    {
+     "q": "Which small bird with a red breast is common in German gardens?",
+     "a": "Robin",
+     "wrong": [
+      "Bullfinch",
+      "Goldfinch",
+      "Chaffinch"
+     ],
+     "level": 1,
+     "why": "It is called Rotkehlchen."
+    },
+    {
+     "q": "Which sociable bird is famous for huge swirling flocks in autumn?",
+     "a": "Starling",
+     "wrong": [
+      "Swallow",
+      "Sparrow",
+      "Swift"
+     ],
+     "level": 1,
+     "why": "The swirling is called a murmuration."
+    },
+    {
+     "q": "Which fast falcon nests on tall churches and towers in German cities?",
+     "a": "Peregrine falcon",
+     "wrong": [
+      "Kestrel",
+      "Red kite",
+      "Buzzard"
+     ],
+     "level": 1,
+     "why": "It is the fastest animal on Earth in a dive."
+    },
+    {
+     "q": "Which bird of prey with a forked tail lives mostly in Germany?",
+     "a": "Red kite",
+     "wrong": [
+      "Black kite",
+      "Buzzard",
+      "Osprey"
+     ],
+     "level": 1,
+     "why": "About half the world's red kites breed in Germany."
+    },
+    {
+     "q": "Which large bird of prey nests on Baltic and lake shores in northern Germany?",
+     "a": "White-tailed eagle",
+     "wrong": [
+      "Golden eagle",
+      "Osprey",
+      "Kestrel"
+     ],
+     "level": 1,
+     "why": "It is Germany's largest bird of prey."
+    },
+    {
+     "q": "Which eagle lives in the Bavarian Alps?",
+     "a": "Golden eagle",
+     "wrong": [
+      "White-tailed eagle",
+      "Bald eagle",
+      "Booted eagle"
+     ],
+     "level": 1,
+     "why": "There are about 50 pairs in Bavaria."
+    },
+    {
+     "q": "Which owl is the largest in Germany?",
+     "a": "Eurasian eagle-owl",
+     "wrong": [
+      "Barn owl",
+      "Tawny owl",
+      "Snowy owl"
+     ],
+     "level": 1,
+     "why": "It can catch foxes."
+    },
+    {
+     "q": "Which owl with a heart-shaped face nests in barns and church towers?",
+     "a": "Barn owl",
+     "wrong": [
+      "Tawny owl",
+      "Little owl",
+      "Long-eared owl"
+     ],
+     "level": 1,
+     "why": "It hunts mice at night."
+    },
+    {
+     "q": "Which black bird with a yellow beak lives high in the Alps?",
+     "a": "Alpine chough",
+     "wrong": [
+      "Raven",
+      "Jackdaw",
+      "Magpie"
+     ],
+     "level": 1,
+     "why": "It follows hikers for food."
+    },
+    {
+     "q": "Which wild goat with curved horns lives in the Bavarian Alps?",
+     "a": "Alpine ibex",
+     "wrong": [
+      "Chamois",
+      "Mouflon",
+      "Markhor"
+     ],
+     "level": 1,
+     "why": "It climbs very steep rock."
+    },
+    {
+     "q": "Which nimble goat-antelope lives in the German Alps?",
+     "a": "Chamois",
+     "wrong": [
+      "Ibex",
+      "Mouflon",
+      "Musk ox"
+     ],
+     "level": 1,
+     "why": "It is called Gämse in German."
+    },
+    {
+     "q": "Which whistling rodent lives in the Alps?",
+     "a": "Alpine marmot",
+     "wrong": [
+      "Ground squirrel",
+      "Prairie dog",
+      "Beaver"
+     ],
+     "level": 1,
+     "why": "It hibernates for six months."
+    },
+    {
+     "q": "Which seal is the most common on Germany's North Sea coast?",
+     "a": "Harbour seal",
+     "wrong": [
+      "Grey seal",
+      "Ringed seal",
+      "Monk seal"
+     ],
+     "level": 1,
+     "why": "Many rest on sandbanks."
+    },
+    {
+     "q": "Which German seal station near Norden rescues orphaned pups?",
+     "a": "Seal station Norddeich",
+     "wrong": [
+      "Seal station Friedrichskoog",
+      "Seal centre Hel",
+      "Seal sanctuary Pieterburen"
+     ],
+     "level": 1,
+     "why": "It is in Lower Saxony."
+    },
+    {
+     "q": "Which small whale lives in the Baltic and North Sea around Germany?",
+     "a": "Harbour porpoise",
+     "wrong": [
+      "Bottlenose dolphin",
+      "Orca",
+      "Minke whale"
+     ],
+     "level": 1,
+     "why": "The Baltic population is critically endangered."
+    },
+    {
+     "q": "Which large white seabird breeds on Helgoland's cliffs?",
+     "a": "Northern gannet",
+     "wrong": [
+      "Puffin",
+      "Albatross",
+      "Pelican"
+     ],
+     "level": 1,
+     "why": "It dives into the sea from high up."
+    },
+    {
+     "q": "Which island off Germany is the only place in the country where seabirds nest on cliffs?",
+     "a": "Helgoland",
+     "wrong": [
+      "Sylt",
+      "Rügen",
+      "Amrum"
+     ],
+     "level": 1,
+     "why": "Guillemots and gannets breed there."
+    },
+    {
+     "q": "Which fish once swam up the Rhine in huge numbers and is now being brought back?",
+     "a": "Atlantic salmon",
+     "wrong": [
+      "Carp",
+      "Pike",
+      "Eel"
+     ],
+     "level": 1,
+     "why": "Dams and pollution wiped it out by the 1950s."
+    },
+    {
+     "q": "Which fish is traditionally eaten in Germany at Christmas or New Year?",
+     "a": "Carp",
+     "wrong": [
+      "Salmon",
+      "Herring",
+      "Trout"
+     ],
+     "level": 1,
+     "why": "Some people keep a scale in their wallet for luck."
+    },
+    {
+     "q": "Which pickled fish is a classic German hangover cure?",
+     "a": "Rollmops",
+     "wrong": [
+      "Matjes",
+      "Bismarck herring",
+      "Kipper"
+     ],
+     "level": 1,
+     "why": "It is herring rolled around a gherkin."
+    },
+    {
+     "q": "Which mysterious fish migrates from German rivers to the Sargasso Sea to spawn?",
+     "a": "European eel",
+     "wrong": [
+      "Atlantic salmon",
+      "Sturgeon",
+      "Trout"
+     ],
+     "level": 1,
+     "why": "The young drift back across the Atlantic."
+    },
+    {
+     "q": "Which beetle is a symbol of luck in Germany?",
+     "a": "Ladybird",
+     "wrong": [
+      "Stag beetle",
+      "Dung beetle",
+      "Cockchafer"
+     ],
+     "level": 1,
+     "why": "It is called Marienkäfer."
+    },
+    {
+     "q": "Which large beetle with antler-like jaws lives in old German oak forests?",
+     "a": "Stag beetle",
+     "wrong": [
+      "Rhinoceros beetle",
+      "Cockchafer",
+      "Longhorn beetle"
+     ],
+     "level": 1,
+     "why": "It is Germany's largest beetle."
+    },
+    {
+     "q": "Which brown beetle appears in May and stars in a Wilhelm Busch story?",
+     "a": "Cockchafer (Maikäfer)",
+     "wrong": [
+      "Ladybird",
+      "Stag beetle",
+      "June bug"
+     ],
+     "level": 1,
+     "why": "Max and Moritz put them in Uncle Fritz's bed."
+    },
+    {
+     "q": "Which insect is famous for collecting nectar for honey in German meadows?",
+     "a": "Honey bee",
+     "wrong": [
+      "Bumblebee",
+      "Wasp",
+      "Hornet"
+     ],
+     "level": 1,
+     "why": "Germany has over a million bee colonies."
+    },
+    {
+     "q": "Which large wasp is protected by law in Germany?",
+     "a": "Hornet",
+     "wrong": [
+      "Yellowjacket",
+      "Paper wasp",
+      "Mud dauber"
+     ],
+     "level": 1,
+     "why": "It is less aggressive than people think."
+    },
+    {
+     "q": "Which German dog breed was bred to herd and guard sheep?",
+     "a": "German Shepherd",
+     "wrong": [
+      "Rottweiler",
+      "Dobermann",
+      "Boxer"
+     ],
+     "level": 1,
+     "why": "It is one of the world's most popular police dogs."
+    },
+    {
+     "q": "Which German dog breed was bred by a tax collector named Dobermann?",
+     "a": "Dobermann",
+     "wrong": [
+      "Rottweiler",
+      "Weimaraner",
+      "Boxer"
+     ],
+     "level": 1,
+     "why": "Louis Dobermann lived in Apolda."
+    },
+    {
+     "q": "Which German dog breed comes from a Roman town in Württemberg?",
+     "a": "Rottweiler",
+     "wrong": [
+      "Dobermann",
+      "Leonberger",
+      "German Pinscher"
+     ],
+     "level": 1,
+     "why": "It once herded cattle to market."
+    },
+    {
+     "q": "Which German dog breed has a long body and was bred to hunt badgers?",
+     "a": "Dachshund",
+     "wrong": [
+      "Beagle",
+      "Basset Hound",
+      "Corgi"
+     ],
+     "level": 1,
+     "why": "Its name means 'badger dog'."
+    },
+    {
+     "q": "Which grey German hunting dog is called the 'grey ghost'?",
+     "a": "Weimaraner",
+     "wrong": [
+      "German Shorthaired Pointer",
+      "Vizsla",
+      "Pudelpointer"
+     ],
+     "level": 1,
+     "why": "It comes from Weimar."
+    },
+    {
+     "q": "Which German dog breed was originally a water retriever, despite being linked to France?",
+     "a": "Poodle",
+     "wrong": [
+      "Bichon",
+      "Schnauzer",
+      "Spaniel"
+     ],
+     "level": 1,
+     "why": "Its name comes from the German 'pudeln', to splash."
+    },
+    {
+     "q": "Which German dog breed with a beard comes in three sizes?",
+     "a": "Schnauzer",
+     "wrong": [
+      "Pinscher",
+      "Terrier",
+      "Affenpinscher"
+     ],
+     "level": 1,
+     "why": "Its name means 'snouter'."
+    },
+    {
+     "q": "Which large German dog breed has a black mask and is named after a boxing-style play?",
+     "a": "Boxer",
+     "wrong": [
+      "Great Dane",
+      "Mastiff",
+      "Bulldog"
+     ],
+     "level": 1,
+     "why": "It stands on its hind legs and 'boxes'."
+    },
+    {
+     "q": "Which giant dog breed is called the 'Apollo of dogs' and comes from Germany?",
+     "a": "Great Dane",
+     "wrong": [
+      "Leonberger",
+      "Newfoundland",
+      "Irish Wolfhound"
+     ],
+     "level": 1,
+     "why": "In German it is the Deutsche Dogge."
+    },
+    {
+     "q": "Which fluffy small German dog is named after the Pomerania region?",
+     "a": "Pomeranian",
+     "wrong": [
+      "Maltese",
+      "Pekingese",
+      "Papillon"
+     ],
+     "level": 1,
+     "why": "It is a small Spitz."
+    },
+    {
+     "q": "Which large German dog breed was bred to look like the lion on its town's coat of arms?",
+     "a": "Leonberger",
+     "wrong": [
+      "Great Dane",
+      "Saint Bernard",
+      "Hovawart"
+     ],
+     "level": 1,
+     "why": "It comes from Leonberg near Stuttgart."
+    },
+    {
+     "q": "Which German horse breed from Lower Saxony is famous in show jumping?",
+     "a": "Hanoverian",
+     "wrong": [
+      "Trakehner",
+      "Holsteiner",
+      "Oldenburger"
+     ],
+     "level": 1,
+     "why": "Many Olympic horses are Hanoverians."
+    },
+    {
+     "q": "Which German horse breed has an elk antler brand and comes from East Prussia?",
+     "a": "Trakehner",
+     "wrong": [
+      "Hanoverian",
+      "Holsteiner",
+      "Haflinger"
+     ],
+     "level": 1,
+     "why": "Its stud was founded in 1732."
+    },
+    {
+     "q": "Which heavy horse breed from Germany's Black Forest has a chestnut coat and flaxen mane?",
+     "a": "Black Forest horse",
+     "wrong": [
+      "Haflinger",
+      "Noriker",
+      "Rhenish German Coldblood"
+     ],
+     "level": 1,
+     "why": "It once worked in forestry."
+    },
+    {
+     "q": "Which wild horses roam the Dülmen area of Westphalia?",
+     "a": "Dülmen ponies",
+     "wrong": [
+      "Przewalski's horses",
+      "Exmoor ponies",
+      "Konik horses"
+     ],
+     "level": 1,
+     "why": "A yearly roundup draws crowds."
+    },
+    {
+     "q": "Which cow breed with black and white patches is the most common in Germany?",
+     "a": "Holstein",
+     "wrong": [
+      "Brown Swiss",
+      "Simmental",
+      "Jersey"
+     ],
+     "level": 1,
+     "why": "It gives a lot of milk."
+    },
+    {
+     "q": "Which spotted pig breed comes from Schwäbisch Hall?",
+     "a": "Swabian-Hall pig",
+     "wrong": [
+      "Berkshire",
+      "Tamworth",
+      "Large Black"
+     ],
+     "level": 1,
+     "why": "It almost died out by the 1980s."
+    },
+    {
+     "q": "Which extinct wild cattle once roamed German forests?",
+     "a": "Aurochs",
+     "wrong": [
+      "Bison",
+      "Yak",
+      "Gaur"
+     ],
+     "level": 2,
+     "why": "The last one died in Poland in 1627."
+    },
+    {
+     "q": "Which German brothers tried to recreate the aurochs in the 1920s?",
+     "a": "Heck brothers",
+     "wrong": [
+      "Brothers Grimm",
+      "Humboldt brothers",
+      "Wright brothers"
+     ],
+     "level": 2,
+     "why": "The result is called Heck cattle."
+    },
+    {
+     "q": "Which European bison herd roams wild in the Rothaar Mountains?",
+     "a": "Wisent",
+     "wrong": [
+      "American bison",
+      "Aurochs",
+      "Water buffalo"
+     ],
+     "level": 2,
+     "why": "It was released there in 2013."
+    },
+    {
+     "q": "Which ancient-looking ground bird returned to Brandenburg's fields with conservation help?",
+     "a": "Great bustard",
+     "wrong": [
+      "Capercaillie",
+      "Pheasant",
+      "Grey partridge"
+     ],
+     "level": 2,
+     "why": "It is one of the heaviest flying birds."
+    },
+    {
+     "q": "Which large forest grouse lives in the Black Forest and Bavarian Alps?",
+     "a": "Capercaillie",
+     "wrong": [
+      "Black grouse",
+      "Hazel grouse",
+      "Pheasant"
+     ],
+     "level": 2,
+     "why": "Males display loudly in spring."
+    },
+    {
+     "q": "Which colourful bird digs nest burrows in German riverbanks?",
+     "a": "Kingfisher",
+     "wrong": [
+      "Bee-eater",
+      "Roller",
+      "Hoopoe"
+     ],
+     "level": 2,
+     "why": "It dives into water for fish."
+    },
+    {
+     "q": "Which shy black stork nests deep in German forests?",
+     "a": "Black stork",
+     "wrong": [
+      "White stork",
+      "Cormorant",
+      "Glossy ibis"
+     ],
+     "level": 2,
+     "why": "It avoids people, unlike the white stork."
+    },
+    {
+     "q": "Which bald ibis is being reintroduced to Bavaria and Austria?",
+     "a": "Northern bald ibis",
+     "wrong": [
+      "Sacred ibis",
+      "Glossy ibis",
+      "Spoonbill"
+     ],
+     "level": 2,
+     "why": "Microlight planes guide them to Italy."
+    },
+    {
+     "q": "Which black diving bird is disliked by many German fishermen?",
+     "a": "Great cormorant",
+     "wrong": [
+      "Grey heron",
+      "Gannet",
+      "Merganser"
+     ],
+     "level": 2,
+     "why": "Its numbers have grown sharply."
+    },
+    {
+     "q": "Which national park protects the Wadden Sea's wildlife in Schleswig-Holstein?",
+     "a": "Schleswig-Holstein Wadden Sea National Park",
+     "wrong": [
+      "Jasmund National Park",
+      "Müritz National Park",
+      "Hainich National Park"
+     ],
+     "level": 2,
+     "why": "It is Germany's largest national park."
+    },
+    {
+     "q": "Which Thuringian national park protects old beech forests?",
+     "a": "Hainich National Park",
+     "wrong": [
+      "Harz National Park",
+      "Kellerwald-Edersee National Park",
+      "Eifel National Park"
+     ],
+     "level": 2,
+     "why": "It is a UNESCO site."
+    },
+    {
+     "q": "Which national park on Rügen has old beech woods and chalk cliffs?",
+     "a": "Jasmund National Park",
+     "wrong": [
+      "Hainich National Park",
+      "Vorpommern Lagoon Area",
+      "Müritz National Park"
+     ],
+     "level": 2,
+     "why": "It is Germany's smallest national park."
+    },
+    {
+     "q": "Which salamander with yellow and black spots lives in German forests?",
+     "a": "Fire salamander",
+     "wrong": [
+      "Alpine salamander",
+      "Great crested newt",
+      "Axolotl"
+     ],
+     "level": 2,
+     "why": "A fungus is killing many of them."
+    },
+    {
+     "q": "Which all-black salamander lives in the Bavarian Alps?",
+     "a": "Alpine salamander",
+     "wrong": [
+      "Fire salamander",
+      "Olm",
+      "Smooth newt"
+     ],
+     "level": 2,
+     "why": "It gives birth to live young."
+    },
+    {
+     "q": "Which small toad has a bright yellow belly it shows to predators?",
+     "a": "Yellow-bellied toad",
+     "wrong": [
+      "Natterjack toad",
+      "Common toad",
+      "Midwife toad"
+     ],
+     "level": 2,
+     "why": "It lives in puddles and ruts."
+    },
+    {
+     "q": "Which snake is the only venomous one widespread in Germany?",
+     "a": "Common European adder",
+     "wrong": [
+      "Grass snake",
+      "Smooth snake",
+      "Aesculapian snake"
+     ],
+     "level": 2,
+     "why": "It is shy and rarely bites."
+    },
+    {
+     "q": "Which harmless snake with yellow neck patches is Germany's most common?",
+     "a": "Grass snake",
+     "wrong": [
+      "Adder",
+      "Smooth snake",
+      "Dice snake"
+     ],
+     "level": 2,
+     "why": "It often swims in ponds."
+    },
+    {
+     "q": "Which long climbing snake lives around Schlangenbad in Hesse?",
+     "a": "Aesculapian snake",
+     "wrong": [
+      "Grass snake",
+      "Adder",
+      "Dice snake"
+     ],
+     "level": 2,
+     "why": "It is linked with the Greek god of medicine."
+    },
+    {
+     "q": "Which lizard without legs is often mistaken for a snake in Germany?",
+     "a": "Slow worm",
+     "wrong": [
+      "Sand lizard",
+      "Common lizard",
+      "Wall lizard"
+     ],
+     "level": 2,
+     "why": "It can drop its tail."
+    },
+    {
+     "q": "Which German lizard's males turn bright green in spring?",
+     "a": "Sand lizard",
+     "wrong": [
+      "Common lizard",
+      "Wall lizard",
+      "Slow worm"
+     ],
+     "level": 2,
+     "why": "It lives on heaths and sunny banks."
+    },
+    {
+     "q": "Which bird was Germany's first 'Bird of the Year' in 1971?",
+     "a": "Peregrine falcon",
+     "wrong": [
+      "White stork",
+      "Barn owl",
+      "Skylark"
+     ],
+     "level": 2,
+     "why": "NABU picks a bird each year."
+    },
+    {
+     "q": "Which German nature group organises the Bird of the Year vote?",
+     "a": "NABU",
+     "wrong": [
+      "BUND",
+      "WWF Germany",
+      "Greenpeace Germany"
+     ],
+     "level": 2,
+     "why": "It was founded in 1899."
+    },
+    {
+     "q": "Which bat is one of the smallest in Germany?",
+     "a": "Common pipistrelle",
+     "wrong": [
+      "Greater mouse-eared bat",
+      "Noctule",
+      "Brown long-eared bat"
+     ],
+     "level": 2,
+     "why": "It weighs about 5 g."
+    },
+    {
+     "q": "Which Spandau fortress is home to over 10,000 hibernating bats?",
+     "a": "Spandau Citadel",
+     "wrong": [
+      "Kaiserburg",
+      "Festung Königstein",
+      "Marienberg Fortress"
+     ],
+     "level": 2,
+     "why": "Visitors can see them in a bat cellar."
+    },
+    {
+     "q": "Which giant fish once swam up the Elbe and Rhine and is being reintroduced?",
+     "a": "European sturgeon",
+     "wrong": [
+      "Atlantic salmon",
+      "Wels catfish",
+      "Pike"
+     ],
+     "level": 3,
+     "why": "It can reach 5 m long."
+    },
+    {
+     "q": "Which big catfish lives in German lakes and can exceed 2 m?",
+     "a": "Wels catfish",
+     "wrong": [
+      "Pike",
+      "Sturgeon",
+      "Carp"
+     ],
+     "level": 3,
+     "why": "Rumours say they eat ducks."
+    },
+    {
+     "q": "Which songbird sings at night in Berlin's parks in spring?",
+     "a": "Nightingale",
+     "wrong": [
+      "Skylark",
+      "Blackcap",
+      "Song thrush"
+     ],
+     "level": 3,
+     "why": "Berlin has more nightingales than most cities."
+    },
+    {
+     "q": "Which pinkish bird with a fan-shaped crest is a rare breeder in eastern Germany?",
+     "a": "Hoopoe",
+     "wrong": [
+      "Bee-eater",
+      "Roller",
+      "Flamingo"
+     ],
+     "level": 3,
+     "why": "Its call sounds like 'oop-oop-oop'."
+    },
+    {
+     "q": "Which German city has a famous statue of four animals standing on each other?",
+     "a": "Bremen",
+     "wrong": [
+      "Hamburg",
+      "Hanover",
+      "Hamelin"
+     ],
+     "level": 1,
+     "why": "They are the Town Musicians."
+    },
+    {
+     "q": "Which brown and white Bavarian cow breed is used for both milk and meat?",
+     "a": "Simmental (Fleckvieh)",
+     "wrong": [
+      "Holstein",
+      "Angus",
+      "Highland"
+     ],
+     "level": 1,
+     "why": "It is the most common breed in Bavaria."
+    },
+    {
+     "q": "What is the large eagle sculpture in the Bundestag nicknamed?",
+     "a": "Fat hen (Fette Henne)",
+     "wrong": [
+      "Big bird",
+      "Iron eagle",
+      "Golden goose"
+     ],
+     "level": 1,
+     "why": "It was designed by Ludwig Gies."
+    }
+   ]
+  },
+  {
    "category": "General Knowledge",
    "name": "General Knowledge",
    "questions": [
@@ -9557,6 +10674,1040 @@
       "Emil von Behring"
      ],
      "why": "He announced it in 1882."
+    },
+    {
+     "q": "Which German inventor patented the diesel engine in 1893?",
+     "a": "Rudolf Diesel",
+     "wrong": [
+      "Nikolaus Otto",
+      "Gottlieb Daimler",
+      "Wilhelm Maybach"
+     ],
+     "level": 1,
+     "why": "He vanished from a ship in 1913."
+    },
+    {
+     "q": "Which German built the first four-stroke petrol engine in 1876?",
+     "a": "Nikolaus Otto",
+     "wrong": [
+      "Rudolf Diesel",
+      "Carl Benz",
+      "Gottlieb Daimler"
+     ],
+     "level": 1,
+     "why": "It is called the Otto engine."
+    },
+    {
+     "q": "Which German built the first working programmable computer, the Z3, in 1941?",
+     "a": "Konrad Zuse",
+     "wrong": [
+      "Heinz Nixdorf",
+      "Wernher von Braun",
+      "Karl Steinbuch"
+     ],
+     "level": 1,
+     "why": "He built it in Berlin."
+    },
+    {
+     "q": "Which German physicist discovered the quantum of action and won the 1918 Nobel Prize?",
+     "a": "Max Planck",
+     "wrong": [
+      "Werner Heisenberg",
+      "Albert Einstein",
+      "Max Born"
+     ],
+     "level": 1,
+     "why": "A major research society is named after him."
+    },
+    {
+     "q": "Which German physicist is known for the uncertainty principle?",
+     "a": "Werner Heisenberg",
+     "wrong": [
+      "Max Planck",
+      "Erwin Schrödinger",
+      "Max Born"
+     ],
+     "level": 1,
+     "why": "He won the 1932 Nobel Prize."
+    },
+    {
+     "q": "Which German physicist measured electromagnetic waves, giving his name to the unit of frequency?",
+     "a": "Heinrich Hertz",
+     "wrong": [
+      "Georg Ohm",
+      "Wilhelm Weber",
+      "Gustav Kirchhoff"
+     ],
+     "level": 1,
+     "why": "He proved Maxwell's theory in 1887."
+    },
+    {
+     "q": "Which German physicist gave his name to the unit of electrical resistance?",
+     "a": "Georg Ohm",
+     "wrong": [
+      "Heinrich Hertz",
+      "Wilhelm Weber",
+      "Werner von Siemens"
+     ],
+     "level": 1,
+     "why": "He published Ohm's law in 1827."
+    },
+    {
+     "q": "Which German mathematician is called the 'Prince of Mathematicians'?",
+     "a": "Carl Friedrich Gauss",
+     "wrong": [
+      "Gottfried Leibniz",
+      "Bernhard Riemann",
+      "David Hilbert"
+     ],
+     "level": 1,
+     "why": "His face was on the 10 Deutsche Mark note."
+    },
+    {
+     "q": "Which German physicist invented the mercury thermometer?",
+     "a": "Daniel Gabriel Fahrenheit",
+     "wrong": [
+      "Anders Celsius",
+      "Lord Kelvin",
+      "Otto von Guericke"
+     ],
+     "level": 1,
+     "why": "He was born in Danzig."
+    },
+    {
+     "q": "Which German chemist created aspirin at Bayer in 1897?",
+     "a": "Felix Hoffmann",
+     "wrong": [
+      "Fritz Haber",
+      "Robert Bunsen",
+      "Paul Ehrlich"
+     ],
+     "level": 1,
+     "why": "Bayer registered the name in 1899."
+    },
+    {
+     "q": "Which German chemist gave his name to a lab burner?",
+     "a": "Robert Bunsen",
+     "wrong": [
+      "Justus von Liebig",
+      "Fritz Haber",
+      "Friedrich Wöhler"
+     ],
+     "level": 1,
+     "why": "He worked in Heidelberg."
+    },
+    {
+     "q": "Which German explorer and scientist travelled through South America from 1799 to 1804?",
+     "a": "Alexander von Humboldt",
+     "wrong": [
+      "Wilhelm von Humboldt",
+      "Carl Ritter",
+      "Georg Forster"
+     ],
+     "level": 1,
+     "why": "A current off Peru is named after him."
+    },
+    {
+     "q": "Which German rocket engineer led the US Saturn V programme?",
+     "a": "Wernher von Braun",
+     "wrong": [
+      "Hermann Oberth",
+      "Walter Dornberger",
+      "Konrad Zuse"
+     ],
+     "level": 1,
+     "why": "He first built V-2 rockets for Germany."
+    },
+    {
+     "q": "Which German research institute developed the MP3 format?",
+     "a": "Fraunhofer Society",
+     "wrong": [
+      "Max Planck Society",
+      "Siemens",
+      "Bosch"
+     ],
+     "level": 1,
+     "why": "Work was done in Erlangen."
+    },
+    {
+     "q": "Which German company from Stuttgart makes car parts and power tools?",
+     "a": "Bosch",
+     "wrong": [
+      "Siemens",
+      "Continental",
+      "ZF"
+     ],
+     "level": 1,
+     "why": "Robert Bosch founded it in 1886."
+    },
+    {
+     "q": "Which German electrical company was founded by Werner von Siemens in 1847?",
+     "a": "Siemens",
+     "wrong": [
+      "AEG",
+      "Bosch",
+      "Telefunken"
+     ],
+     "level": 1,
+     "why": "It began by building telegraphs."
+    },
+    {
+     "q": "Which German sports brand with three stripes is based in Herzogenaurach?",
+     "a": "Adidas",
+     "wrong": [
+      "Puma",
+      "Jack Wolfskin",
+      "Uhlsport"
+     ],
+     "level": 1,
+     "why": "It was founded by Adi Dassler."
+    },
+    {
+     "q": "Which sports brand was founded by Rudolf Dassler, brother of Adidas's founder?",
+     "a": "Puma",
+     "wrong": [
+      "Adidas",
+      "Reebok",
+      "Kappa"
+     ],
+     "level": 1,
+     "why": "Both companies are in the same small town."
+    },
+    {
+     "q": "Which German company makes the famous gummy bears?",
+     "a": "Haribo",
+     "wrong": [
+      "Katjes",
+      "Trolli",
+      "Storck"
+     ],
+     "level": 1,
+     "why": "Its name comes from Hans Riegel, Bonn."
+    },
+    {
+     "q": "Which German chocolate brand is square?",
+     "a": "Ritter Sport",
+     "wrong": [
+      "Milka",
+      "Kinder",
+      "Lindt"
+     ],
+     "level": 1,
+     "why": "Its slogan is 'Quadratisch. Praktisch. Gut.'."
+    },
+    {
+     "q": "Which chocolate with a purple wrapper and a cow is made in Lörrach?",
+     "a": "Milka",
+     "wrong": [
+      "Ritter Sport",
+      "Kinder",
+      "Sarotti"
+     ],
+     "level": 1,
+     "why": "Its name combines milk and cocoa."
+    },
+    {
+     "q": "Which German supermarket chains are known for discount prices worldwide?",
+     "a": "Aldi and Lidl",
+     "wrong": [
+      "Rewe and Edeka",
+      "Kaufland and Real",
+      "Netto and Penny"
+     ],
+     "level": 1,
+     "why": "Aldi has two separate companies, Nord and Süd."
+    },
+    {
+     "q": "Which German airline has a crane logo?",
+     "a": "Lufthansa",
+     "wrong": [
+      "Eurowings",
+      "Condor",
+      "TUI fly"
+     ],
+     "level": 1,
+     "why": "It was refounded in 1953."
+    },
+    {
+     "q": "What is Germany's national railway called?",
+     "a": "Deutsche Bahn",
+     "wrong": [
+      "Bundesbahn",
+      "Reichsbahn",
+      "DB Regio"
+     ],
+     "level": 1,
+     "why": "Its high-speed trains are called ICE."
+    },
+    {
+     "q": "What are Germany's high-speed trains called?",
+     "a": "ICE",
+     "wrong": [
+      "TGV",
+      "Eurostar",
+      "Railjet"
+     ],
+     "level": 1,
+     "why": "ICE stands for InterCityExpress."
+    },
+    {
+     "q": "Which ticket introduced in 2023 lets people use local transport across Germany for a monthly price?",
+     "a": "Deutschlandticket",
+     "wrong": [
+      "BahnCard",
+      "Interrail",
+      "Länderticket"
+     ],
+     "level": 1,
+     "why": "It began at 49 euros a month."
+    },
+    {
+     "q": "What is the German word for a party with friends on 31 December?",
+     "a": "Silvester",
+     "wrong": [
+      "Fasching",
+      "Kirmes",
+      "Polterabend"
+     ],
+     "level": 1,
+     "why": "Fireworks are set off at midnight."
+    },
+    {
+     "q": "What do Germans do at a 'Polterabend' before a wedding?",
+     "a": "Smash porcelain for good luck",
+     "wrong": [
+      "Light lanterns",
+      "Plant a tree",
+      "Bake a cake"
+     ],
+     "level": 1,
+     "why": "The couple sweep up the pieces together."
+    },
+    {
+     "q": "What do German children open each day from 1 December?",
+     "a": "Advent calendar",
+     "wrong": [
+      "Christmas crackers",
+      "Stockings",
+      "Wish lists"
+     ],
+     "level": 1,
+     "why": "Gerhard Lang printed the first ones in Munich."
+    },
+    {
+     "q": "What do German children leave out on 5 December for St. Nicholas?",
+     "a": "Boots",
+     "wrong": [
+      "Socks",
+      "Plates",
+      "Baskets"
+     ],
+     "level": 1,
+     "why": "They find sweets in them next morning."
+    },
+    {
+     "q": "Which German tradition puts a decorated tree in the home at Christmas?",
+     "a": "Christmas tree",
+     "wrong": [
+      "Yule log",
+      "Christmas pyramid",
+      "Mistletoe"
+     ],
+     "level": 1,
+     "why": "It spread from Germany around the world."
+    },
+    {
+     "q": "Which wreath with four candles marks the weeks before Christmas?",
+     "a": "Advent wreath",
+     "wrong": [
+      "Christmas wreath",
+      "Harvest wreath",
+      "Easter wreath"
+     ],
+     "level": 1,
+     "why": "Johann Hinrich Wichern created it in Hamburg in 1839."
+    },
+    {
+     "q": "What is the hot spiced wine sold at German Christmas markets called?",
+     "a": "Glühwein",
+     "wrong": [
+      "Feuerzangenbowle",
+      "Eierlikör",
+      "Kirsch"
+     ],
+     "level": 1,
+     "why": "It is served in collectible mugs."
+    },
+    {
+     "q": "Which Nuremberg Christmas market is one of the most famous in the world?",
+     "a": "Christkindlesmarkt",
+     "wrong": [
+      "Striezelmarkt",
+      "Weihnachtsdorf",
+      "Winterwelt"
+     ],
+     "level": 1,
+     "why": "It opens with a Christkind prologue."
+    },
+    {
+     "q": "Which Dresden Christmas market dates from 1434?",
+     "a": "Striezelmarkt",
+     "wrong": [
+      "Christkindlesmarkt",
+      "Engelmarkt",
+      "Wintermarkt"
+     ],
+     "level": 1,
+     "why": "It is named after a type of Stollen."
+    },
+    {
+     "q": "What is the German Easter tradition of decorating branches with eggs called?",
+     "a": "Easter egg tree (Ostereierbaum)",
+     "wrong": [
+      "Easter bonfire",
+      "Egg rolling",
+      "Easter wreath"
+     ],
+     "level": 1,
+     "why": "A famous one in Saalfeld had 10,000 eggs."
+    },
+    {
+     "q": "Which animal brings Easter eggs in German tradition?",
+     "a": "Easter Bunny",
+     "wrong": [
+      "Easter Chick",
+      "Easter Lamb",
+      "Easter Fox"
+     ],
+     "level": 1,
+     "why": "The tradition is first recorded in Germany."
+    },
+    {
+     "q": "What is a 'Feierabend' in Germany?",
+     "a": "The end of the working day",
+     "wrong": [
+      "A public holiday",
+      "A birthday party",
+      "A beer festival"
+     ],
+     "level": 1,
+     "why": "People wish each other 'schönen Feierabend'."
+    },
+    {
+     "q": "What is the German idea of cosy comfort, similar to Danish 'hygge'?",
+     "a": "Gemütlichkeit",
+     "wrong": [
+      "Wanderlust",
+      "Fernweh",
+      "Heimat"
+     ],
+     "level": 1,
+     "why": "It is often linked to beer halls."
+    },
+    {
+     "q": "Which German word means joy at others' misfortune?",
+     "a": "Schadenfreude",
+     "wrong": [
+      "Weltschmerz",
+      "Zeitgeist",
+      "Wanderlust"
+     ],
+     "level": 1,
+     "why": "English borrowed it."
+    },
+    {
+     "q": "Which German word means the spirit of the age?",
+     "a": "Zeitgeist",
+     "wrong": [
+      "Weltschmerz",
+      "Angst",
+      "Leitmotiv"
+     ],
+     "level": 1,
+     "why": "It is used in English too."
+    },
+    {
+     "q": "Which German educator founded the first kindergarten in 1837?",
+     "a": "Friedrich Fröbel",
+     "wrong": [
+      "Johann Pestalozzi",
+      "Rudolf Steiner",
+      "Maria Montessori"
+     ],
+     "level": 1,
+     "why": "It was in Bad Blankenburg, Thuringia."
+    },
+    {
+     "q": "Which school movement was founded by Rudolf Steiner in Stuttgart in 1919?",
+     "a": "Waldorf schools",
+     "wrong": [
+      "Montessori schools",
+      "Steiner Institutes",
+      "Free Schools"
+     ],
+     "level": 1,
+     "why": "It began for children of a cigarette factory's workers."
+    },
+    {
+     "q": "Which day are most shops in Germany closed?",
+     "a": "Sunday",
+     "wrong": [
+      "Saturday",
+      "Monday",
+      "Wednesday"
+     ],
+     "level": 1,
+     "why": "It is protected by law."
+    },
+    {
+     "q": "What is the German rule of quiet times called?",
+     "a": "Ruhezeit",
+     "wrong": [
+      "Feierabend",
+      "Mittagspause",
+      "Stille Stunde"
+     ],
+     "level": 1,
+     "why": "Loud noise is not allowed at night and on Sundays."
+    },
+    {
+     "q": "What is the German deposit on bottles and cans called?",
+     "a": "Pfand",
+     "wrong": [
+      "Steuer",
+      "Gebühr",
+      "Rabatt"
+     ],
+     "level": 1,
+     "why": "Machines in supermarkets give money back."
+    },
+    {
+     "q": "Which colour bin is usually for paper in Germany?",
+     "a": "Blue",
+     "wrong": [
+      "Yellow",
+      "Brown",
+      "Black"
+     ],
+     "level": 1,
+     "why": "Yellow is for packaging."
+    },
+    {
+     "q": "Which German dish is a dumpling made from potatoes or bread?",
+     "a": "Knödel",
+     "wrong": [
+      "Spätzle",
+      "Maultaschen",
+      "Flammkuchen"
+     ],
+     "level": 1,
+     "why": "It is a Bavarian favourite."
+    },
+    {
+     "q": "Which soft egg noodles are a Swabian speciality?",
+     "a": "Spätzle",
+     "wrong": [
+      "Maultaschen",
+      "Knödel",
+      "Schupfnudeln"
+     ],
+     "level": 1,
+     "why": "Käsespätzle is the cheesy version."
+    },
+    {
+     "q": "Which Swabian filled pasta pockets were nicknamed 'little cheats of God'?",
+     "a": "Maultaschen",
+     "wrong": [
+      "Spätzle",
+      "Ravioli",
+      "Pierogi"
+     ],
+     "level": 1,
+     "why": "Monks hid meat inside them during Lent."
+    },
+    {
+     "q": "Which thin crispy tart with bacon and onion comes from Alsace and Baden?",
+     "a": "Flammkuchen",
+     "wrong": [
+      "Zwiebelkuchen",
+      "Pizza",
+      "Quiche"
+     ],
+     "level": 1,
+     "why": "It was once baked in the hot oven before bread."
+    },
+    {
+     "q": "Which Rhineland pot roast is marinated for days in vinegar?",
+     "a": "Sauerbraten",
+     "wrong": [
+      "Rouladen",
+      "Gulasch",
+      "Eisbein"
+     ],
+     "level": 1,
+     "why": "It is sometimes made with horse meat."
+    },
+    {
+     "q": "Which beef rolls filled with bacon, onion and gherkin are a classic German dish?",
+     "a": "Rouladen",
+     "wrong": [
+      "Sauerbraten",
+      "Frikadellen",
+      "Leberkäse"
+     ],
+     "level": 1,
+     "why": "They are served with red cabbage."
+    },
+    {
+     "q": "Which Bavarian meat loaf contains neither liver nor cheese despite its name?",
+     "a": "Leberkäse",
+     "wrong": [
+      "Weisswurst",
+      "Leberwurst",
+      "Saumagen"
+     ],
+     "level": 1,
+     "why": "It is often eaten in a bread roll."
+    },
+    {
+     "q": "Which Frankfurt cold sauce is made with seven herbs?",
+     "a": "Green sauce (Grüne Soße)",
+     "wrong": [
+      "Hollandaise",
+      "Remoulade",
+      "Pesto"
+     ],
+     "level": 1,
+     "why": "It is served with eggs and potatoes."
+    },
+    {
+     "q": "Which Frankfurt apple wine is served in a stone jug?",
+     "a": "Ebbelwoi",
+     "wrong": [
+      "Most",
+      "Federweißer",
+      "Glühwein"
+     ],
+     "level": 1,
+     "why": "The jug is called a Bembel."
+    },
+    {
+     "q": "What is new, partly fermented wine sold in autumn called?",
+     "a": "Federweißer",
+     "wrong": [
+      "Glühwein",
+      "Eiswein",
+      "Sekt"
+     ],
+     "level": 1,
+     "why": "It is often eaten with onion tart."
+    },
+    {
+     "q": "What is German sparkling wine called?",
+     "a": "Sekt",
+     "wrong": [
+      "Prosecco",
+      "Cava",
+      "Schorle"
+     ],
+     "level": 1,
+     "why": "Germans drink a lot of it."
+    },
+    {
+     "q": "What is a German 'Schorle'?",
+     "a": "A drink mixed with sparkling water",
+     "wrong": [
+      "A sausage",
+      "A sweet bread",
+      "A beer mug"
+     ],
+     "level": 1,
+     "why": "Apfelschorle mixes apple juice and water."
+    },
+    {
+     "q": "Which Cologne beer is served in small thin glasses?",
+     "a": "Kölsch",
+     "wrong": [
+      "Altbier",
+      "Pils",
+      "Weissbier"
+     ],
+     "level": 1,
+     "why": "Waiters bring new ones until you cover the glass."
+    },
+    {
+     "q": "Which dark top-fermented beer comes from Düsseldorf?",
+     "a": "Altbier",
+     "wrong": [
+      "Kölsch",
+      "Rauchbier",
+      "Bock"
+     ],
+     "level": 1,
+     "why": "Its name means 'old beer'."
+    },
+    {
+     "q": "Which Bamberg beer tastes of smoke?",
+     "a": "Rauchbier",
+     "wrong": [
+      "Bock",
+      "Märzen",
+      "Dunkel"
+     ],
+     "level": 1,
+     "why": "The malt is dried over beechwood fires."
+    },
+    {
+     "q": "Which Bavarian wheat beer is cloudy and yeasty?",
+     "a": "Weissbier (Hefeweizen)",
+     "wrong": [
+      "Pils",
+      "Kölsch",
+      "Helles"
+     ],
+     "level": 1,
+     "why": "It is served in tall curved glasses."
+    },
+    {
+     "q": "What is a one-litre beer mug in Bavaria called?",
+     "a": "Mass",
+     "wrong": [
+      "Humpen",
+      "Seidel",
+      "Krug"
+     ],
+     "level": 1,
+     "why": "It is standard at the Oktoberfest."
+    },
+    {
+     "q": "Which Munich beer hall is the most famous in the world?",
+     "a": "Hofbräuhaus",
+     "wrong": [
+      "Löwenbräukeller",
+      "Augustiner Keller",
+      "Paulaner am Nockherberg"
+     ],
+     "level": 1,
+     "why": "It was founded in 1589 as a royal brewery."
+    },
+    {
+     "q": "In which month does the Munich Oktoberfest mostly take place?",
+     "a": "September",
+     "wrong": [
+      "October",
+      "August",
+      "November"
+     ],
+     "level": 1,
+     "why": "It ends on the first Sunday in October."
+    },
+    {
+     "q": "Which event in 1810 led to the first Oktoberfest?",
+     "a": "A royal wedding",
+     "wrong": [
+      "A harvest festival",
+      "A war victory",
+      "A king's birthday"
+     ],
+     "level": 1,
+     "why": "Crown Prince Ludwig married Therese."
+    },
+    {
+     "q": "What is the Oktoberfest meadow in Munich called?",
+     "a": "Theresienwiese",
+     "wrong": [
+      "Englischer Garten",
+      "Olympiapark",
+      "Marienplatz"
+     ],
+     "level": 1,
+     "why": "Locals call it the 'Wiesn'."
+    },
+    {
+     "q": "Which traditional Bavarian leather trousers are worn at the Oktoberfest?",
+     "a": "Lederhosen",
+     "wrong": [
+      "Dirndl",
+      "Kilt",
+      "Janker"
+     ],
+     "level": 1,
+     "why": "Women often wear a dirndl."
+    },
+    {
+     "q": "On which side does a married woman tie her dirndl bow?",
+     "a": "Right",
+     "wrong": [
+      "Left",
+      "Front centre",
+      "Back"
+     ],
+     "level": 2,
+     "why": "A bow on the left means single."
+    },
+    {
+     "q": "Which Munich building has a famous Glockenspiel?",
+     "a": "New Town Hall",
+     "wrong": [
+      "Old Town Hall",
+      "Frauenkirche",
+      "Residenz"
+     ],
+     "level": 2,
+     "why": "Its figures dance at 11 am."
+    },
+    {
+     "q": "Which German car brand from Ingolstadt has four rings?",
+     "a": "Audi",
+     "wrong": [
+      "Opel",
+      "Porsche",
+      "BMW"
+     ],
+     "level": 2,
+     "why": "The rings stand for four merged companies."
+    },
+    {
+     "q": "Which car brand from Rüsselsheim has a lightning bolt logo?",
+     "a": "Opel",
+     "wrong": [
+      "Audi",
+      "Ford",
+      "Borgward"
+     ],
+     "level": 2,
+     "why": "It is now part of Stellantis."
+    },
+    {
+     "q": "Which Stuttgart car maker built the 911?",
+     "a": "Porsche",
+     "wrong": [
+      "Mercedes-Benz",
+      "BMW",
+      "Audi"
+     ],
+     "level": 2,
+     "why": "Ferdinand Porsche also designed the Beetle."
+    },
+    {
+     "q": "What does BMW stand for?",
+     "a": "Bayerische Motoren Werke",
+     "wrong": [
+      "Berliner Motor Werke",
+      "Bayerische Maschinen Werke",
+      "Bremer Motoren Werke"
+     ],
+     "level": 2,
+     "why": "It began making aircraft engines."
+    },
+    {
+     "q": "Which German company built the first motorcycle in 1885?",
+     "a": "Daimler",
+     "wrong": [
+      "Benz",
+      "BMW",
+      "NSU"
+     ],
+     "level": 2,
+     "why": "It was called the Reitwagen."
+    },
+    {
+     "q": "Which Bavarian-born man made the first blue jeans in America?",
+     "a": "Levi Strauss",
+     "wrong": [
+      "Adi Dassler",
+      "Hugo Boss",
+      "Rudolf Dassler"
+     ],
+     "level": 2,
+     "why": "He was born in Buttenheim."
+    },
+    {
+     "q": "Which German fashion house was founded in Metzingen in 1924?",
+     "a": "Hugo Boss",
+     "wrong": [
+      "Jil Sander",
+      "Escada",
+      "Puma"
+     ],
+     "level": 2,
+     "why": "Metzingen is now an outlet town."
+    },
+    {
+     "q": "Which Thuringian town is famous for glass Christmas ornaments?",
+     "a": "Lauscha",
+     "wrong": [
+      "Meissen",
+      "Seiffen",
+      "Ilmenau"
+     ],
+     "level": 2,
+     "why": "Glassblowers there made baubles from the 1840s."
+    },
+    {
+     "q": "Which Ore Mountains village is famous for wooden toys?",
+     "a": "Seiffen",
+     "wrong": [
+      "Lauscha",
+      "Annaberg",
+      "Oberwiesenthal"
+     ],
+     "level": 2,
+     "why": "It is called the 'toy village'."
+    },
+    {
+     "q": "Which German board game is called 'Don't Get Angry, Man'?",
+     "a": "Mensch ärgere Dich nicht",
+     "wrong": [
+      "Siedler",
+      "Kniffel",
+      "Halma"
+     ],
+     "level": 2,
+     "why": "It is like Ludo."
+    },
+    {
+     "q": "Which German board game about building settlements on an island became a world hit?",
+     "a": "Catan",
+     "wrong": [
+      "Carcassonne",
+      "Ticket to Ride",
+      "Agricola"
+     ],
+     "level": 2,
+     "why": "Klaus Teuber invented it in 1995."
+    },
+    {
+     "q": "Which German company makes the plastic figures called Playmobil?",
+     "a": "Geobra Brandstätter",
+     "wrong": [
+      "Lego",
+      "Schleich",
+      "Haba"
+     ],
+     "level": 2,
+     "why": "It is based in Zirndorf."
+    },
+    {
+     "q": "Which German toy company created the first teddy bear in 1902?",
+     "a": "Steiff",
+     "wrong": [
+      "Haba",
+      "Käthe Kruse",
+      "Schleich"
+     ],
+     "level": 2,
+     "why": "Its toys have a button in the ear."
+    },
+    {
+     "q": "Which German model railway company is based in Göppingen?",
+     "a": "Märklin",
+     "wrong": [
+      "Fleischmann",
+      "Roco",
+      "Piko"
+     ],
+     "level": 2,
+     "why": "It was founded in 1859."
+    },
+    {
+     "q": "Which Hamburg attraction is the world's largest model railway?",
+     "a": "Miniatur Wunderland",
+     "wrong": [
+      "Märklineum",
+      "Modellbahnwelt",
+      "Loxx"
+     ],
+     "level": 2,
+     "why": "It is in the Speicherstadt."
+    },
+    {
+     "q": "Which German typeface designed in 1927 is used widely around the world?",
+     "a": "Futura",
+     "wrong": [
+      "Helvetica",
+      "Garamond",
+      "Times"
+     ],
+     "level": 2,
+     "why": "Paul Renner designed it."
+    },
+    {
+     "q": "Which German standards body created the A4 paper size?",
+     "a": "DIN",
+     "wrong": [
+      "ISO",
+      "VDE",
+      "TÜV"
+     ],
+     "level": 2,
+     "why": "The sizes were set in 1922."
+    },
+    {
+     "q": "What is the German organisation that tests cars and machines for safety called?",
+     "a": "TÜV",
+     "wrong": [
+      "DIN",
+      "ADAC",
+      "BKA"
+     ],
+     "level": 2,
+     "why": "Cars must pass its check every two years."
+    },
+    {
+     "q": "Which German motoring club is Europe's largest?",
+     "a": "ADAC",
+     "wrong": [
+      "AvD",
+      "ACE",
+      "TÜV"
+     ],
+     "level": 2,
+     "why": "It has over 20 million members."
+    },
+    {
+     "q": "Which German invented the first practical bicycle-like 'running machine' in 1817?",
+     "a": "Karl Drais",
+     "wrong": [
+      "Carl Benz",
+      "Gottlieb Daimler",
+      "Philipp Moritz Fischer"
+     ],
+     "level": 3,
+     "why": "It had no pedals."
+    },
+    {
+     "q": "Which German invented the cathode ray tube used in early TVs?",
+     "a": "Karl Ferdinand Braun",
+     "wrong": [
+      "Heinrich Hertz",
+      "Paul Nipkow",
+      "Manfred von Ardenne"
+     ],
+     "level": 3,
+     "why": "He shared the 1909 Nobel Prize with Marconi."
+    },
+    {
+     "q": "Which German chemist found a way to make ammonia from air, helping feed the world?",
+     "a": "Fritz Haber",
+     "wrong": [
+      "Carl Bosch",
+      "Justus von Liebig",
+      "Walther Nernst"
+     ],
+     "level": 3,
+     "why": "He also led poison gas work in the First World War."
+    },
+    {
+     "q": "Which German chemist is called the father of fertilisers?",
+     "a": "Justus von Liebig",
+     "wrong": [
+      "Fritz Haber",
+      "Robert Bunsen",
+      "Friedrich Wöhler"
+     ],
+     "level": 3,
+     "why": "He also invented meat extract."
     }
    ]
   }
