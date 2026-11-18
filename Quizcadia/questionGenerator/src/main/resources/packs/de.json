@@ -3609,6 +3609,1051 @@
       "Neu!"
      ],
      "why": "They came from Düsseldorf."
+    },
+    {
+     "q": "In which German city was Beethoven born?",
+     "a": "Bonn",
+     "wrong": [
+      "Vienna",
+      "Cologne",
+      "Leipzig"
+     ],
+     "level": 1,
+     "why": "He moved to Vienna aged 21."
+    },
+    {
+     "q": "Which Beethoven symphony begins with a famous four-note 'fate' motif?",
+     "a": "Fifth Symphony",
+     "wrong": [
+      "Third Symphony",
+      "Seventh Symphony",
+      "Ninth Symphony"
+     ],
+     "level": 1,
+     "why": "It is in C minor."
+    },
+    {
+     "q": "Which Beethoven piano piece was written for 'Elise'?",
+     "a": "Für Elise",
+     "wrong": [
+      "Moonlight Sonata",
+      "Pathétique",
+      "Appassionata"
+     ],
+     "level": 1,
+     "why": "It was found after his death."
+    },
+    {
+     "q": "Which Beethoven sonata got the nickname 'Moonlight'?",
+     "a": "Piano Sonata No. 14",
+     "wrong": [
+      "Piano Sonata No. 8",
+      "Piano Sonata No. 23",
+      "Piano Sonata No. 29"
+     ],
+     "level": 1,
+     "why": "A critic compared it to moonlight on a lake."
+    },
+    {
+     "q": "Which Beethoven symphony was first dedicated to Napoleon?",
+     "a": "Third Symphony (Eroica)",
+     "wrong": [
+      "Fifth Symphony",
+      "Sixth Symphony",
+      "Ninth Symphony"
+     ],
+     "level": 1,
+     "why": "He scratched out the dedication."
+    },
+    {
+     "q": "Which Beethoven symphony is called the 'Pastoral'?",
+     "a": "Sixth Symphony",
+     "wrong": [
+      "Fourth Symphony",
+      "Seventh Symphony",
+      "Eighth Symphony"
+     ],
+     "level": 1,
+     "why": "It paints scenes of the countryside."
+    },
+    {
+     "q": "What was the name of Beethoven's only opera?",
+     "a": "Fidelio",
+     "wrong": [
+      "The Magic Flute",
+      "Der Freischütz",
+      "Lohengrin"
+     ],
+     "level": 1,
+     "why": "A wife rescues her husband from prison."
+    },
+    {
+     "q": "Which condition did Beethoven suffer from in later life?",
+     "a": "Deafness",
+     "wrong": [
+      "Blindness",
+      "Paralysis",
+      "Memory loss"
+     ],
+     "level": 1,
+     "why": "He wrote the Ninth Symphony while almost deaf."
+    },
+    {
+     "q": "Which Bach works were written for a margrave of Brandenburg?",
+     "a": "Brandenburg Concertos",
+     "wrong": [
+      "Goldberg Variations",
+      "Well-Tempered Clavier",
+      "Art of Fugue"
+     ],
+     "level": 1,
+     "why": "There are six of them."
+    },
+    {
+     "q": "Which Bach organ piece in D minor is one of the most famous?",
+     "a": "Toccata and Fugue in D minor",
+     "wrong": [
+      "Air on the G String",
+      "Jesu, Joy of Man's Desiring",
+      "Goldberg Variations"
+     ],
+     "level": 1,
+     "why": "It is used in many horror films."
+    },
+    {
+     "q": "Which church in Leipzig did Bach serve as cantor?",
+     "a": "St. Thomas Church",
+     "wrong": [
+      "St. Nicholas Church",
+      "Frauenkirche",
+      "St. Paul's Church"
+     ],
+     "level": 1,
+     "why": "He is buried there."
+    },
+    {
+     "q": "Which German-born composer wrote the 'Messiah' in London?",
+     "a": "George Frideric Handel",
+     "wrong": [
+      "Johann Sebastian Bach",
+      "Georg Philipp Telemann",
+      "Joseph Haydn"
+     ],
+     "level": 1,
+     "why": "He was born in Halle."
+    },
+    {
+     "q": "Which Handel suite was first played on the River Thames in 1717?",
+     "a": "Water Music",
+     "wrong": [
+      "Music for the Royal Fireworks",
+      "Messiah",
+      "Zadok the Priest"
+     ],
+     "level": 1,
+     "why": "King George I asked for it."
+    },
+    {
+     "q": "Which Handel chorus makes audiences stand up?",
+     "a": "Hallelujah",
+     "wrong": [
+      "Ode to Joy",
+      "Gloria",
+      "Zadok the Priest"
+     ],
+     "level": 1,
+     "why": "It is part of the 'Messiah'."
+    },
+    {
+     "q": "Which Hamburg-born composer wrote a famous 'Lullaby'?",
+     "a": "Johannes Brahms",
+     "wrong": [
+      "Felix Mendelssohn",
+      "Robert Schumann",
+      "Richard Strauss"
+     ],
+     "level": 1,
+     "why": "It begins 'Guten Abend, gut' Nacht'."
+    },
+    {
+     "q": "Which German composer wrote the 'Wedding March' from 'A Midsummer Night's Dream'?",
+     "a": "Felix Mendelssohn",
+     "wrong": [
+      "Richard Wagner",
+      "Robert Schumann",
+      "Johannes Brahms"
+     ],
+     "level": 1,
+     "why": "It is played at many weddings."
+    },
+    {
+     "q": "Which Wagner piece is played as a bride walks down the aisle?",
+     "a": "Bridal Chorus",
+     "wrong": [
+      "Wedding March",
+      "Ride of the Valkyries",
+      "Pilgrims' Chorus"
+     ],
+     "level": 1,
+     "why": "It comes from 'Lohengrin'."
+    },
+    {
+     "q": "Which Wagner piece is used in the helicopter scene of 'Apocalypse Now'?",
+     "a": "Ride of the Valkyries",
+     "wrong": [
+      "Bridal Chorus",
+      "Tristan Prelude",
+      "Pilgrims' Chorus"
+     ],
+     "level": 1,
+     "why": "It is from 'Die Walküre'."
+    },
+    {
+     "q": "Which Bavarian town holds a festival devoted to Wagner's operas?",
+     "a": "Bayreuth",
+     "wrong": [
+      "Salzburg",
+      "Munich",
+      "Nuremberg"
+     ],
+     "level": 1,
+     "why": "Tickets can take years to get."
+    },
+    {
+     "q": "Which German composer wrote 'Carmina Burana'?",
+     "a": "Carl Orff",
+     "wrong": [
+      "Richard Strauss",
+      "Kurt Weill",
+      "Paul Hindemith"
+     ],
+     "level": 1,
+     "why": "It opens with 'O Fortuna'."
+    },
+    {
+     "q": "Which Richard Strauss piece opens Stanley Kubrick's '2001: A Space Odyssey'?",
+     "a": "Also sprach Zarathustra",
+     "wrong": [
+      "The Blue Danube",
+      "Don Juan",
+      "Ein Heldenleben"
+     ],
+     "level": 1,
+     "why": "It is based on Nietzsche."
+    },
+    {
+     "q": "Which German composer wrote 'The Threepenny Opera' with Bertolt Brecht?",
+     "a": "Kurt Weill",
+     "wrong": [
+      "Hanns Eisler",
+      "Paul Hindemith",
+      "Carl Orff"
+     ],
+     "level": 1,
+     "why": "It includes 'Mack the Knife'."
+    },
+    {
+     "q": "Which song from 'The Threepenny Opera' became a hit for Bobby Darin?",
+     "a": "Mack the Knife",
+     "wrong": [
+      "Alabama Song",
+      "Lili Marleen",
+      "Pirate Jenny"
+     ],
+     "level": 1,
+     "why": "It is called 'Die Moritat von Mackie Messer' in German."
+    },
+    {
+     "q": "Which German Second World War song was loved by soldiers on both sides?",
+     "a": "Lili Marleen",
+     "wrong": [
+      "Mack the Knife",
+      "Erika",
+      "Westerwald"
+     ],
+     "level": 1,
+     "why": "Lale Andersen first sang it."
+    },
+    {
+     "q": "Which Berlin-born actress and singer recorded 'Falling in Love Again'?",
+     "a": "Marlene Dietrich",
+     "wrong": [
+      "Lale Andersen",
+      "Zarah Leander",
+      "Hildegard Knef"
+     ],
+     "level": 1,
+     "why": "It comes from 'The Blue Angel'."
+    },
+    {
+     "q": "Which Kraftwerk album from 1978 includes 'The Model'?",
+     "a": "The Man-Machine",
+     "wrong": [
+      "Autobahn",
+      "Trans-Europe Express",
+      "Computer World"
+     ],
+     "level": 1,
+     "why": "The song became a UK number one in 1982."
+    },
+    {
+     "q": "Which city was Kraftwerk founded in?",
+     "a": "Düsseldorf",
+     "wrong": [
+      "Cologne",
+      "Berlin",
+      "Hamburg"
+     ],
+     "level": 1,
+     "why": "Their studio was called Kling Klang."
+    },
+    {
+     "q": "Which German band sang 'Da Da Da'?",
+     "a": "Trio",
+     "wrong": [
+      "Nena",
+      "Alphaville",
+      "Kraftwerk"
+     ],
+     "level": 1,
+     "why": "It was a hit in 1982."
+    },
+    {
+     "q": "Which German band sang 'Forever Young' and 'Big in Japan'?",
+     "a": "Alphaville",
+     "wrong": [
+      "Modern Talking",
+      "Camouflage",
+      "Real Life"
+     ],
+     "level": 1,
+     "why": "They formed in Münster."
+    },
+    {
+     "q": "Which German duo sang 'You're My Heart, You're My Soul'?",
+     "a": "Modern Talking",
+     "wrong": [
+      "Milli Vanilli",
+      "Snap!",
+      "Erasure"
+     ],
+     "level": 1,
+     "why": "Dieter Bohlen was one half."
+    },
+    {
+     "q": "Which German-made pop act lost a Grammy in 1990 when it was revealed they did not sing?",
+     "a": "Milli Vanilli",
+     "wrong": [
+      "Modern Talking",
+      "Boney M.",
+      "La Bouche"
+     ],
+     "level": 1,
+     "why": "Frank Farian produced them."
+    },
+    {
+     "q": "Which German-based disco group had hits with 'Rasputin' and 'Rivers of Babylon'?",
+     "a": "Boney M.",
+     "wrong": [
+      "ABBA",
+      "Dschinghis Khan",
+      "Milli Vanilli"
+     ],
+     "level": 1,
+     "why": "Frank Farian created them."
+    },
+    {
+     "q": "Which German group sang 'Dschinghis Khan' at Eurovision 1979?",
+     "a": "Dschinghis Khan",
+     "wrong": [
+      "Boney M.",
+      "Modern Talking",
+      "Silver Convention"
+     ],
+     "level": 1,
+     "why": "It finished fourth."
+    },
+    {
+     "q": "Which German singer won Eurovision in 1982 with 'Ein bißchen Frieden'?",
+     "a": "Nicole",
+     "wrong": [
+      "Nena",
+      "Lena",
+      "Mary Roos"
+     ],
+     "level": 1,
+     "why": "It was Germany's first Eurovision win."
+    },
+    {
+     "q": "Which Lena song won Eurovision in 2010?",
+     "a": "Satellite",
+     "wrong": [
+      "Taken by a Stranger",
+      "Touch a New Day",
+      "Lost and Found"
+     ],
+     "level": 1,
+     "why": "It was written by an American and a Dane."
+    },
+    {
+     "q": "Which German metal band's songs include 'Rock You Like a Hurricane'?",
+     "a": "Scorpions",
+     "wrong": [
+      "Accept",
+      "Helloween",
+      "Rammstein"
+     ],
+     "level": 1,
+     "why": "They formed in Hanover."
+    },
+    {
+     "q": "Which Rammstein song's music video shows them as Snow White's dwarfs?",
+     "a": "Sonne",
+     "wrong": [
+      "Du hast",
+      "Engel",
+      "Mutter"
+     ],
+     "level": 1,
+     "why": "It came out in 2001."
+    },
+    {
+     "q": "Which German singer sang 'Atemlos durch die Nacht'?",
+     "a": "Helene Fischer",
+     "wrong": [
+      "Andrea Berg",
+      "Vanessa Mai",
+      "Beatrice Egli"
+     ],
+     "level": 1,
+     "why": "It is a huge Schlager hit."
+    },
+    {
+     "q": "What is German popular music with simple, catchy songs called?",
+     "a": "Schlager",
+     "wrong": [
+      "Krautrock",
+      "Neue Deutsche Welle",
+      "Volksmusik"
+     ],
+     "level": 1,
+     "why": "It is very popular at parties."
+    },
+    {
+     "q": "What is the 1980s wave of German-language pop and rock called?",
+     "a": "Neue Deutsche Welle",
+     "wrong": [
+      "Krautrock",
+      "Schlager",
+      "Hamburger Schule"
+     ],
+     "level": 1,
+     "why": "Nena and Trio were part of it."
+    },
+    {
+     "q": "What name was given to experimental German rock of the 1970s?",
+     "a": "Krautrock",
+     "wrong": [
+      "Schlager",
+      "Neue Deutsche Welle",
+      "Deutschrock"
+     ],
+     "level": 1,
+     "why": "Can and Neu! were famous bands."
+    },
+    {
+     "q": "Which German rock singer from Westphalia sang 'Männer' and 'Bochum'?",
+     "a": "Herbert Grönemeyer",
+     "wrong": [
+      "Udo Lindenberg",
+      "Peter Maffay",
+      "Marius Müller-Westernhagen"
+     ],
+     "level": 1,
+     "why": "He also acted in 'Das Boot'."
+    },
+    {
+     "q": "Which Hamburg rock singer with a hat sang 'Sonderzug nach Pankow'?",
+     "a": "Udo Lindenberg",
+     "wrong": [
+      "Herbert Grönemeyer",
+      "Peter Maffay",
+      "Klaus Lage"
+     ],
+     "level": 1,
+     "why": "The song mocked Erich Honecker."
+    },
+    {
+     "q": "Which Düsseldorf punk band sang 'Tage wie diese'?",
+     "a": "Die Toten Hosen",
+     "wrong": [
+      "Die Ärzte",
+      "Wir sind Helden",
+      "Tokio Hotel"
+     ],
+     "level": 1,
+     "why": "It became a football anthem."
+    },
+    {
+     "q": "Which Berlin band calls itself 'the best band in the world'?",
+     "a": "Die Ärzte",
+     "wrong": [
+      "Die Toten Hosen",
+      "Rammstein",
+      "Seeed"
+     ],
+     "level": 1,
+     "why": "It formed in 1982."
+    },
+    {
+     "q": "Which Magdeburg band led by twins Bill and Tom Kaulitz became famous in 2005?",
+     "a": "Tokio Hotel",
+     "wrong": [
+      "Rammstein",
+      "Juli",
+      "Silbermond"
+     ],
+     "level": 1,
+     "why": "Their first hit was 'Durch den Monsun'."
+    },
+    {
+     "q": "Which German DJ remixed 'Prayer in C' into a worldwide hit?",
+     "a": "Robin Schulz",
+     "wrong": [
+      "Felix Jaehn",
+      "Alle Farben",
+      "Zedd"
+     ],
+     "level": 1,
+     "why": "It reached number one in many countries in 2014."
+    },
+    {
+     "q": "Which Russian-German DJ made 'Clarity' and won a Grammy?",
+     "a": "Zedd",
+     "wrong": [
+      "Robin Schulz",
+      "Felix Jaehn",
+      "Paul van Dyk"
+     ],
+     "level": 1,
+     "why": "He grew up in Kaiserslautern."
+    },
+    {
+     "q": "Which German trance DJ made 'For an Angel'?",
+     "a": "Paul van Dyk",
+     "wrong": [
+      "Robin Schulz",
+      "Zedd",
+      "Sven Väth"
+     ],
+     "level": 1,
+     "why": "He is from Eisenhüttenstadt."
+    },
+    {
+     "q": "Which yearly Berlin techno street parade began in 1989?",
+     "a": "Love Parade",
+     "wrong": [
+      "Fusion",
+      "Rock am Ring",
+      "Mayday"
+     ],
+     "level": 1,
+     "why": "It drew over a million people at its peak."
+    },
+    {
+     "q": "Which famous Berlin techno club is known for strict door rules?",
+     "a": "Berghain",
+     "wrong": [
+      "Tresor",
+      "Watergate",
+      "Kater Blau"
+     ],
+     "level": 1,
+     "why": "It is in a former power station."
+    },
+    {
+     "q": "Which big German rock festival is held at the Nürburgring?",
+     "a": "Rock am Ring",
+     "wrong": [
+      "Wacken Open Air",
+      "Hurricane Festival",
+      "Southside"
+     ],
+     "level": 1,
+     "why": "It shares bands with Rock im Park."
+    },
+    {
+     "q": "Which village in Schleswig-Holstein hosts a huge heavy metal festival?",
+     "a": "Wacken",
+     "wrong": [
+      "Roskilde",
+      "Scheeßel",
+      "Neuhausen"
+     ],
+     "level": 1,
+     "why": "About 85,000 fans attend each summer."
+    },
+    {
+     "q": "Which German Christmas song is about a fir tree?",
+     "a": "O Tannenbaum",
+     "wrong": [
+      "Stille Nacht",
+      "Ihr Kinderlein kommet",
+      "Kling, Glöckchen"
+     ],
+     "level": 1,
+     "why": "It is sung in many languages."
+    },
+    {
+     "q": "Which German tenor from Munich is one of the world's top opera singers?",
+     "a": "Jonas Kaufmann",
+     "wrong": [
+      "René Pape",
+      "Fritz Wunderlich",
+      "Peter Schreier"
+     ],
+     "level": 1,
+     "why": "He is known for Wagner roles."
+    },
+    {
+     "q": "Which conductor led the Berlin Philharmonic for 34 years, from 1955?",
+     "a": "Herbert von Karajan",
+     "wrong": [
+      "Wilhelm Furtwängler",
+      "Claudio Abbado",
+      "Simon Rattle"
+     ],
+     "level": 1,
+     "why": "He was born in Salzburg."
+    },
+    {
+     "q": "Which German orchestra is one of the best known in the world?",
+     "a": "Berlin Philharmonic",
+     "wrong": [
+      "Leipzig Gewandhaus",
+      "Bavarian Radio Symphony",
+      "Dresden Staatskapelle"
+     ],
+     "level": 1,
+     "why": "It plays in a tent-shaped hall."
+    },
+    {
+     "q": "Which Leipzig orchestra is one of the world's oldest civic orchestras?",
+     "a": "Gewandhaus Orchestra",
+     "wrong": [
+      "Berlin Philharmonic",
+      "Bamberg Symphony",
+      "Dresden Philharmonic"
+     ],
+     "level": 1,
+     "why": "Mendelssohn conducted it."
+    },
+    {
+     "q": "Which Beethoven piano concerto is called the 'Emperor'?",
+     "a": "Piano Concerto No. 5",
+     "wrong": [
+      "Piano Concerto No. 3",
+      "Piano Concerto No. 4",
+      "Piano Concerto No. 1"
+     ],
+     "level": 2,
+     "why": "It was written in 1809."
+    },
+    {
+     "q": "Which Bach work was named after a harpsichordist who played it for an insomniac count?",
+     "a": "Goldberg Variations",
+     "wrong": [
+      "Art of Fugue",
+      "Musical Offering",
+      "French Suites"
+     ],
+     "level": 2,
+     "why": "Glenn Gould made it famous."
+    },
+    {
+     "q": "Which Bach collection has preludes and fugues in all 24 keys?",
+     "a": "The Well-Tempered Clavier",
+     "wrong": [
+      "Goldberg Variations",
+      "Art of Fugue",
+      "Inventions"
+     ],
+     "level": 2,
+     "why": "There are two books."
+    },
+    {
+     "q": "Which Bach work is a huge setting of the Passion story from Matthew's gospel?",
+     "a": "St Matthew Passion",
+     "wrong": [
+      "St John Passion",
+      "Mass in B minor",
+      "Christmas Oratorio"
+     ],
+     "level": 2,
+     "why": "Mendelssohn revived it in 1829."
+    },
+    {
+     "q": "Which German Romantic composer wrote 'Kinderszenen' and 'Dichterliebe'?",
+     "a": "Robert Schumann",
+     "wrong": [
+      "Johannes Brahms",
+      "Felix Mendelssohn",
+      "Franz Schubert"
+     ],
+     "level": 2,
+     "why": "His wife Clara was a famous pianist."
+    },
+    {
+     "q": "Which German pianist and composer was married to Robert Schumann?",
+     "a": "Clara Schumann",
+     "wrong": [
+      "Fanny Mendelssohn",
+      "Cosima Wagner",
+      "Alma Mahler"
+     ],
+     "level": 2,
+     "why": "She was on the 100 Deutsche Mark note."
+    },
+    {
+     "q": "Which German composer wrote 'A German Requiem'?",
+     "a": "Johannes Brahms",
+     "wrong": [
+      "Robert Schumann",
+      "Felix Mendelssohn",
+      "Max Bruch"
+     ],
+     "level": 2,
+     "why": "It uses texts from the Luther Bible."
+    },
+    {
+     "q": "Which Brahms pieces for piano four hands were inspired by Hungarian folk tunes?",
+     "a": "Hungarian Dances",
+     "wrong": [
+      "Slavonic Dances",
+      "Romanian Dances",
+      "Gypsy Songs"
+     ],
+     "level": 2,
+     "why": "There are 21 of them."
+    },
+    {
+     "q": "Which German composer wrote the opera 'Der Freischütz'?",
+     "a": "Carl Maria von Weber",
+     "wrong": [
+      "Richard Wagner",
+      "Albert Lortzing",
+      "Engelbert Humperdinck"
+     ],
+     "level": 2,
+     "why": "It is a key German Romantic opera."
+    },
+    {
+     "q": "Which German composer wrote the opera 'Hansel and Gretel'?",
+     "a": "Engelbert Humperdinck",
+     "wrong": [
+      "Carl Maria von Weber",
+      "Richard Strauss",
+      "Albert Lortzing"
+     ],
+     "level": 2,
+     "why": "It is often staged at Christmas."
+    },
+    {
+     "q": "Which Richard Strauss opera is about a silver rose?",
+     "a": "Der Rosenkavalier",
+     "wrong": [
+      "Salome",
+      "Elektra",
+      "Ariadne auf Naxos"
+     ],
+     "level": 2,
+     "why": "It is set in Vienna."
+    },
+    {
+     "q": "Which Wagner opera is about a singing contest in Nuremberg?",
+     "a": "The Mastersingers of Nuremberg",
+     "wrong": [
+      "Tannhäuser",
+      "Parsifal",
+      "Lohengrin"
+     ],
+     "level": 2,
+     "why": "Hans Sachs is a main character."
+    },
+    {
+     "q": "Which four operas make up Wagner's 'Ring' cycle?",
+     "a": "Rhinegold, Valkyrie, Siegfried, Twilight of the Gods",
+     "wrong": [
+      "Rhinegold, Valkyrie, Parsifal, Siegfried",
+      "Lohengrin, Tannhäuser, Rienzi, Parsifal",
+      "Rhinegold, Valkyrie, Tristan, Siegfried"
+     ],
+     "level": 2,
+     "why": "It lasts about 15 hours."
+    },
+    {
+     "q": "Which Baroque composer from Magdeburg wrote over 3,000 works?",
+     "a": "Georg Philipp Telemann",
+     "wrong": [
+      "Johann Pachelbel",
+      "Dieterich Buxtehude",
+      "Heinrich Schütz"
+     ],
+     "level": 2,
+     "why": "He was more famous than Bach in his lifetime."
+    },
+    {
+     "q": "Which Nuremberg composer wrote a famous Canon in D?",
+     "a": "Johann Pachelbel",
+     "wrong": [
+      "Georg Philipp Telemann",
+      "Heinrich Schütz",
+      "Dieterich Buxtehude"
+     ],
+     "level": 2,
+     "why": "It is played at many weddings."
+    },
+    {
+     "q": "Which German composer pioneered electronic music at the WDR studio in Cologne?",
+     "a": "Karlheinz Stockhausen",
+     "wrong": [
+      "Hans Werner Henze",
+      "Wolfgang Rihm",
+      "Paul Hindemith"
+     ],
+     "level": 2,
+     "why": "The Beatles put his face on 'Sgt. Pepper'."
+    },
+    {
+     "q": "Which Cologne band was a key Krautrock group?",
+     "a": "Can",
+     "wrong": [
+      "Neu!",
+      "Faust",
+      "Tangerine Dream"
+     ],
+     "level": 2,
+     "why": "Holger Czukay played bass."
+    },
+    {
+     "q": "Which Berlin group led by Edgar Froese pioneered synthesizer music?",
+     "a": "Tangerine Dream",
+     "wrong": [
+      "Kraftwerk",
+      "Can",
+      "Cluster"
+     ],
+     "level": 2,
+     "why": "They scored many films."
+    },
+    {
+     "q": "Which German composer scored 'The Lion King', 'Gladiator' and 'Dune'?",
+     "a": "Hans Zimmer",
+     "wrong": [
+      "Klaus Badelt",
+      "Harold Faltermeyer",
+      "Ramin Djawadi"
+     ],
+     "level": 2,
+     "why": "He was born in Frankfurt."
+    },
+    {
+     "q": "Which German composer wrote the 'Axel F' theme for 'Beverly Hills Cop'?",
+     "a": "Harold Faltermeyer",
+     "wrong": [
+      "Hans Zimmer",
+      "Giorgio Moroder",
+      "Klaus Doldinger"
+     ],
+     "level": 2,
+     "why": "He is from Munich."
+    },
+    {
+     "q": "Which German-born composer wrote 'Game of Thrones' music?",
+     "a": "Ramin Djawadi",
+     "wrong": [
+      "Hans Zimmer",
+      "Klaus Badelt",
+      "Max Richter"
+     ],
+     "level": 2,
+     "why": "He was born in Duisburg."
+    },
+    {
+     "q": "Which German-born composer wrote 'On the Nature of Daylight'?",
+     "a": "Max Richter",
+     "wrong": [
+      "Nils Frahm",
+      "Hans Zimmer",
+      "Ólafur Arnalds"
+     ],
+     "level": 2,
+     "why": "He grew up in England."
+    },
+    {
+     "q": "Which German jazz musician composed the 'Tatort' theme and 'Das Boot' score?",
+     "a": "Klaus Doldinger",
+     "wrong": [
+      "Harold Faltermeyer",
+      "Hans Zimmer",
+      "James Last"
+     ],
+     "level": 2,
+     "why": "He founded the band Passport."
+    },
+    {
+     "q": "Which Bremen-born bandleader sold millions of easy listening albums?",
+     "a": "James Last",
+     "wrong": [
+      "Bert Kaempfert",
+      "Klaus Doldinger",
+      "Max Greger"
+     ],
+     "level": 2,
+     "why": "He was famous for 'happy sound'."
+    },
+    {
+     "q": "Which German bandleader wrote 'Strangers in the Night' for Frank Sinatra?",
+     "a": "Bert Kaempfert",
+     "wrong": [
+      "James Last",
+      "Kurt Edelhagen",
+      "Max Greger"
+     ],
+     "level": 2,
+     "why": "He also produced early Beatles recordings."
+    },
+    {
+     "q": "Which Stuttgart hip hop group had a 1992 hit with 'Die Da'?",
+     "a": "Die Fantastischen Vier",
+     "wrong": [
+      "Fettes Brot",
+      "Freundeskreis",
+      "Deichkind"
+     ],
+     "level": 2,
+     "why": "It was one of the first German rap hits."
+    },
+    {
+     "q": "Which Ludwigshafen rapper had a huge hit with 'Roller' in 2019?",
+     "a": "Apache 207",
+     "wrong": [
+      "Capital Bra",
+      "Bonez MC",
+      "Ufo361"
+     ],
+     "level": 2,
+     "why": "He is known for his sunglasses and long hair."
+    },
+    {
+     "q": "Which rapper holds the record for most German number-one singles?",
+     "a": "Capital Bra",
+     "wrong": [
+      "Apache 207",
+      "Sido",
+      "Bushido"
+     ],
+     "level": 2,
+     "why": "He grew up in Berlin."
+    },
+    {
+     "q": "Which German singer-songwriter sang 'Auf uns'?",
+     "a": "Andreas Bourani",
+     "wrong": [
+      "Mark Forster",
+      "Tim Bendzko",
+      "Max Giesinger"
+     ],
+     "level": 2,
+     "why": "It was the 2014 World Cup anthem on German TV."
+    },
+    {
+     "q": "Which Berlin reggae-dancehall band sings 'Dickes B'?",
+     "a": "Seeed",
+     "wrong": [
+      "Peter Fox",
+      "Culcha Candela",
+      "Gentleman"
+     ],
+     "level": 2,
+     "why": "Peter Fox is its singer."
+    },
+    {
+     "q": "Which Berlin singer had the hit solo album 'Stadtaffe' in 2008?",
+     "a": "Peter Fox",
+     "wrong": [
+      "Herbert Grönemeyer",
+      "Clueso",
+      "Casper"
+     ],
+     "level": 2,
+     "why": "It includes 'Haus am See'."
+    },
+    {
+     "q": "Which German music award was scrapped in 2018 after a controversy?",
+     "a": "ECHO",
+     "wrong": [
+      "Bambi",
+      "Goldene Kamera",
+      "1Live Krone"
+     ],
+     "level": 3,
+     "why": "It was replaced by other awards."
+    },
+    {
+     "q": "Which Düsseldorf band formed by Michael Rother and Klaus Dinger used the 'motorik' beat?",
+     "a": "Neu!",
+     "wrong": [
+      "Can",
+      "Faust",
+      "La Düsseldorf"
+     ],
+     "level": 3,
+     "why": "Their steady beat influenced David Bowie."
+    },
+    {
+     "q": "Which German singer known as 'Nico' sang with the Velvet Underground?",
+     "a": "Nico",
+     "wrong": [
+      "Nina Hagen",
+      "Marianne Rosenberg",
+      "Ute Lemper"
+     ],
+     "level": 3,
+     "why": "She was born Christa Päffgen in Cologne."
+    },
+    {
+     "q": "Which East Berlin-born singer is called the 'godmother of punk'?",
+     "a": "Nina Hagen",
+     "wrong": [
+      "Nico",
+      "Nena",
+      "Inga Humpe"
+     ],
+     "level": 3,
+     "why": "She moved West in 1976."
+    },
+    {
+     "q": "Which German singer-songwriter had a hit with 'Chöre' in 2016?",
+     "a": "Mark Forster",
+     "wrong": [
+      "Andreas Bourani",
+      "Tim Bendzko",
+      "Max Giesinger"
+     ],
+     "level": 2,
+     "why": "He was a coach on 'The Voice Kids'."
+    },
+    {
+     "q": "Which Berlin singer had the 2011 hit 'Nur noch kurz die Welt retten'?",
+     "a": "Tim Bendzko",
+     "wrong": [
+      "Mark Forster",
+      "Andreas Bourani",
+      "Clueso"
+     ],
+     "level": 2,
+     "why": "The title means 'Just quickly save the world'."
     }
    ]
   },
