@@ -578,6 +578,776 @@
       "Winnipeg Victorias"
      ],
      "why": "Lord Stanley donated the cup in 1892."
+    },
+    {
+     "q": "What trophy goes to the champion of Canadian junior hockey?",
+     "a": "Memorial Cup",
+     "wrong": [
+      "Stanley Cup",
+      "Allan Cup",
+      "Grey Cup"
+     ],
+     "level": 1,
+     "why": "It honours soldiers of the First World War."
+    },
+    {
+     "q": "Which Edmonton team won five Stanley Cups between 1984 and 1990?",
+     "a": "Edmonton Oilers",
+     "wrong": [
+      "Calgary Flames",
+      "Montreal Canadiens",
+      "Toronto Maple Leafs"
+     ],
+     "level": 1,
+     "why": "Wayne Gretzky led them early on."
+    },
+    {
+     "q": "In which year did the Toronto Maple Leafs last win the Stanley Cup?",
+     "a": "1967",
+     "wrong": [
+      "1993",
+      "1972",
+      "1945"
+     ],
+     "level": 1,
+     "why": "It was Canada's centennial year."
+    },
+    {
+     "q": "Which hockey player scored the winning goal of the 1972 Summit Series?",
+     "a": "Paul Henderson",
+     "wrong": [
+      "Phil Esposito",
+      "Bobby Orr",
+      "Ken Dryden"
+     ],
+     "level": 1,
+     "why": "Canada beat the Soviet Union."
+    },
+    {
+     "q": "Which 1972 series pitted Canada's best hockey players against the Soviet Union?",
+     "a": "Summit Series",
+     "wrong": [
+      "Canada Cup",
+      "World Cup of Hockey",
+      "Super Series"
+     ],
+     "level": 1,
+     "why": "Canada won four games to three, with one tie."
+    },
+    {
+     "q": "Which Montreal Canadiens legend scored 50 goals in 50 games in 1944–45?",
+     "a": "Maurice 'Rocket' Richard",
+     "wrong": [
+      "Jean Béliveau",
+      "Guy Lafleur",
+      "Howie Morenz"
+     ],
+     "level": 1,
+     "why": "A riot followed his suspension in 1955."
+    },
+    {
+     "q": "Which defenceman flew through the air after scoring the 1970 Stanley Cup winner?",
+     "a": "Bobby Orr",
+     "wrong": [
+      "Denis Potvin",
+      "Larry Robinson",
+      "Paul Coffey"
+     ],
+     "level": 1,
+     "why": "He played for Boston."
+    },
+    {
+     "q": "Which Nova Scotia hockey star is nicknamed 'Sid the Kid'?",
+     "a": "Sidney Crosby",
+     "wrong": [
+      "Nathan MacKinnon",
+      "Connor McDavid",
+      "Brad Marchand"
+     ],
+     "level": 1,
+     "why": "He is from Cole Harbour."
+    },
+    {
+     "q": "Which Edmonton Oilers captain from Richmond Hill, Ontario, is famed for his speed?",
+     "a": "Connor McDavid",
+     "wrong": [
+      "Leon Draisaitl",
+      "Sidney Crosby",
+      "Auston Matthews"
+     ],
+     "level": 1,
+     "why": "He was the first pick in the 2015 draft."
+    },
+    {
+     "q": "With which two teams did goalie Patrick Roy win the Stanley Cup?",
+     "a": "Montreal Canadiens and Colorado Avalanche",
+     "wrong": [
+      "Montreal and Boston",
+      "Colorado and Detroit",
+      "Quebec and Montreal"
+     ],
+     "level": 1,
+     "why": "He won four in all."
+    },
+    {
+     "q": "Which NHL team plays in Winnipeg?",
+     "a": "Winnipeg Jets",
+     "wrong": [
+      "Manitoba Moose",
+      "Winnipeg Blue Bombers",
+      "Winnipeg Goldeyes"
+     ],
+     "level": 1,
+     "why": "They returned to Winnipeg in 2011."
+    },
+    {
+     "q": "Which CFL team is from Hamilton?",
+     "a": "Hamilton Tiger-Cats",
+     "wrong": [
+      "Hamilton Bulldogs",
+      "Hamilton Argos",
+      "Hamilton Steelers"
+     ],
+     "level": 1,
+     "why": "Their fans chant 'Oskee Wee Wee'."
+    },
+    {
+     "q": "Which Toronto CFL team, founded in 1873, is one of North America's oldest pro teams?",
+     "a": "Toronto Argonauts",
+     "wrong": [
+      "Toronto Maple Leafs",
+      "Montreal Alouettes",
+      "Hamilton Tiger-Cats"
+     ],
+     "level": 1,
+     "why": "It still uses its original name."
+    },
+    {
+     "q": "How many downs does a team get in Canadian football?",
+     "a": "Three",
+     "wrong": [
+      "Four",
+      "Two",
+      "Five"
+     ],
+     "level": 1,
+     "why": "American football gives four."
+    },
+    {
+     "q": "How many players per side are on the field in Canadian football?",
+     "a": "12",
+     "wrong": [
+      "11",
+      "10",
+      "13"
+     ],
+     "level": 1,
+     "why": "American football uses 11."
+    },
+    {
+     "q": "Which Toronto baseball team won the World Series in 1992 and 1993?",
+     "a": "Toronto Blue Jays",
+     "wrong": [
+      "Montreal Expos",
+      "Vancouver Canadians",
+      "Ottawa Titans"
+     ],
+     "level": 1,
+     "why": "They were the first team outside the US to win it."
+    },
+    {
+     "q": "Which Blue Jays player hit a walk-off home run to win the 1993 World Series?",
+     "a": "Joe Carter",
+     "wrong": [
+      "Roberto Alomar",
+      "Paul Molitor",
+      "José Bautista"
+     ],
+     "level": 1,
+     "why": "It was only the second World Series-ending homer."
+    },
+    {
+     "q": "Which Montreal baseball team moved to Washington in 2005?",
+     "a": "Montreal Expos",
+     "wrong": [
+      "Montreal Royals",
+      "Montreal Alouettes",
+      "Montreal Impact"
+     ],
+     "level": 1,
+     "why": "They became the Washington Nationals."
+    },
+    {
+     "q": "Which basketball star from Hamilton, Ontario, won the 2025 NBA MVP award?",
+     "a": "Shai Gilgeous-Alexander",
+     "wrong": [
+      "Jamal Murray",
+      "RJ Barrett",
+      "Andrew Wiggins"
+     ],
+     "level": 1,
+     "why": "He plays for Oklahoma City."
+    },
+    {
+     "q": "Which Canadian point guard won two NBA MVP awards with Phoenix?",
+     "a": "Steve Nash",
+     "wrong": [
+      "Jamal Murray",
+      "Rick Fox",
+      "Tristan Thompson"
+     ],
+     "level": 1,
+     "why": "He grew up in Victoria, BC."
+    },
+    {
+     "q": "Which Canadian sprinter won 200 m gold at the Tokyo 2020 Olympics?",
+     "a": "Andre De Grasse",
+     "wrong": [
+      "Donovan Bailey",
+      "Bruny Surin",
+      "Aaron Brown"
+     ],
+     "level": 1,
+     "why": "He is from Markham, Ontario."
+    },
+    {
+     "q": "Which Canadian swimmer won four medals at Rio 2016 aged 16?",
+     "a": "Penny Oleksiak",
+     "wrong": [
+      "Summer McIntosh",
+      "Maggie Mac Neil",
+      "Kylie Masse"
+     ],
+     "level": 1,
+     "why": "She has seven Olympic medals."
+    },
+    {
+     "q": "Which Canadian swimmer won three individual golds at Paris 2024?",
+     "a": "Summer McIntosh",
+     "wrong": [
+      "Penny Oleksiak",
+      "Maggie Mac Neil",
+      "Kylie Masse"
+     ],
+     "level": 1,
+     "why": "She is from Toronto."
+    },
+    {
+     "q": "Which Canadian won Olympic men's hammer throw gold at Paris 2024?",
+     "a": "Ethan Katzberg",
+     "wrong": [
+      "Rowan Hamilton",
+      "Mohammad Ahmed",
+      "Damian Warner"
+     ],
+     "level": 1,
+     "why": "He is from Nanaimo, BC."
+    },
+    {
+     "q": "Which Canadian decathlete won Olympic gold at Tokyo 2020?",
+     "a": "Damian Warner",
+     "wrong": [
+      "Pierce LePage",
+      "Michael Smith",
+      "Andre De Grasse"
+     ],
+     "level": 1,
+     "why": "He is from London, Ontario."
+    },
+    {
+     "q": "Which Canadian hockey player won four Olympic golds in a row from 2002 to 2014?",
+     "a": "Hayley Wickenheiser",
+     "wrong": [
+      "Marie-Philip Poulin",
+      "Cassie Campbell",
+      "Danielle Goyette"
+     ],
+     "level": 1,
+     "why": "She played in five Olympics."
+    },
+    {
+     "q": "Which Canadian hockey player is called 'Captain Clutch' for scoring in Olympic finals?",
+     "a": "Marie-Philip Poulin",
+     "wrong": [
+      "Hayley Wickenheiser",
+      "Sarah Nurse",
+      "Natalie Spooner"
+     ],
+     "level": 1,
+     "why": "She has scored in four Olympic finals."
+    },
+    {
+     "q": "Which moguls skier won Canada's first Olympic gold on home soil, in 2010?",
+     "a": "Alexandre Bilodeau",
+     "wrong": [
+      "Mikaël Kingsbury",
+      "Jennifer Heil",
+      "Jon Montgomery"
+     ],
+     "level": 1,
+     "why": "Canada had never won gold at a home Games before."
+    },
+    {
+     "q": "Which Canadian moguls skier won Olympic gold in 2018 and holds the World Cup wins record?",
+     "a": "Mikaël Kingsbury",
+     "wrong": [
+      "Alexandre Bilodeau",
+      "Marc-Antoine Gagnon",
+      "Philippe Marquis"
+     ],
+     "level": 1,
+     "why": "He is from Quebec."
+    },
+    {
+     "q": "Which Canadian won Olympic medals in both cycling and speed skating?",
+     "a": "Clara Hughes",
+     "wrong": [
+      "Cindy Klassen",
+      "Catriona Le May Doan",
+      "Gaétan Boucher"
+     ],
+     "level": 1,
+     "why": "She won six Olympic medals."
+    },
+    {
+     "q": "Which Canadian speed skater won five medals at Turin 2006?",
+     "a": "Cindy Klassen",
+     "wrong": [
+      "Clara Hughes",
+      "Catriona Le May Doan",
+      "Christine Nesbitt"
+     ],
+     "level": 1,
+     "why": "She is from Winnipeg."
+    },
+    {
+     "q": "Which Canadian ice dancers won Olympic gold in 2010 and 2018?",
+     "a": "Tessa Virtue and Scott Moir",
+     "wrong": [
+      "Meagan Duhamel and Eric Radford",
+      "Jamie Salé and David Pelletier",
+      "Kaitlyn Weaver and Andrew Poje"
+     ],
+     "level": 1,
+     "why": "They are the most decorated Olympic figure skaters."
+    },
+    {
+     "q": "Which Canadian figure skater landed the first quadruple jump in competition, in 1988?",
+     "a": "Kurt Browning",
+     "wrong": [
+      "Elvis Stojko",
+      "Brian Orser",
+      "Patrick Chan"
+     ],
+     "level": 1,
+     "why": "He did it in Budapest."
+    },
+    {
+     "q": "Which Canadian curler skipped her team to Olympic gold in 2014 without losing a game?",
+     "a": "Jennifer Jones",
+     "wrong": [
+      "Rachel Homan",
+      "Kaitlyn Lawes",
+      "Sandra Schmirler"
+     ],
+     "level": 1,
+     "why": "She is from Winnipeg."
+    },
+    {
+     "q": "Which Canadian curler skipped the men's team to Olympic gold in 2010?",
+     "a": "Kevin Martin",
+     "wrong": [
+      "Brad Jacobs",
+      "Glenn Howard",
+      "Brad Gushue"
+     ],
+     "level": 1,
+     "why": "The Games were in Vancouver."
+    },
+    {
+     "q": "What is Canada's national women's curling championship called?",
+     "a": "Scotties Tournament of Hearts",
+     "wrong": [
+      "The Brier",
+      "Grand Slam of Curling",
+      "Continental Cup"
+     ],
+     "level": 1,
+     "why": "The men's event is the Brier."
+    },
+    {
+     "q": "What is Canada's national men's curling championship called?",
+     "a": "The Brier",
+     "wrong": [
+      "Scotties Tournament of Hearts",
+      "Labatt Cup",
+      "Allan Cup"
+     ],
+     "level": 1,
+     "why": "It began in 1927."
+    },
+    {
+     "q": "Which wheelchair racer from Quebec won 14 Paralympic gold medals?",
+     "a": "Chantal Petitclerc",
+     "wrong": [
+      "Diane Roy",
+      "Brent Lakatos",
+      "Rick Hansen"
+     ],
+     "level": 1,
+     "why": "She later became a senator."
+    },
+    {
+     "q": "Which Canadian wheeled around the world in 1985–87 for spinal cord research?",
+     "a": "Rick Hansen",
+     "wrong": [
+      "Terry Fox",
+      "Steve Fonyo",
+      "Chantal Petitclerc"
+     ],
+     "level": 1,
+     "why": "It was called the 'Man in Motion' tour."
+    },
+    {
+     "q": "Which Canadian soccer player holds the world record for international goals?",
+     "a": "Christine Sinclair",
+     "wrong": [
+      "Kadeisha Buchanan",
+      "Jessie Fleming",
+      "Diana Matheson"
+     ],
+     "level": 1,
+     "why": "She scored 190 goals for Canada."
+    },
+    {
+     "q": "Which team did Canada's women beat on penalties to win Olympic soccer gold in 2021?",
+     "a": "Sweden",
+     "wrong": [
+      "United States",
+      "Brazil",
+      "Netherlands"
+     ],
+     "level": 1,
+     "why": "It was their first Olympic soccer gold."
+    },
+    {
+     "q": "Which Canadian soccer star, raised in Edmonton, plays for Bayern Munich?",
+     "a": "Alphonso Davies",
+     "wrong": [
+      "Jonathan David",
+      "Cyle Larin",
+      "Tajon Buchanan"
+     ],
+     "level": 1,
+     "why": "He was born in a refugee camp in Ghana."
+    },
+    {
+     "q": "In which year did Canada's men first play at a FIFA World Cup?",
+     "a": "1986",
+     "wrong": [
+      "1994",
+      "2002",
+      "2022"
+     ],
+     "level": 1,
+     "why": "They qualified again in 2022."
+    },
+    {
+     "q": "Which two countries co-host the 2026 FIFA World Cup with Canada?",
+     "a": "United States and Mexico",
+     "wrong": [
+      "United States and Cuba",
+      "Mexico and Costa Rica",
+      "United States and Brazil"
+     ],
+     "level": 1,
+     "why": "Toronto and Vancouver host games."
+    },
+    {
+     "q": "Which Canadian tennis player reached the Wimbledon final in 2016?",
+     "a": "Milos Raonic",
+     "wrong": [
+      "Félix Auger-Aliassime",
+      "Denis Shapovalov",
+      "Vasek Pospisil"
+     ],
+     "level": 1,
+     "why": "He lost the final to Andy Murray."
+    },
+    {
+     "q": "Which Toronto boxer fought Muhammad Ali twice and was never knocked down?",
+     "a": "George Chuvalo",
+     "wrong": [
+      "Lennox Lewis",
+      "Willie deWit",
+      "Donovan Ruddock"
+     ],
+     "level": 1,
+     "why": "He boxed for over 20 years."
+    },
+    {
+     "q": "Which heavyweight champion grew up in Kitchener, Ontario?",
+     "a": "Lennox Lewis",
+     "wrong": [
+      "George Chuvalo",
+      "Razor Ruddock",
+      "Trevor Berbick"
+     ],
+     "level": 1,
+     "why": "He won Olympic gold for Canada in 1988."
+    },
+    {
+     "q": "Which long dog sled race runs between Whitehorse and Fairbanks?",
+     "a": "Yukon Quest",
+     "wrong": [
+      "Iditarod",
+      "Hudson Bay Quest",
+      "Arctic Run"
+     ],
+     "level": 1,
+     "why": "It is about 1,600 km long."
+    },
+    {
+     "q": "Which BC resort is the largest ski area in North America?",
+     "a": "Whistler Blackcomb",
+     "wrong": [
+      "Big White",
+      "Sun Peaks",
+      "Revelstoke"
+     ],
+     "level": 1,
+     "why": "It hosted alpine events in 2010."
+    },
+    {
+     "q": "Which Quebec ski resort in the Laurentians is famous across eastern Canada?",
+     "a": "Mont-Tremblant",
+     "wrong": [
+      "Mont-Sainte-Anne",
+      "Le Massif",
+      "Blue Mountain"
+     ],
+     "level": 1,
+     "why": "It hosts World Cup ski events."
+    },
+    {
+     "q": "Which Montreal Canadiens captain won ten Stanley Cups as a player?",
+     "a": "Jean Béliveau",
+     "wrong": [
+      "Henri Richard",
+      "Maurice Richard",
+      "Yvan Cournoyer"
+     ],
+     "level": 2,
+     "why": "Henri Richard won eleven."
+    },
+    {
+     "q": "Which hockey player has won the most Stanley Cups as a player, eleven?",
+     "a": "Henri Richard",
+     "wrong": [
+      "Jean Béliveau",
+      "Maurice Richard",
+      "Yvan Cournoyer"
+     ],
+     "level": 2,
+     "why": "He was Maurice Richard's younger brother."
+    },
+    {
+     "q": "Whose NHL record of 894 goals did Alex Ovechkin pass in 2025?",
+     "a": "Wayne Gretzky",
+     "wrong": [
+      "Gordie Howe",
+      "Jaromír Jágr",
+      "Brett Hull"
+     ],
+     "level": 2,
+     "why": "Gretzky had held it since 1994."
+    },
+    {
+     "q": "Which Saskatchewan-born hockey player was called 'Mr. Hockey'?",
+     "a": "Gordie Howe",
+     "wrong": [
+      "Bobby Hull",
+      "Jean Béliveau",
+      "Mario Lemieux"
+     ],
+     "level": 2,
+     "why": "He played pro hockey in five decades."
+    },
+    {
+     "q": "Which Quebec-born star called 'Super Mario' played for Pittsburgh?",
+     "a": "Mario Lemieux",
+     "wrong": [
+      "Guy Lafleur",
+      "Mike Bossy",
+      "Marcel Dionne"
+     ],
+     "level": 2,
+     "why": "He came back after cancer treatment."
+    },
+    {
+     "q": "Which Montreal-born goalie holds the record for most NHL wins?",
+     "a": "Martin Brodeur",
+     "wrong": [
+      "Patrick Roy",
+      "Terry Sawchuk",
+      "Marc-André Fleury"
+     ],
+     "level": 2,
+     "why": "He played for New Jersey."
+    },
+    {
+     "q": "Which NHL award goes to the regular season MVP?",
+     "a": "Hart Trophy",
+     "wrong": [
+      "Vezina Trophy",
+      "Norris Trophy",
+      "Conn Smythe Trophy"
+     ],
+     "level": 2,
+     "why": "Gretzky won it nine times."
+    },
+    {
+     "q": "Which NHL award goes to the best goaltender?",
+     "a": "Vezina Trophy",
+     "wrong": [
+      "Hart Trophy",
+      "Calder Trophy",
+      "Lady Byng Trophy"
+     ],
+     "level": 2,
+     "why": "It honours Georges Vézina."
+    },
+    {
+     "q": "Which NHL award goes to the playoff MVP?",
+     "a": "Conn Smythe Trophy",
+     "wrong": [
+      "Hart Trophy",
+      "Art Ross Trophy",
+      "Selke Trophy"
+     ],
+     "level": 2,
+     "why": "It is named after a Maple Leafs owner."
+    },
+    {
+     "q": "Which Canadian city hosted the country's first Winter Olympics, in 1988?",
+     "a": "Calgary",
+     "wrong": [
+      "Vancouver",
+      "Montreal",
+      "Quebec City"
+     ],
+     "level": 2,
+     "why": "The Jamaican bobsleigh team became famous there."
+    },
+    {
+     "q": "Which British ski jumper became famous at the 1988 Calgary Olympics?",
+     "a": "Eddie 'the Eagle' Edwards",
+     "wrong": [
+      "Franz Klammer",
+      "Alberto Tomba",
+      "Matti Nykänen"
+     ],
+     "level": 2,
+     "why": "He finished last but won hearts."
+    },
+    {
+     "q": "Which Canadian sprinter lost his 1988 Olympic 100 m gold for doping?",
+     "a": "Ben Johnson",
+     "wrong": [
+      "Donovan Bailey",
+      "Bruny Surin",
+      "Glenroy Gilbert"
+     ],
+     "level": 2,
+     "why": "Carl Lewis was given the gold."
+    },
+    {
+     "q": "Which race track in Montreal hosts the Canadian Grand Prix?",
+     "a": "Circuit Gilles Villeneuve",
+     "wrong": [
+      "Mosport Park",
+      "Circuit Mont-Tremblant",
+      "Edmonton City Centre"
+     ],
+     "level": 2,
+     "why": "It is on Île Notre-Dame."
+    },
+    {
+     "q": "Which Canadian golfer won the 2003 Masters?",
+     "a": "Mike Weir",
+     "wrong": [
+      "Nick Taylor",
+      "Corey Conners",
+      "Adam Hadwin"
+     ],
+     "level": 2,
+     "why": "He was the first Canadian man to win a major."
+    },
+    {
+     "q": "Which Canadian golfer won the 2023 Canadian Open with a long putt in a playoff?",
+     "a": "Nick Taylor",
+     "wrong": [
+      "Mike Weir",
+      "Corey Conners",
+      "Mackenzie Hughes"
+     ],
+     "level": 2,
+     "why": "He was the first Canadian winner in 69 years."
+    },
+    {
+     "q": "Which Canadian golfer won the 2016 KPMG Women's PGA Championship?",
+     "a": "Brooke Henderson",
+     "wrong": [
+      "Alena Sharp",
+      "Lorie Kane",
+      "Sandra Post"
+     ],
+     "level": 2,
+     "why": "She is from Smiths Falls, Ontario."
+    },
+    {
+     "q": "What did Indigenous peoples call the stick-and-ball game the French named lacrosse?",
+     "a": "Baggataway",
+     "wrong": [
+      "Shinny",
+      "Hurling",
+      "Shinty"
+     ],
+     "level": 2,
+     "why": "It could involve hundreds of players."
+    },
+    {
+     "q": "Which hockey tournament for young players is held in Quebec City each February?",
+     "a": "Quebec International Pee-Wee Tournament",
+     "wrong": [
+      "Memorial Cup",
+      "Allan Cup",
+      "Esso Cup"
+     ],
+     "level": 2,
+     "why": "Gretzky and Lemieux played in it."
+    },
+    {
+     "q": "Which outdoor NHL game was played in Edmonton in bitter cold in 2003?",
+     "a": "Heritage Classic",
+     "wrong": [
+      "Winter Classic",
+      "Stadium Series",
+      "Hockey Day in Canada"
+     ],
+     "level": 2,
+     "why": "It started the NHL's outdoor game era."
+    },
+    {
+     "q": "Which country won the 2025 4 Nations Face-Off hockey tournament?",
+     "a": "Canada",
+     "wrong": [
+      "United States",
+      "Sweden",
+      "Finland"
+     ],
+     "level": 2,
+     "why": "Connor McDavid scored the overtime winner."
     }
    ]
   },
@@ -4441,6 +5211,94 @@
      ],
      "level": 3,
      "why": "It was the first such ruling."
+    },
+    {
+     "q": "Which Prime Minister served the second-longest total time, after Mackenzie King?",
+     "a": "John A. Macdonald",
+     "wrong": [
+      "Pierre Trudeau",
+      "Wilfrid Laurier",
+      "Jean Chrétien"
+     ],
+     "level": 3,
+     "why": "He served about 19 years."
+    },
+    {
+     "q": "Which leader founded the Co-operative Commonwealth Federation in 1932?",
+     "a": "J. S. Woodsworth",
+     "wrong": [
+      "Tommy Douglas",
+      "David Lewis",
+      "M. J. Coldwell"
+     ],
+     "level": 3,
+     "why": "It became the NDP in 1961."
+    },
+    {
+     "q": "Which Quebec premier led the province during the 1980 referendum?",
+     "a": "René Lévesque",
+     "wrong": [
+      "Jacques Parizeau",
+      "Robert Bourassa",
+      "Lucien Bouchard"
+     ],
+     "level": 3,
+     "why": "He founded the Parti Québécois."
+    },
+    {
+     "q": "Which Quebec premier led the 1995 referendum campaign for sovereignty?",
+     "a": "Jacques Parizeau",
+     "wrong": [
+      "René Lévesque",
+      "Lucien Bouchard",
+      "Bernard Landry"
+     ],
+     "level": 3,
+     "why": "He resigned the day after it narrowly failed."
+    },
+    {
+     "q": "Which Bloc Québécois founder later became premier of Quebec?",
+     "a": "Lucien Bouchard",
+     "wrong": [
+      "Gilles Duceppe",
+      "Jacques Parizeau",
+      "Pauline Marois"
+     ],
+     "level": 3,
+     "why": "He led the Bloc from 1991."
+    },
+    {
+     "q": "Who became Quebec's first woman premier, in 2012?",
+     "a": "Pauline Marois",
+     "wrong": [
+      "Christine St-Pierre",
+      "Monique Gagnon-Tremblay",
+      "Lise Thibault"
+     ],
+     "level": 3,
+     "why": "She led the Parti Québécois."
+    },
+    {
+     "q": "Who was the first woman premier of Ontario?",
+     "a": "Kathleen Wynne",
+     "wrong": [
+      "Andrea Horwath",
+      "Bob Rae",
+      "Christine Elliott"
+     ],
+     "level": 3,
+     "why": "She governed from 2013 to 2018."
+    },
+    {
+     "q": "Which Alberta premier held up a 'Paid in Full' sign when the province cleared its debt in 2004?",
+     "a": "Ralph Klein",
+     "wrong": [
+      "Peter Lougheed",
+      "Jason Kenney",
+      "Ed Stelmach"
+     ],
+     "level": 3,
+     "why": "He was premier from 1992 to 2006."
     }
    ]
   },
@@ -5393,6 +6251,149 @@
      ],
      "level": 3,
      "why": "It is a science museum."
+    },
+    {
+     "q": "Which Canadian painter made 'The West Wind'?",
+     "a": "Tom Thomson",
+     "wrong": [
+      "Lawren Harris",
+      "A. Y. Jackson",
+      "Emily Carr"
+     ],
+     "level": 3,
+     "why": "It hangs in the Art Gallery of Ontario."
+    },
+    {
+     "q": "Which Inuit artist from Kinngait told her life in 'Pitseolak: Pictures out of My Life'?",
+     "a": "Pitseolak Ashoona",
+     "wrong": [
+      "Kenojuak Ashevak",
+      "Annie Pootoogook",
+      "Napachie Pootoogook"
+     ],
+     "level": 3,
+     "why": "She made thousands of drawings."
+    },
+    {
+     "q": "Which 1800s Haida artist carved argillite and made gold jewellery?",
+     "a": "Charles Edenshaw",
+     "wrong": [
+      "Bill Reid",
+      "Mungo Martin",
+      "Robert Davidson"
+     ],
+     "level": 3,
+     "why": "He was a Haida chief."
+    },
+    {
+     "q": "Which Vancouver Island town is famous for its giant outdoor murals?",
+     "a": "Chemainus",
+     "wrong": [
+      "Tofino",
+      "Nanaimo",
+      "Duncan"
+     ],
+     "level": 3,
+     "why": "It began painting murals in 1982."
+    },
+    {
+     "q": "Which Montreal basilica is famous for its blue and gold interior?",
+     "a": "Notre-Dame Basilica",
+     "wrong": [
+      "Saint Joseph's Oratory",
+      "Mary Queen of the World",
+      "Christ Church Cathedral"
+     ],
+     "level": 3,
+     "why": "It hosts a light show called 'AURA'."
+    },
+    {
+     "q": "Which Montreal shrine with a giant dome is Canada's largest church?",
+     "a": "Saint Joseph's Oratory",
+     "wrong": [
+      "Notre-Dame Basilica",
+      "Mary Queen of the World",
+      "Sainte-Anne-de-Beaupré"
+     ],
+     "level": 3,
+     "why": "It stands on Mount Royal."
+    },
+    {
+     "q": "Which Quebec hotel is rebuilt from ice each winter?",
+     "a": "Hôtel de Glace",
+     "wrong": [
+      "Château Frontenac",
+      "Snow Castle",
+      "Ice Lodge"
+     ],
+     "level": 3,
+     "why": "It is near Quebec City."
+    },
+    {
+     "q": "Which UNESCO site in Canada is a walled old city?",
+     "a": "Historic District of Old Québec",
+     "wrong": [
+      "Old Montreal",
+      "Lunenburg",
+      "Rideau Canal"
+     ],
+     "level": 3,
+     "why": "It is the only walled city north of Mexico."
+    },
+    {
+     "q": "Which Nova Scotia town with colourful houses is a UNESCO site?",
+     "a": "Lunenburg",
+     "wrong": [
+      "Peggy's Cove",
+      "Halifax",
+      "Mahone Bay"
+     ],
+     "level": 3,
+     "why": "The Bluenose was built there."
+    },
+    {
+     "q": "Which canal in Ottawa becomes a huge skating rink in winter?",
+     "a": "Rideau Canal",
+     "wrong": [
+      "Welland Canal",
+      "Lachine Canal",
+      "Trent–Severn Waterway"
+     ],
+     "level": 3,
+     "why": "It is a UNESCO site."
+    },
+    {
+     "q": "Which Nova Scotia lighthouse on granite rocks is one of Canada's most photographed?",
+     "a": "Peggy's Cove Lighthouse",
+     "wrong": [
+      "Cape Spear Lighthouse",
+      "Sambro Island Lighthouse",
+      "Fisgard Lighthouse"
+     ],
+     "level": 3,
+     "why": "It is about 45 km from Halifax."
+    },
+    {
+     "q": "Which Alberta lake with turquoise water sits below Victoria Glacier?",
+     "a": "Lake Louise",
+     "wrong": [
+      "Moraine Lake",
+      "Peyto Lake",
+      "Maligne Lake"
+     ],
+     "level": 3,
+     "why": "It is in Banff National Park."
+    },
+    {
+     "q": "Which Banff lake appeared on Canada's 1969 $20 note?",
+     "a": "Moraine Lake",
+     "wrong": [
+      "Lake Louise",
+      "Peyto Lake",
+      "Emerald Lake"
+     ],
+     "level": 3,
+     "why": "It is in the Valley of the Ten Peaks."
     }
    ]
   },
@@ -6549,6 +7550,655 @@
       "Resolute"
      ],
      "why": "It was never beaten in the International Fishermen's Race."
+    },
+    {
+     "q": "Which inventor was granted a US patent for the telephone in 1876?",
+     "a": "Alexander Graham Bell",
+     "wrong": [
+      "Thomas Edison",
+      "Reginald Fessenden",
+      "Guglielmo Marconi"
+     ],
+     "level": 1,
+     "why": "He also lived in Nova Scotia."
+    },
+    {
+     "q": "Which Quebec-born inventor made the first radio broadcast of voice and music, in 1906?",
+     "a": "Reginald Fessenden",
+     "wrong": [
+      "Alexander Graham Bell",
+      "Guglielmo Marconi",
+      "Ted Rogers"
+     ],
+     "level": 1,
+     "why": "He broadcast on Christmas Eve."
+    },
+    {
+     "q": "Which Waterloo, Ontario, company made the BlackBerry phone?",
+     "a": "Research In Motion",
+     "wrong": [
+      "Nortel",
+      "Rogers",
+      "Bell Canada"
+     ],
+     "level": 1,
+     "why": "It renamed itself BlackBerry in 2013."
+    },
+    {
+     "q": "Which board game was invented by two Montreal journalists in 1979?",
+     "a": "Trivial Pursuit",
+     "wrong": [
+      "Scrabble",
+      "Pictionary",
+      "Balderdash"
+     ],
+     "level": 1,
+     "why": "Chris Haney and Scott Abbott created it."
+    },
+    {
+     "q": "Which version of bowling was invented in Toronto in 1909?",
+     "a": "Five-pin bowling",
+     "wrong": [
+      "Candlepin bowling",
+      "Duckpin bowling",
+      "Ten-pin bowling"
+     ],
+     "level": 1,
+     "why": "Thomas Ryan invented it."
+    },
+    {
+     "q": "Which pizza was invented in Chatham, Ontario, in 1962?",
+     "a": "Hawaiian pizza",
+     "wrong": [
+      "Pepperoni pizza",
+      "Margherita",
+      "Meat lovers"
+     ],
+     "level": 1,
+     "why": "Sam Panopoulos added pineapple."
+    },
+    {
+     "q": "Which Canadian cocktail is made with Clamato juice?",
+     "a": "Caesar",
+     "wrong": [
+      "Bloody Mary",
+      "Mojito",
+      "Paralyzer"
+     ],
+     "level": 1,
+     "why": "It was invented in Calgary in 1969."
+    },
+    {
+     "q": "Which Canadian chocolate bar has a flaky peanut butter centre?",
+     "a": "Crispy Crunch",
+     "wrong": [
+      "Coffee Crisp",
+      "Aero",
+      "Mr. Big"
+     ],
+     "level": 1,
+     "why": "It is made by Cadbury in Canada."
+    },
+    {
+     "q": "Which Canadian chocolate bar is coffee flavoured?",
+     "a": "Coffee Crisp",
+     "wrong": [
+      "Crispy Crunch",
+      "Caramilk",
+      "Wunderbar"
+     ],
+     "level": 1,
+     "why": "It is sold mainly in Canada."
+    },
+    {
+     "q": "What is Canadian peameal bacon?",
+     "a": "Cured pork loin rolled in cornmeal",
+     "wrong": [
+      "Smoked pork belly",
+      "Turkey bacon",
+      "Beef bacon"
+     ],
+     "level": 1,
+     "why": "It is a Toronto favourite."
+    },
+    {
+     "q": "What food is Schwartz's deli in Montreal famous for?",
+     "a": "Smoked meat",
+     "wrong": [
+      "Bagels",
+      "Poutine",
+      "Tourtière"
+     ],
+     "level": 1,
+     "why": "It is cured beef brisket."
+    },
+    {
+     "q": "Which fried dough treat shaped like an animal's tail was first sold in Ontario?",
+     "a": "BeaverTails",
+     "wrong": [
+      "Timbits",
+      "Butter tarts",
+      "Bannock"
+     ],
+     "level": 1,
+     "why": "Barack Obama stopped for one in Ottawa in 2009."
+    },
+    {
+     "q": "Which Quebec 'poor man's pudding' is cake baked in syrup?",
+     "a": "Pouding chômeur",
+     "wrong": [
+      "Tarte au sucre",
+      "Grands-pères",
+      "Pets de sœur"
+     ],
+     "level": 1,
+     "why": "It dates from the Great Depression."
+    },
+    {
+     "q": "Which flat bread is a traditional food of Indigenous peoples across Canada?",
+     "a": "Bannock",
+     "wrong": [
+      "Naan",
+      "Lefse",
+      "Tortilla"
+     ],
+     "level": 1,
+     "why": "It can be fried or baked."
+    },
+    {
+     "q": "Which Newfoundland dish is salt cod with soaked hard bread?",
+     "a": "Fish and brewis",
+     "wrong": [
+      "Jiggs dinner",
+      "Cod tongues",
+      "Toutons"
+     ],
+     "level": 1,
+     "why": "It is a traditional breakfast."
+    },
+    {
+     "q": "Which Newfoundland meal of salt beef and boiled vegetables is eaten on Sundays?",
+     "a": "Jiggs dinner",
+     "wrong": [
+      "Fish and brewis",
+      "Toutons",
+      "Figgy duff"
+     ],
+     "level": 1,
+     "why": "It is named after a comic strip character."
+    },
+    {
+     "q": "What is a 'two-four' in Canadian slang?",
+     "a": "A case of 24 beers",
+     "wrong": [
+      "A two-dollar coin",
+      "A hockey score",
+      "A long weekend"
+     ],
+     "level": 1,
+     "why": "The May long weekend is called 'May Two-Four'."
+    },
+    {
+     "q": "What is a 'toque' in Canada?",
+     "a": "A knitted winter hat",
+     "wrong": [
+      "A winter boot",
+      "A hockey stick",
+      "A sled"
+     ],
+     "level": 1,
+     "why": "It is also spelled tuque."
+    },
+    {
+     "q": "In Saskatchewan, what is a hooded sweatshirt called?",
+     "a": "Bunnyhug",
+     "wrong": [
+      "Toque",
+      "Mukluk",
+      "Kangaroo"
+     ],
+     "level": 1,
+     "why": "Most other Canadians say hoodie."
+    },
+    {
+     "q": "What is a 'double-double' at a Canadian Tim Hortons?",
+     "a": "Coffee with two creams and two sugars",
+     "wrong": [
+      "Two doughnuts",
+      "A large coffee",
+      "Two Timbits"
+     ],
+     "level": 1,
+     "why": "It is a Canadian classic."
+    },
+    {
+     "q": "Which Canadian company, founded in 1670, was the oldest in North America?",
+     "a": "Hudson's Bay Company",
+     "wrong": [
+      "Eaton's",
+      "Simpsons",
+      "Sears Canada"
+     ],
+     "level": 1,
+     "why": "It closed its stores in 2025."
+    },
+    {
+     "q": "Which Canadian retailer is known for its red triangle logo and paper 'money'?",
+     "a": "Canadian Tire",
+     "wrong": [
+      "Home Hardware",
+      "Rona",
+      "Zellers"
+     ],
+     "level": 1,
+     "why": "Its paper coupons date from 1958."
+    },
+    {
+     "q": "Which is Canada's largest bank?",
+     "a": "Royal Bank of Canada",
+     "wrong": [
+      "TD Bank",
+      "Scotiabank",
+      "Bank of Montreal"
+     ],
+     "level": 1,
+     "why": "It began in Halifax in 1864."
+    },
+    {
+     "q": "Which coffee chain was founded by a hockey player in Hamilton in 1964?",
+     "a": "Tim Hortons",
+     "wrong": [
+      "Second Cup",
+      "Coffee Time",
+      "Country Style"
+     ],
+     "level": 1,
+     "why": "Tim Horton played for the Maple Leafs."
+    },
+    {
+     "q": "Which Canadian passenger railway runs 'The Canadian' from Toronto to Vancouver?",
+     "a": "VIA Rail",
+     "wrong": [
+      "CN Rail",
+      "CP Rail",
+      "Amtrak"
+     ],
+     "level": 1,
+     "why": "The trip takes about four days."
+    },
+    {
+     "q": "Which is Canada's largest airline?",
+     "a": "Air Canada",
+     "wrong": [
+      "WestJet",
+      "Porter Airlines",
+      "Air Transat"
+     ],
+     "level": 1,
+     "why": "It began in 1937 as Trans-Canada Air Lines."
+    },
+    {
+     "q": "Which Canadian public broadcaster runs radio and TV in English and French?",
+     "a": "CBC/Radio-Canada",
+     "wrong": [
+      "CTV",
+      "Global",
+      "TVA"
+     ],
+     "level": 1,
+     "why": "It began in 1936."
+    },
+    {
+     "q": "What is the Canadian Shield?",
+     "a": "A huge area of ancient rock",
+     "wrong": [
+      "A military alliance",
+      "A hockey trophy",
+      "A coat of arms"
+     ],
+     "level": 1,
+     "why": "It covers about half of Canada."
+    },
+    {
+     "q": "Which day does Newfoundland mark on 1 July as well as Canada Day?",
+     "a": "Memorial Day",
+     "wrong": [
+      "Remembrance Day",
+      "Victoria Day",
+      "Discovery Day"
+     ],
+     "level": 1,
+     "why": "It remembers the Battle of Beaumont-Hamel in 1916."
+    },
+    {
+     "q": "Which flower do Canadians wear for Remembrance Day?",
+     "a": "Poppy",
+     "wrong": [
+      "Maple leaf",
+      "Rose",
+      "Lily"
+     ],
+     "level": 1,
+     "why": "It comes from 'In Flanders Fields'."
+    },
+    {
+     "q": "On which date is Remembrance Day in Canada?",
+     "a": "11 November",
+     "wrong": [
+      "1 July",
+      "24 May",
+      "1 November"
+     ],
+     "level": 1,
+     "why": "It marks the 1918 armistice."
+    },
+    {
+     "q": "Which Quebec holiday falls on 24 June?",
+     "a": "Fête nationale (Saint-Jean-Baptiste Day)",
+     "wrong": [
+      "Canada Day",
+      "Victoria Day",
+      "Patriots' Day"
+     ],
+     "level": 1,
+     "why": "Bonfires and concerts are held."
+    },
+    {
+     "q": "In Canada, which day is Boxing Day?",
+     "a": "26 December",
+     "wrong": [
+      "24 December",
+      "1 January",
+      "27 December"
+     ],
+     "level": 1,
+     "why": "It is a big shopping day."
+    },
+    {
+     "q": "Which Toronto students built North America's first practical electron microscope in 1938?",
+     "a": "James Hillier and Albert Prebus",
+     "wrong": [
+      "Banting and Best",
+      "Bell and Watson",
+      "Fessenden and Rogers"
+     ],
+     "level": 2,
+     "why": "They built it in a few months."
+    },
+    {
+     "q": "Which Canadian engineer built the first external heart pacemaker, in 1950?",
+     "a": "John Hopps",
+     "wrong": [
+      "Wilfred Bigelow",
+      "Frederick Banting",
+      "Norman Bethune"
+     ],
+     "level": 2,
+     "why": "He worked with surgeons in Toronto."
+    },
+    {
+     "q": "What is the Canadarm?",
+     "a": "A robotic arm used on space shuttles",
+     "wrong": [
+      "A Canadian satellite",
+      "A space station module",
+      "A rocket engine"
+     ],
+     "level": 2,
+     "why": "It first flew in 1981."
+    },
+    {
+     "q": "Who was the first Canadian in space, in 1984?",
+     "a": "Marc Garneau",
+     "wrong": [
+      "Chris Hadfield",
+      "Roberta Bondar",
+      "Julie Payette"
+     ],
+     "level": 2,
+     "why": "He later became a federal minister."
+    },
+    {
+     "q": "Who was the first Canadian woman in space?",
+     "a": "Roberta Bondar",
+     "wrong": [
+      "Julie Payette",
+      "Jenni Sidey-Gibbons",
+      "Marc Garneau"
+     ],
+     "level": 2,
+     "why": "She flew in 1992."
+    },
+    {
+     "q": "Which Canadian astronaut sang 'Space Oddity' on the International Space Station?",
+     "a": "Chris Hadfield",
+     "wrong": [
+      "Marc Garneau",
+      "David Saint-Jacques",
+      "Bob Thirsk"
+     ],
+     "level": 2,
+     "why": "He was the first Canadian to command the ISS."
+    },
+    {
+     "q": "Which Canadian astronaut flew around the Moon on Artemis II?",
+     "a": "Jeremy Hansen",
+     "wrong": [
+      "Chris Hadfield",
+      "Jenni Sidey-Gibbons",
+      "Joshua Kutryk"
+     ],
+     "level": 2,
+     "why": "He is from London, Ontario."
+    },
+    {
+     "q": "Which surgeon founded the Montreal Neurological Institute and mapped the brain?",
+     "a": "Wilder Penfield",
+     "wrong": [
+      "Norman Bethune",
+      "Frederick Banting",
+      "William Osler"
+     ],
+     "level": 2,
+     "why": "It opened in 1934."
+    },
+    {
+     "q": "Which Canadian-born doctor helped found Johns Hopkins and is called a father of modern medicine?",
+     "a": "William Osler",
+     "wrong": [
+      "Wilder Penfield",
+      "Norman Bethune",
+      "Frederick Banting"
+     ],
+     "level": 2,
+     "why": "He was born in Ontario."
+    },
+    {
+     "q": "Which Winnipeg-born scientist won the 2019 Nobel Prize in Physics for cosmology?",
+     "a": "James Peebles",
+     "wrong": [
+      "Arthur McDonald",
+      "Donna Strickland",
+      "Willard Boyle"
+     ],
+     "level": 2,
+     "why": "He worked at Princeton."
+    },
+    {
+     "q": "Which Canadian woman won the 2018 Nobel Prize in Physics for laser work?",
+     "a": "Donna Strickland",
+     "wrong": [
+      "Roberta Bondar",
+      "Julie Payette",
+      "Margaret Atwood"
+     ],
+     "level": 2,
+     "why": "She works at the University of Waterloo."
+    },
+    {
+     "q": "Which Canadian shared the 2015 Nobel Prize in Physics for neutrino research?",
+     "a": "Arthur McDonald",
+     "wrong": [
+      "James Peebles",
+      "Donna Strickland",
+      "Willard Boyle"
+     ],
+     "level": 2,
+     "why": "He led the Sudbury Neutrino Observatory."
+    },
+    {
+     "q": "Which University of Toronto 'godfather of AI' won the 2024 Nobel Prize in Physics?",
+     "a": "Geoffrey Hinton",
+     "wrong": [
+      "Yoshua Bengio",
+      "Richard Sutton",
+      "Yann LeCun"
+     ],
+     "level": 2,
+     "why": "He shared it with John Hopfield."
+    },
+    {
+     "q": "Which Montreal AI researcher founded the Mila institute and shared the 2018 Turing Award?",
+     "a": "Yoshua Bengio",
+     "wrong": [
+      "Geoffrey Hinton",
+      "Richard Sutton",
+      "Joëlle Pineau"
+     ],
+     "level": 2,
+     "why": "Hinton and LeCun shared it too."
+    },
+    {
+     "q": "Which Canadian nuclear reactor design uses heavy water and natural uranium?",
+     "a": "CANDU",
+     "wrong": [
+      "Magnox",
+      "RBMK",
+      "AP1000"
+     ],
+     "level": 2,
+     "why": "It was developed in the 1950s and 60s."
+    },
+    {
+     "q": "Which supersonic Canadian jet fighter was cancelled in 1959?",
+     "a": "Avro Arrow",
+     "wrong": [
+      "CF-18 Hornet",
+      "Canadair Sabre",
+      "CF-100 Canuck"
+     ],
+     "level": 2,
+     "why": "The cancellation is still debated."
+    },
+    {
+     "q": "Which Quebec company, founded by the snowmobile's inventor, now makes trains?",
+     "a": "Bombardier",
+     "wrong": [
+      "CAE",
+      "Alstom",
+      "Nova Bus"
+     ],
+     "level": 2,
+     "why": "Joseph-Armand Bombardier founded it."
+    },
+    {
+     "q": "Which Quebec company makes Ski-Doo snowmobiles and Sea-Doo watercraft?",
+     "a": "BRP",
+     "wrong": [
+      "Arctic Cat",
+      "Polaris",
+      "Yamaha"
+     ],
+     "level": 2,
+     "why": "It was spun off from Bombardier in 2003."
+    },
+    {
+     "q": "Which Ottawa-based tech company runs online shops for millions of businesses?",
+     "a": "Shopify",
+     "wrong": [
+      "BlackBerry",
+      "Nortel",
+      "Corel"
+     ],
+     "level": 2,
+     "why": "It was founded in 2006."
+    },
+    {
+     "q": "Which Canadian telecom giant went bankrupt in 2009?",
+     "a": "Nortel",
+     "wrong": [
+      "BlackBerry",
+      "Bell",
+      "Rogers"
+     ],
+     "level": 2,
+     "why": "At its peak it was worth over $300 billion."
+    },
+    {
+     "q": "Which Vancouver company is famous for yoga clothes?",
+     "a": "Lululemon",
+     "wrong": [
+      "Roots",
+      "Aritzia",
+      "Canada Goose"
+     ],
+     "level": 2,
+     "why": "It was founded in 1998."
+    },
+    {
+     "q": "Which Toronto company makes parkas first designed for Arctic work?",
+     "a": "Canada Goose",
+     "wrong": [
+      "Roots",
+      "Lululemon",
+      "Kanuk"
+     ],
+     "level": 2,
+     "why": "It was founded in 1957."
+    },
+    {
+     "q": "Which Canadian engineer proposed worldwide standard time zones?",
+     "a": "Sandford Fleming",
+     "wrong": [
+      "Alexander Graham Bell",
+      "John Rae",
+      "William Logan"
+     ],
+     "level": 3,
+     "why": "He also designed Canada's first stamp."
+    },
+    {
+     "q": "What animal was on Canada's first postage stamp in 1851?",
+     "a": "A beaver",
+     "wrong": [
+      "A moose",
+      "A loon",
+      "A caribou"
+     ],
+     "level": 3,
+     "why": "It was called the 'Threepenny Beaver'."
+    },
+    {
+     "q": "Which Toronto chemist shared the 1986 Nobel Prize in Chemistry?",
+     "a": "John Polanyi",
+     "wrong": [
+      "Gerhard Herzberg",
+      "Rudolph Marcus",
+      "Michael Smith"
+     ],
+     "level": 3,
+     "why": "He studied chemical reactions with infrared light."
+    },
+    {
+     "q": "Which Hudson's Bay Company explorer learned the fate of the Franklin expedition from Inuit?",
+     "a": "John Rae",
+     "wrong": [
+      "Robert McClure",
+      "Leopold McClintock",
+      "Samuel Hearne"
+     ],
+     "level": 3,
+     "why": "He was from Orkney."
     }
    ]
   }
