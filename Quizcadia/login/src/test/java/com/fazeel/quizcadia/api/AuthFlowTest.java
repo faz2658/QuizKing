@@ -62,9 +62,10 @@ class AuthFlowTest {
 	}
 
 	@Test
-	void tokensFromBeforeTheRenameStillWork() {
-		// a browser signed in before the rename sends its old token with every request, public ones included
-		assertThat(getStatus("/api/v1/auth/providers", signedToken("quiz-king-login"))).isEqualTo(200);
+	void onlyTokensFromThisServiceAreAccepted() {
+		assertThat(getStatus("/api/v1/auth/providers", signedToken("quizcadia-login"))).isEqualTo(200);
+		// pre-rename tokens lasted 8 hours at most and the rename is older than that
+		assertThat(getStatus("/api/v1/auth/providers", signedToken("quiz-king-login"))).isEqualTo(401);
 		assertThat(getStatus("/api/v1/auth/providers", signedToken("someone-else"))).isEqualTo(401);
 	}
 

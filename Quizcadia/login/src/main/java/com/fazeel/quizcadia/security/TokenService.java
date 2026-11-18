@@ -12,13 +12,13 @@ import org.springframework.security.oauth2.jwt.JwtEncoderParameters;
 
 import com.fazeel.quizcadia.account.Account;
 
-/** Issues signed access tokens. The subject is the user id; the role is in the "roles" claim. */
+/**
+ * Issues signed access tokens. The subject is the user id; the role is in the "roles" claim. They are short-lived
+ * (quizcadia.jwt.lifetime, 15 minutes by default): the refresh cookie (SessionService) gets the next one.
+ */
 public class TokenService {
 
 	public static final String ISSUER = "quizcadia-login";
-
-	/** What tokens said before the rename to QuizCadia; still accepted until they expire. */
-	public static final String LEGACY_ISSUER = "quiz-king-login";
 
 	private final JwtEncoder encoder;
 	private final Duration lifetime;

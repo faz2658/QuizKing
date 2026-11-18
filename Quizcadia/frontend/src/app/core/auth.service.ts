@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, computed, inject, signal } from '@angular/core';
-import { Observable, tap } from 'rxjs';
+import { finalize, Observable, shareReplay, tap } from 'rxjs';
 import { TokenResponse, User } from './models';
 import { track } from './analytics';
 import { Providers, SignInOptions } from './sign-in-options';
@@ -35,11 +35,19 @@ function clearInvite(): void {
   }
 }
 
+/**
+ * What survives a reload. {@code token} is a short-lived access token (15 minutes): the refresh token that renews it
+ * is in an HttpOnly cookie that page scripts can't read. {@code sessionExpiresAt}: when that cookie runs out.
+ */
 interface StoredSession {
   token: string;
   expiresAt: string;
   user: User;
+  sessionExpiresAt?: string | null;
 }
+
+/** Renew the access token this long before it runs out. */
+const REFRESH_AHEAD_MS = 60_000;
 
 /** Current player: an account or a guest, each with a JWT from the login service. */
 @Injectable({ providedIn: 'root' })
@@ -52,6 +60,7 @@ export class AuthService {
   readonly token = computed(() => this.session()?.token ?? null);
   readonly isLoggedIn = computed(() => this.session() !== null);
   readonly isAdmin = computed(() => this.session()?.user.role === 'ADMIN');
+  private refreshing: Observable<TokenResponse> | null = null;
 
   login(email: string, password: string): Observable<TokenResponse> {
     return this.http.post<TokenResponse>('/api/v1/auth/login', { email, password }).pipe(tap((t) => { this.store(t); track('login', { method: 'password' }); }));
@@ -94,12 +103,40 @@ export class AuthService {
       .pipe(tap((t) => this.store(t)));
   }
 
+  /** True when the access token is gone or about to run out, so the next API call should renew it first. */
+  expiresSoon(now = Date.now()): boolean {
+    const s = this.session();
+    return !!s && new Date(s.expiresAt).getTime() - REFRESH_AHEAD_MS <= now;
+  }
+
+  /**
+   * Swaps the refresh cookie for a new access token. Calls made while one is on its way share it, so a burst
+   * of requests renews once. Errors with 401 when the sign-in has ended (see {@link endLocally}).
+   */
+  refresh(): Observable<TokenResponse> {
+    this.refreshing ??= this.http.post<TokenResponse>('/api/v1/auth/refresh', {}).pipe(
+      tap((t) => this.store(t)),
+      finalize(() => (this.refreshing = null)),
+      shareReplay({ bufferSize: 1, refCount: false }),
+    );
+    return this.refreshing;
+  }
+
+  /** Signs out here and on the server (the refresh cookie stops working), even if the server can't be reached. */
   logout(): void {
+    this.http.post<void>('/api/v1/auth/logout', {}).subscribe({ error: () => undefined });
+    this.save(null);
+  }
+
+  /** Forgets the sign-in in this browser only: the server already said it has ended. */
+  endLocally(): void {
     this.save(null);
   }
 
   private store(t: TokenResponse): void {
-    this.save({ token: t.token, expiresAt: t.expiresAt, user: t.user });
+    // a refresh inside the two-tabs grace period sets no new cookie: the current one keeps its end
+    const sessionExpiresAt = t.sessionExpiresAt ?? this.session()?.sessionExpiresAt ?? null;
+    this.save({ token: t.token, expiresAt: t.expiresAt, user: t.user, sessionExpiresAt });
   }
 
   private save(s: StoredSession | null): void {
@@ -122,8 +159,11 @@ export class AuthService {
         return null;
       }
       const s = JSON.parse(raw) as StoredSession;
-      // Every API call needs a token now; sessions saved by older versions (guests without one) start over
-      if (!s.token || (s.expiresAt && new Date(s.expiresAt).getTime() < Date.now())) {
+      // Every API call needs a token now; sessions saved by older versions (guests without one) start over.
+      // An expired access token is fine while the refresh cookie lasts: the first API call renews it.
+      const now = Date.now();
+      const until = s.sessionExpiresAt ?? s.expiresAt;
+      if (!s.token || !until || new Date(until).getTime() < now) {
         localStorage.removeItem(STORAGE_KEY);
         return null;
       }

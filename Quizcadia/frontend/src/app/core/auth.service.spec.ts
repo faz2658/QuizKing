@@ -47,6 +47,41 @@ describe('AuthService', () => {
     expect(auth.isLoggedIn()).toBe(false);
   });
 
+  it('keeps a session whose access token ran out while the refresh cookie still lasts', () => {
+    localStorage.setItem('quizcadia.session', JSON.stringify({ token: 't', expiresAt: '2000-01-01T00:00:00Z',
+      sessionExpiresAt: new Date(Date.now() + 86_400_000).toISOString(), user: { userId: 1, userName: 'Ada', email: '', role: 'USER' } }));
+    const restored = TestBed.runInInjectionContext(() => new AuthService());
+    expect(restored.isLoggedIn()).toBe(true);
+    expect(restored.expiresSoon()).toBe(true);
+  });
+
+  it('refreshes once for callers that ask together, and keeps the session end when no new cookie came', () => {
+    auth.login('ada@x.test', 'secret-123').subscribe();
+    const end = new Date(Date.now() + 30 * 86_400_000).toISOString();
+    http.expectOne('/api/v1/auth/login').flush({ token: 'jwt', tokenType: 'Bearer', expiresAt: new Date(Date.now() + 60_000).toISOString(),
+      sessionExpiresAt: end, user: { userId: 7, userName: 'Ada', email: 'ada@x.test', role: 'USER' } });
+
+    const tokens: string[] = [];
+    auth.refresh().subscribe((t) => tokens.push(t.token));
+    auth.refresh().subscribe((t) => tokens.push(t.token));
+    http.expectOne('/api/v1/auth/refresh').flush({ token: 'jwt-2', tokenType: 'Bearer',
+      expiresAt: new Date(Date.now() + 900_000).toISOString(), sessionExpiresAt: null,
+      user: { userId: 7, userName: 'Ada L', email: 'ada@x.test', role: 'USER' } });
+    expect(tokens).toEqual(['jwt-2', 'jwt-2']);
+    expect(auth.user()?.userName).toBe('Ada L');
+    expect(JSON.parse(localStorage.getItem('quizcadia.session')!).sessionExpiresAt).toBe(end);
+  });
+
+  it('signing out tells the server, and works even when it cannot be reached', () => {
+    auth.playAsGuest('Sam').subscribe();
+    http.expectOne('/api/v1/auth/guest').flush({ token: 'g', tokenType: 'Bearer', expiresAt: new Date(Date.now() + 60_000).toISOString(),
+      user: { userId: 912_345_678, userName: 'Sam', email: '', role: 'GUEST' } });
+    auth.logout();
+    http.expectOne('/api/v1/auth/logout').error(new ProgressEvent('error'));
+    expect(auth.isLoggedIn()).toBe(false);
+    expect(localStorage.getItem('quizcadia.session')).toBeNull();
+  });
+
   it('drops sessions saved without a token by older versions', () => {
     localStorage.setItem('quizcadia.session', JSON.stringify({ token: null, expiresAt: null,
       user: { userId: 900_000_001, userName: 'Old guest', email: '', role: 'GUEST' } }));

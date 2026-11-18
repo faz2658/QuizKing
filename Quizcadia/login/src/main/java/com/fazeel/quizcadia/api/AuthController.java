@@ -5,6 +5,7 @@ import java.time.Instant;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;
+import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,6 +19,10 @@ import com.fazeel.quizcadia.account.PasswordResetService;
 import com.fazeel.quizcadia.google.GoogleTokenVerifier;
 import com.fazeel.quizcadia.security.TokenService;
 import com.fazeel.quizcadia.security.TokenService.IssuedToken;
+import com.fazeel.quizcadia.session.SessionCookie;
+import com.fazeel.quizcadia.session.SessionService;
+
+import jakarta.servlet.http.HttpServletResponse;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
@@ -32,19 +37,23 @@ public class AuthController {
 	private final TokenService tokens;
 	private final PasswordResetService resets;
 	private final GoogleTokenVerifier google;
+	private final SessionService sessions;
+	private final SessionCookie cookie;
 
 	private final String analyticsId;
 	@org.springframework.beans.factory.annotation.Value("#{!'${quizcadia.mail.host:}'.isBlank()}")
 	private boolean mailConfigured;
 
 	public AuthController(AccountService accounts, TokenService tokens, PasswordResetService resets,
-			GoogleTokenVerifier google,
+			GoogleTokenVerifier google, SessionService sessions, SessionCookie cookie,
 			@org.springframework.beans.factory.annotation.Value("${quizcadia.analytics-id:}") String analyticsId) {
 		this.analyticsId = analyticsId == null || !analyticsId.matches("G-[A-Z0-9]{4,20}") ? null : analyticsId;
 		this.accounts = accounts;
 		this.tokens = tokens;
 		this.resets = resets;
 		this.google = google;
+		this.sessions = sessions;
+		this.cookie = cookie;
 	}
 
 	/** Which sign-in options the browser should show, and the analytics id. Both are public by design. */
@@ -62,8 +71,8 @@ public class AuthController {
 
 	/** "Sign in with Google": the browser sends the ID token Google gave it; new players get an account. */
 	@PostMapping("/google")
-	public TokenView google(@Valid @RequestBody GoogleRequest r) {
-		return token(accounts.signInWithGoogle(google.verify(r.credential()), r.invite()));
+	public TokenView google(@Valid @RequestBody GoogleRequest r, HttpServletResponse response) {
+		return signIn(accounts.signInWithGoogle(google.verify(r.credential()), r.invite()), response);
 	}
 
 	public record ForgotRequest(@NotBlank @Email @Size(max = 254) String email) {
@@ -85,8 +94,8 @@ public class AuthController {
 
 	/** Sets a new password from an emailed link and logs the player in. */
 	@PostMapping("/password/reset")
-	public TokenView reset(@Valid @RequestBody ResetRequest r) {
-		return token(resets.reset(r.token(), r.password()));
+	public TokenView reset(@Valid @RequestBody ResetRequest r, HttpServletResponse response) {
+		return signIn(resets.reset(r.token(), r.password()), response); // the reset ended every other sign-in
 	}
 
 	public record RegisterRequest(@NotBlank @Size(max = 60) String userName, @NotBlank @Email @Size(max = 254) String email,
@@ -107,19 +116,63 @@ public class AuthController {
 		}
 	}
 
-	public record TokenView(String token, String tokenType, Instant expiresAt, UserView user) {
+	/**
+	 * {@code expiresAt}: when the access token runs out (minutes). {@code sessionExpiresAt}: when the refresh
+	 * cookie set with this response does (null when no new cookie was set), so the app knows how long it stays signed in.
+	 */
+	public record TokenView(String token, String tokenType, Instant expiresAt, UserView user, Instant sessionExpiresAt) {
 	}
 
 	/** Creates an account and logs the new user in. */
 	@PostMapping("/register")
 	@ResponseStatus(HttpStatus.CREATED)
-	public TokenView register(@Valid @RequestBody RegisterRequest r) {
-		return token(accounts.register(r.userName(), r.email(), r.password(), r.invite()));
+	public TokenView register(@Valid @RequestBody RegisterRequest r, HttpServletResponse response) {
+		return signIn(accounts.register(r.userName(), r.email(), r.password(), r.invite()), response);
 	}
 
 	@PostMapping("/login")
-	public TokenView login(@Valid @RequestBody LoginRequest r) {
-		return token(accounts.authenticate(r.email(), r.password()));
+	public TokenView login(@Valid @RequestBody LoginRequest r, HttpServletResponse response) {
+		return signIn(accounts.authenticate(r.email(), r.password()), response);
+	}
+
+	/**
+	 * A new short-lived access token from the refresh cookie (which is swapped for the next one). The app calls
+	 * this shortly before its access token runs out, and after a 401. 401 when the sign-in has ended.
+	 */
+	@PostMapping("/refresh")
+	public TokenView refresh(@CookieValue(name = SessionCookie.NAME, required = false) String refreshToken,
+			HttpServletResponse response) {
+		SessionService.Renewal r = sessions.refresh(refreshToken);
+		if (r.refresh() != null) {
+			cookie.set(response, r.refresh());
+		}
+		return new TokenView(r.access().value(), "Bearer", r.access().expiresAt(),
+				new UserView(r.userId(), r.userName(), r.email(), r.role()),
+				r.refresh() == null ? null : r.refresh().expiresAt());
+	}
+
+	/** Signs this browser out: the refresh token stops working and the cookie is removed. Always 204. */
+	@PostMapping("/logout")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void logout(@CookieValue(name = SessionCookie.NAME, required = false) String refreshToken,
+			HttpServletResponse response) {
+		sessions.end(refreshToken);
+		cookie.clear(response);
+	}
+
+	/** Signs the account out on every device (a guest just signs out here). */
+	@PostMapping("/logout/all")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void logoutEverywhere(@AuthenticationPrincipal Jwt jwt,
+			@CookieValue(name = SessionCookie.NAME, required = false) String refreshToken, HttpServletResponse response) {
+		java.util.List<String> roles = jwt.getClaimAsStringList("roles");
+		if (roles != null && roles.contains(TokenService.GUEST)) {
+			sessions.end(refreshToken);
+		}
+		else {
+			sessions.endAll(Integer.parseInt(jwt.getSubject()));
+		}
+		cookie.clear(response);
 	}
 
 	public record GuestRequest(@NotBlank @Size(max = 60) String userName) {
@@ -132,11 +185,13 @@ public class AuthController {
 	/** Lets someone play without an account. Guest ids sit far above real account ids, so they never clash. */
 	@PostMapping("/guest")
 	@ResponseStatus(HttpStatus.CREATED)
-	public TokenView guest(@Valid @RequestBody GuestRequest r) {
+	public TokenView guest(@Valid @RequestBody GuestRequest r, HttpServletResponse response) {
 		int guestId = GUEST_ID_BASE + RANDOM.nextInt(GUEST_ID_RANGE);
 		IssuedToken t = tokens.issueGuest(guestId, r.userName());
+		SessionService.Issued session = sessions.startGuest(guestId, r.userName());
+		cookie.set(response, session);
 		return new TokenView(t.value(), "Bearer", t.expiresAt(),
-				new UserView(guestId, r.userName(), "", TokenService.GUEST));
+				new UserView(guestId, r.userName(), "", TokenService.GUEST), session.expiresAt());
 	}
 
 	static final int GUEST_ID_BASE = 900_000_000;
@@ -156,8 +211,11 @@ public class AuthController {
 						"This account no longer exists. Please sign in again."));
 	}
 
-	private TokenView token(Account a) {
+	/** A short access token in the body, and a new sign-in in the refresh cookie. */
+	private TokenView signIn(Account a, HttpServletResponse response) {
+		SessionService.Issued session = sessions.start(a);
+		cookie.set(response, session);
 		IssuedToken t = tokens.issue(a);
-		return new TokenView(t.value(), "Bearer", t.expiresAt(), UserView.of(a));
+		return new TokenView(t.value(), "Bearer", t.expiresAt(), UserView.of(a), session.expiresAt());
 	}
 }

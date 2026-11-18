@@ -47,9 +47,10 @@ class JwtSupportTest {
 	}
 
 	@Test
-	void stillAcceptsTokensSignedBeforeTheRename() {
-		var jwt = support.quizcadiaJwtDecoder(SECRET).decode(token(SECRET, "quiz-king-login", "42", List.of("USER")));
-		assertThat(jwt.getSubject()).isEqualTo("42");
+	void noLongerAcceptsTokensSignedBeforeTheRename() {
+		// they lasted 8 hours at most, and the rename has been live for longer than that
+		assertThatThrownBy(() -> support.quizcadiaJwtDecoder(SECRET).decode(token(SECRET, "quiz-king-login", "42",
+				List.of("USER")))).isInstanceOf(JwtException.class);
 	}
 
 	@Test

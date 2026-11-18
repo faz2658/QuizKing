@@ -38,9 +38,12 @@ public class PasswordResetService {
 	private final Mailer mailer;
 	private final Clock clock;
 	private final String publicUrl;
+	private final com.fazeel.quizcadia.session.SessionService sessions;
 
 	public PasswordResetService(AccountRepository accounts, PasswordResetRepository resets, PasswordEncoder encoder,
-			Mailer mailer, Clock clock, @Value("${quizcadia.public-url}") String publicUrl) {
+			Mailer mailer, Clock clock, @Value("${quizcadia.public-url}") String publicUrl,
+			com.fazeel.quizcadia.session.SessionService sessions) {
+		this.sessions = sessions;
 		this.accounts = accounts;
 		this.resets = resets;
 		this.encoder = encoder;
@@ -87,6 +90,7 @@ public class PasswordResetService {
 		account.changePassword(encoder.encode(newPassword));
 		account.markEmailVerified(); // the link reached their inbox
 		resets.findByUserIdAndUsedAtIsNull(account.getUserId()).forEach(r -> r.use(now));
+		sessions.endAll(account.getUserId()); // whoever knew the old password is signed out everywhere
 		return account;
 	}
 

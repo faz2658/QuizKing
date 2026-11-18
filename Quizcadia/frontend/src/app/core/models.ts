@@ -14,6 +14,8 @@ export interface TokenResponse {
   tokenType: string;
   expiresAt: string;
   user: User;
+  /** When the refresh cookie set with this response runs out; null when the server kept the current one. */
+  sessionExpiresAt?: string | null;
 }
 
 export interface GameCard {
