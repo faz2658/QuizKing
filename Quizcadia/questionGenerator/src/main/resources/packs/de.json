@@ -170,6 +170,1007 @@
       "Nikolaus Otto"
      ],
      "why": "His wife Bertha made the first long drive."
+    },
+    {
+     "level": 3,
+     "q": "Which medieval trade league was centred on Lübeck?",
+     "a": "Hanseatic League",
+     "wrong": [
+      "Swabian League",
+      "Rhine League",
+      "Teutonic Order"
+     ],
+     "why": "Hamburg and Bremen still call themselves Hanseatic cities."
+    },
+    {
+     "q": "In which year was the Berlin Wall built?",
+     "a": "1961",
+     "wrong": [
+      "1949",
+      "1953",
+      "1968"
+     ],
+     "level": 1,
+     "why": "It went up overnight on 13 August."
+    },
+    {
+     "q": "What was the official name of East Germany?",
+     "a": "German Democratic Republic",
+     "wrong": [
+      "Federal Republic of Germany",
+      "German People's Republic",
+      "Democratic Republic of Prussia"
+     ],
+     "level": 1,
+     "why": "It existed from 1949 to 1990."
+    },
+    {
+     "q": "What was the official name of West Germany?",
+     "a": "Federal Republic of Germany",
+     "wrong": [
+      "German Democratic Republic",
+      "German Federal State",
+      "Republic of West Germany"
+     ],
+     "level": 1,
+     "why": "It is still the name of united Germany."
+    },
+    {
+     "q": "In which year were the two German states founded?",
+     "a": "1949",
+     "wrong": [
+      "1945",
+      "1953",
+      "1961"
+     ],
+     "level": 1,
+     "why": "West came in May and East in October."
+    },
+    {
+     "q": "What was East Germany's secret police called?",
+     "a": "Stasi",
+     "wrong": [
+      "Gestapo",
+      "KGB",
+      "Volkspolizei"
+     ],
+     "level": 1,
+     "why": "It spied on millions of citizens."
+    },
+    {
+     "q": "Which famous Berlin checkpoint was the crossing point for foreigners during the Cold War?",
+     "a": "Checkpoint Charlie",
+     "wrong": [
+      "Checkpoint Alpha",
+      "Checkpoint Bravo",
+      "Glienicke Bridge"
+     ],
+     "level": 1,
+     "why": "US and Soviet tanks faced off there in 1961."
+    },
+    {
+     "q": "Which US president said 'Ich bin ein Berliner' in 1963?",
+     "a": "John F. Kennedy",
+     "wrong": [
+      "Ronald Reagan",
+      "Harry Truman",
+      "Dwight Eisenhower"
+     ],
+     "level": 1,
+     "why": "He spoke in West Berlin."
+    },
+    {
+     "q": "Which US president said 'Tear down this wall!' in Berlin in 1987?",
+     "a": "Ronald Reagan",
+     "wrong": [
+      "John F. Kennedy",
+      "George H. W. Bush",
+      "Jimmy Carter"
+     ],
+     "level": 1,
+     "why": "He spoke at the Brandenburg Gate."
+    },
+    {
+     "q": "Which 1948–49 operation flew supplies into West Berlin during a Soviet blockade?",
+     "a": "Berlin Airlift",
+     "wrong": [
+      "Operation Overlord",
+      "Marshall Plan",
+      "Operation Paperclip"
+     ],
+     "level": 1,
+     "why": "Planes landed every few minutes at Tempelhof."
+    },
+    {
+     "q": "What were the sweets-dropping pilots of the Berlin Airlift called?",
+     "a": "Candy bombers (Rosinenbomber)",
+     "wrong": [
+      "Chocolate flyers",
+      "Sugar squadron",
+      "Gummy pilots"
+     ],
+     "level": 1,
+     "why": "Gail Halvorsen started the idea."
+    },
+    {
+     "q": "Which German Chancellor led the country from 2005 to 2021?",
+     "a": "Angela Merkel",
+     "wrong": [
+      "Gerhard Schröder",
+      "Olaf Scholz",
+      "Helmut Kohl"
+     ],
+     "level": 1,
+     "why": "She grew up in East Germany."
+    },
+    {
+     "q": "Which Chancellor led Germany from 1998 to 2005?",
+     "a": "Gerhard Schröder",
+     "wrong": [
+      "Helmut Kohl",
+      "Angela Merkel",
+      "Helmut Schmidt"
+     ],
+     "level": 1,
+     "why": "He led the SPD."
+    },
+    {
+     "q": "Who was Chancellor of Germany from 2021 to 2025?",
+     "a": "Olaf Scholz",
+     "wrong": [
+      "Friedrich Merz",
+      "Angela Merkel",
+      "Armin Laschet"
+     ],
+     "level": 1,
+     "why": "He led a three-party coalition."
+    },
+    {
+     "q": "Who became German Chancellor in May 2025?",
+     "a": "Friedrich Merz",
+     "wrong": [
+      "Olaf Scholz",
+      "Markus Söder",
+      "Armin Laschet"
+     ],
+     "level": 1,
+     "why": "He leads the CDU."
+    },
+    {
+     "q": "In which year did Adolf Hitler become Chancellor of Germany?",
+     "a": "1933",
+     "wrong": [
+      "1929",
+      "1936",
+      "1939"
+     ],
+     "level": 1,
+     "why": "He was appointed on 30 January."
+    },
+    {
+     "q": "Which 1938 night of violence against Jews is called the 'Night of Broken Glass'?",
+     "a": "Kristallnacht",
+     "wrong": [
+      "Night of the Long Knives",
+      "Reichstag Fire",
+      "Wannsee Night"
+     ],
+     "level": 1,
+     "why": "Synagogues across Germany were burned."
+    },
+    {
+     "q": "Which 1942 meeting near Berlin planned the Holocaust?",
+     "a": "Wannsee Conference",
+     "wrong": [
+      "Munich Conference",
+      "Potsdam Conference",
+      "Yalta Conference"
+     ],
+     "level": 1,
+     "why": "It was held in a lakeside villa."
+    },
+    {
+     "q": "Which 1945 conference divided Germany into four zones?",
+     "a": "Potsdam Conference",
+     "wrong": [
+      "Yalta Conference",
+      "Wannsee Conference",
+      "Tehran Conference"
+     ],
+     "level": 1,
+     "why": "Truman, Stalin and Churchill (then Attlee) attended."
+    },
+    {
+     "q": "Which four countries occupied Germany after 1945?",
+     "a": "USA, Britain, France and the Soviet Union",
+     "wrong": [
+      "USA, Britain, France and Poland",
+      "USA, Britain, the Soviet Union and Italy",
+      "USA, France, Poland and the Soviet Union"
+     ],
+     "level": 1,
+     "why": "Berlin was also split four ways."
+    },
+    {
+     "q": "Which trials after the Second World War judged Nazi leaders?",
+     "a": "Nuremberg trials",
+     "wrong": [
+      "Berlin trials",
+      "Hague trials",
+      "Munich trials"
+     ],
+     "level": 1,
+     "why": "They began in November 1945."
+    },
+    {
+     "q": "Which girl's diary written in Amsterdam is one of the best-known Holocaust records?",
+     "a": "Anne Frank",
+     "wrong": [
+      "Sophie Scholl",
+      "Etty Hillesum",
+      "Hannah Arendt"
+     ],
+     "level": 1,
+     "why": "She was born in Frankfurt."
+    },
+    {
+     "q": "Which student was executed in 1943 for leading the White Rose resistance with her brother?",
+     "a": "Sophie Scholl",
+     "wrong": [
+      "Anne Frank",
+      "Rosa Luxemburg",
+      "Käthe Kollwitz"
+     ],
+     "level": 1,
+     "why": "She handed out leaflets in Munich."
+    },
+    {
+     "q": "Which officer led the July 1944 plot to kill Hitler?",
+     "a": "Claus von Stauffenberg",
+     "wrong": [
+      "Erwin Rommel",
+      "Wilhelm Canaris",
+      "Ludwig Beck"
+     ],
+     "level": 1,
+     "why": "He planted a bomb at the Wolf's Lair."
+    },
+    {
+     "q": "Which German businessman saved over 1,000 Jews by employing them in his factories?",
+     "a": "Oskar Schindler",
+     "wrong": [
+      "Raoul Wallenberg",
+      "Albert Speer",
+      "Otto Frank"
+     ],
+     "level": 1,
+     "why": "A Spielberg film tells his story."
+    },
+    {
+     "q": "Which German general was nicknamed 'the Desert Fox'?",
+     "a": "Erwin Rommel",
+     "wrong": [
+      "Heinz Guderian",
+      "Erich von Manstein",
+      "Friedrich Paulus"
+     ],
+     "level": 1,
+     "why": "He fought in North Africa."
+    },
+    {
+     "q": "Which airship disaster in 1937 ended the age of passenger zeppelins?",
+     "a": "Hindenburg disaster",
+     "wrong": [
+      "R101 disaster",
+      "Graf Zeppelin crash",
+      "Akron crash"
+     ],
+     "level": 1,
+     "why": "It burned in New Jersey."
+    },
+    {
+     "q": "Which count gave his name to Germany's rigid airships?",
+     "a": "Ferdinand von Zeppelin",
+     "wrong": [
+      "Hugo Eckener",
+      "Otto Lilienthal",
+      "Gottlieb Daimler"
+     ],
+     "level": 1,
+     "why": "His first airship flew in 1900."
+    },
+    {
+     "q": "Which German flight pioneer made over 2,000 glider flights in the 1890s?",
+     "a": "Otto Lilienthal",
+     "wrong": [
+      "Ferdinand von Zeppelin",
+      "Hugo Junkers",
+      "August Euler"
+     ],
+     "level": 1,
+     "why": "He is called the 'Glider King'."
+    },
+    {
+     "q": "Which Prussian king was called 'the Great'?",
+     "a": "Frederick II",
+     "wrong": [
+      "Frederick William I",
+      "William I",
+      "Frederick III"
+     ],
+     "level": 1,
+     "why": "He ruled from 1740 to 1786."
+    },
+    {
+     "q": "Which Prussian king's palace in Potsdam is called Sanssouci?",
+     "a": "Frederick the Great",
+     "wrong": [
+      "William II",
+      "Frederick William IV",
+      "Frederick I"
+     ],
+     "level": 1,
+     "why": "The name means 'without worries'."
+    },
+    {
+     "q": "Who was the last German Emperor?",
+     "a": "Wilhelm II",
+     "wrong": [
+      "Wilhelm I",
+      "Frederick III",
+      "Ludwig II"
+     ],
+     "level": 1,
+     "why": "He gave up the throne in 1918."
+    },
+    {
+     "q": "In which palace was the German Empire proclaimed in 1871?",
+     "a": "Palace of Versailles",
+     "wrong": [
+      "Sanssouci",
+      "Berlin Palace",
+      "Charlottenburg Palace"
+     ],
+     "level": 1,
+     "why": "It followed victory over France."
+    },
+    {
+     "q": "In which year did the First World War end?",
+     "a": "1918",
+     "wrong": [
+      "1917",
+      "1919",
+      "1920"
+     ],
+     "level": 1,
+     "why": "Germany signed an armistice on 11 November."
+    },
+    {
+     "q": "Which 1919 treaty made Germany accept blame for the First World War?",
+     "a": "Treaty of Versailles",
+     "wrong": [
+      "Treaty of Paris",
+      "Treaty of Brest-Litovsk",
+      "Treaty of Locarno"
+     ],
+     "level": 1,
+     "why": "It demanded large reparations."
+    },
+    {
+     "q": "In which year did German inflation make money nearly worthless?",
+     "a": "1923",
+     "wrong": [
+      "1914",
+      "1929",
+      "1933"
+     ],
+     "level": 1,
+     "why": "Prices doubled every few days."
+    },
+    {
+     "q": "Which Bavarian king built Neuschwanstein Castle?",
+     "a": "Ludwig II",
+     "wrong": [
+      "Maximilian II",
+      "Ludwig I",
+      "Otto I"
+     ],
+     "level": 1,
+     "why": "He is called the 'Fairy Tale King'."
+    },
+    {
+     "q": "Which empire did German kings rule for about 1,000 years?",
+     "a": "Holy Roman Empire",
+     "wrong": [
+      "Byzantine Empire",
+      "Habsburg Empire",
+      "Frankish Empire"
+     ],
+     "level": 1,
+     "why": "It ended in 1806."
+    },
+    {
+     "q": "Which language did Martin Luther translate the Bible into?",
+     "a": "German",
+     "wrong": [
+      "Latin",
+      "Greek",
+      "Dutch"
+     ],
+     "level": 1,
+     "why": "It helped shape modern German."
+    },
+    {
+     "q": "Which document did Martin Luther nail to a church door in Wittenberg?",
+     "a": "The Ninety-five Theses",
+     "wrong": [
+      "The Augsburg Confession",
+      "The Diet of Worms",
+      "The Small Catechism"
+     ],
+     "level": 1,
+     "why": "It criticised the sale of indulgences."
+    },
+    {
+     "q": "Which Germanic leader defeated the Romans in AD 9?",
+     "a": "Arminius (Hermann)",
+     "wrong": [
+      "Alaric",
+      "Odoacer",
+      "Theodoric"
+     ],
+     "level": 1,
+     "why": "A huge statue of him stands near Detmold."
+    },
+    {
+     "q": "Which Roman wall-and-fort border ran through southern Germany?",
+     "a": "Limes",
+     "wrong": [
+      "Hadrian's Wall",
+      "Antonine Wall",
+      "Danube Wall"
+     ],
+     "level": 1,
+     "why": "It is a UNESCO site."
+    },
+    {
+     "q": "Which is one of Germany's oldest cities, founded by the Romans?",
+     "a": "Trier",
+     "wrong": [
+      "Hamburg",
+      "Munich",
+      "Berlin"
+     ],
+     "level": 1,
+     "why": "Its Porta Nigra gate is Roman."
+    },
+    {
+     "q": "Which German city was almost destroyed by Allied bombing in February 1945?",
+     "a": "Dresden",
+     "wrong": [
+      "Munich",
+      "Bonn",
+      "Heidelberg"
+     ],
+     "level": 1,
+     "why": "Its Frauenkirche was rebuilt by 2005."
+    },
+    {
+     "q": "On which date is the Day of German Unity?",
+     "a": "3 October",
+     "wrong": [
+      "9 November",
+      "1 May",
+      "17 June"
+     ],
+     "level": 1,
+     "why": "It marks reunification in 1990."
+    },
+    {
+     "q": "On which date did the Berlin Wall fall?",
+     "a": "9 November 1989",
+     "wrong": [
+      "3 October 1990",
+      "13 August 1961",
+      "17 June 1953"
+     ],
+     "level": 2,
+     "why": "A mistaken press statement opened the border."
+    },
+    {
+     "q": "Which East German spokesman's mistaken announcement opened the Wall?",
+     "a": "Günter Schabowski",
+     "wrong": [
+      "Egon Krenz",
+      "Erich Honecker",
+      "Erich Mielke"
+     ],
+     "level": 2,
+     "why": "He said the new rules applied 'immediately'."
+    },
+    {
+     "q": "Who led East Germany from 1971 to 1989?",
+     "a": "Erich Honecker",
+     "wrong": [
+      "Walter Ulbricht",
+      "Egon Krenz",
+      "Erich Mielke"
+     ],
+     "level": 2,
+     "why": "He fled to Chile in 1993."
+    },
+    {
+     "q": "Who led East Germany when the Berlin Wall was built?",
+     "a": "Walter Ulbricht",
+     "wrong": [
+      "Erich Honecker",
+      "Wilhelm Pieck",
+      "Otto Grotewohl"
+     ],
+     "level": 2,
+     "why": "He had said 'nobody intends to build a wall'."
+    },
+    {
+     "q": "Which 1953 uprising in East Germany was crushed by Soviet tanks?",
+     "a": "17 June uprising",
+     "wrong": [
+      "Prague Spring",
+      "Hungarian Revolution",
+      "Leipzig uprising"
+     ],
+     "level": 2,
+     "why": "It started with building workers in Berlin."
+    },
+    {
+     "q": "Which city's Monday demonstrations in 1989 helped end East German rule?",
+     "a": "Leipzig",
+     "wrong": [
+      "Dresden",
+      "Rostock",
+      "East Berlin"
+     ],
+     "level": 2,
+     "why": "Protesters chanted 'Wir sind das Volk'."
+    },
+    {
+     "q": "What did East Germans chant in 1989, meaning 'We are the people'?",
+     "a": "Wir sind das Volk",
+     "wrong": [
+      "Wir wollen raus",
+      "Freiheit jetzt",
+      "Die Mauer muss weg"
+     ],
+     "level": 2,
+     "why": "It later became 'Wir sind ein Volk'."
+    },
+    {
+     "q": "Which car made of plastic was East Germany's best-known car?",
+     "a": "Trabant",
+     "wrong": [
+      "Wartburg",
+      "Lada",
+      "Skoda"
+     ],
+     "level": 2,
+     "why": "People waited years to buy one."
+    },
+    {
+     "q": "What is the nostalgia for East German life called?",
+     "a": "Ostalgie",
+     "wrong": [
+      "Ostweh",
+      "Heimweh",
+      "Mauerliebe"
+     ],
+     "level": 2,
+     "why": "The film 'Good Bye, Lenin!' shows it."
+    },
+    {
+     "q": "Which Chancellor led West Germany from 1974 to 1982?",
+     "a": "Helmut Schmidt",
+     "wrong": [
+      "Willy Brandt",
+      "Helmut Kohl",
+      "Ludwig Erhard"
+     ],
+     "level": 2,
+     "why": "He was a Social Democrat from Hamburg."
+    },
+    {
+     "q": "Which economics minister is linked to West Germany's 'economic miracle'?",
+     "a": "Ludwig Erhard",
+     "wrong": [
+      "Konrad Adenauer",
+      "Helmut Schmidt",
+      "Karl Schiller"
+     ],
+     "level": 2,
+     "why": "He later became Chancellor."
+    },
+    {
+     "q": "What is West Germany's post-war boom called?",
+     "a": "Wirtschaftswunder",
+     "wrong": [
+      "Gründerzeit",
+      "Wende",
+      "Ostpolitik"
+     ],
+     "level": 2,
+     "why": "It means 'economic miracle'."
+    },
+    {
+     "q": "What was Willy Brandt's policy of better ties with East Germany called?",
+     "a": "Ostpolitik",
+     "wrong": [
+      "Westbindung",
+      "Realpolitik",
+      "Glasnost"
+     ],
+     "level": 2,
+     "why": "He won the 1971 Nobel Peace Prize."
+    },
+    {
+     "q": "Which left-wing militant group attacked West Germany in the 1970s?",
+     "a": "Red Army Faction",
+     "wrong": [
+      "Red Brigades",
+      "Baader Group",
+      "Black September"
+     ],
+     "level": 2,
+     "why": "It was also called the Baader-Meinhof Group."
+    },
+    {
+     "q": "What is the 1977 wave of RAF attacks called?",
+     "a": "German Autumn",
+     "wrong": [
+      "Red Autumn",
+      "Black October",
+      "Hot Autumn"
+     ],
+     "level": 2,
+     "why": "It included kidnappings and a hijacking."
+    },
+    {
+     "q": "Which attack hit the 1972 Munich Olympics?",
+     "a": "Hostage-taking of Israeli athletes",
+     "wrong": [
+      "A stadium bombing",
+      "A plane hijacking",
+      "A gas attack"
+     ],
+     "level": 2,
+     "why": "Eleven Israeli team members were killed."
+    },
+    {
+     "q": "Which 1934 purge saw Hitler kill rivals in the SA?",
+     "a": "Night of the Long Knives",
+     "wrong": [
+      "Kristallnacht",
+      "Reichstag Fire",
+      "Beer Hall Putsch"
+     ],
+     "level": 2,
+     "why": "Ernst Röhm was among those killed."
+    },
+    {
+     "q": "Which failed 1923 coup did Hitler lead in Munich?",
+     "a": "Beer Hall Putsch",
+     "wrong": [
+      "Kapp Putsch",
+      "Spartacist uprising",
+      "Reichstag Fire"
+     ],
+     "level": 2,
+     "why": "He was jailed afterwards."
+    },
+    {
+     "q": "Which 1933 fire did the Nazis use to seize emergency powers?",
+     "a": "Reichstag fire",
+     "wrong": [
+      "Kristallnacht",
+      "Hindenburg fire",
+      "Berlin Palace fire"
+     ],
+     "level": 2,
+     "why": "A Dutch man was blamed."
+    },
+    {
+     "q": "Which 1920 attempted coup in Berlin failed after a general strike?",
+     "a": "Kapp Putsch",
+     "wrong": [
+      "Beer Hall Putsch",
+      "Spartacist uprising",
+      "Hamburg Uprising"
+     ],
+     "level": 2,
+     "why": "Wolfgang Kapp led it."
+    },
+    {
+     "q": "Which Communist leaders were murdered in Berlin in January 1919?",
+     "a": "Rosa Luxemburg and Karl Liebknecht",
+     "wrong": [
+      "Ernst Thälmann and Clara Zetkin",
+      "Walter Ulbricht and Wilhelm Pieck",
+      "Kurt Eisner and Ernst Toller"
+     ],
+     "level": 2,
+     "why": "They led the Spartacist uprising."
+    },
+    {
+     "q": "Which President of the Weimar Republic appointed Hitler Chancellor?",
+     "a": "Paul von Hindenburg",
+     "wrong": [
+      "Friedrich Ebert",
+      "Franz von Papen",
+      "Gustav Stresemann"
+     ],
+     "level": 2,
+     "why": "He was a First World War field marshal."
+    },
+    {
+     "q": "Who was the first President of the Weimar Republic?",
+     "a": "Friedrich Ebert",
+     "wrong": [
+      "Paul von Hindenburg",
+      "Gustav Stresemann",
+      "Philipp Scheidemann"
+     ],
+     "level": 2,
+     "why": "He led the SPD."
+    },
+    {
+     "q": "Which Weimar foreign minister won the 1926 Nobel Peace Prize?",
+     "a": "Gustav Stresemann",
+     "wrong": [
+      "Walther Rathenau",
+      "Friedrich Ebert",
+      "Heinrich Brüning"
+     ],
+     "level": 2,
+     "why": "He brought Germany into the League of Nations."
+    },
+    {
+     "q": "Which 1940s battle on the Volga was a turning point against Germany?",
+     "a": "Battle of Stalingrad",
+     "wrong": [
+      "Battle of Kursk",
+      "Battle of Moscow",
+      "Battle of Berlin"
+     ],
+     "level": 2,
+     "why": "The German Sixth Army surrendered in 1943."
+    },
+    {
+     "q": "Which Second World War code machine did the Germans use?",
+     "a": "Enigma",
+     "wrong": [
+      "Lorenz",
+      "Purple",
+      "Colossus"
+     ],
+     "level": 2,
+     "why": "Allied codebreakers cracked it at Bletchley Park."
+    },
+    {
+     "q": "Which 1815 battle did Blücher's Prussians help the British win against Napoleon?",
+     "a": "Waterloo",
+     "wrong": [
+      "Leipzig",
+      "Jena",
+      "Austerlitz"
+     ],
+     "level": 2,
+     "why": "Blücher's Prussians arrived in the afternoon."
+    },
+    {
+     "q": "Which 1813 battle near Leipzig was the biggest in Europe before 1914?",
+     "a": "Battle of the Nations",
+     "wrong": [
+      "Battle of Jena",
+      "Battle of Waterloo",
+      "Battle of Sedan"
+     ],
+     "level": 2,
+     "why": "A huge monument marks the site."
+    },
+    {
+     "q": "Which 1870 battle saw Napoleon III captured by the Prussians?",
+     "a": "Battle of Sedan",
+     "wrong": [
+      "Battle of Metz",
+      "Battle of Königgrätz",
+      "Battle of Leipzig"
+     ],
+     "level": 2,
+     "why": "It led to the German Empire."
+    },
+    {
+     "q": "Which war in 1866 made Prussia the leading German state?",
+     "a": "Austro-Prussian War",
+     "wrong": [
+      "Franco-Prussian War",
+      "Crimean War",
+      "Danish War"
+     ],
+     "level": 2,
+     "why": "It was decided at Königgrätz."
+    },
+    {
+     "q": "What were the 1848 uprisings in the German states called?",
+     "a": "March Revolution",
+     "wrong": [
+      "Peasants' War",
+      "November Revolution",
+      "Spring Uprising"
+     ],
+     "level": 2,
+     "why": "A parliament met in Frankfurt."
+    },
+    {
+     "q": "Where did Germany's first elected national parliament meet in 1848?",
+     "a": "St. Paul's Church, Frankfurt",
+     "wrong": [
+      "Reichstag, Berlin",
+      "Residenz, Munich",
+      "Bonn Minster"
+     ],
+     "level": 2,
+     "why": "It wrote a constitution that was never used."
+    },
+    {
+     "q": "Which 1525 uprising was the largest popular revolt in Europe before 1789?",
+     "a": "German Peasants' War",
+     "wrong": [
+      "Hussite Wars",
+      "Thirty Years' War",
+      "Schmalkaldic War"
+     ],
+     "level": 2,
+     "why": "Thomas Müntzer was one of its leaders."
+    },
+    {
+     "q": "Which 1555 peace let German princes choose their own religion?",
+     "a": "Peace of Augsburg",
+     "wrong": [
+      "Peace of Westphalia",
+      "Edict of Worms",
+      "Diet of Speyer"
+     ],
+     "level": 2,
+     "why": "Its rule was 'whose realm, his religion'."
+    },
+    {
+     "q": "At which 1521 assembly did Luther refuse to take back his writings?",
+     "a": "Diet of Worms",
+     "wrong": [
+      "Diet of Augsburg",
+      "Council of Trent",
+      "Diet of Speyer"
+     ],
+     "level": 2,
+     "why": "He was then declared an outlaw."
+    },
+    {
+     "q": "Which castle sheltered Luther while he translated the New Testament?",
+     "a": "Wartburg",
+     "wrong": [
+      "Hohenzollern Castle",
+      "Heidelberg Castle",
+      "Eltz Castle"
+     ],
+     "level": 2,
+     "why": "It is near Eisenach."
+    },
+    {
+     "q": "Which Saxon dynasty's king Otto I was crowned emperor in 962?",
+     "a": "Ottonian dynasty",
+     "wrong": [
+      "Hohenstaufen",
+      "Habsburg",
+      "Carolingian"
+     ],
+     "level": 2,
+     "why": "He is called Otto the Great."
+    },
+    {
+     "q": "Which emperor nicknamed 'Barbarossa' drowned on a crusade in 1190?",
+     "a": "Frederick I",
+     "wrong": [
+      "Frederick II",
+      "Henry VI",
+      "Otto IV"
+     ],
+     "level": 2,
+     "why": "His nickname means 'red beard'."
+    },
+    {
+     "q": "Which German city was Charlemagne's favourite residence?",
+     "a": "Aachen",
+     "wrong": [
+      "Cologne",
+      "Trier",
+      "Mainz"
+     ],
+     "level": 2,
+     "why": "He is buried in its cathedral."
+    },
+    {
+     "q": "Which 1806 battle saw Napoleon crush Prussia?",
+     "a": "Battle of Jena–Auerstedt",
+     "wrong": [
+      "Battle of Leipzig",
+      "Battle of Austerlitz",
+      "Battle of Wagram"
+     ],
+     "level": 3,
+     "why": "Berlin was occupied soon after."
+    },
+    {
+     "q": "Which loose union of German states was formed in 1815?",
+     "a": "German Confederation",
+     "wrong": [
+      "North German Confederation",
+      "Rhine Confederation",
+      "Zollverein"
+     ],
+     "level": 3,
+     "why": "Austria led it."
+    },
+    {
+     "q": "Which 1834 customs union helped unite the German economy?",
+     "a": "Zollverein",
+     "wrong": [
+      "Hanseatic League",
+      "German Confederation",
+      "Bundesrat"
+     ],
+     "level": 3,
+     "why": "Prussia led it."
+    },
+    {
+     "q": "Which 1077 walk saw Emperor Henry IV beg the Pope's forgiveness in the snow?",
+     "a": "Walk to Canossa",
+     "wrong": [
+      "Diet of Worms",
+      "Investiture March",
+      "Penance of Speyer"
+     ],
+     "level": 3,
+     "why": "'Going to Canossa' means backing down."
+    },
+    {
+     "q": "Which 1914 battle in East Prussia was a major German win over Russia?",
+     "a": "Battle of Tannenberg",
+     "wrong": [
+      "Battle of the Marne",
+      "Battle of Verdun",
+      "Battle of Jutland"
+     ],
+     "level": 3,
+     "why": "Hindenburg became a hero."
+    },
+    {
+     "q": "Which 1918 sailors' mutiny began the German Revolution?",
+     "a": "Kiel mutiny",
+     "wrong": [
+      "Wilhelmshaven strike",
+      "Hamburg revolt",
+      "Bremen uprising"
+     ],
+     "level": 3,
+     "why": "The Kaiser fell days later."
+    },
+    {
+     "q": "Which treaty in 1990 let the two Germanys unite, signed with the four Allied powers?",
+     "a": "Two Plus Four Treaty",
+     "wrong": [
+      "Treaty of Moscow",
+      "Unification Treaty",
+      "Basic Treaty"
+     ],
+     "level": 3,
+     "why": "It gave Germany full sovereignty."
     }
    ]
   },
@@ -374,6 +1375,963 @@
       "Berlin"
      ],
      "why": "It includes the port of Bremerhaven."
+    },
+    {
+     "q": "How many countries border Germany?",
+     "a": "9",
+     "wrong": [
+      "7",
+      "8",
+      "10"
+     ],
+     "level": 1,
+     "why": "Germany has the most neighbours of any EU country."
+    },
+    {
+     "q": "Which sea lies off Germany's northeast coast?",
+     "a": "Baltic Sea",
+     "wrong": [
+      "North Sea",
+      "Black Sea",
+      "Adriatic Sea"
+     ],
+     "level": 1,
+     "why": "Rostock and Kiel are on it."
+    },
+    {
+     "q": "Which sea lies off Germany's northwest coast?",
+     "a": "North Sea",
+     "wrong": [
+      "Baltic Sea",
+      "Irish Sea",
+      "Norwegian Sea"
+     ],
+     "level": 1,
+     "why": "Hamburg reaches it by the Elbe."
+    },
+    {
+     "q": "Which river forms much of the border between Germany and Poland?",
+     "a": "Oder",
+     "wrong": [
+      "Elbe",
+      "Vistula",
+      "Neisse"
+     ],
+     "level": 1,
+     "why": "The Neisse joins it in the south."
+    },
+    {
+     "q": "Which great river begins in Germany's Black Forest and flows to the Black Sea?",
+     "a": "Danube",
+     "wrong": [
+      "Rhine",
+      "Elbe",
+      "Main"
+     ],
+     "level": 1,
+     "why": "It passes Vienna and Budapest."
+    },
+    {
+     "q": "Which river flows through Frankfurt?",
+     "a": "Main",
+     "wrong": [
+      "Rhine",
+      "Neckar",
+      "Weser"
+     ],
+     "level": 1,
+     "why": "Frankfurt is officially 'Frankfurt am Main'."
+    },
+    {
+     "q": "Which river flows through Berlin?",
+     "a": "Spree",
+     "wrong": [
+      "Havel",
+      "Elbe",
+      "Oder"
+     ],
+     "level": 1,
+     "why": "Museum Island sits in it."
+    },
+    {
+     "q": "Which river flows through Munich?",
+     "a": "Isar",
+     "wrong": [
+      "Danube",
+      "Inn",
+      "Lech"
+     ],
+     "level": 1,
+     "why": "People surf a standing wave on it."
+    },
+    {
+     "q": "Which river flows through Cologne?",
+     "a": "Rhine",
+     "wrong": [
+      "Main",
+      "Elbe",
+      "Mosel"
+     ],
+     "level": 1,
+     "why": "The cathedral stands near its bank."
+    },
+    {
+     "q": "Which river flows through Heidelberg?",
+     "a": "Neckar",
+     "wrong": [
+      "Rhine",
+      "Main",
+      "Danube"
+     ],
+     "level": 1,
+     "why": "The castle overlooks it."
+    },
+    {
+     "q": "Which river valley is famous for steep vineyards and joins the Rhine at Koblenz?",
+     "a": "Moselle",
+     "wrong": [
+      "Main",
+      "Neckar",
+      "Saar"
+     ],
+     "level": 1,
+     "why": "The meeting point is called Deutsches Eck."
+    },
+    {
+     "q": "What is the capital of Bavaria?",
+     "a": "Munich",
+     "wrong": [
+      "Nuremberg",
+      "Augsburg",
+      "Regensburg"
+     ],
+     "level": 1,
+     "why": "It is Germany's third-largest city."
+    },
+    {
+     "q": "What is the capital of North Rhine-Westphalia?",
+     "a": "Düsseldorf",
+     "wrong": [
+      "Cologne",
+      "Dortmund",
+      "Essen"
+     ],
+     "level": 1,
+     "why": "Cologne is bigger."
+    },
+    {
+     "q": "What is the capital of Baden-Württemberg?",
+     "a": "Stuttgart",
+     "wrong": [
+      "Karlsruhe",
+      "Freiburg",
+      "Mannheim"
+     ],
+     "level": 1,
+     "why": "Mercedes-Benz and Porsche are based there."
+    },
+    {
+     "q": "What is the capital of Saxony?",
+     "a": "Dresden",
+     "wrong": [
+      "Leipzig",
+      "Chemnitz",
+      "Zwickau"
+     ],
+     "level": 1,
+     "why": "It is called 'Florence on the Elbe'."
+    },
+    {
+     "q": "What is the capital of Hesse?",
+     "a": "Wiesbaden",
+     "wrong": [
+      "Frankfurt",
+      "Kassel",
+      "Darmstadt"
+     ],
+     "level": 1,
+     "why": "Frankfurt is the biggest city."
+    },
+    {
+     "q": "What is the capital of Lower Saxony?",
+     "a": "Hanover",
+     "wrong": [
+      "Brunswick",
+      "Osnabrück",
+      "Oldenburg"
+     ],
+     "level": 1,
+     "why": "It hosts big trade fairs."
+    },
+    {
+     "q": "What is the capital of Schleswig-Holstein?",
+     "a": "Kiel",
+     "wrong": [
+      "Lübeck",
+      "Flensburg",
+      "Neumünster"
+     ],
+     "level": 1,
+     "why": "It hosts the Kiel Week sailing festival."
+    },
+    {
+     "q": "What is the capital of Thuringia?",
+     "a": "Erfurt",
+     "wrong": [
+      "Weimar",
+      "Jena",
+      "Gera"
+     ],
+     "level": 1,
+     "why": "Martin Luther studied there."
+    },
+    {
+     "q": "What is the capital of Brandenburg?",
+     "a": "Potsdam",
+     "wrong": [
+      "Cottbus",
+      "Frankfurt (Oder)",
+      "Brandenburg an der Havel"
+     ],
+     "level": 1,
+     "why": "It is next to Berlin."
+    },
+    {
+     "q": "What is the capital of Rhineland-Palatinate?",
+     "a": "Mainz",
+     "wrong": [
+      "Koblenz",
+      "Trier",
+      "Ludwigshafen"
+     ],
+     "level": 1,
+     "why": "Gutenberg came from there."
+    },
+    {
+     "q": "What is the capital of Saxony-Anhalt?",
+     "a": "Magdeburg",
+     "wrong": [
+      "Halle",
+      "Dessau",
+      "Wittenberg"
+     ],
+     "level": 1,
+     "why": "It lies on the Elbe."
+    },
+    {
+     "q": "What is the capital of Mecklenburg-Western Pomerania?",
+     "a": "Schwerin",
+     "wrong": [
+      "Rostock",
+      "Stralsund",
+      "Greifswald"
+     ],
+     "level": 1,
+     "why": "Its castle sits on an island."
+    },
+    {
+     "q": "What is the capital of Saarland?",
+     "a": "Saarbrücken",
+     "wrong": [
+      "Saarlouis",
+      "Neunkirchen",
+      "Homburg"
+     ],
+     "level": 1,
+     "why": "It is near the French border."
+    },
+    {
+     "q": "Which three German cities are also states?",
+     "a": "Berlin, Hamburg and Bremen",
+     "wrong": [
+      "Berlin, Munich and Hamburg",
+      "Hamburg, Bremen and Cologne",
+      "Berlin, Bremen and Frankfurt"
+     ],
+     "level": 1,
+     "why": "They are called city-states."
+    },
+    {
+     "q": "Which is Germany's largest city?",
+     "a": "Berlin",
+     "wrong": [
+      "Hamburg",
+      "Munich",
+      "Cologne"
+     ],
+     "level": 1,
+     "why": "About 3.7 million people live there."
+    },
+    {
+     "q": "Which German city is called the banking capital and has the European Central Bank?",
+     "a": "Frankfurt",
+     "wrong": [
+      "Munich",
+      "Düsseldorf",
+      "Berlin"
+     ],
+     "level": 1,
+     "why": "Its skyline is nicknamed 'Mainhattan'."
+    },
+    {
+     "q": "Which German city is home to the BMW headquarters?",
+     "a": "Munich",
+     "wrong": [
+      "Stuttgart",
+      "Ingolstadt",
+      "Wolfsburg"
+     ],
+     "level": 1,
+     "why": "The building looks like four cylinders."
+    },
+    {
+     "q": "Which German city is Volkswagen's home?",
+     "a": "Wolfsburg",
+     "wrong": [
+      "Ingolstadt",
+      "Stuttgart",
+      "Hanover"
+     ],
+     "level": 1,
+     "why": "It was founded for the car factory in 1938."
+    },
+    {
+     "q": "Which German city is Audi's home?",
+     "a": "Ingolstadt",
+     "wrong": [
+      "Wolfsburg",
+      "Munich",
+      "Neckarsulm"
+     ],
+     "level": 1,
+     "why": "It is on the Danube in Bavaria."
+    },
+    {
+     "q": "Which Bavarian city is famous for Christmas markets and gingerbread?",
+     "a": "Nuremberg",
+     "wrong": [
+      "Augsburg",
+      "Würzburg",
+      "Bamberg"
+     ],
+     "level": 1,
+     "why": "Its Christkindlesmarkt is world famous."
+    },
+    {
+     "q": "Which German city is the home of Beethoven's birthplace?",
+     "a": "Bonn",
+     "wrong": [
+      "Cologne",
+      "Vienna",
+      "Leipzig"
+     ],
+     "level": 1,
+     "why": "He was born there in 1770."
+    },
+    {
+     "q": "Which Bavarian town hosts a Passion Play every ten years?",
+     "a": "Oberammergau",
+     "wrong": [
+      "Garmisch-Partenkirchen",
+      "Füssen",
+      "Berchtesgaden"
+     ],
+     "level": 1,
+     "why": "It began in 1634 after a plague."
+    },
+    {
+     "q": "Which mountain range lies along Germany's southern border with Austria?",
+     "a": "Alps",
+     "wrong": [
+      "Harz",
+      "Ore Mountains",
+      "Black Forest"
+     ],
+     "level": 1,
+     "why": "The Zugspitze is there."
+    },
+    {
+     "q": "Which mountains in central Germany include the Brocken?",
+     "a": "Harz",
+     "wrong": [
+      "Ore Mountains",
+      "Fichtel Mountains",
+      "Rhön"
+     ],
+     "level": 1,
+     "why": "Goethe set a scene of 'Faust' there."
+    },
+    {
+     "q": "Which mountain range lies along the border of Saxony and the Czech Republic?",
+     "a": "Ore Mountains (Erzgebirge)",
+     "wrong": [
+      "Harz",
+      "Bavarian Forest",
+      "Thuringian Forest"
+     ],
+     "level": 1,
+     "why": "It is known for wooden toys and nutcrackers."
+    },
+    {
+     "q": "Which national park borders the Czech Šumava and is Germany's first?",
+     "a": "Bavarian Forest National Park",
+     "wrong": [
+      "Black Forest National Park",
+      "Harz National Park",
+      "Saxon Switzerland National Park"
+     ],
+     "level": 1,
+     "why": "It opened in 1970."
+    },
+    {
+     "q": "Which area near Dresden is famous for sandstone rock towers?",
+     "a": "Saxon Switzerland",
+     "wrong": [
+      "Swabian Jura",
+      "Franconian Switzerland",
+      "Teutoburg Forest"
+     ],
+     "level": 1,
+     "why": "The Bastei Bridge is there."
+    },
+    {
+     "q": "Which island in the Baltic has famous white chalk cliffs?",
+     "a": "Rügen",
+     "wrong": [
+      "Usedom",
+      "Fehmarn",
+      "Sylt"
+     ],
+     "level": 1,
+     "why": "Caspar David Friedrich painted them."
+    },
+    {
+     "q": "Which North Sea island is a famous holiday spot for rich Germans?",
+     "a": "Sylt",
+     "wrong": [
+      "Rügen",
+      "Helgoland",
+      "Norderney"
+     ],
+     "level": 1,
+     "why": "It is linked to the mainland by a railway causeway."
+    },
+    {
+     "q": "Which red rock island lies far out in the North Sea?",
+     "a": "Helgoland",
+     "wrong": [
+      "Sylt",
+      "Amrum",
+      "Föhr"
+     ],
+     "level": 1,
+     "why": "It was British until 1890."
+    },
+    {
+     "q": "Which island does Germany share with Poland?",
+     "a": "Usedom",
+     "wrong": [
+      "Rügen",
+      "Fehmarn",
+      "Hiddensee"
+     ],
+     "level": 1,
+     "why": "It is known for seaside resorts."
+    },
+    {
+     "q": "Which canal links the North Sea and the Baltic across Schleswig-Holstein?",
+     "a": "Kiel Canal",
+     "wrong": [
+      "Mittelland Canal",
+      "Elbe-Lübeck Canal",
+      "Main-Danube Canal"
+     ],
+     "level": 1,
+     "why": "It is one of the busiest canals in the world."
+    },
+    {
+     "q": "Which district in Hamburg is famous for its red brick warehouses?",
+     "a": "Speicherstadt",
+     "wrong": [
+      "St. Pauli",
+      "HafenCity",
+      "Altona"
+     ],
+     "level": 1,
+     "why": "It is a UNESCO site."
+    },
+    {
+     "q": "Which Hamburg concert hall opened in 2017 on top of an old warehouse?",
+     "a": "Elbphilharmonie",
+     "wrong": [
+      "Laeiszhalle",
+      "Berliner Philharmonie",
+      "Gewandhaus"
+     ],
+     "level": 1,
+     "why": "Its glass top looks like a wave."
+    },
+    {
+     "q": "Which Hamburg district is home to the Reeperbahn?",
+     "a": "St. Pauli",
+     "wrong": [
+      "Altona",
+      "Eppendorf",
+      "Wilhelmsburg"
+     ],
+     "level": 1,
+     "why": "The Beatles played there in the 1960s."
+    },
+    {
+     "q": "Which Berlin island has five world-famous museums?",
+     "a": "Museum Island",
+     "wrong": [
+      "Peacock Island",
+      "Spree Island",
+      "Fischerinsel"
+     ],
+     "level": 1,
+     "why": "It is a UNESCO site."
+    },
+    {
+     "q": "Which Berlin tower is the tallest structure in Germany?",
+     "a": "Berlin TV Tower (Fernsehturm)",
+     "wrong": [
+      "Frankfurt Commerzbank Tower",
+      "Munich Olympic Tower",
+      "Stuttgart TV Tower"
+     ],
+     "level": 1,
+     "why": "It is 368 m tall."
+    },
+    {
+     "q": "Which large Berlin park was once a royal hunting ground?",
+     "a": "Tiergarten",
+     "wrong": [
+      "Tempelhofer Feld",
+      "Volkspark Friedrichshain",
+      "Grunewald"
+     ],
+     "level": 1,
+     "why": "The Victory Column stands in it."
+    },
+    {
+     "q": "Which former Berlin airport is now a huge public park?",
+     "a": "Tempelhof",
+     "wrong": [
+      "Tegel",
+      "Schönefeld",
+      "Gatow"
+     ],
+     "level": 1,
+     "why": "It closed in 2008."
+    },
+    {
+     "q": "Which Berlin airport opened in 2020 after long delays?",
+     "a": "Berlin Brandenburg Airport",
+     "wrong": [
+      "Tegel Airport",
+      "Tempelhof Airport",
+      "Schönefeld Airport"
+     ],
+     "level": 1,
+     "why": "It was planned to open in 2011."
+    },
+    {
+     "q": "Which Munich park is bigger than New York's Central Park?",
+     "a": "English Garden",
+     "wrong": [
+      "Olympiapark",
+      "Hofgarten",
+      "Nymphenburg Park"
+     ],
+     "level": 1,
+     "why": "People surf on its Eisbach stream."
+    },
+    {
+     "q": "Which Heidelberg landmark is a famous castle ruin?",
+     "a": "Heidelberg Castle",
+     "wrong": [
+      "Hohenzollern Castle",
+      "Eltz Castle",
+      "Wartburg"
+     ],
+     "level": 1,
+     "why": "Mark Twain wrote about it."
+    },
+    {
+     "q": "Which hilltop castle in Swabia is the ancestral seat of the Prussian royal family?",
+     "a": "Hohenzollern Castle",
+     "wrong": [
+      "Neuschwanstein",
+      "Lichtenstein Castle",
+      "Wartburg"
+     ],
+     "level": 1,
+     "why": "It is near Hechingen."
+    },
+    {
+     "q": "Which medieval castle hidden in a Moselle side valley has never been destroyed?",
+     "a": "Eltz Castle",
+     "wrong": [
+      "Marksburg",
+      "Cochem Castle",
+      "Reichsburg"
+     ],
+     "level": 1,
+     "why": "The same family has owned it for 800 years."
+    },
+    {
+     "q": "Which walled Bavarian town is one of Germany's best-preserved medieval towns?",
+     "a": "Rothenburg ob der Tauber",
+     "wrong": [
+      "Dinkelsbühl",
+      "Nördlingen",
+      "Bamberg"
+     ],
+     "level": 1,
+     "why": "It is on the Romantic Road."
+    },
+    {
+     "q": "Which tourist route runs from Würzburg to Füssen?",
+     "a": "Romantic Road",
+     "wrong": [
+      "Castle Road",
+      "Fairy Tale Route",
+      "German Wine Route"
+     ],
+     "level": 1,
+     "why": "It passes many medieval towns."
+    },
+    {
+     "q": "Which tourist route from Hanau to Bremen follows the Brothers Grimm?",
+     "a": "German Fairy Tale Route",
+     "wrong": [
+      "Romantic Road",
+      "Castle Road",
+      "Fachwerkstraße"
+     ],
+     "level": 1,
+     "why": "Bremen is the end point."
+    },
+    {
+     "q": "Which lake is called the 'Bavarian Sea'?",
+     "a": "Chiemsee",
+     "wrong": [
+      "Starnberger See",
+      "Königssee",
+      "Ammersee"
+     ],
+     "level": 1,
+     "why": "Ludwig II built a palace on one of its islands."
+    },
+    {
+     "q": "Which very clear Alpine lake near Berchtesgaden is famous for its echo?",
+     "a": "Königssee",
+     "wrong": [
+      "Chiemsee",
+      "Tegernsee",
+      "Eibsee"
+     ],
+     "level": 1,
+     "why": "Electric boats cross it."
+    },
+    {
+     "q": "Which mountain-top house near Berchtesgaden was built for Hitler?",
+     "a": "Kehlsteinhaus (Eagle's Nest)",
+     "wrong": [
+      "Berghof",
+      "Wolf's Lair",
+      "Obersalzberg Tower"
+     ],
+     "level": 1,
+     "why": "It is now a restaurant."
+    },
+    {
+     "q": "Which Bavarian town hosted the 1936 Winter Olympics?",
+     "a": "Garmisch-Partenkirchen",
+     "wrong": [
+      "Oberstdorf",
+      "Berchtesgaden",
+      "Mittenwald"
+     ],
+     "level": 1,
+     "why": "It lies below the Zugspitze."
+    },
+    {
+     "q": "Which river flows longest within Germany?",
+     "a": "Rhine",
+     "wrong": [
+      "Elbe",
+      "Danube",
+      "Main"
+     ],
+     "level": 1,
+     "why": "About 865 km of it is in Germany."
+    },
+    {
+     "q": "Which is the largest lake entirely within Germany?",
+     "a": "Müritz",
+     "wrong": [
+      "Chiemsee",
+      "Lake Constance",
+      "Schweriner See"
+     ],
+     "level": 2,
+     "why": "It is in Mecklenburg."
+    },
+    {
+     "q": "Which region of northern Germany is famous for heather moors?",
+     "a": "Lüneburg Heath",
+     "wrong": [
+      "Spreewald",
+      "Uckermark",
+      "Altmark"
+     ],
+     "level": 2,
+     "why": "It turns purple in August."
+    },
+    {
+     "q": "Which forest region near Berlin has canals travelled by punt and famous gherkins?",
+     "a": "Spreewald",
+     "wrong": [
+      "Grunewald",
+      "Harz",
+      "Uckermark"
+     ],
+     "level": 2,
+     "why": "It is a UNESCO biosphere reserve."
+    },
+    {
+     "q": "Which German city near the Dutch and Belgian borders is the most westerly?",
+     "a": "Aachen",
+     "wrong": [
+      "Cologne",
+      "Trier",
+      "Krefeld"
+     ],
+     "level": 2,
+     "why": "Its baths were used by the Romans."
+    },
+    {
+     "q": "Which industrial region of North Rhine-Westphalia was built on coal and steel?",
+     "a": "Ruhr",
+     "wrong": [
+      "Saarland",
+      "Rhine-Neckar",
+      "Lusatia"
+     ],
+     "level": 2,
+     "why": "Its old Zollverein mine is a UNESCO site."
+    },
+    {
+     "q": "Which hilly region along the Rhine near Mainz is Germany's largest wine area?",
+     "a": "Rhenish Hesse (Rheinhessen)",
+     "wrong": [
+      "Palatinate",
+      "Moselle",
+      "Franconia"
+     ],
+     "level": 2,
+     "why": "It grows mostly white grapes."
+    },
+    {
+     "q": "Which wine region near Würzburg uses flat round 'Bocksbeutel' bottles?",
+     "a": "Franconia",
+     "wrong": [
+      "Moselle",
+      "Baden",
+      "Palatinate"
+     ],
+     "level": 2,
+     "why": "The shape is protected by law."
+    },
+    {
+     "q": "Which upper Rhine region is famous for the Lorelei and many castles?",
+     "a": "Upper Middle Rhine Valley",
+     "wrong": [
+      "Rhine Gorge South",
+      "Lower Rhine",
+      "Rhine Delta"
+     ],
+     "level": 2,
+     "why": "It is a UNESCO site."
+    },
+    {
+     "q": "Which island town on Lake Constance is reached by a bridge and has a lion at its harbour?",
+     "a": "Lindau",
+     "wrong": [
+      "Konstanz",
+      "Friedrichshafen",
+      "Meersburg"
+     ],
+     "level": 2,
+     "why": "It is in Bavaria."
+    },
+    {
+     "q": "Which flower island on Lake Constance is famous for its gardens?",
+     "a": "Mainau",
+     "wrong": [
+      "Reichenau",
+      "Lindau",
+      "Herreninsel"
+     ],
+     "level": 2,
+     "why": "It belongs to a Swedish noble family."
+    },
+    {
+     "q": "Which town on Lake Constance builds Zeppelins?",
+     "a": "Friedrichshafen",
+     "wrong": [
+      "Konstanz",
+      "Lindau",
+      "Überlingen"
+     ],
+     "level": 2,
+     "why": "It has a Zeppelin Museum."
+    },
+    {
+     "q": "Which Bavarian market town is Germany's most southerly?",
+     "a": "Oberstdorf",
+     "wrong": [
+      "Garmisch-Partenkirchen",
+      "Füssen",
+      "Lindau"
+     ],
+     "level": 2,
+     "why": "It is in the Allgäu."
+    },
+    {
+     "q": "Which island has Germany's most northerly point?",
+     "a": "Sylt",
+     "wrong": [
+      "Rügen",
+      "Helgoland",
+      "Fehmarn"
+     ],
+     "level": 2,
+     "why": "Its northern tip is near Denmark."
+    },
+    {
+     "q": "Which old Hanseatic town on the Baltic is famous for marzipan?",
+     "a": "Lübeck",
+     "wrong": [
+      "Rostock",
+      "Wismar",
+      "Stralsund"
+     ],
+     "level": 2,
+     "why": "Its Holsten Gate is a landmark."
+    },
+    {
+     "q": "Which giant crater in Bavaria was made by a meteorite 15 million years ago?",
+     "a": "Nördlinger Ries",
+     "wrong": [
+      "Steinheim Basin",
+      "Laacher See",
+      "Eifel Maar"
+     ],
+     "level": 2,
+     "why": "The town of Nördlingen sits inside it."
+    },
+    {
+     "q": "Which western German region is famous for volcanic crater lakes called maars?",
+     "a": "Eifel",
+     "wrong": [
+      "Hunsrück",
+      "Westerwald",
+      "Taunus"
+     ],
+     "level": 2,
+     "why": "The Nürburgring is there too."
+    },
+    {
+     "q": "Which tidal mud flats along the North Sea coast can be crossed on foot at low tide?",
+     "a": "Wadden Sea mudflats (Watt)",
+     "wrong": [
+      "Baltic lagoons",
+      "Elbe marshes",
+      "Halligen reefs"
+     ],
+     "level": 2,
+     "why": "Guided mudflat hikes are popular."
+    },
+    {
+     "q": "What are the tiny North Sea islands without dykes that flood in storms called?",
+     "a": "Halligen",
+     "wrong": [
+      "Warften",
+      "Geest",
+      "Marschen"
+     ],
+     "level": 2,
+     "why": "Houses stand on raised mounds."
+    },
+    {
+     "q": "Which city lies opposite Wiesbaden where the Main joins the Rhine?",
+     "a": "Mainz",
+     "wrong": [
+      "Koblenz",
+      "Mannheim",
+      "Worms"
+     ],
+     "level": 2,
+     "why": "It is the capital of Rhineland-Palatinate."
+    },
+    {
+     "q": "Which Thuringian city was home to Goethe and Schiller?",
+     "a": "Weimar",
+     "wrong": [
+      "Jena",
+      "Erfurt",
+      "Eisenach"
+     ],
+     "level": 2,
+     "why": "The Weimar Republic is named after it."
+    },
+    {
+     "q": "Which Saxony city is famous for porcelain?",
+     "a": "Meissen",
+     "wrong": [
+      "Dresden",
+      "Leipzig",
+      "Chemnitz"
+     ],
+     "level": 2,
+     "why": "It made Europe's first hard-paste porcelain."
+    },
+    {
+     "q": "Which German state has the longest coastline?",
+     "a": "Mecklenburg-Western Pomerania",
+     "wrong": [
+      "Schleswig-Holstein",
+      "Lower Saxony",
+      "Bremen"
+     ],
+     "level": 3,
+     "why": "Its Baltic coast has many lagoons."
+    },
+    {
+     "q": "Which Thuringian village claims to be Germany's geographic centre?",
+     "a": "Niederdorla",
+     "wrong": [
+      "Eisenach",
+      "Gotha",
+      "Mühlhausen"
+     ],
+     "level": 3,
+     "why": "A lime tree marks the spot."
+    },
+    {
+     "q": "What is Germany's lowest point, below sea level?",
+     "a": "Neuendorf-Sachsenbande",
+     "wrong": [
+      "Wadden Sea",
+      "Lake Müritz",
+      "Hamburg Harbour"
+     ],
+     "level": 3,
+     "why": "It is in Schleswig-Holstein at about 3.5 m below sea level."
     }
    ]
   },
@@ -381,17 +2339,6 @@
    "category": "Sports",
    "name": "Sports",
    "questions": [
-    {
-     "level": 3,
-     "q": "Which medieval trade league was centred on Lübeck?",
-     "a": "Hanseatic League",
-     "wrong": [
-      "Swabian League",
-      "Rhine League",
-      "Teutonic Order"
-     ],
-     "why": "Hamburg and Bremen still call themselves Hanseatic cities."
-    },
     {
      "level": 1,
      "q": "How many FIFA World Cups has Germany won?",
@@ -661,6 +2608,17 @@
       "Heil dir im Siegerkranz"
      ],
      "why": "It starts 'Einigkeit und Recht und Freiheit'."
+    },
+    {
+     "level": 1,
+     "q": "Which electronic pioneers recorded 'Autobahn'?",
+     "a": "Kraftwerk",
+     "wrong": [
+      "Tangerine Dream",
+      "Can",
+      "Neu!"
+     ],
+     "why": "They came from Düsseldorf."
     }
    ]
   },
@@ -750,6 +2708,17 @@
       "Heinrich Böll"
      ],
      "why": "He won the Nobel Prize in 1929."
+    },
+    {
+     "level": 1,
+     "q": "Which brothers collected tales like 'Hansel and Gretel'?",
+     "a": "The Brothers Grimm",
+     "wrong": [
+      "The Brothers Mann",
+      "The Schlegel Brothers",
+      "The Brothers Humboldt"
+     ],
+     "why": "Their first collection came out in 1812."
     }
    ]
   },
@@ -823,28 +2792,6 @@
       "Johannes Kepler"
      ],
      "why": "He worked in Mainz."
-    },
-    {
-     "level": 1,
-     "q": "Which brothers collected tales like 'Hansel and Gretel'?",
-     "a": "The Brothers Grimm",
-     "wrong": [
-      "The Brothers Mann",
-      "The Schlegel Brothers",
-      "The Brothers Humboldt"
-     ],
-     "why": "Their first collection came out in 1812."
-    },
-    {
-     "level": 1,
-     "q": "Which electronic pioneers recorded 'Autobahn'?",
-     "a": "Kraftwerk",
-     "wrong": [
-      "Tangerine Dream",
-      "Can",
-      "Neu!"
-     ],
-     "why": "They came from Düsseldorf."
     },
     {
      "level": 1,
