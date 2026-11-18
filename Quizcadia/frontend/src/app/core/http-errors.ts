@@ -4,8 +4,8 @@ import { Observable, retry, throwError, timer } from 'rxjs';
 /** Human-readable message from an HTTP error (RFC 9457 problem details when the backend sent one). */
 export function errorMessage(err: unknown, fallback = 'Something went wrong. Please try again.'): string {
   if (err instanceof HttpErrorResponse) {
-    if (err.status === 0) {
-      return 'The server is not reachable. Check that the QuizCadia services are running.';
+    if (err.status === 0 || err.status === 502 || err.status === 504 || (err.error as { maintenance?: boolean } | null)?.maintenance) {
+      return 'QuizCadia is being updated right now. Please try again in a moment.';
     }
     const detail = (err.error as { detail?: string } | null)?.detail;
     if (detail) {

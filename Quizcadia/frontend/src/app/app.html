@@ -33,6 +33,7 @@
       <ng-container [ngTemplateOutlet]="installBtn" />
     }
   </div>
+  <mv-maintenance-banner />
 </header>
 <ng-template #installBtn>
   @if (installer.available()) {
