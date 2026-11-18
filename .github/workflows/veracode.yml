@@ -108,7 +108,7 @@ jobs:
           retention-days: 7
 
   pipeline-scan:
-    name: Pipeline scan (${{ matrix.part }})
+    name: Pipeline scan # GitHub adds the part, "(backend)" or "(frontend)", when it runs
     needs: package
     if: >-
       needs.package.outputs.configured == 'true' &&
