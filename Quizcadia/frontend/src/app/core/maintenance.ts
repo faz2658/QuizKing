@@ -5,9 +5,24 @@ import { Observable, Subject, defer, of, take } from 'rxjs';
 /** Gateway failures within this window, across all /api calls, switch the site into "under maintenance". */
 const FAILURES_TO_TRIGGER = 2;
 const FAILURE_WINDOW_MS = 20_000;
-/** Seconds between health checks while down, unless the server says otherwise with Retry-After. */
-const BACKOFF_SECONDS = [5, 10, 15, 20, 30];
+/**
+ * Seconds between health checks while down: exponential backoff (5, 10, 20, then every 30), each wait spread by
+ * ±20% so the tabs of everyone who lost the servers at the same moment don't all check back in the same second.
+ * A Retry-After from the server wins, only ever made a little later (up to +20%), never earlier.
+ */
+const FIRST_WAIT_SECONDS = 5;
+const MAX_BACKOFF_SECONDS = 30;
+const JITTER = 0.2;
 const MAX_WAIT_SECONDS = 120;
+
+/** Seconds to wait before check number {@code attempt} (0 = the first), given the server's Retry-After if any. */
+export function backoffSeconds(attempt: number, hint: number | null, random: () => number = Math.random): number {
+  if (hint !== null) {
+    return Math.min(MAX_WAIT_SECONDS, hint + Math.floor(random() * JITTER * hint));
+  }
+  const base = Math.min(MAX_BACKOFF_SECONDS, FIRST_WAIT_SECONDS * 2 ** attempt);
+  return Math.max(1, Math.round(base * (1 - JITTER + 2 * JITTER * random())));
+}
 /** Cheap call used when the failed request can't be repeated (a POST): any answer means nginx and the service are up. */
 const DEFAULT_PROBE = '/api/game/categories';
 
@@ -140,7 +155,7 @@ export class Maintenance {
 
   private schedule(): void {
     this.stopTicker();
-    const wait = Math.min(MAX_WAIT_SECONDS, this.hint ?? BACKOFF_SECONDS[Math.min(this.attempt, BACKOFF_SECONDS.length - 1)]);
+    const wait = backoffSeconds(this.attempt, this.hint);
     this.hint = null;
     this.attempt++;
     this._secondsLeft.set(wait);

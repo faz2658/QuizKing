@@ -5,7 +5,7 @@ import { provideRouter } from '@angular/router';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { authInterceptor } from './auth.interceptor';
 import { AuthService } from './auth.service';
-import { Maintenance, isGatewayFailure, retryAfterSeconds } from './maintenance';
+import { Maintenance, backoffSeconds, isGatewayFailure, retryAfterSeconds } from './maintenance';
 import { maintenanceInterceptor } from './maintenance.interceptor';
 
 const DOWN = { status: 502, statusText: 'Bad Gateway' };
@@ -38,6 +38,23 @@ describe('isGatewayFailure / retryAfterSeconds', () => {
   });
 });
 
+describe('backoffSeconds', () => {
+  it('doubles from 5 s up to 30 s, spread by ±20%', () => {
+    const middle = () => 0.5;
+    expect([0, 1, 2, 3, 4, 10].map((a) => backoffSeconds(a, null, middle))).toEqual([5, 10, 20, 30, 30, 30]);
+    expect(backoffSeconds(1, null, () => 0)).toBe(8); // 10 s - 20%
+    expect(backoffSeconds(1, null, () => 0.999)).toBe(12); // 10 s + 20%
+    expect(backoffSeconds(3, null, () => 0.999)).toBe(36);
+  });
+
+  it('follows Retry-After, never earlier and at most 20% later, up to two minutes', () => {
+    expect(backoffSeconds(0, 15, () => 0)).toBe(15);
+    expect(backoffSeconds(3, 15, () => 0.999)).toBe(17);
+    expect(backoffSeconds(0, 0, () => 0.999)).toBe(0); // "now": check straight away
+    expect(backoffSeconds(0, 600, () => 0)).toBe(120);
+  });
+});
+
 describe('Maintenance with maintenanceInterceptor', () => {
   let http: HttpClient;
   let backend: HttpTestingController;
@@ -45,6 +62,7 @@ describe('Maintenance with maintenanceInterceptor', () => {
 
   beforeEach(() => {
     vi.useFakeTimers();
+    vi.spyOn(Math, 'random').mockReturnValue(0.5); // waits without their random spread
     localStorage.clear();
     localStorage.setItem('quizcadia.session', JSON.stringify({ token: 'jwt', expiresAt: new Date(Date.now() + 3_600_000).toISOString(),
       user: { userId: 7, userName: 'Ada', email: 'ada@x.test', role: 'USER' } }));
@@ -62,6 +80,7 @@ describe('Maintenance with maintenanceInterceptor', () => {
 
   afterEach(() => {
     vi.useRealTimers();
+    vi.restoreAllMocks();
   });
 
   it('tries a read that failed once again shortly, without showing the banner', () => {
@@ -107,13 +126,13 @@ describe('Maintenance with maintenanceInterceptor', () => {
 
     expect(maintenance.active()).toBe(true);
     expect(gamesError).not.toHaveBeenCalled(); // it waits instead
-    expect(maintenance.secondsLeft()).toBe(15); // from Retry-After
+    expect(maintenance.secondsLeft()).toBe(16); // from Retry-After (15), plus its share of the spread
 
     vi.advanceTimersByTime(5_000);
-    expect(maintenance.secondsLeft()).toBe(10);
+    expect(maintenance.secondsLeft()).toBe(11);
 
     // still down at the first check: back off
-    vi.advanceTimersByTime(10_000);
+    vi.advanceTimersByTime(11_000);
     const probe1 = backend.expectOne((r) => r.method === 'HEAD');
     expect(probe1.request.url).toBe('/api/v1/daily'); // the read that failed
     expect(probe1.request.headers.has('Authorization')).toBe(false); // past the interceptors
