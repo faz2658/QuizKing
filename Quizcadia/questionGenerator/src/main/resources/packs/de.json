@@ -4715,6 +4715,1062 @@
       "Polizeiruf 110"
      ],
      "why": "Each city has its own detectives."
+    },
+    {
+     "q": "Which 1981 German film is set aboard a U-boat?",
+     "a": "Das Boot",
+     "wrong": [
+      "Stalingrad",
+      "The Bridge",
+      "Downfall"
+     ],
+     "level": 1,
+     "why": "Wolfgang Petersen directed it."
+    },
+    {
+     "q": "Which German director made 'Das Boot' and later 'Air Force One'?",
+     "a": "Wolfgang Petersen",
+     "wrong": [
+      "Roland Emmerich",
+      "Werner Herzog",
+      "Tom Tykwer"
+     ],
+     "level": 1,
+     "why": "He also made 'The NeverEnding Story'."
+    },
+    {
+     "q": "Which 1984 German fantasy film features a luckdragon called Falkor?",
+     "a": "The NeverEnding Story",
+     "wrong": [
+      "Labyrinth",
+      "Momo",
+      "The Dark Crystal"
+     ],
+     "level": 1,
+     "why": "It is based on Michael Ende's novel."
+    },
+    {
+     "q": "Which German director made 'Independence Day' and 'The Day After Tomorrow'?",
+     "a": "Roland Emmerich",
+     "wrong": [
+      "Wolfgang Petersen",
+      "Tom Tykwer",
+      "Uwe Boll"
+     ],
+     "level": 1,
+     "why": "He is from Stuttgart."
+    },
+    {
+     "q": "Which 1998 Tom Tykwer film shows a woman running to save her boyfriend?",
+     "a": "Run Lola Run",
+     "wrong": [
+      "Good Bye, Lenin!",
+      "The Edukators",
+      "Head-On"
+     ],
+     "level": 1,
+     "why": "Franka Potente plays Lola."
+    },
+    {
+     "q": "Which 2003 German comedy shows a son hiding the fall of the Wall from his mother?",
+     "a": "Good Bye, Lenin!",
+     "wrong": [
+      "Sonnenallee",
+      "The Lives of Others",
+      "Run Lola Run"
+     ],
+     "level": 1,
+     "why": "Daniel Brühl plays the son."
+    },
+    {
+     "q": "Which 2004 German film shows Hitler's last days in his bunker?",
+     "a": "Downfall (Der Untergang)",
+     "wrong": [
+      "Stalingrad",
+      "Sophie Scholl",
+      "Valkyrie"
+     ],
+     "level": 1,
+     "why": "Bruno Ganz plays Hitler."
+    },
+    {
+     "q": "Which Swiss actor played Hitler in 'Downfall'?",
+     "a": "Bruno Ganz",
+     "wrong": [
+      "Ulrich Mühe",
+      "Christoph Waltz",
+      "Sebastian Koch"
+     ],
+     "level": 1,
+     "why": "Scenes from it became an internet meme."
+    },
+    {
+     "q": "Which actor played the Stasi officer in 'The Lives of Others'?",
+     "a": "Ulrich Mühe",
+     "wrong": [
+      "Sebastian Koch",
+      "Bruno Ganz",
+      "Ulrich Tukur"
+     ],
+     "level": 1,
+     "why": "He died the year after the Oscar win."
+    },
+    {
+     "q": "Which Austrian-German actor won Oscars for 'Inglourious Basterds' and 'Django Unchained'?",
+     "a": "Christoph Waltz",
+     "wrong": [
+      "Daniel Brühl",
+      "Til Schweiger",
+      "Diane Kruger"
+     ],
+     "level": 1,
+     "why": "He played Hans Landa and Dr. King Schultz."
+    },
+    {
+     "q": "Which German actress starred in 'Troy' and 'Inglourious Basterds'?",
+     "a": "Diane Kruger",
+     "wrong": [
+      "Franka Potente",
+      "Nastassja Kinski",
+      "Sandra Hüller"
+     ],
+     "level": 1,
+     "why": "She won Best Actress at Cannes for 'In the Fade'."
+    },
+    {
+     "q": "Which German actress was Oscar-nominated for 'Anatomy of a Fall'?",
+     "a": "Sandra Hüller",
+     "wrong": [
+      "Diane Kruger",
+      "Nina Hoss",
+      "Paula Beer"
+     ],
+     "level": 1,
+     "why": "She also starred in 'The Zone of Interest'."
+    },
+    {
+     "q": "Which German actor played Niki Lauda in 'Rush'?",
+     "a": "Daniel Brühl",
+     "wrong": [
+      "Christoph Waltz",
+      "Til Schweiger",
+      "August Diehl"
+     ],
+     "level": 1,
+     "why": "He also played Baron Zemo for Marvel."
+    },
+    {
+     "q": "Which German actor played in 'Inglourious Basterds' and directed 'Keinohrhasen'?",
+     "a": "Til Schweiger",
+     "wrong": [
+      "Daniel Brühl",
+      "Moritz Bleibtreu",
+      "Matthias Schweighöfer"
+     ],
+     "level": 1,
+     "why": "He also played a Hamburg 'Tatort' detective."
+    },
+    {
+     "q": "Which actress became a star in 'The Blue Angel' in 1930?",
+     "a": "Marlene Dietrich",
+     "wrong": [
+      "Lil Dagover",
+      "Brigitte Helm",
+      "Pola Negri"
+     ],
+     "level": 1,
+     "why": "She later moved to Hollywood."
+    },
+    {
+     "q": "Which 1922 German silent horror film is about Count Orlok?",
+     "a": "Nosferatu",
+     "wrong": [
+      "The Cabinet of Dr. Caligari",
+      "Metropolis",
+      "The Golem"
+     ],
+     "level": 1,
+     "why": "F. W. Murnau directed it."
+    },
+    {
+     "q": "Which 1920 German Expressionist film has crooked painted sets?",
+     "a": "The Cabinet of Dr. Caligari",
+     "wrong": [
+      "Nosferatu",
+      "Metropolis",
+      "M"
+     ],
+     "level": 1,
+     "why": "Robert Wiene directed it."
+    },
+    {
+     "q": "Which 1931 Fritz Lang film follows a child murderer in Berlin?",
+     "a": "M",
+     "wrong": [
+      "Metropolis",
+      "Dr. Mabuse",
+      "Spione"
+     ],
+     "level": 1,
+     "why": "Peter Lorre played the killer."
+    },
+    {
+     "q": "Which German film-maker made 'Triumph of the Will' for the Nazis?",
+     "a": "Leni Riefenstahl",
+     "wrong": [
+      "Thea von Harbou",
+      "Lotte Reiniger",
+      "Veit Harlan"
+     ],
+     "level": 1,
+     "why": "She also filmed the 1936 Olympics."
+    },
+    {
+     "q": "Which German woman made the oldest surviving animated feature film, in 1926?",
+     "a": "Lotte Reiniger",
+     "wrong": [
+      "Leni Riefenstahl",
+      "Thea von Harbou",
+      "Margarethe von Trotta"
+     ],
+     "level": 1,
+     "why": "She used paper silhouettes."
+    },
+    {
+     "q": "Which Berlin film festival awards the Golden Bear?",
+     "a": "Berlinale",
+     "wrong": [
+      "Munich Film Festival",
+      "Hof Film Festival",
+      "Max Ophüls Prize"
+     ],
+     "level": 1,
+     "why": "It is held every February."
+    },
+    {
+     "q": "What is the top prize at the Berlin International Film Festival?",
+     "a": "Golden Bear",
+     "wrong": [
+      "Golden Lion",
+      "Palme d'Or",
+      "Golden Shell"
+     ],
+     "level": 1,
+     "why": "The bear is Berlin's symbol."
+    },
+    {
+     "q": "Which film studio near Berlin is one of the oldest in the world?",
+     "a": "Babelsberg",
+     "wrong": [
+      "Bavaria Film",
+      "UFA Hamburg",
+      "Studio Hamburg"
+     ],
+     "level": 1,
+     "why": "It opened in 1912."
+    },
+    {
+     "q": "Which Munich film studio offers a 'Das Boot' tour?",
+     "a": "Bavaria Film",
+     "wrong": [
+      "Babelsberg",
+      "Studio Hamburg",
+      "Constantin Film"
+     ],
+     "level": 1,
+     "why": "It is in Geiselgasteig."
+    },
+    {
+     "q": "Which long-running German crime show starred Horst Tappert?",
+     "a": "Derrick",
+     "wrong": [
+      "Der Alte",
+      "Tatort",
+      "SOKO München"
+     ],
+     "level": 1,
+     "why": "It was sold to over 100 countries."
+    },
+    {
+     "q": "Which German Netflix series is a time-travel mystery set in Winden?",
+     "a": "Dark",
+     "wrong": [
+      "Babylon Berlin",
+      "How to Sell Drugs Online (Fast)",
+      "Biohackers"
+     ],
+     "level": 1,
+     "why": "It ran from 2017 to 2020."
+    },
+    {
+     "q": "Which German TV series is set in Berlin in the late 1920s?",
+     "a": "Babylon Berlin",
+     "wrong": [
+      "Dark",
+      "Deutschland 83",
+      "Berlin Station"
+     ],
+     "level": 1,
+     "why": "It is one of the most expensive German series."
+    },
+    {
+     "q": "Which German series follows an East German spy in the West in 1983?",
+     "a": "Deutschland 83",
+     "wrong": [
+      "Babylon Berlin",
+      "Weissensee",
+      "Kleo"
+     ],
+     "level": 1,
+     "why": "Sequels covered 1986 and 1989."
+    },
+    {
+     "q": "Which German Netflix series follows a teen selling drugs online from his bedroom?",
+     "a": "How to Sell Drugs Online (Fast)",
+     "wrong": [
+      "Dark",
+      "Biohackers",
+      "Wir sind die Welle"
+     ],
+     "level": 1,
+     "why": "It is set in a small town."
+    },
+    {
+     "q": "Which German children's TV show features a mouse and an elephant?",
+     "a": "Die Sendung mit der Maus",
+     "wrong": [
+      "Sandmännchen",
+      "Löwenzahn",
+      "Sesamstraße"
+     ],
+     "level": 1,
+     "why": "It began in 1971."
+    },
+    {
+     "q": "Which East German bedtime TV character still airs every evening?",
+     "a": "Sandmännchen",
+     "wrong": [
+      "Pittiplatsch",
+      "Die Maus",
+      "Pumuckl"
+     ],
+     "level": 1,
+     "why": "He first appeared in 1959."
+    },
+    {
+     "q": "Which red-haired Bavarian goblin lives with a master carpenter in a TV series?",
+     "a": "Pumuckl",
+     "wrong": [
+      "Rübezahl",
+      "Sandmännchen",
+      "Das Sams"
+     ],
+     "level": 1,
+     "why": "He is invisible to most adults."
+    },
+    {
+     "q": "Which British sketch is shown on German TV every New Year's Eve?",
+     "a": "Dinner for One",
+     "wrong": [
+      "The Two Ronnies",
+      "Mr. Bean",
+      "Fawlty Towers"
+     ],
+     "level": 1,
+     "why": "Its line is 'The same procedure as every year'."
+    },
+    {
+     "q": "Which Czech-German fairy tale film is shown on German TV every Christmas?",
+     "a": "Three Wishes for Cinderella",
+     "wrong": [
+      "The Snow Queen",
+      "Puss in Boots",
+      "Rumpelstiltskin"
+     ],
+     "level": 1,
+     "why": "It was made in 1973."
+    },
+    {
+     "q": "Which German TV presenter hosted the hit show 'Wetten, dass..?' for decades?",
+     "a": "Thomas Gottschalk",
+     "wrong": [
+      "Günther Jauch",
+      "Stefan Raab",
+      "Frank Elstner"
+     ],
+     "level": 1,
+     "why": "Frank Elstner created the show in 1981."
+    },
+    {
+     "q": "Who hosts 'Wer wird Millionär', the German version of the 'Millionaire' quiz?",
+     "a": "Günther Jauch",
+     "wrong": [
+      "Thomas Gottschalk",
+      "Stefan Raab",
+      "Markus Lanz"
+     ],
+     "level": 1,
+     "why": "He has hosted it since 1999."
+    },
+    {
+     "q": "Which German entertainer hosted 'TV total' and 'Schlag den Raab'?",
+     "a": "Stefan Raab",
+     "wrong": [
+      "Thomas Gottschalk",
+      "Günther Jauch",
+      "Hape Kerkeling"
+     ],
+     "level": 1,
+     "why": "He also sang Eurovision songs."
+    },
+    {
+     "q": "Which German comedian walked the Camino de Santiago and wrote 'I'm Off Then'?",
+     "a": "Hape Kerkeling",
+     "wrong": [
+      "Otto Waalkes",
+      "Michael Bully Herbig",
+      "Loriot"
+     ],
+     "level": 1,
+     "why": "It became a film in 2015."
+    },
+    {
+     "q": "Which German comedian made the films 'Der Schuh des Manitu' and '(T)Raumschiff Surprise'?",
+     "a": "Michael Bully Herbig",
+     "wrong": [
+      "Otto Waalkes",
+      "Hape Kerkeling",
+      "Til Schweiger"
+     ],
+     "level": 1,
+     "why": "'Der Schuh des Manitu' was a huge hit in 2001."
+    },
+    {
+     "q": "Which Frisian comedian is famous for his Ottifants?",
+     "a": "Otto Waalkes",
+     "wrong": [
+      "Loriot",
+      "Hape Kerkeling",
+      "Mike Krüger"
+     ],
+     "level": 1,
+     "why": "He voiced Sid in German 'Ice Age'."
+    },
+    {
+     "q": "Which German humorist created the sketch with a man in a bath fighting over a rubber duck?",
+     "a": "Loriot",
+     "wrong": [
+      "Otto Waalkes",
+      "Heinz Erhardt",
+      "Karl Valentin"
+     ],
+     "level": 1,
+     "why": "His real name was Vicco von Bülow."
+    },
+    {
+     "q": "Which German comedy series stars Christoph Maria Herbst as an awful boss?",
+     "a": "Stromberg",
+     "wrong": [
+      "Pastewka",
+      "Ladykracher",
+      "Der Tatortreiniger"
+     ],
+     "level": 1,
+     "why": "It is based on 'The Office'."
+    },
+    {
+     "q": "Which 2017 German film by Fatih Akin starred Diane Kruger seeking revenge?",
+     "a": "In the Fade",
+     "wrong": [
+      "Head-On",
+      "Soul Kitchen",
+      "The Golden Glove"
+     ],
+     "level": 1,
+     "why": "It won a Golden Globe."
+    },
+    {
+     "q": "Which German director of Turkish origin made 'Head-On'?",
+     "a": "Fatih Akin",
+     "wrong": [
+      "Tom Tykwer",
+      "Christian Petzold",
+      "Wim Wenders"
+     ],
+     "level": 1,
+     "why": "It won the Golden Bear in 2004."
+    },
+    {
+     "q": "Which German director made 'Wings of Desire' and 'Paris, Texas'?",
+     "a": "Wim Wenders",
+     "wrong": [
+      "Werner Herzog",
+      "Rainer Werner Fassbinder",
+      "Volker Schlöndorff"
+     ],
+     "level": 1,
+     "why": "'Paris, Texas' won the 1984 Palme d'Or."
+    },
+    {
+     "q": "Which 2023 Wim Wenders film follows a toilet cleaner in Tokyo?",
+     "a": "Perfect Days",
+     "wrong": [
+      "Drive My Car",
+      "Shoplifters",
+      "Tokyo Story"
+     ],
+     "level": 1,
+     "why": "It was Oscar-nominated for Japan."
+    },
+    {
+     "q": "Which Volker Schlöndorff film won Germany's first foreign-language Oscar?",
+     "a": "The Tin Drum",
+     "wrong": [
+      "The Lives of Others",
+      "Nowhere in Africa",
+      "Das Boot"
+     ],
+     "level": 1,
+     "why": "It won in 1980."
+    },
+    {
+     "q": "Which German film about a Jewish family in Kenya won the 2003 Oscar?",
+     "a": "Nowhere in Africa",
+     "wrong": [
+      "The Tin Drum",
+      "The Lives of Others",
+      "Downfall"
+     ],
+     "level": 1,
+     "why": "Caroline Link directed it."
+    },
+    {
+     "q": "Which German director made 'Fear Eats the Soul' and 'The Marriage of Maria Braun'?",
+     "a": "Rainer Werner Fassbinder",
+     "wrong": [
+      "Werner Herzog",
+      "Wim Wenders",
+      "Volker Schlöndorff"
+     ],
+     "level": 1,
+     "why": "He made over 40 films before dying at 37."
+    },
+    {
+     "q": "Which German actor often clashed with Werner Herzog in films like 'Aguirre'?",
+     "a": "Klaus Kinski",
+     "wrong": [
+      "Bruno Ganz",
+      "Mario Adorf",
+      "Armin Mueller-Stahl"
+     ],
+     "level": 1,
+     "why": "Herzog made 'My Best Fiend' about him."
+    },
+    {
+     "q": "Which German supermodel hosted 'Germany's Next Topmodel'?",
+     "a": "Heidi Klum",
+     "wrong": [
+      "Claudia Schiffer",
+      "Toni Garrn",
+      "Nadja Auermann"
+     ],
+     "level": 1,
+     "why": "She is from Bergisch Gladbach."
+    },
+    {
+     "q": "Which German-born actress starred in 'Tess' and 'Cat People'?",
+     "a": "Nastassja Kinski",
+     "wrong": [
+      "Diane Kruger",
+      "Hanna Schygulla",
+      "Romy Schneider"
+     ],
+     "level": 1,
+     "why": "She is Klaus Kinski's daughter."
+    },
+    {
+     "q": "Which actress starred in the 1950s 'Sissi' films?",
+     "a": "Romy Schneider",
+     "wrong": [
+      "Nastassja Kinski",
+      "Hanna Schygulla",
+      "Marlene Dietrich"
+     ],
+     "level": 1,
+     "why": "She later worked mostly in France."
+    },
+    {
+     "q": "Which 2007 Til Schweiger romantic comedy's title means 'earless rabbits'?",
+     "a": "Keinohrhasen",
+     "wrong": [
+      "Kokowääh",
+      "Honig im Kopf",
+      "Fack ju Göhte"
+     ],
+     "level": 1,
+     "why": "It was one of the year's biggest German hits."
+    },
+    {
+     "q": "Which 2013 German school comedy was a huge box office hit?",
+     "a": "Fack ju Göhte",
+     "wrong": [
+      "Türkisch für Anfänger",
+      "Keinohrhasen",
+      "Die Welle"
+     ],
+     "level": 1,
+     "why": "Elyas M'Barek plays a criminal turned teacher."
+    },
+    {
+     "q": "Which 2008 German film shows a teacher's class experiment turning into fascism?",
+     "a": "The Wave (Die Welle)",
+     "wrong": [
+      "The Edukators",
+      "We Are Young",
+      "The Experiment"
+     ],
+     "level": 1,
+     "why": "It is based on a real US school experiment."
+    },
+    {
+     "q": "Which 2001 German film shows a prison experiment going wrong?",
+     "a": "The Experiment (Das Experiment)",
+     "wrong": [
+      "The Wave",
+      "Cell 211",
+      "Stammheim"
+     ],
+     "level": 2,
+     "why": "Moritz Bleibtreu stars in it."
+    },
+    {
+     "q": "Which German director made 'Phoenix' and 'Transit'?",
+     "a": "Christian Petzold",
+     "wrong": [
+      "Fatih Akin",
+      "Tom Tykwer",
+      "Maren Ade"
+     ],
+     "level": 2,
+     "why": "Nina Hoss often stars in his films."
+    },
+    {
+     "q": "Which German director made 'Toni Erdmann'?",
+     "a": "Maren Ade",
+     "wrong": [
+      "Christian Petzold",
+      "Doris Dörrie",
+      "Margarethe von Trotta"
+     ],
+     "level": 2,
+     "why": "It was Oscar-nominated in 2017."
+    },
+    {
+     "q": "Which German director made 'Cherry Blossoms' and 'Men'?",
+     "a": "Doris Dörrie",
+     "wrong": [
+      "Maren Ade",
+      "Caroline Link",
+      "Margarethe von Trotta"
+     ],
+     "level": 2,
+     "why": "She also writes novels."
+    },
+    {
+     "q": "Which German director made 'Rosenstrasse' and 'Hannah Arendt'?",
+     "a": "Margarethe von Trotta",
+     "wrong": [
+      "Doris Dörrie",
+      "Maren Ade",
+      "Caroline Link"
+     ],
+     "level": 2,
+     "why": "She is a leading figure of New German Cinema."
+    },
+    {
+     "q": "Which German director co-directed 'Cloud Atlas' with the Wachowskis?",
+     "a": "Tom Tykwer",
+     "wrong": [
+      "Wolfgang Petersen",
+      "Roland Emmerich",
+      "Florian Henckel von Donnersmarck"
+     ],
+     "level": 2,
+     "why": "He also made 'Perfume'."
+    },
+    {
+     "q": "Which 2006 Tom Tykwer film follows a murderer with a perfect sense of smell?",
+     "a": "Perfume: The Story of a Murderer",
+     "wrong": [
+      "The Reader",
+      "The Lives of Others",
+      "Run Lola Run"
+     ],
+     "level": 2,
+     "why": "It is based on Patrick Süskind's novel."
+    },
+    {
+     "q": "Which director made 'The Lives of Others'?",
+     "a": "Florian Henckel von Donnersmarck",
+     "wrong": [
+      "Wolfgang Becker",
+      "Tom Tykwer",
+      "Christian Petzold"
+     ],
+     "level": 2,
+     "why": "He later made 'Never Look Away'."
+    },
+    {
+     "q": "Which director made 'Good Bye, Lenin!'?",
+     "a": "Wolfgang Becker",
+     "wrong": [
+      "Leander Haußmann",
+      "Tom Tykwer",
+      "Andreas Dresen"
+     ],
+     "level": 2,
+     "why": "He died in 2024."
+    },
+    {
+     "q": "Which 1999 comedy is set on a Berlin street split by the Wall?",
+     "a": "Sonnenallee",
+     "wrong": [
+      "Good Bye, Lenin!",
+      "Herr Lehmann",
+      "Berlin Is in Germany"
+     ],
+     "level": 2,
+     "why": "Leander Haußmann directed it."
+    },
+    {
+     "q": "Which German director made 'All Quiet on the Western Front' in 2022?",
+     "a": "Edward Berger",
+     "wrong": [
+      "Christian Schwochow",
+      "Tom Tykwer",
+      "Dennis Gansel"
+     ],
+     "level": 2,
+     "why": "He later made 'Conclave'."
+    },
+    {
+     "q": "Which 2023 Jonathan Glazer film is set beside Auschwitz and stars Sandra Hüller?",
+     "a": "The Zone of Interest",
+     "wrong": [
+      "Son of Saul",
+      "Phoenix",
+      "Transit"
+     ],
+     "level": 2,
+     "why": "It won two Oscars."
+    },
+    {
+     "q": "What was the 1960s–80s movement of German filmmakers like Fassbinder and Herzog called?",
+     "a": "New German Cinema",
+     "wrong": [
+      "German Expressionism",
+      "Neue Sachlichkeit",
+      "Berliner Schule"
+     ],
+     "level": 2,
+     "why": "It began with the 1962 Oberhausen Manifesto."
+    },
+    {
+     "q": "Which 1962 statement launched New German Cinema?",
+     "a": "Oberhausen Manifesto",
+     "wrong": [
+      "Berlin Declaration",
+      "Munich Charter",
+      "Hamburg Manifesto"
+     ],
+     "level": 2,
+     "why": "It said 'Papa's cinema is dead'."
+    },
+    {
+     "q": "What was the giant German film studio of the 1920s called?",
+     "a": "UFA",
+     "wrong": [
+      "DEFA",
+      "Bavaria Film",
+      "Tobis"
+     ],
+     "level": 2,
+     "why": "It made 'Metropolis'."
+    },
+    {
+     "q": "What was East Germany's state film studio called?",
+     "a": "DEFA",
+     "wrong": [
+      "UFA",
+      "Babelsberg Ost",
+      "Tobis"
+     ],
+     "level": 2,
+     "why": "It made the 'Indianer' westerns."
+    },
+    {
+     "q": "Which actor played Winnetou in the West German Karl May films?",
+     "a": "Pierre Brice",
+     "wrong": [
+      "Lex Barker",
+      "Gojko Mitić",
+      "Mario Adorf"
+     ],
+     "level": 2,
+     "why": "He was French."
+    },
+    {
+     "q": "Which American actor played Old Shatterhand in the Karl May films?",
+     "a": "Lex Barker",
+     "wrong": [
+      "Pierre Brice",
+      "Stewart Granger",
+      "Gojko Mitić"
+     ],
+     "level": 2,
+     "why": "He had also played Tarzan."
+    },
+    {
+     "q": "Which 1959 West German film shows teens defending a bridge at the end of the war?",
+     "a": "The Bridge (Die Brücke)",
+     "wrong": [
+      "Das Boot",
+      "Stalingrad",
+      "Downfall"
+     ],
+     "level": 2,
+     "why": "Bernhard Wicki directed it."
+    },
+    {
+     "q": "Which German actor was Oscar-nominated for 'Shine'?",
+     "a": "Armin Mueller-Stahl",
+     "wrong": [
+      "Bruno Ganz",
+      "Mario Adorf",
+      "Klaus Maria Brandauer"
+     ],
+     "level": 2,
+     "why": "He came from East Germany."
+    },
+    {
+     "q": "Which German actor played Major Strasser in 'Casablanca'?",
+     "a": "Conrad Veidt",
+     "wrong": [
+      "Peter Lorre",
+      "Emil Jannings",
+      "Curt Bois"
+     ],
+     "level": 2,
+     "why": "He fled Nazi Germany in 1933."
+    },
+    {
+     "q": "Which German actor won the first Best Actor Oscar?",
+     "a": "Emil Jannings",
+     "wrong": [
+      "Conrad Veidt",
+      "Peter Lorre",
+      "Werner Krauss"
+     ],
+     "level": 2,
+     "why": "He won in 1929."
+    },
+    {
+     "q": "Which German satirist hosts 'ZDF Magazin Royale'?",
+     "a": "Jan Böhmermann",
+     "wrong": [
+      "Oliver Welke",
+      "Stefan Raab",
+      "Klaas Heufer-Umlauf"
+     ],
+     "level": 2,
+     "why": "He provoked a row with Turkey's president in 2016."
+    },
+    {
+     "q": "Which German news satire show is a version of 'The Daily Show'?",
+     "a": "heute-show",
+     "wrong": [
+      "extra 3",
+      "Die Anstalt",
+      "Neo Magazin"
+     ],
+     "level": 2,
+     "why": "Oliver Welke hosts it."
+    },
+    {
+     "q": "Which nightly German TV news programme starts at 8 pm?",
+     "a": "Tagesschau",
+     "wrong": [
+      "heute",
+      "RTL Aktuell",
+      "Tagesthemen"
+     ],
+     "level": 2,
+     "why": "It began in 1952."
+    },
+    {
+     "q": "Which German broadcaster runs the 'Tagesschau'?",
+     "a": "ARD",
+     "wrong": [
+      "ZDF",
+      "RTL",
+      "Sat.1"
+     ],
+     "level": 2,
+     "why": "It is a group of regional public broadcasters."
+    },
+    {
+     "q": "Which German public TV channel is based in Mainz?",
+     "a": "ZDF",
+     "wrong": [
+      "ARD",
+      "RTL",
+      "3sat"
+     ],
+     "level": 2,
+     "why": "Its name means 'Second German Television'."
+    },
+    {
+     "q": "'?",
+     "a": "RTL",
+     "wrong": [
+      "Sat.1",
+      "ProSieben",
+      "Vox"
+     ],
+     "level": 2,
+     "why": "It began in Luxembourg."
+    },
+    {
+     "q": "Which German film award is called the Lola?",
+     "a": "German Film Award",
+     "wrong": [
+      "Bambi",
+      "Golden Camera",
+      "Grimme Prize"
+     ],
+     "level": 2,
+     "why": "It is given each spring."
+    },
+    {
+     "q": "Which German TV award is shaped like a deer?",
+     "a": "Bambi",
+     "wrong": [
+      "Lola",
+      "Golden Camera",
+      "Grimme Prize"
+     ],
+     "level": 2,
+     "why": "It has been given since 1948."
+    },
+    {
+     "q": "Which actor played Inspector Schimanski in 'Tatort'?",
+     "a": "Götz George",
+     "wrong": [
+      "Manfred Krug",
+      "Ulrich Tukur",
+      "Axel Prahl"
+     ],
+     "level": 3,
+     "why": "His episodes were set in Duisburg."
+    },
+    {
+     "q": "Which 'Tatort' city team with a coroner and a commissioner is the most watched?",
+     "a": "Münster",
+     "wrong": [
+      "Cologne",
+      "Munich",
+      "Kiel"
+     ],
+     "level": 3,
+     "why": "Axel Prahl and Jan Josef Liefers star."
+    },
+    {
+     "q": "Which 1979 Herzog film remade 'Nosferatu' with Klaus Kinski?",
+     "a": "Nosferatu the Vampyre",
+     "wrong": [
+      "Nosferatu",
+      "Shadow of the Vampire",
+      "Woyzeck"
+     ],
+     "level": 3,
+     "why": "Isabelle Adjani co-starred."
+    },
+    {
+     "q": "Which German comic magazine starred two foxes?",
+     "a": "Fix und Foxi",
+     "wrong": [
+      "Mosaik",
+      "Yps",
+      "Micky Maus"
+     ],
+     "level": 3,
+     "why": "Rolf Kauka created it."
+    },
+    {
+     "q": "Which East German comic magazine starred the Digedags and Abrafaxe?",
+     "a": "Mosaik",
+     "wrong": [
+      "Fix und Foxi",
+      "Yps",
+      "Frösi"
+     ],
+     "level": 3,
+     "why": "It still appears today."
+    },
+    {
+     "q": "Which German actress played Lola in 'Run Lola Run'?",
+     "a": "Franka Potente",
+     "wrong": [
+      "Diane Kruger",
+      "Nina Hoss",
+      "Sandra Hüller"
+     ],
+     "level": 1,
+     "why": "She later starred in 'The Bourne Identity'."
+    },
+    {
+     "q": "Which German actor directed and starred in Netflix's 'Army of Thieves'?",
+     "a": "Matthias Schweighöfer",
+     "wrong": [
+      "Til Schweiger",
+      "Daniel Brühl",
+      "Elyas M'Barek"
+     ],
+     "level": 2,
+     "why": "It is a prequel to 'Army of the Dead'."
+    },
+    {
+     "q": "Which Munich company produced the 'Resident Evil' films?",
+     "a": "Constantin Film",
+     "wrong": [
+      "Bavaria Film",
+      "UFA",
+      "Studio Babelsberg"
+     ],
+     "level": 2,
+     "why": "It also made 'Downfall'."
+    },
+    {
+     "q": "Which German director made the Oscar-nominated 'The Teachers' Lounge' in 2023?",
+     "a": "İlker Çatak",
+     "wrong": [
+      "Christian Petzold",
+      "Maren Ade",
+      "Edward Berger"
+     ],
+     "level": 2,
+     "why": "Leonie Benesch plays a young teacher."
+    },
+    {
+     "q": "Which German film shot in one continuous take follows a night in Berlin?",
+     "a": "Victoria",
+     "wrong": [
+      "Oh Boy",
+      "Phoenix",
+      "Toni Erdmann"
+     ],
+     "level": 2,
+     "why": "Sebastian Schipper directed it in 2015."
     }
    ]
   },
@@ -4754,6 +5810,1095 @@
       "The Brothers Humboldt"
      ],
      "why": "Their first collection came out in 1812."
+    },
+    {
+     "q": "Which German author wrote 'All Quiet on the Western Front'?",
+     "a": "Erich Maria Remarque",
+     "wrong": [
+      "Ernst Jünger",
+      "Thomas Mann",
+      "Hermann Hesse"
+     ],
+     "level": 1,
+     "why": "It was published in 1929."
+    },
+    {
+     "q": "Which German author wrote 'Steppenwolf' and 'Siddhartha'?",
+     "a": "Hermann Hesse",
+     "wrong": [
+      "Thomas Mann",
+      "Hermann Broch",
+      "Erich Kästner"
+     ],
+     "level": 1,
+     "why": "He won the 1946 Nobel Prize."
+    },
+    {
+     "q": "Which Prague-born writer who wrote in German wrote 'The Metamorphosis'?",
+     "a": "Franz Kafka",
+     "wrong": [
+      "Rainer Maria Rilke",
+      "Max Brod",
+      "Stefan Zweig"
+     ],
+     "level": 1,
+     "why": "Gregor Samsa wakes up as an insect."
+    },
+    {
+     "q": "Which Goethe novel about a heartbroken young man caused a craze in 1774?",
+     "a": "The Sorrows of Young Werther",
+     "wrong": [
+      "Wilhelm Meister",
+      "Elective Affinities",
+      "Faust"
+     ],
+     "level": 1,
+     "why": "Young men copied Werther's clothes."
+    },
+    {
+     "q": "Which German playwright wrote 'William Tell' and 'The Robbers'?",
+     "a": "Friedrich Schiller",
+     "wrong": [
+      "Goethe",
+      "Gotthold Lessing",
+      "Heinrich von Kleist"
+     ],
+     "level": 1,
+     "why": "He lived in Weimar near Goethe."
+    },
+    {
+     "q": "Which Schiller poem is the text of Beethoven's 'Ode to Joy'?",
+     "a": "An die Freude",
+     "wrong": [
+      "Die Glocke",
+      "Der Handschuh",
+      "Die Bürgschaft"
+     ],
+     "level": 1,
+     "why": "It is now the EU anthem's source."
+    },
+    {
+     "q": "Which German poet wrote the 'Lorelei' poem?",
+     "a": "Heinrich Heine",
+     "wrong": [
+      "Goethe",
+      "Schiller",
+      "Eichendorff"
+     ],
+     "level": 1,
+     "why": "It was set to music by Friedrich Silcher."
+    },
+    {
+     "q": "Which German author wrote 'The Tin Drum'?",
+     "a": "Günter Grass",
+     "wrong": [
+      "Heinrich Böll",
+      "Siegfried Lenz",
+      "Martin Walser"
+     ],
+     "level": 1,
+     "why": "He won the 1999 Nobel Prize."
+    },
+    {
+     "q": "Which German author won the Nobel Prize in Literature in 1972?",
+     "a": "Heinrich Böll",
+     "wrong": [
+      "Günter Grass",
+      "Thomas Mann",
+      "Hermann Hesse"
+     ],
+     "level": 1,
+     "why": "He wrote 'The Lost Honour of Katharina Blum'."
+    },
+    {
+     "q": "Which German writer won the Nobel Prize in Literature in 1929?",
+     "a": "Thomas Mann",
+     "wrong": [
+      "Hermann Hesse",
+      "Gerhart Hauptmann",
+      "Paul Heyse"
+     ],
+     "level": 1,
+     "why": "He was honoured mainly for 'Buddenbrooks'."
+    },
+    {
+     "q": "Which Romanian-born German writer won the 2009 Nobel Prize in Literature?",
+     "a": "Herta Müller",
+     "wrong": [
+      "Christa Wolf",
+      "Jenny Erpenbeck",
+      "Juli Zeh"
+     ],
+     "level": 1,
+     "why": "She wrote about life under Ceaușescu."
+    },
+    {
+     "q": "Which German playwright wrote 'Mother Courage and Her Children'?",
+     "a": "Bertolt Brecht",
+     "wrong": [
+      "Gerhart Hauptmann",
+      "Carl Zuckmayer",
+      "Georg Büchner"
+     ],
+     "level": 1,
+     "why": "He founded the Berliner Ensemble."
+    },
+    {
+     "q": "Which German author wrote 'Emil and the Detectives'?",
+     "a": "Erich Kästner",
+     "wrong": [
+      "Michael Ende",
+      "Otfried Preußler",
+      "James Krüss"
+     ],
+     "level": 1,
+     "why": "It is set in Berlin."
+    },
+    {
+     "q": "Which German author wrote 'Momo' and 'The NeverEnding Story'?",
+     "a": "Michael Ende",
+     "wrong": [
+      "Erich Kästner",
+      "Cornelia Funke",
+      "Otfried Preußler"
+     ],
+     "level": 1,
+     "why": "His father was a surrealist painter."
+    },
+    {
+     "q": "Which German author wrote 'Inkheart'?",
+     "a": "Cornelia Funke",
+     "wrong": [
+      "Michael Ende",
+      "Kirsten Boie",
+      "Erich Kästner"
+     ],
+     "level": 1,
+     "why": "Characters can be read out of books."
+    },
+    {
+     "q": "Which German author wrote 'The Little Witch' and 'The Robber Hotzenplotz'?",
+     "a": "Otfried Preußler",
+     "wrong": [
+      "Michael Ende",
+      "Erich Kästner",
+      "James Krüss"
+     ],
+     "level": 1,
+     "why": "He also wrote 'Krabat'."
+    },
+    {
+     "q": "Which German children's book by Heinrich Hoffmann warns naughty children?",
+     "a": "Struwwelpeter",
+     "wrong": [
+      "Max and Moritz",
+      "Krabat",
+      "The Little Witch"
+     ],
+     "level": 1,
+     "why": "It was published in 1845."
+    },
+    {
+     "q": "Which Wilhelm Busch story follows two naughty boys?",
+     "a": "Max and Moritz",
+     "wrong": [
+      "Struwwelpeter",
+      "Hansel and Gretel",
+      "Emil and the Detectives"
+     ],
+     "level": 1,
+     "why": "It is an early comic strip."
+    },
+    {
+     "q": "Which Grimm fairy tale has a girl let down her long hair from a tower?",
+     "a": "Rapunzel",
+     "wrong": [
+      "Snow White",
+      "Cinderella",
+      "Sleeping Beauty"
+     ],
+     "level": 1,
+     "why": "In German she is also 'Rapunzel'."
+    },
+    {
+     "q": "Which Grimm fairy tale features a man who spins straw into gold?",
+     "a": "Rumpelstiltskin",
+     "wrong": [
+      "Hansel and Gretel",
+      "The Frog Prince",
+      "Mother Hulda"
+     ],
+     "level": 1,
+     "why": "The miller's daughter must guess his name."
+    },
+    {
+     "q": "Which Grimm fairy tale has four animal musicians heading to a northern city?",
+     "a": "Town Musicians of Bremen",
+     "wrong": [
+      "The Wolf and the Seven Kids",
+      "Puss in Boots",
+      "The Golden Goose"
+     ],
+     "level": 1,
+     "why": "A statue of them stands in Bremen."
+    },
+    {
+     "q": "Which legend says a piper led away 130 children from a town on the Weser in 1284?",
+     "a": "Pied Piper of Hamelin",
+     "wrong": [
+      "Town Musicians of Bremen",
+      "Little Red Riding Hood",
+      "Mother Hulda"
+     ],
+     "level": 1,
+     "why": "The town still stages the story each summer."
+    },
+    {
+     "q": "Which Grimm tale has a girl in a red hood meet a wolf?",
+     "a": "Little Red Riding Hood",
+     "wrong": [
+      "Snow White",
+      "Rapunzel",
+      "Mother Hulda"
+     ],
+     "level": 1,
+     "why": "In German she is 'Rotkäppchen'."
+    },
+    {
+     "q": "Which German writer created the Apache chief Winnetou?",
+     "a": "Karl May",
+     "wrong": [
+      "Friedrich Gerstäcker",
+      "Erich Kästner",
+      "Balduin Möllhausen"
+     ],
+     "level": 1,
+     "why": "He had not visited America when he wrote it."
+    },
+    {
+     "q": "Which German author wrote the novel 'Perfume'?",
+     "a": "Patrick Süskind",
+     "wrong": [
+      "Bernhard Schlink",
+      "Daniel Kehlmann",
+      "Uwe Timm"
+     ],
+     "level": 1,
+     "why": "It is set in 18th-century France."
+    },
+    {
+     "q": "Which German author wrote 'The Reader' about a woman tried for war crimes?",
+     "a": "Bernhard Schlink",
+     "wrong": [
+      "Patrick Süskind",
+      "W. G. Sebald",
+      "Daniel Kehlmann"
+     ],
+     "level": 1,
+     "why": "Kate Winslet won an Oscar in the film."
+    },
+    {
+     "q": "Which German author wrote 'Measuring the World' about Humboldt and Gauss?",
+     "a": "Daniel Kehlmann",
+     "wrong": [
+      "Patrick Süskind",
+      "Juli Zeh",
+      "Uwe Tellkamp"
+     ],
+     "level": 1,
+     "why": "It was a huge best-seller in 2005."
+    },
+    {
+     "q": "Which German author wrote 'Look Who's Back', where Hitler wakes up in 2011?",
+     "a": "Timur Vermes",
+     "wrong": [
+      "Daniel Kehlmann",
+      "Wolfgang Herrndorf",
+      "Sebastian Fitzek"
+     ],
+     "level": 1,
+     "why": "It became a film in 2015."
+    },
+    {
+     "q": "Which German author wrote 'Why We Took the Car' (Tschick)?",
+     "a": "Wolfgang Herrndorf",
+     "wrong": [
+      "Timur Vermes",
+      "Juli Zeh",
+      "Benedict Wells"
+     ],
+     "level": 1,
+     "why": "Two boys go on a road trip in a stolen car."
+    },
+    {
+     "q": "Which German author writes best-selling psychological thrillers like 'Passenger 23'?",
+     "a": "Sebastian Fitzek",
+     "wrong": [
+      "Nele Neuhaus",
+      "Charlotte Link",
+      "Andreas Eschbach"
+     ],
+     "level": 1,
+     "why": "He is from Berlin."
+    },
+    {
+     "q": "Which Frankfurt-area writer created the detectives Pia Kirchhoff and Oliver von Bodenstein?",
+     "a": "Nele Neuhaus",
+     "wrong": [
+      "Charlotte Link",
+      "Ingrid Noll",
+      "Sebastian Fitzek"
+     ],
+     "level": 1,
+     "why": "Her books are set in the Taunus."
+    },
+    {
+     "q": "Which German poet wrote 'Erlkönig', about a father riding through the night?",
+     "a": "Johann Wolfgang von Goethe",
+     "wrong": [
+      "Friedrich Schiller",
+      "Heinrich Heine",
+      "Eduard Mörike"
+     ],
+     "level": 1,
+     "why": "Schubert set it to music."
+    },
+    {
+     "q": "Which Austrian poet who wrote in German wrote 'Letters to a Young Poet'?",
+     "a": "Rainer Maria Rilke",
+     "wrong": [
+      "Stefan Zweig",
+      "Hugo von Hofmannsthal",
+      "Georg Trakl"
+     ],
+     "level": 1,
+     "why": "He was born in Prague."
+    },
+    {
+     "q": "Which German philosopher wrote 'Thus Spoke Zarathustra'?",
+     "a": "Friedrich Nietzsche",
+     "wrong": [
+      "Immanuel Kant",
+      "Arthur Schopenhauer",
+      "Martin Heidegger"
+     ],
+     "level": 1,
+     "why": "He wrote 'God is dead'."
+    },
+    {
+     "q": "Which German philosopher from Königsberg wrote 'Critique of Pure Reason'?",
+     "a": "Immanuel Kant",
+     "wrong": [
+      "Hegel",
+      "Fichte",
+      "Leibniz"
+     ],
+     "level": 1,
+     "why": "He never left his home city."
+    },
+    {
+     "q": "Which German thinkers wrote 'The Communist Manifesto'?",
+     "a": "Karl Marx and Friedrich Engels",
+     "wrong": [
+      "Hegel and Feuerbach",
+      "Marx and Lenin",
+      "Engels and Bebel"
+     ],
+     "level": 1,
+     "why": "It was published in 1848."
+    },
+    {
+     "q": "Which Karl Marx book analyses capitalism?",
+     "a": "Das Kapital",
+     "wrong": [
+      "The Communist Manifesto",
+      "The German Ideology",
+      "Grundrisse"
+     ],
+     "level": 1,
+     "why": "Its first volume came out in 1867."
+    },
+    {
+     "q": "Which German book fair is the world's largest?",
+     "a": "Frankfurt Book Fair",
+     "wrong": [
+      "Leipzig Book Fair",
+      "Berlin Book Fair",
+      "Munich Book Fair"
+     ],
+     "level": 1,
+     "why": "It is held every October."
+    },
+    {
+     "q": "Which top German literary prize is awarded each year in Darmstadt?",
+     "a": "Georg Büchner Prize",
+     "wrong": [
+      "German Book Prize",
+      "Kleist Prize",
+      "Goethe Prize"
+     ],
+     "level": 1,
+     "why": "It is named after the author of 'Woyzeck'."
+    },
+    {
+     "q": "Which German Nobel laureate wrote 'The Weavers'?",
+     "a": "Gerhart Hauptmann",
+     "wrong": [
+      "Thomas Mann",
+      "Heinrich Böll",
+      "Paul Heyse"
+     ],
+     "level": 1,
+     "why": "He won the Nobel Prize in 1912."
+    },
+    {
+     "q": "Which German author wrote 'Effi Briest'?",
+     "a": "Theodor Fontane",
+     "wrong": [
+      "Theodor Storm",
+      "Gottfried Keller",
+      "Wilhelm Raabe"
+     ],
+     "level": 1,
+     "why": "It is often compared to 'Madame Bovary'."
+    },
+    {
+     "q": "Which German author wrote 'Der Schimmelreiter', about a dyke builder?",
+     "a": "Theodor Storm",
+     "wrong": [
+      "Theodor Fontane",
+      "Gottfried Keller",
+      "Wilhelm Raabe"
+     ],
+     "level": 1,
+     "why": "It is set on the North Sea coast."
+    },
+    {
+     "q": "Which Thomas Mann novel is set in a Swiss sanatorium?",
+     "a": "The Magic Mountain",
+     "wrong": [
+      "Buddenbrooks",
+      "Doctor Faustus",
+      "Death in Venice"
+     ],
+     "level": 1,
+     "why": "It was published in 1924."
+    },
+    {
+     "q": "Which Thomas Mann novella follows a writer obsessed with a boy in Venice?",
+     "a": "Death in Venice",
+     "wrong": [
+      "Tonio Kröger",
+      "The Magic Mountain",
+      "Mario and the Magician"
+     ],
+     "level": 1,
+     "why": "It was published in 1912."
+    },
+    {
+     "q": "Which Prussian dramatist wrote 'The Broken Jug' and 'The Prince of Homburg'?",
+     "a": "Heinrich von Kleist",
+     "wrong": [
+      "Friedrich Schiller",
+      "Georg Büchner",
+      "Gotthold Lessing"
+     ],
+     "level": 1,
+     "why": "He died at Wannsee in 1811."
+    },
+    {
+     "q": "Which German author wrote 'Woyzeck', left unfinished at his death in 1837?",
+     "a": "Georg Büchner",
+     "wrong": [
+      "Heinrich von Kleist",
+      "Frank Wedekind",
+      "Christian Dietrich Grabbe"
+     ],
+     "level": 1,
+     "why": "He died at 23."
+    },
+    {
+     "q": "Which German baron's tall tales include riding a cannonball?",
+     "a": "Baron Münchhausen",
+     "wrong": [
+      "Baron Frankenstein",
+      "Baron von Richthofen",
+      "Baron Knigge"
+     ],
+     "level": 1,
+     "why": "He was a real person from Bodenwerder."
+    },
+    {
+     "q": "Which German Jewish writer kept a diary in Dresden through the Nazi years?",
+     "a": "Victor Klemperer",
+     "wrong": [
+      "Walter Benjamin",
+      "Stefan Zweig",
+      "Hannah Arendt"
+     ],
+     "level": 1,
+     "why": "He wrote 'LTI' about Nazi language."
+    },
+    {
+     "q": "Which German-Jewish philosopher wrote 'Eichmann in Jerusalem'?",
+     "a": "Hannah Arendt",
+     "wrong": [
+      "Walter Benjamin",
+      "Theodor Adorno",
+      "Edith Stein"
+     ],
+     "level": 1,
+     "why": "She coined 'the banality of evil'."
+    },
+    {
+     "q": "Which group of writers met after 1947 to revive German literature?",
+     "a": "Group 47",
+     "wrong": [
+      "Group 49",
+      "Gruppe Weimar",
+      "Neue Sachlichkeit"
+     ],
+     "level": 1,
+     "why": "Böll and Grass were members."
+    },
+    {
+     "q": "Which East German author wrote 'Cassandra' and 'Divided Heaven'?",
+     "a": "Christa Wolf",
+     "wrong": [
+      "Herta Müller",
+      "Anna Seghers",
+      "Brigitte Reimann"
+     ],
+     "level": 1,
+     "why": "She was one of East Germany's best-known writers."
+    },
+    {
+     "q": "Which German writer wrote 'The Seventh Cross' about escapees from a camp?",
+     "a": "Anna Seghers",
+     "wrong": [
+      "Christa Wolf",
+      "Irmgard Keun",
+      "Hans Fallada"
+     ],
+     "level": 1,
+     "why": "It was published in exile in 1942."
+    },
+    {
+     "q": "Which German author wrote 'Every Man Dies Alone' about a couple resisting the Nazis?",
+     "a": "Hans Fallada",
+     "wrong": [
+      "Erich Kästner",
+      "Anna Seghers",
+      "Alfred Döblin"
+     ],
+     "level": 1,
+     "why": "It is based on a true story."
+    },
+    {
+     "q": "Which German author wrote 'Berlin Alexanderplatz'?",
+     "a": "Alfred Döblin",
+     "wrong": [
+      "Hans Fallada",
+      "Erich Kästner",
+      "Kurt Tucholsky"
+     ],
+     "level": 1,
+     "why": "Fassbinder adapted it for TV."
+    },
+    {
+     "q": "Which British-based German writer wrote 'Austerlitz' and 'The Rings of Saturn'?",
+     "a": "W. G. Sebald",
+     "wrong": [
+      "Daniel Kehlmann",
+      "Uwe Johnson",
+      "Peter Handke"
+     ],
+     "level": 1,
+     "why": "He taught in Norwich."
+    },
+    {
+     "q": "Which German author's 'Kairos' won the 2024 International Booker Prize?",
+     "a": "Jenny Erpenbeck",
+     "wrong": [
+      "Juli Zeh",
+      "Herta Müller",
+      "Judith Hermann"
+     ],
+     "level": 1,
+     "why": "It is set in East Berlin in the 1980s."
+    },
+    {
+     "q": "Which German author wrote the dystopia 'Corpus Delicti' and the novel 'Unterleuten'?",
+     "a": "Juli Zeh",
+     "wrong": [
+      "Jenny Erpenbeck",
+      "Judith Hermann",
+      "Herta Müller"
+     ],
+     "level": 1,
+     "why": "She is also a constitutional judge in Brandenburg."
+    },
+    {
+     "q": "Which German author wrote 'The Tower' about Dresden in the last years of East Germany?",
+     "a": "Uwe Tellkamp",
+     "wrong": [
+      "Christa Wolf",
+      "Ingo Schulze",
+      "Eugen Ruge"
+     ],
+     "level": 1,
+     "why": "It won the 2008 German Book Prize."
+    },
+    {
+     "q": "Which German cartoonist created the 'Werner' comics?",
+     "a": "Brösel",
+     "wrong": [
+      "Ralf König",
+      "Walter Moers",
+      "Loriot"
+     ],
+     "level": 1,
+     "why": "Werner rides a motorbike in the north."
+    },
+    {
+     "q": "Which German author and cartoonist created 'Captain Bluebear'?",
+     "a": "Walter Moers",
+     "wrong": [
+      "Brösel",
+      "Ralf König",
+      "Janosch"
+     ],
+     "level": 1,
+     "why": "He also created the land of Zamonia."
+    },
+    {
+     "q": "Which German author and illustrator created the Tiger and Bear stories in 'Oh, How Beautiful Is Panama'?",
+     "a": "Janosch",
+     "wrong": [
+      "Walter Moers",
+      "Helme Heine",
+      "Paul Maar"
+     ],
+     "level": 1,
+     "why": "Tigerente is his striped duck toy."
+    },
+    {
+     "q": "Which German children's character with blue freckles was created by Paul Maar?",
+     "a": "Das Sams",
+     "wrong": [
+      "Pumuckl",
+      "Momo",
+      "Hotzenplotz"
+     ],
+     "level": 1,
+     "why": "It eats everything, even wood."
+    },
+    {
+     "q": "Which German children's book series is known in English as 'The Wild Soccer Bunch'?",
+     "a": "Die Wilden Kerle",
+     "wrong": [
+      "Die drei Fragezeichen",
+      "TKKG",
+      "Fünf Freunde"
+     ],
+     "level": 1,
+     "why": "Joachim Masannek wrote it."
+    },
+    {
+     "q": "Which German-language mystery series features the kids Tim, Karl, Klößchen and Gaby?",
+     "a": "TKKG",
+     "wrong": [
+      "Die drei Fragezeichen",
+      "Fünf Freunde",
+      "Die Wilden Kerle"
+     ],
+     "level": 1,
+     "why": "Its name comes from their initials."
+    },
+    {
+     "q": "Which literary movement of the 1770s did young Goethe and Schiller belong to?",
+     "a": "Sturm und Drang",
+     "wrong": [
+      "Romanticism",
+      "Biedermeier",
+      "Realism"
+     ],
+     "level": 2,
+     "why": "Its name means 'Storm and Stress'."
+    },
+    {
+     "q": "Which German author wrote 'Nathan the Wise', a plea for religious tolerance?",
+     "a": "Gotthold Ephraim Lessing",
+     "wrong": [
+      "Friedrich Schiller",
+      "Moses Mendelssohn",
+      "Heinrich von Kleist"
+     ],
+     "level": 2,
+     "why": "It was published in 1779."
+    },
+    {
+     "q": "Which German Romantic writer created the eerie 'The Sandman'?",
+     "a": "E. T. A. Hoffmann",
+     "wrong": [
+      "Ludwig Tieck",
+      "Novalis",
+      "Clemens Brentano"
+     ],
+     "level": 2,
+     "why": "He also wrote 'The Nutcracker and the Mouse King'."
+    },
+    {
+     "q": "Which German Romantic poet wrote 'Hymns to the Night'?",
+     "a": "Novalis",
+     "wrong": [
+      "Hölderlin",
+      "Eichendorff",
+      "Tieck"
+     ],
+     "level": 2,
+     "why": "His real name was Friedrich von Hardenberg."
+    },
+    {
+     "q": "Which German poet spent 36 years in a tower in Tübingen?",
+     "a": "Friedrich Hölderlin",
+     "wrong": [
+      "Novalis",
+      "Heinrich Heine",
+      "Eduard Mörike"
+     ],
+     "level": 2,
+     "why": "He suffered from mental illness."
+    },
+    {
+     "q": "Which German folk song collection was put together by Arnim and Brentano?",
+     "a": "Des Knaben Wunderhorn",
+     "wrong": [
+      "Kinder- und Hausmärchen",
+      "Deutsche Sagen",
+      "Volkslieder"
+     ],
+     "level": 2,
+     "why": "Mahler set many of its songs."
+    },
+    {
+     "q": "Which German author wrote 'Simplicius Simplicissimus' about the Thirty Years' War?",
+     "a": "Hans Jakob Christoffel von Grimmelshausen",
+     "wrong": [
+      "Andreas Gryphius",
+      "Martin Opitz",
+      "Hans Sachs"
+     ],
+     "level": 2,
+     "why": "It is a picaresque novel from 1668."
+    },
+    {
+     "q": "Which medieval German epic tells of Siegfried and Kriemhild?",
+     "a": "Nibelungenlied",
+     "wrong": [
+      "Parzival",
+      "Tristan",
+      "Kudrun"
+     ],
+     "level": 2,
+     "why": "It was written around 1200."
+    },
+    {
+     "q": "Which medieval German poet wrote 'Parzival'?",
+     "a": "Wolfram von Eschenbach",
+     "wrong": [
+      "Walther von der Vogelweide",
+      "Hartmann von Aue",
+      "Gottfried von Strassburg"
+     ],
+     "level": 2,
+     "why": "Wagner based 'Parsifal' on it."
+    },
+    {
+     "q": "Which medieval German poet wrote the love poem 'Under der linden'?",
+     "a": "Walther von der Vogelweide",
+     "wrong": [
+      "Wolfram von Eschenbach",
+      "Hartmann von Aue",
+      "Neidhart"
+     ],
+     "level": 2,
+     "why": "He was the greatest Minnesinger."
+    },
+    {
+     "q": "What were medieval German love poets called?",
+     "a": "Minnesänger",
+     "wrong": [
+      "Troubadours",
+      "Meistersinger",
+      "Skalds"
+     ],
+     "level": 2,
+     "why": "They sang about courtly love."
+    },
+    {
+     "q": "Which Goethe drama follows a scholar who makes a pact with Mephistopheles?",
+     "a": "Faust",
+     "wrong": [
+      "Egmont",
+      "Torquato Tasso",
+      "Götz von Berlichingen"
+     ],
+     "level": 2,
+     "why": "It has two parts."
+    },
+    {
+     "q": "Which Goethe novel of 1809 follows two couples whose attractions shift?",
+     "a": "Elective Affinities",
+     "wrong": [
+      "The Sorrows of Young Werther",
+      "Wilhelm Meister's Apprenticeship",
+      "Italian Journey"
+     ],
+     "level": 2,
+     "why": "Its title comes from a chemistry term."
+    },
+    {
+     "q": "Which Goethe book records his travels in 1786–88?",
+     "a": "Italian Journey",
+     "wrong": [
+      "Poetry and Truth",
+      "Wilhelm Meister",
+      "West–East Divan"
+     ],
+     "level": 2,
+     "why": "He went as far as Sicily."
+    },
+    {
+     "q": "Which German author wrote 'The Lost Honour of Katharina Blum'?",
+     "a": "Heinrich Böll",
+     "wrong": [
+      "Günter Grass",
+      "Siegfried Lenz",
+      "Martin Walser"
+     ],
+     "level": 2,
+     "why": "It attacks tabloid journalism."
+    },
+    {
+     "q": "Which Siegfried Lenz novel is set in a North German village under the Nazis?",
+     "a": "The German Lesson",
+     "wrong": [
+      "The Heritage",
+      "Homeland Museum",
+      "The Lighthouse Ship"
+     ],
+     "level": 2,
+     "why": "A boy writes an essay about duty."
+    },
+    {
+     "q": "Which German writer described his First World War front experiences in 'Storm of Steel'?",
+     "a": "Ernst Jünger",
+     "wrong": [
+      "Erich Maria Remarque",
+      "Ludwig Renn",
+      "Arnold Zweig"
+     ],
+     "level": 2,
+     "why": "He lived to 102."
+    },
+    {
+     "q": "Which East German author wrote 'Jakob the Liar' about a Jewish ghetto?",
+     "a": "Jurek Becker",
+     "wrong": [
+      "Stefan Heym",
+      "Christoph Hein",
+      "Volker Braun"
+     ],
+     "level": 2,
+     "why": "Robin Williams starred in a film version."
+    },
+    {
+     "q": "Which East German songwriter was expelled in 1976?",
+     "a": "Wolf Biermann",
+     "wrong": [
+      "Stefan Heym",
+      "Rainer Kunze",
+      "Jurek Becker"
+     ],
+     "level": 2,
+     "why": "He was stripped of citizenship while touring the West."
+    },
+    {
+     "q": "Which German author wrote 'Summerhouse, Later'?",
+     "a": "Judith Hermann",
+     "wrong": [
+      "Juli Zeh",
+      "Jenny Erpenbeck",
+      "Felicitas Hoppe"
+     ],
+     "level": 2,
+     "why": "It was her 1998 debut."
+    },
+    {
+     "q": "Which Eugen Ruge novel won the 2011 German Book Prize?",
+     "a": "In Times of Fading Light",
+     "wrong": [
+      "The Tower",
+      "Kairos",
+      "Adam and Evelyn"
+     ],
+     "level": 2,
+     "why": "It spans four generations."
+    },
+    {
+     "q": "Which German literary prize is announced at the Frankfurt Book Fair each year?",
+     "a": "German Book Prize",
+     "wrong": [
+      "Georg Büchner Prize",
+      "Kleist Prize",
+      "Leipzig Book Fair Prize"
+     ],
+     "level": 2,
+     "why": "It started in 2005."
+    },
+    {
+     "q": "Which German philosopher wrote 'Phenomenology of Spirit'?",
+     "a": "Georg Wilhelm Friedrich Hegel",
+     "wrong": [
+      "Immanuel Kant",
+      "Johann Gottlieb Fichte",
+      "Friedrich Schelling"
+     ],
+     "level": 2,
+     "why": "He taught in Berlin."
+    },
+    {
+     "q": "Which German philosopher wrote 'The World as Will and Representation'?",
+     "a": "Arthur Schopenhauer",
+     "wrong": [
+      "Friedrich Nietzsche",
+      "Hegel",
+      "Kant"
+     ],
+     "level": 2,
+     "why": "He was born in Danzig."
+    },
+    {
+     "q": "Which German philosopher wrote 'Being and Time'?",
+     "a": "Martin Heidegger",
+     "wrong": [
+      "Edmund Husserl",
+      "Karl Jaspers",
+      "Hans-Georg Gadamer"
+     ],
+     "level": 2,
+     "why": "It was published in 1927."
+    },
+    {
+     "q": "Which German sociologist wrote 'The Protestant Ethic and the Spirit of Capitalism'?",
+     "a": "Max Weber",
+     "wrong": [
+      "Georg Simmel",
+      "Ferdinand Tönnies",
+      "Niklas Luhmann"
+     ],
+     "level": 2,
+     "why": "It was published in 1905."
+    },
+    {
+     "q": "Which German philosopher from Frankfurt is known for 'communicative action'?",
+     "a": "Jürgen Habermas",
+     "wrong": [
+      "Theodor Adorno",
+      "Max Horkheimer",
+      "Axel Honneth"
+     ],
+     "level": 2,
+     "why": "He was part of the Frankfurt School."
+    },
+    {
+     "q": "Which group of thinkers included Adorno and Horkheimer?",
+     "a": "Frankfurt School",
+     "wrong": [
+      "Vienna Circle",
+      "Bauhaus",
+      "Group 47"
+     ],
+     "level": 2,
+     "why": "They developed critical theory."
+    },
+    {
+     "q": "Which German dictionary was started by the Brothers Grimm?",
+     "a": "Deutsches Wörterbuch",
+     "wrong": [
+      "Duden",
+      "Brockhaus",
+      "Meyers Lexikon"
+     ],
+     "level": 2,
+     "why": "It was finished in 1961."
+    },
+    {
+     "q": "Which German dictionary sets standard spelling?",
+     "a": "Duden",
+     "wrong": [
+      "Brockhaus",
+      "Langenscheidt",
+      "Wahrig"
+     ],
+     "level": 2,
+     "why": "Konrad Duden published it in 1880."
+    },
+    {
+     "q": "Which Swabian poet wrote 'Mozart on the Way to Prague'?",
+     "a": "Eduard Mörike",
+     "wrong": [
+      "Ludwig Uhland",
+      "Justinus Kerner",
+      "Wilhelm Hauff"
+     ],
+     "level": 3,
+     "why": "He was a pastor."
+    },
+    {
+     "q": "Which German author wrote fairy tales including 'Little Muck'?",
+     "a": "Wilhelm Hauff",
+     "wrong": [
+      "Ludwig Bechstein",
+      "Theodor Storm",
+      "Hans Christian Andersen"
+     ],
+     "level": 3,
+     "why": "He died aged 24."
+    },
+    {
+     "q": "Which German poet wrote 'Germany. A Winter's Tale'?",
+     "a": "Heinrich Heine",
+     "wrong": [
+      "Georg Herwegh",
+      "Ferdinand Freiligrath",
+      "Ludwig Börne"
+     ],
+     "level": 3,
+     "why": "It mocks Prussia."
+    },
+    {
+     "q": "Which German author wrote 'Professor Unrat', filmed as 'The Blue Angel'?",
+     "a": "Heinrich Mann",
+     "wrong": [
+      "Thomas Mann",
+      "Klaus Mann",
+      "Carl Zuckmayer"
+     ],
+     "level": 3,
+     "why": "He was Thomas Mann's older brother."
+    },
+    {
+     "q": "Which Klaus Mann novel about an actor under the Nazis was banned in West Germany?",
+     "a": "Mephisto",
+     "wrong": [
+      "The Volcano",
+      "Alexander",
+      "The Pious Dance"
+     ],
+     "level": 3,
+     "why": "The ban followed a court case in 1971."
     }
    ]
   },
