@@ -2514,6 +2514,996 @@
       "The Swiss Surprise"
      ],
      "why": "They beat the favourites, Hungary, 3–2."
+    },
+    {
+     "q": "In which years did West Germany or Germany win the men's FIFA World Cup?",
+     "a": "1954, 1974, 1990 and 2014",
+     "wrong": [
+      "1954, 1970, 1990 and 2014",
+      "1958, 1974, 1990 and 2014",
+      "1954, 1974, 1986 and 2010"
+     ],
+     "level": 1,
+     "why": "Only Brazil has won more."
+    },
+    {
+     "q": "Which country did West Germany beat in the 1954 World Cup final?",
+     "a": "Hungary",
+     "wrong": [
+      "Netherlands",
+      "Argentina",
+      "Brazil"
+     ],
+     "level": 1,
+     "why": "Hungary had beaten them 8–3 earlier in the tournament."
+    },
+    {
+     "q": "Which country did West Germany beat in the 1974 World Cup final in Munich?",
+     "a": "Netherlands",
+     "wrong": [
+      "Hungary",
+      "Argentina",
+      "Italy"
+     ],
+     "level": 1,
+     "why": "Gerd Müller scored the winner."
+    },
+    {
+     "q": "Which country did West Germany beat in the 1990 World Cup final?",
+     "a": "Argentina",
+     "wrong": [
+      "Netherlands",
+      "Italy",
+      "England"
+     ],
+     "level": 1,
+     "why": "Andreas Brehme scored a penalty."
+    },
+    {
+     "q": "Which country did Germany beat in the 2014 World Cup final?",
+     "a": "Argentina",
+     "wrong": [
+      "Brazil",
+      "Netherlands",
+      "France"
+     ],
+     "level": 1,
+     "why": "The final was in Rio de Janeiro."
+    },
+    {
+     "q": "Which country hosted the 2006 FIFA World Cup?",
+     "a": "Germany",
+     "wrong": [
+      "France",
+      "South Africa",
+      "Japan"
+     ],
+     "level": 1,
+     "why": "It was called the 'summer fairy tale'."
+    },
+    {
+     "q": "Which country hosted the UEFA Euro 2024 tournament?",
+     "a": "Germany",
+     "wrong": [
+      "France",
+      "England",
+      "Italy"
+     ],
+     "level": 1,
+     "why": "Spain won it."
+    },
+    {
+     "q": "How many times has Germany won the men's European Championship?",
+     "a": "3",
+     "wrong": [
+      "2",
+      "4",
+      "1"
+     ],
+     "level": 1,
+     "why": "They won in 1972, 1980 and 1996."
+    },
+    {
+     "q": "Which country did Germany's women beat in the 2007 World Cup final?",
+     "a": "Brazil",
+     "wrong": [
+      "USA",
+      "Norway",
+      "Sweden"
+     ],
+     "level": 1,
+     "why": "Germany did not concede a goal all tournament."
+    },
+    {
+     "q": "Which German player is second only to Marta among women's World Cup top scorers?",
+     "a": "Birgit Prinz",
+     "wrong": [
+      "Alexandra Popp",
+      "Inka Grings",
+      "Célia Šašić"
+     ],
+     "level": 1,
+     "why": "She scored 14 World Cup goals."
+    },
+    {
+     "q": "Which German was named FIFA World Player of the Year three times in a row, from 2003 to 2005?",
+     "a": "Birgit Prinz",
+     "wrong": [
+      "Alexandra Popp",
+      "Nadine Angerer",
+      "Steffi Jones"
+     ],
+     "level": 1,
+     "why": "She played for Frankfurt."
+    },
+    {
+     "q": "Which German goalkeeper won the 2014 Golden Glove and played for Bayern?",
+     "a": "Manuel Neuer",
+     "wrong": [
+      "Oliver Kahn",
+      "Marc-André ter Stegen",
+      "Jens Lehmann"
+     ],
+     "level": 1,
+     "why": "He is known as a 'sweeper-keeper'."
+    },
+    {
+     "q": "Which German goalkeeper was named the best player at the 2002 World Cup?",
+     "a": "Oliver Kahn",
+     "wrong": [
+      "Jens Lehmann",
+      "Manuel Neuer",
+      "Sepp Maier"
+     ],
+     "level": 1,
+     "why": "He was nicknamed 'the Titan'."
+    },
+    {
+     "q": "Which German midfielder captained the team that won the 2014 World Cup?",
+     "a": "Philipp Lahm",
+     "wrong": [
+      "Bastian Schweinsteiger",
+      "Toni Kroos",
+      "Thomas Müller"
+     ],
+     "level": 1,
+     "why": "He was a full-back for most of his career."
+    },
+    {
+     "q": "Which German midfielder won six Champions League titles, five with Real Madrid?",
+     "a": "Toni Kroos",
+     "wrong": [
+      "Bastian Schweinsteiger",
+      "Mesut Özil",
+      "Ilkay Gündoğan"
+     ],
+     "level": 1,
+     "why": "He retired after Euro 2024."
+    },
+    {
+     "q": "Which German forward has won over 30 trophies with Bayern Munich?",
+     "a": "Thomas Müller",
+     "wrong": [
+      "Robert Lewandowski",
+      "Mario Gómez",
+      "Leroy Sané"
+     ],
+     "level": 1,
+     "why": "He is famous for finding space, as a 'Raumdeuter'."
+    },
+    {
+     "q": "Which German captained West Germany to the 1990 World Cup?",
+     "a": "Lothar Matthäus",
+     "wrong": [
+      "Jürgen Klinsmann",
+      "Rudi Völler",
+      "Andreas Brehme"
+     ],
+     "level": 1,
+     "why": "He played in five World Cups."
+    },
+    {
+     "q": "Which German coach won the Champions League with Liverpool in 2019?",
+     "a": "Jürgen Klopp",
+     "wrong": [
+      "Thomas Tuchel",
+      "Joachim Löw",
+      "Hansi Flick"
+     ],
+     "level": 1,
+     "why": "He earlier won the Bundesliga with Dortmund."
+    },
+    {
+     "q": "Which German coach led Germany to the 2014 World Cup title?",
+     "a": "Joachim Löw",
+     "wrong": [
+      "Jürgen Klinsmann",
+      "Hansi Flick",
+      "Julian Nagelsmann"
+     ],
+     "level": 1,
+     "why": "He coached the team from 2006 to 2021."
+    },
+    {
+     "q": "Which coach led Bayern Munich to a sextuple of six trophies in 2020?",
+     "a": "Hansi Flick",
+     "wrong": [
+      "Jupp Heynckes",
+      "Julian Nagelsmann",
+      "Pep Guardiola"
+     ],
+     "level": 1,
+     "why": "He later coached Germany and Barcelona."
+    },
+    {
+     "q": "Which German coach won the Champions League with Chelsea in 2021?",
+     "a": "Thomas Tuchel",
+     "wrong": [
+      "Jürgen Klopp",
+      "Ralf Rangnick",
+      "Julian Nagelsmann"
+     ],
+     "level": 1,
+     "why": "He later coached England."
+    },
+    {
+     "q": "Which German club is from Gelsenkirchen and plays at the Veltins-Arena?",
+     "a": "Schalke 04",
+     "wrong": [
+      "Borussia Dortmund",
+      "VfL Bochum",
+      "MSV Duisburg"
+     ],
+     "level": 1,
+     "why": "It has a fierce rivalry with Dortmund."
+    },
+    {
+     "q": "What is the match between Dortmund and Schalke called?",
+     "a": "Revierderby",
+     "wrong": [
+      "Klassiker",
+      "Nordderby",
+      "Rheinderby"
+     ],
+     "level": 1,
+     "why": "It is the derby of the Ruhr area."
+    },
+    {
+     "q": "What is the match between Bayern Munich and Borussia Dortmund called?",
+     "a": "Der Klassiker",
+     "wrong": [
+      "Revierderby",
+      "Südderby",
+      "Topspiel"
+     ],
+     "level": 1,
+     "why": "It is Germany's biggest match."
+    },
+    {
+     "q": "Which Hamburg club with a skull-and-crossbones fan culture plays in St. Pauli?",
+     "a": "FC St. Pauli",
+     "wrong": [
+      "Hamburger SV",
+      "Altona 93",
+      "Holstein Kiel"
+     ],
+     "level": 1,
+     "why": "Its stadium is the Millerntor."
+    },
+    {
+     "q": "Which club won the Bundesliga undefeated in 2023–24?",
+     "a": "Bayer Leverkusen",
+     "wrong": [
+      "Bayern Munich",
+      "Borussia Dortmund",
+      "RB Leipzig"
+     ],
+     "level": 1,
+     "why": "Xabi Alonso coached them."
+    },
+    {
+     "q": "Which Bayern Munich stadium lights up in red, blue or white?",
+     "a": "Allianz Arena",
+     "wrong": [
+      "Olympiastadion",
+      "Signal Iduna Park",
+      "Veltins-Arena"
+     ],
+     "level": 1,
+     "why": "It opened in 2005."
+    },
+    {
+     "q": "Which Berlin stadium hosted the 2006 World Cup final?",
+     "a": "Olympiastadion",
+     "wrong": [
+      "Allianz Arena",
+      "Signal Iduna Park",
+      "Waldstadion"
+     ],
+     "level": 1,
+     "why": "It was built for the 1936 Olympics."
+    },
+    {
+     "q": "Which city hosted the 1936 Summer Olympics?",
+     "a": "Berlin",
+     "wrong": [
+      "Munich",
+      "Hamburg",
+      "Garmisch-Partenkirchen"
+     ],
+     "level": 1,
+     "why": "The Nazis used them as propaganda."
+    },
+    {
+     "q": "Which American athlete won four gold medals at the 1936 Berlin Olympics?",
+     "a": "Jesse Owens",
+     "wrong": [
+      "Carl Lewis",
+      "Ralph Metcalfe",
+      "Archie Williams"
+     ],
+     "level": 1,
+     "why": "A Berlin street is named after him."
+    },
+    {
+     "q": "Which German tennis player was world number one in women's tennis for a record 377 weeks?",
+     "a": "Steffi Graf",
+     "wrong": [
+      "Angelique Kerber",
+      "Andrea Petkovic",
+      "Anke Huber"
+     ],
+     "level": 1,
+     "why": "She won 22 Grand Slam singles titles."
+    },
+    {
+     "q": "Which German woman won the 2018 Wimbledon title?",
+     "a": "Angelique Kerber",
+     "wrong": [
+      "Steffi Graf",
+      "Andrea Petkovic",
+      "Julia Görges"
+     ],
+     "level": 1,
+     "why": "She also won the Australian and US Opens in 2016."
+    },
+    {
+     "q": "Which German tennis player won Olympic singles gold at Tokyo 2020?",
+     "a": "Alexander Zverev",
+     "wrong": [
+      "Dominic Thiem",
+      "Boris Becker",
+      "Jan-Lennard Struff"
+     ],
+     "level": 1,
+     "why": "He was born in Hamburg."
+    },
+    {
+     "q": "Which German F1 driver reached his first podium at Silverstone in 2025 after over 230 starts?",
+     "a": "Nico Hülkenberg",
+     "wrong": [
+      "Mick Schumacher",
+      "Timo Glock",
+      "Adrian Sutil"
+     ],
+     "level": 1,
+     "why": "He is from Emmerich."
+    },
+    {
+     "q": "Which famous German race track is nicknamed 'the Green Hell'?",
+     "a": "Nürburgring",
+     "wrong": [
+      "Hockenheimring",
+      "Sachsenring",
+      "Lausitzring"
+     ],
+     "level": 1,
+     "why": "Its Nordschleife is about 20.8 km long."
+    },
+    {
+     "q": "Which German race track near Heidelberg hosted many German Grands Prix?",
+     "a": "Hockenheimring",
+     "wrong": [
+      "Nürburgring",
+      "Sachsenring",
+      "Norisring"
+     ],
+     "level": 1,
+     "why": "It is in Baden-Württemberg."
+    },
+    {
+     "q": "Which German motor racing series features touring cars?",
+     "a": "DTM",
+     "wrong": [
+      "Formula E",
+      "WEC",
+      "NASCAR"
+     ],
+     "level": 1,
+     "why": "DTM stands for Deutsche Tourenwagen Masters."
+    },
+    {
+     "q": "Which German basketball player won the 2011 NBA title with Dallas?",
+     "a": "Dirk Nowitzki",
+     "wrong": [
+      "Dennis Schröder",
+      "Detlef Schrempf",
+      "Franz Wagner"
+     ],
+     "level": 1,
+     "why": "He was born in Würzburg."
+    },
+    {
+     "q": "Which country won the 2023 FIBA Basketball World Cup?",
+     "a": "Germany",
+     "wrong": [
+      "Serbia",
+      "USA",
+      "Spain"
+     ],
+     "level": 1,
+     "why": "Dennis Schröder was named MVP."
+    },
+    {
+     "q": "Which German athlete won the women's long jump at Tokyo 2020?",
+     "a": "Malaika Mihambo",
+     "wrong": [
+      "Heike Drechsler",
+      "Gina Lückenkemper",
+      "Sosthene Moguenara"
+     ],
+     "level": 1,
+     "why": "She was also world champion in 2019 and 2022."
+    },
+    {
+     "q": "Which East German athlete won two Olympic long jump golds?",
+     "a": "Heike Drechsler",
+     "wrong": [
+      "Malaika Mihambo",
+      "Katrin Krabbe",
+      "Marita Koch"
+     ],
+     "level": 1,
+     "why": "She won in 1992 and 2000."
+    },
+    {
+     "q": "Which East German runner still holds the 400 m world record from 1985?",
+     "a": "Marita Koch",
+     "wrong": [
+      "Heike Drechsler",
+      "Katrin Krabbe",
+      "Bärbel Wöckel"
+     ],
+     "level": 1,
+     "why": "She ran 47.60 seconds."
+    },
+    {
+     "q": "Which German won Olympic men's javelin gold in 2016?",
+     "a": "Thomas Röhler",
+     "wrong": [
+      "Johannes Vetter",
+      "Andreas Hofmann",
+      "Julian Weber"
+     ],
+     "level": 1,
+     "why": "He won in Rio de Janeiro."
+    },
+    {
+     "q": "Which German figure skater won Olympic gold in 1984 and 1988?",
+     "a": "Katarina Witt",
+     "wrong": [
+      "Tanja Szewczenko",
+      "Aljona Savchenko",
+      "Gaby Seyfert"
+     ],
+     "level": 1,
+     "why": "She skated for East Germany."
+    },
+    {
+     "q": "Which pair won Olympic figure skating gold for Germany in 2018?",
+     "a": "Aljona Savchenko and Bruno Massot",
+     "wrong": [
+      "Katarina Witt and Anett Pötzsch",
+      "Tanja Szewczenko and Ingo Steuer",
+      "Minerva Hase and Nikita Volodin"
+     ],
+     "level": 1,
+     "why": "They set a world-record free skate."
+    },
+    {
+     "q": "Which German winter sport sees athletes slide feet-first on a small sled?",
+     "a": "Luge",
+     "wrong": [
+      "Skeleton",
+      "Bobsleigh",
+      "Curling"
+     ],
+     "level": 1,
+     "why": "Germany dominates it."
+    },
+    {
+     "q": "Which German biathlete won two golds at Vancouver 2010 and retired aged 25?",
+     "a": "Magdalena Neuner",
+     "wrong": [
+      "Laura Dahlmeier",
+      "Kati Wilhelm",
+      "Uschi Disl"
+     ],
+     "level": 1,
+     "why": "She won 12 world titles."
+    },
+    {
+     "q": "Which German biathlete won two golds at the 2018 Olympics?",
+     "a": "Laura Dahlmeier",
+     "wrong": [
+      "Magdalena Neuner",
+      "Denise Herrmann",
+      "Franziska Preuss"
+     ],
+     "level": 1,
+     "why": "She died in a climbing accident in 2025."
+    },
+    {
+     "q": "Which German luger won three Olympic golds in a row, from 1992 to 1998?",
+     "a": "Georg Hackl",
+     "wrong": [
+      "Felix Loch",
+      "Armin Zöggeler",
+      "Johannes Ludwig"
+     ],
+     "level": 1,
+     "why": "He was nicknamed 'Hackl Schorsch'."
+    },
+    {
+     "q": "Which German luger won Olympic gold in 2010 and 2014?",
+     "a": "Felix Loch",
+     "wrong": [
+      "Georg Hackl",
+      "Johannes Ludwig",
+      "David Möller"
+     ],
+     "level": 1,
+     "why": "He is from Berchtesgaden."
+    },
+    {
+     "q": "Which German ski jumper first won all four events of the Four Hills Tournament, in 2002?",
+     "a": "Sven Hannawald",
+     "wrong": [
+      "Martin Schmitt",
+      "Jens Weißflog",
+      "Karl Geyer"
+     ],
+     "level": 1,
+     "why": "Nobody had done it before."
+    },
+    {
+     "q": "Which German sprinter won the Tour de France green jersey six years in a row, from 1996 to 2001?",
+     "a": "Erik Zabel",
+     "wrong": [
+      "Jan Ullrich",
+      "Marcel Kittel",
+      "André Greipel"
+     ],
+     "level": 1,
+     "why": "He rode for Team Telekom."
+    },
+    {
+     "q": "Which German swimmer won the 50 m and 100 m freestyle at Beijing 2008?",
+     "a": "Britta Steffen",
+     "wrong": [
+      "Franziska van Almsick",
+      "Kristin Otto",
+      "Paul Biedermann"
+     ],
+     "level": 1,
+     "why": "She set world records in both in 2009."
+    },
+    {
+     "q": "Which East German swimmer won six golds at the 1988 Olympics?",
+     "a": "Kristin Otto",
+     "wrong": [
+      "Britta Steffen",
+      "Franziska van Almsick",
+      "Petra Schneider"
+     ],
+     "level": 1,
+     "why": "It was a record for a woman at one Games."
+    },
+    {
+     "q": "Which German boxer beat Joe Louis in 1936?",
+     "a": "Max Schmeling",
+     "wrong": [
+      "Henry Maske",
+      "Wladimir Klitschko",
+      "Axel Schulz"
+     ],
+     "level": 1,
+     "why": "Louis won the rematch in 1938."
+    },
+    {
+     "q": "Which German boxer won world light-heavyweight titles in the 1990s?",
+     "a": "Henry Maske",
+     "wrong": [
+      "Max Schmeling",
+      "Dariusz Michalczewski",
+      "Axel Schulz"
+     ],
+     "level": 1,
+     "why": "He was nicknamed 'the Gentleman'."
+    },
+    {
+     "q": "Which country won the 2007 men's handball World Championship at home?",
+     "a": "Germany",
+     "wrong": [
+      "France",
+      "Denmark",
+      "Spain"
+     ],
+     "level": 1,
+     "why": "The final was in Cologne."
+    },
+    {
+     "q": "Which country's young handball team won Euro 2016 and was called the 'Bad Boys'?",
+     "a": "Germany",
+     "wrong": [
+      "Denmark",
+      "France",
+      "Spain"
+     ],
+     "level": 1,
+     "why": "Dagur Sigurðsson coached them."
+    },
+    {
+     "q": "Which German golfer won the Masters in 1985 and 1993?",
+     "a": "Bernhard Langer",
+     "wrong": [
+      "Martin Kaymer",
+      "Alex Čejka",
+      "Marcel Siem"
+     ],
+     "level": 1,
+     "why": "He has won many senior titles."
+    },
+    {
+     "q": "Which German golfer won the 2010 PGA Championship and 2014 US Open?",
+     "a": "Martin Kaymer",
+     "wrong": [
+      "Bernhard Langer",
+      "Alex Čejka",
+      "Stephan Jäger"
+     ],
+     "level": 1,
+     "why": "He was once world number one."
+    },
+    {
+     "q": "Which Kiel festival is the largest sailing event in the world?",
+     "a": "Kiel Week",
+     "wrong": [
+      "Hamburg Harbour Birthday",
+      "Travemünde Week",
+      "Warnemünde Week"
+     ],
+     "level": 1,
+     "why": "It is held in June."
+    },
+    {
+     "q": "Which annual Berlin road race has seen many marathon world records?",
+     "a": "Berlin Marathon",
+     "wrong": [
+      "Hamburg Marathon",
+      "Frankfurt Marathon",
+      "Cologne Marathon"
+     ],
+     "level": 1,
+     "why": "Its course is very flat."
+    },
+    {
+     "q": "Which annual ski jumping event begins in Oberstdorf and ends in Bischofshofen?",
+     "a": "Four Hills Tournament",
+     "wrong": [
+      "Holmenkollen",
+      "Raw Air",
+      "Planica Week"
+     ],
+     "level": 1,
+     "why": "It runs over New Year."
+    },
+    {
+     "q": "Who scored the winning goal in the 1954 World Cup final?",
+     "a": "Helmut Rahn",
+     "wrong": [
+      "Max Morlock",
+      "Fritz Walter",
+      "Ottmar Walter"
+     ],
+     "level": 2,
+     "why": "The radio call 'Rahn schießt! Tor!' is famous."
+    },
+    {
+     "q": "Who captained West Germany in the 1954 World Cup?",
+     "a": "Fritz Walter",
+     "wrong": [
+      "Helmut Rahn",
+      "Max Morlock",
+      "Horst Eckel"
+     ],
+     "level": 2,
+     "why": "Kaiserslautern's stadium is named after him."
+    },
+    {
+     "q": "Which coach led West Germany to the 1954 World Cup?",
+     "a": "Sepp Herberger",
+     "wrong": [
+      "Helmut Schön",
+      "Franz Beckenbauer",
+      "Berti Vogts"
+     ],
+     "level": 2,
+     "why": "He said 'the ball is round'."
+    },
+    {
+     "q": "Which coach led West Germany to the 1974 World Cup?",
+     "a": "Helmut Schön",
+     "wrong": [
+      "Sepp Herberger",
+      "Jupp Derwall",
+      "Franz Beckenbauer"
+     ],
+     "level": 2,
+     "why": "He also won Euro 1972."
+    },
+    {
+     "q": "Which German scored the 'golden goal' in the Euro 1996 final?",
+     "a": "Oliver Bierhoff",
+     "wrong": [
+      "Jürgen Klinsmann",
+      "Matthias Sammer",
+      "Thomas Häßler"
+     ],
+     "level": 2,
+     "why": "It was the first golden goal in a major final."
+    },
+    {
+     "q": "Which German won the Ballon d'Or in 1996?",
+     "a": "Matthias Sammer",
+     "wrong": [
+      "Jürgen Klinsmann",
+      "Lothar Matthäus",
+      "Oliver Bierhoff"
+     ],
+     "level": 2,
+     "why": "He came from East Germany."
+    },
+    {
+     "q": "Which German players won the Ballon d'Or twice in the 1970s and 1980s?",
+     "a": "Franz Beckenbauer and Karl-Heinz Rummenigge",
+     "wrong": [
+      "Gerd Müller and Paul Breitner",
+      "Lothar Matthäus and Jürgen Klinsmann",
+      "Sepp Maier and Uli Hoeneß"
+     ],
+     "level": 2,
+     "why": "Gerd Müller won it once, in 1970."
+    },
+    {
+     "q": "Which German club from Hamburg won the 1983 European Cup?",
+     "a": "Hamburger SV",
+     "wrong": [
+      "FC St. Pauli",
+      "Werder Bremen",
+      "VfB Stuttgart"
+     ],
+     "level": 2,
+     "why": "It beat Juventus in Athens."
+    },
+    {
+     "q": "Which Bundesliga club won the Champions League in 1997?",
+     "a": "Borussia Dortmund",
+     "wrong": [
+      "Bayern Munich",
+      "Bayer Leverkusen",
+      "Schalke 04"
+     ],
+     "level": 2,
+     "why": "It beat Juventus in Munich."
+    },
+    {
+     "q": "How many times has Bayern Munich won the European Cup or Champions League?",
+     "a": "6",
+     "wrong": [
+      "5",
+      "7",
+      "4"
+     ],
+     "level": 2,
+     "why": "Its last win was in 2020."
+    },
+    {
+     "q": "Which German club won the Bundesliga in 1998 just after promotion?",
+     "a": "1. FC Kaiserslautern",
+     "wrong": [
+      "VfL Wolfsburg",
+      "Werder Bremen",
+      "Hertha BSC"
+     ],
+     "level": 2,
+     "why": "Otto Rehhagel coached them."
+    },
+    {
+     "q": "Which German coach won Euro 2004 with Greece?",
+     "a": "Otto Rehhagel",
+     "wrong": [
+      "Berti Vogts",
+      "Jupp Heynckes",
+      "Felix Magath"
+     ],
+     "level": 2,
+     "why": "Greece had never won a major match before."
+    },
+    {
+     "q": "Which striker holds the Bundesliga record of 365 goals?",
+     "a": "Gerd Müller",
+     "wrong": [
+      "Robert Lewandowski",
+      "Klaus Fischer",
+      "Jupp Heynckes"
+     ],
+     "level": 2,
+     "why": "He played for Bayern from 1964 to 1979."
+    },
+    {
+     "q": "Which Polish striker scored 41 Bundesliga goals in 2020–21 for Bayern?",
+     "a": "Robert Lewandowski",
+     "wrong": [
+      "Harry Kane",
+      "Erling Haaland",
+      "Pierre-Emerick Aubameyang"
+     ],
+     "level": 2,
+     "why": "He broke Gerd Müller's record of 40."
+    },
+    {
+     "q": "Which English striker joined Bayern Munich in 2023?",
+     "a": "Harry Kane",
+     "wrong": [
+      "Jadon Sancho",
+      "Raheem Sterling",
+      "Jude Bellingham"
+     ],
+     "level": 2,
+     "why": "He scored 36 league goals in his first season."
+    },
+    {
+     "q": "Which English midfielder played for Dortmund before joining Real Madrid in 2023?",
+     "a": "Jude Bellingham",
+     "wrong": [
+      "Jadon Sancho",
+      "Harry Kane",
+      "Phil Foden"
+     ],
+     "level": 2,
+     "why": "He joined Dortmund aged 17."
+    },
+    {
+     "q": "Which German dressage rider has won the most Olympic medals in equestrian sport?",
+     "a": "Isabell Werth",
+     "wrong": [
+      "Ingrid Klimke",
+      "Michael Jung",
+      "Ludger Beerbaum"
+     ],
+     "level": 2,
+     "why": "She has won 14 Olympic medals."
+    },
+    {
+     "q": "Which German eventing rider won individual Olympic gold in 2012, 2016 and 2024?",
+     "a": "Michael Jung",
+     "wrong": [
+      "Ingrid Klimke",
+      "Isabell Werth",
+      "Christian Ahlmann"
+     ],
+     "level": 2,
+     "why": "No one else has won it three times."
+    },
+    {
+     "q": "Which German canoeist won eight Olympic golds?",
+     "a": "Birgit Fischer",
+     "wrong": [
+      "Katrin Wagner",
+      "Fanny Fischer",
+      "Andreas Dittmer"
+     ],
+     "level": 2,
+     "why": "She won from 1980 to 2004."
+    },
+    {
+     "q": "Which German speed skater won five Olympic golds and nine medals from 1992 to 2006?",
+     "a": "Claudia Pechstein",
+     "wrong": [
+      "Anni Friesinger",
+      "Gunda Niemann",
+      "Monique Garbrecht"
+     ],
+     "level": 2,
+     "why": "She raced at eight Olympics."
+    },
+    {
+     "q": "Which German bobsleigh pilot won the two-man and four-man golds at both 2018 and 2022?",
+     "a": "Francesco Friedrich",
+     "wrong": [
+      "André Lange",
+      "Johannes Lochner",
+      "Kevin Kuske"
+     ],
+     "level": 2,
+     "why": "He has won many world titles."
+    },
+    {
+     "q": "Which German bobsleigh pilot won four Olympic golds between 2002 and 2010?",
+     "a": "André Lange",
+     "wrong": [
+      "Francesco Friedrich",
+      "Kevin Kuske",
+      "Sandra Kiriasis"
+     ],
+     "level": 2,
+     "why": "He won in both two-man and four-man."
+    },
+    {
+     "q": "Which club won the first Bundesliga title, in 1963–64?",
+     "a": "1. FC Köln",
+     "wrong": [
+      "1860 Munich",
+      "Hamburger SV",
+      "Borussia Dortmund"
+     ],
+     "level": 3,
+     "why": "The Bundesliga began in 1963."
+    },
+    {
+     "q": "Which country beat West Germany in the 1966 World Cup final?",
+     "a": "England",
+     "wrong": [
+      "Italy",
+      "Netherlands",
+      "Argentina"
+     ],
+     "level": 3,
+     "why": "Geoff Hurst scored a hat-trick."
+    },
+    {
+     "q": "Which match in 1970 between West Germany and Italy is called the 'Game of the Century'?",
+     "a": "1970 World Cup semi-final",
+     "wrong": [
+      "1974 World Cup final",
+      "1982 World Cup final",
+      "1966 World Cup final"
+     ],
+     "level": 3,
+     "why": "Italy won 4–3 after extra time."
+    },
+    {
+     "q": "Which team beat West Germany 1–0 at the 1974 World Cup, which the West went on to win?",
+     "a": "East Germany",
+     "wrong": [
+      "Hungary",
+      "Poland",
+      "Netherlands"
+     ],
+     "level": 3,
+     "why": "Jürgen Sparwasser scored the only goal."
+    },
+    {
+     "q": "Which German Formula One driver won the 2016 world title?",
+     "a": "Nico Rosberg",
+     "wrong": [
+      "Sebastian Vettel",
+      "Michael Schumacher",
+      "Nico Hülkenberg"
+     ],
+     "level": 1,
+     "why": "He retired days after winning."
     }
    ]
   },
