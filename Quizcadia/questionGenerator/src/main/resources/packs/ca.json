@@ -3229,6 +3229,193 @@
      ],
      "level": 2,
      "why": "Connor McDavid scored the overtime winner."
+    },
+    {
+     "q": "Which Canadian NHL team lost Stanley Cup finals in 1982, 1994 and 2011?",
+     "a": "Vancouver Canucks",
+     "wrong": [
+      "Ottawa Senators",
+      "Calgary Flames",
+      "Edmonton Oilers"
+     ],
+     "level": 1,
+     "why": "Riots followed the 1994 and 2011 losses."
+    },
+    {
+     "q": "Which Alberta team won the 1989 Stanley Cup?",
+     "a": "Calgary Flames",
+     "wrong": [
+      "Edmonton Oilers",
+      "Winnipeg Jets",
+      "Vancouver Canucks"
+     ],
+     "level": 1,
+     "why": "They beat the Montreal Canadiens."
+    },
+    {
+     "q": "Which NHL team moved from Quebec City to Denver in 1995?",
+     "a": "Quebec Nordiques",
+     "wrong": [
+      "Hartford Whalers",
+      "Winnipeg Jets",
+      "Atlanta Flames"
+     ],
+     "level": 1,
+     "why": "They became the Colorado Avalanche."
+    },
+    {
+     "q": "Which Toronto team won the 2017 MLS Cup?",
+     "a": "Toronto FC",
+     "wrong": [
+      "CF Montréal",
+      "Vancouver Whitecaps",
+      "Ottawa Fury"
+     ],
+     "level": 1,
+     "why": "It was the first Canadian MLS champion."
+    },
+    {
+     "q": "Which Canadian city hosted the 2015 Pan American Games?",
+     "a": "Toronto",
+     "wrong": [
+      "Winnipeg",
+      "Montreal",
+      "Vancouver"
+     ],
+     "level": 1,
+     "why": "Winnipeg hosted in 1967 and 1999."
+    },
+    {
+     "q": "Which Ontario city hosted the first British Empire Games in 1930?",
+     "a": "Hamilton",
+     "wrong": [
+      "Toronto",
+      "Ottawa",
+      "London"
+     ],
+     "level": 1,
+     "why": "They are now called the Commonwealth Games."
+    },
+    {
+     "q": "Which 16-year-old became the first person to swim across Lake Ontario, in 1954?",
+     "a": "Marilyn Bell",
+     "wrong": [
+      "Vicki Keith",
+      "Cindy Nicholas",
+      "Annaleise Carr"
+     ],
+     "level": 1,
+     "why": "She swam about 52 km."
+    },
+    {
+     "q": "Which Canadian-bred horse won the 1964 Kentucky Derby?",
+     "a": "Northern Dancer",
+     "wrong": [
+      "Secretariat",
+      "Big Brown",
+      "Sunny's Halo"
+     ],
+     "level": 1,
+     "why": "He became a famous sire."
+    },
+    {
+     "q": "Which Canadian horse race, run since 1860, is the oldest continuously run race in North America?",
+     "a": "King's Plate",
+     "wrong": [
+      "Canadian International",
+      "Breeders' Stakes",
+      "Prince of Wales Stakes"
+     ],
+     "level": 1,
+     "why": "It was the Queen's Plate until 2023."
+    },
+    {
+     "q": "Which Canadian rower won Olympic bronze in 1992 weeks after a badly broken leg?",
+     "a": "Silken Laumann",
+     "wrong": [
+      "Marnie McBean",
+      "Kathleen Heddle",
+      "Jennifer Walinga"
+     ],
+     "level": 1,
+     "why": "She raced in Barcelona."
+    },
+    {
+     "q": "Which Canadian tennis player reached the 2021 US Open final as a teenager?",
+     "a": "Leylah Fernandez",
+     "wrong": [
+      "Bianca Andreescu",
+      "Eugenie Bouchard",
+      "Victoria Mboko"
+     ],
+     "level": 1,
+     "why": "She is from Montreal."
+    },
+    {
+     "q": "Which Canadian figure skater won world titles in 1994, 1995 and 1997?",
+     "a": "Elvis Stojko",
+     "wrong": [
+      "Kurt Browning",
+      "Brian Orser",
+      "Patrick Chan"
+     ],
+     "level": 2,
+     "why": "He also won two Olympic silvers."
+    },
+    {
+     "q": "Which Canadian figure skater won three straight world titles from 2011 to 2013?",
+     "a": "Patrick Chan",
+     "wrong": [
+      "Elvis Stojko",
+      "Kurt Browning",
+      "Jeffrey Buttle"
+     ],
+     "level": 2,
+     "why": "He won team gold in 2018."
+    },
+    {
+     "q": "Which Canadian high jumper won Olympic gold in 2016?",
+     "a": "Derek Drouin",
+     "wrong": [
+      "Mike Mason",
+      "Django Lovett",
+      "Michael Mason"
+     ],
+     "level": 2,
+     "why": "He is from Corunna, Ontario."
+    },
+    {
+     "q": "Which Ottawa NHL team reached the Stanley Cup final in 2007?",
+     "a": "Ottawa Senators",
+     "wrong": [
+      "Ottawa 67's",
+      "Ottawa Redblacks",
+      "Ottawa Charge"
+     ],
+     "level": 2,
+     "why": "They lost to Anaheim."
+    },
+    {
+     "q": "Which Canadian won Olympic golf gold in 1904?",
+     "a": "George Lyon",
+     "wrong": [
+      "Mike Weir",
+      "Sandy Somerville",
+      "Al Balding"
+     ],
+     "level": 3,
+     "why": "Golf did not return to the Olympics until 2016."
+    },
+    {
+     "q": "Which Canadian city hosted the 1978 Commonwealth Games?",
+     "a": "Edmonton",
+     "wrong": [
+      "Calgary",
+      "Victoria",
+      "Hamilton"
+     ],
+     "level": 3,
+     "why": "Victoria hosted in 1994."
     }
    ]
   },
@@ -5298,6 +5485,281 @@
      ],
      "level": 3,
      "why": "It was shot in black and white."
+    },
+    {
+     "q": "Which Canadian TV cartoon follows a curious four-year-old boy?",
+     "a": "Caillou",
+     "wrong": [
+      "Arthur",
+      "Franklin",
+      "Max and Ruby"
+     ],
+     "level": 1,
+     "why": "It was made in Montreal."
+    },
+    {
+     "q": "Which Canadian cartoon turtle is based on books by Paulette Bourgeois?",
+     "a": "Franklin",
+     "wrong": [
+      "Caillou",
+      "Babar",
+      "Little Bear"
+     ],
+     "level": 1,
+     "why": "It first aired in 1997."
+    },
+    {
+     "q": "Which Canadian children's show featured the puppets Casey and Finnegan?",
+     "a": "Mr. Dressup",
+     "wrong": [
+      "The Friendly Giant",
+      "Sesame Park",
+      "Polka Dot Door"
+     ],
+     "level": 1,
+     "why": "It ran from 1967 to 1996."
+    },
+    {
+     "q": "Which Canadian children's TV show had a costumed character called Polkaroo?",
+     "a": "Polka Dot Door",
+     "wrong": [
+      "Mr. Dressup",
+      "Today's Special",
+      "Fraggle Rock"
+     ],
+     "level": 1,
+     "why": "It aired on TVOntario."
+    },
+    {
+     "q": "Which Jim Henson puppet series was filmed in Toronto in the 1980s?",
+     "a": "Fraggle Rock",
+     "wrong": [
+      "The Muppet Show",
+      "Sesame Street",
+      "Dinosaurs"
+     ],
+     "level": 1,
+     "why": "It was a Canadian co-production."
+    },
+    {
+     "q": "Which Canadian cartoon about teens competing at a summer camp began in 2007?",
+     "a": "Total Drama Island",
+     "wrong": [
+      "6teen",
+      "Camp Lazlo",
+      "Stoked"
+     ],
+     "level": 1,
+     "why": "It was made in Toronto."
+    },
+    {
+     "q": "Which Canadian cartoon follows six teens working at a shopping mall?",
+     "a": "6teen",
+     "wrong": [
+      "Degrassi",
+      "Instant Star",
+      "Life with Derek"
+     ],
+     "level": 1,
+     "why": "It aired from 2004 to 2010."
+    },
+    {
+     "q": "Which Canadian drama about Anne Shirley was made with Netflix?",
+     "a": "Anne with an E",
+     "wrong": [
+      "Road to Avonlea",
+      "Heartland",
+      "Wind at My Back"
+     ],
+     "level": 1,
+     "why": "It ran from 2017 to 2019."
+    },
+    {
+     "q": "Which 1990s Canadian TV series set on PEI was based on L. M. Montgomery's stories?",
+     "a": "Road to Avonlea",
+     "wrong": [
+      "Anne with an E",
+      "Emily of New Moon",
+      "Heartland"
+     ],
+     "level": 1,
+     "why": "Sarah Polley starred in it."
+    },
+    {
+     "q": "Which Toronto rapper first acted as Jimmy Brooks in 'Degrassi'?",
+     "a": "Drake",
+     "wrong": [
+      "The Weeknd",
+      "Shawn Mendes",
+      "Tory Lanez"
+     ],
+     "level": 1,
+     "why": "His character used a wheelchair."
+    },
+    {
+     "q": "Which Canadian sitcom about a Muslim community is set in a Saskatchewan town?",
+     "a": "Little Mosque on the Prairie",
+     "wrong": [
+      "Corner Gas",
+      "Kim's Convenience",
+      "Letterkenny"
+     ],
+     "level": 1,
+     "why": "It ran on CBC from 2007 to 2012."
+    },
+    {
+     "q": "Which Edmonton-born actor played Marty McFly in 'Back to the Future'?",
+     "a": "Michael J. Fox",
+     "wrong": [
+      "Jim Carrey",
+      "Ryan Reynolds",
+      "Keanu Reeves"
+     ],
+     "level": 1,
+     "why": "He later founded a Parkinson's research charity."
+    },
+    {
+     "q": "Which Yellowknife-born actress played Lois Lane in the 1978 'Superman'?",
+     "a": "Margot Kidder",
+     "wrong": [
+      "Rachel McAdams",
+      "Evangeline Lilly",
+      "Kristin Kreuk"
+     ],
+     "level": 1,
+     "why": "She acted alongside Christopher Reeve."
+    },
+    {
+     "q": "Which 'Friends' actor grew up in Ottawa?",
+     "a": "Matthew Perry",
+     "wrong": [
+      "Matt LeBlanc",
+      "David Schwimmer",
+      "Jason Priestley"
+     ],
+     "level": 1,
+     "why": "He played Chandler Bing."
+    },
+    {
+     "q": "Which Canadian director made 'Juno' in 2007?",
+     "a": "Jason Reitman",
+     "wrong": [
+      "Ivan Reitman",
+      "Paul Haggis",
+      "Jean-Marc Vallée"
+     ],
+     "level": 2,
+     "why": "He is Ivan Reitman's son."
+    },
+    {
+     "q": "Which Canadian wrote and directed 'Crash', the 2006 Best Picture winner?",
+     "a": "Paul Haggis",
+     "wrong": [
+      "Jason Reitman",
+      "Norman Jewison",
+      "David Cronenberg"
+     ],
+     "level": 2,
+     "why": "He was born in London, Ontario."
+    },
+    {
+     "q": "Which Canadian animator made 'The Man Who Planted Trees'?",
+     "a": "Frédéric Back",
+     "wrong": [
+      "Norman McLaren",
+      "Richard Williams",
+      "Caroline Leaf"
+     ],
+     "level": 2,
+     "why": "It won the 1988 Oscar for animated short."
+    },
+    {
+     "q": "Which Canadian directed 'The Sweet Hereafter' in 1997?",
+     "a": "Atom Egoyan",
+     "wrong": [
+      "David Cronenberg",
+      "Denys Arcand",
+      "Bruce McDonald"
+     ],
+     "level": 2,
+     "why": "It was nominated for two Oscars."
+    },
+    {
+     "q": "Which Canadian directed the horror films 'The Brood' and 'Scanners'?",
+     "a": "David Cronenberg",
+     "wrong": [
+      "Atom Egoyan",
+      "Vincenzo Natali",
+      "Bob Clark"
+     ],
+     "level": 2,
+     "why": "He is known for body horror."
+    },
+    {
+     "q": "Which 1997 Canadian sci-fi film traps strangers in a maze of deadly rooms?",
+     "a": "Cube",
+     "wrong": [
+      "The Fly",
+      "Splice",
+      "Videodrome"
+     ],
+     "level": 2,
+     "why": "Vincenzo Natali directed it."
+    },
+    {
+     "q": "In which Canadian city did Guillermo del Toro film 'The Shape of Water'?",
+     "a": "Toronto",
+     "wrong": [
+      "Vancouver",
+      "Montreal",
+      "Calgary"
+     ],
+     "level": 2,
+     "why": "It won Best Picture in 2018."
+    },
+    {
+     "q": "Which Quebec director made 'C.R.A.Z.Y.' in 2005?",
+     "a": "Jean-Marc Vallée",
+     "wrong": [
+      "Xavier Dolan",
+      "Denis Villeneuve",
+      "Philippe Falardeau"
+     ],
+     "level": 2,
+     "why": "It follows a boy growing up in 1960s and 70s Quebec."
+    },
+    {
+     "q": "Which Quebec film about a teacher from Algeria was Oscar-nominated in 2012?",
+     "a": "Monsieur Lazhar",
+     "wrong": [
+      "Incendies",
+      "War Witch",
+      "Mommy"
+     ],
+     "level": 2,
+     "why": "Philippe Falardeau directed it."
+    },
+    {
+     "q": "Which 2014 Xavier Dolan film shared the Jury Prize at Cannes?",
+     "a": "Mommy",
+     "wrong": [
+      "Laurence Anyways",
+      "I Killed My Mother",
+      "It's Only the End of the World"
+     ],
+     "level": 2,
+     "why": "It uses a square frame."
+    },
+    {
+     "q": "Which Quebec director made 'The Decline of the American Empire' in 1986?",
+     "a": "Denys Arcand",
+     "wrong": [
+      "Claude Jutra",
+      "Gilles Carle",
+      "Michel Brault"
+     ],
+     "level": 2,
+     "why": "It was nominated for an Oscar."
     }
    ]
   },
@@ -6074,6 +6536,380 @@
      ],
      "level": 3,
      "why": "She later won for 'The Handmaid's Tale'."
+    },
+    {
+     "q": "Which Rohinton Mistry novel is set in India during the 1975 Emergency?",
+     "a": "A Fine Balance",
+     "wrong": [
+      "Such a Long Journey",
+      "Family Matters",
+      "The God of Small Things"
+     ],
+     "level": 1,
+     "why": "It won the 1995 Giller Prize."
+    },
+    {
+     "q": "Which Joy Kogawa novel is about Japanese Canadian internment?",
+     "a": "Obasan",
+     "wrong": [
+      "Itsuka",
+      "The Jade Peony",
+      "No-No Boy"
+     ],
+     "level": 1,
+     "why": "It was published in 1981."
+    },
+    {
+     "q": "Which Wayson Choy novel is set in Vancouver's Chinatown?",
+     "a": "The Jade Peony",
+     "wrong": [
+      "Obasan",
+      "Disappearing Moon Cafe",
+      "All That Matters"
+     ],
+     "level": 1,
+     "why": "It shared the 1995 Trillium Book Award."
+    },
+    {
+     "q": "Which Margaret Atwood novel tells the story of convicted murderer Grace Marks?",
+     "a": "Alias Grace",
+     "wrong": [
+      "The Blind Assassin",
+      "Cat's Eye",
+      "The Robber Bride"
+     ],
+     "level": 1,
+     "why": "It became a Netflix series in 2017."
+    },
+    {
+     "q": "Which Margaret Atwood novel won the 2000 Booker Prize?",
+     "a": "The Blind Assassin",
+     "wrong": [
+      "Alias Grace",
+      "The Testaments",
+      "Oryx and Crake"
+     ],
+     "level": 1,
+     "why": "She won again in 2019."
+    },
+    {
+     "q": "Which Farley Mowat book is about his pet owls Wol and Weeps?",
+     "a": "Owls in the Family",
+     "wrong": [
+      "Never Cry Wolf",
+      "Lost in the Barrens",
+      "The Dog Who Wouldn't Be"
+     ],
+     "level": 1,
+     "why": "It is set in Saskatoon."
+    },
+    {
+     "q": "Which Mordecai Richler children's book has a boy who says everything twice?",
+     "a": "Jacob Two-Two Meets the Hooded Fang",
+     "wrong": [
+      "Duddy Kravitz",
+      "The Paper Bag Princess",
+      "Mortimer"
+     ],
+     "level": 1,
+     "why": "It was published in 1975."
+    },
+    {
+     "q": "Which Robert Munsch picture book has a mother singing to her son as he grows up?",
+     "a": "Love You Forever",
+     "wrong": [
+      "The Paper Bag Princess",
+      "Mortimer",
+      "Thomas' Snowsuit"
+     ],
+     "level": 1,
+     "why": "It has sold over 30 million copies."
+    },
+    {
+     "q": "Which L. M. Montgomery heroine lives at New Moon Farm?",
+     "a": "Emily Starr",
+     "wrong": [
+      "Anne Shirley",
+      "Pat Gardiner",
+      "Jane Stuart"
+     ],
+     "level": 1,
+     "why": "Her books are the 'Emily' trilogy."
+    },
+    {
+     "q": "Which annual CBC show pits books against each other in debates?",
+     "a": "Canada Reads",
+     "wrong": [
+      "Book Wars",
+      "The Great Canadian Read",
+      "Giller Light"
+     ],
+     "level": 1,
+     "why": "One book is voted off each day."
+    },
+    {
+     "q": "Which Brampton-raised poet wrote 'milk and honey'?",
+     "a": "Rupi Kaur",
+     "wrong": [
+      "Gwendolyn MacEwen",
+      "Dionne Brand",
+      "Rupi Gill"
+     ],
+     "level": 1,
+     "why": "She first shared poems on Instagram."
+    },
+    {
+     "q": "Which Timothy Findley novel follows a young officer in the First World War?",
+     "a": "The Wars",
+     "wrong": [
+      "Three Day Road",
+      "Fifth Business",
+      "Barometer Rising"
+     ],
+     "level": 2,
+     "why": "It won the 1977 Governor General's Award."
+    },
+    {
+     "q": "Which Anne Michaels novel follows a boy saved from the Holocaust?",
+     "a": "Fugitive Pieces",
+     "wrong": [
+      "The Winter Vault",
+      "The English Patient",
+      "Obasan"
+     ],
+     "level": 2,
+     "why": "It won the Orange Prize in 1997."
+    },
+    {
+     "q": "Which Ann-Marie MacDonald novel is set in Cape Breton?",
+     "a": "Fall on Your Knees",
+     "wrong": [
+      "No Great Mischief",
+      "Away",
+      "The Bird Artist"
+     ],
+     "level": 2,
+     "why": "It was an Oprah book club pick."
+    },
+    {
+     "q": "Which Alistair MacLeod novel follows a Cape Breton Gaelic family?",
+     "a": "No Great Mischief",
+     "wrong": [
+      "Fall on Your Knees",
+      "Island",
+      "Barometer Rising"
+     ],
+     "level": 2,
+     "why": "It won the 2001 IMPAC Dublin Award."
+    },
+    {
+     "q": "Which Montreal-born writer published over 100 stories in The New Yorker?",
+     "a": "Mavis Gallant",
+     "wrong": [
+      "Alice Munro",
+      "Mordecai Richler",
+      "Margaret Laurence"
+     ],
+     "level": 2,
+     "why": "She lived in Paris for decades."
+    },
+    {
+     "q": "Which Barbados-born Toronto author won the 2002 Giller Prize for 'The Polished Hoe'?",
+     "a": "Austin Clarke",
+     "wrong": [
+      "Dionne Brand",
+      "M. G. Vassanji",
+      "Lawrence Hill"
+     ],
+     "level": 2,
+     "why": "It is set in Barbados."
+    },
+    {
+     "q": "Which Michael Ondaatje novel is about workers building Toronto in the 1920s and 30s?",
+     "a": "In the Skin of a Lion",
+     "wrong": [
+      "The English Patient",
+      "Anil's Ghost",
+      "Divisadero"
+     ],
+     "level": 2,
+     "why": "Characters from it reappear in 'The English Patient'."
+    },
+    {
+     "q": "Which Jane Urquhart novel follows an Irish family through several generations?",
+     "a": "Away",
+     "wrong": [
+      "The Stone Carvers",
+      "The Underpainter",
+      "Changing Heaven"
+     ],
+     "level": 2,
+     "why": "It moves from Ireland to Ontario."
+    },
+    {
+     "q": "Which Rawi Hage novel about Beirut won the 2008 IMPAC Dublin Award?",
+     "a": "De Niro's Game",
+     "wrong": [
+      "Cockroach",
+      "Carnival",
+      "Beirut Hellfire Society"
+     ],
+     "level": 2,
+     "why": "It is set during Lebanon's civil war."
+    },
+    {
+     "q": "Which Wayne Johnston novel is about Joey Smallwood?",
+     "a": "The Colony of Unrequited Dreams",
+     "wrong": [
+      "The Navigator of New York",
+      "Baltimore's Mansion",
+      "The Divine Ryans"
+     ],
+     "level": 2,
+     "why": "It is set in Newfoundland."
+    },
+    {
+     "q": "Which Tomson Highway novel follows two Cree brothers at residential school?",
+     "a": "Kiss of the Fur Queen",
+     "wrong": [
+      "Indian Horse",
+      "Three Day Road",
+      "Monkey Beach"
+     ],
+     "level": 2,
+     "why": "Highway is from northern Manitoba."
+    },
+    {
+     "q": "Which Jeff Lemire graphic novel is set in rural southwestern Ontario?",
+     "a": "Essex County",
+     "wrong": [
+      "Sweet Tooth",
+      "Underwater Welder",
+      "Roughneck"
+     ],
+     "level": 2,
+     "why": "It was made into a CBC series."
+    },
+    {
+     "q": "Which graphic novel by cousins Mariko and Jillian Tamaki won a Caldecott Honor?",
+     "a": "This One Summer",
+     "wrong": [
+      "Skim",
+      "Essex County",
+      "Laura Dean Keeps Breaking Up with Me"
+     ],
+     "level": 2,
+     "why": "It is set at a lake cottage."
+    },
+    {
+     "q": "Which Métis author wrote the memoir 'From the Ashes' about homelessness?",
+     "a": "Jesse Thistle",
+     "wrong": [
+      "Cherie Dimaline",
+      "Gregory Scofield",
+      "Maria Campbell"
+     ],
+     "level": 2,
+     "why": "It won Canada Reads in 2020."
+    },
+    {
+     "q": "Which Quebec author wrote 'Kamouraska' about a 19th-century murder?",
+     "a": "Anne Hébert",
+     "wrong": [
+      "Gabrielle Roy",
+      "Marie-Claire Blais",
+      "Antonine Maillet"
+     ],
+     "level": 2,
+     "why": "It became a 1973 film."
+    },
+    {
+     "q": "Which Quebec author wrote 'A Season in the Life of Emmanuel'?",
+     "a": "Marie-Claire Blais",
+     "wrong": [
+      "Anne Hébert",
+      "Gabrielle Roy",
+      "Réjean Ducharme"
+     ],
+     "level": 2,
+     "why": "It won the Prix Médicis in 1966."
+    },
+    {
+     "q": "Which Margaret Atwood book from 1972 is a guide to Canadian literature?",
+     "a": "Survival",
+     "wrong": [
+      "Second Words",
+      "Negotiating with the Dead",
+      "Strange Things"
+     ],
+     "level": 3,
+     "why": "It argues survival is CanLit's main theme."
+    },
+    {
+     "q": "Which Canadian naturalist wrote 'Wild Animals I Have Known' in 1898?",
+     "a": "Ernest Thompson Seton",
+     "wrong": [
+      "Charles G. D. Roberts",
+      "Grey Owl",
+      "Farley Mowat"
+     ],
+     "level": 3,
+     "why": "He helped found the Boy Scouts of America."
+    },
+    {
+     "q": "Which Nova Scotia writer created the Yankee peddler Sam Slick?",
+     "a": "Thomas Chandler Haliburton",
+     "wrong": [
+      "Joseph Howe",
+      "Thomas McCulloch",
+      "Stephen Leacock"
+     ],
+     "level": 3,
+     "why": "The stories appeared in 'The Clockmaker'."
+    },
+    {
+     "q": "Which 1852 book by Susanna Moodie describes pioneer life in Upper Canada?",
+     "a": "Roughing It in the Bush",
+     "wrong": [
+      "The Backwoods of Canada",
+      "Wacousta",
+      "The History of Emily Montague"
+     ],
+     "level": 3,
+     "why": "Her sister also wrote about pioneer life."
+    },
+    {
+     "q": "Which Catharine Parr Traill book describes settling in the Ontario woods in the 1830s?",
+     "a": "The Backwoods of Canada",
+     "wrong": [
+      "Roughing It in the Bush",
+      "Wacousta",
+      "The Canadian Settler's Guide"
+     ],
+     "level": 3,
+     "why": "She was Susanna Moodie's sister."
+    },
+    {
+     "q": "Which Canadian wrote 'By Grand Central Station I Sat Down and Wept'?",
+     "a": "Elizabeth Smart",
+     "wrong": [
+      "Mavis Gallant",
+      "Ethel Wilson",
+      "Sheila Watson"
+     ],
+     "level": 3,
+     "why": "It is a prose poem about a love affair."
+    },
+    {
+     "q": "Which David Adams Richards novel shared the 2000 Giller Prize?",
+     "a": "Mercy Among the Children",
+     "wrong": [
+      "Nights Below Station Street",
+      "River of the Brokenhearted",
+      "The Friends of Meager Fortune"
+     ],
+     "level": 3,
+     "why": "It is set in New Brunswick's Miramichi."
     }
    ]
   },
@@ -9150,6 +9986,270 @@
      ],
      "level": 3,
      "why": "It is a UNESCO site."
+    },
+    {
+     "q": "Which large deer's males bugle loudly in autumn in Banff and Jasper?",
+     "a": "Elk (wapiti)",
+     "wrong": [
+      "Moose",
+      "Caribou",
+      "White-tailed deer"
+     ],
+     "level": 1,
+     "why": "Wapiti is a Shawnee word."
+    },
+    {
+     "q": "Which white-furred animal climbs steep cliffs in the Canadian Rockies?",
+     "a": "Mountain goat",
+     "wrong": [
+      "Bighorn sheep",
+      "Dall sheep",
+      "Arctic hare"
+     ],
+     "level": 1,
+     "why": "It is not a true goat."
+    },
+    {
+     "q": "Which wild sheep with heavy curled horns is often seen near Banff?",
+     "a": "Bighorn sheep",
+     "wrong": [
+      "Dall sheep",
+      "Mountain goat",
+      "Stone sheep"
+     ],
+     "level": 1,
+     "why": "It is Alberta's provincial mammal."
+    },
+    {
+     "q": "Which Arctic whale in Canadian waters can live over 200 years?",
+     "a": "Bowhead whale",
+     "wrong": [
+      "Beluga whale",
+      "Narwhal",
+      "Grey whale"
+     ],
+     "level": 1,
+     "why": "It has the thickest blubber of any animal."
+    },
+    {
+     "q": "Which giant whale, the largest animal ever, feeds in the Gulf of St. Lawrence?",
+     "a": "Blue whale",
+     "wrong": [
+      "Fin whale",
+      "Humpback whale",
+      "Sperm whale"
+     ],
+     "level": 1,
+     "why": "It can be 30 m long."
+    },
+    {
+     "q": "Which tusked sea mammal lives in Canada's Arctic?",
+     "a": "Walrus",
+     "wrong": [
+      "Elephant seal",
+      "Narwhal",
+      "Sea lion"
+     ],
+     "level": 1,
+     "why": "Both males and females have tusks."
+    },
+    {
+     "q": "Which seal is the polar bear's main prey in Canada's Arctic?",
+     "a": "Ringed seal",
+     "wrong": [
+      "Harp seal",
+      "Grey seal",
+      "Hooded seal"
+     ],
+     "level": 1,
+     "why": "It keeps breathing holes open in the ice."
+    },
+    {
+     "q": "Which is the largest kind of Pacific salmon in BC?",
+     "a": "Chinook salmon",
+     "wrong": [
+      "Sockeye salmon",
+      "Coho salmon",
+      "Pink salmon"
+     ],
+     "level": 1,
+     "why": "It is also called king salmon."
+    },
+    {
+     "q": "Which salmon swims up New Brunswick's Miramichi River?",
+     "a": "Atlantic salmon",
+     "wrong": [
+      "Chinook salmon",
+      "Sockeye salmon",
+      "Arctic char"
+     ],
+     "level": 1,
+     "why": "The river is famous for fly fishing."
+    },
+    {
+     "q": "What do many Manitobans call the walleye?",
+     "a": "Pickerel",
+     "wrong": [
+      "Perch",
+      "Pike",
+      "Whitefish"
+     ],
+     "level": 1,
+     "why": "It is popular from Lake Winnipeg."
+    },
+    {
+     "q": "Which is the only hummingbird that nests in eastern Canada?",
+     "a": "Ruby-throated hummingbird",
+     "wrong": [
+      "Rufous hummingbird",
+      "Anna's hummingbird",
+      "Calliope hummingbird"
+     ],
+     "level": 1,
+     "why": "It flies across the Gulf of Mexico."
+    },
+    {
+     "q": "Which orange and black butterfly flies from Canada to Mexico each autumn?",
+     "a": "Monarch",
+     "wrong": [
+      "Painted lady",
+      "Swallowtail",
+      "Red admiral"
+     ],
+     "level": 1,
+     "why": "Its caterpillars eat milkweed."
+    },
+    {
+     "q": "Which Lake Erie point is Canada's southernmost mainland and a migration hotspot?",
+     "a": "Point Pelee",
+     "wrong": [
+      "Long Point",
+      "Rondeau",
+      "Turkey Point"
+     ],
+     "level": 1,
+     "why": "Monarchs gather there each autumn."
+    },
+    {
+     "q": "Which green-headed duck is the most common duck in Canada?",
+     "a": "Mallard",
+     "wrong": [
+      "Wood duck",
+      "Pintail",
+      "Canvasback"
+     ],
+     "level": 1,
+     "why": "Only the males have green heads."
+    },
+    {
+     "q": "Which black bird with red shoulder patches is an early sign of spring in Canada?",
+     "a": "Red-winged blackbird",
+     "wrong": [
+      "Common grackle",
+      "Scarlet tanager",
+      "Northern cardinal"
+     ],
+     "level": 1,
+     "why": "Males sing from cattails."
+    },
+    {
+     "q": "Which Canadian songbird's call sounds like 'O sweet Canada, Canada, Canada'?",
+     "a": "White-throated sparrow",
+     "wrong": [
+      "Song sparrow",
+      "Chickadee",
+      "Canada warbler"
+     ],
+     "level": 1,
+     "why": "It nests in northern forests."
+    },
+    {
+     "q": "Which playful weasel relative slides down riverbanks in Canada?",
+     "a": "River otter",
+     "wrong": [
+      "Mink",
+      "Marten",
+      "Fisher"
+     ],
+     "level": 1,
+     "why": "It can hold its breath for minutes."
+    },
+    {
+     "q": "What is the stoat called in its white winter coat?",
+     "a": "Ermine",
+     "wrong": [
+      "Mink",
+      "Marten",
+      "Sable"
+     ],
+     "level": 2,
+     "why": "The tip of its tail stays black."
+    },
+    {
+     "q": "Which seabird that bred on Newfoundland's Funk Island went extinct in 1844?",
+     "a": "Great auk",
+     "wrong": [
+      "Dodo",
+      "Labrador duck",
+      "Eskimo curlew"
+     ],
+     "level": 2,
+     "why": "It could not fly."
+    },
+    {
+     "q": "Which bird that once flew in flocks of billions over Canada went extinct in 1914?",
+     "a": "Passenger pigeon",
+     "wrong": [
+      "Carolina parakeet",
+      "Great auk",
+      "Heath hen"
+     ],
+     "level": 2,
+     "why": "The last one, Martha, died in a zoo."
+    },
+    {
+     "q": "Which is Ontario's only lizard?",
+     "a": "Five-lined skink",
+     "wrong": [
+      "Fence lizard",
+      "Alligator lizard",
+      "Horned lizard"
+     ],
+     "level": 2,
+     "why": "Young ones have bright blue tails."
+    },
+    {
+     "q": "Which Canadian bat has been devastated by white-nose syndrome?",
+     "a": "Little brown bat",
+     "wrong": [
+      "Hoary bat",
+      "Big brown bat",
+      "Silver-haired bat"
+     ],
+     "level": 2,
+     "why": "It is now listed as endangered."
+    },
+    {
+     "q": "Which beetle has killed huge areas of BC's pine forests?",
+     "a": "Mountain pine beetle",
+     "wrong": [
+      "Emerald ash borer",
+      "Spruce budworm",
+      "Asian longhorned beetle"
+     ],
+     "level": 2,
+     "why": "Mild winters let it spread."
+    },
+    {
+     "q": "Which caribou herd of Quebec and Labrador once numbered about 800,000?",
+     "a": "George River herd",
+     "wrong": [
+      "Porcupine herd",
+      "Bathurst herd",
+      "Leaf River herd"
+     ],
+     "level": 3,
+     "why": "It has fallen by over 95%."
     }
    ]
   },
@@ -10091,6 +11191,182 @@
      ],
      "level": 3,
      "why": "He was from Orkney."
+    },
+    {
+     "q": "How many points does the maple leaf on Canada's flag have?",
+     "a": "11",
+     "wrong": [
+      "9",
+      "13",
+      "7"
+     ],
+     "level": 1,
+     "why": "It was simplified to show well in wind."
+    },
+    {
+     "q": "Which motto appears on Quebec licence plates?",
+     "a": "Je me souviens",
+     "wrong": [
+      "Vive le Québec",
+      "Ad mari usque ad mare",
+      "Toujours fidèle"
+     ],
+     "level": 1,
+     "why": "It means 'I remember'."
+    },
+    {
+     "q": "Which measurement system did Canada adopt in the 1970s?",
+     "a": "Metric system",
+     "wrong": [
+      "Imperial system",
+      "US customary",
+      "Nautical system"
+     ],
+     "level": 1,
+     "why": "Road signs switched to km/h in 1977."
+    },
+    {
+     "q": "What do Canadians call boxed macaroni and cheese?",
+     "a": "KD (Kraft Dinner)",
+     "wrong": [
+      "Mac Box",
+      "Cheesies",
+      "Noodle Kit"
+     ],
+     "level": 1,
+     "why": "Canadians eat more of it than anyone."
+    },
+    {
+     "q": "Which potato chip flavour is a Canadian favourite rarely found elsewhere?",
+     "a": "Ketchup",
+     "wrong": [
+      "Pickle",
+      "Maple",
+      "Poutine"
+     ],
+     "level": 1,
+     "why": "Many brands sell it."
+    },
+    {
+     "q": "Which ginger ale brand was created by Toronto chemist John McLaughlin?",
+     "a": "Canada Dry",
+     "wrong": [
+      "Schweppes",
+      "Seagram's",
+      "Vernors"
+     ],
+     "level": 1,
+     "why": "He perfected the recipe in 1907."
+    },
+    {
+     "q": "Which giant-screen film format was developed in Canada?",
+     "a": "IMAX",
+     "wrong": [
+      "Cinerama",
+      "VistaVision",
+      "Dolby Cinema"
+     ],
+     "level": 1,
+     "why": "It was first shown at Expo 70 in Japan."
+    },
+    {
+     "q": "Which Alberta mall was the world's largest when it opened?",
+     "a": "West Edmonton Mall",
+     "wrong": [
+      "CF Toronto Eaton Centre",
+      "Metrotown",
+      "Square One"
+     ],
+     "level": 1,
+     "why": "It has a water park and an ice rink."
+    },
+    {
+     "q": "Which tree became Canada's national arboreal emblem in 1996?",
+     "a": "Maple",
+     "wrong": [
+      "Pine",
+      "Birch",
+      "Oak"
+     ],
+     "level": 1,
+     "why": "There are ten native kinds in Canada."
+    },
+    {
+     "q": "Which Quebec inventor built the first snowblower in 1925?",
+     "a": "Arthur Sicard",
+     "wrong": [
+      "Joseph-Armand Bombardier",
+      "Elijah McCoy",
+      "Thomas Ahearn"
+     ],
+     "level": 2,
+     "why": "Montreal bought one of his first machines."
+    },
+    {
+     "q": "Which Canadian is credited with inventing the walkie-talkie?",
+     "a": "Donald Hings",
+     "wrong": [
+      "Reginald Fessenden",
+      "Ted Rogers",
+      "Alexander Graham Bell"
+     ],
+     "level": 2,
+     "why": "It was used in the Second World War."
+    },
+    {
+     "q": "Which Canadian invented the green plastic garbage bag?",
+     "a": "Harry Wasylyk",
+     "wrong": [
+      "Arthur Sicard",
+      "Olivia Poole",
+      "Wallace Turnbull"
+     ],
+     "level": 2,
+     "why": "He was from Winnipeg."
+    },
+    {
+     "q": "Which Canadian mother invented the Jolly Jumper baby seat?",
+     "a": "Olivia Poole",
+     "wrong": [
+      "Roberta Bondar",
+      "Thérèse Casgrain",
+      "Emily Stowe"
+     ],
+     "level": 2,
+     "why": "She was Ojibwe, from White Earth in Minnesota."
+    },
+    {
+     "q": "Which inventor from New Brunswick created the variable-pitch propeller?",
+     "a": "Wallace Turnbull",
+     "wrong": [
+      "Elijah McCoy",
+      "Casey Baldwin",
+      "J. A. D. McCurdy"
+     ],
+     "level": 2,
+     "why": "He tested it in 1927."
+    },
+    {
+     "q": "Which Canadian pilot made the first powered flight in the British Empire, in 1909?",
+     "a": "J. A. D. McCurdy",
+     "wrong": [
+      "Wallace Turnbull",
+      "Billy Bishop",
+      "Casey Baldwin"
+     ],
+     "level": 2,
+     "why": "He flew the Silver Dart at Baddeck, Nova Scotia."
+    },
+    {
+     "q": "Which aircraft made the first powered flight in Canada, in 1909?",
+     "a": "Silver Dart",
+     "wrong": [
+      "Avro Arrow",
+      "Spirit of St. Louis",
+      "Beaver"
+     ],
+     "level": 2,
+     "why": "It flew over a frozen lake in Nova Scotia."
     }
    ]
   }
