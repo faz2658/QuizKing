@@ -168,6 +168,25 @@ describe('Maintenance with maintenanceInterceptor', () => {
     expect(backend.expectOne((r) => r.method === 'HEAD').request.url).toBe('/api/v1/a');
   });
 
+  it('repeats a write that carries an Idempotency-Key once the servers are back, with the same key', () => {
+    http.get('/api/v1/a').subscribe({ error: () => undefined });
+    backend.expectOne('/api/v1/a').flush(null, DOWN);
+    const next = vi.fn();
+    const error = vi.fn();
+    http.post('/api/v1/sessions/1/answers', { option: 'B' }, { headers: { 'Idempotency-Key': 'answer-key-1' } })
+      .subscribe({ next, error });
+    backend.expectOne('/api/v1/sessions/1/answers').flush(null, DOWN);
+    expect(maintenance.active()).toBe(true);
+    expect(error).not.toHaveBeenCalled();
+
+    maintenance.tryNow();
+    backend.expectOne((r) => r.method === 'HEAD').flush(null);
+    const retry = backend.expectOne((r) => r.url === '/api/v1/sessions/1/answers');
+    expect(retry.request.headers.get('Idempotency-Key')).toBe('answer-key-1');
+    retry.flush({ correct: true });
+    expect(next).toHaveBeenCalledWith({ correct: true });
+  });
+
   it('passes a service\'s own 503 and non-API calls straight through', () => {
     const error = vi.fn();
     for (let i = 0; i < 3; i++) {

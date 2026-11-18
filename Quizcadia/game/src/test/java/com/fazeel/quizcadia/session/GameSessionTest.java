@@ -87,6 +87,33 @@ class GameSessionTest {
 	}
 
 	@Test
+	void sendingTheSameAnswerAgainReturnsItsOutcomeWithoutCountingItTwice() {
+		GameSession s = session(sq(1, Difficulty.EASY, "A", 10, 10), sq(2, Difficulty.EASY, "B", 10, 10));
+
+		AnswerOutcome first = s.answer(1, "A", T0.plusSeconds(2));
+		AnswerOutcome retry = s.answer(1, "A", T0.plusSeconds(4)); // the first reply was lost on the way
+
+		assertThat(retry).isEqualTo(first);
+		assertThat(s.getScore()).isEqualTo(10);
+		assertThat(s.currentQuestion()).get().extracting(SessionQuestion::getQuestionId).isEqualTo(2);
+
+		AnswerOutcome last = s.answer(2, "B", T0.plusSeconds(6));
+		assertThat(s.getStatus()).isEqualTo(SessionStatus.COMPLETED);
+		assertThat(s.answer(2, "B", T0.plusSeconds(7))).isEqualTo(last); // also once the game is over
+		assertThat(s.getScore()).isEqualTo(20);
+	}
+
+	@Test
+	void aDifferentAnswerToAQuestionAlreadyAnsweredIsStillRefused() {
+		GameSession s = session(sq(1, Difficulty.EASY, "A", 10, 10), sq(2, Difficulty.EASY, "B", 10, 10));
+		s.answer(1, "wrong", T0.plusSeconds(2));
+
+		assertThatThrownBy(() -> s.answer(1, "A", T0.plusSeconds(3))).isInstanceOf(QuizRuleException.class)
+				.hasMessageContaining("not the current question");
+		assertThat(s.getScore()).isZero();
+	}
+
+	@Test
 	void walkingAwayExpiresEveryRemainingQuestionAndEndsTheGame() {
 		GameSession s = session(sq(1, Difficulty.EASY, "A", 10, 10), sq(2, Difficulty.EASY, "B", 10, 10));
 
@@ -101,7 +128,8 @@ class GameSessionTest {
 		GameSession s = session(sq(1, Difficulty.EASY, "A", 10, 10), sq(2, Difficulty.EASY, "B", 10, 10));
 		s.answer(1, "A", T0.plusSeconds(1));
 
-		assertThatThrownBy(() -> s.answer(1, "A", T0.plusSeconds(2))).isInstanceOf(QuizRuleException.class);
+		// (the same answer again is a retry and gets its outcome back, see sendingTheSameAnswerAgain...)
+		assertThatThrownBy(() -> s.answer(1, "C", T0.plusSeconds(2))).isInstanceOf(QuizRuleException.class);
 		assertThat(s.getScore()).isEqualTo(10);
 	}
 
@@ -110,7 +138,7 @@ class GameSessionTest {
 		GameSession s = session(sq(1, Difficulty.EASY, "A", 10, 10));
 		s.answer(1, "A", T0.plusSeconds(1));
 
-		assertThatThrownBy(() -> s.answer(1, "A", T0.plusSeconds(2))).isInstanceOf(QuizRuleException.class)
+		assertThatThrownBy(() -> s.answer(1, "C", T0.plusSeconds(2))).isInstanceOf(QuizRuleException.class)
 				.hasMessageContaining("over");
 	}
 

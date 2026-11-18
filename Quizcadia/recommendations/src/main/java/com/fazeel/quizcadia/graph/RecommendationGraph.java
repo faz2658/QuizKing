@@ -46,14 +46,20 @@ public class RecommendationGraph {
 				.bindAll(Map.of("userId", userId, "name", nz(name))).run();
 	}
 
-	public void recordPlay(int userId, int gameId, Instant at) {
+	/**
+	 * Counts one finished game. {@code playId} names that game (its session or match): Kafka may deliver the same
+	 * result twice, and the second delivery must not count it again. The last few ids are kept on the PLAYED
+	 * relationship, which is plenty, since a repeat arrives right after the original.
+	 */
+	public void recordPlay(int userId, int gameId, String playId, Instant at) {
 		neo4j.query("""
 				MERGE (u:User {userId: $userId})
 				MERGE (g:Game {gameId: $gameId})
 				MERGE (u)-[p:PLAYED]->(g)
-				ON CREATE SET p.count = 1, p.lastPlayedAt = $at
-				ON MATCH SET p.count = p.count + 1, p.lastPlayedAt = $at
-				""").bindAll(Map.of("userId", userId, "gameId", gameId, "at", at.toString())).run();
+				WITH p WHERE NOT $playId IN coalesce(p.playIds, [])
+				SET p.count = coalesce(p.count, 0) + 1, p.lastPlayedAt = $at,
+				    p.playIds = (coalesce(p.playIds, []) + $playId)[-20..]
+				""").bindAll(Map.of("userId", userId, "gameId", gameId, "playId", playId, "at", at.toString())).run();
 	}
 
 	public void setFavoriteCategories(int userId, Collection<Integer> categoryIds) {

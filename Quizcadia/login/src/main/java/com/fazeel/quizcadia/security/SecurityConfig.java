@@ -110,7 +110,7 @@ public class SecurityConfig {
 		CorsConfiguration cors = new CorsConfiguration();
 		cors.setAllowedOrigins(origins);
 		cors.setAllowedMethods(List.of("GET", "POST"));
-		cors.setAllowedHeaders(List.of("Authorization", "Content-Type"));
+		cors.setAllowedHeaders(List.of("Authorization", "Content-Type", "Idempotency-Key"));
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		source.registerCorsConfiguration("/api/**", cors);
 		return source;

@@ -49,18 +49,23 @@ public class GraphListeners {
 
 	@KafkaListener(topics = "${quizcadia.topics.single-player-result}", properties = TYPE + "SinglePlayerResult")
 	public void single(SinglePlayerResult r) {
-		graph.recordPlay(r.userId(), r.gameId(), Instant.now());
+		graph.recordPlay(r.userId(), r.gameId(), playId("single", r.sessionId()), Instant.now());
 	}
 
 	@KafkaListener(topics = "${quizcadia.topics.adaptive-result}", properties = TYPE + "AdaptiveResult")
 	public void adaptive(AdaptiveResult r) {
-		graph.recordPlay(r.userId(), r.gameId(), Instant.now());
+		graph.recordPlay(r.userId(), r.gameId(), playId("adaptive", r.sessionId()), Instant.now());
 	}
 
 	@KafkaListener(topics = "${quizcadia.topics.multiplayer-result}", properties = TYPE + "MultiPlayerResult")
 	public void multi(MultiPlayerResult r) {
 		if (r.standings() != null) {
-			r.standings().forEach(s -> graph.recordPlay(s.userId(), r.gameId(), Instant.now()));
+			r.standings().forEach(s -> graph.recordPlay(s.userId(), r.gameId(), playId("multi", r.matchId()), Instant.now()));
 		}
+	}
+
+	/** Names one finished game, so a repeated delivery is counted once. Without an id (an old message): always new. */
+	static String playId(String mode, String id) {
+		return id == null || id.isBlank() ? mode + ":" + java.util.UUID.randomUUID() : mode + ":" + id;
 	}
 }

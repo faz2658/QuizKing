@@ -3,6 +3,7 @@ import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/
 import { provideRouter, withComponentInputBinding, withNavigationErrorHandler } from '@angular/router';
 import { routes } from './app.routes';
 import { authInterceptor } from './core/auth.interceptor';
+import { idempotencyInterceptor } from './core/idempotency.interceptor';
 import { maintenanceInterceptor } from './core/maintenance.interceptor';
 import { isMissingChunk, reloadIntoNewVersion } from './core/stale-version';
 
@@ -19,6 +20,7 @@ export const appConfig: ApplicationConfig = {
         }
       }),
     ),
-    provideHttpClient(withInterceptors([authInterceptor, maintenanceInterceptor])),
+    // order matters: the key is added first, so every retry further along (renewed token, servers back) carries it
+    provideHttpClient(withInterceptors([idempotencyInterceptor, authInterceptor, maintenanceInterceptor])),
   ],
 };
