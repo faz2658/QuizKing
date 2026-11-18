@@ -10,6 +10,7 @@ import { TopicStats } from '../core/models';
 import { emailValidator, fieldError, nameValidator, NAME_MAX, PASSWORD_MAX, passwordValidator } from '../core/validation';
 import { BlurText } from '../motion/blur-text';
 import { CountUp } from '../motion/count-up';
+import { NeuralBg } from '../motion/neural-bg';
 import { Tilt } from '../motion/tilt';
 import { GoogleButton } from '../ui/google-button';
 
@@ -17,9 +18,10 @@ type Tab = 'login' | 'register' | 'guest';
 
 @Component({
   selector: 'mv-welcome',
-  imports: [ReactiveFormsModule, RouterLink, BlurText, CountUp, Tilt, GoogleButton],
+  imports: [ReactiveFormsModule, RouterLink, BlurText, CountUp, NeuralBg, Tilt, GoogleButton],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
+    <mv-neural-bg />
     <section class="hero">
       <span class="badge fade-up"><span class="dot"></span>New questions every game</span>
       <h1 class="display"><mv-blur-text text="Think fast. Play *smart.*" /></h1>
@@ -93,6 +95,7 @@ type Tab = 'login' | 'register' | 'guest';
     </section>
   `,
   styles: `
+    :host { display: block; position: relative; }
     .hero { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 22px; padding: 28px 0 44px; }
     .hero h1 { margin: 0; max-width: 14ch; }
     .lead { font-size: clamp(1rem, 2vw, 1.2rem); max-width: 52ch; margin: 0; }
