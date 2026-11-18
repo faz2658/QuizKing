@@ -108,6 +108,18 @@ pull request is merged, and from the Actions tab by hand:
    in `.env` (`IMAGE_REGISTRY`, `IMAGE_TAG`), pulls the new images with the job's short-lived token, restarts
    only the services whose image changed, and waits until the site answers (the run fails if it doesn't).
 
+**One merge at a time (the master queue).** Every merge to master gets its own CI run, and none is cancelled. The
+run's first job, *Master queue* (`.github/scripts/master-queue.sh`), waits until two things are done: every earlier
+master build, and the production deploy that follows the last one that passed. Only then does it build. So when
+several pull requests are merged close together:
+- they are built and deployed one after the other, in merge order;
+- a new build never starts while another is building or a deploy is running (including one waiting for approval
+  in the `production` environment);
+- the job log says what it is waiting for.
+
+Pull requests and other branches skip the queue. A *Run workflow* started by hand on master does too. A run waits
+at most 5 hours.
+
 Nothing is compiled on the live server any more, so a deploy no longer eats its CPU and memory. Keeps `.env`,
 the AI model and the databases. Emergency fallback when GitHub is unavailable: `BUILD_ON_SERVER=1 bash
 deploy/deploy.sh manual` builds on the server the old way.

@@ -1,4 +1,6 @@
 name: Deploy
+# Each run is named after the commit it ships, so the master queue in ci.yml can tell which build's deploy it is
+run-name: Deploy ${{ github.event.workflow_run.head_sha || github.sha }}
 
 # Ships to the live server (Oracle, https://quizcadia.com) once CI has passed on the main branch,
 # i.e. after a pull request is merged. Can also be started by hand from the Actions tab.

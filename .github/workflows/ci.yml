@@ -13,8 +13,32 @@ concurrency:
   cancel-in-progress: ${{ github.ref != 'refs/heads/master' }}
 
 jobs:
+  # The master queue: after a merge, wait until every earlier master build and the production deploy that follows it
+  # have finished, then build. Merges are built and deployed one at a time, oldest first, none cancelled. Other
+  # branches and pull requests pass straight through. See .github/scripts/master-queue.sh.
+  queue:
+    name: Master queue
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    permissions:
+      actions: read   # to see the other CI and Deploy runs
+      contents: read  # to check out the script
+    steps:
+      - uses: actions/checkout@v5
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        with:
+          sparse-checkout: .github/scripts
+      - name: Wait for earlier merges to be built and deployed
+        if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+          QUEUE_REPO: ${{ github.repository }}
+          QUEUE_RUN_ID: ${{ github.run_id }}
+        run: bash .github/scripts/master-queue.sh
+
   backend:
     name: Backend (13 services)
+    needs: queue
     runs-on: ubuntu-latest
     defaults:
       run:
@@ -31,6 +55,7 @@ jobs:
 
   frontend:
     name: Frontend
+    needs: queue
     runs-on: ubuntu-latest
     defaults:
       run:
