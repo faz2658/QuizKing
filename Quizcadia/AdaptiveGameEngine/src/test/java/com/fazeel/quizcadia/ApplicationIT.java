@@ -24,8 +24,18 @@ class ApplicationIT {
 	@Autowired
 	AdaptiveService service;
 
+	@Autowired
+	org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory<?, ?> listeners;
+
 	@Test
 	void contextStarts() {
 		assertThat(service).isNotNull();
+	}
+
+	/** The shared KafkaRetries handler (exponential backoff) is the one the listeners use. */
+	@Test
+	void kafkaListenersRetryWithBackoff() {
+		assertThat(listeners).extracting("commonErrorHandler")
+				.isInstanceOf(org.springframework.kafka.listener.DefaultErrorHandler.class);
 	}
 }
