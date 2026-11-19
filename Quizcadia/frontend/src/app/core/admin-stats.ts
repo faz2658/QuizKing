@@ -18,6 +18,12 @@ export interface ActivityStatsView {
   byDay: ActivityDay[]; modes: NameCount[]; topGames: NameCount[]; countries: NameCount[]; topPlayers: TopPlayer[];
 }
 
+/** Day-N retention: of {@code eligible} players whose day N is over, {@code returned} played that day. */
+export interface RetentionDay { day: number; eligible: number; returned: number; rate: number | null }
+/** Players who started one week, and the share of them active in each week since (null: still to come). */
+export interface RetentionCohort { weekStart: string; players: number; guests: number; weeks: (number | null)[] }
+export interface RetentionView { asOf: string; players: number; everyone: RetentionDay[]; accounts: RetentionDay[]; cohorts: RetentionCohort[] }
+
 export interface OnlinePlayer { userId: number; name: string | null; country: string | null; guest: boolean; onlineSince: string; lastSeen: string }
 
 /** Admin-only numbers: accounts from the login service, play from the reporting service. */
@@ -32,6 +38,11 @@ export class AdminStatsApi {
   /** Everyone with QuizCadia open right now (from the "online" heartbeat; gone after 2 minutes without one). */
   online(): Observable<OnlinePlayer[]> {
     return this.http.get<OnlinePlayer[]>('/api/v1/matching/admin/online');
+  }
+
+  /** Day-1/7/30 retention and weekly cohorts of players who started in the last {@code weeks} weeks. */
+  retention(weeks: number): Observable<RetentionView> {
+    return this.http.get<RetentionView>('/api/v1/reports/admin/retention', { params: new HttpParams().set('weeks', weeks) });
   }
 
   activity(days: number): Observable<ActivityStatsView> {

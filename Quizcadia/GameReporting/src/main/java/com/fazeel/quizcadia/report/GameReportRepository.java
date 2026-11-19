@@ -28,4 +28,11 @@ public interface GameReportRepository extends MongoRepository<GameReport, String
 	/** Reports completed in [since, until), without the question review. */
 	@Query(value = "{ 'completedAt': { $gte: ?0, $lt: ?1 } }", fields = "{ 'questions': 0 }")
 	List<GameReport> findCompletedBetween(Instant since, Instant until);
+
+	/**
+	 * Who finished a game when, for every game ever: the retention cohorts. Only those two fields are read, into
+	 * their own record (a {@link GameReport} can't be built from them: its number fields can't be empty).
+	 */
+	@Query(value = "{ 'completedAt': { $ne: null } }", fields = "{ 'userId': 1, 'completedAt': 1 }")
+	List<PlayTime> findAllPlayTimes();
 }

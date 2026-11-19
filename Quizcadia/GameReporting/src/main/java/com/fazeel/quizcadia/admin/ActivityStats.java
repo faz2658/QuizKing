@@ -67,6 +67,13 @@ public class ActivityStats {
 		return Players.isGuest(userId);
 	}
 
+	/** Retention cohorts over the last {@code weeks} start weeks (see {@link Retention}); cached for 5 minutes. */
+	public Retention.View retention(int weeks) {
+		return cache.get("retention:" + weeks, java.time.Duration.ofMinutes(5), () -> Retention.compute(
+				reports.findAllPlayTimes().stream().map(p -> new Retention.Play(p.userId(), p.completedAt())).toList(),
+				LocalDate.now(clock.withZone(ZoneOffset.UTC)), weeks));
+	}
+
 	public View view(int days) {
 		return cache.get("admin:" + days, java.time.Duration.ofSeconds(30), () -> compute(days));
 	}
