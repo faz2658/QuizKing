@@ -38,6 +38,11 @@ quizcadia:
   analytics:
     property-id: ${GA_PROPERTY_ID:}
     credentials-file: ${GA_CREDENTIALS_FILE:}
+  # Streak reminders by Web Push: a VAPID key pair (deploy/README.md shows how to make one). Empty = no reminders.
+  push:
+    public-key: ${QUIZCADIA_PUSH_PUBLIC_KEY:}
+    private-key: ${QUIZCADIA_PUSH_PRIVATE_KEY:}
+    subject: ${QUIZCADIA_PUSH_SUBJECT:mailto:support@quizcadia.com}
   kafka:
     enabled: ${KAFKA_ENABLED:true}
   cors:

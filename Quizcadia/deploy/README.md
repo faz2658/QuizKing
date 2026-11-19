@@ -199,3 +199,27 @@ load test the whole stack peaked at about 10 GB of the server's 12 GB.
 
 The server's `.env` keeps the database login the data was created with (`MYSQL_USER`/`MYSQL_PASSWORD`/
 `NEO4J_PASSWORD`); don't change those without changing the database.
+
+## Streak reminders (Web Push)
+
+Players can turn on a notification that reminds them before their streak ends (one a day at most, about three hours
+before the streak's UTC-midnight deadline, moved into 9:00-21:00 in their own time zone). It needs a VAPID key pair,
+made once per site:
+
+```bash
+./deploy/vapid-keys.sh
+```
+
+Put the two lines it prints in the server's `.env` (never in git), plus who push services can contact about it:
+
+```
+QUIZCADIA_PUSH_PUBLIC_KEY=B...
+QUIZCADIA_PUSH_PRIVATE_KEY=...
+QUIZCADIA_PUSH_SUBJECT=mailto:you@yourdomain
+```
+
+Then redeploy `game-reporting` (it sends them) and `frontend` (the button and the service worker). Without the keys
+the button stays hidden. Keep the pair: a new one means every player has to turn reminders on again.
+
+On iPhone and iPad, web push only works once QuizCadia is added to the Home Screen (iOS 16.4+); the app says so.
+
