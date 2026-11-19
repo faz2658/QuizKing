@@ -156,6 +156,9 @@ export class Welcome implements OnInit {
 
   /** Someone opening a friend's link plays as a guest in one tap: no sign-up between them and the fun. */
   ngOnInit(): void {
+    // fetch the Games page's code while the player signs in, so it's ready the moment they're in
+    const idle = (window as Window & { requestIdleCallback?: (cb: () => void) => void }).requestIdleCallback ?? ((cb: () => void) => setTimeout(cb, 1500));
+    idle(() => void import('./home').catch(() => undefined));
     this.auth.providers().subscribe({ next: (p) => this.canReset.set(!!p?.passwordReset), error: () => this.canReset.set(false) });
     let tab: Tab = this.tab();
     if (pendingInvite() && !this.next()) {

@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@a
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { catchError, debounceTime, distinctUntilChanged, forkJoin, map, of, shareReplay, startWith, switchMap } from 'rxjs';
+import { catchError, debounce, distinctUntilChanged, forkJoin, map, of, shareReplay, startWith, switchMap, timer } from 'rxjs';
 import { CatalogApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
@@ -147,7 +147,8 @@ export class Home {
   protected readonly state = toSignal(
     toObservable(this.query).pipe(
       map((q) => q.trim()),
-      debounceTime(250),
+      // wait for a pause in typing, but not for the first list (nothing typed yet): it shows at once
+      debounce((q) => (q ? timer(250) : of(0))),
       distinctUntilChanged(),
       switchMap((q) =>
         (q ? forkJoin([this.catalog.search(q), this.listed$]).pipe(map(([found, all]) => withinCatalog(found, all))) : this.listed$).pipe(

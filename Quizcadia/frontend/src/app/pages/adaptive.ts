@@ -54,7 +54,8 @@ export const LEVEL_NAMES = ['', 'Easy', 'Medium', 'Advanced'];
             @if (runner.question(); as q) {
               <mv-quiz-stage [question]="q" [total]="s.totalQuestions" [secondsLeft]="runner.secondsLeft()"
                 [fraction]="runner.timeFraction()" [selected]="runner.selected()" [feedback]="runner.feedback()"
-                [locked]="runner.phase() !== 'question'" (choose)="runner.choose($event)">
+                [locked]="runner.phase() !== 'question'" (choose)="runner.choose($event)"
+                [canAdvance]="runner.canAdvance()" (next)="runner.next()">
                 <span badges class="chip">Level {{ levelName(s.level) }}</span>
               </mv-quiz-stage>
             }

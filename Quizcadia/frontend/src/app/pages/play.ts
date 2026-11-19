@@ -65,7 +65,8 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
             @if (runner.question(); as q) {
               <mv-quiz-stage [question]="q" [total]="s.totalQuestions" [secondsLeft]="runner.secondsLeft()"
                 [fraction]="runner.timeFraction()" [selected]="runner.selected()" [feedback]="runner.feedback()"
-                [locked]="runner.phase() !== 'question'" (choose)="runner.choose($event)">
+                [locked]="runner.phase() !== 'question'" (choose)="runner.choose($event)"
+                [canAdvance]="runner.canAdvance()" (next)="runner.next()">
                 @let difficulty = s.currentQuestion?.difficulty ?? 'EASY';
                 <span badges [class]="'chip chip-' + difficulty.toLowerCase()">{{ difficulty }}</span>
               </mv-quiz-stage>

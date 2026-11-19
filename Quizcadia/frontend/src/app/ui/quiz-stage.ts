@@ -45,6 +45,9 @@ import { GameFx } from '../core/game-fx';
           }
           @if (f.note && !f.timedOut) { <span class="muted"> · {{ f.note }}</span> }
           @if (f.explanation) { <span class="why">💡 {{ f.explanation }}</span> }
+          @if (canAdvance()) {
+            <button type="button" class="btn btn-primary next" (click)="next.emit()" aria-keyshortcuts="Enter Space">Next →</button>
+          }
         } @else {
           <span class="muted">Worth {{ question().points }} points · press 1–{{ question().options.length }}</span>
         }
@@ -77,6 +80,7 @@ import { GameFx } from '../core/game-fx';
     @keyframes shake { 20%, 60% { transform: translateX(-6px); } 40%, 80% { transform: translateX(6px); } }
     .locked .option:not(.right):not(.wrong):not(.chosen) { opacity: 0.55; }
     .feedback { min-height: 1.6em; margin: 18px 0 0; font-weight: 700; }
+    .next { display: flex; margin: 12px 0 0 auto; min-height: 44px; padding: 10px 22px; }
     .why { display: block; margin-top: 8px; font-weight: 500; color: var(--text-muted); animation: fade-in 0.3s ease; }
     @keyframes fade-in { from { opacity: 0; transform: translateY(4px); } }
     .good { color: var(--good); }
@@ -91,7 +95,10 @@ export class QuizStage {
   readonly selected = input<string | null>(null);
   readonly feedback = input<Feedback | null>(null);
   readonly locked = input(false);
+  /** The next question is ready: show a Next button (Enter or Space too) instead of making the player wait. */
+  readonly canAdvance = input(false);
   readonly choose = output<string>();
+  readonly next = output<void>();
 
   private readonly correctAnswer = computed(() => this.feedback()?.correctAnswer ?? null);
   private readonly host = inject(ElementRef<HTMLElement>).nativeElement as HTMLElement;
@@ -143,6 +150,9 @@ export class QuizStage {
     const options = this.question().options;
     if (!this.locked() && Number.isInteger(n) && n >= 1 && n <= options.length && !(e.target instanceof HTMLInputElement)) {
       this.choose.emit(options[n - 1]);
+    } else if (this.canAdvance() && (e.key === 'Enter' || e.key === ' ') && !(e.target instanceof HTMLInputElement)) {
+      e.preventDefault(); // Space would scroll, Enter would re-press a focused option
+      this.next.emit();
     }
   }
 }

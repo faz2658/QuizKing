@@ -36,8 +36,10 @@ export interface QuizAdapter<S> {
 export type Phase = 'loading' | 'question' | 'feedback' | 'done' | 'error';
 
 export interface RunnerTiming {
-  /** How long feedback stays on screen before the next question. */
+  /** How long feedback on a wrong answer (or a timeout) stays before the next question: time to read the right one. */
   feedbackMs: number;
+  /** The same after a right answer: just long enough to see the points. The player can always skip ahead (next()). */
+  correctMs: number;
   /** Server grace period: wait this long after the timer hits zero before asking for the next question. */
   expiryGraceMs: number;
   tickMs: number;
@@ -47,7 +49,7 @@ export interface RunnerTiming {
 /** Extra time feedback stays on screen when there is an explanation to read. */
 export const EXPLANATION_EXTRA_MS = 2600;
 
-export const DEFAULT_TIMING: RunnerTiming = { feedbackMs: 1400, expiryGraceMs: 2300, tickMs: 200, now: () => Date.now() };
+export const DEFAULT_TIMING: RunnerTiming = { feedbackMs: 1400, correctMs: 700, expiryGraceMs: 2300, tickMs: 200, now: () => Date.now() };
 
 /**
  * Drives a timed quiz from the player's side. The server decides everything (score, timeouts, next
@@ -69,6 +71,9 @@ export class QuizRunner<S> {
   readonly feedback: Signal<Feedback | null> = this._feedback.asReadonly();
   readonly secondsLeft: Signal<number> = this._secondsLeft.asReadonly();
   readonly error: Signal<string | null> = this._error.asReadonly();
+  private readonly _canAdvance = signal(false);
+  /** The answer is back and the next question is ready: next() shows it now instead of waiting out the feedback. */
+  readonly canAdvance: Signal<boolean> = this._canAdvance.asReadonly();
   /** 1 = full time left, 0 = time is up. */
   readonly timeFraction = computed(() => {
     const q = this._question();
@@ -79,6 +84,7 @@ export class QuizRunner<S> {
   private deadline = 0;
   private ticker: ReturnType<typeof setInterval> | null = null;
   private pending: ReturnType<typeof setTimeout> | null = null;
+  private pendingFn: (() => void) | null = null;
   private subs = new Subscription();
   private expiryRetries = 0;
 
@@ -109,7 +115,9 @@ export class QuizRunner<S> {
       this.adapter.answer(s, q.questionId, option).subscribe({
         next: ({ feedback, session }) => {
           this._feedback.set(feedback);
-          this.later(feedback.explanation ? this.timing.feedbackMs + EXPLANATION_EXTRA_MS : this.timing.feedbackMs, () => this.show(session));
+          const base = feedback.correct ? this.timing.correctMs : this.timing.feedbackMs;
+          this._canAdvance.set(true);
+          this.later(feedback.explanation ? base + EXPLANATION_EXTRA_MS : base, () => this.show(session));
         },
         error: () => {
           // Most likely the question closed on the server just before our answer arrived.
@@ -140,6 +148,18 @@ export class QuizRunner<S> {
     this.tick();
   }
 
+  /** Skips the rest of the feedback pause and shows the next question at once (Next button, Enter, Space). */
+  next(): void {
+    if (this._phase() !== 'feedback' || !this._canAdvance() || !this.pending) {
+      return;
+    }
+    clearTimeout(this.pending);
+    const go = this.pendingFn;
+    this.pending = null;
+    this.pendingFn = null;
+    go?.();
+  }
+
   stop(): void {
     this.stopTicker();
     if (this.pending) {
@@ -168,6 +188,7 @@ export class QuizRunner<S> {
       }
     }
     this.expiryRetries = 0;
+    this._canAdvance.set(false);
     this._question.set(q);
     this._selected.set(null);
     this._feedback.set(null);
@@ -201,8 +222,10 @@ export class QuizRunner<S> {
     if (this.pending) {
       clearTimeout(this.pending);
     }
+    this.pendingFn = fn;
     this.pending = setTimeout(() => {
       this.pending = null;
+      this.pendingFn = null;
       fn();
     }, ms);
   }

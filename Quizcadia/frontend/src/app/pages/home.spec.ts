@@ -60,4 +60,15 @@ describe('Games page', () => {
     http.expectNone((r) => r.url === '/api/game/games' && r.params.get('country') !== 'WORLD');
     f.destroy();
   });
+
+  it('asks for the games straight away instead of waiting for the search box\'s typing pause', async () => {
+    TestBed.inject(World).setCountry(null);
+    const f = TestBed.createComponent(Home);
+    f.detectChanges();
+    await Promise.resolve();
+    await new Promise((r) => setTimeout(r, 20)); // well under the 250 ms typing pause
+    expect(http.match((r) => r.url === '/api/game/games' && r.params.get('country') === 'WORLD')).toHaveLength(1);
+    http.expectNone('/api/v1/games'); // the engine's catalog is only a fallback
+    f.destroy();
+  });
 });
