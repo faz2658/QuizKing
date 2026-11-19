@@ -52,3 +52,39 @@ self.addEventListener('fetch', (event) => {
     );
   }
 });
+
+// Streak reminders (Web Push). The server sends {title, body, url, tag}; a tag replaces an older notification of
+// the same kind instead of stacking up.
+self.addEventListener('push', (event) => {
+  let msg = {};
+  try {
+    msg = event.data ? event.data.json() : {};
+  } catch {
+    msg = { body: event.data ? event.data.text() : '' };
+  }
+  event.waitUntil(
+    self.registration.showNotification(msg.title || 'QuizCadia', {
+      body: msg.body || '',
+      icon: '/icon-192.png',
+      badge: '/icon-192.png',
+      tag: msg.tag || 'quizcadia',
+      data: { url: typeof msg.url === 'string' && msg.url.startsWith('/') ? msg.url : '/' },
+    }),
+  );
+});
+
+// Tapping it opens the page it points to, in an open QuizCadia tab when there is one.
+self.addEventListener('notificationclick', (event) => {
+  event.notification.close();
+  const url = new URL(event.notification.data?.url || '/', self.location.origin).href;
+  event.waitUntil(
+    self.clients.matchAll({ type: 'window', includeUncontrolled: true }).then((wins) => {
+      const open = wins.find((w) => new URL(w.url).origin === self.location.origin);
+      if (open) {
+        return open.focus().then((w) => (w && 'navigate' in w ? w.navigate(url) : null));
+      }
+      return self.clients.openWindow(url);
+    }),
+  );
+});
+

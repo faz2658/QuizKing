@@ -263,6 +263,10 @@ services:
       # ./secrets on the server (never committed). Without them the page explains how to set it up.
       GA_PROPERTY_ID: ${GA_PROPERTY_ID:-}
       GA_CREDENTIALS_FILE: ${GA_CREDENTIALS_FILE:-}
+      # Streak reminders (Web Push): the VAPID key pair from .env; without it there are no reminders
+      QUIZCADIA_PUSH_PUBLIC_KEY: ${QUIZCADIA_PUSH_PUBLIC_KEY:-}
+      QUIZCADIA_PUSH_PRIVATE_KEY: ${QUIZCADIA_PUSH_PRIVATE_KEY:-}
+      QUIZCADIA_PUSH_SUBJECT: ${QUIZCADIA_PUSH_SUBJECT:-mailto:support@quizcadia.com}
     volumes:
       - ./secrets:/run/secrets:ro
 
