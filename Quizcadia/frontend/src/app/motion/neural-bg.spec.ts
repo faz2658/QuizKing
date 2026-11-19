@@ -5,6 +5,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { MIN_FRAME_MS, NEURAL_SCENE_LOADER, NeuralBg, POSES, poseFor } from './neural-bg';
 import { brainLinks, brainPoints, NeuralScene, SceneFactory, view } from './neural-scene';
 import { isWebKit, onPageTransition, PAGE_TRANSITION_CLASS, pageMove, prefersLightTransition } from './page-transition';
+import { isLoginPage, prefersReducedMotion, STILL_CLASS, syncStill } from './reduced-motion';
 
 function media(reduced: boolean, phone = false, vendor = 'Google Inc.') {
   // jsdom calls itself Apple's, like Safari: say which engine each test means
@@ -201,9 +202,10 @@ describe('onPageTransition', () => {
   });
 
   const snap = (...path: string[]) => ({ url: [], firstChild: { url: path.map((p) => ({ path: p })), firstChild: null } });
-  const info = (finished: Promise<void>) => {
+  /** A page change, by default within the login page (the only place page changes still animate). */
+  const info = (finished: Promise<void>, from = ['welcome'], to = ['welcome']) => {
     const transition = { finished, skipTransition: vi.fn() };
-    return { info: { transition, from: snap(), to: snap('leaderboard') } as unknown as ViewTransitionInfo, transition };
+    return { info: { transition, from: snap(...from), to: snap(...to) } as unknown as ViewTransitionInfo, transition };
   };
 
   it('names <main> only while the 3D page change runs', async () => {
@@ -248,6 +250,16 @@ describe('onPageTransition', () => {
     expect(isWebKit('')).toBe(false);
   });
 
+  it('makes every page change outside the login page instant', () => {
+    media(false);
+    for (const [from, to] of [[[], ['leaderboard']], [['welcome'], []], [['play', '7'], ['result', '3']]]) {
+      const { info: i, transition } = info(Promise.resolve(), from, to);
+      onPageTransition(i);
+      expect(transition.skipTransition).toHaveBeenCalledOnce();
+      expect(document.documentElement.classList.contains(PAGE_TRANSITION_CLASS)).toBe(false);
+    }
+  });
+
   it('swaps pages at once with reduced motion', () => {
     media(true);
     const { info: i, transition } = info(Promise.resolve());
@@ -277,5 +289,33 @@ describe('view matrix', () => {
     expect(Array.from(v)).toEqual(Array.from(view(0.3, 1.2, 4, 0.5, 0.1)));
     expect(v[14]).toBeCloseTo(-4);
     expect(v[15]).toBe(1);
+  });
+});
+
+describe('still pages', () => {
+  afterEach(() => {
+    document.documentElement.classList.remove(STILL_CLASS);
+    vi.unstubAllGlobals();
+  });
+
+  it('keeps motion only on the login page', () => {
+    for (const url of ['/welcome', '/welcome?next=%2Fparty', '/welcome#x']) expect(isLoginPage(url), url).toBe(true);
+    for (const url of ['/', '/welcomes', '/party/KING-1', '/live/KING-1', '/play/3']) expect(isLoginPage(url), url).toBe(false);
+  });
+
+  it('switches every effect off away from the login page and back on there', () => {
+    media(false);
+    syncStill('/leaderboard');
+    expect(document.documentElement.classList.contains(STILL_CLASS)).toBe(true);
+    expect(prefersReducedMotion()).toBe(true);
+    syncStill('/welcome?next=%2F');
+    expect(document.documentElement.classList.contains(STILL_CLASS)).toBe(false);
+    expect(prefersReducedMotion()).toBe(false);
+  });
+
+  it('still honours the system setting on the login page', () => {
+    media(true);
+    syncStill('/welcome');
+    expect(prefersReducedMotion()).toBe(true);
   });
 });

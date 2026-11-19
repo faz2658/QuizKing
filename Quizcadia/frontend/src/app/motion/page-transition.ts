@@ -1,5 +1,5 @@
 import type { ActivatedRouteSnapshot, ViewTransitionInfo } from '@angular/router';
-import { prefersReducedMotion } from './reduced-motion';
+import { isLoginPage, prefersReducedMotion } from './reduced-motion';
 
 /** Class on <html> while a page change animates; styles.scss names <main> and the nav pill only then. */
 export const PAGE_TRANSITION_CLASS = 'page-vt';
@@ -66,7 +66,8 @@ export function isWebKit(vendor: string = typeof navigator === 'undefined' ? '' 
  * touch and narrow screens keep the browser's default cross-fade of the screen (see prefersLightTransition).
  */
 export function onPageTransition({ transition, from, to }: ViewTransitionInfo): void {
-  if (prefersReducedMotion()) {
+  // page changes are instant now; only a change within the login page itself could still animate
+  if (prefersReducedMotion() || !isLoginPage(pathOf(from)) || !isLoginPage(pathOf(to))) {
     transition.skipTransition();
     return;
   }
