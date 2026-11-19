@@ -24,6 +24,12 @@ self.addEventListener('fetch', (event) => {
     return; // let the browser handle it
   }
   if (req.mode === 'navigate') {
+    // Coming back from another site (Google's sign-in posts back and is redirected to /welcome?google=...): let the
+    // browser load the page itself. Safari intermittently showed a black page when this went through the worker,
+    // and there's nothing to gain here: the network just answered, so we're not offline.
+    if (url.searchParams.has('google') || crossSite(req.referrer)) {
+      return;
+    }
     event.respondWith(
       fetch(req)
         .then((res) => {
@@ -36,7 +42,11 @@ self.addEventListener('fetch', (event) => {
           caches.open(CACHE).then((c) => c.put('/', copy));
           return res;
         })
-        .catch(() => caches.match('/')),
+        // never answer a page load with nothing (Safari shows that as a blank page): the cached app, else one plain
+        // retry, else a small page that says what happened
+        .catch(() => caches.match('/'))
+        .then((hit) => hit || fetch(req.url, { credentials: 'same-origin' }))
+        .catch(() => offlinePage()),
     );
     return;
   }
@@ -87,4 +97,24 @@ self.addEventListener('notificationclick', (event) => {
     }),
   );
 });
+
+/** A navigation that came from another site (its referrer); an empty or unreadable referrer counts as ours. */
+function crossSite(referrer) {
+  try {
+    return !!referrer && new URL(referrer).origin !== self.location.origin;
+  } catch {
+    return false;
+  }
+}
+
+/** What a page load shows when neither the network nor the cache can give the app. */
+function offlinePage() {
+  return new Response(
+    '<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">' +
+      '<title>QuizCadia</title><body style="font-family:system-ui;background:#08070f;color:#f5f3ff;display:grid;place-items:center;min-height:90vh;text-align:center">' +
+      '<div><h1>Couldn\'t load QuizCadia</h1><p>Check your connection and try again.</p>' +
+      '<p><a href="" style="color:#ffb547;font-weight:700">Try again</a></p></div>',
+    { status: 503, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' } },
+  );
+}
 
