@@ -47,7 +47,7 @@ public class SecurityConfig {
 				.sessionManagement(s -> s.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
 				.authorizeHttpRequests(auth -> auth
 						.requestMatchers(HttpMethod.POST, "/api/v1/auth/register", "/api/v1/auth/login", "/api/v1/auth/guest",
-								"/api/v1/auth/google", "/api/v1/auth/password/forgot", "/api/v1/auth/password/reset",
+								"/api/v1/auth/google", "/api/v1/auth/google/redirect", "/api/v1/auth/password/forgot", "/api/v1/auth/password/reset",
 								"/api/v1/auth/refresh", "/api/v1/auth/logout").permitAll()
 						.requestMatchers(HttpMethod.GET, "/api/v1/auth/providers").permitAll()
 						// recordings and dumps: only from inside this container (they can hold secrets)
@@ -115,6 +115,13 @@ public class SecurityConfig {
 		cors.setAllowedMethods(List.of("GET", "POST"));
 		cors.setAllowedHeaders(List.of("Authorization", "Content-Type", "Idempotency-Key"));
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
+		// Google's redirect sign-in is a form post from accounts.google.com (a page navigation, so a script there
+		// can't read the answer); without this the CORS filter would turn it away for its Origin header.
+		// Registered first: the first matching pattern wins.
+		CorsConfiguration googleForm = new CorsConfiguration();
+		googleForm.setAllowedOrigins(List.of("https://accounts.google.com"));
+		googleForm.setAllowedMethods(List.of("POST"));
+		source.registerCorsConfiguration("/api/v1/auth/google/redirect", googleForm);
 		source.registerCorsConfiguration("/api/**", cors);
 		return source;
 	}

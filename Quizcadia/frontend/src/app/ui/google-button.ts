@@ -1,12 +1,19 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, ElementRef, inject, input, output, signal, viewChild } from '@angular/core';
 import { Theme } from '../core/theme';
-import { AuthService } from '../core/auth.service';
+import { AuthService, pendingInvite } from '../core/auth.service';
+import { googleLoginUri, prepareGoogleRedirect, useGoogleRedirect } from '../core/google-redirect';
 
 /** The parts of Google Identity Services (accounts.google.com/gsi/client) this button uses. */
 interface GoogleIdentityServices {
   accounts: {
     id: {
-      initialize(config: { client_id: string; callback: (r: { credential: string }) => void; ux_mode?: 'popup'; context?: string }): void;
+      initialize(config: {
+        client_id: string;
+        callback?: (r: { credential: string }) => void;
+        ux_mode?: 'popup' | 'redirect';
+        login_uri?: string;
+        context?: string;
+      }): void;
       renderButton(el: HTMLElement, options: Record<string, unknown>): void;
     };
   };
@@ -61,6 +68,8 @@ export class GoogleButton {
   private readonly slot = viewChild.required<ElementRef<HTMLElement>>('slot');
   /** "signin" or "signup": only changes the button's wording. */
   readonly context = input<'signin' | 'signup'>('signin');
+  /** Where to go after signing in; kept across Google's redirect (Safari, iPhone, iPad). */
+  readonly next = input<string | undefined>(undefined);
   readonly credential = output<string>();
   protected readonly available = signal(false);
 
@@ -77,12 +86,18 @@ export class GoogleButton {
             if (!alive) {
               return;
             }
-            g.accounts.id.initialize({
-              client_id: googleClientId,
-              ux_mode: 'popup',
-              context: this.context(),
-              callback: (r) => this.credential.emit(r.credential),
-            });
+            if (useGoogleRedirect()) {
+              // Safari/iOS: Google posts the sign-in to the server and comes back to /welcome?google=ok
+              prepareGoogleRedirect(this.next(), pendingInvite());
+              g.accounts.id.initialize({ client_id: googleClientId, ux_mode: 'redirect', login_uri: googleLoginUri(), context: this.context() });
+            } else {
+              g.accounts.id.initialize({
+                client_id: googleClientId,
+                ux_mode: 'popup',
+                context: this.context(),
+                callback: (r) => this.credential.emit(r.credential),
+              });
+            }
             const el = this.slot().nativeElement;
             g.accounts.id.renderButton(el, {
               type: 'standard',
