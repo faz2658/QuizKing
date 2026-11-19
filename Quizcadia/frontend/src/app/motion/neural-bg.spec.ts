@@ -2,11 +2,13 @@ import { Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import { provideRouter, Router, ViewTransitionInfo } from '@angular/router';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
-import { NEURAL_SCENE_LOADER, NeuralBg, POSES, poseFor } from './neural-bg';
-import { brainLinks, brainPoints, NeuralScene, SceneFactory } from './neural-scene';
-import { onPageTransition, PAGE_TRANSITION_CLASS, pageMove, prefersLightTransition } from './page-transition';
+import { MIN_FRAME_MS, NEURAL_SCENE_LOADER, NeuralBg, POSES, poseFor } from './neural-bg';
+import { brainLinks, brainPoints, NeuralScene, SceneFactory, view } from './neural-scene';
+import { isWebKit, onPageTransition, PAGE_TRANSITION_CLASS, pageMove, prefersLightTransition } from './page-transition';
 
-function media(reduced: boolean, phone = false) {
+function media(reduced: boolean, phone = false, vendor = 'Google Inc.') {
+  // jsdom calls itself Apple's, like Safari: say which engine each test means
+  vi.spyOn(navigator, 'vendor', 'get').mockReturnValue(vendor);
   vi.stubGlobal('matchMedia', (q: string) => ({
     matches: (reduced && q.includes('reduce')) || (phone && (q.includes('coarse') || q.includes('max-width'))),
     media: q, addEventListener() {}, removeEventListener() {},
@@ -117,6 +119,20 @@ describe('NeuralBg', () => {
     expect(removed.mock.calls.map((c) => c[0])).toEqual(expect.arrayContaining(['resize', 'pointermove']));
   });
 
+  it('draws at most about 60 frames a second on a 120 Hz screen', async () => {
+    media(false);
+    vi.stubGlobal('WebGLRenderingContext', class {});
+    // a 120 Hz screen: a frame every 8 ms
+    vi.stubGlobal('requestAnimationFrame', (cb: FrameRequestCallback) => setTimeout(() => cb(performance.now()), 8) as unknown as number);
+    const scene = fakeScene(false);
+    await mount(() => scene);
+    const before = vi.mocked(scene.render).mock.calls.length;
+    await new Promise((r) => setTimeout(r, 600));
+    const drawn = vi.mocked(scene.render).mock.calls.length - before;
+    expect(drawn).toBeGreaterThan(10);
+    expect(drawn).toBeLessThanOrEqual(Math.ceil(600 / MIN_FRAME_MS) + 2); // not ~75
+  });
+
   it('pauses while the tab is hidden', async () => {
     media(false);
     vi.stubGlobal('WebGLRenderingContext', class {});
@@ -179,7 +195,10 @@ describe('pageMove', () => {
 });
 
 describe('onPageTransition', () => {
-  afterEach(() => vi.unstubAllGlobals());
+  afterEach(() => {
+    vi.unstubAllGlobals();
+    vi.restoreAllMocks();
+  });
 
   const snap = (...path: string[]) => ({ url: [], firstChild: { url: path.map((p) => ({ path: p })), firstChild: null } });
   const info = (finished: Promise<void>) => {
@@ -218,6 +237,17 @@ describe('onPageTransition', () => {
     expect(prefersLightTransition()).toBe(false);
   });
 
+  it('gives Safari the cross-fade on any screen size', () => {
+    media(false, false, 'Apple Computer, Inc.');
+    const { info: i } = info(Promise.resolve());
+    onPageTransition(i);
+    expect(prefersLightTransition()).toBe(true);
+    expect(document.documentElement.classList.contains(PAGE_TRANSITION_CLASS)).toBe(false);
+    expect(isWebKit('Apple Computer, Inc.')).toBe(true);
+    expect(isWebKit('Google Inc.')).toBe(false);
+    expect(isWebKit('')).toBe(false);
+  });
+
   it('swaps pages at once with reduced motion', () => {
     media(true);
     const { info: i, transition } = info(Promise.resolve());
@@ -236,5 +266,16 @@ describe('brain geometry', () => {
     for (let i = 0; i < links.length; i += 2) {
       expect(Math.sign(a[links[i] * 3])).toBe(Math.sign(a[links[i + 1] * 3]));
     }
+  });
+});
+
+describe('view matrix', () => {
+  it('fills the array it is given instead of making a new one each frame', () => {
+    const out = new Float32Array(16);
+    const v = view(0.3, 1.2, 4, 0.5, 0.1, out);
+    expect(v).toBe(out);
+    expect(Array.from(v)).toEqual(Array.from(view(0.3, 1.2, 4, 0.5, 0.1)));
+    expect(v[14]).toBeCloseTo(-4);
+    expect(v[15]).toBe(1);
   });
 });

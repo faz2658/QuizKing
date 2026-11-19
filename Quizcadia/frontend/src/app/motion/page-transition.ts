@@ -39,14 +39,24 @@ export function pathOf(root: ActivatedRouteSnapshot): string {
 }
 
 /**
- * Phones and tablets get the browser's plain cross-fade instead of the 3D camera move. The 3D move names <main>,
+ * Phones, tablets and Safari get the browser's plain cross-fade instead of the 3D camera move. The 3D move names <main>,
  * and a named element is captured at its whole height: on a long page (Games) at 3x pixel density that is one
  * picture of 100+ MB of GPU memory per side, which made iOS Safari kill and reload the tab ("can't open this
  * page" after two reloads). The cross-fade captures only the screen, so its size is bounded.
  */
 export function prefersLightTransition(): boolean {
   if (typeof window === 'undefined') return false;
-  return !!window.matchMedia?.('(pointer: coarse)').matches || !!window.matchMedia?.('(max-width: 767px)').matches;
+  return (
+    isWebKit() || !!window.matchMedia?.('(pointer: coarse)').matches || !!window.matchMedia?.('(max-width: 767px)').matches
+  );
+}
+
+/**
+ * Safari (and every iOS browser) on any screen: WebKit's snapshots of a long <main> are slow even on a laptop, a
+ * hitch of most of a second on every page change. navigator.vendor is "Apple Computer, Inc." only in WebKit.
+ */
+export function isWebKit(vendor: string = typeof navigator === 'undefined' ? '' : navigator.vendor ?? ''): boolean {
+  return vendor.startsWith('Apple');
 }
 
 /**
