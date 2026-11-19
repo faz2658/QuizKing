@@ -4,6 +4,7 @@ import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { BlurText } from './blur-text';
 import { CountUp } from './count-up';
 import { DecryptText } from './decrypt-text';
+import { Tilt } from './tilt';
 
 function reducedMotion(on: boolean) {
   vi.stubGlobal('matchMedia', (q: string) => ({ matches: on && q.includes('reduce'), media: q, addEventListener() {}, removeEventListener() {} }));
@@ -71,5 +72,51 @@ describe('motion components', () => {
     f.detectChanges();
     expect((f.nativeElement as HTMLElement).querySelector('[aria-hidden]')!.textContent).toBe('Hi, you?');
     vi.useRealTimers();
+  });
+});
+
+@Component({ imports: [Tilt], template: '<div mvTilt="8" style="width:100px;height:100px"></div>' })
+class TiltHost {}
+
+describe('Tilt', () => {
+  afterEach(() => {
+    vi.unstubAllGlobals();
+    vi.restoreAllMocks();
+  });
+
+  it('applies only the newest pointer position, once per frame', () => {
+    reducedMotion(false);
+    const queued: FrameRequestCallback[] = [];
+    vi.stubGlobal('requestAnimationFrame', (cb: FrameRequestCallback) => queued.push(cb));
+    vi.stubGlobal('cancelAnimationFrame', () => undefined);
+    const f = TestBed.configureTestingModule({ imports: [TiltHost] }).createComponent(TiltHost);
+    f.detectChanges();
+    const el = (f.nativeElement as HTMLElement).querySelector('div')!;
+    vi.spyOn(el, 'getBoundingClientRect').mockReturnValue({ left: 0, top: 0, width: 100, height: 100 } as DOMRect);
+    const style = vi.spyOn(el.style, 'setProperty');
+    const before = queued.length; // Angular schedules frames of its own
+
+    for (const x of [10, 40, 90]) el.dispatchEvent(new PointerEvent('pointermove', { clientX: x, clientY: 50, pointerType: 'mouse' }));
+
+    expect(style).not.toHaveBeenCalled(); // nothing written until the next frame
+    for (const cb of queued.slice(before)) cb(0);
+    expect(style).toHaveBeenCalledTimes(2); // --mx and --my once: three moves, one update
+    expect(el.style.getPropertyValue('--mx')).toBe('90.0%');
+    expect(el.style.transform).toContain('rotateY(3.20deg)');
+  });
+
+  it('ignores touch and resets when the pointer leaves', () => {
+    reducedMotion(false);
+    vi.stubGlobal('requestAnimationFrame', (cb: FrameRequestCallback) => { cb(0); return 1; });
+    const f = TestBed.configureTestingModule({ imports: [TiltHost] }).createComponent(TiltHost);
+    f.detectChanges();
+    const el = (f.nativeElement as HTMLElement).querySelector('div')!;
+    vi.spyOn(el, 'getBoundingClientRect').mockReturnValue({ left: 0, top: 0, width: 100, height: 100 } as DOMRect);
+    el.dispatchEvent(new PointerEvent('pointermove', { clientX: 10, clientY: 10, pointerType: 'touch' }));
+    expect(el.style.transform).toBe('');
+    el.dispatchEvent(new PointerEvent('pointermove', { clientX: 10, clientY: 10, pointerType: 'mouse' }));
+    expect(el.style.transform).not.toBe('');
+    el.dispatchEvent(new PointerEvent('pointerleave'));
+    expect(el.style.transform).toBe('');
   });
 });

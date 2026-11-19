@@ -7,6 +7,8 @@
   color-scheme: dark light;
   --bg: #08070f;
   --bg-raised: rgba(22, 19, 42, 0.72);
+  /* repeated cards (game grids): a little more solid instead of a live blur, see .spotlight */
+  --bg-card: rgba(22, 19, 42, 0.88);
   --bg-sunken: #0f0d1d;
   --surface: rgba(255, 255, 255, 0.05);
   --surface-strong: rgba(255, 255, 255, 0.09);
@@ -40,6 +42,7 @@
   color-scheme: light;
   --bg: #f7f5ff;
   --bg-raised: rgba(255, 255, 255, 0.78);
+  --bg-card: rgba(255, 255, 255, 0.9);
   --bg-sunken: #ece8fb;
   --surface: rgba(20, 16, 60, 0.04);
   --surface-strong: rgba(20, 16, 60, 0.08);
@@ -109,7 +112,15 @@ a { color: var(--accent); }
 }
 
 /* Spotlight that follows the pointer (driven by the mvTilt directive's --mx/--my). */
-.spotlight { position: relative; isolation: isolate; transition: transform 0.25s ease, border-color 0.2s; }
+/*
+ * Spotlight cards come in grids of dozens (Games), so they skip the glass blur: a backdrop-filter re-blurs whatever
+ * is behind it every time that changes, and the aurora behind them drifts all the time. That was dozens of blurs a
+ * frame, which made Safari crawl. A slightly more solid background looks the same over the soft aurora.
+ */
+.spotlight {
+  position: relative; isolation: isolate; transition: transform 0.25s ease, border-color 0.2s;
+  background: var(--bg-card); backdrop-filter: none; -webkit-backdrop-filter: none;
+}
 .spotlight::before {
   content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: -1; pointer-events: none;
   background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 0%), color-mix(in srgb, var(--lavender) 16%, transparent), transparent 55%);
@@ -200,7 +211,7 @@ select.input option { background: var(--bg-sunken); color: var(--text); }
  * sections the camera pans to the next wall, the old page turning away to one side as the new one turns in
  * from the other; into a game or detail page it walks up close, and back out again. Only <main> and the nav's
  * active pill move (the pill slides to its new tab); the header and the backdrop stay where they are.
- * Phones and tablets never get .page-vt: they keep the browser's screen-sized cross-fade of the root, because
+ * Phones, tablets and Safari never get .page-vt: they keep the browser's screen-sized cross-fade of the root, because
  * capturing a whole long <main> crashed iOS Safari (see prefersLightTransition).
  */
 $room: cubic-bezier(0.65, 0, 0.35, 1);

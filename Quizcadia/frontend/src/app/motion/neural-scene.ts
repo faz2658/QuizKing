@@ -194,10 +194,17 @@ function perspective(fovY: number, aspect: number, near: number, far: number): F
   return new Float32Array([f / aspect, 0, 0, 0, 0, f, 0, 0, 0, 0, (far + near) * nf, -1, 0, 0, 2 * far * near * nf, 0]);
 }
 
-/** Rotate about X then Y, then push back by {@code dist} (column-major). */
-function view(rx: number, ry: number, dist: number, tx: number, ty: number): Float32Array {
+/**
+ * Rotate about X then Y, then push back by {@code dist} (column-major), written into {@code out}: this runs every
+ * frame, so it fills one array instead of making a new one for the garbage collector each time.
+ */
+export function view(rx: number, ry: number, dist: number, tx: number, ty: number, out = new Float32Array(16)): Float32Array {
   const cx = Math.cos(rx), sx = Math.sin(rx), cy = Math.cos(ry), sy = Math.sin(ry);
-  return new Float32Array([cy, sx * sy, -cx * sy, 0, 0, cx, sx, 0, sy, -sx * cy, cx * cy, 0, tx, ty, -dist, 1]);
+  out[0] = cy; out[1] = sx * sy; out[2] = -cx * sy; out[3] = 0;
+  out[4] = 0; out[5] = cx; out[6] = sx; out[7] = 0;
+  out[8] = sy; out[9] = -sx * cy; out[10] = cx * cy; out[11] = 0;
+  out[12] = tx; out[13] = ty; out[14] = -dist; out[15] = 1;
+  return out;
 }
 
 const POSE_KEYS = ['x', 'y', 'zoom', 'alpha', 'spin', 'lean'] as const;
@@ -260,11 +267,15 @@ export const createNeuralScene: SceneFactory = (canvas, { small, colors: initial
   const aA = gl.getAttribLocation(pointProg, 'aA');
   const aB = gl.getAttribLocation(pointProg, 'aB');
   const aMeta = gl.getAttribLocation(pointProg, 'aMeta');
+  // made once, reused every frame (render() allocates nothing)
+  const pointAttribs = [[aA, 3, 0], [aB, 3, 3], [aMeta, 4, 6]] as const;
+  const pointLocs = [aA, aB, aMeta] as const;
   const aPos = gl.getAttribLocation(lineProg, 'aPos');
 
   let colors = initial;
   let dpr = 1;
   let proj = perspective(0.8, 1, 0.1, 20);
+  const viewMatrix = new Float32Array(16);
   let dist = 3.4;
   let aspect = 1;
   let rx = 0, ry = 0; // eased pointer tilt
@@ -317,7 +328,7 @@ export const createNeuralScene: SceneFactory = (canvas, { small, colors: initial
       ry += (px * 0.35 * cur.lean - ry) * lk;
       // side-by-side framings only make sense on wide screens; phones keep the brain centred
       const wide = Math.min(1, Math.max(0, (aspect - 0.9) / 0.5));
-      const v = view(0.18 + rx, angle + ry, dist * cur.zoom, cur.x * wide, 0.05 + cur.y);
+      const v = view(0.18 + rx, angle + ry, dist * cur.zoom, cur.x * wide, 0.05 + cur.y, viewMatrix);
       gl.clearColor(0, 0, 0, 0);
       gl.clear(gl.COLOR_BUFFER_BIT);
       gl.enable(gl.BLEND);
@@ -349,12 +360,12 @@ export const createNeuralScene: SceneFactory = (canvas, { small, colors: initial
       gl.uniform1f(pu['uAlpha'], (colors.light ? 0.7 : 0.85) * cur.alpha);
       gl.bindBuffer(gl.ARRAY_BUFFER, pointBuf);
       const bytes = stride * 4;
-      for (const [loc, size, offset] of [[aA, 3, 0], [aB, 3, 3], [aMeta, 4, 6]]) {
+      for (const [loc, size, offset] of pointAttribs) {
         gl.enableVertexAttribArray(loc);
         gl.vertexAttribPointer(loc, size, gl.FLOAT, false, bytes, offset * 4);
       }
       gl.drawArrays(gl.POINTS, 0, count + signals);
-      for (const loc of [aA, aB, aMeta]) gl.disableVertexAttribArray(loc);
+      for (const loc of pointLocs) gl.disableVertexAttribArray(loc);
       return settled;
     },
     dispose() {

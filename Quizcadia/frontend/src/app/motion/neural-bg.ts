@@ -23,6 +23,9 @@ export type NeuralMode = 'loading' | 'live' | 'still' | 'fallback';
 export type PoseName = 'hero' | 'browse' | 'game' | 'quiet';
 
 const GONE = { alpha: 0, spin: 0, lean: 0 };
+/** At most about 60 frames a second (a little under 16.7 ms, so a 60 Hz screen never skips one). */
+export const MIN_FRAME_MS = 15;
+
 export const POSES: Record<PoseName, ScenePose> = {
   hero: { x: 0, y: 0, zoom: 1, alpha: 0.9, spin: 1, lean: 1 },
   browse: { x: 1.4, y: 0.1, zoom: 1.6, ...GONE },
@@ -202,6 +205,11 @@ export class NeuralBg {
   }
 
   private readonly tick = (now: number) => {
+    // 120 Hz screens ask for a frame every 8 ms; the slow spin looks the same at 60 fps for half the work
+    if (now - this.last < MIN_FRAME_MS) {
+      this.frame = requestAnimationFrame(this.tick);
+      return;
+    }
     // a long pause (hidden tab) doesn't make the brain jump ahead
     this.time += Math.min(now - this.last, 50) / 1000;
     this.last = now;
