@@ -290,3 +290,13 @@ $room: cubic-bezier(0.65, 0, 0.35, 1);
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
   ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
 }
+
+/*
+ * Every page but the login page is still (motion/reduced-motion.ts sets html.still): animations jump to their end
+ * and transitions are instant. Delays go too, so staggered entrances don't sit invisible first.
+ */
+html.still, html.still *, html.still *::before, html.still *::after {
+  animation-duration: 0.01ms !important; animation-delay: 0s !important; animation-iteration-count: 1 !important;
+  transition-duration: 0.01ms !important; transition-delay: 0s !important;
+}
+html.still::view-transition-group(*), html.still::view-transition-old(*), html.still::view-transition-new(*) { animation: none !important; }
