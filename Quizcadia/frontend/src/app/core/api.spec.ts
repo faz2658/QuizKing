@@ -14,15 +14,15 @@ describe('API clients', () => {
     http = TestBed.inject(HttpTestingController);
   });
 
-  it('lists only the game manager catalog when it is up: the engine lists every country and would undo the filter', () => {
+  it('lists only the game manager catalog when it is up, without asking the engine at all', () => {
     let games: GameCard[] = [];
     TestBed.inject(CatalogApi).games('WORLD').subscribe((g) => (games = g));
 
     const manager = http.expectOne((r) => r.url === '/api/game/games');
     expect(manager.request.params.get('country')).toBe('WORLD');
     manager.flush([{ gameId: 7, gameName: 'Space', categoryId: 1 }]);
-    // the engine's cache: the same game plus another country's
-    http.expectOne('/api/v1/games').flush([{ gameId: 7, gameName: 'Space', categoryId: 1 }, { gameId: 900, gameName: 'Bollywood', categoryId: 40, country: 'IN' }]);
+    // the engine's catalog (every country's games, and bigger) isn't even asked for: nothing waits on it
+    http.expectNone('/api/v1/games');
 
     expect(games.map((g) => g.gameId)).toEqual([7]);
   });
@@ -41,7 +41,6 @@ describe('API clients', () => {
     let games: GameCard[] = [];
     TestBed.inject(CatalogApi).games().subscribe((g) => (games = g));
 
-    http.expectOne('/api/v1/games').flush([]);
     http.expectOne('/api/game/games').flush([
       { gameId: 5, gameName: 'Race', categoryId: 2, topic: { topicName: 'Rivers' }, questions: [{}, {}], gameType: { gameTypeId: 2 } },
     ]);

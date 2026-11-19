@@ -1,6 +1,6 @@
 import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Observable, catchError, forkJoin, map, of } from 'rxjs';
+import { Observable, catchError, map, of, switchMap } from 'rxjs';
 import { retryWhileLoading } from './http-errors';
 import { World } from './world';
 import {
@@ -88,18 +88,18 @@ export class CatalogApi {
    */
   games(country?: string): Observable<GameCard[]> {
     const params = country ? new HttpParams().set('country', country) : undefined;
-    const manager = this.http.get<RawGame[]>('/api/game/games', { params }).pipe(catchError(() => of(null)));
-    // the engine's own demo games are world trivia
+    // the engine's own demo games are world trivia; it is only asked when the game manager can't answer, so the
+    // Games page never waits for a second (and bigger) catalog it then throws away
     const engine = !country || country === WORLD ? this.http.get<RawGame[]>('/api/v1/games').pipe(catchError(() => of(null))) : of([]);
-    return forkJoin([manager, engine]).pipe(
-      map(([m, e]) => {
-        if (m === null && e === null) {
+    return this.http.get<RawGame[]>('/api/game/games', { params }).pipe(
+      catchError(() => of(null)),
+      switchMap((m) => (m !== null ? of(m) : engine)),
+      map((games) => {
+        if (games === null) {
           throw new Error('No game service is reachable');
         }
         const seen = new Set<number>();
-        return (m ?? e ?? [])
-          .filter((g) => !seen.has(g.gameId) && !!seen.add(g.gameId))
-          .map((g) => toCard(g));
+        return games.filter((g) => !seen.has(g.gameId) && !!seen.add(g.gameId)).map((g) => toCard(g));
       }),
     );
   }

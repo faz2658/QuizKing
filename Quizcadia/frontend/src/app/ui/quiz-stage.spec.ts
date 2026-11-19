@@ -50,4 +50,24 @@ describe('QuizStage', () => {
     document.dispatchEvent(new KeyboardEvent('keydown', { key: '2' }));
     expect(chosen).toEqual([]);
   });
+
+  it('offers Next once the next question is ready, by button, Enter or Space', () => {
+    let nexts = 0;
+    fixture.componentInstance.next.subscribe(() => nexts++);
+    fixture.componentRef.setInput('selected', 'Quito');
+    fixture.componentRef.setInput('feedback', { correct: false, timedOut: false, correctAnswer: 'Lima', points: 0 });
+    fixture.componentRef.setInput('locked', true);
+    fixture.detectChanges();
+    expect(fixture.nativeElement.querySelector('button.next')).toBeNull(); // the answer isn't back yet
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter' }));
+    expect(nexts).toBe(0);
+
+    fixture.componentRef.setInput('canAdvance', true);
+    fixture.detectChanges();
+    (fixture.nativeElement.querySelector('button.next') as HTMLButtonElement).click();
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Enter' }));
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: ' ' }));
+    expect(nexts).toBe(3);
+    expect(chosen).toEqual([]); // and no option got picked by those keys
+  });
 });

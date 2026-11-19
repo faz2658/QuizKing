@@ -56,7 +56,7 @@ describe('QuizRunner', () => {
     vi.useFakeTimers();
     now = 0;
     adapter = new FakeAdapter();
-    runner = new QuizRunner(adapter, undefined, { feedbackMs: 1000, expiryGraceMs: 2000, tickMs: 100, now: () => now });
+    runner = new QuizRunner(adapter, undefined, { feedbackMs: 1000, correctMs: 1000, expiryGraceMs: 2000, tickMs: 100, now: () => now });
   });
 
   afterEach(() => {
@@ -94,6 +94,49 @@ describe('QuizRunner', () => {
     expect(runner.phase()).toBe('question');
     expect(runner.question()?.questionId).toBe(2);
     expect(runner.feedback()).toBeNull();
+  });
+
+  it('Next skips the rest of the feedback pause: the next question is already there', () => {
+    runner.start();
+    runner.choose('b'); // wrong: the longer pause
+
+    expect(runner.canAdvance()).toBe(true);
+    advance(100);
+    runner.next();
+
+    expect(runner.phase()).toBe('question');
+    expect(runner.question()?.questionId).toBe(2);
+    expect(runner.canAdvance()).toBe(false);
+    advance(2000); // the cancelled timer doesn't show anything twice
+    expect(runner.question()?.questionId).toBe(2);
+    expect(adapter.refreshes).toBe(0);
+  });
+
+  it('Next does nothing before the answer is back, or while a question is open', () => {
+    runner.start();
+    runner.next();
+    expect(runner.phase()).toBe('question');
+
+    adapter.failAnswer = true; // the answer bounced (too late): nothing ready to skip to
+    runner.choose('a');
+    expect(runner.canAdvance()).toBe(false);
+    runner.next();
+    expect(runner.phase()).toBe('feedback');
+  });
+
+  it('moves on sooner after a right answer than after a wrong one', () => {
+    const quick = new QuizRunner(new FakeAdapter(), undefined, { feedbackMs: 1400, correctMs: 700, expiryGraceMs: 2000, tickMs: 100, now: () => now });
+    quick.start();
+    quick.choose('a'); // right
+    advance(750);
+    expect(quick.question()?.questionId).toBe(2);
+
+    quick.choose('b'); // wrong: still showing the right answer at 750 ms
+    advance(750);
+    expect(quick.phase()).toBe('feedback');
+    advance(700);
+    expect(quick.phase()).toBe('done');
+    quick.stop();
   });
 
   it('ignores a second click while feedback is showing', () => {
