@@ -8,9 +8,11 @@ import { AdminTabs } from '../ui/admin-tabs';
 interface Bar { label: string; value: number; extra?: string }
 
 /** Admin dashboard: sign-ups, active players and what people play. */
+import { RetentionPanel } from '../ui/retention-panel';
+
 @Component({
   selector: 'mv-stats',
-  imports: [DatePipe, AdminTabs],
+  imports: [DatePipe, AdminTabs, RetentionPanel],
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     <mv-admin-tabs />
@@ -67,6 +69,8 @@ interface Bar { label: string; value: number; extra?: string }
     } @else if (!error()) {
       <div class="skeleton" style="height: 120px"></div>
     }
+
+    <mv-retention-panel />
 
     <div class="grid">
       <section class="card">

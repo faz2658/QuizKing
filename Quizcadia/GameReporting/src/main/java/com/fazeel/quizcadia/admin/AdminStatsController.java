@@ -32,6 +32,12 @@ public class AdminStatsController {
 		}
 	}
 
+	/** Day-1/7/30 retention and weekly cohorts of new players ({@code weeks}: 4 to 26 start weeks). */
+	@GetMapping("/retention")
+	public Retention.View retention(@RequestParam(defaultValue = "8") int weeks) {
+		return stats.retention(Math.max(4, Math.min(weeks, 26)));
+	}
+
 	@GetMapping("/stats")
 	public ActivityStats.View stats(@RequestParam(defaultValue = "30") int days) {
 		return stats.view(Math.max(1, Math.min(days, 90)));

@@ -49,6 +49,8 @@ describe('Admin user stats', () => {
     (el.querySelectorAll('.seg button')[0] as HTMLButtonElement).click();
     http.expectOne('/api/v1/auth/admin/stats?days=7').flush({ total: 0, google: 0, password: 0, admins: 0, today: 0, last7Days: 0, last30Days: 0, signupsByDay: [], recent: [] });
     http.expectOne('/api/v1/reports/admin/stats?days=7').flush({ gamesAllTime: 0, gamesInPeriod: 0, activeToday: 0, active7Days: 0, active30Days: 0, guestPlayers30Days: 0, byDay: [], modes: [], topGames: [], countries: [], topPlayers: [] });
+    // the retention panel loads on its own (ui/retention-panel.spec.ts covers it)
+    http.expectOne((r) => r.url === '/api/v1/reports/admin/retention').flush({ asOf: '2026-11-15', players: 0, everyone: [], accounts: [], cohorts: [] });
     http.verify();
   });
 });
