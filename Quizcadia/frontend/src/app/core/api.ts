@@ -81,8 +81,10 @@ export class CatalogApi {
   private readonly http = inject(HttpClient);
 
   /**
-   * Every solo game: the game manager's catalog plus games only the engine knows (its demo games).
-   * Either source may be down; the page still works with the other one.
+   * Solo games from the game manager's catalog, filtered by {@code country} (WORLD: the shared topics). Only when
+   * the game manager can't be reached does it fall back to the games the engine has cached (demo mode): the engine
+   * lists every game it knows, every country's included, so merging it in always undid the country filter and
+   * flooded the Games page with other countries' games.
    */
   games(country?: string): Observable<GameCard[]> {
     const params = country ? new HttpParams().set('country', country) : undefined;
@@ -95,7 +97,7 @@ export class CatalogApi {
           throw new Error('No game service is reachable');
         }
         const seen = new Set<number>();
-        return [...(m ?? []), ...(e ?? [])]
+        return (m ?? e ?? [])
           .filter((g) => !seen.has(g.gameId) && !!seen.add(g.gameId))
           .map((g) => toCard(g));
       }),
