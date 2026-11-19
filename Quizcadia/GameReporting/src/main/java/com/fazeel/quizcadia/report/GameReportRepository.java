@@ -12,6 +12,21 @@ public interface GameReportRepository extends MongoRepository<GameReport, String
 
 	List<GameReport> findByUserIdOrderByCompletedAtDesc(int userId);
 
+	/**
+	 * A player's games, newest first, without the question-by-question review: the review's text is most of each
+	 * report, and XP, the streak, My stats and the summary never read it. (500 games: about 1 MB less per call.)
+	 */
+	@Query(value = "{ 'userId': ?0 }", sort = "{ 'completedAt': -1 }", fields = "{ 'questions': 0 }")
+	List<GameReport> findSummariesByUserId(int userId);
+
+	@Query(value = "{ 'userId': ?0, 'mode': ?1 }", sort = "{ 'completedAt': -1 }", fields = "{ 'questions': 0 }")
+	List<GameReport> findSummariesByUserIdAndMode(int userId, GameMode mode);
+
+	/** The same with each answer's right/wrong but not its text: the badges look for runs of right answers. */
+	@Query(value = "{ 'userId': ?0 }", sort = "{ 'completedAt': -1 }",
+			fields = "{ 'questions.question': 0, 'questions.correctAnswer': 0, 'questions.answer': 0 }")
+	List<GameReport> findForBadgesByUserId(int userId);
+
 	List<GameReport> findByUserIdAndModeOrderByCompletedAtDesc(int userId, GameMode mode);
 
 	// The board queries below leave out each report's question review ('questions'), which is most of a report's

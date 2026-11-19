@@ -44,12 +44,11 @@ public class ReportService {
 	}
 
 	public List<GameReport> reports(int userId, GameMode mode) {
-		return mode == null ? reports.findByUserIdOrderByCompletedAtDesc(userId)
-				: reports.findByUserIdAndModeOrderByCompletedAtDesc(userId, mode);
+		return mode == null ? reports.findSummariesByUserId(userId) : reports.findSummariesByUserIdAndMode(userId, mode);
 	}
 
 	public UserSummary summary(int userId) {
-		List<GameReport> all = reports.findByUserIdOrderByCompletedAtDesc(userId);
+		List<GameReport> all = reports.findSummariesByUserId(userId);
 		Map<GameMode, ModeSummary> byMode = Arrays.stream(GameMode.values())
 				.collect(Collectors.toMap(Function.identity(), m -> ModeSummary.of(all.stream()
 						.filter(r -> r.mode() == m).toList())));

@@ -10,6 +10,9 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "category")
+// a question's or topic's category is found by index, not by reading every category (each holds its whole question set)
+@org.springframework.data.mongodb.core.index.CompoundIndex(name = "question_id", def = "{'topic.questions.questionId': 1}")
+@org.springframework.data.mongodb.core.index.CompoundIndex(name = "topic_id", def = "{'topic.topicId': 1}")
 public class Category {
 	@Id
 	private int categoryId;
