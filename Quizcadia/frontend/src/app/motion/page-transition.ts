@@ -39,14 +39,29 @@ export function pathOf(root: ActivatedRouteSnapshot): string {
 }
 
 /**
+ * Phones and tablets get the browser's plain cross-fade instead of the 3D camera move. The 3D move names <main>,
+ * and a named element is captured at its whole height: on a long page (Games) at 3x pixel density that is one
+ * picture of 100+ MB of GPU memory per side, which made iOS Safari kill and reload the tab ("can't open this
+ * page" after two reloads). The cross-fade captures only the screen, so its size is bounded.
+ */
+export function prefersLightTransition(): boolean {
+  if (typeof window === 'undefined') return false;
+  return !!window.matchMedia?.('(pointer: coarse)').matches || !!window.matchMedia?.('(max-width: 767px)').matches;
+}
+
+/**
  * Router hook for every page change: tags <html> with the camera move (data-move) and where the old page's
  * centre of view was, so it turns about what the player was looking at. <main> is named only for the
- * transition, so its glass cards keep blurring the backdrop the rest of the time. Reduced motion skips it.
+ * transition, so its glass cards keep blurring the backdrop the rest of the time. Reduced motion skips it;
+ * touch and narrow screens keep the browser's default cross-fade of the screen (see prefersLightTransition).
  */
 export function onPageTransition({ transition, from, to }: ViewTransitionInfo): void {
   if (prefersReducedMotion()) {
     transition.skipTransition();
     return;
+  }
+  if (prefersLightTransition()) {
+    return; // nothing named: only the screen-sized root snapshot, with the default cross-fade
   }
   const root = document.documentElement;
   const main = document.querySelector('main');
