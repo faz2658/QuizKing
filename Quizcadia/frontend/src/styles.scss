@@ -200,6 +200,8 @@ select.input option { background: var(--bg-sunken); color: var(--text); }
  * sections the camera pans to the next wall, the old page turning away to one side as the new one turns in
  * from the other; into a game or detail page it walks up close, and back out again. Only <main> and the nav's
  * active pill move (the pill slides to its new tab); the header and the backdrop stay where they are.
+ * Phones and tablets never get .page-vt: they keep the browser's screen-sized cross-fade of the root, because
+ * capturing a whole long <main> crashed iOS Safari (see prefersLightTransition).
  */
 $room: cubic-bezier(0.65, 0, 0.35, 1);
 .page-vt main { view-transition-name: page; }

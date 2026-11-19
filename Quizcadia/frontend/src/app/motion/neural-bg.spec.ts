@@ -4,11 +4,12 @@ import { provideRouter, Router, ViewTransitionInfo } from '@angular/router';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { NEURAL_SCENE_LOADER, NeuralBg, POSES, poseFor } from './neural-bg';
 import { brainLinks, brainPoints, NeuralScene, SceneFactory } from './neural-scene';
-import { onPageTransition, PAGE_TRANSITION_CLASS, pageMove } from './page-transition';
+import { onPageTransition, PAGE_TRANSITION_CLASS, pageMove, prefersLightTransition } from './page-transition';
 
-function media(reduced: boolean) {
+function media(reduced: boolean, phone = false) {
   vi.stubGlobal('matchMedia', (q: string) => ({
-    matches: reduced && q.includes('reduce'), media: q, addEventListener() {}, removeEventListener() {},
+    matches: (reduced && q.includes('reduce')) || (phone && (q.includes('coarse') || q.includes('max-width'))),
+    media: q, addEventListener() {}, removeEventListener() {},
   }));
 }
 
@@ -199,6 +200,22 @@ describe('onPageTransition', () => {
     expect(document.documentElement.classList.contains(PAGE_TRANSITION_CLASS)).toBe(false);
     expect(document.documentElement.dataset['move']).toBeUndefined();
     expect(transition.skipTransition).not.toHaveBeenCalled();
+  });
+
+  it('keeps phones to the screen-sized cross-fade: <main> is never named there', () => {
+    media(false, true);
+    const { info: i, transition } = info(Promise.resolve());
+    onPageTransition(i);
+    expect(transition.skipTransition).not.toHaveBeenCalled(); // the browser's own fade still plays
+    expect(document.documentElement.classList.contains(PAGE_TRANSITION_CLASS)).toBe(false);
+    expect(document.documentElement.dataset['move']).toBeUndefined();
+  });
+
+  it('treats touch screens and narrow windows as phones', () => {
+    media(false, true);
+    expect(prefersLightTransition()).toBe(true);
+    media(false, false);
+    expect(prefersLightTransition()).toBe(false);
   });
 
   it('swaps pages at once with reduced motion', () => {
