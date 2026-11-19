@@ -188,4 +188,61 @@ class RecoveryAndGoogleFlowTest {
 		assertThat(sent.getAllValues()).extracting(com.fazeel.quizcadia.account.UserRegistered::referredBy)
 				.containsExactly(null, hostId, null);
 	}
+
+	/** Google's redirect sign-in: a form post from accounts.google.com with its double-submit token. */
+	org.springframework.http.ResponseEntity<Void> googleForm(String credential, String formToken, String cookies) {
+		org.springframework.util.LinkedMultiValueMap<String, String> form = new org.springframework.util.LinkedMultiValueMap<>();
+		if (credential != null) form.add("credential", credential);
+		if (formToken != null) form.add("g_csrf_token", formToken);
+		// a client that shows the 303 instead of following it to the app (which this service doesn't serve)
+		RestClient noRedirects = RestClient.builder().baseUrl("http://localhost:" + port)
+				.requestFactory(new org.springframework.http.client.JdkClientHttpRequestFactory(java.net.http.HttpClient.newBuilder()
+						.followRedirects(java.net.http.HttpClient.Redirect.NEVER).build()))
+				.defaultStatusHandler(HttpStatusCode::isError, (rq, rs) -> {
+				}).build();
+		var req = noRedirects.post().uri("/api/v1/auth/google/redirect").contentType(MediaType.APPLICATION_FORM_URLENCODED)
+				.header("Origin", "https://accounts.google.com");
+		if (cookies != null) req = req.header("Cookie", cookies);
+		return req.body(form).retrieve().toBodilessEntity();
+	}
+
+	@Test
+	void googleRedirectSignsInWithTheRefreshCookieAndGoesBackToTheApp() {
+		when(google.verify("cred-r")).thenReturn(new GoogleIdentity("g-redirect-rio", "rio@example.test", true, "Rio R"));
+		var res = googleForm("cred-r", "tok-123", "g_csrf_token=tok-123");
+
+		assertThat(res.getStatusCode().value()).isEqualTo(303);
+		assertThat(res.getHeaders().getLocation()).hasToString("/welcome?google=ok");
+		assertThat(res.getHeaders().get("Set-Cookie")).anyMatch(c -> c.startsWith("qc_refresh=") && !c.startsWith("qc_refresh=;"));
+		// the app then swaps that cookie for a session, as after any sign-in
+		String refresh = res.getHeaders().get("Set-Cookie").stream().filter(c -> c.startsWith("qc_refresh=")).findFirst()
+				.orElseThrow().split(";", 2)[0];
+		@SuppressWarnings("unchecked")
+		Map<String, Object> session = http().post().uri("/api/v1/auth/refresh").header("Cookie", refresh)
+				.contentType(MediaType.APPLICATION_JSON).body(Map.of()).retrieve().body(Map.class);
+		assertThat(((Map<String, Object>) session.get("user")).get("email")).isEqualTo("rio@example.test");
+	}
+
+	@Test
+	void googleRedirectRefusesAMissingOrForgedAntiForgeryToken() {
+		when(google.verify("cred-x")).thenReturn(new GoogleIdentity("g-redirect-eve", "eve@example.test", true, "Eve"));
+		long before = accounts.count();
+
+		for (var res : java.util.List.of(googleForm("cred-x", "tok-a", "g_csrf_token=tok-b"), googleForm("cred-x", "tok-a", null),
+				googleForm("cred-x", null, "g_csrf_token=tok-a"), googleForm(null, "tok-a", "g_csrf_token=tok-a"))) {
+			assertThat(res.getStatusCode().value()).isEqualTo(303);
+			assertThat(res.getHeaders().getLocation()).hasToString("/welcome?google=failed");
+			assertThat(res.getHeaders().get("Set-Cookie")).noneMatch(c -> c.startsWith("qc_refresh=") && !c.startsWith("qc_refresh=;"));
+		}
+		assertThat(accounts.count()).isEqualTo(before);
+	}
+
+	@Test
+	void googleRedirectWithABadTokenGoesBackWithAFailure() {
+		when(google.verify("bad")).thenThrow(new GoogleSignInException("Google sign-in failed, please try again"));
+
+		var res = googleForm("bad", "t", "g_csrf_token=t");
+
+		assertThat(res.getHeaders().getLocation()).hasToString("/welcome?google=failed");
+	}
 }

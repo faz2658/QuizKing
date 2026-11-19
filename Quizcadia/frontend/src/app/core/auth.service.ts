@@ -85,6 +85,14 @@ export class AuthService {
   }
 
   /** Signs in with the ID token Google's button handed us; a first-time player gets an account. */
+  /**
+   * Back from Google's redirect sign-in (core/google-redirect.ts): the login service has set the session cookie,
+   * so swapping it for a token signs this tab in.
+   */
+  finishGoogleRedirect(): Observable<TokenResponse> {
+    return this.refresh().pipe(tap(() => { track('login', { method: 'google' }); clearInvite(); }));
+  }
+
   signInWithGoogle(credential: string): Observable<TokenResponse> {
     return this.http
       .post<TokenResponse>('/api/v1/auth/google', { credential, invite: pendingInvite() })

@@ -81,6 +81,54 @@ public class AuthController {
 		return signIn(accounts.signInWithGoogle(google.verify(r.credential()), r.invite()), response);
 	}
 
+	/** Set by the app before a redirect sign-in, so a friend's invite survives the trip to Google and back. */
+	public static final String INVITE_COOKIE = "qc_invite";
+	/** Google's double-submit token: the same value arrives as a cookie (set on our site) and in the form. */
+	static final String GOOGLE_CSRF = "g_csrf_token";
+	private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(AuthController.class);
+
+	/**
+	 * "Sign in with Google" in redirect mode (iPhone, iPad and Safari, where Google's popup tab can't hand the
+	 * sign-in back to a page iOS has frozen in the background). Google posts the ID token here as a form; we check
+	 * Google's anti-forgery token, sign the player in exactly like {@link #google} (the refresh cookie) and send the
+	 * browser back to the app, which picks the session up from that cookie. Always a 303: the app shows failures.
+	 */
+	@PostMapping(path = "/google/redirect", consumes = org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+	public org.springframework.http.ResponseEntity<Void> googleRedirect(
+			@org.springframework.web.bind.annotation.RequestParam(required = false) String credential,
+			@org.springframework.web.bind.annotation.RequestParam(name = GOOGLE_CSRF, required = false) String csrfForm,
+			@CookieValue(name = GOOGLE_CSRF, required = false) String csrfCookie,
+			@CookieValue(name = INVITE_COOKIE, required = false) String invite, HttpServletResponse response) {
+		String outcome = "failed";
+		if (credential == null || credential.isBlank() || credential.length() > 4096) {
+			log.info("Google redirect sign-in without a credential");
+		}
+		else if (!sameToken(csrfForm, csrfCookie)) {
+			log.info("Google redirect sign-in with a missing or mismatched {}", GOOGLE_CSRF);
+		}
+		else {
+			try {
+				String code = invite != null && invite.matches("[A-Za-z0-9_-]{1,16}") ? invite : null;
+				signIn(accounts.signInWithGoogle(google.verify(credential), code), response);
+				outcome = "ok";
+			}
+			catch (RuntimeException e) {
+				log.info("Google redirect sign-in failed: {}", e.getMessage());
+			}
+		}
+		response.addHeader(org.springframework.http.HttpHeaders.SET_COOKIE,
+				org.springframework.http.ResponseCookie.from(INVITE_COOKIE, "").path("/api/v1/auth").maxAge(0).build().toString());
+		return org.springframework.http.ResponseEntity.status(HttpStatus.SEE_OTHER)
+				.location(java.net.URI.create("/welcome?google=" + outcome)).build();
+	}
+
+	/** Both present and equal, compared in constant time. */
+	static boolean sameToken(String a, String b) {
+		return a != null && b != null && !a.isEmpty()
+				&& java.security.MessageDigest.isEqual(a.getBytes(java.nio.charset.StandardCharsets.UTF_8),
+						b.getBytes(java.nio.charset.StandardCharsets.UTF_8));
+	}
+
 	public record ForgotRequest(
 			@NotBlank(message = EMAIL_REQUIRED) @Pattern(regexp = EMAIL_LOOSE_PATTERN, message = EMAIL_INVALID)
 			@Size(max = EMAIL_MAX, message = EMAIL_SIZE) String email) {

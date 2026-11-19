@@ -112,4 +112,31 @@ describe('Welcome sign-in forms', () => {
     await f.whenStable();
     expect(errors()).toContain(MESSAGES.passwordSize);
   });
+
+  describe('back from Google\'s redirect sign-in', () => {
+    it('picks up the session the server started and goes where the player was heading', async () => {
+      sessionStorage.setItem('quizcadia.googleNext', '/party/KING-1');
+      const g = TestBed.createComponent(Welcome);
+      g.componentRef.setInput('google', 'ok');
+      await g.whenStable();
+      const refresh = http.expectOne('/api/v1/auth/refresh');
+      expect(refresh.request.method).toBe('POST');
+      refresh.flush(token);
+      await g.whenStable();
+      expect(TestBed.inject(Router).navigateByUrl).toHaveBeenCalledWith('/party/KING-1');
+      g.destroy();
+    });
+
+    it('says so when it failed', async () => {
+      const g = TestBed.createComponent(Welcome);
+      g.componentRef.setInput('google', 'failed');
+      await g.whenStable();
+      http.match('/api/v1/question-generator/stats').forEach((r) => r.flush([]));
+      http.match('/api/v1/auth/providers').forEach((r) => r.flush({ googleClientId: null, passwordReset: false }));
+      await g.whenStable();
+      expect((g.nativeElement as HTMLElement).textContent).toContain('Google sign-in failed');
+      http.expectNone('/api/v1/auth/refresh');
+      g.destroy();
+    });
+  });
 });

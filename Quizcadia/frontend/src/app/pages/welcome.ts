@@ -11,6 +11,7 @@ import { emailValidator, fieldError, nameValidator, NAME_MAX, PASSWORD_MAX, pass
 import { BlurText } from '../motion/blur-text';
 import { CountUp } from '../motion/count-up';
 import { Tilt } from '../motion/tilt';
+import { takeGoogleNext } from '../core/google-redirect';
 import { GoogleButton } from '../ui/google-button';
 
 type Tab = 'login' | 'register' | 'guest';
@@ -87,7 +88,7 @@ type Tab = 'login' | 'register' | 'guest';
           </button>
         </form>
         @if (tab() !== 'guest') {
-          <mv-google-button [context]="tab() === 'register' ? 'signup' : 'signin'" (credential)="google($event)" />
+          <mv-google-button [context]="tab() === 'register' ? 'signup' : 'signin'" [next]="next()" (credential)="google($event)" />
         }
       </div>
     </section>
@@ -120,6 +121,8 @@ export class Welcome implements OnInit {
   private readonly router = inject(Router);
   private readonly bank = inject(QuestionBankApi);
   readonly next = input<string>();
+  /** Set by the login service when Google's redirect sign-in comes back: "ok" or "failed". */
+  readonly googleResult = input<string | undefined>(undefined, { alias: 'google' });
 
   protected readonly tabs: { id: Tab; label: string }[] = [
     { id: 'login', label: 'Log in' },
@@ -162,6 +165,7 @@ export class Welcome implements OnInit {
       tab = 'guest';
     }
     this.select(tab);
+    this.finishGoogleRedirect(); // after select(), which clears any message
   }
 
   protected select(tab: Tab): void {
@@ -216,6 +220,24 @@ export class Welcome implements OnInit {
       error: (e) => {
         this.busy.set(false);
         this.error.set(errorMessage(e, 'Google sign-in failed. Please try again.'));
+      },
+    });
+  }
+
+  /** Back from Google's redirect sign-in (Safari, iPhone, iPad): pick up the session the server just started. */
+  private finishGoogleRedirect(): void {
+    const outcome = this.googleResult();
+    if (!outcome) return;
+    if (outcome !== 'ok') {
+      this.error.set('Google sign-in failed. Please try again.');
+      return;
+    }
+    this.busy.set(true);
+    this.auth.finishGoogleRedirect().subscribe({
+      next: () => this.router.navigateByUrl(takeGoogleNext()),
+      error: () => {
+        this.busy.set(false);
+        this.error.set('Google sign-in failed. Please try again.');
       },
     });
   }
