@@ -186,6 +186,14 @@ public class GameSessionService {
 		return new AnswerResult(outcome, save(session));
 	}
 
+	/** The player's screen shows the current question now: its clock starts from here (see GameSession#shown). */
+	public void shown(String sessionId, int questionId) {
+		GameSession session = load(sessionId);
+		if (session.shown(questionId, clock.instant())) {
+			save(session);
+		}
+	}
+
 	/** Uses a lifeline on the current question; a skip also returns the skipped question's outcome. */
 	public LifelineResult useLifeline(String sessionId, Lifeline lifeline, int questionId) {
 		GameSession session = load(sessionId);

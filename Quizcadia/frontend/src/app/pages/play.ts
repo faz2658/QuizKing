@@ -30,6 +30,7 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
         })),
       ),
     question: (s) => s.currentQuestion,
+    shown: (s, questionId) => api.shown(s.sessionId, questionId),
   };
 }
 

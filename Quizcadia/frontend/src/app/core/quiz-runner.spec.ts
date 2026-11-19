@@ -45,6 +45,14 @@ class FakeAdapter implements QuizAdapter<FakeSession> {
   question(s: FakeSession): RunnerQuestion | null {
     return s.questions[s.index] ?? null;
   }
+
+  shownIds: number[] = [];
+  failShown = false;
+
+  shown(_s: FakeSession, questionId: number): Observable<unknown> {
+    this.shownIds.push(questionId);
+    return this.failShown ? throwError(() => new Error('offline')) : of(null);
+  }
 }
 
 describe('QuizRunner', () => {
@@ -137,6 +145,26 @@ describe('QuizRunner', () => {
     advance(700);
     expect(quick.phase()).toBe('done');
     quick.stop();
+  });
+
+  it('tells the server each question is on screen once, when it appears', () => {
+    runner.start();
+    expect(adapter.shownIds).toEqual([1]);
+
+    runner.choose('a');
+    expect(adapter.shownIds).toEqual([1]); // not while the result is showing
+    runner.next();
+    expect(adapter.shownIds).toEqual([1, 2]);
+  });
+
+  it('a lost "shown" report changes nothing in the game', () => {
+    adapter.failShown = true;
+    runner.start();
+    runner.choose('a');
+    runner.next();
+    expect(runner.phase()).toBe('question');
+    expect(runner.question()?.questionId).toBe(2);
+    expect(runner.error()).toBeNull();
   });
 
   it('ignores a second click while feedback is showing', () => {

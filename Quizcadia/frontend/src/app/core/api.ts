@@ -234,6 +234,14 @@ export class QuizApi {
   answer(id: string, questionId: number, answer: string): Observable<AnswerView> {
     return this.http.post<AnswerView>(`/api/v1/sessions/${id}/answers`, { questionId, answer });
   }
+  /**
+   * Tells the server the question is on screen now, so its clock starts here rather than at the previous answer
+   * (the app shows that answer's result first). Fire and forget: without it the server's grace period still applies.
+   */
+  shown(id: string, questionId: number): Observable<void> {
+    return this.http.post<void>(`/api/v1/sessions/${id}/questions/${questionId}/shown`, null);
+  }
+
 
   result(id: string): Observable<ResultView> {
     return this.http.get<ResultView>(`/api/v1/sessions/${id}/result`);

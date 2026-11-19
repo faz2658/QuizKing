@@ -168,4 +168,17 @@ class GameSessionControllerTest {
 				.content("{\"questionId\":1,\"answer\":\"Paris\"}"))
 				.andExpect(status().isForbidden());
 	}
+
+	@Test
+	void theAppReportsAShownQuestionOnlyForItsOwnGame() throws Exception {
+		org.mockito.Mockito.when(service.get("abc")).thenReturn(session()); // the player is user 42
+
+		mvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post("/api/v1/sessions/abc/questions/1/shown")
+				.with(player(42))).andExpect(status().isNoContent());
+		org.mockito.Mockito.verify(service).shown("abc", 1);
+
+		mvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post("/api/v1/sessions/abc/questions/1/shown")
+				.with(player(7))).andExpect(status().isForbidden());
+		org.mockito.Mockito.verify(service, org.mockito.Mockito.times(1)).shown("abc", 1);
+	}
 }
