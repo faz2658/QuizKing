@@ -31,6 +31,11 @@ export interface QuizAdapter<S> {
   refresh(session: S): Observable<S>;
   answer(session: S, questionId: number, option: string): Observable<{ feedback: Feedback; session: S }>;
   question(session: S): RunnerQuestion | null;
+  /**
+   * The question is on screen now: lets the server start its clock here instead of at the previous answer, while
+   * the result of that answer was still showing. Optional; failures are ignored.
+   */
+  shown?(session: S, questionId: number): Observable<unknown>;
 }
 
 export type Phase = 'loading' | 'question' | 'feedback' | 'done' | 'error';
@@ -189,6 +194,9 @@ export class QuizRunner<S> {
     }
     this.expiryRetries = 0;
     this._canAdvance.set(false);
+    if (q.questionId !== previous?.questionId) {
+      this.adapter.shown?.(session, q.questionId).subscribe({ error: () => undefined });
+    }
     this._question.set(q);
     this._selected.set(null);
     this._feedback.set(null);

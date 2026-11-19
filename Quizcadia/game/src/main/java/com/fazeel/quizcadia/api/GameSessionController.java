@@ -84,6 +84,14 @@ public class GameSessionController {
 		return new LifelineView(request.lifeline(), r.skipped() == null ? null : AnswerView.of(r.skipped(), view), view);
 	}
 
+	/** The app shows this question now (after the previous answer's feedback): its clock starts here, within limits. */
+	@PostMapping("/sessions/{sessionId}/questions/{questionId}/shown")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void shown(@PathVariable String sessionId, @PathVariable int questionId) {
+		owned(sessionId);
+		service.shown(sessionId, questionId);
+	}
+
 	@GetMapping("/sessions/{sessionId}/result")
 	public ResultView result(@PathVariable String sessionId) {
 		owned(sessionId);

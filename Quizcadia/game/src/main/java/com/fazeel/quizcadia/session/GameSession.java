@@ -22,6 +22,11 @@ public class GameSession {
 
 	/** Network latency allowance added to every question's time limit. */
 	public static final Duration GRACE = Duration.ofSeconds(2);
+	/**
+	 * The furthest a question's clock may be restarted after it was asked: a little over the app's longest feedback
+	 * pause (4 s, after a wrong answer with an explanation). See {@link #shown}.
+	 */
+	public static final Duration MAX_SHOW_DELAY = Duration.ofSeconds(5);
 	/** Seconds the extra-time lifeline adds. */
 	public static final int EXTRA_SECONDS = 10;
 
@@ -92,6 +97,30 @@ public class GameSession {
 			advance(deadline);
 		}
 		return expired;
+	}
+
+	/**
+	 * The player's screen now shows question {@code questionId}. Its clock started when the previous answer arrived,
+	 * but the app shows that answer's result first (up to 4 s), so the player would lose that time; the clock now
+	 * starts when the question appears instead. Bounded so it can't be stretched: once per question, only for the
+	 * open, unanswered current question, and never more than {@link #MAX_SHOW_DELAY} after it was asked (the question
+	 * reaches the app with the previous answer, so a later "shown" could only buy time to read it).
+	 *
+	 * @return true if the clock was restarted
+	 */
+	public boolean shown(int questionId, Instant now) {
+		if (status != SessionStatus.IN_PROGRESS) {
+			return false;
+		}
+		SessionQuestion q = current();
+		if (q.getQuestionId() != questionId || q.getShownAt() != null || q.isAnswered() || q.getAskedAt() == null
+				|| now.isBefore(q.getAskedAt())) {
+			return false;
+		}
+		Instant latest = q.getAskedAt().plus(MAX_SHOW_DELAY);
+		q.setShownAt(now);
+		q.setAskedAt(now.isAfter(latest) ? latest : now);
+		return true;
 	}
 
 	/**

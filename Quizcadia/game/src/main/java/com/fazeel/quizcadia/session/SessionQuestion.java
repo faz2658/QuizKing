@@ -15,6 +15,8 @@ public class SessionQuestion {
 	private int points;
 
 	private Instant askedAt;
+	/** When the player's screen reported showing it (its clock was restarted then); null until then. */
+	private Instant shownAt;
 	private Instant answeredAt;
 	private String answer;
 	private boolean correct;
@@ -48,6 +50,14 @@ public class SessionQuestion {
 		SessionQuestion copy = new SessionQuestion(questionId, difficulty, stem, options, correctAnswer, timeLimitSeconds, points);
 		copy.setExplanation(explanation);
 		return copy;
+	}
+
+	public Instant getShownAt() {
+		return shownAt;
+	}
+
+	public void setShownAt(Instant shownAt) {
+		this.shownAt = shownAt;
 	}
 
 	public boolean isAnswered() {
