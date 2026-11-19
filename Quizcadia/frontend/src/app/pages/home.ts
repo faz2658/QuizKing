@@ -7,7 +7,8 @@ import { CatalogApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
 import { GameCard } from '../core/models';
-import { WORLD, withinCatalog } from '../core/region';
+import { generalAndOwnCountry, WORLD, withinCatalog } from '../core/region';
+import { World } from '../core/world';
 import { GameCardView } from '../ui/game-card';
 import { BlurText } from '../motion/blur-text';
 import { DailyBanner } from '../ui/daily-banner';
@@ -121,12 +122,24 @@ export class Home {
     { id: 'MULTI', label: 'Multiplayer' },
   ];
 
+  private readonly world = inject(World);
+
   /**
-   * The games every player sees: the shared topics, the same for everyone. Each player's country quietly shapes
-   * which questions a game asks (mostly their own country's), never which games are listed.
+   * The games a player sees: the shared (WORLD) topics plus their own country's games (the country they picked on
+   * the World page or in the Country Cup, else the one their browser's language suggests). Other countries' games
+   * never show. Follows a change of country.
    */
-  private readonly listed$ = forkJoin([this.catalog.games(WORLD), this.catalog.multiplayerGames(WORLD)]).pipe(
-    map(([s, m]) => [...s, ...m]),
+  private readonly listed$ = toObservable(this.world.country).pipe(
+    distinctUntilChanged(),
+    switchMap((country) =>
+      forkJoin([
+        this.catalog.games(WORLD),
+        this.catalog.multiplayerGames(WORLD),
+        country && country !== WORLD ? this.catalog.games(country).pipe(catchError(() => of([] as GameCard[]))) : of([] as GameCard[]),
+        country && country !== WORLD ? this.catalog.multiplayerGames(country) : of([] as GameCard[]),
+      ]),
+    ),
+    map(([s, m, ownS, ownM]) => generalAndOwnCountry([...s, ...m], [...ownS, ...ownM])),
     shareReplay(1),
   );
   private readonly listed = toSignal(this.listed$.pipe(catchError(() => of([] as GameCard[]))), { initialValue: [] as GameCard[] });

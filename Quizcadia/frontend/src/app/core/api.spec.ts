@@ -14,14 +14,17 @@ describe('API clients', () => {
     http = TestBed.inject(HttpTestingController);
   });
 
-  it('merges the game manager catalog with the engine demo games, without duplicates', () => {
+  it('lists only the game manager catalog when it is up: the engine lists every country and would undo the filter', () => {
     let games: GameCard[] = [];
-    TestBed.inject(CatalogApi).games().subscribe((g) => (games = g));
+    TestBed.inject(CatalogApi).games('WORLD').subscribe((g) => (games = g));
 
-    http.expectOne('/api/game/games').flush([{ gameId: 7, gameName: 'Space', categoryId: 1 }]);
-    http.expectOne('/api/v1/games').flush([{ gameId: 7, gameName: 'Space', categoryId: 1 }, { gameId: 101, gameName: 'World Capitals', categoryId: 1 }]);
+    const manager = http.expectOne((r) => r.url === '/api/game/games');
+    expect(manager.request.params.get('country')).toBe('WORLD');
+    manager.flush([{ gameId: 7, gameName: 'Space', categoryId: 1 }]);
+    // the engine's cache: the same game plus another country's
+    http.expectOne('/api/v1/games').flush([{ gameId: 7, gameName: 'Space', categoryId: 1 }, { gameId: 900, gameName: 'Bollywood', categoryId: 40, country: 'IN' }]);
 
-    expect(games.map((g) => g.gameId)).toEqual([7, 101]);
+    expect(games.map((g) => g.gameId)).toEqual([7]);
   });
 
   it('falls back to the game engine catalog when the game manager is down', () => {
