@@ -115,14 +115,13 @@ public class SecurityConfig {
 		cors.setAllowedMethods(List.of("GET", "POST"));
 		cors.setAllowedHeaders(List.of("Authorization", "Content-Type", "Idempotency-Key"));
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
-		// Google's redirect sign-in is a form post from accounts.google.com (a page navigation, so a script there
-		// can't read the answer); without this the CORS filter would turn it away for its Origin header.
-		// Registered first: the first matching pattern wins.
-		CorsConfiguration googleForm = new CorsConfiguration();
-		googleForm.setAllowedOrigins(List.of("https://accounts.google.com"));
-		googleForm.setAllowedMethods(List.of("POST"));
-		source.registerCorsConfiguration("/api/v1/auth/google/redirect", googleForm);
 		source.registerCorsConfiguration("/api/**", cors);
-		return source;
+		// Google's redirect sign-in is a full-page form post (a navigation: no script ever reads the answer), so CORS
+		// guards nothing there. Safari sends it with "Origin: null" (Google's page hides where it came from), which the
+		// filter would refuse as "Invalid CORS request". Its real protection is Google's signed ID token plus the
+		// g_csrf_token double-submit check (AuthController#googleRedirect), so the path is left out of CORS entirely.
+		return request -> GOOGLE_REDIRECT.equals(request.getRequestURI()) ? null : source.getCorsConfiguration(request);
 	}
+
+	static final String GOOGLE_REDIRECT = "/api/v1/auth/google/redirect";
 }

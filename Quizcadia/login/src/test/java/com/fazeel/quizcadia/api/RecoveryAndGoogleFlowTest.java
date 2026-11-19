@@ -191,6 +191,10 @@ class RecoveryAndGoogleFlowTest {
 
 	/** Google's redirect sign-in: a form post from accounts.google.com with its double-submit token. */
 	org.springframework.http.ResponseEntity<Void> googleForm(String credential, String formToken, String cookies) {
+		return googleForm(credential, formToken, cookies, "https://accounts.google.com");
+	}
+
+	org.springframework.http.ResponseEntity<Void> googleForm(String credential, String formToken, String cookies, String origin) {
 		org.springframework.util.LinkedMultiValueMap<String, String> form = new org.springframework.util.LinkedMultiValueMap<>();
 		if (credential != null) form.add("credential", credential);
 		if (formToken != null) form.add("g_csrf_token", formToken);
@@ -200,8 +204,8 @@ class RecoveryAndGoogleFlowTest {
 						.followRedirects(java.net.http.HttpClient.Redirect.NEVER).build()))
 				.defaultStatusHandler(HttpStatusCode::isError, (rq, rs) -> {
 				}).build();
-		var req = noRedirects.post().uri("/api/v1/auth/google/redirect").contentType(MediaType.APPLICATION_FORM_URLENCODED)
-				.header("Origin", "https://accounts.google.com");
+		var req = noRedirects.post().uri("/api/v1/auth/google/redirect").contentType(MediaType.APPLICATION_FORM_URLENCODED);
+		if (origin != null) req = req.header("Origin", origin);
 		if (cookies != null) req = req.header("Cookie", cookies);
 		return req.body(form).retrieve().toBodilessEntity();
 	}
@@ -244,5 +248,25 @@ class RecoveryAndGoogleFlowTest {
 		var res = googleForm("bad", "t", "g_csrf_token=t");
 
 		assertThat(res.getHeaders().getLocation()).hasToString("/welcome?google=failed");
+	}
+
+	@Test
+	void googleRedirectWorksWhateverOriginSafariSends() {
+		// Safari posts Google's form with "Origin: null"; that used to be refused as "Invalid CORS request"
+		when(google.verify("cred-n")).thenReturn(new GoogleIdentity("g-redirect-nia", "nia@example.test", true, "Nia"));
+
+		for (String origin : new String[] { "null", null, "https://accounts.google.com" }) {
+			var res = googleForm("cred-n", "t", "g_csrf_token=t", origin);
+			assertThat(res.getStatusCode().value()).as("Origin %s", origin).isEqualTo(303);
+			assertThat(res.getHeaders().getLocation()).as("Origin %s", origin).hasToString("/welcome?google=ok");
+		}
+	}
+
+	@Test
+	void theRestOfTheApiStillRefusesOtherSites() {
+		int status = http().post().uri("/api/v1/auth/login").header("Origin", "https://evil.example")
+				.contentType(MediaType.APPLICATION_JSON).body(Map.of("email", "a@b.test", "password", "x")).retrieve()
+				.toBodilessEntity().getStatusCode().value();
+		assertThat(status).isEqualTo(403);
 	}
 }
