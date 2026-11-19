@@ -69,6 +69,7 @@ jobs:
           cache-dependency-path: Quizcadia/frontend/package-lock.json
       - run: npm ci
       - run: npm test -- --watch=false
+      - run: npm run test:sw
       - run: npm run build
 
   images:
