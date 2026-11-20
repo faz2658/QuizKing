@@ -34,12 +34,12 @@ public class ProgressService {
 
 	/** Every badge, earned or not, with how far along the player is. */
 	public List<Achievement> achievements(int userId) {
-		List<GameReport> all = reports.findByUserIdOrderByCompletedAtDesc(userId);
+		List<GameReport> all = reports.findForBadgesByUserId(userId);
 		return Achievements.of(all, r -> boards.dailyRank(r.variantKey(), userId), invites.invited(userId));
 	}
 
 	public Progress progress(int userId) {
-		return of(userId, reports.findByUserIdOrderByCompletedAtDesc(userId), today(), invites.shields(userId));
+		return of(userId, reports.findSummariesByUserId(userId), today(), invites.shields(userId));
 	}
 
 	LocalDate today() {

@@ -31,7 +31,7 @@ class ReportServiceTest {
 
 	@Test
 	void summaryAggregatesPerMode() {
-		when(repo.findByUserIdOrderByCompletedAtDesc(1)).thenReturn(List.of(report(GameMode.SINGLE, 30, 3, 4, null),
+		when(repo.findSummariesByUserId(1)).thenReturn(List.of(report(GameMode.SINGLE, 30, 3, 4, null),
 				report(GameMode.SINGLE, 50, 1, 4, null), report(GameMode.MULTI, 20, 2, 2, 1),
 				report(GameMode.MULTI, 0, 0, 2, 2)));
 

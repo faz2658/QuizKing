@@ -48,17 +48,26 @@ public class QuestionBankService {
 	public record Located(int categoryId, String topicName, Questions question) {
 	}
 
+	/**
+	 * Finds one question by its id. Feedback calls this on every rating or flag, so the index finds the category
+	 * holding it and only that one question comes back, instead of reading the whole bank (every category with all its
+	 * questions: megabytes per tap).
+	 */
 	public java.util.Optional<Located> locate(int questionId) {
-		for (Category c : categories.findAll()) {
-			for (Topic t : c.getTopic() == null ? List.<Topic>of() : c.getTopic()) {
-				for (Questions q : t.getQuestions() == null ? List.<Questions>of() : t.getQuestions()) {
-					if (q.getQuestionId() == questionId) {
-						return java.util.Optional.of(new Located(c.getCategoryId(), t.getTopicName(), q));
-					}
-				}
-			}
+		var at = org.springframework.data.mongodb.core.aggregation.Aggregation.newAggregation(
+				org.springframework.data.mongodb.core.aggregation.Aggregation.match(where("topic.questions.questionId").is(questionId)),
+				org.springframework.data.mongodb.core.aggregation.Aggregation.unwind("topic"),
+				org.springframework.data.mongodb.core.aggregation.Aggregation.unwind("topic.questions"),
+				org.springframework.data.mongodb.core.aggregation.Aggregation.match(where("topic.questions.questionId").is(questionId)),
+				org.springframework.data.mongodb.core.aggregation.Aggregation.limit(1),
+				org.springframework.data.mongodb.core.aggregation.Aggregation.project()
+						.and("topic.topicName").as("topicName").and("topic.questions").as("question"));
+		org.bson.Document hit = mongo.aggregate(at, "category", org.bson.Document.class).getUniqueMappedResult();
+		if (hit == null || !(hit.get("question") instanceof org.bson.Document question)) {
+			return java.util.Optional.empty();
 		}
-		return java.util.Optional.empty();
+		return java.util.Optional.of(new Located(((Number) hit.get("_id")).intValue(), hit.getString("topicName"),
+				mongo.getConverter().read(Questions.class, question)));
 	}
 
 	public List<Category> categories() {
