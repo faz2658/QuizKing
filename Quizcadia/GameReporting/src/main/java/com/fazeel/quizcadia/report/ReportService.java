@@ -15,6 +15,7 @@ import com.fazeel.quizcadia.domain.MultiPlayerResult;
 import com.fazeel.quizcadia.domain.SinglePlayerResult;
 import com.fazeel.quizcadia.report.GameReport.GameMode;
 
+/** Stores reports of finished games and answers a player's history and summary from them. */
 @Service
 public class ReportService {
 
@@ -28,6 +29,7 @@ public class ReportService {
 		this.boards = boards;
 	}
 
+	/** Stores a finished solo game's report and remembers the player's display name. */
 	public void record(SinglePlayerResult r) {
 		names.remember(r.userId(), r.playerName());
 		GameReport report = reports.save(ReportMapper.single(r));
@@ -37,18 +39,22 @@ public class ReportService {
 		}
 	}
 
+	/** Stores a finished adaptive session's report. */
 	public void record(AdaptiveResult r) {
 		reports.save(ReportMapper.adaptive(r));
 	}
 
+	/** Stores a finished match's reports, one per player. */
 	public void record(MultiPlayerResult r) {
 		reports.saveAll(ReportMapper.multi(r));
 	}
 
+	/** The player's games, newest first, all modes or one (without the question reviews). */
 	public List<GameReport> reports(int userId, GameMode mode) {
 		return mode == null ? reports.findSummariesByUserId(userId) : reports.findSummariesByUserIdAndMode(userId, mode);
 	}
 
+	/** Games played, accuracy and multiplayer wins, overall and per mode. */
 	public UserSummary summary(int userId) {
 		List<GameReport> all = reports.findSummariesByUserId(userId);
 		Map<GameMode, ModeSummary> byMode = Arrays.stream(GameMode.values())
@@ -59,10 +65,12 @@ public class ReportService {
 		return new UserSummary(userId, all.size(), ModeSummary.of(all).averageAccuracy(), wins, byMode);
 	}
 
+	/** A player's totals, and the same per game mode. */
 	public record UserSummary(int userId, int gamesPlayed, int averageAccuracy, long multiplayerWins,
 			Map<GameMode, ModeSummary> modes) {
 	}
 
+	/** Games played, best score and average accuracy in one mode. */
 	public record ModeSummary(int gamesPlayed, int bestScore, int averageAccuracy) {
 
 		static ModeSummary of(List<GameReport> reports) {

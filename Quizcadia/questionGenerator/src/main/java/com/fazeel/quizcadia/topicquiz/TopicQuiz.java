@@ -12,6 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "topic_quizzes")
 public class TopicQuiz {
 
+	/** GENERATING while the model writes, then READY or FAILED (with a problem to show). */
 	public enum Status {
 		GENERATING, READY, FAILED
 	}

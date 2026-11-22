@@ -24,6 +24,10 @@ public class GameIdGenerator {
 		this.mongo = mongo;
 	}
 
+	/**
+	 * The next free game id, from one counter shared by solo and multiplayer games (an atomic increment in
+	 * MongoDB).
+	 */
 	public int nextGameId() {
 		Sequence seq = mongo.findAndModify(query(where("_id").is("games")), new Update().inc("value", 1),
 				options().returnNew(true).upsert(true), Sequence.class);

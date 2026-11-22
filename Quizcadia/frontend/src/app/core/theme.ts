@@ -1,6 +1,7 @@
 import { computed, Injectable, signal } from '@angular/core';
 import { prefersReducedMotion } from '../motion/reduced-motion';
 
+/** The two looks: Day (light) and Night (dark). */
 export type ThemeName = 'light' | 'dark';
 /** 'system' follows the device's light/dark setting until the player picks Day or Night. */
 export type ThemeChoice = ThemeName | 'system';
@@ -46,6 +47,7 @@ export class Theme {
     mq?.addEventListener?.('change', (e) => this.systemLight.set(e.matches));
   }
 
+  /** Switches to Day or Night (as a view transition where the browser has them) and remembers the choice. */
   set(next: ThemeName): void {
     if (next === this.current() && this.choice() !== 'system') return;
     const update = () => {

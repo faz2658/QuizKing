@@ -6,6 +6,7 @@ import java.util.Optional;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
+/** Password-reset links, stored only as a hash of their token. */
 public interface PasswordResetRepository extends JpaRepository<PasswordReset, Long> {
 
 	Optional<PasswordReset> findByTokenHash(String tokenHash);

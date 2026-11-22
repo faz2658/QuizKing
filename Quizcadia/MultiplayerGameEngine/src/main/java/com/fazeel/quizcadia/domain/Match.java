@@ -35,10 +35,12 @@ public record Match(String matchId, int gameId, List<Integer> players, Instant c
 		this(matchId, gameId, players, createdAt, names, countries, null);
 	}
 
+	/** Display names by player id (never null). */
 	public Map<Integer, String> names() {
 		return names == null ? Map.of() : names;
 	}
 
+	/** Countries (ISO codes) by player id (never null). */
 	public Map<Integer, String> countries() {
 		return countries == null ? Map.of() : countries;
 	}

@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 
 import java.util.List;
 
+/** The topic a game is built from. */
 public class Topic {
 
 	private int topicId;
@@ -44,7 +45,6 @@ public class Topic {
 	}
 
 	public Topic(int topicId, String topicName, String topicImage, List<Questions> questions) {
-		super();
 		this.topicId = topicId;
 		this.topicName = topicName;
 		this.topicImage = topicImage;

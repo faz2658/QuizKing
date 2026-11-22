@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
 import { Lifeline } from '../core/models';
 
+/** The lifeline buttons, in the order they are shown. */
 export const LIFELINES: { id: Lifeline; label: string; icon: string; hint: string }[] = [
   { id: 'FIFTY_FIFTY', label: '50/50', icon: '✂️', hint: 'Remove two wrong answers' },
   { id: 'EXTRA_TIME', label: '+10s', icon: '⏱️', hint: 'Ten more seconds' },

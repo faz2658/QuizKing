@@ -53,6 +53,10 @@ public class PasswordResetService {
 		this.publicUrl = publicUrl.replaceAll("/+$", "");
 	}
 
+	/**
+	 * Emails a reset link valid for 30 minutes, at most 3 an hour per account. Does nothing, and says nothing, for
+	 * an unknown email; also clears links that expired over a day ago.
+	 */
 	@Transactional
 	public void requestReset(String email) {
 		Instant now = clock.instant();

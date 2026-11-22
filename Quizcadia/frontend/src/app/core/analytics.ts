@@ -62,6 +62,10 @@ export class Analytics {
     });
   }
 
+  /**
+   * Records the visitor's cookie choice; granting loads Google Analytics, denying switches it off if it was
+   * loaded.
+   */
   choose(c: Consent): void {
     this.consent.set(c);
     try {

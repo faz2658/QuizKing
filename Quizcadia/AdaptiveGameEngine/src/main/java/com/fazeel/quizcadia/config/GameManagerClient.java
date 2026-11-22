@@ -15,6 +15,10 @@ import com.fazeel.quizcadia.web.InternalHttp;
 import com.fazeel.quizcadia.web.Breakers;
 import io.github.resilience4j.circuitbreaker.CircuitBreaker;
 
+/**
+ * Fetches a game the engine hasn't cached yet from the game manager, through a circuit breaker so an outage fails
+ * fast.
+ */
 @Component
 public class GameManagerClient implements GameSource {
 
@@ -29,6 +33,7 @@ public class GameManagerClient implements GameSource {
 		this.breaker = breakers.forService("game-manager");
 	}
 
+	/** The game with this id, or empty when the game manager doesn't know it or can't be reached. */
 	@Override
 	public Optional<Game> fetch(int gameId) {
 		try {

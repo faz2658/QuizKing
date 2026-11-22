@@ -13,6 +13,7 @@ import com.fazeel.quizcadia.domain.Questions;
 public record DraftQuestion(@Id String id, int categoryId, String topicName, @Indexed Status status,
 		Questions question, Instant createdAt, Instant reviewedAt) {
 
+	/** PENDING until an admin approves or rejects the draft. */
 	public enum Status {
 		PENDING, APPROVED, REJECTED
 	}

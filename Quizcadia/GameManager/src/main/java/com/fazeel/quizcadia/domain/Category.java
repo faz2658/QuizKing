@@ -4,10 +4,13 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import java.util.List;
 
-
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+/**
+ * A category of the question bank (History, Science...) with its topics; countryCode marks a country's own
+ * question set.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "category")
 public class Category {
@@ -20,11 +23,8 @@ public class Category {
 	private List<Topic> topic;
 	@JsonCreator
 	public Category() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Category(int categoryId, String categoryName, String categoryImage, List<Topic> topic) {
-		super();
 		this.categoryId = categoryId;
 		this.categoryName = categoryName;
 		this.categoryImage = categoryImage;
@@ -54,14 +54,12 @@ public class Category {
 	public void setTopic(List<Topic> topic) {
 		this.topic = topic;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Category [categoryId=" + categoryId + ", categoryName=" + categoryName + ", categoryImage="
 				+ categoryImage + ", topic=" + topic + "]";
 	}
-	
-	
 
 	public String getCountryCode() {
 		return countryCode;

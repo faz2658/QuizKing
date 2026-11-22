@@ -50,6 +50,7 @@ public class InquiryController {
 			@Size(max = 200) String website) {
 	}
 
+	/** The new status an admin sets on a request. */
 	public record StatusChange(@NotNull Status status) {
 	}
 
@@ -63,6 +64,7 @@ public class InquiryController {
 		this.clock = clock;
 	}
 
+	/** Saves a request from the events or venues form (no account needed), limited per visitor to stop spam. */
 	@PostMapping
 	public ResponseEntity<Map<String, Boolean>> send(@Valid @RequestBody InquiryRequest r,
 			@RequestHeader(value = "X-Real-IP", required = false) String realIp,
@@ -86,6 +88,7 @@ public class InquiryController {
 		return repo.findTop200ByOrderByCreatedAtDesc();
 	}
 
+	/** Changes a request's status (admin). */
 	@PatchMapping("/{id}")
 	public Inquiry status(@PathVariable String id, @Valid @RequestBody StatusChange change) {
 		Inquiry i = repo.findById(id).orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));

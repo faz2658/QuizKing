@@ -38,16 +38,23 @@ public class WebsiteAnalytics {
 	static final Duration TTL = Duration.ofMinutes(5);
 	static final String API = "https://analyticsdata.googleapis.com/v1beta/properties/";
 
+	/** The period's headline numbers from Google Analytics. */
 	public record Totals(long activeUsers, long newUsers, long sessions, long pageViews, double avgSessionSeconds,
 			double engagementRate) {
 	}
 
+	/** Visitors and page views on one day. */
 	public record Day(LocalDate day, long activeUsers, long pageViews) {
 	}
 
+	/** One line of a top list (a page, country, device, channel or event) and its count. */
 	public record Row(String name, long value) {
 	}
 
+	/**
+	 * Everything Admin > Website analytics shows; configured=false (with error) explains what setup is missing
+	 * instead.
+	 */
 	public record View(boolean configured, String error, String propertyId, int days, long activeNow, Totals totals,
 			List<Day> byDay, List<Row> pages, List<Row> countries, List<Row> devices, List<Row> channels,
 			List<Row> events) {
@@ -119,6 +126,10 @@ public class WebsiteAnalytics {
 		return credentials == null ? null : credentials.clientEmail();
 	}
 
+	/**
+	 * Google Analytics numbers for the last days days, or a View that says why they can't be shown (not set up, no
+	 * access).
+	 */
 	public View view(int days) {
 		if (credentials == null) {
 			return View.off(setupProblem);

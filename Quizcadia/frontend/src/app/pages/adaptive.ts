@@ -8,8 +8,10 @@ import { QuizAdapter, QuizRunner } from '../core/quiz-runner';
 import { QuizStage } from '../ui/quiz-stage';
 import { CountUp } from '../motion/count-up';
 
+/** Adaptive levels by number (1-3). */
 export const LEVEL_NAMES = ['', 'Easy', 'Medium', 'Advanced'];
 
+/** An adaptive game: the difficulty follows how well the player does. */
 @Component({
   selector: 'mv-adaptive',
   imports: [QuizStage, RouterLink, CountUp],

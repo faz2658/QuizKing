@@ -36,6 +36,7 @@ public class TopicPools {
 		List<MultiPlayerGame.Question> load(int topicId);
 	}
 
+	/** A topic's questions and when they were loaded, to keep them for a few minutes. */
 	private record Cached(List<MultiPlayerGame.Question> questions, Instant at) {
 	}
 
@@ -56,6 +57,7 @@ public class TopicPools {
 		this.keep = keep;
 	}
 
+	/** A pool source that never loads anything, for tests and for running without the question service. */
 	public static TopicPools none() {
 		return new TopicPools(topicId -> List.of(), Clock.systemUTC(), Duration.ZERO);
 	}

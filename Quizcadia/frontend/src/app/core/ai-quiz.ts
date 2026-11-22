@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 
+/** A row of an AI quiz's leaderboard; you marks the player. */
 export interface TopicQuizEntry {
   rank: number;
   name: string;
@@ -9,6 +10,7 @@ export interface TopicQuizEntry {
   you: boolean;
 }
 
+/** An AI quiz as the player sees it; questions appear once it is READY. */
 export interface TopicQuizView {
   id: string;
   topic: string;
@@ -27,6 +29,7 @@ export interface TopicQuizView {
 
 const BASE = '/api/v1/question-generator/topic-quizzes';
 
+/** AI quizzes on any topic, from the question service. */
 @Injectable({ providedIn: 'root' })
 export class TopicQuizApi {
   private readonly http = inject(HttpClient);

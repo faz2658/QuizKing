@@ -33,6 +33,7 @@ public record QuestionTemplate(String key, String stemFormat, int level, String 
 					  SERVICE wikibase:label { bd:serviceParam wikibase:language "en". }
 					}""");
 
+	/** The template with that key, ignoring case; IllegalArgumentException for an unknown one. */
 	public static QuestionTemplate byKey(String key) {
 		for (QuestionTemplate t : new QuestionTemplate[] { CAPITALS, CURRENCIES, US_PRESIDENT_BIRTH_YEAR }) {
 			if (t.key().equalsIgnoreCase(key)) {

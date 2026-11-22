@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
+/** One question from the bank: its text, up to four options, the correct answer and a level from 1 to 3. */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Questions {
 
@@ -94,7 +95,6 @@ public class Questions {
 
 	public Questions(int questionId, int questionLevel, String questionStem, String option1, String option2,
 			String option3, String option4, String correctAnswer) {
-		super();
 		this.questionId = questionId;
 		this.questionLevel = questionLevel;
 		this.questionStem = questionStem;

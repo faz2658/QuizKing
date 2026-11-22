@@ -18,6 +18,7 @@ import { DuelList } from '../ui/duel-list';
 
 type Filter = 'ALL' | 'SINGLE' | 'MULTI';
 
+/** The games page: today's challenge, recommendations and every game, with search. */
 @Component({
   selector: 'mv-home',
   imports: [FormsModule, RouterLink, GameCardView, BlurText, DailyBanner, ProgressStrip, FriendsStrip, DuelList],

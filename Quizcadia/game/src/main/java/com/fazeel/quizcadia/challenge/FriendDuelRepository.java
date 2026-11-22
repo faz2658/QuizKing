@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;
 
+/** Duels in MongoDB. */
 public interface FriendDuelRepository extends MongoRepository<FriendDuel, String> {
 
 	/** Challenges a player sent or accepted (or declined), newest first. */

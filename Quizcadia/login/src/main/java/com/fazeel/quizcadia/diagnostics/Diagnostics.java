@@ -23,6 +23,7 @@ public final class Diagnostics {
 	private Diagnostics() {
 	}
 
+	/** Allows a request only from the container itself (loopback), for endpoints that can expose secrets. */
 	public static AuthorizationManager<RequestAuthorizationContext> fromInsideTheContainer() {
 		return (authentication, context) -> new AuthorizationDecision(isLoopback(context.getRequest().getRemoteAddr()));
 	}

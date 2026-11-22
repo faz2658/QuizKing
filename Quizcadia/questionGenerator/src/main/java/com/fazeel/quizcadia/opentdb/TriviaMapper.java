@@ -33,10 +33,15 @@ public class TriviaMapper {
 		}
 	}
 
+	/** The bank category and topic for the question. */
 	public Placement placement(TriviaQuestion q) {
 		return Placement.of(q.category());
 	}
 
+	/**
+	 * The bank question, with the options shuffled (True, False for true/false ones); empty when it is incomplete
+	 * or has more than four options.
+	 */
 	public Optional<Questions> map(TriviaQuestion t) {
 		if (t.question() == null || t.correctAnswer() == null || t.incorrectAnswers() == null
 				|| t.incorrectAnswers().isEmpty()) {

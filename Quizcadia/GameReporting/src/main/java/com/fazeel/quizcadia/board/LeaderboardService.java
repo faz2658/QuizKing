@@ -86,6 +86,7 @@ public class LeaderboardService {
 		return new Place(you.country(), compatriots.indexOf(you) + 1, compatriots.size(), topPercent);
 	}
 
+	/** Which stretch a leaderboard covers: today, this week (from Monday, UTC) or all time. */
 	public enum Period {
 		DAY, WEEK, ALL
 	}
@@ -158,12 +159,18 @@ public class LeaderboardService {
 		return new CountryBoard(period, entries);
 	}
 
+	/** A country's rank, total XP and number of players. */
 	public record CountryEntry(int rank, String country, int xp, int players) {
 	}
 
+	/** The country leaderboard for a period. */
 	public record CountryBoard(Period period, List<CountryEntry> countries) {
 	}
 
+	/**
+	 * The player leaderboard: the top players, how many played, the caller's own entry (even outside the top) and,
+	 * for internal use only, everyone.
+	 */
 	public record XpBoard(Period period, Integer categoryId, int players, List<XpEntry> top, XpEntry you,
 			@JsonIgnore List<XpEntry> all) {
 	}
@@ -185,6 +192,7 @@ public class LeaderboardService {
 	public record Place(String country, int countryRank, int countryPlayers, int topPercent) {
 	}
 
+	/** One run of today's Daily Challenge on its leaderboard. */
 	public record DailyEntry(int rank, int userId, String name, int score, Integer maxScore, int correctAnswers,
 			int totalQuestions, String country) {
 	}

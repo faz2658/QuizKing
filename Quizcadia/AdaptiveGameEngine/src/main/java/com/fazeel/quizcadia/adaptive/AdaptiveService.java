@@ -21,6 +21,10 @@ import com.fazeel.quizcadia.adaptive.SessionRepository;
 import com.fazeel.quizcadia.domain.AdaptiveResult;
 import com.fazeel.quizcadia.domain.Game;
 
+/**
+ * Runs adaptive sessions: starts them from a cached game and its topic's questions, records answers, and publishes
+ * the result once a session completes.
+ */
 @Service
 public class AdaptiveService {
 
@@ -54,14 +58,17 @@ public class AdaptiveService {
 		this.clock = clock;
 	}
 
+	/** Keeps a copy of a game the game manager published, so sessions can start without asking it. */
 	public void cacheGame(Game game) {
 		games.save(game);
 	}
 
+	/** Forgets a deleted game; sessions already running keep their own copy of its questions. */
 	public void removeGame(int gameId) {
 		games.deleteById(gameId);
 	}
 
+	/** Starts a session for the player without a country preference (questions from everywhere). */
 	public AdaptiveSession start(int gameId, int userId) {
 		return start(gameId, userId, null);
 	}
@@ -80,11 +87,16 @@ public class AdaptiveService {
 		return save(session);
 	}
 
+	/**
+	 * The session as it stands now: questions whose time ran out are closed first (and saved) so the caller never
+	 * sees a stale question.
+	 */
 	public AdaptiveSession get(String sessionId) {
 		AdaptiveSession s = load(sessionId);
 		return s.expireOverdue(clock.instant()) ? save(s) : s;
 	}
 
+	/** Records the player's answer to the open question and returns how it went with the updated session. */
 	public AnswerResult answer(String sessionId, int questionId, String answer) {
 		AdaptiveSession s = load(sessionId);
 		Outcome outcome = s.answer(questionId, answer, clock.instant());
@@ -119,6 +131,7 @@ public class AdaptiveService {
 				s.getAsked().size(), s.getCompletedAt(), answers);
 	}
 
+	/** What answering returned: the outcome of that answer and the session after it. */
 	public record AnswerResult(Outcome outcome, AdaptiveSession session) {
 	}
 }

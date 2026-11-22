@@ -18,6 +18,7 @@ public final class PushServices {
 	private PushServices() {
 	}
 
+	/** True for an https URL on a known push service (FCM, Apple, Mozilla, Windows) on the default port. */
 	public static boolean allowed(String endpoint) {
 		if (endpoint == null || endpoint.length() > 2048) {
 			return false;

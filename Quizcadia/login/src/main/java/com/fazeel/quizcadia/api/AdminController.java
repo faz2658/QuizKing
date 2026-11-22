@@ -26,6 +26,10 @@ public class AdminController {
 		this.stats = stats;
 	}
 
+	/**
+	 * Account numbers for the last 1 to 90 days, for admins only (checked against the account, not just the
+	 * token).
+	 */
 	@GetMapping("/stats")
 	public AccountStats.View stats(@AuthenticationPrincipal Jwt jwt, @RequestParam(defaultValue = "30") int days) {
 		int userId;

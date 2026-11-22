@@ -2,6 +2,7 @@ package com.fazeel.quizcadia.domain;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 
+/** Points for a right answer at each level. */
 public class GameQuestionScore {
 
 	private int gqScoreId;
@@ -43,7 +44,6 @@ public class GameQuestionScore {
 
 	public GameQuestionScore(int gqScoreId, int easyQuestionsScore, int mediumQuestionsScore,
 			int advanceQuestionsScore) {
-		super();
 		this.gqScoreId = gqScoreId;
 		this.easyQuestionsScore = easyQuestionsScore;
 		this.mediumQuestionsScore = mediumQuestionsScore;

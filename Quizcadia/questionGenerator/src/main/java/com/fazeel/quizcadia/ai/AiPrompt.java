@@ -18,6 +18,7 @@ import tools.jackson.databind.json.JsonMapper;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record AiPrompt(String system, String user, @JsonProperty("no_think_suffix") String noThinkSuffix) {
 
+	/** Reads the prompt from the classpath (ai/prompt.json). */
 	public static AiPrompt load() {
 		try (InputStream in = new ClassPathResource("ai/prompt.json").getInputStream()) {
 			return JsonMapper.builder().build().readValue(in, AiPrompt.class);
@@ -27,6 +28,7 @@ public record AiPrompt(String system, String user, @JsonProperty("no_think_suffi
 		}
 	}
 
+	/** The user message for one question, in the training format. */
 	public String userTurn(String topic, String difficulty, String format) {
 		return user.replace("{topic}", topic).replace("{difficulty}", difficulty).replace("{format}", format)
 				+ noThinkSuffix;

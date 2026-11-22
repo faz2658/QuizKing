@@ -28,11 +28,13 @@ public class SessionCookie {
 		this.clock = clock;
 	}
 
+	/** Sets the refresh cookie, lasting until the session ends. */
 	public void set(HttpServletResponse response, SessionService.Issued issued) {
 		Duration maxAge = Duration.between(clock.instant(), issued.expiresAt());
 		response.addHeader(HttpHeaders.SET_COOKIE, cookie(issued.token(), maxAge.isNegative() ? Duration.ZERO : maxAge));
 	}
 
+	/** Removes the refresh cookie. */
 	public void clear(HttpServletResponse response) {
 		response.addHeader(HttpHeaders.SET_COOKIE, cookie("", Duration.ZERO));
 	}

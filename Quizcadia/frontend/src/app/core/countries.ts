@@ -19,6 +19,7 @@ export function flag(code: string | null | undefined): string {
 
 let names: Intl.DisplayNames | null = null;
 
+/** The English name of a country code (e.g. IN gives India), or the code when it is unknown. */
 export function countryName(code: string): string {
   try {
     names ??= new Intl.DisplayNames(['en'], { type: 'region' });

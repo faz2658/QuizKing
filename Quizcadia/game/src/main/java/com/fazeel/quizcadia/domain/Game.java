@@ -10,6 +10,10 @@ import org.springframework.data.annotation.Id;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+/**
+ * A playable game as the game manager publishes it: its rules, times and points per level, how many questions of
+ * each level, and its topic.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "games")
 public class Game {
@@ -165,7 +169,6 @@ public class Game {
 			Date createdOn, GameType gameType, String gameDescription, String gameRules,
 			GameQuestionLevel questionLevels, GameQuestionTime questionTime, GameQuestionScore questionScore,
 			Topic topic, List<Questions> questions) {
-		super();
 		this.gameId = gameId;
 		this.categoryId = categoryId;
 		this.userId = userId;
@@ -186,5 +189,4 @@ public class Game {
 	@JsonCreator
 	public Game() {
 	}
-
 }

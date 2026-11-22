@@ -13,6 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public record Inquiry(@Id String id, Kind kind, String name, String email, String organisation, String occasion,
 		String date, Integer groupSize, String city, String message, Status status, Instant createdAt, Instant updatedAt) {
 
+	/** What the request is for: a private quiz event, or quiz nights at a venue. */
 	public enum Kind {
 		EVENT, VENUE
 	}
@@ -22,6 +23,7 @@ public record Inquiry(@Id String id, Kind kind, String name, String email, Strin
 		NEW, CONTACTED, BOOKED, CLOSED
 	}
 
+	/** The same request with a new status (handled, archived...) and when it changed. */
 	public Inquiry withStatus(Status s, Instant now) {
 		return new Inquiry(id, kind, name, email, organisation, occasion, date, groupSize, city, message, s, createdAt, now);
 	}

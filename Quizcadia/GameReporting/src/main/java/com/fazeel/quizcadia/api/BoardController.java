@@ -76,11 +76,13 @@ public class BoardController {
 		return NameMask.cup(cup.view(Callers.currentUserId()), Callers.isAdmin());
 	}
 
+	/** Countries ranked by the XP their players earned in the period (day, week or all time). */
 	@GetMapping("/leaderboards/countries")
 	public LeaderboardService.CountryBoard countries(@RequestParam(defaultValue = "WEEK") Period period) {
 		return boards.countries(period, clock.instant());
 	}
 
+	/** A player's country (ISO code), as they set it on the World page. */
 	public record MyCountry(String country) {
 	}
 

@@ -15,6 +15,7 @@ const REASONS: Record<string, string> = {
   PLAY_AGAIN: 'Play again',
 };
 
+/** A game's card with its play buttons. */
 @Component({
   selector: 'mv-game-card',
   imports: [RouterLink, Tilt],

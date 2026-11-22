@@ -24,6 +24,7 @@ public class PlayerNames {
 		this.clock = clock;
 	}
 
+	/** Saves a player's display name when it is new or changed. */
 	public void remember(int userId, String name) {
 		if (name == null || name.isBlank() || name.equals(known.get(userId))) {
 			return;
@@ -45,6 +46,7 @@ public class PlayerNames {
 		names.save(new PlayerName(userId, n, clock.instant(), c));
 	}
 
+	/** The countries of these players, for those who set one. */
 	public Map<Integer, String> countries(Collection<Integer> userIds) {
 		Map<Integer, String> found = new HashMap<>();
 		names.findAllById(userIds).forEach(p -> {
@@ -55,6 +57,7 @@ public class PlayerNames {
 		return found;
 	}
 
+	/** The display names of these players. */
 	public Map<Integer, String> lookup(Collection<Integer> userIds) {
 		Map<Integer, String> found = names.findAllById(userIds).stream()
 				.collect(Collectors.toMap(PlayerName::userId, PlayerName::name, (a, b) -> a));

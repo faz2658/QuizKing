@@ -41,6 +41,10 @@ public class MatchController {
 		this.updates = updates;
 	}
 
+	/**
+	 * The match as the caller sees it now (players see only their own answers; the open question never shows its
+	 * answer).
+	 */
 	@GetMapping("/{matchId}")
 	public MatchView match(@PathVariable String matchId, @RequestParam int userId) {
 		Callers.requireSelf(userId);
@@ -116,6 +120,7 @@ public class MatchController {
 		}));
 	}
 
+	/** Answers the open question for the caller and returns how it went with the updated match. */
 	@PostMapping("/{matchId}/answers")
 	public AnswerView answer(@PathVariable String matchId, @Valid @RequestBody AnswerRequest request) {
 		Callers.requireSelf(request.userId());

@@ -37,6 +37,7 @@ public class WorldController {
 	public record Heartbeat(String country) {
 	}
 
+	/** The "online now" numbers: players online, by country, open lobbies and the Quick Match queue. */
 	public record Online(int online, List<CountryCount> countries, List<OpenLobby> lobbies, int quickQueue) {
 	}
 
@@ -53,22 +54,26 @@ public class WorldController {
 		return presence.whoIsOnline();
 	}
 
+	/** Who is online right now (seen in the last 2 minutes), by country, and the open lobbies. */
 	@GetMapping("/online")
 	public Online online() {
 		return new Online(presence.online(), presence.byCountry(), matchmaker.openLobbies(), quick.waiting());
 	}
 
+	/** Puts the caller in the global Quick Match queue. */
 	@PostMapping("/quick")
 	public QuickMatch.Status joinQuick() {
 		presence.seen(Callers.currentUserId(), Callers.currentUserName(), null);
 		return quick.join(Callers.currentUserId());
 	}
 
+	/** Where the caller stands in the Quick Match queue (matched, still waiting, when a bot steps in). */
 	@GetMapping("/quick")
 	public QuickMatch.Status quickStatus() {
 		return quick.status(Callers.currentUserId());
 	}
 
+	/** Takes the caller out of the Quick Match queue. */
 	@DeleteMapping("/quick")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void leaveQuick() {

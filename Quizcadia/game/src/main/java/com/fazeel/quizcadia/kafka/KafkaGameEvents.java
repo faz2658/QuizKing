@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 import com.fazeel.quizcadia.domain.GameRequest;
 import com.fazeel.quizcadia.domain.SinglePlayerResult;
 
+/** Sends game requests and results over Kafka. */
 @Component
 @ConditionalOnProperty(name = "quizcadia.kafka.enabled", havingValue = "true", matchIfMissing = true)
 public class KafkaGameEvents implements GameEvents {
@@ -28,12 +29,14 @@ public class KafkaGameEvents implements GameEvents {
 		this.resultTopic = resultTopic;
 	}
 
+	/** Asks the game manager to publish a game this engine doesn't have yet. */
 	@Override
 	public void requestGame(GameRequest request) {
 		log.info("Requesting game {} from the game manager", request.gameId());
 		kafka.send(gameRequestTopic, String.valueOf(request.gameId()), request);
 	}
 
+	/** Publishes a finished game, for reporting (scores, XP, streaks, badges). */
 	@Override
 	public void publishResult(SinglePlayerResult result) {
 		log.info("Publishing result of session {} (score {})", result.sessionId(), result.score());

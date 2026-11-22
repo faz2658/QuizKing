@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import java.util.List;
 
-
+/** A topic inside a category, with its questions (or, in lists, only their counts per level). */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Topic {
 
@@ -38,21 +38,14 @@ public class Topic {
 	}
 		@JsonCreator
 		public Topic() {
-			super();
-			// TODO Auto-generated constructor stub
 		}
-		
-		
-		
+
 		public Topic(int topicId, String topicName, String topicImage, List<Questions> questions) {
-			super();
 			this.topicId = topicId;
 			this.topicName = topicName;
 			this.topicImage = topicImage;
 			this.questions = questions;
 		}
-
-
 
 		public int getTopicId() {
 			return topicId;
@@ -83,8 +76,6 @@ public class Topic {
 			return "Topic [topicId=" + topicId + ", topicName=" + topicName + ", topicImage=" + topicImage
 					+ ", questions=" + questions + "]";
 		}
-		
-		
 
 	public List<Integer> getRemovedQuestionIds() {
 		return removedQuestionIds;

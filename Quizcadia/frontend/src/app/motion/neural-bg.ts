@@ -26,6 +26,7 @@ const GONE = { alpha: 0, spin: 0, lean: 0 };
 /** At most about 60 frames a second (a little under 16.7 ms, so a 60 Hz screen never skips one). */
 export const MIN_FRAME_MS = 15;
 
+/** Where the camera looks for each pose: the brain on the sign-in page, and moved aside and faded out elsewhere. */
 export const POSES: Record<PoseName, ScenePose> = {
   hero: { x: 0, y: 0, zoom: 1, alpha: 0.9, spin: 1, lean: 1 },
   browse: { x: 1.4, y: 0.1, zoom: 1.6, ...GONE },

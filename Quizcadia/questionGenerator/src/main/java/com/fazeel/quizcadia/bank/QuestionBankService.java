@@ -26,6 +26,10 @@ import com.fazeel.quizcadia.generator.FactQuestionGenerator;
 import com.fazeel.quizcadia.generator.FactSource;
 import com.fazeel.quizcadia.generator.QuestionTemplate;
 
+/**
+ * Reads and changes the question bank. Every change goes out as a bank event, with only the changed topic, so the
+ * game manager can update its games.
+ */
 @Service
 public class QuestionBankService {
 
@@ -76,6 +80,7 @@ public class QuestionBankService {
 				mongo.getConverter().read(Questions.class, question)));
 	}
 
+	/** Every category with its topics and questions. */
 	public List<Category> categories() {
 		return categories.findAll();
 	}
@@ -85,10 +90,12 @@ public class QuestionBankService {
 		return TopicCounts.read(mongo);
 	}
 
+	/** One category; NotFoundException if there is none. */
 	public Category category(int categoryId) {
 		return categories.findById(categoryId).orElseThrow(() -> new NotFoundException("No category " + categoryId));
 	}
 
+	/** Creates an empty category with the next category id; the name must be new (ignoring case). */
 	public Category createCategory(String name, String image) {
 		if (name == null || name.isBlank()) {
 			throw new InvalidQuestionException("categoryName is required");
@@ -104,6 +111,7 @@ public class QuestionBankService {
 		return publish(categories.save(c));
 	}
 
+	/** Adds an empty topic with the next topic id; the name must be new in the category (ignoring case). */
 	public Category addTopic(int categoryId, String topicName, String image) {
 		if (topicName == null || topicName.isBlank()) {
 			throw new InvalidQuestionException("topicName is required");
@@ -123,10 +131,12 @@ public class QuestionBankService {
 		return publish(categories.save(c));
 	}
 
+	/** A topic's questions, found by category id and topic name (ignoring case). */
 	public List<Questions> questions(int categoryId, String topicName) {
 		return questions(topic(category(categoryId), topicName));
 	}
 
+	/** Validates the question and adds it to the topic with the next question id; its type defaults to manual. */
 	public Questions addQuestion(int categoryId, String topicName, Questions q) {
 		QuestionRules.validate(q);
 		Category c = category(categoryId);
@@ -143,6 +153,7 @@ public class QuestionBankService {
 		return q;
 	}
 
+	/** Validates the question and replaces the one with that id, keeping its type when none is given. */
 	public Questions updateQuestion(int categoryId, String topicName, int questionId, Questions q) {
 		QuestionRules.validate(q);
 		Category c = category(categoryId);
@@ -160,6 +171,7 @@ public class QuestionBankService {
 		return q;
 	}
 
+	/** Removes the question and publishes its id as removed, so the game manager drops it too. */
 	public void deleteQuestion(int categoryId, String topicName, int questionId) {
 		Category c = category(categoryId);
 		Topic t = topic(c, topicName);

@@ -49,6 +49,7 @@ public class PushController {
 	public record KeyView(String publicKey) {
 	}
 
+	/** Our VAPID public key for the browser's pushManager.subscribe(); null when reminders aren't switched on. */
 	@GetMapping("/key")
 	public KeyView key() {
 		WebPush p = push.getIfAvailable();
@@ -60,9 +61,14 @@ public class PushController {
 			@NotBlank @Size(max = 100) String auth, @Size(max = 64) String timeZone) {
 	}
 
+	/** Which browser subscription to remove (its endpoint). */
 	public record Unsubscribe(@NotBlank @Size(max = 2048) String endpoint) {
 	}
 
+	/**
+	 * Saves the caller's browser subscription for streak reminders, with its time zone. Only real push services,
+	 * valid keys, at most 10 browsers each.
+	 */
 	@PostMapping("/subscriptions")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void subscribe(@Valid @RequestBody Subscribe s) {
@@ -85,6 +91,7 @@ public class PushController {
 		subscriptions.save(new PushSubscription(s.endpoint(), me, s.p256dh(), s.auth(), zone, clock.instant(), null));
 	}
 
+	/** Removes one of the caller's own browser subscriptions (someone else's endpoint is ignored). */
 	@DeleteMapping("/subscriptions")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void unsubscribe(@Valid @RequestBody Unsubscribe u) {

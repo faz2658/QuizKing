@@ -34,17 +34,21 @@ public final class Views {
 		}
 	}
 
+	/** The answer to one question, as the option's text. */
 	public record AnswerRequest(@Positive int questionId, @NotNull String answer) {
 	}
 
+	/** A custom quiz: the games to mix, one difficulty (or mixed) and how many questions. */
 	public record CustomRequest(@NotNull List<Integer> gameIds,
 			@NotNull GameSessionService.CustomDifficulty difficulty, int count,
 			@Pattern(regexp = "[A-Za-z]{2}") String country) {
 	}
 
+	/** Which lifeline to use on which question. */
 	public record LifelineRequest(@NotNull Lifeline lifeline, @Positive int questionId) {
 	}
 
+	/** A game in the catalog, without its questions. */
 	public record GameSummary(int gameId, String gameName, String gameDescription, String gameImage,
 			String gameRules, int categoryId, String topic, int questionCount) {
 
@@ -81,6 +85,7 @@ public final class Views {
 		}
 	}
 
+	/** What happened to an answer: right or wrong, the correct answer, points, combo and the updated session. */
 	public record AnswerView(boolean correct, boolean timedOut, String correctAnswer, int pointsAwarded,
 			SessionView session, int combo, double multiplier, boolean skipped, String explanation) {
 
@@ -94,11 +99,13 @@ public final class Views {
 	public record LifelineView(Lifeline lifeline, AnswerView skipped, SessionView session) {
 	}
 
+	/** One question in the end-of-game review, with the player's answer and the correct one. */
 	public record ReviewItem(int questionId, int number, String difficulty, String stem, String yourAnswer, String correctAnswer,
 			boolean correct, boolean timedOut, int pointsAwarded, int points, boolean skipped, double multiplier,
 			String explanation) {
 	}
 
+	/** A finished game: the score, the review and, for a challenge, the score to beat. */
 	public record ResultView(String sessionId, int gameId, String gameName, int score, int maxScore,
 			int percentage, long correctAnswers, int totalQuestions, List<ReviewItem> review, String variant,
 			String variantKey, Integer opponentScore) {

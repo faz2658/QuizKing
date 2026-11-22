@@ -16,6 +16,7 @@ import jakarta.persistence.Table;
 @Table(name = "accounts")
 public class Account {
 
+	/** USER for players, ADMIN for the admin pages (granted to the emails listed in QUIZCADIA_ADMIN_EMAILS). */
 	public enum Role {
 		USER, ADMIN
 	}

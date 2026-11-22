@@ -39,6 +39,7 @@ public class KnowMeService {
 		this.clock = clock;
 	}
 
+	/** Creates a quiz of 3 to 15 checked questions; a player can have up to 20. */
 	public KnowMeQuiz create(int ownerId, String ownerName, List<Question> questions) {
 		if (questions == null || questions.size() < MIN_QUESTIONS || questions.size() > MAX_QUESTIONS) {
 			throw new QuizRuleException("Write between " + MIN_QUESTIONS + " and " + MAX_QUESTIONS + " questions");
@@ -50,22 +51,27 @@ public class KnowMeService {
 		return quizzes.save(new KnowMeQuiz(newId(), ownerId, ownerName, clean, clock.instant()));
 	}
 
+	/** The quiz; NotFoundException if there is none. */
 	public KnowMeQuiz get(String id) {
 		return quizzes.findById(id).orElseThrow(() -> new NotFoundException("This quiz doesn't exist (any more)"));
 	}
 
+	/** The owner's quizzes, newest first. */
 	public List<KnowMeQuiz> mine(int ownerId) {
 		return quizzes.findByOwnerIdOrderByCreatedAtDesc(ownerId);
 	}
 
+	/** The player's answers to the quiz, if they answered. */
 	public Optional<KnowMeAttempt> attempt(String quizId, int userId) {
 		return attempts.findById(KnowMeAttempt.idOf(quizId, userId));
 	}
 
+	/** Every attempt, best score first, earlier finish first on a tie. */
 	public List<KnowMeAttempt> leaderboard(String quizId) {
 		return attempts.findByQuizIdOrderByScoreDescCompletedAtAsc(quizId);
 	}
 
+	/** How many friends answered the quiz. */
 	public long players(String quizId) {
 		return attempts.countByQuizId(quizId);
 	}

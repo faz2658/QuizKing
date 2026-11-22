@@ -99,6 +99,7 @@ public class DuelController {
 		}
 	}
 
+	/** Creates a challenge for a game; signed-in players only (403 for guests). */
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public DuelView create(@Valid @RequestBody CreateDuel request) {
@@ -118,12 +119,14 @@ public class DuelController {
 		return duels.mine(me).stream().map(d -> DuelView.of(duels.standing(d), me)).toList();
 	}
 
+	/** The challenge as the caller sees it. */
 	@GetMapping("/{id}")
 	public DuelView get(@PathVariable String id) {
 		int me = Callers.currentUserId();
 		return DuelView.of(duels.standing(duels.get(id)), me);
 	}
 
+	/** Accepts the challenge and draws the questions for both players. */
 	@PostMapping("/{id}/accept")
 	public DuelView accept(@PathVariable String id, @Valid @RequestBody(required = false) AcceptDuel request) {
 		int me = Callers.currentUserId();
@@ -131,6 +134,7 @@ public class DuelController {
 		return DuelView.of(duels.standing(d), me);
 	}
 
+	/** Declines the challenge. */
 	@PostMapping("/{id}/decline")
 	public DuelView decline(@PathVariable String id) {
 		int me = Callers.currentUserId();

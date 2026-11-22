@@ -28,6 +28,7 @@ public class InternalTopicController {
 		this.bank = bank;
 	}
 
+	/** The topic's playable questions; 404 for an unknown topic. */
 	@GetMapping("/{topicId}/questions")
 	public List<Questions> questions(@PathVariable int topicId) {
 		return bank.topicQuestions(topicId);

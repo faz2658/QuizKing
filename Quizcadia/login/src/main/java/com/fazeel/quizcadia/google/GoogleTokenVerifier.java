@@ -36,6 +36,7 @@ public class GoogleTokenVerifier {
 		this.decoder = this.clientId.isEmpty() ? null : decoder(this.clientId);
 	}
 
+	/** True when a Google client id is configured. */
 	public boolean enabled() {
 		return decoder != null;
 	}
@@ -45,6 +46,10 @@ public class GoogleTokenVerifier {
 		return clientId;
 	}
 
+	/**
+	 * Checks a Google ID token (signature, issuer, audience, expiry) and returns who signed in. Throws
+	 * GoogleSignInException when it isn't valid or Google sign-in isn't set up.
+	 */
 	public GoogleIdentity verify(String credential) {
 		if (!enabled()) {
 			throw new GoogleSignInException("Google sign-in is not set up on this server");

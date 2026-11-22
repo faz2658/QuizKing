@@ -4,12 +4,11 @@ import { AccountStatsView, ActivityStatsView, AdminStatsApi, OnlinePlayer } from
 import { countryName, flag } from '../core/countries';
 import { errorMessage } from '../core/http-errors';
 import { AdminTabs } from '../ui/admin-tabs';
+import { RetentionPanel } from '../ui/retention-panel';
 
 interface Bar { label: string; value: number; extra?: string }
 
 /** Admin dashboard: sign-ups, active players and what people play. */
-import { RetentionPanel } from '../ui/retention-panel';
-
 @Component({
   selector: 'mv-stats',
   imports: [DatePipe, AdminTabs, RetentionPanel],

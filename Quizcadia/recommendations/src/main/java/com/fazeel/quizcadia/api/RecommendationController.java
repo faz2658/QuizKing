@@ -16,6 +16,7 @@ import com.fazeel.quizcadia.recommend.RecommendationService;
 
 import jakarta.validation.constraints.Size;
 
+/** Recommendations and favourite categories; a player can only see and change their own (admins anyone's). */
 @RestController
 @RequestMapping("/api/v1/recommendation")
 public class RecommendationController {
@@ -26,21 +27,25 @@ public class RecommendationController {
 		this.service = service;
 	}
 
+	/** Games ranked for the player, up to limit (1-50). */
 	@GetMapping("/users/{userId}")
 	public List<Recommendation> forUser(@PathVariable int userId, @RequestParam(defaultValue = "12") int limit) {
 		return service.forUser(userId, limit);
 	}
 
+	/** The most played games overall, up to limit (1-50). */
 	@GetMapping("/trending")
 	public List<Recommendation> trending(@RequestParam(defaultValue = "12") int limit) {
 		return service.trending(limit);
 	}
 
+	/** The category ids the player picked. */
 	@GetMapping("/users/{userId}/favorite-categories")
 	public List<Integer> favoriteCategories(@PathVariable int userId) {
 		return service.favoriteCategories(userId);
 	}
 
+	/** Replaces the player's favourite categories (at most 20) and returns them. */
 	@PutMapping("/users/{userId}/favorite-categories")
 	public List<Integer> setFavoriteCategories(@PathVariable int userId,
 			@RequestBody @Size(max = 20) Set<Integer> categoryIds) {

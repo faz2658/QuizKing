@@ -36,6 +36,10 @@ import com.fazeel.quizcadia.session.SessionQuestion;
 import com.fazeel.quizcadia.session.SessionStatus;
 import com.fazeel.quizcadia.session.SessionVariant;
 
+/**
+ * Plays solo games: builds a session from a game's questions, scores answers and lifelines, skips questions whose
+ * time ran out, and publishes each finished game's result once.
+ */
 @Service
 public class GameSessionService {
 
@@ -65,14 +69,17 @@ public class GameSessionService {
 		this.clock = clock;
 	}
 
+	/** Every cached game. */
 	public List<Game> availableGames() {
 		return games.findAll();
 	}
 
+	/** Starts a game with no player name or country. */
 	public GameSession start(int gameId, int userId) {
 		return start(gameId, userId, null);
 	}
 
+	/** Starts a game with no country preference. */
 	public GameSession start(int gameId, int userId, String playerName) {
 		return start(gameId, userId, playerName, null);
 	}
@@ -188,6 +195,7 @@ public class GameSessionService {
 		return session;
 	}
 
+	/** Answers a question of the session. */
 	public AnswerResult answer(String sessionId, int questionId, String answer) {
 		GameSession session = load(sessionId);
 		AnswerOutcome outcome = session.answer(questionId, answer, clock.instant());
@@ -209,6 +217,7 @@ public class GameSessionService {
 		return new LifelineResult(skipped.orElse(null), save(session));
 	}
 
+	/** The finished session; QuizRuleException while it is still running. */
 	public GameSession result(String sessionId) {
 		GameSession session = get(sessionId);
 		if (session.getStatus() != SessionStatus.COMPLETED) {
@@ -245,9 +254,11 @@ public class GameSessionService {
 				s.getPlayerName());
 	}
 
+	/** An answer's outcome and the saved session. */
 	public record AnswerResult(AnswerOutcome outcome, GameSession session) {
 	}
 
+	/** The saved session, and the skipped question's outcome for a skip (else null). */
 	public record LifelineResult(AnswerOutcome skipped, GameSession session) {
 	}
 }

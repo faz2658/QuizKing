@@ -24,11 +24,8 @@ public class Category {
 	private List<Topic> topic;
 	@JsonCreator
 	public Category() {
-		super();
-		// TODO Auto-generated constructor stub
 	}
 	public Category(int categoryId, String categoryName, String categoryImage, List<Topic> topic) {
-		super();
 		this.categoryId = categoryId;
 		this.categoryName = categoryName;
 		this.categoryImage = categoryImage;
@@ -58,14 +55,12 @@ public class Category {
 	public void setTopic(List<Topic> topic) {
 		this.topic = topic;
 	}
-	
+
 	@Override
 	public String toString() {
 		return "Category [categoryId=" + categoryId + ", categoryName=" + categoryName + ", categoryImage="
 				+ categoryImage + ", topic=" + topic + "]";
 	}
-	
-	
 
 	public String getCountryCode() {
 		return countryCode;

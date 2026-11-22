@@ -17,14 +17,17 @@ public enum Difficulty {
 		this.defaultPoints = defaultPoints;
 	}
 
+	/** The bank's level: 1, 2 or 3. */
 	public int level() {
 		return level;
 	}
 
+	/** Seconds to answer when the game sets none. */
 	public int defaultSeconds() {
 		return defaultSeconds;
 	}
 
+	/** Points for a right answer when the game sets none. */
 	public int defaultPoints() {
 		return defaultPoints;
 	}

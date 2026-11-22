@@ -18,6 +18,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class BoardCache {
 
+	/** A computed (or still computing) value and when it stops being reused. */
 	private record Entry(CompletableFuture<Object> value, Instant expires) {
 	}
 
@@ -34,6 +35,10 @@ public class BoardCache {
 		this(Clock.systemUTC());
 	}
 
+	/**
+	 * The value for key: the cached one while fresh, else computed once by the first caller while the others wait
+	 * for that same result.
+	 */
 	@SuppressWarnings("unchecked")
 	public <T> T get(String key, Duration ttl, Supplier<T> compute) {
 		Instant now = clock.instant();

@@ -28,6 +28,7 @@ public final class TopicPool {
 		return options.size() >= 2 && options.stream().anyMatch(o -> o.equalsIgnoreCase(q.getCorrectAnswer().trim()));
 	}
 
+	/** The topic's playable questions (none for a missing topic). */
 	public static List<Questions> playable(Topic t) {
 		return t == null || t.getQuestions() == null ? List.of()
 				: t.getQuestions().stream().filter(TopicPool::playable).toList();

@@ -6,6 +6,7 @@ import java.util.Locale;
 
 import org.springframework.stereotype.Service;
 
+/** Searches games by name. */
 @Service
 public class SearchService {
 

@@ -22,10 +22,12 @@ public final class InternalHttp {
 	private InternalHttp() {
 	}
 
+	/** A request factory with the default time limits. */
 	public static ClientHttpRequestFactory requestFactory() {
 		return requestFactory(READ_TIMEOUT);
 	}
 
+	/** A request factory with the connect limit and the given read limit. */
 	public static ClientHttpRequestFactory requestFactory(Duration readTimeout) {
 		HttpClient client = HttpClient.newBuilder().connectTimeout(CONNECT_TIMEOUT).build();
 		JdkClientHttpRequestFactory factory = new JdkClientHttpRequestFactory(client);

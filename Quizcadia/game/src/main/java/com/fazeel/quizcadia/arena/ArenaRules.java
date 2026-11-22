@@ -27,11 +27,13 @@ public final class ArenaRules {
 	private ArenaRules() {
 	}
 
+	/** Start of the round running at now: now rounded down to the interval. */
 	public static Instant roundStart(Instant now) {
 		long s = INTERVAL.toSeconds();
 		return Instant.ofEpochSecond(Math.floorDiv(now.getEpochSecond(), s) * s);
 	}
 
+	/** When question index opens. */
 	public static Instant opens(Instant start, int index) {
 		return start.plus(SLOT.multipliedBy(index));
 	}
@@ -66,8 +68,9 @@ public final class ArenaRules {
 		return QUESTIONS - 1;
 	}
 
+	/** When a round that stops after lastQuestion is over: when the next question would have opened. */
 	public static Instant endsAt(Instant start, int lastQuestion) {
-		return opens(start, lastQuestion + 1).minus(Duration.ZERO);
+		return opens(start, lastQuestion + 1);
 	}
 
 	/** Points for a right answer: the base plus up to {@value #SPEED_POINTS} for answering early. */

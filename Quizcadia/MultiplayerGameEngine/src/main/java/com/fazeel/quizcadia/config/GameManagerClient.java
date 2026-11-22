@@ -30,6 +30,10 @@ public class GameManagerClient implements GameSource {
 		this.breaker = breakers.forService("game-manager");
 	}
 
+	/**
+	 * The full multiplayer game from the game manager's internal API, or empty when it doesn't know it or can't be
+	 * reached (circuit breaker).
+	 */
 	@Override
 	public Optional<MultiPlayerGame> fetch(int gameId) {
 		try {

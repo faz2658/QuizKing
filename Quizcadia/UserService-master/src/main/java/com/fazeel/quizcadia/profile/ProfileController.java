@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import jakarta.validation.Valid;
 
+/** Profiles: a player reads and edits their own; listing them is for admins. */
 @RestController
 @RequestMapping("/api/v1/users")
 public class ProfileController {
@@ -27,21 +28,25 @@ public class ProfileController {
 		this.service = service;
 	}
 
+	/** Every profile, or the one with that email. */
 	@GetMapping
 	public List<UserProfile> users(@RequestParam(required = false) String email) {
 		return email == null ? service.all() : List.of(service.byEmail(email));
 	}
 
+	/** One profile. */
 	@GetMapping("/{userId}")
 	public UserProfile user(@PathVariable int userId) {
 		return service.get(userId);
 	}
 
+	/** Changes the fields that are set in the body. */
 	@PatchMapping("/{userId}")
 	public UserProfile update(@PathVariable int userId, @Valid @RequestBody ProfileChanges changes) {
 		return service.update(userId, changes);
 	}
 
+	/** Deletes the profile. */
 	@DeleteMapping("/{userId}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable int userId) {

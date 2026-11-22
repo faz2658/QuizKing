@@ -256,11 +256,13 @@ public class IdempotencyFilter extends OncePerRequestFilter {
 		public ServletInputStream getInputStream() {
 			ByteArrayInputStream in = new ByteArrayInputStream(body);
 			return new ServletInputStream() {
+				/** Reads one byte of the saved request body. */
 				@Override
 				public int read() {
 					return in.read();
 				}
 
+				/** Reads part of the saved request body. */
 				@Override
 				public int read(byte[] b, int off, int len) {
 					return in.read(b, off, len);

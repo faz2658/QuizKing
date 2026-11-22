@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 
+/** A question of a know-me quiz as the player sees it. */
 export interface KnowMeQuestion {
   text: string;
   options: string[];
@@ -9,6 +10,7 @@ export interface KnowMeQuestion {
   answer: number | null;
 }
 
+/** A row of a know-me quiz's leaderboard; you marks the player. */
 export interface KnowMeEntry {
   rank: number;
   name: string;
@@ -16,6 +18,7 @@ export interface KnowMeEntry {
   you: boolean;
 }
 
+/** A know-me quiz as the player sees it; own is true for its owner. */
 export interface KnowMeView {
   id: string;
   ownerName: string;
@@ -28,6 +31,7 @@ export interface KnowMeView {
   createdAt: string;
 }
 
+/** One of the player's own quizzes, with how many friends answered it. */
 export interface KnowMeMine {
   id: string;
   questions: number;
@@ -35,12 +39,14 @@ export interface KnowMeMine {
   createdAt: string;
 }
 
+/** A question the owner writes: 2 to 4 options and the index of the right one. */
 export interface KnowMeDraft {
   text: string;
   options: string[];
   answer: number;
 }
 
+/** "How well do you know me?" quizzes, from the game engine. */
 @Injectable({ providedIn: 'root' })
 export class KnowMeApi {
   private readonly http = inject(HttpClient);

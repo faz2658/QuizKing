@@ -12,6 +12,7 @@ import { ProgressStrip } from '../ui/progress-strip';
 
 const MODE_LABEL: Record<GameMode, string> = { SINGLE: 'Timed', MULTI: 'Multiplayer', ADAPTIVE: 'Adaptive' };
 
+/** The player's stats page: progress, badges and game history. */
 @Component({
   selector: 'mv-profile',
   imports: [DatePipe, CountUp, BadgeGrid, ProgressStrip],

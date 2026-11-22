@@ -23,6 +23,10 @@ import com.fazeel.quizcadia.domain.MultiPlayerResult;
 import com.fazeel.quizcadia.match.MultiplayerMatch.AnswerOutcome;
 import com.fazeel.quizcadia.match.MultiplayerMatch.Status;
 
+/**
+ * Starts matches from the player matcher's events, serves them to players and screens, records answers, and
+ * publishes the result once a match completes.
+ */
 @Service
 public class MatchService {
 
@@ -70,10 +74,12 @@ public class MatchService {
 		this.clock = clock;
 	}
 
+	/** Keeps a copy of a multiplayer game the game manager published. */
 	public void cacheGame(MultiPlayerGame game) {
 		games.save(game);
 	}
 
+	/** Forgets a deleted game; running matches keep their questions. */
 	public void removeGame(int gameId) {
 		games.deleteById(gameId);
 	}
@@ -148,6 +154,7 @@ public class MatchService {
 		}
 	}
 
+	/** The match for a player or the party screen, with questions whose time ran out closed first (and saved). */
 	public MultiplayerMatch get(String matchId, int userId) {
 		return retrying(() -> {
 			MultiplayerMatch match = load(matchId);
@@ -161,6 +168,7 @@ public class MatchService {
 		});
 	}
 
+	/** Records a player's answer; retried when another answer was saved at the same moment. */
 	public AnswerResult answer(String matchId, int userId, int questionId, String answer) {
 		return retrying(() -> {
 			MultiplayerMatch match = load(matchId);
@@ -216,6 +224,7 @@ public class MatchService {
 				m.getCompletedAt(), standings, questions);
 	}
 
+	/** What answering returned: the outcome and the match after it. */
 	public record AnswerResult(AnswerOutcome outcome, MultiplayerMatch match) {
 	}
 }

@@ -3,6 +3,7 @@
  * here simply makes the cycle longer. Written for QuizCadia; the riddles are traditional ones.
  */
 
+/** A Clue Trail puzzle: clues revealed one at a time, the answer and what else counts as right. */
 export interface ClueTrail {
   answer: string;
   /** Other spellings or names that count as right. */
@@ -12,21 +13,25 @@ export interface ClueTrail {
   clues: string[];
 }
 
+/** A Letter Vault puzzle: a word to guess in a few tries, with a hint at its category. */
 export interface LetterVault {
   word: string;
   category: string;
 }
 
+/** One group of a Four by Four puzzle. */
 export interface FourGroup {
   label: string;
   items: string[];
 }
 
+/** A Four by Four puzzle: sixteen items to sort into four groups. */
 export interface FourByFour {
   /** Easiest group first. Each item belongs to exactly one group, and there is only one way to solve it. */
   groups: FourGroup[];
 }
 
+/** A Brain Teaser: a riddle with options and why the answer is right. */
 export interface BrainTeaser {
   question: string;
   options: string[];
@@ -35,6 +40,7 @@ export interface BrainTeaser {
   why: string;
 }
 
+/** Every Clue Trail; each day takes the next one. */
 export const CLUE_TRAILS: ClueTrail[] = [
   { answer: 'Marie Curie', aliases: ['Curie', 'Madame Curie', 'Marie Sklodowska Curie'], category: 'A person', clues: [
     'Born in Warsaw in 1867.',
@@ -158,6 +164,7 @@ export const CLUE_TRAILS: ClueTrail[] = [
     'A hot drink brewed from roasted beans.'] },
 ];
 
+/** Every Letter Vault word; each day takes the next one. */
 export const LETTER_VAULTS: LetterVault[] = [
   { word: 'PLANET', category: 'Space' }, { word: 'VOLCANO', category: 'Geography' }, { word: 'VIOLIN', category: 'Music' },
   { word: 'PHARAOH', category: 'History' }, { word: 'OXYGEN', category: 'Science' }, { word: 'JAGUAR', category: 'Animals' },
@@ -172,6 +179,7 @@ export const LETTER_VAULTS: LetterVault[] = [
   { word: 'FOSSIL', category: 'Science' }, { word: 'PENGUIN', category: 'Animals' }, { word: 'COMPASS', category: 'Inventions' },
 ];
 
+/** Every Four by Four; each day takes the next one. */
 export const FOUR_BY_FOURS: FourByFour[] = [
   { groups: [
     { label: 'Planets', items: ['MARS', 'VENUS', 'SATURN', 'NEPTUNE'] },
@@ -245,6 +253,7 @@ export const FOUR_BY_FOURS: FourByFour[] = [
     { label: 'Constellations', items: ['ORION', 'LYRA', 'DRACO', 'PEGASUS'] }] },
 ];
 
+/** Every Brain Teaser; each day takes the next one. */
 export const BRAIN_TEASERS: BrainTeaser[] = [
   { question: 'What has keys but can\'t open locks?', options: ['A map', 'A piano', 'A prison', 'A car'], answer: 1,
     why: 'A piano has keys, but they play notes instead of opening anything.' },

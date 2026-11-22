@@ -21,6 +21,7 @@ public final class Streaks {
 		}
 	}
 
+	/** The streak without shields. */
 	public static Streak of(Collection<LocalDate> playedDays, LocalDate today) {
 		return of(playedDays, today, 0);
 	}

@@ -6,6 +6,7 @@ import java.time.Instant;
 public record ImportStatus(State state, int fetched, int added, int topics, Instant startedAt, Instant finishedAt,
 		String message) {
 
+	/** IDLE before the first import, RUNNING, then DONE or FAILED. */
 	public enum State {
 		IDLE, RUNNING, DONE, FAILED
 	}

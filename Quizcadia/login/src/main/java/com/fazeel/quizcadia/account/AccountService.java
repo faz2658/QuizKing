@@ -19,6 +19,10 @@ import com.fazeel.quizcadia.google.GoogleIdentity;
 import com.fazeel.quizcadia.google.GoogleSignInException;
 import com.fazeel.quizcadia.session.SessionService;
 
+/**
+ * The account rules: signing up, checking passwords (with a throttle against guessing), and signing in with
+ * Google, linking it to an existing account with the same email.
+ */
 @Service
 public class AccountService {
 
@@ -47,6 +51,7 @@ public class AccountService {
 		this.dummyHash = encoder.encode("not-a-real-password-" + System.nanoTime());
 	}
 
+	/** Creates an account without an invite. */
 	public Account register(String userName, String email, String password) {
 		return register(userName, email, password, null);
 	}
@@ -72,6 +77,10 @@ public class AccountService {
 		return account;
 	}
 
+	/**
+	 * The account for this email and password. Refused the same way for an unknown email or a wrong password (and
+	 * in the same time), and refused for a while after too many wrong passwords.
+	 */
 	public Account authenticate(String email, String password) {
 		String key = normalize(email);
 		throttle.check(key); // too many wrong passwords for this email lately
@@ -153,6 +162,7 @@ public class AccountService {
 		return Integer.toString(userId, 36);
 	}
 
+	/** The account with this id, if it still exists. */
 	public Optional<Account> find(int userId) {
 		return accounts.findById(userId);
 	}

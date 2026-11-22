@@ -46,6 +46,10 @@ public final class Retention {
 	public record Cohort(LocalDate weekStart, int players, int guests, List<Double> weeks) {
 	}
 
+	/**
+	 * Retention as of a day: how many new players the window had, day-N retention for everyone and for accounts,
+	 * and the weekly cohorts.
+	 */
 	public record View(LocalDate asOf, int players, List<DayN> everyone, List<DayN> accounts, List<Cohort> cohorts) {
 	}
 

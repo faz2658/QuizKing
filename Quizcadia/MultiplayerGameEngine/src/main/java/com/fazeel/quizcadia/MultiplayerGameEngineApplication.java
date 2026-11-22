@@ -9,6 +9,10 @@ import org.springframework.context.annotation.Bean;
 
 import com.fazeel.quizcadia.match.MatchFactory;
 
+/**
+ * The multiplayer game engine: runs fastest-finger matches and live room quizzes, with all timing and scoring on
+ * the server.
+ */
 @SpringBootApplication
 public class MultiplayerGameEngineApplication {
 

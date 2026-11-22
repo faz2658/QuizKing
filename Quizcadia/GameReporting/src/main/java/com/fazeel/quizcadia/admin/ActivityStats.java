@@ -52,15 +52,22 @@ public class ActivityStats {
 		this(reports, names, clock, new BoardCache(clock));
 	}
 
+	/** One day's activity: games finished, distinct players, and how many of the games guests played. */
 	public record Day(LocalDate day, int games, int players, int guestGames) {
 	}
 
+	/** A name and how often it came up (game modes, games, countries). */
 	public record Count(String name, int count) {
 	}
 
+	/** One of the most active players of the period, with their games and points. */
 	public record TopPlayer(int userId, String name, String country, int games, int points) {
 	}
 
+	/**
+	 * The admin "Users & activity" numbers: totals, active players (today, 7 and 30 days), guests, a day-by-day
+	 * series and top lists.
+	 */
 	public record View(long gamesAllTime, int gamesInPeriod, int activeToday, int active7Days, int active30Days,
 			int guestPlayers30Days, List<Day> byDay, List<Count> modes, List<Count> topGames, List<Count> countries,
 			List<TopPlayer> topPlayers) {
@@ -77,6 +84,7 @@ public class ActivityStats {
 				LocalDate.now(clock.withZone(ZoneOffset.UTC)), weeks));
 	}
 
+	/** The admin numbers for the last days days (at least 30 for the active-player counts), cached for 30 seconds. */
 	public View view(int days) {
 		return cache.get("admin:" + days, Duration.ofSeconds(30), () -> compute(days));
 	}

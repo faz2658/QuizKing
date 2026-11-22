@@ -13,6 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @CompoundIndex(name = "player_question", def = "{'userId': 1, 'questionId': 1}")
 public record SeenQuestion(@Id String id, int userId, int questionId, Instant lastSeenAt) {
 
+	/** The record that the player saw the question at that moment (one per player and question). */
 	public static SeenQuestion of(int userId, int questionId, Instant at) {
 		return new SeenQuestion(userId + ":" + questionId, userId, questionId, at);
 	}

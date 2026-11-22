@@ -10,6 +10,7 @@ import com.fazeel.quizcadia.catalog.GameCatalogService;
 import com.fazeel.quizcadia.domain.Category;
 import com.fazeel.quizcadia.domain.GameRequest;
 
+/** Kafka in: question sets published by the question service, and game definitions an engine asks for. */
 @Component
 @ConditionalOnProperty(name = "quizcadia.kafka.enabled", havingValue = "true", matchIfMissing = true)
 public class CatalogListeners {

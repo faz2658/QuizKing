@@ -25,6 +25,10 @@ import com.fazeel.quizcadia.matching.Presence;
 import com.fazeel.quizcadia.matching.PrivateRooms;
 import com.fazeel.quizcadia.matching.QuickMatch;
 
+/**
+ * The player matcher: per-game lobbies, the global Quick Match queue, private and party rooms, and who is online.
+ * Formed matches go to the multiplayer engine over Kafka.
+ */
 @SpringBootApplication
 @EnableScheduling
 @ConfigurationPropertiesScan
@@ -80,6 +84,10 @@ public class PlayerMatcherApplication {
 		return new LobbyTimer(matchmaker, rooms, quick, presence);
 	}
 
+	/**
+	 * Twice a second: starts or expires lobbies, rooms and the Quick Match queue whose time is up; hourly: forgets
+	 * long-gone players.
+	 */
 	static class LobbyTimer {
 		private final Matchmaker matchmaker;
 		private final PrivateRooms rooms;

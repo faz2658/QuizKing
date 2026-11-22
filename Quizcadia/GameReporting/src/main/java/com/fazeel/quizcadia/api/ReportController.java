@@ -18,6 +18,10 @@ import com.fazeel.quizcadia.report.PlayerNames;
 import com.fazeel.quizcadia.report.ReportService;
 import com.fazeel.quizcadia.report.ReportService.UserSummary;
 
+/**
+ * A player's own history and progress: games, summary, XP, streak and badges. Players see only their own; admins
+ * anyone's.
+ */
 @RestController
 @RequestMapping("/api/v1/reports/users/{userId}")
 public class ReportController {
@@ -55,6 +59,7 @@ public class ReportController {
 		return progress.achievements(userId);
 	}
 
+	/** Games played, accuracy and multiplayer wins, overall and per game mode. */
 	@GetMapping("/summary")
 	public UserSummary summary(@PathVariable int userId) {
 		return service.summary(userId);

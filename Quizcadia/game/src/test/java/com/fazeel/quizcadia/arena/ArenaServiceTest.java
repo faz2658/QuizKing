@@ -177,6 +177,16 @@ class ArenaServiceTest {
 	}
 
 	@Test
+	void aRoundIsOnlyMadeWhenTheBankCanFillIt() {
+		// one topic has 3 questions per level: 9 in all, fewer than a round plays
+		when(games.findAll()).thenReturn(DailyChallengeServiceTest.catalog().subList(0, 1));
+		assertThatThrownBy(() -> arena.join(1, "Ada", null)).isInstanceOf(QuizRuleException.class)
+				.hasMessageContaining("enough questions");
+		assertThat(roundStore).isEmpty();
+		assertThat(entryStore).isEmpty();
+	}
+
+	@Test
 	void fasterAnswersEarnMorePoints() {
 		assertThat(ArenaRules.points(START, START.plusSeconds(1))).isGreaterThan(ArenaRules.points(START, START.plusSeconds(10)));
 		assertThat(ArenaRules.points(START, START.plusSeconds(15))).isEqualTo(ArenaRules.BASE_POINTS);

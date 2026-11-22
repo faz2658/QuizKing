@@ -64,6 +64,7 @@ public class WebPush implements PushSender {
 		this.http = http;
 	}
 
+	/** Our VAPID public key (base64url), which browsers need to subscribe. */
 	public String publicKey() {
 		return publicKey;
 	}

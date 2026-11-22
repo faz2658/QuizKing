@@ -35,9 +35,11 @@ public class KnowMeController {
 		this.service = service;
 	}
 
+	/** A question the owner writes: 2 to 4 options and the index of the right one. */
 	public record QuestionInput(String text, List<String> options, int answer) {
 	}
 
+	/** The owner's questions (the service accepts 3 to 15). */
 	public record CreateRequest(@NotNull @Size(max = 15) List<QuestionInput> questions) {
 	}
 
@@ -45,6 +47,7 @@ public class KnowMeController {
 	public record QuestionView(String text, List<String> options, Integer answer) {
 	}
 
+	/** A leaderboard row; you marks the player asking. */
 	public record Entry(int rank, String name, int score, boolean you) {
 	}
 
@@ -53,12 +56,15 @@ public class KnowMeController {
 			Integer yourScore, long players, List<Entry> leaderboard, Instant createdAt) {
 	}
 
+	/** One of the caller's own quizzes, with how many friends answered it. */
 	public record MineEntry(String id, int questions, long players, Instant createdAt) {
 	}
 
+	/** The chosen option index for each question. */
 	public record AnswerRequest(@NotNull @Size(max = 15) List<Integer> answers) {
 	}
 
+	/** Creates a quiz about the caller. */
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public QuizView create(@Valid @RequestBody CreateRequest r) {
@@ -68,17 +74,20 @@ public class KnowMeController {
 		return view(quiz, me);
 	}
 
+	/** The caller's own quizzes, newest first. */
 	@GetMapping("/mine")
 	public List<MineEntry> mine() {
 		return service.mine(Callers.currentUserId()).stream()
 				.map(q -> new MineEntry(q.id(), q.questions().size(), service.players(q.id()), q.createdAt())).toList();
 	}
 
+	/** The quiz as the caller sees it. */
 	@GetMapping("/{id}")
 	public QuizView get(@PathVariable String id) {
 		return view(service.get(id), Callers.currentUserId());
 	}
 
+	/** Scores the caller's one go and returns the quiz with the right answers. */
 	@PostMapping("/{id}/answers")
 	public QuizView answer(@PathVariable String id, @Valid @RequestBody AnswerRequest r) {
 		int me = Callers.currentUserId();
@@ -86,6 +95,7 @@ public class KnowMeController {
 		return view(service.get(id), me);
 	}
 
+	/** Deletes one of the caller's quizzes and every answer to it. */
 	@DeleteMapping("/{id}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void delete(@PathVariable String id) {

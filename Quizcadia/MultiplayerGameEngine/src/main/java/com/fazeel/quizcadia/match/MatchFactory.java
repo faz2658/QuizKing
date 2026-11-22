@@ -31,6 +31,7 @@ public class MatchFactory {
 		this.random = random;
 	}
 
+	/** The match for these players from this game, when no one has seen any of its questions yet. */
 	public MultiplayerMatch create(Match match, MultiPlayerGame game, Instant now) {
 		return create(match, game, now, Map.of());
 	}
@@ -225,6 +226,7 @@ public class MatchFactory {
 		return country == null || country.isBlank() ? null : country.trim().toUpperCase(Locale.ROOT);
 	}
 
+	/** A question that could go into the match, with its level and its country (null for general questions). */
 	private record Candidate(int level, MatchQuestion question, String country) {
 	}
 

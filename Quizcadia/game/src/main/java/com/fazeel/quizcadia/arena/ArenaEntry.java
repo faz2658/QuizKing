@@ -12,6 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "arena_entries")
 public class ArenaEntry {
 
+	/** One answer: what was picked, whether it was right, when, and its points. */
 	public record Answer(String answer, boolean correct, Instant at, int points) {
 	}
 
@@ -38,10 +39,12 @@ public class ArenaEntry {
 		this.joinedAt = joinedAt;
 	}
 
+	/** The answer to question index, or null. */
 	public Answer answer(int index) {
 		return answers.get(String.valueOf(index));
 	}
 
+	/** Stores the answer to question index. */
 	public void record(int index, Answer a) {
 		answers.put(String.valueOf(index), a);
 	}
@@ -59,6 +62,7 @@ public class ArenaEntry {
 		return n;
 	}
 
+	/** Points from every answer so far. */
 	public int score() {
 		return answers.values().stream().mapToInt(Answer::points).sum();
 	}

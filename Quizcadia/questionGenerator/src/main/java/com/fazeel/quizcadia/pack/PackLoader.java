@@ -38,6 +38,7 @@ public class PackLoader {
 		void loaded(String pack, String hash);
 	}
 
+	/** A pack file's name and content. */
 	public record Pack(String name, byte[] json) {
 	}
 

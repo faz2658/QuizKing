@@ -42,6 +42,7 @@ public class AdminStatsController {
 		return stats.retention(Math.max(4, Math.min(weeks, 26)));
 	}
 
+	/** Activity for the last 1 to 90 days (30 by default). */
 	@GetMapping("/stats")
 	public ActivityStats.View stats(@RequestParam(defaultValue = "30") int days) {
 		return stats.view(Math.max(1, Math.min(days, 90)));

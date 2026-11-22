@@ -15,11 +15,13 @@ public class NoopGameEvents implements GameEvents {
 
 	private static final Logger log = LoggerFactory.getLogger(NoopGameEvents.class);
 
+	/** Only logs the request. */
 	@Override
 	public void requestGame(GameRequest request) {
 		log.info("Kafka disabled: not requesting game {}", request.gameId());
 	}
 
+	/** Only logs the result. */
 	@Override
 	public void publishResult(SinglePlayerResult result) {
 		log.info("Kafka disabled: result of session {} not published (score {})", result.sessionId(), result.score());

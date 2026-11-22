@@ -54,6 +54,7 @@ public class OpenTriviaImporter {
 		this.clock = clock;
 	}
 
+	/** The current or last import's progress. */
 	public ImportStatus status() {
 		return status.get();
 	}

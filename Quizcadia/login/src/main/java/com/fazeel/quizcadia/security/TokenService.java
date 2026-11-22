@@ -31,6 +31,7 @@ public class TokenService {
 		this.clock = clock;
 	}
 
+	/** A short-lived access token for this account (subject = user id, with name, email and role). */
 	public IssuedToken issue(Account account) {
 		return sign(account.getUserId(), account.getUserName(), account.getEmail(), account.getRole().name());
 	}
@@ -53,6 +54,7 @@ public class TokenService {
 		return new IssuedToken(token, expiresAt);
 	}
 
+	/** A signed token and when it expires. */
 	public record IssuedToken(String value, Instant expiresAt) {
 	}
 }

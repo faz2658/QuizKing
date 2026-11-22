@@ -9,6 +9,7 @@ import com.fazeel.quizcadia.bank.BankEvents;
 import com.fazeel.quizcadia.bank.TopicPool;
 import com.fazeel.quizcadia.domain.Category;
 
+/** Publishes bank changes to Kafka, keyed by category id. */
 @Component
 @ConditionalOnProperty(name = "quizcadia.kafka.enabled", havingValue = "true", matchIfMissing = true)
 public class KafkaBankEvents implements BankEvents {

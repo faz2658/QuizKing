@@ -13,6 +13,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record Game(@Id int gameId, String gameName, int categoryId, Topic topic, List<Question> questions) {
 
+	/** The topic a game draws its questions from. */
 	@JsonIgnoreProperties(ignoreUnknown = true)
 	public record Topic(int topicId, String topicName) {
 	}

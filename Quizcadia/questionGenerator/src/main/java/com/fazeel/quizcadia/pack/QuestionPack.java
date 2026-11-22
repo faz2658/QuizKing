@@ -29,17 +29,18 @@ public record QuestionPack(String category, String country, List<PackTopic> topi
 	static final int PACK_ID_SPAN = 200_000_000;
 	public static final String TYPE = "pack";
 
-	@JsonIgnoreProperties(ignoreUnknown = true)
 	/**
 	 * @param category the shared bank category the topic belongs to (e.g. History); when set, the topic's
 	 *        questions join that shared topic, each tagged with the pack's country, instead of a country topic
 	 */
+	@JsonIgnoreProperties(ignoreUnknown = true)
 	public record PackTopic(String category, String name, List<PackQuestion> questions) {
 
 		public PackTopic(String name, List<PackQuestion> questions) {
 			this(null, name, questions);
 		}
 
+		/** True when the topic belongs to a shared category rather than its own country topic. */
 		public boolean shared() {
 			return category != null && !category.isBlank();
 		}
@@ -50,6 +51,7 @@ public record QuestionPack(String category, String country, List<PackTopic> topi
 	public record PackQuestion(String q, String a, List<String> wrong, int level, String why) {
 	}
 
+	/** Reads a pack from the classpath. */
 	public static QuestionPack load(String resource) {
 		try (InputStream in = new ClassPathResource(resource).getInputStream()) {
 			return parse(in.readAllBytes());
@@ -59,6 +61,7 @@ public record QuestionPack(String category, String country, List<PackTopic> topi
 		}
 	}
 
+	/** Reads a pack from its JSON. */
 	public static QuestionPack parse(byte[] json) {
 		return JsonMapper.builder().build().readValue(json, QuestionPack.class);
 	}

@@ -28,10 +28,18 @@ public class QuickMatch {
 	static final String[] BOT_NAMES = { "Ada", "Turing", "Hopper", "Curie", "Tesla", "Lovelace", "Euler", "Noether", "Gauss" };
 	static final String[] BOT_COUNTRIES = { "GB", "US", "IN", "BR", "JP", "DE", "FR", "NG", "AU", "CA", "MX", "KR" };
 
+	/**
+	 * WAITING in the queue, MATCHED (see matchId), NOT_IN_QUEUE, or NO_GAMES (no multiplayer game has enough
+	 * questions).
+	 */
 	public enum State {
 		WAITING, MATCHED, NOT_IN_QUEUE, NO_GAMES
 	}
 
+	/**
+	 * What a queued player sees: queue size, how long they've waited, when a bot steps in, and the match once
+	 * there is one.
+	 */
 	public record Status(State state, int queueSize, long waitedSeconds, long botInSeconds, String matchId,
 			Integer gameId, boolean withBot) {
 	}
@@ -51,6 +59,7 @@ public class QuickMatch {
 		this.onMatch = onMatch;
 	}
 
+	/** Puts the player in the queue (again), keeping their place if they're already in it. */
 	public synchronized Status join(int userId) {
 		outcomes.remove(userId);
 		queue.putIfAbsent(userId, clock.instant());
@@ -58,15 +67,18 @@ public class QuickMatch {
 		return status(userId);
 	}
 
+	/** Takes the player out of the queue. */
 	public synchronized void leave(int userId) {
 		queue.remove(userId);
 		outcomes.remove(userId);
 	}
 
+	/** How many players are in the queue. */
 	public synchronized int waiting() {
 		return queue.size();
 	}
 
+	/** Where the player stands: matched, waiting, or not in the queue. */
 	public synchronized Status status(int userId) {
 		Status outcome = outcomes.get(userId);
 		if (outcome != null) {

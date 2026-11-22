@@ -36,6 +36,10 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 
 import com.fazeel.quizcadia.diagnostics.Diagnostics;
 
+/**
+ * Who may call what: sign-in endpoints are open, everything else needs a token. Also makes the token signer and
+ * checker (HS256 with the shared secret), the password hasher (BCrypt) and the CORS rules.
+ */
 @Configuration
 public class SecurityConfig {
 

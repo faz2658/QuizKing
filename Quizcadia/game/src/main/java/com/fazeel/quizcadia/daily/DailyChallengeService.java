@@ -70,6 +70,7 @@ public class DailyChallengeService {
 		this.clock = clock;
 	}
 
+	/** Today's date in UTC, the Daily Challenge's day. */
 	public LocalDate today() {
 		return LocalDate.now(clock.withZone(ZoneOffset.UTC));
 	}
@@ -80,6 +81,7 @@ public class DailyChallengeService {
 		return Duration.between(clock.instant(), next);
 	}
 
+	/** The challenge for the date, built and stored the first time it is asked for. */
 	public DailyChallenge challenge(LocalDate date) {
 		String key = date.toString();
 		return challenges.findById(key).orElseGet(() -> {
@@ -186,6 +188,7 @@ public class DailyChallengeService {
 		return new Picked(questions, topics);
 	}
 
+	/** A candidate question with the game and topic it comes from. */
 	private record Pick(Questions question, Game game, String topic) {
 	}
 }

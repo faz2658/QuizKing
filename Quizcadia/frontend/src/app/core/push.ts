@@ -90,6 +90,7 @@ export class StreakReminderPush {
     }
   }
 
+  /** Turns streak reminders off: removes the subscription on the server and in the browser. */
   async disable(): Promise<void> {
     this.busy.set(true);
     this.error.set(null);

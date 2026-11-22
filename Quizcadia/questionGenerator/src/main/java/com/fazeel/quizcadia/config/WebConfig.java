@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/** CORS for the API: only the configured site origins may call it from a browser. */
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 

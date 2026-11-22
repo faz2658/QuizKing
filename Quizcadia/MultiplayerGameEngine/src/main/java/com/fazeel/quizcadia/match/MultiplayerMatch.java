@@ -37,10 +37,12 @@ public class MultiplayerMatch {
 	/** How often a bot picks the right answer. */
 	public static final double BOT_ACCURACY = 0.55;
 
+	/** IN_PROGRESS until the last question closes (or the host ends a room quiz), then COMPLETED. */
 	public enum Status {
 		IN_PROGRESS, COMPLETED
 	}
 
+	/** How the match is played: fastest finger (the first right answer wins the points) or a host-paced room quiz. */
 	public enum Format {
 		FASTEST_FINGER, ROOM_QUIZ
 	}
@@ -137,6 +139,7 @@ public class MultiplayerMatch {
 		return revealedAt;
 	}
 
+	/** Where the match is at this moment (see Phase). */
 	public Phase phase(Instant now) {
 		if (status == Status.COMPLETED) {
 			return Phase.FINISHED;
@@ -315,6 +318,10 @@ public class MultiplayerMatch {
 		completedAt = at;
 	}
 
+	/**
+	 * Records a player's answer to the open question at time now, scored by the match's format. Throws when the
+	 * player isn't in the match, the match is over, or the question isn't open.
+	 */
 	public AnswerOutcome answer(int userId, int questionId, String answer, Instant now) {
 		PlayerScore player = player(userId).orElseThrow(() -> new MatchRuleException("You are not in this match"));
 		advanceClock(now);
@@ -451,6 +458,7 @@ public class MultiplayerMatch {
 		return currentIndex == 0 ? Optional.empty() : Optional.of(questions.get(currentIndex - 1));
 	}
 
+	/** Whole seconds left on the open question (never more than its time limit; 0 when none is open). */
 	public long secondsRemaining(Instant now) {
 		return currentQuestion().map(q -> Math.min(secondsPerQuestion,
 				Math.max(0, Duration.between(now, deadline(q)).toSeconds()))).orElse(0L);
@@ -468,6 +476,7 @@ public class MultiplayerMatch {
 		return screenUserId != null && screenUserId == userId;
 	}
 
+	/** Marks the party host's screen, which may watch (and pace a room quiz) but not answer. */
 	public MultiplayerMatch shownOn(Integer screenUserId) {
 		this.screenUserId = screenUserId;
 		return this;
@@ -504,6 +513,7 @@ public class MultiplayerMatch {
 		}
 	}
 
+	/** Notes that the result went to Kafka, so it is published exactly once. */
 	public void markResultPublished() {
 		resultPublished = true;
 	}
@@ -560,6 +570,10 @@ public class MultiplayerMatch {
 		return completedAt;
 	}
 
+	/**
+	 * How an answer went: right or not, whether it won the question (fastest finger), and the player's score after
+	 * it.
+	 */
 	public record AnswerOutcome(boolean correct, boolean wonQuestion, int score) {
 	}
 }

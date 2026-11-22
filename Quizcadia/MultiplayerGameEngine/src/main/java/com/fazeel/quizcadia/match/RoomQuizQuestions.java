@@ -45,10 +45,12 @@ public class RoomQuizQuestions {
 		this.source = source;
 	}
 
+	/** A source that never finds questions, for tests and for running without the question service. */
 	public static RoomQuizQuestions none() {
 		return new RoomQuizQuestions((level, count) -> List.of());
 	}
 
+	/** count random medium questions from every topic, or none when the question service can't be reached. */
 	public List<MultiPlayerGame.Question> medium(int count) {
 		return source.load(MEDIUM, count);
 	}

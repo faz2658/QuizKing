@@ -19,6 +19,7 @@ public final class Recommender {
 	private Recommender() {
 	}
 
+	/** The best limit games: unplayed ones by score first, then the ones the player played before. */
 	public static List<Recommendation> rank(List<Candidate> candidates, int limit) {
 		long maxPlays = Math.max(1, candidates.stream().mapToLong(Candidate::totalPlays).max().orElse(1));
 		long maxSimilar = Math.max(1, candidates.stream().mapToLong(Candidate::similarPlayers).max().orElse(1));

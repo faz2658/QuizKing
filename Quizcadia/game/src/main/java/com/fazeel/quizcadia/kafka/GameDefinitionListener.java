@@ -25,6 +25,7 @@ public class GameDefinitionListener {
 		this.games = games;
 	}
 
+	/** Stores or replaces a game the game manager published. */
 	@KafkaListener(topics = "${quizcadia.topics.game-definition}")
 	public void onGame(Game game) {
 		if (game == null || game.getGameId() == 0) {

@@ -44,6 +44,7 @@ export function clueTrailScore(cluesShown: number, totalClues: number): number {
   return Math.max(1, totalClues - cluesShown + 1);
 }
 
+/** How a guessed letter scores in Letter Vault. */
 export type LetterMark = 'hit' | 'near' | 'miss';
 
 /**

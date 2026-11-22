@@ -49,6 +49,9 @@ public class GoogleCredentials {
 		this.clock = clock;
 	}
 
+	/**
+	 * The service account's email, shown in the setup instructions (it must be given read access to the property).
+	 */
 	public String clientEmail() {
 		return clientEmail;
 	}

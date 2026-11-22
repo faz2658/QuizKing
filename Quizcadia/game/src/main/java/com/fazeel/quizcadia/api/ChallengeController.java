@@ -38,6 +38,7 @@ public class ChallengeController {
 		this.clock = clock;
 	}
 
+	/** The finished session to turn into a challenge. */
 	public record CreateChallenge(@NotBlank String sessionId) {
 	}
 
@@ -55,6 +56,7 @@ public class ChallengeController {
 		}
 	}
 
+	/** Turns the caller's own finished session into a challenge link. */
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public ChallengeView create(@Valid @RequestBody CreateChallenge request) {
@@ -64,12 +66,14 @@ public class ChallengeController {
 		return ChallengeView.of(c, Callers.currentUserId(), Optional.empty());
 	}
 
+	/** The challenge, with the caller's status in it. */
 	@GetMapping("/{id}")
 	public ChallengeView get(@PathVariable String id) {
 		int me = Callers.currentUserId();
 		return ChallengeView.of(challenges.get(id), me, challenges.attempt(id, me));
 	}
 
+	/** Starts the caller's attempt, or returns the unfinished one. */
 	@PostMapping("/{id}/sessions")
 	@ResponseStatus(HttpStatus.CREATED)
 	public SessionView accept(@PathVariable String id) {

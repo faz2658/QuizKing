@@ -43,6 +43,7 @@ public class QuizBuilder {
 		this.random = random;
 	}
 
+	/** The game's quiz without seen-question or country preferences. */
 	public List<SessionQuestion> build(Game game) {
 		return build(game, Map.of());
 	}

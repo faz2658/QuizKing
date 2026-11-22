@@ -4,6 +4,7 @@ import { QuestionBankApi } from '../core/api';
 import { errorMessage } from '../core/http-errors';
 import { FlagReason } from '../core/models';
 
+/** The reasons a player can give when flagging a question. */
 export const FLAG_REASONS: { id: FlagReason; label: string }[] = [
   { id: 'WRONG_ANSWER', label: 'The answer is wrong' },
   { id: 'UNCLEAR', label: 'The question is unclear' },

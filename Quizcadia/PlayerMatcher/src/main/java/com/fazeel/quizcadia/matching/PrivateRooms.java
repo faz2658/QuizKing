@@ -37,10 +37,12 @@ public class PrivateRooms {
 	public static final int QUIZ_AUTO_REVEAL_SECONDS = 8;
 	static final Duration IDLE = Duration.ofMinutes(30);
 
+	/** WAITING for players, STARTED (the match is on), or CLOSED (the host left). */
 	public enum State {
 		WAITING, STARTED, CLOSED
 	}
 
+	/** A player in a room. */
 	public record Player(int userId, String name) {
 	}
 
@@ -63,6 +65,7 @@ public class PrivateRooms {
 		}
 	}
 
+	/** A room's code, game, host, kind (party, quiz) and players, with its state and last activity. */
 	private static final class Room {
 		final String code;
 		final int gameId;
@@ -96,6 +99,7 @@ public class PrivateRooms {
 		this.onMatch = onMatch;
 	}
 
+	/** Opens a private room (the host plays). */
 	public synchronized RoomStatus create(int gameId, int userId, String name) {
 		return create(gameId, userId, name, false);
 	}
@@ -131,6 +135,10 @@ public class PrivateRooms {
 		return status(room);
 	}
 
+	/**
+	 * Adds a player to a waiting room, within its size limit. Someone already in, or the party host, gets the room
+	 * back unchanged.
+	 */
 	public synchronized RoomStatus join(String code, int userId, String name) {
 		Room room = find(code);
 		if (room.players.containsKey(userId) || (room.party && room.hostId == userId)) {
@@ -153,6 +161,7 @@ public class PrivateRooms {
 		return status(find(code));
 	}
 
+	/** Starts the room's match (host only): at least two players, or one in a live room quiz. */
 	public synchronized RoomStatus start(String code, int userId) {
 		Room room = find(code);
 		if (room.hostId != userId) {
@@ -190,6 +199,7 @@ public class PrivateRooms {
 		room.lastActivity = clock.instant();
 	}
 
+	/** Drops rooms idle for 30 minutes. */
 	public synchronized void tick() {
 		expire(clock.instant());
 	}

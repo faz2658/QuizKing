@@ -16,6 +16,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public record PushSubscription(@Id String endpoint, @Indexed int userId, String p256dh, String auth, String timeZone,
 		Instant createdAt, LocalDate lastRemindedDay) {
 
+	/** The same subscription, marked as reminded on that UTC day. */
 	public PushSubscription remindedOn(LocalDate day) {
 		return new PushSubscription(endpoint, userId, p256dh, auth, timeZone, createdAt, day);
 	}

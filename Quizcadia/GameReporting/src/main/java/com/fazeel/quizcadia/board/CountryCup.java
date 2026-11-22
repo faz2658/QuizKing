@@ -53,6 +53,7 @@ public class CountryCup {
 		this(reports, names, clock, new BoardCache(clock));
 	}
 
+	/** A country's place in this week's Cup: its points, how many players scored, and its best player (star). */
 	public record Entry(int rank, String country, int points, int players, String star) {
 	}
 
@@ -60,6 +61,7 @@ public class CountryCup {
 	public record Yours(String country, int rank, int points, int players, int gapToNext, int yourXp, int yourRank) {
 	}
 
+	/** Last week's winner and its points. */
 	public record Champion(String country, int points) {
 	}
 
@@ -68,6 +70,7 @@ public class CountryCup {
 			Champion lastWeek) {
 	}
 
+	/** This week's Cup standings, last week's champion, and the caller's own contribution. */
 	public CupView view(int callerId) {
 		Instant now = clock.instant();
 		Instant start = LocalDate.ofInstant(now, ZoneOffset.UTC).with(DayOfWeek.MONDAY).atStartOfDay(ZoneOffset.UTC).toInstant();
@@ -96,6 +99,7 @@ public class CountryCup {
 		return new CupView(start, end, week.entries.stream().limit(SHOWN).toList(), week.entries.size(), yours, champion);
 	}
 
+	/** The week worked out: the ranked countries, each player's XP and which players count for each country. */
 	private record Standings(List<Entry> entries, Map<Integer, Integer> xp, Map<String, List<Integer>> squads) {
 	}
 

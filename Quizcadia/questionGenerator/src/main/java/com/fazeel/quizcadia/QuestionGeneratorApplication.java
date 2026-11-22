@@ -26,6 +26,10 @@ import com.fazeel.quizcadia.opentdb.TriviaMapper;
 import com.fazeel.quizcadia.opentdb.TriviaSource;
 import com.fazeel.quizcadia.pack.PackLoader;
 
+/**
+ * The question bank service: categories, topics and questions in MongoDB, plus the Open Trivia DB importer, the
+ * bundled question packs, Wikidata fact questions, AI drafts, AI topic quizzes and player feedback.
+ */
 @SpringBootApplication
 public class QuestionGeneratorApplication {
 

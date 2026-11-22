@@ -25,11 +25,13 @@ public class InternalGameController {
 		this.catalog = catalog;
 	}
 
+	/** The full solo game, questions and answers included, for an engine that hasn't cached it. */
 	@GetMapping("/{gameId}")
 	public Game game(@PathVariable int gameId) {
 		return catalog.game(gameId);
 	}
 
+	/** The full multiplayer game, questions and answers included, for the multiplayer engine. */
 	@GetMapping("/mp/{gameId}")
 	public MultiPlayerGame multiPlayerGame(@PathVariable int gameId) {
 		return catalog.multiPlayerGame(gameId);

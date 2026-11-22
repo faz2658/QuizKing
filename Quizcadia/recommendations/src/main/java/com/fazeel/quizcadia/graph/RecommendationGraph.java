@@ -24,6 +24,7 @@ public class RecommendationGraph {
 		this.neo4j = neo4j;
 	}
 
+	/** Creates or updates a game and moves it to its category. */
 	public void upsertGame(int gameId, String name, String image, int categoryId, GameMode mode) {
 		neo4j.query("""
 				MERGE (g:Game {gameId: $gameId})
@@ -37,10 +38,12 @@ public class RecommendationGraph {
 				"mode", mode.name())).run();
 	}
 
+	/** Removes a game and its relationships. */
 	public void deleteGame(int gameId) {
 		neo4j.query("MATCH (g:Game {gameId: $gameId}) DETACH DELETE g").bind(gameId).to("gameId").run();
 	}
 
+	/** Creates a player or updates their name. */
 	public void upsertUser(int userId, String name) {
 		neo4j.query("MERGE (u:User {userId: $userId}) SET u.name = $name")
 				.bindAll(Map.of("userId", userId, "name", nz(name))).run();
@@ -75,11 +78,16 @@ public class RecommendationGraph {
 				""").bindAll(Map.of("userId", userId, "categoryIds", List.copyOf(categoryIds))).run();
 	}
 
+	/** The category ids the player favours. */
 	public List<Integer> favoriteCategories(int userId) {
 		return List.copyOf(neo4j.query("MATCH (:User {userId: $userId})-[:FAVORS]->(c:Category) RETURN c.categoryId AS id")
 				.bind(userId).to("userId").fetchAs(Integer.class).mappedBy((t, r) -> r.get("id").asInt()).all());
 	}
 
+	/**
+	 * Every named game with the signals the ranking uses: its plays, the player's own plays, whether it is in a
+	 * favourite category and how many similar players played it.
+	 */
 	public List<Candidate> candidates(int userId) {
 		return List.copyOf(neo4j.query("""
 				MATCH (g:Game) WHERE g.name IS NOT NULL

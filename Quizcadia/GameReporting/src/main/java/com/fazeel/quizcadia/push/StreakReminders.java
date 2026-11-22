@@ -46,6 +46,10 @@ public class StreakReminders {
 		this.clock = clock;
 	}
 
+	/**
+	 * Every 5 minutes (after a minute's wait at start-up): sends the reminders that are due, when reminders are
+	 * switched on.
+	 */
 	@Scheduled(initialDelayString = "PT1M", fixedDelayString = "PT5M")
 	public void run() {
 		PushSender push = sender.getIfAvailable();

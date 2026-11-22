@@ -3,7 +3,10 @@ package com.fazeel.quizcadia.domain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonCreator;
 
-
+/**
+ * One question of the bank: its level (1 easy, 2 medium, 3 advanced), stem, up to four options and the right
+ * answer.
+ */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Questions {
 	private int questionId;
@@ -29,15 +32,11 @@ public class Questions {
 	}
 
 	@JsonCreator
-
 	public Questions() {
-		super();
-		
 	}
 
 	public Questions(int questionId, int questionLevel, String questionStem, String questionType, String option1,
 			String option2, String option3, String option4, String correctAnswer) {
-		super();
 		this.questionId = questionId;
 		this.questionLevel = questionLevel;
 		this.questionStem = questionStem;
@@ -127,9 +126,6 @@ public class Questions {
 				+ questionStem + ", questionType=" + questionType + ", option1=" + option1 + ", option2=" + option2
 				+ ", option3=" + option3 + ", option4=" + option4 + ", correctAnswer=" + correctAnswer + "]";
 	}
-
-	
-
 
 	public String getExplanation() {
 		return explanation;

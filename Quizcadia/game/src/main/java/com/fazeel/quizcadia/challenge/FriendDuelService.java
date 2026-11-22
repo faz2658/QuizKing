@@ -90,10 +90,12 @@ public class FriendDuelService {
 	/** One player's attempt: {@code session} is null until they start. */
 	public record Attempt(Side side, GameSession session) {
 
+		/** Whether the player has started. */
 		public boolean started() {
 			return session != null;
 		}
 
+		/** Whether the player has finished. */
 		public boolean completed() {
 			return session != null && session.getStatus() == SessionStatus.COMPLETED;
 		}
@@ -106,15 +108,18 @@ public class FriendDuelService {
 	public record Standing(FriendDuel duel, State state, Attempt challenger, Attempt opponent, Integer winnerUserId,
 			boolean tie) {
 
+		/** The given player's attempt, or null for someone not in the challenge. */
 		public Attempt of(int userId) {
 			return duel.isChallenger(userId) ? challenger : duel.isOpponent(userId) ? opponent : null;
 		}
 
+		/** The other player's attempt, or null for someone not in the challenge. */
 		public Attempt against(int userId) {
 			return duel.isChallenger(userId) ? opponent : duel.isOpponent(userId) ? challenger : null;
 		}
 	}
 
+	/** Creates a challenge for a game with playable questions; it waits ANSWER_WITHIN for a friend. */
 	public FriendDuel create(int userId, String name, int gameId, boolean international, String country) {
 		Game game = games.loadGame(gameId, userId);
 		boolean playable = Objects.requireNonNullElse(game.getQuestions(), List.<Questions>of()).stream()
@@ -129,6 +134,7 @@ public class FriendDuelService {
 		return duels.save(duel);
 	}
 
+	/** The challenge; NotFoundException if there is none. */
 	public FriendDuel get(String id) {
 		return duels.findById(id).orElseThrow(() -> new NotFoundException("No challenge " + id));
 	}
@@ -160,6 +166,7 @@ public class FriendDuelService {
 				now.plus(PLAY_WITHIN)));
 	}
 
+	/** Declines an open challenge; declining again is harmless, the challenger can't. */
 	public FriendDuel decline(String id, int userId, String name) {
 		FriendDuel duel = get(id);
 		if (duel.isChallenger(userId)) {
@@ -209,6 +216,7 @@ public class FriendDuelService {
 				PageRequest.of(0, LIST_LIMIT));
 	}
 
+	/** Where the challenge stands now, with the winner once it is finished. */
 	public Standing standing(FriendDuel duel) {
 		Attempt challenger = attempt(duel.challenger());
 		Attempt opponent = duel.opponent() == null ? null : attempt(duel.opponent()); // also whoever declined

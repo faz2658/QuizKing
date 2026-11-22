@@ -39,6 +39,10 @@ public class ProgressService {
 		return Achievements.of(all, r -> boards.dailyRank(r.variantKey(), userId), invites.invited(userId));
 	}
 
+	/**
+	 * The player's XP, level and title, and their streak (with invite shields), from all their games (read without
+	 * the question reviews).
+	 */
 	public Progress progress(int userId) {
 		return of(userId, reports.findSummariesByUserId(userId), today(), invites.shields(userId));
 	}

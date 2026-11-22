@@ -18,6 +18,7 @@ public class MultiplayerGames implements Supplier<List<Integer>> {
 	static final Duration CACHE = Duration.ofMinutes(5);
 	static final int MIN_QUESTIONS = 5;
 
+	/** A multiplayer game's id and question count, as the game manager lists it. */
 	record Summary(int gameId, int questionCount) {
 	}
 
@@ -31,6 +32,10 @@ public class MultiplayerGames implements Supplier<List<Integer>> {
 		this.clock = clock;
 	}
 
+	/**
+	 * The ids of multiplayer games that have enough questions to play, refreshed from the game manager every 5
+	 * minutes.
+	 */
 	@Override
 	public synchronized List<Integer> get() {
 		if (cached.isEmpty() || Duration.between(fetchedAt, clock.instant()).compareTo(CACHE) > 0) {

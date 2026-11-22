@@ -37,6 +37,7 @@ public class TopicPools {
 		List<Questions> load(int topicId);
 	}
 
+	/** A topic's questions and when they were loaded. */
 	private record Cached(List<Questions> questions, Instant at) {
 	}
 
@@ -72,6 +73,7 @@ public class TopicPools {
 		return game;
 	}
 
+	/** Fills in every game's questions (see withPool). */
 	public List<Game> withPools(List<Game> games) {
 		games.forEach(this::withPool);
 		return games;

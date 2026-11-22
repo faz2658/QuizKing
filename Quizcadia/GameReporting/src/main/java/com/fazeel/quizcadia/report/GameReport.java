@@ -36,10 +36,15 @@ public record GameReport(@Id String id, GameMode mode, int userId, int gameId, S
 		return DAILY.equals(variant);
 	}
 
+	/** Which engine the game came from: solo (timed), multiplayer or adaptive. */
 	public enum GameMode {
 		SINGLE, MULTI, ADAPTIVE
 	}
 
+	/**
+	 * One question of a finished game as the review shows it: the question, right answer, the player's answer and
+	 * what it scored.
+	 */
 	public record ReviewItem(String question, String correctAnswer, String answer, boolean correct,
 			boolean timedOut, int points) {
 	}

@@ -18,6 +18,7 @@ function clean(url: string): string {
   return path === '' ? '/' : path;
 }
 
+/** The camera move from one page to another. */
 export function pageMove(from: string, to: string): PageMove {
   const a = clean(from);
   const b = clean(to);

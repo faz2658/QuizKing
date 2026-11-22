@@ -53,6 +53,7 @@ public class ArenaService {
 		this.clock = clock;
 	}
 
+	/** Where a round is: SOON, JOINING, LIVE or FINISHED. */
 	public enum Phase {
 		/** Before the join window. */
 		SOON,
@@ -62,26 +63,33 @@ public class ArenaService {
 		FINISHED
 	}
 
+	/** The open question, without its answer. */
 	public record QuestionView(int index, int number, int total, String stem, List<String> options, long secondsLeft,
 			String yourAnswer) {
 	}
 
+	/** The last closed question with its answer, and how many players it put out. */
 	public record Reveal(int index, String stem, String correctAnswer, String yourAnswer, long eliminatedNow) {
 	}
 
+	/** A player's place in the round. */
 	public record Standing(int rank, int userId, String name, String country, int survived, int score) {
 	}
 
+	/** The caller's own place in the round. */
 	public record You(boolean joined, boolean alive, int survived, int score, Integer rank) {
 	}
 
+	/** A round as one player sees it. */
 	public record RoundView(String roundId, Phase phase, Instant startsAt, Instant joinOpensAt, int players, long alive,
 			You you, QuestionView question, Reveal reveal, List<Standing> standings, Instant endsAt) {
 	}
 
+	/** The round to show (running or next), the one before it and the server time to sync clocks. */
 	public record ArenaView(Instant serverTime, RoundView round, RoundView previous) {
 	}
 
+	/** The running or next round and the previous one; publishes the previous round's results once it is over. */
 	public ArenaView view(int userId) {
 		Instant now = clock.instant();
 		Instant s = ArenaRules.roundStart(now);
@@ -99,12 +107,15 @@ public class ArenaService {
 				prev);
 	}
 
+	/** Joins the next round (from 10 minutes before it starts), or updates the player's country. */
 	public ArenaView join(int userId, String name, String country) {
 		Instant now = clock.instant();
 		Instant start = ArenaRules.roundStart(now).plus(ArenaRules.INTERVAL);
 		if (now.isBefore(start.minus(ArenaRules.JOIN_BEFORE))) {
 			throw new QuizRuleException("Joining opens 10 minutes before the round starts");
 		}
+		// fix the questions first, so the round starts instantly, and nobody joins a round that can't be played
+		roundFor(start);
 		String round = id(start);
 		Optional<ArenaEntry> existing = entries.findById(round + ":" + userId);
 		if (existing.isEmpty()) {
@@ -113,10 +124,10 @@ public class ArenaService {
 			existing.get().setCountry(validCountry(country));
 			entries.save(existing.get());
 		}
-		roundFor(start); // fix the questions now, while joining, so the round starts instantly
 		return view(userId);
 	}
 
+	/** Records an answer to the open question; refused when it isn't open, the player is out or already answered. */
 	public ArenaView answer(int userId, int index, String answer) {
 		Instant now = clock.instant();
 		Instant start = ArenaRules.roundStart(now);
@@ -234,8 +245,9 @@ public class ArenaService {
 	ArenaRound roundFor(Instant start) {
 		return rounds.findById(id(start)).orElseGet(() -> {
 			DailyChallengeService.Picked p = DailyChallengeService.pick(start.getEpochSecond() * 31L + 7, pools.withPools(games.findAll()), 4, 4, 4);
-			if (p.questions().isEmpty()) {
-				throw new QuizRuleException("There are no questions for the arena yet");
+			// every round plays up to QUESTIONS questions; a shorter one would fail when it reached a missing one
+			if (p.questions().size() < ArenaRules.QUESTIONS) {
+				throw new QuizRuleException("There aren't enough questions for the arena yet");
 			}
 			try {
 				return rounds.insert(new ArenaRound(id(start), start, p.questions(), p.topics()));

@@ -11,6 +11,7 @@ public class TooManyAttemptsException extends RuntimeException {
 		this.retryAfterSeconds = retryAfterSeconds;
 	}
 
+	/** When the email may try again, for the Retry-After header. */
 	public long retryAfterSeconds() {
 		return retryAfterSeconds;
 	}

@@ -39,12 +39,15 @@ public class TopicQuizController {
 		this.service = service;
 	}
 
+	/** The topic a player typed; the service accepts 2 to 60 characters. */
 	public record CreateRequest(@NotNull @Size(max = 200) String topic) {
 	}
 
+	/** A question as a player sees it; answer is the right option's index, only after they played. */
 	public record QuestionView(String text, List<String> options, Integer answer) {
 	}
 
+	/** A leaderboard row; you marks the player asking. */
 	public record Entry(int rank, String name, int score, boolean you) {
 	}
 
@@ -54,14 +57,17 @@ public class TopicQuizController {
 			List<Entry> leaderboard, Instant createdAt) {
 	}
 
+	/** The chosen option index per question, -1 where the timer ran out. */
 	public record AnswerRequest(@NotNull @Size(max = 20) List<Integer> answers) {
 	}
 
+	/** Whether AI quizzes are switched on. */
 	@GetMapping("/status")
 	public Map<String, Boolean> status() {
 		return Map.of("available", service.available());
 	}
 
+	/** Starts writing a quiz on the topic; the reply comes back at once with status GENERATING. */
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public QuizView create(@Valid @RequestBody CreateRequest r) {
@@ -69,11 +75,13 @@ public class TopicQuizController {
 		return view(service.create(me, Callers.currentUserName(), r.topic()), me);
 	}
 
+	/** The quiz as the player asking sees it. */
 	@GetMapping("/{id}")
 	public QuizView get(@PathVariable String id) {
 		return view(service.get(id), Callers.currentUserId());
 	}
 
+	/** Scores the player's one go and returns the quiz with the right answers. */
 	@PostMapping("/{id}/answers")
 	public QuizView answer(@PathVariable String id, @Valid @RequestBody AnswerRequest r) {
 		int me = Callers.currentUserId();

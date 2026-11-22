@@ -47,6 +47,10 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
+/**
+ * Signing up, in and out: email and password, Google (popup or redirect), guests, password resets, and swapping
+ * the refresh cookie for a new access token.
+ */
 @RestController
 @RequestMapping("/api/v1/auth")
 public class AuthController {
@@ -74,8 +78,10 @@ public class AuthController {
 		this.cookie = cookie;
 	}
 
-	/** Which sign-in options the browser should show, and the analytics id. Both are public by design. */
-	/** {@code passwordReset}: reset links can be emailed (MAIL_HOST is set); otherwise the app hides "Forgot password?". */
+	/**
+	 * Which sign-in options the browser should show, and the analytics id. Both are public by design.
+	 * {@code passwordReset}: reset links can be emailed (MAIL_HOST is set); otherwise the app hides "Forgot password?".
+	 */
 	public record ProvidersView(String googleClientId, String analyticsId, boolean passwordReset) {
 	}
 
@@ -87,6 +93,7 @@ public class AuthController {
 				.body(new ProvidersView(google.enabled() ? google.clientId() : null, analyticsId, mailConfigured));
 	}
 
+	/** Google's ID token from the popup, and a friend's invite code if any. */
 	public record GoogleRequest(@NotBlank @Size(max = 4096) String credential, @Size(max = 16) String invite) {
 	}
 
@@ -144,6 +151,7 @@ public class AuthController {
 						b.getBytes(StandardCharsets.UTF_8));
 	}
 
+	/** The email to send a reset link to. */
 	public record ForgotRequest(
 			@NotBlank(message = EMAIL_REQUIRED) @Pattern(regexp = EMAIL_LOOSE_PATTERN, message = EMAIL_INVALID)
 			@Size(max = EMAIL_MAX, message = EMAIL_SIZE) String email) {
@@ -160,6 +168,7 @@ public class AuthController {
 		resets.requestReset(r.email());
 	}
 
+	/** The token from the reset link and the new password. */
 	public record ResetRequest(
 			@NotBlank(message = "This reset link is incomplete. Open the link from the email again.")
 			@Size(max = 200, message = "This reset link isn't valid. Ask for a new one.") String token,
@@ -173,6 +182,7 @@ public class AuthController {
 		return signIn(resets.reset(r.token(), r.password()), response); // the reset ended every other sign-in
 	}
 
+	/** Name, email and password for a new account, and a friend's invite code if any. Name and email are trimmed. */
 	public record RegisterRequest(
 			@NotBlank(message = NAME_REQUIRED) @Size(max = NAME_MAX, message = NAME_SIZE)
 			@Pattern(regexp = NAME_PATTERN, message = NAME_CHARS) String userName,
@@ -189,6 +199,7 @@ public class AuthController {
 		}
 	}
 
+	/** Email and password to sign in with (the email trimmed). */
 	public record LoginRequest(
 			@NotBlank(message = EMAIL_REQUIRED) @Pattern(regexp = EMAIL_LOOSE_PATTERN, message = EMAIL_INVALID)
 			@Size(max = EMAIL_MAX, message = EMAIL_SIZE) String email,
@@ -199,6 +210,7 @@ public class AuthController {
 		}
 	}
 
+	/** The signed-in player as the app knows them: id, name, email and role. */
 	public record UserView(int userId, String userName, String email, String role) {
 		static UserView of(Account a) {
 			return new UserView(a.getUserId(), a.getUserName(), a.getEmail(), a.getRole().name());
@@ -219,6 +231,7 @@ public class AuthController {
 		return signIn(accounts.register(r.userName(), r.email(), r.password(), r.invite()), response);
 	}
 
+	/** Signs in with email and password: an access token in the reply and the refresh cookie. */
 	@PostMapping("/login")
 	public TokenView login(@Valid @RequestBody LoginRequest r, HttpServletResponse response) {
 		return signIn(accounts.authenticate(r.email(), r.password()), response);
@@ -264,6 +277,7 @@ public class AuthController {
 		cookie.clear(response);
 	}
 
+	/** The name a guest plays under (trimmed). */
 	public record GuestRequest(
 			@NotBlank(message = NAME_REQUIRED) @Size(max = NAME_MAX, message = NAME_SIZE)
 			@Pattern(regexp = NAME_PATTERN, message = NAME_CHARS) String userName) {

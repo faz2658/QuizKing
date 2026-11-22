@@ -74,6 +74,7 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 		this.modelName = modelName;
 	}
 
+	/** True when a model URL is set (quizcadia.ai.url). */
 	@Override
 	public boolean available() {
 		return configured;
@@ -84,6 +85,7 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 	static final Set<String> DIFFICULTIES = Set.of("easy", "medium", "hard");
 	static final Set<String> FORMATS = Set.of("multiple choice", "true/false");
 
+	/** Asks the model for one question; empty when the topic is unusable or the reply can't be parsed. */
 	@Override
 	public Optional<GeneratedQuestion> write(String topic, String difficulty, String format) {
 		// The topic is whatever a player typed for an AI quiz: keep it to one line of plain words, so it can only ever
@@ -114,7 +116,6 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 		return parse(response.choices().get(0).message().content());
 	}
 
-	/** Accepts a bare JSON object, one wrapped in ```json fences, or one after an empty think block. */
 	/**
 	 * A player's topic as one short line of text: no line breaks or other control characters (which could add
 	 * "Format:" or instruction lines), no chat-template markers such as {@code <|im_start|>} (which the model
@@ -137,6 +138,7 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 		return allowed.contains(v) ? v : fallback;
 	}
 
+	/** Accepts a bare JSON object, one wrapped in ```json fences, or one after an empty think block. */
 	Optional<GeneratedQuestion> parse(String reply) {
 		if (reply == null) {
 			return Optional.empty();

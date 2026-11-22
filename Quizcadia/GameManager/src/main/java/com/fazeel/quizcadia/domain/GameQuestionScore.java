@@ -3,23 +3,19 @@ package com.fazeel.quizcadia.domain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonCreator;
 
+/** Points for a right answer at each level (easy, medium, advanced). */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GameQuestionScore {
 
-	/*@Id
-	private int gqScoreId;*/
 	private int easyQuestionsScore;
 	private int mediumQuestionsScore;
 	private int advanceQuestionsScore;
 
 	@JsonCreator
-
 	public GameQuestionScore() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public GameQuestionScore(int easyQuestionsScore, int mediumQuestionsScore, int advanceQuestionsScore) {
-		super();
 		this.easyQuestionsScore = easyQuestionsScore;
 		this.mediumQuestionsScore = mediumQuestionsScore;
 		this.advanceQuestionsScore = advanceQuestionsScore;
@@ -54,8 +50,4 @@ public class GameQuestionScore {
 		return "GameQuestionScore [easyQuestionsScore=" + easyQuestionsScore + ", mediumQuestionsScore="
 				+ mediumQuestionsScore + ", advanceQuestionsScore=" + advanceQuestionsScore + "]";
 	}
-
-	
-
-	
 }

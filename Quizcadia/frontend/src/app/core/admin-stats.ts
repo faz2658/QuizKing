@@ -2,16 +2,23 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 
+/** A count for one day. */
 export interface DayCount { day: string; count: number }
+/** A recent account, for the admin's member list. */
 export interface Member { userId: number; userName: string; email: string; createdAt: string; google: boolean; admin: boolean }
+/** Sign-up numbers from the login service. */
 export interface AccountStatsView {
   total: number; google: number; password: number; admins: number;
   today: number; last7Days: number; last30Days: number;
   signupsByDay: DayCount[]; recent: Member[];
 }
+/** Games and players on one day. */
 export interface ActivityDay { day: string; games: number; players: number; guestGames: number }
+/** A name and how often it came up. */
 export interface NameCount { name: string; count: number }
+/** A player among the most active of the period. */
 export interface TopPlayer { userId: number; name: string; country: string | null; games: number; points: number }
+/** What people played in the period, from the reporting service. */
 export interface ActivityStatsView {
   gamesAllTime: number; gamesInPeriod: number;
   activeToday: number; active7Days: number; active30Days: number; guestPlayers30Days: number;
@@ -22,8 +29,10 @@ export interface ActivityStatsView {
 export interface RetentionDay { day: number; eligible: number; returned: number; rate: number | null }
 /** Players who started one week, and the share of them active in each week since (null: still to come). */
 export interface RetentionCohort { weekStart: string; players: number; guests: number; weeks: (number | null)[] }
+/** Retention for everyone and for accounts only, plus weekly cohorts. */
 export interface RetentionView { asOf: string; players: number; everyone: RetentionDay[]; accounts: RetentionDay[]; cohorts: RetentionCohort[] }
 
+/** Someone with QuizCadia open right now. */
 export interface OnlinePlayer { userId: number; name: string | null; country: string | null; guest: boolean; onlineSince: string; lastSeen: string }
 
 /** Admin-only numbers: accounts from the login service, play from the reporting service. */
@@ -50,9 +59,13 @@ export class AdminStatsApi {
   }
 }
 
+/** Google Analytics totals for the period. */
 export interface GaTotals { activeUsers: number; newUsers: number; sessions: number; pageViews: number; avgSessionSeconds: number; engagementRate: number }
+/** Google Analytics numbers for one day. */
 export interface GaDay { day: string; activeUsers: number; pageViews: number }
+/** One row of a Google Analytics breakdown (a page, country, device, channel or event). */
 export interface GaRow { name: string; value: number }
+/** The website analytics page; configured is false until the reporting service has Analytics access. */
 export interface WebsiteAnalyticsView {
   configured: boolean; error: string | null; propertyId: string | null; days: number; activeNow: number;
   totals: GaTotals | null; byDay: GaDay[]; pages: GaRow[]; countries: GaRow[]; devices: GaRow[]; channels: GaRow[]; events: GaRow[];

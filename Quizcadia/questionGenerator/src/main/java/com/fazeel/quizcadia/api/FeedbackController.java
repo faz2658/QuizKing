@@ -41,26 +41,31 @@ public class FeedbackController {
 			@Size(max = 200) String note) {
 	}
 
+	/** Whether this feedback retired the question. */
 	public record FeedbackResult(boolean retired) {
 	}
 
+	/** Records a player's rating or flag (guests too; only account votes can retire a question). */
 	@PostMapping
 	public FeedbackResult give(@Valid @RequestBody FeedbackRequest r) {
 		return new FeedbackResult(feedback.give(Callers.currentUserId(), Callers.isAccount(), r.questionId(), r.rating(),
 				r.flag(), r.note()));
 	}
 
+	/** The admin review list: disliked or flagged questions, and the retired ones. */
 	@GetMapping
 	public Review review() {
 		return feedback.review();
 	}
 
+	/** Clears a question's feedback after the admin checked it. */
 	@PostMapping("/{questionId}/dismiss")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void dismiss(@PathVariable int questionId) {
 		feedback.dismiss(questionId);
 	}
 
+	/** Puts a retired question back in its topic. */
 	@PostMapping("/{questionId}/restore")
 	public Questions restore(@PathVariable int questionId) {
 		return feedback.restore(questionId);

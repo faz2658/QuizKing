@@ -25,6 +25,7 @@ public class OpenTriviaClient implements TriviaSource {
 		this.http = builder.baseUrl(baseUrl).defaultHeader("User-Agent", "Quizcadia/2.0 (question importer)").build();
 	}
 
+	/** Requests a new session token. */
 	@Override
 	public String newToken() {
 		TokenResponse r = http.get().uri("/api_token.php?command=request").retrieve().body(TokenResponse.class);
@@ -34,6 +35,7 @@ public class OpenTriviaClient implements TriviaSource {
 		return r.token();
 	}
 
+	/** Up to amount questions not yet returned for the token, decoded from base64. */
 	@Override
 	public TriviaBatch fetch(String token, int amount) {
 		RawResponse r = http.get().uri("/api.php?amount={amount}&token={token}&encode=base64", amount, token)
@@ -56,14 +58,17 @@ public class OpenTriviaClient implements TriviaSource {
 		return s == null ? null : new String(Base64.getDecoder().decode(s), StandardCharsets.UTF_8);
 	}
 
+	/** The token reply. */
 	@JsonIgnoreProperties(ignoreUnknown = true)
 	record TokenResponse(@JsonProperty("response_code") int responseCode, String token) {
 	}
 
+	/** The questions reply, still base64-encoded. */
 	@JsonIgnoreProperties(ignoreUnknown = true)
 	record RawResponse(@JsonProperty("response_code") int responseCode, List<RawQuestion> results) {
 	}
 
+	/** One question as Open Trivia DB sends it. */
 	@JsonIgnoreProperties(ignoreUnknown = true)
 	record RawQuestion(String type, String difficulty, String category, String question,
 			@JsonProperty("correct_answer") String correctAnswer,

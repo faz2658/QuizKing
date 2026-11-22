@@ -21,12 +21,17 @@ public final class Summaries {
 	private Summaries() {
 	}
 
+	/** Which topic a game is built on (id and name), without its questions. */
 	public record TopicRef(int topicId, String topicName) {
 		static TopicRef of(Topic t) {
 			return t == null ? null : new TopicRef(t.getTopicId(), t.getTopicName());
 		}
 	}
 
+	/**
+	 * A game as the catalog lists it: what players see on a card, plus its country (null for shared world trivia).
+	 * Never any questions.
+	 */
 	public record GameSummary(int gameId, String gameName, String gameDescription, String gameImage, String gameRules,
 			int categoryId, TopicRef topic, GameType gameType, GameQuestionLevel questionLevels, int questionCount,
 			String createdBy, Date createdOn, String country) {
@@ -55,9 +60,11 @@ public final class Summaries {
 		}
 	}
 
+	/** A topic in a category listing, with its question count instead of its questions. */
 	public record TopicSummary(int topicId, String topicName, int questionCount) {
 	}
 
+	/** A category in the catalog with its topics' counts, and its country for a country's own question set. */
 	public record CategorySummary(int categoryId, String categoryName, String categoryImage, List<TopicSummary> topic,
 			String countryCode) {
 

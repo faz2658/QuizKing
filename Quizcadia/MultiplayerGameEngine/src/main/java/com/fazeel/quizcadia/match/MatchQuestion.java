@@ -5,6 +5,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+/**
+ * One question of a match: its options and right answer, when it opened and closed, who won it, and every player's
+ * answer.
+ */
 public class MatchQuestion {
 
 	private int questionId;

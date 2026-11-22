@@ -236,10 +236,12 @@ public class GameSession {
 		return Optional.empty();
 	}
 
+	/** The question being asked; empty once the game is over. */
 	public Optional<SessionQuestion> currentQuestion() {
 		return status == SessionStatus.COMPLETED ? Optional.empty() : Optional.of(current());
 	}
 
+	/** Whole seconds left on the current question (0 when there is none). */
 	public long secondsRemaining(Instant now) {
 		return currentQuestion().map(q -> Math.max(0, Duration.between(now, q.deadline()).toSeconds())).orElse(0L);
 	}
@@ -253,6 +255,7 @@ public class GameSession {
 		return max;
 	}
 
+	/** How many questions were answered right. */
 	public long correctCount() {
 		return questions.stream().filter(SessionQuestion::isCorrect).count();
 	}
@@ -353,6 +356,7 @@ public class GameSession {
 		return usedLifelines;
 	}
 
+	/** Sets the player's display name; returns this. */
 	public GameSession playedBy(String playerName) {
 		this.playerName = playerName;
 		return this;
@@ -378,6 +382,7 @@ public class GameSession {
 		return resultPublished;
 	}
 
+	/** Records that the result went out, so it is never published twice. */
 	public void markResultPublished() {
 		this.resultPublished = true;
 	}

@@ -16,6 +16,7 @@ import { GoogleButton } from '../ui/google-button';
 
 type Tab = 'login' | 'register' | 'guest';
 
+/** The public start page: what QuizCadia is, sign-in and sign-up. */
 @Component({
   selector: 'mv-welcome',
   imports: [ReactiveFormsModule, RouterLink, BlurText, CountUp, Tilt, GoogleButton],
