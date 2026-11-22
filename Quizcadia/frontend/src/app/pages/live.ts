@@ -94,11 +94,11 @@ function rememberName(name: string): void {
             }
           }
           @case ('REVEAL') {
-            <div class="panel center result" [class.good]="m.you?.lastCorrect" [class.bad]="m.you?.lastAnswer && !m.you?.lastCorrect">
+            <div class="panel center result" [class.good]="m.you?.lastCorrect" [class.bad]="m.you?.lastAnswer && !m.you.lastCorrect">
               @if (m.you?.lastCorrect) {
                 <span class="mark" aria-hidden="true">✓</span>
                 <h1>Correct!</h1>
-                <p class="gain">+{{ fmt(m.you?.lastPoints ?? 0) }}</p>
+                <p class="gain">+{{ fmt(m.you.lastPoints) }}</p>
               } @else if (m.you?.lastAnswer) {
                 <span class="mark" aria-hidden="true">✗</span>
                 <h1>Not quite</h1>
