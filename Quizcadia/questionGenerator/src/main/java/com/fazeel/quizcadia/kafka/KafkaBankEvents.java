@@ -6,6 +6,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
 
 import com.fazeel.quizcadia.bank.BankEvents;
+import com.fazeel.quizcadia.bank.TopicPool;
 import com.fazeel.quizcadia.domain.Category;
 
 @Component
@@ -23,6 +24,6 @@ public class KafkaBankEvents implements BankEvents {
 	@Override
 	public void categoryChanged(Category category) {
 		// topics travel as counts only: the engines load a topic's questions from this service when a game starts
-		kafka.send(topic, String.valueOf(category.getCategoryId()), com.fazeel.quizcadia.bank.TopicPool.slim(category));
+		kafka.send(topic, String.valueOf(category.getCategoryId()), TopicPool.slim(category));
 	}
 }

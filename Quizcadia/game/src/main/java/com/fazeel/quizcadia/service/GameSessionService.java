@@ -1,32 +1,40 @@
 package com.fazeel.quizcadia.service;
 
+import java.security.SecureRandom;
 import java.time.Clock;
 import java.time.Instant;
-import java.util.Map;
-import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 import java.util.UUID;
+import java.util.random.RandomGenerator;
+import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fazeel.quizcadia.domain.Game;
+import com.fazeel.quizcadia.domain.GameQuestionLevel;
 import com.fazeel.quizcadia.domain.GameRequest;
 import com.fazeel.quizcadia.domain.PlayedQuestion;
 import com.fazeel.quizcadia.domain.Questions;
-import com.fazeel.quizcadia.repository.SeenQuestionRepository;
-import com.fazeel.quizcadia.session.SeenQuestion;
 import com.fazeel.quizcadia.domain.SinglePlayerResult;
 import com.fazeel.quizcadia.kafka.GameEvents;
 import com.fazeel.quizcadia.repository.GameRepository;
 import com.fazeel.quizcadia.repository.GameSessionRepository;
+import com.fazeel.quizcadia.repository.SeenQuestionRepository;
 import com.fazeel.quizcadia.session.AnswerOutcome;
 import com.fazeel.quizcadia.session.GameSession;
 import com.fazeel.quizcadia.session.Lifeline;
 import com.fazeel.quizcadia.session.QuizBuilder;
 import com.fazeel.quizcadia.session.QuizRuleException;
+import com.fazeel.quizcadia.session.SeenQuestion;
 import com.fazeel.quizcadia.session.SessionQuestion;
 import com.fazeel.quizcadia.session.SessionStatus;
+import com.fazeel.quizcadia.session.SessionVariant;
 
 @Service
 public class GameSessionService {
@@ -38,14 +46,14 @@ public class GameSessionService {
 	private final QuizBuilder quizBuilder;
 	private final TopicPools pools;
 	private final Clock clock;
-	private final java.util.random.RandomGenerator random = new java.security.SecureRandom();
+	private final RandomGenerator random = new SecureRandom();
 
 	public GameSessionService(GameRepository games, GameSessionRepository sessions, GameEvents events,
 			SeenQuestionRepository seen, QuizBuilder quizBuilder, Clock clock) {
 		this(games, sessions, events, seen, quizBuilder, clock, TopicPools.none());
 	}
 
-	@org.springframework.beans.factory.annotation.Autowired
+	@Autowired
 	public GameSessionService(GameRepository games, GameSessionRepository sessions, GameEvents events,
 			SeenQuestionRepository seen, QuizBuilder quizBuilder, Clock clock, TopicPools pools) {
 		this.pools = pools;
@@ -73,7 +81,7 @@ public class GameSessionService {
 	public GameSession start(int gameId, int userId, String playerName, String country) {
 		Game game = loadGame(gameId, userId);
 		List<Integer> poolIds = game.getQuestions() == null ? List.of()
-				: game.getQuestions().stream().filter(java.util.Objects::nonNull).map(Questions::getQuestionId).toList();
+				: game.getQuestions().stream().filter(Objects::nonNull).map(Questions::getQuestionId).toList();
 		Map<Integer, Instant> lastSeen = seen.findByUserIdAndQuestionIdIn(userId, poolIds).stream()
 				.collect(Collectors.toMap(SeenQuestion::questionId, SeenQuestion::lastSeenAt, (a, b) -> a));
 		List<SessionQuestion> questions = quizBuilder.build(game, lastSeen, country);
@@ -126,16 +134,16 @@ public class GameSessionService {
 		if (count < CUSTOM_MIN || count > CUSTOM_MAX) {
 			throw new QuizRuleException("A custom quiz has " + CUSTOM_MIN + " to " + CUSTOM_MAX + " questions");
 		}
-		List<Game> picked = new java.util.ArrayList<>();
+		List<Game> picked = new ArrayList<>();
 		for (int id : ids) {
 			picked.add(pools.withPool(games.findById(id).orElseThrow(() -> {
 				events.requestGame(new GameRequest(id, userId));
 				return new GameNotReadyException(id);
 			})));
 		}
-		Map<Integer, Questions> pool = new java.util.LinkedHashMap<>();
-		picked.forEach(g -> java.util.Objects.requireNonNullElse(g.getQuestions(), List.<Questions>of()).stream()
-				.filter(java.util.Objects::nonNull).forEach(q -> pool.putIfAbsent(q.getQuestionId(), q)));
+		Map<Integer, Questions> pool = new LinkedHashMap<>();
+		picked.forEach(g -> Objects.requireNonNullElse(g.getQuestions(), List.<Questions>of()).stream()
+				.filter(Objects::nonNull).forEach(q -> pool.putIfAbsent(q.getQuestionId(), q)));
 		int easy = switch (difficulty) {
 			case EASY -> count;
 			case MIXED -> Math.round(count * 0.4f);
@@ -150,7 +158,7 @@ public class GameSessionService {
 		Game custom = new Game();
 		custom.setGameName(customName(picked));
 		custom.setQuestions(List.copyOf(pool.values()));
-		custom.setQuestionLevels(new com.fazeel.quizcadia.domain.GameQuestionLevel(0, easy, medium, advanced));
+		custom.setQuestionLevels(new GameQuestionLevel(0, easy, medium, advanced));
 		Map<Integer, Instant> lastSeen = seen.findByUserIdAndQuestionIdIn(userId, List.copyOf(pool.keySet())).stream()
 				.collect(Collectors.toMap(SeenQuestion::questionId, SeenQuestion::lastSeenAt, (a, b) -> a));
 		List<SessionQuestion> questions = quizBuilder.build(custom, lastSeen, country);
@@ -159,7 +167,7 @@ public class GameSessionService {
 		}
 		Instant now = clock.instant();
 		GameSession session = new GameSession(UUID.randomUUID().toString(), 0, userId, 0, custom.getGameName(), questions,
-				now).asVariant(com.fazeel.quizcadia.session.SessionVariant.CUSTOM, null, null).playedBy(playerName);
+				now).asVariant(SessionVariant.CUSTOM, null, null).playedBy(playerName);
 		seen.saveAll(questions.stream().map(q -> SeenQuestion.of(userId, q.getQuestionId(), now)).toList());
 		return sessions.save(session);
 	}

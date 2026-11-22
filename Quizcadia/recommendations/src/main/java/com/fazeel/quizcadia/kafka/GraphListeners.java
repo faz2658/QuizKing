@@ -1,6 +1,7 @@
 package com.fazeel.quizcadia.kafka;
 
 import java.time.Instant;
+import java.util.UUID;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.kafka.annotation.KafkaListener;
@@ -66,6 +67,6 @@ public class GraphListeners {
 
 	/** Names one finished game, so a repeated delivery is counted once. Without an id (an old message): always new. */
 	static String playId(String mode, String id) {
-		return id == null || id.isBlank() ? mode + ":" + java.util.UUID.randomUUID() : mode + ":" + id;
+		return id == null || id.isBlank() ? mode + ":" + UUID.randomUUID() : mode + ":" + id;
 	}
 }

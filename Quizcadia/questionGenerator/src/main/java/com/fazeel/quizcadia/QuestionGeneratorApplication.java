@@ -3,8 +3,11 @@ package com.fazeel.quizcadia;
 import java.security.SecureRandom;
 import java.time.Clock;
 import java.time.Duration;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.Executors;
 
+import org.bson.Document;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.ObjectProvider;
@@ -16,11 +19,11 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.data.mongodb.core.MongoOperations;
 
 import com.fazeel.quizcadia.bank.QuestionBankService;
+import com.fazeel.quizcadia.feedback.RetiredQuestionRepository;
 import com.fazeel.quizcadia.generator.FactQuestionGenerator;
 import com.fazeel.quizcadia.opentdb.OpenTriviaImporter;
 import com.fazeel.quizcadia.opentdb.TriviaMapper;
 import com.fazeel.quizcadia.opentdb.TriviaSource;
-import com.fazeel.quizcadia.feedback.RetiredQuestionRepository;
 import com.fazeel.quizcadia.pack.PackLoader;
 
 @SpringBootApplication
@@ -80,13 +83,13 @@ public class QuestionGeneratorApplication {
 				PackLoader.LoadedPacks loaded = m == null ? inMemoryPacks() : new PackLoader.LoadedPacks() {
 					@Override
 					public String hash(String pack) {
-						org.bson.Document d = m.findById(pack, org.bson.Document.class, "question_packs");
+						Document d = m.findById(pack, Document.class, "question_packs");
 						return d == null ? null : d.getString("hash");
 					}
 
 					@Override
 					public void loaded(String pack, String hash) {
-						m.save(new org.bson.Document("_id", pack).append("hash", hash), "question_packs");
+						m.save(new Document("_id", pack).append("hash", hash), "question_packs");
 					}
 				};
 				int added = new PackLoader(bank, id -> r != null && r.existsById(id), loaded).load(PackLoader.bundled());
@@ -99,7 +102,7 @@ public class QuestionGeneratorApplication {
 	}
 
 	private static PackLoader.LoadedPacks inMemoryPacks() {
-		java.util.Map<String, String> m = new java.util.concurrent.ConcurrentHashMap<>();
+		Map<String, String> m = new ConcurrentHashMap<>();
 		return new PackLoader.LoadedPacks() {
 			@Override
 			public String hash(String pack) {

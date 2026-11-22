@@ -5,11 +5,17 @@ import static org.springframework.data.mongodb.core.query.Criteria.where;
 import static org.springframework.data.mongodb.core.query.Query.query;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Optional;
+import java.util.random.RandomGenerator;
 
+import org.bson.Document;
 import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
@@ -53,20 +59,20 @@ public class QuestionBankService {
 	 * holding it and only that one question comes back, instead of reading the whole bank (every category with all its
 	 * questions: megabytes per tap).
 	 */
-	public java.util.Optional<Located> locate(int questionId) {
-		var at = org.springframework.data.mongodb.core.aggregation.Aggregation.newAggregation(
-				org.springframework.data.mongodb.core.aggregation.Aggregation.match(where("topic.questions.questionId").is(questionId)),
-				org.springframework.data.mongodb.core.aggregation.Aggregation.unwind("topic"),
-				org.springframework.data.mongodb.core.aggregation.Aggregation.unwind("topic.questions"),
-				org.springframework.data.mongodb.core.aggregation.Aggregation.match(where("topic.questions.questionId").is(questionId)),
-				org.springframework.data.mongodb.core.aggregation.Aggregation.limit(1),
-				org.springframework.data.mongodb.core.aggregation.Aggregation.project()
+	public Optional<Located> locate(int questionId) {
+		var at = Aggregation.newAggregation(
+				Aggregation.match(where("topic.questions.questionId").is(questionId)),
+				Aggregation.unwind("topic"),
+				Aggregation.unwind("topic.questions"),
+				Aggregation.match(where("topic.questions.questionId").is(questionId)),
+				Aggregation.limit(1),
+				Aggregation.project()
 						.and("topic.topicName").as("topicName").and("topic.questions").as("question"));
-		org.bson.Document hit = mongo.aggregate(at, "category", org.bson.Document.class).getUniqueMappedResult();
-		if (hit == null || !(hit.get("question") instanceof org.bson.Document question)) {
-			return java.util.Optional.empty();
+		Document hit = mongo.aggregate(at, "category", Document.class).getUniqueMappedResult();
+		if (hit == null || !(hit.get("question") instanceof Document question)) {
+			return Optional.empty();
 		}
-		return java.util.Optional.of(new Located(((Number) hit.get("_id")).intValue(), hit.getString("topicName"),
+		return Optional.of(new Located(((Number) hit.get("_id")).intValue(), hit.getString("topicName"),
 				mongo.getConverter().read(Questions.class, question)));
 	}
 
@@ -182,7 +188,7 @@ public class QuestionBankService {
 		Category c = category(categoryId);
 		Topic t = topic(c, topicName);
 		List<Questions> generated = generator.generate(template, facts.facts(template), count);
-		Map<Integer, Questions> byId = new java.util.LinkedHashMap<>();
+		Map<Integer, Questions> byId = new LinkedHashMap<>();
 		questions(t).forEach(q -> byId.put(q.getQuestionId(), q));
 		generated.forEach(q -> byId.put(q.getQuestionId(), q));
 		t.setQuestions(new ArrayList<>(byId.values()));
@@ -214,7 +220,7 @@ public class QuestionBankService {
 			c = addTopic(c.getCategoryId(), topicName, null);
 		}
 		Topic t = topic(c, topicName);
-		Map<Integer, Questions> byId = new java.util.LinkedHashMap<>();
+		Map<Integer, Questions> byId = new LinkedHashMap<>();
 		questions(t).forEach(q -> byId.put(q.getQuestionId(), q));
 		int added = 0;
 		for (Questions q : questions) {
@@ -252,8 +258,8 @@ public class QuestionBankService {
 	 * A quiz across every topic for the live room quiz: {@code count} general questions of one level, spread over the
 	 * topics (see {@link QuestionMix}).
 	 */
-	public List<Questions> mixedQuestions(int level, int count, java.util.random.RandomGenerator random) {
-		Map<Integer, List<Questions>> byTopic = new java.util.HashMap<>();
+	public List<Questions> mixedQuestions(int level, int count, RandomGenerator random) {
+		Map<Integer, List<Questions>> byTopic = new HashMap<>();
 		for (Category c : categories.findAll()) {
 			for (Topic t : topics(c)) {
 				byTopic.computeIfAbsent(t.getTopicId(), k -> new ArrayList<>()).addAll(questions(t));

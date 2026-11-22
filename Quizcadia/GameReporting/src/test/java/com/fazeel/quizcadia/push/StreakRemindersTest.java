@@ -10,9 +10,11 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.time.Clock;
+import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneId;
+import java.time.ZoneOffset;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -64,7 +66,7 @@ class StreakRemindersTest {
 
 		verify(push).send(eq("https://fcm.googleapis.com/fcm/send/1"), eq("p"), eq("a"),
 				eq("{\"title\":\"🔥 Keep your 5-day streak\",\"body\":\"One quick game before 12:00 AM keeps it alive.\",\"url\":\"/daily\",\"tag\":\"streak\"}"),
-				eq(java.time.Duration.ofHours(3)));
+				eq(Duration.ofHours(3)));
 		assertThat(saved).singleElement().extracting(PushSubscription::lastRemindedDay).isEqualTo(DAY);
 	}
 
@@ -123,7 +125,7 @@ class StreakRemindersTest {
 
 	@Test
 	void anUnknownTimeZoneFallsBackToUtc() {
-		assertThat(StreakReminders.zone("Not/AZone")).isEqualTo(java.time.ZoneOffset.UTC);
-		assertThat(StreakReminders.zone(null)).isEqualTo(java.time.ZoneOffset.UTC);
+		assertThat(StreakReminders.zone("Not/AZone")).isEqualTo(ZoneOffset.UTC);
+		assertThat(StreakReminders.zone(null)).isEqualTo(ZoneOffset.UTC);
 	}
 }

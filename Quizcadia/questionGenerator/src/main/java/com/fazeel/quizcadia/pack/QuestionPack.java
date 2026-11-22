@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
@@ -11,9 +12,9 @@ import java.util.Random;
 import org.springframework.core.io.ClassPathResource;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fazeel.quizcadia.domain.Questions;
-
 import tools.jackson.databind.json.JsonMapper;
+
+import com.fazeel.quizcadia.domain.Questions;
 
 /**
  * A hand-written set of questions bundled with the app (resources/packs/*.json), such as the India &amp;
@@ -69,14 +70,14 @@ public record QuestionPack(String category, String country, List<PackTopic> topi
 
 	/** Like {@link #questions(PackTopic)}, tagging each question with the pack's country (e.g. IN) when it has one. */
 	public static List<Questions> questions(PackTopic topic, String country) {
-		String tag = country == null || country.isBlank() ? null : country.trim().toUpperCase(java.util.Locale.ROOT);
+		String tag = country == null || country.isBlank() ? null : country.trim().toUpperCase(Locale.ROOT);
 		List<Questions> out = new ArrayList<>();
 		for (PackQuestion p : topic.questions()) {
 			Questions q = new Questions();
 			int id = idFor(p.q());
 			List<String> options = new ArrayList<>(p.wrong());
 			options.add(p.a());
-			java.util.Collections.shuffle(options, new Random(id));
+			Collections.shuffle(options, new Random(id));
 			q.setQuestionId(id);
 			q.setQuestionLevel(p.level());
 			q.setQuestionType(TYPE);

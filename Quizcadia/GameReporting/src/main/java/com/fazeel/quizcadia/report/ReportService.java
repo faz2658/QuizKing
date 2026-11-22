@@ -8,6 +8,8 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
+import com.fazeel.quizcadia.board.BoardCache;
+import com.fazeel.quizcadia.board.LeaderboardService;
 import com.fazeel.quizcadia.domain.AdaptiveResult;
 import com.fazeel.quizcadia.domain.MultiPlayerResult;
 import com.fazeel.quizcadia.domain.SinglePlayerResult;
@@ -18,9 +20,9 @@ public class ReportService {
 
 	private final GameReportRepository reports;
 	private final PlayerNames names;
-	private final com.fazeel.quizcadia.board.BoardCache boards;
+	private final BoardCache boards;
 
-	public ReportService(GameReportRepository reports, PlayerNames names, com.fazeel.quizcadia.board.BoardCache boards) {
+	public ReportService(GameReportRepository reports, PlayerNames names, BoardCache boards) {
 		this.reports = reports;
 		this.names = names;
 		this.boards = boards;
@@ -31,7 +33,7 @@ public class ReportService {
 		GameReport report = reports.save(ReportMapper.single(r));
 		if (report != null && report.isDaily()) {
 			// the player's result page asks for the daily board right away, so it must include this run
-			boards.evict(com.fazeel.quizcadia.board.LeaderboardService.DAILY_KEY);
+			boards.evict(LeaderboardService.DAILY_KEY);
 		}
 	}
 

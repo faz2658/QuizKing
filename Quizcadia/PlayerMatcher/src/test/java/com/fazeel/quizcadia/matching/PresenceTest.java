@@ -3,7 +3,9 @@ package com.fazeel.quizcadia.matching;
 import static org.assertj.core.api.Assertions.assertThat;
 
 import java.time.Duration;
+import java.time.Instant;
 import java.util.List;
+import java.util.Map;
 
 import org.junit.jupiter.api.Test;
 
@@ -33,7 +35,7 @@ class PresenceTest {
 	@Test
 	void matchesGetNamesAndCountriesButBotsKeepTheirs() {
 		presence.seen(1, "Ada", "CA");
-		Match m = new Match("m", 7, List.of(1, -2), clock.now, java.util.Map.of(-2, "🤖 Turing"), java.util.Map.of(-2, "JP"));
+		Match m = new Match("m", 7, List.of(1, -2), clock.now, Map.of(-2, "🤖 Turing"), Map.of(-2, "JP"));
 
 		Match enriched = presence.enrich(m);
 		assertThat(enriched.names()).containsEntry(1, "Ada").containsEntry(-2, "🤖 Turing");
@@ -42,7 +44,7 @@ class PresenceTest {
 
 	@Test
 	void adminsSeeWhoIsOnlineAccountsFirstWithTheTimeTheyCameOnline() {
-		java.time.Instant start = clock.now;
+		Instant start = clock.now;
 		presence.seen(Presence.GUEST_ID_BASE + 5, "zed (guest)", null);
 		presence.seen(2, "bo", "IN");
 		presence.seen(1, "Ada", "ca");

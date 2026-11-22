@@ -4,11 +4,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
 import org.junit.jupiter.api.Test;
+
+import tools.jackson.databind.json.JsonMapper;
 
 import com.fazeel.quizcadia.domain.Match;
 import com.fazeel.quizcadia.domain.MultiPlayerGame;
@@ -87,7 +90,7 @@ class MatchFactoryTest {
 	}
 
 	static Map<String, Long> origin(MultiplayerMatch m) {
-		Map<String, Long> by = new java.util.HashMap<>();
+		Map<String, Long> by = new HashMap<>();
 		m.getQuestions().forEach(q -> by.merge(q.getQuestionId() < 200 ? "IN" : q.getQuestionId() < 300 ? "general" : "KE",
 				1L, Long::sum));
 		return by;
@@ -137,7 +140,7 @@ class MatchFactoryTest {
 
 	@Test
 	void sameCountryPlayersGetGeneralQuestionsBeforeRepeatingTheirOwn() {
-		Map<Integer, Integer> seenBy = new java.util.HashMap<>();
+		Map<Integer, Integer> seenBy = new HashMap<>();
 		for (int i = 0; i < 30; i++) {
 			seenBy.put(100 + i, 2);
 		}
@@ -160,7 +163,7 @@ class MatchFactoryTest {
 
 	@Test
 	void readsTheCountryOfEachQuestionFromTheGameDefinition() {
-		MultiPlayerGame.Question q = tools.jackson.databind.json.JsonMapper.builder().build().readValue(
+		MultiPlayerGame.Question q = JsonMapper.builder().build().readValue(
 				"{\"questionId\":5,\"questionLevel\":1,\"questionStem\":\"Q\",\"option1\":\"a\",\"option2\":\"b\","
 						+ "\"correctAnswer\":\"a\",\"country\":\"IN\",\"explanation\":\"x\"}",
 				MultiPlayerGame.Question.class);

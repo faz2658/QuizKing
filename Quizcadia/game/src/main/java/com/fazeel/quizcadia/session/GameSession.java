@@ -3,9 +3,12 @@ package com.fazeel.quizcadia.session;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Collections;
 import java.util.EnumSet;
+import java.util.List;
+import java.util.Objects;
 import java.util.Optional;
+import java.util.Random;
 import java.util.Set;
 import java.util.random.RandomGenerator;
 
@@ -178,7 +181,7 @@ public class GameSession {
 			}
 			if (q.getQuestionId() == questionId) {
 				boolean answered = !q.isTimedOut() && !q.isSkipped();
-				return answered && java.util.Objects.equals(q.getAnswer(), answer) ? AnswerOutcome.of(q, run) : null;
+				return answered && Objects.equals(q.getAnswer(), answer) ? AnswerOutcome.of(q, run) : null;
 			}
 		}
 		return null;
@@ -214,7 +217,7 @@ public class GameSession {
 				if (wrong.size() < 3) {
 					throw new QuizRuleException("50/50 needs a question with four options");
 				}
-				java.util.Collections.shuffle(wrong, java.util.Random.from(random));
+				Collections.shuffle(wrong, Random.from(random));
 				q.setRemovedOptions(List.copyOf(wrong.subList(0, 2)));
 			}
 			case EXTRA_TIME -> q.setBonusSeconds(q.getBonusSeconds() + EXTRA_SECONDS);

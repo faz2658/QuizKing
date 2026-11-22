@@ -1,19 +1,21 @@
 package com.fazeel.quizcadia.adaptive;
 
 import java.time.Clock;
-import java.util.List;
 import java.time.Instant;
+import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fazeel.quizcadia.adaptive.AdaptiveSession.Outcome;
 import com.fazeel.quizcadia.adaptive.AdaptiveSession.Status;
+import com.fazeel.quizcadia.adaptive.GameRepository;
 import com.fazeel.quizcadia.adaptive.Ports.GameSource;
 import com.fazeel.quizcadia.adaptive.Ports.ResultEvents;
-import com.fazeel.quizcadia.adaptive.GameRepository;
 import com.fazeel.quizcadia.adaptive.SeenQuestionRepository;
 import com.fazeel.quizcadia.adaptive.SessionRepository;
 import com.fazeel.quizcadia.domain.AdaptiveResult;
@@ -37,7 +39,7 @@ public class AdaptiveService {
 		this(sessions, games, seen, gameSource, events, poolBuilder, rules, clock, TopicPools.none());
 	}
 
-	@org.springframework.beans.factory.annotation.Autowired
+	@Autowired
 	public AdaptiveService(SessionRepository sessions, GameRepository games, SeenQuestionRepository seen,
 			GameSource gameSource, ResultEvents events, PoolBuilder poolBuilder, AdaptiveRules rules, Clock clock,
 			TopicPools pools) {
@@ -69,7 +71,7 @@ public class AdaptiveService {
 		Game game = pools.withPool(games.findById(gameId).or(() -> gameSource.fetch(gameId).map(games::save))
 				.orElseThrow(() -> new NotFoundException("No game " + gameId))).forCountry(country);
 		List<Integer> ids = game.questions() == null ? List.of()
-				: game.questions().stream().filter(java.util.Objects::nonNull).map(Game.Question::questionId).toList();
+				: game.questions().stream().filter(Objects::nonNull).map(Game.Question::questionId).toList();
 		Map<Integer, Instant> lastSeen = seen.findByUserIdAndQuestionIdIn(userId, ids).stream()
 				.collect(Collectors.toMap(SeenQuestion::questionId, SeenQuestion::lastSeenAt, (a, b) -> a));
 		List<PooledQuestion> pool = poolBuilder.build(game, lastSeen, rules.totalQuestions());

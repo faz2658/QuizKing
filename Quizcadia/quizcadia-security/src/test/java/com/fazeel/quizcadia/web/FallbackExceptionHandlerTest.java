@@ -11,8 +11,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import java.io.IOException;
 
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
+import org.springframework.core.annotation.Order;
 import org.springframework.dao.DataAccessResourceFailureException;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ProblemDetail;
 import org.springframework.security.access.AccessDeniedException;
@@ -26,8 +29,6 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.client.ResourceAccessException;
-import org.springframework.http.HttpStatus;
-import org.springframework.core.annotation.Order;
 
 class FallbackExceptionHandlerTest {
 
@@ -103,7 +104,7 @@ class FallbackExceptionHandlerTest {
 				.andExpect(status().isInternalServerError())
 				.andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_PROBLEM_JSON))
 				.andExpect(jsonPath("$.errorId").isString())
-				.andExpect(jsonPath("$.detail").value(org.hamcrest.Matchers.startsWith(FallbackExceptionHandler.UNEXPECTED)))
+				.andExpect(jsonPath("$.detail").value(Matchers.startsWith(FallbackExceptionHandler.UNEXPECTED)))
 				.andReturn().getResponse().getContentAsString();
 		assertThat(body).doesNotContain("hunter2", "IllegalStateException", "secret");
 	}

@@ -10,6 +10,7 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -168,7 +169,7 @@ class GameCatalogServiceTest {
 		Category stored = category(1, "Geography", List.of(q(1, 1, "manual"), q(2, 1, "manual"), q(3, 1, "manual")));
 		when(categories.findById(1)).thenReturn(Optional.of(stored));
 		Game existing = request(1, 0, 0);
-		existing.setQuestions(new java.util.ArrayList<>(stored.getTopic().get(0).getQuestions()));
+		existing.setQuestions(new ArrayList<>(stored.getTopic().get(0).getQuestions()));
 		when(games.findByCategoryIdAndTopicTopicNameIgnoreCase(1, "Geography")).thenReturn(List.of(existing));
 		Category removal = category(1, "Geography", List.of());
 		removal.getTopic().get(0).setRemovedQuestionIds(List.of(2));
@@ -250,7 +251,7 @@ class GameCatalogServiceTest {
 		when(games.findByCategoryIdAndTopicTopicNameIgnoreCase(1, "Myth")).thenReturn(List.of(auto, manual));
 		when(multiGames.findByCategoryIdAndTopicTopicNameIgnoreCase(1, "Myth")).thenReturn(List.of());
 
-		List<Questions> more = new java.util.ArrayList<>();
+		List<Questions> more = new ArrayList<>();
 		for (int i = 0; i < 10; i++) {
 			more.add(q(100 + i, 3, "imported"));
 		}

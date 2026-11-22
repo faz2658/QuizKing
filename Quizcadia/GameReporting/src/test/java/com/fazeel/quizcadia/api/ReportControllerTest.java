@@ -1,11 +1,7 @@
 package com.fazeel.quizcadia.api;
 
-import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
-import org.springframework.context.annotation.Import;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.test.web.servlet.request.RequestPostProcessor;
-import com.fazeel.quizcadia.config.SecurityConfig;
 import static org.mockito.Mockito.when;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -16,11 +12,17 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
+import org.springframework.context.annotation.Import;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.RequestPostProcessor;
 
+import com.fazeel.quizcadia.config.SecurityConfig;
+import com.fazeel.quizcadia.progress.ProgressService;
 import com.fazeel.quizcadia.report.GameReport;
 import com.fazeel.quizcadia.report.GameReport.GameMode;
+import com.fazeel.quizcadia.report.PlayerNames;
 import com.fazeel.quizcadia.report.ReportService;
 
 @Import(SecurityConfig.class)
@@ -43,10 +45,10 @@ class ReportControllerTest {
 	ReportService service;
 
 	@MockitoBean
-	com.fazeel.quizcadia.progress.ProgressService progress;
+	ProgressService progress;
 
 	@MockitoBean
-	com.fazeel.quizcadia.report.PlayerNames names;
+	PlayerNames names;
 
 	@Test
 	void listsReportsOfOneMode() throws Exception {

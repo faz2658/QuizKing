@@ -2,7 +2,6 @@ package com.fazeel.quizcadia.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonCreator;
-import java.util.List;
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)

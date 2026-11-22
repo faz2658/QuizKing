@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.fazeel.quizcadia.mail.Mailer;
+import com.fazeel.quizcadia.session.SessionService;
 
 /**
  * Forgot password: emails a one-time link that lets the owner of the address choose a new password.
@@ -38,11 +39,11 @@ public class PasswordResetService {
 	private final Mailer mailer;
 	private final Clock clock;
 	private final String publicUrl;
-	private final com.fazeel.quizcadia.session.SessionService sessions;
+	private final SessionService sessions;
 
 	public PasswordResetService(AccountRepository accounts, PasswordResetRepository resets, PasswordEncoder encoder,
 			Mailer mailer, Clock clock, @Value("${quizcadia.public-url}") String publicUrl,
-			com.fazeel.quizcadia.session.SessionService sessions) {
+			SessionService sessions) {
 		this.sessions = sessions;
 		this.accounts = accounts;
 		this.resets = resets;

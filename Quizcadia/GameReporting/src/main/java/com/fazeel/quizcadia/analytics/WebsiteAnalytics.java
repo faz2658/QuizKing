@@ -1,26 +1,29 @@
 package com.fazeel.quizcadia.analytics;
 
+import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.time.Clock;
 import java.time.Duration;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestClientException;
 
-import com.fazeel.quizcadia.board.BoardCache;
-
 import tools.jackson.databind.JsonNode;
 import tools.jackson.databind.ObjectMapper;
+
+import com.fazeel.quizcadia.board.BoardCache;
 import com.fazeel.quizcadia.web.InternalHttp;
 
 /**
@@ -62,7 +65,7 @@ public class WebsiteAnalytics {
 	private final ObjectMapper json = new ObjectMapper();
 	private final Clock clock;
 
-	@org.springframework.beans.factory.annotation.Autowired
+	@Autowired
 	public WebsiteAnalytics(@Value("${quizcadia.analytics.property-id:}") String propertyId,
 			@Value("${quizcadia.analytics.credentials-file:}") String credentialsFile, BoardCache cache, Clock clock) {
 		this(propertyId, readKey(credentialsFile),
@@ -105,7 +108,7 @@ public class WebsiteAnalytics {
 		try {
 			return Files.readString(Path.of(file));
 		}
-		catch (java.io.IOException e) {
+		catch (IOException e) {
 			log.warn("Can't read the Google Analytics key file {}: {}", file, e.getMessage());
 			return null;
 		}
@@ -192,11 +195,11 @@ public class WebsiteAnalytics {
 	}
 
 	private static List<Map<String, String>> metrics(String... names) {
-		return java.util.Arrays.stream(names).map(n -> Map.of("name", n)).toList();
+		return Arrays.stream(names).map(n -> Map.of("name", n)).toList();
 	}
 
 	private static List<Map<String, String>> dims(String... names) {
-		return java.util.Arrays.stream(names).map(n -> Map.of("name", n)).toList();
+		return Arrays.stream(names).map(n -> Map.of("name", n)).toList();
 	}
 
 	private static long lng(JsonNode v) {

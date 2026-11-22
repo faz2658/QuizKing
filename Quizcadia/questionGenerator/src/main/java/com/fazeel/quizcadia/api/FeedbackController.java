@@ -1,6 +1,8 @@
 package com.fazeel.quizcadia.api;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ProblemDetail;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,6 +12,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fazeel.quizcadia.auth.Callers;
+import com.fazeel.quizcadia.bank.InvalidQuestionException;
+import com.fazeel.quizcadia.bank.NotFoundException;
 import com.fazeel.quizcadia.domain.Questions;
 import com.fazeel.quizcadia.feedback.FeedbackService;
 import com.fazeel.quizcadia.feedback.FeedbackService.Review;
@@ -62,14 +66,14 @@ public class FeedbackController {
 		return feedback.restore(questionId);
 	}
 
-	@org.springframework.web.bind.annotation.ExceptionHandler(com.fazeel.quizcadia.bank.NotFoundException.class)
-	org.springframework.http.ProblemDetail notFound(RuntimeException e) {
-		return org.springframework.http.ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND, e.getMessage());
+	@ExceptionHandler(NotFoundException.class)
+	ProblemDetail notFound(RuntimeException e) {
+		return ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND, e.getMessage());
 	}
 
-	@org.springframework.web.bind.annotation.ExceptionHandler({ IllegalArgumentException.class,
-			com.fazeel.quizcadia.bank.InvalidQuestionException.class })
-	org.springframework.http.ProblemDetail invalid(RuntimeException e) {
-		return org.springframework.http.ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, e.getMessage());
+	@ExceptionHandler({ IllegalArgumentException.class,
+			InvalidQuestionException.class })
+	ProblemDetail invalid(RuntimeException e) {
+		return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, e.getMessage());
 	}
 }

@@ -4,10 +4,11 @@ import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
+import java.util.Locale;
 import java.util.Optional;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
 
@@ -17,6 +18,7 @@ import com.fazeel.quizcadia.domain.PlayedQuestion;
 import com.fazeel.quizcadia.domain.SinglePlayerResult;
 import com.fazeel.quizcadia.kafka.GameEvents;
 import com.fazeel.quizcadia.repository.GameRepository;
+import com.fazeel.quizcadia.service.TopicPools;
 import com.fazeel.quizcadia.session.QuizRuleException;
 import com.fazeel.quizcadia.session.SessionQuestion;
 
@@ -31,17 +33,17 @@ public class ArenaService {
 	private final ArenaPublishedRepository published;
 	private final GameRepository games;
 	private final GameEvents events;
-	private final com.fazeel.quizcadia.service.TopicPools pools;
+	private final TopicPools pools;
 	private final Clock clock;
 
 	public ArenaService(ArenaRoundRepository rounds, ArenaEntryRepository entries, ArenaPublishedRepository published, GameRepository games, GameEvents events,
 			Clock clock) {
-		this(rounds, entries, published, games, events, clock, com.fazeel.quizcadia.service.TopicPools.none());
+		this(rounds, entries, published, games, events, clock, TopicPools.none());
 	}
 
-	@org.springframework.beans.factory.annotation.Autowired
+	@Autowired
 	public ArenaService(ArenaRoundRepository rounds, ArenaEntryRepository entries, ArenaPublishedRepository published, GameRepository games, GameEvents events,
-			Clock clock, com.fazeel.quizcadia.service.TopicPools pools) {
+			Clock clock, TopicPools pools) {
 		this.pools = pools;
 		this.rounds = rounds;
 		this.entries = entries;
@@ -249,6 +251,6 @@ public class ArenaService {
 	}
 
 	static String validCountry(String c) {
-		return c != null && c.matches("[A-Za-z]{2}") ? c.toUpperCase(java.util.Locale.ROOT) : null;
+		return c != null && c.matches("[A-Za-z]{2}") ? c.toUpperCase(Locale.ROOT) : null;
 	}
 }

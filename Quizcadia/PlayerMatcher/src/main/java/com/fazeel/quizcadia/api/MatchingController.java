@@ -9,17 +9,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fazeel.quizcadia.auth.Callers;
 import com.fazeel.quizcadia.matching.LobbyStatus;
 import com.fazeel.quizcadia.matching.Matchmaker;
+import com.fazeel.quizcadia.matching.Presence;
 
 @RestController
 @RequestMapping("/api/v1/matching")
 public class MatchingController {
 
 	private final Matchmaker matchmaker;
-	private final com.fazeel.quizcadia.matching.Presence presence;
+	private final Presence presence;
 
-	public MatchingController(Matchmaker matchmaker, com.fazeel.quizcadia.matching.Presence presence) {
+	public MatchingController(Matchmaker matchmaker, Presence presence) {
 		this.matchmaker = matchmaker;
 		this.presence = presence;
 	}
@@ -27,7 +29,7 @@ public class MatchingController {
 	/** Joins the lobby of a game. Poll the status endpoint until the state is MATCHED or EXPIRED. */
 	@PostMapping("/{gameId}/players/{userId}")
 	public LobbyStatus join(@PathVariable int gameId, @PathVariable int userId) {
-		presence.seen(userId, com.fazeel.quizcadia.auth.Callers.currentUserName(), null);
+		presence.seen(userId, Callers.currentUserName(), null);
 		return matchmaker.join(gameId, userId);
 	}
 

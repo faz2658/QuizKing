@@ -32,6 +32,7 @@ import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.web.client.RestClient;
 
+import com.fazeel.quizcadia.account.AccountEvents;
 import com.fazeel.quizcadia.mail.Mailer;
 import com.fazeel.quizcadia.session.SessionCookie;
 
@@ -79,7 +80,7 @@ class SessionFlowTest {
 	Mailer mailer;
 
 	@MockitoBean
-	com.fazeel.quizcadia.account.AccountEvents events;
+	AccountEvents events;
 
 	@BeforeEach
 	void realTime() {

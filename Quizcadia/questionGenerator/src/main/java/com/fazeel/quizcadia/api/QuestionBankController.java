@@ -1,9 +1,13 @@
 package com.fazeel.quizcadia.api;
 
+import java.time.Duration;
 import java.util.List;
+import java.util.Map;
 
+import org.springframework.http.CacheControl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -50,8 +54,8 @@ public class QuestionBankController {
 
 	/** Whether a question model is configured. */
 	@GetMapping("/ai/status")
-	public java.util.Map<String, Boolean> aiStatus() {
-		return java.util.Map.of("available", drafts.available());
+	public Map<String, Boolean> aiStatus() {
+		return Map.of("available", drafts.available());
 	}
 
 	/** Asks the question model for new questions; they are queued as drafts for review. */
@@ -90,7 +94,7 @@ public class QuestionBankController {
 	}
 
 	/** How long the topic counts are kept; also how stale a browser or CDN may show them. */
-	static final java.time.Duration COUNTS_FOR = java.time.Duration.ofSeconds(10);
+	static final Duration COUNTS_FOR = Duration.ofSeconds(10);
 
 	private record Counts(List<TopicCounts.TopicCount> items, long at) {
 	}
@@ -103,16 +107,16 @@ public class QuestionBankController {
 	 * progress still moves along, a few seconds behind.
 	 */
 	@GetMapping("/stats")
-	public org.springframework.http.ResponseEntity<List<TopicCounts.TopicCount>> stats() {
+	public ResponseEntity<List<TopicCounts.TopicCount>> stats() {
 		long now = System.currentTimeMillis();
 		Counts c = counts;
 		if (c == null || now - c.at() >= COUNTS_FOR.toMillis()) {
 			c = new Counts(List.copyOf(bank.topicCounts()), now);
 			counts = c;
 		}
-		return org.springframework.http.ResponseEntity.ok()
-				.cacheControl(org.springframework.http.CacheControl.maxAge(COUNTS_FOR).cachePublic()
-						.staleWhileRevalidate(java.time.Duration.ofMinutes(1)))
+		return ResponseEntity.ok()
+				.cacheControl(CacheControl.maxAge(COUNTS_FOR).cachePublic()
+						.staleWhileRevalidate(Duration.ofMinutes(1)))
 				.body(c.items());
 	}
 

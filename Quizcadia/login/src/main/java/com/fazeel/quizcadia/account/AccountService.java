@@ -1,6 +1,8 @@
 package com.fazeel.quizcadia.account;
 
+import java.security.SecureRandom;
 import java.time.Clock;
+import java.util.HexFormat;
 import java.util.Locale;
 import java.util.Optional;
 import java.util.Set;
@@ -15,6 +17,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.fazeel.quizcadia.account.Account.Role;
 import com.fazeel.quizcadia.google.GoogleIdentity;
 import com.fazeel.quizcadia.google.GoogleSignInException;
+import com.fazeel.quizcadia.session.SessionService;
 
 @Service
 public class AccountService {
@@ -28,11 +31,11 @@ public class AccountService {
 	private final Clock clock;
 	private final Set<String> adminEmails;
 	private final LoginThrottle throttle;
-	private final com.fazeel.quizcadia.session.SessionService sessions;
+	private final SessionService sessions;
 
 	public AccountService(AccountRepository accounts, PasswordEncoder encoder, AccountEvents events, Clock clock,
 			@Value("${quizcadia.admin-emails:}") Set<String> adminEmails, LoginThrottle throttle,
-			com.fazeel.quizcadia.session.SessionService sessions) {
+			SessionService sessions) {
 		this.sessions = sessions;
 		this.throttle = throttle;
 		this.accounts = accounts;
@@ -132,8 +135,8 @@ public class AccountService {
 	/** A hash no typed password can match: Google-only accounts log in with Google (or reset to get one). */
 	private String unusablePassword() {
 		byte[] b = new byte[32];
-		new java.security.SecureRandom().nextBytes(b);
-		return encoder.encode(java.util.HexFormat.of().formatHex(b));
+		new SecureRandom().nextBytes(b);
+		return encoder.encode(HexFormat.of().formatHex(b));
 	}
 
 	/** Invite codes are account ids in base 36 (short, and ids aren't secret). Null unless it's another account. */

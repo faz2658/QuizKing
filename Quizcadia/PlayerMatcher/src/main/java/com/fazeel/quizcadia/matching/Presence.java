@@ -6,6 +6,7 @@ import java.time.Instant;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
@@ -44,7 +45,7 @@ public class Presence {
 	/** A heartbeat; {@code country} is kept from earlier heartbeats when this one has none. */
 	public void seen(int userId, String name, String country) {
 		Player before = players.get(userId);
-		String c = validCountry(country) ? country.toUpperCase(java.util.Locale.ROOT)
+		String c = validCountry(country) ? country.toUpperCase(Locale.ROOT)
 				: before == null ? null : before.country();
 		Instant now = clock.instant();
 		boolean stillOnline = before != null && before.lastSeen().isAfter(now.minus(ONLINE_FOR));

@@ -5,6 +5,8 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import java.util.function.Consumer;
+
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
@@ -14,8 +16,10 @@ import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
 import com.fazeel.quizcadia.config.SecurityConfig;
+import com.fazeel.quizcadia.domain.Match;
 import com.fazeel.quizcadia.matching.Matchmaker;
 import com.fazeel.quizcadia.matching.Presence;
+import com.fazeel.quizcadia.matching.PrivateRooms;
 import com.fazeel.quizcadia.matching.QuickMatch;
 
 @Import(SecurityConfig.class)
@@ -37,10 +41,10 @@ class WorldControllerTest {
 	QuickMatch quick;
 
 	@MockitoBean
-	com.fazeel.quizcadia.matching.PrivateRooms rooms;
+	PrivateRooms rooms;
 
 	@MockitoBean(name = "matchPublisher")
-	java.util.function.Consumer<com.fazeel.quizcadia.domain.Match> matchPublisher;
+	Consumer<Match> matchPublisher;
 
 	@Test
 	void onlyAdminsSeeTheNamesOfWhoIsOnline() throws Exception {

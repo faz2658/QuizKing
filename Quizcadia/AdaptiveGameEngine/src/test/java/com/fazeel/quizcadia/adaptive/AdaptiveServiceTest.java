@@ -7,6 +7,7 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.time.Clock;
+import java.time.Duration;
 import java.time.Instant;
 import java.time.ZoneOffset;
 import java.util.ArrayList;
@@ -20,14 +21,15 @@ import java.util.Set;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.ArgumentMatchers;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 
+import com.fazeel.quizcadia.adaptive.GameRepository;
 import com.fazeel.quizcadia.adaptive.Ports.GameSource;
 import com.fazeel.quizcadia.adaptive.Ports.ResultEvents;
-import com.fazeel.quizcadia.adaptive.GameRepository;
 import com.fazeel.quizcadia.adaptive.SeenQuestionRepository;
 import com.fazeel.quizcadia.adaptive.SessionRepository;
 import com.fazeel.quizcadia.domain.Game;
@@ -77,7 +79,7 @@ class AdaptiveServiceTest {
 	void unseenQuestionsComeFirst() {
 		when(games.findById(5)).thenReturn(Optional.of(game(4)));
 		Instant t = Instant.parse("2026-01-01T09:00:00Z");
-		when(seen.findByUserIdAndQuestionIdIn(org.mockito.ArgumentMatchers.eq(9), any()))
+		when(seen.findByUserIdAndQuestionIdIn(ArgumentMatchers.eq(9), any()))
 				.thenReturn(List.of(SeenQuestion.of(9, 1, t), SeenQuestion.of(9, 2, t), SeenQuestion.of(9, 3, t)));
 
 		AdaptiveSession s = service.start(5, 9);
@@ -116,7 +118,7 @@ class AdaptiveServiceTest {
 		}
 		service.get(s.getId());
 
-		verify(events, times(1)).sessionCompleted(org.mockito.ArgumentMatchers.argThat(r -> r.answers().size() == 3
+		verify(events, times(1)).sessionCompleted(ArgumentMatchers.argThat(r -> r.answers().size() == 3
 				&& r.score() == 30 && r.userId() == 9 && Set.of(1, 2, 3, 4, 5).contains(r.answers().get(0).questionId())));
 	}
 
@@ -128,7 +130,7 @@ class AdaptiveServiceTest {
 
 	@Test
 	void aGameThatReferencesItsTopicUsesTheTopicsQuestionsForThePlayersCountry() {
-		java.util.List<Game.Question> topic = new java.util.ArrayList<>();
+		List<Game.Question> topic = new ArrayList<>();
 		for (int i = 0; i < 10; i++) {
 			topic.add(tagged(100 + i, "IN"));
 			topic.add(tagged(200 + i, null));
@@ -137,7 +139,7 @@ class AdaptiveServiceTest {
 		Clock clock = Clock.fixed(Instant.parse("2026-01-01T10:00:00Z"), ZoneOffset.UTC);
 		service = new AdaptiveService(sessions, games, seen, source, events, new PoolBuilder(new Random(3)),
 				new AdaptiveRules(4, 60, 30, 3, 20, 10), clock,
-				new TopicPools(id -> id == 7 ? topic : java.util.List.of(), clock, java.time.Duration.ofMinutes(10)));
+				new TopicPools(id -> id == 7 ? topic : List.of(), clock, Duration.ofMinutes(10)));
 		when(games.findById(5)).thenReturn(Optional.of(new Game(5, "History", 1, new Game.Topic(7, "History"), null)));
 
 		AdaptiveSession india = service.start(5, 9, "IN");
@@ -147,7 +149,7 @@ class AdaptiveServiceTest {
 		assertThat(ids(unknown)).isNotEmpty().allMatch(id -> id >= 200 && id < 300);
 	}
 
-	private static java.util.List<Integer> ids(AdaptiveSession s) {
+	private static List<Integer> ids(AdaptiveSession s) {
 		return s.pool().stream().map(PooledQuestion::questionId).toList();
 	}
 }

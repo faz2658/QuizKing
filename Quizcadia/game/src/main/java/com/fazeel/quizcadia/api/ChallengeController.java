@@ -18,6 +18,7 @@ import com.fazeel.quizcadia.challenge.FriendChallenge;
 import com.fazeel.quizcadia.challenge.FriendChallengeService;
 import com.fazeel.quizcadia.service.GameSessionService;
 import com.fazeel.quizcadia.session.GameSession;
+import com.fazeel.quizcadia.session.SessionStatus;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
@@ -49,7 +50,7 @@ public class ChallengeController {
 					: attempt.map(s -> s.getStatus().name()).orElse("NOT_STARTED");
 			return new ChallengeView(c.id(), c.challengerName(), c.gameName(), c.score(), c.maxScore(), c.correctAnswers(),
 					c.questions().size(), status, attempt.map(GameSession::getId).orElse(null),
-					attempt.filter(s -> s.getStatus() == com.fazeel.quizcadia.session.SessionStatus.COMPLETED)
+					attempt.filter(s -> s.getStatus() == SessionStatus.COMPLETED)
 							.map(GameSession::getScore).orElse(null));
 		}
 	}

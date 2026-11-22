@@ -9,22 +9,31 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.time.Clock;
+import java.time.Duration;
 import java.time.Instant;
 import java.time.ZoneOffset;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Random;
+import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.Supplier;
+import java.util.stream.IntStream;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
+import org.springframework.dao.OptimisticLockingFailureException;
+
+import tools.jackson.databind.json.JsonMapper;
 
 import com.fazeel.quizcadia.domain.Match;
 import com.fazeel.quizcadia.domain.MultiPlayerGame;
@@ -86,7 +95,7 @@ class MatchServiceTest {
 				new MatchUpdates(), new TopicPools(id -> id == 40
 						? List.of(new MultiPlayerGame.Question(1, 1, "Q1", "a", "b", null, null, "a"),
 								new MultiPlayerGame.Question(2, 1, "Q2", "a", "b", null, null, "b"))
-						: List.of(), clock, java.time.Duration.ofMinutes(10)));
+						: List.of(), clock, Duration.ofMinutes(10)));
 		MultiPlayerGame slim = new MultiPlayerGame(7, "History Showdown", 3, 10, 10, null, 2, null,
 				new MultiPlayerGame.TopicRef(40, "History"));
 		when(games.findById(7)).thenReturn(Optional.of(slim));
@@ -98,7 +107,7 @@ class MatchServiceTest {
 
 	@Test
 	void readsTheTopicOfAGameDefinition() {
-		MultiPlayerGame g = tools.jackson.databind.json.JsonMapper.builder().build().readValue(
+		MultiPlayerGame g = JsonMapper.builder().build().readValue(
 				"{\"gameId\":7,\"gameName\":\"History Showdown\",\"categoryId\":3,\"timePerQuestion\":15,\"scorePerQuestion\":10,\"numberOfQuestions\":8,\"topic\":{\"topicId\":40,\"topicName\":\"History\",\"topicImage\":null},\"questionCount\":2400}",
 				MultiPlayerGame.class);
 
@@ -153,7 +162,7 @@ class MatchServiceTest {
 	@Test
 	void thePartyScreenMayWatchButNotAnswer() {
 		when(games.findById(7)).thenReturn(Optional.of(game()));
-		service.start(new Match("m1", 7, List.of(1, 2), now, java.util.Map.of(), java.util.Map.of(), 50));
+		service.start(new Match("m1", 7, List.of(1, 2), now, Map.of(), Map.of(), 50));
 
 		assertThat(service.get("m1", 50).getMatchId()).isEqualTo("m1");
 		assertThatThrownBy(() -> service.answer("m1", 50, 1, "x")).hasMessageContaining("not in this match");
@@ -161,14 +170,14 @@ class MatchServiceTest {
 	}
 
 	static List<MultiPlayerGame.Question> mediumMix(int n) {
-		return java.util.stream.IntStream.rangeClosed(1, n)
+		return IntStream.rangeClosed(1, n)
 				.mapToObj(i -> new MultiPlayerGame.Question(100 + i, 2, "Q" + i + "?", "R" + i, "W1", "W2", "W3", "R" + i))
 				.toList();
 	}
 
 	@Test
 	void aRoomQuizAsksTheQuestionServicesMediumMixInOrder() {
-		java.util.List<Integer> asked = new java.util.ArrayList<>();
+		List<Integer> asked = new ArrayList<>();
 		RoomQuizQuestions quizQuestions = new RoomQuizQuestions((level, count) -> {
 			asked.add(level);
 			asked.add(count);
@@ -183,7 +192,7 @@ class MatchServiceTest {
 		assertThat(asked).containsExactly(RoomQuizQuestions.MEDIUM, 20);
 		assertThat(m.isRoomQuiz()).isTrue();
 		assertThat(m.getQuestions()).extracting(MatchQuestion::getQuestionId)
-				.containsExactlyElementsOf(java.util.stream.IntStream.rangeClosed(101, 120).boxed().toList());
+				.containsExactlyElementsOf(IntStream.rangeClosed(101, 120).boxed().toList());
 		assertThat(m.getPlayers()).extracting(PlayerScore::getName).containsExactly("Ada", "Bo");
 		assertThat(m.getScreenUserId()).isEqualTo(50);
 		verify(games, never()).findById(any());
@@ -217,16 +226,16 @@ class MatchServiceTest {
 
 	@Test
 	void answersRetryWhenAnotherAnswerWasSavedAtTheSameMoment() {
-		java.util.function.Supplier<MultiplayerMatch> quiz = () -> MultiplayerMatch.roomQuiz("q1", List.of(1, 2), Map.of(),
+		Supplier<MultiplayerMatch> quiz = () -> MultiplayerMatch.roomQuiz("q1", List.of(1, 2), Map.of(),
 				List.of(new MatchQuestion(5, "Q?", List.of("A", "B"), "A")), 20, 0, 50, now.minus(MultiplayerMatch.LEAD_IN));
 		store.put("q1", quiz.get());
-		java.util.concurrent.atomic.AtomicInteger loads = new java.util.concurrent.atomic.AtomicInteger();
+		AtomicInteger loads = new AtomicInteger();
 		// the first load is a copy someone else saves over before this answer is saved
 		when(matches.findById("q1")).thenAnswer(i -> Optional.of(loads.getAndIncrement() == 0 ? quiz.get() : store.get("q1")));
-		java.util.concurrent.atomic.AtomicInteger saves = new java.util.concurrent.atomic.AtomicInteger();
-		org.mockito.Mockito.doAnswer(i -> {
+		AtomicInteger saves = new AtomicInteger();
+		Mockito.doAnswer(i -> {
 			if (saves.getAndIncrement() == 0) {
-				throw new org.springframework.dao.OptimisticLockingFailureException("someone else saved first");
+				throw new OptimisticLockingFailureException("someone else saved first");
 			}
 			MultiplayerMatch m = i.getArgument(0);
 			store.put(m.getMatchId(), m);

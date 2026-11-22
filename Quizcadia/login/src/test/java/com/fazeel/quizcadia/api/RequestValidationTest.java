@@ -16,6 +16,7 @@ import org.springframework.http.HttpStatusCode;
 import org.springframework.http.MediaType;
 import org.springframework.web.client.RestClient;
 
+import com.fazeel.quizcadia.account.AccountRepository;
 import com.fazeel.quizcadia.api.AuthController.ForgotRequest;
 import com.fazeel.quizcadia.api.AuthController.GuestRequest;
 import com.fazeel.quizcadia.api.AuthController.LoginRequest;
@@ -103,7 +104,7 @@ class RequestValidationTest {
 	int port;
 
 	@Autowired
-	com.fazeel.quizcadia.account.AccountRepository accounts;
+	AccountRepository accounts;
 
 	@SuppressWarnings("unchecked")
 	Map<String, Object> problem(String path, Object body) {

@@ -1,6 +1,7 @@
 package com.fazeel.quizcadia.api;
 
 import java.time.Instant;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -98,7 +99,7 @@ public class KnowMeController {
 		List<QuestionView> questions = quiz.questions().stream()
 				.map(q -> new QuestionView(q.text(), q.options(), reveal ? q.answer() : null)).toList();
 		List<KnowMeAttempt> board = service.leaderboard(quiz.id());
-		List<Entry> top = new java.util.ArrayList<>();
+		List<Entry> top = new ArrayList<>();
 		int rank = 0;
 		int lastScore = -1;
 		for (int i = 0; i < board.size(); i++) {

@@ -1,22 +1,26 @@
 package com.fazeel.quizcadia.board;
 
 import java.time.DayOfWeek;
+import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
-import java.util.HashMap;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import com.fazeel.quizcadia.progress.Xp;
 import com.fazeel.quizcadia.report.GameReport;
-import com.fazeel.quizcadia.report.Players;
 import com.fazeel.quizcadia.report.GameReportRepository;
 import com.fazeel.quizcadia.report.PlayerNames;
+import com.fazeel.quizcadia.report.Players;
 
 /** Rankings across players. */
 @Service
@@ -25,14 +29,14 @@ public class LeaderboardService {
 	static final int TOP = 20;
 
 	/** How long a computed board is shared. The daily board is also dropped whenever a daily run arrives. */
-	static final java.time.Duration DAILY_TTL = java.time.Duration.ofSeconds(15);
-	static final java.time.Duration XP_TTL = java.time.Duration.ofSeconds(30);
+	static final Duration DAILY_TTL = Duration.ofSeconds(15);
+	static final Duration XP_TTL = Duration.ofSeconds(30);
 
 	private final GameReportRepository reports;
 	private final PlayerNames names;
 	private final BoardCache cache;
 
-	@org.springframework.beans.factory.annotation.Autowired
+	@Autowired
 	public LeaderboardService(GameReportRepository reports, PlayerNames names, BoardCache cache) {
 		this.reports = reports;
 		this.names = names;
@@ -161,7 +165,7 @@ public class LeaderboardService {
 	}
 
 	public record XpBoard(Period period, Integer categoryId, int players, List<XpEntry> top, XpEntry you,
-			@com.fasterxml.jackson.annotation.JsonIgnore List<XpEntry> all) {
+			@JsonIgnore List<XpEntry> all) {
 	}
 
 	/** The player's rank in one day's challenge, or 0 if they didn't finish it. */

@@ -19,6 +19,7 @@ import java.util.concurrent.AbstractExecutorService;
 import java.util.concurrent.TimeUnit;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentMatchers;
 
 import com.fazeel.quizcadia.bank.QuestionBankService;
 import com.fazeel.quizcadia.opentdb.ImportStatus.State;
@@ -107,8 +108,8 @@ class OpenTriviaImporterTest {
 
 		assertThat(src.amounts).containsExactly(50, 50, 50, 50, 10, 10);
 		assertThat(pauses).allMatch(d -> d.equals(Duration.ofSeconds(5))).hasSizeGreaterThanOrEqualTo(6);
-		verify(bank).importQuestions(eq("Entertainment"), eq("Film"), org.mockito.ArgumentMatchers.argThat(l -> l.size() == 50));
-		verify(bank).importQuestions(eq("Geography"), eq("Geography"), org.mockito.ArgumentMatchers.argThat(l -> l.size() == 57));
+		verify(bank).importQuestions(eq("Entertainment"), eq("Film"), ArgumentMatchers.argThat(l -> l.size() == 50));
+		verify(bank).importQuestions(eq("Geography"), eq("Geography"), ArgumentMatchers.argThat(l -> l.size() == 57));
 		assertThat(status.state()).isEqualTo(State.RUNNING);
 	}
 

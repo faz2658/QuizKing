@@ -1,5 +1,6 @@
 package com.fazeel.quizcadia.push;
 
+import java.io.IOException;
 import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
@@ -93,7 +94,7 @@ public class PushController {
 
 	/** Sends the caller's browsers a test notification (at most once a minute). @return how many got it */
 	@PostMapping("/test")
-	public Map<String, Integer> test() throws java.io.IOException, InterruptedException {
+	public Map<String, Integer> test() throws IOException, InterruptedException {
 		WebPush p = push.getIfAvailable();
 		if (p == null) {
 			throw new ResponseStatusException(HttpStatus.SERVICE_UNAVAILABLE, "Reminders aren't switched on here");

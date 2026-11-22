@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.stereotype.Service;
 
@@ -34,7 +35,7 @@ public class GameCatalogService {
 	private final AutoGames autoGames;
 
 	/** Bumped by every change to a game or category, so cached lists know they're out of date. */
-	private final java.util.concurrent.atomic.AtomicLong version = new java.util.concurrent.atomic.AtomicLong();
+	private final AtomicLong version = new AtomicLong();
 
 	public long version() {
 		return version.get();

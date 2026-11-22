@@ -1,6 +1,7 @@
 package com.fazeel.quizcadia.ai;
 
 import java.time.Clock;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
@@ -65,7 +66,7 @@ public class DraftService {
 		int created = 0;
 		int invalid = 0;
 		int duplicates = 0;
-		List<DraftQuestion> out = new java.util.ArrayList<>();
+		List<DraftQuestion> out = new ArrayList<>();
 		for (int attempt = 0; attempt < count * ATTEMPTS_PER_QUESTION && created < count; attempt++) {
 			var reply = model.write(topicLabel, LEVELS[level - 1], trueFalse ? "true/false" : "multiple choice");
 			if (reply.isEmpty()) {

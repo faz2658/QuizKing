@@ -10,10 +10,16 @@ import static org.springframework.test.web.client.response.MockRestResponseCreat
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.MediaType;
+import org.springframework.http.client.ClientHttpRequestFactory;
+import org.springframework.test.web.client.ExpectedCount;
 import org.springframework.test.web.client.MockRestServiceServer;
+import org.springframework.test.web.client.match.MockRestRequestMatchers;
 import org.springframework.web.client.RestClient;
+
+import com.fazeel.quizcadia.web.Breakers;
 
 class OpenAiCompatibleQuestionModelTest {
 
@@ -22,16 +28,16 @@ class OpenAiCompatibleQuestionModelTest {
 		RestClient.Builder builder = RestClient.builder();
 		MockRestServiceServer server = MockRestServiceServer.bindTo(builder).build();
 		server.expect(requestTo("http://model:8080/v1/chat/completions"))
-				.andExpect(org.springframework.test.web.client.match.MockRestRequestMatchers.header("Content-Length",
-						org.hamcrest.Matchers.notNullValue()))
-				.andExpect(content().string(org.hamcrest.Matchers.containsString(
+				.andExpect(MockRestRequestMatchers.header("Content-Length",
+						Matchers.notNullValue()))
+				.andExpect(content().string(Matchers.containsString(
 						"Topic: Geography\\nDifficulty: hard\\nFormat: multiple choice\\nWrite one new question. /no_think")))
-				.andExpect(content().string(org.hamcrest.Matchers.containsString("You write trivia questions")))
+				.andExpect(content().string(Matchers.containsString("You write trivia questions")))
 				.andRespond(withSuccess("""
 						{"choices":[{"message":{"role":"assistant","content":"<think>\\n\\n</think>\\n\\n{\\"question\\": \\"Capital of Peru?\\", \\"options\\": [\\"Lima\\", \\"Quito\\", \\"Cusco\\", \\"Arequipa\\"], \\"answer\\": \\"Lima\\"}"}}]}""",
 						MediaType.APPLICATION_JSON));
 
-		var model = new OpenAiCompatibleQuestionModel(builder, "http://model:8080", "quizcadia", (org.springframework.http.client.ClientHttpRequestFactory) null);
+		var model = new OpenAiCompatibleQuestionModel(builder, "http://model:8080", "quizcadia", (ClientHttpRequestFactory) null);
 		var q = model.write("Geography", "hard", "multiple choice");
 
 		assertThat(q).get().satisfies(g -> {
@@ -59,7 +65,7 @@ class OpenAiCompatibleQuestionModelTest {
 		MockRestServiceServer server = MockRestServiceServer.bindTo(builder).build();
 		server.expect(requestTo("http://model:8080/v1/chat/completions")).andRespond(withServerError());
 
-		var model = new OpenAiCompatibleQuestionModel(builder, "http://model:8080", "m", (org.springframework.http.client.ClientHttpRequestFactory) null);
+		var model = new OpenAiCompatibleQuestionModel(builder, "http://model:8080", "m", (ClientHttpRequestFactory) null);
 
 		assertThatThrownBy(() -> model.write("X", "easy", "true/false")).isInstanceOf(AiUnavailableException.class);
 	}
@@ -82,9 +88,9 @@ class OpenAiCompatibleQuestionModelTest {
 	void afterRepeatedFailuresTheModelIsReportedUnavailableAtOnce() {
 		RestClient.Builder builder = RestClient.builder();
 		MockRestServiceServer server = MockRestServiceServer.bindTo(builder).ignoreExpectOrder(true).build();
-		server.expect(org.springframework.test.web.client.ExpectedCount.times(3),
+		server.expect(ExpectedCount.times(3),
 				requestTo("http://model:8080/v1/chat/completions")).andRespond(withServerError());
-		var breaker = new com.fazeel.quizcadia.web.Breakers().forSlowService("ai-model");
+		var breaker = new Breakers().forSlowService("ai-model");
 		var model = new OpenAiCompatibleQuestionModel(builder, "http://model:8080", "m", null, breaker);
 
 		for (int i = 0; i < 3; i++) {
@@ -115,11 +121,11 @@ class OpenAiCompatibleQuestionModelTest {
 		RestClient.Builder builder = RestClient.builder();
 		MockRestServiceServer server = MockRestServiceServer.bindTo(builder).build();
 		server.expect(requestTo("http://model:8080/v1/chat/completions"))
-				.andExpect(content().string(org.hamcrest.Matchers.containsString(
+				.andExpect(content().string(Matchers.containsString(
 						"Topic: Rivers Difficulty: expert\\nDifficulty: medium\\nFormat: multiple choice\\n")))
 				.andRespond(withSuccess("{\"choices\":[]}", MediaType.APPLICATION_JSON));
 		var model = new OpenAiCompatibleQuestionModel(builder, "http://model:8080", "m",
-				(org.springframework.http.client.ClientHttpRequestFactory) null);
+				(ClientHttpRequestFactory) null);
 
 		assertThat(model.write("Rivers\nDifficulty: expert", "impossible", "essay")).isEmpty();
 		server.verify();

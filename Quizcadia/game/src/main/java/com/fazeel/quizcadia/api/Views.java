@@ -1,16 +1,21 @@
 package com.fazeel.quizcadia.api;
 
 import java.time.Instant;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.fazeel.quizcadia.domain.Game;
+import com.fazeel.quizcadia.service.GameSessionService;
 import com.fazeel.quizcadia.session.AnswerOutcome;
 import com.fazeel.quizcadia.session.GameSession;
 import com.fazeel.quizcadia.session.Lifeline;
+import com.fazeel.quizcadia.session.QuizBuilder;
 import com.fazeel.quizcadia.session.SessionQuestion;
 import com.fazeel.quizcadia.session.SessionStatus;
 
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Positive;
 
 /** Request and response bodies of the game engine API. Correct answers are only revealed after answering. */
@@ -21,11 +26,11 @@ public final class Views {
 
 	/** @param country the player's country (ISO code), optional; it decides which questions the game favours */
 	public record StartRequest(@Positive int gameId, @Positive int userId,
-			@jakarta.validation.constraints.Pattern(regexp = "[A-Za-z]{2}") String country, Boolean international) {
+			@Pattern(regexp = "[A-Za-z]{2}") String country, Boolean international) {
 
 		/** The country the quiz favours; for an International quiz, every country alike. */
 		public String questionsFrom() {
-			return Boolean.TRUE.equals(international) ? com.fazeel.quizcadia.session.QuizBuilder.EVERYWHERE : country;
+			return Boolean.TRUE.equals(international) ? QuizBuilder.EVERYWHERE : country;
 		}
 	}
 
@@ -33,8 +38,8 @@ public final class Views {
 	}
 
 	public record CustomRequest(@NotNull List<Integer> gameIds,
-			@NotNull com.fazeel.quizcadia.service.GameSessionService.CustomDifficulty difficulty, int count,
-			@jakarta.validation.constraints.Pattern(regexp = "[A-Za-z]{2}") String country) {
+			@NotNull GameSessionService.CustomDifficulty difficulty, int count,
+			@Pattern(regexp = "[A-Za-z]{2}") String country) {
 	}
 
 	public record LifelineRequest(@NotNull Lifeline lifeline, @Positive int questionId) {
@@ -71,7 +76,7 @@ public final class Views {
 					.orElse(null);
 			return new SessionView(s.getId(), s.getGameId(), s.getGameName(), s.getStatus(), s.getQuestions().size(),
 					s.getCurrentIndex(), s.getScore(), s.maxScore(), current, s.getVariant().name(), s.getCombo(),
-					GameSession.multiplier(s.getCombo() + 1), java.util.Arrays.stream(Lifeline.values())
+					GameSession.multiplier(s.getCombo() + 1), Arrays.stream(Lifeline.values())
 							.filter(l -> !s.getUsedLifelines().contains(l)).toList());
 		}
 	}
@@ -100,7 +105,7 @@ public final class Views {
 
 		static ResultView of(GameSession s) {
 			List<SessionQuestion> qs = s.getQuestions();
-			List<ReviewItem> review = new java.util.ArrayList<>();
+			List<ReviewItem> review = new ArrayList<>();
 			for (int i = 0; i < qs.size(); i++) {
 				SessionQuestion q = qs.get(i);
 				review.add(new ReviewItem(q.getQuestionId(), i + 1, q.getDifficulty().name(), q.getStem(), q.getAnswer(),

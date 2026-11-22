@@ -6,7 +6,6 @@ import java.time.Clock;
 import java.time.Duration;
 import java.util.Base64;
 import java.util.List;
-
 import javax.crypto.SecretKey;
 import javax.crypto.spec.SecretKeySpec;
 
@@ -21,8 +20,8 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.oauth2.jose.jws.MacAlgorithm;
 import org.springframework.security.oauth2.core.DelegatingOAuth2TokenValidator;
+import org.springframework.security.oauth2.jose.jws.MacAlgorithm;
 import org.springframework.security.oauth2.jwt.JwtClaimNames;
 import org.springframework.security.oauth2.jwt.JwtClaimValidator;
 import org.springframework.security.oauth2.jwt.JwtDecoder;
@@ -34,6 +33,8 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.web.cors.CorsConfiguration;
 import org.springframework.web.cors.CorsConfigurationSource;
 import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
+
+import com.fazeel.quizcadia.diagnostics.Diagnostics;
 
 @Configuration
 public class SecurityConfig {
@@ -51,8 +52,8 @@ public class SecurityConfig {
 								"/api/v1/auth/refresh", "/api/v1/auth/logout").permitAll()
 						.requestMatchers(HttpMethod.GET, "/api/v1/auth/providers").permitAll()
 						// recordings and dumps: only from inside this container (they can hold secrets)
-						.requestMatchers(com.fazeel.quizcadia.diagnostics.Diagnostics.PATHS)
-						.access(com.fazeel.quizcadia.diagnostics.Diagnostics.fromInsideTheContainer())
+						.requestMatchers(Diagnostics.PATHS)
+						.access(Diagnostics.fromInsideTheContainer())
 						.requestMatchers("/actuator/health/**", "/actuator/info", "/actuator/prometheus", "/error").permitAll()
 						.anyRequest().authenticated())
 				.oauth2ResourceServer(o -> o.jwt(Customizer.withDefaults()));

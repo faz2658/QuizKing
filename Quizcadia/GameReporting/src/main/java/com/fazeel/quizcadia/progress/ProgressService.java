@@ -9,6 +9,7 @@ import java.util.Objects;
 import org.springframework.stereotype.Service;
 
 import com.fazeel.quizcadia.board.LeaderboardService;
+import com.fazeel.quizcadia.invite.Invites;
 import com.fazeel.quizcadia.progress.Achievements.Achievement;
 import com.fazeel.quizcadia.progress.Streaks.Streak;
 import com.fazeel.quizcadia.report.GameReport;
@@ -22,10 +23,10 @@ public class ProgressService {
 	private final LeaderboardService boards;
 	private final Clock clock;
 
-	private final com.fazeel.quizcadia.invite.Invites invites;
+	private final Invites invites;
 
 	public ProgressService(GameReportRepository reports, LeaderboardService boards, Clock clock,
-			com.fazeel.quizcadia.invite.Invites invites) {
+			Invites invites) {
 		this.reports = reports;
 		this.boards = boards;
 		this.clock = clock;

@@ -8,6 +8,8 @@ import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
+import java.net.http.HttpClient;
+import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -19,11 +21,17 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
+import org.springframework.http.client.JdkClientHttpRequestFactory;
 import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
+import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.web.client.RestClient;
 
+import com.fazeel.quizcadia.account.AccountEvents;
 import com.fazeel.quizcadia.account.AccountRepository;
+import com.fazeel.quizcadia.account.AccountService;
+import com.fazeel.quizcadia.account.UserRegistered;
 import com.fazeel.quizcadia.google.GoogleIdentity;
 import com.fazeel.quizcadia.google.GoogleSignInException;
 import com.fazeel.quizcadia.google.GoogleTokenVerifier;
@@ -47,7 +55,7 @@ class RecoveryAndGoogleFlowTest {
 	GoogleTokenVerifier google;
 
 	@MockitoBean
-	com.fazeel.quizcadia.account.AccountEvents events;
+	AccountEvents events;
 
 	RestClient http() {
 		return RestClient.builder().baseUrl("http://localhost:" + port)
@@ -176,32 +184,32 @@ class RecoveryAndGoogleFlowTest {
 		Map<String, Object> host = postForMap("/api/v1/auth/register",
 				Map.of("userName", "Host", "email", "host@example.test", "password", "password123"));
 		int hostId = (Integer) ((Map<String, Object>) host.get("user")).get("userId");
-		String code = com.fazeel.quizcadia.account.AccountService.inviteCode(hostId);
+		String code = AccountService.inviteCode(hostId);
 
 		postForMap("/api/v1/auth/register", Map.of("userName", "Guest", "email", "invited@example.test", "password",
 				"password123", "invite", code));
 		postForMap("/api/v1/auth/register", Map.of("userName", "Other", "email", "bogus@example.test", "password",
 				"password123", "invite", "zzzzzz"));
 
-		ArgumentCaptor<com.fazeel.quizcadia.account.UserRegistered> sent = ArgumentCaptor.forClass(com.fazeel.quizcadia.account.UserRegistered.class);
+		ArgumentCaptor<UserRegistered> sent = ArgumentCaptor.forClass(UserRegistered.class);
 		verify(events, times(3)).registered(sent.capture());
-		assertThat(sent.getAllValues()).extracting(com.fazeel.quizcadia.account.UserRegistered::referredBy)
+		assertThat(sent.getAllValues()).extracting(UserRegistered::referredBy)
 				.containsExactly(null, hostId, null);
 	}
 
 	/** Google's redirect sign-in: a form post from accounts.google.com with its double-submit token. */
-	org.springframework.http.ResponseEntity<Void> googleForm(String credential, String formToken, String cookies) {
+	ResponseEntity<Void> googleForm(String credential, String formToken, String cookies) {
 		return googleForm(credential, formToken, cookies, "https://accounts.google.com");
 	}
 
-	org.springframework.http.ResponseEntity<Void> googleForm(String credential, String formToken, String cookies, String origin) {
-		org.springframework.util.LinkedMultiValueMap<String, String> form = new org.springframework.util.LinkedMultiValueMap<>();
+	ResponseEntity<Void> googleForm(String credential, String formToken, String cookies, String origin) {
+		LinkedMultiValueMap<String, String> form = new LinkedMultiValueMap<>();
 		if (credential != null) form.add("credential", credential);
 		if (formToken != null) form.add("g_csrf_token", formToken);
 		// a client that shows the 303 instead of following it to the app (which this service doesn't serve)
 		RestClient noRedirects = RestClient.builder().baseUrl("http://localhost:" + port)
-				.requestFactory(new org.springframework.http.client.JdkClientHttpRequestFactory(java.net.http.HttpClient.newBuilder()
-						.followRedirects(java.net.http.HttpClient.Redirect.NEVER).build()))
+				.requestFactory(new JdkClientHttpRequestFactory(HttpClient.newBuilder()
+						.followRedirects(HttpClient.Redirect.NEVER).build()))
 				.defaultStatusHandler(HttpStatusCode::isError, (rq, rs) -> {
 				}).build();
 		var req = noRedirects.post().uri("/api/v1/auth/google/redirect").contentType(MediaType.APPLICATION_FORM_URLENCODED);
@@ -232,7 +240,7 @@ class RecoveryAndGoogleFlowTest {
 		when(google.verify("cred-x")).thenReturn(new GoogleIdentity("g-redirect-eve", "eve@example.test", true, "Eve"));
 		long before = accounts.count();
 
-		for (var res : java.util.List.of(googleForm("cred-x", "tok-a", "g_csrf_token=tok-b"), googleForm("cred-x", "tok-a", null),
+		for (var res : List.of(googleForm("cred-x", "tok-a", "g_csrf_token=tok-b"), googleForm("cred-x", "tok-a", null),
 				googleForm("cred-x", null, "g_csrf_token=tok-a"), googleForm(null, "tok-a", "g_csrf_token=tok-a"))) {
 			assertThat(res.getStatusCode().value()).isEqualTo(303);
 			assertThat(res.getHeaders().getLocation()).hasToString("/welcome?google=failed");

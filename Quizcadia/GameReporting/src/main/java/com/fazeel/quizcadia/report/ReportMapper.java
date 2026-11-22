@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 
 import com.fazeel.quizcadia.domain.AdaptiveResult;
 import com.fazeel.quizcadia.domain.MultiPlayerResult;
+import com.fazeel.quizcadia.domain.PlayedQuestion;
 import com.fazeel.quizcadia.domain.SinglePlayerResult;
 import com.fazeel.quizcadia.report.GameReport.GameMode;
 import com.fazeel.quizcadia.report.GameReport.ReviewItem;
@@ -19,7 +20,7 @@ public final class ReportMapper {
 	}
 
 	public static GameReport single(SinglePlayerResult r) {
-		List<ReviewItem> items = Objects.requireNonNullElse(r.playedData(), List.<com.fazeel.quizcadia.domain.PlayedQuestion>of())
+		List<ReviewItem> items = Objects.requireNonNullElse(r.playedData(), List.<PlayedQuestion>of())
 				.stream().map(q -> new ReviewItem(q.question(), q.correctAnswer(), q.answer(), q.correct(),
 						q.timedOut(), q.pointsAwarded()))
 				.toList();

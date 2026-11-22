@@ -8,6 +8,7 @@ import java.util.concurrent.CompletionException;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Supplier;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -23,7 +24,7 @@ public class BoardCache {
 	private final ConcurrentHashMap<String, Entry> entries = new ConcurrentHashMap<>();
 	private final Clock clock;
 
-	@org.springframework.beans.factory.annotation.Autowired
+	@Autowired
 	public BoardCache(Clock clock) {
 		this.clock = clock;
 	}

@@ -5,6 +5,7 @@ import static org.springframework.test.web.client.match.MockRestRequestMatchers.
 import static org.springframework.test.web.client.match.MockRestRequestMatchers.queryParam;
 import static org.springframework.test.web.client.response.MockRestResponseCreators.withSuccess;
 
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.MediaType;
 import org.springframework.test.web.client.MockRestServiceServer;
@@ -16,8 +17,8 @@ class WikidataFactSourceTest {
 	void parsesSparqlJsonAndSkipsUnlabeledEntities() {
 		RestClient.Builder builder = RestClient.builder();
 		MockRestServiceServer server = MockRestServiceServer.bindTo(builder).build();
-		server.expect(queryParam("query", org.hamcrest.Matchers.notNullValue()))
-				.andExpect(header("User-Agent", org.hamcrest.Matchers.startsWith("Quizcadia")))
+		server.expect(queryParam("query", Matchers.notNullValue()))
+				.andExpect(header("User-Agent", Matchers.startsWith("Quizcadia")))
 				.andRespond(withSuccess("""
 						{"head":{"vars":["subjectLabel","answerLabel"]},"results":{"bindings":[
 						 {"subjectLabel":{"type":"literal","value":"France"},"answerLabel":{"type":"literal","value":"Paris"}},

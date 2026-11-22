@@ -7,6 +7,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
+import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.util.ArrayList;
 import java.util.List;
@@ -56,8 +57,8 @@ class TopicPoolsTest {
 		AtomicInteger loads = new AtomicInteger();
 		List<Instant> now = new ArrayList<>(List.of(T0));
 		Clock clock = new Clock() {
-			public java.time.ZoneId getZone() { return ZoneOffset.UTC; }
-			public Clock withZone(java.time.ZoneId z) { return this; }
+			public ZoneId getZone() { return ZoneOffset.UTC; }
+			public Clock withZone(ZoneId z) { return this; }
 			public Instant instant() { return now.get(0); }
 		};
 		TopicPools pools = new TopicPools(id -> {

@@ -6,6 +6,7 @@ import java.util.List;
 import com.fazeel.quizcadia.adaptive.AdaptiveSession;
 
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Positive;
 
 public final class Views {
@@ -15,7 +16,7 @@ public final class Views {
 
 	/** @param country the player's country (ISO code), optional: other countries' questions are left out */
 	public record StartRequest(@Positive int gameId, @Positive int userId,
-			@jakarta.validation.constraints.Pattern(regexp = "[A-Za-z]{2}") String country) {
+			@Pattern(regexp = "[A-Za-z]{2}") String country) {
 	}
 
 	public record AnswerRequest(@Positive int questionId, @NotNull String answer) {

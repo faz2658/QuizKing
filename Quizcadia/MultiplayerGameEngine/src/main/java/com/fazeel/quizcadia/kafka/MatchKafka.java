@@ -2,6 +2,7 @@ package com.fazeel.quizcadia.kafka;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Component;
@@ -20,7 +21,7 @@ public class MatchKafka implements MatchEvents {
 	private final MatchService service;
 	private final String resultTopic;
 
-	public MatchKafka(KafkaTemplate<String, Object> kafka, @org.springframework.context.annotation.Lazy MatchService service,
+	public MatchKafka(KafkaTemplate<String, Object> kafka, @Lazy MatchService service,
 			@Value("${quizcadia.topics.multiplayer-result}") String resultTopic) {
 		this.kafka = kafka;
 		this.service = service;

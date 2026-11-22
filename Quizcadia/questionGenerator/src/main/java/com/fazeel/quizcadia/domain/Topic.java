@@ -1,8 +1,11 @@
 package com.fazeel.quizcadia.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonCreator;
 import java.util.List;
+
+import org.springframework.data.annotation.Transient;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 
 @JsonIgnoreProperties(ignoreUnknown = true)
@@ -15,9 +18,9 @@ public class Topic {
 	    /** Questions deleted from the bank, so copies elsewhere (the game manager's pools) drop them too. */
 	    private List<Integer> removedQuestionIds;
 	    /** In messages only (not stored): how many playable questions the topic has, and per level 1-3. */
-	    @org.springframework.data.annotation.Transient
+	    @Transient
 	    private Integer questionCount;
-	    @org.springframework.data.annotation.Transient
+	    @Transient
 	    private List<Integer> levelCounts;
 
 	public Integer getQuestionCount() {

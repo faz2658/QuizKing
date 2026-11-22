@@ -3,6 +3,7 @@ package com.fazeel.quizcadia.security;
 import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
+import java.util.List;
 
 import org.springframework.security.oauth2.jose.jws.MacAlgorithm;
 import org.springframework.security.oauth2.jwt.JwsHeader;
@@ -46,7 +47,7 @@ public class TokenService {
 		Instant expiresAt = now.plus(lifetime);
 		JwtClaimsSet claims = JwtClaimsSet.builder().issuer(ISSUER).issuedAt(now).expiresAt(expiresAt)
 				.subject(String.valueOf(userId)).claim("name", name).claim("email", email)
-				.claim("roles", java.util.List.of(role)).build();
+				.claim("roles", List.of(role)).build();
 		String token = encoder.encode(JwtEncoderParameters.from(JwsHeader.with(MacAlgorithm.HS256).build(), claims))
 				.getTokenValue();
 		return new IssuedToken(token, expiresAt);

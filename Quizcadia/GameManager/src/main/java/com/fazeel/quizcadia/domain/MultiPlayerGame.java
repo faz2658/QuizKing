@@ -34,7 +34,6 @@ public class MultiPlayerGame {
 	private GameType gameType;
 	private String gameDescription;
 	private String gameRules;
-	//private List<Users> users;
 	private int userId;
 	private int categoryId;
 	private int numberOfQuestions;

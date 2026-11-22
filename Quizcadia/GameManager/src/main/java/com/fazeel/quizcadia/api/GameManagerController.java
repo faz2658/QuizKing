@@ -1,7 +1,13 @@
 package com.fazeel.quizcadia.api;
 
 import java.time.Duration;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Supplier;
 
 import org.springframework.http.CacheControl;
 import org.springframework.http.HttpStatus;
@@ -13,6 +19,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,13 +27,10 @@ import com.fazeel.quizcadia.api.Summaries.CategorySummary;
 import com.fazeel.quizcadia.api.Summaries.CountrySummary;
 import com.fazeel.quizcadia.api.Summaries.GameSummary;
 import com.fazeel.quizcadia.api.Summaries.TopicSummary;
+import com.fazeel.quizcadia.catalog.CatalogCards;
 import com.fazeel.quizcadia.catalog.GameCatalogService;
 import com.fazeel.quizcadia.domain.Category;
-import com.fazeel.quizcadia.catalog.CatalogCards;
 import com.fazeel.quizcadia.domain.Game;
-import java.util.HashMap;
-import java.util.Map;
-import org.springframework.web.bind.annotation.RequestParam;
 import com.fazeel.quizcadia.domain.MultiPlayerGame;
 
 /**
@@ -49,7 +53,7 @@ public class GameManagerController {
 
 	private static final long MAX_AGE_MS = 60_000;
 
-	private final java.util.concurrent.ConcurrentHashMap<String, Snapshot<?>> lists = new java.util.concurrent.ConcurrentHashMap<>();
+	private final ConcurrentHashMap<String, Snapshot<?>> lists = new ConcurrentHashMap<>();
 
 	public GameManagerController(GameCatalogService catalog, CatalogCards cards) {
 		this.catalog = catalog;
@@ -57,7 +61,7 @@ public class GameManagerController {
 	}
 
 	@SuppressWarnings("unchecked")
-	private <T> List<T> shared(String name, java.util.function.Supplier<List<T>> build) {
+	private <T> List<T> shared(String name, Supplier<List<T>> build) {
 		long v = catalog.version();
 		long now = System.currentTimeMillis();
 		Snapshot<T> s = (Snapshot<T>) lists.get(name);
@@ -125,7 +129,7 @@ public class GameManagerController {
 					.map(c -> new CountrySummary(c.countryCode(), c.categoryId(), c.categoryName(),
 							games.getOrDefault(c.countryCode(), 0),
 							c.topic().stream().mapToInt(TopicSummary::questionCount).sum()))
-					.sorted(java.util.Comparator.comparing(CountrySummary::country)).toList();
+					.sorted(Comparator.comparing(CountrySummary::country)).toList();
 		}));
 	}
 
@@ -137,7 +141,7 @@ public class GameManagerController {
 		if (country == null || country.isBlank()) {
 			return all;
 		}
-		String c = country.trim().toUpperCase(java.util.Locale.ROOT);
+		String c = country.trim().toUpperCase(Locale.ROOT);
 		return all.stream().filter(g -> "WORLD".equals(c) ? g.country() == null : c.equals(g.country())).toList();
 	}
 

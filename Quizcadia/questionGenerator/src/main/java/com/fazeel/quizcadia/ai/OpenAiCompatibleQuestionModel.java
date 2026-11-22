@@ -2,8 +2,10 @@ package com.fazeel.quizcadia.ai;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,12 +18,12 @@ import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestClientException;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
+import io.github.resilience4j.circuitbreaker.CircuitBreaker;
 import tools.jackson.core.JacksonException;
 import tools.jackson.databind.json.JsonMapper;
-import com.fazeel.quizcadia.web.InternalHttp;
+
 import com.fazeel.quizcadia.web.Breakers;
-import io.github.resilience4j.circuitbreaker.CircuitBreaker;
+import com.fazeel.quizcadia.web.InternalHttp;
 
 /**
  * Calls the question model through the OpenAI-compatible chat API that llama.cpp's llama-server
@@ -79,8 +81,8 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 
 	/** Longest topic passed to the model; players can type up to 200 characters, a topic needs far fewer. */
 	static final int TOPIC_MAX = 100;
-	static final java.util.Set<String> DIFFICULTIES = java.util.Set.of("easy", "medium", "hard");
-	static final java.util.Set<String> FORMATS = java.util.Set.of("multiple choice", "true/false");
+	static final Set<String> DIFFICULTIES = Set.of("easy", "medium", "hard");
+	static final Set<String> FORMATS = Set.of("multiple choice", "true/false");
 
 	@Override
 	public Optional<GeneratedQuestion> write(String topic, String difficulty, String format) {
@@ -130,8 +132,8 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 		return t.length() <= TOPIC_MAX ? t : t.substring(0, TOPIC_MAX).strip();
 	}
 
-	private static String allowed(String value, java.util.Set<String> allowed, String fallback) {
-		String v = value == null ? "" : value.strip().toLowerCase(java.util.Locale.ROOT);
+	private static String allowed(String value, Set<String> allowed, String fallback) {
+		String v = value == null ? "" : value.strip().toLowerCase(Locale.ROOT);
 		return allowed.contains(v) ? v : fallback;
 	}
 

@@ -1,18 +1,19 @@
 package com.fazeel.quizcadia.domain;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonCreator;
 import java.util.List;
 
-
 import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.index.CompoundIndex;
 import org.springframework.data.mongodb.core.mapping.Document;
+
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "category")
 // a question's or topic's category is found by index, not by reading every category (each holds its whole question set)
-@org.springframework.data.mongodb.core.index.CompoundIndex(name = "question_id", def = "{'topic.questions.questionId': 1}")
-@org.springframework.data.mongodb.core.index.CompoundIndex(name = "topic_id", def = "{'topic.topicId': 1}")
+@CompoundIndex(name = "question_id", def = "{'topic.questions.questionId': 1}")
+@CompoundIndex(name = "topic_id", def = "{'topic.topicId': 1}")
 public class Category {
 	@Id
 	private int categoryId;

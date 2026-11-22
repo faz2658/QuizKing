@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.UUID;
 import java.util.function.Consumer;
@@ -206,7 +207,7 @@ public class PrivateRooms {
 	}
 
 	static String normalize(String code) {
-		String c = code == null ? "" : code.trim().toUpperCase(java.util.Locale.ROOT);
+		String c = code == null ? "" : code.trim().toUpperCase(Locale.ROOT);
 		return c.matches("\\d{4}") ? "KING-" + c : c; // friends may type just the digits
 	}
 

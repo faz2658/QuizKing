@@ -3,9 +3,12 @@ package com.fazeel.quizcadia.bank;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
+import java.util.Random;
 import java.util.Set;
 import java.util.random.RandomGenerator;
 
@@ -50,7 +53,7 @@ public final class QuestionMix {
 		Collections.shuffle(order, random(random));
 		List<Questions> picked = new ArrayList<>();
 		while (picked.size() < count && !order.isEmpty()) {
-			for (java.util.Iterator<Integer> it = order.iterator(); it.hasNext() && picked.size() < count;) {
+			for (Iterator<Integer> it = order.iterator(); it.hasNext() && picked.size() < count;) {
 				List<Questions> pool = pools.get(it.next());
 				Questions next = null;
 				while (!pool.isEmpty() && next == null) {
@@ -75,10 +78,10 @@ public final class QuestionMix {
 	}
 
 	private static String stem(Questions q) {
-		return q.getQuestionStem().trim().toLowerCase(java.util.Locale.ROOT);
+		return q.getQuestionStem().trim().toLowerCase(Locale.ROOT);
 	}
 
-	private static java.util.Random random(RandomGenerator random) {
-		return new java.util.Random(random.nextLong());
+	private static Random random(RandomGenerator random) {
+		return new Random(random.nextLong());
 	}
 }

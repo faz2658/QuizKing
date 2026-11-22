@@ -12,6 +12,8 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.server.LocalServerPort;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.MediaType;
+import org.springframework.http.client.JdkClientHttpRequestFactory;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.oauth2.jose.jws.MacAlgorithm;
 import org.springframework.security.oauth2.jwt.JwsHeader;
 import org.springframework.security.oauth2.jwt.JwtClaimsSet;
@@ -19,6 +21,7 @@ import org.springframework.security.oauth2.jwt.JwtEncoder;
 import org.springframework.security.oauth2.jwt.JwtEncoderParameters;
 import org.springframework.web.client.RestClient;
 
+import com.fazeel.quizcadia.account.Account;
 import com.fazeel.quizcadia.account.AccountRepository;
 
 /** Full HTTP round trip through Spring Security, JPA (H2) and JWT. */
@@ -98,7 +101,7 @@ class AuthFlowTest {
 		// locked now, even with the right password, and whatever capitals are used. (A plain JDK client: the default
 		// one would honour Retry-After and wait out the whole lock before returning.)
 		var noRetry = RestClient.builder().baseUrl("http://localhost:" + port)
-				.requestFactory(new org.springframework.http.client.JdkClientHttpRequestFactory())
+				.requestFactory(new JdkClientHttpRequestFactory())
 				.defaultStatusHandler(HttpStatusCode::isError, (req, res) -> {
 				}).build();
 		var locked = noRetry.post().uri("/api/v1/auth/login").contentType(MediaType.APPLICATION_JSON)
@@ -153,13 +156,13 @@ class AuthFlowTest {
 	}
 
 	@Autowired
-	org.springframework.security.crypto.password.PasswordEncoder encoder;
+	PasswordEncoder encoder;
 
 	@Test
 	@SuppressWarnings("unchecked")
 	void onlyAdminsSeeAccountStats() {
-		accounts.saveAndFlush(new com.fazeel.quizcadia.account.Account("Stats", "stats-admin@quizcadia.test",
-				encoder.encode("password123"), com.fazeel.quizcadia.account.Account.Role.ADMIN, java.time.Instant.now()));
+		accounts.saveAndFlush(new Account("Stats", "stats-admin@quizcadia.test",
+				encoder.encode("password123"), Account.Role.ADMIN, Instant.now()));
 		String admin = (String) postForMap("/api/v1/auth/login",
 				Map.of("email", "stats-admin@quizcadia.test", "password", "password123")).get("token");
 		String player = (String) postForMap("/api/v1/auth/register",
@@ -175,7 +178,7 @@ class AuthFlowTest {
 				.header("Authorization", "Bearer " + admin).retrieve().body(Map.class);
 		assertThat((Integer) stats.get("total")).isGreaterThanOrEqualTo(2);
 		assertThat((Integer) stats.get("today")).isGreaterThanOrEqualTo(2);
-		assertThat((java.util.List<?>) stats.get("signupsByDay")).hasSize(7);
+		assertThat((List<?>) stats.get("signupsByDay")).hasSize(7);
 		assertThat(stats.get("recent").toString()).contains("pat-stats@example.test");
 	}
 

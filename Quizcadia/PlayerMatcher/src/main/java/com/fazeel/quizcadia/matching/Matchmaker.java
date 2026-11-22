@@ -2,6 +2,7 @@ package com.fazeel.quizcadia.matching;
 
 import java.time.Clock;
 import java.time.Instant;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -108,7 +109,7 @@ public class Matchmaker {
 	public synchronized List<OpenLobby> openLobbies() {
 		closeDueLobbies(clock.instant());
 		return lobbies.values().stream().map(l -> new OpenLobby(l.gameId(), l.players().size(), l.closesAt(rules.waitTime())))
-				.sorted(java.util.Comparator.comparingInt(OpenLobby::players).reversed()).toList();
+				.sorted(Comparator.comparingInt(OpenLobby::players).reversed()).toList();
 	}
 
 	public record OpenLobby(int gameId, int players, Instant closesAt) {

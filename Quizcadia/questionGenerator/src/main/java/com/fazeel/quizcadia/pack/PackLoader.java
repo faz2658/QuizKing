@@ -6,10 +6,11 @@ import java.io.UncheckedIOException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HexFormat;
 import java.util.LinkedHashMap;
-import java.util.Map;
 import java.util.List;
+import java.util.Map;
 import java.util.function.IntPredicate;
 
 import org.slf4j.Logger;
@@ -59,7 +60,7 @@ public class PackLoader {
 					packs.add(new Pack(r.getFilename(), in.readAllBytes()));
 				}
 			}
-			packs.sort(java.util.Comparator.comparing(Pack::name));
+			packs.sort(Comparator.comparing(Pack::name));
 			return packs;
 		}
 		catch (IOException e) {

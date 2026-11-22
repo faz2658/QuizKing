@@ -1,6 +1,7 @@
 package com.fazeel.quizcadia.session;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import com.fazeel.quizcadia.domain.Game;
@@ -26,7 +27,7 @@ public final class TestGames {
 		g.setGameName("Game " + id);
 		g.setCategoryId(7);
 		g.setQuestionLevels(mix);
-		g.setQuestions(new ArrayList<>(java.util.Arrays.asList(questions)));
+		g.setQuestions(new ArrayList<>(Arrays.asList(questions)));
 		return g;
 	}
 

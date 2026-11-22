@@ -18,6 +18,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -35,6 +36,7 @@ import com.fazeel.quizcadia.session.GameSession;
 import com.fazeel.quizcadia.session.QuizRuleException;
 import com.fazeel.quizcadia.session.SessionQuestion;
 import com.fazeel.quizcadia.session.SessionVariant;
+import com.fazeel.quizcadia.session.TestGames;
 
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)
@@ -140,19 +142,19 @@ public class DailyChallengeServiceTest {
 
 	@Test
 	void theSharedChallengeLeavesCountrySpecificQuestionsOut() {
-		java.util.List<com.fazeel.quizcadia.domain.Questions> qs = new java.util.ArrayList<>();
+		List<Questions> qs = new ArrayList<>();
 		for (int i = 0; i < 12; i++) {
-			com.fazeel.quizcadia.domain.Questions home = com.fazeel.quizcadia.session.TestGames.question(100 + i, i % 3 + 1, "a", "a", "b");
+			Questions home = TestGames.question(100 + i, i % 3 + 1, "a", "a", "b");
 			home.setCountry("IN");
 			qs.add(home);
-			qs.add(com.fazeel.quizcadia.session.TestGames.question(200 + i, i % 3 + 1, "a", "a", "b"));
+			qs.add(TestGames.question(200 + i, i % 3 + 1, "a", "a", "b"));
 		}
-		com.fazeel.quizcadia.domain.Game g = com.fazeel.quizcadia.session.TestGames.game(1, null,
-				qs.toArray(com.fazeel.quizcadia.domain.Questions[]::new));
+		Game g = TestGames.game(1, null,
+				qs.toArray(Questions[]::new));
 
-		DailyChallengeService.Picked p = DailyChallengeService.pick(42, java.util.List.of(g), 3, 3, 3);
+		DailyChallengeService.Picked p = DailyChallengeService.pick(42, List.of(g), 3, 3, 3);
 
-		org.assertj.core.api.Assertions.assertThat(p.questions()).hasSize(9)
+		Assertions.assertThat(p.questions()).hasSize(9)
 				.allMatch(q -> q.getQuestionId() >= 200);
 	}
 }

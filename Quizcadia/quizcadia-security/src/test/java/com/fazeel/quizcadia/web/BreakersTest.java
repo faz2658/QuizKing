@@ -3,15 +3,18 @@ package com.fazeel.quizcadia.web;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+import java.util.Map;
 import java.util.concurrent.atomic.AtomicInteger;
 
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.support.StaticListableBeanFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.ResourceAccessException;
 
 import io.github.resilience4j.circuitbreaker.CircuitBreaker;
+import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.simple.SimpleMeterRegistry;
 
 class BreakersTest {
@@ -87,8 +90,8 @@ class BreakersTest {
 	@Test
 	void theStateIsInTheMetrics() {
 		SimpleMeterRegistry meters = new SimpleMeterRegistry();
-		var withMetrics = new Breakers(new org.springframework.beans.factory.support.StaticListableBeanFactory(
-				java.util.Map.of("meters", meters)).getBeanProvider(io.micrometer.core.instrument.MeterRegistry.class));
+		var withMetrics = new Breakers(new StaticListableBeanFactory(
+				Map.of("meters", meters)).getBeanProvider(MeterRegistry.class));
 		withMetrics.forService("question-generator");
 		assertThat(meters.find("resilience4j.circuitbreaker.state").tag("name", "question-generator").gauges())
 				.isNotEmpty();

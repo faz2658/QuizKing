@@ -5,9 +5,11 @@ import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
@@ -147,7 +149,7 @@ public class FriendDuelService {
 		requireOpen(duel);
 		Game game = games.loadGame(duel.gameId(), userId);
 		String questionsFrom = duel.international() ? QuizBuilder.EVERYWHERE
-				: QuizBuilder.sharedCountry(java.util.Arrays.asList(duel.challenger().country(), country(country)));
+				: QuizBuilder.sharedCountry(Arrays.asList(duel.challenger().country(), country(country)));
 		List<SessionQuestion> questions = quizBuilder.build(game, seenByEither(game, duel.challenger().userId(), userId),
 				questionsFrom);
 		if (questions.isEmpty()) {
@@ -270,7 +272,7 @@ public class FriendDuelService {
 
 	private static String country(String country) {
 		return country == null || !country.trim().matches("[A-Za-z]{2}") ? null
-				: country.trim().toUpperCase(java.util.Locale.ROOT);
+				: country.trim().toUpperCase(Locale.ROOT);
 	}
 
 	private String newId() {

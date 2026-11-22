@@ -4,8 +4,12 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
+import java.util.Random;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Version;
@@ -94,7 +98,7 @@ public class MultiplayerMatch {
 	 *
 	 * @param screenUserId the host's big screen, which may watch and pace the quiz but not answer
 	 */
-	public static MultiplayerMatch roomQuiz(String matchId, List<Integer> players, java.util.Map<Integer, String> names,
+	public static MultiplayerMatch roomQuiz(String matchId, List<Integer> players, Map<Integer, String> names,
 			List<MatchQuestion> questions, int secondsPerQuestion, int revealSeconds, Integer screenUserId, Instant now) {
 		if (players.isEmpty()) {
 			throw new IllegalArgumentException("A quiz needs at least one player");
@@ -241,7 +245,7 @@ public class MultiplayerMatch {
 	/** Same, with the names and countries to show on the scoreboard. */
 	public MultiplayerMatch(String matchId, int gameId, String gameName, int categoryId, List<Integer> playerIds,
 			List<MatchQuestion> questions, int secondsPerQuestion, int pointsPerQuestion, Instant now,
-			java.util.Map<Integer, String> names, java.util.Map<Integer, String> countries) {
+			Map<Integer, String> names, Map<Integer, String> countries) {
 		this(matchId, gameId, gameName, categoryId, playerIds, questions, secondsPerQuestion, pointsPerQuestion, now);
 		this.players = new ArrayList<>(players.stream()
 				.map(p -> new PlayerScore(p.getUserId(), names.get(p.getUserId()), countries.get(p.getUserId()))).toList());
@@ -371,7 +375,7 @@ public class MultiplayerMatch {
 		boolean played = false;
 		MatchQuestion q = current();
 		List<PlayerScore> due = new ArrayList<>();
-		java.util.Map<Integer, Instant> when = new java.util.HashMap<>();
+		Map<Integer, Instant> when = new HashMap<>();
 		for (PlayerScore p : players) {
 			if (!p.isBot() || q.answerOf(p.getUserId()).isPresent()) {
 				continue;
@@ -387,7 +391,7 @@ public class MultiplayerMatch {
 			if (currentIndex >= questions.size() || current() != q) {
 				break;
 			}
-			java.util.Random r = new java.util.Random(java.util.Objects.hash(matchId, q.getQuestionId(), bot.getUserId(), "pick"));
+			Random r = new Random(Objects.hash(matchId, q.getQuestionId(), bot.getUserId(), "pick"));
 			String pick;
 			if (r.nextDouble() < BOT_ACCURACY) {
 				pick = q.getCorrectAnswer();
@@ -403,7 +407,7 @@ public class MultiplayerMatch {
 
 	/** When a bot answers question {@code q}: fixed per match, question and bot (see {@link #playBots}). */
 	private Instant botAnswersAt(MatchQuestion q, PlayerScore bot) {
-		java.util.Random r = new java.util.Random(java.util.Objects.hash(matchId, q.getQuestionId(), bot.getUserId()));
+		Random r = new Random(Objects.hash(matchId, q.getQuestionId(), bot.getUserId()));
 		long window = Math.max(1000, (secondsPerQuestion - 4) * 1000L);
 		return q.getOpenedAt().plusMillis(2000 + (long) (r.nextDouble() * window));
 	}

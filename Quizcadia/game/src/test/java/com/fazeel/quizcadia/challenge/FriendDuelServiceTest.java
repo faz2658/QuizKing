@@ -15,6 +15,7 @@ import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -32,6 +33,7 @@ import org.mockito.quality.Strictness;
 import com.fazeel.quizcadia.challenge.FriendDuelService.Standing;
 import com.fazeel.quizcadia.challenge.FriendDuelService.State;
 import com.fazeel.quizcadia.domain.Game;
+import com.fazeel.quizcadia.domain.GameQuestionLevel;
 import com.fazeel.quizcadia.domain.Questions;
 import com.fazeel.quizcadia.kafka.GameEvents;
 import com.fazeel.quizcadia.repository.GameRepository;
@@ -162,7 +164,7 @@ class FriendDuelServiceTest {
 	@Test
 	void internationalUsesQuestionsFromEverywhere() {
 		Game big = mixedGame();
-		big.setQuestionLevels(new com.fazeel.quizcadia.domain.GameQuestionLevel(0, 60, 0, 0));
+		big.setQuestionLevels(new GameQuestionLevel(0, 60, 0, 0));
 		when(games.findById(GAME)).thenReturn(Optional.of(big));
 
 		FriendDuel d = accepted("IN", "IN", true);
@@ -309,7 +311,7 @@ class FriendDuelServiceTest {
 	void sharedCountryNeedsEveryoneFromTheSameKnownCountry() {
 		assertThat(QuizBuilder.sharedCountry(List.of("in", "IN "))).isEqualTo("IN");
 		assertThat(QuizBuilder.sharedCountry(List.of("IN", "DE"))).isNull();
-		assertThat(QuizBuilder.sharedCountry(java.util.Arrays.asList("IN", null))).isNull();
+		assertThat(QuizBuilder.sharedCountry(Arrays.asList("IN", null))).isNull();
 		assertThat(QuizBuilder.sharedCountry(List.of())).isNull();
 	}
 

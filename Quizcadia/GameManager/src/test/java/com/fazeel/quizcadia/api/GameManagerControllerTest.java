@@ -1,31 +1,38 @@
 package com.fazeel.quizcadia.api;
 
-import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
-import org.springframework.context.annotation.Import;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.test.web.servlet.request.RequestPostProcessor;
-import com.fazeel.quizcadia.config.SecurityConfig;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import java.util.List;
+
+import org.assertj.core.api.Assertions;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentMatchers;
+import org.mockito.Mockito;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
+import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.RequestPostProcessor;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+import com.fazeel.quizcadia.catalog.CatalogCards;
 import com.fazeel.quizcadia.catalog.GameCatalogService;
 import com.fazeel.quizcadia.catalog.NotEnoughQuestionsException;
-import com.fazeel.quizcadia.catalog.NotFoundException;
+import com.fazeel.quizcadia.config.SecurityConfig;
 import com.fazeel.quizcadia.domain.Game;
 
 @Import(SecurityConfig.class)
@@ -48,16 +55,16 @@ class GameManagerControllerTest {
 	GameCatalogService catalog;
 
 	@MockitoBean
-	com.fazeel.quizcadia.catalog.CatalogCards cards;
+	CatalogCards cards;
 
-	static com.fazeel.quizcadia.catalog.CatalogCards.GameCard card(int gameId, String name, int categoryId, int questions) {
-		return new com.fazeel.quizcadia.catalog.CatalogCards.GameCard(gameId, name, null, null, null, categoryId, 1, name,
+	static CatalogCards.GameCard card(int gameId, String name, int categoryId, int questions) {
+		return new CatalogCards.GameCard(gameId, name, null, null, null, categoryId, 1, name,
 				null, null, questions, null, null);
 	}
 
-	static com.fazeel.quizcadia.catalog.CatalogCards.CategoryCard category(int id, String name, String country) {
-		return new com.fazeel.quizcadia.catalog.CatalogCards.CategoryCard(id, name, null, country,
-				java.util.List.of(new com.fazeel.quizcadia.catalog.CatalogCards.TopicCard(1, name, 30)));
+	static CatalogCards.CategoryCard category(int id, String name, String country) {
+		return new CatalogCards.CategoryCard(id, name, null, country,
+				List.of(new CatalogCards.TopicCard(1, name, 30)));
 	}
 
 	@Test
@@ -75,12 +82,12 @@ class GameManagerControllerTest {
 	@Test
 	void gameListsNeverIncludeQuestionsOrAnswers() throws Exception {
 		when(catalog.version()).thenReturn(System.nanoTime()); // each test sees a fresh catalog
-		when(cards.games()).thenReturn(java.util.List.of(card(5, "Film", 1, 3)));
+		when(cards.games()).thenReturn(List.of(card(5, "Film", 1, 3)));
 
 		mvc.perform(get("/api/game/games").with(admin())).andExpect(status().isOk())
 				.andExpect(jsonPath("$[0].questionCount").value(3))
-				.andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.content()
-						.string(org.hamcrest.Matchers.not(org.hamcrest.Matchers.containsString("SECRET-ANSWER"))));
+				.andExpect(MockMvcResultMatchers.content()
+						.string(Matchers.not(Matchers.containsString("SECRET-ANSWER"))));
 	}
 
 	@Test
@@ -98,11 +105,11 @@ class GameManagerControllerTest {
 		for (String path : new String[] { "/api/game/game1/7", "/api/game/games/mp/7", "/api/game/games/mp/+7", "/api/game/game1/+7" }) {
 			mvc.perform(get(path)).andExpect(result -> {
 				String body = result.getResponse().getContentAsString();
-				org.assertj.core.api.Assertions.assertThat(body).as(path).doesNotContain("correctAnswer").doesNotContain("\"questions\"");
+				Assertions.assertThat(body).as(path).doesNotContain("correctAnswer").doesNotContain("\"questions\"");
 			});
 		}
-		org.mockito.Mockito.verify(catalog, org.mockito.Mockito.never()).game(org.mockito.ArgumentMatchers.anyInt());
-		org.mockito.Mockito.verify(catalog, org.mockito.Mockito.never()).multiPlayerGame(org.mockito.ArgumentMatchers.anyInt());
+		Mockito.verify(catalog, Mockito.never()).game(ArgumentMatchers.anyInt());
+		Mockito.verify(catalog, Mockito.never()).multiPlayerGame(ArgumentMatchers.anyInt());
 	}
 
 	@Test
@@ -114,7 +121,7 @@ class GameManagerControllerTest {
 	@Test
 	void anyoneMayBrowseButOnlyAdminsChangeGames() throws Exception {
 		when(catalog.version()).thenReturn(System.nanoTime()); // each test sees a fresh catalog
-		when(cards.games()).thenReturn(java.util.List.of());
+		when(cards.games()).thenReturn(List.of());
 
 		mvc.perform(get("/api/game/games")).andExpect(status().isOk());
 		mvc.perform(post("/api/game/category/1/Geography").with(player(5)).contentType(MediaType.APPLICATION_JSON)
@@ -126,8 +133,8 @@ class GameManagerControllerTest {
 	@Test
 	void catalogListsMayBeCachedAndAnswer304WhileUnchanged() throws Exception {
 		when(catalog.version()).thenReturn(System.nanoTime());
-		when(cards.games()).thenReturn(java.util.List.of(card(1, "Film", 1, 300)));
-		when(cards.categories()).thenReturn(java.util.List.of(category(1, "Film", null)));
+		when(cards.games()).thenReturn(List.of(card(1, "Film", 1, 300)));
+		when(cards.categories()).thenReturn(List.of(category(1, "Film", null)));
 
 		var first = mvc.perform(get("/api/game/games"))
 				.andExpect(status().isOk())
@@ -136,36 +143,36 @@ class GameManagerControllerTest {
 				.andReturn().getResponse();
 		mvc.perform(get("/api/game/games").header("If-None-Match", first.getHeader("ETag")))
 				.andExpect(status().isNotModified());
-		for (String path : java.util.List.of("/api/game/categories", "/api/game/countries", "/api/game/games/mp")) {
+		for (String path : List.of("/api/game/categories", "/api/game/countries", "/api/game/games/mp")) {
 			mvc.perform(get(path)).andExpect(status().isOk())
-					.andExpect(header().string("Cache-Control", org.hamcrest.Matchers.containsString("public")));
+					.andExpect(header().string("Cache-Control", Matchers.containsString("public")));
 		}
 		// anything else keeps Spring Security's "never cache"
 		mvc.perform(get("/api/game/games/Film")).andExpect(header().string("Cache-Control",
-				org.hamcrest.Matchers.containsString("no-store")));
+				Matchers.containsString("no-store")));
 	}
 
 	@Test
 	void theGamesListIsBuiltOnceUntilTheCatalogChanges() throws Exception {
 		long v = System.nanoTime();
 		when(catalog.version()).thenReturn(v);
-		when(cards.games()).thenReturn(java.util.List.of());
+		when(cards.games()).thenReturn(List.of());
 		for (int i = 0; i < 5; i++) {
 			mvc.perform(get("/api/game/games").with(admin())).andExpect(status().isOk());
 		}
-		org.mockito.Mockito.verify(cards, org.mockito.Mockito.times(1)).games();
+		Mockito.verify(cards, Mockito.times(1)).games();
 
 		when(catalog.version()).thenReturn(v + 1); // someone created or changed a game
 		mvc.perform(get("/api/game/games").with(admin())).andExpect(status().isOk());
-		org.mockito.Mockito.verify(cards, org.mockito.Mockito.times(2)).games();
+		Mockito.verify(cards, Mockito.times(2)).games();
 	}
 
 	@Test
 	void listsGamesByCountryAndTheCountriesWithTheirOwnQuestions() throws Exception {
 		when(catalog.version()).thenReturn(System.nanoTime());
-		when(cards.categories()).thenReturn(java.util.List.of(category(1, "Film", null), category(14, "India", "IN"),
+		when(cards.categories()).thenReturn(List.of(category(1, "Film", null), category(14, "India", "IN"),
 				category(15, "Japan", "JP")));
-		when(cards.games()).thenReturn(java.util.List.of(card(1, "Film", 1, 300), card(2, "Cricket", 14, 27),
+		when(cards.games()).thenReturn(List.of(card(1, "Film", 1, 300), card(2, "Cricket", 14, 27),
 				card(3, "Indian History", 14, 26), card(4, "Japan: History & Culture", 15, 15)));
 
 		mvc.perform(get("/api/game/games").param("country", "in")).andExpect(status().isOk())

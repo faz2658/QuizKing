@@ -1,6 +1,7 @@
 package com.fazeel.quizcadia.analytics;
 
 import java.nio.charset.StandardCharsets;
+import java.security.GeneralSecurityException;
 import java.security.KeyFactory;
 import java.security.PrivateKey;
 import java.security.Signature;
@@ -8,6 +9,7 @@ import java.security.spec.PKCS8EncodedKeySpec;
 import java.time.Clock;
 import java.time.Instant;
 import java.util.Base64;
+import java.util.Map;
 
 import org.springframework.http.MediaType;
 import org.springframework.util.LinkedMultiValueMap;
@@ -73,7 +75,7 @@ public class GoogleCredentials {
 
 	String signedJwt(Instant now) {
 		String header = b64("{\"alg\":\"RS256\",\"typ\":\"JWT\"}");
-		String claims = b64(json.writeValueAsString(java.util.Map.of("iss", clientEmail, "scope", SCOPE, "aud",
+		String claims = b64(json.writeValueAsString(Map.of("iss", clientEmail, "scope", SCOPE, "aud",
 				tokenUri, "iat", now.getEpochSecond(), "exp", now.getEpochSecond() + 3600)));
 		try {
 			Signature s = Signature.getInstance("SHA256withRSA");
@@ -81,7 +83,7 @@ public class GoogleCredentials {
 			s.update((header + "." + claims).getBytes(StandardCharsets.US_ASCII));
 			return header + "." + claims + "." + Base64.getUrlEncoder().withoutPadding().encodeToString(s.sign());
 		}
-		catch (java.security.GeneralSecurityException e) {
+		catch (GeneralSecurityException e) {
 			throw new IllegalStateException("Couldn't sign the Google token request", e);
 		}
 	}
@@ -96,7 +98,7 @@ public class GoogleCredentials {
 		try {
 			return KeyFactory.getInstance("RSA").generatePrivate(new PKCS8EncodedKeySpec(Base64.getDecoder().decode(b64)));
 		}
-		catch (java.security.GeneralSecurityException | IllegalArgumentException e) {
+		catch (GeneralSecurityException | IllegalArgumentException e) {
 			throw new IllegalArgumentException("The service account's private_key isn't a valid RSA key", e);
 		}
 	}

@@ -1,9 +1,13 @@
 package com.fazeel.quizcadia.admin;
 
+import java.util.List;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.fazeel.quizcadia.analytics.WebsiteAnalytics;
 
 /** Activity numbers for admins (the security config limits everything not listed to ADMIN). */
 @RestController
@@ -11,24 +15,24 @@ import org.springframework.web.bind.annotation.RestController;
 public class AdminStatsController {
 
 	private final ActivityStats stats;
-	private final com.fazeel.quizcadia.analytics.WebsiteAnalytics analytics;
+	private final WebsiteAnalytics analytics;
 
-	public AdminStatsController(ActivityStats stats, com.fazeel.quizcadia.analytics.WebsiteAnalytics analytics) {
+	public AdminStatsController(ActivityStats stats, WebsiteAnalytics analytics) {
 		this.stats = stats;
 		this.analytics = analytics;
 	}
 
 	/** Google Analytics numbers (visitors, pages, countries, sources); a setup or access problem comes back as error. */
 	@GetMapping("/analytics")
-	public com.fazeel.quizcadia.analytics.WebsiteAnalytics.View analytics(@RequestParam(defaultValue = "28") int days) {
+	public WebsiteAnalytics.View analytics(@RequestParam(defaultValue = "28") int days) {
 		int d = Math.max(1, Math.min(days, 90));
 		try {
 			return analytics.view(d);
 		}
-		catch (com.fazeel.quizcadia.analytics.WebsiteAnalytics.AnalyticsUnavailable e) {
-			return new com.fazeel.quizcadia.analytics.WebsiteAnalytics.View(true, e.getMessage(), null, d, 0, null,
-					java.util.List.of(), java.util.List.of(), java.util.List.of(), java.util.List.of(), java.util.List.of(),
-					java.util.List.of());
+		catch (WebsiteAnalytics.AnalyticsUnavailable e) {
+			return new WebsiteAnalytics.View(true, e.getMessage(), null, d, 0, null,
+					List.of(), List.of(), List.of(), List.of(), List.of(),
+					List.of());
 		}
 	}
 

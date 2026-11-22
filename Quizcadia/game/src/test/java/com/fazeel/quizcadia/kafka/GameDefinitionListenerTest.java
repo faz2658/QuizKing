@@ -6,6 +6,8 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentMatchers;
+import org.mockito.Mockito;
 
 import com.fazeel.quizcadia.domain.Game;
 import com.fazeel.quizcadia.repository.GameRepository;
@@ -29,7 +31,7 @@ class GameDefinitionListenerTest {
 	void ignoresGamesWithoutAnId() {
 		listener.onGame(new Game());
 
-		verify(games, never()).save(org.mockito.ArgumentMatchers.any());
+		verify(games, never()).save(ArgumentMatchers.any());
 	}
 
 	@Test
@@ -39,6 +41,6 @@ class GameDefinitionListenerTest {
 
 		verify(games).deleteById(7);
 		verify(games, never()).deleteById(0);
-		verify(games, org.mockito.Mockito.times(1)).deleteById(anyInt());
+		verify(games, Mockito.times(1)).deleteById(anyInt());
 	}
 }

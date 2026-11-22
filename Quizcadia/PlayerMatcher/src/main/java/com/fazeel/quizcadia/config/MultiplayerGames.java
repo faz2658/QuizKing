@@ -3,6 +3,7 @@ package com.fazeel.quizcadia.config;
 import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
 
@@ -36,7 +37,7 @@ public class MultiplayerGames implements Supplier<List<Integer>> {
 			try {
 				Summary[] games = http.get().uri("/api/game/games/mp").retrieve().body(Summary[].class);
 				cached = games == null ? List.of()
-						: java.util.Arrays.stream(games).filter(g -> g.questionCount() >= MIN_QUESTIONS).map(Summary::gameId).toList();
+						: Arrays.stream(games).filter(g -> g.questionCount() >= MIN_QUESTIONS).map(Summary::gameId).toList();
 				fetchedAt = clock.instant();
 			}
 			catch (RuntimeException e) {

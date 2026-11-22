@@ -2,6 +2,7 @@ package com.fazeel.quizcadia.api;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.Objects;
 
 import com.fazeel.quizcadia.match.MatchQuestion;
 import com.fazeel.quizcadia.match.MultiplayerMatch;
@@ -76,11 +77,11 @@ public final class Views {
 			String version;
 			if (m.isRoomQuiz() && !m.isScreen(userId)) {
 				// a phone only needs news when the phase changes or its own answer lands, not at everyone else's
-				version = Integer.toHexString(java.util.Objects.hash(m.getStatus(), phase, m.getCurrentIndex(),
+				version = Integer.toHexString(Objects.hash(m.getStatus(), phase, m.getCurrentIndex(),
 						current == null ? null : current.yourAnswer(), phase == Phase.QUESTION ? null : you));
 			} else {
 				// what this player would see, without the ticking clock: equal versions mean nothing new to show
-				version = Integer.toHexString(java.util.Objects.hash(m.getStatus(), m.getCurrentIndex(), standings,
+				version = Integer.toHexString(Objects.hash(m.getStatus(), m.getCurrentIndex(), standings,
 						current == null ? null : current.yourAnswer(), answered, last, phase));
 			}
 			return new MatchView(m.getMatchId(), m.getGameId(), m.getGameName(), m.getStatus(), m.getQuestions().size(),

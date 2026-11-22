@@ -3,6 +3,7 @@ package com.fazeel.quizcadia.bank;
 import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import com.fazeel.quizcadia.domain.Questions;
@@ -41,9 +42,9 @@ class QuestionRulesTest {
 		assertThatThrownBy(() -> QuestionRules.validate(noStem)).hasMessageContaining("text");
 	}
 
-	@org.junit.jupiter.api.Test
+	@Test
 	void explanationsAreOptionalButShort() {
-		com.fazeel.quizcadia.domain.Questions q = new com.fazeel.quizcadia.domain.Questions();
+		Questions q = new Questions();
 		q.setQuestionStem("Capital of Peru?");
 		q.setQuestionLevel(1);
 		q.setOption1("Lima");
@@ -53,7 +54,7 @@ class QuestionRulesTest {
 		q.setExplanation("Lima has been Peru's capital since 1535.");
 		QuestionRules.validate(q);
 		q.setExplanation("x".repeat(QuestionRules.MAX_EXPLANATION + 1));
-		org.assertj.core.api.Assertions.assertThatThrownBy(() -> QuestionRules.validate(q))
+		Assertions.assertThatThrownBy(() -> QuestionRules.validate(q))
 				.isInstanceOf(InvalidQuestionException.class);
 	}
 }

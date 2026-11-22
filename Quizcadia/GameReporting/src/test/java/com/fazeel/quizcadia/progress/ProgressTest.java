@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 import java.time.Instant;
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -64,7 +65,7 @@ class ProgressTest {
 		Streak beforePlayingToday = Streaks.of(days, TODAY);
 		assertThat(beforePlayingToday).isEqualTo(new Streak(2, 3, false)); // 13th and 14th, still alive
 
-		Streak afterPlaying = Streaks.of(new java.util.ArrayList<>(days) {{ add(TODAY); }}, TODAY);
+		Streak afterPlaying = Streaks.of(new ArrayList<>(days) {{ add(TODAY); }}, TODAY);
 		assertThat(afterPlaying).isEqualTo(new Streak(3, 3, true));
 
 		assertThat(Streaks.of(days, TODAY.plusDays(2)).current()).isZero(); // missed a whole day

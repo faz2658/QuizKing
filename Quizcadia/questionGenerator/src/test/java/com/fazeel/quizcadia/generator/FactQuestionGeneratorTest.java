@@ -2,6 +2,7 @@ package com.fazeel.quizcadia.generator;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
@@ -59,7 +60,7 @@ class FactQuestionGeneratorTest {
 
 	@Test
 	void duplicatesAndJunkAreIgnoredAndCountIsRespected() {
-		List<Fact> facts = new java.util.ArrayList<>(CAPITALS);
+		List<Fact> facts = new ArrayList<>(CAPITALS);
 		facts.add(new Fact("france", "Paris"));
 		facts.add(new Fact(" ", "x"));
 		facts.add(null);

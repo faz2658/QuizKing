@@ -2,11 +2,19 @@ package com.fazeel.quizcadia.match;
 
 import java.time.Clock;
 import java.time.Duration;
+import java.time.Instant;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
+import java.util.concurrent.ThreadLocalRandom;
+import java.util.function.Supplier;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.OptimisticLockingFailureException;
 import org.springframework.stereotype.Service;
 
 import com.fazeel.quizcadia.domain.Match;
@@ -46,7 +54,7 @@ public class MatchService {
 		this(matches, games, gameSource, factory, events, seen, clock, updates, pools, RoomQuizQuestions.none());
 	}
 
-	@org.springframework.beans.factory.annotation.Autowired
+	@Autowired
 	public MatchService(MatchRepository matches, GameRepository games, GameSource gameSource, MatchFactory factory,
 			MatchEvents events, SeenQuestionRepository seen, Clock clock, MatchUpdates updates, TopicPools pools,
 			RoomQuizQuestions quizQuestions) {
@@ -80,12 +88,12 @@ public class MatchService {
 					.or(() -> gameSource.fetch(match.gameId()).map(games::save))
 					.orElseThrow(() -> new NotFoundException("No multiplayer game " + match.gameId())));
 			List<Integer> ids = game.autoquestions() == null ? List.of()
-					: game.autoquestions().stream().filter(java.util.Objects::nonNull)
+					: game.autoquestions().stream().filter(Objects::nonNull)
 							.map(MultiPlayerGame.Question::questionId).toList();
-			java.util.Map<Integer, Integer> seenBy = new java.util.HashMap<>();
+			Map<Integer, Integer> seenBy = new HashMap<>();
 			seen.findByUserIdInAndQuestionIdIn(match.players(), ids)
 					.forEach(s -> seenBy.merge(s.questionId(), 1, Integer::sum));
-			java.time.Instant now = clock.instant();
+			Instant now = clock.instant();
 			MultiplayerMatch created = factory.create(match, game, now, seenBy);
 			seen.saveAll(match.players().stream().filter(p -> p > 0).flatMap(p -> created.getQuestions().stream()
 					.map(q -> SeenQuestion.of(p, q.getQuestionId(), now))).toList());
@@ -120,17 +128,17 @@ public class MatchService {
 	static final int ATTEMPTS = 6;
 
 	/** Runs a load-change-save again when another request saved the match in between. */
-	private static <T> T retrying(java.util.function.Supplier<T> work) {
+	private static <T> T retrying(Supplier<T> work) {
 		for (int attempt = 1;; attempt++) {
 			try {
 				return work.get();
 			}
-			catch (org.springframework.dao.OptimisticLockingFailureException e) {
+			catch (OptimisticLockingFailureException e) {
 				if (attempt >= ATTEMPTS) {
 					throw e;
 				}
 				try {
-					Thread.sleep(java.util.concurrent.ThreadLocalRandom.current().nextLong(5, 20L * attempt));
+					Thread.sleep(ThreadLocalRandom.current().nextLong(5, 20L * attempt));
 				}
 				catch (InterruptedException ie) {
 					Thread.currentThread().interrupt();

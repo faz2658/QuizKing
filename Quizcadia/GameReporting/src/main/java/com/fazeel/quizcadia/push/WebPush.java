@@ -1,6 +1,7 @@
 package com.fazeel.quizcadia.push;
 
 import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.math.BigInteger;
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -26,7 +27,6 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.Base64;
-
 import javax.crypto.Cipher;
 import javax.crypto.KeyAgreement;
 import javax.crypto.Mac;
@@ -71,7 +71,7 @@ public class WebPush implements PushSender {
 	/** Encrypts {@code payload} for the subscription and posts it; the message is kept up to {@code ttl}. */
 	@Override
 	public Result send(String endpoint, String p256dh, String auth, String payload, Duration ttl)
-			throws java.io.IOException, InterruptedException {
+			throws IOException, InterruptedException {
 		byte[] salt = new byte[16];
 		random.nextBytes(salt);
 		byte[] body = encrypt(payload.getBytes(StandardCharsets.UTF_8), B64D.decode(p256dh), B64D.decode(auth), salt,
