@@ -19,6 +19,7 @@ import com.fazeel.quizcadia.report.GameReport;
 import com.fazeel.quizcadia.report.GameReport.GameMode;
 import com.fazeel.quizcadia.report.GameReportRepository;
 import com.fazeel.quizcadia.report.PlayerNames;
+import com.fazeel.quizcadia.report.Players;
 
 @ExtendWith(MockitoExtension.class)
 class LeaderboardServiceTest {
@@ -108,7 +109,7 @@ class LeaderboardServiceTest {
 
 	@Test
 	void guestsAndBotsAreNotRanked() {
-		int guest = com.fazeel.quizcadia.report.Players.GUEST_ID_BASE + 42;
+		int guest = Players.GUEST_ID_BASE + 42;
 		when(reports.findScoresByVariantAndVariantKey(GameReport.DAILY, "2026-11-15")).thenReturn(List.of(
 				daily(1, 120, "2026-11-15T12:00:00Z"), daily(guest, 300, "2026-11-15T10:00:00Z"),
 				daily(-1, 250, "2026-11-15T11:00:00Z")));

@@ -19,6 +19,7 @@ export class SignInOptions {
   private readonly http = inject(HttpClient);
   private cached?: Observable<Providers>;
 
+  /** The sign-in options, fetched once and shared; a failed fetch is tried again next time. */
   get(): Observable<Providers> {
     this.cached ??= this.http.get<Providers>('/api/v1/auth/providers').pipe(
       catchError((e) => {

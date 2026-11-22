@@ -13,6 +13,7 @@ import java.time.Clock;
 import java.time.Instant;
 import java.time.ZoneOffset;
 import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Deque;
 import java.util.HashMap;
 import java.util.List;
@@ -21,6 +22,7 @@ import java.util.Optional;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.mockito.ArgumentMatchers;
 
 import com.fazeel.quizcadia.bank.InvalidQuestionException;
 import com.fazeel.quizcadia.bank.QuestionBankService;
@@ -33,7 +35,7 @@ class DraftServiceTest {
 	final DraftRepository repo = mock(DraftRepository.class);
 	final Map<String, DraftQuestion> store = new HashMap<>();
 	final Deque<Optional<GeneratedQuestion>> replies = new ArrayDeque<>();
-	final List<String> prompts = new java.util.ArrayList<>();
+	final List<String> prompts = new ArrayList<>();
 	boolean modelAvailable = true;
 
 	final QuestionModel model = new QuestionModel() {
@@ -117,7 +119,7 @@ class DraftServiceTest {
 
 		service.approve(d.id(), null);
 
-		verify(bank).addQuestion(eq(1), eq("Capitals"), org.mockito.ArgumentMatchers.argThat(
+		verify(bank).addQuestion(eq(1), eq("Capitals"), ArgumentMatchers.argThat(
 				x -> "ai".equals(x.getQuestionType()) && x.getQuestionLevel() == 2));
 		assertThat(store.get(d.id()).status()).isEqualTo(DraftQuestion.Status.APPROVED);
 		assertThatThrownBy(() -> service.reject(d.id())).isInstanceOf(InvalidQuestionException.class);

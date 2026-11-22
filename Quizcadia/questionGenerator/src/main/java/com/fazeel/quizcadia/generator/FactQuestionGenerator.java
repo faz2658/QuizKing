@@ -29,6 +29,10 @@ public class FactQuestionGenerator {
 		this.random = random;
 	}
 
+	/**
+	 * Up to maxQuestions questions, one per subject in random order; subjects without three other distinct answers
+	 * to use as distractors are skipped.
+	 */
 	public List<Questions> generate(QuestionTemplate template, List<Fact> facts, int maxQuestions) {
 		Map<String, Fact> bySubject = new LinkedHashMap<>();
 		for (Fact f : facts) {

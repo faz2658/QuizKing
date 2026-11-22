@@ -6,6 +6,7 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.EnumMap;
 import java.util.HashSet;
@@ -17,6 +18,7 @@ import java.util.Random;
 import java.util.Set;
 import java.util.UUID;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DuplicateKeyException;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +26,7 @@ import com.fazeel.quizcadia.domain.Game;
 import com.fazeel.quizcadia.domain.Questions;
 import com.fazeel.quizcadia.repository.GameRepository;
 import com.fazeel.quizcadia.repository.GameSessionRepository;
+import com.fazeel.quizcadia.service.TopicPools;
 import com.fazeel.quizcadia.session.Difficulty;
 import com.fazeel.quizcadia.session.GameSession;
 import com.fazeel.quizcadia.session.QuizBuilder;
@@ -50,16 +53,16 @@ public class DailyChallengeService {
 	private final DailyChallengeRepository challenges;
 	private final GameSessionRepository sessions;
 	private final Clock clock;
-	private final com.fazeel.quizcadia.service.TopicPools pools;
+	private final TopicPools pools;
 
 	public DailyChallengeService(GameRepository games, DailyChallengeRepository challenges,
 			GameSessionRepository sessions, Clock clock) {
-		this(games, challenges, sessions, clock, com.fazeel.quizcadia.service.TopicPools.none());
+		this(games, challenges, sessions, clock, TopicPools.none());
 	}
 
-	@org.springframework.beans.factory.annotation.Autowired
+	@Autowired
 	public DailyChallengeService(GameRepository games, DailyChallengeRepository challenges,
-			GameSessionRepository sessions, Clock clock, com.fazeel.quizcadia.service.TopicPools pools) {
+			GameSessionRepository sessions, Clock clock, TopicPools pools) {
 		this.pools = pools;
 		this.games = games;
 		this.challenges = challenges;
@@ -67,6 +70,7 @@ public class DailyChallengeService {
 		this.clock = clock;
 	}
 
+	/** Today's date in UTC, the Daily Challenge's day. */
 	public LocalDate today() {
 		return LocalDate.now(clock.withZone(ZoneOffset.UTC));
 	}
@@ -77,6 +81,7 @@ public class DailyChallengeService {
 		return Duration.between(clock.instant(), next);
 	}
 
+	/** The challenge for the date, built and stored the first time it is asked for. */
 	public DailyChallenge challenge(LocalDate date) {
 		String key = date.toString();
 		return challenges.findById(key).orElseGet(() -> {
@@ -160,7 +165,7 @@ public class DailyChallengeService {
 		for (Difficulty d : Difficulty.values()) {
 			Map<String, List<Pick>> pool = byLevelAndTopic.get(d);
 			List<String> topicOrder = new ArrayList<>(pool.keySet());
-			java.util.Collections.shuffle(topicOrder, random);
+			Collections.shuffle(topicOrder, random);
 			// unused topics first, so ten questions cover up to ten topics
 			topicOrder.sort(Comparator.comparing(usedTopics::contains));
 			int need = wanted.get(d);
@@ -183,6 +188,7 @@ public class DailyChallengeService {
 		return new Picked(questions, topics);
 	}
 
+	/** A candidate question with the game and topic it comes from. */
 	private record Pick(Questions question, Game game, String topic) {
 	}
 }

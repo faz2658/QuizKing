@@ -12,6 +12,7 @@ export interface ShareInfo {
   url: string;
 }
 
+/** The text shared with a result card. */
 export function shareText(i: ShareInfo): string {
   const rank = i.rankLine ? ` (${i.rankLine})` : '';
   return `✨ I scored ${i.score}/${i.maxScore} (${i.correct}/${i.total} right) in ${i.title} on QuizCadia${rank}. Can you beat me? ${i.url}`;

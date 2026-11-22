@@ -7,6 +7,7 @@ import { WORLD } from '../core/region';
 import { CatalogApi } from '../core/api';
 import { CustomDifficulty, GameCard } from '../core/models';
 
+/** Most topics one custom quiz can mix. */
 export const MAX_TOPICS = 8;
 
 /** Solo games with one entry per topic, alphabetically. */

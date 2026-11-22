@@ -1,8 +1,24 @@
 package com.fazeel.quizcadia.api;
 
-import java.time.Instant;
+import static com.fazeel.quizcadia.api.InputRules.*;
 
+import java.net.URI;
+import java.nio.charset.StandardCharsets;
+import java.security.MessageDigest;
+import java.security.SecureRandom;
+import java.time.Duration;
+import java.time.Instant;
+import java.util.List;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.CacheControl;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
+import org.springframework.http.ResponseCookie;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.oauth2.jwt.Jwt;
 import org.springframework.web.bind.annotation.CookieValue;
@@ -10,8 +26,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.server.ResponseStatusException;
 
 import com.fazeel.quizcadia.account.Account;
 import com.fazeel.quizcadia.account.AccountService;
@@ -23,15 +41,16 @@ import com.fazeel.quizcadia.session.SessionCookie;
 import com.fazeel.quizcadia.session.SessionService;
 
 import jakarta.servlet.http.HttpServletResponse;
-
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import jakarta.validation.constraints.Size;
 
-import static com.fazeel.quizcadia.api.InputRules.*;
-
+/**
+ * Signing up, in and out: email and password, Google (popup or redirect), guests, password resets, and swapping
+ * the refresh cookie for a new access token.
+ */
 @RestController
 @RequestMapping("/api/v1/auth")
 public class AuthController {
@@ -44,12 +63,12 @@ public class AuthController {
 	private final SessionCookie cookie;
 
 	private final String analyticsId;
-	@org.springframework.beans.factory.annotation.Value("#{!'${quizcadia.mail.host:}'.isBlank()}")
+	@Value("#{!'${quizcadia.mail.host:}'.isBlank()}")
 	private boolean mailConfigured;
 
 	public AuthController(AccountService accounts, TokenService tokens, PasswordResetService resets,
 			GoogleTokenVerifier google, SessionService sessions, SessionCookie cookie,
-			@org.springframework.beans.factory.annotation.Value("${quizcadia.analytics-id:}") String analyticsId) {
+			@Value("${quizcadia.analytics-id:}") String analyticsId) {
 		this.analyticsId = analyticsId == null || !analyticsId.matches("G-[A-Z0-9]{4,20}") ? null : analyticsId;
 		this.accounts = accounts;
 		this.tokens = tokens;
@@ -59,19 +78,22 @@ public class AuthController {
 		this.cookie = cookie;
 	}
 
-	/** Which sign-in options the browser should show, and the analytics id. Both are public by design. */
-	/** {@code passwordReset}: reset links can be emailed (MAIL_HOST is set); otherwise the app hides "Forgot password?". */
+	/**
+	 * Which sign-in options the browser should show, and the analytics id. Both are public by design.
+	 * {@code passwordReset}: reset links can be emailed (MAIL_HOST is set); otherwise the app hides "Forgot password?".
+	 */
 	public record ProvidersView(String googleClientId, String analyticsId, boolean passwordReset) {
 	}
 
 	/** The same for everyone and only changes with a deploy, so browsers and a CDN may keep it for 5 minutes. */
 	@GetMapping("/providers")
-	public org.springframework.http.ResponseEntity<ProvidersView> providers() {
-		return org.springframework.http.ResponseEntity.ok()
-				.cacheControl(org.springframework.http.CacheControl.maxAge(java.time.Duration.ofMinutes(5)).cachePublic())
+	public ResponseEntity<ProvidersView> providers() {
+		return ResponseEntity.ok()
+				.cacheControl(CacheControl.maxAge(Duration.ofMinutes(5)).cachePublic())
 				.body(new ProvidersView(google.enabled() ? google.clientId() : null, analyticsId, mailConfigured));
 	}
 
+	/** Google's ID token from the popup, and a friend's invite code if any. */
 	public record GoogleRequest(@NotBlank @Size(max = 4096) String credential, @Size(max = 16) String invite) {
 	}
 
@@ -85,7 +107,7 @@ public class AuthController {
 	public static final String INVITE_COOKIE = "qc_invite";
 	/** Google's double-submit token: the same value arrives as a cookie (set on our site) and in the form. */
 	static final String GOOGLE_CSRF = "g_csrf_token";
-	private static final org.slf4j.Logger log = org.slf4j.LoggerFactory.getLogger(AuthController.class);
+	private static final Logger log = LoggerFactory.getLogger(AuthController.class);
 
 	/**
 	 * "Sign in with Google" in redirect mode (iPhone, iPad and Safari, where Google's popup tab can't hand the
@@ -93,10 +115,10 @@ public class AuthController {
 	 * Google's anti-forgery token, sign the player in exactly like {@link #google} (the refresh cookie) and send the
 	 * browser back to the app, which picks the session up from that cookie. Always a 303: the app shows failures.
 	 */
-	@PostMapping(path = "/google/redirect", consumes = org.springframework.http.MediaType.APPLICATION_FORM_URLENCODED_VALUE)
-	public org.springframework.http.ResponseEntity<Void> googleRedirect(
-			@org.springframework.web.bind.annotation.RequestParam(required = false) String credential,
-			@org.springframework.web.bind.annotation.RequestParam(name = GOOGLE_CSRF, required = false) String csrfForm,
+	@PostMapping(path = "/google/redirect", consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+	public ResponseEntity<Void> googleRedirect(
+			@RequestParam(required = false) String credential,
+			@RequestParam(name = GOOGLE_CSRF, required = false) String csrfForm,
 			@CookieValue(name = GOOGLE_CSRF, required = false) String csrfCookie,
 			@CookieValue(name = INVITE_COOKIE, required = false) String invite, HttpServletResponse response) {
 		String outcome = "failed";
@@ -116,19 +138,20 @@ public class AuthController {
 				log.info("Google redirect sign-in failed: {}", e.getMessage());
 			}
 		}
-		response.addHeader(org.springframework.http.HttpHeaders.SET_COOKIE,
-				org.springframework.http.ResponseCookie.from(INVITE_COOKIE, "").path("/api/v1/auth").maxAge(0).build().toString());
-		return org.springframework.http.ResponseEntity.status(HttpStatus.SEE_OTHER)
-				.location(java.net.URI.create("/welcome?google=" + outcome)).build();
+		response.addHeader(HttpHeaders.SET_COOKIE,
+				ResponseCookie.from(INVITE_COOKIE, "").path("/api/v1/auth").maxAge(0).build().toString());
+		return ResponseEntity.status(HttpStatus.SEE_OTHER)
+				.location(URI.create("/welcome?google=" + outcome)).build();
 	}
 
 	/** Both present and equal, compared in constant time. */
 	static boolean sameToken(String a, String b) {
 		return a != null && b != null && !a.isEmpty()
-				&& java.security.MessageDigest.isEqual(a.getBytes(java.nio.charset.StandardCharsets.UTF_8),
-						b.getBytes(java.nio.charset.StandardCharsets.UTF_8));
+				&& MessageDigest.isEqual(a.getBytes(StandardCharsets.UTF_8),
+						b.getBytes(StandardCharsets.UTF_8));
 	}
 
+	/** The email to send a reset link to. */
 	public record ForgotRequest(
 			@NotBlank(message = EMAIL_REQUIRED) @Pattern(regexp = EMAIL_LOOSE_PATTERN, message = EMAIL_INVALID)
 			@Size(max = EMAIL_MAX, message = EMAIL_SIZE) String email) {
@@ -145,6 +168,7 @@ public class AuthController {
 		resets.requestReset(r.email());
 	}
 
+	/** The token from the reset link and the new password. */
 	public record ResetRequest(
 			@NotBlank(message = "This reset link is incomplete. Open the link from the email again.")
 			@Size(max = 200, message = "This reset link isn't valid. Ask for a new one.") String token,
@@ -158,6 +182,7 @@ public class AuthController {
 		return signIn(resets.reset(r.token(), r.password()), response); // the reset ended every other sign-in
 	}
 
+	/** Name, email and password for a new account, and a friend's invite code if any. Name and email are trimmed. */
 	public record RegisterRequest(
 			@NotBlank(message = NAME_REQUIRED) @Size(max = NAME_MAX, message = NAME_SIZE)
 			@Pattern(regexp = NAME_PATTERN, message = NAME_CHARS) String userName,
@@ -174,6 +199,7 @@ public class AuthController {
 		}
 	}
 
+	/** Email and password to sign in with (the email trimmed). */
 	public record LoginRequest(
 			@NotBlank(message = EMAIL_REQUIRED) @Pattern(regexp = EMAIL_LOOSE_PATTERN, message = EMAIL_INVALID)
 			@Size(max = EMAIL_MAX, message = EMAIL_SIZE) String email,
@@ -184,6 +210,7 @@ public class AuthController {
 		}
 	}
 
+	/** The signed-in player as the app knows them: id, name, email and role. */
 	public record UserView(int userId, String userName, String email, String role) {
 		static UserView of(Account a) {
 			return new UserView(a.getUserId(), a.getUserName(), a.getEmail(), a.getRole().name());
@@ -204,6 +231,7 @@ public class AuthController {
 		return signIn(accounts.register(r.userName(), r.email(), r.password(), r.invite()), response);
 	}
 
+	/** Signs in with email and password: an access token in the reply and the refresh cookie. */
 	@PostMapping("/login")
 	public TokenView login(@Valid @RequestBody LoginRequest r, HttpServletResponse response) {
 		return signIn(accounts.authenticate(r.email(), r.password()), response);
@@ -239,7 +267,7 @@ public class AuthController {
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void logoutEverywhere(@AuthenticationPrincipal Jwt jwt,
 			@CookieValue(name = SessionCookie.NAME, required = false) String refreshToken, HttpServletResponse response) {
-		java.util.List<String> roles = jwt.getClaimAsStringList("roles");
+		List<String> roles = jwt.getClaimAsStringList("roles");
 		if (roles != null && roles.contains(TokenService.GUEST)) {
 			sessions.end(refreshToken);
 		}
@@ -249,6 +277,7 @@ public class AuthController {
 		cookie.clear(response);
 	}
 
+	/** The name a guest plays under (trimmed). */
 	public record GuestRequest(
 			@NotBlank(message = NAME_REQUIRED) @Size(max = NAME_MAX, message = NAME_SIZE)
 			@Pattern(regexp = NAME_PATTERN, message = NAME_CHARS) String userName) {
@@ -272,18 +301,18 @@ public class AuthController {
 
 	static final int GUEST_ID_BASE = 900_000_000;
 	static final int GUEST_ID_RANGE = 99_999_999;
-	private static final java.security.SecureRandom RANDOM = new java.security.SecureRandom();
+	private static final SecureRandom RANDOM = new SecureRandom();
 
 	/** The signed-in player: their account, or for a guest what the guest token says (guests have no account). */
 	@GetMapping("/me")
 	public UserView me(@AuthenticationPrincipal Jwt jwt) {
 		int userId = Integer.parseInt(jwt.getSubject());
-		java.util.List<String> roles = jwt.getClaimAsStringList("roles");
+		List<String> roles = jwt.getClaimAsStringList("roles");
 		if (roles != null && roles.contains(TokenService.GUEST)) {
 			return new UserView(userId, jwt.getClaimAsString("name"), "", TokenService.GUEST);
 		}
 		return accounts.find(userId).map(UserView::of)
-				.orElseThrow(() -> new org.springframework.web.server.ResponseStatusException(HttpStatus.UNAUTHORIZED,
+				.orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED,
 						"This account no longer exists. Please sign in again."));
 	}
 

@@ -1,9 +1,13 @@
 package com.fazeel.quizcadia.api;
 
+import java.time.Duration;
 import java.util.List;
+import java.util.Map;
 
+import org.springframework.http.CacheControl;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,6 +35,10 @@ import com.fazeel.quizcadia.domain.Topic;
 import com.fazeel.quizcadia.opentdb.ImportStatus;
 import com.fazeel.quizcadia.opentdb.OpenTriviaImporter;
 
+/**
+ * The admin question-bank API: categories, topics and questions, AI drafts, the Open Trivia DB import, and the
+ * public topic counts.
+ */
 @RestController
 @RequestMapping("/api/v1/question-generator")
 public class QuestionBankController {
@@ -45,13 +53,14 @@ public class QuestionBankController {
 		this.drafts = drafts;
 	}
 
+	/** What to ask the question model for: a topic, a level 1-3, true/false or four options, and how many. */
 	public record GenerateRequest(int categoryId, String topicName, int level, boolean trueFalse, int count) {
 	}
 
 	/** Whether a question model is configured. */
 	@GetMapping("/ai/status")
-	public java.util.Map<String, Boolean> aiStatus() {
-		return java.util.Map.of("available", drafts.available());
+	public Map<String, Boolean> aiStatus() {
+		return Map.of("available", drafts.available());
 	}
 
 	/** Asks the question model for new questions; they are queued as drafts for review. */
@@ -60,6 +69,7 @@ public class QuestionBankController {
 		return drafts.generate(r.categoryId(), r.topicName(), r.level(), r.trueFalse(), r.count());
 	}
 
+	/** Drafts waiting for review, newest first. */
 	@GetMapping("/ai/drafts")
 	public List<DraftQuestion> pendingDrafts() {
 		return drafts.pending();
@@ -71,6 +81,7 @@ public class QuestionBankController {
 		return drafts.approve(draftId, edited);
 	}
 
+	/** Rejects a pending draft. */
 	@DeleteMapping("/ai/drafts/{draftId}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void rejectDraft(@PathVariable String draftId) {
@@ -84,14 +95,16 @@ public class QuestionBankController {
 		return importer.start();
 	}
 
+	/** Progress of the running or last Open Trivia DB import. */
 	@GetMapping("/import/opentdb")
 	public ImportStatus importStatus() {
 		return importer.status();
 	}
 
 	/** How long the topic counts are kept; also how stale a browser or CDN may show them. */
-	static final java.time.Duration COUNTS_FOR = java.time.Duration.ofSeconds(10);
+	static final Duration COUNTS_FOR = Duration.ofSeconds(10);
 
+	/** The last topic counts and when they were read (epoch millis). */
 	private record Counts(List<TopicCounts.TopicCount> items, long at) {
 	}
 
@@ -103,46 +116,52 @@ public class QuestionBankController {
 	 * progress still moves along, a few seconds behind.
 	 */
 	@GetMapping("/stats")
-	public org.springframework.http.ResponseEntity<List<TopicCounts.TopicCount>> stats() {
+	public ResponseEntity<List<TopicCounts.TopicCount>> stats() {
 		long now = System.currentTimeMillis();
 		Counts c = counts;
 		if (c == null || now - c.at() >= COUNTS_FOR.toMillis()) {
 			c = new Counts(List.copyOf(bank.topicCounts()), now);
 			counts = c;
 		}
-		return org.springframework.http.ResponseEntity.ok()
-				.cacheControl(org.springframework.http.CacheControl.maxAge(COUNTS_FOR).cachePublic()
-						.staleWhileRevalidate(java.time.Duration.ofMinutes(1)))
+		return ResponseEntity.ok()
+				.cacheControl(CacheControl.maxAge(COUNTS_FOR).cachePublic()
+						.staleWhileRevalidate(Duration.ofMinutes(1)))
 				.body(c.items());
 	}
 
+	/** Every category with its topics and questions. */
 	@GetMapping("/category")
 	public List<Category> categories() {
 		return bank.categories();
 	}
 
+	/** Creates a category (the name must be new). */
 	@PostMapping("/category")
 	@ResponseStatus(HttpStatus.CREATED)
 	public Category createCategory(@RequestBody Category category) {
 		return bank.createCategory(category.getCategoryName(), category.getCategoryImage());
 	}
 
+	/** One category with its topics and questions. */
 	@GetMapping("/categoryId/{categoryId}")
 	public Category category(@PathVariable int categoryId) {
 		return bank.category(categoryId);
 	}
 
+	/** Adds an empty topic to a category (the name must be new in it). */
 	@PostMapping("/category/{categoryId}/topics")
 	@ResponseStatus(HttpStatus.CREATED)
 	public Category addTopic(@PathVariable int categoryId, @RequestBody Topic topic) {
 		return bank.addTopic(categoryId, topic.getTopicName(), topic.getTopicImage());
 	}
 
+	/** A topic's questions. */
 	@GetMapping("/category/{categoryId}/{topicName}/questions")
 	public List<Questions> questions(@PathVariable int categoryId, @PathVariable String topicName) {
 		return bank.questions(categoryId, topicName);
 	}
 
+	/** Adds a question to a topic; it gets a new id. */
 	@PostMapping("/category/{categoryId}/{topicName}/questions")
 	@ResponseStatus(HttpStatus.CREATED)
 	public Questions addQuestion(@PathVariable int categoryId, @PathVariable String topicName,
@@ -150,12 +169,14 @@ public class QuestionBankController {
 		return bank.addQuestion(categoryId, topicName, question);
 	}
 
+	/** Replaces a question, keeping its id. */
 	@PutMapping("/category/{categoryId}/{topicName}/{questionId}")
 	public Questions updateQuestion(@PathVariable int categoryId, @PathVariable String topicName,
 			@PathVariable int questionId, @RequestBody Questions question) {
 		return bank.updateQuestion(categoryId, topicName, questionId, question);
 	}
 
+	/** Removes a question from the bank and, through the game manager, from every game. */
 	@DeleteMapping("/category/{categoryId}/{topicName}/{questionId}")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void deleteQuestion(@PathVariable int categoryId, @PathVariable String topicName,

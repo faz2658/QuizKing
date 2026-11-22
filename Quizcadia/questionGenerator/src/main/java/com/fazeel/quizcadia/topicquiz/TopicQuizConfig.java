@@ -6,6 +6,7 @@ import java.util.concurrent.Executors;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+/** The executor that writes topic quizzes in the background. */
 @Configuration(proxyBeanMethods = false)
 public class TopicQuizConfig {
 

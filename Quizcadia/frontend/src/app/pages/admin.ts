@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, DestroyRef, OnInit, computed, inject, signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { FormsModule } from '@angular/forms';
-import { Router } from '@angular/router';
 import { EMPTY, Subscription, catchError, of, switchMap, takeWhile, timer } from 'rxjs';
 import { CatalogApi, QuestionBankApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
@@ -165,7 +164,6 @@ export class Admin implements OnInit {
     this.bank.stats().pipe(catchError(() => of([] as TopicStats[]))).subscribe((s) => this.stats.set(s));
   }
   private readonly auth = inject(AuthService);
-  private readonly router = inject(Router);
 
   protected readonly categories = toSignal(this.api.categories().pipe(catchError(() => of([] as Category[]))), { initialValue: [] as Category[] });
   protected readonly categoryId = signal(0);

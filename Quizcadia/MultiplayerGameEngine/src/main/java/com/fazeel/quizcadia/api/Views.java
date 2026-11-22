@@ -2,6 +2,7 @@ package com.fazeel.quizcadia.api;
 
 import java.time.Instant;
 import java.util.List;
+import java.util.Objects;
 
 import com.fazeel.quizcadia.match.MatchQuestion;
 import com.fazeel.quizcadia.match.MultiplayerMatch;
@@ -12,11 +13,13 @@ import com.fazeel.quizcadia.match.PlayerScore;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
 
+/** The JSON the multiplayer API sends and accepts. */
 public final class Views {
 
 	private Views() {
 	}
 
+	/** An answer: who (must be the caller), which question, and the option picked. */
 	public record AnswerRequest(@Positive int userId, @Positive int questionId, @NotNull String answer) {
 	}
 
@@ -24,9 +27,14 @@ public final class Views {
 	public record HostRequest(@NotNull MultiplayerMatch.HostAction action) {
 	}
 
+	/** A player on the scoreboard; negative ids (bot) are the bots that keep a lone Quick Match player company. */
 	public record PlayerView(int userId, int score, int questionsWon, String name, String country, boolean bot) {
 	}
 
+	/**
+	 * The open question as a player sees it: no right answer, the seconds left and the player's own answer if they
+	 * gave one.
+	 */
 	public record QuestionView(int questionId, int number, String stem, List<String> options, long secondsRemaining,
 			String yourAnswer) {
 	}
@@ -76,11 +84,11 @@ public final class Views {
 			String version;
 			if (m.isRoomQuiz() && !m.isScreen(userId)) {
 				// a phone only needs news when the phase changes or its own answer lands, not at everyone else's
-				version = Integer.toHexString(java.util.Objects.hash(m.getStatus(), phase, m.getCurrentIndex(),
+				version = Integer.toHexString(Objects.hash(m.getStatus(), phase, m.getCurrentIndex(),
 						current == null ? null : current.yourAnswer(), phase == Phase.QUESTION ? null : you));
 			} else {
 				// what this player would see, without the ticking clock: equal versions mean nothing new to show
-				version = Integer.toHexString(java.util.Objects.hash(m.getStatus(), m.getCurrentIndex(), standings,
+				version = Integer.toHexString(Objects.hash(m.getStatus(), m.getCurrentIndex(), standings,
 						current == null ? null : current.yourAnswer(), answered, last, phase));
 			}
 			return new MatchView(m.getMatchId(), m.getGameId(), m.getGameName(), m.getStatus(), m.getQuestions().size(),
@@ -122,6 +130,7 @@ public final class Views {
 		}
 	}
 
+	/** How an answer went (right, first to get it, the player's score) and the match after it. */
 	public record AnswerView(boolean correct, boolean wonQuestion, int score, MatchView match) {
 	}
 }

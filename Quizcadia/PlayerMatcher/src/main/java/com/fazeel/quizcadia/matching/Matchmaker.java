@@ -2,6 +2,7 @@ package com.fazeel.quizcadia.matching;
 
 import java.time.Clock;
 import java.time.Instant;
+import java.util.Comparator;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -33,6 +34,10 @@ public class Matchmaker {
 		this.onMatch = onMatch;
 	}
 
+	/**
+	 * Puts the player in this game's lobby (out of any other game's) and starts the match at once if that fills
+	 * it.
+	 */
 	public synchronized LobbyStatus join(int gameId, int userId) {
 		Instant now = clock.instant();
 		closeDueLobbies(now);
@@ -48,6 +53,7 @@ public class Matchmaker {
 		return waiting(lobby);
 	}
 
+	/** Where the player stands for this game: in the lobby, the match they got, or expired. */
 	public synchronized LobbyStatus status(int gameId, int userId) {
 		closeDueLobbies(clock.instant());
 		Lobby lobby = lobbies.get(gameId);
@@ -61,6 +67,7 @@ public class Matchmaker {
 		return new LobbyStatus(State.EXPIRED, gameId, List.of(), null, null);
 	}
 
+	/** Takes the player out of this game's lobby (an emptied lobby is dropped). */
 	public synchronized void leave(int gameId, int userId) {
 		Lobby lobby = lobbies.get(gameId);
 		if (lobby != null && lobby.leave(userId) && lobby.isEmpty()) {
@@ -108,9 +115,10 @@ public class Matchmaker {
 	public synchronized List<OpenLobby> openLobbies() {
 		closeDueLobbies(clock.instant());
 		return lobbies.values().stream().map(l -> new OpenLobby(l.gameId(), l.players().size(), l.closesAt(rules.waitTime())))
-				.sorted(java.util.Comparator.comparingInt(OpenLobby::players).reversed()).toList();
+				.sorted(Comparator.comparingInt(OpenLobby::players).reversed()).toList();
 	}
 
+	/** A lobby with players waiting, and when it closes. */
 	public record OpenLobby(int gameId, int players, Instant closesAt) {
 	}
 

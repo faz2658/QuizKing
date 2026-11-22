@@ -7,10 +7,12 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public record GameCard(int gameId, String gameName, String gameDescription, String gameImage, int categoryId,
 		Topic topic, GameType gameType) {
 
+	/** The topic of a game. */
 	@JsonIgnoreProperties(ignoreUnknown = true)
 	public record Topic(int topicId, String topicName) {
 	}
 
+	/** The kind of game. */
 	@JsonIgnoreProperties(ignoreUnknown = true)
 	public record GameType(int gameTypeId, String gameTypeName) {
 	}

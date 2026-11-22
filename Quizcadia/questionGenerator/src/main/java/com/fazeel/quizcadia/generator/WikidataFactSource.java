@@ -44,6 +44,7 @@ public class WikidataFactSource implements FactSource {
 		return v == null ? null : v.value();
 	}
 
+	/** The parts of a SPARQL JSON result that are read. */
 	@JsonIgnoreProperties(ignoreUnknown = true)
 	record SparqlResponse(Results results) {
 	}

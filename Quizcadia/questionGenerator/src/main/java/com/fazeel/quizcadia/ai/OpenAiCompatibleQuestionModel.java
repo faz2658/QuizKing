@@ -2,8 +2,10 @@ package com.fazeel.quizcadia.ai;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Optional;
+import java.util.Set;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,12 +18,12 @@ import org.springframework.web.client.RestClient;
 import org.springframework.web.client.RestClientException;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-
+import io.github.resilience4j.circuitbreaker.CircuitBreaker;
 import tools.jackson.core.JacksonException;
 import tools.jackson.databind.json.JsonMapper;
-import com.fazeel.quizcadia.web.InternalHttp;
+
 import com.fazeel.quizcadia.web.Breakers;
-import io.github.resilience4j.circuitbreaker.CircuitBreaker;
+import com.fazeel.quizcadia.web.InternalHttp;
 
 /**
  * Calls the question model through the OpenAI-compatible chat API that llama.cpp's llama-server
@@ -72,6 +74,7 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 		this.modelName = modelName;
 	}
 
+	/** True when a model URL is set (quizcadia.ai.url). */
 	@Override
 	public boolean available() {
 		return configured;
@@ -79,9 +82,10 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 
 	/** Longest topic passed to the model; players can type up to 200 characters, a topic needs far fewer. */
 	static final int TOPIC_MAX = 100;
-	static final java.util.Set<String> DIFFICULTIES = java.util.Set.of("easy", "medium", "hard");
-	static final java.util.Set<String> FORMATS = java.util.Set.of("multiple choice", "true/false");
+	static final Set<String> DIFFICULTIES = Set.of("easy", "medium", "hard");
+	static final Set<String> FORMATS = Set.of("multiple choice", "true/false");
 
+	/** Asks the model for one question; empty when the topic is unusable or the reply can't be parsed. */
 	@Override
 	public Optional<GeneratedQuestion> write(String topic, String difficulty, String format) {
 		// The topic is whatever a player typed for an AI quiz: keep it to one line of plain words, so it can only ever
@@ -112,7 +116,6 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 		return parse(response.choices().get(0).message().content());
 	}
 
-	/** Accepts a bare JSON object, one wrapped in ```json fences, or one after an empty think block. */
 	/**
 	 * A player's topic as one short line of text: no line breaks or other control characters (which could add
 	 * "Format:" or instruction lines), no chat-template markers such as {@code <|im_start|>} (which the model
@@ -130,11 +133,12 @@ public class OpenAiCompatibleQuestionModel implements QuestionModel {
 		return t.length() <= TOPIC_MAX ? t : t.substring(0, TOPIC_MAX).strip();
 	}
 
-	private static String allowed(String value, java.util.Set<String> allowed, String fallback) {
-		String v = value == null ? "" : value.strip().toLowerCase(java.util.Locale.ROOT);
+	private static String allowed(String value, Set<String> allowed, String fallback) {
+		String v = value == null ? "" : value.strip().toLowerCase(Locale.ROOT);
 		return allowed.contains(v) ? v : fallback;
 	}
 
+	/** Accepts a bare JSON object, one wrapped in ```json fences, or one after an empty think block. */
 	Optional<GeneratedQuestion> parse(String reply) {
 		if (reply == null) {
 			return Optional.empty();

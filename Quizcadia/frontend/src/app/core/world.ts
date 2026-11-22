@@ -28,15 +28,18 @@ export class World {
       .subscribe((o) => o && this.online.set(o));
   }
 
+  /** Stops the heartbeat (on sign-out). */
   stop(): void {
     this.beat?.unsubscribe();
     this.beat = null;
   }
 
+  /** Fetches the online numbers again. */
   refresh(): void {
     this.http.get<OnlineView>('/api/v1/matching/online').pipe(catchError(() => of(null))).subscribe((o) => o && this.online.set(o));
   }
 
+  /** Sets the player's country, on this device and on the server (for reports and the online map). */
   setCountry(code: string | null): void {
     this._country.set(code);
     try {

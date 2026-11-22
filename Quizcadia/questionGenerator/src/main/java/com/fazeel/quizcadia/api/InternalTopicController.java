@@ -2,11 +2,15 @@ package com.fazeel.quizcadia.api;
 
 import java.util.List;
 
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fazeel.quizcadia.bank.NotFoundException;
 import com.fazeel.quizcadia.bank.QuestionBankService;
 import com.fazeel.quizcadia.domain.Questions;
 
@@ -24,13 +28,14 @@ public class InternalTopicController {
 		this.bank = bank;
 	}
 
+	/** The topic's playable questions; 404 for an unknown topic. */
 	@GetMapping("/{topicId}/questions")
 	public List<Questions> questions(@PathVariable int topicId) {
 		return bank.topicQuestions(topicId);
 	}
 
-	@org.springframework.web.bind.annotation.ExceptionHandler(com.fazeel.quizcadia.bank.NotFoundException.class)
-	@org.springframework.web.bind.annotation.ResponseStatus(org.springframework.http.HttpStatus.NOT_FOUND)
+	@ExceptionHandler(NotFoundException.class)
+	@ResponseStatus(HttpStatus.NOT_FOUND)
 	void notFound() {
 		// unknown topic: the engine treats the game as not ready
 	}

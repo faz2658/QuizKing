@@ -4,8 +4,12 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
+import java.util.Random;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Version;
@@ -33,10 +37,12 @@ public class MultiplayerMatch {
 	/** How often a bot picks the right answer. */
 	public static final double BOT_ACCURACY = 0.55;
 
+	/** IN_PROGRESS until the last question closes (or the host ends a room quiz), then COMPLETED. */
 	public enum Status {
 		IN_PROGRESS, COMPLETED
 	}
 
+	/** How the match is played: fastest finger (the first right answer wins the points) or a host-paced room quiz. */
 	public enum Format {
 		FASTEST_FINGER, ROOM_QUIZ
 	}
@@ -94,7 +100,7 @@ public class MultiplayerMatch {
 	 *
 	 * @param screenUserId the host's big screen, which may watch and pace the quiz but not answer
 	 */
-	public static MultiplayerMatch roomQuiz(String matchId, List<Integer> players, java.util.Map<Integer, String> names,
+	public static MultiplayerMatch roomQuiz(String matchId, List<Integer> players, Map<Integer, String> names,
 			List<MatchQuestion> questions, int secondsPerQuestion, int revealSeconds, Integer screenUserId, Instant now) {
 		if (players.isEmpty()) {
 			throw new IllegalArgumentException("A quiz needs at least one player");
@@ -133,6 +139,7 @@ public class MultiplayerMatch {
 		return revealedAt;
 	}
 
+	/** Where the match is at this moment (see Phase). */
 	public Phase phase(Instant now) {
 		if (status == Status.COMPLETED) {
 			return Phase.FINISHED;
@@ -241,7 +248,7 @@ public class MultiplayerMatch {
 	/** Same, with the names and countries to show on the scoreboard. */
 	public MultiplayerMatch(String matchId, int gameId, String gameName, int categoryId, List<Integer> playerIds,
 			List<MatchQuestion> questions, int secondsPerQuestion, int pointsPerQuestion, Instant now,
-			java.util.Map<Integer, String> names, java.util.Map<Integer, String> countries) {
+			Map<Integer, String> names, Map<Integer, String> countries) {
 		this(matchId, gameId, gameName, categoryId, playerIds, questions, secondsPerQuestion, pointsPerQuestion, now);
 		this.players = new ArrayList<>(players.stream()
 				.map(p -> new PlayerScore(p.getUserId(), names.get(p.getUserId()), countries.get(p.getUserId()))).toList());
@@ -311,6 +318,10 @@ public class MultiplayerMatch {
 		completedAt = at;
 	}
 
+	/**
+	 * Records a player's answer to the open question at time now, scored by the match's format. Throws when the
+	 * player isn't in the match, the match is over, or the question isn't open.
+	 */
 	public AnswerOutcome answer(int userId, int questionId, String answer, Instant now) {
 		PlayerScore player = player(userId).orElseThrow(() -> new MatchRuleException("You are not in this match"));
 		advanceClock(now);
@@ -371,7 +382,7 @@ public class MultiplayerMatch {
 		boolean played = false;
 		MatchQuestion q = current();
 		List<PlayerScore> due = new ArrayList<>();
-		java.util.Map<Integer, Instant> when = new java.util.HashMap<>();
+		Map<Integer, Instant> when = new HashMap<>();
 		for (PlayerScore p : players) {
 			if (!p.isBot() || q.answerOf(p.getUserId()).isPresent()) {
 				continue;
@@ -387,7 +398,7 @@ public class MultiplayerMatch {
 			if (currentIndex >= questions.size() || current() != q) {
 				break;
 			}
-			java.util.Random r = new java.util.Random(java.util.Objects.hash(matchId, q.getQuestionId(), bot.getUserId(), "pick"));
+			Random r = new Random(Objects.hash(matchId, q.getQuestionId(), bot.getUserId(), "pick"));
 			String pick;
 			if (r.nextDouble() < BOT_ACCURACY) {
 				pick = q.getCorrectAnswer();
@@ -403,7 +414,7 @@ public class MultiplayerMatch {
 
 	/** When a bot answers question {@code q}: fixed per match, question and bot (see {@link #playBots}). */
 	private Instant botAnswersAt(MatchQuestion q, PlayerScore bot) {
-		java.util.Random r = new java.util.Random(java.util.Objects.hash(matchId, q.getQuestionId(), bot.getUserId()));
+		Random r = new Random(Objects.hash(matchId, q.getQuestionId(), bot.getUserId()));
 		long window = Math.max(1000, (secondsPerQuestion - 4) * 1000L);
 		return q.getOpenedAt().plusMillis(2000 + (long) (r.nextDouble() * window));
 	}
@@ -447,6 +458,7 @@ public class MultiplayerMatch {
 		return currentIndex == 0 ? Optional.empty() : Optional.of(questions.get(currentIndex - 1));
 	}
 
+	/** Whole seconds left on the open question (never more than its time limit; 0 when none is open). */
 	public long secondsRemaining(Instant now) {
 		return currentQuestion().map(q -> Math.min(secondsPerQuestion,
 				Math.max(0, Duration.between(now, deadline(q)).toSeconds()))).orElse(0L);
@@ -464,6 +476,7 @@ public class MultiplayerMatch {
 		return screenUserId != null && screenUserId == userId;
 	}
 
+	/** Marks the party host's screen, which may watch (and pace a room quiz) but not answer. */
 	public MultiplayerMatch shownOn(Integer screenUserId) {
 		this.screenUserId = screenUserId;
 		return this;
@@ -500,6 +513,7 @@ public class MultiplayerMatch {
 		}
 	}
 
+	/** Notes that the result went to Kafka, so it is published exactly once. */
 	public void markResultPublished() {
 		resultPublished = true;
 	}
@@ -556,6 +570,10 @@ public class MultiplayerMatch {
 		return completedAt;
 	}
 
+	/**
+	 * How an answer went: right or not, whether it won the question (fastest finger), and the player's score after
+	 * it.
+	 */
 	public record AnswerOutcome(boolean correct, boolean wonQuestion, int score) {
 	}
 }

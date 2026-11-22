@@ -4,6 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 import java.time.Instant;
+import java.util.Arrays;
 import java.util.List;
 
 import org.junit.jupiter.api.Test;
@@ -20,7 +21,7 @@ class MultiplayerMatchTest {
 	}
 
 	private MultiplayerMatch match(int... questionIds) {
-		List<MatchQuestion> qs = java.util.Arrays.stream(questionIds).mapToObj(i -> q(i, "A" + i)).toList();
+		List<MatchQuestion> qs = Arrays.stream(questionIds).mapToObj(i -> q(i, "A" + i)).toList();
 		return new MultiplayerMatch("m1", 1, "Race", 2, List.of(10, 20, 30), qs, 10, 10, T0);
 	}
 

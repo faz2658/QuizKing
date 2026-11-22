@@ -11,6 +11,7 @@ import { LifelineBar } from '../ui/lifeline-bar';
 import { CustomDifficulty, Lifeline } from '../core/models';
 import { errorMessage } from '../core/http-errors';
 
+/** Connects the quiz runner to the game engine for one solo session. */
 export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number, start?: () => Observable<SessionView>): QuizAdapter<SessionView> {
   return {
     start: start ?? (() => api.start(gameId, userId)),
@@ -34,6 +35,10 @@ export function singlePlayerAdapter(api: QuizApi, gameId: number, userId: number
   };
 }
 
+/**
+ * A solo game: a normal game, the Daily Challenge, a friend challenge, a duel or a custom quiz, depending on the
+ * route.
+ */
 @Component({
   selector: 'mv-play',
   imports: [QuizStage, RouterLink, CountUp, LifelineBar],

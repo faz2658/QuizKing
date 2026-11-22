@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component, computed, input } from '@angular/co
 import { CENTROIDS, countryName, flag } from '../core/countries';
 import { LAND_PATH } from './world-land';
 
+/** How many players are online in a country. */
 export interface MapPoint {
   country: string;
   players: number;

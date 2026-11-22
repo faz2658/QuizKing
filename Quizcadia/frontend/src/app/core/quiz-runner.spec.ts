@@ -254,7 +254,7 @@ describe('QuizRunner', () => {
   });
 
   it('keeps feedback with an explanation on screen longer', () => {
-    adapter.answer = (_s, questionId, option) => {
+    adapter.answer = (_s, _questionId, option) => {
       adapter.session = { ...adapter.session, index: adapter.session.index + 1 };
       return of({ feedback: { correct: true, timedOut: false, correctAnswer: option, points: 10, explanation: 'Because.' }, session: { ...adapter.session } });
     };

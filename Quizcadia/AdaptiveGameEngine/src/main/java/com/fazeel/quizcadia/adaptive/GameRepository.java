@@ -1,9 +1,10 @@
 package com.fazeel.quizcadia.adaptive;
 
-import java.util.List;
-
 import org.springframework.data.mongodb.repository.MongoRepository;
 
-public interface GameRepository extends MongoRepository<com.fazeel.quizcadia.domain.Game, Integer> {
+import com.fazeel.quizcadia.domain.Game;
+
+/** Games cached from the game manager (each with its topic, rules and possibly its own questions). */
+public interface GameRepository extends MongoRepository<Game, Integer> {
 
 }

@@ -4,17 +4,24 @@ import java.time.Clock;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fazeel.quizcadia.auth.Callers;
+import com.fazeel.quizcadia.board.BoardCache;
+import com.fazeel.quizcadia.board.CountryCup;
 import com.fazeel.quizcadia.board.LeaderboardService;
-import com.fazeel.quizcadia.board.NameMask;
 import com.fazeel.quizcadia.board.LeaderboardService.DailyBoard;
 import com.fazeel.quizcadia.board.LeaderboardService.Period;
 import com.fazeel.quizcadia.board.LeaderboardService.XpBoard;
+import com.fazeel.quizcadia.board.NameMask;
+import com.fazeel.quizcadia.invite.Invites;
 import com.fazeel.quizcadia.report.PlayerNames;
 
 /**
@@ -28,13 +35,13 @@ public class BoardController {
 	private final LeaderboardService boards;
 	private final PlayerNames names;
 	private final Clock clock;
-	private final com.fazeel.quizcadia.board.CountryCup cup;
-	private final com.fazeel.quizcadia.invite.Invites invites;
-	private final com.fazeel.quizcadia.board.BoardCache cache;
+	private final CountryCup cup;
+	private final Invites invites;
+	private final BoardCache cache;
 
 	public BoardController(LeaderboardService boards, PlayerNames names, Clock clock,
-			com.fazeel.quizcadia.board.CountryCup cup, com.fazeel.quizcadia.invite.Invites invites,
-			com.fazeel.quizcadia.board.BoardCache cache) {
+			CountryCup cup, Invites invites,
+			BoardCache cache) {
 		this.cache = cache;
 		this.boards = boards;
 		this.names = names;
@@ -59,30 +66,32 @@ public class BoardController {
 	/** The caller's invite code, how many friends joined with it, and their streak shields. */
 	@GetMapping("/invites/me")
 	public InviteView invites() {
-		int me = com.fazeel.quizcadia.auth.Callers.currentUserId();
-		return new InviteView(com.fazeel.quizcadia.invite.Invites.code(me), invites.invited(me).size(), invites.shields(me));
+		int me = Callers.currentUserId();
+		return new InviteView(Invites.code(me), invites.invited(me).size(), invites.shields(me));
 	}
 
 	/** This week's Country Cup, with the caller's country's place. */
 	@GetMapping("/cup")
-	public com.fazeel.quizcadia.board.CountryCup.CupView cup() {
+	public CountryCup.CupView cup() {
 		return NameMask.cup(cup.view(Callers.currentUserId()), Callers.isAdmin());
 	}
 
+	/** Countries ranked by the XP their players earned in the period (day, week or all time). */
 	@GetMapping("/leaderboards/countries")
-	public com.fazeel.quizcadia.board.LeaderboardService.CountryBoard countries(@RequestParam(defaultValue = "WEEK") Period period) {
+	public LeaderboardService.CountryBoard countries(@RequestParam(defaultValue = "WEEK") Period period) {
 		return boards.countries(period, clock.instant());
 	}
 
+	/** A player's country (ISO code), as they set it on the World page. */
 	public record MyCountry(String country) {
 	}
 
 	/** Sets (or clears, with null) the caller's country for flags and the countries leaderboard. */
-	@org.springframework.web.bind.annotation.PostMapping("/me")
-	@org.springframework.web.bind.annotation.ResponseStatus(org.springframework.http.HttpStatus.NO_CONTENT)
-	public void me(@org.springframework.web.bind.annotation.RequestBody MyCountry body) {
+	@PostMapping("/me")
+	@ResponseStatus(HttpStatus.NO_CONTENT)
+	public void me(@RequestBody MyCountry body) {
 		names.country(Callers.currentUserId(), Callers.currentUserName(), body == null ? null : body.country());
-		cache.evict(com.fazeel.quizcadia.board.CountryCup.KEY); // the cup page reloads right after "Join the cup
+		cache.evict(CountryCup.KEY); // the cup page reloads right after "Join the cup
 	}
 
 	/** A day's challenge ranking; today (UTC) by default. */

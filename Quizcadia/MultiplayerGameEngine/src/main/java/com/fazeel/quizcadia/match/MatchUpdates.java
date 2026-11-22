@@ -24,6 +24,7 @@ public class MatchUpdates {
 		});
 	}
 
+	/** Wakes everyone waiting for news about this match (each waiter runs once). */
 	public void changed(String matchId) {
 		Set<Runnable> set = waiting.remove(matchId);
 		if (set != null) {

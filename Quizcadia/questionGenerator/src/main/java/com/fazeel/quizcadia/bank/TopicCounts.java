@@ -23,6 +23,7 @@ public final class TopicCounts {
 	private TopicCounts() {
 	}
 
+	/** Every topic's question count, in one aggregation over the categories. */
 	public static List<TopicCount> read(MongoOperations mongo) {
 		var counts = newAggregation(
 				unwind("topic"),

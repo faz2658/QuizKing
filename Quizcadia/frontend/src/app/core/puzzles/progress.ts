@@ -1,7 +1,9 @@
 import { Injectable, computed, signal } from '@angular/core';
 import { puzzleDay } from './logic';
 
+/** The four daily puzzles. */
 export type PuzzleKind = 'clue' | 'vault' | 'four' | 'teaser';
+/** The puzzles in the order the page shows them. */
 export const PUZZLE_KINDS: PuzzleKind[] = ['clue', 'vault', 'four', 'teaser'];
 
 /** How a player did on one of today's puzzles. `state` lets a half-played puzzle resume after a reload. */
@@ -39,6 +41,7 @@ export class PuzzleProgress {
   });
   readonly doneCount = computed(() => PUZZLE_KINDS.filter((k) => this.results()[k]?.done).length);
 
+  /** Today's result for one puzzle, if the player started it. */
   result(kind: PuzzleKind): PuzzleResult | undefined {
     return this.results()[kind];
   }
@@ -75,6 +78,7 @@ export class PuzzleProgress {
   }
 }
 
+/** The day before a yyyy-mm-dd date. */
 export function previousDay(day: string): string {
   return new Date(Date.parse(day + 'T00:00:00Z') - 86_400_000).toISOString().slice(0, 10);
 }

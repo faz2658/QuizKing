@@ -11,6 +11,10 @@ public final class QuestionRules {
 	private QuestionRules() {
 	}
 
+	/**
+	 * Throws InvalidQuestionException unless the question has a text, a level 1-3, two or more different options,
+	 * a correct answer among them and a short enough explanation.
+	 */
 	public static void validate(Questions q) {
 		if (q == null || blank(q.getQuestionStem())) {
 			throw new InvalidQuestionException("A question needs a question text");

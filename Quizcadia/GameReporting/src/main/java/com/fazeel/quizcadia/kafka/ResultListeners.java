@@ -13,6 +13,7 @@ import com.fazeel.quizcadia.domain.UserRegistered;
 import com.fazeel.quizcadia.invite.Invites;
 import com.fazeel.quizcadia.report.ReportService;
 
+/** Kafka in: finished games from the three engines, and new accounts (for invite rewards). */
 @Component
 @ConditionalOnProperty(name = "quizcadia.kafka.enabled", havingValue = "true", matchIfMissing = true)
 public class ResultListeners {
@@ -27,6 +28,7 @@ public class ResultListeners {
 		this.invites = invites;
 	}
 
+	/** A finished solo game (timed, daily, challenge, duel or custom): store its report. */
 	@KafkaListener(topics = "${quizcadia.topics.single-player-result}", properties = {
 			"spring.json.value.default.type=com.fazeel.quizcadia.domain.SinglePlayerResult" })
 	public void single(SinglePlayerResult r) {
@@ -34,6 +36,7 @@ public class ResultListeners {
 		service.record(r);
 	}
 
+	/** A finished multiplayer match: store one report per player. */
 	@KafkaListener(topics = "${quizcadia.topics.multiplayer-result}", properties = {
 			"spring.json.value.default.type=com.fazeel.quizcadia.domain.MultiPlayerResult" })
 	public void multi(MultiPlayerResult r) {
@@ -48,6 +51,7 @@ public class ResultListeners {
 		invites.registered(e);
 	}
 
+	/** A finished adaptive session: store its report. */
 	@KafkaListener(topics = "${quizcadia.topics.adaptive-result}", properties = {
 			"spring.json.value.default.type=com.fazeel.quizcadia.domain.AdaptiveResult" })
 	public void adaptive(AdaptiveResult r) {

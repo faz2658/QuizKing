@@ -48,6 +48,7 @@ export class InstallPrompt {
     });
   }
 
+  /** Shows the browser's install prompt, or the manual steps where the browser has none. */
   async install(): Promise<void> {
     const e = this.deferred;
     if (!e) {
@@ -63,6 +64,7 @@ export class InstallPrompt {
     }
   }
 
+  /** Closes the manual install steps. */
   closeHelp(): void {
     this.help.set(null);
   }

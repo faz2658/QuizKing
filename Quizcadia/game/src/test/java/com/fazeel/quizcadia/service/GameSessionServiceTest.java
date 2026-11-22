@@ -11,8 +11,11 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.time.Clock;
+import java.time.Duration;
 import java.time.Instant;
+import java.time.ZoneId;
 import java.time.ZoneOffset;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -23,23 +26,29 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.ArgumentCaptor;
+import org.mockito.ArgumentMatchers;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 
 import com.fazeel.quizcadia.domain.Game;
+import com.fazeel.quizcadia.domain.GameQuestionLevel;
 import com.fazeel.quizcadia.domain.GameRequest;
+import com.fazeel.quizcadia.domain.Questions;
 import com.fazeel.quizcadia.domain.SinglePlayerResult;
+import com.fazeel.quizcadia.domain.Topic;
 import com.fazeel.quizcadia.kafka.GameEvents;
 import com.fazeel.quizcadia.repository.GameRepository;
 import com.fazeel.quizcadia.repository.GameSessionRepository;
 import com.fazeel.quizcadia.repository.SeenQuestionRepository;
-import com.fazeel.quizcadia.session.SeenQuestion;
+import com.fazeel.quizcadia.session.Difficulty;
 import com.fazeel.quizcadia.session.GameSession;
 import com.fazeel.quizcadia.session.QuizBuilder;
 import com.fazeel.quizcadia.session.QuizRuleException;
+import com.fazeel.quizcadia.session.SeenQuestion;
 import com.fazeel.quizcadia.session.SessionQuestion;
+import com.fazeel.quizcadia.session.SessionVariant;
 
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)
@@ -77,10 +86,10 @@ class GameSessionServiceTest {
 	void aGameThatReferencesItsTopicIsPlayedWithTheTopicsQuestions() {
 		service = new GameSessionService(games, sessions, events, seen, new QuizBuilder(new Random(1)), clock,
 				new TopicPools(id -> id == 7 ? List.of(question(1, 1, "a", "a", "b"), question(2, 1, "c", "c", "d")) : List.of(),
-						clock, java.time.Duration.ofMinutes(10)));
+						clock, Duration.ofMinutes(10)));
 		Game g = game(5, null);
 		g.setQuestions(null);
-		g.setTopic(new com.fazeel.quizcadia.domain.Topic(7, "History", null, null));
+		g.setTopic(new Topic(7, "History", null, null));
 		when(games.findById(5)).thenReturn(Optional.of(g));
 
 		GameSession s = service.start(5, 42);
@@ -156,19 +165,19 @@ class GameSessionServiceTest {
 
 	@Test
 	void playersGetQuestionsTheyHaveNotSeenAndTheSessionIsRemembered() {
-		Game g = game(5, new com.fazeel.quizcadia.domain.GameQuestionLevel(0, 2, 0, 0), question(1, 1, "a", "a", "b"),
+		Game g = game(5, new GameQuestionLevel(0, 2, 0, 0), question(1, 1, "a", "a", "b"),
 				question(2, 1, "a", "a", "b"), question(3, 1, "a", "a", "b"), question(4, 1, "a", "a", "b"));
 		when(games.findById(5)).thenReturn(Optional.of(g));
-		when(seen.findByUserIdAndQuestionIdIn(org.mockito.ArgumentMatchers.eq(42), any())).thenReturn(java.util.List.of(
+		when(seen.findByUserIdAndQuestionIdIn(ArgumentMatchers.eq(42), any())).thenReturn(List.of(
 				SeenQuestion.of(42, 1, clock.instant()), SeenQuestion.of(42, 2, clock.instant())));
 
 		GameSession s = service.start(5, 42);
 
 		assertThat(s.getQuestions()).extracting(SessionQuestion::getQuestionId).containsExactlyInAnyOrder(3, 4);
-		verify(seen).saveAll(org.mockito.ArgumentMatchers.argThat((Iterable<SeenQuestion> it) -> {
-			java.util.List<Integer> ids = new java.util.ArrayList<>();
+		verify(seen).saveAll(ArgumentMatchers.argThat((Iterable<SeenQuestion> it) -> {
+			List<Integer> ids = new ArrayList<>();
 			it.forEach(x -> ids.add(x.questionId()));
-			return ids.containsAll(java.util.List.of(3, 4)) && ids.size() == 2;
+			return ids.containsAll(List.of(3, 4)) && ids.size() == 2;
 		}));
 	}
 
@@ -195,12 +204,12 @@ class GameSessionServiceTest {
 		}
 
 		@Override
-		public java.time.ZoneId getZone() {
+		public ZoneId getZone() {
 			return ZoneOffset.UTC;
 		}
 
 		@Override
-		public Clock withZone(java.time.ZoneId zone) {
+		public Clock withZone(ZoneId zone) {
 			return this;
 		}
 
@@ -211,15 +220,15 @@ class GameSessionServiceTest {
 	}
 
 	static Game topic(int id, String name, int firstQuestion) {
-		java.util.List<com.fazeel.quizcadia.domain.Questions> qs = new java.util.ArrayList<>();
+		List<Questions> qs = new ArrayList<>();
 		for (int level = 1; level <= 3; level++) {
 			for (int i = 0; i < 4; i++) {
 				int qid = firstQuestion + level * 10 + i;
 				qs.add(question(qid, level, "A" + qid, "A" + qid, "B" + qid, "C" + qid, "D" + qid));
 			}
 		}
-		Game g = game(id, null, qs.toArray(com.fazeel.quizcadia.domain.Questions[]::new));
-		g.setTopic(new com.fazeel.quizcadia.domain.Topic(id, name, null, java.util.List.of()));
+		Game g = game(id, null, qs.toArray(Questions[]::new));
+		g.setTopic(new Topic(id, name, null, List.of()));
 		return g;
 	}
 
@@ -228,24 +237,24 @@ class GameSessionServiceTest {
 		when(games.findById(1)).thenReturn(Optional.of(topic(1, "Art", 100)));
 		when(games.findById(2)).thenReturn(Optional.of(topic(2, "History", 200)));
 
-		GameSession hard = service.startCustom(java.util.List.of(1, 2), GameSessionService.CustomDifficulty.ADVANCED, 6, 42, "Ada");
-		assertThat(hard.getQuestions()).hasSize(6).allMatch(q -> q.getDifficulty() == com.fazeel.quizcadia.session.Difficulty.ADVANCED);
+		GameSession hard = service.startCustom(List.of(1, 2), GameSessionService.CustomDifficulty.ADVANCED, 6, 42, "Ada");
+		assertThat(hard.getQuestions()).hasSize(6).allMatch(q -> q.getDifficulty() == Difficulty.ADVANCED);
 		assertThat(hard.getQuestions()).extracting(q -> q.getQuestionId() / 100).contains(1, 2); // both topics
-		assertThat(hard.getVariant()).isEqualTo(com.fazeel.quizcadia.session.SessionVariant.CUSTOM);
+		assertThat(hard.getVariant()).isEqualTo(SessionVariant.CUSTOM);
 		assertThat(hard.getGameName()).isEqualTo("Custom quiz: Art, History");
 
-		GameSession mixed = service.startCustom(java.util.List.of(1), GameSessionService.CustomDifficulty.MIXED, 10, 42, "Ada");
+		GameSession mixed = service.startCustom(List.of(1), GameSessionService.CustomDifficulty.MIXED, 10, 42, "Ada");
 		assertThat(mixed.getQuestions()).extracting(q -> q.getDifficulty().level()).containsExactly(1, 1, 1, 1, 2, 2, 2, 3, 3, 3);
 	}
 
 	@Test
 	void customQuizLimits() {
-		assertThatThrownBy(() -> service.startCustom(java.util.List.of(), GameSessionService.CustomDifficulty.MIXED, 10, 42, "Ada"))
+		assertThatThrownBy(() -> service.startCustom(List.of(), GameSessionService.CustomDifficulty.MIXED, 10, 42, "Ada"))
 				.isInstanceOf(QuizRuleException.class);
-		assertThatThrownBy(() -> service.startCustom(java.util.List.of(1), GameSessionService.CustomDifficulty.MIXED, 30, 42, "Ada"))
+		assertThatThrownBy(() -> service.startCustom(List.of(1), GameSessionService.CustomDifficulty.MIXED, 30, 42, "Ada"))
 				.hasMessageContaining("5 to 20");
 		when(games.findById(9)).thenReturn(Optional.empty());
-		assertThatThrownBy(() -> service.startCustom(java.util.List.of(9), GameSessionService.CustomDifficulty.EASY, 5, 42, "Ada"))
+		assertThatThrownBy(() -> service.startCustom(List.of(9), GameSessionService.CustomDifficulty.EASY, 5, 42, "Ada"))
 				.isInstanceOf(GameNotReadyException.class);
 	}
 }

@@ -14,6 +14,7 @@ export interface RunnerQuestion {
   timeLimitSeconds?: number;
 }
 
+/** What the player sees after answering or running out of time. */
 export interface Feedback {
   correct: boolean;
   timedOut: boolean;
@@ -38,8 +39,10 @@ export interface QuizAdapter<S> {
   shown?(session: S, questionId: number): Observable<unknown>;
 }
 
+/** Where the runner is: loading, asking, showing feedback, finished, or failed. */
 export type Phase = 'loading' | 'question' | 'feedback' | 'done' | 'error';
 
+/** The runner's timings; tests pass a fake clock and short delays. */
 export interface RunnerTiming {
   /** How long feedback on a wrong answer (or a timeout) stays before the next question: time to read the right one. */
   feedbackMs: number;
@@ -54,6 +57,7 @@ export interface RunnerTiming {
 /** Extra time feedback stays on screen when there is an explanation to read. */
 export const EXPLANATION_EXTRA_MS = 2600;
 
+/** The timings used in the app. */
 export const DEFAULT_TIMING: RunnerTiming = { feedbackMs: 1400, correctMs: 700, expiryGraceMs: 2300, tickMs: 200, now: () => Date.now() };
 
 /**
@@ -101,12 +105,14 @@ export class QuizRunner<S> {
     destroyRef?.onDestroy(() => this.stop());
   }
 
+  /** Starts (or resumes) the game and shows its current question. */
   start(): void {
     this._phase.set('loading');
     this._error.set(null);
     this.subs.add(this.adapter.start().subscribe({ next: (s) => this.show(s), error: (e) => this.fail(e) }));
   }
 
+  /** Answers the current question with an option; ignored unless a question is waiting for an answer. */
   choose(option: string): void {
     const s = this._session();
     const q = this._question();
@@ -165,6 +171,7 @@ export class QuizRunner<S> {
     go?.();
   }
 
+  /** Stops the timers and requests; called when the page goes away. */
   stop(): void {
     this.stopTicker();
     if (this.pending) {

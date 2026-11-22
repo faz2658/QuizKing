@@ -3,22 +3,16 @@ package com.fazeel.quizcadia.domain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonCreator;
 
+/** The kind of game: 1 solo (timed), 2 multiplayer (fastest finger). */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GameType {
 	private int gameTypeId;
 	private String gameTypeName;
 	private String gameTypeDescription;
-	/*private String singlePlayerTimeBasedGame;
-	private String multiPlayerFastestFingerFirst;
-	private String singlePlayerAdaptiveGame;
-	*/
 	@JsonCreator
 	public GameType() {
-		super();
-		
 	}
 	public GameType(int gameTypeId, String gameTypeName, String gameTypeDescription) {
-		super();
 		this.gameTypeId = gameTypeId;
 		this.gameTypeName = gameTypeName;
 		this.gameTypeDescription = gameTypeDescription;
@@ -46,7 +40,4 @@ public class GameType {
 		return "GameType [gameTypeId=" + gameTypeId + ", gameTypeName=" + gameTypeName + ", gameTypeDescription="
 				+ gameTypeDescription + "]";
 	}
-
-	
-	
 }

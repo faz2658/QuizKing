@@ -2,6 +2,7 @@ package com.fazeel.quizcadia.domain;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 
+/** How many easy, medium and advanced questions a game asks. */
 public class GameQuestionLevel {
 
 	private int gqLevelId;
@@ -42,7 +43,6 @@ public class GameQuestionLevel {
 	}
 
 	public GameQuestionLevel(int gqLevelId, int easyLevel, int mediumLevel, int advancedLevel) {
-		super();
 		this.gqLevelId = gqLevelId;
 		this.easyLevel = easyLevel;
 		this.mediumLevel = mediumLevel;

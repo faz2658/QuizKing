@@ -6,6 +6,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.header;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import java.util.List;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
@@ -107,9 +108,9 @@ class IdempotencyFilterTest {
 
 	@Test
 	void eachPlayerHasTheirOwnKeys() throws Exception {
-		SecurityContextHolder.getContext().setAuthentication(UsernamePasswordAuthenticationToken.authenticated("5", null, java.util.List.of()));
+		SecurityContextHolder.getContext().setAuthentication(UsernamePasswordAuthenticationToken.authenticated("5", null, List.of()));
 		send("/answers", "key-00000004", "{\"option\":\"Lima\"}");
-		SecurityContextHolder.getContext().setAuthentication(UsernamePasswordAuthenticationToken.authenticated("6", null, java.util.List.of()));
+		SecurityContextHolder.getContext().setAuthentication(UsernamePasswordAuthenticationToken.authenticated("6", null, List.of()));
 		send("/answers", "key-00000004", "{\"option\":\"Lima\"}");
 		assertThat(calls).hasValue(2);
 	}

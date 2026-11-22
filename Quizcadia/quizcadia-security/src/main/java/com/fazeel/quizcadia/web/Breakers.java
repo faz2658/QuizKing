@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.ObjectProvider;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.support.StaticListableBeanFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.HttpServerErrorException;
 import org.springframework.web.client.ResourceAccessException;
@@ -72,7 +73,7 @@ public class Breakers {
 
 	/** Without metrics, for tests and code outside Spring. */
 	public Breakers() {
-		this(new org.springframework.beans.factory.support.StaticListableBeanFactory()
+		this(new StaticListableBeanFactory()
 				.getBeanProvider(MeterRegistry.class));
 	}
 

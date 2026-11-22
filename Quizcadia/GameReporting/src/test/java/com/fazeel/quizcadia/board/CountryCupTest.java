@@ -10,6 +10,7 @@ import java.time.Clock;
 import java.time.Instant;
 import java.time.ZoneOffset;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -22,8 +23,8 @@ import org.mockito.junit.jupiter.MockitoSettings;
 import org.mockito.quality.Strictness;
 
 import com.fazeel.quizcadia.progress.Xp;
-import com.fazeel.quizcadia.report.GameReport.GameMode;
 import com.fazeel.quizcadia.report.GameReport;
+import com.fazeel.quizcadia.report.GameReport.GameMode;
 import com.fazeel.quizcadia.report.GameReportRepository;
 import com.fazeel.quizcadia.report.PlayerNames;
 
@@ -50,7 +51,7 @@ class CountryCupTest {
 				.thenReturn(lastWeek);
 		when(names.countries(anyCollection())).thenAnswer(i -> {
 			Map<Integer, String> out = new HashMap<>();
-			for (Object id : (java.util.Collection<?>) i.getArgument(0)) {
+			for (Object id : (Collection<?>) i.getArgument(0)) {
 				if (countries.containsKey(id)) out.put((Integer) id, countries.get(id));
 			}
 			return out;

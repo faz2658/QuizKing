@@ -1,6 +1,7 @@
 package com.fazeel.quizcadia.ai;
 
 import java.time.Clock;
+import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
@@ -39,10 +40,16 @@ public class DraftService {
 		this.clock = clock;
 	}
 
+	/** Whether a question model is configured. */
 	public boolean available() {
 		return model.available();
 	}
 
+	/**
+	 * Asks the model for up to count (1-20) questions of one level for a topic, trying up to three times per
+	 * question. Replies in the wrong format, failing the question rules, or repeating a question already in the
+	 * topic or among its drafts are counted and skipped; the rest are saved as pending drafts.
+	 */
 	public GenerationResult generate(int categoryId, String topicName, int level, boolean trueFalse, int count) {
 		if (!model.available()) {
 			throw new AiUnavailableException("No question model is configured (set AI_MODEL_URL)");
@@ -65,7 +72,7 @@ public class DraftService {
 		int created = 0;
 		int invalid = 0;
 		int duplicates = 0;
-		List<DraftQuestion> out = new java.util.ArrayList<>();
+		List<DraftQuestion> out = new ArrayList<>();
 		for (int attempt = 0; attempt < count * ATTEMPTS_PER_QUESTION && created < count; attempt++) {
 			var reply = model.write(topicLabel, LEVELS[level - 1], trueFalse ? "true/false" : "multiple choice");
 			if (reply.isEmpty()) {
@@ -97,6 +104,7 @@ public class DraftService {
 		return new GenerationResult(count, created, invalid, duplicates, out);
 	}
 
+	/** Drafts waiting for review, newest first. */
 	public List<DraftQuestion> pending() {
 		return drafts.findByStatusOrderByCreatedAtDesc(DraftQuestion.Status.PENDING);
 	}
@@ -114,6 +122,7 @@ public class DraftService {
 		return added;
 	}
 
+	/** Marks a pending draft rejected; it never reaches the bank. */
 	public void reject(String draftId) {
 		DraftQuestion d = pendingDraft(draftId);
 		drafts.save(d.reviewed(DraftQuestion.Status.REJECTED, clock.instant(), d.question()));
@@ -150,6 +159,7 @@ public class DraftService {
 		return stem == null ? "" : stem.toLowerCase(Locale.ROOT).replaceAll("[^\\p{L}\\p{N}]+", " ").trim();
 	}
 
+	/** How a generate call went: how many were asked for and created, and why the others were dropped. */
 	public record GenerationResult(int requested, int created, int invalidReplies, int duplicates,
 			List<DraftQuestion> drafts) {
 	}

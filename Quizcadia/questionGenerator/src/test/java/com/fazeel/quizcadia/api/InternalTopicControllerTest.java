@@ -14,10 +14,12 @@ import org.springframework.context.annotation.Import;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
+import com.fazeel.quizcadia.ai.DraftService;
 import com.fazeel.quizcadia.bank.NotFoundException;
 import com.fazeel.quizcadia.bank.QuestionBankService;
 import com.fazeel.quizcadia.config.SecurityConfig;
 import com.fazeel.quizcadia.domain.Questions;
+import com.fazeel.quizcadia.opentdb.OpenTriviaImporter;
 
 /** The engines load a topic's questions here, from inside the Docker network, without a token. */
 @Import(SecurityConfig.class)
@@ -32,10 +34,10 @@ class InternalTopicControllerTest {
 
 	// declared by the application class, so every web test mocks them
 	@MockitoBean
-	com.fazeel.quizcadia.opentdb.OpenTriviaImporter importer;
+	OpenTriviaImporter importer;
 
 	@MockitoBean
-	com.fazeel.quizcadia.ai.DraftService drafts;
+	DraftService drafts;
 
 	@Test
 	void servesATopicsQuestionsWithTheirCountry() throws Exception {

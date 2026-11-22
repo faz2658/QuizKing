@@ -20,6 +20,10 @@ public final class ApiSecurity {
 	private ApiSecurity() {
 	}
 
+	/**
+	 * The service's security filter chain: no CSRF or sessions, JWT bearer tokens, diagnostics only from inside
+	 * the container, Actuator open (nginx keeps it off the public site), then the service's own rules.
+	 */
 	public static SecurityFilterChain build(HttpSecurity http,
 			Customizer<AuthorizeHttpRequestsConfigurer<HttpSecurity>.AuthorizationManagerRequestMatcherRegistry> rules)
 			throws Exception {

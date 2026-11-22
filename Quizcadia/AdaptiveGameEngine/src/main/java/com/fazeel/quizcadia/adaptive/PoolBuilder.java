@@ -1,13 +1,14 @@
 package com.fazeel.quizcadia.adaptive;
 
+import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
+import java.util.Locale;
+import java.util.Map;
 import java.util.Objects;
 import java.util.Optional;
-import java.time.Instant;
-import java.util.Comparator;
-import java.util.Map;
 import java.util.TreeMap;
 import java.util.random.RandomGenerator;
 import java.util.stream.Stream;
@@ -57,7 +58,7 @@ public class PoolBuilder {
 		if (options.size() < 2 || correct == null) {
 			return Optional.empty();
 		}
-		if (options.size() == 2 && options.stream().map(o -> o.toLowerCase(java.util.Locale.ROOT)).sorted().toList()
+		if (options.size() == 2 && options.stream().map(o -> o.toLowerCase(Locale.ROOT)).sorted().toList()
 				.equals(List.of("false", "true"))) {
 			options = new ArrayList<>(List.of("True", "False")); // keep the natural order
 		} else {

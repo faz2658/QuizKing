@@ -7,11 +7,11 @@ import java.util.Date;
 import java.util.List;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-/*Model class for Single Player Game*/
-
 /**
- * @author sushmita
+ * A solo game in the catalog: its topic, how many questions of each level it asks, and the time and points per
+ * level.
  *
+ * @author sushmita
  */
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "game")
@@ -44,35 +44,15 @@ public class Game {
 		this.questionCount = questionCount;
 	}
 
-	/**
-	 * Default Constructor
-	 */
+	/** For Jackson and Spring Data, which fill in the fields. */
 	@JsonCreator
 	public Game() {
 	}
 
-	/**Parameterized Constructor
-	 * 
-	 * @param gameId
-	 * @param gameName
-	 * @param gameImage
-	 * @param createdBy
-	 * @param createdOn
-	 * @param gameType
-	 * @param gameDescription
-	 * @param gameRules
-	 * @param categoryId
-	 * @param userId
-	 * @param questionLevels
-	 * @param questionTime
-	 * @param questionScore
-	 * @param topic
-	 * @param questions
-	 */
+	/** Every field at once. */
 	public Game(int gameId, String gameName, String gameImage, String createdBy, Date createdOn, GameType gameType,
 			String gameDescription, String gameRules, int categoryId, int userId, GameQuestionLevel questionLevels,
 			GameQuestionTime questionTime, GameQuestionScore questionScore, Topic topic, List<Questions> questions) {
-		super();
 		this.gameId = gameId;
 		this.gameName = gameName;
 		this.gameImage = gameImage;
@@ -90,7 +70,6 @@ public class Game {
 		this.questions = questions;
 	}
 
-	
 	/**
 	 * Getters & Setters
 	 */
@@ -214,7 +193,6 @@ public class Game {
 		this.questions = questions;
 	}
 
-	
 	/* toString() method
 	 * (non-Javadoc)
 	 * @see java.lang.Object#toString()
@@ -227,11 +205,4 @@ public class Game {
 				+ ", questionLevels=" + questionLevels + ", questionTime=" + questionTime + ", questionScore="
 				+ questionScore + ", topic=" + topic + ", questions=" + questions + "]";
 	}
-
-	
-	
-	
-	
-
-	
 }

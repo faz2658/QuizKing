@@ -1,6 +1,8 @@
 package com.fazeel.quizcadia.api;
 
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ProblemDetail;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,6 +12,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.fazeel.quizcadia.auth.Callers;
+import com.fazeel.quizcadia.bank.InvalidQuestionException;
+import com.fazeel.quizcadia.bank.NotFoundException;
 import com.fazeel.quizcadia.domain.Questions;
 import com.fazeel.quizcadia.feedback.FeedbackService;
 import com.fazeel.quizcadia.feedback.FeedbackService.Review;
@@ -37,39 +41,44 @@ public class FeedbackController {
 			@Size(max = 200) String note) {
 	}
 
+	/** Whether this feedback retired the question. */
 	public record FeedbackResult(boolean retired) {
 	}
 
+	/** Records a player's rating or flag (guests too; only account votes can retire a question). */
 	@PostMapping
 	public FeedbackResult give(@Valid @RequestBody FeedbackRequest r) {
 		return new FeedbackResult(feedback.give(Callers.currentUserId(), Callers.isAccount(), r.questionId(), r.rating(),
 				r.flag(), r.note()));
 	}
 
+	/** The admin review list: disliked or flagged questions, and the retired ones. */
 	@GetMapping
 	public Review review() {
 		return feedback.review();
 	}
 
+	/** Clears a question's feedback after the admin checked it. */
 	@PostMapping("/{questionId}/dismiss")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void dismiss(@PathVariable int questionId) {
 		feedback.dismiss(questionId);
 	}
 
+	/** Puts a retired question back in its topic. */
 	@PostMapping("/{questionId}/restore")
 	public Questions restore(@PathVariable int questionId) {
 		return feedback.restore(questionId);
 	}
 
-	@org.springframework.web.bind.annotation.ExceptionHandler(com.fazeel.quizcadia.bank.NotFoundException.class)
-	org.springframework.http.ProblemDetail notFound(RuntimeException e) {
-		return org.springframework.http.ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND, e.getMessage());
+	@ExceptionHandler(NotFoundException.class)
+	ProblemDetail notFound(RuntimeException e) {
+		return ProblemDetail.forStatusAndDetail(HttpStatus.NOT_FOUND, e.getMessage());
 	}
 
-	@org.springframework.web.bind.annotation.ExceptionHandler({ IllegalArgumentException.class,
-			com.fazeel.quizcadia.bank.InvalidQuestionException.class })
-	org.springframework.http.ProblemDetail invalid(RuntimeException e) {
-		return org.springframework.http.ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, e.getMessage());
+	@ExceptionHandler({ IllegalArgumentException.class,
+			InvalidQuestionException.class })
+	ProblemDetail invalid(RuntimeException e) {
+		return ProblemDetail.forStatusAndDetail(HttpStatus.BAD_REQUEST, e.getMessage());
 	}
 }

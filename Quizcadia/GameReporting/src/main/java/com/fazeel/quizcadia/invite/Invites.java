@@ -28,6 +28,10 @@ public class Invites {
 		this.clock = clock;
 	}
 
+	/**
+	 * A new account: when it came from a friend's invite (not the player's own), record the referral once, which
+	 * gives both a streak shield.
+	 */
 	public void registered(UserRegistered e) {
 		if (e.referredBy() == null || e.referredBy() <= 0 || e.referredBy() == e.userId()) {
 			return;

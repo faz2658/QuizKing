@@ -44,6 +44,7 @@ public class RoomController {
 		}
 	}
 
+	/** Opens a room hosted by the caller: a private room, a party room for a big screen, or a live room quiz. */
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public RoomStatus create(@Valid @RequestBody CreateRoom request) {
@@ -53,22 +54,26 @@ public class RoomController {
 		return rooms.create(request.gameId(), Callers.currentUserId(), Callers.currentUserName(), request.party());
 	}
 
+	/** The room with this code (anyone signed in may look before joining). */
 	@GetMapping("/{code}")
 	public RoomStatus status(@PathVariable String code) {
 		return rooms.status(code);
 	}
 
+	/** Adds the caller to the room (joining twice changes nothing; the party host never becomes a player). */
 	@PostMapping("/{code}/players")
 	public RoomStatus join(@PathVariable String code) {
 		return rooms.join(code, Callers.currentUserId(), Callers.currentUserName());
 	}
 
+	/** Takes the caller out of a waiting room; when the host leaves, the room closes. */
 	@DeleteMapping("/{code}/players")
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void leave(@PathVariable String code) {
 		rooms.leave(code, Callers.currentUserId());
 	}
 
+	/** Starts the room's match (host only). */
 	@PostMapping("/{code}/start")
 	public RoomStatus start(@PathVariable String code) {
 		return rooms.start(code, Callers.currentUserId());

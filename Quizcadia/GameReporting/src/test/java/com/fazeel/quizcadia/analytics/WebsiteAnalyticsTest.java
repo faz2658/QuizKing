@@ -18,7 +18,9 @@ import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
 import java.util.Base64;
+import java.util.Map;
 
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.http.HttpMethod;
@@ -27,9 +29,9 @@ import org.springframework.http.MediaType;
 import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.web.client.RestClient;
 
-import com.fazeel.quizcadia.board.BoardCache;
-
 import tools.jackson.databind.ObjectMapper;
+
+import com.fazeel.quizcadia.board.BoardCache;
 
 class WebsiteAnalyticsTest {
 
@@ -46,7 +48,7 @@ class WebsiteAnalyticsTest {
 		String pem = "-----BEGIN PRIVATE KEY-----\n"
 				+ Base64.getMimeEncoder(64, "\n".getBytes()).encodeToString(keys.getPrivate().getEncoded())
 				+ "\n-----END PRIVATE KEY-----\n";
-		keyJson = new ObjectMapper().writeValueAsString(java.util.Map.of("type", "service_account", "client_email",
+		keyJson = new ObjectMapper().writeValueAsString(Map.of("type", "service_account", "client_email",
 				"quiz-king-analytics@quiz-king-514821.iam.gserviceaccount.com", "private_key", pem, "token_uri",
 				"https://oauth2.googleapis.com/token"));
 	}
@@ -63,7 +65,7 @@ class WebsiteAnalyticsTest {
 
 	static void expectToken(MockRestServiceServer server) {
 		server.expect(requestTo("https://oauth2.googleapis.com/token")).andExpect(method(HttpMethod.POST))
-				.andExpect(content().string(org.hamcrest.Matchers.containsString("grant_type=urn")))
+				.andExpect(content().string(Matchers.containsString("grant_type=urn")))
 				.andRespond(withSuccess("{\"access_token\":\"ya29.test\",\"expires_in\":3599}", MediaType.APPLICATION_JSON));
 	}
 

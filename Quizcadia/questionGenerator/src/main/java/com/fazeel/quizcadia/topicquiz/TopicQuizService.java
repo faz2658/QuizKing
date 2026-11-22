@@ -67,10 +67,15 @@ public class TopicQuizService {
 		this.clock = clock;
 	}
 
+	/** Whether a question model is configured. */
 	public boolean available() {
 		return model.available();
 	}
 
+	/**
+	 * Checks the topic (2-60 characters, not blocked), the player's daily limit and the queue, saves the quiz as
+	 * GENERATING and queues the writing.
+	 */
 	public TopicQuiz create(int userId, String name, String topic) {
 		if (!model.available()) {
 			throw new AiUnavailableException("AI quizzes are switched off on this server");
@@ -165,14 +170,17 @@ public class TopicQuizService {
 		return Optional.of(new Question(text, List.copyOf(shuffled), right));
 	}
 
+	/** The quiz; a not-found TopicQuizException if there is none. */
 	public TopicQuiz get(String id) {
 		return quizzes.findById(id).orElseThrow(() -> TopicQuizException.notFound("This quiz doesn't exist (any more)"));
 	}
 
+	/** The player's go at the quiz, if they played it. */
 	public Optional<TopicQuizAttempt> attempt(String quizId, int userId) {
 		return attempts.findById(TopicQuizAttempt.idOf(quizId, userId));
 	}
 
+	/** Every attempt, best score first, earlier finish first on a tie. */
 	public List<TopicQuizAttempt> leaderboard(String quizId) {
 		return attempts.findByQuizIdOrderByScoreDescCompletedAtAsc(quizId);
 	}

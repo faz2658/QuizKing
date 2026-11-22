@@ -17,6 +17,7 @@ import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
 
+import com.fazeel.quizcadia.analytics.WebsiteAnalytics;
 import com.fazeel.quizcadia.config.SecurityConfig;
 
 /** Retention covers every player, so only admins may read it. */
@@ -31,7 +32,7 @@ class AdminStatsControllerTest {
 	ActivityStats stats;
 
 	@MockitoBean
-	com.fazeel.quizcadia.analytics.WebsiteAnalytics analytics;
+	WebsiteAnalytics analytics;
 
 	@Test
 	void adminsSeeRetentionAndTheWeeksAreClamped() throws Exception {

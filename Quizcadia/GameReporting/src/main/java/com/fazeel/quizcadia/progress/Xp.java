@@ -24,6 +24,11 @@ public final class Xp {
 	private Xp() {
 	}
 
+	/**
+	 * XP for one finished game: a base for playing and more per right answer, plus by mode. Solo: a perfect game
+	 * (every answer right, at least 5 questions), playing the Daily Challenge, winning a challenge or an Arena round.
+	 * Multiplayer: winning a match of two or more. Adaptive: each level reached above easy.
+	 */
 	public static int of(GameReport r) {
 		int xp = PER_GAME + PER_CORRECT * r.correctAnswers();
 		switch (r.mode()) {
@@ -70,6 +75,7 @@ public final class Xp {
 		return 50 * level * (level - 1);
 	}
 
+	/** The level a total of XP reaches. */
 	public static int level(int xp) {
 		int level = 1;
 		while (forLevel(level + 1) <= xp) {

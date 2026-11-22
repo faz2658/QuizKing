@@ -1,8 +1,10 @@
 package com.fazeel.quizcadia.recommend;
 
+/** A ranked game and the main reason it was picked. */
 public record Recommendation(int gameId, String gameName, String gameImage, int categoryId, GameMode mode,
 		Reason reason, double score) {
 
+	/** Why a game is recommended. */
 	public enum Reason {
 		/** In a category the user picked. */
 		FAVORITE_CATEGORY,

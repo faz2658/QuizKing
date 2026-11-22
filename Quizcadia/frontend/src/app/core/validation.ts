@@ -1,4 +1,4 @@
-import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
+import { AbstractControl, ValidatorFn } from '@angular/forms';
 
 /*
  * What players may type when they sign up, sign in or reset a password. The login service checks the same
@@ -6,17 +6,22 @@ import { AbstractControl, ValidationErrors, ValidatorFn } from '@angular/forms';
  * so keep the two identical. Each validator returns at most one error, whose value is the message to show.
  */
 
+/** Longest player name, as the login and user services allow. */
 export const NAME_MAX = 60;
 /** Letters (any language), numbers, spaces and . ' _ -, starting with a letter or number. */
 export const NAME_PATTERN = /^[\p{L}\p{M}\p{N}][\p{L}\p{M}\p{N} .'_-]*$/u;
+/** Longest email address. */
 export const EMAIL_MAX = 254;
 /** New accounts: something@domain.tld. */
 export const EMAIL_PATTERN = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
 /** Signing in and "forgot password" only check the shape, so older accounts still work. */
 export const EMAIL_LOOSE_PATTERN = /^[^@\s]+@[^@\s]+$/;
+/** Shortest password for a new account. */
 export const PASSWORD_MIN = 8;
+/** Longest password: BCrypt only reads the first 72 bytes. */
 export const PASSWORD_MAX = 72;
 
+/** The form error messages, the same wording as the login service's. */
 export const MESSAGES = {
   nameRequired: 'Enter a name.',
   nameSize: 'The name can be at most 60 characters.',

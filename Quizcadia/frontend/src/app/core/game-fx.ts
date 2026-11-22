@@ -2,6 +2,7 @@ import { Injectable, signal } from '@angular/core';
 
 const STORAGE_KEY = 'quizcadia.fx';
 
+/** Whether games play sounds and vibrate. */
 export interface FxSettings {
   sound: boolean;
   vibration: boolean;
@@ -27,6 +28,7 @@ export class GameFx {
   readonly settings = this._settings.asReadonly();
   private ctx: AudioContext | null = null;
 
+  /** Switches sound or vibration on or off and remembers the choice on this device. */
   toggle(key: keyof FxSettings): void {
     const next = { ...this._settings(), [key]: !this._settings()[key] };
     this._settings.set(next);
@@ -37,6 +39,7 @@ export class GameFx {
     }
   }
 
+  /** Plays a cue's sound and vibration, as far as the settings and the device allow. */
   play(cue: Cue): void {
     const s = this._settings();
     if (s.vibration && VIBRATION[cue] && typeof navigator !== 'undefined' && 'vibrate' in navigator) {

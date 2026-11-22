@@ -118,6 +118,7 @@ public class FeedbackService {
 		return restored;
 	}
 
+	/** Thumbs up, thumbs down and flags among a question's feedback. */
 	record Tally(int ups, int downs, int flags) {
 		static Tally of(List<QuestionFeedback> list, boolean accountsOnly) {
 			int ups = 0;
@@ -135,10 +136,12 @@ public class FeedbackService {
 		}
 	}
 
+	/** A question players disliked or flagged, with the counts, the flag reasons and the latest notes. */
 	public record ReviewItem(int questionId, int categoryId, String topicName, Questions question, int ups, int downs,
 			int flags, Map<FlagReason, Long> reasons, List<String> notes) {
 	}
 
+	/** The admin review page: questions to look at, worst first, and the retired ones, newest first. */
 	public record Review(List<ReviewItem> questions, List<RetiredQuestion> retired) {
 	}
 }

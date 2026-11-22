@@ -16,6 +16,7 @@ import { DailyBoard } from '../ui/daily-board';
 import { QuestionFeedback } from '../ui/question-feedback';
 import { Support } from '../ui/support';
 
+/** A short line for the result screen, by the share of points scored. */
 export function verdict(percentage: number): string {
   if (percentage >= 90) return 'Outstanding!';
   if (percentage >= 70) return 'Great game!';
@@ -24,6 +25,7 @@ export function verdict(percentage: number): string {
   return 'Tough round — try again!';
 }
 
+/** The end-of-game screen with the score, the review and what to play next. */
 @Component({
   selector: 'mv-result',
   imports: [RouterLink, CountUp, DailyBoard, QuestionFeedback, Support],

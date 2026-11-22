@@ -8,6 +8,7 @@ import java.util.concurrent.CompletionException;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Supplier;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -17,13 +18,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class BoardCache {
 
+	/** A computed (or still computing) value and when it stops being reused. */
 	private record Entry(CompletableFuture<Object> value, Instant expires) {
 	}
 
 	private final ConcurrentHashMap<String, Entry> entries = new ConcurrentHashMap<>();
 	private final Clock clock;
 
-	@org.springframework.beans.factory.annotation.Autowired
+	@Autowired
 	public BoardCache(Clock clock) {
 		this.clock = clock;
 	}
@@ -33,6 +35,10 @@ public class BoardCache {
 		this(Clock.systemUTC());
 	}
 
+	/**
+	 * The value for key: the cached one while fresh, else computed once by the first caller while the others wait
+	 * for that same result.
+	 */
 	@SuppressWarnings("unchecked")
 	public <T> T get(String key, Duration ttl, Supplier<T> compute) {
 		Instant now = clock.instant();

@@ -6,6 +6,7 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.fazeel.quizcadia.domain.Category;
 
+/** Categories in MongoDB, each document holding its topics and their questions. */
 public interface CategoryRepository extends MongoRepository<Category, Integer> {
 
 	Optional<Category> findByCategoryNameIgnoreCase(String name);

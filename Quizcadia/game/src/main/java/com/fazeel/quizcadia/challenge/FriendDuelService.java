@@ -5,9 +5,11 @@ import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 import java.util.UUID;
@@ -88,10 +90,12 @@ public class FriendDuelService {
 	/** One player's attempt: {@code session} is null until they start. */
 	public record Attempt(Side side, GameSession session) {
 
+		/** Whether the player has started. */
 		public boolean started() {
 			return session != null;
 		}
 
+		/** Whether the player has finished. */
 		public boolean completed() {
 			return session != null && session.getStatus() == SessionStatus.COMPLETED;
 		}
@@ -104,15 +108,18 @@ public class FriendDuelService {
 	public record Standing(FriendDuel duel, State state, Attempt challenger, Attempt opponent, Integer winnerUserId,
 			boolean tie) {
 
+		/** The given player's attempt, or null for someone not in the challenge. */
 		public Attempt of(int userId) {
 			return duel.isChallenger(userId) ? challenger : duel.isOpponent(userId) ? opponent : null;
 		}
 
+		/** The other player's attempt, or null for someone not in the challenge. */
 		public Attempt against(int userId) {
 			return duel.isChallenger(userId) ? opponent : duel.isOpponent(userId) ? challenger : null;
 		}
 	}
 
+	/** Creates a challenge for a game with playable questions; it waits ANSWER_WITHIN for a friend. */
 	public FriendDuel create(int userId, String name, int gameId, boolean international, String country) {
 		Game game = games.loadGame(gameId, userId);
 		boolean playable = Objects.requireNonNullElse(game.getQuestions(), List.<Questions>of()).stream()
@@ -127,6 +134,7 @@ public class FriendDuelService {
 		return duels.save(duel);
 	}
 
+	/** The challenge; NotFoundException if there is none. */
 	public FriendDuel get(String id) {
 		return duels.findById(id).orElseThrow(() -> new NotFoundException("No challenge " + id));
 	}
@@ -147,7 +155,7 @@ public class FriendDuelService {
 		requireOpen(duel);
 		Game game = games.loadGame(duel.gameId(), userId);
 		String questionsFrom = duel.international() ? QuizBuilder.EVERYWHERE
-				: QuizBuilder.sharedCountry(java.util.Arrays.asList(duel.challenger().country(), country(country)));
+				: QuizBuilder.sharedCountry(Arrays.asList(duel.challenger().country(), country(country)));
 		List<SessionQuestion> questions = quizBuilder.build(game, seenByEither(game, duel.challenger().userId(), userId),
 				questionsFrom);
 		if (questions.isEmpty()) {
@@ -158,6 +166,7 @@ public class FriendDuelService {
 				now.plus(PLAY_WITHIN)));
 	}
 
+	/** Declines an open challenge; declining again is harmless, the challenger can't. */
 	public FriendDuel decline(String id, int userId, String name) {
 		FriendDuel duel = get(id);
 		if (duel.isChallenger(userId)) {
@@ -207,6 +216,7 @@ public class FriendDuelService {
 				PageRequest.of(0, LIST_LIMIT));
 	}
 
+	/** Where the challenge stands now, with the winner once it is finished. */
 	public Standing standing(FriendDuel duel) {
 		Attempt challenger = attempt(duel.challenger());
 		Attempt opponent = duel.opponent() == null ? null : attempt(duel.opponent()); // also whoever declined
@@ -270,7 +280,7 @@ public class FriendDuelService {
 
 	private static String country(String country) {
 		return country == null || !country.trim().matches("[A-Za-z]{2}") ? null
-				: country.trim().toUpperCase(java.util.Locale.ROOT);
+				: country.trim().toUpperCase(Locale.ROOT);
 	}
 
 	private String newId() {

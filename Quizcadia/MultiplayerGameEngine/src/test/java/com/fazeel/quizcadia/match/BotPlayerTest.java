@@ -2,6 +2,7 @@ package com.fazeel.quizcadia.match;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.List;
@@ -32,7 +33,7 @@ class BotPlayerTest {
 		assertThat(m.getStatus()).isEqualTo(MultiplayerMatch.Status.COMPLETED);
 		for (MatchQuestion q : m.getQuestions()) {
 			var botAnswer = q.answerOf(-2).orElseThrow();
-			long ms = java.time.Duration.between(q.getOpenedAt(), botAnswer.answeredAt()).toMillis();
+			long ms = Duration.between(q.getOpenedAt(), botAnswer.answeredAt()).toMillis();
 			assertThat(ms).isBetween(2000L, 8000L);
 		}
 		long right = m.getQuestions().stream().filter(q -> q.answerOf(-2).orElseThrow().correct()).count();
@@ -62,14 +63,14 @@ class BotPlayerTest {
 	@Test
 	void theMatchKnowsWhenItChangesNextByItself() {
 		MultiplayerMatch m = withBot(3);
-		java.time.Instant next = m.nextChangeAt(T0);
+		Instant next = m.nextChangeAt(T0);
 		// the bot answers within the question's time; until then nothing changes on its own
 		assertThat(next).isAfter(T0.plusSeconds(1)).isBefore(T0.plusSeconds(11));
 		assertThat(m.advanceClock(next.minusMillis(1))).isFalse();
 		assertThat(m.advanceClock(next)).isTrue(); // the bot's answer arrives exactly then
 
 		// after that, the next change is later still, and never after the open question closes
-		java.time.Instant after = m.nextChangeAt(next);
+		Instant after = m.nextChangeAt(next);
 		assertThat(after).isAfter(next);
 		MatchQuestion open = m.currentQuestion().orElseThrow();
 		assertThat(after).isBeforeOrEqualTo(open.getOpenedAt().plusSeconds(10).plus(MultiplayerMatch.GRACE));

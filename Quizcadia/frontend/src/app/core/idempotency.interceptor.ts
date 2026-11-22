@@ -1,5 +1,6 @@
 import { HttpInterceptorFn } from '@angular/common/http';
 
+/** The header carrying a write's idempotency key. */
 export const IDEMPOTENCY_HEADER = 'Idempotency-Key';
 const WRITES = new Set(['POST', 'PUT', 'PATCH', 'DELETE']);
 
@@ -16,6 +17,7 @@ export const idempotencyInterceptor: HttpInterceptorFn = (req, next) => {
   return next(req.clone({ setHeaders: { [IDEMPOTENCY_HEADER]: newIdempotencyKey() } }));
 };
 
+/** A random UUID, from crypto.randomUUID where the browser has it. */
 export function newIdempotencyKey(): string {
   if (typeof crypto !== 'undefined' && typeof crypto.randomUUID === 'function') {
     return crypto.randomUUID();

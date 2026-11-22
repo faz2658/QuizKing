@@ -9,6 +9,7 @@ import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
+/** Sign-in sessions behind refresh cookies, stored only as a hash of their token. */
 public interface RefreshSessionRepository extends JpaRepository<RefreshSession, Long> {
 
 	Optional<RefreshSession> findByTokenHash(String tokenHash);

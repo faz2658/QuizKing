@@ -31,6 +31,7 @@ public class GameManagerCatalog implements GameCatalog {
 		this.breaker = breakers.forService("game-manager");
 	}
 
+	/** Games from the game manager whose name starts with the prefix; none when it can't be reached. */
 	@Override
 	public List<GameCard> gamesNamedLike(String prefix) {
 		try {

@@ -1,6 +1,8 @@
 package com.fazeel.quizcadia.push;
 
+import java.io.IOException;
 import java.time.Clock;
+import java.time.DateTimeException;
 import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
@@ -44,6 +46,10 @@ public class StreakReminders {
 		this.clock = clock;
 	}
 
+	/**
+	 * Every 5 minutes (after a minute's wait at start-up): sends the reminders that are due, when reminders are
+	 * switched on.
+	 */
 	@Scheduled(initialDelayString = "PT1M", fixedDelayString = "PT5M")
 	public void run() {
 		PushSender push = sender.getIfAvailable();
@@ -88,7 +94,7 @@ public class StreakReminders {
 					log.warn("Push service answered {} for user {}", r.status(), s.userId());
 				}
 			}
-			catch (java.io.IOException e) {
+			catch (IOException e) {
 				log.warn("Could not reach the push service for user {}: {}", s.userId(), e.getMessage());
 			}
 			catch (InterruptedException e) {
@@ -111,7 +117,7 @@ public class StreakReminders {
 		try {
 			return name == null || name.isBlank() ? ZoneOffset.UTC : ZoneId.of(name);
 		}
-		catch (java.time.DateTimeException e) {
+		catch (DateTimeException e) {
 			return ZoneOffset.UTC;
 		}
 	}

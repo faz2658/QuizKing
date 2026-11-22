@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
+/** Lets the site's own origins call this API from the browser (CORS); the allowed origins come from configuration. */
 @Configuration
 public class WebConfig implements WebMvcConfigurer {
 
@@ -14,6 +15,7 @@ public class WebConfig implements WebMvcConfigurer {
 		this.allowedOrigins = allowedOrigins;
 	}
 
+	/** Allows GET and POST on /api/** from the configured origins. */
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
 		registry.addMapping("/api/**").allowedOrigins(allowedOrigins).allowedMethods("GET", "POST");

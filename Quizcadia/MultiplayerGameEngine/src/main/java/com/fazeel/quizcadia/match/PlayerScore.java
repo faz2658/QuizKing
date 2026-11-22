@@ -1,5 +1,9 @@
 package com.fazeel.quizcadia.match;
 
+/**
+ * A player's running score in a match: points, questions won (or answered right, in a room quiz) and wrong
+ * answers.
+ */
 public class PlayerScore {
 
 	private int userId;

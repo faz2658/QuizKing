@@ -8,6 +8,7 @@ import org.springframework.data.mongodb.repository.Query;
 
 import com.fazeel.quizcadia.report.GameReport.GameMode;
 
+/** Game reports. Most reads leave out the question reviews (the bulk of each report) through projections. */
 public interface GameReportRepository extends MongoRepository<GameReport, String> {
 
 	List<GameReport> findByUserIdOrderByCompletedAtDesc(int userId);

@@ -9,17 +9,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
-
-
 /**
+ * A multiplayer game in the catalog: its topic, level mix, time and points per question.
+ *
  * @author sushmita
- *
- */
-
-
-/**
- *Model Class for multi player game
- *
  */
 @JsonIgnoreProperties(ignoreUnknown=true)
 @Document(collection = "multiplayergame")
@@ -34,14 +27,13 @@ public class MultiPlayerGame {
 	private GameType gameType;
 	private String gameDescription;
 	private String gameRules;
-	//private List<Users> users;
 	private int userId;
 	private int categoryId;
 	private int numberOfQuestions;
 	private GameQuestionLevel questionLevel;
 	private int timePerQuestion;
 	private int scorePerQuestion;
-	
+
 	private Topic topic;
 	private List<Questions> autoquestions;
 	/** How many questions the game draws from (its topic's pool when the questions are not copied in). */
@@ -54,40 +46,17 @@ public class MultiPlayerGame {
 	public void setQuestionCount(Integer questionCount) {
 		this.questionCount = questionCount;
 	}
-	
-	/**
-	 * Default Constructor
-	 */
+
+	/** For Jackson and Spring Data, which fill in the fields. */
 	@JsonCreator
 	public MultiPlayerGame() {
-		super();
-		
 	}
 
-	
-	/**Parameterized Constructor
-	 * @param gameId
-	 * @param gameName
-	 * @param gameImage
-	 * @param createdBy
-	 * @param createdOn
-	 * @param gameType
-	 * @param gameDescription
-	 * @param gameRules
-	 * @param userId
-	 * @param categoryId
-	 * @param numberOfQuestions
-	 * @param questionLevel
-	 * @param timePerQuestion
-	 * @param scorePerQuestion
-	 * @param topic
-	 * @param autoquestions
-	 */
+	/** Every field at once. */
 	public MultiPlayerGame(int gameId, String gameName, String gameImage, String createdBy, Date createdOn,
 			GameType gameType, String gameDescription, String gameRules, int userId, int categoryId,
 			int numberOfQuestions, GameQuestionLevel questionLevel, int timePerQuestion, int scorePerQuestion,
 			Topic topic, List<Questions> autoquestions) {
-		super();
 		this.gameId = gameId;
 		this.gameName = gameName;
 		this.gameImage = gameImage;
@@ -106,8 +75,6 @@ public class MultiPlayerGame {
 		this.autoquestions = autoquestions;
 	}
 
-	
-	
 	/**
 	 * Getters & Setters
 	 */
@@ -252,15 +219,4 @@ public class MultiPlayerGame {
 				+ questionLevel + ", timePerQuestion=" + timePerQuestion + ", scorePerQuestion=" + scorePerQuestion
 				+ ", topic=" + topic + ", autoquestions=" + autoquestions + "]";
 	}
-
-	
-
-	
-
-	
-		
-	
-	
-	
-	
 }

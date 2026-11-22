@@ -5,11 +5,17 @@ import static org.springframework.data.mongodb.core.query.Criteria.where;
 import static org.springframework.data.mongodb.core.query.Query.query;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Objects;
+import java.util.Optional;
+import java.util.random.RandomGenerator;
 
+import org.bson.Document;
 import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.data.mongodb.core.aggregation.Aggregation;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
@@ -20,6 +26,10 @@ import com.fazeel.quizcadia.generator.FactQuestionGenerator;
 import com.fazeel.quizcadia.generator.FactSource;
 import com.fazeel.quizcadia.generator.QuestionTemplate;
 
+/**
+ * Reads and changes the question bank. Every change goes out as a bank event, with only the changed topic, so the
+ * game manager can update its games.
+ */
 @Service
 public class QuestionBankService {
 
@@ -53,23 +63,24 @@ public class QuestionBankService {
 	 * holding it and only that one question comes back, instead of reading the whole bank (every category with all its
 	 * questions: megabytes per tap).
 	 */
-	public java.util.Optional<Located> locate(int questionId) {
-		var at = org.springframework.data.mongodb.core.aggregation.Aggregation.newAggregation(
-				org.springframework.data.mongodb.core.aggregation.Aggregation.match(where("topic.questions.questionId").is(questionId)),
-				org.springframework.data.mongodb.core.aggregation.Aggregation.unwind("topic"),
-				org.springframework.data.mongodb.core.aggregation.Aggregation.unwind("topic.questions"),
-				org.springframework.data.mongodb.core.aggregation.Aggregation.match(where("topic.questions.questionId").is(questionId)),
-				org.springframework.data.mongodb.core.aggregation.Aggregation.limit(1),
-				org.springframework.data.mongodb.core.aggregation.Aggregation.project()
+	public Optional<Located> locate(int questionId) {
+		var at = Aggregation.newAggregation(
+				Aggregation.match(where("topic.questions.questionId").is(questionId)),
+				Aggregation.unwind("topic"),
+				Aggregation.unwind("topic.questions"),
+				Aggregation.match(where("topic.questions.questionId").is(questionId)),
+				Aggregation.limit(1),
+				Aggregation.project()
 						.and("topic.topicName").as("topicName").and("topic.questions").as("question"));
-		org.bson.Document hit = mongo.aggregate(at, "category", org.bson.Document.class).getUniqueMappedResult();
-		if (hit == null || !(hit.get("question") instanceof org.bson.Document question)) {
-			return java.util.Optional.empty();
+		Document hit = mongo.aggregate(at, "category", Document.class).getUniqueMappedResult();
+		if (hit == null || !(hit.get("question") instanceof Document question)) {
+			return Optional.empty();
 		}
-		return java.util.Optional.of(new Located(((Number) hit.get("_id")).intValue(), hit.getString("topicName"),
+		return Optional.of(new Located(((Number) hit.get("_id")).intValue(), hit.getString("topicName"),
 				mongo.getConverter().read(Questions.class, question)));
 	}
 
+	/** Every category with its topics and questions. */
 	public List<Category> categories() {
 		return categories.findAll();
 	}
@@ -79,10 +90,12 @@ public class QuestionBankService {
 		return TopicCounts.read(mongo);
 	}
 
+	/** One category; NotFoundException if there is none. */
 	public Category category(int categoryId) {
 		return categories.findById(categoryId).orElseThrow(() -> new NotFoundException("No category " + categoryId));
 	}
 
+	/** Creates an empty category with the next category id; the name must be new (ignoring case). */
 	public Category createCategory(String name, String image) {
 		if (name == null || name.isBlank()) {
 			throw new InvalidQuestionException("categoryName is required");
@@ -98,6 +111,7 @@ public class QuestionBankService {
 		return publish(categories.save(c));
 	}
 
+	/** Adds an empty topic with the next topic id; the name must be new in the category (ignoring case). */
 	public Category addTopic(int categoryId, String topicName, String image) {
 		if (topicName == null || topicName.isBlank()) {
 			throw new InvalidQuestionException("topicName is required");
@@ -117,10 +131,12 @@ public class QuestionBankService {
 		return publish(categories.save(c));
 	}
 
+	/** A topic's questions, found by category id and topic name (ignoring case). */
 	public List<Questions> questions(int categoryId, String topicName) {
 		return questions(topic(category(categoryId), topicName));
 	}
 
+	/** Validates the question and adds it to the topic with the next question id; its type defaults to manual. */
 	public Questions addQuestion(int categoryId, String topicName, Questions q) {
 		QuestionRules.validate(q);
 		Category c = category(categoryId);
@@ -137,6 +153,7 @@ public class QuestionBankService {
 		return q;
 	}
 
+	/** Validates the question and replaces the one with that id, keeping its type when none is given. */
 	public Questions updateQuestion(int categoryId, String topicName, int questionId, Questions q) {
 		QuestionRules.validate(q);
 		Category c = category(categoryId);
@@ -154,6 +171,7 @@ public class QuestionBankService {
 		return q;
 	}
 
+	/** Removes the question and publishes its id as removed, so the game manager drops it too. */
 	public void deleteQuestion(int categoryId, String topicName, int questionId) {
 		Category c = category(categoryId);
 		Topic t = topic(c, topicName);
@@ -182,7 +200,7 @@ public class QuestionBankService {
 		Category c = category(categoryId);
 		Topic t = topic(c, topicName);
 		List<Questions> generated = generator.generate(template, facts.facts(template), count);
-		Map<Integer, Questions> byId = new java.util.LinkedHashMap<>();
+		Map<Integer, Questions> byId = new LinkedHashMap<>();
 		questions(t).forEach(q -> byId.put(q.getQuestionId(), q));
 		generated.forEach(q -> byId.put(q.getQuestionId(), q));
 		t.setQuestions(new ArrayList<>(byId.values()));
@@ -214,7 +232,7 @@ public class QuestionBankService {
 			c = addTopic(c.getCategoryId(), topicName, null);
 		}
 		Topic t = topic(c, topicName);
-		Map<Integer, Questions> byId = new java.util.LinkedHashMap<>();
+		Map<Integer, Questions> byId = new LinkedHashMap<>();
 		questions(t).forEach(q -> byId.put(q.getQuestionId(), q));
 		int added = 0;
 		for (Questions q : questions) {
@@ -252,8 +270,8 @@ public class QuestionBankService {
 	 * A quiz across every topic for the live room quiz: {@code count} general questions of one level, spread over the
 	 * topics (see {@link QuestionMix}).
 	 */
-	public List<Questions> mixedQuestions(int level, int count, java.util.random.RandomGenerator random) {
-		Map<Integer, List<Questions>> byTopic = new java.util.HashMap<>();
+	public List<Questions> mixedQuestions(int level, int count, RandomGenerator random) {
+		Map<Integer, List<Questions>> byTopic = new HashMap<>();
 		for (Category c : categories.findAll()) {
 			for (Topic t : topics(c)) {
 				byTopic.computeIfAbsent(t.getTopicId(), k -> new ArrayList<>()).addAll(questions(t));

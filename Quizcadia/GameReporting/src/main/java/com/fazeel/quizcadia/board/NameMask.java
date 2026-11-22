@@ -29,6 +29,7 @@ public final class NameMask {
 		return n.substring(0, n.offsetByCodePoints(0, keep)) + "***";
 	}
 
+	/** The XP board as the caller may see it: other players' names masked, unless the caller is an admin. */
 	public static XpBoard xp(XpBoard b, int me, boolean admin) {
 		if (admin) {
 			return b;
@@ -37,6 +38,10 @@ public final class NameMask {
 				b.you() == null ? null : xp(b.you(), me), b.all());
 	}
 
+	/**
+	 * The Daily Challenge board as the caller may see it: other players' names masked, unless the caller is an
+	 * admin.
+	 */
 	public static DailyBoard daily(DailyBoard b, int me, boolean admin) {
 		if (admin) {
 			return b;

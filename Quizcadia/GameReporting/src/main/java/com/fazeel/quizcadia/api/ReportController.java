@@ -8,14 +8,20 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.fazeel.quizcadia.auth.Callers;
 import com.fazeel.quizcadia.progress.Achievements.Achievement;
 import com.fazeel.quizcadia.progress.ProgressService;
 import com.fazeel.quizcadia.progress.ProgressService.Progress;
 import com.fazeel.quizcadia.report.GameReport;
 import com.fazeel.quizcadia.report.GameReport.GameMode;
+import com.fazeel.quizcadia.report.PlayerNames;
 import com.fazeel.quizcadia.report.ReportService;
 import com.fazeel.quizcadia.report.ReportService.UserSummary;
 
+/**
+ * A player's own history and progress: games, summary, XP, streak and badges. Players see only their own; admins
+ * anyone's.
+ */
 @RestController
 @RequestMapping("/api/v1/reports/users/{userId}")
 public class ReportController {
@@ -23,10 +29,10 @@ public class ReportController {
 	private final ReportService service;
 	private final ProgressService progress;
 
-	private final com.fazeel.quizcadia.report.PlayerNames names;
+	private final PlayerNames names;
 
 	public ReportController(ReportService service, ProgressService progress,
-			com.fazeel.quizcadia.report.PlayerNames names) {
+			PlayerNames names) {
 		this.service = service;
 		this.progress = progress;
 		this.names = names;
@@ -41,8 +47,8 @@ public class ReportController {
 	/** XP, level and streak. */
 	@GetMapping("/progress")
 	public Progress progress(@PathVariable int userId) {
-		if (userId == com.fazeel.quizcadia.auth.Callers.currentUserId()) {
-			names.remember(userId, com.fazeel.quizcadia.auth.Callers.currentUserName());
+		if (userId == Callers.currentUserId()) {
+			names.remember(userId, Callers.currentUserName());
 		}
 		return progress.progress(userId);
 	}
@@ -53,6 +59,7 @@ public class ReportController {
 		return progress.achievements(userId);
 	}
 
+	/** Games played, accuracy and multiplayer wins, overall and per game mode. */
 	@GetMapping("/summary")
 	public UserSummary summary(@PathVariable int userId) {
 		return service.summary(userId);

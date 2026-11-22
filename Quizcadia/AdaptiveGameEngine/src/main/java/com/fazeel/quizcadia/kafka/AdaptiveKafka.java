@@ -12,6 +12,10 @@ import com.fazeel.quizcadia.adaptive.Ports.ResultEvents;
 import com.fazeel.quizcadia.domain.AdaptiveResult;
 import com.fazeel.quizcadia.domain.Game;
 
+/**
+ * Kafka in and out: caches games the game manager publishes, forgets deleted ones, and sends finished sessions to
+ * the reporting service.
+ */
 @Component
 @ConditionalOnProperty(name = "quizcadia.kafka.enabled", havingValue = "true", matchIfMissing = true)
 public class AdaptiveKafka implements ResultEvents {
@@ -27,6 +31,7 @@ public class AdaptiveKafka implements ResultEvents {
 		this.resultTopic = resultTopic;
 	}
 
+	/** A game was created or changed in the game manager: keep a copy. */
 	@KafkaListener(topics = "${quizcadia.topics.game-definition}", properties = {
 			"spring.json.value.default.type=com.fazeel.quizcadia.domain.Game" })
 	public void onGame(Game game) {
@@ -42,6 +47,7 @@ public class AdaptiveKafka implements ResultEvents {
 		}
 	}
 
+	/** Publishes a finished session's result, keyed by session id so a repeat lands on the same partition. */
 	@Override
 	public void sessionCompleted(AdaptiveResult result) {
 		kafka.send(resultTopic, result.sessionId(), result);

@@ -10,6 +10,7 @@ import java.time.Clock;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
+import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
 
@@ -76,7 +77,7 @@ class InviteRewardsTest {
 	@Test
 	void invitingEarnsRecruiterThenAmbassador() {
 		List<Instant> joined = List.of(Instant.parse("2026-11-01T00:00:00Z"), Instant.parse("2026-11-02T00:00:00Z"));
-		Map<Badge, Achievements.Achievement> got = new java.util.EnumMap<>(Badge.class);
+		Map<Badge, Achievements.Achievement> got = new EnumMap<>(Badge.class);
 		Achievements.of(List.of(), r -> 0, joined).forEach(a -> got.put(a.id(), a));
 
 		assertThat(got.get(Badge.RECRUITER).unlockedAt()).isEqualTo(joined.get(0));

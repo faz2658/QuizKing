@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
+import java.util.concurrent.atomic.AtomicLong;
 
 import org.springframework.stereotype.Service;
 
@@ -16,6 +17,10 @@ import com.fazeel.quizcadia.domain.MultiPlayerGame;
 import com.fazeel.quizcadia.domain.Questions;
 import com.fazeel.quizcadia.domain.Topic;
 
+/**
+ * The catalog's rules: creating, changing and deleting games, merging categories from the question service, and
+ * telling the engines (via CatalogEvents) about every change.
+ */
 @Service
 public class GameCatalogService {
 
@@ -34,8 +39,9 @@ public class GameCatalogService {
 	private final AutoGames autoGames;
 
 	/** Bumped by every change to a game or category, so cached lists know they're out of date. */
-	private final java.util.concurrent.atomic.AtomicLong version = new java.util.concurrent.atomic.AtomicLong();
+	private final AtomicLong version = new AtomicLong();
 
+	/** Goes up on every change to the catalog, so cached lists know when to rebuild. */
 	public long version() {
 		return version.get();
 	}
@@ -59,6 +65,7 @@ public class GameCatalogService {
 
 	// ---- categories -------------------------------------------------------------------------
 
+	/** Every category in full (with questions), for the admin tools. */
 	public List<Category> categories() {
 		return categories.findAll();
 	}
@@ -200,6 +207,10 @@ public class GameCatalogService {
 
 	// ---- single-player games ----------------------------------------------------------------
 
+	/**
+	 * Creates a solo game on a topic: checks the topic has enough questions for the requested level mix, gives it a
+	 * new id, saves it and announces it.
+	 */
 	public Game createGame(int categoryId, String topicName, Game request) {
 		Topic topic = topic(categoryId, topicName);
 		selector.require(available(topic), request.getQuestionLevels());
@@ -228,26 +239,32 @@ public class GameCatalogService {
 		return changed(saved);
 	}
 
+	/** The solo game with this id; throws NotFoundException when there is none. */
 	public Game game(int gameId) {
 		return games.findById(gameId).orElseThrow(() -> new NotFoundException("No game " + gameId));
 	}
 
+	/** The solo game with this id, if any. */
 	public Optional<Game> findGame(int gameId) {
 		return games.findById(gameId);
 	}
 
+	/** Every solo game in full. */
 	public List<Game> games() {
 		return games.findAll();
 	}
 
+	/** The solo games built on one topic of a category (topic name matched ignoring case). */
 	public List<Game> gamesInTopic(int categoryId, String topicName) {
 		return games.findByCategoryIdAndTopicTopicNameIgnoreCase(categoryId, topicName);
 	}
 
+	/** Solo games whose name starts with the prefix, ignoring case. */
 	public List<Game> gamesNamedLike(String prefix) {
 		return games.findByGameNameStartingWithIgnoreCase(prefix.trim());
 	}
 
+	/** Solo games with exactly this name, ignoring case. */
 	public List<Game> gamesNamed(String name) {
 		return games.findByGameNameIgnoreCase(name.trim());
 	}
@@ -278,6 +295,7 @@ public class GameCatalogService {
 		return changed(saved);
 	}
 
+	/** Deletes the game whatever its kind and announces it, so the engines drop their cached copies. */
 	public void deleteGame(int gameId) {
 		if (!games.existsById(gameId) && !multiGames.existsById(gameId)) {
 			throw new NotFoundException("No game " + gameId);
@@ -295,6 +313,10 @@ public class GameCatalogService {
 
 	// ---- multiplayer games ------------------------------------------------------------------
 
+	/**
+	 * Creates a multiplayer game on a topic: checks the topic can fill its level mix (numberOfQuestions easy ones
+	 * when no mix is given) and that the time per question is positive, then saves and announces it.
+	 */
 	public MultiPlayerGame createMultiPlayerGame(int categoryId, String topicName, MultiPlayerGame request) {
 		Topic topic = topic(categoryId, topicName);
 		GameQuestionLevel mix = request.getQuestionLevel();
@@ -331,14 +353,17 @@ public class GameCatalogService {
 		return changed(saved);
 	}
 
+	/** The multiplayer game with this id; throws NotFoundException when there is none. */
 	public MultiPlayerGame multiPlayerGame(int gameId) {
 		return multiGames.findById(gameId).orElseThrow(() -> new NotFoundException("No multiplayer game " + gameId));
 	}
 
+	/** Every multiplayer game in full. */
 	public List<MultiPlayerGame> multiPlayerGames() {
 		return multiGames.findAll();
 	}
 
+	/** The multiplayer games built on one topic of a category. */
 	public List<MultiPlayerGame> multiPlayerGamesInTopic(int categoryId, String topicName) {
 		return multiGames.findByCategoryIdAndTopicTopicNameIgnoreCase(categoryId, topicName);
 	}

@@ -5,6 +5,7 @@
  * camera glides between those framings, with a swing of the brain, when the player changes page.
  */
 
+/** The brain's colours, from the current theme. */
 export interface SceneColors {
   /** Gradient the neurons are coloured along, from one side of the brain to the other. */
   from: RGB;
@@ -18,8 +19,10 @@ export interface SceneColors {
   light: boolean;
 }
 
+/** A colour as red, green and blue from 0 to 1. */
 export type RGB = [number, number, number];
 
+/** How to set up the scene. */
 export interface SceneOptions {
   /** Phones get fewer neurons and a lower pixel ratio. */
   small: boolean;
@@ -41,6 +44,7 @@ export interface ScenePose {
   lean: number;
 }
 
+/** The WebGL brain behind the pages. */
 export interface NeuralScene {
   /**
    * Draws one frame at {@code time} seconds; pointer is -1..1 on both axes. Returns true once the camera has
@@ -55,6 +59,7 @@ export interface NeuralScene {
   dispose(): void;
 }
 
+/** Creates the scene on a canvas; null where WebGL is not available. */
 export type SceneFactory = (canvas: HTMLCanvasElement, options: SceneOptions) => NeuralScene | null;
 
 const POINT_VS = `
@@ -209,6 +214,7 @@ export function view(rx: number, ry: number, dist: number, tx: number, ty: numbe
 
 const POSE_KEYS = ['x', 'y', 'zoom', 'alpha', 'spin', 'lean'] as const;
 
+/** The WebGL scene: neurons as points and the connections between them as lines. */
 export const createNeuralScene: SceneFactory = (canvas, { small, colors: initial }) => {
   const gl = canvas.getContext('webgl', { alpha: true, antialias: true, premultipliedAlpha: true, powerPreference: 'low-power' });
   if (!gl) {

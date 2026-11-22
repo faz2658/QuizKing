@@ -13,10 +13,8 @@ import java.time.Duration;
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.ZoneOffset;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
@@ -176,6 +174,16 @@ class ArenaServiceTest {
 		arena.answer(1, 0, correct(0));
 		assertThatThrownBy(() -> arena.answer(1, 0, correct(0))).hasMessageContaining("already");
 		assertThatThrownBy(() -> arena.answer(1, 1, correct(1))).hasMessageContaining("isn't open");
+	}
+
+	@Test
+	void aRoundIsOnlyMadeWhenTheBankCanFillIt() {
+		// one topic has 3 questions per level: 9 in all, fewer than a round plays
+		when(games.findAll()).thenReturn(DailyChallengeServiceTest.catalog().subList(0, 1));
+		assertThatThrownBy(() -> arena.join(1, "Ada", null)).isInstanceOf(QuizRuleException.class)
+				.hasMessageContaining("enough questions");
+		assertThat(roundStore).isEmpty();
+		assertThat(entryStore).isEmpty();
 	}
 
 	@Test

@@ -2,6 +2,8 @@ package com.fazeel.quizcadia.report;
 
 import java.time.Clock;
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.function.Function;
@@ -22,6 +24,7 @@ public class PlayerNames {
 		this.clock = clock;
 	}
 
+	/** Saves a player's display name when it is new or changed. */
 	public void remember(int userId, String name) {
 		if (name == null || name.isBlank() || name.equals(known.get(userId))) {
 			return;
@@ -34,7 +37,7 @@ public class PlayerNames {
 
 	/** The player's country (ISO code) for flags and the countries leaderboard; null clears it. */
 	public void country(int userId, String name, String country) {
-		String c = country == null || !country.matches("[A-Za-z]{2}") ? null : country.toUpperCase(java.util.Locale.ROOT);
+		String c = country == null || !country.matches("[A-Za-z]{2}") ? null : country.toUpperCase(Locale.ROOT);
 		if (name != null && !name.isBlank()) {
 			known.put(userId, name.trim());
 		}
@@ -43,8 +46,9 @@ public class PlayerNames {
 		names.save(new PlayerName(userId, n, clock.instant(), c));
 	}
 
+	/** The countries of these players, for those who set one. */
 	public Map<Integer, String> countries(Collection<Integer> userIds) {
-		Map<Integer, String> found = new java.util.HashMap<>();
+		Map<Integer, String> found = new HashMap<>();
 		names.findAllById(userIds).forEach(p -> {
 			if (p.country() != null) {
 				found.put(p.userId(), p.country());
@@ -53,6 +57,7 @@ public class PlayerNames {
 		return found;
 	}
 
+	/** The display names of these players. */
 	public Map<Integer, String> lookup(Collection<Integer> userIds) {
 		Map<Integer, String> found = names.findAllById(userIds).stream()
 				.collect(Collectors.toMap(PlayerName::userId, PlayerName::name, (a, b) -> a));

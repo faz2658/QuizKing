@@ -46,6 +46,7 @@ public class PasswordReset {
 		this.expiresAt = expiresAt;
 	}
 
+	/** True while the link is unused and not yet expired. */
 	public boolean usableAt(Instant now) {
 		return usedAt == null && now.isBefore(expiresAt);
 	}

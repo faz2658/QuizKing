@@ -1,5 +1,6 @@
 import { Observable, Subscription } from 'rxjs';
 
+/** How often livePoll asks the server again. */
 export interface LivePollOptions {
   /** Normal gap between requests, in ms. */
   every: number;

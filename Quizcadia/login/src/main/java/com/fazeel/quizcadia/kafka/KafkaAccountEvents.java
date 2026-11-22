@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 import com.fazeel.quizcadia.account.AccountEvents;
 import com.fazeel.quizcadia.account.UserRegistered;
 
+/** Kafka out: announces new accounts (for invite rewards and recommendations), keyed by user id. */
 @Component
 @ConditionalOnProperty(name = "quizcadia.kafka.enabled", havingValue = "true", matchIfMissing = true)
 public class KafkaAccountEvents implements AccountEvents {
@@ -21,6 +22,7 @@ public class KafkaAccountEvents implements AccountEvents {
 		this.topic = topic;
 	}
 
+	/** Publishes a new account. */
 	@Override
 	public void registered(UserRegistered event) {
 		kafka.send(topic, String.valueOf(event.userId()), event);

@@ -56,6 +56,7 @@ public class FriendChallengeService {
 		return challenges.save(challenge);
 	}
 
+	/** The challenge; NotFoundException if there is none. */
 	public FriendChallenge get(String id) {
 		return challenges.findById(id).orElseThrow(() -> new NotFoundException("No challenge " + id));
 	}
@@ -65,6 +66,10 @@ public class FriendChallengeService {
 		return sessions.findFirstByUserIdAndVariantAndVariantKey(userId, SessionVariant.CHALLENGE, challengeId);
 	}
 
+	/**
+	 * Starts the player's attempt at the challenge's questions, or returns the one in progress; the challenger and
+	 * anyone who finished it are refused.
+	 */
 	public GameSession accept(String challengeId, int userId, String playerName) {
 		FriendChallenge c = get(challengeId);
 		if (c.challengerId() == userId) {

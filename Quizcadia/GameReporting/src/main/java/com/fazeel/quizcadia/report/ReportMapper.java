@@ -8,6 +8,7 @@ import java.util.stream.Collectors;
 
 import com.fazeel.quizcadia.domain.AdaptiveResult;
 import com.fazeel.quizcadia.domain.MultiPlayerResult;
+import com.fazeel.quizcadia.domain.PlayedQuestion;
 import com.fazeel.quizcadia.domain.SinglePlayerResult;
 import com.fazeel.quizcadia.report.GameReport.GameMode;
 import com.fazeel.quizcadia.report.GameReport.ReviewItem;
@@ -18,8 +19,9 @@ public final class ReportMapper {
 	private ReportMapper() {
 	}
 
+	/** The report for a finished solo game, with its question review. */
 	public static GameReport single(SinglePlayerResult r) {
-		List<ReviewItem> items = Objects.requireNonNullElse(r.playedData(), List.<com.fazeel.quizcadia.domain.PlayedQuestion>of())
+		List<ReviewItem> items = Objects.requireNonNullElse(r.playedData(), List.<PlayedQuestion>of())
 				.stream().map(q -> new ReviewItem(q.question(), q.correctAnswer(), q.answer(), q.correct(),
 						q.timedOut(), q.pointsAwarded()))
 				.toList();
@@ -28,6 +30,7 @@ public final class ReportMapper {
 				r.completedAt(), items, r.variant(), r.variantKey(), r.opponentScore());
 	}
 
+	/** The report for a finished adaptive session, with its question review and the highest level reached. */
 	public static GameReport adaptive(AdaptiveResult r) {
 		List<ReviewItem> items = Objects.requireNonNullElse(r.answers(), List.<AdaptiveResult.Answer>of()).stream()
 				.map(a -> new ReviewItem(a.question(), a.correctAnswer(), a.answer(), a.correct(), a.timedOut(),

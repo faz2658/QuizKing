@@ -1,6 +1,7 @@
 package com.fazeel.quizcadia.domain;
 
 import java.util.List;
+import java.util.Objects;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -12,6 +13,7 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @JsonIgnoreProperties(ignoreUnknown = true)
 public record Game(@Id int gameId, String gameName, int categoryId, Topic topic, List<Question> questions) {
 
+	/** The topic a game draws its questions from. */
 	@JsonIgnoreProperties(ignoreUnknown = true)
 	public record Topic(int topicId, String topicName) {
 	}
@@ -46,7 +48,7 @@ public record Game(@Id int gameId, String gameName, int categoryId, Topic topic,
 			return this;
 		}
 		String home = country == null || country.isBlank() ? null : country.trim();
-		List<Question> eligible = questions.stream().filter(java.util.Objects::nonNull)
+		List<Question> eligible = questions.stream().filter(Objects::nonNull)
 				.filter(q -> q.general() || home != null && home.equalsIgnoreCase(q.country())).toList();
 		return eligible.isEmpty() ? this : withQuestions(eligible);
 	}

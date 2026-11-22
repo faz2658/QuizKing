@@ -3,6 +3,7 @@ package com.fazeel.quizcadia.config;
 import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.Supplier;
 
@@ -17,6 +18,7 @@ public class MultiplayerGames implements Supplier<List<Integer>> {
 	static final Duration CACHE = Duration.ofMinutes(5);
 	static final int MIN_QUESTIONS = 5;
 
+	/** A multiplayer game's id and question count, as the game manager lists it. */
 	record Summary(int gameId, int questionCount) {
 	}
 
@@ -30,13 +32,17 @@ public class MultiplayerGames implements Supplier<List<Integer>> {
 		this.clock = clock;
 	}
 
+	/**
+	 * The ids of multiplayer games that have enough questions to play, refreshed from the game manager every 5
+	 * minutes.
+	 */
 	@Override
 	public synchronized List<Integer> get() {
 		if (cached.isEmpty() || Duration.between(fetchedAt, clock.instant()).compareTo(CACHE) > 0) {
 			try {
 				Summary[] games = http.get().uri("/api/game/games/mp").retrieve().body(Summary[].class);
 				cached = games == null ? List.of()
-						: java.util.Arrays.stream(games).filter(g -> g.questionCount() >= MIN_QUESTIONS).map(Summary::gameId).toList();
+						: Arrays.stream(games).filter(g -> g.questionCount() >= MIN_QUESTIONS).map(Summary::gameId).toList();
 				fetchedAt = clock.instant();
 			}
 			catch (RuntimeException e) {

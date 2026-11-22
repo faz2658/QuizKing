@@ -1,28 +1,32 @@
 package com.fazeel.quizcadia.api;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
-
-import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
-import org.springframework.context.annotation.Import;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.test.web.servlet.request.RequestPostProcessor;
-import com.fazeel.quizcadia.config.SecurityConfig;
 import static org.mockito.Mockito.when;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.delete;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
+import org.springframework.context.annotation.Import;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.RequestPostProcessor;
 
+import com.fazeel.quizcadia.config.SecurityConfig;
+import com.fazeel.quizcadia.domain.Match;
 import com.fazeel.quizcadia.matching.LobbyStatus;
 import com.fazeel.quizcadia.matching.LobbyStatus.State;
 import com.fazeel.quizcadia.matching.Matchmaker;
+import com.fazeel.quizcadia.matching.Presence;
+import com.fazeel.quizcadia.matching.PrivateRooms;
+import com.fazeel.quizcadia.matching.QuickMatch;
 
 @Import(SecurityConfig.class)
 @WebMvcTest(MatchingController.class)
@@ -44,16 +48,16 @@ class MatchingControllerTest {
 	Matchmaker matchmaker;
 
 	@MockitoBean
-	com.fazeel.quizcadia.matching.PrivateRooms rooms;
+	PrivateRooms rooms;
 
 	@MockitoBean
-	com.fazeel.quizcadia.matching.Presence presence;
+	Presence presence;
 
 	@MockitoBean
-	com.fazeel.quizcadia.matching.QuickMatch quick;
+	QuickMatch quick;
 
 	@MockitoBean(name = "matchPublisher")
-	java.util.function.Consumer<com.fazeel.quizcadia.domain.Match> matchPublisher;
+	Consumer<Match> matchPublisher;
 
 	@Test
 	void joiningReturnsTheLobby() throws Exception {

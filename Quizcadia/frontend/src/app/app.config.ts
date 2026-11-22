@@ -8,6 +8,7 @@ import { maintenanceInterceptor } from './core/maintenance.interceptor';
 import { onPageTransition } from './motion/page-transition';
 import { isMissingChunk, reloadIntoNewVersion } from './core/stale-version';
 
+/** The app's providers: router, HTTP client with its interceptors, and error listeners. */
 export const appConfig: ApplicationConfig = {
   providers: [
     provideBrowserGlobalErrorListeners(),

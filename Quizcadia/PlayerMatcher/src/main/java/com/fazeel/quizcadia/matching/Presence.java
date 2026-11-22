@@ -6,6 +6,7 @@ import java.time.Instant;
 import java.util.Comparator;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.stream.Collectors;
@@ -31,6 +32,7 @@ public class Presence {
 
 	static final int GUEST_ID_BASE = 900_000_000;
 
+	/** How many players from one country are online. */
 	public record CountryCount(String country, int players) {
 	}
 
@@ -44,13 +46,14 @@ public class Presence {
 	/** A heartbeat; {@code country} is kept from earlier heartbeats when this one has none. */
 	public void seen(int userId, String name, String country) {
 		Player before = players.get(userId);
-		String c = validCountry(country) ? country.toUpperCase(java.util.Locale.ROOT)
+		String c = validCountry(country) ? country.toUpperCase(Locale.ROOT)
 				: before == null ? null : before.country();
 		Instant now = clock.instant();
 		boolean stillOnline = before != null && before.lastSeen().isAfter(now.minus(ONLINE_FOR));
 		players.put(userId, new Player(name, c, now, stillOnline ? before.since() : now));
 	}
 
+	/** How many players were seen in the last 2 minutes. */
 	public int online() {
 		Instant since = clock.instant().minus(ONLINE_FOR);
 		return (int) players.values().stream().filter(p -> p.lastSeen().isAfter(since)).count();
@@ -67,6 +70,7 @@ public class Presence {
 				.toList();
 	}
 
+	/** Online players counted per country (those who set one). */
 	public List<CountryCount> byCountry() {
 		Instant since = clock.instant().minus(ONLINE_FOR);
 		return players.values().stream().filter(p -> p.lastSeen().isAfter(since) && p.country() != null)

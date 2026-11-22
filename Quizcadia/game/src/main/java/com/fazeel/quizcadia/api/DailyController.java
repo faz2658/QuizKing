@@ -31,6 +31,7 @@ public class DailyController {
 		this.clock = clock;
 	}
 
+	/** Today's challenge: size, topics and how far the caller got, plus the seconds until the next one. */
 	@GetMapping
 	public DailyView today() {
 		LocalDate date = daily.today();
@@ -43,6 +44,7 @@ public class DailyController {
 				daily.untilNext().toSeconds());
 	}
 
+	/** Starts (or resumes) the caller's one run at today's challenge. */
 	@PostMapping("/sessions")
 	@ResponseStatus(HttpStatus.CREATED)
 	public SessionView start() {

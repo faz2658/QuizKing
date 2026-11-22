@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 
 import org.springframework.data.annotation.Id;
 
+/** The kind of game: an id, a name and a description. */
 public class GameType {
 
 	@Id
@@ -36,7 +37,6 @@ public class GameType {
 	}
 
 	public GameType(int gameTypeId, String gameTypeName, String gameTypeDescription) {
-		super();
 		this.gameTypeId = gameTypeId;
 		this.gameTypeName = gameTypeName;
 		this.gameTypeDescription = gameTypeDescription;
@@ -45,5 +45,4 @@ public class GameType {
 	@JsonCreator
 	public GameType() {
 	}
-
 }

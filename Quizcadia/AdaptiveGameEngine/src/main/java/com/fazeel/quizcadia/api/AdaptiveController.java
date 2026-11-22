@@ -22,6 +22,10 @@ import com.fazeel.quizcadia.auth.Callers;
 
 import jakarta.validation.Valid;
 
+/**
+ * The adaptive game API. Players start, read and answer only their own sessions; the server does all timing and
+ * scoring.
+ */
 @RestController
 @RequestMapping("/api/v1/adaptive/sessions")
 public class AdaptiveController {
@@ -34,6 +38,7 @@ public class AdaptiveController {
 		this.clock = clock;
 	}
 
+	/** Starts a session for the calling player (most questions from their country when one is given). */
 	@PostMapping
 	@ResponseStatus(HttpStatus.CREATED)
 	public SessionView start(@Valid @RequestBody StartRequest request) {
@@ -41,6 +46,7 @@ public class AdaptiveController {
 		return SessionView.of(service.start(request.gameId(), request.userId(), request.country()), clock.instant());
 	}
 
+	/** The caller's session, with the open question and the seconds left on it. */
 	@GetMapping("/{sessionId}")
 	public SessionView get(@PathVariable String sessionId) {
 		AdaptiveSession session = service.get(sessionId);
@@ -48,6 +54,10 @@ public class AdaptiveController {
 		return SessionView.of(session, clock.instant());
 	}
 
+	/**
+	 * Answers the open question; the reply says whether it was right, the points, and whether the level went UP,
+	 * DOWN or stayed the SAME.
+	 */
 	@PostMapping("/{sessionId}/answers")
 	public AnswerView answer(@PathVariable String sessionId, @Valid @RequestBody AnswerRequest request) {
 		Callers.requireSelf(service.get(sessionId).getUserId());

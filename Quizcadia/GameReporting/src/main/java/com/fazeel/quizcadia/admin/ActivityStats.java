@@ -1,6 +1,7 @@
 package com.fazeel.quizcadia.admin;
 
 import java.time.Clock;
+import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
@@ -17,8 +18,10 @@ import java.util.TreeMap;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.fazeel.quizcadia.board.BoardCache;
 import com.fazeel.quizcadia.report.GameReport;
 import com.fazeel.quizcadia.report.GameReportRepository;
 import com.fazeel.quizcadia.report.PlayerName;
@@ -34,11 +37,11 @@ public class ActivityStats {
 	private final GameReportRepository reports;
 	private final PlayerNameRepository names;
 	private final Clock clock;
-	private final com.fazeel.quizcadia.board.BoardCache cache;
+	private final BoardCache cache;
 
-	@org.springframework.beans.factory.annotation.Autowired
+	@Autowired
 	public ActivityStats(GameReportRepository reports, PlayerNameRepository names, Clock clock,
-			com.fazeel.quizcadia.board.BoardCache cache) {
+			BoardCache cache) {
 		this.reports = reports;
 		this.names = names;
 		this.clock = clock;
@@ -46,18 +49,25 @@ public class ActivityStats {
 	}
 
 	public ActivityStats(GameReportRepository reports, PlayerNameRepository names, Clock clock) {
-		this(reports, names, clock, new com.fazeel.quizcadia.board.BoardCache(clock));
+		this(reports, names, clock, new BoardCache(clock));
 	}
 
+	/** One day's activity: games finished, distinct players, and how many of the games guests played. */
 	public record Day(LocalDate day, int games, int players, int guestGames) {
 	}
 
+	/** A name and how often it came up (game modes, games, countries). */
 	public record Count(String name, int count) {
 	}
 
+	/** One of the most active players of the period, with their games and points. */
 	public record TopPlayer(int userId, String name, String country, int games, int points) {
 	}
 
+	/**
+	 * The admin "Users & activity" numbers: totals, active players (today, 7 and 30 days), guests, a day-by-day
+	 * series and top lists.
+	 */
 	public record View(long gamesAllTime, int gamesInPeriod, int activeToday, int active7Days, int active30Days,
 			int guestPlayers30Days, List<Day> byDay, List<Count> modes, List<Count> topGames, List<Count> countries,
 			List<TopPlayer> topPlayers) {
@@ -69,13 +79,14 @@ public class ActivityStats {
 
 	/** Retention cohorts over the last {@code weeks} start weeks (see {@link Retention}); cached for 5 minutes. */
 	public Retention.View retention(int weeks) {
-		return cache.get("retention:" + weeks, java.time.Duration.ofMinutes(5), () -> Retention.compute(
+		return cache.get("retention:" + weeks, Duration.ofMinutes(5), () -> Retention.compute(
 				reports.findAllPlayTimes().stream().map(p -> new Retention.Play(p.userId(), p.completedAt())).toList(),
 				LocalDate.now(clock.withZone(ZoneOffset.UTC)), weeks));
 	}
 
+	/** The admin numbers for the last days days (at least 30 for the active-player counts), cached for 30 seconds. */
 	public View view(int days) {
-		return cache.get("admin:" + days, java.time.Duration.ofSeconds(30), () -> compute(days));
+		return cache.get("admin:" + days, Duration.ofSeconds(30), () -> compute(days));
 	}
 
 	private View compute(int days) {

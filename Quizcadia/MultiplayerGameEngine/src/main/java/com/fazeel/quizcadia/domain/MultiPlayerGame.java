@@ -34,10 +34,12 @@ public record MultiPlayerGame(@Id int gameId, String gameName, int categoryId, i
 	@JsonIgnoreProperties(ignoreUnknown = true)
 	public record Level(int easyLevel, int mediumLevel, int advancedLevel) {
 
+		/** How many questions the mix asks in all (negative counts count as none). */
 		public int total() {
 			return Math.max(0, easyLevel) + Math.max(0, mediumLevel) + Math.max(0, advancedLevel);
 		}
 
+		/** How many questions of a level (1 easy, 2 medium, 3 advanced) the mix asks. */
 		public int of(int level) {
 			return Math.max(0, switch (level) {
 				case 1 -> easyLevel;
@@ -47,8 +49,8 @@ public record MultiPlayerGame(@Id int gameId, String gameName, int categoryId, i
 		}
 	}
 
-	@JsonIgnoreProperties(ignoreUnknown = true)
 	/** @param country ISO code of a country-specific question (e.g. "IN"); blank for general questions */
+	@JsonIgnoreProperties(ignoreUnknown = true)
 	public record Question(int questionId, int questionLevel, String questionStem, String option1, String option2,
 			String option3, String option4, String correctAnswer, String country) {
 

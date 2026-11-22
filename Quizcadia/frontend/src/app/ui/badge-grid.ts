@@ -13,6 +13,7 @@ export function sortBadges(all: Achievement[]): Achievement[] {
   return [...earned, ...locked];
 }
 
+/** The player's badges in the order of sortBadges, with progress bars on the locked ones. */
 @Component({
   selector: 'mv-badge-grid',
   imports: [DatePipe],

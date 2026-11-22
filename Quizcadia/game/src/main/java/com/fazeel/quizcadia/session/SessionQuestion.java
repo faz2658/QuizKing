@@ -64,6 +64,7 @@ public class SessionQuestion {
 		return answeredAt != null;
 	}
 
+	/** When time runs out: when it was asked plus the limit and any extra time; null until asked. */
 	public Instant deadline() {
 		return askedAt == null ? null : askedAt.plusSeconds(timeLimitSeconds + bonusSeconds);
 	}

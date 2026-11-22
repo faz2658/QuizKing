@@ -23,6 +23,7 @@ import com.fazeel.quizcadia.report.GameReport.ReviewItem;
  */
 public final class Achievements {
 
+	/** Every badge: its name, what earns it, its icon, and the count it takes (games, days in a row, topics...). */
 	public enum Badge {
 		FIRST_GAME("First steps", "Finish your first game", "🎯", 1),
 		REGULAR("Regular", "Finish 10 games", "🎮", 10),

@@ -10,6 +10,10 @@ import org.springframework.context.annotation.Bean;
 
 import com.fazeel.quizcadia.adaptive.PoolBuilder;
 
+/**
+ * The adaptive game engine: solo games whose difficulty follows the player, moving up or down a level after each
+ * block of questions.
+ */
 @SpringBootApplication
 @ConfigurationPropertiesScan
 public class AdaptiveGameEngineApplication {

@@ -1,6 +1,10 @@
 import { Routes } from '@angular/router';
 import { adminGuard, playerGuard, welcomeGuard } from './core/auth.guard';
 
+/**
+ * Every page. Each loads its component lazily; playerGuard keeps signed-out visitors on the public pages,
+ * adminGuard keeps the admin pages for admins.
+ */
 export const routes: Routes = [
   { path: 'welcome', title: 'QuizCadia: free trivia quiz games, timed, adaptive and multiplayer', canActivate: [welcomeGuard], loadComponent: () => import('./pages/welcome').then((m) => m.Welcome) },
   { path: 'join/:code', title: 'Join QuizCadia', loadComponent: () => import('./pages/invite').then((m) => m.Join) },

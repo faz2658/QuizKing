@@ -1,18 +1,11 @@
 package com.fazeel.quizcadia.api;
 
-import org.springframework.http.MediaType;
-
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
-
-import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
-import org.springframework.context.annotation.Import;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.test.web.servlet.request.RequestPostProcessor;
-import com.fazeel.quizcadia.config.SecurityConfig;
 import static org.hamcrest.Matchers.containsString;
 import static org.hamcrest.Matchers.not;
 import static org.mockito.Mockito.when;
+import static org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors.jwt;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -21,22 +14,33 @@ import java.time.Clock;
 import java.time.Instant;
 import java.time.ZoneOffset;
 import java.util.List;
+import java.util.Map;
 
+import org.assertj.core.api.Assertions;
+import org.hamcrest.Matchers;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.TestConfiguration;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.Primary;
+import org.springframework.http.MediaType;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
+import org.springframework.test.web.servlet.request.RequestPostProcessor;
+import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+import com.fazeel.quizcadia.config.SecurityConfig;
 import com.fazeel.quizcadia.match.MatchQuestion;
 import com.fazeel.quizcadia.match.MatchService;
+import com.fazeel.quizcadia.match.MatchUpdates;
 import com.fazeel.quizcadia.match.MultiplayerMatch;
 import com.fazeel.quizcadia.match.NotFoundException;
 
-@Import({ SecurityConfig.class, com.fazeel.quizcadia.match.MatchUpdates.class })
+@Import({ SecurityConfig.class, MatchUpdates.class })
 @WebMvcTest(MatchController.class)
 class MatchControllerTest {
 
@@ -67,7 +71,7 @@ class MatchControllerTest {
 	MatchService service;
 
 	@Autowired
-	com.fazeel.quizcadia.match.MatchUpdates updates;
+	MatchUpdates updates;
 
 	static MultiplayerMatch race() {
 		return new MultiplayerMatch("m1", 7, "Race", 1, List.of(1, 2),
@@ -78,8 +82,8 @@ class MatchControllerTest {
 	void nextAnswersAtOnceWhenTheScreenIsOutOfDate() throws Exception {
 		when(service.get("m1", 1)).thenReturn(race());
 		var started = mvc.perform(get("/api/v1/matches/m1/next").with(player(1)).param("userId", "1").param("after", "stale"))
-				.andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.request().asyncStarted()).andReturn();
-		mvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.asyncDispatch(started))
+				.andExpect(MockMvcResultMatchers.request().asyncStarted()).andReturn();
+		mvc.perform(MockMvcRequestBuilders.asyncDispatch(started))
 				.andExpect(status().isOk()).andExpect(jsonPath("$.version").isNotEmpty())
 				.andExpect(jsonPath("$.currentQuestion.stem").value("Capital of Peru?"));
 	}
@@ -91,20 +95,20 @@ class MatchControllerTest {
 		// the current version, as the screen would have it from its last answer
 		String current = Views_version(m);
 		var waiting = mvc.perform(get("/api/v1/matches/m1/next").with(player(1)).param("userId", "1").param("after", current))
-				.andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.request().asyncStarted()).andReturn();
+				.andExpect(MockMvcResultMatchers.request().asyncStarted()).andReturn();
 		Thread.sleep(100);
-		org.assertj.core.api.Assertions.assertThat(updates.waitingFor("m1")).isEqualTo(1); // still waiting: nothing changed
+		Assertions.assertThat(updates.waitingFor("m1")).isEqualTo(1); // still waiting: nothing changed
 
 		m.answer(2, 5, "Lima", NOW.plusSeconds(3)); // the other player answers
 		updates.changed("m1");
-		mvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.asyncDispatch(waiting))
+		mvc.perform(MockMvcRequestBuilders.asyncDispatch(waiting))
 				.andExpect(status().isOk()).andExpect(jsonPath("$.standings[0].userId").value(2))
-				.andExpect(jsonPath("$.standings[0].score").value(org.hamcrest.Matchers.greaterThan(0)))
-				.andExpect(jsonPath("$.version").value(org.hamcrest.Matchers.not(current)));
+				.andExpect(jsonPath("$.standings[0].score").value(Matchers.greaterThan(0)))
+				.andExpect(jsonPath("$.version").value(Matchers.not(current)));
 	}
 
 	static String Views_version(MultiplayerMatch m) {
-		return com.fazeel.quizcadia.api.Views.MatchView.of(m, 1, NOW).version();
+		return Views.MatchView.of(m, 1, NOW).version();
 	}
 
 	@Test
@@ -136,7 +140,7 @@ class MatchControllerTest {
 	}
 
 	static MultiplayerMatch roomQuiz() {
-		return MultiplayerMatch.roomQuiz("q1", List.of(1, 2), java.util.Map.of(1, "Ada", 2, "Bo"),
+		return MultiplayerMatch.roomQuiz("q1", List.of(1, 2), Map.of(1, "Ada", 2, "Bo"),
 				List.of(new MatchQuestion(5, "Capital of Peru?", List.of("Lima", "Quito"), "Lima"),
 						new MatchQuestion(6, "Capital of Chile?", List.of("Santiago", "Lima"), "Santiago")),
 				20, 0, 50, NOW.minus(MultiplayerMatch.LEAD_IN));
@@ -146,19 +150,19 @@ class MatchControllerTest {
 	void aPhoneInARoomQuizKeepsWaitingThroughOtherPlayersAnswers() throws Exception {
 		MultiplayerMatch m = roomQuiz();
 		when(service.get("q1", 1)).thenReturn(m);
-		String current = com.fazeel.quizcadia.api.Views.MatchView.of(m, 1, NOW).version();
+		String current = Views.MatchView.of(m, 1, NOW).version();
 		var waiting = mvc.perform(get("/api/v1/matches/q1/next").with(player(1)).param("userId", "1").param("after", current))
-				.andExpect(org.springframework.test.web.servlet.result.MockMvcResultMatchers.request().asyncStarted()).andReturn();
+				.andExpect(MockMvcResultMatchers.request().asyncStarted()).andReturn();
 		Thread.sleep(100);
 
 		m.answer(2, 5, "Lima", NOW.plusSeconds(1)); // someone else answers: nothing new on this phone
 		updates.changed("q1");
 		Thread.sleep(50);
-		org.assertj.core.api.Assertions.assertThat(updates.waitingFor("q1")).isEqualTo(1);
+		Assertions.assertThat(updates.waitingFor("q1")).isEqualTo(1);
 
 		m.answer(1, 5, "Quito", NOW.plusSeconds(2)); // its own answer, the last one: the answer shows
 		updates.changed("q1");
-		mvc.perform(org.springframework.test.web.servlet.request.MockMvcRequestBuilders.asyncDispatch(waiting))
+		mvc.perform(MockMvcRequestBuilders.asyncDispatch(waiting))
 				.andExpect(status().isOk())
 				.andExpect(jsonPath("$.phase").value("REVEAL"))
 				.andExpect(jsonPath("$.format").value("ROOM_QUIZ"))

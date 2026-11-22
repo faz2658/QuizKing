@@ -40,6 +40,7 @@ public class LoginThrottle {
 		}
 	}
 
+	/** Counts a wrong password for this email (forgetting the oldest emails if too many are tracked). */
 	public synchronized void failed(String email) {
 		if (failures.size() >= MAX_TRACKED && !failures.containsKey(email)) {
 			Instant cutoff = clock.instant().minus(WINDOW);
@@ -48,6 +49,7 @@ public class LoginThrottle {
 		failures.computeIfAbsent(email, k -> new ArrayDeque<>()).addLast(clock.instant());
 	}
 
+	/** A right password clears this email's count. */
 	public synchronized void succeeded(String email) {
 		failures.remove(email);
 	}

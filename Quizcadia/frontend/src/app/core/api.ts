@@ -210,6 +210,7 @@ export class QuestionBankApi {
   }
 }
 
+/** Solo games, the Daily Challenge and friend challenges, from the game engine. */
 @Injectable({ providedIn: 'root' })
 export class QuizApi {
   private readonly http = inject(HttpClient);
@@ -305,6 +306,7 @@ export class QuizApi {
   }
 }
 
+/** Leaderboards, XP and the Country Cup, from the reporting service. */
 @Injectable({ providedIn: 'root' })
 export class BoardsApi {
   private readonly http = inject(HttpClient);
@@ -335,6 +337,7 @@ export class BoardsApi {
   }
 }
 
+/** Adaptive games, from the adaptive engine. */
 @Injectable({ providedIn: 'root' })
 export class AdaptiveApi {
   private readonly http = inject(HttpClient);
@@ -355,6 +358,7 @@ export class AdaptiveApi {
   }
 }
 
+/** Lobbies, quick match, private rooms and matches, from the matcher and the multiplayer engine. */
 @Injectable({ providedIn: 'root' })
 export class MultiplayerApi {
   private readonly http = inject(HttpClient);
@@ -434,6 +438,7 @@ export class MultiplayerApi {
   }
 }
 
+/** A player's history, totals, progress and badges, from the reporting service. */
 @Injectable({ providedIn: 'root' })
 export class ReportsApi {
   private readonly http = inject(HttpClient);
@@ -458,6 +463,7 @@ export class ReportsApi {
   }
 }
 
+/** The World Arena, from the game engine. */
 @Injectable({ providedIn: 'root' })
 export class ArenaApi {
   private readonly http = inject(HttpClient);

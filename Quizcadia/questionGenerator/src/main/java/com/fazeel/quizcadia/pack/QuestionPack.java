@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UncheckedIOException;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import java.util.Random;
@@ -11,9 +12,9 @@ import java.util.Random;
 import org.springframework.core.io.ClassPathResource;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fazeel.quizcadia.domain.Questions;
-
 import tools.jackson.databind.json.JsonMapper;
+
+import com.fazeel.quizcadia.domain.Questions;
 
 /**
  * A hand-written set of questions bundled with the app (resources/packs/*.json), such as the India &amp;
@@ -28,17 +29,18 @@ public record QuestionPack(String category, String country, List<PackTopic> topi
 	static final int PACK_ID_SPAN = 200_000_000;
 	public static final String TYPE = "pack";
 
-	@JsonIgnoreProperties(ignoreUnknown = true)
 	/**
 	 * @param category the shared bank category the topic belongs to (e.g. History); when set, the topic's
 	 *        questions join that shared topic, each tagged with the pack's country, instead of a country topic
 	 */
+	@JsonIgnoreProperties(ignoreUnknown = true)
 	public record PackTopic(String category, String name, List<PackQuestion> questions) {
 
 		public PackTopic(String name, List<PackQuestion> questions) {
 			this(null, name, questions);
 		}
 
+		/** True when the topic belongs to a shared category rather than its own country topic. */
 		public boolean shared() {
 			return category != null && !category.isBlank();
 		}
@@ -49,6 +51,7 @@ public record QuestionPack(String category, String country, List<PackTopic> topi
 	public record PackQuestion(String q, String a, List<String> wrong, int level, String why) {
 	}
 
+	/** Reads a pack from the classpath. */
 	public static QuestionPack load(String resource) {
 		try (InputStream in = new ClassPathResource(resource).getInputStream()) {
 			return parse(in.readAllBytes());
@@ -58,6 +61,7 @@ public record QuestionPack(String category, String country, List<PackTopic> topi
 		}
 	}
 
+	/** Reads a pack from its JSON. */
 	public static QuestionPack parse(byte[] json) {
 		return JsonMapper.builder().build().readValue(json, QuestionPack.class);
 	}
@@ -69,14 +73,14 @@ public record QuestionPack(String category, String country, List<PackTopic> topi
 
 	/** Like {@link #questions(PackTopic)}, tagging each question with the pack's country (e.g. IN) when it has one. */
 	public static List<Questions> questions(PackTopic topic, String country) {
-		String tag = country == null || country.isBlank() ? null : country.trim().toUpperCase(java.util.Locale.ROOT);
+		String tag = country == null || country.isBlank() ? null : country.trim().toUpperCase(Locale.ROOT);
 		List<Questions> out = new ArrayList<>();
 		for (PackQuestion p : topic.questions()) {
 			Questions q = new Questions();
 			int id = idFor(p.q());
 			List<String> options = new ArrayList<>(p.wrong());
 			options.add(p.a());
-			java.util.Collections.shuffle(options, new Random(id));
+			Collections.shuffle(options, new Random(id));
 			q.setQuestionId(id);
 			q.setQuestionLevel(p.level());
 			q.setQuestionType(TYPE);

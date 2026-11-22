@@ -2,6 +2,7 @@ package com.fazeel.quizcadia.board;
 
 import java.time.Clock;
 import java.time.DayOfWeek;
+import java.time.Duration;
 import java.time.Instant;
 import java.time.LocalDate;
 import java.time.ZoneOffset;
@@ -12,12 +13,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fazeel.quizcadia.progress.Xp;
 import com.fazeel.quizcadia.report.GameReport;
 import com.fazeel.quizcadia.report.GameReportRepository;
 import com.fazeel.quizcadia.report.PlayerNames;
+import com.fazeel.quizcadia.report.Players;
 
 /**
  * The weekly Country Cup: Monday 00:00 to Monday 00:00 UTC, a country scores the XP its best {@link #SQUAD} players
@@ -36,9 +39,9 @@ public class CountryCup {
 
 	/** Cache key prefix of the cup standings (dropped when someone changes country). */
 	public static final String KEY = "cup:";
-	static final java.time.Duration TTL = java.time.Duration.ofSeconds(30);
+	static final Duration TTL = Duration.ofSeconds(30);
 
-	@org.springframework.beans.factory.annotation.Autowired
+	@Autowired
 	public CountryCup(GameReportRepository reports, PlayerNames names, Clock clock, BoardCache cache) {
 		this.reports = reports;
 		this.names = names;
@@ -50,6 +53,7 @@ public class CountryCup {
 		this(reports, names, clock, new BoardCache(clock));
 	}
 
+	/** A country's place in this week's Cup: its points, how many players scored, and its best player (star). */
 	public record Entry(int rank, String country, int points, int players, String star) {
 	}
 
@@ -57,6 +61,7 @@ public class CountryCup {
 	public record Yours(String country, int rank, int points, int players, int gapToNext, int yourXp, int yourRank) {
 	}
 
+	/** Last week's winner and its points. */
 	public record Champion(String country, int points) {
 	}
 
@@ -65,6 +70,7 @@ public class CountryCup {
 			Champion lastWeek) {
 	}
 
+	/** This week's Cup standings, last week's champion, and the caller's own contribution. */
 	public CupView view(int callerId) {
 		Instant now = clock.instant();
 		Instant start = LocalDate.ofInstant(now, ZoneOffset.UTC).with(DayOfWeek.MONDAY).atStartOfDay(ZoneOffset.UTC).toInstant();
@@ -93,6 +99,7 @@ public class CountryCup {
 		return new CupView(start, end, week.entries.stream().limit(SHOWN).toList(), week.entries.size(), yours, champion);
 	}
 
+	/** The week worked out: the ranked countries, each player's XP and which players count for each country. */
 	private record Standings(List<Entry> entries, Map<Integer, Integer> xp, Map<String, List<Integer>> squads) {
 	}
 
@@ -103,7 +110,7 @@ public class CountryCup {
 	private Standings computeStandings(Instant since, Instant until) {
 		Map<Integer, Integer> xp = new HashMap<>();
 		for (GameReport r : reports.findCompletedBetween(since, until)) {
-			if (com.fazeel.quizcadia.report.Players.isAccount(r.userId())) { // bots and guests never score for a country
+			if (Players.isAccount(r.userId())) { // bots and guests never score for a country
 				xp.merge(r.userId(), Xp.of(r), Integer::sum);
 			}
 		}

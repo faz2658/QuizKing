@@ -3,6 +3,10 @@ package com.fazeel.quizcadia.adaptive;
 import java.time.Instant;
 import java.util.List;
 
+/**
+ * A question as it was asked in a session: its level, options and right answer, when it was asked, and how the
+ * player answered (or that time ran out).
+ */
 public class AskedQuestion {
 
 	private int questionId;

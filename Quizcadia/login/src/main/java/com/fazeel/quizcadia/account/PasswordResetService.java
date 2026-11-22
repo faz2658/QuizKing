@@ -17,6 +17,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.fazeel.quizcadia.mail.Mailer;
+import com.fazeel.quizcadia.session.SessionService;
 
 /**
  * Forgot password: emails a one-time link that lets the owner of the address choose a new password.
@@ -38,11 +39,11 @@ public class PasswordResetService {
 	private final Mailer mailer;
 	private final Clock clock;
 	private final String publicUrl;
-	private final com.fazeel.quizcadia.session.SessionService sessions;
+	private final SessionService sessions;
 
 	public PasswordResetService(AccountRepository accounts, PasswordResetRepository resets, PasswordEncoder encoder,
 			Mailer mailer, Clock clock, @Value("${quizcadia.public-url}") String publicUrl,
-			com.fazeel.quizcadia.session.SessionService sessions) {
+			SessionService sessions) {
 		this.sessions = sessions;
 		this.accounts = accounts;
 		this.resets = resets;
@@ -52,6 +53,10 @@ public class PasswordResetService {
 		this.publicUrl = publicUrl.replaceAll("/+$", "");
 	}
 
+	/**
+	 * Emails a reset link valid for 30 minutes, at most 3 an hour per account. Does nothing, and says nothing, for
+	 * an unknown email; also clears links that expired over a day ago.
+	 */
 	@Transactional
 	public void requestReset(String email) {
 		Instant now = clock.instant();

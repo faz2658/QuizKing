@@ -21,13 +21,16 @@ import com.fazeel.quizcadia.domain.GameType;
 @Component
 public class CatalogCards {
 
+	/** A topic's id, name and question count, read without loading its questions. */
 	public record TopicCard(int topicId, String topicName, int questionCount) {
 	}
 
+	/** A category's name, image, country and topic cards, read without loading any questions. */
 	public record CategoryCard(int categoryId, String categoryName, String categoryImage, String countryCode,
 			List<TopicCard> topics) {
 	}
 
+	/** What a game list needs about one game, with its question count worked out by the database. */
 	public record GameCard(int gameId, String gameName, String gameDescription, String gameImage, String gameRules,
 			int categoryId, Integer topicId, String topicName, GameType gameType, GameQuestionLevel questionLevels,
 			int questionCount, String createdBy, Date createdOn) {
@@ -39,14 +42,17 @@ public class CatalogCards {
 		this.mongo = mongo;
 	}
 
+	/** Every solo game as a card. */
 	public List<GameCard> games() {
 		return games("game", "questionLevels", "questions");
 	}
 
+	/** Every multiplayer game as a card. */
 	public List<GameCard> multiPlayerGames() {
 		return games("multiplayergame", "questionLevel", "autoquestions");
 	}
 
+	/** Every category as a card: MongoDB counts each topic's questions instead of sending them. */
 	public List<CategoryCard> categories() {
 		AggregationOperation project = ctx -> new Document("$project", new Document("categoryName", 1)
 				.append("categoryImage", 1).append("countryCode", 1)

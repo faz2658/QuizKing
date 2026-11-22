@@ -2,6 +2,7 @@ package com.fazeel.quizcadia.domain;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 
+/** Seconds to answer at each level. */
 public class GameQuestionTime {
 
 	private int gqTimeId;
@@ -42,7 +43,6 @@ public class GameQuestionTime {
 	}
 
 	public GameQuestionTime(int gqTimeId, int easyQuestionsTime, int mediumQuestionsTime, int advanceQuestionsTime) {
-		super();
 		this.gqTimeId = gqTimeId;
 		this.easyQuestionsTime = easyQuestionsTime;
 		this.mediumQuestionsTime = mediumQuestionsTime;

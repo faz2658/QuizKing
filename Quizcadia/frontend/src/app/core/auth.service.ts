@@ -19,6 +19,7 @@ export function rememberInvite(code: string): void {
   }
 }
 
+/** The invite code waiting to be sent with the sign-up, if any. */
 export function pendingInvite(): string | null {
   try {
     return localStorage.getItem(INVITE_KEY);
@@ -62,10 +63,12 @@ export class AuthService {
   readonly isAdmin = computed(() => this.session()?.user.role === 'ADMIN');
   private refreshing: Observable<TokenResponse> | null = null;
 
+  /** Signs in with email and password and keeps the session. */
   login(email: string, password: string): Observable<TokenResponse> {
     return this.http.post<TokenResponse>('/api/v1/auth/login', { email, password }).pipe(tap((t) => { this.store(t); track('login', { method: 'password' }); }));
   }
 
+  /** Creates an account (with any pending invite code) and signs in. */
   register(userName: string, email: string, password: string): Observable<TokenResponse> {
     return this.http
       .post<TokenResponse>('/api/v1/auth/register', { userName, email, password, invite: pendingInvite() })
@@ -93,6 +96,7 @@ export class AuthService {
     return this.refresh().pipe(tap(() => { track('login', { method: 'google' }); clearInvite(); }));
   }
 
+  /** Signs in with a Google ID token (with any pending invite code); a new email gets a new account. */
   signInWithGoogle(credential: string): Observable<TokenResponse> {
     return this.http
       .post<TokenResponse>('/api/v1/auth/google', { credential, invite: pendingInvite() })

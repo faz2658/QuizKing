@@ -1,7 +1,7 @@
 import { DatePipe } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, inject, signal } from '@angular/core';
-import { toObservable, toSignal } from '@angular/core/rxjs-interop';
-import { catchError, forkJoin, map, of, startWith, switchMap } from 'rxjs';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { catchError, forkJoin, map, of, startWith } from 'rxjs';
 import { ReportsApi } from '../core/api';
 import { AuthService } from '../core/auth.service';
 import { errorMessage } from '../core/http-errors';
@@ -12,6 +12,7 @@ import { ProgressStrip } from '../ui/progress-strip';
 
 const MODE_LABEL: Record<GameMode, string> = { SINGLE: 'Timed', MULTI: 'Multiplayer', ADAPTIVE: 'Adaptive' };
 
+/** The player's stats page: progress, badges and game history. */
 @Component({
   selector: 'mv-profile',
   imports: [DatePipe, CountUp, BadgeGrid, ProgressStrip],

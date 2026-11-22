@@ -1,7 +1,13 @@
 package com.fazeel.quizcadia.api;
 
 import java.time.Duration;
+import java.util.Comparator;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Locale;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.function.Supplier;
 
 import org.springframework.http.CacheControl;
 import org.springframework.http.HttpStatus;
@@ -13,6 +19,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -20,13 +27,10 @@ import com.fazeel.quizcadia.api.Summaries.CategorySummary;
 import com.fazeel.quizcadia.api.Summaries.CountrySummary;
 import com.fazeel.quizcadia.api.Summaries.GameSummary;
 import com.fazeel.quizcadia.api.Summaries.TopicSummary;
+import com.fazeel.quizcadia.catalog.CatalogCards;
 import com.fazeel.quizcadia.catalog.GameCatalogService;
 import com.fazeel.quizcadia.domain.Category;
-import com.fazeel.quizcadia.catalog.CatalogCards;
 import com.fazeel.quizcadia.domain.Game;
-import java.util.HashMap;
-import java.util.Map;
-import org.springframework.web.bind.annotation.RequestParam;
 import com.fazeel.quizcadia.domain.MultiPlayerGame;
 
 /**
@@ -49,7 +53,7 @@ public class GameManagerController {
 
 	private static final long MAX_AGE_MS = 60_000;
 
-	private final java.util.concurrent.ConcurrentHashMap<String, Snapshot<?>> lists = new java.util.concurrent.ConcurrentHashMap<>();
+	private final ConcurrentHashMap<String, Snapshot<?>> lists = new ConcurrentHashMap<>();
 
 	public GameManagerController(GameCatalogService catalog, CatalogCards cards) {
 		this.catalog = catalog;
@@ -57,7 +61,7 @@ public class GameManagerController {
 	}
 
 	@SuppressWarnings("unchecked")
-	private <T> List<T> shared(String name, java.util.function.Supplier<List<T>> build) {
+	private <T> List<T> shared(String name, Supplier<List<T>> build) {
 		long v = catalog.version();
 		long now = System.currentTimeMillis();
 		Snapshot<T> s = (Snapshot<T>) lists.get(name);
@@ -88,6 +92,9 @@ public class GameManagerController {
 		return ResponseEntity.ok().cacheControl(SHARED_LIST).body(items);
 	}
 
+	/**
+	 * Every category with its topics and how many questions each has (no questions themselves); cacheable briefly.
+	 */
 	@GetMapping("/categories")
 	public ResponseEntity<List<CategorySummary>> categories() {
 		return cacheable(categoryList());
@@ -125,7 +132,7 @@ public class GameManagerController {
 					.map(c -> new CountrySummary(c.countryCode(), c.categoryId(), c.categoryName(),
 							games.getOrDefault(c.countryCode(), 0),
 							c.topic().stream().mapToInt(TopicSummary::questionCount).sum()))
-					.sorted(java.util.Comparator.comparing(CountrySummary::country)).toList();
+					.sorted(Comparator.comparing(CountrySummary::country)).toList();
 		}));
 	}
 
@@ -137,7 +144,7 @@ public class GameManagerController {
 		if (country == null || country.isBlank()) {
 			return all;
 		}
-		String c = country.trim().toUpperCase(java.util.Locale.ROOT);
+		String c = country.trim().toUpperCase(Locale.ROOT);
 		return all.stream().filter(g -> "WORLD".equals(c) ? g.country() == null : c.equals(g.country())).toList();
 	}
 
@@ -155,6 +162,7 @@ public class GameManagerController {
 		});
 	}
 
+	/** Adds or merges a category and its topics (admin); questions are merged by id, never wiped. */
 	@PostMapping("/category")
 	public Category saveCategory(@RequestBody Category category) {
 		return catalog.mergeCategory(category);
@@ -162,6 +170,10 @@ public class GameManagerController {
 
 	// single-player games
 
+	/**
+	 * Creates a solo game on a topic (admin). Fails when the topic hasn't enough questions for the game's level
+	 * mix.
+	 */
 	@PostMapping("/category/{categoryId}/{topicName}")
 	@ResponseStatus(HttpStatus.CREATED)
 	public GameSummary createGame(@PathVariable int categoryId, @PathVariable String topicName,
@@ -169,31 +181,37 @@ public class GameManagerController {
 		return GameSummary.of(catalog.createGame(categoryId, topicName, request));
 	}
 
+	/** The solo games, all or filtered by country (WORLD: the shared topics that belong to no country). */
 	@GetMapping("/games")
 	public ResponseEntity<List<GameSummary>> games(@RequestParam(required = false) String country) {
 		return cacheable(forCountry(allGames(), country));
 	}
 
+	/** The solo games built on one topic of a category. */
 	@GetMapping("/category/{categoryId}/{topicName}")
 	public List<GameSummary> gamesInTopic(@PathVariable int categoryId, @PathVariable String topicName) {
 		return catalog.gamesInTopic(categoryId, topicName).stream().map(GameSummary::of).toList();
 	}
 
+	/** Solo games whose name starts with the given text (case ignored), for search-as-you-type. */
 	@GetMapping("/gamesNameStartsWith/{prefix}")
 	public List<GameSummary> gamesNamedLike(@PathVariable String prefix) {
 		return catalog.gamesNamedLike(prefix).stream().map(GameSummary::of).toList();
 	}
 
+	/** Solo games with exactly this name (case ignored). */
 	@GetMapping("/games/{gameName}")
 	public List<GameSummary> gamesNamed(@PathVariable String gameName) {
 		return catalog.gamesNamed(gameName).stream().map(GameSummary::of).toList();
 	}
 
+	/** Changes a game's name, description, rules, image or question times (admin). */
 	@PutMapping("/updategame/{gameId}")
 	public Game updateGame(@PathVariable int gameId, @RequestBody Game changes) {
 		return catalog.updateGame(gameId, changes);
 	}
 
+	/** Deletes a solo or multiplayer game (admin) and tells the engines to forget it. */
 	@DeleteMapping({ "/deletegame/{gameId}", "/deletemultigame/{gameId}" })
 	@ResponseStatus(HttpStatus.NO_CONTENT)
 	public void deleteGame(@PathVariable int gameId) {
@@ -202,6 +220,7 @@ public class GameManagerController {
 
 	// multiplayer games
 
+	/** Creates a multiplayer game on a topic (admin), checking the topic has enough questions for its level mix. */
 	@PostMapping("/category/mp/{categoryId}/{topicName}")
 	@ResponseStatus(HttpStatus.CREATED)
 	public GameSummary createMultiPlayerGame(@PathVariable int categoryId, @PathVariable String topicName,
@@ -209,11 +228,13 @@ public class GameManagerController {
 		return GameSummary.of(catalog.createMultiPlayerGame(categoryId, topicName, request));
 	}
 
+	/** The multiplayer games, all or filtered by country like games(). */
 	@GetMapping("/games/mp")
 	public ResponseEntity<List<GameSummary>> multiPlayerGames(@RequestParam(required = false) String country) {
 		return cacheable(forCountry(allMultiPlayerGames(), country));
 	}
 
+	/** The multiplayer games built on one topic of a category. */
 	@GetMapping("/mp/category/{categoryId}/{topicName}")
 	public List<GameSummary> multiPlayerGamesInTopic(@PathVariable int categoryId, @PathVariable String topicName) {
 		return catalog.multiPlayerGamesInTopic(categoryId, topicName).stream().map(GameSummary::of).toList();

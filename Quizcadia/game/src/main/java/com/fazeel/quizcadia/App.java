@@ -9,6 +9,10 @@ import org.springframework.context.annotation.Bean;
 
 import com.fazeel.quizcadia.session.QuizBuilder;
 
+/**
+ * The solo game engine: plays quizzes one question at a time, plus the Daily Challenge, World Arena, friend
+ * challenges and duels, and "How well do you know me?" quizzes.
+ */
 @SpringBootApplication
 public class App {
 

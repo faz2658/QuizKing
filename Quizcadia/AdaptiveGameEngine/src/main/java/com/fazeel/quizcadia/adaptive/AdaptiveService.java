@@ -1,24 +1,30 @@
 package com.fazeel.quizcadia.adaptive;
 
 import java.time.Clock;
-import java.util.List;
 import java.time.Instant;
+import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.fazeel.quizcadia.adaptive.AdaptiveSession.Outcome;
 import com.fazeel.quizcadia.adaptive.AdaptiveSession.Status;
+import com.fazeel.quizcadia.adaptive.GameRepository;
 import com.fazeel.quizcadia.adaptive.Ports.GameSource;
 import com.fazeel.quizcadia.adaptive.Ports.ResultEvents;
-import com.fazeel.quizcadia.adaptive.GameRepository;
 import com.fazeel.quizcadia.adaptive.SeenQuestionRepository;
 import com.fazeel.quizcadia.adaptive.SessionRepository;
 import com.fazeel.quizcadia.domain.AdaptiveResult;
 import com.fazeel.quizcadia.domain.Game;
 
+/**
+ * Runs adaptive sessions: starts them from a cached game and its topic's questions, records answers, and publishes
+ * the result once a session completes.
+ */
 @Service
 public class AdaptiveService {
 
@@ -37,7 +43,7 @@ public class AdaptiveService {
 		this(sessions, games, seen, gameSource, events, poolBuilder, rules, clock, TopicPools.none());
 	}
 
-	@org.springframework.beans.factory.annotation.Autowired
+	@Autowired
 	public AdaptiveService(SessionRepository sessions, GameRepository games, SeenQuestionRepository seen,
 			GameSource gameSource, ResultEvents events, PoolBuilder poolBuilder, AdaptiveRules rules, Clock clock,
 			TopicPools pools) {
@@ -52,14 +58,17 @@ public class AdaptiveService {
 		this.clock = clock;
 	}
 
+	/** Keeps a copy of a game the game manager published, so sessions can start without asking it. */
 	public void cacheGame(Game game) {
 		games.save(game);
 	}
 
+	/** Forgets a deleted game; sessions already running keep their own copy of its questions. */
 	public void removeGame(int gameId) {
 		games.deleteById(gameId);
 	}
 
+	/** Starts a session for the player without a country preference (questions from everywhere). */
 	public AdaptiveSession start(int gameId, int userId) {
 		return start(gameId, userId, null);
 	}
@@ -69,7 +78,7 @@ public class AdaptiveService {
 		Game game = pools.withPool(games.findById(gameId).or(() -> gameSource.fetch(gameId).map(games::save))
 				.orElseThrow(() -> new NotFoundException("No game " + gameId))).forCountry(country);
 		List<Integer> ids = game.questions() == null ? List.of()
-				: game.questions().stream().filter(java.util.Objects::nonNull).map(Game.Question::questionId).toList();
+				: game.questions().stream().filter(Objects::nonNull).map(Game.Question::questionId).toList();
 		Map<Integer, Instant> lastSeen = seen.findByUserIdAndQuestionIdIn(userId, ids).stream()
 				.collect(Collectors.toMap(SeenQuestion::questionId, SeenQuestion::lastSeenAt, (a, b) -> a));
 		List<PooledQuestion> pool = poolBuilder.build(game, lastSeen, rules.totalQuestions());
@@ -78,11 +87,16 @@ public class AdaptiveService {
 		return save(session);
 	}
 
+	/**
+	 * The session as it stands now: questions whose time ran out are closed first (and saved) so the caller never
+	 * sees a stale question.
+	 */
 	public AdaptiveSession get(String sessionId) {
 		AdaptiveSession s = load(sessionId);
 		return s.expireOverdue(clock.instant()) ? save(s) : s;
 	}
 
+	/** Records the player's answer to the open question and returns how it went with the updated session. */
 	public AnswerResult answer(String sessionId, int questionId, String answer) {
 		AdaptiveSession s = load(sessionId);
 		Outcome outcome = s.answer(questionId, answer, clock.instant());
@@ -117,6 +131,7 @@ public class AdaptiveService {
 				s.getAsked().size(), s.getCompletedAt(), answers);
 	}
 
+	/** What answering returned: the outcome of that answer and the session after it. */
 	public record AnswerResult(Outcome outcome, AdaptiveSession session) {
 	}
 }

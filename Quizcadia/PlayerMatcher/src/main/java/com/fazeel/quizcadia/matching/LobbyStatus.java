@@ -11,6 +11,7 @@ import java.util.List;
  */
 public record LobbyStatus(State state, int gameId, List<Integer> players, Instant closesAt, String matchId) {
 
+	/** WAITING in the lobby, MATCHED (see matchId), or EXPIRED (too few players joined in time). */
 	public enum State {
 		WAITING, MATCHED, EXPIRED
 	}

@@ -7,6 +7,7 @@ import { errorMessage } from '../core/http-errors';
 import { LobbyStatus } from '../core/models';
 import { livePoll } from '../core/live-poll';
 
+/** Waits in a game's multiplayer lobby and opens the match once players are found. */
 @Component({
   selector: 'mv-lobby',
   imports: [RouterLink],

@@ -2,7 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
 import { Observable } from 'rxjs';
 
+/** A private quiz night (EVENT) or trivia for a venue (VENUE). */
 export type InquiryKind = 'EVENT' | 'VENUE';
+/** Where an admin is with an inquiry. */
 export type InquiryStatus = 'NEW' | 'CONTACTED' | 'BOOKED' | 'CLOSED';
 
 /** A request for a private quiz night (EVENT) or venue trivia (VENUE), sent from /events or /venues. */
@@ -20,6 +22,7 @@ export interface InquiryRequest {
   website?: string;
 }
 
+/** An inquiry as admins see it. */
 export interface Inquiry extends InquiryRequest {
   id: string;
   status: InquiryStatus;
@@ -27,6 +30,7 @@ export interface Inquiry extends InquiryRequest {
   updatedAt: string;
 }
 
+/** Inquiries: anyone can send one, admins list and update them. */
 @Injectable({ providedIn: 'root' })
 export class InquiryApi {
   private readonly http = inject(HttpClient);

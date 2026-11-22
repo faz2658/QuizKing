@@ -1,6 +1,7 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Observable, retry, throwError, timer } from 'rxjs';
 
+/** Shown when a request failed because the device is offline. */
 export const OFFLINE_MESSAGE = "You're offline. Check your connection and try again.";
 
 /** Human-readable message from an HTTP error (RFC 9457 problem details when the backend sent one). */

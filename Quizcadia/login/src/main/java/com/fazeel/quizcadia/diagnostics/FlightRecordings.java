@@ -43,6 +43,10 @@ public class FlightRecordings {
 	static final String CONTINUOUS = "continuous";
 	static final int MAX_SECONDS = 300;
 
+	/**
+	 * A Flight Recorder file: the last seconds recorded now, or the continuous recording when seconds is null. The
+	 * temp file is deleted once sent.
+	 */
 	@ReadOperation(produces = "application/octet-stream")
 	public Resource recording(@Nullable Integer seconds) throws IOException, ParseException, InterruptedException {
 		Path file = Files.createTempFile("quizcadia-", ".jfr");

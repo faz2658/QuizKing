@@ -1,6 +1,7 @@
 package com.fazeel.quizcadia.push;
 
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.util.Locale;
 import java.util.Set;
 
@@ -17,6 +18,7 @@ public final class PushServices {
 	private PushServices() {
 	}
 
+	/** True for an https URL on a known push service (FCM, Apple, Mozilla, Windows) on the default port. */
 	public static boolean allowed(String endpoint) {
 		if (endpoint == null || endpoint.length() > 2048) {
 			return false;
@@ -30,7 +32,7 @@ public final class PushServices {
 			String host = uri.getHost().toLowerCase(Locale.ROOT);
 			return HOSTS.contains(host) || DOMAINS.stream().anyMatch(d -> host.equals(d) || host.endsWith("." + d));
 		}
-		catch (java.net.URISyntaxException e) {
+		catch (URISyntaxException e) {
 			return false;
 		}
 	}

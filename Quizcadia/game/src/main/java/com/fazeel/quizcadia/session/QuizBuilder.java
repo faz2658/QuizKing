@@ -2,10 +2,13 @@ package com.fazeel.quizcadia.session;
 
 import java.time.Instant;
 import java.util.ArrayList;
-import java.util.Comparator;
+import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.EnumMap;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
 import java.util.Objects;
 import java.util.random.RandomGenerator;
@@ -40,6 +43,7 @@ public class QuizBuilder {
 		this.random = random;
 	}
 
+	/** The game's quiz without seen-question or country preferences. */
 	public List<SessionQuestion> build(Game game) {
 		return build(game, Map.of());
 	}
@@ -55,9 +59,9 @@ public class QuizBuilder {
 	 * country, otherwise null, which means general questions only (players from different countries, or a
 	 * country unknown). The same rule as multiplayer matches.
 	 */
-	public static String sharedCountry(java.util.Collection<String> countries) {
+	public static String sharedCountry(Collection<String> countries) {
 		List<String> codes = countries.stream()
-				.map(c -> c == null || c.isBlank() ? null : c.trim().toUpperCase(java.util.Locale.ROOT)).toList();
+				.map(c -> c == null || c.isBlank() ? null : c.trim().toUpperCase(Locale.ROOT)).toList();
 		if (codes.isEmpty() || codes.stream().anyMatch(Objects::isNull) || codes.stream().distinct().count() != 1) {
 			return null;
 		}
@@ -76,7 +80,7 @@ public class QuizBuilder {
 		if (EVERYWHERE.equals(country)) {
 			return build(game, seen);
 		}
-		String home = country == null || country.isBlank() ? null : country.trim().toUpperCase(java.util.Locale.ROOT);
+		String home = country == null || country.isBlank() ? null : country.trim().toUpperCase(Locale.ROOT);
 		List<Questions> playable = Objects.requireNonNullElse(game.getQuestions(), List.<Questions>of()).stream()
 				.filter(QuizBuilder::isPlayable).toList();
 		List<Questions> mine = home == null ? List.of()
@@ -249,14 +253,14 @@ public class QuizBuilder {
 
 	/** Other levels, nearest first (ties: the easier one). */
 	private static List<Difficulty> byDistance(Difficulty d) {
-		return java.util.Arrays.stream(Difficulty.values()).filter(o -> o != d)
+		return Arrays.stream(Difficulty.values()).filter(o -> o != d)
 				.sorted(Comparator.comparingInt((Difficulty o) -> Math.abs(o.level() - d.level()))
 						.thenComparingInt(Difficulty::level))
 				.toList();
 	}
 
 	static boolean isTrueFalse(List<String> options) {
-		return options.size() == 2 && options.stream().map(o -> o.toLowerCase(java.util.Locale.ROOT)).sorted().toList()
+		return options.size() == 2 && options.stream().map(o -> o.toLowerCase(Locale.ROOT)).sorted().toList()
 				.equals(List.of("false", "true"));
 	}
 

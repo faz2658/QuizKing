@@ -4,10 +4,14 @@ import java.time.Instant;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
-import java.util.Map;
-import java.util.TreeMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
+import java.util.Map;
 import java.util.Objects;
+import java.util.Optional;
+import java.util.Set;
+import java.util.TreeMap;
 import java.util.random.RandomGenerator;
 import java.util.stream.Stream;
 
@@ -27,6 +31,7 @@ public class MatchFactory {
 		this.random = random;
 	}
 
+	/** The match for these players from this game, when no one has seen any of its questions yet. */
 	public MultiplayerMatch create(Match match, MultiPlayerGame game, Instant now) {
 		return create(match, game, now, Map.of());
 	}
@@ -80,9 +85,9 @@ public class MatchFactory {
 	 */
 	public MultiplayerMatch roomQuiz(Match match, List<MultiPlayerGame.Question> pool, Instant now) {
 		Match.RoomQuiz rules = match.quiz();
-		java.util.Set<Integer> ids = new java.util.HashSet<>();
+		Set<Integer> ids = new HashSet<>();
 		List<MatchQuestion> questions = pool.stream().filter(q -> q != null && ids.add(q.questionId()))
-				.map(this::toQuestion).flatMap(java.util.Optional::stream).limit(Math.max(1, rules.questions())).toList();
+				.map(this::toQuestion).flatMap(Optional::stream).limit(Math.max(1, rules.questions())).toList();
 		return MultiplayerMatch.roomQuiz(match.matchId(), match.players(), match.names(), questions,
 				rules.secondsPerQuestion() > 0 ? rules.secondsPerQuestion() : ROOM_QUIZ_SECONDS, rules.revealSeconds(),
 				match.screenId(), now);
@@ -138,7 +143,7 @@ public class MatchFactory {
 		takeUnseen(own, need, picked, homeShare, seenBy);
 		takeUnseen(world, need, picked, Integer.MAX_VALUE, seenBy);
 		takeUnseen(own, need, picked, Integer.MAX_VALUE, seenBy);
-		List<Candidate> rest = java.util.stream.Stream.concat(own.stream(), world.stream())
+		List<Candidate> rest = Stream.concat(own.stream(), world.stream())
 				.filter(c -> !picked.contains(c))
 				.sorted(Comparator.comparingInt(c -> seenBy.getOrDefault(c.question().getQuestionId(), 0)))
 				.toList();
@@ -218,30 +223,31 @@ public class MatchFactory {
 	}
 
 	private static String code(String country) {
-		return country == null || country.isBlank() ? null : country.trim().toUpperCase(java.util.Locale.ROOT);
+		return country == null || country.isBlank() ? null : country.trim().toUpperCase(Locale.ROOT);
 	}
 
+	/** A question that could go into the match, with its level and its country (null for general questions). */
 	private record Candidate(int level, MatchQuestion question, String country) {
 	}
 
-	private java.util.Optional<MatchQuestion> toQuestion(MultiPlayerGame.Question q) {
+	private Optional<MatchQuestion> toQuestion(MultiPlayerGame.Question q) {
 		if (q == null || blank(q.questionStem()) || blank(q.correctAnswer())) {
-			return java.util.Optional.empty();
+			return Optional.empty();
 		}
 		List<String> options = new ArrayList<>(Stream.of(q.option1(), q.option2(), q.option3(), q.option4())
 				.filter(o -> !blank(o)).map(String::trim).distinct().toList());
 		String correct = options.stream().filter(o -> o.equalsIgnoreCase(q.correctAnswer().trim())).findFirst()
 				.orElse(null);
 		if (options.size() < 2 || correct == null) {
-			return java.util.Optional.empty();
+			return Optional.empty();
 		}
-		if (options.size() == 2 && options.stream().map(o -> o.toLowerCase(java.util.Locale.ROOT)).sorted().toList()
+		if (options.size() == 2 && options.stream().map(o -> o.toLowerCase(Locale.ROOT)).sorted().toList()
 				.equals(List.of("false", "true"))) {
 			options = new ArrayList<>(List.of("True", "False")); // keep the natural order
 		} else {
 			Collections.shuffle(options, random);
 		}
-		return java.util.Optional.of(new MatchQuestion(q.questionId(), q.questionStem().trim(), options, correct));
+		return Optional.of(new MatchQuestion(q.questionId(), q.questionStem().trim(), options, correct));
 	}
 
 	private static boolean blank(String s) {

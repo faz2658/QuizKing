@@ -14,6 +14,10 @@ import { MaintenanceBanner } from './ui/maintenance-banner';
 import { Support } from './ui/support';
 import { ThemeSwitch } from './ui/theme-switch';
 
+/**
+ * The app shell around every page: the nav, the page outlet, the backgrounds, the theme switch, support, and the
+ * consent and maintenance banners.
+ */
 @Component({
   selector: 'app-root',
   imports: [NgTemplateOutlet, RouterOutlet, RouterLink, RouterLinkActive, Aurora, NeuralBg, ConsentBanner, MaintenanceBanner, Support, ThemeSwitch],

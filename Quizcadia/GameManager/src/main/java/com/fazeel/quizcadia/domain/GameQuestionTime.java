@@ -3,23 +3,19 @@ package com.fazeel.quizcadia.domain;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonCreator;
 
+/** Seconds allowed for a question at each level (easy, medium, advanced). */
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GameQuestionTime {
 
-	/*@Id
-	private int gqTimeId;*/
 	private int easyQuestionsTime;
 	private int mediumQuestionsTime;
 	private int advanceQuestionsTime;
 
 	@JsonCreator
-
 	public GameQuestionTime() {
-		// TODO Auto-generated constructor stub
 	}
 
 	public GameQuestionTime(int easyQuestionsTime, int mediumQuestionsTime, int advanceQuestionsTime) {
-		super();
 		this.easyQuestionsTime = easyQuestionsTime;
 		this.mediumQuestionsTime = mediumQuestionsTime;
 		this.advanceQuestionsTime = advanceQuestionsTime;
@@ -54,8 +50,4 @@ public class GameQuestionTime {
 		return "GameQuestionTime [easyQuestionsTime=" + easyQuestionsTime + ", mediumQuestionsTime="
 				+ mediumQuestionsTime + ", advanceQuestionsTime=" + advanceQuestionsTime + "]";
 	}
-
-	
-	
-
 }

@@ -8,6 +8,7 @@ public record AdaptiveResult(String sessionId, int userId, int gameId, String ga
 		int score, int finalLevel, int highestLevel, int correctAnswers, int totalQuestions, Instant completedAt,
 		List<Answer> answers) {
 
+	/** One answered (or timed-out) question of a finished session, as reported to the reporting service. */
 	public record Answer(int questionId, int level, String question, String correctAnswer, String answer,
 			boolean correct, boolean timedOut, int points) {
 	}

@@ -28,12 +28,18 @@ public class AccountStats {
 		this.clock = clock;
 	}
 
+	/** Sign-ups on one day. */
 	public record DayCount(LocalDate day, int count) {
 	}
 
+	/** An account as the admin page lists it. */
 	public record Member(int userId, String userName, String email, Instant createdAt, boolean google, boolean admin) {
 	}
 
+	/**
+	 * The admin numbers about accounts: totals by kind, sign-ups today, this week and this month, a day-by-day
+	 * series and the newest accounts.
+	 */
 	public record View(int total, int google, int password, int admins, int today, int last7Days, int last30Days,
 			List<DayCount> signupsByDay, List<Member> recent) {
 	}

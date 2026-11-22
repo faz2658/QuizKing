@@ -10,6 +10,7 @@ import { shareLink } from '../core/invite';
 import { DuelView, GameCard } from '../core/models';
 import { WORLD } from '../core/region';
 
+/** The link to send a friend for a challenge. */
 export function duelLink(id: string): string {
   return `${location.origin}/vs/${id}`;
 }

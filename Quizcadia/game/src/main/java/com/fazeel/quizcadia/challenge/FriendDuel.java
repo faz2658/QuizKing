@@ -25,6 +25,7 @@ public record FriendDuel(@Id String id, @Version Long version, int gameId, Strin
 		boolean international, Side challenger, Side opponent, Status status, List<SessionQuestion> questions,
 		Instant createdAt, Instant acceptedAt, Instant expiresAt) {
 
+	/** PENDING until a friend accepts or declines. */
 	public enum Status {
 		PENDING, ACCEPTED, DECLINED
 	}

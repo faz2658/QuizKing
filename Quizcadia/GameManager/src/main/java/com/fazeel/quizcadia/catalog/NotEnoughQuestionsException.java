@@ -1,5 +1,9 @@
 package com.fazeel.quizcadia.catalog;
 
+/**
+ * The topic hasn't enough questions of a level for the game's mix; the message says how many were wanted and how
+ * many exist.
+ */
 public class NotEnoughQuestionsException extends InvalidGameException {
 
 	public NotEnoughQuestionsException(int level, int wanted, int available) {

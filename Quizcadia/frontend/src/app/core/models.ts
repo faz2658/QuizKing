@@ -1,7 +1,9 @@
 /** Shapes of the backend responses the UI uses. */
 
+/** A question's level in solo games. */
 export type Difficulty = 'EASY' | 'MEDIUM' | 'ADVANCED';
 
+/** The signed-in player as the token describes them; GUEST for a guest account. */
 export interface User {
   userId: number;
   userName: string;
@@ -9,6 +11,7 @@ export interface User {
   role: 'USER' | 'ADMIN' | 'GUEST';
 }
 
+/** What the login service returns on sign-in, registration and refresh. */
 export interface TokenResponse {
   token: string;
   tokenType: string;
@@ -18,6 +21,7 @@ export interface TokenResponse {
   sessionExpiresAt?: string | null;
 }
 
+/** A game in the catalog or the recommendations, without its questions. */
 export interface GameCard {
   gameId: number;
   gameName: string;
@@ -45,6 +49,7 @@ export interface QuestionView {
   points: number;
 }
 
+/** A solo game in progress or finished, from the game engine. */
 export interface SessionView {
   sessionId: string;
   gameId: number;
@@ -64,14 +69,17 @@ export interface SessionView {
   lifelines?: Lifeline[];
 }
 
+/** The three lifelines, each usable once per game. */
 export type Lifeline = 'FIFTY_FIFTY' | 'SKIP' | 'EXTRA_TIME';
 
+/** The game after a lifeline; skipped holds the skipped question's outcome for a skip. */
 export interface LifelineView {
   lifeline: Lifeline;
   skipped: AnswerView | null;
   session: SessionView;
 }
 
+/** What happened to an answer in a solo game, with the updated session. */
 export interface AnswerView {
   correct: boolean;
   timedOut: boolean;
@@ -84,6 +92,7 @@ export interface AnswerView {
   explanation?: string | null;
 }
 
+/** One question in the end-of-game review. */
 export interface ReviewItem {
   questionId?: number;
   number: number;
@@ -100,6 +109,7 @@ export interface ReviewItem {
   explanation?: string | null;
 }
 
+/** A finished solo game with its review. */
 export interface ResultView {
   sessionId: string;
   gameId: number;
@@ -128,6 +138,7 @@ export interface AdaptiveQuestion {
   points: number;
 }
 
+/** An adaptive game: after each block of questions the level goes up or down, by the share answered right. */
 export interface AdaptiveSession {
   sessionId: string;
   gameId: number;
@@ -140,6 +151,7 @@ export interface AdaptiveSession {
   currentQuestion: AdaptiveQuestion | null;
 }
 
+/** What happened to an adaptive answer, and whether the level changed. */
 export interface AdaptiveAnswer {
   correct: boolean;
   correctAnswer: string;
@@ -157,6 +169,7 @@ export interface LobbyStatus {
   matchId: string | null;
 }
 
+/** A multiplayer match as one player (or the big screen) sees it. */
 export interface MatchView {
   matchId: string;
   gameId: number;
@@ -203,9 +216,12 @@ export interface MatchView {
   you?: { rank: number | null; score: number; lastAnswer: string | null; lastCorrect: boolean; lastPoints: number } | null;
 }
 
+/** Where a room quiz is: the countdown, a question, its reveal, or the end. */
 export type MatchPhase = 'GET_READY' | 'QUESTION' | 'REVEAL' | 'FINISHED';
+/** What the host of a room quiz can do: reveal the answer, move on, or end the quiz. */
 export type HostAction = 'REVEAL' | 'NEXT' | 'END';
 
+/** What happened to an answer in a match, with the updated match. */
 export interface MatchAnswer {
   correct: boolean;
   wonQuestion: boolean;
@@ -216,6 +232,7 @@ export interface MatchAnswer {
 // ---- reports ----
 export type GameMode = 'SINGLE' | 'MULTI' | 'ADAPTIVE';
 
+/** One finished game in a player's history. */
 export interface GameReport {
   id: string;
   mode: GameMode;
@@ -232,12 +249,14 @@ export interface GameReport {
   completedAt: string;
 }
 
+/** A player's totals for one mode. */
 export interface ModeSummary {
   gamesPlayed: number;
   bestScore: number;
   averageAccuracy: number;
 }
 
+/** A player's totals over every mode. */
 export interface UserSummary {
   userId: number;
   gamesPlayed: number;
@@ -257,12 +276,14 @@ export interface ImportStatus {
   message: string | null;
 }
 
+/** How many questions a topic has; shown on the welcome page. */
 export interface TopicStats {
   category: string;
   topic: string;
   questions: number;
 }
 
+/** An AI-written question waiting for an admin to approve or reject it. */
 export interface DraftQuestion {
   id: string;
   categoryId: number;
@@ -281,6 +302,7 @@ export interface DraftQuestion {
   };
 }
 
+/** How a request for AI drafts went: how many were created and why the others were dropped. */
 export interface GenerationResult {
   requested: number;
   created: number;
@@ -296,8 +318,13 @@ export interface Category {
   topic: { topicId: number; topicName: string; questionCount: number }[] | null;
 }
 
+/**
+ * What kind of solo game a session is: a normal game, the Daily Challenge, a custom quiz, a friend challenge or a
+ * duel.
+ */
 export type SessionVariant = 'STANDARD' | 'DAILY' | 'CUSTOM' | 'CHALLENGE' | 'DUEL';
 
+/** Today's Daily Challenge from the player's side. */
 export interface DailyView {
   date: string;
   totalQuestions: number;
@@ -309,6 +336,7 @@ export interface DailyView {
   secondsUntilNext: number;
 }
 
+/** A row of the Daily Challenge leaderboard. */
 export interface DailyEntry {
   rank: number;
   userId: number;
@@ -320,6 +348,7 @@ export interface DailyEntry {
   country?: string | null;
 }
 
+/** The Daily Challenge leaderboard for one day, with the player's own row. */
 export interface DailyBoard {
   date: string;
   players: number;
@@ -329,6 +358,7 @@ export interface DailyBoard {
   place?: { country: string | null; countryRank: number; countryPlayers: number; topPercent: number } | null;
 }
 
+/** A country's row in the weekly Country Cup. */
 export interface CupEntry {
   rank: number;
   country: string;
@@ -348,6 +378,7 @@ export interface CupView {
   lastWeek: { country: string; points: number } | null;
 }
 
+/** The player's run of days played. */
 export interface Streak {
   current: number;
   best: number;
@@ -356,12 +387,14 @@ export interface Streak {
   shields?: number;
 }
 
+/** The player's invite code and what it earned. */
 export interface InviteView {
   code: string;
   invited: number;
   shields: number;
 }
 
+/** The player's XP, level and title, streak and games played. */
 export interface Progress {
   userId: number;
   xp: number;
@@ -373,8 +406,10 @@ export interface Progress {
   gamesPlayed: number;
 }
 
+/** The time span a leaderboard covers. */
 export type BoardPeriod = 'DAY' | 'WEEK' | 'ALL';
 
+/** A row of the XP leaderboard. */
 export interface XpEntry {
   rank: number;
   userId: number;
@@ -385,6 +420,7 @@ export interface XpEntry {
   country?: string | null;
 }
 
+/** The XP leaderboard for a period, optionally for one category, with the player's own row. */
 export interface XpBoard {
   period: BoardPeriod;
   categoryId: number | null;
@@ -393,6 +429,7 @@ export interface XpBoard {
   you: XpEntry | null;
 }
 
+/** A badge and how far the player is towards it; unlockedAt is set once earned. */
 export interface Achievement {
   id: string;
   title: string;
@@ -403,11 +440,13 @@ export interface Achievement {
   unlockedAt: string | null;
 }
 
+/** A player waiting in a private room. */
 export interface RoomPlayer {
   userId: number;
   name: string;
 }
 
+/** A private room: who is in it, its state and, once started, its match. */
 export interface RoomStatus {
   code: string;
   gameId: number;
@@ -422,6 +461,7 @@ export interface RoomStatus {
   quiz?: boolean;
 }
 
+/** A friend challenge from the caller's side; yourStatus is OWN for the challenger. */
 export interface ChallengeView {
   id: string;
   challengerName: string;
@@ -446,6 +486,7 @@ export interface DuelPlayer {
   sessionId: string | null;
 }
 
+/** Where a challenge between two friends stands. */
 export type DuelState = 'WAITING' | 'DECLINED' | 'EXPIRED' | 'PLAYING' | 'FINISHED';
 
 /** A challenge between two friends, from your side. */
@@ -466,8 +507,10 @@ export interface DuelView {
   expiresAt: string | null;
 }
 
+/** Why a player flagged a question. */
 export type FlagReason = 'WRONG_ANSWER' | 'UNCLEAR' | 'TYPO' | 'OFFENSIVE' | 'OTHER';
 
+/** A question as the question bank stores it (admin). */
 export interface BankQuestion {
   questionId: number;
   questionStem: string;
@@ -481,6 +524,7 @@ export interface BankQuestion {
   explanation?: string | null;
 }
 
+/** A question players disliked or flagged, with their votes, reasons and notes. */
 export interface FeedbackItem {
   questionId: number;
   categoryId: number;
@@ -493,6 +537,7 @@ export interface FeedbackItem {
   notes: string[];
 }
 
+/** A question taken out of the games because of player feedback; an admin can restore it. */
 export interface RetiredQuestion {
   questionId: number;
   categoryId: number;
@@ -505,24 +550,29 @@ export interface RetiredQuestion {
   retiredAt: string;
 }
 
+/** The admin's question feedback page. */
 export interface FeedbackReview {
   questions: FeedbackItem[];
   retired: RetiredQuestion[];
 }
 
+/** The difficulty of a custom quiz; MIXED mixes all three. */
 export type CustomDifficulty = 'EASY' | 'MEDIUM' | 'ADVANCED' | 'MIXED';
 
+/** How many players are online in a country. */
 export interface CountryCount {
   country: string;
   players: number;
 }
 
+/** A multiplayer lobby with players waiting. */
 export interface OpenLobby {
   gameId: number;
   players: number;
   closesAt: string;
 }
 
+/** Who is online now: by country, in open lobbies and in the quick-match queue. */
 export interface OnlineView {
   online: number;
   countries: CountryCount[];
@@ -530,6 +580,7 @@ export interface OnlineView {
   quickQueue: number;
 }
 
+/** The player's place in the quick-match queue; a bot joins when nobody else does in time. */
 export interface QuickStatus {
   state: 'WAITING' | 'MATCHED' | 'NOT_IN_QUEUE' | 'NO_GAMES';
   queueSize: number;
@@ -540,13 +591,16 @@ export interface QuickStatus {
   withBot: boolean;
 }
 
+/** Countries ranked by their players' XP for a period. */
 export interface CountryBoard {
   period: BoardPeriod;
   countries: { rank: number; country: string; xp: number; players: number }[];
 }
 
+/** Where a World Arena round is: before joining opens, joining, live, or finished. */
 export type ArenaPhase = 'SOON' | 'JOINING' | 'LIVE' | 'FINISHED';
 
+/** A player's place in a World Arena round. */
 export interface ArenaStanding {
   rank: number;
   userId: number;
@@ -556,6 +610,7 @@ export interface ArenaStanding {
   score: number;
 }
 
+/** A World Arena round as the player sees it. */
 export interface ArenaRound {
   roundId: string;
   phase: ArenaPhase;
@@ -570,6 +625,7 @@ export interface ArenaRound {
   endsAt: string | null;
 }
 
+/** The round to show, the one before it, and the server time to sync clocks with. */
 export interface ArenaView {
   serverTime: string;
   round: ArenaRound;

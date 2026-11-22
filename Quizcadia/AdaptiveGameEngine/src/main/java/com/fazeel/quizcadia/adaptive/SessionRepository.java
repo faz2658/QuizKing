@@ -1,9 +1,8 @@
 package com.fazeel.quizcadia.adaptive;
 
-import java.util.List;
-
 import org.springframework.data.mongodb.repository.MongoRepository;
 
+/** Adaptive sessions, saved after every change (optimistic locking via the session's version). */
 public interface SessionRepository extends MongoRepository<AdaptiveSession, String> {
 
 }

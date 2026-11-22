@@ -1,6 +1,10 @@
 package com.fazeel.quizcadia.api;
 
 import java.time.Clock;
+import java.time.Duration;
+import java.time.Instant;
+import java.util.concurrent.atomic.AtomicReference;
+import java.util.function.Supplier;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -9,13 +13,16 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.context.request.async.DeferredResult;
 
 import com.fazeel.quizcadia.api.Views.AnswerRequest;
 import com.fazeel.quizcadia.api.Views.AnswerView;
 import com.fazeel.quizcadia.api.Views.MatchView;
+import com.fazeel.quizcadia.auth.Callers;
 import com.fazeel.quizcadia.match.MatchService;
 import com.fazeel.quizcadia.match.MatchService.AnswerResult;
-import com.fazeel.quizcadia.auth.Callers;
+import com.fazeel.quizcadia.match.MatchUpdates;
+import com.fazeel.quizcadia.match.MultiplayerMatch;
 
 import jakarta.validation.Valid;
 
@@ -26,14 +33,18 @@ public class MatchController {
 
 	private final MatchService service;
 	private final Clock clock;
-	private final com.fazeel.quizcadia.match.MatchUpdates updates;
+	private final MatchUpdates updates;
 
-	public MatchController(MatchService service, Clock clock, com.fazeel.quizcadia.match.MatchUpdates updates) {
+	public MatchController(MatchService service, Clock clock, MatchUpdates updates) {
 		this.service = service;
 		this.clock = clock;
 		this.updates = updates;
 	}
 
+	/**
+	 * The match as the caller sees it now (players see only their own answers; the open question never shows its
+	 * answer).
+	 */
 	@GetMapping("/{matchId}")
 	public MatchView match(@PathVariable String matchId, @RequestParam int userId) {
 		Callers.requireSelf(userId);
@@ -49,23 +60,23 @@ public class MatchController {
 	 * call this in a loop instead of asking every second.
 	 */
 	@GetMapping("/{matchId}/next")
-	public org.springframework.web.context.request.async.DeferredResult<MatchView> next(@PathVariable String matchId,
+	public DeferredResult<MatchView> next(@PathVariable String matchId,
 			@RequestParam int userId, @RequestParam(required = false) String after) {
 		Callers.requireSelf(userId);
-		java.time.Instant now = clock.instant();
-		com.fazeel.quizcadia.match.MultiplayerMatch m = service.get(matchId, userId);
+		Instant now = clock.instant();
+		MultiplayerMatch m = service.get(matchId, userId);
 		MatchView view = MatchView.of(m, userId, now);
-		java.time.Instant nextChange = m.nextChangeAt(now);
+		Instant nextChange = m.nextChangeAt(now);
 		if (after == null || !after.equals(view.version()) || nextChange == null) {
-			var done = new org.springframework.web.context.request.async.DeferredResult<MatchView>();
+			var done = new DeferredResult<MatchView>();
 			done.setResult(view);
 			return done;
 		}
-		long wait = Math.clamp(java.time.Duration.between(now, nextChange).toMillis() + 150, 200, MAX_WAIT_MS);
-		java.util.function.Supplier<MatchView> fresh = () -> MatchView.of(service.get(matchId, userId), userId, clock.instant());
-		var result = new org.springframework.web.context.request.async.DeferredResult<MatchView>(wait,
-				(java.util.function.Supplier<Object>) () -> fresh.get());
-		java.util.concurrent.atomic.AtomicReference<Runnable> stop = new java.util.concurrent.atomic.AtomicReference<>(() -> {
+		long wait = Math.clamp(Duration.between(now, nextChange).toMillis() + 150, 200, MAX_WAIT_MS);
+		Supplier<MatchView> fresh = () -> MatchView.of(service.get(matchId, userId), userId, clock.instant());
+		var result = new DeferredResult<MatchView>(wait,
+				(Supplier<Object>) () -> fresh.get());
+		AtomicReference<Runnable> stop = new AtomicReference<>(() -> {
 		});
 		result.onCompletion(() -> stop.get().run());
 		awaitChange(matchId, after, fresh, result, stop);
@@ -80,7 +91,7 @@ public class MatchController {
 	/** The host's big screen paces a room quiz: REVEAL the answer, NEXT question, or END it. */
 	@PostMapping("/{matchId}/host")
 	public MatchView host(@PathVariable String matchId, @Valid @RequestBody Views.HostRequest request) {
-		int userId = com.fazeel.quizcadia.auth.Callers.currentUserId();
+		int userId = Callers.currentUserId();
 		return MatchView.of(service.host(matchId, userId, request.action()), userId, clock.instant());
 	}
 
@@ -88,9 +99,9 @@ public class MatchController {
 	 * Answers {@code result} at the next change that this viewer would see. A change they wouldn't (on a phone in a
 	 * room quiz, someone else's answer) waits again instead of sending the same view back.
 	 */
-	private void awaitChange(String matchId, String after, java.util.function.Supplier<MatchView> fresh,
-			org.springframework.web.context.request.async.DeferredResult<MatchView> result,
-			java.util.concurrent.atomic.AtomicReference<Runnable> stop) {
+	private void awaitChange(String matchId, String after, Supplier<MatchView> fresh,
+			DeferredResult<MatchView> result,
+			AtomicReference<Runnable> stop) {
 		stop.set(updates.await(matchId, () -> {
 			if (result.isSetOrExpired()) {
 				return;
@@ -109,6 +120,7 @@ public class MatchController {
 		}));
 	}
 
+	/** Answers the open question for the caller and returns how it went with the updated match. */
 	@PostMapping("/{matchId}/answers")
 	public AnswerView answer(@PathVariable String matchId, @Valid @RequestBody AnswerRequest request) {
 		Callers.requireSelf(request.userId());

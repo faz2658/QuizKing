@@ -12,6 +12,7 @@ public final class Callers {
 	private Callers() {
 	}
 
+	/** The caller's user id from the token; 401 when there is no valid one. */
 	public static int currentUserId() {
 		Authentication auth = SecurityContextHolder.getContext().getAuthentication();
 		if (auth == null || !auth.isAuthenticated()) {

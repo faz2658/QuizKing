@@ -1,6 +1,9 @@
 package com.fazeel.quizcadia.web;
 
+import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -8,7 +11,9 @@ import java.time.Clock;
 import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.HexFormat;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
@@ -17,12 +22,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.TimeoutException;
+import java.util.concurrent.atomic.AtomicInteger;
 import java.util.regex.Pattern;
-
-import jakarta.servlet.FilterChain;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -34,6 +35,14 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 import org.springframework.web.util.ContentCachingResponseWrapper;
+
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ReadListener;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.ServletInputStream;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequestWrapper;
+import jakarta.servlet.http.HttpServletResponse;
 
 /**
  * Makes writes safe to send twice. A POST, PUT, PATCH or DELETE that carries an {@code Idempotency-Key} header
@@ -81,7 +90,7 @@ public class IdempotencyFilter extends OncePerRequestFilter {
 	}
 
 	private final Map<String, Entry> entries = new ConcurrentHashMap<>();
-	private final java.util.concurrent.atomic.AtomicInteger sinceCleanUp = new java.util.concurrent.atomic.AtomicInteger();
+	private final AtomicInteger sinceCleanUp = new AtomicInteger();
 	private final Clock clock;
 
 	public IdempotencyFilter() {
@@ -180,7 +189,7 @@ public class IdempotencyFilter extends OncePerRequestFilter {
 	}
 
 	private static Map<String, List<String>> headersOf(HttpServletResponse res) {
-		Map<String, List<String>> headers = new java.util.LinkedHashMap<>();
+		Map<String, List<String>> headers = new LinkedHashMap<>();
 		for (String name : REPLAYED_HEADERS) {
 			var values = res.getHeaders(name);
 			if (values != null && !values.isEmpty()) {
@@ -206,7 +215,7 @@ public class IdempotencyFilter extends OncePerRequestFilter {
 		if (entries.size() >= MAX_ENTRIES) {
 			// a flood of keys: drop the oldest finished ones rather than run out of memory
 			entries.entrySet().stream().filter(e -> e.getValue().result().isDone())
-					.sorted(java.util.Comparator.comparing(e -> e.getValue().at()))
+					.sorted(Comparator.comparing(e -> e.getValue().at()))
 					.limit(entries.size() - MAX_ENTRIES / 2)
 					.map(Map.Entry::getKey).toList().forEach(entries::remove);
 		}
@@ -234,7 +243,7 @@ public class IdempotencyFilter extends OncePerRequestFilter {
 	}
 
 	/** The request with its body, already read for the fingerprint, readable again by the controller. */
-	private static final class ReplayableBody extends jakarta.servlet.http.HttpServletRequestWrapper {
+	private static final class ReplayableBody extends HttpServletRequestWrapper {
 
 		private final byte[] body;
 
@@ -244,14 +253,16 @@ public class IdempotencyFilter extends OncePerRequestFilter {
 		}
 
 		@Override
-		public jakarta.servlet.ServletInputStream getInputStream() {
-			java.io.ByteArrayInputStream in = new java.io.ByteArrayInputStream(body);
-			return new jakarta.servlet.ServletInputStream() {
+		public ServletInputStream getInputStream() {
+			ByteArrayInputStream in = new ByteArrayInputStream(body);
+			return new ServletInputStream() {
+				/** Reads one byte of the saved request body. */
 				@Override
 				public int read() {
 					return in.read();
 				}
 
+				/** Reads part of the saved request body. */
 				@Override
 				public int read(byte[] b, int off, int len) {
 					return in.read(b, off, len);
@@ -268,15 +279,15 @@ public class IdempotencyFilter extends OncePerRequestFilter {
 				}
 
 				@Override
-				public void setReadListener(jakarta.servlet.ReadListener listener) {
+				public void setReadListener(ReadListener listener) {
 					throw new UnsupportedOperationException();
 				}
 			};
 		}
 
 		@Override
-		public java.io.BufferedReader getReader() {
-			return new java.io.BufferedReader(new java.io.InputStreamReader(getInputStream(), StandardCharsets.UTF_8));
+		public BufferedReader getReader() {
+			return new BufferedReader(new InputStreamReader(getInputStream(), StandardCharsets.UTF_8));
 		}
 	}
 }

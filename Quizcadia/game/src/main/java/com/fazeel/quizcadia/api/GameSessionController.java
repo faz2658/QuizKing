@@ -29,6 +29,10 @@ import com.fazeel.quizcadia.session.GameSession;
 
 import jakarta.validation.Valid;
 
+/**
+ * Solo games: the catalog, starting a game, answering, lifelines and the result. Every session is only visible to
+ * the player who started it.
+ */
 @RestController
 @RequestMapping("/api/v1")
 public class GameSessionController {
@@ -41,11 +45,13 @@ public class GameSessionController {
 		this.clock = clock;
 	}
 
+	/** Every game the engine has cached. */
 	@GetMapping("/games")
 	public List<GameSummary> games() {
 		return service.availableGames().stream().map(GameSummary::of).toList();
 	}
 
+	/** Starts a game for the caller (the userId in the body must be theirs). */
 	@PostMapping("/sessions")
 	@ResponseStatus(HttpStatus.CREATED)
 	public SessionView start(@Valid @RequestBody StartRequest request) {
@@ -63,11 +69,13 @@ public class GameSessionController {
 				Callers.currentUserId(), Callers.currentUserName(), request.country()), clock.instant());
 	}
 
+	/** The session as it is now, with timed-out questions already skipped. */
 	@GetMapping("/sessions/{sessionId}")
 	public SessionView session(@PathVariable String sessionId) {
 		return SessionView.of(owned(sessionId), clock.instant());
 	}
 
+	/** Answers the current question and returns what happened. */
 	@PostMapping("/sessions/{sessionId}/answers")
 	public AnswerView answer(@PathVariable String sessionId, @Valid @RequestBody AnswerRequest request) {
 		owned(sessionId);
@@ -92,6 +100,7 @@ public class GameSessionController {
 		service.shown(sessionId, questionId);
 	}
 
+	/** The finished game with every question's review; 409 while it is still running. */
 	@GetMapping("/sessions/{sessionId}/result")
 	public ResultView result(@PathVariable String sessionId) {
 		owned(sessionId);

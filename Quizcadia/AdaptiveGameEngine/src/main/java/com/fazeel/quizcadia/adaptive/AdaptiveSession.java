@@ -24,6 +24,7 @@ public class AdaptiveSession {
 	public static final int MAX_LEVEL = 3;
 	public static final Duration GRACE = Duration.ofSeconds(2);
 
+	/** IN_PROGRESS while questions remain; COMPLETED after the last one (answered or timed out). */
 	public enum Status {
 		IN_PROGRESS, COMPLETED
 	}
@@ -77,6 +78,10 @@ public class AdaptiveSession {
 		askNext(now);
 	}
 
+	/**
+	 * Closes questions whose time plus the grace period has passed, as if the player let the timer run out.
+	 * @return true if anything changed (the caller then saves)
+	 */
 	public boolean expireOverdue(Instant now) {
 		boolean changed = false;
 		while (status == Status.IN_PROGRESS) {
@@ -93,6 +98,10 @@ public class AdaptiveSession {
 		return changed;
 	}
 
+	/**
+	 * Scores the answer to the open question, moves the level when its block is complete and asks the next
+	 * question. Throws when the game is over or the question is not the open one.
+	 */
 	public Outcome answer(int questionId, String answer, Instant now) {
 		expireOverdue(now);
 		if (status == Status.COMPLETED) {
@@ -147,10 +156,12 @@ public class AdaptiveSession {
 		asked.add(new AskedQuestion(next, now));
 	}
 
+	/** The open question, or empty once the session is over. */
 	public Optional<AskedQuestion> currentQuestion() {
 		return status == Status.COMPLETED ? Optional.empty() : Optional.of(current());
 	}
 
+	/** Whole seconds left on the open question (0 when none is open or time is up). */
 	public long secondsRemaining(Instant now) {
 		return currentQuestion()
 				.map(q -> Math.max(0, Duration.between(now, q.getAskedAt().plusSeconds(rules.secondsPerQuestion()))
@@ -158,6 +169,7 @@ public class AdaptiveSession {
 				.orElse(0L);
 	}
 
+	/** How many questions the player got right so far. */
 	public long correctCount() {
 		return asked.stream().filter(AskedQuestion::isCorrect).count();
 	}
@@ -166,6 +178,7 @@ public class AdaptiveSession {
 		return asked.get(asked.size() - 1);
 	}
 
+	/** Notes that the result went to Kafka, so it is published exactly once. */
 	public void markResultPublished() {
 		resultPublished = true;
 	}

@@ -7,9 +7,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 import java.time.Instant;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 
 import org.junit.jupiter.api.Test;
 
@@ -97,8 +99,8 @@ class QuizBuilderTest {
 	@Test
 	void unseenQuestionsComeFirstThenTheOnesSeenLongestAgo() {
 		Game g = game(1, new GameQuestionLevel(0, 3, 0, 0), ok(1, 1), ok(2, 1), ok(3, 1), ok(4, 1), ok(5, 1));
-		java.time.Instant t = java.time.Instant.parse("2026-01-01T00:00:00Z");
-		var seen = java.util.Map.of(1, t.plusSeconds(30), 2, t.plusSeconds(10), 3, t.plusSeconds(20));
+		Instant t = Instant.parse("2026-01-01T00:00:00Z");
+		var seen = Map.of(1, t.plusSeconds(30), 2, t.plusSeconds(10), 3, t.plusSeconds(20));
 
 		List<SessionQuestion> qs = builder.build(g, seen);
 
@@ -109,9 +111,9 @@ class QuizBuilderTest {
 	void aLevelOutOfNewQuestionsBorrowsUnseenOnesFromAnotherLevelBeforeRepeating() {
 		// mix 2 easy + 1 medium; both easy questions already seen, three medium never seen
 		Game g = game(1, new GameQuestionLevel(0, 2, 1, 0), ok(1, 1), ok(2, 1), ok(3, 2), ok(4, 2), ok(5, 2));
-		java.time.Instant t = java.time.Instant.parse("2026-01-01T00:00:00Z");
+		Instant t = Instant.parse("2026-01-01T00:00:00Z");
 
-		List<SessionQuestion> qs = builder.build(g, java.util.Map.of(1, t, 2, t));
+		List<SessionQuestion> qs = builder.build(g, Map.of(1, t, 2, t));
 
 		assertThat(qs).extracting(SessionQuestion::getQuestionId).containsExactlyInAnyOrder(3, 4, 5);
 		assertThat(qs).extracting(SessionQuestion::getDifficulty).containsOnly(Difficulty.MEDIUM);
@@ -124,11 +126,11 @@ class QuizBuilderTest {
 			pool[i] = ok(i + 1, i < 18 ? 1 : i < 27 ? 2 : 3); // 18 easy, 9 medium, 3 advanced
 		}
 		Game g = game(1, new GameQuestionLevel(0, 7, 3, 0), pool);
-		java.util.Map<Integer, java.time.Instant> seen = new java.util.HashMap<>();
-		java.time.Instant t = java.time.Instant.parse("2026-01-01T00:00:00Z");
-		List<Integer> asked = new java.util.ArrayList<>();
+		Map<Integer, Instant> seen = new HashMap<>();
+		Instant t = Instant.parse("2026-01-01T00:00:00Z");
+		List<Integer> asked = new ArrayList<>();
 		for (int play = 0; play < 3; play++) {
-			java.time.Instant now = t.plusSeconds(play);
+			Instant now = t.plusSeconds(play);
 			for (SessionQuestion q : builder.build(g, seen)) {
 				asked.add(q.getQuestionId());
 				seen.put(q.getQuestionId(), now);
@@ -141,7 +143,7 @@ class QuizBuilderTest {
 	@Test
 	void unseenPicksVaryBetweenPlayers() {
 		Game g = game(1, new GameQuestionLevel(0, 2, 0, 0), ok(1, 1), ok(2, 1), ok(3, 1), ok(4, 1), ok(5, 1), ok(6, 1));
-		java.util.Set<Integer> picked = new java.util.HashSet<>();
+		Set<Integer> picked = new HashSet<>();
 		for (int seed = 0; seed < 10; seed++) {
 			new QuizBuilder(new Random(seed)).build(g).forEach(q -> picked.add(q.getQuestionId()));
 		}
